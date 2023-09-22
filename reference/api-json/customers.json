@@ -1,0 +1,3688 @@
+{
+  "paths": {
+    "/v1/customers": {
+      "post": {
+        "tags": [
+          "mobile-checkout",
+          "checkout-api"
+        ],
+        "description": {
+          "en": "Create a customer with all its data and save the cards used to simplify the payment process",
+          "pt": "Crie um cliente com todos os seus detalhes para que você possa salvar os cartões que eles usam e simplificar o processo de pagamento",
+          "es": "Realiza la creación de un cliente con todos sus datos para poder guardar las tarjetas que utilice y simplificar el proceso de pago"
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "String",
+                    "example": "jhon@doe.com",
+                    "description": "Customer's email.",
+                    "x-description-i18n": {
+                      "eng": "Customer's email.",
+                      "spa": "Email del cliente",
+                      "por": "E-mail do cliente"
+                    }
+                  },
+                  "first_name": {
+                    "type": "String",
+                    "example": "Jhon",
+                    "description": "Customer's name.",
+                    "x-description-i18n": {
+                      "eng": "Customer's name.",
+                      "spa": "Nombre del cliente",
+                      "por": "Nome do cliente"
+                    }
+                  },
+                  "last_name": {
+                    "type": "String",
+                    "example": "Doe",
+                    "description": "Customer's last name.",
+                    "x-description-i18n": {
+                      "eng": "Customer's last name.",
+                      "spa": "Apellido del cliente",
+                      "por": "Sobrenome do cliente"
+                    }
+                  },
+                  "phone": {
+                    "type": "object",
+                    "description": "Customer phone's information.",
+                    "x-description-i18n": {
+                      "eng": "Customer phone's information.",
+                      "spa": "Teléfono del cliente",
+                      "por": "Telefone do cliente"
+                    },
+                    "properties": {
+                      "area_code": {
+                        "type": "String",
+                        "example": "55",
+                        "description": "Phone's area code.",
+                        "x-description-i18n": {
+                          "eng": "Phone's area code.",
+                          "spa": "Código de área",
+                          "por": "Código de área"
+                        }
+                      },
+                      "number": {
+                        "type": "String",
+                        "example": "991234567",
+                        "description": "Phone number.",
+                        "x-description-i18n": {
+                          "eng": "Phone number.",
+                          "spa": "Número telefónico",
+                          "por": "Número de telefone"
+                        }
+                      }
+                    }
+                  },
+                  "identification": {
+                    "type": "object",
+                    "description": "Customer identification's information.",
+                    "x-description-i18n": {
+                      "eng": "Customer identification's information.",
+                      "spa": "Información sobre la identificación del cliente",
+                      "por": "Informações sobre a identificação do cliente"
+                    },
+                    "properties": {
+                      "type": {
+                        "type": "String",
+                        "example": "CPF",
+                        "description": "Identification type.",
+                        "x-description-i18n": {
+                          "eng": "Identification type.",
+                          "spa": "Tipo de identificación",
+                          "por": "Tipo de identificação"
+                        }
+                      },
+                      "number": {
+                        "type": "String",
+                        "example": "12345678900",
+                        "description": "Identification number.",
+                        "x-description-i18n": {
+                          "eng": "Identification number.",
+                          "spa": "Número de identificación",
+                          "por": "Número de identificação"
+                        }
+                      }
+                    }
+                  },
+                  "default_address": {
+                    "type": "String",
+                    "example": "Home",
+                    "description": "Customer's default address.",
+                    "x-description-i18n": {
+                      "eng": "Customer's default address.",
+                      "spa": "Dirección por defecto del cliente",
+                      "por": "Endereço padrão do cliente"
+                    }
+                  },
+                  "address": {
+                    "type": "object",
+                    "description": "Default address's information.",
+                    "x-description-i18n": {
+                      "eng": "Default address's information.",
+                      "spa": "Información sobre la dirección por defecto del cliente",
+                      "por": "Informação sobre o endereço padrão do cliente"
+                    },
+                    "properties": {
+                      "id": {
+                        "type": "String",
+                        "example": "123123",
+                        "description": "Address ID.",
+                        "x-description-i18n": {
+                          "eng": "Address ID.",
+                          "spa": "Identificador de la dirección",
+                          "por": "Identificador de endereço"
+                        }
+                      },
+                      "zip_code": {
+                        "type": "String",
+                        "example": "01234567",
+                        "description": "Zip code.",
+                        "x-description-i18n": {
+                          "eng": "Zip code.",
+                          "spa": "Código postal",
+                          "por": "Código postal"
+                        }
+                      },
+                      "street_name": {
+                        "type": "String",
+                        "example": "Rua Exemplo",
+                        "description": "Street name.",
+                        "x-description-i18n": {
+                          "eng": "Street name.",
+                          "spa": "Nombre de la calle.",
+                          "por": "Nome da rua."
+                        }
+                      },
+                      "street_number": {
+                        "type": "number",
+                        "example": 123,
+                        "description": "Street number.",
+                        "x-description-i18n": {
+                          "eng": "Street number.",
+                          "spa": "Número de calle.",
+                          "por": "Número da rua"
+                        }
+                      },
+                      "city": {
+                        "type": "object",
+                        "description": "City.",
+                        "x-description-i18n": {
+                          "eng": "City.",
+                          "spa": "Ciudad.",
+                          "por": "Cidade."
+                        },
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "description": "City name. For example, Autonomous City of Buenos Aires.",
+                            "x-description-i18n": {
+                              "eng": "City name. For example, Autonomous City of Buenos Aires.",
+                              "spa": "Nombre de la ciudad. Por ejemplo, Ciudad Autónoma de Buenos Aires.",
+                              "por": "Nome da cidade. Por exemplo, Cidade Autônoma de Buenos Aires."
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "date_registered": {
+                    "type": "Date(ISO_8601)",
+                    "example": "2021-10-20T11:37:30.000-04:00",
+                    "description": "Customer's registration date.",
+                    "x-description-i18n": {
+                      "eng": "Customer's registration date.",
+                      "spa": "Fecha de registro del cliente",
+                      "por": "Data de registo do cliente"
+                    }
+                  },
+                  "description": {
+                    "type": "String",
+                    "example": "Description del user",
+                    "description": "Customer's description.",
+                    "x-description-i18n": {
+                      "eng": "Customer's description.",
+                      "spa": "Descripción del cliente",
+                      "por": "Descrição do cliente"
+                    }
+                  },
+                  "default_card": {
+                    "type": "String",
+                    "example": "None",
+                    "description": "Customer's default card.",
+                    "x-description-i18n": {
+                      "eng": "Customer's default card.",
+                      "spa": "Tarjeta por defecto del cliente",
+                      "por": "Cartão padrão do cliente"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "en": "success",
+              "pt": "success",
+              "es": "success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "example": "000000001-sT93QZFAsfxU9P5",
+                      "description": {
+                        "en": "Customer ID.",
+                        "pt": "Identificador de cliente",
+                        "es": "Identificador de cliente"
+                      }
+                    },
+                    "email": {
+                      "type": "string",
+                      "example": "jhon@doe.com",
+                      "description": {
+                        "en": "Customer's email.",
+                        "pt": "E-mail do cliente",
+                        "es": "Email del cliente"
+                      }
+                    },
+                    "first_name": {
+                      "type": "string",
+                      "example": "Bruce",
+                      "description": {
+                        "en": "Customer's name.",
+                        "pt": "Nome do cliente",
+                        "es": "Nombre del cliente"
+                      }
+                    },
+                    "last_name": {
+                      "type": "string",
+                      "example": "Wayne",
+                      "description": {
+                        "en": "Customer's last name.",
+                        "pt": "Sobrenome do cliente",
+                        "es": "Apellido del cliente"
+                      }
+                    },
+                    "phone": {
+                      "type": "object",
+                      "properties": {
+                        "area_code": {
+                          "type": "string",
+                          "example": 23,
+                          "description": {
+                            "en": "Phone's area code.",
+                            "pt": "Código de área",
+                            "es": "Código de área"
+                          }
+                        },
+                        "number": {
+                          "type": "string",
+                          "example": 12345678,
+                          "description": {
+                            "en": "Phone number.",
+                            "pt": "Número de telefone",
+                            "es": "Número telefónico"
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "Customer phone's information.",
+                        "pt": "Telefone do cliente",
+                        "es": "Teléfono del cliente"
+                      }
+                    },
+                    "identification": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "DNI",
+                          "description": {
+                            "en": "Identification type.",
+                            "pt": "Tipo de identificação",
+                            "es": "Tipo de identificación"
+                          }
+                        },
+                        "number": {
+                          "type": "string",
+                          "example": 12345678,
+                          "description": {
+                            "en": "Identification number.",
+                            "pt": "Número de identificação",
+                            "es": "Número de identificación"
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "Customer identification's information.",
+                        "pt": "Informações sobre a identificação do cliente",
+                        "es": "Información sobre la identificación del cliente"
+                      }
+                    },
+                    "address": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "example": "1162600094",
+                          "format": "nullable",
+                          "description": {
+                            "en": "Address ID.",
+                            "pt": "Identificador de endereço",
+                            "es": "Identificador de la dirección"
+                          }
+                        },
+                        "zip_code": {
+                          "type": "string",
+                          "example": "SG1 2AX",
+                          "description": {
+                            "en": "Zip code.",
+                            "pt": "Código postal",
+                            "es": "Código postal"
+                          }
+                        },
+                        "street_name": {
+                          "type": "string",
+                          "example": "Old Knebworth Ln",
+                          "description": {
+                            "en": "Street name.",
+                            "pt": "Rua",
+                            "es": "Calle"
+                          }
+                        },
+                        "street_number": {
+                          "type": "number",
+                          "format": "nullable",
+                          "description": {
+                            "en": "Street number.",
+                            "pt": "O Número",
+                            "es": "Número"
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "Default address's information.",
+                        "pt": "Informação sobre o endereço padrão do cliente",
+                        "es": "Información sobre la dirección por defecto del cliente"
+                      }
+                    },
+                    "date_registered": {
+                      "type": "string",
+                      "format": "nullable",
+                      "description": {
+                        "en": "Customer's registration date.",
+                        "pt": "Data de registo do cliente",
+                        "es": "Fecha de registro del cliente"
+                      }
+                    },
+                    "description": {
+                      "type": "string",
+                      "example": "This is my description",
+                      "description": {
+                        "en": "Customer's description.",
+                        "pt": "Descrição do cliente",
+                        "es": "Descripción del cliente"
+                      }
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "example": "2018-02-20T15:36:23.541Z",
+                      "description": {
+                        "en": "Customer's date created.",
+                        "pt": "Data de criação do cliente",
+                        "es": "Fecha de creación del cliente"
+                      }
+                    },
+                    "date_last_updated": {
+                      "type": "string",
+                      "format": "nullable",
+                      "description": {
+                        "en": "Last modified date.",
+                        "pt": "Data da última modificação",
+                        "es": "Fecha de la última modificación"
+                      }
+                    },
+                    "metadata": {
+                      "type": "object",
+                      "properties": {
+                        "source_sync": {
+                          "type": "string",
+                          "example": "source_ws"
+                        }
+                      },
+                      "description": {
+                        "en": "metadata",
+                        "pt": "metadata",
+                        "es": "metadata"
+                      }
+                    },
+                    "default_card": {
+                      "type": "string",
+                      "format": "nullable",
+                      "description": {
+                        "en": "Customer's default card.",
+                        "pt": "Cartão padrão do cliente",
+                        "es": "Tarjeta por defecto del cliente"
+                      }
+                    },
+                    "default_address": {
+                      "type": "string",
+                      "example": "1162600094",
+                      "format": "nullable",
+                      "description": {
+                        "en": "Customer's default address.",
+                        "pt": "Endereço padrão do cliente",
+                        "es": "Dirección por defecto del cliente"
+                      }
+                    },
+                    "cards": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      },
+                      "description": {
+                        "en": "Customer's cards.",
+                        "pt": "Cartões do cliente",
+                        "es": "Tarjetas del cliente"
+                      }
+                    },
+                    "addresses": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      },
+                      "description": {
+                        "en": "Customer's addresses.",
+                        "pt": "Endereço do cliente",
+                        "es": "Dirección del cliente"
+                      }
+                    },
+                    "live_mode": {
+                      "type": "boolean",
+                      "example": true,
+                      "description": {
+                        "en": "Whether the customers will be in sandbox or in production mode.",
+                        "pt": "Indica se os comentários são criados no ambiente de sandbox ou produção",
+                        "es": "Indica si los clientes se crean en el entorno de sandbox o producción"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "100",
+                          "description": {
+                            "en": "the credentials are required.",
+                            "es": "the credentials are required.",
+                            "pt": "the credentials are required."
+                          }
+                        },
+                        {
+                          "title": "101",
+                          "description": {
+                            "en": "the customer already exist.",
+                            "es": "the customer already exist.",
+                            "pt": "the customer already exist."
+                          }
+                        },
+                        {
+                          "title": "102",
+                          "description": {
+                            "en": "missing customer id.",
+                            "es": "missing customer id.",
+                            "pt": "missing customer id."
+                          }
+                        },
+                        {
+                          "title": "103",
+                          "description": {
+                            "en": "parameter must be an object",
+                            "es": "parameter must be an object",
+                            "pt": "parameter must be an object"
+                          }
+                        },
+                        {
+                          "title": "104",
+                          "description": {
+                            "en": "parameter length is too large.",
+                            "es": "parameter length is too large.",
+                            "pt": "parameter length is too large."
+                          }
+                        },
+                        {
+                          "title": "105",
+                          "description": {
+                            "en": "the customer id is invalid.",
+                            "es": "the customer id is invalid.",
+                            "pt": "the customer id is invalid."
+                          }
+                        },
+                        {
+                          "title": "106",
+                          "description": {
+                            "en": "the email format is invalid.",
+                            "es": "the email format is invalid.",
+                            "pt": "the email format is invalid."
+                          }
+                        },
+                        {
+                          "title": "107",
+                          "description": {
+                            "en": "the first_name is invalid.",
+                            "es": "the first_name is invalid.",
+                            "pt": "the first_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "108",
+                          "description": {
+                            "en": "the last_name is invalid.",
+                            "es": "the last_name is invalid.",
+                            "pt": "the last_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "109",
+                          "description": {
+                            "en": "the phone.area_code is invalid.",
+                            "es": "the phone.area_code is invalid.",
+                            "pt": "the phone.area_code is invalid."
+                          }
+                        },
+                        {
+                          "title": "110",
+                          "description": {
+                            "en": "the phone.number is invalid.",
+                            "es": "the phone.number is invalid.",
+                            "pt": "the phone.number is invalid."
+                          }
+                        },
+                        {
+                          "title": "111",
+                          "description": {
+                            "en": "the identification.type is invalid.",
+                            "es": "the identification.type is invalid.",
+                            "pt": "the identification.type is invalid."
+                          }
+                        },
+                        {
+                          "title": "112",
+                          "description": {
+                            "en": "the identification.number is invalid.",
+                            "es": "the identification.number is invalid.",
+                            "pt": "the identification.number is invalid."
+                          }
+                        },
+                        {
+                          "title": "113",
+                          "description": {
+                            "en": "the address.zip_code is invalid.",
+                            "es": "the address.zip_code is invalid.",
+                            "pt": "the address.zip_code is invalid."
+                          }
+                        },
+                        {
+                          "title": "114",
+                          "description": {
+                            "en": "the address.street_name is invalid.",
+                            "es": "the address.street_name is invalid.",
+                            "pt": "the address.street_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "115",
+                          "description": {
+                            "en": "the date_registered format is invalid.",
+                            "es": "the date_registered format is invalid.",
+                            "pt": "the date_registered format is invalid."
+                          }
+                        },
+                        {
+                          "title": "116",
+                          "description": {
+                            "en": "the description is invalid.",
+                            "es": "the description is invalid.",
+                            "pt": "the description is invalid."
+                          }
+                        },
+                        {
+                          "title": "117",
+                          "description": {
+                            "en": "the metadata is invalid.",
+                            "es": "the metadata is invalid.",
+                            "pt": "the metadata is invalid."
+                          }
+                        },
+                        {
+                          "title": "118",
+                          "description": {
+                            "en": "the body must be a Json Object.",
+                            "es": "the body must be a Json Object.",
+                            "pt": "the body must be a Json Object."
+                          }
+                        },
+                        {
+                          "title": "119",
+                          "description": {
+                            "en": "the card is required.",
+                            "es": "the card is required.",
+                            "pt": "the card is required."
+                          }
+                        },
+                        {
+                          "title": "120",
+                          "description": {
+                            "en": "card not found.",
+                            "es": "card not found.",
+                            "pt": "card not found."
+                          }
+                        },
+                        {
+                          "title": "121",
+                          "description": {
+                            "en": "the card is invalid.",
+                            "es": "the card is invalid.",
+                            "pt": "the card is invalid."
+                          }
+                        },
+                        {
+                          "title": "122",
+                          "description": {
+                            "en": "the card data is invalid.",
+                            "es": "the card data is invalid.",
+                            "pt": "the card data is invalid."
+                          }
+                        },
+                        {
+                          "title": "123",
+                          "description": {
+                            "en": "the payment_method_id is required.",
+                            "es": "the payment_method_id is required.",
+                            "pt": "the payment_method_id is required."
+                          }
+                        },
+                        {
+                          "title": "124",
+                          "description": {
+                            "en": "the issuer_id is required.",
+                            "es": "the issuer_id is required.",
+                            "pt": "the issuer_id is required."
+                          }
+                        },
+                        {
+                          "title": "125",
+                          "description": {
+                            "en": "invalid parameters.",
+                            "es": "invalid parameters.",
+                            "pt": "invalid parameters."
+                          }
+                        },
+                        {
+                          "title": "126",
+                          "description": {
+                            "en": "invalid parameter. You cannot update the email.",
+                            "es": "invalid parameter. You cannot update the email.",
+                            "pt": "invalid parameter. You cannot update the email."
+                          }
+                        },
+                        {
+                          "title": "127",
+                          "description": {
+                            "en": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.",
+                            "es": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.",
+                            "pt": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id."
+                          }
+                        },
+                        {
+                          "title": "128",
+                          "description": {
+                            "en": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.",
+                            "es": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.",
+                            "pt": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'."
+                          }
+                        },
+                        {
+                          "title": "129",
+                          "description": {
+                            "en": "the customer has reached the maximum allowed number of cards.",
+                            "es": "the customer has reached the maximum allowed number of cards.",
+                            "pt": "the customer has reached the maximum allowed number of cards."
+                          }
+                        },
+                        {
+                          "title": "140",
+                          "description": {
+                            "en": "invalid card owner.",
+                            "es": "invalid card owner.",
+                            "pt": "invalid card owner."
+                          }
+                        },
+                        {
+                          "title": "150",
+                          "description": {
+                            "en": "invalid users involved.",
+                            "es": "invalid users involved.",
+                            "pt": "invalid users involved."
+                          }
+                        },
+                        {
+                          "title": "200",
+                          "description": {
+                            "en": "invalid range format (range=:date_parameter:after::date_from,before::date_to).",
+                            "es": "invalid range format (range=:date_parameter:after::date_from,before::date_to).",
+                            "pt": "invalid range format (range=:date_parameter:after::date_from,before::date_to)."
+                          }
+                        },
+                        {
+                          "title": "201",
+                          "description": {
+                            "en": "range attribute must belong to date entity.",
+                            "es": "range attribute must belong to date entity.",
+                            "pt": "range attribute must belong to date entity."
+                          }
+                        },
+                        {
+                          "title": "202",
+                          "description": {
+                            "en": "invalid 'after' parameter. It should be date[iso_8601].",
+                            "es": "invalid 'after' parameter. It should be date[iso_8601].",
+                            "pt": "invalid 'after' parameter. It should be date[iso_8601]."
+                          }
+                        },
+                        {
+                          "title": "203",
+                          "description": {
+                            "en": "invalid 'before' parameter. It should be date[iso_8601].",
+                            "es": "invalid 'before' parameter. It should be date[iso_8601].",
+                            "pt": "invalid 'before' parameter. It should be date[iso_8601]."
+                          }
+                        },
+                        {
+                          "title": "204",
+                          "description": {
+                            "en": "invalid filters format.",
+                            "es": "invalid filters format.",
+                            "pt": "invalid filters format."
+                          }
+                        },
+                        {
+                          "title": "205",
+                          "description": {
+                            "en": "invalid query format.",
+                            "es": "invalid query format.",
+                            "pt": "invalid query format."
+                          }
+                        },
+                        {
+                          "title": "206",
+                          "description": {
+                            "en": "attributes to sort must belong to 'customer' entity.",
+                            "es": "attributes to sort must belong to 'customer' entity.",
+                            "pt": "attributes to sort must belong to 'customer' entity."
+                          }
+                        },
+                        {
+                          "title": "207",
+                          "description": {
+                            "en": "order filter must be 'asc' or 'desc'.",
+                            "es": "order filter must be 'asc' or 'desc'.",
+                            "pt": "order filter must be 'asc' or 'desc'."
+                          }
+                        },
+                        {
+                          "title": "208",
+                          "description": {
+                            "en": "invalid 'sort' parameter format.",
+                            "es": "invalid 'sort' parameter format.",
+                            "pt": "invalid 'sort' parameter format."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unauthorized",
+                          "description": {
+                            "en": "unauthorized.",
+                            "es": "unauthorized.",
+                            "pt": "unauthorized."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "not_found",
+                          "description": {
+                            "en": "not_found.",
+                            "es": "not_found.",
+                            "pt": "not_found."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Create customer",
+          "pt": "Criar cliente",
+          "es": "Crear cliente"
+        }
+      }
+    },
+    "/v1/customers/{id}": {
+      "put": {
+        "tags": [
+          "mobile-checkout",
+          "checkout-api"
+        ],
+        "description": {
+          "en": "Renew the data of a customer. Indicate the customer ID and send the parameters with the information you want to update",
+          "pt": "Atualize os dados de um cliente. Indique o ID do cliente e envie as informações que você deseja atualizar",
+          "es": "Renueva los datos de un cliente. Indica el ID del cliente y envía los parámetros con la información que quieras actualizar"
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Customer ID.",
+            "x-description-i18n": {
+              "eng": "Customer ID.",
+              "spa": "Identificador de cliente",
+              "por": "Identificador de cliente"
+            },
+            "schema": {
+              "type": "number",
+              "example": 123123
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "String",
+                    "example": "jhon@doe.com",
+                    "description": "Customer's email. It can only be updated if the customer has not yet associated an email.",
+                    "x-description-i18n": {
+                      "eng": "Customer's email. It can only be updated if the customer has not yet associated an email.",
+                      "spa": "Email del cliente. Solo puede ser actualizado si el cliente no tiene un email asociado aún.",
+                      "por": "E-mail do cliente. Só pode ser atualizado se o cliente ainda não tiver um e-mail associado."
+                    }
+                  },
+                  "first_name": {
+                    "type": "String",
+                    "example": "Jhon",
+                    "description": "Customer's name.",
+                    "x-description-i18n": {
+                      "eng": "Customer's name.",
+                      "spa": "Nombre del cliente",
+                      "por": "Nome do cliente"
+                    }
+                  },
+                  "last_name": {
+                    "type": "String",
+                    "example": "Doe",
+                    "description": "Customer's last name.",
+                    "x-description-i18n": {
+                      "eng": "Customer's last name.",
+                      "spa": "Apellido del cliente",
+                      "por": "Sobrenome do cliente"
+                    }
+                  },
+                  "phone": {
+                    "type": "object",
+                    "description": "Customer phone's information.",
+                    "x-description-i18n": {
+                      "eng": "Customer phone's information.",
+                      "spa": "Teléfono del cliente",
+                      "por": "Telefone do cliente"
+                    },
+                    "properties": {
+                      "area_code": {
+                        "type": "String",
+                        "example": "55",
+                        "description": "Phone's area code.",
+                        "x-description-i18n": {
+                          "eng": "Phone's area code.",
+                          "spa": "Código de área",
+                          "por": "Código de área"
+                        }
+                      },
+                      "number": {
+                        "type": "String",
+                        "example": "991234567",
+                        "description": "Phone number.",
+                        "x-description-i18n": {
+                          "eng": "Phone number.",
+                          "spa": "Número telefónico",
+                          "por": "Número de telefone"
+                        }
+                      }
+                    }
+                  },
+                  "identification": {
+                    "type": "object",
+                    "description": "Customer identification's information.",
+                    "x-description-i18n": {
+                      "eng": "Customer identification's information.",
+                      "spa": "Información sobre la identificación del cliente",
+                      "por": "Informações sobre a identificação do cliente"
+                    },
+                    "properties": {
+                      "type": {
+                        "type": "String",
+                        "example": "CPF",
+                        "description": "Identification type.",
+                        "x-description-i18n": {
+                          "eng": "Identification type.",
+                          "spa": "Tipo de identificación",
+                          "por": "Tipo de identificação"
+                        }
+                      },
+                      "number": {
+                        "type": "String",
+                        "example": "12345678900",
+                        "description": "Identification number.",
+                        "x-description-i18n": {
+                          "eng": "Identification number.",
+                          "spa": "Número de identificación",
+                          "por": "Número de identificação"
+                        }
+                      }
+                    }
+                  },
+                  "default_address": {
+                    "type": "String",
+                    "example": "Home",
+                    "description": "Customer's default address.",
+                    "x-description-i18n": {
+                      "eng": "Customer's default address.",
+                      "spa": "Dirección por defecto del cliente",
+                      "por": "Endereço padrão do cliente"
+                    }
+                  },
+                  "address": {
+                    "type": "object",
+                    "description": "Default address's information.",
+                    "x-description-i18n": {
+                      "eng": "Default address's information.",
+                      "spa": "Información sobre la dirección por defecto del cliente",
+                      "por": "Informação sobre o endereço padrão do cliente"
+                    },
+                    "properties": {
+                      "id": {
+                        "type": "String",
+                        "example": "123123",
+                        "description": "Address ID.",
+                        "x-description-i18n": {
+                          "eng": "Address ID.",
+                          "spa": "Identificador de la dirección",
+                          "por": "Identificador de endereço"
+                        }
+                      },
+                      "zip_code": {
+                        "type": "String",
+                        "example": "01234567",
+                        "description": "Zip code.",
+                        "x-description-i18n": {
+                          "eng": "Zip code.",
+                          "spa": "Código postal",
+                          "por": "Código postal"
+                        }
+                      },
+                      "street_name": {
+                        "type": "String",
+                        "example": "Rua Exemplo",
+                        "description": "Street name.",
+                        "x-description-i18n": {
+                          "eng": "Street name.",
+                          "spa": "Calle",
+                          "por": "Rua"
+                        }
+                      },
+                      "street_number": {
+                        "type": "number",
+                        "example": 123,
+                        "description": "Street number.",
+                        "x-description-i18n": {
+                          "eng": "Street number.",
+                          "spa": "Número",
+                          "por": "O Número"
+                        }
+                      }
+                    }
+                  },
+                  "date_registered": {
+                    "type": "Date(ISO_8601)",
+                    "example": "22021-10-20T11:37:30.000-04:00",
+                    "description": "Customer's registration date.",
+                    "x-description-i18n": {
+                      "eng": "Customer's registration date.",
+                      "spa": "Fecha de registro del cliente",
+                      "por": "Data de registo do cliente"
+                    }
+                  },
+                  "description": {
+                    "type": "String",
+                    "example": "Description del user",
+                    "description": "Customer's description.",
+                    "x-description-i18n": {
+                      "eng": "Customer's description.",
+                      "spa": "Descripción del cliente",
+                      "por": "Descrição do cliente"
+                    }
+                  },
+                  "default_card": {
+                    "type": "String",
+                    "example": "None",
+                    "description": "Customer's default card.",
+                    "x-description-i18n": {
+                      "eng": "Customer's default card.",
+                      "spa": "Tarjeta por defecto del cliente",
+                      "por": "Cartão padrão do cliente"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "en": "success",
+              "pt": "success",
+              "es": "success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "example": "000000001-sT93QZFAsfxU9P5",
+                      "description": {
+                        "en": "Customer ID.",
+                        "pt": "Identificador de cliente",
+                        "es": "Identificador de cliente"
+                      }
+                    },
+                    "email": {
+                      "type": "string",
+                      "example": "jhon@doe.com",
+                      "description": {
+                        "en": "Customer's email.",
+                        "pt": "E-mail do cliente",
+                        "es": "Email del cliente"
+                      }
+                    },
+                    "first_name": {
+                      "type": "string",
+                      "example": "Bruce",
+                      "description": {
+                        "en": "Customer's name.",
+                        "pt": "Nome do cliente",
+                        "es": "Nombre del cliente"
+                      }
+                    },
+                    "last_name": {
+                      "type": "string",
+                      "example": "Wayne",
+                      "description": {
+                        "en": "Customer's last name.",
+                        "pt": "Sobrenome do cliente",
+                        "es": "Apellido del cliente"
+                      }
+                    },
+                    "phone": {
+                      "type": "object",
+                      "properties": {
+                        "area_code": {
+                          "type": "string",
+                          "example": 23,
+                          "description": {
+                            "en": "Phone's area code.",
+                            "pt": "Código de área",
+                            "es": "Código de área"
+                          }
+                        },
+                        "number": {
+                          "type": "string",
+                          "example": 12345678,
+                          "description": {
+                            "en": "Phone number.",
+                            "pt": "Número de telefone",
+                            "es": "Número telefónico"
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "Customer phone's information.",
+                        "pt": "Telefone do cliente",
+                        "es": "Teléfono del cliente"
+                      }
+                    },
+                    "identification": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "DNI",
+                          "description": {
+                            "en": "Identification type.",
+                            "pt": "Tipo de identificação",
+                            "es": "Tipo de identificación"
+                          }
+                        },
+                        "number": {
+                          "type": "string",
+                          "example": 12345678,
+                          "description": {
+                            "en": "Identification number.",
+                            "pt": "Número de identificação",
+                            "es": "Número de identificación"
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "Customer identification's information.",
+                        "pt": "Informações sobre a identificação do cliente",
+                        "es": "Información sobre la identificación del cliente"
+                      }
+                    },
+                    "address": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "format": "nullable",
+                          "description": {
+                            "en": "Address ID.",
+                            "pt": "Identificador de endereço",
+                            "es": "Identificador de la dirección"
+                          }
+                        },
+                        "zip_code": {
+                          "type": "string",
+                          "example": "SG1 2AX",
+                          "description": {
+                            "en": "Zip code.",
+                            "pt": "Código postal",
+                            "es": "Código postal"
+                          }
+                        },
+                        "street_name": {
+                          "type": "string",
+                          "example": "Old Knebworth Ln",
+                          "description": {
+                            "en": "Street name.",
+                            "pt": "Rua",
+                            "es": "Calle"
+                          }
+                        },
+                        "street_number": {
+                          "type": "number",
+                          "format": "nullable",
+                          "description": {
+                            "en": "Street number.",
+                            "pt": "O Número",
+                            "es": "Número"
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "Default address's information.",
+                        "pt": "Informação sobre o endereço padrão do cliente",
+                        "es": "Información sobre la dirección por defecto del cliente"
+                      }
+                    },
+                    "date_registered": {
+                      "type": "string",
+                      "format": "nullable",
+                      "description": {
+                        "en": "Customer's registration date.",
+                        "pt": "Data de registo do cliente",
+                        "es": "Fecha de registro del cliente"
+                      }
+                    },
+                    "description": {
+                      "type": "string",
+                      "example": "This is my description",
+                      "description": {
+                        "en": "Customer's description.",
+                        "pt": "Descrição do cliente",
+                        "es": "Descripción del cliente"
+                      }
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "example": "2018-02-20T15:36:23.541Z",
+                      "description": {
+                        "en": "Customer's date created.",
+                        "pt": "Data de criação do cliente",
+                        "es": "Fecha de creación del cliente"
+                      }
+                    },
+                    "date_last_updated": {
+                      "type": "string",
+                      "format": "nullable",
+                      "description": {
+                        "en": "Last modified date.",
+                        "pt": "Data da última modificação",
+                        "es": "Fecha de la última modificación"
+                      }
+                    },
+                    "metadata": {
+                      "type": "object",
+                      "description": {
+                        "en": "metadata",
+                        "pt": "metadata",
+                        "es": "metadata"
+                      }
+                    },
+                    "default_card": {
+                      "type": "string",
+                      "format": "nullable",
+                      "description": {
+                        "en": "Customer's default card.",
+                        "pt": "Cartão padrão do cliente",
+                        "es": "Tarjeta por defecto del cliente"
+                      }
+                    },
+                    "default_address": {
+                      "type": "string",
+                      "format": "nullable",
+                      "description": {
+                        "en": "Customer's default address.",
+                        "pt": "Endereço padrão do cliente",
+                        "es": "Dirección por defecto del cliente"
+                      }
+                    },
+                    "cards": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      },
+                      "description": {
+                        "en": "Customer's cards.",
+                        "pt": "Cartões do cliente",
+                        "es": "Tarjetas del cliente"
+                      }
+                    },
+                    "addresses": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      },
+                      "description": {
+                        "en": "Customer's addresses.",
+                        "pt": "Endereço do cliente",
+                        "es": "Dirección del cliente"
+                      }
+                    },
+                    "live_mode": {
+                      "type": "boolean",
+                      "description": {
+                        "en": "Whether the customers will be in sandbox or in production mode.",
+                        "pt": "Indica se os comentários são criados no ambiente de sandbox ou produção",
+                        "es": "Indica si los clientes se crean en el entorno de sandbox o producción"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "100",
+                          "description": {
+                            "en": "the credentials are required.",
+                            "es": "the credentials are required.",
+                            "pt": "the credentials are required."
+                          }
+                        },
+                        {
+                          "title": "101",
+                          "description": {
+                            "en": "the customer already exist.",
+                            "es": "the customer already exist.",
+                            "pt": "the customer already exist."
+                          }
+                        },
+                        {
+                          "title": "102",
+                          "description": {
+                            "en": "missing customer id.",
+                            "es": "missing customer id.",
+                            "pt": "missing customer id."
+                          }
+                        },
+                        {
+                          "title": "103",
+                          "description": {
+                            "en": "parameter must be an object",
+                            "es": "parameter must be an object",
+                            "pt": "parameter must be an object"
+                          }
+                        },
+                        {
+                          "title": "104",
+                          "description": {
+                            "en": "parameter length is too large.",
+                            "es": "parameter length is too large.",
+                            "pt": "parameter length is too large."
+                          }
+                        },
+                        {
+                          "title": "105",
+                          "description": {
+                            "en": "the customer id is invalid.",
+                            "es": "the customer id is invalid.",
+                            "pt": "the customer id is invalid."
+                          }
+                        },
+                        {
+                          "title": "106",
+                          "description": {
+                            "en": "the email format is invalid.",
+                            "es": "the email format is invalid.",
+                            "pt": "the email format is invalid."
+                          }
+                        },
+                        {
+                          "title": "107",
+                          "description": {
+                            "en": "the first_name is invalid.",
+                            "es": "the first_name is invalid.",
+                            "pt": "the first_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "108",
+                          "description": {
+                            "en": "the last_name is invalid.",
+                            "es": "the last_name is invalid.",
+                            "pt": "the last_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "109",
+                          "description": {
+                            "en": "the phone.area_code is invalid.",
+                            "es": "the phone.area_code is invalid.",
+                            "pt": "the phone.area_code is invalid."
+                          }
+                        },
+                        {
+                          "title": "110",
+                          "description": {
+                            "en": "the phone.number is invalid.",
+                            "es": "the phone.number is invalid.",
+                            "pt": "the phone.number is invalid."
+                          }
+                        },
+                        {
+                          "title": "111",
+                          "description": {
+                            "en": "the identification.type is invalid.",
+                            "es": "the identification.type is invalid.",
+                            "pt": "the identification.type is invalid."
+                          }
+                        },
+                        {
+                          "title": "112",
+                          "description": {
+                            "en": "the identification.number is invalid.",
+                            "es": "the identification.number is invalid.",
+                            "pt": "the identification.number is invalid."
+                          }
+                        },
+                        {
+                          "title": "113",
+                          "description": {
+                            "en": "the address.zip_code is invalid.",
+                            "es": "the address.zip_code is invalid.",
+                            "pt": "the address.zip_code is invalid."
+                          }
+                        },
+                        {
+                          "title": "114",
+                          "description": {
+                            "en": "the address.street_name is invalid.",
+                            "es": "the address.street_name is invalid.",
+                            "pt": "the address.street_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "115",
+                          "description": {
+                            "en": "the date_registered format is invalid.",
+                            "es": "the date_registered format is invalid.",
+                            "pt": "the date_registered format is invalid."
+                          }
+                        },
+                        {
+                          "title": "116",
+                          "description": {
+                            "en": "the description is invalid.",
+                            "es": "the description is invalid.",
+                            "pt": "the description is invalid."
+                          }
+                        },
+                        {
+                          "title": "117",
+                          "description": {
+                            "en": "the metadata is invalid.",
+                            "es": "the metadata is invalid.",
+                            "pt": "the metadata is invalid."
+                          }
+                        },
+                        {
+                          "title": "118",
+                          "description": {
+                            "en": "the body must be a Json Object.",
+                            "es": "the body must be a Json Object.",
+                            "pt": "the body must be a Json Object."
+                          }
+                        },
+                        {
+                          "title": "119",
+                          "description": {
+                            "en": "the card is required.",
+                            "es": "the card is required.",
+                            "pt": "the card is required."
+                          }
+                        },
+                        {
+                          "title": "120",
+                          "description": {
+                            "en": "card not found.",
+                            "es": "card not found.",
+                            "pt": "card not found."
+                          }
+                        },
+                        {
+                          "title": "121",
+                          "description": {
+                            "en": "the card is invalid.",
+                            "es": "the card is invalid.",
+                            "pt": "the card is invalid."
+                          }
+                        },
+                        {
+                          "title": "122",
+                          "description": {
+                            "en": "the card data is invalid.",
+                            "es": "the card data is invalid.",
+                            "pt": "the card data is invalid."
+                          }
+                        },
+                        {
+                          "title": "123",
+                          "description": {
+                            "en": "the payment_method_id is required.",
+                            "es": "the payment_method_id is required.",
+                            "pt": "the payment_method_id is required."
+                          }
+                        },
+                        {
+                          "title": "124",
+                          "description": {
+                            "en": "the issuer_id is required.",
+                            "es": "the issuer_id is required.",
+                            "pt": "the issuer_id is required."
+                          }
+                        },
+                        {
+                          "title": "125",
+                          "description": {
+                            "en": "invalid parameters.",
+                            "es": "invalid parameters.",
+                            "pt": "invalid parameters."
+                          }
+                        },
+                        {
+                          "title": "126",
+                          "description": {
+                            "en": "invalid parameter. You cannot update the email.",
+                            "es": "invalid parameter. You cannot update the email.",
+                            "pt": "invalid parameter. You cannot update the email."
+                          }
+                        },
+                        {
+                          "title": "127",
+                          "description": {
+                            "en": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.",
+                            "es": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.",
+                            "pt": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id."
+                          }
+                        },
+                        {
+                          "title": "128",
+                          "description": {
+                            "en": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.",
+                            "es": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.",
+                            "pt": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'."
+                          }
+                        },
+                        {
+                          "title": "129",
+                          "description": {
+                            "en": "the customer has reached the maximum allowed number of cards.",
+                            "es": "the customer has reached the maximum allowed number of cards.",
+                            "pt": "the customer has reached the maximum allowed number of cards."
+                          }
+                        },
+                        {
+                          "title": "140",
+                          "description": {
+                            "en": "invalid card owner.",
+                            "es": "invalid card owner.",
+                            "pt": "invalid card owner."
+                          }
+                        },
+                        {
+                          "title": "150",
+                          "description": {
+                            "en": "invalid users involved.",
+                            "es": "invalid users involved.",
+                            "pt": "invalid users involved."
+                          }
+                        },
+                        {
+                          "title": "200",
+                          "description": {
+                            "en": "invalid range format (range=:date_parameter:after::date_from,before::date_to).",
+                            "es": "invalid range format (range=:date_parameter:after::date_from,before::date_to).",
+                            "pt": "invalid range format (range=:date_parameter:after::date_from,before::date_to)."
+                          }
+                        },
+                        {
+                          "title": "201",
+                          "description": {
+                            "en": "range attribute must belong to date entity.",
+                            "es": "range attribute must belong to date entity.",
+                            "pt": "range attribute must belong to date entity."
+                          }
+                        },
+                        {
+                          "title": "202",
+                          "description": {
+                            "en": "invalid 'after' parameter. It should be date[iso_8601].",
+                            "es": "invalid 'after' parameter. It should be date[iso_8601].",
+                            "pt": "invalid 'after' parameter. It should be date[iso_8601]."
+                          }
+                        },
+                        {
+                          "title": "203",
+                          "description": {
+                            "en": "invalid 'before' parameter. It should be date[iso_8601].",
+                            "es": "invalid 'before' parameter. It should be date[iso_8601].",
+                            "pt": "invalid 'before' parameter. It should be date[iso_8601]."
+                          }
+                        },
+                        {
+                          "title": "204",
+                          "description": {
+                            "en": "invalid filters format.",
+                            "es": "invalid filters format.",
+                            "pt": "invalid filters format."
+                          }
+                        },
+                        {
+                          "title": "205",
+                          "description": {
+                            "en": "invalid query format.",
+                            "es": "invalid query format.",
+                            "pt": "invalid query format."
+                          }
+                        },
+                        {
+                          "title": "206",
+                          "description": {
+                            "en": "attributes to sort must belong to 'customer' entity.",
+                            "es": "attributes to sort must belong to 'customer' entity.",
+                            "pt": "attributes to sort must belong to 'customer' entity."
+                          }
+                        },
+                        {
+                          "title": "207",
+                          "description": {
+                            "en": "order filter must be 'asc' or 'desc'.",
+                            "es": "order filter must be 'asc' or 'desc'.",
+                            "pt": "order filter must be 'asc' or 'desc'."
+                          }
+                        },
+                        {
+                          "title": "208",
+                          "description": {
+                            "en": "invalid 'sort' parameter format.",
+                            "es": "invalid 'sort' parameter format.",
+                            "pt": "invalid 'sort' parameter format."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unauthorized",
+                          "description": {
+                            "en": "unauthorized.",
+                            "es": "unauthorized.",
+                            "pt": "unauthorized."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "not_found",
+                          "description": {
+                            "en": "not_found.",
+                            "es": "not_found.",
+                            "pt": "not_found."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Update customer",
+          "pt": "Atualizar cliente",
+          "es": "Actualizar cliente"
+        }
+      },
+      "get": {
+        "tags": [
+          "mobile-checkout",
+          "checkout-api"
+        ],
+        "description": {
+          "en": "Check all the information of a client created with the client ID of your choice",
+          "pt": "Veja todas as informações de um cliente a partir da sua identificação",
+          "es": "Consulta toda la información de un cliente creado con el ID del cliente que quieras"
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Customer ID.",
+            "x-description-i18n": {
+              "eng": "Customer ID.",
+              "spa": "Identificador de cliente",
+              "por": "Identificador de cliente"
+            },
+            "schema": {
+              "type": "number",
+              "example": 123123
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "en": "success",
+              "pt": "success",
+              "es": "success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "example": "470183340-cpunOI7UsIHlHr",
+                      "description": {
+                        "en": "Customer ID.",
+                        "pt": "Identificador de cliente",
+                        "es": "Identificador de cliente"
+                      }
+                    },
+                    "email": {
+                      "type": "string",
+                      "example": "comprador_mlb01+470183340@asdf12.com.br",
+                      "description": {
+                        "en": "Customer's email.",
+                        "pt": "E-mail do cliente",
+                        "es": "Email del cliente"
+                      }
+                    },
+                    "first_name": {
+                      "type": "string",
+                      "example": "Customer",
+                      "description": {
+                        "en": "Customer's name.",
+                        "pt": "Nome do cliente",
+                        "es": "Nombre del cliente"
+                      }
+                    },
+                    "last_name": {
+                      "type": "string",
+                      "example": "Tester",
+                      "description": {
+                        "en": "Customer's last name.",
+                        "pt": "Sobrenome do cliente",
+                        "es": "Apellido del cliente"
+                      }
+                    },
+                    "phone": {
+                      "type": "object",
+                      "properties": {
+                        "area_code": {
+                          "type": "string",
+                          "example": "11",
+                          "description": {
+                            "en": "Phone's area code.",
+                            "pt": "Código de área",
+                            "es": "Código de área"
+                          }
+                        },
+                        "number": {
+                          "type": "string",
+                          "example": "97654321",
+                          "description": {
+                            "en": "Phone number.",
+                            "pt": "Número de telefone",
+                            "es": "Número telefónico"
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "Customer phone's information.",
+                        "pt": "Telefone do cliente",
+                        "es": "Teléfono del cliente"
+                      }
+                    },
+                    "identification": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "example": "CPF",
+                          "description": {
+                            "en": "Identification type.",
+                            "pt": "Tipo de identificação",
+                            "es": "Tipo de identificación"
+                          }
+                        },
+                        "number": {
+                          "type": "string",
+                          "example": "19119119100",
+                          "description": {
+                            "en": "Identification number.",
+                            "pt": "Número de identificação",
+                            "es": "Número de identificación"
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "Customer identification's information.",
+                        "pt": "Informações sobre a identificação do cliente",
+                        "es": "Información sobre la identificación del cliente"
+                      }
+                    },
+                    "address": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "example": "1162600213",
+                          "description": {
+                            "en": "Address ID.",
+                            "pt": "Identificador de endereço",
+                            "es": "Identificador de la dirección"
+                          }
+                        },
+                        "zip_code": {
+                          "type": "string",
+                          "example": "05187010",
+                          "description": {
+                            "en": "Zip code.",
+                            "pt": "Código postal",
+                            "es": "Código postal"
+                          }
+                        },
+                        "street_name": {
+                          "type": "string",
+                          "example": "Caetano Poli, 12",
+                          "description": {
+                            "en": "Street name.",
+                            "pt": "Rua",
+                            "es": "Calle"
+                          }
+                        },
+                        "street_number": {
+                          "type": "number",
+                          "description": {
+                            "en": "Street number.",
+                            "pt": "O Número",
+                            "es": "Número"
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "Default address's information.",
+                        "pt": "Informação sobre o endereço padrão do cliente",
+                        "es": "Información sobre la dirección por defecto del cliente"
+                      }
+                    },
+                    "date_registered": {
+                      "type": "string",
+                      "format": "date",
+                      "description": {
+                        "en": "Customer's registration date.",
+                        "pt": "Data de registo do cliente",
+                        "es": "Fecha de registro del cliente"
+                      }
+                    },
+                    "description": {
+                      "type": "string",
+                      "example": "Customer Test",
+                      "description": {
+                        "en": "Customer's description.",
+                        "pt": "Descrição do cliente",
+                        "es": "Descripción del cliente"
+                      }
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "example": "2021-03-16T15:45:17.000-04:00",
+                      "format": "date",
+                      "description": {
+                        "en": "Customer's date created.",
+                        "pt": "Data de criação do cliente",
+                        "es": "Fecha de creación del cliente"
+                      }
+                    },
+                    "date_last_updated": {
+                      "type": "string",
+                      "format": "date",
+                      "description": {
+                        "en": "Last modified date.",
+                        "pt": "Data da última modificação",
+                        "es": "Fecha de la última modificación"
+                      }
+                    },
+                    "metadata": {
+                      "type": "object",
+                      "properties": {
+                        "source_sync": {
+                          "type": "string",
+                          "example": "source_ws"
+                        }
+                      },
+                      "description": {
+                        "en": "Customer's metadata.",
+                        "pt": "Metadata do cliente",
+                        "es": "Metadata del cliente"
+                      }
+                    },
+                    "default_card": {
+                      "type": "string",
+                      "description": {
+                        "en": "Customer's default card.",
+                        "pt": "Cartão padrão do cliente",
+                        "es": "Tarjeta por defecto del cliente"
+                      }
+                    },
+                    "default_address": {
+                      "type": "string",
+                      "example": "1162600213",
+                      "description": {
+                        "en": "Customer's default address.",
+                        "pt": "Endereço padrão do cliente",
+                        "es": "Dirección por defecto del cliente"
+                      }
+                    },
+                    "cards": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "description": {
+                            "en": "Card ID.",
+                            "pt": "Identificador de cartão",
+                            "es": "Identificador de tarjeta"
+                          }
+                        },
+                        "customer_id": {
+                          "type": "string",
+                          "description": {
+                            "en": "Customer ID.",
+                            "pt": "Identificador de cliente",
+                            "es": "Identificador de cliente"
+                          }
+                        },
+                        "expiration_month": {
+                          "type": "number",
+                          "description": {
+                            "en": "Card's expiration month.",
+                            "pt": "Mês de validade do cartão",
+                            "es": "Mes de expiración de la tarjeta"
+                          }
+                        },
+                        "expiration_year": {
+                          "type": "number",
+                          "description": {
+                            "en": "Card's expiration year.",
+                            "pt": "Ano de validade do cartão",
+                            "es": "Año de expiración de la tarjeta"
+                          }
+                        },
+                        "first_six_digits": {
+                          "type": "string",
+                          "description": {
+                            "en": "Card's first six digits.",
+                            "pt": "Os primeiros seis dígitos do cartão",
+                            "es": "Primeros seis dígitos de la tarjeta"
+                          }
+                        },
+                        "last_four_digits": {
+                          "type": "string",
+                          "description": {
+                            "en": "Card's last four digits.",
+                            "pt": "Últimos quatro dígitos do cartão",
+                            "es": "Últimos cuatro dígitos de la tarjeta"
+                          }
+                        },
+                        "payment_method": {
+                          "type": "object",
+                          "description": {
+                            "en": "Payment method information.",
+                            "pt": "Informação dos meios de pagamento",
+                            "es": "Información de los medios de pago"
+                          },
+                          "properties": {
+                            "id": {
+                              "type": "string",
+                              "description": {
+                                "en": "Payment method ID.",
+                                "pt": "Identificador do método de pagamento",
+                                "es": "Identificador del método de pago"
+                              }
+                            },
+                            "name": {
+                              "type": "string",
+                              "description": {
+                                "en": "Payment method name.",
+                                "pt": "Nome do meio de pagamento",
+                                "es": "Nombre del medio de pago"
+                              }
+                            },
+                            "payment_type_id": {
+                              "type": "string",
+                              "description": {
+                                "en": "Payment method type.",
+                                "pt": "Tipo do meio de pagamento",
+                                "es": "Tipo del medio de pago"
+                              }
+                            },
+                            "thumbnail": {
+                              "type": "string",
+                              "description": {
+                                "en": "Payment method thumbnail.",
+                                "pt": "Thumbnail do meio de pagamento",
+                                "es": "Thumbnail del medio de pago"
+                              }
+                            },
+                            "secure_thumbnail": {
+                              "type": "string",
+                              "description": {
+                                "en": "Payment method secure thumbnail.",
+                                "pt": "Secure thumbnail do meio de pagamento",
+                                "es": "Secure thumbnail del medio de pago"
+                              }
+                            }
+                          }
+                        },
+                        "security_code": {
+                          "type": "object",
+                          "description": {
+                            "en": "Security code information.",
+                            "pt": "Informação do código de segurança",
+                            "es": "Información del código de seguridad"
+                          },
+                          "properties": {
+                            "length": {
+                              "type": "number",
+                              "description": {
+                                "en": "Security code's length.",
+                                "pt": "Comprimento do código de segurança",
+                                "es": "Longitud del código de seguridad"
+                              }
+                            },
+                            "card_location": {
+                              "type": "string",
+                              "description": {
+                                "en": "Security code's card location.",
+                                "pt": "Localização do código de segurança no cartão",
+                                "es": "Ubicación del código de seguridad en la tarjeta"
+                              }
+                            }
+                          }
+                        },
+                        "issuer": {
+                          "type": "object",
+                          "description": {
+                            "en": "Issuer information.",
+                            "pt": "Informações do emitente",
+                            "es": "Información del emisor"
+                          },
+                          "properties": {
+                            "id": {
+                              "type": "number",
+                              "description": {
+                                "en": "Issuer Id.",
+                                "pt": "Id do remetente",
+                                "es": "Identificador del emisor"
+                              }
+                            },
+                            "name": {
+                              "type": "string",
+                              "description": {
+                                "en": "Issuer name.",
+                                "pt": "Nome do emitente",
+                                "es": "Nombre del emisor"
+                              }
+                            }
+                          }
+                        },
+                        "cardholder": {
+                          "type": "object",
+                          "description": {
+                            "en": "Card holder information.",
+                            "pt": "Informações do dono do cartão",
+                            "es": "Información del dueño de la tarjeta"
+                          },
+                          "properties": {
+                            "name": {
+                              "type": "number",
+                              "description": {
+                                "en": "Card holder name.",
+                                "pt": "O nome",
+                                "es": "Nombre"
+                              }
+                            },
+                            "identification": {
+                              "type": "number",
+                              "description": {
+                                "en": "Identification information.",
+                                "pt": "Informação de identificação",
+                                "es": "Información de la identificación"
+                              },
+                              "properties": {
+                                "number": {
+                                  "type": "number",
+                                  "description": {
+                                    "en": "Identification number.",
+                                    "pt": "Número de identificação",
+                                    "es": "Número de identificación"
+                                  }
+                                },
+                                "subtype": {
+                                  "type": "string",
+                                  "description": {
+                                    "en": "Identification subtype.",
+                                    "pt": "Identification subtype.",
+                                    "es": "Identification subtype."
+                                  }
+                                },
+                                "type": {
+                                  "type": "string",
+                                  "description": {
+                                    "en": "Identification type.",
+                                    "pt": "Tipo de identificação",
+                                    "es": "Tipo de identificación"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "date_created": {
+                          "type": "string",
+                          "format": "date",
+                          "description": {
+                            "en": "Card's date created.",
+                            "pt": "Data de criação do cartão",
+                            "es": "Fecha de creación de la tarjeta"
+                          }
+                        },
+                        "date_last_updated": {
+                          "type": "string",
+                          "format": "date",
+                          "description": {
+                            "en": "Card's last modified date.",
+                            "pt": "Última data de atualização do cartão",
+                            "es": "Última fecha de actualización de la tarjeta"
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "Customer's cards.",
+                        "pt": "Cartões do cliente",
+                        "es": "Tarjetas del cliente"
+                      }
+                    },
+                    "addresses": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "description": {
+                            "en": "Address ID.",
+                            "pt": "Identificador de endereço",
+                            "es": "Identificador de la dirección"
+                          },
+                          "example": "1162600213"
+                        },
+                        "phone": {
+                          "type": "string",
+                          "description": {
+                            "en": "Phone number.",
+                            "pt": "Número de telefone",
+                            "es": "Número telefónico"
+                          }
+                        },
+                        "name": {
+                          "type": "string",
+                          "description": {
+                            "en": "Address name.",
+                            "pt": "O nome",
+                            "es": "Nombre"
+                          }
+                        },
+                        "floor": {
+                          "type": "string",
+                          "description": {
+                            "en": "Floor.",
+                            "pt": "Apartamento",
+                            "es": "Piso"
+                          }
+                        },
+                        "apartment": {
+                          "type": "string",
+                          "description": {
+                            "en": "Apartment.",
+                            "pt": "Apartamento",
+                            "es": "Departamento"
+                          }
+                        },
+                        "street_name": {
+                          "type": "string",
+                          "description": {
+                            "en": "Street name.",
+                            "pt": "Rua",
+                            "es": "Calle"
+                          },
+                          "example": "Caetano Poli, 12"
+                        },
+                        "street_number": {
+                          "type": "number",
+                          "description": {
+                            "en": "Street number.",
+                            "pt": "O Número",
+                            "es": "Número"
+                          }
+                        },
+                        "zip_code": {
+                          "type": "string",
+                          "description": {
+                            "en": "Postal code of an Address.",
+                            "pt": "Código postal",
+                            "es": "Código postal"
+                          },
+                          "example": "05187010"
+                        },
+                        "city": {
+                          "type": "object",
+                          "description": {
+                            "en": "City information.",
+                            "pt": "Informações da cidade",
+                            "es": "Información de la ciudad"
+                          },
+                          "properties": {
+                            "id": {
+                              "type": "string",
+                              "description": {
+                                "en": "City ID.",
+                                "pt": "Identificador da cidade",
+                                "es": "Identificador de la ciudad"
+                              },
+                              "example": "BR-SP-44"
+                            },
+                            "name": {
+                              "type": "string",
+                              "description": {
+                                "en": "City name.",
+                                "pt": "Cidade",
+                                "es": "Ciudad"
+                              },
+                              "example": "São Paulo"
+                            }
+                          }
+                        },
+                        "state": {
+                          "type": "object",
+                          "description": {
+                            "en": "State information.",
+                            "pt": "Informação da província",
+                            "es": "Información de la provincia"
+                          },
+                          "properties": {
+                            "id": {
+                              "type": "string",
+                              "description": {
+                                "en": "State ID.",
+                                "pt": "Identificador da província",
+                                "es": "Identificador de la provincia"
+                              },
+                              "example": "BR-SP"
+                            },
+                            "name": {
+                              "type": "string",
+                              "description": {
+                                "en": "State name.",
+                                "pt": "Estado",
+                                "es": "Estado"
+                              },
+                              "example": "São Paulo"
+                            }
+                          }
+                        },
+                        "country": {
+                          "type": "object",
+                          "description": {
+                            "en": "Country information.",
+                            "pt": "Informação do país",
+                            "es": "Información del país"
+                          },
+                          "properties": {
+                            "id": {
+                              "type": "string",
+                              "description": {
+                                "en": "Country ID.",
+                                "pt": "Identificador do país",
+                                "es": "Identificador del país"
+                              },
+                              "example": "BR"
+                            },
+                            "name": {
+                              "type": "string",
+                              "description": {
+                                "en": "Country name.",
+                                "pt": "Nome do país",
+                                "es": "Nombre del país"
+                              },
+                              "example": "Brasil"
+                            }
+                          }
+                        },
+                        "neighborhood": {
+                          "type": "object",
+                          "description": {
+                            "en": "Neighborhood information.",
+                            "pt": "Informação do bairro",
+                            "es": "Información del barrio"
+                          },
+                          "properties": {
+                            "id": {
+                              "type": "string",
+                              "description": {
+                                "en": "Neighborhood ID.",
+                                "pt": "Id do bairro",
+                                "es": "Identificador del barrio"
+                              }
+                            },
+                            "name": {
+                              "type": "string",
+                              "description": {
+                                "en": "Neighborhood name.",
+                                "pt": "Nome do bairro",
+                                "es": "Nombre del barrio"
+                              },
+                              "example": "Jardim Ipanema (Zona Oeste)"
+                            }
+                          }
+                        },
+                        "municipality": {
+                          "type": "object",
+                          "description": {
+                            "en": "Municipality information.",
+                            "pt": "Informação da prefeitura",
+                            "es": "Información de la municipalidad"
+                          },
+                          "properties": {
+                            "id": {
+                              "type": "string",
+                              "description": {
+                                "en": "Municipality ID.",
+                                "pt": "Id do município",
+                                "es": "Identificador de la municipalidad"
+                              }
+                            },
+                            "name": {
+                              "type": "string",
+                              "description": {
+                                "en": "Municipality name.",
+                                "pt": "Nome do município",
+                                "es": "Nombre de la municipalidad"
+                              }
+                            }
+                          }
+                        },
+                        "comments": {
+                          "type": "string",
+                          "description": {
+                            "en": "Additional information.",
+                            "pt": "Informações adicionais",
+                            "es": "Información adicional"
+                          }
+                        },
+                        "date_created": {
+                          "type": "string",
+                          "description": {
+                            "en": "Address date created.",
+                            "pt": "Data de criação da diretoria",
+                            "es": "Fecha de creación de la dirección"
+                          },
+                          "example": "2021-03-16T15:45:17.000-04:00"
+                        }
+                      },
+                      "description": {
+                        "en": "Customer's addresses.",
+                        "pt": "Endereço do cliente",
+                        "es": "Dirección del cliente"
+                      }
+                    },
+                    "live_mode": {
+                      "type": "boolean",
+                      "example": true,
+                      "description": {
+                        "en": "Whether the customers will be in sandbox or in production mode.",
+                        "pt": "Indica se os comentários são criados no ambiente de sandbox ou produção",
+                        "es": "Indica si los clientes se crean en el entorno de sandbox o producción"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "100",
+                          "description": {
+                            "en": "the credentials are required.",
+                            "es": "the credentials are required.",
+                            "pt": "the credentials are required."
+                          }
+                        },
+                        {
+                          "title": "101",
+                          "description": {
+                            "en": "the customer already exist.",
+                            "es": "the customer already exist.",
+                            "pt": "the customer already exist."
+                          }
+                        },
+                        {
+                          "title": "102",
+                          "description": {
+                            "en": "missing customer id.",
+                            "es": "missing customer id.",
+                            "pt": "missing customer id."
+                          }
+                        },
+                        {
+                          "title": "103",
+                          "description": {
+                            "en": "parameter must be an object",
+                            "es": "parameter must be an object",
+                            "pt": "parameter must be an object"
+                          }
+                        },
+                        {
+                          "title": "104",
+                          "description": {
+                            "en": "parameter length is too large.",
+                            "es": "parameter length is too large.",
+                            "pt": "parameter length is too large."
+                          }
+                        },
+                        {
+                          "title": "105",
+                          "description": {
+                            "en": "the customer id is invalid.",
+                            "es": "the customer id is invalid.",
+                            "pt": "the customer id is invalid."
+                          }
+                        },
+                        {
+                          "title": "106",
+                          "description": {
+                            "en": "the email format is invalid.",
+                            "es": "the email format is invalid.",
+                            "pt": "the email format is invalid."
+                          }
+                        },
+                        {
+                          "title": "107",
+                          "description": {
+                            "en": "the first_name is invalid.",
+                            "es": "the first_name is invalid.",
+                            "pt": "the first_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "108",
+                          "description": {
+                            "en": "the last_name is invalid.",
+                            "es": "the last_name is invalid.",
+                            "pt": "the last_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "109",
+                          "description": {
+                            "en": "the phone.area_code is invalid.",
+                            "es": "the phone.area_code is invalid.",
+                            "pt": "the phone.area_code is invalid."
+                          }
+                        },
+                        {
+                          "title": "110",
+                          "description": {
+                            "en": "the phone.number is invalid.",
+                            "es": "the phone.number is invalid.",
+                            "pt": "the phone.number is invalid."
+                          }
+                        },
+                        {
+                          "title": "111",
+                          "description": {
+                            "en": "the identification.type is invalid.",
+                            "es": "the identification.type is invalid.",
+                            "pt": "the identification.type is invalid."
+                          }
+                        },
+                        {
+                          "title": "112",
+                          "description": {
+                            "en": "the identification.number is invalid.",
+                            "es": "the identification.number is invalid.",
+                            "pt": "the identification.number is invalid."
+                          }
+                        },
+                        {
+                          "title": "113",
+                          "description": {
+                            "en": "the address.zip_code is invalid.",
+                            "es": "the address.zip_code is invalid.",
+                            "pt": "the address.zip_code is invalid."
+                          }
+                        },
+                        {
+                          "title": "114",
+                          "description": {
+                            "en": "the address.street_name is invalid.",
+                            "es": "the address.street_name is invalid.",
+                            "pt": "the address.street_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "115",
+                          "description": {
+                            "en": "the date_registered format is invalid.",
+                            "es": "the date_registered format is invalid.",
+                            "pt": "the date_registered format is invalid."
+                          }
+                        },
+                        {
+                          "title": "116",
+                          "description": {
+                            "en": "the description is invalid.",
+                            "es": "the description is invalid.",
+                            "pt": "the description is invalid."
+                          }
+                        },
+                        {
+                          "title": "117",
+                          "description": {
+                            "en": "the metadata is invalid.",
+                            "es": "the metadata is invalid.",
+                            "pt": "the metadata is invalid."
+                          }
+                        },
+                        {
+                          "title": "118",
+                          "description": {
+                            "en": "the body must be a Json Object.",
+                            "es": "the body must be a Json Object.",
+                            "pt": "the body must be a Json Object."
+                          }
+                        },
+                        {
+                          "title": "119",
+                          "description": {
+                            "en": "the card is required.",
+                            "es": "the card is required.",
+                            "pt": "the card is required."
+                          }
+                        },
+                        {
+                          "title": "120",
+                          "description": {
+                            "en": "card not found.",
+                            "es": "card not found.",
+                            "pt": "card not found."
+                          }
+                        },
+                        {
+                          "title": "121",
+                          "description": {
+                            "en": "the card is invalid.",
+                            "es": "the card is invalid.",
+                            "pt": "the card is invalid."
+                          }
+                        },
+                        {
+                          "title": "122",
+                          "description": {
+                            "en": "the card data is invalid.",
+                            "es": "the card data is invalid.",
+                            "pt": "the card data is invalid."
+                          }
+                        },
+                        {
+                          "title": "123",
+                          "description": {
+                            "en": "the payment_method_id is required.",
+                            "es": "the payment_method_id is required.",
+                            "pt": "the payment_method_id is required."
+                          }
+                        },
+                        {
+                          "title": "124",
+                          "description": {
+                            "en": "the issuer_id is required.",
+                            "es": "the issuer_id is required.",
+                            "pt": "the issuer_id is required."
+                          }
+                        },
+                        {
+                          "title": "125",
+                          "description": {
+                            "en": "invalid parameters.",
+                            "es": "invalid parameters.",
+                            "pt": "invalid parameters."
+                          }
+                        },
+                        {
+                          "title": "126",
+                          "description": {
+                            "en": "invalid parameter. You cannot update the email.",
+                            "es": "invalid parameter. You cannot update the email.",
+                            "pt": "invalid parameter. You cannot update the email."
+                          }
+                        },
+                        {
+                          "title": "127",
+                          "description": {
+                            "en": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.",
+                            "es": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.",
+                            "pt": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id."
+                          }
+                        },
+                        {
+                          "title": "128",
+                          "description": {
+                            "en": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.",
+                            "es": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.",
+                            "pt": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'."
+                          }
+                        },
+                        {
+                          "title": "129",
+                          "description": {
+                            "en": "the customer has reached the maximum allowed number of cards.",
+                            "es": "the customer has reached the maximum allowed number of cards.",
+                            "pt": "the customer has reached the maximum allowed number of cards."
+                          }
+                        },
+                        {
+                          "title": "140",
+                          "description": {
+                            "en": "invalid card owner.",
+                            "es": "invalid card owner.",
+                            "pt": "invalid card owner."
+                          }
+                        },
+                        {
+                          "title": "150",
+                          "description": {
+                            "en": "invalid users involved.",
+                            "es": "invalid users involved.",
+                            "pt": "invalid users involved."
+                          }
+                        },
+                        {
+                          "title": "200",
+                          "description": {
+                            "en": "invalid range format (range=:date_parameter:after::date_from,before::date_to).",
+                            "es": "invalid range format (range=:date_parameter:after::date_from,before::date_to).",
+                            "pt": "invalid range format (range=:date_parameter:after::date_from,before::date_to)."
+                          }
+                        },
+                        {
+                          "title": "201",
+                          "description": {
+                            "en": "range attribute must belong to date entity.",
+                            "es": "range attribute must belong to date entity.",
+                            "pt": "range attribute must belong to date entity."
+                          }
+                        },
+                        {
+                          "title": "202",
+                          "description": {
+                            "en": "invalid 'after' parameter. It should be date[iso_8601].",
+                            "es": "invalid 'after' parameter. It should be date[iso_8601].",
+                            "pt": "invalid 'after' parameter. It should be date[iso_8601]."
+                          }
+                        },
+                        {
+                          "title": "203",
+                          "description": {
+                            "en": "invalid 'before' parameter. It should be date[iso_8601].",
+                            "es": "invalid 'before' parameter. It should be date[iso_8601].",
+                            "pt": "invalid 'before' parameter. It should be date[iso_8601]."
+                          }
+                        },
+                        {
+                          "title": "204",
+                          "description": {
+                            "en": "invalid filters format.",
+                            "es": "invalid filters format.",
+                            "pt": "invalid filters format."
+                          }
+                        },
+                        {
+                          "title": "205",
+                          "description": {
+                            "en": "invalid query format.",
+                            "es": "invalid query format.",
+                            "pt": "invalid query format."
+                          }
+                        },
+                        {
+                          "title": "206",
+                          "description": {
+                            "en": "attributes to sort must belong to 'customer' entity.",
+                            "es": "attributes to sort must belong to 'customer' entity.",
+                            "pt": "attributes to sort must belong to 'customer' entity."
+                          }
+                        },
+                        {
+                          "title": "207",
+                          "description": {
+                            "en": "order filter must be 'asc' or 'desc'.",
+                            "es": "order filter must be 'asc' or 'desc'.",
+                            "pt": "order filter must be 'asc' or 'desc'."
+                          }
+                        },
+                        {
+                          "title": "208",
+                          "description": {
+                            "en": "invalid 'sort' parameter format.",
+                            "es": "invalid 'sort' parameter format.",
+                            "pt": "invalid 'sort' parameter format."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unauthorized",
+                          "description": {
+                            "en": "unauthorized.",
+                            "es": "unauthorized.",
+                            "pt": "unauthorized."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "not_found",
+                          "description": {
+                            "en": "not_found.",
+                            "es": "not_found.",
+                            "pt": "not_found."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Get customer",
+          "pt": "Obter cliente",
+          "es": "Obtener cliente"
+        }
+      }
+    },
+    "/v1/customers/search": {
+      "get": {
+        "tags": [
+          "mobile-checkout",
+          "checkout-api"
+        ],
+        "description": {
+          "en": "Find all customer information using specific filters",
+          "pt": "Encontre todas as informações do cliente através de filtros específicos",
+          "es": "Encuentra toda la información de los clientes a través de filtros específicos"
+        },
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "description": "Customer's email.",
+            "x-description-i18n": {
+              "eng": "Customer's email.",
+              "spa": "Email del cliente",
+              "por": "E-mail do cliente"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "jhon@doe.com"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "en": "success",
+              "pt": "success",
+              "es": "success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "paging": {
+                      "type": "object",
+                      "properties": {
+                        "limit": {
+                          "type": "number",
+                          "example": 10,
+                          "description": {
+                            "en": "The maximum number of entries to return.",
+                            "pt": "O número máximo de entradas a serem retornadas.",
+                            "es": "El número máximo de entradas a ser retornadas."
+                          }
+                        },
+                        "offset": {
+                          "type": "number",
+                          "example": 0,
+                          "description": {
+                            "en": "The offset of the first item in the collection to return.",
+                            "pt": "Offset do primeiro item da cobrança a ser retornado.",
+                            "es": "El offset del primer ítem del cobro a ser retornado."
+                          }
+                        },
+                        "total": {
+                          "type": "number",
+                          "example": 1,
+                          "description": {
+                            "en": "The total number of items in the collection.",
+                            "pt": "Número total de itens na cobrança.",
+                            "es": "El número total de elementos del cobro."
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "Information for pagination of search results.",
+                        "pt": "Informações para paginação dos resultados da pesquisa.",
+                        "es": "Información para paginación de resultados de búsqueda."
+                      }
+                    },
+                    "results": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "address": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "format": "nullable",
+                                "description": "Address ID.",
+                                "x-description-i18n": {
+                                  "eng": "Address ID.",
+                                  "spa": "Identificador de la dirección",
+                                  "por": "Identificador de endereço"
+                                },
+                                "example": "1162600213"
+                              },
+                              "street_name": {
+                                "type": "string",
+                                "format": "nullable",
+                                "description": "Street name.",
+                                "x-description-i18n": {
+                                  "eng": "Street name.",
+                                  "spa": "Calle",
+                                  "por": "Rua"
+                                },
+                                "example": "Caetano Poli, 12"
+                              },
+                              "street_number": {
+                                "type": "number",
+                                "format": "nullable",
+                                "description": "Street number.",
+                                "x-description-i18n": {
+                                  "eng": "Street number.",
+                                  "spa": "Número",
+                                  "por": "O Número"
+                                }
+                              },
+                              "zip_code": {
+                                "type": "string",
+                                "format": "nullable",
+                                "description": "Zip code.",
+                                "x-description-i18n": {
+                                  "eng": "Zip code.",
+                                  "spa": "Código postal",
+                                  "por": "Código postal"
+                                },
+                                "example": "05187010"
+                              }
+                            },
+                            "description": "Default address's information.",
+                            "x-description-i18n": {
+                              "eng": "Default address's information.",
+                              "spa": "Información sobre la dirección por defecto del cliente",
+                              "por": "Informação sobre o endereço padrão do cliente"
+                            }
+                          },
+                          "addresses": {
+                            "type": "array",
+                            "items": {
+                              "type": "object"
+                            },
+                            "description": "Customer's addresses.",
+                            "x-description-i18n": {
+                              "eng": "Customer's addresses.",
+                              "spa": "Dirección del cliente",
+                              "por": "Endereço do cliente"
+                            }
+                          },
+                          "cards": {
+                            "type": "array",
+                            "items": {
+                              "type": "object"
+                            },
+                            "description": "Customer's cards.",
+                            "x-description-i18n": {
+                              "eng": "Customer's cards.",
+                              "spa": "Tarjetas del cliente",
+                              "por": "Cartões do cliente"
+                            }
+                          },
+                          "date_created": {
+                            "type": "string",
+                            "example": "2017-05-05T04:00:00.000Z",
+                            "description": "Customer's date created.",
+                            "x-description-i18n": {
+                              "eng": "Customer's date created.",
+                              "spa": "Fecha de creación del cliente",
+                              "por": "Data de criação do cliente"
+                            }
+                          },
+                          "date_last_updated": {
+                            "type": "string",
+                            "example": "2017-05-05T13:23:25.021Z",
+                            "description": "Last modified date.",
+                            "x-description-i18n": {
+                              "eng": "Last modified date.",
+                              "spa": "Fecha de la última modificación",
+                              "por": "Data da última modificação"
+                            }
+                          },
+                          "date_registered": {
+                            "type": "string",
+                            "format": "nullable",
+                            "description": "Customer's registration date.",
+                            "x-description-i18n": {
+                              "eng": "Customer's registration date.",
+                              "spa": "Fecha de registro del cliente",
+                              "por": "Data de registo do cliente"
+                            }
+                          },
+                          "default_address": {
+                            "type": "string",
+                            "format": "nullable",
+                            "description": "Customer's default address.",
+                            "x-description-i18n": {
+                              "eng": "Customer's default address.",
+                              "spa": "Dirección por defecto del cliente",
+                              "por": "Endereço padrão do cliente"
+                            },
+                            "example": "1162600213"
+                          },
+                          "default_card": {
+                            "type": "string",
+                            "example": 1493990563105,
+                            "description": "Customer's default card.",
+                            "x-description-i18n": {
+                              "eng": "Customer's default card.",
+                              "spa": "Tarjeta por defecto del cliente",
+                              "por": "Cartão padrão do cliente"
+                            }
+                          },
+                          "description": {
+                            "type": "string",
+                            "format": "nullable",
+                            "description": "Customer's description.",
+                            "x-description-i18n": {
+                              "eng": "Customer's description.",
+                              "spa": "Descripción del cliente",
+                              "por": "Descrição do cliente"
+                            }
+                          },
+                          "email": {
+                            "type": "string",
+                            "example": "test@test.com",
+                            "description": "Customer's email.",
+                            "x-description-i18n": {
+                              "eng": "Customer's email.",
+                              "spa": "Email del cliente",
+                              "por": "E-mail do cliente"
+                            }
+                          },
+                          "first_name": {
+                            "type": "string",
+                            "description": "Customer's name.",
+                            "x-description-i18n": {
+                              "eng": "Customer's name.",
+                              "spa": "Nombre del cliente",
+                              "por": "Nome do cliente"
+                            },
+                            "example": "Customer"
+                          },
+                          "id": {
+                            "type": "string",
+                            "example": "123456789-jxOV430go9fx2e",
+                            "description": "Customer ID.",
+                            "x-description-i18n": {
+                              "eng": "Customer ID.",
+                              "spa": "Identificador de cliente",
+                              "por": "Identificador de cliente"
+                            }
+                          },
+                          "identification": {
+                            "type": "object",
+                            "properties": {
+                              "number": {
+                                "type": "string",
+                                "format": "nullable",
+                                "description": "Identification number.",
+                                "x-description-i18n": {
+                                  "eng": "Identification number.",
+                                  "spa": "Número de identificación",
+                                  "por": "Número de identificação"
+                                },
+                                "example": "19119119100"
+                              },
+                              "type": {
+                                "type": "string",
+                                "format": "nullable",
+                                "description": "Identification type.",
+                                "x-description-i18n": {
+                                  "eng": "Identification type.",
+                                  "spa": "Tipo de identificación",
+                                  "por": "Tipo de identificação"
+                                },
+                                "example": "CPF"
+                              }
+                            },
+                            "description": "Customer identification's information.",
+                            "x-description-i18n": {
+                              "eng": "Customer identification's information.",
+                              "spa": "Información sobre la identificación del cliente",
+                              "por": "Informações sobre a identificação do cliente"
+                            }
+                          },
+                          "last_name": {
+                            "type": "string",
+                            "format": "nullable",
+                            "description": "Customer's last name.",
+                            "x-description-i18n": {
+                              "eng": "Customer's last name.",
+                              "spa": "Apellido del cliente",
+                              "por": "Sobrenome do cliente"
+                            },
+                            "example": "Tester"
+                          },
+                          "live_mode": {
+                            "type": "boolean",
+                            "description": "Whether the customers will be in sandbox or in production mode.",
+                            "x-description-i18n": {
+                              "eng": "Whether the customers will be in sandbox or in production mode.",
+                              "spa": "Indica si los clientes se crean en el entorno de sandbox o producción",
+                              "por": "Indica se os comentários são criados no ambiente de sandbox ou produção"
+                            },
+                            "example": true
+                          },
+                          "metadata": {
+                            "type": "object",
+                            "description": "metadata"
+                          },
+                          "phone": {
+                            "type": "object",
+                            "properties": {
+                              "area_code": {
+                                "type": "string",
+                                "format": "nullable",
+                                "description": "Phone's area code.",
+                                "x-description-i18n": {
+                                  "eng": "Phone's area code.",
+                                  "spa": "Código de área",
+                                  "por": "Código de área"
+                                },
+                                "example": "11"
+                              },
+                              "number": {
+                                "type": "string",
+                                "format": "nullable",
+                                "description": "Phone number.",
+                                "x-description-i18n": {
+                                  "eng": "Phone number.",
+                                  "spa": "Número telefónico",
+                                  "por": "Número de telefone"
+                                },
+                                "example": "987654321"
+                              }
+                            },
+                            "description": "Customer phone's information.",
+                            "x-description-i18n": {
+                              "eng": "Customer phone's information.",
+                              "spa": "Teléfono del cliente",
+                              "por": "Telefone do cliente"
+                            }
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "The page of items. This will be an empty array if there are no results.",
+                        "pt": "Página de ítens. Caso não retorne resultados, será um array vazio.",
+                        "es": "La página de ítems. Esta será un array vacío si no hay resultados."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "100",
+                          "description": {
+                            "en": "the credentials are required.",
+                            "es": "the credentials are required.",
+                            "pt": "the credentials are required."
+                          }
+                        },
+                        {
+                          "title": "101",
+                          "description": {
+                            "en": "the customer already exist.",
+                            "es": "the customer already exist.",
+                            "pt": "the customer already exist."
+                          }
+                        },
+                        {
+                          "title": "102",
+                          "description": {
+                            "en": "missing customer id.",
+                            "es": "missing customer id.",
+                            "pt": "missing customer id."
+                          }
+                        },
+                        {
+                          "title": "103",
+                          "description": {
+                            "en": "parameter must be an object",
+                            "es": "parameter must be an object",
+                            "pt": "parameter must be an object"
+                          }
+                        },
+                        {
+                          "title": "104",
+                          "description": {
+                            "en": "parameter length is too large.",
+                            "es": "parameter length is too large.",
+                            "pt": "parameter length is too large."
+                          }
+                        },
+                        {
+                          "title": "105",
+                          "description": {
+                            "en": "the customer id is invalid.",
+                            "es": "the customer id is invalid.",
+                            "pt": "the customer id is invalid."
+                          }
+                        },
+                        {
+                          "title": "106",
+                          "description": {
+                            "en": "the email format is invalid.",
+                            "es": "the email format is invalid.",
+                            "pt": "the email format is invalid."
+                          }
+                        },
+                        {
+                          "title": "107",
+                          "description": {
+                            "en": "the first_name is invalid.",
+                            "es": "the first_name is invalid.",
+                            "pt": "the first_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "108",
+                          "description": {
+                            "en": "the last_name is invalid.",
+                            "es": "the last_name is invalid.",
+                            "pt": "the last_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "109",
+                          "description": {
+                            "en": "the phone.area_code is invalid.",
+                            "es": "the phone.area_code is invalid.",
+                            "pt": "the phone.area_code is invalid."
+                          }
+                        },
+                        {
+                          "title": "110",
+                          "description": {
+                            "en": "the phone.number is invalid.",
+                            "es": "the phone.number is invalid.",
+                            "pt": "the phone.number is invalid."
+                          }
+                        },
+                        {
+                          "title": "111",
+                          "description": {
+                            "en": "the identification.type is invalid.",
+                            "es": "the identification.type is invalid.",
+                            "pt": "the identification.type is invalid."
+                          }
+                        },
+                        {
+                          "title": "112",
+                          "description": {
+                            "en": "the identification.number is invalid.",
+                            "es": "the identification.number is invalid.",
+                            "pt": "the identification.number is invalid."
+                          }
+                        },
+                        {
+                          "title": "113",
+                          "description": {
+                            "en": "the address.zip_code is invalid.",
+                            "es": "the address.zip_code is invalid.",
+                            "pt": "the address.zip_code is invalid."
+                          }
+                        },
+                        {
+                          "title": "114",
+                          "description": {
+                            "en": "the address.street_name is invalid.",
+                            "es": "the address.street_name is invalid.",
+                            "pt": "the address.street_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "115",
+                          "description": {
+                            "en": "the date_registered format is invalid.",
+                            "es": "the date_registered format is invalid.",
+                            "pt": "the date_registered format is invalid."
+                          }
+                        },
+                        {
+                          "title": "116",
+                          "description": {
+                            "en": "the description is invalid.",
+                            "es": "the description is invalid.",
+                            "pt": "the description is invalid."
+                          }
+                        },
+                        {
+                          "title": "117",
+                          "description": {
+                            "en": "the metadata is invalid.",
+                            "es": "the metadata is invalid.",
+                            "pt": "the metadata is invalid."
+                          }
+                        },
+                        {
+                          "title": "118",
+                          "description": {
+                            "en": "the body must be a Json Object.",
+                            "es": "the body must be a Json Object.",
+                            "pt": "the body must be a Json Object."
+                          }
+                        },
+                        {
+                          "title": "119",
+                          "description": {
+                            "en": "the card is required.",
+                            "es": "the card is required.",
+                            "pt": "the card is required."
+                          }
+                        },
+                        {
+                          "title": "120",
+                          "description": {
+                            "en": "card not found.",
+                            "es": "card not found.",
+                            "pt": "card not found."
+                          }
+                        },
+                        {
+                          "title": "121",
+                          "description": {
+                            "en": "the card is invalid.",
+                            "es": "the card is invalid.",
+                            "pt": "the card is invalid."
+                          }
+                        },
+                        {
+                          "title": "122",
+                          "description": {
+                            "en": "the card data is invalid.",
+                            "es": "the card data is invalid.",
+                            "pt": "the card data is invalid."
+                          }
+                        },
+                        {
+                          "title": "123",
+                          "description": {
+                            "en": "the payment_method_id is required.",
+                            "es": "the payment_method_id is required.",
+                            "pt": "the payment_method_id is required."
+                          }
+                        },
+                        {
+                          "title": "124",
+                          "description": {
+                            "en": "the issuer_id is required.",
+                            "es": "the issuer_id is required.",
+                            "pt": "the issuer_id is required."
+                          }
+                        },
+                        {
+                          "title": "125",
+                          "description": {
+                            "en": "invalid parameters.",
+                            "es": "invalid parameters.",
+                            "pt": "invalid parameters."
+                          }
+                        },
+                        {
+                          "title": "126",
+                          "description": {
+                            "en": "invalid parameter. You cannot update the email.",
+                            "es": "invalid parameter. You cannot update the email.",
+                            "pt": "invalid parameter. You cannot update the email."
+                          }
+                        },
+                        {
+                          "title": "127",
+                          "description": {
+                            "en": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.",
+                            "es": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.",
+                            "pt": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id."
+                          }
+                        },
+                        {
+                          "title": "128",
+                          "description": {
+                            "en": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.",
+                            "es": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.",
+                            "pt": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'."
+                          }
+                        },
+                        {
+                          "title": "129",
+                          "description": {
+                            "en": "the customer has reached the maximum allowed number of cards.",
+                            "es": "the customer has reached the maximum allowed number of cards.",
+                            "pt": "the customer has reached the maximum allowed number of cards."
+                          }
+                        },
+                        {
+                          "title": "140",
+                          "description": {
+                            "en": "invalid card owner.",
+                            "es": "invalid card owner.",
+                            "pt": "invalid card owner."
+                          }
+                        },
+                        {
+                          "title": "150",
+                          "description": {
+                            "en": "invalid users involved.",
+                            "es": "invalid users involved.",
+                            "pt": "invalid users involved."
+                          }
+                        },
+                        {
+                          "title": "200",
+                          "description": {
+                            "en": "invalid range format (range=:date_parameter:after::date_from,before::date_to).",
+                            "es": "invalid range format (range=:date_parameter:after::date_from,before::date_to).",
+                            "pt": "invalid range format (range=:date_parameter:after::date_from,before::date_to)."
+                          }
+                        },
+                        {
+                          "title": "201",
+                          "description": {
+                            "en": "range attribute must belong to date entity.",
+                            "es": "range attribute must belong to date entity.",
+                            "pt": "range attribute must belong to date entity."
+                          }
+                        },
+                        {
+                          "title": "202",
+                          "description": {
+                            "en": "invalid 'after' parameter. It should be date[iso_8601].",
+                            "es": "invalid 'after' parameter. It should be date[iso_8601].",
+                            "pt": "invalid 'after' parameter. It should be date[iso_8601]."
+                          }
+                        },
+                        {
+                          "title": "203",
+                          "description": {
+                            "en": "invalid 'before' parameter. It should be date[iso_8601].",
+                            "es": "invalid 'before' parameter. It should be date[iso_8601].",
+                            "pt": "invalid 'before' parameter. It should be date[iso_8601]."
+                          }
+                        },
+                        {
+                          "title": "204",
+                          "description": {
+                            "en": "invalid filters format.",
+                            "es": "invalid filters format.",
+                            "pt": "invalid filters format."
+                          }
+                        },
+                        {
+                          "title": "205",
+                          "description": {
+                            "en": "invalid query format.",
+                            "es": "invalid query format.",
+                            "pt": "invalid query format."
+                          }
+                        },
+                        {
+                          "title": "206",
+                          "description": {
+                            "en": "attributes to sort must belong to 'customer' entity.",
+                            "es": "attributes to sort must belong to 'customer' entity.",
+                            "pt": "attributes to sort must belong to 'customer' entity."
+                          }
+                        },
+                        {
+                          "title": "207",
+                          "description": {
+                            "en": "order filter must be 'asc' or 'desc'.",
+                            "es": "order filter must be 'asc' or 'desc'.",
+                            "pt": "order filter must be 'asc' or 'desc'."
+                          }
+                        },
+                        {
+                          "title": "208",
+                          "description": {
+                            "en": "invalid 'sort' parameter format.",
+                            "es": "invalid 'sort' parameter format.",
+                            "pt": "invalid 'sort' parameter format."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unauthorized",
+                          "description": {
+                            "en": "unauthorized.",
+                            "es": "unauthorized.",
+                            "pt": "unauthorized."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "not_found",
+                          "description": {
+                            "en": "not_found.",
+                            "es": "not_found.",
+                            "pt": "not_found."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Search customers",
+          "pt": "Buscar em clientes",
+          "es": "Buscar en clientes"
+        }
+      }
+    }
+  },
+  "url": "https://api.mercadopago.com"
+}

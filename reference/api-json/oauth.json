@@ -1,0 +1,331 @@
+{
+  "paths": {
+    "/oauth/token": {
+      "post": {
+        "tags": [
+          "checkout-pro",
+          "mobile-checkout",
+          "subscriptions",
+          "mp-point",
+          "qr-code"
+        ],
+        "description": {
+          "en": "To create or refresh the necessary token to operate your application in the name of a seller",
+          "pt": "Para criar ou atualizar o token necessário para operar seu aplicativo em nome de um vendedor",
+          "es": "Para crear o actualizar el token necesario para operar su aplicación en nombre de un vendedor"
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "client_secret": {
+                    "type": "string",
+                    "description": "Private key to be used in some plugins to generate payments. One of the keys in the pair that make up the credentials that identify an application/integration in your account.",
+                    "x-description-i18n": {
+                      "eng": "Private key to be used in some plugins to generate payments. One of the keys in the pair that make up the credentials that identify an application/integration in your account.",
+                      "spa": "Clave privada para ser utilizada en algunos complementos para generar pagos. Una de las claves del par que componen las credenciales que identifican una aplicación/integración en tu cuenta.",
+                      "por": "Chave privada para ser utilizada em alguns plugins para gerar pagamentos. Uma das chaves do par que compõe as credenciais que identifica uma aplicação/integração na sua conta."
+                    },
+                    "required": true,
+                    "example": "client_secret"
+                  },
+                  "client_id": {
+                    "type": "string",
+                    "description": "Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.",
+                    "x-description-i18n": {
+                      "eng": "Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.",
+                      "spa": "ID único que identifica tu aplicación/integración. Una de las claves del par que componen las credenciales que identifican una aplicación/integración en tu cuenta.",
+                      "por": "ID único que identifica sua aplicação/integração. Uma das chaves do par que compõe as credenciais que identifica uma aplicação/integração na sua conta."
+                    },
+                    "required": true,
+                    "example": "client_id"
+                  },
+                  "grant_type": {
+                    "type": "string",
+                    "description": "Specifies the type of operation to perform. There are two possible operations.",
+                    "x-description-i18n": {
+                      "eng": "Specifies the type of operation to perform. There are two possible operations.",
+                      "spa": "Especifica el tipo de operación a realizar para obtener tus credenciales.",
+                      "por": "Especifica o tipo de operação a ser executada para obter suas credenciais."
+                    },
+                    "required": true,
+                    "example": "authorization_code",
+                    "enum": [
+                      "authorization_code -- used to get the access token for the first time.",
+                      "refresh_token -- it is used to refresh an existing token."
+                    ]
+                  },
+                  "code": {
+                    "type": "string",
+                    "description": "Code provided by the authentication server so that the application can obtain an access token and an associated refresh token. It is valid for 10 minutes counted from its generation. Required when grant_type=authorization_code.",
+                    "x-description-i18n": {
+                      "eng": "Code provided by the authentication server so that the application can obtain an access token and an associated refresh token. It is valid for 10 minutes counted from its generation. Required when grant_type=authorization_code.",
+                      "spa": "Código otorgado por el servidor de autenticación para que la aplicación pueda obtener un access token y un refresh token asociado. Tiene una validez de 10 minutos contados desde su generación. Obligatorio cuando grant_type=authorization_code.",
+                      "por": "Código concedido pelo servidor de autenticação para que a aplicação possa obter um access token e um refresh token associado. Tem validade de 10 minutos contados a partir da sua geração. Requerido quando grant_type=authorization_code."
+                    },
+                    "example": "TG-XXXXXXXX-241983636"
+                  },
+                  "redirect_uri": {
+                    "type": "string",
+                    "description": "URL reported in the Redirect URL field of your application. Required only when grant_type=authorization_code.",
+                    "x-description-i18n": {
+                      "eng": "URL reported in the Redirect URL field of your application. Required only when grant_type=authorization_code.",
+                      "spa": "URL informada en el campo URL de redirección de tu aplicación. Obligatorio solo cuando grant_type=authorization_code.",
+                      "por": "URL informada no campo Redirect URL da sua aplicação. Requerido apenas quando grant_type=authorization_code."
+                    }
+                  },
+                  "refresh_token": {
+                    "type": "string",
+                    "description": "Value received when the access token is created. Only required when grant_type=refresh_token.",
+                    "x-description-i18n": {
+                      "eng": "Value received when the access token is created. Only required when grant_type=refresh_token.",
+                      "spa": "Valor recibido cuando se crea el access token. Solo se requiere cuando grant_type=refresh_token.",
+                      "por": "Valor recebido quando o access token é criado. Requerido apenas quando grant_type=refresh_token."
+                    }
+                  },
+                  "test_token": {
+                    "type": "string",
+                    "description": "Added with value = true only when you want to generate credentials for testing."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "en": "Success",
+              "pt": "Success",
+              "es": "Success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "access_token": {
+                      "type": "string",
+                      "example": "APP_USR-4934588586838432-XXXXXXXX-241983636",
+                      "description": {
+                        "en": "Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of",
+                        "pt": "Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por",
+                        "es": "Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por"
+                      },
+                      "enum": [
+                        {
+                          "title": "Access token type",
+                          "description": {
+                            "en": "APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)",
+                            "es": "APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)",
+                            "pt": "APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)"
+                          }
+                        },
+                        {
+                          "title": "Client ID",
+                          "description": {
+                            "en": "1585551492",
+                            "es": "1585551492",
+                            "pt": "1585551492"
+                          }
+                        },
+                        {
+                          "title": "Creation date (MMddHH)",
+                          "description": {
+                            "en": "030918",
+                            "es": "030918",
+                            "pt": "030918"
+                          }
+                        },
+                        {
+                          "title": "Security hash",
+                          "description": {
+                            "en": "25######3458",
+                            "es": "25######3458",
+                            "pt": "25######3458"
+                          }
+                        },
+                        {
+                          "title": "User ID",
+                          "description": {
+                            "en": "2880736",
+                            "es": "2880736",
+                            "pt": "2880736"
+                          }
+                        }
+                      ]
+                    },
+                    "token_type": {
+                      "type": "string",
+                      "example": "bearer",
+                      "description": {
+                        "en": "necessary information for the token to be used correctly to access protected resources. The token of type \"bearer\" is the only one supported by the authorization server and is used when the access token is included as plain text in the request. It is understood that the bearer has direct access to the token.",
+                        "pt": "informações necessárias para que o token seja usado corretamente para acessar recursos protegidos. O token do tipo \"bearer\" é o único suportado pelo servidor de autorização e é usado quando o access token é incluído como texto simples na solicitação. Entende-se que o portador tem acesso direto ao token.",
+                        "es": "información necesaria para que el token se utilice correctamente para acceder a los recursos protegidos. El token de tipo \"bearer\" es el único admitido por el servidor de autorización y se utiliza cuando el access token se incluye como texto sin formato en la solicitud. Se entiende que el bearer tiene acceso directo al token."
+                      }
+                    },
+                    "expires_in": {
+                      "type": "number",
+                      "example": 15552000,
+                      "description": {
+                        "en": "Fixed access_token expiration time expressed in seconds. By default, the expiration time is 180 days (15552000 seconds).",
+                        "pt": "Tempo fixo de expiração do access_token expresso em segundos. Por padrão o tempo de expiração é 180 dias (15552000 segundos).",
+                        "es": "Tiempo de caducidad de access_token fijo expresado en segundos. De forma predeterminada, el tiempo de caducidad es de 180 días (15552000 segundos)."
+                      }
+                    },
+                    "scope": {
+                      "type": "string",
+                      "example": "offline_access read write",
+                      "description": {
+                        "en": "Scopes are used in the API authorization and consent process and allow you to determine what access the application requests and what access the user grants. By default, the scopes associated with the token are the ones determined when creating the original token and configuring the application.",
+                        "pt": "Scopes são utilizados no processo de autorização e consentimento das APIs e permitem determinar ao que o acesso está sendo solicitado por parte da aplicação e ao que se está concedendo acesso por parte do usuário. Por padrão, os scopes associados ao token são os que foram determinados no momento de criação do token original e configuração da aplicação.",
+                        "es": "Los scopes se utilizan en el proceso de autorización y consentimiento de la API y permiten determinar qué acceso solicita la aplicación y qué acceso otorga el usuario. De forma predeterminada, los ámbitos asociados con el token son los que se determinaron al crear el token original y configurar la aplicación."
+                      }
+                    },
+                    "user_id": {
+                      "type": "number",
+                      "example": 241983636,
+                      "description": {
+                        "en": "Identification number (Mercado Pago ID) generated automatically when creating a Mercado Pago account. It is a unique number that identifies the Mercado Pago seller and is the owner of the application.",
+                        "pt": "Número de identificação (Mercado Pago ID) gerado automaticamente na criação da conta no Mercado Pago. É um número único que identifica o vendedor Mercado Pago e é o owner da aplicação.",
+                        "es": "Número de identificación (Mercado Pago ID) generado automáticamente al crear una cuenta de Mercado Pago. Es un número único que identifica al vendedor de Mercado Pago y es el owner de la aplicación."
+                      }
+                    },
+                    "refresh_token": {
+                      "type": "string",
+                      "example": "TG-XXXXXXXX-241983636",
+                      "description": {
+                        "en": "Temporal grants code used to obtain access tokens so that authorization and access to resources remain valid before the end of the access token's validity period. They define an ID used to retrieve authorization information. Unlike access tokens, refresh tokens can only be used for calls on the authorization server and are never sent to resource servers. The refresh token can only be used once and only for the client_id it is associated with. After a refreh_token is used it will become invalid.",
+                        "pt": "Código de temporal grants utilizadas para obter access tokens de modo que a autorização e acesso a recursos continuem válidos antes do final do período de validade do access token. Definem um ID utilizado para recuperar informações de autorização. Ao contrário dos access tokens, os tokens de atualização só podem ser utilizados ​​para chamadas no servidor de autorização e nunca são enviados para servidores de recursos. O refresh_token só pode ser utilizado uma vez e apenas para o client_id ao qual está associado. Depois que um refresh_token é utilizado, ele se torna inválido.",
+                        "es": "Código de temporal grants utilizadas para obtener access tokens para que la autorización y el acceso a los recursos sigan siendo válidos antes del final del período de validez del access token. Definen un ID utilizado para recuperar información de autorización. A diferencia de los access tokens, los refresh tokens solo se pueden usar para llamadas en el servidor de autorización y nunca se envían a los servidores de recursos. El refresh_token solo puede ser usado una vez y solo por el client_id con el que está asociado. Después de que un refresh_token es usado, queda inválido."
+                      }
+                    },
+                    "public_key": {
+                      "type": "string",
+                      "example": "APP_USR-d0a26210-XXXXXXXX-479f0400869e",
+                      "description": {
+                        "en": "Public key of the application that will normally be used in the frontend and will allow, for example, knowing the means of payment and encrypting the card data. One of the keys in the pair that make up the credentials that identify an application/integration in your account.",
+                        "pt": "Chave pública da aplicação que normalmente será usada no frontend e permitirá, por exemplo, conhecer os meios de pagamento e criptografar os dados do cartão. Uma das chaves do par que compõe as credenciais que identifica uma aplicação/integração na sua conta.",
+                        "es": "Clave pública de la aplicación que normalmente se utilizará en el frontend y permitirá, por ejemplo, conocer el medio de pago y cifrar los datos de la tarjeta. Una de las claves del par que componen las credenciales que identifican una aplicación/integración en tu cuenta."
+                      }
+                    },
+                    "live_mode": {
+                      "type": "boolean",
+                      "example": true,
+                      "description": {
+                        "en": "Indicates whether the application is in production or test mode.",
+                        "pt": "indica se a aplicação está em modo de produção ou de teste.",
+                        "es": "Indica si la aplicación está en modo de producción o de prueba."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Error validating grant. Your authorization code or refresh token may be expired or it was already used."
+                    },
+                    "status": {
+                      "type": "number",
+                      "example": 400
+                    },
+                    "errorKey": {
+                      "type": "string",
+                      "example": "expired_grant",
+                      "enum": [
+                        {
+                          "title": "invalid_client",
+                          "description": {
+                            "en": "The provided client_id and/or client_secret of your app is invalid.",
+                            "es": "The provided client_id and/or client_secret of your app is invalid.",
+                            "pt": "The provided client_id and/or client_secret of your app is invalid."
+                          }
+                        },
+                        {
+                          "title": "invalid_grant",
+                          "description": {
+                            "en": "There are several reasons for this error, it could be because the authorization_code or refresh_token is invalid, expired or revoked, was sent in an incorrect flow, belongs to another client, or the redirect_uri used in the authorization flow does not match what your application has configured.",
+                            "es": "There are several reasons for this error, it could be because the authorization_code or refresh_token is invalid, expired or revoked, was sent in an incorrect flow, belongs to another client, or the redirect_uri used in the authorization flow does not match what your application has configured.",
+                            "pt": "There are several reasons for this error, it could be because the authorization_code or refresh_token is invalid, expired or revoked, was sent in an incorrect flow, belongs to another client, or the redirect_uri used in the authorization flow does not match what your application has configured."
+                          }
+                        },
+                        {
+                          "title": "invalid_scope",
+                          "description": {
+                            "en": "The requested scope is invalid, unknown, or wrongly formed. The allowed values for the scope parameter are “offline_access”, ”write”, ”read”.",
+                            "es": "The requested scope is invalid, unknown, or wrongly formed. The allowed values for the scope parameter are “offline_access”, ”write”, ”read”.",
+                            "pt": "The requested scope is invalid, unknown, or wrongly formed. The allowed values for the scope parameter are “offline_access”, ”write”, ”read”."
+                          }
+                        },
+                        {
+                          "title": "invalid_request",
+                          "description": {
+                            "en": "The request does not include a required parameter, includes an unsupported parameter or parameter value, has a duplicated value, or is otherwise malformed.",
+                            "es": "The request does not include a required parameter, includes an unsupported parameter or parameter value, has a duplicated value, or is otherwise malformed.",
+                            "pt": "The request does not include a required parameter, includes an unsupported parameter or parameter value, has a duplicated value, or is otherwise malformed."
+                          }
+                        },
+                        {
+                          "title": "unsupported_grant_type",
+                          "description": {
+                            "en": "Allowed values for grant_type are “authorization_code” or “refresh_token”.",
+                            "es": "Allowed values for grant_type are “authorization_code” or “refresh_token”.",
+                            "pt": "Allowed values for grant_type are “authorization_code” or “refresh_token”."
+                          }
+                        },
+                        {
+                          "title": "forbidden",
+                          "description": {
+                            "en": "The call does not authorize access, possibly another user's token is being used.",
+                            "es": "The call does not authorize access, possibly another user's token is being used.",
+                            "pt": "The call does not authorize access, possibly another user's token is being used."
+                          }
+                        },
+                        {
+                          "title": "unauthorized_client",
+                          "description": {
+                            "en": "The application does not have a grant with the user or the permissions (scopes) that the application has with this user do not allow creating a token.",
+                            "es": "The application does not have a grant with the user or the permissions (scopes) that the application has with this user do not allow creating a token.",
+                            "pt": "The application does not have a grant with the user or the permissions (scopes) that the application has with this user do not allow creating a token."
+                          }
+                        }
+                      ]
+                    },
+                    "cause": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "example": []
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Create and refresh token",
+          "pt": "Criar e atualizar token",
+          "es": "Crear y refrescar token"
+        }
+      }
+    }
+  },
+  "url": "https://api.mercadopago.com"
+}

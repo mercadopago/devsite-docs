@@ -1,0 +1,1584 @@
+{
+  "paths": {
+    "/pos": {
+      "post": {
+        "tags": [
+          "qr-code",
+          "mp-point"
+        ],
+        "description": {
+          "en": "Generate a Point of Sale in a store. Each POS will have a unique QR Code linked to it",
+          "pt": "Gerar um ponto de venda em uma loja. Cada caixa registradora terá um código QR exclusivo vinculado a ela",
+          "es": "Genera un punto de venta en una sucursal. Cada caja tendrá vinculado un código QR unívoco"
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": {
+                      "en": "Name of the POS.",
+                      "pt": "Nome da caixa",
+                      "es": "Nombre de la caja"
+                    },
+                    "example": "First POS"
+                  },
+                  "fixed_amount": {
+                    "type": "boolean",
+                    "description": {
+                      "en": "Define if the customer can insert the amount to be paid.",
+                      "pt": "Determine se o cliente pode inserir o valor a ser pago",
+                      "es": "Determina si el cliente puede insertar el monto a pagar"
+                    },
+                    "example": false
+                  },
+                  "store_id": {
+                    "type": "string",
+                    "description": {
+                      "en": "Store identifier to which the point of sale belongs.",
+                      "pt": "Identificador da loja à qual o caixa pertence",
+                      "es": "Identificador de la sucursal a la que pertenece el Punto de Venta"
+                    },
+                    "example": 1234567
+                  },
+                  "external_store_id": {
+                    "type": "string",
+                    "description": {
+                      "en": "External_id of the store to which the pos belongs defined by integrator system.",
+                      "pt": "External_id of the store to which the pos belongs defined by integrator system.",
+                      "es": "External_id of the store to which the pos belongs defined by integrator system."
+                    },
+                    "example": "SUC001"
+                  },
+                  "external_id": {
+                    "type": "string",
+                    "description": {
+                      "en": "Unique identifier of the pos defined by integrator system.",
+                      "pt": "Identificador único da caixa definido pelo sistema integrador",
+                      "es": "Identificador único de la caja definido por el integrador"
+                    },
+                    "example": "SUC001POS001"
+                  },
+                  "category": {
+                    "$ref": "#/components/schemas/category"
+                  },
+                  "url": {
+                    "type": "string",
+                    "description": {
+                      "en": "URL to get the order of the integrator system. It is optional and is used only in the unattended integration model.",
+                      "pt": "URL para obter a ordem do sistema integrador. É opcional e é usado apenas no modelo de integração desatendido.",
+                      "es": "URL para obtener la orden del sistema integrador. Es opcional y se utiliza solo en el modelo de integración desatendido."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "en": "Success",
+              "pt": "Success",
+              "es": "Success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "example": 2711382,
+                      "description": {
+                        "en": "id",
+                        "pt": "id",
+                        "es": "id"
+                      }
+                    },
+                    "qr": {
+                      "type": "object",
+                      "properties": {
+                        "image": {
+                          "type": "string",
+                          "example": "https://www.mercadopago.com/instore/merchant/qr/2711382/0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png",
+                          "description": {
+                            "en": "image",
+                            "pt": "image",
+                            "es": "image"
+                          }
+                        },
+                        "template_document": {
+                          "type": "string",
+                          "example": "https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.pdf",
+                          "description": {
+                            "en": "template_document",
+                            "pt": "template_document",
+                            "es": "template_document"
+                          }
+                        },
+                        "template_image": {
+                          "type": "string",
+                          "example": "https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png",
+                          "description": {
+                            "en": "template_image",
+                            "pt": "template_image",
+                            "es": "template_image"
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "qr",
+                        "pt": "qr",
+                        "es": "qr"
+                      }
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "active",
+                      "description": {
+                        "en": "status",
+                        "pt": "status",
+                        "es": "status"
+                      }
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "example": "2019-08-22T14:11:12.000Z",
+                      "description": {
+                        "en": "date_created",
+                        "pt": "date_created",
+                        "es": "date_created"
+                      }
+                    },
+                    "date_last_updated": {
+                      "type": "string",
+                      "example": "2019-08-22T14:11:12.000Z",
+                      "description": {
+                        "en": "date_last_updated",
+                        "pt": "date_last_updated",
+                        "es": "date_last_updated"
+                      }
+                    },
+                    "uuid": {
+                      "type": "string",
+                      "example": "0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1",
+                      "description": {
+                        "en": "uuid",
+                        "pt": "uuid",
+                        "es": "uuid"
+                      }
+                    },
+                    "user_id": {
+                      "type": "number",
+                      "example": 446566691,
+                      "description": {
+                        "en": "user_id",
+                        "pt": "user_id",
+                        "es": "user_id"
+                      }
+                    },
+                    "name": {
+                      "type": "string",
+                      "example": "First POS",
+                      "description": {
+                        "en": "name",
+                        "pt": "name",
+                        "es": "name"
+                      }
+                    },
+                    "fixed_amount": {
+                      "type": "boolean",
+                      "example": false,
+                      "description": {
+                        "en": "fixed_amount",
+                        "pt": "fixed_amount",
+                        "es": "fixed_amount"
+                      }
+                    },
+                    "category": {
+                      "$ref": "#/components/schemas/category"
+                    },
+                    "store_id": {
+                      "type": "string",
+                      "example": 1234567,
+                      "description": {
+                        "en": "store_id",
+                        "pt": "store_id",
+                        "es": "store_id"
+                      }
+                    },
+                    "external_store_id": {
+                      "type": "string",
+                      "example": "SUC001",
+                      "description": {
+                        "en": "external_store_id",
+                        "pt": "external_store_id",
+                        "es": "external_store_id"
+                      }
+                    },
+                    "url": {
+                      "type": "string",
+                      "description": {
+                        "en": "url",
+                        "pt": "url",
+                        "es": "url"
+                      }
+                    },
+                    "external_id": {
+                      "type": "string",
+                      "example": "SUC001POS001",
+                      "description": {
+                        "en": "external_id",
+                        "pt": "external_id",
+                        "es": "external_id"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "MISSING_BODY",
+                          "description": {
+                            "en": "HTTP body is required to create pos.",
+                            "es": "HTTP body is required to create pos.",
+                            "pt": "HTTP body is required to create pos."
+                          }
+                        },
+                        {
+                          "title": "UNKNOWN_FIELD_EXCEPTION",
+                          "description": {
+                            "en": "The indicated field is not allowed for this operation or is unknown.",
+                            "es": "The indicated field is not allowed for this operation or is unknown.",
+                            "pt": "The indicated field is not allowed for this operation or is unknown."
+                          }
+                        },
+                        {
+                          "title": "INVALID_NAME",
+                          "description": {
+                            "en": "NAME must be string.",
+                            "es": "NAME must be string.",
+                            "pt": "NAME must be string."
+                          }
+                        },
+                        {
+                          "title": "NAME_TOO_LONG",
+                          "description": {
+                            "en": "The NAME must be less than 45 characters.",
+                            "es": "The NAME must be less than 45 characters.",
+                            "pt": "The NAME must be less than 45 characters."
+                          }
+                        },
+                        {
+                          "title": "INVALID_FIXED_AMOUNT",
+                          "description": {
+                            "en": "FIXED_AMOUNT must be boolean.",
+                            "es": "FIXED_AMOUNT must be boolean.",
+                            "pt": "FIXED_AMOUNT must be boolean."
+                          }
+                        },
+                        {
+                          "title": "INVALID_CATEGORY",
+                          "description": {
+                            "en": "CATEGORY must be numeric.",
+                            "es": "CATEGORY must be numeric.",
+                            "pt": "CATEGORY must be numeric."
+                          }
+                        },
+                        {
+                          "title": "UNKNOWN_MCC",
+                          "description": {
+                            "en": "The CATEGORY must be valid for the user's site.",
+                            "es": "The CATEGORY must be valid for the user's site.",
+                            "pt": "The CATEGORY must be valid for the user's site."
+                          }
+                        },
+                        {
+                          "title": "INVALID_STORE_ID",
+                          "description": {
+                            "en": "STORE_ID must be numeric.",
+                            "es": "STORE_ID must be numeric.",
+                            "pt": "STORE_ID must be numeric."
+                          }
+                        },
+                        {
+                          "title": "INVALID_EXTERNAL_STORE_ID",
+                          "description": {
+                            "en": "EXTERNAL_STORE_ID muste be string.",
+                            "es": "EXTERNAL_STORE_ID muste be string.",
+                            "pt": "EXTERNAL_STORE_ID muste be string."
+                          }
+                        },
+                        {
+                          "title": "EXTERNAL_STORE_ID_NOT_MATCH",
+                          "description": {
+                            "en": "The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID.",
+                            "es": "The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID.",
+                            "pt": "The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID."
+                          }
+                        },
+                        {
+                          "title": "INEXISTENT_EXTERNAL_STORE_ID",
+                          "description": {
+                            "en": "The EXTERNAL_STORE_ID does not refer to any existing store.",
+                            "es": "The EXTERNAL_STORE_ID does not refer to any existing store.",
+                            "pt": "The EXTERNAL_STORE_ID does not refer to any existing store."
+                          }
+                        },
+                        {
+                          "title": "INVALID_EXTERNAL_ID",
+                          "description": {
+                            "en": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.",
+                            "es": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.",
+                            "pt": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters."
+                          }
+                        },
+                        {
+                          "title": "EXTERNAL_ID_TOO_LONG",
+                          "description": {
+                            "en": "The EXTERNAL_ID must be less than 40 characters.",
+                            "es": "The EXTERNAL_ID must be less than 40 characters.",
+                            "pt": "The EXTERNAL_ID must be less than 40 characters."
+                          }
+                        },
+                        {
+                          "title": "INVALID_URL",
+                          "description": {
+                            "en": "The URL must be string and muste have the format of a valid url",
+                            "es": "The URL must be string and muste have the format of a valid url",
+                            "pt": "The URL must be string and muste have the format of a valid url"
+                          }
+                        },
+                        {
+                          "title": "URL_TOO_LONG",
+                          "description": {
+                            "en": "The URL must be less than 300 characters.",
+                            "es": "The URL must be less than 300 characters.",
+                            "pt": "The URL must be less than 300 characters."
+                          }
+                        },
+                        {
+                          "title": "FIXED_AMOUNT_FALSE",
+                          "description": {
+                            "en": "If the URL field is indicated, the FIXED_AMOUNT field must be true. We do not support the open amount modality in this case.",
+                            "es": "If the URL field is indicated, the FIXED_AMOUNT field must be true. We do not support the open amount modality in this case.",
+                            "pt": "If the URL field is indicated, the FIXED_AMOUNT field must be true. We do not support the open amount modality in this case."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "1",
+                          "description": {
+                            "en": "If you are using the URL field, the host must be enabled by Mercado Pago. If it is not, you will receive this error. Please contact your assigned technical advisor.",
+                            "es": "If you are using the URL field, the host must be enabled by Mercado Pago. If it is not, you will receive this error. Please contact your assigned technical advisor.",
+                            "pt": "If you are using the URL field, the host must be enabled by Mercado Pago. If it is not, you will receive this error. Please contact your assigned technical advisor."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "1",
+                          "description": {
+                            "en": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user.",
+                            "es": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user.",
+                            "pt": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "1",
+                          "description": {
+                            "en": "A pos with the same EXTERNAL_ID already exists.",
+                            "es": "A pos with the same EXTERNAL_ID already exists.",
+                            "pt": "A pos with the same EXTERNAL_ID already exists."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Create POS",
+          "pt": "Criar caixa",
+          "es": "Crear caja"
+        }
+      },
+      "get": {
+        "tags": [
+          "qr-code",
+          "mp-point"
+        ],
+        "description": {
+          "en": "Get the information about all of your stores",
+          "pt": "Encontre todas as informações dos pontos de venda através de filtros específicos",
+          "es": "Encuentra toda la información de los puntos de venta a través de filtros específicos"
+        },
+        "parameters": [
+          {
+            "name": "external_id",
+            "in": "query",
+            "description": "External ID",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "example": "SUC001POS001"
+            }
+          },
+          {
+            "name": "external_store_id",
+            "in": "query",
+            "description": "External Store ID",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "store_id",
+            "in": "query",
+            "description": "Store ID",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "category",
+            "in": "query",
+            "description": "Category",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "en": "Success",
+              "pt": "Success",
+              "es": "Success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "paging": {
+                      "type": "object",
+                      "properties": {
+                        "total": {
+                          "type": "number",
+                          "example": 1,
+                          "description": {
+                            "en": "total",
+                            "pt": "total",
+                            "es": "total"
+                          }
+                        },
+                        "offset": {
+                          "type": "number",
+                          "example": 0,
+                          "description": {
+                            "en": "offset",
+                            "pt": "offset",
+                            "es": "offset"
+                          }
+                        },
+                        "limit": {
+                          "type": "number",
+                          "example": 0,
+                          "description": {
+                            "en": "limit",
+                            "pt": "limit",
+                            "es": "limit"
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "paging",
+                        "pt": "paging",
+                        "es": "paging"
+                      }
+                    },
+                    "results": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "user_id": {
+                            "type": "number",
+                            "example": 446566691,
+                            "description": "user_id"
+                          },
+                          "name": {
+                            "type": "string",
+                            "example": "Caja Principal",
+                            "description": "name"
+                          },
+                          "fixed_amount": {
+                            "type": "boolean",
+                            "description": "fixed_amount"
+                          },
+                          "category": {
+                            "$ref": "#/components/schemas/category"
+                          },
+                          "store_id": {
+                            "type": "string",
+                            "example": 1234567,
+                            "description": "store_id"
+                          },
+                          "external_id": {
+                            "type": "string",
+                            "example": "SUC001POS001",
+                            "description": "external_id"
+                          },
+                          "id": {
+                            "type": "number",
+                            "example": 1988157,
+                            "description": "id"
+                          },
+                          "qr": {
+                            "type": "object",
+                            "properties": {
+                              "image": {
+                                "type": "string",
+                                "example": "https://www.mercadopago.com/instore/merchant/qr/1988157/1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.png",
+                                "description": "image"
+                              },
+                              "template_document": {
+                                "type": "string",
+                                "example": "https://www.mercadopago.com/instore/merchant/qr/1988157/template_1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.pdf",
+                                "description": "template_document"
+                              },
+                              "template_image": {
+                                "type": "string",
+                                "example": "https://www.mercadopago.com/instore/merchant/qr/1988157/template_1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.png",
+                                "description": "template_image"
+                              }
+                            },
+                            "description": "qr"
+                          },
+                          "date_created": {
+                            "type": "string",
+                            "example": "2019-06-24T13:31:56.000Z",
+                            "description": "date_created"
+                          },
+                          "date_last_updated": {
+                            "type": "string",
+                            "example": "2019-08-07T21:07:26.000Z",
+                            "description": "date_last_updated"
+                          },
+                          "external_store_id": {
+                            "type": "string",
+                            "example": "SUC001",
+                            "description": "external_store_id"
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "results",
+                        "pt": "results",
+                        "es": "results"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "INVALID_CATEGORY",
+                          "description": {
+                            "en": "The CATEGORY must be numeric.",
+                            "es": "The CATEGORY must be numeric.",
+                            "pt": "The CATEGORY must be numeric."
+                          }
+                        },
+                        {
+                          "title": "INVALID_STORE_ID",
+                          "description": {
+                            "en": "The STORE_ID must be numeric.",
+                            "es": "The STORE_ID must be numeric.",
+                            "pt": "The STORE_ID must be numeric."
+                          }
+                        },
+                        {
+                          "title": "INVALID_EXTERNAL_STORE_ID",
+                          "description": {
+                            "en": "The EXTERNAL_STORE_ID must be string.",
+                            "es": "The EXTERNAL_STORE_ID must be string.",
+                            "pt": "The EXTERNAL_STORE_ID must be string."
+                          }
+                        },
+                        {
+                          "title": "INEXISTENT_EXTERNAL_STORE_ID",
+                          "description": {
+                            "en": "The EXTERNAL STORE_ID does not refer to an existing Store.",
+                            "es": "The EXTERNAL STORE_ID does not refer to an existing Store.",
+                            "pt": "The EXTERNAL STORE_ID does not refer to an existing Store."
+                          }
+                        },
+                        {
+                          "title": "INVALID_EXTERNAL_ID",
+                          "description": {
+                            "en": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.",
+                            "es": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.",
+                            "pt": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters."
+                          }
+                        },
+                        {
+                          "title": "EXTERNAL_ID_TOO_LONG",
+                          "description": {
+                            "en": "The EXTERNAL_ID must be less than 40 characters.",
+                            "es": "The EXTERNAL_ID must be less than 40 characters.",
+                            "pt": "The EXTERNAL_ID must be less than 40 characters."
+                          }
+                        },
+                        {
+                          "title": "INVALID_LIMIT",
+                          "description": {
+                            "en": "The LIMIT must be numeric.",
+                            "es": "The LIMIT must be numeric.",
+                            "pt": "The LIMIT must be numeric."
+                          }
+                        },
+                        {
+                          "title": "INVALID_OFFSET",
+                          "description": {
+                            "en": "The OFFSET must be numeric.",
+                            "es": "The OFFSET must be numeric.",
+                            "pt": "The OFFSET must be numeric."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Search POS",
+          "pt": "Buscar em caixas",
+          "es": "Buscar en cajas"
+        }
+      }
+    },
+    "/pos/{id}": {
+      "get": {
+        "tags": [
+          "qr-code",
+          "mp-point"
+        ],
+        "description": {
+          "en": "Check all the information of a Point of Sale with the ID of the POS you want",
+          "pt": "Veja toda a informação de um ponto de venda a partir do ID da caixa que você deseja",
+          "es": "Consulta toda la información de un punto de venta con el ID de la caja que quieras"
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": {
+              "en": "POS Id",
+              "es": "POS Id",
+              "por": "POS Id"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": 1988157
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "en": "Success",
+              "pt": "Success",
+              "es": "Success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "example": 1988157,
+                      "description": {
+                        "en": "POS identifier, numerical and self-generated.",
+                        "pt": "Identificador exclusivo da caixa, numérico e gerado automaticamente",
+                        "es": "Identificador único de la caja, numérico y autogenerado"
+                      }
+                    },
+                    "qr": {
+                      "type": "object",
+                      "properties": {
+                        "image": {
+                          "type": "string",
+                          "example": "https://www.mercadopago.com/instore/merchant/qr/2852128/c955a5618d874e998c8399e3515fed3a00b8cc0ca401448ca56e2f2e18f4ba68.png"
+                        },
+                        "template_document": {
+                          "type": "string",
+                          "example": "https://www.mercadopago.com/instore/merchant/qr/2852128/template_c955a5618d874e998c8399e3515fed3a00b8cc0ca401448ca56e2f2e18f4ba68.pdf"
+                        },
+                        "template_image": {
+                          "type": "string",
+                          "example": "https://www.mercadopago.com/instore/merchant/qr/2852128/template_c955a5618d874e998c8399e3515fed3a00b8cc0ca401448ca56e2f2e18f4ba68.png"
+                        }
+                      }
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "active"
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "example": "2019-09-03T13:13:54.000-04:00"
+                    },
+                    "date_last_updated": {
+                      "type": "string",
+                      "example": "2020-09-30T08:38:58.000-04:00"
+                    },
+                    "uuid": {
+                      "type": "string",
+                      "example": "c955a5618d874e998c8399e3515fed3a00b8cc0ca401448ca56e2f2e18f4ba68"
+                    },
+                    "compatible_id": {
+                      "type": "string",
+                      "example": "4be87a269a7b863fd043658d2a0d7b3fa2f32334138ff651e2408d3f8191d6c9f67a4dc297e9efc70d1adfbb31f7c21c29c9059ac905a359e39114c9871afef9"
+                    },
+                    "user_id": {
+                      "type": "number",
+                      "example": 329653108
+                    },
+                    "name": {
+                      "type": "string",
+                      "example": "POS001"
+                    },
+                    "fixed_amount": {
+                      "type": "boolean",
+                      "example": false
+                    },
+                    "external_id": {
+                      "type": "string",
+                      "example": "SUC001POS002"
+                    },
+                    "site": {
+                      "type": "string",
+                      "example": "MLB"
+                    },
+                    "qr_code": {
+                      "type": "string",
+                      "example": "00020101021226940014BR.GOV.BCB.PIX2572pix-qr-h.mercadopago.com/instore/h/p/v2/c955a5618d874e998c8399e3515fed3a43520016com.mercadolibre0128https://mpago.la/pos/28521285204000053039865802BR5924VICTOR CORREA DE ALMEIDA6008CAMPINAS62070503***6304367C"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "INVALID_POS_ID",
+                          "description": {
+                            "en": "The ID of the pos is invalid, it must be numeric.",
+                            "es": "The ID of the pos is invalid, it must be numeric.",
+                            "pt": "The ID of the pos is invalid, it must be numeric."
+                          }
+                        },
+                        {
+                          "title": "INVALID_EXTERNAL_ID",
+                          "description": {
+                            "en": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.",
+                            "es": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.",
+                            "pt": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters."
+                          }
+                        },
+                        {
+                          "title": "EXTERNAL_ID_TOO_LONG",
+                          "description": {
+                            "en": "The EXTERNAL_ID must be less than 40 characters.",
+                            "es": "The EXTERNAL_ID must be less than 40 characters.",
+                            "pt": "The EXTERNAL_ID must be less than 40 characters."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "1",
+                          "description": {
+                            "en": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user.",
+                            "es": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user.",
+                            "pt": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Get POS",
+          "pt": "Obter caixa",
+          "es": "Obtener caja"
+        }
+      },
+      "put": {
+        "tags": [
+          "qr-code",
+          "mp-point"
+        ],
+        "description": {
+          "en": "Renew the data of a Point of Sale. Indicate the ID of the POS and send the parameters with the information you want to update",
+          "pt": "Atualizar os dados de um ponto de venda. Indicar a identificação da caixa registradora e enviar os parâmetros com as informações que você deseja atualizar",
+          "es": "Renueva los datos de un punto de venta. Indica el ID de la caja y envía los parámetros con la información que quieras actualizar"
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": {
+              "en": "POS Id",
+              "es": "POS Id",
+              "por": "POS Id"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": 1988157
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": {
+                      "en": "Name of the POS.",
+                      "es": "Nombre de la caja",
+                      "por": "Nome da caixa"
+                    },
+                    "example": "First POS"
+                  },
+                  "fixed_amount": {
+                    "type": "boolean",
+                    "description": {
+                      "en": "Define if the customer can insert the amount to be paid.",
+                      "es": "Determina si el cliente puede insertar el monto a pagar",
+                      "por": "Determine se o cliente pode inserir o valor a ser pago"
+                    },
+                    "example": false
+                  },
+                  "category": {
+                    "$ref": "#/components/schemas/category"
+                  },
+                  "store_id": {
+                    "type": "string",
+                    "description": {
+                      "en": "Store identifier to which the point of sale belongs.",
+                      "es": "Identificador de la sucursal a la que pertenece el Punto de Venta",
+                      "por": "Identificador da loja à qual o caixa pertence"
+                    },
+                    "example": 1234567
+                  },
+                  "external_store_id": {
+                    "type": "string",
+                    "description": "External_id of the store to which the pos belongs defined by integrator system."
+                  },
+                  "url": {
+                    "type": "string",
+                    "description": "URL to get the order of the integrator system. It is optional and is used only in the unattended integration model."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "en": "success",
+              "pt": "success",
+              "es": "success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "example": 2711382,
+                      "description": {
+                        "en": "id",
+                        "pt": "id",
+                        "es": "id"
+                      }
+                    },
+                    "qr": {
+                      "type": "object",
+                      "properties": {
+                        "image": {
+                          "type": "string",
+                          "example": "https://www.mercadopago.com/instore/merchant/qr/2711382/0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png",
+                          "description": {
+                            "en": "image",
+                            "pt": "image",
+                            "es": "image"
+                          }
+                        },
+                        "template_document": {
+                          "type": "string",
+                          "example": "https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.pdf",
+                          "description": {
+                            "en": "template_document",
+                            "pt": "template_document",
+                            "es": "template_document"
+                          }
+                        },
+                        "template_image": {
+                          "type": "string",
+                          "example": "https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png",
+                          "description": {
+                            "en": "template_image",
+                            "pt": "template_image",
+                            "es": "template_image"
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "qr",
+                        "pt": "qr",
+                        "es": "qr"
+                      }
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "active",
+                      "description": {
+                        "en": "status",
+                        "pt": "status",
+                        "es": "status"
+                      }
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "example": "2019-08-22T14:11:12.000Z",
+                      "description": {
+                        "en": "date_created",
+                        "pt": "date_created",
+                        "es": "date_created"
+                      }
+                    },
+                    "date_last_updated": {
+                      "type": "string",
+                      "example": "2019-08-22T14:11:12.000Z",
+                      "description": {
+                        "en": "date_last_updated",
+                        "pt": "date_last_updated",
+                        "es": "date_last_updated"
+                      }
+                    },
+                    "uuid": {
+                      "type": "string",
+                      "example": "0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1",
+                      "description": {
+                        "en": "uuid",
+                        "pt": "uuid",
+                        "es": "uuid"
+                      }
+                    },
+                    "user_id": {
+                      "type": "number",
+                      "example": 446566691,
+                      "description": {
+                        "en": "user_id",
+                        "pt": "user_id",
+                        "es": "user_id"
+                      }
+                    },
+                    "name": {
+                      "type": "string",
+                      "example": "First POS",
+                      "description": {
+                        "en": "name",
+                        "pt": "name",
+                        "es": "name"
+                      }
+                    },
+                    "fixed_amount": {
+                      "type": "boolean",
+                      "example": false,
+                      "description": {
+                        "en": "fixed_amount",
+                        "pt": "fixed_amount",
+                        "es": "fixed_amount"
+                      }
+                    },
+                    "category": {
+                      "$ref": "#/components/schemas/category"
+                    },
+                    "store_id": {
+                      "type": "string",
+                      "example": 1234567,
+                      "description": {
+                        "en": "store_id",
+                        "pt": "store_id",
+                        "es": "store_id"
+                      }
+                    },
+                    "external_store_id": {
+                      "type": "string",
+                      "example": "SUC001",
+                      "description": {
+                        "en": "external_store_id",
+                        "pt": "external_store_id",
+                        "es": "external_store_id"
+                      }
+                    },
+                    "url": {
+                      "type": "string",
+                      "description": {
+                        "en": "url",
+                        "pt": "url",
+                        "es": "url"
+                      }
+                    },
+                    "external_id": {
+                      "type": "string",
+                      "example": "SUC001POS002",
+                      "description": {
+                        "en": "external_id",
+                        "pt": "external_id",
+                        "es": "external_id"
+                      }
+                    },
+                    "site": {
+                      "type": "string",
+                      "example": "MLB"
+                    },
+                    "qr_code": {
+                      "type": "string",
+                      "example": "00020101021226940014BR.GOV.BCB.PIX2572pix-qr-h.mercadopago.com/instore/h/p/v2/db12b6e2ec4844839825c6dce7cd2f2243530016com.mercadolibre0129https://mpago.la/pos/212798995204000053039865802BR5924VICTOR CORREA DE ALMEIDA6008CAMPINAS62070503***63040B44"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "MISSING_BODY",
+                          "description": {
+                            "en": "HTTP body is required to modify pos.",
+                            "es": "HTTP body is required to modify pos.",
+                            "pt": "HTTP body is required to modify pos."
+                          }
+                        },
+                        {
+                          "title": "UNKNOWN_FIELD_EXCEPTION",
+                          "description": {
+                            "en": "The indicated field is not allowed for this operation or is unknown.",
+                            "es": "The indicated field is not allowed for this operation or is unknown.",
+                            "pt": "The indicated field is not allowed for this operation or is unknown."
+                          }
+                        },
+                        {
+                          "title": "INVALID_POS_ID",
+                          "description": {
+                            "en": "The ID of the pos is invalid, it must be numeric.",
+                            "es": "The ID of the pos is invalid, it must be numeric.",
+                            "pt": "The ID of the pos is invalid, it must be numeric."
+                          }
+                        },
+                        {
+                          "title": "INVALID_NAME",
+                          "description": {
+                            "en": "NAME must be string.",
+                            "es": "NAME must be string.",
+                            "pt": "NAME must be string."
+                          }
+                        },
+                        {
+                          "title": "NAME_TOO_LONG",
+                          "description": {
+                            "en": "The NAME must be less than 45 characters.",
+                            "es": "The NAME must be less than 45 characters.",
+                            "pt": "The NAME must be less than 45 characters."
+                          }
+                        },
+                        {
+                          "title": "INVALID_FIXED_AMOUNT",
+                          "description": {
+                            "en": "FIXED_AMOUNT must be boolean.",
+                            "es": "FIXED_AMOUNT must be boolean.",
+                            "pt": "FIXED_AMOUNT must be boolean."
+                          }
+                        },
+                        {
+                          "title": "INVALID_CATEGORY",
+                          "description": {
+                            "en": "CATEGORY must be numeric.",
+                            "es": "CATEGORY must be numeric.",
+                            "pt": "CATEGORY must be numeric."
+                          }
+                        },
+                        {
+                          "title": "POS_UNKNOWN_MCC",
+                          "description": {
+                            "en": "The CATEGORY must be valid for the user's site.",
+                            "es": "The CATEGORY must be valid for the user's site.",
+                            "pt": "The CATEGORY must be valid for the user's site."
+                          }
+                        },
+                        {
+                          "title": "POS_INVALID_STORE_ID",
+                          "description": {
+                            "en": "STORE_ID must be numeric.",
+                            "es": "STORE_ID must be numeric.",
+                            "pt": "STORE_ID must be numeric."
+                          }
+                        },
+                        {
+                          "title": "INVALID_EXTERNAL_STORE_ID",
+                          "description": {
+                            "en": "EXTERNAL_STORE_ID muste be string.",
+                            "es": "EXTERNAL_STORE_ID muste be string.",
+                            "pt": "EXTERNAL_STORE_ID muste be string."
+                          }
+                        },
+                        {
+                          "title": "EXTERNAL_STORE_ID_NOT_MATCH",
+                          "description": {
+                            "en": "The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID.",
+                            "es": "The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID.",
+                            "pt": "The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID."
+                          }
+                        },
+                        {
+                          "title": "INEXISTENT_EXTERNAL_STORE_ID",
+                          "description": {
+                            "en": "The EXTERNAL STORE_ID does not refer to an existing Store.",
+                            "es": "The EXTERNAL STORE_ID does not refer to an existing Store.",
+                            "pt": "The EXTERNAL STORE_ID does not refer to an existing Store."
+                          }
+                        },
+                        {
+                          "title": "INVALID_EXTERNAL_ID",
+                          "description": {
+                            "en": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.",
+                            "es": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.",
+                            "pt": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters."
+                          }
+                        },
+                        {
+                          "title": "EXTERNAL_ID_TOO_LONG",
+                          "description": {
+                            "en": "The EXTERNAL_ID must be less than 40 characters.",
+                            "es": "The EXTERNAL_ID must be less than 40 characters.",
+                            "pt": "The EXTERNAL_ID must be less than 40 characters."
+                          }
+                        },
+                        {
+                          "title": "INVALID_URL",
+                          "description": {
+                            "en": "The URL must be string and muste have the format of a valid url",
+                            "es": "The URL must be string and muste have the format of a valid url",
+                            "pt": "The URL must be string and muste have the format of a valid url"
+                          }
+                        },
+                        {
+                          "title": "URL_TOO_LONG",
+                          "description": {
+                            "en": "The URL must be less than 300 characters.",
+                            "es": "The URL must be less than 300 characters.",
+                            "pt": "The URL must be less than 300 characters."
+                          }
+                        },
+                        {
+                          "title": "FIXED_AMOUNT_FALSE",
+                          "description": {
+                            "en": "If the URL field is indicated, the FIXED_AMOUNT field must be true. We do not support the open amount modality in this case.",
+                            "es": "If the URL field is indicated, the FIXED_AMOUNT field must be true. We do not support the open amount modality in this case.",
+                            "pt": "If the URL field is indicated, the FIXED_AMOUNT field must be true. We do not support the open amount modality in this case."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "1",
+                          "description": {
+                            "en": "If you are using the URL field, the host must be enabled by Mercado Pago. If it is not, you will receive this error. Please contact your assigned technical advisor.",
+                            "es": "If you are using the URL field, the host must be enabled by Mercado Pago. If it is not, you will receive this error. Please contact your assigned technical advisor.",
+                            "pt": "If you are using the URL field, the host must be enabled by Mercado Pago. If it is not, you will receive this error. Please contact your assigned technical advisor."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "1",
+                          "description": {
+                            "en": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user.",
+                            "es": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user.",
+                            "pt": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "1",
+                          "description": {
+                            "en": "A pos with the same EXTERNAL_ID already exists.",
+                            "es": "A pos with the same EXTERNAL_ID already exists.",
+                            "pt": "A pos with the same EXTERNAL_ID already exists."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Update POS",
+          "pt": "Atualizar caixa",
+          "es": "Actualizar caja"
+        }
+      },
+      "delete": {
+        "tags": [
+          "qr-code",
+          "mp-point"
+        ],
+        "description": {
+          "en": "Delete a Point of Sale whenever you need it with the ID of the POS",
+          "pt": "Exclua um ponto de venda sempre que for necessário com o ID da caixa",
+          "es": "Elimina un punto de venta siempre que lo necesites con el ID de la caja"
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": {
+              "en": "POS Id",
+              "es": "POS Id",
+              "por": "POS Id"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "INVALID_POS_ID",
+                          "description": {
+                            "en": "The ID of the pos is invalid, it must be numeric.",
+                            "es": "The ID of the pos is invalid, it must be numeric.",
+                            "pt": "The ID of the pos is invalid, it must be numeric."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "1",
+                          "description": {
+                            "en": "If there is no pos for the indicated ID and user.",
+                            "es": "If there is no pos for the indicated ID and user.",
+                            "pt": "If there is no pos for the indicated ID and user."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Delete POS",
+          "pt": "Excluir caixa",
+          "es": "Eliminar caja"
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "category": {
+        "type": "number",
+        "example": 621102,
+        "description": {
+          "en": "MCC code that indicates the category of the Point of Sale. If not specified, it remains as a generic category.",
+          "es": "Código MCC que indica el rubro del Punto de Venta. Si no se especifica, queda como categoría genérica",
+          "por": "Código MCC que indica a categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica"
+        },
+        "enum": [
+          "Gastronomy --",
+          "621102 -- Argentina",
+          "5611203 -- Brazil",
+          "5812 -- Mexico",
+          "5611 -- Colombia",
+          "5520 -- Peru",
+          "56101 -- Uruguay",
+          "561000 -- Chile",
+          "Gas station --",
+          "473000 -- Argentina",
+          "4731300 -- Brazil",
+          "468419 -- Mexico",
+          "4731 -- Colombia",
+          "5050 -- Peru",
+          "47300 -- Uruguay",
+          "473001 -- Chile"
+        ]
+      }
+    }
+  },
+  "url": "https://api.mercadopago.com"
+}

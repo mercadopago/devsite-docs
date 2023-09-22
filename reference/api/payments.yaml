@@ -1323,89 +1323,89 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1--Params Error.
-                      - 3--Token must be for test.
-                      - 5--Must provide your access_token to proceed.
-                      - 23--The following parameters must be valid date and format (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration.
-                      - 1000--Number of rows exceeded the limits.
-                      - 1001--Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
-                      - 2001--Already posted the same request in the last minute.
-                      - 2002--Customer not found.
-                      - 2004--POST to Gateway Transactions API fail.
-                      - 2006--Card Token not found.
-                      - 2007--Connection to Card Token API fail.
-                      - 2009--Card token issuer can't be null.
-                      - 2034-–Invalid users involved 2041 – GET to API APPLICATION fail. 
-                      - 2060--The customer can't be equal to the collector.
-                      - 2062-–Invalid card token.
-                      - 2072-–Invalid value for transaction_amount. 
-                      - 2077--Deferred capture not supported.
-                      - 2123-–Invalid operators users involved.
-                      - 2131–-Cannot infer Payment Method.
-                      - 3000--You must provide your cardholder_name with your card data.
-                      - 3001--You must provide your cardissuer_id with your card data.
-                      - 3003--Invalid card_token_id.
-                      - 3004--Invalid parameter site_id.
-                      - 3005--Not valid action, the resource is in a state that does not allow this operation. For more information see the state that has the resource.
-                      - 3006--Invalid parameter cardtoken_id.
-                      - 3007--The parameter client_id can not be null or empty.
-                      - 3008--Not found Cardtoken.
-                      - 3009--unauthorized client_id.
-                      - 3010--Not found card on whitelist.
-                      - 3011--Not found payment_method.
-                      - 3012--Invalid parameter security_code_length.
-                      - 3013--The parameter security_code is a required field can not be null or empty.
-                      - 3014--Invalid parameter payment_method.
-                      - 3015--Invalid parameter card_number_length.
-                      - 3016--Invalid parameter card_number.
-                      - 3017--The parameter card_number_id can not be null or empty.
-                      - 3018--The parameter expiration_month can not be null or empty.
-                      - 3019--The parameter expiration_year can not be null or empty.
-                      - 3020--The parameter cardholder.name can not be null or empty.
-                      - 3021--The parameter cardholder.document.number can not be null or empty.
-                      - 3022--The parameter cardholder.document.type can not be null or empty.
-                      - 3023--The parameter cardholder.document.subtype can not be null or empty.
-                      - 3024--Not valid action - partial refund unsupported for this transaction.
-                      - 3025--Invalid Auth Code.
-                      - 3026--Invalid card_id for this payment_method_id.
-                      - 3027--Invalid payment_type_id.
-                      - 3028--Invalid payment_method_id.
-                      - 3029--Invalid card expiration month.
-                      - 3030--Invalid card expiration year.
-                      - 3031-–Secure_code_id can't be null.
-                      - 3032–-Invalid security_code_length 3033 3034 - Invalid card_number_validation.
-                      - 4000--card atributte can't be null.
-                      - 4001--payment_method_id atributte can't be null.
-                      - 4002--transaction_amount atributte can't be null.
-                      - 4003--transaction_amount atributte must be numeric.
-                      - 4004--installments atributte can't be null.
-                      - 4005--installments atributte must be numeric.
-                      - 4006--payer atributte is malformed.
-                      - 4007--site_id atributte can't be null.
-                      - 4012--payer.id atributte can't be null.
-                      - 4013--payer.type atributte can't be null.
-                      - 4015--payment_method_reference_id atributte can't be null.
-                      - 4016--payment_method_reference_id atributte must be numeric.
-                      - 4017--status atributte can't be null.
-                      - 4018--payment_id atributte can't be null.
-                      - 4019--payment_id atributte must be numeric.
-                      - 4020--notificaction_url atributte must be url valid.
-                      - 4021--notificaction_url atributte must be shorter than 500 characters.
-                      - 4022--metadata atributte must be a valid JSON.
-                      - 4023--transaction_amount atributte can't be null.
-                      - 4024--transaction_amount atributte must be numeric.
-                      - 4025--refund_id can't be null.
-                      - 4026--Invalid coupon_amount.
-                      - 4027--campaign_id atributte must be numeric.
-                      - 4028--coupon_amount atributte must be numeric.
-                      - 4029--Invalid payer type.
-                      - 4037--Invalid transaction_amount.
-                      - 4038--application_fee cannot be bigger than transaction_amount.
-                      - 4039--application_fee cannot be a negative value.
-                      - 4050--payer.email must be a valid email.
-                      - 4051--payer.email must be shorter than 254 characters.
-                      - 6033--User unavailable.
-                      - 7523--Invalid expiration date.
+                      - 1 -- Params Error.
+                      - 3 -- Token must be for test.
+                      - 5 -- Must provide your access_token to proceed.
+                      - 23 -- The following parameters must be valid date and format (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration.
+                      - 1000 -- Number of rows exceeded the limits.
+                      - 1001 -- Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
+                      - 2001 -- Already posted the same request in the last minute.
+                      - 2002 -- Customer not found.
+                      - 2004 -- POST to Gateway Transactions API fail.
+                      - 2006 -- Card Token not found.
+                      - 2007 -- Connection to Card Token API fail.
+                      - 2009 -- Card token issuer can't be null.
+                      - 2034 -- Invalid users involved 2041 – GET to API APPLICATION fail. 
+                      - 2060 -- The customer can't be equal to the collector.
+                      - 2062 -- Invalid card token.
+                      - 2072 -- Invalid value for transaction_amount. 
+                      - 2077 -- Deferred capture not supported.
+                      - 2123 -- Invalid operators users involved.
+                      - 2131 -- Cannot infer Payment Method.
+                      - 3000 -- You must provide your cardholder_name with your card data.
+                      - 3001 -- You must provide your cardissuer_id with your card data.
+                      - 3003 -- Invalid card_token_id.
+                      - 3004 -- Invalid parameter site_id.
+                      - 3005 -- Not valid action, the resource is in a state that does not allow this operation. For more information see the state that has the resource.
+                      - 3006 -- Invalid parameter cardtoken_id.
+                      - 3007 -- The parameter client_id can not be null or empty.
+                      - 3008 -- Not found Cardtoken.
+                      - 3009 -- unauthorized client_id.
+                      - 3010 -- Not found card on whitelist.
+                      - 3011 -- Not found payment_method.
+                      - 3012 -- Invalid parameter security_code_length.
+                      - 3013 -- The parameter security_code is a required field can not be null or empty.
+                      - 3014 -- Invalid parameter payment_method.
+                      - 3015 -- Invalid parameter card_number_length.
+                      - 3016 -- Invalid parameter card_number.
+                      - 3017 -- The parameter card_number_id can not be null or empty.
+                      - 3018 -- The parameter expiration_month can not be null or empty.
+                      - 3019 -- The parameter expiration_year can not be null or empty.
+                      - 3020 -- The parameter cardholder.name can not be null or empty.
+                      - 3021 -- The parameter cardholder.document.number can not be null or empty.
+                      - 3022 -- The parameter cardholder.document.type can not be null or empty.
+                      - 3023 -- The parameter cardholder.document.subtype can not be null or empty.
+                      - 3024 -- Not valid action - partial refund unsupported for this transaction.
+                      - 3025 -- Invalid Auth Code.
+                      - 3026 -- Invalid card_id for this payment_method_id.
+                      - 3027 -- Invalid payment_type_id.
+                      - 3028 -- Invalid payment_method_id.
+                      - 3029 -- Invalid card expiration month.
+                      - 3030 -- Invalid card expiration year.
+                      - 3031 -- Secure_code_id can't be null.
+                      - 3032 -- Invalid security_code_length 3033 3034 - Invalid card_number_validation.
+                      - 4000 -- card atributte can't be null.
+                      - 4001 -- payment_method_id atributte can't be null.
+                      - 4002 -- transaction_amount atributte can't be null.
+                      - 4003 -- transaction_amount atributte must be numeric.
+                      - 4004 -- installments atributte can't be null.
+                      - 4005 -- installments atributte must be numeric.
+                      - 4006 -- payer atributte is malformed.
+                      - 4007 -- site_id atributte can't be null.
+                      - 4012 -- payer.id atributte can't be null.
+                      - 4013 -- payer.type atributte can't be null.
+                      - 4015 -- payment_method_reference_id atributte can't be null.
+                      - 4016 -- payment_method_reference_id atributte must be numeric.
+                      - 4017 -- status atributte can't be null.
+                      - 4018 -- payment_id atributte can't be null.
+                      - 4019 -- payment_id atributte must be numeric.
+                      - 4020 -- notificaction_url atributte must be url valid.
+                      - 4021 -- notificaction_url atributte must be shorter than 500 characters.
+                      - 4022 -- metadata atributte must be a valid JSON.
+                      - 4023 -- transaction_amount atributte can't be null.
+                      - 4024 -- transaction_amount atributte must be numeric.
+                      - 4025 -- refund_id can't be null.
+                      - 4026 -- Invalid coupon_amount.
+                      - 4027 -- campaign_id atributte must be numeric.
+                      - 4028 -- coupon_amount atributte must be numeric.
+                      - 4029 -- Invalid payer type.
+                      - 4037 -- Invalid transaction_amount.
+                      - 4038 -- application_fee cannot be bigger than transaction_amount.
+                      - 4039 -- application_fee cannot be a negative value.
+                      - 4050 -- payer.email must be a valid email.
+                      - 4051 -- payer.email must be shorter than 254 characters.
+                      - 6033 -- User unavailable.
+                      - 7523 -- Invalid expiration date.
         '403':
           description: Error
           x-description-i18n:
@@ -1420,8 +1420,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 4--The caller is not authorized to access this resource.
-                      - 3002--The caller is not authorized to perform this action.
+                      - 4 -- The caller is not authorized to access this resource.
+                      - 3002 -- The caller is not authorized to perform this action.
         '404':
           description: Error
           x-description-i18n:
@@ -1436,7 +1436,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2000--Payment not found
+                      - 2000 -- Payment not found
   /v1/payments/{id}:
     get:
       tags:
@@ -1938,47 +1938,47 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1--Params Error.
-                      - 3--Token must be for test.
-                      - 5--Must provide your access_token to proceed.
-                      - 1000--Number of rows exceeded the limits.
-                      - 1001--Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
-                      - 2001--Already posted the same request in the last minute.
-                      - 2002--Customer not found.
-                      - 2004--POST to Gateway Transactions API fail.
-                      - 2006--Card Token not found.
-                      - 2007--Connection to Card Token API fail.
-                      - 2009--Card token issuer can't be null.
-                      - 3000--You must provide your cardholder_name with your card data.
-                      - 3001--You must provide your cardissuer_id with your card data.
-                      - 3003--Invalid card_token_id.
-                      - 3004--Invalid parameter site_id.
-                      - 3005--Not valid action, the resource is in a state that does not allow this operation. For more information see the state that has the resource.
-                      - 3006--Invalid parameter cardtoken_id.
-                      - 3007--The parameter client_id can not be null or empty.
-                      - 3008--Not found Cardtoken.
-                      - 3009--unauthorized client_id.
-                      - 3010--Not found card on whitelist.
-                      - 3011--Not found payment_method.
-                      - 3012--Invalid parameter security_code_length.
-                      - 3013--The parameter security_code is a required field can not be null or empty.
-                      - 3014--Invalid parameter payment_method.
-                      - 3015--Invalid parameter card_number_length.
-                      - 3016--Invalid parameter card_number.
-                      - 3017--The parameter card_number_id can not be null or empty.
-                      - 3018--The parameter expiration_month can not be null or empty.
-                      - 3019--The parameter expiration_year can not be null or empty.
-                      - 3020--The parameter cardholder.name can not be null or empty.
-                      - 3021--The parameter cardholder.document.number can not be null or empty.
-                      - 3022--The parameter cardholder.document.type can not be null or empty.
-                      - 3023--The parameter cardholder.document.subtype can not be null or empty.
-                      - 3024--Not valid action - partial refund unsupported for this transaction.
-                      - 3025--Invalid Auth Code.
-                      - 3026--Invalid card_id for this payment_method_id.
-                      - 3027--Invalid payment_type_id.
-                      - 3028--Invalid payment_method_id.
-                      - 3029--Invalid card expiration month.
-                      - 3030--Invalid card expiration year.
+                      - 1 -- Params Error.
+                      - 3 -- Token must be for test.
+                      - 5 -- Must provide your access_token to proceed.
+                      - 1000 -- Number of rows exceeded the limits.
+                      - 1001 -- Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
+                      - 2001 -- Already posted the same request in the last minute.
+                      - 2002 -- Customer not found.
+                      - 2004 -- POST to Gateway Transactions API fail.
+                      - 2006 -- Card Token not found.
+                      - 2007 -- Connection to Card Token API fail.
+                      - 2009 -- Card token issuer can't be null.
+                      - 3000 -- You must provide your cardholder_name with your card data.
+                      - 3001 -- You must provide your cardissuer_id with your card data.
+                      - 3003 -- Invalid card_token_id.
+                      - 3004 -- Invalid parameter site_id.
+                      - 3005 -- Not valid action, the resource is in a state that does not allow this operation. For more information see the state that has the resource.
+                      - 3006 -- Invalid parameter cardtoken_id.
+                      - 3007 -- The parameter client_id can not be null or empty.
+                      - 3008 -- Not found Cardtoken.
+                      - 3009 -- unauthorized client_id.
+                      - 3010 -- Not found card on whitelist.
+                      - 3011 -- Not found payment_method.
+                      - 3012 -- Invalid parameter security_code_length.
+                      - 3013 -- The parameter security_code is a required field can not be null or empty.
+                      - 3014 -- Invalid parameter payment_method.
+                      - 3015 -- Invalid parameter card_number_length.
+                      - 3016 -- Invalid parameter card_number.
+                      - 3017 -- The parameter card_number_id can not be null or empty.
+                      - 3018 -- The parameter expiration_month can not be null or empty.
+                      - 3019 -- The parameter expiration_year can not be null or empty.
+                      - 3020 -- The parameter cardholder.name can not be null or empty.
+                      - 3021 -- The parameter cardholder.document.number can not be null or empty.
+                      - 3022 -- The parameter cardholder.document.type can not be null or empty.
+                      - 3023 -- The parameter cardholder.document.subtype can not be null or empty.
+                      - 3024 -- Not valid action - partial refund unsupported for this transaction.
+                      - 3025 -- Invalid Auth Code.
+                      - 3026 -- Invalid card_id for this payment_method_id.
+                      - 3027 -- Invalid payment_type_id.
+                      - 3028 -- Invalid payment_method_id.
+                      - 3029 -- Invalid card expiration month.
+                      - 3030 -- Invalid card expiration year.
         '403':
           description: Error
           x-description-i18n:
@@ -1993,8 +1993,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 4--The caller is not authorized to access this resource.
-                      - 3002--The caller is not authorized to perform this action.
+                      - 4 -- The caller is not authorized to access this resource.
+                      - 3002 -- The caller is not authorized to perform this action.
         '404':
           description: Error
           x-description-i18n:
@@ -2009,7 +2009,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2000--Payment not found.
+                      - 2000 -- Payment not found.
     put:
       tags:
         - $ref: '#/tags/checkout-pro'
@@ -2901,11 +2901,11 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 8--The name of the parameters is wrong
-                      - 1004--Invalid parameters for payment_method API
-                      - 2018--The action requested is not valid for the current payment state.
-                      - 2078--Capture attribute must be boolean.
-                      - 2079--Invalid value for capture attribute.
+                      - 8 -- The name of the parameters is wrong
+                      - 1004 -- Invalid parameters for payment_method API
+                      - 2018 -- The action requested is not valid for the current payment state.
+                      - 2078 -- Capture attribute must be boolean.
+                      - 2079 -- Invalid value for capture attribute.
         '403':
           description: Error
           x-description-i18n:
@@ -2920,8 +2920,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 4--The caller is not authorized to access this resource.
-                      - 3002--The caller is not authorized to perform this action.
+                      - 4 -- The caller is not authorized to access this resource.
+                      - 3002 -- The caller is not authorized to perform this action.
         '404':
           description: Error
           x-description-i18n:
@@ -2936,7 +2936,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2000--Payment not found.
+                      - 2000 -- Payment not found.
   /v1/payments/search:
     get:
       tags:
@@ -3538,50 +3538,50 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 1--Params Error.
-                      - 3--Token must be for test.
-                      - 5--Must provide your access_token to proceed.
-                      - 1000--Number of rows exceeded the limits.
-                      - 1001--Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
-                      - 1003--Invalid sort value.
-                      - 1004--Invalid criteria value.
-                      - 2001--Already posted the same request in the last minute.
-                      - 2002--Customer not found.
-                      - 2004--POST to Gateway Transactions API fail.
-                      - 2006--Card Token not found.
-                      - 2007--Connection to Card Token API fail.
-                      - 2009--Card token issuer can't be null.
-                      - 3000--You must provide your cardholder_name with your card data.
-                      - 3001--You must provide your cardissuer_id with your card data.
-                      - 3003--Invalid card_token_id.
-                      - 3004--Invalid parameter site_id.
-                      - 3005--Not valid action, the resource is in a state that does not allow this operation. For more information see the state that has the resource.
-                      - 3006--Invalid parameter cardtoken_id.
-                      - 3007--The parameter client_id can not be null or empty.
-                      - 3008--Not found Cardtoken.
-                      - 3009--unauthorized client_id.
-                      - 3010--Not found card on whitelist.
-                      - 3011--Not found payment_method.
-                      - 3012--Invalid parameter security_code_length.
-                      - 3013--The parameter security_code is a required field can not be null or empty.
-                      - 3014--Invalid parameter payment_method.
-                      - 3015--Invalid parameter card_number_length.
-                      - 3016--Invalid parameter card_number.
-                      - 3017--The parameter card_number_id can not be null or empty.
-                      - 3018--The parameter expiration_month can not be null or empty.
-                      - 3019--The parameter expiration_year can not be null or empty.
-                      - 3020--The parameter cardholder.name can not be null or empty.
-                      - 3021--The parameter cardholder.document.number can not be null or empty.
-                      - 3022--The parameter cardholder.document.type can not be null or empty.
-                      - 3023--The parameter cardholder.document.subtype can not be null or empty.
-                      - 3024--Not valid action - partial refund unsupported for this transaction.
-                      - 3025--Invalid Auth Code.
-                      - 3026--Invalid card_id for this payment_method_id.
-                      - 3027--Invalid payment_type_id.
-                      - 3028--Invalid payment_method_id.
-                      - 3029--Invalid card expiration month.
-                      - 3030--Invalid card expiration year.
-                      - 9062--Invalid range interval - Must be less than 365 days.
+                      - 1 -- Params Error.
+                      - 3 -- Token must be for test.
+                      - 5 -- Must provide your access_token to proceed.
+                      - 1000 -- Number of rows exceeded the limits.
+                      - 1001 -- Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
+                      - 1003 -- Invalid sort value.
+                      - 1004 -- Invalid criteria value.
+                      - 2001 -- Already posted the same request in the last minute.
+                      - 2002 -- Customer not found.
+                      - 2004 -- POST to Gateway Transactions API fail.
+                      - 2006 -- Card Token not found.
+                      - 2007 -- Connection to Card Token API fail.
+                      - 2009 -- Card token issuer can't be null.
+                      - 3000 -- You must provide your cardholder_name with your card data.
+                      - 3001 -- You must provide your cardissuer_id with your card data.
+                      - 3003 -- Invalid card_token_id.
+                      - 3004 -- Invalid parameter site_id.
+                      - 3005 -- Not valid action, the resource is in a state that does not allow this operation. For more information see the state that has the resource.
+                      - 3006 -- Invalid parameter cardtoken_id.
+                      - 3007 -- The parameter client_id can not be null or empty.
+                      - 3008 -- Not found Cardtoken.
+                      - 3009 -- unauthorized client_id.
+                      - 3010 -- Not found card on whitelist.
+                      - 3011 -- Not found payment_method.
+                      - 3012 -- Invalid parameter security_code_length.
+                      - 3013 -- The parameter security_code is a required field can not be null or empty.
+                      - 3014 -- Invalid parameter payment_method.
+                      - 3015 -- Invalid parameter card_number_length.
+                      - 3016 -- Invalid parameter card_number.
+                      - 3017 -- The parameter card_number_id can not be null or empty.
+                      - 3018 -- The parameter expiration_month can not be null or empty.
+                      - 3019 -- The parameter expiration_year can not be null or empty.
+                      - 3020 -- The parameter cardholder.name can not be null or empty.
+                      - 3021 -- The parameter cardholder.document.number can not be null or empty.
+                      - 3022 -- The parameter cardholder.document.type can not be null or empty.
+                      - 3023 -- The parameter cardholder.document.subtype can not be null or empty.
+                      - 3024 -- Not valid action - partial refund unsupported for this transaction.
+                      - 3025 -- Invalid Auth Code.
+                      - 3026 -- Invalid card_id for this payment_method_id.
+                      - 3027 -- Invalid payment_type_id.
+                      - 3028 -- Invalid payment_method_id.
+                      - 3029 -- Invalid card expiration month.
+                      - 3030 -- Invalid card expiration year.
+                      - 9062 -- Invalid range interval - Must be less than 365 days.
         '403':
           description: Error
           x-description-i18n:
@@ -3596,8 +3596,8 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 4--The caller is not authorized to access this resource.
-                      - 3002--The caller is not authorized to perform this action.
+                      - 4 -- The caller is not authorized to access this resource.
+                      - 3002 -- The caller is not authorized to perform this action.
         '404':
           description: Error
           x-description-i18n:
@@ -3612,7 +3612,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2000--Payment not found.
+                      - 2000 -- Payment not found.
 components:
   schemas:
     operation_type:

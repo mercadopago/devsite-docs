@@ -1,0 +1,175 @@
+{
+  "paths": {
+    "/v1/identification_types": {
+      "get": {
+        "tags": [
+          "checkout-pro"
+        ],
+        "description": {
+          "en": "Consult all the types of documents available by country and get a list with the ID and details of each one",
+          "pt": "Veja todos os tipos de documentos disponíveis por país e obtenha uma lista com a identificação e detalhes de cada um deles",
+          "es": "Consulta todos los tipos de documentos disponibles por país y obtén un listado con el ID y detalle de cada uno"
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "en": "success",
+              "pt": "success",
+              "es": "success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "example": "CPF",
+                        "description": {
+                          "en": "Identification type id.",
+                          "pt": "Identificador de tipo de identificação",
+                          "es": "Identificador de tipo de identificación"
+                        }
+                      },
+                      "name": {
+                        "type": "string",
+                        "example": "CPF",
+                        "description": {
+                          "en": "Identification type name.",
+                          "pt": "Nome de tipo de identificação",
+                          "es": "Nombre de tipo de identificación"
+                        }
+                      },
+                      "type": {
+                        "type": "string",
+                        "example": "number",
+                        "description": {
+                          "en": "Identification number data type.",
+                          "pt": "Tipo de dados do número de identificação",
+                          "es": "Tipo de dato del número de identificación"
+                        }
+                      },
+                      "min_length": {
+                        "type": "number",
+                        "example": 11,
+                        "description": {
+                          "en": "Identification number min length.",
+                          "pt": "O comprimento mínimo do número de identificação",
+                          "es": "Mínima longitud del número de identificación"
+                        }
+                      },
+                      "max_length": {
+                        "type": "number",
+                        "example": 11,
+                        "description": {
+                          "en": "Identification number max length",
+                          "pt": "O comprimento máximo do número de identificação",
+                          "es": "Máxima longitud del número de identificación"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "1001",
+                          "description": {
+                            "en": "Public_key not found.",
+                            "es": "Public_key not found.",
+                            "pt": "Public_key not found."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "1000",
+                          "description": {
+                            "en": "The credentials are required.",
+                            "es": "The credentials are required.",
+                            "pt": "The credentials are required."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "1004",
+                          "description": {
+                            "en": "Identification types not found.",
+                            "es": "Identification types not found.",
+                            "pt": "Identification types not found."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Get document types",
+          "pt": "Obter tipos de documentos",
+          "es": "Obtener tipos de documentos"
+        }
+      }
+    }
+  },
+  "url": "https://api.mercadopago.com"
+}
