@@ -360,6 +360,7 @@ paths:
                     eng: URL where mercadopago does the final redirect (only for bank transfers).
                     spa: URL a la cual Mercado Pago hace la redirección final (sólo para transferencia bancaria).
                     por: URL para a qual o Mercado Pago faz o redirecionamento final (apenas para transferência bancária).
+                  example: www.mercadopago.com/home
                 campaign_id:
                   type: number
                   description: It is the identifier of  the entity that models the nature of discounts. All coupons come from a single campaign. The campaign configures, among other things, the available budget balance, dates between which coupons can be used, rules for coupon application. It's the discount promise.
@@ -374,6 +375,7 @@ paths:
                     eng: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
                     spa: Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true).
                     por: É um campo booleano existente em pagamentos de duas etapas (como o cartão de débito). Nesse tipo de pagamento, que é realizado de modo assíncrono, primeiro é feito a reserva do valor da compra (capture = false). Esse valor é capturado e não é debitado da conta instantaneamente. Quando o dinheiro é de fato transferido ao collector (quem recebe o pagamento) a captura do montante é feita (capture = true).
+                  example: true
                 coupon_amount:
                   type: number
                   description: It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.
@@ -381,6 +383,7 @@ paths:
                     eng: It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.
                     spa: Es el valor del cupón de descuento. Por ejemplo - BRL 14,50. El tipo del atributo es BigDecimal.
                     por: É o valor do cupom de desconto. Por exemplo - R$14,50. O tipo do atributo é BigDecimal.
+                  example: 14.50
                 coupon_code:
                   type: string
                   description: Discount campaign with a specific code.
@@ -412,6 +415,7 @@ paths:
                     eng: Payment’s expiration date. The valid format of the attribute is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2022-11-17T09:37:52.000-04:00.
                     spa: Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - "yyyy-MM-dd'T'HH:mm:ssz". Ej - 2022-11-17T09:37:52.000-04:00.
                     por: Data de expiração do pagamento. O formato válido do atributo é o seguinte - "yyyy-MM-dd'T'HH:mm:ssz". Por exemplo - 2022-11-17T09:37:52.000-04:00.
+                  example: "2022-11-17T09:37:52.000-04:00"
                 external_reference:
                   type: string
                   description: It is a payment external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.
@@ -425,8 +429,8 @@ paths:
                   description: Number of installments selected.
                   x-description-i18n:
                     eng: Number of installments selected.
-                    spa: Cantidad seleccionada de cuotas
-                    por: Número de parcelas selecionado
+                    spa: Cantidad seleccionada de cuotas.
+                    por: Número de parcelas selecionado.
                   required: true
                   example: 1
                 issuer_id:
@@ -436,14 +440,16 @@ paths:
                     eng: It is the identifier of the card issuer being used in a credit or debit card payment.
                     spa: Es el identificador del emisor de la tarjeta que se utiliza en un pago con tarjeta de crédito o débito.
                     por: É o identificador do emissor do cartão que está sendo utilizado em um pagamento com cartão de crédito ou débito.
+                  example: 001
                   required: true
                 metadata:
                   type: object
-                  description: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}
+                  description: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
                   x-description-i18n:
-                    eng: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}
-                    spa: Este es un objeto clave-valor opcional en el que el cliente puede agregar información adicional que debe registrarse al finalizar la compra. Por ejemplo - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}
-                    por: Este é um objeto opcional do tipo chave-valor  no qual o cliente  pode adicionar informações adicionais que precisam ser registradas no pagamento. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}
+                    eng: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
+                    spa: Este es un objeto clave-valor opcional en el que el cliente puede agregar información adicional que debe registrarse al finalizar la compra. Por ejemplo - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
+                    por: Este é um objeto opcional do tipo chave-valor  no qual o cliente  pode adicionar informações adicionais que precisam ser registradas no pagamento. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
+                  example: "payments_group_size"
                 notification_url:
                   type: string
                   description: Notifications URL available to receive notifications of events related to Payment.
