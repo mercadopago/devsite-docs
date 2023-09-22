@@ -68,7 +68,7 @@ paths:
                               eng: Item name.
                               spa: Nombre de ítem
                               por: Nome do item
-                            example: flight ticket to Miami
+                            example: Point Mini
                           description:
                             type: string
                             description: Long item description.
@@ -76,7 +76,7 @@ paths:
                               eng: Long item description.
                               spa: Descripción de item
                               por: Descrição do artigo
-                            example: round-trip flight ticket to Miami
+                            example: Point product for card payments via Bluetooth.
                           picture_url:
                             type: string
                             description: Image URL.
@@ -84,7 +84,7 @@ paths:
                               eng: Image URL.
                               spa: URL de imagen
                               por: URL da imagem
-                            example: https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/tickets-promo_medium2x.png
+                            example: https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png
                           category_id:
                             type: string
                             description: It is the category of the purchased item. It is possible to mention two main forms of category_id - categories inserted through a code, such as “MLB189908”, or those that are a tag, such as “phone”.
@@ -92,7 +92,7 @@ paths:
                               eng: It is the category of the purchased item. It is possible to mention two main forms of category_id - categories inserted through a code, such as “MLB189908”, or those that are a tag, such as “phone”.
                               spa: Es la categoría del ítem que se compró. Es posible citar dos formas principales de category_id - categorías insertadas a través de un código, como “MLB189908”, o aquellas que son una tag, como “phone”.
                               por: É a categoria do item que foi comprado. É possível citar duas formas principais de category_id - as categorias inseridas por meio de um código, como “MLB189908”, ou as que são uma tag, como “phone”.
-                            example: travel
+                            example: electronics
                           quantity:
                             type: number
                             description: Item quantity.
@@ -108,96 +108,7 @@ paths:
                               eng: Unit price of the purchased item.
                               spa: Precio unitario del ítem comprado.
                               por: Preço unitário do item comprado.
-                            example: 3500
-                          type:
-                            type: string
-                            description: Type of item being sold
-                            x-description-i18n:
-                              eng: Type of item being sold
-                              spa: Tipo de ítem que se está vendiendo
-                              por: Tipo de item sendo vendido
-                            example: tickets
-                          event_date:
-                            type: string
-                            description: Event Date - Use the standard ISO 8601 format to input the date and time of the event. The format should be "yyyy-MM-ddTHH:mm:ss.sssZ". For example, to schedule an event for December 31, 2023, at 9:37:52 AM in the UTC-4 timezone, you would enter "2023-12-31T09:37:52.000-04:00".
-                            x-description-i18n:
-                              eng: Event Date - Use the standard ISO 8601 format to input the date and time of the event. The format should be "yyyy-MM-ddTHH:mm:ss.sssZ". For example, to schedule an event for December 31, 2023, at 9:37:52 AM in the UTC-4 timezone, you would enter "2023-12-31T09:37:52.000-04:00".
-                              spa: Fecha del Evento - Por favor, utilice el formato estándar ISO 8601 para introducir la fecha y hora del evento. El formato debe ser "yyyy-MM-ddTHH:mm:ss.sssZ". Por ejemplo, para programar un evento para el 31 de diciembre de 2023 a las 9:37:52 AM en la zona horaria UTC-4, deberá ingresar "2023-12-31T09:37:52.000-04:00".
-                              por: Data do Evento - Utilize o formato padrão ISO 8601 para inserir a data e o horário do evento. O formato deve ser "yyyy-MM-ddTHH:mm:ss.sssZ". Por exemplo, para marcar um evento para o dia 31 de dezembro de 2023, às 9:37:52 AM, no fuso horário UTC-4, você deverá inserir - "2023-12-31T09:37:52.000-04:00".
-                            example: "2023-12-31T09:37:52.000-04:00"
-                          warranty:
-                            type: boolean
-                            description: Indicates if the product has warranty or not. True if it does, false if it doesn't.
-                            x-description-i18n:
-                              eng: Indicates if the product has warranty or not. True if it does, false if it doesn't.
-                              spa: Indica si el producto tiene garantía o no. True si tiene, false si no.
-                              por: Indica se o produto tem garantia ou não. True se tiver, false se não.
-                            example: false 
-                          category_descriptor:
-                            type: object
-                            properties:
-                              passenger:
-                                type: object
-                                properties:
-                                  first_name:
-                                    type: string
-                                    description: Passenger's first name.
-                                    x-description-i18n:
-                                      eng: Passenger's first name.
-                                      spa: Nombre del pasajero
-                                      por: Primeiro nome do passageiro
-                                    example: John
-                                  last_name:
-                                    type: string
-                                    description: Passenger's last name.
-                                    x-description-i18n:
-                                      eng: Passenger's last name.
-                                      spa: Apellido del pasajero
-                                      por: Sobrenome do passageiro
-                                    example: Doe
-                              route:
-                                type: object
-                                properties:
-                                  departure:
-                                    type: string
-                                    description: Departure city.
-                                    x-description-i18n:
-                                      eng: Departure city.
-                                      spa: Ciudad de salida
-                                      por: Cidade de partida
-                                    example: Sao Paulo
-                                  destination:
-                                    type: string
-                                    description: Destination city.
-                                    x-description-i18n:
-                                      eng: Destination city.
-                                      spa: Ciudad de destino
-                                      por: Cidade de destino
-                                    example: Miami 
-                                  departure_date_time:
-                                    type: string
-                                    description: Departure date and time.
-                                    x-description-i18n:
-                                      eng: Departure date and time. Valid format is as follows - "yyyy-MM-ddTHH:mm:ss.sssZ". Example - 2023-12-31T09:37:52.000-04:00.
-                                      spa: Fecha y hora de salida. El formato válido es el siguiente - "yyyy-MM-ddTHH:mm:ss.sssZ". Ejemplo - 2023-12-31T09:37:52.000-04:00.
-                                      por: Data e hora de partida. O formato válido é o seguinte - "yyyy-MM-ddTHH:mm:ss.sssZ". Exemplo - 2023-12-31T09:37:52.000-04:00.
-                                    example: 2023-12-31T09:37:52.000-04:00
-                                  arrival_date_time:
-                                    type: string
-                                    description: Arrival date and time.
-                                    x-description-i18n:
-                                      eng: Arrival date and time. Valid format is as follows - "yyyy-MM-ddTHH:mm:ss.sssZ". Example - 2023-12-31T09:37:52.000-04:00.
-                                      spa: Fecha y hora de llegada. El formato válido es el siguiente - "yyyy-MM-ddTHH:mm:ss.sssZ". Ejemplo - 2023-12-31T09:37:52.000-04:00.
-                                      por: Data e hora de chegada. O formato válido é o seguinte - "yyyy-MM-ddTHH:mm:ss.sssZ". Exemplo - 2023-12-31T09:37:52.000-04:00.
-                                    example: 2023-12-31T09:37:52.000-04:00
-                                  company:
-                                    type: string
-                                    description: Company name.
-                                    x-description-i18n:
-                                      eng: Company name.
-                                      spa: Nombre de la empresa
-                                      por: Nome da empresa
-                                    example: Latam 
+                            example: 58.8
                     payer:
                       type: object
                       description: The payer is the one who makes the payment. This field is an object that has the payer's information.
