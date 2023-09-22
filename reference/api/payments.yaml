@@ -116,7 +116,7 @@ paths:
                               eng: Type of item being sold
                               spa: Tipo de ítem que se está vendiendo
                               por: Tipo de item sendo vendido
-                            example: headphones
+                            example: electronics
                           event_date:
                             type: string
                             description: Event Date - Use the standard ISO 8601 format to input the date and time of the event. The format should be "yyyy-MM-ddTHH:mm:ss.sssZ". For example, to schedule an event for December 31, 2023, at 9:37:52 AM in the UTC-4 timezone, you would enter "2023-12-31T09:37:52.000-04:00".
@@ -215,14 +215,6 @@ paths:
                             spa: Es el campo de apellido del comprador.
                             por: É o campo do sobrenome do comprador.
                           example: Test
-                        e-mail:
-                          type: string
-                          description: Payer's e-mail
-                          x-description-i18n:
-                            eng: Payer's e-mail
-                            spa: Email del comprador
-                            por: E-mail do comprador
-                          example: test_user_123@testuser.com
                         phone:
                           type: object
                           description: Buyer's phone.
@@ -554,6 +546,7 @@ paths:
                         eng: Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.
                         spa: Correo electrónico asociado al payer. Este valor sólo devolverá una respuesta cuando status=approved, status=refunded o status=charged_back.
                         por: Email associado ao payer. Este valor só retornará uma resposta quando status=approved, status=refunded ou status=charged_back.
+                      example: test_user_123@testuser.com
                       required: true
                     identification:
                       type: object
@@ -581,6 +574,7 @@ paths:
                             - CC -- Citizenship Card, Colombia.
                             - RUT -- Single Tax List, Chile.
                             - CI -- Identity Card, Uruguay.
+                          example: CPF
                         number:
                           type: string
                           description: The number refers to the identifier of the user in question. If it is a CPF, for example, it will have 11 numbers.
@@ -588,6 +582,7 @@ paths:
                             eng: The number refers to the identifier of the user in question. If it is a CPF, for example, it will have 11 numbers.
                             spa: El número hace referencia al identificador del usuario en cuestión. Si es un CPF, por ejemplo, tendrá 11 números.
                             por: O número se refere ao identificador do usuário em questão. Se for um CPF, por exemplo, terá 11 números.
+                          example: "95749019047"
                     first_name:
                       type: string
                       description: First name of the associated payer.
@@ -616,7 +611,7 @@ paths:
                     - Ted -- It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;
                     - Cvu -- Payment method used in Argentina.
                   required: true
-                  example: visa
+                  example: master 
                 statement_descriptor:
                   type: string
                   description: Description that the payment will appear with in the card statement (eg MERCADOPAGO)
