@@ -1,12 +1,12 @@
 # Gerar relatório
 
-Para gerar o relatório, primeiro você deve [criar as configurações](/developers/pt/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_criar_configuração) necessárias, onde poderá definir os emails para os quais o relatório será enviado ou a frequência com que deseja que ele seja gerado, entre outras opções. Em seguida, você deve [criar o relatório](/developers/pt/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_criar_relatório), que pode ser de **forma automática** (_event_) ou **manual** (_statement_).
+Para gerar o relatório, primeiro você deve [criar as configurações](#bookmark_criar_configuração) necessárias, onde poderá definir os emails para os quais o relatório será enviado ou a frequência com que deseja que ele seja gerado, entre outras opções. Em seguida, você deve [criar o relatório](#bookmark_criar_relatório), que pode ser de **forma automática** (_event_) ou **manual** (_statement_).
 
 > NOTE
 >
 > Importante
 >
-> Para gerar os relatórios, será necessário ter o Access Token de suas credenciais de produção. Este é uma chave privada da aplicação que sempre deve ser usada no backend para gerar pagamentos. Se você ainda não possui essas informações, siga as etapas descritas em [Gerar Access Token](/developers/pt/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_gerar_access_token).
+> Para gerar os relatórios, será necessário ter o Access Token de suas credenciais de produção. Este é uma chave privada da aplicação que sempre deve ser usada no backend para gerar pagamentos. Se você ainda não possui essas informações, siga as etapas descritas abaixo.
 
 ## Gerar Access Token
 

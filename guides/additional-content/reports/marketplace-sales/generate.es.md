@@ -6,7 +6,7 @@ Para generar el reporte, primero debes realizar la [creación de las configuraci
 >
 > Importante
 >
-> Para generar los reportes, será necesario contar con el Access Token de tus credenciales de producción. Se trata de una clave privada de la aplicación, que siempre debe ser usada en el backend para generar pagos. En caso de no contar con esta información todavía, sigue los pasos descritos en [Generar Access Token](#bookmark_generar_access_token).
+> Para generar los reportes, será necesario contar con el Access Token de tus credenciales de producción. Se trata de una clave privada de la aplicación, que siempre debe ser usada en el backend para generar pagos. En caso de no contar con esta información todavía, sigue los pasos descritos a continuación.
 
 ## Generar Access Token
 
