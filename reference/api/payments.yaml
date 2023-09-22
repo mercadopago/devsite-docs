@@ -205,7 +205,7 @@ paths:
                             eng: Date of registration of the buyer (payer) on your website. The valid format of the attribute is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2021-06-15T19:22:41.001-03:00.
                             spa: Fecha de registro del comprador (payer) en tu sitio web. El formato válido del atributo es el siguiente - "yyyy-MM-dd'T'HH:mm:ssz". Ej - 2021-06-15T19:22:41.001-03:00.
                             por: Data de cadastro do comprador (payer) em seu site.  O formato válido do atributo é o seguinte - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2021-06-15T19:22:41.001-03:00.
-                          example: 2021-06-15T19:22:41.001-03:00
+                          example: "2021-06-15T19:22:41.001-03:00"
                         is_prime_user:
                           type: string
                           description: Indicates if the payer is a premium user. Valid values are as follows - "1" if it is, "0" if it isn't.
@@ -229,7 +229,7 @@ paths:
                             eng: Date of the last purchase made by the payer on your website. The valid format of the attribute is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2021-06-15T19:22:41.001-03:00.
                             spa: Fecha de la última compra realizada por el pagador en tu sitio web. El formato válido del atributo es el siguiente - "yyyy-MM-dd'T'HH:mm:ssz". Ej - 2021-06-15T19:22:41.001-03:00.
                             por: Data da última compra realizada pelo pagador em seu site. O formato válido do atributo é o seguinte - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2021-06-15T19:22:41.001-03:00.
-                          example: 2021-06-15T19:22:41.001-03:00
+                          example: "2021-06-15T19:22:41.001-03:00"
                         authentication_type:
                           type: string
                           description: Type of authentication used by payer
@@ -422,7 +422,7 @@ paths:
                     eng: Payment’s expiration date. The valid format of the attribute is as follows - "yyyy-MM-dd'T'HH:mm:ssz". Ex - 2022-11-17T09:37:52.000-04:00.
                     spa: Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - "yyyy-MM-dd'T'HH:mm:ssz". Ej - 2022-11-17T09:37:52.000-04:00.
                     por: Data de expiração do pagamento. O formato válido do atributo é o seguinte - "yyyy-MM-dd'T'HH:mm:ssz". Por exemplo - 2022-11-17T09:37:52.000-04:00.
-                  example: "2022-11-17T09:37:52.000-04:00"
+                  example: "2024-11-17T09:37:52.000-04:00"
                 external_reference:
                   type: string
                   description: It is a payment external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.
