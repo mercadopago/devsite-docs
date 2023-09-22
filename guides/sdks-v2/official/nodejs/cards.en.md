@@ -4,16 +4,11 @@ It is possible to get the card data of a certain customer through their customer
 
 [[[
 ```node
+const client = new MercadoPago({ accessToken: 'access_token' });
+const customerClient = new CustomerCard(client);
 
-  var filters = {
-    id: customer_id
-  };
-
-  mercadopago.customers.search({
-    qs: filters
-  }).then(function (customer) {
-    console.log(customer);
-  });
-
+customerClient.list({ customerId: '448870796-7ZjwhKGxILixxN' })
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error));
 ```
 ]]]

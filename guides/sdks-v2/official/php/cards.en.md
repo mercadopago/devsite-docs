@@ -5,11 +5,9 @@ It is possible to get the card data of a certain customer through their customer
 [[[
 
 ```php
-
 <?php
-    $customer = MercadoPago\Customer::find_by_id($id);
-    $cards = $customer->cards();
+  $client = new CustomerCardClient();
+  $client->list("448870796-7ZjwhKGxILixxN");
 ?>
-
 ```
 ]]]

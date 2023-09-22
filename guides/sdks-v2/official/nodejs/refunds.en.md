@@ -4,17 +4,17 @@ You can create a full refund using the SDK below. For details on the request par
 
 [[[
 ```node
-mercadopago.configure({
- access_token: 'YOUR_ACCESS_TOKEN'
-});
- 
-var refund = {
- payment_id: 'payment_id'
-};
- 
-mercadopago.refund.create(refund).then(result => {
- console.log(result.response)
-})
+const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+
+const refund = new PaymentsRefunds(client);
+
+refund.create({
+	payment_id: '123456789',
+	body: {
+		amount: 5
+	}
+}).then((result) => console.log(result))
+  .catch((error) => console.log(error));
 ```
 ]]]
 
@@ -44,8 +44,14 @@ You can get a specific refund of certain payments using the SDKs below. For deta
 
 [[[
 ```node
-mercadopago.payment.refund(paymentId).then(function(data) {}
- //Do Stuff ..
-});
+const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+
+const refund = new PaymentsRefunds(client);
+
+refund.get({
+	payment_id: '123',
+	refund_id: '456'
+}).then((result) => console.log(result))
+	.catch((error) => console.log(error));
 ```
 ]]]

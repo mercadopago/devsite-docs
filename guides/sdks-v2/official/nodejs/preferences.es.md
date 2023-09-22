@@ -2,64 +2,43 @@
 
 Es posible crear preferencias utilizando lo SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, consulte la API [Crear preferencia](/developers/es/reference/preferences/_checkout_preferences/post).
 
-----[mla, mlb, mlu, mpe, mlm]----
-
 [[[
 ```node
-// SDK de Mercado Pago
-const mercadopago = require ('mercadopago');
-// Agrega credenciales
-mercadopago.configure({
-  access_token: 'PROD_ACCESS_TOKEN'
-});
-// Crea un objeto de preferencia
-let preference = {
-  items: [
-    {
-      title: 'Mi producto',
-      unit_price: 100,
-      quantity: 1,
-    }
-  ]
-};
-mercadopago.preferences.create(preference)
-.then(function(response){
-// Este valor reemplazará el string "<%= global.id %>" en tu HTML
-  global.id = response.body.id;
-}).catch(function(error){
-  console.log(error);
-});
-```
-]]]
+const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
 
-------------
+const preference = new Preference(client);
 
-----[mlc, mco]----
-[[[
-```node
-// SDK de Mercado Pago
-const mercadopago = require ('mercadopago');
-// Agrega credenciales
-mercadopago.configure({
-  access_token: 'PROD_ACCESS_TOKEN'
-});
-// Crea un objeto de preferencia
-let preference = {
-  items: [
-    {
-      title: 'Mi producto',
-      unit_price: 100,
-      quantity: 1,
-    }
-  ]
-};
-mercadopago.preferences.create(preference)
-.then(function(response){
-// Este valor reemplazará el string "<%= global.id %>" en tu HTML
-  global.id = response.body.id;
-}).catch(function(error){
-  console.log(error);
-});
+preference.create({
+	'external_reference': 'teste',
+	'items': [
+		{
+			'id': '4567',
+			'title': 'Dummy Title',
+			'description': 'Dummy description',
+			'picture_url': 'http://www.myapp.com/myimage.jpg',
+			'category_id': 'eletronico',
+			'quantity': 1,
+			'currency_id': 'BRL',
+			'unit_price': 100
+		}
+	],
+	'payment_methods': {
+		'default_payment_method_id': 'master',
+		'excluded_payment_types': [
+			{
+				'id': 'ticket'
+			}
+		],
+		'excluded_payment_methods': [
+			{
+				'id': ''
+			}
+		],
+		'installments': 12,
+		'default_installments': 1
+	}
+}).then((result) => console.log(result))
+	.catch((error) => console.log(error));
 ```
 ]]]
 

@@ -4,12 +4,10 @@ It is possible to cancel a specific purchase from the payment ID using the SDK b
 
 [[[
 ```node
- 
-mercadopago.configure({
- access_token: 'YOUR_ACCESS_TOKEN'
-});
- 
-mercadopago.payment.cancel('payment_id');
- 
+const client = new MercadoPago({ accessToken: 'ACCESS_TOKEN' });
+const payments = new Payments(client);
+payments.cancel('123456789', { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
+    .then((result) => { console.log(result); })
+    .catch((error) => { console.error(error); });
 ```
 ]]]

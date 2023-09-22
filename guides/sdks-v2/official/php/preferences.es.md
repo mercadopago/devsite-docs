@@ -2,53 +2,37 @@
 
 Es posible crear preferencias utilizando lo SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, consulte la API [Crear preferencias](/developers/es/reference/preferences/_checkout_preferences/post).
 
-----[mla, mlb, mlu, mpe, mlm]----
-
 [[[
  ```php
 <?php
-// SDK de Mercado Pago
-require __DIR__ .  '/vendor/autoload.php';
-// Agrega credenciales
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
-// Crea un objeto de preferencia
-$preference = new MercadoPago\Preference();
-// Crea un ítem en la preferencia
-$item = new MercadoPago\Item();
-$item->title = 'Mi producto';
-$item->quantity = 1;
-$item->unit_price = 75.56;
-$preference->items = array($item);
-$preference->save();
+  $client = new PreferenceClient();
+  $preference = $client->create([
+    "external_reference" => "teste",
+    "items"=> array(
+      array(
+        "id" => "4567",
+        "title" => "Dummy Title",
+        "description" => "Dummy description",
+        "picture_url" => "http://www.myapp.com/myimage.jpg",
+        "category_id" => "eletronico",
+        "quantity" => 1,
+        "currency_id" => "BRL",
+        "unit_price" => 100
+      )
+    ),
+    "payment_methods" => [
+    "default_payment_method_id" => "master",
+    "excluded_payment_types" => array(
+      array(
+        "id" => "ticket"
+      )
+    ),
+    "installments"  => 12,
+    "default_installments" => 1
+  ]);
 ?>
 ```
 ]]]
-
-------------
-
-----[mlc, mco]----
-
-[[[
- ```php
-<?php
-// SDK de Mercado Pago
-require __DIR__ .  '/vendor/autoload.php';
-// Agrega credenciales
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
-// Crea un objeto de preferencia
-$preference = new MercadoPago\Preference();
-// Crea un ítem en la preferencia
-$item = new MercadoPago\Item();
-$item->title = 'Mi producto';
-$item->quantity = 1;
-$item->unit_price = 75;
-$preference->items = array($item);
-$preference->save();
-?>
-```
-]]]
-
-------------
 
 ## Asociar Facebook Ads
 

@@ -4,11 +4,9 @@ Es posible obtener los datos de la tarjeta de un determinado cliente a través d
 
 [[[
 ```php
-
 <?php
-    $customer = MercadoPago\Customer::find_by_id($id);
-    $cards = $customer->cards();
+  $client = new CustomerCardClient();
+  $client->list("448870796-7ZjwhKGxILixxN");
 ?>
-
 ```
 ]]]
