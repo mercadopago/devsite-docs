@@ -1,84 +1,45 @@
 ---
 content_section_with_media: 
- - title: Mercado Pago Point
- - message: Point es la máquina de tarjetas de Mercado Pago que permite a los compradores realizar pagos presenciales de forma rápida y segura mediante tarjetas de crédito o débito. Además, utilizando Point es posible ofrecer cuotas con o sin interés, además de todos los beneficios que ofrece Mercado Pago.
- - media_image: /point-api/point-landing.png
+ - title: Main Apps Playbook
+ - message: Esta es una guía para que desarrolles e integres main apps al Point Smart. Navega por el menú lateral para encontrar los procesos, requisitos y direccionamientos, desde la ficha técnica del lector a la distribución de la solución. El material está en constante evolución, con nuevos contenidos que se van incluyendo.
+ - media_image: /main-apps/landing.png
 ---
 
 --- mini_landing_separator ---
 
->>>> Disponibilidad por país<<<<
+>>>> Disponibilidad por país <<<<
 ---
-available_countries: mla, mlb, mlm
+available_countries: mlb
 
 ---
 
----
-bullet_section_with_media: 
- - title: Ventajas
- - type: normal
- - message: Además de garantizar un proceso de compra ágil y sencillo, la máquina Point también presenta numerosas ventajas como:
- - benefit_title: Varias opciones de pago
- - benefit_message: Ofrece pagos por crédito, débito y usando el código QR
- - benefit_title: Fácil administración de dinero
- - benefit_message: Rastree y administre transacciones tanto a través de la aplicación de Mercado Pago como a través del sitio web.
- - benefit_title: La máquina es tuya
- - benefit_message: Usted compra la máquina y no tiene que pagar alquiler ni cuotas de membresía.
- - benefit_title: Mayor control financiero
- - benefit_message: Accede a una cuenta digital, tarjeta de Mercado Pago y benefíciate de Mercado Puntos.
- - image: /point-api/point-landing2.png
----
+--- mini_landing_separator ---
 
-----[mla]----
-
----
-bullet_section_with_media:
- - title: Dispositivos integrables
- - type: reversed
- - benefit_title: Point Mini
- - benefit_message: 
- - benefit_title: Point Plus
- - benefit_message: 
- - benefit_title: Point Smart
- - benefit_message:
- - image: /point-api/landing.point.machines.png
----
-
-------------
-
+>>>> Tipos de pago aceptados <<<<
 
 ----[mlb]----
 
 ---
-bullet_section_with_media: 
- - title: Dispositivos disponibles
- - type: reversed
- - benefit_title: Point Mini NFC 1
- - benefit_message: 
- - benefit_title: Point Mini Chip
- - benefit_message: 
- - benefit_title: Point Pro 2
- - benefit_message:
- - benefit_title: Point Smart
- - benefit_message:
- - image: /point-api/landing.point.machines.png
+available_payments: credit, debit, mercadopago, pix
+
 ---
 
 ------------
 
-----[mlm]----
----
-bullet_section_with_media: 
- - title: Dispositivos disponibles
- - type: reversed
- - benefit_title: Point Blue
- - benefit_message: 
- - benefit_title: Point Smart
- - benefit_message: 
- - benefit_title: Point Air
- - image: /point-api/landing.point.machines.png
----
+----[mla]---- 
 
+---
+available_payments: credit, debit, mercadopago
+
+---
+------------
+
+----[mlm]---- 
+
+---
+available_payments: credit, debit, mercadopago
+
+---
 ------------
 
 > Para obtener detalles sobre los medios de pago aceptados en cada país, consulte la lista completa con [disponibilidad de medios de pago.](/developers/es/docs/sales-processing/payment-methods)
