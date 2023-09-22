@@ -118,14 +118,14 @@ launchPaymentFlow(amount, encodeURIComponent({"attr":"123"}),
 
 Para mais informações, veja a seção [Como começar](/developers/pt/docs/mini-apps/introduction/how-to-start).
 
-## Iniciar método de pagamento (payment_flow)
+## Iniciar meio de pagamento (payment_flow)
 
-Para iniciar o fluxo de pagamento com forma de pagamento, a função `launchPaymentMethod` deve ser chamada juntamente com os seguintes parâmetros:
+Para iniciar o fluxo de pagamento com um meio de pagamento, a função `launchPaymentMethod` deve ser chamada juntamente com os seguintes parâmetros:
 
 | Parâmetro  | Tipo  | Obrigatório  | Valores possíveis | Descrição |
 | --- | --- | --- | --- | --- |
 | amount | Number | Sim | 0.01 <= n <  50000 | Valor a ser pago. |
-| payment_method | string | Sim | credit, debit, qr, link| Indica o método de pagamento a ser utilizado. |
+| payment_method | string | Sim | credit, debit, qr, link| Indica o meio de pagamento a ser utilizado. |
 | metadata | string | Não | SON Object como uma string | Informação adicional que será retornada no callback depois que o fluxo de pagamento estiver concluído. |
 | callback_success | string | Não | Paths| Indica o caminho para onde a resposta será enviada em caso de sucesso. Essa rota será relativa ao domínio do mini app.|
 | callback_error | string | Não | Paths| Indica o caminho para onde a resposta será enviada em caso de erro. Essa rota será relativa ao domínio do mini app. |
@@ -139,7 +139,7 @@ launchPaymentMethod(25.6, "debit", encodeURIComponent({"attr":"123"}),
 
 Para mais informações, veja [Iniciar método de pagamento]().
 
-## Acessar métodos de pagamento disponíveis (payment_methods)
+## Acessar meios de pagamento disponíveis (payment_methods)
 
 Obtém as variantes de meios de pagamento permitidas para iniciar o fluxo de pagamento, com um meio de pagamento específico.
 

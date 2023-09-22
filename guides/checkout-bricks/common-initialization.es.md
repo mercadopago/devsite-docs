@@ -116,7 +116,7 @@ future_product_avaible:
 ---
 
 ------------
-----[mlb, mlm, mpe, mco, mlc, mlu]----
+----[mlb, mpe, mco, mlc, mlu]----
 
 ---
 future_product_avaible: 
