@@ -10,15 +10,15 @@ To integrate the `NeptuneLiteAPI *.jar` library and enable receipt printing, fol
 
 2. Select the "+" button, which corresponds to creating a new module. A popup window will appear for you to select the type of module, which should be "Import .JAR/.AAR Package."
 
-[image showing where to find the library](importarlibrería3.png)
+![image showing where to find the library](importarlibrería3.png)
 
 3. In the next window, browse for the path to the required library by clicking the search button located on the right side of the "File name" field.
 
-[image showing where to browse](ImportarLibrería4.png)
+![image showing where to browse](ImportarLibrería4.png)
 
 4. Press the **Finish** button and add the library as a Module Dependency to the project.
 
-[image showing where to find the Modules Dependencies](IntegrarLibrería5.png)
+![image showing where to find the Modules Dependencies](IntegrarLibrería5.png)
 
 And that's it! The .jar import was successful, and you can now use the library for printing.
 

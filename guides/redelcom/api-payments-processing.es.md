@@ -4,8 +4,8 @@ La integración de dispositivos Redelcom vía API te posibilita procesar pagos a
 
 Las operaciones necesarias para comenzar a procesar pagos vía API son:
 
-1. [Obtener Terminal](/developers/es/docs/redelcom/api-integration/payments-processing/get-terminal).
-2. [Crear una intención de pago](/developers/es/docs/redelcom/api-integration/payments-processing/create-payment-intent).
+1. [Obtener Terminal](/developers/es/docs/redelcom/api-integration/payments-processing/get-terminal)
+2. [Crear una intención de pago](/developers/es/docs/redelcom/api-integration/payments-processing/create-payment-intent)
 
 En paralelo, la integración vía API te permitirá:
 - [Consultar intenciones de pago creadas previamente](/developers/es/docs/redelcom/api-integration/payments-processing/query-payment-intent).

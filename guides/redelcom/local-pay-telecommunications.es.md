@@ -54,4 +54,4 @@ Además, deberás identificar al cliente que recibirá la recarga y el monto. Pa
 | `NumberRecharge` | Número telefónico del cliente, que será su identificación. Debe ser enviado en formato String. |
 
 
-Como resultado, se abrirá un cuadro de diálogo en RDCPass. Una vez finalizado el procesamiento e impresión de voucher, se retornará a la aplicación integrada.
+Como resultado, se abrirá un cuadro de diálogo en RDCPass. Una vez finalizado el procesamiento e impresión del voucher, se retornará a la aplicación integrada.

@@ -2,7 +2,7 @@
 
 Para consultar el estado actual de una intención de pago previamente realizada, tienes dos opciones:
 
-1. Utilizar el parámetro `callback` dentro de la llamada para crear una intención de pago (aconsejado).
+1. Utilizar el parámetro `callback` dentro de la llamada para crear una intención de pago (**aconsejado**).
 2. Si el *callback* no responde al minuto de haber creado la intención de pago, puedes realizar una llamada  `GET {https://api-dev.redelcom.cl:20010/v2}/pago?rdcTransactionId={rdcTransactionId}`, reemplazando `{rdcTransactionId}` por el valor obtenido en la respuesta a la creación de la intención que estás queriendo consultar, y `X-Authentication`, `clientId` y `secret` por tus credenciales.
 
 

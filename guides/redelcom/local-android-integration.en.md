@@ -6,4 +6,4 @@ Your app will communicate with the RDCPass system locally, allowing you to proce
 
 You can see how the local integration with Redelcom works in the diagram below.
 
-[Diagram explaining local integration](Integrate-via-Android.png)
+![Diagram explaining local integration](Integrate-via-Android.png)

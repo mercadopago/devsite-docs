@@ -42,7 +42,7 @@ startActivity(sharingIntent);
 >
 > Para consultar un pago, necesitarás el `userTransactionId` asignado a ese pago al momento de crearlo. Recuerda reemplazar el valor “DEMO 1234” por el `userTransactionId`.
 >
-> Si tienes este dato, puedes usar este mismo método para conocer cuál fue el último identificador utilizado, pero reemplazando “DEMO1234” por el valor “-1” de la siguiente manera: `sharingIntent.putExtra("userTransactionId", "-1");`
+> Si no tienes este dato, puedes usar este mismo método para conocer cuál fue el último identificador utilizado, pero reemplazando “DEMO1234” por el valor “-1” de la siguiente manera: `sharingIntent.putExtra("userTransactionId", "-1");`
 
 3.  Para recibir la respuesta desde RDCPass, deberás también incorporar el siguiente bloque de código.
 

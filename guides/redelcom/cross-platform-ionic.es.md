@@ -1,4 +1,4 @@
-# Ionic Framework 
+# Framework Ionic
 
 Para comenzar a operar localmente con Redelcom utilizando una App Ionic, sigue los pasos aquí debajo. 
 
@@ -55,28 +55,28 @@ Para procesar pagos, deberás primero implementar el método que te permitirá e
 ```ionic
 
 startActivity(pay): void { 
- this.app.getPackageName().then(async (value) => {  
-const options = { 
- 			action: this.intent.ACTION_SEND, 
- 			package: value.toString(), 
- extras: { 
- packageName: value.toString(), 
- 				className: `${value.toString()}.MainActivity`,  monto: `${pay}` 
- }, 
- 			component: { 
- package: 'redelcom.cl.rdcpass', 
- 				class: 'redelcom.cl.rdcpass.MainActivity' 
- }, 
- }; 
- this.intent.startActivity(options) 
- .then((onSucces) => { 
- 			this.getIntent(); 
- }, 
- (onError) => { 
- console.log('error', onError); 
- }); 
- } 
-);  
+ 		this.app.getPackageName().then(async (value) => {  
+			const options = { 
+ 					action: this.intent.ACTION_SEND, 
+ 					package: value.toString(), 
+ 					extras: { 
+ 							packageName: value.toString(), 
+ 							className: `${value.toString()}.MainActivity`,  monto: `${pay}` 
+ 					}, 
+ 					component: { 
+ 							package: 'redelcom.cl.rdcpass', 
+ 							class: 'redelcom.cl.rdcpass.MainActivity' 
+ 					}, 
+ 			}; 
+ 			this.intent.startActivity(options) 
+ 			.then((onSucces) => { 
+ 					this.getIntent(); 
+ 			}, 
+ 			(onError) => { 
+ 					console.log('error', onError); 
+ 			}); 
+ 		} 
+	);  
 }
 
 ```
@@ -85,30 +85,33 @@ Para poder obtener la respuesta a ese intent, implementa el siguiente método:
 
 ```ionic
 
-startActivity(pay): void { 
- this.app.getPackageName().then(async (value) => {  
-const options = { 
- 			action: this.intent.ACTION_SEND, 
- 			package: value.toString(), 
- extras: { 
- packageName: value.toString(), 
- 				className: `${value.toString()}.MainActivity`,  monto: `${pay}` 
- }, 
- 			component: { 
- package: 'redelcom.cl.rdcpass', 
- 				class: 'redelcom.cl.rdcpass.MainActivity' 
- }, 
- }; 
- this.intent.startActivity(options) 
- .then((onSucces) => { 
- 			this.getIntent(); 
- }, 
- (onError) => { 
- console.log('error', onError); 
- }); 
- } 
-);  
-}
+getIntent() { 
+ 		this.intent.getIntent().then(async (intentRDCPass: any) => { 
+ 				if (intentRDCPass.extras && intentRDCPass.action == this.intent.ACTION_SEND) {  
+				this.data = JSON.parse(intentRDCPass.extras['android.intent.extra.TEXT']);  this.statusPay = this.data.ESTADO; 
+				// ARMAR UN OBJETO CON LOS DATOS DE RESPUESTA QUE SE REQUIERAN.
+  				let objWithData = { 
+ 						estado: this.data.ESTADO, 
+ 						total: this.data.TOTAL, 
+ 						propina: this.data.PROPINA, 
+ 						medio_pago: this.data.MEDIO_PAGO, 
+ 						codaut: this.data.CODAUT, 
+ 						fecha_hora: this.data['FECHA&HORA'], 
+ 						mensaje_visor: this.data.MENSAJE_VISOR, 
+ 				}; 
+ 				if (this.data.ESTADO == 'APROBADO') { 
+ 						// ACCIÓN PARA EL CASO APROBADO.... 
+ 				} else { 
+ 						// ACCIÓN PARA EL CASO RECHAZADO.... 
+ 				} 
+ 				} else { 
+ 						setTimeout(() => { 
+ 								this.getIntent(); 
+ 						}, 1000); 
+ 				} 
+		});  
+} 
+
 
 ```
 
@@ -117,30 +120,12 @@ Por último, agrega el intent-filter (Activity) al `AndroidManifest.xml` de la a
 
 ```ionic
 
-startActivity(pay): void { 
- this.app.getPackageName().then(async (value) => {  
-const options = { 
- 			action: this.intent.ACTION_SEND, 
- 			package: value.toString(), 
- extras: { 
- packageName: value.toString(), 
- 				className: `${value.toString()}.MainActivity`,  monto: `${pay}` 
- }, 
- 			component: { 
- package: 'redelcom.cl.rdcpass', 
- 				class: 'redelcom.cl.rdcpass.MainActivity' 
- }, 
- }; 
- this.intent.startActivity(options) 
- .then((onSucces) => { 
- 			this.getIntent(); 
- }, 
- (onError) => { 
- console.log('error', onError); 
- }); 
- } 
-);  
-}
+<intent-filter> 
+ 	<action android:name="android.intent.action.SEND" /> 
+ 	<category android:name="android.intent.category.DEFAULT" /> 
+ 	<data android:mimeType="text/*" /> 
+</intent-filter>
+
 
 ```
 

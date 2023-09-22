@@ -36,9 +36,7 @@ Si la llamada es correcta, se generará la impresión en la terminal seleccionad
 
 
 
-## Impressão Livre
-
-Impresión libre
+## Impresión libre
 
 
 Si lo que deseas es realizar una impresión de otro tipo tipo de comprobante, como un comprobante de pago o una precuenta, realiza una llamada `POST {https://api-dev.redelcom.cl:20010/v2}/impresion` a la API, reemplazando `X-Authentication`, `clientId` y `secret` por tus credenciales.
@@ -76,9 +74,6 @@ Si la llamada es correcta, se generará la impresión en la terminal seleccionad
 
 Para realizar impresiones de comprobantes vía API, deberás utilizar ciertos tags que te permitirán darles el formato deseado. Puedes ver estos tags en detalle en la tabla a continuación.
 
-|---|---|
-| `printText` | **Obligatorio**. Texto a imprimir de acuerdo con el formato de impresión para terminales RedelCom. |
-| `terminalId` | **Obligatorio**. Código de la terminal a la que se enviará la solicitud de impresión. |
 
 | Tag | Descripción |
 |---|---|

@@ -7,7 +7,7 @@
 > Para realizar una intención de consulta y pago de cuentas, es necesario haber realizado previamente una [carga de saldo en POS](/developers/es/docs/redelcom/local-integration/android/payments-processing/load-money-in-pos) y una [consulta de parámetros necesarios para multiservicios](/developers/es/docs/redelcom/local-integration/android/payments-processing/query-multiservice-parameters), ya que se requerirá enviar `id` de la cuenta y los substrings de `datos_captura`, y `nombre_cuenta`, obtenidos en el JSON `respuestasCuentas` de la respuesta a la consulta de parámetros para multiservicios.
 
 
-SSi ya has realizado una carga de saldo en POS y una consulta de parámetros necesarios para multiservicios, y quieres realizar una consulta y pago de cuentas, sigue los pasos a continuación.
+Si ya has realizado una carga de saldo en POS y una consulta de parámetros necesarios para multiservicios, y quieres realizar una consulta y pago de cuentas, sigue los pasos a continuación.
 
 1. Agrega el siguiente intent-filter (Activity) en el archivo AndroidManifest.xml de tu proyecto:
 

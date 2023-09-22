@@ -9,6 +9,7 @@ To establish communication with the RDCPass system, you will need to install the
 ```flutter
 
 Package_info 0.4.3+4 => (https:// pub.dev/packages/package_info) 
+
 android_intent 0.3.7+7 => (https:// pub.dev/packages/android_intent)
  
 ```
@@ -31,22 +32,22 @@ To process payments, you first need to implement the method that allows you to s
 ```flutter
 
 Future<void> _intentSend() async { 
- PackageInfo packageInfo = await PackageInfo.fromPlatform();  setState(() { 
- String packageName = packageInfo.packageName; 
- final AndroidIntent intent = AndroidIntent( 
- action: 'android.intent.action.SEND', 
- package: 'redelcom.cl.rdcpass ', 
- arguments: <String, dynamic>{ 
- 'packageName': packageName, 
- 'className': '$packageName.MainActivity', 
- 'monto': '200', //pasar la cantidad del envío 
- }, 
- componentName: 'redelcom.cl.rdcpass.MainActivity', 
- ); 
- intent.launch(); 
- }); 
+ 		PackageInfo packageInfo = await PackageInfo.fromPlatform();  setState(() { 
+ 			String packageName = packageInfo.packageName; 
+ 			final AndroidIntent intent = AndroidIntent( 
+ 			action: 'android.intent.action.SEND', 
+ 			package: 'redelcom.cl.rdcpass ', 
+ 			arguments: <String, dynamic>{ 
+ 				'packageName': packageName, 
+ 				'className': '$packageName.MainActivity', 
+ 				'monto': '200', //pasar la cantidad del envío 
+ 			}, 
+ 			componentName: 'redelcom.cl.rdcpass.MainActivity', 
+ 			); 
+ 			intent.launch(); 
+ 		}); 
  }
- 
+
 ```
 
 To be able to obtain the response to that intent, you need to first add the following block to `main.dart`:
@@ -54,19 +55,22 @@ To be able to obtain the response to that intent, you need to first add the foll
 ```flutter
 
 static const platform = const MethodChannel('app.channel.shared.data'); String data = "No hay datos"; 
+
 @Override 
- void initState() { 
- super.initState(); 
- getSharedIntent(); 
- } 
+void initState() { 
+ 		super.initState(); 
+ 		getSharedIntent(); 
+} 
  getSharedIntent() async { 
- var sharedData = await platform.invokeMethod("getSharedText");  if (sharedData != null) { 
- setState(() { 
- data = sharedData; 
-// Do something… 
- }); 
+ 		var sharedData = await platform.invokeMethod("getSharedText"); 
+ 		if (sharedData != null) { 
+ 				setState(() { 
+ 				data = sharedData; 
+				// Do something… 
+ 		}); 
  } 
  } 
+
  
 ```
 
@@ -76,32 +80,36 @@ Then, add the following block in `MainActivity.java`:
 
 private String sharedIntent; 
 private static final String CHANNEL = "app.channel.shared.data"; 
+
 @Override 
- protected void onCreate(Bundle savedInstanceState) { 
- super.onCreate(savedInstanceState); 
- try { 
- Intent intent = getIntent(); 
- String action = intent.getAction(); 
- if (action != null && Intent.ACTION_SEND.equals(action)) {  handleSend(intent); 
- } 
- } catch (Exception e) { 
- e.printStackTrace(); 
- } 
+protected void onCreate(Bundle savedInstanceState) { 
+ 	super.onCreate(savedInstanceState); 
+ 	try { 
+ 			Intent intent = getIntent(); 
+ 			String action = intent.getAction(); 
+ 			if (action != null && Intent.ACTION_SEND.equals(action)) {  
+					handleSend(intent); 
+ 			} 
+ 	} catch (Exception e) { 
+ 			e.printStackTrace(); 
+ 	} 
 }
 @Override 
- public void configureFlutterEngine(@NonNull FlutterEngine flutterEngine) {  GeneratedPluginRegistrant.registerWith(flutterEngine); 
- new MethodChannel(flutterEngine.getDartExecutor().getBinaryMessenger(), CHANNEL)  .setMethodCallHandler( 
+ public void configureFlutterEngine(@NonNull FlutterEngine flutterEngine) {  
+		GeneratedPluginRegistrant.registerWith(flutterEngine); 
+ 		new MethodChannel(flutterEngine.getDartExecutor().getBinaryMessenger(), CHANNEL)  .setMethodCallHandler( 
  (call, result) -> { 
- if (call.method.contentEquals("getSharedText")) { 
- result.success(sharedIntent); 
- sharedIntent = null; 
- } 
- } 
+ 					if (call.method.contentEquals("getSharedText")) { 
+ 					result.success(sharedIntent); 
+ 					sharedIntent = null; 
+ 					} 
+ 			} 
  ); 
  } 
  void handleSend(Intent intent) { 
- sharedIntent = intent.getStringExtra(Intent.EXTRA_TEXT); 
+ 		sharedIntent = intent.getStringExtra(Intent.EXTRA_TEXT); 
  } 
+
 
 ```
 
@@ -109,30 +117,11 @@ Finally, add the intent-filter (Activity) to the `AndroidManifest.xml` file of t
 
 ```flutter
 
-startActivity(pay): void { 
- this.app.getPackageName().then(async (value) => {  
-const options = { 
- 			action: this.intent.ACTION_SEND, 
- 			package: value.toString(), 
- extras: { 
- packageName: value.toString(), 
- 				className: `${value.toString()}.MainActivity`,  monto: `${pay}` 
- }, 
- 			component: { 
- package: 'redelcom.cl.rdcpass', 
- 				class: 'redelcom.cl.rdcpass.MainActivity' 
- }, 
- }; 
- this.intent.startActivity(options) 
- .then((onSucces) => { 
- 			this.getIntent(); 
- }, 
- (onError) => { 
- console.log('error', onError); 
- }); 
- } 
-);  
-}
+<intent-filter> 
+ 		<action android:name="android.intent.action.SEND" /> 
+ 		<category android:name="android.intent.category.DEFAULT" /> 
+ 		<data android:mimeType="text/*" /> 
+</intent-filter>
 
 ```
 

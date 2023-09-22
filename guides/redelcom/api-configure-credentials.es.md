@@ -2,7 +2,7 @@
 
 Puedes generar solicitudes de pago en las terminales Redelcom utilizando [nuestra API](https://api-dev.redelcom.cl:20010/v2).
 
-[diagrama explicando a Integração com a API](integrate-via-API.png)
+![diagrama explicando la integración con API](integrate-via-API.png)
 
 Para comenzar a integrar vía API, deberás contar con las **credenciales que te fueron otorgadas por correo electrónico** al momento de solicitar el dispositivo. Estas te ayudarán a generar el *token* necesario para operar con Redelcom vía API. 
 
@@ -18,19 +18,23 @@ Una vez que tengas tus credenciales únicas, deberás realizar una encriptación
 
 
 ```javascript
-var CryptoJS = require("crypto-js");
-
-var client_id = "seu_client_id";
-var secret = "sua_senha";
-var current_date = new Date();
-var str_date = current_date.toISOString();
-var random_str = Math.random().toString(36).substring(7);
-
-var body_str = current_date + random_str + client_id;
-
-var hash = CryptoJS.HmacSHA256(body_str, secret);
-
-postman.setEnvironmentVariable("X-Authentication", hash);
+// get path with query params
+const path = pm.request.url.getPath().replace("/redelcom","");
+let queryParam;
+let httpPath = path;
+if (pm.request.url.query != "") {
+    pm.request.url.query.all().forEach((param) => queryParam = param.key + "=" +  param.value);
+    httpPath +=  "?" + queryParam;
+}
+console.log("httpPath: " + httpPath);
+// execute algorithm
+const SECRET_KEY = pm.collectionVariables.get("secret");
+const body = pm.request.body
+const message = httpPath + "," + body;
+console.log("message: " + message);
+const token = CryptoJS.enc.Base64.stringify(CryptoJS.HmacSHA256(message, SECRET_KEY));
+console.log("token: " + token);
+pm.environment.set("X-Authentication", pm.collectionVariables.get("clientId") + ";" + token);
 ```
 
 Una vez realizada la encriptación, obtendrás tu *token*, que recibe el nombre de `X-Authentication` . Este *token* deberá ser utilizado en los headers de los llamados a la API. 
