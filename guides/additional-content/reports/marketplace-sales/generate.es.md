@@ -1,12 +1,12 @@
 # Generar reporte
 
-Para generar el reporte, primero debes realizar la [creación de las configuraciones](/developers/es/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_crear_configuraci%C3%B3n) necesarias, donde podrás definir los emails a los que se enviará el reporte o la frecuencia con la que quieres que se genere, entre otras opciones. Luego, deberás [crear el reporte](/developers/es/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_crear_reporte), que podrá ser de **forma automática** (_event_) o **manual** (_statement_).
+Para generar el reporte, primero debes realizar la [creación de las configuraciones](https://docs01.mercadopago.com.br/developers/es/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_crear_configuraci%C3%B3n) necesarias, donde podrás definir los emails a los que se enviará el reporte o la frecuencia con la que quieres que se genere, entre otras opciones. Luego, deberás [crear el reporte](https://docs01.mercadopago.com.br/developers/es/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_crear_reporte), que podrá ser de **forma automática** (_event_) o **manual** (_statement_).
 
 > WARNING
 >
 > Importante
 >
-> Para generar los reportes, será necesario contar con el Access Token de tus credenciales de producción. Se trata de una clave privada de la aplicación, que siempre debe ser usada en el backend para generar pagos. En caso de no contar con esta información todavía, sigue los pasos descritos en [Generar Access Token](/developers/es/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_generar_access_token).
+> Para generar los reportes, será necesario contar con el Access Token de tus credenciales de producción. Se trata de una clave privada de la aplicación, que siempre debe ser usada en el backend para generar pagos. En caso de no contar con esta información todavía, sigue los pasos descritos en [Generar Access Token](https://docs01.mercadopago.com.br/developers/es/docs/checkout-pro/additional-content/reports/marketplace-sales-report/generate-report#bookmark_generar_access_token).
 
 ## Generar Access Token
 
