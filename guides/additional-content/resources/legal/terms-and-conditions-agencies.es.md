@@ -1,4 +1,4 @@
-# Declaración de privacidad de Mercado Libre Programa de Partners
+# Declaración de Privacidad del Programa de Partners de Mercado Libre
 
 En Mercado Libre consideramos que la protección de los datos personales es una oportunidad para generar valor para nuestros aliados comerciales. Con el fin de llevar adelante el Programa de Partners, vamos a tratar algunos de tus datos personales.
 
