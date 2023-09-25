@@ -3,7 +3,7 @@ servers:
   - url: https://api.mercadopago.com
 info:
   title: Mercado Pago API Reference
-  version: '1.0'
+  version: "1.0"
 paths:
   /v1/payments:
     post:
@@ -400,7 +400,7 @@ paths:
                             eng: Indicates if the shipment is express or not. Valid values are as follows - "1" if it is, "0" if it isn't.
                             spa: Indica si el envío es express o no. Los valores válidos son los siguientes - "1" si lo es, "0" si no lo es.
                             por: Indica se o envio é expresso ou não. Os valores válidos são os seguintes - "1" se for, "0" se não for.
-                        pickup_on_seller:
+                        pick_up_on_seller:
                           type: string
                           description: Indicates if the customer will pick up the product at the seller's address. Valid values are as follows - "1" if it is, "0" if it isn't.
                           x-description-i18n:
@@ -1562,12 +1562,12 @@ paths:
   /v1/payments/{id}:
     get:
       tags:
-        - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/mobile-checkout'
-        - $ref: '#/tags/qr-code'
-        - $ref: '#/tags/subscriptions'
-        - $ref: '#/tags/checkout-api'
-        - $ref: '#/tags/mp-point'
+        - $ref: "#/tags/checkout-pro"
+        - $ref: "#/tags/mobile-checkout"
+        - $ref: "#/tags/qr-code"
+        - $ref: "#/tags/subscriptions"
+        - $ref: "#/tags/checkout-api"
+        - $ref: "#/tags/mp-point"
       summary: Get payment
       x-summary-i18n:
         eng: Get payment
@@ -1590,7 +1590,7 @@ paths:
           schema:
             type: string
       responses:
-        '200':
+        "200":
           description: Success
           content:
             application/json:
@@ -1646,7 +1646,7 @@ paths:
                       spa: Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago).
                       por: Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
                   operation_type:
-                    $ref: '#/components/schemas/operation_type'
+                    $ref: "#/components/schemas/operation_type"
                   issuer_id:
                     type: string
                     format: nullable
@@ -1671,9 +1671,9 @@ paths:
                       - cvu -- Payment method used in Argentina;
                       - pse -- Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.
                   payment_type_id:
-                    $ref: '#/components/schemas/payment_type_id'
+                    $ref: "#/components/schemas/payment_type_id"
                   status:
-                    $ref: '#/components/schemas/status'
+                    $ref: "#/components/schemas/status"
                   status_detail:
                     type: string
                     example: accredited
@@ -1699,7 +1699,7 @@ paths:
                       - cc_rejected_max_attempts -- exceeded maximum number of attempts.
                       - cc_rejected_other_reason -- generic error.
                   currency_id:
-                    $ref: '#/components/schemas/currency_id'
+                    $ref: "#/components/schemas/currency_id"
                   description:
                     type: string
                     example: Pago Pizza
@@ -1745,8 +1745,8 @@ paths:
                     description: Basically, it is an object that will allow you to convert payments of the CBT (Cross Border Trade) type into dollars, which are international payments made in foreign currency.
                     x-description-i18n:
                       eng: Basically, it is an object that will allow you to convert payments of the CBT (Cross Border Trade) type into dollars, which are international payments made in foreign currency.
-                      spa: Básicamente, es un objeto que te permitirá convertir pagos del tipo CBT (Cross Border Trade) en dólares, que son pagos internacionales realizados en moneda extranjera. 
-                      por: Basicamente, é um objeto que permitirá converter em dólares pagamentos do tipo CBT (Cross Border Trade), que são pagamentos internacionais, feitos em moeda estrangeira. 
+                      spa: Básicamente, es un objeto que te permitirá convertir pagos del tipo CBT (Cross Border Trade) en dólares, que son pagos internacionales realizados en moneda extranjera.
+                      por: Basicamente, é um objeto que permitirá converter em dólares pagamentos do tipo CBT (Cross Border Trade), que são pagamentos internacionais, feitos em moeda estrangeira.
                   collector_id:
                     type: string
                     example: 2
@@ -1754,7 +1754,7 @@ paths:
                     x-description-i18n:
                       eng: It is the user who receives the money. Ex - A user (payer) buys a cell phone through the marketplace. The identifier of the store/seller to receive the payment is the collector_id.
                       spa: Es el usuario quien recibe el dinero. Por ejemplo - Un usuario (payer) compra un celular a través del marketplace. El identificador de la tienda/vendedor para recibir el pago es el collector_id.
-                      por: É o usuário que recebe o dinheiro. Por exemplo - Um usuário (payer) compra um celular pelo marketplace. O identificador da loja/vendedor a receber o pagamento é o collector_id. 
+                      por: É o usuário que recebe o dinheiro. Por exemplo - Um usuário (payer) compra um celular pelo marketplace. O identificador da loja/vendedor a receber o pagamento é o collector_id.
                   payer:
                     type: object
                     description: Payer data - ID (identifying number), email address, identification (type and number of id)
@@ -1785,7 +1785,7 @@ paths:
                         x-description-i18n:
                           eng: User's personal identification. As an example, in Brazil, we have the CPF (Individual Taxpayer Registry) and the CNPJ (National Corporate Taxpayer Registry), for companies. Other possible identification codes are CURP (Mexico), CUIL (Argentina). This object will only return a response when status=approved, status=refunded or status=charged_back.
                           spa: Identificación personal del usuario. Como ejemplo, en Brasil, existe el CPF (Registro de Contribuyentes Individuales) y el CNPJ (Registro Nacional de Contribuyentes de Personas Jurídicas), para empresas. Otros posibles códigos de identificación son CURP (México), CUIL (Argentina). Este objeto sólo devolverá una respuesta cuando status=approved, status=refunded or status=charged_back.
-                          por: Identificação pessoal do usuário. Como exemplo, a nível Brasil, temos o CPF (Cadastro de Pessoa Física) e o CNPJ (Cadastro Nacional de Pessoas Jurídicas), para empresas. Outros códigos de identificação possíveis são o CURP (México), CUIL (Argentina), Este objeto só retornará uma response quando status=approved, status=refunded or status=charged_back. 
+                          por: Identificação pessoal do usuário. Como exemplo, a nível Brasil, temos o CPF (Cadastro de Pessoa Física) e o CNPJ (Cadastro Nacional de Pessoas Jurídicas), para empresas. Outros códigos de identificação possíveis são o CURP (México), CUIL (Argentina), Este objeto só retornará uma response quando status=approved, status=refunded or status=charged_back.
                         properties:
                           type:
                             type: string
@@ -1798,7 +1798,7 @@ paths:
                             enum:
                               - CPF -- Individual Taxpayer Registration, Brazil.
                               - CNPJ -- National Register of Legal Entities, Brazil.
-                              - CUIT -- Unique Tax Identification Code, Argentina. 
+                              - CUIT -- Unique Tax Identification Code, Argentina.
                               - CUIL -- Unique Labor Identification Code, Argentina.
                               - DNI -- National Identity Document, Argentina.
                               - CURP -- Single Population Registration Code, Mexico.
@@ -1815,7 +1815,7 @@ paths:
                               spa: El número hace referencia al identificador del usuario en cuestión. Si es un CPF, por ejemplo, tendrá 11 números.
                               por: O número se refere ao identificador do usuário em questão. Se for um CPF, por exemplo, terá 11 números.
                       type:
-                        $ref: '#/components/schemas/payer_type'
+                        $ref: "#/components/schemas/payer_type"
                   metadata:
                     type: object
                     description: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
@@ -2046,7 +2046,7 @@ paths:
                       eng: Merchant number (Applies to gateway model).
                       spa: Número de comercio (Aplica para modelo gateway).
                       por: Número do estabelecimento (aplica-se ao modelo de gateway).
-        '400':
+        "400":
           description: Error
           x-description-i18n:
             eng: Error
@@ -2101,7 +2101,7 @@ paths:
                       - 3028--Invalid payment_method_id.
                       - 3029--Invalid card expiration month.
                       - 3030--Invalid card expiration year.
-        '403':
+        "403":
           description: Error
           x-description-i18n:
             eng: Error
@@ -2117,7 +2117,7 @@ paths:
                     enum:
                       - 4--The caller is not authorized to access this resource.
                       - 3002--The caller is not authorized to perform this action.
-        '404':
+        "404":
           description: Error
           x-description-i18n:
             eng: Error
@@ -2134,10 +2134,10 @@ paths:
                       - 2000--Payment not found.
     put:
       tags:
-        - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/mobile-checkout'
-        - $ref: '#/tags/subscriptions'
-        - $ref: '#/tags/checkout-api'
+        - $ref: "#/tags/checkout-pro"
+        - $ref: "#/tags/mobile-checkout"
+        - $ref: "#/tags/subscriptions"
+        - $ref: "#/tags/checkout-api"
       summary: Update payment
       x-summary-i18n:
         eng: Update payment
@@ -2189,7 +2189,7 @@ paths:
                     spa: Es el estado actual de pago. Puede ser de dos tipos siguientes.
                     por: É o estado atual do pagamento. Podem ser ser dos seguintes tipos
                   example: "cancelled"
-                  enum: 
+                  enum:
                     - pending -- The user has not concluded the payment process (for example, to generate a payment by boleto, this payment will be concluded at the moment in which the user makes the non-corresponding payment selected);
                     - approved -- The payment was approved and credited;
                     - authorized -- The payment was authorized, but still was not captured;
@@ -2208,7 +2208,7 @@ paths:
                     por: Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100.
                   example: 58.8
       responses:
-        '200':
+        "200":
           description: Success
           content:
             application/json:
@@ -2264,7 +2264,7 @@ paths:
                       spa: Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago).
                       por: Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
                   operation_type:
-                    $ref: '#/components/schemas/operation_type'
+                    $ref: "#/components/schemas/operation_type"
                   issuer_id:
                     type: string
                     example: 25
@@ -2289,9 +2289,9 @@ paths:
                       - cvu -- Payment method used in Argentina;
                       - pse -- Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.
                   payment_type_id:
-                    $ref: '#/components/schemas/payment_type_id'
+                    $ref: "#/components/schemas/payment_type_id"
                   status:
-                   $ref: '#/components/schemas/status'
+                    $ref: "#/components/schemas/status"
                   status_detail:
                     type: string
                     example: accredited
@@ -2317,10 +2317,10 @@ paths:
                       - cc_rejected_max_attempts -- exceeded maximum number of attempts.
                       - cc_rejected_other_reason -- generic error.
                   currency_id:
-                    $ref: '#/components/schemas/currency_id'
+                    $ref: "#/components/schemas/currency_id"
                   description:
                     type: string
-                    example: 
+                    example:
                       Point Mini a maquininha que dá o dinheiro de suas vendas
                       na hora
                     description: Purchased product’s description, the reason for payment. E.g. - "Xiaomi Redmi Note 11S mobile phone 128gb 6gb Ram Original Global Blue Version" (description of a product in the marketplace).
@@ -2374,7 +2374,7 @@ paths:
                     x-description-i18n:
                       eng: Basically, it is an object that will allow you to convert payments of the CBT (Cross Border Trade) type into dollars, which are international payments made in foreign currency.
                       spa: Básicamente, es un objeto que te permitirá convertir pagos del tipo CBT (Cross Border Trade) en dólares, que son pagos internacionales realizados en moneda extranjera.
-                      por: Basicamente, é um objeto que permitirá converter em dólares pagamentos do tipo CBT (Cross Border Trade), que são pagamentos internacionais, feitos em moeda estrangeira. 
+                      por: Basicamente, é um objeto que permitirá converter em dólares pagamentos do tipo CBT (Cross Border Trade), que são pagamentos internacionais, feitos em moeda estrangeira.
                   shipping_amount:
                     type: number
                     example: 0
@@ -2406,7 +2406,7 @@ paths:
                     x-description-i18n:
                       eng: It is the user who receives the money. Ex - A user (payer) buys a cell phone through the marketplace. The identifier of the store/seller to receive the payment is the collector_id.
                       spa: Es el usuario quien recibe el dinero. Por ejemplo - Un usuario (payer) compra un celular a través del marketplace. El identificador de la tienda/vendedor para recibir el pago es el collector_id.
-                      por: É o usuário que recebe o dinheiro. Por exemplo - Um usuário (payer) compra um celular pelo marketplace. O identificador da loja/vendedor a receber o pagamento é o collector_id. 
+                      por: É o usuário que recebe o dinheiro. Por exemplo - Um usuário (payer) compra um celular pelo marketplace. O identificador da loja/vendedor a receber o pagamento é o collector_id.
                   payer:
                     type: object
                     description: Payer data - ID (identifying number), email address, identification (type and number of id)
@@ -2453,7 +2453,7 @@ paths:
                               por: Tipo de identificação
                         description: Personal identification. This value will only return a response when status=approved, status=refunded or status=charged_back
                       type:
-                        $ref: '#/components/schemas/payer_type'
+                        $ref: "#/components/schemas/payer_type"
                   metadata:
                     type: object
                     description: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
@@ -2634,7 +2634,7 @@ paths:
                     x-description-i18n:
                       eng: It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.
                       spa: Es el valor del cupón de descuento. Por ejemplo - BRL 14,50. El tipo del atributo es BigDecimal.
-                      por: É o valor do cupom de desconto. Ex. - R$14,50. O tipo do atributo é BigDecimal. 
+                      por: É o valor do cupom de desconto. Ex. - R$14,50. O tipo do atributo é BigDecimal.
                   differential_pricing_id:
                     type: string
                     format: nullable
@@ -2737,7 +2737,7 @@ paths:
                       type: object
                       properties:
                         type:
-                          $ref: '#/components/schemas/fee_details_type'
+                          $ref: "#/components/schemas/fee_details_type"
                         amount:
                           type: number
                           example: 2.64
@@ -2747,7 +2747,7 @@ paths:
                             spa: Monto de la comisión
                             por: Valor da comissão
                         fee_payer:
-                          $ref: '#/components/schemas/fee_payer'
+                          $ref: "#/components/schemas/fee_payer"
                     description: Fee detail.
                     x-description-i18n:
                       eng: Fee detail.
@@ -3009,7 +3009,7 @@ paths:
                       eng: Information from the application that processes the payment and receives regulatory data
                       spa: Información de la aplicación que procesa el pago y recibe datos regulatorios
                       por: Informação da aplicação que processa o pagamento e recebe dados regulatórios
-        '400':
+        "400":
           description: Error
           x-description-i18n:
             eng: Error
@@ -3028,7 +3028,7 @@ paths:
                       - 2018--The action requested is not valid for the current payment state.
                       - 2078--Capture attribute must be boolean.
                       - 2079--Invalid value for capture attribute.
-        '403':
+        "403":
           description: Error
           x-description-i18n:
             eng: Error
@@ -3044,7 +3044,7 @@ paths:
                     enum:
                       - 4--The caller is not authorized to access this resource.
                       - 3002--The caller is not authorized to perform this action.
-        '404':
+        "404":
           description: Error
           x-description-i18n:
             eng: Error
@@ -3062,12 +3062,12 @@ paths:
   /v1/payments/search:
     get:
       tags:
-        - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/mobile-checkout'
-        - $ref: '#/tags/qr-code'
-        - $ref: '#/tags/subscriptions'
-        - $ref: '#/tags/checkout-api'
-        - $ref: '#/tags/mp-point'
+        - $ref: "#/tags/checkout-pro"
+        - $ref: "#/tags/mobile-checkout"
+        - $ref: "#/tags/qr-code"
+        - $ref: "#/tags/subscriptions"
+        - $ref: "#/tags/checkout-api"
+        - $ref: "#/tags/mp-point"
       summary: Search payments
       x-summary-i18n:
         eng: Search payments
@@ -3146,7 +3146,7 @@ paths:
             type: string
             example: NOW
       responses:
-        '200':
+        "200":
           description: Success
           content:
             application/json:
@@ -3241,7 +3241,7 @@ paths:
                               spa: Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago).
                               por: Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).
                           operation_type:
-                            $ref: '#/components/schemas/operation_type'
+                            $ref: "#/components/schemas/operation_type"
                           issuer_id:
                             type: string
                             format: nullable
@@ -3266,9 +3266,9 @@ paths:
                               - cvu -- Payment method used in Argentina;
                               - pse -- Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.
                           payment_type_id:
-                            $ref: '#/components/schemas/payment_type_id'
+                            $ref: "#/components/schemas/payment_type_id"
                           status:
-                            $ref: '#/components/schemas/status'
+                            $ref: "#/components/schemas/status"
                           status_detail:
                             type: string
                             example: accredited
@@ -3294,7 +3294,7 @@ paths:
                               - cc_rejected_max_attempts -- maximum number of attempts exceeded.
                               - cc_rejected_other_reason -- generic error.
                           currency_id:
-                            $ref: '#/components/schemas/currency_id'
+                            $ref: "#/components/schemas/currency_id"
                           description:
                             type: string
                             example: Pago Pizza
@@ -3341,7 +3341,7 @@ paths:
                             x-description-i18n:
                               eng: Basically, it is an object that will allow you to convert payments of the CBT type (Cross Border Trade) into dollars, which are international payments made in foreign currency.
                               spa: Básicamente, es un objeto que te permitirá convertir pagos del tipo CBT (Cross Border Trade) en dólares, que son pagos internacionales realizados en moneda extranjera.
-                              por: Basicamente, é um objeto que permitirá converter em dólares pagamentos do tipo CBT (Cross Border Trade), que são pagamentos internacionais, feitos em moeda estrangeira. 
+                              por: Basicamente, é um objeto que permitirá converter em dólares pagamentos do tipo CBT (Cross Border Trade), que são pagamentos internacionais, feitos em moeda estrangeira.
                           collector_id:
                             type: string
                             example: 2
@@ -3349,7 +3349,7 @@ paths:
                             x-description-i18n:
                               eng: It is the user who receives the money. Ex - A user (payer) buys a cell phone through the marketplace. The identifier of the store/seller to receive the payment is the collector_id.
                               spa: Es el usuario quien recibe el dinero. Por ejemplo - Un usuario (payer) compra un celular a través del marketplace. El identificador de la tienda/vendedor para recibir el pago es el collector_id.
-                              por: É o usuário que recebe o dinheiro. Por exemplo - Um usuário (payer) compra um celular pelo marketplace. O identificador da loja/vendedor a receber o pagamento é o collector_id. 
+                              por: É o usuário que recebe o dinheiro. Por exemplo - Um usuário (payer) compra um celular pelo marketplace. O identificador da loja/vendedor a receber o pagamento é o collector_id.
                           payer:
                             type: object
                             description: Payer data - ID (identifying number), email address, identification (type and number of id)
@@ -3380,7 +3380,7 @@ paths:
                                 x-description-i18n:
                                   eng: User's personal identification. As an example, in Brazil, we have the CPF (Individual Taxpayer Registry) and the CNPJ (National Corporate Taxpayer Registry), for companies. Other possible identification codes are CURP (Mexico), CUIL (Argentina). This object will only return a response when status=approved, status=refunded or status=charged_back.
                                   spa: Identificación personal del usuario. Como ejemplo, en Brasil, existe el CPF (Registro de Contribuyentes Individuales) y el CNPJ (Registro Nacional de Contribuyentes de Personas Jurídicas), para empresas. Otros posibles códigos de identificación son CURP (México), CUIL (Argentina). Este objeto sólo devolverá una respuesta cuando status=approved, status=refunded or status=charged_back.
-                                  por: Identificação pessoal do usuário. Como exemplo, a nível Brasil, temos o CPF (Cadastro de Pessoa Física) e o CNPJ (Cadastro Nacional de Pessoas Jurídicas), para empresas. Outros códigos de identificação possíveis são o CURP (México), CUIL (Argentina), Este objeto só retornará uma response quando status=approved, status=refunded or status=charged_back. 
+                                  por: Identificação pessoal do usuário. Como exemplo, a nível Brasil, temos o CPF (Cadastro de Pessoa Física) e o CNPJ (Cadastro Nacional de Pessoas Jurídicas), para empresas. Outros códigos de identificação possíveis são o CURP (México), CUIL (Argentina), Este objeto só retornará uma response quando status=approved, status=refunded or status=charged_back.
                                 properties:
                                   type:
                                     type: string
@@ -3393,7 +3393,7 @@ paths:
                                     enum:
                                       - CPF -- Individual Taxpayer Registration, Brazil.
                                       - CNPJ -- National Register of Legal Entities, Brazil.
-                                      - CUIT -- Unique Tax Identification Code, Argentina. 
+                                      - CUIT -- Unique Tax Identification Code, Argentina.
                                       - CUIL -- Unique Labor Identification Code, Argentina.
                                       - DNI -- National Identity Document, Argentina.
                                       - CURP -- Single Population Registration Code, Mexico.
@@ -3410,7 +3410,7 @@ paths:
                                       spa: El número hace referencia al identificador del usuario en cuestión. Si es un CPF, por ejemplo, tendrá 11 números.
                                       por: O número se refere ao identificador do usuário em questão. Se for um CPF, por exemplo, terá 11 números.
                               type:
-                                $ref: '#/components/schemas/payer_type'
+                                $ref: "#/components/schemas/payer_type"
                           metadata:
                             type: object
                             description: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex. - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}.
@@ -3456,7 +3456,7 @@ paths:
                             x-description-i18n:
                               eng: It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.
                               spa: Es el valor del cupón de descuento. Por ejemplo - BRL 14,50. El tipo del atributo es BigDecimal.
-                              por: É o valor do cupom de desconto. Ex - R$14,50. O tipo do atributo é BigDecimal. 
+                              por: É o valor do cupom de desconto. Ex - R$14,50. O tipo do atributo é BigDecimal.
                           differential_pricing_id:
                             type: string
                             format: nullable
@@ -3646,7 +3646,7 @@ paths:
                         eng: Search results
                         spa: Resultados de la búsqueda
                         por: Resultados da pesquisa
-        '400':
+        "400":
           description: Error
           x-description-i18n:
             eng: Error
@@ -3704,7 +3704,7 @@ paths:
                       - 3029--Invalid card expiration month.
                       - 3030--Invalid card expiration year.
                       - 9062--Invalid range interval - Must be less than 365 days.
-        '403':
+        "403":
           description: Error
           x-description-i18n:
             eng: Error
@@ -3720,7 +3720,7 @@ paths:
                     enum:
                       - 4--The caller is not authorized to access this resource.
                       - 3002--The caller is not authorized to perform this action.
-        '404':
+        "404":
           description: Error
           x-description-i18n:
             eng: Error
