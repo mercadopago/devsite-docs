@@ -23,6 +23,7 @@ bullet_section_with_media:
  - benefit_message: No necesitarás una impresora extra, puedes contratar el servicio o integrar tu proveedor.
  - benefit_title: Conciliación
  - benefit_message: Puedes encontrar toda la información de tus ventas en tiempo real en nuestro portal web.
+ - image: /Redelcom/2R4A8456_equipos_frente.png
 ---
 
 ---
@@ -34,7 +35,8 @@ bullet_section_with_media:
  - benefit_title: Terminales de calidad
  - benefit_message: Cuentan con una batería de larga duración, y un mínimo porcentaje de falla.
  - benefit_title: La máquina es tuya
- - benefit_message: Usted compra la máquina y no tiene que pagar alquiler ni cuotas de membresía.
+ - benefit_message: Compras la máquina y no tienes que pagar alquiler ni cuotas de membresía.
+ - image: /Redelcom/2R4A8047_Samrt_Pro_pantalla_boleta.png
 ---
 
 ---
@@ -48,11 +50,11 @@ bullet_section_with_media:
 
 ---
 bullet_section_with_media:
- - title: Dispositivos integrables
+ - title: 
  - type: reverse
  - benefit_title: SMART PRO
  - benefit_message: Además de ofrecer pagos en efectivo, tarjetas y wallets, también puedes emitir vouchers con códigos QR con los detalles de tu venta o aprovechar el lector de código de barra. Controla el stock de tu negocio con RDControl, nuestro software de inventario, que te permitirá integrar con tu software de caja y revisar reportes de venta por categoría y producto, incluyendo inventario negativo. Nuestro dispositivo cuenta con certificaciones de seguridad PCI PTS 5.x SRED, y posee conectividad celular y WIFI, con la SIM de datos incluida sin costos.
- - image: /Redelcom/smart-pro-frente.png
+ - image: /Redelcom/2R4A7958_Montaje_Smart_Pro.png
 ---
 
 --- mini_landing_separator ---

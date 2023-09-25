@@ -6,19 +6,19 @@ To integrate the `NeptuneLiteAPI *.jar` library and enable receipt printing, fol
 
 1. Open your project in Android Studio and go to **File > Project Structure > Dependencies**.
 
-![image showing where to find the Modules tab](/images/redelcom/importar-librería2.png)
+![image showing where to find the Modules tab](/images/Redelcom/importar-librería2.png)
 
 2. Select the "+" button, which corresponds to creating a new module. A popup window will appear for you to select the type of module, which should be "Import .JAR/.AAR Package."
 
-![image showing where to find the library](/images/redelcom/importar-librería3.png)
+![image showing where to find the library](/images/Redelcom/importar-librería3.png)
 
 3. In the next window, browse for the path to the required library by clicking the search button located on the right side of the "File name" field.
 
-![image showing where to browse](/images/redelcom/importar-librería4.png)
+![image showing where to browse](/images/Redelcom/importar-librería4.png)
 
 4. Press the **Finish** button and add the library as a Module Dependency to the project.
 
-![image showing where to find the Modules Dependencies](/images/redelcom/integrar-librería5.png)
+![image showing where to find the Modules Dependencies](/images/Redelcom/integrar-librería5.png)
 
 And that's it! The .jar import was successful, and you can now use the library for printing.
 
