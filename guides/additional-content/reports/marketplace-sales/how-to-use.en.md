@@ -4,7 +4,7 @@ Once the report is ready and downloaded, you will have a file to consult spreads
 
 To view it, we recommend downloading it in .csv format and opening it in a spreadsheet or any visualization program. If you choose the latter option, it's important to configure the program to support the *UTF-8* format beforehand to avoid reading issues.
 
-## Report contents
+## Report content
 
 The report lists transactions made by sellers associated with a marketplace. Each line details an independent transaction, including values, fees, *status*, and *status_detail*. While the *status* field indicates payment approval, *status_detail* provides additional information, such as rejection reasons.
 

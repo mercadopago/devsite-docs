@@ -87,7 +87,7 @@ curl --location --request PUT 'https://api.mercadopago.com/v1/reports/marketplac
 ```
 
 #### Response
-```curl
+```json
 {
     "id": {{structure_id}},
     "version": 1,
@@ -232,7 +232,7 @@ curl --location --request PUT 'https://api.mercadopago.com/v1/reports/notifiers/
 }'
 ```
 
-#### Respuesta
+#### Response
 ```json
 {
     "id": {{notifier_id}},

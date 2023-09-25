@@ -27,4 +27,4 @@ curl --location --request DELETE 'https://api.mercadopago.com/v1/reports/marketp
 ```curl
 curl --location --request DELETE 'https://api.mercadopago.com/v1/reports/{{notifier_id}}' \
 --header 'Authorization: Bearer {{TOKEN}}' 
-``````
+```

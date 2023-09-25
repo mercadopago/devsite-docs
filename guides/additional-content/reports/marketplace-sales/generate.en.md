@@ -1,6 +1,6 @@
 # Generate report
 
-To generate the report, first, you need to create the necessary [configurations](#bookmark_create_configuration), where you can set the emails to which the report will be sent or the frequency at which you want it to be generated, among other options. Then, you must [create the report](#bookmark_create_report), which can be done **automatically** (_event_) or **manually** (_statement_).
+To generate the report, first, you need to [create the configurations](#bookmark_create_configuration), where you can set the emails to which the report will be sent or the frequency at which you want it to be generated, among other options. Then, you must [create the report](#bookmark_create_report), which can be done **automatically** (event) or **manually** (statement).
 
 > NOTE
 >
@@ -13,8 +13,8 @@ To generate the report, first, you need to create the necessary [configurations]
 Credentials are unique passwords used to identify an integration in your account. They play a fundamental role in securely capturing payments on online stores and other applications. You can find them in **Application Details > Credentials** within the [Developer Dashboard](https://www.mercadopago.com.uy/developers/panel/app) or in your Mercado Pago account by accessing [Your Business > Settings > Management and Administration > Credentials](https://www.mercadopago.com.uy/settings/account/credentials).
 
 There are two different types of credentials:
-* **Test Credentials**: Use test credentials to test your integrations. They can be combined with test credit cards to simulate transactions and verify the correct operation of the integrations. It is recommended to use these credentials before moving on to production credentials.
-* **Production Credentials**: Use production credentials to receive payments.
+* **Test credentials**: Use test credentials to test your integrations. They can be combined with test credit cards to simulate transactions and verify the correct operation of the integrations. It is recommended to use these credentials before moving on to production credentials.
+* **Production credentials**: Use production credentials to receive payments.
 
 Both types of credentials consist of two key pairs that you should use according to the chosen product. Refer to the specific documentation for each product for details on which keys to use.
 
@@ -35,7 +35,7 @@ Creating configurations consists of 2 steps: first, defining the **report struct
 
 ### Structure report
 
-Creating the report structure allows you to define the characteristics it will have at the time of generation. Through the _structures_, you can specify the time zone in which you want the report to be generated, add a prefix to identify the generated file, and incorporate the desired number of columns, along with column separators and decimals.
+Creating the report structure allows you to define the characteristics it will have at the time of generation. Through the structures, you can specify the time zone in which you want the report to be generated, add a prefix to identify the generated file, and incorporate the desired number of columns, along with column separators and decimals.
 
 To set this structure, make the following API call, considering the specifications in the table below:
 
@@ -142,7 +142,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketpla
 
 ### Notification methods
 
-After establishing the report structure, determine how you want to receive notifications, either by email or SFTP. Configure a _notifier_ as shown below, and pay attention to the characteristics of each field described in the table below.
+After establishing the report structure, determine how you want to receive notifications, either by email or SFTP. Configure a notifier as shown below, and pay attention to the characteristics of each field described in the table below.
 
 #### Email
 ```curl
@@ -224,7 +224,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/notifiers
 After creating the initial configurations, you have two options to generate the report:
 
 * **Schedule an event**: This automates report creation by specifying its frequency.
-* **Manually Generate an Event**: You can create an on-demand report by defining the desired time interval.
+* **Manually generate an event**: You can create an on-demand report by defining the desired time interval.
 
 ### Schedule a report (Events)
 
@@ -281,11 +281,11 @@ You can find descriptions of the fields in the curls in the table below.
 | `structure_id` (required) | Field to assign the structure with which the report will be generated. You must fill it with the value obtained for this same field in the response to the structure creation.                                                             |
 | `notifier_id` (required)  | Field to assign the method by which you want to receive notifications. You must fill it with the identification obtained in the response to the creation of notifications.                                                                     |
 
-### Manually Generate a Report (Statements)
+### Manually generate report (Statements)
 
 Manual creation allows you to generate an on-demand report, specifying the desired time interval.
 
-To do this, create a _statement_ as shown below. Also, make sure to have the configurations you previously created and the information from the table below on hand to ensure successful report creation.
+To do this, create a statement as shown below. Also, make sure to have the configurations you previously created and the information from the table below on hand to ensure successful report creation.
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/statements' \
@@ -324,4 +324,3 @@ You can find descriptions of the fields in the curls in the table below.
 | Origin (required)          | This field contains information about the period you want to include in the report.<br>- `type`: The only possible value is `date_range`, as you will need to indicate the period to be queried.<br>- `date_start`: Indicates the start of the period you want to query in the format: **yyyy-MM-dd HH:mm:ss.SSS**.<br>- `date_end`: Indicates the end of the period you want to query in the format: **yyyy-MM-dd HH:mm:ss.SSS**. |
 | structure_id (required)    | Field to assign the structure with which the report will be generated. You must fill it with the value obtained for this same field in the response to the structure creation.                                                        |
 | notifiers_id (required)    | Field to assign the method by which you want to receive notifications. You must fill it with the identification obtained in the response to the creation of notifications.                                                            |
-                                                      |
