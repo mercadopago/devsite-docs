@@ -1,19 +1,21 @@
 # Report use
 
-## How to use the report?
+Once the report is ready and downloaded, you will have a file to consult spreadsheets or import into the reconciliation program of your choice.
 
-Once the report is ready and downloaded, you will have a file to consult in spreadsheets or import into the reconciliation program of your choice.
+To view it, we recommend downloading it in .csv format and opening it in a spreadsheet or any visualization program. If you choose the latter option, it's important to configure the program to support the *UTF-8* format beforehand to avoid reading issues.
 
-To consult it, we recommend downloading it in *.csv* format and opening it in a spreadsheet or any visualization program. If you choose the latter option, it is important to configure the program in advance to support the *UTF-8* format and avoid reading issues.
+## Report contents
 
-### What does the report contain?
+The report lists transactions made by sellers associated with a marketplace. Each line details an independent transaction, including values, fees, *status*, and *status_detail*. While the *status* field indicates payment approval, *status_detail* provides additional information, such as rejection reasons.
 
-The report consists of a list of transactions made by the sellers linked to a marketplace. Each row represents an independent transaction with details about the different amounts and fees, as well as their **status** and **status_detail**. The `status` field indicates whether the payment was approved or not, while the `status_detail` field provides more details, including the reasons for rejection. You can find more information about the ***status*** and ***status_detail*** in the **Response Parameters** section of the [Payments API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post) documentation.
+For more details on *status* and *status_detail*, refer to the "Response Parameters" section in the [Payments API documentation](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments/post).
 
 > NOTE
 >
-> Additionally, in the Net Received Amt LC column, you will find the actual impact on your money.
+> Note
+> 
+> Additionally, in the **Net Received Amount LC** column, you will find the actual impact on your money.
 
-Observe how the sales report of the *Marketplace* is structured in this example to identify the operations and read your own reports:
+Take a look at how the sales report is structured in this example to identify the operations and read your own reports:
 
-![Example to identify operations and read your own reports](/images/manage-account/reports/marketplace-sales/image2.png)
+![Example for identifying operations and reading your own reports](/images/manage-account/reports/marketplace-sales/image2.png)

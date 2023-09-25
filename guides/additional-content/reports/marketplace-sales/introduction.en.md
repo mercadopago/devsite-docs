@@ -1,36 +1,35 @@
-# Report of the Mercado Pago Marketplace
+# Sales report of Mercado Pago's payment split solution
 
-## What is the sales report of the Mercado Pago Marketplace?
+The Sales report of Mercado Pago's payment split solution provides a **comprehensive view of transactions by linked sellers**, available for download in both _csv_ and _json_ formats. This report details operations conducted during a specific time period, covering various transaction fees, settlement cases, financial blocking, and unblocking. It also contains essential data such as the total transaction amount, marketplace fee, Mercado Pago fee, and the total amount of received money.
 
-The sales report of the Mercado Pago Marketplace is a new type of report that can be downloaded in *csv* and *xlsx* formats. It **allows you to access all the information related to the movements of your linked sellers**. It includes details of the transactions carried out within a specific time period, the different fees associated with each transaction, as well as cases of money settlement, blocks, and unblocks.
-Currently, the sales report of the Mercado Pago Marketplace is only available through the API.
+> NOTE
+>
+> Important
+>
+> This report can only be accessed through the API.
 
-## How do I download the report?
+## Downloading the report
 
-The download of the Marketplace Sales Report from Mercado Pago must be configured via API. It can be requested in two ways, manually or automatically, but in both cases, some prior configurations are required, such as:
+To download the sales report of Mercado Pago's payment split solution, you need to configure it via the API. This process can be done manually or automatically. However, in both options, some preliminary configurations are required, as outlined below.
+
    - Frequency.
-   - List of emails that will receive the report.
-   - List of columns or attributes to be included.
+   - List of email addresses that will receive the report.
+   - List of columns or attributes to include.
 
-Please note that generating the report may take a few minutes depending on the time period you want to include. Once available, you can download it from a link we will send you via email or through the API.
+> NOTE
+>
+> Please note that report creation may take a few minutes, depending on the selected time interval. Once it's ready, we will provide a download link that you will receive via email or can access through the API.
 
-### Report Values
+## Using the report
 
-In the sales report of the Mercado Pago Marketplace, you will find the details of each transaction made by a linked seller, within the selected time frame, including: total transaction amount, marketplace fee, Mercado Pago fee, and total amount of money received.
+The report can serve as a **reconciliation tool** between the total transactions carried out by your linked sellers on our platform and your reconciliation systems or tools.
 
-## How to Use the Report?
+Upon creation, it provides detailed information such as dates, concepts, statuses, amounts, and fees for each transaction, along with the identification of the responsible seller. The report is especially useful for:
 
-### Use the report for reconciliation
+ 1. Tracking sales by linked sellers during specific periods.
+ 2. Identifying sellers with a significant economic impact.
+ 3. Establishing preferential fees based on sales volume.
+ 4. Coordinating collaborative campaigns with sellers.
+ 5. Assessing the prevalence of different payment methods, such as debit, credit, and account balance.
 
-**This report is used for reconciling** the total amount of transactions made by your sellers on our platform with your reconciliation systems or tools.
-
-Generate the sales report whenever you need to reconcile the detailed invoiced amount between two dates. You will be able to know when each transaction was made, under which concepts, its status, amounts, fees, and the username of the seller who made it.
-
-### Use the report to track your history
-
-You can use the report to track in detail the sales made by the sellers linked to your marketplace within a given time frame.
-Furthermore, this report will allow you to:
-   - Analyze which sellers generate the greatest economic impact.
-   - Assign preferential fees to sellers based on their sales.
-   - Generate campaigns together with the sellers.
-   - Identify the most and least used payment methods (debit, credit, account balance, etc.).
+We recommend using this report whenever you need a detailed financial reconciliation between two specific dates.
