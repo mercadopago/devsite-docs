@@ -302,7 +302,7 @@ Each panel in the review section is associated with a callback, which is trigger
 | `onClickEditShippingData` | The buyer wants to edit the shipping details. | Yes (when _shipping_ data is provided) |
 | `onClickEditBillingData` | The buyer wants to edit the billing details. | Yes (when _billing_ data is provided) |
 
-These callbacks allow the integrator to build an editing mechanism according to their convenience. To build such a mechanism, the controller returned when instantiating the Brick has an update method, which allows the editing of this data. Check out our [technical documentation]() for more details on how the controller and the update method works.
+These callbacks allow the integrator to build an editing mechanism according to their convenience. To build such a mechanism, the controller returned when instantiating the Brick has an update method, which allows the editing of this data. Check out our [technical documentation](https://github.com/icaldana/sdk-js/blob/main/API/bricks/paymentReview.md#brick-controllerupdate) for more details on how the controller and the update method works.
 
 ```Javascript
 window.paymentBrickController = await bricksBuilder.create(
