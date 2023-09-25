@@ -123,12 +123,10 @@ Venezuela:
 
 * Argentina: Agência de Acesso à Informação Pública.
 * Brasil: Autoridade Nacional de Proteção de Dados.
-* Chile: Serviço Nacional do Consumidor
+* Chile: Serviço Nacional do Consumidor.
 * Colômbia: Superintendência de Indústria e Comércio.
-* Costa Rica: Agência de Proteção de Dados dos Habitantes
-* Equador: Autoridade de Proteção de Dados Pessoais
-* México: Instituto Nacional de Transparência e Acesso à Informação e Proteção
-de Dados Pessoais
-* Perú: Direção Geral de Transparência, Acesso à Informação Pública e Proteção
-de Dados Pessoais
+* Costa Rica: Agência de Proteção de Dados dos Habitantes.
+* Equador: Autoridade de Proteção de Dados Pessoais.
+* México: Instituto Nacional de Transparência e Acesso à Informação e Proteção de Dados Pessoais.
+* Perú: Direção Geral de Transparência, Acesso à Informação Pública e Proteção de Dados Pessoais.
 * Uruguai: Unidade Reguladora e de Controle de Dados Pessoais.

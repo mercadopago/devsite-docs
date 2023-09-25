@@ -42,9 +42,8 @@ El uso de tus datos para cualquier otra finalidad que no sea compatible con las 
 
 En relación con las finalidades que describimos en el punto anterior (“¿Qué hacemos con tus datos personales?”), tus datos personales pueden ser accedidos por o compartidos con las siguientes categorías de destinatarios:
 
-* Afiliadas de Mercado Libre
-* Aliados comerciales, con quienes Mercado Libre tiene una relación de
-colaboración o alianza para publicitar, brindarte u ofrecerte bienes y/o servicios.
+* Afiliadas de Mercado Libre.
+* Aliados comerciales, con quienes Mercado Libre tiene una relación de colaboración o alianza para publicitar, brindarte u ofrecerte bienes y/o servicios.
 * Proveedores que nos prestan servicios y procesan los datos por cuenta de Mercado Libre, siguiendo nuestras instrucciones.
 * Autoridades competentes en el ejercicio de sus funciones.
 * Otra compañía, en el marco de una fusión, compra, venta o cualquier otro tipo de adquisición o combinación de operaciones sobre todos o algunos de los activos o negocios de Mercado Libre.
@@ -111,21 +110,22 @@ México:
 Perú:
 * Mercado Libre Perú S.R.L., RUC No. 20462540745, calle German Schreiber Gulsmanco Nº276, San Isidro, Lima, Perú.
 
-Uruguay
+Uruguay:
 * Deremate.com de Uruguay S.R.L., R.U.T: 21411170001, con domicilio en la Calle Dr. Luis Bonavita 1266 Piso 39, Ciudad de Montevideo.
 
-Venezuela
+Venezuela:
 * MercadoLibre Venezuela S.R.L, con domicilio en calle Eugenio Mendoza con Jose Angel Lamas, Edif. Torre la Castellana, Piso 8, Zona Postal 1060, Caracas, Venezuela.
 
 ## Anexo II
 
 ### Autoridades
+
 * Argentina: Agencia de Acceso a la Información Pública.
 * Brasil: Autoridade Nacional de Proteção de Dados.
-* Chile: Servicio Nacional del Consumidor
+* Chile: Servicio Nacional del Consumidor.
 * Colombia: Superintendencia de Industria y Comercio.
-* Costa Rica: Agencia de Protección de Datos de los Habitantes
-* Ecuador: Autoridad de Protección de Datos Personales
+* Costa Rica: Agencia de Protección de Datos de los Habitantes.
+* Ecuador: Autoridad de Protección de Datos Personales.
 * México: Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos.
-* Perú: Dirección General de Transparencia, Acceso a la Información Pública y Protección de Datos Personales
+* Perú: Dirección General de Transparencia, Acceso a la Información Pública y Protección de Datos Personales.
 * Uruguay: Unidad Reguladora y de Control de Datos Personales.

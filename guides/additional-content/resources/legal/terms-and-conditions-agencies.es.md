@@ -109,10 +109,10 @@ Perú:
 
 * Argentina: Agencia de Acceso a la Información Pública.
 * Brasil: Autoridade Nacional de Proteção de Dados.
-* Chile: Servicio Nacional del Consumidor
+* Chile: Servicio Nacional del Consumidor.
 * Colombia: Superintendencia de Industria y Comercio.
-* Costa Rica: Agencia de Protección de Datos de los Habitantes
-* Ecuador: Autoridad de Protección de Datos Personales
+* Costa Rica: Agencia de Protección de Datos de los Habitantes.
+* Ecuador: Autoridad de Protección de Datos Personales.
 * México: Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos.
-* Perú: Dirección General de Transparencia, Acceso a la Información Pública y Protección de Datos Personales
+* Perú: Dirección General de Transparencia, Acceso a la Información Pública y Protección de Datos Personales.
 * Uruguay: Unidad Reguladora y de Control de Datos Personales.
