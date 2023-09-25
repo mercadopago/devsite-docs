@@ -23,7 +23,6 @@ bullet_section_with_media:
  - benefit_message: No necesitarás una impresora extra, puedes contratar el servicio o integrar tu proveedor.
  - benefit_title: Conciliación
  - benefit_message: Puedes encontrar toda la información de tus ventas en tiempo real en nuestro portal web.
- - image: 
 ---
 
 ---
@@ -36,7 +35,6 @@ bullet_section_with_media:
  - benefit_message: Cuentan con una batería de larga duración, y un mínimo porcentaje de falla.
  - benefit_title: La máquina es tuya
  - benefit_message: Usted compra la máquina y no tiene que pagar alquiler ni cuotas de membresía.
-
 ---
 
 ---

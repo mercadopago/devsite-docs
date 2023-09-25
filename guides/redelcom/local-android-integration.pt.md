@@ -6,4 +6,4 @@ Seu aplicativo se comunicará com o sistema RDCPass localmente, permitindo que v
 
 Confira o diagrama a seguir, que detalha o funcionamento da integração local com a Redelcom.
 
-![Diagrama explicando a integração local](Integrate-via-Android.png)
+![Diagrama explicando a integração local](/images/redelcom/integrate-via-android.png)

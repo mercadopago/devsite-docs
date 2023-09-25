@@ -6,19 +6,19 @@ Para integrar la librería `*.jar NeptuneLiteAPI` y poder realizar impresión de
 
 1. Abre tu proyecto en Android Studio, y dirígete a **File>Project Structure>Dependencies**.
 
-![image showing where to find the Modules tab](ImportarLibrería2.png)
+![image showing where to find the Modules tab](/images/redelcom/importar-librería2.png)
 
 2. Selecciona el botón +, que se corresponde con la creación de un nuevo módulo. Se abrirá una ventana emergente para que selecciones el tipo de módulo, que deberá ser “Import .JAR/.AAR Package”.
 
-![image showing where to find the library](importarlibrería3.png)
+![image showing where to find the library](/images/redelcom/importar-librería3.png)
 
 3. En la siguiente ventana, busca la ruta de la librería requerida cliqueando en el botón de búsqueda ubicado en el costado derecho del campo “File name”.
 
-![image showing where to browse](ImportarLibrería4.png)
+![image showing where to browse](/images/redelcom/importar-librería4.png)
 
 4. Presiona el botón **Finish** y agrega la librería como **Module Dependency** al proyecto.
 
-![image showing where to find the Modules Dependencies](IntegrarLibrería5.png)
+![image showing where to find the Modules Dependencies](/images/redelcom/integrar-librería5.png)
 
 ¡Y listo! la importación del `.jar` se realizó correctamente y ya es posible utilizar la librería para realizar impresiones.
 

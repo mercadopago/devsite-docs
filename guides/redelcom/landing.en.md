@@ -15,7 +15,7 @@ available_countries: mlc
 
 ---
 bullet_section_with_media: 
- - title: Ventajas
+ - title: Advantages
  - type: normal
  - benefit_title: Multiple payment options
  - benefit_message: We offer payments through credit cards, debit cards, digital wallets, and meal cards.

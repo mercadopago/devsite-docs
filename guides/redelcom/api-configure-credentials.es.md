@@ -2,7 +2,7 @@
 
 Puedes generar solicitudes de pago en las terminales Redelcom utilizando [nuestra API](https://api-dev.redelcom.cl:20010/v2).
 
-![diagrama explicando la integración con API](integrate-via-API.png)
+![diagrama explicando la integración con API](/images/redelcom/integrate-via-api.png)
 
 Para comenzar a integrar vía API, deberás contar con las **credenciales que te fueron otorgadas por correo electrónico** al momento de solicitar el dispositivo. Estas te ayudarán a generar el *token* necesario para operar con Redelcom vía API. 
 
