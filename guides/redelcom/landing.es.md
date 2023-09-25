@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: Redelcom
  - message: Redelcom es un dispositivo de Mercado Libre que permite a los compradores realizar pagos presenciales de forma rápida y segura mediante tarjetas de crédito, débito, en efectivo o mediante billeteras digitales.  Además, utilizando Redelcom es posible ofrecer cuotas con o sin interés y, dependiendo del dispositivo, controlar y actualizar el inventario de la tienda sin esfuerzos extra.
- - media_image: /redelcom/redelcom-mercadopago.png
+ - media_image: /Redelcom/redelcom-mercadopago.png
 ---
 
 --- mini_landing_separator ---
@@ -43,7 +43,7 @@ bullet_section_with_media:
  - type: normal
  - benefit_title: SMART
  - benefit_message: Terminal multiservicios: se pueden realizar pagos contactless, por chip, banda o QR, y podrás ofrecer cuotas sin interés, así como la posibilidad de recarga de celulares y pago de cuentas. Además, te permitirá generar boletas y facturas electrónicas.  Nuestro dispositivo cuenta con certificaciones de seguridad PCI PTS 5.x SRED, posee batería recargable y conectividad celular y WIFI, con la SIM de datos incluida sin costos. 
- - image: /redelcom/smart-costado.png
+ - image: /Redelcom/smart-costado.png
 ---
 
 ---
@@ -52,7 +52,7 @@ bullet_section_with_media:
  - type: reverse
  - benefit_title: SMART PRO
  - benefit_message: Además de ofrecer pagos en efectivo, tarjetas y wallets, también puedes emitir vouchers con códigos QR con los detalles de tu venta o aprovechar el lector de código de barra. Controla el stock de tu negocio con RDControl, nuestro software de inventario, que te permitirá integrar con tu software de caja y revisar reportes de venta por categoría y producto, incluyendo inventario negativo. Nuestro dispositivo cuenta con certificaciones de seguridad PCI PTS 5.x SRED, y posee conectividad celular y WIFI, con la SIM de datos incluida sin costos.
- - image: /redelcom/smart-pro-frente.png
+ - image: /Redelcom/smart-pro-frente.png
 ---
 
 --- mini_landing_separator ---
