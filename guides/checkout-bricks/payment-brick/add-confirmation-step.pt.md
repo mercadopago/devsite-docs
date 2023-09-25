@@ -166,9 +166,14 @@ const settings = {
 Identificação do comprador que será exibida no quadro junto com as informações de pagamento. **Recomendamos que essa propriedade seja preenchida**.
 
 ```Javascript
-const payer = {
-  email: "<EMAIL>",
-}
+const settings = {
+  // ...
+  initialization: {
+    payer: {
+      email: "<EMAIL>",
+    },
+  },
+};
 ```
 
 ## Shipping (opcional)

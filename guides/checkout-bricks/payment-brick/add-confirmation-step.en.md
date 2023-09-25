@@ -167,9 +167,14 @@ const settings = {
 Buyer identification that will be displayed on the panel along with payment information. We strongly recommend filling in this property.
 
 ```Javascript
-const payer = {
-  email: "<EMAIL>",
-}
+const settings = {
+  // ...
+  initialization: {
+    payer: {
+      email: "<EMAIL>",
+    },
+  },
+};
 ```
 
 ## Shipping (optional)
