@@ -179,45 +179,57 @@ Once the token is obtained, it is necessary to create the payment with the corre
 
 [[[
 ```php
-
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-$payment = new MercadoPago\Payment();
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
-$payment->transaction_amount = 100;
-$payment->token = "ff8080814c11e237014c1ff593b57b4d";
-$payment->installments = 1;
-$payment->payer = array(
-"type" => "customer",
-"id" => "123456789-jxOV430go9fx2e"
-);
+  $customer_client = new CustomerClient();
+  $cards = $client->list("customer_id");
+  
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-$payment->save();
-
+  $payment = $client->create([
+    "transaction_amount" => 100.0,
+    "token" => $cards[0]-> token,
+    "description" => "My product",
+    "installments" => 1,
+    "payment_method_id" => "visa",
+    "issuer_id" => "123",
+    "payer" => [
+      "type" => "customer",
+      "id" => "1234"
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
-
 ```
 ```node
+const client = new MercadoPago({ accessToken: 'access_token' });
+const customerClient = new Customer(client);
 
-var Mercadopago = require('mercadopago');
-Mercadopago.configurations.setAccessToken(config.access_token);
+customerClient.listCards({ customerId: '123' })
+	.then((result) => {
 
-var payment_data = {
-transaction_amount: 100,
-token: 'ff8080814c11e237014c1ff593b57b4d',
-installments: 1,
-payer: {
-type: "customer"
-id: "123456789-jxOV430go9fx2e"
-}
-};
+  const payment = new Payment(client);
 
-Mercadopago.payment.create(payment_data).then(function (data) {
-console.log(date);
+  body = {
+    transaction_amount: 100.0,
+    token: result[0].token,
+    description: 'My product',
+    installments: 1,
+    payment_method_id: 'visa',
+    issuer_id: '123',
+    payer: {
+      type: 'customer',
+      id: '123'
+  }
+
+  payment.create({ body }).then((result) => console.log(result));
 });
-
 ```
 ```java
 
