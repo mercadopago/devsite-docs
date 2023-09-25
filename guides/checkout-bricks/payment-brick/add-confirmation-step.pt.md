@@ -92,6 +92,13 @@ const settings = {
   customization: {
     enableReviewStep: true,
     reviewCardsOrder: ["payment_method", "shipping", "billing"], // opcional
+    paymentMethods: {
+      ticket: "all",
+      atm: "all",
+      creditCard: "all",
+      debitCard: "all",
+      mercadoPago: "all",
+    },
   },
   callbacks: {
     onReady: () => {},
@@ -112,8 +119,8 @@ const settings = {
     onError: (error) => console.error(error),
     onClickEditShippingData: () => {}, // opcional
     onClickEditBillingData: () => {}, // opcional
-    onRenderNextStep: (currentStep: string) => {}, // opcional
-    onRenderPreviousStep: (currentStep: string) => {}, // opcional
+    onRenderNextStep: (currentStep) => {}, // opcional
+    onRenderPreviousStep: (currentStep) => {}, // opcional
   },
 };
 ```
@@ -124,7 +131,7 @@ Vamos examinar cada aspecto dessas configurações em detalhes a seguir.
 >
 > Atenção
 >
-> As propriedades definidas neste trecho de documentação como obrigatórias são exclusivas à etapa de revisão, sendo desconsideradas em outros momentos do fluxo de pagamento.
+> As propriedades definidas neste trecho de documentação como obrigatórias são exclusivas à etapa de confirmação, sendo desconsideradas em outros momentos do fluxo de pagamento.
 
 ## Ativação da funcionalidade (obrigatório)
 
@@ -135,17 +142,22 @@ A propriedade `enableReviewStep` é responsável pelo acionamento da funcionalid
 Define quais os itens que compõem o pedido, sendo obrigatório o preenchimento desta propriedade. A seguir, tem-se um exemplo: 
 
 ```Javascript
-const items = {
-  totalItemsAmount: 9.42,
-  itemsList: [
-    {
-      units: 3,
-      value: 3.14,
-      name: "<NAME>",
-      description: "<DESCRIPTION>", // opcional
-      imageURL: "<IMAGE_URL>", // opcional
+const settings = {
+  // ...
+  initialization: {
+    items: {
+      totalItemsAmount: 9.42,
+      itemsList: [
+        {
+          units: 3,
+          value: 3.14,
+          name: "<NAME>",
+          description: "<DESCRIPTION>", // opcional
+          imageURL: "<IMAGE_URL>", // opcional
+        },
+      ],
     },
-  ],
+  },
 };
 ```
 
@@ -165,24 +177,29 @@ Dados relativos ao quadro de endereço de entrega, sendo que o mesmo somente ser
 
 <center>
 
-![review-confirm-shipping-pt](checkout-bricks/review-confirm-shipping-pt.gif)
+![review-confirm-shipping-pt](checkout-bricks/review-confirm-shipping-pt.png)
 
 </center>
 
 Segue um exemplo do objeto de _shipping_:
 
 ```Javascript
-const shipping = {
-  costs: 5, // opcional
-  shippingMode: "<SHIPPING_MODE>",
-  description: "<SHIPPING_DESCRIPTION>", // opcional
-  receiverAddress: {
-    streetName: "<STREET_NAME>",
-    streetNumber: "<STREET_NUMBER>",
-    neighborhood: "<PAYER_NEIGHBORHOOD>", // opcional
-    city: "<PAYER_CITY>", // opcional
-    federalUnit: "<PAYER_FED_UNIT>", // opcional
-    zipCode: "<ZIP_CODE>",
+const settings = {
+  // ...
+  initialization: {
+    shipping: {
+      costs: 5, // opcional
+      shippingMode: "<SHIPPING_MODE>",
+      description: "<SHIPPING_DESCRIPTION>", // opcional
+      receiverAddress: {
+        streetName: "<STREET_NAME>",
+        streetNumber: "<STREET_NUMBER>",
+        neighborhood: "<PAYER_NEIGHBORHOOD>", // opcional
+        city: "<PAYER_CITY>", // opcional
+        federalUnit: "<PAYER_FED_UNIT>", // opcional
+        zipCode: "<ZIP_CODE>",
+      },
+    },
   },
 };
 ```
@@ -200,22 +217,27 @@ Quadro que exibe os dados fiscais do pedido, sendo que o mesmo somente será ren
 Segue um exemplo do objeto de _billing_:
 
 ```Javascript
-const billing = {
-  firstName: "<FIRST_NAME>", // opcional
-  lastName: "<LAST_NAME>", // opcional
-  taxRegime: "<TAX_REGIME>", // opcional
-  taxIdentificationNumber: "<TAX_IDENTIFICATION_NUMBER>",
-  identification: { // opcional
-    type: "<IDENTIFICATION_TYPE>",
-    number: "<IDENTIFICATION_NUMBER>",
-  },
-  billingAddress: { // opcional
-    streetName: "<STREET_NAME>",
-    streetNumber: "<STREET_NUMBER>",
-    neighborhood: "<PAYER_NEIGHBORHOOD>", // opcional
-    city: "<CITY>", // opcional
-    federalUnit: "<FED_UNIT>", // opcional
-    zipCode: "<ZIP_CODE>",
+const settings = {
+  // ...
+  initialization: {
+    billing: {
+      firstName: "<FIRST_NAME>", // opcional
+      lastName: "<LAST_NAME>", // opcional
+      taxRegime: "<TAX_REGIME>", // opcional
+      taxIdentificationNumber: "<TAX_IDENTIFICATION_NUMBER>",
+      identification: { // opcional
+        type: "<IDENTIFICATION_TYPE>",
+        number: "<IDENTIFICATION_NUMBER>",
+      },
+      billingAddress: { // opcional
+        streetName: "<STREET_NAME>",
+        streetNumber: "<STREET_NUMBER>",
+        neighborhood: "<PAYER_NEIGHBORHOOD>", // opcional
+        city: "<CITY>", // opcional
+        federalUnit: "<FED_UNIT>", // opcional
+        zipCode: "<ZIP_CODE>",
+      },
+    },
   },
 };
 ```
@@ -231,14 +253,19 @@ No campo `discounts` é possível informar cupons ou outros tipos de desconto qu
 </center>
 
 ```Javascript
-const discounts = {
-  totalDiscountsAmount: 3,
-  discountsList: [
-    {
-      name: "<DISCOUNT_NAME>",
-      value: 3,
+const settings = {
+  // ...
+  initialization: {
+    discounts: {
+      totalDiscountsAmount: 3,
+      discountsList: [
+        {
+          name: "<DISCOUNT_NAME>",
+          value: 3,
+        },
+      ],
     },
-  ],
+  },
 };
 ```
 
@@ -257,7 +284,12 @@ Para garantir uma experiência fluida, sugerimos que você organize os quadros n
 Segue um exemplo de customização no qual o quadro de _shipping_ é exibido na primeira posição:
 
 ```Javascript
-reviewCardsOrder: ['shipping','payment_method', 'billing'],
+const settings = {
+  // ...
+  customization: {
+    reviewCardsOrder: ['shipping','payment_method', 'billing'],
+  },
+};
 ```
 
 ## Callbacks de edição (opcionais)
@@ -269,7 +301,7 @@ Cada quadro da seção de revisão está associado a uma _callback_, que é acio
 | `onClickEditShippingData` | O comprador deseja editar os dados de envio. | Sim (quando dados de _shipping_ forem informados) |
 | `onClickEditBillingData` | O comprador deseja editar os dados de faturamento. | Sim (quando dados de _billing_ forem informados) |
 
-Tais _callbacks_ permitem que o integrador construa um mecanismo de edição de acordo com sua conveniência. Para construir tal mecanismo, o _controller_ retornado ao instanciar o Brick possui um método `update`, que permite a edição desses dados. Consulte a [página de renderização](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering) para mais detalhes sobre o funcionamento do _controller_.
+Tais _callbacks_ permitem que o integrador construa um mecanismo de edição de acordo com sua conveniência. Para construir tal mecanismo, o _controller_ retornado ao instanciar o Brick possui um método `update`, que permite a edição desses dados. Consulte a nossa [documentação técnica]() para mais detalhes sobre o funcionamento do _controller_ e do método de _update_.
 
 ```Javascript
 window.paymentBrickController = await bricksBuilder.create(
@@ -292,9 +324,9 @@ Tem-se também as _callbacks_ opcionais `onRenderNextStep` e `onRenderPreviousSt
 | Callback | Descrição | Obrigatório |
 |---|---|---|
 | `onRenderNextStep` | Indica que o comprador avançou da etapa de preenchimento dos dados no Payment Brick para o fluxo de revisão. | Não |
-| `onRenderPreviousStep` | Indica que o comprador retornou da etapa de revisão para a etapa de preenchimento dos dados. | Não |
+| `onRenderPreviousStep` | Indica que o comprador retornou da etapa de confirmação para a etapa de preenchimento dos dados. | Não |
 
-> Caso tenha optado pela customização que [oculta o botão de pagamento,](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/hide-element) deve-se utilizar a função `nextStep`, disponibilizada pelo controller do Brick para navegar pelo fluxo de pagamento. Por exemplo: `window.paymentBrickController.nextStep();`
+> Caso tenha optado pela customização que [oculta o botão de pagamento,](/developers/pt/docs/checkout-bricks/payment-brick/visual-customizations/hide-element#bookmark_ocultar_botão_de_pagamento) deve-se utilizar a função `nextStep`, disponibilizada pelo controller do Brick para navegar pelo fluxo de pagamento. Por exemplo: `window.paymentBrickController.nextStep();`
 
 ## Processamento do pagamento
 
@@ -302,8 +334,8 @@ Por fim, ao clicar em **Pagar**, é acionada a _callback_ `onSubmit`, a qual seg
 
 As informações de itens e _shipping_ serão retornadas no objeto `formData`, e para dados adicionais, tem-se o campo `additionalData`, que inclui dentre outros dados, os últimos quatro dígitos para compras com cartão. 
 
-Consulte esse [tópico](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/additional-data) especializado caso deseje utilizar o campo `additionalData`. Já para mais detalhes sobre o processo de submissão, consulte a seção de [envio de pagamentos](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission).
+Consulte esse [tópico](/developers/pt/docs/checkout-bricks/payment-brick/advanced-features/additional-data) especializado caso deseje utilizar o campo `additionalData`. Já para mais detalhes sobre o processo de submissão, consulte a seção de [envio de pagamentos](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission).
 
 ## Customização dos textos 
 
-É possível alterar os textos que vêm carregados no Brick. Para isso, no objeto de inicialização do Brick, é preciso enviar o objeto `customization.visual.texts` com os valores de textos desejados. Para mais detalhes, consulte a página de [alterações dos textos](/developers/pt/docs/checkout-bricks/payment-brick/additional-customization/change-texts).
+É possível alterar os textos que vêm carregados no Brick. Para isso, no objeto de inicialização do Brick, é preciso enviar o objeto `customization.visual.texts` com os valores de textos desejados. Para mais detalhes, consulte a página de [alterações dos textos](/developers/pt/docs/checkout-bricks/payment-brick/visual-customizations/change-texts).
