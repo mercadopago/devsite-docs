@@ -53,6 +53,7 @@ public class MainApplication extends Application {
    MPManager.INSTANCE.initialize(this, config);
  }
 }
+```
 ]]]
 
 5. Start using the SDK to process payments:
@@ -120,4 +121,5 @@ paymentFlow.launchPaymentFlowActivity(
  "credit",
  callback
 );
+```
 ]]]
