@@ -8,7 +8,7 @@ Para consultar, recomendamos que você faça o download no formato *.csv* e abra
 
 O relatório lista as transações efetuadas por vendedores associados a um marketplace. Cada linha detalha uma transação independente, abordando valores, taxas, *status* e *status_detail*. Enquanto o campo *status* informa sobre a aprovação do pagamento, o *status_detail* esclarece aspectos adicionais, como razões de rejeição.
 
-Para mais detalhes sobre *status* e *status_detail*, consulte a seção "Parâmetros de resposta" na documentação da [API de Pagamentos](https://www.mercadopago.com.ar/developers/pt/reference/payments/_payments/post).
+Para mais detalhes sobre *status* e *status_detail*, consulte a seção "Parâmetros de resposta" na documentação da [API de Pagamentos](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments/post).
 
 > NOTE
 >

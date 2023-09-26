@@ -10,7 +10,7 @@ To generate the report, first, you need to [create the configurations](#bookmark
 
 ## Generate Access Token
 
-Credentials are unique passwords used to identify an integration in your account. They play a fundamental role in securely capturing payments on online stores and other applications. You can find them in **Application Details > Credentials** within the [Developer Dashboard](https://www.mercadopago.com.uy/developers/panel/app) or in your Mercado Pago account by accessing [Your Business > Settings > Management and Administration > Credentials](https://www.mercadopago.com.uy/settings/account/credentials).
+Credentials are unique passwords used to identify an integration in your account. They play a fundamental role in securely capturing payments on online stores and other applications. You can find them in **Application Details > Credentials** within the [Developer dashboard](https://www.mercadopago.com.uy/developers/panel/app) or in your Mercado Pago account by accessing [Your Business > Settings > Management and administration > Credentials](https://www.mercadopago.com.uy/settings/account/credentials).
 
 There are two different types of credentials:
 * **Test credentials**: Use test credentials to test your integrations. They can be combined with test credit cards to simulate transactions and verify the correct operation of the integrations. It is recommended to use these credentials before moving on to production credentials.
@@ -113,7 +113,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketpla
 ```
 
 #### Response
-```curl
+```json
 {
     "id": {{structure_id}},
     "version": 0,
@@ -159,7 +159,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/notifiers
 ```
 
 #### Response
-```curl
+```json
 {
     "id": {{notifier_id}},
     "type": "email",
@@ -195,7 +195,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/notifiers
 ```
 
 #### Response
-```curl
+```json
 {
     "id": {{notifier_id}},
     "type": "ftp",
@@ -252,7 +252,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketpla
 ```
 
 #### Response
-```curl
+```json
 {
     "id": {{event_id}},
     "type": "frequency",
@@ -307,7 +307,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketpla
 ```
 
 #### Response
-```curl
+```json
 {
     "status_code": 201,
     "request_id": {{statement_id}},
@@ -319,8 +319,8 @@ You can find descriptions of the fields in the curls in the table below.
 
 | Field                        | Description                                                                                                                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| user_description (required) | Desired description. Maximum length: 50 characters.                                                                                                                                                                                 |
-| created_by (required)       | Request creator. Currently, it can only receive the value _automatic_.                                                                                                                                                                |
-| Origin (required)          | This field contains information about the period you want to include in the report.<br>- `type`: The only possible value is `date_range`, as you will need to indicate the period to be queried.<br>- `date_start`: Indicates the start of the period you want to query in the format: **yyyy-MM-dd HH:mm:ss.SSS**.<br>- `date_end`: Indicates the end of the period you want to query in the format: **yyyy-MM-dd HH:mm:ss.SSS**. |
-| structure_id (required)    | Field to assign the structure with which the report will be generated. You must fill it with the value obtained for this same field in the response to the structure creation.                                                        |
-| notifiers_id (required)    | Field to assign the method by which you want to receive notifications. You must fill it with the identification obtained in the response to the creation of notifications.                                                            |
+| `user_description` (required) | Desired description. Maximum length: 50 characters.                                                                                                                                                                                 |
+| `created_by` (required)       | Request creator. Currently, it can only receive the value _automatic_.                                                                                                                                                                |
+| `Origin` (required)          | This field contains information about the period you want to include in the report.<br>- `type`: The only possible value is `date_range`, as you will need to indicate the period to be queried.<br>- `date_start`: Indicates the start of the period you want to query in the format: **yyyy-MM-dd HH:mm:ss.SSS**.<br>- `date_end`: Indicates the end of the period you want to query in the format: **yyyy-MM-dd HH:mm:ss.SSS**. |
+| `structure_id` (required)    | Field to assign the structure with which the report will be generated. You must fill it with the value obtained for this same field in the response to the structure creation.                                                        |
+| `notifiers_id` (required)    | Field to assign the method by which you want to receive notifications. You must fill it with the identification obtained in the response to the creation of notifications.                                                            |
