@@ -14,7 +14,9 @@ La API de Integraciones Point te permite conectar tus puntos de venta (PDV) al e
 > - Point Plus (POS)
 > - Point Smart
 >
-> Puedes adquirir tu dispositivo Point desde nuestra [tienda oficial](https://www.mercadopago.com.ar/point)
+> Puedes adquirir tu dispositivo Point desde nuestra [tienda oficial](https://www.mercadopago.com.ar/point).
+>
+> Además, ten en cuenta que sólo permite tarjetas, contactless y SWIFT como medios de pago.
 
 ------------
 
@@ -26,7 +28,9 @@ La API de Integraciones Point te permite conectar tus puntos de venta (PDV) al e
 > - Point Pro 1
 > - Point Pro 2
 >
-> Puedes adquirir tu dispositivo Point desde nuestra [tienda oficial](https://www.mercadopago.com.br/point)
+> Puedes adquirir tu dispositivo Point desde nuestra [tienda oficial](https://www.mercadopago.com.br/point).
+>
+> Además, ten en cuenta que sólo permite tarjetas, contactless y SWIFT como medios de pago.
 
 ------------
 
@@ -37,17 +41,19 @@ La API de Integraciones Point te permite conectar tus puntos de venta (PDV) al e
 >
 > - Point Smart
 >
-> Puedes adquirir tu dispositivo Point desde nuestra [tienda oficial](https://www.mercadopago.com.br/point)
+> Puedes adquirir tu dispositivo Point desde nuestra [tienda oficial](https://www.mercadopago.com.br/point).
+>
+> Además, ten en cuenta que sólo permite tarjetas, contactless y SWIFT como medios de pago.
 
 ------------
 
 
 ### Conoce sus ventajas
 
-* **Es segura**, ya que todas las peticiones se hacen a través de HTTPS.
-* **Fácil de usar**, solo necesitas tus credenciales de acceso para utilizarla.
-* **Es ágil**, ya que te permite administrar tus órdenes de pago desde tu PDV.
-* **Es eficiente**, ya que disminuye la posibilidad de errores al momento de cobrar.
+* **Seguridad**: todas las peticiones se realizan a través de HTTPS y se autentican mediante OAUTH, asegurando la protección de tus datos y transacciones.
+* **Facilidad de uso**: sólo necesitas tus credenciales de acceso para comenzar a utilizar nuestra plataforma sin complicaciones ni demoras. 
+* **Agilidad en la gestión**: administra tus órdenes de pago directamente desde tu Punto de Venta, agiliza tus procesos y mejora la experiencia del cliente.
+* **Eficiencia**: Nuestra integración reduce la probabilidad de errores al momento de cobrar, garantizando una operación fluida y segura. Además, te permite automatizar tareas para optimizar tu rendimiento y resultados.
 
 ### En este diagrama de flujo te contamos cómo funciona la API:
 

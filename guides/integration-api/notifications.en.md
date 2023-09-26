@@ -1,8 +1,8 @@
 # Configure notifications
 
-If you wish, you can receive notifications from Webhooks. These are sent from our Integrations API to your receiving system through an `HTTP POST` call in relation to the status changes presented by a payment intent.
+If you want, you can receive Webhook notifications. These are sent from our Integrations API to your receiving system through an `HTTP POST` call, and alert you about all changes related to the states of payment intents.
 
-Follow the instructions shown in [Webhooks documentation](/developers/en/docs/mp-point/additional-content/your-integrations/notifications/webhooks) to integrate these notifications.
+To integrate them, follow the instructions in the [Webhook notifications documentation](/developers/en/docs/mp-point/additional-content/your-integrations/notifications/webhooks). You will need to activate the **Point Integrations** events to receive these updates.
 
 > WARNING
 >

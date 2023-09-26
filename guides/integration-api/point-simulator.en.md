@@ -1,40 +1,45 @@
 # Point Simulator
 
-This tool allows you to test your integration safely as if you were in your store with a physical device.
-With this simulator, you will be able to create a payment intent and process it from the virtual device, simulating the possible statuses that a payment can present.
+The Point Simulator is a tool that allows you to interact with various endpoints of our API to integrate Point of Sale devices with our system. Its main objective is to help you understand the flow of creating and canceling a payment attempt.
 
-The simulator has two modes of usage:
+Please note that this tool is not an exact replica of the device, but rather an educational tool designed to familiarize you with our API.
 
-* **PDV mode**: simulates the integration of a complete system (device and POS) with our Integrations API. Access the [PDV mode simulator](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true).
-* **Device mode**: simulates a virtual Point device so that you can test your integration from HTTP requests. Access the [Device Mode Simulator](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true).
+The simulator has two modes of use:
 
-> To use the simulator, it is not necessary to run the [Change the operation mode](/developers/en/reference/integrations_api/_point_integration-api_devices_device-id/patch) service, since the simulator works by default in PDV mode.
+* **PDV mode**: simulates the integration of a complete system (device and Point of Sale) with our Integration API. Access the [PDV mode simulator](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true).
+
+ > To use the simulator, it is not necessary to [change the operation mode](/developers/en/reference/integrations_api/_point_integration-api_devices_device-id/patch) as the simulator works by default in PDV mode.
+
+* **Device mode**: simulates a virtual Point of Sale device so you can test your integration using HTTP requests. Access the [device mode simulator](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true).
+
 
 ## How to use the simulator
 
-### 1. Configure your credentials
+### 1. Generate the test environment
 
-> WARNING
->
-> Attention
->
-> The simulator only works with [test accounts.](/developers/en/docs/mp-point/additional-content/your-integrations/test/accounts)
+To start testing integrations and payment flows with the Point Simulator, you will need to generate [test users](developers/en/docs/mp-point/additional-content/your-integrations/test/accounts) and access their production credentials.
 
-When using the simulator for the first time, you will need to enter your keys and select one of your available devices.
+If you prefer, you can also create test users using the following command:
 
-* **PDV mode:** you must enter your test `access-token` and the simulator will assign you a virtual device.
+``` curl
+curl -X POST \
+-H "Content-Type: application/json" \
+-H 'Authorization: Bearer ${TEST_ACCESS_TOKEN}' \
+"https://api.mercadopago.com/users/test" \
+-d '{"site_id":"MLM","description" : "a description"}'
+```
 
-* **Device mode:** you must enter your test `access-token` and your device id obtained when [listing your devices](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/integration-api/create-payment-intent#bookmark_get_the_list_of_your_available_devices).
+### 2. Configure your credentials
 
-> WARNING
->
-> Important
-> 
-> Remember that to use the simulator you must configure a test `access-token`(`TEST-XXXXX-XXXXX-XXXXXXX`) and you can get it in your [integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), option **My credentials > Test credentials**.
-> To query a payment made by the simulator through the [payments API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get), you must use the test `access-token` (the same one used in the simulator).
-> If you are going to use the device mode of the simulator, remember that you must put `X-Test-Scope:sandbox` in the header to ensure that the payment attempt reaches the simulator device.
+When using the simulator for the first time, you will need to enter [your credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). To obtain them, access [Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), option **My credentials > Test credentials**.
 
-### 2. Simulate a payment intent
+In addition, you will need to select one of your available devices.
+
+* **PDV mode**: you must enter your test `access-token` (`TEST-XXXXX-XXXXX-XXXXXXX`) and the simulator will assign you a virtual device.
+
+* **Device mode**: you must enter your test `access-token` (`TEST-XXXXX-XXXXX-XXXXXXX`) and the device ID obtained when [listing your devices](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/integration-api/create-payment-intent#bookmark_obtén_el_listado_de_tus_dispositivos_disponibles).
+
+### 3. Simulate a payment intent
 
 We have prepared different scenarios that allow you to simulate a real experience. In order to do this, you must select the amount according to the status you want to obtain:
 
@@ -45,16 +50,30 @@ We have prepared different scenarios that allow you to simulate a real experienc
 | Error | $1300 |
 | Successful | Any other value different from the previous ones |
 
-### 3. Get the payment intent from the device
+> WARNING
+>
+> Important
+>
+> If you use the Simulator in device mode, remember to use `X-Test-Scope:sandbox` in the header to ensure that the payment attempt reaches the simulator device.
 
-Once the payment intent has been created, you must click on the green button of the virtual device to obtain the created payment intent. Once found, you can verify that the amount initially entered matches the one shown on the device screen.
+### 4. Get the payment intent from the device
 
-### 4. Swipe the card and process the payment
+Once the payment intent has been created, you must click on the green button of the virtual device to obtain the created payment intent. 
+Once found, you can verify that the amount initially entered matches the one shown on the device screen.
 
-If the previous step was successful, you can click on the animation of the card, which represents the card swipe in the device. Processing will begin immediately and the device will display the corresponding result.
+### 5. Swipe the card and process the payment
 
-### 5. Receive the notification
+If the previous step was successful, you can click on the animation of the card, which represents the card swipe in the device. Processing will begin immediately and the device will display the result.
 
-If you followed the configuration steps for the [Webhooks notifications](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications), it is time for you to review your records. There, you will see that the notification of the transaction status was sent.
+> WARNING
+>
+> Important
+>
+> To query a payment made by the simulator through the [Payments API](/developers/en/reference/payments/_payments_id/get), you must use the same test `access-token` that you use in the Simulator.
 
-> The simulator will allow you to make test payments. You can check out all the information corresponding in the section [Payment API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get).
+
+### 6. Receive the notification
+
+> Notifications for test payments made through the Simulator will be sent through the same channel you defined as the notification method when configuring your integration. Refer to [Configure notifications](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) if you have any doubts.
+
+Once the payment intent is processed, go to your notification log. There you will see that the transaction status notification has been sent and you can check the details.

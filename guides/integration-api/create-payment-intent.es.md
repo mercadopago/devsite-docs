@@ -4,7 +4,7 @@ Sigue los pasos a continuación para comenzar a procesar tus pagos con Punto de 
 
 ## Obtén el listado de tus dispositivos disponibles
 
-Antes de crear una intención de pago, debes obtener los dispositivos Point asociados a tu cuenta. Puedes hacerlo a través del siguiente llamado:
+Antes de crear una intención de pago, debes [obtener los dispositivos Point](/developers/es/reference/integrations_api/_point_integration-api_devices/get) asociados a tu cuenta. Puedes hacerlo a través del siguiente llamado:
 
 ``` curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/devices?offset=0&limit=50' \ 
@@ -59,7 +59,7 @@ Recibirás una respuesta como esta:
 ## Crea la intención de pago
 Una intención de pago es un llamado que contiene los detalles de la transacción a realizarse, y que debe ser creada para poder iniciar un cobro. Se trata de un intento que, de ser exitoso, devolverá un `id` del pago y su estado.
 
-Puedes crear una intención de pago y asignarla a tu dispositivo Point de esta manera:
+Puedes [crear una intención de pago](/developers/es/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents/post) y asignarla a tu dispositivo Point de esta manera:
 
 ----[mla]----
 ```curl
@@ -188,27 +188,18 @@ Como respuesta, recibirás algo similar a esto:
 
 ------------
 
-## Cancela una intención de pago
+Ten en cuenta que las intenciones de pago son la base para el procesamientos de pagos con dispositivos Point. Por este motivo, es importante que registres y guardes los datos obtenidos en su creación, especialmente su `id`.
 
-Puedes cancelar una intención de pago asignada a un dispositivo Point de la siguiente manera:
+> NOTE
+>
+> Recomendación
+>
+> Puedes utilizar el [Simulador Point](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/point-simulator) para testear tu integración y la creación de intenciones de pago de manera segura. 
 
-
-``` curl
-curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents/:paymentIntentId' \
---header 'Authorization: Bearer ${ACCESS_TOKEN}' \
-```
-
-Obtendrás esta respuesta:
-
-``` json
-{
-  "id": "7d8c70b6-2ac8-4c57-a441-c319088ca3ca"
-}
-```
 
 ## Procesa tu intención de pago
 
-Una vez creada la intención de pago, puedes obtenerla desde tu dispositivo Point oprimiendo el botón para iniciar cobro (en caso de Point Plus y  Point Pro 2 el **botón verde** y, en el caso de Point Smart, el **botón digital “Cobrar ahora”**).
+Una vez creada la intención de pago, puedes obtenerla desde tu dispositivo Point oprimiendo el botón para iniciar cobro (en caso de Point Plus y  Point Pro 2, el **botón verde**, y en el caso de Point Smart, el **botón digital “Cobrar ahora”**).
 
 Luego, continúa con los pasos que se muestran en la pantalla para completar el pago.
 
@@ -221,9 +212,9 @@ Luego, continúa con los pasos que se muestran en la pantalla para completar el 
 
 ## Consulta el estado de tu intención de pago
 
-Puedes consultar el estado actual de tu intención de pago utilizando el `id` que recibiste en la respuesta al momento de crearla.
+Si deseas saber el estado de una intención de pago en particular, puedes [consultar el estado actual de tu intención de pago](/developers/es/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents/post) utilizando el `id` que recibiste en la respuesta al momento de crearla.
 
-Recuerda que `id` y estado de la intención de pago son diferentes a `id` y estado del pago. En este caso, se trata de consultar los detalles de un intento. Si quieres consultar la información correspondiente al pago, accede a la sección [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) en Referencia de API. 
+Recuerda que `id` y estado de la **intención de pago** son diferentes a `id` y estado del pago. En este caso, se trata de consultar los detalles de un intento. Si quieres consultar la información correspondiente al pago, accede a la sección [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) en Referencia de API. 
 
 > WARNING
 >
@@ -305,6 +296,33 @@ Recibirás una respuesta similar a la siguiente:
 >
 > `Confirmation_required` es un estado final y no cambiará una vez recibido. Si efectivamente lo recibes en el estado de la intención, deberás confirmar en tu dispositivo cuál es el estado del pago que se corresponde con el  `payment_id` recibido en la respuesta. No entregues tu producto o servicio hasta verificarlo.
 
-
 Puedes consultar los estados posibles de una intención de pago accediendo a nuestro [Glosario](/developers/es/docs/mp-point/integration-api/glossary).
+
+Si, en cambio, lo que deseas es consultar un **listado de intenciones de pago y sus estados finales**, puedes hacerlo a través del endpoint [Obtener lista de intenciones de pago](/developers/es/reference/integrations_api/_point_integration-api_payment-intents_events/get). Ten en cuenta que deberás asignar a la consulta un rango de fechas, que no podrá exceder los 30 días.
+
+Este llamado puede ser útil, también, en caso de desconocer el `payment_intent_id` de una intención de pago en particular.
+
+
+## Cancela una intención de pago
+
+Si lo deseas, puedes cancelar una intención de pago asignada a un dispositivo Point. Para ello, tienes dos posibilidades:
+
+* Si el estado de la intención es `opened` y todavía no fue enviada a la terminal, puedes [cancelarlo vía API](/developers/es/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) realizando el siguiente llamado:
+
+
+``` curl
+curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents/:paymentIntentId' \
+--header 'Authorization: Bearer ${ACCESS_TOKEN}' \
+```
+
+El llamado devolverá la siguiente respuesta:
+
+``` json
+{
+  "id": "7d8c70b6-2ac8-4c57-a441-c319088ca3ca"
+}
+```
+
+
+* Si, en cambio, el estado de la intención de pago es  `on_terminal`, deberás realizar la cancelación directamente desde el dispositivo Point.
 

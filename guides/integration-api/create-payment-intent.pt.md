@@ -4,7 +4,7 @@ Para começar a processar seus pagamentos com o ponto de venda (PDV), siga estas
 
 ## Obtenha a lista de seus dispositivos disponíveis
 
-Antes de criar uma intenção de pagamento, você deve obter os dispositivos Point associados à sua conta. Você pode fazeê-lo através da seguinte chamada:
+Antes de criar uma intenção de pagamento, você deve [obter os dispositivos Point](/developers/pt/reference/integrations_api/_point_integration-api_devices/get) associados à sua conta. Você pode fazeê-lo através da seguinte chamada:
 
 ``` curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/devices?offset=0&limit=50' \ 
@@ -55,10 +55,10 @@ Você receberá uma resposta como esta:
 ```
 
 
-## Criar uma intenção de pagamento
+## Crie uma intenção de pagamento
 Uma intenção de pagamento é uma chamada que contém os detalhes da transação a ser realizada, e que deve ser criada para inciar um pagamento. Esta é uma tentativa que, se bem-sucedida, retornará um `id` do pagamento e seu `status`.
 
-Você pode criar uma intenção de pagamento e atribuí-la ao seu dispositivo Point desta forma:
+Você pode [criar uma intenção de pagamento](/developers/pt/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents/post) e atribuí-la ao seu dispositivo Point desta forma:
 
 ----[mla]----
 ```curl
@@ -185,22 +185,14 @@ Em resposta, você receberá algo semelhante a isso:
 
 ------------
 
-## Cancelar uma intenção de pagamento
+Tenha em mente que as intenções de pagamento são a base para o processamento de pagamentos com dispositivos Point. Por esse motivo, é importante que você registre e salve os dados obtidos durante sua criação, especialmente o `id`.
 
-Você pode cancelar uma intenção de pagamento atribuída a um dispositivo Point da seguinte forma:
+> NOTA
+>
+> Recomendação
+>
+> Você pode usar o [Simulador Point](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/point-simulator) para testar sua integração e a criação de intenções de pagamento com segurança.
 
-``` curl
-curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents/:paymentIntentId' \
---header 'Authorization: Bearer ${ACCESS_TOKEN}' \
-```
-
-Você receberá esta resposta:
-
-``` json
-{
- "id": "7d8c70b6-2ac8-4c57-a441-c319088ca3ca"
-}
-```
 
 ## Processe sua intenção de pagamento
 
@@ -215,7 +207,7 @@ Uma vez que a intenção de pagamento é criada, você pode obtê-la de seu disp
 
 ## Verifique o status da sua intenção de pagamento
 
-Você pode verificar o status atual de sua intenção de pagamento usando o `id` que você recebeu na resposta ao criá-la.
+Se você deseja saber o status de uma intenção de pagamento específica, você pode [verificar o status atual da sua intenção de pagamento](/developers/pt/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents/post) usando o `id` que você recebeu na resposta ao criá-la.
 
 Lembre-se que o `id` e status da intenção de pagamento são diferentes do `id` e status do pagamento. Neste caso, trata-se de consultar os detalhes de uma tentativa. Você pode consultar todas as informações correspondentes ao pagamento na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) de Referência da API.
 
@@ -302,3 +294,29 @@ A resposta será semelhante a isso:
 
 Você pode verificar os possíveis estados de uma intenção de pagamento acessando nosso [Glossário](/developers/pt/docs/mp-point/integration-api/glossary).
 
+Se, por outro lado, se você deseja consultar uma **lista de intenções de pagamento e seus estados finais**, você pode fazer isso através do endpoint [Obter lista de intenções de pagamento](/developers/pt/reference/integrations_api/_point_integration-api_payment-intents_events/get). Tenha em mente que você precisará atribuir à consulta um intervalo de datas, que não pode exceder 30 dias.
+
+Este chamado também pode ser útil caso você não saiba o `payment_intent_id` de uma intenção de pagamento específica.
+
+
+## Cancelar uma intenção de pagamento
+
+Se desejar, você pode cancelar uma intenção de pagamento atribuída a um dispositivo Point. Para isso, você tem duas opções:
+
+* Se o estado da intenção for `opened` e ainda não tiver sido enviada para o terminal, você pode [cancelá-la via API](/developers/pt/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) fazendo a seguinte chamada:
+
+
+``` curl
+curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents/:paymentIntentId' \
+--header 'Authorization: Bearer ${ACCESS_TOKEN}' \
+```
+
+Você receberá esta resposta:
+
+``` json
+{
+ "id": "7d8c70b6-2ac8-4c57-a441-c319088ca3ca"
+}
+```
+
+* Se, por outro lado, o estado da intenção de pagamento for `on_terminal`, você deverá cancelá-la diretamente no dispositivo Point.

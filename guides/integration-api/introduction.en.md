@@ -14,7 +14,9 @@ The Point Integrations API allows you to connect your points of sale (POS) to th
 > - Point Plus (POS)
 > - Point Smart
 >
-> You can purchase your Point device from our [official store](https://www.mercadopago.com.ar/point)
+> You can purchase your Point device from our [official store](https://www.mercadopago.com.ar/point).
+>
+> Additionally, please note that it only allows cards, contactless, and SWIFT as payment methods.
 
 ------------
 
@@ -26,7 +28,9 @@ The Point Integrations API allows you to connect your points of sale (POS) to th
 > - Point Pro 1
 > - Point Pro 2
 >
-> You can purchase your Point device from our [official store](https://www.mercadopago.com.br/point)
+> You can purchase your Point device from our [official store](https://www.mercadopago.com.br/point).
+>
+> Additionally, please note that it only allows cards, contactless, and SWIFT as payment methods.
 
 ------------
 
@@ -37,7 +41,9 @@ The Point Integrations API allows you to connect your points of sale (POS) to th
 >
 > - Point Smart
 >
-> You can purchase your Point device from our [official store](https://www.mercadopago.com.br/point)
+> You can purchase your Point device from our [official store](https://www.mercadopago.com.br/point).
+>
+> Additionally, please note that it only allows cards, contactless, and SWIFT as payment methods.
 
 ------------
 
@@ -45,10 +51,10 @@ The Point Integrations API allows you to connect your points of sale (POS) to th
 
 ### Learn about its advantages
 
-* **It’s safe**, as all requests are made through HTTPS.
-* **Easy to use**, you only need your access credentials to use it.
-* **It’s agile**, as it allows you to manage your payment orders from your POS.
-* **It’s efficient**, as it reduces the possibility of errors when charging.
+* **Security**: All requests are made through HTTPS and authenticated via OAUTH, ensuring the protection of your data and transactions.
+* **Ease of use**: You only need your access credentials to start using our platform without complications or delays.
+* **Management agility**: Manage your payment orders directly from your Point of Sale, streamline your processes, and enhance the customer experience.
+* **Efficiency**: Our integration reduces the probability of errors when charging, guaranteeing a smooth and secure operation. Additionally, it allows you to automate tasks to optimize your performance and results.
 
 ### This flowchart explains how the API works:
 
