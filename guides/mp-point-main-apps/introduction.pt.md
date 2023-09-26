@@ -8,7 +8,7 @@ A [Point Smart](/developers/pt/docs/mp-point/landing) é um dispositivo de pagam
 
 </center>
 
-## Os mais apps
+## Os main apps
 
 Main apps são aplicativos de gestão de negócio que podem ser integrados à [Point Smart](/developers/pt/docs/mp-point/landing). Eles se transformam na interface principal, e a pessoa vendedora utiliza as funcionalidades da maquininha com o Mercado Pago processando os pagamentos.  
 
