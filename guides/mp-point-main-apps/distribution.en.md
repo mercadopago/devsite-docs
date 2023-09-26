@@ -9,7 +9,7 @@ For the distribution phase of your solution, follow these steps:
 
 > **The Mercado Pago support team is responsible for facilitating the following operations:**
 > <br><br>
-> Delivery of new versions.
-> Pre-configuration of devices.
-> UX and security validations.
-> Distribution of native APKs.
+> - Delivery of new versions. <br>
+> - Pre-configuration of devices. <br>
+> - UX and security validations. <br>
+> - Distribution of native APKs. <br>

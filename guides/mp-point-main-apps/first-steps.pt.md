@@ -40,7 +40,7 @@ class MainApplication : Application() {
    }
 }
 ```
-```javascript
+```java
 public class MainApplication extends Application {
 
  @Override
@@ -54,7 +54,7 @@ public class MainApplication extends Application {
  }
 }
 ```
-]]]
+]]] 
 
 5. Comece a usar o SDK para processar pagamentos:
 
@@ -89,7 +89,7 @@ paymentFlow.launchPaymentFlowActivity(
    }
 }
 ```
-```javascript
+```java
 PaymentFlow paymentFlow = MPManager.INSTANCE.getPaymentFlow();
 
 HashMap<String, String> metadata = new HashMap<>();

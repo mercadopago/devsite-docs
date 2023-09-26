@@ -4,7 +4,7 @@ Para garantizar la seguridad y estabilidad del ecosistema de integración, consi
 
 ## Flujo de OAuth
 
-Para obtener información de los pagos, de la persona usuaria o ejecutar una operación sobre la cuenta de quien vende, como cobros o devoluciones, genera un token por medio de [flujo de OAuth](/developers/pt/docs/main-apps/additional-content/security/oauth/introduction)y usa la [API pública de Mercado Pago](/developers/pt/reference).
+Para obtener información de los pagos, de la persona usuaria o ejecutar una operación sobre la cuenta de quien vende, como cobros o devoluciones, genera un token por medio de [flujo de OAuth](/developers/pt/docs/main-apps/additional-content/security/oauth/introduction) y usa la [API pública de Mercado Pago](/developers/pt/reference).
 
 ## Versión del Ecosistema
 

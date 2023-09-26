@@ -9,10 +9,7 @@ Para la fase de distribución de tu solución, sigue estas etapas:
 
 > **El equipo de soporte de Mercado Pago es responsable de facilitar las siguientes operaciones:**
 > <br><br>
-> Entrega de nuevas versiones.
-> <br>
-> Pre-configuración de los dispositivos.
-> <br>
-> Validaciones de UX y Seguridad.
-> <br>
-> Distribución de los APKs nativos.
+> - Entrega de nuevas versiones. <br>
+> - Pre-configuración de los dispositivos. <br>
+> - Validaciones de UX y Seguridad. <br>
+> - Distribución de los APKs nativos.
