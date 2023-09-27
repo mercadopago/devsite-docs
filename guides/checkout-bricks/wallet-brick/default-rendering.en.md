@@ -126,7 +126,7 @@ const onReady = async () => {
 >
 > Whenever the user leaves the screen where some Brick is displayed, it is necessary to destroy the current instance with the command `window.walletBrickController.unmount()`. When entering again, a new instance must be generated.
 
-This [preference onSubmit](/developers/en/docs/checkout-bricks/wallet-brick/configure-integration/preference-onsubmit) creation flow is designed for sellers who have one-click flows, if you want, you can also send preference on startup. See more information in the [Preference on startup](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/preference-startup) section.
+This preference _onSubmit_ creation flow is designed for sellers who have one-click flows, if you want, you can also send preference on startup. See more information in the [Preference on startup](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/preference-startup) section.
 
 ## Render the Brick
 
@@ -166,7 +166,7 @@ The result of rendering the Brick should blook like the image below, presenting 
 
 ## Enable payment with Mercado Pago
 
-To use a payment method (`paymentMethods`) of the "mercadoPago" type, a preference must be sent during Brick initialization, replacing the value `&ltPREFERENCE_ID&gt` by the ID of the preference created.
+To use a payment method (`paymentMethods`) of the "mercadoPago" type, a preference must be sent during Brick initialization, replacing the value `&lt;PREFERENCE_ID&gt;` by the ID of the preference created.
 
 To create a preference in your backend, add the [Mercado Pago SDK](/developers/en/docs/sdks-library/landing) and the necessary [credentials](/developers/en/guides/additional-content/your-integrations/credentials) to your project to enable the preference usage:
 
