@@ -1,4 +1,4 @@
-# Simulador Point
+# Prueba tu integración con el Simulador Point
 
 El Simulador Point es una herramienta que te brinda la oportunidad de interactuar con diversos endpoints de nuestra API para integrar los Puntos de Venta con los dispositivos. Su objetivo principal es que comprendas el flujo de creación y cancelación de un intento de pago. 
 

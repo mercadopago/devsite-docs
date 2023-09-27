@@ -1,4 +1,4 @@
-# Point Simulator
+# Test your integration with the Point Simulator
 
 The Point Simulator is a tool that allows you to interact with various endpoints of our API to integrate Point of Sale devices with our system. Its main objective is to help you understand the flow of creating and canceling a payment attempt.
 
