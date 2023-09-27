@@ -1773,7 +1773,7 @@ paths:
                           por: Identificador de pagador gerado pelo Mercado Pago.
                       email:
                         type: string
-                        example: afriend@gmail.com
+                        example: test_user_80507629@testuser.com
                         description: Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.
                         x-description-i18n:
                           eng: Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.
@@ -1789,7 +1789,7 @@ paths:
                         properties:
                           type:
                             type: string
-                            example: DNI
+                            example: CPF
                             description: Refers to the type of identification. It can be one of the following types.
                             x-description-i18n:
                               eng: Refers to the type of identification. It can be one of the following types.
@@ -1808,7 +1808,7 @@ paths:
                               - CI -- Identity Card, Uruguay.
                           number:
                             type: string
-                            example: 12345678
+                            example: 19119119100
                             description: The number refers to the user’s identifier. If it is a CPF, for example, it will have 11 numbers.
                             x-description-i18n:
                               eng: The number refers to the user’s identifier. If it is a CPF, for example, it will have 11 numbers.
@@ -3368,7 +3368,7 @@ paths:
                                   por: Identificador de pagador gerado pelo Mercado Pago.
                               email:
                                 type: string
-                                example: afriend@gmail.com
+                                example: test_user_80507629@testuser.com
                                 description: Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.
                                 x-description-i18n:
                                   eng: Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.
@@ -3384,7 +3384,7 @@ paths:
                                 properties:
                                   type:
                                     type: string
-                                    example: DNI
+                                    example: CPF
                                     description: Refers to the type of identification. It can be one of the following types.
                                     x-description-i18n:
                                       eng: Refers to the type of identification. It can be one of the following types.
@@ -3403,7 +3403,7 @@ paths:
                                       - CI -- Identity Card, Uruguay.
                                   number:
                                     type: string
-                                    example: 12345678
+                                    example: 19119119100
                                     description: The number refers to the user’s identifier. If it is a CPF, for example, it will have 11 numbers.
                                     x-description-i18n:
                                       eng: The number refers to the user’s identifier. If it is a CPF, for example, it will have 11 numbers.

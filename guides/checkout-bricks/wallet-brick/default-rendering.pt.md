@@ -126,7 +126,7 @@ const onReady = async () => {
 >
 > Sempre que o usuário sair da tela onde algum Brick é exibido, é necessário destruir a instância atual com o comando `window.walletBrickController.unmount()`. Ao entrar novamente, uma nova instância deve ser gerada.
 
-Esse fluxo de criação de [preferência no onSubmit](/developers/pt/docs/checkout-bricks/wallet-brick/configure-integration/preference-onsubmit) é pensado para vendedores que tem fluxos de one click, caso queira, também pode enviar a preferência na inicialização. Veja mais informações na seção de [Preferência na inicialização](/developers/pt/docs/checkout-bricks/wallet-brick/additional-customization/preference-startup).
+Esse fluxo de criação de preferência no _onSubmit_ é pensado para vendedores que tem fluxos de one click, caso queira, também pode enviar a preferência na inicialização. Veja mais informações na seção de [Preferência na inicialização](/developers/pt/docs/checkout-bricks/wallet-brick/additional-customization/preference-startup).
 
 ## Renderizar o Brick
 
@@ -166,7 +166,7 @@ O resultado de renderizar o Brick deve ser como na imagem abaixo, apresentando u
 
 ## Habilitar pagamento com Mercado Pago
 
-Para utilizar o método de pagamento (`paymentMethods`) do tipo "mercadoPago" é preciso enviar uma preferência durante a inicialização do Brick, substituindo o valor `&ltPREFERENCE_ID&gt`  pelo ID da preferência criada. 
+Para utilizar o método de pagamento (`paymentMethods`) do tipo "mercadoPago" é preciso enviar uma preferência durante a inicialização do Brick, substituindo o valor `&lt;PREFERENCE_ID&gt;` pelo ID da preferência criada. 
 
 Para criar uma preferência em seu backend, adicione o [SDK do Mercado Pago](/developers/pt/docs/sdks-library/landing) e as [credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) necessárias ao seu projeto para habilitar o uso de preferências.
 
