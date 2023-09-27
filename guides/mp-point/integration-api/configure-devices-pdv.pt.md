@@ -44,7 +44,7 @@ Para fazer isso, você pode acessar o [site do Mercado Pago](https://www.mercado
 >
 > Você também pode configurar a loja e o PDV diretamente do dispositivo Point, uma vez que esteja vinculado. O próprio dispositivo irá guiá-lo se você escolher configurá-lo dessa maneira.
 
-### Ative o modo PDV no dispositivo Point
+## Ative o modo PDV no dispositivo Point
 
 Para integrar o dispositivo Point com nossa API, é necessário ativar o modo Ponto de Venda (PDV).
 

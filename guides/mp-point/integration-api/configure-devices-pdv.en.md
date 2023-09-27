@@ -44,7 +44,7 @@ To do this, you can access the [Mercado Pago site](https://www.mercadopago[FAKER
 >
 > You can also configure the store and POS directly from the Point device once it is linked. The device itself will guide you if you choose to configure it this way.
 
-### Activate the POS mode on your Point device
+## Activate the POS mode on your Point device
 
 To integrate the Point device with our API, it is necessary to activate the Point of Sale (POS) operating mode.
 

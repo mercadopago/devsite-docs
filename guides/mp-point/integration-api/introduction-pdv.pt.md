@@ -48,7 +48,7 @@ A API de integrações Point permite que você conecte seus pontos de venda (PDV
 
 ### Conheça suas vantagens
 
-* **Segurança**: todas as solicitações são feitas através de HTTPS e autenticadas por OAUTH, garantindo a proteção de seus dados e transações.
+* **Segurança**: todas as solicitações são feitas através de HTTPS e autenticadas por OAuth, garantindo a proteção de seus dados e transações.
 * **Facilidade de uso**: você só precisa das suas credenciais de acesso para começar a usar nossa plataforma sem complicações ou atrasos.
 * **Agilidade na gestão**: gerencie seus pedidos de pagamento diretamente do seu Ponto de Venda, agilize seus processos e melhore a experiência do cliente.
 * **Eficiência**: Nossa integração reduz a probabilidade de erros ao cobrar, garantindo uma operação fluida e segura. Além disso, permite automatizar tarefas para otimizar seu desempenho e resultados
