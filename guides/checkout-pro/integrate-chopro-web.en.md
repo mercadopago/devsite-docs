@@ -10,7 +10,7 @@ Then, you will need to install the Mercado Pago frontend SDK in your project to 
 
 The installation is basically done in **two steps**:
 
-1. [Add the Mercado Pago SDK to the project with your configured credentials](/developers/en/docs/checkout-pro/integrate-checkout-pro/web#bookmark_agregar_el_sdk_de_mercado_pago_al_proyecto)
+1. [Add the Mercado Pago SDK to the project with your configured credentials](/developers/en/docs/checkout-pro/integrate-checkout-pro/web#bookmark_add_the_mercado_pago_sdk_to_the_project_with_your_configured_credentials)
 2. [Start the checkout from the previously generated preference](/developers/en/docs/checkout-pro/integrate-checkout-pro/web#bookmark_iniciar_el_checkout_desde_la_preferencia)
 
 > CLIENT_SIDE
