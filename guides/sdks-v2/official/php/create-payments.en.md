@@ -1,60 +1,17 @@
 # Create payment
 
-You can create and add payment information using the SDK below. For details on request parameters, check the [Create payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post) API.
+You can create and add payment information using the SDK below. For details on request parameters, check the [Create payment](/developers/en/reference/payments/_payments/post) API.
 
 [[[
 ```php
 <?php
-  $item = [
-    "id" => "PR0001",
-    "title" => "Point Mini",
-    "description" => "Producto Point para cobros con tarjetas mediante bluetooth",
-    "picture_url" => "https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png",
-    "category_id" => "electronics",
-    "quantity" => 1,
-    "unit_price" => "58.8"
-  ];
-
-  $payer = [
-    "entity_type" => "individual",
-    "type" => "customer",
-    "first_name" => "Test",
-    "last_name" => "Test",
-    "email" => "test_user_123@testuser.com",
-  ];
-
-  $receiverAddress = [
-    "zip_code" => "12312-123",
-    "state_name" => "Rio de Janeiro",
-    "city_name" => "Buzios",
-    "street_name" => "Av das Nacoes Unidas",
-    "street_number" => "3003"
-  ];
-
-  $shipments = [
-    "receiver_address" => $receiverAddress
-  ];
-
-  $additionalInfo = [
-    "items" => [$item],
-    "shipments" => $shipments
-  ];
-
-  $order = [
-    "id" => 1234,
-    "type" => "mercadolibre"
-  ];
-
   $createRequest = [
-    "additional_info" => $additionalInfo,
-    "description" => "Payment for product",
-    "external_reference" => "MP0001",
-    "installments" => 1,
-    "payer" => $payer,
     "transaction_amount" => 100,
-    "order" => $order,
-    "payment_method_id" => "visa",
-    "token" => "1234",
+    "description" => "description",
+    "payment_method_id" => "pix",
+      "payer" => [
+        "email" => "test_user_24634097@testuser.com",
+      ]
   ];
 
   $client = new PaymentClient();
@@ -62,6 +19,56 @@ You can create and add payment information using the SDK below. For details on r
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $client->create($createRequest, $request_options);
+?>
+```
+]]]
+
+# Search payments
+
+You can search for payments made in the last twelve months from the search date using the SDK below. For details of the request parameters, access the [Search Payments](/developers/en/reference/payments/_payments_search/get) API.
+
+[[[
+```php
+<?php
+  $searchRequest = new MPSearchRequest(0, 0, [
+    "sort" => "date_created", 
+    "criteria" => "desc", 
+    "external_reference" => "ID_REF"
+  ]);
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+
+  $client->search($searchRequest, $request_options);
+?>
+```
+]]]
+
+# Get payment
+
+It is possible to query all the information of a payment through the payment ID using the SDK below. For details of the request parameters, access the [Get Payment](/developers/en/reference/payments/_payments_id/get) API.
+
+[[[
+```php
+<?php
+  $client = new PaymentClient();
+  $payment = $client->get(id);
+?>
+```
+]]]
+
+# Update payment
+
+It is possible to change the data of a certain payment by sending the parameters with the information you want to update through the SDK below. For details of the request parameters, access the [Update payment](/developers/en/reference/payments/_payments_id/put) API.
+
+[[[
+```php
+<?php
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+
+  $payment = $client->capture(123456789, 100, $request_options);
 ?>
 ```
 ]]]

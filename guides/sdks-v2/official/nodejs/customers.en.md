@@ -53,6 +53,21 @@ customerClient.search({ email: 'john.doe@example.com' })
 ```
 ]]]
 
+## Get customers
+
+It's possible to get customers using the SDK below. For more details on the request parameters, please refer to the [Get customers](/developers/es/reference/customers/_customers_id/get) API.
+
+[[[
+```node
+const client = new MercadoPago({ accessToken: 'access_token' });
+const customerClient = new Customer(client);
+
+customerClient.get('247711297-jxOV430go9fx2e')
+    .then((result) => { console.log(result); })
+    .catch((error) => { console.error(error); });
+```
+]]]
+
 
 ## Update customer
 

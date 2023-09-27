@@ -53,6 +53,20 @@ customerClient.search({ email: 'john.doe@example.com' })
 ```
 ]]]
 
+## Obtener clientes
+
+Es posible obtener clientes utilizando el SDK a continuación. Para obtener más detalles sobre los parámetros de la solicitud, consulta la API [Obtener clientes](/developers/es/reference/customers/_customers_id/get).
+
+[[[
+```node
+const client = new MercadoPago({ accessToken: 'access_token' });
+const customerClient = new Customer(client);
+
+customerClient.get('247711297-jxOV430go9fx2e')
+    .then((result) => { console.log(result); })
+    .catch((error) => { console.error(error); });
+```
+]]]
 
 ## Actualizar cliente
 

@@ -858,7 +858,6 @@ Para configurar pagamentos com  **OXXO**, **Paycash**,  **Citibanamex**,  **Sant
   );
 
   $payment->save();
-
 ?>
 ```
 ```node

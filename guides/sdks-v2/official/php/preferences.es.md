@@ -34,6 +34,63 @@ Es posible crear preferencias utilizando lo SDK a continuación. Para obtener de
 ```
 ]]]
 
+# Buscar preferencias
+
+Puede encontrar toda la información de preferencias generada a través de filtros específicos o por un rango de fechas específico utilizando el SDK a continuación. Para detalles de los parámetros de la solicitud, acceda a la API [Buscar preferencias](/developers/es/reference/preferences/_checkout_preferences_search/get).
+
+[[[
+```php
+<?php
+  $client = new PreferenceClient();
+
+  $search_request = new MPSearchRequest(1, 0, [
+    "sponsor_id" => "0",
+    "external_reference" => "",
+    "site_id" => "MLA",
+    "marketplace" => "NONE"
+  ]);
+  $client->search($search_request);
+?>
+```
+]]]
+
+# Obtener preferencia
+
+Puede obtener toda la información de pago de un producto o servicio con el ID de preferencia deseado utilizando el SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, acceda a la API [Obtener preferencia](/developers/es/reference/preferences/_checkout_preferences_id/get).
+
+[[[
+```php
+<?php
+  $client = new PreferenceClient();
+  $client->get("123456789");
+?>
+```
+]]]
+
+# Actualizar preferencia
+
+Puede actualizar los detalles de una preferencia de pago utilizando el ID de preferencia. Para detalles de los parámetros de la solicitud, acceda a la API [Actualizar preferencia](/developers/es/reference/preferences/_checkout_preferences_id/put).
+
+[[[
+```php
+<?php
+  $client = new PreferenceClient();
+
+  $preference = $client->update('123456789', [
+    "items"=> array(
+        array(
+            "id" => "4567",
+            "title" => "Dummy Title",
+            "quantity" => 1,
+            "unit_price" => 100
+       )
+    ),
+  ]);
+
+?>
+```
+]]]
+
 ## Asociar Facebook Ads
 
 Puede asociar la preferencia con un píxel para rastrear las conversiones de anuncios de Facebook. Para obtener detalles sobre los parámetros de solicitud, consulte la API [Crear preferencia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences/post).

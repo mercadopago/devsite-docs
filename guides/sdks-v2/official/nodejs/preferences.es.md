@@ -1,4 +1,4 @@
-## Crear preferencia
+# Crear preferencia
 
 Es posible crear preferencias utilizando lo SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, consulte la API [Crear preferencia](/developers/es/reference/preferences/_checkout_preferences/post).
 
@@ -42,7 +42,68 @@ preference.create({
 ```
 ]]]
 
-------------
+# Buscar preferencias
+
+Puede encontrar toda la información de preferencias generada a través de filtros específicos o por un rango de fechas específico utilizando el SDK a continuación. Para detalles de los parámetros de la solicitud, acceda a la API [Buscar preferencias](/developers/es/reference/preferences/_checkout_preferences_search/get).
+
+[[[
+```node
+const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+
+const preference = new Preference(client);
+
+preference.search({
+  sponsor_id: '0',
+  external_reference: '',
+  site_id: 'MLA',
+  marketplace: 'NONE'
+}).then((result) => console.log(result))
+  .catch((error) => console.log(error));
+```
+]]]
+
+# Obtener preferencia
+
+Puede obtener toda la información de pago de un producto o servicio con el ID de preferencia deseado utilizando el SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, acceda a la API [Obtener preferencia](/developers/es/reference/preferences/_checkout_preferences_id/get).
+
+[[[
+```node
+const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+const preference = new Preference(client);
+
+preference.get({ preferenceId: '123456789' })
+	.then((result) => console.log(result))
+	.catch((error) => console.log(error));
+```
+]]]
+
+# Actualizar preferencia
+
+Puede actualizar los detalles de una preferencia de pago utilizando el ID de preferencia. Para detalles de los parámetros de la solicitud, acceda a la API [Actualizar preferencia](/developers/es/reference/preferences/_checkout_preferences_id/put).
+
+[[[
+```node
+const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+
+const preference = new Preference(client);
+
+preference.update({
+	id: '123456789',
+	updatePreferenceRequest: {
+		items: [
+			{
+				id: '1234',
+				title: 'Dummy Title',
+				quantity: 1,
+				unit_price: 100
+			}
+		],
+	}
+}).then((result) => console.log(result))
+	.catch((error) => console.log(error));
+```
+]]]
+
 
 ## Asociar Facebook Ads
 

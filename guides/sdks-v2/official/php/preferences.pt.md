@@ -34,6 +34,63 @@
 ```
 ]]]
 
+# Pesquisar preferências
+
+É possível encontrar todas as informações das preferências geradas através de filtros específicos ou por uma faixa de datas específica utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Pesquisar preferências](/developers/pt/reference/preferences/_checkout_preferences_search/get).
+
+[[[
+```php
+<?php
+  $client = new PreferenceClient();
+
+  $search_request = new MPSearchRequest(1, 0, [
+    "sponsor_id" => "0",
+    "external_reference" => "",
+    "site_id" => "MLA",
+    "marketplace" => "NONE"
+  ]);
+  $client->search($search_request);
+?>
+```
+]]]
+
+# Obter preferência
+
+É possível obter todas as informações de pagamento de um produto ou serviço com a identificação da preferência desejada utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Obter preferência](/developers/pt/reference/preferences/_checkout_preferences_id/get).
+
+[[[
+```php
+<?php
+  $client = new PreferenceClient();
+  $client->get("123456789");
+?>
+```
+]]]
+
+## Atualizar preferência
+
+É possível atualizar os detalhes de uma preferência de pagamento através do ID da preferência. Para detalhamento dos parâmetros de requisição, acesse a API [Atualizar preferência](/developers/pt/reference/preferences/_checkout_preferences_id/put).
+
+[[[
+```php
+<?php
+  $client = new PreferenceClient();
+
+  $preference = $client->update('123456789', [
+    "items"=> array(
+        array(
+            "id" => "4567",
+            "title" => "Dummy Title",
+            "quantity" => 1,
+            "unit_price" => 100
+       )
+    ),
+  ]);
+
+?>
+```
+]]]
+
 ## Associar Facebook Ads
 
 É possível associar a preferência a um pixel para acompanhamento das conversões do Facebook Ads. Para detalhamento dos parâmetros de requisição, verifique a API [Criar preferência](/developers/pt/reference/preferences/_checkout_preferences/post).

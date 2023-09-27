@@ -51,6 +51,19 @@
 ```
 ]]]
 
+## Obter clientes
+
+É possível obter clientes utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Obter clientes](/developers/pt/reference/customers/_customers_id/get).
+
+[[[
+```php
+<?php
+  $client = new CustomerClient();
+  $client->get("247711297-jxOV430go9fx2e");
+?>
+```
+]]]
+
 # Atualizar cliente
 
 É possível atualizar clientes utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Atualizar clientes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/customers/_customers_id/put).

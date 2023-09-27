@@ -51,6 +51,19 @@ It is possible to search customers using the SDK below. For details on the reque
 ```
 ]]]
 
+## Get customers
+
+It's possible to get customers using the SDK below. For more details on the request parameters, please refer to the [Get customers](/developers/es/reference/customers/_customers_id/get) API.
+
+[[[
+```php
+<?php
+  $client = new CustomerClient();
+  $client->get("247711297-jxOV430go9fx2e");
+?>
+```
+]]]
+
 # Update customer
 
 It is possible to update customers using the SDK below. For details on the request parameters, check the [Update customer](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers_id/put) API.

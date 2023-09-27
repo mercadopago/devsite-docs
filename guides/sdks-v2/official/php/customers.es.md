@@ -51,6 +51,19 @@ Es posible buscar clientes utilizando lo SDK a continuación. Para obtener detal
 ```
 ]]]
 
+## Buscar clientes
+
+Es posible buscar clientes utilizando lo SDK a continuación. Para obtener detalles sobre los parámetros de solicitud, consulte la API [Buscar en Clientes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/customers/_customers_search/get).
+
+[[[
+```php
+<?php
+  $client = new CustomerClient();
+  $client->get("247711297-jxOV430go9fx2e");
+?>
+```
+]]]
+
 # Actualizar cliente
 
 Es posible actualizar clientes utilizando lo SDK a continuación. Para obtener detalles sobre los parámetros de solicitud, consulte la API [Actualizar Cliente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/customers/_customers_id/put).
