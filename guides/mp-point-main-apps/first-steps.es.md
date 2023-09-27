@@ -89,7 +89,7 @@ paymentFlow.launchPaymentFlowActivity(
    }
 }
 ```
-```java
+```javagit
 PaymentFlow paymentFlow = MPManager.INSTANCE.getPaymentFlow();
 
 HashMap<String, String> metadata = new HashMap<>();
