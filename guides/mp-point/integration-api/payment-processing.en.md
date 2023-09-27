@@ -211,7 +211,7 @@ Then, follow the steps shown on the screen afterwards to complete the payment.
 
 ## Check the status of your payment intent
 
-If you want to know the status of a particular payment intent, you can [check the current status of your payment intent](/developers/en/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents/post) using the `id` that you received in the response when creating it.
+If you want to know the status of a particular payment intent, you can [check the current status of your payment intent](/developers/en/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) using the `id` that you received in the response when creating it.
 
 Remember that `id`and `status`of the **payment intent** are not the same as `id`and `status`of the payment. In this case, you will be trying to obtain the details of an attempt. If you want to check out all the information corresponding to the payment, access the [Payment API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) in our API Reference.
 

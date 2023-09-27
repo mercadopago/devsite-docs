@@ -212,7 +212,7 @@ Luego, continúa con los pasos que se muestran en la pantalla para completar el 
 
 ## Consulta el estado de tu intención de pago
 
-Si deseas saber el estado de una intención de pago en particular, puedes [consultar el estado actual de tu intención de pago](/developers/es/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents/post) utilizando el `id` que recibiste en la respuesta al momento de crearla.
+Si deseas saber el estado de una intención de pago en particular, puedes [consultar el estado actual de tu intención de pago](/developers/es/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) utilizando el `id` que recibiste en la respuesta al momento de crearla.
 
 Recuerda que `id` y estado de la **intención de pago** son diferentes a `id` y estado del pago. En este caso, se trata de consultar los detalles de un intento. Si quieres consultar la información correspondiente al pago, accede a la sección [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) en Referencia de API. 
 

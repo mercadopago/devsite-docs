@@ -48,9 +48,9 @@ To do this, you can access the [Mercado Pago site](https://www.mercadopago[FAKER
 
 To integrate the Point device with our API, it is necessary to activate the Point of Sale (POS) operating mode.
 
-To activate it for the first time, retrieve the devices through the API [Get devices](/developers/es/reference/integrations_api/_point_integration-api_devices/get). This call will return a list of devices associated with your Mercado Pago account. You can identify the desired Point device by the last characters of the `id` field, which should match the serial number displayed on the back label of the device.
+To activate it for the first time, retrieve the devices through the API [Get devices](/developers/en/reference/integrations_api/_point_integration-api_devices/get). This call will return a list of devices associated with your Mercado Pago account. You can identify the desired Point device by the last characters of the `id` field, which should match the serial number displayed on the back label of the device.
 
-Then, make a PATCH request to the endpoint [Change operating mode](/developers/es/reference/integrations_api/_point_integration-api_devices_device-id/patch), replacing `device.id` with the value obtained in that field from the response to the previous GET request.
+Then, make a PATCH request to the endpoint [Change operating mode](/developers/en/reference/integrations_api/_point_integration-api_devices_device-id/patch), replacing `device.id` with the value obtained in that field from the response to the previous GET request.
 
 ``` curl
 curl -X PATCH \
@@ -74,7 +74,7 @@ You will receive a response like this:
 >
 > Important
 >
-> Please note that only one point-of-sale device is allowed per checkout, and it should only be handled by a store operator. The [unattended self-service]((/developers/en/docs/mp-point/integration-api/glossary)) use of a device is the full responsibility of the merchant. Consider this limitation when implementing the integration to ensure proper and safe use of the devices.
+> Please note that only one point-of-sale device is allowed per checkout, and it should only be handled by a store operator. The [unattended self-service](/developers/en/docs/mp-point/integration-api/glossary) use of a device is the full responsibility of the merchant. Consider this limitation when implementing the integration to ensure proper and safe use of the devices.
 
 Finally, you will need to restart your device for the change in the operating mode to take effect.
 

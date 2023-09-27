@@ -207,7 +207,7 @@ Uma vez que a intenção de pagamento é criada, você pode obtê-la de seu disp
 
 ## Verifique o status da sua intenção de pagamento
 
-Se você deseja saber o status de uma intenção de pagamento específica, você pode [verificar o status atual da sua intenção de pagamento](/developers/pt/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents/post) usando o `id` que você recebeu na resposta ao criá-la.
+Se você deseja saber o status de uma intenção de pagamento específica, você pode [verificar o status atual da sua intenção de pagamento](/developers/pt/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) usando o `id` que você recebeu na resposta ao criá-la.
 
 Lembre-se que o `id` e status da intenção de pagamento são diferentes do `id` e status do pagamento. Neste caso, trata-se de consultar os detalhes de uma tentativa. Você pode consultar todas as informações correspondentes ao pagamento na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) de Referência da API.
 
