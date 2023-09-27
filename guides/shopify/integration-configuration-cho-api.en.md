@@ -6,7 +6,7 @@ With the [Checkout Transparente](/developers/en/docs/checkout-api/landing), the 
 >
 > Attention
 >
-> To integrate Checkout Transparente you must have Checkout Pro in your Shopify store. To learn how to integrate it, go to the [documentation.](/developers/en/docs/shopify/integration-configuration/checkout-pro)
+> To integrate Checkout Transparente you must have Checkout Pro ("**Checkout Mercado Pago**") in your Shopify store. To learn how to integrate it, go to the [documentation.](/developers/en/docs/shopify/integration-configuration/checkout-pro)
 
 To install Checkout Transparente in a Shopify store, follow the steps below:
 
