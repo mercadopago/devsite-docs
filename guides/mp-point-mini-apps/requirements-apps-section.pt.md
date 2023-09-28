@@ -21,7 +21,7 @@ Esta é a tela que a pessoa usuária que ainda não tem apps instalados encontra
 
 > **Você deve**:<br><br>
 > * Trazer a função principal do seu app no resumo.
-> * Usar a versão simplificada do logo, com menos detalhes, para que os usuários possam reconhecê-lo.<br>
+> * Usar a versão simplificada do logo, com menos detalhes, para que os usuários possam reconhecê-lo.<br><br>
 > **Você não deve**:<br><br>
 > * Usar o nome do Mercado Pago ou de concorrentes.
 > * Abreviar o nome do app ou usar siglas difíceis de identificar.
@@ -82,7 +82,7 @@ Aqui, a pessoa usuária tem acesso aos detalhes, benefícios e proposta de valor
 > * Facilitar a leitura utilizando listas verticais ao invés de parágrafos muito extensos.
 > * Usar títulos claros que introduzam o assunto a ser tratado no parágrafo seguinte.
 > * Incluir imagens fáceis de identificar e entender, que retratem funcionalidades importantes do app.
-> * Usar cores com bom nível de contraste entre o fundo e a figura em primeiro plano das imagens.<br>
+> * Usar cores com bom nível de contraste entre o fundo e a figura em primeiro plano das imagens.<br><br>
 > **Você não deve**:<br><br>
 > * Usar o nome do Mercado Pago ou de concorrentes.
 > * Construir parágrafos longos e sem separação de temas.
