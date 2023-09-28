@@ -51,5 +51,5 @@ Além disso, você precisará identificar o cliente ou documento a ser pago. Par
 | `nombreCuenta` | Nome da conta. Deve ser enviado em formato de string. |
 | `hint` | Indica o tipo de dados a serem inseridos em linguagem natural e é obtido dentro de `datos_captura`. Segue o formato "NUMERO=DESCRIÇÃO DO TIPO DE DADO=NUMERO" (por exemplo, se o valor for "0=NUMERO DE RUT=2", você deve enviar a substring "NUMERO DE RUT"). |
 
-Como resultado, uma caixa de diálogo será aberta no RDCPass, indicando a conta a ser paga, o identificador do documento ou cliente e o valor da transação. Você pode prosseguir com o pagamento ou cancelar esta transação, e em ambos os casos, você será devolvido ao aplicativo integrado.
+Como resultado, uma caixa de diálogo será aberta no RDCPass, indicando a conta a ser paga, o identificador do documento ou cliente e o valor da transação. Você pode prosseguir com o pagamento ou cancelar esta transação, e em ambos os casos, você será redirecionado ao aplicativo integrado.
 

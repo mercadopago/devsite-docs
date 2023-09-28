@@ -114,7 +114,7 @@ Ten en cuenta que, en caso de que algún campo no corresponda o no  contenga dat
 |---|---|
 | `Estatus` | Estado de la respuesta. Valores posibles: <br>`ok`: se recibieron nuevos datos exitosamente.<br>`SD`: se comprobó que ya se tenían datos previos. |
 | `codaut` | Cadena de 32 caracteres que identifica la versión del JSON enviado. Sólo es<br>necesario actualizar la base de datos cuando este valor cambie. |
-| `datos` | Lista de todas las cuentas que se pueden pagar. En caso de que el valor codauts<br>coincida con una consulta previa, este parámetro es recibido vacío. |
+| `datos` | Lista de todas las cuentas que se pueden pagar. En caso de que el valor codaut<br>coincida con una consulta previa, este parámetro es recibido vacío. |
 | `rubro` | Clasificación del tipo de servicio a pagar. |
 | `meta_rubro` | Agrupación de clasificaciones de los servicios. |
 | `rubro_id` | Identificador numérico del rubro. |
