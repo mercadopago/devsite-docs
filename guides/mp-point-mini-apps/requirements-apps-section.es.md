@@ -70,7 +70,7 @@ Aquí, la persona usuaria tiene acceso a los detalles, beneficios y propuesta de
 
    * Limitaciones: hasta 2.000 caracteres.<br><br>
 
-4. **Contacto del desarrollador**: canales para que las personas usuarias puedan sacarse dudas, hacer sugerencias y saber más sobre la empresa.<br><br>
+4. **Contacto del desarrollador**: canales para que las personas usuarias puedan sacarse dudas, hacer sugerencias y saber más sobre la empresa.
 
    * Limitaciones:
    * E-mail - línea única/hasta 53 caracteres.

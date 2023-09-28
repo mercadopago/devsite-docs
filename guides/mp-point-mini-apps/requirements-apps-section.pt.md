@@ -70,7 +70,7 @@ Aqui, a pessoa usuária tem acesso aos detalhes, benefícios e proposta de valor
 
    * Limitações: até 2.000 caracteres.<br><br>
 
-4. **Contato do desenvolvedor**: canais de contato para tirar dúvidas, fazer sugestões e saber mais sobre a empresa. 
+4. **Contato do desenvolvedor**: canais de contato para tirar dúvidas, fazer sugestões e saber mais sobre a empresa.<br><br>
 
    * Limitações: 
    * E-mail - linha única/até 53 caracteres.
