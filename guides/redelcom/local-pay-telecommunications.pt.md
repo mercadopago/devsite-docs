@@ -1,4 +1,4 @@
-# Pagar recarregas de telecomunicações
+# Pagar recargas de telecomunicações
 
 > WARNING
 > 
@@ -6,7 +6,7 @@
 >
 > Para realizar uma intenção de pagamento de recargas de telecomunicações, é necessário [ter carregado dinheiro no POS](/developers/pt/docs/redelcom/local-integration/android/payments-processing/load-money-in-pos) anteriormente, e realizado uma [consulta dos parâmetros necessários para multiserviços](/developers/pt/docs/redelcom/local-integration/android/payments-processing/query-multiservice-parameters). Você precisará enviar os parâmetros `CompanyRecharge`, `CompanyNameRecharge`, `AmountRecharge` e `NumberRecharge`, obtidos na resposta à consulta de parâmetros para multiserviços.
 
-Se você já carregou saldo no POS e buscou os parâmetros necessários para multiserviços e deseja pagar recarregas de telecomunicações, siga as etapas abaixo.
+Se você já carregou saldo no POS e buscou os parâmetros necessários para multiserviços e deseja pagar recargas de telecomunicações, siga as etapas abaixo.
 
 1. Adicione o seguinte intent-filter (Activity) ao arquivo AndroidManifest.xml do seu projeto:
 
@@ -48,7 +48,7 @@ Além disso, você precisará identificar o cliente que receberá a recarrega e 
 | Campo | Descrição |
 |---|---|
 | `CompanyRecharge` | Identificador da empresa com a qual a recarrega será feita. Deve ser enviado em formato de string. |
-| `CompanyNameRecharge` | Nome da empresa com a qual a recarrega será feita. Deve ser enviado em formato de string. |
+| `CompanyNameRecharge` | Nome da empresa com a qual a recarga será feita. Deve ser enviado em formato de string. |
 | `AmountRecharge` | Valor a ser recarregado. Deve ser enviado em formato de string sem caracteres especiais (por exemplo, se o valor for R$ 1.000, você deve enviar "1000"). |
 | `NumberRecharge` | Número de telefone do cliente, que servirá como identificação. Deve ser enviado em formato de string. |
 

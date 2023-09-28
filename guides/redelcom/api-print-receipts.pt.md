@@ -70,9 +70,9 @@ Se houver um erro, a resposta será uma das seguintes:
 | 409 | Já existe uma solicitação de impressão pendente. |
 
 
-## Tags de Impressão
+## Tags de impressão
 
-Para realizar a impressão de recibos via API, você precisará usar algumas tags que permitem formatá-los conforme desejado. Você pode ver essas tags em detalhes na tabela abaixo.
+Para realizar a impressão de recibos via API, você precisará usar algumas tags que permitem formatá-los como desejar. Você pode ver essas tags em detalhes na tabela abaixo.
 
 | Tag | Descrição |
 |---|---|

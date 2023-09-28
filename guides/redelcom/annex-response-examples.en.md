@@ -1,4 +1,4 @@
-# Response Examples
+# Response examples
 
 Below, you can find various response examples for the creation of intentions within the local integration of RDCPass, along with a description of each received parameter.
 

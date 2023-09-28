@@ -1,4 +1,4 @@
-# Processamento de Pagamentos
+# Processamento de pagamentos
 
 A integração com dispositivos da Redelcom via API permite que você processe pagamentos com base em solicitações geradas pelo seu próprio software, o que permite ao RDCPass coletar e fornecer os resultados da transação.
 

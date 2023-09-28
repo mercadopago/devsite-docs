@@ -24,7 +24,7 @@ import 'package:android_intent/android_intent.dart';
 
 ```
 
-## Enviar e receberIntents de um aplicativo nativo Android 
+## Enviar e receber Intents de um aplicativo nativo Android 
 
 Para processar pagamentos, primeiro você precisa implementar o método que permite enviar um intent para um aplicativo nativo Android:
 

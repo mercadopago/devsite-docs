@@ -57,7 +57,7 @@ curl  -X POST \
 
 | Campo | Descripción |
 |---|---|
-| `printText` | **Obligatorio**. Texto a imprimir de acuerdo con el formato de impresión para terminales RedelCom. |
+| `printText` | **Obligatorio**. Texto a imprimir de acuerdo con el formato de impresión para terminales Redelcom. |
 | `terminalId` | **Obligatorio**. Código de la terminal a la que se enviará la solicitud de impresión. |
 
 

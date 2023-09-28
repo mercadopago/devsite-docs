@@ -1,4 +1,4 @@
-# Query a Payment
+# Query a payment
 
 If you want to inquire about a payment instance already made in the RDCPass application, follow the steps below.
 

@@ -33,7 +33,7 @@ bullet_section_with_media:
  - benefit_title: Controle de estoque
  - benefit_message: Com nosso RDControl, você pode monitorar e gerenciar seu estoque.
  - benefit_title: Dispositivos de qualidade
- - benefit_message: ONossos terminais têm uma bateria de longa duração e uma taxa mínima de falha.
+ - benefit_message: Nossos terminais têm uma bateria de longa duração e uma taxa mínima de falha.
  - benefit_title: A máquina é sua
  - benefit_message: Depois de comprar a máquina, você não precisará pagar taxas de aluguel ou de associação.
  - image: /Redelcom/2R4A8047_Samrt_Pro_pantalla_boleta.png

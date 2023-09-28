@@ -1,8 +1,8 @@
-# Exemplos de Respostas
+# Exemplos de respostas
 
 Abaixo, você pode encontrar vários exemplos de respostas para a criação de intenções na integração local do RDCPass, juntamente com uma descrição de cada parâmetro recebido.
 
-## Exemplo de resposta para a Criação de uma intenção de pagamento
+## Exemplo de resposta para a criação de uma intenção de pagamento
 
 ```json
 {

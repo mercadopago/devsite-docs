@@ -53,7 +53,7 @@ sharingIntent.putExtra("packageName", getPackageName());
 | Campo | Descrição | Exemplo |
 |---|---|---|
 | `sharingIntent.putExtra(Intent.EXTRA_TEXT, total)` | `total` é o valor total da transação. Aceita apenas moeda CLP e deve estar em formato de string numérica, sem pontos ou caracteres especiais. | 2000 |
-| `sharingIntent.putExtra("recargaSaldo", true)` | Indica que a transação é uma recarga de saldo. Formato booleano, padrão é `false`. Para gerar a recarga, deve ser definido como `true`. | `true`/`false` |
+| `sharingIntent.putExtra("recargaSaldo", true)` | Indica que a transação é uma recarga de saldo. Formato booleano, o padrão é `false`. Para gerar a recarga, deve ser definido como `true`. | `true`/`false` |
 | `sharingIntent.putExtra("payment_type", "TARJETA")` | Indica o método de pagamento a ser usado. Se omitido, deve ser selecionado no POS. | "EFECTIVO"<br>"TARJETA"<br>"WALLET" (Pagamentos QR)<br>"SIN_EFECTIVO" (Permite seleção no POS entre: "CARTÕES E CARTEIRA")<br>"SIN_WALLET" (Permite seleção no POS entre: "DINHEIRO E CARTÕES") |
 
 A resposta para esta intenção de recarrega de dinheiro no POS é semelhante à criação de uma intenção de pagamento. O campo mais relevante é `saldo_terminal`, que indica o saldo resultante ao final da transação.

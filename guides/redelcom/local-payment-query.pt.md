@@ -1,4 +1,4 @@
-# Consultar um Pagamento
+# Consultar um pagamento
 
 Se você deseja consultar uma instância de pagamento já realizada no aplicativo RDCPass, siga as etapas abaixo.
 

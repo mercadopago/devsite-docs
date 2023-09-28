@@ -2,7 +2,7 @@
 
 Uma intenção de pagamento é uma solicitação contendo os detalhes de uma transação a ser realizada.
 
-Para criar uma intenção de pagamento, você precisa ter feito anteriormente a chamada para obter o código do terminal ao qual a transação será associada. Lembre-se de que, se você já fez isso uma vez e salvou o `id` do terminal, não precisará repetir essa consulta, pois esse código é único e inalterável.
+Para criar uma intenção de pagamento, você precisa ter feito anteriormente a chamada para obter o código do terminal ao qual a transação será associada. Lembre-se que, se você já fez isso uma vez e salvou o `id` do terminal, não precisará repetir essa consulta, pois esse código é único e inalterável.
 
 Em seguida, faça uma chamada POST para a API `{https://api-dev.redelcom.cl:20010/v2}/pago`, adicionando o valor obtido anteriormente ao campo `terminalId` e substituindo `X-Authentication`, `clientId` e `secret` pelas suas credenciais:
 
@@ -35,7 +35,7 @@ curl -X POST \
 
 ```
 
-Configure os campos desta solicitação seguindo estas especificações:
+Configure os campos desta solicitação seguindo as seguintes especificações:
 
 | Campo | Tipo | Descrição |
 |---|---|---|
@@ -50,7 +50,7 @@ Configure os campos desta solicitação seguindo estas especificações:
 | Products - `unit_price` | inteiro | **Opcional**. Preço unitário do item vendido. |
 | `rdcDTE` | boolean | **Opcional**. Se a Redelcom deve gerar o DTE (por padrão, não gera). |
 | `requestTip` | boolean | **Opcional**. Se o terminal deve solicitar uma gorjeta (por padrão, não solicita). |
-| `responseCallback` | string | **Opcional**. A URL própria do integrador que a Redelcom invocará para relatar o status de um pagamento no final da transação, seja ele bem-sucedido ou não. Para configurá-lo, consulte a subseção "Implementação da URL de Resposta".<br>Recomendamos o uso deste método para evitar a necessidade de fazer uma chamada de consulta para intenções de pagamento. |
+| `responseCallback` | string | **Opcional**. A URL própria do integrador que a Redelcom chamará para relatar o status de um pagamento no final da transação, seja ele bem-sucedido ou não. Para configurá-lo, consulte a subseção "Implementação da URL de Resposta".<br>Recomendamos o uso deste método para evitar a necessidade de fazer uma chamada de consulta para intenções de pagamento. |
 | `terminalId` | string | **Obrigatório**. Código do terminal ao qual a transação será associada, obtido na chamada "Obter terminal". |
 | `UserTransactionId` | string | **Obrigatório**. Código de referência para a solicitação de pagamento, que você pode definir. |
 
@@ -72,7 +72,7 @@ Se a solicitação for bem-sucedida, a resposta retornará o código associado �
 > Recomendamos armazenar o `rdcTransactionId` associado a cada transação feita para facilitar consultas posteriores a uma intenção de pagamento.
 
 
-Na tabela a seguir, você pode ver os principais motivos pelos quais esta solicitação **pode não** ser processada:
+Na tabela a seguir, você pode ver os principais motivos pelos quais esta solicitação pode **não** ser processada:
 
 | Erro | Motivo |
 |---|---|
