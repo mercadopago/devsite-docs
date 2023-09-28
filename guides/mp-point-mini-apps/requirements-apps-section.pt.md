@@ -84,7 +84,7 @@ Aqui, a pessoa usuária tem acesso aos detalhes, benefícios e proposta de valor
 > * Usar títulos claros que introduzam o assunto a ser tratado no parágrafo seguinte.
 > * Incluir imagens fáceis de identificar e entender, que retratem funcionalidades importantes do app.
 > * Usar cores com bom nível de contraste entre o fundo e a figura em primeiro plano das imagens.
-> <br>
+> <br><br>
 > **Você não deve**:<br><br>
 > * Usar o nome do Mercado Pago ou de concorrentes.
 > * Construir parágrafos longos e sem separação de temas.
