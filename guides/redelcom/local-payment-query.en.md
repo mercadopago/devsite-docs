@@ -71,5 +71,5 @@ if (Intent.ACTION_ANSWER.equals(action)) {
 >
 >  The line `String userTransactionId = new JSONObject(intent.getStringExtra("userTransactionId"));` should only be included if you used the method to retrieve the last `userTransactionId`.
 
-The structure of the response for the payment query intention will be the same as that provided during the [creation of a payment intention](/developers/en/docs/redelcom/additional-content/response-examples).
+The structure of the response for the payment query intention will be the same as that provided during the creation of a payment intention. You can check it out in the [annex: response examples](/developers/en/docs/redelcom/additional-content/response-examples).
 

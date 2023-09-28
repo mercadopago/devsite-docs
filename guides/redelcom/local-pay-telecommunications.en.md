@@ -6,7 +6,7 @@
 >
 > To perform an intention to pay telecommunications recharges, it is necessary to have previously [loaded money in the POS](/developers/en/docs/redelcom/local-integration/android/payments-processing/load-money-in-pos) and conducted a [search of the necessary parameters for multiservices](/developers/en/docs/redelcom/local-integration/android/payments-processing/query-multiservice-parameters). You will need to send `CompanyRecharge`, `CompanyNameRecharge`, `AmountRecharge` y `NumberRecharge` parameters, obtained from the response to the multiservices parameters query.
 
-If you have already loaded balance in the POS and searched for the necessary parameters for multiservices and want to pay telecommunications recharges, follow the steps below.
+To pay telecommunications recharges, follow the steps below.
 
 1. Add the following intent-filter (Activity) to the AndroidManifest.xml file of your project:
 

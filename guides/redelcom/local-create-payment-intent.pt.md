@@ -49,14 +49,14 @@ Você deve modificar os seguintes parâmetros levando em consideração estas es
 
 | Parâmetro          | Descrição                                                                                          | Exemplo         | Tipo         |
 |-------------------|------------------------------------------------------------------------------------------------------|-----------------|--------------|
-| `String total`    | **Obrigatório**. Valor total da transação. Aceita apenas moeda CLP e um valor numérico, sem pontos ou caracteres especiais. | 2000            | String       |
-| `String intent`   | **Obrigatório**. Corresponde ao tipo de intenção a ser solicitada. Neste caso, usaremos o parâmetro `Intent.ACTION_SEND`, que corresponde à criação de uma intenção de pagamento. | `Intent.ACTION_SEND` | String |
-| `userTransactionId` | **Opcional**. Você pode incluir um código de referência para a solicitação de pagamento, substituindo "DEMO1234" pelo código escolhido. | Transaction1234 | Alfanumérico |
-| `description`     | **Opcional**. Você pode incluir uma descrição de pagamento, que será exibida na tela de pagamento. Lembre-se de substituir "Descrição para a sua transação" pela descrição desejada. | Item1           | Alfanumérico |
-| `payment_type`    | **Opcional**. Selecione o método de pagamento a ser usado (se omitido, deve ser selecionado no POS). Você deve substituir "TIPO_PAGO". | • "CASH" <br>• "CARD" <br>• "WALLET" (Pagamentos por QR) <br>• "NON_CASH" (Permite seleção no POS entre: "CARTÕES E WALLET") <br>• "NON_WALLET" (Permite seleção no POS entre: "DINHEIRO E CARTÕES") | Alfanumérico |
-| `request_tip`     | **Opcional**. Gerencia a solicitação de gorjeta. | `true` / `false` | Booleano. O padrão é `false`. |
-| `rdcDTE`          | **Opcional**. Usa os serviços da Redelcom para gerar o documento fiscal. | `true` / `false` | Booleano. O padrão é `false`. |
-| `completeTransactions` | **Opcional**. Você deve incluí-lo se precisar consultar o último `userTransactionId` posteriormente para manter a conciliação nas transações feitas. | - | Alfanumérico |
+| `String total`    | **Obrigatório**. <br>Valor total da transação. Aceita apenas moeda CLP e um valor numérico, sem pontos ou caracteres especiais. | 2000            | String       |
+| `String intent`   | **Obrigatório**. <br>Corresponde ao tipo de intenção a ser solicitada. Neste caso, usaremos o parâmetro `Intent.ACTION_SEND`, que corresponde à criação de uma intenção de pagamento. | `Intent.ACTION_SEND` | String |
+| `userTransactionId` | **Opcional**. <br>Você pode incluir um código de referência para a solicitação de pagamento, substituindo "DEMO1234" pelo código escolhido. | Transaction1234 | Alfanumérico |
+| `description`     | **Opcional**. <br>Você pode incluir uma descrição de pagamento, que será exibida na tela de pagamento. Lembre-se de substituir "Descrição para a sua transação" pela descrição desejada. | Item1           | Alfanumérico |
+| `payment_type`    | **Opcional**. <br>Selecione o método de pagamento a ser usado (se omitido, deve ser selecionado no POS). Você deve substituir "TIPO_PAGO". | • "CASH" <br>• "CARD" <br>• "WALLET" (Pagamentos por QR) <br>• "NON_CASH" (Permite seleção no POS entre: "CARTÕES E WALLET") <br>• "NON_WALLET" (Permite seleção no POS entre: "DINHEIRO E CARTÕES") | Alfanumérico |
+| `request_tip`     | **Opcional**. <br>Gerencia a solicitação de gorjeta. | `true` / `false` | Booleano. O padrão é `false`. |
+| `rdcDTE`          | **Opcional**. <br>Usa os serviços da Redelcom para gerar o documento fiscal. | `true` / `false` | Booleano. O padrão é `false`. |
+| `completeTransactions` | **Opcional**. <br>Você deve incluí-lo se precisar consultar o último `userTransactionId` posteriormente para manter a conciliação nas transações feitas. | - | Alfanumérico |
 
 3. Se você deseja receber a resposta para a intenção de pagamento criada a partir do RDCPass, use o seguinte bloco de código:
 

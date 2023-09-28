@@ -33,7 +33,7 @@ bullet_section_with_media:
  - benefit_title: Control de inventario
  - benefit_message: Con nuestro RDControl podrás monitorear y controlar tu inventario.
  - benefit_title: Terminales de calidad
- - benefit_message: Cuentan con una batería de larga duración, y un mínimo porcentaje de falla.
+ - benefit_message: Cuentan con una batería de larga duración y garatizan un mínimo porcentaje de falla.
  - benefit_title: La máquina es tuya
  - benefit_message: Compras la máquina y no tienes que pagar alquiler ni cuotas de membresía.
  - image: /Redelcom/2R4A8047_Samrt_Pro_pantalla_boleta.png

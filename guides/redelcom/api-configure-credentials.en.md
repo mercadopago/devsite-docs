@@ -2,7 +2,11 @@
 
 You can generate payment requests on Redelcom terminals using [our API](https://api-dev.redelcom.cl:20010/v2).
 
+</center>
+
 ![diagram explaining API Integration](/images/Redelcom/integrate-via-API.png)
+
+</center>
 
 To start integrating via API, you should have the **credentials that were provided to you by email** when you requested the device. These credentials will help you generate the *token* required to operate with Redelcom via API.
 

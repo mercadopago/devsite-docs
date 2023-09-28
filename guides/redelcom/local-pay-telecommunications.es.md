@@ -6,7 +6,7 @@
 >
 > Para realizar una intención de recarga de telecomunicaciones, es necesario haber realizado previamente una [carga de saldo en POS](/developers/es/docs/redelcom/local-integration/android/payments-processing/load-money-in-pos) y una [consulta de parámetros necesarios para multiservicios](/developers/es/docs/redelcom/local-integration/android/payments-processing/query-multiservice-parameters), ya que se requerirá enviar `CompanyRecharge`, `CompanyNameRecharge`, `AmountRecharge` y `NumberRecharge`, obtenidos en la respuesta a la consulta de parámetros para multiservicios.
 
-Si ya has realizado una carga de saldo en POS y una consulta de parámetros necesarios para multiservicios, y quieres realizar una recarga de telecomunicaciones, sigue los pasos a continuación.
+Para una recarga de telecomunicaciones, sigue los pasos a continuación.
 
 1. Agrega el siguiente intent-filter (Activity) en el archivo AndroidManifest.xml de tu proyecto:
 

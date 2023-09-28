@@ -39,20 +39,20 @@ Configura los campos de esta llamada siguiendo estas especificaciones:
 
 | Campo | Tipo | Descripción |
 |---|---|---|
-| `amount` | integer | **Obligatorio**. Monto de la transacción. Debe ser un número entre 1 y 99999999. |
-| `Description` | string | **Opcional**. Información adicional a mostrar en la solicitud de pago. |
-| `dte` | string | **Opcional**. Debes configurarlo en caso de que el Documento Tributario Electrónico asociado al pago no sea generado por Redelcom y quieras que lo imprima el POS. Solo aplica si `rdcDTE` es `false`. <br>Puedes consultar la sección "Imprimir DTE" para más información. |
-| `paymentType` | enum | **Opcional**. Medio de pago a utilizar. Si el parámetro se omite, el medio de pago deberá ser elegido en el POS. <br>Valores posibles: `EFECTIVO`, `TARJETA`, `WALLET`, `SIN_EFECTIVO`, `SIN_WALLET`. |
-| Products - `description` | string | **Opcional**. Descripción breve del producto vendido. |
-| Products - `id` | string | **Opcional**. Código del producto. |
-| Products - `iva_exempt` | boolean | **Opcional**. Si el producto está o no exento de IVA. Valores posibles: `True` si está exento; `false` si no. |
-| Products - `quantity` | integer | **Opcional**. Cantidad de ítems. |
-| Products - `unit_price` | integer | **Opcional**. Precio unitario del ítem vendido. |
-| `rdcDTE` | boolean | **Opcional**. Si la generación del DTE la debe hacer Redelcom (por defecto, no). |
-| `requestTip` | boolean | **Opcional**. Si la terminal debe solicitar propina (por defecto, no). |
-| `responseCallback` | string | **Opcional**. Es aquella URL propia del integrador que será invocada por Redelcom para informar el estado de un pago al finalizar la transacción, sea exitosa o no. Para configurarla, dirígete al subtítulo “Implementar la URL de respuesta”.<br>Recomendamos utilizar este método para evitar tener que realizar un llamado de consulta para las intenciones de pago. |
-| `terminalId` | string | **Obligatorio**. Código de la terminal a la que se asociará la transacción, resultado de la  llamada “Obtener terminal”.  |
-| `UserTransactionId` | string | **Obligatorio**. Código referencial de la solicitud de pago, que puedes definir. |
+| `amount` | integer | **Obligatorio**. <br>Monto de la transacción. Debe ser un número entre 1 y 99999999. |
+| `Description` | string | **Opcional**. <br>Información adicional a mostrar en la solicitud de pago. |
+| `dte` | string | **Opcional**. <br>Debes configurarlo en caso de que el Documento Tributario Electrónico asociado al pago no sea generado por Redelcom y quieras que lo imprima el POS. Solo aplica si `rdcDTE` es `false`. <br>Puedes consultar la sección "Imprimir DTE" para más información. |
+| `paymentType` | enum | **Opcional**. <br>Medio de pago a utilizar. Si el parámetro se omite, el medio de pago deberá ser elegido en el POS. <br>Valores posibles: `EFECTIVO`, `TARJETA`, `WALLET`, `SIN_EFECTIVO`, `SIN_WALLET`. |
+| Products - `description` | string | **Opcional**. <br>Descripción breve del producto vendido. |
+| Products - `id` | string | **Opcional**. <br>Código del producto. |
+| Products - `iva_exempt` | boolean | **Opcional**. <br>Si el producto está o no exento de IVA. Valores posibles: `True` si está exento; `false` si no. |
+| Products - `quantity` | integer | **Opcional**. <br>Cantidad de ítems. |
+| Products - `unit_price` | integer | **Opcional**. <br>Precio unitario del ítem vendido. |
+| `rdcDTE` | boolean | **Opcional**. <br>Si la generación del DTE la debe hacer Redelcom (por defecto, no). |
+| `requestTip` | boolean | **Opcional**. <br>Si la terminal debe solicitar propina (por defecto, no). |
+| `responseCallback` | string | **Opcional**. <br>Es aquella URL propia del integrador que será invocada por Redelcom para informar el estado de un pago al finalizar la transacción, sea exitosa o no. Para configurarla, dirígete al subtítulo “Implementar la URL de respuesta”.<br>Recomendamos utilizar este método para evitar tener que realizar un llamado de consulta para las intenciones de pago. |
+| `terminalId` | string | **Obligatorio**. <br>Código de la terminal a la que se asociará la transacción, resultado de la  llamada “Obtener terminal”.  |
+| `UserTransactionId` | string | **Obligatorio**. <br>Código referencial de la solicitud de pago, que puedes definir. |
 
 
 Si la solicitud fue exitosa, la respuesta te devolverá el código asociado a la solicitud del pago, y se parecerá al siguiente ejemplo: 
@@ -71,6 +71,8 @@ Si la solicitud fue exitosa, la respuesta te devolverá el código asociado a la
 >
 > Aconsejamos almacenar los `rdcTransactionId` asociados a cada transacción realizada para facilitar luego la consulta por una intención de pago.
 
+
+## Errores en el procesamiento de una intención de pago
 
 En la siguiente tabla, puedes ver los principales motivos por los que esta solicitud puede **no** ser procesada:
 

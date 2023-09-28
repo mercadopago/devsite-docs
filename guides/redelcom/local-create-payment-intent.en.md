@@ -50,14 +50,14 @@ You should modify the following parameters taking into account these specificati
 
 | Parameter          | Description                                                                                          | Example         | Type         |
 |-------------------|------------------------------------------------------------------------------------------------------|-----------------|--------------|
-| `String total`    | **Required**. Total amount of the transaction. Only accepts CLP currency and a numerical amount, without dots or special characters. | 2000            | String       |
-| `String intent`   | **Required**. Corresponds to the type of intention to be requested. In this case, we will use the `Intent.ACTION_SEND` parameter, which corresponds to creating a payment intention. | `Intent.ACTION_SEND` | String |
-| `userTransactionId` | **Optional**. You can include a reference code for the payment request, replacing "DEMO1234" with the chosen code. | Transaction1234 | Alphanumeric |
-| `description`     | **Optional**. You can include a payment description, which will be displayed on the payment screen. Remember to replace "Description for your transaction" with the desired description. | Item1           | Alphanumeric |
-| `payment_type`    | **Optional**. Select the payment method to be used (if omitted, it must be selected on the POS). You should replace "TIPO_PAGO". | • "CASH" <br>• "CARD" <br>• "WALLET" (QR Payments) <br>• "NON_CASH" (Allows selection on the POS between: "CARDS AND WALLET") <br>• "NON_WALLET" (Allows selection on the POS between: "CASH AND CARDS") | Alphanumeric |
-| `request_tip`     | **Optional**. Manages the tip request. | `true` / `false` | Boolean. Default is false. |
-| `rdcDTE`          | **Optional**. Uses Redelcom services to generate the tax document. | `true` / `false` | Boolean. Default is false. |
-| `completeTransactions` | **Optional**. You must include it if you need to query the last `userTransactionId` later to maintain reconciliation in the transactions made. | - | Alphanumeric |
+| `String total`    | **Required**. <br>Total amount of the transaction. Only accepts CLP currency and a numerical amount, without dots or special characters. | 2000            | String       |
+| `String intent`   | **Required**. <br>Corresponds to the type of intention to be requested. In this case, we will use the `Intent.ACTION_SEND` parameter, which corresponds to creating a payment intention. | `Intent.ACTION_SEND` | String |
+| `userTransactionId` | **Optional**. <br>You can include a reference code for the payment request, replacing "DEMO1234" with the chosen code. | Transaction1234 | Alphanumeric |
+| `description`     | **Optional**. <br>You can include a payment description, which will be displayed on the payment screen. Remember to replace "Description for your transaction" with the desired description. | Item1           | Alphanumeric |
+| `payment_type`    | **Optional**. <br>Select the payment method to be used (if omitted, it must be selected on the POS). You should replace "TIPO_PAGO". | • "CASH" <br>• "CARD" <br>• "WALLET" (QR Payments) <br>• "NON_CASH" (Allows selection on the POS between: "CARDS AND WALLET") <br>• "NON_WALLET" (Allows selection on the POS between: "CASH AND CARDS") | Alphanumeric |
+| `request_tip`     | **Optional**. <br>Manages the tip request. | `true` / `false` | Boolean. Default is false. |
+| `rdcDTE`          | **Optional**. <br>Uses Redelcom services to generate the tax document. | `true` / `false` | Boolean. Default is false. |
+| `completeTransactions` | **Optional**. <br>You must include it if you need to query the last `userTransactionId` later to maintain reconciliation in the transactions made. | - | Alphanumeric |
 
 3. If you want to receive the response to the payment intention created from RDCPass, use the following code block:
 

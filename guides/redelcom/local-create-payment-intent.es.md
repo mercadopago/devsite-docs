@@ -50,14 +50,14 @@ Deberás modificar los siguientes parámetros teniendo en cuenta estas especific
 
 | Parámetro | Descripción | Ejemplo | Tipo |
 |---|---|---|---|
-| `String total` | **Obligatorio**. Monto total de la transacción. Solo se acepta la moneda CLP  y un monto numérico, sin puntos  ni caracteres especiales.  | 2000 | String |
-| `String intent` | **Obligatorio**. Corresponderá al tipo de intención a requerir. Para este caso, utilizaremos el parámetro `Intent.ACTION_SEND`, que se corresponde con la creación de una intención de pago. | `Intent.ACTION_SEND` | String |
-| `userTransactionId` | **Opcional**. Puedes incluir un código referencial a la solicitud de pago, reemplazando “DEMO1234” por el código elegido. | Transaction1234 | Alfanumérico. |
-| `description` | **Opcional**. Puedes incluir una descripción del pago, que se verá reflejada en la pantalla de pago. Recuerda reemplazar “Descripción para tu transacción” por la descripción deseada. | Artículo1 | Alfanumérico. |
-| `payment_type`  | **Opcional**. Selecciona el medio de pago a utilizar (si esto se omite, se deberá seleccionar en el POS). Deberás reemplazar “TIPO_PAGO”. | • “EFECTIVO” <br>• “TARJETA” <br>• “WALLET” (Pagos con QR) <br>• “SIN_EFECTIVO” (Permite seleccionar en el POS entre: “TARJETAS Y WALLET”) <br>• “SIN_WALLET” (Permite seleccionar en el POS entre: “EFECTIVO Y TARJETAS”)  | Alfanumérico. |
-| `request_tip` | **Opcional**. Maneja la solicitud de propina. | `true` /`false` | Booleano. Por defecto, false. |
-| `rdcDTE` | **Opcional**. Utiliza los servicios de Redelcom para generar el documento tributario. | `true` /`false` | Booleano. Por defecto, false. |
-| `completeTransactions` | **Opcional**. Debes incluirlo en caso de necesitar consultar el último userTransactionId más adelante, para mantener una conciliación en las transacciones realizadas. | - | Alfanumérico. |
+| `String total` | **Obligatorio**. <br>Monto total de la transacción. Solo se acepta la moneda CLP  y un monto numérico, sin puntos  ni caracteres especiales.  | 2000 | String |
+| `String intent` | **Obligatorio**. <br>Corresponderá al tipo de intención a requerir. Para este caso, utilizaremos el parámetro `Intent.ACTION_SEND`, que se corresponde con la creación de una intención de pago. | `Intent.ACTION_SEND` | String |
+| `userTransactionId` | **Opcional**. <br>Puedes incluir un código referencial a la solicitud de pago, reemplazando “DEMO1234” por el código elegido. | Transaction1234 | Alfanumérico |
+| `description` | **Opcional**. <br>Puedes incluir una descripción del pago, que se verá reflejada en la pantalla de pago. Recuerda reemplazar “Descripción para tu transacción” por la descripción deseada. | Artículo1 | Alfanumérico |
+| `payment_type`  | **Opcional**. <br>Selecciona el medio de pago a utilizar (si esto se omite, se deberá seleccionar en el POS). Deberás reemplazar “TIPO_PAGO”. | • “EFECTIVO” <br>• “TARJETA” <br>• “WALLET” (Pagos con QR) <br>• “SIN_EFECTIVO” (Permite seleccionar en el POS entre: “TARJETAS Y WALLET”) <br>• “SIN_WALLET” (Permite seleccionar en el POS entre: “EFECTIVO Y TARJETAS”)  | Alfanumérico |
+| `request_tip` | **Opcional**. <br>Maneja la solicitud de propina. | `true` /`false` | Booleano. Por defecto, false. |
+| `rdcDTE` | **Opcional**. <br>Utiliza los servicios de Redelcom para generar el documento tributario. | `true` /`false` | Booleano. Por defecto, false. |
+| `completeTransactions` | **Opcional**. <br>Debes incluirlo en caso de necesitar consultar el último userTransactionId más adelante, para mantener una conciliación en las transacciones realizadas. | - | Alfanumérico |
 
 3. Si quieres recibir la respuesta a la intención de pago creada desde RDCPass, utiliza el siguiente bloque de código:
 

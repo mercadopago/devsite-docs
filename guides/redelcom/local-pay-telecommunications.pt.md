@@ -6,7 +6,7 @@
 >
 > Para realizar uma intenção de pagamento de recargas de telecomunicações, é necessário [ter carregado dinheiro no POS](/developers/pt/docs/redelcom/local-integration/android/payments-processing/load-money-in-pos) anteriormente, e realizado uma [consulta dos parâmetros necessários para multiserviços](/developers/pt/docs/redelcom/local-integration/android/payments-processing/query-multiservice-parameters). Você precisará enviar os parâmetros `CompanyRecharge`, `CompanyNameRecharge`, `AmountRecharge` e `NumberRecharge`, obtidos na resposta à consulta de parâmetros para multiserviços.
 
-Se você já carregou saldo no POS e buscou os parâmetros necessários para multiserviços e deseja pagar recargas de telecomunicações, siga as etapas abaixo.
+Para pagar recargas de telecomunicações, siga as etapas abaixo.
 
 1. Adicione o seguinte intent-filter (Activity) ao arquivo AndroidManifest.xml do seu projeto:
 

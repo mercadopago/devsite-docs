@@ -70,4 +70,4 @@ if (Intent.ACTION_ANSWER.equals(action)) {
 >
 >  El campo `String userTransactionId = new JSONObject(intent.getStringExtra("userTransactionId"));` sólo deberá incorporarse si utilizaste el método para conocer el último `userTransactionId`.
 
-La estructura de la respuesta para la intención de consulta de pago será igual que aquella entregada durante la [creación de una intención de pago](/developers/es/docs/redelcom/additional-content/response-examples).
+La estructura de la respuesta para la intención de consulta de pago será igual que aquella entregada durante la creación de una intención de pago. Puedes verla en el [anexo: ejemplos de respuesta](/developers/es/docs/redelcom/additional-content/response-examples).
