@@ -1,4 +1,4 @@
-# Mini apps anifesto
+# Mini apps Manifesto
 
 Cada mini app deve conter um arquivo de manifesto chamado como `miniapp_manifest.json` no diretório raiz do arquivo **.zip**. O manifesto do mini app é um documento _JSON_ que contém parâmetros essenciais e opcionais utilizados para a configuração da integração com o Mercado Pago Super App.
 

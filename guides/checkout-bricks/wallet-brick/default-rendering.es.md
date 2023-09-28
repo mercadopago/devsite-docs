@@ -166,7 +166,7 @@ El resultado de renderizar el Brick debe ser como se muestra en la imagen a cont
 
 ## Habilitar pago con Mercado pago
 
-Para utilizar un método de pago (`paymentMethods`) del tipo "mercadoPago", se debe enviar una preferencia durante la inicialización del Brick, reemplazando el valor `&lt;PREFERENCE_ID&gt;` por el ID de la preferencia creada.
+Para utilizar un método de pago (`paymentMethods`) del tipo "mercadoPago", se debe enviar una preferencia durante la inicialización del Brick, reemplazando el valor `PREFERENCE_ID` por el ID de la preferencia creada.
 
 Para crear una preferencia en su backend, agrega el [SDK de Mercado Pago](/developers/es/docs/sdks-library/landing) y las [credenciales](/developers/es/guides/additional-content/your-integrations/credentials) necesarias a tu proyecto para habilitar el uso de preferencias:
 

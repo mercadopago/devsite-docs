@@ -19,13 +19,10 @@ Esta é a tela que a pessoa usuária que ainda não tem apps instalados encontra
 5. **Botão "Saber mais"**: leva para a tela de detalhe do app.
 6. **Botão "Instalar"**: inicia a instalação do aplicativo.
 
-> **Você deve**: 
-> <br><br>
+> **Você deve**:<br><br>
 > * Trazer a função principal do seu app no resumo.
-> * Usar a versão simplificada do logo, com menos detalhes, para que os usuários possam reconhecê-lo.
-> <br>
-> **Você não deve**:
-> <br><br>
+> * Usar a versão simplificada do logo, com menos detalhes, para que os usuários possam reconhecê-lo.<br>
+> **Você não deve**:<br><br>
 > * Usar o nome do Mercado Pago ou de concorrentes.
 > * Abreviar o nome do app ou usar siglas difíceis de identificar.
 > * Colocar apenas uma lista de benefícios no resumo.
@@ -66,11 +63,11 @@ Aqui, a pessoa usuária tem acesso aos detalhes, benefícios e proposta de valor
 1. **Nome do desenvolvedor**: identificação do desenvolvedor do aplicativo. Limitações: linha única/até 72 caracteres.
 2. **Carrossel de imagens**: área onde podem ser disponibilizados prints de funcionalidades, interações e soluções importantes do app.<br><br> 
 
-   * Limitações: até 4 imagens/74px x 139.11px. <br><br>
+   * Limitações: até 4 imagens/74px x 139.11px.<br><br>
 
-3. **Descrição**: área para incluir uma breve explicação das funcionalidades e benefícios do aplicativo. <br><br>
+3. **Descrição**: área para incluir uma breve explicação das funcionalidades e benefícios do aplicativo.<br><br>
 
-   * Limitações: até 2.000 caracteres. <br><br>
+   * Limitações: até 2.000 caracteres.<br><br>
 
 4. **Contato do desenvolvedor**: canais de contato para tirar dúvidas, fazer sugestões e saber mais sobre a empresa. 
 
@@ -80,16 +77,13 @@ Aqui, a pessoa usuária tem acesso aos detalhes, benefícios e proposta de valor
    * Telefone - linha única/até 53 caracteres.
    * Site - linha única/até 53 caracteres.
 
-> **Você deve**: 
-> <br><br>
+> **Você deve**:<br><br>
 > * Construir o texto de descrição em blocos e parágrafos curtos.
 > * Facilitar a leitura utilizando listas verticais ao invés de parágrafos muito extensos.
 > * Usar títulos claros que introduzam o assunto a ser tratado no parágrafo seguinte.
 > * Incluir imagens fáceis de identificar e entender, que retratem funcionalidades importantes do app.
-> * Usar cores com bom nível de contraste entre o fundo e a figura em primeiro plano das imagens.
-> <br>
-> **Você não deve**: 
-> <br><br>
+> * Usar cores com bom nível de contraste entre o fundo e a figura em primeiro plano das imagens.<br>
+> **Você não deve**:<br><br>
 > * Usar o nome do Mercado Pago ou de concorrentes.
 > * Construir parágrafos longos e sem separação de temas.
 > * Citar e fazer comparações com concorrentes
