@@ -22,7 +22,7 @@ Esta é a tela que a pessoa usuária que ainda não tem apps instalados encontra
 > **Você deve**:<br><br>
 > * Trazer a função principal do seu app no resumo.
 > * Usar a versão simplificada do logo, com menos detalhes, para que os usuários possam reconhecê-lo.
-> </br>
+> <br><br>
 > **Você não deve**:<br><br>
 > * Usar o nome do Mercado Pago ou de concorrentes.
 > * Abreviar o nome do app ou usar siglas difíceis de identificar.
