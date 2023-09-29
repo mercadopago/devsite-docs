@@ -5,7 +5,7 @@ Com o Mercado Pago, é possível oferecer benefícios exclusivos aos seus client
 ## Painel administrativo
 
 Através do Painel administrativo da sua loja, clique em **Editar** para definir as seguintes configurações:
-![Painel](/devsite-docs/images/nuvemshop/admin-pt.png)
+![Painel](/images/nuvemshop/admin-pt.png)
 
 ### Parcelas
 
@@ -31,7 +31,7 @@ Você também pode configurar as experiências de parcelamento de cada Checkout 
 ### Checkout Mercado Pago
 
 Nesta seção, você pode definir o **número máximo de meses**, com e sem juros, nos quais seus clientes poderão efetuar o pagamento utilizando o Checkout Mercado Pago:
-![Pro](/devsite-docs/images/nuvemshop/parc-pro-es.gif)
+![Pro](/images/nuvemshop/parc-pro-es.gif)
 
 ### Financiamento sem cartão de crédito
 
@@ -42,7 +42,7 @@ Ative esta opção para melhorar suas oportunidades de venda ao oferecer parcela
 ### Checkout Transparente
 
 Nesta seção, você pode definir o **número máximo de meses**, com e sem juros, nos quais seus clientes poderão efetuar o pagamento utilizando o Checkout Transparente:
-![API](/devsite-docs/images/nuvemshop/parc-api-es.gif)
+![API](/images/nuvemshop/parc-api-es.gif)
 
 ## Conta Mercado Pago
 
@@ -53,4 +53,4 @@ Na sua conta do Mercado Pago, você pode consultar e configurar o número de mes
 * Clique em **Vender em parcelas sem juros**.
 * Escolha quantos meses deseja oferecer, marcando a opção correspondente, e clique em avançar.
 * Defina os valores mínimos para oferecer parcelamento sem juros e clique em **Salvar**.
-![Conta](/devsite-docs/images/nuvemshop/conta-es.gif)
+![Conta](/images/nuvemshop/conta-es.gif)
