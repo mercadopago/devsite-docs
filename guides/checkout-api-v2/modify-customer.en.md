@@ -27,59 +27,57 @@ In the table below we describe all the attributes that can be modified. To make 
 
 [[[
 ```php
-
 <?php
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+  
+  $client = new CustomerClient();
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
-$customer = new MercadoPago\Customer();
-$customer->email = "user@user.com";
-$customer->first_name = "john";
-$customer->last_name = "wagner";
-$customer->phone = array("area_code" => "[FAKER][PHONE_NUMBER][AREA_CODE]", "number" => "001234567");
-$customer->identification = array("type" => "[FAKER][IDENTIFICATION][TYPE]", "number" => "12341234");
-$customer->default_address = "Home";
-$customer->address = array("zip_code" => "[FAKER][ADDRESS][ZIP_CODE]", "street_name" => "[FAKER][ADDRESS][STREET_NAME]", "street_number" => "2" );
-$customer->description = "Customer Information";
-$customer->default_card = "None";
-$customer->update();
-
+  $customer = $client->update("user_id", [
+    "email" => "my.user@example.com",
+    "first_name" => "john",
+    "last_name" => "wagner",
+    "phone" => array(
+      "area_code" => "11",
+      "number" => "001234567"
+    ),
+    "identification" => array(
+      "type" => "CPF",
+      "number" => "12341234"
+    ),
+    "default_address" => "Casa",
+    "address" => array(
+      "zip_code" => "52",
+      "street_name" => "Av. das Nações Unidas"
+      "street_number" => "3033"
+    )
+  ]);
 ?>
-
 ```
 ```node
+const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const customerClient = new Customer(client);
 
-var Mercadopago = require('mercadopago');
-Mercadopago.configure({
-access_token: 'ENV_ACCESS_TOKEN'
-});
+const customerBody = {
+  email: "my.user@example.com"
+  first_name: "john",
+  last_name: "wagner",
+  phone: {
+    area_code: "11",
+    number: "001234567"
+  }
+  identification: {
+    type: "CPF",
+    number: "12341234"
+  },
+  default_address: "Casa",
+  address: {
+    zip_code: "52",
+    street_name: "Av. das Nações Unidas"
+    street_number: "3033"
+  }
+};
 
-var customer_data = {
-"email": "test_payer_12345@testuser.com",
-"first_name": "john" ,
-"last_name": "wagner",
-"phone": {
-"area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
-"number": "001234567"
-},
-"identification": {
-"type": "[FAKER][IDENTIFICATION][TYPE]",
-"number": "12341234"
-},
-"default_address": "House",
-"address": {
-"zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-"street_name": "[FAKER][ADDRESS][STREET_NAME]",
-"street_number": "2"
-},
-"description": "Customer Information",
-"default_card": "None
-}
-
-Mercadopago.customers.update(customer_data).then(function (customer) {
-// code ...
-});
-
+customerClient.update({ customerBody }).then((result) => console.log(result));
 ```
 
 ```java

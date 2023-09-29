@@ -5,30 +5,25 @@ If you need specific customer data, such as ID, address or registration date, yo
 [[[
 
 ```php
-
 <?php
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+  
+  $client = new CustomerClient();
 
-$filters = array(
-"id"=>"247711297-jxOV430go9fx2e"
-);
-
-$customers = MercadoPago\Customer::search($filters);
-
+  $customer = $client->search(1, 0, ["email" => "my.user@example.com"]);
 ?>
-
 ```
 ```node
+const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const customerClient = new Customer(client);
 
-var filters = {
-email: "test_payer_12345@testuser.com"
-};
-
-Mercadopago.customers.search({
-qs: filters
-}).then(function (customer) {
-console.log(customer);
-});
-
+customerClient.search({ 
+  limit: 1, 
+  offset: 0, 
+  filters: {
+    email: 'my.user@example.com'
+  } 
+}).then((result) => console.log(result));
 ```
 ```java
 

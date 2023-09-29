@@ -5,24 +5,18 @@ You can consult the list of saved cards for a particular customer. To do so, sen
 [[[
 
 ```php
-
 <?php
-      $cards = MercadoPago\Card::all(array("customer_id" => "0000000000-abcdEfghiJlm"));
+  $customer_client = new CustomerClient();
+  $cards = $client->list("customer_id");
+  echo implode ($cards);
 ?>
-
 ```
 ```node
+const client = new MercadoPago({ accessToken: 'access_token' });
+const customerClient = new Customer(client);
 
-var filters = {
-id: customer_id
-};
-
-Mercadopago.customers.search({
-qs: filters
-}).then(function (customer) {
-console.log(customer);
-});
-
+customerClient.listCards({ customerId: '123' })
+	.then((result) => console.log(result));
 ```
 ```java
 

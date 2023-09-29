@@ -4,10 +4,12 @@ It is possible to consult the available payment methods and obtain a list with t
 
 [[[
 ```node
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
+const client = new MercadoPago({ accessToken: 'access_token' });
 
-var response = await mercadopago.payment_methods.listAll();
-var payment_methods = response.body;
+const paymentMethod = new PaymentMethod(client);
+
+paymentMethod.get()
+    .then((result) => { console.log(result); })
+    .catch((error) => { console.error(error); });
 ```
 ]]]

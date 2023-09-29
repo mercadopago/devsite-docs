@@ -66,19 +66,23 @@ Para obtener una lista detallada de todos los medios de pago disponibles para in
 [[[
 ```php
 <?php
+  use MercadoPago\MercadoPagoConfig;
 
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  MercadoPagoConfig::setAccessToken("ENV_ACCESS_TOKEN");
 
-  $payment_methods = MercadoPago::get("/v1/payment_methods");
+  $client = new PaymentMethodClient();
+  $payment_method = $client->get();
 
 ?>
 ```
 ```node
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
+import MercadoPago, { PaymentMethods } from 'mercadopago';
 
-var response = await mercadopago.payment_methods.listAll();
-var payment_methods = response.body;
+const client = new MercadoPago({ accessToken: 'access_token' });
+const paymentMethods = new PaymentMethods(client);
+
+paymentMethods.get().then((result) => console.log(result))
+  .catch((error) => console.log(error));
 ```
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
@@ -312,70 +316,55 @@ Para configurar pagos con **boleto bancario** o **pago en agencia de lotería**,
 [[[
 ```php
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
- require_once 'vendor/autoload.php';
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
- MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
- $payment = new MercadoPago\Payment();
- $payment->transaction_amount = 100;
- $payment->description = "Título del producto";
- $payment->payment_method_id = "bolbradesco";
- $payment->payer = array(
-     "email" => "PAYER_EMAIL",
-     "first_name" => "Test",
-     "last_name" => "User",
-     "identification" => array(
-         "type" => "DNI",
-         "number" => "19119119"
-      ),
-     "address"=>  array(
-         "zip_code" => "1264",
-         "street_name" => "Av. Caseros",
-         "street_number" => "3039",
-         "neighborhood" => "Parque Patricios",
-         "city" => "Buenos Aires",
-         "federal_unit" => "BA"
-      )
-   );
-
- $payment->save();
-
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "first_name" => $_POST['payerFirstName'],
+      "last_name" => $_POST['payerLastName'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
+import MercadoPago, { Payments } from 'mercadopago';
 
-var payment_data = {
-  transaction_amount: 100,
-  description: 'Título del producto',
-  payment_method_id: 'bolbradesco',
+const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const payments = new Payments(client);
+
+payments.create({
+  transaction_amount: req.transaction_amount,
+  token: req.token,
+  description: req.description,
+  installments: req.installments,
+  payment_method_id: req.paymentMethodId,
+  issuer_id: req.issuer,
   payer: {
-    email: 'PAYER_EMAIL',
-    first_name: 'Test',
-    last_name: 'User',
+    email: req.email,
     identification: {
-        type: 'DNI',
-        number: '19119119'
-    },
-    address:  {
-        zip_code: '1264',
-        street_name: 'Av. Caseros',
-        street_number: '3039',
-        neighborhood: 'Parque Patricios',
-        city: 'Buenos Aires',
-        federal_unit: 'BA'
+      type: req.identificationType,
+      number: req.number
     }
-  }
-};
-
-mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function (error) {
-
-});
-
+  } 
+}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error));
 ```
 ```java
 PaymentClient client = new PaymentClient();
