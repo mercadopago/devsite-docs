@@ -16,16 +16,8 @@ Para integrar o Checkout API, siga os passos abaixo.
 1. No Painel Administrativo da sua loja na Nuvemshop, acesse **Meus aplicativos - Ver todos os aplicativos**.
 2. Localize o plugin do Mercado Pago na lista das aplicações e clique em **Configurar aplicativo**.
 3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago e clique em **Editar**.
-4. Para aplicar um valor mínimo de parcelas para os pagamentos, informe o valor no campo disponível.
-----[mla, mlm, mpe, mco, mlu, mlc]---- 
-5. Se deseja aplicar descontos para pagamentos com Checkout transparente (Checkout API), **informe a porcentagem** para pagamentos em efectivo e cartões (crédito e débito).
-------------
-----[mlb]---- 
-5. Se deseja aplicar descontos para pagamentos com Checkout transparente, **informe a porcentagem** para pagamentos em boleto, cartão de crédito e Pix.
-------------
-6. Caso queira aplicar descontos para pagamentos com Checkout externo (Checkout Pro / Checkout Mercado Pago), **informe o percentual** no campo disponível.
-7. Para configurar as experiências de pagamento da sua loja, clique em **Editar no site do Mercado Pago**.
-8. Em Checkout transparente, escolha os meios de pagamento que deseja oferecer no ambiente de pagamento do Mercado Pago, podendo ser: 
+4. Para configurar as experiências de pagamento da sua loja, clique em **Editar no site do Mercado Pago**.
+5. Em Checkout transparente, escolha os meios de pagamento que deseja oferecer no ambiente de pagamento do Mercado Pago, podendo ser: 
 ----[mlb]---- 
 * **Pix**. Indique também um prazo de vencimento para pagamento com código Pix. Além disso, a opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
 * **Cartão de crédito**. Indique também o número máximo de parcelas permitidas.
