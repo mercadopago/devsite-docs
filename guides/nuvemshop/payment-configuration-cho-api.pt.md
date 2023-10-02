@@ -38,7 +38,6 @@ Para integrar o Checkout API, siga os passos abaixo.
 
 ------------
 6. Por fim, clique em **Salvar alterações**.
-
 ----[mlm, mla, mpe, mco, mlu, mlc]---- 
 <center>
 

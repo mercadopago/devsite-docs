@@ -1,8 +1,8 @@
 # Descontos, parcelamentos e juros
 
-Com o Mercado Pago, é possível oferecer benefícios exclusivos aos seus clientes, como créditos, descontos e condições especiais. Você pode personalizar essas configurações acessando o Painel administrativo da sua loja, diretamente pelo site do Mercado Pago e através da sua conta vinculada.
+Com o Mercado Pago, você tem a flexibilidade de oferecer benefícios exclusivos aos seus clientes, como créditos, descontos e condições especiais, de forma personalizada e opcional. Você pode personalizar essas configurações de acordo com suas necessidades, através do Painel Administrativo da sua loja, diretamente pelo site do Mercado Pago ou pela sua conta Mercado Pago vinculada.
 
-## Painel administrativo
+## Configuração através do painel administrativo da Tiendanube
 
 Através do Painel administrativo da sua loja, clique em **Editar** para definir as seguintes configurações:
 
@@ -10,37 +10,30 @@ Através do Painel administrativo da sua loja, clique em **Editar** para definir
 
 ### Parcelas
 
-* Valor mínimo da parcela: Essa configuração é opcional e permite que você estabeleça um limite mínimo para o valor das parcelas.
+* **Valor mínimo da parcela**: Essa configuração é opcional e permite que você estabeleça um limite mínimo para o valor das parcelas.
 
 ### Descontos
 
 ----[mlm, mla, mpe, mco, mlu, mlc]----
-#### Checkout API
-
-Essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com Checkout API. Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
-* Cartão de crédito
-* Cartão de débito
-* Redes de pagamento efectivo
+* **Checkout API**: Essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com Checkout API. Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
+   * Cartão de crédito
+   * Cartão de débito
+   * Redes de pagamento efectivo
 ------------
 ----[mlb]----
-#### Checkout Transparente
-
-Essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com Checkout Transparente. Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
-* Boleto bancário
-* Cartão de crédito
-* Pix
+* **Checkout Transparente**: Essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com Checkout Transparente. Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
+   * Boleto bancário
+   * Cartão de crédito
+   * Pix
 
 ------------
+* **Checkout Externo (Checkout Pro)**: Você pode definir um desconto global em porcentagem para clientes que escolherem o Checkout externo. Insira o valor em porcentagem a ser deduzido do total da compra.
 
-#### Checkout Externo
-
-Você pode definir um desconto global em porcentagem para clientes que escolherem o Checkout externo. Insira o valor em porcentagem a ser deduzido do total da compra.
-
-## Painel administrativo do Checkout Mercado Pago na Nuvemshop
+## Configuração através do Painel administrativo do Checkout Mercado Pago na Nuvemshop
 
 Você também pode configurar as experiências de parcelamento de cada Checkout em sua loja através do próprio Painel administrativo do Checkout Mercado Pago. Para fazer isso, clique em **Editar no site do Mercado Pago**.
 
-### Checkout Mercado Pago
+### Checkout Mercado Pago (Checkout Pro)
 
 Nesta seção, você pode definir o **número máximo de meses**, com e sem juros, nos quais seus clientes poderão efetuar o pagamento utilizando o Checkout Mercado Pago:
 
@@ -58,7 +51,7 @@ Nesta seção, você pode definir o **número máximo de meses**, com e sem juro
 
 ![API](/images/nuvemshop/parc-cho-api-pt.gif)
 
-## Conta Mercado Pago
+## Configuração através da conta Mercado Pago
 
 Na sua conta do Mercado Pago, você pode consultar e configurar o número de meses sem juros que deseja oferecer para seus clientes. Nesta opção, seus clientes podem comprar em parcelas sem juros, e você assume a taxa de financiamento.
 

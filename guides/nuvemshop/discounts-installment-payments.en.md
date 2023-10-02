@@ -1,6 +1,6 @@
 # Discounts, installments, and interest
 
-With Mercado Pago, you can offer exclusive benefits to your customers, such as credits, discounts, and special conditions. You can customize these settings by accessing your store's Administration Panel, directly from the Mercado Pago website, and through your linked account.
+With Mercado Pago, you have the flexibility to offer exclusive benefits to your customers, such as credits, discounts, and special conditions, in a personalized and optional manner. You can customize these settings according to your needs, through your store's Administrative Panel, directly on the Mercado Pago website, or from your linked Mercado Pago account.
 
 ## Administration panel
 
@@ -14,30 +14,25 @@ Within your store's Administration Panel, click on **Edit** to configure the fol
 
 ### Discounts
 ----[mlm, mla, mpe, mco, mlu, mlc]----
-#### Checkout API
-These optional settings allow you to establish specific discounts for different payment methods with Transparent Checkout. Configure the discount in percentage applied to customers who choose to pay with:
-* Bank slip
-* Credit card
-* Pay in cash networks
+* **Checkout API**: These optional settings allow you to establish specific discounts for different payment methods with Checkout API. Configure the discount in percentage applied to customers who choose to pay with:
+   * Bank slip
+   * Credit card
+   * Pay in cash networks
 ------------
 ----[mlb]----
-#### Transparent Checkout
-These optional settings allow you to establish specific discounts for different payment methods with Transparent Checkout. Configure the discount in percentage applied to customers who choose to pay with:
-* Bank slip
-* Credit card
-* Pix
+* **Transparent Checkout**: These optional settings allow you to establish specific discounts for different payment methods with Transparent Checkout. Configure the discount in percentage applied to customers who choose to pay with:
+   * Bank slip
+   * Credit card
+   * Pix
 
 ------------
-
-#### External Checkout
-
-You can define a global percentage discount for customers who choose the External Checkout. Enter the percentage value to deduct from the total purchase amount.
+* **External Checkout (Checkout Pro)**: You can define a global percentage discount for customers who choose the External Checkout. Enter the percentage value to deduct from the total purchase amount.
 
 ## Mercado Pago checkout administration panel in Nuvemshop
 
 You can also configure installment experiences for each Checkout in your store through the Mercado Pago Checkout Administration Panel. To do this, click on **Edit on the Mercado Pago site**.
 
-### Mercado Pago Checkout
+### Mercado Pago Checkout (Checkout Pro)
 
 In this section, you can set the **maximum number of months**, with and without interest, in which your customers can make payments using the Mercado Pago Checkout:
 
