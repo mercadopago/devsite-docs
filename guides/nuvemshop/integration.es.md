@@ -7,7 +7,7 @@ Para integrar Mercado Pago a tu Tiendanube, sigue los procedimientos a continuac
 >
 > Atención
 >
-> Si estás usando la versión anterior del plugin de Mercado Pago, consulte la [documentación](/developers/es/docs/nuvemshop/how-tos/migration) para saber cómo migrar a la versión actual.
+> Si estás usando la versión anterior del plugin de Mercado Pago, consulta la [documentación](/developers/es/docs/nuvemshop/how-tos/migration) para saber cómo migrar a la versión actual.
 
 1. Accede a la [Tienda de aplicaciones](https://www.tiendanube.com/mx/tienda-aplicaciones-nube) y busca "Mercado Pago" en la barra de búsqueda en la parte superior de la página.
 2. Selecciona el plugin de Mercado Pago de los resultados de la búsqueda y haz clic en **Instalar aplicación**.
