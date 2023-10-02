@@ -8,7 +8,7 @@ Para integrar Checkout Pro, sigue los pasos a continuación.
 2. Localiza el plugin Mercado Pago en la lista de aplicaciones y haz clic en **Configurar aplicación**.
 3. En la lista de métodos de pago, localiza el plugin Mercado Pago y haz clic en **Editar**.
 4. Para configurar las experiencias de pago en tu tienda, haz clic en **Editar en el sitio de Mercado Pago**.
-5. En el Checkout Mercado Pago, elige las formas de pago que quieres ofrecer en el entorno de pago de Mercado Pago, las cuales pueden ser:
+5. En el Checkout Mercado Pago, elige las formas de pago que quieres ofrecer en el entorno de pago de Mercado Pago, que pueden ser:
 ----[mla, mpe, mco, mlu, mlc]---- 
  * **Tarjeta de crédito**. Seleccione las tarjetas que desea habilitar en su tienda y elige también el **número máximo de cuotas permitidas para las compras a plazos**. 
  * **Tarjeta de débito**. Seleccione las tarjetas que desea habilitar en su tienda. 
