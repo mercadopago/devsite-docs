@@ -17,7 +17,14 @@ Para integrar o Checkout API, siga os passos abaixo.
 2. Localize o plugin do Mercado Pago na lista das aplicações e clique em **Configurar aplicativo**.
 3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago e clique em **Editar**.
 4. Para configurar as experiências de pagamento da sua loja, clique em **Editar no site do Mercado Pago**.
+----[mlb]----
 5. Em Checkout Transparente, escolha os meios de pagamento que deseja oferecer no ambiente de pagamento do Mercado Pago, podendo ser: 
+
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+5. Em Checkout API, escolha os meios de pagamento que deseja oferecer no ambiente de pagamento do Mercado Pago, podendo ser: 
+
+------------
 ----[mlb]---- 
 * **Pix**. Indique também um prazo de vencimento para pagamento com código Pix. Além disso, a opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [assista o vídeo](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
 * **Cartão de crédito**. Indique também o número máximo de parcelas permitidas.
@@ -32,13 +39,6 @@ Para integrar o Checkout API, siga os passos abaixo.
 ------------
 6. Por fim, clique em **Salvar alterações**.
 
-----[mlb]----
-</center>
-
-![Payments Checkout API - Nuvemshop](/images/nuvemshop/cho-api-all-es.gif)
-
-</center>
-------------
 ----[mlm, mla, mpe, mco, mlu, mlc]---- 
 </center>
 

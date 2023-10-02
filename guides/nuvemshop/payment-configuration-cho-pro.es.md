@@ -9,10 +9,16 @@ Para integrar Checkout Pro, sigue los pasos a continuación.
 3. En la lista de métodos de pago, localiza el plugin Mercado Pago y haz clic en **Editar**.
 4. Para configurar las experiencias de pago de su tienda, haz clic en **Editar en el sitio de Mercado Pago**.
 5. En el Checkout Mercado Pago, elige las formas de pago que quieres ofrecer en el entorno de pago de Mercado Pago, las cuales pueden ser:
-----[mla, mpe, mco, mlu, mlc]---- 
+----[mla]---- 
  * **Tarjeta de crédito**. Seleccione las tarjetas que desea habilitar en su tienda y elige también el **número máximo de cuotas permitidas para las compras a plazos**. 
  * **Tarjeta de débito**. Seleccione las tarjetas que desea habilitar en su tienda. 
  * **Otros medios de pago**: seleccione otros tipos de medios de pago que desee habilitar en su tienda, como Financiación sin tarjeta (si, además, quieres mostrar esta opción en el checkout de tu tienda, consulte la [documentación](/developers/es/docs/nuvemshop/payments-configuration/mercado-credito)). Indique también, en el campo inferior, el **número de días de vencimiento del ticket** del medio de pago que lo requiera.
+
+------------ 
+----[mpe, mco, mlu, mlc]---- 
+ * **Tarjeta de crédito**. Seleccione las tarjetas que desea habilitar en su tienda y elige también el **número máximo de cuotas permitidas para las compras a plazos**. 
+ * **Tarjeta de débito**. Seleccione las tarjetas que desea habilitar en su tienda. 
+ * **Otros medios de pago**: seleccione otros tipos de medios de pago que desee habilitar en su tienda.
 
 ------------ 
 ----[mlm]---- 
@@ -29,13 +35,6 @@ Para integrar Checkout Pro, sigue los pasos a continuación.
 ------------ 
 6. Finalmente, haz clic en **Guardar cambios**.
 
-----[mlb]---- 
-<center>
-
-![Payments Checkout Pro - Nuvemshop](/images/nuvemshop/cho-pro-all-es.gif)
-
-</center>
-------------
 ----[mlm, mla, mpe, mco, mlu, mlc]---- 
 <center>
 
