@@ -63,4 +63,8 @@ Na sua conta do Mercado Pago, você pode consultar e configurar o número de mes
 * Escolha quantos meses deseja oferecer, marcando a opção correspondente, e clique em avançar.
 * Defina os valores mínimos para oferecer parcelamento sem juros e clique em **Salvar**.
 
+<center>
+
 ![Conta](/images/nuvemshop/contapt.gif)
+
+</center>

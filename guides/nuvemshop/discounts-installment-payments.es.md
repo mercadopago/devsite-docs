@@ -63,4 +63,8 @@ Dentro de tu cuenta de Mercado Pago, puedes consultar y configurar el número de
 * Selecciona cuántos meses deseas ofrecer marcando la opción correspondiente y haz clic en continuar.
 * Establece los valores mínimos para ofrecer cuotas sin interés y haz clic en **Guardar**.
 
+<center>
+
 ![Cuenta](/images/nuvemshop/conta-es.gif)
+
+</center>
