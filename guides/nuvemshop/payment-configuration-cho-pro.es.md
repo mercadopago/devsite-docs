@@ -12,7 +12,7 @@ Para integrar Checkout Pro, sigue los pasos a continuación.
 ----[mla, mpe, mco, mlu, mlc]---- 
  * **Tarjeta de crédito**. Selecciona las tarjetas que deseas habilitar en tu tienda y elige también el **número máximo de cuotas permitidas para las compras a plazos**. 
  * **Tarjeta de débito**. Selecciona las tarjetas que desea habilitar en tu tienda. 
- * **Otros medios de pago**: seleccione otros tipos de medios de pago que desee habilitar en su tienda, como Financiación sin tarjeta (si, además, quieres mostrar esta opción en el checkout de tu tienda, consulte la [documentación](/developers/es/docs/nuvemshop/payments-configuration/mercado-credito)). Indique también, en el campo inferior, el **número de días de vencimiento del ticket** del medio de pago que lo requiera.
+ * **Otros medios de pago**: selecciona otros medios de pago que deseas habilitar en tu tienda, como Financiación sin tarjeta (si, además, quieres mostrar esta opción en el checkout de tu tienda, consulta la [documentación](/developers/es/docs/nuvemshop/payments-configuration/mercado-credito)). Indica también, en el campo inferior, el **número de días de vencimiento del ticket** del medio de pago que lo requiera.
 
 ------------ 
 ----[mlm]---- 
