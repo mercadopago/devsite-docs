@@ -23,7 +23,7 @@ Dentro del Panel de administración de tu tienda, haz clic en **Editar** para co
 ------------
 
 Estas configuraciones opcionales te permiten establecer descuentos específicos para diferentes métodos de pago con Checkout Transparente. Configura el descuento en porcentaje aplicado a los clientes que elijan pagar con:
-* Boleto bancario
+* Boleto bancário
 * Tarjeta de crédito
 * Pix
 
@@ -31,9 +31,9 @@ Estas configuraciones opcionales te permiten establecer descuentos específicos 
 
 Puedes definir un descuento global en porcentaje para los clientes que elijan el Checkout externo. Ingresa el valor en porcentaje a deducir del total de la compra.
 
-## Panel de administración del Checkout Mercado Pago en Nuvemshop
+## Panel de administración del Checkout Mercado Pago en Tiendanube
 
-También puedes configurar las experiencias de cuotas para cada Checkout en tu tienda a través del Panel de administración del Checkout Mercado Pago. Para hacerlo, haz clic en **Editar en el sitio de Mercado Pago**.
+También puedes configurar las experiencias de pago en veces para cada Checkout en tu tienda a través del Panel de administración del Checkout Mercado Pago dentro de Tiendanube. Para hacerlo, haz clic en **Editar en el sitio de Mercado Pago**.
 
 ### Checkout Mercado Pago
 
