@@ -56,7 +56,6 @@ Una vez que hayas realizado esta configuración inicial, configura también las 
 Si quieres cambiar la cuenta de Mercado Pago asociada a tu tienda, es necesario cerrar y reinstalar la aplicación. Para hacerlo, sigue los pasos a continuación.
 ----[mlm, mla, mlb]----
 1. Si todavía estás conectado a tu cuenta de Mercado Pago en un navegador, desconéctate accediendo al "Menú de opciones" y, luego, haz clic en **Salir**.
-   ![Salir](/images/nuvemshop/desc-es.gif)
 2. En el Panel Administrativo de tu Tiendanube, accede a **Mis aplicaciones > Ver todas las aplicaciones**. 
 3. Busca el plugin de Mercado Pago, localízalo en la lista de métodos de pago y haz clic en **Desinstalar**.
    ![Desinstalar](/images/nuvemshop/desin-es.gif)

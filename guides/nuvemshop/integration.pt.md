@@ -51,7 +51,6 @@ Se, por algum motivo, você precisar trocar a conta atual do Mercado Pago por ou
 
 ----[mlm, mla, mlb]----
 1. Caso ainda esteja conectado a sua conta Mercado Pago em um navegador, desconecte-a clicando em **Encerrar sessão**.
-   ![Encerrar](/images/nuvemshop/desc-pt.gif)
 2. No Painel Administrativo da sua loja na Nuvemshop, acesse **Meus aplicativos**. 
 3. Faça uma busca pelo plugin do Mercado Pago, localize-o na lista de meios de pagamentos e clique em **Desinstalar**.
    ![Desinstalar](/images/nuvemshop/desin-pt.gif)
