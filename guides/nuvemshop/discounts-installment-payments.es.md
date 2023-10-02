@@ -37,7 +37,7 @@ También puedes configurar las experiencias de pago en veces para cada Checkout 
 
 ### Checkout Mercado Pago
 
-En esta sección, puedes establecer el **número máximo de meses**, con y sin interés, en los cuales tus clientes podrán realizar el pago utilizando el Checkout Mercado Pago:
+En esta sección, puedes establecer el **número máximo de meses**, con y sin interés, en los que tus clientes podrán realizar el pago utilizando el Checkout Mercado Pago:
 
 ![Pro](/images/nuvemshop/parc-pro-es.gif)
 ----[mlm, mla, mpe, mco, mlu, mlc]----
