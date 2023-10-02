@@ -14,7 +14,7 @@ Para integrar Mercado Pago a tu Tiendanube, sigue los procedimientos a continuac
 3. Deberás otorgar los permisos necesarios para la aplicación. Haz clic en **Aceptar y empezar a usar**.
 4. Serás redirigido a la página de Mercado Pago, donde deberás iniciar sesión con tus datos. Ten en cuenta que **la integración se llevará a cabo automáticamente desde la cuenta de Mercado Pago abierta en el navegador durante la instalación**, por lo que deberás verificar si ya has iniciado sesión previamente.
 5. Lee con atención la información sobre los permisos solicitados. Marca la casilla de verificación para aceptarlos y haz clic en **Continuar**.
-6. Revise nuevamente los permisos y, si estás seguro, haz clic en **Autorizar esta aplicación** para autorizar la conexión.
+6. Revisa nuevamente los permisos y, si estás seguro, haz clic en **Autorizar esta aplicación** para autorizar la conexión.
 
 ------------
 ----[mlm, mla]----
