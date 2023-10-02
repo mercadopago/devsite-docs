@@ -21,6 +21,6 @@ To integrate the Checkout API, follow the steps below.
 * **Pay in cash networks**. Also indicate the number of days for the ticket to expire (including Saturday and Sunday).
 
 ------------
-9. Finally, click on **Save changes**.
+6. Finally, click on **Save changes**.
 
 Ready! The Checkout API is now ready to receive payments from your store.

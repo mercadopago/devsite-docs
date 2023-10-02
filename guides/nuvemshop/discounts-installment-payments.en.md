@@ -6,7 +6,7 @@ With Mercado Pago, you can offer exclusive benefits to your customers, such as c
 
 Within your store's Administration Panel, click on **Edit** to configure the following options:
 
-![Panel](/images/nuvemshop/admines.gif)
+![Panel](/images/nuvemshop/admines.png)
 
 ### Installments
 
@@ -38,7 +38,7 @@ You can also configure installment experiences for each Checkout in your store t
 
 In this section, you can set the **maximum number of months**, with and without interest, in which your customers can make payments using the Mercado Pago Checkout:
 
-![Pro](/images/nuvemshop/parc-pro-en.gif)
+![Pro](/images/nuvemshop/parc-pro-es.gif)
 ----[mlm, mla, mpe, mco, mlu, mlc]----
 #### Checkout API
 
@@ -50,7 +50,7 @@ In this section, you can set the **maximum number of months**, with and without 
 
 In this section, you can set the **maximum number of months**, with and without interest, in which your customers can make payments using the Transparent Checkout:
 
-![API](/images/nuvemshop/parc-api-en.gif)
+![API](/images/nuvemshop/parc-api-es.gif)
 
 ## Mercado Pago account
 
@@ -64,6 +64,6 @@ Within your Mercado Pago account, you can check and configure the number of inte
 
 <center>
 
-![Account](/images/nuvemshop/conta-en.gif)
+![Account](/images/nuvemshop/conta-es.gif)
 
 </center>

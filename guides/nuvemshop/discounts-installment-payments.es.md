@@ -6,7 +6,7 @@ Con Mercado Pago, puedes ofrecer beneficios exclusivos a tus clientes, como cré
 
 Dentro del Panel de administración de tu tienda, haz clic en **Editar** para configurar las siguientes opciones:
 
-![Panel](/images/nuvemshop/admines.gif)
+![Panel](/images/nuvemshop/admines.png)
 
 ### Cuotas
 
