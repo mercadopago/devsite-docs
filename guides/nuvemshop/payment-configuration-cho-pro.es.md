@@ -9,28 +9,33 @@ Para integrar Checkout Pro, sigue los pasos a continuación.
 3. En la lista de métodos de pago, localiza el plugin Mercado Pago y haz clic en **Editar**.
 4. Para configurar las experiencias de pago de su tienda, haz clic en **Editar en el sitio de Mercado Pago**.
 5. En el Checkout Mercado Pago, elige las formas de pago que quieres ofrecer en el entorno de pago de Mercado Pago, las cuales pueden ser:
-----[mla]---- 
+----[mla, mpe, mco, mlu, mlc]---- 
  * **Tarjeta de crédito**. Seleccione las tarjetas que desea habilitar en su tienda y elige también el **número máximo de cuotas permitidas para las compras a plazos**. 
  * **Tarjeta de débito**. Seleccione las tarjetas que desea habilitar en su tienda. 
  * **Otros medios de pago**: seleccione otros tipos de medios de pago que desee habilitar en su tienda, como Financiación sin tarjeta (si, además, quieres mostrar esta opción en el checkout de tu tienda, consulte la [documentación](/developers/es/docs/nuvemshop/payments-configuration/mercado-credito)). Indique también, en el campo inferior, el **número de días de vencimiento del ticket** del medio de pago que lo requiera.
 
 ------------ 
 ----[mpe, mco, mlu, mlc]---- 
- * **Tarjeta de crédito**. Seleccione las tarjetas que desea habilitar en su tienda y elige también el **número máximo de cuotas permitidas para las compras a plazos**. 
- * **Tarjeta de débito**. Seleccione las tarjetas que desea habilitar en su tienda. 
- * **Otros medios de pago**: seleccione otros tipos de medios de pago que desee habilitar en su tienda.
+ * **Tarjeta de crédito**. Selecciona las tarjetas que desea habilitar en tu tienda y elige también el **número máximo de cuotas permitidas para las compras a plazos**. 
+ * **Tarjeta de débito**. Selecciona las tarjetas que desea habilitar en tu tienda. 
+ * **Otros medios de pago**: Selecciona otros tipos de medios de pago que desea habilitar en tu tienda.
 
 ------------ 
 ----[mlm]---- 
- * **Tarjeta de crédito**. Seleccione las tarjetas que desea habilitar en su tienda y elige también el **número máximo de meses permitidos para las compras a plazos**. 
- * **Tarjeta de débito**. Seleccione las tarjetas que desea habilitar en su tienda. 
- * **Otros medios de pago**. Seleccione otros tipos de medios de pago que desee habilitar en su tienda, como Financiamiento sin tarjeta (si, además, quieres mostrar esta opción en el checkout de tu tienda, consulte la [documentación](/developers/es/docs/nuvemshop/payments-configuration/mercado-credito)), Paycash, OXXO, entre otros. Indique también, en el campo inferior, el **número de días de vencimiento del ticket** del medio de pago que lo requiera.
+ * **Tarjeta de crédito**. Selecciona las tarjetas que desea habilitar en su tienda y elige también el **número máximo de meses permitidos para las compras a plazos**. 
+ * **Tarjeta de débito**. Selecciona las tarjetas que deseas habilitar en tu tienda. 
+ * **Otros medios de pago**. Selecciona otros medios de pago que deseas habilitar en tu tienda, como  Paycash, OXXO, o Financiamiento sin tarjeta (si, además, quieres mostrar esta opción en el checkout de tu tienda, consulta la [documentación](/developers/es/docs/nuvemshop/payments-configuration/mercado-credito)), entre otros. Indica también, en el campo inferior, el **número de días de vencimiento del ticket** del medio de pago que lo requiera.
 
 ------------
 ----[mlb]---- 
- * **Tarjeta de crédito**. Seleccione las tarjetas que desea habilitar en su tienda y elige también el **número máximo de cuotas permitidas para las compras a plazos**. 
- * **Tarjeta de débito**. Seleccione las tarjetas que desea habilitar en su tienda. 
- * **Otros medios de pago**: seleccione otros tipos de medios de pago que desee habilitar en su tienda, como Pix, Financiación sin tarjeta (si, además, quieres mostrar esta opción en el checkout de tu tienda, consulte la [documentación](/developers/es/docs/nuvemshop/payments-configuration/mercado-credito)), boleto bancario (indique también, en el campo inferior, el **número de días de vencimiento del boleto**), entre otros. La opción de pago Pix solo se mostrará si existe una clave Pix registrada en Mercado Pago. Si aún no lo ha creado, consulte el [video](https://www.youtube.com/watch?v=60tApKYVnkA) y vea el paso a paso.
+ * **Tarjeta de crédito**. Selecciona las tarjetas que deseas habilitar en tu tienda y elige también el **número máximo de cuotas permitidas para las compras a plazos**. 
+ * **Tarjeta de débito**. Selecciona las tarjetas que desea habilitar en tu tienda. 
+ * **Otros medios de pago**: selecciona otros medios de pago que deseas habilitar en su tienda, como Pix, boleto bancário, o Financiación sin tarjeta (si, además, quieres mostrar esta opción en el checkout de tu tienda, consulte la [documentación](/developers/es/docs/nuvemshop/payments-configuration/mercado-credito)), entre otros. 
+ 
+La opción de pago Pix solo se mostrará si existe una clave Pix registrada en Mercado Pago. Si aún no lo has creado, consulta el [video](https://www.youtube.com/watch?v=60tApKYVnkA) y ve el paso a paso.
+ 
+Para habilitar boleto bancário, deberás también indicar en el campo inferior el **número de días de vencimiento del boleto**.
+ 
 
 ------------ 
 6. Finalmente, haz clic en **Guardar cambios**.
