@@ -25,21 +25,15 @@ Essas configurações opcionais permitem que você configure descontos específi
 
 Você pode definir um desconto global em porcentagem para clientes que escolherem o Checkout externo. Insira o valor em porcentagem a ser deduzido do total da compra.
 
-## Site Mercado Pago
+## Painel administrativo do Checkout Mercado Pago na Nuvemshop
 
-Você também pode configurar as experiências de parcelamento de cada Checkout em sua loja através do próprio site do Mercado Pago.
+Você também pode configurar as experiências de parcelamento de cada Checkout em sua loja através do próprio Painel administrativo do Checkout Mercado Pago. Para fazer isso, clique em **Editar no site do Mercado Pago**.
 
 ### Checkout Mercado Pago
 
 Nesta seção, você pode definir o **número máximo de meses**, com e sem juros, nos quais seus clientes poderão efetuar o pagamento utilizando o Checkout Mercado Pago:
 
 ![Pro](/images/nuvemshop/parc-pro-pt.gif)
-
-### Financiamento sem cartão de crédito
-
-Ative esta opção para melhorar suas oportunidades de venda ao oferecer parcelamento aos seus clientes, sem a necessidade de um cartão de crédito. 
-
-* **Financiamento sem cartão de crédito** - Seus clientes podem pagar em até 12 parcelas mensais.
 
 ### Checkout Transparente
 

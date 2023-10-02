@@ -7,7 +7,7 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 >
 > Atenção
 >
-> Caso esteja utilizando a antiga versão do plugin do Mercado Pago, [clique aqui](/developers/pt/docs/nuvemshop/how-tos/migration) para saber como migrar para a versão atual.
+> Caso esteja utilizando a antiga versão do plugin do Mercado Pago, acesse a [documentação](/developers/pt/docs/nuvemshop/how-tos/migration) para saber como migrar para a versão atual.
 
 1. Acesse a [Loja de aplicativos](https://www.nuvemshop.com.br/loja-aplicativos-nuvem) e busque por "Mercado Pago" na barra de pesquisa na parte superior da página.
 3. Selecione o plugin do Mercado Pago dentre os resultados da pesquisa e clique em **Instalar aplicativo**.
