@@ -8,7 +8,7 @@
 
 Para poder processar pagamentos via Deep Link, você precisará chamar a URL `https://www.mercadopago.com/point/integrations`.
 
-Na tabela abaixo, você pode ver os parâmetros que você pode incluir, sejam obrigatórios ou não, e suas descrições.
+Na tabela a seguir, estão listados os parâmetros disponíveis, sejam eles obrigatórios ou opcionais, juntamente com suas respectivas descrições.
 
 | Parâmetro | Descrição |
 |---|---|

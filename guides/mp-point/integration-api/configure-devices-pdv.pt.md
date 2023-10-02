@@ -4,7 +4,7 @@
 >
 > Importante
 >
-> Antes de configurar o dispositivo Point no modo Ponto de Venda, você deve acessar sua conta do Mercado Pago e ter criado um [aplicativo](/developers/pt/docs/mp-point/additional-content/your-integrations/dashboard) com **PointdeMercadoPago** como o produto a ser integrado.
+Antes de iniciar a configuração do dispositivo Point em modo Ponto de Venda, é necessário acessar sua conta no Mercado Pago e criar um [aplicativo](/developers/pt/docs/mp-point/additional-content/your-integrations/dashboard), selecionando **PointdeMercadoPago** como o produto a ser integrado. Não se esqueça também de verificar suas [credenciais de produção](/developers/pt/docs/mp-point/additional-content/your-integrations/credentials), para assegurar a gestão adequada da integração.
 >
 > Além disso, lembre-se de acessar suas [credenciais de produção](/developers/pt/docs/mp-point/additional-content/your-integrations/credentials) para gerenciar corretamente sua integração.
 
@@ -22,9 +22,9 @@ Em seguida, você deve criar um PDV usando o endpoint [Criar PDV](/developers/pt
 
 ## Associe o dispositivo Point à sua conta do Mercado Pago
 
-Para vincular o dispositivo Point à sua conta do Mercado Pago, você precisa ter o aplicativo do Mercado Pago instalado em seu dispositivo móvel.
+Para vincular seu dispositivo Point à sua conta Mercado Pago, é necessário ter o aplicativo Mercado Pago instalado no seu celular.
 
-Faça login no aplicativo com seu nome de usuário e senha e toque no ícone do QR code para escanear o código que aparece quando você liga o dispositivo Point. Dessa forma, o dispositivo será vinculado à sua conta.
+Abra o aplicativo e faça login usando seu nome de usuário e senha. Em seguida, toque no ícone de QR code e escaneie o código exibido ao ligar o dispositivo Point. Ao fazer isso, você estará vinculando o dispositivo à sua conta de maneira prática e segura.
 
 > NOTE
 >
@@ -42,7 +42,7 @@ Para fazer isso, você pode acessar o [site do Mercado Pago](https://www.mercado
 >
 > Nota
 >
-> Você também pode configurar a loja e o PDV diretamente do dispositivo Point, uma vez que esteja vinculado. O próprio dispositivo irá guiá-lo se você escolher configurá-lo dessa maneira.
+> Uma vez que o dispositivo Point esteja vinculado, é possível configurar sua loja e o PDV diretamente por ele. O dispositivo exibirá orientações passo a passo caso opte por essa configuração.
 
 ## Ative o modo PDV no dispositivo Point
 

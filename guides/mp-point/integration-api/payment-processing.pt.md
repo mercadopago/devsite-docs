@@ -187,7 +187,7 @@ Em resposta, você receberá algo semelhante a isso:
 
 Tenha em mente que as intenções de pagamento são a base para o processamento de pagamentos com dispositivos Point. Por esse motivo, é importante que você registre e salve os dados obtidos durante sua criação, especialmente o `id`.
 
-> NOTA
+> NOTE
 >
 > Recomendação
 >

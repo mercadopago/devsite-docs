@@ -8,7 +8,7 @@ O simulador possui dois modos de uso:
 
 * **PDV mode**: simula a integração de um sistema completo (dispositivo e Ponto de Venda) com nossa API de Integrações. Acesse o [Simulador PDV Mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true).
 
- > Para usar o simulador não é necessário executar o serviço [Alterar o modo de operação](/developers/pt/reference/integrations_api/_point_integration-api_devices_device-id/patch) porque, por padrão, o simulador funciona no modo PDV.
+ > Não é preciso ativar o serviço [Alterar o modo de operação](/developers/pt/reference/integrations_api/_point_integration-api_devices_device-id/patch) ao usar o simulador, pois ele já opera, por padrão, no modo PDV.
 
 * **Device mode**: simula um dispositivo de ponto virtual para que você possa testar sua integração a partir de HTTP requests. Acesse o [Simulador device mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true).
 

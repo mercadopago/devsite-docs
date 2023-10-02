@@ -1,6 +1,8 @@
 # Conheça a API para integrar Pontos de Venda
 
-A API de integrações Point permite que você conecte seus pontos de venda (PDV) ao ecossistema de Point para receber pagamentos nos terminais que você configurou e garantir uma experiência de pagamento unificada.
+A API de Integrações Point é uma ferramenta que possibilita a conexão dos seus Pontos de Venda (PDV) com o ecossistema de Point. Essa conexão facilita o recebimento de pagamentos nos terminais previamente configurados por você, assegurando uma experiência de pagamento consistente e integrada.
+
+Veja abaixo o diagrama que ilustra o mecanismo de funcionamento da integração.
 
 ![Diagram 1](/images/point-api/1-diagram-pt.png)
 
@@ -46,13 +48,13 @@ A API de integrações Point permite que você conecte seus pontos de venda (PDV
 
 ------------
 
-### Conheça suas vantagens
+## Vantagens
 
 * **Segurança**: todas as solicitações são feitas através de HTTPS e autenticadas por OAuth, garantindo a proteção de seus dados e transações.
 * **Facilidade de uso**: você só precisa das suas credenciais de acesso para começar a usar nossa plataforma sem complicações ou atrasos.
 * **Agilidade na gestão**: gerencie seus pedidos de pagamento diretamente do seu Ponto de Venda, agilize seus processos e melhore a experiência do cliente.
 * **Eficiência**: Nossa integração reduz a probabilidade de erros ao cobrar, garantindo uma operação fluida e segura. Além disso, permite automatizar tarefas para otimizar seu desempenho e resultados
 
-### Neste diagrama de fluxo, mostraremos como a API funciona:
+### Funcionamento da API
 
 ![Mercado Pago Point Flow](/images/point-api/2-flow-diagram-pt.png)
