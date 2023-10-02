@@ -1,6 +1,12 @@
 # Prerequisites
 
 In order to integrate Mercado Pago with Tiendanube, you must meet the requirements below.
+
+> WARNING
+>
+> Important
+>
+> If the integrator does not have access to the Mercado Pago account that will be linked to the store, another person with access should carry out the process. To learn how to change the linked Mercado Pago account, refer to the "Change Mercado Pago Account" section in the [Integration Configuration](/developers/en/docs/nuvemshop/integration) documentation.
  
 | Requirements | Description | Specifications |
 |---|---|---|

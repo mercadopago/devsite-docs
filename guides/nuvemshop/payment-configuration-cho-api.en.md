@@ -12,13 +12,13 @@ To integrate the Checkout API, follow the steps below.
 5. If you want to apply discounts for payments with Checkout API, **enter the percentage** for payments in cash and cards (credit and debit).
 ------------
 ----[mlb]----
-5. If you want to apply discounts for payments with Checkout API, **enter the percentage** for payments in boleto, credit card and Pix.
+5. If you want to apply discounts for payments with Checkout Transparente, **enter the percentage** for payments in boleto, credit card and Pix.
 ------------
-6. If you want to apply discounts for payments with an external Checkout (Checkout Pro / Checkout Mercado Pago), **enter the percentage** in the available field.
+6. If you want to apply discounts for payments with an external Checkout (Checkout Pro/Checkout Mercado Pago), **enter the percentage** in the available field.
 7. To configure your store's payment experiences, click on **Edit on the Mercado Pago website**.
 8. In Transparent Checkout, choose the payment methods you want to offer in the Mercado Pago payment environment, which can be:
 ----[mlb]----
-* **Pix**. Also indicate a due date for payment with Pix code. Furthermore, the Pix payment option will only be displayed if there is a Pix key registered with Mercado Pago. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and see the step by step.
+* **Pix**. Also indicate a due date for payment with Pix code. Furthermore, the Pix payment option will only be displayed if there is a Pix key registered with Mercado Pago. If you haven't created it yet, watch the [video](https://www.youtube.com/watch?v=60tApKYVnkA) and see the step by step.
 * **Credit card**. Also indicate the maximum number of installments allowed.
 * **Ticket**. Also indicate the number of days for the invoice to expire (including Saturday and Sunday).
  
@@ -29,6 +29,6 @@ To integrate the Checkout API, follow the steps below.
 * **Pay in cash networks**. Also indicate the number of days for the ticket to expire (including Saturday and Sunday).
 
 ------------
-9. Finally, click on **Save Changes**.
+9. Finally, click on **Save changes**.
 
 Ready! The Checkout API is now ready to receive payments from your store.
