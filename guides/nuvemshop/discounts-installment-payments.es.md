@@ -8,7 +8,7 @@ Dentro del Panel de administración de tu tienda, haz clic en **Editar** para co
 
 ![Panel](/images/nuvemshop/admines.png)
 
-### Cuotas
+### Financiación
 
 * Valor mínimo de cuota: Esta configuración es opcional y te permite establecer un límite mínimo para el valor de las cuotas.
 
