@@ -13,19 +13,23 @@ Dentro del Panel de administración de tu tienda, haz clic en **Editar** para co
 * Valor mínimo de la mensualidad: Esta configuración es opcional y te permite establecer un límite mínimo para el valor de la financiación.
 
 ### Descuentos
+
 ----[mlm, mla, mpe, mco, mlu, mlc]----
 #### Checkout API
 
+Estas configuraciones opcionales te permiten establecer descuentos específicos para diferentes métodos de pago con Checkout Transparente. Configura el descuento en porcentaje aplicado a los clientes que elijan pagar con:
+* Tarjeta de crédito
+* Tarjeta de débito
+* Redes de pago en efectivo
 ------------
 ----[mlb]----
 #### Checkout Transparente
-
-------------
 
 Estas configuraciones opcionales te permiten establecer descuentos específicos para diferentes métodos de pago con Checkout Transparente. Configura el descuento en porcentaje aplicado a los clientes que elijan pagar con:
 * Boleto bancário
 * Tarjeta de crédito
 * Pix
+------------
 
 #### Checkout Externo
 

@@ -15,16 +15,19 @@ Within your store's Administration Panel, click on **Edit** to configure the fol
 ### Discounts
 ----[mlm, mla, mpe, mco, mlu, mlc]----
 #### Checkout API
-
+These optional settings allow you to establish specific discounts for different payment methods with Transparent Checkout. Configure the discount in percentage applied to customers who choose to pay with:
+* Bank slip
+* Credit card
+* Pay in cash networks
 ------------
 ----[mlb]----
 #### Transparent Checkout
-
-------------
 These optional settings allow you to establish specific discounts for different payment methods with Transparent Checkout. Configure the discount in percentage applied to customers who choose to pay with:
 * Bank slip
 * Credit card
 * Pix
+
+------------
 
 #### External Checkout
 

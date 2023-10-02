@@ -13,19 +13,24 @@ Através do Painel administrativo da sua loja, clique em **Editar** para definir
 * Valor mínimo da parcela: Essa configuração é opcional e permite que você estabeleça um limite mínimo para o valor das parcelas.
 
 ### Descontos
+
 ----[mlm, mla, mpe, mco, mlu, mlc]----
 #### Checkout API
 
+Essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com Checkout API. Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
+* Cartão de crédito
+* Cartão de débito
+* Redes de pagamento efectivo
 ------------
 ----[mlb]----
 #### Checkout Transparente
-
-------------
 
 Essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com Checkout Transparente. Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
 * Boleto bancário
 * Cartão de crédito
 * Pix
+
+------------
 
 #### Checkout Externo
 
