@@ -24,7 +24,12 @@ Para integrar Checkout Pro, sigue los pasos a continuación.
 ----[mlb]---- 
  * **Tarjeta de crédito**. Selecciona las tarjetas que deseas habilitar en tu tienda y elige también el **número máximo de cuotas permitidas para las compras a plazos**. 
  * **Tarjeta de débito**. Selecciona las tarjetas que desea habilitar en tu tienda. 
- * **Otros medios de pago**: seleccione otros tipos de medios de pago que desee habilitar en su tienda, como Pix, Financiación sin tarjeta (si, además, quieres mostrar esta opción en el checkout de tu tienda, consulte la [documentación](/developers/es/docs/nuvemshop/payments-configuration/mercado-credito)), boleto bancario (indique también, en el campo inferior, el **número de días de vencimiento del boleto**), entre otros. La opción de pago Pix solo se mostrará si existe una clave Pix registrada en Mercado Pago. Si aún no lo ha creado, consulte el [video](https://www.youtube.com/watch?v=60tApKYVnkA) y vea el paso a paso.
+ * **Otros medios de pago**: selecciona otros medios de pago que deseas habilitar en su tienda, como Pix, boleto bancário, o Financiación sin tarjeta (si, además, quieres mostrar esta opción en el checkout de tu tienda, consulte la [documentación](/developers/es/docs/nuvemshop/payments-configuration/mercado-credito)), entre otros. 
+ 
+ La opción de pago Pix solo se mostrará si existe una clave Pix registrada en Mercado Pago. Si aún no lo has creado, consulta el [video](https://www.youtube.com/watch?v=60tApKYVnkA) y ve el paso a paso.
+ 
+ Para habilitar boleto bancário, deberás también indicar en el campo inferior el **número de días de vencimiento del boleto**.
+ 
 
 ------------ 
 6. Finalmente, haz clic en **Guardar cambios**.
