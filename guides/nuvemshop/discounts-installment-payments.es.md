@@ -10,7 +10,7 @@ Dentro del Panel de administración de tu tienda, haz clic en **Editar** para co
 
 ### Financiación
 
-* Valor mínimo de cuota: Esta configuración es opcional y te permite establecer un límite mínimo para el valor de las cuotas.
+* Valor mínimo de la mensualidad: Esta configuración es opcional y te permite establecer un límite mínimo para el valor de la financiación.
 
 ### Descuentos
 ----[mlm, mla, mpe, mco, mlu, mlc]----
