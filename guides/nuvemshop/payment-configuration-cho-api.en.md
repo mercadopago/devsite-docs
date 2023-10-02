@@ -7,16 +7,8 @@ To integrate the Checkout API, follow the steps below.
 1. In your store's Administrative Panel at Nuvemshop, access **My apps - See all apps**.
 2. Locate the Mercado Pago plugin in the list of applications and click on **Configure application**.
 3. In the list of payment methods, locate the Mercado Pago plugin and click on **Edit**.
-4. To apply a minimum amount of installments for payments, inform the amount in the available field.
-----[mla, mlm, mpe, mco, mlu, mlc]----
-5. If you want to apply discounts for payments with Checkout API, **enter the percentage** for payments in cash and cards (credit and debit).
-------------
-----[mlb]----
-5. If you want to apply discounts for payments with Checkout Transparente, **enter the percentage** for payments in boleto, credit card and Pix.
-------------
-6. If you want to apply discounts for payments with an external Checkout (Checkout Pro/Checkout Mercado Pago), **enter the percentage** in the available field.
-7. To configure your store's payment experiences, click on **Edit on the Mercado Pago website**.
-8. In Transparent Checkout, choose the payment methods you want to offer in the Mercado Pago payment environment, which can be:
+4. To configure your store's payment experiences, click on **Edit on the Mercado Pago website**.
+5. In Transparent Checkout, choose the payment methods you want to offer in the Mercado Pago payment environment, which can be:
 ----[mlb]----
 * **Pix**. Also indicate a due date for payment with Pix code. Furthermore, the Pix payment option will only be displayed if there is a Pix key registered with Mercado Pago. If you haven't created it yet, watch the [video](https://www.youtube.com/watch?v=60tApKYVnkA) and see the step by step.
 * **Credit card**. Also indicate the maximum number of installments allowed.

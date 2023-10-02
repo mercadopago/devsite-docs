@@ -13,9 +13,14 @@ Within your store's Administration Panel, click on **Edit** to configure the fol
 * Minimum installment amount: This setting is optional and allows you to set a minimum limit for the installment amount.
 
 ### Discounts
+----[mlm, mla, mpe, mco, mlu, mlc]----
+#### Checkout API
 
+------------
+----[mlb]----
 #### Transparent Checkout
 
+------------
 These optional settings allow you to establish specific discounts for different payment methods with Transparent Checkout. Configure the discount in percentage applied to customers who choose to pay with:
 * Bank slip
 * Credit card
@@ -34,8 +39,14 @@ You can also configure installment experiences for each Checkout in your store t
 In this section, you can set the **maximum number of months**, with and without interest, in which your customers can make payments using the Mercado Pago Checkout:
 
 ![Pro](/images/nuvemshop/parc-pro-en.gif)
+----[mlm, mla, mpe, mco, mlu, mlc]----
+#### Checkout API
 
-### Transparent Checkout
+------------
+----[mlb]----
+#### Transparent Checkout
+
+------------
 
 In this section, you can set the **maximum number of months**, with and without interest, in which your customers can make payments using the Transparent Checkout:
 

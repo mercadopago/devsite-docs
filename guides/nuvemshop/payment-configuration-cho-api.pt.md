@@ -30,7 +30,7 @@ Para integrar o Checkout API, siga os passos abaixo.
 * **Redes de pago en efectivo**. Indique também o número de dias para vencimento do ticket (incluindo sábado e domingo).
 
 ------------
-9. Por fim, clique em **Salvar alterações**.
+6. Por fim, clique em **Salvar alterações**.
 
 ----[mlb]----
 </center>
@@ -45,7 +45,7 @@ Para integrar o Checkout API, siga os passos abaixo.
 ![Payments Checkout API - Nuvemshop](/images/nuvemshop/cho-api-mlm-es.gif)
 
 </center>
-
+------------
 ----[mlb]----
 Pronto! O Checkout Transparente está pronto para receber os pagamentos da sua loja.
 

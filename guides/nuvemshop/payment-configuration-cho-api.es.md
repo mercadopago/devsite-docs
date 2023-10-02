@@ -16,21 +16,8 @@ Para integrar Checkout API, siga los pasos a continuación.
 1. En el Panel Administrativo de tu tienda Tiendanube, accede a **Mis aplicaciones > Ver todas las aplicaciones**. 
 2. Localiza el plugin Mercado Pago en la lista de aplicaciones y haz clic en **Configurar aplicación**.
 3. En la lista de métodos de pago, localiza el plugin Mercado Pago, haz clic en **Configurar** y, luego, en **Editar**.
-----[mla, mlb, mpe, mco, mlu, mlc]---- 
-4. Para aplicar un "valor mínimo de cuotas" para los pagos, informa el monto en el campo disponible.
-------------
-----[mlm]---- 
-4. Para aplicar un "valor mínimo de la mensualidad" para los pagos, informa el monto en el campo disponible.
-------------
-----[mla, mlm, mpe, mco, mlu, mlc]---- 
-5. Si deseas aplicar descuentos para pagos con Checkout API, **informa la percentage** para pagos en efectivo y tarjetas (crédito y débito).
-------------
-----[mlb]---- 
-5. Si deseas aplicar descuentos para pagos con Checkout Transparente, **informa el porcentaje** para pagos en boleto, tarjeta de crédito y Pix.
-------------
-6. Si deseas aplicar descuentos para pagos con Checkout externo (Checkout Pro/Checkout Mercado Pago), **informa el porcentaje** en el campo disponible.
-7. Para configurar las experiencias de pago de tu tienda, haz clic en **Editar en el sitio de Mercado Pago**.
-8. En  ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------, elige las formas de pago que quieres ofrecer en el entorno de pago de Mercado Pago, las cuales pueden ser:
+4. Para configurar las experiencias de pago de tu tienda, haz clic en **Editar en el sitio de Mercado Pago**.
+5. En  ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------, elige las formas de pago que quieres ofrecer en el entorno de pago de Mercado Pago, las cuales pueden ser:
 ----[mlb]---- 
 * **Pix**. Elige también la fecha de vencimiento para pago con código Pix. Además, la opción de pago con Pix solo se mostrará si existe una llave Pix registrada en Mercado Pago. Si aún no las creaste, consulte el [video](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
 * **Tarjeta de crédito**. Elige también el número máximo de cuotas permitidas.
@@ -47,7 +34,7 @@ Para integrar Checkout API, siga los pasos a continuación.
 * **Tarjeta de débito**.
 * **Redes de pago en efectivo**. Elige también el número de días para vencimiento del ticket (incluye sábado y domingo).
 ------------
-9. Finalmente, haz clic en **Guardar configuraciones**.
+6. Finalmente, haz clic en **Guardar configuraciones**.
 
 ----[mlb]----
 </center>

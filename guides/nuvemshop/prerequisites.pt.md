@@ -6,7 +6,7 @@ Para poder realizar a integração do Mercado Pago com a Nuvemshop, é preciso a
 >
 > Importante
 >
-> Caso o integrador não tenha acesso à conta do Mercado Pago que será vinculada à loja, outra pessoa com acesso deve conduzir o processo. Para saber como alterar a conta Mercado Pago vinculada, consulte a seção "Alterar conta do Mercado Pago" da documentação [Configuração da integração](/developers/pt/docs/nuvemshop/integration).
+> Caso o integrador não tenha acesso à conta do Mercado Pago que será vinculada à loja, outra pessoa com acesso deve conduzir o processo. Para saber como alterar a conta Mercado Pago vinculada, consulte a seção "Alterar conta do Mercado Pago" da documentação [Configuração da integração.](/developers/pt/docs/nuvemshop/integration)
 
 | Requisitos | Descrição | Especificações |
 |---|---|---|

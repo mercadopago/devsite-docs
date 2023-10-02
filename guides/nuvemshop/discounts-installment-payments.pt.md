@@ -13,15 +13,21 @@ Através do Painel administrativo da sua loja, clique em **Editar** para definir
 * Valor mínimo da parcela: Essa configuração é opcional e permite que você estabeleça um limite mínimo para o valor das parcelas.
 
 ### Descontos
+----[mlm, mla, mpe, mco, mlu, mlc]----
+#### Checkout API
 
+------------
+----[mlb]----
 #### Checkout Transparente
+
+------------
 
 Essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com Checkout Transparente. Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
 * Boleto bancário
 * Cartão de crédito
 * Pix
 
-#### Checkout externo
+#### Checkout Externo
 
 Você pode definir um desconto global em porcentagem para clientes que escolherem o Checkout externo. Insira o valor em porcentagem a ser deduzido do total da compra.
 
@@ -34,8 +40,14 @@ Você também pode configurar as experiências de parcelamento de cada Checkout 
 Nesta seção, você pode definir o **número máximo de meses**, com e sem juros, nos quais seus clientes poderão efetuar o pagamento utilizando o Checkout Mercado Pago:
 
 ![Pro](/images/nuvemshop/parc-pro-pt.gif)
+----[mlm, mla, mpe, mco, mlu, mlc]----
+#### Checkout API
 
-### Checkout Transparente
+------------
+----[mlb]----
+#### Checkout Transparente
+
+------------
 
 Nesta seção, você pode definir o **número máximo de meses**, com e sem juros, nos quais seus clientes poderão efetuar o pagamento utilizando o Checkout Transparente:
 

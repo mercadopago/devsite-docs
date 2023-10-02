@@ -13,8 +13,14 @@ Dentro del Panel de administración de tu tienda, haz clic en **Editar** para co
 * Valor mínimo de cuota: Esta configuración es opcional y te permite establecer un límite mínimo para el valor de las cuotas.
 
 ### Descuentos
+----[mlm, mla, mpe, mco, mlu, mlc]----
+#### Checkout API
 
+------------
+----[mlb]----
 #### Checkout Transparente
+
+------------
 
 Estas configuraciones opcionales te permiten establecer descuentos específicos para diferentes métodos de pago con Checkout Transparente. Configura el descuento en porcentaje aplicado a los clientes que elijan pagar con:
 * Boleto bancario
@@ -34,8 +40,14 @@ También puedes configurar las experiencias de cuotas para cada Checkout en tu t
 En esta sección, puedes establecer el **número máximo de meses**, con y sin interés, en los cuales tus clientes podrán realizar el pago utilizando el Checkout Mercado Pago:
 
 ![Pro](/images/nuvemshop/parc-pro-es.gif)
+----[mlm, mla, mpe, mco, mlu, mlc]----
+#### Checkout API
 
-### Checkout Transparente
+------------
+----[mlb]----
+#### Checkout Transparente
+
+------------
 
 En esta sección, puedes establecer el **número máximo de meses**, con y sin interés, en los cuales tus clientes podrán realizar el pago utilizando el Checkout Transparente:
 

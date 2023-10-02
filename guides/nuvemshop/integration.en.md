@@ -9,18 +9,8 @@ To integrate with Mercado Pago, follow the procedures below.
 >
 > If you are using the old version of the Mercado Pago plugin, read the [documentation](/developers/en/docs/nuvemshop/how-tos/migration) to find out how to migrate to the current version.
 
-----[mlm]----
+
 1. Access the [App store](https://www.tiendanube.com/mx/tienda-aplicaciones-nube) and search for "Mercado Pago" in the top search bar on the page.
-
-------------
-----[mla]----
-1. Access the [App store](https://www.tiendanube.com/mx/tienda-aplicaciones-nube) and search for "Mercado Pago" in the top search bar on the page.
-
-------------
-----[mlb]----
-1. Access the [App store](https://www.nuvemshop.com.br/loja-aplicativos-nuvem) and search for "Mercado Pago" in the top search bar on the page.
-
-------------
 2. Select the Mercado Pago plugin from the search results and click **Install app**.
 3. Now, it's time to grant the necessary permissions to the application. Click **Accept and start using**.
 4. You will be redirected to the Mercado Pago page, where you should log in with your credentials. If you are already logged into your account, please note that **the integration will be automatically completed using the open Mercado Pago account session in the browser being used during installation**.
@@ -35,7 +25,7 @@ To integrate with Mercado Pago, follow the procedures below.
 
 ## Activate Mercado Pago on your site
 
-To **link your Mercado Pago account to Tiendanube**, follow these steps: ------------
+To **link your Mercado Pago account to Tiendanube**, follow these steps: 
 
 1. Access the payment [methods settings](https://mitiendanube.com/admin/payments/) on your site menu.
 2. Look for Mercado Pago in the payment methods list.
