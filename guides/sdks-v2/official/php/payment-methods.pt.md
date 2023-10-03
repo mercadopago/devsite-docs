@@ -5,8 +5,11 @@
 [[[
 ```php
 <?php
-  $client = new PaymentMethodClient();
-  $client->get();
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $payment_methods = MercadoPago\PaymentMethod::all();
+
 ?>
 ```
 ]]]

@@ -43,49 +43,66 @@ Abaixo explicaremos como indicar as URLs que serão notificadas e como configura
 
 [[[
 ```php
-<?php 
-$client = new PaymentClient();
+<?php
+   require_once 'vendor/autoload.php';
 
-        $body = [
-            'transaction_amount' => 100,
-            'token' => 'token',
-            'description' => 'description',
-            'installments' => 1,
-            'payment_method_id' => 'visa',
-            'notification_url' => 'http://test.com',
-            'payer' => array(
-                'email' => 'test@test.com',
-                'identification' => array(
-                    'type' => 'CPF',
-                    'number' => '19119119100'
-                )
-            )
-        ];
 
-$client->create(body);
+   MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
+
+
+   $payment = new MercadoPago\Payment();
+   $payment->transaction_amount = (float)$_POST['transactionAmount'];
+   $payment->token = $_POST['token'];
+   $payment->description = $_POST['description'];
+   $payment->installments = (int)$_POST['installments'];
+   $payment->payment_method_id = $_POST['paymentMethodId'];
+   $payment->issuer_id = (int)$_POST['issuer'];
+   $payment->notification_url = 'http://requestbin.fullcontact.com/1ogudgk1';
+   ...
+   $response = array(
+       'status' => $payment->status,
+       'status_detail' => $payment->status_detail,
+       'id' => $payment->id
+   );
+   echo json_encode($response);
+
+
 ?>
 ```
 ```node
-const client = new MercadoPago({ accessToken: 'ACCESS_TOKEN' });
-const payments = new Payments(client);
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
 
-payments.create({
-  transaction_amount: '100',
-  token: 'token',
-  description: 'description',
-  installments: 1,
-  payment_method_id: 'visa',
-  notification_url: 'http://test.com',
-  payer: {
-    email: 'test@test.com',
-    identification: {
-      type: 'CPF',
-      number: '19119119100'
-    }
-  }
-}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
- .then((result) => { console.log(result); })
- .catch((error) => { console.error(error); });
+
+var payment_data = {
+ transaction_amount: Number(req.body.transactionAmount),
+ token: req.body.token,
+ description: req.body.description,
+ installments: Number(req.body.installments),
+ payment_method_id: req.body.paymentMethodId,
+ issuer_id: req.body.issuer,
+ notification_url: "http://requestbin.fullcontact.com/1ogudgk1",
+ payer: {
+   email: req.body.email,
+   identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+     type: req.body.docType,------------
+     number: req.body.docNumber
+   }
+ }
+};
+
+
+mercadopago.payment.save(payment_data)
+ .then(function(response) {
+   res.status(response.status).json({
+     status: response.body.status,
+     status_detail: response.body.status_detail,
+     id: response.body.id
+≈    });
+ })
+ .catch(function(error) {
+   res.status(response.status).send(error);
+ });
 ```
 ```java
 MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");

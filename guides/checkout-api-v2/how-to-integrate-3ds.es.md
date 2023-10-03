@@ -95,49 +95,38 @@ var client = new PaymentClient();
 Payment payment = await client.CreateAsync(request);
 ```
 ```php
+
 <?php
-  use MercadoPago\Client\Payment\PaymentClient;
-  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
-
-  $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
-  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
-
-  $payment = $client->create([
-    "transaction_amount" => <TRANSACTION_AMOUNT>,
-    "token" => "CARD_TOKEN",
-    "description" => "<DESCRIPTION>",
-    "installments" => <INSTALLMENTS_NUMBER>,
-    "payment_method_id" => "<PAYMENT_METHOD_ID>",
-    "issuer_id" => "<ISSUER_ID>",
-    "payer" => [
-      "email" => $_POST['email']
-    ],
-    "three_d_secure_mode" => "optional"
-  ], $request_options);
-  echo implode($payment);
+  MercadoPago\SDK::setAccessToken("<ENV_ACCESS_TOKEN>");
+  $payment = new MercadoPago\Payment();
+  $payment->transaction_amount = <TRANSACTION_AMOUNT>;
+  $payment->token = "CARD_TOKEN";
+  $payment->description = "<DESCRIPTION>";
+  $payment->installments = <INSTALLLMENTS_NUMBER>;
+  $payment->payer = array(
+        "email" => "<BUYER_EMAIL>"
+    );
+  $payment->three_d_secure_mode = "optional";
+  $payment->save();
 ?>
 ```
 ```node
-import MercadoPago, { Payments } from 'mercadopago';
 
-const client = new MercadoPago({ accessToken: '<ENV_ACCESS_TOKEN>' });
-const payments = new Payments(client);
-
-payments.create({
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+var payment_data = {
   transaction_amount: <TRANSACTION_AMOUNT>,
   token: '<CARD_TOKEN>',
-  description:  '<DESCRIPTION>',
-  installments: <INSTALLMENTS_NUMBER>,
-  payment_method_id: '<PAYMENT_METHOD_ID>',
-  issuer_id: '<ISSUER_ID>',
+  description: '<DESCRIPTION>',
+  installments: <INSTALLLMENTS_NUMBER>,
   payer: {
-    email: '<BUYER_EMAIL>',
+    email: '<BUYER_EMAIL>'
   },
-  three_d_secure_mode: 'optional' 
-}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
-  .then((result) => console.log(result))
-  .catch((error) => console.log(error));
+  three_d_secure_mode: 'optional'
+};
+mercadopago.payment.create(payment_data).then(function (data) {
+  console.log(data);
+});
 ```
 ```ruby
 
@@ -385,57 +374,65 @@ curl -X POST \
 ```
 ```php
 <?php
-  use MercadoPago\Client\Payment\PaymentClient;
-  use MercadoPago\MercadoPagoConfig;
-  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
-
-  $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
-  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
-
-  $payment = $client->create([
-    "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
-    "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
-    "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
-    "payer" => [
-      "email" => $_POST['email'],
-      "identification" => [
-        "type" => $_POST['identificationType'],
-        "number" => $_POST['number']
-      ]
-    ],
-    "three_d_secure_mode" => "optional"
-  ], $request_options);
-  echo implode($payment);
+   require_once 'vendor/autoload.php';
+ 
+   MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
+ 
+   $payment = new MercadoPago\Payment();
+   $payment->transaction_amount = (float)$_POST['transactionAmount'];
+   $payment->token = $_POST['token'];
+   $payment->description = $_POST['description'];
+   $payment->installments = (int)$_POST['installments'];
+   $payment->payment_method_id = $_POST['paymentMethodId'];
+   $payment->issuer_id = (int)$_POST['issuer'];
+ 
+   $payer = new MercadoPago\Payer();
+   $payer->email = $_POST['email'];
+   $payer->identification = array(
+       "type" => $_POST['identificationType'],
+       "number" => $_POST['identificationNumber']
+   );
+   $payment->payer = $payer;
+   $payment->three_d_secure_mode = "optional";
+ 
+   $payment->save();
+ 
+   $response = array(
+       'status' => $payment->status,
+       'status_detail' => $payment->status_detail,
+       'id' => $payment->id
+   );
+   echo json_encode($response);
 ?>
 ```
 ```node
-import MercadoPago, { Payments } from 'mercadopago';
-
-const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const payments = new Payments(client);
-
-payments.create({
-  transaction_amount: req.transaction_amount,
-  token: req.token,
-  description: req.description,
-  installments: req.installments,
-  payment_method_id: req.paymentMethodId,
-  issuer_id: req.issuer,
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
+ 
+Var payment = req.body;
+var payment_data = {
+  transaction_amount: payment.transactionAmount,
+  description: payment.description,
+  token: payment.cardToken,
+  installments: payment.installments,
+  payment_method_id: payment.paymentMethodId,
+  issuer_id: payment.issuer,
   payer: {
-    email: req.email,
+    email: payment.email
     identification: {
-      type: req.identificationType,
-      number: req.number
+      type: payment.identificationType,
+      number: payment.identificationNumber
     }
   },
-  three_d_secure_mode: 'optional' 
-}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
-  .then((result) => console.log(result))
-  .catch((error) => console.log(error));
+  three_d_secure_mode: "optional"
+};
+
+
+mercadopago.payment.create(payment).then(function (data) {
+  console.log(data.response);
+}).catch(function (error) {
+  console.log(error);
+});
 ```
 ```java
 PaymentClient client = new PaymentClient();

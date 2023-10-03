@@ -2,94 +2,53 @@
 
 It is possible to create Preferences using the SDK below. For details on request parameters, check the [Create preferences](/developers/en/reference/preferences/_checkout_preferences/post) API.
 
+----[mla, mlb, mlu, mpe, mlm]----
+
 [[[
  ```php
 <?php
-  $client = new PreferenceClient();
-  $preference = $client->create([
-    "external_reference" => "teste",
-    "items"=> array(
-      array(
-        "id" => "4567",
-        "title" => "Dummy Title",
-        "description" => "Dummy description",
-        "picture_url" => "http://www.myapp.com/myimage.jpg",
-        "category_id" => "eletronico",
-        "quantity" => 1,
-        "currency_id" => "BRL",
-        "unit_price" => 100
-      )
-    ),
-    "payment_methods" => [
-    "default_payment_method_id" => "master",
-    "excluded_payment_types" => array(
-      array(
-        "id" => "ticket"
-      )
-    ),
-    "installments"  => 12,
-    "default_installments" => 1
-  ]);
+// Mercado Pago SDK
+require __DIR__ .  '/vendor/autoload.php';
+// Add Your credentials
+MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+// Create a preference object
+$preference = new MercadoPago\Preference();
+// Create a preference item
+$item = new MercadoPago\Item();
+$item->title = 'My Item';
+$item->quantity = 1;
+$item->unit_price = 75.56;
+$preference->items = array($item);
+$preference->save();
 ?>
 ```
 ]]]
 
-# Search preferences
+------------
 
-You can find all the preferences information generated through specific filters or by a specific date range using the SDK below. For details of the request parameters, access the [Search Preferences](/developers/en/reference/preferences/_checkout_preferences_search/get) API.
+----[mlc, mco]----
 
 [[[
-```php
+ ```php
 <?php
-  $client = new PreferenceClient();
-
-  $search_request = new MPSearchRequest(1, 0, [
-    "sponsor_id" => "0",
-    "external_reference" => "",
-    "site_id" => "MLA",
-    "marketplace" => "NONE"
-  ]);
-  $client->search($search_request);
+// Mercado Pago SDK
+require __DIR__ .  '/vendor/autoload.php';
+// Add Your credentials
+MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+// Create a preference object
+$preference = new MercadoPago\Preference();
+// Create a preference item
+$item = new MercadoPago\Item();
+$item->title = 'My Item';
+$item->quantity = 1;
+$item->unit_price = 75;
+$preference->items = array($item);
+$preference->save();
 ?>
 ```
 ]]]
 
-# Get preference
-
-You can get all payment information for a product or service with the desired preference ID using the SDK below. For details on the request parameters, access the [Get Preference](/developers/en/reference/preferences/_checkout_preferences_id/get) API.
-
-[[[
-```php
-<?php
-  $client = new PreferenceClient();
-  $client->get("123456789");
-?>
-```
-]]]
-
-# Update preference
-
-You can update the details of a payment preference using the preference ID. For details of the request parameters, access the [Update Preference](/developers/en/reference/preferences/_checkout_preferences_id/put) API.
-
-[[[
-```php
-<?php
-  $client = new PreferenceClient();
-
-  $preference = $client->update('123456789', [
-    "items"=> array(
-        array(
-            "id" => "4567",
-            "title" => "Dummy Title",
-            "quantity" => 1,
-            "unit_price" => 100
-       )
-    ),
-  ]);
-
-?>
-```
-]]]
+------------
 
 ## Associate Facebook Ads
 

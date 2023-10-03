@@ -8,34 +8,49 @@ Para criar um cliente e cartão, utilize um dos códigos abaixo.
 
 [[[
 ```php
+
 <?php
-  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
-  
-  $client_customer = new CustomerClient();
-  $customer = $client_customer->create(["email" => "my.user@example.com"]);
-  $client = new CustomerCardClient();
-  $customer_card = $client->create($customer->id, ["token" => "your_card_token"]);
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $customer = new MercadoPago\Customer();
+  $customer->email = "test_payer_12345@testuser.com";
+  $customer->save();
+
+  $card = new MercadoPago\Card();
+  $card->token = "9b2d63e00d66a8c721607214cedaecda";
+  $card->customer_id = $customer->id();
+  $card->issuer = array("id" => "3245612");
+  $card->payment_method = array("id" => "visa");
+  $card->save();
+
 ?>
+
 ```
 ```node
-const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
 
+var mercadopago = require('mercadopago');
+mercadopago.configure({
+    access_token: 'ENV_ACCESS_TOKEN'
+});
 
-const customerClient = new Customer(client);
+var customer_data = { "email": "test_payer_12345@testuser.com" }
 
-const customerBody = {
-  email: "my.user@example.com"
-};
+mercadopago.customers.create(customer_data).then(function (customer) {
 
-customerClient.create({ customerBody }).then(result) => {
-  const cardClient = new CustomerCard(client);
+  var card_data = {
+    "token": "9b2d63e00d66a8c721607214cedaecda",
+    "customer_id": customer.id,
+    "issuer_id": "23",
+    "payment_method_id": "visa"
+  }
 
-  const body = {
-  	token : result.token,
-  };
+  mercadopago.card.create(card_data).then(function (card) {
+    console.log(card);
+  });
 
-  customerClient.create({ customerId: 'customer_id', customerCardBody :   body }).then((result) => console.log(result));
-};
+});
+
 ```
 ```java
 

@@ -4,12 +4,10 @@
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
 
-const paymentMethod = new PaymentMethod(client);
-
-paymentMethod.get()
-    .then((result) => { console.log(result); })
-    .catch((error) => { console.error(error); });
+var response = await mercadopago.payment_methods.listAll();
+var payment_methods = response.body;
 ```
 ]]]

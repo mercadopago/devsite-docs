@@ -150,59 +150,69 @@ Para configurar los pagos con Pix, envía un **POST** al endpoint [/v1/payments]
 [[[
 ```php
 <?php
-  use MercadoPago\Client\Payment\PaymentClient;
-  use MercadoPago\MercadoPagoConfig;
+ require_once 'vendor/autoload.php';
 
-  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+ MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-  $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
-  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+ $payment = new MercadoPago\Payment();
+ $payment->transaction_amount = 100;
+ $payment->description = "Título del producto";
+ $payment->payment_method_id = "pix";
+ $payment->payer = array(
+     "email" => "PAYER_EMAIL",
+     "first_name" => "Test",
+     "last_name" => "User",
+     "identification" => array(
+         "type" => "CPF",
+         "number" => "19119119100"
+      ),
+     "address"=>  array(
+         "zip_code" => "06233200",
+         "street_name" => "Av. das Nações Unidas",
+         "street_number" => "3003",
+         "neighborhood" => "Bonfim",
+         "city" => "Osasco",
+         "federal_unit" => "SP"
+      )
+   );
 
+ $payment->save();
 
-  $payment = $client->create([
-    "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
-    "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
-    "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
-    "payer" => [
-      "email" => $_POST['email'],
-      "first_name" => $_POST['payerFirstName'],
-      "last_name" => $_POST['payerLastName'],
-      "identification" => [
-        "type" => $_POST['identificationType'],
-        "number" => $_POST['number']
-      ]
-    ]
-  ], $request_options);
-  echo implode($payment);
 ?>
 ```
 ```node
-import MercadoPago, { Payments } from 'mercadopago';
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
 
-const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const payments = new Payments(client);
-
-payments.create({
-  transaction_amount: req.transaction_amount,
-  token: req.token,
-  description: req.description,
-  installments: req.installments,
-  payment_method_id: req.paymentMethodId,
-  issuer_id: req.issuer,
+var payment_data = {
+  transaction_amount: 100,
+  description: 'Título del producto',
+  payment_method_id: 'pix',
   payer: {
-    email: req.email,
+    email: 'PAYER_EMAIL',
+    first_name: 'Test',
+    last_name: 'User',
     identification: {
-      type: req.identificationType,
-      number: req.number
+        type: 'CPF',
+        number: '19119119100'
+    },
+    address:  {
+        zip_code: '06233200',
+        street_name: 'Av. das Nações Unidas',
+        street_number: '3003',
+        neighborhood: 'Bonfim',
+        city: 'Osasco',
+        federal_unit: 'SP'
     }
-  } 
-}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
-    .then((result) => console.log(result))
-    .catch((error) => console.log(error));
+  }
+};
+
+mercadopago.payment.create(payment_data).then(function (data) {
+
+}).catch(function (error) {
+
+});
+
 ```
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");

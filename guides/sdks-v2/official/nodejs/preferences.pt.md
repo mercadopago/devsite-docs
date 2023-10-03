@@ -1,89 +1,70 @@
-# Criar preferência
+## Criar preferência
 
 É possível criar uma preferência utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Criar preferência](/developers/pt/reference/preferences/_checkout_preferences/post).
 
-[[[
-```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
-
-const preference = new Preference(client);
-
-preference.create({
-	'items': [
-		{
-			'id': '4567',
-			'title': 'Dummy Title',
-			'quantity': 1,
-			'unit_price': 100
-		}
-	],
-}).then((result) => console.log(result))
-	.catch((error) => console.log(error));
-```
-]]]
-
-# Pesquisar preferências
-
-É possível encontrar todas as informações das preferências geradas através de filtros específicos ou por uma faixa de datas específica utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Pesquisar preferências](/developers/pt/reference/preferences/_checkout_preferences_search/get).
+----[mla, mlb, mlu, mpe, mlm]----
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
-
-const preference = new Preference(client);
-
-preference.search({
-  sponsor_id: '0',
-  external_reference: '',
-  site_id: 'MLA',
-  marketplace: 'NONE'
-}).then((result) => console.log(result))
-  .catch((error) => console.log(error));
+// SDK do Mercado Pago
+const mercadopago = require ('mercadopago');
+// Configure as credenciais
+mercadopago.configure({
+  access_token: 'PROD_ACCESS_TOKEN'
+});
+// Crie um objeto de preferência
+let preference = {
+  items: [
+    {
+      title: 'Meu produto',
+      unit_price: 100,
+      quantity: 1,
+    }
+  ]
+};
+mercadopago.preferences.create(preference)
+.then(function(response){
+// Este valor substituirá a string "<%= global.id %>" no seu HTML
+  global.id = response.body.id;
+}).catch(function(error){
+  console.log(error);
+});
 ```
 ]]]
 
-# Obter preferência
+------------
 
-É possível obter todas as informações de pagamento de um produto ou serviço com a identificação da preferência desejada utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Obter preferência](/developers/pt/reference/preferences/_checkout_preferences_id/get).
+----[mlc, mco]----
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
-const preference = new Preference(client);
-
-preference.get({ preferenceId: '123456789' })
-	.then((result) => console.log(result))
-	.catch((error) => console.log(error));
+// SDK de Mercado Pago
+const mercadopago = require ('mercadopago');
+// Configure as credenciais
+mercadopago.configure({
+  access_token: 'PROD_ACCESS_TOKEN'
+});
+// Crie um objeto de preferência
+let preference = {
+  items: [
+    {
+      title: 'Meu produto',
+      unit_price: 100,
+      quantity: 1,
+    }
+  ]
+};
+mercadopago.preferences.create(preference)
+.then(function(response){
+// Este valor substituirá a string "<%= global.id %>" no seu HTML
+  global.id = response.body.id;
+}).catch(function(error){
+  console.log(error);
+});
 ```
 ]]]
 
-## Atualizar preferência
-
-É possível atualizar os detalhes de uma preferência de pagamento através do ID da preferência. Para detalhamento dos parâmetros de requisição, acesse a API [Atualizar preferência](/developers/pt/reference/preferences/_checkout_preferences_id/put).
-
-[[[
-```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
-
-const preference = new Preference(client);
-
-preference.update({
-	id: '123456789',
-	updatePreferenceRequest: {
-		items: [
-			{
-				id: '1234',
-				title: 'Dummy Title',
-				quantity: 1,
-				unit_price: 100
-			}
-		],
-	}
-}).then((result) => console.log(result))
-	.catch((error) => console.log(error));
-```
-]]]
-
+------------
 
 ## Associar Facebook Ads
 

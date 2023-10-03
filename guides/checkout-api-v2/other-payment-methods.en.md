@@ -65,23 +65,19 @@ To get a detailed list of all payment methods available for integration, send a 
 [[[
 ```php
 <?php
-  use MercadoPago\MercadoPagoConfig;
 
-  MercadoPagoConfig::setAccessToken("ENV_ACCESS_TOKEN");
+MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-  $client = new PaymentMethodClient();
-  $payment_method = $client->get();
+$payment_methods = MercadoPago::get("/v1/payment_methods");
 
 ?>
 ```
 ```node
-import MercadoPago, { PaymentMethods } from 'mercadopago';
+var Mercadopago = require('mercadopago');
+Mercadopago.configurations.setAccessToken(config.access_token);
 
-const client = new MercadoPago({ accessToken: 'access_token' });
-const paymentMethods = new PaymentMethods(client);
-
-paymentMethods.get().then((result) => console.log(result))
-  .catch((error) => console.log(error));
+var response = await Mercadopago.payment_methods.listAll();
+var payment_methods = response.body;
 ```
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
@@ -307,55 +303,70 @@ To configure payments with **Boleto Bancário** or **Pagamento em lotérica**, s
 [[[
 ```php
 <?php
-  use MercadoPago\Client\Payment\PaymentClient;
 
-  $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
-  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+require_once 'vendor/autoload.php';
 
-  $payment = $client->create([
-    "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
-    "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
-    "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
-    "payer" => [
-      "email" => $_POST['email'],
-      "first_name" => $_POST['payerFirstName'],
-      "last_name" => $_POST['payerLastName'],
-      "identification" => [
-        "type" => $_POST['identificationType'],
-        "number" => $_POST['number']
-      ]
-    ]
-  ], $request_options);
-  echo implode($payment);
+MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+$payment = new MercadoPago\Payment();
+$payment->transaction_amount = 100;
+$payment->description = "Product title";
+$payment->payment_method_id = "bolbradesco";
+$payment->payer = array(
+"email" => "PAYER_EMAIL",
+"first_name" => "Test",
+"last_name" => "User",
+"identification" => array(
+"type" => "CPF",
+"number" => "19119119100"
+),
+"address"=> array(
+"zip_code" => "06233200",
+"street_name" => "Avenida das Nações Unidas",
+"street_number" => "3003",
+"neighborhood" => "Bonfim",
+"city" => "Osasco",
+"federal_unit" => "SP"
+)
+);
+
+$payment->save();
+
 ?>
 ```
 ```node
-import MercadoPago, { Payments } from 'mercadopago';
+var Mercadopago = require('mercadopago');
+Mercadopago.configurations.setAccessToken(config.access_token);
 
-const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const payments = new Payments(client);
+var payment_data = {
+transaction_amount: 100,
+description: 'Product title',
+payment_method_id: 'bolbradesco',
+payer: {
+email: 'PAYER_EMAIL',
+first_name: 'Test',
+last_name: 'User',
+identification: {
+type: 'CPF',
+number: '19119119100'
+},
+address: {
+zip_code: '06233200',
+street_name: "Avenida das Nações Unidas",
+street_number: '3003',
+neighborhood: 'Bonfim',
+city: 'Osasco',
+federal_unit: 'SP'
+}
+}
+};
 
-payments.create({
-  transaction_amount: req.transaction_amount,
-  token: req.token,
-  description: req.description,
-  installments: req.installments,
-  payment_method_id: req.paymentMethodId,
-  issuer_id: req.issuer,
-  payer: {
-    email: req.email,
-    identification: {
-      type: req.identificationType,
-      number: req.number
-    }
-  } 
-}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
-  .then((result) => console.log(result))
-  .catch((error) => console.log(error));
+Mercadopago.payment.create(payment_data).then(function (data) {
+
+}).catch(function(error) {
+
+});
+
 ```
 ```java
 PaymentClient client = new PaymentClient();

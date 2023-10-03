@@ -5,11 +5,13 @@ It is possible to cancel a specific purchase from the payment ID using the SDK b
 [[[
 ```php
 <?php
-  $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
-  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
-
-  $client->cancel('123456789', $request_options);
+ 
+MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
+$payment_id = 000000000;
+$payment = MercadoPago\Payment::find_by_id($payment_id);
+$payment->status = "cancelled";
+$payment->update();
+ 
 ?>
 ```
 ]]]

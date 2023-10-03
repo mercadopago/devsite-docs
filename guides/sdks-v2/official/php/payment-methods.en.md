@@ -5,8 +5,11 @@ It is possible to consult the available payment methods and obtain a list with t
 [[[
 ```php
 <?php
-  $client = new PaymentMethodClient();
-  $client->get();
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $payment_methods = MercadoPago\PaymentMethod::all();
+
 ?>
 ```
 ]]]

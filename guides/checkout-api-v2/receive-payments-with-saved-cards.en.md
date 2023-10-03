@@ -13,18 +13,25 @@ The first step is to display the list of saved cards to the buyer so that they c
 [[[
 
 ```php
+
 <?php
-  $customer_client = new CustomerClient();
-  $cards = $client->list("customer_id");
-  echo implode ($cards);
+$customer = MercadoPago\Customer::find_by_id($id);
+$cards = $customer->cards();
 ?>
+
 ```
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
-const customerClient = new Customer(client);
 
-customerClient.listCards({ customerId: '123' })
-	.then((result) => console.log(result));
+var filters = {
+id: customer_id
+};
+
+Mercadopago.customers.search({
+qs: filters
+}).then(function (customer) {
+console.log(customer);
+});
+
 ```
 ```java
 
@@ -179,57 +186,45 @@ Once the token is obtained, it is necessary to create the payment with the corre
 
 [[[
 ```php
+
 <?php
-  use MercadoPago\Client\Payment\PaymentClient;
 
+MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+$payment = new MercadoPago\Payment();
 
-  $customer_client = new CustomerClient();
-  $cards = $client->list("customer_id");
-  
-  $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
-  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+$payment->transaction_amount = 100;
+$payment->token = "ff8080814c11e237014c1ff593b57b4d";
+$payment->installments = 1;
+$payment->payer = array(
+"type" => "customer",
+"id" => "123456789-jxOV430go9fx2e"
+);
 
-  $payment = $client->create([
-    "transaction_amount" => 100.0,
-    "token" => $cards[0]-> token,
-    "description" => "My product",
-    "installments" => 1,
-    "payment_method_id" => "visa",
-    "issuer_id" => "123",
-    "payer" => [
-      "type" => "customer",
-      "id" => "1234"
-    ]
-  ], $request_options);
-  echo implode($payment);
+$payment->save();
+
 ?>
+
 ```
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
-const customerClient = new Customer(client);
 
-customerClient.listCards({ customerId: '123' })
-	.then((result) => {
+var Mercadopago = require('mercadopago');
+Mercadopago.configurations.setAccessToken(config.access_token);
 
-  const payment = new Payment(client);
+var payment_data = {
+transaction_amount: 100,
+token: 'ff8080814c11e237014c1ff593b57b4d',
+installments: 1,
+payer: {
+type: "customer"
+id: "123456789-jxOV430go9fx2e"
+}
+};
 
-  body = {
-    transaction_amount: 100.0,
-    token: result[0].token,
-    description: 'My product',
-    installments: 1,
-    payment_method_id: 'visa',
-    issuer_id: '123',
-    payer: {
-      type: 'customer',
-      id: '123'
-  }
-
-  payment.create({ body }).then((result) => console.log(result));
+Mercadopago.payment.create(payment_data).then(function (data) {
+console.log(date);
 });
+
 ```
 ```java
 

@@ -1,6 +1,6 @@
 # Crear y actualizar token
 
-Puedes crear o actualizar el token necesario para operar tu aplicación en nombre de un proveedor utilizando el SDK a continuación. Para detalles de los parámetros de la solicitud, accede a la API [Crear y refrescar token](/developers/es/reference/oauth/_oauth_token/post).
+Puede crear o actualizar el token necesario para operar su aplicación en nombre de un proveedor utilizando el SDK a continuación. Para detalles de los parámetros de la solicitud, acceda a la API [Crear y refrescar token](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/oauth/_oauth_token/post).
 
 [[[
 ```java
