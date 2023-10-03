@@ -128,7 +128,7 @@ $preference = $client->create([
       "title" => "Meu produto",
       "quantity" => 1,
       "currency_id" => "BRL",
-      "unit_price" => 75.56$
+      "unit_price" => 100
     )
   )
 ]);
@@ -143,7 +143,7 @@ preference.create({
 	 'title': 'Meu produto',
 	 'quantity': 1,
 	 'currency_id': 'BRL',
-	 'unit_price': 75.56
+	 'unit_price': 100
      }
   ]
 }).then((result) => console.log(result))
@@ -228,37 +228,30 @@ preference = preference_response["response"]
 [[[
  ```php
 <?php
-   $client = new PreferenceClient();
-   $preference = $client->create([
-          "items"=> array(
-            array(
-              "title" => "My product",
-              "description" => "Test product",
-              "picture_url" => "http://i.mlcdn.com.br/portaldalu/fotosconteudo/48029_01.jpg",
-              "category_id" => "electronics",
-              "quantity" => 1,
-              "currency_id" => "BRL",
-              "unit_price" => 5.00
-            )
-          )
-  ]);
-  echo implode($preference);
+$client = new PreferenceClient();
+$preference = $client->create([
+  "items"=> array(
+    array(
+      "title" => "Meu produto",
+      "quantity" => 1,
+      "currency_id" => "BRL",
+      "unit_price" => 100
+    )
+  )
+]);
 ?>
 ```
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
-
 const preference = new Preference(client);
+
 preference.create({
   'items': [
-    {
-      'title': 'My Product',
-      'description': 'Product Test',
-      'category_id': 'electronics',
-      'quantity': 2,
-      'currency_id': 'BRL',
-      'unit_price': 5.00
-    }
+     {
+	 'title': 'Meu produto',
+	 'quantity': 1,
+	 'currency_id': 'BRL',
+	 'unit_price': 100
+     }
   ]
 }).then((result) => console.log(result))
 	.catch((error) => console.log(error));
