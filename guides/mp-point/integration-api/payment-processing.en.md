@@ -1,4 +1,4 @@
-#  Start processing your payments
+#  Process payments
 
 To start processing your payments with Point of Sale (POS), follow the steps below.
 

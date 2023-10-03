@@ -1,4 +1,4 @@
-#  Comece a processar seus pagamentos
+#  Processar pagamentos
 
 Para começar a processar seus pagamentos com o ponto de venda (PDV), siga estas etapas:
 

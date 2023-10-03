@@ -1,5 +1,7 @@
 # Crear el Deep Link
 
+Los Deep Links, también conocidos como enlaces profundos, son una forma de permitir la navegación directa a pantallas o secciones específicas de una aplicación móvil. Su creación te permitirá generar instancias de pago desde tu dispositivo móvil, que redireccionarán al cliente a la pantalla de pago de Mercado Pago y, finalizada la transacción, lo devolverán a una URL de tu preferencia. 
+
 > NOTE
 >
 > Importante
@@ -11,15 +13,15 @@ Para poder procesar pagos vía Deep Link, deberás llamar a la URL `https://www.
 
 En la tabla a continuación puedes ver los parámetros que puedes incluir, sean obligatorios o no, y sus descripciones.
 
-| Parámetro | Descripción |
-|---|---|
-| `amount` | **Obligatorio**. Es el monto que se le va a cobrar al cliente. |
-| `description` | **Obligatorio**. Descripción de la operación (Máx.: 19 carácteres). |
-| `external_reference` | **Opcional**. Código de referencia de tu sistema, el mismo es el que permitirá conciliar tu orden de compra con el pago. |
-| `notification_url` | **Opcional**. Es la URL donde vas a recibir la notificación de ese pago. Dirígete al subtítulo "Configura tus notificaciones" para más información. |
-| `payer_email` | **Opcional**. Email del pagador. |
-| `success_url` | **Opcional**. Es la URL donde será redireccionado el usuario luego de un pago aprobado. Si no lo envías, la app permanecerá en la URL de pago exitoso. |
-| `fail_url` | **Opcional**. Es la URL donde será redireccionado el usuario luego de un pago rechazado. Si no lo envías, la app permanecerá en la URL de pago rechazado. |
+| Parámetro | Descripción | Obligatorio/Opcional |
+|---|---|---|
+| `amount` | Es el monto que se le va a cobrar al cliente. | Obligatorio |
+| `description` | Descripción de la operación (Máx.: 19 carácteres). | Obligatorio |
+| `external_reference` | Código de referencia de tu sistema, el mismo es el que permitirá conciliar tu orden de compra con el pago. | Opcional |
+| `notification_url` | Es la URL donde vas a recibir la notificación de ese pago. Dirígete al subtítulo "Configura tus notificaciones" para más información. | Opcional |
+| `payer_email` | Email del pagador. | Opcional |
+| `success_url` | Es la URL donde será redireccionado el usuario luego de un pago aprobado. Si no lo envías, la app permanecerá en la URL de pago exitoso. | Opcional |
+| `fail_url` | Es la URL donde será redireccionado el usuario luego de un pago rechazado. Si no lo envías, la app permanecerá en la URL de pago rechazado. | Opcional |
 
 ## Configurar notificaciones
 

@@ -11,40 +11,25 @@ Veja abaixo o diagrama que ilustra o mecanismo de funcionamento da integração.
 >
 > Nota
 >
-> Esta integração suporta os seguintes dispositivos:
->
-> - Point Plus (POS)
->
-> Você pode adquirir seu dispositivo Point em nossa [loja oficial](https://www.mercadopago.com.ar/point).
->
-> Além disso, leve em consideração que apenas aceita cartões, pagamentos sem contato e SWIFT como formas de pagamento.
+> A integração é compatível com os dispositivos **Point Plus (POS)** e **Point Smart**. Se deseja adquirir um, consulte nossa [loja oficial](https://www.mercadopago.com.ar/point). Vale ressaltar que o dispositivo aceita exclusivamente cartões, pagamentos sem contato e SWIFT como métodos de pagamento.
 
 ------------
 
 ----[mlb]----
-> INFO
+> NOTE
 >
-> Esta integração suporta os seguintes dispositivos:
+> Nota
 >
-> - Point Pro 1
-> - Point Pro 2
->
-> Você pode adquirir seu dispositivo Point em nossa [loja oficial](https://www.mercadopago.com.br/point).
->
-> Além disso, leve em consideração que apenas aceita cartões, pagamentos sem contato e SWIFT como formas de pagamento.
+> A integração é compatível com os dispositivos **Point Pro 1** e **Point Pro 2**. Se deseja adquirir um, consulte nossa [loja oficial](https://www.mercadopago.com.br/point). Vale ressaltar que o dispositivo aceita exclusivamente cartões, pagamentos sem contato e SWIFT como métodos de pagamento.
 
 ------------
 
 ----[mlm]----
-> INFO
+> NOTE
 >
-> Esta integração suporta os seguintes dispositivos:
+> Nota
 >
-> - Point Smart
->
-> Você pode adquirir seu dispositivo Point em nossa [loja oficial](https://www.mercadopago.com.br/point).
->
-> Além disso, leve em consideração que apenas aceita cartões, pagamentos sem contato e SWIFT como formas de pagamento.
+> A integração é compatível com o dispositivo **Point Smart**. Se deseja adquirir um, consulte nossa [loja oficial](https://www.mercadopago.com.mx/point). Vale ressaltar que o dispositivo aceita exclusivamente cartões, pagamentos sem contato e SWIFT como métodos de pagamento.
 
 ------------
 
