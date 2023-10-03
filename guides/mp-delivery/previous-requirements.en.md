@@ -1,4 +1,4 @@
-# Integration prerequisites
+# Prerequisites
 
 To be able to integrate Mercado Pago Delivery with your POS, you must meet the requirements below.
 

@@ -1,4 +1,4 @@
-# Requisitos previos de integración
+# Requisitos previos
 
 Para poder integrar Mercado Pago Delivery con tu PDV/POS, debes cumplir con los siguientes requisitos.
 

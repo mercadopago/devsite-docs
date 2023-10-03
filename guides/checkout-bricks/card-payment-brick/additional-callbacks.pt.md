@@ -1,4 +1,4 @@
-# Callbacks adicionais
+# Callbacks adicionai
 
 Ao inicializar o Brick é possível configurar callbacks adicionais, que fornecem ao integrador mais informação durante a execução do Brick.
 
