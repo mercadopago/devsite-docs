@@ -1,4 +1,4 @@
-# Know about Bluetooth integration for mobile devices
+# Integrate via Bluetooth mobile devices
 
 Mercado Pago Point offers, in addition to the integration of Point devices via API, the possibility to integrate mobile devices via Bluetooth. This type of integration is ideal for small businesses.
 

@@ -1,4 +1,4 @@
-# Configure suas notificações
+# Configurar notificações
 
 Se você desejar, pode receber notificações de Webhooks. Elas são enviadas da nossa API de Integrações para o seu sistema receptor por meio de uma chamada `HTTP POST`, e alertam sobre todas as mudanças relacionadas aos estados das intenções de pagamento.
 

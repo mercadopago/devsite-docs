@@ -1,6 +1,6 @@
 # Create the Deep Link
 
-> WARNING
+> NOTE
 >
 > Important
 >

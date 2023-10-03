@@ -1,4 +1,4 @@
-# Conheça a integração via Bluetooth para dispositivos móveis
+# Integrar via Bluetooth para dispositivos móveis
 
 Além da integração via API, o Mercado Pago Point também suporta a integração de dispositivos móveis através de conexão Bluetooth, uma alternativa eficaz para pequenos negócios.
 

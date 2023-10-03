@@ -1,6 +1,6 @@
-# Crea el Deep Link
+# Crear el Deep Link
 
-> WARNING
+> NOTE
 >
 > Importante
 >
@@ -21,7 +21,7 @@ En la tabla a continuación puedes ver los parámetros que puedes incluir, sean 
 | `success_url` | **Opcional**. Es la URL donde será redireccionado el usuario luego de un pago aprobado. Si no lo envías, la app permanecerá en la URL de pago exitoso. |
 | `fail_url` | **Opcional**. Es la URL donde será redireccionado el usuario luego de un pago rechazado. Si no lo envías, la app permanecerá en la URL de pago rechazado. |
 
-## Configura tus notificaciones
+## Configurar notificaciones
 
 Si quieres, puedes recibir notificaciones con las actualizaciones de los pagos generados vía Deep Link. Estas se envían desde nuestra sistema de integraciones a la `notification_url` definida en la creación del Deep Link mediante una llamada `HTTP POST`.  
 

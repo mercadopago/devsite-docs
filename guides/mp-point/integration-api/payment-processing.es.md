@@ -2,7 +2,7 @@
 
 Sigue los pasos a continuación para comenzar a procesar tus pagos con Punto de Venta (PDV).
 
-## Obtén el listado de tus dispositivos disponibles
+## Obtener el listado de dispositivos disponibles
 
 Antes de crear una intención de pago, debes [obtener los dispositivos Point](/developers/es/reference/integrations_api/_point_integration-api_devices/get) asociados a tu cuenta. Puedes hacerlo a través del siguiente llamado:
 
@@ -56,7 +56,7 @@ Recibirás una respuesta como esta:
 ```
 
 
-## Crea la intención de pago
+## Crear la intención de pago
 Una intención de pago es un llamado que contiene los detalles de la transacción a realizarse, y que debe ser creada para poder iniciar un cobro. Se trata de un intento que, de ser exitoso, devolverá un `id` del pago y su estado.
 
 Puedes [crear una intención de pago](/developers/es/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents/post) y asignarla a tu dispositivo Point de esta manera:
@@ -197,7 +197,7 @@ Ten en cuenta que las intenciones de pago son la base para el procesamientos de 
 > Puedes utilizar el [Simulador Point](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/point-simulator) para testear tu integración y la creación de intenciones de pago de manera segura. 
 
 
-## Procesa tu intención de pago
+## Procesar intención de pago
 
 Una vez creada la intención de pago, puedes obtenerla desde tu dispositivo Point oprimiendo el botón para iniciar cobro (en caso de Point Plus y  Point Pro 2, el **botón verde**, y en el caso de Point Smart, el **botón digital “Cobrar ahora”**).
 
@@ -210,7 +210,7 @@ Luego, continúa con los pasos que se muestran en la pantalla para completar el 
 > Recomendamos evaluar la [calidad de tu integración](/developers/es/docs/checkout-api/additional-content/integration-quality) para validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago que pueden mejorar tu tasa de aprobación de pagos. 
 
 
-## Consulta el estado de tu intención de pago
+## Consultar el estado de una intención de pago
 
 Si deseas saber el estado de una intención de pago en particular, puedes [consultar el estado actual de tu intención de pago](/developers/es/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) utilizando el `id` que recibiste en la respuesta al momento de crearla.
 
@@ -303,7 +303,7 @@ Si, en cambio, lo que deseas es consultar un **listado de intenciones de pago y 
 Este llamado puede ser útil, también, en caso de desconocer el `payment_intent_id` de una intención de pago en particular.
 
 
-## Cancela una intención de pago
+## Cancelar una intención de pago
 
 Si lo deseas, puedes cancelar una intención de pago asignada a un dispositivo Point. Para ello, tienes dos posibilidades:
 

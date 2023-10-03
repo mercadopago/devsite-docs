@@ -2,7 +2,7 @@
 
 Para começar a processar seus pagamentos com o ponto de venda (PDV), siga estas etapas:
 
-## Obtenha a lista de seus dispositivos disponíveis
+## Obter lista de dispositivos disponíveis
 
 Antes de criar uma intenção de pagamento, você deve [obter os dispositivos Point](/developers/pt/reference/integrations_api/_point_integration-api_devices/get) associados à sua conta. Você pode fazeê-lo através da seguinte chamada:
 
@@ -55,7 +55,7 @@ Você receberá uma resposta como esta:
 ```
 
 
-## Crie uma intenção de pagamento
+## Criar intenção de pagamento
 Uma intenção de pagamento é uma chamada que contém os detalhes da transação a ser realizada, e que deve ser criada para inciar um pagamento. Esta é uma tentativa que, se bem-sucedida, retornará um `id` do pagamento e seu `status`.
 
 Você pode [criar uma intenção de pagamento](/developers/pt/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents/post) e atribuí-la ao seu dispositivo Point desta forma:
@@ -194,7 +194,7 @@ Tenha em mente que as intenções de pagamento são a base para o processamento 
 > Você pode usar o [Simulador Point](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/point-simulator) para testar sua integração e a criação de intenções de pagamento com segurança.
 
 
-## Processe sua intenção de pagamento
+## Processar intenção de pagamento
 
 Uma vez que a intenção de pagamento é criada, você pode obtê-la de seu dispositivo Point pressionando a tecla para iniciar o pagamento (no caso de Point Plus e Point Pro 2 o **botão verde** e, no caso de Point Smart, o **botão digital “Charge now”**) e continuar com as etapas mostradas em tela para concluir o pagamento.
 
@@ -205,7 +205,7 @@ Uma vez que a intenção de pagamento é criada, você pode obtê-la de seu disp
 > Recomendamos avaliar a [qualidade de sua integração](/developers/pt/docs/checkout-api/additional-content/integration-quality) para verificar se você está cumprindo os padrões de qualidade e segurança do Mercado Pago que podem melhorar sua taxa de aprovação de pagamentos.
 
 
-## Verifique o status da sua intenção de pagamento
+## Verificar status da intenção de pagamento
 
 Se você deseja saber o status de uma intenção de pagamento específica, você pode [verificar o status atual da sua intenção de pagamento](/developers/pt/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) usando o `id` que você recebeu na resposta ao criá-la.
 

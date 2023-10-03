@@ -1,4 +1,4 @@
-# Teste sua integração com o Simulador Point
+# Simulador Point
 
 O Simulador Point é uma ferramenta que permite interagir com vários endpoints de nossa API para integrar os Pontos de Venda com os dispositivos. Seu objetivo principal é ajudar a entender o fluxo de criação e cancelamento de uma tentativa de pagamento.
 
@@ -29,7 +29,7 @@ curl -X POST \
 -d '{"site_id":"MLM","description" : "a description"}'
 ```
 
-## 2. Configure suas credenciais
+## 2. Configurar credenciais
 
 Ao usar o simulador pela primeira vez, você precisará inserir [suas credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). Para obtê-las, acesse [Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), opção **Minhas credenciais > Credenciais de teste**.
 
@@ -39,7 +39,7 @@ Além disso, você precisará selecionar um dos seus dispositivos disponíveis.
 
 * **Device mode:** você deve inserir seu `access-token` de teste (`TEST-XXXXX-XXXXX-XXXXXXX`) e seu ID de dispositivo obtido em [lista seus dispositivos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/integration-api/create-payment-intent#https://www.mercadopago.com.br/developers/pt/guides/in-person-payments/integration-api/create-payment-intent#bookmark_obtenha_a_lista_de_seus_dispositivos_dispon%C3%ADveis).
 
-## 3. Simule uma intenção de pagamento
+## 3. Simular intenção de pagamento
 
 Preparamos diferentes cenários que permitem simular uma experiência real. Para isso, você deve selecionar o valor de acordo com o estado desejado, conforme indicado na tabela abaixo:
 
@@ -57,14 +57,14 @@ Preparamos diferentes cenários que permitem simular uma experiência real. Para
 > Se você usar o Simulador no device mode, lembre-se de usar `X-Test-Scope:sandbox` no cabeçalho para garantir que a tentativa de pagamento chegue ao dispositivo simulado.
 
 
-## 4. Obtenha a intenção de pagamento do dispositivo
+## 4. Obter intenção de pagamento do dispositivo
 
 Após criar a intenção de pagamento, clique no botão verde do dispositivo virtual para obter a intenção de pagamento criada.
 
 Quando isso acontecer, verifique se o valor inserido inicialmente corresponde ao valor mostrado na tela do dispositivo.
 
 
-## 5. Deslize o cartão e processe o pagamento
+## 5. Deslizar cartão e processar pagamento
 
 Se o passo anterior for bem-sucedido, clique na animação do cartão. Isso representa o deslizamento do cartão no dispositivo. Em seguida, o processamento será iniciado e o dispositivo mostrará o resultado.
 
@@ -75,7 +75,7 @@ Se o passo anterior for bem-sucedido, clique na animação do cartão. Isso repr
 > Para consultar um pagamento feito pelo simulador através da [API de Pagamentos](/developers/pt/reference/payments/_payments_id/get), você deve usar o mesmo `access-token` de teste que está usando no Simulador.
 
 
-## 6. Receba a notificação
+## 6. Receber a notificação
 
 > As notificações de pagamento de teste feitas pelo Simulador serão enviadas pelo mesmo canal que você definiu como método de notificação ao configurar sua integração. Consulte [Configurar notificações](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) em caso de dúvidas.
 

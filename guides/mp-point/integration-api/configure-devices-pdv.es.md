@@ -1,4 +1,4 @@
-# Configura tu dispositivo en modo Punto de Venta
+# Configurar tu dispositivo en modo Punto de Venta
 
 > WARNING
 >
@@ -10,7 +10,7 @@
 
 Para iniciar tu integración Mercado Pago Point vía API deberás configurar tu dispositivo en modo Punto de Venta. Para hacerlo, sigue los pasos a continuación.
 
-## Crea una sucursal y una caja
+## Crear una sucursal y una caja
 
 Para configurar el dispositivo Point en modo Punto de Venta, deberás asociarlo a un local y una caja.
 
@@ -21,7 +21,7 @@ Primero, deberás crear un local a través del endpoint [Crear sucursal](/develo
 Luego, deberás crear una caja a través del endpoint [Crear caja](/developers/es/reference/pos/_pos/post). Esta caja deberá estar asociada a la sucursal creada anteriormente, por lo que deberás reemplazar el parámetro `external_store_id` por el obtenido en la creación del local. 
 
 
-## Asocia el dispositivo Point a tu cuenta de Mercado Pago
+## Asociar el dispositivo Point a tu cuenta de Mercado Pago
 
 Para vincular el dispositivo Point a tu cuenta de Mercado Pago, necesitas contar con la aplicación de Mercado Pago en tu móvil. 
 
@@ -34,7 +34,7 @@ De esta manera, el dispositivo quedará vinculado a tu cuenta.
 >
 > Si vas a operar en nombre de otros vendedores, puedes gestionar la vinculación de manera segura integrando [OAuth.](/developers/es/docs/mp-point/additional-content/security/oauth/introduction)
 
-## Configura tu tienda y tu caja
+## Configurar tu tienda y tu caja
 
 Una vez que hayas vinculado tu dispositivo Point a tu cuenta de Mercado Pago y tengas la sucursal y caja creadas, deberás completar los datos del negocio y configurar la caja para asociarlos al dispositivo. 
 
@@ -47,7 +47,7 @@ Para hcerlo, puedes acceder al [sitio de Mercado Pago](https://www.mercadopago[F
 > También puedes configurar la tienda y la caja desde el mismo dispositivo Point una vez que este esté vinculado. El mismo dispositivo te guiará en caso de elegir hacer la configuración de esta manera.
 
 
-## Activa el modo PDV en tu dispositivo Point
+## Activar el modo PDV en tu dispositivo Point
 
 Para que el dispositivo Point esté integrado con nuestra API, es necesario activar el modo operativo Punto de Venta (PDV).
 
