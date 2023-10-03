@@ -1,6 +1,12 @@
 # Requisitos previos
 
 Para integrar Mercado Pago en Tiendanube, debes cumplir con los requisitos a continuación.
+
+> WARNING
+>
+> Importante
+>
+> Si el integrador no tiene acceso a la cuenta de Mercado Pago que se vinculará a la tienda, otra persona con acceso debe llevar a cabo el proceso. Para saber cómo cambiar la cuenta de Mercado Pago vinculada, consulte la sección "Cambiar la cuenta de Mercado Pago" en la documentación de [Configuración de la integración.](/developers/es/docs/nuvemshop/integration)
  
 | Requisitos | Descripción | Especificaciones |
 | --- | --- | --- |
