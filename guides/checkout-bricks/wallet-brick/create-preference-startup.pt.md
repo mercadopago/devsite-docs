@@ -18,4 +18,4 @@ const initialization = {
 ```
 ]]]
 
-Nesse caso, não é preciso passar a [preferência no onSubmit](/developers/pt/docs/checkout-bricks/wallet-brick/additional-customization/preferences).
+Nesse caso, não é preciso passar a [preferência no onSubmit](/developers/pt/docs/checkout-bricks/wallet-brick/advanced-features/preferences).

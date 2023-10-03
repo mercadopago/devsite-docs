@@ -44,7 +44,7 @@ Consulta los textos relacionados con cada opción:
 >
 > Importante
 >
-> Para usar la Value Prop de `convenience_credits`, el Brick debe estar [inicializado con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/preference-startup) y la preferencia debe tener el `purpose` de [onboarding_credits.](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/preferences) 
+> Para usar la Value Prop de `convenience_credits`, el Brick debe estar [inicializado con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preference-startup) y la preferencia debe tener el `purpose` de [onboarding_credits.](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preferences) 
 
 ------------
 ----[mlm]----
@@ -70,7 +70,7 @@ Consulte los textos relacionados con cada opción:
 >
 > Importante
 >
-> Para usar la Value Prop de `convenience_credits`, el Brick debe estar [inicializado con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/preference-startup) y la preferencia debe tener el `purpose` de [onboarding_credits.](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/preferences)
+> Para usar la Value Prop de `convenience_credits`, el Brick debe estar [inicializado con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preference-startup) y la preferencia debe tener el `purpose` de [onboarding_credits.](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preferences)
 
 ------------
 ----[mlu, mlc, mco, mpe]----

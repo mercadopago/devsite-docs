@@ -4,9 +4,7 @@ Sabemos que productos y servicios digitales están siempre relacionados. Para ay
 
 ## Ayuda
 
-Una sección de ayuda permite concentrar información útil para resolver dudas y problemas de forma fácil y efetiva. 
-
-Sugerimos hacer un formato de preguntas frecuentes, las FAQs. Consulta algunos consejos para crearlas:
+Una sección de ayuda permite concentrar información útil para resolver dudas y problemas de forma fácil y efetiva. Sugerimos hacer un formato de preguntas frecuentes, las FAQs. Consulta algunos consejos para crearlas:
 
 * **Lenguaje simple**:
 

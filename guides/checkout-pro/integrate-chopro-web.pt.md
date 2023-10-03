@@ -11,7 +11,7 @@ Em seguida, instale o SDK de frontend do Mercado Pago no seu projeto para adicio
 
 A instalação é feita em **duas etapas**:
 
-1. [Adicionar o SDK do Mercado Pago ao projeto com suas credenciais configuradas](/developers/pt/docs/checkout-pro/integrate-checkout-pro/web#bookmark_agregar_el_sdk_de_mercado_pago_al_proyecto)
+1. [Adicionar o SDK do Mercado Pago ao projeto com suas credenciais configuradas](/developers/pt/docs/checkout-pro/integrate-checkout-pro/web#bookmark_adicionar_o_sdk_do_mercado_pago_ao_projeto)
 2. [Iniciar o checkout a partir da preferência gerada anteriormente](/developers/pt/docs/checkout-pro/integrate-checkout-pro/web#bookmark_iniciar_el_checkout_desde_la_preferencia)
 
 > CLIENT_SIDE
@@ -62,7 +62,7 @@ Para integrações JavaScript/HTML, via CDN, você vai precisar ainda criar um c
 >
 > h2
 >
-> Iniciar el checkout desde la preferencia
+> Iniciar o checkout a partir da preferência
 
 Ao finalizar a etapa anterior, **inicialize seu checkout utilizando o ID da preferência previamente criada com o identificador do elemento onde o botão deverá ser exibido**, caso esteja utilizando a integração `Javascript/HTML`, ou instanciando o componente, no caso da biblioteca `React`, conforme os exemplos abaixo.
 

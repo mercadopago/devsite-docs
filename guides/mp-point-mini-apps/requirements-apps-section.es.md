@@ -19,13 +19,11 @@ Esta es la pantalla que la persona usuaria ve cuando no tiene apps instaladas. E
 5. **Botón "Saber más"**: lleva a la persona usuaria a la pantalla de detalle de la app.
 6. **Botón "Instalar"**: inicia la instalación de la aplicación.
 
-> **Tienes que**:
-> <br><br>
+> **Tienes que**:<br><br>
 > * Traer la función principal de tu app al resumen.
 > * Usar la versión simplificada del logo, con menos detalles, para que las personas usuarias puedan reconocerla.
-> <br>
-> **No tienes que**:
 > <br><br>
+> **No tienes que**:<br><br>
 > * Usar el nombre de Mercado Pago o de competidores.
 > * Abreviar el nombre de la app o usar siglas difíciles de identificar.
 > * Colocar solo una lista de beneficios en el resumen.
@@ -64,15 +62,15 @@ Aquí, la persona usuaria tiene acceso a los detalles, beneficios y propuesta de
 </center>
 
 1. **Nombre del desarrollador**: identificación del desarrollador de la mini app. Limicationes: línea única/hasta 72 caracteres.
-2. **Carrusel de imágenes**: área donde se pueden disponibilizar prints de funcionalidades, interacciones y soluciones importantes de la app. <br><br> 
+2. **Carrusel de imágenes**: área donde se pueden disponibilizar prints de funcionalidades, interacciones y soluciones importantes de la app.<br><br> 
 
-   * Limitaciones: hasta 4 imágenes/74px x 139.11px. <br><br> 
+   * Limitaciones: hasta 4 imágenes/74px x 139.11px.<br><br> 
 
-3. **Descripción**: sección para incluir una breve explicación de las funcionalidades y beneficios de la aplicación. <br><br>
+3. **Descripción**: sección para incluir una breve explicación de las funcionalidades y beneficios de la aplicación.<br><br>
 
-   * Limitaciones: hasta 2.000 caracteres. <br><br>
+   * Limitaciones: hasta 2.000 caracteres.<br><br>
 
-4. **Contacto del desarrollador**: canales para que las personas usuarias puedan sacarse dudas, hacer sugerencias y saber más sobre la empresa. <br><br>
+4. **Contacto del desarrollador**: canales para que las personas usuarias puedan sacarse dudas, hacer sugerencias y saber más sobre la empresa.
 
    * Limitaciones:
    * E-mail - línea única/hasta 53 caracteres.
@@ -80,16 +78,14 @@ Aquí, la persona usuaria tiene acceso a los detalles, beneficios y propuesta de
    * Teléfono - línea única/hasta 53 caracteres.
    * Site - línea única/hasta 53 caracteres.
 
-> **Tienes que**:
-> <br><br>
+> **Tienes que**:<br><br>
 > * Construir el texto de descripción en bloques y parágrafos cortos.
 > * Facilitar la lectura usando listas verticales en lugar de parágrafos muy extensos.
 > * Usar títulos claros que introduzcan el tema que se  tratará en el parágrafo siguiente.
 > * Incluir imágenes fáciles de identificar y entender, que muestren funcionalidades importantes de la app.
 > * Usar colores con buen nivel de contraste entre el fondo y la figura en primer plano de las imágenes.
-> <br>
-> **No tienes que**:
 > <br><br>
+> **No tienes que**:<br><br>
 > * Usar el nombre de Mercado Pago o de competidores.
 > * Construir parágrafos largos y sin separación de temas.
 > * Citar y hacer comparaciones con competidores

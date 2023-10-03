@@ -2,53 +2,94 @@
 
 É possível criar uma preferência utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Criar preferência](/developers/pt/reference/preferences/_checkout_preferences/post).
 
-----[mla, mlb, mlu, mpe, mlm]----
-
 [[[
  ```php
 <?php
-// SDK do Mercado Pago
-require __DIR__ .  '/vendor/autoload.php';
-// Configure as credenciais
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
-// Crie um objeto de preferência
-$preference = new MercadoPago\Preference();
-// Crie um item na preferência
-$item = new MercadoPago\Item();
-$item->title = 'Meu produto';
-$item->quantity = 1;
-$item->unit_price = 75.56;
-$preference->items = array($item);
-$preference->save();
+  $client = new PreferenceClient();
+  $preference = $client->create([
+    "external_reference" => "teste",
+    "items"=> array(
+      array(
+        "id" => "4567",
+        "title" => "Dummy Title",
+        "description" => "Dummy description",
+        "picture_url" => "http://www.myapp.com/myimage.jpg",
+        "category_id" => "eletronico",
+        "quantity" => 1,
+        "currency_id" => "BRL",
+        "unit_price" => 100
+      )
+    ),
+    "payment_methods" => [
+    "default_payment_method_id" => "master",
+    "excluded_payment_types" => array(
+      array(
+        "id" => "ticket"
+      )
+    ),
+    "installments"  => 12,
+    "default_installments" => 1
+  ]);
 ?>
 ```
 ]]]
 
-------------
+# Pesquisar preferências
 
-----[mlc, mco]----
+É possível encontrar todas as informações das preferências geradas através de filtros específicos ou por uma faixa de datas específica utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Pesquisar preferências](/developers/pt/reference/preferences/_checkout_preferences_search/get).
 
 [[[
- ```php
+```php
 <?php
-// SDK de Mercado Pago
-require __DIR__ .  '/vendor/autoload.php';
-// Configura credenciais
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
-// Cria um objeto de preferência
-$preference = new MercadoPago\Preference();
-// Cria um item na preferência
-$item = new MercadoPago\Item();
-$item->title = 'Meu produto';
-$item->quantity = 1;
-$item->unit_price = 75;
-$preference->items = array($item);
-$preference->save();
+  $client = new PreferenceClient();
+
+  $search_request = new MPSearchRequest(1, 0, [
+    "sponsor_id" => "0",
+    "external_reference" => "",
+    "site_id" => "MLA",
+    "marketplace" => "NONE"
+  ]);
+  $client->search($search_request);
 ?>
 ```
 ]]]
 
-------------
+# Obter preferência
+
+É possível obter todas as informações de pagamento de um produto ou serviço com a identificação da preferência desejada utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Obter preferência](/developers/pt/reference/preferences/_checkout_preferences_id/get).
+
+[[[
+```php
+<?php
+  $client = new PreferenceClient();
+  $client->get("123456789");
+?>
+```
+]]]
+
+## Atualizar preferência
+
+É possível atualizar os detalhes de uma preferência de pagamento através do ID da preferência. Para detalhamento dos parâmetros de requisição, acesse a API [Atualizar preferência](/developers/pt/reference/preferences/_checkout_preferences_id/put).
+
+[[[
+```php
+<?php
+  $client = new PreferenceClient();
+
+  $preference = $client->update('123456789', [
+    "items"=> array(
+        array(
+            "id" => "4567",
+            "title" => "Dummy Title",
+            "quantity" => 1,
+            "unit_price" => 100
+       )
+    ),
+  ]);
+
+?>
+```
+]]]
 
 ## Associar Facebook Ads
 

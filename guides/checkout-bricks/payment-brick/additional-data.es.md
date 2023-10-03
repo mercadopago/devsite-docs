@@ -70,7 +70,7 @@ const settings = {
 ```
 ]]]
 
-Si no estás utilizando el botón nativo [enviar formulario de Brick](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/hide-element), también puedes acceder al objeto `additionalData` a través de `getAdditionalData`. Ve un ejemplo de uso a continuación.
+Si no estás utilizando el botón nativo [enviar formulario de Brick](/developers/es/docs/checkout-bricks/payment-brick/visual-customizations/hide-element), también puedes acceder al objeto `additionalData` a través de `getAdditionalData`. Ve un ejemplo de uso a continuación.
 
 ```javascript
 // variable donde se guarda el controller del Brick
@@ -85,4 +85,4 @@ paymentBrickController.getAdditionalData()
 >
 > Atención
 >
-> Llama al método `getAdditionalData` solo después de que se haya enviado el formulario; es decir, después de llamar al [getFormData.](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/hide-element) . Esto asegura que los datos devueltos sean válidos y fiables.
+> Llama al método `getAdditionalData` solo después de que se haya enviado el formulario; es decir, después de llamar al [getFormData.](/developers/es/docs/checkout-bricks/payment-brick/visual-customizations/hide-element) . Esto asegura que los datos devueltos sean válidos y fiables.

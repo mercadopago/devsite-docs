@@ -1,14 +1,3 @@
----
-sites_supported:
-- mla
-- mpe
-- mco
-- mlu
-- mlm
-- mlc
-- mlb
----
-
 # How to integrate QR unattended model 
 
 > WARNING
@@ -16,6 +5,8 @@ sites_supported:
 > Commercial contact required
 >
 > This product is only available through prior contact with one of our executives.
+>
+> For more information about this billing model, please refer to the documentation [Payments with QR unattended model.](/developers/en/docs/qr-code/qr-unattended/qr-unattended-part-a)
 
 To integrate QR unattended model you need to:
 
@@ -132,7 +123,6 @@ You should use the field `external_reference` to be able to identify the order f
 | `sponsor.id` | Long | Mercado Pago account identifier from integrative system. |
 | `marketplace_fee` | _Double_ | fee amount to be collected by marketplace due from the [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/additional-content/security/oauth/introduction) process |
 
-
 ## 2. Declare your domain URL to Mercado Pago
 
 You must inform your domain URL to your assigned technical advisor. Mercado Pago will use it for each transaction. 
@@ -142,5 +132,3 @@ You must inform your domain URL to your assigned technical advisor. Mercado Pago
 > IMPORTANT
 > 
 > Your integration won’t work if you don’t complete this step.
-
----

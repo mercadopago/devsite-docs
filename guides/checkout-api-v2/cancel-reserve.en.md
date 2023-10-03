@@ -19,13 +19,29 @@ To cancel a reserve, use one of our available codes below.
 [[[
 ```php
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-$payment = MercadoPago\Payment::find_by_id($payment_id);
-$payment->status = "cancelled";
-$payment->update();
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+
+  $payment = $client->cancel($payment_id, $request_options);
+  echo $payment->status;
 ?>
+```
+```node
+import MercadoPago, { Payments } from 'mercadopago';
+
+const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const payments = new Payments(client);
+
+const paymentId = '123';
+
+payments.cancel(paymentId, { idempotencyKey: '<SOME_UNIQUE_VALUE>' }).then((result) => console.log(result))
+	.catch((error) => console.log(error));
 ```
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
@@ -35,20 +51,6 @@ Long paymentId = 123456789L;
 
 PaymentClient client = new PaymentClient();
 client.cancel(paymentId);
-```
-```node
-var Mercadopago = require('mercadopago');
-Mercadopago.configurations.setAccessToken(config.access_token);
-
-let paymentToBeCanceled = 123;
-
-Mercadopago.payment.cancel(paymentToBeCanceled, Mercadopago, (error, response) => {
-if (error){
-console.log(error);
-}else{
-console.log(response)
-}
-});
 ```
 ```ruby
 require 'mercadopago'

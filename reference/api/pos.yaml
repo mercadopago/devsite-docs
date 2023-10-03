@@ -460,6 +460,12 @@ paths:
                   fixed_amount:
                     type: boolean
                     example: false
+                  store_id:
+                    type: string
+                    example: 56807753
+                  external_store_id:
+                    type: string
+                    example: SUC01  
                   external_id:
                     type: string
                     example: SUC001POS002
