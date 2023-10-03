@@ -26,4 +26,4 @@ O layout do Wallet Brick foi construído com base nas melhores práticas de UX p
 
 </center>
 
-> Caso deseje alterar o texto e o visual padrão do Brick, consulte as seções de [Alterar textos](/developers/pt/docs/checkout-bricks/wallet-brick/additional-customization/change-texts) e [Alterar visual,](/developers/pt/docs/checkout-bricks/wallet-brick/additional-customization/change-appearance)respectivamente.
+> Caso deseje alterar o texto e o visual padrão do Brick, consulte as seções de [Alterar textos](/developers/pt/docs/checkout-bricks/wallet-brick/visual-customizations/change-texts) e [Alterar visual,](/developers/pt/docs/checkout-bricks/wallet-brick/visual-customizations/change-appearance)respectivamente.
