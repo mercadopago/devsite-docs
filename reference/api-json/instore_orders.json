@@ -1,0 +1,749 @@
+{
+  "paths": {
+    "/mpmobile/instore/qr/{user_id}/{external_id}": {
+      "post": {
+        "tags": [
+          "qr-code"
+        ],
+        "description": {
+          "en": "Generate a payment order with all the payment information for your product or service and associate it with the Point of Sale you want",
+          "pt": "Gerar uma ordem para associar com a preferência de pagamento e obter a URL necessária para iniciar o fluxo de pagamento",
+          "es": "Genera una orden de pago asociada a la caja que quieras con toda la información de pago de tu producto o servicio"
+        },
+        "parameters": [
+          {
+            "name": "X-Ttl-Store-Preference",
+            "in": "header",
+            "description": "X-Ttl-Store-Preference",
+            "x-description-i18n": {
+              "eng": "X-Ttl-Store-Preference",
+              "spa": "X-Ttl-Store-Preference",
+              "por": "X-Ttl-Store-Preference"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": 180
+            }
+          },
+          {
+            "name": "user_id",
+            "in": "path",
+            "description": "User Id",
+            "x-description-i18n": {
+              "eng": "User Id",
+              "spa": "User Id",
+              "por": "User Id"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          },
+          {
+            "name": "external_id",
+            "in": "path",
+            "description": "External Id",
+            "x-description-i18n": {
+              "eng": "External Id",
+              "spa": "External Id",
+              "por": "External Id"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "SUC001POS001"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "external_reference": {
+                    "type": "string",
+                    "description": "Reference you can synchronize with your sale system.",
+                    "x-description-i18n": {
+                      "eng": "Reference you can synchronize with your sale system.",
+                      "spa": "Referencia que puede sincronizar con su sistema de venta",
+                      "por": "Referência que pode sincronizar com seu sistema de vendas"
+                    },
+                    "example": "Factura-0001"
+                  },
+                  "notification_url": {
+                    "type": "string",
+                    "description": "URL where you'd like to receive a payment or merchant_order notification.",
+                    "x-description-i18n": {
+                      "eng": "URL where you'd like to receive a payment or merchant_order notification.",
+                      "spa": "URL a la cual se enviará la notificación de pago o merchant_order.",
+                      "por": "URL em que você gostaria de receber uma notificação de pagamento ou merchant_order."
+                    },
+                    "example": "http://www.yourserver.com"
+                  },
+                  "sponsor_id": {
+                    "type": "string",
+                    "description": "Mercado Pago's USER_ID of the integrator system.",
+                    "x-description-i18n": {
+                      "eng": "Mercado Pago's USER_ID of the integrator system.",
+                      "spa": "USER_ID de la cuenta de Mercado Pago del sistema integrador",
+                      "por": "USER_ID da conta Mercado Pago do sistema integrador"
+                    },
+                    "example": "446566691"
+                  },
+                  "items": {
+                    "type": "array",
+                    "description": "Information on the products involved in the order.",
+                    "x-description-i18n": {
+                      "eng": "Information on the products involved in the order.",
+                      "spa": "Información de los productos involucrados en la orden",
+                      "por": "Informações sobre os produtos envolvidos no ordem"
+                    },
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "description": "Item id.",
+                          "x-description-i18n": {
+                            "eng": "Item id.",
+                            "spa": "Identificador del ítem",
+                            "por": "Id do anúncio"
+                          },
+                          "example": 78123172
+                        },
+                        "title": {
+                          "type": "string",
+                          "example": "Shampoo",
+                          "description": "Item title.",
+                          "x-description-i18n": {
+                            "eng": "Item title.",
+                            "spa": "Título del ítem",
+                            "por": "Título do item"
+                          }
+                        },
+                        "currency_id": {
+                          "$ref": "#/components/schemas/currency_id"
+                        },
+                        "unit_price": {
+                          "type": "number",
+                          "description": "Unit price of the item (maximum 2 decimals).",
+                          "x-description-i18n": {
+                            "eng": "Unit price of the item (maximum 2 decimals).",
+                            "spa": "Precio unitario del producto (máximo 2 decimales)",
+                            "por": "Preço unitário do produto (máximo de 2 decimais)"
+                          },
+                          "example": 120
+                        },
+                        "quantity": {
+                          "type": "number",
+                          "description": "Item quantity.",
+                          "x-description-i18n": {
+                            "eng": "Item quantity.",
+                            "spa": "Cantidad de producto",
+                            "por": "Quantidade do produto"
+                          },
+                          "example": 1
+                        },
+                        "description": {
+                          "type": "string",
+                          "description": "Item description.",
+                          "x-description-i18n": {
+                            "eng": "Item description.",
+                            "spa": "Descripción del item",
+                            "por": "Descrição do artigo"
+                          },
+                          "example": "Almendras"
+                        },
+                        "picture_url": {
+                          "type": "string",
+                          "description": "Item image URL.",
+                          "x-description-i18n": {
+                            "eng": "Item image URL.",
+                            "spa": "URL de imagen del ítem",
+                            "por": "URL da imagem do anúncio"
+                          },
+                          "example": "https://bit.ly/2nxdWHa"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "en": "Success",
+              "pt": "Success",
+              "es": "Success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "example": "360472057-3d2cadbf-2c54-485c-bcb9-f262adc14af6",
+                      "description": {
+                        "en": "id",
+                        "pt": "id",
+                        "es": "id"
+                      }
+                    },
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "title": {
+                            "type": "string",
+                            "example": "Shampoo",
+                            "description": "title"
+                          },
+                          "id": {
+                            "type": "string",
+                            "example": 78123172,
+                            "description": "id"
+                          },
+                          "currency_id": {
+                            "$ref": "#/components/schemas/currency_id"
+                          },
+                          "unit_price": {
+                            "type": "number",
+                            "example": 120,
+                            "description": "unit_price"
+                          },
+                          "quantity": {
+                            "type": "number",
+                            "example": 1,
+                            "description": "quantity"
+                          },
+                          "description": {
+                            "type": "string",
+                            "example": "Almendras",
+                            "description": "description"
+                          },
+                          "picture_url": {
+                            "type": "string",
+                            "example": "https://bit.ly/2nxdWHa",
+                            "description": "picture_url"
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "items",
+                        "pt": "items",
+                        "es": "items"
+                      }
+                    },
+                    "collector_id": {
+                      "type": "number",
+                      "example": 360472057,
+                      "description": {
+                        "en": "collector_id",
+                        "pt": "collector_id",
+                        "es": "collector_id"
+                      }
+                    },
+                    "collector": {
+                      "type": "object",
+                      "description": {
+                        "en": "collector",
+                        "pt": "collector",
+                        "es": "collector"
+                      }
+                    },
+                    "total_amount": {
+                      "type": "number",
+                      "example": 120,
+                      "description": {
+                        "en": "total_amount",
+                        "pt": "total_amount",
+                        "es": "total_amount"
+                      }
+                    },
+                    "amount": {
+                      "type": "number",
+                      "example": 120,
+                      "description": {
+                        "en": "amount",
+                        "pt": "amount",
+                        "es": "amount"
+                      }
+                    },
+                    "external_reference": {
+                      "type": "string",
+                      "example": "Factura-0001",
+                      "description": {
+                        "en": "external_reference",
+                        "pt": "external_reference",
+                        "es": "external_reference"
+                      }
+                    },
+                    "operation_type": {
+                      "type": "string",
+                      "example": "regular_payment",
+                      "description": {
+                        "en": "operation_type",
+                        "pt": "operation_type",
+                        "es": "operation_type"
+                      }
+                    },
+                    "payment_methods": {
+                      "type": "object",
+                      "properties": {
+                        "excluded_payment_methods": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "description": "id"
+                              }
+                            }
+                          },
+                          "description": {
+                            "en": "excluded_payment_methods",
+                            "pt": "excluded_payment_methods",
+                            "es": "excluded_payment_methods"
+                          }
+                        },
+                        "excluded_payment_types": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "example": "ticket",
+                                "description": "id"
+                              }
+                            }
+                          },
+                          "description": {
+                            "en": "excluded_payment_types",
+                            "pt": "excluded_payment_types",
+                            "es": "excluded_payment_types"
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "payment_methods",
+                        "pt": "payment_methods",
+                        "es": "payment_methods"
+                      }
+                    },
+                    "marketplace": {
+                      "type": "string",
+                      "example": "NONE",
+                      "description": {
+                        "en": "marketplace",
+                        "pt": "marketplace",
+                        "es": "marketplace"
+                      }
+                    },
+                    "marketplace_fee": {
+                      "type": "number",
+                      "example": 0,
+                      "description": {
+                        "en": "marketplace_fee",
+                        "pt": "marketplace_fee",
+                        "es": "marketplace_fee"
+                      }
+                    },
+                    "sponsor_id": {
+                      "type": "number",
+                      "example": 446566691,
+                      "description": {
+                        "en": "sponsor_id",
+                        "pt": "sponsor_id",
+                        "es": "sponsor_id"
+                      }
+                    },
+                    "notification_url": {
+                      "type": "string",
+                      "example": "http://www.yourserver.com",
+                      "description": {
+                        "en": "notification_url",
+                        "pt": "notification_url",
+                        "es": "notification_url"
+                      }
+                    },
+                    "back_urls": {
+                      "type": "object",
+                      "properties": {
+                        "success": {
+                          "type": "string",
+                          "description": {
+                            "en": "success",
+                            "pt": "success",
+                            "es": "success"
+                          }
+                        },
+                        "pending": {
+                          "type": "string",
+                          "description": {
+                            "en": "pending",
+                            "pt": "pending",
+                            "es": "pending"
+                          }
+                        },
+                        "failure": {
+                          "type": "string",
+                          "description": {
+                            "en": "failure",
+                            "pt": "failure",
+                            "es": "failure"
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "back_urls",
+                        "pt": "back_urls",
+                        "es": "back_urls"
+                      }
+                    },
+                    "payer": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "number",
+                          "example": 0,
+                          "description": {
+                            "en": "id",
+                            "pt": "id",
+                            "es": "id"
+                          }
+                        },
+                        "email": {
+                          "type": "string",
+                          "description": {
+                            "en": "email",
+                            "pt": "email",
+                            "es": "email"
+                          }
+                        },
+                        "identification": {
+                          "type": "object",
+                          "properties": {
+                            "number": {
+                              "type": "string",
+                              "description": {
+                                "en": "number",
+                                "pt": "number",
+                                "es": "number"
+                              }
+                            },
+                            "type": {
+                              "type": "string",
+                              "description": {
+                                "en": "type",
+                                "pt": "type",
+                                "es": "type"
+                              }
+                            }
+                          },
+                          "description": {
+                            "en": "identification",
+                            "pt": "identification",
+                            "es": "identification"
+                          }
+                        },
+                        "address": {
+                          "type": "object",
+                          "properties": {
+                            "primary": {
+                              "type": "boolean",
+                              "description": {
+                                "en": "primary",
+                                "pt": "primary",
+                                "es": "primary"
+                              }
+                            },
+                            "zip": {
+                              "type": "string",
+                              "description": {
+                                "en": "zip",
+                                "pt": "zip",
+                                "es": "zip"
+                              }
+                            }
+                          },
+                          "description": {
+                            "en": "address",
+                            "pt": "address",
+                            "es": "address"
+                          }
+                        },
+                        "phone": {
+                          "type": "object",
+                          "properties": {
+                            "area_code": {
+                              "type": "string",
+                              "description": {
+                                "en": "area_code",
+                                "pt": "area_code",
+                                "es": "area_code"
+                              }
+                            },
+                            "number": {
+                              "type": "string",
+                              "description": {
+                                "en": "number",
+                                "pt": "number",
+                                "es": "number"
+                              }
+                            }
+                          },
+                          "description": {
+                            "en": "phone",
+                            "pt": "phone",
+                            "es": "phone"
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "payer",
+                        "pt": "payer",
+                        "es": "payer"
+                      }
+                    },
+                    "expires": {
+                      "type": "boolean",
+                      "description": {
+                        "en": "expires",
+                        "pt": "expires",
+                        "es": "expires"
+                      }
+                    },
+                    "additional_info": {
+                      "type": "string",
+                      "description": {
+                        "en": "additional_info",
+                        "pt": "additional_info",
+                        "es": "additional_info"
+                      }
+                    },
+                    "site_id": {
+                      "type": "string",
+                      "example": "mla",
+                      "description": {
+                        "en": "site_id",
+                        "pt": "site_id",
+                        "es": "site_id"
+                      }
+                    },
+                    "client_id": {
+                      "type": "number",
+                      "example": 360472057,
+                      "description": {
+                        "en": "client_id",
+                        "pt": "client_id",
+                        "es": "client_id"
+                      }
+                    },
+                    "processing_modes": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "example": "aggregator"
+                      },
+                      "description": {
+                        "en": "processing_modes",
+                        "pt": "processing_modes",
+                        "es": "processing_modes"
+                      }
+                    },
+                    "internal_metadata": {
+                      "type": "object",
+                      "description": {
+                        "en": "internal_metadata",
+                        "pt": "internal_metadata",
+                        "es": "internal_metadata"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "invalid_collector_id",
+                          "description": {
+                            "en": "collector_id invalid.",
+                            "es": "collector_id invalid.",
+                            "pt": "collector_id invalid."
+                          }
+                        },
+                        {
+                          "title": "invalid_sponsor_id",
+                          "description": {
+                            "en": "sponsor_id is not an active user.",
+                            "es": "sponsor_id is not an active user.",
+                            "pt": "sponsor_id is not an active user."
+                          }
+                        },
+                        {
+                          "title": "invalid_items",
+                          "description": {
+                            "en": "unit_price invalid.",
+                            "es": "unit_price invalid.",
+                            "pt": "unit_price invalid."
+                          }
+                        },
+                        {
+                          "title": "invalid_access_token",
+                          "description": {
+                            "en": "Access denied.",
+                            "es": "Access denied.",
+                            "pt": "Access denied."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Create order",
+          "pt": "Criar pedido",
+          "es": "Crear orden"
+        }
+      },
+      "delete": {
+        "tags": [
+          "qr-code"
+        ],
+        "description": {
+          "en": "Delete an order whenever you need to with the ID of the user and the external ID",
+          "pt": "Exclua uma ordem criada sempre que for necessário com o ID do vendedor e a caixa",
+          "es": "Elimina una orden creada siempre que lo necesites con el ID del vendedor y de la caja"
+        },
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "path",
+            "description": "User Id",
+            "x-description-i18n": {
+              "eng": "User Id",
+              "spa": "User Id",
+              "por": "User Id"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": 446566691
+            }
+          },
+          {
+            "name": "external_id",
+            "in": "path",
+            "description": "External Id",
+            "x-description-i18n": {
+              "eng": "External Id",
+              "spa": "External Id",
+              "por": "External Id"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "SUC001POS001"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "invalid_collector_id",
+                          "description": {
+                            "en": "COLLECTOR_ID invalid.",
+                            "es": "COLLECTOR_ID invalid.",
+                            "pt": "COLLECTOR_ID invalid."
+                          }
+                        },
+                        {
+                          "title": "invalid_access_token",
+                          "description": {
+                            "en": "access denied.",
+                            "es": "access denied.",
+                            "pt": "access denied."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Delete order",
+          "pt": "Excluir pedido",
+          "es": "Eliminar orden"
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "currency_id": {
+        "type": "string",
+        "example": "COP",
+        "description": "Currency identifier in ISO_4217 format.",
+        "x-description-i18n": {
+          "eng": "Currency identifier in ISO_4217 format.",
+          "spa": "Identificador de moneda en formato ISO_4217",
+          "por": "Identificador de moeda no formato ISO_4217"
+        },
+        "enum": [
+          "ARS -- Argentine peso.",
+          "BRL -- Brazil real.",
+          "CLP -- Chilean peso.",
+          "MXN -- Mexican peso.",
+          "COP -- Colombian peso.",
+          "PEN -- Peruvian sol.",
+          "UYU -- Uruguayan peso."
+        ]
+      }
+    }
+  },
+  "url": "https://api.mercadopago.com"
+}

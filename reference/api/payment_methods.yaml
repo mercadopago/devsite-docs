@@ -24,6 +24,10 @@ paths:
       responses:
         '200':
           description: Success
+          x-description-i18n:
+            eng: Success
+            spa: Success
+            por: Success
           content:
             application/json:
               schema:

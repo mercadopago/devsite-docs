@@ -1,0 +1,854 @@
+{
+  "paths": {
+    "/instore/qr/seller/collectors/{user_id}/pos/{external_pos_id}/orders": {
+      "delete": {
+        "tags": [
+          "qr-code"
+        ],
+        "description": {
+          "en": "Delete an order whenever you need to with the ID of the user and the external ID",
+          "pt": "Exclua uma ordem criada sempre que for necessário com o ID do vendedor e a caixa",
+          "es": "Elimina una orden creada siempre que lo necesites con el ID del vendedor y de la caja"
+        },
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "path",
+            "description": {
+              "en": "User Id",
+              "es": "User Id",
+              "pt": "User Id"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          },
+          {
+            "name": "external_pos_id",
+            "in": "path",
+            "description": {
+              "en": "External POS Id",
+              "es": "External POS Id",
+              "pt": "External POS Id"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "invalid_collectorId",
+                          "description": {
+                            "en": "user_id must be a number.",
+                            "es": "user_id must be a number.",
+                            "pt": "user_id must be a number."
+                          }
+                        },
+                        {
+                          "title": "invalid_externalPosId",
+                          "description": {
+                            "en": "externalPosId must be present.",
+                            "es": "externalPosId must be present.",
+                            "pt": "externalPosId must be present."
+                          }
+                        },
+                        {
+                          "title": "invalid_access_token",
+                          "description": {
+                            "en": "Access denied.",
+                            "es": "Access denied.",
+                            "pt": "Access denied."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "in_store_order_creation_error",
+                          "description": {
+                            "en": "Failed to delete order.",
+                            "es": "Failed to delete order.",
+                            "pt": "Failed to delete order."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Delete order",
+          "pt": "Excluir pedido",
+          "es": "Eliminar orden"
+        }
+      },
+      "get": {
+        "tags": [
+          "qr-code"
+        ],
+        "description": {
+          "en": "Check the payment information for a product or service with the ID of the order you want",
+          "pt": "Veja todas as informações de pagamento de um produto ou serviço com a identificação do pedido de sua escolha",
+          "es": "Consulta toda la información de pago de un producto o servicio con el ID de la orden que quieras"
+        },
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "path",
+            "description": {
+              "en": "User Id",
+              "es": "User Id",
+              "pt": "User Id"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          },
+          {
+            "name": "external_pos_id",
+            "in": "path",
+            "description": {
+              "en": "External POS Id",
+              "es": "External POS Id",
+              "pt": "External POS Id"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "en": "success",
+              "pt": "success",
+              "es": "success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "external_reference": {
+                        "type": "string",
+                        "example": "12345"
+                      },
+                      "total_amount": {
+                        "type": "number",
+                        "example": 100
+                      },
+                      "items": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "sku_number": {
+                              "type": "string",
+                              "example": "KS955RUR"
+                            },
+                            "category": {
+                              "type": "string",
+                              "example": "COMIDA"
+                            },
+                            "title": {
+                              "type": "string",
+                              "example": "Pasta"
+                            },
+                            "description": {
+                              "type": "string",
+                              "example": "Compra en Mercado Pago"
+                            },
+                            "unit_measure": {
+                              "$ref": "#/components/schemas/unit_measure"
+                            },
+                            "quantity": {
+                              "type": "number",
+                              "example": 5
+                            },
+                            "unit_price": {
+                              "type": "number",
+                              "example": 20
+                            },
+                            "total_amount": {
+                              "type": "number",
+                              "example": 100
+                            }
+                          }
+                        }
+                      },
+                      "title": {
+                        "type": "string",
+                        "example": "Compra"
+                      },
+                      "description": {
+                        "type": "string",
+                        "example": "Compra en Mercado Pago"
+                      },
+                      "sponsor": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "number",
+                            "example": 329653963
+                          }
+                        }
+                      },
+                      "expiration_date": {
+                        "type": "string",
+                        "example": "2023-08-22T16:34:56.559-04:00"
+                      },
+                      "notification_url": {
+                        "type": "string",
+                        "example": "www.yourserver.com"
+                      },
+                      "user_id": {
+                        "type": "string",
+                        "description": {
+                          "en": "User identifier.",
+                          "pt": "Identificador do usuário",
+                          "es": "Identificador del usuario"
+                        }
+                      },
+                      "external_pos_id": {
+                        "type": "string",
+                        "description": {
+                          "en": "External_id of the point of sale defined by integrator system.",
+                          "pt": "External_id  do ponto de venda definido pelo sistema integrador",
+                          "es": "External_id de la caja/punto de venta, definido por el integrador"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "invalid_collectorId",
+                          "description": {
+                            "en": "user_id must be a number.",
+                            "es": "user_id must be a number.",
+                            "pt": "user_id must be a number."
+                          }
+                        },
+                        {
+                          "title": "invalid_externalPosId",
+                          "description": {
+                            "en": "externalPosId must be present.",
+                            "es": "externalPosId must be present.",
+                            "pt": "externalPosId must be present."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "point_of_sale_in_store_order_not_found",
+                          "description": {
+                            "en": "No associated order found.",
+                            "es": "No associated order found.",
+                            "pt": "No associated order found."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "in_store_order_creation_error",
+                          "description": {
+                            "en": "Failed to create order.",
+                            "es": "Failed to create order.",
+                            "pt": "Failed to create order."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Get order",
+          "pt": "Obter pedido",
+          "es": "Obtener orden"
+        }
+      }
+    },
+    "/instore/qr/seller/collectors/{user_id}/stores/{external_store_id}/pos/{external_pos_id}/orders": {
+      "put": {
+        "tags": [
+          "qr-code"
+        ],
+        "description": {
+          "en": "Generate a payment order with all the payment information for your product or service and associate it with the Point of Sale you want",
+          "pt": "Gerar uma ordem para associar com a preferência de pagamento e obter a URL necessária para iniciar o fluxo de pagamento",
+          "es": "Genera una orden de pago asociada a la caja que quieras con toda la información de pago de tu producto o servicio"
+        },
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "path",
+            "description": {
+              "en": "Find the User ID in your developer dashboard at our devsite",
+              "es": "Encuentre la identificación de usuario en su panel de desarrollador en nuestro sitio para desarrolladores",
+              "pt": "Encontre a ID do usuário no painel do desenvolvedor em nosso site de desenvolvedores"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": 446566691
+            }
+          },
+          {
+            "name": "external_store_id",
+            "in": "path",
+            "description": "Custom Store ID associated to the order.",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "SUC001"
+            }
+          },
+          {
+            "name": "external_pos_id",
+            "in": "path",
+            "description": "Custom POS ID associated to the order.",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "SUC001POS001"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "external_reference": {
+                    "type": "string",
+                    "description": "Custom order ID you can synchronize with your sale system.",
+                    "example": 12345
+                  },
+                  "title": {
+                    "type": "string",
+                    "description": {
+                      "en": "Purchase title.",
+                      "es": "Título de la compra",
+                      "pt": "Título de compra"
+                    },
+                    "example": "Product order"
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": {
+                      "en": "Purchase description.",
+                      "es": "Descripción de la compra",
+                      "pt": "Descrição de compra"
+                    }
+                  },
+                  "notification_url": {
+                    "type": "string",
+                    "description": "URL where you'd like to receive a payment or merchant_order notification.",
+                    "example": "www.yourserver.com"
+                  },
+                  "expiration_date": {
+                    "type": "string",
+                    "description": "Expiration date with format \"2020-08-22T16:34:56.559-04:00\""
+                  },
+                  "total_amount": {
+                    "type": "number",
+                    "description": {
+                      "en": "Total amount of the transaction in local currency.",
+                      "es": "Monto total de la transacción en moneda local",
+                      "pt": "Valor total da transação na moeda local"
+                    },
+                    "example": 100
+                  },
+                  "items": {
+                    "type": "array",
+                    "description": {
+                      "en": "Information on the products involved in the order.",
+                      "es": "Información de los productos involucrados en la orden",
+                      "pt": "Informações sobre os produtos envolvidos no ordem"
+                    },
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "sku_number": {
+                          "type": "string",
+                          "description": {
+                            "en": "Item code.",
+                            "es": "Código de ítem",
+                            "pt": "Código de anúncio"
+                          },
+                          "example": "A123K9191938"
+                        },
+                        "category": {
+                          "type": "string",
+                          "description": {
+                            "en": "Item category.",
+                            "es": "Category del ítem",
+                            "pt": "Categoria do item"
+                          },
+                          "example": "marketplace"
+                        },
+                        "title": {
+                          "type": "string",
+                          "description": {
+                            "en": "Item title.",
+                            "es": "Título del ítem",
+                            "pt": "Título do item"
+                          },
+                          "example": "Point Mini"
+                        },
+                        "description": {
+                          "type": "string",
+                          "description": {
+                            "en": "Item description.",
+                            "es": "Descripción del item",
+                            "pt": "Descrição do artigo"
+                          },
+                          "example": "This is the Point Mini"
+                        },
+                        "unit_price": {
+                          "type": "number",
+                          "description": {
+                            "en": "Unit price of the item (maximum 2 decimals).",
+                            "es": "Precio unitario del producto (máximo 2 decimales)",
+                            "pt": "Preço unitário do produto (máximo de 2 decimais)"
+                          },
+                          "example": 100
+                        },
+                        "quantity": {
+                          "type": "number",
+                          "description": {
+                            "en": "Number of item units.",
+                            "es": "Cantidad de unidades del ítem",
+                            "pt": "Quantidade do unidades do item"
+                          },
+                          "example": 1
+                        },
+                        "unit_measure": {
+                          "$ref": "#/components/schemas/unit_measure"
+                        },
+                        "total_amount": {
+                          "type": "string",
+                          "description": {
+                            "en": "Item total.",
+                            "es": "Total de elementos.",
+                            "pt": "Total de itens."
+                          },
+                          "example": 100
+                        }
+                      }
+                    }
+                  },
+                  "sponsor": {
+                    "type": "object",
+                    "description": {
+                      "en": "Integrator information.",
+                      "es": "Información del integrador",
+                      "pt": "Informações do integrador"
+                    },
+                    "properties": {
+                      "id": {
+                        "type": "number",
+                        "description": {
+                          "en": "Mercado Pago's USER_ID of the integrator system.",
+                          "es": "USER_ID de la cuenta de Mercado Pago del sistema integrador",
+                          "pt": "USER_ID da conta Mercado Pago do sistema integrador"
+                        },
+                        "example": 446566691
+                      }
+                    }
+                  },
+                  "cash_out": {
+                    "type": "object",
+                    "description": "Cash withdrawal (Commercial contact required)",
+                    "properties": {
+                      "amount": {
+                        "type": "number",
+                        "description": {
+                          "en": "Amount to withdraw in local currency.",
+                          "es": "Monto a retirar en moneda local",
+                          "pt": "Montante a retirar em moeda local"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "invalid_collectorId",
+                          "description": {
+                            "en": "user_id must be a number.",
+                            "es": "user_id must be a number.",
+                            "pt": "user_id must be a number."
+                          }
+                        },
+                        {
+                          "title": "invalid_externalPosId",
+                          "description": {
+                            "en": "externalPosId must be present.",
+                            "es": "externalPosId must be present.",
+                            "pt": "externalPosId must be present."
+                          }
+                        },
+                        {
+                          "title": "invalid_external_reference",
+                          "description": {
+                            "en": "external_reference must be present.",
+                            "es": "external_reference must be present.",
+                            "pt": "external_reference must be present."
+                          }
+                        },
+                        {
+                          "title": "invalid_total_amount",
+                          "description": {
+                            "en": "total_amount must be present.",
+                            "es": "total_amount must be present.",
+                            "pt": "total_amount must be present."
+                          }
+                        },
+                        {
+                          "title": "invalid_items.sku_number",
+                          "description": {
+                            "en": "items.sku_number must be string.",
+                            "es": "items.sku_number must be string.",
+                            "pt": "items.sku_number must be string."
+                          }
+                        },
+                        {
+                          "title": "invalid_items.category",
+                          "description": {
+                            "en": "items.category must be string.",
+                            "es": "items.category must be string.",
+                            "pt": "items.category must be string."
+                          }
+                        },
+                        {
+                          "title": "invalid_items.title",
+                          "description": {
+                            "en": "items.title must be string.",
+                            "es": "items.title must be string.",
+                            "pt": "items.title must be string."
+                          }
+                        },
+                        {
+                          "title": "invalid_items.description",
+                          "description": {
+                            "en": "items.description must be string.",
+                            "es": "items.description must be string.",
+                            "pt": "items.description must be string."
+                          }
+                        },
+                        {
+                          "title": "invalid_items.unit_measure",
+                          "description": {
+                            "en": "items.unit_measure must be string.",
+                            "es": "items.unit_measure must be string.",
+                            "pt": "items.unit_measure must be string."
+                          }
+                        },
+                        {
+                          "title": "invalid_items.quantity",
+                          "description": {
+                            "en": "items.quantity must be number.",
+                            "es": "items.quantity must be number.",
+                            "pt": "items.quantity must be number."
+                          }
+                        },
+                        {
+                          "title": "invalid_items.currency_id",
+                          "description": {
+                            "en": "items.currency_id must be string.",
+                            "es": "items.currency_id must be string.",
+                            "pt": "items.currency_id must be string."
+                          }
+                        },
+                        {
+                          "title": "invalid_items.unit_price",
+                          "description": {
+                            "en": "items.unit_price must be number.",
+                            "es": "items.unit_price must be number.",
+                            "pt": "items.unit_price must be number."
+                          }
+                        },
+                        {
+                          "title": "invalid_items.total_amount",
+                          "description": {
+                            "en": "items.total_amount must be number.",
+                            "es": "items.total_amount must be number.",
+                            "pt": "items.total_amount must be number."
+                          }
+                        },
+                        {
+                          "title": "invalid_title",
+                          "description": {
+                            "en": "title must be string.",
+                            "es": "title must be string.",
+                            "pt": "title must be string."
+                          }
+                        },
+                        {
+                          "title": "invalid_unit_measure",
+                          "description": {
+                            "en": "unit_measure must be present.",
+                            "es": "unit_measure must be present.",
+                            "pt": "unit_measure must be present."
+                          }
+                        },
+                        {
+                          "title": "invalid_quantity",
+                          "description": {
+                            "en": "quantity must be present.",
+                            "es": "quantity must be present.",
+                            "pt": "quantity must be present."
+                          }
+                        },
+                        {
+                          "title": "invalid_unit_price",
+                          "description": {
+                            "en": "unit_price must be present.",
+                            "es": "unit_price must be present.",
+                            "pt": "unit_price must be present."
+                          }
+                        },
+                        {
+                          "title": "invalid_description",
+                          "description": {
+                            "en": "description must be present.",
+                            "es": "description must be present.",
+                            "pt": "description must be present."
+                          }
+                        },
+                        {
+                          "title": "invalid_sponsor.id",
+                          "description": {
+                            "en": "sponsor.id must be number.",
+                            "es": "sponsor.id must be number.",
+                            "pt": "sponsor.id must be number."
+                          }
+                        },
+                        {
+                          "title": "invalid_id",
+                          "description": {
+                            "en": "sponsor.id must be present.",
+                            "es": "sponsor.id must be present.",
+                            "pt": "sponsor.id must be present."
+                          }
+                        },
+                        {
+                          "title": "invalid_cash_out.amount",
+                          "description": {
+                            "en": "cash_out.amount must be number.",
+                            "es": "cash_out.amount must be number.",
+                            "pt": "cash_out.amount must be number."
+                          }
+                        },
+                        {
+                          "title": "invalid_amount",
+                          "description": {
+                            "en": "cash_out.amount must be present.",
+                            "es": "cash_out.amount must be present.",
+                            "pt": "cash_out.amount must be present."
+                          }
+                        },
+                        {
+                          "title": "error_creating_seller_qr_order",
+                          "description": {
+                            "en": "The cash out is required when order has no items.",
+                            "es": "The cash out is required when order has no items.",
+                            "pt": "The cash out is required when order has no items."
+                          }
+                        },
+                        {
+                          "title": "invalid_expiration_date",
+                          "description": {
+                            "en": "Expiration date must be a valid and future date.",
+                            "es": "Expiration date must be a valid and future date.",
+                            "pt": "Expiration date must be a valid and future date."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "in_store_order_creation_error",
+                          "description": {
+                            "en": "Failed to create order.",
+                            "es": "Failed to create order.",
+                            "pt": "Failed to create order."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Create order",
+          "pt": "Criar pedido",
+          "es": "Crear orden"
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "unit_measure": {
+        "type": "string",
+        "description": {
+          "en": "Unit of measure of the item.",
+          "es": "Unidad de medida del ítem",
+          "pt": "Unidade de medida do item"
+        },
+        "example": "unit",
+        "enum": [
+          "unit -- Unit",
+          "pack -- Pack"
+        ]
+      }
+    }
+  },
+  "url": "https://api.mercadopago.com"
+}
