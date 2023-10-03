@@ -8,14 +8,13 @@ Keep in mind that for this information query, the parameters `firmaRecargas` and
 
 ```android
 public void consultaParametros(String firmaRecargas, String firmaCuentas) { 
-Intent consultaParametros = new Intent("consultaParametros"); 
-consultaParametros.setClassName("redelcom.cl.rdcpass",  
-"redelcom.cl.rdcpass.MainActivity"); 
-consultaParametros.putExtra("packageName", getPackageName()); 
-consultaParametros.putExtra("className", getClass().toString().split(" ")[1]); 
-consultaParametros.putExtra("firmaGetCuentas", firmaCuentas); 
-consultaParametros.putExtra("firmaGetCompanies", firmaRecargas); 
- startActivity(consultaParametros); 
+    Intent consultaParametros = new Intent("consultaParametros"); 
+    consultaParametros.setClassName("redelcom.cl.rdcpass",  "redelcom.cl.rdcpass.MainActivity"); 
+    consultaParametros.putExtra("packageName", getPackageName()); 
+    consultaParametros.putExtra("className", getClass().toString().split(" ")[1]); 
+    consultaParametros.putExtra("firmaGetCuentas", firmaCuentas); 
+    consultaParametros.putExtra("firmaGetCompanies", firmaRecargas); 
+    startActivity(consultaParametros); 
 }
 
 ```
@@ -27,9 +26,9 @@ consultaParametros.putExtra("firmaGetCompanies", firmaRecargas);
 Intent intent = getIntent(); 
 String action = intent.getAction(); 
 if ("IR_INICIO".equals(action)) { 
-String respuestaCuentas = intent.getStringExtra("respuestaCuentas"); 
-String respuestaRecargas = intent.getStringExtra("respuestaCompanies"); 
-String SALDO_TERMINAL = intent.getStringExtra("SALDO_TERMINAL"); 
+    String respuestaCuentas = intent.getStringExtra("respuestaCuentas"); 
+    String respuestaRecargas = intent.getStringExtra("respuestaCompanies"); 
+    String SALDO_TERMINAL = intent.getStringExtra("SALDO_TERMINAL"); 
 } 
 
 ```

@@ -5,33 +5,20 @@ La impresión de comprobantes de pago es responsabilidad de quien opera con los 
 Para integrar la librería `*.jar NeptuneLiteAPI` y poder realizar impresión de comprobantes, sigue los pasos a continuación.
 
 1. Abre tu proyecto en Android Studio, y dirígete a **File>Project Structure>Dependencies**.
-</center>
 
 ![image showing where to find the Modules tab](/images/Redelcom/importar-librería2.png)
 
-</center>
-
 2. Selecciona el botón +, que se corresponde con la creación de un nuevo módulo. Se abrirá una ventana emergente para que selecciones el tipo de módulo, que deberá ser “Import .JAR/.AAR Package”.
-</center>
 
 ![image showing where to find the library](/images/Redelcom/importar-librería3.png)
 
-</center>
-
 3. En la siguiente ventana, busca la ruta de la librería requerida cliqueando en el botón de búsqueda ubicado en el costado derecho del campo “File name”.
-</center>
 
 ![image showing where to browse](/images/Redelcom/importar-librería4.png)
 
-</center>
-
 4. Presiona el botón **Finish** y agrega la librería como **Module Dependency** al proyecto.
 
-</center>
-
 ![image showing where to find the Modules Dependencies](/images/Redelcom/integrar-librería5.png)
-
-</center>
 
 ¡Y listo! la importación del `.jar` se realizó correctamente y ya es posible utilizar la librería para realizar impresiones.
 
@@ -46,9 +33,9 @@ Printer printer = Printer.getInstance();
 printer.init(); 
 int status = printer.getPrinterStatus(); 
 if (status == 0) { 
-printer.printTaggedText(“TEXTO A IMPRIMIR”, "iso-8859-1"); 
+    printer.printTaggedText(“TEXTO A IMPRIMIR”, "iso-8859-1"); 
 } else{ 
-Log.e(TAG_IMPRESION, "La impresora presenta el siguiente inconveniente: " +  statusCode2Str(status); 
+    Log.e(TAG_IMPRESION, "La impresora presenta el siguiente inconveniente: " +  statusCode2Str(status); 
 } 
 printer.start(); 
  

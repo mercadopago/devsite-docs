@@ -12,9 +12,9 @@ Se você já carregou saldo no POS e buscou os parâmetros necessários para mul
 
 ```android
 <intent-filter> 
-<action android:name="android.intent.action.SEND" /> 
-<category android:name="android.intent.category.DEFAULT" /> 
-<data android:mimeType="text/*" /> 
+	<action android:name="android.intent.action.SEND" /> 
+	<category android:name="android.intent.category.DEFAULT" /> 
+	<data android:mimeType="text/*" /> 
 </intent-filter>
 
 ```
@@ -23,22 +23,21 @@ Se você já carregou saldo no POS e buscou os parâmetros necessários para mul
 
 ```android
 public void sendConsulta(String id_cliente, String id_cuenta, String datos_captura_substring,  String nombre) { 
-try { 
- 		Intent consultaCuentaIntent = new Intent(intent); 
- 		consultaIdCuenta.setClassName("redelcom.cl.rdcpass",  
-"redelcom.cl.rdcpass.MainActivity"); 
- 		consultaCuentaIntent.putExtra("packageName", getPackageName()); 
- consultaCuentaIntent.putExtra("className", getClass().toString().split(" ")[1]);   
-  
- 		consultaCuentaIntent.putExtra("idCategoria", id_cuenta); 
- 		consultaCuentaIntent.putExtra("id", id_cliente); 
- 		consultaCuentaIntent.putExtra("nombreCuenta", nombre); 
- 		consultaCuentaIntent.putExtra("hint", datos_captura_substring); 
-  
- 		startActivity(consultaCuentaIntent); 
-} catch (Exception e) { 
+	try { 
+		Intent consultaCuentaIntent = new Intent(intent); 
+		consultaIdCuenta.setClassName("redelcom.cl.rdcpass",  "redelcom.cl.rdcpass.MainActivity"); 
+		consultaCuentaIntent.putExtra("packageName", getPackageName()); 
+		consultaCuentaIntent.putExtra("className", getClass().toString().split(" ")[1]);   
+	
+		consultaCuentaIntent.putExtra("idCategoria", id_cuenta); 
+		consultaCuentaIntent.putExtra("id", id_cliente); 
+		consultaCuentaIntent.putExtra("nombreCuenta", nombre); 
+		consultaCuentaIntent.putExtra("hint", datos_captura_substring); 
+	
+		startActivity(consultaCuentaIntent); 
+	} catch (Exception e) { 
  		e.printStackTrace(); 
-} 
+	} 
 } 
  
 ```

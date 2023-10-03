@@ -58,23 +58,25 @@ static const platform = const MethodChannel('app.channel.shared.data'); String d
 
 @Override 
 void initState() { 
- 		super.initState(); 
- 		getSharedIntent(); 
+	super.initState(); 
+	getSharedIntent(); 
 } 
  getSharedIntent() async { 
  		var sharedData = await platform.invokeMethod("getSharedText"); 
  		if (sharedData != null) { 
- 				setState(() { 
- 				data = sharedData; 
+			setState(() { 
+				data = sharedData; 
 				// Do something… 
- 		}); 
- } 
+ 			}); 
+ 		} 
  } 
 
  
 ```
 
 Then, add the following block in `MainActivity.java`:
+
+```flutter
 
 ```flutter
 
@@ -98,13 +100,13 @@ protected void onCreate(Bundle savedInstanceState) {
  public void configureFlutterEngine(@NonNull FlutterEngine flutterEngine) {  
 		GeneratedPluginRegistrant.registerWith(flutterEngine); 
  		new MethodChannel(flutterEngine.getDartExecutor().getBinaryMessenger(), CHANNEL)  .setMethodCallHandler( 
- (call, result) -> { 
- 					if (call.method.contentEquals("getSharedText")) { 
- 					result.success(sharedIntent); 
- 					sharedIntent = null; 
- 					} 
- 			} 
- ); 
+ 		(call, result) -> { 
+			if (call.method.contentEquals("getSharedText")) { 
+				result.success(sharedIntent); 
+				sharedIntent = null; 
+			} 
+ 		} 
+ 		); 
  } 
  void handleSend(Intent intent) { 
  		sharedIntent = intent.getStringExtra(Intent.EXTRA_TEXT); 
@@ -118,9 +120,9 @@ Finally, add the intent-filter (Activity) to the `AndroidManifest.xml` file of t
 ```flutter
 
 <intent-filter> 
- 		<action android:name="android.intent.action.SEND" /> 
- 		<category android:name="android.intent.category.DEFAULT" /> 
- 		<data android:mimeType="text/*" /> 
+	<action android:name="android.intent.action.SEND" /> 
+	<category android:name="android.intent.category.DEFAULT" /> 
+	<data android:mimeType="text/*" /> 
 </intent-filter>
 
 ```

@@ -1,6 +1,7 @@
 # Cargar saldo en POS
 
 Para poder realizar recargas de teléfonos celulares o pagos de cuentas, es necesario contar con saldo disponible en la terminal, que puede ser cargado generando una instancia de pago especial en RDCPass. 
+
 Si quieres generar esta instancia de pago para cargar saldo en la terminal, sigue los pasos a continuación.
 
 
@@ -14,14 +15,13 @@ Si quieres generar esta instancia de pago para cargar saldo en la terminal, sigu
 
 ```android
 <intent-filter> 
-<action android:name="android.intent.action.SEND" /> 
-<category android:name="android.intent.category.DEFAULT" /> 
-<data android:mimeType="text/*" /> 
+	<action android:name="android.intent.action.SEND" /> 
+	<category android:name="android.intent.category.DEFAULT" /> 
+	<data android:mimeType="text/*" /> 
 </intent-filter>
- 
+
 
 ```
-
 
 > WARNING
 > 
@@ -36,7 +36,7 @@ public void shareRDCPass(String total, String intent, Boolean esCarga) {
  	try { 
  		Intent sharingIntent = new Intent(intent); 
  		sharingIntent.setClassName("redelcom.cl.rdcpass", "redelcom.cl.rdcpass.MainActivity");  
-sharingIntent.putExtra("packageName", getPackageName()); 
+		sharingIntent.putExtra("packageName", getPackageName()); 
  		sharingIntent.putExtra("className", getClass().toString().split(" ")[1]); 
  		sharingIntent.putExtra(Intent.EXTRA_TEXT, total); 
  		if (esCarga){ 
@@ -45,14 +45,14 @@ sharingIntent.putExtra("packageName", getPackageName());
  		} 
  		startActivity(sharingIntent); 
  	} catch (Exception e) { 
- e.printStackTrace(); 
+ 		e.printStackTrace(); 
  	} 
 } 
  
 ```
 
 
-| Campo | Descripción | Ejemplo |
+| Método | Descripción | Ejemplo |
 |---|---|---|
 | `sharingIntent.putExtra(Intent.EXTRA_TEXT, total)` | `total` es el monto total de la transacción. Sólo se acepta moneda CLP y en formato string numérico, sin puntos ni caracteres especiales. | 2000 |
 | `sharingIntent.putExtra("recargaSaldo", true)` | Indica que la transacción es una carga de saldo. Formato booleano, por defecto `false`. Para generar la recarga, debe ser `true`. | `true`/`false` |

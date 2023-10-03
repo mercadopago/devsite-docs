@@ -27,7 +27,7 @@ curl -X POST \
    "rdcDTE": true,
    "requestTip": true,
    "responseCallback": "https://eom2h2tqm3g6y7l.m.pipedream.net",
-   "terminalId": "3727",
+   "terminalId": "3127",
    "userTransactionId": "345565"
 
 

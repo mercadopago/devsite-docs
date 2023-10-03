@@ -2,17 +2,19 @@
 
 Se você deseja consultar uma instância de pagamento já realizada no aplicativo RDCPass, siga as etapas abaixo.
 
-1. Adicione o intent-filter (Activity) no arquivo AndroidManifest.xml do seu projeto: `<action android:name="android.intent.action.ANSWER" />`.
+1. Adicione o intent-filter (Activity) no arquivo AndroidManifest.xml do seu projeto: 
 
-Além do intent-filter para criar a intenção de pagamento, seu projeto deve ser assim:
+ `<action android:name="android.intent.action.ANSWER" />`
+
+ Além do intent-filter para criar a intenção de pagamento, seu projeto deve ser assim:
 
 ```android
 
 <intent-filter> 
-<action android:name="android.intent.action.SEND" /> 
-<action android:name="android.intent.action.ANSWER" /> 
-<category android:name="android.intent.category.DEFAULT" /> 
-<data android:mimeType="text/*" /> 
+	<action android:name="android.intent.action.SEND" /> 
+	<action android:name="android.intent.action.ANSWER" /> 
+	<category android:name="android.intent.category.DEFAULT" /> 
+	<data android:mimeType="text/*" /> 
 </intent-filter>
 
 ```
@@ -26,10 +28,11 @@ O valor `String total`, por outro lado, pode estar vazio (`String total = ""`).
 public void shareRDCPass(String total, String intent) { 
  	try { 
  		Intent sharingIntent = new Intent(intent); 
-sharingIntent.setClassName("redelcom.cl.rdcpass", "redelcom.cl.rdcpass.MainActivity"); sharingIntent.putExtra("packageName", getPackageName()); 
-sharingIntent.putExtra("className", getClass().toString().split(" ")[1]); 
-sharingIntent.putExtra("userTransactionId", "DEMO1234"); 
-startActivity(sharingIntent); 
+		sharingIntent.setClassName("redelcom.cl.rdcpass", "redelcom.cl.rdcpass.MainActivity"); 
+		sharingIntent.putExtra("packageName", getPackageName()); 
+		sharingIntent.putExtra("className", getClass().toString().split(" ")[1]); 
+		sharingIntent.putExtra("userTransactionId", "DEMO1234"); 
+		startActivity(sharingIntent); 
  	} catch (Exception e) { 
  		e.printStackTrace(); 
  	} 
@@ -43,7 +46,7 @@ startActivity(sharingIntent);
 > Importante
 > 
 > Para consultar um pagamento, você precisará do `userTransactionId` atribuído a esse pagamento quando ele foi criado. Lembre-se de substituir o valor "DEMO 1234" pelo `userTransactionId` apropriado.
->
+> <br>
 > Se você não tiver este dado, pode usar o mesmo método para descobrir qual foi o último identificador usado, mas substitua "DEMO1234" pelo valor "-1" da seguinte forma: `sharingIntent.putExtra("userTransactionId", "-1");` .
 
 
@@ -53,15 +56,14 @@ startActivity(sharingIntent);
 try{ 
  	Intent intent = getIntent(); 
  	String action = intent.getAction(); 
-String payload = new JSONObject(intent.getStringExtra("payload")); 
-String userTransactionId= new JSONObject(intent.getStringExtra("userTransactionId")); 
-if (Intent.ACTION_ANSWER.equals(action)) { 
- 	// Define what to do with the received data “payload” 
- } 
+	String payload = new JSONObject(intent.getStringExtra("payload")); 
+	String userTransactionId= new JSONObject(intent.getStringExtra("userTransactionId")); 
+	if (Intent.ACTION_ANSWER.equals(action)) { 
+ 		// Define what to do with the received data “payload” 
+ 	} 
 } catch (Exception e) { 
- e.printStackTrace(); 
+ 	e.printStackTrace(); 
 } 
-
 ```
 
 

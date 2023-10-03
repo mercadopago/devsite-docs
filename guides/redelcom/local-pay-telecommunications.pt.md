@@ -12,9 +12,9 @@ Para pagar recargas de telecomunicações, siga as etapas abaixo.
 
 ```android
 <intent-filter> 
-<action android:name="android.intent.action.SEND" /> 
-<category android:name="android.intent.category.DEFAULT" /> 
-<data android:mimeType="text/*" /> 
+    <action android:name="android.intent.action.SEND" /> 
+    <category android:name="android.intent.category.DEFAULT" /> 
+    <data android:mimeType="text/*" /> 
 </intent-filter>
 
 ```
@@ -30,14 +30,15 @@ Para pagar recargas de telecomunicações, siga as etapas abaixo.
 
 ```android
 private void sendRecarga(String nombre_servicio, String id_servicio, String id_cliente, String  monto) { 
-Intent recargaIntent = new Intent("enviaRecarga"); 
-recargaIntent.setClassName("redelcom.cl.rdcpass", "redelcom.cl.rdcpass.MainActivity"); recargaIntent.putExtra("packageName", context.getPackageName()); 
-recargaIntent.putExtra("className", getClass().toString().split(" ")[1]); 
-recargaIntent.putExtra("NumberRecharge", id_cliente); 
-recargaIntent.putExtra("AmountRecharge", monto); 
-recargaIntent.putExtra("CompanyRecharge", id_servicio); 
-recargaIntent.putExtra("CompanyNameRecharge", nombre_servicio); 
-startActivity(recargaIntent); 
+    Intent recargaIntent = new Intent("enviaRecarga"); 
+    recargaIntent.setClassName("redelcom.cl.rdcpass", "redelcom.cl.rdcpass.MainActivity"); 
+    recargaIntent.putExtra("packageName", context.getPackageName()); 
+    recargaIntent.putExtra("className", getClass().toString().split(" ")[1]); 
+    recargaIntent.putExtra("NumberRecharge", id_cliente); 
+    recargaIntent.putExtra("AmountRecharge", monto); 
+    recargaIntent.putExtra("CompanyRecharge", id_servicio); 
+    recargaIntent.putExtra("CompanyNameRecharge", nombre_servicio); 
+    startActivity(recargaIntent); 
 }
  
 ```

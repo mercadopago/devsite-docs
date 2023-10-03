@@ -2,20 +2,17 @@
 
 Si quieres consultar información necesaria para realizar pagos de cuenta y recargas en compañías de telecomunicaciones, tales como el saldo disponible en la terminal o las compañías disponibles para hacer recargas, sigue los pasos a continuación.
 
-1. Implementa la función “consultaParametros” al inicio de tu aplicación, tal como se muestra en el siguiente bloque de código.
-
-Ten en cuenta que para esta consulta de información, los parámetros `firmaRecargas` y `firmaCuentas` pueden quedar vacíos ("").
+1. Implementa la función “consultaParametros” al inicio de tu aplicación, tal como se muestra en el siguiente bloque de código. Ten en cuenta que para esta consulta de información, los parámetros `firmaRecargas` y `firmaCuentas` pueden quedar vacíos ("").
 
 ```android
 public void consultaParametros(String firmaRecargas, String firmaCuentas) { 
-Intent consultaParametros = new Intent("consultaParametros"); 
-consultaParametros.setClassName("redelcom.cl.rdcpass",  
-"redelcom.cl.rdcpass.MainActivity"); 
-consultaParametros.putExtra("packageName", getPackageName()); 
-consultaParametros.putExtra("className", getClass().toString().split(" ")[1]); 
-consultaParametros.putExtra("firmaGetCuentas", firmaCuentas); 
-consultaParametros.putExtra("firmaGetCompanies", firmaRecargas); 
- startActivity(consultaParametros); 
+    Intent consultaParametros = new Intent("consultaParametros"); 
+    consultaParametros.setClassName("redelcom.cl.rdcpass",  "redelcom.cl.rdcpass.MainActivity"); 
+    consultaParametros.putExtra("packageName", getPackageName()); 
+    consultaParametros.putExtra("className", getClass().toString().split(" ")[1]); 
+    consultaParametros.putExtra("firmaGetCuentas", firmaCuentas); 
+    consultaParametros.putExtra("firmaGetCompanies", firmaRecargas); 
+    startActivity(consultaParametros); 
 }
 
 ```
@@ -27,9 +24,9 @@ consultaParametros.putExtra("firmaGetCompanies", firmaRecargas);
 Intent intent = getIntent(); 
 String action = intent.getAction(); 
 if ("IR_INICIO".equals(action)) { 
-String respuestaCuentas = intent.getStringExtra("respuestaCuentas"); 
-String respuestaRecargas = intent.getStringExtra("respuestaCompanies"); 
-String SALDO_TERMINAL = intent.getStringExtra("SALDO_TERMINAL"); 
+    String respuestaCuentas = intent.getStringExtra("respuestaCuentas"); 
+    String respuestaRecargas = intent.getStringExtra("respuestaCompanies"); 
+    String SALDO_TERMINAL = intent.getStringExtra("SALDO_TERMINAL"); 
 } 
 
 ```

@@ -9,9 +9,9 @@ To create a payment intention, follow the steps below:
 ```android
 
 <intent-filter> 
-<action android:name="android.intent.action.SEND" /> 
-<category android:name="android.intent.category.DEFAULT" /> 
-<data android:mimeType="text/*" /> 
+	<action android:name="android.intent.action.SEND" /> 
+	<category android:name="android.intent.category.DEFAULT" /> 
+	<data android:mimeType="text/*" /> 
 </intent-filter>
 
 ```
@@ -23,24 +23,24 @@ To create a payment intention, follow the steps below:
 
 public void shareRDCPass(String total, String intent) { 
  	try { 
- 	Intent sharingIntent = new Intent(intent); 
-sharingIntent.setClassName("redelcom.cl.rdcpass", "redelcom.cl.rdcpass.MainActivity"); 
-sharingIntent.putExtra("packageName", getPackageName()); 
-sharingIntent.putExtra("className", getClass().toString().split(" ")[1]); 
-sharingIntent.putExtra(Intent.EXTRA_TEXT, total); 
-             sharingIntent.putExtra("userTransactionId", "DEMO1234");
-      sharingIntent.putExtra("description", "Descripcion para tu transacción");
-      sharingIntent.putExtra("payment_type", "TIPO_PAGO");
-      sharingIntent.putExtra("request_tip", false);
-      sharingIntent.putExtra("rdcDTE", false);
+ 		Intent sharingIntent = new Intent(intent); 
+		sharingIntent.setClassName("redelcom.cl.rdcpass", "redelcom.cl.rdcpass.MainActivity"); 
+		sharingIntent.putExtra("packageName", getPackageName()); 
+		sharingIntent.putExtra("className", getClass().toString().split(" ")[1]); 
+		sharingIntent.putExtra(Intent.EXTRA_TEXT, total); 
+        sharingIntent.putExtra("userTransactionId", "DEMO1234");
+      	sharingIntent.putExtra("description", "Descripcion para tu transacción");
+      	sharingIntent.putExtra("payment_type", "TIPO_PAGO");
+      	sharingIntent.putExtra("request_tip", false);
+      	sharingIntent.putExtra("rdcDTE", false);
 
-       ArrayList<String> arrayListUserTransactionId = new ArrayList<String>(); 
-arrayListUserTransactionId.add("DEMO1233"); 
-sharingIntent.putExtra("completeTransactions", arrayListUserTransactionId);
-startActivity(sharingIntent); 
- } catch (Exception e) { 
- 	e.printStackTrace(); 
- } 
+       	ArrayList<String> arrayListUserTransactionId = new ArrayList<String>(); 
+		arrayListUserTransactionId.add("DEMO1233"); 
+		sharingIntent.putExtra("completeTransactions", arrayListUserTransactionId);
+		startActivity(sharingIntent); 
+ 	} catch (Exception e) { 
+ 		e.printStackTrace(); 
+ 	} 
 }
 
 ```
@@ -67,10 +67,10 @@ try{
  	Intent intent = getIntent(); 
  	String action = intent.getAction(); 
 
-JSONObject payload = new JSONObject(intent.getStringExtra(Intent.EXTRA_TEXT)); 
-String userTransactionId = intent.getStringExtra(“userTransactionId”); 
-if (Intent.ACTION_SEND.equals(action)) { 
- // Define what to do with the received data “payload” 
+	JSONObject payload = new JSONObject(intent.getStringExtra(Intent.EXTRA_TEXT)); 
+	String userTransactionId = intent.getStringExtra(“userTransactionId”); 
+	if (Intent.ACTION_SEND.equals(action)) { 
+ 		// Define what to do with the received data “payload” 
  	} 
 } catch (Exception e) { 
  	e.printStackTrace(); 

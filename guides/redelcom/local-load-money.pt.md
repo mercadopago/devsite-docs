@@ -1,6 +1,8 @@
 # Carregar dinheiro no POS
 
-Para recarregar telefones celulares ou pagar contas, é necessário ter saldo disponível no terminal, que pode ser carregado criando uma instância de pagamento especial no RDCPass. Se você deseja gerar essa instância de pagamento para carregar saldo no POS, siga as etapas abaixo.
+Para recarregar telefones celulares ou pagar contas, é necessário ter saldo disponível no terminal, que pode ser carregado criando uma instância de pagamento especial no RDCPass. 
+
+Se você deseja gerar essa instância de pagamento para carregar saldo no POS, siga as etapas abaixo.
 
 > WARNING
 > 
@@ -12,14 +14,12 @@ Para recarregar telefones celulares ou pagar contas, é necessário ter saldo di
 
 ```android
 <intent-filter> 
-<action android:name="android.intent.action.SEND" /> 
-<category android:name="android.intent.category.DEFAULT" /> 
-<data android:mimeType="text/*" /> 
+	<action android:name="android.intent.action.SEND" /> 
+	<category android:name="android.intent.category.DEFAULT" /> 
+	<data android:mimeType="text/*" /> 
 </intent-filter>
  
-
 ```
-
 
 > WARNING
 > 
@@ -34,7 +34,7 @@ public void shareRDCPass(String total, String intent, Boolean esCarga) {
  	try { 
  		Intent sharingIntent = new Intent(intent); 
  		sharingIntent.setClassName("redelcom.cl.rdcpass", "redelcom.cl.rdcpass.MainActivity");  
-sharingIntent.putExtra("packageName", getPackageName()); 
+		sharingIntent.putExtra("packageName", getPackageName()); 
  		sharingIntent.putExtra("className", getClass().toString().split(" ")[1]); 
  		sharingIntent.putExtra(Intent.EXTRA_TEXT, total); 
  		if (esCarga){ 
@@ -43,14 +43,14 @@ sharingIntent.putExtra("packageName", getPackageName());
  		} 
  		startActivity(sharingIntent); 
  	} catch (Exception e) { 
- e.printStackTrace(); 
+ 		e.printStackTrace(); 
  	} 
 } 
  
 ```
 
 
-| Campo | Descrição | Exemplo |
+| Método | Descrição | Exemplo |
 |---|---|---|
 | `sharingIntent.putExtra(Intent.EXTRA_TEXT, total)` | `total` é o valor total da transação. Aceita apenas moeda CLP e deve estar em formato de string numérica, sem pontos ou caracteres especiais. | 2000 |
 | `sharingIntent.putExtra("recargaSaldo", true)` | Indica que a transação é uma recarga de saldo. Formato booleano, o padrão é `false`. Para gerar a recarga, deve ser definido como `true`. | `true`/`false` |

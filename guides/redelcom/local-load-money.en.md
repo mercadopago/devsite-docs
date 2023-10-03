@@ -1,6 +1,8 @@
 # Load money in POS
 
-In order to recharge mobile phones or make bill payments, it is necessary to have available balance on the terminal, which can be loaded by creating a special payment instance in RDCPass. If you want to generate this payment instance to load balance into the terminal, follow the steps below.
+In order to recharge mobile phones or make bill payments, it is necessary to have available balance on the terminal, which can be loaded by creating a special payment instance in RDCPass. 
+
+If you want to generate this payment instance to load balance into the terminal, follow the steps below.
 
 > WARNING 
 > 
@@ -12,9 +14,9 @@ In order to recharge mobile phones or make bill payments, it is necessary to hav
 
 ```android
 <intent-filter> 
-<action android:name="android.intent.action.SEND" /> 
-<category android:name="android.intent.category.DEFAULT" /> 
-<data android:mimeType="text/*" /> 
+	<action android:name="android.intent.action.SEND" /> 
+	<category android:name="android.intent.category.DEFAULT" /> 
+	<data android:mimeType="text/*" /> 
 </intent-filter>
  
 ```
@@ -32,7 +34,7 @@ public void shareRDCPass(String total, String intent, Boolean esCarga) {
  	try { 
  		Intent sharingIntent = new Intent(intent); 
  		sharingIntent.setClassName("redelcom.cl.rdcpass", "redelcom.cl.rdcpass.MainActivity");  
-sharingIntent.putExtra("packageName", getPackageName()); 
+		sharingIntent.putExtra("packageName", getPackageName()); 
  		sharingIntent.putExtra("className", getClass().toString().split(" ")[1]); 
  		sharingIntent.putExtra(Intent.EXTRA_TEXT, total); 
  		if (esCarga){ 
@@ -41,14 +43,14 @@ sharingIntent.putExtra("packageName", getPackageName());
  		} 
  		startActivity(sharingIntent); 
  	} catch (Exception e) { 
- e.printStackTrace(); 
+ 		e.printStackTrace(); 
  	} 
 } 
  
 ```
 
 
-| Field | Description | Example |
+| Method | Description | Example |
 |---|---|---|
 | `sharingIntent.putExtra(Intent.EXTRA_TEXT, total)` | `total` is the total amount of the transaction. Only CLP currency is accepted, and it should be in numeric string format, without dots or special characters. | 2000 |
 | `sharingIntent.putExtra("recargaSaldo", true)` | Indicates that the transaction is a balance load. Boolean format, default is `false`. To generate the load, it should be set to `true`. | `true`/`false` |

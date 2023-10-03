@@ -14,7 +14,7 @@ curl -X POST \
 --data '{
    "dte": "XML de boleta o factura bajo el esquema de servicios impuestos internos",
    "rdcTransactionId": "294-3727-16384",
-   "terminalId": "3727"
+   "terminalId": "3127"
 }'
 
 ```
@@ -49,7 +49,7 @@ curl  -X POST \
 --data '{
    "printText": ""{w}   Roberta Pizzas       {/w} {br}      PUB RESTAURANT {br}       Vina del mar.Chile{br}{br}{w}  ADICION        MESA   {br}    1763            5          {/w}{br}     18/04/2023  T:1  9:26 pm{br}Atendido por :ASDRUBAL      ( 3){br}Invitados    :  5{br}--- Detalle del Consumo --------{br}Producto {s}(Cant x Precio){/s}        Total{br}--------------------------------{b}{br}RUCULA                   $10,900{br}GAMBA                    $11,700{br}BOTURA                   $11,900{br} {br} {br}{pdf417}www.google.cl{/pdf417}{br}"
 ",
-   "terminalId": "3727"
+   "terminalId": "3127"
 }'
 
 ```

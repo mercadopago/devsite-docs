@@ -2,21 +2,21 @@
 
 Se você deseja imprimir o DTE de uma instância de pagamento já realizada no RDCPass, siga as etapas abaixo.
 
-1. Adicione o intent-filter (Activity) no arquivo AndroidManifest.xml do seu projeto: `<action android:name="android.intent.action.ACTION_SENDTO" />`. 
+1. Adicione o intent-filter (Activity) no arquivo AndroidManifest.xml do seu projeto: 
 
-Além do intent-filter para criar a intenção de pagamento e consultar um pagamento, seu projeto deve ser assim:
+ `<action android:name="android.intent.action.ACTION_SENDTO" />`. 
+
+ Além do intent-filter para criar a intenção de pagamento e consultar um pagamento, seu projeto deve ser assim:
 
 ```android
 
 <intent-filter> 
-<action android:name="android.intent.action.SEND" /> 
-<action android:name="android.intent.action.ANSWER" /> 
-                <action android:name="android.intent.action.SENDTO" />
-
-<category android:name="android.intent.category.DEFAULT" /> 
-<data android:mimeType="text/*" /> 
+	<action android:name="android.intent.action.SEND" /> 
+	<action android:name="android.intent.action.ANSWER" /> 
+    <action android:name="android.intent.action.SENDTO" />
+	<category android:name="android.intent.category.DEFAULT" /> 
+	<data android:mimeType="text/*" /> 
 </intent-filter>
-
 
 ```
 
@@ -29,12 +29,13 @@ O valor `String total`, por outro lado, pode estar vazio (`String total = ""`).
 public void shareRDCPass(String total, String intent) { 
  	try { 
  		Intent sharingIntent = new Intent(intent); 
-sharingIntent.setClassName("redelcom.cl.rdcpass", "redelcom.cl.rdcpass.MainActivity"); sharingIntent.putExtra("packageName", getPackageName()); 
-sharingIntent.putExtra("className", getClass().toString().split(" ")[1]);  
-sharingIntent.putExtra(“payload”, “RESULTADO_PAGO_REALIZADO”); 
-sharingIntent.putExtra(“dte”, dte); 
-startActivity(sharingIntent); 
- } catch (Exception e) { 
+		sharingIntent.setClassName("redelcom.cl.rdcpass", "redelcom.cl.rdcpass.MainActivity"); 
+		sharingIntent.putExtra("packageName", getPackageName()); 
+		sharingIntent.putExtra("className", getClass().toString().split(" ")[1]);  
+		sharingIntent.putExtra(“payload”, “RESULTADO_PAGO_REALIZADO”); 
+		sharingIntent.putExtra(“dte”, dte); 
+		startActivity(sharingIntent); 
+	} catch (Exception e) { 
  		e.printStackTrace(); 
  	} 
 } 
@@ -42,7 +43,7 @@ startActivity(sharingIntent);
 ```
 
 
-| Campo  | Descrição |
+| Método  | Descrição |
 |---|---|
 | `sharingIntent.putExtra("payload", "RESULTADO_PAGO_REALIZADO");` | Este parâmetro pode ser obtido como resposta à intenção de pagamento. |
 | `sharingIntent.putExtra("dte", dte);` | Este parâmetro corresponde à estrutura (XML) do recibo/fatura eletrônica. Você pode conferir um exemplo completo de XML no [Anexo: Exemplo XML para Impressão do DTE](/developers/pt/docs/redelcom/additional-content/print-example). |
@@ -52,7 +53,7 @@ startActivity(sharingIntent);
 ```android
 if (Intent.ACTION_SENDTO.equals(action)) { 
  	// Define what to do after printing the DTE 
- 	}
+}
  
 
 ```

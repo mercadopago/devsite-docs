@@ -54,23 +54,23 @@ To process payments, you first need to implement the method that allows you to s
 startActivity(pay): void { 
  		this.app.getPackageName().then(async (value) => {  
 			const options = { 
- 					action: this.intent.ACTION_SEND, 
- 					package: value.toString(), 
- 					extras: { 
- 							packageName: value.toString(), 
- 							className: `${value.toString()}.MainActivity`,  monto: `${pay}` 
- 					}, 
- 					component: { 
- 							package: 'redelcom.cl.rdcpass', 
- 							class: 'redelcom.cl.rdcpass.MainActivity' 
- 					}, 
+				action: this.intent.ACTION_SEND, 
+				package: value.toString(), 
+				extras: { 
+					packageName: value.toString(), 
+					className: `${value.toString()}.MainActivity`,  monto: `${pay}` 
+				}, 
+				component: { 
+					package: 'redelcom.cl.rdcpass', 
+					class: 'redelcom.cl.rdcpass.MainActivity' 
+ 				}, 
  			}; 
  			this.intent.startActivity(options) 
  			.then((onSucces) => { 
- 					this.getIntent(); 
+ 				this.getIntent(); 
  			}, 
  			(onError) => { 
- 					console.log('error', onError); 
+ 				console.log('error', onError); 
  			}); 
  		} 
 	);  
@@ -85,26 +85,27 @@ To obtain the response to that intent, implement the following method:
 getIntent() { 
  		this.intent.getIntent().then(async (intentRDCPass: any) => { 
  				if (intentRDCPass.extras && intentRDCPass.action == this.intent.ACTION_SEND) {  
-				this.data = JSON.parse(intentRDCPass.extras['android.intent.extra.TEXT']);  this.statusPay = this.data.ESTADO; 
-				// ARMAR UN OBJETO CON LOS DATOS DE RESPUESTA QUE SE REQUIERAN.
-  				let objWithData = { 
- 						estado: this.data.ESTADO, 
- 						total: this.data.TOTAL, 
- 						propina: this.data.PROPINA, 
- 						medio_pago: this.data.MEDIO_PAGO, 
- 						codaut: this.data.CODAUT, 
- 						fecha_hora: this.data['FECHA&HORA'], 
- 						mensaje_visor: this.data.MENSAJE_VISOR, 
- 				}; 
- 				if (this.data.ESTADO == 'APROBADO') { 
- 						// ACCIÓN PARA EL CASO APROBADO.... 
+					this.data = JSON.parse(intentRDCPass.extras['android.intent.extra.TEXT']); 
+					this.statusPay = this.data.ESTADO; 
+					// ARMAR UN OBJETO CON LOS DATOS DE RESPUESTA QUE SE REQUIERAN.
+					let objWithData = { 
+						estado: this.data.ESTADO, 
+						total: this.data.TOTAL, 
+						propina: this.data.PROPINA, 
+						medio_pago: this.data.MEDIO_PAGO, 
+						codaut: this.data.CODAUT, 
+						fecha_hora: this.data['FECHA&HORA'], 
+						mensaje_visor: this.data.MENSAJE_VISOR, 
+					}; 
+					if (this.data.ESTADO == 'APROBADO') { 
+						// ACCIÓN PARA EL CASO APROBADO.... 
+					} else { 
+						// ACCIÓN PARA EL CASO RECHAZADO.... 
+					} 
  				} else { 
- 						// ACCIÓN PARA EL CASO RECHAZADO.... 
- 				} 
- 				} else { 
- 						setTimeout(() => { 
- 								this.getIntent(); 
- 						}, 1000); 
+					setTimeout(() => { 
+							this.getIntent(); 
+					}, 1000); 
  				} 
 		});  
 } 
