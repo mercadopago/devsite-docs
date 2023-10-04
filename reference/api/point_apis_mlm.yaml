@@ -115,11 +115,11 @@ paths:
                         external_pos_id:
                           type: string
                           example: "1234"
-                         description: Unique identifier of the store defined by integrator system.
-                         x-description-i18n:
-                           eng: Unique identifier of the store defined by integrator system.
-                           spa: Identificador único de la Sucursal definido por el integrador.
-                           por: Identificador único da loja definido pelo sistema integrador.
+                          description: Unique identifier of the store defined by integrator system.
+                          x-description-i18n:
+                            eng: Unique identifier of the store defined by integrator system.
+                            spa: Identificador único de la Sucursal definido por el integrador.
+                            por: Identificador único da loja definido pelo sistema integrador.
                         operating_mode:
                           type: string
                           example: "STANDALONE"
