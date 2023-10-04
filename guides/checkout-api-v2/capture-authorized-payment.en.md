@@ -111,7 +111,7 @@ To capture an amount lower than the one reserved, send the value to be captured 
 > Important
 >
 > This feature is only available for Visa, Cabal, Master and American Express flag cards.
-> <br>
+> <br><br>
 > It is not possible to capture an amount greater than the reserved amount, for that it is necessary to cancel the reservation and generate a new one.
  
 [[[
