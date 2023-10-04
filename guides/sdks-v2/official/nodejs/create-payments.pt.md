@@ -70,4 +70,5 @@ payment.capture({
   }, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
       .then((result) => console.log(result))
 	.catch((error) => console.log(error));
+```
 ]]]
