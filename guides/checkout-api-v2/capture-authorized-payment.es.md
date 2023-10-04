@@ -1,11 +1,3 @@
----
-  sites_supported:
-      - mla
-      - mlb
-      - mlm
-      - mpe
----
-
 # Capturar pago autorizado
 
 La finalización de un pago sucede después de la captura del pago autorizado, lo que significa que se puede debitar de la tarjeta el importe reservado para la compra.
@@ -109,6 +101,7 @@ La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
 ```
 ]]]
 
+----[mlb, mla, mlu, mlc, mco, mpe]----
 ## Capturar monto parcial
 
 Para capturar un monto inferior al reservado, envía el valor a capturar al parámetro `transaction_amount` y ejecuta la solicitud a través de los códigos disponibles a continuación.
@@ -118,18 +111,19 @@ Para capturar un monto inferior al reservado, envía el valor a capturar al par�
 >
 > Importante
 >
-> * Esta función solo está disponible para tarjetas de bandera Visa, Cabal, Master y American Express.
-> * No es posible captar un monto mayor al monto reservado. En ese caso, deberás cancelar la reserva y generar una nueva con el monto que deseas captar.
-------------
+> Esta función solo está disponible para tarjetas de bandera Visa, Cabal, Master y American Express.
+> <br><br>
+> No es posible captar un monto mayor al monto reservado. En ese caso, deberás cancelar la reserva y generar una nueva con el monto que deseas captar.
 
-----[mlb, mlu, mlc, mco, mpe, mlm]----
+------------
+----[mlb, mlu, mlc, mco, mpe]----
 > WARNING
 >
 > Importante
 >
 > No es posible captar un monto mayor al monto reservado. En ese caso, deberás cancelar la reserva y generar una nueva con el monto que deseas captar.
-------------
 
+------------
  
 [[[
 ```php
@@ -230,9 +224,4 @@ La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
 ```
 ]]]
 
-
-> NOTE
->
-> Importante
->
-> No es posible captar un monto mayor al monto reservado, para ello deberás cancelar la reserva y generar una nueva.
+------------

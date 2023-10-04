@@ -1,29 +1,17 @@
----
-sites_supported:
-- mla
-- mlb
-- mlm
-- mpe
----
-
 # Capture authorized payment
 
 The completion of a payment takes place after the authorized payment has been captured, which means that the amount reserved for the purchase can be debited from the card.
 
 There are two ways to capture an authorized payment:
 
-
 * **Capture the total amount of a reserve**: in which the full amount of the reserved payment is captured.
 * **Capture of an amount lower than the reserved amount:** in which the partial amount of the reserved payment is captured.
 
 Below we describe in detail each of the options and how to execute them.
 
-
 ## Capture total amount
 
-
 To capture the total amount of a reservation, send the value to be captured to the `transaction_amount` parameter and execute the request through the codes available below.
-
 
 [[[
 ```php
@@ -113,9 +101,8 @@ The response will return that the payment is approved and credited.
 ```
 ]]]
 
-
+----[mlb, mlu, mlc, mco, mpe, mla]----
 ## Capture partial value
-
 
 To capture an amount lower than the one reserved, send the value to be captured to the `transaction_amount` parameter and execute the request through the codes available below.
 
@@ -125,14 +112,17 @@ To capture an amount lower than the one reserved, send the value to be captured 
 > Important
 >
 > This feature is only available for Visa, Cabal, Master and American Express flag cards.
-------------
+> <br><br>
+> It is not possible to capture an amount greater than the reserved amount, for that it is necessary to cancel the reservation and generate a new one.
 
-----[mlb, mlu, mlc, mco, mpe, mlm]----
+------------
+----[mlb, mlu, mlc, mco, mpe]----
 > WARNING
 >
 > Important
 >
 > It is not possible to capture an amount greater than the reserved amount, for that it is necessary to cancel the reservation and generate a new one.
+
 ------------
  
 [[[
@@ -217,7 +207,6 @@ curl -X PUT \
 ```
 ]]]
 
-
 The answer will yield the following result
 
 [[[
@@ -235,9 +224,4 @@ The answer will yield the following result
 ```
 ]]]
 
-
-> NOTE
->
-> Important
->
-> It is not possible to capture a value greater than the reserved amount, for this it is necessary to cancel the reservation and generate a new one.
+------------

@@ -1,30 +1,17 @@
----
-  sites_supported:
-      - mla
-      - mlb
-      - mlm
-      - mpe
----
-
 # Capturar pagamento autorizado
 
 A finalização de um pagamento acontece após a captura do pagamento autorizado, o que significa que o valor reservado para a compra pode ser debitado do cartão. 
 
 Existem duas formas de capturar um pagamento autorizado:
 
-
-
 * **Captura do valor total de uma reserva**: na qual se captura o valor integral do pagamento reservado.
 * **Captura de um valor inferior ao reservado:** na qual se captura o valor parcial do pagamento reservado.
 
 Abaixo descrevemos o detalhe de cada uma das opções e como executá-las.
 
-
 ## Capturar valor total 
 
-
 Para fazer a captura do valor total de uma reserva, envie o valor que deve ser capturado ao parâmetro `transaction_amount` e execute a requição através dos códigos disponíveis abaixo.
-
 
 [[[
 ```php
@@ -114,9 +101,8 @@ A resposta devolverá que o pagamento se encontra aprovado e creditado.
 ```
 ]]]
 
-
+----[mlb, mla, mlu, mlc, mco, mpe]----
 ## Capturar valor parcial
-
 
 Para capturar um valor inferior ao reservado, envie o valor que deve ser capturado ao parâmetro `transaction_amount` e execute a requição através dos códigos disponíveis abaixo.
 
@@ -126,17 +112,19 @@ Para capturar um valor inferior ao reservado, envie o valor que deve ser captura
 > Importante
 >
 > Este recurso está disponível apenas para os cartões das bandeiras Visa, Cabal, Master e American Express.
-------------
+> <br><br>
+> Não é possível capturar um valor superior ao reservado, sendo necessário cancelar a reserva e gerar uma nova.
 
-----[mlb, mlu, mlc, mco, mpe, mlm]----
+------------
+----[mlb, mlu, mlc, mco, mpe]----
 > WARNING
 >
 > Importante
 >
 > Não é possível capturar um valor superior ao reservado, sendo necessário cancelar a reserva e gerar uma nova.
+
 ------------
 
- 
 [[[
 ```php
 <?php
@@ -219,8 +207,7 @@ curl -X PUT \
 ```
 ]]]
 
-
-A resposta trará o seguinte resultado
+A resposta trará o seguinte resultado:
 
 [[[
 ```json
@@ -237,9 +224,4 @@ A resposta trará o seguinte resultado
 ```
 ]]]
 
-> NOTE
->
-> Importante
->
-> Não é possível capturar um valor superior ao reservado, para isso é preciso cancelar a reserva e gerar uma nova.
-
+------------
