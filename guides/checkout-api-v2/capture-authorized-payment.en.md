@@ -101,12 +101,11 @@ The response will return that the payment is approved and credited.
 ```
 ]]]
 
-----[mlb, mlu, mlc, mco, mpe, mla]----
+----[mla]----
 ## Capture partial value
 
 To capture an amount lower than the one reserved, send the value to be captured to the `transaction_amount` parameter and execute the request through the codes available below.
 
-----[mla]----
 > WARNING
 >
 > Important
@@ -114,16 +113,117 @@ To capture an amount lower than the one reserved, send the value to be captured 
 > This feature is only available for Visa, Cabal, Master and American Express flag cards.
 > <br>
 > It is not possible to capture an amount greater than the reserved amount, for that it is necessary to cancel the reservation and generate a new one.
+ 
+[[[
+```php
+<?php
+
+MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+$payment = MercadoPago\Payment::find_by_id($payment_id);
+$payment->transaction_amount = 75;
+$payment->capture = true;
+$payment->update();
+?>
+```
+```java
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
+
+
+Long paymentId = 123456789L;
+
+PaymentClient client = new PaymentClient();
+client.capture(paymentId, new BigDecimal("75"));
+```
+```node
+var Mercadopago = require('mercadopago');
+Mercadopago.configurations.setAccessToken(config.access_token);
+
+let captureInfo = {id: 123, transaction_amount: 5}
+
+Mercadopago.payment.capturePartial(captureInfo, Mercadopago, (error, response) => {
+if (error){
+console.log(error);
+}else{
+console.log(response)
+}
+});
+```
+```ruby
+require 'mercadopago'
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+request = {
+transaction_amount: 75,
+capture: true
+}
+
+payment_response = sdk.payment.update(payment_id, request)
+payment = payment_response[:response]
+```
+```csharp
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentClient();
+Payment payment = await client.CaptureAsync(paymentId, 75);
+```
+```python
+import market
+sdk = Mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+payment_data = {
+"transaction_amount": 75,
+"capture": True
+}
+
+payment_response = sdk.payment().update(payment_id, payment_data)
+payment = payment_response["response"]
+```
+```curl
+
+curl -X PUT \
+'https://api.mercadopago.com/v1/payments/PAYMENT_ID' \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+-d '{
+"transaction_amount": 75,
+"capture": true
+}'
+```
+]]]
+
+The answer will yield the following result
+
+[[[
+```json
+{
+...
+"status": "approved",
+"status_detail": "accredited",
+...
+"transaction_amount": 75,
+...
+"captured": true,
+...
+}
+```
+]]]
 
 ------------
 ----[mlb, mlu, mlc, mco, mpe]----
+## Capture partial value
+
+To capture an amount lower than the one reserved, send the value to be captured to the `transaction_amount` parameter and execute the request through the codes available below.
+
 > WARNING
 >
 > Important
 >
 > It is not possible to capture an amount greater than the reserved amount, for that it is necessary to cancel the reservation and generate a new one.
-
-------------
  
 [[[
 ```php

@@ -31,6 +31,17 @@ paths:
           schema:
             type: string
             example: "12123adfasdf123u4u"
+        - in: header
+          name: x-caller-id
+          schema:
+            type: string
+            example: "543802539"
+          required: true  
+          description: This parameter refers to the seller's ID, an identification necessary to correctly locate the refund information.
+          x-description-i18n:
+            eng: This parameter refers to the seller's ID, an identification necessary to correctly locate the refund information.
+            spa: Este parámetro hace referencia al ID del vendedor, identificación necesaria para localizar correctamente la información del reembolso.
+            por: Este parâmetro refere-se ao ID do vendedor, identificação necessária para que se possa localizar corretamente as informações de estorno.
       responses:
         '200':
           description: success
