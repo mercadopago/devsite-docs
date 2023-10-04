@@ -2,7 +2,11 @@
 
 Puedes generar solicitudes de pago en las terminales Redelcom utilizando [nuestra API](https://api-dev.redelcom.cl:20010/v2).
 
-<p align="center"> <img src="/images/Redelcom/integrate-via-API.png"> </p>
+</center>
+
+![diagrama explicando la integración vía API](/images/Redelcom/integrate-via-API.png)
+
+</center>
 
 
 

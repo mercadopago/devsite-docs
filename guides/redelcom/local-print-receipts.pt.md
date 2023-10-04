@@ -7,25 +7,35 @@ Para poder fazer isso, o integrador precisará adicionar a biblioteca `*.jar` fo
 Para integrar a biblioteca `*.jar NeptuneLiteAPI` e habilitar a impressão de comprovantes, siga as etapas abaixo:
 
 1. Abra seu projeto no Android Studio e vá para **File > Project Structure > Dependencies**.
+</center>
 
 ![imagem mostrando onde encontrar a guia Módulos](/images/Redelcom/importar-librería2.png)
 
+</center>
+
 2. Selecione o botão "+" correspondente à criação de um novo módulo. Uma janela pop-up aparecerá para você selecionar o tipo de módulo, que deve ser "Import .JAR/.AAR Package".
 
+</center>
 
 ![imagem mostrando onde encontrar a biblioteca](/images/Redelcom/importar-librería3.png)
 
+</center>
 
 3. Na próxima janela, navegue até o caminho da biblioteca necessária clicando no botão de pesquisa localizado no lado direito do campo "File name".
 
+</center>
 
 ![imagem mostrando onde navegar](/images/Redelcom/importar-librería4.png)
 
+</center>
 
 4. Pressione o botão **Finish** e adicione a biblioteca como **Module Dependencies** ao projeto.
 
+</center>
 
 ![imagem mostrando onde encontrar as Dependências do Módulo](/images/Redelcom/integrar-librería5.png)
+
+</center>
 
 E pronto! A importação do arquivo `.jar` foi bem-sucedida, e agora você pode usar a biblioteca para imprimir.
 
