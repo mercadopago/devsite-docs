@@ -96,22 +96,27 @@ paths:
                         id:
                           type: string
                           example: "PAX_A910__SMARTPOS1234567890"
-                        pos_id:
-                          type: string
-                          example: "79219045"
-                          description: Devices POS ID.
+                          description: Identifier of the device that have a payment intent queued.
                           x-description-i18n:
-                            eng: Devices POS ID.
-                            spa: ID de PDV de los dispositivos.
-                            por: ID de PDV dos dispositivos.
+                            eng: Identifier of the device that have a payment intent queued.
+                            spa: Identificador del dispositivo que tiene una intención de pago en cola.
+                            por: Identificador do dispositivo que tem intenção de pagamento em fila.
+                        pos_id:
+                          type: integer
+                          example: "79219045"
+                          description: POS identifier.
+                          x-description-i18n:
+                            eng: POS identifier.
+                            spa: Identificador del PDV.
+                            por: Identificador do PDV.
                         store_id:
                           type: string
                           example: "54671657"
-                          description: Devices store ID.
+                          description: Store identifier.
                           x-description-i18n:
-                            eng: Devices store ID.
-                            spa: ID de la tienda de dispositivos.
-                            por: ID da loja de dispositivos.
+                            eng: STORE identifier.
+                            spa: Identificador de la tienda.
+                            por: Identificador da loja.
                         external_pos_id:
                           type: string
                           example: "1234"
@@ -122,7 +127,7 @@ paths:
                             por: Identificador único da loja definido pelo sistema integrador.
                         operating_mode:
                           type: string
-                          example: "STANDALONE"
+                          example: “PDV” | “STANDALONE”
                           enum:
                             - PDV -- point of sale, integrated mode with the API.
                             - STANDALONE -- default device configuration, mode not integrated with the API.
@@ -321,11 +326,11 @@ paths:
                   device_id:
                     type: string
                     example: "PAX_A910__SMARTPOS1234567890"
-                    description: identifier of the device that have a payment intent queued
+                    description: Identifier of the device that have a payment intent queued.
                     x-description-i18n:
-                      eng: identifier of the device that have a payment intent queued
-                      spa: identificador del dispositivo que tiene una intención de pago en cola
-                      por: identificador do dispositivo que tem intenção de pagamento em fila
+                      eng: Identifier of the device that have a payment intent queued.
+                      spa: Identificador del dispositivo que tiene una intención de pago en cola.
+                      por: Identificador do dispositivo que tem intenção de pagamento em fila.
                   amount:
                     type: integer
                     format: int64

@@ -106,21 +106,21 @@ A resposta devolverá que o pagamento se encontra aprovado e creditado.
 
 Para capturar um valor inferior ao reservado, envie o valor que deve ser capturado ao parâmetro `transaction_amount` e execute a requição através dos códigos disponíveis abaixo.
 
+----[mlb, mlu, mlc, mco, mpe]----
+> WARNING
+>
+> Importante
+>
+> Não é possível capturar um valor superior ao reservado, sendo necessário cancelar a reserva e gerar uma nova.
+
+------------
 ----[mla]----
 > WARNING
 >
 > Importante
 >
 > Este recurso está disponível apenas para os cartões das bandeiras Visa, Cabal, Master e American Express.
-> <br><br>
-> Não é possível capturar um valor superior ao reservado, sendo necessário cancelar a reserva e gerar uma nova.
-
-------------
-----[mlb, mlu, mlc, mco, mpe]----
-> WARNING
->
-> Importante
->
+> <br>
 > Não é possível capturar um valor superior ao reservado, sendo necessário cancelar a reserva e gerar uma nova.
 
 ------------

@@ -112,7 +112,7 @@ Para capturar un monto inferior al reservado, envía el valor a capturar al par�
 > Importante
 >
 > Esta función solo está disponible para tarjetas de bandera Visa, Cabal, Master y American Express.
-> <br><br>
+> <br>
 > No es posible captar un monto mayor al monto reservado. En ese caso, deberás cancelar la reserva y generar una nueva con el monto que deseas captar.
 
 ------------
