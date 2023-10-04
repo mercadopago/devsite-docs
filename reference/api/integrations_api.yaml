@@ -92,33 +92,41 @@ paths:
                         id:
                           type: string
                           example: "INGENICO_MOVE2500__ING-23976989"
+                          description: Identifier of the device that have a payment intent queued.
+                          x-description-i18n:
+                            eng: Identifier of the device that have a payment intent queued.
+                            spa: Identificador del dispositivo que tiene una intención de pago en cola.
+                            por: Identificador do dispositivo que tem intenção de pagamento em fila.
                         pos_id:
                           type: integer
-                          description: POS identifier
+                          description: POS identifier.
                           x-description-i18n:
-                            eng: POS identifier
-                            spa: Identificador del POS
-                            por: Identificador do POS
+                            eng: POS identifier.
+                            spa: Identificador del PDV.
+                            por: Identificador do PDV.
                           example: 47792476
                         store_id: 
                           type: string
-                          description: STORE identifier
+                          description: Store identifier.
                           x-description-i18n:
-                            eng: STORE identifier
-                            spa: Identificador de la tienda
-                            por: Identificador da loja
+                            eng: STORE identifier.
+                            spa: Identificador de la tienda.
+                            por: Identificador da loja.
                           example: 47792478
                         external_pos_id: 
                           type: string
-                          description: External_id of the store to which the pos belongs
+                          description: Unique identifier of the store defined by integrator system.
                           x-description-i18n:
-                            eng: External_id of the store to which the pos belongs
-                            spa: External_id de la tienda a la que pertenece el POS
-                            por: External_id da loja a qual pertence o POS
+                            eng: Unique identifier of the store defined by integrator system.
+                            spa: Identificador único de la Sucursal definido por el integrador.
+                            por: Identificador único da loja definido pelo sistema integrador.
                           example: SUC0101POS
                         operating_mode:
                           type: string
                           example: “PDV” | “STANDALONE”
+                          enum:
+                            - PDV -- point of sale, integrated mode with the API.
+                            - STANDALONE -- default device configuration, mode not integrated with the API.
                   paging:
                     type: object
                     properties:
