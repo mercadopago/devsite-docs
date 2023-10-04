@@ -96,9 +96,36 @@ paths:
                         id:
                           type: string
                           example: "PAX_A910__SMARTPOS1234567890"
+                        pos_id:
+                          type: string
+                          example: "79219045"
+                          description: Devices POS ID.
+                          x-description-i18n:
+                            eng: Devices POS ID.
+                            spa: ID de PDV de los dispositivos.
+                            por: ID de PDV dos dispositivos.
+                        store_id:
+                          type: string
+                          example: "54671657"
+                          description: Devices store ID.
+                          x-description-i18n:
+                            eng: Devices store ID.
+                            spa: ID de la tienda de dispositivos.
+                            por: ID da loja de dispositivos.
+                        external_pos_id:
+                          type: string
+                          example: "1234"
+                         description: Devices POS ID.
+                          x-description-i18n:
+                            eng: Devices POS ID.
+                            spa: ID de PDV externo de los dispositivos externos.
+                            por: ID de PDV dos dispositivos.
                         operating_mode:
                           type: string
                           example: "STANDALONE"
+                          enum:
+                            - PDV -- point of sale, integrated mode with the API.
+                            - STANDALONE -- default device configuration, mode not integrated with the API.
                   paging:
                     type: object
                     properties:
