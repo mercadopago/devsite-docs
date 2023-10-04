@@ -1544,6 +1544,19 @@ paths:
                     enum:
                       - 4 -- The caller is not authorized to access this resource.
                       - 3002 -- The caller is not authorized to perform this action.
+                      - 2034 –- Invalid users involved 2041 – GET to API APPLICATION fail 
+                      - 2062 –- Invalid card token 
+                      - 2072 –- Invalid value for transaction_amount 
+                      - 2123 –- Invalid operators users involved 
+                      - 2131 –- Cannot infer Payment Method 
+                      - 3003 –- card_tocken_id invalido 
+                      - 3028 –- paymetn_method_id invalido 
+                      - 3031 –- Secure_code_id ni puede ser null 
+                      - 3032 –- Invalid security_code_length 3033 3034 - Invalid card_number_validation 
+                      - 4037 –- transaccion_amount invalido 
+                      - 4050 –- payer email debe ser un email valido 
+                      - 6033 -- User unavailable
+                      
         '404':
           description: Error
           x-description-i18n:
