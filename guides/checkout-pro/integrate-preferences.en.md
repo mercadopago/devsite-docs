@@ -4,6 +4,16 @@ The integration with Checkout Pro allows you to receive payments via our web for
 
 In this documentation you will find all the necessary steps to integrate Checkout Pro through **our SDKs**. To do this, follow the steps described below.
 
+---
+live_demo_code_action:
+ - title: Try our Checkout Pro
+ - description: Build the Checkout Pro visual experience in real time. When you are all set, download or copy the generated code to add it to your website or share with a developer.
+ - link: /developers/en/live-demo/checkout-pro
+ - image:https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2023/9/2/1696264714156-cow-render-wallet-es.png
+ - linkName: Demo
+ - buttonDescription: Build your Checkout Pro
+---
+
 > SERVER_SIDE
 >
 > h2
