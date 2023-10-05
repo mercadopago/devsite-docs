@@ -1,10 +1,10 @@
 # Primeiros passos
 
-Assegure-se de ter o **Demo App** instalado no dispositivo SmartPOS do [kit de desenvolvimento](https://drive.google.com/drive/folders/1Mglpa2c3FmYs4L9iskczagBMPGjHCMbY?usp=share_link). Este aplicativo pode servir como referência na integração.
+Assegure-se de ter o **Demo App** instalado no dispositivo SmartPOS do [Kit de Desenvolvimento](https://drive.google.com/drive/folders/1Mglpa2c3FmYs4L9iskczagBMPGjHCMbY?usp=share_link). Este aplicativo pode servir como referência na integração.
 
 Para usar o [SDK](/developers/pt/docs/sdks-library/landing), siga estes passos:
 
-1. Adicione a biblioteca do kit de desenvolvimento no diretório **app/libs**.
+1. Adicione a biblioteca do Kit de Desenvolvimento no diretório **app/libs**.
 2. Inclua a dependência para a biblioteca no arquivo **.gradle** do módulo no qual o SDK vai ser usado. Assim:
 
 ```gradle
