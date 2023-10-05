@@ -4,13 +4,13 @@ Para garantizar la seguridad y estabilidad del ecosistema de integración, consi
 
 ## Flujo de OAuth
 
-Para obtener información de los pagos, de la persona usuaria o ejecutar una operación sobre la cuenta de quien vende, como cobros o devoluciones, genera un token por medio de [flujo de OAuth](/developers/pt/docs/main-apps/additional-content/security/oauth/introduction) y usa la [API pública de Mercado Pago](/developers/pt/reference).
+Para obtener información de los pagos, de la persona usuaria o ejecutar una operación sobre la cuenta de quien vende, como cobros o devoluciones, genera un token por medio de [flujo de OAuth](/developers/es/docs/main-apps/additional-content/security/oauth/introduction) y usa la [API pública de Mercado Pago](/developers/es/reference).
 
 ## Versión del Ecosistema
 
-Na configuração do aplicativo, verifique a versão do sistema operacional do dispositivo. A Point Smart usa o Android 6, o que implica em um API Level mínimo de 23.
+En la configuración de la app, verifica la versión del sistema operativo del dispositivo. El Point Smart usa Android 6, lo que implica en un nivel API Level mínimo de 23.
 
-Os dispositivos SmartPOS têm um sistema operacional AOSP, e por esta razão, não contam com diversos serviços do Google e Firebase. Consulte quais estão disponíveis na [página oficial do Firebase](https://firebase.google.com/docs/android/android-play-services?hl=es-419).
+Los dispositivos SmartPOS tienen un sistema operativo AOSP y, por esta razón, no disponen de diversos servicios de Google y Firebase. Consulta cuáles están disponibles en el [sitio oficial de Firebase](https://firebase.google.com/docs/android/android-play-services?hl=es-419).
 
 ## Permisos y configuraciones de Android Manifest
 

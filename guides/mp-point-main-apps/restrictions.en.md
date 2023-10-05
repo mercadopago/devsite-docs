@@ -4,7 +4,7 @@ To ensure the security and stability of the integration ecosystem, consider the 
 
 ## OAuth flow
 
-To obtain information about payments, the user or to perform any operation on the seller's account, such as charges or refunds, generate a token through the [OAuth flow](/developers/en/docs/main-apps/additional-content/security/oauth/introduction) and use the [Mercado Pago public API](/developers/pt/reference).
+To obtain information about payments, the user or to perform any operation on the seller's account, such as charges or refunds, generate a token through the [OAuth flow](/developers/en/docs/main-apps/additional-content/security/oauth/introduction) and use the [Mercado Pago public API](/developers/en/reference).
 
 ## Ecosystem version
 
