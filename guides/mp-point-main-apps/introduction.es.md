@@ -14,9 +14,9 @@ Las main apps son aplicativos de gestión de negocio que se pueden integrar a [P
 
 La app es privada, con [modelo cerrado de distribución](/developers/es/docs/main-apps/distribution) de uso exclusivo de la empresa.
 
-## Funcionalidades disponíveis
+## Funcionalidades
 
-Uma vez integrado, o aplicativo pode usar as funções da maquininha que completam a experiência. São elas:
+Cuando se integra, la app puede usar las funcionalidades del lector que completan la experiencia. Ellas son:
 
 ### Disponibles
 

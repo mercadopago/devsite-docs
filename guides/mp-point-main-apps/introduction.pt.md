@@ -14,7 +14,7 @@ Main apps são aplicativos de gestão de negócio que podem ser integrados à [P
 
 O aplicativo é privado, com [modelo fechado de distribuição](/developers/pt/docs/main-apps/distribution) de uso exclusivo da empresa.
 
-## Funcionalidades disponíveis
+## Funcionalidades
 
 Uma vez integrado, o aplicativo pode usar as funções da maquininha que completam a experiência. São elas:
 

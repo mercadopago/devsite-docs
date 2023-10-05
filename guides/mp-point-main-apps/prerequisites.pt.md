@@ -1,6 +1,6 @@
 # Pré-requisitos
 
-Antes começar a desenvolver sua solução, veja as condições que devem ser cumpridas.
+Antes de começar a desenvolver sua solução, veja as condições que devem ser cumpridas.
 
 | Requisitos | Descrição |
 |---|---|

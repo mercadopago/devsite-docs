@@ -26,9 +26,13 @@ As que interagem diretamente com o hardware do dispositivo, como as dos fabrican
 
 ## Problema com o Build Tools
 
-Em seguida, execute este comando no terminal:
+> WARNING
+>
+> Atenção
+>
+> Se a mensagem **"O Build Tools instalado revisão 32.0.0 está danificado”** for apresentada, exclua o programa e instale novamente utilizando o **SDK Manager**.
 
-> Se a mensagem **"O Build Tools instalado revisão 32.0.0 está danificado”** for apresentada, exclua o programa e instale novamente utilizando o SDK manager.
+Em seguida, execute este comando no terminal:
 
 ```shell command
 cd ~/Library/Android/sdk/build-tools/32.0.0 \
