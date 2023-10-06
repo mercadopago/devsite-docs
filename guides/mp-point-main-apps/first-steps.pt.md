@@ -40,7 +40,7 @@ class MainApplication : Application() {
    }
 }
 ```
-```java
+```javascript
 public class MainApplication extends Application {
 
  @Override
