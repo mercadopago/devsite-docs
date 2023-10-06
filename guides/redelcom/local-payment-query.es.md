@@ -25,16 +25,16 @@ El valor `String total`, por su parte, puede ir vacío (`String total = ""`).
 ```android
 
 public void shareRDCPass(String total, String intent) { 
- 	try { 
- 		Intent sharingIntent = new Intent(intent); 
+	try { 
+		Intent sharingIntent = new Intent(intent); 
 		sharingIntent.setClassName("redelcom.cl.rdcpass", "redelcom.cl.rdcpass.MainActivity"); 
 		sharingIntent.putExtra("packageName", getPackageName()); 
 		sharingIntent.putExtra("className", getClass().toString().split(" ")[1]); 
 		sharingIntent.putExtra("userTransactionId", "DEMO1234"); 
 		startActivity(sharingIntent); 
- 	} catch (Exception e) { 
- 		e.printStackTrace(); 
- 	} 
+	} catch (Exception e) { 
+		e.printStackTrace(); 
+	} 
 }
 
 ```
@@ -53,15 +53,15 @@ public void shareRDCPass(String total, String intent) {
 ```android
 
 try{ 
- 	Intent intent = getIntent(); 
- 	String action = intent.getAction(); 
+	Intent intent = getIntent(); 
+	String action = intent.getAction(); 
 	String payload = new JSONObject(intent.getStringExtra("payload")); 
 	String userTransactionId= new JSONObject(intent.getStringExtra("userTransactionId")); 
 	if (Intent.ACTION_ANSWER.equals(action)) { 
- 		// Define what to do with the received data “payload” 
- 	} 
+		// Define what to do with the received data “payload” 
+	} 
 } catch (Exception e) { 
- 	e.printStackTrace(); 
+	e.printStackTrace(); 
 } 
 
 ```

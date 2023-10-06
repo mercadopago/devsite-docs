@@ -31,20 +31,20 @@ Se você deseja gerar essa instância de pagamento para carregar saldo no POS, s
 
 ```android
 public void shareRDCPass(String total, String intent, Boolean esCarga) { 
- 	try { 
- 		Intent sharingIntent = new Intent(intent); 
- 		sharingIntent.setClassName("redelcom.cl.rdcpass", "redelcom.cl.rdcpass.MainActivity");  
+	try { 
+		Intent sharingIntent = new Intent(intent); 
+		sharingIntent.setClassName("redelcom.cl.rdcpass", "redelcom.cl.rdcpass.MainActivity");  
 		sharingIntent.putExtra("packageName", getPackageName()); 
- 		sharingIntent.putExtra("className", getClass().toString().split(" ")[1]); 
- 		sharingIntent.putExtra(Intent.EXTRA_TEXT, total); 
- 		if (esCarga){ 
- 			sharingIntent.putExtra("recargaSaldo", true); 
- 			sharingIntent.putExtra("payment_type", "TARJETA"); 
- 		} 
- 		startActivity(sharingIntent); 
- 	} catch (Exception e) { 
- 		e.printStackTrace(); 
- 	} 
+		sharingIntent.putExtra("className", getClass().toString().split(" ")[1]); 
+		sharingIntent.putExtra(Intent.EXTRA_TEXT, total); 
+		if (esCarga){ 
+			sharingIntent.putExtra("recargaSaldo", true); 
+			sharingIntent.putExtra("payment_type", "TARJETA"); 
+		} 
+		startActivity(sharingIntent); 
+	} catch (Exception e) { 
+		e.printStackTrace(); 
+	} 
 } 
  
 ```

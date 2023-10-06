@@ -13,7 +13,7 @@ Se você deseja imprimir o DTE de uma instância de pagamento já realizada no R
 <intent-filter> 
 	<action android:name="android.intent.action.SEND" /> 
 	<action android:name="android.intent.action.ANSWER" /> 
-    <action android:name="android.intent.action.SENDTO" />
+	<action android:name="android.intent.action.SENDTO" />
 	<category android:name="android.intent.category.DEFAULT" /> 
 	<data android:mimeType="text/*" /> 
 </intent-filter>
@@ -27,8 +27,8 @@ O valor `String total`, por outro lado, pode estar vazio (`String total = ""`).
 
 ```android
 public void shareRDCPass(String total, String intent) { 
- 	try { 
- 		Intent sharingIntent = new Intent(intent); 
+	try { 
+		Intent sharingIntent = new Intent(intent); 
 		sharingIntent.setClassName("redelcom.cl.rdcpass", "redelcom.cl.rdcpass.MainActivity"); 
 		sharingIntent.putExtra("packageName", getPackageName()); 
 		sharingIntent.putExtra("className", getClass().toString().split(" ")[1]);  
@@ -36,8 +36,8 @@ public void shareRDCPass(String total, String intent) {
 		sharingIntent.putExtra(“dte”, dte); 
 		startActivity(sharingIntent); 
 	} catch (Exception e) { 
- 		e.printStackTrace(); 
- 	} 
+		e.printStackTrace(); 
+	} 
 } 
 
 ```
@@ -52,7 +52,7 @@ public void shareRDCPass(String total, String intent) {
 
 ```android
 if (Intent.ACTION_SENDTO.equals(action)) { 
- 	// Define what to do after printing the DTE 
+	// Define what to do after printing the DTE 
 }
  
 

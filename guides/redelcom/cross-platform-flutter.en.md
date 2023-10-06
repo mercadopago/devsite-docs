@@ -32,21 +32,21 @@ To process payments, you first need to implement the method that allows you to s
 ```flutter
 
 Future<void> _intentSend() async { 
- 		PackageInfo packageInfo = await PackageInfo.fromPlatform();  setState(() { 
- 			String packageName = packageInfo.packageName; 
- 			final AndroidIntent intent = AndroidIntent( 
- 			action: 'android.intent.action.SEND', 
- 			package: 'redelcom.cl.rdcpass ', 
- 			arguments: <String, dynamic>{ 
- 				'packageName': packageName, 
- 				'className': '$packageName.MainActivity', 
- 				'monto': '200', //pasar la cantidad del envío 
- 			}, 
- 			componentName: 'redelcom.cl.rdcpass.MainActivity', 
- 			); 
- 			intent.launch(); 
- 		}); 
- }
+		PackageInfo packageInfo = await PackageInfo.fromPlatform();  setState(() { 
+			String packageName = packageInfo.packageName; 
+			final AndroidIntent intent = AndroidIntent( 
+			action: 'android.intent.action.SEND', 
+			package: 'redelcom.cl.rdcpass ', 
+			arguments: <String, dynamic>{ 
+				'packageName': packageName, 
+				'className': '$packageName.MainActivity', 
+				'monto': '200', //pasar la cantidad del envío 
+			}, 
+			componentName: 'redelcom.cl.rdcpass.MainActivity', 
+			); 
+			intent.launch(); 
+		}); 
+}
 
 ```
 

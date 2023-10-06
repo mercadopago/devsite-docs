@@ -68,10 +68,10 @@ startActivity(pay): void {
  			}; 
  			this.intent.startActivity(options) 
  			.then((onSucces) => { 
- 				this.getIntent(); 
+				this.getIntent(); 
  			}, 
  			(onError) => { 
- 				console.log('error', onError); 
+				console.log('error', onError); 
  			}); 
  		} 
 	);  

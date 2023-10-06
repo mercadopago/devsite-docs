@@ -22,25 +22,25 @@ Para crear una intención de pago, sigue los pasos a continuación.
 ```android
 
 public void shareRDCPass(String total, String intent) { 
- 	try { 
- 		Intent sharingIntent = new Intent(intent); 
+	try { 
+		Intent sharingIntent = new Intent(intent); 
 		sharingIntent.setClassName("redelcom.cl.rdcpass", "redelcom.cl.rdcpass.MainActivity"); 
 		sharingIntent.putExtra("packageName", getPackageName()); 
 		sharingIntent.putExtra("className", getClass().toString().split(" ")[1]); 
 		sharingIntent.putExtra(Intent.EXTRA_TEXT, total); 
-        sharingIntent.putExtra("userTransactionId", "DEMO1234");
-      	sharingIntent.putExtra("description", "Descripcion para tu transacción");
-      	sharingIntent.putExtra("payment_type", "TIPO_PAGO");
-      	sharingIntent.putExtra("request_tip", false);
-      	sharingIntent.putExtra("rdcDTE", false);
+		sharingIntent.putExtra("userTransactionId", "DEMO1234");
+		sharingIntent.putExtra("description", "Descripcion para tu transacción");
+		sharingIntent.putExtra("payment_type", "TIPO_PAGO");
+		sharingIntent.putExtra("request_tip", false);
+		sharingIntent.putExtra("rdcDTE", false);
 
-       	ArrayList<String> arrayListUserTransactionId = new ArrayList<String>(); 
+		ArrayList<String> arrayListUserTransactionId = new ArrayList<String>(); 
 		arrayListUserTransactionId.add("DEMO1233"); 
 		sharingIntent.putExtra("completeTransactions", arrayListUserTransactionId);
 		startActivity(sharingIntent); 
- 	} catch (Exception e) { 
- 		e.printStackTrace(); 
- 	} 
+	} catch (Exception e) { 
+		e.printStackTrace(); 
+	} 
 }
 
 ```
@@ -64,16 +64,16 @@ Deberás modificar los siguientes parámetros teniendo en cuenta estas especific
 ```android
 
 try{ 
- 	Intent intent = getIntent(); 
- 	String action = intent.getAction(); 
+	Intent intent = getIntent(); 
+	String action = intent.getAction(); 
 
 	JSONObject payload = new JSONObject(intent.getStringExtra(Intent.EXTRA_TEXT)); 
 	String userTransactionId = intent.getStringExtra(“userTransactionId”); 
 	if (Intent.ACTION_SEND.equals(action)) { 
- 		// Define what to do with the received data “payload” 
- 	} 
+		// Define what to do with the received data “payload” 
+	} 
 } catch (Exception e) { 
- 	e.printStackTrace(); 
+	e.printStackTrace(); 
 } 
 
 ```
