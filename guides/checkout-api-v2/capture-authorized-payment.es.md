@@ -29,7 +29,7 @@ Para capturar el monto total de una reserva, envía el valor a capturar al pará
 ?>
 ```
 ```node
-import { MercadoPagoConfig }, { Payments } from 'mercadopago';
+import { MercadoPagoConfig, Payments } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 const payments = new Payments(client);
