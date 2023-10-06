@@ -39,7 +39,7 @@ Además, deberás seleccionar uno de tus dispositivos disponibles.
 
 * **PDV mode:** debes ingresar tu `access-token` de prueba (`TEST-XXXXX-XXXXX-XXXXXXX`) y el simulador te asignará un dispositivo virtual.
 
-* **Device mode:** debes ingresar tu `access-token` de prueba (`TEST-XXXXX-XXXXX-XXXXXXX`) y la identificación del dispositivo obtenido al [listar tus dispositivos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/integration-api/create-payment-intent#bookmark_obtén_el_listado_de_tus_dispositivos_disponibles).
+* **Device mode:** debes ingresar tu `access-token` de prueba (`TEST-XXXXX-XXXXX-XXXXXXX`) y la identificación del dispositivo obtenido al [listar tus dispositivos](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/payment-processing).
 
 
 ## 3. Simular una intención de pago

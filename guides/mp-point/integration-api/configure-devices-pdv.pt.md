@@ -30,7 +30,7 @@ Abra o aplicativo e faça login usando seu nome de usuário e senha. Em seguida,
 >
 > Nota
 >
-> Se você for operar em nome de outros vendedores, poderá gerenciar a vinculação com segurança, integrando [OAuth.](/developers/pt/docs/mp-point/additional-content/security/oauth/introduction)
+> Se você for operar em nome de outros vendedores, poderá gerenciar a vinculação com segurança, integrando [OAuth](/developers/pt/docs/mp-point/additional-content/security/oauth/introduction).
 
 ## Configurar loja e PDV
 

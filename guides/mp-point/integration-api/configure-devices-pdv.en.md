@@ -30,7 +30,7 @@ Sign in to the app with your username and password and tap the QR icon to scan t
 >
 > Note
 >
-> If you are going to operate on behalf of other sellers, you can securely manage the linking by integrating [OAuth.](/developers/en/docs/mp-point/additional-content/security/oauth/introduction)
+> If you are going to operate on behalf of other sellers, you can securely manage the linking by integrating [OAuth](/developers/en/docs/mp-point/additional-content/security/oauth/introduction).
 
 ## Configure your store and POS
 

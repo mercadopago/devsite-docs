@@ -38,7 +38,7 @@ De esta manera, el dispositivo quedará vinculado a tu cuenta.
 
 Una vez que hayas vinculado tu dispositivo Point a tu cuenta de Mercado Pago y tengas la sucursal y caja creadas, deberás completar los datos del negocio y configurar la caja para asociarlos al dispositivo. 
 
-Para hcerlo, puedes acceder al [sitio de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/stores) e ingresar en **Tu negocio > Locales y cajas**.
+Para hacerlo, puedes acceder al [sitio de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/stores) e ingresar en **Tu negocio > Locales y cajas**.
 
 > NOTE
 >

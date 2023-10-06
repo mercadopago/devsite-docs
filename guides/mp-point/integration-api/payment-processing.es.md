@@ -324,5 +324,5 @@ El llamado devolverá la siguiente respuesta:
 ```
 
 
-* Si, en cambio, el estado de la intención de pago es  `on_terminal`, deberás realizar la cancelación directamente desde el dispositivo Point.
+* Si, en cambio, el estado de la intención de pago es `on_terminal`, deberás realizar la cancelación directamente desde el dispositivo Point.
 
