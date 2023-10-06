@@ -11,7 +11,7 @@ Es posible consultar la lista de tarjetas guardadas para un determinado cliente.
 ?>
 ```
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
 customerClient.listCards({ customerId: '123' })

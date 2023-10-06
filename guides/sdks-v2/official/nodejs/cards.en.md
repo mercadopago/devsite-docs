@@ -4,7 +4,7 @@ It is possible to securely store the reference to a card used by the customer in
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new CustomerCard(client);
 
 const body = {
@@ -23,7 +23,7 @@ It is possible to get the card data of a certain customer through their customer
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new CustomerCard(client);
 
 customerClient.list({ customerId: '448870796-7ZjwhKGxILixxN' })
@@ -38,7 +38,7 @@ You can consult the reference information of a stored card associated with a cus
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new CustomerCard(client);
 
 customerClient.get({ customerId: '448870796-7ZjwhKGxILixxN', cardId : '8987269652' })
@@ -53,7 +53,7 @@ You can delete the reference of a card associated with the customer whenever nec
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new CustomerCard(client);
 
 customerClient.delete({ customerId: '448870796-7ZjwhKGxILixxN', cardId : '8987269652' })

@@ -30,7 +30,7 @@ If necessary, it is possible to add new cards to a specific customer. To do this
 ?>
 ```
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
 customerClient.get('1234')

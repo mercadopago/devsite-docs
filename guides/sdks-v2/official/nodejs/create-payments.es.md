@@ -4,7 +4,7 @@ Es posible crear y agregar información de pago utilizando el SDK a continuació
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'ACCESS_TOKEN' });
+const client = new MercadoPagoConfig({ accessToken: 'ACCESS_TOKEN' });
 const payments = new Payments(client);
 
 const payment = new Payments(client);
@@ -26,7 +26,7 @@ Puede buscar los pagos realizados en los últimos doce meses a partir de la fech
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 
 const payments = new Payments(client);
 
@@ -46,7 +46,7 @@ Es posible consultar toda la información de un pago a través del ID de pago ut
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const payments = new Payments(client);
 
 payments.get(id)
@@ -61,7 +61,7 @@ Es posible cambiar los datos de un determinado pago enviando los parámetros con
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const payment = new PaymentCapture(client);
 
 payment.capture({

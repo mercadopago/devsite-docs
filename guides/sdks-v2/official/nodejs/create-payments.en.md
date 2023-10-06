@@ -4,7 +4,7 @@ You can create and add payment information using the SDK below. For details on r
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'ACCESS_TOKEN' });
+const client = new MercadoPagoConfig({ accessToken: 'ACCESS_TOKEN' });
 const payments = new Payments(client);
 
 const payment = new Payments(client);
@@ -26,7 +26,7 @@ You can search for payments made in the last twelve months from the search date 
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 
 const payments = new Payments(client);
 
@@ -46,7 +46,7 @@ It is possible to query all the information of a payment through the payment ID 
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const payments = new Payments(client);
 
 payments.get(id)
@@ -61,7 +61,7 @@ It is possible to change the data of a certain payment by sending the parameters
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const payment = new PaymentCapture(client);
 
 payment.capture({

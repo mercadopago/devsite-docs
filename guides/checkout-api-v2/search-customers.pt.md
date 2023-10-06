@@ -14,7 +14,7 @@ Caso precise de dados específicos de um cliente, como por exemplo, ID, endereç
 ?>
 ```
 ```node
-const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 const customerClient = new Customer(client);
 
 customerClient.search({ 

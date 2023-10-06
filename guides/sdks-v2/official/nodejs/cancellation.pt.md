@@ -4,7 +4,7 @@
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'ACCESS_TOKEN' });
+const client = new MercadoPagoConfig({ accessToken: 'ACCESS_TOKEN' });
 const payments = new Payments(client);
 payments.cancel('123456789', { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
     .then((result) => { console.log(result); })

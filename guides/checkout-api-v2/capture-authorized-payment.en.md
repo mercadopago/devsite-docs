@@ -29,9 +29,9 @@ To capture the total amount of a reservation, send the value to be captured to t
 ?>
 ```
 ```node
-import MercadoPago, { Payments } from 'mercadopago';
+import { MercadoPagoConfig, Payments } from 'mercadopago';
 
-const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 const payments = new Payments(client);
 const paymentId = '123';
 

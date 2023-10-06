@@ -54,7 +54,7 @@ In the table below we describe all the attributes that can be modified. To make 
 ?>
 ```
 ```node
-const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 const customerClient = new Customer(client);
 
 const customerBody = {

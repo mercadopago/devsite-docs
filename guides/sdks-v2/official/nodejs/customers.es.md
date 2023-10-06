@@ -4,7 +4,7 @@ Es posible crear clientes utilizando lo SDK a continuación. Para obtener detall
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
 const body = {
@@ -44,7 +44,7 @@ Es posible buscar clientes utilizando lo SDK a continuación. Para obtener detal
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
 customerClient.search({ email: 'john.doe@example.com' })
@@ -59,7 +59,7 @@ Es posible obtener clientes utilizando el SDK a continuación. Para obtener más
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
 customerClient.get('247711297-jxOV430go9fx2e')
@@ -74,7 +74,7 @@ Es posible actualizar clientes utilizando lo SDK a continuación. Para obtener d
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
 const customerRequest = {
