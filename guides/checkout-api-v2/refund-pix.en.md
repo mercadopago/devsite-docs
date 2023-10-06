@@ -52,7 +52,7 @@ var refund = client.Refund(paymentId, 20, requestOptions);
 ```node
 import MercadoPago, { Payments } from 'mercadopago';
 
-const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 const paymentRefunds = new PaymentRefunds(client);
 
 paymentRefunds.refund({ id: '123', amount: 20 }).then((result) => console.log(result))

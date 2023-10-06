@@ -5,7 +5,7 @@ You can create the token needed to operate your app on behalf of a vendor using 
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } }); 
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } }); 
 
 const oauth = new OAuth(client);
 
@@ -26,7 +26,7 @@ You can update the token needed to operate your app on behalf of a vendor using 
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 
 const oauth = new OAuth(client);
 

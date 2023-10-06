@@ -4,7 +4,7 @@ Puede crear un reembolso total con el SDK a continuación. Para detalles sobre l
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 
 const refund = new PaymentsRefunds(client);
 
@@ -44,7 +44,7 @@ Puede obtener reembolsos específicos para ciertos pagos utilizando el SDK a con
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 
 const refund = new PaymentsRefunds(client);
 
@@ -62,7 +62,7 @@ Puede ver todos los reembolsos de un pago específico utilizando el SDK a contin
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 
 const refund = new PaymentsRefunds(client);
 

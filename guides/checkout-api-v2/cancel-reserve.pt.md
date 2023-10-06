@@ -35,7 +35,7 @@ Para cancelar uma reserva utilize um dos códigos disponíveis abaixo.
 ```node
 import MercadoPago, { Payments } from 'mercadopago';
 
-const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 const payments = new Payments(client);
 
 const paymentId = '123';

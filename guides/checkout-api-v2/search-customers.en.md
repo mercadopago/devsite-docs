@@ -14,7 +14,7 @@ If you need specific customer data, such as ID, address or registration date, yo
 ?>
 ```
 ```node
-const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 const customerClient = new Customer(client);
 
 customerClient.search({ 

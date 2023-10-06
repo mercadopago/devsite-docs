@@ -12,7 +12,7 @@ You can consult the list of saved cards for a particular customer. To do so, sen
 ?>
 ```
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
 customerClient.listCards({ customerId: '123' })

@@ -4,7 +4,7 @@ Es posible consultar los métodos de pago disponibles y obtener una lista con lo
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 
 const paymentMethod = new PaymentMethod(client);
 

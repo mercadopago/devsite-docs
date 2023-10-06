@@ -4,7 +4,7 @@
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'ACCESS_TOKEN' });
+const client = new MercadoPagoConfig({ accessToken: 'ACCESS_TOKEN' });
 const payments = new Payments(client);
 
 const payment = new Payments(client);
@@ -26,7 +26,7 @@ payment.create({
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 
 const payments = new Payments(client);
 
@@ -46,7 +46,7 @@ payments.search({
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const payments = new Payments(client);
 
 payments.get(id)
@@ -61,7 +61,7 @@ payments.get(id)
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const payment = new PaymentCapture(client);
 
 payment.capture({

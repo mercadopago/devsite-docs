@@ -20,7 +20,7 @@ A primeira etapa é exibir para o comprador a lista de cartões salvos para que 
 ?>
 ```
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
 customerClient.listCards({ customerId: '123' })
@@ -208,7 +208,7 @@ Uma vez obtido o token, é preciso criar o pagamento com o valor correspondente.
 ?>
 ```
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
 customerClient.listCards({ customerId: '123' })

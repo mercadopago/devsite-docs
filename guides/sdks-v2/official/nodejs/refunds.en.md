@@ -4,7 +4,7 @@ You can create a full refund using the SDK below. For details on the request par
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 
 const refund = new PaymentsRefunds(client);
 
@@ -44,7 +44,7 @@ You can get a specific refund of certain payments using the SDKs below. For deta
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 
 const refund = new PaymentsRefunds(client);
 
@@ -62,7 +62,7 @@ You can get all refunds for a specific payment using the SDK below. For details 
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 
 const refund = new PaymentsRefunds(client);
 

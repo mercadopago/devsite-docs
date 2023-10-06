@@ -185,7 +185,7 @@ Para configurar pagamento com Pix, envie um POST ao endpoint [/v1/payments](/dev
 ```node
 import MercadoPago, { Payments } from 'mercadopago';
 
-const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 const payments = new Payments(client);
 
 payments.create({

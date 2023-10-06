@@ -16,7 +16,7 @@ Si necesitas datos específicos de un cliente, como DNI, dirección o fecha de r
 
 ```
 ```node
-const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 const customerClient = new Customer(client);
 
 customerClient.search({ 

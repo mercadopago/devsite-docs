@@ -4,7 +4,7 @@
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 
 const preference = new Preference(client);
 
@@ -28,7 +28,7 @@ preference.create({
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 
 const preference = new Preference(client);
 
@@ -48,7 +48,7 @@ preference.search({
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 const preference = new Preference(client);
 
 preference.get({ preferenceId: '123456789' })
@@ -63,7 +63,7 @@ preference.get({ preferenceId: '123456789' })
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 
 const preference = new Preference(client);
 

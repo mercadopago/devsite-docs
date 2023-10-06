@@ -68,7 +68,7 @@ $client->create(body);
 ?>
 ```
 ```node
-const client = new MercadoPago({ accessToken: 'ACCESS_TOKEN' });
+const client = new MercadoPagoConfig({ accessToken: 'ACCESS_TOKEN' });
 const payments = new Payments(client);
 
 payments.create({
