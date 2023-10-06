@@ -9,7 +9,7 @@ live_demo_code_action:
  - title: Experimente nosso Checkout Pro
  - description: Construa a experiência visual do Checkout Pro em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado para adicionar no seu site ou compartilhar com um desenvolvedor.
  - link: /developers/pt/live-demo/checkout-pro
- - image:https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2023/9/2/1696264714156-cow-render-wallet-es.png
+ - image:https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2023/9/6/1696615115358-Group34359.png
  - linkName: Demo
  - buttonDescription: Construir seu Checkout Pro
 ---
