@@ -306,7 +306,7 @@ Cada cuadro de la sección de revisión está asociado a una _callback_, que se 
 | `onClickEditShippingData` | El comprador desea editar los datos de envío.	 | Si (cuando se proporcionen datos de _shipping_) |
 | `onClickEditBillingData` | El comprador desea editar los datos de facturación. | Si (cuando se proporcionen datos de _billing_) |
 
-Estas _callbacks_ permiten que el integrador construya un mecanismo de edición según su conveniencia. Para construir dicho mecanismo, el _controller_ devuelto al instanciar el Brick tiene un método `update`, que permite la edición de estos datos. Consulte nuestra [documentación técnica](https://github.com/icaldana/sdk-js/blob/main/API/bricks/paymentReview.md#brick-controllerupdate) para obtener más detalles sobre cómo funcionan el _controlador_ y el método _update_.
+Estas _callbacks_ permiten que el integrador construya un mecanismo de edición según su conveniencia. Para construir dicho mecanismo, el _controller_ devuelto al instanciar el Brick tiene un método `update`, que permite la edición de estos datos. Consulte nuestra [documentación técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/paymentReview.md#brick-controllerupdate) para obtener más detalles sobre cómo funcionan el _controlador_ y el método _update_.
 
 ```Javascript
 window.paymentBrickController = await bricksBuilder.create(
@@ -339,8 +339,8 @@ Finalmente, al hacer clic en **Pagar**, se activa la _callback_ `onSubmit`, que 
 
 La información de los ítems y el envío se devolverá en el objeto `formData`, y para datos adicionales, existe el campo `additionalData`, que incluye, entre otros datos, los últimos cuatro dígitos para compras con tarjeta.
 
-Consulte este [tema](/developers/es/docs/checkout-bricks/payment-brick/advanced-features/additional-data) especializado si desea utilizar el campo `additionalData`. Para obtener más detalles sobre el proceso de envío, consulte la sección de [envío de pagos](/developers/es/docs/checkout-bricks/payment-brick/visual-customizations/change-texts).
+Consulte este [tema](/developers/es/docs/checkout-bricks/payment-brick/advanced-features/additional-data) especializado si desea utilizar el campo `additionalData`. Para obtener más detalles sobre el proceso de envío, consulte la sección de [envío de pagos](/developers/es/docs/checkout-bricks/payment-brick/payment-submission).
 
 ## Personalización de textos
 
-Es posible cambiar los textos que se cargan en el Brick. Para ello, en el objeto de inicialización del Brick, debe enviar el objeto `customization.visual.texts` con los valores de los textos deseados. Para obtener más detalles, consulte la página de [cambio de textos](/developers/es/docs/checkout-bricks/payment-brick/additional-customization/change-texts).
+Es posible cambiar los textos que se cargan en el Brick. Para ello, en el objeto de inicialización del Brick, debe enviar el objeto `customization.visual.texts` con los valores de los textos deseados. Para obtener más detalles, consulte la página de [cambio de textos](/developers/es/docs/checkout-bricks/payment-brick/visual-customizations/change-texts).

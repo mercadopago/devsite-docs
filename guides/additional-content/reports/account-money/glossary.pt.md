@@ -14,11 +14,11 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | Valor da compra(TRANSACTION_AMOUNT)                | Valor bruto da transação.                 |
 | Moeda (TRANSACTION_CURRENCY)                       | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br><br>  |
 | Valor recebido por compras com split de pagamento (SELLER_AMOUNT)          | Valor recebido por compras com split.     |
-| Data de origem (TRANSACTION_DATE)                  | Data de aprovação da transação.           |
+| Data de origem (TRANSACTION_DATE)                  | Data de criação da transação.           |
 | Tarifas ----[mlu, mla, mlm, mco, mlc, mpe]---- + IVA ------------ (FEE_AMOUNT)                     | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor.----[mlu, mla, mlm, mco, mlc, mpe]----Incluir IVA.------------                |
 | Valor líquido da operação que impactou no dinheiro (SETTLEMENT_NET_AMOUNT) | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da valor da compra (TRANSACTION_AMOUNT).             |
 | Moeda da liquidação (SETTLEMENT_CURRENCY)          | Moeda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br><br>|
-| Data de aprovação (SETTLEMENT_DATE)                | Data em que o valor da transação foi creditada.                   |
+| Data de aprovação (SETTLEMENT_DATE)                | Data de aprovação da transação.                   |
 | Valor líquido da operação (REAL_AMOUNT)            | Valor líquido da transação, se é um settlement, os valores para estornos, reclamações ou devoluções são descontados.                      |
 | Cupom de desconto (COUPON_AMOUNT)                  | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**.                  |
 | Dados adicionais (METADATA)| ----[mlu, mla, mlm, mco, mlc, mlb]---- Dados extras, como por exemplo, o ID dos reembolsos parciais ou dados fornecidos pelo vendedor no caso de integrações externas. ------------ ----[mpe]---- Dados adicionais como, por exemplo, ou dados informados pelo vendedor em caso de integração externa. ------------ ----[mlb]---- Quando "Fee discount" aparecer, entende-se como a redução na tarifa de venda pela participação em uma campanha comercial. ------------                  |

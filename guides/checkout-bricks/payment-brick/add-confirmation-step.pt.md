@@ -306,7 +306,7 @@ Cada quadro da seção de revisão está associado a uma _callback_, que é acio
 | `onClickEditShippingData` | O comprador deseja editar os dados de envio. | Sim (quando dados de _shipping_ forem informados) |
 | `onClickEditBillingData` | O comprador deseja editar os dados de faturamento. | Sim (quando dados de _billing_ forem informados) |
 
-Tais _callbacks_ permitem que o integrador construa um mecanismo de edição de acordo com sua conveniência. Para construir tal mecanismo, o _controller_ retornado ao instanciar o Brick possui um método `update`, que permite a edição desses dados. Consulte a nossa [documentação técnica](https://github.com/icaldana/sdk-js/blob/main/API/bricks/paymentReview.md#brick-controllerupdate) para mais detalhes sobre o funcionamento do _controller_ e do método de _update_.
+Tais _callbacks_ permitem que o integrador construa um mecanismo de edição de acordo com sua conveniência. Para construir tal mecanismo, o _controller_ retornado ao instanciar o Brick possui um método `update`, que permite a edição desses dados. Consulte a nossa [documentação técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/paymentReview.md#brick-controllerupdate) para mais detalhes sobre o funcionamento do _controller_ e do método de _update_.
 
 ```Javascript
 window.paymentBrickController = await bricksBuilder.create(
