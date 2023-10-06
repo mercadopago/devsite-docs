@@ -10,7 +10,7 @@ Some terms are new and you may not be familiar with them. Use this glossary so y
 | Poi | Device serial. You can see it on the back of your device (SN, NS). |
 | Poi Type | Device type. |
 | POS | Point of Sale.|
-| Self service | It is the model where the client can make use of the devices in an autonomous and self-managed way. |
+| Self service | It is the model where the client can make use of the devices in an autonomous and self-managed way. Please note that this use of the devices is **discouraged** and, if implemented, will be the total responsibility of the business. |
 | Webhook | This is a notification that is sent from our server to the integrator through an HTTP POST call in relation to your transactions. |
 
 ## Possible statuses of a payment intent

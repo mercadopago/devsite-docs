@@ -35,11 +35,11 @@ bullet_section_with_media:
 bullet_section_with_media:
  - title: Dispositivos integráveis
  - type: reversed
- - benefit_title: Point Mini
+ - benefit_title: Point Smart
  - benefit_message: 
  - benefit_title: Point Plus
  - benefit_message: 
- - benefit_title: Point Smart
+ - benefit_title: Point Mini
  - benefit_message:
  - image: /point-api/landing.point.machines.png
 ---
@@ -53,14 +53,14 @@ bullet_section_with_media:
 bullet_section_with_media: 
  - title: Dispositivos disponíveis
  - type: reversed
- - benefit_title: Point Mini NFC 1
- - benefit_message: 
- - benefit_title: Point Mini Chip
- - benefit_message: 
  - benefit_title: Point Pro 2
  - benefit_message:
  - benefit_title: Point Smart
  - benefit_message:
+ - benefit_title: Point Mini NFC 1
+ - benefit_message: 
+ - benefit_title: Point Mini Chip
+ - benefit_message: 
  - image: /point-api/landing.point.machines.png
 ---
 
@@ -71,11 +71,12 @@ bullet_section_with_media:
 bullet_section_with_media: 
  - title: Dispositivos disponíveis
  - type: reversed
- - benefit_title: Point Blue
- - benefit_message: 
  - benefit_title: Point Smart
  - benefit_message: 
  - benefit_title: Point Air
+ - benefit_message: 
+ - benefit_title: Point Blue
+ - benefit_message: 
  - image: /point-api/landing.point.machines.png
 ---
 

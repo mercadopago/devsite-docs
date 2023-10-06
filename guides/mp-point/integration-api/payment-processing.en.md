@@ -1,10 +1,10 @@
-#  Start processing your payments
+#  Process payments
 
-To start processing your payments with POS, follow the steps below.
+To start processing your payments with Point of Sale (POS), follow the steps below.
 
 ## Get the list of your available devices
 
-Before creating a payment intent, you must obtain the list of Point devices associated with your account. You can do it through the following call:
+Before creating a payment intent, you must [obtain the list of Point devices](/developers/en/reference/integrations_api/_point_integration-api_devices/get) associated with your account. You can do it through the following call:
 
 ``` curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/devices?offset=0&limit=50' \ 
@@ -60,7 +60,7 @@ You will receive a response like this:
 
 A payment intent is a call that contains all the details of the transaction to be made, and it must be created in order to start a payment. It is an attempt that, if successful, will return a payment `id`  and its status.
 
-You can create a payment intent and assign it to your Point device in the following way:
+You can [create a payment intent](/developers/en/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents/post) and assign it to your Point device in the following way:
 
 ----[mla]----
 ```curl
@@ -187,27 +187,20 @@ You will receive a response like this:
 
 ------------
 
-## Cancel a payment intent
+Please note that payment intents are the foundation for processing payments with Point devices. For this reason, it is important that you register and save the data obtained during their creation, especially their `id`.
 
-You can cancel a payment intent assigned to a Point device in the following way:
+> NOTE
+>
+> Recommendation
+>
+> You can use the [Point Simulator](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/point-simulator) to safely test your integration and the creation of payment intents.
 
-
-``` curl
-curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents/:paymentIntentId' \
---header 'Authorization: Bearer ${ACCESS_TOKEN}' \
-```
-
-You will receive this response:
-
-``` json
-{
- "id": "7d8c70b6-2ac8-4c57-a441-c319088ca3ca"
-}
-```
 
 ## Process your payment intent
 
-Once the payment intent has been created, you can obtain it from your Point device by pressing on the key to pay (in the case of Point Plus and Point Pro 2 the **green button** and, in the case of the Point Smart, the **digital button “Charge now”**). You must follow the steps shown on the screen afterwards to complete the payment.
+Once the payment intent has been created, you can obtain it from your Point device by pressing on the key to pay (in the case of Point Plus and Point Pro 2 the **green button** and, in the case of the Point Smart, the **digital button “Charge now”**). 
+
+Then, follow the steps shown on the screen afterwards to complete the payment.
 
 > WARNING
 >
@@ -215,9 +208,10 @@ Once the payment intent has been created, you can obtain it from your Point devi
 >
 > We recommend assessing your [integration’s quality](/developers/en/docs/checkout-api/additional-content/integration-quality) to check if you are meeting the Mercado Pago quality and security standards that would help you obtain a good payment approval rate.
 
+
 ## Check the status of your payment intent
 
-You can check the current status of your payment intent using the `id` that you received in the response when creating it.
+If you want to know the status of a particular payment intent, you can [check the current status of your payment intent](/developers/en/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) using the `id` that you received in the response when creating it.
 
 Remember that `id`and `status`of the **payment intent** are not the same as `id`and `status`of the payment. In this case, you will be trying to obtain the details of an attempt. If you want to check out all the information corresponding to the payment, access the [Payment API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) in our API Reference.
 
@@ -303,3 +297,30 @@ You will receive a response similar to this one below:
 > `Confirmation_required` is a final status and will not change. If you receive it as a response to the payment intent, you must check on your device the status of the payment, using the `payment_id` given in said response. Do not deliver your service or product until you verify it.
 
 You can check all the possible status of a payment intent by accessing our [Glossary](/developers/en/docs/mp-point/integration-api/glossary).
+
+If, on the other hand, you want to query a **list of payment intents and their final states**, you can do so through the endpoint [Get list of payment intents](/developers/en/reference/integrations_api/_point_integration-api_payment-intents_events/get). Please note that you will need to assign a date range to the query, which cannot exceed 30 days.
+
+This call can also be useful if you don't know the `payment_intent_id` of a specific payment intent.
+
+
+## Cancel a payment intent
+
+If you want to, you can cancel a payment intent assigned to a Point device. To do so,  you have two posibilities:
+
+* If the status of the intent is `opened` and it has not yet been sent to the terminal, you can [cancel it via API](/developers/en/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) by making the following call:
+
+
+``` curl
+curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents/:paymentIntentId' \
+--header 'Authorization: Bearer ${ACCESS_TOKEN}' \
+```
+
+You will receive this response:
+
+``` json
+{
+ "id": "7d8c70b6-2ac8-4c57-a441-c319088ca3ca"
+}
+```
+
+* If the status of the payment intent is `on_terminal`, you will need to cancel it directly from the Point device.

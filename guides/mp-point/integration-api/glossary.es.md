@@ -10,7 +10,7 @@ Algunos términos son nuevos y quizás no estés familiarizado con ellos. Usa es
 | PDV | Punto de venta.|
 | Poi | Serial del dispositivo. Lo puedes ver en la parte posterior de tu dispositivo (SN, NS). |
 | Poi Type | Tipo de dispositivo. |
-| Self-service | Se traduce como autoservicio y es el modelo en donde el cliente puede hacer uso de los dispositivos de manera autónoma  y autogestionable. |
+| Self-service | Se traduce como autoservicio y es el modelo en donde el cliente puede hacer uso de los dispositivos de manera autónoma  y autogestionable. Ten en cuenta que este uso de los dispositivos es **desaconsejado** y que, en caso de implementarse, será total responsabilidad del comercio. |
 | Webhook | Es una notificación que se envía desde nuestro servidor al del integrador mediante una llamada HTTP POST en relación a tus transacciones. |
 
 ## Posibles estados de una intención de pago
