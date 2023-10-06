@@ -75,7 +75,7 @@ To get a detailed list of all payment methods available for integration, send a 
 ?>
 ```
 ```node
-import MercadoPago, { PaymentMethods } from 'mercadopago';
+import { MercadoPagoConfig }, { PaymentMethods } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const paymentMethods = new PaymentMethods(client);
@@ -334,7 +334,7 @@ To configure payments with **Boleto Bancário** or **Pagamento em lotérica**, s
 ?>
 ```
 ```node
-import MercadoPago, { Payments } from 'mercadopago';
+import { MercadoPagoConfig }, { Payments } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 const payments = new Payments(client);

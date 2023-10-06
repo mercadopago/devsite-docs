@@ -76,7 +76,7 @@ Para obtener una lista detallada de todos los medios de pago disponibles para in
 ?>
 ```
 ```node
-import MercadoPago, { PaymentMethods } from 'mercadopago';
+import { MercadoPagoConfig }, { PaymentMethods } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const paymentMethods = new PaymentMethods(client);
@@ -343,7 +343,7 @@ Para configurar pagos con **boleto bancario** o **pago en agencia de lotería**,
 ?>
 ```
 ```node
-import MercadoPago, { Payments } from 'mercadopago';
+import { MercadoPagoConfig }, { Payments } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 const payments = new Payments(client);

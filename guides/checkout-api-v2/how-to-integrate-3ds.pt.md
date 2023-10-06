@@ -119,7 +119,7 @@ Payment payment = await client.CreateAsync(request);
 ?>
 ```
 ```node
-import MercadoPago, { Payments } from 'mercadopago';
+import { MercadoPagoConfig }, { Payments } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: '<ENV_ACCESS_TOKEN>' });
 const payments = new Payments(client);
@@ -412,7 +412,7 @@ curl -X POST \
 ?>
 ```
 ```node
-import MercadoPago, { Payments } from 'mercadopago';
+import { MercadoPagoConfig }, { Payments } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 const payments = new Payments(client);

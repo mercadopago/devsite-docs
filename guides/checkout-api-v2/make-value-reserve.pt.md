@@ -60,7 +60,7 @@ client.create(request);
 
 ```
 ```node
-import MercadoPago, { Payments } from 'mercadopago';
+import { MercadoPagoConfig }, { Payments } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 const payments = new Payments(client);
