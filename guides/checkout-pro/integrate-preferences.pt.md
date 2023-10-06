@@ -84,9 +84,9 @@ MercadoPagoConfig::setAccessToken("PROD_ACCESS_TOKEN");
 ```
 ```node
 // SDK do Mercado Pago
-import MercadoPago from 'mercadopago';
+import { MercadoPagoConfig } from 'MercadoPago';
 // Adicione as credenciais
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 ```
 ```java
 // SDK de Mercado Pago
