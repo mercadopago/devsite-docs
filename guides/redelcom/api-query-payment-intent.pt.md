@@ -4,7 +4,7 @@ Para verificar o status atual de uma intenção de pagamento feita anteriormente
 
 1. Usar o parâmetro `callback` na solicitação para criar uma intenção de pagamento (**recomendado**).
 
-2. Se o callback não responder dentro de um minuto após a criação da intenção de pagamento, você pode fazer uma chamada `GET` para `{https://api-dev.redelcom.cl:20010/v2}/pago?rdcTransactionId={rdcTransactionId}`, substituindo `{rdcTransactionId}` pelo valor obtido na resposta à criação da intenção de pagamento que você deseja verificar, e `X-Authentication`, `clientId` e `secret` pelas suas credenciais.
+2. Fazer uma chamada `GET` para `{https://api-dev.redelcom.cl:20010/v2}/pago?rdcTransactionId={rdcTransactionId}`, substituindo `{rdcTransactionId}` pelo valor obtido na resposta à criação da intenção de pagamento que você deseja verificar, e `X-Authentication`, `clientId` e `secret` pelas suas credenciais.
 
 
 ```curl

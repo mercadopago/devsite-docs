@@ -22,7 +22,7 @@ curl -X POST \
 
 | Campo | Descripción |
 |---|---|
-| `dte` | **Obligatorio**. Estructura (XML) de la boleta/factura electrónica. Puedes ver un ejemplo completo de XML en el [anexo: ejemplo de XML para la impresión de DTE](/developers/en/docs/redelcom/additional-content/print-example). |
+| `dte` | **Obligatorio**. Estructura (XML) de la boleta/factura electrónica. Puedes ver un ejemplo completo de XML en el [anexo: ejemplo de XML para la impresión de DTE](/developers/es/docs/redelcom/additional-content/print-example). |
 | `rdcTransactionId` | **Obligatorio**. Código de la solicitud de pago original que se está queriendo facturar. |
 | `terminalId` | **Obligatorio**. Código de la terminal a la que se enviará la solicitud de impresión. |
 

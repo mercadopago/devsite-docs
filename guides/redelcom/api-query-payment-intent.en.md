@@ -4,7 +4,7 @@ To check the current status of a previously made payment intent, you have two op
 
 1. Use the `callback` parameter within the request to create a payment intent (**recommended**).
 
-2. If the callback does not respond within a minute of creating the payment intent, you can make a `GET` call to `{https://api-dev.redelcom.cl:20010/v2}/pago?rdcTransactionId={rdcTransactionId}`, replacing `{rdcTransactionId}` with the value obtained in the response to the payment intention creation you want to check, and `X-Authentication`, `clientId`, and `secret` with your credentials.
+2. Make a `GET` call to `{https://api-dev.redelcom.cl:20010/v2}/pago?rdcTransactionId={rdcTransactionId}`, replacing `{rdcTransactionId}` with the value obtained in the response to the payment intention creation you want to check, and `X-Authentication`, `clientId`, and `secret` with your credentials.
 
 ```curl
 curl -X GET \
