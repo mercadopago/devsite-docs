@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: Main Apps Playbook
  - message: Esta es una guía para que desarrolles e integres main apps al Point Smart. Navega por el menú lateral para encontrar los procesos, requisitos y direccionamientos, desde la ficha técnica del lector a la distribución de la solución. El material está en constante evolución, con nuevos contenidos que se van incluyendo.
- - media_image: /main-apps/landing.png
+ - media_image: /main-apps/landing1.png
 ---
 
 --- mini_landing_separator ---
