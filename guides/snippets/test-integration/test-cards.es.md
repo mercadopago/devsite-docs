@@ -2,7 +2,7 @@ Puedes usar tarjetas de prueba de métodos de pago locales y simular diferentes 
  
 Para eso, dependiendo de tu país, utiliza una de las tarjetas de **crédito** o **débito** que te proporcionamos a continuación.
 
-# Tarjetas de crédito
+## Tarjetas de crédito
 
 ----[mla]----
 | Tarjeta | Número | Código de seguridad | Fecha de caducidad |
@@ -59,7 +59,7 @@ Para eso, dependiendo de tu país, utiliza una de las tarjetas de **crédito** o
 
 ------------
 
-# Tarjetas de débito
+## Tarjetas de débito
 
 ----[mla]----
 | Tarjeta | Número | Código de seguridad | Fecha de caducidad |
