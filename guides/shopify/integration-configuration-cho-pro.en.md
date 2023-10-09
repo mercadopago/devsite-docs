@@ -50,7 +50,7 @@ When installing [Checkout Pro](/developers/en/docs/checkout-pro/landing) ("**Che
 >
 > Attention
 >
-> If you were using the old Mercado Pago app ("**Mercado Pago**") and you stopped receiving payments in your store, don't worry. To sell again, install our new app ("**Checkout Mercado Pago**") following the steps below.
+> If you were using the old Mercado Pago app ("**Mercado Pago**") and stopped receiving payments in your store, don't worry. To start selling again, install our new app("**Checkout Mercado Pago**") by following the steps below.
 
 To install Checkout Pro ("**Checkout Mercado Pago**") in a Shopify store, follow these steps:
 
