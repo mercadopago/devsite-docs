@@ -16,7 +16,7 @@ Para garantizar que la integración sea exitosa, considera las características 
 
 <center>
 
-![prerequisites](/main-apps/prerequisites1.png)
+![prerequisites](/main-apps/prerequisites-all.png)
 
 </center>
 

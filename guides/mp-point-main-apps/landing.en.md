@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: Main Apps Playbook
  - message: This is a guide for you to develop and integrate main apps with Point Smart. Browse the side menu to find the processes, requirements and guidelines, from the POS technical data sheet to the solution distribution. The material is constantly evolving, with new content being included.
- - media_image: /main-apps/landing1.png
+ - media_image: /main-apps/landing-all.png
 ---
 
 --- mini_landing_separator ---
