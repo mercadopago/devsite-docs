@@ -4,7 +4,7 @@
 
 <center>
 
-![introduction](/main-apps/introduction1.png)
+![introduction](/main-apps/introduction-all.png)
 
 </center>
 
