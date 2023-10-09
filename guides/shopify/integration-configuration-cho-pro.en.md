@@ -42,6 +42,7 @@ To install Checkout Pro ("**Checkout Mercado Pago**") in a Shopify store, follow
 > <br/><br/>
 > In case of renewing your credentials, remember to replace both the production and test credentials in your integration.
 
+------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 When installing [Checkout Pro](/developers/en/docs/checkout-pro/landing) ("**Checkout Mercado Pago**"), there may be an **increase in the approval rate of online store sales**. This happens because buyers will be able to pay using a Mercado Pago account and the entire purchase process will be done in our environment, which facilitates payment. At the end of the transaction, these buyers are redirected to the store environment.
 
