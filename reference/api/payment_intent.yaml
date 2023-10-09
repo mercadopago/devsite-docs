@@ -14,11 +14,11 @@ paths:
         eng: Create a Payment Intent
         spa: Crear Payment Intent
         por: Criar Payment Intent
-      description: This endpoint allows to create and process a new Payment Intent. If you wish to defer the processing at the time of creation, simply omit the "payment_method" parameter. Subsequently, you can modify the Payment Intent using the PATCH /v1/payment-intents/:id endpoint for updates
+      description: This endpoint allows you to creates and process a new Payment Intent. To not process the created Payment Intent, you need omit the parameter payment_method in the creation, and then you can modify and/or process the payment intent using the endpoint PATCH /v1/payment-intents/:id.
       x-description-i18n:
-        eng: This endpoint allows to create and process a new Payment Intent. If you wish to defer the processing at the time of creation, simply omit the "payment_method" parameter. Subsequently, you can modify the Payment Intent using the PATCH /v1/payment-intents/:id endpoint for updates
-        spa: Este endpoint permite crear y procesar una nueva Payment Intent. Si desea evitar el procesamiento inmediato durante la creación, simplemente omita el parámetro "payment_method". Posteriormente, puede modificar la Payment Intent utilizando el endpoint PATCH /v1/payment-intents/:id para actualizaciones
-        por: Este endpoint permite criar e processar uma nova Payment Intent. Se você deseja evitar o processamento imediato durante a criação, basta omitir o parâmetro "payment_method". Posteriormente, é possível modificar a Payment Intent utilizando o endpoint PATCH /v1/payment-intents/:id para atualizações
+        eng: This endpoint allows you to creates and process a new Payment Intent. To not process the created Payment Intent, you need omit the parameter payment_method in the creation, and then you can modify and/or process the payment intent using the endpoint PATCH /v1/payment-intents/:id.
+        spa: Este endpoint permite crear y procesar una nueva Payment Intent. Para no hacer el procesamiento durante la creacion, es necesario omitir el parametro payment_method en la creacion, y luego se puede modificar y/o procesar la payment intent usando el endpoint PATCH /v1/payment-intents/:id.
+        por: Este endpoint permite criar e processar uma nova Payment Intent. Para nao fazer o processamento durante a criação, é necessário omitir o parâmetro payment_method na criação, depois pode-se modificar a Payment-Intent usando o endpoint PATCH /v1/payment-intents/:id.
       parameters:
         - in: header
           name: Authorization
@@ -569,6 +569,24 @@ paths:
                       eng: Date of creation of the Payment Intent. For example, "2023-09-06T08:00:00.000-03:00".
                       spa: Fecha de creación de la Payment Intent. Por ejemplo, "2023-09-06T08:00:00.000-03:00".
                       por: Data de criação da Payment Intent. Por exemplo, "2023-09-06T08:00:00.000-03:00".
+                    format: date-time
+                  active_to_date:
+                    type: string
+                    description: Maximum processing deadline for the payment intent. This deadline sets the date by which the payment Intent is expected to be processed and completed. For example - "2023-09-06T08:00:00.000-03:00".
+                    x-description-i18n:
+                      eng: Maximum processing deadline for the payment intent. This deadline sets the date by which the payment Intent is expected to be processed and completed. For example - "2023-09-06T08:00:00.000-03:00".
+                      spa: Plazo máximo de procesamiento para la Payment Intent. Este plazo establece la fecha límite hasta la cual se espera que la Payment Intent sea procesada y completada. Por ejemplo - "2023-09-06T08:00:00.000-03:00".
+                      por: Prazo máximo de processamento para Payment Intent. Este prazo determina a data limite até a qual se espera que a Payment Intent seja processada e finalizada. Por exemplo, "2023-09-06T08:00:00.000-03:00".
+                    format: date-time
+                    example: "2023-09-06T10:00:00.000-03:00"
+                  last_updated_date:
+                    type: string
+                    example: "2023-09-06T08:00:00.000-03:00"
+                    description: Date of the last updated of the Payment Intent. For example, "2023-09-06T08:00:00.000-03:00".
+                    x-description-i18n:
+                      eng: Date of the last updated of the Payment Intent. For example, "2023-09-06T08:00:00.000-03:00".
+                      spa: Fecha de la última actualización de la Payment Intent. Por ejemplo, "2023-09-06T08:00:00.000-03:00".
+                      por: Data da última atualização da Payment Intent. Por exemplo, "2023-09-06T08:00:00.000-03:00".
                     format: date-time
                   status:
                     type: string
@@ -1347,6 +1365,14 @@ paths:
                                     eng: For offline payments, this is the URL that enables the continuation of the payment flow.
                                     spa: Para pagos offline, esta es la URL que permite continuar con el flujo de pago.
                                     por: Para pagamentos realizados offline, é a URL que possibilita a continuação do processo de pagamento.
+                                qr_code_base64:
+                                  type: string
+                                  example: ""
+                                  description: For offline payments, this is information about the qr code to finish the payment.
+                                  x-description-i18n:
+                                    eng: For offline payments, this is information about the qr code to finish the payment.
+                                    spa: Para pagos offline, esta es la información del QR Code para finalizar el pago.
+                                    por: Para pagamentos realizados offline, é a informação do QR Code para finalizar o pagamento.
                                 response_detail:
                                   type: object
                                   description: Payment status details.
@@ -1498,16 +1524,16 @@ paths:
     post:
       tags:
         - $ref: '#/tags/checkout-api'
-      summary: Authorize payments for a Payment Intent
+      summary: Authorize payments for a Payment Intents.
       x-summary-i18n:
-        eng: Authorize payments for a Payment Intent
-        spa: Autorizar pagos de una Payment Intent
-        por: Autorizar pagamentos de uma Payment Intent
-      description: This endpoint enables the authorization of payments for an existing Payment Intent
+        eng: Authorize payments for a Payment Intents.
+        spa: Autorizar pagos para una Payment Intents.
+        por: Autorizar pagamentos para uma Payment Intents.
+      description: Create a new Payment-Intent and reserves the amount on the customer's credit card.
       x-description-i18n:
-        eng: This endpoint enables the authorization of payments for an existing Payment Intent
-        spa: Este endpoint permite la autorización de pagos para una Payment Intent ya existente
-        por: Este endpoint possibilita a autorização de pagamentos para uma Payment Intent já existente
+        eng: Create a new Payment-Intent and reserves the amount on the customer's credit card.
+        spa: Crea una Payment-Intent de pago y reserva el monto en la tarjeta de crédito del cliente.
+        por: Cria uma nova Payment-Intent e reserva o valor no cartão de crédito cliente.
       parameters:
         - in: header
           name: Authorization
@@ -1515,11 +1541,11 @@ paths:
             type: string
             example: "Bearer token-89987654567f-numeroToken"
           required: true
-          description: Access Token  - Application private key that must always be used in the backend to generate payments. It is essential that this information is kept secure on their servers.
+          description: Access Token - Application private key that must always be used in the backend to generate payments. It is essential that this information is kept secure on their servers.
           x-description-i18n:
-            eng: Application private key that must always be used in the backend to generate payments. It is essential that this information is kept secure on their servers.
-            spa: Clave privada de la aplicación que siempre debe ser utilizada en el backend para generar pagos. Es fundamental que esta información se mantenga segura en sus servidores.
-            por: Chave privada do aplicativo que deve ser sempre usada no backend para gerar pagamentos. É essencial que essas informações sejam mantidas seguras em seus servidores.
+            eng: Access Token - Application private key that must always be used in the backend to generate payments. It is essential that this information is kept secure on their servers.
+            spa: Access Token - Clave privada de la aplicación que siempre debe ser utilizada en el backend para generar pagos. Es fundamental que esta información se mantenga segura en sus servidores.
+            por: Access Token - Chave privada do aplicativo que deve ser sempre usada no backend para gerar pagamentos. É essencial que essas informações sejam mantidas seguras em seus servidores.
         - in: header
           name: X-Idempotency-Key
           schema:
@@ -1933,6 +1959,15 @@ paths:
                       eng: Date of creation of the Payment-Intent. For example, "2023-09-06T08:00:00.000-03:00".
                       spa: Fecha de creación de la Payment-Intent. Por ejemplo, "2023-09-06T08:00:00.000-03:00".
                       por: Data de criação da Payment-Intent. Por exemplo, "2023-09-06T08:00:00.000-03:00".
+                    format: date-time
+                  last_updated_date:
+                    type: string
+                    example: "2023-09-06T08:00:00.000-03:00"
+                    description: Date of the last update of the Payment Intent. For example, "2023-09-06T08:00:00.000-03:00".
+                    x-description-i18n:
+                      eng: Date of the last update of the Payment Intent. For example, "2023-09-06T08:00:00.000-03:00".
+                      spa: Fecha de la última actualización de la Payment Intent. Por ejemplo, "2023-09-06T08:00:00.000-03:00".
+                      por: Data da última atualização da Payment Intent. Por exemplo, "2023-09-06T08:00:00.000-03:00".
                     format: date-time
                   status:
                     type: string
