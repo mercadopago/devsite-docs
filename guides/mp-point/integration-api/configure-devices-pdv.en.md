@@ -5,7 +5,7 @@
 > Important
 >
 > Before configuring the Point device in Point of Sale mode, you must access your Mercado Pago account and have created an [application](/developers/en/docs/mp-point/additional-content/your-integrations/dashboard) with **PointdeMercadoPago** as the product to integrate.
->
+> <br><br>
 > Also, remember to access your [production credentials](/developers/en/docs/mp-point/additional-content/your-integrations/credentials) to manage your integration correctly.
 
 To start your integration with Mercado Pago Point via API, you must configure your device in Point of Sale mode. To do this, follow the steps below.
@@ -26,10 +26,6 @@ To link the Point device to your Mercado Pago account, you need to have the Merc
 
 Sign in to the app with your username and password and tap the QR icon to scan the code that appears when you turn on the Point device. This way, the device will be linked to your account.
 
-> NOTE
->
-> Note
->
 > If you are going to operate on behalf of other sellers, you can securely manage the linking by integrating [OAuth](/developers/en/docs/mp-point/additional-content/security/oauth/introduction).
 
 ## Configure your store and POS
@@ -38,10 +34,6 @@ Once you have linked your Point device to your Mercado Pago account and have cre
 
 To do this, you can access the [Mercado Pago site](https://www.mercadopago[FAKER][URL][DOMAIN]/stores) and go to **Your business > Stores and registers**.
 
-> NOTE
->
-> Note
->
 > You can also configure the store and POS directly from the Point device once it is linked. The device itself will guide you if you choose to configure it this way.
 
 ## Activate the POS mode on your Point device
@@ -55,7 +47,7 @@ Then, make a PATCH request to the endpoint [Change operating mode](/developers/e
 ``` curl
 curl -X PATCH \
       'https://api.mercadopago.com/point/integration-api/devices/{device-id}' \
-       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN \
+       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
        -H 'Content-Type: application/json' \ 
       -d '{
   "operating_mode": "PDV"
@@ -80,8 +72,4 @@ Finally, you will need to restart your device for the change in the operating mo
 
 If you need to use the device in non-integrated mode, you should configure the `operating_mode` field with the value `STANDALONE`.
 
-> NOTE
->
-> Note
->
 > If you have already activated the point-of-sale mode on a device via API and, for some reason, need to reconfigure it, you can do it directly from the device, and there will be no need to resort to the API again.
