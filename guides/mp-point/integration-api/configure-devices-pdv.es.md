@@ -43,7 +43,7 @@ Para que el dispositivo Point esté integrado con nuestra API, es necesario acti
 
 Para hacer esta activación por primera vez, consulta los dispositivos a través de la API [Obtener dispositivos](/developers/es/reference/integrations_api/_point_integration-api_devices/get). Este llamado devolverá un listado de dispositivos asociados a la cuenta de Mercado Pago. Podrás identificar el Point que deseas por medio de los últimos caracteres del campo `id`, que deberán coincidir con el serial que aparece en la etiqueta trasera del dispositivo.
 
-Luego, realiza una solicitud PATCH al endpoint [Cambiar el modo de operación](/developers/es/reference/integrations_api/_point_integration-api_devices_device-id/patch), reemplazando `device.id` por el valor obtenido en ese campo en la respuesta a la solicitud GET anterior.
+Luego, realiza una solicitud PATCH al endpoint [Cambiar el modo de operación](/developers/es/reference/integrations_api/_point_integration-api_devices_device-id/patch), reemplazando `device-id` por el valor obtenido en ese campo en la respuesta a la solicitud GET anterior.
 
 ``` curl
 curl -X PATCH \

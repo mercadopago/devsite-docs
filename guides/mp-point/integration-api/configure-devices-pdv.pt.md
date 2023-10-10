@@ -42,7 +42,7 @@ Para integrar o dispositivo Point com nossa API, é necessário ativar o modo Po
 
 Para ativá-lo pela primeira vez, obtenha os dispositivos por meio da API [Obter dispositivos](/developers/pt/reference/integrations_api/_point_integration-api_devices/get). Essa chamada retornará uma lista de dispositivos associados à sua conta do Mercado Pago. Você pode identificar o dispositivo Point desejado pelos últimos caracteres do campo `id`, que devem corresponder ao número de série exibido na etiqueta traseira do dispositivo.
 
-Em seguida, faça uma solicitação PATCH para o endpoint [Alterar modo de operação](/developers/pt/reference/integrations_api/_point_integration-api_devices_device-id/patch), substituindo `device.id` pelo valor obtido nesse campo a partir da resposta à solicitação GET anterior.
+Em seguida, faça uma solicitação PATCH para o endpoint [Alterar modo de operação](/developers/pt/reference/integrations_api/_point_integration-api_devices_device-id/patch), substituindo `device-id` pelo valor obtido nesse campo a partir da resposta à solicitação GET anterior.
 
 ``` curl
 curl -X PATCH \

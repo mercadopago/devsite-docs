@@ -42,7 +42,7 @@ To integrate the Point device with our API, it is necessary to activate the Poin
 
 To activate it for the first time, retrieve the devices through the API [Get devices](/developers/en/reference/integrations_api/_point_integration-api_devices/get). This call will return a list of devices associated with your Mercado Pago account. You can identify the desired Point device by the last characters of the `id` field, which should match the serial number displayed on the back label of the device.
 
-Then, make a PATCH request to the endpoint [Change operating mode](/developers/en/reference/integrations_api/_point_integration-api_devices_device-id/patch), replacing `device.id` with the value obtained in that field from the response to the previous GET request.
+Then, make a PATCH request to the endpoint [Change operating mode](/developers/en/reference/integrations_api/_point_integration-api_devices_device-id/patch), replacing `device-id` with the value obtained in that field from the response to the previous GET request.
 
 ``` curl
 curl -X PATCH \
