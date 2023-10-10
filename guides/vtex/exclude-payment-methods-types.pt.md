@@ -1,8 +1,15 @@
-# Tipos e métodos de pagamentos
+# Excluir tipos e métodos de pagamento
 
-Ao [cadastrar as afiliações de gateway](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/vtex/gateway-affiliations), você poderá indicar os métodos e tipos de pagamento que deseja excluir, preenchendo os campos `Métodos de pagamento excluídos` e`Tipos de pagamento excluídos`, respectivamente.
+Quando você cria sua afiliação de Gateway MercadoPagoV2, pode indicar métodos e tipos de pagamento que deseja excluir. Basta digitá-los um a um no campo correspondente, separando-os por uma vírgula (,). 
 
-Este documento contém os métodos e tipos de pagamento disponíveis para sua integração.
+Com **Métodos de pagamento excluídos**, nos referimos aos meios individuais ou marcas de cartão pelos quais você não deseja receber pagamentos. No caso dos cartões, trata-se especificamente das marcas (Visa, Amex, MasterCard) e não das instituições emissoras desses cartões. 
+
+**Tipos de pagamento excluídos**, por outro lado, referem-se a se você prefere excluir tickets, cartões de crédito ou débito como um todo. 
+
+Essa exclusão de tipos e meios de pagamento configurada na VTEX funcionará apenas para os pagamentos oferecidos com o Checkout Pro e você pode modificá-la quantas vezes considerar necessário. 
+
+Na tabela a seguir, você encontrará a nomenclatura que cada tipo e método de pagamento recebe no VTEX, para que possa usá-la caso queira excluir algum na sua integração com o Checkout Pro.
+
 
 ----[mla]----
 
