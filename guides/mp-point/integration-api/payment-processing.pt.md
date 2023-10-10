@@ -54,7 +54,6 @@ Você receberá uma resposta como esta:
 
 ```
 
-
 ## Criar intenção de pagamento
 Uma intenção de pagamento é uma chamada que contém os detalhes da transação a ser realizada, e que deve ser criada para inciar um pagamento. Esta é uma tentativa que, se bem-sucedida, retornará um `id` do pagamento e seu `status`.
 
@@ -96,7 +95,6 @@ Em resposta, você receberá algo semelhante a isso:
 }
 ```
 ------------
-
 ----[mlb]----
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents' \
@@ -144,7 +142,6 @@ Em resposta, você receberá algo semelhante a isso:
 }
 ```
 ------------
-
 ----[mlm]----
 
 ```curl
@@ -193,7 +190,6 @@ Tenha em mente que as intenções de pagamento são a base para o processamento 
 >
 > Você pode usar o [Simulador Point](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/point-simulator) para testar sua integração e a criação de intenções de pagamento com segurança.
 
-
 ## Processar intenção de pagamento
 
 Uma vez que a intenção de pagamento é criada, você pode obtê-la de seu dispositivo Point pressionando a tecla para iniciar o pagamento (no caso de Point Plus e Point Pro 2 o **botão verde** e, no caso de Point Smart, o **botão digital “Charge now”**) e continuar com as etapas mostradas em tela para concluir o pagamento.
@@ -202,8 +198,7 @@ Uma vez que a intenção de pagamento é criada, você pode obtê-la de seu disp
 >
 > Importante
 >
-> Recomendamos avaliar a [qualidade de sua integração](/developers/pt/docs/checkout-api/additional-content/integration-quality) para verificar se você está cumprindo os padrões de qualidade e segurança do Mercado Pago que podem melhorar sua taxa de aprovação de pagamentos.
-
+> Recomendamos avaliar a [qualidade de sua integração](/developers/pt/docs/mp-point/how-tos/integration-quality) para verificar se você está cumprindo os padrões de qualidade e segurança do Mercado Pago que podem melhorar sua taxa de aprovação de pagamentos.
 
 ## Verificar status da intenção de pagamento
 
@@ -211,13 +206,11 @@ Se você deseja saber o status de uma intenção de pagamento específica, você
 
 Lembre-se que o `id` e status da intenção de pagamento são diferentes do `id` e status do pagamento. Neste caso, trata-se de consultar os detalhes de uma tentativa. Você pode consultar todas as informações correspondentes ao pagamento na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) de Referência da API.
 
-
 > WARNING
 >
 > Importante
 >
 > O principal mecanismo recomendado para saber o resultado de uma intenção de pagamento é a assinatura de [notificações de integrações](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications). Aconselhamos usar o endpoint aqui presente apenas como um mecanismo alternativo.
-
 
 ``` curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/payment-intents/:paymentIntentID' \
@@ -245,7 +238,6 @@ A resposta será semelhante a isso:
 }
 ```
 ------------
-
 ----[mla]----
 
 ``` json
@@ -263,7 +255,6 @@ A resposta será semelhante a isso:
 }
 ```
 ------------
-
 ----[mlm]----
 
 [[[
@@ -298,13 +289,11 @@ Se, por outro lado, se você deseja consultar uma **lista de intenções de paga
 
 Este chamado também pode ser útil caso você não saiba o `payment_intent_id` de uma intenção de pagamento específica.
 
-
 ## Cancelar uma intenção de pagamento
 
 Se desejar, você pode cancelar uma intenção de pagamento atribuída a um dispositivo Point. Para isso, você tem duas opções:
 
 * Se o estado da intenção for `opened` e ainda não tiver sido enviada para o terminal, você pode [cancelá-la via API](/developers/pt/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) fazendo a seguinte chamada:
-
 
 ``` curl
 curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents/:paymentIntentId' \
