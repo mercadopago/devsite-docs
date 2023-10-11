@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: Wix
  - message: Wix is a platform that allows you to create, design, manage and develop an online store that allows you to process payments through Mercado Pago.
- - media_video: https://www.youtube.com/embed/-jrqLcUug-0
+ - media_image: /wix/wix-landing.png
 ---
 
 --- mini_landing_separator ---

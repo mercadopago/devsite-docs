@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: Wix
  - message: Wix é uma plataforma que permite criar, projetar, gerenciar e desenvolver uma loja online que permite processar pagamentos através do Mercado Pago.
- - media_video: https://www.youtube.com/embed/-jrqLcUug-0
+ - media_image: /wix/wix-landing.png
 ---
 
 --- mini_landing_separator ---
