@@ -4,7 +4,7 @@ You can create an order to associate it with the payment preference and get the 
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const merchantOrder = new MerchantOrder(client);
 const item = {
    id: 'item id',
@@ -42,7 +42,7 @@ You can find all information for orders created through specific filters or by a
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: '' });
+const client = new MercadoPagoConfig({ accessToken: '' });
 
 const merchantOrder = new MerchantOrder(client);
 
@@ -60,7 +60,7 @@ You can get all payment information for a product or service with the order ID o
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 
 const merchantOrder = new MerchantOrder(client);
 
@@ -76,7 +76,7 @@ You can update the details of a payment by indicating the order ID and submittin
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const merchantOrder = new MerchantOrder(client);
 
 const updateRequest = {

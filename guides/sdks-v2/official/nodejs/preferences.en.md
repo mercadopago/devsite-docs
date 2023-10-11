@@ -4,7 +4,7 @@ It is possible to create Preferences using the SDK below. For details on request
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 
 const preference = new Preference(client);
 
@@ -48,7 +48,7 @@ You can find all the preferences information generated through specific filters 
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 
 const preference = new Preference(client);
 
@@ -68,7 +68,7 @@ You can get all payment information for a product or service with the desired pr
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 const preference = new Preference(client);
 
 preference.get({ preferenceId: '123456789' })
@@ -83,7 +83,7 @@ You can update the details of a payment preference using the preference ID. For 
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 
 const preference = new Preference(client);
 

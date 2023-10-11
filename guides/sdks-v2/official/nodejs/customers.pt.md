@@ -4,7 +4,7 @@
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
 const body = {
@@ -44,7 +44,7 @@ customerClient.create({ body })
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
 customerClient.search({ email: 'john.doe@example.com' })
@@ -59,7 +59,7 @@ customerClient.search({ email: 'john.doe@example.com' })
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
 customerClient.get('247711297-jxOV430go9fx2e')
@@ -75,7 +75,7 @@ customerClient.get('247711297-jxOV430go9fx2e')
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
 const customerRequest = {

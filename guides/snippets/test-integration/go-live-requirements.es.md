@@ -2,7 +2,7 @@
 
 Cuando tengas lista tu integración y quieras comenzar a recibir pagos, [activa las credenciales]([FAKER][CREDENTIALS][URL]) de producción y reemplaza las de prueba si hace falta.
 
-Además, deberás evaluar la [calidad de tu integración](/developers/es/docs/checkout-api/additional-content/integration-quality) para verificar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago.
+Además, deberás evaluar la [calidad de tu integración](/developers/es/guides/additional-content/homologator/homologator) para verificar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago.
 
 ## No te olvides de contar con un certificado SSL 
 
@@ -26,6 +26,6 @@ La opción de pago por Pix solo se mostrará si existe una Clave de Pix registra
 
 Te compartimos algunos puntos a tener en cuenta para elevar la calidad de tus integraciones:
 
-+ Mejora la [aprobación del pago](/developers/es/guides/additional-content/how-tos/improve-approval) enviando información del ítem y del pagador, datos de envío e información de industria.
-+ Mantén actualizado el estado de las órdenes en tus sistemas usando y procesando de forma correcta las notificaciones [IPN](/developers/es/guides/additional-content/your-integrations/notifications/ipn) o [Webhooks](/developers/es/guides/additional-content/your-integrations/notifications/webhooks).
++ Mejora la [aprobación del pago](/developers/es/guides/additional-content/how-tos/payment-rejections) enviando información del ítem y del pagador, datos de envío e información de industria.
++ Mantén actualizado el estado de las órdenes en tus sistemas usando y procesando de forma correcta las notificaciones [IPN](/developers/es/guides/additional-content/your-integrations/ipn) o [Webhooks](/developers/es/guides/additional-content/your-integrations/webhooks).
 + Consume reportes de conciliación vía API para mejorar la gestión financiera del negocio.

@@ -4,7 +4,7 @@ El [Point Smart](/developers/es/docs/mp-point/landing) es un dispositivo de pago
 
 <center>
 
-![introduction](/main-apps/introduction.png)
+![introduction](/main-apps/introduction-all.png)
 
 </center>
 

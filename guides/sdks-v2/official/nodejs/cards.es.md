@@ -4,7 +4,7 @@ Es posible guardar de forma segura la referencia a una tarjeta utilizada por el 
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new CustomerCard(client);
 
 const body = {
@@ -23,7 +23,7 @@ Es posible obtener los datos de la tarjeta de un determinado cliente a través d
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new CustomerCard(client);
 
 customerClient.list({ customerId: '448870796-7ZjwhKGxILixxN' })
@@ -38,7 +38,7 @@ Puede consultar la información de referencia de una tarjeta almacenada asociada
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new CustomerCard(client);
 
 customerClient.get({ customerId: '448870796-7ZjwhKGxILixxN', cardId : '8987269652' })
@@ -54,7 +54,7 @@ Puede eliminar una tarjeta asociada con el cliente siempre que sea necesario uti
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new CustomerCard(client);
 
 customerClient.delete({ customerId: '448870796-7ZjwhKGxILixxN', cardId : '8987269652' })

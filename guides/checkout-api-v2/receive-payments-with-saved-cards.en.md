@@ -20,7 +20,7 @@ The first step is to display the list of saved cards to the buyer so that they c
 ?>
 ```
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
 customerClient.listCards({ customerId: '123' })
@@ -208,7 +208,7 @@ Once the token is obtained, it is necessary to create the payment with the corre
 ?>
 ```
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
 customerClient.listCards({ customerId: '123' })

@@ -33,9 +33,9 @@ To cancel a reserve, use one of our available codes below.
 ?>
 ```
 ```node
-import MercadoPago, { Payments } from 'mercadopago';
+import { MercadoPagoConfig, Payments } from 'mercadopago';
 
-const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 const payments = new Payments(client);
 
 const paymentId = '123';

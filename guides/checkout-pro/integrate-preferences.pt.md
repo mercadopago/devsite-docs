@@ -4,6 +4,16 @@ A integração com o Checkout Pro permite realizar cobranças através do nosso 
 
 Nesta documentação você encontra todos os passos necessários para integrar o Checkout Pro através dos **nossos SDKs**. Para isso, siga as etapas descritas abaixo.
 
+---
+live_demo_code_action:
+ - title: Experimente nosso Checkout Pro
+ - description: Construa a experiência visual do Checkout Pro em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado para adicionar no seu site ou compartilhar com um desenvolvedor.
+ - link: /developers/pt/live-demo/checkout-pro
+ - image:https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2023/9/6/1696615115358-Group34359.png
+ - linkName: Demo
+ - buttonDescription: Construir seu Checkout Pro
+---
+
 > SERVER_SIDE
 >
 > h2
@@ -84,9 +94,9 @@ MercadoPagoConfig::setAccessToken("PROD_ACCESS_TOKEN");
 ```
 ```node
 // SDK do Mercado Pago
-import MercadoPago from 'mercadopago';
+import { MercadoPagoConfig } from 'MercadoPago';
 // Adicione as credenciais
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 ```
 ```java
 // SDK de Mercado Pago

@@ -18,7 +18,7 @@ To create a customer and card, use one of the codes below.
 ?>
 ```
 ```node
-const client = new MercadoPago({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 
 
 const customerClient = new Customer(client);

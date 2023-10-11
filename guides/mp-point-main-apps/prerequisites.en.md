@@ -16,7 +16,7 @@ To ensure that the integration is successful, consider the machine's characteris
 
 <center>
 
-![prerequisites](/main-apps/prerequisites.png)
+![prerequisites](/main-apps/prerequisites-all.png)
 
 </center>
 

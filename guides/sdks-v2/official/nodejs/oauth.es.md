@@ -4,7 +4,7 @@ Puedes crear el token necesario para operar tu aplicación en nombre de un prove
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } }); 
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } }); 
 
 const oauth = new OAuth(client);
 
@@ -24,7 +24,7 @@ Puedes actualizar el token necesario para operar tu aplicación en nombre de un 
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token', options: { timeout: 5000 } });
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 
 const oauth = new OAuth(client);
 

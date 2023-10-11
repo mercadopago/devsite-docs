@@ -32,21 +32,21 @@ paths:
             example: sandbox
         - name: store_id
           in: query
-          description: Devices Store Id filter (Optional)
+          description: Store identifier. (Optional)
           x-description-i18n:
-            eng: Devices Store Id filter (Optional)
-            spa: Filtro de Id de tienda de dispositivos (opcional)
-            por: Filtro de ID de loja de dispositivos (opcional)
+            eng: Store identifier. (Optional)
+            spa: Identificador de la tienda. (opcional)
+            por: Identificador da loja. (opcional)
           schema:
             type: string
             example: "1235456678"
         - name: pos_id
           in: query
-          description: Devices Pos Id filter (Optional)
+          description: POS identifier. (Optional)
           x-description-i18n:
             eng: Devices Pos Id filter (Optional)
-            spa: Filtro de Id de PDV de dispositivos (opcional)
-            por: Filtro de ID de PDV de dispositivos (opcional)
+            spa: Identificador del PDV. (Opcional)
+            por: Identificador do PDV. (Opcional)
           schema:
             type: integer
             example: 1235456678
@@ -109,7 +109,7 @@ paths:
                           type: string
                           description: Store identifier.
                           x-description-i18n:
-                            eng: STORE identifier.
+                            eng: Store identifier.
                             spa: Identificador de la tienda.
                             por: Identificador da loja.
                           example: 47792478

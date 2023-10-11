@@ -5,7 +5,7 @@
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new CustomerCard(client);
 
 const body = {
@@ -24,7 +24,7 @@ customerClient.create({ customerId: '448870796-7ZjwhKGxILixxN', customerCardBody
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new CustomerCard(client);
 
 customerClient.list({ customerId: '448870796-7ZjwhKGxILixxN' })
@@ -39,7 +39,7 @@ customerClient.list({ customerId: '448870796-7ZjwhKGxILixxN' })
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new CustomerCard(client);
 
 customerClient.get({ customerId: '448870796-7ZjwhKGxILixxN', cardId : '8987269652' })
@@ -54,7 +54,7 @@ customerClient.get({ customerId: '448870796-7ZjwhKGxILixxN', cardId : '898726965
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new CustomerCard(client);
 
 customerClient.delete({ customerId: '448870796-7ZjwhKGxILixxN', cardId : '8987269652' })

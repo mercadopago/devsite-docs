@@ -5,7 +5,7 @@ Puede crear un pedido para asociarlo con la preferencia de pago y obtener la URL
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const merchantOrder = new MerchantOrder(client);
 const item = {
    id: 'item id',
@@ -42,7 +42,7 @@ Puede encontrar toda la información de los pedidos creados a través de filtros
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: '' });
+const client = new MercadoPagoConfig({ accessToken: '' });
 
 const merchantOrder = new MerchantOrder(client);
 
@@ -60,7 +60,7 @@ Puede obtener toda la información de pago de un producto o servicio con el ID d
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 
 const merchantOrder = new MerchantOrder(client);
 
@@ -76,7 +76,7 @@ Puede actualizar los detalles de un pago indicando el ID del pedido y enviando l
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const merchantOrder = new MerchantOrder(client);
 
 const updateRequest = {

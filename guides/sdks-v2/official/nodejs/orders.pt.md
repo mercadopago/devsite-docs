@@ -4,7 +4,7 @@
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const merchantOrder = new MerchantOrder(client);
 const item = {
    id: 'item id',
@@ -42,7 +42,7 @@ merchantOrder.create(createRequest)
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: '' });
+const client = new MercadoPagoConfig({ accessToken: '' });
 
 const merchantOrder = new MerchantOrder(client);
 
@@ -60,7 +60,7 @@ merchantOrder.search({
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 
 const merchantOrder = new MerchantOrder(client);
 
@@ -76,7 +76,7 @@ merchantOrder.get('123456789')
 
 [[[
 ```node
-const client = new MercadoPago({ accessToken: 'access_token' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const merchantOrder = new MerchantOrder(client);
 
 const updateRequest = {
