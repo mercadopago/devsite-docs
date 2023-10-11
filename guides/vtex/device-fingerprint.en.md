@@ -1,4 +1,4 @@
-# Fingerprint configuration
+# Configure Device Fingerprint 
 
 **Mercado Pago** has its own fraud prevention tools, and Device Fingerprint is one of them. It is a unique identifier for the device used by the buyer when making a purchase. Device Fingerprint works in payment processing to enhance fraud risk analysis for each transaction. 
 

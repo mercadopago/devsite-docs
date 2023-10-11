@@ -1,4 +1,4 @@
-# Migrate the gateway version
+# Migrate the gateway affiliation version
 
 If you already registered a MercadoPagoV1 gateway affiliation, you should be aware that it will be discontinued soon.
 

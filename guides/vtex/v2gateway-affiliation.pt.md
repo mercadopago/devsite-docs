@@ -1,4 +1,4 @@
-# Criação de afiliação de gateway MercadoPagoV2 
+# Criar afiliação de gateway MercadoPagoV2 
 
 Uma afiliação de gateway é um conjunto de configurações que representam o processamento dos seus pagamentos, neste caso, com o Mercado Pago. 
 
