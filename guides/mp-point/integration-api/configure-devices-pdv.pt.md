@@ -5,7 +5,7 @@
 > Importante
 >
 Antes de iniciar a configuração do dispositivo Point em modo Ponto de Venda, é necessário acessar sua conta no Mercado Pago e criar um [aplicativo](/developers/pt/docs/mp-point/additional-content/your-integrations/dashboard), selecionando **PointdeMercadoPago** como o produto a ser integrado. Não se esqueça também de verificar suas [credenciais de produção](/developers/pt/docs/mp-point/additional-content/your-integrations/credentials), para assegurar a gestão adequada da integração.
->
+> <br><br>
 > Além disso, lembre-se de acessar suas [credenciais de produção](/developers/pt/docs/mp-point/additional-content/your-integrations/credentials) para gerenciar corretamente sua integração.
 
 Para iniciar sua integração com o Mercado Pago Point via API, você deve configurar seu dispositivo no modo Ponto de Venda. Para fazer isso, siga as etapas abaixo.
@@ -26,10 +26,6 @@ Para vincular seu dispositivo Point à sua conta Mercado Pago, é necessário te
 
 Abra o aplicativo e faça login usando seu nome de usuário e senha. Em seguida, toque no ícone de QR code e escaneie o código exibido ao ligar o dispositivo Point. Ao fazer isso, você estará vinculando o dispositivo à sua conta de maneira prática e segura.
 
-> NOTE
->
-> Nota
->
 > Se você for operar em nome de outros vendedores, poderá gerenciar a vinculação com segurança, integrando [OAuth](/developers/pt/docs/mp-point/additional-content/security/oauth/introduction).
 
 ## Configurar loja e PDV
@@ -38,10 +34,6 @@ Depois de vincular seu dispositivo Point à sua conta do Mercado Pago e ter cria
 
 Para fazer isso, você pode acessar o [site do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/stores) e ir para **Seu negócio > Lojas e registros**.
 
-> NOTE
->
-> Nota
->
 > Uma vez que o dispositivo Point esteja vinculado, é possível configurar sua loja e o PDV diretamente por ele. O dispositivo exibirá orientações passo a passo caso opte por essa configuração.
 
 ## Ativar modo PDV no dispositivo Point
@@ -50,12 +42,12 @@ Para integrar o dispositivo Point com nossa API, é necessário ativar o modo Po
 
 Para ativá-lo pela primeira vez, obtenha os dispositivos por meio da API [Obter dispositivos](/developers/pt/reference/integrations_api/_point_integration-api_devices/get). Essa chamada retornará uma lista de dispositivos associados à sua conta do Mercado Pago. Você pode identificar o dispositivo Point desejado pelos últimos caracteres do campo `id`, que devem corresponder ao número de série exibido na etiqueta traseira do dispositivo.
 
-Em seguida, faça uma solicitação PATCH para o endpoint [Alterar modo de operação](/developers/pt/reference/integrations_api/_point_integration-api_devices_device-id/patch), substituindo `device.id` pelo valor obtido nesse campo a partir da resposta à solicitação GET anterior.
+Em seguida, faça uma solicitação PATCH para o endpoint [Alterar modo de operação](/developers/pt/reference/integrations_api/_point_integration-api_devices_device-id/patch), substituindo `device-id` pelo valor obtido nesse campo a partir da resposta à solicitação GET anterior.
 
 ``` curl
 curl -X PATCH \
       'https://api.mercadopago.com/point/integration-api/devices/{device-id}' \
-       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN \
+       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
        -H 'Content-Type: application/json' \ 
       -d '{
   "operating_mode": "PDV"
@@ -80,8 +72,4 @@ Por fim, você precisará reiniciar seu dispositivo para que a alteração no mo
 
 Caso você precise usar o dispositivo no modo não integrado, você deve configurar o campo `operating_mode` com o valor `STANDALONE`.
 
-> NOTE
->
-> Nota
->
 > Se você já ativou o modo Ponto de Venda em um dispositivo via API e, por algum motivo, precisa reconfigurá-lo, você pode fazer isso diretamente no dispositivo, não sendo necessário recorrer à API novamente.
