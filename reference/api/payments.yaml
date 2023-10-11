@@ -3145,6 +3145,28 @@ paths:
           schema:
             type: string
             example: NOW
+        - name: store_id
+          in: query
+          description: Parameter used to filter the payment search by store identifier.
+          x-description-i18n:
+            eng: Parameter used to filter the payment search by store identifier.
+            spa: Parámetro utilizado para filtrar la búsqueda de pagos por el identificador de la tienda.
+            por: Parâmetro utilizado para filtrar a busca de pagamentos pelo identificador da loja.
+          required: false
+          schema:
+            type: string
+            example: 47792478
+        - name: pos_id
+          in: query
+          description: Parameter used to filter the payment search by POS identifier.
+          x-description-i18n:
+            eng: Parameter used to filter the payment search by POS identifier.
+            spa: Parámetro utilizado para filtrar la búsqueda de pagos por el identificador del PDV.
+            por: Parâmetro utilizado para filtrar a busca de pagamentos pelo identificador do PDV.
+          required: false
+          schema:
+            type: string
+            example: 58930090
       responses:
         "200":
           description: Success
