@@ -811,7 +811,7 @@ paths:
                     x-description-i18n:
                       eng: Point of Sale (POS) digital identifier. They are physical points of sale that use a card machine for sales.
                       spa: Identificador digital de Punto de Venta (PDV). Son puntos de venta físicos que utilizan una máquina de tarjetas para la venta.
-                      por: Identificador digital do ponto de vendas(Point of Sale - POS). São pontos de vendas físicos que utilizam maquininha de cartão para vendas.
+                      por: Identificador digital do ponto de vendas (PDV). São pontos de vendas físicos que utilizam maquininha de cartão para vendas.
                   store_id:
                     type: string
                     format: nullable
@@ -2389,16 +2389,16 @@ paths:
                     description: Digital identifier of the point of sale (Point of Sale - POS / machine). They are physical points of sale that use a card machine for sales.
                     x-description-i18n:
                       eng: Digital identifier of the point of sale (Point of Sale - POS / machine). They are physical points of sale that use a card machine for sales.
-                      spa: Identificador digital del punto de venta (Punto de Venta - POS / máquina). Son puntos de venta físicos que utilizan una máquina de tarjetas para la venta.
-                      por: Identificador digital do ponto de vendas(Point of Sale - POS / maquininha). São pontos de vendas físicos que utilizam maquininha de cartão para vendas.
+                      spa: Identificador digital del punto de venta (Punto de Venta - PDV / máquina). Son puntos de venta físicos que utilizan una máquina de tarjetas para la venta.
+                      por: Identificador digital do ponto de vendas (Ponto de Venda - PDV / maquininha). São pontos de vendas físicos que utilizam maquininha de cartão para vendas.
                   store_id:
                     type: string
                     format: nullable
                     description: Store identifier to which the point of sale belongs.
                     x-description-i18n:
                       eng: Store identifier to which the point of sale belongs.
-                      spa: Identificador de la sucursal a la que pertenece el Punto de Venta
-                      por: Identificador da loja à qual o caixa pertence
+                      spa: Identificador de la sucursal a la que pertenece el punto de venta (PDV).
+                      por: Identificador da loja à qual o caixa (PDV) pertence.
                   collector_id:
                     type: number
                     example: 448876418
@@ -3147,22 +3147,22 @@ paths:
             example: NOW
         - name: store_id
           in: query
-          description: Parameter used to filter the payment search by store identifier.
+          description: Parameter used to filter the payment search by the identifier of the store to which the POS (Point of Sale) belongs.
           x-description-i18n:
-            eng: Parameter used to filter the payment search by store identifier.
-            spa: Parámetro utilizado para filtrar la búsqueda de pagos por el identificador de la tienda.
-            por: Parâmetro utilizado para filtrar a busca de pagamentos pelo identificador da loja.
+            eng: Parameter used to filter the payment search by the identifier of the store to which the POS (Point of Sale) belongs.
+            spa: Parámetro utilizado para filtrar la búsqueda de pagos por el identificador de la sucursal a la que pertenece el PDV (Punto de Venta).
+            por: Parâmetro utilizado para filtrar a busca de pagamentos pelo identificador da loja à qual pertence o PDV (Ponto de Venda).
           required: false
           schema:
             type: string
             example: 47792478
         - name: pos_id
           in: query
-          description: Parameter used to filter the payment search by POS identifier.
+          description: Parameter used to filter the payment search by POS identifier, physical points of sale that use a card machine for sales.
           x-description-i18n:
-            eng: Parameter used to filter the payment search by POS identifier.
-            spa: Parámetro utilizado para filtrar la búsqueda de pagos por el identificador del PDV.
-            por: Parâmetro utilizado para filtrar a busca de pagamentos pelo identificador do PDV.
+            eng: Parameter used to filter the payment search by POS identifier, physical points of sale that use a card machine for sales.
+            spa: Parámetro utilizado para filtrar la búsqueda de pagos por el identificador del PDV, puntos de venta físicos que utilizan una máquina de tarjetas para la venta.
+            por: Parâmetro utilizado para filtrar a busca de pagamentos pelo identificador do PDV, pontos de vendas físicos que utilizam maquininha de cartão para vendas.
           required: false
           schema:
             type: string
