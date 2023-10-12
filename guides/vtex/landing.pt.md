@@ -2,7 +2,7 @@
 content_section_with_media:
  - title: VTEX
  - message: VTEX é uma plataforma de e-commerce para lojas virtuais que oferece a possibilidade de realizar pagamentos através do Mercado Pago.
- - media_image:  
+ - media_image: /vtex/vtex-landing.png
 ---
 
 --- mini_landing_separator ---
@@ -18,7 +18,7 @@ bullet_section_with_media:
  - title: Receba pagamentos com Checkout Pro
  - type: normal
  - message: Ao integrar o Checkout Pro em sua loja VTEX, você pode redirecionar seus compradores para uma página do Mercado Pago para completar o pagamento e ter todas as funcionalidades previamente configuradas em sua conta.  
- - image:  
+ - image: /shopify/mini-landing-1.png 
 ---
 
 ----[mlb]----
@@ -28,7 +28,7 @@ bullet_section_with_media:
  - title: Personalize seus pagamentos com Checkout Transparente 
  - type: reversed
  - message: Se você integrar o Checkout Transparente, você pode fazer com que o comprador complete todo o processo de compra dentro do ambiente de sua loja VTEX. 
- - image:  
+ - image: /shopify/mini-landing-4.png 
 ---
 ------------
 
@@ -39,7 +39,7 @@ bullet_section_with_media:
  - title: Personalize seus pagamentos com Checkout API
  - type: reversed
  - message: Se você integrar o Checkout API, você pode fazer com que o comprador complete todo o processo de compra dentro do ambiente de sua loja VTEX. 
- - image: 
+ - image: /shopify/mini-landing-4.png
 ---
 ------------
 

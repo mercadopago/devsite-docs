@@ -5,9 +5,9 @@ Para configurar o Checkout Pro, acesse o painel de administração da sua plataf
 1.  Clique no botão "+ (Adicionar novo plano de pagamento para...)". 
 2. Dentro da categoria **Outro**, procure por **MercadoPagoPro**.
 3. Preencha os campos exibidos na próxima tela: 
- * Digite o **Nome da regra**, que permitirá identificar esse meio de pagamento. 
- * Em **Processo com a afiliação**, selecione **MercadoPagoV2**. 
- * Ative a condição de pagamento no campo **Status**, usando o botão deslizante. 
+    * Digite o **Nome da regra**, que permitirá identificar esse meio de pagamento. 
+    * Em **Processo com a afiliação**, selecione **MercadoPagoV2**. 
+    * Ative a condição de pagamento no campo **Status**, usando o botão deslizante. 
 
 4. Clique em **Salvar** para ativar a configuração.
 

@@ -10,9 +10,9 @@ Para configurar Financiación vía Pix en hasta 12 veces en el checkout de la ti
 1. Haz clic en el botón "+ (Agregar nuevo plan de pago para ...)”. 
 2. Dentro de la categoría **Otro**, busca por **Buy now, pay later Mercado Pago** y selecciona esa opción.
 3. Completa los campos que te mostrará la pantalla siguiente: 
- * Escribe el **Nombre de la Regla**, que te permitirá identificar este medio de pago.
- * En **Proceso con la afiliación**, selecciona **MercadoPagoV2**. 
- * Activa la condición de pago desde el campo **Status**, utilizando el botón slider. 
+    * Escribe el **Nombre de la Regla**, que te permitirá identificar este medio de pago.
+    * En **Proceso con la afiliación**, selecciona **MercadoPagoV2**. 
+    * Activa la condición de pago desde el campo **Status**, utilizando el botón slider. 
 
 4. Haz clic en **Guardar** para activar la configuración.
 
@@ -31,15 +31,15 @@ Para configurar Hasta 12 cuotas sin tarjeta con Mercado Pago en el checkout de l
 1. Haz clic en el botón "+ (Agregar nuevo plan de pago para ...)”. 
 2. Dentro de la categoría **Otro**, busca por **Buy now, pay later Mercado Pago** y selecciona esa opción.
 3. Completa los campos que te mostrará la pantalla siguiente: 
- * Escribe el **Nombre de la Regla**, que te permitirá identificar este medio de pago.
- * En **Proceso con la afiliación**, selecciona **MercadoPagoV2**. 
- * Activa la condición de pago desde el campo **Status**, utilizando el botón slider. 
+    * Escribe el **Nombre de la Regla**, que te permitirá identificar este medio de pago.
+    * En **Proceso con la afiliación**, selecciona **MercadoPagoV2**. 
+    * Activa la condición de pago desde el campo **Status**, utilizando el botón slider. 
 
 4. Haz clic en **Guardar** para activar la configuración.
 
 ------------
 
----[mlm]----
+----[mlm]----
 # Hasta 12 veces sin tarjeta con Mercado Pago
 
 Hasta 12 veces sin tarjeta con Mercado Pago es el método de financiación de Mercado Pago que ofrece la opción de pagar en mensualidades sin contar con una tarjeta. 
@@ -51,9 +51,9 @@ Para configurar Hasta 12 veces sin tarjeta con Mercado Pago en el checkout de la
 1. Haz clic en el botón "+ (Agregar nuevo plan de pago para ...)”. 
 2. Dentro de la categoría **Otro**, busca por **Buy now, pay later Mercado Pago** y selecciona esa opción.
 3. Completa los campos que te mostrará la pantalla siguiente: 
- * Escribe el **Nombre de la Regla**, que te permitirá identificar este medio de pago.
- * En **Proceso con la afiliación**, selecciona **MercadoPagoV2**. 
- * Activa la condición de pago desde el campo **Status**, utilizando el botón slider. 
+    * Escribe el **Nombre de la Regla**, que te permitirá identificar este medio de pago.
+    * En **Proceso con la afiliación**, selecciona **MercadoPagoV2**. 
+    * Activa la condición de pago desde el campo **Status**, utilizando el botón slider. 
 
 4. Haz clic en **Guardar** para activar la configuración.
 

@@ -11,7 +11,7 @@ Eventually, the support team may request that you check and/or send logs to trac
 |---|---|---|
 |`ID`|10302316|Mercado Pago transaction number.|
 |`Payment_method_id`|visa|Payment method.|
-|`Payment_type_id`|credit_card|MPayment method.|
+|`Payment_type_id`|credit_card|Payment method.|
 |`Status`|authorized|Payment status. When the `status` is rejected, it is very important to review the `status_detail` that specifies the reason for it. |
 |`Status_detail`|pending_capture|Payment status detail.|
 |`External_reference`|503451|VTEX identifier sent to Mercado Pago.|

@@ -47,9 +47,9 @@ To configure these payment methods, access the administration panel of your VTEX
 1. Click on the "+ (Add new payment plan for...)" button. 
 2. Within the **Other** category, search for the offline payment method you want to offer.
 3. Fill in the fields displayed on the next screen: 
- * Enter the **Rule name**, which will allow you to identify this payment method. 
- * In **Process with affiliation**, select **MercadoPagoV2**. 
- * Activate the payment condition in the **Status** field using the sliding button. 
+    * Enter the **Rule name**, which will allow you to identify this payment method. 
+    * In **Process with affiliation**, select **MercadoPagoV2**. 
+    * Activate the payment condition in the **Status** field using the sliding button. 
 4. Click **Save** to activate the configuration.
 
 ![Configure payment conditions](/images/vtex/paymentconditions-imagenv2-en.gif)

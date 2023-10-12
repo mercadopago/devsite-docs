@@ -2,15 +2,15 @@
 
 Ao configurar a ----[mla, mlu, mlc, mlm, mpe, mco]----Checkout API------------ ----[mlb]----Checkout Transparente------------ em lojas VTEX, você pode oferecer pagamentos com cartão de débito e/ou crédito. 
 
-Para configurar esses meios de pagamento, acesse o painel de administração da sua plataforma VTEX> **Pagamentos > Configuração > Planos de pagamento**. Logo, siga os passos abaixo: 
+Para configurar esses meios de pagamento, acesse o painel de administração da sua plataforma VTEX> **Pagamentos > Configuração > Condições de pagamento**. Logo, siga os passos abaixo: 
 
 1.  Clique no botão "+ (Adicionar novo plano de pagamento para...)". 
 2. Dentro das categorias **Cartão de débito** ou **Cartão de crédito**, você encontrará as diferentes marcas de cartão que pode oferecer. Clique nelas e configure cada uma individualmente para habilitá-las. Você pode obter mais informações sobre essa configuração na seção de [tutoriais da VTEX](https://help.vtex.com/pt/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros). 
 3. Após selecionar a marca do cartão que deseja oferecer, preencha os campos exibidos na próxima tela: 
- * Digite o **Nome da regra**, que permitirá identificar esse meio de pagamento. 
- * Em **Processo com a afiliação**, selecione **MercadoPagoV2**. 
- * Ative a condição de pagamento no campo **Status**, usando o botão deslizante. 
- * Para ativar o pagamento parcelado, selecione a opção **Automático**. Será oferecida a opção de financiamento previamente configurada na conta do vendedor do Mercado Pago. Consulte a seção "Parcelamento e juros" para obter mais informações.
+    * Digite o **Nome da regra**, que permitirá identificar esse meio de pagamento. 
+    * Em **Processo com a afiliação**, selecione **MercadoPagoV2**. 
+    * Ative a condição de pagamento no campo **Status**, usando o botão deslizante. 
+    * Para ativar o pagamento parcelado, selecione a opção **Automático**. Será oferecida a opção de financiamento previamente configurada na conta do vendedor do Mercado Pago. Consulte a seção "Parcelamento e juros" para obter mais informações.
 
 > NOTE
 >
