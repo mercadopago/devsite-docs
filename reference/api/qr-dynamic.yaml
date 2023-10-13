@@ -55,7 +55,7 @@ paths:
                     eng: Custom order ID you can synchronize with your sale system
                     spa: ID de pedido personalizado que puedes sincronizar con tu sistema de venta
                     por: ID de pedido personalizado que você pode sincronizar com seu sistema de venda
-                  example: 12345
+                  example: "reference_12345"
                 title:
                   type: string
                   description: Purchase title.
@@ -299,7 +299,7 @@ paths:
                     eng: Custom order ID you can synchronize with your sale system
                     spa: ID de pedido personalizado que puedes sincronizar con tu sistema de venta
                     por: ID de pedido personalizado que você pode sincronizar com seu sistema de venda
-                  example: 12345
+                  example: "reference_12345"
                 title:
                   type: string
                   description: Purchase title.

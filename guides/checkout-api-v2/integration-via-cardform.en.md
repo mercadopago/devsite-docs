@@ -4,12 +4,22 @@ The integration of card payments is done via cardform. In this integration mode,
 
 As the card data is entered, an automatic search takes place for the issuer information and available installments for that payment method. As a result, the implementation of the flow is transparent for those who perform the integration.
 
+----[mla, mlb, mlm, mpe, mlc]----
 > NOTE
 >
 > Important
 >
-> In addition to the options available in this documentation, it is also possible to integrate **card payments** using the **CardPayment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) documentation of CardPayment for more details. We also recommend adopting the 3DS 2.0 protocol to increase the likelihood of your payments being approved. For more information, please refer to the documentation on [How to integrate 3DS with Checkout API](https://www.mercadopago.com.br/developers/en/docs/checkout-api/how-tos/integrate-3ds).
+> In addition to the options available in this documentation, it is also possible to integrate **card payments** using the **CardPayment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) documentation of CardPayment for more details. We also recommend adopting the 3DS 2.0 protocol to increase the likelihood of your payments being approved. For more information, please refer to the documentation on [How to integrate 3DS with Checkout API.](/developers/en/docs/checkout-api/how-tos/integrate-3ds)
 
+------------
+----[mlu, mco]----
+> NOTE
+>
+> Important
+>
+> In addition to the options available in this documentation, it is also possible to integrate **card payments** using the **CardPayment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) documentation of CardPayment for more details.
+
+------------
 
 Check below the diagram that illustrates the card payment process using the Card Form.
 
@@ -61,7 +71,7 @@ The capture of card data is done through the CardForm of the MercadoPago.js libr
 
 > WARNING
 >
-> Important
+> Attention
 >
 > The cardtoken can **only be used once** and expires within **7 days**.
 
@@ -589,7 +599,7 @@ The response will show the following result
 
 > WARNING
 >
-> Importante
+> Attention
 >
 > When creating a payment it is possible to receive 3 different statuses: "Pending", "Rejected" and "Approved". To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-api/additional-content/your-integrations/notifications) for more details.
 
