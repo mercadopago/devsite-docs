@@ -15,8 +15,7 @@
           {
             "name": "id",
             "in": "path",
-            "description": "Store's Id",
-            "x-description-i18n": {
+            "description": {
               "eng": "Store's Id",
               "spa": "Store's Id",
               "por": "Store's Id"
@@ -259,8 +258,7 @@
           {
             "name": "user_id",
             "in": "path",
-            "description": "User Id",
-            "x-description-i18n": {
+            "description": {
               "eng": "User Id",
               "spa": "User Id",
               "por": "User Id"
@@ -280,8 +278,7 @@
                 "properties": {
                   "name": {
                     "type": "string",
-                    "description": "Store name.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Store name.",
                       "spa": "Nombre de la Sucursal",
                       "por": "Nome da loja"
@@ -334,8 +331,7 @@
                   },
                   "external_id": {
                     "type": "string",
-                    "description": "Unique identifier of the store defined by integrator system.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Unique identifier of the store defined by integrator system.",
                       "spa": "Identificador único de la Sucursal definido por el integrador",
                       "por": "Identificador único da loja definido pelo sistema integrador"
@@ -344,8 +340,7 @@
                   },
                   "location": {
                     "type": "object",
-                    "description": "Store location.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Store location.",
                       "spa": "Ubicación de la Sucursal",
                       "por": "Localização da Loja"
@@ -353,8 +348,7 @@
                     "properties": {
                       "street_number": {
                         "type": "string",
-                        "description": "Street number.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Street number.",
                           "spa": "Número",
                           "por": "O Número"
@@ -363,8 +357,7 @@
                       },
                       "street_name": {
                         "type": "string",
-                        "description": "Street name.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Street name.",
                           "spa": "Calle",
                           "por": "Rua"
@@ -373,8 +366,7 @@
                       },
                       "city_name": {
                         "type": "string",
-                        "description": "City.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "City.",
                           "spa": "Ciudad",
                           "por": "Cidade"
@@ -383,8 +375,7 @@
                       },
                       "state_name": {
                         "type": "string",
-                        "description": "State.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "State.",
                           "spa": "Provincia",
                           "por": "Província"
@@ -393,8 +384,7 @@
                       },
                       "latitude": {
                         "type": "number",
-                        "description": "Latitude.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Latitude.",
                           "spa": "Latitud",
                           "por": "Latitude"
@@ -403,8 +393,7 @@
                       },
                       "longitude": {
                         "type": "number",
-                        "description": "Longitude.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Longitude.",
                           "spa": "Longitud",
                           "por": "Longitude"
@@ -413,8 +402,7 @@
                       },
                       "reference": {
                         "type": "string",
-                        "description": "Reference.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Reference.",
                           "spa": "Referencia",
                           "por": "Referência"
@@ -747,8 +735,7 @@
           {
             "name": "user_id",
             "in": "path",
-            "description": "User Id",
-            "x-description-i18n": {
+            "description": {
               "eng": "User Id",
               "spa": "User Id",
               "por": "User Id"
@@ -762,8 +749,7 @@
           {
             "name": "external_id",
             "in": "query",
-            "description": "Unique identifier of the store defined by integrator system",
-            "x-description-i18n": {
+            "description": {
               "eng": "Unique identifier of the store defined by integrator system",
               "spa": "Unique identifier of the store defined by integrator system",
               "por": "Unique identifier of the store defined by integrator system"
@@ -1031,8 +1017,7 @@
           {
             "name": "user_id",
             "in": "path",
-            "description": "User Id",
-            "x-description-i18n": {
+            "description": {
               "eng": "User Id",
               "spa": "User Id",
               "por": "User Id"
@@ -1046,8 +1031,7 @@
           {
             "name": "id",
             "in": "path",
-            "description": "Store's Id",
-            "x-description-i18n": {
+            "description": {
               "eng": "Store's Id",
               "spa": "Store's Id",
               "por": "Store's Id"
@@ -1067,8 +1051,7 @@
                 "properties": {
                   "name": {
                     "type": "string",
-                    "description": "Store name.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Store name.",
                       "spa": "Nombre de la Sucursal",
                       "por": "Nome da loja"
@@ -1121,8 +1104,7 @@
                   },
                   "external_id": {
                     "type": "string",
-                    "description": "Unique identifier of the store defined by integrator system.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Unique identifier of the store defined by integrator system.",
                       "spa": "Identificador único de la Sucursal definido por el integrador",
                       "por": "Identificador único da loja definido pelo sistema integrador"
@@ -1131,8 +1113,7 @@
                   },
                   "location": {
                     "type": "object",
-                    "description": "Store location.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Store location.",
                       "spa": "Ubicación de la Sucursal",
                       "por": "Localização da Loja"
@@ -1140,8 +1121,7 @@
                     "properties": {
                       "street_number": {
                         "type": "string",
-                        "description": "Street number.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Street number.",
                           "spa": "Número",
                           "por": "O Número"
@@ -1150,8 +1130,7 @@
                       },
                       "street_name": {
                         "type": "string",
-                        "description": "Street name.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Street name.",
                           "spa": "Calle",
                           "por": "Rua"
@@ -1160,8 +1139,7 @@
                       },
                       "city_name": {
                         "type": "string",
-                        "description": "City.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "City.",
                           "spa": "Ciudad",
                           "por": "Cidade"
@@ -1170,8 +1148,7 @@
                       },
                       "state_name": {
                         "type": "string",
-                        "description": "State.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "State.",
                           "spa": "Provincia",
                           "por": "Província"
@@ -1180,8 +1157,7 @@
                       },
                       "latitude": {
                         "type": "number",
-                        "description": "Latitude.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Latitude.",
                           "spa": "Latitud",
                           "por": "Latitude"
@@ -1190,8 +1166,7 @@
                       },
                       "longitude": {
                         "type": "number",
-                        "description": "Longitude.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Longitude.",
                           "spa": "Longitud",
                           "por": "Longitude"
@@ -1200,8 +1175,7 @@
                       },
                       "reference": {
                         "type": "string",
-                        "description": "Reference.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Reference.",
                           "spa": "Referencia",
                           "por": "Referência"
@@ -1513,8 +1487,7 @@
           {
             "name": "user_id",
             "in": "path",
-            "description": "User Id",
-            "x-description-i18n": {
+            "description": {
               "eng": "User Id",
               "spa": "User Id",
               "por": "User Id"
@@ -1528,8 +1501,7 @@
           {
             "name": "id",
             "in": "path",
-            "description": "Store's Id",
-            "x-description-i18n": {
+            "description": {
               "eng": "Store's Id",
               "spa": "Store's Id",
               "por": "Store's Id"
