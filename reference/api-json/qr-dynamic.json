@@ -85,7 +85,7 @@
                       "spa": "URL a la cual se enviará la notificación de pago o merchant_order",
                       "por": "URL em que você gostaria de receber uma notificação de pagamento ou merchant_order"
                     },
-                    "example": "www.yourserver.com"
+                    "example": "https://www.yourserver.com/notifications"
                   },
                   "expiration_date": {
                     "type": "string",
@@ -245,8 +245,17 @@
                       "type": "string",
                       "description": {
                         "en": "EMVCo tramma for the QR generation",
-                        "pt": "EMVCo tramma for the QR generation",
-                        "es": "EMVCo tramma for the QR generation"
+                        "pt": "Quadro EMVCo para a geração do código QR.",
+                        "es": "Tramma EMVCo para la generación del QR."
+                      },
+                      "example": "00020101021243650016COM.MERCADOLIBRE02013063638f1192a-5fd1-4180-a180-8bcae3556bc35204000053039865802BR5925IZABEL AAAA DE MELO6007BARUERI62070503***63040B6D"
+                    },
+                    "in_store_order_id": {
+                      "type": "string",
+                      "description": {
+                        "en": "Instore order ID.",
+                        "pt": "ID do pedido feito presencialmente na loja",
+                        "es": "ID del pedido realizado presencialmente en la sucursal."
                       },
                       "example": "00020101021243650016COM.MERCADOLIBRE02013063638f1192a-5fd1-4180-a180-8bcae3556bc35204000053039865802BR5925IZABEL AAAA DE MELO6007BARUERI62070503***63040B6D"
                     }
@@ -454,6 +463,14 @@
                           }
                         },
                         {
+                          "title": "invalid_notification_url",
+                          "description": {
+                            "en": "notification_url must be url.",
+                            "es": "notification_url must be url.",
+                            "pt": "notification_url must be url."
+                          }
+                        },
+                        {
                           "title": "invalid_expiration_date",
                           "description": {
                             "en": "Expiration date must be a valid and future date.",
@@ -588,7 +605,7 @@
                       "spa": "URL a la cual se enviará la notificación de pago o merchant_order",
                       "por": "URL em que você gostaria de receber uma notificação de pagamento ou merchant_order"
                     },
-                    "example": "www.yourserver.com"
+                    "example": "https://www.yourserver.com/notifications"
                   },
                   "expiration_date": {
                     "type": "string",
