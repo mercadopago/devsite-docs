@@ -89,7 +89,7 @@ repositories {
     }
 }
 dependencies {
-   implementation 'com.mercadolibre.android.device:sdk:3.1.0'
+   implementation 'com.mercadolibre.android.device:sdk:4.0.1'
 }
 ```
 ]]]
