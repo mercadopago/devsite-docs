@@ -21,8 +21,7 @@
                 "properties": {
                   "site_id": {
                     "type": "string",
-                    "description": "ID of the site where the test user will be created.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "ID of the site where the test user will be created.",
                       "spa": "ID del sitio donde se creará el usuario de prueba.",
                       "por": "ID do site em que o usuário de teste será criado."
@@ -41,8 +40,7 @@
                   },
                   "description": {
                     "type": "string",
-                    "description": "Description of the test user being created.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Description of the test user being created.",
                       "spa": "Descripción del usuario de pruebas que está siendo creado.",
                       "por": "Descrição do usuário de teste que está sendo criado."
@@ -323,8 +321,7 @@
           {
             "name": "access_token",
             "in": "query",
-            "description": "Test access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of",
-            "x-description-i18n": {
+            "description": {
               "eng": "Test access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of",
               "spa": "Token de acceso de prueba generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por",
               "por": "Token de acesso de teste gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por"
@@ -376,8 +373,7 @@
                         "properties": {
                           "id": {
                             "type": "integer",
-                            "description": "Unique ID that identifies the test user.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Unique ID that identifies the test user.",
                               "spa": "ID único que identifica al usuario de prueba.",
                               "por": "ID exclusivo que identifica o usuário de teste."
@@ -386,8 +382,7 @@
                           },
                           "nickname": {
                             "type": "string",
-                            "description": "Nickname that identifies the test user.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Nickname that identifies the test user.",
                               "spa": "Apodo que identifica el usuario de prueba.",
                               "por": "Apelido que identifica o usuário de teste."
@@ -396,8 +391,7 @@
                           },
                           "site_status": {
                             "type": "string",
-                            "description": "Status of the site where the test user was created.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Status of the site where the test user was created.",
                               "spa": "Estado del sitio donde se creó el usuario de prueba.",
                               "por": "Status do site em que o usuário de teste foi criado."
@@ -406,8 +400,7 @@
                           },
                           "site_id": {
                             "type": "string",
-                            "description": "ID of the site where the test user was created.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "ID of the site where the test user was created.",
                               "spa": "ID del sitio donde se creó el usuario de prueba.",
                               "por": "ID do site em que o usuário de teste foi criado."
@@ -416,8 +409,7 @@
                           },
                           "email": {
                             "type": "string",
-                            "description": "Test user email.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Test user email.",
                               "spa": "Correo electrónico del usuario de prueba.",
                               "por": "E-mail do usuário de teste."
@@ -426,8 +418,7 @@
                           },
                           "date_created": {
                             "type": "string",
-                            "description": "Test user creation date.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Test user creation date.",
                               "spa": "Fecha de creación del usuario de prueba.",
                               "por": "Data de criação do usuário de teste."
@@ -436,8 +427,7 @@
                           },
                           "date_last_updated": {
                             "type": "string",
-                            "description": "Date of last record update.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Date of last record update.",
                               "spa": "Fecha de la última actualización del registro.",
                               "por": "Data da última atualização do registro."
@@ -622,8 +612,7 @@
           {
             "name": "access_token",
             "in": "query",
-            "description": "Test access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of",
-            "x-description-i18n": {
+            "description": {
               "eng": "Test access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of",
               "spa": "Token de acceso de prueba generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por",
               "por": "Token de acesso de teste gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por"
@@ -644,8 +633,7 @@
           {
             "name": "id",
             "in": "path",
-            "description": "Unique ID that identifies the test user.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Unique ID that identifies the test user.",
               "spa": "ID único que identifica al usuario de prueba.",
               "por": "ID exclusivo que identifica o usuário de teste."
@@ -804,8 +792,7 @@
           {
             "name": "access_token",
             "in": "query",
-            "description": "Test access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of",
-            "x-description-i18n": {
+            "description": {
               "eng": "Test access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of",
               "spa": "Token de acceso de prueba generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por",
               "por": "Token de acesso de teste gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por"
@@ -826,8 +813,7 @@
           {
             "name": "id",
             "in": "path",
-            "description": "Unique ID that identifies the test user.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Unique ID that identifies the test user.",
               "spa": "ID único que identifica al usuario de prueba.",
               "por": "ID exclusivo que identifica o usuário de teste."
@@ -850,8 +836,7 @@
                 "type": "object",
                 "properties": {
                   "amount": {
-                    "description": "Amount added to the test user account.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Amount added to the test user account.",
                       "spa": "Valor agregado a la cuenta de usuario de prueba.’",
                       "por": "Valor adicionado à conta do usuário de teste."
