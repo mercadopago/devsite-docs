@@ -95,19 +95,19 @@ paths:
                             example: electronics
                           quantity:
                             type: number
-                            description: Item quantity.
+                            description: Item quantity. This parameter will return as an String.
                             x-description-i18n:
-                              eng: Item quantity.
-                              spa: Cantidad de producto
-                              por: Quantidade do produto
+                              eng: Item quantity. This parameter will return as an String.
+                              spa: Cantidad de producto. Te devolveremos este parámetro como una String.
+                              por: Quantidade do produto. Este parâmetro será retornado como uma String.
                             example: 1
                           unit_price:
                             type: number
-                            description: Unit price of the purchased item.
+                            description: Unit price of the purchased item. This parameter will return as an String.
                             x-description-i18n:
-                              eng: Unit price of the purchased item.
-                              spa: Precio unitario del ítem comprado.
-                              por: Preço unitário do item comprado.
+                              eng: Unit price of the purchased item. This parameter will return as an String.
+                              spa: Precio unitario del ítem comprado. Te devolveremos este parámetro como una String.
+                              por: Preço unitário do item comprado. Este parâmetro será retornado como uma String.
                             example: 58.8
                           type:
                             type: string
@@ -1558,7 +1558,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2000 -- Payment not found
+                      - 2000 -- Payment not found. This error will return a field called "data". This field contains the error date "25-09-2023T16:57:53UTC" and a Request ID, an ID that identifies payment traceability.
   /v1/payments/{id}:
     get:
       tags:
