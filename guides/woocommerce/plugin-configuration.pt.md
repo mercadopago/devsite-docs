@@ -28,5 +28,5 @@ Na seção **Informações sobre sua loja** você pode oferecer dados da loja pa
 
 Clique em **Salvar e continuar**.
 
-Em **Configurações avançadas**, configure as opções relacionadas a salvar informações em um arquivo para depurar problemas técnicos
+Em **Configurações avançadas**, configure as opções relacionadas a salvar informações em um arquivo para depurar problemas técnicos.
 

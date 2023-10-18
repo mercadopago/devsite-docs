@@ -1,4 +1,4 @@
-# Configuración de integración
+# Configuración de la integración
 
 Una vez instalado el plugin de Mercado Pago con WooCommerce, es necesario configurarlo. Para eso, sigue estos pasos:
 
@@ -26,6 +26,6 @@ En la sección **Información sobre tu tienda** podrás ofrecer datos de la tien
 
 Haz clic en **Guardar y continuar**.
 
-En **Ajustes avanzados**, configura las opciones relacionadas con el almacenamiento de información en un archivo para depurar problemas técnicos
+En **Ajustes avanzados**, configura las opciones relacionadas con el almacenamiento de información en un archivo para depurar problemas técnicos.
 
 

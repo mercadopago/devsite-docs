@@ -15,7 +15,7 @@ Follow this step by step to make the change:
 3. In the plugin search engine, search for “Mercado Pago payments for WooCommerce”.
 4. Click **Configure Plugin**.
 5. Click **4. Test your store before selling** to display the options.
-6. Under Choose how you want to operate your store, select **Sales Mode (Production)**.
+6. Under **Choose how you want to operate your store**, select **Sales Mode (Production)**.
 7. Click **Save Changes** to finish.
 
 Done! The store is in production and enabled to process your sales.

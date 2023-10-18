@@ -28,6 +28,6 @@ In the section **Information about your store** you can offer store data to offe
 
 Click **Save and Continue**.
 
-Under **Advanced Settings**, configure options related to saving information to a file for debugging technical issues
+Under **Advanced Settings**, configure options related to saving information to a file for debugging technical issues.
 
 
