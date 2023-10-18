@@ -56,14 +56,14 @@ future_product_avaible:
  - card_description: Vincule a conta Mercado Pago e permita pagamentos registrados. Teste a demonstração do Brick antes de integrá-lo.
  - card_link: /developers/pt/docs/checkout-bricks/wallet-brick/introduction
  - card_linkDescription: Saiba mais
- - card_pillText: EM BREVE
+ - card_pillText: DISPONÍVEL
  - card_avaible: false
  - card_icon: Check
  - card_title: Review & Confirm
  - card_description: Exiba um resumo de todo o processo de compra com as informações mais relevantes, assim os clientes poderão analisar antes de confirmar a compra.
  - card_link:
  - card_linkDescription:
- - card_pillText: DISPONÍVEL
+ - card_pillText: EM BREVE
  - card_avaible: false
  - card_icon: User
  - card_title: User Info Brick
@@ -114,7 +114,7 @@ future_product_avaible:
  - card_description: Vincule a conta Mercado Pago e permita pagamentos registrados. Teste a demonstração do Brick antes de integrá-lo.
  - card_link: /developers/pt/docs/checkout-bricks/wallet-brick/introduction
  - card_linkDescription: Saiba mais
- - card_pillText: EM BREVE
+ - card_pillText: DISPONÍVEL
  - card_avaible: true
  - card_icon: Check
  - card_title: Review & Confirm

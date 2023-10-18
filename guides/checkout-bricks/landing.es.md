@@ -173,7 +173,7 @@ future_product_avaible:
  - card_link: /developers/es/docs/checkout-bricks/wallet-brick/introduction
  - card_linkDescription: Saber más
  - card_pillText: DISPONIBLE
-  - card_avaible: false
+ - card_avaible: false
  - card_icon: Check
  - card_title: Review & Confirm
  - card_description: Muestra un resumen de todo el proceso de compra, con la información más relevante, para que tus clientes puedan revisar antes de confirmar la compra.
