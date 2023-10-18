@@ -718,13 +718,62 @@
           "pt": "Identificador de moeda no formato ISO_4217"
         },
         "enum": [
-          "ARS -- Argentine peso.",
-          "BRL -- Brazil real.",
-          "CLP -- Chilean peso.",
-          "MXN -- Mexican peso.",
-          "COP -- Colombian peso.",
-          "PEN -- Peruvian sol.",
-          "UYU -- Uruguayan peso."
+          {
+            "title": "ARS",
+            "description": {
+              "es": " Argentine peso.",
+              "pt": " Argentine peso.",
+              "en": " Argentine peso."
+            }
+          },
+          {
+            "title": "BRL",
+            "description": {
+              "es": " Brazil real.",
+              "pt": " Brazil real.",
+              "en": " Brazil real."
+            }
+          },
+          {
+            "title": "CLP",
+            "description": {
+              "es": " Chilean peso.",
+              "pt": " Chilean peso.",
+              "en": " Chilean peso."
+            }
+          },
+          {
+            "title": "MXN",
+            "description": {
+              "es": " Mexican peso.",
+              "pt": " Mexican peso.",
+              "en": " Mexican peso."
+            }
+          },
+          {
+            "title": "COP",
+            "description": {
+              "es": " Colombian peso.",
+              "pt": " Colombian peso.",
+              "en": " Colombian peso."
+            }
+          },
+          {
+            "title": "PEN",
+            "description": {
+              "es": " Peruvian sol.",
+              "pt": " Peruvian sol.",
+              "en": " Peruvian sol."
+            }
+          },
+          {
+            "title": "UYU",
+            "description": {
+              "es": " Uruguayan peso.",
+              "pt": " Uruguayan peso.",
+              "en": " Uruguayan peso."
+            }
+          }
         ]
       }
     }

@@ -99,13 +99,62 @@
                     "example": "MLA",
                     "description": "Site ID.",
                     "enum": [
-                      "MLA -- Mercado Libre Argentina",
-                      "MLB -- Mercado Libre Brasil",
-                      "MLM -- Mercado Libre México",
-                      "MLC -- Mercado Libre Chile",
-                      "MLU -- Mercado Libre Uruguay",
-                      "MCO -- Mercado Libre Colombia",
-                      "MPE -- Mercado Libre Perú"
+                      {
+                        "title": "MLA",
+                        "description": {
+                          "es": " Mercado Libre Argentina",
+                          "pt": " Mercado Libre Argentina",
+                          "en": " Mercado Libre Argentina"
+                        }
+                      },
+                      {
+                        "title": "MLB",
+                        "description": {
+                          "es": " Mercado Libre Brasil",
+                          "pt": " Mercado Libre Brasil",
+                          "en": " Mercado Libre Brasil"
+                        }
+                      },
+                      {
+                        "title": "MLM",
+                        "description": {
+                          "es": " Mercado Libre México",
+                          "pt": " Mercado Libre México",
+                          "en": " Mercado Libre México"
+                        }
+                      },
+                      {
+                        "title": "MLC",
+                        "description": {
+                          "es": " Mercado Libre Chile",
+                          "pt": " Mercado Libre Chile",
+                          "en": " Mercado Libre Chile"
+                        }
+                      },
+                      {
+                        "title": "MLU",
+                        "description": {
+                          "es": " Mercado Libre Uruguay",
+                          "pt": " Mercado Libre Uruguay",
+                          "en": " Mercado Libre Uruguay"
+                        }
+                      },
+                      {
+                        "title": "MCO",
+                        "description": {
+                          "es": " Mercado Libre Colombia",
+                          "pt": " Mercado Libre Colombia",
+                          "en": " Mercado Libre Colombia"
+                        }
+                      },
+                      {
+                        "title": "MPE",
+                        "description": {
+                          "es": " Mercado Libre Perú",
+                          "pt": " Mercado Libre Perú",
+                          "en": " Mercado Libre Perú"
+                        }
+                      }
                     ]
                   },
                   "items": {
@@ -1059,21 +1108,126 @@
                                     "pt": "Detalhe em que resultou a Coleção"
                                   },
                                   "enum": [
-                                    "Accredited -- credited payment.",
-                                    "pending_contingency -- the payment is being processed.",
-                                    "pending_review_manual -- the payment is under review to determine its approval or rejection.",
-                                    "cc_rejected_bad_filled_date -- incorrect expiration date.",
-                                    "cc_rejected_bad_filled_other -- incorrect card details.",
-                                    "cc_rejected_bad_filled_security_code -- incorrect CVV.",
-                                    "cc_rejected_blacklist -- the card is on a black list for theft/complaints/fraud.",
-                                    "cc_rejected_call_for_authorize -- the means of payment requires prior authorization of the amount of the operation.",
-                                    "cc_rejected_card_disabled -- the card is inactive.",
-                                    "cc_rejected_duplicated_payment -- transacción duplicada.",
-                                    "cc_rejected_high_risk -- rechazo por Prevención de Fraude.",
-                                    "cc_rejected_insufficient_amount -- insufficient amount.",
-                                    "cc_rejected_invalid_installments -- invalid number of installments.",
-                                    "cc_rejected_max_attempts -- exceeded maximum number of attempts.",
-                                    "cc_rejected_other_reason -- generic error."
+                                    {
+                                      "title": "Accredited",
+                                      "description": {
+                                        "es": " credited payment.",
+                                        "pt": " credited payment.",
+                                        "en": " credited payment."
+                                      }
+                                    },
+                                    {
+                                      "title": "pending_contingency",
+                                      "description": {
+                                        "es": " the payment is being processed.",
+                                        "pt": " the payment is being processed.",
+                                        "en": " the payment is being processed."
+                                      }
+                                    },
+                                    {
+                                      "title": "pending_review_manual",
+                                      "description": {
+                                        "es": " the payment is under review to determine its approval or rejection.",
+                                        "pt": " the payment is under review to determine its approval or rejection.",
+                                        "en": " the payment is under review to determine its approval or rejection."
+                                      }
+                                    },
+                                    {
+                                      "title": "cc_rejected_bad_filled_date",
+                                      "description": {
+                                        "es": " incorrect expiration date.",
+                                        "pt": " incorrect expiration date.",
+                                        "en": " incorrect expiration date."
+                                      }
+                                    },
+                                    {
+                                      "title": "cc_rejected_bad_filled_other",
+                                      "description": {
+                                        "es": " incorrect card details.",
+                                        "pt": " incorrect card details.",
+                                        "en": " incorrect card details."
+                                      }
+                                    },
+                                    {
+                                      "title": "cc_rejected_bad_filled_security_code",
+                                      "description": {
+                                        "es": " incorrect CVV.",
+                                        "pt": " incorrect CVV.",
+                                        "en": " incorrect CVV."
+                                      }
+                                    },
+                                    {
+                                      "title": "cc_rejected_blacklist",
+                                      "description": {
+                                        "es": " the card is on a black list for theft/complaints/fraud.",
+                                        "pt": " the card is on a black list for theft/complaints/fraud.",
+                                        "en": " the card is on a black list for theft/complaints/fraud."
+                                      }
+                                    },
+                                    {
+                                      "title": "cc_rejected_call_for_authorize",
+                                      "description": {
+                                        "es": " the means of payment requires prior authorization of the amount of the operation.",
+                                        "pt": " the means of payment requires prior authorization of the amount of the operation.",
+                                        "en": " the means of payment requires prior authorization of the amount of the operation."
+                                      }
+                                    },
+                                    {
+                                      "title": "cc_rejected_card_disabled",
+                                      "description": {
+                                        "es": " the card is inactive.",
+                                        "pt": " the card is inactive.",
+                                        "en": " the card is inactive."
+                                      }
+                                    },
+                                    {
+                                      "title": "cc_rejected_duplicated_payment",
+                                      "description": {
+                                        "es": " transacción duplicada.",
+                                        "pt": " transacción duplicada.",
+                                        "en": " transacción duplicada."
+                                      }
+                                    },
+                                    {
+                                      "title": "cc_rejected_high_risk",
+                                      "description": {
+                                        "es": " rechazo por Prevención de Fraude.",
+                                        "pt": " rechazo por Prevención de Fraude.",
+                                        "en": " rechazo por Prevención de Fraude."
+                                      }
+                                    },
+                                    {
+                                      "title": "cc_rejected_insufficient_amount",
+                                      "description": {
+                                        "es": " insufficient amount.",
+                                        "pt": " insufficient amount.",
+                                        "en": " insufficient amount."
+                                      }
+                                    },
+                                    {
+                                      "title": "cc_rejected_invalid_installments",
+                                      "description": {
+                                        "es": " invalid number of installments.",
+                                        "pt": " invalid number of installments.",
+                                        "en": " invalid number of installments."
+                                      }
+                                    },
+                                    {
+                                      "title": "cc_rejected_max_attempts",
+                                      "description": {
+                                        "es": " exceeded maximum number of attempts.",
+                                        "pt": " exceeded maximum number of attempts.",
+                                        "en": " exceeded maximum number of attempts."
+                                      }
+                                    },
+                                    {
+                                      "title": "cc_rejected_other_reason",
+                                      "description": {
+                                        "es": " generic error.",
+                                        "pt": " generic error.",
+                                        "en": " generic error."
+                                      }
+                                    }
                                   ]
                                 },
                                 "operation_type": {
@@ -1724,13 +1878,62 @@
                             "example": "MLA",
                             "description": "Site ID.",
                             "enum": [
-                              "MLA -- Mercado Libre Argentina",
-                              "MLB -- Mercado Libre Brasil",
-                              "MLM -- Mercado Libre México",
-                              "MLC -- Mercado Libre Chile",
-                              "MLU -- Mercado Libre Uruguay",
-                              "MCO -- Mercado Libre Colombia",
-                              "MPE -- Mercado Libre Perú"
+                              {
+                                "title": "MLA",
+                                "description": {
+                                  "es": " Mercado Libre Argentina",
+                                  "pt": " Mercado Libre Argentina",
+                                  "en": " Mercado Libre Argentina"
+                                }
+                              },
+                              {
+                                "title": "MLB",
+                                "description": {
+                                  "es": " Mercado Libre Brasil",
+                                  "pt": " Mercado Libre Brasil",
+                                  "en": " Mercado Libre Brasil"
+                                }
+                              },
+                              {
+                                "title": "MLM",
+                                "description": {
+                                  "es": " Mercado Libre México",
+                                  "pt": " Mercado Libre México",
+                                  "en": " Mercado Libre México"
+                                }
+                              },
+                              {
+                                "title": "MLC",
+                                "description": {
+                                  "es": " Mercado Libre Chile",
+                                  "pt": " Mercado Libre Chile",
+                                  "en": " Mercado Libre Chile"
+                                }
+                              },
+                              {
+                                "title": "MLU",
+                                "description": {
+                                  "es": " Mercado Libre Uruguay",
+                                  "pt": " Mercado Libre Uruguay",
+                                  "en": " Mercado Libre Uruguay"
+                                }
+                              },
+                              {
+                                "title": "MCO",
+                                "description": {
+                                  "es": " Mercado Libre Colombia",
+                                  "pt": " Mercado Libre Colombia",
+                                  "en": " Mercado Libre Colombia"
+                                }
+                              },
+                              {
+                                "title": "MPE",
+                                "description": {
+                                  "es": " Mercado Libre Perú",
+                                  "pt": " Mercado Libre Perú",
+                                  "en": " Mercado Libre Perú"
+                                }
+                              }
                             ]
                           },
                           "paid_amount": {
@@ -2121,21 +2324,126 @@
                               "pt": "Detalhe em que resultou a Coleção"
                             },
                             "enum": [
-                              "Accredited -- credited payment.",
-                              "pending_contingency -- the payment is being processed.",
-                              "pending_review_manual -- the payment is under review to determine its approval or rejection.",
-                              "cc_rejected_bad_filled_date -- incorrect expiration date.",
-                              "cc_rejected_bad_filled_other -- incorrect card details.",
-                              "cc_rejected_bad_filled_security_code -- incorrect CVV.",
-                              "cc_rejected_blacklist -- the card is on a black list for theft/complaints/fraud.",
-                              "cc_rejected_call_for_authorize -- the means of payment requires prior authorization of the amount of the operation.",
-                              "cc_rejected_card_disabled -- the card is inactive.",
-                              "cc_rejected_duplicated_payment -- transacción duplicada.",
-                              "cc_rejected_high_risk -- rechazo por Prevención de Fraude.",
-                              "cc_rejected_insufficient_amount -- insufficient amount.",
-                              "cc_rejected_invalid_installments -- invalid number of installments.",
-                              "cc_rejected_max_attempts -- exceeded maximum number of attempts.",
-                              "cc_rejected_other_reason -- generic error."
+                              {
+                                "title": "Accredited",
+                                "description": {
+                                  "es": " credited payment.",
+                                  "pt": " credited payment.",
+                                  "en": " credited payment."
+                                }
+                              },
+                              {
+                                "title": "pending_contingency",
+                                "description": {
+                                  "es": " the payment is being processed.",
+                                  "pt": " the payment is being processed.",
+                                  "en": " the payment is being processed."
+                                }
+                              },
+                              {
+                                "title": "pending_review_manual",
+                                "description": {
+                                  "es": " the payment is under review to determine its approval or rejection.",
+                                  "pt": " the payment is under review to determine its approval or rejection.",
+                                  "en": " the payment is under review to determine its approval or rejection."
+                                }
+                              },
+                              {
+                                "title": "cc_rejected_bad_filled_date",
+                                "description": {
+                                  "es": " incorrect expiration date.",
+                                  "pt": " incorrect expiration date.",
+                                  "en": " incorrect expiration date."
+                                }
+                              },
+                              {
+                                "title": "cc_rejected_bad_filled_other",
+                                "description": {
+                                  "es": " incorrect card details.",
+                                  "pt": " incorrect card details.",
+                                  "en": " incorrect card details."
+                                }
+                              },
+                              {
+                                "title": "cc_rejected_bad_filled_security_code",
+                                "description": {
+                                  "es": " incorrect CVV.",
+                                  "pt": " incorrect CVV.",
+                                  "en": " incorrect CVV."
+                                }
+                              },
+                              {
+                                "title": "cc_rejected_blacklist",
+                                "description": {
+                                  "es": " the card is on a black list for theft/complaints/fraud.",
+                                  "pt": " the card is on a black list for theft/complaints/fraud.",
+                                  "en": " the card is on a black list for theft/complaints/fraud."
+                                }
+                              },
+                              {
+                                "title": "cc_rejected_call_for_authorize",
+                                "description": {
+                                  "es": " the means of payment requires prior authorization of the amount of the operation.",
+                                  "pt": " the means of payment requires prior authorization of the amount of the operation.",
+                                  "en": " the means of payment requires prior authorization of the amount of the operation."
+                                }
+                              },
+                              {
+                                "title": "cc_rejected_card_disabled",
+                                "description": {
+                                  "es": " the card is inactive.",
+                                  "pt": " the card is inactive.",
+                                  "en": " the card is inactive."
+                                }
+                              },
+                              {
+                                "title": "cc_rejected_duplicated_payment",
+                                "description": {
+                                  "es": " transacción duplicada.",
+                                  "pt": " transacción duplicada.",
+                                  "en": " transacción duplicada."
+                                }
+                              },
+                              {
+                                "title": "cc_rejected_high_risk",
+                                "description": {
+                                  "es": " rechazo por Prevención de Fraude.",
+                                  "pt": " rechazo por Prevención de Fraude.",
+                                  "en": " rechazo por Prevención de Fraude."
+                                }
+                              },
+                              {
+                                "title": "cc_rejected_insufficient_amount",
+                                "description": {
+                                  "es": " insufficient amount.",
+                                  "pt": " insufficient amount.",
+                                  "en": " insufficient amount."
+                                }
+                              },
+                              {
+                                "title": "cc_rejected_invalid_installments",
+                                "description": {
+                                  "es": " invalid number of installments.",
+                                  "pt": " invalid number of installments.",
+                                  "en": " invalid number of installments."
+                                }
+                              },
+                              {
+                                "title": "cc_rejected_max_attempts",
+                                "description": {
+                                  "es": " exceeded maximum number of attempts.",
+                                  "pt": " exceeded maximum number of attempts.",
+                                  "en": " exceeded maximum number of attempts."
+                                }
+                              },
+                              {
+                                "title": "cc_rejected_other_reason",
+                                "description": {
+                                  "es": " generic error.",
+                                  "pt": " generic error.",
+                                  "en": " generic error."
+                                }
+                              }
                             ]
                           },
                           "operation_type": {
@@ -3211,13 +3519,62 @@
                     "example": "MLA",
                     "description": "Site ID.",
                     "enum": [
-                      "MLA -- Mercado Libre Argentina",
-                      "MLB -- Mercado Libre Brasil",
-                      "MLM -- Mercado Libre México",
-                      "MLC -- Mercado Libre Chile",
-                      "MLU -- Mercado Libre Uruguay",
-                      "MCO -- Mercado Libre Colombia",
-                      "MPE -- Mercado Libre Perú"
+                      {
+                        "title": "MLA",
+                        "description": {
+                          "es": " Mercado Libre Argentina",
+                          "pt": " Mercado Libre Argentina",
+                          "en": " Mercado Libre Argentina"
+                        }
+                      },
+                      {
+                        "title": "MLB",
+                        "description": {
+                          "es": " Mercado Libre Brasil",
+                          "pt": " Mercado Libre Brasil",
+                          "en": " Mercado Libre Brasil"
+                        }
+                      },
+                      {
+                        "title": "MLM",
+                        "description": {
+                          "es": " Mercado Libre México",
+                          "pt": " Mercado Libre México",
+                          "en": " Mercado Libre México"
+                        }
+                      },
+                      {
+                        "title": "MLC",
+                        "description": {
+                          "es": " Mercado Libre Chile",
+                          "pt": " Mercado Libre Chile",
+                          "en": " Mercado Libre Chile"
+                        }
+                      },
+                      {
+                        "title": "MLU",
+                        "description": {
+                          "es": " Mercado Libre Uruguay",
+                          "pt": " Mercado Libre Uruguay",
+                          "en": " Mercado Libre Uruguay"
+                        }
+                      },
+                      {
+                        "title": "MCO",
+                        "description": {
+                          "es": " Mercado Libre Colombia",
+                          "pt": " Mercado Libre Colombia",
+                          "en": " Mercado Libre Colombia"
+                        }
+                      },
+                      {
+                        "title": "MPE",
+                        "description": {
+                          "es": " Mercado Libre Perú",
+                          "pt": " Mercado Libre Perú",
+                          "en": " Mercado Libre Perú"
+                        }
+                      }
                     ]
                   },
                   "items": {
@@ -3920,9 +4277,30 @@
         },
         "example": "closed",
         "enum": [
-          "opened -- Order without payments.",
-          "closed -- Order with payments covering total amount.",
-          "expired -- Canceled order that does not have approved or pending payments (all rejected or returned)."
+          {
+            "title": "opened",
+            "description": {
+              "es": " Order without payments.",
+              "pt": " Order without payments.",
+              "en": " Order without payments."
+            }
+          },
+          {
+            "title": "closed",
+            "description": {
+              "es": " Order with payments covering total amount.",
+              "pt": " Order with payments covering total amount.",
+              "en": " Order with payments covering total amount."
+            }
+          },
+          {
+            "title": "expired",
+            "description": {
+              "es": " Canceled order that does not have approved or pending payments (all rejected or returned).",
+              "pt": " Canceled order that does not have approved or pending payments (all rejected or returned).",
+              "en": " Canceled order that does not have approved or pending payments (all rejected or returned)."
+            }
+          }
         ]
       },
       "currency_id": {
@@ -3934,13 +4312,62 @@
         },
         "example": "BRL",
         "enum": [
-          "ARS -- Argentine peso.",
-          "BRL -- Brazil real.",
-          "CLP -- Chilean peso.",
-          "MXN -- Mexican peso.",
-          "COP -- Colombian peso.",
-          "PEN -- Peruvian sol.",
-          "UYU -- Uruguayan peso."
+          {
+            "title": "ARS",
+            "description": {
+              "es": " Argentine peso.",
+              "pt": " Argentine peso.",
+              "en": " Argentine peso."
+            }
+          },
+          {
+            "title": "BRL",
+            "description": {
+              "es": " Brazil real.",
+              "pt": " Brazil real.",
+              "en": " Brazil real."
+            }
+          },
+          {
+            "title": "CLP",
+            "description": {
+              "es": " Chilean peso.",
+              "pt": " Chilean peso.",
+              "en": " Chilean peso."
+            }
+          },
+          {
+            "title": "MXN",
+            "description": {
+              "es": " Mexican peso.",
+              "pt": " Mexican peso.",
+              "en": " Mexican peso."
+            }
+          },
+          {
+            "title": "COP",
+            "description": {
+              "es": " Colombian peso.",
+              "pt": " Colombian peso.",
+              "en": " Colombian peso."
+            }
+          },
+          {
+            "title": "PEN",
+            "description": {
+              "es": " Peruvian sol.",
+              "pt": " Peruvian sol.",
+              "en": " Peruvian sol."
+            }
+          },
+          {
+            "title": "UYU",
+            "description": {
+              "es": " Uruguayan peso.",
+              "pt": " Uruguayan peso.",
+              "en": " Uruguayan peso."
+            }
+          }
         ]
       },
       "payment_status": {
@@ -3952,15 +4379,78 @@
         },
         "example": "approved",
         "enum": [
-          "pending -- The user has not yet completed the payment process.",
-          "approved -- The payment has been approved and accredited.",
-          "authorized -- The payment has been authorized but not captured yet.",
-          "in_process -- Payment is being reviewed.",
-          "in_mediation -- Users have initiated a dispute.",
-          "rejected -- Payment was rejected. The user may retry payment.",
-          "cancelled -- Payment was cancelled by one of the parties or because time for payment has expired.",
-          "refunded -- Payment was refunded to the user.",
-          "charged_back -- Was made a chargeback in the buyer's credit card."
+          {
+            "title": "pending",
+            "description": {
+              "es": " The user has not yet completed the payment process.",
+              "pt": " The user has not yet completed the payment process.",
+              "en": " The user has not yet completed the payment process."
+            }
+          },
+          {
+            "title": "approved",
+            "description": {
+              "es": " The payment has been approved and accredited.",
+              "pt": " The payment has been approved and accredited.",
+              "en": " The payment has been approved and accredited."
+            }
+          },
+          {
+            "title": "authorized",
+            "description": {
+              "es": " The payment has been authorized but not captured yet.",
+              "pt": " The payment has been authorized but not captured yet.",
+              "en": " The payment has been authorized but not captured yet."
+            }
+          },
+          {
+            "title": "in_process",
+            "description": {
+              "es": " Payment is being reviewed.",
+              "pt": " Payment is being reviewed.",
+              "en": " Payment is being reviewed."
+            }
+          },
+          {
+            "title": "in_mediation",
+            "description": {
+              "es": " Users have initiated a dispute.",
+              "pt": " Users have initiated a dispute.",
+              "en": " Users have initiated a dispute."
+            }
+          },
+          {
+            "title": "rejected",
+            "description": {
+              "es": " Payment was rejected. The user may retry payment.",
+              "pt": " Payment was rejected. The user may retry payment.",
+              "en": " Payment was rejected. The user may retry payment."
+            }
+          },
+          {
+            "title": "cancelled",
+            "description": {
+              "es": " Payment was cancelled by one of the parties or because time for payment has expired.",
+              "pt": " Payment was cancelled by one of the parties or because time for payment has expired.",
+              "en": " Payment was cancelled by one of the parties or because time for payment has expired."
+            }
+          },
+          {
+            "title": "refunded",
+            "description": {
+              "es": " Payment was refunded to the user.",
+              "pt": " Payment was refunded to the user.",
+              "en": " Payment was refunded to the user."
+            }
+          },
+          {
+            "title": "charged_back",
+            "description": {
+              "es": " Was made a chargeback in the buyer's credit card.",
+              "pt": " Was made a chargeback in the buyer's credit card.",
+              "en": " Was made a chargeback in the buyer's credit card."
+            }
+          }
         ]
       },
       "operation_type": {
@@ -3971,13 +4461,62 @@
           "pt": "data_type da operação"
         },
         "enum": [
-          "regular_payment -- Typification by default of a purchase being paid using Mercado Pago.",
-          "payment_addition -- Addition of money to an existing payment, made through a Mercado Pago account.",
-          "money_transfer -- Funds transfer between two users.",
-          "recurring_payment -- Automatic recurring payment due to an active user subscription.",
-          "account_fund -- Money income in the user's account.",
-          "cellphone_recharge -- Recharge of a user's cellophone account.",
-          "pos_payment -- Payment done through a Point of Sale."
+          {
+            "title": "regular_payment",
+            "description": {
+              "es": " Typification by default of a purchase being paid using Mercado Pago.",
+              "pt": " Typification by default of a purchase being paid using Mercado Pago.",
+              "en": " Typification by default of a purchase being paid using Mercado Pago."
+            }
+          },
+          {
+            "title": "payment_addition",
+            "description": {
+              "es": " Addition of money to an existing payment, made through a Mercado Pago account.",
+              "pt": " Addition of money to an existing payment, made through a Mercado Pago account.",
+              "en": " Addition of money to an existing payment, made through a Mercado Pago account."
+            }
+          },
+          {
+            "title": "money_transfer",
+            "description": {
+              "es": " Funds transfer between two users.",
+              "pt": " Funds transfer between two users.",
+              "en": " Funds transfer between two users."
+            }
+          },
+          {
+            "title": "recurring_payment",
+            "description": {
+              "es": " Automatic recurring payment due to an active user subscription.",
+              "pt": " Automatic recurring payment due to an active user subscription.",
+              "en": " Automatic recurring payment due to an active user subscription."
+            }
+          },
+          {
+            "title": "account_fund",
+            "description": {
+              "es": " Money income in the user's account.",
+              "pt": " Money income in the user's account.",
+              "en": " Money income in the user's account."
+            }
+          },
+          {
+            "title": "cellphone_recharge",
+            "description": {
+              "es": " Recharge of a user's cellophone account.",
+              "pt": " Recharge of a user's cellophone account.",
+              "en": " Recharge of a user's cellophone account."
+            }
+          },
+          {
+            "title": "pos_payment",
+            "description": {
+              "es": " Payment done through a Point of Sale.",
+              "pt": " Payment done through a Point of Sale.",
+              "en": " Payment done through a Point of Sale."
+            }
+          }
         ]
       },
       "order_status": {
@@ -3989,14 +4528,70 @@
         },
         "example": "paid",
         "enum": [
-          "payment_required -- Order without payments or with all payments \"rejected\" or \"cancelled\".",
-          "reverted -- Order with all payments \"refunded\" or \"chargeback\".",
-          "paid -- Order with the sum of all payments \"approved\", \"chargeback\" or \"in_mediation\", covers the order total amount.",
-          "partially_reverted -- Order with at least one payment \"refunded\" or \"chargeback\".",
-          "partially_paid -- Order with at least one payment \"approved\" and not covering order total amount.",
-          "payment_in_process -- Order with payments \"in_process\", \"pending\" or \"authorized\".",
-          "undefined -- Order created before the existence of the order_status status.",
-          "expired -- Canceled order that does not have approved or pending payments (all rejected or returned)."
+          {
+            "title": "payment_required",
+            "description": {
+              "es": " Order without payments or with all payments \"rejected\" or \"cancelled\".",
+              "pt": " Order without payments or with all payments \"rejected\" or \"cancelled\".",
+              "en": " Order without payments or with all payments \"rejected\" or \"cancelled\"."
+            }
+          },
+          {
+            "title": "reverted",
+            "description": {
+              "es": " Order with all payments \"refunded\" or \"chargeback\".",
+              "pt": " Order with all payments \"refunded\" or \"chargeback\".",
+              "en": " Order with all payments \"refunded\" or \"chargeback\"."
+            }
+          },
+          {
+            "title": "paid",
+            "description": {
+              "es": " Order with the sum of all payments \"approved\", \"chargeback\" or \"in_mediation\", covers the order total amount.",
+              "pt": " Order with the sum of all payments \"approved\", \"chargeback\" or \"in_mediation\", covers the order total amount.",
+              "en": " Order with the sum of all payments \"approved\", \"chargeback\" or \"in_mediation\", covers the order total amount."
+            }
+          },
+          {
+            "title": "partially_reverted",
+            "description": {
+              "es": " Order with at least one payment \"refunded\" or \"chargeback\".",
+              "pt": " Order with at least one payment \"refunded\" or \"chargeback\".",
+              "en": " Order with at least one payment \"refunded\" or \"chargeback\"."
+            }
+          },
+          {
+            "title": "partially_paid",
+            "description": {
+              "es": " Order with at least one payment \"approved\" and not covering order total amount.",
+              "pt": " Order with at least one payment \"approved\" and not covering order total amount.",
+              "en": " Order with at least one payment \"approved\" and not covering order total amount."
+            }
+          },
+          {
+            "title": "payment_in_process",
+            "description": {
+              "es": " Order with payments \"in_process\", \"pending\" or \"authorized\".",
+              "pt": " Order with payments \"in_process\", \"pending\" or \"authorized\".",
+              "en": " Order with payments \"in_process\", \"pending\" or \"authorized\"."
+            }
+          },
+          {
+            "title": "undefined",
+            "description": {
+              "es": " Order created before the existence of the order_status status.",
+              "pt": " Order created before the existence of the order_status status.",
+              "en": " Order created before the existence of the order_status status."
+            }
+          },
+          {
+            "title": "expired",
+            "description": {
+              "es": " Canceled order that does not have approved or pending payments (all rejected or returned).",
+              "pt": " Canceled order that does not have approved or pending payments (all rejected or returned).",
+              "en": " Canceled order that does not have approved or pending payments (all rejected or returned)."
+            }
+          }
         ]
       }
     }

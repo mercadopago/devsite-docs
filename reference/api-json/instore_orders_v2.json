@@ -844,8 +844,22 @@
         },
         "example": "unit",
         "enum": [
-          "unit -- Unit",
-          "pack -- Pack"
+          {
+            "title": "unit",
+            "description": {
+              "es": " Unit",
+              "pt": " Unit",
+              "en": " Unit"
+            }
+          },
+          {
+            "title": "pack",
+            "description": {
+              "es": " Pack",
+              "pt": " Pack",
+              "en": " Pack"
+            }
+          }
         ]
       }
     }

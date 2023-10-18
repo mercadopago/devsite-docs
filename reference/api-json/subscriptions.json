@@ -90,8 +90,22 @@
                         },
                         "example": "months",
                         "enum": [
-                          "days -- Indicate a frequency in units of days",
-                          "months -- Indicate a frequency in units of months"
+                          {
+                            "title": "days",
+                            "description": {
+                              "es": " Indicate a frequency in units of days",
+                              "pt": " Indicate a frequency in units of days",
+                              "en": " Indicate a frequency in units of days"
+                            }
+                          },
+                          {
+                            "title": "months",
+                            "description": {
+                              "es": " Indicate a frequency in units of months",
+                              "pt": " Indicate a frequency in units of months",
+                              "en": " Indicate a frequency in units of months"
+                            }
+                          }
                         ]
                       },
                       "start_date": {
@@ -133,13 +147,62 @@
                         },
                         "example": "ARS",
                         "enum": [
-                          "ARS -- Argentine peso.",
-                          "BRL -- Brazilian real.",
-                          "CLP -- Chilean peso.",
-                          "MXN -- Mexican peso.",
-                          "COP -- Colombian peso.",
-                          "PEN -- Peruvian sol.",
-                          "UYU -- Uruguayan peso."
+                          {
+                            "title": "ARS",
+                            "description": {
+                              "es": " Argentine peso.",
+                              "pt": " Argentine peso.",
+                              "en": " Argentine peso."
+                            }
+                          },
+                          {
+                            "title": "BRL",
+                            "description": {
+                              "es": " Brazilian real.",
+                              "pt": " Brazilian real.",
+                              "en": " Brazilian real."
+                            }
+                          },
+                          {
+                            "title": "CLP",
+                            "description": {
+                              "es": " Chilean peso.",
+                              "pt": " Chilean peso.",
+                              "en": " Chilean peso."
+                            }
+                          },
+                          {
+                            "title": "MXN",
+                            "description": {
+                              "es": " Mexican peso.",
+                              "pt": " Mexican peso.",
+                              "en": " Mexican peso."
+                            }
+                          },
+                          {
+                            "title": "COP",
+                            "description": {
+                              "es": " Colombian peso.",
+                              "pt": " Colombian peso.",
+                              "en": " Colombian peso."
+                            }
+                          },
+                          {
+                            "title": "PEN",
+                            "description": {
+                              "es": " Peruvian sol.",
+                              "pt": " Peruvian sol.",
+                              "en": " Peruvian sol."
+                            }
+                          },
+                          {
+                            "title": "UYU",
+                            "description": {
+                              "es": " Uruguayan peso.",
+                              "pt": " Uruguayan peso.",
+                              "en": " Uruguayan peso."
+                            }
+                          }
                         ]
                       }
                     }
@@ -163,8 +226,22 @@
                     },
                     "example": "authorized",
                     "enum": [
-                      "pending -- Subscription without a payment method",
-                      "authorized -- Subscription with a payment method"
+                      {
+                        "title": "pending",
+                        "description": {
+                          "es": " Subscription without a payment method",
+                          "pt": " Subscription without a payment method",
+                          "en": " Subscription without a payment method"
+                        }
+                      },
+                      {
+                        "title": "authorized",
+                        "description": {
+                          "es": " Subscription with a payment method",
+                          "pt": " Subscription with a payment method",
+                          "en": " Subscription with a payment method"
+                        }
+                      }
                     ]
                   }
                 }
@@ -1061,8 +1138,22 @@
                         },
                         "example": "months",
                         "enum": [
-                          "days -- Indicate a frequency in units of days",
-                          "months -- Indicate a frequency in units of months"
+                          {
+                            "title": "days",
+                            "description": {
+                              "es": " Indicate a frequency in units of days",
+                              "pt": " Indicate a frequency in units of days",
+                              "en": " Indicate a frequency in units of days"
+                            }
+                          },
+                          {
+                            "title": "months",
+                            "description": {
+                              "es": " Indicate a frequency in units of months",
+                              "pt": " Indicate a frequency in units of months",
+                              "en": " Indicate a frequency in units of months"
+                            }
+                          }
                         ]
                       },
                       "repetitions": {
@@ -1092,8 +1183,22 @@
                         },
                         "example": true,
                         "enum": [
-                          "true -- Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
-                          "false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe."
+                          {
+                            "title": "true",
+                            "description": {
+                              "es": " Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
+                              "pt": " Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
+                              "en": " Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis."
+                            }
+                          },
+                          {
+                            "title": "false",
+                            "description": {
+                              "es": " Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.",
+                              "pt": " Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.",
+                              "en": " Charge the amount of the subscription regardless of when in the billing cycle customer subscribe."
+                            }
+                          }
                         ]
                       },
                       "free_trial": {
@@ -1122,8 +1227,22 @@
                             },
                             "example": "months",
                             "enum": [
-                              "days -- Indicate a frequency in units of days",
-                              "months -- Indicate a frequency in units of months"
+                              {
+                                "title": "days",
+                                "description": {
+                                  "es": " Indicate a frequency in units of days",
+                                  "pt": " Indicate a frequency in units of days",
+                                  "en": " Indicate a frequency in units of days"
+                                }
+                              },
+                              {
+                                "title": "months",
+                                "description": {
+                                  "es": " Indicate a frequency in units of months",
+                                  "pt": " Indicate a frequency in units of months",
+                                  "en": " Indicate a frequency in units of months"
+                                }
+                              }
                             ]
                           }
                         }
@@ -1147,13 +1266,62 @@
                         },
                         "example": "ARS",
                         "enum": [
-                          "ARS -- Argentine peso.",
-                          "BRL -- Brazilian real.",
-                          "CLP -- Chilean peso.",
-                          "MXN -- Mexican peso.",
-                          "COP -- Colombian peso.",
-                          "PEN -- Peruvian sol.",
-                          "UYU -- Uruguayan peso."
+                          {
+                            "title": "ARS",
+                            "description": {
+                              "es": " Argentine peso.",
+                              "pt": " Argentine peso.",
+                              "en": " Argentine peso."
+                            }
+                          },
+                          {
+                            "title": "BRL",
+                            "description": {
+                              "es": " Brazilian real.",
+                              "pt": " Brazilian real.",
+                              "en": " Brazilian real."
+                            }
+                          },
+                          {
+                            "title": "CLP",
+                            "description": {
+                              "es": " Chilean peso.",
+                              "pt": " Chilean peso.",
+                              "en": " Chilean peso."
+                            }
+                          },
+                          {
+                            "title": "MXN",
+                            "description": {
+                              "es": " Mexican peso.",
+                              "pt": " Mexican peso.",
+                              "en": " Mexican peso."
+                            }
+                          },
+                          {
+                            "title": "COP",
+                            "description": {
+                              "es": " Colombian peso.",
+                              "pt": " Colombian peso.",
+                              "en": " Colombian peso."
+                            }
+                          },
+                          {
+                            "title": "PEN",
+                            "description": {
+                              "es": " Peruvian sol.",
+                              "pt": " Peruvian sol.",
+                              "en": " Peruvian sol."
+                            }
+                          },
+                          {
+                            "title": "UYU",
+                            "description": {
+                              "es": " Uruguayan peso.",
+                              "pt": " Uruguayan peso.",
+                              "en": " Uruguayan peso."
+                            }
+                          }
                         ]
                       }
                     }
@@ -2657,13 +2825,62 @@
                         },
                         "example": "ARS",
                         "enum": [
-                          "ARS -- Argentine peso.",
-                          "BRL -- Brazilian real.",
-                          "CLP -- Chilean peso.",
-                          "MXN -- Mexican peso.",
-                          "COP -- Colombian peso.",
-                          "PEN -- Peruvian sol.",
-                          "UYU -- Uruguayan peso."
+                          {
+                            "title": "ARS",
+                            "description": {
+                              "es": " Argentine peso.",
+                              "pt": " Argentine peso.",
+                              "en": " Argentine peso."
+                            }
+                          },
+                          {
+                            "title": "BRL",
+                            "description": {
+                              "es": " Brazilian real.",
+                              "pt": " Brazilian real.",
+                              "en": " Brazilian real."
+                            }
+                          },
+                          {
+                            "title": "CLP",
+                            "description": {
+                              "es": " Chilean peso.",
+                              "pt": " Chilean peso.",
+                              "en": " Chilean peso."
+                            }
+                          },
+                          {
+                            "title": "MXN",
+                            "description": {
+                              "es": " Mexican peso.",
+                              "pt": " Mexican peso.",
+                              "en": " Mexican peso."
+                            }
+                          },
+                          {
+                            "title": "COP",
+                            "description": {
+                              "es": " Colombian peso.",
+                              "pt": " Colombian peso.",
+                              "en": " Colombian peso."
+                            }
+                          },
+                          {
+                            "title": "PEN",
+                            "description": {
+                              "es": " Peruvian sol.",
+                              "pt": " Peruvian sol.",
+                              "en": " Peruvian sol."
+                            }
+                          },
+                          {
+                            "title": "UYU",
+                            "description": {
+                              "es": " Uruguayan peso.",
+                              "pt": " Uruguayan peso.",
+                              "en": " Uruguayan peso."
+                            }
+                          }
                         ]
                       }
                     }
@@ -2682,10 +2899,38 @@
                     "example": "pending",
                     "description": "Status",
                     "enum": [
-                      "pending -- Preapproval without a payment method",
-                      "authorized -- Preapproval with a valid payment method",
-                      "paused -- Preapproval with temporally discontinued collection of payments",
-                      "cancelled -- Preapproval terminated. This is an irreversible state."
+                      {
+                        "title": "pending",
+                        "description": {
+                          "es": " Preapproval without a payment method",
+                          "pt": " Preapproval without a payment method",
+                          "en": " Preapproval without a payment method"
+                        }
+                      },
+                      {
+                        "title": "authorized",
+                        "description": {
+                          "es": " Preapproval with a valid payment method",
+                          "pt": " Preapproval with a valid payment method",
+                          "en": " Preapproval with a valid payment method"
+                        }
+                      },
+                      {
+                        "title": "paused",
+                        "description": {
+                          "es": " Preapproval with temporally discontinued collection of payments",
+                          "pt": " Preapproval with temporally discontinued collection of payments",
+                          "en": " Preapproval with temporally discontinued collection of payments"
+                        }
+                      },
+                      {
+                        "title": "cancelled",
+                        "description": {
+                          "es": " Preapproval terminated. This is an irreversible state.",
+                          "pt": " Preapproval terminated. This is an irreversible state.",
+                          "en": " Preapproval terminated. This is an irreversible state."
+                        }
+                      }
                     ]
                   }
                 }
@@ -3410,10 +3655,38 @@
               "type": "string",
               "example": "authorized,cancelled,paused",
               "enum": [
-                "pending -- Preapproval without a payment method.",
-                "authorized -- Preapproval with a valid payment method.",
-                "paused -- Preapproval with temporally discontinued collection of payments.",
-                "cancelled -- Preapproval terminated. This is an irreversible state."
+                {
+                  "title": "pending",
+                  "description": {
+                    "es": " Preapproval without a payment method.",
+                    "pt": " Preapproval without a payment method.",
+                    "en": " Preapproval without a payment method."
+                  }
+                },
+                {
+                  "title": "authorized",
+                  "description": {
+                    "es": " Preapproval with a valid payment method.",
+                    "pt": " Preapproval with a valid payment method.",
+                    "en": " Preapproval with a valid payment method."
+                  }
+                },
+                {
+                  "title": "paused",
+                  "description": {
+                    "es": " Preapproval with temporally discontinued collection of payments.",
+                    "pt": " Preapproval with temporally discontinued collection of payments.",
+                    "en": " Preapproval with temporally discontinued collection of payments."
+                  }
+                },
+                {
+                  "title": "cancelled",
+                  "description": {
+                    "es": " Preapproval terminated. This is an irreversible state.",
+                    "pt": " Preapproval terminated. This is an irreversible state.",
+                    "en": " Preapproval terminated. This is an irreversible state."
+                  }
+                }
               ]
             }
           },
@@ -3429,8 +3702,14 @@
               "type": "string",
               "example": "payer_id:asc",
               "enum": [
-                "asc - Ascending sort",
-                "desc - Descending sort"
+                {
+                  "title": "asc - Ascending sort",
+                  "description": {}
+                },
+                {
+                  "title": "desc - Descending sort",
+                  "description": {}
+                }
               ]
             }
           }
@@ -3498,10 +3777,38 @@
                       "example": "pending",
                       "description": "Status",
                       "enum": [
-                        "pending -- Preapproval without a payment method.",
-                        "authorized -- Preapproval with a valid payment method.",
-                        "paused -- Preapproval with temporally discontinued collection of payments.",
-                        "cancelled -- Preapproval terminated. This is an irreversible state."
+                        {
+                          "title": "pending",
+                          "description": {
+                            "es": " Preapproval without a payment method.",
+                            "pt": " Preapproval without a payment method.",
+                            "en": " Preapproval without a payment method."
+                          }
+                        },
+                        {
+                          "title": "authorized",
+                          "description": {
+                            "es": " Preapproval with a valid payment method.",
+                            "pt": " Preapproval with a valid payment method.",
+                            "en": " Preapproval with a valid payment method."
+                          }
+                        },
+                        {
+                          "title": "paused",
+                          "description": {
+                            "es": " Preapproval with temporally discontinued collection of payments.",
+                            "pt": " Preapproval with temporally discontinued collection of payments.",
+                            "en": " Preapproval with temporally discontinued collection of payments."
+                          }
+                        },
+                        {
+                          "title": "cancelled",
+                          "description": {
+                            "es": " Preapproval terminated. This is an irreversible state.",
+                            "pt": " Preapproval terminated. This is an irreversible state.",
+                            "en": " Preapproval terminated. This is an irreversible state."
+                          }
+                        }
                       ]
                     },
                     "reason": {
@@ -3577,8 +3884,14 @@
                       },
                       "example": "months",
                       "enum": [
-                        "days - Indicate a frequency in units of days",
-                        "months - Indicate a frequency in units of months"
+                        {
+                          "title": "days - Indicate a frequency in units of days",
+                          "description": {}
+                        },
+                        {
+                          "title": "months - Indicate a frequency in units of months",
+                          "description": {}
+                        }
                       ]
                     },
                     "transaction_amount": {
@@ -3599,13 +3912,62 @@
                       },
                       "example": "ARS",
                       "enum": [
-                        "ARS -- Argentine peso.",
-                        "BRL -- Brazilian real.",
-                        "CLP -- Chilean peso.",
-                        "MXN -- Mexican peso.",
-                        "COP -- Colombian peso.",
-                        "PEN -- Peruvian sol.",
-                        "UYU -- Uruguayan peso."
+                        {
+                          "title": "ARS",
+                          "description": {
+                            "es": " Argentine peso.",
+                            "pt": " Argentine peso.",
+                            "en": " Argentine peso."
+                          }
+                        },
+                        {
+                          "title": "BRL",
+                          "description": {
+                            "es": " Brazilian real.",
+                            "pt": " Brazilian real.",
+                            "en": " Brazilian real."
+                          }
+                        },
+                        {
+                          "title": "CLP",
+                          "description": {
+                            "es": " Chilean peso.",
+                            "pt": " Chilean peso.",
+                            "en": " Chilean peso."
+                          }
+                        },
+                        {
+                          "title": "MXN",
+                          "description": {
+                            "es": " Mexican peso.",
+                            "pt": " Mexican peso.",
+                            "en": " Mexican peso."
+                          }
+                        },
+                        {
+                          "title": "COP",
+                          "description": {
+                            "es": " Colombian peso.",
+                            "pt": " Colombian peso.",
+                            "en": " Colombian peso."
+                          }
+                        },
+                        {
+                          "title": "PEN",
+                          "description": {
+                            "es": " Peruvian sol.",
+                            "pt": " Peruvian sol.",
+                            "en": " Peruvian sol."
+                          }
+                        },
+                        {
+                          "title": "UYU",
+                          "description": {
+                            "es": " Uruguayan peso.",
+                            "pt": " Uruguayan peso.",
+                            "en": " Uruguayan peso."
+                          }
+                        }
                       ]
                     },
                     "start_date": {
@@ -3651,8 +4013,22 @@
                       },
                       "example": true,
                       "enum": [
-                        "true -- Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
-                        "false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe."
+                        {
+                          "title": "true",
+                          "description": {
+                            "es": " Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
+                            "pt": " Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
+                            "en": " Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis."
+                          }
+                        },
+                        {
+                          "title": "false",
+                          "description": {
+                            "es": " Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.",
+                            "pt": " Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.",
+                            "en": " Charge the amount of the subscription regardless of when in the billing cycle customer subscribe."
+                          }
+                        }
                       ]
                     },
                     "quotas": {
@@ -3705,10 +4081,38 @@
                       "description": "Preapproval collection status summary.",
                       "example": "green",
                       "enum": [
-                        "green -- All collections made.",
-                        "yellow -- With collection problems. We are trying to collect an invoice.",
-                        "red -- With pending collections. An invoice could not be collected.",
-                        "blank -- Discounted collection."
+                        {
+                          "title": "green",
+                          "description": {
+                            "es": " All collections made.",
+                            "pt": " All collections made.",
+                            "en": " All collections made."
+                          }
+                        },
+                        {
+                          "title": "yellow",
+                          "description": {
+                            "es": " With collection problems. We are trying to collect an invoice.",
+                            "pt": " With collection problems. We are trying to collect an invoice.",
+                            "en": " With collection problems. We are trying to collect an invoice."
+                          }
+                        },
+                        {
+                          "title": "red",
+                          "description": {
+                            "es": " With pending collections. An invoice could not be collected.",
+                            "pt": " With pending collections. An invoice could not be collected.",
+                            "en": " With pending collections. An invoice could not be collected."
+                          }
+                        },
+                        {
+                          "title": "blank",
+                          "description": {
+                            "es": " Discounted collection.",
+                            "pt": " Discounted collection.",
+                            "en": " Discounted collection."
+                          }
+                        }
                       ]
                     },
                     "last_charge_date": {
@@ -4503,7 +4907,14 @@
                             },
                             "example": "scheduled",
                             "enum": [
-                              "scheduled -- Automatically generated and scheduled by the recurrence engine"
+                              {
+                                "title": "scheduled",
+                                "description": {
+                                  "es": " Automatically generated and scheduled by the recurrence engine",
+                                  "pt": " Automatically generated and scheduled by the recurrence engine",
+                                  "en": " Automatically generated and scheduled by the recurrence engine"
+                                }
+                              }
                             ]
                           },
                           "date_created": {
@@ -4560,13 +4971,62 @@
                             },
                             "example": "ARS",
                             "enum": [
-                              "ARS -- Argentine peso.",
-                              "BRL -- Brazilian real.",
-                              "CLP -- Chilean peso.",
-                              "MXN -- Mexican peso.",
-                              "COP -- Colombian peso.",
-                              "PEN -- Peruvian sol.",
-                              "UYU -- Uruguayan peso."
+                              {
+                                "title": "ARS",
+                                "description": {
+                                  "es": " Argentine peso.",
+                                  "pt": " Argentine peso.",
+                                  "en": " Argentine peso."
+                                }
+                              },
+                              {
+                                "title": "BRL",
+                                "description": {
+                                  "es": " Brazilian real.",
+                                  "pt": " Brazilian real.",
+                                  "en": " Brazilian real."
+                                }
+                              },
+                              {
+                                "title": "CLP",
+                                "description": {
+                                  "es": " Chilean peso.",
+                                  "pt": " Chilean peso.",
+                                  "en": " Chilean peso."
+                                }
+                              },
+                              {
+                                "title": "MXN",
+                                "description": {
+                                  "es": " Mexican peso.",
+                                  "pt": " Mexican peso.",
+                                  "en": " Mexican peso."
+                                }
+                              },
+                              {
+                                "title": "COP",
+                                "description": {
+                                  "es": " Colombian peso.",
+                                  "pt": " Colombian peso.",
+                                  "en": " Colombian peso."
+                                }
+                              },
+                              {
+                                "title": "PEN",
+                                "description": {
+                                  "es": " Peruvian sol.",
+                                  "pt": " Peruvian sol.",
+                                  "en": " Peruvian sol."
+                                }
+                              },
+                              {
+                                "title": "UYU",
+                                "description": {
+                                  "es": " Uruguayan peso.",
+                                  "pt": " Uruguayan peso.",
+                                  "en": " Uruguayan peso."
+                                }
+                              }
                             ]
                           },
                           "transaction_amount": {
@@ -4605,10 +5065,38 @@
                             },
                             "example": "scheduled",
                             "enum": [
-                              "scheduled -- Authorized payment scheduled to collect",
-                              "processed -- Authorized payment collected or exceeded retries",
-                              "recycling -- Authorized payment in attempt to collect",
-                              "cancelled -- Authorized payment canceled"
+                              {
+                                "title": "scheduled",
+                                "description": {
+                                  "es": " Authorized payment scheduled to collect",
+                                  "pt": " Authorized payment scheduled to collect",
+                                  "en": " Authorized payment scheduled to collect"
+                                }
+                              },
+                              {
+                                "title": "processed",
+                                "description": {
+                                  "es": " Authorized payment collected or exceeded retries",
+                                  "pt": " Authorized payment collected or exceeded retries",
+                                  "en": " Authorized payment collected or exceeded retries"
+                                }
+                              },
+                              {
+                                "title": "recycling",
+                                "description": {
+                                  "es": " Authorized payment in attempt to collect",
+                                  "pt": " Authorized payment in attempt to collect",
+                                  "en": " Authorized payment in attempt to collect"
+                                }
+                              },
+                              {
+                                "title": "cancelled",
+                                "description": {
+                                  "es": " Authorized payment canceled",
+                                  "pt": " Authorized payment canceled",
+                                  "en": " Authorized payment canceled"
+                                }
+                              }
                             ]
                           },
                           "summarized": {
@@ -4620,8 +5108,22 @@
                             },
                             "example": "pending",
                             "enum": [
-                              "pending -- Pending summary in the subscription.",
-                              "done -- Summarized result in the subscription."
+                              {
+                                "title": "pending",
+                                "description": {
+                                  "es": " Pending summary in the subscription.",
+                                  "pt": " Pending summary in the subscription.",
+                                  "en": " Pending summary in the subscription."
+                                }
+                              },
+                              {
+                                "title": "done",
+                                "description": {
+                                  "es": " Summarized result in the subscription.",
+                                  "pt": " Summarized result in the subscription.",
+                                  "en": " Summarized result in the subscription."
+                                }
+                              }
                             ]
                           },
                           "payment": {
@@ -4646,15 +5148,78 @@
                                 },
                                 "example": "approved",
                                 "enum": [
-                                  "pending -- The user has not yet completed the payment process",
-                                  "approved -- The payment has been approved and accredited",
-                                  "authorized -- The payment has been authorized but not captured yet",
-                                  "in_process -- Payment is being reviewed",
-                                  "in_mediation -- Users have initiated a dispute",
-                                  "rejected -- Payment was rejected. The user may retry payment",
-                                  "cancelled -- Payment was cancelled by one of the parties or because time for payment has expired",
-                                  "refunded -- Payment was refunded to the user",
-                                  "charged_back -- Was made a chargeback in the buyer’s credit card"
+                                  {
+                                    "title": "pending",
+                                    "description": {
+                                      "es": " The user has not yet completed the payment process",
+                                      "pt": " The user has not yet completed the payment process",
+                                      "en": " The user has not yet completed the payment process"
+                                    }
+                                  },
+                                  {
+                                    "title": "approved",
+                                    "description": {
+                                      "es": " The payment has been approved and accredited",
+                                      "pt": " The payment has been approved and accredited",
+                                      "en": " The payment has been approved and accredited"
+                                    }
+                                  },
+                                  {
+                                    "title": "authorized",
+                                    "description": {
+                                      "es": " The payment has been authorized but not captured yet",
+                                      "pt": " The payment has been authorized but not captured yet",
+                                      "en": " The payment has been authorized but not captured yet"
+                                    }
+                                  },
+                                  {
+                                    "title": "in_process",
+                                    "description": {
+                                      "es": " Payment is being reviewed",
+                                      "pt": " Payment is being reviewed",
+                                      "en": " Payment is being reviewed"
+                                    }
+                                  },
+                                  {
+                                    "title": "in_mediation",
+                                    "description": {
+                                      "es": " Users have initiated a dispute",
+                                      "pt": " Users have initiated a dispute",
+                                      "en": " Users have initiated a dispute"
+                                    }
+                                  },
+                                  {
+                                    "title": "rejected",
+                                    "description": {
+                                      "es": " Payment was rejected. The user may retry payment",
+                                      "pt": " Payment was rejected. The user may retry payment",
+                                      "en": " Payment was rejected. The user may retry payment"
+                                    }
+                                  },
+                                  {
+                                    "title": "cancelled",
+                                    "description": {
+                                      "es": " Payment was cancelled by one of the parties or because time for payment has expired",
+                                      "pt": " Payment was cancelled by one of the parties or because time for payment has expired",
+                                      "en": " Payment was cancelled by one of the parties or because time for payment has expired"
+                                    }
+                                  },
+                                  {
+                                    "title": "refunded",
+                                    "description": {
+                                      "es": " Payment was refunded to the user",
+                                      "pt": " Payment was refunded to the user",
+                                      "en": " Payment was refunded to the user"
+                                    }
+                                  },
+                                  {
+                                    "title": "charged_back",
+                                    "description": {
+                                      "es": " Was made a chargeback in the buyer’s credit card",
+                                      "pt": " Was made a chargeback in the buyer’s credit card",
+                                      "en": " Was made a chargeback in the buyer’s credit card"
+                                    }
+                                  }
                                 ]
                               },
                               "status_detail": {
@@ -5370,8 +5935,22 @@
                         },
                         "example": "months",
                         "enum": [
-                          "days -- Indicate a frequency in units of days",
-                          "months -- Indicate a frequency in units of months"
+                          {
+                            "title": "days",
+                            "description": {
+                              "es": " Indicate a frequency in units of days",
+                              "pt": " Indicate a frequency in units of days",
+                              "en": " Indicate a frequency in units of days"
+                            }
+                          },
+                          {
+                            "title": "months",
+                            "description": {
+                              "es": " Indicate a frequency in units of months",
+                              "pt": " Indicate a frequency in units of months",
+                              "en": " Indicate a frequency in units of months"
+                            }
+                          }
                         ]
                       },
                       "repetitions": {
@@ -5401,8 +5980,22 @@
                         },
                         "example": true,
                         "enum": [
-                          "true -- Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
-                          "false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe."
+                          {
+                            "title": "true",
+                            "description": {
+                              "es": " Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
+                              "pt": " Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
+                              "en": " Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis."
+                            }
+                          },
+                          {
+                            "title": "false",
+                            "description": {
+                              "es": " Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.",
+                              "pt": " Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.",
+                              "en": " Charge the amount of the subscription regardless of when in the billing cycle customer subscribe."
+                            }
+                          }
                         ]
                       },
                       "free_trial": {
@@ -5432,8 +6025,22 @@
                             },
                             "example": "months",
                             "enum": [
-                              "days -- Indicate a frequency in units of days",
-                              "months -- Indicate a frequency in units of months"
+                              {
+                                "title": "days",
+                                "description": {
+                                  "es": " Indicate a frequency in units of days",
+                                  "pt": " Indicate a frequency in units of days",
+                                  "en": " Indicate a frequency in units of days"
+                                }
+                              },
+                              {
+                                "title": "months",
+                                "description": {
+                                  "es": " Indicate a frequency in units of months",
+                                  "pt": " Indicate a frequency in units of months",
+                                  "en": " Indicate a frequency in units of months"
+                                }
+                              }
                             ]
                           }
                         }
@@ -5456,13 +6063,62 @@
                         },
                         "example": "ARS",
                         "enum": [
-                          "ARS -- Argentine peso.",
-                          "BRL -- Brazilian real.",
-                          "CLP -- Chilean peso.",
-                          "MXN -- Mexican peso.",
-                          "COP -- Colombian peso.",
-                          "PEN -- Peruvian sol.",
-                          "UYU -- Uruguayan peso."
+                          {
+                            "title": "ARS",
+                            "description": {
+                              "es": " Argentine peso.",
+                              "pt": " Argentine peso.",
+                              "en": " Argentine peso."
+                            }
+                          },
+                          {
+                            "title": "BRL",
+                            "description": {
+                              "es": " Brazilian real.",
+                              "pt": " Brazilian real.",
+                              "en": " Brazilian real."
+                            }
+                          },
+                          {
+                            "title": "CLP",
+                            "description": {
+                              "es": " Chilean peso.",
+                              "pt": " Chilean peso.",
+                              "en": " Chilean peso."
+                            }
+                          },
+                          {
+                            "title": "MXN",
+                            "description": {
+                              "es": " Mexican peso.",
+                              "pt": " Mexican peso.",
+                              "en": " Mexican peso."
+                            }
+                          },
+                          {
+                            "title": "COP",
+                            "description": {
+                              "es": " Colombian peso.",
+                              "pt": " Colombian peso.",
+                              "en": " Colombian peso."
+                            }
+                          },
+                          {
+                            "title": "PEN",
+                            "description": {
+                              "es": " Peruvian sol.",
+                              "pt": " Peruvian sol.",
+                              "en": " Peruvian sol."
+                            }
+                          },
+                          {
+                            "title": "UYU",
+                            "description": {
+                              "es": " Uruguayan peso.",
+                              "pt": " Uruguayan peso.",
+                              "en": " Uruguayan peso."
+                            }
+                          }
                         ]
                       }
                     }
@@ -6119,8 +6775,22 @@
               "type": "string",
               "example": "asc",
               "enum": [
-                "asc -- Ascending sort",
-                "desc -- Descending sort"
+                {
+                  "title": "asc",
+                  "description": {
+                    "es": " Ascending sort",
+                    "pt": " Ascending sort",
+                    "en": " Ascending sort"
+                  }
+                },
+                {
+                  "title": "desc",
+                  "description": {
+                    "es": " Descending sort",
+                    "pt": " Descending sort",
+                    "en": " Descending sort"
+                  }
+                }
               ]
             }
           },
@@ -6277,8 +6947,22 @@
                                 },
                                 "example": "months",
                                 "enum": [
-                                  "days -- Indicate a frequency in units of days",
-                                  "months -- Indicate a frequency in units of months"
+                                  {
+                                    "title": "days",
+                                    "description": {
+                                      "es": " Indicate a frequency in units of days",
+                                      "pt": " Indicate a frequency in units of days",
+                                      "en": " Indicate a frequency in units of days"
+                                    }
+                                  },
+                                  {
+                                    "title": "months",
+                                    "description": {
+                                      "es": " Indicate a frequency in units of months",
+                                      "pt": " Indicate a frequency in units of months",
+                                      "en": " Indicate a frequency in units of months"
+                                    }
+                                  }
                                 ]
                               },
                               "repetitions": {
@@ -6308,8 +6992,22 @@
                                 },
                                 "example": true,
                                 "enum": [
-                                  "true -- Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
-                                  "false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe."
+                                  {
+                                    "title": "true",
+                                    "description": {
+                                      "es": " Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
+                                      "pt": " Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
+                                      "en": " Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis."
+                                    }
+                                  },
+                                  {
+                                    "title": "false",
+                                    "description": {
+                                      "es": " Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.",
+                                      "pt": " Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.",
+                                      "en": " Charge the amount of the subscription regardless of when in the billing cycle customer subscribe."
+                                    }
+                                  }
                                 ]
                               },
                               "free_trial": {
@@ -6338,8 +7036,22 @@
                                     },
                                     "example": "months",
                                     "enum": [
-                                      "days -- Indicate a frequency in units of days",
-                                      "months -- Indicate a frequency in units of months"
+                                      {
+                                        "title": "days",
+                                        "description": {
+                                          "es": " Indicate a frequency in units of days",
+                                          "pt": " Indicate a frequency in units of days",
+                                          "en": " Indicate a frequency in units of days"
+                                        }
+                                      },
+                                      {
+                                        "title": "months",
+                                        "description": {
+                                          "es": " Indicate a frequency in units of months",
+                                          "pt": " Indicate a frequency in units of months",
+                                          "en": " Indicate a frequency in units of months"
+                                        }
+                                      }
                                     ]
                                   },
                                   "first_invoice_offset": {
@@ -6367,13 +7079,62 @@
                                 },
                                 "example": "ARS",
                                 "enum": [
-                                  "ARS -- Argentine peso.",
-                                  "BRL -- Brazilian real.",
-                                  "CLP -- Chilean peso.",
-                                  "MXN -- Mexican peso.",
-                                  "COP -- Colombian peso.",
-                                  "PEN -- Peruvian sol.",
-                                  "UYU -- Uruguayan peso."
+                                  {
+                                    "title": "ARS",
+                                    "description": {
+                                      "es": " Argentine peso.",
+                                      "pt": " Argentine peso.",
+                                      "en": " Argentine peso."
+                                    }
+                                  },
+                                  {
+                                    "title": "BRL",
+                                    "description": {
+                                      "es": " Brazilian real.",
+                                      "pt": " Brazilian real.",
+                                      "en": " Brazilian real."
+                                    }
+                                  },
+                                  {
+                                    "title": "CLP",
+                                    "description": {
+                                      "es": " Chilean peso.",
+                                      "pt": " Chilean peso.",
+                                      "en": " Chilean peso."
+                                    }
+                                  },
+                                  {
+                                    "title": "MXN",
+                                    "description": {
+                                      "es": " Mexican peso.",
+                                      "pt": " Mexican peso.",
+                                      "en": " Mexican peso."
+                                    }
+                                  },
+                                  {
+                                    "title": "COP",
+                                    "description": {
+                                      "es": " Colombian peso.",
+                                      "pt": " Colombian peso.",
+                                      "en": " Colombian peso."
+                                    }
+                                  },
+                                  {
+                                    "title": "PEN",
+                                    "description": {
+                                      "es": " Peruvian sol.",
+                                      "pt": " Peruvian sol.",
+                                      "en": " Peruvian sol."
+                                    }
+                                  },
+                                  {
+                                    "title": "UYU",
+                                    "description": {
+                                      "es": " Uruguayan peso.",
+                                      "pt": " Uruguayan peso.",
+                                      "en": " Uruguayan peso."
+                                    }
+                                  }
                                 ]
                               }
                             }
@@ -6498,8 +7259,22 @@
                               "pt": "Status do plano."
                             },
                             "enum": [
-                              "active -- Plan available to create subscriptions",
-                              "cancelled -- Plan not available to create subscriptions"
+                              {
+                                "title": "active",
+                                "description": {
+                                  "es": " Plan available to create subscriptions",
+                                  "pt": " Plan available to create subscriptions",
+                                  "en": " Plan available to create subscriptions"
+                                }
+                              },
+                              {
+                                "title": "cancelled",
+                                "description": {
+                                  "es": " Plan not available to create subscriptions",
+                                  "pt": " Plan not available to create subscriptions",
+                                  "en": " Plan not available to create subscriptions"
+                                }
+                              }
                             ]
                           }
                         }
@@ -6709,10 +7484,38 @@
               "type": "string",
               "example": "green",
               "enum": [
-                "green -- All collections made.",
-                "yellow -- With collection problems. We are trying to collect an invoice.",
-                "red -- With pending collections. An invoice could not be collected.",
-                "blank -- Discounted collection."
+                {
+                  "title": "green",
+                  "description": {
+                    "es": " All collections made.",
+                    "pt": " All collections made.",
+                    "en": " All collections made."
+                  }
+                },
+                {
+                  "title": "yellow",
+                  "description": {
+                    "es": " With collection problems. We are trying to collect an invoice.",
+                    "pt": " With collection problems. We are trying to collect an invoice.",
+                    "en": " With collection problems. We are trying to collect an invoice."
+                  }
+                },
+                {
+                  "title": "red",
+                  "description": {
+                    "es": " With pending collections. An invoice could not be collected.",
+                    "pt": " With pending collections. An invoice could not be collected.",
+                    "en": " With pending collections. An invoice could not be collected."
+                  }
+                },
+                {
+                  "title": "blank",
+                  "description": {
+                    "es": " Discounted collection.",
+                    "pt": " Discounted collection.",
+                    "en": " Discounted collection."
+                  }
+                }
               ]
             }
           },
@@ -6728,10 +7531,38 @@
               "type": "string",
               "example": "authorized,cancelled,paused",
               "enum": [
-                "pending -- Preapproval without a payment method.",
-                "authorized -- Preapproval with a valid payment method.",
-                "paused -- Preapproval with temporally discontinued collection of payments.",
-                "cancelled -- Preapproval terminated. This is an irreversible state."
+                {
+                  "title": "pending",
+                  "description": {
+                    "es": " Preapproval without a payment method.",
+                    "pt": " Preapproval without a payment method.",
+                    "en": " Preapproval without a payment method."
+                  }
+                },
+                {
+                  "title": "authorized",
+                  "description": {
+                    "es": " Preapproval with a valid payment method.",
+                    "pt": " Preapproval with a valid payment method.",
+                    "en": " Preapproval with a valid payment method."
+                  }
+                },
+                {
+                  "title": "paused",
+                  "description": {
+                    "es": " Preapproval with temporally discontinued collection of payments.",
+                    "pt": " Preapproval with temporally discontinued collection of payments.",
+                    "en": " Preapproval with temporally discontinued collection of payments."
+                  }
+                },
+                {
+                  "title": "cancelled",
+                  "description": {
+                    "es": " Preapproval terminated. This is an irreversible state.",
+                    "pt": " Preapproval terminated. This is an irreversible state.",
+                    "en": " Preapproval terminated. This is an irreversible state."
+                  }
+                }
               ]
             }
           },
@@ -6747,8 +7578,22 @@
               "type": "string",
               "example": "payer_id:asc",
               "enum": [
-                "asc -- Ascending sort",
-                "desc -- Descending sort"
+                {
+                  "title": "asc",
+                  "description": {
+                    "es": " Ascending sort",
+                    "pt": " Ascending sort",
+                    "en": " Ascending sort"
+                  }
+                },
+                {
+                  "title": "desc",
+                  "description": {
+                    "es": " Descending sort",
+                    "pt": " Descending sort",
+                    "en": " Descending sort"
+                  }
+                }
               ]
             }
           },
@@ -6946,8 +7791,22 @@
                                 },
                                 "example": "months",
                                 "enum": [
-                                  "days -- Indicate a frequency in units of days",
-                                  "months -- Indicate a frequency in units of months"
+                                  {
+                                    "title": "days",
+                                    "description": {
+                                      "es": " Indicate a frequency in units of days",
+                                      "pt": " Indicate a frequency in units of days",
+                                      "en": " Indicate a frequency in units of days"
+                                    }
+                                  },
+                                  {
+                                    "title": "months",
+                                    "description": {
+                                      "es": " Indicate a frequency in units of months",
+                                      "pt": " Indicate a frequency in units of months",
+                                      "en": " Indicate a frequency in units of months"
+                                    }
+                                  }
                                 ]
                               },
                               "start_date": {
@@ -6979,13 +7838,62 @@
                                 },
                                 "example": "ARS",
                                 "enum": [
-                                  "ARS -- Argentine peso.",
-                                  "BRL -- Brazilian real.",
-                                  "CLP -- Chilean peso.",
-                                  "MXN -- Mexican peso.",
-                                  "COP -- Colombian peso.",
-                                  "PEN -- Peruvian sol.",
-                                  "UYU -- Uruguayan peso."
+                                  {
+                                    "title": "ARS",
+                                    "description": {
+                                      "es": " Argentine peso.",
+                                      "pt": " Argentine peso.",
+                                      "en": " Argentine peso."
+                                    }
+                                  },
+                                  {
+                                    "title": "BRL",
+                                    "description": {
+                                      "es": " Brazilian real.",
+                                      "pt": " Brazilian real.",
+                                      "en": " Brazilian real."
+                                    }
+                                  },
+                                  {
+                                    "title": "CLP",
+                                    "description": {
+                                      "es": " Chilean peso.",
+                                      "pt": " Chilean peso.",
+                                      "en": " Chilean peso."
+                                    }
+                                  },
+                                  {
+                                    "title": "MXN",
+                                    "description": {
+                                      "es": " Mexican peso.",
+                                      "pt": " Mexican peso.",
+                                      "en": " Mexican peso."
+                                    }
+                                  },
+                                  {
+                                    "title": "COP",
+                                    "description": {
+                                      "es": " Colombian peso.",
+                                      "pt": " Colombian peso.",
+                                      "en": " Colombian peso."
+                                    }
+                                  },
+                                  {
+                                    "title": "PEN",
+                                    "description": {
+                                      "es": " Peruvian sol.",
+                                      "pt": " Peruvian sol.",
+                                      "en": " Peruvian sol."
+                                    }
+                                  },
+                                  {
+                                    "title": "UYU",
+                                    "description": {
+                                      "es": " Uruguayan peso.",
+                                      "pt": " Uruguayan peso.",
+                                      "en": " Uruguayan peso."
+                                    }
+                                  }
                                 ]
                               },
                               "transaction_amount": {
@@ -7023,8 +7931,22 @@
                                     },
                                     "example": "months",
                                     "enum": [
-                                      "days -- Indicate a frequency in units of days",
-                                      "months -- Indicate a frequency in units of months"
+                                      {
+                                        "title": "days",
+                                        "description": {
+                                          "es": " Indicate a frequency in units of days",
+                                          "pt": " Indicate a frequency in units of days",
+                                          "en": " Indicate a frequency in units of days"
+                                        }
+                                      },
+                                      {
+                                        "title": "months",
+                                        "description": {
+                                          "es": " Indicate a frequency in units of months",
+                                          "pt": " Indicate a frequency in units of months",
+                                          "en": " Indicate a frequency in units of months"
+                                        }
+                                      }
                                     ]
                                   }
                                 }
@@ -7192,10 +8114,38 @@
                                 },
                                 "example": "green",
                                 "enum": [
-                                  "green -- All collections made.",
-                                  "yellow -- With collection problems. We are trying to collect an invoice.",
-                                  "red -- With pending collections. An invoice could not be collected.",
-                                  "blank -- Discounted collection."
+                                  {
+                                    "title": "green",
+                                    "description": {
+                                      "es": " All collections made.",
+                                      "pt": " All collections made.",
+                                      "en": " All collections made."
+                                    }
+                                  },
+                                  {
+                                    "title": "yellow",
+                                    "description": {
+                                      "es": " With collection problems. We are trying to collect an invoice.",
+                                      "pt": " With collection problems. We are trying to collect an invoice.",
+                                      "en": " With collection problems. We are trying to collect an invoice."
+                                    }
+                                  },
+                                  {
+                                    "title": "red",
+                                    "description": {
+                                      "es": " With pending collections. An invoice could not be collected.",
+                                      "pt": " With pending collections. An invoice could not be collected.",
+                                      "en": " With pending collections. An invoice could not be collected."
+                                    }
+                                  },
+                                  {
+                                    "title": "blank",
+                                    "description": {
+                                      "es": " Discounted collection.",
+                                      "pt": " Discounted collection.",
+                                      "en": " Discounted collection."
+                                    }
+                                  }
                                 ]
                               }
                             }
@@ -7205,10 +8155,38 @@
                             "example": "pending",
                             "description": "Status",
                             "enum": [
-                              "pending -- Preapproval without a payment method.",
-                              "authorized -- Preapproval with a valid payment method.",
-                              "paused -- Preapproval with temporally discontinued collection of payments.",
-                              "cancelled -- Preapproval terminated. This is an irreversible state."
+                              {
+                                "title": "pending",
+                                "description": {
+                                  "es": " Preapproval without a payment method.",
+                                  "pt": " Preapproval without a payment method.",
+                                  "en": " Preapproval without a payment method."
+                                }
+                              },
+                              {
+                                "title": "authorized",
+                                "description": {
+                                  "es": " Preapproval with a valid payment method.",
+                                  "pt": " Preapproval with a valid payment method.",
+                                  "en": " Preapproval with a valid payment method."
+                                }
+                              },
+                              {
+                                "title": "paused",
+                                "description": {
+                                  "es": " Preapproval with temporally discontinued collection of payments.",
+                                  "pt": " Preapproval with temporally discontinued collection of payments.",
+                                  "en": " Preapproval with temporally discontinued collection of payments."
+                                }
+                              },
+                              {
+                                "title": "cancelled",
+                                "description": {
+                                  "es": " Preapproval terminated. This is an irreversible state.",
+                                  "pt": " Preapproval terminated. This is an irreversible state.",
+                                  "en": " Preapproval terminated. This is an irreversible state."
+                                }
+                              }
                             ]
                           }
                         }

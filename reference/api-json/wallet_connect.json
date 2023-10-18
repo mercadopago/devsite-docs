@@ -1293,8 +1293,22 @@
                               "pt": "O status de um pagamento feito pelo Advanced Payments internal-api.mercadopago.com"
                             },
                             "enum": [
-                              "approved--approved",
-                              "in_process--in process"
+                              {
+                                "title": "approved",
+                                "description": {
+                                  "es": "approved",
+                                  "pt": "approved",
+                                  "en": "approved"
+                                }
+                              },
+                              {
+                                "title": "in_process",
+                                "description": {
+                                  "es": "in process",
+                                  "pt": "in process",
+                                  "en": "in process"
+                                }
+                              }
                             ]
                           },
                           "status_detail": {
@@ -1314,9 +1328,30 @@
                               "pt": "Tipo de pagamento preferido pelo pagador."
                             },
                             "enum": [
-                              "credit_card--credit card",
-                              "debit_card--debit card",
-                              "account_money--account money"
+                              {
+                                "title": "credit_card",
+                                "description": {
+                                  "es": "credit card",
+                                  "pt": "credit card",
+                                  "en": "credit card"
+                                }
+                              },
+                              {
+                                "title": "debit_card",
+                                "description": {
+                                  "es": "debit card",
+                                  "pt": "debit card",
+                                  "en": "debit card"
+                                }
+                              },
+                              {
+                                "title": "account_money",
+                                "description": {
+                                  "es": "account money",
+                                  "pt": "account money",
+                                  "en": "account money"
+                                }
+                              }
                             ]
                           },
                           "payment_method_id": {
@@ -1794,8 +1829,22 @@
                               "pt": "O status de um pagamento feito pelo Advanced Payments internal-api.mercadopago.com"
                             },
                             "enum": [
-                              "approved--approved",
-                              "in_process--in process"
+                              {
+                                "title": "approved",
+                                "description": {
+                                  "es": "approved",
+                                  "pt": "approved",
+                                  "en": "approved"
+                                }
+                              },
+                              {
+                                "title": "in_process",
+                                "description": {
+                                  "es": "in process",
+                                  "pt": "in process",
+                                  "en": "in process"
+                                }
+                              }
                             ]
                           },
                           "status_detail": {
@@ -1815,9 +1864,30 @@
                               "pt": "Tipo de pagamento preferido pelo pagador."
                             },
                             "enum": [
-                              "credit_card--credit card",
-                              "debit_card--debit card",
-                              "account_money--account money"
+                              {
+                                "title": "credit_card",
+                                "description": {
+                                  "es": "credit card",
+                                  "pt": "credit card",
+                                  "en": "credit card"
+                                }
+                              },
+                              {
+                                "title": "debit_card",
+                                "description": {
+                                  "es": "debit card",
+                                  "pt": "debit card",
+                                  "en": "debit card"
+                                }
+                              },
+                              {
+                                "title": "account_money",
+                                "description": {
+                                  "es": "account money",
+                                  "pt": "account money",
+                                  "en": "account money"
+                                }
+                              }
                             ]
                           },
                           "payment_method_id": {
@@ -2229,8 +2299,22 @@
                               "pt": "O status de um pagamento feito pelo Advanced Payments internal-api.mercadopago.com"
                             },
                             "enum": [
-                              "approved--approved",
-                              "in_process--in process"
+                              {
+                                "title": "approved",
+                                "description": {
+                                  "es": "approved",
+                                  "pt": "approved",
+                                  "en": "approved"
+                                }
+                              },
+                              {
+                                "title": "in_process",
+                                "description": {
+                                  "es": "in process",
+                                  "pt": "in process",
+                                  "en": "in process"
+                                }
+                              }
                             ]
                           },
                           "status_detail": {
@@ -2250,9 +2334,30 @@
                               "pt": "Tipo de pagamento preferido pelo pagador."
                             },
                             "enum": [
-                              "credit_card--credit card",
-                              "debit_card--debit card",
-                              "account_money--account money"
+                              {
+                                "title": "credit_card",
+                                "description": {
+                                  "es": "credit card",
+                                  "pt": "credit card",
+                                  "en": "credit card"
+                                }
+                              },
+                              {
+                                "title": "debit_card",
+                                "description": {
+                                  "es": "debit card",
+                                  "pt": "debit card",
+                                  "en": "debit card"
+                                }
+                              },
+                              {
+                                "title": "account_money",
+                                "description": {
+                                  "es": "account money",
+                                  "pt": "account money",
+                                  "en": "account money"
+                                }
+                              }
                             ]
                           },
                           "payment_method_id": {

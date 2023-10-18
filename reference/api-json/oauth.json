@@ -50,8 +50,22 @@
                     "required": true,
                     "example": "authorization_code",
                     "enum": [
-                      "authorization_code -- used to get the access token for the first time.",
-                      "refresh_token -- it is used to refresh an existing token."
+                      {
+                        "title": "authorization_code",
+                        "description": {
+                          "es": " used to get the access token for the first time.",
+                          "pt": " used to get the access token for the first time.",
+                          "en": " used to get the access token for the first time."
+                        }
+                      },
+                      {
+                        "title": "refresh_token",
+                        "description": {
+                          "es": " it is used to refresh an existing token.",
+                          "pt": " it is used to refresh an existing token.",
+                          "en": " it is used to refresh an existing token."
+                        }
+                      }
                     ]
                   },
                   "code": {

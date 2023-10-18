@@ -494,16 +494,86 @@
                               "pt": "Refere-se ao tipo de identificação. Pode ser dos seguintes tipos."
                             },
                             "enum": [
-                              "CPF -- Individual Taxpayer Registration, Brazil.",
-                              "CNPJ -- National Register of Legal Entities, Brazil.",
-                              "CUIT -- Unique Tax Identification Code, Argentina.",
-                              "CUIL -- Unique Labor Identification Code, Argentina.",
-                              "DNI -- National Identity Document, Argentina.",
-                              "CURP -- Single Population Registration Code, Mexico.",
-                              "RFC -- Federal Registry of Taxpayers, Mexico.",
-                              "CC -- Citizenship Card, Colombia.",
-                              "RUT -- Single Tax List, Chile.",
-                              "CI -- Identity Card, Uruguay."
+                              {
+                                "title": "CPF",
+                                "description": {
+                                  "es": " Individual Taxpayer Registration, Brazil.",
+                                  "pt": " Individual Taxpayer Registration, Brazil.",
+                                  "en": " Individual Taxpayer Registration, Brazil."
+                                }
+                              },
+                              {
+                                "title": "CNPJ",
+                                "description": {
+                                  "es": " National Register of Legal Entities, Brazil.",
+                                  "pt": " National Register of Legal Entities, Brazil.",
+                                  "en": " National Register of Legal Entities, Brazil."
+                                }
+                              },
+                              {
+                                "title": "CUIT",
+                                "description": {
+                                  "es": " Unique Tax Identification Code, Argentina.",
+                                  "pt": " Unique Tax Identification Code, Argentina.",
+                                  "en": " Unique Tax Identification Code, Argentina."
+                                }
+                              },
+                              {
+                                "title": "CUIL",
+                                "description": {
+                                  "es": " Unique Labor Identification Code, Argentina.",
+                                  "pt": " Unique Labor Identification Code, Argentina.",
+                                  "en": " Unique Labor Identification Code, Argentina."
+                                }
+                              },
+                              {
+                                "title": "DNI",
+                                "description": {
+                                  "es": " National Identity Document, Argentina.",
+                                  "pt": " National Identity Document, Argentina.",
+                                  "en": " National Identity Document, Argentina."
+                                }
+                              },
+                              {
+                                "title": "CURP",
+                                "description": {
+                                  "es": " Single Population Registration Code, Mexico.",
+                                  "pt": " Single Population Registration Code, Mexico.",
+                                  "en": " Single Population Registration Code, Mexico."
+                                }
+                              },
+                              {
+                                "title": "RFC",
+                                "description": {
+                                  "es": " Federal Registry of Taxpayers, Mexico.",
+                                  "pt": " Federal Registry of Taxpayers, Mexico.",
+                                  "en": " Federal Registry of Taxpayers, Mexico."
+                                }
+                              },
+                              {
+                                "title": "CC",
+                                "description": {
+                                  "es": " Citizenship Card, Colombia.",
+                                  "pt": " Citizenship Card, Colombia.",
+                                  "en": " Citizenship Card, Colombia."
+                                }
+                              },
+                              {
+                                "title": "RUT",
+                                "description": {
+                                  "es": " Single Tax List, Chile.",
+                                  "pt": " Single Tax List, Chile.",
+                                  "en": " Single Tax List, Chile."
+                                }
+                              },
+                              {
+                                "title": "CI",
+                                "description": {
+                                  "es": " Identity Card, Uruguay.",
+                                  "pt": " Identity Card, Uruguay.",
+                                  "en": " Identity Card, Uruguay."
+                                }
+                              }
                             ]
                           },
                           "number": {
@@ -542,12 +612,54 @@
                       "pt": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos."
                     },
                     "enum": [
-                      "Pix -- Instant digital payment method used in Brazil.",
-                      "Account_money -- When the payment is debited directly from a Mercado Pago account.",
-                      "Debin_transfer -- Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.",
-                      "Ted -- It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;",
-                      "Cvu -- Payment method used in Argentina.",
-                      "PSE -- Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts."
+                      {
+                        "title": "Pix",
+                        "description": {
+                          "es": " Instant digital payment method used in Brazil.",
+                          "pt": " Instant digital payment method used in Brazil.",
+                          "en": " Instant digital payment method used in Brazil."
+                        }
+                      },
+                      {
+                        "title": "Account_money",
+                        "description": {
+                          "es": " When the payment is debited directly from a Mercado Pago account.",
+                          "pt": " When the payment is debited directly from a Mercado Pago account.",
+                          "en": " When the payment is debited directly from a Mercado Pago account."
+                        }
+                      },
+                      {
+                        "title": "Debin_transfer",
+                        "description": {
+                          "es": " Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.",
+                          "pt": " Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.",
+                          "en": " Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization."
+                        }
+                      },
+                      {
+                        "title": "Ted",
+                        "description": {
+                          "es": " It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;",
+                          "pt": " It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;",
+                          "en": " It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;"
+                        }
+                      },
+                      {
+                        "title": "Cvu",
+                        "description": {
+                          "es": " Payment method used in Argentina.",
+                          "pt": " Payment method used in Argentina.",
+                          "en": " Payment method used in Argentina."
+                        }
+                      },
+                      {
+                        "title": "PSE",
+                        "description": {
+                          "es": " Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.",
+                          "pt": " Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.",
+                          "en": " Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts."
+                        }
+                      }
                     ],
                     "required": true,
                     "example": "visa"
@@ -3673,15 +3785,78 @@
                     },
                     "example": "cancelled",
                     "enum": [
-                      "pending -- The user has not concluded the payment process (for example, to generate a payment by boleto, this payment will be concluded at the moment in which the user makes the non-corresponding payment selected);",
-                      "approved -- The payment was approved and credited;",
-                      "authorized -- The payment was authorized, but still was not captured;",
-                      "in_process -- The payment is in analysis;",
-                      "in_mediation -- The user started a dispute;",
-                      "rejected -- The payment was rejected. (The user can try the payment again);",
-                      "cancelled -- Either the payment was canceled by one of the parties or the payment expired;",
-                      "refunded -- The payment was returned to the user;",
-                      "charged_back -- A chargeback was placed on the buyer's credit card."
+                      {
+                        "title": "pending",
+                        "description": {
+                          "es": " The user has not concluded the payment process (for example, to generate a payment by boleto, this payment will be concluded at the moment in which the user makes the non-corresponding payment selected);",
+                          "pt": " The user has not concluded the payment process (for example, to generate a payment by boleto, this payment will be concluded at the moment in which the user makes the non-corresponding payment selected);",
+                          "en": " The user has not concluded the payment process (for example, to generate a payment by boleto, this payment will be concluded at the moment in which the user makes the non-corresponding payment selected);"
+                        }
+                      },
+                      {
+                        "title": "approved",
+                        "description": {
+                          "es": " The payment was approved and credited;",
+                          "pt": " The payment was approved and credited;",
+                          "en": " The payment was approved and credited;"
+                        }
+                      },
+                      {
+                        "title": "authorized",
+                        "description": {
+                          "es": " The payment was authorized, but still was not captured;",
+                          "pt": " The payment was authorized, but still was not captured;",
+                          "en": " The payment was authorized, but still was not captured;"
+                        }
+                      },
+                      {
+                        "title": "in_process",
+                        "description": {
+                          "es": " The payment is in analysis;",
+                          "pt": " The payment is in analysis;",
+                          "en": " The payment is in analysis;"
+                        }
+                      },
+                      {
+                        "title": "in_mediation",
+                        "description": {
+                          "es": " The user started a dispute;",
+                          "pt": " The user started a dispute;",
+                          "en": " The user started a dispute;"
+                        }
+                      },
+                      {
+                        "title": "rejected",
+                        "description": {
+                          "es": " The payment was rejected. (The user can try the payment again);",
+                          "pt": " The payment was rejected. (The user can try the payment again);",
+                          "en": " The payment was rejected. (The user can try the payment again);"
+                        }
+                      },
+                      {
+                        "title": "cancelled",
+                        "description": {
+                          "es": " Either the payment was canceled by one of the parties or the payment expired;",
+                          "pt": " Either the payment was canceled by one of the parties or the payment expired;",
+                          "en": " Either the payment was canceled by one of the parties or the payment expired;"
+                        }
+                      },
+                      {
+                        "title": "refunded",
+                        "description": {
+                          "es": " The payment was returned to the user;",
+                          "pt": " The payment was returned to the user;",
+                          "en": " The payment was returned to the user;"
+                        }
+                      },
+                      {
+                        "title": "charged_back",
+                        "description": {
+                          "es": " A chargeback was placed on the buyer's credit card.",
+                          "pt": " A chargeback was placed on the buyer's credit card.",
+                          "en": " A chargeback was placed on the buyer's credit card."
+                        }
+                      }
                     ]
                   },
                   "transaction_amount": {
@@ -5170,12 +5345,54 @@
                                 "pt": "Indica el identificador del medio de pago seleccionado para realizarlo. A continuación presentamos algunos ejemplos."
                               },
                               "enum": [
-                                "pix -- Instant digital payment method used in Brazil.",
-                                "account_money -- When the payment is debited directly from a Mercado Pago account.",
-                                "debin_transfer -- Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.",
-                                "ted -- It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period.",
-                                "cvu -- Payment method used in Argentina;",
-                                "pse -- Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts."
+                                {
+                                  "title": "pix",
+                                  "description": {
+                                    "es": " Instant digital payment method used in Brazil.",
+                                    "pt": " Instant digital payment method used in Brazil.",
+                                    "en": " Instant digital payment method used in Brazil."
+                                  }
+                                },
+                                {
+                                  "title": "account_money",
+                                  "description": {
+                                    "es": " When the payment is debited directly from a Mercado Pago account.",
+                                    "pt": " When the payment is debited directly from a Mercado Pago account.",
+                                    "en": " When the payment is debited directly from a Mercado Pago account."
+                                  }
+                                },
+                                {
+                                  "title": "debin_transfer",
+                                  "description": {
+                                    "es": " Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.",
+                                    "pt": " Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.",
+                                    "en": " Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization."
+                                  }
+                                },
+                                {
+                                  "title": "ted",
+                                  "description": {
+                                    "es": " It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period.",
+                                    "pt": " It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period.",
+                                    "en": " It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period."
+                                  }
+                                },
+                                {
+                                  "title": "cvu",
+                                  "description": {
+                                    "es": " Payment method used in Argentina;",
+                                    "pt": " Payment method used in Argentina;",
+                                    "en": " Payment method used in Argentina;"
+                                  }
+                                },
+                                {
+                                  "title": "pse",
+                                  "description": {
+                                    "es": " Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.",
+                                    "pt": " Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.",
+                                    "en": " Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts."
+                                  }
+                                }
                               ]
                             },
                             "payment_type_id": {
@@ -5193,21 +5410,126 @@
                                 "pt": "Detalhe em que resultou a Coleção"
                               },
                               "enum": [
-                                "Accredited -- credited payment.",
-                                "pending_contingency -- the payment is being processed.",
-                                "pending_review_manual -- the payment is under review to determine its approval or rejection.",
-                                "cc_rejected_bad_filled_date -- incorrect expiration date.",
-                                "cc_rejected_bad_filled_other -- incorrect card details.",
-                                "cc_rejected_bad_filled_security_code -- incorrect CVV.",
-                                "cc_rejected_blacklist -- the card is in the denial list, being present in problems related to theft/complaints/fraud.",
-                                "cc_rejected_call_for_authorize -- the payment method requires prior authorization of the transaction value.",
-                                "cc_rejected_card_disabled -- the card is inactive.",
-                                "cc_rejected_duplicated_payment -- duplicated transaction.",
-                                "cc_rejected_high_risk -- rejected by Fraud Prevention.",
-                                "cc_rejected_insufficient_amount -- insufficient amount.",
-                                "cc_rejected_invalid_installments -- invalid number of installments.",
-                                "cc_rejected_max_attempts -- maximum number of attempts exceeded.",
-                                "cc_rejected_other_reason -- generic error."
+                                {
+                                  "title": "Accredited",
+                                  "description": {
+                                    "es": " credited payment.",
+                                    "pt": " credited payment.",
+                                    "en": " credited payment."
+                                  }
+                                },
+                                {
+                                  "title": "pending_contingency",
+                                  "description": {
+                                    "es": " the payment is being processed.",
+                                    "pt": " the payment is being processed.",
+                                    "en": " the payment is being processed."
+                                  }
+                                },
+                                {
+                                  "title": "pending_review_manual",
+                                  "description": {
+                                    "es": " the payment is under review to determine its approval or rejection.",
+                                    "pt": " the payment is under review to determine its approval or rejection.",
+                                    "en": " the payment is under review to determine its approval or rejection."
+                                  }
+                                },
+                                {
+                                  "title": "cc_rejected_bad_filled_date",
+                                  "description": {
+                                    "es": " incorrect expiration date.",
+                                    "pt": " incorrect expiration date.",
+                                    "en": " incorrect expiration date."
+                                  }
+                                },
+                                {
+                                  "title": "cc_rejected_bad_filled_other",
+                                  "description": {
+                                    "es": " incorrect card details.",
+                                    "pt": " incorrect card details.",
+                                    "en": " incorrect card details."
+                                  }
+                                },
+                                {
+                                  "title": "cc_rejected_bad_filled_security_code",
+                                  "description": {
+                                    "es": " incorrect CVV.",
+                                    "pt": " incorrect CVV.",
+                                    "en": " incorrect CVV."
+                                  }
+                                },
+                                {
+                                  "title": "cc_rejected_blacklist",
+                                  "description": {
+                                    "es": " the card is in the denial list, being present in problems related to theft/complaints/fraud.",
+                                    "pt": " the card is in the denial list, being present in problems related to theft/complaints/fraud.",
+                                    "en": " the card is in the denial list, being present in problems related to theft/complaints/fraud."
+                                  }
+                                },
+                                {
+                                  "title": "cc_rejected_call_for_authorize",
+                                  "description": {
+                                    "es": " the payment method requires prior authorization of the transaction value.",
+                                    "pt": " the payment method requires prior authorization of the transaction value.",
+                                    "en": " the payment method requires prior authorization of the transaction value."
+                                  }
+                                },
+                                {
+                                  "title": "cc_rejected_card_disabled",
+                                  "description": {
+                                    "es": " the card is inactive.",
+                                    "pt": " the card is inactive.",
+                                    "en": " the card is inactive."
+                                  }
+                                },
+                                {
+                                  "title": "cc_rejected_duplicated_payment",
+                                  "description": {
+                                    "es": " duplicated transaction.",
+                                    "pt": " duplicated transaction.",
+                                    "en": " duplicated transaction."
+                                  }
+                                },
+                                {
+                                  "title": "cc_rejected_high_risk",
+                                  "description": {
+                                    "es": " rejected by Fraud Prevention.",
+                                    "pt": " rejected by Fraud Prevention.",
+                                    "en": " rejected by Fraud Prevention."
+                                  }
+                                },
+                                {
+                                  "title": "cc_rejected_insufficient_amount",
+                                  "description": {
+                                    "es": " insufficient amount.",
+                                    "pt": " insufficient amount.",
+                                    "en": " insufficient amount."
+                                  }
+                                },
+                                {
+                                  "title": "cc_rejected_invalid_installments",
+                                  "description": {
+                                    "es": " invalid number of installments.",
+                                    "pt": " invalid number of installments.",
+                                    "en": " invalid number of installments."
+                                  }
+                                },
+                                {
+                                  "title": "cc_rejected_max_attempts",
+                                  "description": {
+                                    "es": " maximum number of attempts exceeded.",
+                                    "pt": " maximum number of attempts exceeded.",
+                                    "en": " maximum number of attempts exceeded."
+                                  }
+                                },
+                                {
+                                  "title": "cc_rejected_other_reason",
+                                  "description": {
+                                    "es": " generic error.",
+                                    "pt": " generic error.",
+                                    "en": " generic error."
+                                  }
+                                }
                               ]
                             },
                             "currency_id": {
@@ -5318,16 +5640,86 @@
                                         "pt": "Refere-se ao tipo de identificação. Pode ser dos seguintes tipos."
                                       },
                                       "enum": [
-                                        "CPF -- Individual Taxpayer Registration, Brazil.",
-                                        "CNPJ -- National Register of Legal Entities, Brazil.",
-                                        "CUIT -- Unique Tax Identification Code, Argentina.",
-                                        "CUIL -- Unique Labor Identification Code, Argentina.",
-                                        "DNI -- National Identity Document, Argentina.",
-                                        "CURP -- Single Population Registration Code, Mexico.",
-                                        "RFC -- Federal Registry of Taxpayers, Mexico.",
-                                        "CC -- Citizenship Card, Colombia.",
-                                        "RUT -- Single Tax List, Chile.",
-                                        "CI -- Identity Card, Uruguay."
+                                        {
+                                          "title": "CPF",
+                                          "description": {
+                                            "es": " Individual Taxpayer Registration, Brazil.",
+                                            "pt": " Individual Taxpayer Registration, Brazil.",
+                                            "en": " Individual Taxpayer Registration, Brazil."
+                                          }
+                                        },
+                                        {
+                                          "title": "CNPJ",
+                                          "description": {
+                                            "es": " National Register of Legal Entities, Brazil.",
+                                            "pt": " National Register of Legal Entities, Brazil.",
+                                            "en": " National Register of Legal Entities, Brazil."
+                                          }
+                                        },
+                                        {
+                                          "title": "CUIT",
+                                          "description": {
+                                            "es": " Unique Tax Identification Code, Argentina.",
+                                            "pt": " Unique Tax Identification Code, Argentina.",
+                                            "en": " Unique Tax Identification Code, Argentina."
+                                          }
+                                        },
+                                        {
+                                          "title": "CUIL",
+                                          "description": {
+                                            "es": " Unique Labor Identification Code, Argentina.",
+                                            "pt": " Unique Labor Identification Code, Argentina.",
+                                            "en": " Unique Labor Identification Code, Argentina."
+                                          }
+                                        },
+                                        {
+                                          "title": "DNI",
+                                          "description": {
+                                            "es": " National Identity Document, Argentina.",
+                                            "pt": " National Identity Document, Argentina.",
+                                            "en": " National Identity Document, Argentina."
+                                          }
+                                        },
+                                        {
+                                          "title": "CURP",
+                                          "description": {
+                                            "es": " Single Population Registration Code, Mexico.",
+                                            "pt": " Single Population Registration Code, Mexico.",
+                                            "en": " Single Population Registration Code, Mexico."
+                                          }
+                                        },
+                                        {
+                                          "title": "RFC",
+                                          "description": {
+                                            "es": " Federal Registry of Taxpayers, Mexico.",
+                                            "pt": " Federal Registry of Taxpayers, Mexico.",
+                                            "en": " Federal Registry of Taxpayers, Mexico."
+                                          }
+                                        },
+                                        {
+                                          "title": "CC",
+                                          "description": {
+                                            "es": " Citizenship Card, Colombia.",
+                                            "pt": " Citizenship Card, Colombia.",
+                                            "en": " Citizenship Card, Colombia."
+                                          }
+                                        },
+                                        {
+                                          "title": "RUT",
+                                          "description": {
+                                            "es": " Single Tax List, Chile.",
+                                            "pt": " Single Tax List, Chile.",
+                                            "en": " Single Tax List, Chile."
+                                          }
+                                        },
+                                        {
+                                          "title": "CI",
+                                          "description": {
+                                            "es": " Identity Card, Uruguay.",
+                                            "pt": " Identity Card, Uruguay.",
+                                            "en": " Identity Card, Uruguay."
+                                          }
+                                        }
                                       ]
                                     },
                                     "number": {
@@ -5576,8 +5968,22 @@
                                 "pt": "Modo de processamento do pagamento. Existem dois tipos."
                               },
                               "enum": [
-                                "Aggregator -- The merchant will use the Mercado Pago merchant codes and take advantage of the financial advantages we offer.",
-                                "Gateway -- For the merchant, it is necessary to have his own merchant code for online sales and to have an agreement with each of the desired payment methods."
+                                {
+                                  "title": "Aggregator",
+                                  "description": {
+                                    "es": " The merchant will use the Mercado Pago merchant codes and take advantage of the financial advantages we offer.",
+                                    "pt": " The merchant will use the Mercado Pago merchant codes and take advantage of the financial advantages we offer.",
+                                    "en": " The merchant will use the Mercado Pago merchant codes and take advantage of the financial advantages we offer."
+                                  }
+                                },
+                                {
+                                  "title": "Gateway",
+                                  "description": {
+                                    "es": " For the merchant, it is necessary to have his own merchant code for online sales and to have an agreement with each of the desired payment methods.",
+                                    "pt": " For the merchant, it is necessary to have his own merchant code for online sales and to have an agreement with each of the desired payment methods.",
+                                    "en": " For the merchant, it is necessary to have his own merchant code for online sales and to have an agreement with each of the desired payment methods."
+                                  }
+                                }
                               ]
                             },
                             "merchant_account_id": {
@@ -6079,15 +6485,78 @@
           "pt": "É o tipo de pagamento. Os tipos disponíveis são os seguintes."
         },
         "enum": [
-          "investment -- When money is put into an investment, such as CDB, in the Mercado Pago application;",
-          "regular_payment -- Typification by default of a purchase being paid using Mercado Pago.",
-          "money_transfer -- Funds transfer between two users.",
-          "recurring_payment -- Automatic recurring payment due to an active user subscription.",
-          "account_fund -- Money income in the user's account.",
-          "payment_addition -- Addition of money to an existing payment, made through a Mercado Pago account.",
-          "cellphone_recharge -- Recharge of a user's cellphone account.",
-          "pos_payment -- Payment done through a Point of Sale.",
-          "money_exchange -- Payment to exchange currency for a user."
+          {
+            "title": "investment",
+            "description": {
+              "es": " When money is put into an investment, such as CDB, in the Mercado Pago application;",
+              "pt": " When money is put into an investment, such as CDB, in the Mercado Pago application;",
+              "en": " When money is put into an investment, such as CDB, in the Mercado Pago application;"
+            }
+          },
+          {
+            "title": "regular_payment",
+            "description": {
+              "es": " Typification by default of a purchase being paid using Mercado Pago.",
+              "pt": " Typification by default of a purchase being paid using Mercado Pago.",
+              "en": " Typification by default of a purchase being paid using Mercado Pago."
+            }
+          },
+          {
+            "title": "money_transfer",
+            "description": {
+              "es": " Funds transfer between two users.",
+              "pt": " Funds transfer between two users.",
+              "en": " Funds transfer between two users."
+            }
+          },
+          {
+            "title": "recurring_payment",
+            "description": {
+              "es": " Automatic recurring payment due to an active user subscription.",
+              "pt": " Automatic recurring payment due to an active user subscription.",
+              "en": " Automatic recurring payment due to an active user subscription."
+            }
+          },
+          {
+            "title": "account_fund",
+            "description": {
+              "es": " Money income in the user's account.",
+              "pt": " Money income in the user's account.",
+              "en": " Money income in the user's account."
+            }
+          },
+          {
+            "title": "payment_addition",
+            "description": {
+              "es": " Addition of money to an existing payment, made through a Mercado Pago account.",
+              "pt": " Addition of money to an existing payment, made through a Mercado Pago account.",
+              "en": " Addition of money to an existing payment, made through a Mercado Pago account."
+            }
+          },
+          {
+            "title": "cellphone_recharge",
+            "description": {
+              "es": " Recharge of a user's cellphone account.",
+              "pt": " Recharge of a user's cellphone account.",
+              "en": " Recharge of a user's cellphone account."
+            }
+          },
+          {
+            "title": "pos_payment",
+            "description": {
+              "es": " Payment done through a Point of Sale.",
+              "pt": " Payment done through a Point of Sale.",
+              "en": " Payment done through a Point of Sale."
+            }
+          },
+          {
+            "title": "money_exchange",
+            "description": {
+              "es": " Payment to exchange currency for a user.",
+              "pt": " Payment to exchange currency for a user.",
+              "en": " Payment to exchange currency for a user."
+            }
+          }
         ]
       },
       "entity_type": {
@@ -6099,8 +6568,22 @@
         },
         "example": "individual",
         "enum": [
-          "individual -- Payer is individual.",
-          "association -- Payer is an association."
+          {
+            "title": "individual",
+            "description": {
+              "es": " Payer is individual.",
+              "pt": " Payer is individual.",
+              "en": " Payer is individual."
+            }
+          },
+          {
+            "title": "association",
+            "description": {
+              "es": " Payer is an association.",
+              "pt": " Payer is an association.",
+              "en": " Payer is an association."
+            }
+          }
         ]
       },
       "payer_type": {
@@ -6112,8 +6595,22 @@
         },
         "example": "customer",
         "enum": [
-          "customer -- Payer is a Customer and belongs to the collector.",
-          "guest -- The payer doesn't have an account."
+          {
+            "title": "customer",
+            "description": {
+              "es": " Payer is a Customer and belongs to the collector.",
+              "pt": " Payer is a Customer and belongs to the collector.",
+              "en": " Payer is a Customer and belongs to the collector."
+            }
+          },
+          {
+            "title": "guest",
+            "description": {
+              "es": " The payer doesn't have an account.",
+              "pt": " The payer doesn't have an account.",
+              "en": " The payer doesn't have an account."
+            }
+          }
         ]
       },
       "currency_id": {
@@ -6125,22 +6622,134 @@
         },
         "example": "BRL",
         "enum": [
-          "ARS -- Argentine peso.",
-          "BRL -- Brazilian real.",
-          "CLP -- Chilean peso.",
-          "MXN -- Mexican peso.",
-          "COP -- Colombian peso.",
-          "PEN -- Peruvian sol.",
-          "UYU -- Uruguayan peso.",
-          "VES -- Venezuelan Bolivar.",
-          "MCN -- Mercado Coin (internal cryptocurrency of Mercado Livre and Mercado Pago).",
-          "BTC -- Bitcoin.",
-          "USD -- US dollar.",
-          "USDP -- Pax Dollar (stable cryptocurrency pegged to the US dollar).",
-          "DCE -- Dollar Currency Equivalent.",
-          "ETH -- Ethereum.",
-          "FDI -- Investment Funds.",
-          "CDB -- Bank deposit certificate"
+          {
+            "title": "ARS",
+            "description": {
+              "es": " Argentine peso.",
+              "pt": " Argentine peso.",
+              "en": " Argentine peso."
+            }
+          },
+          {
+            "title": "BRL",
+            "description": {
+              "es": " Brazilian real.",
+              "pt": " Brazilian real.",
+              "en": " Brazilian real."
+            }
+          },
+          {
+            "title": "CLP",
+            "description": {
+              "es": " Chilean peso.",
+              "pt": " Chilean peso.",
+              "en": " Chilean peso."
+            }
+          },
+          {
+            "title": "MXN",
+            "description": {
+              "es": " Mexican peso.",
+              "pt": " Mexican peso.",
+              "en": " Mexican peso."
+            }
+          },
+          {
+            "title": "COP",
+            "description": {
+              "es": " Colombian peso.",
+              "pt": " Colombian peso.",
+              "en": " Colombian peso."
+            }
+          },
+          {
+            "title": "PEN",
+            "description": {
+              "es": " Peruvian sol.",
+              "pt": " Peruvian sol.",
+              "en": " Peruvian sol."
+            }
+          },
+          {
+            "title": "UYU",
+            "description": {
+              "es": " Uruguayan peso.",
+              "pt": " Uruguayan peso.",
+              "en": " Uruguayan peso."
+            }
+          },
+          {
+            "title": "VES",
+            "description": {
+              "es": " Venezuelan Bolivar.",
+              "pt": " Venezuelan Bolivar.",
+              "en": " Venezuelan Bolivar."
+            }
+          },
+          {
+            "title": "MCN",
+            "description": {
+              "es": " Mercado Coin (internal cryptocurrency of Mercado Livre and Mercado Pago).",
+              "pt": " Mercado Coin (internal cryptocurrency of Mercado Livre and Mercado Pago).",
+              "en": " Mercado Coin (internal cryptocurrency of Mercado Livre and Mercado Pago)."
+            }
+          },
+          {
+            "title": "BTC",
+            "description": {
+              "es": " Bitcoin.",
+              "pt": " Bitcoin.",
+              "en": " Bitcoin."
+            }
+          },
+          {
+            "title": "USD",
+            "description": {
+              "es": " US dollar.",
+              "pt": " US dollar.",
+              "en": " US dollar."
+            }
+          },
+          {
+            "title": "USDP",
+            "description": {
+              "es": " Pax Dollar (stable cryptocurrency pegged to the US dollar).",
+              "pt": " Pax Dollar (stable cryptocurrency pegged to the US dollar).",
+              "en": " Pax Dollar (stable cryptocurrency pegged to the US dollar)."
+            }
+          },
+          {
+            "title": "DCE",
+            "description": {
+              "es": " Dollar Currency Equivalent.",
+              "pt": " Dollar Currency Equivalent.",
+              "en": " Dollar Currency Equivalent."
+            }
+          },
+          {
+            "title": "ETH",
+            "description": {
+              "es": " Ethereum.",
+              "pt": " Ethereum.",
+              "en": " Ethereum."
+            }
+          },
+          {
+            "title": "FDI",
+            "description": {
+              "es": " Investment Funds.",
+              "pt": " Investment Funds.",
+              "en": " Investment Funds."
+            }
+          },
+          {
+            "title": "CDB",
+            "description": {
+              "es": " Bank deposit certificate",
+              "pt": " Bank deposit certificate",
+              "en": " Bank deposit certificate"
+            }
+          }
         ]
       },
       "fee_details_type": {
@@ -6152,12 +6761,54 @@
         },
         "example": "coupon_fee",
         "enum": [
-          "mercadopago_fee -- Cost for using Mercado Pago.",
-          "coupon_fee -- Discount given by a coupon.",
-          "financing_fee -- Cost of financing.",
-          "shipping_fee -- Shipping cost.",
-          "application_fee -- Marketplace comision for the service.",
-          "discount_fee -- Discount given by the seller through cost absorption."
+          {
+            "title": "mercadopago_fee",
+            "description": {
+              "es": " Cost for using Mercado Pago.",
+              "pt": " Cost for using Mercado Pago.",
+              "en": " Cost for using Mercado Pago."
+            }
+          },
+          {
+            "title": "coupon_fee",
+            "description": {
+              "es": " Discount given by a coupon.",
+              "pt": " Discount given by a coupon.",
+              "en": " Discount given by a coupon."
+            }
+          },
+          {
+            "title": "financing_fee",
+            "description": {
+              "es": " Cost of financing.",
+              "pt": " Cost of financing.",
+              "en": " Cost of financing."
+            }
+          },
+          {
+            "title": "shipping_fee",
+            "description": {
+              "es": " Shipping cost.",
+              "pt": " Shipping cost.",
+              "en": " Shipping cost."
+            }
+          },
+          {
+            "title": "application_fee",
+            "description": {
+              "es": " Marketplace comision for the service.",
+              "pt": " Marketplace comision for the service.",
+              "en": " Marketplace comision for the service."
+            }
+          },
+          {
+            "title": "discount_fee",
+            "description": {
+              "es": " Discount given by the seller through cost absorption.",
+              "pt": " Discount given by the seller through cost absorption.",
+              "en": " Discount given by the seller through cost absorption."
+            }
+          }
         ]
       },
       "fee_payer": {
@@ -6169,8 +6820,22 @@
         },
         "example": "payer",
         "enum": [
-          "collector -- The seller absorbs the cost.",
-          "payer -- The buyer absorbs the cost."
+          {
+            "title": "collector",
+            "description": {
+              "es": " The seller absorbs the cost.",
+              "pt": " The seller absorbs the cost.",
+              "en": " The seller absorbs the cost."
+            }
+          },
+          {
+            "title": "payer",
+            "description": {
+              "es": " The buyer absorbs the cost.",
+              "pt": " The buyer absorbs the cost.",
+              "en": " The buyer absorbs the cost."
+            }
+          }
         ]
       },
       "status": {
@@ -6182,15 +6847,78 @@
           "pt": "É o estado atual do pagamento. Podem ser ser dos seguintes tipos."
         },
         "enum": [
-          "pending -- The user has not concluded the payment process (for example, by generating a payment by boleto, it will be concluded at the moment in which the user makes the payment in the selected place).",
-          "approved -- The payment has been approved and credited.",
-          "authorized -- The payment has been authorized but not captured yet.",
-          "in_process -- The payment is in analysis.",
-          "in_mediation -- The user started a dispute.",
-          "rejected -- The payment was rejected (the user can try to pay again).",
-          "cancelled -- Either the payment was canceled by one of the parties or expired.",
-          "refunded -- The payment was returned to the user.",
-          "charged_back -- A chargeback was placed on the buyer's credit card."
+          {
+            "title": "pending",
+            "description": {
+              "es": " The user has not concluded the payment process (for example, by generating a payment by boleto, it will be concluded at the moment in which the user makes the payment in the selected place).",
+              "pt": " The user has not concluded the payment process (for example, by generating a payment by boleto, it will be concluded at the moment in which the user makes the payment in the selected place).",
+              "en": " The user has not concluded the payment process (for example, by generating a payment by boleto, it will be concluded at the moment in which the user makes the payment in the selected place)."
+            }
+          },
+          {
+            "title": "approved",
+            "description": {
+              "es": " The payment has been approved and credited.",
+              "pt": " The payment has been approved and credited.",
+              "en": " The payment has been approved and credited."
+            }
+          },
+          {
+            "title": "authorized",
+            "description": {
+              "es": " The payment has been authorized but not captured yet.",
+              "pt": " The payment has been authorized but not captured yet.",
+              "en": " The payment has been authorized but not captured yet."
+            }
+          },
+          {
+            "title": "in_process",
+            "description": {
+              "es": " The payment is in analysis.",
+              "pt": " The payment is in analysis.",
+              "en": " The payment is in analysis."
+            }
+          },
+          {
+            "title": "in_mediation",
+            "description": {
+              "es": " The user started a dispute.",
+              "pt": " The user started a dispute.",
+              "en": " The user started a dispute."
+            }
+          },
+          {
+            "title": "rejected",
+            "description": {
+              "es": " The payment was rejected (the user can try to pay again).",
+              "pt": " The payment was rejected (the user can try to pay again).",
+              "en": " The payment was rejected (the user can try to pay again)."
+            }
+          },
+          {
+            "title": "cancelled",
+            "description": {
+              "es": " Either the payment was canceled by one of the parties or expired.",
+              "pt": " Either the payment was canceled by one of the parties or expired.",
+              "en": " Either the payment was canceled by one of the parties or expired."
+            }
+          },
+          {
+            "title": "refunded",
+            "description": {
+              "es": " The payment was returned to the user.",
+              "pt": " The payment was returned to the user.",
+              "en": " The payment was returned to the user."
+            }
+          },
+          {
+            "title": "charged_back",
+            "description": {
+              "es": " A chargeback was placed on the buyer's credit card.",
+              "pt": " A chargeback was placed on the buyer's credit card.",
+              "en": " A chargeback was placed on the buyer's credit card."
+            }
+          }
         ]
       },
       "payment_type_id": {
@@ -6202,17 +6930,94 @@
         },
         "example": "credit_card",
         "enum": [
-          "account_money -- Money in the Mercado Pago account.",
-          "ticket -- Boletos, Caixa Electronica Payment, PayCash, Efecty, Oxxo, etc.",
-          "bank_transfer -- Pix and PSE (Pagos Seguros en Línea).",
-          "atm -- ATM payment (widely used in Mexico through BBVA Bancomer).",
-          "credit_card -- Payment by credit card.",
-          "debit_card -- Payment by debit card.",
-          "prepaid_card -- Payment by prepaid card.",
-          "digital_currency -- Purchases with Mercado Crédito.",
-          "digital_wallet -- Paypal.",
-          "voucher_card -- Alelo benefits, Sodexo.",
-          "crypto_transfer -- Payment with cryptocurrencies such as Ethereum and Bitcoin."
+          {
+            "title": "account_money",
+            "description": {
+              "es": " Money in the Mercado Pago account.",
+              "pt": " Money in the Mercado Pago account.",
+              "en": " Money in the Mercado Pago account."
+            }
+          },
+          {
+            "title": "ticket",
+            "description": {
+              "es": " Boletos, Caixa Electronica Payment, PayCash, Efecty, Oxxo, etc.",
+              "pt": " Boletos, Caixa Electronica Payment, PayCash, Efecty, Oxxo, etc.",
+              "en": " Boletos, Caixa Electronica Payment, PayCash, Efecty, Oxxo, etc."
+            }
+          },
+          {
+            "title": "bank_transfer",
+            "description": {
+              "es": " Pix and PSE (Pagos Seguros en Línea).",
+              "pt": " Pix and PSE (Pagos Seguros en Línea).",
+              "en": " Pix and PSE (Pagos Seguros en Línea)."
+            }
+          },
+          {
+            "title": "atm",
+            "description": {
+              "es": " ATM payment (widely used in Mexico through BBVA Bancomer).",
+              "pt": " ATM payment (widely used in Mexico through BBVA Bancomer).",
+              "en": " ATM payment (widely used in Mexico through BBVA Bancomer)."
+            }
+          },
+          {
+            "title": "credit_card",
+            "description": {
+              "es": " Payment by credit card.",
+              "pt": " Payment by credit card.",
+              "en": " Payment by credit card."
+            }
+          },
+          {
+            "title": "debit_card",
+            "description": {
+              "es": " Payment by debit card.",
+              "pt": " Payment by debit card.",
+              "en": " Payment by debit card."
+            }
+          },
+          {
+            "title": "prepaid_card",
+            "description": {
+              "es": " Payment by prepaid card.",
+              "pt": " Payment by prepaid card.",
+              "en": " Payment by prepaid card."
+            }
+          },
+          {
+            "title": "digital_currency",
+            "description": {
+              "es": " Purchases with Mercado Crédito.",
+              "pt": " Purchases with Mercado Crédito.",
+              "en": " Purchases with Mercado Crédito."
+            }
+          },
+          {
+            "title": "digital_wallet",
+            "description": {
+              "es": " Paypal.",
+              "pt": " Paypal.",
+              "en": " Paypal."
+            }
+          },
+          {
+            "title": "voucher_card",
+            "description": {
+              "es": " Alelo benefits, Sodexo.",
+              "pt": " Alelo benefits, Sodexo.",
+              "en": " Alelo benefits, Sodexo."
+            }
+          },
+          {
+            "title": "crypto_transfer",
+            "description": {
+              "es": " Payment with cryptocurrencies such as Ethereum and Bitcoin.",
+              "pt": " Payment with cryptocurrencies such as Ethereum and Bitcoin.",
+              "en": " Payment with cryptocurrencies such as Ethereum and Bitcoin."
+            }
+          }
         ]
       },
       "refund_source_type": {
@@ -6224,10 +7029,38 @@
         },
         "example": "collector",
         "enum": [
-          "collector -- The collector issued the refund.",
-          "operator -- The refund was made by an account's operator.",
-          "admin -- The refund was made by a Mercado Pago administrator.",
-          "bpp -- The refund was made by the Mercado Pago's Buyer Protection Program"
+          {
+            "title": "collector",
+            "description": {
+              "es": " The collector issued the refund.",
+              "pt": " The collector issued the refund.",
+              "en": " The collector issued the refund."
+            }
+          },
+          {
+            "title": "operator",
+            "description": {
+              "es": " The refund was made by an account's operator.",
+              "pt": " The refund was made by an account's operator.",
+              "en": " The refund was made by an account's operator."
+            }
+          },
+          {
+            "title": "admin",
+            "description": {
+              "es": " The refund was made by a Mercado Pago administrator.",
+              "pt": " The refund was made by a Mercado Pago administrator.",
+              "en": " The refund was made by a Mercado Pago administrator."
+            }
+          },
+          {
+            "title": "bpp",
+            "description": {
+              "es": " The refund was made by the Mercado Pago's Buyer Protection Program",
+              "pt": " The refund was made by the Mercado Pago's Buyer Protection Program",
+              "en": " The refund was made by the Mercado Pago's Buyer Protection Program"
+            }
+          }
         ]
       },
       "barcode_type": {
@@ -6238,9 +7071,30 @@
           "pt": "Tipo de encoding"
         },
         "enum": [
-          "UCC/EAN 128 -- Encodes data using the Code 128 symbology.",
-          "Code128C -- High-density alphanumeric code.",
-          "Code39 -- Media density code."
+          {
+            "title": "UCC/EAN 128",
+            "description": {
+              "es": " Encodes data using the Code 128 symbology.",
+              "pt": " Encodes data using the Code 128 symbology.",
+              "en": " Encodes data using the Code 128 symbology."
+            }
+          },
+          {
+            "title": "Code128C",
+            "description": {
+              "es": " High-density alphanumeric code.",
+              "pt": " High-density alphanumeric code.",
+              "en": " High-density alphanumeric code."
+            }
+          },
+          {
+            "title": "Code39",
+            "description": {
+              "es": " Media density code.",
+              "pt": " Media density code.",
+              "en": " Media density code."
+            }
+          }
         ]
       }
     }

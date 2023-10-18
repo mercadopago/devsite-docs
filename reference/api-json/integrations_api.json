@@ -1484,8 +1484,22 @@
                     "nullable": false,
                     "example": "PDV",
                     "enum": [
-                      "PDV -- point of sale, integrated mode with the API.",
-                      "STANDALONE -- default device configuration, mode not integrated with the API."
+                      {
+                        "title": "PDV",
+                        "description": {
+                          "es": " point of sale, integrated mode with the API.",
+                          "pt": " point of sale, integrated mode with the API.",
+                          "en": " point of sale, integrated mode with the API."
+                        }
+                      },
+                      {
+                        "title": "STANDALONE",
+                        "description": {
+                          "es": " default device configuration, mode not integrated with the API.",
+                          "pt": " default device configuration, mode not integrated with the API.",
+                          "en": " default device configuration, mode not integrated with the API."
+                        }
+                      }
                     ]
                   }
                 }
@@ -1656,7 +1670,14 @@
                       "type": "string",
                       "example": "email",
                       "enum": [
-                        "email--channel to receive event notifications"
+                        {
+                          "title": "email",
+                          "description": {
+                            "es": "channel to receive event notifications",
+                            "pt": "channel to receive event notifications",
+                            "en": "channel to receive event notifications"
+                          }
+                        }
                       ]
                     }
                   }

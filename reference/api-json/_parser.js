@@ -12,10 +12,23 @@ const parseDescriptionForItem = (json) => {
   }
   const keys = Object.keys(json);
   keys.forEach((key) => {
-    if (key === 'x-description-i18n') {
-      const descriptionContent = json[key];
-      json.description = descriptionContent;
-      delete json['x-description-i18n'];
+    if (key === 'enum') {
+      const enumArray = json[key];
+      const newEnumData = enumArray.map((item) => {
+        if (typeof item === 'object') {
+          return item;
+        }
+        const [title, description] = item.split('--');
+        return {
+          title: title?.trim(),
+          description: {
+            es: description,
+            pt: description,
+            en: description,
+          },
+        };
+      });
+      json[key] = newEnumData;
     }
   });
 
@@ -39,6 +52,7 @@ const verifyObjectHasChilds = (json) => {
 const processFile = (fileName) => {
   const jsonToProcess = readFileAsJson(fileName);
   const result = JSON.stringify(verifyObjectHasChilds(jsonToProcess), null, 2);
+  // console.log(result);
   fs.writeFileSync(fileName, result, 'utf8');
 };
 
@@ -67,4 +81,3 @@ const files = [
 files.forEach((file) => {
   processFile(file);
 });
-

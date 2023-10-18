@@ -29,13 +29,62 @@
                     "required": true,
                     "example": "MLA",
                     "enum": [
-                      "MPE -- Mercado Libre Perú",
-                      "MLU -- Mercado Libre Uruguay",
-                      "MLA -- Mercado Libre Argentina",
-                      "MLC -- Mercado Libre Chile",
-                      "MCO -- Mercado Libre Colombia",
-                      "MLB -- Mercado Libre Brasil",
-                      "MLM -- Mercado Libre México"
+                      {
+                        "title": "MPE",
+                        "description": {
+                          "es": " Mercado Libre Perú",
+                          "pt": " Mercado Libre Perú",
+                          "en": " Mercado Libre Perú"
+                        }
+                      },
+                      {
+                        "title": "MLU",
+                        "description": {
+                          "es": " Mercado Libre Uruguay",
+                          "pt": " Mercado Libre Uruguay",
+                          "en": " Mercado Libre Uruguay"
+                        }
+                      },
+                      {
+                        "title": "MLA",
+                        "description": {
+                          "es": " Mercado Libre Argentina",
+                          "pt": " Mercado Libre Argentina",
+                          "en": " Mercado Libre Argentina"
+                        }
+                      },
+                      {
+                        "title": "MLC",
+                        "description": {
+                          "es": " Mercado Libre Chile",
+                          "pt": " Mercado Libre Chile",
+                          "en": " Mercado Libre Chile"
+                        }
+                      },
+                      {
+                        "title": "MCO",
+                        "description": {
+                          "es": " Mercado Libre Colombia",
+                          "pt": " Mercado Libre Colombia",
+                          "en": " Mercado Libre Colombia"
+                        }
+                      },
+                      {
+                        "title": "MLB",
+                        "description": {
+                          "es": " Mercado Libre Brasil",
+                          "pt": " Mercado Libre Brasil",
+                          "en": " Mercado Libre Brasil"
+                        }
+                      },
+                      {
+                        "title": "MLM",
+                        "description": {
+                          "es": " Mercado Libre México",
+                          "pt": " Mercado Libre México",
+                          "en": " Mercado Libre México"
+                        }
+                      }
                     ]
                   },
                   "description": {
@@ -327,11 +376,46 @@
               "pt": "Token de acesso de teste gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por"
             },
             "enum": [
-              "Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)",
-              "Client ID -- 1585551492",
-              "Creation date (MMddHH) -- 030918",
-              "Security hash -- 25######3458",
-              "User ID -- 2880736"
+              {
+                "title": "Access token type",
+                "description": {
+                  "es": " APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)",
+                  "pt": " APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)",
+                  "en": " APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)"
+                }
+              },
+              {
+                "title": "Client ID",
+                "description": {
+                  "es": " 1585551492",
+                  "pt": " 1585551492",
+                  "en": " 1585551492"
+                }
+              },
+              {
+                "title": "Creation date (MMddHH)",
+                "description": {
+                  "es": " 030918",
+                  "pt": " 030918",
+                  "en": " 030918"
+                }
+              },
+              {
+                "title": "Security hash",
+                "description": {
+                  "es": " 25######3458",
+                  "pt": " 25######3458",
+                  "en": " 25######3458"
+                }
+              },
+              {
+                "title": "User ID",
+                "description": {
+                  "es": " 2880736",
+                  "pt": " 2880736",
+                  "en": " 2880736"
+                }
+              }
             ],
             "required": true,
             "schema": {
@@ -618,11 +702,46 @@
               "pt": "Token de acesso de teste gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por"
             },
             "enum": [
-              "Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)",
-              "Client ID -- 1585551492",
-              "Creation date (MMddHH) -- 030918",
-              "Security hash -- 25######3458",
-              "User ID -- 2880736"
+              {
+                "title": "Access token type",
+                "description": {
+                  "es": " APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)",
+                  "pt": " APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)",
+                  "en": " APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)"
+                }
+              },
+              {
+                "title": "Client ID",
+                "description": {
+                  "es": " 1585551492",
+                  "pt": " 1585551492",
+                  "en": " 1585551492"
+                }
+              },
+              {
+                "title": "Creation date (MMddHH)",
+                "description": {
+                  "es": " 030918",
+                  "pt": " 030918",
+                  "en": " 030918"
+                }
+              },
+              {
+                "title": "Security hash",
+                "description": {
+                  "es": " 25######3458",
+                  "pt": " 25######3458",
+                  "en": " 25######3458"
+                }
+              },
+              {
+                "title": "User ID",
+                "description": {
+                  "es": " 2880736",
+                  "pt": " 2880736",
+                  "en": " 2880736"
+                }
+              }
             ],
             "required": true,
             "schema": {
@@ -798,11 +917,46 @@
               "pt": "Token de acesso de teste gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por"
             },
             "enum": [
-              "Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)",
-              "Client ID -- 1585551492",
-              "Creation date (MMddHH) -- 030918",
-              "Security hash -- 25######3458",
-              "User ID -- 2880736"
+              {
+                "title": "Access token type",
+                "description": {
+                  "es": " APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)",
+                  "pt": " APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)",
+                  "en": " APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)"
+                }
+              },
+              {
+                "title": "Client ID",
+                "description": {
+                  "es": " 1585551492",
+                  "pt": " 1585551492",
+                  "en": " 1585551492"
+                }
+              },
+              {
+                "title": "Creation date (MMddHH)",
+                "description": {
+                  "es": " 030918",
+                  "pt": " 030918",
+                  "en": " 030918"
+                }
+              },
+              {
+                "title": "Security hash",
+                "description": {
+                  "es": " 25######3458",
+                  "pt": " 25######3458",
+                  "en": " 25######3458"
+                }
+              },
+              {
+                "title": "User ID",
+                "description": {
+                  "es": " 2880736",
+                  "pt": " 2880736",
+                  "en": " 2880736"
+                }
+              }
             ],
             "required": true,
             "schema": {

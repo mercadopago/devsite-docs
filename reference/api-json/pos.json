@@ -1560,22 +1560,134 @@
           "pt": "Código MCC que indica a categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica"
         },
         "enum": [
-          "Gastronomy --",
-          "621102 -- Argentina",
-          "5611203 -- Brazil",
-          "5812 -- Mexico",
-          "5611 -- Colombia",
-          "5520 -- Peru",
-          "56101 -- Uruguay",
-          "561000 -- Chile",
-          "Gas station --",
-          "473000 -- Argentina",
-          "4731300 -- Brazil",
-          "468419 -- Mexico",
-          "4731 -- Colombia",
-          "5050 -- Peru",
-          "47300 -- Uruguay",
-          "473001 -- Chile"
+          {
+            "title": "Gastronomy",
+            "description": {
+              "es": "",
+              "pt": "",
+              "en": ""
+            }
+          },
+          {
+            "title": "621102",
+            "description": {
+              "es": " Argentina",
+              "pt": " Argentina",
+              "en": " Argentina"
+            }
+          },
+          {
+            "title": "5611203",
+            "description": {
+              "es": " Brazil",
+              "pt": " Brazil",
+              "en": " Brazil"
+            }
+          },
+          {
+            "title": "5812",
+            "description": {
+              "es": " Mexico",
+              "pt": " Mexico",
+              "en": " Mexico"
+            }
+          },
+          {
+            "title": "5611",
+            "description": {
+              "es": " Colombia",
+              "pt": " Colombia",
+              "en": " Colombia"
+            }
+          },
+          {
+            "title": "5520",
+            "description": {
+              "es": " Peru",
+              "pt": " Peru",
+              "en": " Peru"
+            }
+          },
+          {
+            "title": "56101",
+            "description": {
+              "es": " Uruguay",
+              "pt": " Uruguay",
+              "en": " Uruguay"
+            }
+          },
+          {
+            "title": "561000",
+            "description": {
+              "es": " Chile",
+              "pt": " Chile",
+              "en": " Chile"
+            }
+          },
+          {
+            "title": "Gas station",
+            "description": {
+              "es": "",
+              "pt": "",
+              "en": ""
+            }
+          },
+          {
+            "title": "473000",
+            "description": {
+              "es": " Argentina",
+              "pt": " Argentina",
+              "en": " Argentina"
+            }
+          },
+          {
+            "title": "4731300",
+            "description": {
+              "es": " Brazil",
+              "pt": " Brazil",
+              "en": " Brazil"
+            }
+          },
+          {
+            "title": "468419",
+            "description": {
+              "es": " Mexico",
+              "pt": " Mexico",
+              "en": " Mexico"
+            }
+          },
+          {
+            "title": "4731",
+            "description": {
+              "es": " Colombia",
+              "pt": " Colombia",
+              "en": " Colombia"
+            }
+          },
+          {
+            "title": "5050",
+            "description": {
+              "es": " Peru",
+              "pt": " Peru",
+              "en": " Peru"
+            }
+          },
+          {
+            "title": "47300",
+            "description": {
+              "es": " Uruguay",
+              "pt": " Uruguay",
+              "en": " Uruguay"
+            }
+          },
+          {
+            "title": "473001",
+            "description": {
+              "es": " Chile",
+              "pt": " Chile",
+              "en": " Chile"
+            }
+          }
         ]
       }
     }

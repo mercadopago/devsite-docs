@@ -93,13 +93,62 @@
                             "pt": "ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD."
                           },
                           "enum": [
-                            "ARS -- Argentine peso.",
-                            "BRL -- Brazilian real.",
-                            "CLP -- Chilean peso.",
-                            "MXN -- Mexican peso.",
-                            "COP -- Colombian peso.",
-                            "PEN -- Peruvian sol.",
-                            "UYU -- Uruguayan peso."
+                            {
+                              "title": "ARS",
+                              "description": {
+                                "es": " Argentine peso.",
+                                "pt": " Argentine peso.",
+                                "en": " Argentine peso."
+                              }
+                            },
+                            {
+                              "title": "BRL",
+                              "description": {
+                                "es": " Brazilian real.",
+                                "pt": " Brazilian real.",
+                                "en": " Brazilian real."
+                              }
+                            },
+                            {
+                              "title": "CLP",
+                              "description": {
+                                "es": " Chilean peso.",
+                                "pt": " Chilean peso.",
+                                "en": " Chilean peso."
+                              }
+                            },
+                            {
+                              "title": "MXN",
+                              "description": {
+                                "es": " Mexican peso.",
+                                "pt": " Mexican peso.",
+                                "en": " Mexican peso."
+                              }
+                            },
+                            {
+                              "title": "COP",
+                              "description": {
+                                "es": " Colombian peso.",
+                                "pt": " Colombian peso.",
+                                "en": " Colombian peso."
+                              }
+                            },
+                            {
+                              "title": "PEN",
+                              "description": {
+                                "es": " Peruvian sol.",
+                                "pt": " Peruvian sol.",
+                                "en": " Peruvian sol."
+                              }
+                            },
+                            {
+                              "title": "UYU",
+                              "description": {
+                                "es": " Uruguayan peso.",
+                                "pt": " Uruguayan peso.",
+                                "en": " Uruguayan peso."
+                              }
+                            }
                           ]
                         },
                         "unit_price": {
@@ -617,8 +666,22 @@
                           },
                           "example": "google_ad",
                           "enum": [
-                            "google_ad -- Allows configurations for GTM's Google Ads Conversion Tracking tag. Necessary values as conversion_id and conversion_label.",
-                            "facebook_ad -- Allows configurations for Facebook Pixel. Necessary values as pixel_id."
+                            {
+                              "title": "google_ad",
+                              "description": {
+                                "es": " Allows configurations for GTM's Google Ads Conversion Tracking tag. Necessary values as conversion_id and conversion_label.",
+                                "pt": " Allows configurations for GTM's Google Ads Conversion Tracking tag. Necessary values as conversion_id and conversion_label.",
+                                "en": " Allows configurations for GTM's Google Ads Conversion Tracking tag. Necessary values as conversion_id and conversion_label."
+                              }
+                            },
+                            {
+                              "title": "facebook_ad",
+                              "description": {
+                                "es": " Allows configurations for Facebook Pixel. Necessary values as pixel_id.",
+                                "pt": " Allows configurations for Facebook Pixel. Necessary values as pixel_id.",
+                                "en": " Allows configurations for Facebook Pixel. Necessary values as pixel_id."
+                              }
+                            }
                           ]
                         },
                         "values": {
@@ -730,13 +793,62 @@
                               "pt": "ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD."
                             },
                             "enum": [
-                              "ARS -- Argentine peso.",
-                              "BRL -- Brazilian real.",
-                              "CLP -- Chilean peso.",
-                              "MXN -- Mexican peso.",
-                              "COP -- Colombian peso.",
-                              "PEN -- Peruvian sol.",
-                              "UYU -- Uruguayan peso."
+                              {
+                                "title": "ARS",
+                                "description": {
+                                  "es": " Argentine peso.",
+                                  "pt": " Argentine peso.",
+                                  "en": " Argentine peso."
+                                }
+                              },
+                              {
+                                "title": "BRL",
+                                "description": {
+                                  "es": " Brazilian real.",
+                                  "pt": " Brazilian real.",
+                                  "en": " Brazilian real."
+                                }
+                              },
+                              {
+                                "title": "CLP",
+                                "description": {
+                                  "es": " Chilean peso.",
+                                  "pt": " Chilean peso.",
+                                  "en": " Chilean peso."
+                                }
+                              },
+                              {
+                                "title": "MXN",
+                                "description": {
+                                  "es": " Mexican peso.",
+                                  "pt": " Mexican peso.",
+                                  "en": " Mexican peso."
+                                }
+                              },
+                              {
+                                "title": "COP",
+                                "description": {
+                                  "es": " Colombian peso.",
+                                  "pt": " Colombian peso.",
+                                  "en": " Colombian peso."
+                                }
+                              },
+                              {
+                                "title": "PEN",
+                                "description": {
+                                  "es": " Peruvian sol.",
+                                  "pt": " Peruvian sol.",
+                                  "en": " Peruvian sol."
+                                }
+                              },
+                              {
+                                "title": "UYU",
+                                "description": {
+                                  "es": " Uruguayan peso.",
+                                  "pt": " Uruguayan peso.",
+                                  "en": " Uruguayan peso."
+                                }
+                              }
                             ]
                           },
                           "quantity": {
@@ -1407,13 +1519,62 @@
               "type": "string"
             },
             "enum": [
-              "MLA -- Mercado Libre Argentina",
-              "MLB -- Mercado Libre Brasil",
-              "MLC -- Mercado Libre Chile",
-              "MLM -- Mercado Libre México",
-              "MLU -- Mercado Libre Uruguay",
-              "MCO -- Mercado Libre Colombia",
-              "MPE -- Mercado Libre Perú"
+              {
+                "title": "MLA",
+                "description": {
+                  "es": " Mercado Libre Argentina",
+                  "pt": " Mercado Libre Argentina",
+                  "en": " Mercado Libre Argentina"
+                }
+              },
+              {
+                "title": "MLB",
+                "description": {
+                  "es": " Mercado Libre Brasil",
+                  "pt": " Mercado Libre Brasil",
+                  "en": " Mercado Libre Brasil"
+                }
+              },
+              {
+                "title": "MLC",
+                "description": {
+                  "es": " Mercado Libre Chile",
+                  "pt": " Mercado Libre Chile",
+                  "en": " Mercado Libre Chile"
+                }
+              },
+              {
+                "title": "MLM",
+                "description": {
+                  "es": " Mercado Libre México",
+                  "pt": " Mercado Libre México",
+                  "en": " Mercado Libre México"
+                }
+              },
+              {
+                "title": "MLU",
+                "description": {
+                  "es": " Mercado Libre Uruguay",
+                  "pt": " Mercado Libre Uruguay",
+                  "en": " Mercado Libre Uruguay"
+                }
+              },
+              {
+                "title": "MCO",
+                "description": {
+                  "es": " Mercado Libre Colombia",
+                  "pt": " Mercado Libre Colombia",
+                  "en": " Mercado Libre Colombia"
+                }
+              },
+              {
+                "title": "MPE",
+                "description": {
+                  "es": " Mercado Libre Perú",
+                  "pt": " Mercado Libre Perú",
+                  "en": " Mercado Libre Perú"
+                }
+              }
             ]
           },
           {
@@ -1630,13 +1791,62 @@
                               "pt": "ID exclusivo usado para identificar o site."
                             },
                             "enum": [
-                              "MLA -- Mercado Libre Argentina",
-                              "MLB -- Mercado Libre Brasil",
-                              "MLC -- Mercado Libre Chile",
-                              "MLM -- Mercado Libre México",
-                              "MLU -- Mercado Libre Uruguay",
-                              "MCO -- Mercado Libre Colombia",
-                              "MPE -- Mercado Libre Perú"
+                              {
+                                "title": "MLA",
+                                "description": {
+                                  "es": " Mercado Libre Argentina",
+                                  "pt": " Mercado Libre Argentina",
+                                  "en": " Mercado Libre Argentina"
+                                }
+                              },
+                              {
+                                "title": "MLB",
+                                "description": {
+                                  "es": " Mercado Libre Brasil",
+                                  "pt": " Mercado Libre Brasil",
+                                  "en": " Mercado Libre Brasil"
+                                }
+                              },
+                              {
+                                "title": "MLC",
+                                "description": {
+                                  "es": " Mercado Libre Chile",
+                                  "pt": " Mercado Libre Chile",
+                                  "en": " Mercado Libre Chile"
+                                }
+                              },
+                              {
+                                "title": "MLM",
+                                "description": {
+                                  "es": " Mercado Libre México",
+                                  "pt": " Mercado Libre México",
+                                  "en": " Mercado Libre México"
+                                }
+                              },
+                              {
+                                "title": "MLU",
+                                "description": {
+                                  "es": " Mercado Libre Uruguay",
+                                  "pt": " Mercado Libre Uruguay",
+                                  "en": " Mercado Libre Uruguay"
+                                }
+                              },
+                              {
+                                "title": "MCO",
+                                "description": {
+                                  "es": " Mercado Libre Colombia",
+                                  "pt": " Mercado Libre Colombia",
+                                  "en": " Mercado Libre Colombia"
+                                }
+                              },
+                              {
+                                "title": "MPE",
+                                "description": {
+                                  "es": " Mercado Libre Perú",
+                                  "pt": " Mercado Libre Perú",
+                                  "en": " Mercado Libre Perú"
+                                }
+                              }
                             ]
                           },
                           "sponsor_id": {
@@ -1943,13 +2153,62 @@
                               "pt": "ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD."
                             },
                             "enum": [
-                              "ARS -- Argentine peso.",
-                              "BRL -- Brazilian real.",
-                              "CLP -- Chilean peso.",
-                              "MXN -- Mexican peso.",
-                              "COP -- Colombian peso.",
-                              "PEN -- Peruvian sol.",
-                              "UYU -- Uruguayan peso."
+                              {
+                                "title": "ARS",
+                                "description": {
+                                  "es": " Argentine peso.",
+                                  "pt": " Argentine peso.",
+                                  "en": " Argentine peso."
+                                }
+                              },
+                              {
+                                "title": "BRL",
+                                "description": {
+                                  "es": " Brazilian real.",
+                                  "pt": " Brazilian real.",
+                                  "en": " Brazilian real."
+                                }
+                              },
+                              {
+                                "title": "CLP",
+                                "description": {
+                                  "es": " Chilean peso.",
+                                  "pt": " Chilean peso.",
+                                  "en": " Chilean peso."
+                                }
+                              },
+                              {
+                                "title": "MXN",
+                                "description": {
+                                  "es": " Mexican peso.",
+                                  "pt": " Mexican peso.",
+                                  "en": " Mexican peso."
+                                }
+                              },
+                              {
+                                "title": "COP",
+                                "description": {
+                                  "es": " Colombian peso.",
+                                  "pt": " Colombian peso.",
+                                  "en": " Colombian peso."
+                                }
+                              },
+                              {
+                                "title": "PEN",
+                                "description": {
+                                  "es": " Peruvian sol.",
+                                  "pt": " Peruvian sol.",
+                                  "en": " Peruvian sol."
+                                }
+                              },
+                              {
+                                "title": "UYU",
+                                "description": {
+                                  "es": " Uruguayan peso.",
+                                  "pt": " Uruguayan peso.",
+                                  "en": " Uruguayan peso."
+                                }
+                              }
                             ]
                           },
                           "title": {
@@ -2579,13 +2838,62 @@
                             "pt": "ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD."
                           },
                           "enum": [
-                            "ARS -- Argentine peso.",
-                            "BRL -- Brazilian real.",
-                            "CLP -- Chilean peso.",
-                            "MXN -- Mexican peso.",
-                            "COP -- Colombian peso.",
-                            "PEN -- Peruvian sol.",
-                            "UYU -- Uruguayan peso."
+                            {
+                              "title": "ARS",
+                              "description": {
+                                "es": " Argentine peso.",
+                                "pt": " Argentine peso.",
+                                "en": " Argentine peso."
+                              }
+                            },
+                            {
+                              "title": "BRL",
+                              "description": {
+                                "es": " Brazilian real.",
+                                "pt": " Brazilian real.",
+                                "en": " Brazilian real."
+                              }
+                            },
+                            {
+                              "title": "CLP",
+                              "description": {
+                                "es": " Chilean peso.",
+                                "pt": " Chilean peso.",
+                                "en": " Chilean peso."
+                              }
+                            },
+                            {
+                              "title": "MXN",
+                              "description": {
+                                "es": " Mexican peso.",
+                                "pt": " Mexican peso.",
+                                "en": " Mexican peso."
+                              }
+                            },
+                            {
+                              "title": "COP",
+                              "description": {
+                                "es": " Colombian peso.",
+                                "pt": " Colombian peso.",
+                                "en": " Colombian peso."
+                              }
+                            },
+                            {
+                              "title": "PEN",
+                              "description": {
+                                "es": " Peruvian sol.",
+                                "pt": " Peruvian sol.",
+                                "en": " Peruvian sol."
+                              }
+                            },
+                            {
+                              "title": "UYU",
+                              "description": {
+                                "es": " Uruguayan peso.",
+                                "pt": " Uruguayan peso.",
+                                "en": " Uruguayan peso."
+                              }
+                            }
                           ]
                         },
                         "unit_price": {
@@ -3309,13 +3617,62 @@
                               "pt": "ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD."
                             },
                             "enum": [
-                              "ARS -- Argentine peso.",
-                              "BRL -- Brazilian real.",
-                              "CLP -- Chilean peso.",
-                              "MXN -- Mexican peso.",
-                              "COP -- Colombian peso.",
-                              "PEN -- Peruvian sol.",
-                              "UYU -- Uruguayan peso."
+                              {
+                                "title": "ARS",
+                                "description": {
+                                  "es": " Argentine peso.",
+                                  "pt": " Argentine peso.",
+                                  "en": " Argentine peso."
+                                }
+                              },
+                              {
+                                "title": "BRL",
+                                "description": {
+                                  "es": " Brazilian real.",
+                                  "pt": " Brazilian real.",
+                                  "en": " Brazilian real."
+                                }
+                              },
+                              {
+                                "title": "CLP",
+                                "description": {
+                                  "es": " Chilean peso.",
+                                  "pt": " Chilean peso.",
+                                  "en": " Chilean peso."
+                                }
+                              },
+                              {
+                                "title": "MXN",
+                                "description": {
+                                  "es": " Mexican peso.",
+                                  "pt": " Mexican peso.",
+                                  "en": " Mexican peso."
+                                }
+                              },
+                              {
+                                "title": "COP",
+                                "description": {
+                                  "es": " Colombian peso.",
+                                  "pt": " Colombian peso.",
+                                  "en": " Colombian peso."
+                                }
+                              },
+                              {
+                                "title": "PEN",
+                                "description": {
+                                  "es": " Peruvian sol.",
+                                  "pt": " Peruvian sol.",
+                                  "en": " Peruvian sol."
+                                }
+                              },
+                              {
+                                "title": "UYU",
+                                "description": {
+                                  "es": " Uruguayan peso.",
+                                  "pt": " Uruguayan peso.",
+                                  "en": " Uruguayan peso."
+                                }
+                              }
                             ]
                           },
                           "quantity": {
@@ -4000,9 +4357,30 @@
           "pt": "Modo de envio"
         },
         "enum": [
-          "custom -- Custom shipping.",
-          "me2 -- Mercado Envíos.",
-          "not_specified -- Shipping mode not specified."
+          {
+            "title": "custom",
+            "description": {
+              "es": " Custom shipping.",
+              "pt": " Custom shipping.",
+              "en": " Custom shipping."
+            }
+          },
+          {
+            "title": "me2",
+            "description": {
+              "es": " Mercado Envíos.",
+              "pt": " Mercado Envíos.",
+              "en": " Mercado Envíos."
+            }
+          },
+          {
+            "title": "not_specified",
+            "description": {
+              "es": " Shipping mode not specified.",
+              "pt": " Shipping mode not specified.",
+              "en": " Shipping mode not specified."
+            }
+          }
         ]
       },
       "operation_type": {
@@ -4013,8 +4391,22 @@
           "pt": "data_type da operação"
         },
         "enum": [
-          "regular_payment -- Normal payment.",
-          "money_transfer -- Money request."
+          {
+            "title": "regular_payment",
+            "description": {
+              "es": " Normal payment.",
+              "pt": " Normal payment.",
+              "en": " Normal payment."
+            }
+          },
+          {
+            "title": "money_transfer",
+            "description": {
+              "es": " Money request.",
+              "pt": " Money request.",
+              "en": " Money request."
+            }
+          }
         ]
       },
       "auto_return": {
@@ -4025,8 +4417,22 @@
           "pt": "No caso de estar especificado o comprador será redirecionado para o seu site imediatamente após a compra"
         },
         "enum": [
-          "approved -- The redirection takes place only for approved payments.",
-          "all -- The redirection takes place only for approved payments, forward compatibility only if we change the default behavior"
+          {
+            "title": "approved",
+            "description": {
+              "es": " The redirection takes place only for approved payments.",
+              "pt": " The redirection takes place only for approved payments.",
+              "en": " The redirection takes place only for approved payments."
+            }
+          },
+          {
+            "title": "all",
+            "description": {
+              "es": " The redirection takes place only for approved payments, forward compatibility only if we change the default behavior",
+              "pt": " The redirection takes place only for approved payments, forward compatibility only if we change the default behavior",
+              "en": " The redirection takes place only for approved payments, forward compatibility only if we change the default behavior"
+            }
+          }
         ]
       }
     }
