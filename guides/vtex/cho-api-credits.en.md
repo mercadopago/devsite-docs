@@ -3,7 +3,7 @@
 
 Installment via Pix up to 12x is the financing method offered by Mercado Pago, which provides the option of payment in installments without the need for a card. With this credit line, managed by Mercado Pago, the payment is credited in full to the seller's account, and the customer can choose to pay in up to 12 fixed monthly installments without the need for a card. 
 
-To configure the Installment via Pix up to 12x in the store's checkout, access the administration panel of your VTEX platform> **Payments > Configuration > Payment plans**. Then, follow the steps below: 
+To configure the Installment via Pix up to 12x in the store's checkout, access the administration panel of your VTEX platform, and then **Payments > Configuration > Payment plans**. Then, follow the steps below: 
 
 1. Click on the "+ (Add new payment plan for...)" button. 
 2. Within the **Other** category, search for **Buy now, pay later Mercado Pago** and select it. 
@@ -20,7 +20,7 @@ To configure the Installment via Pix up to 12x in the store's checkout, access t
 
 Up to 12 installments without a card is the financing method offered by Mercado Pago, which provides the option of payment in installments without the need for a card. With this credit line, managed by Mercado Pago, the payment is credited in full to the seller's account, and the customer can choose to pay in up to 12 fixed monthly installments. 
 
-To configure the Up to 12 installments without a card without a card in the store's checkout, access the administration panel of your VTEX platform> **Payments > Configuration > Payment plans**. Then, follow the steps below: 
+To configure the Up to 12 installments without a card without a card in the store's checkout, access the administration panel of your VTEX platform, and then **Payments > Configuration > Payment plans**. Then, follow the steps below: 
 
 1. Click on the "+ (Add new payment plan for...)" button. 
 2. Within the **Other** category, search for **Buy now, pay later Mercado Pago** and select it. 
@@ -37,7 +37,7 @@ To configure the Up to 12 installments without a card without a card in the stor
 
 Up to 12 installments without a card with Mercado Pago is the financing method offered by Mercado Pago, which provides the option of payment in installments without the need for a card. With this credit line, managed by Mercado Pago, the payment is credited in full to the seller's account, and the customer can choose to pay in up to 12 fixed monthly installments. 
 
-To configure Up to 12 installments without a card with Mercado Pago in the store's checkout, access the administration panel of your VTEX platform> **Payments > Configuration > Payment plans**. Then, follow the steps below: 
+To configure Up to 12 installments without a card with Mercado Pago in the store's checkout, access the administration panel of your VTEX platform, and then **Payments > Configuration > Payment plans**. Then, follow the steps below: 
 
 1. Click on the "+ (Add new payment plan for...)" button. 
 2. Within the **Other** category, search for **Buy now, pay later Mercado Pago** and select it. 

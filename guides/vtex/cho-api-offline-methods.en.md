@@ -42,7 +42,7 @@ When configuring Checkout API in VTEX stores, you can offer payments with offlin
 When configuring Checkout API in VTEX stores, you can offer payments with offline payment methods such as Pago Efectivo. 
 ------------ 
 
-To configure these payment methods, access the administration panel of your VTEX platform> **Payments > Configuration > Payment plans**. Then, follow the steps below: 
+To configure these payment methods, access the administration panel of your VTEX platform, and then **Payments > Configuration > Payment plans**. Then, follow the steps below: 
 
 1. Click on the "+ (Add new payment plan for...)" button. 
 2. Within the **Other** category, search for the offline payment method you want to offer.

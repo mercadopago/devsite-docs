@@ -1,6 +1,6 @@
 # Configure Checkout Pro 
 
-To configure Checkout Pro, access the administration panel of your VTEX platform > **Payments > Configuration > Payment Plans**. Then, follow the steps below: 
+To configure Checkout Pro, access the administration panel of your VTEX platform, and then **Payments > Configuration > Payment Plans**. Then, follow the steps below: 
 
 1. Click on the "+ (Add new payment plan for...)" button. 
 2. Under the **Other** category, search for **MercadoPagoPro**. 

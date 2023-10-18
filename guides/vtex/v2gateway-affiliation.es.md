@@ -39,8 +39,8 @@ Para crear una **afiliación de gateway MercadoPagoV2**, sigue los pasos a conti
   * **Integrator ID:** Si eres desarrollador, completa con tu identificación de Mercado Pago.
   * **Moeda - Moneda:** configura la moneda de la tienda(**USD** o **Local**).
   * **Merchant Account:** Este campo identifica la cuenta del merchant. No es necesario que lo completes.
-  * **Plazo de captura de pagamento aprobado - Plazo de captura de pagos aprobados:** Puedes configurar un retraso en la captura del pago que hace VTEX.  
-  * **Tempo para cancelar carrito abandonado:** Configura el rango de tiempo que se deberá esperar para que los medios de pago habilitados no estén disponibles para realizar la compra.
+  * **Plazo de captura de pagamento aprobado - Plazo de captura de pagos aprobados:** Puedes configurar un retraso en la captura del pago que hace VTEX seleccionando de entre las opciones deplegables. Si no quieres configurarlo, selecciona "Desactivado".
+  * **Tempo para cancelar carrito abandonado - Fecha para cancelar compras de un carrito abandonado:** Configura el rango de tiempo que se deberá esperar para que los medios de pago habilitados no estén disponibles para realizar la compra. Puedes seleccionar un rango de tiempo de entre las opciones desplegables, o bien elegir "no cancelar". 
 
 Una vez que hayas completado todos los campos, haz clic en **Guardar**, ¡y listo! Tu afiliación con MercadoPagoV2 ya está activa.
 
@@ -51,4 +51,4 @@ Una vez que hayas completado todos los campos, haz clic en **Guardar**, ¡y list
 >
 > Si tienes dificultades durante la integración, consulta nuestra [lista de errores](/developers/es/guides/vtex/integration/possible-errors) y nuestro documento sobre [logs de VTEX.](/developers/es/guides/vtex/how-tos/logs)
 
-![Crear afiliación de gateway MercadoPagoV2](/images/vtex/affiliationV2-imagenv2-pt.gif)
+![Crear afiliación de gateway MercadoPagoV2](/images/vtex/vtex-admin-gateway-es.gif)

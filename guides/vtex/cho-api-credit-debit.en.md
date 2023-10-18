@@ -2,7 +2,7 @@
 
 When setting up ----[mla, mlu, mlc, mlm, mpe, mco]----Checkout API------------ ----[mlb]----Checkout Transparente------------ in VTEX stores, you can offer payments with debit and/or credit cards. 
 
-To configure these payment methods, access the administration panel of your VTEX platform > **Payments > Configuration > Payment Plans**. Then, follow the steps below: 
+To configure these payment methods, access the administration panel of your VTEX platform, and then **Payments > Configuration > Payment Plans**. Then, follow the steps below: 
 
 1. Click on the "+ (Add new payment plan for...)" button. 
 2. Within the **Debit Card** or **Credit Card** categories, you will find the different card brands that you can offer. Click on them and configure each one individually to enable them. You can get more information about this configuration in the [VTEX tutorials section](https://help.vtex.com/en/tutorial/payment-conditions--tutorials_455#interest-free-installments). 

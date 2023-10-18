@@ -5,7 +5,7 @@ Financiación vía Pix en hasta 12 veces es el método de financiación de Merca
 
 Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. 
 
-Para configurar Financiación vía Pix en hasta 12 veces en el checkout de la tienda, dirígete al panel de administración de tu plataforma VTEX> **Pagos> Configuración > Planes de pago**. Luego, sigue los pasos a continuación:
+Para configurar Financiación vía Pix en hasta 12 veces en el checkout de la tienda, dirígete al panel de administración de tu plataforma VTEX, y accede a **Pagos> Configuración > Planes de pago**. Luego, sigue los pasos a continuación:
 
 1. Haz clic en el botón "+ (Agregar nuevo plan de pago para ...)”. 
 2. Dentro de la categoría **Otro**, busca por **Buy now, pay later Mercado Pago** y selecciona esa opción.
@@ -26,7 +26,7 @@ Hasta 12 cuotas sin tarjeta con Mercado Pago es el método de financiación de M
 
 Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. 
 
-Para configurar Hasta 12 cuotas sin tarjeta con Mercado Pago en el checkout de la tienda, dirígete al panel de administración de tu plataforma VTEX> **Pagos> Configuración > Planes de pago**. Luego, sigue los pasos a continuación:
+Para configurar Hasta 12 cuotas sin tarjeta con Mercado Pago en el checkout de la tienda, dirígete al panel de administración de tu plataforma VTEX, y accede a **Pagos> Configuración > Planes de pago**. Luego, sigue los pasos a continuación:
 
 1. Haz clic en el botón "+ (Agregar nuevo plan de pago para ...)”. 
 2. Dentro de la categoría **Otro**, busca por **Buy now, pay later Mercado Pago** y selecciona esa opción.
@@ -46,7 +46,7 @@ Hasta 12 veces sin tarjeta con Mercado Pago es el método de financiación de Me
 
 Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. 
 
-Para configurar Hasta 12 veces sin tarjeta con Mercado Pago en el checkout de la tienda, dirígete al panel de administración de tu plataforma VTEX> **Pagos> Configuración > Planes de pago**. Luego, sigue los pasos a continuación:
+Para configurar Hasta 12 veces sin tarjeta con Mercado Pago en el checkout de la tienda, dirígete al panel de administración de tu plataforma VTEX, y accede a **Pagos> Configuración > Planes de pago**. Luego, sigue los pasos a continuación:
 
 1. Haz clic en el botón "+ (Agregar nuevo plan de pago para ...)”. 
 2. Dentro de la categoría **Otro**, busca por **Buy now, pay later Mercado Pago** y selecciona esa opción.
