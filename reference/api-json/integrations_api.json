@@ -15,9 +15,9 @@
             "name": "x-test-scope",
             "in": "header",
             "description": {
-              "eng": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
-              "spa": "Este es un header temporal, debe usarse solo para desarrollo con el valor \"sandbox\"",
-              "por": "Este é um header temporário, deve ser usado apenas para desenvolvimento com o valor \"sandbox\""
+              "en": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+              "es": "Este es un header temporal, debe usarse solo para desarrollo con el valor \"sandbox\"",
+              "pt": "Este é um header temporário, deve ser usado apenas para desenvolvimento com o valor \"sandbox\""
             },
             "schema": {
               "type": "string",
@@ -28,9 +28,9 @@
             "name": "store_id",
             "in": "query",
             "description": {
-              "eng": "Devices Store Id filter (Optional)",
-              "spa": "Filtro de Id de tienda de dispositivos (opcional)",
-              "por": "Filtro de ID de loja de dispositivos (opcional)"
+              "en": "Devices Store Id filter (Optional)",
+              "es": "Filtro de Id de tienda de dispositivos (opcional)",
+              "pt": "Filtro de ID de loja de dispositivos (opcional)"
             },
             "schema": {
               "type": "string",
@@ -41,9 +41,9 @@
             "name": "pos_id",
             "in": "query",
             "description": {
-              "eng": "Devices Pos Id filter (Optional)",
-              "spa": "Filtro de Id de PDV de dispositivos (opcional)",
-              "por": "Filtro de ID de PDV de dispositivos (opcional)"
+              "en": "Devices Pos Id filter (Optional)",
+              "es": "Filtro de Id de PDV de dispositivos (opcional)",
+              "pt": "Filtro de ID de PDV de dispositivos (opcional)"
             },
             "schema": {
               "type": "integer",
@@ -54,9 +54,9 @@
             "name": "limit",
             "in": "query",
             "description": {
-              "eng": "pagination limit",
-              "spa": "límite de paginación",
-              "por": "limite de paginação"
+              "en": "pagination limit",
+              "es": "límite de paginación",
+              "pt": "limite de paginação"
             },
             "schema": {
               "type": "integer",
@@ -67,9 +67,9 @@
             "name": "offset",
             "in": "query",
             "description": {
-              "eng": "pagination offset",
-              "spa": "offset de paginación",
-              "por": "offset de paginação"
+              "en": "pagination offset",
+              "es": "offset de paginación",
+              "pt": "offset de paginação"
             },
             "schema": {
               "type": "integer",
@@ -102,27 +102,27 @@
                           "pos_id": {
                             "type": "integer",
                             "description": {
-                              "eng": "POS identifier",
-                              "spa": "Identificador del POS",
-                              "por": "Identificador do POS"
+                              "en": "POS identifier",
+                              "es": "Identificador del POS",
+                              "pt": "Identificador do POS"
                             },
                             "example": 47792476
                           },
                           "store_id": {
                             "type": "string",
                             "description": {
-                              "eng": "STORE identifier",
-                              "spa": "Identificador de la tienda",
-                              "por": "Identificador da loja"
+                              "en": "STORE identifier",
+                              "es": "Identificador de la tienda",
+                              "pt": "Identificador da loja"
                             },
                             "example": 47792478
                           },
                           "external_pos_id": {
                             "type": "string",
                             "description": {
-                              "eng": "External_id of the store to which the pos belongs",
-                              "spa": "External_id de la tienda a la que pertenece el POS",
-                              "por": "External_id da loja a qual pertence o POS"
+                              "en": "External_id of the store to which the pos belongs",
+                              "es": "External_id de la tienda a la que pertenece el POS",
+                              "pt": "External_id da loja a qual pertence o POS"
                             },
                             "example": "SUC0101POS"
                           },
@@ -306,9 +306,9 @@
             "name": "deviceId",
             "in": "path",
             "description": {
-              "eng": "identifier of the device that will have a payment intent queued",
-              "spa": "identificador del dispositivo que tendrá un intento de pago en cola",
-              "por": "identificador do dispositivo que terá uma tentativa de pagamento em fila"
+              "en": "identifier of the device that will have a payment intent queued",
+              "es": "identificador del dispositivo que tendrá un intento de pago en cola",
+              "pt": "identificador do dispositivo que terá uma tentativa de pagamento em fila"
             },
             "required": true,
             "schema": {
@@ -331,41 +331,41 @@
                     "required": true,
                     "minimum": 1,
                     "description": {
-                      "eng": "A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75).",
-                      "spa": "Un valor entero positivo que representa cuánto cobrar. El valor debe tener dos decimales en la parte entera (por ejemplo, 175 para cobrar $1,75).",
-                      "por": "Um número inteiro positivo que representa quanto carregar. O valor deve ter duas casas decimais na parte inteira (por exemplo, 175 para cobrar R$ 1,75)."
+                      "en": "A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75).",
+                      "es": "Un valor entero positivo que representa cuánto cobrar. El valor debe tener dos decimales en la parte entera (por ejemplo, 175 para cobrar $1,75).",
+                      "pt": "Um número inteiro positivo que representa quanto carregar. O valor deve ter duas casas decimais na parte inteira (por exemplo, 175 para cobrar R$ 1,75)."
                     }
                   },
                   "additional_info": {
                     "type": "object",
                     "required": true,
                     "description": {
-                      "eng": "payment intent additional info",
-                      "spa": "información adicional de intención de pago",
-                      "por": "informações adicionais de intenção de pagamento"
+                      "en": "payment intent additional info",
+                      "es": "información adicional de intención de pago",
+                      "pt": "informações adicionais de intenção de pagamento"
                     },
                     "properties": {
                       "external_reference": {
                         "type": "string",
                         "example": "some-reference-from-your-application",
                         "x-example-i18n": {
-                          "eng": "some-reference-from-your-application",
-                          "spa": "alguna-referencia-sobre-tu-aplicación",
-                          "por": "alguma-referência-sobre-seu-aplicativo"
+                          "en": "some-reference-from-your-application",
+                          "es": "alguna-referencia-sobre-tu-aplicación",
+                          "pt": "alguma-referência-sobre-seu-aplicativo"
                         },
                         "description": {
-                          "eng": "An alphanumeric value can be a identificator in your application. It will be returned in the Webhook notification",
-                          "spa": "Un valor alfanumérico puede ser un identificador en tu aplicación. Se devolverá en la notificación de Webhook.",
-                          "por": "Um valor alfanumérico pode ser um identificador em seu aplicativo. Ele será retornado na notificação do Webhook."
+                          "en": "An alphanumeric value can be a identificator in your application. It will be returned in the Webhook notification",
+                          "es": "Un valor alfanumérico puede ser un identificador en tu aplicación. Se devolverá en la notificación de Webhook.",
+                          "pt": "Um valor alfanumérico pode ser um identificador em seu aplicativo. Ele será retornado na notificação do Webhook."
                         }
                       },
                       "print_on_terminal": {
                         "type": "boolean",
                         "example": true,
                         "description": {
-                          "eng": "A boolean value that determines if you want to print the ticket on the device",
-                          "spa": "Un valor booleano que determina si desea imprimir el ticket en el dispositivo",
-                          "por": "Um valor booleano que determina se você deseja imprimir o ticket no dispositivo"
+                          "en": "A boolean value that determines if you want to print the ticket on the device",
+                          "es": "Un valor booleano que determina si desea imprimir el ticket en el dispositivo",
+                          "pt": "Um valor booleano que determina se você deseja imprimir o ticket no dispositivo"
                         }
                       },
                       "ticket_number": {
@@ -373,9 +373,9 @@
                         "required": true,
                         "example": "S0392JED",
                         "description": {
-                          "eng": "An alphanumeric value to identify the invoice or ticket number. It will be printed on the device ticket",
-                          "spa": "Un valor alfanumérico para identificar el número de factura o ticket. Se imprimirá en el ticket del dispositivo.",
-                          "por": "Um valor alfanumérico para identificar o número da fatura ou do bilhete. Ele será impresso no bilhete do dispositivo."
+                          "en": "An alphanumeric value to identify the invoice or ticket number. It will be printed on the device ticket",
+                          "es": "Un valor alfanumérico para identificar el número de factura o ticket. Se imprimirá en el ticket del dispositivo.",
+                          "pt": "Um valor alfanumérico para identificar o número da fatura ou do bilhete. Ele será impresso no bilhete do dispositivo."
                         }
                       }
                     }
@@ -432,9 +432,9 @@
                           "type": "string",
                           "example": "some-reference-from-your-application",
                           "x-example-i18n": {
-                            "eng": "some-reference-from-your-application",
-                            "spa": "alguna-referencia-sobre-tu-aplicación",
-                            "por": "alguma-referência-sobre-seu-aplicativo"
+                            "en": "some-reference-from-your-application",
+                            "es": "alguna-referencia-sobre-tu-aplicación",
+                            "pt": "alguma-referência-sobre-seu-aplicativo"
                           },
                           "description": {
                             "en": "An alphanumeric value can be a identificator in your application. It will be returned in the Webhook notification",
@@ -644,9 +644,9 @@
             "name": "deviceId",
             "in": "path",
             "description": {
-              "eng": "identifier of the device that will have a payment intent queued",
-              "spa": "identificador del dispositivo que tendrá un intento de pago en cola",
-              "por": "identificador do dispositivo que terá uma tentativa de pagamento em fila"
+              "en": "identifier of the device that will have a payment intent queued",
+              "es": "identificador del dispositivo que tendrá un intento de pago en cola",
+              "pt": "identificador do dispositivo que terá uma tentativa de pagamento em fila"
             },
             "required": true,
             "schema": {
@@ -658,9 +658,9 @@
             "name": "paymentIntentId",
             "in": "path",
             "description": {
-              "eng": "Payment Intent ID",
-              "spa": "ID de intención de pago",
-              "por": "ID de intenção de pagamento"
+              "en": "Payment Intent ID",
+              "es": "ID de intención de pago",
+              "pt": "ID de intenção de pagamento"
             },
             "required": true,
             "schema": {
@@ -896,9 +896,9 @@
                           "description": null,
                           "example": "some-reference-from-your-application",
                           "x-example-i18n": {
-                            "eng": "some-reference-from-your-application",
-                            "spa": "alguna-referencia-sobre-tu-aplicación",
-                            "por": "alguma-referência-sobre-seu-aplicativo"
+                            "en": "some-reference-from-your-application",
+                            "es": "alguna-referencia-sobre-tu-aplicación",
+                            "pt": "alguma-referência-sobre-seu-aplicativo"
                           }
                         },
                         "print_on_terminal": {
@@ -1065,9 +1065,9 @@
             "name": "startDate",
             "in": "query",
             "description": {
-              "eng": "Initial date (YYYY-MM-DD)",
-              "spa": "Fecha inicial (AAAA-MM-DD)",
-              "por": "Data de início (AAAA-MM-DD)"
+              "en": "Initial date (YYYY-MM-DD)",
+              "es": "Fecha inicial (AAAA-MM-DD)",
+              "pt": "Data de início (AAAA-MM-DD)"
             },
             "required": true,
             "example": "1948-01-16",
@@ -1080,9 +1080,9 @@
             "name": "endDate",
             "in": "query",
             "description": {
-              "eng": "End date (YYYY-MM-DD)",
-              "spa": "Fecha final (AAAA-MM-DD)",
-              "por": "Data final (AAAA-MM-DD)"
+              "en": "End date (YYYY-MM-DD)",
+              "es": "Fecha final (AAAA-MM-DD)",
+              "pt": "Data final (AAAA-MM-DD)"
             },
             "required": true,
             "example": "2022-01-25",
@@ -1648,9 +1648,9 @@
                   "event_channel_devices": {
                     "type": "array",
                     "description": {
-                      "eng": "Allowed notification channels to receive device event notifications. It is important to keep in mind that you must enter a valid channel, for example, \"email\".",
-                      "spa": "Canales de notificación permitidos para recibir notificaciones de eventos del dispositivo. Es importante tener en cuenta que en este campo se debe ingresar un canal válido, por ejemplo, \"email\".",
-                      "por": "Canais de notificação permitidos para receber notificações de eventos do dispositivo. É importante ter em mente que neste campo deve ser inserido um canal válido, por exemplo, \"email\"."
+                      "en": "Allowed notification channels to receive device event notifications. It is important to keep in mind that you must enter a valid channel, for example, \"email\".",
+                      "es": "Canales de notificación permitidos para recibir notificaciones de eventos del dispositivo. Es importante tener en cuenta que en este campo se debe ingresar un canal válido, por ejemplo, \"email\".",
+                      "pt": "Canais de notificação permitidos para receber notificações de eventos do dispositivo. É importante ter em mente que neste campo deve ser inserido um canal válido, por exemplo, \"email\"."
                     },
                     "items": {
                       "type": "string",
@@ -1829,9 +1829,9 @@
                       "items": {
                         "type": "string",
                         "description": {
-                          "eng": "Allowed notification channels to receive device event notifications. It is important to keep in mind that you must enter a valid channel, for example, \"email\".",
-                          "spa": "Canales de notificación permitidos para recibir notificaciones de eventos del dispositivo. Es importante tener en cuenta que en este campo se debe ingresar un canal válido, por ejemplo, \"email\".",
-                          "por": "Canais de notificação permitidos para receber notificações de eventos do dispositivo. É importante ter em mente que neste campo deve ser inserido um canal válido, por exemplo, \"email\"."
+                          "en": "Allowed notification channels to receive device event notifications. It is important to keep in mind that you must enter a valid channel, for example, \"email\".",
+                          "es": "Canales de notificación permitidos para recibir notificaciones de eventos del dispositivo. Es importante tener en cuenta que en este campo se debe ingresar un canal válido, por ejemplo, \"email\".",
+                          "pt": "Canais de notificação permitidos para receber notificações de eventos do dispositivo. É importante ter em mente que neste campo deve ser inserido um canal válido, por exemplo, \"email\"."
                         }
                       }
                     }

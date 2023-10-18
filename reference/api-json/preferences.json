@@ -20,9 +20,9 @@
                   "items": {
                     "type": "array",
                     "description": {
-                      "eng": "Items information.",
-                      "spa": "Información sobre el ítem",
-                      "por": "Informações sobre o item"
+                      "en": "Items information.",
+                      "es": "Información sobre el ítem",
+                      "pt": "Informações sobre o item"
                     },
                     "required": true,
                     "items": {
@@ -31,9 +31,9 @@
                         "id": {
                           "type": "string",
                           "description": {
-                            "eng": "Item ID.",
-                            "spa": "Identificador del ítem",
-                            "por": "Identificador do item"
+                            "en": "Item ID.",
+                            "es": "Identificador del ítem",
+                            "pt": "Identificador do item"
                           },
                           "required": true
                         },
@@ -41,9 +41,9 @@
                           "type": "string",
                           "example": "Dummy Title",
                           "description": {
-                            "eng": "This is the item`s title, which will display during the payment process, at checkout, activities, and emails.",
-                            "spa": "Este es el título del ítem, que se mostrará durante el proceso de pago, en el checkout, actividades y correos electrónicos.",
-                            "por": "Este é o título do item, que será exibido durante o processo de pagamento, no checkout, nas atividades e nos e-mails."
+                            "en": "This is the item`s title, which will display during the payment process, at checkout, activities, and emails.",
+                            "es": "Este es el título del ítem, que se mostrará durante el proceso de pago, en el checkout, actividades y correos electrónicos.",
+                            "pt": "Este é o título do item, que será exibido durante o processo de pagamento, no checkout, nas atividades e nos e-mails."
                           },
                           "required": true
                         },
@@ -51,36 +51,36 @@
                           "type": "string",
                           "example": "Dummy description",
                           "description": {
-                            "eng": "Item description.",
-                            "spa": "Descripción del item",
-                            "por": "Descrição do artigo"
+                            "en": "Item description.",
+                            "es": "Descripción del item",
+                            "pt": "Descrição do artigo"
                           }
                         },
                         "picture_url": {
                           "type": "string",
                           "example": "http://www.myapp.com/myimage.jpg",
                           "description": {
-                            "eng": "Item image URL.",
-                            "spa": "URL de imagen del ítem",
-                            "por": "URL da imagem do anúncio"
+                            "en": "Item image URL.",
+                            "es": "URL de imagen del ítem",
+                            "pt": "URL da imagem do anúncio"
                           }
                         },
                         "category_id": {
                           "type": "string",
                           "example": "car_electronics",
                           "description": {
-                            "eng": "This is a free string where the item category can be added. We suggest using one of the options shown in the following link https://api.mercadopago.com/item_categories",
-                            "spa": "Esto es un string libre donde se puede agregar la categoría del ítem. Sugerimos utilizar alguna de las opciones que se muestran en el siguiente enlace https://api.mercadopago.com/item_categories",
-                            "por": "Esta é uma string livre onde a categoria do item pode ser adicionada. Sugerimos usar uma das opções mostradas no link a seguir https://api.mercadopago.com/item_categories"
+                            "en": "This is a free string where the item category can be added. We suggest using one of the options shown in the following link https://api.mercadopago.com/item_categories",
+                            "es": "Esto es un string libre donde se puede agregar la categoría del ítem. Sugerimos utilizar alguna de las opciones que se muestran en el siguiente enlace https://api.mercadopago.com/item_categories",
+                            "pt": "Esta é uma string livre onde a categoria do item pode ser adicionada. Sugerimos usar uma das opções mostradas no link a seguir https://api.mercadopago.com/item_categories"
                           }
                         },
                         "quantity": {
                           "type": "number",
                           "example": 1,
                           "description": {
-                            "eng": "Item quantity. This property is used to calculate the total cost.",
-                            "spa": "Cantidad de ítems. Esta propiedad se utiliza para calcular el costo total.",
-                            "por": "Quantidade de itens. Esta propriedade é usada para calcular o custo total."
+                            "en": "Item quantity. This property is used to calculate the total cost.",
+                            "es": "Cantidad de ítems. Esta propiedad se utiliza para calcular el costo total.",
+                            "pt": "Quantidade de itens. Esta propriedade é usada para calcular o custo total."
                           },
                           "required": true
                         },
@@ -88,9 +88,9 @@
                           "type": "string",
                           "example": "U$",
                           "description": {
-                            "eng": "Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.",
-                            "spa": "ID único para identificar la moneda. Código ISO_4217. Algunos sitios permiten la moneda local y USD, pero es importante tener en cuenta que el monto se convierte a moneda local cuando se crea la preferencia, ya que el checkout siempre procesa las transacciones en moneda local. Si usas USD, ten en cuenta que este valor no se actualiza automáticamente si el valor de la moneda local cambia en relación a USD.",
-                            "por": "ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD."
+                            "en": "Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.",
+                            "es": "ID único para identificar la moneda. Código ISO_4217. Algunos sitios permiten la moneda local y USD, pero es importante tener en cuenta que el monto se convierte a moneda local cuando se crea la preferencia, ya que el checkout siempre procesa las transacciones en moneda local. Si usas USD, ten en cuenta que este valor no se actualiza automáticamente si el valor de la moneda local cambia en relación a USD.",
+                            "pt": "ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD."
                           },
                           "enum": [
                             "ARS -- Argentine peso.",
@@ -106,9 +106,9 @@
                           "type": "number",
                           "example": 10,
                           "description": {
-                            "eng": "Unit price of the item. This property is used together with the property quantity to determine the order cost.",
-                            "spa": "Precio unitario del ítem. Esta propiedad se usa junto con propiedad quantity para determinar el costo de la orden.",
-                            "por": "Preço unitário do item. Essa propriedade é usada em conjunto com a propriedade de quantity para determinar o custo do pedido."
+                            "en": "Unit price of the item. This property is used together with the property quantity to determine the order cost.",
+                            "es": "Precio unitario del ítem. Esta propiedad se usa junto con propiedad quantity para determinar el costo de la orden.",
+                            "pt": "Preço unitário do item. Essa propriedade é usada em conjunto com a propriedade de quantity para determinar o custo do pedido."
                           },
                           "required": true
                         }
@@ -118,57 +118,57 @@
                   "payer": {
                     "type": "object",
                     "description": {
-                      "eng": "Buyer´s information, such as name, last name, e-mail, phone, personal identification, address, and registration date.",
-                      "spa": "Información del comprador, como nombre, apellido, correo electrónico, teléfono, identificación personal, dirección y fecha de registro.",
-                      "por": "Informações do comprador, como nome, sobrenome, e-mail, telefone, identificação pessoal, endereço e data de registro."
+                      "en": "Buyer´s information, such as name, last name, e-mail, phone, personal identification, address, and registration date.",
+                      "es": "Información del comprador, como nombre, apellido, correo electrónico, teléfono, identificación personal, dirección y fecha de registro.",
+                      "pt": "Informações do comprador, como nome, sobrenome, e-mail, telefone, identificação pessoal, endereço e data de registro."
                     },
                     "properties": {
                       "name": {
                         "type": "string",
                         "description": {
-                          "eng": "Buyer name.",
-                          "spa": "Nombre del comprador",
-                          "por": "Nome do comprador"
+                          "en": "Buyer name.",
+                          "es": "Nombre del comprador",
+                          "pt": "Nome do comprador"
                         }
                       },
                       "surname": {
                         "type": "string",
                         "description": {
-                          "eng": "Buyer last name.",
-                          "spa": "Apellido del comprador",
-                          "por": "Apelido do comprador"
+                          "en": "Buyer last name.",
+                          "es": "Apellido del comprador",
+                          "pt": "Apelido do comprador"
                         }
                       },
                       "email": {
                         "type": "string",
                         "description": {
-                          "eng": "Buyer e-mail address.",
-                          "spa": "Dirección de e-mail del comprador",
-                          "por": "Endereço de e-mail do comprador"
+                          "en": "Buyer e-mail address.",
+                          "es": "Dirección de e-mail del comprador",
+                          "pt": "Endereço de e-mail do comprador"
                         }
                       },
                       "phone": {
                         "type": "object",
                         "description": {
-                          "eng": "Buyer phone.",
-                          "spa": "Teléfono del comprador",
-                          "por": "Telefone do comprador"
+                          "en": "Buyer phone.",
+                          "es": "Teléfono del comprador",
+                          "pt": "Telefone do comprador"
                         },
                         "properties": {
                           "area_code": {
                             "type": "string",
                             "description": {
-                              "eng": "Area code.",
-                              "spa": "Código de área",
-                              "por": "Código de área"
+                              "en": "Area code.",
+                              "es": "Código de área",
+                              "pt": "Código de área"
                             }
                           },
                           "number": {
                             "type": "number",
                             "description": {
-                              "eng": "Number.",
-                              "spa": "Número",
-                              "por": "Número"
+                              "en": "Number.",
+                              "es": "Número",
+                              "pt": "Número"
                             }
                           }
                         }
@@ -176,25 +176,25 @@
                       "identification": {
                         "type": "object",
                         "description": {
-                          "eng": "Personal identification.",
-                          "spa": "Identificación personal",
-                          "por": "Identificação pessoal"
+                          "en": "Personal identification.",
+                          "es": "Identificación personal",
+                          "pt": "Identificação pessoal"
                         },
                         "properties": {
                           "type": {
                             "type": "string",
                             "description": {
-                              "eng": "Identification Type.",
-                              "spa": "Tipo de identificación",
-                              "por": "Tipo de identificação"
+                              "en": "Identification Type.",
+                              "es": "Tipo de identificación",
+                              "pt": "Tipo de identificação"
                             }
                           },
                           "number": {
                             "type": "string",
                             "description": {
-                              "eng": "Number.",
-                              "spa": "Número",
-                              "por": "Número"
+                              "en": "Number.",
+                              "es": "Número",
+                              "pt": "Número"
                             }
                           }
                         }
@@ -202,33 +202,33 @@
                       "address": {
                         "type": "object",
                         "description": {
-                          "eng": "Buyer’s address.",
-                          "spa": "Dirección del comprador",
-                          "por": "Endereço do comprador"
+                          "en": "Buyer’s address.",
+                          "es": "Dirección del comprador",
+                          "pt": "Endereço do comprador"
                         },
                         "properties": {
                           "zip_code": {
                             "type": "string",
                             "description": {
-                              "eng": "Zip code.",
-                              "spa": "Código postal",
-                              "por": "Código postal"
+                              "en": "Zip code.",
+                              "es": "Código postal",
+                              "pt": "Código postal"
                             }
                           },
                           "street_name": {
                             "type": "string",
                             "description": {
-                              "eng": "Street name.",
-                              "spa": "Calle",
-                              "por": "Rua"
+                              "en": "Street name.",
+                              "es": "Calle",
+                              "pt": "Rua"
                             }
                           },
                           "street_number": {
                             "type": "number",
                             "description": {
-                              "eng": "Street number.",
-                              "spa": "Número",
-                              "por": "O Número"
+                              "en": "Street number.",
+                              "es": "Número",
+                              "pt": "O Número"
                             }
                           }
                         }
@@ -237,9 +237,9 @@
                         "type": "string",
                         "format": "date",
                         "description": {
-                          "eng": "Registration date.",
-                          "spa": "Fecha de registración",
-                          "por": "Data de registro"
+                          "en": "Registration date.",
+                          "es": "Fecha de registración",
+                          "pt": "Data de registro"
                         }
                       }
                     }
@@ -247,17 +247,17 @@
                   "payment_methods": {
                     "type": "object",
                     "description": {
-                      "eng": "All configuration related to payments methods, such as excluded payment methods, excluded payment types, default payment method, and installments.",
-                      "spa": "Toda la configuración relacionada con los métodos de pago, tales como los métodos de pago excluidos, los tipos de pago excluidos, el método de pago predeterminado y las cuotas.",
-                      "por": "Todas as configurações são relacionadas ao métodos de pagamento, como, por exemplo, métodos de pagamento excluídos, tipos de pagamento excluídos, método de pagamento padrão e taxas."
+                      "en": "All configuration related to payments methods, such as excluded payment methods, excluded payment types, default payment method, and installments.",
+                      "es": "Toda la configuración relacionada con los métodos de pago, tales como los métodos de pago excluidos, los tipos de pago excluidos, el método de pago predeterminado y las cuotas.",
+                      "pt": "Todas as configurações são relacionadas ao métodos de pagamento, como, por exemplo, métodos de pagamento excluídos, tipos de pagamento excluídos, método de pagamento padrão e taxas."
                     },
                     "properties": {
                       "excluded_payment_methods": {
                         "type": "array",
                         "description": {
-                          "eng": "Payment methods excluded from the payment process (except account_money, which is always allowed). The payment methods included here will not be available at checkout.",
-                          "spa": "Métodos de pago excluidos del proceso de pago (excepto account_money, que siempre estará disponible). Los métodos de pago incluidos aquí no estarán disponibles en el checkout.",
-                          "por": "Métodos de pagamento excluídos do checkout (exceto account_money, que estará sempre disponível). Os métodos de pagamento aqui incluídos não estarão disponíveis no checkout."
+                          "en": "Payment methods excluded from the payment process (except account_money, which is always allowed). The payment methods included here will not be available at checkout.",
+                          "es": "Métodos de pago excluidos del proceso de pago (excepto account_money, que siempre estará disponible). Los métodos de pago incluidos aquí no estarán disponibles en el checkout.",
+                          "pt": "Métodos de pagamento excluídos do checkout (exceto account_money, que estará sempre disponível). Os métodos de pagamento aqui incluídos não estarão disponíveis no checkout."
                         },
                         "items": {
                           "type": "object",
@@ -265,9 +265,9 @@
                             "id": {
                               "type": "string",
                               "description": {
-                                "eng": "Payment method ID.",
-                                "spa": "Identificador del método de pago",
-                                "por": "Identificador do método de pagamento"
+                                "en": "Payment method ID.",
+                                "es": "Identificador del método de pago",
+                                "pt": "Identificador do método de pagamento"
                               }
                             }
                           }
@@ -276,9 +276,9 @@
                       "excluded_payment_types": {
                         "type": "array",
                         "description": {
-                          "eng": "Payment types excluded from the payment process. The payment types included here will not be available at checkout.",
-                          "spa": "Tipos de pago excluidos del proceso de pago. Los tipos de pago incluidos aquí no estarán disponibles en el checkout.",
-                          "por": "Tipos de pagamento excluídos do processo de pagamento. Os tipos de pagamento incluídos aqui não estarão disponíveis no checkout."
+                          "en": "Payment types excluded from the payment process. The payment types included here will not be available at checkout.",
+                          "es": "Tipos de pago excluidos del proceso de pago. Los tipos de pago incluidos aquí no estarán disponibles en el checkout.",
+                          "pt": "Tipos de pagamento excluídos do processo de pagamento. Os tipos de pagamento incluídos aqui não estarão disponíveis no checkout."
                         },
                         "items": {
                           "type": "object",
@@ -286,9 +286,9 @@
                             "id": {
                               "type": "string",
                               "description": {
-                                "eng": "Payment method data_type ID.",
-                                "spa": "Identificador de data_type del medio de pago",
-                                "por": "Identificador de data_type do meio de pagamento"
+                                "en": "Payment method data_type ID.",
+                                "es": "Identificador de data_type del medio de pago",
+                                "pt": "Identificador de data_type do meio de pagamento"
                               }
                             }
                           }
@@ -297,25 +297,25 @@
                       "default_payment_method_id": {
                         "type": "string",
                         "description": {
-                          "eng": "Suggested payment method. The user will initiate the checkout this this payment method already selected. It is considered suggested because Checkouts follow different logics in order to select the best payment method for a specific transaction, and this property is the option with the least relevance.",
-                          "spa": "Forma de pago sugerida. El usuario iniciará el pago con este método de pago ya seleccionado. Se considera sugerida porque los Checkouts siguen lógicas diferentes para seleccionar el mejor método de pago para una transacción específica, siendo esta propiedad la opción con menor relevancia.",
-                          "por": "Forma de pagamento sugerida. O usuário iniciará o pagamento com esta forma de pagamento já selecionada. Considera-se sugerido porque os Checkouts seguem lógicas diferentes para selecionar o melhor meio de pagamento para uma determinada transação, sendo esta propriedade a opção menos relevante."
+                          "en": "Suggested payment method. The user will initiate the checkout this this payment method already selected. It is considered suggested because Checkouts follow different logics in order to select the best payment method for a specific transaction, and this property is the option with the least relevance.",
+                          "es": "Forma de pago sugerida. El usuario iniciará el pago con este método de pago ya seleccionado. Se considera sugerida porque los Checkouts siguen lógicas diferentes para seleccionar el mejor método de pago para una transacción específica, siendo esta propiedad la opción con menor relevancia.",
+                          "pt": "Forma de pagamento sugerida. O usuário iniciará o pagamento com esta forma de pagamento já selecionada. Considera-se sugerido porque os Checkouts seguem lógicas diferentes para selecionar o melhor meio de pagamento para uma determinada transação, sendo esta propriedade a opção menos relevante."
                         }
                       },
                       "installments": {
                         "type": "number",
                         "description": {
-                          "eng": "Maximum number of credit card installments to be accepted.",
-                          "spa": "Máximo número de cuotas",
-                          "por": "Número Máximo de cotas"
+                          "en": "Maximum number of credit card installments to be accepted.",
+                          "es": "Máximo número de cuotas",
+                          "pt": "Número Máximo de cotas"
                         }
                       },
                       "default_installments": {
                         "type": "number",
                         "description": {
-                          "eng": "Prefered number of credit card installments.",
-                          "spa": "Preferencia de cuotas",
-                          "por": "Preferência de cotas"
+                          "en": "Prefered number of credit card installments.",
+                          "es": "Preferencia de cuotas",
+                          "pt": "Preferência de cotas"
                         }
                       }
                     }
@@ -323,9 +323,9 @@
                   "shipments": {
                     "type": "object",
                     "description": {
-                      "eng": "Shipments information.",
-                      "spa": "Información de envío",
-                      "por": "Informações de envio"
+                      "en": "Shipments information.",
+                      "es": "Información de envío",
+                      "pt": "Informações de envio"
                     },
                     "properties": {
                       "mode": {
@@ -334,33 +334,33 @@
                       "local_pickup": {
                         "type": "boolean",
                         "description": {
-                          "eng": "The payer has the option to pick up the shipment in your store (mode:me2 only).",
-                          "spa": "Preferencia de retiro de paquetes en sucursal(mode:me2 solamente)",
-                          "por": "Preferência de remoção de pacotes em agência(mode:me2 somente)"
+                          "en": "The payer has the option to pick up the shipment in your store (mode:me2 only).",
+                          "es": "Preferencia de retiro de paquetes en sucursal(mode:me2 solamente)",
+                          "pt": "Preferência de remoção de pacotes em agência(mode:me2 somente)"
                         }
                       },
                       "dimensions": {
                         "type": "string",
                         "description": {
-                          "eng": "Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)",
-                          "spa": "Tamaño del paquete en cm x cm x cm, gr (mode:me2 solamente)",
-                          "por": "Tamanho do pacote em cm x cm x cm, gr (mode:me2 somente)"
+                          "en": "Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)",
+                          "es": "Tamaño del paquete en cm x cm x cm, gr (mode:me2 solamente)",
+                          "pt": "Tamanho do pacote em cm x cm x cm, gr (mode:me2 somente)"
                         }
                       },
                       "default_shipping_method": {
                         "type": "number",
                         "description": {
-                          "eng": "Select default shipping method in checkout (mode:me2 only).",
-                          "spa": "Elegir un método de envío predeterminado en el checkout (mode:me2 solamente)",
-                          "por": "Escolha um método de envio padrão no checkout (mode:me2 somente)"
+                          "en": "Select default shipping method in checkout (mode:me2 only).",
+                          "es": "Elegir un método de envío predeterminado en el checkout (mode:me2 solamente)",
+                          "pt": "Escolha um método de envio padrão no checkout (mode:me2 somente)"
                         }
                       },
                       "free_methods": {
                         "type": "array",
                         "description": {
-                          "eng": "Offer a shipping method as free shipping (mode:me2 only).",
-                          "spa": "Ofrecer un método de envío gratuito (mode:me2 solamente)",
-                          "por": "Oferecer um método de frete grátis (mode:me2 somente)"
+                          "en": "Offer a shipping method as free shipping (mode:me2 only).",
+                          "es": "Ofrecer un método de envío gratuito (mode:me2 solamente)",
+                          "pt": "Oferecer um método de frete grátis (mode:me2 somente)"
                         },
                         "items": {
                           "type": "object",
@@ -368,9 +368,9 @@
                             "id": {
                               "type": "number",
                               "description": {
-                                "eng": "Shipping method ID.",
-                                "spa": "Identificador de método de envío",
-                                "por": "Identificador do método de envio"
+                                "en": "Shipping method ID.",
+                                "es": "Identificador de método de envío",
+                                "pt": "Identificador do método de envio"
                               }
                             }
                           }
@@ -379,81 +379,81 @@
                       "cost": {
                         "type": "number",
                         "description": {
-                          "eng": "Shipment cost (mode:custom only).",
-                          "spa": "Costo del envío (mode:custom solamente)",
-                          "por": "Custo do transporte (mode:custom somente)"
+                          "en": "Shipment cost (mode:custom only).",
+                          "es": "Costo del envío (mode:custom solamente)",
+                          "pt": "Custo do transporte (mode:custom somente)"
                         }
                       },
                       "free_shipping": {
                         "type": "boolean",
                         "description": {
-                          "eng": "Free shipping for mode:custom.",
-                          "spa": "Preferencia de envío gratuito para mode:custom",
-                          "por": "Preferência de frete grátis para mode:custom"
+                          "en": "Free shipping for mode:custom.",
+                          "es": "Preferencia de envío gratuito para mode:custom",
+                          "pt": "Preferência de frete grátis para mode:custom"
                         }
                       },
                       "receiver_address": {
                         "type": "object",
                         "description": {
-                          "eng": "Shipping address.",
-                          "spa": "Dirección de envío",
-                          "por": "Endereço de envio"
+                          "en": "Shipping address.",
+                          "es": "Dirección de envío",
+                          "pt": "Endereço de envio"
                         },
                         "properties": {
                           "zip_code": {
                             "type": "string",
                             "description": {
-                              "eng": "Zip code.",
-                              "spa": "Código postal",
-                              "por": "Código postal"
+                              "en": "Zip code.",
+                              "es": "Código postal",
+                              "pt": "Código postal"
                             }
                           },
                           "street_name": {
                             "type": "string",
                             "description": {
-                              "eng": "Street name.",
-                              "spa": "Calle",
-                              "por": "Rua"
+                              "en": "Street name.",
+                              "es": "Calle",
+                              "pt": "Rua"
                             }
                           },
                           "city_name": {
                             "type": "string",
                             "description": {
-                              "eng": "City name.",
-                              "spa": "Ciudad",
-                              "por": "Cidade"
+                              "en": "City name.",
+                              "es": "Ciudad",
+                              "pt": "Cidade"
                             }
                           },
                           "state_name": {
                             "type": "string",
                             "description": {
-                              "eng": "State name.",
-                              "spa": "Estado",
-                              "por": "Estado"
+                              "en": "State name.",
+                              "es": "Estado",
+                              "pt": "Estado"
                             }
                           },
                           "street_number": {
                             "type": "number",
                             "description": {
-                              "eng": "Street number.",
-                              "spa": "Número",
-                              "por": "O Número"
+                              "en": "Street number.",
+                              "es": "Número",
+                              "pt": "O Número"
                             }
                           },
                           "floor": {
                             "type": "string",
                             "description": {
-                              "eng": "Floor.",
-                              "spa": "Piso",
-                              "por": "Apartamento"
+                              "en": "Floor.",
+                              "es": "Piso",
+                              "pt": "Apartamento"
                             }
                           },
                           "apartment": {
                             "type": "string",
                             "description": {
-                              "eng": "Apartment.",
-                              "spa": "Departamento",
-                              "por": "Apartamento"
+                              "en": "Apartment.",
+                              "es": "Departamento",
+                              "pt": "Apartamento"
                             }
                           }
                         }
@@ -463,33 +463,33 @@
                   "back_urls": {
                     "type": "object",
                     "description": {
-                      "eng": "URLs to return to the sellers website.",
-                      "spa": "URLs de retorno al sitio del vendedor",
-                      "por": "Url de retorno ao site do vendedor"
+                      "en": "URLs to return to the sellers website.",
+                      "es": "URLs de retorno al sitio del vendedor",
+                      "pt": "Url de retorno ao site do vendedor"
                     },
                     "properties": {
                       "success": {
                         "type": "string",
                         "description": {
-                          "eng": "Approved payment URL.",
-                          "spa": "URL de retorno ante pago aprobado",
-                          "por": "URL de retorno ante o pagamento aprovado"
+                          "en": "Approved payment URL.",
+                          "es": "URL de retorno ante pago aprobado",
+                          "pt": "URL de retorno ante o pagamento aprovado"
                         }
                       },
                       "pending": {
                         "type": "string",
                         "description": {
-                          "eng": "Pending or in process payment URL.",
-                          "spa": "URL de retorno ante pago pendiente o en proceso.",
-                          "por": "URL de retorno diante de pagamento pendente ou em processo."
+                          "en": "Pending or in process payment URL.",
+                          "es": "URL de retorno ante pago pendiente o en proceso.",
+                          "pt": "URL de retorno diante de pagamento pendente ou em processo."
                         }
                       },
                       "failure": {
                         "type": "string",
                         "description": {
-                          "eng": "Canceled payment URL.",
-                          "spa": "URL de retorno ante pago cancelado",
-                          "por": "URL de retorno ante o pagamento cancelado"
+                          "en": "Canceled payment URL.",
+                          "es": "URL de retorno ante pago cancelado",
+                          "pt": "URL de retorno ante o pagamento cancelado"
                         }
                       }
                     }
@@ -497,25 +497,25 @@
                   "notification_url": {
                     "type": "string",
                     "description": {
-                      "eng": "URL where you'd like to receive a payment notification.",
-                      "spa": "URL a la cual te gustaría recibir notificaciones de pagos",
-                      "por": "URL para a qual você gostaria de receber notificações de pagamentos"
+                      "en": "URL where you'd like to receive a payment notification.",
+                      "es": "URL a la cual te gustaría recibir notificaciones de pagos",
+                      "pt": "URL para a qual você gostaria de receber notificações de pagamentos"
                     }
                   },
                   "statement_descriptor": {
                     "type": "string",
                     "description": {
-                      "eng": "The statement descriptor is a long text (up to 16 characters) that will be visualized in the payer´s credit card statement to easily identify the purchase.",
-                      "spa": "El statement descriptor es un texto largo (hasta 16 caracteres) que se visualizará en la factura de la tarjeta de crédito del pagador para identificar fácilmente la compra.",
-                      "por": "O statement descriptor é um texto longo (até 16 caracteres) que será exibido na fatura do cartão de crédito do pagador para identificar facilmente a compra."
+                      "en": "The statement descriptor is a long text (up to 16 characters) that will be visualized in the payer´s credit card statement to easily identify the purchase.",
+                      "es": "El statement descriptor es un texto largo (hasta 16 caracteres) que se visualizará en la factura de la tarjeta de crédito del pagador para identificar fácilmente la compra.",
+                      "pt": "O statement descriptor é um texto longo (até 16 caracteres) que será exibido na fatura do cartão de crédito do pagador para identificar facilmente a compra."
                     }
                   },
                   "additional_info": {
                     "type": "string",
                     "description": {
-                      "eng": "Additional information.",
-                      "spa": "Información adicional",
-                      "por": "Informações adicionais"
+                      "en": "Additional information.",
+                      "es": "Información adicional",
+                      "pt": "Informações adicionais"
                     }
                   },
                   "auto_return": {
@@ -524,76 +524,76 @@
                   "external_reference": {
                     "type": "string",
                     "description": {
-                      "eng": "Reference you can synchronize with your payment system.",
-                      "spa": "Referencia que puedes sincronizar con tu sistema de pagos",
-                      "por": "Referência que pode sincronizar com seu sistema de pagamentos"
+                      "en": "Reference you can synchronize with your payment system.",
+                      "es": "Referencia que puedes sincronizar con tu sistema de pagos",
+                      "pt": "Referência que pode sincronizar com seu sistema de pagamentos"
                     }
                   },
                   "expires": {
                     "type": "boolean",
                     "description": {
-                      "eng": "Boolean value that determines if a preference expires.",
-                      "spa": "Preferencia que determina si una preferencia expira",
-                      "por": "Preferência que determina se uma preferência expira"
+                      "en": "Boolean value that determines if a preference expires.",
+                      "es": "Preferencia que determina si una preferencia expira",
+                      "pt": "Preferência que determina se uma preferência expira"
                     }
                   },
                   "date_of_expiration": {
                     "type": "string",
                     "format": "date",
                     "description": {
-                      "eng": "Expiration date of cash payment.",
-                      "spa": "Fecha de vencimiento del medio de pago en efectivo",
-                      "por": "Data de expiração de meios de pagamento em dinheiro"
+                      "en": "Expiration date of cash payment.",
+                      "es": "Fecha de vencimiento del medio de pago en efectivo",
+                      "pt": "Data de expiração de meios de pagamento em dinheiro"
                     }
                   },
                   "expiration_date_from": {
                     "type": "string",
                     "format": "date",
                     "description": {
-                      "eng": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
-                      "spa": "Fecha en formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica el inicio del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas. Por ejemplo - 2022-11-17T09:37:52.000-04:00.",
-                      "por": "Data no formato \"yyyy-MM-dd'T'HH:mm:ssz\". que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas. Por exemplo - 2022-11-17T09:37:52.000-04:00."
+                      "en": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
+                      "es": "Fecha en formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica el inicio del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas. Por ejemplo - 2022-11-17T09:37:52.000-04:00.",
+                      "pt": "Data no formato \"yyyy-MM-dd'T'HH:mm:ssz\". que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas. Por exemplo - 2022-11-17T09:37:52.000-04:00."
                     }
                   },
                   "expiration_date_to": {
                     "type": "string",
                     "format": "date",
                     "description": {
-                      "eng": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
-                      "spa": "Fecha en formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas. Por ejemplo - 2022-11-17T09:37:52.000-04:00.",
-                      "por": "Data no formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas. Por exemplo - 2022-11-17T09:37:52.000-04:00."
+                      "en": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
+                      "es": "Fecha en formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas. Por ejemplo - 2022-11-17T09:37:52.000-04:00.",
+                      "pt": "Data no formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas. Por exemplo - 2022-11-17T09:37:52.000-04:00."
                     }
                   },
                   "marketplace": {
                     "type": "string",
                     "description": {
-                      "eng": "Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. As the marketplace is associated to the Application ID, the marketplace credentials must correspond to the credentials used to create the preference. Using the wrong credentials will result in an error.",
-                      "spa": "Origen del pago. Este es un campo alfanumérico cuyo valor por defecto es NONE. Si el collector tiene su propio marketplace, aquí es donde se envían las credenciales para identificarlo. Como el marketplace está asociado al Application ID, las credenciales del marketplace deben corresponder a las credenciales utilizadas para crear la preferencia. El uso de credenciales incorrectas dará como resultado un error.",
-                      "por": "Origem do pagamento. Este é um campo alfanumérico cujo valor padrão é NONE. Caso o coletor tenha seu próprio marketplace, é para onde são enviadas as credenciais para identificá-lo. Como o marketplace está associado ao Application ID, as credenciais do marketplace devem corresponder às credenciais usadas para criar a preferência. Usar as credenciais erradas resultará em um erro."
+                      "en": "Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. As the marketplace is associated to the Application ID, the marketplace credentials must correspond to the credentials used to create the preference. Using the wrong credentials will result in an error.",
+                      "es": "Origen del pago. Este es un campo alfanumérico cuyo valor por defecto es NONE. Si el collector tiene su propio marketplace, aquí es donde se envían las credenciales para identificarlo. Como el marketplace está asociado al Application ID, las credenciales del marketplace deben corresponder a las credenciales utilizadas para crear la preferencia. El uso de credenciales incorrectas dará como resultado un error.",
+                      "pt": "Origem do pagamento. Este é um campo alfanumérico cujo valor padrão é NONE. Caso o coletor tenha seu próprio marketplace, é para onde são enviadas as credenciais para identificá-lo. Como o marketplace está associado ao Application ID, as credenciais do marketplace devem corresponder às credenciais usadas para criar a preferência. Usar as credenciais erradas resultará em um erro."
                     }
                   },
                   "marketplace_fee": {
                     "type": "number",
                     "description": {
-                      "eng": "Marketplace`s fee charged by application owner. It is a fixed amount and its default value is 0 in local currency. This property can only be sent if a valid marketplace has been defined as well, otherwise the request will fail.",
-                      "spa": "Tarifa de Marketplace cobrada por el propietario de la aplicación. Es una cantidad fija y su valor por defecto es 0 en moneda local. Esta propiedad solo se puede enviar si también se ha definido un marketplace válido; de lo contrario, la solicitud fallará.",
-                      "por": "Taxa de Marketplace cobrada pelo proprietário da aplicação. É um valor fixo e seu valor padrão é 0 em moeda local. Esta propriedade só pode ser apresentada se também tiver sido definido um marketplace válido e, caso contrário, a solicitação falhará."
+                      "en": "Marketplace`s fee charged by application owner. It is a fixed amount and its default value is 0 in local currency. This property can only be sent if a valid marketplace has been defined as well, otherwise the request will fail.",
+                      "es": "Tarifa de Marketplace cobrada por el propietario de la aplicación. Es una cantidad fija y su valor por defecto es 0 en moneda local. Esta propiedad solo se puede enviar si también se ha definido un marketplace válido; de lo contrario, la solicitud fallará.",
+                      "pt": "Taxa de Marketplace cobrada pelo proprietário da aplicação. É um valor fixo e seu valor padrão é 0 em moeda local. Esta propriedade só pode ser apresentada se também tiver sido definido um marketplace válido e, caso contrário, a solicitação falhará."
                     }
                   },
                   "differential_pricing": {
                     "type": "object",
                     "description": {
-                      "eng": "Differential pricing configuration for this preference. The seller can have their own configuration regarding payment methods and installments, and it`s in this parameter where they will include the numeric ID to indicate so. This value is used to apply custom payment methods.",
-                      "spa": "Configuración de precio diferencial para esta preferencia. El vendedor puede tener su propia configuración en cuanto a formas de pago y cuotas, y es en este parámetro donde incluirá el ID numérico para indicarlo. Este valor se utiliza para aplicar métodos de pago personalizados.",
-                      "por": "Configuração de preço diferencial para esta preferência. O vendedor pode ter sua própria configuração em relação às formas de pagamento e taxas, e é neste parâmetro que incluirá o ID numérico para indicá-lo. Esse valor é usado para aplicar métodos de pagamento personalizados."
+                      "en": "Differential pricing configuration for this preference. The seller can have their own configuration regarding payment methods and installments, and it`s in this parameter where they will include the numeric ID to indicate so. This value is used to apply custom payment methods.",
+                      "es": "Configuración de precio diferencial para esta preferencia. El vendedor puede tener su propia configuración en cuanto a formas de pago y cuotas, y es en este parámetro donde incluirá el ID numérico para indicarlo. Este valor se utiliza para aplicar métodos de pago personalizados.",
+                      "pt": "Configuração de preço diferencial para esta preferência. O vendedor pode ter sua própria configuração em relação às formas de pagamento e taxas, e é neste parâmetro que incluirá o ID numérico para indicá-lo. Esse valor é usado para aplicar métodos de pagamento personalizados."
                     },
                     "properties": {
                       "id": {
                         "type": "number",
                         "description": {
-                          "eng": "Differential pricing ID.",
-                          "spa": "Identificador de precio diferenciado",
-                          "por": "Identificador de preço diferenciado"
+                          "en": "Differential pricing ID.",
+                          "es": "Identificador de precio diferenciado",
+                          "pt": "Identificador de preço diferenciado"
                         }
                       }
                     }
@@ -601,9 +601,9 @@
                   "tracks": {
                     "type": "array",
                     "description": {
-                      "eng": "Tracks to be executed during the users`s interaction in the Checkout flow. The user can configure their own tracks. We currently supoort google and facebook. The collector must send the pixel ID (from google or facebook), and when the transaction flow is finalized the seller will be notified of the sale.",
-                      "spa": "Tracks que se ejecutarán durante la interacción de los usuarios en el flujo de Pago. El usuario puede configurar sus propios tracks. Actualmente soportamos Google y Facebook. El collector debe enviar el pixel ID (de google o facebook), y cuando finalice el flujo de la transacción, el vendedor será notificado de la venta.",
-                      "por": "Tracks que serão executados durante a interação do usuário no fluxo de Pagamento. O usuário pode configurar suas próprias trilhas. Atualmente suportamos Google e Facebook. O colector deve enviar o pixel ID (do google ou facebook) e, quando o fluxo da transação for finalizado, o vendedor será notificado da venda."
+                      "en": "Tracks to be executed during the users`s interaction in the Checkout flow. The user can configure their own tracks. We currently supoort google and facebook. The collector must send the pixel ID (from google or facebook), and when the transaction flow is finalized the seller will be notified of the sale.",
+                      "es": "Tracks que se ejecutarán durante la interacción de los usuarios en el flujo de Pago. El usuario puede configurar sus propios tracks. Actualmente soportamos Google y Facebook. El collector debe enviar el pixel ID (de google o facebook), y cuando finalice el flujo de la transacción, el vendedor será notificado de la venta.",
+                      "pt": "Tracks que serão executados durante a interação do usuário no fluxo de Pagamento. O usuário pode configurar suas próprias trilhas. Atualmente suportamos Google e Facebook. O colector deve enviar o pixel ID (do google ou facebook) e, quando o fluxo da transação for finalizado, o vendedor será notificado da venda."
                     },
                     "items": {
                       "type": "object",
@@ -611,9 +611,9 @@
                         "type": {
                           "type": "string",
                           "description": {
-                            "eng": "Track type. Specifies which tool the values belong to.",
-                            "spa": "Tipo del track. Especifica a qué herramienta pertenecen los valores",
-                            "por": "Tipo da track. Especifique a herramienta pertenecen los valores"
+                            "en": "Track type. Specifies which tool the values belong to.",
+                            "es": "Tipo del track. Especifica a qué herramienta pertenecen los valores",
+                            "pt": "Tipo da track. Especifique a herramienta pertenecen los valores"
                           },
                           "example": "google_ad",
                           "enum": [
@@ -624,9 +624,9 @@
                         "values": {
                           "type": "string",
                           "description": {
-                            "eng": "Configuration values according the track type.",
-                            "spa": "Valores de configuración de acuerdo al tipo de track",
-                            "por": "Valores de configuração de acordo com o tipo de track"
+                            "en": "Configuration values according the track type.",
+                            "es": "Valores de configuración de acuerdo al tipo de track",
+                            "pt": "Valores de configuração de acordo com o tipo de track"
                           }
                         }
                       }
@@ -635,9 +635,9 @@
                   "metadata": {
                     "type": "object",
                     "description": {
-                      "eng": "Valid JSON that can be added to the payment to save additional attributes.",
-                      "spa": "JSON válido que puede agregarse al pago para guardar atributos adicionales",
-                      "por": "JSON válido que pode ser adicionado ao pagamento para salvar atributos adicionais"
+                      "en": "Valid JSON that can be added to the payment to save additional attributes.",
+                      "es": "JSON válido que puede agregarse al pago para guardar atributos adicionales",
+                      "pt": "JSON válido que pode ser adicionado ao pagamento para salvar atributos adicionais"
                     }
                   }
                 }
@@ -682,52 +682,52 @@
                           "id": {
                             "type": "string",
                             "description": {
-                              "eng": "Item ID.",
-                              "spa": "Indentificador del ítem",
-                              "por": "Indentificador do item"
+                              "en": "Item ID.",
+                              "es": "Indentificador del ítem",
+                              "pt": "Indentificador do item"
                             }
                           },
                           "picture_url": {
                             "type": "string",
                             "description": {
-                              "eng": "Item image URL.",
-                              "spa": "URL de imagen del ítem",
-                              "por": "URL da imagem do anúncio"
+                              "en": "Item image URL.",
+                              "es": "URL de imagen del ítem",
+                              "pt": "URL da imagem do anúncio"
                             }
                           },
                           "title": {
                             "type": "string",
                             "example": "Dummy Item",
                             "description": {
-                              "eng": "This is the item`s title, which will display during the payment process, at checkout, activities, and emails.",
-                              "spa": "Este es el título del ítem, que se mostrará durante el proceso de pago, en el checkout, actividades y correos electrónicos.",
-                              "por": "Este é o título do item, que será exibido durante o processo de pagamento, no checkout, nas atividades e nos e-mails."
+                              "en": "This is the item`s title, which will display during the payment process, at checkout, activities, and emails.",
+                              "es": "Este es el título del ítem, que se mostrará durante el proceso de pago, en el checkout, actividades y correos electrónicos.",
+                              "pt": "Este é o título do item, que será exibido durante o processo de pagamento, no checkout, nas atividades e nos e-mails."
                             }
                           },
                           "description": {
                             "type": "string",
                             "example": "Multicolor Item",
                             "description": {
-                              "eng": "Item description. This is a free text field.",
-                              "spa": "Esto es un string libre donde se puede agregar la categoría del ítem.",
-                              "por": "Esta é uma string livre onde a categoria do item pode ser adicionada."
+                              "en": "Item description. This is a free text field.",
+                              "es": "Esto es un string libre donde se puede agregar la categoría del ítem.",
+                              "pt": "Esta é uma string livre onde a categoria do item pode ser adicionada."
                             }
                           },
                           "category_id": {
                             "type": "string",
                             "description": {
-                              "eng": "This is a free string where the item category can be added.",
-                              "spa": "Esto es un string libre donde se puede agregar la categoría del ítem.",
-                              "por": "Esta é uma string livre onde a categoria do item pode ser adicionada."
+                              "en": "This is a free string where the item category can be added.",
+                              "es": "Esto es un string libre donde se puede agregar la categoría del ítem.",
+                              "pt": "Esta é uma string livre onde a categoria do item pode ser adicionada."
                             }
                           },
                           "currency_id": {
                             "type": "string",
                             "example": "$",
                             "description": {
-                              "eng": "Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.",
-                              "spa": "ID único para identificar la moneda. Código ISO_4217. Algunos sitios permiten la moneda local y USD, pero es importante tener en cuenta que el monto se convierte a moneda local cuando se crea la preferencia, ya que el checkout siempre procesa las transacciones en moneda local. Si usas USD, ten en cuenta que este valor no se actualiza automáticamente si el valor de la moneda local cambia en relación a USD.",
-                              "por": "ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD."
+                              "en": "Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.",
+                              "es": "ID único para identificar la moneda. Código ISO_4217. Algunos sitios permiten la moneda local y USD, pero es importante tener en cuenta que el monto se convierte a moneda local cuando se crea la preferencia, ya que el checkout siempre procesa las transacciones en moneda local. Si usas USD, ten en cuenta que este valor no se actualiza automáticamente si el valor de la moneda local cambia en relación a USD.",
+                              "pt": "ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD."
                             },
                             "enum": [
                               "ARS -- Argentine peso.",
@@ -743,18 +743,18 @@
                             "type": "number",
                             "example": 1,
                             "description": {
-                              "eng": "Item quantity. This property is used to calculate the total cost.",
-                              "spa": "Cantidad de ítems. Esta propiedad se utiliza para calcular el costo total.",
-                              "por": "Quantidade de itens. Esta propriedade é usada para calcular o custo total."
+                              "en": "Item quantity. This property is used to calculate the total cost.",
+                              "es": "Cantidad de ítems. Esta propiedad se utiliza para calcular el costo total.",
+                              "pt": "Quantidade de itens. Esta propriedade é usada para calcular o custo total."
                             }
                           },
                           "unit_price": {
                             "type": "number",
                             "example": 10,
                             "description": {
-                              "eng": "Unit price of the item. This property is used together with the property quantity to determine the order cost.",
-                              "spa": "Precio unitario del ítem. Esta propiedad se usa junto con propiedad quantity para determinar el costo de la orden.",
-                              "por": "Preço unitário do item. Essa propriedade é usada em conjunto com a propriedade de quantity para determinar o custo do pedido."
+                              "en": "Unit price of the item. This property is used together with the property quantity to determine the order cost.",
+                              "es": "Precio unitario del ítem. Esta propiedad se usa junto con propiedad quantity para determinar el costo de la orden.",
+                              "pt": "Preço unitário do item. Essa propriedade é usada em conjunto com a propriedade de quantity para determinar o custo do pedido."
                             }
                           }
                         }
@@ -947,9 +947,9 @@
                               "id": {
                                 "type": "string",
                                 "description": {
-                                  "eng": "Payment method identifier.",
-                                  "spa": "Identificador del medio de pago",
-                                  "por": "Id do meio de pagamento"
+                                  "en": "Payment method identifier.",
+                                  "es": "Identificador del medio de pago",
+                                  "pt": "Id do meio de pagamento"
                                 }
                               }
                             }
@@ -968,9 +968,9 @@
                               "id": {
                                 "type": "string",
                                 "description": {
-                                  "eng": "Payment type identifier",
-                                  "spa": "Identificador del tipo de pago",
-                                  "por": "Identificador do tipo de pagamento"
+                                  "en": "Payment type identifier",
+                                  "es": "Identificador del tipo de pago",
+                                  "pt": "Identificador do tipo de pagamento"
                                 }
                               }
                             }
@@ -1375,9 +1375,9 @@
             "name": "sponsor_id",
             "in": "query",
             "description": {
-              "eng": "Unique numeric ID to identify the sponsor. It is used to identify what platform the checkout flow was initiated in.",
-              "spa": "ID numérico único para identificar al sponsor. Se utiliza para identificar en qué plataforma se inició el flujo de pago.",
-              "por": "ID numérico exclusivo para identificar o sponsor. É usado para identificar em qual plataforma o fluxo de pagamento foi iniciado."
+              "en": "Unique numeric ID to identify the sponsor. It is used to identify what platform the checkout flow was initiated in.",
+              "es": "ID numérico único para identificar al sponsor. Se utiliza para identificar en qué plataforma se inició el flujo de pago.",
+              "pt": "ID numérico exclusivo para identificar o sponsor. É usado para identificar em qual plataforma o fluxo de pagamento foi iniciado."
             },
             "schema": {
               "type": "string"
@@ -1387,9 +1387,9 @@
             "name": "external_reference",
             "in": "query",
             "description": {
-              "eng": "Reference you can synchronize with your payment system.",
-              "spa": "Referencia que puedes sincronizar con tu sistema de pagos",
-              "por": "Referência que pode sincronizar com seu sistema de pagamentos"
+              "en": "Reference you can synchronize with your payment system.",
+              "es": "Referencia que puedes sincronizar con tu sistema de pagos",
+              "pt": "Referência que pode sincronizar com seu sistema de pagamentos"
             },
             "schema": {
               "type": "string"
@@ -1399,9 +1399,9 @@
             "name": "site_id",
             "in": "query",
             "description": {
-              "eng": "The site id",
-              "spa": "ID del site",
-              "por": "ID do site"
+              "en": "The site id",
+              "es": "ID del site",
+              "pt": "ID do site"
             },
             "schema": {
               "type": "string"
@@ -1420,9 +1420,9 @@
             "name": "marketplace",
             "in": "query",
             "description": {
-              "eng": "Marketplace ID.",
-              "spa": "ID del Marketplace",
-              "por": "ID do Marketplace"
+              "en": "Marketplace ID.",
+              "es": "ID del Marketplace",
+              "pt": "ID do Marketplace"
             },
             "schema": {
               "type": "string"
@@ -1450,97 +1450,97 @@
                             "type": "string",
                             "example": "202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d",
                             "description": {
-                              "eng": "Preference ID.",
-                              "spa": "Identificador de preferencia",
-                              "por": "Identificação de preferência"
+                              "en": "Preference ID.",
+                              "es": "Identificador de preferencia",
+                              "pt": "Identificação de preferência"
                             }
                           },
                           "client_id": {
                             "type": "string",
                             "example": 6295877106812064,
                             "description": {
-                              "eng": "Unique ID used to identify the client. It is obtained from the credentials used to create the preference. It´s the application ID.",
-                              "spa": "ID único utilizada para identificar al cliente. Se obtiene a partir de las credenciales utilizadas para crear la preferencia. Es el Application ID.",
-                              "por": "ID exclusivo usado para identificar o cliente. Obtido das credenciais usadas para criar a preferência. É o Application ID."
+                              "en": "Unique ID used to identify the client. It is obtained from the credentials used to create the preference. It´s the application ID.",
+                              "es": "ID único utilizada para identificar al cliente. Se obtiene a partir de las credenciales utilizadas para crear la preferencia. Es el Application ID.",
+                              "pt": "ID exclusivo usado para identificar o cliente. Obtido das credenciais usadas para criar a preferência. É o Application ID."
                             }
                           },
                           "collector_id": {
                             "type": "number",
                             "example": 202809963,
                             "description": {
-                              "eng": "Unique ID used to identify the collector. It is the same as the Cust ID.",
-                              "spa": "ID único utilizada para identificar al collector. Es el mismo que el Cust ID.",
-                              "por": "ID exclusivo usado para identificar o coletor. É o mesmo que o Cust ID."
+                              "en": "Unique ID used to identify the collector. It is the same as the Cust ID.",
+                              "es": "ID único utilizada para identificar al collector. Es el mismo que el Cust ID.",
+                              "pt": "ID exclusivo usado para identificar o coletor. É o mesmo que o Cust ID."
                             }
                           },
                           "concept_id": {
                             "type": "string",
                             "format": "nullable",
                             "description": {
-                              "eng": "Unique ID used to identify the concept.",
-                              "spa": "ID único utilizado para identificar el concepto.",
-                              "por": "ID exclusivo usado para identificar o conceito."
+                              "en": "Unique ID used to identify the concept.",
+                              "es": "ID único utilizado para identificar el concepto.",
+                              "pt": "ID exclusivo usado para identificar o conceito."
                             }
                           },
                           "corporation_id": {
                             "type": "string",
                             "format": "nullable",
                             "description": {
-                              "eng": "Corporation identifier",
-                              "spa": "Identificador de la corporación",
-                              "por": "Identificador da corporação"
+                              "en": "Corporation identifier",
+                              "es": "Identificador de la corporación",
+                              "pt": "Identificador da corporação"
                             }
                           },
                           "date_created": {
                             "type": "string",
                             "example": "2018-02-02T19:18:51.150Z",
                             "description": {
-                              "eng": "Registration date.",
-                              "spa": "Fecha de registración",
-                              "por": "Data de registro"
+                              "en": "Registration date.",
+                              "es": "Fecha de registración",
+                              "pt": "Data de registro"
                             }
                           },
                           "expiration_date_from": {
                             "type": "string",
                             "format": "nullable",
                             "description": {
-                              "eng": "Date in YYYY-MM-DD-HH-MM-SS format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.",
-                              "spa": "Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el inicio del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas.",
-                              "por": "Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas."
+                              "en": "Date in YYYY-MM-DD-HH-MM-SS format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.",
+                              "es": "Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el inicio del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas.",
+                              "pt": "Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas."
                             }
                           },
                           "expiration_date_to": {
                             "type": "string",
                             "format": "nullable",
                             "description": {
-                              "eng": "Date in YYYY-MM-DD-HH-MM-SS format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.",
-                              "spa": "Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas.",
-                              "por": "Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas."
+                              "en": "Date in YYYY-MM-DD-HH-MM-SS format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.",
+                              "es": "Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas.",
+                              "pt": "Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas."
                             }
                           },
                           "expires": {
                             "type": "boolean",
                             "description": {
-                              "eng": "Boolean value that determines if a preference expires.",
-                              "spa": "Preferencia que determina si una preferencia expira",
-                              "por": "Preferência que determina se uma preferência expira"
+                              "en": "Boolean value that determines if a preference expires.",
+                              "es": "Preferencia que determina si una preferencia expira",
+                              "pt": "Preferência que determina se uma preferência expira"
                             }
                           },
                           "external_reference": {
                             "type": "string",
                             "description": {
-                              "eng": "Reference you can synchronize with your payment system.",
-                              "spa": "Referencia que puedes sincronizar con tu sistema de pagos",
-                              "por": "Referência que pode sincronizar com seu sistema de pagamentos"
+                              "en": "Reference you can synchronize with your payment system.",
+                              "es": "Referencia que puedes sincronizar con tu sistema de pagos",
+                              "pt": "Referência que pode sincronizar com seu sistema de pagamentos"
                             }
                           },
                           "integrator_id": {
                             "type": "string",
                             "format": "nullable",
                             "description": {
-                              "eng": "Integrator identifier",
-                              "spa": "Identificador del integrador",
-                              "por": "Identificador do integrador"
+                              "en": "Integrator identifier",
+                              "es": "Identificador del integrador",
+                              "pt": "Identificador do integrador"
                             }
                           },
                           "items": {
@@ -1555,26 +1555,26 @@
                             "type": "string",
                             "format": "nullable",
                             "description": {
-                              "eng": "Last updated date",
-                              "spa": "Última fecha de actualización",
-                              "por": "Data da última atualização"
+                              "en": "Last updated date",
+                              "es": "Última fecha de actualización",
+                              "pt": "Data da última atualização"
                             }
                           },
                           "live_mode": {
                             "type": "boolean",
                             "description": {
-                              "eng": "Indicates whether the Payment was made in a production environment or in a Test environment. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.",
-                              "spa": "Indica si el Pago se realizó en ambiente productivo o en un ambiente de Test. Si es TRUE, el contracargo se procesará en modo de producción. Si es FALSE, el contracargo se procesará en modo sandbox.",
-                              "por": "Indica se o Pagamento foi feito em ambiente de produção ou em ambiente de Teste. Se TRUE, o estorno será processado em modo de produção. Se FALSE, o estorno será processado no modo sandbox."
+                              "en": "Indicates whether the Payment was made in a production environment or in a Test environment. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.",
+                              "es": "Indica si el Pago se realizó en ambiente productivo o en un ambiente de Test. Si es TRUE, el contracargo se procesará en modo de producción. Si es FALSE, el contracargo se procesará en modo sandbox.",
+                              "pt": "Indica se o Pagamento foi feito em ambiente de produção ou em ambiente de Teste. Se TRUE, o estorno será processado em modo de produção. Se FALSE, o estorno será processado no modo sandbox."
                             }
                           },
                           "marketplace": {
                             "type": "string",
                             "example": "NONE",
                             "description": {
-                              "eng": "Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. As the marketplace is associated to the Application ID, the marketplace credentials must correspond to the credentials used to create the preference. Using the wrong credentials will result in an error.",
-                              "spa": "Origen del pago. Este es un campo alfanumérico cuyo valor por defecto es NONE. Si el collector tiene su propio marketplace, aquí es donde se envían las credenciales para identificarlo. Como el marketplace está asociado al Application ID, las credenciales del marketplace deben corresponder a las credenciales utilizadas para crear la preferencia. El uso de credenciales incorrectas dará como resultado un error.",
-                              "por": "Origem do pagamento. Este é um campo alfanumérico cujo valor padrão é NONE. Caso o coletor tenha seu próprio marketplace, é para onde são enviadas as credenciais para identificá-lo. Como o marketplace está associado ao Application ID, as credenciais do marketplace devem corresponder às credenciais usadas para criar a preferência. Usar as credenciais erradas resultará em um erro."
+                              "en": "Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. As the marketplace is associated to the Application ID, the marketplace credentials must correspond to the credentials used to create the preference. Using the wrong credentials will result in an error.",
+                              "es": "Origen del pago. Este es un campo alfanumérico cuyo valor por defecto es NONE. Si el collector tiene su propio marketplace, aquí es donde se envían las credenciales para identificarlo. Como el marketplace está asociado al Application ID, las credenciales del marketplace deben corresponder a las credenciales utilizadas para crear la preferencia. El uso de credenciales incorrectas dará como resultado un error.",
+                              "pt": "Origem do pagamento. Este é um campo alfanumérico cujo valor padrão é NONE. Caso o coletor tenha seu próprio marketplace, é para onde são enviadas as credenciais para identificá-lo. Como o marketplace está associado ao Application ID, as credenciais do marketplace devem corresponder às credenciais usadas para criar a preferência. Usar as credenciais erradas resultará em um erro."
                             }
                           },
                           "operation_type": {
@@ -1583,51 +1583,51 @@
                           "payer_email": {
                             "type": "string",
                             "description": {
-                              "eng": "Payer’s email address.",
-                              "spa": "E-mail del pagador",
-                              "por": "E-mail do pagante"
+                              "en": "Payer’s email address.",
+                              "es": "E-mail del pagador",
+                              "pt": "E-mail do pagante"
                             }
                           },
                           "platform_id": {
                             "type": "string",
                             "description": {
-                              "eng": "Platform identifier",
-                              "spa": "Identificador de la plataforma",
-                              "por": "Identificador da plataforma"
+                              "en": "Platform identifier",
+                              "es": "Identificador de la plataforma",
+                              "pt": "Identificador da plataforma"
                             }
                           },
                           "processing_modes": {
                             "type": "string",
                             "format": "nullable",
                             "description": {
-                              "eng": "Processing mode",
-                              "spa": "Modo de procesamiento",
-                              "por": "Modo de processamento"
+                              "en": "Processing mode",
+                              "es": "Modo de procesamiento",
+                              "pt": "Modo de processamento"
                             }
                           },
                           "product_id": {
                             "type": "string",
                             "description": {
-                              "eng": "Unique ID used to identify the product.",
-                              "spa": "ID único utilizado para identificar el producto.",
-                              "por": "ID exclusivo usado para identificar o produto."
+                              "en": "Unique ID used to identify the product.",
+                              "es": "ID único utilizado para identificar el producto.",
+                              "pt": "ID exclusivo usado para identificar o produto."
                             }
                           },
                           "purpose": {
                             "type": "string",
                             "description": {
-                              "eng": "This field has two possible values, empty and wallet_purchase.",
-                              "spa": "Este campo tiene dos valores posibles, empty y wallet_purchase.",
-                              "por": "Este campo tem dois valores possíveis, empty e wallet_purchase."
+                              "en": "This field has two possible values, empty and wallet_purchase.",
+                              "es": "Este campo tiene dos valores posibles, empty y wallet_purchase.",
+                              "pt": "Este campo tem dois valores possíveis, empty e wallet_purchase."
                             }
                           },
                           "site_id": {
                             "type": "string",
                             "example": "MLA",
                             "description": {
-                              "eng": "Unique ID used to identify the site.",
-                              "spa": "ID único utilizado para identificar el site.",
-                              "por": "ID exclusivo usado para identificar o site."
+                              "en": "Unique ID used to identify the site.",
+                              "es": "ID único utilizado para identificar el site.",
+                              "pt": "ID exclusivo usado para identificar o site."
                             },
                             "enum": [
                               "MLA -- Mercado Libre Argentina",
@@ -1643,9 +1643,9 @@
                             "type": "number",
                             "example": 0,
                             "description": {
-                              "eng": "Unique numeric ID to identify the sponsor. It is used to identify what platform the checkout flow was initiated in.",
-                              "spa": "ID numérico único para identificar al sponsor. Se utiliza para identificar en qué plataforma se inició el flujo de pago.",
-                              "por": "ID numérico exclusivo para identificar o sponsor. É usado para identificar em qual plataforma o fluxo de pagamento foi iniciado."
+                              "en": "Unique numeric ID to identify the sponsor. It is used to identify what platform the checkout flow was initiated in.",
+                              "es": "ID numérico único para identificar al sponsor. Se utiliza para identificar en qué plataforma se inició el flujo de pago.",
+                              "pt": "ID numérico exclusivo para identificar o sponsor. É usado para identificar em qual plataforma o fluxo de pagamento foi iniciado."
                             }
                           }
                         }
@@ -1769,9 +1769,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "eng": "Preference ID.",
-              "spa": "Identificador de preferencia",
-              "por": "Identificação de preferência"
+              "en": "Preference ID.",
+              "es": "Identificador de preferencia",
+              "pt": "Identificação de preferência"
             },
             "required": true,
             "schema": {
@@ -1929,18 +1929,18 @@
                             "type": "string",
                             "example": "item-ID-1234",
                             "description": {
-                              "eng": "Item id.",
-                              "spa": "Identificador del ítem",
-                              "por": "Id do anúncio"
+                              "en": "Item id.",
+                              "es": "Identificador del ítem",
+                              "pt": "Id do anúncio"
                             }
                           },
                           "currency_id": {
                             "type": "string",
                             "example": "$",
                             "description": {
-                              "eng": "Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.",
-                              "spa": "ID único para identificar la moneda. Código ISO_4217. Algunos sitios permiten la moneda local y USD, pero es importante tener en cuenta que el monto se convierte a moneda local cuando se crea la preferencia, ya que el checkout siempre procesa las transacciones en moneda local. Si usas USD, ten en cuenta que este valor no se actualiza automáticamente si el valor de la moneda local cambia en relación a USD.",
-                              "por": "ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD."
+                              "en": "Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.",
+                              "es": "ID único para identificar la moneda. Código ISO_4217. Algunos sitios permiten la moneda local y USD, pero es importante tener en cuenta que el monto se convierte a moneda local cuando se crea la preferencia, ya que el checkout siempre procesa las transacciones en moneda local. Si usas USD, ten en cuenta que este valor no se actualiza automáticamente si el valor de la moneda local cambia en relación a USD.",
+                              "pt": "ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD."
                             },
                             "enum": [
                               "ARS -- Argentine peso.",
@@ -1956,53 +1956,53 @@
                             "type": "string",
                             "example": "Practical Granite Shirt",
                             "description": {
-                              "eng": "This is the item`s title, which will display during the payment process, at checkout, activities, and emails.",
-                              "spa": "Este es el título del ítem, que se mostrará durante el proceso de pago, en el checkout, actividades y correos electrónicos.",
-                              "por": "Este é o título do item, que será exibido durante o processo de pagamento, no checkout, nas atividades e nos e-mails."
+                              "en": "This is the item`s title, which will display during the payment process, at checkout, activities, and emails.",
+                              "es": "Este es el título del ítem, que se mostrará durante el proceso de pago, en el checkout, actividades y correos electrónicos.",
+                              "pt": "Este é o título do item, que será exibido durante o processo de pagamento, no checkout, nas atividades e nos e-mails."
                             }
                           },
                           "picture_url": {
                             "type": "string",
                             "example": "http://placehold.it/350x150",
                             "description": {
-                              "eng": "Item image URL.",
-                              "spa": "URL de imagen del ítem",
-                              "por": "URL da imagem do anúncio"
+                              "en": "Item image URL.",
+                              "es": "URL de imagen del ítem",
+                              "pt": "URL da imagem do anúncio"
                             }
                           },
                           "description": {
                             "type": "string",
                             "example": "This is my description",
                             "description": {
-                              "eng": "Item description. This is a free text field.",
-                              "spa": "Esto es un string libre donde se puede agregar la categoría del ítem.",
-                              "por": "Esta é uma string livre onde a categoria do item pode ser adicionada."
+                              "en": "Item description. This is a free text field.",
+                              "es": "Esto es un string libre donde se puede agregar la categoría del ítem.",
+                              "pt": "Esta é uma string livre onde a categoria do item pode ser adicionada."
                             }
                           },
                           "category_id": {
                             "type": "string",
                             "description": {
-                              "eng": "This is a free string where the item category can be added.",
-                              "spa": "Esto es un string libre donde se puede agregar la categoría del ítem.",
-                              "por": "Esta é uma string livre onde a categoria do item pode ser adicionada."
+                              "en": "This is a free string where the item category can be added.",
+                              "es": "Esto es un string libre donde se puede agregar la categoría del ítem.",
+                              "pt": "Esta é uma string livre onde a categoria do item pode ser adicionada."
                             }
                           },
                           "quantity": {
                             "type": "number",
                             "example": 2,
                             "description": {
-                              "eng": "Item quantity. This property is used to calculate the total cost.",
-                              "spa": "Cantidad de ítems. Esta propiedad se utiliza para calcular el costo total.",
-                              "por": "Quantidade de itens. Esta propriedade é usada para calcular o custo total."
+                              "en": "Item quantity. This property is used to calculate the total cost.",
+                              "es": "Cantidad de ítems. Esta propiedad se utiliza para calcular el costo total.",
+                              "pt": "Quantidade de itens. Esta propriedade é usada para calcular o custo total."
                             }
                           },
                           "unit_price": {
                             "type": "number",
                             "example": 14.5,
                             "description": {
-                              "eng": "Unit price of the item. This property is used together with the property quantity to determine the order cost.",
-                              "spa": "Precio unitario del ítem. Esta propiedad se usa junto con propiedad quantity para determinar el costo de la orden.",
-                              "por": "Preço unitário do item. Essa propriedade é usada em conjunto com a propriedade de quantity para determinar o custo do pedido."
+                              "en": "Unit price of the item. This property is used together with the property quantity to determine the order cost.",
+                              "es": "Precio unitario del ítem. Esta propiedad se usa junto con propiedad quantity para determinar el costo de la orden.",
+                              "pt": "Preço unitário do item. Essa propriedade é usada em conjunto com a propriedade de quantity para determinar o custo do pedido."
                             }
                           }
                         }
@@ -2202,9 +2202,9 @@
                               "id": {
                                 "type": "string",
                                 "description": {
-                                  "eng": "Payment method identifier.",
-                                  "spa": "Identificador del medio de pago",
-                                  "por": "Id do meio de pagamento"
+                                  "en": "Payment method identifier.",
+                                  "es": "Identificador del medio de pago",
+                                  "pt": "Id do meio de pagamento"
                                 }
                               }
                             }
@@ -2241,9 +2241,9 @@
                               "id": {
                                 "type": "string",
                                 "description": {
-                                  "eng": "Payment type identifier",
-                                  "spa": "Identificador del tipo de pago",
-                                  "por": "Identificador do tipo de pagamento"
+                                  "en": "Payment type identifier",
+                                  "es": "Identificador del tipo de pago",
+                                  "pt": "Identificador do tipo de pagamento"
                                 }
                               }
                             }
@@ -2490,9 +2490,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "eng": "The preference's ID",
-              "spa": "The preference's ID",
-              "por": "The preference's ID"
+              "en": "The preference's ID",
+              "es": "The preference's ID",
+              "pt": "The preference's ID"
             },
             "required": true,
             "schema": {
@@ -2509,9 +2509,9 @@
                   "items": {
                     "type": "array",
                     "description": {
-                      "eng": "Items information.",
-                      "spa": "Información sobre el ítem",
-                      "por": "Informações sobre o item"
+                      "en": "Items information.",
+                      "es": "Información sobre el ítem",
+                      "pt": "Informações sobre o item"
                     },
                     "items": {
                       "type": "object",
@@ -2520,63 +2520,63 @@
                           "type": "string",
                           "example": "202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d",
                           "description": {
-                            "eng": "Item ID.",
-                            "spa": "Indentificador del ítem",
-                            "por": "Indentificador do item"
+                            "en": "Item ID.",
+                            "es": "Indentificador del ítem",
+                            "pt": "Indentificador do item"
                           }
                         },
                         "title": {
                           "type": "string",
                           "example": "Dummy Title",
                           "description": {
-                            "eng": "This is the item`s title, which will display during the payment process, at checkout, activities, and emails.",
-                            "spa": "Este es el título del ítem, que se mostrará durante el proceso de pago, en el checkout, actividades y correos electrónicos.",
-                            "por": "Este é o título do item, que será exibido durante o processo de pagamento, no checkout, nas atividades e nos e-mails."
+                            "en": "This is the item`s title, which will display during the payment process, at checkout, activities, and emails.",
+                            "es": "Este es el título del ítem, que se mostrará durante el proceso de pago, en el checkout, actividades y correos electrónicos.",
+                            "pt": "Este é o título do item, que será exibido durante o processo de pagamento, no checkout, nas atividades e nos e-mails."
                           }
                         },
                         "description": {
                           "type": "string",
                           "example": "Dummy Description",
                           "description": {
-                            "eng": "Item description. This is a free text field.",
-                            "spa": "Esto es un string libre donde se puede agregar la categoría del ítem.",
-                            "por": "Esta é uma string livre onde a categoria do item pode ser adicionada."
+                            "en": "Item description. This is a free text field.",
+                            "es": "Esto es un string libre donde se puede agregar la categoría del ítem.",
+                            "pt": "Esta é uma string livre onde a categoria do item pode ser adicionada."
                           }
                         },
                         "picture_url": {
                           "type": "string",
                           "example": "http://www.myapp.com/myimage.jpg",
                           "description": {
-                            "eng": "Item image URL.",
-                            "spa": "URL de imagen del ítem",
-                            "por": "URL da imagem do anúncio"
+                            "en": "Item image URL.",
+                            "es": "URL de imagen del ítem",
+                            "pt": "URL da imagem do anúncio"
                           }
                         },
                         "category_id": {
                           "type": "string",
                           "example": "cat123",
                           "description": {
-                            "eng": "This is a free string where the item category can be added.",
-                            "spa": "Esto es un string libre donde se puede agregar la categoría del ítem.",
-                            "por": "Esta é uma string livre onde a categoria do item pode ser adicionada."
+                            "en": "This is a free string where the item category can be added.",
+                            "es": "Esto es un string libre donde se puede agregar la categoría del ítem.",
+                            "pt": "Esta é uma string livre onde a categoria do item pode ser adicionada."
                           }
                         },
                         "quantity": {
                           "type": "number",
                           "example": 1,
                           "description": {
-                            "eng": "Item quantity. This property is used to calculate the total cost.",
-                            "spa": "Cantidad de ítems. Esta propiedad se utiliza para calcular el costo total.",
-                            "por": "Quantidade de itens. Esta propriedade é usada para calcular o custo total."
+                            "en": "Item quantity. This property is used to calculate the total cost.",
+                            "es": "Cantidad de ítems. Esta propiedad se utiliza para calcular el costo total.",
+                            "pt": "Quantidade de itens. Esta propriedade é usada para calcular o custo total."
                           }
                         },
                         "currency_id": {
                           "type": "string",
                           "example": "U$",
                           "description": {
-                            "eng": "Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.",
-                            "spa": "ID único para identificar la moneda. Código ISO_4217. Algunos sitios permiten la moneda local y USD, pero es importante tener en cuenta que el monto se convierte a moneda local cuando se crea la preferencia, ya que el checkout siempre procesa las transacciones en moneda local. Si usas USD, ten en cuenta que este valor no se actualiza automáticamente si el valor de la moneda local cambia en relación a USD.",
-                            "por": "ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD."
+                            "en": "Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.",
+                            "es": "ID único para identificar la moneda. Código ISO_4217. Algunos sitios permiten la moneda local y USD, pero es importante tener en cuenta que el monto se convierte a moneda local cuando se crea la preferencia, ya que el checkout siempre procesa las transacciones en moneda local. Si usas USD, ten en cuenta que este valor no se actualiza automáticamente si el valor de la moneda local cambia en relación a USD.",
+                            "pt": "ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD."
                           },
                           "enum": [
                             "ARS -- Argentine peso.",
@@ -2592,9 +2592,9 @@
                           "type": "number",
                           "example": 10,
                           "description": {
-                            "eng": "Unit price of the item. This property is used together with the property quantity to determine the order cost.",
-                            "spa": "Precio unitario del ítem. Esta propiedad se usa junto con propiedad quantity para determinar el costo de la orden.",
-                            "por": "Preço unitário do item. Essa propriedade é usada em conjunto com a propriedade de quantity para determinar o custo do pedido."
+                            "en": "Unit price of the item. This property is used together with the property quantity to determine the order cost.",
+                            "es": "Precio unitario del ítem. Esta propiedad se usa junto con propiedad quantity para determinar el costo de la orden.",
+                            "pt": "Preço unitário do item. Essa propriedade é usada em conjunto com a propriedade de quantity para determinar o custo do pedido."
                           }
                         }
                       }
@@ -2603,57 +2603,57 @@
                   "payer": {
                     "type": "object",
                     "description": {
-                      "eng": "Buyer´s information, such as name, last name, e-mail, phone, personal identification, address, and registration date.",
-                      "spa": "Información del comprador, como nombre, apellido, correo electrónico, teléfono, identificación personal, dirección y fecha de registro.",
-                      "por": "Informações do comprador, como nome, sobrenome, e-mail, telefone, identificação pessoal, endereço e data de registro."
+                      "en": "Buyer´s information, such as name, last name, e-mail, phone, personal identification, address, and registration date.",
+                      "es": "Información del comprador, como nombre, apellido, correo electrónico, teléfono, identificación personal, dirección y fecha de registro.",
+                      "pt": "Informações do comprador, como nome, sobrenome, e-mail, telefone, identificação pessoal, endereço e data de registro."
                     },
                     "properties": {
                       "name": {
                         "type": "string",
                         "description": {
-                          "eng": "Buyer name.",
-                          "spa": "Nombre del comprador",
-                          "por": "Nome do comprador"
+                          "en": "Buyer name.",
+                          "es": "Nombre del comprador",
+                          "pt": "Nome do comprador"
                         }
                       },
                       "surname": {
                         "type": "string",
                         "description": {
-                          "eng": "Buyer last name.",
-                          "spa": "Apellido del comprador",
-                          "por": "Apelido do comprador"
+                          "en": "Buyer last name.",
+                          "es": "Apellido del comprador",
+                          "pt": "Apelido do comprador"
                         }
                       },
                       "email": {
                         "type": "string",
                         "description": {
-                          "eng": "Buyer e-mail address.",
-                          "spa": "Dirección de e-mail del comprador",
-                          "por": "Endereço de e-mail do comprador"
+                          "en": "Buyer e-mail address.",
+                          "es": "Dirección de e-mail del comprador",
+                          "pt": "Endereço de e-mail do comprador"
                         }
                       },
                       "phone": {
                         "type": "object",
                         "description": {
-                          "eng": "Buyer phone.",
-                          "spa": "Teléfono del comprador",
-                          "por": "Telefone do comprador"
+                          "en": "Buyer phone.",
+                          "es": "Teléfono del comprador",
+                          "pt": "Telefone do comprador"
                         },
                         "properties": {
                           "area_code": {
                             "type": "string",
                             "description": {
-                              "eng": "Area code.",
-                              "spa": "Código de área",
-                              "por": "Código de área"
+                              "en": "Area code.",
+                              "es": "Código de área",
+                              "pt": "Código de área"
                             }
                           },
                           "number": {
                             "type": "number",
                             "description": {
-                              "eng": "Number.",
-                              "spa": "Número",
-                              "por": "Número"
+                              "en": "Number.",
+                              "es": "Número",
+                              "pt": "Número"
                             }
                           }
                         }
@@ -2661,25 +2661,25 @@
                       "identification": {
                         "type": "object",
                         "description": {
-                          "eng": "Personal identification.",
-                          "spa": "Identificación personal",
-                          "por": "Identificação pessoal"
+                          "en": "Personal identification.",
+                          "es": "Identificación personal",
+                          "pt": "Identificação pessoal"
                         },
                         "properties": {
                           "type": {
                             "type": "string",
                             "description": {
-                              "eng": "Identification Type.",
-                              "spa": "Tipo de identificación",
-                              "por": "Tipo de identificação"
+                              "en": "Identification Type.",
+                              "es": "Tipo de identificación",
+                              "pt": "Tipo de identificação"
                             }
                           },
                           "number": {
                             "type": "string",
                             "description": {
-                              "eng": "Number.",
-                              "spa": "Número",
-                              "por": "Número"
+                              "en": "Number.",
+                              "es": "Número",
+                              "pt": "Número"
                             }
                           }
                         }
@@ -2687,33 +2687,33 @@
                       "address": {
                         "type": "object",
                         "description": {
-                          "eng": "Buyer’s address.",
-                          "spa": "Dirección del comprador",
-                          "por": "Endereço do comprador"
+                          "en": "Buyer’s address.",
+                          "es": "Dirección del comprador",
+                          "pt": "Endereço do comprador"
                         },
                         "properties": {
                           "zip_code": {
                             "type": "string",
                             "description": {
-                              "eng": "Zip code.",
-                              "spa": "Código postal",
-                              "por": "Código postal"
+                              "en": "Zip code.",
+                              "es": "Código postal",
+                              "pt": "Código postal"
                             }
                           },
                           "street_name": {
                             "type": "string",
                             "description": {
-                              "eng": "Street name.",
-                              "spa": "Calle",
-                              "por": "Rua"
+                              "en": "Street name.",
+                              "es": "Calle",
+                              "pt": "Rua"
                             }
                           },
                           "street_number": {
                             "type": "number",
                             "description": {
-                              "eng": "Street number.",
-                              "spa": "Número",
-                              "por": "O Número"
+                              "en": "Street number.",
+                              "es": "Número",
+                              "pt": "O Número"
                             }
                           }
                         }
@@ -2722,9 +2722,9 @@
                         "type": "string",
                         "format": "date",
                         "description": {
-                          "eng": "Registration date.",
-                          "spa": "Fecha de registración",
-                          "por": "Data de registro"
+                          "en": "Registration date.",
+                          "es": "Fecha de registración",
+                          "pt": "Data de registro"
                         }
                       }
                     }
@@ -2732,17 +2732,17 @@
                   "payment_methods": {
                     "type": "object",
                     "description": {
-                      "eng": "All configuration related to payments methods, such as excluded payment methods, excluded payment types, default payment method, and installments.",
-                      "spa": "Toda la configuración relacionada con los métodos de pago, tales como los métodos de pago excluidos, los tipos de pago excluidos, el método de pago predeterminado y las cuotas.",
-                      "por": "Todas as configurações são relacionadas ao métodos de pagamento, como, por exemplo, métodos de pagamento excluídos, tipos de pagamento excluídos, método de pagamento padrão e taxas."
+                      "en": "All configuration related to payments methods, such as excluded payment methods, excluded payment types, default payment method, and installments.",
+                      "es": "Toda la configuración relacionada con los métodos de pago, tales como los métodos de pago excluidos, los tipos de pago excluidos, el método de pago predeterminado y las cuotas.",
+                      "pt": "Todas as configurações são relacionadas ao métodos de pagamento, como, por exemplo, métodos de pagamento excluídos, tipos de pagamento excluídos, método de pagamento padrão e taxas."
                     },
                     "properties": {
                       "excluded_payment_methods": {
                         "type": "array",
                         "description": {
-                          "eng": "Payment methods excluded from the payment process (except account_money, which is always allowed). The payment methods included here will not be available at checkout.",
-                          "spa": "Métodos de pago excluidos del proceso de pago (excepto account_money, que siempre estará disponible). Los métodos de pago incluidos aquí no estarán disponibles en el checkout.",
-                          "por": "Métodos de pagamento excluídos do checkout (exceto account_money, que estará sempre disponível). Os métodos de pagamento aqui incluídos não estarão disponíveis no checkout."
+                          "en": "Payment methods excluded from the payment process (except account_money, which is always allowed). The payment methods included here will not be available at checkout.",
+                          "es": "Métodos de pago excluidos del proceso de pago (excepto account_money, que siempre estará disponible). Los métodos de pago incluidos aquí no estarán disponibles en el checkout.",
+                          "pt": "Métodos de pagamento excluídos do checkout (exceto account_money, que estará sempre disponível). Os métodos de pagamento aqui incluídos não estarão disponíveis no checkout."
                         },
                         "items": {
                           "type": "object",
@@ -2750,9 +2750,9 @@
                             "id": {
                               "type": "string",
                               "description": {
-                                "eng": "Payment method ID.",
-                                "spa": "Identificador del método de pago",
-                                "por": "Identificador do método de pagamento"
+                                "en": "Payment method ID.",
+                                "es": "Identificador del método de pago",
+                                "pt": "Identificador do método de pagamento"
                               }
                             }
                           }
@@ -2761,9 +2761,9 @@
                       "excluded_payment_types": {
                         "type": "array",
                         "description": {
-                          "eng": "Payment types excluded from the payment process. The payment types included here will not be available at checkout.",
-                          "spa": "Tipos de pago excluidos del proceso de pago. Los tipos de pago incluidos aquí no estarán disponibles en el checkout.",
-                          "por": "Tipos de pagamento excluídos do processo de pagamento. Os tipos de pagamento incluídos aqui não estarão disponíveis no checkout."
+                          "en": "Payment types excluded from the payment process. The payment types included here will not be available at checkout.",
+                          "es": "Tipos de pago excluidos del proceso de pago. Los tipos de pago incluidos aquí no estarán disponibles en el checkout.",
+                          "pt": "Tipos de pagamento excluídos do processo de pagamento. Os tipos de pagamento incluídos aqui não estarão disponíveis no checkout."
                         },
                         "items": {
                           "type": "object",
@@ -2771,9 +2771,9 @@
                             "id": {
                               "type": "string",
                               "description": {
-                                "eng": "Payment method data_type ID.",
-                                "spa": "Identificador de data_type del medio de pago",
-                                "por": "Identificador de data_type do meio de pagamento"
+                                "en": "Payment method data_type ID.",
+                                "es": "Identificador de data_type del medio de pago",
+                                "pt": "Identificador de data_type do meio de pagamento"
                               }
                             }
                           }
@@ -2782,25 +2782,25 @@
                       "default_payment_method_id": {
                         "type": "string",
                         "description": {
-                          "eng": "Suggested payment method. The user will initiate the checkout this this payment method already selected. It is considered suggested because Checkouts follow different logics in order to select the best payment method for a specific transaction, and this property is the option with the least relevance.",
-                          "spa": "Forma de pago sugerida. El usuario iniciará el pago con este método de pago ya seleccionado. Se considera sugerida porque los Checkouts siguen lógicas diferentes para seleccionar el mejor método de pago para una transacción específica, siendo esta propiedad la opción con menor relevancia.",
-                          "por": "Forma de pagamento sugerida. O usuário iniciará o pagamento com esta forma de pagamento já selecionada. Considera-se sugerido porque os Checkouts seguem lógicas diferentes para selecionar o melhor meio de pagamento para uma determinada transação, sendo esta propriedade a opção menos relevante."
+                          "en": "Suggested payment method. The user will initiate the checkout this this payment method already selected. It is considered suggested because Checkouts follow different logics in order to select the best payment method for a specific transaction, and this property is the option with the least relevance.",
+                          "es": "Forma de pago sugerida. El usuario iniciará el pago con este método de pago ya seleccionado. Se considera sugerida porque los Checkouts siguen lógicas diferentes para seleccionar el mejor método de pago para una transacción específica, siendo esta propiedad la opción con menor relevancia.",
+                          "pt": "Forma de pagamento sugerida. O usuário iniciará o pagamento com esta forma de pagamento já selecionada. Considera-se sugerido porque os Checkouts seguem lógicas diferentes para selecionar o melhor meio de pagamento para uma determinada transação, sendo esta propriedade a opção menos relevante."
                         }
                       },
                       "installments": {
                         "type": "number",
                         "description": {
-                          "eng": "Maximum number of credit card installments to be accepted.",
-                          "spa": "Máximo número de cuotas",
-                          "por": "Número Máximo de cotas"
+                          "en": "Maximum number of credit card installments to be accepted.",
+                          "es": "Máximo número de cuotas",
+                          "pt": "Número Máximo de cotas"
                         }
                       },
                       "default_installments": {
                         "type": "number",
                         "description": {
-                          "eng": "Prefered number of credit card installments.",
-                          "spa": "Preferencia de cuotas",
-                          "por": "Preferência de cotas"
+                          "en": "Prefered number of credit card installments.",
+                          "es": "Preferencia de cuotas",
+                          "pt": "Preferência de cotas"
                         }
                       }
                     }
@@ -2808,9 +2808,9 @@
                   "shipments": {
                     "type": "object",
                     "description": {
-                      "eng": "Shipments information.",
-                      "spa": "Información de envío",
-                      "por": "Informações de envio"
+                      "en": "Shipments information.",
+                      "es": "Información de envío",
+                      "pt": "Informações de envio"
                     },
                     "properties": {
                       "mode": {
@@ -2823,25 +2823,25 @@
                       "dimensions": {
                         "type": "string",
                         "description": {
-                          "eng": "Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)",
-                          "spa": "Tamaño del paquete en cm x cm x cm, gr (mode:me2 solamente)",
-                          "por": "Tamanho do pacote em cm x cm x cm, gr (mode:me2 somente)"
+                          "en": "Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)",
+                          "es": "Tamaño del paquete en cm x cm x cm, gr (mode:me2 solamente)",
+                          "pt": "Tamanho do pacote em cm x cm x cm, gr (mode:me2 somente)"
                         }
                       },
                       "default_shipping_method": {
                         "type": "number",
                         "description": {
-                          "eng": "Select default shipping method in checkout (mode:me2 only).",
-                          "spa": "Elegir un método de envío predeterminado en el checkout (mode:me2 solamente)",
-                          "por": "Escolha um método de envio padrão no checkout (mode:me2 somente)"
+                          "en": "Select default shipping method in checkout (mode:me2 only).",
+                          "es": "Elegir un método de envío predeterminado en el checkout (mode:me2 solamente)",
+                          "pt": "Escolha um método de envio padrão no checkout (mode:me2 somente)"
                         }
                       },
                       "free_methods": {
                         "type": "array",
                         "description": {
-                          "eng": "Offer a shipping method as free shipping (mode:me2 only).",
-                          "spa": "Ofrecer un método de envío gratuito (mode:me2 solamente)",
-                          "por": "Oferecer um método de frete grátis (mode:me2 somente)"
+                          "en": "Offer a shipping method as free shipping (mode:me2 only).",
+                          "es": "Ofrecer un método de envío gratuito (mode:me2 solamente)",
+                          "pt": "Oferecer um método de frete grátis (mode:me2 somente)"
                         },
                         "items": {
                           "type": "object",
@@ -2849,9 +2849,9 @@
                             "id": {
                               "type": "number",
                               "description": {
-                                "eng": "Shipping method ID.",
-                                "spa": "Identificador de método de envío",
-                                "por": "Identificador do método de envio"
+                                "en": "Shipping method ID.",
+                                "es": "Identificador de método de envío",
+                                "pt": "Identificador do método de envio"
                               }
                             }
                           }
@@ -2860,81 +2860,81 @@
                       "cost": {
                         "type": "number",
                         "description": {
-                          "eng": "Shipment cost (mode:custom only).",
-                          "spa": "Costo del envío (mode:custom solamente)",
-                          "por": "Custo do transporte (mode:custom somente)"
+                          "en": "Shipment cost (mode:custom only).",
+                          "es": "Costo del envío (mode:custom solamente)",
+                          "pt": "Custo do transporte (mode:custom somente)"
                         }
                       },
                       "free_shipping": {
                         "type": "boolean",
                         "description": {
-                          "eng": "Free shipping for mode:custom.",
-                          "spa": "Preferencia de envío gratuito para mode:custom",
-                          "por": "Preferência de frete grátis para mode:custom"
+                          "en": "Free shipping for mode:custom.",
+                          "es": "Preferencia de envío gratuito para mode:custom",
+                          "pt": "Preferência de frete grátis para mode:custom"
                         }
                       },
                       "receiver_address": {
                         "type": "object",
                         "description": {
-                          "eng": "Shipping address.",
-                          "spa": "Dirección de envío",
-                          "por": "Endereço de envio"
+                          "en": "Shipping address.",
+                          "es": "Dirección de envío",
+                          "pt": "Endereço de envio"
                         },
                         "properties": {
                           "zip_code": {
                             "type": "string",
                             "description": {
-                              "eng": "Zip code.",
-                              "spa": "Código postal",
-                              "por": "Código postal"
+                              "en": "Zip code.",
+                              "es": "Código postal",
+                              "pt": "Código postal"
                             }
                           },
                           "street_name": {
                             "type": "string",
                             "description": {
-                              "eng": "Street name.",
-                              "spa": "Calle",
-                              "por": "Rua"
+                              "en": "Street name.",
+                              "es": "Calle",
+                              "pt": "Rua"
                             }
                           },
                           "city_name": {
                             "type": "string",
                             "description": {
-                              "eng": "City name.",
-                              "spa": "Ciudad",
-                              "por": "Cidade"
+                              "en": "City name.",
+                              "es": "Ciudad",
+                              "pt": "Cidade"
                             }
                           },
                           "state_name": {
                             "type": "string",
                             "description": {
-                              "eng": "State name.",
-                              "spa": "Estado",
-                              "por": "Estado"
+                              "en": "State name.",
+                              "es": "Estado",
+                              "pt": "Estado"
                             }
                           },
                           "street_number": {
                             "type": "number",
                             "description": {
-                              "eng": "Street number.",
-                              "spa": "Número",
-                              "por": "O Número"
+                              "en": "Street number.",
+                              "es": "Número",
+                              "pt": "O Número"
                             }
                           },
                           "floor": {
                             "type": "string",
                             "description": {
-                              "eng": "Floor.",
-                              "spa": "Piso",
-                              "por": "Apartamento"
+                              "en": "Floor.",
+                              "es": "Piso",
+                              "pt": "Apartamento"
                             }
                           },
                           "apartment": {
                             "type": "string",
                             "description": {
-                              "eng": "Apartment.",
-                              "spa": "Departamento",
-                              "por": "Apartamento"
+                              "en": "Apartment.",
+                              "es": "Departamento",
+                              "pt": "Apartamento"
                             }
                           }
                         }
@@ -2944,33 +2944,33 @@
                   "back_urls": {
                     "type": "object",
                     "description": {
-                      "eng": "URLs to return to the sellers website.",
-                      "spa": "URLs de retorno al sitio del vendedor",
-                      "por": "Url de retorno ao site do vendedor"
+                      "en": "URLs to return to the sellers website.",
+                      "es": "URLs de retorno al sitio del vendedor",
+                      "pt": "Url de retorno ao site do vendedor"
                     },
                     "properties": {
                       "success": {
                         "type": "string",
                         "description": {
-                          "eng": "Approved payment URL.",
-                          "spa": "URL de retorno ante pago aprobado",
-                          "por": "URL de retorno ante o pagamento aprovado"
+                          "en": "Approved payment URL.",
+                          "es": "URL de retorno ante pago aprobado",
+                          "pt": "URL de retorno ante o pagamento aprovado"
                         }
                       },
                       "pending": {
                         "type": "string",
                         "description": {
-                          "eng": "Pending or in process payment URL.",
-                          "spa": "URL de retorno ante pago pendiente o en proceso.",
-                          "por": "URL de retorno diante de pagamento pendente ou em processo."
+                          "en": "Pending or in process payment URL.",
+                          "es": "URL de retorno ante pago pendiente o en proceso.",
+                          "pt": "URL de retorno diante de pagamento pendente ou em processo."
                         }
                       },
                       "failure": {
                         "type": "string",
                         "description": {
-                          "eng": "Canceled payment URL.",
-                          "spa": "URL de retorno ante pago cancelado",
-                          "por": "URL de retorno ante o pagamento cancelado"
+                          "en": "Canceled payment URL.",
+                          "es": "URL de retorno ante pago cancelado",
+                          "pt": "URL de retorno ante o pagamento cancelado"
                         }
                       }
                     }
@@ -2978,17 +2978,17 @@
                   "notification_url": {
                     "type": "string",
                     "description": {
-                      "eng": "URL where you'd like to receive a payment notification.",
-                      "spa": "URL a la cual te gustaría recibir notificaciones de pagos",
-                      "por": "URL para a qual você gostaria de receber notificações de pagamentos"
+                      "en": "URL where you'd like to receive a payment notification.",
+                      "es": "URL a la cual te gustaría recibir notificaciones de pagos",
+                      "pt": "URL para a qual você gostaria de receber notificações de pagamentos"
                     }
                   },
                   "additional_info": {
                     "type": "string",
                     "description": {
-                      "eng": "Additional information.",
-                      "spa": "Información adicional",
-                      "por": "Informações adicionais"
+                      "en": "Additional information.",
+                      "es": "Información adicional",
+                      "pt": "Informações adicionais"
                     }
                   },
                   "auto_return": {
@@ -2997,77 +2997,77 @@
                   "external_reference": {
                     "type": "string",
                     "description": {
-                      "eng": "Reference you can synchronize with your payment system.",
-                      "spa": "Referencia que puedes sincronizar con tu sistema de pagos",
-                      "por": "Referência que pode sincronizar com seu sistema de pagamentos"
+                      "en": "Reference you can synchronize with your payment system.",
+                      "es": "Referencia que puedes sincronizar con tu sistema de pagos",
+                      "pt": "Referência que pode sincronizar com seu sistema de pagamentos"
                     }
                   },
                   "expires": {
                     "type": "boolean",
                     "description": {
-                      "eng": "Boolean value that determines if a preference expires.",
-                      "spa": "Preferencia que determina si una preferencia expira",
-                      "por": "Preferência que determina se uma preferência expira"
+                      "en": "Boolean value that determines if a preference expires.",
+                      "es": "Preferencia que determina si una preferencia expira",
+                      "pt": "Preferência que determina se uma preferência expira"
                     }
                   },
                   "date_of_expiration": {
                     "type": "string",
                     "format": "date",
                     "description": {
-                      "eng": "Expiration date of cash payment.",
-                      "spa": "Fecha de vencimiento del medio de pago en efectivo",
-                      "por": "Data de expiração de meios de pagamento em dinheiro"
+                      "en": "Expiration date of cash payment.",
+                      "es": "Fecha de vencimiento del medio de pago en efectivo",
+                      "pt": "Data de expiração de meios de pagamento em dinheiro"
                     }
                   },
                   "expiration_date_from": {
                     "type": "string",
                     "format": "date",
                     "description": {
-                      "eng": "Date in YYYY-MM-DD-HH-MM-SS format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.",
-                      "spa": "Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el inicio del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas.",
-                      "por": "Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas."
+                      "en": "Date in YYYY-MM-DD-HH-MM-SS format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.",
+                      "es": "Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el inicio del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas.",
+                      "pt": "Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas."
                     }
                   },
                   "expiration_date_to": {
                     "type": "string",
                     "format": "date",
                     "description": {
-                      "eng": "Date in YYYY-MM-DD-HH-MM-SS format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.",
-                      "spa": "Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas.",
-                      "por": "Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas."
+                      "en": "Date in YYYY-MM-DD-HH-MM-SS format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.",
+                      "es": "Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas.",
+                      "pt": "Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas."
                     }
                   },
                   "marketplace": {
                     "type": "string",
                     "description": {
-                      "eng": "Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. As the marketplace is associated to the Application ID, the marketplace credentials must correspond to the credentials used to create the preference. Using the wrong credentials will result in an error.",
-                      "spa": "Origen del pago. Este es un campo alfanumérico cuyo valor por defecto es NONE. Si el collector tiene su propio marketplace, aquí es donde se envían las credenciales para identificarlo. Como el marketplace está asociado al Application ID, las credenciales del marketplace deben corresponder a las credenciales utilizadas para crear la preferencia. El uso de credenciales incorrectas dará como resultado un error.",
-                      "por": "Origem do pagamento. Este é um campo alfanumérico cujo valor padrão é NONE. Caso o coletor tenha seu próprio marketplace, é para onde são enviadas as credenciais para identificá-lo. Como o marketplace está associado ao Application ID, as credenciais do marketplace devem corresponder às credenciais usadas para criar a preferência. Usar as credenciais erradas resultará em um erro."
+                      "en": "Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. As the marketplace is associated to the Application ID, the marketplace credentials must correspond to the credentials used to create the preference. Using the wrong credentials will result in an error.",
+                      "es": "Origen del pago. Este es un campo alfanumérico cuyo valor por defecto es NONE. Si el collector tiene su propio marketplace, aquí es donde se envían las credenciales para identificarlo. Como el marketplace está asociado al Application ID, las credenciales del marketplace deben corresponder a las credenciales utilizadas para crear la preferencia. El uso de credenciales incorrectas dará como resultado un error.",
+                      "pt": "Origem do pagamento. Este é um campo alfanumérico cujo valor padrão é NONE. Caso o coletor tenha seu próprio marketplace, é para onde são enviadas as credenciais para identificá-lo. Como o marketplace está associado ao Application ID, as credenciais do marketplace devem corresponder às credenciais usadas para criar a preferência. Usar as credenciais erradas resultará em um erro."
                     }
                   },
                   "marketplace_fee": {
                     "type": "number",
                     "description": {
-                      "eng": "Marketplace`s fee charged by application owner. It is a fixed amount and its default value is 0 in local currency. This property can only be sent if a valid marketplace has been defined as well, otherwise the request will fail.",
-                      "spa": "Tarifa de Marketplace cobrada por el propietario de la aplicación. Es una cantidad fija y su valor por defecto es 0 en moneda local. Esta propiedad solo se puede enviar si también se ha definido un marketplace válido; de lo contrario, la solicitud fallará.",
-                      "por": "Taxa de Marketplace cobrada pelo proprietário da aplicação. É um valor fixo e seu valor padrão é 0 em moeda local. Esta propriedade só pode ser apresentada se também tiver sido definido um marketplace válido e, caso contrário, a solicitação falhará."
+                      "en": "Marketplace`s fee charged by application owner. It is a fixed amount and its default value is 0 in local currency. This property can only be sent if a valid marketplace has been defined as well, otherwise the request will fail.",
+                      "es": "Tarifa de Marketplace cobrada por el propietario de la aplicación. Es una cantidad fija y su valor por defecto es 0 en moneda local. Esta propiedad solo se puede enviar si también se ha definido un marketplace válido; de lo contrario, la solicitud fallará.",
+                      "pt": "Taxa de Marketplace cobrada pelo proprietário da aplicação. É um valor fixo e seu valor padrão é 0 em moeda local. Esta propriedade só pode ser apresentada se também tiver sido definido um marketplace válido e, caso contrário, a solicitação falhará."
                     },
                     "example": 0
                   },
                   "differential_pricing": {
                     "type": "object",
                     "description": {
-                      "eng": "Differential pricing configuration for this preference. The seller can have their own configuration regarding payment methods and installments, and it`s in this parameter where they will include the numeric ID to indicate so. This value is used to apply custom payment methods.",
-                      "spa": "Configuración de precio diferencial para esta preferencia. El vendedor puede tener su propia configuración en cuanto a formas de pago y cuotas, y es en este parámetro donde incluirá el ID numérico para indicarlo. Este valor se utiliza para aplicar métodos de pago personalizados.",
-                      "por": "Configuração de preço diferencial para esta preferência. O vendedor pode ter sua própria configuração em relação às formas de pagamento e taxas, e é neste parâmetro que incluirá o ID numérico para indicá-lo. Esse valor é usado para aplicar métodos de pagamento personalizados."
+                      "en": "Differential pricing configuration for this preference. The seller can have their own configuration regarding payment methods and installments, and it`s in this parameter where they will include the numeric ID to indicate so. This value is used to apply custom payment methods.",
+                      "es": "Configuración de precio diferencial para esta preferencia. El vendedor puede tener su propia configuración en cuanto a formas de pago y cuotas, y es en este parámetro donde incluirá el ID numérico para indicarlo. Este valor se utiliza para aplicar métodos de pago personalizados.",
+                      "pt": "Configuração de preço diferencial para esta preferência. O vendedor pode ter sua própria configuração em relação às formas de pagamento e taxas, e é neste parâmetro que incluirá o ID numérico para indicá-lo. Esse valor é usado para aplicar métodos de pagamento personalizados."
                     },
                     "properties": {
                       "id": {
                         "type": "number",
                         "description": {
-                          "eng": "Differential pricing ID.",
-                          "spa": "Identificador de precio diferenciado",
-                          "por": "Identificador de preço diferenciado"
+                          "en": "Differential pricing ID.",
+                          "es": "Identificador de precio diferenciado",
+                          "pt": "Identificador de preço diferenciado"
                         }
                       }
                     }
@@ -3075,9 +3075,9 @@
                   "metadata": {
                     "type": "object",
                     "description": {
-                      "eng": "Valid JSON that can be added to the payment to save additional attributes.",
-                      "spa": "JSON válido que puede agregarse al pago para guardar atributos adicionales",
-                      "por": "JSON válido que pode ser adicionado ao pagamento para salvar atributos adicionais"
+                      "en": "Valid JSON that can be added to the payment to save additional attributes.",
+                      "es": "JSON válido que puede agregarse al pago para guardar atributos adicionales",
+                      "pt": "JSON válido que pode ser adicionado ao pagamento para salvar atributos adicionais"
                     }
                   }
                 }
@@ -3261,52 +3261,52 @@
                           "id": {
                             "type": "string",
                             "description": {
-                              "eng": "Item ID.",
-                              "spa": "Indentificador del ítem",
-                              "por": "Indentificador do item"
+                              "en": "Item ID.",
+                              "es": "Indentificador del ítem",
+                              "pt": "Indentificador do item"
                             }
                           },
                           "picture_url": {
                             "type": "string",
                             "description": {
-                              "eng": "Item image URL.",
-                              "spa": "URL de imagen del ítem",
-                              "por": "URL da imagem do anúncio"
+                              "en": "Item image URL.",
+                              "es": "URL de imagen del ítem",
+                              "pt": "URL da imagem do anúncio"
                             }
                           },
                           "title": {
                             "type": "string",
                             "example": "Dummy Item",
                             "description": {
-                              "eng": "This is the item`s title, which will display during the payment process, at checkout, activities, and emails.",
-                              "spa": "Este es el título del ítem, que se mostrará durante el proceso de pago, en el checkout, actividades y correos electrónicos.",
-                              "por": "Este é o título do item, que será exibido durante o processo de pagamento, no checkout, nas atividades e nos e-mails."
+                              "en": "This is the item`s title, which will display during the payment process, at checkout, activities, and emails.",
+                              "es": "Este es el título del ítem, que se mostrará durante el proceso de pago, en el checkout, actividades y correos electrónicos.",
+                              "pt": "Este é o título do item, que será exibido durante o processo de pagamento, no checkout, nas atividades e nos e-mails."
                             }
                           },
                           "description": {
                             "type": "string",
                             "example": "Multicolor Item",
                             "description": {
-                              "eng": "Item description. This is a free text field.",
-                              "spa": "Esto es un string libre donde se puede agregar la categoría del ítem.",
-                              "por": "Esta é uma string livre onde a categoria do item pode ser adicionada."
+                              "en": "Item description. This is a free text field.",
+                              "es": "Esto es un string libre donde se puede agregar la categoría del ítem.",
+                              "pt": "Esta é uma string livre onde a categoria do item pode ser adicionada."
                             }
                           },
                           "category_id": {
                             "type": "string",
                             "description": {
-                              "eng": "This is a free string where the item category can be added.",
-                              "spa": "Esto es un string libre donde se puede agregar la categoría del ítem.",
-                              "por": "Esta é uma string livre onde a categoria do item pode ser adicionada."
+                              "en": "This is a free string where the item category can be added.",
+                              "es": "Esto es un string libre donde se puede agregar la categoría del ítem.",
+                              "pt": "Esta é uma string livre onde a categoria do item pode ser adicionada."
                             }
                           },
                           "currency_id": {
                             "type": "string",
                             "example": "$",
                             "description": {
-                              "eng": "Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.",
-                              "spa": "ID único para identificar la moneda. Código ISO_4217. Algunos sitios permiten la moneda local y USD, pero es importante tener en cuenta que el monto se convierte a moneda local cuando se crea la preferencia, ya que el checkout siempre procesa las transacciones en moneda local. Si usas USD, ten en cuenta que este valor no se actualiza automáticamente si el valor de la moneda local cambia en relación a USD.",
-                              "por": "ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD."
+                              "en": "Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.",
+                              "es": "ID único para identificar la moneda. Código ISO_4217. Algunos sitios permiten la moneda local y USD, pero es importante tener en cuenta que el monto se convierte a moneda local cuando se crea la preferencia, ya que el checkout siempre procesa las transacciones en moneda local. Si usas USD, ten en cuenta que este valor no se actualiza automáticamente si el valor de la moneda local cambia en relación a USD.",
+                              "pt": "ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD."
                             },
                             "enum": [
                               "ARS -- Argentine peso.",
@@ -3322,18 +3322,18 @@
                             "type": "number",
                             "example": 1,
                             "description": {
-                              "eng": "Item quantity. This property is used to calculate the total cost.",
-                              "spa": "Cantidad de ítems. Esta propiedad se utiliza para calcular el costo total.",
-                              "por": "Quantidade de itens. Esta propriedade é usada para calcular o custo total."
+                              "en": "Item quantity. This property is used to calculate the total cost.",
+                              "es": "Cantidad de ítems. Esta propiedad se utiliza para calcular el costo total.",
+                              "pt": "Quantidade de itens. Esta propriedade é usada para calcular o custo total."
                             }
                           },
                           "unit_price": {
                             "type": "number",
                             "example": 10,
                             "description": {
-                              "eng": "Unit price of the item. This property is used together with the property quantity to determine the order cost.",
-                              "spa": "Precio unitario del ítem. Esta propiedad se usa junto con propiedad quantity para determinar el costo de la orden.",
-                              "por": "Preço unitário do item. Essa propriedade é usada em conjunto com a propriedade de quantity para determinar o custo do pedido."
+                              "en": "Unit price of the item. This property is used together with the property quantity to determine the order cost.",
+                              "es": "Precio unitario del ítem. Esta propiedad se usa junto con propiedad quantity para determinar el costo de la orden.",
+                              "pt": "Preço unitário do item. Essa propriedade é usada em conjunto com a propriedade de quantity para determinar o custo do pedido."
                             }
                           }
                         }
@@ -3561,9 +3561,9 @@
                                 "type": "string",
                                 "example": "",
                                 "description": {
-                                  "eng": "Payment method ID.",
-                                  "spa": "Identificador del método de pago",
-                                  "por": "Identificador do método de pagamento"
+                                  "en": "Payment method ID.",
+                                  "es": "Identificador del método de pago",
+                                  "pt": "Identificador do método de pagamento"
                                 }
                               }
                             }
@@ -3583,9 +3583,9 @@
                                 "type": "string",
                                 "example": "",
                                 "description": {
-                                  "eng": "Payment method data_type ID.",
-                                  "spa": "Identificador de data_type del medio de pago",
-                                  "por": "Identificador de data_type do meio de pagamento"
+                                  "en": "Payment method data_type ID.",
+                                  "es": "Identificador de data_type del medio de pago",
+                                  "pt": "Identificador de data_type do meio de pagamento"
                                 }
                               }
                             }
@@ -3804,9 +3804,9 @@
                             "country_name": {
                               "type": "Country name.",
                               "x-type-i18n": {
-                                "eng": "Country name.",
-                                "spa": "Nombre del país",
-                                "por": "Nome do país"
+                                "en": "Country name.",
+                                "es": "Nombre del país",
+                                "pt": "Nome do país"
                               },
                               "description": {
                                 "en": "Country name.",
@@ -3995,9 +3995,9 @@
       "shipment_mode": {
         "type": "string",
         "description": {
-          "eng": "Shipment mode.",
-          "spa": "Modo de envío",
-          "por": "Modo de envio"
+          "en": "Shipment mode.",
+          "es": "Modo de envío",
+          "pt": "Modo de envio"
         },
         "enum": [
           "custom -- Custom shipping.",
@@ -4008,9 +4008,9 @@
       "operation_type": {
         "type": "String",
         "description": {
-          "eng": "Operation data_type.",
-          "spa": "data_type de la operación",
-          "por": "data_type da operação"
+          "en": "Operation data_type.",
+          "es": "data_type de la operación",
+          "pt": "data_type da operação"
         },
         "enum": [
           "regular_payment -- Normal payment.",
@@ -4020,9 +4020,9 @@
       "auto_return": {
         "type": "String",
         "description": {
-          "eng": "If specified, your buyers will be redirected back to your site immediately after completing the purchase.",
-          "spa": "En el caso de estar especificado tu comprador sera redirigido a tu sitio inmediatamente después de la compra",
-          "por": "No caso de estar especificado o comprador será redirecionado para o seu site imediatamente após a compra"
+          "en": "If specified, your buyers will be redirected back to your site immediately after completing the purchase.",
+          "es": "En el caso de estar especificado tu comprador sera redirigido a tu sitio inmediatamente después de la compra",
+          "pt": "No caso de estar especificado o comprador será redirecionado para o seu site imediatamente após a compra"
         },
         "enum": [
           "approved -- The redirection takes place only for approved payments.",

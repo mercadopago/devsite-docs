@@ -15,9 +15,9 @@
             "name": "X-Ttl-Store-Preference",
             "in": "header",
             "description": {
-              "eng": "X-Ttl-Store-Preference",
-              "spa": "X-Ttl-Store-Preference",
-              "por": "X-Ttl-Store-Preference"
+              "en": "X-Ttl-Store-Preference",
+              "es": "X-Ttl-Store-Preference",
+              "pt": "X-Ttl-Store-Preference"
             },
             "required": true,
             "schema": {
@@ -29,9 +29,9 @@
             "name": "user_id",
             "in": "path",
             "description": {
-              "eng": "User Id",
-              "spa": "User Id",
-              "por": "User Id"
+              "en": "User Id",
+              "es": "User Id",
+              "pt": "User Id"
             },
             "required": true,
             "schema": {
@@ -43,9 +43,9 @@
             "name": "external_id",
             "in": "path",
             "description": {
-              "eng": "External Id",
-              "spa": "External Id",
-              "por": "External Id"
+              "en": "External Id",
+              "es": "External Id",
+              "pt": "External Id"
             },
             "required": true,
             "schema": {
@@ -63,36 +63,36 @@
                   "external_reference": {
                     "type": "string",
                     "description": {
-                      "eng": "Reference you can synchronize with your sale system.",
-                      "spa": "Referencia que puede sincronizar con su sistema de venta",
-                      "por": "Referência que pode sincronizar com seu sistema de vendas"
+                      "en": "Reference you can synchronize with your sale system.",
+                      "es": "Referencia que puede sincronizar con su sistema de venta",
+                      "pt": "Referência que pode sincronizar com seu sistema de vendas"
                     },
                     "example": "Factura-0001"
                   },
                   "notification_url": {
                     "type": "string",
                     "description": {
-                      "eng": "URL where you'd like to receive a payment or merchant_order notification.",
-                      "spa": "URL a la cual se enviará la notificación de pago o merchant_order.",
-                      "por": "URL em que você gostaria de receber uma notificação de pagamento ou merchant_order."
+                      "en": "URL where you'd like to receive a payment or merchant_order notification.",
+                      "es": "URL a la cual se enviará la notificación de pago o merchant_order.",
+                      "pt": "URL em que você gostaria de receber uma notificação de pagamento ou merchant_order."
                     },
                     "example": "http://www.yourserver.com"
                   },
                   "sponsor_id": {
                     "type": "string",
                     "description": {
-                      "eng": "Mercado Pago's USER_ID of the integrator system.",
-                      "spa": "USER_ID de la cuenta de Mercado Pago del sistema integrador",
-                      "por": "USER_ID da conta Mercado Pago do sistema integrador"
+                      "en": "Mercado Pago's USER_ID of the integrator system.",
+                      "es": "USER_ID de la cuenta de Mercado Pago del sistema integrador",
+                      "pt": "USER_ID da conta Mercado Pago do sistema integrador"
                     },
                     "example": "446566691"
                   },
                   "items": {
                     "type": "array",
                     "description": {
-                      "eng": "Information on the products involved in the order.",
-                      "spa": "Información de los productos involucrados en la orden",
-                      "por": "Informações sobre os produtos envolvidos no ordem"
+                      "en": "Information on the products involved in the order.",
+                      "es": "Información de los productos involucrados en la orden",
+                      "pt": "Informações sobre os produtos envolvidos no ordem"
                     },
                     "items": {
                       "type": "object",
@@ -100,9 +100,9 @@
                         "id": {
                           "type": "string",
                           "description": {
-                            "eng": "Item id.",
-                            "spa": "Identificador del ítem",
-                            "por": "Id do anúncio"
+                            "en": "Item id.",
+                            "es": "Identificador del ítem",
+                            "pt": "Id do anúncio"
                           },
                           "example": 78123172
                         },
@@ -110,9 +110,9 @@
                           "type": "string",
                           "example": "Shampoo",
                           "description": {
-                            "eng": "Item title.",
-                            "spa": "Título del ítem",
-                            "por": "Título do item"
+                            "en": "Item title.",
+                            "es": "Título del ítem",
+                            "pt": "Título do item"
                           }
                         },
                         "currency_id": {
@@ -121,36 +121,36 @@
                         "unit_price": {
                           "type": "number",
                           "description": {
-                            "eng": "Unit price of the item (maximum 2 decimals).",
-                            "spa": "Precio unitario del producto (máximo 2 decimales)",
-                            "por": "Preço unitário do produto (máximo de 2 decimais)"
+                            "en": "Unit price of the item (maximum 2 decimals).",
+                            "es": "Precio unitario del producto (máximo 2 decimales)",
+                            "pt": "Preço unitário do produto (máximo de 2 decimais)"
                           },
                           "example": 120
                         },
                         "quantity": {
                           "type": "number",
                           "description": {
-                            "eng": "Item quantity.",
-                            "spa": "Cantidad de producto",
-                            "por": "Quantidade do produto"
+                            "en": "Item quantity.",
+                            "es": "Cantidad de producto",
+                            "pt": "Quantidade do produto"
                           },
                           "example": 1
                         },
                         "description": {
                           "type": "string",
                           "description": {
-                            "eng": "Item description.",
-                            "spa": "Descripción del item",
-                            "por": "Descrição do artigo"
+                            "en": "Item description.",
+                            "es": "Descripción del item",
+                            "pt": "Descrição do artigo"
                           },
                           "example": "Almendras"
                         },
                         "picture_url": {
                           "type": "string",
                           "description": {
-                            "eng": "Item image URL.",
-                            "spa": "URL de imagen del ítem",
-                            "por": "URL da imagem do anúncio"
+                            "en": "Item image URL.",
+                            "es": "URL de imagen del ítem",
+                            "pt": "URL da imagem do anúncio"
                           },
                           "example": "https://bit.ly/2nxdWHa"
                         }
@@ -635,9 +635,9 @@
             "name": "user_id",
             "in": "path",
             "description": {
-              "eng": "User Id",
-              "spa": "User Id",
-              "por": "User Id"
+              "en": "User Id",
+              "es": "User Id",
+              "pt": "User Id"
             },
             "required": true,
             "schema": {
@@ -649,9 +649,9 @@
             "name": "external_id",
             "in": "path",
             "description": {
-              "eng": "External Id",
-              "spa": "External Id",
-              "por": "External Id"
+              "en": "External Id",
+              "es": "External Id",
+              "pt": "External Id"
             },
             "required": true,
             "schema": {
@@ -713,9 +713,9 @@
         "type": "string",
         "example": "COP",
         "description": {
-          "eng": "Currency identifier in ISO_4217 format.",
-          "spa": "Identificador de moneda en formato ISO_4217",
-          "por": "Identificador de moeda no formato ISO_4217"
+          "en": "Currency identifier in ISO_4217 format.",
+          "es": "Identificador de moneda en formato ISO_4217",
+          "pt": "Identificador de moeda no formato ISO_4217"
         },
         "enum": [
           "ARS -- Argentine peso.",

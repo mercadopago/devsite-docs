@@ -23,9 +23,9 @@
                   "client_secret": {
                     "type": "string",
                     "description": {
-                      "eng": "Private key to be used in some plugins to generate payments. One of the keys in the pair that make up the credentials that identify an application/integration in your account.",
-                      "spa": "Clave privada para ser utilizada en algunos complementos para generar pagos. Una de las claves del par que componen las credenciales que identifican una aplicación/integración en tu cuenta.",
-                      "por": "Chave privada para ser utilizada em alguns plugins para gerar pagamentos. Uma das chaves do par que compõe as credenciais que identifica uma aplicação/integração na sua conta."
+                      "en": "Private key to be used in some plugins to generate payments. One of the keys in the pair that make up the credentials that identify an application/integration in your account.",
+                      "es": "Clave privada para ser utilizada en algunos complementos para generar pagos. Una de las claves del par que componen las credenciales que identifican una aplicación/integración en tu cuenta.",
+                      "pt": "Chave privada para ser utilizada em alguns plugins para gerar pagamentos. Uma das chaves do par que compõe as credenciais que identifica uma aplicação/integração na sua conta."
                     },
                     "required": true,
                     "example": "client_secret"
@@ -33,9 +33,9 @@
                   "client_id": {
                     "type": "string",
                     "description": {
-                      "eng": "Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.",
-                      "spa": "ID único que identifica tu aplicación/integración. Una de las claves del par que componen las credenciales que identifican una aplicación/integración en tu cuenta.",
-                      "por": "ID único que identifica sua aplicação/integração. Uma das chaves do par que compõe as credenciais que identifica uma aplicação/integração na sua conta."
+                      "en": "Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.",
+                      "es": "ID único que identifica tu aplicación/integración. Una de las claves del par que componen las credenciales que identifican una aplicación/integración en tu cuenta.",
+                      "pt": "ID único que identifica sua aplicação/integração. Uma das chaves do par que compõe as credenciais que identifica uma aplicação/integração na sua conta."
                     },
                     "required": true,
                     "example": "client_id"
@@ -43,9 +43,9 @@
                   "grant_type": {
                     "type": "string",
                     "description": {
-                      "eng": "Specifies the type of operation to perform. There are two possible operations.",
-                      "spa": "Especifica el tipo de operación a realizar para obtener tus credenciales.",
-                      "por": "Especifica o tipo de operação a ser executada para obter suas credenciais."
+                      "en": "Specifies the type of operation to perform. There are two possible operations.",
+                      "es": "Especifica el tipo de operación a realizar para obtener tus credenciales.",
+                      "pt": "Especifica o tipo de operação a ser executada para obter suas credenciais."
                     },
                     "required": true,
                     "example": "authorization_code",
@@ -57,26 +57,26 @@
                   "code": {
                     "type": "string",
                     "description": {
-                      "eng": "Code provided by the authentication server so that the application can obtain an access token and an associated refresh token. It is valid for 10 minutes counted from its generation. Required when grant_type=authorization_code.",
-                      "spa": "Código otorgado por el servidor de autenticación para que la aplicación pueda obtener un access token y un refresh token asociado. Tiene una validez de 10 minutos contados desde su generación. Obligatorio cuando grant_type=authorization_code.",
-                      "por": "Código concedido pelo servidor de autenticação para que a aplicação possa obter um access token e um refresh token associado. Tem validade de 10 minutos contados a partir da sua geração. Requerido quando grant_type=authorization_code."
+                      "en": "Code provided by the authentication server so that the application can obtain an access token and an associated refresh token. It is valid for 10 minutes counted from its generation. Required when grant_type=authorization_code.",
+                      "es": "Código otorgado por el servidor de autenticación para que la aplicación pueda obtener un access token y un refresh token asociado. Tiene una validez de 10 minutos contados desde su generación. Obligatorio cuando grant_type=authorization_code.",
+                      "pt": "Código concedido pelo servidor de autenticação para que a aplicação possa obter um access token e um refresh token associado. Tem validade de 10 minutos contados a partir da sua geração. Requerido quando grant_type=authorization_code."
                     },
                     "example": "TG-XXXXXXXX-241983636"
                   },
                   "redirect_uri": {
                     "type": "string",
                     "description": {
-                      "eng": "URL reported in the Redirect URL field of your application. Required only when grant_type=authorization_code.",
-                      "spa": "URL informada en el campo URL de redirección de tu aplicación. Obligatorio solo cuando grant_type=authorization_code.",
-                      "por": "URL informada no campo Redirect URL da sua aplicação. Requerido apenas quando grant_type=authorization_code."
+                      "en": "URL reported in the Redirect URL field of your application. Required only when grant_type=authorization_code.",
+                      "es": "URL informada en el campo URL de redirección de tu aplicación. Obligatorio solo cuando grant_type=authorization_code.",
+                      "pt": "URL informada no campo Redirect URL da sua aplicação. Requerido apenas quando grant_type=authorization_code."
                     }
                   },
                   "refresh_token": {
                     "type": "string",
                     "description": {
-                      "eng": "Value received when the access token is created. Only required when grant_type=refresh_token.",
-                      "spa": "Valor recibido cuando se crea el access token. Solo se requiere cuando grant_type=refresh_token.",
-                      "por": "Valor recebido quando o access token é criado. Requerido apenas quando grant_type=refresh_token."
+                      "en": "Value received when the access token is created. Only required when grant_type=refresh_token.",
+                      "es": "Valor recibido cuando se crea el access token. Solo se requiere cuando grant_type=refresh_token.",
+                      "pt": "Valor recebido quando o access token é criado. Requerido apenas quando grant_type=refresh_token."
                     }
                   },
                   "test_token": {

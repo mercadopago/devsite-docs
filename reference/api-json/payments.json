@@ -22,25 +22,25 @@
                   "additional_info": {
                     "type": "object",
                     "description": {
-                      "eng": "At Payments level, it's only data, and we only forward that information to other APIs like Risk, to perform scoring and prevent fraud, or to Tax, to determine them for international payments.",
-                      "spa": "En el nivel de Pagos, son solo datos y únicamente reenviamos esa información a otras API, como Riesgo, para realizar puntajes y prevenir fraudes, o a Impuestos, para determinarlos para pagos internacionales.",
-                      "por": "No nível de Pagamentos, são apenas dados e apenas encaminhamos essas informações para outras APIS, como Risco, para realizar pontuação e prevenir fraudes, para Impostos para determiná-los para pagamentos internacionais."
+                      "en": "At Payments level, it's only data, and we only forward that information to other APIs like Risk, to perform scoring and prevent fraud, or to Tax, to determine them for international payments.",
+                      "es": "En el nivel de Pagos, son solo datos y únicamente reenviamos esa información a otras API, como Riesgo, para realizar puntajes y prevenir fraudes, o a Impuestos, para determinarlos para pagos internacionales.",
+                      "pt": "No nível de Pagamentos, são apenas dados e apenas encaminhamos essas informações para outras APIS, como Risco, para realizar pontuação e prevenir fraudes, para Impostos para determiná-los para pagamentos internacionais."
                     },
                     "properties": {
                       "ip_address": {
                         "type": "string",
                         "description": {
-                          "eng": "Internal protocol (IP) that comes from the request (for bank transfer only).",
-                          "spa": "Protocolo interno (IP) que proviene del request (solo para transferencia bancaria).",
-                          "por": "Protocolo interno (IP) que provém do request (apenas para transferência bancária)."
+                          "en": "Internal protocol (IP) that comes from the request (for bank transfer only).",
+                          "es": "Protocolo interno (IP) que proviene del request (solo para transferencia bancaria).",
+                          "pt": "Protocolo interno (IP) que provém do request (apenas para transferência bancária)."
                         }
                       },
                       "items": {
                         "type": "array",
                         "description": {
-                          "eng": "List of items to be paid.",
-                          "spa": "Lista de ítems a pagar",
-                          "por": "Lista de itens a pagar"
+                          "en": "List of items to be paid.",
+                          "es": "Lista de ítems a pagar",
+                          "pt": "Lista de itens a pagar"
                         },
                         "items": {
                           "type": "object",
@@ -48,63 +48,63 @@
                             "id": {
                               "type": "string",
                               "description": {
-                                "eng": "It is the purchased product ad identifier. For example - “MLB2907679857”.",
-                                "spa": "Es el identificador del anuncio del producto adquirido. Por ejemplo - “MLB2907679857”.",
-                                "por": "É o identificador do anúncio do produto comprado. Por exemplo - “MLB2907679857”."
+                                "en": "It is the purchased product ad identifier. For example - “MLB2907679857”.",
+                                "es": "Es el identificador del anuncio del producto adquirido. Por ejemplo - “MLB2907679857”.",
+                                "pt": "É o identificador do anúncio do produto comprado. Por exemplo - “MLB2907679857”."
                               },
                               "example": "MLB2907679857"
                             },
                             "title": {
                               "type": "string",
                               "description": {
-                                "eng": "Item name.",
-                                "spa": "Nombre de ítem",
-                                "por": "Nome do item"
+                                "en": "Item name.",
+                                "es": "Nombre de ítem",
+                                "pt": "Nome do item"
                               },
                               "example": "Point Mini"
                             },
                             "description": {
                               "type": "string",
                               "description": {
-                                "eng": "Long item description.",
-                                "spa": "Descripción de item",
-                                "por": "Descrição do artigo"
+                                "en": "Long item description.",
+                                "es": "Descripción de item",
+                                "pt": "Descrição do artigo"
                               },
                               "example": "Producto Point para cobros con tarjetas mediante bluetooth"
                             },
                             "picture_url": {
                               "type": "string",
                               "description": {
-                                "eng": "Image URL.",
-                                "spa": "URL de imagen",
-                                "por": "URL da imagem"
+                                "en": "Image URL.",
+                                "es": "URL de imagen",
+                                "pt": "URL da imagem"
                               },
                               "example": "https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png"
                             },
                             "category_id": {
                               "type": "string",
                               "description": {
-                                "eng": "It is the category of the purchased item. It is possible to mention two main forms of category_id - categories inserted through a code, such as “MLB189908”, or those that are a tag, such as “phone”.",
-                                "spa": "Es la categoría del ítem que se compró. Es posible citar dos formas principales de category_id - categorías insertadas a través de un código, como “MLB189908”, o aquellas que son una tag, como “phone”.",
-                                "por": "É a categoria do item que foi comprado. É possível citar duas formas principais de category_id - as categorias inseridas por meio de um código, como “MLB189908”, ou as que são uma tag, como “phone”."
+                                "en": "It is the category of the purchased item. It is possible to mention two main forms of category_id - categories inserted through a code, such as “MLB189908”, or those that are a tag, such as “phone”.",
+                                "es": "Es la categoría del ítem que se compró. Es posible citar dos formas principales de category_id - categorías insertadas a través de un código, como “MLB189908”, o aquellas que son una tag, como “phone”.",
+                                "pt": "É a categoria do item que foi comprado. É possível citar duas formas principais de category_id - as categorias inseridas por meio de um código, como “MLB189908”, ou as que são uma tag, como “phone”."
                               },
                               "example": "electronics"
                             },
                             "quantity": {
                               "type": "number",
                               "description": {
-                                "eng": "Item quantity.",
-                                "spa": "Cantidad de producto",
-                                "por": "Quantidade do produto"
+                                "en": "Item quantity.",
+                                "es": "Cantidad de producto",
+                                "pt": "Quantidade do produto"
                               },
                               "example": 1
                             },
                             "unit_price": {
                               "type": "number",
                               "description": {
-                                "eng": "Unit price of the purchased item.",
-                                "spa": "Precio unitario del ítem comprado.",
-                                "por": "Preço unitário do item comprado."
+                                "en": "Unit price of the purchased item.",
+                                "es": "Precio unitario del ítem comprado.",
+                                "pt": "Preço unitário do item comprado."
                               },
                               "example": 58.8
                             }
@@ -114,62 +114,62 @@
                       "payer": {
                         "type": "object",
                         "description": {
-                          "eng": "The payer is the one who makes the payment. This field is an object that has the payer's information.",
-                          "spa": "El payer es quien realiza el pago. Este campo es un objeto que tiene la información del pagador.",
-                          "por": "O payer é aquele que faz o pagamento. Este campo é um objeto que possui as informações do pagador."
+                          "en": "The payer is the one who makes the payment. This field is an object that has the payer's information.",
+                          "es": "El payer es quien realiza el pago. Este campo es un objeto que tiene la información del pagador.",
+                          "pt": "O payer é aquele que faz o pagamento. Este campo é um objeto que possui as informações do pagador."
                         },
                         "required": true,
                         "properties": {
                           "first_name": {
                             "type": "string",
                             "description": {
-                              "eng": "Buyer's name.",
-                              "spa": "Nombre del comprador",
-                              "por": "Nome do comprador"
+                              "en": "Buyer's name.",
+                              "es": "Nombre del comprador",
+                              "pt": "Nome do comprador"
                             },
                             "example": "Test"
                           },
                           "last_name": {
                             "type": "string",
                             "description": {
-                              "eng": "It's the buyer's last name field.",
-                              "spa": "Es el campo de apellido del comprador.",
-                              "por": "É o campo do sobrenome do comprador."
+                              "en": "It's the buyer's last name field.",
+                              "es": "Es el campo de apellido del comprador.",
+                              "pt": "É o campo do sobrenome do comprador."
                             },
                             "example": "Test"
                           },
                           "email": {
                             "type": "string",
                             "description": {
-                              "eng": "Payer's email",
-                              "spa": "Email del comprador",
-                              "por": "E-mail do comprador"
+                              "en": "Payer's email",
+                              "es": "Email del comprador",
+                              "pt": "E-mail do comprador"
                             },
                             "example": "test_user_123@testuser.com"
                           },
                           "phone": {
                             "type": "object",
                             "description": {
-                              "eng": "Buyer's phone.",
-                              "spa": "Teléfono del comprador",
-                              "por": "Telefone do comprador"
+                              "en": "Buyer's phone.",
+                              "es": "Teléfono del comprador",
+                              "pt": "Telefone do comprador"
                             },
                             "properties": {
                               "area_code": {
                                 "type": "string",
                                 "description": {
-                                  "eng": "Area code where the buyer resides.",
-                                  "spa": "Código de área donde reside el comprador.",
-                                  "por": "Código de área onde reside o comprador."
+                                  "en": "Area code where the buyer resides.",
+                                  "es": "Código de área donde reside el comprador.",
+                                  "pt": "Código de área onde reside o comprador."
                                 },
                                 "example": 11
                               },
                               "number": {
                                 "type": "string",
                                 "description": {
-                                  "eng": "Buyer's fone number",
-                                  "spa": "Número telefónico del comprador.",
-                                  "por": "Número de telefone do comprador."
+                                  "en": "Buyer's fone number",
+                                  "es": "Número telefónico del comprador.",
+                                  "pt": "Número de telefone do comprador."
                                 },
                                 "example": "987654321"
                               }
@@ -178,33 +178,33 @@
                           "address": {
                             "type": "object",
                             "description": {
-                              "eng": "Buyer's address.",
-                              "spa": "Dirección del comprador.",
-                              "por": "Endereço do comprador."
+                              "en": "Buyer's address.",
+                              "es": "Dirección del comprador.",
+                              "pt": "Endereço do comprador."
                             },
                             "properties": {
                               "zip_code": {
                                 "type": "string",
                                 "description": {
-                                  "eng": "Buyer's zip code.",
-                                  "spa": "Código postal del comprador.",
-                                  "por": "Código postal do comprador."
+                                  "en": "Buyer's zip code.",
+                                  "es": "Código postal del comprador.",
+                                  "pt": "Código postal do comprador."
                                 }
                               },
                               "street_name": {
                                 "type": "string",
                                 "description": {
-                                  "eng": "Street where the buyer lives.",
-                                  "spa": "Calle donde vive el comprador.",
-                                  "por": "Rua onde mora o comprador."
+                                  "en": "Street where the buyer lives.",
+                                  "es": "Calle donde vive el comprador.",
+                                  "pt": "Rua onde mora o comprador."
                                 }
                               },
                               "street_number": {
                                 "type": "number",
                                 "description": {
-                                  "eng": "Number of the property where the buyer lives.",
-                                  "spa": "Número de la propiedad donde vive el comprador.",
-                                  "por": "Número do imóvel onde mora o comprador."
+                                  "en": "Number of the property where the buyer lives.",
+                                  "es": "Número de la propiedad donde vive el comprador.",
+                                  "pt": "Número do imóvel onde mora o comprador."
                                 }
                               }
                             }
@@ -213,9 +213,9 @@
                             "type": "string",
                             "format": "date",
                             "description": {
-                              "eng": "Date of registration of the buyer (payer) on your website. The valid format of the attribute is as follows - \"yyyy-MM-dd'T'HH:mm:ssz\". Ex - 2021-06-15T19:22:41.001-03:00.",
-                              "spa": "Fecha de registro del comprador (payer) en tu sitio web. El formato válido del atributo es el siguiente - \"yyyy-MM-dd'T'HH:mm:ssz\". Ej - 2021-06-15T19:22:41.001-03:00.",
-                              "por": "Data de cadastro do comprador (payer) em seu site.  O formato válido do atributo é o seguinte - \"yyyy-MM-dd'T'HH:mm:ssz\". Ex - 2021-06-15T19:22:41.001-03:00."
+                              "en": "Date of registration of the buyer (payer) on your website. The valid format of the attribute is as follows - \"yyyy-MM-dd'T'HH:mm:ssz\". Ex - 2021-06-15T19:22:41.001-03:00.",
+                              "es": "Fecha de registro del comprador (payer) en tu sitio web. El formato válido del atributo es el siguiente - \"yyyy-MM-dd'T'HH:mm:ssz\". Ej - 2021-06-15T19:22:41.001-03:00.",
+                              "pt": "Data de cadastro do comprador (payer) em seu site.  O formato válido do atributo é o seguinte - \"yyyy-MM-dd'T'HH:mm:ssz\". Ex - 2021-06-15T19:22:41.001-03:00."
                             }
                           }
                         }
@@ -223,78 +223,78 @@
                       "shipments": {
                         "type": "object",
                         "description": {
-                          "eng": "Object containing all the information for shipping the customer's purchase.",
-                          "spa": "Objeto que comprende toda la información para el envío de la compra del cliente.",
-                          "por": "Objeto que compreende todas as informações para o envio da compra do cliente."
+                          "en": "Object containing all the information for shipping the customer's purchase.",
+                          "es": "Objeto que comprende toda la información para el envío de la compra del cliente.",
+                          "pt": "Objeto que compreende todas as informações para o envio da compra do cliente."
                         },
                         "properties": {
                           "receiver_address": {
                             "type": "object",
                             "description": {
-                              "eng": "Object comprising the address of the receiver of the purchase.",
-                              "spa": "Objeto que comprende la dirección del destinatario de la compra.",
-                              "por": "Objeto que compreende o endereço do destinatário da compra."
+                              "en": "Object comprising the address of the receiver of the purchase.",
+                              "es": "Objeto que comprende la dirección del destinatario de la compra.",
+                              "pt": "Objeto que compreende o endereço do destinatário da compra."
                             },
                             "properties": {
                               "zip_code": {
                                 "type": "string",
                                 "description": {
-                                  "eng": "Zip code.",
-                                  "spa": "Código postal",
-                                  "por": "Código postal"
+                                  "en": "Zip code.",
+                                  "es": "Código postal",
+                                  "pt": "Código postal"
                                 },
                                 "example": "12312-123"
                               },
                               "state_name": {
                                 "type": "string",
                                 "description": {
-                                  "eng": "State.",
-                                  "spa": "Provincia",
-                                  "por": "Província"
+                                  "en": "State.",
+                                  "es": "Provincia",
+                                  "pt": "Província"
                                 },
                                 "example": "Rio de Janeiro"
                               },
                               "city_name": {
                                 "type": "string",
                                 "description": {
-                                  "eng": "City Name.",
-                                  "spa": "Ciudad",
-                                  "por": "Cidade"
+                                  "en": "City Name.",
+                                  "es": "Ciudad",
+                                  "pt": "Cidade"
                                 },
                                 "example": "Buzios"
                               },
                               "street_name": {
                                 "type": "string",
                                 "description": {
-                                  "eng": "Street name.",
-                                  "spa": "Calle",
-                                  "por": "Rua"
+                                  "en": "Street name.",
+                                  "es": "Calle",
+                                  "pt": "Rua"
                                 },
                                 "example": "Av das Nacoes Unidas"
                               },
                               "street_number": {
                                 "type": "number",
                                 "description": {
-                                  "eng": "Number.",
-                                  "spa": "Número",
-                                  "por": "Número"
+                                  "en": "Number.",
+                                  "es": "Número",
+                                  "pt": "Número"
                                 },
                                 "example": 3003
                               },
                               "floor": {
                                 "type": "string",
                                 "description": {
-                                  "eng": "Delivery address floor.",
-                                  "spa": "Piso de la dirección de entrega",
-                                  "por": "Andar do endereço de entrega."
+                                  "en": "Delivery address floor.",
+                                  "es": "Piso de la dirección de entrega",
+                                  "pt": "Andar do endereço de entrega."
                                 }
                               },
                               "apartment": {
                                 "type": "string",
                                 "description": {
-                                  "eng": "Delivery address apartment number.",
-                                  "spa": "Número de departamento de la dirección de entrega.",
-                                  "por": "Número do apartamento do endereço de entrega."
+                                  "en": "Delivery address apartment number.",
+                                  "es": "Número de departamento de la dirección de entrega.",
+                                  "pt": "Número do apartamento do endereço de entrega."
                                 }
                               }
                             }
@@ -302,17 +302,17 @@
                           "width": {
                             "type": "number",
                             "description": {
-                              "eng": "Width of barcode.",
-                              "spa": "Ancho del código de barras",
-                              "por": "Largura do código de barras"
+                              "en": "Width of barcode.",
+                              "es": "Ancho del código de barras",
+                              "pt": "Largura do código de barras"
                             }
                           },
                           "height": {
                             "type": "number",
                             "description": {
-                              "eng": "Height of barcode.",
-                              "spa": "Altura del código de barras",
-                              "por": "Altura do código de barras"
+                              "en": "Height of barcode.",
+                              "es": "Altura del código de barras",
+                              "pt": "Altura do código de barras"
                             }
                           }
                         }
@@ -322,65 +322,65 @@
                   "application_fee": {
                     "type": "number",
                     "description": {
-                      "eng": "Commission (fee) that third parties (integrators) charge their customers, in this case, sellers, for using the marketplace platform and other services. This is a value in reais to be defined by the integrator to the seller.",
-                      "spa": "Comisión (fee) que los terceros (integradores) cobran a sus clientes, en este caso vendedores, por utilizar la plataforma del marketplace y otros servicios. Este es un valor en reales que será definido por el integrador para el vendedor.",
-                      "por": "Comissão (taxa) que terceiros (integradores) cobram de seus clientes, neste caso, vendedores, pelo uso da plataforma do marketplace e de outros serviços. Esse é um valor em reais a ser definido pelo integrador ao vendedor."
+                      "en": "Commission (fee) that third parties (integrators) charge their customers, in this case, sellers, for using the marketplace platform and other services. This is a value in reais to be defined by the integrator to the seller.",
+                      "es": "Comisión (fee) que los terceros (integradores) cobran a sus clientes, en este caso vendedores, por utilizar la plataforma del marketplace y otros servicios. Este es un valor en reales que será definido por el integrador para el vendedor.",
+                      "pt": "Comissão (taxa) que terceiros (integradores) cobram de seus clientes, neste caso, vendedores, pelo uso da plataforma do marketplace e de outros serviços. Esse é um valor em reais a ser definido pelo integrador ao vendedor."
                     }
                   },
                   "binary_mode": {
                     "type": "boolean",
                     "description": {
-                      "eng": "When set to TRUE, payments can only be approved or rejected. Otherwise they can also result in_process.",
-                      "spa": "Cuando se configura como TRUE los pagos sólo pueden resultar aprobados o rechazados. Caso contrario también pueden resultar in_process.",
-                      "por": "Quando definido como TRUE, os pagamentos só podem ser aprovados ou rejeitados. Caso contrário, eles também podem resultar in_process."
+                      "en": "When set to TRUE, payments can only be approved or rejected. Otherwise they can also result in_process.",
+                      "es": "Cuando se configura como TRUE los pagos sólo pueden resultar aprobados o rechazados. Caso contrario también pueden resultar in_process.",
+                      "pt": "Quando definido como TRUE, os pagamentos só podem ser aprovados ou rejeitados. Caso contrário, eles também podem resultar in_process."
                     }
                   },
                   "callback_url": {
                     "type": "string",
                     "description": {
-                      "eng": "URL where mercadopago does the final redirect (only for bank transfers).",
-                      "spa": "URL a la cual Mercado Pago hace la redirección final (sólo para transferencia bancaria).",
-                      "por": "URL para a qual o Mercado Pago faz o redirecionamento final (apenas para transferência bancária)."
+                      "en": "URL where mercadopago does the final redirect (only for bank transfers).",
+                      "es": "URL a la cual Mercado Pago hace la redirección final (sólo para transferencia bancaria).",
+                      "pt": "URL para a qual o Mercado Pago faz o redirecionamento final (apenas para transferência bancária)."
                     }
                   },
                   "campaign_id": {
                     "type": "number",
                     "description": {
-                      "eng": "It is the identifier of  the entity that models the nature of discounts. All coupons come from a single campaign. The campaign configures, among other things, the available budget balance, dates between which coupons can be used, rules for coupon application. It's the discount promise.",
-                      "spa": "Es el identificador de la entidad que modela la fuente de los descuentos. Todos los cupones provienen de una sola campaña. La campaña configura, entre otras cosas, el saldo presupuestario disponible, fechas entre las cuales se pueden utilizar los cupones, reglas para la aplicación de los mismos, etc. Es la promesa de descuento.",
-                      "por": "É o identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto."
+                      "en": "It is the identifier of  the entity that models the nature of discounts. All coupons come from a single campaign. The campaign configures, among other things, the available budget balance, dates between which coupons can be used, rules for coupon application. It's the discount promise.",
+                      "es": "Es el identificador de la entidad que modela la fuente de los descuentos. Todos los cupones provienen de una sola campaña. La campaña configura, entre otras cosas, el saldo presupuestario disponible, fechas entre las cuales se pueden utilizar los cupones, reglas para la aplicación de los mismos, etc. Es la promesa de descuento.",
+                      "pt": "É o identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto."
                     }
                   },
                   "capture": {
                     "type": "boolean",
                     "description": {
-                      "eng": "It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).",
-                      "spa": "Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true).",
-                      "por": "É um campo booleano existente em pagamentos de duas etapas (como o cartão de débito). Nesse tipo de pagamento, que é realizado de modo assíncrono, primeiro é feito a reserva do valor da compra (capture = false). Esse valor é capturado e não é debitado da conta instantaneamente. Quando o dinheiro é de fato transferido ao collector (quem recebe o pagamento) a captura do montante é feita (capture = true)."
+                      "en": "It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).",
+                      "es": "Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true).",
+                      "pt": "É um campo booleano existente em pagamentos de duas etapas (como o cartão de débito). Nesse tipo de pagamento, que é realizado de modo assíncrono, primeiro é feito a reserva do valor da compra (capture = false). Esse valor é capturado e não é debitado da conta instantaneamente. Quando o dinheiro é de fato transferido ao collector (quem recebe o pagamento) a captura do montante é feita (capture = true)."
                     }
                   },
                   "coupon_amount": {
                     "type": "number",
                     "description": {
-                      "eng": "It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.",
-                      "spa": "Es el valor del cupón de descuento. Por ejemplo - BRL 14,50. El tipo del atributo es BigDecimal.",
-                      "por": "É o valor do cupom de desconto. Por exemplo - R$14,50. O tipo do atributo é BigDecimal."
+                      "en": "It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.",
+                      "es": "Es el valor del cupón de descuento. Por ejemplo - BRL 14,50. El tipo del atributo es BigDecimal.",
+                      "pt": "É o valor do cupom de desconto. Por exemplo - R$14,50. O tipo do atributo é BigDecimal."
                     }
                   },
                   "coupon_code": {
                     "type": "string",
                     "description": {
-                      "eng": "Discount campaign with a specific code.",
-                      "spa": "Campaña de descuento con un código específico",
-                      "por": "Campanha de desconto com um código específico"
+                      "en": "Discount campaign with a specific code.",
+                      "es": "Campaña de descuento con un código específico",
+                      "pt": "Campanha de desconto com um código específico"
                     }
                   },
                   "description": {
                     "type": "string",
                     "description": {
-                      "eng": "Purchased product’s description, the reason for payment. E.g. - \"Xiaomi Redmi Note 11S mobile phone 128gb 6gb Ram Original Global Blue Version\" (description of a product in the marketplace).",
-                      "spa": "Descripción del producto adquirido, el motivo del pago. Ej. - \"Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Original Global Blue Version\" (descripción de un producto en el marketplace).",
-                      "por": "Descrição do produto comprado, a razão de pagamento. Por exemplo -  \"Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Versão Global Original azul\" (descrição de um produto no marketplace)."
+                      "en": "Purchased product’s description, the reason for payment. E.g. - \"Xiaomi Redmi Note 11S mobile phone 128gb 6gb Ram Original Global Blue Version\" (description of a product in the marketplace).",
+                      "es": "Descripción del producto adquirido, el motivo del pago. Ej. - \"Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Original Global Blue Version\" (descripción de un producto en el marketplace).",
+                      "pt": "Descrição do produto comprado, a razão de pagamento. Por exemplo -  \"Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Versão Global Original azul\" (descrição de um produto no marketplace)."
                     },
                     "example": "Payment for product",
                     "required": true
@@ -388,35 +388,35 @@
                   "differential_pricing_id": {
                     "type": "number",
                     "description": {
-                      "eng": "Attribute that commonly contains an agreement on how much the user will be charged (generally, this field is more relevant for Marketplace payments). Pricing and fees are calculated based on this identifier.",
-                      "spa": "Atributo que comúnmente contiene un acuerdo sobre cuánto se le cobrará al usuario (generalmente, este campo es más relevante para los pagos de Marketplace). Los precios y las tarifas se calculan en función de este identificador.",
-                      "por": "Atributo que comumente contém um acordo de quanto vai ser cobrado do usuário (geralmente, este campo é mais relevante para pagamentos do Marketplace). A precificação e as taxas são calculadas com base nesse identificador."
+                      "en": "Attribute that commonly contains an agreement on how much the user will be charged (generally, this field is more relevant for Marketplace payments). Pricing and fees are calculated based on this identifier.",
+                      "es": "Atributo que comúnmente contiene un acuerdo sobre cuánto se le cobrará al usuario (generalmente, este campo es más relevante para los pagos de Marketplace). Los precios y las tarifas se calculan en función de este identificador.",
+                      "pt": "Atributo que comumente contém um acordo de quanto vai ser cobrado do usuário (geralmente, este campo é mais relevante para pagamentos do Marketplace). A precificação e as taxas são calculadas com base nesse identificador."
                     }
                   },
                   "date_of_expiration": {
                     "type": "string",
                     "format": "date",
                     "description": {
-                      "eng": "Payment’s expiration date. The valid format of the attribute is as follows - \"yyyy-MM-dd'T'HH:mm:ssz\". Ex - 2022-11-17T09:37:52.000-04:00.",
-                      "spa": "Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - \"yyyy-MM-dd'T'HH:mm:ssz\". Ej - 2022-11-17T09:37:52.000-04:00.",
-                      "por": "Data de expiração do pagamento. O formato válido do atributo é o seguinte - \"yyyy-MM-dd'T'HH:mm:ssz\". Por exemplo - 2022-11-17T09:37:52.000-04:00."
+                      "en": "Payment’s expiration date. The valid format of the attribute is as follows - \"yyyy-MM-dd'T'HH:mm:ssz\". Ex - 2022-11-17T09:37:52.000-04:00.",
+                      "es": "Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - \"yyyy-MM-dd'T'HH:mm:ssz\". Ej - 2022-11-17T09:37:52.000-04:00.",
+                      "pt": "Data de expiração do pagamento. O formato válido do atributo é o seguinte - \"yyyy-MM-dd'T'HH:mm:ssz\". Por exemplo - 2022-11-17T09:37:52.000-04:00."
                     }
                   },
                   "external_reference": {
                     "type": "string",
                     "description": {
-                      "eng": "It is a payment external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.",
-                      "spa": "Es una referencia de pago externa. Podría ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador del origen de la transacción.",
-                      "por": "É uma referência externa do pagamento. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação."
+                      "en": "It is a payment external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.",
+                      "es": "Es una referencia de pago externa. Podría ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador del origen de la transacción.",
+                      "pt": "É uma referência externa do pagamento. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação."
                     },
                     "example": "MP0001"
                   },
                   "installments": {
                     "type": "number",
                     "description": {
-                      "eng": "Number of installments selected.",
-                      "spa": "Cantidad seleccionada de cuotas",
-                      "por": "Número de parcelas selecionado"
+                      "en": "Number of installments selected.",
+                      "es": "Cantidad seleccionada de cuotas",
+                      "pt": "Número de parcelas selecionado"
                     },
                     "required": true,
                     "example": 1
@@ -424,34 +424,34 @@
                   "issuer_id": {
                     "type": "string",
                     "description": {
-                      "eng": "It is the identifier of the card issuer being used in a credit or debit card payment.",
-                      "spa": "Es el identificador del emisor de la tarjeta que se utiliza en un pago con tarjeta de crédito o débito.",
-                      "por": "É o identificador do emissor do cartão que está sendo utilizado em um pagamento com cartão de crédito ou débito."
+                      "en": "It is the identifier of the card issuer being used in a credit or debit card payment.",
+                      "es": "Es el identificador del emisor de la tarjeta que se utiliza en un pago con tarjeta de crédito o débito.",
+                      "pt": "É o identificador do emissor do cartão que está sendo utilizado em um pagamento com cartão de crédito ou débito."
                     },
                     "required": true
                   },
                   "metadata": {
                     "type": "object",
                     "description": {
-                      "eng": "This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {\"payments_group_size\":1,\"payments_group_timestamp\":\"2022-11-18T15:01:44Z\",\"payments_group_uuid\":\"96cfd2a4-0b06-4dea-b25f-c5accb02ba10\"}",
-                      "spa": "Este es un objeto clave-valor opcional en el que el cliente puede agregar información adicional que debe registrarse al finalizar la compra. Por ejemplo - {\"payments_group_size\":1,\"payments_group_timestamp\":\"2022-11-18T15:01:44Z\",\"payments_group_uuid\":\"96cfd2a4-0b06-4dea-b25f-c5accb02ba10\"}",
-                      "por": "Este é um objeto opcional do tipo chave-valor  no qual o cliente  pode adicionar informações adicionais que precisam ser registradas no pagamento. Ex - {\"payments_group_size\":1,\"payments_group_timestamp\":\"2022-11-18T15:01:44Z\",\"payments_group_uuid\":\"96cfd2a4-0b06-4dea-b25f-c5accb02ba10\"}"
+                      "en": "This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {\"payments_group_size\":1,\"payments_group_timestamp\":\"2022-11-18T15:01:44Z\",\"payments_group_uuid\":\"96cfd2a4-0b06-4dea-b25f-c5accb02ba10\"}",
+                      "es": "Este es un objeto clave-valor opcional en el que el cliente puede agregar información adicional que debe registrarse al finalizar la compra. Por ejemplo - {\"payments_group_size\":1,\"payments_group_timestamp\":\"2022-11-18T15:01:44Z\",\"payments_group_uuid\":\"96cfd2a4-0b06-4dea-b25f-c5accb02ba10\"}",
+                      "pt": "Este é um objeto opcional do tipo chave-valor  no qual o cliente  pode adicionar informações adicionais que precisam ser registradas no pagamento. Ex - {\"payments_group_size\":1,\"payments_group_timestamp\":\"2022-11-18T15:01:44Z\",\"payments_group_uuid\":\"96cfd2a4-0b06-4dea-b25f-c5accb02ba10\"}"
                     }
                   },
                   "notification_url": {
                     "type": "string",
                     "description": {
-                      "eng": "Notifications URL available to receive notifications of events related to Payment.",
-                      "spa": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago.",
-                      "por": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento."
+                      "en": "Notifications URL available to receive notifications of events related to Payment.",
+                      "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago.",
+                      "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento."
                     }
                   },
                   "payer": {
                     "type": "object",
                     "description": {
-                      "eng": "Identifies the buyer.",
-                      "spa": "Identificador del pagador",
-                      "por": "Id do pagador"
+                      "en": "Identifies the buyer.",
+                      "es": "Identificador del pagador",
+                      "pt": "Id do pagador"
                     },
                     "required": true,
                     "properties": {
@@ -464,34 +464,34 @@
                       "id": {
                         "type": "string",
                         "description": {
-                          "eng": "Identification of the associated payer.",
-                          "spa": "Identificación del pagador asociado",
-                          "por": "Identificação do pagador associado"
+                          "en": "Identification of the associated payer.",
+                          "es": "Identificación del pagador asociado",
+                          "pt": "Identificação do pagador associado"
                         }
                       },
                       "email": {
                         "type": "string",
                         "description": {
-                          "eng": "Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.",
-                          "spa": "Correo electrónico asociado al payer. Este valor sólo devolverá una respuesta cuando status=approved, status=refunded o status=charged_back.",
-                          "por": "Email associado ao payer. Este valor só retornará uma resposta quando status=approved, status=refunded ou status=charged_back."
+                          "en": "Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.",
+                          "es": "Correo electrónico asociado al payer. Este valor sólo devolverá una respuesta cuando status=approved, status=refunded o status=charged_back.",
+                          "pt": "Email associado ao payer. Este valor só retornará uma resposta quando status=approved, status=refunded ou status=charged_back."
                         },
                         "required": true
                       },
                       "identification": {
                         "type": "object",
                         "description": {
-                          "eng": "User's personal identification. As an example, in Brazil, there is the CPF (Individual Taxpayer Registry) and the CNPJ (National Corporate Taxpayer Registry), for companies. Other possible identification codes are CURP (Mexico), CUIL (Argentina). This object will only return a response when status=approved, status=refunded or status=charged_back.",
-                          "spa": "Identificación personal del usuario. Como ejemplo, en Brasil, existe el CPF (Registro de Contribuyentes Individuales) y el CNPJ (Registro Nacional de Personas Jurídicas) para empresas. Otros posibles códigos de identificación son CURP (México), CUIL (Argentina). Este objeto sólo devolverá una respuesta cuando status=approved, status=refunded or status=charged_back.",
-                          "por": "Identificação pessoal do usuário. Como exemplo, a nível Brasil, temos o CPF (Cadastro de Pessoa Física) e o CNPJ (Cadastro Nacional de Pessoas Jurídicas), para empresas. Outros códigos de identificação possíveis são o CURP (México), CUIL (Argentina), Este objeto só retornará uma response quando status=approved, status=refunded or status=charged_back."
+                          "en": "User's personal identification. As an example, in Brazil, there is the CPF (Individual Taxpayer Registry) and the CNPJ (National Corporate Taxpayer Registry), for companies. Other possible identification codes are CURP (Mexico), CUIL (Argentina). This object will only return a response when status=approved, status=refunded or status=charged_back.",
+                          "es": "Identificación personal del usuario. Como ejemplo, en Brasil, existe el CPF (Registro de Contribuyentes Individuales) y el CNPJ (Registro Nacional de Personas Jurídicas) para empresas. Otros posibles códigos de identificación son CURP (México), CUIL (Argentina). Este objeto sólo devolverá una respuesta cuando status=approved, status=refunded or status=charged_back.",
+                          "pt": "Identificação pessoal do usuário. Como exemplo, a nível Brasil, temos o CPF (Cadastro de Pessoa Física) e o CNPJ (Cadastro Nacional de Pessoas Jurídicas), para empresas. Outros códigos de identificação possíveis são o CURP (México), CUIL (Argentina), Este objeto só retornará uma response quando status=approved, status=refunded or status=charged_back."
                         },
                         "properties": {
                           "type": {
                             "type": "string",
                             "description": {
-                              "eng": "Refers to the type of identification. It can be one of the following types.",
-                              "spa": "Se refiere al tipo de identificación. Puede ser de los siguientes tipos.",
-                              "por": "Refere-se ao tipo de identificação. Pode ser dos seguintes tipos."
+                              "en": "Refers to the type of identification. It can be one of the following types.",
+                              "es": "Se refiere al tipo de identificación. Puede ser de los siguientes tipos.",
+                              "pt": "Refere-se ao tipo de identificação. Pode ser dos seguintes tipos."
                             },
                             "enum": [
                               "CPF -- Individual Taxpayer Registration, Brazil.",
@@ -509,9 +509,9 @@
                           "number": {
                             "type": "string",
                             "description": {
-                              "eng": "The number refers to the identifier of the user in question. If it is a CPF, for example, it will have 11 numbers.",
-                              "spa": "El número hace referencia al identificador del usuario en cuestión. Si es un CPF, por ejemplo, tendrá 11 números.",
-                              "por": "O número se refere ao identificador do usuário em questão. Se for um CPF, por exemplo, terá 11 números."
+                              "en": "The number refers to the identifier of the user in question. If it is a CPF, for example, it will have 11 numbers.",
+                              "es": "El número hace referencia al identificador del usuario en cuestión. Si es un CPF, por ejemplo, tendrá 11 números.",
+                              "pt": "O número se refere ao identificador do usuário em questão. Se for um CPF, por exemplo, terá 11 números."
                             }
                           }
                         }
@@ -519,17 +519,17 @@
                       "first_name": {
                         "type": "string",
                         "description": {
-                          "eng": "First name of the associated payer.",
-                          "spa": "Nombre del pagador asociado",
-                          "por": "Nome do pagador associado"
+                          "en": "First name of the associated payer.",
+                          "es": "Nombre del pagador asociado",
+                          "pt": "Nome do pagador associado"
                         }
                       },
                       "last_name": {
                         "type": "string",
                         "description": {
-                          "eng": "Last name of the associated payer.",
-                          "spa": "Apellido del pagador asociado",
-                          "por": "Sobrenome do pagante associado"
+                          "en": "Last name of the associated payer.",
+                          "es": "Apellido del pagador asociado",
+                          "pt": "Sobrenome do pagante associado"
                         }
                       }
                     }
@@ -537,9 +537,9 @@
                   "payment_method_id": {
                     "type": "string",
                     "description": {
-                      "eng": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples.",
-                      "spa": "Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago.",
-                      "por": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos."
+                      "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples.",
+                      "es": "Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago.",
+                      "pt": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos."
                     },
                     "enum": [
                       "Pix -- Instant digital payment method used in Brazil.",
@@ -555,17 +555,17 @@
                   "statement_descriptor": {
                     "type": "string",
                     "description": {
-                      "eng": "Description that the payment will appear with in the card statement (eg MERCADOPAGO)",
-                      "spa": "Descripción con la que aparecerá el pago en el resumen de tarjeta (ej. MERCADOPAGO)",
-                      "por": "Descrição com a qual o pagamento aparecerá no resumo do cartão (ex. MERCADOPAGO)"
+                      "en": "Description that the payment will appear with in the card statement (eg MERCADOPAGO)",
+                      "es": "Descripción con la que aparecerá el pago en el resumen de tarjeta (ej. MERCADOPAGO)",
+                      "pt": "Descrição com a qual o pagamento aparecerá no resumo do cartão (ex. MERCADOPAGO)"
                     }
                   },
                   "token": {
                     "type": "string",
                     "description": {
-                      "eng": "Token card identifier (mandatory for credit card). The card token is created from the card's own information, increasing security during the payment flow. In addition, once the token is used in a given purchase, it is discarded, requiring the creation of a new token for future purchases.",
-                      "spa": "Identificador del token card. (obligatorio para tarjeta de crédito). El token de la tarjeta se crea a partir de la información de la propia tarjeta, aumentando la seguridad durante el flujo de pago. Además, una vez que el token se usa en una compra determinada, se descarta, lo que requiere la creación de un nuevo token para futuras compras.",
-                      "por": "Identificador de token card (obrigatório para cartão de crédito). O token do cartão é criado a partir das próprias informações do cartão, aumentando a segurança durante o fluxo do pagamento. Além disso, uma vez que o token é utilizado em determinada compra, ele é descartado, sendo necessária a criação de um novo token para compras futuras."
+                      "en": "Token card identifier (mandatory for credit card). The card token is created from the card's own information, increasing security during the payment flow. In addition, once the token is used in a given purchase, it is discarded, requiring the creation of a new token for future purchases.",
+                      "es": "Identificador del token card. (obligatorio para tarjeta de crédito). El token de la tarjeta se crea a partir de la información de la propia tarjeta, aumentando la seguridad durante el flujo de pago. Además, una vez que el token se usa en una compra determinada, se descarta, lo que requiere la creación de un nuevo token para futuras compras.",
+                      "pt": "Identificador de token card (obrigatório para cartão de crédito). O token do cartão é criado a partir das próprias informações do cartão, aumentando a segurança durante o fluxo do pagamento. Além disso, uma vez que o token é utilizado em determinada compra, ele é descartado, sendo necessária a criação de um novo token para compras futuras."
                     },
                     "required": true,
                     "example": "ff8080814c11e237014c1ff593b57b4d"
@@ -573,9 +573,9 @@
                   "transaction_amount": {
                     "type": "number",
                     "description": {
-                      "eng": "Product’s cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.",
-                      "spa": "Costo del producto. Ejemplo - La venta de un producto por R$ 100,00 tendrá un transactionAmount = 100.",
-                      "por": "Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100."
+                      "en": "Product’s cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.",
+                      "es": "Costo del producto. Ejemplo - La venta de un producto por R$ 100,00 tendrá un transactionAmount = 100.",
+                      "pt": "Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100."
                     },
                     "required": true,
                     "example": 58.8
@@ -992,54 +992,54 @@
                                 "type": "string",
                                 "example": "PR0001",
                                 "description": {
-                                  "eng": "It is the purchased product ad identifier. Ex - “MLB2907679857”",
-                                  "spa": "Es el identificador del anuncio del producto adquirido. Por ejemplo - “MLB2907679857”.",
-                                  "por": "É o identificador do anúncio do produto comprado. Por exemplo - “MLB2907679857”."
+                                  "en": "It is the purchased product ad identifier. Ex - “MLB2907679857”",
+                                  "es": "Es el identificador del anuncio del producto adquirido. Por ejemplo - “MLB2907679857”.",
+                                  "pt": "É o identificador do anúncio do produto comprado. Por exemplo - “MLB2907679857”."
                                 }
                               },
                               "title": {
                                 "type": "string",
                                 "example": "Point Mini",
                                 "description": {
-                                  "eng": "Item name.",
-                                  "spa": "Nombre de ítem",
-                                  "por": "Nome do item"
+                                  "en": "Item name.",
+                                  "es": "Nombre de ítem",
+                                  "pt": "Nome do item"
                                 }
                               },
                               "description": {
                                 "type": "string",
                                 "example": "Producto Point para cobros con tarjetas mediante bluetooth",
                                 "description": {
-                                  "eng": "Long item description.",
-                                  "spa": "Descripción de item",
-                                  "por": "Descrição do artigo"
+                                  "en": "Long item description.",
+                                  "es": "Descripción de item",
+                                  "pt": "Descrição do artigo"
                                 }
                               },
                               "picture_url": {
                                 "type": "string",
                                 "example": "https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png",
                                 "description": {
-                                  "eng": "Image URL.",
-                                  "spa": "URL de imagen",
-                                  "por": "URL da imagem"
+                                  "en": "Image URL.",
+                                  "es": "URL de imagen",
+                                  "pt": "URL da imagem"
                                 }
                               },
                               "category_id": {
                                 "type": "string",
                                 "example": "electronics",
                                 "description": {
-                                  "eng": "Category of the item.",
-                                  "spa": "Categoría del ítem",
-                                  "por": "Categoria do item"
+                                  "en": "Category of the item.",
+                                  "es": "Categoría del ítem",
+                                  "pt": "Categoria do item"
                                 }
                               },
                               "quantity": {
                                 "type": "number",
                                 "example": 1,
                                 "description": {
-                                  "eng": "Item quantity.",
-                                  "spa": "Cantidad de producto",
-                                  "por": "Quantidade do produto"
+                                  "en": "Item quantity.",
+                                  "es": "Cantidad de producto",
+                                  "pt": "Quantidade do produto"
                                 }
                               },
                               "unit_price": {
@@ -1303,9 +1303,9 @@
                             "type": "number",
                             "example": 2.64,
                             "description": {
-                              "eng": "Fee amount.",
-                              "spa": "Monto de la comisión",
-                              "por": "Valor da comissão"
+                              "en": "Fee amount.",
+                              "es": "Monto de la comisión",
+                              "pt": "Valor da comissão"
                             }
                           },
                           "fee_payer": {
@@ -2421,9 +2421,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "eng": "Unique Payment Identifier, automatically generated by Mercado Pago",
-              "spa": "Identificador único del pago, generado automáticamente por Mercado Pago",
-              "por": "Identificador único de pagamento, gerado automaticamente pelo Mercado Pago"
+              "en": "Unique Payment Identifier, automatically generated by Mercado Pago",
+              "es": "Identificador único del pago, generado automáticamente por Mercado Pago",
+              "pt": "Identificador único de pagamento, gerado automaticamente pelo Mercado Pago"
             },
             "required": true,
             "schema": {
@@ -3630,9 +3630,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "eng": "Unique Payment Identifier, automatically generated by Mercado Pago",
-              "spa": "Identificador único del pago, generado automáticamente por Mercado Pago",
-              "por": "Identificador único de pagamento, gerado automaticamente pelo Mercado Pago"
+              "en": "Unique Payment Identifier, automatically generated by Mercado Pago",
+              "es": "Identificador único del pago, generado automáticamente por Mercado Pago",
+              "pt": "Identificador único de pagamento, gerado automaticamente pelo Mercado Pago"
             },
             "required": true,
             "schema": {
@@ -3649,9 +3649,9 @@
                   "capture": {
                     "type": "boolean",
                     "description": {
-                      "eng": "It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).",
-                      "spa": "Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true).",
-                      "por": "É um campo booleano existente em pagamentos de duas etapas (como o cartão de débito). Nesse tipo de pagamento, que é realizado de modo assíncrono, primeiro é feito a reserva do valor da compra (capture = false). Esse valor é capturado e não é debitado da conta instantaneamente. Quando o dinheiro é de fato transferido ao collector (quem recebe o pagamento) a captura do montante é feita (capture = true)."
+                      "en": "It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).",
+                      "es": "Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true).",
+                      "pt": "É um campo booleano existente em pagamentos de duas etapas (como o cartão de débito). Nesse tipo de pagamento, que é realizado de modo assíncrono, primeiro é feito a reserva do valor da compra (capture = false). Esse valor é capturado e não é debitado da conta instantaneamente. Quando o dinheiro é de fato transferido ao collector (quem recebe o pagamento) a captura do montante é feita (capture = true)."
                     },
                     "example": true
                   },
@@ -3659,17 +3659,17 @@
                     "type": "string",
                     "format": "date",
                     "description": {
-                      "eng": "Payment’s expiration date. The valid format of the attribute is as follows - \"yyyy-MM-dd'T'HH:mm:ssz\". Ex - 2022-11-17T09:37:52.000-04:00.",
-                      "spa": "Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - \"yyyy-MM-dd'T'HH:mm:ssz\". Por ejemplo - 2022-11-17T09:37:52.000-04:00.",
-                      "por": "Data de expiração do pagamento. O formato válido do atributo é o seguinte - \"yyyy-MM-dd'T'HH:mm:ssz\". Por exemplo - 2022-11-17T09:37:52.000-04:00."
+                      "en": "Payment’s expiration date. The valid format of the attribute is as follows - \"yyyy-MM-dd'T'HH:mm:ssz\". Ex - 2022-11-17T09:37:52.000-04:00.",
+                      "es": "Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - \"yyyy-MM-dd'T'HH:mm:ssz\". Por ejemplo - 2022-11-17T09:37:52.000-04:00.",
+                      "pt": "Data de expiração do pagamento. O formato válido do atributo é o seguinte - \"yyyy-MM-dd'T'HH:mm:ssz\". Por exemplo - 2022-11-17T09:37:52.000-04:00."
                     }
                   },
                   "status": {
                     "type": "string",
                     "description": {
-                      "eng": "It is the current state of payment. It can be two following types.",
-                      "spa": "Es el estado actual de pago. Puede ser de dos tipos siguientes.",
-                      "por": "É o estado atual do pagamento. Podem ser ser dos seguintes tipos"
+                      "en": "It is the current state of payment. It can be two following types.",
+                      "es": "Es el estado actual de pago. Puede ser de dos tipos siguientes.",
+                      "pt": "É o estado atual do pagamento. Podem ser ser dos seguintes tipos"
                     },
                     "example": "cancelled",
                     "enum": [
@@ -3687,9 +3687,9 @@
                   "transaction_amount": {
                     "type": "number",
                     "description": {
-                      "eng": "Product cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.",
-                      "spa": "Costo del producto. Ejemplo - La venta de un producto por R$ 100,00 tendrá un transactionAmount = 100.",
-                      "por": "Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100."
+                      "en": "Product cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.",
+                      "es": "Costo del producto. Ejemplo - La venta de un producto por R$ 100,00 tendrá un transactionAmount = 100.",
+                      "pt": "Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100."
                     },
                     "example": 58.8
                   }
@@ -4153,54 +4153,54 @@
                                 "type": "string",
                                 "example": "PR0001",
                                 "description": {
-                                  "eng": "It is the purchased product ad identifier. Ex - “MLB2907679857”.",
-                                  "spa": "Es el identificador del anuncio del producto adquirido. Por ejemplo - “MLB2907679857”.",
-                                  "por": "É o identificador do anúncio do produto comprado. Por exemplo - “MLB2907679857”."
+                                  "en": "It is the purchased product ad identifier. Ex - “MLB2907679857”.",
+                                  "es": "Es el identificador del anuncio del producto adquirido. Por ejemplo - “MLB2907679857”.",
+                                  "pt": "É o identificador do anúncio do produto comprado. Por exemplo - “MLB2907679857”."
                                 }
                               },
                               "title": {
                                 "type": "string",
                                 "example": "Point Mini",
                                 "description": {
-                                  "eng": "Item name.",
-                                  "spa": "Nombre de ítem",
-                                  "por": "Nome do item"
+                                  "en": "Item name.",
+                                  "es": "Nombre de ítem",
+                                  "pt": "Nome do item"
                                 }
                               },
                               "description": {
                                 "type": "string",
                                 "example": "Producto Point para cobros con tarjetas mediante bluetooth",
                                 "description": {
-                                  "eng": "Long item description.",
-                                  "spa": "Descripción de item",
-                                  "por": "Descrição do artigo"
+                                  "en": "Long item description.",
+                                  "es": "Descripción de item",
+                                  "pt": "Descrição do artigo"
                                 }
                               },
                               "picture_url": {
                                 "type": "string",
                                 "example": "https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png",
                                 "description": {
-                                  "eng": "Image URL.",
-                                  "spa": "URL de imagen",
-                                  "por": "URL da imagem"
+                                  "en": "Image URL.",
+                                  "es": "URL de imagen",
+                                  "pt": "URL da imagem"
                                 }
                               },
                               "category_id": {
                                 "type": "string",
                                 "example": "electronics",
                                 "description": {
-                                  "eng": "Category of the item.",
-                                  "spa": "Categoría del ítem",
-                                  "por": "Categoria do item"
+                                  "en": "Category of the item.",
+                                  "es": "Categoría del ítem",
+                                  "pt": "Categoria do item"
                                 }
                               },
                               "quantity": {
                                 "type": "number",
                                 "example": 1,
                                 "description": {
-                                  "eng": "Item quantity.",
-                                  "spa": "Cantidad de producto",
-                                  "por": "Quantidade do produto"
+                                  "en": "Item quantity.",
+                                  "es": "Cantidad de producto",
+                                  "pt": "Quantidade do produto"
                                 }
                               },
                               "unit_price": {
@@ -4464,9 +4464,9 @@
                             "type": "number",
                             "example": 2.64,
                             "description": {
-                              "eng": "Fee amount.",
-                              "spa": "Monto de la comisión",
-                              "por": "Valor da comissão"
+                              "en": "Fee amount.",
+                              "es": "Monto de la comisión",
+                              "pt": "Valor da comissão"
                             }
                           },
                           "fee_payer": {
@@ -4958,9 +4958,9 @@
             "name": "sort",
             "in": "query",
             "description": {
-              "eng": "Parameter used for ordering a list of payments. Sorting can be done using the following attributes - \"date_approved\", \"date_created\", \"date_last_updated\", \"id\", \"money_release_date\".",
-              "spa": "Parámetro utilizado para ordenar una lista de pagos. La clasificación se puede hacer usando los siguientes atributos - \"date_approved\", \"date_created\", \"date_last_updated\", \"id\", \"money_release_date\".",
-              "por": "Parâmetro utilizado para a ordenação de uma lista de pagamentos. A ordenação pode ser feita a partir dos seguintes atributos - \"date_approved\", \"date_created\", \"date_last_updated\", \"id\", \"money_release_date\"."
+              "en": "Parameter used for ordering a list of payments. Sorting can be done using the following attributes - \"date_approved\", \"date_created\", \"date_last_updated\", \"id\", \"money_release_date\".",
+              "es": "Parámetro utilizado para ordenar una lista de pagos. La clasificación se puede hacer usando los siguientes atributos - \"date_approved\", \"date_created\", \"date_last_updated\", \"id\", \"money_release_date\".",
+              "pt": "Parâmetro utilizado para a ordenação de uma lista de pagamentos. A ordenação pode ser feita a partir dos seguintes atributos - \"date_approved\", \"date_created\", \"date_last_updated\", \"id\", \"money_release_date\"."
             },
             "required": true,
             "schema": {
@@ -4972,9 +4972,9 @@
             "name": "criteria",
             "in": "query",
             "description": {
-              "eng": "It sorts the payments in ascending order (using “asc”) or in descending order (“desc”).",
-              "spa": "Ordena el pago en orden ascendente (usando \"asc\") o en orden descendente (\"desc\").",
-              "por": "Ordena o pagamento de maneira ascendente (utilizando “asc”) ou descendente (“desc”)."
+              "en": "It sorts the payments in ascending order (using “asc”) or in descending order (“desc”).",
+              "es": "Ordena el pago en orden ascendente (usando \"asc\") o en orden descendente (\"desc\").",
+              "pt": "Ordena o pagamento de maneira ascendente (utilizando “asc”) ou descendente (“desc”)."
             },
             "required": true,
             "schema": {
@@ -4986,9 +4986,9 @@
             "name": "external_reference",
             "in": "query",
             "description": {
-              "eng": "It is a payment’s external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.",
-              "spa": "Es una referencia de pago externa. Podría ser, por ejemplo, un código hash del Banco Central, funcionando como identificador del origen de la transacción.",
-              "por": "É uma referência externa do pagamento. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação."
+              "en": "It is a payment’s external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.",
+              "es": "Es una referencia de pago externa. Podría ser, por ejemplo, un código hash del Banco Central, funcionando como identificador del origen de la transacción.",
+              "pt": "É uma referência externa do pagamento. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação."
             },
             "required": true,
             "schema": {
@@ -5000,9 +5000,9 @@
             "name": "range",
             "in": "query",
             "description": {
-              "eng": "Parameter used to define the payments search interval. The range can refer to the following attributes - \"date_created\", \"date_last_updated\", \"date_approved\", \"money_release_date\". If not informed, use default \"date_created\".",
-              "spa": "Parámetro utilizado para definir el intervalo de búsqueda de pagos. El rango puede hacer referencia a los siguientes atributos - \"date_created\", \"date_last_updated\", \"date_approved\", \"money_release_date\". Si no se informa, usa por defecto \"date_created\"",
-              "por": "Parâmetro utilizado para definir o intervalo de busca pelos pagamentos. O intervalo pode ser referente aos seguintes atributos - \"date_created\", \"date_last_updated\", \"date_approved\", \"money_release_date\". Se não for informado utiliza por padrão \"date_created\"."
+              "en": "Parameter used to define the payments search interval. The range can refer to the following attributes - \"date_created\", \"date_last_updated\", \"date_approved\", \"money_release_date\". If not informed, use default \"date_created\".",
+              "es": "Parámetro utilizado para definir el intervalo de búsqueda de pagos. El rango puede hacer referencia a los siguientes atributos - \"date_created\", \"date_last_updated\", \"date_approved\", \"money_release_date\". Si no se informa, usa por defecto \"date_created\"",
+              "pt": "Parâmetro utilizado para definir o intervalo de busca pelos pagamentos. O intervalo pode ser referente aos seguintes atributos - \"date_created\", \"date_last_updated\", \"date_approved\", \"money_release_date\". Se não for informado utiliza por padrão \"date_created\"."
             },
             "required": true,
             "schema": {
@@ -5014,9 +5014,9 @@
             "name": "begin_date",
             "in": "query",
             "description": {
-              "eng": "Defines the start of the payments search interval. Its format can be a relative date - \"NOW-XDAYS\", \"NOW-XMONTHS\" - or an absolute date - ISO8601. If not informed, it defaults to \"NOW-3MONTHS\".",
-              "spa": "Define el inicio del intervalo de búsqueda de pagos. Su formato puede ser una fecha relativa - \"NOW-XDAYS\", \"NOW-XMONTHS\" - o una fecha absoluta - ISO8601. Si no se informa, el valor predeterminado es \"NOW-3MONTHS\".",
-              "por": "Define o início do intervalo de busca dos pagamentos. Seu formato pode ser uma data relativa - \"NOW-XDAYS\", \"NOW-XMONTHS\" - ou uma data absoluta - ISO8601. Se não for informado utiliza por padrão \"NOW-3MONTHS\"."
+              "en": "Defines the start of the payments search interval. Its format can be a relative date - \"NOW-XDAYS\", \"NOW-XMONTHS\" - or an absolute date - ISO8601. If not informed, it defaults to \"NOW-3MONTHS\".",
+              "es": "Define el inicio del intervalo de búsqueda de pagos. Su formato puede ser una fecha relativa - \"NOW-XDAYS\", \"NOW-XMONTHS\" - o una fecha absoluta - ISO8601. Si no se informa, el valor predeterminado es \"NOW-3MONTHS\".",
+              "pt": "Define o início do intervalo de busca dos pagamentos. Seu formato pode ser uma data relativa - \"NOW-XDAYS\", \"NOW-XMONTHS\" - ou uma data absoluta - ISO8601. Se não for informado utiliza por padrão \"NOW-3MONTHS\"."
             },
             "required": true,
             "schema": {
@@ -5028,9 +5028,9 @@
             "name": "end_date",
             "in": "query",
             "description": {
-              "eng": "Defines the end of the payments search interval. Its format can be a relative date - \"NOW-XDAYS\", \"NOW-XMONTHS\" - or an absolute date - ISO8601. If not informed, it defaults to \"NOW\".",
-              "spa": "Define el final del intervalo de búsqueda de pagos. Su formato puede ser una fecha relativa - \"NOW-XDAYS\", \"NOW-XMONTHS\" - o una fecha absoluta - ISO8601. Si no se informa, el valor predeterminado es \"NOW\".",
-              "por": "Define o fim do intervalo de busca dos pagamentos. Seu formato pode ser uma data relativa - \"NOW-XDAYS\", \"NOW-XMONTHS\" - ou uma data absoluta - ISO8601. Se não for informado utiliza por padrão \"NOW\"."
+              "en": "Defines the end of the payments search interval. Its format can be a relative date - \"NOW-XDAYS\", \"NOW-XMONTHS\" - or an absolute date - ISO8601. If not informed, it defaults to \"NOW\".",
+              "es": "Define el final del intervalo de búsqueda de pagos. Su formato puede ser una fecha relativa - \"NOW-XDAYS\", \"NOW-XMONTHS\" - o una fecha absoluta - ISO8601. Si no se informa, el valor predeterminado es \"NOW\".",
+              "pt": "Define o fim do intervalo de busca dos pagamentos. Seu formato pode ser uma data relativa - \"NOW-XDAYS\", \"NOW-XMONTHS\" - ou uma data absoluta - ISO8601. Se não for informado utiliza por padrão \"NOW\"."
             },
             "required": true,
             "schema": {
@@ -5099,54 +5099,54 @@
                               "type": "string",
                               "example": 1,
                               "description": {
-                                "eng": "Unique Payment Identifier, automatically generated by Mercado Pago",
-                                "spa": "Identificador único del pago, generado automáticamente por Mercado Pago",
-                                "por": "Identificador único de pagamento, gerado automaticamente pelo Mercado Pago"
+                                "en": "Unique Payment Identifier, automatically generated by Mercado Pago",
+                                "es": "Identificador único del pago, generado automáticamente por Mercado Pago",
+                                "pt": "Identificador único de pagamento, gerado automaticamente pelo Mercado Pago"
                               }
                             },
                             "date_created": {
                               "type": "string",
                               "example": "2017-08-31T11:26:38.000Z",
                               "description": {
-                                "eng": "Payment creation date.",
-                                "spa": "Fecha de creación del Pago.",
-                                "por": "Data de criação do pagamento."
+                                "en": "Payment creation date.",
+                                "es": "Fecha de creación del Pago.",
+                                "pt": "Data de criação do pagamento."
                               }
                             },
                             "date_approved": {
                               "type": "string",
                               "example": "2017-08-31T11:26:38.000Z",
                               "description": {
-                                "eng": "Payment approval date. A payment can be generated in an intermediate state and then approved, so the creation date will not always coincide with the Approval Date.",
-                                "spa": "Fecha de aprobación del Pago. Un pago puede generarse en un estado intermedio y luego ser aprobado, por tanto la fecha de creación no siempre coincidirá con la Fecha de Aprobación.",
-                                "por": "Data de aprovação do pagamento. Um pagamento pode ser gerado em um estado intermediário e depois aprovado, portanto, a data de criação nem sempre coincidirá com a Data de Aprovação."
+                                "en": "Payment approval date. A payment can be generated in an intermediate state and then approved, so the creation date will not always coincide with the Approval Date.",
+                                "es": "Fecha de aprobación del Pago. Un pago puede generarse en un estado intermedio y luego ser aprobado, por tanto la fecha de creación no siempre coincidirá con la Fecha de Aprobación.",
+                                "pt": "Data de aprovação do pagamento. Um pagamento pode ser gerado em um estado intermediário e depois aprovado, portanto, a data de criação nem sempre coincidirá com a Data de Aprovação."
                               }
                             },
                             "date_last_updated": {
                               "type": "string",
                               "example": "2017-08-31T11:26:38.000Z",
                               "description": {
-                                "eng": "Date on which the last payment event was recorded.",
-                                "spa": "Fecha en la que se registró el ultimo evento sobre el pago.",
-                                "por": "Data em que o último evento de pagamento foi registrado."
+                                "en": "Date on which the last payment event was recorded.",
+                                "es": "Fecha en la que se registró el ultimo evento sobre el pago.",
+                                "pt": "Data em que o último evento de pagamento foi registrado."
                               }
                             },
                             "date_of_expiration": {
                               "type": "string",
                               "format": "nullable",
                               "description": {
-                                "eng": "Payment’s expiration date. The attribute’s valid format is as follows - \"yyyy-MM-dd'T'HH:mm:ssz\". Ex. - 2022-11-17T09:37:52.000-04:00.",
-                                "spa": "Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - \"yyyy-MM-dd'T'HH:mm:ssz\". Ej. - 2022-11-17T09:37:52.000-04:00.",
-                                "por": "Data de expiração do pagamento. O formato válido do atributo é o seguinte - \"yyyy-MM-dd'T'HH:mm:ssz\". Ex. - 2022-11-17T09:37:52.000-04:00."
+                                "en": "Payment’s expiration date. The attribute’s valid format is as follows - \"yyyy-MM-dd'T'HH:mm:ssz\". Ex. - 2022-11-17T09:37:52.000-04:00.",
+                                "es": "Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - \"yyyy-MM-dd'T'HH:mm:ssz\". Ej. - 2022-11-17T09:37:52.000-04:00.",
+                                "pt": "Data de expiração do pagamento. O formato válido do atributo é o seguinte - \"yyyy-MM-dd'T'HH:mm:ssz\". Ex. - 2022-11-17T09:37:52.000-04:00."
                               }
                             },
                             "money_release_date": {
                               "type": "string",
                               "example": "2017-09-14T11:26:38.000Z",
                               "description": {
-                                "eng": "Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).",
-                                "spa": "Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago).",
-                                "por": "Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento)."
+                                "en": "Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).",
+                                "es": "Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago).",
+                                "pt": "Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento)."
                               }
                             },
                             "operation_type": {
@@ -5156,18 +5156,18 @@
                               "type": "string",
                               "format": "nullable",
                               "description": {
-                                "eng": "Is the identifier of the card issuer being used in a credit or debit card payment.",
-                                "spa": "Es el identificador del emisor de la tarjeta que se utiliza en un pago con tarjeta de crédito o débito.",
-                                "por": "É o identificador do emissor do cartão que está sendo utilizado em um pagamento com cartão de crédito ou débito."
+                                "en": "Is the identifier of the card issuer being used in a credit or debit card payment.",
+                                "es": "Es el identificador del emisor de la tarjeta que se utiliza en un pago con tarjeta de crédito o débito.",
+                                "pt": "É o identificador do emissor do cartão que está sendo utilizado em um pagamento com cartão de crédito ou débito."
                               }
                             },
                             "payment_method_id": {
                               "type": "string",
                               "example": "account_money",
                               "description": {
-                                "eng": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples",
-                                "spa": "Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago.",
-                                "por": "Indica el identificador del medio de pago seleccionado para realizarlo. A continuación presentamos algunos ejemplos."
+                                "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples",
+                                "es": "Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago.",
+                                "pt": "Indica el identificador del medio de pago seleccionado para realizarlo. A continuación presentamos algunos ejemplos."
                               },
                               "enum": [
                                 "pix -- Instant digital payment method used in Brazil.",
@@ -5188,9 +5188,9 @@
                               "type": "string",
                               "example": "accredited",
                               "description": {
-                                "eng": "Detail in which the Collection resulted",
-                                "spa": "Detalle en el que resultó el Cobro",
-                                "por": "Detalhe em que resultou a Coleção"
+                                "en": "Detail in which the Collection resulted",
+                                "es": "Detalle en el que resultó el Cobro",
+                                "pt": "Detalhe em que resultou a Coleção"
                               },
                               "enum": [
                                 "Accredited -- credited payment.",
@@ -5217,105 +5217,105 @@
                               "type": "string",
                               "example": "Pago Pizza",
                               "description": {
-                                "eng": "Purchased product’s description, the reason for payment. E.g. - \"Xiaomi Redmi Note 11S mobile phone 128gb 6gb Ram Original Global Blue Version\" (description of a product in the marketplace).",
-                                "spa": "Descripción del producto adquirido, el motivo del pago. Ej. - \"Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Original Global Blue Version\" (descripción de un producto en el marketplace).",
-                                "por": "Descrição do produto comprado, a razão de pagamento. Ex. - \"Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Versão Global Original azul\" (descrição de um produto no marketplace)."
+                                "en": "Purchased product’s description, the reason for payment. E.g. - \"Xiaomi Redmi Note 11S mobile phone 128gb 6gb Ram Original Global Blue Version\" (description of a product in the marketplace).",
+                                "es": "Descripción del producto adquirido, el motivo del pago. Ej. - \"Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Original Global Blue Version\" (descripción de un producto en el marketplace).",
+                                "pt": "Descrição do produto comprado, a razão de pagamento. Ex. - \"Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Versão Global Original azul\" (descrição de um produto no marketplace)."
                               }
                             },
                             "live_mode": {
                               "type": "boolean",
                               "description": {
-                                "eng": "Indicates whether the Payment was made in a production environment or in a Test environment. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.",
-                                "spa": "Indica si el Pago se realizó en ambiente productivo o en un ambiente de Test. Si es TRUE, el contracargo se procesará en modo de producción. Si es FALSE, el contracargo se procesará en modo sandbox.",
-                                "por": "Indica se o Pagamento foi feito em ambiente de produção ou em ambiente de Teste. Se TRUE, o estorno será processado em modo de produção. Se FALSE, o estorno será processado no modo sandbox."
+                                "en": "Indicates whether the Payment was made in a production environment or in a Test environment. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.",
+                                "es": "Indica si el Pago se realizó en ambiente productivo o en un ambiente de Test. Si es TRUE, el contracargo se procesará en modo de producción. Si es FALSE, el contracargo se procesará en modo sandbox.",
+                                "pt": "Indica se o Pagamento foi feito em ambiente de produção ou em ambiente de Teste. Se TRUE, o estorno será processado em modo de produção. Se FALSE, o estorno será processado no modo sandbox."
                               }
                             },
                             "sponsor_id": {
                               "type": "string",
                               "format": "nullable",
                               "description": {
-                                "eng": "This field is deprecated and no longer used.",
-                                "spa": "Este campo está deprecado y ya no se usa.",
-                                "por": "Este campo está deprecado e não é mais utilizado."
+                                "en": "This field is deprecated and no longer used.",
+                                "es": "Este campo está deprecado y ya no se usa.",
+                                "pt": "Este campo está deprecado e não é mais utilizado."
                               }
                             },
                             "authorization_code": {
                               "type": "string",
                               "format": "nullable",
                               "description": {
-                                "eng": "Transaction authorization code for payments with “payment_method_type” of type “credit_card” (credit card), “debit_card” (credit card) and “voucher_card” (voucher card for benefits, such as Alelo). In summary, this code is used for card transactions. The code is numerical and has 6 digits.",
-                                "spa": "Código de autorización de transacción para pagos con “payment_method_type” de tipo “credit_card” (tarjeta de crédito), “debit_card” (tarjeta de débito) y “voucher_card” (tarjeta de bono para beneficios, como Alelo). En resumen, este código se utiliza para transacciones con tarjeta. El código es numérico y tiene 6 dígitos.",
-                                "por": "Código de autorização de transação para pagamentos com “payment_method_type” do tipo “credit_card” (cartão de crédito), “debit_card” (cartão de crédito) e “voucher_card” (cartão de voucher para benefícios, como Alelo). Em síntese, este código é utilizado para transações com cartão. O código é numérico e possui 6 dígitos."
+                                "en": "Transaction authorization code for payments with “payment_method_type” of type “credit_card” (credit card), “debit_card” (credit card) and “voucher_card” (voucher card for benefits, such as Alelo). In summary, this code is used for card transactions. The code is numerical and has 6 digits.",
+                                "es": "Código de autorización de transacción para pagos con “payment_method_type” de tipo “credit_card” (tarjeta de crédito), “debit_card” (tarjeta de débito) y “voucher_card” (tarjeta de bono para beneficios, como Alelo). En resumen, este código se utiliza para transacciones con tarjeta. El código es numérico y tiene 6 dígitos.",
+                                "pt": "Código de autorização de transação para pagamentos com “payment_method_type” do tipo “credit_card” (cartão de crédito), “debit_card” (cartão de crédito) e “voucher_card” (cartão de voucher para benefícios, como Alelo). Em síntese, este código é utilizado para transações com cartão. O código é numérico e possui 6 dígitos."
                               }
                             },
                             "money_release_schema": {
                               "type": "string",
                               "format": "nullable",
                               "description": {
-                                "eng": "This field is used to identify whether a payment is PNF (Payment in Flow). Payment in flow is a form of cash release in which the installments received by a seller are released over the months (which corresponds to the number of installments). Possible values ​​for this field are “null” or “payment_in_flow”.",
-                                "spa": "Este campo se utiliza para identificar si un pago es PNF (Pay in Flow). El pago en flujo es una forma de liberación de dinero en la que las cuotas recibidas por un vendedor se van liberando a lo largo de los meses (lo que corresponde al número de cuotas). Los valores posibles para este campo son \"null\" o \"payment_in_flow\".",
-                                "por": "Esse campo é usado para identificar se um pagamento é PNF (pagamento no fluxo). Pagamento no fluxo é uma forma de liberação de dinheiro em que as parcelas recebidas por um vendedor são liberadas com o passar dos meses (que corresponde ao número de parcelas). Os valores possíveis para este campo são “null” ou “payment_in_flow”."
+                                "en": "This field is used to identify whether a payment is PNF (Payment in Flow). Payment in flow is a form of cash release in which the installments received by a seller are released over the months (which corresponds to the number of installments). Possible values ​​for this field are “null” or “payment_in_flow”.",
+                                "es": "Este campo se utiliza para identificar si un pago es PNF (Pay in Flow). El pago en flujo es una forma de liberación de dinero en la que las cuotas recibidas por un vendedor se van liberando a lo largo de los meses (lo que corresponde al número de cuotas). Los valores posibles para este campo son \"null\" o \"payment_in_flow\".",
+                                "pt": "Esse campo é usado para identificar se um pagamento é PNF (pagamento no fluxo). Pagamento no fluxo é uma forma de liberação de dinheiro em que as parcelas recebidas por um vendedor são liberadas com o passar dos meses (que corresponde ao número de parcelas). Os valores possíveis para este campo são “null” ou “payment_in_flow”."
                               }
                             },
                             "counter_currency": {
                               "type": "string",
                               "format": "nullable",
                               "description": {
-                                "eng": "Basically, it is an object that will allow you to convert payments of the CBT type (Cross Border Trade) into dollars, which are international payments made in foreign currency.",
-                                "spa": "Básicamente, es un objeto que te permitirá convertir pagos del tipo CBT (Cross Border Trade) en dólares, que son pagos internacionales realizados en moneda extranjera.",
-                                "por": "Basicamente, é um objeto que permitirá converter em dólares pagamentos do tipo CBT (Cross Border Trade), que são pagamentos internacionais, feitos em moeda estrangeira."
+                                "en": "Basically, it is an object that will allow you to convert payments of the CBT type (Cross Border Trade) into dollars, which are international payments made in foreign currency.",
+                                "es": "Básicamente, es un objeto que te permitirá convertir pagos del tipo CBT (Cross Border Trade) en dólares, que son pagos internacionales realizados en moneda extranjera.",
+                                "pt": "Basicamente, é um objeto que permitirá converter em dólares pagamentos do tipo CBT (Cross Border Trade), que são pagamentos internacionais, feitos em moeda estrangeira."
                               }
                             },
                             "collector_id": {
                               "type": "string",
                               "example": 2,
                               "description": {
-                                "eng": "It is the user who receives the money. Ex - A user (payer) buys a cell phone through the marketplace. The identifier of the store/seller to receive the payment is the collector_id.",
-                                "spa": "Es el usuario quien recibe el dinero. Por ejemplo - Un usuario (payer) compra un celular a través del marketplace. El identificador de la tienda/vendedor para recibir el pago es el collector_id.",
-                                "por": "É o usuário que recebe o dinheiro. Por exemplo - Um usuário (payer) compra um celular pelo marketplace. O identificador da loja/vendedor a receber o pagamento é o collector_id."
+                                "en": "It is the user who receives the money. Ex - A user (payer) buys a cell phone through the marketplace. The identifier of the store/seller to receive the payment is the collector_id.",
+                                "es": "Es el usuario quien recibe el dinero. Por ejemplo - Un usuario (payer) compra un celular a través del marketplace. El identificador de la tienda/vendedor para recibir el pago es el collector_id.",
+                                "pt": "É o usuário que recebe o dinheiro. Por exemplo - Um usuário (payer) compra um celular pelo marketplace. O identificador da loja/vendedor a receber o pagamento é o collector_id."
                               }
                             },
                             "payer": {
                               "type": "object",
                               "description": {
-                                "eng": "Payer data - ID (identifying number), email address, identification (type and number of id)",
-                                "spa": "Datos del pagador - ID (número identificador), dirección de email, identificación (tipo y número de documento)",
-                                "por": "Dados do pagador - ID (número de identificação), e-mail, identificação (tipo e número de documento)"
+                                "en": "Payer data - ID (identifying number), email address, identification (type and number of id)",
+                                "es": "Datos del pagador - ID (número identificador), dirección de email, identificación (tipo y número de documento)",
+                                "pt": "Dados do pagador - ID (número de identificação), e-mail, identificação (tipo e número de documento)"
                               },
                               "properties": {
                                 "id": {
                                   "type": "string",
                                   "example": 123,
                                   "description": {
-                                    "eng": "Payer identifier generated by Mercado Pago.",
-                                    "spa": "Identificador del Payer generado por Mercado Pago.",
-                                    "por": "Identificador de pagador gerado pelo Mercado Pago."
+                                    "en": "Payer identifier generated by Mercado Pago.",
+                                    "es": "Identificador del Payer generado por Mercado Pago.",
+                                    "pt": "Identificador de pagador gerado pelo Mercado Pago."
                                   }
                                 },
                                 "email": {
                                   "type": "string",
                                   "example": "afriend@gmail.com",
                                   "description": {
-                                    "eng": "Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.",
-                                    "spa": "Correo electrónico asociado al payer. Este valor sólo devolverá una respuesta cuando status=approved, status=refunded o status=charged_back.",
-                                    "por": "Email associado ao payer. Este valor só retornará uma resposta quando status=approved, status=refunded ou status=charged_back."
+                                    "en": "Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.",
+                                    "es": "Correo electrónico asociado al payer. Este valor sólo devolverá una respuesta cuando status=approved, status=refunded o status=charged_back.",
+                                    "pt": "Email associado ao payer. Este valor só retornará uma resposta quando status=approved, status=refunded ou status=charged_back."
                                   }
                                 },
                                 "identification": {
                                   "type": "object",
                                   "description": {
-                                    "eng": "User's personal identification. As an example, in Brazil, we have the CPF (Individual Taxpayer Registry) and the CNPJ (National Corporate Taxpayer Registry), for companies. Other possible identification codes are CURP (Mexico), CUIL (Argentina). This object will only return a response when status=approved, status=refunded or status=charged_back.",
-                                    "spa": "Identificación personal del usuario. Como ejemplo, en Brasil, existe el CPF (Registro de Contribuyentes Individuales) y el CNPJ (Registro Nacional de Contribuyentes de Personas Jurídicas), para empresas. Otros posibles códigos de identificación son CURP (México), CUIL (Argentina). Este objeto sólo devolverá una respuesta cuando status=approved, status=refunded or status=charged_back.",
-                                    "por": "Identificação pessoal do usuário. Como exemplo, a nível Brasil, temos o CPF (Cadastro de Pessoa Física) e o CNPJ (Cadastro Nacional de Pessoas Jurídicas), para empresas. Outros códigos de identificação possíveis são o CURP (México), CUIL (Argentina), Este objeto só retornará uma response quando status=approved, status=refunded or status=charged_back."
+                                    "en": "User's personal identification. As an example, in Brazil, we have the CPF (Individual Taxpayer Registry) and the CNPJ (National Corporate Taxpayer Registry), for companies. Other possible identification codes are CURP (Mexico), CUIL (Argentina). This object will only return a response when status=approved, status=refunded or status=charged_back.",
+                                    "es": "Identificación personal del usuario. Como ejemplo, en Brasil, existe el CPF (Registro de Contribuyentes Individuales) y el CNPJ (Registro Nacional de Contribuyentes de Personas Jurídicas), para empresas. Otros posibles códigos de identificación son CURP (México), CUIL (Argentina). Este objeto sólo devolverá una respuesta cuando status=approved, status=refunded or status=charged_back.",
+                                    "pt": "Identificação pessoal do usuário. Como exemplo, a nível Brasil, temos o CPF (Cadastro de Pessoa Física) e o CNPJ (Cadastro Nacional de Pessoas Jurídicas), para empresas. Outros códigos de identificação possíveis são o CURP (México), CUIL (Argentina), Este objeto só retornará uma response quando status=approved, status=refunded or status=charged_back."
                                   },
                                   "properties": {
                                     "type": {
                                       "type": "string",
                                       "example": "DNI",
                                       "description": {
-                                        "eng": "Refers to the type of identification. It can be one of the following types.",
-                                        "spa": "Se refiere al tipo de identificación. Puede ser de los siguientes tipos.",
-                                        "por": "Refere-se ao tipo de identificação. Pode ser dos seguintes tipos."
+                                        "en": "Refers to the type of identification. It can be one of the following types.",
+                                        "es": "Se refiere al tipo de identificación. Puede ser de los siguientes tipos.",
+                                        "pt": "Refere-se ao tipo de identificação. Pode ser dos seguintes tipos."
                                       },
                                       "enum": [
                                         "CPF -- Individual Taxpayer Registration, Brazil.",
@@ -5334,9 +5334,9 @@
                                       "type": "string",
                                       "example": 12345678,
                                       "description": {
-                                        "eng": "The number refers to the user’s identifier. If it is a CPF, for example, it will have 11 numbers.",
-                                        "spa": "El número hace referencia al identificador del usuario en cuestión. Si es un CPF, por ejemplo, tendrá 11 números.",
-                                        "por": "O número se refere ao identificador do usuário em questão. Se for um CPF, por exemplo, terá 11 números."
+                                        "en": "The number refers to the user’s identifier. If it is a CPF, for example, it will have 11 numbers.",
+                                        "es": "El número hace referencia al identificador del usuario en cuestión. Si es un CPF, por ejemplo, tendrá 11 números.",
+                                        "pt": "O número se refere ao identificador do usuário em questão. Se for um CPF, por exemplo, terá 11 números."
                                       }
                                     }
                                   }
@@ -5349,71 +5349,71 @@
                             "metadata": {
                               "type": "object",
                               "description": {
-                                "eng": "This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex. - {\"payments_group_size\":1,\"payments_group_timestamp\":\"2022-11-18T15:01:44Z\",\"payments_group_uuid\":\"96cfd2a4-0b06-4dea-b25f-c5accb02ba10\"}.",
-                                "spa": "Este es un objeto clave-valor opcional en el que el cliente puede agregar información adicional que debe registrarse al finalizar la compra. Por ejemplo - {\"payments_group_size\":1,\"payments_group_timestamp\":\"2022-11-18T15:01:44Z\",\"payments_group_uuid\":\"96cfd2a4-0b06-4dea-b25f-c5accb02ba10\"}",
-                                "por": "Este é um objeto opcional do tipo chave-valor  no qual o cliente  pode adicionar informações adicionais que precisam ser registradas no pagamento. Por exemplo - {\"payments_group_size\":1,\"payments_group_timestamp\":\"2022-11-18T15:01:44Z\",\"payments_group_uuid\":\"96cfd2a4-0b06-4dea-b25f-c5accb02ba10\"}."
+                                "en": "This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex. - {\"payments_group_size\":1,\"payments_group_timestamp\":\"2022-11-18T15:01:44Z\",\"payments_group_uuid\":\"96cfd2a4-0b06-4dea-b25f-c5accb02ba10\"}.",
+                                "es": "Este es un objeto clave-valor opcional en el que el cliente puede agregar información adicional que debe registrarse al finalizar la compra. Por ejemplo - {\"payments_group_size\":1,\"payments_group_timestamp\":\"2022-11-18T15:01:44Z\",\"payments_group_uuid\":\"96cfd2a4-0b06-4dea-b25f-c5accb02ba10\"}",
+                                "pt": "Este é um objeto opcional do tipo chave-valor  no qual o cliente  pode adicionar informações adicionais que precisam ser registradas no pagamento. Por exemplo - {\"payments_group_size\":1,\"payments_group_timestamp\":\"2022-11-18T15:01:44Z\",\"payments_group_uuid\":\"96cfd2a4-0b06-4dea-b25f-c5accb02ba10\"}."
                               }
                             },
                             "additional_info": {
                               "type": "object",
                               "description": {
-                                "eng": "At Payments level, it's only data, and we only forward that information to other APIs like Risk, to perform scoring and prevent fraud, or to Tax, to determine them for international payments.",
-                                "spa": "En el nivel de Pagos, son solo datos y únicamente reenviamos esa información a otras API, como Riesgo, para realizar puntajes y prevenir fraudes, o a Impuestos, para determinarlos para pagos internacionales.",
-                                "por": "No nível de Pagamentos, são apenas dados e apenas encaminhamos essas informações para outras APIS, como Risco, para realizar pontuação e prevenir fraudes, para Impostos para determiná-los para pagamentos internacionais."
+                                "en": "At Payments level, it's only data, and we only forward that information to other APIs like Risk, to perform scoring and prevent fraud, or to Tax, to determine them for international payments.",
+                                "es": "En el nivel de Pagos, son solo datos y únicamente reenviamos esa información a otras API, como Riesgo, para realizar puntajes y prevenir fraudes, o a Impuestos, para determinarlos para pagos internacionales.",
+                                "pt": "No nível de Pagamentos, são apenas dados e apenas encaminhamos essas informações para outras APIS, como Risco, para realizar pontuação e prevenir fraudes, para Impostos para determiná-los para pagamentos internacionais."
                               }
                             },
                             "external_reference": {
                               "type": "string",
                               "format": "nullable",
                               "description": {
-                                "eng": "It is a payment’s external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.",
-                                "spa": "Es una referencia de pago externa. Podría ser, por ejemplo, un código hash del Banco Central, funcionando como identificador del origen de la transacción.",
-                                "por": "É uma referência externa do pagamento. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação."
+                                "en": "It is a payment’s external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.",
+                                "es": "Es una referencia de pago externa. Podría ser, por ejemplo, un código hash del Banco Central, funcionando como identificador del origen de la transacción.",
+                                "pt": "É uma referência externa do pagamento. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação."
                               }
                             },
                             "transaction_amount": {
                               "type": "number",
                               "example": 250,
                               "description": {
-                                "eng": "Product cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.",
-                                "spa": "Costo del producto. Ejemplo - La venta de un producto por R$ 100,00 tendrá un transactionAmount = 100.",
-                                "por": "Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100."
+                                "en": "Product cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.",
+                                "es": "Costo del producto. Ejemplo - La venta de un producto por R$ 100,00 tendrá un transactionAmount = 100.",
+                                "pt": "Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100."
                               }
                             },
                             "transaction_amount_refunded": {
                               "type": "number",
                               "example": 0,
                               "description": {
-                                "eng": "Transaction amount refunded",
-                                "spa": "Monto reembolsado de transacción",
-                                "por": "Valor reembolsado da transação"
+                                "en": "Transaction amount refunded",
+                                "es": "Monto reembolsado de transacción",
+                                "pt": "Valor reembolsado da transação"
                               }
                             },
                             "coupon_amount": {
                               "type": "number",
                               "example": 0,
                               "description": {
-                                "eng": "It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.",
-                                "spa": "Es el valor del cupón de descuento. Por ejemplo - BRL 14,50. El tipo del atributo es BigDecimal.",
-                                "por": "É o valor do cupom de desconto. Ex - R$14,50. O tipo do atributo é BigDecimal."
+                                "en": "It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.",
+                                "es": "Es el valor del cupón de descuento. Por ejemplo - BRL 14,50. El tipo del atributo es BigDecimal.",
+                                "pt": "É o valor do cupom de desconto. Ex - R$14,50. O tipo do atributo é BigDecimal."
                               }
                             },
                             "differential_pricing_id": {
                               "type": "string",
                               "format": "nullable",
                               "description": {
-                                "eng": "Attribute that commonly contains an agreement on how much the user will be charged (generally, this field is more relevant for Marketplace payments). Pricing and fees are calculated based on this identifier.",
-                                "spa": "Atributo que comúnmente contiene un acuerdo sobre cuánto se le cobrará al usuario (generalmente, este campo es más relevante para los pagos de Marketplace). Los precios y las tarifas se calculan en función de este identificador.",
-                                "por": "Atributo que comumente contém um acordo de quanto vai ser cobrado do usuário (geralmente, este campo é mais relevante para pagamentos do Marketplace). A precificação e as taxas são calculadas com base nesse identificador."
+                                "en": "Attribute that commonly contains an agreement on how much the user will be charged (generally, this field is more relevant for Marketplace payments). Pricing and fees are calculated based on this identifier.",
+                                "es": "Atributo que comúnmente contiene un acuerdo sobre cuánto se le cobrará al usuario (generalmente, este campo es más relevante para los pagos de Marketplace). Los precios y las tarifas se calculan en función de este identificador.",
+                                "pt": "Atributo que comumente contém um acordo de quanto vai ser cobrado do usuário (geralmente, este campo é mais relevante para pagamentos do Marketplace). A precificação e as taxas são calculadas com base nesse identificador."
                               }
                             },
                             "deduction_schema": {
                               "type": "string",
                               "format": "nullable",
                               "description": {
-                                "eng": "Pricing Scheme applied by Mercado Pago. It is a field that represents the information of a type of financing (installment). Ex - “ahora12” is a schema that indicates that the payment is divided into 12 installments. In addition, financing may have an additional cost, such cost being included in that same answer and pointed out to whom this applies (payer/collector).",
-                                "spa": "Esquema de precios aplicado por Mercado Pago. Es un campo que representa la información de un tipo de financiamiento (cuota). Por ejemplo - “ahora12” es un esquema que indica que el pago se divide en 12 cuotas. Además, el financiamiento puede tener un costo adicional, siendo incluido dicho costo en esa misma respuesta y señalándose a quién aplica (payer/collector).",
-                                "por": "Esquema de Pricing aplicado pelo Mercado Pago. É um campo que representa as informações de um tipo de financiamento (parcelamento). Por exemplo - “ahora12” é um schema que indica que o pagamento está parcelado em 12 vezes. Em adição, o financiamento pode ter um custo adicional, sendo tal custo incluído nessa mesma resposta  e apontado a quem se aplica isso (payer/collector)."
+                                "en": "Pricing Scheme applied by Mercado Pago. It is a field that represents the information of a type of financing (installment). Ex - “ahora12” is a schema that indicates that the payment is divided into 12 installments. In addition, financing may have an additional cost, such cost being included in that same answer and pointed out to whom this applies (payer/collector).",
+                                "es": "Esquema de precios aplicado por Mercado Pago. Es un campo que representa la información de un tipo de financiamiento (cuota). Por ejemplo - “ahora12” es un esquema que indica que el pago se divide en 12 cuotas. Además, el financiamiento puede tener un costo adicional, siendo incluido dicho costo en esa misma respuesta y señalándose a quién aplica (payer/collector).",
+                                "pt": "Esquema de Pricing aplicado pelo Mercado Pago. É um campo que representa as informações de um tipo de financiamento (parcelamento). Por exemplo - “ahora12” é um schema que indica que o pagamento está parcelado em 12 vezes. Em adição, o financiamento pode ter um custo adicional, sendo tal custo incluído nessa mesma resposta  e apontado a quem se aplica isso (payer/collector)."
                               }
                             },
                             "transaction_details": {
@@ -5423,157 +5423,157 @@
                                   "type": "number",
                                   "example": 250,
                                   "description": {
-                                    "eng": "Net amount received",
-                                    "spa": "Monto neto recibido",
-                                    "por": "Valor líquido recebido"
+                                    "en": "Net amount received",
+                                    "es": "Monto neto recibido",
+                                    "pt": "Valor líquido recebido"
                                   }
                                 },
                                 "total_paid_amount": {
                                   "type": "number",
                                   "example": 250,
                                   "description": {
-                                    "eng": "Total amount charged to the payer",
-                                    "spa": "Monto total cobrado al payer",
-                                    "por": "Valor total cobrado ao pagador"
+                                    "en": "Total amount charged to the payer",
+                                    "es": "Monto total cobrado al payer",
+                                    "pt": "Valor total cobrado ao pagador"
                                   }
                                 },
                                 "overpaid_amount": {
                                   "type": "number",
                                   "example": 0,
                                   "description": {
-                                    "eng": "Overpaid amount",
-                                    "spa": "Monto pagado en exceso",
-                                    "por": "Valor pago a mais"
+                                    "en": "Overpaid amount",
+                                    "es": "Monto pagado en exceso",
+                                    "pt": "Valor pago a mais"
                                   }
                                 },
                                 "external_resource_url": {
                                   "type": "string",
                                   "format": "nullable",
                                   "description": {
-                                    "eng": "External resource url",
-                                    "spa": "URL de recurso externo",
-                                    "por": "URL de recurso externo"
+                                    "en": "External resource url",
+                                    "es": "URL de recurso externo",
+                                    "pt": "URL de recurso externo"
                                   }
                                 },
                                 "installment_amount": {
                                   "type": "number",
                                   "example": 250,
                                   "description": {
-                                    "eng": "Amount of the chosen financing fee.",
-                                    "spa": "Monto de la cuota de financiación elegida.",
-                                    "por": "Valor da taxa de financiamento escolhida."
+                                    "en": "Amount of the chosen financing fee.",
+                                    "es": "Monto de la cuota de financiación elegida.",
+                                    "pt": "Valor da taxa de financiamento escolhida."
                                   }
                                 },
                                 "financial_institution": {
                                   "type": "string",
                                   "format": "nullable",
                                   "description": {
-                                    "eng": "Financial institution",
-                                    "spa": "Institución financiera",
-                                    "por": "Instituição financeira"
+                                    "en": "Financial institution",
+                                    "es": "Institución financiera",
+                                    "pt": "Instituição financeira"
                                   }
                                 },
                                 "payment_method_reference_id": {
                                   "type": "string",
                                   "format": "nullable",
                                   "description": {
-                                    "eng": "Unique identifier of the payment method",
-                                    "spa": "Identificador único del método de pago",
-                                    "por": "Identificador único do meio de pagamento"
+                                    "en": "Unique identifier of the payment method",
+                                    "es": "Identificador único del método de pago",
+                                    "pt": "Identificador único do meio de pagamento"
                                   }
                                 },
                                 "payable_deferral_period": {
                                   "type": "string",
                                   "format": "nullable",
                                   "description": {
-                                    "eng": "Payment deferral period",
-                                    "spa": "Período de diferimiento del pago",
-                                    "por": "Período de diferimento de pagamento"
+                                    "en": "Payment deferral period",
+                                    "es": "Período de diferimiento del pago",
+                                    "pt": "Período de diferimento de pagamento"
                                   }
                                 },
                                 "acquirer_reference": {
                                   "type": "string",
                                   "format": "nullable",
                                   "description": {
-                                    "eng": "Acquirer reference",
-                                    "spa": "Referencia de adquirente",
-                                    "por": "Referência do adquirente"
+                                    "en": "Acquirer reference",
+                                    "es": "Referencia de adquirente",
+                                    "pt": "Referência do adquirente"
                                   }
                                 }
                               },
                               "description": {
-                                "eng": "Transaction details",
-                                "spa": "Detalles de la transacción",
-                                "por": "Detalhes da transação"
+                                "en": "Transaction details",
+                                "es": "Detalles de la transacción",
+                                "pt": "Detalhes da transação"
                               }
                             },
                             "captured": {
                               "type": "boolean",
                               "description": {
-                                "eng": "Indicates if the payment amount was captured or is pending capture.",
-                                "spa": "Indica si el monto del pago fue capturado o se encuentra pendiente de captura.",
-                                "por": "Indica se o valor do pagamento foi capturado ou está com captura pendente."
+                                "en": "Indicates if the payment amount was captured or is pending capture.",
+                                "es": "Indica si el monto del pago fue capturado o se encuentra pendiente de captura.",
+                                "pt": "Indica se o valor do pagamento foi capturado ou está com captura pendente."
                               }
                             },
                             "binary_mode": {
                               "type": "boolean",
                               "description": {
-                                "eng": "When set to TRUE, payments can only be approved or rejected. Otherwise they can also result in_process.",
-                                "spa": "Cuando se configura como TRUE los pagos sólo pueden resultar aprobados o rechazados. Caso contrario también pueden resultar in_process.",
-                                "por": "Quando definido como TRUE, os pagamentos só podem ser aprovados ou rejeitados. Caso contrário, eles também podem resultar in_process."
+                                "en": "When set to TRUE, payments can only be approved or rejected. Otherwise they can also result in_process.",
+                                "es": "Cuando se configura como TRUE los pagos sólo pueden resultar aprobados o rechazados. Caso contrario también pueden resultar in_process.",
+                                "pt": "Quando definido como TRUE, os pagamentos só podem ser aprovados ou rejeitados. Caso contrário, eles também podem resultar in_process."
                               }
                             },
                             "call_for_authorize_id": {
                               "type": "string",
                               "format": "nullable",
                               "description": {
-                                "eng": "Identifier that is provided to the issuing bank so that payments can be authorized.",
-                                "spa": "Identificador que se proporciona al banco emisor para que se pueda autorizar los pagos.",
-                                "por": "Identificador que é fornecido ao banco emissor para que os pagamentos possam ser autorizados."
+                                "en": "Identifier that is provided to the issuing bank so that payments can be authorized.",
+                                "es": "Identificador que se proporciona al banco emisor para que se pueda autorizar los pagos.",
+                                "pt": "Identificador que é fornecido ao banco emissor para que os pagamentos possam ser autorizados."
                               }
                             },
                             "statement_descriptor": {
                               "type": "string",
                               "format": "nullable",
                               "description": {
-                                "eng": "Description that the payment will appear with in the card statement (eg MERCADOPAGO)",
-                                "spa": "Descripción con la que aparecerá el pago en el resumen de tarjeta (ej. MERCADOPAGO)",
-                                "por": "Descrição com a qual o pagamento aparecerá no resumo do cartão (ex. MERCADOPAGO)"
+                                "en": "Description that the payment will appear with in the card statement (eg MERCADOPAGO)",
+                                "es": "Descripción con la que aparecerá el pago en el resumen de tarjeta (ej. MERCADOPAGO)",
+                                "pt": "Descrição com a qual o pagamento aparecerá no resumo do cartão (ex. MERCADOPAGO)"
                               }
                             },
                             "installments": {
                               "type": "number",
                               "example": 1,
                               "description": {
-                                "eng": "Number of installments selected.",
-                                "spa": "Cantidad seleccionada de cuotas",
-                                "por": "Número de parcelas selecionado"
+                                "en": "Number of installments selected.",
+                                "es": "Cantidad seleccionada de cuotas",
+                                "pt": "Número de parcelas selecionado"
                               }
                             },
                             "card": {
                               "type": "object",
                               "description": {
-                                "eng": "Card ID.",
-                                "spa": "Identificador de tarjeta",
-                                "por": "Identificador de cartão"
+                                "en": "Card ID.",
+                                "es": "Identificador de tarjeta",
+                                "pt": "Identificador de cartão"
                               }
                             },
                             "notification_url": {
                               "type": "string",
                               "format": "nullable",
                               "description": {
-                                "eng": "Notifications URL available to receive notifications of events related to Payment.",
-                                "spa": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago.",
-                                "por": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento."
+                                "en": "Notifications URL available to receive notifications of events related to Payment.",
+                                "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago.",
+                                "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento."
                               }
                             },
                             "processing_mode": {
                               "type": "string",
                               "format": "nullable",
                               "description": {
-                                "eng": "Processing mode. There are two types.",
-                                "spa": "Método de procesamiento de pagos. Hay dos tipos.",
-                                "por": "Modo de processamento do pagamento. Existem dois tipos."
+                                "en": "Processing mode. There are two types.",
+                                "es": "Método de procesamiento de pagos. Hay dos tipos.",
+                                "pt": "Modo de processamento do pagamento. Existem dois tipos."
                               },
                               "enum": [
                                 "Aggregator -- The merchant will use the Mercado Pago merchant codes and take advantage of the financial advantages we offer.",
@@ -5584,27 +5584,27 @@
                               "type": "string",
                               "format": "nullable",
                               "description": {
-                                "eng": "Merchant store code identifier. Applies only to the gateway model (since the delivery of money to the merchant does not go through the Mercado Pago system).",
-                                "spa": "Identificador del código de la tienda del merchant. Aplica solo para el modelo de gateway (ya que la entrega de dinero al comercio no pasa por el sistema de Mercado Pago).",
-                                "por": "Identificador do código da loja comerciante. Aplica-se somente ao modelo gateway (porque a entrega de dinheiro ao comerciante não passa pelo sistema do Mercado Pago)."
+                                "en": "Merchant store code identifier. Applies only to the gateway model (since the delivery of money to the merchant does not go through the Mercado Pago system).",
+                                "es": "Identificador del código de la tienda del merchant. Aplica solo para el modelo de gateway (ya que la entrega de dinero al comercio no pasa por el sistema de Mercado Pago).",
+                                "pt": "Identificador do código da loja comerciante. Aplica-se somente ao modelo gateway (porque a entrega de dinheiro ao comerciante não passa pelo sistema do Mercado Pago)."
                               }
                             },
                             "acquirer": {
                               "type": "string",
                               "format": "nullable",
                               "description": {
-                                "eng": "Acquirer.",
-                                "spa": "Adquirente.",
-                                "por": "Adquirente."
+                                "en": "Acquirer.",
+                                "es": "Adquirente.",
+                                "pt": "Adquirente."
                               }
                             },
                             "merchant_number": {
                               "type": "string",
                               "format": "nullable",
                               "description": {
-                                "eng": "Merchant number (Applies to gateway model).",
-                                "spa": "Número de comercio (Aplica para modelo gateway).",
-                                "por": "Número do estabelecimento (aplica-se ao modelo de gateway)."
+                                "en": "Merchant number (Applies to gateway model).",
+                                "es": "Número de comercio (Aplica para modelo gateway).",
+                                "pt": "Número do estabelecimento (aplica-se ao modelo de gateway)."
                               }
                             }
                           }
@@ -6074,9 +6074,9 @@
       "operation_type": {
         "type": "string",
         "description": {
-          "eng": "It is the type of payment. The available types are as follows.",
-          "spa": "Es el tipo de pago. Los tipos disponibles son los siguientes.",
-          "por": "É o tipo de pagamento. Os tipos disponíveis são os seguintes."
+          "en": "It is the type of payment. The available types are as follows.",
+          "es": "Es el tipo de pago. Los tipos disponibles son los siguientes.",
+          "pt": "É o tipo de pagamento. Os tipos disponíveis são os seguintes."
         },
         "enum": [
           "investment -- When money is put into an investment, such as CDB, in the Mercado Pago application;",
@@ -6093,9 +6093,9 @@
       "entity_type": {
         "type": "string",
         "description": {
-          "eng": "Entity type of the payer (only for bank transfers).",
-          "spa": "Tipo de entidad del pagador (sólo para transferencias bancarias)",
-          "por": "Tipo de entidade do pagador (apenas para transferências bancárias)"
+          "en": "Entity type of the payer (only for bank transfers).",
+          "es": "Tipo de entidad del pagador (sólo para transferencias bancarias)",
+          "pt": "Tipo de entidade do pagador (apenas para transferências bancárias)"
         },
         "example": "individual",
         "enum": [
@@ -6106,9 +6106,9 @@
       "payer_type": {
         "type": "string",
         "description": {
-          "eng": "Identification type of the associated payer (mandatory if the Payer is a Customer).",
-          "spa": "Tipo de identificación del pagador asociado (requerido si el pagador es un cliente)",
-          "por": "Tipo de identificação do pagador associado (se necessário o pagador é um cliente)"
+          "en": "Identification type of the associated payer (mandatory if the Payer is a Customer).",
+          "es": "Tipo de identificación del pagador asociado (requerido si el pagador es un cliente)",
+          "pt": "Tipo de identificação do pagador associado (se necessário o pagador é um cliente)"
         },
         "example": "customer",
         "enum": [
@@ -6119,9 +6119,9 @@
       "currency_id": {
         "type": "string",
         "description": {
-          "eng": "Identifier of the currency used in the payment. We currently have the following options.",
-          "spa": "Identificador de la moneda utilizada en el pago. Actualmente tenemos las siguientes opciones.",
-          "por": "Identificador da moeda utilizada no pagamento. Atualmente, possuímos as opções a seguir."
+          "en": "Identifier of the currency used in the payment. We currently have the following options.",
+          "es": "Identificador de la moneda utilizada en el pago. Actualmente tenemos las siguientes opciones.",
+          "pt": "Identificador da moeda utilizada no pagamento. Atualmente, possuímos as opções a seguir."
         },
         "example": "BRL",
         "enum": [
@@ -6146,9 +6146,9 @@
       "fee_details_type": {
         "type": "string",
         "description": {
-          "eng": "Fee detail.",
-          "spa": "Detalle de comisión",
-          "por": "Detalhe de comissão"
+          "en": "Fee detail.",
+          "es": "Detalle de comisión",
+          "pt": "Detalhe de comissão"
         },
         "example": "coupon_fee",
         "enum": [
@@ -6163,9 +6163,9 @@
       "fee_payer": {
         "type": "string",
         "description": {
-          "eng": "Who absorbs the cost.",
-          "spa": "Indica quién absorve el costo de la comisión",
-          "por": "Quem absorve o custo da comissão"
+          "en": "Who absorbs the cost.",
+          "es": "Indica quién absorve el costo de la comisión",
+          "pt": "Quem absorve o custo da comissão"
         },
         "example": "payer",
         "enum": [
@@ -6177,9 +6177,9 @@
         "type": "string",
         "example": "approved",
         "description": {
-          "eng": "It is the payment’s current state. It can be of the following types.",
-          "spa": "Es el estado actual del pago. Puede ser de los siguientes tipos.",
-          "por": "É o estado atual do pagamento. Podem ser ser dos seguintes tipos."
+          "en": "It is the payment’s current state. It can be of the following types.",
+          "es": "Es el estado actual del pago. Puede ser de los siguientes tipos.",
+          "pt": "É o estado atual do pagamento. Podem ser ser dos seguintes tipos."
         },
         "enum": [
           "pending -- The user has not concluded the payment process (for example, by generating a payment by boleto, it will be concluded at the moment in which the user makes the payment in the selected place).",
@@ -6196,9 +6196,9 @@
       "payment_type_id": {
         "type": "string",
         "description": {
-          "eng": "It is the type of payment method (card, bank transfer, boleto bancário, ATM, etc.). They can be of the following types.",
-          "spa": "Es el tipo de método de pago (tarjeta, transferencia bancaria, ticket, ATM, etc.). Puede ser de los siguientes tipos.",
-          "por": "É o tipo da forma de pagamento (cartão, transferência bancária, boleto, caixa eletrônico, etc). Podem ser dos seguintes tipos."
+          "en": "It is the type of payment method (card, bank transfer, boleto bancário, ATM, etc.). They can be of the following types.",
+          "es": "Es el tipo de método de pago (tarjeta, transferencia bancaria, ticket, ATM, etc.). Puede ser de los siguientes tipos.",
+          "pt": "É o tipo da forma de pagamento (cartão, transferência bancária, boleto, caixa eletrônico, etc). Podem ser dos seguintes tipos."
         },
         "example": "credit_card",
         "enum": [
@@ -6218,9 +6218,9 @@
       "refund_source_type": {
         "type": "string",
         "description": {
-          "eng": "Type of user who issued the refund.",
-          "spa": "Tipo de usuario que hizo el reembolso",
-          "por": "Tipo de usuário que fez o reembolso"
+          "en": "Type of user who issued the refund.",
+          "es": "Tipo de usuario que hizo el reembolso",
+          "pt": "Tipo de usuário que fez o reembolso"
         },
         "example": "collector",
         "enum": [
@@ -6233,9 +6233,9 @@
       "barcode_type": {
         "type": "String",
         "description": {
-          "eng": "Encoding type.",
-          "spa": "Tipo de encoding",
-          "por": "Tipo de encoding"
+          "en": "Encoding type.",
+          "es": "Tipo de encoding",
+          "pt": "Tipo de encoding"
         },
         "enum": [
           "UCC/EAN 128 -- Encodes data using the Code 128 symbology.",

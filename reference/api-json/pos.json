@@ -780,7 +780,7 @@
             "description": {
               "en": "POS Id",
               "es": "POS Id",
-              "por": "POS Id"
+              "pt": "POS Id"
             },
             "required": true,
             "schema": {
@@ -974,7 +974,7 @@
             "description": {
               "en": "POS Id",
               "es": "POS Id",
-              "por": "POS Id"
+              "pt": "POS Id"
             },
             "required": true,
             "schema": {
@@ -994,7 +994,7 @@
                     "description": {
                       "en": "Name of the POS.",
                       "es": "Nombre de la caja",
-                      "por": "Nome da caixa"
+                      "pt": "Nome da caixa"
                     },
                     "example": "First POS"
                   },
@@ -1003,7 +1003,7 @@
                     "description": {
                       "en": "Define if the customer can insert the amount to be paid.",
                       "es": "Determina si el cliente puede insertar el monto a pagar",
-                      "por": "Determine se o cliente pode inserir o valor a ser pago"
+                      "pt": "Determine se o cliente pode inserir o valor a ser pago"
                     },
                     "example": false
                   },
@@ -1015,7 +1015,7 @@
                     "description": {
                       "en": "Store identifier to which the point of sale belongs.",
                       "es": "Identificador de la sucursal a la que pertenece el Punto de Venta",
-                      "por": "Identificador da loja à qual o caixa pertence"
+                      "pt": "Identificador da loja à qual o caixa pertence"
                     },
                     "example": 1234567
                   },
@@ -1472,7 +1472,7 @@
             "description": {
               "en": "POS Id",
               "es": "POS Id",
-              "por": "POS Id"
+              "pt": "POS Id"
             },
             "required": true,
             "schema": {
@@ -1557,7 +1557,7 @@
         "description": {
           "en": "MCC code that indicates the category of the Point of Sale. If not specified, it remains as a generic category.",
           "es": "Código MCC que indica el rubro del Punto de Venta. Si no se especifica, queda como categoría genérica",
-          "por": "Código MCC que indica a categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica"
+          "pt": "Código MCC que indica a categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica"
         },
         "enum": [
           "Gastronomy --",

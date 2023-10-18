@@ -16,9 +16,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "eng": "Store's Id",
-              "spa": "Store's Id",
-              "por": "Store's Id"
+              "en": "Store's Id",
+              "es": "Store's Id",
+              "pt": "Store's Id"
             },
             "required": true,
             "schema": {
@@ -259,9 +259,9 @@
             "name": "user_id",
             "in": "path",
             "description": {
-              "eng": "User Id",
-              "spa": "User Id",
-              "por": "User Id"
+              "en": "User Id",
+              "es": "User Id",
+              "pt": "User Id"
             },
             "required": true,
             "schema": {
@@ -279,9 +279,9 @@
                   "name": {
                     "type": "string",
                     "description": {
-                      "eng": "Store name.",
-                      "spa": "Nombre de la Sucursal",
-                      "por": "Nome da loja"
+                      "en": "Store name.",
+                      "es": "Nombre de la Sucursal",
+                      "pt": "Nome da loja"
                     },
                     "example": "Sucursal Instore"
                   },
@@ -332,80 +332,80 @@
                   "external_id": {
                     "type": "string",
                     "description": {
-                      "eng": "Unique identifier of the store defined by integrator system.",
-                      "spa": "Identificador único de la Sucursal definido por el integrador",
-                      "por": "Identificador único da loja definido pelo sistema integrador"
+                      "en": "Unique identifier of the store defined by integrator system.",
+                      "es": "Identificador único de la Sucursal definido por el integrador",
+                      "pt": "Identificador único da loja definido pelo sistema integrador"
                     },
                     "example": "SUC001"
                   },
                   "location": {
                     "type": "object",
                     "description": {
-                      "eng": "Store location.",
-                      "spa": "Ubicación de la Sucursal",
-                      "por": "Localização da Loja"
+                      "en": "Store location.",
+                      "es": "Ubicación de la Sucursal",
+                      "pt": "Localização da Loja"
                     },
                     "properties": {
                       "street_number": {
                         "type": "string",
                         "description": {
-                          "eng": "Street number.",
-                          "spa": "Número",
-                          "por": "O Número"
+                          "en": "Street number.",
+                          "es": "Número",
+                          "pt": "O Número"
                         },
                         "example": 3039
                       },
                       "street_name": {
                         "type": "string",
                         "description": {
-                          "eng": "Street name.",
-                          "spa": "Calle",
-                          "por": "Rua"
+                          "en": "Street name.",
+                          "es": "Calle",
+                          "pt": "Rua"
                         },
                         "example": "Caseros"
                       },
                       "city_name": {
                         "type": "string",
                         "description": {
-                          "eng": "City.",
-                          "spa": "Ciudad",
-                          "por": "Cidade"
+                          "en": "City.",
+                          "es": "Ciudad",
+                          "pt": "Cidade"
                         },
                         "example": "Belgrano"
                       },
                       "state_name": {
                         "type": "string",
                         "description": {
-                          "eng": "State.",
-                          "spa": "Provincia",
-                          "por": "Província"
+                          "en": "State.",
+                          "es": "Provincia",
+                          "pt": "Província"
                         },
                         "example": "Capital Federal"
                       },
                       "latitude": {
                         "type": "number",
                         "description": {
-                          "eng": "Latitude.",
-                          "spa": "Latitud",
-                          "por": "Latitude"
+                          "en": "Latitude.",
+                          "es": "Latitud",
+                          "pt": "Latitude"
                         },
                         "example": -32.8897322
                       },
                       "longitude": {
                         "type": "number",
                         "description": {
-                          "eng": "Longitude.",
-                          "spa": "Longitud",
-                          "por": "Longitude"
+                          "en": "Longitude.",
+                          "es": "Longitud",
+                          "pt": "Longitude"
                         },
                         "example": -68.8443275
                       },
                       "reference": {
                         "type": "string",
                         "description": {
-                          "eng": "Reference.",
-                          "spa": "Referencia",
-                          "por": "Referência"
+                          "en": "Reference.",
+                          "es": "Referencia",
+                          "pt": "Referência"
                         },
                         "example": "3er Piso"
                       }
@@ -736,9 +736,9 @@
             "name": "user_id",
             "in": "path",
             "description": {
-              "eng": "User Id",
-              "spa": "User Id",
-              "por": "User Id"
+              "en": "User Id",
+              "es": "User Id",
+              "pt": "User Id"
             },
             "required": true,
             "schema": {
@@ -750,9 +750,9 @@
             "name": "external_id",
             "in": "query",
             "description": {
-              "eng": "Unique identifier of the store defined by integrator system",
-              "spa": "Unique identifier of the store defined by integrator system",
-              "por": "Unique identifier of the store defined by integrator system"
+              "en": "Unique identifier of the store defined by integrator system",
+              "es": "Unique identifier of the store defined by integrator system",
+              "pt": "Unique identifier of the store defined by integrator system"
             },
             "required": false,
             "schema": {
@@ -1018,9 +1018,9 @@
             "name": "user_id",
             "in": "path",
             "description": {
-              "eng": "User Id",
-              "spa": "User Id",
-              "por": "User Id"
+              "en": "User Id",
+              "es": "User Id",
+              "pt": "User Id"
             },
             "required": true,
             "schema": {
@@ -1032,9 +1032,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "eng": "Store's Id",
-              "spa": "Store's Id",
-              "por": "Store's Id"
+              "en": "Store's Id",
+              "es": "Store's Id",
+              "pt": "Store's Id"
             },
             "required": true,
             "schema": {
@@ -1052,9 +1052,9 @@
                   "name": {
                     "type": "string",
                     "description": {
-                      "eng": "Store name.",
-                      "spa": "Nombre de la Sucursal",
-                      "por": "Nome da loja"
+                      "en": "Store name.",
+                      "es": "Nombre de la Sucursal",
+                      "pt": "Nome da loja"
                     },
                     "example": "Sucursal Instore 2"
                   },
@@ -1105,80 +1105,80 @@
                   "external_id": {
                     "type": "string",
                     "description": {
-                      "eng": "Unique identifier of the store defined by integrator system.",
-                      "spa": "Identificador único de la Sucursal definido por el integrador",
-                      "por": "Identificador único da loja definido pelo sistema integrador"
+                      "en": "Unique identifier of the store defined by integrator system.",
+                      "es": "Identificador único de la Sucursal definido por el integrador",
+                      "pt": "Identificador único da loja definido pelo sistema integrador"
                     },
                     "example": "SUC002"
                   },
                   "location": {
                     "type": "object",
                     "description": {
-                      "eng": "Store location.",
-                      "spa": "Ubicación de la Sucursal",
-                      "por": "Localização da Loja"
+                      "en": "Store location.",
+                      "es": "Ubicación de la Sucursal",
+                      "pt": "Localização da Loja"
                     },
                     "properties": {
                       "street_number": {
                         "type": "string",
                         "description": {
-                          "eng": "Street number.",
-                          "spa": "Número",
-                          "por": "O Número"
+                          "en": "Street number.",
+                          "es": "Número",
+                          "pt": "O Número"
                         },
                         "example": 3040
                       },
                       "street_name": {
                         "type": "string",
                         "description": {
-                          "eng": "Street name.",
-                          "spa": "Calle",
-                          "por": "Rua"
+                          "en": "Street name.",
+                          "es": "Calle",
+                          "pt": "Rua"
                         },
                         "example": "Caseros"
                       },
                       "city_name": {
                         "type": "string",
                         "description": {
-                          "eng": "City.",
-                          "spa": "Ciudad",
-                          "por": "Cidade"
+                          "en": "City.",
+                          "es": "Ciudad",
+                          "pt": "Cidade"
                         },
                         "example": "Belgrano"
                       },
                       "state_name": {
                         "type": "string",
                         "description": {
-                          "eng": "State.",
-                          "spa": "Provincia",
-                          "por": "Província"
+                          "en": "State.",
+                          "es": "Provincia",
+                          "pt": "Província"
                         },
                         "example": "Capital Federal"
                       },
                       "latitude": {
                         "type": "number",
                         "description": {
-                          "eng": "Latitude.",
-                          "spa": "Latitud",
-                          "por": "Latitude"
+                          "en": "Latitude.",
+                          "es": "Latitud",
+                          "pt": "Latitude"
                         },
                         "example": -32.8897322
                       },
                       "longitude": {
                         "type": "number",
                         "description": {
-                          "eng": "Longitude.",
-                          "spa": "Longitud",
-                          "por": "Longitude"
+                          "en": "Longitude.",
+                          "es": "Longitud",
+                          "pt": "Longitude"
                         },
                         "example": -68.8443275
                       },
                       "reference": {
                         "type": "string",
                         "description": {
-                          "eng": "Reference.",
-                          "spa": "Referencia",
-                          "por": "Referência"
+                          "en": "Reference.",
+                          "es": "Referencia",
+                          "pt": "Referência"
                         },
                         "example": "3er Piso"
                       }
@@ -1488,9 +1488,9 @@
             "name": "user_id",
             "in": "path",
             "description": {
-              "eng": "User Id",
-              "spa": "User Id",
-              "por": "User Id"
+              "en": "User Id",
+              "es": "User Id",
+              "pt": "User Id"
             },
             "required": true,
             "schema": {
@@ -1502,9 +1502,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "eng": "Store's Id",
-              "spa": "Store's Id",
-              "por": "Store's Id"
+              "en": "Store's Id",
+              "es": "Store's Id",
+              "pt": "Store's Id"
             },
             "required": true,
             "schema": {
