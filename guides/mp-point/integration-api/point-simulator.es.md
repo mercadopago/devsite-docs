@@ -19,7 +19,7 @@ Para utilizar el simulador, sigue los pasos a continuación.
 
 ## 1. Generar el ambiente de prueba
 
-Para comenzar a probar integraciones y flujos de pago con el Simulador Point, deberás generar [usuarios de prueba](developers/es/docs/mp-point/additional-content/your-integrations/test/accounts) y acceder a sus credenciales de producción. 
+Para comenzar a probar integraciones y flujos de pago con el Simulador Point, deberás generar [usuarios de prueba](/developers/es/docs/mp-point/additional-content/your-integrations/test/accounts) y acceder a sus credenciales de producción. 
 
 Si deseas, puedes también crear usuarios de prueba usando el siguiente comando:
 

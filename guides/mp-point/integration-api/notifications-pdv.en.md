@@ -306,7 +306,6 @@ curl --location --request GET 'https://api.mercadopago.com/point/integration-api
 --header 'Authorization: Bearer ${ACCESS_TOKEN}'
 ```
 
-------------
 
 The response will be similar to the following:
 
@@ -321,5 +320,3 @@ The response will be similar to the following:
   ]
 }
 ```
-
-------------

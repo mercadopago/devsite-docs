@@ -17,7 +17,7 @@ To learn how to use the simulator, follow the steps below.
 
 ## 1. Generate the test environment
 
-To start testing integrations and payment flows with the Point Simulator, you will need to generate [test users](developers/en/docs/mp-point/additional-content/your-integrations/test/accounts) and access their production credentials.
+To start testing integrations and payment flows with the Point Simulator, you will need to generate [test users](/developers/en/docs/mp-point/additional-content/your-integrations/test/accounts) and access their production credentials.
 
 If you prefer, you can also create test users using the following command:
 

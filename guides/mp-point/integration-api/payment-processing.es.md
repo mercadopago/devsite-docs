@@ -205,7 +205,7 @@ Luego, continúa con los pasos que se muestran en la pantalla para completar el 
 >
 > Importante
 >
-> Recomendamos evaluar la [calidad de tu integración](/developers/es/docs/checkout-api/additional-content/integration-quality) para validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago que pueden mejorar tu tasa de aprobación de pagos. 
+> Recomendamos evaluar la [calidad de tu integración](/developers/es/docs/mp-point/how-tos/integration-quality) para validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago que pueden mejorar tu tasa de aprobación de pagos. 
 
 ## Consultar el estado de una intención de pago
 
@@ -217,7 +217,7 @@ Recuerda que `id` y estado de la **intención de pago** son diferentes a `id` y 
 >
 > Importante
 >
-> El mecanismo principal recomendado para conocer el resultado de una intención de pago es la suscripción a las [notificaciones de integraciones](/developers/es/docs/mp-point/how-tos/integration-quality). Aconsejamos utilizar el endpoint aquí presente sólo como mecanismo alternativo.
+> El mecanismo principal recomendado para conocer el resultado de una intención de pago es la suscripción a las [notificaciones de integraciones](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/notifications). Aconsejamos utilizar el endpoint aquí presente sólo como mecanismo alternativo.
 
 ``` curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/payment-intents/:paymentIntentID' \
