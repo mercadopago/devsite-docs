@@ -400,7 +400,11 @@
           {
             "name": "external_store_id",
             "in": "path",
-            "description": "Custom Store ID associated to the order.",
+            "description": {
+              "es": "Custom Store ID associated to the order.",
+              "pt": "Custom Store ID associated to the order.",
+              "en": "Custom Store ID associated to the order."
+            },
             "required": true,
             "schema": {
               "type": "string",
@@ -410,7 +414,11 @@
           {
             "name": "external_pos_id",
             "in": "path",
-            "description": "Custom POS ID associated to the order.",
+            "description": {
+              "es": "Custom POS ID associated to the order.",
+              "pt": "Custom POS ID associated to the order.",
+              "en": "Custom POS ID associated to the order."
+            },
             "required": true,
             "schema": {
               "type": "string",
@@ -426,7 +434,11 @@
                 "properties": {
                   "external_reference": {
                     "type": "string",
-                    "description": "Custom order ID you can synchronize with your sale system.",
+                    "description": {
+                      "es": "Custom order ID you can synchronize with your sale system.",
+                      "pt": "Custom order ID you can synchronize with your sale system.",
+                      "en": "Custom order ID you can synchronize with your sale system."
+                    },
                     "example": 12345
                   },
                   "title": {
@@ -448,12 +460,20 @@
                   },
                   "notification_url": {
                     "type": "string",
-                    "description": "URL where you'd like to receive a payment or merchant_order notification.",
+                    "description": {
+                      "es": "URL where you'd like to receive a payment or merchant_order notification.",
+                      "pt": "URL where you'd like to receive a payment or merchant_order notification.",
+                      "en": "URL where you'd like to receive a payment or merchant_order notification."
+                    },
                     "example": "www.yourserver.com"
                   },
                   "expiration_date": {
                     "type": "string",
-                    "description": "Expiration date with format \"2020-08-22T16:34:56.559-04:00\""
+                    "description": {
+                      "es": "Expiration date with format \"2020-08-22T16:34:56.559-04:00\"",
+                      "pt": "Expiration date with format \"2020-08-22T16:34:56.559-04:00\"",
+                      "en": "Expiration date with format \"2020-08-22T16:34:56.559-04:00\""
+                    }
                   },
                   "total_amount": {
                     "type": "number",
@@ -564,7 +584,11 @@
                   },
                   "cash_out": {
                     "type": "object",
-                    "description": "Cash withdrawal (Commercial contact required)",
+                    "description": {
+                      "es": "Cash withdrawal (Commercial contact required)",
+                      "pt": "Cash withdrawal (Commercial contact required)",
+                      "en": "Cash withdrawal (Commercial contact required)"
+                    },
                     "properties": {
                       "amount": {
                         "type": "number",

@@ -97,7 +97,11 @@
                   "site_id": {
                     "type": "string",
                     "example": "MLA",
-                    "description": "Site ID.",
+                    "description": {
+                      "es": "Site ID.",
+                      "pt": "Site ID.",
+                      "en": "Site ID."
+                    },
                     "enum": [
                       {
                         "title": "MLA",
@@ -929,7 +933,11 @@
           {
             "name": "date_created_from",
             "in": "query",
-            "description": "Order´s creation date (start search)",
+            "description": {
+              "es": "Order´s creation date (start search)",
+              "pt": "Order´s creation date (start search)",
+              "en": "Order´s creation date (start search)"
+            },
             "required": false,
             "schema": {
               "type": "string",
@@ -939,7 +947,11 @@
           {
             "name": "date_created_to",
             "in": "query",
-            "description": "Order´s creation date (end search)",
+            "description": {
+              "es": "Order´s creation date (end search)",
+              "pt": "Order´s creation date (end search)",
+              "en": "Order´s creation date (end search)"
+            },
             "required": false,
             "schema": {
               "type": "string",
@@ -949,7 +961,11 @@
           {
             "name": "last_updated_from",
             "in": "query",
-            "description": "Order´s last update date (start search)",
+            "description": {
+              "es": "Order´s last update date (start search)",
+              "pt": "Order´s last update date (start search)",
+              "en": "Order´s last update date (start search)"
+            },
             "required": false,
             "schema": {
               "type": "string",
@@ -959,7 +975,11 @@
           {
             "name": "last_updated_to",
             "in": "query",
-            "description": "Order´s last update date (end search)",
+            "description": {
+              "es": "Order´s last update date (end search)",
+              "pt": "Order´s last update date (end search)",
+              "en": "Order´s last update date (end search)"
+            },
             "required": false,
             "schema": {
               "type": "string",
@@ -1029,7 +1049,11 @@
                           "id": {
                             "type": "number",
                             "example": 9999999999,
-                            "description": "id"
+                            "description": {
+                              "es": "id",
+                              "pt": "id",
+                              "en": "id"
+                            }
                           },
                           "status": {
                             "$ref": "#/components/schemas/status"
@@ -1758,7 +1782,11 @@
                                         "shipping": {
                                           "type": "number",
                                           "example": 72,
-                                          "description": "Shipping time"
+                                          "description": {
+                                            "es": "Shipping time",
+                                            "pt": "Shipping time",
+                                            "en": "Shipping time"
+                                          }
                                         }
                                       },
                                       "description": {
@@ -1876,7 +1904,11 @@
                           "site_id": {
                             "type": "string",
                             "example": "MLA",
-                            "description": "Site ID.",
+                            "description": {
+                              "es": "Site ID.",
+                              "pt": "Site ID.",
+                              "en": "Site ID."
+                            },
                             "enum": [
                               {
                                 "title": "MLA",
@@ -3517,7 +3549,11 @@
                   "site_id": {
                     "type": "string",
                     "example": "MLA",
-                    "description": "Site ID.",
+                    "description": {
+                      "es": "Site ID.",
+                      "pt": "Site ID.",
+                      "en": "Site ID."
+                    },
                     "enum": [
                       {
                         "title": "MLA",

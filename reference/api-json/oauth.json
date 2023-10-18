@@ -95,7 +95,11 @@
                   },
                   "test_token": {
                     "type": "string",
-                    "description": "Added with value = true only when you want to generate credentials for testing."
+                    "description": {
+                      "es": "Added with value = true only when you want to generate credentials for testing.",
+                      "pt": "Added with value = true only when you want to generate credentials for testing.",
+                      "en": "Added with value = true only when you want to generate credentials for testing."
+                    }
                   }
                 }
               }

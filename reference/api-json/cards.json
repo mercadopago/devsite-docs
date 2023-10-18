@@ -748,7 +748,11 @@
                 "properties": {
                   "token": {
                     "type": "string",
-                    "description": "Card Token",
+                    "description": {
+                      "es": "Card Token",
+                      "pt": "Card Token",
+                      "en": "Card Token"
+                    },
                     "example": "9b2d63e00d66a8c721607214ceda233a"
                   }
                 }
@@ -2202,7 +2206,11 @@
           {
             "name": "cardholder.name",
             "in": "requestBody",
-            "description": "Card's name.",
+            "description": {
+              "es": "Card's name.",
+              "pt": "Card's name.",
+              "en": "Card's name."
+            },
             "required": false,
             "schema": {
               "type": "string",
@@ -2212,7 +2220,11 @@
           {
             "name": "cardholder.identification",
             "in": "requestBody",
-            "description": "Card's owner identification",
+            "description": {
+              "es": "Card's owner identification",
+              "pt": "Card's owner identification",
+              "en": "Card's owner identification"
+            },
             "required": false,
             "schema": {
               "type": "string",
@@ -2228,7 +2240,11 @@
                 "properties": {
                   "token": {
                     "type": "string",
-                    "description": "Card Token",
+                    "description": {
+                      "es": "Card Token",
+                      "pt": "Card Token",
+                      "en": "Card Token"
+                    },
                     "example": "9b2d63e00d66a8c721607214ceda233a"
                   }
                 }

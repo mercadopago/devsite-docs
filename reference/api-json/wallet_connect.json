@@ -320,7 +320,11 @@
           "content": {
             "application/json": {
               "schema": {
-                "description": "It's a reference of the authorization that the user gave to the seller",
+                "description": {
+                  "es": "It's a reference of the authorization that the user gave to the seller",
+                  "pt": "It's a reference of the authorization that the user gave to the seller",
+                  "en": "It's a reference of the authorization that the user gave to the seller"
+                },
                 "type": "object",
                 "properties": {
                   "code": {
@@ -1700,7 +1704,11 @@
           {
             "name": "advanced_payment_id",
             "in": "path",
-            "description": "Advanced payment identifier",
+            "description": {
+              "es": "Advanced payment identifier",
+              "pt": "Advanced payment identifier",
+              "en": "Advanced payment identifier"
+            },
             "required": true,
             "schema": {
               "type": "number",

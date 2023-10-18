@@ -2897,7 +2897,11 @@
                   "status": {
                     "type": "string",
                     "example": "pending",
-                    "description": "Status",
+                    "description": {
+                      "es": "Status",
+                      "pt": "Status",
+                      "en": "Status"
+                    },
                     "enum": [
                       {
                         "title": "pending",
@@ -3726,7 +3730,11 @@
                 "schema": {
                   "type": "string"
                 },
-                "description": "the format is `attachment; filename=\"preapprovals.zip\"`"
+                "description": {
+                  "es": "the format is `attachment; filename=\"preapprovals.zip\"`",
+                  "pt": "the format is `attachment; filename=\"preapprovals.zip\"`",
+                  "en": "the format is `attachment; filename=\"preapprovals.zip\"`"
+                }
               }
             },
             "content": {
@@ -3775,7 +3783,11 @@
                     "status": {
                       "type": "string",
                       "example": "pending",
-                      "description": "Status",
+                      "description": {
+                        "es": "Status",
+                        "pt": "Status",
+                        "en": "Status"
+                      },
                       "enum": [
                         {
                           "title": "pending",
@@ -3992,7 +4004,11 @@
                     },
                     "has_billing_day": {
                       "type": "boolean",
-                      "description": "Indicates if the subscription has a billing day or not.",
+                      "description": {
+                        "es": "Indicates if the subscription has a billing day or not.",
+                        "pt": "Indicates if the subscription has a billing day or not.",
+                        "en": "Indicates if the subscription has a billing day or not."
+                      },
                       "example": false
                     },
                     "billing_day": {
@@ -4078,7 +4094,11 @@
                     },
                     "semaphore": {
                       "type": "number",
-                      "description": "Preapproval collection status summary.",
+                      "description": {
+                        "es": "Preapproval collection status summary.",
+                        "pt": "Preapproval collection status summary.",
+                        "en": "Preapproval collection status summary."
+                      },
                       "example": "green",
                       "enum": [
                         {
@@ -4117,7 +4137,11 @@
                     },
                     "last_charge_date": {
                       "type": "number",
-                      "description": "Date of last time a payment of this subscription.was made.",
+                      "description": {
+                        "es": "Date of last time a payment of this subscription.was made.",
+                        "pt": "Date of last time a payment of this subscription.was made.",
+                        "en": "Date of last time a payment of this subscription.was made."
+                      },
                       "example": "24-2-2021"
                     },
                     "last_charge_amount": {
@@ -4158,7 +4182,11 @@
                     },
                     "version": {
                       "type": "number",
-                      "description": "How many times preapproval was modified.",
+                      "description": {
+                        "es": "How many times preapproval was modified.",
+                        "pt": "How many times preapproval was modified.",
+                        "en": "How many times preapproval was modified."
+                      },
                       "example": 4
                     },
                     "payer_first_name": {
@@ -5128,7 +5156,11 @@
                           },
                           "payment": {
                             "type": "object",
-                            "description": "Payment status related to the authorized payment.",
+                            "description": {
+                              "es": "Payment status related to the authorized payment.",
+                              "pt": "Payment status related to the authorized payment.",
+                              "en": "Payment status related to the authorized payment."
+                            },
                             "properties": {
                               "id": {
                                 "type": "number",
@@ -7056,7 +7088,11 @@
                                   },
                                   "first_invoice_offset": {
                                     "type": "number",
-                                    "description": "Number of days to collect the first invoice.",
+                                    "description": {
+                                      "es": "Number of days to collect the first invoice.",
+                                      "pt": "Number of days to collect the first invoice.",
+                                      "en": "Number of days to collect the first invoice."
+                                    },
                                     "example": 7
                                   }
                                 }
@@ -7682,7 +7718,11 @@
                       },
                       "items": {
                         "type": "object",
-                        "description": "Subscription result item.",
+                        "description": {
+                          "es": "Subscription result item.",
+                          "pt": "Subscription result item.",
+                          "en": "Subscription result item."
+                        },
                         "properties": {
                           "id": {
                             "type": "string",
@@ -8153,7 +8193,11 @@
                           "status": {
                             "type": "string",
                             "example": "pending",
-                            "description": "Status",
+                            "description": {
+                              "es": "Status",
+                              "pt": "Status",
+                              "en": "Status"
+                            },
                             "enum": [
                               {
                                 "title": "pending",

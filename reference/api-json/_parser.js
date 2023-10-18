@@ -12,23 +12,16 @@ const parseDescriptionForItem = (json) => {
   }
   const keys = Object.keys(json);
   keys.forEach((key) => {
-    if (key === 'enum') {
-      const enumArray = json[key];
-      const newEnumData = enumArray.map((item) => {
-        if (typeof item === 'object') {
-          return item;
-        }
-        const [title, description] = item.split('--');
-        return {
-          title: title?.trim(),
-          description: {
-            es: description,
-            pt: description,
-            en: description,
-          },
-        };
-      });
-      json[key] = newEnumData;
+    if (key === 'description') {
+      const item = json[key];
+      if (typeof item === 'object') {
+        return;
+      }
+      json[key] = {
+        es: item,
+        pt: item,
+        en: item,
+      };
     }
   });
 

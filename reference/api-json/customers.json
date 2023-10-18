@@ -3158,7 +3158,11 @@
                           },
                           "metadata": {
                             "type": "object",
-                            "description": "metadata"
+                            "description": {
+                              "es": "metadata",
+                              "pt": "metadata",
+                              "en": "metadata"
+                            }
                           },
                           "phone": {
                             "type": "object",

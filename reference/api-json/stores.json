@@ -78,12 +78,20 @@
                               "open": {
                                 "type": "string",
                                 "example": "08:00",
-                                "description": "open"
+                                "description": {
+                                  "es": "open",
+                                  "pt": "open",
+                                  "en": "open"
+                                }
                               },
                               "close": {
                                 "type": "string",
                                 "example": "13:00",
-                                "description": "close"
+                                "description": {
+                                  "es": "close",
+                                  "pt": "close",
+                                  "en": "close"
+                                }
                               }
                             }
                           },
@@ -101,12 +109,20 @@
                               "open": {
                                 "type": "string",
                                 "example": "08:00",
-                                "description": "open"
+                                "description": {
+                                  "es": "open",
+                                  "pt": "open",
+                                  "en": "open"
+                                }
                               },
                               "close": {
                                 "type": "string",
                                 "example": "18:00",
-                                "description": "close"
+                                "description": {
+                                  "es": "close",
+                                  "pt": "close",
+                                  "en": "close"
+                                }
                               }
                             }
                           },
@@ -124,12 +140,20 @@
                               "open": {
                                 "type": "string",
                                 "example": "07:00",
-                                "description": "open"
+                                "description": {
+                                  "es": "open",
+                                  "pt": "open",
+                                  "en": "open"
+                                }
                               },
                               "close": {
                                 "type": "string",
                                 "example": "10:00",
-                                "description": "close"
+                                "description": {
+                                  "es": "close",
+                                  "pt": "close",
+                                  "en": "close"
+                                }
                               }
                             }
                           },
@@ -286,7 +310,11 @@
                     "example": "Sucursal Instore"
                   },
                   "business_hours": {
-                    "description": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.",
+                    "description": {
+                      "es": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.",
+                      "pt": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.",
+                      "en": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed."
+                    },
                     "type": "object",
                     "properties": {
                       "monday": {
@@ -297,16 +325,28 @@
                             "open": {
                               "type": "string",
                               "example": "08:00",
-                              "description": "open"
+                              "description": {
+                                "es": "open",
+                                "pt": "open",
+                                "en": "open"
+                              }
                             },
                             "close": {
                               "type": "string",
                               "example": "12:00",
-                              "description": "close"
+                              "description": {
+                                "es": "close",
+                                "pt": "close",
+                                "en": "close"
+                              }
                             }
                           }
                         },
-                        "description": "monday"
+                        "description": {
+                          "es": "monday",
+                          "pt": "monday",
+                          "en": "monday"
+                        }
                       },
                       "tuesday": {
                         "type": "array",
@@ -316,16 +356,28 @@
                             "open": {
                               "type": "string",
                               "example": "09:00",
-                              "description": "open"
+                              "description": {
+                                "es": "open",
+                                "pt": "open",
+                                "en": "open"
+                              }
                             },
                             "close": {
                               "type": "string",
                               "example": "18:00",
-                              "description": "close"
+                              "description": {
+                                "es": "close",
+                                "pt": "close",
+                                "en": "close"
+                              }
                             }
                           }
                         },
-                        "description": "tuesday"
+                        "description": {
+                          "es": "tuesday",
+                          "pt": "tuesday",
+                          "en": "tuesday"
+                        }
                       }
                     }
                   },
@@ -466,12 +518,20 @@
                               "open": {
                                 "type": "string",
                                 "example": "08:00",
-                                "description": "open"
+                                "description": {
+                                  "es": "open",
+                                  "pt": "open",
+                                  "en": "open"
+                                }
                               },
                               "close": {
                                 "type": "string",
                                 "example": "12:00",
-                                "description": "close"
+                                "description": {
+                                  "es": "close",
+                                  "pt": "close",
+                                  "en": "close"
+                                }
                               }
                             }
                           },
@@ -489,12 +549,20 @@
                               "open": {
                                 "type": "string",
                                 "example": "09:00",
-                                "description": "open"
+                                "description": {
+                                  "es": "open",
+                                  "pt": "open",
+                                  "en": "open"
+                                }
                               },
                               "close": {
                                 "type": "string",
                                 "example": "18:00",
-                                "description": "close"
+                                "description": {
+                                  "es": "close",
+                                  "pt": "close",
+                                  "en": "close"
+                                }
                               }
                             }
                           },
@@ -820,18 +888,30 @@
                             "id": {
                               "type": "string",
                               "example": 30163646,
-                              "description": "id"
+                              "description": {
+                                "es": "id",
+                                "pt": "id",
+                                "en": "id"
+                              }
                             },
                             "name": {
                               "type": "string",
                               "example": "Sucursal Instore",
-                              "description": "name"
+                              "description": {
+                                "es": "name",
+                                "pt": "name",
+                                "en": "name"
+                              }
                             },
                             "date_creation": {
                               "type": "string",
                               "format": "date-time",
                               "example": "2021-04-16T14:54:28.573Z",
-                              "description": "date_creation"
+                              "description": {
+                                "es": "date_creation",
+                                "pt": "date_creation",
+                                "en": "date_creation"
+                              }
                             },
                             "business_hours": {
                               "type": "object",
@@ -844,16 +924,28 @@
                                       "open": {
                                         "type": "string",
                                         "example": "08:00",
-                                        "description": "open"
+                                        "description": {
+                                          "es": "open",
+                                          "pt": "open",
+                                          "en": "open"
+                                        }
                                       },
                                       "close": {
                                         "type": "string",
                                         "example": "13:00",
-                                        "description": "close"
+                                        "description": {
+                                          "es": "close",
+                                          "pt": "close",
+                                          "en": "close"
+                                        }
                                       }
                                     }
                                   },
-                                  "description": "monday"
+                                  "description": {
+                                    "es": "monday",
+                                    "pt": "monday",
+                                    "en": "monday"
+                                  }
                                 },
                                 "tuesday": {
                                   "type": "array",
@@ -863,16 +955,28 @@
                                       "open": {
                                         "type": "string",
                                         "example": "08:00",
-                                        "description": "open"
+                                        "description": {
+                                          "es": "open",
+                                          "pt": "open",
+                                          "en": "open"
+                                        }
                                       },
                                       "close": {
                                         "type": "string",
                                         "example": "18:00",
-                                        "description": "close"
+                                        "description": {
+                                          "es": "close",
+                                          "pt": "close",
+                                          "en": "close"
+                                        }
                                       }
                                     }
                                   },
-                                  "description": "tuesday"
+                                  "description": {
+                                    "es": "tuesday",
+                                    "pt": "tuesday",
+                                    "en": "tuesday"
+                                  }
                                 },
                                 "wednesday": {
                                   "type": "array",
@@ -882,19 +986,35 @@
                                       "open": {
                                         "type": "string",
                                         "example": "07:00",
-                                        "description": "open"
+                                        "description": {
+                                          "es": "open",
+                                          "pt": "open",
+                                          "en": "open"
+                                        }
                                       },
                                       "close": {
                                         "type": "string",
                                         "example": "10:00",
-                                        "description": "close"
+                                        "description": {
+                                          "es": "close",
+                                          "pt": "close",
+                                          "en": "close"
+                                        }
                                       }
                                     }
                                   },
-                                  "description": "wednesday"
+                                  "description": {
+                                    "es": "wednesday",
+                                    "pt": "wednesday",
+                                    "en": "wednesday"
+                                  }
                                 }
                               },
-                              "description": "business_hours"
+                              "description": {
+                                "es": "business_hours",
+                                "pt": "business_hours",
+                                "en": "business_hours"
+                              }
                             },
                             "location": {
                               "type": "object",
@@ -902,30 +1022,54 @@
                                 "address_line": {
                                   "type": "string",
                                   "example": "Caseros 3039, Belgrano, Capital Federal, Argentina",
-                                  "description": "address_line"
+                                  "description": {
+                                    "es": "address_line",
+                                    "pt": "address_line",
+                                    "en": "address_line"
+                                  }
                                 },
                                 "reference": {
                                   "type": "string",
                                   "example": "3er Piso",
-                                  "description": "reference"
+                                  "description": {
+                                    "es": "reference",
+                                    "pt": "reference",
+                                    "en": "reference"
+                                  }
                                 },
                                 "latitude": {
                                   "type": "number",
                                   "example": -32.8897322,
-                                  "description": "latitude"
+                                  "description": {
+                                    "es": "latitude",
+                                    "pt": "latitude",
+                                    "en": "latitude"
+                                  }
                                 },
                                 "longitude": {
                                   "type": "number",
                                   "example": -68.8443275,
-                                  "description": "longitude"
+                                  "description": {
+                                    "es": "longitude",
+                                    "pt": "longitude",
+                                    "en": "longitude"
+                                  }
                                 }
                               },
-                              "description": "location"
+                              "description": {
+                                "es": "location",
+                                "pt": "location",
+                                "en": "location"
+                              }
                             },
                             "external_id": {
                               "type": "string",
                               "example": "SUC001",
-                              "description": "external_id"
+                              "description": {
+                                "es": "external_id",
+                                "pt": "external_id",
+                                "en": "external_id"
+                              }
                             }
                           }
                         },
@@ -1059,7 +1203,11 @@
                     "example": "Sucursal Instore 2"
                   },
                   "business_hours": {
-                    "description": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.",
+                    "description": {
+                      "es": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.",
+                      "pt": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.",
+                      "en": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed."
+                    },
                     "type": "object",
                     "properties": {
                       "monday": {
@@ -1070,16 +1218,28 @@
                             "open": {
                               "type": "string",
                               "example": "08:00",
-                              "description": "open"
+                              "description": {
+                                "es": "open",
+                                "pt": "open",
+                                "en": "open"
+                              }
                             },
                             "close": {
                               "type": "string",
                               "example": "12:00",
-                              "description": "close"
+                              "description": {
+                                "es": "close",
+                                "pt": "close",
+                                "en": "close"
+                              }
                             }
                           }
                         },
-                        "description": "monday"
+                        "description": {
+                          "es": "monday",
+                          "pt": "monday",
+                          "en": "monday"
+                        }
                       },
                       "tuesday": {
                         "type": "array",
@@ -1089,16 +1249,28 @@
                             "open": {
                               "type": "string",
                               "example": "09:00",
-                              "description": "open"
+                              "description": {
+                                "es": "open",
+                                "pt": "open",
+                                "en": "open"
+                              }
                             },
                             "close": {
                               "type": "string",
                               "example": "18:00",
-                              "description": "close"
+                              "description": {
+                                "es": "close",
+                                "pt": "close",
+                                "en": "close"
+                              }
                             }
                           }
                         },
-                        "description": "tuesday"
+                        "description": {
+                          "es": "tuesday",
+                          "pt": "tuesday",
+                          "en": "tuesday"
+                        }
                       }
                     }
                   },
@@ -1234,12 +1406,20 @@
                               "open": {
                                 "type": "string",
                                 "example": "08:00",
-                                "description": "open"
+                                "description": {
+                                  "es": "open",
+                                  "pt": "open",
+                                  "en": "open"
+                                }
                               },
                               "close": {
                                 "type": "string",
                                 "example": "12:00",
-                                "description": "close"
+                                "description": {
+                                  "es": "close",
+                                  "pt": "close",
+                                  "en": "close"
+                                }
                               }
                             }
                           },

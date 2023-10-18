@@ -980,7 +980,11 @@
           }
         ],
         "requestBody": {
-          "description": "Amount request",
+          "description": {
+            "es": "Amount request",
+            "pt": "Amount request",
+            "en": "Amount request"
+          },
           "content": {
             "application/json": {
               "schema": {

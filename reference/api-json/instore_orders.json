@@ -191,12 +191,20 @@
                           "title": {
                             "type": "string",
                             "example": "Shampoo",
-                            "description": "title"
+                            "description": {
+                              "es": "title",
+                              "pt": "title",
+                              "en": "title"
+                            }
                           },
                           "id": {
                             "type": "string",
                             "example": 78123172,
-                            "description": "id"
+                            "description": {
+                              "es": "id",
+                              "pt": "id",
+                              "en": "id"
+                            }
                           },
                           "currency_id": {
                             "$ref": "#/components/schemas/currency_id"
@@ -204,22 +212,38 @@
                           "unit_price": {
                             "type": "number",
                             "example": 120,
-                            "description": "unit_price"
+                            "description": {
+                              "es": "unit_price",
+                              "pt": "unit_price",
+                              "en": "unit_price"
+                            }
                           },
                           "quantity": {
                             "type": "number",
                             "example": 1,
-                            "description": "quantity"
+                            "description": {
+                              "es": "quantity",
+                              "pt": "quantity",
+                              "en": "quantity"
+                            }
                           },
                           "description": {
                             "type": "string",
                             "example": "Almendras",
-                            "description": "description"
+                            "description": {
+                              "es": "description",
+                              "pt": "description",
+                              "en": "description"
+                            }
                           },
                           "picture_url": {
                             "type": "string",
                             "example": "https://bit.ly/2nxdWHa",
-                            "description": "picture_url"
+                            "description": {
+                              "es": "picture_url",
+                              "pt": "picture_url",
+                              "en": "picture_url"
+                            }
                           }
                         }
                       },
@@ -292,7 +316,11 @@
                             "properties": {
                               "id": {
                                 "type": "string",
-                                "description": "id"
+                                "description": {
+                                  "es": "id",
+                                  "pt": "id",
+                                  "en": "id"
+                                }
                               }
                             }
                           },
@@ -310,7 +338,11 @@
                               "id": {
                                 "type": "string",
                                 "example": "ticket",
-                                "description": "id"
+                                "description": {
+                                  "es": "id",
+                                  "pt": "id",
+                                  "en": "id"
+                                }
                               }
                             }
                           },

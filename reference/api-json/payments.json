@@ -1157,7 +1157,11 @@
                               "unit_price": {
                                 "type": "number",
                                 "example": 58.8,
-                                "description": "Unit price."
+                                "description": {
+                                  "es": "Unit price.",
+                                  "pt": "Unit price.",
+                                  "en": "Unit price."
+                                }
                               }
                             }
                           },
@@ -4381,7 +4385,11 @@
                               "unit_price": {
                                 "type": "number",
                                 "example": 58.8,
-                                "description": "Unit price."
+                                "description": {
+                                  "es": "Unit price.",
+                                  "pt": "Unit price.",
+                                  "en": "Unit price."
+                                }
                               }
                             }
                           },

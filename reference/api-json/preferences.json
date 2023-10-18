@@ -1710,7 +1710,11 @@
                               "type": "string",
                               "example": "Test Item"
                             },
-                            "description": "items"
+                            "description": {
+                              "es": "items",
+                              "pt": "items",
+                              "en": "items"
+                            }
                           },
                           "last_updated": {
                             "type": "string",
@@ -3126,7 +3130,11 @@
                       },
                       "local_pickup": {
                         "type": "boolean",
-                        "description": "The payer have the option to pick up the shipment in your store (mode:me2 only)."
+                        "description": {
+                          "es": "The payer have the option to pick up the shipment in your store (mode:me2 only).",
+                          "pt": "The payer have the option to pick up the shipment in your store (mode:me2 only).",
+                          "en": "The payer have the option to pick up the shipment in your store (mode:me2 only)."
+                        }
                       },
                       "dimensions": {
                         "type": "string",

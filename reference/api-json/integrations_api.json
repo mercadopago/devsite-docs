@@ -296,7 +296,11 @@
           {
             "name": "x-test-scope",
             "in": "header",
-            "description": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+            "description": {
+              "es": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+              "pt": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+              "en": "This is a temporary header, it should be used just for development with the value \"sandbox\""
+            },
             "schema": {
               "type": "string",
               "example": "sandbox"
@@ -634,7 +638,11 @@
           {
             "name": "x-test-scope",
             "in": "header",
-            "description": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+            "description": {
+              "es": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+              "pt": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+              "en": "This is a temporary header, it should be used just for development with the value \"sandbox\""
+            },
             "schema": {
               "type": "string",
               "example": "sandbox"
@@ -828,7 +836,11 @@
           {
             "name": "x-test-scope",
             "in": "header",
-            "description": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+            "description": {
+              "es": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+              "pt": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+              "en": "This is a temporary header, it should be used just for development with the value \"sandbox\""
+            },
             "required": false,
             "schema": {
               "type": "string",
@@ -838,7 +850,11 @@
           {
             "name": "paymentIntentId",
             "in": "path",
-            "description": "Payment Intent Id",
+            "description": {
+              "es": "Payment Intent Id",
+              "pt": "Payment Intent Id",
+              "en": "Payment Intent Id"
+            },
             "required": true,
             "schema": {
               "type": "string",
@@ -1055,7 +1071,11 @@
           {
             "name": "x-test-scope",
             "in": "header",
-            "description": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+            "description": {
+              "es": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+              "pt": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+              "en": "This is a temporary header, it should be used just for development with the value \"sandbox\""
+            },
             "schema": {
               "type": "string",
               "example": "sandbox"
@@ -1280,7 +1300,11 @@
           {
             "name": "x-test-scope",
             "in": "header",
-            "description": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+            "description": {
+              "es": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+              "pt": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+              "en": "This is a temporary header, it should be used just for development with the value \"sandbox\""
+            },
             "schema": {
               "type": "string",
               "example": "sandbox"
@@ -1289,7 +1313,11 @@
           {
             "name": "paymentIntentId",
             "in": "path",
-            "description": "Payment intent Id",
+            "description": {
+              "es": "Payment intent Id",
+              "pt": "Payment intent Id",
+              "en": "Payment intent Id"
+            },
             "required": true,
             "schema": {
               "type": "string",
@@ -1463,7 +1491,11 @@
           {
             "name": "device-id",
             "in": "path",
-            "description": "DeviceId",
+            "description": {
+              "es": "DeviceId",
+              "pt": "DeviceId",
+              "en": "DeviceId"
+            },
             "required": true,
             "schema": {
               "type": "string",

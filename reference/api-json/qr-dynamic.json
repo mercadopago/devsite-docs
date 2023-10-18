@@ -83,7 +83,11 @@
                   },
                   "expiration_date": {
                     "type": "string",
-                    "description": "Expiration date with format \"2020-08-22T16:34:56.559-04:00\""
+                    "description": {
+                      "es": "Expiration date with format \"2020-08-22T16:34:56.559-04:00\"",
+                      "pt": "Expiration date with format \"2020-08-22T16:34:56.559-04:00\"",
+                      "en": "Expiration date with format \"2020-08-22T16:34:56.559-04:00\""
+                    }
                   },
                   "total_amount": {
                     "type": "number",
@@ -194,7 +198,11 @@
                   },
                   "cash_out": {
                     "type": "object",
-                    "description": "Cash withdrawal (Commercial contact required)",
+                    "description": {
+                      "es": "Cash withdrawal (Commercial contact required)",
+                      "pt": "Cash withdrawal (Commercial contact required)",
+                      "en": "Cash withdrawal (Commercial contact required)"
+                    },
                     "properties": {
                       "amount": {
                         "type": "number",
@@ -568,7 +576,11 @@
                   },
                   "expiration_date": {
                     "type": "string",
-                    "description": "Expiration date with format \"2020-08-22T16:34:56.559-04:00\""
+                    "description": {
+                      "es": "Expiration date with format \"2020-08-22T16:34:56.559-04:00\"",
+                      "pt": "Expiration date with format \"2020-08-22T16:34:56.559-04:00\"",
+                      "en": "Expiration date with format \"2020-08-22T16:34:56.559-04:00\""
+                    }
                   },
                   "total_amount": {
                     "type": "number",
@@ -679,7 +691,11 @@
                   },
                   "cash_out": {
                     "type": "object",
-                    "description": "Cash withdrawal (Commercial contact required)",
+                    "description": {
+                      "es": "Cash withdrawal (Commercial contact required)",
+                      "pt": "Cash withdrawal (Commercial contact required)",
+                      "en": "Cash withdrawal (Commercial contact required)"
+                    },
                     "properties": {
                       "amount": {
                         "type": "number",

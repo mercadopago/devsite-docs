@@ -14,7 +14,11 @@
           {
             "name": "x-test-scope",
             "in": "header",
-            "description": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+            "description": {
+              "es": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+              "pt": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+              "en": "This is a temporary header, it should be used just for development with the value \"sandbox\""
+            },
             "schema": {
               "type": "string",
               "example": "sandbox"
