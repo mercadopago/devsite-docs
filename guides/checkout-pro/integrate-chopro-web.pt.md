@@ -89,11 +89,20 @@ Em seguida, observe o botão de pagamento renderizado em sua página.
 
 No exemplo acima, um botão de pagamento será renderizado e ficará responsável por abrir o Checkout Pro. Caso queira que a experiência com Checkout Pro seja feita em uma **aba externa ou de forma modal**, veja a seção [Esquema de abertura](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 
+## Configurar as back_urls
+
+No final do processo de pagamento, é possível redirecionar o comprador para outro ambiente do site através do atributo `back_urls` que é configurado ao criar a preferência. As `back_urls` serão responsáveis por guiar o fluxo de retorno ao seu site quando o pagamento for concluído. É possível definir três URLs de retorno diferentes que correspondem a cenários de pagamento pendente, sucesso ou erro.
+
+Para obter mais informações, consulte a seção [URL de retorno](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/redirection).
+
+
 > WARNING
 >
 > Importante
 >
-> É de extrema importância que se atente, durante a criação da preferência, para a configuração das `back_urls` porque elas serão responsáveis por guiar o fluxo de retorno ao seu website quando o checkout for finalizado. É possível definir três URLs de retorno diferentes, para cenários de pagamento pendentes, sucesso ou erro. Para mais informações, veja a seção de [URLs de retorno.](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/redirection)
+> Não utilize domínios locais no valor `back_urls`, como 'localhost/' ou '127.0.0.1' com ou sem porta especificada. Recomendamos o uso de um servidor com um domínio nomeado (DNS) ou IPs de desenvolvimento para poder retornar ao site após o pagamento. Caso contrário, aparecerá a mensagem "Alguma coisa deu errado" ao finalizar o processo de compra.
+
+## Receber estados de pagamento
 
 Os pagamentos criados possuem os seguintes status: `Pendente`, `Rejeitado` e `Aprovado`. Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-pro/additional-content/your-integrations/notifications) para mais detalhes.
 
