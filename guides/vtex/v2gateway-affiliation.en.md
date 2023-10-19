@@ -8,7 +8,7 @@ The **MercadoPagoV2 affiliation** will allow you to process payments with ----[m
 > 
 > Important
 > 
-> The MercadoPagoV1 gateway affiliation will be discontinued. If you already have a MercadoPagoV1 gateway affiliation, you'll need to [migrate to MercadoPagoV2](/developers/en/docs/vtex/integration/v1-v2-migration). 
+> The MercadoPagoV1 gateway affiliation will be discontinued. If you already have a MercadoPagoV1 gateway affiliation, you'll need to [migrate to MercadoPagoV2](/developers/en/docs/vtex/how-tos/migrate-v1-v2). 
 
 To create a **MercadoPagoV2 gateway affiliation**, follow the steps below: 
 
@@ -49,6 +49,6 @@ After filling out all the fields, click on **Save** and you're done! Your affili
 >
 > Note
 > 
-> If you encounter difficulties during your integration, please check our [list of errors](/developers/en/guides/vtex/integration/possible-errors) and our document on [VTEX logs](/developers/en/guides/vtex/how-tos/logs). 
+> If you encounter difficulties during your integration, please check our [list of errors](/developers/en/guides/vtex/additional-content/possible-errors) and our document on [VTEX logs](/developers/en/guides/vtex/how-tos/logs). 
 
 ![Creating a MercadoPagoV2 gateway affiliation](devsite-docs/images/vtex/vtex-admin-gateway-es.gif)

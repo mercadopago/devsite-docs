@@ -37,8 +37,8 @@ Similarly, you have the option to configure installment payments and interest di
 Once these steps are completed, installment payments in the checkout will be configured and ready to process sales.
 
 
-> WARNING 
+> NOTE 
 > 
-> Important
+> Note
 > 
 > Changes to payment conditions may take up to 10 minutes to be applied.

@@ -61,8 +61,8 @@ Para configurar Hasta 12 veces sin tarjeta con Mercado Pago en el checkout de la
 
 ![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-pt.gif)
 
-> WARNING
+> NOTE
 >
-> Importante
+> Nota
 >
 > Los cambios en las condiciones de pago pueden demorar hasta 10 minutos en aplicarse.

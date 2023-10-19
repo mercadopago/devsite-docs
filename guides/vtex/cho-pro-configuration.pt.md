@@ -13,9 +13,9 @@ Para configurar o Checkout Pro, acesse o painel de administração da sua plataf
 
 ![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-pt.gif)
 
-> WARNING
+> NOTE
 >
-> Importante
+> Nota
 >
 > As mudanças nas condições de pagamento podem levar até 10 minutos para serem aplicadas.
 

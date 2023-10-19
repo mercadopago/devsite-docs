@@ -5,7 +5,7 @@ When configuring Checkout Transparente in VTEX stores, you can offer payments wi
 
 > WARNING 
 > 
-> Payments with Pix 
+> Important 
 > 
 > To offer Pix as a payment method, you must first ensure that you have configured your Pix key. If you haven't done so yet, follow the instructions provided in [our documentation](https://www.mercadopago.com.br/ajuda/17843). 
 ------------ 
@@ -15,7 +15,7 @@ When configuring Checkout API in VTEX stores, you can offer payments with offlin
 
 > WARNING 
 > 
-> Payments with PSE 
+> Important 
 > 
 > To offer PSE as a payment method, make sure you first install the **PSE app developed by VTEX**. If you haven't done so yet, go to **Account Settings>Apps > App Store**, and search for **Banks for PSE**. 
 > <br> 
@@ -54,9 +54,9 @@ To configure these payment methods, access the administration panel of your VTEX
 
 ![Configure payment conditions](/images/vtex/paymentconditions-imagenv2-en.gif)
 
-> WARNING 
+> NOTE 
 > 
-> Important 
+> Nota 
 > 
 > Changes in payment conditions may take up to 10 minutes to be applied.
 

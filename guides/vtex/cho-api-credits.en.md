@@ -50,9 +50,9 @@ To configure Up to 12 installments without a card with Mercado Pago in the store
 
 ![Configure payment conditions](/images/vtex/paymentconditions-imagenv2-en.gif)
 
-> WARNING 
+> NOTE 
 > 
-> Important 
+> Note 
 > 
 > Changes in payment conditions may take up to 10 minutes to be applied.
 

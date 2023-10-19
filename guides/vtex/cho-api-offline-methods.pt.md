@@ -6,7 +6,7 @@ Ao configurar o Checkout Transparente em lojas VTEX, você pode oferecer pagamen
 
 > WARNING
 >
-> Pagamentos com Pix
+> Importante
 >
 > Para oferecer o Pix como método de pagamento, você deve primeiro garantir que tenha configurado sua chave Pix. Se ainda não o fez, siga as instruções fornecidas em [nossa documentação](https://www.mercadopago.com.br/ajuda/17843).
 
@@ -18,7 +18,7 @@ Ao configurar o Checkout API em lojas VTEX, você pode oferecer pagamentos com m
 
 > WARNING
 >
-> Pagamentos com PSE
+> Importante
 >
 > Para oferecer o PSE como método de pagamento, certifique-se primeiro de instalar o **aplicativo PSE desenvolvido pela VTEX**. Se ainda não o fez, acesse **Configuração de Conta>Aplicativos > Loja de Aplicativos**, e procure por **Banks for PSE**. 
 > <br>
@@ -67,8 +67,8 @@ Para configurar esses meios de pagamento, acesse o painel de administração da 
 
 ![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-pt.gif)
 
-> WARNING
+> NOTE
 >
-> Importante
+> Nota
 >
 > As mudanças nas condições de pagamento podem levar até 10 minutos para serem aplicadas.

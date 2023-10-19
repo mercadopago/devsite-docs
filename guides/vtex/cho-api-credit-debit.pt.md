@@ -35,9 +35,9 @@ Da mesma forma, você tem a opção de configurar o parcelamento e os juros dire
 
 Finalizadas essas etapas, o parcelamento no checkout estará configurado e pronto para processar vendas.
 
-> WARNING
+> NOTE
 >
-> Importante
+> Nota
 >
 > As mudanças nas condições de pagamento podem levar até 10 minutos para serem aplicadas.
 

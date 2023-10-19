@@ -37,8 +37,8 @@ Igualmente, tienes la opción de configurar la financiación y los intereses dir
 Finalizadas estas etapas, la financiación en el checkout estará configurada y lista para procesar ventas.
 
 
-> WARNING
+> NOTE
 >
-> Importante
+> Nota
 >
 > Los cambios en las condiciones de pago pueden demorar hasta 10 minutos en aplicarse.

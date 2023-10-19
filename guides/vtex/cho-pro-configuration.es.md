@@ -13,8 +13,8 @@ Para configurar Checkout Pro y comenzar a recibir pagos, dirígete al panel de a
 
 ![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-pt.gif)
 
-> WARNING
+> NOTE
 >
-> Importante
+> Nota
 >
 > Los cambios en las condiciones de pago pueden demorar hasta 10 minutos en aplicarse.
