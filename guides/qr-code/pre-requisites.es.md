@@ -1,4 +1,4 @@
-# Requisitos previos para tu integración
+# Requisitos previos
 
 Ten en cuenta estos aspectos antes de empezar:
 
@@ -31,7 +31,7 @@ Es fácil, te contamos cómo hacerlo:
 >
 > Nota
 >
-> En caso de PDV integrador con varias conexiones con cuentas Mercado Pago, ver tema 4 y 5. Atención a la seguridad de tu integración e implementa [Oauth](/developers/es/docs/qr-code/additional-content/security/oauth/introduction).
+> En caso de PDV integrador con varias conexiones con cuentas Mercado Pago, ver tema 4 y 5. Atención a la seguridad de tu integración e implementa [Oauth.](/developers/es/docs/qr-code/additional-content/security/oauth/introduction)
 
 ## 3. Genera usuarios de prueba
 

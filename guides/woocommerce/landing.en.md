@@ -39,7 +39,7 @@ bullet_section_with_media:
 ----[mlb]----
 ---
 bullet_section_with_media: 
- - title: Customize payments with Transparent Checkout
+ - title: Customize payments with Checkout Transparente
  - type: reversed
  - message: Integrate our Transparent Checkout and make the buyer carry out the entire payment process within your store environment.
  - image: /shopify/mini-landing-4.png

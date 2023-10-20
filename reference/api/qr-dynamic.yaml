@@ -78,7 +78,7 @@ paths:
                     eng: URL where you'd like to receive a payment or merchant_order notification.
                     spa: URL a la cual se enviará la notificación de pago o merchant_order
                     por: URL em que você gostaria de receber uma notificação de pagamento ou merchant_order
-                  example: www.yourserver.com
+                  example: https://www.yourserver.com/notifications
                 expiration_date:
                   type: string
                   description: Expiration date with format "2020-08-22T16:34:56.559-04:00"
@@ -195,8 +195,20 @@ paths:
                 properties:
                   qr_data:
                     type: string
-                    description: EMVCo tramma for the QR generation
+                    description: EMVCo tramma for the QR generation.
+                    x-description-i18n:
+                      eng: EMVCo tramma for the QR generation.
+                      spa: Tramma EMVCo para la generación del QR.
+                      por: Quadro EMVCo para a geração do código QR.
                     example: 00020101021243650016COM.MERCADOLIBRE02013063638f1192a-5fd1-4180-a180-8bcae3556bc35204000053039865802BR5925IZABEL AAAA DE MELO6007BARUERI62070503***63040B6D
+                  in_store_order_id:
+                    type: string
+                    description: Instore order ID.
+                    x-description-i18n:
+                      eng: Instore order ID.
+                      spa: ID del pedido realizado presencialmente en la sucursal.
+                      por: ID do pedido feito presencialmente na loja.
+                    example: d4e8ca59-3e1d-4c03-b1f6-580e87c654ae
         '400':
           description: Error
           x-description-i18n:
@@ -234,6 +246,7 @@ paths:
                       - invalid_cash_out.amount--cash_out.amount must be number.
                       - invalid_amount--cash_out.amount must be present.
                       - error_creating_seller_qr_order--The cash out is required when order has no items.
+                      - invalid_notification_url--notification_url must be url.
                       - invalid_expiration_date--Expiration date must be a valid and future date.
         '500':
           description: Error
@@ -322,7 +335,7 @@ paths:
                     eng: URL where you'd like to receive a payment or merchant_order notification.
                     spa: URL a la cual se enviará la notificación de pago o merchant_order
                     por: URL em que você gostaria de receber uma notificação de pagamento ou merchant_order
-                  example: www.yourserver.com
+                  example: https://www.yourserver.com/notifications
                 expiration_date:
                   type: string
                   description: Expiration date with format "2020-08-22T16:34:56.559-04:00"

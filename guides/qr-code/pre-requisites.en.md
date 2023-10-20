@@ -1,4 +1,4 @@
-# Previous requirements to integrate
+# Prerequisites
 
 Keep these aspects in mind before you start:
 
@@ -31,7 +31,7 @@ It's quite easy to do:
 >
 > Note
 >
->If your POS integrator has several tenants, see topic 4 and 5. Check your integration security and implement [OAuth](/developers/es/docs/qr-code/additional-content/security/oauth/introduction).
+>If your POS integrator has several tenants, see topic 4 and 5. Check your integration security and implement [OAuth.](/developers/es/docs/qr-code/additional-content/security/oauth/introduction)
 
 ## 3. Generate test users
 

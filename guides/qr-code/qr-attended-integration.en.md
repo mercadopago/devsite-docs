@@ -24,7 +24,7 @@ The order is available for **scanning and payment** after its creation.
 >
 > Note
 >
-> Remember that if you have not previously uploaded your business name or logo in [your Mercado Pago account](https://www.mercadopago.com.ar/settings/account), the order title and image showcased to the client in the App will correspond to the item uploaded first.
+> Remember that if you have not previously uploaded your business name or logo in [your Mercado Pago account,](https://www.mercadopago.com.ar/settings/account) the order title and image showcased to the client in the App will correspond to the item uploaded first.
 
 ## Eliminate an order
 

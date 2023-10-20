@@ -10,7 +10,7 @@ Una vez que hayas realizado la integración tal como te explicaremos aquí, podr
 >
 > Nota
 >
-> Si tu modelo no requiere de una integración con un sistema de punto de venta,  puedes consultar toda la información disponible en [generar QR desde el panel de Mercado Pago](/developers/es/docs/qr-code/integrations-front).
+> Si tu modelo no requiere de una integración con un sistema de punto de venta,  puedes consultar toda la información disponible en [generar QR desde el panel de Mercado Pago.](/developers/es/docs/qr-code/integrations-front)
 
 ## Tipos de integración
 

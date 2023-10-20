@@ -81,7 +81,7 @@ future_product_avaible:
 ---
 
 ------------
-----[mlb, mpe, mco, mlc, mlu]----
+----[mlb, mla, mpe, mco, mlc, mlu]----
 
 ---
 future_product_avaible: 

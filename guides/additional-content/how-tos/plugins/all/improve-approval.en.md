@@ -18,8 +18,7 @@ You can find the information and check the status of a payment via the API, thro
 >
 > Important
 >
-> You can also find more information about payments in the [Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) account activity.
-
+> You can also find more information about payments in the [Mercado Pago.](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) account activity
 
 ### Errors made by the buyer
 
