@@ -1,4 +1,4 @@
-# Activa las notificaciones IPN
+# Cómo activar las notificaciones IPN en tu integración
 
 Las notificaciones son mensajes enviados por el servidor de Mercado Pago desde eventos que se realizan en su aplicación. **IPN** (Instant Payment Notification) es un mecanismo que permite que tu aplicación reciba notificaciones de Mercado Pago, informando el estado de un determinado pago, contracargo y merchant_order, a través de una llamada HTTP POST para informar sobre sus transacciones.
 
