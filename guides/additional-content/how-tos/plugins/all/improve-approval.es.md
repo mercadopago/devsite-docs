@@ -19,8 +19,7 @@ Puedes encontrar la información y verificar el estado de un pago a través de l
 >
 > Importante
 >
-> Puedes encontrar más información sobre el detalle del pago en la actividad de la cuenta de [Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/activities).
-
+> Puedes encontrar más información sobre el detalle del pago en la actividad de la cuenta de [Mercado Pago.](https://www.mercadopago[FAKER][URL][DOMAIN]/activities)
 
 ### Errores de relleno del comprador
 

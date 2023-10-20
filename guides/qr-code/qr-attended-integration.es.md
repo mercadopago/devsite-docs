@@ -24,7 +24,7 @@ Una vez creada la orden, ya se encuentra disponible para ser **escaneada y pagad
 >
 > Nota
 >
-> Ten en cuenta que si no cargaste previamente el nombre de tu negocio o el logo en [tu cuenta de Mercado Pago](https://www.mercadopago.com.ar/settings/account), el título y la imagen de la orden que el cliente vea en la app serán las del primer ítem cargado.
+> Ten en cuenta que si no cargaste previamente el nombre de tu negocio o el logo en [tu cuenta de Mercado Pago,](https://www.mercadopago.com.ar/settings/account) el título y la imagen de la orden que el cliente vea en la app serán las del primer ítem cargado.
 
 ## Eliminar una orden
 

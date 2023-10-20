@@ -26,9 +26,9 @@ Accede a [Crear sucursal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers
 >
 > Importante
 >
-> 1. Debes conocer tu `country_id` del país donde te encuentres en [nuestra API de países](https://api.mercadolibre.com/countries).
-> 2. El `state_name` debe coincidir con los **estados** según [el país en cuestión](https://api.mercadolibre.com/countries/$country_id).
-> 3. El `city_name` debe coincidir con las **ciudades** según [sus estados](https://api.mercadolibre.com/states/$state_id).
+> 1. Debes conocer tu `country_id` del país donde te encuentres en [nuestra API de países.](https://api.mercadolibre.com/countries)
+> 2. El `state_name` debe coincidir con los **estados** según [el país en cuestión.](https://api.mercadolibre.com/countries/$country_id)
+> 3. El `city_name` debe coincidir con las **ciudades** según [sus estados.](https://api.mercadolibre.com/states/$state_id)
 
 ## Cajas
 

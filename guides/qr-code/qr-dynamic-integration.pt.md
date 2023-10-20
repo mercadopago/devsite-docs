@@ -63,4 +63,4 @@ As notificações IPN (Instant Payment Notification) são a **forma automática 
 
 Implemente o IPN de `merchant_order` com uma busca do pedido por `external_reference` como um método de contingência.
 
-[Receber notificações IPN](/developers/pt/guides/additional-content/your-integrations/notifications/ipn)
+[Receber notificações IPN](/developers/pt/docs/qr-code/additional-content/your-integrations/notifications/ipn)

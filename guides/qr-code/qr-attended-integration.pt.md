@@ -24,7 +24,7 @@ Assim que o pedido for criado, ele estará disponível para ser **escaneado e pa
 >
 > Nota
 >
-> No caso de não ter carregado anteriormente o nome ou logotipo de seu negócio em [ sua conta Mercado Pago](https://www.mercadopago.com.br/settings/account), o título e a imagem do pedido exibidos ao cliente no aplicativo serão os do primeiro item carregado.
+> No caso de não ter carregado anteriormente o nome ou logotipo de seu negócio em [ sua conta Mercado Pago,](https://www.mercadopago.com.br/settings/account) o título e a imagem do pedido exibidos ao cliente no aplicativo serão os do primeiro item carregado.
 
 ## Eliminar um pedido
 

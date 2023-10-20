@@ -26,9 +26,9 @@ Go to [Create store](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/r
 >
 > Important
 >
-> 1. You should know the `country_id` of your current location at [our countries API](https://api.mercadolibre.com/countries).
-> 2. The `state_name` has to match the **states** of [the specific country](https://api.mercadolibre.com/countries/$country_id).
-> 3. The `city_name` must match the **cities** of [the states](https://api.mercadolibre.com/states/$state_id).
+> 1. You should know the `country_id` of your current location at [our countries API.](https://api.mercadolibre.com/countries)
+> 2. The `state_name` has to match the **states** of [the specific country.](https://api.mercadolibre.com/countries/$country_id)
+> 3. The `city_name` must match the **cities** of [the states.](https://api.mercadolibre.com/states/$state_id)
 
 # Point of Sale (POS)
 
