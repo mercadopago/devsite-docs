@@ -87,7 +87,7 @@ In the example above, a payment button will be rendered and will be responsible 
 
 At the end of the payment process, it is possible to redirect the buyer to another environment of the site through the `back_urls` attribute that is configured when creating the preference. The `back_urls` will be responsible for guiding the flow back to your website when the payment is completed. It is possible to define three different return URLs that correspond to scenarios of pending payment, success, or error.
 
-For more information, please refer to the [Return URL](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection) section.
+For more information, please refer to the [Return URL](/developers/en/docs/checkout-pro/checkout-customization/user-interface/redirection) section.
 
 > WARNING
 >
@@ -102,4 +102,3 @@ When creating a payment it is possible to receive 3 different statuses: `Pending
 ## Implementation example
 
 Check out the [full integration example](http://github.com/mercadopago/checkout-payment-sample) on GitHub for **PHP** or **NodeJS** to download a basic project for quick implementation from Checkout Pro.
-
