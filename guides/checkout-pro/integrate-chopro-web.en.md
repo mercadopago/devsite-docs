@@ -83,11 +83,19 @@ You will then be able to observe the payment button rendered on your page.
 
 In the example above, a payment button will be rendered and will be responsible for opening Checkout Pro. If you want the experience with Checkout Pro to be done in an **external tab or in a modal way**, check the section [Opening Schema](/developers/en/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 
+## Setting up the back_urls
+
+At the end of the payment process, it is possible to redirect the buyer to another environment of the site through the `back_urls` attribute that is configured when creating the preference. The `back_urls` will be responsible for guiding the flow back to your website when the payment is completed. It is possible to define three different return URLs that correspond to scenarios of pending payment, success, or error.
+
+For more information, please refer to the [Return URL](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection) section.
+
 > WARNING
 >
 > Important
 >
-> It is extremely important to pay attention, when creating the preference, to the configuration of the `back_urls`. They will be responsible for guiding the return flow to your website when the checkout is completed. It is possible to define three different return URLs, for payment pending, success or error scenarios. For more information, see the [Return URLs](/developers/en/docs/checkout-pro/checkout-customization/user-interface/redirection) section.
+> Do not use local domains in the `back_urls` value, such as 'localhost/' or '127.0.0.1' with or without a specified port. We recommend using a server with a named domain (DNS) or development IPs to be able to return to the site after payment. Otherwise, the "Something went wrong" message will appear when the purchase process is completed.
+
+## Receiving payment statuses
 
 When creating a payment it is possible to receive 3 different statuses: `Pending`, `Rejected` and `Approved`. To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-pro/additional-content/your-integrations/notifications) for more details.
 

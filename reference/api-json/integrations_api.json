@@ -14,8 +14,7 @@
           {
             "name": "x-test-scope",
             "in": "header",
-            "description": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
-            "x-description-i18n": {
+            "description": {
               "eng": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
               "spa": "Este es un header temporal, debe usarse solo para desarrollo con el valor \"sandbox\"",
               "por": "Este é um header temporário, deve ser usado apenas para desenvolvimento com o valor \"sandbox\""
@@ -28,8 +27,7 @@
           {
             "name": "store_id",
             "in": "query",
-            "description": "Devices Store Id filter (Optional)",
-            "x-description-i18n": {
+            "description": {
               "eng": "Devices Store Id filter (Optional)",
               "spa": "Filtro de Id de tienda de dispositivos (opcional)",
               "por": "Filtro de ID de loja de dispositivos (opcional)"
@@ -42,8 +40,7 @@
           {
             "name": "pos_id",
             "in": "query",
-            "description": "Devices Pos Id filter (Optional)",
-            "x-description-i18n": {
+            "description": {
               "eng": "Devices Pos Id filter (Optional)",
               "spa": "Filtro de Id de PDV de dispositivos (opcional)",
               "por": "Filtro de ID de PDV de dispositivos (opcional)"
@@ -56,8 +53,7 @@
           {
             "name": "limit",
             "in": "query",
-            "description": "pagination limit",
-            "x-description-i18n": {
+            "description": {
               "eng": "pagination limit",
               "spa": "límite de paginación",
               "por": "limite de paginação"
@@ -70,8 +66,7 @@
           {
             "name": "offset",
             "in": "query",
-            "description": "pagination offset",
-            "x-description-i18n": {
+            "description": {
               "eng": "pagination offset",
               "spa": "offset de paginación",
               "por": "offset de paginação"
@@ -106,8 +101,7 @@
                           },
                           "pos_id": {
                             "type": "integer",
-                            "description": "POS identifier",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "POS identifier",
                               "spa": "Identificador del POS",
                               "por": "Identificador do POS"
@@ -116,8 +110,7 @@
                           },
                           "store_id": {
                             "type": "string",
-                            "description": "STORE identifier",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "STORE identifier",
                               "spa": "Identificador de la tienda",
                               "por": "Identificador da loja"
@@ -126,8 +119,7 @@
                           },
                           "external_pos_id": {
                             "type": "string",
-                            "description": "External_id of the store to which the pos belongs",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "External_id of the store to which the pos belongs",
                               "spa": "External_id de la tienda a la que pertenece el POS",
                               "por": "External_id da loja a qual pertence o POS"
@@ -313,8 +305,7 @@
           {
             "name": "deviceId",
             "in": "path",
-            "description": "identifier of the device that will have a payment intent queued",
-            "x-description-i18n": {
+            "description": {
               "eng": "identifier of the device that will have a payment intent queued",
               "spa": "identificador del dispositivo que tendrá un intento de pago en cola",
               "por": "identificador do dispositivo que terá uma tentativa de pagamento em fila"
@@ -339,8 +330,7 @@
                     "example": 1500,
                     "required": true,
                     "minimum": 1,
-                    "description": "A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75).",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75).",
                       "spa": "Un valor entero positivo que representa cuánto cobrar. El valor debe tener dos decimales en la parte entera (por ejemplo, 175 para cobrar $1,75).",
                       "por": "Um número inteiro positivo que representa quanto carregar. O valor deve ter duas casas decimais na parte inteira (por exemplo, 175 para cobrar R$ 1,75)."
@@ -349,8 +339,7 @@
                   "additional_info": {
                     "type": "object",
                     "required": true,
-                    "description": "payment intent additional info",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "payment intent additional info",
                       "spa": "información adicional de intención de pago",
                       "por": "informações adicionais de intenção de pagamento"
@@ -364,8 +353,7 @@
                           "spa": "alguna-referencia-sobre-tu-aplicación",
                           "por": "alguma-referência-sobre-seu-aplicativo"
                         },
-                        "description": "An alphanumeric value can be a identificator in your application. It will be returned in the Webhook notification",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "An alphanumeric value can be a identificator in your application. It will be returned in the Webhook notification",
                           "spa": "Un valor alfanumérico puede ser un identificador en tu aplicación. Se devolverá en la notificación de Webhook.",
                           "por": "Um valor alfanumérico pode ser um identificador em seu aplicativo. Ele será retornado na notificação do Webhook."
@@ -374,8 +362,7 @@
                       "print_on_terminal": {
                         "type": "boolean",
                         "example": true,
-                        "description": "A boolean value that determines if you want to print the ticket on the device",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "A boolean value that determines if you want to print the ticket on the device",
                           "spa": "Un valor booleano que determina si desea imprimir el ticket en el dispositivo",
                           "por": "Um valor booleano que determina se você deseja imprimir o ticket no dispositivo"
@@ -385,8 +372,7 @@
                         "type": "string",
                         "required": true,
                         "example": "S0392JED",
-                        "description": "An alphanumeric value to identify the invoice or ticket number. It will be printed on the device ticket",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "An alphanumeric value to identify the invoice or ticket number. It will be printed on the device ticket",
                           "spa": "Un valor alfanumérico para identificar el número de factura o ticket. Se imprimirá en el ticket del dispositivo.",
                           "por": "Um valor alfanumérico para identificar o número da fatura ou do bilhete. Ele será impresso no bilhete do dispositivo."
@@ -657,8 +643,7 @@
           {
             "name": "deviceId",
             "in": "path",
-            "description": "identifier of the device that will have a payment intent queued",
-            "x-description-i18n": {
+            "description": {
               "eng": "identifier of the device that will have a payment intent queued",
               "spa": "identificador del dispositivo que tendrá un intento de pago en cola",
               "por": "identificador do dispositivo que terá uma tentativa de pagamento em fila"
@@ -672,8 +657,7 @@
           {
             "name": "paymentIntentId",
             "in": "path",
-            "description": "Payment Intent ID",
-            "x-description-i18n": {
+            "description": {
               "eng": "Payment Intent ID",
               "spa": "ID de intención de pago",
               "por": "ID de intenção de pagamento"
@@ -1080,8 +1064,7 @@
           {
             "name": "startDate",
             "in": "query",
-            "description": "Initial date (YYYY-MM-DD)",
-            "x-description-i18n": {
+            "description": {
               "eng": "Initial date (YYYY-MM-DD)",
               "spa": "Fecha inicial (AAAA-MM-DD)",
               "por": "Data de início (AAAA-MM-DD)"
@@ -1096,8 +1079,7 @@
           {
             "name": "endDate",
             "in": "query",
-            "description": "End date (YYYY-MM-DD)",
-            "x-description-i18n": {
+            "description": {
               "eng": "End date (YYYY-MM-DD)",
               "spa": "Fecha final (AAAA-MM-DD)",
               "por": "Data final (AAAA-MM-DD)"
@@ -1665,8 +1647,7 @@
                 "properties": {
                   "event_channel_devices": {
                     "type": "array",
-                    "description": "Allowed notification channels to receive device event notifications.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Allowed notification channels to receive device event notifications. It is important to keep in mind that you must enter a valid channel, for example, \"email\".",
                       "spa": "Canales de notificación permitidos para recibir notificaciones de eventos del dispositivo. Es importante tener en cuenta que en este campo se debe ingresar un canal válido, por ejemplo, \"email\".",
                       "por": "Canais de notificação permitidos para receber notificações de eventos do dispositivo. É importante ter em mente que neste campo deve ser inserido um canal válido, por exemplo, \"email\"."
@@ -1847,8 +1828,7 @@
                       "type": "array",
                       "items": {
                         "type": "string",
-                        "description": "Allowed notification channels to receive device event notifications. It is important to keep in mind that you must enter a valid channel, for example, \"email\".",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Allowed notification channels to receive device event notifications. It is important to keep in mind that you must enter a valid channel, for example, \"email\".",
                           "spa": "Canales de notificación permitidos para recibir notificaciones de eventos del dispositivo. Es importante tener en cuenta que en este campo se debe ingresar un canal válido, por ejemplo, \"email\".",
                           "por": "Canais de notificação permitidos para receber notificações de eventos do dispositivo. É importante ter em mente que neste campo deve ser inserido um canal válido, por exemplo, \"email\"."

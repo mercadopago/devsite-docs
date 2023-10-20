@@ -18,8 +18,7 @@
                 "properties": {
                   "preapproval_plan_id": {
                     "type": "string",
-                    "description": "Unique subscription plan identifier. This is an optional field. Our model supports creating subscriptions with or without a plan. If you create a subscription with plan we will take the recurring settings from the plan to create the subscription. When you edit the plan we will update the subscriptions. Decide your best model depending on your business.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Unique subscription plan identifier. This is an optional field. Our model supports creating subscriptions with or without a plan. If you create a subscription with plan we will take the recurring settings from the plan to create the subscription. When you edit the plan we will update the subscriptions. Decide your best model depending on your business.",
                       "spa": "Identificador único del plan de suscripción. Este campo es opcional. Nuestro modelo soporta la creación de suscripciones con o sin plan asociado. Si creas una suscripción con un plan, tomaremos la configuración recurrente del plan para crear la suscripción. Cuando edites el plan, actualizaremos las suscripciones. Decide tu mejor modelo en función de tu negocio.",
                       "por": "Identificador único do plano de assinatura. Este é um campo opcional. Nosso modelo suporta a criação de assinaturas com ou sem plano associado. Se você criar uma assinatura com plano, usaremos as configurações recorrentes do plano para criar a assinatura. Quando você editar o plano, atualizaremos as assinaturas. Escolha o melhor modelo dependendo do seu negócio."
@@ -28,8 +27,7 @@
                   },
                   "reason": {
                     "type": "string",
-                    "description": "It is a short description that the subscriber will see during the checkout process and in the notifications. It is only required for subscriptions without a plan.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "It is a short description that the subscriber will see during the checkout process and in the notifications. It is only required for subscriptions without a plan.",
                       "spa": "Es una breve descripción que el suscriptor verá durante el proceso de checkout y en las notificaciones. Solo se requiere para suscripciones sin plan asociado.",
                       "por": "É uma breve descrição que o assinante verá durante o processo de checkout e nas notificações. É obrigatório apenas para assinaturas sem plano associado."
@@ -38,8 +36,7 @@
                   },
                   "external_reference": {
                     "type": "string",
-                    "description": "Reference to sync with your system. This is a free text field to help you with your integration to link the entities. It is only required for subscriptions without a plan.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Reference to sync with your system. This is a free text field to help you with your integration to link the entities. It is only required for subscriptions without a plan.",
                       "spa": "Referencia para sincronizar con tu sistema. Este es un campo de texto libre para ayudarte con tu integración, para vincular las entidades. Solo se requiere para suscripciones sin plan asociado.",
                       "por": "Referência para sincronizar com seu sistema. Este é um campo de texto livre que ajudará na integração com as entidades. Este campo é obrigatório apenas para assinaturas sem plano associado."
@@ -49,8 +46,7 @@
                   "payer_email": {
                     "required": true,
                     "type": "string",
-                    "description": "To create a subscription it is necessary to link it with an email. Then you will get a unique identifier to identify the subscriber.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "To create a subscription it is necessary to link it with an email. Then you will get a unique identifier to identify the subscriber.",
                       "spa": "Para crear una suscripción es necesario vincularla con un correo electrónico. Luego obtendrás un identificador único para identificar al suscriptor.",
                       "por": "Para criar uma assinatura, é necessário associá-la a um e-mail. Feito isso, você terá acesso a um identificador único para identificar o assinante."
@@ -59,8 +55,7 @@
                   },
                   "card_token_id": {
                     "type": "string",
-                    "description": "The card_token_id is a token generated from the form submission with the capture of payment data. When submitting the form, a token is generated that securely represents the card data. To get the card_token_id, see the \"Card\" section of the Checkout API documentation and follow all the steps up to the \"Initialize payment form\" section. It is through this form that it will be possible to obtain the card_token_id.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "The card_token_id is a token generated from the form submission with the capture of payment data. When submitting the form, a token is generated that securely represents the card data. To get the card_token_id, see the \"Card\" section of the Checkout API documentation and follow all the steps up to the \"Initialize payment form\" section. It is through this form that it will be possible to obtain the card_token_id.",
                       "spa": "card_token_id es un token generado al enviar el formulario con la captura de datos de pago. Al enviar el formulario, se genera un token que representa de forma segura los datos de la tarjeta. Para obtener el card_token_id, consulte la sección \"Tarjeta\" de la documentación de Checkout API y siga todos los pasos hasta la sección \"Inicializar formulario de pago\". Es a través de este formulario que será posible obtener el card_token_id.",
                       "por": "O card_token_id é um token gerado a partir do envio do formulário com a captura dos dados para pagamento. Ao enviar o formulário, um token é gerado representando de forma segura os dados do cartão. Para obter o card_token_id, veja a seção \"Cartão\", da documentação Checkout Transparente e siga todas as etapas até a seção \"Inicializar formulário de pagamento\". É por meio deste formulário que será possível obter o card_token_id."
@@ -69,8 +64,7 @@
                   },
                   "auto_recurring": {
                     "type": "object",
-                    "description": "Configuration data for recurrence.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Configuration data for recurrence.",
                       "spa": "Datos de configuración para recurrencia.",
                       "por": "Configuração de recorrência."
@@ -79,8 +73,7 @@
                       "frequency": {
                         "required": true,
                         "type": "number",
-                        "description": "Indicates the frequency value. Along with frequency_type they define the invoice cycle that a subscription will have.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Indicates the frequency value. Along with frequency_type they define the invoice cycle that a subscription will have.",
                           "spa": "Indica el valor de la frecuencia. Junto con frequency_type definen el ciclo de facturación que tendrá una suscripción.",
                           "por": "Indica o valor de frequência. Junto com o frequency_type, define o ciclo de faturamento que uma assinaturá terá."
@@ -90,8 +83,7 @@
                       "frequency_type": {
                         "required": true,
                         "type": "string",
-                        "description": "Indicates the type of frequency. Along with frequency they define the invoice cycle that a subscription will have.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Indicates the type of frequency. Along with frequency they define the invoice cycle that a subscription will have.",
                           "spa": "Indica el tipo de frecuencia. Junto con frequency definen el ciclo de facturación que tendrá una suscripción.",
                           "por": "Indica o valor de frequência. Junto com o frequency, define o ciclo de faturamento que uma assinaturá terá."
@@ -105,8 +97,7 @@
                       "start_date": {
                         "type": "string",
                         "format": "date",
-                        "description": "Date from which the subscription will be active and we start collecting invoices. It is important to emphasize that this field only works together with the `end_date` parameter, that is, if `end_date` is not filled in, the `start_date` will not be recognized.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Date from which the subscription will be active and we start collecting invoices. It is important to emphasize that this field only works together with the `end_date` parameter, that is, if `end_date` is not filled in, the `start_date` will not be recognized.",
                           "spa": "Fecha a partir de la cual la suscripción estará activa y se empezarán a cobrar las facturas. Es importante recalcar que este campo solo funciona en conjunto con el parámetro `end_date`, es decir, si no se completa `end_date`, no se reconocerá `start_date`.",
                           "por": "Data que indica o momento em que a assinatura será ativada e começará a cobrança das faturas. É importante frisar que este campo somente funciona em conjunto com o parâmetro `end_date`, ou seja, se `end_date` não for preenchido, a `start_date` não será reconhecida."
@@ -116,8 +107,7 @@
                       "end_date": {
                         "type": "string",
                         "format": "date",
-                        "description": "Date until which the subscription will be active and we will stop charging invoices.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Date until which the subscription will be active and we will stop charging invoices.",
                           "spa": "Fecha hasta la cual la suscripción estará activa y se dejan de cobrar las facturas.",
                           "por": "Data que indica o fim da assinatura e o momento em que a cobrança não será mais realizada."
@@ -126,8 +116,7 @@
                       },
                       "transaction_amount": {
                         "type": "number",
-                        "description": "Amount we will charge on each invoice.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Amount we will charge on each invoice.",
                           "spa": "Suma que se cobrará en cada factura.",
                           "por": "Valor que será cobrado em cada fatura."
@@ -137,8 +126,7 @@
                       "currency_id": {
                         "required": true,
                         "type": "string",
-                        "description": "ID of the currency used in the payment.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "ID of the currency used in the payment.",
                           "spa": "Identificador de la moneda utilizada en el pago",
                           "por": "Identificador da moeda utilizada no pagamento"
@@ -159,8 +147,7 @@
                   "back_url": {
                     "required": true,
                     "type": "string",
-                    "description": "Successful return url. Use this setting to redirect your customers  to your site after our checkout. It is only required for subscriptions without a plan.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Successful return url. Use this setting to redirect your customers  to your site after our checkout. It is only required for subscriptions without a plan.",
                       "spa": "URL de retorno exitosa. Usa esta configuración para redirigir a tus clientes a tu sitio después de nuestro checkout. Solo se requiere para suscripciones sin plan asociado.",
                       "por": "URL de retorno de sucesso. Use esta configuração para redirecionar o cliente para seu site após o checkout. É obrigatório apenas para assinaturas sem plano associado."
@@ -169,8 +156,7 @@
                   },
                   "status": {
                     "type": "string",
-                    "description": "When you create a subscription, you can make it pending or authorized. Authorized status requires you to indicate a payment method. A pending subscription is waiting for a payment method, that the customer can load into our checkout or by your integration tokenizing a card and adding it to the subscription.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "When you create a subscription, you can make it pending or authorized. Authorized status requires you to indicate a payment method. A pending subscription is waiting for a payment method, that the customer can load into our checkout or by your integration tokenizing a card and adding it to the subscription.",
                       "spa": "Cuando creas una suscripción, puedes dejarla pending o authorized. El estado authorized requiere que indiques un método de pago. Una suscripción pending está esperando un método de pago, que el cliente puede cargar en nuestro checkout o mediante tu integración tokenizando una tarjeta y agregándola a la suscripción.",
                       "por": "Quando você cria uma assinatura, pode fazê-la com pagamento pending ou authorized. Status Authorized requer que você indique um meio de pagamento. Uma assinatura com pagamento pending fica aguardando por um meio de pagamento, até que o cliente acesse o checkout ou através da integtração tokenizando um cartão e adicionando-o à assinatura."
@@ -1040,8 +1026,7 @@
                   "reason": {
                     "required": true,
                     "type": "string",
-                    "description": "It is a short description that the subscriber will see during the checkout process and in the notifications.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "It is a short description that the subscriber will see during the checkout process and in the notifications.",
                       "spa": "Es una breve descripción que el suscriptor verá durante el checkout y en las notificaciones.",
                       "por": "É uma breve descrição que o assinante verá durante o processo de checkout e nas notificações."
@@ -1050,8 +1035,7 @@
                   },
                   "auto_recurring": {
                     "type": "object",
-                    "description": "Configuration data for recurrence.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Configuration data for recurrence.",
                       "spa": "Información de configuración para la recurrencia.",
                       "por": "Configuração da data para recorrência."
@@ -1060,8 +1044,7 @@
                       "frequency": {
                         "required": true,
                         "type": "number",
-                        "description": "Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.",
                           "spa": "Indica el valor de la frecuencia. Junto con frequency_type definen el ciclo de facturación que tendrá una suscripción.",
                           "por": "Indica o valor de frequência. Junto com frequency_type define o ciclo de cobrança que a assinaturá terá."
@@ -1071,8 +1054,7 @@
                       "frequency_type": {
                         "required": true,
                         "type": "string",
-                        "description": "Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.",
                           "spa": "Indica el tipo de frecuencia. Junto con frequency definen el ciclo de facturación que tendrá una suscripción.",
                           "por": "Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá."
@@ -1085,8 +1067,7 @@
                       },
                       "repetitions": {
                         "type": "number",
-                        "description": "It is optional and is used to create a limited subscription. Indicates the number of times that we will repeat the recurrence cycle. If this param is not defined, subscription does not end until some of the parties cancel it.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "It is optional and is used to create a limited subscription. Indicates the number of times that we will repeat the recurrence cycle. If this param is not defined, subscription does not end until some of the parties cancel it.",
                           "spa": "Es opcional y se utiliza para crear una suscripción limitada. Indica el número de veces que repetiremos el ciclo de recurrencia. Si no se define este param, la suscripción no finaliza hasta que alguna de las partes la cancela.",
                           "por": "É opcional e utilizado para criar uma assinatura limitada. Indica o número de itens que serão repetidos no ciclo de recorrência. Se este parâmetro não for definido, a assinatura não será finaliza até que uma das partes cancele."
@@ -1095,8 +1076,7 @@
                       },
                       "billing_day": {
                         "type": "number",
-                        "description": "Day of the month that the subscription will always be charged. It only accepts values between 1 and 28. This setting is only available for subscriptions with a plan associated.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Day of the month that the subscription will always be charged. It only accepts values between 1 and 28. This setting is only available for subscriptions with a plan associated.",
                           "spa": "Día del mes en que se cobrará la suscripción. Solo acepta valores entre 1 y 28. Esta configuración solo está disponible para suscripciones con un plan asociado.",
                           "por": "Dia do mês que a assinatura será comprada. Apenas aceita valores entre 1 e 28. Esta configuração está disponível somente para assinaturas com plano associado."
@@ -1105,8 +1085,7 @@
                       },
                       "billing_day_proportional": {
                         "type": "boolean",
-                        "description": "Charge a proportional amount to the billing day at the time of registration.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Charge a proportional amount to the billing day at the time of registration.",
                           "spa": "Cobra una suma proporcional al día de facturación en el momento del registro.",
                           "por": "Cobra um valor proporcional ao dia do faturamento no momento do cadastro."
@@ -1119,8 +1098,7 @@
                       },
                       "free_trial": {
                         "type": "object",
-                        "description": "Free trial data.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Free trial data.",
                           "spa": "Información sobre prueba gratuita.",
                           "por": "Informação de teste grátis"
@@ -1128,8 +1106,7 @@
                         "properties": {
                           "frequency": {
                             "type": "number",
-                            "description": "Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.",
                               "spa": "Indica el valor de la frecuencia. Junto con frequency_type definen el ciclo de facturación que tendrá una suscripción.",
                               "por": "Indica o valor de frequência. Junto com frequency_type define o ciclo de cobrança que a assinaturá terá."
@@ -1138,8 +1115,7 @@
                           },
                           "frequency_type": {
                             "type": "string",
-                            "description": "Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.",
                               "spa": "Indica el tipo de frecuencia. Junto con frequency definen el ciclo de facturación que tendrá una suscripción.",
                               "por": "Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá."
@@ -1154,8 +1130,7 @@
                       },
                       "transaction_amount": {
                         "type": "number",
-                        "description": "Amount that will be charged on each invoice.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Amount that will be charged on each invoice.",
                           "spa": "Importe que se cobrará en cada factura.",
                           "por": "Valor que será cobrado em cada fatura."
@@ -1165,8 +1140,7 @@
                       "currency_id": {
                         "required": true,
                         "type": "string",
-                        "description": "ID of the currency used in the payment.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "ID of the currency used in the payment.",
                           "spa": "Identificador de la moneda utilizada en el pago",
                           "por": "Identificador da moeda utilizada no pagamento"
@@ -1186,8 +1160,7 @@
                   },
                   "payment_methods_allowed": {
                     "type": "object",
-                    "description": "Payment methods enabled at checkout.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Payment methods enabled at checkout.",
                       "spa": "Métodos de pago habilitados en el checkout.",
                       "por": "Meios de pagamento habilitados no checkout."
@@ -1195,8 +1168,7 @@
                     "properties": {
                       "payment_types": {
                         "type": "array",
-                        "description": "Payment types allowed in the payment flow.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Payment types allowed in the payment flow.",
                           "spa": "Tipos de pago permitidos en el flujo de pago.",
                           "por": "Tipos de pagamento permitidos no fluxo de pagamento."
@@ -1204,8 +1176,7 @@
                         "properties": {
                           "id": {
                             "type": "string",
-                            "description": "Payment type identifier.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Payment type identifier.",
                               "spa": "Identificador de tipo de pago.",
                               "por": "Identificador do tipo de pagamento."
@@ -1216,8 +1187,7 @@
                       },
                       "payment_methods": {
                         "type": "array",
-                        "description": "Payment methods allowed in the payment flow.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Payment methods allowed in the payment flow.",
                           "spa": "Métodos de pago permitidos en el flujo de pago.",
                           "por": "Meios de pagamento permitidos no fluxo de pagamento."
@@ -1225,8 +1195,7 @@
                         "properties": {
                           "id": {
                             "type": "string",
-                            "description": "Payment method identifier.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Payment method identifier.",
                               "spa": "Identificador del medio de pago",
                               "por": "Id do meio de pagamento"
@@ -1240,8 +1209,7 @@
                   "back_url": {
                     "required": true,
                     "type": "string",
-                    "description": "Successful return URL. Use this setting to redirect your customers to your site after our checkout.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Successful return URL. Use this setting to redirect your customers to your site after our checkout.",
                       "spa": "URL de retorno exitosa. Use esta configuración para redirigir a tus clientes a su sitio después de nuestro checkout.",
                       "por": "URL de retorno de sucesso. Use esta configuração para redirecionar seus clientes para o seu site após o checkout."
@@ -1563,8 +1531,7 @@
                       },
                       "back_url": {
                         "type": "string",
-                        "description": "Successful return URL. Use this setting to redirect your customers to your site after our checkout.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Successful return URL. Use this setting to redirect your customers to your site after our checkout.",
                           "spa": "URL de retorno exitosa. Use esta configuración para redirigir a tus clientes a su sitio después de nuestro checkout.",
                           "por": "URL de retorno de sucesso. Use esta configuração para redirecionar seus clientes para o seu site após o checkout."
@@ -1963,8 +1930,7 @@
           {
             "name": "id",
             "in": "path",
-            "description": "Subscription identifier",
-            "x-description-i18n": {
+            "description": {
               "eng": "Subscription identifier",
               "spa": "Identificador de suscripción",
               "por": "Identificador de assinatura"
@@ -2620,8 +2586,7 @@
           {
             "name": "id",
             "in": "path",
-            "description": "Unique subscription identifier you want to modify.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Unique subscription identifier you want to modify.",
               "spa": "Identificador único de suscripción que deseas modificar.",
               "por": "Identificador de assinatura exclusivo que deseja modificar."
@@ -2642,8 +2607,7 @@
                   "reason": {
                     "type": "string",
                     "example": "Yoga classes.",
-                    "description": "It is a short description that the subscriber will see during the checkout process and in the notifications. It is only required for subscriptions without a plan.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "It is a short description that the subscriber will see during the checkout process and in the notifications. It is only required for subscriptions without a plan.",
                       "spa": "Es una breve descripción que el suscriptor verá durante el proceso de checkout y en las notificaciones. Solo se requiere para suscripciones sin plan asociado.",
                       "por": "É uma breve descrição que o assinante verá durante o processo de checkout e nas notificações. É obrigatório apenas para assinaturas sem plano associado."
@@ -2652,8 +2616,7 @@
                   "external_reference": {
                     "type": "string",
                     "example": 23546246234,
-                    "description": "Reference to sync with your system. This is a free text field to help you with your integration to link the entities.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Reference to sync with your system. This is a free text field to help you with your integration to link the entities.",
                       "spa": "Referencia para sincronizar con tu sistema. Este es un campo de texto libre para ayudarte con tu integración para vincular las entidades.",
                       "por": "Referência para sincronizar com seu sistema. Este é um campo de texto livre para ajudar com a integração para vincular as entidades."
@@ -2662,8 +2625,7 @@
                   "back_url": {
                     "type": "string",
                     "example": "https://www.mercadopago.com.ar",
-                    "description": "Successful return URL. Use this setting to redirect your customers after our checkout to your site.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Successful return URL. Use this setting to redirect your customers after our checkout to your site.",
                       "spa": "URL de retorno exitosa. Use esta configuración para redirigir a tus clientes después de nuestro checkout a tu sitio.",
                       "por": "URL de retorno de sucesso. Use esta configuração para redirecionar seus clientes ao seu site após o checkout."
@@ -2671,8 +2633,7 @@
                   },
                   "auto_recurring": {
                     "type": "object",
-                    "description": "Configuration data for recurrence.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Configuration data for recurrence.",
                       "spa": "Información de configuración para la recurrencia.",
                       "por": "Configuração da data para recorrência."
@@ -2680,8 +2641,7 @@
                     "properties": {
                       "transaction_amount": {
                         "type": "number",
-                        "description": "Amount we will charge on each invoice.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Amount we will charge on each invoice.",
                           "spa": "Suma que se cobrará en cada factura.",
                           "por": "Valor que será cobrado em cada fatura."
@@ -2690,8 +2650,7 @@
                       },
                       "currency_id": {
                         "type": "string",
-                        "description": "ID of the currency used in the payment.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "ID of the currency used in the payment.",
                           "spa": "Identificador de la moneda utilizada en el pago",
                           "por": "Identificador da moeda utilizada no pagamento"
@@ -2712,8 +2671,7 @@
                   "card_token_id": {
                     "type": "number",
                     "example": 123123123,
-                    "description": "Unique identifier to retrieve data from the card used as a payment method.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Unique identifier to retrieve data from the card used as a payment method.",
                       "spa": "Identificador único para recuperar datos de la tarjeta utilizada como medio de pago.",
                       "por": "Identificador único para recuperar dados do cartão utilizado como meio de pagamento."
@@ -3417,8 +3375,7 @@
             "name": "collector_id",
             "in": "path",
             "required": true,
-            "description": "ID of the collector requesting the subscriptions.",
-            "x-description-i18n": {
+            "description": {
               "eng": "ID of the collector requesting the subscriptions.",
               "spa": "ID del collector que solicita las suscripciones.",
               "por": "ID do collector solicitando a assinatura"
@@ -3431,8 +3388,7 @@
           {
             "name": "preapproval_plan_id",
             "in": "path",
-            "description": "Specifies a Plan ID for filtering results from the export.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Specifies a Plan ID for filtering results from the export.",
               "spa": "Especifica un Plan ID para filtrar los resultados de la exportación.",
               "por": "Especifica um Plan ID para filtrar os resultados da exportação."
@@ -3445,8 +3401,7 @@
           {
             "name": "status",
             "in": "path",
-            "description": "Specifies a status for filtering results from the export. Can be null, one or more than one.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Specifies a status for filtering results from the export. Can be null, one or more than one.",
               "spa": "Especifica un status para filtrar los resultados exportados. Puede ser null, uno o más de uno.",
               "por": "Especifica um Plan ID para filtrar os resultados da exportação. Pode ser null, um ou mais do que um."
@@ -3465,8 +3420,7 @@
           {
             "name": "sort",
             "in": "path",
-            "description": "Specifies the type of sorting selected to retrieve the subscriptions. You must indicate a field and a sort type with the following format field_name:sort_type.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Specifies the type of sorting selected to retrieve the subscriptions. You must indicate a field and a sort type with the following format field_name:sort_type.",
               "spa": "Especifica el tipo de clasificación seleccionado para recuperar las suscripciones. Debes indicar un campo y un tipo de clasificación con el siguiente formato ield_name:sort_type.",
               "por": "Especifica o tipo de classificação selecionado para recuperar as assinaturas. Você deve indicar um campo e um tipo de classificação com o seguinte formato field_name:sort_type."
@@ -3505,8 +3459,7 @@
                     "id": {
                       "type": "number",
                       "example": "2c9380847cc2c422017cc489094f0001",
-                      "description": "Unique subscription identifier.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Unique subscription identifier.",
                         "spa": "Identificador único de suscripción.",
                         "por": "Identificador único de assinatura"
@@ -3515,8 +3468,7 @@
                     "payer_id": {
                       "type": "number",
                       "example": 123123123,
-                      "description": "Unique customer identifier. This is created from the email you used to create the subscription.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Unique customer identifier. This is created from the email you used to create the subscription.",
                         "spa": "Identificador único de cliente. Se crea a partir del correo electrónico que utilizaste para crear la suscripción.",
                         "por": "Identificador único do cliente. É criado a partir do e-mail utilizado para criar a assinatura."
@@ -3525,8 +3477,7 @@
                     "back_url": {
                       "required": true,
                       "type": "string",
-                      "description": "Successful return URL. Use this setting to redirect your customers to your site after our checkout.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Successful return URL. Use this setting to redirect your customers to your site after our checkout.",
                         "spa": "URL de retorno exitosa. Use esta configuración para redirigir a tus clientes a su sitio después de nuestro checkout.",
                         "por": "URL de retorno de sucesso. Use esta configuração para redirecionar seus clientes para o seu site após o checkout."
@@ -3536,8 +3487,7 @@
                     "application_id": {
                       "type": "number",
                       "example": 1234567812345678,
-                      "description": "Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.",
                         "spa": "ID único que identifica tu aplicación/integración. Una de las claves del par que componen las credenciales que identifican una aplicación/integración en tu cuenta.",
                         "por": "ID único que identifica sua aplicação/integração. Uma das chaves do par que compõe as credenciais que identifica uma aplicação/integração na sua conta."
@@ -3557,8 +3507,7 @@
                     "reason": {
                       "required": true,
                       "type": "string",
-                      "description": "It is a short description that the subscriber will see during the checkout process and in the notifications.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "It is a short description that the subscriber will see during the checkout process and in the notifications.",
                         "spa": "Es una breve descripción que el suscriptor verá durante el checkout y en las notificaciones.",
                         "por": "É uma breve descrição que o assinante verá durante o processo de checkout e nas notificações."
@@ -3568,8 +3517,7 @@
                     "external_reference": {
                       "type": "string",
                       "example": 23546246234,
-                      "description": "Reference to sync with your system. This is a free text field to help you with your integration to link the entities.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Reference to sync with your system. This is a free text field to help you with your integration to link the entities.",
                         "spa": "Referencia para sincronizar con tu sistema. Este es un campo de texto libre para ayudarte con tu integración para vincular las entidades.",
                         "por": "Referência para sincronizar com seu sistema. Este é um campo de texto livre para ajudar com a integração para vincular as entidades."
@@ -3578,8 +3526,7 @@
                     "date_created": {
                       "type": "string",
                       "example": "2022-01-01T11:12:25.892-04:00",
-                      "description": "Creation date",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Creation date",
                         "spa": "Fecha de creación",
                         "por": "Data de criação"
@@ -3588,8 +3535,7 @@
                     "last_modified": {
                       "type": "string",
                       "example": "2022-01-01T11:12:25.892-04:00",
-                      "description": "Date of last modification",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Date of last modification",
                         "spa": "Fecha de última modificación.",
                         "por": "Data da última modificação."
@@ -3598,8 +3544,7 @@
                     "init_point": {
                       "type": "string",
                       "example": "https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084726fca480172750000000000",
-                      "description": "URL to checkout to add or modify payment method.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "URL to checkout to add or modify payment method.",
                         "spa": "URL al checkout para agregar o modificar el método de pago.",
                         "por": "URL para o checkout para adicionar ou modificar um meio de pagamento."
@@ -3607,8 +3552,7 @@
                     },
                     "preapproval_plan_id": {
                       "type": "string",
-                      "description": "Unique preapproval plan identifier. This parameter is only available when it is a subscription with a plan and indicates from which plan the subscription was created.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Unique preapproval plan identifier. This parameter is only available when it is a subscription with a plan and indicates from which plan the subscription was created.",
                         "spa": "Identificador único de la suscripción. Este parámetro solo está disponible cuando se trata de una suscripción con plan asociado e indica desde qué plan se creó la suscripción.",
                         "por": "Identificador único do plano de assinatura. Este parâmetro está disponível somente quando se trata de uma assinatura com um plano associado e indica a partir de qual plano foi criado."
@@ -3617,8 +3561,7 @@
                     },
                     "frequency": {
                       "type": "number",
-                      "description": "Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.",
                         "spa": "Indica el valor de la frecuencia. Junto con frequency_type definen el ciclo de facturación que tendrá una suscripción.",
                         "por": "Indica o valor de frequência. Junto com frequency_type define o ciclo de cobrança que a assinaturá terá."
@@ -3627,8 +3570,7 @@
                     },
                     "frequency_type": {
                       "type": "string",
-                      "description": "Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.",
                         "spa": "Indica el tipo de frecuencia. Junto con frequency definen el ciclo de facturación que tendrá una suscripción.",
                         "por": "Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá."
@@ -3641,8 +3583,7 @@
                     },
                     "transaction_amount": {
                       "type": "number",
-                      "description": "Amount we will charge on each invoice.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Amount we will charge on each invoice.",
                         "spa": "Suma que se cobrará en cada factura.",
                         "por": "Valor que será cobrado em cada fatura."
@@ -3651,8 +3592,7 @@
                     },
                     "currency_id": {
                       "type": "string",
-                      "description": "ID of the currency used in the payment.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "ID of the currency used in the payment.",
                         "spa": "Identificador de la moneda utilizada en el pago",
                         "por": "Identificador da moeda utilizada no pagamento"
@@ -3671,8 +3611,7 @@
                     "start_date": {
                       "type": "string",
                       "format": "date",
-                      "description": "Date from which the subscription will be active and we start collecting invoices.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Date from which the subscription will be active and we start collecting invoices.",
                         "spa": "Fecha a partir de la cual la suscripción estará activa y se empiezan a cobrar las facturas.",
                         "por": "Data que indica o momento em que a assinatura será ativada e começará a cobrança das faturas."
@@ -3682,8 +3621,7 @@
                     "end_date": {
                       "type": "string",
                       "format": "date",
-                      "description": "Date until which the subscription will be active and we will stop charging invoices.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Date until which the subscription will be active and we will stop charging invoices.",
                         "spa": "Fecha hasta la cual la suscripción estará activa y se dejan de cobrar las facturas.",
                         "por": "Data que indica o fim da assinatura e o momento em que a cobrança não será mais realizada."
@@ -3697,8 +3635,7 @@
                     },
                     "billing_day": {
                       "type": "number",
-                      "description": "Day of the month that the subscription will always be charged. It only accepts values between 1 and 28.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Day of the month that the subscription will always be charged. It only accepts values between 1 and 28.",
                         "spa": "Día del mes en que siempre se cobrará la suscripción. Solo acepta valores entre 1 y 28.",
                         "por": "Dia do mês no qual a assinatura será cobrada. Aceita apenas valores entre 1 e 28."
@@ -3707,8 +3644,7 @@
                     },
                     "billing_day_proportional": {
                       "type": "boolean",
-                      "description": "Charge a proportional amount to the billing day at the time of registration.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Charge a proportional amount to the billing day at the time of registration.",
                         "spa": "Cobra una suma proporcional al día de facturación en el momento del registro.",
                         "por": "Cobra um valor proporcional ao dia do faturamento no momento do cadastro."
@@ -3721,8 +3657,7 @@
                     },
                     "quotas": {
                       "type": "number",
-                      "description": "How many payments are going to be made.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "How many payments are going to be made.",
                         "spa": "Cantidad de pagos que se realizarán.",
                         "por": "Quantos pagamentos serão feitos."
@@ -3731,8 +3666,7 @@
                     },
                     "charged_quantity": {
                       "type": "number",
-                      "description": "Total charged of charged quotas.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Total charged of charged quotas.",
                         "spa": "Total cobrado de cuotas.",
                         "por": "Total cobrado de parcelas"
@@ -3741,8 +3675,7 @@
                     },
                     "pending_charged_quantity": {
                       "type": "number",
-                      "description": "Pending quotas to charge.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Pending quotas to charge.",
                         "spa": "Cuotas pendientes a ser cobradas.",
                         "por": "Parcelas pendentes a serem cobradas."
@@ -3751,8 +3684,7 @@
                     },
                     "charge_amount": {
                       "type": "number",
-                      "description": "Total amount collected to date.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Total amount collected to date.",
                         "spa": "Importe total recaudado hasta la fecha.",
                         "por": "Valor total cobrado até o momento."
@@ -3761,8 +3693,7 @@
                     },
                     "pending_charge_amount": {
                       "type": "number",
-                      "description": "Amount pending collection.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Amount pending collection.",
                         "spa": "Importe pendiente de cobro.",
                         "por": "Valor pendente de cobrança"
@@ -3787,8 +3718,7 @@
                     },
                     "last_charge_amount": {
                       "type": "number",
-                      "description": "Amount of last payment of this subscription.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Amount of last payment of this subscription.",
                         "spa": "Importe del último pago de esta suscripción.",
                         "por": "Valor do último pagamento desta assinatura."
@@ -3797,8 +3727,7 @@
                     },
                     "next_payment_date": {
                       "type": "date",
-                      "description": "Date of the next payment debit.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Date of the next payment debit.",
                         "spa": "Fecha del próximo débito.",
                         "por": "Data do próximo débito."
@@ -3807,8 +3736,7 @@
                     },
                     "payment_method_id": {
                       "type": "string",
-                      "description": "Payment method configured.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Payment method configured.",
                         "spa": "Método de pago configurado.",
                         "por": "Meio de pagamento configurado."
@@ -3817,8 +3745,7 @@
                     },
                     "card_id": {
                       "type": "number",
-                      "description": "Unique identifier to retrieve data from the card used as a payment method.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Unique identifier to retrieve data from the card used as a payment method.",
                         "spa": "Identificador único para recuperar datos de la tarjeta utilizada como medio de pago.",
                         "por": "Identificador único para recuperar dados do cartão utilizado como meio de pagamento."
@@ -3832,8 +3759,7 @@
                     },
                     "payer_first_name": {
                       "type": "string",
-                      "description": "Customer name.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Customer name.",
                         "spa": "Nombre del cliente.",
                         "por": "Nome do cliente."
@@ -3842,8 +3768,7 @@
                     },
                     "payer_last_name": {
                       "type": "string",
-                      "description": "Customer lastname.",
-                      "x-description-i18n": {
+                      "description": {
                         "eng": "Customer lastname.",
                         "spa": "Apellido del cliente.",
                         "por": "Sobrenome do cliente"
@@ -3935,8 +3860,7 @@
           {
             "name": "id",
             "in": "path",
-            "description": "Authorized payment identifier",
-            "x-description-i18n": {
+            "description": {
               "eng": "Authorized payment identifier",
               "spa": "Identificador de pago autorizado",
               "por": "Identificador de pagamento autorizado"
@@ -4422,8 +4346,7 @@
           {
             "name": "id",
             "in": "path",
-            "description": "Unique ID that identifies a invoice.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Unique ID that identifies a invoice.",
               "spa": "ID único que identifica una factura.",
               "por": "ID único que identifica uma fatura."
@@ -4437,8 +4360,7 @@
           {
             "name": "preapproval_id",
             "in": "path",
-            "description": "Unique subscription ID to find related invoices.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Unique subscription ID to find related invoices.",
               "spa": "ID de suscripción único para encontrar facturas relacionadas.",
               "por": "ID único de assinatura para encontrar faturas relacionadas."
@@ -4452,8 +4374,7 @@
           {
             "name": "payment_id",
             "in": "path",
-            "description": "Unique payment ID to find related invoice.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Unique payment ID to find related invoice.",
               "spa": "ID único de pago para encontrar la factura relacionada.",
               "por": "ID único do pagamento para encontrar faturas relacionadas."
@@ -4467,8 +4388,7 @@
           {
             "name": "payer_id",
             "in": "path",
-            "description": "Unique payer ID to find your related invoices.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Unique payer ID to find your related invoices.",
               "spa": "ID de pagador único para encontrar sus facturas relacionadas.",
               "por": "ID único do pagamento para encontrar suas notas relacionadas."
@@ -4482,8 +4402,7 @@
           {
             "name": "offset",
             "in": "path",
-            "description": "Specifies the offset of the first item in the collection to return.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Specifies the offset of the first item in the collection to return.",
               "spa": "Especifica el offset del primer item de la cobranza a ser retornado.",
               "por": "Especifica o offset do primeiro item da cobrança a ser retornado."
@@ -4496,8 +4415,7 @@
           {
             "name": "limit",
             "in": "path",
-            "description": "Specifies the maximum number of items to return.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Specifies the maximum number of items to return.",
               "spa": "Especifica el número máximo de ítems a ser retornados.",
               "por": "Especifica o número máximo de itens a serem retornados."
@@ -4561,8 +4479,7 @@
                       "type": "array",
                       "items": {
                         "type": "object",
-                        "description": "Invoices result item.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Invoices result item.",
                           "spa": "Elemento de resultado de las facturas.",
                           "por": "Item de resultado de faturas."
@@ -4570,8 +4487,7 @@
                         "properties": {
                           "id": {
                             "type": "number",
-                            "description": "Unique invoice identifier.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Unique invoice identifier.",
                               "spa": "Identificador único de factura.",
                               "por": "Identificador único de fatura"
@@ -4580,8 +4496,7 @@
                           },
                           "type": {
                             "type": "string",
-                            "description": "Type of invoice generated based on recurrence.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Type of invoice generated based on recurrence.",
                               "spa": "Tipo de factura generada en base a la recurrencia.",
                               "por": "Tipo de fatura gerada com base na recorrência."
@@ -4593,8 +4508,7 @@
                           },
                           "date_created": {
                             "type": "string",
-                            "description": "Invoice creation date.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Invoice creation date.",
                               "spa": "Fecha de creación de la factura.",
                               "por": "Data de criação da fatura."
@@ -4603,8 +4517,7 @@
                           },
                           "last_modified": {
                             "type": "string",
-                            "description": "Invoice last modified date. An invoice is modified when an update occurs in collection attempts or payment.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Invoice last modified date. An invoice is modified when an update occurs in collection attempts or payment.",
                               "spa": "Fecha de última modificación de la factura. Una factura se modifica cuando se produce una actualización en los intentos de cobro o pago.",
                               "por": "Data da última modificação da fatura. Uma fatura é modificada quando ocorre uma atualização nas tentativas de cobrança ou pagamento."
@@ -4613,8 +4526,7 @@
                           },
                           "preapproval_id": {
                             "type": "string",
-                            "description": "Subscription ID for which the invoice was created.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Subscription ID for which the invoice was created.",
                               "spa": "ID de suscripción para el que se creó la factura.",
                               "por": "ID de assinatura para qual a fatura foi criada."
@@ -4623,8 +4535,7 @@
                           },
                           "reason": {
                             "type": "string",
-                            "description": "It is a short description that the subscriber will see during the checkout process and in the notifications.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "It is a short description that the subscriber will see during the checkout process and in the notifications.",
                               "spa": "Es una breve descripción que el suscriptor verá durante el checkout y en las notificaciones.",
                               "por": "É uma breve descrição que o assinante verá durante o processo de checkout e nas notificações."
@@ -4634,8 +4545,7 @@
                           "external_reference": {
                             "type": "string",
                             "example": 23546246234,
-                            "description": "Reference to sync with your system. This is a free text field to help you with your integration to link the entities.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Reference to sync with your system. This is a free text field to help you with your integration to link the entities.",
                               "spa": "Referencia para sincronizar con tu sistema. Este es un campo de texto libre para ayudarte con tu integración para vincular las entidades.",
                               "por": "Referência para sincronizar com seu sistema. Este é um campo de texto livre para ajudar com a integração para vincular as entidades."
@@ -4643,8 +4553,7 @@
                           },
                           "currency_id": {
                             "type": "string",
-                            "description": "ID of the currency used in the payment.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "ID of the currency used in the payment.",
                               "spa": "Identificador de la moneda utilizada en el pago",
                               "por": "Identificador da moeda utilizada no pagamento"
@@ -4662,8 +4571,7 @@
                           },
                           "transaction_amount": {
                             "type": "number",
-                            "description": "Amount we will charge on each invoice.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Amount we will charge on each invoice.",
                               "spa": "Suma que se cobrará en cada factura.",
                               "por": "Valor que será cobrado em cada fatura."
@@ -4672,8 +4580,7 @@
                           },
                           "debit_date": {
                             "type": "date",
-                            "description": "Date on which we will try to make the payment.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Date on which we will try to make the payment.",
                               "spa": "Fecha en la que intentaremos realizar el pago.",
                               "por": "Data na qual tentaremos realizar o pagamento."
@@ -4682,8 +4589,7 @@
                           },
                           "retry_attempt": {
                             "type": "number",
-                            "description": "How many times we try to collect the authorized payment.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "How many times we try to collect the authorized payment.",
                               "spa": "Cantidad de veces que intentaremos cobrar el pago autorizado.",
                               "por": "Quantidade de vezes que tentaremos cobrar o pagamento autorizado."
@@ -4692,8 +4598,7 @@
                           },
                           "status": {
                             "type": "string",
-                            "description": "Status of the invoice.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Status of the invoice.",
                               "spa": "Estado de la factura.",
                               "por": "Status da fatura."
@@ -4708,8 +4613,7 @@
                           },
                           "summarized": {
                             "type": "string",
-                            "description": "Summarization status of the invoice result in the subscription.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Summarization status of the invoice result in the subscription.",
                               "spa": "Estado de resumen del resultado de la factura en la suscripción.",
                               "por": "Resumo do status da fatura na assinatura"
@@ -4726,8 +4630,7 @@
                             "properties": {
                               "id": {
                                 "type": "number",
-                                "description": "Unique payment identifier.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Unique payment identifier.",
                                   "spa": "Identificador único del pago.",
                                   "por": "Identificador único de pagamento."
@@ -4736,8 +4639,7 @@
                               },
                               "status": {
                                 "type": "string",
-                                "description": "Payment status.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Payment status.",
                                   "spa": "Estado del pago",
                                   "por": "Estado do pagamento"
@@ -4757,8 +4659,7 @@
                               },
                               "status_detail": {
                                 "type": "string",
-                                "description": "Payment status detail.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Payment status detail.",
                                   "spa": "Detalle del estado de pago.",
                                   "por": "Detalhe do status de pagamento."
@@ -4892,8 +4793,7 @@
           {
             "name": "id",
             "in": "path",
-            "description": "Subscription plan identifier",
-            "x-description-i18n": {
+            "description": {
               "eng": "Subscription plan identifier",
               "spa": "Identificador del plan de suscripción",
               "por": "Identificador do plano de assinatura"
@@ -5224,8 +5124,7 @@
                       },
                       "back_url": {
                         "type": "string",
-                        "description": "Successful return URL. Use this setting to redirect your customers to your site after our checkout.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Successful return URL. Use this setting to redirect your customers to your site after our checkout.",
                           "spa": "URL de retorno exitosa. Use esta configuración para redirigir a tus clientes a su sitio después de nuestro checkout.",
                           "por": "URL de retorno de sucesso. Use esta configuração para redirecionar seus clientes para o seu site após o checkout."
@@ -5417,8 +5316,7 @@
           {
             "name": "id",
             "in": "path",
-            "description": "Subscription plan identifier",
-            "x-description-i18n": {
+            "description": {
               "eng": "Subscription plan identifier",
               "spa": "Identificador del plan de suscripción",
               "por": "Identificador do plano de assinatura"
@@ -5438,8 +5336,7 @@
                 "properties": {
                   "reason": {
                     "type": "string",
-                    "description": "It is a short description that the subscriber will see during the checkout process and in the notifications.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "It is a short description that the subscriber will see during the checkout process and in the notifications.",
                       "spa": "Es una breve descripción que el suscriptor verá durante el checkout y en las notificaciones.",
                       "por": "É uma breve descrição que o assinante verá durante o processo de checkout e nas notificações."
@@ -5448,8 +5345,7 @@
                   },
                   "auto_recurring": {
                     "type": "object",
-                    "description": "Configuration data for recurrence.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Configuration data for recurrence.",
                       "spa": "Información de configuración para la recurrencia.",
                       "por": "Configuração da data para recorrência."
@@ -5457,8 +5353,7 @@
                     "properties": {
                       "frequency": {
                         "type": "number",
-                        "description": "Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.",
                           "spa": "Indica el valor de la frecuencia. Junto con frequency_type definen el ciclo de facturación que tendrá una suscripción.",
                           "por": "Indica o valor de frequência. Junto com frequency_type define o ciclo de cobrança que a assinaturá terá."
@@ -5468,8 +5363,7 @@
                       "frequency_type": {
                         "required": true,
                         "type": "string",
-                        "description": "Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.",
                           "spa": "Indica el tipo de frecuencia. Junto con frequency definen el ciclo de facturación que tendrá una suscripción.",
                           "por": "Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá."
@@ -5482,8 +5376,7 @@
                       },
                       "repetitions": {
                         "type": "number",
-                        "description": "It is optional and is used to create a limited subscription. Indicates the number of times that we will repeat the recurrence cycle. If this param is not defined, subscription does not end until some of the parties cancel it.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "It is optional and is used to create a limited subscription. Indicates the number of times that we will repeat the recurrence cycle. If this param is not defined, subscription does not end until some of the parties cancel it.",
                           "spa": "Es opcional y se utiliza para crear una suscripción limitada. Indica el número de veces que repetiremos el ciclo de recurrencia. Si no se define este param, la suscripción no finaliza hasta que alguna de las partes la cancela.",
                           "por": "É opcional e utilizado para criar uma assinatura limitada. Indica o número de itens que serão repetidos no ciclo de recorrência. Se este parâmetro não for definido, a assinatura não será finaliza até que uma das partes cancele."
@@ -5492,8 +5385,7 @@
                       },
                       "billing_day": {
                         "type": "number",
-                        "description": "Day of the month that the subscription will always be charged. It only accepts values between 1 and 28.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Day of the month that the subscription will always be charged. It only accepts values between 1 and 28.",
                           "spa": "Día del mes en que siempre se cobrará la suscripción. Solo acepta valores entre 1 y 28.",
                           "por": "Dia do mês no qual a assinatura será cobrada. Aceita apenas valores entre 1 e 28."
@@ -5502,8 +5394,7 @@
                       },
                       "billing_day_proportional": {
                         "type": "boolean",
-                        "description": "Charge a proportional amount to the billing day at the time of registration.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Charge a proportional amount to the billing day at the time of registration.",
                           "spa": "Cobra una suma proporcional al día de facturación en el momento del registro.",
                           "por": "Cobra um valor proporcional ao dia do faturamento no momento do cadastro."
@@ -5516,8 +5407,7 @@
                       },
                       "free_trial": {
                         "type": "object",
-                        "description": "Free trial data.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Free trial data.",
                           "spa": "Información sobre prueba gratuita.",
                           "por": "Informação de teste grátis"
@@ -5525,8 +5415,7 @@
                         "properties": {
                           "frequency": {
                             "type": "number",
-                            "description": "Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.",
                               "spa": "Indica el valor de la frecuencia. Junto con frequency_type definen el ciclo de facturación que tendrá una suscripción.",
                               "por": "Indica o valor de frequência. Junto com frequency_type define o ciclo de cobrança que a assinaturá terá."
@@ -5536,8 +5425,7 @@
                           "frequency_type": {
                             "required": true,
                             "type": "string",
-                            "description": "Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.",
                               "spa": "Indica el tipo de frecuencia. Junto con frequency definen el ciclo de facturación que tendrá una suscripción.",
                               "por": "Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá."
@@ -5552,8 +5440,7 @@
                       },
                       "transaction_amount": {
                         "type": "number",
-                        "description": "Amount we will charge on each invoice.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Amount we will charge on each invoice.",
                           "spa": "Suma que se cobrará en cada factura.",
                           "por": "Valor que será cobrado em cada fatura."
@@ -5562,8 +5449,7 @@
                       },
                       "currency_id": {
                         "type": "string",
-                        "description": "ID of the currency used in the payment.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "ID of the currency used in the payment.",
                           "spa": "Identificador de la moneda utilizada en el pago",
                           "por": "Identificador da moeda utilizada no pagamento"
@@ -5583,8 +5469,7 @@
                   },
                   "payment_methods_allowed": {
                     "type": "object",
-                    "description": "Payment methods enabled at checkout.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Payment methods enabled at checkout.",
                       "spa": "Métodos de pago habilitados en el checkout.",
                       "por": "Meios de pagamento habilitados no checkout."
@@ -5592,8 +5477,7 @@
                     "properties": {
                       "payment_types": {
                         "type": "array",
-                        "description": "Payment types allowed in the payment flow.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Payment types allowed in the payment flow.",
                           "spa": "Tipos de pago permitidos en el flujo de pago.",
                           "por": "Tipos de pagamento permitidos no fluxo de pagamento."
@@ -5601,8 +5485,7 @@
                         "properties": {
                           "id": {
                             "type": "string",
-                            "description": "Payment type identifier.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Payment type identifier.",
                               "spa": "Identificador de tipo de pago.",
                               "por": "Identificador do tipo de pagamento."
@@ -5613,8 +5496,7 @@
                       },
                       "payment_methods": {
                         "type": "array",
-                        "description": "Payment methods allowed in the payment flow.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Payment methods allowed in the payment flow.",
                           "spa": "Métodos de pago permitidos en el flujo de pago.",
                           "por": "Meios de pagamento permitidos no fluxo de pagamento."
@@ -5622,8 +5504,7 @@
                         "properties": {
                           "id": {
                             "type": "string",
-                            "description": "Payment method identifier.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Payment method identifier.",
                               "spa": "Identificador del medio de pago",
                               "por": "Id do meio de pagamento"
@@ -5636,8 +5517,7 @@
                   },
                   "back_url": {
                     "type": "string",
-                    "description": "Successful return URL. Use this setting to redirect your customers to your site after our checkout.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Successful return URL. Use this setting to redirect your customers to your site after our checkout.",
                       "spa": "URL de retorno exitosa. Use esta configuración para redirigir a tus clientes a su sitio después de nuestro checkout.",
                       "por": "URL de retorno de sucesso. Use esta configuração para redirecionar seus clientes para o seu site após o checkout."
@@ -5968,8 +5848,7 @@
                       },
                       "back_url": {
                         "type": "string",
-                        "description": "Successful return URL. Use this setting to redirect your customers to your site after our checkout.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Successful return URL. Use this setting to redirect your customers to your site after our checkout.",
                           "spa": "URL de retorno exitosa. Use esta configuración para redirigir a tus clientes a su sitio después de nuestro checkout.",
                           "por": "URL de retorno de sucesso. Use esta configuração para redirecionar seus clientes para o seu site após o checkout."
@@ -6192,8 +6071,7 @@
           {
             "name": "status",
             "in": "path",
-            "description": "Specifies the status of the plan you want to get.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Specifies the status of the plan you want to get.",
               "spa": "Especifica el estado del plan que deseas obtener.",
               "por": "Especifica o status do plano que você deseja obter."
@@ -6206,8 +6084,7 @@
           {
             "name": "q",
             "in": "path",
-            "description": "Free search field.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Free search field.",
               "spa": "Campo de búsqueda libre.",
               "por": "Campo de busca livre."
@@ -6220,8 +6097,7 @@
           {
             "name": "sort",
             "in": "path",
-            "description": "Specifies the name of the field by which the results are to be sorted according to a criteria.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Specifies the name of the field by which the results are to be sorted according to a criteria.",
               "spa": "Especifica el nombre del campo por el que se ordenarán los resultados según un criterio.",
               "por": "Especifica o nome do campo pelo qual os resultados devem ser classificados de acordo com um critério."
@@ -6234,8 +6110,7 @@
           {
             "name": "criteria",
             "in": "path",
-            "description": "Specifies the order criteria of the results.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Specifies the order criteria of the results.",
               "spa": "Especifica los criterios de orden de los resultados.",
               "por": "Especifica o critério de ordem dos resultados."
@@ -6252,8 +6127,7 @@
           {
             "name": "offset",
             "in": "path",
-            "description": "Specifies the offset of the first item in the collection to return.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Specifies the offset of the first item in the collection to return.",
               "spa": "Especifica el offset del primer item de la cobranza a ser retornado.",
               "por": "Especifica o offset do primeiro item da cobrança a ser retornado."
@@ -6266,8 +6140,7 @@
           {
             "name": "limit",
             "in": "path",
-            "description": "Specifies the maximum number of items to return.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Specifies the maximum number of items to return.",
               "spa": "Especifica el número máximo de ítems a ser retornados.",
               "por": "Especifica o número máximo de itens a serem retornados."
@@ -6336,8 +6209,7 @@
                       },
                       "items": {
                         "type": "object",
-                        "description": "Plan result item.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Plan result item.",
                           "spa": "Item de resultado de plan.",
                           "por": "Ítem de resultado do plano."
@@ -6346,8 +6218,7 @@
                           "id": {
                             "type": "string",
                             "example": "2c938084726fca480172750000000000",
-                            "description": "Unique subscription plan identifier.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Unique subscription plan identifier.",
                               "spa": "Identificador único del plan de suscripción.",
                               "por": "Identificador único do plano de assinatura"
@@ -6356,8 +6227,7 @@
                           "application_id": {
                             "type": "number",
                             "example": 1234567812345678,
-                            "description": "Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.",
                               "spa": "ID único que identifica tu aplicación/integración. Una de las claves del par que componen las credenciales que identifican una aplicación/integración en tu cuenta.",
                               "por": "ID único que identifica sua aplicação/integração. Uma das chaves do par que compõe as credenciais que identifica uma aplicação/integração na sua conta."
@@ -6366,8 +6236,7 @@
                           "collector_id": {
                             "type": "number",
                             "example": 100200300,
-                            "description": "Unique ID that identifies your user as a seller. This ID matches your User ID in our ecosystem.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Unique ID that identifies your user as a seller. This ID matches your User ID in our ecosystem.",
                               "spa": "ID único que identifica a tu usuario como vendedor. Este ID coincide con tu User ID en nuestro ecosistema.",
                               "por": "ID único que identifica seu usuário como vendedor. Este ID corresponde ao seu User ID em nosso ecossistema."
@@ -6375,8 +6244,7 @@
                           },
                           "reason": {
                             "type": "string",
-                            "description": "It is a short description that the subscriber will see during the checkout process and in the notifications.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "It is a short description that the subscriber will see during the checkout process and in the notifications.",
                               "spa": "Es una breve descripción que el suscriptor verá durante el checkout y en las notificaciones.",
                               "por": "É uma breve descrição que o assinante verá durante o processo de checkout e nas notificações."
@@ -6385,8 +6253,7 @@
                           },
                           "auto_recurring": {
                             "type": "object",
-                            "description": "Configuration data for recurrence.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Configuration data for recurrence.",
                               "spa": "Información de configuración para la recurrencia.",
                               "por": "Configuração da data para recorrência."
@@ -6394,8 +6261,7 @@
                             "properties": {
                               "frequency": {
                                 "type": "number",
-                                "description": "Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.",
                                   "spa": "Indica el valor de la frecuencia. Junto con frequency_type definen el ciclo de facturación que tendrá una suscripción.",
                                   "por": "Indica o valor de frequência. Junto com frequency_type define o ciclo de cobrança que a assinaturá terá."
@@ -6404,8 +6270,7 @@
                               },
                               "frequency_type": {
                                 "type": "string",
-                                "description": "Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.",
                                   "spa": "Indica el tipo de frecuencia. Junto con frequency definen el ciclo de facturación que tendrá una suscripción.",
                                   "por": "Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá."
@@ -6418,8 +6283,7 @@
                               },
                               "repetitions": {
                                 "type": "number",
-                                "description": "It is optional and is used to create a limited subscription. Indicates the number of times that we will repeat the recurrence cycle. If this param is not defined, subscription does not end until some of the parties cancel it.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "It is optional and is used to create a limited subscription. Indicates the number of times that we will repeat the recurrence cycle. If this param is not defined, subscription does not end until some of the parties cancel it.",
                                   "spa": "Es opcional y se utiliza para crear una suscripción limitada. Indica el número de veces que repetiremos el ciclo de recurrencia. Si no se define este param, la suscripción no finaliza hasta que alguna de las partes la cancela.",
                                   "por": "É opcional e utilizado para criar uma assinatura limitada. Indica o número de itens que serão repetidos no ciclo de recorrência. Se este parâmetro não for definido, a assinatura não será finaliza até que uma das partes cancele."
@@ -6428,8 +6292,7 @@
                               },
                               "billing_day": {
                                 "type": "number",
-                                "description": "Day of the month that the subscription will always be charged. It only accepts values between 1 and 28.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Day of the month that the subscription will always be charged. It only accepts values between 1 and 28.",
                                   "spa": "Día del mes en que siempre se cobrará la suscripción. Solo acepta valores entre 1 y 28.",
                                   "por": "Dia do mês no qual a assinatura será cobrada. Aceita apenas valores entre 1 e 28."
@@ -6438,8 +6301,7 @@
                               },
                               "billing_day_proportional": {
                                 "type": "boolean",
-                                "description": "Charge a proportional amount to the billing day at the time of registration.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Charge a proportional amount to the billing day at the time of registration.",
                                   "spa": "Cobra una suma proporcional al día de facturación en el momento del registro.",
                                   "por": "Cobra um valor proporcional ao dia do faturamento no momento do cadastro."
@@ -6452,8 +6314,7 @@
                               },
                               "free_trial": {
                                 "type": "object",
-                                "description": "Free trial data.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Free trial data.",
                                   "spa": "Información sobre prueba gratuita.",
                                   "por": "Informação de teste grátis"
@@ -6461,8 +6322,7 @@
                                 "properties": {
                                   "frequency": {
                                     "type": "number",
-                                    "description": "Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.",
-                                    "x-description-i18n": {
+                                    "description": {
                                       "eng": "Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.",
                                       "spa": "Indica el valor de la frecuencia. Junto con frequency_type definen el ciclo de facturación que tendrá una suscripción.",
                                       "por": "Indica o valor de frequência. Junto com frequency_type define o ciclo de cobrança que a assinaturá terá."
@@ -6471,8 +6331,7 @@
                                   },
                                   "frequency_type": {
                                     "type": "string",
-                                    "description": "Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.",
-                                    "x-description-i18n": {
+                                    "description": {
                                       "eng": "Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.",
                                       "spa": "Indica el tipo de frecuencia. Junto con frequency definen el ciclo de facturación que tendrá una suscripción.",
                                       "por": "Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá."
@@ -6492,8 +6351,7 @@
                               },
                               "transaction_amount": {
                                 "type": "number",
-                                "description": "Amount we will charge on each invoice.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Amount we will charge on each invoice.",
                                   "spa": "Suma que se cobrará en cada factura.",
                                   "por": "Valor que será cobrado em cada fatura."
@@ -6502,8 +6360,7 @@
                               },
                               "currency_id": {
                                 "type": "string",
-                                "description": "ID of the currency used in the payment.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "ID of the currency used in the payment.",
                                   "spa": "Identificador de la moneda utilizada en el pago",
                                   "por": "Identificador da moeda utilizada no pagamento"
@@ -6523,8 +6380,7 @@
                           },
                           "payment_methods_allowed": {
                             "type": "object",
-                            "description": "Payment methods enabled at checkout.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Payment methods enabled at checkout.",
                               "spa": "Métodos de pago habilitados en el checkout.",
                               "por": "Meios de pagamento habilitados no checkout."
@@ -6532,8 +6388,7 @@
                             "properties": {
                               "payment_types": {
                                 "type": "array",
-                                "description": "Payment types allowed in the payment flow.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Payment types allowed in the payment flow.",
                                   "spa": "Tipos de pago permitidos en el flujo de pago.",
                                   "por": "Tipos de pagamento permitidos no fluxo de pagamento."
@@ -6541,8 +6396,7 @@
                                 "properties": {
                                   "id": {
                                     "type": "string",
-                                    "description": "Payment type identifier.",
-                                    "x-description-i18n": {
+                                    "description": {
                                       "eng": "Payment type identifier.",
                                       "spa": "Identificador de tipo de pago.",
                                       "por": "Identificador do tipo de pagamento."
@@ -6553,8 +6407,7 @@
                               },
                               "payment_methods": {
                                 "type": "array",
-                                "description": "Payment methods allowed in the payment flow.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Payment methods allowed in the payment flow.",
                                   "spa": "Métodos de pago permitidos en el flujo de pago.",
                                   "por": "Meios de pagamento permitidos no fluxo de pagamento."
@@ -6562,8 +6415,7 @@
                                 "properties": {
                                   "id": {
                                     "type": "string",
-                                    "description": "Payment method identifier.",
-                                    "x-description-i18n": {
+                                    "description": {
                                       "eng": "Payment method identifier.",
                                       "spa": "Identificador del medio de pago",
                                       "por": "Id do meio de pagamento"
@@ -6575,8 +6427,7 @@
                             },
                             "back_url": {
                               "type": "string",
-                              "description": "Successful return URL. Use this setting to redirect your customers to your site after our checkout.",
-                              "x-description-i18n": {
+                              "description": {
                                 "eng": "Successful return URL. Use this setting to redirect your customers to your site after our checkout.",
                                 "spa": "URL de retorno exitosa. Use esta configuración para redirigir a tus clientes a su sitio después de nuestro checkout.",
                                 "por": "URL de retorno de sucesso. Use esta configuração para redirecionar seus clientes para o seu site após o checkout."
@@ -6586,8 +6437,7 @@
                           },
                           "back_url": {
                             "type": "string",
-                            "description": "Successful return URL. Use this setting to redirect your customers to your site after our checkout.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Successful return URL. Use this setting to redirect your customers to your site after our checkout.",
                               "spa": "URL de retorno exitosa. Use esta configuración para redirigir a tus clientes a su sitio después de nuestro checkout.",
                               "por": "URL de retorno de sucesso. Use esta configuração para redirecionar seus clientes para o seu site após o checkout."
@@ -6597,8 +6447,7 @@
                           "external_reference": {
                             "type": "string",
                             "example": "23546246234",
-                            "description": "Reference to sync with your system. This is a free text field to help you with your integration to link the entities.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Reference to sync with your system. This is a free text field to help you with your integration to link the entities.",
                               "spa": "Referencia para sincronizar con tu sistema. Este es un campo de texto libre para ayudarte con tu integración para vincular las entidades.",
                               "por": "Referência para sincronizar com seu sistema. Este é um campo de texto livre para ajudar com a integração para vincular as entidades."
@@ -6607,8 +6456,7 @@
                           "init_point": {
                             "type": "string",
                             "example": "https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084726fca480172750000000000",
-                            "description": "URL to start the subscription flow",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "URL to start the subscription flow",
                               "spa": "URL para comenzar el flujo de suscripción",
                               "por": "URL para iniciar o fluxo de assinatura"
@@ -6617,8 +6465,7 @@
                           "date_created": {
                             "type": "string",
                             "example": "2022-01-01T11:12:25.892-04:00",
-                            "description": "Creation date",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Creation date",
                               "spa": "Fecha de creación",
                               "por": "Data de criação"
@@ -6627,8 +6474,7 @@
                           "last_modified": {
                             "type": "string",
                             "example": "2022-01-01T11:12:25.892-04:00",
-                            "description": "Date of last modification",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Date of last modification",
                               "spa": "Fecha de última modificación.",
                               "por": "Data da última modificação."
@@ -6636,8 +6482,7 @@
                           },
                           "subscribed": {
                             "type": "number",
-                            "description": "Number of customers subscribed to the plan.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Number of customers subscribed to the plan.",
                               "spa": "Número de clientes suscritos al plan.",
                               "por": "Número de clientes que assinaram o plano."
@@ -6647,8 +6492,7 @@
                           "status": {
                             "type": "string",
                             "example": "active",
-                            "description": "Status of the plan.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Status of the plan.",
                               "spa": "Estado del plan.",
                               "por": "Status do plano."
@@ -6791,8 +6635,7 @@
           {
             "name": "q",
             "in": "path",
-            "description": "Free search field.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Free search field.",
               "spa": "Campo de búsqueda libre.",
               "por": "Campo de busca livre."
@@ -6805,8 +6648,7 @@
           {
             "name": "payer_id",
             "in": "path",
-            "description": "Unique customer ID to find related subscriptions.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Unique customer ID to find related subscriptions.",
               "spa": "Customer ID único para encontrar suscripciones relacionadas.",
               "por": "Customer ID único para encontrar assinaturas relacionadas."
@@ -6819,8 +6661,7 @@
           {
             "name": "payer_email",
             "in": "path",
-            "description": "Allows you to search for subscriptions registered with this email.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Allows you to search for subscriptions registered with this email.",
               "spa": "Te permite buscar suscripciones registradas con este correo electrónico.",
               "por": "Permite encontrar assinaturas registradas com este e-mail."
@@ -6833,8 +6674,7 @@
           {
             "name": "preapproval_plan_id",
             "in": "path",
-            "description": "Specifies a plan ID for filtering results from the search.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Specifies a plan ID for filtering results from the search.",
               "spa": "Especifica un plan ID para filtrar los resultados de la búsqueda.",
               "por": "Especifica um plan ID para filtrar os resultados da pesquisa."
@@ -6847,8 +6687,7 @@
           {
             "name": "transaction_amount",
             "in": "path",
-            "description": "Specifies a subscription amount for filtering results from the search.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Specifies a subscription amount for filtering results from the search.",
               "spa": "Especifica un monto de suscripción para filtrar los resultados de la búsqueda.",
               "por": "Especifica um valor de assinatura para filtrar os resultados da pesquisa."
@@ -6861,8 +6700,7 @@
           {
             "name": "semaphore",
             "in": "path",
-            "description": "Specifies the control status of the subscription.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Specifies the control status of the subscription.",
               "spa": "Especifica el estado de control de la suscripción.",
               "por": "Especifica o status de controle da assinatura."
@@ -6881,8 +6719,7 @@
           {
             "name": "status",
             "in": "path",
-            "description": "Specifies a status for filtering results from the export. Can be null, one or many.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Specifies a status for filtering results from the export. Can be null, one or many.",
               "spa": "Especifica un estado para filtrar los resultados de la exportación. Puede ser null, uno o muchos.Subscription without a payment method.",
               "por": "Especifica um status para filtrar os resultados da exportação. Pode ser null, um ou muitos."
@@ -6901,8 +6738,7 @@
           {
             "name": "sort",
             "in": "path",
-            "description": "Specifies the type of sorting selected to retrieve the subscriptions. You must indicate a field and a sort type with the following format field_name:sort_type.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Specifies the type of sorting selected to retrieve the subscriptions. You must indicate a field and a sort type with the following format field_name:sort_type.",
               "spa": "Especifica el tipo de clasificación seleccionado para recuperar las suscripciones. Debes indicar un campo y un tipo de clasificación con el siguiente formato ield_name:sort_type.",
               "por": "Especifica o tipo de classificação selecionado para recuperar as assinaturas. Você deve indicar um campo e um tipo de classificação com o seguinte formato field_name:sort_type."
@@ -6919,8 +6755,7 @@
           {
             "name": "offset",
             "in": "path",
-            "description": "Specifies the offset of the first item in the collection to return.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Specifies the offset of the first item in the collection to return.",
               "spa": "Especifica el offset del primer item de la cobranza a ser retornado.",
               "por": "Especifica o offset do primeiro item da cobrança a ser retornado."
@@ -6933,8 +6768,7 @@
           {
             "name": "limit",
             "in": "path",
-            "description": "Specifies the maximum number of items to return.",
-            "x-description-i18n": {
+            "description": {
               "eng": "Specifies the maximum number of items to return.",
               "spa": "Especifica el número máximo de ítems a ser retornados.",
               "por": "Especifica o número máximo de itens a serem retornados."
@@ -7008,8 +6842,7 @@
                           "id": {
                             "type": "string",
                             "example": "2c938084726fca480172750000000000",
-                            "description": "Unique subscription identifier.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Unique subscription identifier.",
                               "spa": "Identificador único de suscripción.",
                               "por": "Identificador único de assinatura"
@@ -7018,8 +6851,7 @@
                           "version": {
                             "type": "number",
                             "example": 0,
-                            "description": "Indicates how many times the subscription was modified",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Indicates how many times the subscription was modified",
                               "spa": "Indica cuántas veces se modificó la suscripción",
                               "por": "Indica quantas vezes uma assinatura foi modificada"
@@ -7028,8 +6860,7 @@
                           "application_id": {
                             "type": "number",
                             "example": 1234567812345678,
-                            "description": "Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.",
                               "spa": "ID único que identifica tu aplicación/integración. Una de las claves del par que componen las credenciales que identifican una aplicación/integración en tu cuenta.",
                               "por": "ID único que identifica sua aplicação/integração. Uma das chaves do par que compõe as credenciais que identifica uma aplicação/integração na sua conta."
@@ -7038,8 +6869,7 @@
                           "collector_id": {
                             "type": "number",
                             "example": 100200300,
-                            "description": "Unique ID that identifies your user as a seller. This ID matches your User ID in our ecosystem.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Unique ID that identifies your user as a seller. This ID matches your User ID in our ecosystem.",
                               "spa": "ID único que identifica a tu usuario como vendedor. Este ID coincide con tu User ID en nuestro ecosistema.",
                               "por": "ID único que identifica seu usuário como vendedor. Este ID corresponde ao seu User ID em nosso ecossistema."
@@ -7047,8 +6877,7 @@
                           },
                           "preapproval_plan_id": {
                             "type": "string",
-                            "description": "Unique subscription plan identifier. This parameter is only available when it is a subscription with a plan and indicates from which plan the subscription was created.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Unique subscription plan identifier. This parameter is only available when it is a subscription with a plan and indicates from which plan the subscription was created.",
                               "spa": "Identificador único del plan de suscripción. Este parámetro solo está disponible cuando se trata de una suscripción con plan asociado e indica desde qué plan se creó la suscripción.",
                               "por": "Identificador único de plano de assinatura. Este parâmetro só está disponível quando se trata de uma assinatura com um plano associado e indica a partir de qual plano a assinatura foi criada."
@@ -7058,8 +6887,7 @@
                           "reason": {
                             "type": "string",
                             "example": "Yoga classes.",
-                            "description": "It is a short description that the subscriber will see during the checkout process and in the notifications. It is only required for subscriptions without a plan.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "It is a short description that the subscriber will see during the checkout process and in the notifications. It is only required for subscriptions without a plan.",
                               "spa": "Es una breve descripción que el suscriptor verá durante el proceso de checkout y en las notificaciones. Solo se requiere para suscripciones sin plan asociado.",
                               "por": "É uma breve descrição que o assinante verá durante o processo de checkout e nas notificações. É obrigatório apenas para assinaturas sem plano associado."
@@ -7068,8 +6896,7 @@
                           "external_reference": {
                             "type": "string",
                             "example": 23546246234,
-                            "description": "Reference to sync with your system. This is a free text field to help you with your integration to link the entities.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Reference to sync with your system. This is a free text field to help you with your integration to link the entities.",
                               "spa": "Referencia para sincronizar con tu sistema. Este es un campo de texto libre para ayudarte con tu integración para vincular las entidades.",
                               "por": "Referência para sincronizar com seu sistema. Este é um campo de texto livre para ajudar com a integração para vincular as entidades."
@@ -7078,8 +6905,7 @@
                           "back_url": {
                             "type": "string",
                             "example": "https://www.mercadopago.com.ar",
-                            "description": "Successful return URL. Use this setting to redirect your customers to your site after our checkout.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Successful return URL. Use this setting to redirect your customers to your site after our checkout.",
                               "spa": "URL de retorno exitosa. Use esta configuración para redirigir a tus clientes a su sitio después de nuestro checkout.",
                               "por": "URL de retorno de sucesso. Use esta configuração para redirecionar seus clientes para o seu site após o checkout."
@@ -7088,8 +6914,7 @@
                           "init_point": {
                             "type": "string",
                             "example": "https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_id=2c938084726fca480172750000000000",
-                            "description": "URL to checkout to add or modify payment method.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "URL to checkout to add or modify payment method.",
                               "spa": "URL al checkout para agregar o modificar el método de pago.",
                               "por": "URL para o checkout para adicionar ou modificar um meio de pagamento."
@@ -7097,8 +6922,7 @@
                           },
                           "auto_recurring": {
                             "type": "object",
-                            "description": "Configuration data for recurrence.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Configuration data for recurrence.",
                               "spa": "Información de configuración para la recurrencia.",
                               "por": "Configuração da data para recorrência."
@@ -7106,8 +6930,7 @@
                             "properties": {
                               "frequency": {
                                 "type": "number",
-                                "description": "Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.",
                                   "spa": "Indica el valor de la frecuencia. Junto con frequency_type definen el ciclo de facturación que tendrá una suscripción.",
                                   "por": "Indica o valor de frequência. Junto com frequency_type define o ciclo de cobrança que a assinaturá terá."
@@ -7116,8 +6939,7 @@
                               },
                               "frequency_type": {
                                 "type": "string",
-                                "description": "Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.",
                                   "spa": "Indica el tipo de frecuencia. Junto con frequency definen el ciclo de facturación que tendrá una suscripción.",
                                   "por": "Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá."
@@ -7131,8 +6953,7 @@
                               "start_date": {
                                 "type": "string",
                                 "format": "date",
-                                "description": "Date from which the subscription will be active and we start collecting invoices.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Date from which the subscription will be active and we start collecting invoices.",
                                   "spa": "Fecha a partir de la cual la suscripción estará activa y se empiezan a cobrar las facturas.",
                                   "por": "Data que indica o momento em que a assinatura será ativada e começará a cobrança das faturas."
@@ -7142,8 +6963,7 @@
                               "end_date": {
                                 "type": "string",
                                 "format": "date",
-                                "description": "Date until which the subscription will be active and we will stop charging invoices.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Date until which the subscription will be active and we will stop charging invoices.",
                                   "spa": "Fecha hasta la cual la suscripción estará activa y se dejan de cobrar las facturas.",
                                   "por": "Data que indica o fim da assinatura e o momento em que a cobrança não será mais realizada."
@@ -7152,8 +6972,7 @@
                               },
                               "currency_id": {
                                 "type": "string",
-                                "description": "ID of the currency used in the payment.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "ID of the currency used in the payment.",
                                   "spa": "Identificador de la moneda utilizada en el pago",
                                   "por": "Identificador da moeda utilizada no pagamento"
@@ -7171,8 +6990,7 @@
                               },
                               "transaction_amount": {
                                 "type": "number",
-                                "description": "Amount we will charge on each invoice.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Amount we will charge on each invoice.",
                                   "spa": "Suma que se cobrará en cada factura.",
                                   "por": "Valor que será cobrado em cada fatura."
@@ -7181,8 +6999,7 @@
                               },
                               "free_trial": {
                                 "type": "object",
-                                "description": "Free trial data.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Free trial data.",
                                   "spa": "Información sobre prueba gratuita.",
                                   "por": "Informação de teste grátis"
@@ -7190,8 +7007,7 @@
                                 "properties": {
                                   "frequency": {
                                     "type": "number",
-                                    "description": "Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.",
-                                    "x-description-i18n": {
+                                    "description": {
                                       "eng": "Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.",
                                       "spa": "Indica el valor de la frecuencia. Junto con frequency_type definen el ciclo de facturación que tendrá una suscripción.",
                                       "por": "Indica o valor de frequência. Junto com frequency_type define o ciclo de cobrança que a assinaturá terá."
@@ -7200,8 +7016,7 @@
                                   },
                                   "frequency_type": {
                                     "type": "string",
-                                    "description": "Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.",
-                                    "x-description-i18n": {
+                                    "description": {
                                       "eng": "Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.",
                                       "spa": "Indica el tipo de frecuencia. Junto con frequency definen el ciclo de facturación que tendrá una suscripción.",
                                       "por": "Indica o tipo de frequência. Junto com frequency, definem o ciclo de cobrança que a assinatura terá."
@@ -7218,8 +7033,7 @@
                           },
                           "first_invoice_offset": {
                             "type": "number",
-                            "description": "Number of days to collect the first invoice",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Number of days to collect the first invoice",
                               "spa": "Número de días para cobrar la primera factura",
                               "por": "Número de dias para cobrar a primeira fatura"
@@ -7229,8 +7043,7 @@
                           "payer_id": {
                             "type": "number",
                             "example": 123123123,
-                            "description": "Unique customer identifier. This is created from the email you used to create the subscription.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Unique customer identifier. This is created from the email you used to create the subscription.",
                               "spa": "Identificador único de cliente. Se crea a partir del correo electrónico que utilizaste para crear la suscripción.",
                               "por": "Identificador único do cliente. É criado a partir do e-mail utilizado para criar a assinatura."
@@ -7238,8 +7051,7 @@
                           },
                           "payer_first_name": {
                             "type": "string",
-                            "description": "Customer name.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Customer name.",
                               "spa": "Nombre del cliente.",
                               "por": "Nome do cliente."
@@ -7248,8 +7060,7 @@
                           },
                           "payer_last_name": {
                             "type": "string",
-                            "description": "Customer lastname.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Customer lastname.",
                               "spa": "Apellido del cliente.",
                               "por": "Sobrenome do cliente"
@@ -7259,8 +7070,7 @@
                           "card_id": {
                             "type": "number",
                             "example": 123123123,
-                            "description": "Unique identifier to retrieve data from the card used as a payment method.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Unique identifier to retrieve data from the card used as a payment method.",
                               "spa": "Identificador único para recuperar datos de la tarjeta utilizada como medio de pago.",
                               "por": "Identificador único para recuperar dados do cartão utilizado como meio de pagamento."
@@ -7269,8 +7079,7 @@
                           "payment_method_id": {
                             "type": "string",
                             "example": "account_money",
-                            "description": "Payment method configured.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Payment method configured.",
                               "spa": "Método de pago configurado.",
                               "por": "Meio de pagamento configurado."
@@ -7279,8 +7088,7 @@
                           "next_payment_date": {
                             "type": "string",
                             "example": "2022-01-01T11:12:25.892-04:00",
-                            "description": "Date of the next payment debit.",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Date of the next payment debit.",
                               "spa": "Fecha del próximo débito.",
                               "por": "Data do próximo débito."
@@ -7289,8 +7097,7 @@
                           "date_created": {
                             "type": "string",
                             "example": "2022-01-01T11:12:25.892-04:00",
-                            "description": "Creation date",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Creation date",
                               "spa": "Fecha de creación",
                               "por": "Data de criação"
@@ -7299,8 +7106,7 @@
                           "last_modified": {
                             "type": "string",
                             "example": "2022-01-01T11:12:25.892-04:00",
-                            "description": "Date of last modification",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Date of last modification",
                               "spa": "Fecha de última modificación.",
                               "por": "Data da última modificação."
@@ -7308,8 +7114,7 @@
                           },
                           "summarized": {
                             "type": "object",
-                            "description": "Summary information on subscription invoices and charges",
-                            "x-description-i18n": {
+                            "description": {
                               "eng": "Summary information on subscription invoices and charges",
                               "spa": "Información resumida sobre facturas y cargos de suscripción",
                               "por": "Informações resumidas sobre faturas e cobranças de assinatura"
@@ -7317,8 +7122,7 @@
                             "properties": {
                               "quotas": {
                                 "type": "number",
-                                "description": "How many payments are going to be made.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "How many payments are going to be made.",
                                   "spa": "Cantidad de pagos que se realizarán.",
                                   "por": "Quantos pagamentos serão feitos."
@@ -7327,8 +7131,7 @@
                               },
                               "charged_quantity": {
                                 "type": "number",
-                                "description": "Total charged of charged quotas.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Total charged of charged quotas.",
                                   "spa": "Total cobrado de cuotas.",
                                   "por": "Total cobrado de parcelas"
@@ -7337,8 +7140,7 @@
                               },
                               "charged_amount": {
                                 "type": "number",
-                                "description": "Total amount collected to date.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Total amount collected to date.",
                                   "spa": "Importe total recaudado hasta la fecha.",
                                   "por": "Valor total cobrado até o momento."
@@ -7347,8 +7149,7 @@
                               },
                               "pending_charge_quantity": {
                                 "type": "number",
-                                "description": "Pending quotas to charge.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Pending quotas to charge.",
                                   "spa": "Cuotas pendientes a ser cobradas.",
                                   "por": "Parcelas pendentes a serem cobradas."
@@ -7357,8 +7158,7 @@
                               },
                               "pending_charge_amount": {
                                 "type": "number",
-                                "description": "Amount pending collection.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Amount pending collection.",
                                   "spa": "Importe pendiente de cobro.",
                                   "por": "Valor pendente de cobrança"
@@ -7367,8 +7167,7 @@
                               },
                               "last_charged_date": {
                                 "type": "number",
-                                "description": "Date of last charge.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Date of last charge.",
                                   "spa": "Fecha de último cobro.",
                                   "por": "Data da última cobrança."
@@ -7377,8 +7176,7 @@
                               },
                               "last_charged_amount": {
                                 "type": "number",
-                                "description": "Date of last charged amount.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Date of last charged amount.",
                                   "spa": "Fecha de último importe cobrado.",
                                   "por": "Data do último valor cobrado."
@@ -7387,8 +7185,7 @@
                               },
                               "semaphore": {
                                 "type": "number",
-                                "description": "Subscription collection status summary.",
-                                "x-description-i18n": {
+                                "description": {
                                   "eng": "Subscription collection status summary.",
                                   "spa": "Resumen del estado de la cobranza de suscripciones.",
                                   "por": "Resumo do status de cobrança de assinaturas."

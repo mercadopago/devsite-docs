@@ -1,22 +1,22 @@
 ---
 content_section_with_media: 
  - title: Wix
- - message: Wix é uma plataforma que permite criar, projetar, gerenciar e desenvolver uma loja online que permite processar pagamentos através do Mercado Pago.
- - media_video: https://www.youtube.com/embed/-jrqLcUug-0
+ - message: Wix is a platform that allows you to create, design, manage and develop an online store that allows you to process payments through Mercado Pago.
+ - media_image: /wix/wix-landing.png
 ---
 
 --- mini_landing_separator ---
 
->>>> Disponibilidade por país <<<<
+>>>> Availability by country <<<<
 ---
 available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 ---
 
 ---
 bullet_section_with_media: 
- - title: Receba pagamentos com o Checkout Pro
+ - title: Receive payments with Checkout Pro
  - type: normal
- - message: Integre o Mercado Pago em sua loja e redirecione seus compradores para uma página do Mercado Pago para finalizar o pagamento.
+ - message: Integrate Mercado Pago in your store and redirect your buyers to a Mercado Pago page to complete the payment.
  - image: /cow/cho-pro-landing__pt.png
 ---
 
@@ -24,9 +24,9 @@ bullet_section_with_media:
 
 ---
 bullet_section_with_media: 
- - title: Personalize os pagamentos com o Checkout Transparente
+ - title: Customize payments with Checkout Transparente
  - type: reversed
- - message: Integre o nosso Checkout Transparente e permita que o comprador realize todo o processo de pagamento no ambiente da sua loja.
+ - message: Integrate our Checkout Transparente and allow buyers to complete the checkout process within the environment of your store.
  - image: /shopify/mini-landing-4.png
 ---
 
@@ -36,9 +36,9 @@ bullet_section_with_media:
 
 ---
 bullet_section_with_media: 
- - title: Personalize os pagamentos com o Checkout API
+ - title: Customize payments with Checkout API
  - type: reversed
- - message: Integre o nosso Checkout API e permita que o comprador realize todo o processo de pagamento no ambiente da sua loja.
+ - message: Integrate our Checkout API and allow buyers to complete the checkout process within the environment of your store.
  - image: /shopify/mini-landing-4.png
 ---
 
@@ -47,7 +47,7 @@ bullet_section_with_media:
 --- mini_landing_separator ---
 
 
->>>> Tipos de pagamento aceitos <<<<
+>>>> Accepted payment types <<<<
 
 ----[mlb]----
 
@@ -105,4 +105,4 @@ available_payments: mercadopago, atm, credit, debit, mercadocredito
 ----
 ------------
 
-> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.](/developers/pt/docs/sales-processing/payment-methods).
+> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods).

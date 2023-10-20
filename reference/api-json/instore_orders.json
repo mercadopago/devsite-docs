@@ -14,8 +14,7 @@
           {
             "name": "X-Ttl-Store-Preference",
             "in": "header",
-            "description": "X-Ttl-Store-Preference",
-            "x-description-i18n": {
+            "description": {
               "eng": "X-Ttl-Store-Preference",
               "spa": "X-Ttl-Store-Preference",
               "por": "X-Ttl-Store-Preference"
@@ -29,8 +28,7 @@
           {
             "name": "user_id",
             "in": "path",
-            "description": "User Id",
-            "x-description-i18n": {
+            "description": {
               "eng": "User Id",
               "spa": "User Id",
               "por": "User Id"
@@ -44,8 +42,7 @@
           {
             "name": "external_id",
             "in": "path",
-            "description": "External Id",
-            "x-description-i18n": {
+            "description": {
               "eng": "External Id",
               "spa": "External Id",
               "por": "External Id"
@@ -65,8 +62,7 @@
                 "properties": {
                   "external_reference": {
                     "type": "string",
-                    "description": "Reference you can synchronize with your sale system.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Reference you can synchronize with your sale system.",
                       "spa": "Referencia que puede sincronizar con su sistema de venta",
                       "por": "Referência que pode sincronizar com seu sistema de vendas"
@@ -75,8 +71,7 @@
                   },
                   "notification_url": {
                     "type": "string",
-                    "description": "URL where you'd like to receive a payment or merchant_order notification.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "URL where you'd like to receive a payment or merchant_order notification.",
                       "spa": "URL a la cual se enviará la notificación de pago o merchant_order.",
                       "por": "URL em que você gostaria de receber uma notificação de pagamento ou merchant_order."
@@ -85,8 +80,7 @@
                   },
                   "sponsor_id": {
                     "type": "string",
-                    "description": "Mercado Pago's USER_ID of the integrator system.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Mercado Pago's USER_ID of the integrator system.",
                       "spa": "USER_ID de la cuenta de Mercado Pago del sistema integrador",
                       "por": "USER_ID da conta Mercado Pago do sistema integrador"
@@ -95,8 +89,7 @@
                   },
                   "items": {
                     "type": "array",
-                    "description": "Information on the products involved in the order.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Information on the products involved in the order.",
                       "spa": "Información de los productos involucrados en la orden",
                       "por": "Informações sobre os produtos envolvidos no ordem"
@@ -106,8 +99,7 @@
                       "properties": {
                         "id": {
                           "type": "string",
-                          "description": "Item id.",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Item id.",
                             "spa": "Identificador del ítem",
                             "por": "Id do anúncio"
@@ -117,8 +109,7 @@
                         "title": {
                           "type": "string",
                           "example": "Shampoo",
-                          "description": "Item title.",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Item title.",
                             "spa": "Título del ítem",
                             "por": "Título do item"
@@ -129,8 +120,7 @@
                         },
                         "unit_price": {
                           "type": "number",
-                          "description": "Unit price of the item (maximum 2 decimals).",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Unit price of the item (maximum 2 decimals).",
                             "spa": "Precio unitario del producto (máximo 2 decimales)",
                             "por": "Preço unitário do produto (máximo de 2 decimais)"
@@ -139,8 +129,7 @@
                         },
                         "quantity": {
                           "type": "number",
-                          "description": "Item quantity.",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Item quantity.",
                             "spa": "Cantidad de producto",
                             "por": "Quantidade do produto"
@@ -149,8 +138,7 @@
                         },
                         "description": {
                           "type": "string",
-                          "description": "Item description.",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Item description.",
                             "spa": "Descripción del item",
                             "por": "Descrição do artigo"
@@ -159,8 +147,7 @@
                         },
                         "picture_url": {
                           "type": "string",
-                          "description": "Item image URL.",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Item image URL.",
                             "spa": "URL de imagen del ítem",
                             "por": "URL da imagem do anúncio"
@@ -647,8 +634,7 @@
           {
             "name": "user_id",
             "in": "path",
-            "description": "User Id",
-            "x-description-i18n": {
+            "description": {
               "eng": "User Id",
               "spa": "User Id",
               "por": "User Id"
@@ -662,8 +648,7 @@
           {
             "name": "external_id",
             "in": "path",
-            "description": "External Id",
-            "x-description-i18n": {
+            "description": {
               "eng": "External Id",
               "spa": "External Id",
               "por": "External Id"
@@ -727,8 +712,7 @@
       "currency_id": {
         "type": "string",
         "example": "COP",
-        "description": "Currency identifier in ISO_4217 format.",
-        "x-description-i18n": {
+        "description": {
           "eng": "Currency identifier in ISO_4217 format.",
           "spa": "Identificador de moneda en formato ISO_4217",
           "por": "Identificador de moeda no formato ISO_4217"

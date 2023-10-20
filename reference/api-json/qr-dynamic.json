@@ -14,8 +14,7 @@
           {
             "name": "user_id",
             "in": "path",
-            "description": "Find the User ID in your developer dashboard at our devsite",
-            "x-description-i18n": {
+            "description": {
               "eng": "Find the User ID in your developer dashboard at our devsite",
               "spa": "Encuentre la identificación de usuario en su panel de desarrollador en nuestro sitio para desarrolladores",
               "por": "Encontre a ID do usuário no painel do desenvolvedor em nosso site de desenvolvedores"
@@ -29,8 +28,7 @@
           {
             "name": "external_pos_id",
             "in": "path",
-            "description": "Custom POS ID associated to the order",
-            "x-description-i18n": {
+            "description": {
               "eng": "Custom POS ID associated to the order",
               "spa": "ID de POS personalizado asociado al pedido",
               "por": "ID de POS personalizado associado ao pedido"
@@ -50,8 +48,7 @@
                 "properties": {
                   "external_reference": {
                     "type": "string",
-                    "description": "Custom order ID you can synchronize with your sale system",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Custom order ID you can synchronize with your sale system",
                       "spa": "ID de pedido personalizado que puedes sincronizar con tu sistema de venta",
                       "por": "ID de pedido personalizado que você pode sincronizar com seu sistema de venda"
@@ -60,8 +57,7 @@
                   },
                   "title": {
                     "type": "string",
-                    "description": "Purchase title.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Purchase title.",
                       "spa": "Título de la compra",
                       "por": "Título de compra"
@@ -70,8 +66,7 @@
                   },
                   "description": {
                     "type": "string",
-                    "description": "Purchase description.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Purchase description.",
                       "spa": "Descripción de la compra",
                       "por": "Descrição de compra"
@@ -79,8 +74,7 @@
                   },
                   "notification_url": {
                     "type": "string",
-                    "description": "URL where you'd like to receive a payment or merchant_order notification.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "URL where you'd like to receive a payment or merchant_order notification.",
                       "spa": "URL a la cual se enviará la notificación de pago o merchant_order",
                       "por": "URL em que você gostaria de receber uma notificação de pagamento ou merchant_order"
@@ -93,8 +87,7 @@
                   },
                   "total_amount": {
                     "type": "number",
-                    "description": "Total amount of the transaction in local currency.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Total amount of the transaction in local currency.",
                       "spa": "Monto total de la transacción en moneda local",
                       "por": "Valor total da transação na moeda local"
@@ -103,8 +96,7 @@
                   },
                   "items": {
                     "type": "array",
-                    "description": "Information on the products involved in the order.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Information on the products involved in the order.",
                       "spa": "Información de los productos involucrados en la orden",
                       "por": "Informações sobre os produtos envolvidos no ordem"
@@ -114,8 +106,7 @@
                       "properties": {
                         "sku_number": {
                           "type": "string",
-                          "description": "Item code.",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Item code.",
                             "spa": "Código de ítem",
                             "por": "Código de anúncio"
@@ -124,8 +115,7 @@
                         },
                         "category": {
                           "type": "string",
-                          "description": "Item category.",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Item category.",
                             "spa": "Category del ítem",
                             "por": "Categoria do item"
@@ -134,8 +124,7 @@
                         },
                         "title": {
                           "type": "string",
-                          "description": "Item title.",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Item title.",
                             "spa": "Título del ítem",
                             "por": "Título do item"
@@ -144,8 +133,7 @@
                         },
                         "description": {
                           "type": "string",
-                          "description": "Item description.",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Item description.",
                             "spa": "Descripción del item",
                             "por": "Descrição do artigo"
@@ -154,8 +142,7 @@
                         },
                         "unit_price": {
                           "type": "number",
-                          "description": "Unit price of the item (maximum 2 decimals).",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Unit price of the item (maximum 2 decimals).",
                             "spa": "Precio unitario del producto (máximo 2 decimales)",
                             "por": "Preço unitário do produto (máximo de 2 decimais)"
@@ -164,8 +151,7 @@
                         },
                         "quantity": {
                           "type": "number",
-                          "description": "Number of item units.",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Number of item units.",
                             "spa": "Cantidad de unidades del ítem",
                             "por": "Quantidade do unidades do item"
@@ -177,8 +163,7 @@
                         },
                         "total_amount": {
                           "type": "string",
-                          "description": "Item total.",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Item total.",
                             "spa": "Total de elementos.",
                             "por": "Total de itens."
@@ -190,8 +175,7 @@
                   },
                   "sponsor": {
                     "type": "object",
-                    "description": "Integrator information.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Integrator information.",
                       "spa": "Información del integrador",
                       "por": "Informações do integrador"
@@ -199,8 +183,7 @@
                     "properties": {
                       "id": {
                         "type": "number",
-                        "description": "Mercado Pago's USER_ID of the integrator system.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Mercado Pago's USER_ID of the integrator system.",
                           "spa": "USER_ID de la cuenta de Mercado Pago del sistema integrador",
                           "por": "USER_ID da conta Mercado Pago do sistema integrador"
@@ -215,8 +198,7 @@
                     "properties": {
                       "amount": {
                         "type": "number",
-                        "description": "Amount to withdraw in local currency.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Amount to withdraw in local currency.",
                           "spa": "Monto a retirar en moneda local",
                           "por": "Montante a retirar em moeda local"
@@ -534,8 +516,7 @@
           {
             "name": "user_id",
             "in": "path",
-            "description": "Find the User ID in your developer dashboard at our devsite",
-            "x-description-i18n": {
+            "description": {
               "eng": "Find the User ID in your developer dashboard at our devsite",
               "spa": "Encuentre la identificación de usuario en su panel de desarrollador en nuestro sitio para desarrolladores",
               "por": "Encontre a ID do usuário no painel do desenvolvedor em nosso site de desenvolvedores"
@@ -549,8 +530,7 @@
           {
             "name": "external_pos_id",
             "in": "path",
-            "description": "Custom POS ID associated to the order",
-            "x-description-i18n": {
+            "description": {
               "eng": "Custom POS ID associated to the order",
               "spa": "ID de POS personalizado asociado al pedido",
               "por": "ID de POS personalizado associado ao pedido"
@@ -570,8 +550,7 @@
                 "properties": {
                   "external_reference": {
                     "type": "string",
-                    "description": "Custom order ID you can synchronize with your sale system",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Custom order ID you can synchronize with your sale system",
                       "spa": "ID de pedido personalizado que puedes sincronizar con tu sistema de venta",
                       "por": "ID de pedido personalizado que você pode sincronizar com seu sistema de venda"
@@ -580,8 +559,7 @@
                   },
                   "title": {
                     "type": "string",
-                    "description": "Purchase title.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Purchase title.",
                       "spa": "Título de la compra",
                       "por": "Título de compra"
@@ -590,8 +568,7 @@
                   },
                   "description": {
                     "type": "string",
-                    "description": "Purchase description.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Purchase description.",
                       "spa": "Descripción de la compra",
                       "por": "Descrição de compra"
@@ -599,8 +576,7 @@
                   },
                   "notification_url": {
                     "type": "string",
-                    "description": "URL where you'd like to receive a payment or merchant_order notification.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "URL where you'd like to receive a payment or merchant_order notification.",
                       "spa": "URL a la cual se enviará la notificación de pago o merchant_order",
                       "por": "URL em que você gostaria de receber uma notificação de pagamento ou merchant_order"
@@ -613,8 +589,7 @@
                   },
                   "total_amount": {
                     "type": "number",
-                    "description": "Total amount of the transaction in local currency.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Total amount of the transaction in local currency.",
                       "spa": "Monto total de la transacción en moneda local",
                       "por": "Valor total da transação na moeda local"
@@ -623,8 +598,7 @@
                   },
                   "items": {
                     "type": "array",
-                    "description": "Information on the products involved in the order.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Information on the products involved in the order.",
                       "spa": "Información de los productos involucrados en la orden",
                       "por": "Informações sobre os produtos envolvidos no ordem"
@@ -634,8 +608,7 @@
                       "properties": {
                         "sku_number": {
                           "type": "string",
-                          "description": "Item code.",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Item code.",
                             "spa": "Código de ítem",
                             "por": "Código de anúncio"
@@ -644,8 +617,7 @@
                         },
                         "category": {
                           "type": "string",
-                          "description": "Item category.",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Item category.",
                             "spa": "Category del ítem",
                             "por": "Categoria do item"
@@ -654,8 +626,7 @@
                         },
                         "title": {
                           "type": "string",
-                          "description": "Item title.",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Item title.",
                             "spa": "Título del ítem",
                             "por": "Título do item"
@@ -664,8 +635,7 @@
                         },
                         "description": {
                           "type": "string",
-                          "description": "Item description.",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Item description.",
                             "spa": "Descripción del item",
                             "por": "Descrição do artigo"
@@ -674,8 +644,7 @@
                         },
                         "unit_price": {
                           "type": "number",
-                          "description": "Unit price of the item (maximum 2 decimals).",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Unit price of the item (maximum 2 decimals).",
                             "spa": "Precio unitario del producto (máximo 2 decimales)",
                             "por": "Preço unitário do produto (máximo de 2 decimais)"
@@ -684,8 +653,7 @@
                         },
                         "quantity": {
                           "type": "number",
-                          "description": "Number of item units.",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Number of item units.",
                             "spa": "Cantidad de unidades del ítem",
                             "por": "Quantidade do unidades do item"
@@ -697,8 +665,7 @@
                         },
                         "total_amount": {
                           "type": "string",
-                          "description": "Item total.",
-                          "x-description-i18n": {
+                          "description": {
                             "eng": "Item total.",
                             "spa": "Total del ítem",
                             "por": "Total do ítem"
@@ -710,8 +677,7 @@
                   },
                   "sponsor": {
                     "type": "object",
-                    "description": "Integrator information.",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "Integrator information.",
                       "spa": "Información del integrador",
                       "por": "Informações do integrador"
@@ -719,8 +685,7 @@
                     "properties": {
                       "id": {
                         "type": "number",
-                        "description": "Mercado Pago's USER_ID of the integrator system.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Mercado Pago's USER_ID of the integrator system.",
                           "spa": "USER_ID de la cuenta de Mercado Pago del sistema integrador",
                           "por": "USER_ID da conta Mercado Pago do sistema integrador"
@@ -735,8 +700,7 @@
                     "properties": {
                       "amount": {
                         "type": "number",
-                        "description": "Amount to withdraw in local currency.",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "Amount to withdraw in local currency.",
                           "spa": "Monto a retirar en moneda local",
                           "por": "Montante a retirar em moeda local"
@@ -1005,8 +969,7 @@
     "schemas": {
       "unit_measure": {
         "type": "string",
-        "description": "Unit of measure of the item.",
-        "x-description-i18n": {
+        "description": {
           "eng": "Unit of measure of the item.",
           "spa": "Unidad de medida del ítem",
           "por": "Unidade de medida do item"

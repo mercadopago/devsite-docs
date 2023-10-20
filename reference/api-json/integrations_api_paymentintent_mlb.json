@@ -23,8 +23,7 @@
           {
             "name": "deviceId",
             "in": "path",
-            "description": "identifier of the device that will have a payment intent queued",
-            "x-description-i18n": {
+            "description": {
               "eng": "identifier of the device that will have a payment intent queued",
               "spa": "identificador del dispositivo que tendrá un intento de pago en cola",
               "por": "identificador do dispositivo que terá uma tentativa de pagamento em fila"
@@ -49,8 +48,7 @@
                     "required": true,
                     "example": 1500,
                     "minimum": 1,
-                    "description": "A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75).",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75).",
                       "spa": "Un valor entero positivo que representa cuánto cobrar. El valor debe tener dos decimales en la parte entera (por ejemplo, 175 para cobrar $1,75).",
                       "por": "Um valor inteiro positivo que representa quanto carregar. O valor deve ter duas casas decimais na parte inteira (por exemplo, 175 para cobrar R$ 1,75)."
@@ -59,8 +57,7 @@
                   "description": {
                     "type": "string",
                     "example": "your payment intent description",
-                    "description": "payment intent description",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "payment intent description",
                       "spa": "descripción de la intención de pago",
                       "por": "descrição da intenção de pagamento"
@@ -68,8 +65,7 @@
                   },
                   "payment": {
                     "type": "object",
-                    "description": "properties of the payment intent",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "properties of the payment intent",
                       "spa": "propiedades de la intención de pago",
                       "por": "propriedades da intenção de pagamento"
@@ -78,8 +74,7 @@
                       "installments": {
                         "type": "integer",
                         "example": 1,
-                        "description": "An integer value that must be between 1 and 72, this value can be setted only if type field is equal to credit_card",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "An integer value that must be between 1 and 72, this value can be setted only if type field is equal to credit_card",
                           "spa": "Un valor entero que debe estar entre 1 y 72, este valor se puede configurar solo si el campo de tipo es igual a credit_card",
                           "por": "Um valor inteiro que deve estar entre 1 e 72, este valor pode ser configurado somente se o campo type for igual a credit_card"
@@ -88,8 +83,7 @@
                       "type": {
                         "type": "string",
                         "example": "credit_card",
-                        "description": "An alphanumeric value that must be one of this [credit_card, debit_card or voucher_card]",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "An alphanumeric value that must be one of this [credit_card, debit_card or voucher_card]",
                           "spa": "Un valor alfanumérico que debe ser uno de estos [credit_card, debit_card o voucher_card]",
                           "por": "Um valor alfanumérico que deve ser um destes [credit_card, debit_card ou voucher_card]"
@@ -98,8 +92,7 @@
                       "installments_cost": {
                         "type": "string",
                         "example": "seller",
-                        "description": "A string value that must be one of this [seller or buyer], this value can be setted only if type field is equal to credit_card",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "A string value that must be one of this [seller or buyer], this value can be setted only if type field is equal to credit_card",
                           "spa": "Un valor de string que debe ser uno de este [seller o buyer], este valor se puede establecer solo si el campo de tipo es igual a credit_card",
                           "por": "Um valor de string que deve ser um destes [seller ou buyer], esse valor pode ser definido somente se o campo de tipo for igual a credit_card"
@@ -107,8 +100,7 @@
                       },
                       "voucher_type": {
                         "type": "string",
-                        "description": "A string value that must be one of this [sodexo or alelo], this value can be setted only if type field is equal to voucher_card",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "A string value that must be one of this [sodexo or alelo], this value can be setted only if type field is equal to voucher_card",
                           "spa": "Un valor de string que debe ser uno de estos [sodexo o alelo], este valor se puede configurar solo si el campo de tipo es igual a voucher_card",
                           "por": "Um valor de string que deve ser um desses [sodexo ou alelo], este valor pode ser configurado somente se o campo tipo for igual a voucher_card"
@@ -123,8 +115,7 @@
                   },
                   "additional_info": {
                     "type": "object",
-                    "description": "payment intent additional info",
-                    "x-description-i18n": {
+                    "description": {
                       "eng": "payment intent additional info",
                       "spa": "información adicional de intención de pago",
                       "por": "informações adicionais de intenção de pagamento"
@@ -133,8 +124,7 @@
                       "external_reference": {
                         "type": "string",
                         "example": "4561ads-das4das4-das4754-das456",
-                        "description": "An alphanumeric value can be an identificator in your application. It will be returned in the Webhook notification",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "An alphanumeric value can be an identificator in your application. It will be returned in the Webhook notification",
                           "spa": "Un valor alfanumérico puede ser un identificador en tu aplicación. Se devolverá en la notificación de Webhook.",
                           "por": "Um valor alfanumérico pode ser um identificador em seu aplicativo. Ele será retornado na notificação do Webhook."
@@ -143,8 +133,7 @@
                       "print_on_terminal": {
                         "type": "boolean",
                         "example": true,
-                        "description": "A boolean value that determines if you want to print the ticket on the device",
-                        "x-description-i18n": {
+                        "description": {
                           "eng": "A boolean value that determines if you want to print the ticket on the device",
                           "spa": "Un valor booleano que determina si desea imprimir el ticket en el dispositivo",
                           "por": "Um valor booleano que determina se você deseja imprimir o ticket no dispositivo"
