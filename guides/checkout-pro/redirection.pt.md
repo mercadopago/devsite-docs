@@ -4,7 +4,7 @@ Ao final do processo de pagamento, é possível redirecionar o comprador novamen
 
 > NOTE
 >
-> Importante
+> Redirecionamento automático
 >
 > Caso queira que o redirecionamento para os pagamentos aprovados seja automático, sem a renderização de um botão de retorno, é preciso adicionar também o atributo `auto_return` com valor `approved`. Além disso, o atributo `auto_return` só funciona para o modo **redirect** e **mobile** do Checkout Pro. O mesmo não funciona no modo modal, já que nesse último o comprador segue no site durante todo o processo de pagamento.
 
@@ -14,6 +14,12 @@ Nas tabelas a seguir você encontra o detalhe de cada um dos possíveis parâmet
 | ------------ 	|	-------- | 
 | `auto_return` | Os compradores são redirecionados automaticamente para o  _site_ quando o pagamento é aprovado. O valor padrão é `approved`. |
 | `back_urls` | URL de retorno ao site. Possíveis cenários são:<br/><br/>`success`: URL de retorno perante pagamento aprovado.<br/><br/>`pending`: URL de retorno perante pagamento pendente.<br/><br/>`failure`: URL de retorno perante pagamento rejeitado.
+
+> WARNING
+>
+> Importante
+>
+> Não utilize domínios locais no valor `back_urls`, como 'localhost/' ou '127.0.0.1' com ou sem porta especificada. Recomendamos usar um servidor com um domínio nomeado (DNS) ou IPs de desenvolvimento para poder retornar ao site após o pagamento. Caso contrário, aparecerá a mensagem "Alguma coisa deu errado" ao finalizar o processo de compra.
 
 Através das `back_urls`, serão retornados os seguintes parâmetros:
 

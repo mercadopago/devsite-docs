@@ -4,7 +4,7 @@ At the end of the payment process, it is possible to redirect the buyer back to 
 
 > NOTE
 >
-> Important
+> Automatic redirection
 >
 > If you want the redirection for approved payments to be automatic, without rendering a return button, you must also add the `auto_return` attribute with the value `approved`. Also, the `auto_return` attribute only works for Checkout Pro's **redirect** and **mobile mode**. The same does not work in modal mode, since the buyer remains on the site during the entire payment process.
 
@@ -14,6 +14,12 @@ In the following tables you will find the details of each of the possible reques
 | ------------ 	| 	-------- |
 | `auto_return` | Buyers are automatically redirected to _site_ when payment is approved. The default value is `approved`. |
 | `back_urls` | Return URL to the site. Possible scenarios are:<br/><br/>`success`: Return URL when payment is approved.<br/><br/>`pending`: Return URL when payment is pending.<br/><br/> `failure`: Return URL when payment is rejected.
+
+> WARNING
+>
+> Important
+>
+> Do not use local domains in the `back_urls` value, such as 'localhost/' or '127.0.0.1' with or without a specified port. We recommend using a server with a named domain (DNS) or development IPs to be able to return to the site after payment. Otherwise, the "Something went wrong" message will appear when the purchase process is completed.
 
 Through the `back_urls`, the following parameters will be returned:
 

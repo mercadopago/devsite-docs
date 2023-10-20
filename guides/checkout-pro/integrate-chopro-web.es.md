@@ -88,11 +88,19 @@ A continuación, encontrarás el botón de pago que se muestra en tu página.
 
 En el ejemplo anterior, se rederizará un botón de pago que será responsable por abrir el Checkout Pro. Si deseas que la experiencia con Checkout Pro se realice en una **pestaña externa o de manera modal**, consulta la sección [Esquema de apertura](/developers/es/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 
+## Configurar las back_url
+
+Al final del proceso de pago, es posible redirigir al comprador a otro entorno del sitio a través del atributo `back_urls` que se configura al crear la preferencia. Las `back_urls` serán las encargadas de guiar el flujo de regreso a tu sitio web cuando se complete el pago. Es posible definir tres URL de retorno diferentes que corresponden a escenarios de pago pendiente, éxito o error. 
+
+Para obtener más información, consulta la sección [URL de retorno](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).
+
 > WARNING
 >
 > Importante
 >
-> Es sumamente importante prestar atención, al crear la preferencia, a la configuración de las `back_urls`. Estas serán las encargadas de guiar el flujo de regreso a tu sitio web cuando se complete el pago. Es posible definir tres URL de retorno diferentes que corresponden a escenarios de pago pendiente, éxito o error. Para obtener más información, consulta la sección [URL de retorno](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).
+> No utilices dominios locales en el valor `back_urls`, tales como 'localhost/' o '127.0.0.1' con o sin puerto especificado. Recomendamos usar un servidor con dominio nombrado (DNS) o IPs de desarrollo para poder regresar al sitio después del pago. De lo contrario, aparecerá el mensaje de "Algo ha salido mal" al finalizar el proceso de compra.
+
+## Recibir estados de pago
 
 Al crear un pago es posible recibir 3 estados diferentes: `Pendiente`, `Rechazado` y `Aprobado`. Para mantenerse al día con las actualizaciones, debes configurar tu sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulta [Notificaciones](/developers/es/docs/checkout-pro/additional-content/your-integrations/notifications) para obtener más detalles.
 
