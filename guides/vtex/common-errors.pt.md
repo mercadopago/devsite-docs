@@ -1,4 +1,4 @@
-# Erros al configurar a integração
+# Erros ao configurar a integração
 
 Al configurar a integração do Mercado Pago em lojas VTEX, você pode encontrar alguns erros comuns. Abaixo, listamos alguns relacionados especificamente ao Mercado Pago, suas explicações e possíveis soluções.
 

@@ -1,4 +1,4 @@
-# Migrar versión de gateway
+# Cómo migrar de versión de gateway
 
 Si ya tienes registrada una afiliación de gateway MercadoPagoV1, debes saber que próximamente será discontinuada. 
 

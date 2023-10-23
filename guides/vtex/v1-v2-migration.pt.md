@@ -1,4 +1,4 @@
-# Migrar a versão de gateway
+# Como migrar a versão de gateway
 
 Se você já possui um cadastro de afiliação do gateway MercadoPagoV1, deve estar ciente de que em breve ele será descontinuado. 
 
