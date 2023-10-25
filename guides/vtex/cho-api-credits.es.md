@@ -59,7 +59,7 @@ Para configurar Hasta 12 veces sin tarjeta con Mercado Pago en el checkout de la
 
 ------------
 
-![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-pt.gif)
+![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-es.gif)
 
 > NOTE
 >

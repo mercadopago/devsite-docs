@@ -12,7 +12,7 @@ A continuación, te ofrecemos una lista de todos los medios de pago disponibles 
 |---|---|
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
 | Financiación vía Pix en hasta 12 veces | Con esta línea de crédito administrada por Mercado Pago, el cliente tiene la opción de financiar su compra sin necesidad de una tarjeta, mientras el vendedor recibe el valor total en su cuenta. |
-| Pix | Transferencia bancaaria disponible 24h al día. La opción de pagos con Pix solo será posible si tienes una  de pagamento com Pix somente será exibida si tienes una clave Pix registrada en tu cuenta de Mercado Pago. Si todavía no la has creado, haz clic [aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y sigue el paso a paso. |
+| Pix | Transferencia bancaria disponible 24h al día. La opción de pagos con Pix solo será será exibida si tienes una clave Pix registrada en tu cuenta de Mercado Pago. Si todavía no la has creado, haz clic [aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y sigue el paso a paso. |
 | Medios offline | Puedes ofrecer pagos por medios offline, como boleto bancário |
 
 ------------
@@ -45,7 +45,7 @@ A continuación, te ofrecemos una lista de todos los medios de pago disponibles 
 |---|---|
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
 | Hasta 12 cuotas sin tarjeta con Mercado Pago | Con esta línea de crédito administrada por Mercado Pago, el cliente tiene la opción de financiar su compra sin necesidad de una tarjeta, mientras el vendedor recibe el valor total en su cuenta. |
-| Medios offline | Puedes ofrecer pagos por medios offline, como Rapipago, Pago Fácil, Provincia Net ou red Link. |
+| Medios offline | Puedes ofrecer pagos por medios offline, como Rapipago, Pago Fácil, Provincia Net o red Link. |
 
 ------------
 
@@ -63,7 +63,7 @@ A continuación, te ofrecemos una lista de todos los medios de pago disponibles 
 | Medio de pago | Descripción |
 |---|---|
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
-| Medios offline | Puedes ofrecer pagos por medios offline, como PSE ou Efecty. |
+| Medios offline | Puedes ofrecer pagos por medios offline, como PSE o Efecty. |
 
 ------------
 
@@ -72,7 +72,7 @@ A continuación, te ofrecemos una lista de todos los medios de pago disponibles 
 | Medio de pago | Descripción |
 |---|---|
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
-| Meios offline | Puedes ofrecer pagos por medios offline, como Abitab ou Redpagos. |
+| Medios offline | Puedes ofrecer pagos por medios offline, como Abitab o Redpagos. |
 
 ------------
 

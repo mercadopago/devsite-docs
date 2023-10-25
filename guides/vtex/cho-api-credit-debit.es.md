@@ -16,7 +16,7 @@ Para configurar estos medios de pago, dirígete al panel de administración de t
 >
 > Nota
 >
-> ambién puedes configurar condiciones especiales de pago. Haz clic [aqui](https://help.vtex.com/es/tutorial/condicoes-especiais--tutorials_456?&utm_source=admin) para obtener más información.
+> También puedes configurar condiciones especiales de pago. Haz clic [aqui](https://help.vtex.com/es/tutorial/condicoes-especiais--tutorials_456?&utm_source=admin) para obtener más información.
 
 4. Haz clic en **Guardar** para activar la configuración de esa tarjeta y, si lo deseas, repite el proceso para configurar otras marcas.
 

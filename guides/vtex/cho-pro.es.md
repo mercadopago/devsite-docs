@@ -12,7 +12,7 @@ Configurando Checkout Pro, puedes ofrecer pagos con los mismos medios que tienes
 | Financiación vía Pix en hasta 12 veces | Permite al cliente la opción de financiar su compra sin contar con una tarjeta, mientras que el vendedor percibe el monto de dinero completo en su cuenta gracias a esta línea de crédito administrada por Mercado Pago. |
 | Saldo en cuenta de Mercado Pago | Ofrece pagos con el dinero disponible en la cuenta de Mercado Pago del comprador. |
 | Open Finance Mercado Pago | Transacciones hechas en la tienda que conectan al cliente con la institución bancaria de su preferencia a través de Mercado Pago. <br> El pago es semejante a una transacción bancaria: Mercado Pago dirige al cliente a hacer la autenticación y aprobación de la transacción en su banco y, después, lo retorna a la tienda de forma automática. Para más información sobre cómo funciona el pago con Open Finance, haz clic [aquí](https://www.mercadopago.com.br/c/openfinance) o consulta [nuestro blog](https://empresas.mercadopago.com.br/pagamentos-via-open-finance). |
-| Medios offline | Puedes ofrecer pagos por medios offline, como Pix ou boleto bancário |
+| Medios offline | Puedes ofrecer pagos por medios offline, como Pix o boleto bancário |
 
 ------------
 
@@ -23,7 +23,7 @@ Configurando Checkout Pro, puedes ofrecer pagos con los mismos medios que tienes
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
 | Hasta 12 veces sin tarjeta con Mercado Pago | Permite al cliente la opción de financiar su compra sin contar con una tarjeta, mientras que el vendedor percibe el monto de dinero completo en su cuenta gracias a esta línea de crédito administrada por Mercado Pago. |
 | Saldo en cuenta de Mercado Pago | Ofrece pagos con el dinero disponible en la cuenta de Mercado Pago del comprador. |
-| Medios offline | Puedes ofrecer pagos por medios offline, como Oxxo, Paycash, Bancomer e Banamex |
+| Medios offline | Puedes ofrecer pagos por medios offline, como Oxxo, Paycash, Bancomer o Banamex |
 
 
 ------------
@@ -35,7 +35,7 @@ Configurando Checkout Pro, puedes ofrecer pagos con los mismos medios que tienes
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
 | Hasta 12 cuotas sin tarjeta con Mercado Pago | Permite al cliente la opción de financiar su compra sin contar con una tarjeta, mientras que el vendedor percibe el monto de dinero completo en su cuenta gracias a esta línea de crédito administrada por Mercado Pago. |
 | Saldo en cuenta de Mercado Pago | Ofrece pagos con el dinero disponible en la cuenta de Mercado Pago del comprador. |
-| Medios Offline | Puedes ofrecer pagos por medios offline, como Rapipago, Pago Fácil, Provincia Net ou red Link. |
+| Medios offline | Puedes ofrecer pagos por medios offline, como Rapipago, Pago Fácil, Provincia Net o red Link. |
 
 ------------
 
@@ -55,7 +55,7 @@ Configurando Checkout Pro, puedes ofrecer pagos con los mismos medios que tienes
 |---|---|
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
 | Saldo en cuenta de Mercado Pago | Ofrece pagos con el dinero disponible en la cuenta de Mercado Pago del comprador. |
-| Medios offline | Puedes ofrecer pagos por medios offline, como PSE ou Efecty. |
+| Medios offline | Puedes ofrecer pagos por medios offline, como PSE o Efecty. |
 
 ------------
 
@@ -65,7 +65,7 @@ Configurando Checkout Pro, puedes ofrecer pagos con los mismos medios que tienes
 |---|---|
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
 | Saldo en cuenta de Mercado Pago | Ofrece pagos con el dinero disponible en la cuenta de Mercado Pago del comprador. |
-| Medios offline | Puedes ofrecer pagos por medios offline, como Abitab ou Redpagos. |
+| Medios offline | Puedes ofrecer pagos por medios offline, como Abitab o Redpagos. |
 
 ------------
 

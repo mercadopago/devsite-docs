@@ -11,7 +11,7 @@ Para configurar Checkout Pro y comenzar a recibir pagos, dirígete al panel de a
 
 4. Haz clic en **Guardar** para activar la configuración.
 
-![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-pt.gif)
+![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-es.gif)
 
 > NOTE
 >

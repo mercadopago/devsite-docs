@@ -21,7 +21,7 @@ Para crear una **afiliación de gateway MercadoPagoV2**, sigue los pasos a conti
   * **Application Token:** Se refiere a tus [credenciales](/developers/es/docs/vtex/additional-content/your-integrations/credentials) de producción Mercado Pago. Completa con tu Access Token.
   * **Prazo de vencimento do boleto - Período de vencimiento del ticket:** plazo, en días hábiles, para el vencimiento de la orden de compra. Si el cliente paga fuera de plazo, el dinero se depositará en su cuenta de Mercado Pago.
   * **Nome da loja - Nombre para resúmenes:** Nombre de la tienda. El valor de este campo aparecerá en la factura de compra del cliente.
-  * **Parcelamento máximo - Cuotas máximas:** número máximo de veces en las que podrá realizarse el pago.  Con Mercado Pago, puedes ofrecer hasta 12 veces.
+  * **Parcelamento máximo - Cuotas máximas:** número máximo de veces en las que podrá realizarse el pago. Con Mercado Pago, puedes ofrecer hasta 12 veces.
   * **Categoría principal da loja - Categoría principal de la tienda:** rubro de actividades de la tienda.
   * **Compartilhamento da categoria (loja ou produto) por transação - Categoría (tienda o producto) compartida por transacción:** para ayudar a nuestro sistema de prevención de fraudes, tienes la opción de compartir los datos de la categoría de la tienda o producto por cada transacción realizada. Te recomendamos elegir la opción “Categoria da Loja - Categoría de la Tienda”.
   * **Reembolso automático / manual:** en caso de cancelación, puedes elegir si deseas que Mercado Pago reembolse automáticamente el dinero, o si deseas retener el monto pagado para que el cliente lo use en futuras compras dentro de la misma tienda.

@@ -2,7 +2,7 @@
 
 ----[mlb]----
 
-Configurando Checkout Transparente en tiendas VTEX, puedes ofrecer pagos por medios offline, como Boleto Bancário ou Pix.
+Configurando Checkout Transparente en tiendas VTEX, puedes ofrecer pagos por medios offline, como Boleto Bancário o Pix.
 
 > WARNING
 >
@@ -14,7 +14,7 @@ Configurando Checkout Transparente en tiendas VTEX, puedes ofrecer pagos por med
 
 ----[mco]----
 
-Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como PSE ou Efecty.
+Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como PSE o Efecty.
 
 > WARNING
 >
@@ -28,19 +28,19 @@ Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offli
 
 ----[mla]----
 
-Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Pago Fácil, Rapipago, Red Link ou Provincia Net.
+Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Pago Fácil, Rapipago, Red Link o Provincia Net.
 
 ------------
 
 ----[mlm]----
 
-Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Oxxo, Paycash, Banamex ou Bancomer.
+Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Oxxo, Paycash, Banamex o Bancomer.
 ------------
 
 
 ----[mlu]----
 
-Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Abitab ou Redpagos.
+Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Abitab o Redpagos.
 ------------
 
 ----[mlc]----
@@ -65,7 +65,7 @@ Para configurar estos medios de pago, dirígete al panel de administración de t
 
 4. Haz clic en **Guardar** para activar la configuración.
 
-![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-pt.gif)
+![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-es.gif)
 
 > NOTE
 >
