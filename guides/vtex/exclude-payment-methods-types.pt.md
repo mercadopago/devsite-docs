@@ -8,7 +8,7 @@ Com **Métodos de pagamento excluídos**, nos referimos aos meios individuais ou
 
 Essa exclusão de tipos e meios de pagamento configurada na VTEX funcionará apenas para os pagamentos oferecidos com o Checkout Pro e você pode modificá-la quantas vezes considerar necessário. 
 
-Na tabela a seguir, você encontrará a nomenclatura que cada tipo e método de pagamento recebe no VTEX, para que possa usá-la caso queira excluir algum na sua integração com o Checkout Pro.
+Na tabela a seguir, você encontrará a nomenclatura que cada tipo e método de pagamento recebe na VTEX, para que possa usá-la caso queira excluir algum na sua integração com o Checkout Pro.
 
 
 ----[mla]----

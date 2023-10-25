@@ -35,7 +35,7 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 |---|---|
 | Cartões | Permite integração com cartão de crédito e débito. |
 | Até 12 meses sem cartão no Mercado Pago | Com esta linha de crédito administrada pelo Mercado Pago, o cliente tem a opção de financiar sua compra sem precisar de cartão, enquanto o vendedor recebe o valor integral em sua conta. |
-| Meios offline | Você pode oferecer pagamentos por meios offline,  como Oxxo, Paycash, Bancomer e Banamex |
+| Meios offline | Você pode oferecer pagamentos por meios offline, como Oxxo, Paycash, Bancomer e Banamex |
 
 
 ------------
@@ -46,7 +46,7 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 |---|---|
 | Cartões | Permite integração com cartão de crédito e débito. |
 | Parcelamento em até 12x sem cartão no Mercado Pago | Com esta linha de crédito administrada pelo Mercado Pago, o cliente tem a opção de financiar sua compra sem precisar de cartão, enquanto o vendedor recebe o valor integral em sua conta. |
-| Meios Offline | Você pode oferecer pagamentos por meios offline,  como Rapipago, Pago Fácil, Provincia Net ou red Link. |
+| Meios Offline | Você pode oferecer pagamentos por meios offline, como Rapipago, Pago Fácil, Provincia Net ou Red Link. |
 
 ------------
 

@@ -2,7 +2,7 @@
 
 Ao configurar a ----[mla, mlu, mlc, mlm, mpe, mco]----Checkout API------------ ----[mlb]----Checkout Transparente------------ em lojas VTEX, você pode oferecer pagamentos com cartão de débito e/ou crédito. 
 
-Para configurar esses meios de pagamento, acesse o painel de administração da sua plataforma VTEX, e vá para **Pagamentos > Configuração > Condições de pagamento**. Logo, siga os passos abaixo: 
+Para configurar esses meios de pagamento, acesse o painel de administração da plataforma VTEX, e vá para **Pagamentos > Configuração > Condições de pagamento**. Logo, siga os passos abaixo: 
 
 1.  Clique no botão "+ (Adicionar novo plano de pagamento para...)". 
 2. Dentro das categorias **Cartão de débito** ou **Cartão de crédito**, você encontrará as diferentes marcas de cartão que pode oferecer. Clique nelas e configure cada uma individualmente para habilitá-las. Você pode obter mais informações sobre essa configuração na seção de [tutoriais da VTEX](https://help.vtex.com/pt/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros). 
@@ -16,7 +16,7 @@ Para configurar esses meios de pagamento, acesse o painel de administração da 
 >
 > Nota
 >
-> Você também pode configurar **condições especiais** de pagamento. Clique [aqui](https://help.vtex.com/pt/tutorial/condicoes-especiais--tutorials_456?&utm_source=admin) para mais informações.
+> Você também pode configurar **condições especiais** de pagamento. Para mais informações, leia a [documentação](https://help.vtex.com/pt/tutorial/condicoes-especiais--tutorials_456?&utm_source=admin).
 
 4. Clique em **Salvar** para ativar a configuração desse cartão e, se desejar, repita o processo para configurar outras marcas.
 
