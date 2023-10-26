@@ -5,9 +5,18 @@ Com o Mercado Pago, você tem a flexibilidade de oferecer benefícios exclusivos
 ## Configuração através do painel administrativo da Tiendanube
 
 Através do Painel administrativo da sua loja, clique em **Editar** para definir as seguintes configurações:
+----[mlm, mpe, mco, mlu, mlc]----
+![Panel](/images/nuvemshop/admines.png)
 
+------------
+----[mla]----
+![Panel](/images/nuvemshop/admines-ar.png)
+
+------------
+----[mlb]----
 ![Painel](/images/nuvemshop/adminpt.png)
 
+------------
 ### Parcelas
 
 * **Valor mínimo da parcela**: Essa configuração é opcional e permite que você estabeleça um limite mínimo para o valor das parcelas.
@@ -37,7 +46,18 @@ Você também pode configurar as experiências de parcelamento de cada Checkout 
 
 Nesta seção, você pode definir o **número máximo de meses**, com e sem juros, nos quais seus clientes poderão efetuar o pagamento utilizando o Checkout Mercado Pago:
 
+----[mlm, mpe, mco, mlu, mlc]----
+![Pro](/images/nuvemshop/parc-pro-es.gif)
+
+------------
+----[mla]----
+![Pro](/images/nuvemshop/parc-pro-es-ar.gif)
+
+------------
+----[mlb]----
 ![Pro](/images/nuvemshop/parc-pro-pt.gif)
+
+------------
 ----[mlm, mla, mpe, mco, mlu, mlc]----
 #### Checkout API
 
@@ -49,7 +69,18 @@ Nesta seção, você pode definir o **número máximo de meses**, com e sem juro
 
 Nesta seção, você pode definir o **número máximo de meses**, com e sem juros, nos quais seus clientes poderão efetuar o pagamento utilizando o Checkout Transparente:
 
+----[mlm, mpe, mco, mlu, mlc]----
+![API](/images/nuvemshop/parc-api-es.gif)
+
+------------
+----[mla]----
+![API](/images/nuvemshop/parc-api-es-ar.gif)
+
+------------
+----[mlb]----
 ![API](/images/nuvemshop/parc-cho-api-pt.gif)
+
+------------
 
 ## Configuração através da conta Mercado Pago
 

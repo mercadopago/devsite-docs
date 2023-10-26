@@ -22,5 +22,21 @@ To integrate the Checkout API, follow the steps below.
 
 ------------
 6. Finally, click on **Save changes**.
+----[mlm, mpe, mco, mlu, mlc]---- 
+</center>
 
+![Payments Checkout API - Tiendanube](/images/nuvemshop/cho-api-mlm-es.gif)
+
+</center>
+------------
+----[mla]---- 
+</center>
+
+![Payments Checkout API - Tiendanube](/images/nuvemshop/cho-api-mla-es.png.png)
+
+</center>
+------------
+----[mlb]---- 
 Ready! The Checkout API is now ready to receive payments from your store.
+
+------------
