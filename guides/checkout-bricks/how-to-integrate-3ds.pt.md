@@ -126,8 +126,8 @@ Para que seja possível validar pagamentos com 3DS, disponibilizamos um **ambien
 
 | Fluxo | Número | Código de segurança | Data de vencimento |
 |---|---|---|---|
-| _Challenge_ com sucesso | 5483 9281 6457 4623| 123 | 11/25 |
-| _Challenge_ não autorizado | 5361 9568 0611 7557| 123 | 11/25 |
+| Challenge com sucesso | 5483 9281 6457 4623| 123 | 11/25 |
+| Challenge não autorizado | 5361 9568 0611 7557| 123 | 11/25 |
 
 > Os passos para gerar o pagamento são os mesmos [exemplificados anteriormente](/developers/pt/docs/checkout-bricks/how-tos/integrate-3ds#bookmark_integrar_com_3ds) nesta seção.
 
