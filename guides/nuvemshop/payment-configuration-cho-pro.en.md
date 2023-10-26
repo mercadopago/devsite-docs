@@ -33,5 +33,27 @@ To integrate Checkout Pro, follow the steps below.
 
  ------------
 6. Finally, click on **Save settings**.
+----[mlm, mpe, mco, mlu, mlc]---- 
+<center>
 
+![Payments Checkout Pro - Nuvemshop](/images/nuvemshop/cho-pro-mlm-es.gif)
+
+</center>
+------------
+
+----[mla]---- 
+<center>
+
+![Payments Checkout Pro - Nuvemshop](/images/nuvemshop/cho-pro-mla-es.png)
+
+</center>
+------------
+----[mlb]---- 
+<center>
+
+![Payments Checkout Pro - Nuvemshop](/images/nuvemshop/cho-pro-pt.gif)
+
+</center>
+
+------------
 Ready! Mercado Pago Checkout Pro is ready to receive payments from your store.

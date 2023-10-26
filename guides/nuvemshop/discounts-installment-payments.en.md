@@ -5,12 +5,21 @@ With Mercado Pago, you have the flexibility to offer exclusive benefits to your 
 ## Administration panel
 
 Within your store's Administration Panel, click on **Edit** to configure the following options:
-
+----[mlm, mpe, mco, mlu, mlc]----
 ![Panel](/images/nuvemshop/admines.png)
 
+------------
+----[mla]----
+![Panel](/images/nuvemshop/admines-ar.png)
+
+------------
+----[mlb]----
+![Painel](/images/nuvemshop/adminpt.png)
+
+------------
 ### Installments
 
-* Minimum installment amount: This setting is optional and allows you to set a minimum limit for the installment amount.
+* **Minimum installment amount**: This setting is optional and allows you to set a minimum limit for the installment amount.
 
 ### Discounts
 ----[mlm, mla, mpe, mco, mlu, mlc]----
@@ -36,7 +45,18 @@ You can also configure installment experiences for each Checkout in your store t
 
 In this section, you can set the **maximum number of months**, with and without interest, in which your customers can make payments using the Mercado Pago Checkout:
 
+----[mlm, mpe, mco, mlu, mlc]----
 ![Pro](/images/nuvemshop/parc-pro-es.gif)
+
+------------
+----[mla]----
+![Panel](/images/nuvemshop/parc-pro-es-arg.gif)
+
+------------
+----[mlb]----
+![Pro](/images/nuvemshop/parc-pro-pt.gif)
+
+------------
 ----[mlm, mla, mpe, mco, mlu, mlc]----
 #### Checkout API
 
@@ -48,7 +68,18 @@ In this section, you can set the **maximum number of months**, with and without 
 
 In this section, you can set the **maximum number of months**, with and without interest, in which your customers can make payments using the Transparent Checkout:
 
+----[mlm, mpe, mco, mlu, mlc]----
 ![API](/images/nuvemshop/parc-api-es.gif)
+
+------------
+----[mla]----
+![API](/images/nuvemshop/parc-api-es-arg.gif)
+
+------------
+----[mlb]----
+![API](/images/nuvemshop/parc-cho-api-pt.gif)
+
+------------
 
 ## Mercado Pago account
 
