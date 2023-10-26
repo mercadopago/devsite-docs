@@ -51,7 +51,7 @@ Nesta seção, você pode definir o **número máximo de meses**, com e sem juro
 
 ------------
 ----[mla]----
-![Pro](/images/nuvemshop/parc-pro-es-ar.gif)
+![Pro](/images/nuvemshop/parc-pro-es-arg.gif)
 
 ------------
 ----[mlb]----
@@ -74,7 +74,7 @@ Nesta seção, você pode definir o **número máximo de meses**, com e sem juro
 
 ------------
 ----[mla]----
-![API](/images/nuvemshop/parc-api-es-ar.gif)
+![API](/images/nuvemshop/parc-api-es-arg.gif)
 
 ------------
 ----[mlb]----

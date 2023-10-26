@@ -50,7 +50,7 @@ In this section, you can set the **maximum number of months**, with and without 
 
 ------------
 ----[mla]----
-![Panel](/images/nuvemshop/parc-pro-es-ar.gif)
+![Panel](/images/nuvemshop/parc-pro-es-arg.gif)
 
 ------------
 ----[mlb]----
@@ -73,7 +73,7 @@ In this section, you can set the **maximum number of months**, with and without 
 
 ------------
 ----[mla]----
-![API](/images/nuvemshop/parc-api-es-ar.gif)
+![API](/images/nuvemshop/parc-api-es-arg.gif)
 
 ------------
 ----[mlb]----

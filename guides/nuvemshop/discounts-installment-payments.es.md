@@ -51,7 +51,7 @@ En esta sección, puedes establecer el **número máximo de meses**, con y sin i
 
 ------------
 ----[mla]----
-![Pro](/images/nuvemshop/parc-pro-es-ar.gif)
+![Pro](/images/nuvemshop/parc-pro-es-arg.gif)
 
 ------------
 ----[mlb]----
@@ -74,7 +74,7 @@ En esta sección, puedes establecer el **número máximo de meses**, con y sin i
 
 ------------
 ----[mla]----
-![API](/images/nuvemshop/parc-api-es-ar.gif)
+![API](/images/nuvemshop/parc-api-es-arg.gif)
 
 ------------
 ----[mlb]----
