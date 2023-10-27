@@ -10,22 +10,3 @@ Para oferecer pagamento de assinaturas via boleto bancário, envie um **POST** c
 > Importante
 >
 > O pagamento de assinaturas por boleto bancário está disponível somente para assinaturas criadas por meio do endpoint [/preapproval_plan](/developers/pt/reference/subscriptions/_preapproval_plan/post), onde o vendedor deverá redirecionar o comprador para a URL gerada no parâmetro `init_point`.
-
-
-> PREV_STEP_CARD_PT
->
-> Assinaturas sem plano associado 
->
-> Veja mais informações sobre as diferentes assinaturas que possuem características distintas por serem específicas para cada pagador.
->
-> [Assinaturas sem plano associado](/developers/pt/docs/subscriptions/integration-configuration/subscriptions-no-associated-plan)
-
-> NEXT_STEP_CARD_PT
->
-> Valor proporcional (Pro rata)
->
-> Veja como definir o valor cobrado do assinante caso a assinatura comece em um dia diferente da data de cobrança definida pelo vendedor.
->
-> [Valor proporcional (Pro rata)](/developers/pt/docs/subscriptions/integration-customization/payment-methods/proportional-amount)
-
-------------

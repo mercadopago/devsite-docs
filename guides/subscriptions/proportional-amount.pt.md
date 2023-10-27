@@ -19,31 +19,3 @@ Para definir uma pro-rata no pagamento de assinaturas, envie um POST com os par�
 > Importante
 >
 > Caso queira modificar uma assinatura específica e definir uma Pro rata, envie um PUT com o parâmetro `billing_day_proportional` ao endpoint [/preapproval_plan/{id}](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval_plan_id/put), altere o valor de `false` para `true` e execute a requisição.
-
-----[mlb]----
-> PREV_STEP_CARD_PT
->
-> Boleto bancário
->
-> Saiba como disponibilizar para o assinante a opção de pagar a assinatura com boleto bancário.
->
-> [Boleto bancário](/developers/pt/docs/subscriptions/integration-customization/payment-methods/boleto-bancario)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]---- 
-> PREV_STEP_CARD_PT
->
-> Assinaturas sem plano associado 
->
-> Veja mais informações sobre as diferentes assinaturas que possuem características distintas por serem específicas para cada pagador.
->
-> [Assinaturas com plano associado](/developers/pt/docs/subscriptions/integration-configuration/subscription-no-associated-plan)
-------------
-
-> NEXT_STEP_CARD_PT
->
-> Criar usuário de teste
->
-> Analise se a integração foi feita de maneira correta e se a aquisição de assinaturas está funcionando sem erros.
->
-> [Criar usuário de teste](/developers/pt/docs/subscriptions/additional-content/your-integrations/test/accounts)
