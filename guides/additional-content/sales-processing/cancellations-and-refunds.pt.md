@@ -27,7 +27,7 @@ Antes de realizar o cancelamento de uma compra, é preciso atentar-se os seguint
 
 ------------
 
-> Visite nossa Referência API para ter acesso à API de [Criar cancelamento](/developers/pt/reference/chargebacks/_payments_payment_id/put).
+> Visite nossa Referência API para ter acesso à API de [Criar cancelamento.](/developers/pt/reference/chargebacks/_payments_payment_id/put)
 
 ## Reembolsos
 
