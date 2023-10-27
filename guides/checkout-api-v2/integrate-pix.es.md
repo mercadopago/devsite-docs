@@ -144,8 +144,13 @@ Al incluir el elemento `select` con el id: `form-checkout__identificationType` q
 
 Al finalizar la inclusión del formulario de pago, es necesario enviar el email del comprador, el tipo y número de documento, el medio de pago utilizado (pix) y el detalle del importe.
 
-Para configurar los pagos con Pix, envía un **POST** al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, realiza la solicitud utilizando nuestros SDKs.
+> NOTE
+>
+> Importante
+>
+> Al ejecutar las APIs mencionadas en esta documentación, es posible que encuentre el atributo `X-Idempotency-Key`. Completarlo es crucial para asegurar la ejecución y reejecución de las solicitudes sin situaciones no deseadas, como pagos duplicados, por ejemplo.
 
+Para configurar los pagos con Pix, envía un **POST** al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, realiza la solicitud utilizando nuestros SDKs.
 
 [[[
 ```php

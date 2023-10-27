@@ -146,6 +146,12 @@ Ao incluir o elemento do tipo `select` com o id: `form-checkout__identificationT
 
 Ao finalizar a inclusão do formulário de pagamento, é preciso enviar o e-mail do comprador, tipo e número de documento, o meio de pagamento utilizado (pix) e o detalhe do valor.
 
+> NOTE
+>
+> Importante
+>
+> Ao executar as APIs citadas nesta documentação, você poderá encontrar o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições sem que haja situações indesejadas como, por exemplo, pagamentos em duplicidade.
+
 Para configurar pagamento com Pix, envie um POST ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça a requisição utilizando nossos SDKs.
 
 [[[
@@ -362,10 +368,7 @@ curl -X POST \
 ```
 ]]]
 
-
-
 A resposta mostrará o estado pendente do pagamento e todas as informações que você precisa para mostrar ao comprador. O valor `transaction_data` retornará os dados para código QR.
-
 
 [[[
 ```json
@@ -401,7 +404,6 @@ A resposta mostrará o estado pendente do pagamento e todas as informações que
 ```
 ]]]
 
-
 Com Pix, você também pode escolher o prazo que o cliente terá para pagar a compra, definindo a validade do código de pagamento enviado a ele após a realização do pedido.
 
 > NOTE
@@ -416,7 +418,6 @@ Para o usuário efetuar o pagamento, você deve escolher a forma de abertura do 
 
 Selecione a opção que mais se adéqua ao seu modelo de negócio e siga as etapas descritas abaixo.
 
-
 * **Adicionar Link ou botão**: Ao optar por adicionar um link ou botão para pagamento com Pix, o comprador será direcionado a uma nova janela contendo todas as informações para pagamento, como QR Code, Pix Copia e Cola e as instruções de pagamento.
 
 Para oferecer esta opção, utilize o atributo `ticket_url`, que mostra um Pix em uma nova janela com todas as informações de QR Code, Pix Copia e Cola e instruções de pagamentos. 
@@ -428,14 +429,11 @@ Para oferecer esta opção, utilize o atributo `ticket_url`, que mostra um Pix e
 ```
 ]]]
 
-
 * **Renderizar código QR**: É possível renderizar o código QR vigente, que deverá ser utilizado somente uma vez, na própria tela. Além disso, também é possível adicionar uma opção para copiar e colar o código de pagamento, o que permitirá realizar a transação a partir de um Internet Banking.
 
 Siga as etapas abaixo para renderizar o QR code e disponibilizar o recurso copia e cola.
 
-
 1. Adicione o `qr_code_base64` para exibir o código QR.
-
 
 [[[
 ```html
@@ -443,7 +441,6 @@ Siga as etapas abaixo para renderizar o QR code e disponibilizar o recurso copia
 
 ```
 ]]]
-
 
 2. Para apresentar a opção que permitirá copiar e colar o código de pagamento, adicione o qr_code da seguinte forma:
 
@@ -454,6 +451,4 @@ Siga as etapas abaixo para renderizar o QR code e disponibilizar o recurso copia
 ```
 ]]]
 
-
 Ao concluir essas etapas, o código QR terá sido renderizado e será exibido para o comprador no momento do pagamento.
-
