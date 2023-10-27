@@ -12,7 +12,7 @@ Las suscripciones con plan asociado se utilizan cuando es necesario utilizar la 
 
 La integración de **suscripciones con plan asociado** se realiza en dos pasos. En el primero es necesario **crear un plan** que irá asociado a la suscripción y en el segundo, la **creación de la suscripción**. 
 
-El plan de suscripción te permite definir, entre otros atributos, el título, el valor y la frecuencia de las suscripciones creadas por el vendedor. Para crear un plan y asociarlo con una suscripción, mira el endpoint [/preapproval_plan](/developers/es/reference/subscriptions/_preapproval_plan/post), completa los atributos necesarios y ejecuta el request o, si lo prefiere, use el curl a continuación.
+El plan de suscripción te permite definir, entre otros atributos, el título, el valor y la frecuencia de las suscripciones creadas por el vendedor. Para crear un plan y asociarlo con una suscripción, mira el endpoint [/preapproval_plan](/developers/es/reference/subscriptions/_preapproval_plan/post), completa los atributos necesarios y ejecuta el request o, si prefieres, usa el curl a continuación.
 
 > NOTE
 >
@@ -59,7 +59,7 @@ curl -X POST \
 
 Una vez que hayas creado un plan, puedes crear la suscripción. La suscripción es una autorización del pagador para cargos recurrentes con un medio de pago definido (tarjeta de crédito, por ejemplo). Al suscribirse a un producto/servicio, el cliente acepta que se le cobre periódicamente un cierto monto por el período de tiempo definido.
 
-Para crear una suscripción, tenga a mano el `preapproval_plan_id`, accede al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y completa los atributos como se indica en la tabla de parámetros o, si lo prefiere, use el curl a continuación.
+Para crear una suscripción, tenga a mano el `preapproval_plan_id`, accede al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y completa los atributos como se indica en la tabla de parámetros o, si prefieres, usa el curl a continuación.
 
 [[[
 ```curl

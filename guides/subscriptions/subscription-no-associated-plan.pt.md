@@ -148,23 +148,3 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 > Veja mais informações sobre as assinaturas utilizadas quando é necessário ter a mesma assinatura em ocasiões diferentes e organizá-las em grupos identificáveis. 
 >
 > [Assinaturas com plano associado](/developers/pt/docs/subscriptions/integration-configuration/subscriptions-associated-plan)
-
-----[mlb]----
-> NEXT_STEP_CARD_PT
->
-> Boleto bancário
->
-> Saiba como disponibilizar para o assinante a opção de pagar a assinatura com boleto bancário.
->
-> [Boleto bancário](/developers/es/docs/subscriptions/integration-customization/payment-methods/boleto-bancario)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> NEXT_STEP_CARD_PT
->
-> Valor proporcional (Pro rata)
->
-> Veja como definir o valor cobrado do assinante caso a assinatura comece em um dia diferente da data de cobrança definida pelo vendedor.
->
-> [Valor proporcional (Pro rata)](/developers/pt/docs/subscriptions/integration-customization/payment-methods/proportional-amount)
-------------
