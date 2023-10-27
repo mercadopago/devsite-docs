@@ -3,12 +3,12 @@ servers:
   - url: https://api.mercadopago.com
 info:
   title: Mercado Pago API Reference
-  version: '1.0'
+  version: "1.0"
 paths:
   /v2/wallet_connect/agreements:
     post:
       tags:
-        - $ref: '#/tags/wallet-connect'
+        - $ref: "#/tags/wallet-connect"
       summary: Create Agreement
       x-summary-i18n:
         eng: Create Agreement
@@ -120,7 +120,7 @@ paths:
                         por: Descrição das ações que o usuário tenta realizar
                       example: Test agreement
       responses:
-        '200':
+        "200":
           description: Agreement created
           x-description-i18n:
             eng: Agreement created
@@ -148,7 +148,7 @@ paths:
                     type: string
                     description: This is the uri to redirect the user to the wallet linking in the frontend
                     example: https://beta.mercadopago.com.ar/v1/wallet_agreement/b1234e5678b91c23a456e78912345b67
-        '400':
+        "400":
           description: Error
           x-description-i18n:
             eng: Error
@@ -171,7 +171,7 @@ paths:
   /v2/wallet_connect/agreements/{agreement_id}/payer_token:
     post:
       tags:
-        - $ref: '#/tags/wallet-connect'
+        - $ref: "#/tags/wallet-connect"
       summary: Create payer token
       x-summary-i18n:
         eng: Create payer token
@@ -243,7 +243,7 @@ paths:
                   required: true
                   example: aeecea3e11f2545d1e7790eb6591ff68df74c57930551ed980239f4538a7e530
       responses:
-        '200':
+        "200":
           description: Payer token created
           x-description-i18n:
             eng: Payer token created
@@ -262,7 +262,7 @@ paths:
                       spa: Este es el token del pagador.
                       por: Este é o token do pagador.
                     example: abcdef1e23f4567d8e9123eb6591ff68df74c57930551ed980239f4538a7e530
-        '400':
+        "400":
           description: Error
           x-description-i18n:
             eng: Error
@@ -282,7 +282,7 @@ paths:
                       - 400--Bad-Request--Invalid value for back_url. Must be a valid URL
                       - 400--Bad-Request--Parameter client.id must be a valid id
                       - 400--Bad-Request--Parameter caller.id must be a valid id
-        '404':
+        "404":
           description: Error
           x-description-i18n:
             eng: Error
@@ -299,7 +299,7 @@ paths:
                       - 404--Not-Found--The agreement_id does not exist
                       - 404--Not-Found--The client.id does not exist
                       - 404--Not-Found--The caller.id does not exist
-        '500':
+        "500":
           description: Error
           x-description-i18n:
             eng: Error
@@ -317,7 +317,7 @@ paths:
   /v2/wallet_connect/agreements/{agreement_id}:
     delete:
       tags:
-        - $ref: '#/tags/wallet-connect'
+        - $ref: "#/tags/wallet-connect"
       summary: Cancel agreement
       x-summary-i18n:
         eng: Cancel agreement
@@ -362,11 +362,11 @@ paths:
           schema:
             type: string
             example: YOUR_ACCESS_TOKEN
-      responses: 
-        '200':
+      responses:
+        "200":
           description: Success
           name: Agreement cancelled
-        '400':
+        "400":
           description: Error
           x-description-i18n:
             eng: Error
@@ -383,7 +383,7 @@ paths:
                       - 400--Bad-Request--Parameter agreement_id is required
                       - 400--Bad-Request--Parameter agreementId has more than 32 characters
                       - 400--Bad-Request--Parameter agreement_id must be an alfanumeric value
-        '404':
+        "404":
           content:
             application/json:
               schema:
@@ -393,7 +393,7 @@ paths:
                     type: string
                     enum:
                       - 404--Not-Found--The Agreement with that id
-        '500':
+        "500":
           description: Error
           x-description-i18n:
             eng: Error
@@ -410,13 +410,13 @@ paths:
                       - 500--Error--Internal server error
     get:
       tags:
-        - $ref: '#/tags/wallet-connect'
+        - $ref: "#/tags/wallet-connect"
       summary: Get agreement
       x-summary-i18n:
         eng: Get agreement
         spa: Obtener Agreement
         por: Obter Agreement
-      description: Endpoint to get an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment 
+      description: Endpoint to get an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment
       x-description-i18n:
         eng: Endpoint to get an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment
         spa: Endpoint para obtener un Agreement por ID. Un Agreement es un link de autorización que el comprador recibe para permitir al vendedor acceder a su billetera de Mercado Pago a fin de debitar el pago
@@ -455,8 +455,8 @@ paths:
           schema:
             type: string
             example: YOUR_ACCESS_TOKEN
-      responses: 
-        '200':
+      responses:
+        "200":
           description: Success
           name: Agreement obtained
           content:
@@ -596,7 +596,7 @@ paths:
                       eng: Country of origin of the Mercado Pago account.
                       spa: País de origen de la cuenta de Mercado Pago.
                       por: País de origem da conta do Mercado Pago.
-                    example: MLA   
+                    example: MLA
                   application_id:
                     type: number
                     description: This is the client unique identificator.
@@ -621,7 +621,7 @@ paths:
                       spa: Versión de la API del Agreement.
                       por: Versão da API do Agreement.
                     example: 2
-        '400':
+        "400":
           description: Error
           x-description-i18n:
             eng: Error
@@ -638,7 +638,7 @@ paths:
                       - 400--Bad-Request--Parameter agreement_id is required
                       - 400--Bad-Request--Parameter agreementId has more than 32 characters
                       - 400--Bad-Request--Parameter agreement_id must be an alfanumeric value
-        '404':
+        "404":
           content:
             application/json:
               schema:
@@ -648,7 +648,7 @@ paths:
                     type: string
                     enum:
                       - 404--Not-Found--The Agreement with that id
-        '500':
+        "500":
           description: Error
           x-description-i18n:
             eng: Error
@@ -663,10 +663,10 @@ paths:
                     type: string
                     enum:
                       - 500--Error--Internal server error
-  /v1/advanced_payments: 
+  /v1/advanced_payments:
     post:
       tags:
-        - $ref: '#/tags/wallet-connect'
+        - $ref: "#/tags/wallet-connect"
       summary: Create an Advanced Payment
       x-summary-i18n:
         eng: Create an Advanced Payment
@@ -690,11 +690,11 @@ paths:
               type: object
               description: Advanced payment data.
               x-description-i18n:
-                eng: Advanced payment data. 
+                eng: Advanced payment data.
                 spa: Datos del Advanced Payment.
-                por: Dados do Advanced Payment.              
-              properties: 
-                wallet_payment: 
+                por: Dados do Advanced Payment.
+              properties:
+                wallet_payment:
                   required: true
                   type: object
                   description: It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.
@@ -703,7 +703,7 @@ paths:
                     spa: Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect.
                     por: Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.
                   properties:
-                    transaction_amount: 
+                    transaction_amount:
                       required: true
                       type: number
                       description: Payment amount.
@@ -737,7 +737,7 @@ paths:
                         spa: informacion del descuento a utilizar en el pago.
                         por: Informação do desconto a ser utilizado no pagamento.
                       properties:
-                        amount: 
+                        amount:
                           required: true
                           type: number
                           description: Discounted amount from the total payment amount.
@@ -755,7 +755,7 @@ paths:
                             spa: Descripcion del descuento a aplicar.
                             por: Descrição do desconto a ser aplicado.
                           example: DESC20
-                        code: 
+                        code:
                           required: false
                           type: number
                           description: Unique ID that identifies coupon used for discount. This field must be only sent when the user fulfilled the coupon field in the seller flow.
@@ -765,47 +765,47 @@ paths:
                             por: ID único que identifica o cupom usado para o desconto. Este campo deve ser enviado apenas quando o usuário preencher o campo de cupom no fluxo do vendedor.
                           example: WALLET10
                         detail:
-                            required: true
-                            type: object
-                            description: Discount information details.
-                            x-description-i18n:
-                              eng: Discount information details.
-                              spa: Informacion detallada del descuento.
-                              por: Informação detalhada sobre o desconto.
-                            properties:
-                              cap: 
-                                required: true
-                                type: number
-                                description: Discount cap. This parameter is used to limit the maximum amount to be deducted from the payment.
-                                x-description-i18n:
-                                  eng: Discount cap. This parameter is used to limit the maximum amount to be deducted from the payment.
-                                  spa: Límite de descuento. Este parámetro é usado para limitar o valor máximo a ser deduzido do pagamento.
-                                  por: Limite do desconto. Este parâmetro é utilizado para limitar o valor máximo a ser descontado do pagamento.
-                                example: 1000000
-                              type: 
-                                required: true
-                                type: string
-                                description: Type of discount applied.
-                                x-description-i18n:
-                                  eng: Type of discount applied.
-                                  spa: Tipo de descuento aplicado.
-                                  por: Tipo de desconto aplicado.
-                                example: percentage
-                              value: 
-                                required: true
-                                type: number
-                                description: Value of discount based on its type.
-                                x-description-i18n:
-                                  eng: Value of discount based on its type.
-                                  spa: Valor del descuento segun su tipo.
-                                  por: Valor do desconto segundo seu tipo.
-                                example: 10.0
+                          required: true
+                          type: object
+                          description: Discount information details.
+                          x-description-i18n:
+                            eng: Discount information details.
+                            spa: Informacion detallada del descuento.
+                            por: Informação detalhada sobre o desconto.
+                          properties:
+                            cap:
+                              required: true
+                              type: number
+                              description: Discount cap. This parameter is used to limit the maximum amount to be deducted from the payment.
+                              x-description-i18n:
+                                eng: Discount cap. This parameter is used to limit the maximum amount to be deducted from the payment.
+                                spa: Límite de descuento. Este parámetro é usado para limitar o valor máximo a ser deduzido do pagamento.
+                                por: Limite do desconto. Este parâmetro é utilizado para limitar o valor máximo a ser descontado do pagamento.
+                              example: 1000000
+                            type:
+                              required: true
+                              type: string
+                              description: Type of discount applied.
+                              x-description-i18n:
+                                eng: Type of discount applied.
+                                spa: Tipo de descuento aplicado.
+                                por: Tipo de desconto aplicado.
+                              example: percentage
+                            value:
+                              required: true
+                              type: number
+                              description: Value of discount based on its type.
+                              x-description-i18n:
+                                eng: Value of discount based on its type.
+                                spa: Valor del descuento segun su tipo.
+                                por: Valor do desconto segundo seu tipo.
+                              example: 10.0
                 payer:
                   required: true
                   type: object
                   description: Payer information required to craete the advanced payment.
                   x-description-i18n:
-                    eng: Payer information required to craete the advanced payment. 
+                    eng: Payer information required to craete the advanced payment.
                     spa: Información del pagador requerida para crear el advanced payment.
                     por: Informação obrigatória sobre o pagador para criar o advanced payment.
                   properties:
@@ -844,7 +844,7 @@ paths:
                     por: É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).
                   example: true
       responses:
-        '201': 
+        "201":
           description: Advanced payment created. Check SCHEMAS Status for variants, payment associated to the advanced payments may be rejected.
           x-description-i18n:
             eng: Advanced payment created. Check SCHEMAS Status for variants, payment associated to the advanced payments may be rejected.
@@ -853,7 +853,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object  
+                type: object
                 properties:
                   id:
                     type: number
@@ -895,7 +895,7 @@ paths:
                             por: O status de um pagamento feito pelo Advanced Payments internal-api.mercadopago.com
                           enum:
                             - approved--approved
-                            - in_process--in process 
+                            - in_process--in process
                         status_detail:
                           type: string
                           description: Status description.
@@ -904,7 +904,7 @@ paths:
                             spa: Descripción del status.
                             por: Descrição do status.
                           example: approved_id
-                        payment_type_id: 
+                        payment_type_id:
                           type: string
                           description: The preferred payment type of the payer.
                           x-description-i18n:
@@ -915,7 +915,7 @@ paths:
                             - credit_card--credit card
                             - debit_card--debit card
                             - account_money--account money
-                        payment_method_id: 
+                        payment_method_id:
                           type: string
                           description: Method used in payment type.
                           x-description-i18n:
@@ -931,7 +931,7 @@ paths:
                             spa: Monto del pago.
                             por: Valor do pagamento.
                           example: 700.50
-                        installments: 
+                        installments:
                           type: number
                           description: Total installment for the payment.
                           x-description-i18n:
@@ -939,7 +939,7 @@ paths:
                             spa: Cuota total para el pago.
                             por: Total de parcelas para o pagamento.
                           example: 1
-                        description: 
+                        description:
                           type: string
                           description: Purchased product’s description, the reason for payment.
                           x-description-i18n:
@@ -949,23 +949,24 @@ paths:
                           example: Payment for the purchase of furniture
                         capture:
                           type: boolean
-                          description: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously,
-                           the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly.
-                           When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                          description:
+                            It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously,
+                            the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly.
+                            When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
                           x-description-i18n:
                             eng: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
                             spa: Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true).
                             por: É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).
                           example: true
-                        external_reference: 
+                        external_reference:
                           type: string
                           description: This is a custom seller identifier, used in case to match a request between seller and Mercado Pago.
                           x-description-i18n:
                             eng: This is a custom seller identifier, used in case to match a request between seller and Mercado Pago.
                             spa: Este es un identificador de vendedor personalizado, utilizado en caso de hacer coincidir una solicitud entre el vendedor y Mercado Pago.
                             por: Identificador de vendedor personalizado, usado no caso de corresponder uma solicitação entre o vendedor e o Mercado Pago.
-                          example: payment_123                    
-                  wallet_payment: 
+                          example: payment_123
+                  wallet_payment:
                     required: true
                     type: object
                     description: It indicates is an advanced payements from a seller with a previous wallet connect vinculation.
@@ -974,7 +975,7 @@ paths:
                       spa: Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect.
                       por: Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.
                     properties:
-                      transaction_amount: 
+                      transaction_amount:
                         required: true
                         type: number
                         description: Payment amount.
@@ -1000,30 +1001,30 @@ paths:
                           por: Uma string que permite identificar um pagamento caso haja algum problema.
                         example: Payment_seller_123
                       discount:
-                          type: object
-                          description: Information of the discount to be used in payment.
-                          x-description-i18n:
-                            eng: Information of the discount to be used in payment.
-                            spa: informacion del descuento a utilizar en el pago.
-                            por: Informação do desconto a ser utilizado no pagamento.
-                          properties:
-                            amount: 
-                              type: number
-                              description: Discounted amount from the total payment amount.
-                              x-description-i18n:
-                                eng: Discounted amount from the total payment amount
-                                spa: Monto descontado del monto total del pago.
-                                por: Valor descontado do valor total do pagamento.
-                              example: 10
-                            code: 
-                              required: true
-                              type: number
-                              description: Unique ID that identifies coupon used for discount.
-                              x-description-i18n:
-                                eng: Unique ID that identifies coupon used for discount.
-                                spa: ID unico que identifica el cupón usado para el descuento
-                                por: ID único que identifica o cupom utilizado para o desconto.
-                              example: WALLET10
+                        type: object
+                        description: Information of the discount to be used in payment.
+                        x-description-i18n:
+                          eng: Information of the discount to be used in payment.
+                          spa: informacion del descuento a utilizar en el pago.
+                          por: Informação do desconto a ser utilizado no pagamento.
+                        properties:
+                          amount:
+                            type: number
+                            description: Discounted amount from the total payment amount.
+                            x-description-i18n:
+                              eng: Discounted amount from the total payment amount
+                              spa: Monto descontado del monto total del pago.
+                              por: Valor descontado do valor total do pagamento.
+                            example: 10
+                          code:
+                            required: true
+                            type: number
+                            description: Unique ID that identifies coupon used for discount.
+                            x-description-i18n:
+                              eng: Unique ID that identifies coupon used for discount.
+                              spa: ID unico que identifica el cupón usado para el descuento
+                              por: ID único que identifica o cupom utilizado para o desconto.
+                            example: WALLET10
                   disbursements:
                     type: array
                     items:
@@ -1045,7 +1046,7 @@ paths:
                   payer:
                     type: object
                     properties:
-                      id: 
+                      id:
                         type: number
                         description: The payment identifier.
                         x-description-i18n:
@@ -1059,7 +1060,7 @@ paths:
                     x-description-i18n:
                       eng: Country of origin of the Mercado Pago account.
                       spa: País de origen de la cuenta de Mercado Pago.
-                      por: País de origem da conta Mercado Pago. 
+                      por: País de origem da conta Mercado Pago.
                     example: MLA
                   binary_mode:
                     type: boolean
@@ -1085,7 +1086,7 @@ paths:
                       spa: Fecha de la última actualización del Advanced Payment.
                       por: Data da última atualização do Advanced Payment.
                     example: "2018-10-20T09:34:20.518-04:00"
-        '400':
+        "400":
           description: Error
           x-description-i18n:
             eng: Error
@@ -1107,7 +1108,7 @@ paths:
                       - 400--Bad-Request--Field id must not be blank
                       - 400--Bad-Request--external_reference is required.
                       - 400--Bad-Request--Invalid payer token.
-        '500':
+        "500":
           description: Error
           x-description-i18n:
             eng: Error
@@ -1126,7 +1127,7 @@ paths:
   /v1/advanced_payments/{advanced_payment_id}:
     put:
       tags:
-        - $ref: '#/tags/wallet-connect'
+        - $ref: "#/tags/wallet-connect"
       summary: Confirm or cancel an advanced payment
       x-summary-i18n:
         eng: Confirm or cancel an advanced payment
@@ -1141,27 +1142,28 @@ paths:
         - name: advanced_payment_id
           in: path
           description: Advanced payment identifier
-          required: true         
+          required: true
           schema:
             type: number
             example: 12345678
       requestBody:
-        content: 
+        content:
           application/json:
             schema:
               type: object
               properties:
                 capture:
                   type: boolean
-                  description: This node only needs to be sent when you need to confirm an Advanced Payment. It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously,
-                   the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly.
-                   When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                  description:
+                    This node only needs to be sent when you need to confirm an Advanced Payment. It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously,
+                    the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly.
+                    When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
                   x-description-i18n:
                     eng: This node only needs to be sent when you need to confirm an Advanced Payment. It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
                     spa: Este node solo debe enviarse cuando necesite confirmar un Advanced Payment. Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true).
                     por: Este node apenas necessita ser enviado quando for necessário confirmar um Advanced Payment. É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).
                   example: true
-                wallet_payment: 
+                wallet_payment:
                   type: object
                   required: true
                   description: It indicates is an advanced payements from a seller with a previous wallet connect vinculation.
@@ -1170,7 +1172,7 @@ paths:
                     spa: Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect.
                     por: Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.
                   properties:
-                    transaction_amount: 
+                    transaction_amount:
                       type: number
                       required: true
                       description: Payment amount.
@@ -1204,7 +1206,7 @@ paths:
                     por: Este node somente precisa ser enviado quando é necessário cancelar um Advanced Payment. O valor a ser inserido é 'cancelled'.
                   example: cancelled
       responses:
-        '200': 
+        "200":
           description: Advanced Payments confirmed.
           x-description-i18n:
             eng: Advanced Payments confirmed.
@@ -1260,7 +1262,7 @@ paths:
                             spa: Descripción del status.
                             por: Descrição do status.
                           example: approved_id
-                        payment_type_id: 
+                        payment_type_id:
                           type: string
                           description: The preferred payment type of the payer.
                           x-description-i18n:
@@ -1271,7 +1273,7 @@ paths:
                             - credit_card--credit card
                             - debit_card--debit card
                             - account_money--account money
-                        payment_method_id: 
+                        payment_method_id:
                           type: string
                           description: Method used in payment type.
                           x-description-i18n:
@@ -1287,7 +1289,7 @@ paths:
                             spa: Monto del pago.
                             por: Valor do pagamento.
                           example: 700.50
-                        installments: 
+                        installments:
                           type: number
                           description: Total installment for the payment.
                           x-description-i18n:
@@ -1295,7 +1297,7 @@ paths:
                             spa: Cuota total para el pago.
                             por: Total de parcelas para o pagamento.
                           example: 1
-                        description: 
+                        description:
                           type: string
                           description: Purchased product’s description, the reason for payment.
                           x-description-i18n:
@@ -1305,15 +1307,16 @@ paths:
                           example: Payment for the purchase of furniture
                         capture:
                           type: boolean
-                          description: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously,
-                           the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly.
-                           When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                          description:
+                            It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously,
+                            the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly.
+                            When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
                           x-description-i18n:
                             eng: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
                             spa: Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true).
                             por: É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).
                           example: true
-                        external_reference: 
+                        external_reference:
                           type: string
                           description: This is a custom seller identifier, used in case to match a request between seller and Mercado Pago.
                           x-description-i18n:
@@ -1321,7 +1324,7 @@ paths:
                             spa: Este es un identificador de vendedor personalizado, utilizado en caso de hacer coincidir una solicitud entre el vendedor y Mercado Pago.
                             por: Identificador de vendedor personalizado, usado no caso de corresponder uma solicitação entre o vendedor e o Mercado Pago.
                           example: payment_123
-                  wallet_payment: 
+                  wallet_payment:
                     type: object
                     required: true
                     description: It indicates is an advanced payements from a seller with a previous wallet connect vinculation.
@@ -1330,7 +1333,7 @@ paths:
                       spa: Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect.
                       por: Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.
                     properties:
-                      transaction_amount: 
+                      transaction_amount:
                         type: number
                         required: true
                         description: Payment amount.
@@ -1354,11 +1357,11 @@ paths:
                           eng: An string to allow identification of payment in case of an issue.
                           spa: Una string para permitir la identificación del pago en caso de un problema.
                           por: Uma string que permite identificar um pagamento caso haja algum problema.
-                        example: Payment_seller_123                  
+                        example: Payment_seller_123
                   disbursements:
                     type: array
                     items:
-                      type: object                  
+                      type: object
                       description: List of payments that correspond to each Seller.
                       x-description-i18n:
                         eng: List of payments that correspond to each Seller.
@@ -1376,7 +1379,7 @@ paths:
                   payer:
                     type: object
                     properties:
-                      id: 
+                      id:
                         type: number
                         description: The payment identifier.
                         x-description-i18n:
@@ -1390,7 +1393,7 @@ paths:
                     x-description-i18n:
                       eng: Country of origin of the Mercado Pago account.
                       spa: País de origen de la cuenta de Mercado Pago.
-                      por: País de origem da conta Mercado Pago. 
+                      por: País de origem da conta Mercado Pago.
                     example: MLA
                   binary_mode:
                     type: boolean
@@ -1415,8 +1418,8 @@ paths:
                       eng: Advance Payment last update date.
                       spa: Fecha de la última actualización del Advanced Payment.
                       por: Data da última atualização do Advanced Payment.
-                    example: "2018-10-20T09:34:20.518-04:00"                  
-        '400':
+                    example: "2018-10-20T09:34:20.518-04:00"
+        "400":
           description: Error
           x-description-i18n:
             eng: Error
@@ -1437,7 +1440,7 @@ paths:
                       - 400--Bad-Request--Maximum disbursements allowed is 100
                       - 400--Bad-Request--Field id must not be blank
                       - 400--Bad-Request--external_reference is required.
-        '500':
+        "500":
           description: Error
           x-description-i18n:
             eng: Error
@@ -1455,7 +1458,7 @@ paths:
                       - 500--Error--Internal Error in Discarded List.
     get:
       tags:
-        - $ref: '#/tags/wallet-connect'
+        - $ref: "#/tags/wallet-connect"
       summary: Get Advanced Payment data
       x-summary-i18n:
         eng: Get Advanced Payment data
@@ -1472,14 +1475,14 @@ paths:
           required: true
           description: The advanced payment, with the id 'advanced_payment_id' to be confirmed.
           x-description-i18n:
-           eng: The advanced payment, with id 'advanced_payment_id' to be confirmed.
-           spa: Se refiere al advanced payment con el id 'advanced_payment_id' para ser confirmado.
-           por: Refere-se ao advanced payment com o id 'advanced_payment_id' a ser confirmado.
+            eng: The advanced payment, with id 'advanced_payment_id' to be confirmed.
+            spa: Se refiere al advanced payment con el id 'advanced_payment_id' para ser confirmado.
+            por: Refere-se ao advanced payment com o id 'advanced_payment_id' a ser confirmado.
           schema:
             type: number
             example: 12345678
       responses:
-        '200':
+        "200":
           description: Advanced Payments confirmed.
           x-description-i18n:
             eng: Advanced Payments confirmed.
@@ -1498,7 +1501,7 @@ paths:
                       spa: ID único que identifica el advanced payment.
                       por: ID único que identifica o advanced payment.
                     example: 10267812
-                  wallet_payment: 
+                  wallet_payment:
                     type: object
                     description: It indicates is an advanced payements from a seller with a previous wallet connect vinculation.
                     x-description-i18n:
@@ -1506,7 +1509,7 @@ paths:
                       spa: Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect.
                       por: Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.
                     properties:
-                      transaction_amount: 
+                      transaction_amount:
                         type: number
                         description: Payment amount.
                         x-description-i18n:
@@ -1567,7 +1570,7 @@ paths:
                             spa: Descripción del status.
                             por: Descrição do status.
                           example: approved_id
-                        payment_type_id: 
+                        payment_type_id:
                           type: string
                           description: The preferred payment type of the payer.
                           x-description-i18n:
@@ -1578,7 +1581,7 @@ paths:
                             - credit_card--credit card
                             - debit_card--debit card
                             - account_money--account money
-                        payment_method_id: 
+                        payment_method_id:
                           type: string
                           description: Method used in payment type.
                           x-description-i18n:
@@ -1594,7 +1597,7 @@ paths:
                             spa: Monto del pago.
                             por: Valor do pagamento.
                           example: 700.50
-                        installments: 
+                        installments:
                           type: number
                           description: Total installment for the payment.
                           x-description-i18n:
@@ -1602,7 +1605,7 @@ paths:
                             spa: Cuota total para el pago.
                             por: Total de parcelas para o pagamento.
                           example: 1
-                        description: 
+                        description:
                           type: string
                           description: Purchased product’s description, the reason for payment.
                           x-description-i18n:
@@ -1612,15 +1615,16 @@ paths:
                           example: Payment for the purchase of furniture
                         capture:
                           type: boolean
-                          description: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously,
-                           the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly.
-                           When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
+                          description:
+                            It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously,
+                            the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly.
+                            When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
                           x-description-i18n:
                             eng: It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).
                             spa: Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true).
                             por: É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).
                           example: true
-                        external_reference: 
+                        external_reference:
                           type: string
                           description: This is a custom seller identifier, used in case to match a request between seller and Mercado Pago.
                           x-description-i18n:
@@ -1647,7 +1651,7 @@ paths:
                   payer:
                     type: object
                     properties:
-                      id: 
+                      id:
                         type: number
                         description: The payment identifier.
                         x-description-i18n:
@@ -1661,7 +1665,7 @@ paths:
                     x-description-i18n:
                       eng: Country of origin of the Mercado Pago account.
                       spa: País de origen de la cuenta de Mercado Pago.
-                      por: País de origem da conta Mercado Pago. 
+                      por: País de origem da conta Mercado Pago.
                     example: MLB
                   binary_mode:
                     type: boolean
@@ -1686,7 +1690,7 @@ paths:
                       spa: Fecha de la última actualización del Advanced Payment.
                       por: Data da última atualização do Advanced Payment.
                     example: "2018-10-20T09:34:20.518-04:00"
-        '400':
+        "400":
           description: Error
           x-description-i18n:
             eng: Error
@@ -1703,8 +1707,8 @@ paths:
                       - 400--Bad-Request--Some parameters are invalid for search.
                       - 404--Not-Found---Advanced payment not found.
                       - 404--Not-Found--Client ID not found in whitelist.
-                      - 404--Not-Found--collector_id not found in the merchant list.    
-        '500':
+                      - 404--Not-Found--collector_id not found in the merchant list.
+        "500":
           description: Error
           x-description-i18n:
             eng: Error
@@ -1723,7 +1727,7 @@ paths:
   /v1/advanced_payments/{advanced_payment_id}/refunds:
     post:
       tags:
-        - $ref: '#/tags/wallet-connect'
+        - $ref: "#/tags/wallet-connect"
       summary: Refund an advanced payment
       x-summary-i18n:
         eng: Refund an advanced payment
@@ -1734,7 +1738,7 @@ paths:
         eng: A refund operation may be total, this is the total amount of the advnaced payment will be restored, o may be a partial refund, the amount in the request will be restored
         spa: Una operación de reembolso puede ser total, es decir se devolverá el importe total del advanced payment, o puede ser una devolución parcial, se devolverá el importe solicitado
         por: Uma operação de reembolso pode ser total, ou seja, o valor total do advanced payment que será reposto, ou pode ser um reembolso parcial, o valor parcial do pedido será reposto
-      parameters:    
+      parameters:
         - in: path
           name: advanced_payment_id
           schema:
@@ -1746,7 +1750,7 @@ paths:
             spa: Se refiere al advanced payment con el id 'advanced_payment_id' para ser confirmado.
             por: Refere-se ao advanced payment com o id 'advanced_payment_id' a ser confirmado.
       requestBody:
-        content: 
+        content:
           application/json:
             schema:
               type: object
@@ -1764,7 +1768,7 @@ paths:
                     spa: Si el monto es 0, se trata de un reembolso de los montos totales de los advanced payments; de lo contrario, se trata de un reembolso parcial.
                     por: Se o valor for 0, trata-se de um reembolso do valor total dos advanced payments; caso contrário, será um reembolso parcial.
       responses:
-        '200':
+        "200":
           description: A refund data array will be returned.
           x-description-i18n:
             eng: A refund data array will be returned.
@@ -1790,7 +1794,7 @@ paths:
                         eng: Refund id.
                         spa: Identificación de reembolso.
                         por: Identificação de reembolso.
-                      example: '1009042015'
+                      example: "1009042015"
                     payment_id:
                       type: number
                       description: Payment id.
@@ -1798,7 +1802,7 @@ paths:
                         eng: Payment id.
                         spa: Identificación de pago.
                         por: Identificação de pagamento.
-                      example: '18552260055'
+                      example: "18552260055"
                     amount:
                       type: number
                       description: Refund amount.
@@ -1826,7 +1830,7 @@ paths:
                             spa: El id del usuario que envió el request de reembolso.
                             por: Id do usuário que enviou a solicitação de reembolso.
                           example: abcdef1e23f4567d8e9123eb6591ff68df74c57930551ed980239f4538a7e530
-        '400':
+        "400":
           description: Error
           x-description-i18n:
             eng: Error
@@ -1844,7 +1848,7 @@ paths:
                       - 400--Bad-Request--Can't set status refunded.
                       - 400--Bad-Request--Payment already refunded
                       - 400--Bad-Request--Invalid amount
-        '500':
+        "500":
           description: Error
           x-description-i18n:
             eng: Error
@@ -1860,10 +1864,10 @@ paths:
                     enum:
                       - 500--Error--Internal server error
                       - 500--Error--IInternal Error in Discarded List.
-  /v2/wallet_connect/discounts: 
+  /v2/wallet_connect/discounts:
     post:
       tags:
-        - $ref: '#/tags/wallet-connect'
+        - $ref: "#/tags/wallet-connect"
       summary: Create a Discount Promise
       x-summary-i18n:
         eng: Create a Discount Promise
@@ -1887,10 +1891,10 @@ paths:
               type: object
               description: Discount Promise data.
               x-description-i18n:
-                eng: Discount Promise data. 
+                eng: Discount Promise data.
                 spa: Datos del Discount Promise.
-                por: Dados do Discount Promise.              
-              properties: 
+                por: Dados do Discount Promise.
+              properties:
                 coupon:
                   required: false
                   type: string
@@ -1910,7 +1914,7 @@ paths:
                     por: Valor total do pagamento antes da aplicação do desconto. Por exemplo, 15.05.
                   example: 15.05
       headers:
-        properties: 
+        properties:
           x-payer-token:
             required: true
             type: string
@@ -1921,7 +1925,7 @@ paths:
               por: Token do pagador para o pagamento ao qual o desconto será aplicado e que está sendo criado.
             example: e9449535fe074e0e8ff4f2055f604e51
       responses:
-        '200': 
+        "200":
           description: Discount Promise created.
           x-description-i18n:
             eng: Discount Promise created.
@@ -1930,7 +1934,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object  
+                type: object
                 properties:
                   transaction_amount:
                     type: number
@@ -1956,7 +1960,7 @@ paths:
                       spa: Terminos y condiciones del descuento.
                       por: Termos e condições do desconto.
                     example: https://api.mercadopago.com/v2/discounts/campaign/10580513/terms/html
-                  discount: 
+                  discount:
                     type: object
                     description: Discount description.
                     x-description-i18n:
@@ -1964,7 +1968,7 @@ paths:
                       spa: Descripcion del descuento.
                       por: Descrição do desconto.
                     properties:
-                      amount: 
+                      amount:
                         type: number
                         description: Discounted amount from the total payment amount.
                         x-description-i18n:
@@ -1973,38 +1977,38 @@ paths:
                           por: Valor descontado do valor total do pagamento.
                         example: 15
                       detail:
-                          type: object
-                          description: Discount information details.
-                          x-description-i18n:
-                            eng: Discount information details.
-                            spa: Informacion detallada del descuento.
-                            por: Informação detalhada do desconto
-                          properties:
-                            cap: 
-                              type: number
-                              description: Discount Limit. This field indicates the maximum amount to be deducted from the payment.
-                              x-description-i18n:
-                                eng: Discount Limit. This field indicates the maximum amount to be deducted from the payment.
-                                spa: Límite de descuento. Este campo indica la cantidad máxima a deducir del pago.
-                                por: Limite do desconto. Este campo informa o valor máximo a ser descontado do pagamento.
-                              example: 1000000
-                            type: 
-                              type: string
-                              description: Type of discount applied.
-                              x-description-i18n:
-                                eng: Type of discount applied.
-                                spa: Tipo de descuento aplicado.
-                                por: Tipo de desconto aplicado.
-                              example: percentage
-                            value: 
-                              type: number
-                              description: Discount value determined by its type.
-                              x-description-i18n:
-                                eng: Discount value determined by its type.
-                                spa: Valor del descuento según su tipo
-                                por: Valor do desconto com base no seu tipo.
-                              example: 10
-        '400':
+                        type: object
+                        description: Discount information details.
+                        x-description-i18n:
+                          eng: Discount information details.
+                          spa: Informacion detallada del descuento.
+                          por: Informação detalhada do desconto
+                        properties:
+                          cap:
+                            type: number
+                            description: Discount Limit. This field indicates the maximum amount to be deducted from the payment.
+                            x-description-i18n:
+                              eng: Discount Limit. This field indicates the maximum amount to be deducted from the payment.
+                              spa: Límite de descuento. Este campo indica la cantidad máxima a deducir del pago.
+                              por: Limite do desconto. Este campo informa o valor máximo a ser descontado do pagamento.
+                            example: 1000000
+                          type:
+                            type: string
+                            description: Type of discount applied.
+                            x-description-i18n:
+                              eng: Type of discount applied.
+                              spa: Tipo de descuento aplicado.
+                              por: Tipo de desconto aplicado.
+                            example: percentage
+                          value:
+                            type: number
+                            description: Discount value determined by its type.
+                            x-description-i18n:
+                              eng: Discount value determined by its type.
+                              spa: Valor del descuento según su tipo
+                              por: Valor do desconto com base no seu tipo.
+                            example: 10
+        "400":
           description: Error
           x-description-i18n:
             eng: Error
@@ -2021,7 +2025,7 @@ paths:
                       - 400--Bad-Request--Invalid amount in discount.
                       - 400--Bad-Request--Invalid coupon in discount.
                       - 400--Bad-Request--Invalid payer token.
-        '500':
+        "500":
           description: Error
           x-description-i18n:
             eng: Error
@@ -2037,3 +2041,172 @@ paths:
                     enum:
                       - 500--Error--Internal server error
                       - 500--Error--Internal Error in Discarded List.
+  /v2/wallet_connect/coupons:
+    post:
+      tags:
+        - $ref: "#/tags/wallet-connect"
+      summary: Validate wallet connect coupon
+      x-summary-i18n:
+        eng: Validate wallet connect coupon
+        spa: Validar cúpon para Wallet Connect
+        por: Validar cupom para Wallet Connect
+      description: This endpoint enables the validation of a Wallet Connect coupon, returning the applicable discount amount. These coupons are designed to provide discounts on payments made through Wallet Connect.
+      x-description-i18n:
+        eng: This endpoint enables the validation of a Wallet Connect coupon, returning the applicable discount amount. These coupons are designed to provide discounts on payments made through Wallet Connect.
+        spa: Este endpoint permite la validación de un cupón de Wallet Connect, devolviendo el monto de descuento aplicable. Estos cupones están diseñados para ofrecer descuentos en pagos realizados a través de Wallet Connect
+        por: Este endpoint possibilita a validação de um cupom do Wallet Connect, retornando o valor do desconto aplicável. Estes cupons destinam-se a conceder descontos em pagamentos realizadas via Wallet Connect
+      headers:
+        - name: x-client-id
+          description: Unique identifier of the application initiating the coupon validation request. For example - 1111111111111111.
+          x-description-i18n:
+            eng: Unique identifier for the application making the request. For example - 1111111111111111.
+            spa: Identificador único para la aplicación que realiza la solicitud. Por ejemplo - 1111111111111111.
+            por: Identificador único para a aplicação que está fazendo a solicitação. Por exemplo - 1111111111111111.
+          required: true
+          schema:
+            type: string
+            example: 1111111111111111
+        - name: x-payer-token
+          description: Token associated to the potential payer who will use the discount. For example - e9449535fe074e0e8ff4f2055f604e51.
+          x-description-i18n:
+            eng: Token associated to the potential payer who will use the discount. For example - e9449535fe074e0e8ff4f2055f604e51.
+            spa: Token relacionado con el posible pagador que espera utilizar el descuento. Por ejemplo - e9449535fe074e0e8ff4f2055f604e51.
+            por: Token relacionado ao potencial pagador que utilizará o desconto. Por exemplo - e9449535fe074e0e8ff4f2055f604e51.
+          required: true
+          schema:
+            type: string
+            example: e9449535fe074e0e8ff4f2055f604e51
+      requestBody:
+        description: Parameters needed to validate the Wallet Connect coupon.
+        x-description-i18n:
+            eng: Parameters needed to validate the Wallet Connect coupon.
+            spa: Parámetros necesarios para validar el cupón de Wallet Connect.
+            por: Parâmetros necessários para validar o cupom do Wallet Connect.
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              description: Specific code of the coupon to be validated.
+              x-description-i18n:
+                eng: Specific identifier used to check the coupon's validity.
+                spa: Identificador específico utilizado para comprobar la validez del cupón.
+                por: Identificador específico usado para verificar a validade do cupom.
+              properties:
+                id:
+                  type: string
+                  description: Unique combination of letters and numbers that stands for the coupon code. For example - MELI20.
+                  x-description-i18n:
+                    eng: Unique combination of letters and numbers that stands for the coupon code. For example - MELI20.
+                    spa: Combinación única de letras y números que representa el código del cupón. Por ejemplo - MELI20.
+                    por: Combinação única de letras e números que representa o código do cupom. Por exemplo - MELI20.
+                  example: MELI20
+      responses:
+        "200":
+          description: Returns details about the validated coupon, including discount amount and current status.
+          x-description-i18n:
+            eng: Provides information about the validated coupon, including its discount value and present status.
+            spa: Ofrece información sobre el cupón validado, incluyendo su valor de descuento y estado actual.
+            por: Fornece informações sobre o cupom validado, incluindo seu valor de desconto e status atual.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Indicates the coupon's status post-validation. Reflects if it's "success", "pending", or "invalid".
+                    x-description-i18n:
+                      eng: Indicates the coupon's status post-validation. Reflects if it's "success", "pending", or "invalid".
+                      spa: Indica el estado del cupón después de la validación. Refleja si es "success", "pending", or "invalid".
+                      por: Indica o status do cupom após a validação. Reflete se é "success", "pending", or "invalid".
+                    example: success
+                  description:
+                    type: string
+                    description: Short description of the validated coupon.
+                    x-description-i18n:
+                      eng: A brief overview of the validated coupon's characteristics.
+                      spa: Una breve descripción de las características del cupón validado.
+                      por: Uma breve descrição das características do cupom validado.
+                    example: Test
+                  legal_terms:
+                    type: string
+                    description: URL directing to the specific legal terms associated with the coupon campaign. For example - https://www.mercadopago.com.ar/campaigns/terms-and-conditions/123456.
+                    x-description-i18n:
+                      eng: URL directing to the specific legal terms associated with the coupon campaign. For example - https://www.mercadopago.com.ar/campaigns/terms-and-conditions/123456.
+                      spa: Una URL que dirige a los términos legales específicos asociados con la campaña del cupón. Por ejemplo - https://www.mercadopago.com.ar/campaigns/terms-and-conditions/123456.
+                      por: URL que direciona para os termos legais específicos associados à campanha do cupom. Por exemplo - https://www.mercadopago.com.ar/campaigns/terms-and-conditions/123456.
+                    example: https://www.mercadopago.com.ar/campaigns/terms-and-conditions/123456
+                  detail:
+                    type: object
+                    description: Offers an in-depth view of advanced payments coming from sellers that have a prior Wallet Connect association.
+                    x-description-i18n:
+                      eng: Offers an in-depth view of advanced payments coming from sellers that have a prior Wallet Connect association.
+                      spa: Proporciona una visión detallada de los pagos anticipados de los vendedores que tienen una asociación previa de Wallet Connect.
+                      por: Fornece uma visão detalhada dos pagamentos antecipados de vendedores que têm uma associação prévia a Wallet Connect.
+                    properties:
+                      value:
+                        type: number
+                        description: Specifies the exact discount amount provided by the coupon. For example - 10.0.
+                        x-description-i18n:
+                          eng: Specifies the exact discount amount provided by the coupon. For example - 10.0.
+                          spa: Especifica la cantidad exacta de descuento proporcionada por el cupón. Por ejemplo - 10.0.
+                          por: Especifica o valor exato do desconto fornecido pelo cupom. Por exemplo - 10.0.
+                        example: 10.0
+                      type:
+                        type: string
+                        description: Differentiates if the discount is percentage-based or a constant value.
+                        x-description-i18n:
+                          eng: Differentiates if the discount is percentage-based or a constant value.
+                          spa: Diferencia si el descuento es en porcentaje o un valor constante.
+                          por: Diferencia se o desconto é baseado em porcentagem ou um valor constante.
+                        example: percent
+                      cap:
+                        type: number
+                        description: The highest possible discount amount that can be applied using the coupon. For example - 100.0.
+                        x-description-i18n:
+                          eng: The highest possible discount amount that can be applied using the coupon. For example - 100.0.
+                          spa: Monto máximo de descuento que se puede aplicar utilizando el cupón. Por ejemplo - 100.0.
+                          por: Valor máximo de desconto que pode ser aplicado usando o cupom. Por exemplo - 100.0.
+                        example: 100.0
+                      min_payment_amount:
+                        type: number
+                        description: The minimum amount required to qualify for the discount. For example - 100.0.
+                        x-description-i18n:
+                          eng: The minimum amount required to qualify for the discount. For example - 100.0.
+                          spa: Monto mínimo requerido para calificar para el descuento. Por ejemplo - 100.0.
+                          por: Valor mínimo necessário para se qualificar ao desconto. Por exemplo - 100.0.
+                        example: 100.0
+                      max_payment_amount:
+                        type: number
+                        description: Maximum amount to which the discount can still be applied upon payment. For example - 10000.0.
+                        x-description-i18n:
+                          eng: Maximum amount to which the discount can still be applied upon payment. For example - 10000.0.
+                          spa: Monto máximo al cual aún se puede aplicar el descuento al realizar el pago. Por ejemplo - 10000.0
+                          por: Valor máximo ao qual o desconto ainda pode ser aplicado ao efetuar o pagamento. Por exemplo - 10000.0.
+                        example: 10000.0
+        "400":
+          description: Error encountered during the validation process.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--Invalid coupon_id.
+                      - 400--Bad-Request--Invalid application data.
+                      - 400--Bad-Request--Invalid payer token.
+        "500":
+          description: Error resulting from internal server issues.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
+    
