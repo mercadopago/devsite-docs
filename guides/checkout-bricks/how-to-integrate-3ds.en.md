@@ -126,8 +126,8 @@ To enable the validation of payments with 3DS, we provide a **sandbox testing en
 
 | Flow | Number | Security code | Expiration date |
 |---|---|---|---|
-| Successful _Challenge_ | 5483 9281 6457 4623| 123 | 11/25 |
-| Unauthorized _Challenge_	 | 5361 9568 0611 7557| 123 | 11/25 |
+| Successful Challenge | 5483 9281 6457 4623| 123 | 11/25 |
+| Unauthorized Challenge | 5361 9568 0611 7557| 123 | 11/25 |
 
 > The steps to generate the payment are the same as [exemplified previously](/developers/en/docs/checkout-bricks/how-tos/integrate-3ds#bookmark_integrar_com_3ds) in this section.
 
