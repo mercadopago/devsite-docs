@@ -69,6 +69,13 @@ mercadopago.payment.save(req.body)
 Puedes encontrar el estado del pago en el valor _status_.
 ===
 
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
+ 
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
+
 PaymentClient client = new PaymentClient();
 
 PaymentCreateRequest paymentCreateRequest =
@@ -88,7 +95,7 @@ PaymentCreateRequest paymentCreateRequest =
                .build())
        .build();
 
-client.create(paymentCreateRequest);
+client.create(paymentCreateRequest, requestOptions);
 
 ```
 ```ruby
@@ -97,6 +104,12 @@ Puedes encontrar el estado del pago en el valor _status_.
 ===
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
+
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
 
 payment_data = {
   transaction_amount: params[:transactionAmount].to_f,
@@ -112,7 +125,7 @@ payment_data = {
   }
 }
 
-payment_response = sdk.payment.create(payment_data)
+payment_response = sdk.payment.create(payment_data, custom_request_options)
 payment = payment_response[:response]
 
 puts payment
@@ -129,6 +142,9 @@ using MercadoPago.Config;
 using MercadoPago.Resource.Payment;
 
 MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
+
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
 
 var paymentRequest = new PaymentCreateRequest
 {
@@ -148,7 +164,7 @@ var paymentRequest = new PaymentCreateRequest
 };
 
 var client = new PaymentClient();
-Payment payment = await client.CreateAsync(paymentRequest);
+Payment payment = await client.CreateAsync(paymentRequest, requestOptions);
 
 Console.WriteLine(payment.Status);
 
@@ -159,6 +175,11 @@ Puedes encontrar el estado del pago en el valor _status_.
 ===
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
 
 request_values = request.get_json()
     
@@ -177,7 +198,7 @@ payment_data = {
     }
 }
 
-payment_response = sdk.payment().create(payment_data)
+payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 
 print("status =>", payment["status"])
@@ -192,6 +213,7 @@ curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+    -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
           "transaction_amount": 100,

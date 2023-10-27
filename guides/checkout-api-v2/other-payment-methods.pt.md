@@ -284,14 +284,12 @@ Incluindo o elemento do tipo `select` com o id: `id = docType` que está no form
 
 ------------
 
-
 ## Enviar pagamento
 
 Ao finalizar a inclusão do formulário de pagamento e obter os tipos de documento, é necessário encaminhar o e-mail do comprador, tipo e número de documento, o meio de pagamento utilizado e o detalhe do valor a ser pago utilizando nossa API de Pagamentos ou um de nossos SDKs.
 
 ----[mlb]----
 Para configurar pagamentos com **boleto bancário** ou **pagamento em lotérica**, envie um POST com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
-
 
 > WARNING
 >
@@ -501,7 +499,6 @@ curl -X POST \
 ```
 ]]]
 
-
 A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento. Veja abaixo um exemplo de retorno.
 
 [[[
@@ -526,7 +523,6 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 ]
 ```
 ]]]
-
 
 > NOTE
 >
@@ -601,7 +597,6 @@ Para evitar problemas de cobrança, é importante cancelar os pagamentos vencido
 Para mais informações, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds).
 
 ------------
-
 
 ----[mla]----
 

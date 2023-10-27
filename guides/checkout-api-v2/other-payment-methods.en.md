@@ -144,12 +144,13 @@ To offer **PagoEfectivo** payments, please follow the steps below.
 
 ----[mco]----
 To offer **Efecty** payments, please follow the steps below.
+
 ------------
 
 ----[mlu]----
 To offer payments with **Abitab** and/or **Redpagos**, please follow the steps below.
-------------
 
+------------
 
 ## Import MercadoPago.js
 
@@ -192,11 +193,9 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 ```
 ]]]
 
-
 ## Add payment form
 
 With the MercadoPago.js library included, add the payment form below to your project to ensure the secure capture of buyer data. In this step, it is important to use the list you consulted to obtain the available payment methods to create the payment options you want to offer.
-
 
 [[[
 ```html
@@ -284,14 +283,12 @@ elem.appendChild(tempOptions);
 
 ------------
 
-
 ## Send payment
 
 When finalizing the inclusion of the payment form and obtaining the types of documents, it is necessary to forward the buyer's email, type and document number, the payment method used and the details of the amount to be paid using our Payments API or one of our SDKs.
 
 ----[mlb]----
 To configure payments with **Boleto Bancário** or **Pagamento em lotérica**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
-
 
 > WARNING
 >
@@ -501,7 +498,6 @@ curl -X POST \
 ```
 ]]]
 
-
 The response will show the `pending` status until the buyer completes the payment. Also, in the response to the request, the `external_resource_url` parameter will return a URL that contains instructions for the buyer to make the payment. You can redirect to this same link to complete the payment flow. See below for an example return.
 
 [[[
@@ -526,7 +522,6 @@ The response will show the `pending` status until the buyer completes the paymen
 ]
 ```
 ]]]
-
 
 > NOTE
 >
@@ -601,8 +596,6 @@ To avoid billing issues, it is important to cancel overdue payments. Also, keep 
 For more information, see the [Refunds and Cancellations](/developers/en/docs/checkout-api/payment-management/cancellations-and-refunds) section.
 
 ------------
-
-
 ----[mla]----
 
 To configure payments with **Rapipago** and/or **Pago Fácil**, send a **POST** with the required parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, use one of our SDKs below.

@@ -197,7 +197,6 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 ```
 ]]]
 
-
 ## Añadir formulario de pago
 
 Con la biblioteca MercadoPago.js incluida, añade el siguiente formulario de pago a tu proyecto para garantizar la captura segura de los datos de los compradores. En esta etapa es importante utilizar la lista que consultaste para obtener los medios de pago disponibles para crear las opciones de pago que deseas ofrecer.
@@ -240,8 +239,6 @@ Con la biblioteca MercadoPago.js incluida, añade el siguiente formulario de pag
   </form>
 ```
 ]]]
-
-
 
 ----[mlb, mla, mpe, mco, mlu, mlc]----
 
@@ -291,7 +288,6 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 
 ------------
 
-
 ## Enviar pago
 
 Al finalizar la inclusión del formulario de pago y obtener los tipos de documentos, es necesario enviar el email del comprador, el tipo y número de documento, el medio de pago utilizado y el detalle del importe a pagar utilizando nuestra API de Pagos o uno de nuestros SDKs.
@@ -299,13 +295,10 @@ Al finalizar la inclusión del formulario de pago y obtener los tipos de documen
 ----[mlb]----
 Para configurar pagos con **boleto bancario** o **pago en agencia de lotería**, envía un POST con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
-
 | Tipo de pago  | Parámetro  | Valor  |
 | --- | --- | --- |
 | Boleto  | `payment_method_id`  | `bolbradesco`  |
 | Pago en agencia de loteria  | `payment_method_id`  | `pec`  |
-
-
 
 > WARNING
 >
@@ -536,8 +529,6 @@ La respuesta mostrará el **status pendiente** hasta que el comprador realice el
 ```
 ]]]
 
-
-
 > NOTE
 >
 > Importante
@@ -607,15 +598,11 @@ El tiempo para la aprobación del boleto es de hasta 48 horas hábiles. Por lo t
 
 ## Cancelar pago
 
-
 Para evitar problemas de facturación, es importante cancelar los pagos expirados. Además, ten en cuenta que **es posible cancelar solo los pagos que están pendientes o en proceso**. Si un pago vence dentro de los 30 días, la cancelación es automática y el estado final del pago será "cancelado" o "expirado".
 
 Para obtener más información, consulte la sección [Reembolsos y cancelaciones](/developers/es/docs/checkout-api/payment-management/cancellations-and-refunds).
 
-
-
 ------------
-
 
 ----[mla]----
 
@@ -840,8 +827,6 @@ Para evitar problemas de facturación, es importante cancelar los pagos expirado
 
 Para obtener más información, consulte la sección [Reembolsos y cancelaciones](/developers/es/docs/checkout-api/payment-management/cancellations-and-refunds).
 
-
-
 ------------
 
 ----[mlm]----
@@ -1001,13 +986,11 @@ La respuesta mostrará el **status pendiente** hasta que el comprador realice el
 ]
 ```
 
-
 ## Cancelar pago
 
 Para evitar problemas de facturación, es importante cancelar los pagos expirados. Además, ten en cuenta que **es posible cancelar solo los pagos que están pendientes o en proceso**. Si un pago vence dentro de los 30 días, la cancelación es automática y el estado final del pago será "cancelado" o "expirado".
 
 Para obtener más información, consulte la sección [Reembolsos y cancelaciones](/developers/es/docs/checkout-api/payment-management/cancellations-and-refunds).
-
 
 ## Establecimientos de pago
 

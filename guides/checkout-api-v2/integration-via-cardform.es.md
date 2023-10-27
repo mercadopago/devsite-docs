@@ -446,30 +446,36 @@ payments.create({
 ===
 Encuentra el estado del pago en el campo _status_.
 ===
+
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
  
-MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
- 
-Payment payment = new Payment();
-payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmount")))
-      .setToken(request.getParameter("token"))
-      .setDescription(request.getParameter("description"))
-      .setInstallments(Integer.valueOf(request.getParameter("installments")))
-      .setPaymentMethodId(request.getParameter("paymentMethodId"));
- 
-Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
-identification.setType(request.getParameter("identificationType"))
-             .setNumber(request.getParameter("identificationNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("identificationNumber"));------------
- 
-Payer payer = new Payer();
-payer.setEmail(request.getParameter("email"))
-    .setIdentification(identification);
-   
-payment.setPayer(payer);
- 
-payment.save();
- 
-System.out.println(payment.getStatus());
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
+
+PaymentClient client = new PaymentClient();
+
+PaymentCreateRequest paymentCreateRequest =
+   PaymentCreateRequest.builder()
+       .transactionAmount(request.getTransactionAmount())
+       .token(request.getToken())
+       .description(request.getDescription())
+       .installments(request.getInstallments())
+       .paymentMethodId(request.getPaymentMethodId())
+       .payer(
+           PaymentPayerRequest.builder()
+               .email(request.getPayer().getEmail())
+               .firstName(request.getPayer().getFirstName())
+               .identification(
+                   IdentificationRequest.builder()
+                       .type(request.getPayer().getIdentification().getType())
+                       .number(request.getPayer().getIdentification().getNumber())
+                       .build())
+               .build())
+       .build();
+
+client.create(paymentCreateRequest, requestOptions);
  
 ```
 ```ruby
@@ -478,7 +484,13 @@ Encuentra el estado del pago en el campo _status_.
 ===
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
- 
+
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
+
 payment_data = {
  transaction_amount: params[:transactionAmount].to_f,
  token: params[:token],
@@ -494,7 +506,7 @@ payment_data = {
  }
 }
  
-payment_response = sdk.payment.create(payment_data)
+payment_response = sdk.payment.create(payment_data, custom_request_options)
 payment = payment_response[:response]
  
 puts payment
@@ -511,6 +523,9 @@ using MercadoPago.Config;
 using MercadoPago.Resource.Payment;
  
 MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
+
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
  
 var paymentRequest = new PaymentCreateRequest
 {
@@ -531,7 +546,7 @@ var paymentRequest = new PaymentCreateRequest
 };
  
 var client = new PaymentClient();
-Payment payment = await client.CreateAsync(paymentRequest);
+Payment payment = await client.CreateAsync(paymentRequest, requestOptions);
  
 Console.WriteLine(payment.Status);
  
@@ -542,7 +557,12 @@ Encuentra el estado del pago en el campo _status_.
 ===
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
- 
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
 payment_data = {
    "transaction_amount": float(request.POST.get("transaction_amount")),
    "token": request.POST.get("token"),
@@ -558,7 +578,7 @@ payment_data = {
    }
 }
  
-payment_response = sdk.payment().create(payment_data)
+payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
  
 print(payment)
@@ -572,6 +592,7 @@ curl -X POST \
    -H 'accept: application/json' \
    -H 'content-type: application/json' \
    -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+   -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
    'https://api.mercadopago.com/v1/payments' \
    -d '{
          "transaction_amount": 100,

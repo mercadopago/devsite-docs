@@ -207,6 +207,13 @@ payments.create({
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
+ 
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
+
 PaymentClient client = new PaymentClient();
 
 PaymentCreateRequest paymentCreateRequest =
@@ -224,11 +231,17 @@ IdentificationRequest.builder().type("CPF").number("19119119100").build())
 .build())
 .build();
 
-client.create(paymentCreateRequest);
+client.create(paymentCreateRequest, requestOptions);
 ```
 ```ruby
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
 
 payment_request = {
 transaction_amount: 100,
@@ -243,7 +256,7 @@ number: '19119119100',
 }
 }
 
-payment_response = sdk.payment.create(payment_request)
+payment_response = sdk.payment.create(payment_request, custom_request_options)
 payment = payment_response[:response]
 
 ```
@@ -255,6 +268,9 @@ using MercadoPago.Client.Payment;
 using MercadoPago.Resource.Payment;
 
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
 
 var request = new PaymentCreateRequest
 {
@@ -275,12 +291,17 @@ Number = "191191191-00",
 };
 
 var client = new PaymentClient();
-Payment payment = await client.CreateAsync(request);
+Payment payment = await client.CreateAsync(request, requestOptions);
 
 ```
 ```python
 import market
 sdk = Mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
 
 payment_data = {
 "transaction_amount": 100,
@@ -305,7 +326,7 @@ payment_data = {
 }
 }
 
-payment_response = sdk.payment().create(payment_data)
+payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 ```
 ```curl
@@ -313,6 +334,7 @@ curl -X POST \
 -H 'accept: application/json' \
 -H 'content-type: application/json' \
 -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+-H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
 'https://api.mercadopago.com/v1/payments' \
 -d '{
 "transaction_amount": 100,
