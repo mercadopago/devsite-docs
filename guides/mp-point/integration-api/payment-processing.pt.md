@@ -8,7 +8,7 @@ Antes de criar uma intenção de pagamento, você deve [obter os dispositivos Po
 
 ``` curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/devices?offset=0&limit=50' \ 
---header 'Authorization: Bearer ${ACCESS_TOKEN}' 
+--h 'Authorization: Bearer YOUR_ACCESS_TOKEN' 
 ```
 Você receberá uma resposta como esta:
 
@@ -61,8 +61,8 @@ Você pode [criar uma intenção de pagamento](/developers/pt/reference/integrat
 
 ----[mla]----
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/{{device.id}}/payment-intents' \
---header 'Authorization: Bearer ${ACCESS_TOKEN}' \
+curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/{device.d}/payment-intents' \
+--h 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
    "amount": 1500,
    "additional_info": {
@@ -97,19 +97,19 @@ Em resposta, você receberá algo semelhante a isso:
 ------------
 ----[mlb]----
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents' \
---header 'Authorization: Bearer ${ACCESS_TOKEN}' \
+curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/{deviceid}/payment-intents' \
+--h 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
-   "amount": 1500,
-   "description": “this is an example”,
-   "payment": {
-     "installments": 1,
-     "type": “credit_card”
-    },
-   "additional_info": {
-       "external_reference": "4561ads-das4das4-das4754-das456",
-       "print_on_terminal": true
-   }
+    "amount": 1500,
+    "description": “this is an example”,
+    "payment": {
+      "installments": 1,
+      "type": “credit_card”
+     },
+    "additional_info": {
+        "external_reference": "4561ads-das4das4-das4754-das456",
+        "print_on_terminal": true
+    }
 }'
 ```
 | Campo | Descrição |
@@ -145,9 +145,8 @@ Em resposta, você receberá algo semelhante a isso:
 ----[mlm]----
 
 ```curl
-
-curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents' \
---header 'Authorization: Bearer ${ACCESS_TOKEN}' \
+curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/{deviceid}/payment-intents' \
+--h 'Authorization: Bearer YOUR_ACCESS_TOKEN'  \
 --data-raw '{
     "amount": 1500,
     "additional_info": {
@@ -155,6 +154,7 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
         "print_on_terminal": true
     }
 }'
+
 ```
 
 | Campo | Descrição |
@@ -192,7 +192,13 @@ Tenha em mente que as intenções de pagamento são a base para o processamento 
 
 ## Processar intenção de pagamento
 
-Uma vez que a intenção de pagamento é criada, você pode obtê-la de seu dispositivo Point pressionando a tecla para iniciar o pagamento (no caso de Point Plus e Point Pro 2 o **botão verde** e, no caso de Point Smart, o **botão digital “Charge now”**) e continuar com as etapas mostradas em tela para concluir o pagamento.
+Uma vez criada a intenção de pagamento, você pode obtê-la no seu dispositivo Point.
+
+Nos dispositivos **Point Plus e Point Pro 2**, você precisará pressionar o **botão verde** para iniciar o pagamento.
+
+Nos dispositivos **Point Smart**, o fluxo de pagamento começará automaticamente assim que a intenção de pagamento for criada. Se isso não ocorrer, pressione o botão **Atualizar**.
+
+Em seguida, em qualquer um dos dispositivos, siga as etapas exibidas na tela para concluir o pagamento.
 
 > WARNING
 >
@@ -212,10 +218,21 @@ Lembre-se que o `id` e status da intenção de pagamento são diferentes do `id`
 >
 > O principal mecanismo recomendado para saber o resultado de uma intenção de pagamento é a assinatura de [notificações de integrações](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications). Aconselhamos usar o endpoint aqui presente apenas como um mecanismo alternativo.
 
+----[mlm]----
+
+``` curl
+curl --location --request GET 'https://api.mercadopago.com/point/integration-api/payment-intents/{paymentintentid}' \
+--h 'Authorization: Bearer YOUR_ACCESS_TOKEN' 
+```
+------------
+
+----[mla, mlb]----
+
 ``` curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/payment-intents/:paymentIntentID' \
---header 'Authorization: Bearer ${ACCESS_TOKEN}'
+--h 'Authorization: Bearer YOUR_ACCESS_TOKEN'  
 ```
+------------
 
 A resposta será semelhante a isso:
 
@@ -296,8 +313,8 @@ Se desejar, você pode cancelar uma intenção de pagamento atribuída a um disp
 * Se o estado da intenção for `opened` e ainda não tiver sido enviada para o terminal, você pode [cancelá-la via API](/developers/pt/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) fazendo a seguinte chamada:
 
 ``` curl
-curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents/:paymentIntentId' \
---header 'Authorization: Bearer ${ACCESS_TOKEN}' \
+curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/{deviceid}/payment-intents/{paymentintentid}' \
+--h 'Authorization: Bearer YOUR_ACCESS_TOKEN'  \
 ```
 
 Você receberá esta resposta:
