@@ -31,17 +31,19 @@ Caso necessário, é possível adicionar novos cartões a um determinado cliente
 const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
-customerClient.get('1234')
+const customer = customerClient.get({ customerId: '<CUSTOMER_ID>' })
 	.then((result) => {
+
   const cardClient = new CustomerCard(client);
 
   const body = {
-  	token : result.token,
-    issuer_id: '2345',
-    payment_method: 'debit_card' 
+       token : result.token,
+       issuer_id: '2345',
+       payment_method: 'debit_card' 
   };
 
-  customerClient.create({ customerId: 'customer_id', customerCardBody :   body}).then((result) => console.log(result));
+cardClient.create({ customerId: customer, body: body })
+.then(console.log).catch(console.log);
 });
 ```
 ```java

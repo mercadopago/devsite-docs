@@ -9,7 +9,7 @@ Wallet Brick te permite ofrecer pagos desde tu cuenta de Mercado Pago en cualqui
 ---
 live_demo_code_action:
  - title: Prueba nuestro Brick
- - description: Construye y comprueba la experiencia visual de Wallet Brick en tiempo real. Cuando esté todo listo, descarga o copia el código generado.
+ - description: Construye y comprueba la experiencia visual en tiempo real. Cuando esté todo listo, descarga o copia el código generado para agregarlo a tu sitio web o compartirlo con un desarrollador.
  - link: /developers/es/live-demo/wallet-brick
  - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/wallet-brick.png
  - linkName: Demo

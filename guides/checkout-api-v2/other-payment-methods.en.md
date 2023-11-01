@@ -8,8 +8,10 @@ With Mercado Pago's Checkout API, it is possible to offer, in addition to card a
 > Important
 >
 > In addition to the options available in this documentation, it is also possible to integrate **other payment methods** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
-------------
+> <br><br>
+> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
+------------
 ----[mla]----
 With Mercado Pago's Checkout API, it is also possible to offer payments with **Rapipago** and/or **Pago Fácil**.
 
@@ -18,8 +20,10 @@ With Mercado Pago's Checkout API, it is also possible to offer payments with **R
 > Important
 >
 > In addition to the options available in this documentation, it is also possible to integrate **other payment methods** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
-------------
+> <br><br>
+> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
+------------
 ----[mlm]----
 With the Mercado Pago's Checkout API, it is also possible to offer payments with **OXXO**, **Paycash**, **Citibanamex**, **Santander**, **BBVA Bancomer** and **Mercado Pago Card**.
 
@@ -28,8 +32,10 @@ With the Mercado Pago's Checkout API, it is also possible to offer payments with
 > Important
 >
 > In addition to the options available in this documentation, it is also possible to integrate **other payment methods** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
-------------
+> <br><br>
+> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
+------------
 ----[mpe]----
 With Mercado Pago's Checkout API, it is also possible to offer payments through **PagoEfectivo**.
 
@@ -38,8 +44,10 @@ With Mercado Pago's Checkout API, it is also possible to offer payments through 
 > Important
 >
 > In addition to the options available in this documentation, it is also possible to integrate **other payment methods** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
-------------
+> <br><br>
+> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
+------------
 ----[mco]----
 With Mercado Pago's Checkout API, it is also possible to offer payments with **Efecty**.
 
@@ -48,8 +56,10 @@ With Mercado Pago's Checkout API, it is also possible to offer payments with **E
 > Important
 >
 > In addition to the options available in this documentation, it is also possible to integrate **other payment methods** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
-------------
+> <br><br>
+> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
+------------
 ----[mlu]----
 With Mercado Pago's Checkout API, it is also possible to offer payments with **Abitab** and **Redpagos**.
 
@@ -58,6 +68,9 @@ With Mercado Pago's Checkout API, it is also possible to offer payments with **A
 > Important
 >
 > In addition to the options available in this documentation, it is also possible to integrate **other payment methods** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
+> <br><br>
+> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
+
 ------------
 
 To get a detailed list of all payment methods available for integration, send a **GET** with your **Access token** to the endpoint [/v1/payment_methods](/developers/en/reference/payment_methods/_payment_methods/get) and run the request or, if you prefer, make the request using the SDKs below.
@@ -65,23 +78,55 @@ To get a detailed list of all payment methods available for integration, send a 
 [[[
 ```php
 <?php
-  use MercadoPago\MercadoPagoConfig;
+  use MercadoPago\Client\Payment\PaymentClient;
 
-  MercadoPagoConfig::setAccessToken("ENV_ACCESS_TOKEN");
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-  $client = new PaymentMethodClient();
-  $payment_method = $client->get();
-
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "first_name" => $_POST['payerFirstName'],
+      "last_name" => $_POST['payerLastName'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
-import { MercadoPagoConfig, PaymentMethods } from 'mercadopago';
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
-const client = new MercadoPagoConfig({ accessToken: 'access_token' });
-const paymentMethods = new PaymentMethods(client);
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
-paymentMethods.get().then((result) => console.log(result))
-  .catch((error) => console.log(error));
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
@@ -128,25 +173,24 @@ curl -X GET \
 
 ----[mlb]----
 To offer **Boleto Bancário** and/or **Pagamento em lotérica**, follow the steps below.
-------------
 
+------------
 ----[mla]----
 To offer **Rapipago** and/or **Pago Fácil** payments, follow the steps below.
-------------
 
+------------
 ----[mlm]----
 To offer payments with **OXXO**, **Paycash**, **Citibanamex**, **Santander**, **BBVA Bancomer** or **Mercado Pago Card**, follow the steps below.
-------------
 
+------------
 ----[mpe]----
 To offer **PagoEfectivo** payments, please follow the steps below.
-------------
 
+------------
 ----[mco]----
 To offer **Efecty** payments, please follow the steps below.
 
 ------------
-
 ----[mlu]----
 To offer payments with **Abitab** and/or **Redpagos**, please follow the steps below.
 
@@ -176,7 +220,6 @@ npm install @mercadopago/sdk-js
 Credentials are unique passwords with which we identify an integration in your account. They are made to capture payments in virtual stores and other applications securely.
 
 This is the first step of a complete code structure that must be followed for the correct integration of the payment flow. Pay attention to the blocks below to add to the codes as indicated.
-
 
 [[[
 ```html
@@ -331,28 +374,28 @@ To configure payments with **Boleto Bancário** or **Pagamento em lotérica**, s
 ?>
 ```
 ```node
-import { MercadoPagoConfig, Payments } from 'mercadopago';
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
-const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const payments = new Payments(client);
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
-payments.create({
-  transaction_amount: req.transaction_amount,
-  token: req.token,
-  description: req.description,
-  installments: req.installments,
-  payment_method_id: req.paymentMethodId,
-  issuer_id: req.issuer,
-  payer: {
-    email: req.email,
-    identification: {
-      type: req.identificationType,
-      number: req.number
-    }
-  } 
-}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
-  .then((result) => console.log(result))
-  .catch((error) => console.log(error));
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
 PaymentClient client = new PaymentClient();
@@ -609,41 +652,55 @@ To configure payments with **Rapipago** and/or **Pago Fácil**, send a **POST** 
 [[[
 ```php
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-$payment = new MercadoPago\Payment();
-$payment->transaction_amount = 100;
-$payment->description = "Product title";
-$payment->payment_method_id = "rapipago";
-$payment->payer = array(
-"email" => "test_user_19653727@testuser.com"
-);
-
-$payment->save();
-
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "first_name" => $_POST['payerFirstName'],
+      "last_name" => $_POST['payerLastName'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
-var Mercadopago = require('mercadopago');
-Mercadopago.configurations.setAccessToken(config.access_token);
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
-var payment_data = {
-transaction_amount: 100,
-description: 'Product title',
-payment_method_id: 'rapipago',
-payer: {
-email: 'test_user_3931694@testuser.com'
-}
-};
-
-Mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function(error) {
-
-});
-
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
 import com.mercadopago.*;
@@ -839,41 +896,55 @@ To configure payments with **OXXO**, **Paycash**, **Citibanamex**, **Santander**
 [[[
 ```php
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-$payment = new MercadoPago\Payment();
-$payment->transaction_amount = 100;
-$payment->description = "Product title";
-$payment->payment_method_id = "oxxo";
-$payment->payer = array(
-"email" => "test_user_82045343@testuser.com"
-);
-
-$payment->save();
-
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "first_name" => $_POST['payerFirstName'],
+      "last_name" => $_POST['payerLastName'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
-var Mercadopago = require('mercadopago');
-Mercadopago.configurations.setAccessToken(config.access_token);
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
-var payment_data = {
-transaction_amount: 100,
-description: 'Product title',
-payment_method_id: 'oxxo',
-payer: {
-email: 'test_user_82045343@testuser.com'
-}
-};
-
-Mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function(error) {
-
-});
-
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
 import com.mercadopago.*;
@@ -1011,7 +1082,6 @@ When completing the integration, it is important to share with buyers the inform
 | Citibanamex| Citibanamex |
 
 ------------
-
 ----[mpe]----
 
 To configure payments with **PagoEfectivo**, send a **POST** with the required parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, use one of our SDKs below.
@@ -1025,40 +1095,55 @@ To configure payments with **PagoEfectivo**, send a **POST** with the required p
 [[[
 ```php
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-$payment = new MercadoPago\Payment();
-$payment->transaction_amount = 100;
-$payment->description = "Product title";
-$payment->payment_method_id = "payment_atm";
-$payment->payer = array(
-"email" => "test_user_42972582@testuser.com"
-);
-
-$payment->save();
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "first_name" => $_POST['payerFirstName'],
+      "last_name" => $_POST['payerLastName'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
-var Mercadopago = require('mercadopago');
-Mercadopago.configurations.setAccessToken(config.access_token);
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
-var payment_data = {
-transaction_amount: 100,
-description: 'Product title',
-payment_method_id: 'pagoefectivo_atm',
-payer: {
-email: 'test_user_42972582@testuser.com'
-}
-};
-
-Mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function(error) {
-
-});
-
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
 import com.mercadopago.*;
@@ -1183,7 +1268,6 @@ To avoid billing issues, it is important to cancel overdue payments. Also, keep 
 If a payment expires within 30 days, the cancellation is automatic and the final status of the payment will be `canceled` or `expired`. For more information, see the [Refunds and Cancellations](/developers/en/docs/checkout-api/payment-management/cancellations-and-refunds) section.
 
 ------------
-
 ----[mco]----
 
 To configure payments with **Efecty**, send a **POST** with the appropriate parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post ) and execute the request or, if you prefer, use one of our SDKs below.
@@ -1197,40 +1281,55 @@ To configure payments with **Efecty**, send a **POST** with the appropriate para
 [[[
 ```php
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-$payment = new MercadoPago\Payment();
-$payment->transaction_amount = 5000;
-$payment->description = "Product title";
-$payment->payment_method_id = "effective";
-$payment->payer = array(
-"email" => "test_user_19549678@testuser.com"
-);
-
-$payment->save();
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "first_name" => $_POST['payerFirstName'],
+      "last_name" => $_POST['payerLastName'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
-var Mercadopago = require('mercadopago');
-Mercadopago.configurations.setAccessToken(config.access_token);
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
-var payment_data = {
-transaction_amount: 5000,
-description: 'Product title',
-payment_method_id: 'effect',
-payer: {
-email: 'test_user_19549678@testuser.com'
-}
-};
-
-Mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function(error) {
-
-});
-
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
 import com.mercadopago.*;
@@ -1414,9 +1513,7 @@ Please note that **you can only cancel payments that are pending or in process**
 
 For details on how to cancel a payment, see the [Refunds and Cancellations](/developers/en/docs/checkout-api/payment-management/cancellations-and-refunds) section.
 
-
 ------------
-
 ----[mlu]----
 
 To configure payments with **Abitab** and/or **Redpagos**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
@@ -1430,40 +1527,55 @@ To configure payments with **Abitab** and/or **Redpagos**, send a **POST** with 
 [[[
 ```php
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-$payment = new MercadoPago\Payment();
-$payment->transaction_amount = 100;
-$payment->description = "Product title";
-$payment->payment_method_id = "abitab";
-$payment->payer = array(
-"email" => "test_user_84162205@testuser.com"
-);
-
-$payment->save();
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "first_name" => $_POST['payerFirstName'],
+      "last_name" => $_POST['payerLastName'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
-var Mercadopago = require('mercadopago');
-Mercadopago.configurations.setAccessToken(config.access_token);
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
-var payment_data = {
-transaction_amount: 100,
-description: 'Product title',
-payment_method_id: 'abitab',
-payer: {
-email: 'test_user_84162205@testuser.com'
-}
-};
-
-Mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function(error) {
-
-});
-
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
 import com.mercadopago.*;
@@ -1572,7 +1684,6 @@ The response will show the **pending status** until the buyer completes the paym
 }
 ]
 ```
-
 
 ## Cancel payment
 

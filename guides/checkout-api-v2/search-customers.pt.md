@@ -3,7 +3,6 @@
 Caso precise de dados específicos de um cliente, como por exemplo, ID, endereço ou data de registro, é possível obtê-los através da nossa API de clientes. Para isso, envie um GET com e-mail do cliente ao endpoint [/v1/customers/search](/developers/pt/reference/customers/_customers_search/get) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
 [[[
-
 ```php
 <?php
   MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
@@ -14,16 +13,12 @@ Caso precise de dados específicos de um cliente, como por exemplo, ID, endereç
 ?>
 ```
 ```node
-const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const customerClient = new Customer(client);
+import { Customer, MercadoPagoConfig } from '@src/index';
 
-customerClient.search({ 
-  limit: 1, 
-  offset: 0, 
-  filters: {
-    email: 'my.user@example.com'
-  } 
-}).then((result) => console.log(result));
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+const customer = new Customer(client);
+
+customer.search({ options: { email: '<EMAIL>' } }).then(console.log).catch(console.log);
 ```
 ```java
 

@@ -11,7 +11,7 @@ La posibilidad de guardar los datos de tarjetas que ya fueron cargadas en compra
 ---
 live_demo_code_action:
  - title: Prueba nuestro Brick
- - description: Construye y comprueba la experiencia visual de Payment Brick en tiempo real. Cuando esté todo listo, descarga o copia el código generado.
+ - description: Construye y comprueba la experiencia visual en tiempo real. Cuando esté todo listo, descarga o copia el código generado para agregarlo a tu sitio web o compartirlo con un desarrollador.
  - link: /developers/es/live-demo/payment-brick
  - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
  - linkName: Demo
