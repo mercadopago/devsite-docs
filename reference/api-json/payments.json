@@ -14,6 +14,22 @@
           "pt": "Crie um pagamento e acrescente todas as informações que você precisa. Certifique-se de acrescentar os detalhes do pagamento e os detalhes do cliente",
           "es": "Realiza la creación de un pago y agrega toda la información que necesites. Ten en cuenta de sumar el detalle del pago y los datos del pagador"
         },
+        "parameters": [
+          {
+            "in": "header",
+            "name": "X-Idempotency-Key",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "0d5020ed-1af6-469c-ae06-c3bec19954bb"
+            },
+            "description": {
+              "en": "This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments, for example. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings. It is important to consider that this field is only mandatory for integrations carried out after 01/11/2023.",
+              "pt": "Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos, por exemplo. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas. É importante considerar que este campo somente é obrigatório para integrações realizadas após 01/11/2023.",
+              "es": "Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos, por ejemplo. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el header de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorias. Es importante considerar que este campo solo es obligatorio para integraciones realizadas después del 01/11/2023"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -40,8 +56,8 @@
                         "type": "array",
                         "description": {
                           "en": "List of items to be paid.",
-                          "pt": "Lista de itens a pagar",
-                          "es": "Lista de ítems a pagar"
+                          "pt": "Lista de itens a pagar.",
+                          "es": "Lista de ítems a pagar."
                         },
                         "items": {
                           "type": "object",
@@ -94,18 +110,18 @@
                             "quantity": {
                               "type": "number",
                               "description": {
-                                "en": "Item quantity.",
-                                "pt": "Quantidade do produto",
-                                "es": "Cantidad de producto"
+                                "en": "Item quantity. This parameter will return as an String.",
+                                "pt": "Quantidade do produto. Este parâmetro será retornado como uma String.",
+                                "es": "Cantidad de producto. Te devolveremos este parámetro como una String."
                               },
                               "example": 1
                             },
                             "unit_price": {
                               "type": "number",
                               "description": {
-                                "en": "Unit price of the purchased item.",
-                                "pt": "Preço unitário do item comprado.",
-                                "es": "Precio unitario del ítem comprado."
+                                "en": "Unit price of the purchased item. This parameter will return as an String.",
+                                "pt": "Preço unitário do item comprado. Este parâmetro será retornado como uma String.",
+                                "es": "Precio unitario del ítem comprado. Te devolveremos este parámetro como una String."
                               },
                               "example": 58.8
                             },
@@ -2663,9 +2679,9 @@
                         {
                           "title": "2000",
                           "description": {
-                            "en": "Payment not found",
-                            "es": "Payment not found",
-                            "pt": "Payment not found"
+                            "en": "Payment not found. This error will return a field called \"data\". This field contains the error date \"25-09-2023T16:57:53UTC\" and a Request ID, an ID that identifies payment traceability.",
+                            "es": "Payment not found. This error will return a field called \"data\". This field contains the error date \"25-09-2023T16:57:53UTC\" and a Request ID, an ID that identifies payment traceability.",
+                            "pt": "Payment not found. This error will return a field called \"data\". This field contains the error date \"25-09-2023T16:57:53UTC\" and a Request ID, an ID that identifies payment traceability."
                           }
                         }
                       ]
