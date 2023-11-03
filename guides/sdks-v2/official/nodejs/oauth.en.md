@@ -2,8 +2,6 @@
 
 You can create the token needed to operate your app on behalf of a vendor using the SDK below. For details of the request parameters, check the [Create and refresh token](/developers/en/reference/oauth/_oauth_token/post) API.
 
-
-[[[
 ```node
 const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } }); 
 
@@ -17,14 +15,11 @@ oauth.create({
 }).then((result) => console.log(result))
 	.catch((error) => console.log(error));
 ```
-]]]
 
 ## Update token
 
 You can update the token needed to operate your app on behalf of a vendor using the SDK below. For details of the request parameters, check the [Create and refresh token](/developers/en/reference/oauth/_oauth_token/post) API.
 
-
-[[[
 ```node
 const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 
@@ -37,4 +32,3 @@ oauth.refresh({
 }).then((result) => console.log(result))
 	.catch((error) => console.log(error));
 ```
-]]]
