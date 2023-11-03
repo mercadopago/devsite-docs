@@ -75,8 +75,6 @@ Con el Checkout API de Mercado Pago, también es posible ofrecer pagos con **Abi
 
 Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu `access_token` al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.
 
-> 
-
 [[[
 ```php
 <?php
@@ -158,29 +156,28 @@ curl -X GET \
 
 ----[mlb]----
 Para ofrecer pagos con **boleto bancário** y/o **pago en agencias de lotería**, sigue las siguientes etapas.
-------------
 
+------------
 ----[mla]----
 Para ofrecer pagos con **Rapipago** y/o **Pago Fácil**, sigue las siguientes etapas.
-------------
 
+------------
 ----[mlm]----
 Para ofrecer pagos con **OXXO**, **Paycash**, **Citibanamex**, **Santander**, **BBVA Bancomer** o **Tarjeta Mercado Pago**, sigue las siguientes etapas.
-------------
 
+------------
 ----[mpe]----
 Para ofrecer pagos con **PagoEfectivo**, sigue las siguientes etapas.
-------------
 
+------------
 ----[mco]----
 Para ofrecer pagos con **Efecty**, sigue las siguientes etapas.
-------------
 
+------------
 ----[mlu]----
 Para ofrecer pagos con **Abitab** y/o **Redpagos**, sigue las siguientes etapas.
+
 ------------
-
-
 
 ## Importar MercadoPago.js
 
@@ -201,13 +198,11 @@ npm install @mercadopago/sdk-js
 ```
 ]]]
 
-
 ## Configurar credencial
 
 Las credenciales son claves únicas con las que identificamos una integración en tu cuenta. Se utilizan para capturar pagos en tiendas online y otras aplicaciones de forma segura.
 
 Esta es la primera etapa de una estructura de código completa que se debe seguir para integrar correctamente los pagos. Presta atención a los siguientes bloques para añadirlos a los códigos como se indica.
-
 
 [[[
 ```html
@@ -270,7 +265,6 @@ Con la biblioteca MercadoPago.js incluida, añade el siguiente formulario de pag
 ]]]
 
 ----[mlb, mla, mpe, mco, mlu, mlc]----
-
 ## Obtener tipos de documentos
 
 Después de configurar la credencial y añadir el formulario de pago, es necesario obtener los tipos de documentos que se utilizarán para rellenar el formulario de pago.
@@ -389,6 +383,13 @@ payment.create({
 .catch((error) => console.log(error));
 ```
 ```java
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
+ 
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
+
 PaymentClient client = new PaymentClient();
 
 PaymentCreateRequest paymentCreateRequest =
@@ -407,11 +408,17 @@ PaymentCreateRequest paymentCreateRequest =
                .build())
        .build();
 
-client.create(paymentCreateRequest);
+client.create(paymentCreateRequest, requestOptions);
 ```
 ```ruby
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
 
 payment_request = {
   transaction_amount: 100,
@@ -436,7 +443,7 @@ payment_request = {
   }
 }
 
-payment_response = sdk.payment.create(payment_request)
+payment_response = sdk.payment.create(payment_request, custom_request_options)
 payment = payment_response[:response]
 
 ```
@@ -448,6 +455,9 @@ using MercadoPago.Client.Payment;
 using MercadoPago.Resource.Payment;
 
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
 
 var request = new PaymentCreateRequest
 {
@@ -468,12 +478,17 @@ var request = new PaymentCreateRequest
 };
 
 var client = new PaymentClient();
-Payment payment = await client.CreateAsync(request);
+Payment payment = await client.CreateAsync(request, requestOptions);
 
 ```
 ```python
 import mercadopago
 sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
 
 payment_data = {
     "transaction_amount": 100,
@@ -498,7 +513,7 @@ payment_data = {
     }
 }
 
-payment_response = sdk.payment().create(payment_data)
+payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 ```
 ```curl
@@ -506,6 +521,7 @@ curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,

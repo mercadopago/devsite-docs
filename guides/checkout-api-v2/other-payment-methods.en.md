@@ -280,7 +280,6 @@ With the MercadoPago.js library included, add the payment form below to your pro
 ]]]
 
 ----[mlb, mla, mpe, mco, mlu, mlc]----
-
 ## Get document types
 
 After configuring the credential, it is necessary to obtain the types of documents that will be part of filling out the payment form.
@@ -398,6 +397,13 @@ payment.create({
 .catch((error) => console.log(error));
 ```
 ```java
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
+ 
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
+
 PaymentClient client = new PaymentClient();
 
 PaymentCreateRequest paymentCreateRequest =
@@ -416,36 +422,42 @@ IdentificationRequest.builder().type("CPF").number("19119119100").build())
 .build())
 .build();
 
-client.create(paymentCreateRequest);
+client.create(paymentCreateRequest, requestOptions);
 ```
 ```ruby
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_request = {
-transaction_amount: 100,
-description: 'Product title',
-payment_method_id: 'bolbradesco',
-payer: {
-email: 'PAYER_EMAIL',
-first_name: 'Test',
-last_name: 'User',
-identification: {
-type: 'CPF',
-number: '19119119100',
-},
-address: {
-zip_code: '06233200',
-street_name: 'Avenida das Nações Unidas',
-street_number: '3003',
-neighborhood: 'Bonfim',
-city: 'Osasco',
-federal_unit: 'SP'
-}
-}
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
 }
 
-payment_response = sdk.payment.create(payment_request)
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
+
+payment_request = {
+  transaction_amount: 100,
+  description: 'Product title',
+  payment_method_id: 'bolbradesco',
+  payer: {
+    email: 'PAYER_EMAIL',
+    first_name: 'Test',
+    last_name: 'User',
+    identification: {
+      type: 'DNI',
+      number: '19119119',
+    },
+    address: {
+      zip_code: '1264',
+      street_name: 'Av. Caseros',
+      street_number: '3039',
+      neighborhood: 'Parque Patricios',
+      city: 'Buenos Aires',
+      federal_unit: 'BA'
+    }
+  }
+}
+
+payment_response = sdk.payment.create(payment_request, custom_request_options)
 payment = payment_response[:response]
 
 ```
@@ -457,6 +469,9 @@ using MercadoPago.Client.Payment;
 using MercadoPago.Resource.Payment;
 
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
 
 var request = new PaymentCreateRequest
 {
@@ -477,12 +492,17 @@ Number = "191191191-00",
 };
 
 var client = new PaymentClient();
-Payment payment = await client.CreateAsync(request);
+Payment payment = await client.CreateAsync(request, requestOptions);
 
 ```
 ```python
 import market
 sdk = Mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
 
 payment_data = {
 "transaction_amount": 100,
@@ -507,7 +527,7 @@ payment_data = {
 }
 }
 
-payment_response = sdk.payment().create(payment_data)
+payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 ```
 ```curl
@@ -515,6 +535,7 @@ curl -X POST \
 -H 'accept: application/json' \
 -H 'content-type: application/json' \
 -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+-H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
 'https://api.mercadopago.com/v1/payments' \
 -d '{
 "transaction_amount": 100,
