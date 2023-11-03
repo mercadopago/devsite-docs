@@ -235,7 +235,7 @@ paths:
                         eng: Street number.
                         spa: Número
                         por: O Número
-                      example: 3039
+                      example: "3039"
                     street_name:
                       type: string
                       description: Street name.
@@ -670,7 +670,7 @@ paths:
                         eng: Street number.
                         spa: Número
                         por: O Número
-                      example: 3040
+                      example: "3040"
                     street_name:
                       type: string
                       description: Street name.

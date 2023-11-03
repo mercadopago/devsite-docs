@@ -3170,11 +3170,11 @@ paths:
             example: 47792478
         - name: pos_id
           in: query
-          description: Parameter used to filter the payment search by POS identifier, physical points of sale that use a card machine for sales.
+          description: Parameter used to filter payment searches by the Point of Sale (POS) identifier, physical sales points that use a card machine for sales and/or QR codes.
           x-description-i18n:
-            eng: Parameter used to filter the payment search by POS identifier, physical points of sale that use a card machine for sales.
-            spa: Parámetro utilizado para filtrar la búsqueda de pagos por el identificador del PDV, puntos de venta físicos que utilizan una máquina de tarjetas para la venta.
-            por: Parâmetro utilizado para filtrar a busca de pagamentos pelo identificador do PDV, pontos de vendas físicos que utilizam maquininha de cartão para vendas.
+            eng: Parameter used to filter payment searches by the Point of Sale (POS) identifier, physical sales points that use a card machine for sales and/or QR codes.
+            spa: Parámetro utilizado para filtrar la búsqueda de pagos por el identificador del PDV, puntos de venta físicos que utilizan una máquina de tarjetas para la venta y/o códigos QR.
+            por: Parâmetro utilizado para filtrar a busca de pagamentos pelo identificador do ponto de venda (PDV), pontos de venda físicos que utilizam uma máquina de cartão para vendas e/ou códigos QR.
           required: false
           schema:
             type: string

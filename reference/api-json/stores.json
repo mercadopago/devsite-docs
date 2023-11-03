@@ -353,7 +353,7 @@
                           "spa": "Número",
                           "por": "O Número"
                         },
-                        "example": 3039
+                        "example": "3039"
                       },
                       "street_name": {
                         "type": "string",
