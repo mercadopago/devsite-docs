@@ -10,11 +10,11 @@ Con [Checkout API](/developers/es/guides/checkout-api/landing), ofrece pagos con
 
 ------------
  
-Para integrar el método de pago, siga los pasos a continuación.
+Para integrar el método de pago, sigue los pasos a continuación.
 
 1. Selecciona **Sí** para habilitar la experiencia de Mercado Pago para pagamentos com tarjetas en el checkout de tu tienda.
-2. Indique si desea que el comprador tenga la opción de guardar los datos de su tarjeta para futuros pagos o usar su saldo de Mercado Pago para realizar pagos. Los clientes pagan más rápido y usted aumenta la conversión con esta función.
-3. [Configure](https://www.mercadopago.com.br/costs-section#from-section=menu) la tasa que se pagará en cada compra y también ofrezca cuotas sin interés a sus clientes.
+2. Indica si deseas que el comprador tenga la opción de guardar los datos de su tarjeta para futuros pagos o usar su saldo de Mercado Pago para realizar pagos. Los clientes pagarán más rápido y tú aumentarás la conversión con esta función.
+3. [Configura](https://www.mercadopago.com.br/costs-section#from-section=menu) la tasa que se pagará en cada compra y también ofrece financiación sin interés a tus clientes.
 4. Activa el **modo binario** cuando no quieras dejar los pagos en estado pendiente o en revisión. Con el modo binario, los pagos se aceptarán o rechazarán automáticamente.
 5. De ser necesario, define un porcentaje de descuento para clientes que paguen con Mercado Pago.
 

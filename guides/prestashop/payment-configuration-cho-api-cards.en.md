@@ -1,6 +1,6 @@
 # Cards
 
-With [Checkout API](/developers/en/guides/checkout-api/landing), offer payments with **credit or debit cards** directly in your store, without the buyer need to be redirected to make the payment.
+With [----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/en/guides/checkout-api/landing), offer payments with **credit or debit cards** directly in your store, without the buyer need to be redirected to make the payment.
  
 To integrate the payment method, follow the steps below.
 
