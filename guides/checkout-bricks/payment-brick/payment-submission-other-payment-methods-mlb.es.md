@@ -20,78 +20,70 @@ Para configurar pagos con **boleto bancario** o pago en **agencia de lotería**,
 [[[
 ```php
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
- require_once 'vendor/autoload.php';
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
- MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
- $payment = new MercadoPago\Payment();
- $payment->transaction_amount = 100;
- $payment->description = "Título del producto";
- $payment->payment_method_id = "bolbradesco";
- $payment->payer = array(
-     "email" => "test@test.com",
-     "first_name" => "Test",
-     "last_name" => "User",
-     "identification" => array(
-         "type" => "DNI",
-         "number" => "19119119"
-      ),
-     "address"=>  array(
-         "zip_code" => "1264",
-         "street_name" => "Av. Caseros",
-         "street_number" => "3039",
-         "neighborhood" => "Parque Patricios",
-         "city" => "Buenos Aires",
-         "federal_unit" => "BA"
-      )
-   );
-
- $payment->save();
-
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "first_name" => $_POST['payerFirstName'],
+      "last_name" => $_POST['payerLastName'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
-var payment_data = {
-  transaction_amount: 100,
-  description: 'Título del producto',
-  payment_method_id: 'bolbradesco',
-  payer: {
-    email: 'test@test.com',
-    first_name: 'Test',
-    last_name: 'User',
-    identification: {
-        type: 'DNI',
-        number: '19119119'
-    },
-    address:  {
-        zip_code: '1264',
-        street_name: 'Av. Caseros',
-        street_number: '3039',
-        neighborhood: 'Parque Patricios',
-        city: 'Buenos Aires',
-        federal_unit: 'BA'
-    }
-  }
-};
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
-mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function (error) {
-
-});
-
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
+ 
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
+
 PaymentClient client = new PaymentClient();
 
 PaymentCreateRequest paymentCreateRequest =
    PaymentCreateRequest.builder()
        .transactionAmount(new BigDecimal("100"))
-       .description("Título del producto")
+       .description("Título do produto")
        .paymentMethodId("bolbradesco")
        .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
        .payer(
@@ -104,41 +96,46 @@ PaymentCreateRequest paymentCreateRequest =
                .build())
        .build();
 
-client.create(paymentCreateRequest);
+client.create(paymentCreateRequest, requestOptions);
 ```
 ```ruby
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
+
 payment_request = {
   transaction_amount: 100,
-  description: 'Título del producto',
+  description: 'Título do produto',
   payment_method_id: 'bolbradesco',
   payer: {
     email: 'test@test.com',
     first_name: 'Test',
     last_name: 'User',
     identification: {
-      type: 'DNI',
-      number: '19119119',
+      type: 'CPF',
+      number: '19119119100',
     },
     address: {
-      zip_code: '1264',
-      street_name: 'Av. Caseros',
-      street_number: '3039',
-      neighborhood: 'Parque Patricios',
-      city: 'Buenos Aires',
-      federal_unit: 'BA'
+      zip_code: '06233200',
+      street_name: 'Av. das Nações Unidas',
+      street_number: '3003',
+      neighborhood: 'Bonfim',
+      city: 'Osasco',
+      federal_unit: 'SP'
     }
   }
 }
 
-payment_response = sdk.payment.create(payment_request)
+payment_response = sdk.payment.create(payment_request, custom_request_options)
 payment = payment_response[:response]
 
 ```
 ```csharp
-
 using MercadoPago.Config;
 using MercadoPago.Client.Common;
 using MercadoPago.Client.Payment;
@@ -146,10 +143,13 @@ using MercadoPago.Resource.Payment;
 
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
+
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 105,
-    Description = "Título del producto",
+    Description = "Título do produto",
     PaymentMethodId = "bolbradesco",
     Payer = new PaymentPayerRequest
     {
@@ -158,44 +158,49 @@ var request = new PaymentCreateRequest
         LastName = "User",
         Identification = new IdentificationRequest
         {
-            Type = "DNI",
-            Number = "19119119",
+            Type = "CPF",
+            Number = "191191191-00",
         },
     },
 };
 
 var client = new PaymentClient();
-Payment payment = await client.CreateAsync(request);
+Payment payment = await client.CreateAsync(request, requestOptions);
 
 ```
 ```python
 import mercadopago
 sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
 payment_data = {
     "transaction_amount": 100,
-    "description": "Título del producto",
+    "description": "Título do produto",
     "payment_method_id": "bolbradesco",
     "payer": {
         "email": "test@test.com",
         "first_name": "Test",
         "last_name": "User",
         "identification": {
-            "type": "DNI",
-            "number": "19119119"
+            "type": "CPF",
+            "number": "191191191-00"
         },
         "address": {
-            "zip_code": "1264",
-            "street_name": "Av. Caseros",
-            "street_number": "3039",
-            "neighborhood": "Parque Patricios",
-            "city": "Buenos Aires",
-            "federal_unit": "BA"
+            "zip_code": "06233-200",
+            "street_name": "Av. das Nações Unidas",
+            "street_number": "3003",
+            "neighborhood": "Bonfim",
+            "city": "Osasco",
+            "federal_unit": "SP"
         }
     }
 }
 
-payment_response = sdk.payment().create(payment_data)
+payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 ```
 ```curl
@@ -203,26 +208,27 @@ curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
-      "description": "Título del producto",
+      "description": "Título do produto",
       "payment_method_id": "bolbradesco",
       "payer": {
         "email": "PAYER_EMAIL_HERE",
         "first_name": "Test",
         "last_name": "User",
         "identification": {
-            "type": "DNI",
-            "number": "19119119"
+            "type": "CPF",
+            "number": "19119119100"
         },
         "address": {
-            "zip_code": "1264",
-            "street_name": "Av. Caseros",
-            "street_number": "3039",
-            "neighborhood": "Parque Patricios",
-            "city": "Buenos Aires",
-            "federal_unit": "BA"
+            "zip_code": "06233200",
+            "street_name": "Av. das Nações Unidas",
+            "street_number": "3003",
+            "neighborhood": "Bonfim",
+            "city": "Osasco",
+            "federal_unit": "SP"
         }
       }
     }'
