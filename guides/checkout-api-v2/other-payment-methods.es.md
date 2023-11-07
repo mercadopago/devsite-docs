@@ -8,8 +8,6 @@ Con el Checkout API de Mercado Pago, es posible ofrecer, además de tarjeta y Pi
 > Importante
 >
 > Además de las opciones disponibles en esta documentación, también es posible integrar **otros medios de pago** utilizando el **Brick de Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
-> <br><br>
-> Al ejecutar las APIs mencionadas en esta documentación, es posible que encuentre el atributo `X-Idempotency-Key`. Completarlo es crucial para asegurar la ejecución y reejecución de las solicitudes sin situaciones no deseadas, como pagos duplicados, por ejemplo.
 
 ------------
 ----[mla]----
@@ -20,8 +18,6 @@ Con el Checkout API de Mercado Pago, también es posible ofrecer pagos con **Rap
 > Importante
 >
 > Además de las opciones disponibles en esta documentación, también es posible integrar **otros medios de pago** utilizando el **Brick de Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
-> <br><br>
-> Al ejecutar las APIs mencionadas en esta documentación, es posible que encuentre el atributo `X-Idempotency-Key`. Completarlo es crucial para asegurar la ejecución y reejecución de las solicitudes sin situaciones no deseadas, como pagos duplicados, por ejemplo.
 
 ------------
 ----[mlm]----
@@ -32,8 +28,6 @@ Con el Checkout API de Mercado Pago, también se puede ofrecer pagos con **OXXO*
 > Importante
 >
 > Además de las opciones disponibles en esta documentación, también es posible integrar **otros medios de pago** utilizando el **Brick de Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
-> <br><br>
-> Al ejecutar las APIs mencionadas en esta documentación, es posible que encuentre el atributo `X-Idempotency-Key`. Completarlo es crucial para asegurar la ejecución y reejecución de las solicitudes sin situaciones no deseadas, como pagos duplicados, por ejemplo.
 
 ------------
 ----[mpe]----
@@ -44,8 +38,6 @@ Con el Checkout API de Mercado Pago, también es posible ofrecer pagos a través
 > Importante
 >
 > Además de las opciones disponibles en esta documentación, también es posible integrar **otros medios de pago** utilizando el **Brick de Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
-> <br><br>
-> Al ejecutar las APIs mencionadas en esta documentación, es posible que encuentre el atributo `X-Idempotency-Key`. Completarlo es crucial para asegurar la ejecución y reejecución de las solicitudes sin situaciones no deseadas, como pagos duplicados, por ejemplo.
 
 ------------
 ----[mco]----
@@ -56,8 +48,6 @@ Con el Checkout API de Mercado Pago, también se puede ofrecer pagos con **Efect
 > Importante
 >
 > Además de las opciones disponibles en esta documentación, también es posible integrar **otros medios de pago** utilizando el **Brick de Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
-> <br><br>
-> Al ejecutar las APIs mencionadas en esta documentación, es posible que encuentre el atributo `X-Idempotency-Key`. Completarlo es crucial para asegurar la ejecución y reejecución de las solicitudes sin situaciones no deseadas, como pagos duplicados, por ejemplo.
 
 ------------
 ----[mlu]----
@@ -68,8 +58,6 @@ Con el Checkout API de Mercado Pago, también es posible ofrecer pagos con **Abi
 > Importante
 >
 > Además de las opciones disponibles en esta documentación, también es posible integrar **otros medios de pago** utilizando el **Brick de Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para obtener más detalles.
-> <br><br>
-> Al ejecutar las APIs mencionadas en esta documentación, es posible que encuentre el atributo `X-Idempotency-Key`. Completarlo es crucial para asegurar la ejecución y reejecución de las solicitudes sin situaciones no deseadas, como pagos duplicados, por ejemplo.
 
 ------------
 
@@ -88,28 +76,13 @@ Para obtener una lista detallada de todos los medios de pago disponibles para in
 ?>
 ```
 ```node
-import { Payment, MercadoPagoConfig } from 'mercadopago';
+import { MercadoPagoConfig, PaymentMethods } from 'mercadopago';
 
-const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
+const paymentMethods = new PaymentMethods(client);
 
-payment.create({
-    body: { 
-        transaction_amount: req.transaction_amount,
-        token: req.token,
-        description: req.description,
-        installments: req.installments,
-        payment_method_id: req.paymentMethodId,
-        issuer_id: req.issuer,
-            payer: {
-            email: req.email,
-            identification: {
-        type: req.identificationType,
-        number: req.number
-    }}},
-    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
-})
-.then((result) => console.log(result))
-.catch((error) => console.log(error));
+paymentMethods.get().then((result) => console.log(result))
+  .catch((error) => console.log(error));
 ```
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
@@ -315,6 +288,12 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 
 Al finalizar la inclusión del formulario de pago y obtener los tipos de documentos, es necesario enviar el email del comprador, el tipo y número de documento, el medio de pago utilizado y el detalle del importe a pagar utilizando nuestra API de Pagos o uno de nuestros SDKs.
 
+> NOTE
+>
+> Importante
+>
+> Al ejecutar las APIs mencionadas en esta documentación, es posible que encuentre el atributo `X-Idempotency-Key`. Completarlo es crucial para asegurar la ejecución y reejecución de las solicitudes sin situaciones no deseadas, como pagos duplicados, por ejemplo.
+
 ----[mlb]----
 Para configurar pagos con **boleto bancario** o **pago en agencia de lotería**, envía un POST con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
@@ -325,7 +304,7 @@ Para configurar pagos con **boleto bancario** o **pago en agencia de lotería**,
 
 > WARNING
 >
-> Importante
+> Atención
 >
 > Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token.
 

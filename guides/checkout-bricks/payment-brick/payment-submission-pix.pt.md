@@ -6,6 +6,12 @@
 
 Ao finalizar a inclusão do formulário de pagamento, é preciso enviar o **e-mail do comprador**, o **tipo e o número do documento**, o **meio de pagamento utilizado (pix)** e o **detalhe do valor**.
 
+> NOTE
+> 
+> Importante
+>
+> Ao executar as APIs citadas nesta documentação, você poderá encontrar o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições sem que haja situações indesejadas como, por exemplo, pagamentos em duplicidade. 
+
 Para configurar pagamento com Pix, envie um POST ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça a requisição utilizando nossos SDKs.
 
 [[[

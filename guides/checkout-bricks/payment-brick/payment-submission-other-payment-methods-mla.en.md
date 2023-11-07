@@ -11,6 +11,8 @@ To configure payments with **Rapipago** or **Pago Fácil**, send a **POST** with
 > Important
 >
 > Remember that Brick already resolves most parameters to send the POST. The information return comes in the `onSubmit` callback, inside the `formData` object, where you can find parameters like: `payment_method_id`, `payer.email` and `amount`.
+> <br><br>
+> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example. 
 
 | Payment Type | Parameter | Value |
 | --- | --- | --- |

@@ -11,6 +11,8 @@ Para configurar **pagos con dinero en efectivo via ticket**, envía un POST con 
 > Importante
 >
 > Recuerda que Brick ya resuelve la mayoría de parámetros para enviar el POST. La devolución de información viene en la devolución de llamada `onSubmit`, dentro del objeto `formData`, donde puede encontrar parámetros como: `payment_method_id`, `payer.email` y `amount`.
+> <br><br>
+> Al ejecutar las APIs mencionadas en esta documentación, es posible que encuentre el atributo `X-Idempotency-Key`. Completarlo es crucial para asegurar la ejecución y reejecución de las solicitudes sin situaciones no deseadas, como pagos duplicados, por ejemplo. 
 
 | Tipo de pago | Punto de pago | Parámetro | Valor |
 | --- | --- | --- | --- |

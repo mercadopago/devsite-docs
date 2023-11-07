@@ -8,8 +8,6 @@ With Mercado Pago's Checkout API, it is possible to offer, in addition to card a
 > Important
 >
 > In addition to the options available in this documentation, it is also possible to integrate **other payment methods** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
-> <br><br>
-> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 ------------
 ----[mla]----
@@ -20,8 +18,6 @@ With Mercado Pago's Checkout API, it is also possible to offer payments with **R
 > Important
 >
 > In addition to the options available in this documentation, it is also possible to integrate **other payment methods** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
-> <br><br>
-> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 ------------
 ----[mlm]----
@@ -32,8 +28,6 @@ With the Mercado Pago's Checkout API, it is also possible to offer payments with
 > Important
 >
 > In addition to the options available in this documentation, it is also possible to integrate **other payment methods** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
-> <br><br>
-> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 ------------
 ----[mpe]----
@@ -44,8 +38,6 @@ With Mercado Pago's Checkout API, it is also possible to offer payments through 
 > Important
 >
 > In addition to the options available in this documentation, it is also possible to integrate **other payment methods** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
-> <br><br>
-> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 ------------
 ----[mco]----
@@ -56,8 +48,6 @@ With Mercado Pago's Checkout API, it is also possible to offer payments with **E
 > Important
 >
 > In addition to the options available in this documentation, it is also possible to integrate **other payment methods** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
-> <br><br>
-> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 ------------
 ----[mlu]----
@@ -68,8 +58,6 @@ With Mercado Pago's Checkout API, it is also possible to offer payments with **A
 > Important
 >
 > In addition to the options available in this documentation, it is also possible to integrate **other payment methods** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
-> <br><br>
-> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 ------------
 
@@ -78,55 +66,23 @@ To get a detailed list of all payment methods available for integration, send a 
 [[[
 ```php
 <?php
-  use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\MercadoPagoConfig;
 
-  $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
-  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+  MercadoPagoConfig::setAccessToken("ENV_ACCESS_TOKEN");
 
-  $payment = $client->create([
-    "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
-    "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
-    "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
-    "payer" => [
-      "email" => $_POST['email'],
-      "first_name" => $_POST['payerFirstName'],
-      "last_name" => $_POST['payerLastName'],
-      "identification" => [
-        "type" => $_POST['identificationType'],
-        "number" => $_POST['number']
-      ]
-    ]
-  ], $request_options);
-  echo implode($payment);
+  $client = new PaymentMethodClient();
+  $payment_method = $client->get();
+
 ?>
 ```
 ```node
-import { Payment, MercadoPagoConfig } from 'mercadopago';
+import { MercadoPagoConfig, PaymentMethods } from 'mercadopago';
 
-const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
+const paymentMethods = new PaymentMethods(client);
 
-payment.create({
-    body: { 
-        transaction_amount: req.transaction_amount,
-        token: req.token,
-        description: req.description,
-        installments: req.installments,
-        payment_method_id: req.paymentMethodId,
-        issuer_id: req.issuer,
-            payer: {
-            email: req.email,
-            identification: {
-        type: req.identificationType,
-        number: req.number
-    }}},
-    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
-})
-.then((result) => console.log(result))
-.catch((error) => console.log(error));
+paymentMethods.get().then((result) => console.log(result))
+  .catch((error) => console.log(error));
 ```
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
@@ -156,18 +112,18 @@ ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
 
 ```
 ```python
-import market
-sdk = Mercadopago.SDK("ACCESS_TOKEN")
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
 
 payment_methods_response = sdk.payment_methods().list_all()
 payment_methods = payment_methods_response["response"]
 ```
 ```curl
 curl -X GET \
--H 'accept: application/json' \
--H 'content-type: application/json' \
--H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-'https://api.mercadopago.com/v1/payment_methods' \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payment_methods' \
 ```
 ]]]
 
@@ -329,12 +285,18 @@ elem.appendChild(tempOptions);
 
 When finalizing the inclusion of the payment form and obtaining the types of documents, it is necessary to forward the buyer's email, type and document number, the payment method used and the details of the amount to be paid using our Payments API or one of our SDKs.
 
+> NOTE
+>
+> Important
+>
+> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
+
 ----[mlb]----
 To configure payments with **Boleto Bancário** or **Pagamento em lotérica**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
 
 > WARNING
 >
-> Important
+> Attention
 >
 > For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
 
