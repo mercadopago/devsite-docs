@@ -64,6 +64,7 @@ Para las integraciones de JavaScript/HTML, a través de CDN, deberás crear un c
 
 Al finalizar el paso anterior, **inicializa tu checkout usando el ID de la preferencia previamente creada con el identificador del elemento donde se debe mostrar el botón**, si estás usando la integración `Javascript/HTML`, o instanciando el componente, en el caso de la biblioteca `React`, como se muestra en los ejemplos a continuación.
 
+----[mlm]----
 [[[
 ```Javascript
 mp.bricks().create("wallet", "wallet_container", {
@@ -80,6 +81,23 @@ customization: {
 <Wallet initialization={{ preferenceId: '<PREFERENCE_ID>' }} customization={{ texts:{ valueProp: 'smart_option'}}} />
 ```
 ]]]
+
+------------
+----[mla, mlb, mpe, mlu, mlc, mco]----
+[[[
+```Javascript
+mp.bricks().create("wallet", "wallet_container", {
+   initialization: {
+       preferenceId: "<PREFERENCE_ID>",
+   },
+});
+```
+```react-jsx
+<Wallet initialization={{ preferenceId: '<PREFERENCE_ID>' }} />
+```
+]]]
+
+------------
 
 A continuación, encontrarás el botón de pago que se muestra en tu página.
 
