@@ -8,13 +8,23 @@ const settings = {
  ...,
  initialization: {
    preferenceId: '<PREFERENCE_ID>',
- }
+ },
+customization: {
+ texts: {
+  valueProp: 'smart_option',
+ },
 };
 ```
 ```react-jsx
 const initialization = {
- preferenceId: '<PREFERENCE_ID>',
-};
+  preferenceId: '<PREFERENCE_ID>',
+}
+
+const customization = {
+texts: {
+  valueProp: 'smart_option',
+ },
+}
 ```
 ]]]
 

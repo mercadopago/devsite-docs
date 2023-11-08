@@ -58,7 +58,13 @@ For JavaScript/HTML integrations, via CDN, you will still need to create an iden
 >
 > The value displayed in the ID property below is an example only and can be changed, but it must always match the ID indicated in the rendering step.
 
-2. At the end of the previous step, **initialize your checkout using the ID of the previously created preference with the identifier of the element where the button should be displayed**, if you are using the `Javascript/HTML` integration, or by instantiating the component, in the case from the `React` library, as shown in the examples below.
+> CLIENT_SIDE
+>
+> h2
+>
+> Start the checkout from the preference
+
+At the end of the previous step, **initialize your checkout using the ID of the previously created preference with the identifier of the element where the button should be displayed**, if you are using the `Javascript/HTML` integration, or by instantiating the component, in the case from the `React` library, as shown in the examples below.
 
 [[[
 ```Javascript
@@ -66,10 +72,14 @@ mp.bricks().create("wallet", "wallet_container", {
    initialization: {
        preferenceId: "<PREFERENCE_ID>",
    },
+customization: {
+ texts: {
+  valueProp: 'smart_option',
+ },
 });
 ```
 ```react-jsx
-<Wallet initialization={{ preferenceId: '<PREFERENCE_ID>' }} />
+<Wallet initialization={{ preferenceId: '<PREFERENCE_ID>' }} customization={{ texts:{ valueProp: 'smart_option'}}} />
 ```
 ]]]
 

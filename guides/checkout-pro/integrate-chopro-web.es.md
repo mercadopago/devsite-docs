@@ -19,7 +19,6 @@ La instalación se realiza, básicamente, en **dos pasos**:
 >
 > Agregar el SDK de Mercado Pago al proyecto
 
-
 Para incluir el SDK de Mercado Pago.js, agrega el siguiente código al HTML del proyecto o instala la biblioteca para ReactJs.
 
 [[[
@@ -71,10 +70,14 @@ mp.bricks().create("wallet", "wallet_container", {
    initialization: {
        preferenceId: "<PREFERENCE_ID>",
    },
+customization: {
+ texts: {
+  valueProp: 'smart_option',
+ },
 });
 ```
 ```react-jsx
-<Wallet initialization={{ preferenceId: '<PREFERENCE_ID>' }} />
+<Wallet initialization={{ preferenceId: '<PREFERENCE_ID>' }} customization={{ texts:{ valueProp: 'smart_option'}}} />
 ```
 ]]]
 
@@ -107,4 +110,3 @@ Al crear un pago es posible recibir 3 estados diferentes: `Pendiente`, `Rechazad
 ## Ejemplo de implementación
 
 Consulta el [ejemplo de integración completa](http://github.com/mercadopago/checkout-payment-sample) en GitHub para **PHP** o **NodeJS** para descargar un proyecto básico para una implementación rápida de Checkout Pro en tu sitio.
-

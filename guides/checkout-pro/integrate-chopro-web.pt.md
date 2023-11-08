@@ -4,7 +4,6 @@
 >
 > Adicionar checkout
 
-
 Primeiro, certifique-se de ter **criado a [preferência no seu backend](/developers/pt/docs/checkout-pro/integrate-preferences)**.
 
 Em seguida, instale o SDK de frontend do Mercado Pago no seu projeto para adicionar o botão de pagamento.
@@ -56,7 +55,6 @@ Para integrações JavaScript/HTML, via CDN, você vai precisar ainda criar um c
 > Atenção
 >
 > O valor exibido na propriedade ID a seguir é apenas um exemplo e pode ser alterado, mas deve sempre corresponder ao ID indicado na etapa de renderização.
- 
 
 > CLIENT_SIDE
 >
@@ -72,10 +70,14 @@ mp.bricks().create("wallet", "wallet_container", {
    initialization: {
        preferenceId: "<PREFERENCE_ID>",
    },
+customization: {
+ texts: {
+  valueProp: 'smart_option',
+ },
 });
 ```
 ```react-jsx
-<Wallet initialization={{ preferenceId: '<PREFERENCE_ID>' }} />
+<Wallet initialization={{ preferenceId: '<PREFERENCE_ID>' }} customization={{ texts:{ valueProp: 'smart_option'}}} />
 ```
 ]]]
 
@@ -94,7 +96,6 @@ No exemplo acima, um botão de pagamento será renderizado e ficará responsáve
 No final do processo de pagamento, é possível redirecionar o comprador para outro ambiente do site através do atributo `back_urls` que é configurado ao criar a preferência. As `back_urls` serão responsáveis por guiar o fluxo de retorno ao seu site quando o pagamento for concluído. É possível definir três URLs de retorno diferentes que correspondem a cenários de pagamento pendente, sucesso ou erro.
 
 Para obter mais informações, consulte a seção [URL de retorno](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/redirection).
-
 
 > WARNING
 >
