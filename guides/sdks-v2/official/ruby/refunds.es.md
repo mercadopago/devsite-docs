@@ -1,6 +1,6 @@
 # Crear reembolso total
 
-Puede crear un reembolso total con el SDK a continuación. Para detalles sobre los parámetros de solicitud, consulta la API [Crear reembolsos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/chargebacks/_payments_id_refunds/post). 
+Puede crear un reembolso total con el SDK a continuación. Para detalles sobre los parámetros de solicitud, consulta la API [Crear reembolsos](/developers/es/reference/chargebacks/_payments_id_refunds/post). 
 
 [[[
 ```ruby

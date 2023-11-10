@@ -5,8 +5,8 @@ Puede crear un reembolso total con el SDK a continuación. Para detalles sobre l
 [[[
 ```php
 <?php
-  $refund_client = new PaymentRefundClient();
-  $refund_client->refund('123456789', 5);
+ $refund_client = new PaymentRefundClient();
+ $refund_client->refundTotal(123456789);
 ?>
 ```
 ]]]
@@ -18,14 +18,8 @@ Puede crear un reembolso parcial con el SDK a continuación. Para detalles sobre
 [[[
 ```php
 <?php
- 
-MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
- 
-$refund = new MercadoPago\Refund();
-$refund->amount = 0.0;
-$refund->payment_id = 0;
-$refund->save();
- 
+ $refund_client = new PaymentRefundClient();
+ $refund_client->refund(123456789, 100);
 ?>
 ```
 ]]]

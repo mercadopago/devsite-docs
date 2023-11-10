@@ -11,6 +11,8 @@ Para configurar pagos con **Efecty**, envía un POST con los siguientes parámet
 > Importante
 >
 > Recuerda que Brick ya resuelve la mayoría de parámetros para enviar el POST. La devolución de información viene en la devolución de llamada `onSubmit`, dentro del objeto `formData`, donde puede encontrar parámetros como: `payment_method_id`, `payer.email` y `amount`.
+> <br><br>
+> Al ejecutar las APIs mencionadas en esta documentación, es posible que encuentre el atributo `X-Idempotency-Key`. Completarlo es crucial para asegurar la ejecución y reejecución de las solicitudes sin situaciones no deseadas, como pagos duplicados, por ejemplo. 
 
 | Tipo de pago  | Parámetro  | Valor  |
 | --- | --- | --- |
@@ -19,50 +21,69 @@ Para configurar pagos con **Efecty**, envía un POST con los siguientes parámet
 [[[
 ```php
 <?php
- 
- require_once 'vendor/autoload.php';
- 
- MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
- 
- $payment = new MercadoPago\Payment();
- $payment->transaction_amount = 100;
- $payment->description = "Titulo del producto";
- $payment->payment_method_id = "efecty";
- $payment->payer = array(
-     "email" => "test@test.com",
- );
- $payment->metadata = array(
-     "payment_mode" => "online",
- );
- $payment->save();
- 
+  use MercadoPago\Client\Payment\PaymentClient;
+
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "first_name" => $_POST['payerFirstName'],
+      "last_name" => $_POST['payerLastName'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
-var payment_data = {
-  transaction_amount: 100,
-  description: 'Titulo del producto',
-  payment_method_id: 'efecty',
-  payer: {
-    email: 'test@test.com',
-  },
-  metadata: {
-    payment_mode: 'online',
-  }
-};
- 
-mercadopago.payment.create(payment_data).then(function (data) {
-}).catch(function (error) {
-});
+import { Payment, MercadoPagoConfig } from 'mercadopago';
+
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
+ 
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
+
 PaymentClient client = new PaymentClient();
 PaymentCreateRequest paymentCreateRequest =
    PaymentCreateRequest.builder()
        .transactionAmount(new BigDecimal("100"))
-       .description("Titulo del producto")
+       .description("Product title")
        .paymentMethodId("efecty")
        .payer(
           PaymentPayerRequest.builder()
@@ -72,15 +93,22 @@ PaymentCreateRequest paymentCreateRequest =
           Map.of("payment_mode", "online")
        )
       .build();
-client.create(paymentCreateRequest);
+client.create(paymentCreateRequest, requestOptions);
 ```
 ```ruby
 require 'mercadopago'
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
+
 payment_request = {
   transaction_amount: 100,
-  description: 'Titulo del producto',
+  description: 'Product title',
   payment_method_id: 'efecty',
   payer: {
     email: 'test@test.com',
@@ -89,7 +117,7 @@ payment_request = {
     payment_mode: 'online',
   }
 }
-payment_response = sdk.payment.create(payment_request)
+payment_response = sdk.payment.create(payment_request, custom_request_options)
 payment = payment_response[:response]
 ```
 ```csharp
@@ -99,10 +127,14 @@ using MercadoPago.Client.Payment;
 using MercadoPago.Resource.Payment;
  
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
+
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 100,
-    Description = "Titulo del producto",
+    Description = "Product title",
     PaymentMethodId = 'efecty',
     Payer = new PaymentPayerRequest
     {
@@ -115,15 +147,20 @@ var request = new PaymentCreateRequest
 };
  
 var client = new PaymentClient();
-Payment payment = await client.CreateAsync(request);
+Payment payment = await client.CreateAsync(request, requestOptions);
 ```
 ```python
 import mercadopago
 sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
- 
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
 payment_data = {
     "transaction_amount": 100,
-    "description": "Titulo del producto",
+    "description": "Product title",
     "payment_method_id": "efecty",
     "payer": {
         "email": "test@test.com",
@@ -132,7 +169,7 @@ payment_data = {
         "payment_mode": "online",
     }
 }
-payment_response = sdk.payment().create(payment_data)
+payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 ```
 ```curl
@@ -140,10 +177,11 @@ curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
-      "description": "Titulo del producto",
+      "description": "Product title",
       "payment_method_id": "efecty",
       "payer": {
         "email": "PAYER_EMAIL_HERE",

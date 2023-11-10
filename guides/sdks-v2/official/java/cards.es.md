@@ -1,6 +1,6 @@
 # Guardar tarjeta
 
-Es posible guardar de forma segura la referencia a una tarjeta utilizada por el cliente en el pago en nuestros servidores a través del SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, consulte la API [Guardar tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/cards/_customers_customer_id_cards/post).
+Es posible guardar de forma segura la referencia a una tarjeta utilizada por el cliente en el pago en nuestros servidores a través del SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, consulte la API [Guardar tarjeta](/developers/es/reference/cards/_customers_customer_id_cards/post).
 
 [[[
 ```java

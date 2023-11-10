@@ -9,7 +9,6 @@ Vigencia es el período de validez definido para una determinada preferencia de 
 4. En `expiration_date_to`, ingresa la fecha y hora de vencimiento. El valor debe seguir el formato ISO 8601: aaaa-MM-dd'T'HH:mm:sszas
 5. Ejecuta el request y asegúrese de que la fecha coincida con el ejemplo que se muestra a continuación.
 
-
 ```json
 "expires": true,
 "expiration_date_from": "2017-02-01T12:00:00.000-04:00",

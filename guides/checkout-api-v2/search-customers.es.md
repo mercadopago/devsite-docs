@@ -3,7 +3,6 @@
 Si necesitas datos específicos de un cliente, como DNI, dirección o fecha de registro, puedes obtenerlos a través de nuestra API de clientes. Para eso, envía un GET con el email del cliente al endpoint [/v1/customers/search](/developers/es/reference/customers/_customers_search/get) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs que aparecen a continuación.
 
 [[[
-
 ```php
 <?php
   MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
@@ -16,16 +15,12 @@ Si necesitas datos específicos de un cliente, como DNI, dirección o fecha de r
 
 ```
 ```node
-const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const customerClient = new Customer(client);
+import { Customer, MercadoPagoConfig } from '@src/index';
 
-customerClient.search({ 
-  limit: 1, 
-  offset: 0, 
-  filters: {
-    email: 'my.user@example.com'
-  } 
-}).then((result) => console.log(result));
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+const customer = new Customer(client);
+
+customer.search({ options: { email: '<EMAIL>' } }).then(console.log).catch(console.log);
 ```
 ```java
 
