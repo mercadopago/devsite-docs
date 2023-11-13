@@ -68,13 +68,14 @@ Ao finalizar a etapa anterior, **inicialize seu checkout utilizando o ID da pref
 [[[
 ```Javascript
 mp.bricks().create("wallet", "wallet_container", {
-   initialization: {
-       preferenceId: "<PREFERENCE_ID>",
-   },
+  initialization: {
+      preferenceId: "<PREFERENCE_ID>",
+  },
 customization: {
- texts: {
-  valueProp: 'smart_option',
+texts: {
+ valueProp: 'smart_option',
  },
+},
 });
 ```
 ```react-jsx
