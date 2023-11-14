@@ -30,8 +30,8 @@
             "in": "query",
             "description": {
               "en": "Store identifier. (Optional)",
-              "pt": "Identificador da loja. (opcional)",
-              "es": "Identificador de la tienda. (opcional)"
+              "pt": "Identificador da loja. (Opcional)",
+              "es": "Identificador de la tienda. (Opcional)"
             },
             "schema": {
               "type": "string",
@@ -42,8 +42,8 @@
             "name": "pos_id",
             "in": "query",
             "description": {
-              "en": "Devices Pos Id filter (Optional)",
-              "pt": "Identificador do PDV. (Opcional)",
+              "en": "POS identifier. (Optional)",
+              "pt": "Identificador dp PDV. (Opcional)",
               "es": "Identificador del PDV. (Opcional)"
             },
             "schema": {
@@ -92,13 +92,17 @@
                   "properties": {
                     "devices": {
                       "type": "array",
-                      "description": null,
+                      "description": {
+                        "en": "List of devices",
+                        "pt": "Lista de dispositivos",
+                        "es": "Listado de dispositivos"
+                      },
                       "items": {
                         "type": "object",
                         "properties": {
                           "id": {
                             "type": "string",
-                            "example": "INGENICO_MOVE2500__ING-23976989",
+                            "example": "PAX_A910__SMARTPOS1234567890",
                             "description": {
                               "en": "Identifier of the device that have a payment intent queued.",
                               "pt": "Identificador do dispositivo que tem intenção de pagamento em fila.",
@@ -107,30 +111,30 @@
                           },
                           "pos_id": {
                             "type": "integer",
+                            "example": "79219045",
                             "description": {
                               "en": "POS identifier.",
                               "pt": "Identificador do PDV.",
                               "es": "Identificador del PDV."
-                            },
-                            "example": 47792476
+                            }
                           },
                           "store_id": {
                             "type": "string",
+                            "example": "54671657",
                             "description": {
                               "en": "Store identifier.",
                               "pt": "Identificador da loja.",
                               "es": "Identificador de la tienda."
-                            },
-                            "example": 47792478
+                            }
                           },
                           "external_pos_id": {
                             "type": "string",
+                            "example": "1234",
                             "description": {
                               "en": "Unique identifier of the store defined by integrator system.",
                               "pt": "Identificador único da loja definido pelo sistema integrador.",
                               "es": "Identificador único de la Sucursal definido por el integrador."
-                            },
-                            "example": "SUC0101POS"
+                            }
                           },
                           "operating_mode": {
                             "type": "string",
@@ -163,17 +167,29 @@
                         "total": {
                           "type": "integer",
                           "example": 1,
-                          "description": null
+                          "description": {
+                            "en": "total records",
+                            "pt": "total de registros",
+                            "es": "registros totales"
+                          }
                         },
                         "offset": {
                           "type": "integer",
                           "example": 0,
-                          "description": null
+                          "description": {
+                            "en": "pagination offset",
+                            "pt": "offset de paginação",
+                            "es": "offset de paginación"
+                          }
                         },
                         "limit": {
                           "type": "integer",
                           "example": 50,
-                          "description": null
+                          "description": {
+                            "en": "pagination limit",
+                            "pt": "limite de paginação",
+                            "es": "límite de paginación"
+                          }
                         }
                       }
                     }
@@ -321,9 +337,9 @@
             "name": "x-test-scope",
             "in": "header",
             "description": {
-              "es": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
-              "pt": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
-              "en": "This is a temporary header, it should be used just for development with the value \"sandbox\""
+              "en": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+              "pt": "Este é um header temporário, deve ser usado apenas para desenvolvimento com o valor \"sandbox\"",
+              "es": "Este es un header temporal, debe usarse solo para desarrollo con el valor \"sandbox\""
             },
             "schema": {
               "type": "string",
@@ -394,16 +410,6 @@
                           "pt": "Um valor booleano que determina se você deseja imprimir o ticket no dispositivo",
                           "es": "Un valor booleano que determina si desea imprimir el ticket en el dispositivo"
                         }
-                      },
-                      "ticket_number": {
-                        "type": "string",
-                        "required": true,
-                        "example": "S0392JED",
-                        "description": {
-                          "en": "An alphanumeric value to identify the invoice or ticket number. It will be printed on the device ticket",
-                          "pt": "Um valor alfanumérico para identificar o número da fatura ou do bilhete. Ele será impresso no bilhete do dispositivo.",
-                          "es": "Un valor alfanumérico para identificar el número de factura o ticket. Se imprimirá en el ticket del dispositivo."
-                        }
                       }
                     }
                   }
@@ -435,11 +441,11 @@
                     },
                     "device_id": {
                       "type": "string",
-                      "example": "INGENICO_MOVE2500__ING-23976989",
+                      "example": "PAX_A910__SMARTPOS1234567890",
                       "description": {
-                        "en": "identifier of the device that have a payment intent queued",
-                        "pt": "identificador do dispositivo que tem intenção de pagamento em fila",
-                        "es": "identificador del dispositivo que tiene una intención de pago en cola"
+                        "en": "Identifier of the device that have a payment intent queued.",
+                        "pt": "Identificador do dispositivo que tem intenção de pagamento em fila.",
+                        "es": "Identificador del dispositivo que tiene una intención de pago en cola."
                       }
                     },
                     "amount": {
@@ -475,15 +481,6 @@
                             "en": "A boolean value that determines if you want to print the ticket on the device",
                             "pt": "Um valor booleano que determina se você deseja imprimir o ticket no dispositivo",
                             "es": "Un valor booleano que determina si desea imprimir el ticket en el dispositivo"
-                          }
-                        },
-                        "ticket_number": {
-                          "type": "string",
-                          "example": "S0392JED",
-                          "description": {
-                            "en": "An alphanumeric value to identify the invoice or ticket number. It will be printed on the device ticket",
-                            "pt": "Um valor alfanumérico para identificar o número da fatura ou do bilhete. Ele será impresso no bilhete do dispositivo.",
-                            "es": "Un valor alfanumérico para identificar el número de factura o ticket. Se imprimirá en el ticket del dispositivo."
                           }
                         }
                       }
@@ -661,9 +658,9 @@
             "name": "x-test-scope",
             "in": "header",
             "description": {
-              "es": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
-              "pt": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
-              "en": "This is a temporary header, it should be used just for development with the value \"sandbox\""
+              "en": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+              "pt": "Este é um header temporário, deve ser usado apenas para desenvolvimento com o valor \"sandbox\"",
+              "es": "Este es un header temporal, debe usarse solo para desarrollo con el valor \"sandbox\""
             },
             "schema": {
               "type": "string",
@@ -851,17 +848,17 @@
         ],
         "description": {
           "en": "This endpoint allows to get information of payment intent. This endpoint will provide the payment intent’s information, its final status and the payment-id, which can be used to get the final status of the transaction in the Payment-API. The Webhook notifications are the main communication point of the payment intent information, then this endpoint should be used for testing and eventualities, and not for polling, because it has restrictions like consume by time, allows to get information one request per second",
-          "pt": "Este endpoint permite obter informações sobre a intenção de pagamento. Este endpoint fornecerá as informações da intenção de pagamento, seu status final e o ID do pagamento, que pode ser usado para obter o status final da transação na API de pagamento. As notificações do webhook são o principal ponto de comunicação das informações de intenção de pagamento, portanto este endpoint deve ser utilizado para testes e contingências, e não para consultas recorrentes, pois possui restrições como consumo por tempo, permite uma requisição por segundo para obter informações",
-          "es": "Este endpoint permite obtener información sobre la intención de pago. Este endpoint proporcionará la información de la intención de pago, su estado final y la identificación del pago, que se puede usar para obtener el estado final de la transacción en la API de pago. Las notificaciones de Webhook son el principal punto de comunicación de la información de intención de pago, entonces este endpoint debe usarse para pruebas y eventualidades, y no para consultas recurrentes, ya que tiene restricciones como consumo por tiempo, permite obtener información una solicitud por segundo"
+          "pt": "Este endpoint permite obter informações sobre a intenção de pagamento. Este endpoint fornecerá as informações da intenção de pagamento, seu status final e o ID do pagamento, que pode ser usado para obter o status final da transação na API de pagamento. As notificações do webhook são o principal ponto de comunicação das informações de intenção de pagamento, portanto este endpoint deve ser utilizado para testes e contingências, e não para pesquisas, pois possui restrições como consumo por tempo, permite uma requisição por segundo para obter informações",
+          "es": "Este endpoint permite obtener información sobre la intención de pago. Este endpoint proporcionará la información de la intención de pago, su estado final y la identificación del pago, que se puede usar para obtener el estado final de la transacción en la API de pago. Las notificaciones de Webhook son el principal punto de comunicación de la información de intención de pago, entonces este endpoint debe usarse para pruebas y eventualidades, y no para encuestas, ya que tiene restricciones como consumo por tiempo, permite obtener información una solicitud por segundo"
         },
         "parameters": [
           {
             "name": "x-test-scope",
             "in": "header",
             "description": {
-              "es": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
-              "pt": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
-              "en": "This is a temporary header, it should be used just for development with the value \"sandbox\""
+              "en": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+              "pt": "Este é um header temporário, deve ser usado apenas para desenvolvimento com o valor \"sandbox\"",
+              "es": "Este es un header temporal, debe usarse solo para desarrollo con el valor \"sandbox\""
             },
             "required": false,
             "schema": {
@@ -873,9 +870,9 @@
             "name": "paymentIntentId",
             "in": "path",
             "description": {
-              "es": "Payment Intent Id",
-              "pt": "Payment Intent Id",
-              "en": "Payment Intent Id"
+              "en": "Payment Intent Id",
+              "pt": "Id da intenção de pagamento",
+              "es": "Id de la intención de pago"
             },
             "required": true,
             "schema": {
@@ -898,30 +895,51 @@
                   "properties": {
                     "id": {
                       "type": "string",
-                      "description": null,
-                      "example": "7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1"
+                      "example": "7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1",
+                      "description": {
+                        "en": "Id of the payment intent",
+                        "pt": "Id intenção de pagamento",
+                        "es": "Id de la intención de pago"
+                      }
                     },
                     "state": {
                       "type": "string",
-                      "description": null,
+                      "description": {
+                        "en": "State of the payment intent",
+                        "pt": "Status da intenção de pagamento",
+                        "es": "Estado da intenção de pagamento"
+                      },
                       "example": "FINISHED"
                     },
                     "amount": {
                       "type": "integer",
                       "format": "int64",
-                      "description": null,
+                      "description": {
+                        "es": "Total amount of payment intent",
+                        "pt": "Total amount of payment intent",
+                        "en": "Total amount of payment intent"
+                      },
                       "example": 1500
                     },
                     "device_id": {
                       "type": "string",
-                      "description": null,
-                      "example": "INGENICO_MOVE2500__ING-23976989"
+                      "description": {
+                        "es": "DeviceID which the payment intent was enqueued",
+                        "pt": "DeviceID which the payment intent was enqueued",
+                        "en": "DeviceID which the payment intent was enqueued"
+                      },
+                      "example": "PAX_A910__SMARTPOS1234567890"
                     },
                     "payment": {
                       "type": "object",
                       "properties": {
                         "id": {
                           "type": "int",
+                          "description": {
+                            "es": "PaymentId in case the payment flow is completed successfully",
+                            "pt": "PaymentId in case the payment flow is completed successfully",
+                            "en": "PaymentId in case the payment flow is completed successfully"
+                          },
                           "example": 16499678033
                         }
                       }
@@ -931,7 +949,11 @@
                       "properties": {
                         "external_reference": {
                           "type": "string",
-                          "description": null,
+                          "description": {
+                            "es": "Field for the exclusive use of the integrator to include references specific to your system.",
+                            "pt": "Field for the exclusive use of the integrator to include references specific to your system.",
+                            "en": "Field for the exclusive use of the integrator to include references specific to your system."
+                          },
                           "example": {
                             "en": "some-reference-from-your-application",
                             "pt": "alguma-referência-sobre-seu-aplicativo",
@@ -940,12 +962,12 @@
                         },
                         "print_on_terminal": {
                           "type": "boolean",
-                          "description": null,
+                          "description": {
+                            "es": "Field used to notify the device if it should print the ticket",
+                            "pt": "Field used to notify the device if it should print the ticket",
+                            "en": "Field used to notify the device if it should print the ticket"
+                          },
                           "example": true
-                        },
-                        "ticket_number": {
-                          "type": "string",
-                          "example": "S0392JED"
                         }
                       }
                     }
@@ -1075,426 +1097,6 @@
           "en": "Search payment intent",
           "pt": "Buscar em intenção de pagamento",
           "es": "Buscar en intención de pago"
-        }
-      }
-    },
-    "/point/integration-api/payment-intents/events": {
-      "get": {
-        "tags": [
-          "mp-point"
-        ],
-        "description": {
-          "en": "This endpoint allows to get a list of payment intents with their final states between a date range. This endpoint has a restriction that the number of days between dates must not exceed 30",
-          "pt": "Este endpoint permite obter uma lista de tentativas de pagamento com seus status finais entre um intervalo de datas. Este endpoint tem a restrição de que o número de dias entre as datas não deve exceder 30",
-          "es": "Este endpoint permite obtener una lista de intentos de pago con sus estados finales entre un rango de fechas. Este endpoint tiene la restricción de que el número de días entre fechas no debe exceder los 30"
-        },
-        "parameters": [
-          {
-            "name": "x-test-scope",
-            "in": "header",
-            "description": {
-              "es": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
-              "pt": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
-              "en": "This is a temporary header, it should be used just for development with the value \"sandbox\""
-            },
-            "schema": {
-              "type": "string",
-              "example": "sandbox"
-            }
-          },
-          {
-            "name": "startDate",
-            "in": "query",
-            "description": {
-              "en": "Initial date (YYYY-MM-DD)",
-              "pt": "Data de início (AAAA-MM-DD)",
-              "es": "Fecha inicial (AAAA-MM-DD)"
-            },
-            "required": true,
-            "example": "1948-01-16",
-            "schema": {
-              "type": "string",
-              "example": "1948-01-16"
-            }
-          },
-          {
-            "name": "endDate",
-            "in": "query",
-            "description": {
-              "en": "End date (YYYY-MM-DD)",
-              "pt": "Data final (AAAA-MM-DD)",
-              "es": "Fecha final (AAAA-MM-DD)"
-            },
-            "required": true,
-            "example": "2022-01-25",
-            "schema": {
-              "type": "string",
-              "example": "2022-01-25"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": {
-              "en": "Success - List of payment intents with their final states between a date range (startDate, endDate)",
-              "pt": "Sucesso - lista de intenções de pagamento com seus status finais entre um intervalo de datas (startDate, endDate)",
-              "es": "Éxito - lista de intenciones de pago con sus estados finales entre un rango de fechas (startDate, endDate)"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "events": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "payment_intent_id": {
-                            "type": "string",
-                            "example": "51374ba8-50e4-4633-a000-3e42ccd245f9"
-                          },
-                          "status": {
-                            "type": "string",
-                            "example": "FINISHED"
-                          },
-                          "created_on": {
-                            "type": "string",
-                            "format": "date-time",
-                            "example": "2021-08-30T22:38:05Z"
-                          }
-                        }
-                      },
-                      "example": [
-                        {
-                          "payment_intent_id": "51374ba8-50e4-4633-a000-3e42ccd245f9",
-                          "status": "FINISHED",
-                          "created_on": "2021-08-30T22:37:57Z"
-                        },
-                        {
-                          "payment_intent_id": "41374ba8-50e4-4633-a000-3e42ccd245f8",
-                          "status": "PROCESSING",
-                          "created_on": "2021-08-30T22:38:05Z"
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "400": {
-            "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request - startDate and/or endDate are misssing or incorrect",
-                            "es": "Bad-Request - startDate and/or endDate are misssing or incorrect",
-                            "pt": "Bad-Request - startDate and/or endDate are misssing or incorrect"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "401": {
-            "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "401",
-                          "description": {
-                            "en": "Token is invalid",
-                            "es": "Token is invalid",
-                            "pt": "Token is invalid"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "403",
-                          "description": {
-                            "en": "Forbidden - Integrator isn't registered",
-                            "es": "Forbidden - Integrator isn't registered",
-                            "pt": "Forbidden - Integrator isn't registered"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "500": {
-            "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "500",
-                          "description": {
-                            "en": "Internal server error",
-                            "es": "Internal server error",
-                            "pt": "Internal server error"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "title": {
-          "en": "Get payment intent list",
-          "pt": "Obter lista de intenções de pagamento",
-          "es": "Obtener lista de intenciones de pago"
-        }
-      }
-    },
-    "/point/integration-api/payment-intents/{paymentintentid}/events": {
-      "get": {
-        "tags": [
-          "mp-point"
-        ],
-        "description": {
-          "en": "This endpoint allows to find the last state of a payment intent",
-          "pt": "Este endpoint permite que você encontre o último status de uma intenção de pagamento",
-          "es": "Este endpoint permite encontrar el último estado de una intención de pago"
-        },
-        "parameters": [
-          {
-            "name": "x-test-scope",
-            "in": "header",
-            "description": {
-              "es": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
-              "pt": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
-              "en": "This is a temporary header, it should be used just for development with the value \"sandbox\""
-            },
-            "schema": {
-              "type": "string",
-              "example": "sandbox"
-            }
-          },
-          {
-            "name": "paymentIntentId",
-            "in": "path",
-            "description": {
-              "es": "Payment intent Id",
-              "pt": "Payment intent Id",
-              "en": "Payment intent Id"
-            },
-            "required": true,
-            "schema": {
-              "type": "string",
-              "example": "{paymentIntentId}"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": {
-              "en": "Success - Last payment intent state",
-              "pt": "Sucesso - status da última intenção de pagamento",
-              "es": "Éxito - estado de la última intención de pago"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "status": {
-                      "type": "string",
-                      "description": null,
-                      "example": "FINISHED"
-                    },
-                    "created_on": {
-                      "type": "string",
-                      "description": null,
-                      "format": "date",
-                      "example": "2021-09-03T20:59:10Z"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "401": {
-            "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "401",
-                          "description": {
-                            "en": "Unauthorized - Token is invalid",
-                            "es": "Unauthorized - Token is invalid",
-                            "pt": "Unauthorized - Token is invalid"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "403",
-                          "description": {
-                            "en": "Forbidden - Integrator isn't registered",
-                            "es": "Forbidden - Integrator isn't registered",
-                            "pt": "Forbidden - Integrator isn't registered"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "404": {
-            "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "404",
-                          "description": {
-                            "en": "Not Found - Payment Intent doesn't exist",
-                            "es": "Not Found - Payment Intent doesn't exist",
-                            "pt": "Not Found - Payment Intent doesn't exist"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "500": {
-            "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "500",
-                          "description": {
-                            "en": "Internal server error",
-                            "es": "Internal server error",
-                            "pt": "Internal server error"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "title": {
-          "en": "Get last payment intent state",
-          "pt": "Obter último status de uma intenção de pagamento",
-          "es": "Obtener último estado de una intención de pago"
         }
       }
     },
@@ -1693,290 +1295,6 @@
           "en": "Change operating mode",
           "pt": "Alterar modo de operação",
           "es": "Cambiar el modo de operación"
-        }
-      }
-    },
-    "/point/integration-api/integrator": {
-      "patch": {
-        "tags": [
-          "mp-point"
-        ],
-        "description": {
-          "en": "This endpoint allows you to update the integrator notification settings. It is important to keep in mind that this request has no response object",
-          "pt": "Este endpoint permite atualizar as configurações de notificação do integrador. É importante ter em mente que este request não tem objeto de resposta",
-          "es": "Este endpoint te permite actualizar las configuraciones de notificaciones del integrador. Es importante tener en cuenta que este endpoint no tiene objeto de respuestas"
-        },
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "event_channel_devices": {
-                    "type": "array",
-                    "description": {
-                      "en": "Allowed notification channels to receive device event notifications. It is important to keep in mind that you must enter a valid channel, for example, \"email\".",
-                      "pt": "Canais de notificação permitidos para receber notificações de eventos do dispositivo. É importante ter em mente que neste campo deve ser inserido um canal válido, por exemplo, \"email\".",
-                      "es": "Canales de notificación permitidos para recibir notificaciones de eventos del dispositivo. Es importante tener en cuenta que en este campo se debe ingresar un canal válido, por ejemplo, \"email\"."
-                    },
-                    "items": {
-                      "type": "string",
-                      "example": "email",
-                      "enum": [
-                        {
-                          "title": "email",
-                          "description": {
-                            "en": "channel to receive event notifications",
-                            "es": "channel to receive event notifications",
-                            "pt": "channel to receive event notifications"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "204": {
-            "description": {
-              "en": "No Content - Configuration updated successfully",
-              "pt": "No Content - Configuração atualizada com sucesso",
-              "es": "No Content - Configuración actualizada con exitosamente"
-            }
-          },
-          "400": {
-            "description": {
-              "en": "Bad Request - Notification channel is not allowed",
-              "pt": "Bad Request - Canal de notificação não permitido",
-              "es": "Bad Request - Canal de notificación no permitido"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "401": {
-            "description": {
-              "en": "Unauthorized - Invalid token",
-              "pt": "Unauthorized - Token inválido",
-              "es": "Unauthorized - Token no válido"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "401",
-                          "description": {
-                            "en": "Unauthorized",
-                            "es": "Unauthorized",
-                            "pt": "Unauthorized"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "500": {
-            "description": {
-              "en": "Internal Server Error - Something went wrong",
-              "pt": "Internal Server Error - Something went wrong",
-              "es": "Internal Server Error - Something went wrong"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "500",
-                          "description": {
-                            "en": "Internal-server-error",
-                            "es": "Internal-server-error",
-                            "pt": "Internal-server-error"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "title": {
-          "en": "Update the integrator configuration",
-          "pt": "Atualizar as configurações do integrador",
-          "es": "Actualizar configuración del integrador"
-        }
-      },
-      "get": {
-        "tags": [
-          "mp-point"
-        ],
-        "description": {
-          "en": "This endpoint allows you to get the integrator information and the integrator notification settings",
-          "pt": "Este endpoint permite obter informações e configuração do integrador",
-          "es": "Este endpoint the permite obtener la información y configuración del integrador"
-        },
-        "responses": {
-          "200": {
-            "description": {
-              "en": "Ok - Information and configuration of the integrator obtained",
-              "pt": "Ok - Informações e configuração do integrador obtidas",
-              "es": "Ok - Información y configuración del integrador obtenida"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "integer",
-                      "example": 1928030819,
-                      "description": {
-                        "en": "Integrator caller id",
-                        "pt": "Caller id do integrador",
-                        "es": "Caller id del integrador"
-                      }
-                    },
-                    "created_at": {
-                      "type": "string",
-                      "example": "0001-01-01T00:00:00Z",
-                      "description": {
-                        "en": "Integration registration date",
-                        "pt": "Data de registro da integração",
-                        "es": "Fecha de registro de la integración"
-                      }
-                    },
-                    "updated_at": {
-                      "type": "string",
-                      "example": "0001-02-01T00:00:00Z",
-                      "description": {
-                        "en": "Integrator update date",
-                        "pt": "Data de atualização do integrador",
-                        "es": "Fecha de actualización del integrador"
-                      }
-                    },
-                    "notification_url_enabled": {
-                      "type": "boolean",
-                      "example": true,
-                      "description": {
-                        "en": "The integration notification url enabled",
-                        "pt": "URL de notificação de integração ativado",
-                        "es": "La URL de notificación de integración habilitada"
-                      }
-                    },
-                    "event_channel_devices": {
-                      "type": "array",
-                      "items": {
-                        "type": "string",
-                        "description": {
-                          "en": "Allowed notification channels to receive device event notifications. It is important to keep in mind that you must enter a valid channel, for example, \"email\".",
-                          "pt": "Canais de notificação permitidos para receber notificações de eventos do dispositivo. É importante ter em mente que neste campo deve ser inserido um canal válido, por exemplo, \"email\".",
-                          "es": "Canales de notificación permitidos para recibir notificaciones de eventos del dispositivo. Es importante tener en cuenta que en este campo se debe ingresar un canal válido, por ejemplo, \"email\"."
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "401": {
-            "description": {
-              "en": "Unauthorized - Invalid token",
-              "pt": "Unauthorized - Token inválido",
-              "es": "Unauthorized - Token no válido"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "401",
-                          "description": {
-                            "en": "Unauthorized - Invalid token",
-                            "es": "Unauthorized - Invalid token",
-                            "pt": "Unauthorized - Invalid token"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "500": {
-            "description": {
-              "en": "Internal Server Error - Something went wrong",
-              "pt": "Internal Server Error - Something went wrong",
-              "es": "Internal Server Error - Something went wrong"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "500",
-                          "description": {
-                            "en": "Internal server error - Something went wrong",
-                            "es": "Internal server error - Something went wrong",
-                            "pt": "Internal server error - Something went wrong"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "title": {
-          "en": "Get the integrator information and configuration",
-          "pt": "Obtenha as informações e configuração do integrador",
-          "es": "Obtener la información y configuración del integrador"
         }
       }
     }
