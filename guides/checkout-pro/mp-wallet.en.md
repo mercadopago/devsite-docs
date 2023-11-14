@@ -180,4 +180,4 @@ preference = preference_response["response"]
 >
 > Add checkout
 
-The steps to configure the Mercado Pago Wallet (*client-side*) are the same as those presented [in this section](/developers/en/docs/checkout-pro/integrate-checkout-pro).
+The steps to configure the Mercado Pago Wallet (*client-side*) are the same as those presented [in this section](/developers/en/docs/checkout-pro/integrate-preferences).

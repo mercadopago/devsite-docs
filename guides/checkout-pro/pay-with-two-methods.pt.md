@@ -1,4 +1,4 @@
-## Como aceitar pagamentos com dois meios de pagamento
+# Como aceitar pagamentos com dois meios de pagamento
 
 Aceitar pagamentos com dois meios de pagamento é a funcionalidade que permite aos compradores realizar pagamentos utilizando mais de uma forma de pagamento diretamente no checkout.
 

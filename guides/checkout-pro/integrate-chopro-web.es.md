@@ -27,7 +27,7 @@ Para incluir el SDK de Mercado Pago.js, agrega el siguiente código al HTML del 
 // SDK MercadoPago.js
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
-```bash
+```node
 npm install @mercadopago/sdk-react
 ```
 ]]]

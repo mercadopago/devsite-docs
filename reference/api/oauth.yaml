@@ -162,6 +162,14 @@ paths:
                       eng: Indicates whether the application is in production or test mode.
                       spa: Indica si la aplicación está en modo de producción o de prueba.
                       por: indica se a aplicação está em modo de produção ou de teste.
+                  redirect_uri: 
+                    type: string
+                    example: 'redirect_uri'
+                    description: URL reported in the Redirect URL field of your application. Required only when grant_type=authorization_code.
+                    x-description-i18n:
+                      eng: URL reported in the Redirect URL field of your application. Required only when grant_type=authorization_code.
+                      spa: URL informada en el campo URL de redirección de tu aplicación. Obligatorio solo cuando grant_type=authorization_code.
+                      por: URL informada no campo Redirect URL da sua aplicação. Requerido apenas quando grant_type=authorization_code.
         '400':
           description: Error
           x-description-i18n:

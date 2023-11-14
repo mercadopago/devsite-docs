@@ -33,7 +33,7 @@ yarn add react-native-inappbrowser-reborn
 ```
 ]]]
 
-Luego, ejecuta el siguiente comando para instalar la dependencia.
+Em seguida, execute o seguinte comando para instalar a dependência.
 
 ```
 cd ios && pod install && cd ..
