@@ -292,9 +292,9 @@
                                 "type": "string",
                                 "example": "standard",
                                 "description": {
-                                  "en": "Whether the card number can be validated using a checksum algorithm (usually Luhn)",
+                                  "es": "Whether the card number can be validated using a checksum algorithm (usually Luhn)",
                                   "pt": "Whether the card number can be validated using a checksum algorithm (usually Luhn)",
-                                  "es": "Whether the card number can be validated using a checksum algorithm (usually Luhn)"
+                                  "en": "Whether the card number can be validated using a checksum algorithm (usually Luhn)"
                                 },
                                 "enum": [
                                   {
@@ -365,9 +365,9 @@
                                 "type": "string",
                                 "example": "back",
                                 "description": {
-                                  "en": "Whether the security code is located in the back or in the front of the card.",
+                                  "es": "Whether the security code is located in the back or in the front of the card.",
                                   "pt": "Whether the security code is located in the back or in the front of the card.",
-                                  "es": "Whether the security code is located in the back or in the front of the card."
+                                  "en": "Whether the security code is located in the back or in the front of the card."
                                 },
                                 "enum": [
                                   {
@@ -472,9 +472,9 @@
                           "id": {
                             "type": "number",
                             "description": {
-                              "en": "External financial institution identifier (e.g.: company id for atm)",
+                              "es": "External financial institution identifier (e.g.: company id for atm)",
                               "pt": "External financial institution identifier (e.g.: company id for atm)",
-                              "es": "External financial institution identifier (e.g.: company id for atm)"
+                              "en": "External financial institution identifier (e.g.: company id for atm)"
                             }
                           },
                           "description": {
