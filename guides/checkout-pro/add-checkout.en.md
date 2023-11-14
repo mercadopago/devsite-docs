@@ -20,7 +20,7 @@ Installation is done in two steps: adding the Mercado Pago SDK to the project wi
 ```
 ]]]
       
-2. When you finish adding the Mercado Pago.js SDK V2, configure the SDK credentials and initialize your checkout with the ID of the previously created preference and the identifier of the element where the payment button should be displayed, as shown in the example below.
+2. When you finish adding the Mercado Pago.js SDK V2, configure the SDK credentials and initialize your checkout with the ID of the previously created preference and the identifier of the element where the payment button should be displayed, as shown in the example below. Look above.
  
 [[[
 ```html
