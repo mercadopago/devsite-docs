@@ -148,7 +148,7 @@ Una vez completada la configuración, se asociará un evento de `purchase` con e
 >
 > Solo es posible configurar un solo píxel por preferencia. Prueba cómo funciona su integración con la extensión de Chrome Facebook Pixel Helper. Para obtener más información, visita el [sitio oficial de Facebook](https://www.facebook.com/business/help/742478679120153?id=1205376682832142).
 
-> Además de la SDKs, también es posible integrar los anuncios de Facebook Ads con Checkout Pro a través de la API de referencias. Para eso, envía el parámetro `track` con los atributos `type` y `values` informando tu *facebook_id* y el *pixel ID* repectivamente, al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta el request.
+> Además de la SDKs, también es posible integrar los anuncios de Facebook Ads con Checkout Pro a través de la API de preferencias. Para eso, envía el parámetro `track` con los atributos `type` y `values` informando tu *facebook_id* y el *pixel ID* repectivamente, al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta el request.
 
 ## Google Ads
 
