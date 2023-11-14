@@ -7,7 +7,7 @@ We recommend you customize the checkout information of the store to ensure a bet
 >
 > Attention
 >
-> If you are using the old Mercado Pago application ("Mercado Pago"), [click here](/developers/en/docs/shopify/how-tos/migration) to find out how to migrate to the current version ("Checkout Mercado Pago" ).
+> If you were using the old Mercado Pago app ("**Mercado Pago**") and stopped receiving payments in your store, don't worry. To start selling again, install our new app("**Checkout Mercado Pago**") by following the steps below.
 
 ------------
 

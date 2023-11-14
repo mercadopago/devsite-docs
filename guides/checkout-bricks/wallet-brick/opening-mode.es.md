@@ -6,7 +6,7 @@ El esquema de apertura le permite definir cómo se abrirá la caja para el usuar
 > 
 > Atención
 >
-> Es **extremadamente importante** prestar atención, al crear la preferencia, a la configuración de `back_urls`, ya que serán responsables de guiar el flujo de retorno a su sitio web cuando se complete el pago. Para obtener más información, consulte la sección [URL de devolución de llamada.]()
+> Es **extremadamente importante** prestar atención, al crear la preferencia, a la configuración de `back_urls`, ya que serán responsables de guiar el flujo de retorno a su sitio web cuando se complete el pago. Para obtener más información, consulte la sección [URL de devolución de llamada.](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)
 
 # Esquema de redirección a otra página
 

@@ -37,7 +37,7 @@ initMercadoPago('YOUR_PUBLIC_KEY');
 
 ## Escolher o Brick
 
-Com a biblioteca MercadoPago adicionada e configurada em seu projeto, você já está pronto para adicionar os Bricks em seu site. Para isso, escolha o Brick que melhor atende sua necessidade e siga os passos detalhados na seção correspondente ao Brick escolhido.
+Com a biblioteca do Mercado Pago adicionada e configurada em seu projeto, você já está pronto para adicionar os Bricks em seu site. Para isso, escolha o Brick que melhor atende sua necessidade e siga os passos detalhados na seção correspondente ao Brick escolhido.
 
 ----[mla, mlb, mlu, mlc, mco, mpe]----
 

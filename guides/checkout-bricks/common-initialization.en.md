@@ -37,7 +37,7 @@ initMercadoPago('YOUR_PUBLIC_KEY');
 
 ## Choose the Brick
 
-With the MercadoPago library added and configured in your project, you are ready to add Bricks to your website. To do so, choose the Brick that best meets your needs and follow the steps detailed in the section corresponding to the chosen Brick.
+With the Mercado Pago library added and configured in your project, you are ready to add Bricks to your website. To do so, choose the Brick that best meets your needs and follow the steps detailed in the section corresponding to the chosen Brick.
 
 ----[mlm]----
 
