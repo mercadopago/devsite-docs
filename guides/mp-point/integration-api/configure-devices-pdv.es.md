@@ -18,7 +18,7 @@ Si todavía no tienes sucursales y cajas creadas, puedes hacerlo a través de nu
 
 Primero, deberás crear un local a través del endpoint [Crear sucursal](/developers/es/reference/stores/_users_user_id_stores/post). Deberás reemplazar los valores `user_id` y `YOUR_ACCESS_TOKEN` con los obtenidos al crear tu aplicación, además de modificar los parámetros necesarios de acuerdo a las características del negocio.
 
-Luego, deberás crear una caja a través del endpoint [Crear caja](/developers/es/reference/pos/_pos/post). Esta caja deberá estar asociada a la sucursal creada anteriormente, por lo que deberás reemplazar el parámetro `external_store_id` por el obtenido en la creación del local. 
+Luego, deberás crear una caja a través del endpoint [Crear caja](/developers/es/reference/pos/_pos/post). Esta caja deberá estar asociada a la sucursal creada anteriormente, por lo que deberás reemplazar los parámetros `external_store_id` y `store_id` por los valores obtenidos al crear la sucursal. Para el caso de `store_id`, el valor se corresponderá con el `id` arrojado en esa respuesta. 
 
 ## Asociar el dispositivo Point a tu cuenta de Mercado Pago
 
