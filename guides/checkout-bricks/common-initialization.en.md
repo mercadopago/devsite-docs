@@ -46,7 +46,7 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
- - card_description: Offer different payment methods from which your customers can choose, with the ability to save card details for future purchases. Test the Brick demonstration before integrating it.
+ - card_description: Offer different payment methods that your customers can choose, with the ability to save card details for future purchases. Test the Brick demonstration before integrating it. 
  - card_link: /developers/en/docs/checkout-bricks/payment-brick/introduction
  - card_linkDescription: Learn more
  - card_pillText: AVAILABLE
@@ -88,7 +88,7 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
- - card_description: Offer different payment methods from which your customers can choose, with the ability to save card details for future purchases. Test the Brick demonstration before integrating it.
+ - card_description: Offer different payment methods that your customers can choose, with the ability to save card details for future purchases. Test the Brick demonstration before integrating it. 
  - card_link: /developers/en/docs/checkout-bricks/payment-brick/introduction
  - card_linkDescription: Learn more
  - card_pillText: AVAILABLE
