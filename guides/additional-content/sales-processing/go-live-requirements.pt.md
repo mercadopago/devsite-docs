@@ -1,6 +1,6 @@
 # Requisitos para entrar em produção
 
-Quando sua integração estiver pronta e você quiser começar a receber pagamentos, você deve [ativar as credenciais]([FAKER][CREDENTIALS][URL]) de produção e substituir as credenciais de teste, se necessário.
+Quando sua integração estiver pronta e você quiser começar a receber pagamentos, você deve [ativar as credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) de produção e substituir as credenciais de teste, se necessário. 
 
 Alén disso, você terá que avaliar a [qualidade de sua integração](/developers/pt/guides/additional-content/homologator/homologator) para verificar se está cumprindo os padrões de qualidade e segurança do Mercado Pago.
 
