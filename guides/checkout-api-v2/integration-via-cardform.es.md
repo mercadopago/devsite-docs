@@ -52,11 +52,11 @@ npm install @mercadopago/sdk-js
 ```
 ]]]
 
-## Configurar credencial
+## Configurar credenciales
 
 Las credenciales son claves únicas con las que identificamos una integración en tu cuenta. Se utilizan para capturar pagos en tiendas online y otras aplicaciones de forma segura.
 
-Esta es la primera etapa de una estructura de código completa que se debe seguir para integrar correctamente pagos con tarjeta. Presta atención a los siguientes bloques para añadirlos a los códigos como se indica.
+Esta es la primera etapa de una estructura de código completa que se debe seguir para integrar correctamente pagos con tarjeta. 
 
 [[[
 ```html

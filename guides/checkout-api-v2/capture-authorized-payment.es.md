@@ -217,7 +217,7 @@ La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
 ]]]
 
 ------------
-----[mlb, mlu, mlc, mco, mpe]----
+----[mlb, mlu, mlc, mco, mpe, mlm]----
 ## Capturar monto parcial
 
 Para capturar un monto inferior al reservado, envía el valor a capturar al parámetro `transaction_amount` y ejecuta la solicitud a través de los códigos disponibles a continuación.

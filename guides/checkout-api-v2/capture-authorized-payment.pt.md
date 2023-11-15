@@ -217,7 +217,7 @@ A resposta trará o seguinte resultado:
 ]]]
 
 ------------
-----[mlb, mlu, mlc, mco, mpe]----
+----[mlb, mlu, mlc, mco, mpe, mlm]----
 ## Capturar valor parcial
 
 Para capturar um valor inferior ao reservado, envie o valor que deve ser capturado ao parâmetro `transaction_amount` e execute a requição através dos códigos disponíveis abaixo.
