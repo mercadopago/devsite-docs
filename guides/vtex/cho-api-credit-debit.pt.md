@@ -7,10 +7,10 @@ Para configurar esses meios de pagamento, acesse o painel de administração da 
 1.  Clique no botão "+ (Adicionar novo plano de pagamento para...)". 
 2. Dentro das categorias **Cartão de débito** ou **Cartão de crédito**, você encontrará as diferentes marcas de cartão que pode oferecer. Clique nelas e configure cada uma individualmente para habilitá-las. Você pode obter mais informações sobre essa configuração na seção de [tutoriais da VTEX](https://help.vtex.com/pt/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros). 
 3. Após selecionar a marca do cartão que deseja oferecer, preencha os campos exibidos na próxima tela: 
-    * Digite o **Nome da regra**, que permitirá identificar esse meio de pagamento. 
-    * Em **Processo com a afiliação**, selecione **MercadoPagoV2**. 
-    * Ative a condição de pagamento no campo **Status**, usando o botão deslizante. 
-    * Para ativar o pagamento parcelado, selecione a opção **Automático**. Será oferecida a opção de financiamento previamente configurada na conta do vendedor do Mercado Pago. Consulte a seção "Parcelamento e juros" para obter mais informações.
+    1. Digite o **Nome da regra**, que permitirá identificar esse meio de pagamento. 
+    2. Em **Processo com a afiliação**, selecione **MercadoPagoV2**. 
+    3. No campo **Status**, ative a condição de pagamento usando o botão deslizante. 
+    4. Para ativar o pagamento parcelado, selecione a opção **Automático**. Será oferecida a opção de financiamento previamente configurada na conta do vendedor do Mercado Pago. Consulte a seção "Parcelamento e juros" para obter mais informações.
 
 > NOTE
 >

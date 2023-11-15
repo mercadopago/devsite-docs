@@ -27,7 +27,7 @@ bullet_section_with_media:
 bullet_section_with_media:
  - title: Customize your payments with Checkout Transparente 
  - type: reversed
- - message: If you integrate Checkout API, you can make the buyer complete the entire purchase process within the environment of your VTEX store.
+ - message: If you integrate Checkout Transparente, you can make the buyer complete the entire purchase process within the environment of your VTEX store.
  - image: /shopify/mini-landing-4.png
 ---
 ------------
