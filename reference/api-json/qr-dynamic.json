@@ -71,7 +71,8 @@
                       "en": "Purchase description.",
                       "pt": "Descrição de compra",
                       "es": "Descripción de la compra"
-                    }
+                    },
+                    "example": "Purchase description."
                   },
                   "notification_url": {
                     "type": "string",
@@ -193,7 +194,7 @@
                           "pt": "USER_ID da conta Mercado Pago do sistema integrador",
                           "es": "USER_ID de la cuenta de Mercado Pago del sistema integrador"
                         },
-                        "example": 446566691
+                        "example": 662208785
                       }
                     }
                   },
@@ -211,7 +212,8 @@
                           "en": "Amount to withdraw in local currency.",
                           "pt": "Montante a retirar em moeda local",
                           "es": "Monto a retirar en moneda local"
-                        }
+                        },
+                        "example": 0
                       }
                     }
                   }
@@ -581,7 +583,8 @@
                       "en": "Purchase description.",
                       "pt": "Descrição de compra",
                       "es": "Descripción de la compra"
-                    }
+                    },
+                    "example": "Purchase description."
                   },
                   "notification_url": {
                     "type": "string",
@@ -703,7 +706,7 @@
                           "pt": "USER_ID da conta Mercado Pago do sistema integrador",
                           "es": "USER_ID de la cuenta de Mercado Pago del sistema integrador"
                         },
-                        "example": 446566691
+                        "example": 662208785
                       }
                     }
                   },
@@ -721,7 +724,8 @@
                           "en": "Amount to withdraw in local currency.",
                           "pt": "Montante a retirar em moeda local",
                           "es": "Monto a retirar en moneda local"
-                        }
+                        },
+                        "example": 0
                       }
                     }
                   }
