@@ -48,6 +48,7 @@ const settings = {
       receiverAddress: {
         streetName: "<STREET_NAME>",
         streetNumber: "<STREET_NUMBER>",
+        complement: "<COMPLEMENT>",
         neighborhood: "<PAYER_NEIGHBORHOOD>", // opcional
         city: "<PAYER_CITY>", // opcional
         federalUnit: "<PAYER_FED_UNIT>", // opcional
