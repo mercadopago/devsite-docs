@@ -547,9 +547,9 @@
                   "notification_url": {
                     "type": "string",
                     "description": {
-                      "en": "URL where you'd like to receive a payment notification.",
-                      "pt": "URL para a qual você gostaria de receber notificações de pagamentos",
-                      "es": "URL a la cual te gustaría recibir notificaciones de pagos"
+                      "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
+                      "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
+                      "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
                     }
                   },
                   "statement_descriptor": {
@@ -1210,9 +1210,9 @@
                       "type": "string",
                       "format": "nullable",
                       "description": {
-                        "en": "URL where you'd like to receive a payment notification.",
-                        "pt": "URL para a qual você gostaria de receber notificações de pagamentos",
-                        "es": "URL a la cual te gustaría recibir notificaciones de pagos"
+                        "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
+                        "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
+                        "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
                       }
                     },
                     "statement_descriptor": {
@@ -2294,9 +2294,9 @@
                       "type": "string",
                       "format": "nullable",
                       "description": {
-                        "en": "URL where you'd like to receive a payment notification.",
-                        "pt": "URL para a qual você gostaria de receber notificações de pagamentos",
-                        "es": "URL a la cual te gustaría recibir notificaciones de pagos"
+                        "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
+                        "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
+                        "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
                       }
                     },
                     "statement_descriptor": {
@@ -3295,9 +3295,9 @@
                   "notification_url": {
                     "type": "string",
                     "description": {
-                      "en": "URL where you'd like to receive a payment notification.",
-                      "pt": "URL para a qual você gostaria de receber notificações de pagamentos",
-                      "es": "URL a la cual te gustaría recibir notificaciones de pagos"
+                      "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
+                      "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
+                      "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
                     }
                   },
                   "additional_info": {
@@ -3741,9 +3741,9 @@
                       "example": "https://url.com.br/notificacao",
                       "format": "nullable",
                       "description": {
-                        "en": "URL where you'd like to receive a payment notification.",
-                        "pt": "URL para a qual você gostaria de receber notificações de pagamentos",
-                        "es": "URL a la cual te gustaría recibir notificaciones de pagos"
+                        "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
+                        "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
+                        "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
                       }
                     },
                     "operation_type": {
