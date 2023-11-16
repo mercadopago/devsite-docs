@@ -4,7 +4,7 @@
 >
 > Importante
 >
-Antes de iniciar a configuração do dispositivo Point em modo Ponto de Venda, é necessário acessar sua conta no Mercado Pago e criar um [aplicativo](/developers/pt/docs/mp-point/additional-content/your-integrations/dashboard), selecionando **PointdeMercadoPago** como o produto a ser integrado. Não se esqueça também de verificar suas [credenciais de produção](/developers/pt/docs/mp-point/additional-content/your-integrations/credentials), para assegurar a gestão adequada da integração.
+> Antes de iniciar a configuração do dispositivo Point em modo Ponto de Venda, é necessário acessar sua conta no Mercado Pago e criar um [aplicativo](/developers/pt/docs/mp-point/additional-content/your-integrations/dashboard), selecionando **PointdeMercadoPago** como o produto a ser integrado. Não se esqueça também de verificar suas [credenciais de produção](/developers/pt/docs/mp-point/additional-content/your-integrations/credentials), para assegurar a gestão adequada da integração.
 > <br><br>
 > Além disso, lembre-se de acessar suas [credenciais de produção](/developers/pt/docs/mp-point/additional-content/your-integrations/credentials) para gerenciar corretamente sua integração.
 
