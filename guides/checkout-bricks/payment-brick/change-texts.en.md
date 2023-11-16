@@ -16,6 +16,152 @@ If the customized texts are larger than the available space, the displayed text 
 
 Customizable texts are displayed below.
 
+----[mlm]----
+[[[
+```javascript
+const settings = {
+  customization: {
+    visual: {
+      texts: {
+        formTitle: "string",
+        emailSectionTitle: "string",
+        installmentsSectionTitle: "string",
+        cardholderName: {
+          label: "string",
+          placeholder: "string",
+        },
+        email: {
+          label: "string",
+          placeholder: "string",
+        },
+        cardholderIdentification: {
+          label: "string",
+        },
+        cardNumber: {
+          label: "string",
+          placeholder: "string",
+        },
+        expirationDate: {
+          label: "string",
+          placeholder: "string",
+        },
+        securityCode: {
+          label: "string",
+          placeholder: "string",
+        },
+        entityType: {
+          placeholder: "string",
+          label: "string",
+        },
+        financialInstitution: {
+          placeholder: "string",
+          label: "string",
+        },
+        selectInstallments: "string",
+        selectIssuerBank: "string",
+        formSubmit: "string",
+        paymentMethods: {
+          newCreditCardTitle: "string",
+          creditCardTitle: "string",
+          creditCardValueProp: " string",
+          newDebitCardTitle: "string",
+          debitCardTitle: "string",
+          debitCardValueProp: "string",
+          ticketTitle: "string",
+          ticketValueProp: "string",
+        },
+        reviewConfirm: {
+          componentTitle: "",
+          payerDetailsTitle: "",
+          shippingDetailsTitle: "",
+          billingDetailsTitle: "",
+          paymentMethodDetailsTitle: "",
+          detailsTitle: "",
+          summaryItemsTitle: "",
+          summaryShippingTitle: "",
+          summaryDiscountTitle: "",
+          summaryYouPayTitle: "",
+          summaryTotalTitle: "",
+        },
+      },
+    },
+  },
+};
+```
+```react-jsx
+const settings = {
+  customization: {
+    visual: {
+      texts: {
+        formTitle: "string",
+        emailSectionTitle: "string",
+        installmentsSectionTitle: "string",
+        cardholderName: {
+          label: "string",
+          placeholder: "string",
+        },
+        email: {
+          label: "string",
+          placeholder: "string",
+        },
+        cardholderIdentification: {
+          label: "string",
+        },
+        cardNumber: {
+          label: "string",
+          placeholder: "string",
+        },
+        expirationDate: {
+          label: "string",
+          placeholder: "string",
+        },
+        securityCode: {
+          label: "string",
+          placeholder: "string",
+        },
+        entityType: {
+          placeholder: "string",
+          label: "string",
+        },
+        financialInstitution: {
+          placeholder: "string",
+          label: "string",
+        },
+        selectInstallments: "string",
+        selectIssuerBank: "string",
+        formSubmit: "string",
+        paymentMethods: {
+          newCreditCardTitle: "string",
+          creditCardTitle: "string",
+          creditCardValueProp: " string",
+          newDebitCardTitle: "string",
+          debitCardTitle: "string",
+          debitCardValueProp: "string",
+          ticketTitle: "string",
+          ticketValueProp: "string",
+        },
+        reviewConfirm: {
+          componentTitle: "",
+          payerDetailsTitle: "",
+          shippingDetailsTitle: "",
+          billingDetailsTitle: "",
+          paymentMethodDetailsTitle: "",
+          detailsTitle: "",
+          summaryItemsTitle: "",
+          summaryShippingTitle: "",
+          summaryDiscountTitle: "",
+          summaryYouPayTitle: "",
+          summaryTotalTitle: "",
+        },
+      },
+    },
+  },
+};
+```
+]]]
+
+------------
+----[mla, mlb, mpe, mco, mlu, mlc]----
 [[[
 ```javascript
 const settings = {
@@ -130,6 +276,8 @@ const customization = {
 };
 ```
 ]]]
+
+------------
 
 To change the texts of offline payment methods (tickets, Pix and ATM, for example), within the `paymentMethods` object, use the pattern `{paymentMethodId}{ValueProp/Title} `.
 
