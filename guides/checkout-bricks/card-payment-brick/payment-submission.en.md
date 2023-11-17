@@ -15,6 +15,8 @@ For this to work, you should configure your [private key](/developers/en/guides/
 > Important
 >
 > Before making the API call, it is important to validate that the data that will be sent is correct. So, if you already have some kind of session on your integration server where the purchase context information is stored, you can use it to compare the data received from the frontend.
+> <br><br>
+> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example. 
 
 [[[
 ```php
@@ -22,52 +24,63 @@ For this to work, you should configure your [private key](/developers/en/guides/
 You can find payment status in _status_ value.
 ===
 <?php
-  require_once 'vendor/autoload.php';
-  MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
-  $contents = json_decode(file_get_contents('php://input'), true);
- 
-  $payment = new MercadoPago\Payment();
-  $payment->transaction_amount = $contents['transaction_amount'];
-  $payment->token = $contents['token'];
-  $payment->installments = $contents['installments'];
-  $payment->payment_method_id = $contents['payment_method_id'];
-  $payment->issuer_id = $contents['issuer_id'];
-  $payer = new MercadoPago\Payer();
-  $payer->email = $contents['payer']['email'];
-  $payer->identification = array(
-     "type" => $contents['payer']['identification']['type'],
-     "number" => $contents['payer']['identification']['number']
-  );
-  $payment->payer = $payer;
-  $payment->save();
-  $response = array(
-     'status' => $payment->status,
-     'status_detail' => $payment->status_detail,
-     'id' => $payment->id
-  );
-  echo json_encode($response);
+  use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\MercadoPagoConfig;
+
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
 ===
 You can find payment status in _status_ value.
 ===
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
+import { MercadoPagoConfig, Payment } from '@src/index';
 
-mercadopago.payment.save(req.body)
-  .then(function(response) {
-    const { status, status_detail, id } = response.body;
-    res.status(response.status).json({ status, status_detail, id });
-  })
-  .catch(function(error) {
-    console.error(error);
-  });
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>', options: { timeout: 5000 } });
+
+const payment = new Payment(client);
+
+payment.create({ body: {
+ transaction_amount: 100,
+ description: '<DESCRIPTION>',
+ payment_method_id: '<PAYMENT_METHOD_ID>',
+ payer: {
+ email: '<EMAIL>'
+},
+} }).then(console.log).catch(console.log);
 ```
 ```java
 ===
 You can find payment status in _status_ value.
 ===
+
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
+ 
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
 
 PaymentClient client = new PaymentClient();
 
@@ -88,7 +101,7 @@ PaymentCreateRequest paymentCreateRequest =
                .build())
        .build();
 
-client.create(paymentCreateRequest);
+client.create(paymentCreateRequest, requestOptions);
 
 ```
 ```ruby
@@ -97,6 +110,12 @@ You can find payment status in _status_ value.
 ===
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
+
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
 
 payment_data = {
   transaction_amount: params[:transactionAmount].to_f,
@@ -112,7 +131,7 @@ payment_data = {
   }
 }
 
-payment_response = sdk.payment.create(payment_data)
+payment_response = sdk.payment.create(payment_data, custom_request_options)
 payment = payment_response[:response]
 
 puts payment
@@ -129,6 +148,9 @@ using MercadoPago.Config;
 using MercadoPago.Resource.Payment;
 
 MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
+
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
 
 var paymentRequest = new PaymentCreateRequest
 {
@@ -148,7 +170,7 @@ var paymentRequest = new PaymentCreateRequest
 };
 
 var client = new PaymentClient();
-Payment payment = await client.CreateAsync(paymentRequest);
+Payment payment = await client.CreateAsync(paymentRequest, requestOptions);
 
 Console.WriteLine(payment.Status);
 
@@ -159,6 +181,11 @@ You can find payment status in _status_ value.
 ===
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
 
 request_values = request.get_json()
     
@@ -177,7 +204,7 @@ payment_data = {
     }
 }
 
-payment_response = sdk.payment().create(payment_data)
+payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 
 print("status =>", payment["status"])
@@ -192,6 +219,7 @@ curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+    -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
           "transaction_amount": 100,

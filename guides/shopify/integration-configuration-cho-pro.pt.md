@@ -17,33 +17,7 @@ Para configurar o Checkout Pro em uma loja Shopify, siga os passos abaixo:
 > No caso de renovar suas credenciais, lembre-se de substituir as credenciais de produção e de teste em sua integração.
 
 ------------
-----[mco]----
-Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing) ("**Checkout Mercado Pago**"), é possível que haja um **aumento na taxa de aprovação das vendas da loja on-line**. Isso acontece porque os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será feito em nosso ambiente, o que facilita o pagamento. Ao final da transação, esses compradores são redirecionados ao ambiente da loja.
-
-> WARNING
->
-> Atenção
->
-> Caso esteja utilizando a versão antiga do app Mercado Pago ("**Mercado Pago**"), [clique aqui](/developers/pt/docs/shopify/how-tos/migration) para saber como migrar para a versão atual ("**Checkout Mercado Pago**").
-
-Para instalar o Checkout Pro ("**Checkout Mercado Pago**") em sua loja Shopify, siga os passos abaixo:
-
-1. Vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
-2. No painel administrativo da loja, clique em **Configurações**.
-3. Uma vez lá, selecione a opção **Pagamentos**. 
-4. Em "Formas de pagamento adicionais", clique em **Adicionar formas de pagamento**.
-5. Acesse a aba **Pesquisar por fornecedor** e procure o novo app com o nome "Checkout Mercado Pago".
-6. Após localizá-lo, selecione-o, clique em **Ativar** e, por fim, em **Conectar**.
-7. Selecione **Instalar app** e, depois, clique em **Gerenciar**.
-8. Insira as suas **credenciais de produção** (`public key` e `access token`) nos campos solicitados e clique em **Salvar**. Lembre-se de ter suas [credenciais](/developers/pt/docs/shopify/additional-content/your-integrations/credentials) à mão.
-9. Para finalizar a instalação, clique em **Ativar Checkout Mercado Pago**.
-
-> Nesta etapa, você pode selecionar as imagens dos meios de pagamento que deseja exibir em sua loja para fins ilustrativos. Além disso, se desejar, você pode ativar o [modo de teste.](/developers/pt/docs/shopify/sales-processing/integration-test)
-> <br/><br/>
-> No caso de renovar suas credenciais, lembre-se de substituir as credenciais de produção e de teste em sua integração.
-
-------------
-----[mla, mlm, mpe, mlu, mlc]----
+----[mla, mlm, mpe, mlu, mlc, mco]----
 Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing) ("**Checkout Mercado Pago**"), é possível que haja um **aumento na taxa de aprovação das vendas da loja on-line**. Isso acontece porque os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será feito em nosso ambiente, o que facilita o pagamento. Ao final da transação, esses compradores são redirecionados ao ambiente da loja.
 
 > WARNING

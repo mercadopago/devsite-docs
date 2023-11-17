@@ -22,6 +22,18 @@ paths:
         eng: Create a payment and add all the information you need. Remember to add the payment details and the payer's information
         spa: Realiza la creación de un pago y agrega toda la información que necesites. Ten en cuenta de sumar el detalle del pago y los datos del pagador
         por: Crie um pagamento e acrescente todas as informações que você precisa. Certifique-se de acrescentar os detalhes do pagamento e os detalhes do cliente
+      parameters:
+        - in: header
+          name: X-Idempotency-Key
+          required: true
+          schema:
+            type: string
+            example: "0d5020ed-1af6-469c-ae06-c3bec19954bb"
+          description: This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments, for example. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings. It is important to consider that this field is only mandatory for integrations carried out after 01/11/2023.
+          x-description-i18n:
+            eng: This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments, for example. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings. It is important to consider that this field is only mandatory for integrations carried out after 01/11/2023.
+            spa: Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos, por ejemplo. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el header de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorias. Es importante considerar que este campo solo es obligatorio para integraciones realizadas después del 01/11/2023
+            por: Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos, por exemplo. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas. É importante considerar que este campo somente é obrigatório para integrações realizadas após 01/11/2023.
       requestBody:
         content:
           application/json:
@@ -48,8 +60,8 @@ paths:
                       description: List of items to be paid.
                       x-description-i18n:
                         eng: List of items to be paid.
-                        spa: Lista de ítems a pagar
-                        por: Lista de itens a pagar
+                        spa: Lista de ítems a pagar.
+                        por: Lista de itens a pagar.
                       items:
                         type: object
                         properties:
@@ -95,19 +107,19 @@ paths:
                             example: electronics
                           quantity:
                             type: number
-                            description: Item quantity.
+                            description: Item quantity. This parameter will return as an String.
                             x-description-i18n:
-                              eng: Item quantity.
-                              spa: Cantidad de producto
-                              por: Quantidade do produto
+                              eng: Item quantity. This parameter will return as an String.
+                              spa: Cantidad de producto. Te devolveremos este parámetro como una String.
+                              por: Quantidade do produto. Este parâmetro será retornado como uma String.
                             example: 1
                           unit_price:
                             type: number
-                            description: Unit price of the purchased item.
+                            description: Unit price of the purchased item. This parameter will return as an String.
                             x-description-i18n:
-                              eng: Unit price of the purchased item.
-                              spa: Precio unitario del ítem comprado.
-                              por: Preço unitário do item comprado.
+                              eng: Unit price of the purchased item. This parameter will return as an String.
+                              spa: Precio unitario del ítem comprado. Te devolveremos este parámetro como una String.
+                              por: Preço unitário do item comprado. Este parâmetro será retornado como uma String.
                             example: 58.8
                           type:
                             type: string
@@ -1558,7 +1570,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 2000 -- Payment not found
+                      - 2000 -- Payment not found. This error will return a field called "data". This field contains the error date "25-09-2023T16:57:53UTC" and a Request ID, an ID that identifies payment traceability.
   /v1/payments/{id}:
     get:
       tags:
@@ -3158,11 +3170,11 @@ paths:
             example: 47792478
         - name: pos_id
           in: query
-          description: Parameter used to filter the payment search by POS identifier, physical points of sale that use a card machine for sales.
+          description: Parameter used to filter payment searches by the Point of Sale (POS) identifier, physical sales points that use a card machine for sales and/or QR codes.
           x-description-i18n:
-            eng: Parameter used to filter the payment search by POS identifier, physical points of sale that use a card machine for sales.
-            spa: Parámetro utilizado para filtrar la búsqueda de pagos por el identificador del PDV, puntos de venta físicos que utilizan una máquina de tarjetas para la venta.
-            por: Parâmetro utilizado para filtrar a busca de pagamentos pelo identificador do PDV, pontos de vendas físicos que utilizam maquininha de cartão para vendas.
+            eng: Parameter used to filter payment searches by the Point of Sale (POS) identifier, physical sales points that use a card machine for sales and/or QR codes.
+            spa: Parámetro utilizado para filtrar la búsqueda de pagos por el identificador del PDV, puntos de venta físicos que utilizan una máquina de tarjetas para la venta y/o códigos QR.
+            por: Parâmetro utilizado para filtrar a busca de pagamentos pelo identificador do ponto de venda (PDV), pontos de venda físicos que utilizam uma máquina de cartão para vendas e/ou códigos QR.
           required: false
           schema:
             type: string

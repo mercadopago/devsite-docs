@@ -30,7 +30,7 @@ bullet_section_with_media:
  - benefit_title: Checkout Pro
  - benefit_message: Payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash (Mercado Pago account or ticket) and bank transfer.
  - benefit_title: Checkout API
- - benefit_message: Payment is made without leaving your virtual store with cards (debit or credit), ticket checkout (Mercado Pago account or boleto bancário).
+ - benefit_message: Payment is made without leaving your virtual store with cards (debit or credit), ticket checkout (Mercado Pago account or ticket).
  - image: /prestashop/prestashop-payment.png 
 ---
 ------------

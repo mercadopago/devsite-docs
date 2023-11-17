@@ -120,12 +120,12 @@ Payment payment = await client.CreateAsync(request);
 ?>
 ```
 ```node
-import { MercadoPagoConfig, Payments } from 'mercadopago';
+import { MercadoPagoConfig, Payment } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: '<ENV_ACCESS_TOKEN>' });
-const payments = new Payments(client);
+const payment = new Payment(client);
 
-payments.create({
+const body = {
   transaction_amount: <TRANSACTION_AMOUNT>,
   token: '<CARD_TOKEN>',
   description:  '<DESCRIPTION>',
@@ -135,10 +135,9 @@ payments.create({
   payer: {
     email: '<BUYER_EMAIL>',
   },
-  three_d_secure_mode: 'optional' 
-}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
-  .then((result) => console.log(result))
-  .catch((error) => console.log(error));
+  three_d_secure_mode: 'optional'
+}
+payment.create({ body: body, requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' } }).then(console.log).catch(console.log);
 ```
 ```ruby
 
@@ -186,7 +185,6 @@ For cases where the Challenge is necessary, the status will show the value `pend
 > In the latter case, the response will show a payment attribute called `three_ds_info` with the fields `external_resource_url`, which contains the Challenge URL, and `creq`, a Challenge request identifier. It will be necessary to display the Challenge and treat its result with the following steps.
 
 ### Response overview (information omitted)
-
 
 [[[
 ```Json
@@ -414,13 +412,13 @@ curl -X POST \
 ?>
 ```
 ```node
-import { MercadoPagoConfig, Payments } from 'mercadopago';
+import { MercadoPagoConfig, Payment } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const payments = new Payments(client);
+const payment = new Payment(client);
 
-payments.create({
-  transaction_amount: req.transaction_amount,
+const body = {
+transaction_amount: req.transaction_amount,
   token: req.token,
   description: req.description,
   installments: req.installments,
@@ -434,9 +432,9 @@ payments.create({
     }
   },
   three_d_secure_mode: 'optional' 
-}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
-  .then((result) => console.log(result))
-  .catch((error) => console.log(error));
+};
+
+payment.create({ body: body, requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' } }).then(console.log).catch(console.log);
 ```
 ```java
 PaymentClient client = new PaymentClient();

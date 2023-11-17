@@ -8,8 +8,8 @@ Com o Checkout Transparente do Mercado Pago, é possível oferecer, além de car
 > Importante
 >
 > Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
-------------
 
+------------
 ----[mla]----
 Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **Rapipago** e/ou **Pago Fácil**.
 
@@ -18,8 +18,8 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 > Importante
 >
 > Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
-------------
 
+------------
 ----[mlm]----
 Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **OXXO**, **Paycash**,  **Citibanamex**,  **Santander**, **BBVA Bancomer** e **Cartão Mercado Pago**.
 
@@ -28,8 +28,8 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 > Importante
 >
 > Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
-------------
 
+------------
 ----[mpe]----
 Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos através do **PagoEfectivo**.
 
@@ -37,9 +37,9 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 >
 > Importante
 >
-> Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
-------------
+> Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes.  
 
+------------
 ----[mco]----
 Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **Efecty**.
 
@@ -48,8 +48,8 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 > Importante
 >
 > Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
-------------
 
+------------
 ----[mlu]----
 Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **Abitab** e **Redpagos**.
 
@@ -58,6 +58,7 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 > Importante
 >
 > Além das opções disponíveis nesta documentação, também é possível integrar **outros meios de pagamento** utilizando o **Brick de Payment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/payment-brick/default-rendering#editor_2) de Payment para mais detalhes. 
+
 ------------
 
 Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um **GET** com seu _Access token_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição ou, se preferir, faça a requisição utilizando os SDKs abaixo.
@@ -128,28 +129,28 @@ curl -X GET \
 
 ----[mlb]----
 Para oferecer pagamentos com **boleto bancário** e/ou **pagamento em lotérica**, siga as etapas abaixo.
-------------
 
+------------
 ----[mla]----
 Para oferecer pagamentos com **Rapipago** e/ou **Pago Fácil**, siga as etapas abaixo.
-------------
 
+------------
 ----[mlm]----
 Para oferecer pagamentos com **OXXO**, **Paycash**,  **Citibanamex**,  **Santander**, **BBVA Bancomer** ou **Cartão Mercado Pago**, siga as etapas abaixo.
-------------
 
+------------
 ----[mpe]----
 Para oferecer pagamentos com **PagoEfectivo**, siga as etapas abaixo.
-------------
 
+------------
 ----[mco]----
 Para oferecer pagamentos com **Efecty**, siga as etapas abaixo.
-------------
 
+------------
 ----[mlu]----
 Para oferecer pagamentos com **Abitab** e/ou **Redpagos**, siga as etapas abaixo.
-------------
 
+------------
 
 ## Importar MercadoPago.js
 
@@ -197,7 +198,6 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 
 Com a biblioteca MercadoPago.js incluída, adicione o formulário de pagamento abaixo ao seu projeto para garantir a captura segura dos dados dos compradores. Nesta etapa é importante utilizar a lista que você consultou para obter os meios de pagamento disponíveis para criar as opções de pagamento que deseja oferecer.
 
-
 [[[
 ```html
 
@@ -238,7 +238,6 @@ Com a biblioteca MercadoPago.js incluída, adicione o formulário de pagamento a
 ]]]
 
 ----[mlb, mla, mpe, mco, mlu, mlc]----
-
 ## Obter tipos de documento
 
 Após configurar a credencial, é preciso obter os tipos de documento que farão parte do preenchimento do formulário para pagamento. 
@@ -284,25 +283,29 @@ Incluindo o elemento do tipo `select` com o id: `id = docType` que está no form
 
 ------------
 
-
 ## Enviar pagamento
 
 Ao finalizar a inclusão do formulário de pagamento e obter os tipos de documento, é necessário encaminhar o e-mail do comprador, tipo e número de documento, o meio de pagamento utilizado e o detalhe do valor a ser pago utilizando nossa API de Pagamentos ou um de nossos SDKs.
 
+> NOTE
+>
+> Importante
+>
+> Ao executar as APIs citadas nesta documentação, você poderá encontrar o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições sem que haja situações indesejadas como, por exemplo, pagamentos em duplicidade.
+
 ----[mlb]----
 Para configurar pagamentos com **boleto bancário** ou **pagamento em lotérica**, envie um POST com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
-
 > WARNING
 >
-> Importante
+> Atenção
 >
 > Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token.
 
 | Tipo de pagamento  | Parâmetro  | Valor  |
 | --- | --- | --- |
 | Boleto  | `payment_method_id`  | `bolbradesco`  |
-| Pagamento em lotérica  | `payment_method_id`  | `pec`  |
+| Pagamento em lotérica  | `payment_method_id`  | `pec`  | 
 
 [[[
 ```php
@@ -358,6 +361,13 @@ payments.create({
   .catch((error) => console.log(error));
 ```
 ```java
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
+ 
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
+
 PaymentClient client = new PaymentClient();
 
 PaymentCreateRequest paymentCreateRequest =
@@ -376,11 +386,17 @@ PaymentCreateRequest paymentCreateRequest =
                .build())
        .build();
 
-client.create(paymentCreateRequest);
+client.create(paymentCreateRequest, requestOptions);
 ```
 ```ruby
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
 
 payment_request = {
   transaction_amount: 100,
@@ -405,7 +421,7 @@ payment_request = {
   }
 }
 
-payment_response = sdk.payment.create(payment_request)
+payment_response = sdk.payment.create(payment_request, custom_request_options)
 payment = payment_response[:response]
 
 ```
@@ -417,6 +433,9 @@ using MercadoPago.Client.Payment;
 using MercadoPago.Resource.Payment;
 
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
 
 var request = new PaymentCreateRequest
 {
@@ -437,12 +456,17 @@ var request = new PaymentCreateRequest
 };
 
 var client = new PaymentClient();
-Payment payment = await client.CreateAsync(request);
+Payment payment = await client.CreateAsync(request, requestOptions);
 
 ```
 ```python
 import mercadopago
 sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
 
 payment_data = {
     "transaction_amount": 100,
@@ -467,7 +491,7 @@ payment_data = {
     }
 }
 
-payment_response = sdk.payment().create(payment_data)
+payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 ```
 ```curl
@@ -475,6 +499,7 @@ curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
@@ -501,7 +526,6 @@ curl -X POST \
 ```
 ]]]
 
-
 A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento. Veja abaixo um exemplo de retorno.
 
 [[[
@@ -526,7 +550,6 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 ]
 ```
 ]]]
-
 
 > NOTE
 >
@@ -601,8 +624,6 @@ Para evitar problemas de cobrança, é importante cancelar os pagamentos vencido
 Para mais informações, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds).
 
 ------------
-
-
 ----[mla]----
 
 Para configurar pagamentos com **Rapipago** e/ou **Pago Fácil**, envie um **POST** com os parâmetros requeridos ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
@@ -616,41 +637,55 @@ Para configurar pagamentos com **Rapipago** e/ou **Pago Fácil**, envie um **POS
 [[[
 ```php
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-  $payment = new MercadoPago\Payment();
-  $payment->transaction_amount = 100;
-  $payment->description = "Título do produto";
-  $payment->payment_method_id = "rapipago";
-  $payment->payer = array(
-    "email" => "test_user_19653727@testuser.com"
-  );
-
-  $payment->save();
-
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "first_name" => $_POST['payerFirstName'],
+      "last_name" => $_POST['payerLastName'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
-var payment_data = {
-  transaction_amount: 100,
-  description: 'Título do produto',
-  payment_method_id: 'rapipago',
-  payer: {
-    email: 'test_user_3931694@testuser.com'
-  }
-};
-
-mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function (error) {
-
-});
-
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
 import com.mercadopago.*;
@@ -824,7 +859,6 @@ O prazo de creditação leva entre 1 e 2 dias úteis de acordo com o meio de pag
 >
 > Caso o pagamento seja realizado depois da data de expiração, o valor será estornado na conta do Mercado Pago do pagador.
 
-
 ## Cancelar pagamento
 
 Para evitar problemas de cobrança, é importante cancelar os pagamentos vencidos. Além disso, tenha em conta que **é possível cancelar apenas os pagamentos que se encontram pendentes ou em processo**. 
@@ -832,7 +866,6 @@ Para evitar problemas de cobrança, é importante cancelar os pagamentos vencido
 Se o vencimento de um pagamento ocorre em 30 dias, o cancelamento é automático e o status final do mesmo será `cancelado` ou `expirado`. Para mais informações, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds).
 
 ------------
-
 ----[mlm]----
 
 Para configurar pagamentos com  **OXXO**, **Paycash**,  **Citibanamex**,  **Santander**, **BBVA Bancomer** e/ou **Cartão Mercado Pago**, envie um **POST** com os devidos parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
@@ -846,40 +879,55 @@ Para configurar pagamentos com  **OXXO**, **Paycash**,  **Citibanamex**,  **Sant
 [[[
 ```php
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-  $payment = new MercadoPago\Payment();
-  $payment->transaction_amount = 100;
-  $payment->description = "Título do produto";
-  $payment->payment_method_id = "oxxo";
-  $payment->payer = array(
-    "email" => "test_user_82045343@testuser.com"
-  );
-
-  $payment->save();
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "first_name" => $_POST['payerFirstName'],
+      "last_name" => $_POST['payerLastName'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
-var payment_data = {
-  transaction_amount: 100,
-  description: 'Título do produto',
-  payment_method_id: 'oxxo',
-  payer: {
-    email: 'test_user_82045343@testuser.com'
-  }
-};
-
-mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function (error) {
-
-});
-
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
 import com.mercadopago.*;
@@ -995,7 +1043,6 @@ Para evitar problemas de cobrança, é importante cancelar os pagamentos vencido
 
 Se o vencimento de um pagamento ocorre em 30 dias, o cancelamento é automático e o status final do mesmo será `cancelado` ou `expirado`. Para mais informações, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds).
 
-
 ## Locais de pagamento
 
 Ao finalizar a integração, é importante compartilhar com os compradores a informação dos diferentes lugares em que podem realizar o pagamento. Veja o detalhe de cada um deles na tabela abaixo.
@@ -1017,7 +1064,6 @@ Ao finalizar a integração, é importante compartilhar com os compradores a inf
 | Citibanamex| Citibanamex |
 
 ------------
-
 ----[mpe]----
 
 Para configurar pagamentos com **PagoEfectivo**, envie um **POST** com os parâmetros requeridos ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
@@ -1031,40 +1077,55 @@ Para configurar pagamentos com **PagoEfectivo**, envie um **POST** com os parâm
 [[[
 ```php
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-  $payment = new MercadoPago\Payment();
-  $payment->transaction_amount = 100;
-  $payment->description = "Título do produto";
-  $payment->payment_method_id = "pagoefectivo_atm";
-  $payment->payer = array(
-    "email" => "test_user_42972582@testuser.com"
-  );
-
-  $payment->save();
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "first_name" => $_POST['payerFirstName'],
+      "last_name" => $_POST['payerLastName'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
-var payment_data = {
-  transaction_amount: 100,
-  description: 'Título do produto',
-  payment_method_id: 'pagoefectivo_atm',
-  payer: {
-    email: 'test_user_42972582@testuser.com'
-  }
-};
-
-mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function (error) {
-
-});
-
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
 import com.mercadopago.*;
@@ -1189,7 +1250,6 @@ Para evitar problemas de cobrança, é importante cancelar os pagamentos vencido
 Se o vencimento de um pagamento ocorre em 30 dias, o cancelamento é automático e o status final do mesmo será `cancelado` ou `expirado`. Para mais informações, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds).
 
 ------------
-
 ----[mco]----
 
 Para configurar pagamentos com **Efecty**, envie um **POST** com os devidos parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
@@ -1203,40 +1263,55 @@ Para configurar pagamentos com **Efecty**, envie um **POST** com os devidos par�
 [[[
 ```php
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-  $payment = new MercadoPago\Payment();
-  $payment->transaction_amount = 5000;
-  $payment->description = "Título do produto";
-  $payment->payment_method_id = "efecty";
-  $payment->payer = array(
-    "email" => "test_user_19549678@testuser.com"
-  );
-
-  $payment->save();
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "first_name" => $_POST['payerFirstName'],
+      "last_name" => $_POST['payerLastName'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
-var payment_data = {
-  transaction_amount: 5000,
-  description: 'Título do produto',
-  payment_method_id: 'efecty',
-  payer: {
-    email: 'test_user_19549678@testuser.com'
-  }
-};
-
-mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function (error) {
-
-});
-
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
 import com.mercadopago.*;
@@ -1320,7 +1395,6 @@ curl -X POST \
 }'
 ```
 ]]]
-
 
 A resposta mostrará o **status pendente** até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL que contém as instruções para que o comprador realize o pagamento. Você pode redirecioná-lo para este mesmo link para conclusão do fluxo de pagamento.
 
@@ -1420,9 +1494,7 @@ Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com 
 
 Para mais detalhes sobre como cancelar um pagamento, veja seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds).
 
-
 ------------
-
 ----[mlu]----
 
 Para configurar pagamentos com **Abitab** e/ou **Redpagos**, envie um POST com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
@@ -1436,40 +1508,55 @@ Para configurar pagamentos com **Abitab** e/ou **Redpagos**, envie um POST com o
 [[[
 ```php
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-  $payment = new MercadoPago\Payment();
-  $payment->transaction_amount = 100;
-  $payment->description = "Título do produto";
-  $payment->payment_method_id = "abitab";
-  $payment->payer = array(
-    "email" => "test_user_84162205@testuser.com"
-  );
-
-  $payment->save();
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "first_name" => $_POST['payerFirstName'],
+      "last_name" => $_POST['payerLastName'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
-var payment_data = {
-  transaction_amount: 100,
-  description: 'Título do produto',
-  payment_method_id: 'abitab',
-  payer: {
-    email: 'test_user_84162205@testuser.com'
-  }
-};
-
-mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function (error) {
-
-});
-
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
 import com.mercadopago.*;
@@ -1578,7 +1665,6 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
   }
 ]
 ```
-
 
 ## Cancelar pagamento
 

@@ -1,18 +1,14 @@
-
 # Recibir pagos con tarjetas guardadas
 
 Para que un cliente pueda realizar un pago con las tarjetas previamente guardadas en su cuenta, se requiere una nueva captura del código de seguridad de la tarjeta. Esto se debe a que, por razones de seguridad, Mercado Pago no puede almacenar estos datos.
 
 Para recibir pagos de tarjetas previamente guardadas, sigue los siguientes pasos.
 
-
 ## Exhibir tarjetas guardadas
 
 La primera etapa consiste en mostrar al comprador la lista de tarjetas guardadas para que pueda elegir la opción que desea utilizar al efectuar el pago. Para eso, envía un GET con los atributos requeridos al endpoint [/v1/customers/{customer_id}/cards](/developers/es/reference/cards/_customers_customer_id_cards/get) y ejecuta la solicitud o, si lo prefieres, utiliza los SDKs que se indican a continuación.
 
-
 [[[
-
 ```php
 <?php
   $customer_client = new CustomerClient();
@@ -22,10 +18,9 @@ La primera etapa consiste en mostrar al comprador la lista de tarjetas guardadas
 ```
 ```node
 const client = new MercadoPagoConfig({ accessToken: 'access_token' });
-const customerClient = new Customer(client);
+const customerCard = new CustomerCard(client);
 
-customerClient.listCards({ customerId: '123' })
-	.then((result) => console.log(result));
+customerCard.list({ customerId: '<CUSTOMER_UD>' }).then(console.log).catch(console.log);
 ```
 ```java
 
@@ -63,7 +58,6 @@ curl -X GET \
 
 ```
 ]]]
-
 
 ## Crear formulario de pago
 
@@ -129,11 +123,9 @@ Después de exhibir las tarjetas guardadas, crea el formulario de pago utilizand
 ```
 ]]]
 
-
 ## Capturar código de seguridad
 
 Después de exhibir las tarjetas guardadas y crear el formulario de pago, es necesario realizar la captura del código de seguridad de la tarjeta. Para eso debes crear un token enviando el formulario con el ID de la tarjeta y el código de seguridad a través del siguiente Javascript.
-
 
 [[[
 ```javascript
@@ -158,13 +150,9 @@ Después de exhibir las tarjetas guardadas y crear el formulario de pago, es nec
 ```
 ]]]
 
-
-
 ## Crear pago
 
 Después de obtener el token, es necesario crear el pago con el importe correspondiente. Al realizar un pago con una tarjeta guardada, se debe enviar el ID del cliente junto con el token utilizando el endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) o uno de los SDKs que aparecen a continuación.
-
-
 
 [[[
 ```php
@@ -200,24 +188,25 @@ Después de obtener el token, es necesario crear el pago con el importe correspo
 const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
-customerClient.listCards({ customerId: '123' })
+customerClient.listCards({ customerId: '<CUSTOMER_ID>' })
 	.then((result) => {
 
   const payment = new Payment(client);
 
-  body = {
-    transaction_amount: 100.0,
+  const body = {
+    transaction_amount: 100,
     token: result[0].token,
     description: 'My product',
     installments: 1,
     payment_method_id: 'visa',
-    issuer_id: '123',
+    issuer_id: 123,
     payer: {
       type: 'customer',
       id: '123'
   }
+};
 
-  payment.create({ body }).then((result) => console.log(result));
+  payment.create({ body: body }).then((result) => console.log(result));
 });
 ```
 ```java
@@ -319,4 +308,3 @@ curl -X POST \
 
 ```
 ]]]
-

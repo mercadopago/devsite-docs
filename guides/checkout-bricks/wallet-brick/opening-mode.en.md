@@ -6,7 +6,7 @@ The opening scheme allows you to define how the checkout will open for the user.
 > 
 > Attention
 >
-> It is **extremely important** to pay attention, when creating the preference, to the `back_urls` configuration, as they will be responsible for guiding the return flow to your website when the checkout is completed. For more information, see the [Callback URLs]() section.
+> It is **extremely important** to pay attention, when creating the preference, to the `back_urls` configuration, as they will be responsible for guiding the return flow to your website when the checkout is completed. For more information, see the [Callback URLs.](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web) section
 
 # Redirection scheme to another page
 

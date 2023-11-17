@@ -8,7 +8,6 @@ paths:
   /v1/customers/{customer_id}/cards:
     get:
       tags:
-        - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/checkout-api'
       summary: Get customer cards
       x-summary-i18n:

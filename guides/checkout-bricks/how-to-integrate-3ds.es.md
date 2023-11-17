@@ -18,7 +18,7 @@ La decisión de incluir o no el _Challenge_ depende del emisor de la tarjeta y d
 
 A continuación se presentan los pasos para realizar una integración con 3DS.
 
-1. Después de generar una intención de pago usando [Card Payment Brick](/developers/es/docs/checkout-bricks/card-payment-brick/introduction) o [Payment Brick](/developers/es/docs/checkout-bricks/pago-brick/introduction), es necesario enviar, desde tu backend, una solicitud de pago a Mercado Pago a través de nuestras APIs. La habilitación de la transmisión 3DS 2.0 se realiza agregando el campo `three_d_secure_mode: 'optional'` a esta solicitud.
+1. Después de generar una intención de pago usando [Card Payment Brick](/developers/es/docs/checkout-bricks/card-payment-brick/introduction) o [Payment Brick](/developers/es/docs/checkout-bricks/payment-brick/introduction), es necesario enviar, desde tu backend, una solicitud de pago a Mercado Pago a través de nuestras APIs. La habilitación de la transmisión 3DS 2.0 se realiza agregando el campo `three_d_secure_mode: 'optional'` a esta solicitud.
 
 ```javascript
 var mercadopago = require('mercadopago');
@@ -64,7 +64,7 @@ Descripción general simplificada de la respuesta:
 >
 > El campo devuelto `three_ds_info` contiene la información necesaria para continuar con el proceso de pago si `status_detail` es `pending_challenge`.
 
-2. Para continuar el flujo y mostrar el _Challenge_ de manera simplificada, se recomienda integrar con el [Status Screen Brick](/developers/es/docs/checkout-bricks/status-screen-brick/default-rendering), informando el ID de pago generado, además del contenido del objeto `three_ds_info`, que fueron devueltos por la API de pago.
+2. Para continuar el flujo y mostrar el _Challenge_ de manera simplificada, se recomienda integrar con el [Status Screen Brick](/developers/es/docs/checkout-bricks/status-screen-brick/introduction), informando el ID de pago generado, además del contenido del objeto `three_ds_info`, que fueron devueltos por la API de pago.
 
 Si no desea utilizar el Status Screen Brick en esta etapa, le recomendamos que acceda a la sección [Implementación](/developers/es/docs/checkout-api/how-tos/integrate-3ds) en la documentación de [Checkout API](/developers/es/docs/checkout-api/landing), ya que se necesitarán pasos adicionales para, por ejemplo, capturar el evento emitido cuando se completa el _Challenge_.
 
@@ -126,8 +126,8 @@ Para poder validar pagos con 3DS, ponemos a disposición un **entorno de pruebas
 
 | Flujo	 | Número | Código de seguridad | Fecha de vencimiento |
 |---|---|---|---|
-| _Challenge_ exitoso	 | 5483 9281 6457 4623| 123 | 11/25 |
-| _Challenge_ no autorizado	 | 5361 9568 0611 7557| 123 | 11/25 |
+| Challenge exitoso	 | 5483 9281 6457 4623| 123 | 11/25 |
+| Challenge no autorizado	 | 5361 9568 0611 7557| 123 | 11/25 |
 
 > Los pasos para generar el pago son los mismos [ejemplificados anteriormente](/developers/es/docs/checkout-bricks/how-tos/integrate-3ds#bookmark_integrar_com_3ds) en esta sección.
 

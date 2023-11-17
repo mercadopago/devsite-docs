@@ -2,7 +2,12 @@ Reembolsos podem ser feitos de duas maneiras: **integral**, quando o valor total
 
 Antes de realizar um reembolso, é importante considerar os fatores abaixo.
 
-* **Prazo de reembolso:** é possível reembolsar um pagamento dentro de 180 dias a partir da sua data de aprovação.
+----[mla, mlb, mlm, mlu, mco, mlc]----
+* **Prazo de reembolso:** é possível reembolsar um pagamento dentro de 180 dias a partir da sua data de aprovação. 
+------------
+----[mpe]----
+* **Prazo de reembolso:** é possível reembolsar um pagamento dentro de 90 dias a partir da sua data de aprovação. 
+------------
 * **Saldo em conta:** é preciso ter saldo suficiente disponível em sua conta para efetuar a devolução do valor, caso contrário, a transação não será realizada.
 * **Meio de pagamento:** para pagamentos com cartão de crédito, o valor será devolvido diretamente na fatura. Para outros meios de pagamento como Pix, por exemplo, o valor será devolvido na conta do pagador.
 

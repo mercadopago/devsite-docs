@@ -34,8 +34,6 @@ A continuación mostramos las principales diferencias entre los pasos de migraci
 
 ------------
 
-
-
 Vea a continuación una comparación de los diagramas.
 
 * **Diagrama de secuencia V1**

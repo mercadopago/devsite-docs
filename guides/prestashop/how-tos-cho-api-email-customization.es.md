@@ -1,6 +1,15 @@
-# Cómo personalizar la notificación de pago para ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ 
+----[mla, mlm, mpe, mco, mlu, mlc]----
+# Cómo personalizar la notificación de pago para Checkout API 
+ 
+Habiendo seleccionado el [Checkout API](/developers/es/guides/checkout-api-v2/landing) para recibir pagos de tu tienda, es importante configurar el envío de los e-mails que notificarán al usuario de sus transacciones.
 
-Habiendo seleccionado el [----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/es/guides/checkout-api/introduction) para recibir pagos de tu tienda, es importante configurar el envío de los e-mails que notificarán al usuario de sus transacciones. 
+------------
+----[mlb]----
+# Cómo personalizar la notificación de pago para Checkout Transparente
+ 
+Habiendo seleccionado el [Checkout Transparente](/developers/es/guides/checkout-api-v2/landing) para recibir pagos de tu tienda, es importante configurar el envío de los e-mails que notificarán al usuario de sus transacciones.
+
+------------
 
 Ve a continuación cómo personalizar el envío del **e-mail transaccional** en el panel de administración de PrestaShop.
 

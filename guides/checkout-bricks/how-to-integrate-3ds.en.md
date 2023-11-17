@@ -64,7 +64,7 @@ Simplified response overview:
 >
 > The returned field `three_ds_info` contains the necessary information to continue the payment process if the `status_detail` is `pending_challenge`.
 
-2. To continue the flow and display the _Challenge_ in a simplified way, it is recommended to integrate with the [Status Screen Brick](/developers/en/docs/checkout-bricks/status-screen-brick/default-rendering), informing the ID generated payment, in addition to the content of the `three_ds_info` object, which were returned by the payment API.
+2. To continue the flow and display the _Challenge_ in a simplified way, it is recommended to integrate with the [Status Screen Brick](/developers/en/docs/checkout-bricks/status-screen-brick/introduction), informing the ID generated payment, in addition to the content of the `three_ds_info` object, which were returned by the payment API.
 
 If you do not want to use the Status Screen Brick at this stage, we advise you to access the [Deployment](/developers/en/docs/checkout-api/how-tos/integrate-3ds) section in the [Checkout API](/developers/en/docs/checkout-api/landing) documentation, as additional steps will be needed to, for example, capture the event emitted when the _Challenge_ is completed.
 
@@ -126,8 +126,8 @@ To enable the validation of payments with 3DS, we provide a **sandbox testing en
 
 | Flow | Number | Security code | Expiration date |
 |---|---|---|---|
-| Successful _Challenge_ | 5483 9281 6457 4623| 123 | 11/25 |
-| Unauthorized _Challenge_	 | 5361 9568 0611 7557| 123 | 11/25 |
+| Successful Challenge | 5483 9281 6457 4623| 123 | 11/25 |
+| Unauthorized Challenge | 5361 9568 0611 7557| 123 | 11/25 |
 
 > The steps to generate the payment are the same as [exemplified previously](/developers/en/docs/checkout-bricks/how-tos/integrate-3ds#bookmark_integrar_com_3ds) in this section.
 

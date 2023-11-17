@@ -1,6 +1,6 @@
 # Ticket checkout
 
-With **ticket checkout**, offer cash payments in your store using the [Checkout API](/developers/en/guides/checkout-api/landing).
+With **ticket checkout**, offer cash payments in your store using the [----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------](/developers/en/guides/checkout-api/landing).
 
 To integrate the payment method, follow the steps below.
 

@@ -1,4 +1,5 @@
 {
+  "url": "https://api.mercadopago.com",
   "paths": {
     "/pos": {
       "post": {
@@ -81,9 +82,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "Success",
+              "es": "Success",
               "pt": "Success",
-              "es": "Success"
+              "en": "Success"
             },
             "content": {
               "application/json": {
@@ -94,9 +95,9 @@
                       "type": "number",
                       "example": 2711382,
                       "description": {
-                        "en": "id",
+                        "es": "id",
                         "pt": "id",
-                        "es": "id"
+                        "en": "id"
                       }
                     },
                     "qr": {
@@ -106,97 +107,97 @@
                           "type": "string",
                           "example": "https://www.mercadopago.com/instore/merchant/qr/2711382/0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png",
                           "description": {
-                            "en": "image",
+                            "es": "image",
                             "pt": "image",
-                            "es": "image"
+                            "en": "image"
                           }
                         },
                         "template_document": {
                           "type": "string",
                           "example": "https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.pdf",
                           "description": {
-                            "en": "template_document",
+                            "es": "template_document",
                             "pt": "template_document",
-                            "es": "template_document"
+                            "en": "template_document"
                           }
                         },
                         "template_image": {
                           "type": "string",
                           "example": "https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png",
                           "description": {
-                            "en": "template_image",
+                            "es": "template_image",
                             "pt": "template_image",
-                            "es": "template_image"
+                            "en": "template_image"
                           }
                         }
                       },
                       "description": {
-                        "en": "qr",
+                        "es": "qr",
                         "pt": "qr",
-                        "es": "qr"
+                        "en": "qr"
                       }
                     },
                     "status": {
                       "type": "string",
                       "example": "active",
                       "description": {
-                        "en": "status",
+                        "es": "status",
                         "pt": "status",
-                        "es": "status"
+                        "en": "status"
                       }
                     },
                     "date_created": {
                       "type": "string",
                       "example": "2019-08-22T14:11:12.000Z",
                       "description": {
-                        "en": "date_created",
+                        "es": "date_created",
                         "pt": "date_created",
-                        "es": "date_created"
+                        "en": "date_created"
                       }
                     },
                     "date_last_updated": {
                       "type": "string",
                       "example": "2019-08-22T14:11:12.000Z",
                       "description": {
-                        "en": "date_last_updated",
+                        "es": "date_last_updated",
                         "pt": "date_last_updated",
-                        "es": "date_last_updated"
+                        "en": "date_last_updated"
                       }
                     },
                     "uuid": {
                       "type": "string",
                       "example": "0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1",
                       "description": {
-                        "en": "uuid",
+                        "es": "uuid",
                         "pt": "uuid",
-                        "es": "uuid"
+                        "en": "uuid"
                       }
                     },
                     "user_id": {
                       "type": "number",
                       "example": 446566691,
                       "description": {
-                        "en": "user_id",
+                        "es": "user_id",
                         "pt": "user_id",
-                        "es": "user_id"
+                        "en": "user_id"
                       }
                     },
                     "name": {
                       "type": "string",
                       "example": "First POS",
                       "description": {
-                        "en": "name",
+                        "es": "name",
                         "pt": "name",
-                        "es": "name"
+                        "en": "name"
                       }
                     },
                     "fixed_amount": {
                       "type": "boolean",
                       "example": false,
                       "description": {
-                        "en": "fixed_amount",
+                        "es": "fixed_amount",
                         "pt": "fixed_amount",
-                        "es": "fixed_amount"
+                        "en": "fixed_amount"
                       }
                     },
                     "category": {
@@ -206,35 +207,35 @@
                       "type": "string",
                       "example": 1234567,
                       "description": {
-                        "en": "store_id",
+                        "es": "store_id",
                         "pt": "store_id",
-                        "es": "store_id"
+                        "en": "store_id"
                       }
                     },
                     "external_store_id": {
                       "type": "string",
                       "example": "SUC001",
                       "description": {
-                        "en": "external_store_id",
+                        "es": "external_store_id",
                         "pt": "external_store_id",
-                        "es": "external_store_id"
+                        "en": "external_store_id"
                       }
                     },
                     "url": {
                       "type": "string",
                       "description": {
-                        "en": "url",
+                        "es": "url",
                         "pt": "url",
-                        "es": "url"
+                        "en": "url"
                       }
                     },
                     "external_id": {
                       "type": "string",
                       "example": "SUC001POS001",
                       "description": {
-                        "en": "external_id",
+                        "es": "external_id",
                         "pt": "external_id",
-                        "es": "external_id"
+                        "en": "external_id"
                       }
                     }
                   }
@@ -499,7 +500,11 @@
           {
             "name": "external_id",
             "in": "query",
-            "description": "External ID",
+            "description": {
+              "es": "External ID",
+              "pt": "External ID",
+              "en": "External ID"
+            },
             "required": false,
             "schema": {
               "type": "string",
@@ -509,7 +514,11 @@
           {
             "name": "external_store_id",
             "in": "query",
-            "description": "External Store ID",
+            "description": {
+              "es": "External Store ID",
+              "pt": "External Store ID",
+              "en": "External Store ID"
+            },
             "required": false,
             "schema": {
               "type": "string"
@@ -518,7 +527,11 @@
           {
             "name": "store_id",
             "in": "query",
-            "description": "Store ID",
+            "description": {
+              "es": "Store ID",
+              "pt": "Store ID",
+              "en": "Store ID"
+            },
             "required": false,
             "schema": {
               "type": "string"
@@ -527,7 +540,11 @@
           {
             "name": "category",
             "in": "query",
-            "description": "Category",
+            "description": {
+              "es": "Category",
+              "pt": "Category",
+              "en": "Category"
+            },
             "required": false,
             "schema": {
               "type": "string"
@@ -537,9 +554,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "Success",
+              "es": "Success",
               "pt": "Success",
-              "es": "Success"
+              "en": "Success"
             },
             "content": {
               "application/json": {
@@ -553,34 +570,34 @@
                           "type": "number",
                           "example": 1,
                           "description": {
-                            "en": "total",
+                            "es": "total",
                             "pt": "total",
-                            "es": "total"
+                            "en": "total"
                           }
                         },
                         "offset": {
                           "type": "number",
                           "example": 0,
                           "description": {
-                            "en": "offset",
+                            "es": "offset",
                             "pt": "offset",
-                            "es": "offset"
+                            "en": "offset"
                           }
                         },
                         "limit": {
                           "type": "number",
                           "example": 0,
                           "description": {
-                            "en": "limit",
+                            "es": "limit",
                             "pt": "limit",
-                            "es": "limit"
+                            "en": "limit"
                           }
                         }
                       },
                       "description": {
-                        "en": "paging",
+                        "es": "paging",
                         "pt": "paging",
-                        "es": "paging"
+                        "en": "paging"
                       }
                     },
                     "results": {
@@ -591,16 +608,28 @@
                           "user_id": {
                             "type": "number",
                             "example": 446566691,
-                            "description": "user_id"
+                            "description": {
+                              "es": "user_id",
+                              "pt": "user_id",
+                              "en": "user_id"
+                            }
                           },
                           "name": {
                             "type": "string",
                             "example": "Caja Principal",
-                            "description": "name"
+                            "description": {
+                              "es": "name",
+                              "pt": "name",
+                              "en": "name"
+                            }
                           },
                           "fixed_amount": {
                             "type": "boolean",
-                            "description": "fixed_amount"
+                            "description": {
+                              "es": "fixed_amount",
+                              "pt": "fixed_amount",
+                              "en": "fixed_amount"
+                            }
                           },
                           "category": {
                             "$ref": "#/components/schemas/category"
@@ -608,17 +637,29 @@
                           "store_id": {
                             "type": "string",
                             "example": 1234567,
-                            "description": "store_id"
+                            "description": {
+                              "es": "store_id",
+                              "pt": "store_id",
+                              "en": "store_id"
+                            }
                           },
                           "external_id": {
                             "type": "string",
                             "example": "SUC001POS001",
-                            "description": "external_id"
+                            "description": {
+                              "es": "external_id",
+                              "pt": "external_id",
+                              "en": "external_id"
+                            }
                           },
                           "id": {
                             "type": "number",
                             "example": 1988157,
-                            "description": "id"
+                            "description": {
+                              "es": "id",
+                              "pt": "id",
+                              "en": "id"
+                            }
                           },
                           "qr": {
                             "type": "object",
@@ -626,42 +667,70 @@
                               "image": {
                                 "type": "string",
                                 "example": "https://www.mercadopago.com/instore/merchant/qr/1988157/1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.png",
-                                "description": "image"
+                                "description": {
+                                  "es": "image",
+                                  "pt": "image",
+                                  "en": "image"
+                                }
                               },
                               "template_document": {
                                 "type": "string",
                                 "example": "https://www.mercadopago.com/instore/merchant/qr/1988157/template_1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.pdf",
-                                "description": "template_document"
+                                "description": {
+                                  "es": "template_document",
+                                  "pt": "template_document",
+                                  "en": "template_document"
+                                }
                               },
                               "template_image": {
                                 "type": "string",
                                 "example": "https://www.mercadopago.com/instore/merchant/qr/1988157/template_1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.png",
-                                "description": "template_image"
+                                "description": {
+                                  "es": "template_image",
+                                  "pt": "template_image",
+                                  "en": "template_image"
+                                }
                               }
                             },
-                            "description": "qr"
+                            "description": {
+                              "es": "qr",
+                              "pt": "qr",
+                              "en": "qr"
+                            }
                           },
                           "date_created": {
                             "type": "string",
                             "example": "2019-06-24T13:31:56.000Z",
-                            "description": "date_created"
+                            "description": {
+                              "es": "date_created",
+                              "pt": "date_created",
+                              "en": "date_created"
+                            }
                           },
                           "date_last_updated": {
                             "type": "string",
                             "example": "2019-08-07T21:07:26.000Z",
-                            "description": "date_last_updated"
+                            "description": {
+                              "es": "date_last_updated",
+                              "pt": "date_last_updated",
+                              "en": "date_last_updated"
+                            }
                           },
                           "external_store_id": {
                             "type": "string",
                             "example": "SUC001",
-                            "description": "external_store_id"
+                            "description": {
+                              "es": "external_store_id",
+                              "pt": "external_store_id",
+                              "en": "external_store_id"
+                            }
                           }
                         }
                       },
                       "description": {
-                        "en": "results",
+                        "es": "results",
                         "pt": "results",
-                        "es": "results"
+                        "en": "results"
                       }
                     }
                   }
@@ -779,8 +848,8 @@
             "in": "path",
             "description": {
               "en": "POS Id",
-              "es": "POS Id",
-              "por": "POS Id"
+              "pt": "POS Id",
+              "es": "POS Id"
             },
             "required": true,
             "schema": {
@@ -792,9 +861,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "Success",
+              "es": "Success",
               "pt": "Success",
-              "es": "Success"
+              "en": "Success"
             },
             "content": {
               "application/json": {
@@ -858,6 +927,14 @@
                     "fixed_amount": {
                       "type": "boolean",
                       "example": false
+                    },
+                    "store_id": {
+                      "type": "string",
+                      "example": 56807753
+                    },
+                    "external_store_id": {
+                      "type": "string",
+                      "example": "SUC01"
                     },
                     "external_id": {
                       "type": "string",
@@ -973,8 +1050,8 @@
             "in": "path",
             "description": {
               "en": "POS Id",
-              "es": "POS Id",
-              "por": "POS Id"
+              "pt": "POS Id",
+              "es": "POS Id"
             },
             "required": true,
             "schema": {
@@ -993,8 +1070,8 @@
                     "type": "string",
                     "description": {
                       "en": "Name of the POS.",
-                      "es": "Nombre de la caja",
-                      "por": "Nome da caixa"
+                      "pt": "Nome da caixa",
+                      "es": "Nombre de la caja"
                     },
                     "example": "First POS"
                   },
@@ -1002,8 +1079,8 @@
                     "type": "boolean",
                     "description": {
                       "en": "Define if the customer can insert the amount to be paid.",
-                      "es": "Determina si el cliente puede insertar el monto a pagar",
-                      "por": "Determine se o cliente pode inserir o valor a ser pago"
+                      "pt": "Determine se o cliente pode inserir o valor a ser pago",
+                      "es": "Determina si el cliente puede insertar el monto a pagar"
                     },
                     "example": false
                   },
@@ -1014,18 +1091,26 @@
                     "type": "string",
                     "description": {
                       "en": "Store identifier to which the point of sale belongs.",
-                      "es": "Identificador de la sucursal a la que pertenece el Punto de Venta",
-                      "por": "Identificador da loja à qual o caixa pertence"
+                      "pt": "Identificador da loja à qual o caixa pertence",
+                      "es": "Identificador de la sucursal a la que pertenece el Punto de Venta"
                     },
                     "example": 1234567
                   },
                   "external_store_id": {
                     "type": "string",
-                    "description": "External_id of the store to which the pos belongs defined by integrator system."
+                    "description": {
+                      "es": "External_id of the store to which the pos belongs defined by integrator system.",
+                      "pt": "External_id of the store to which the pos belongs defined by integrator system.",
+                      "en": "External_id of the store to which the pos belongs defined by integrator system."
+                    }
                   },
                   "url": {
                     "type": "string",
-                    "description": "URL to get the order of the integrator system. It is optional and is used only in the unattended integration model."
+                    "description": {
+                      "es": "URL to get the order of the integrator system. It is optional and is used only in the unattended integration model.",
+                      "pt": "URL to get the order of the integrator system. It is optional and is used only in the unattended integration model.",
+                      "en": "URL to get the order of the integrator system. It is optional and is used only in the unattended integration model."
+                    }
                   }
                 }
               }
@@ -1035,9 +1120,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "success",
+              "es": "success",
               "pt": "success",
-              "es": "success"
+              "en": "success"
             },
             "content": {
               "application/json": {
@@ -1048,9 +1133,9 @@
                       "type": "number",
                       "example": 2711382,
                       "description": {
-                        "en": "id",
+                        "es": "id",
                         "pt": "id",
-                        "es": "id"
+                        "en": "id"
                       }
                     },
                     "qr": {
@@ -1060,97 +1145,97 @@
                           "type": "string",
                           "example": "https://www.mercadopago.com/instore/merchant/qr/2711382/0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png",
                           "description": {
-                            "en": "image",
+                            "es": "image",
                             "pt": "image",
-                            "es": "image"
+                            "en": "image"
                           }
                         },
                         "template_document": {
                           "type": "string",
                           "example": "https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.pdf",
                           "description": {
-                            "en": "template_document",
+                            "es": "template_document",
                             "pt": "template_document",
-                            "es": "template_document"
+                            "en": "template_document"
                           }
                         },
                         "template_image": {
                           "type": "string",
                           "example": "https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png",
                           "description": {
-                            "en": "template_image",
+                            "es": "template_image",
                             "pt": "template_image",
-                            "es": "template_image"
+                            "en": "template_image"
                           }
                         }
                       },
                       "description": {
-                        "en": "qr",
+                        "es": "qr",
                         "pt": "qr",
-                        "es": "qr"
+                        "en": "qr"
                       }
                     },
                     "status": {
                       "type": "string",
                       "example": "active",
                       "description": {
-                        "en": "status",
+                        "es": "status",
                         "pt": "status",
-                        "es": "status"
+                        "en": "status"
                       }
                     },
                     "date_created": {
                       "type": "string",
                       "example": "2019-08-22T14:11:12.000Z",
                       "description": {
-                        "en": "date_created",
+                        "es": "date_created",
                         "pt": "date_created",
-                        "es": "date_created"
+                        "en": "date_created"
                       }
                     },
                     "date_last_updated": {
                       "type": "string",
                       "example": "2019-08-22T14:11:12.000Z",
                       "description": {
-                        "en": "date_last_updated",
+                        "es": "date_last_updated",
                         "pt": "date_last_updated",
-                        "es": "date_last_updated"
+                        "en": "date_last_updated"
                       }
                     },
                     "uuid": {
                       "type": "string",
                       "example": "0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1",
                       "description": {
-                        "en": "uuid",
+                        "es": "uuid",
                         "pt": "uuid",
-                        "es": "uuid"
+                        "en": "uuid"
                       }
                     },
                     "user_id": {
                       "type": "number",
                       "example": 446566691,
                       "description": {
-                        "en": "user_id",
+                        "es": "user_id",
                         "pt": "user_id",
-                        "es": "user_id"
+                        "en": "user_id"
                       }
                     },
                     "name": {
                       "type": "string",
                       "example": "First POS",
                       "description": {
-                        "en": "name",
+                        "es": "name",
                         "pt": "name",
-                        "es": "name"
+                        "en": "name"
                       }
                     },
                     "fixed_amount": {
                       "type": "boolean",
                       "example": false,
                       "description": {
-                        "en": "fixed_amount",
+                        "es": "fixed_amount",
                         "pt": "fixed_amount",
-                        "es": "fixed_amount"
+                        "en": "fixed_amount"
                       }
                     },
                     "category": {
@@ -1160,35 +1245,35 @@
                       "type": "string",
                       "example": 1234567,
                       "description": {
-                        "en": "store_id",
+                        "es": "store_id",
                         "pt": "store_id",
-                        "es": "store_id"
+                        "en": "store_id"
                       }
                     },
                     "external_store_id": {
                       "type": "string",
                       "example": "SUC001",
                       "description": {
-                        "en": "external_store_id",
+                        "es": "external_store_id",
                         "pt": "external_store_id",
-                        "es": "external_store_id"
+                        "en": "external_store_id"
                       }
                     },
                     "url": {
                       "type": "string",
                       "description": {
-                        "en": "url",
+                        "es": "url",
                         "pt": "url",
-                        "es": "url"
+                        "en": "url"
                       }
                     },
                     "external_id": {
                       "type": "string",
                       "example": "SUC001POS002",
                       "description": {
-                        "en": "external_id",
+                        "es": "external_id",
                         "pt": "external_id",
-                        "es": "external_id"
+                        "en": "external_id"
                       }
                     },
                     "site": {
@@ -1471,8 +1556,8 @@
             "in": "path",
             "description": {
               "en": "POS Id",
-              "es": "POS Id",
-              "por": "POS Id"
+              "pt": "POS Id",
+              "es": "POS Id"
             },
             "required": true,
             "schema": {
@@ -1556,29 +1641,140 @@
         "example": 621102,
         "description": {
           "en": "MCC code that indicates the category of the Point of Sale. If not specified, it remains as a generic category.",
-          "es": "Código MCC que indica el rubro del Punto de Venta. Si no se especifica, queda como categoría genérica",
-          "por": "Código MCC que indica a categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica"
+          "pt": "Código MCC que indica a categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica",
+          "es": "Código MCC que indica el rubro del Punto de Venta. Si no se especifica, queda como categoría genérica"
         },
         "enum": [
-          "Gastronomy --",
-          "621102 -- Argentina",
-          "5611203 -- Brazil",
-          "5812 -- Mexico",
-          "5611 -- Colombia",
-          "5520 -- Peru",
-          "56101 -- Uruguay",
-          "561000 -- Chile",
-          "Gas station --",
-          "473000 -- Argentina",
-          "4731300 -- Brazil",
-          "468419 -- Mexico",
-          "4731 -- Colombia",
-          "5050 -- Peru",
-          "47300 -- Uruguay",
-          "473001 -- Chile"
+          {
+            "title": "Gastronomy",
+            "description": {
+              "en": "",
+              "es": "",
+              "pt": ""
+            }
+          },
+          {
+            "title": "621102",
+            "description": {
+              "en": "Argentina",
+              "es": "Argentina",
+              "pt": "Argentina"
+            }
+          },
+          {
+            "title": "5611203",
+            "description": {
+              "en": "Brazil",
+              "es": "Brazil",
+              "pt": "Brazil"
+            }
+          },
+          {
+            "title": "5812",
+            "description": {
+              "en": "Mexico",
+              "es": "Mexico",
+              "pt": "Mexico"
+            }
+          },
+          {
+            "title": "5611",
+            "description": {
+              "en": "Colombia",
+              "es": "Colombia",
+              "pt": "Colombia"
+            }
+          },
+          {
+            "title": "5520",
+            "description": {
+              "en": "Peru",
+              "es": "Peru",
+              "pt": "Peru"
+            }
+          },
+          {
+            "title": "56101",
+            "description": {
+              "en": "Uruguay",
+              "es": "Uruguay",
+              "pt": "Uruguay"
+            }
+          },
+          {
+            "title": "561000",
+            "description": {
+              "en": "Chile",
+              "es": "Chile",
+              "pt": "Chile"
+            }
+          },
+          {
+            "title": "Gas station",
+            "description": {
+              "en": "",
+              "es": "",
+              "pt": ""
+            }
+          },
+          {
+            "title": "473000",
+            "description": {
+              "en": "Argentina",
+              "es": "Argentina",
+              "pt": "Argentina"
+            }
+          },
+          {
+            "title": "4731300",
+            "description": {
+              "en": "Brazil",
+              "es": "Brazil",
+              "pt": "Brazil"
+            }
+          },
+          {
+            "title": "468419",
+            "description": {
+              "en": "Mexico",
+              "es": "Mexico",
+              "pt": "Mexico"
+            }
+          },
+          {
+            "title": "4731",
+            "description": {
+              "en": "Colombia",
+              "es": "Colombia",
+              "pt": "Colombia"
+            }
+          },
+          {
+            "title": "5050",
+            "description": {
+              "en": "Peru",
+              "es": "Peru",
+              "pt": "Peru"
+            }
+          },
+          {
+            "title": "47300",
+            "description": {
+              "en": "Uruguay",
+              "es": "Uruguay",
+              "pt": "Uruguay"
+            }
+          },
+          {
+            "title": "473001",
+            "description": {
+              "en": "Chile",
+              "es": "Chile",
+              "pt": "Chile"
+            }
+          }
         ]
       }
     }
-  },
-  "url": "https://api.mercadopago.com"
+  }
 }

@@ -145,23 +145,3 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 > See more information about signatures used when it is necessary to have the same signature on different occasions and organize them into identifiable groups.
 >
 > [Suscripciones con plan asociado](/developers/en/docs/subscriptions/integration-configuration/subscriptions-associated-plan)
-
-----[mlb]----
-> NEXT_STEP_CARD_EN
->
-> Boleto bancário
->
-> Find out how to make available to the subscriber the option of paying the subscription with a boleto bancário.
->
-> [Boleto bancário](/developers/es/docs/subscriptions/integration-customization/payment-methods/boleto-bancario)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> NEXT_STEP_CARD_EN
->
-> Proportional value (Pro rata)
->
-> See how to set the amount charged to the subscriber if the subscription starts on a different day than the billing date set by the seller.
->
-> [Valor proporcional (Pro rata)](/developers/en/docs/subscriptions/integration-customization/payment-methods/proportional-amount)
-------------
