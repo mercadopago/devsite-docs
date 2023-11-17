@@ -3,7 +3,7 @@
 
 Com o Checkout Transparente do Mercado Pago você pode oferecer pagamentos com **PSE - Pagos Seguros en Línea -**, serviço que permite fazer compras e pagamentos pela Internet debitando recursos online diretamente da poupança, conta corrente ou depósito eletrônico.
 
-Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um **GET** com sua _Public Key_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) ou, se preferir, faça a requisição utilizando nossos SDKs abaixo.
+Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um **GET** com sua _Access Token_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) ou, se preferir, faça a requisição utilizando nossos SDKs abaixo.
 
 [[[
 ```php
@@ -186,9 +186,7 @@ Com a biblioteca `MercadoPago.js` incluída, adicione o formulário de pagamento
 
 ## Obter tipos de documento
 
-Após configurar a credencial, é preciso obter os tipos de documento que farão parte do preenchimento do formulário para pagamento. 
-
-Incluindo o elemento do tipo `select` com o ID `id = docType` que está no formulário, será possível preencher automaticamente as opções disponíveis quando chamar a função a seguir:
+Após adicionar o formulário de pagamento, é necessário obter os tipos de documentos que serão utilizados para preenchê-lo. Estes documentos dependerão do tipo de pessoa (física ou jurídica) selecionada durante a adição do formulário de pagamento, e você poderá obtê-los automaticamente através da seguinte função:
 
 [[[
 ```javascript

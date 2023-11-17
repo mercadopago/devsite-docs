@@ -3,7 +3,7 @@
 
 With Mercado Pago Checkout API you can offer payments with **PSE -Secure Online Payments-**, the service that allows you to make purchases and payments over the Internet by debiting online resources directly from savings and checking accounts, or electronic deposits.
 
-To get a detailed list of all payment methods available for integration, send a **GET** with your _Public Key_ to the endpoint [/v1/payment_methods](/developers/en/reference/payment_methods/_payment_methods/get) or, if you prefer, make the request using the SDKs below.
+To get a detailed list of all payment methods available for integration, send a **GET** with your _Access Token_ to the endpoint [/v1/payment_methods](/developers/en/reference/payment_methods/_payment_methods/get) or, if you prefer, make the request using the SDKs below.
 
 [[[
 ```php
@@ -186,9 +186,7 @@ With the `MercadoPago.js` library included, add the payment form below to your p
 
 ## Get document types
 
-After configuring the credential, it is necessary to obtain the types of documents that will be part of filling out the payment form.
-
-By including the element of type `select` with the ID `id = docType` that is on the form, it will be possible to automatically fill in the available options when calling the following function:
+After adding the payment form, you need to obtain the types of documents that will be used to fill it out. These documents will depend on the type of person (natural or legal) selected while adding the payment form, and you can obtain them automatically using the following function:
 
 [[[
 ```javascript
