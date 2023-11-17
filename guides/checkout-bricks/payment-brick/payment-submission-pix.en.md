@@ -20,56 +20,32 @@ To configure payment with Pix, send a **POST** to the endpoint [/v1/payments](/d
   use MercadoPago\Client\Payment\PaymentClient;
   use MercadoPago\MercadoPagoConfig;
 
-  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+  MercadoPagoConfig::setAccessToken("<YOUR_ACCESS_TOKEN>");
 
   $client = new PaymentClient();
   $request_options = new MPRequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-
   $payment = $client->create([
-    "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
-    "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
-    "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
+    "transaction_amount" => 100,
+    "description" => "<DESCRIPTION>",
+    "payment_method_id" => "pix",
     "payer" => [
-      "email" => $_POST['email'],
-      "first_name" => $_POST['payerFirstName'],
-      "last_name" => $_POST['payerLastName'],
-      "identification" => [
-        "type" => $_POST['identificationType'],
-        "number" => $_POST['number']
-      ]
+      "email" => "<EMAIL>",
     ]
   ], $request_options);
   echo implode($payment);
 ?>
 ```
 ```node
-import { Payment, MercadoPagoConfig } from 'mercadopago';
-
-const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
-
-payment.create({
-    body: { 
-        transaction_amount: req.transaction_amount,
-        token: req.token,
-        description: req.description,
-        installments: req.installments,
-        payment_method_id: req.paymentMethodId,
-        issuer_id: req.issuer,
-            payer: {
-            email: req.email,
-            identification: {
-        type: req.identificationType,
-        number: req.number
-    }}},
-    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
-})
-.then((result) => console.log(result))
-.catch((error) => console.log(error));
+payment.create({ body: {
+	transaction_amount: 12.34,
+	description: '<DESCRIPTION>',
+	payment_method_id: 'pix',
+	payer: {
+		email: '<EMAIL>'
+	}}, requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' } 
+}).then(console.log).catch(console.log);
 ```
 ```java
 Map<String, String> customHeaders = new HashMap<>();

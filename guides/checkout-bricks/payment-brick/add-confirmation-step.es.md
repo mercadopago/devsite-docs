@@ -6,7 +6,7 @@ Esta etapa adicional brinda al comprador una experiencia más transparente y seg
 
 <center>
 
-![review-confirm-es](checkout-bricks/review-confirm-es.gif)
+![review-confirm](checkout-bricks/review-confirm.gif)
 
 </center>
 
