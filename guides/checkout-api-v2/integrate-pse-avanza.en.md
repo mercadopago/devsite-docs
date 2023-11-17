@@ -606,7 +606,7 @@ The following are **mandatory** fields that must be completed when sending a pay
 
 | Field | Description | Posssible values/validaations | Request to get the values |
 |:---:|:---:|:---:|:---:|
-| `transaction_details.financial_institution` | Bank informed in the POST to make the electronic transfer. You must show the list to the user and allow him to select. This list usually refreshes, so it’s  Se debe mostrar al usuario el listado de bancos y permitirle seleccionar. El listado se actualiza, por lo que recommended to consume the information every hour. | - | https://api.mercadopago.com/v1/payment_methods/search?site_id=MCO&id=pse&public_key=**YOUR_PUBLIC_KEY**  |
+| `transaction_details.financial_institution` | Bank informed in the POST to make the electronic transfer. You must show the list to the user and allow him to select. This list usually refreshes, so it’s  Se debe mostrar al usuario el listado de bancos y permitirle seleccionar. El listado se actualiza, por lo que recommended to consume the information every hour. | - | https://api.mercadopago.com/v1/payment_methods/search?site_id=MCO&id=pse&public_key=YOUR_PUBLIC_KEY  |
 | `payer.entity_type` | Type of personality, physical or legal. | *individual* or *association* | - |
 | `payer.identification` | Type and number of the buyer's document. | - | curl -X GET \<br>'https://api.mercadopago.com/v1/identification_types' \<br>-H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
 | `additional_info.ip_address` |  Buyer’s IP address, where the payment is made.. | - | - |
@@ -667,15 +667,15 @@ Once the buyer makes the payment on the platform of the selected bank, they are 
 
 Below, we show you examples of messages that you can offer, according to the three possible states in which a payment can be found.
 
-#### * Approved status
+#### Approved status
 
 ![image of an approved transaction and the redirection ](/images/api/pse-transaccion-aprobada.png)
 
-#### * Pending status
+#### Pending status
 
 ![Pending transaction image](/images/api/pse-transaccion-pendiente.png)
 
-#### * Rejected status
+#### Rejected status
 
 ![Rejected transaction image](/images/api/pse-transaccion-rechazada.png)
 

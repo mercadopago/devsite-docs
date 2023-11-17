@@ -68,7 +68,7 @@ curl -X GET \
 >
 > Nota
 >
-> Recomendamos que, al momento de exhibir el listado de bancos, lo hagas en orden alfabético y de manera ascendente ; es decir, de la A a la Z. 
+> Recomendamos que, al momento de exhibir el listado de bancos, lo hagas en orden alfabético y de manera ascendente; es decir, de la A a la Z. 
 
 Para ofrecer pagos con **PSE**, sigue los siguientes pasos.
 
@@ -612,7 +612,7 @@ Los siguientes campos para enviar un pago son **obligatorios** y deberás comple
 
 | Campo | Descripción | Valores posibles/validaciones | Llamado para obtener los valores |
 |:---:|:---:|:---:|:---:|
-| `transaction_details.financial_institution` | Banco informado en el POST para hacer la transferencia electrónica. Se debe mostrar al usuario el listado de bancos y permitirle seleccionar. El listado se actualiza, por lo que se recomienda consumir la información cada una hora. | - | https://api.mercadopago.com/v1/payment_methods/search?site_id=MCO&id=pse&public_key=**YOUR_PUBLIC_KEY**  |
+| `transaction_details.financial_institution` | Banco informado en el POST para hacer la transferencia electrónica. Se debe mostrar al usuario el listado de bancos y permitirle seleccionar. El listado se actualiza, por lo que se recomienda consumir la información cada una hora. | - | https://api.mercadopago.com/v1/payment_methods/search?site_id=MCO&id=pse&public_key=YOUR_PUBLIC_KEY  |
 | `payer.entity_type` | Tipo de personería, física o jurídica.  | *individual* o *association* | - |
 | `payer.identification` | Tipo y número de documento del comprador. | - | curl -X GET \<br>'https://api.mercadopago.com/v1/identification_types' \<br>-H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
 | `additional_info.ip_address` | Dirección IP del comprador, donde se genera el pago. | - | - |
@@ -673,15 +673,15 @@ Una vez que el comprador realiza el pago en la plataforma del banco seleccionado
 
 A continuación, te mostramos ejemplos de mensajes que puedes ofrecerle, de acuerdo a los tres estados posibles en los que puede encontrarse un pago.
 
-#### * Estado aprobado
+#### Estado aprobado
 
 ![imagen de transacción exitosa y redireccionamiento](/images/api/pse-transaccion-aprobada.png)
 
-#### * Estado pendiente
+#### Estado pendiente
 
 ![imagen de transacción pendiente](/images/api/pse-transaccion-pendiente.png)
 
-#### * Estado rechazado
+#### Estado rechazado
 
 ![imagen de transacción rechazada](/images/api/pse-transaccion-rechazada.png)
 

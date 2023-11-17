@@ -606,7 +606,7 @@ Os seguintes campos para enviar um pagamento são **obrigatórios** e você deve
 
 | Campo | Descrição | Possíveis valores/validações | Chamado para obter os valores |
 |:---:|:---:|:---:|:---:|
-| `transaction_details.financial_institution` | Banco informado no POST para efetuar a transferência eletrônica. A lista de bancos deve ser mostrada ao usuário e permitida a seleção. A lista é atualizada, por isso é recomendável consumir as informações a cada hora. | - | https://api.mercadopago.com/v1/payment_methods/search?site_id=MCO&id=pse&public_key=**YOUR_PUBLIC_KEY**  |
+| `transaction_details.financial_institution` | Banco informado no POST para efetuar a transferência eletrônica. A lista de bancos deve ser mostrada ao usuário e permitida a seleção. A lista é atualizada, por isso é recomendável consumir as informações a cada hora. | - | https://api.mercadopago.com/v1/payment_methods/search?site_id=MCO&id=pse&public_key=YOUR_PUBLIC_KEY  |
 | `payer.entity_type` | Tipo de pessoa, física ou jurídica. | *individual* ou *association* | - |
 | `payer.identification` | Tipo e número do documento do comprador. | - | curl -X GET \<br>'https://api.mercadopago.com/v1/identification_types' \<br>-H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
 | `additional_info.ip_address` | IP address do comprador, onde o pagamento é gerado. | - | - |
@@ -666,15 +666,15 @@ Assim que o comprador efetuar o pagamento na plataforma do banco selecionado, el
 
 A seguir mostramos exemplos de mensagens que você pode oferecer, de acordo com os três status possíveis em que o pagamento pode ser encontrado.
 
-#### * Status aprovado
+#### Status aprovado
 
 ![imagem de transação bem-sucedida e redirecionamento](/images/api/pse-transaccion-aprobada.png)
 
-#### * Status pendente
+#### Status pendente
 
 ![imagem de transação pendente](/images/api/pse-transaccion-pendiente.png)
 
-#### * Status rejeitado
+#### Status rejeitado
 
 ![imagem de transação rejeitada](/images/api/pse-transaccion-rechazada.png)
 
