@@ -29,14 +29,14 @@ Both types of credentials consist of two pairs of keys that you should use accor
 >
 > Note
 >
-> If necessary, you can renew your credentials for security reasons or any other relevant reason. To renew them, simply click on **More options** > **Renew**.
+> If necessary, you can renew your credentials for security reasons or any other relevant reason. To renew them, simply click on **More options** (three dots at the end of the card) > **Renew**.
 
 ## Sharing credentials
 
 When receiving assistance in the integration or configuration of your payment channels, you can securely share your credentials. To do this, follow the steps below:
 
 1. Access your Mercado Pago account.
-2. Navigate to [Your Business > Settings > Management and Administration > Credentials](https://www.mercadopago/settings/account/credentials).
+2. Navigate to [Your Business > Settings > Management and Administration > Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 3. Within this page, select the option "Share my credentials".
 4. Enter the email of the person you want to grant access to.
 5. Make sure the email is associated with the Mercado Pago account of the respective person.

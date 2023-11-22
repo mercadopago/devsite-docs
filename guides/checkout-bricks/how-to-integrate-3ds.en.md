@@ -102,15 +102,25 @@ The Status Screen Brick will display a transition indicating redirection and the
 
 </center>
 
+<<<<<<< HEAD
 The user must respond to the challenge for the transition to be properly validated. It is worth noting that the _Challenge_ experience is the sole responsibility of the bank in charge.
+=======
+The user must respond to the _Challenge_ for the transition to be properly validated. It is worth noting that the _Challenge_ experience is the sole responsibility of the bank in charge.
+>>>>>>> 38a7e1757d73aa0a25ec209376144363041bffa1
 
 > NOTE
 >
 > Important
 >
+<<<<<<< HEAD
 > For security reasons, the payment will be rejected if the _Challenge_ process is not started within 30 seconds after its creation. Therefore, it is important that the challenge starts exactly after its generation.
 
 3. After solving the challenge, the final result of the payment will be displayed according to the answer issued by the bank at the end of the _Challenge_.
+=======
+> For security reasons, the payment will be rejected if the _Challenge_ process is not started within 30 seconds after its creation. Therefore, it is important that the _Challenge_ starts exactly after its generation.
+
+3. After solving the _Challenge_, the final result of the payment will be displayed according to the answer issued by the bank at the end of the _Challenge_.
+>>>>>>> 38a7e1757d73aa0a25ec209376144363041bffa1
 
 <center>
 

@@ -33,6 +33,10 @@ Abaixo explicaremos como indicar as URLs que serão notificadas e como configura
 | `point_integration_wh` | `state_CANCELED` | Processo de pagamento cancelado |
 | `point_integration_wh` | `state_ERROR`| Ocorreu um erro ao processar a tentativa de pagamento |
 | `delivery` | `delivery.updated`| Dados de envio e atualização do pedido |
+<<<<<<< HEAD
+=======
+| `delivery_cancellation` | `case_created`| Solicitação de cancelamento do envi
+>>>>>>> 38a7e1757d73aa0a25ec209376144363041bffa1
 
 ## Configuração durante a criação de pagamentos
 
@@ -373,5 +377,31 @@ Depois de dar um retorno à notificação e confirmar o seu recebimento, você o
 
 ------------
 
+<<<<<<< HEAD
+=======
+Além disso, especificamente em alertas de fraude, o pedido não deve ser entregue e o cancelamento precisa ser realizado através da [API de cancelamentos](/developers/pt/reference/chargebacks/_payments_payment_id/put).
+
+Na notificação, você receberá um `JSON` com as seguintes informações contendo o id de pagamento para efetuar o cancelamento.
+
+[[[
+```Json
+
+
+ "description": ".....",
+ "merchant_order": 4945357007,
+ "payment_id": 23064274473
+
+
+```
+]]]
+
+
+> NOTE
+>
+> Importante
+>
+> É possível obter mais detalhes sobre o pedido utilizando a API [Obter pedido](/developers/pt/reference/merchant_orders/_merchant_orders_id/get).
+
+>>>>>>> 38a7e1757d73aa0a25ec209376144363041bffa1
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma como, por exemplo, atualizar um pagamento aprovado.

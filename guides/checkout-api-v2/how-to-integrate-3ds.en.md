@@ -329,8 +329,13 @@ See below the table with the possible statuses and their respective descriptions
 |------------|-------------------------------|------------------------------------------------------------------|
 | "approved" | "accredited"                  | Transaction approved without authentication.                     |
 | "rejected" | -                            | Transaction rejected without authentication. To check the reasons, please refer to the standard [list of status details](https://mercadopago.com.br/developers/en/docs/checkout-api/response-handling/collection-results).                     |
+<<<<<<< HEAD
 | "pending"  | "pending_challenge"           | Transaction pending authentication or challenge timeout. |
 | "rejected" | "cc_rejected_3ds_challenge"   | Transaction rejected due to *challenge* failure.                 |
+=======
+| "pending"  | "pending_challenge"           | Transaction pending authentication or Challenge timeout. |
+| "rejected" | "cc_rejected_3ds_challenge"   | Transaction rejected due to Challenge failure.                 |
+>>>>>>> 38a7e1757d73aa0a25ec209376144363041bffa1
 
 ## Integration test
 
@@ -340,12 +345,21 @@ To facilitate the validation of 3DS payments, we have created a sandbox testing 
 >
 > Remember to use the test credentials for your application.
 
+<<<<<<< HEAD
 To test payments in a sandbox environment, specific cards should be used to test the implementation of the challenge with both success and failure flows, as shown in the table below:
 
 | Card        | Flow                    | Number              | Security Code | Expiration Date |
 |-------------|-------------------------|---------------------|----------------|-----------------|
 | Mastercard  | Successful challenge    | 5483 9281 6457 4623 | 123            | 11/25           |
 | Mastercard  | Unauthorized challenge | 5361 9568 0611 7557 | 123            | 11/25           |
+=======
+To test payments in a sandbox environment, specific cards should be used to test the implementation of the Challenge with both success and failure flows, as shown in the table below:
+
+| Card        | Flow                    | Number              | Security Code | Expiration Date |
+|-------------|-------------------------|---------------------|----------------|-----------------|
+| Mastercard  | Successful Challenge    | 5483 9281 6457 4623 | 123            | 11/25           |
+| Mastercard  | Unauthorized Challenge | 5361 9568 0611 7557 | 123            | 11/25           |
+>>>>>>> 38a7e1757d73aa0a25ec209376144363041bffa1
 
 The steps to create the payment remain the same. If you have any doubts about how to create card payments, please refer to the [documentation on Cards](https://www.mercadopago.com.br/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
 

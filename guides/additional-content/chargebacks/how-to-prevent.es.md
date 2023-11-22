@@ -21,9 +21,15 @@ No es posible evitar todos los contracargos, pero puedes disminuir la probabilid
    
 ## Alerta de fraude
 
+<<<<<<< HEAD
 Te avisaremos vía notificaciones IPN  cuando detectemos un comportamiento irregular o recibamos una notificación de que la tarjeta usada fue robada. Además,  nos contactaremos  vía e-mail para avisarte. Ante esta situación, debes [cancelar la compra](/developers/es/guides/additional-content/sales-processing/cancellations-and-refunds) y devolver el dinero al comprador para evitar el contracargo.
 
 Configura y habilita [las notificaciones IPN](/developers/panel/ipn) para recibir alertas por comportamiento irregular al habilitar **Alerta de fraude**(`delivery_cancellation`).
+=======
+Te avisaremos vía notificaciones IPN o Webhook cuando detectemos un comportamiento irregular o recibamos una notificación de que la tarjeta usada fue robada. Además,  nos contactaremos  vía e-mail para avisarte. Ante esta situación, debes [cancelar la compra](/developers/es/guides/additional-content/sales-processing/cancellations-and-refunds) y devolver el dinero al comprador para evitar el contracargo.
+
+Configura y habilita las notificaciones [IPN](/developers/panel/ipn) o [Webhook](/developers/panel/webhooks) desde tu dashboard, y recibirás alertas por comportamiento irregular al activar **Alerta de fraude** (`delivery_cancellation`).
+>>>>>>> 38a7e1757d73aa0a25ec209376144363041bffa1
 
 > NOTE
 >

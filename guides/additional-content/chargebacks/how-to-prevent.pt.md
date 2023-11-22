@@ -21,9 +21,15 @@ Não é possível evitar todas as contestações, porém, você pode diminuir a 
 
 ## Alerta de Fraudes
 
+<<<<<<< HEAD
 Vamos avisar via notificações IPN toda vez que percebermos atividades irregulares ou houver um alerta de fraude em sua conta. Nessa situação, você deve [cancelar a compra](/developers/pt/guides/additional-content/sales-processing/cancellations-and-refunds) e devolver o dinheiro ao comprador para evitar a contestação.
 
 Configure e ative as [notificações IPN](/developers/panel/ipn) no painel para receber alertas de comportamentos irregulares, ativando a opção Alerta de Fraudes (`delivery_cancellation`).
+=======
+Vamos avisar via notificações IPN ou Webhook toda vez que percebermos atividades irregulares ou houver um alerta de fraude em sua conta. Nessa situação, você deve [cancelar a compra](/developers/pt/guides/additional-content/sales-processing/cancellations-and-refunds) e devolver o dinheiro ao comprador para evitar a contestação.
+
+Configure e ative as notificações [IPN](/developers/panel/ipn) ou [Webhook](/developers/panel/webhooks) no painel para receber alertas de comportamentos irregulares, ativando a opção Alerta de Fraudes (`delivery_cancellation`).
+>>>>>>> 38a7e1757d73aa0a25ec209376144363041bffa1
 
 > NOTE
 >

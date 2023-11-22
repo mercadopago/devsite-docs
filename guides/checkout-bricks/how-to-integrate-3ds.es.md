@@ -18,7 +18,11 @@ La decisión de incluir o no el _Challenge_ depende del emisor de la tarjeta y d
 
 A continuación se presentan los pasos para realizar una integración con 3DS.
 
+<<<<<<< HEAD
 1. Después de generar una intención de pago usando [Card Payment Brick](/developers/es/docs/checkout-bricks/card-payment-brick/introduction) o [Payment Brick](/developers/es/docs/checkout-bricks/pago-brick/introduction), es necesario enviar, desde tu backend, una solicitud de pago a Mercado Pago a través de nuestras APIs. La habilitación de la transmisión 3DS 2.0 se realiza agregando el campo `three_d_secure_mode: 'opcional'` a esta solicitud.
+=======
+1. Después de generar una intención de pago usando [Card Payment Brick](/developers/es/docs/checkout-bricks/card-payment-brick/introduction) o [Payment Brick](/developers/es/docs/checkout-bricks/pago-brick/introduction), es necesario enviar, desde tu backend, una solicitud de pago a Mercado Pago a través de nuestras APIs. La habilitación de la transmisión 3DS 2.0 se realiza agregando el campo `three_d_secure_mode: 'optional'` a esta solicitud.
+>>>>>>> 38a7e1757d73aa0a25ec209376144363041bffa1
 
 ```javascript
 var mercadopago = require('mercadopago');
@@ -102,15 +106,25 @@ El Status Screen Brick mostrará una transición que indica la redirección y, l
 
 </center>
 
+<<<<<<< HEAD
 El usuario debe responder al desafío para que la transición se valide correctamente. Cabe señalar que la experiencia _Challenge_ es responsabilidad exclusiva del banco a cargo.
+=======
+El usuario debe responder al _Challenge_ para que la transición se valide correctamente. Cabe señalar que la experiencia _Challenge_ es responsabilidad exclusiva del banco a cargo.
+>>>>>>> 38a7e1757d73aa0a25ec209376144363041bffa1
 
 > NOTE
 >
 > Importante
 >
+<<<<<<< HEAD
 > Por razones de seguridad, el pago será rechazado si el proceso _Challenge_ no se inicia dentro de los 30 segundos posteriores a su creación. Por lo tanto, es importante que el desafío comience exactamente después de su generación.
 
 3. Después de resolver el desafío, se mostrará el resultado final del pago de acuerdo con la respuesta emitida por el banco al final del _Challenge_.
+=======
+> Por razones de seguridad, el pago será rechazado si el proceso _Challenge_ no se inicia dentro de los 30 segundos posteriores a su creación. Por lo tanto, es importante que el _Challenge_ comience exactamente después de su generación.
+
+3. Después de resolver el _Challenge_, se mostrará el resultado final del pago de acuerdo con la respuesta emitida por el banco al final del _Challenge_.
+>>>>>>> 38a7e1757d73aa0a25ec209376144363041bffa1
 
 <center>
 

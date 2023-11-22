@@ -1,7 +1,7 @@
 ---
 content_section_with_media: 
  - title: Server-side
- - message: The use of the backend SDKs is optional. With them, you can obtain server-side functionalities of our online payment solutions, such as creating and checking the status of various payments, integrating card payments or other payment methods, and making returns and chargebacks.
+ - message: By using our backend SDKs, you gain easy access to the server-side functionalities of our solutions. This allows you to create and check the status of various transactions, integrate payments via card and other methods, as well as initiate refunds or chargebacks.
  - media_image: /sdk/library-media-3.png
 ---
 

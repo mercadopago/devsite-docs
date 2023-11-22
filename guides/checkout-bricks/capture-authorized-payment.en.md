@@ -108,6 +108,7 @@ To capture an amount lower than the reserved amount, send the value to be captur
 > Important
 >
 > Only available for Visa, Cabal, Master and American Express.
+
 ------------
  
 [[[

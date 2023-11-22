@@ -35,6 +35,7 @@ Below we will explain how to indicate the URLs that will be notified and how to 
 | `point_integration_wh` | `state_CANCELED` | Payment process canceled |
 | `point_integration_wh` | `state_ERROR` | An error occurred while processing the payment attempt |
 | `delivery` | `delivery.updated`| Shipping data and order update |
+| `delivery_cancellation` | `case_created`| Shipment cancellation request |
 
 ## Setup while creating payments
 
@@ -368,4 +369,29 @@ After returning the notification and confirming its receipt, you will obtain the
 
 ------------
 
+<<<<<<< HEAD
+=======
+Also, specifically in fraud alerts, you must not deliver the order and you will need to do the cancellation through the [cancellations API](/developers/en/reference/chargebacks/_payments_payment_id/put).
+
+In the notification, you will receive a `JSON` with the following information containing the payment id to cancel.
+
+[[[
+```Json
+
+
+ "description": ".....",
+ "merchant_order": 4945357007,
+ "payment_id": 23064274473
+
+
+```
+]]]
+
+
+> NOTE
+>
+> Important
+>
+> You can also get more order information using the [Get order](/developers/en/reference/merchant_orders/_merchant_orders_id/get) API.
+>>>>>>> 38a7e1757d73aa0a25ec209376144363041bffa1
 With this information, you will be able to carry out the necessary updates to your platform, such as updating an approved payment.
