@@ -8,7 +8,7 @@ Atualmente o **Mercado Crédito** é oferecido em nosso [Checkout Pro](/develope
 
 Para **exibir o Mercado Crédito no checkout da sua loja**, siga os passos abaixo.
 
-1. No Painel Administrativo da sua loja na Nuvemshop, acesse **Meus aplicativos - Ver todos os aplicativos**.
+1. No Painel Administrativo da sua loja na Nuvemshop, acesse **Meus aplicativos > Ver todos os aplicativos**.
 2. Localize o plugin do Mercado Pago na lista das aplicações e clique em **Configurar aplicativo**.
 3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago e clique em **Editar**.
 4. Desça até o final da página e clique em **Editar no site do Mercado Pago**.

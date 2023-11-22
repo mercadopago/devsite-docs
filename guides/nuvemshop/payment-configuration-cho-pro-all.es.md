@@ -16,13 +16,11 @@ Para integrar Checkout Pro, sigue los pasos a continuación.
 ------------
 4. Finalmente, haz clic en "Guardar cambios". 
 
-------------
-
 ----[mlb]----
-![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif)
+![Payments Checkout Pro - NuvemShop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif)
 
 ------------
 ----[mlc, mlu, mpe, mco]----
-![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_redirect.gif)
+![Payments Checkout Pro - NuvemShop](/images/nuvemshop/mx_tiendanube_checkout_redirect.gif)
 
 ------------
