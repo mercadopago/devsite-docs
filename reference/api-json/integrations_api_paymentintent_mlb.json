@@ -6,15 +6,19 @@
           "mp-point"
         ],
         "description": {
-          "en": "This endpoint allows to create a payment intent for a device",
-          "pt": "Este endpoint permite que você crie uma intenção de pagamento para um dispositivo",
-          "es": "Este endpoint permite crear una intención de pago para un dispositivo"
+          "en": "This endpoint allows to create a payment intent, which is a call that contains all the details of a transaction, and assign it to a device",
+          "pt": "Este endpoint permite que você crie uma intenção de pagamento, ou seja, uma chamada que contém os detalhes de uma transação a ser realizada, e atribuí-la a um dispositivo",
+          "es": "Este endpoint permite crear una intención de pago, es decir, un llamado que contiene los detalles de una transacción a realizarse, y asignarla a un dispositivo."
         },
         "parameters": [
           {
             "name": "x-test-scope",
             "in": "header",
-            "description": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
+            "description": {
+              "eng": "This is a temporary header. It should be used only in the development stage with the value \"sandbox\"",
+              "spa": "Este es un header temporal. Debe usarse sólo para la etapa de desarrollo con el valor \"sandbox\"",
+              "por": "Este é um header temporário. Deve ser usado apenas para desenvolvimento com o valor \"sandbox\""
+            },
             "schema": {
               "type": "string",
               "example": "sandbox"
@@ -24,9 +28,9 @@
             "name": "deviceId",
             "in": "path",
             "description": {
-              "eng": "identifier of the device that will have a payment intent queued",
-              "spa": "identificador del dispositivo que tendrá un intento de pago en cola",
-              "por": "identificador do dispositivo que terá uma tentativa de pagamento em fila"
+              "eng": "Identifier of the device that will receive the payment intent",
+              "spa": "Identificador del dispositivo que recibirá la intención de pago",
+              "por": "Identificador do dispositivo que irá receber a intenção de pagamento"
             },
             "required": true,
             "schema": {
@@ -58,17 +62,17 @@
                     "type": "string",
                     "example": "your payment intent description",
                     "description": {
-                      "eng": "payment intent description",
-                      "spa": "descripción de la intención de pago",
-                      "por": "descrição da intenção de pagamento"
+                      "eng": "Payment intent description",
+                      "spa": "Descripción de la intención de pago",
+                      "por": "Descrição da intenção de pagamento"
                     }
                   },
                   "payment": {
                     "type": "object",
                     "description": {
-                      "eng": "properties of the payment intent",
-                      "spa": "propiedades de la intención de pago",
-                      "por": "propriedades da intenção de pagamento"
+                      "eng": "Properties of the payment intent",
+                      "spa": "Propiedades de la intención de pago",
+                      "por": "Propriedades da intenção de pagamento"
                     },
                     "properties": {
                       "installments": {
@@ -93,17 +97,17 @@
                         "type": "string",
                         "example": "seller",
                         "description": {
-                          "eng": "A string value that must be one of this [seller or buyer], this value can be setted only if type field is equal to credit_card",
-                          "spa": "Un valor de string que debe ser uno de este [seller o buyer], este valor se puede establecer solo si el campo de tipo es igual a credit_card",
-                          "por": "Um valor de string que deve ser um destes [seller ou buyer], esse valor pode ser definido somente se o campo de tipo for igual a credit_card"
+                          "eng": "A string value that must be [seller] or [buyer]. This value can be setted only if type field is equal to [credit_card]",
+                          "spa": "Un valor de string que debe ser [seller] o [buyer]. Este valor se puede establecer solo si el campo de tipo es igual a [credit_card]",
+                          "por": "Um valor de string que deve ser [seller] ou [buyer]. Esse valor pode ser definido somente se o campo de tipo for igual a [credit_card]"
                         }
                       },
                       "voucher_type": {
                         "type": "string",
                         "description": {
-                          "eng": "A string value that must be one of this [sodexo or alelo], this value can be setted only if type field is equal to voucher_card",
-                          "spa": "Un valor de string que debe ser uno de estos [sodexo o alelo], este valor se puede configurar solo si el campo de tipo es igual a voucher_card",
-                          "por": "Um valor de string que deve ser um desses [sodexo ou alelo], este valor pode ser configurado somente se o campo tipo for igual a voucher_card"
+                          "eng": "A string value that must be [sodexo] or [alelo]. This value can be setted only if type field is equal to [voucher_card]",
+                          "spa": "Un valor de string que debe ser [sodexo] o [alelo]. Este valor se puede configurar solo si el campo de tipo es igual a [voucher_card]",
+                          "por": "Um valor de string que deve ser [sodexo] ou [alelo]. Este valor pode ser configurado somente se o campo tipo for igual a [voucher_card]"
                         }
                       }
                     },
@@ -116,9 +120,9 @@
                   "additional_info": {
                     "type": "object",
                     "description": {
-                      "eng": "payment intent additional info",
-                      "spa": "información adicional de intención de pago",
-                      "por": "informações adicionais de intenção de pagamento"
+                      "eng": "Payment intent additional info",
+                      "spa": "Información adicional de intención de pago",
+                      "por": "Informações adicionais de intenção de pagamento"
                     },
                     "properties": {
                       "external_reference": {
@@ -165,18 +169,18 @@
                       "type": "string",
                       "example": "7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1",
                       "description": {
-                        "en": "payment intent identifier",
-                        "pt": "identificador de intenção de pagamento",
-                        "es": "identificador de intención de pago"
+                        "en": "Payment intent identifier",
+                        "pt": "Identificador de intenção de pagamento",
+                        "es": "Identificador de intención de pago"
                       }
                     },
                     "device_id": {
                       "type": "string",
                       "example": "INGENICO_MOVE2500__12345678",
                       "description": {
-                        "en": "identifier of the device that have a payment intent queued",
-                        "pt": "identificador do dispositivo que tem intenção de pagamento em fila",
-                        "es": "identificador del dispositivo que tiene una intención de pago en cola"
+                        "en": "Identifier of the device to which the payment intent was assigned",
+                        "pt": "Identificador do dispositivo ao qual a intenção de pagamento foi atribuída",
+                        "es": "Identificador del dispositivo al que se asignó la intención de pago"
                       }
                     },
                     "amount": {
@@ -184,18 +188,18 @@
                       "format": "int64",
                       "example": 1500,
                       "description": {
-                        "en": "payment intent amount",
-                        "pt": "valor da intenção de pagamento",
-                        "es": "importe de la intención de pago"
+                        "en": "Payment intent amount",
+                        "pt": "Valor da intenção de pagamento",
+                        "es": "Importe de la intención de pago"
                       }
                     },
                     "description": {
                       "type": "string",
                       "example": "your payment intent description",
                       "description": {
-                        "en": "payment intent description",
-                        "pt": "descrição da intenção de pagamento",
-                        "es": "descripción de la intención de pago"
+                        "en": "Payment intent description",
+                        "pt": "Descrição da intenção de pagamento",
+                        "es": "Descripción de la intención de pago"
                       }
                     },
                     "payment": {
@@ -205,9 +209,9 @@
                           "type": "integer",
                           "example": 1,
                           "description": {
-                            "en": "An integer value that must be between 1 and 72, this value can be setted only if type field is equal to credit_card",
-                            "pt": "Um valor inteiro que deve estar entre 1 e 72, este valor pode ser configurado somente se o campo type for igual a credit_card",
-                            "es": "Un valor entero que debe estar entre 1 y 72, este valor se puede configurar solo si el campo de tipo es igual a credit_card"
+                            "en": "An integer value that must be between 1 and 72, this value can be setted only if type field is equal to [credit_card]",
+                            "pt": "Um valor inteiro que deve estar entre 1 e 72, este valor pode ser configurado somente se o campo type for igual a [credit_card]",
+                            "es": "Un valor entero que debe estar entre 1 y 72, este valor se puede configurar solo si el campo de tipo es igual a [credit_card]"
                           }
                         },
                         "type": {
@@ -223,9 +227,9 @@
                           "type": "string",
                           "example": "seller",
                           "description": {
-                            "en": "A string value that must be one of this [seller or buyer], this value can be setted only if type field is equal to credit_card",
-                            "pt": "Um valor de string que deve ser um destes [vendedor ou comprador], esse valor pode ser definido somente se o campo de tipo for igual a credit_card",
-                            "es": "Un valor de string que debe ser uno de este [vendedor o comprador], este valor se puede establecer solo si el campo de tipo es igual a credit_card"
+                            "en": "A string value that must be [seller] or [buyer]. This value can be setted only if type field is equal to [credit_card]",
+                            "pt": "Um valor de string que deve ser [seller] ou [buyer]]. Esse valor pode ser definido somente se o campo de tipo for igual a [credit_card]",
+                            "es": "Un valor de string que debe ser [seller] o [buyer]. Este valor se puede establecer solo si el campo de tipo es igual a [credit_card]"
                           }
                         }
                       }
