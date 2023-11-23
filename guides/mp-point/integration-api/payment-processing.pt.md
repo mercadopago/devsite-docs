@@ -228,7 +228,7 @@ curl --location --request GET 'https://api.mercadopago.com/point/integration-api
 ----[mla, mlb]----
 
 ``` curl
-curl --location --request GET 'https://api.mercadopago.com/point/integration-api/payment-intents/:paymentIntentID' \
+curl --location --request GET 'https://api.mercadopago.com/point/integration-api/payment-intents/{paymentintentid}' \
 --h 'Authorization: Bearer YOUR_ACCESS_TOKEN'
 ```
 ------------
