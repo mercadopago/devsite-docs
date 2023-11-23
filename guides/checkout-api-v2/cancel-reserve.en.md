@@ -1,12 +1,3 @@
----
-sites_supported:
-- mla
-- mlb
-- mlm
-- mpe
-- mlu
----
-
 # Cancel reserve
 
 Cancellation of a reserve occurs when, for some reason, the payment for a purchase is not approved and the reservation amount needs to return to the customer's card limit or when a buyer withdraws from the purchase. 
@@ -14,7 +5,6 @@ Cancellation of a reserve occurs when, for some reason, the payment for a purcha
 > For more information about refunds and cancellations of payments, see the section [Refunds and Cancellations](/developers/en/docs/checkout-api/payment-management/cancellations-and-refunds).
 
 To cancel a reserve, use one of our available codes below.
-
 
 [[[
 ```php
@@ -33,15 +23,17 @@ To cancel a reserve, use one of our available codes below.
 ?>
 ```
 ```node
-import { MercadoPagoConfig, Payments } from 'mercadopago';
+import { MercadoPagoConfig, Payment } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const payments = new Payments(client);
+const payment = new Payment(client);
 
-const paymentId = '123';
-
-payments.cancel(paymentId, { idempotencyKey: '<SOME_UNIQUE_VALUE>' }).then((result) => console.log(result))
-	.catch((error) => console.log(error));
+payment.cancel({
+id: '<PAYMENT_ID>',
+requestOptions: {
+idempotencyKey: '<IDEMPOTENCY_KEY>'
+},
+}).then(console.log).catch(console.log);
 ```
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");

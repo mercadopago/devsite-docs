@@ -1,8 +1,8 @@
 # Configuración de integración
  
-Para integrarte con Mercado Pago, sigue los procedimientos a continuación.
+Para integrarte con Mercado Pago, sigue los pasos a continuación.
  
-1. En el Panel Administrativo de tu tienda de tu tienda PrestaShop, accede al menú **Módulos y Servicios**, localiza el plugin Mercado Pago y haz clic en **configura**.
+1. En el Panel Administrativo de la tienda PrestaShop, accede al menú **Módulos y Servicios**, localiza el plugin Mercado Pago y haz clic en **configura**.
 2. En la pantalla de administración de complementos, completa los campos obligatorios de acuerdo con la información de tu empresa.
 3. En el campo **Localización**, selecciona el país de operación de tu cuenta de Mercado Pago.
 4. En la sección **Credenciales**, confirma que los campos se hayan completado correctamente de acuerdo con las [credenciales](/developers/es/guides/additional-content/your-integrations/credentials) indicadas en tu [Panel del desarrollador](/developers/es/guides/additional-content/your-integrations/dashboard).

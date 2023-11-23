@@ -14,7 +14,7 @@ Para configurar el Checkout Pro en una tienda Shopify, sigue los pasos a continu
 7. Por último, la tienda te ofrecerá la opción de **habilitar el modo de prueba**. Al activar esta opción, los pedidos completados con Checkout Pro **no serán pedidos reales**. Es decir, serán pedidos de prueba que, aun siendo completados, no tendrán su estado actualizado en la plataforma y no aparecerán en el panel de Mercado Pago en la cuenta del usuario.
 8. Al finalizar, haz clic en **Activar Mercado Pago**. 
 
-> En caso de renovar tus credenciales, recuerda reemplazar tanto las de producción como las de pruba en tu integración.
+> En caso de renovar tus credenciales, recuerda reemplazar tanto las de producción como las de prueba en tu integración.
 
 ------------
 ----[mla, mlm, mpe, mlu, mlc, mco]----
@@ -45,9 +45,9 @@ Para instalar Checkout Pro ("**Checkout Mercado Pago**") en una tienda Shopify, 
 8. Coloca tus **credenciales de producción** (`public key` y `access token`) en los campos que lo solicitan y haz clic en **Guardar**. Recuerda tener a mano tus [credenciales](/developers/es/docs/shopify/additional-content/your-integrations/credentials).
 9. Para terminar la instalación, selecciona **Activar Checkout Mercado Pago**.
 
-> En este paso, podrás seleccionar las imágenes de los medios de pago que quieras mostrar en tu tienda a modo ilustrativo. También, en caso que lo desees, podrás habilitar el [modo de prueba.](/developers/pt/docs/shopify/sales-processing/integration-test)
+> En este paso, podrás seleccionar las imágenes de los medios de pago que quieras mostrar en tu tienda a modo ilustrativo. También, en caso que lo desees, podrás habilitar el [modo de prueba.](/developers/es/docs/shopify/sales-processing/integration-test)
 > <br/><br/>
-> En caso de renovar tus credenciales, recuerda reemplazar tanto las de producción como las de pruba en tu integración.
+> En caso de renovar tus credenciales, recuerda reemplazar tanto las de producción como las de prueba en tu integración.
 
 <center>
 

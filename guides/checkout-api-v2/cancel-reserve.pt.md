@@ -1,12 +1,3 @@
----
-  sites_supported:
-      - mla
-      - mlb
-      - mlm
-      - mpe
-      - mlu
----
-
 # Cancelar reserva
 
 O cancelamento de uma reserva ocorre quando, por algum motivo, o pagamento de uma compra não é aprovado e a reserva do valor precisa retornar para o limite do cartão do cliente ou quando um comprador desiste da compra.
@@ -14,7 +5,6 @@ O cancelamento de uma reserva ocorre quando, por algum motivo, o pagamento de um
 > Para mais informações sobre reembolsos e cancelamentos de pagamentos, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds).
 
 Para cancelar uma reserva utilize um dos códigos disponíveis abaixo.
-
 
 [[[
 ```php
@@ -33,15 +23,17 @@ Para cancelar uma reserva utilize um dos códigos disponíveis abaixo.
 ?>
 ```
 ```node
-import { MercadoPagoConfig, Payments } from 'mercadopago';
+import { MercadoPagoConfig, Payment } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const payments = new Payments(client);
+const payment = new Payment(client);
 
-const paymentId = '123';
-
-payments.cancel(paymentId, { idempotencyKey: '<SOME_UNIQUE_VALUE>' }).then((result) => console.log(result))
-	.catch((error) => console.log(error));
+payment.cancel({
+id: '<PAYMENT_ID>',
+requestOptions: {
+idempotencyKey: '<IDEMPOTENCY_KEY>'
+},
+}).then(console.log).catch(console.log);
 ```
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");

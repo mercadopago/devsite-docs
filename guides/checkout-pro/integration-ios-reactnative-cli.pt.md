@@ -124,7 +124,7 @@ Insira o **identificador** da sua aplicação e os **Esquemas de URL** do Deep L
 
 ![xcode-paso2](/images/cow/xcode-paso2.png)
 
-Isso gerará o seguinte código no arquivo **ios/<appname>/Info.plist**:
+Isso gerará o seguinte código no arquivo **ios/appname/Info.plist**:
 
 ```info.plist
 <key>CFBundleURLTypes</key>
@@ -139,7 +139,7 @@ Isso gerará o seguinte código no arquivo **ios/<appname>/Info.plist**:
     </array>
 ```
 
-Adicione o seguinte código ao arquivo **ios/<appname>/AppDelegate.mm**
+Adicione o seguinte código ao arquivo **ios/appname/AppDelegate.mm**
 
 ```AppDelegate.mm
 // iOS 9.x or newer

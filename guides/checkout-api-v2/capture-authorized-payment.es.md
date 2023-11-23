@@ -29,15 +29,18 @@ Para capturar el monto total de una reserva, envía el valor a capturar al pará
 ?>
 ```
 ```node
-import { MercadoPagoConfig, Payments } from 'mercadopago';
+import { MercadoPagoConfig, Payment } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const payments = new Payments(client);
-const paymentId = '123';
+const payment = new Payment(client);
 
-payments.capture(paymentId, { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
-  .then((result) => console.log(result))
-  .catch((error) => console.log(error));
+payment.capture({
+id: '<PAYMENT_ID>',
+transaction_amount: 12.34,
+requestOptions: {
+idempotencyKey: '<IDEMPOTENCY_KEY>'
+}
+}).then(console.log).catch(console.log);
 ```
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");

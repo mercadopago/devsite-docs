@@ -25,4 +25,9 @@ To integrate Checkout Pro, follow the steps below.
 
 Ready! Mercado Pago Checkout Pro is ready to receive payments from your store.
 
+----[mlb]----
+> If you want to use the Checkout Transparente to receive payments in the store, see the section [Configure payments with Checkout Transparente](/developers/en/docs/prestashop/payment-configuration/checkout-api/introduction)
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
 > If you want to use the Checkout API to receive payments in the store, see the section [Configure payments with Checkout API](/developers/en/docs/prestashop/payment-configuration/checkout-api/introduction)
+------------

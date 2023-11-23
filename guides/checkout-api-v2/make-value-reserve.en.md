@@ -1,12 +1,3 @@
----
-sites_supported:
-- mla
-- mlb
-- mlm
-- mpe
-- mlu
----
-
 # Reserve values
 
 A reserve of values happens when a purchase is made and its amount is reserved from the total limit of the card, ensuring that the value is kept until the completion of processing.
@@ -60,24 +51,24 @@ client.create(request);
 
 ```
 ```node
-import { MercadoPagoConfig, Payments } from 'mercadopago';
+import { MercadoPagoConfig, Payment } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const payments = new Payments(client);
+const payment = new Payment(client);
 
-payments.create({
-  transaction_amount: 100.0,
-  token: "123456",
-  description: "My product",
-  installments: 1,
-  payment_method_id: "visa",
-  payer: {
-    email: "my.user@example.com",
-  },
-  capture: false 
-}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
-  .then((result) => console.log(result))
-  .catch((error) => console.log(error));
+const body = {
+transaction_amount: 100,
+token: '123456',
+description: 'My product',
+installments: 1,
+payment_method_id: 'visa',
+payer: {
+email: 'my.user@example.com',
+},
+capture: false
+};
+
+payment.create({ body: body, requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' } }).then(console.log).catch(console.log);
 ```
 ```ruby
 
