@@ -137,6 +137,8 @@ To learn more, you can access the documentation on [Return URLs](/developers/en/
 
 Flutter supports deep linking on iOS and web browsers. Opening a URL will display that screen in your app. Below, we will show you how you can launch and display routes by creating named routes (either with the routes parameter or with onGenerateRoute), or using the Router widget.
 
+> Named routes are no longer recommended for most applications.
+
 If the application is running in a web browser, no additional configuration is required. The routes are handled in the same way as an iOS deep link. By default, web applications read the deep link route from the URL fragment using the pattern `/#/path/to/app/screen`, but this can be changed by configuring the URL strategy for your app.
 
-> To learn more, refer to the official documentation on [handling Deep Links for Flutter applications](https://medium.com/flutter-community/deep-links-and-flutter-applications-how-to-handle-them-properly-8c9865af9283) and [setting up Universal Link IOS](https://docs.flutter.dev/cookbook/navigation/set-up-universal-links).
+> To learn more, refer to the official documentation on [handling Deep Links for Flutter applications](https://medium.com/flutter-community/deep-links-and-flutter-applications-how-to-handle-them-properly-8c9865af9283) and [setting up Universal Link for iOS](https://docs.flutter.dev/cookbook/navigation/set-up-universal-links).

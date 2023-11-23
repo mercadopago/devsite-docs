@@ -1,4 +1,4 @@
-# Integrar o Checkout Pro para iOS com Flutter
+# Integrar o Checkout Pro para Android com Flutter
 
 > WARNING
 >
@@ -8,7 +8,7 @@
 
 Para integrar o Checkout Pro em uma aplicação móvel desenvolvida com o Flutter, você precisará exibir o checkout da web dentro da aplicação. Para isso, existem diversas opções, sendo uma delas o uso de Custom Tabs. Essa tecnologia permite que páginas da web sejam abertas em um navegador nativo incorporado á aplicação, proporcionando uma experiência de navegação mais suave e consistente aos usuários.
 
-Nesta etapa, vamos implementar Custom Tabs em uma aplicação Flutter usando **flutter_custom_tabs**. Mostraremos como instalar as bibliotecas necessárias, como configurar as dependências e daremos exemplos práticos de como abrir páginas da web usando Custom Tabs.
+Nesta etapa, vamos implementar o Custom Tabs em uma aplicação Flutter usando **flutter_custom_tabs**. Mostraremos como instalar as bibliotecas necessárias, como configurar as dependências e daremos exemplos práticos de como abrir páginas da web usando o Custom Tabs.
 
 > CLIENT_SIDE
 >
@@ -16,21 +16,21 @@ Nesta etapa, vamos implementar Custom Tabs em uma aplicação Flutter usando **f
 >
 > Instalação da dependência Flutter Custom Tabs
 
-Para instalar a dependência Flutter Custom Tabs, você pode executar o seguinte comando no diretório raiz do seu projeto:
+Para instalar a dependência Flutter Custom Tabs, execute o seguinte comando no diretório raiz do seu projeto:
 
 ```terminal
 $ flutter pub add flutter_custom_tabs
 ```
 
-Isso adicionará a linha `dependencies:  flutter_custom_tabs: ^1.2.1` ao arquivo **pubspec.yaml** do pacote. Também executará um comando implícito `flutter pub get`.
+Isso adicionará a linha `dependencies: flutter_custom_tabs: ^1.2.1` ao arquivo **pubspec.yaml** do pacote. Ele também executará um comando implícito `flutter pub get`.
 
 > NOTE
-> 
-> Nota
 >
+> Nota
+> 
 > Conheça mais na [documentação oficial do Flutter Custom Tabs](https://pub.dev/packages/flutter_custom_tabs).
 
-Para usar a dependência você deve primeiro importá-la para o código Dart onde será necessário mostrar o Checkout. Para importá-lo, use o seguinte comando:
+Para usar a dependência, você precisará importá-la primeiro no código Dart onde deseja exibir o Checkout. Para importar, use o seguinte comando:
 
 ```terminal
 import 'package:flutter_custom_tabs/flutter_custom_tabs.dart';
@@ -38,7 +38,7 @@ import 'package:flutter_custom_tabs/flutter_custom_tabs.dart';
 
 ### Exemplo de integração do Flutter Custom Tabs
 
-A seguir, compartilhamos um exemplo da integração do Flutter usando Custom Tabs:
+A seguir, compartilhamos um exemplo de integração do Flutter usando o Custom Tabs:
 
 ```javascript
 import 'package:flutter/material.dart';
@@ -106,7 +106,7 @@ class MyApp extends StatelessWidget {
 >
 > Personalizar a aparência de acordo com a plataforma
 >
-> É possível personalizar a aparência da tela que será exibida especificando opções para cada plataforma. Para personalizar a aparência em iOS, você precisará fazer isso com o SFSSafariViewController. Saiba mais na [documentação oficial](https://pub.dev/packages/flutter_custom_tabs).
+> É possível personalizar a aparência da tela que será exibida, especificando opções para cada plataforma. Para personalizar a aparência no Android, você deve fazer isso com o CustomTabsOption. Saiba mais na [documentação oficial](https://pub.dev/packages/flutter_custom_tabs).
 
 > CLIENT_SIDE
 >
@@ -132,19 +132,12 @@ Para saber mais, você pode acessar a documentação sobre [URLs de retorno](/de
 >
 > h2
 >
-> Configuração da aplicação para gerenciar o Deep Link
+> Configuração da aplicação para gerenciar o Deep Link 
 
-O Flutter oferece suporte para Deep Link no iOS e navegadores da web. Ao abrir uma URL, essa tela será exibida em sua aplicação. A seguir, mostraremos como você pode lançar e exibir rotas criando rotas com nome (seja com o parâmetro routes ou com onGenerateRoute), ou com o widget Router.
+O Flutter oferece suporte para Deep Links no Android e navegadores da web. Ao abrir uma URL, essa tela será exibida em sua aplicação. A seguir, mostraremos como você pode lançar e exibir rotas criando rotas com nome (seja com o parâmetro routes ou com onGenerateRoute), ou com o widget Router.
 
-> Rotas com nome não são mais recomendadas para a maioria das aplicações.
-
+> Rotas nomeadas não são mais recomendadas para a maioria das aplicações.
 
 Se a aplicação for executado em um navegador da web, nenhuma configuração adicional será necessária. As rotas são tratadas da mesma forma que um link profundo do Android. Por padrão, as aplicações da web lêem o caminho do link profundo a partir do fragmento de URL usando o padrão `/#/path/to/app/screen`, mas isso pode ser alterado configurando a estratégia de URL para a sua aplicação.
 
 > Para saber mais, acesse as documentações oficiais sobre [como lidar com Deep Links para aplicações Flutter](https://medium.com/flutter-community/deep-links-and-flutter-applications-how-to-handle-them-properly-8c9865af9283) e [como configurar o App Link para Android](https://docs.flutter.dev/cookbook/navigation/set-up-app-links).
-
-
-
-
-
-

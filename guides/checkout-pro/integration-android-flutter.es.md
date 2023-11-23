@@ -1,4 +1,4 @@
-# Integrar Checkout Pro para iOS con Flutter
+# Integrar Checkout Pro para Android con Flutter
 
 > WARNING
 >
@@ -106,7 +106,7 @@ class MyApp extends StatelessWidget {
 >
 > Personalizar la visualización según la plataforma
 >
-> Es posible personalizar el look & feel de la pantalla que se mostrará especificando opciones para cada plataforma. Para personalizar la apariencia en iOS, deberás hacerlo con SFSSafariViewController. Conoce más en la [documentación oficial](https://pub.dev/packages/flutter_custom_tabs).
+> Es posible personalizar el look & feel de la pantalla que se mostrará especificando opciones para cada plataforma. Para personalizar la apariencia en Android, deberás hacerlo con CustomTabsOption. Conoce más en la [documentación oficial](https://pub.dev/packages/flutter_custom_tabs).
 
 > CLIENT_SIDE
 >
@@ -135,16 +135,10 @@ Para conocer más, puedes acceder a la documentación de [URLs de retorno](/deve
 >
 > Configuración de la aplicación para la gestión del Deep Link
 
-Flutter admite deep linking en iOS y navegadores web. Al abrir una URL, se mostrará esa pantalla en tu app. A continuación, te mostraremos cómo puedes lanzar y mostrar rutas creando rutas con nombre (ya sea con el parámetro routes o con onGenerateRoute), o con el widget Router.
+Flutter admite deep linking en Android y navegadores web. Al abrir una URL, se mostrará esa pantalla en tu app. A continuación, te mostraremos cómo puedes lanzar y mostrar rutas creando rutas con nombre (ya sea con el parámetro routes o con onGenerateRoute), o con el widget Router.
 
 > Las rutas con nombre ya no se recomiendan para la mayoría de las aplicaciones.
 
-Si se ejecuta la aplicación en un navegador web, no es necesaria ninguna configuración adicional. Las rutas se gestionan del mismo modo que un enlace profundo de iOS. Por defecto, las aplicaciones web leen la ruta del enlace profundo a partir del fragmento de url utilizando el patrón `/#/path/to/app/screen`, pero esto puede cambiarse configurando la estrategia de URL para tu app. 
+Si se ejecuta la aplicación en un navegador web, no es necesaria ninguna configuración adicional. Las rutas se gestionan del mismo modo que un enlace profundo de Android. Por defecto, las aplicaciones web leen la ruta del enlace profundo a partir del fragmento de url utilizando el patrón `/#/path/to/app/screen`, pero esto puede cambiarse configurando la estrategia de URL para tu app. 
 
-> Para conocer más, ingresa a las documentaciones oficiales sobre [cómo manejar DeepLinks para aplicaciones Flutter](https://medium.com/flutter-community/deep-links-and-flutter-applications-how-to-handle-them-properly-8c9865af9283) y [cómo configurar Universal Link para iOS](https://docs.flutter.dev/cookbook/navigation/set-up-universal-links)
-
-
-
-
-
-
+> Para conocer más, ingresa a las documentaciones oficiales sobre [cómo manejar DeepLinks para aplicaciones Flutter](https://medium.com/flutter-community/deep-links-and-flutter-applications-how-to-handle-them-properly-8c9865af9283) y [cómo configurar App Link para Android](https://docs.flutter.dev/cookbook/navigation/set-up-app-links)
