@@ -3075,6 +3075,258 @@
           "es": "Crear una Discount Promise"
         }
       }
+    }, 
+    "/v2/wallet_connect/coupons": {
+      "post": {
+        "tags": [
+          "wallet-connect"
+        ],
+        "description": {
+          "en": "This endpoint enables the validation of a Wallet Connect coupon, returning the applicable discount amount. These coupons are designed to provide discounts on payments made through Wallet Connect.",
+          "pt": "Este endpoint possibilita a validação de um cupom do Wallet Connect, retornando o valor do desconto aplicável. Estes cupons destinam-se a conceder descontos em pagamentos realizadas via Wallet Connect",
+          "es": "Este endpoint permite la validación de un cupón de Wallet Connect, devolviendo el monto de descuento aplicable. Estos cupones están diseñados para ofrecer descuentos en pagos realizados a través de Wallet Connect"
+        },
+        "headers": [
+          {
+            "name": "x-client-id",
+            "description": {
+              "en": "Unique identifier for the application making the request. For example - 1111111111111111.",
+              "pt": "Identificador único para a aplicação que está fazendo a solicitação. Por exemplo - 1111111111111111.",
+              "es": "Identificador único para la aplicación que realiza la solicitud. Por ejemplo - 1111111111111111."
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": 1111111111111111
+            }
+          },
+          {
+            "name": "x-payer-token",
+            "description": {
+              "en": "Token associated to the potential payer who will use the discount. For example - e9449535fe074e0e8ff4f2055f604e51.",
+              "pt": "Token relacionado ao potencial pagador que utilizará o desconto. Por exemplo - e9449535fe074e0e8ff4f2055f604e51.",
+              "es": "Token relacionado con el posible pagador que espera utilizar el descuento. Por ejemplo - e9449535fe074e0e8ff4f2055f604e51."
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "e9449535fe074e0e8ff4f2055f604e51"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": {
+            "en": "Parameters needed to validate the Wallet Connect coupon.",
+            "pt": "Parâmetros necessários para validar o cupom do Wallet Connect.",
+            "es": "Parámetros necesarios para validar el cupón de Wallet Connect."
+          },
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "description": {
+                  "en": "Specific identifier used to check the coupon's validity.",
+                  "pt": "Identificador específico usado para verificar a validade do cupom.",
+                  "es": "Identificador específico utilizado para comprobar la validez del cupón."
+                },
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": {
+                      "en": "Unique combination of letters and numbers that stands for the coupon code. For example - BLACKFRIDAY20.",
+                      "pt": "Combinação única de letras e números que representa o código do cupom. Por exemplo - BLACKFRIDAY20.",
+                      "es": "Combinación única de letras y números que representa el código del cupón. Por ejemplo - BLACKFRIDAY20."
+                    },
+                    "example": "BLACKFRIDAY20"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "en": "Provides information about the validated coupon, including its discount value and present status.",
+              "pt": "Fornece informações sobre o cupom validado, incluindo seu valor de desconto e status atual.",
+              "es": "Ofrece información sobre el cupón validado, incluyendo su valor de descuento y estado actual."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "description": {
+                        "en": "Indicates the coupon's status post-validation. Reflects if it's \"success\", \"pending\", or \"invalid\".",
+                        "pt": "Indica o status do cupom após a validação. Reflete se é \"success\", \"pending\", or \"invalid\".",
+                        "es": "Indica el estado del cupón después de la validación. Refleja si es \"success\", \"pending\", or \"invalid\"."
+                      },
+                      "example": "success"
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": {
+                        "en": "A brief overview of the validated coupon's characteristics. For example: 30% discount coupon for Black Friday.",
+                        "pt": "Uma breve descrição das características do cupom validado. Por exemplo: cupom de desconto de 30% para Black Friday.",
+                        "es": "Una breve descripción de las características del cupón validado. Por ejemplo: cupón de descuento del 30% para Black Friday."
+                      },
+                      "example": "Cupom de desconto de 30% para Black Friday."
+                    },
+                    "legal_terms": {
+                      "type": "string",
+                      "description": {
+                        "en": "URL directing to the specific legal terms associated with the coupon campaign. For example - https://www.mercadopago.com.ar/campaigns/terms-and-conditions/123456.",
+                        "pt": "URL que direciona para os termos legais específicos associados à campanha do cupom. Por exemplo - https://www.mercadopago.com.ar/campaigns/terms-and-conditions/123456.",
+                        "es": "Una URL que dirige a los términos legales específicos asociados con la campaña del cupón. Por ejemplo - https://www.mercadopago.com.ar/campaigns/terms-and-conditions/123456."
+                      },
+                      "example": "https://www.mercadopago.com.ar/campaigns/terms-and-conditions/123456"
+                    },
+                    "detail": {
+                      "type": "object",
+                      "description": {
+                        "en": "This object offers an in-depth view of advanced payments coming from sellers that have a prior Wallet Connect association.",
+                        "pt": "Este objeto Fornece uma visão detalhada dos pagamentos antecipados de vendedores que têm uma associação prévia a Wallet Connect.",
+                        "es": "Este objeto proporciona una visión detallada de los pagos anticipados de los vendedores que tienen una asociación previa de Wallet Connect."
+                      },
+                      "properties": {
+                        "value": {
+                          "type": "number",
+                          "description": {
+                            "en": "Specifies the exact discount amount provided by the coupon. For example - 10.0.",
+                            "pt": "Especifica o valor exato do desconto fornecido pelo cupom. Por exemplo - 10.0.",
+                            "es": "Especifica la cantidad exacta de descuento proporcionada por el cupón. Por ejemplo - 10.0."
+                          },
+                          "example": 10
+                        },
+                        "type": {
+                          "type": "string",
+                          "description": {
+                            "en": "Differentiates if the discount is percentage-based or a fixed value. In cases of percentage, it will return `percent`, while in cases of a fixed value, it will return `fixed`.",
+                            "pt": "Diferencia se o desconto é baseado em porcentagem ou um valor fixo. Em casos de porcentagem, retornará `percent`, já em casos de valor fixo, retornará `fixed`.",
+                            "es": "Diferencia si el descuento es en porcentaje o un valor fijo. En casos de porcentaje, devolverá `percent`, mientras que en casos de valor fijo, devolverá `fixed`."
+                          },
+                          "example": "percent"
+                        },
+                        "cap": {
+                          "type": "number",
+                          "description": {
+                            "en": "The highest possible discount amount that can be applied using the coupon. For example - 100.0.",
+                            "pt": "Valor máximo de desconto que pode ser aplicado utilizando o cupom. Por exemplo - 100.0.",
+                            "es": "Monto máximo de descuento que se puede aplicar utilizando el cupón. Por ejemplo - 100.0."
+                          },
+                          "example": 100
+                        },
+                        "min_payment_amount": {
+                          "type": "number",
+                          "description": {
+                            "en": "The minimum amount required to qualify for the discount. For example - 100.0.",
+                            "pt": "Valor mínimo necessário para se qualificar ao desconto. Por exemplo - 100.0.",
+                            "es": "Monto mínimo requerido para calificar para el descuento. Por ejemplo - 100.0."
+                          },
+                          "example": 100
+                        },
+                        "max_payment_amount": {
+                          "type": "number",
+                          "description": {
+                            "en": "Maximum amount to which the discount can still be applied upon payment. For example - 10000.0.",
+                            "pt": "Valor máximo ao qual o desconto ainda pode ser aplicado ao efetuar o pagamento. Por exemplo - 10000.0.",
+                            "es": "Monto máximo al cual aún se puede aplicar el descuento al realizar el pago. Por ejemplo - 10000.0"
+                          },
+                          "example": 10000
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "es": "Error encontrado durante el proceso de validación.",
+              "pt": "Erro encontrado durante o processo de validação.",
+              "en": "Error encountered during the validation process."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "es": "Erro resultante de problemas internos do servidor.",
+              "pt": "Erro resultante de problemas internos do servidor.",
+              "en": "Error resulting from internal server issues."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Error",
+                            "es": "Error",
+                            "pt": "Error"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Validate wallet connect coupon",
+          "pt": "Validar cupom para Wallet Connect",
+          "es": "Validar cúpon para Wallet Connect"
+        }
+      }
     }
   }
 }
+
+
