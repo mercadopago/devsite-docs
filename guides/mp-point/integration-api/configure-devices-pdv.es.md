@@ -48,7 +48,7 @@ Luego, realiza una solicitud PATCH al endpoint [Cambiar el modo de operación](/
 ``` curl
 curl -X PATCH \
       'https://api.mercadopago.com/point/integration-api/devices/{device-id}' \
-       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+       --h 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
        -H 'Content-Type: application/json' \ 
       -d '{
   "operating_mode": "PDV"
