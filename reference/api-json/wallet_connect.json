@@ -3086,8 +3086,9 @@
           "pt": "Este endpoint possibilita a validação de um cupom do Wallet Connect, retornando o valor do desconto aplicável. Estes cupons destinam-se a conceder descontos em pagamentos realizadas via Wallet Connect",
           "es": "Este endpoint permite la validación de un cupón de Wallet Connect, devolviendo el monto de descuento aplicable. Estos cupones están diseñados para ofrecer descuentos en pagos realizados a través de Wallet Connect"
         },
-        "headers": [
+        "parameters": [
           {
+            "in": "header",
             "name": "x-client-id",
             "description": {
               "en": "Unique identifier for the application making the request. For example - 1111111111111111.",
