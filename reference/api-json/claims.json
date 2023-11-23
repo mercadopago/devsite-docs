@@ -1,0 +1,577 @@
+{
+    "url": "https://api.mercadopago.com",
+    "paths": {
+      "/claims/search": {
+        "get": {
+          "tags": [
+            "subscriptions"
+          ],
+          "description": {
+            "en": "This endpoint allows searching, through a valid token, which claims belong to a certain user",
+            "pt": "Este endpoint permite buscar, por meio de um token válido, quais contestações pertencem a determinado usuário",
+            "es": "Este endpoint permite buscar, mediante un token válido, qué reclamos pertenecen a un usuario determinado"
+          },
+          "parameters": [
+            {
+              "in": "header",
+              "name": "Authorization",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
+              },
+              "description": {
+                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
+                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
+                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
+              }
+            },
+            {
+              "in": "query",
+              "name": "id",
+              "required": false,
+              "schema": {
+                "type": "number",
+                "example": 5039218470
+              },
+              "description": {
+                "en": "Claim ID: A unique identifier used to reference a specific claim in the system. Essential for tracking and managing individual claims.",
+                "pt": "ID da contestação: Identificador único usado para referenciar uma contestação específica no sistema. Essencial para rastrear e gerenciar contestações específicas.",
+                "es": "ID del reclamo: Identificador único utilizado para referenciar un reclamo específico en el sistema. Esencial para el seguimiento y la gestión de reclamos individuales."
+              }
+            },
+            {
+              "in": "query",
+              "name": "type",
+              "required": false,
+              "schema": {
+                "type": "string",
+                "example": "mediations"
+              },
+              "description": {
+                "en": "Defines the nature of the claim being processed.",
+                "pt": "Define a natureza da contestação em processamento.",
+                "es": "Define la naturaleza del reclamo que se está procesando."
+              },
+              "enum": [
+                {
+                  "title": "mediations",
+                  "description": {
+                    "en": "Refers to the process of mediating between parties in a claim.",
+                    "es": "Se refiere al proceso de mediación entre las partes en un reclamo.",
+                    "pt": "Refere-se ao processo de mediação entre as partes em uma contestação."
+                  }
+                },
+                {
+                  "title": "cancel_purchase",
+                  "description": {
+                    "en": "Involves the process of cancelling a previously made purchase.",
+                    "es": "Involucra el proceso de cancelar una compra previamente realizada.",
+                    "pt": "Envolve o processo de cancelar uma compra previamente realizada."
+                  }
+                },
+                {
+                  "title": "return",
+                  "description": {
+                    "en": "Pertains to the process of returning a purchased item.",
+                    "es": "Se refiere al proceso de devolver un artículo comprado.",
+                    "pt": "Refere-se ao processo de devolução de um item comprado."
+                  }
+                },
+                {
+                  "title": "cancel_sale",
+                  "description": {
+                    "en": "oncerns the process of cancelling a sale that has been made.",
+                    "es": "Se ocupa del proceso de cancelar una venta realizada.",
+                    "pt": "Refere-se ao processo de cancelar uma venda realizada."
+                  }
+                },
+                {
+                  "title": "change",
+                  "description": {
+                    "en": "Refers to the alteration or modification of the details or status of a claim.",
+                    "es": "Se refiere a la alteración o modificación de los detalles o el estado de un reclamo.",
+                    "pt": "Refere-se à alteração ou modificação dos detalhes ou status de uma contestação."
+                  }
+                }
+              ]
+            },
+            {
+              "in": "query",
+              "name": "stage",
+              "required": false,
+              "schema": {
+                "type": "string",
+                "example": "claim"
+              },
+              "description": {
+                "en": "Indicates the current stage of the claim within the processing cycle involving the buyer and seller.",
+                "pt": "Indica a fase atual da contestação dentro do ciclo de processamento que envolve o comprador e vendedor.",
+                "es": "Indica la fase actual del reclamo dentro del ciclo de procesamiento que involucra al comprador y al vendedor."
+              },
+              "enum": [
+                {
+                  "title": "claim",
+                  "description": {
+                    "en": "Initial stage of the claim process in which both the buyer and seller are involved.",
+                    "es": "Fase inicial del proceso de reclamo en la que intervienen el comprador y el vendedor.",
+                    "pt": "Fase inicial do processo de contestação na qual intervém o comprador e vendedor."
+                  }
+                },
+                {
+                  "title": "dispute",
+                  "description": {
+                    "en": "Phase where the claim is under dispute or disagreement.",
+                    "es": "Fase donde el reclamo está en disputa o desacuerdo.",
+                    "pt": "Fase em que a contestação está em disputa ou desacordo."
+                  }
+                },
+                {
+                  "title": "recontact",
+                  "description": {
+                    "en": "Stage in which one of the parties makes contact after the claim/dispute has been closed.",
+                    "es": "Fase en la que alguna de las partes se contacta luego de cerrado el reclamo/disputa.",
+                    "pt": "Fase na qual uma das partes entra em contato após o encerramento da contestação/disputa."
+                  }
+                },
+                {
+                  "title": "none",
+                  "description": {
+                    "en": "Indicates no specific stage is currently applicable.",
+                    "es": "Indica que no se aplica ninguna etapa específica.",
+                    "pt": "Indica que nenhuma etapa específica é aplicável."
+                  }
+                }
+              ]
+            },
+            {
+              "in": "query",
+              "name": "status",
+              "required": false,
+              "schema": {
+                "type": "string",
+                "example": "closed"
+              },
+              "description": {
+                "en": "Specifies the current state of the claim, indicating whether it is open or closed.",
+                "pt": "Especifica o estado atual da contestação, indicando se está aberta ou fechada.",
+                "es": "Especifica el estado actual del reclamo, indicando si está abierto o cerrado."
+              },
+              "enum": [
+                {
+                  "title": "opened",
+                  "description": {
+                    "en": "Indicates that the claim is open.",
+                    "es": "Indica que el reclamo está abierto.",
+                    "pt": "Indica que a contestação está aberta."
+                  }
+                },
+                {
+                  "title": "closed",
+                  "description": {
+                    "en": "Indicates that the claim is closed.",
+                    "es": "Indica que el reclamo está cerrado.",
+                    "pt": "Indica que a contestação está fechada."
+                  }
+                }
+              ]
+            },
+            {
+              "in": "query",
+              "name": "resource",
+              "required": false,
+              "schema": {
+                "type": "string",
+                "example": "shipment"
+              },
+              "description": {
+                "en": "Identificador del recurso sobre el que se crea el reclamo. such as a payment, order, shipment, or purchase.",
+                "pt": "Identificador do recurso sobre o qual se cria a reclação, como um pagamento, pedido, envio ou compra.",
+                "es": "Identificador del recurso sobre el que se crea el reclamo, como un pago, pedido, envío o compra."
+              },
+              "enum": [
+                {
+                  "title": "payment",
+                  "description": {
+                    "en": "Related to claims involving payment transactions.",
+                    "es": "Relacionado con reclamos que involucran transacciones de pago.",
+                    "pt": "Relacionado a reclamações envolvendo transações de pagamento."
+                  }
+                },
+                {
+                  "title": "order",
+                  "description": {
+                    "en": "Pertains to claims arising from order processing issues.",
+                    "es": "Se refiere a reclamos surgidos de problemas en el procesamiento de pedidos.",
+                    "pt": "Refere-se a reclamações decorrentes de problemas no processamento de pedidos."
+                  }
+                },
+                {
+                  "title": "shipment",
+                  "description": {
+                    "en": "Concerns claims related to shipping or delivery matters.",
+                    "es": "Concierna a reclamos relacionados con asuntos de envío o entrega.",
+                    "pt": "Refere-se a reclamações relacionadas a questões de envio ou entrega."
+                  }
+                },
+                {
+                  "title": "purchase",
+                  "description": {
+                    "en": "Involves claims associated with the purchase process.",
+                    "es": "Involucra reclamos asociados con el proceso de compra.",
+                    "pt": "Envolve reclamações associadas ao processo de compra."
+                  }
+                }
+              ]
+            },
+            {
+              "in": "query",
+              "name": "resource_id",
+              "required": false,
+              "schema": {
+                "type": "number",
+                "example": 40128769543
+              },
+              "description": {
+                "en": "ID of the resource on which the claim is created and depends on the previous parameter.",
+                "pt": "ID do recurso sobre o qual se cria a reclamação e depende do parâmetro anterior.",
+                "es": "ID del recurso sobre el que se crea el reclamo y depende del parámetro anterior."
+              }
+            },
+            {
+              "in": "query",
+              "name": "date_created",
+              "required": false,
+              "schema": {
+                "type": "string",
+                "example": "2020-09-30T09:48:06.000-04:00"
+              },
+              "description": {
+                "en": "Date and time when the message was created, formatted in ISO 8601 standard. For example, 2020-09-30T09:48:06.000-04:00.",
+                "pt": "Data e hora em que a mensagem foi criada, formatada no padrão ISO 8601. Por exemplo, 2020-09-30T09:48:06.000-04:00.",
+                "es": "Fecha y hora en que se creó el mensaje, formateada según el estándar ISO 8601. Por ejemplo 2020-09-30T09:48:06.000-04:00."
+              }
+            },
+            {
+              "in": "query",
+              "name": "limit",
+              "required": false,
+              "schema": {
+                "type": "number",
+                "example": 5
+              },
+              "description": {
+                "en": "Maximum number of claims to be retrieved. For example, setting this to '5' will return the top 5 claims.",
+                "pt": "Número máximo de contestações a serem obtidas. Por exemplo, definir isso como '5' retornará as 5 principais reclamações.",
+                "es": "Número máximo de reclamos a obtener. Por ejemplo, establecer esto en '5' devolverá los 5 reclamos principales."
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": {
+                "es": "Success",
+                "pt": "Sucesso",
+                "en": "Éxito"
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "paging": {
+                        "type": "object",
+                        "properties": {
+                          "offset": {
+                            "type": "number",
+                            "example": 0,
+                            "description": {
+                              "en": "Offset over the total set of data gathered by the search.",
+                              "pt": "Desplazamiento sobre el conjunto total de datos levantados por la búsqueda.",
+                              "es": "Desplazamiento sobre el conjunto total de datos levantados por la búsqueda."
+                            }
+                          },
+                          "limit": {
+                            "type": "number",
+                            "example": 30,
+                            "description": {
+                              "en": "Cantidad límite de reclamos que retornados en la búsqueda",
+                              "pt": "Cantidad límite de reclamos que retornados en la búsqueda",
+                              "es": "Cantidad límite de reclamos que retornados en la búsqueda."
+                            }
+                          },
+                          "total": {
+                            "type": "number",
+                            "example": 1,
+                            "description": {
+                              "en": "Cantidad de reclamos encontrados en la búsqueda",
+                              "pt": "Cantidad de reclamos encontrados en la búsqueda",
+                              "es": "Cantidad de reclamos encontrados en la búsqueda"
+                            }
+                          }
+                        }
+                      },
+                      "data": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "number",
+                              "example": 5033102536,
+                              "description": {
+                                "en": "ID del reclamo.",
+                                "pt": "ID del reclamo.",
+                                "es": "ID del reclamo."
+                              }
+                            },
+                            "type": {
+                              "type": "string",
+                              "example": "mediations",
+                              "description": {
+                                "en": "Tipo de reclamo. Puede tomar alguno de los siguientes valores - mediations reclamo entre comprador y vendedor. cancel_purchase - cancelación de compra por parte del comprador. return - devolución de producto. En este caso, no hay mensajes. cancel_sale - cancelación de compra por parte del vendedor. El status siempre va a ser 'closed'. El stage siempre va a ser 'none'. El rol complainant siempre va a ser el type seller, collector o sender dependiendo el resource. change - cambios de producto. Indica que se va a realizar un cambio del producto.",
+                                "pt": "Tipo de reclamo. Puede tomar alguno de los siguientes valores - mediations reclamo entre comprador y vendedor. cancel_purchase - cancelación de compra por parte del comprador. return - devolución de producto. En este caso, no hay mensajes. cancel_sale - cancelación de compra por parte del vendedor. El status siempre va a ser 'closed'. El stage siempre va a ser 'none'. El rol complainant siempre va a ser el type seller, collector o sender dependiendo el resource. change - cambios de producto. Indica que se va a realizar un cambio del producto.",
+                                "es": "Tipo de reclamo. Puede tomar alguno de los siguientes valores - mediations reclamo entre comprador y vendedor. cancel_purchase - cancelación de compra por parte del comprador. return - devolución de producto. En este caso, no hay mensajes. cancel_sale - cancelación de compra por parte del vendedor. El status siempre va a ser 'closed'. El stage siempre va a ser 'none'. El rol complainant siempre va a ser el type seller, collector o sender dependiendo el resource. change - cambios de producto. Indica que se va a realizar un cambio del producto."
+                              }
+                            },
+                            "stage": {
+                              "type": "string",
+                              "example": "dispute",
+                              "description": {
+                                "en": "Etapa del reclamo. Puede tomar alguno de los siguientes valores: 'claim': etapa de reclamo donde intervienen el comprador y el vendedor. 'dispute': etapa de mediación donde interviene un representante de Mercado Libre. 'recontact': etapa en la que alguna de las partes se contacta luego de cerrado el reclamo/disputa. 'none': no aplica.",
+                                "pt": "Etapa del reclamo. Puede tomar alguno de los siguientes valores: 'claim': etapa de reclamo donde intervienen el comprador y el vendedor. 'dispute': etapa de mediación donde interviene un representante de Mercado Libre. 'recontact': etapa en la que alguna de las partes se contacta luego de cerrado el reclamo/disputa. 'none': no aplica.",
+                                "es": "Etapa del reclamo. Puede tomar alguno de los siguientes valores: 'claim': etapa de reclamo donde intervienen el comprador y el vendedor. 'dispute': etapa de mediación donde interviene un representante de Mercado Libre. 'recontact': etapa en la que alguna de las partes se contacta luego de cerrado el reclamo/disputa. 'none': no aplica."
+                              }
+                            },
+                            "status": {
+                              "type": "string",
+                              "example": "closed",
+                              "description": {
+                                "en": "Estado del reclamo. Puede tomar dos valores: 'opened' y 'closed'.",
+                                "pt": "Estado del reclamo. Puede tomar dos valores: 'opened' y 'closed'.",
+                                "es": "Estado del reclamo. Puede tomar dos valores: 'opened' y 'closed'."
+                              }
+                            },
+                            "parent_id": {
+                              "type": "string",
+                              "example": null,
+                              "description": {
+                                "en": "ID de otro reclamo del que depende.",
+                                "pt": "ID de otro reclamo del que depende.",
+                                "es": "ID de otro reclamo del que depende."
+                              }
+                            },
+                            "client_id": {
+                              "type": "number",
+                              "example": 1569196570216262,
+                              "description": {
+                                "en": "ID de la app que creo el reclamo",
+                                "pt": "ID de la app que creo el reclamo",
+                                "es": "ID de la app que creo el reclamo"
+                              }
+                            },
+                            "resource_id": {
+                              "type": "number",
+                              "example": 7138572864,
+                              "description": {
+                                "en": "ID del recurso sobre el que se crea el reclamo y depende del parámetro resource.",
+                                "pt": "ID del recurso sobre el que se crea el reclamo y depende del parámetro resource.",
+                                "es": "ID del recurso sobre el que se crea el reclamo y depende del parámetro resource."
+                              }
+                            },
+                            "resource": {
+                              "type": "string",
+                              "example": "shipment",
+                              "description": {
+                                "en": "Identificador del recurso sobre el que se crea el reclamo. Puede ser: payment, order, shipment, purchase",
+                                "pt": "Identificador del recurso sobre el que se crea el reclamo. Puede ser: payment, order, shipment, purchase",
+                                "es": "Identificador del recurso sobre el que se crea el reclamo. Puede ser: payment, order, shipment, purchase"
+                              }
+                            },
+                            "reason_id": {
+                              "type": "string",
+                              "example": "PNR4071",
+                              "description": {
+                                "en": "Razón/motivo por el cual se creó el reclamo",
+                                "pt": "Razón/motivo por el cual se creó el reclamo",
+                                "es": "Razón/motivo por el cual se creó el reclamo"
+                              }
+                            },
+                            "quantity_type": {
+                              "type": "string",
+                              "example": "total",
+                              "description": {
+                                "en": "Inicialmente sólo mostrará el valor 'total' y en el futuro se visualizará el valor 'partial'. Indica si una devolución corresponde a todos los productos de la orden o solo algunos.",
+                                "pt": "Inicialmente sólo mostrará el valor 'total' y en el futuro se visualizará el valor 'partial'. Indica si una devolución corresponde a todos los productos de la orden o solo algunos.",
+                                "es": "Inicialmente sólo mostrará el valor 'total' y en el futuro se visualizará el valor 'partial'. Indica si una devolución corresponde a todos los productos de la orden o solo algunos."
+                              }
+                            },
+                            "players": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "role": {
+                                    "type": "string",
+                                    "example": "mediator",
+                                    "description": {
+                                      "en": "Rol dentro del reclamo. Puede ser: complainant: persona que reclama. respondent: persona a quién le reclaman. mediator: persona que interviene para ayudar a solucionar el problema.",
+                                      "pt": "Rol dentro del reclamo. Puede ser: complainant: persona que reclama. respondent: persona a quién le reclaman. mediator: persona que interviene para ayudar a solucionar el problema.",
+                                      "es": "Rol dentro del reclamo. Puede ser: complainant: persona que reclama. respondent: persona a quién le reclaman. mediator: persona que interviene para ayudar a solucionar el problema."
+                                    }
+                                  },
+                                  "type": {
+                                    "type": "string",
+                                    "example": "payer",
+                                    "description": {
+                                      "en": "Rol que ocupa la persona sobre la operación que se está reclamando. Puede variar de acuerdo con el resource. Payment: comprador o collector. Order: comprador o vendedor. Shipment: receptor o remitente.",
+                                      "pt": "Rol que ocupa la persona sobre la operación que se está reclamando. Puede variar de acuerdo con el resource. Payment: comprador o collector. Order: comprador o vendedor. Shipment: receptor o remitente.",
+                                      "es": "Rol que ocupa la persona sobre la operación que se está reclamando. Puede variar de acuerdo con el resource. Payment: comprador o collector. Order: comprador o vendedor. Shipment: receptor o remitente."
+                                    }
+                                  },
+                                  "user_id": {
+                                    "type": "number",
+                                    "example": 242829175,
+                                    "description": {
+                                      "en": "ID del type del parámetro anterior.",
+                                      "pt": "ID del type del parámetro anterior.",
+                                      "es": "ID del type del parámetro anterior."
+                                    }
+                                  },
+                                  "available_actions": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "description": {
+                                        "es": "Lista de acciones que pueden ejecutar cada una de las partes intervinientes",
+                                        "pt": "Lista de acciones que pueden ejecutar cada una de las partes intervinientes",
+                                        "en": "Lista de acciones que pueden ejecutar cada una de las partes intervinientes"
+                                      },
+                                      "properties": {
+                                        "action": {
+                                          "type": "string",
+                                          "example": "recontact",
+                                          "description": {
+                                            "en": "Acciones posibles de realizarse. Para el vendedor serán 'send_message_to_complainant': enviar mensaje para el comprador (con o sin anexos). 'send_message_to_mediator': enviar mensaje para el mediador (con o sin anexos). 'recontact' (no disponible aún): reabrir un reclamo ya cerrado, por medio de una interacción, como un mensaje. 'refund': devolver el dinero del comprado. Debe ser realizado por el front de Mercado Pago. 'open_dispute': iniciar una mediación. 'send_potential_shipping': enviar una promesa de post, una fecha. 'add_shipping_evidence': publicar una evidencia de que el producto fue enviado. 'send_attachments': enviar mensaje con adjuntos. 'allow_return_label': generar etiqueta de devolución. 'allow_return': generar etiqueta de devolución. 'send_tracking_number': enviar el número de rastreo de envío (tracking number).",
+                                            "pt": "Acciones posibles de realizarse. Para el vendedor serán 'send_message_to_complainant': enviar mensaje para el comprador (con o sin anexos). 'send_message_to_mediator': enviar mensaje para el mediador (con o sin anexos). 'recontact' (no disponible aún): reabrir un reclamo ya cerrado, por medio de una interacción, como un mensaje. 'refund': devolver el dinero del comprado. Debe ser realizado por el front de Mercado Pago. 'open_dispute': iniciar una mediación. 'send_potential_shipping': enviar una promesa de post, una fecha. 'add_shipping_evidence': publicar una evidencia de que el producto fue enviado. 'send_attachments': enviar mensaje con adjuntos. 'allow_return_label': generar etiqueta de devolución. 'allow_return': generar etiqueta de devolución. 'send_tracking_number': enviar el número de rastreo de envío (tracking number).",
+                                            "es": "Acciones posibles de realizarse. Para el vendedor serán 'send_message_to_complainant': enviar mensaje para el comprador (con o sin anexos). 'send_message_to_mediator': enviar mensaje para el mediador (con o sin anexos). 'recontact' (no disponible aún): reabrir un reclamo ya cerrado, por medio de una interacción, como un mensaje. 'refund': devolver el dinero del comprado. Debe ser realizado por el front de Mercado Pago. 'open_dispute': iniciar una mediación. 'send_potential_shipping': enviar una promesa de post, una fecha. 'add_shipping_evidence': publicar una evidencia de que el producto fue enviado. 'send_attachments': enviar mensaje con adjuntos. 'allow_return_label': generar etiqueta de devolución. 'allow_return': generar etiqueta de devolución. 'send_tracking_number': enviar el número de rastreo de envío (tracking number)."
+                                          }
+                                        },
+                                        "due_date": {
+                                          "type": "string",
+                                          "example": "2020-11-16T22:36:59.000-04:00",
+                                          "description": {
+                                            "en": "Tiempo límite para realizar la acción",
+                                            "pt": "Tiempo límite para realizar la acción",
+                                            "es": "Tiempo límite para realizar la acción"
+                                          }
+                                        },
+                                        "mandatory": {
+                                          "type": "boolean",
+                                          "example": true,
+                                          "description": {
+                                            "en": "Este campo en true indica que la acción es obligatoria y debe ser realizada dentro del tiempo informado.",
+                                            "pt": "Este campo en true indica que la acción es obligatoria y debe ser realizada dentro del tiempo informado.",
+                                            "es": "Este campo en true indica que la acción es obligatoria y debe ser realizada dentro del tiempo informado."
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "resolution": {
+                              "type": "object",
+                              "properties": {
+                                "reason": {
+                                  "type": "string",
+                                  "example": "already_shipped",
+                                  "description": {
+                                    "en": "Motivo de resolucion/cierre",
+                                    "pt": "Motivo de resolucion/cierre",
+                                    "es": "Motivo de resolucion/cierre"
+                                  }
+                                },
+                                "date_created": {
+                                  "type": "string",
+                                  "example": "2020-10-02T01:12:31.000-04:00",
+                                  "description": {
+                                    "en": "Fecha de la resolucion/cierre del reclamo",
+                                    "pt": "Fecha de la resolucion/cierre del reclamo",
+                                    "es": "Fecha de la resolucion/cierre del reclamo"
+                                  }
+                                },
+                                "benefited": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string",
+                                    "example": "complainant",
+                                    "description": {
+                                      "es": "Beneficiario/s de la resolucion",
+                                      "pt": "Beneficiario/s de la resolucion",
+                                      "en": "Beneficiario/s de la resolucion"
+                                    }
+                                  },
+                                  "description": {
+                                    "en": "Beneficiario/s de la resolucion",
+                                    "pt": "Beneficiario/s de la resolucion",
+                                    "es": "Beneficiario/s de la resolucion"
+                                  }
+                                },
+                                "closed_by": {
+                                  "type": "string",
+                                  "example": "mediator",
+                                  "description": {
+                                    "en": "Actor que cerró el reclamo",
+                                    "pt": "Actor que cerró el reclamo",
+                                    "es": "Actor que cerró el reclamo"
+                                  }
+                                }
+                              }
+                            },
+                            "site_id": {
+                              "type": "string",
+                              "example": "MLA",
+                              "description": {
+                                "en": "ID del site donde se desarrolla el reclamo",
+                                "pt": "ID del site donde se desarrolla el reclamo",
+                                "es": "ID del site donde se desarrolla el reclamo"
+                              }
+                            },
+                            "date_created": {
+                              "type": "string",
+                              "example": "2020-09-30T09:48:06.000-04:00",
+                              "description": {
+                                "en": "Fecha en la que se creó el reclamo.",
+                                "pt": "Fecha en la que se creó el reclamo.",
+                                "es": "Fecha en la que se creó el reclamo."
+                              }
+                            },
+                            "last_updated": {
+                              "type": "string",
+                              "example": "2020-10-02T01:12:31.000-04:00",
+                              "description": {
+                                "en": "Fecha de última actualización reclamo.",
+                                "pt": "Fecha de última actualización reclamo.",
+                                "es": "Fecha de última actualización reclamo."
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "title": {
+            "en": "Claims search",
+            "pt": "Obter contestações",
+            "es": "Obtener reclamos"
+          }
+        }
+      }
+    }
+  }
