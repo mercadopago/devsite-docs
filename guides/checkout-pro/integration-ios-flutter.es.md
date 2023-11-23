@@ -16,33 +16,28 @@ En este paso vamos a implementar Custom Tabs en una aplicación de Flutter utili
 >
 > Instalación de la dependencia Flutter Custom Tabs
 
-Para la instalación de la dependencia Flutter Custom Tabs puedes ejecutar el siguiente comando en el directorio raíz de tu proyecto:
+Para la instalación de la dependencia Flutter Custom Tabs, ejecutaa el siguiente comando en el directorio raíz de tu proyecto:
 
 ```terminal
 $ flutter pub add flutter_custom_tabs
 ```
+Esto agregará la línea `dependencies:  flutter_custom_tabs: ^1.2.1` al archivo **pubspec.yaml** del paquete. También ejecutará un comando implícito `flutter pub get`.
 
-Esto agregará una línea como esta al archivo **pubspec.yaml** del paquete y ejecutará un implícito `flutter pub get`:
-
-```terminal
-dependencies:
-  flutter_custom_tabs: ^1.2.1
-```
 > NOTE
 >
 > Nota
 > 
 > Te invitamos a conocer más en la [documentación oficial de Flutter Custom Tabs](https://pub.dev/packages/flutter_custom_tabs).
 
-## Ejemplo de integración de Flutter Custom Tabs
-
-Para hacer uso de la dependencia deberás importarla primero en el código Dart donde vayas a requerir mostrar el Checkout. Puedes hacerlo de la siguiente manera:
+Para hacer uso de la dependencia deberás importarla primero en el código Dart donde vayas a requerir mostrar el Checkout. Para importarla, utiliza el siguiente comando:
 
 ```terminal
 import 'package:flutter_custom_tabs/flutter_custom_tabs.dart';
 ```
 
-A continuación, te compartimos un ejemplo:
+### Ejemplo de integración de Flutter Custom Tabs
+
+A continuación, compartimos un ejemplo de integración de Flutter usando Custom Tabs:
 
 ```javascript
 import 'package:flutter/material.dart';
@@ -126,13 +121,10 @@ Con la configuración adecuada de los Deep Links en Flutter, podrás ofrecer a l
 
 
 ### Crear un Deep Link
+
 Desde el checkout es posible configurar Deep Links para volver a tu aplicación, ya sea haciendo click en un link de “Volver”, o de forma automática al terminar todo un flujo de pago exitoso, para luego ser redirigido a tu App.
 
 Para esto debemos agregar en la creación de la preferencia de pago las propiedades `back_urls` y `auto_return` según corresponda.
-
-Las `back_urls` contienen los Deep Links para redirigir a nuestra aplicación, se componen de un scheme seguido del path a donde queremos redirigir al usuario
-
-La propiedad `auto_return` es opcional y es utilizada si queremos ser redirigidos automáticamente al Deep Link al terminar exitosamente un flujo de pago.
 
 Para conocer más, puedes acceder a la documentación de [URLs de retorno](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).
 

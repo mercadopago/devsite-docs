@@ -22,12 +22,8 @@ To install the Flutter Custom Tabs dependency, you can run the following command
 $ flutter pub add flutter_custom_tabs
 ```
 
-This will add a line like this to the **pubspec.yaml** file of the package and run an implicit `flutter pub get`:
+This will add the line `dependencies:  flutter_custom_tabs: ^1.2.1` to the **pubspec.yaml** file of the package. It will also run an implicit command `flutter pub get`.
 
-```terminal
-dependencies:
-  flutter_custom_tabs: ^1.2.1
-```
 
 > NOTE
 > 
@@ -35,15 +31,15 @@ dependencies:
 >
 > Learn more about Flutter Custom Tabs in the [official documentation](https://pub.dev/packages/flutter_custom_tabs).
 
-## Example of Flutter Custom Tabs integration
-
-To use the dependency, you must first import it into the Dart code where you will need to display the Checkout. You can do it as follows:
+To use the dependency you must first import it into the Dart code where you will need to show the Checkout. To import it, use the following command:
 
 ```terminal
 import 'package:flutter_custom_tabs/flutter_custom_tabs.dart';
 ```
 
-Here is an example for you:
+### Example of Flutter Custom Tabs integration
+
+Below, we share an example of Flutter integration using Custom Tabs:
 
 ```javascript
 import 'package:flutter/material.dart';
@@ -130,10 +126,6 @@ With the proper configuration of deep links in Flutter, you can offer users the 
 From the checkout, it is possible to configure deep links to return to your application, either by clicking on a "Return" link, or automatically after completing a successful payment flow, and then be redirected to your App.
 
 To do this, we must add the `back_urls` and `auto_return` properties in the payment preference creation, according to the corresponding requirements.
-
-The `back_urls` contain the deep links to redirect to our application, which consist of a scheme followed by the path to where we want to redirect the user.
-
-The `auto_return` property is optional and used if we want to be automatically redirected to the Deep Link after successfully completing a payment flow.
 
 To learn more, you can access the documentation on [Return URLs](/developers/en/docs/checkout-pro/checkout-customization/user-interface/redirection).
 
