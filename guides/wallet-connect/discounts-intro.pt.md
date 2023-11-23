@@ -5,7 +5,7 @@ Descontos são reduções de valores aplicados ao preço original de um produto 
 
 > WARNING
 >
-> IMPORTANTE
+> Importante
 >
 > Para começar a oferecer descontos, alinhe as características da campanha com o seu gerente de conta.
 
