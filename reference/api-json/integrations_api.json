@@ -375,11 +375,7 @@
                     "properties": {
                       "external_reference": {
                         "type": "string",
-                        "example": {
-                          "en": "some-reference-from-your-application",
-                          "pt": "alguma-referência-sobre-seu-aplicativo",
-                          "es": "alguna-referencia-sobre-tu-aplicación"
-                        },
+                        "example": "some-reference-from-your-application",
                         "description": {
                           "en": "Alphanumeric value that functions as a transaction identificator in your application. It will be returned in the Webhook notification",
                           "es": "Valor alfanumérico que funciona como un identificador de la transacción en tu aplicación. Será devolvuelto en la notificación de Webhook.",
@@ -457,11 +453,7 @@
                       "properties": {
                         "external_reference": {
                           "type": "string",
-                          "example": {
-                            "en": "some-reference-from-your-application",
-                            "pt": "alguma-referência-sobre-seu-aplicativo",
-                            "es": "alguna-referencia-sobre-tu-aplicación"
-                          },
+                          "example": "someone-reference-from-your-application",
                           "description": {
                             "en":"Alphanumeric value that functions as a transaction identificator in your application. It will be returned in the Webhook notification",
                             "es": "Valor alfanumérico que funciona como un identificador de la transacción en tu aplicación. Será devolvuelto en la notificación de Webhook.",
@@ -898,23 +890,39 @@
                   "properties": {
                     "id": {
                       "type": "string",
-                      "description": null,
-                      "example": "7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1"
+                      "example": "7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1",
+                      "description": {
+                        "en": "Identification of the payment intent",
+                        "pt": "Identificador da intenção de pagamento",
+                        "es": "Identificador de la intención de pago"
+                      }
                     },
                     "state": {
                       "type": "string",
-                      "description": null,
+                      "description": {
+                        "en": "State of the payment intent",
+                        "pt": "Status da intenção de pagamento",
+                        "es": "Estado da intenção de pagamento"
+                      },
                       "example": "FINISHED"
                     },
                     "amount": {
                       "type": "integer",
                       "format": "int64",
-                      "description": null,
+                      "description": {
+                        "en": "Total amount of payment intent",
+                        "pt": "Valor total da intenção de pagamento",
+                        "es": "Monto total de la intención de pago"
+                      },
                       "example": 1500
                     },
                     "device_id": {
                       "type": "string",
-                      "description": null,
+                      "description": {
+                        "en": "Identifier of the device to which the payment intent was assigned",
+                        "pt": "Identificador do dispositivo ao qual a intenção de pagamento foi atribuída",
+                        "es": "Identificador del dispositivo al que se asignó la intención de pago"
+                      },
                       "example": "INGENICO_MOVE2500__ING-23976989"
                     },
                     "payment": {
@@ -922,6 +930,11 @@
                       "properties": {
                         "id": {
                           "type": "int",
+                          "description": {
+                            "en": "Identification of the payment in case its flow is completed successfully",
+                            "pt": "Identificador do pagamento caso o fluxo de pagamento tenha sido concluído com sucesso",
+                            "es": "Identificador del pago en caso de que el flujo de pago se haya completado con éxito"
+                          },
                           "example": 16499678033
                         }
                       }
@@ -931,16 +944,20 @@
                       "properties": {
                         "external_reference": {
                           "type": "string",
-                          "description": null,
-                          "example": {
-                            "en": "some-reference-from-your-application",
-                            "pt": "alguma-referência-sobre-seu-aplicativo",
-                            "es": "alguna-referencia-sobre-tu-aplicación"
-                          }
+                          "description": {
+                            "es": "Field for the exclusive use of the integrator to include references specific to your system.",
+                            "pt": "Field for the exclusive use of the integrator to include references specific to your system.",
+                            "en": "Field for the exclusive use of the integrator to include references specific to your system."
+                          },
+                          "example": "some-reference-from-your-application"
                         },
                         "print_on_terminal": {
                           "type": "boolean",
-                          "description": null,
+                          "description": {
+                            "es": "Field used to notify the device if it should print the ticket",
+                            "pt": "Field used to notify the device if it should print the ticket",
+                            "en": "Field used to notify the device if it should print the ticket"
+                          },
                           "example": true
                         },
                         "ticket_number": {
