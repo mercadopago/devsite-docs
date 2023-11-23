@@ -18,7 +18,7 @@ En este paso vamos a implementar Custom Tabs en una aplicación de Flutter utili
 
 Para la instalación de la dependencia Flutter Custom Tabs puedes ejecutar el siguiente comando en el directorio raíz de tu proyecto:
 
-```
+```terminal
 $ flutter pub add flutter_custom_tabs
 ```
 
