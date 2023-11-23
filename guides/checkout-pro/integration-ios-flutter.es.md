@@ -137,6 +137,10 @@ Para conocer más, puedes acceder a la documentación de [URLs de retorno](/deve
 
 Flutter admite deep linking en iOS y navegadores web. Al abrir una URL, se mostrará esa pantalla en tu app. A continuación, te mostraremos cómo puedes lanzar y mostrar rutas creando rutas con nombre (ya sea con el parámetro routes o con onGenerateRoute), o con el widget Router.
 
+> WARNING
+> 
+> Importante
+> 
 > Las rutas con nombre ya no se recomiendan para la mayoría de las aplicaciones.
 
 Si se ejecuta la aplicación en un navegador web, no es necesaria ninguna configuración adicional. Las rutas se gestionan del mismo modo que un enlace profundo de iOS. Por defecto, las aplicaciones web leen la ruta del enlace profundo a partir del fragmento de url utilizando el patrón `/#/path/to/app/screen`, pero esto puede cambiarse configurando la estrategia de URL para tu app. 

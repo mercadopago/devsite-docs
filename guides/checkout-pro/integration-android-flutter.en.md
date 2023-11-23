@@ -137,6 +137,10 @@ To learn more, you can access the documentation on [Return URLs](/developers/en/
 
 Flutter supports deep linking on Android and web browsers. When opening a URL, that screen will be displayed in your app. Below, we will show you how you can launch and display routes by creating named routes (either with the routes parameter or with onGenerateRoute), or with the Router widget.
 
+> WARNING
+>
+> Important
+>
 > Named routes are no longer recommended for most applications.
 
 If the application is run in a web browser, no additional configuration is needed. Routes are handled the same way as an Android deep link. By default, web applications read the deep link path from the URL fragment using the pattern `/#/path/to/app/screen`, but this can be changed by configuring the URL strategy for your app.

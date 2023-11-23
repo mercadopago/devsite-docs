@@ -136,7 +136,11 @@ Para saber mais, você pode acessar a documentação sobre [URLs de retorno](/de
 
 O Flutter oferece suporte para Deep Links no Android e navegadores da web. Ao abrir uma URL, essa tela será exibida em sua aplicação. A seguir, mostraremos como você pode lançar e exibir rotas criando rotas com nome (seja com o parâmetro routes ou com onGenerateRoute), ou com o widget Router.
 
-> Rotas nomeadas não são mais recomendadas para a maioria das aplicações.
+> WARNING
+>
+> Importante
+>
+> As rotas com nome não são mais recomendadas para a maioria dos aplicativos.
 
 Se a aplicação for executado em um navegador da web, nenhuma configuração adicional será necessária. As rotas são tratadas da mesma forma que um link profundo do Android. Por padrão, as aplicações da web lêem o caminho do link profundo a partir do fragmento de URL usando o padrão `/#/path/to/app/screen`, mas isso pode ser alterado configurando a estratégia de URL para a sua aplicação.
 
