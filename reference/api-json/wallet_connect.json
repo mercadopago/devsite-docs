@@ -3098,10 +3098,11 @@
             "required": true,
             "schema": {
               "type": "string",
-              "example": 1111111111111111
+              "example": 12345678910
             }
           },
           {
+            "in": "header",
             "name": "x-payer-token",
             "description": {
               "en": "Token associated to the potential payer who will use the discount. For example - e9449535fe074e0e8ff4f2055f604e51.",
