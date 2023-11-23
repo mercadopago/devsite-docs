@@ -33,15 +33,13 @@ dependencies:
 > 
 > Nota
 >
-> * Como alternativa, seu editor pode suportar o comando `flutter pub get`. Consulte a documentação do seu editor para obter mais informações.<br>
-> <br>
-> * Conheça mais na [documentação oficial](https://pub.dev/packages/flutter_custom_tabs) da biblioteca flutter_custom_tabs.
+> * Como alternativa, seu editor pode suportar o comando `flutter pub get`. Consulte a documentação do seu editor para obter mais informações.<br><br> * Conheça mais na [documentação oficial](https://pub.dev/packages/flutter_custom_tabs) da biblioteca flutter_custom_tabs.
 
 ## Exemplo de integração do Flutter Custom Tabs
 
 Para usar a dependência, você deve importá-la primeiro no código Dart onde deseja exibir o Checkout. Você pode fazer isso da seguinte maneira:
 
-```terminal
+```
 import 'package:flutter_custom_tabs/flutter_custom_tabs.dart';
 ```
 
