@@ -3089,20 +3089,6 @@
         "parameters": [
           {
             "in": "header",
-            "name": "x-client-id",
-            "description": {
-              "en": "Unique identifier for the application making the request. For example - 1111111111111111.",
-              "pt": "Identificador único para a aplicação que está fazendo a solicitação. Por exemplo - 1111111111111111.",
-              "es": "Identificador único para la aplicación que realiza la solicitud. Por ejemplo - 1111111111111111."
-            },
-            "required": true,
-            "schema": {
-              "type": "string",
-              "example": 12345678910
-            }
-          },
-          {
-            "in": "header",
             "name": "x-payer-token",
             "description": {
               "en": "Token associated to the potential payer who will use the discount. For example - e9449535fe074e0e8ff4f2055f604e51.",
