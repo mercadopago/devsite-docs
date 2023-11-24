@@ -4168,11 +4168,7 @@
                               }
                             },
                             "country_name": {
-                              "type": {
-                                "en": "Country name.",
-                                "pt": "Nome do país",
-                                "es": "Nombre del país"
-                              },
+                              "type": "string",
                               "description": {
                                 "en": "Country name.",
                                 "pt": "Nome do país",
