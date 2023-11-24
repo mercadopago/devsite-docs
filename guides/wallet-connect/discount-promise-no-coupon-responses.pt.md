@@ -7,7 +7,7 @@ Esta seção detalha as diferentes respostas que podem ser recebidas ao criar um
 
 1. Resposta com Desconto Aplicado
 
-* Status Code: 200 (Sucesso)
+* Código de Status: 200 (Sucesso)
 * Descrição: Retorna o valor da transação com o desconto aplicado, informações detalhadas sobre o desconto, e um link para os termos legais do desconto.
 * Corpo da Resposta:
 
@@ -25,13 +25,13 @@ Esta seção detalha as diferentes respostas que podem ser recebidas ao criar um
     },
     "legal_terms": "https://mercadopago.com/legal/terms"
   }
-
+}
 ```
 ]]]
 
-2. Resposta para Usuário/Campanha Sem Descontos \
+2. Resposta para Usuário/Campanha Sem Descontos 
 
-* Status Code: 200 (Sucesso)
+* Código de Status: 200 (Sucesso)
 * Descrição: Indica que a transação foi processada sem desconto aplicado.
 * Corpo da Resposta:
 
@@ -55,7 +55,7 @@ Esta seção detalha as diferentes respostas que podem ser recebidas ao criar um
 1. Resposta para Requisição Incorreta
 
 
-* Status Code: 400 (Bad Request)
+* Código de Status: 400 (Bad Request)
 * Descrição: Ocorre quando a requisição está mal-formada ou incompleta.
 * Corpo da Resposta:
 [[[
@@ -74,7 +74,7 @@ Esta seção detalha as diferentes respostas que podem ser recebidas ao criar um
 2. Resposta para Recurso Não Encontrado
 
 
-* Status Code: 404 (Not Found)
+* Código de Status: 404 (Not Found)
 * Descrição: Significa que o recurso solicitado não existe no servidor.
 * Corpo da Resposta:
 
@@ -82,16 +82,15 @@ Esta seção detalha as diferentes respostas que podem ser recebidas ao criar um
 ```Json
 
 {
-  "error": "not_found",
-  "message": "<not_found_message>",
-  "status": 404
+   "error": "not_found",
+   "message": "Not found manual input code",
+   "status": 404
 }
 
 ```
 ]]]
 
 3. Resposta para Erro Interno do Servidor
-
 
 
 * Status Code: 500 (Internal Server Error)

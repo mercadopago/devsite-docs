@@ -14,6 +14,7 @@ Nesta seção você encontra as possíveis respostas ao validar cupons, com deta
 ## Sucesso
 
 1. Cupom válido com desconto associado
+
 * Código de Status: 200 (Sucesso)
 * Descrição:  Resposta indicando sucesso na validação do cupom, que está vinculado a um desconto ativo. Inclui os termos legais, o valor do desconto, tipo, limite máximo, e os montantes mínimos e máximos aplicáveis ao pagamento.
 * Corpo da resposta:
@@ -22,15 +23,15 @@ Nesta seção você encontra as possíveis respostas ao validar cupons, com deta
 ```Json
 
 {
-    "status": “success”,
-    “description”: “Description of the coupon displayed to customers on for instance interface, invoices or receipts”,
-    “legal_terms”: “Terms and conditions URL for legal purposes”,
-    “details”: {
-       “value”: 10.0,
-       “type”: “percent”,
-       “cap”: 1000.0,
-       “min_payment_amount”: 100.0,
-       “max_payment_amount”: 10000.0,
+    "status": "success",
+    "description": "Descrição do cupom exibida aos clientes, por exemplo, em interfaces, faturas ou recibos",
+    "legal_terms": "URL dos termos e condições para fins legais",
+    "details": {
+       "value": 10.0,
+       "type": "percentual",
+       "cap": 1000.0,
+       "min_payment_amount": 100.0,
+       "max_payment_amount": 10000.0
     }
 }
 
@@ -82,9 +83,9 @@ Nesta seção você encontra as possíveis respostas ao validar cupons, com deta
 
 ## Erro
 
-1. Resposta de Erro: Requisição Mal Formulada
+1. Requisição Mal Formulada
 
-* Código de Status: 400 (Bad Request)
+* Código de Status: 400 (Bad Request).
 * Descrição: Resposta de erro indicando que a requisição foi mal formulada. Inclui uma mensagem de erro detalhada com o código de status correspondente.
 * Corpo da resposta: 
 
@@ -99,3 +100,35 @@ Nesta seção você encontra as possíveis respostas ao validar cupons, com deta
 
 ```
 ]]] 
+
+2. Coupon_id inválido
+
+* Código de status: 400 (Bad Request).
+* Descrição: Resposta de erro indicando que o coupon_id enviado no request é inválido.
+* Corpo da resposta:
+
+[[[
+```json
+{
+  "error": "bad_request",
+  "message": "Invalid coupon_id.",
+  "status": 400
+}
+```
+]]]
+
+3. Payer_token inválido
+
+* Código de status: 400 (Bad Request).
+* Descrição: Resposta de erro indicando que o payer_token enviado no request é inválido.
+* Corpo da resposta:
+
+[[[
+```json
+{
+  "error": "bad_request",
+  "message": "Invalid payer token.",
+  "status": 400
+}
+```
+]]]

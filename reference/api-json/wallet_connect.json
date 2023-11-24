@@ -3249,25 +3249,17 @@
                         {
                           "title": "400",
                           "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
+                            "en": "Bad-Request - Invalid coupon_id.",
+                            "es": "Bad-Request - coupon_id inválido.",
+                            "pt": "Bad-Request - coupon_id inválido."
                           }
                         },
                         {
                           "title": "400",
                           "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
+                            "en": "Bad-Request - Invalid Payer Token.",
+                            "es": "Bad-Request - Payer Token inválido.",
+                            "pt": "Bad-Request - Payer Token inválido."
                           }
                         }
                       ]
@@ -3294,9 +3286,9 @@
                         {
                           "title": "500",
                           "description": {
-                            "en": "Error",
-                            "es": "Error",
-                            "pt": "Error"
+                            "en": "Internal server error.",
+                            "es": "Error interno del servidor.",
+                            "pt": "Erro interno do servidor."
                           }
                         }
                       ]

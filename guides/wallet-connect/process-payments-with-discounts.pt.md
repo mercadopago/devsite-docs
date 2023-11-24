@@ -72,89 +72,91 @@ Abaixo detalhamos as diferentes respostas que podem ser recebidas ao processar u
 ```Json
 
 {
-"id": 1234567,
-"status": "approved",
-"marketplace": null,
-"sponsor_id": null,
-"payments": [
-{
-"id": PAYMENT-ID,
-"status": "approved",
-"status_detail": "accredited",
-"payment_type_id": "account_money",
-"payment_method_id": "account_money",
-"token": null,
-"transaction_amount": 500,
-"installments": 1,
-"processing_mode": "aggregator",
-"issuer_id": null,
-"coupon_amount": 10.0,
-"campaign_id": "CAMPAIGN-ID",
-"coupon_code": null,
-"description": "Payment Wallet",
-"external_reference": null,
-"statement_descriptor": null,
-"date_of_expiration": null,
-"merchant_account_id": null,
-"payment_method_option_id": null,
-"additional_info": null,
-"transaction_details": null,
-"net_amount": null,
-"taxes": null
+  "id": 1234567,
+  "status": "approved",
+  "marketplace": null,
+  "sponsor_id": null,
+  "payments": [
+    {
+      "id": "PAYMENT-ID",
+      "status": "approved",
+      "status_detail": "accredited",
+      "payment_type_id": "account_money",
+      "payment_method_id": "account_money",
+      "token": null,
+      "transaction_amount": 500,
+      "installments": 1,
+      "processing_mode": "aggregator",
+      "issuer_id": null,
+      "coupon_amount": 10.0,
+      "campaign_id": "CAMPAIGN-ID",
+      "coupon_code": null,
+      "description": "Payment Wallet",
+      "external_reference": null,
+      "statement_descriptor": null,
+      "date_of_expiration": null,
+      "merchant_account_id": null,
+      "payment_method_option_id": null,
+      "additional_info": null,
+      "transaction_details": null,
+      "net_amount": null,
+      "taxes": null
+    }
+  ],
+  "disbursements": null,
+  "payer": {
+    "id": "PAYER-ID",
+    "email": "PAYER-EMAIL",
+    "address": null,
+    "identification": null,
+    "first_name": null,
+    "last_name": null,
+    "phone": null,
+    "token": "PAYER-TOKEN",
+    "external_payer_id": "EXTERNAL-PAYER-ID"
+  },
+  "external_reference": null,
+  "description": null,
+  "binary_mode": true,
+  "capture": true,
+  "date_created": "2023-07-24T14:30:45.574-04:00",
+  "date_last_updated": "2023-07-24T14:30:46.517-04:00",
+  "metadata": null,
+  "additional_info": null,
+  "wallet_payment": {
+    "transaction_amount": 550,
+    "description": "Payment Wallet",
+    "external_reference": null,
+    "subscription_data": null,
+    "user_present": null,
+    "discount": {
+      "amount": 50.0,
+      "description": "wallet connect test",
+      "detail": {
+        "value": 10.0,
+        "type": "percent",
+        "cap": 100000.0
+      }
+    },
+    "payment_preference": {
+      "active": true,
+      "user_id": 1431302201,
+      "payment_method": [
+        {
+          "priority": 1,
+          "payment_method": "account_money"
+        }
+      ]
+    }
+  },
+  "pos_id": null,
+  "store_id": null,
+  "wallet_connect_discount": {
+    "amount": 10.0,
+    "token": "DISCOUNT-TOKEN"
+  }
 }
-],
-"disbursements": null,
-"payer": {
-"id": "PAYER-ID",
-"email": "PAYER-EMAIL",
-"address": null,
-"identification": null,
-"first_name": null,
-"last_name": null,
-"phone": null,
-"token": "PAYER-TOKEN",
-"external_payer_id": "EXTERNAL-PAYER-ID"
-},
-"external_reference": null,
-"description": null,
-"binary_mode": true,
-"capture": true,
-"date_created": "2023-07-24T14:30:45.574-04:00",
-"date_last_updated": "2023-07-24T14:30:46.517-04:00",
-"metadata": null,
-"additional_info": null,
-"wallet_payment": {
-"transaction_amount": 550,
-"description": "Payment Wallet",
-"external_reference": null,
-"subscription_data": null,
-"user_present": null,
-"discount": {
-"amount": 50.0,
-"description": "wallet connect prueba",
-"detail": {
-"value": 10.0,
-"type": "percent",
-"cap": 100000.0
-}
-},
-"payment_preference": {
-"active": true,
-"user_id": 1431302201,
-"payment_method": [
-{
-"priority": 1,
-"payment_method": "account_money"
-}]
-}
-},
-"pos_id": null,
-"store_id": null,
-"wallet_connect_discount": {
-"amount": 10.0,
-"token": "DISCOUNT-TOKEN"
-}
-}
+
 
 
 ```
@@ -168,17 +170,18 @@ Caso o desconto aplicado no pagamento não seja válido ou o valor indicado no p
 ```Json
 
 {
-"error": "bad_request",
-"message": "discount doesn't exist or amount is incorrect",
-"status": 400,
-"cause": [
-{
-"code": 400136,
-"description": "discount doesn't exist or amount is incorrect",
-"data": null
+  "error": "bad_request",
+  "message": "discount doesn't exist or amount is incorrect",
+  "status": 400,
+  "cause": [
+    {
+      "code": 400136,
+      "description": "discount doesn't exist or amount is incorrect",
+      "data": null
+    }
+  ]
 }
-]
-}
+
 
 ```
 ]]] 

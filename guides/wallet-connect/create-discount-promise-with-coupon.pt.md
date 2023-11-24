@@ -81,6 +81,12 @@ Ao adicionar o cupom antes de prosseguir para o pagamento, é possível que dife
 
 ### Sucesso
 
+1. Resposta de sucesso ao adicionar cupom
+
+* Código de status: nenhum código é devolvido nesta solicitação.
+* Descrição: a resposta traz a informação referente à moeda, valor do desconto, termos legais, entre outros, o que atesta o sucesso da transação.
+* Corpo da resposta: 
+
 [[[
 ```Json
 
@@ -103,7 +109,12 @@ Ao adicionar o cupom antes de prosseguir para o pagamento, é possível que dife
 
 ### Erro
 
- 
+1. Desconto inexistente para usuário
+
+* Código de status: nenhum código é retornado.
+* Descrição: Este erro retorna para informar que não existe um desconto disponível para o usuário.
+* Corpo da resposta:
+
 ```Json
 {
   "transaction_amount": 550.0,
@@ -113,3 +124,35 @@ Ao adicionar o cupom antes de prosseguir para o pagamento, é possível que dife
 
 ```
 
+2. Transaction_amount deve ser maior que 0
+
+* Código de status: 400 (Bad Request).
+* Descrição: Este erro retorna quando o campo `transaction_amount_ é preenchido com valor 0. Neste caso, é necessário inserir um valor que seja superior a 0 e realizar uma nova requisição.
+* Corpo da resposta:
+
+[[[
+```Json
+{
+  "error": "bad_request",
+  "message": "transaction_amount must be greater than 0",
+    "status": 400
+}
+```
+]]]
+
+3. Transaction_amount não pode estar vazio
+
+* Código de status: 400 (Bad Request).
+* Descrição: Este erro retorna quando o campo `transaction_amount_ é deixado em branco. Neste caso, é necessário inserir um valor que seja superior a 0 e realizar uma nova requisição.
+* Corpo da resposta:
+
+[[[
+```Json
+{
+  "error": "bad_request",
+  "message": "transaction_amount must not be null.",
+    "status": 400
+}
+
+```
+]]]
