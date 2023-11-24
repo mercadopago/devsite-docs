@@ -2830,6 +2830,22 @@
           "pt": "Este endpoint permite criar uma \"Discount Promise\" para o Wallet Connect. Essa \"Discount Promise\" é uma referência que será usada ao gerar um Advanced Payment, possibilitando aplicar um desconto específico ao pagamento. Durante a criação do pagamento, é essencial incluir as informações da \"Discount Promise\" fornecida anteriormente",
           "es": "Este endpoint te permite crear una \"Discount Promise\" para Wallet Connect. Esta \"Discount Promise\" actúa como una referencia que se utilizará al generar un Advanced Payment, permitiendo aplicar un descuento específico al pago. Durante el proceso de creación del pago, es esencial incluir la información de la \"Discount Promise\" proporcionada anteriormente"
         },
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-payer-token",
+            "description": {
+              "en": "Token associated to the potential payer who will use the discount. For example - e9449535fe074e0e8ff4f2055f604e51.",
+              "pt": "Token relacionado ao potencial pagador que utilizará o desconto. Por exemplo - e9449535fe074e0e8ff4f2055f604e51.",
+              "es": "Token relacionado con el posible pagador que espera utilizar el descuento. Por ejemplo - e9449535fe074e0e8ff4f2055f604e51."
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "<PAYER_TOKEN>"
+            }
+          }
+        ],
         "requestBody": {
           "description": {
             "en": "Here are the fields needed to complete a request for create an Discount Promise.",
@@ -2872,20 +2888,7 @@
             }
           }
         },
-        "headers": {
-          "properties": {
-            "x-payer-token": {
-              "required": true,
-              "type": "string",
-              "description": {
-                "en": "Token of the payer for the payment to which the discount will be applied and which is being created.",
-                "pt": "Token do pagador para o pagamento ao qual o desconto será aplicado e que está sendo criado.",
-                "es": "Token del pagador para el pago al cual se aplicará el descuento y que se está creando."
-              },
-              "example": "e9449535fe074e0e8ff4f2055f604e51"
-            }
-          }
-        },
+
         "responses": {
           "200": {
             "description": {
@@ -3003,25 +3006,25 @@
                         {
                           "title": "400",
                           "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
+                            "en": "Bad-Request - Invalid amount in discount.",
+                            "es": "Bad-Request - Monto de descuento inválido.",
+                            "pt": "Bad-Request - Valor de desconto inválido."
                           }
                         },
                         {
                           "title": "400",
                           "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
+                            "en": "Bad-Request - Invalid coupon in discount.",
+                            "es": "Bad-Request - Cupón de descuento inv;alido.",
+                            "pt": "Bad-Request - Cupom de desconto inválido."
                           }
                         },
                         {
                           "title": "400",
                           "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
+                            "en": "Bad-Request - Invalid payer token.",
+                            "es": "Bad-Request - Payer token inválido.",
+                            "pt": "Bad-Request - Payer token inválido."
                           }
                         }
                       ]
@@ -3048,17 +3051,17 @@
                         {
                           "title": "500",
                           "description": {
-                            "en": "Error",
-                            "es": "Error",
-                            "pt": "Error"
+                            "en": "Error - Internal server error.",
+                            "es": "Error - Error interno del servidor.",
+                            "pt": "Erro - Erro interno do servidor."
                           }
                         },
                         {
                           "title": "500",
                           "description": {
-                            "en": "Error",
-                            "es": "Error",
-                            "pt": "Error"
+                            "en": "Error - Internal Error in Discarded List.",
+                            "es": "Error - Error interno en la Lista Descartada.",
+                            "pt": "Error - Erro interno na Lista de Descarte."
                           }
                         }
                       ]
@@ -3098,7 +3101,7 @@
             "required": true,
             "schema": {
               "type": "string",
-              "example": "e9449535fe074e0e8ff4f2055f604e51"
+              "example": "<PAYER_TOKEN>"
             }
           }
         ],
