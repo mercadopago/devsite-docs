@@ -26,8 +26,7 @@ curl -X POST \
 --header 'Authorization: <Bearer YOUR_ACCESS_TOKEN>' \
 --header 'x-payer-token: <PAYER_TOKEN>' \
 --header 'Content-Type: application/json' \
--d
-'{
+-d '{
     "id": "<COUPON>"
  }'
 ```
