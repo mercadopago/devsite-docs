@@ -122,7 +122,7 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 | `amount` | Valor total da intenção de pagamento.  <br>**Valor mínimo permitido**: 100 (dispositivos POS y SMART). <br>**Valor máximo permitido**: 7000000 (ambos dispositivos). <br>**Importante**: este campo não admite vírgulas decimais, então se deseja gerar uma intenção de pagamento deve-se considerar as duas casas decimais do valor em seu total. Por exemplo: para gerar o valor da ordem de pagamento "15,00" você deve inserir "1500". |
 | `description` | Descrição da intenção de pagamento. |
 | `payment.type` | Tipo de método de pagamento. |
-| `payment.installments` | Valor das parcelas de pagamento. |
+| `payment.installments` | Valor das parcelas de pagamento. O valor mínimo de cada parcela deverá ser 5,00 (500). <br>No caso de dispositivos Smart, se o valor for inferior ao mínimo aceito, o pagamento será processado de uma só vez, sem considerar as parcelas estabelecidas.|
 | `payment.installments_cost` | Custo das parcelas de pagamento. Este campo determina quem assume o custo e os valores aceitos são seller e buyer |
 | `external_reference` | Campo de uso exclusivo do integrador para incluir referências de seu sistema. |
 | `print_on_terminal` | Campo que determina se o dispositivo imprime o comprovante de pagamento. |
@@ -189,15 +189,10 @@ Em resposta, você receberá algo semelhante a isso:
 
 Tenha em mente que as intenções de pagamento são a base para o processamento de pagamentos com dispositivos Point. Por esse motivo, é importante que você registre e salve os dados obtidos durante sua criação, especialmente o `id`.
 
-> NOTE
->
-> Recomendação
->
-> Você pode usar o [Simulador Point](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/point-simulator) para testar sua integração e a criação de intenções de pagamento com segurança.
 
 ## Processar intenção de pagamento
 
-Uma vez que a intenção de pagamento é criada, você pode obtê-la de seu dispositivo Point pressionando a tecla para iniciar o pagamento (no caso de Point Plus e Point Pro 2 o **botão verde** e, no caso de Point Smart, o **botão digital “Charge now”**) e continuar com as etapas mostradas em tela para concluir o pagamento.
+Uma vez que a intenção de pagamento é criada, você pode obtê-la de seu dispositivo Point pressionando a tecla para iniciar o pagamento (no caso de Point Plus e Point Pro 2 o **botão verde** e, no caso de Point Smart, o **botão digital “Cobrar”**) e continuar com as etapas mostradas em tela para concluir o pagamento.
 
 > WARNING
 >
@@ -209,7 +204,7 @@ Uma vez que a intenção de pagamento é criada, você pode obtê-la de seu disp
 
 Se você deseja saber o status de uma intenção de pagamento específica, você pode ----[mla, mlb]----[verificar o status atual da sua intenção de pagamento](/developers/pt/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get)------------ ----[mlm]----[verificar o status atual da sua intenção de pagamento](/developers/pt/reference/point_apis_mlm/_point_integration-api_payment-intents_paymentintentid/get)------------ usando o `id` que você recebeu na resposta ao criá-la.
 
-Lembre-se que o `id` e status da intenção de pagamento são diferentes do `id` e status do pagamento. Neste caso, trata-se de consultar os detalhes de uma tentativa. Você pode consultar todas as informações correspondentes ao pagamento na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) de Referência da API.
+Lembre-se que o `id` e status da intenção de pagamento (por exemplo, _7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1_) são diferentes do `id` e status do pagamento (por ejemplo, _65412345_). Neste caso, trata-se de consultar os detalhes de uma tentativa. Você pode consultar todas as informações correspondentes ao pagamento na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) de Referência da API.
 
 > WARNING
 >
@@ -322,3 +317,9 @@ Você receberá esta resposta:
 ```
 
 * Se, por outro lado, o estado da intenção de pagamento for `on_terminal`, você deverá cancelá-la diretamente no dispositivo Point.
+
+> NOTE
+>
+> Recomendação
+>
+> Você pode usar o [Simulador Point](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/point-simulator) para testar sua integração e a criação de intenções de pagamento com segurança usando sua conta e credenciais de teste.

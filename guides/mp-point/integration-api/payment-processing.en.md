@@ -124,8 +124,8 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 |---|---|
 | `amount` | Total amount of the payment intent. <br>**Minimum amount allowed**: 100 (POS and SMART devices). <br>**Maximum amount allowed**: 7000000 (both devices). <br>**Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
 | `description` | Description of payment intent. |
-| `payment.type` | Payment method type. |
-| `payment.installments` | Number of payment installments |
+| `payment.type` | Payment method type.  |
+| `payment.installments` | Number of installments in which the payment is processed. The minimum value of each installment must be 5.00 (500). <br>In the case of Smart devices, if the value is less than the minimum accepted, the payment will be processed at once, without considering the established fees. |
 | `payment.installments_cost` | Cost for payment installments. This field determines who takes the cost and the accepted values are `seller` and `buyer`. |
 | `external_reference` | Field exclusively used by the integrator to include references to their system. |
 | `print_on_terminal` | Field that determines if the device prints the payment receipt. |
@@ -195,15 +195,10 @@ You will receive a response like this:
 
 Please note that payment intents are the foundation for processing payments with Point devices. For this reason, it is important that you register and save the data obtained during their creation, especially their `id`.
 
-> NOTE
->
-> Recommendation
->
-> You can use the [Point Simulator](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/point-simulator) to safely test your integration and the creation of payment intents.
 
 ## Process your payment intent
 
-Once the payment intent has been created, you can obtain it from your Point device by pressing on the key to pay (in the case of Point Plus and Point Pro 2 the **green button** and, in the case of the Point Smart, the **digital button “Charge now”**). 
+Once the payment intent has been created, you can obtain it from your Point device by pressing on the key to pay (in the case of Point Plus and Point Pro 2 the **green button** and, in the case of the Point Smart, the **digital button “Cobrar”**). 
 
 Then, follow the steps shown on the screen afterwards to complete the payment.
 
@@ -217,7 +212,7 @@ Then, follow the steps shown on the screen afterwards to complete the payment.
 
 If you want to know the status of a particular payment intent, you can ----[mla, mlb]----[check the current status of your payment intent](/developers/en/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get)------------ ----[mlm]----[check the current status of your payment intent](/developers/en/reference/point_apis_mlm/_point_integration-api_payment-intents_paymentintentid/get)------------ using the `id` that you received in the response when creating it.
 
-Remember that `id`and `status`of the **payment intent** are not the same as `id`and `status`of the payment. In this case, you will be trying to obtain the details of an attempt. If you want to check out all the information corresponding to the payment, access the [Payment API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) in our API Reference.
+Remember that `id`and `status`of the payment intent (for example, _7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1_) are not the same as `id`and `status`of the payment (for example, _65412345_). In this case, you will be trying to obtain the details of an attempt. If you want to check out all the information corresponding to the payment, access the [Payment API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) in our API Reference.
 
 > WARNING
 >
@@ -332,3 +327,9 @@ You will receive this response:
 ```
 
 * If the status of the payment intent is `on_terminal`, you will need to cancel it directly from the Point device.
+
+> NOTE
+>
+> Recommendation
+>
+> You can use the [Point Simulator](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/point-simulator) to safely test your integration and the creation of payment intents by using your test account and credentials. 
