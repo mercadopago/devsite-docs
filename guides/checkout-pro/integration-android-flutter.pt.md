@@ -30,9 +30,9 @@ Isso adicionará a linha `dependencies: flutter_custom_tabs: ^1.2.1` ao arquivo 
 > 
 > Conheça mais na [documentação oficial do Flutter Custom Tabs](https://pub.dev/packages/flutter_custom_tabs).
 
-Para usar a dependência, você precisará importá-la primeiro no código Dart onde deseja exibir o Checkout. Para importar, use o seguinte comando:
+Para usar a dependência, você deve importá-la primeiro no código Dart onde deseja exibir o Checkout. Para importar, adicione a seguinte linha no seu código:
 
-```terminal
+```dart
 import 'package:flutter_custom_tabs/flutter_custom_tabs.dart';
 ```
 
@@ -40,7 +40,7 @@ import 'package:flutter_custom_tabs/flutter_custom_tabs.dart';
 
 A seguir, compartilhamos um exemplo de integração do Flutter usando o Custom Tabs:
 
-```javascript
+```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_tabs/flutter_custom_tabs.dart';
 
