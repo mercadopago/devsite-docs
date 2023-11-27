@@ -20,14 +20,14 @@ Para **criar uma promessa de desconto sem um cupom pré-adicionado**, utilize o 
 [[[
 ```curl
 
-curl -X POST \  'https://api.mercadopago.com/v2/wallet_connect/payment/discounts' \
+curl -X POST \
+'https://api.mercadopago.com/v2/wallet_connect/payment/discounts' \
 --header 'Authorization: Bearer <YOUR_ACCESS_TOKEN>' \
 --header 'x-payer-token: <PAYER_TOKEN>' \
 --header 'Content-Type: application/json' \
 -d '{
     "amount": 550
 }'
-
 
 ```
 ]]]
