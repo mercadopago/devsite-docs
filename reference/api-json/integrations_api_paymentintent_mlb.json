@@ -8,7 +8,7 @@
         ],
         "description": {
           "en": "This endpoint allows to create a payment intent, which is a call that contains all the details of a transaction, and assign it to a device",
-          "pt": "Este endpoint permite que você crie uma intenção de pagamento, ou seja, uma chamada que contém os detalhes de uma transação a ser realizada, e atribuí-la a um dispositivo",
+          "pt": "Este endpoint permite que você crie uma intenção de pagamento, ou seja, uma chamada que contém os detalhes de uma transação a ser realizada e atribuí-la a um dispositivo",
           "es": "Este endpoint permite crear una intención de pago, es decir, un llamado que contiene los detalles de una transacción a realizarse, y asignarla a un dispositivo."
         },
         "parameters": [
@@ -108,7 +108,7 @@
                         "description": {
                           "en": "A string value that must be [sodexo] or [alelo]. This value can be setted only if type field is equal to [voucher_card]",
                           "es": "Un valor de string que debe ser [sodexo] o [alelo]. Este valor se puede configurar sólo si el campo de tipo es igual a [voucher_card]",
-                          "pt": "Um valor de string que deve ser [sodexo] ou [alelo]. Este valor pode ser configurado somente se o campo tipo for igual a [voucher_card]"
+                          "pt": "Um valor de string que deve ser [sodexo] ou [alelo]. Esse valor pode ser configurado somente se o campo tipo for igual a [voucher_card]"
                         }
                       }
                     },
