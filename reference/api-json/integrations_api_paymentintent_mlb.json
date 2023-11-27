@@ -82,7 +82,7 @@
                         "description": {
                           "en": "An integer value that must be between 1 and 72, this value can be setted only if type field is equal to [credit_card]",
                           "pt": "Um valor inteiro que deve estar entre 1 e 72, este valor pode ser configurado somente se o campo type for igual a [credit_card]",
-                          "es": "Un valor entero que debe estar entre 1 y 72, este valor se puede configurar solo si el campo de tipo es igual a [credit_card]"
+                          "es": "Un valor entero que debe estar entre 1 y 72, este valor se puede configurar sólo si el campo de tipo es igual a [credit_card]"
                         }
                       },
                       "type": {
@@ -99,7 +99,7 @@
                         "example": "seller",
                         "description": {
                           "en": "A string value that must be [seller] or [buyer]. This value can be setted only if type field is equal to [credit_card]",
-                          "es": "Un valor de string que debe ser [seller] o [buyer]. Este valor se puede establecer solo si el campo de tipo es igual a [credit_card]",
+                          "es": "Un valor de string que debe ser [seller] o [buyer]. Este valor se puede establecer sólo si el campo de tipo es igual a [credit_card]",
                           "pt": "Um valor de string que deve ser [seller] ou [buyer]. Esse valor pode ser definido somente se o campo de tipo for igual a [credit_card]"
                         }
                       },
@@ -107,7 +107,7 @@
                         "type": "string",
                         "description": {
                           "en": "A string value that must be [sodexo] or [alelo]. This value can be setted only if type field is equal to [voucher_card]",
-                          "es": "Un valor de string que debe ser [sodexo] o [alelo]. Este valor se puede configurar solo si el campo de tipo es igual a [voucher_card]",
+                          "es": "Un valor de string que debe ser [sodexo] o [alelo]. Este valor se puede configurar sólo si el campo de tipo es igual a [voucher_card]",
                           "pt": "Um valor de string que deve ser [sodexo] ou [alelo]. Este valor pode ser configurado somente se o campo tipo for igual a [voucher_card]"
                         }
                       }
@@ -212,7 +212,7 @@
                           "description": {
                             "en": "An integer value that must be between 1 and 72, this value can be setted only if type field is equal to [credit_card]",
                             "pt": "Um valor inteiro que deve estar entre 1 e 72, este valor pode ser configurado somente se o campo type for igual a [credit_card]",
-                            "es": "Un valor entero que debe estar entre 1 y 72, este valor se puede configurar solo si el campo de tipo es igual a [credit_card]"
+                            "es": "Un valor entero que debe estar entre 1 y 72, este valor se puede configurar sólo si el campo de tipo es igual a [credit_card]"
                           }
                         },
                         "type": {
@@ -230,7 +230,7 @@
                           "description": {
                             "en": "A string value that must be one of this [seller] or [buyer]. This value can be setted only if type field is equal to [credit_card]",
                             "pt": "Um valor de string que deve ser um destes [seller] ou [buyer]. Esse valor pode ser definido somente se o campo de tipo for igual a [credit_card]",
-                            "es": "Un valor de string que debe ser uno de este [seller] o [buyer]. Este valor se puede establecer solo si el campo de tipo es igual a [credit_card]"
+                            "es": "Un valor de string que debe ser uno de este [seller] o [buyer]. Este valor se puede establecer sólo si el campo de tipo es igual a [credit_card]"
                           }
                         }
                       }

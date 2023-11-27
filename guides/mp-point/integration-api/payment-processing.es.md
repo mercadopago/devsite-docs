@@ -195,7 +195,7 @@ Ten en cuenta que las intenciones de pago son la base para el procesamientos de 
 
 ## Procesar intención de pago
 
-Una vez creada la intención de pago, puedes obtenerla desde tu dispositivo Point oprimiendo el botón para iniciar cobro (en caso de Point Plus y  Point Pro 2, el **botón verde**, y en el caso de Point Smart, el **botón digital “Cobrar”**).
+Una vez creada la intención de pago, puedes obtenerla desde tu dispositivo Point oprimiendo el botón para iniciar cobro (en caso de Point Plus y Point Pro 2, el **botón verde**, y en el caso de Point Smart, el **botón digital “Cobrar”**).
 
 Luego, continúa con los pasos que se muestran en la pantalla para completar el pago.
 
