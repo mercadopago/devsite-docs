@@ -23,6 +23,7 @@ Below are the steps to integrate with 3DS.
 3. After that, make a request to create a new payment with the received data. The `three_d_secure_mode` attribute needs to be sent with one of the following values:
     1. `not_supported`: 3DS must not be used (this is the default value).
     2. `optional`: 3DS may or may not be required, depending on the risk profile of the transaction.
+    3. `mandatory`: 3DS will be required mandatorily.
 
 
 [[[
@@ -340,6 +341,7 @@ See below the table with the possible statuses and their respective descriptions
 | "rejected" | -                            | Transaction rejected without authentication. To check the reasons, please refer to the standard [list of status details](https://mercadopago.com.br/developers/en/docs/checkout-api/response-handling/collection-results).                     |
 | "pending"  | "pending_challenge"           | Transaction pending authentication or Challenge timeout. |
 | "rejected" | "cc_rejected_3ds_challenge"   | Transaction rejected due to Challenge failure.                 |
+| "rejected" | "cc_rejected_3ds_challenge" | ransaction rejected for not complying with 3DS validation when it is mandatory. |
 
 ## Integration test
 
@@ -347,7 +349,9 @@ To facilitate the validation of 3DS payments, we have created a sandbox testing 
 
 > WARNING
 >
-> Remember to use the test credentials for your application.
+> Important
+>
+> To test the integration, it is necessary to use your test credentials. Also, make sure to include the `three_d_secure_mode` attribute, setting it as `optional` or `mandatory`, to ensure the correct implementation of the 3DS payment.
 
 To test payments in a sandbox environment, specific cards should be used to test the implementation of the Challenge with both success and failure flows, as shown in the table below:
 
@@ -355,12 +359,10 @@ To test payments in a sandbox environment, specific cards should be used to test
 |-------------|-------------------------|---------------------|----------------|-----------------|
 | Mastercard  | Successful Challenge    | 5483 9281 6457 4623 | 123            | 11/25           |
 | Mastercard  | Unauthorized Challenge | 5361 9568 0611 7557 | 123            | 11/25           |
+| Matercard | Challenge mandatory | 5031 7557 3453 0604 | 123 | 11/25 |
 
 The steps to create the payment remain the same. If you have any doubts about how to create card payments, please refer to the [documentation on Cards](https://www.mercadopago.com.br/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
 
-> NOTE
->
-> To ensure that the payment is created with 3DS, remember to include the three_d_secure_mode attribute with the value optional.
 
 [[[
 ```curl

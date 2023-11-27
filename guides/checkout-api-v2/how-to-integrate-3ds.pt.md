@@ -23,6 +23,7 @@ Abaixo estão as etapas para realizar uma integração com 3DS.
 3. Feito isso, faça uma chamada para criar um novo pagamento com os dados recebidos. O atributo `three_d_secure_mode` precisa ser enviado com um dos seguintes valores:
     1. `not_supported`: 3DS não deve ser usado (é o valor padrão).
     2. `opcional`: 3DS pode ou não ser exigido, dependendo do perfil de risco da operação.
+    3. `mandatory`: 3DS será requerido obrigatoriamente.
 
 [[[
 ```curl
@@ -339,6 +340,7 @@ Veja abaixo a tabela com os possíveis status e suas respectivas descrições.
 | "rejected" | -                            | Transação rejeitada sem autenticação. Para conferir os motivos, consulte a [lista padrão de status detail](https://mercadopago.com.br/developers/pt/docs/checkout-api/response-handling/collection-results).                              |
 | "pending"  | "pending_challenge"           | Transação pendente de autenticação ou _timeout_ do _Challenge_.       |
 | "rejected" | "cc_rejected_3ds_challenge"   | Transação rejeitada devido a falha no _Challenge_.                  |
+| "rejected" | "cc_rejected_3ds_mandatory" | Transação rejeitada por não cumprir a validação de 3DS quando esta é obrigatória. |
 
 ## Teste de integração
 
@@ -346,7 +348,9 @@ Para que seja possível validar pagamentos com 3DS, disponibilizamos um ambiente
 
 > WARNING
 >
-> Lembre-se de utilizar as credenciais de teste da sua aplicação. 
+> Importante
+>
+> Para testar a integração é necessário utilizar suas **credenciais de teste**. Certifique-se também de incluir o atributo `three_d_secure_mode`, definindo-o como `optional` ou `mandatory`, para garantir a correta implementação do pagamento 3DS.
 
 Para realizar testes de pagamento em um ambiente *sandbox*, é necessário utilizar cartões específicos que permitem testar a implementação do _Challenge_ com os fluxos de sucesso e falha. A tabela a seguir apresenta os detalhes desses cartões:
 
@@ -354,12 +358,10 @@ Para realizar testes de pagamento em um ambiente *sandbox*, é necessário utili
 |-----------|--------------------------|--------------------|---------------------|--------------------|
 | Mastercard | Challenge com sucesso    | 5483 9281 6457 4623 | 123                 | 11/25              |
 | Mastercard | Challenge não autorizado | 5361 9568 0611 7557 | 123                 | 11/25              |
+| Mastercard | Challenge mandatory | 5031 7557 3453 0604 | 123 | 11/25 |
 
 Os passos para criar o pagamento são os mesmos. Em caso de dúvida sobre como criar pagamentos com cartão, consulte a [documentação sobre Cartões](https://www.mercadopago.com.br/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform). 
 
-> NOTE
->
-> Para garantir que o pagamento seja criado com 3DS, lembre-se de incluir o atributo three_d_secure_mode com o valor optional.
  
 [[[
 ```curl
