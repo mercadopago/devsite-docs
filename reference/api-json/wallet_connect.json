@@ -3055,14 +3055,6 @@
                             "es": "Error - Error interno del servidor.",
                             "pt": "Erro - Erro interno do servidor."
                           }
-                        },
-                        {
-                          "title": "500",
-                          "description": {
-                            "en": "Error - Internal Error in Discarded List.",
-                            "es": "Error - Error interno en la Lista Descartada.",
-                            "pt": "Error - Erro interno na Lista de Descarte."
-                          }
                         }
                       ]
                     }

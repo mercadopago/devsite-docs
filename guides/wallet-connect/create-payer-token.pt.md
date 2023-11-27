@@ -22,5 +22,15 @@ curl -X POST \
 ```
 ]]]
 
+## Resposta
+
+[[[
+```json
+{
+  "payer_token": "abcdef1e23f4567d8e9123eb6591ff68df74c57930551ed980239f4538a7e530"
+}
+```
+]]]
+
 Com o payer token criado, o fluxo de integração de contas com o Wallet Connect terá sido concluída com sucesso. Siga para a seção [Advanced Payments](/developers/pt/docs/wallet-connect/advanced-payments) para realizar o fluxo de pagamentos.
 
