@@ -176,7 +176,7 @@
                       "properties": {
                         "address_line": {
                           "type": "string",
-                          "example": "Caseros 3039, Belgrano, Capital Federal, Argentina",
+                          "example": "Rua Ângelo Piva, Osasco, São Paulo, Brasil",
                           "description": {
                             "es": "address_line",
                             "pt": "address_line",
@@ -185,7 +185,7 @@
                         },
                         "reference": {
                           "type": "string",
-                          "example": "3er Piso",
+                          "example": "Melicidade",
                           "description": {
                             "es": "reference",
                             "pt": "reference",
@@ -194,7 +194,7 @@
                         },
                         "latitude": {
                           "type": "number",
-                          "example": -32.8897322,
+                          "example": -23.52613,
                           "description": {
                             "es": "latitude",
                             "pt": "latitude",
@@ -203,7 +203,7 @@
                         },
                         "longitude": {
                           "type": "number",
-                          "example": -68.8443275,
+                          "example": -46.76169,
                           "description": {
                             "es": "longitude",
                             "pt": "longitude",
@@ -415,7 +415,7 @@
                           "pt": "Rua",
                           "es": "Calle"
                         },
-                        "example": "Caseros"
+                        "example": "Rua Ângelo Piva"
                       },
                       "city_name": {
                         "type": "string",
@@ -424,7 +424,7 @@
                           "pt": "Cidade",
                           "es": "Ciudad"
                         },
-                        "example": "Belgrano"
+                        "example": "Osasco"
                       },
                       "state_name": {
                         "type": "string",
@@ -433,7 +433,7 @@
                           "pt": "Província",
                           "es": "Provincia"
                         },
-                        "example": "Capital Federal"
+                        "example": "São Paulo"
                       },
                       "latitude": {
                         "type": "number",
@@ -460,7 +460,7 @@
                           "pt": "Referência",
                           "es": "Referencia"
                         },
-                        "example": "3er Piso"
+                        "example": "Melicidade"
                       }
                     }
                   }
