@@ -797,9 +797,9 @@
                   "payment_method_id": {
                     "type": "string",
                     "description": {
-                      "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples.",
-                      "pt": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos.",
-                      "es": "Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago."
+                      "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples. Get all available payment methods by consulting the 'Get payment Methods API': https://www.mercadopago.com/developers/en/reference/payment_methods/_payment_methods/get.",
+                      "pt": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos. Obtenha todos os meios de pagamento disponíveis consultando a API de 'Obter meios de pagamento': https://www.mercadopago.com/developers/pt/reference/payment_methods/_payment_methods/get.",
+                      "es": "Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago. A continuación presentamos algunos ejemplos. Obtén todos los métodos de pago disponibles consultando la API de 'Obtener métodos de pago': https://www.mercadopago.com/developers/es/reference/payment_methods/_payment_methods/get."
                     },
                     "enum": [
                       {
@@ -2811,9 +2811,9 @@
                       "type": "string",
                       "example": "account_money",
                       "description": {
-                        "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples.",
-                        "pt": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos.",
-                        "es": "Indica el identificador del medio de pago seleccionado para realizarlo. A continuación presentamos algunos ejemplos."
+                        "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples. Get all available payment methods by consulting the 'Get payment Methods API': https://www.mercadopago.com/developers/en/reference/payment_methods/_payment_methods/get.",
+                        "pt": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos. Obtenha todos os meios de pagamento disponíveis consultando a API de 'Obter meios de pagamento': https://www.mercadopago.com/developers/pt/reference/payment_methods/_payment_methods/get.",
+                        "es": "Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago. A continuación presentamos algunos ejemplos. Obtén todos los métodos de pago disponibles consultando la API de 'Obtener métodos de pago': https://www.mercadopago.com/developers/es/reference/payment_methods/_payment_methods/get."
                       },
                       "enum": [
                         {
@@ -4141,9 +4141,9 @@
                       "type": "string",
                       "example": "visa",
                       "description": {
-                        "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples.",
-                        "pt": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos.",
-                        "es": "Indica el identificador del medio de pago seleccionado para realizarlo. A continuación presentamos algunos ejemplos."
+                        "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples. Get all available payment methods by consulting the 'Get payment Methods API': https://www.mercadopago.com/developers/en/reference/payment_methods/_payment_methods/get.",
+                        "pt": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos. Obtenha todos os meios de pagamento disponíveis consultando a API de 'Obter meios de pagamento': https://www.mercadopago.com/developers/pt/reference/payment_methods/_payment_methods/get.",
+                        "es": "Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago. A continuación presentamos algunos ejemplos. Obtén todos los métodos de pago disponibles consultando la API de 'Obtener métodos de pago': https://www.mercadopago.com/developers/es/reference/payment_methods/_payment_methods/get."
                       },
                       "enum": [
                         {
@@ -5558,9 +5558,9 @@
                               "type": "string",
                               "example": "account_money",
                               "description": {
-                                "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples",
-                                "pt": "Indica el identificador del medio de pago seleccionado para realizarlo. A continuación presentamos algunos ejemplos.",
-                                "es": "Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago."
+                                "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples. Get all available payment methods by consulting the 'Get payment Methods API': https://www.mercadopago.com/developers/en/reference/payment_methods/_payment_methods/get.",
+                                "pt": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos. Obtenha todos os meios de pagamento disponíveis consultando a API de 'Obter meios de pagamento': https://www.mercadopago.com/developers/pt/reference/payment_methods/_payment_methods/get.",
+                                "es": "Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago. A continuación presentamos algunos ejemplos. Obtén todos los métodos de pago disponibles consultando la API de 'Obtener métodos de pago': https://www.mercadopago.com/developers/es/reference/payment_methods/_payment_methods/get."
                               },
                               "enum": [
                                 {
