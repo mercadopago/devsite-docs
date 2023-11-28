@@ -73,7 +73,7 @@ curl -X GET \
 Para ofrecer pagos con **PSE**, sigue los siguientes pasos.
 
 
-> SERVER_SIDE
+> BACKEND
 >
 > h2
 >
