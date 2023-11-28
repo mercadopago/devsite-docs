@@ -73,7 +73,11 @@ curl -X GET \
 Para ofrecer pagos con **PSE**, sigue los siguientes pasos.
 
 
-## Importar MercadoPago.js
+> SERVER_SIDE
+>
+> h2
+>
+> Importar MercadoPago.js
 
 Para realizar la integración de Checkout API, es necesario capturar los datos necesarios para procesar el pago.
 
