@@ -157,7 +157,7 @@
                         "pt": "ID único que identifica um Agreement",
                         "es": "ID único que identifica un Agreement"
                       },
-                      "example": "b1234e5678b91c23a456e78912345b67"
+                      "example": "22abcd1235ed497f945f755fcaba3c6c"
                     },
                     "agreement_uri": {
                       "type": "string",
@@ -166,7 +166,7 @@
                         "pt": "This is the uri to redirect the user to the wallet linking in the frontend",
                         "en": "This is the uri to redirect the user to the wallet linking in the frontend"
                       },
-                      "example": "https://beta.mercadopago.com.ar/v1/wallet_agreement/b1234e5678b91c23a456e78912345b67"
+                      "example": "https://wwww.mercadopago.com.ar/v1/wallet_agreement/22abcd1235ed497f945f755fcaba3c6c"
                     }
                   }
                 }

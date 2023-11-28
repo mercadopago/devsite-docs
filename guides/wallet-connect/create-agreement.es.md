@@ -25,7 +25,7 @@ Para crear un _agreement_, envía un **POST** con los atributos necesarios al en
 curl -X POST \
       'https://api.mercadopago.com/v2/wallet_connect/agreements?client.id=<CLIENT.ID>' \
       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
-      -H 'Content-Type: application/json' \ 
+      -H 'Content-Type: application/json' \
       -H 'x-platform-id: YOUR_ACCESS_TOKEN' \
       -d '{
   "return_uri": "https://www.mercadopago.com/",
@@ -47,8 +47,8 @@ curl -X POST \
 [[[
 ```json
 {
-  "agreement_id": "b1234e5678b91c23a456e78912345b67",
-  "agreement_uri": "https://beta.mercadopago.com.ar/v1/wallet_agreement/b1234e5678b91c23a456e78912345b67"
+  "agreement_id": "22abcd1235ed497f945f755fcaba3c6c",
+  "agreement_uri": "https://wwww.mercadopago.com.ar/v1/wallet_agreement/22abcd1235ed497f945f755fcaba3c6c"
 }
 ```
 ]]]

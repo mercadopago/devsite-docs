@@ -134,7 +134,7 @@ Ao adicionar o cupom antes de prosseguir para o pagamento, é possível que dife
 {
   "error": "bad_request",
   "message": "transaction_amount must be greater than 0",
-    "status": 400
+  "status": 400
 }
 ```
 ]]]
@@ -150,7 +150,7 @@ Ao adicionar o cupom antes de prosseguir para o pagamento, é possível que dife
 {
   "error": "bad_request",
   "message": "transaction_amount must not be null.",
-    "status": 400
+  "status": 400
 }
 
 ```

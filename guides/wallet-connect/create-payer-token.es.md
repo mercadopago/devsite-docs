@@ -14,7 +14,7 @@ Para crear un _payer token_, envíe un POST con todos los atributos necesarios a
 curl -X POST \
       'https://api.mercadopago.com/v2/wallet_connect/agreements/{agreement_id}/payer_token?client.id=<CLIENT.ID>&caller.id=<CALLER.ID>' \
       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
-      -H 'Content-Type: application/json' \ 
+      -H 'Content-Type: application/json' \
       -H 'x-platform-id: YOUR_ACCESS_TOKEN' \
       -d '{
   "code": "aeecea3e11f2545d1e7790eb6591ff68df74c57930551ed980239f4538a7e530"
