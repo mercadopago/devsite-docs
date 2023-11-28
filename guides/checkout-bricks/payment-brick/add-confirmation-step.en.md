@@ -6,9 +6,9 @@ This additional step provides the buyer with a more transparent and secure exper
 
 <center>
 
-![review-confirm](checkout-bricks/review-confirm-3.gif)
+![review-confirm](checkout-bricks/review-confirm-6.gif)
 
-</center>
+</center> 
 
 To integrate this functionality, it is necessary to send additional information during the initialization of Payment Brick. We now present an example of the configuration object with emphasis on the `enableReviewStep` property, which enables the review flow:
 
