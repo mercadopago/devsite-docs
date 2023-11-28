@@ -8,7 +8,7 @@
           ],
           "description": {
             "en": "This endpoint allows searching, through a valid token, which claims belong to a certain user",
-            "pt": "Este endpoint permite buscar, por meio de um token válido, quais contestações pertencem a determinado usuário",
+            "pt": "Este endpoint permite buscar, por meio de um token válido, quais reclamações pertencem a determinado usuário",
             "es": "Este endpoint permite buscar, mediante un token válido, qué reclamos pertenecen a un usuario determinado"
           },
           "parameters": [
@@ -36,7 +36,7 @@
               },
               "description": {
                 "en": "Claim ID: A unique identifier used to reference a specific claim in the system. Essential for tracking and managing individual claims.",
-                "pt": "ID da contestação: Identificador único usado para referenciar uma contestação específica no sistema. Essencial para rastrear e gerenciar contestações específicas.",
+                "pt": "ID da reclamação: Identificador único usado para referenciar uma reclamação específica no sistema. Essencial para rastrear e gerenciar reclamações específicas.",
                 "es": "ID del reclamo: Identificador único utilizado para referenciar un reclamo específico en el sistema. Esencial para el seguimiento y la gestión de reclamos individuales."
               }
             },
@@ -50,7 +50,7 @@
               },
               "description": {
                 "en": "Defines the nature of the claim being processed.",
-                "pt": "Define a natureza da contestação em processamento.",
+                "pt": "Define a natureza da reclamação em processamento.",
                 "es": "Define la naturaleza del reclamo que se está procesando."
               },
               "enum": [
@@ -59,7 +59,7 @@
                   "description": {
                     "en": "Refers to the process of mediating between parties in a claim.",
                     "es": "Se refiere al proceso de mediación entre las partes en un reclamo.",
-                    "pt": "Refere-se ao processo de mediação entre as partes em uma contestação."
+                    "pt": "Refere-se ao processo de mediação entre as partes em uma reclamação."
                   }
                 },
                 {
@@ -91,7 +91,7 @@
                   "description": {
                     "en": "Refers to the alteration or modification of the details or status of a claim.",
                     "es": "Se refiere a la alteración o modificación de los detalles o el estado de un reclamo.",
-                    "pt": "Refere-se à alteração ou modificação dos detalhes ou status de uma contestação."
+                    "pt": "Refere-se à alteração ou modificação dos detalhes ou status de uma reclamação."
                   }
                 }
               ]
@@ -106,7 +106,7 @@
               },
               "description": {
                 "en": "Indicates the current stage of the claim within the processing cycle involving the buyer and seller.",
-                "pt": "Indica a fase atual da contestação dentro do ciclo de processamento que envolve o comprador e vendedor.",
+                "pt": "Indica a fase atual da reclamação dentro do ciclo de processamento que envolve o comprador e vendedor.",
                 "es": "Indica la fase actual del reclamo dentro del ciclo de procesamiento que involucra al comprador y al vendedor."
               },
               "enum": [
@@ -115,7 +115,7 @@
                   "description": {
                     "en": "Initial stage of the claim process in which both the buyer and seller are involved.",
                     "es": "Fase inicial del proceso de reclamo en la que intervienen el comprador y el vendedor.",
-                    "pt": "Fase inicial do processo de contestação na qual intervém o comprador e vendedor."
+                    "pt": "Fase inicial do processo de reclamação na qual intervém o comprador e vendedor."
                   }
                 },
                 {
@@ -123,7 +123,7 @@
                   "description": {
                     "en": "Phase where the claim is under dispute or disagreement.",
                     "es": "Fase donde el reclamo está en disputa o desacuerdo.",
-                    "pt": "Fase em que a contestação está em disputa ou desacordo."
+                    "pt": "Fase em que a reclamação está em disputa ou desacordo."
                   }
                 },
                 {
@@ -131,7 +131,7 @@
                   "description": {
                     "en": "Stage in which one of the parties makes contact after the claim/dispute has been closed.",
                     "es": "Fase en la que alguna de las partes se contacta luego de cerrado el reclamo/disputa.",
-                    "pt": "Fase na qual uma das partes entra em contato após o encerramento da contestação/disputa."
+                    "pt": "Fase na qual uma das partes entra em contato após o encerramento da reclamação/disputa."
                   }
                 },
                 {
@@ -154,7 +154,7 @@
               },
               "description": {
                 "en": "Specifies the current state of the claim, indicating whether it is open or closed.",
-                "pt": "Especifica o estado atual da contestação, indicando se está aberta ou fechada.",
+                "pt": "Especifica o estado atual da reclamação, indicando se está aberta ou fechada.",
                 "es": "Especifica el estado actual del reclamo, indicando si está abierto o cerrado."
               },
               "enum": [
@@ -163,7 +163,7 @@
                   "description": {
                     "en": "Indicates that the claim is open.",
                     "es": "Indica que el reclamo está abierto.",
-                    "pt": "Indica que a contestação está aberta."
+                    "pt": "Indica que a reclamação está aberta."
                   }
                 },
                 {
@@ -171,7 +171,7 @@
                   "description": {
                     "en": "Indicates that the claim is closed.",
                     "es": "Indica que el reclamo está cerrado.",
-                    "pt": "Indica que a contestação está fechada."
+                    "pt": "Indica que a reclamação está fechada."
                   }
                 }
               ]
@@ -262,7 +262,7 @@
               },
               "description": {
                 "en": "Maximum number of claims to be retrieved. For example, setting this to '5' will return the top 5 claims.",
-                "pt": "Número máximo de contestações a serem obtidas. Por exemplo, definir isso como '5' retornará as 5 principais reclamações.",
+                "pt": "Número máximo de reclamações a serem obtidas. Por exemplo, definir isso como '5' retornará as 5 principais reclamações.",
                 "es": "Número máximo de reclamos a obtener. Por ejemplo, establecer esto en '5' devolverá los 5 reclamos principales."
               }
             }
@@ -568,8 +568,1623 @@
           },
           "title": {
             "en": "Claims search",
-            "pt": "Obter contestações",
+            "pt": "Obter reclamações",
             "es": "Obtener reclamos"
+          }
+        }
+      },
+      "/claims/$CLAIM_ID/messages": {
+        "get": {
+          "tags": [
+            "subscriptions"
+          ],
+          "description": {
+            "en": "\".\"",
+            "pt": "\".\"",
+            "es": "Para recuperar los mensajes asociados a un reclamo"
+          },
+          "parameters": [
+            {
+              "in": "header",
+              "name": "Authorization",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
+              },
+              "description": {
+                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
+                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
+                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": {
+                "es": "Success",
+                "pt": "Sucesso",
+                "en": "Éxito"
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "sender_role": {
+                          "type": "string",
+                          "example": "complainant",
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Player que envió el mensaje."
+                          }
+                        },
+                        "receiver_role": {
+                          "type": "string",
+                          "example": "respondent",
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Player hacia quién va dirigido el mensaje."
+                          }
+                        },
+                        "attachments": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "filename": {
+                                "type": "string",
+                                "example": "8007ee20-be67-471f-9e59-e32d9ba02fae_239628932.jpeg",
+                                "description": {
+                                  "en": "Current name of the attached file",
+                                  "pt": ".",
+                                  "es": "."
+                                }
+                              },
+                              "original_filename": {
+                                "type": "string",
+                                "example": "F8FB05C5-1D67-4B99-8E7D-3FE1EB3DBEBC.jpeg",
+                                "description": {
+                                  "en": "Original name of the attached file",
+                                  "pt": ".",
+                                  "es": "."
+                                }
+                              },
+                              "size": {
+                                "type": "number",
+                                "example": 1880609,
+                                "description": {
+                                  "en": ".",
+                                  "pt": ".",
+                                  "es": "Tamaño del archivo en bytes"
+                                }
+                              },
+                              "type": {
+                                "type": "string",
+                                "example": "image/jpeg",
+                                "description": {
+                                  "en": ".",
+                                  "pt": ".",
+                                  "es": "Tipo del archivo"
+                                }
+                              },
+                              "date_created": {
+                                "type": "string",
+                                "example": "2020-07-22T20:43:15.000-04:00",
+                                "description": {
+                                  "en": ".",
+                                  "pt": ".",
+                                  "es": "Fecha de carga del adjunto"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "status": {
+                          "type": "string",
+                          "example": "available",
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Estado del mensaje (available - moderated - rejected - pending_translation)"
+                          }
+                        },
+                        "moderation": {
+                          "type": "object",
+                          "properties": {
+                            "status": {
+                              "type": "string",
+                              "example": "clean",
+                              "description": {
+                                "en": ".",
+                                "pt": ".",
+                                "es": "Resultado del proceso de moderación. Posibles valores: clean: el mensaje está limpio. rejected: el mensaje fue moderado. pending: la moderación está en proceso. non_moderated: no aplicó la moderación. Por ejemplo: casos antiguos."
+                              }
+                            },
+                            "reason": {
+                              "type": "string",
+                              "example": "",
+                              "description": {
+                                "en": ".",
+                                "pt": ".",
+                                "es": "Razón por la cual se moderó el mensaje. Actualmente, esta moderación puede ser por lenguaje inapropiado"
+                              }
+                            },
+                            "source": {
+                              "type": "string",
+                              "example": "online",
+                              "description": {
+                                "en": ".",
+                                "pt": ".",
+                                "es": "Modalidad de la moderación. Posibles valores: online: se modera durante la instancia de creación del mensaje. Única modalidad actualmente."
+                              }
+                            },
+                            "date_moderated": {
+                              "type": "string",
+                              "example": "2023-02-01T20:13:50Z",
+                              "description": {
+                                "en": ".",
+                                "pt": ".",
+                                "es": "Fecha en que se impactó la información de moderación."
+                              }
+                            },
+                            "stage": {
+                              "type": "string",
+                              "example": "claim",
+                              "description": {
+                                "en": ".",
+                                "pt": ".",
+                                "es": "Etapa en la que se encontraba el reclamo al momento en que se envió el mensaje."
+                              }
+                            },
+                            "date_created": {
+                              "type": "string",
+                              "example": "2020-07-22T20:43:15.000-04:00",
+                              "description": {
+                                "en": ".",
+                                "pt": ".",
+                                "es": "Fecha en la que se creó el mensaje"
+                              }
+                            },
+                            "message": {
+                              "type": "string",
+                              "example": "Boa noite! A tampa veio com uma rachadura. Gostaria de anexar foto",
+                              "description": {
+                                "en": ".",
+                                "pt": ".",
+                                "es": "Texto del mensaje."
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "title": {
+            "en": ".",
+            "pt": ".",
+            "es": "Obtener todos los mensajes de un reclamo"
+          }
+        }
+      },
+      "/claims/$CLAIM_ID/attachments": {
+        "post": {
+          "tags": [
+            "subscriptions"
+          ],
+          "description": {
+            "en": ".",
+            "pt": ".",
+            "es": "Este endpoint permite responder mensajes y adjuntar archivos"
+          },
+          "parameters": [
+            {
+              "in": "header",
+              "name": "Authorization",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
+              },
+              "description": {
+                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
+                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
+                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
+              },
+              "consumes": [
+                "multipart/form-data"
+              ]
+            },
+            {
+              "in": "formData",
+              "name": "file",
+              "schema": {
+                "type": "string",
+                "example": "file=@/Users/user/Desktop/file.jpg"
+              },
+              "description": {
+                "en": ".",
+                "pt": ".",
+                "es": "\"El archivo a subir en JPG, PNG o PDF de hasta un tamaño máximo de 5 MB. El nombre del archivo no puede tener más de 125 caracteres y estar compuesto solo por los siguientes caracteres: Letras, números, punto, guion medio, guion bajo ([a-zA-Z0-9._\\s-])\""
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": {
+                "es": "Success",
+                "pt": "Sucesso",
+                "en": "Éxito"
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "user_id": {
+                        "type": "number",
+                        "example": 415836081,
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Usuario que envía el archivo (tiene que ser un player del claim)"
+                        }
+                      },
+                      "filename": {
+                        "type": "string",
+                        "example": "44739b8c-592f-4fa3-bdc0-ed1905879eab.jpeg",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Nombre del archivo hasheado (utilizado para recuperar el attachment)"
+                        }
+                      },
+                      "render_url": {
+                        "type": "string",
+                        "example": "",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Direccion para obtener el archivo renderizado"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "title": {
+            "en": ".",
+            "pt": ".",
+            "es": "Responder mensajes y adjuntar archivos"
+          }
+        }
+      },
+      "/claims/$CLAIM_ID/actions/message": {
+        "post": {
+          "tags": [
+            "subscriptions"
+          ],
+          "description": {
+            "en": ".",
+            "pt": ".",
+            "es": "Se envía un mensaje habiendo previamente adjuntado un archivo."
+          },
+          "parameters": [
+            {
+              "in": "header",
+              "name": "Authorization",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
+              },
+              "description": {
+                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
+                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
+                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
+              },
+              "consumes": [
+                "multipart/form-data"
+              ]
+            },
+            {
+              "in": "query",
+              "name": "application_id",
+              "schema": {
+                "type": "string",
+                "example": "file=@/Users/user/Desktop/file.jpg"
+              },
+              "description": {
+                "en": ".",
+                "pt": ".",
+                "es": "\"\""
+              }
+            }
+          ],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "required": [
+                    "receiver_role",
+                    "message"
+                  ],
+                  "type": "object",
+                  "properties": {
+                    "receiver_role": {
+                      "type": "string",
+                      "example": "respondent",
+                      "description": {
+                        "en": ".",
+                        "pt": ".",
+                        "es": "Player hacia quién va dirigido el mensaje."
+                      }
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "Mensaje de prueba",
+                      "description": {
+                        "en": ".",
+                        "pt": ".",
+                        "es": "Mensaje a enviar"
+                      }
+                    },
+                    "attachments": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "example": "Mensaje de prueba",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Mensaje a enviar"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": {
+                "es": "Success",
+                "pt": "Sucesso",
+                "en": "Éxito"
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "number",
+                        "example": 62229132,
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "ID del mensaje posteado"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "title": {
+            "en": ".",
+            "pt": ".",
+            "es": "Post de Message con el attachment previamente adjuntado"
+          }
+        }
+      },
+      "/claims/$CLAIM_ID/attachments/$ATTACH_ID/download": {
+        "get": {
+          "tags": [
+            "subscriptions"
+          ],
+          "description": {
+            "en": ".",
+            "pt": ".",
+            "es": "Descargar el archivo."
+          },
+          "parameters": [
+            {
+              "in": "header",
+              "name": "Authorization",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
+              },
+              "description": {
+                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
+                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
+                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": {
+                "es": "Success",
+                "pt": "Sucesso",
+                "en": "Éxito"
+              }
+            }
+          },
+          "title": {
+            "en": ".",
+            "pt": ".",
+            "es": "Descargar el archivo"
+          }
+        }
+      },
+      "/claims/$CLAIM_ID/attachments/$ATTACH_ID": {
+        "get": {
+          "tags": [
+            "subscriptions"
+          ],
+          "description": {
+            "en": ".",
+            "pt": ".",
+            "es": "Obtener información del archivo."
+          },
+          "parameters": [
+            {
+              "in": "header",
+              "name": "Authorization",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
+              },
+              "description": {
+                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
+                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
+                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": {
+                "es": "Success",
+                "pt": "Sucesso",
+                "en": "Éxito"
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "filename": {
+                        "type": "string",
+                        "example": "767b79a6-88c8-4fa4-8d95-2cb78fcd897f.jpeg",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Nombre del archivo"
+                        }
+                      },
+                      "original_filename": {
+                        "type": "string",
+                        "example": "WhatsApp Image 2020-09-22 at 15.37.13.jpeg",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Nombre real del archivo"
+                        }
+                      },
+                      "size": {
+                        "type": "number",
+                        "example": 59447,
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Tamaño del archivo adjunto en Bytes"
+                        }
+                      },
+                      "date_created": {
+                        "type": "string",
+                        "example": "2020-10-09T13:39:57.000-04:00",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Fecha de carga del adjunto"
+                        }
+                      },
+                      "type": {
+                        "type": "string",
+                        "example": "image/jpeg",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Tipo de adjunto"
+                        }
+                      },
+                      "file_url": {
+                        "type": "string",
+                        "example": "https://fury-storage-private-default.s3.amazonaws.com/mediations-api-core/attachment2/767b79a6-88c8-4fa4-8d95-2cb78fcd897f.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA2W4YYFSFIIM7ONWJ%2F20201009%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20201009T174026Z&X-Amz-Expires=43200&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEA8aCXVzLWVhc3QtMSJHMEUCIBznL6LSjtxZx2rmNacevS3fkUtCntzn8hEERS3I9zGcAiEArLoRIu6slpEVHMaKK2%2B3LaXK5vJeEVlwmQ1en1xBlswqtAMIRxABGgw3MzYzNzAzNzE3MjIiDN38MnchbBVYZCS%2BfiqRA9sgC51NLCQ0stU6s2Dek7gt8JmSth7oYLHE8v1WhK3WaiBfe%2FV6LqnrqJcGIikCXr05GqQalWZQLITG1mwC%2Fkx6x5XL5jKFw67lXUvoZzmctRoQPpXpA6MJBTvdCZJKifAS2grLExBJ7KUrgGH6MCxiHpZwm5cO1VP9E5ETFcOTtVzgJtSU0TX70Z4%2BVZPwbxbuEnnqCuW61MZkMvT4dF6oVkZZBR8JuaaiM4w17FV%2B%2Bzt3l39EP9iZdv7NG6G6ZFjvL5UgkVfOm0Bn2w6JONEl8upiOqQN1voen8TugywgWm683isabg1LK2c5GNVWR4qEYbnpS2jZhd732IuDgl1De1V93O5WW2Xf0HGqXhIWYHf9ZDViwWrMXQc5VRQwDIukAgwIy5%2FiBUEwjNBavu4eiWcqtVIQ8OxH9CJIBrQMgPaB%2FtV9LZRGAH24ZwcBD%2FEu%2BEWEDPnR6giE24nAAkWAMlhPQI5NKGGy6y4SLxJ5KalD5yb4Twi0W%2Fvj7bUxfYBSebAn%2B4zldwvFPzWwJRxbMMTdgfwFOusBof6%2FydFCa12JdZERNpiC49pjSmal6DP7rl91JmwVKzG%2FIIENnlBIjZ1yvEtFWy2WcEDqnn2OfEeRc5vop%2FUHnRo3i1TEC8IHs7ECCwwWcf6UAB0%2FUXL8fGj6uQ7KuQ7DLphrZBMfpUz8JXRx1FVRKMWioszeYfL9dQ%2B24GDsESAN83y%2B19ZRdy727X7GsvnZQvdWo7zHQT4zXDmJB0RFtMHwHYtALsGHUyymyA%2FaQjfnbnccvesgGvLGpqdwmXZ0QFMmNobOlJA4STZY%2FejLulxq%2BNhmrvih83%2BSn5Q0043c2%2BzLYeSGs8jUJg%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=cb9a006b693e4b4e17948be0ccbb28739627daf0766f521cb98a2e5643ab9229",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "URL de la imagen"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "title": {
+            "en": ".",
+            "pt": ".",
+            "es": "Obtener información del archivo"
+          }
+        }
+      },
+      "/claims/$CLAIM_ID/actions/open_dispute": {
+        "post": {
+          "tags": [
+            "subscriptions"
+          ],
+          "description": {
+            "en": ".",
+            "pt": ".",
+            "es": "Este endpoint permite responder mensajes y adjuntar archivos"
+          },
+          "parameters": [
+            {
+              "in": "header",
+              "name": "Authorization",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
+              },
+              "description": {
+                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
+                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
+                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": {
+                "es": "Success",
+                "pt": "Sucesso",
+                "en": "Éxito"
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "status": {
+                        "type": "number",
+                        "example": 201,
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "."
+                        }
+                      },
+                      "message": {
+                        "type": "string",
+                        "example": "DISPUTE_CREATED",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "title": {
+            "en": ".",
+            "pt": ".",
+            "es": "Solicitar mediación"
+          }
+        }
+      },
+      "/claims/$CLAIM_ID/expected_resolutions": {
+        "get": {
+          "tags": [
+            "subscriptions"
+          ],
+          "description": {
+            "en": ".",
+            "pt": ".",
+            "es": "Este endpoint permite Ver resoluciones esperadas de un claim"
+          },
+          "parameters": [
+            {
+              "in": "header",
+              "name": "Authorization",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
+              },
+              "description": {
+                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
+                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
+                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": {
+                "es": "Success",
+                "pt": "Sucesso",
+                "en": "Éxito"
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "player_role": {
+                        "type": "string",
+                        "example": "complainant",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Actor que inicia el reclamo."
+                        }
+                      },
+                      "user_id": {
+                        "type": "number",
+                        "example": 40014151,
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "ID del usuario que inicia el reclamo"
+                        }
+                      },
+                      "expected_resolution": {
+                        "type": "string",
+                        "example": "product",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Resolución del reclamo cargada por el player indicado en el parámetro anterior. Los valores posibles son: refund: el player espera que se devuelva el dinero. product: el player espera que le llegue el producto. change_product: el player espera cambiar el producto. return_product: el player espera que se devuelva el producto con la posterior devoluvión del dinero."
+                        }
+                      },
+                      "date_created": {
+                        "type": "string",
+                        "example": "2020-09-30T09:48:06.000-04:00",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Fecha en la que se creó el reclamo."
+                        }
+                      },
+                      "last_updated": {
+                        "type": "string",
+                        "example": "2020-10-02T01:12:31.000-04:00",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Fecha de última actualización reclamo."
+                        }
+                      },
+                      "status": {
+                        "type": "string",
+                        "example": "pending",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Estado de la resolución esperada. Puede tomar los siguientes valores: pending: el player cargó la resolución esperada pero no aún no fue aceptada por la contraparte. accepted: la resolución cargada por el player fue aceptada por su contraparte o en su defecto por el mediador de Mercado Pago. rejected: la resolución cargada por el player fue rechazada por su contraparte y en su defecto cargó una nueva opción de resolución."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "title": {
+            "en": ".",
+            "pt": ".",
+            "es": "Ver resoluciones esperadas"
+          }
+        }
+      },
+      "/claims/$CLAIM_ID/evidences": {
+        "get": {
+          "tags": [
+            "subscriptions"
+          ],
+          "description": {
+            "en": ".",
+            "pt": ".",
+            "es": "Este endpoint permite obtener evidencias del reclamo"
+          },
+          "parameters": [
+            {
+              "in": "header",
+              "name": "Authorization",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
+              },
+              "description": {
+                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
+                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
+                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": {
+                "es": "Success",
+                "pt": "Sucesso",
+                "en": "Éxito"
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "attachments": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "filename": {
+                                "type": "string",
+                                "example": null,
+                                "description": {
+                                  "en": ".",
+                                  "pt": ".",
+                                  "es": "Nombre del archivo"
+                                }
+                              },
+                              "original_filename": {
+                                "type": "string",
+                                "example": "Captura de Tela 2019-07-30 a?s 09.45.40.png",
+                                "description": {
+                                  "en": ".",
+                                  "pt": ".",
+                                  "es": "Nombre original del archivo"
+                                }
+                              },
+                              "size": {
+                                "type": "number",
+                                "example": 63337,
+                                "description": {
+                                  "en": ".",
+                                  "pt": ".",
+                                  "es": "Tamaño del archivo en bytes"
+                                }
+                              },
+                              "date_created": {
+                                "type": "string",
+                                "example": null,
+                                "description": {
+                                  "en": ".",
+                                  "pt": ".",
+                                  "es": "Fecha de creación del archivo"
+                                }
+                              },
+                              "type": {
+                                "type": "string",
+                                "example": "image/png",
+                                "description": {
+                                  "en": ".",
+                                  "pt": ".",
+                                  "es": "Tipo del archivo"
+                                }
+                              },
+                              "file_url": {
+                                "type": "string",
+                                "example": "/mediations/claims/attachments/render/193294183",
+                                "description": {
+                                  "en": ".",
+                                  "pt": ".",
+                                  "es": "URL del archivo"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "string",
+                          "example": "shipping_evidence",
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Es el tipo de demostración. Los valores esperados para este campo son: shipping_evidence cuando el vendedor ya tiene la prueba de envío o handling_shipping_evidence que debe usarse cuando existe un previsión de publicaciones."
+                          }
+                        },
+                        "date_shipped": {
+                          "type": "string",
+                          "example": "2018-03-07T05:00:00Z",
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Fecha de envío."
+                          }
+                        },
+                        "date_delivered": {
+                          "type": "string",
+                          "example": null,
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Fecha de entrega."
+                          }
+                        },
+                        "destination_agency": {
+                          "type": "string",
+                          "example": null,
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "nombre de la agencia de destino"
+                          }
+                        },
+                        "receiver_email": {
+                          "type": "string",
+                          "example": null,
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "correo electrónico del destinatario del pedido digital"
+                          }
+                        },
+                        "receiver_id": {
+                          "type": "string",
+                          "example": null,
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "documento de quién recibió el producto"
+                          }
+                        },
+                        "receiver_name": {
+                          "type": "string",
+                          "example": null,
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "nombre del destinatario"
+                          }
+                        },
+                        "shipping_company_name": {
+                          "type": "string",
+                          "example": "servientrega",
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "nombre del transportista"
+                          }
+                        },
+                        "shipping_method": {
+                          "type": "string",
+                          "example": "mail",
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Refiere a cómo enviaron el producto, por correo, encomienda (por un transportista), entrega personal (por una persona) o por email (correo electrónico)."
+                          }
+                        },
+                        "tracking_number": {
+                          "type": "string",
+                          "example": "132456787",
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Número de seguimiento"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "title": {
+            "en": ".",
+            "pt": ".",
+            "es": "Obtener evidencias del reclamo"
+          }
+        }
+      },
+      "/claims/$CLAIM_ID/actions/evidences": {
+        "post": {
+          "tags": [
+            "subscriptions"
+          ],
+          "description": {
+            "en": ".",
+            "pt": ".",
+            "es": "Este endpoint permite cargar evidencias de envíos. Para una entrega por correo son obligatorios los campos \"shipping_company_name\" y \"date_shipped\" y opcional \"tracking_number\" y \"attachments\". Para una entrega por encomienda los campos obligatorios son \"shipping_company_name\", \"destination_agency\", \"date_shipped\" y \"receiver_name\" y opcionales \"receiver_id\", \"tracking_number\", \"date_delivered\", \"receiver_email\" y \"attachments\". Para una entrega en mano es obligatorio el campo \"date_delivered\" y opcional el campo \"attachments\". Para entrega por email son obligatorios los campos \"receiver_email\" y \"date_shipped\" y opcional \"attachments\""
+          },
+          "parameters": [
+            {
+              "in": "header",
+              "name": "Authorization",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
+              },
+              "description": {
+                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
+                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
+                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
+              }
+            }
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "attachments": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "example": "38f4e399-0f18-41e4-8f48-91aecd2dee1a_419059118.png",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Archivos"
+                        }
+                      }
+                    },
+                    "type": {
+                      "type": "string",
+                      "example": "shipping_evidence",
+                      "description": {
+                        "en": ".",
+                        "pt": ".",
+                        "es": "Es el tipo de demostración. Los valores esperados para este campo son: \"shipping_evidence\" cuando el vendedor ya tiene la prueba de envío o \"handling_shipping_evidence\" que debe usarse cuando existe un previsión de publicaciones. En el segundo caso se puede enviar este campo junto con el campo \"handling_date\" especificando la fecha de envío prevista."
+                      }
+                    },
+                    "date_shipped": {
+                      "type": "string",
+                      "example": "2018-03-07T05:00:01.858-03:00",
+                      "description": {
+                        "en": ".",
+                        "pt": ".",
+                        "es": "fecha de envío"
+                      }
+                    },
+                    "date_delivered": {
+                      "type": "string",
+                      "example": "2018-03-07T05:00:01.858-03:00",
+                      "description": {
+                        "en": ".",
+                        "pt": ".",
+                        "es": "fecha de entrega"
+                      }
+                    },
+                    "shipping_company_name": {
+                      "type": "string",
+                      "example": "servientrega",
+                      "description": {
+                        "en": ".",
+                        "pt": ".",
+                        "es": "nombre del transportista"
+                      }
+                    },
+                    "shipping_method": {
+                      "type": "string",
+                      "example": "mail",
+                      "description": {
+                        "en": ".",
+                        "pt": ".",
+                        "es": "Refiere a cómo enviaron el producto, por correo, encomienda (por un transportista), entrega personal (por una persona) o por email (correo electrónico)."
+                      }
+                    },
+                    "tracking_number": {
+                      "type": "string",
+                      "example": "XX123456789XX",
+                      "description": {
+                        "en": ".",
+                        "pt": ".",
+                        "es": "Numero de seguimiento del paquete"
+                      }
+                    },
+                    "destination_agency": {
+                      "type": "string",
+                      "example": "Agencia",
+                      "description": {
+                        "en": ".",
+                        "pt": ".",
+                        "es": "nombre de la agencia de destino"
+                      }
+                    },
+                    "receiver_name": {
+                      "type": "string",
+                      "example": "John Doe",
+                      "description": {
+                        "en": ".",
+                        "pt": ".",
+                        "es": "nombre del destinatario"
+                      }
+                    },
+                    "receiver_id": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": ".",
+                        "pt": ".",
+                        "es": "documento de quién recibió el producto"
+                      }
+                    },
+                    "receiver_email": {
+                      "type": "string",
+                      "example": "john.doe@provider.com",
+                      "description": {
+                        "en": ".",
+                        "pt": ".",
+                        "es": "correo electrónico del destinatario del pedido digital"
+                      }
+                    },
+                    "handling_date": {
+                      "type": "string",
+                      "example": "2018-03-07T05:00:01.858-03:00",
+                      "description": {
+                        "en": ".",
+                        "pt": ".",
+                        "es": "fecha de publicación"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": {
+                "es": "Success",
+                "pt": "Sucesso",
+                "en": "Éxito"
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "attachments": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "filename": {
+                                "type": "string",
+                                "example": null,
+                                "description": {
+                                  "en": ".",
+                                  "pt": ".",
+                                  "es": "Nombre del archivo"
+                                }
+                              },
+                              "original_filename": {
+                                "type": "string",
+                                "example": "Captura de Tela 2019-07-30 a?s 09.45.40.png",
+                                "description": {
+                                  "en": ".",
+                                  "pt": ".",
+                                  "es": "Nombre original del archivo"
+                                }
+                              },
+                              "size": {
+                                "type": "number",
+                                "example": 63337,
+                                "description": {
+                                  "en": ".",
+                                  "pt": ".",
+                                  "es": "Tamaño del archivo en bytes"
+                                }
+                              },
+                              "date_created": {
+                                "type": "string",
+                                "example": null,
+                                "description": {
+                                  "en": ".",
+                                  "pt": ".",
+                                  "es": "Fecha de creación del archivo"
+                                }
+                              },
+                              "type": {
+                                "type": "string",
+                                "example": "image/png",
+                                "description": {
+                                  "en": ".",
+                                  "pt": ".",
+                                  "es": "Tipo del archivo"
+                                }
+                              },
+                              "file_url": {
+                                "type": "string",
+                                "example": "/mediations/claims/attachments/render/193294183",
+                                "description": {
+                                  "en": ".",
+                                  "pt": ".",
+                                  "es": "URL del archivo"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "string",
+                          "example": "shipping_evidence",
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Es el tipo de demostración. Los valores esperados para este campo son: shipping_evidence cuando el vendedor ya tiene la prueba de envío o handling_shipping_evidence que debe usarse cuando existe un previsión de publicaciones."
+                          }
+                        },
+                        "date_shipped": {
+                          "type": "string",
+                          "example": "2018-03-07T05:00:00Z",
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Fecha de envío"
+                          }
+                        },
+                        "date_delivered": {
+                          "type": "string",
+                          "example": null,
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Fecha de entrega"
+                          }
+                        },
+                        "destination_agency": {
+                          "type": "string",
+                          "example": null,
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "nombre de la agencia de destino"
+                          }
+                        },
+                        "receiver_email": {
+                          "type": "string",
+                          "example": null,
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "correo electrónico del destinatario del pedido digital"
+                          }
+                        },
+                        "receiver_id": {
+                          "type": "string",
+                          "example": null,
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "documento de quién recibió el producto"
+                          }
+                        },
+                        "receiver_name": {
+                          "type": "string",
+                          "example": null,
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "nombre del destinatario"
+                          }
+                        },
+                        "shipping_company_name": {
+                          "type": "string",
+                          "example": "servientrega",
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "nombre del transportista"
+                          }
+                        },
+                        "shipping_method": {
+                          "type": "string",
+                          "example": "mail",
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "refiere a cómo enviaron el producto, por correo, encomienda (por un transportista), entrega personal (por una persona) o por email (correo electrónico)."
+                          }
+                        },
+                        "tracking_number": {
+                          "type": "string",
+                          "example": "132456787",
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "ingrese el número de seguimiento"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "title": {
+            "en": ".",
+            "pt": ".",
+            "es": "Cargar evidencias de envíos"
+          }
+        }
+      },
+      "/claims/$CLAIM_ID/status_history": {
+        "get": {
+          "tags": [
+            "subscriptions"
+          ],
+          "description": {
+            "en": ".",
+            "pt": ".",
+            "es": "Accede al historial de estados y escenario por el que pasó el reclamo, también puedes ver el historial de acciones que se tomaron."
+          },
+          "parameters": [
+            {
+              "in": "header",
+              "name": "Authorization",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
+              },
+              "description": {
+                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
+                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
+                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": {
+                "es": "Success",
+                "pt": "Sucesso",
+                "en": "Éxito"
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "stage": {
+                          "type": "string",
+                          "example": "dispute",
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Etapa a la que transicionó el claim"
+                          }
+                        },
+                        "status": {
+                          "type": "string",
+                          "example": "closed",
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Estado al que transicionó el claim"
+                          }
+                        },
+                        "date": {
+                          "type": "string",
+                          "example": "2020-09-08T23:59:36.000-04:00",
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Fecha de la transición"
+                          }
+                        },
+                        "change_by": {
+                          "type": "string",
+                          "example": "mediator",
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Actor que disparó la transición"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "title": {
+            "en": ".",
+            "pt": ".",
+            "es": "Historial de estados y acciones del reclamo"
+          }
+        }
+      },
+      "/post-purchase/sites/$SITE_ID/v2/reasons/$REASON_ID": {
+        "get": {
+          "tags": [
+            "subscriptions"
+          ],
+          "description": {
+            "en": ".",
+            "pt": ".",
+            "es": "\"La reason de un claim indica el motivo por el cual se ha creado un reclamo, de manera que en base a su tipificación se permiten determinados comportamientos. Básicamente un claim se puede crear por dos motivos generales: PNR: Producto No Recibido. PDD: Producto Diferente o Defectuoso CS: Cancelación de la Compra\""
+          },
+          "parameters": [
+            {
+              "in": "header",
+              "name": "Authorization",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
+              },
+              "description": {
+                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
+                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
+                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": {
+                "es": "Success",
+                "pt": "Sucesso",
+                "en": "Éxito"
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "example": "PDD1",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "ID de la reason"
+                        }
+                      },
+                      "flow": {
+                        "type": "string",
+                        "example": "meadiations",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Flujo del reclamo"
+                        }
+                      },
+                      "name": {
+                        "type": "string",
+                        "example": "defective_item",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Nombre de la reason"
+                        }
+                      },
+                      "detail": {
+                        "type": "string",
+                        "example": "El producto es defectuoso",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Detalle de la reason"
+                        }
+                      },
+                      "position": {
+                        "type": "number",
+                        "example": 1000,
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": ""
+                        }
+                      },
+                      "filter": {
+                        "type": "object",
+                        "properties": {
+                          "group": {
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "description": {
+                                "en": ".",
+                                "pt": ".",
+                                "es": ""
+                              }
+                            }
+                          },
+                          "site_id": {
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "example": "MLA",
+                              "description": {
+                                "en": ".",
+                                "pt": ".",
+                                "es": "ID del site donde se desarrolla el reclamo"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "settings": {
+                        "type": "object",
+                        "properties": {
+                          "allowed_flows": {
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "example": "returns",
+                              "description": {
+                                "en": ".",
+                                "pt": ".",
+                                "es": ""
+                              }
+                            }
+                          },
+                          "expected_resolutions": {
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "example": "change_product",
+                              "description": {
+                                "en": ".",
+                                "pt": ".",
+                                "es": "posibles resoluciones esperadas por quien reclama"
+                              }
+                            }
+                          },
+                          "rules_engine_triage": {
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "example": "repentant",
+                              "description": {
+                                "en": ".",
+                                "pt": ".",
+                                "es": ""
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "parent_id": {
+                        "type": "string",
+                        "example": "PDD9501",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Reason padre"
+                        }
+                      },
+                      "children_title": {
+                        "type": "string",
+                        "example": null,
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": ""
+                        }
+                      },
+                      "status": {
+                        "type": "string",
+                        "example": "active",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Estado de la reason"
+                        }
+                      },
+                      "date_created": {
+                        "type": "string",
+                        "example": "2022-01-04T17:09:50.793Z",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Fecha de creación de la reason"
+                        }
+                      },
+                      "last_updated": {
+                        "type": "string",
+                        "example": "2022-01-04T17:09:50.793Z",
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "Fecha de la última actualización de la reason"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "title": {
+            "en": ".",
+            "pt": ".",
+            "es": "Obtener detalle del motivo por el que se inició el reclamo"
+          }
+        }
+      },
+      "/$DATA.RESOURCE": {
+        "get": {
+          "tags": [
+            "subscriptions"
+          ],
+          "description": {
+            "en": ".",
+            "pt": ".",
+            "es": "Utilizando el campo resource del campo data de la novedad recibida del tópico podrás realizar un get al recurso de claim."
+          },
+          "parameters": [
+            {
+              "in": "header",
+              "name": "Authorization",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
+              },
+              "description": {
+                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
+                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
+                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": {
+                "es": "Success",
+                "pt": "Sucesso",
+                "en": "Éxito"
+              }
+            }
+          },
+          "title": {
+            "en": ".",
+            "pt": ".",
+            "es": "Notificaciones de reclamos"
           }
         }
       }
