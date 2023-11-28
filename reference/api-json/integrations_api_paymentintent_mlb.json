@@ -177,7 +177,7 @@
                     },
                     "device_id": {
                       "type": "string",
-                      "example": "INGENICO_MOVE2500__12345678",
+                      "example": "PAX_A910__SMARTPOS1234345545",
                       "description": {
                         "en": "Identifier of the device to which the payment intent was assigned",
                         "pt": "Identificador do dispositivo ao qual a intenção de pagamento foi atribuída",

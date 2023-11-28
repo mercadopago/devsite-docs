@@ -98,7 +98,7 @@
                         "properties": {
                           "id": {
                             "type": "string",
-                            "example": "INGENICO_MOVE2500__ING-23976989",
+                            "example": "PAX_A910__SMARTPOS1234345545",
                             "description": {
                               "en": "Device identifier.",
                               "es": "Identificador del dispositivo",
@@ -431,7 +431,7 @@
                     },
                     "device_id": {
                       "type": "string",
-                      "example": "INGENICO_MOVE2500__ING-23976989",
+                      "example": "PAX_A910__SMARTPOS1234345545",
                       "description": {
                         "en": "Identifier of the device to which the payment intent was assigned",
                         "pt": "Identificador do dispositivo ao qual a intenção de pagamento foi atribuída",
@@ -923,7 +923,7 @@
                         "pt": "Identificador do dispositivo ao qual a intenção de pagamento foi atribuída",
                         "es": "Identificador del dispositivo al que se asignó la intención de pago"
                       },
-                      "example": "INGENICO_MOVE2500__ING-23976989"
+                      "example": "PAX_A910__SMARTPOS1234345545"
                     },
                     "payment": {
                       "type": "object",

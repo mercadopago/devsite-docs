@@ -13,35 +13,36 @@ curl --location --request GET 'https://api.mercadopago.com/point/integration-api
 
 Recibirás una respuesta como esta:
 
+----[mla]----
 ```json
 {
     "devices": [
         {
-            "id": "INGENICO_MOVE2500__ING-ARG-1123345670",
+            "id": "PAX_A910__SMARTPOS1234345545",
             "pos_id": 47792476,
-            "store_id": "47792478",
+            "store_id": "47792479",
             "external_pos_id": "SUC0101POS",
             "operating_mode": "PDV"
         },
         {
-            "id": "INGENICO_MOVE2500__ING-ARG-0987654P",
+            "id": "INGENICO_MOVE2500__ING-ARG-12348394345",
             "pos_id": 47792476,
-            "store_id": "47792478",
-            "external_pos_id": "SUC0101POS",
+            "store_id": "47792476",
+            "external_pos_id": "SUC0102POS",
             "operating_mode": "STANDALONE"
         },
         {
-            "id": "INGENICO_MOVE2500__ING-5467853",
+            "id": "INGENICO_MOVE2500__ING-ARG-4782743403",
             "operating_mode": "PDV",
             "pos_id": 47792476,
             "store_id": "47792478",
-            "external_pos_id": "SUC0101POS",
+            "external_pos_id": "SUC0103POS",
         },
         {
-            "id": "INGENICO_MOVE2500__ING-ARG-1233456",
+            "id": "PAX_A910__SMARTPOS849233453",
             "pos_id": 47792476,
-            "store_id": "47792478",
-            "external_pos_id": "SUC0101POS",
+            "store_id": "47792472",
+            "external_pos_id": "SUC0104POS",
             "operating_mode": "STANDALONE"
         }
     ],
@@ -54,6 +55,91 @@ Recibirás una respuesta como esta:
 
 ```
 
+------------
+
+----[mlb]----
+```json
+{
+    "devices": [
+        {
+            "id": "PAX_A910__SMARTPOS1234345545",
+            "pos_id": 47792476,
+            "store_id": "47792478",
+            "external_pos_id": "SUC0101POS",
+            "operating_mode": "PDV"
+        },
+        {
+            "id": "GERTEC_MP35P__5749748758974567",
+            "pos_id": 47792476,
+            "store_id": "47792474",
+            "external_pos_id": "SUC0102POS",
+            "operating_mode": "STANDALONE"
+        },
+        {
+            "id": "GERTEC_MP35P__5743245346764567",
+            "operating_mode": "PDV",
+            "pos_id": 47792476,
+            "store_id": "47792471",
+            "external_pos_id": "SUC0103POS",
+        },
+        {
+            "id": "PAX_A910__SMARTPOS849233453",
+            "pos_id": 47792476,
+            "store_id": "47792479",
+            "external_pos_id": "SUC0104POS",
+            "operating_mode": "STANDALONE"
+        }
+    ],
+    "paging": {
+        "total": 4,
+        "limit": 50,
+        "offset": 0
+    }
+}
+```
+------------
+
+----[mlm]----
+```json
+{
+    "devices": [
+        {
+            "id": "PAX_A910__SMARTPOS1234345545",
+            "pos_id": 47792476,
+            "store_id": "47792476",
+            "external_pos_id": "SUC0101POS",
+            "operating_mode": "PDV"
+        },
+        {
+            "id": "PAX_A910__SMARTPOS13453456546",
+            "pos_id": 47792476,
+            "store_id": "47792477",
+            "external_pos_id": "SUC0102POS",
+            "operating_mode": "STANDALONE"
+        },
+        {
+            "id": "PAX_A910__SMARTPOS1344567435646",
+            "operating_mode": "PDV",
+            "pos_id": 47792476,
+            "store_id": "47792478",
+            "external_pos_id": "SUC0103POS",
+        },
+        {
+            "id": "PAX_A910__SMARTPOS849233453",
+            "pos_id": 47792476,
+            "store_id": "47792479",
+            "external_pos_id": "SUC0104POS",
+            "operating_mode": "STANDALONE"
+        }
+    ],
+    "paging": {
+        "total": 4,
+        "limit": 50,
+        "offset": 0
+    }
+}
+```
+------------
 ## Crear la intención de pago
 Una intención de pago es un llamado que contiene los detalles de la transacción a realizarse, y que debe ser creada para poder iniciar un cobro. Se trata de un intento que, de ser exitoso, devolverá un `id` del pago y su estado.
 
@@ -94,7 +180,6 @@ Como respuesta, recibirás algo similar a esto:
   }
 }
 ```
-
 ------------
 ----[mlb]----
 Puedes [crear una intención de pago](/developers/es/reference/integrations_api_paymentintent_mlb/_point_integration-api_devices_deviceid_payment-intents/post) y asignarla a tu dispositivo Point de esta manera:
@@ -130,19 +215,19 @@ Como respuesta, recibirás algo similar a esto:
 
 ```json
 {
-   "id":"7d8c70b6-2ac8-4c57-a441-c319088ca3ca",
-   "device_id":"INGENICO_MOVE2500__ING-ARG-14886780",
-   "amount":1500,
-   "description":"this is an example",
-   "payment":{
-      "type":"credit_card",
-      "installments":1,
-      "installments_cost":"seller"
-   },
-   "additional_info":{
-      "external_reference":"4561ads-das4das4-das4754-das456",
-      "print_on_terminal":true
-   }
+  "id":"7d8c70b6-2ac8-4c57-a441-c319088ca3ca",
+  "device_id":"GERTEC_MP35P__8701016695109435",
+  "amount":1500,
+  "description":"this is an example",
+  "payment":{
+     "type":"credit_card",
+     "installments":1,
+     "installments_cost":"seller"
+  },
+  "additional_info":{
+     "external_reference":"4561ads-das4das4-das4754-das456",
+     "print_on_terminal":true
+  }
 }
 ```
 
@@ -261,7 +346,7 @@ Recibirás una respuesta similar a la siguiente:
 {
     "state": "FINISHED",
     "id": "0aa0519d-d985-4e83-b62d-dda123456789",
-    "device_id": "88731317_INGENICO_MOVE2500_ING-ARG-14123456",
+    "device_id": "INGENICO_MOVE2500_ING-ARG-14123456",
     "amount": 600,
     "payment": {
         "id": "11123456789"
