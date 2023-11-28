@@ -43,19 +43,21 @@ Veja abaixo um exemplo de código com as informações enviadas no momento da re
 ```curl
 
 curl -X POST 'https://api.integrator.com/wallet_connect/events' \
--d ‘{
-    id: “22abcd1235ed497f945f755fcaba3c6c”,
-    type: "wallet_connect",
-    entity: "agreement",
-    action: "status.updated",
-    date: "2021-09-30T23:24:44Z",
-    model_version: 1,
-    version: 0,
-    data: {
-          id: "22abcd1235ed497f945f755fcaba3c6c",
-          status: "confirmed_by_user"
+-H 'Content-Type: application/json' \
+-d '{
+    "id": "22abcd1235ed497f945f755fcaba3c6c",
+    "type": "wallet_connect",
+    "entity": "agreement",
+    "action": "status.updated",
+    "date": "2021-09-30T23:24:44Z",
+    "model_version": 1,
+    "version": 0,
+    "data": {
+        "id": "22abcd1235ed497f945f755fcaba3c6c",
+        "status": "confirmed_by_user"
     }
-}’
+}'
+
 
 
 ```
@@ -77,24 +79,20 @@ Veja abaixo um exemplo de código com as informações enviadas no momento da re
 ```curl
 
 curl -X POST 'https://api.integrator.com/wallet_connect/events' \
-
-
--d '{
-
-
-    id: "22abcd1235ed497f945f755fcaba3c6c",
-    type: "wallet_connect",
-    entity: "agreement",
-    action: "status.updated",
-    date: "2021-09-30T23:24:44Z",
-    model_version: 1,
-    version: 0,
-    data: {
-          id: "22abcd1235ed497f945f755fcaba3c6c",
-          status: "cancelled"
-    }
+-H 'Content-Type: application/json' \
+ -d '{
+  "id": "22abcd1235ed497f945f755fcaba3c6c",
+  "type": "wallet_connect",
+  "entity": "agreement",
+  "action": "status.updated",
+  "date": "2021-09-30T23:24:44Z",
+  "model_version": 1,
+  "version": 0,
+  "data": {
+    "id": "22abcd1235ed497f945f755fcaba3c6c",
+    "status": "cancelled"
+  }
 }'
-
 
 ```
 ]]]
@@ -111,19 +109,18 @@ Veja abaixo um exemplo de código com as informações enviadas no momento da re
 ```curl
 
 curl -X POST 'https://api.integrator.com/wallet_connect/events' \
-
-
+-H 'Content-Type: application/json' \
 -d '{
-    id: "22abcd1235ed497f945f755fcaba3c6c",
-    type: "wallet_connect",
-    entity: "agreement",
-    action: "payment_method.updated",
-    date: "2021-09-30T23:24:44Z",
-    model_version: 1,
-    version: 0,
-    data: {
-          id: "22abcd1235ed497f945f755fcaba3c6c",
-   }
+    "id": "22abcd1235ed497f945f755fcaba3c6c",
+    "type": "wallet_connect",
+    "entity": "agreement",
+    "action": "payment_method.updated",
+    "date": "2021-09-30T23:24:44Z",
+    "model_version": 1,
+    "version": 0,
+    "data": {
+        "id": "22abcd1235ed497f945f755fcaba3c6c"
+    }
 }'
 
 
