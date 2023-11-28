@@ -6,7 +6,7 @@ This additional step provides the buyer with a more transparent and secure exper
 
 <center>
 
-![review-confirm](checkout-bricks/review-confirm-6.gif)
+![review-confirm](checkout-bricks/review-confirm-5.gif)
 
 </center> 
 
