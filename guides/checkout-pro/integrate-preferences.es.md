@@ -144,19 +144,20 @@ $preference = $client->create([
 ?>
 ```
 ```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
+
 const preference = new Preference(client);
 
-preference.create({
-  'items': [
-     {
-	 'title': 'Meu produto',
-	 'quantity': 1,
-	 'currency_id': 'BRL',
-	 'unit_price': 100
-     }
-  ]
-}).then((result) => console.log(result))
-	.catch((error) => console.log(error));
+preference.create({ body: {
+	items: [
+		{
+			id: '<ID>',
+			title: '<title>',
+			quantity: 1,
+			unit_price: 100
+		}
+	],
+} }).then(console.log).catch(console.log);
 ```
 ```java
  PreferenceItemRequest itemRequest =
@@ -252,19 +253,20 @@ $preference = $client->create([
 ?>
 ```
 ```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
+
 const preference = new Preference(client);
 
-preference.create({
-  'items': [
-     {
-	 'title': 'Meu produto',
-	 'quantity': 1,
-	 'currency_id': 'BRL',
-	 'unit_price': 100
-     }
-  ]
-}).then((result) => console.log(result))
-	.catch((error) => console.log(error));
+preference.create({ body: {
+	items: [
+		{
+			id: '<ID>',
+			title: '<title>',
+			quantity: 1,
+			unit_price: 100
+		}
+	],
+} }).then(console.log).catch(console.log);
 ```
 ```java
  PreferenceItemRequest itemRequest =
