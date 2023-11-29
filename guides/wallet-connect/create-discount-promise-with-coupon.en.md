@@ -39,7 +39,7 @@ curl -X POST \
 >
 > Important
 >
-> When a coupon is submitted for validation, the system checks whether it is correct and if there is a discount associated with it. Depending on the outcome of the verification, different responses can be received. See the section [Coupon Validation Responses](/developers/en/docs/wallet-connect/discounts/create-discount-promie-preadd-coupon/validation-responses) for more details.
+> When a coupon is submitted for validation, the system checks whether it is correct and if there is a discount associated with it. Depending on the outcome of the verification, different responses can be received. See the section [Coupon Validation Responses](/developers/en/docs/wallet-connect/discounts/create-discount-promise-preadd-coupon/validation-responses) for more details.
 
 
 ## Add Coupon Before Proceeding to Payment

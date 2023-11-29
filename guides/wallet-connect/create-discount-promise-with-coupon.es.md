@@ -38,7 +38,7 @@ curl -X POST \
 >
 > Importante
 >
-> Cuando se envía un cupón para validación, el sistema verifica si es correcto y si hay un descuento asociado a él. Dependiendo del resultado de la verificación, se pueden recibir diferentes respuestas. Consulta la sección [Respuestas de validación de cupones](/developers/es/docs/wallet-connect/discounts/create-discount-promie-preadd-coupon/validation-responses) para más detalles.
+> Cuando se envía un cupón para validación, el sistema verifica si es correcto y si hay un descuento asociado a él. Dependiendo del resultado de la verificación, se pueden recibir diferentes respuestas. Consulta la sección [Respuestas de validación de cupones](/developers/es/docs/wallet-connect/discounts/create-discount-promise-preadd-coupon/validation-responses) para más detalles.
 
 
 ## Añadir cupón antes de proceder al pago

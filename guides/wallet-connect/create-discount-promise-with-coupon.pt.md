@@ -37,7 +37,7 @@ curl -X POST \
 >
 > Importante
 >
->Quando um cupom é submetido para validação, o sistema verifica se ele está correto e se há um desconto associado a ele. Dependendo do resultado da verificação, diferentes respostas podem ser recebidas. Veja a seção [Respostas da Validação de Cupons](/developers/pt/docs/wallet-connect/discounts/create-discount-promie-preadd-coupon/validation-responses) para mais detalhes.
+>Quando um cupom é submetido para validação, o sistema verifica se ele está correto e se há um desconto associado a ele. Dependendo do resultado da verificação, diferentes respostas podem ser recebidas. Veja a seção [Respostas da Validação de Cupons](/developers/pt/docs/wallet-connect/discounts/create-discount-promise-preadd-coupon/validation-responses) para mais detalhes.
 
 ## Adicionar cupom antes de prosseguir para pagamento
 
