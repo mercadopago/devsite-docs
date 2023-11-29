@@ -57,7 +57,7 @@ gem install Mercadopago-sdk
 To install the SDK, you must run the following code in the command line of your terminal using [NuGet](https://docs.microsoft.com/en-us/nuget/reference/nuget-exe-cli-reference):
 
 ------------
-----[mla, mlm, mco, mlc, mlu]----
+----[mla, mpe, mlm, mco, mlc, mlu]----
 To install the SDK, you must run the following code in the command line of your terminal using [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference):
 
 ------------
