@@ -57,7 +57,7 @@ gem install mercadopago-sdk
 Para instalar la SDK debes ejecutar el siguiente código en la línea de comandos de tu terminal usando [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference):
 
 ------------
-----[mla, mlm, mco, mlc, mlu]----
+----[mla, mpe, mlm, mco, mlc, mlu]----
 Para instalar la SDK debes ejecutar el siguiente código en la línea de comandos de tu terminal usando [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference):
 
 ------------
@@ -144,19 +144,20 @@ $preference = $client->create([
 ?>
 ```
 ```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
+
 const preference = new Preference(client);
 
-preference.create({
-  'items': [
-     {
-	 'title': 'Meu produto',
-	 'quantity': 1,
-	 'currency_id': 'BRL',
-	 'unit_price': 100
-     }
-  ]
-}).then((result) => console.log(result))
-	.catch((error) => console.log(error));
+preference.create({ body: {
+	items: [
+		{
+			id: '<ID>',
+			title: '<title>',
+			quantity: 1,
+			unit_price: 100
+		}
+	],
+} }).then(console.log).catch(console.log);
 ```
 ```java
  PreferenceItemRequest itemRequest =
@@ -252,19 +253,20 @@ $preference = $client->create([
 ?>
 ```
 ```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
+
 const preference = new Preference(client);
 
-preference.create({
-  'items': [
-     {
-	 'title': 'Meu produto',
-	 'quantity': 1,
-	 'currency_id': 'BRL',
-	 'unit_price': 100
-     }
-  ]
-}).then((result) => console.log(result))
-	.catch((error) => console.log(error));
+preference.create({ body: {
+	items: [
+		{
+			id: '<ID>',
+			title: '<title>',
+			quantity: 1,
+			unit_price: 100
+		}
+	],
+} }).then(console.log).catch(console.log);
 ```
 ```java
  PreferenceItemRequest itemRequest =
