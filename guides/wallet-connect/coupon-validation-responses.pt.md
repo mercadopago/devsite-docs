@@ -1,4 +1,4 @@
-# Respostas 
+# Respostas de validação dos cupons
 
 Nesta seção você encontra as possíveis respostas ao validar cupons, com detalhes sobre cada tipo de resposta, incluindo casos de sucesso, pendência, invalidade e erro.
 
