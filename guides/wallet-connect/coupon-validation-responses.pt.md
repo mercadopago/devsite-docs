@@ -28,7 +28,7 @@ Nesta seção você encontra as possíveis respostas ao validar cupons, com deta
     "legal_terms": "URL dos termos e condições para fins legais",
     "details": {
        "value": 10.0,
-       "type": "percentual",
+       "type": "percent",
        "cap": 1000.0,
        "min_payment_amount": 100.0,
        "max_payment_amount": 10000.0
@@ -104,7 +104,7 @@ Nesta seção você encontra as possíveis respostas ao validar cupons, com deta
 2. Coupon_id inválido
 
 * Código de status: 400 (Bad Request).
-* Descrição: Resposta de erro indicando que o coupon_id enviado no request é inválido.
+* Descrição: Resposta de erro indicando que o `coupon_id` enviado no request é inválido.
 * Corpo da resposta:
 
 [[[
@@ -120,7 +120,7 @@ Nesta seção você encontra as possíveis respostas ao validar cupons, com deta
 3. Payer_token inválido
 
 * Código de status: 400 (Bad Request).
-* Descrição: Resposta de erro indicando que o payer_token enviado no request é inválido.
+* Descrição: Resposta de erro indicando que o `payer_token` enviado no request é inválido.
 * Corpo da resposta:
 
 [[[

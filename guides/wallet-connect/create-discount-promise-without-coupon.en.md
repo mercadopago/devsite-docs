@@ -1,6 +1,6 @@
 # Create Discount Promise Without Pre-Added Coupon
 
-The discount promise without a pre-added coupon is a method in which the discount is applied to a transaction without the need for a coupon already linked to the user's account or transaction.
+The **discount promise without a pre-added coupon** is a method in which the discount is applied to a transaction without the need for a coupon already linked to the user's account or transaction.
 
 In this case, the discount can be automatically applied based on certain criteria or actions, such as customer loyalty, total purchase value, or participation in a specific promotion.
 

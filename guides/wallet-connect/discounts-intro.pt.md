@@ -7,12 +7,12 @@ Descontos são reduções de valores aplicados ao preço original de um produto 
 >
 > Importante
 >
-> Para começar a oferecer descontos, alinhe as características da campanha com o seu gerente de conta.
+> Antes de oferecer pagamentos com descontos usando Wallet Connect, lembre-se de alinhar a campanha de benefícios com o seu gerente de contas.
 
 A implementação de descontos via Wallet Connect é feita a partir da criação de uma promessa de desconto, que deve ser feita após a conclusão da [vinculação de contas](/developers/pt/docs/wallet-connect/account-linking-flow/create-agreement) e antes de iniciar o [fluxo de pagamentos](/developers/pt/docs/wallet-connect/payment-flow). Este processo envolve:
 
 
-## Criar uma Promessa de Desconto 
+## Criar Promessa de Desconto 
 
 Existem duas opções principais para criar uma promessa de desconto, adequadas a diferentes situações:
 
@@ -27,7 +27,7 @@ Existem duas opções principais para criar uma promessa de desconto, adequadas 
     * Neste caso, a solicitação é realizada sem um cupom. Aqui, o desconto é solicitado com base em uma campanha já existente. Isso é útil quando os descontos são oferecidos como parte de uma promoção geral, sem a necessidade de um código de cupom específico.
 
 
-## Processar o pagamento com desconto 
+## Processar pagamento com desconto 
 
 Após a criação da promessa de desconto, é necessário processar o pagamento. Isso assegura que o desconto seja processado corretamente durante a transação.
 

@@ -1,6 +1,6 @@
 # Criar promessa de desconto sem cupom pré-adicionado
 
-A promessa de desconto sem um cupom pré-adicionado é um método no qual o desconto é aplicado a uma transação sem a necessidade de um cupom já vinculado à conta ou transação do usuário. 
+A **promessa de desconto sem um cupom pré-adicionado** é um método no qual o desconto é aplicado a uma transação sem a necessidade de um cupom já vinculado à conta ou transação do usuário. 
 
 Neste caso, o desconto pode ser aplicado automaticamente com base em certos critérios ou ações, como fidelidade do cliente, valor total da compra, ou participação em uma promoção específica.
 
@@ -31,3 +31,5 @@ curl -X POST \
 
 ```
 ]]]
+
+Ao criar uma promessa de desconto sem cupom pré-adicionado, é possível que diferentes respostas sejam recebidas (sucesso/erro). Veja a seção [Respostas](/developers/pt/docs/wallet-connect/discounts/create-discount-promise-without-preadd-coupon/responses) para o detalhamento de cada uma delas.

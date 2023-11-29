@@ -6,7 +6,7 @@ Discounts are reductions in values applied to the original price of a product or
 >
 > Important
 >
-> To start offering discounts, align the characteristics of the campaign with your account manager.
+> Before offering payments with discounts using Wallet Connect, remember to align the benefits campaign with your account manager.
 
 The implementation of discounts via Wallet Connect is done by creating a discount promise, which must be made after completing the [account linking](/developers/en/docs/wallet-connect/account-linking-flow/create-agreement) and before starting the [payment flow](/developers/en/docs/wallet-connect/payment-flow). This process involves:
 

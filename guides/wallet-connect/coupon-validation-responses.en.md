@@ -23,7 +23,7 @@ In this section, you will find the possible responses when validating coupons, w
     "legal_terms": "URL of the terms and conditions for legal purposes",
     "details": {
        "value": 10.0,
-       "type": "percentage",
+       "type": "percent",
        "cap": 1000.0,
        "min_payment_amount": 100.0,
        "max_payment_amount": 10000.0
@@ -44,7 +44,7 @@ In this section, you will find the possible responses when validating coupons, w
     "legal_terms": "URL of the terms and conditions for legal purposes.",
     "details": {
        "value": 10.0,
-       "type": "percentage",
+       "type": "percent",
        "cap": 1000.0,
        "min_payment_amount": 100.0,
        "max_payment_amount": 10000.0
@@ -83,7 +83,7 @@ In this section, you will find the possible responses when validating coupons, w
 2. Invalid Coupon_id
 
 * Status Code: 400 (Bad Request)
-* Description: Error response indicating that the coupon_id sent in the request is invalid.
+* Description: Error response indicating that the `coupon_id` sent in the request is invalid.
 * Response Body:
 
 ```json
@@ -97,7 +97,7 @@ In this section, you will find the possible responses when validating coupons, w
 3. Invalid Payer_token
 
 * Status Code: 400 (Bad Request)
-* Description: Error response indicating that the payer_token sent in the request is invalid.
+* Description: Error response indicating that the `payer_token` sent in the request is invalid.
 * Response Body:
 
 ```json

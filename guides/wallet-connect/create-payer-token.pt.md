@@ -4,7 +4,7 @@ Com o _agreement_ criado e a aprovação do comprador concedida, é preciso cria
 
 Confira o diagrama abaixo que ilustra como funciona o fluxo de criação de um payer token.
 
-![Criar payer token](/images/wallet-connect/create-payer-token.pt.png)
+![Criar payer token](/images/wallet-connect/create-payer-token-v2-pt.png)
 
 Para criar um _payer token_, envie um **POST** com todos os atributos necessários ao endpoint [/v2/wallet_connect/agreements/{agreementId}/payer_token](/developers/pt/reference/wallet_connect/_wallet_connect_agreements_agreement_id_payer_token/post) e execute a requisição ou, se preferir, utilize o `curl` disponível abaixo.
 
