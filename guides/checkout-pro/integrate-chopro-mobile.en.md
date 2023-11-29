@@ -1,8 +1,8 @@
 > WARNING
 >
-> Deprecation Notice
+> Discontinuation Notice
 >
-> Starting from November 29, 2023, the WebView integration model will be deprecated. This means that integrations that include an embedded browser-based login attempt will no longer be supported. To ensure security in your applications and comply with the security standards required by Mercado Pago, please integrate using one of the options detailed below.
+> As of November 29, 2023, the WebView integration model was deprecated, that is, those integrations that include a login attempt from an embedded browser. Carry out your Checkout Pro integration for mobile applications using one of the options detailed below.
 
 
 # Integrate Checkout Pro for Mobile

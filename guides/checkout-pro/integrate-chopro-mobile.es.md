@@ -1,8 +1,8 @@
 > WARNING
 >
-> Aviso de deprecado
+> Aviso de discontinuado
 >
-> A partir del 29 de noviembre de 2023 será deprecado el modelo de integración WebView, es decir, aquellas integraciones que incluyan un intento de login proveniente de un browser embebido. Para garantizar la seguridad en tus aplicaciones y cumplir con los estándares de seguridad requeridos por Mercado Pago, realiza tu integración para mobile utilizado alguna de las opciones que detallamos debajo.
+> Desde 29 de noviembre de 2023, quedó deprecado el modelo de integración WebView, es decir, aquellas integraciones que incluyan un intento de login proveniente de un browser embebido. Realiza tu integración de Checkout Pro para aplicaciones móviles utilizado alguna de las opciones que detallamos debajo.
 
 # Integrar Checkout Pro para Mobile
 
