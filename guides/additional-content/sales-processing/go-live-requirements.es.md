@@ -1,6 +1,6 @@
 # Requisitos para salir a producción
 
-Cuando tengas lista tu integración y quieras comenzar a recibir pagos, [activa las credenciales]([FAKER][CREDENTIALS][URL]) de producción y reemplaza las de prueba si hace falta.
+Cuando tengas lista tu integración y quieras comenzar a recibir pagos, [activa las credenciales](/developers/es/guides/additional-content/your-integrations/credentials) de producción y reemplaza las de prueba si hace falta. 
 
 Además, deberás evaluar la [calidad de tu integración](/developers/es/guides/additional-content/homologator/homologator) para verificar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago.
 

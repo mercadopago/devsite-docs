@@ -6,14 +6,15 @@ If you prefer, you can also add the preference at Brick startup. This can be use
 [[[
 ```Javascript
 const settings = {
- ...,
- initialization: {
-   preferenceId: '<PREFERENCE_ID>',
- },
+...,
+initialization: {
+  preferenceId: '<PREFERENCE_ID>',
+},
 customization: {
- texts: {
-  valueProp: 'smart_option',
+texts: {
+ valueProp: 'smart_option',
  },
+},
 };
 ```
 ```react-jsx

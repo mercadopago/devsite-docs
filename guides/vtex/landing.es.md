@@ -38,7 +38,7 @@ bullet_section_with_media:
 bullet_section_with_media:
  - title: Personaliza tus pagos con Checkout API
  - type: reversed
- - message: Si integras Checkout Transparente, puedes hacer que el comprador complete todo su proceso de compra dentro del entorno de tu tienda VTEX.
+ - message: Si integras Checkout API, puedes hacer que el comprador complete todo su proceso de compra dentro del entorno de tu tienda VTEX.
  - image: /shopify/mini-landing-4.png
 ---
 ------------

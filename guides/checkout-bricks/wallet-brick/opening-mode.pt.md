@@ -6,7 +6,7 @@ O esquema de abertura permite definir como o checkout será aberto para o usuár
 > 
 > Atenção
 >
-> É de **extrema importância** que se atente, durante a criação da preferência, para a configuração das `back_urls`, pois elas serão responsáveis por guiar o fluxo de retorno ao seu website quando o checkout for finalizado. Para mais informações, veja a seção de [URLs de retorno.]().
+> É de **extrema importância** que se atente, durante a criação da preferência, para a configuração das `back_urls`, pois elas serão responsáveis por guiar o fluxo de retorno ao seu website quando o checkout for finalizado. Para mais informações, veja a seção de [URLs de retorno.](/developers/pt/docs/checkout-bricks/wallet-brick/advanced-features/preferences#bookmark_redirecione_o_comprador_para_o_seu_site). 
 
 # Esquema de redirecionamento para outra página
 

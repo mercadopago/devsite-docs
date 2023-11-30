@@ -37,7 +37,7 @@ initMercadoPago('YOUR_PUBLIC_KEY');
 
 ## Eligir el Brick
 
-Con la biblioteca de MercadoPago agregada y configurada en su proyecto, está listo para agregar Bricks a su sitio web. Para ello, elige el Brick que mejor se adapte a tus necesidades y sigue los pasos detallados en el apartado correspondiente al Brick elegido.
+Con la biblioteca de Mercado Pago agregada y configurada en su proyecto, está listo para agregar Bricks a su sitio web. Para ello, elige el Brick que mejor se adapte a tus necesidades y sigue los pasos detallados en el apartado correspondiente al Brick elegido.
 
 ----[mla]----
 
@@ -46,7 +46,7 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
- - card_description: Ofrece diferentes medios de pago entre los que podrán elegir tus clientes, con la posibilidad de guardar los datos de la tarjeta para futuras compras. Integra este Brick y testea su experiencia.
+ - card_description: Ofrece diferentes medios de pago entre los que podrán elegir tus clientes, con la posibilidad de guardar datos de la tarjeta para futuras compras. Integra este Brick y testea su experiencia. 
  - card_link: /developers/es/docs/checkout-bricks/payment-brick/introduction
  - card_linkDescription: Saber más
  - card_pillText: DISPONIBLE
@@ -81,7 +81,7 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
- - card_description: Ofrece diferentes medios de pago entre los que podrán elegir tus clientes, con la posibilidad de guardar los datos de la tarjeta para futuras compras. Prueba la demostración del Brick antes de integrarlo.
+ - card_description: Ofrece diferentes medios de pago entre los que podrán elegir tus clientes, con la posibilidad de guardar datos de la tarjeta para futuras compras. Prueba la demostración del Brick antes de integrarlo.
  - card_link: /developers/es/docs/checkout-bricks/payment-brick/introduction
  - card_linkDescription: Saber más
  - card_pillText: DISPONIBLE

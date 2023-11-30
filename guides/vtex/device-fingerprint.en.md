@@ -4,7 +4,7 @@
 
 Whenever possible, we recommend that you submit information about the customer's behavior to detect unusual movements and prevent fraudulent transactions. Don't worry, we take care of your customers' data and do not share it with anyone. 
 
-To configure **Device Fingerprint**, follow the steps below:
+You will have to configure Device Fingerprint on VTEX stores to have safer transactions. To do so, follow the steps below:
 
 1. Access your store's administration panel and select **Checkout > **Store Setup**.
 2. Click on the **edit** icon to access the configuration of your site.

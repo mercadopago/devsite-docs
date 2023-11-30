@@ -6,14 +6,15 @@ Si lo prefiere, también puede agregar la preferencia en el inicio de Brick. Est
 [[[
 ```Javascript
 const settings = {
- ...,
- initialization: {
-   preferenceId: '<PREFERENCE_ID>',
- },
+...,
+initialization: {
+  preferenceId: '<PREFERENCE_ID>',
+},
 customization: {
- texts: {
-  valueProp: 'smart_option',
+texts: {
+ valueProp: 'smart_option',
  },
+},
 };
 ```
 ```react-jsx

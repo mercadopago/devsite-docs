@@ -70,13 +70,14 @@ At the end of the previous step, **initialize your checkout using the ID of the 
 [[[
 ```Javascript
 mp.bricks().create("wallet", "wallet_container", {
-   initialization: {
-       preferenceId: "<PREFERENCE_ID>",
-   },
-customization: {
- texts: {
-  valueProp: 'smart_option',
- },
+  initialization: {
+      preferenceId: "<PREFERENCE_ID>",
+  },
+  customization: {
+    texts: {
+      valueProp: 'smart_option',
+    },
+  },
 });
 ```
 ```react-jsx
