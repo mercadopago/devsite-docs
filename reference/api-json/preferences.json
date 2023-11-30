@@ -587,15 +587,6 @@
                       "es": "Preferencia que determina si una preferencia expira"
                     }
                   },
-                  "date_of_expiration": {
-                    "type": "string",
-                    "format": "date",
-                    "description": {
-                      "en": "Expiration date of cash payment.",
-                      "pt": "Data de expiração de meios de pagamento em dinheiro",
-                      "es": "Fecha de vencimiento del medio de pago en efectivo"
-                    }
-                  },
                   "expiration_date_from": {
                     "type": "string",
                     "format": "date",
