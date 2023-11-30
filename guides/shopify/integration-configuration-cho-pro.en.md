@@ -10,9 +10,12 @@ To configure Checkout Pro in a Shopify store, follow the steps below:
 3. Once there, select the **Payments** option. Then, click on the **Choose a provider** button.
 4. Type Mercado Pago in the search bar. Once you find it, select it as your payment method.
 5. Enter your **production credentials** (`Client_id` and `Client_secret`) in the fields that require them. Remember to keep your [credentials](/developers/en/docs/shopify/additional-content/your-integrations/credentials) handy.
-6. In the next step, you will be able to select the images of the payment methods you want to display in the store. **Important: these images are for illustrative purposes only and do not imply the activation of the payment method selected**.
+6. In the next step, you will be able to select the images of the payment methods you want to display in the store. 
+
+> These images are for **illustrative purposes only and do not imply the activation of the payment method selected**.
+
 7. Lastly, the store will offer you the option to **Enable test mode**. By activating this option, orders completed with Checkout Pro **will not be real orders**. That is, they will be test orders that, even if completed, will not have their status updated on the platform and will not appear on the Mercado Pago panel in the seller's account.
-8. To finish, click on **Activate Mercado Pago**. 
+8. To finish, click on **Activate Mercado Pago**.
  
 > In case of renewing your credentials, remember to replace both the production and test credentials in your integration.
 
