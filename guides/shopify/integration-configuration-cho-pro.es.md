@@ -9,7 +9,7 @@ Para configurar el Checkout Pro en una tienda Shopify, sigue los pasos a continu
 2. Dentro del panel administrativo de la tienda, haz clic en **Configuración**.
 3. Una vez allí, selecciona la opción **Pagos**. Luego, haz clic en el botón **Seleccionar un proveedor**.
 4. Escribe Mercado Pago en la barra de búsqueda. Una vez que lo encuentres, selecciónalo como método de pago.
-5. Coloca tus **credenciales de producción** (`Client_id` y `Client_secret`) en los campos que lo solicitan. Recuerda tener a mano tus [credenciales](/developers/es/docs/shopify/additional-content/your-integrations/credentials). 
+5. Coloca tus **credenciales de producción** (`client_id` y `client_secret`) en los campos que lo solicitan. Recuerda tener a mano tus [credenciales](/developers/es/docs/shopify/additional-content/your-integrations/credentials). 
 6. En el siguiente paso, podrás seleccionar las imágenes de los medios de pago que deseas mostrar en la tienda.
 
 > Estas imágenes son sólo para **fines ilustrativos y no implican la activación del método de pago seleccionado**.
