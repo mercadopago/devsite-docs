@@ -4,13 +4,11 @@ If there is any change in a customer's data, such as address, card or account em
 
 In the table below we describe all the attributes that can be modified. To make the change, send a **PUT** with the `customer_id` and the attributes you want to modify to the endpoint [/v1/customers/{id}](/developers/en/reference/customers/_customers_id/put) and execute the request or, if you prefer, use one of the SDKs below.
 
-
 > NOTE
 >
 > Important
 >
 > If you don't have the `customer_id`, follow the steps described in the section [Search customers](/developers/en/docs/checkout-api/cards-and-customers-management/search-customers) to get the information. Also, the `email` field can only be modified if the customer does not already have an associated email.
-
 
 | Attribute | Description |
 | --- | --- |
@@ -23,7 +21,6 @@ In the table below we describe all the attributes that can be modified. To make 
 | `last_name` | Last name |
 | `phone` | Registered phone |
 | `identification` | Document type and number |
-
 
 [[[
 ```php
@@ -55,9 +52,9 @@ In the table below we describe all the attributes that can be modified. To make 
 ```
 ```node
 const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const customerClient = new Customer(client);
+const customer = new Customer(client);
 
-const customerBody = {
+const body = {
   email: "my.user@example.com"
   first_name: "john",
   last_name: "wagner",
@@ -77,9 +74,9 @@ const customerBody = {
   }
 };
 
-customerClient.update({ customerBody }).then((result) => console.log(result));
+customer.update({ customerId: '<CUSTOMER_ID>', body: body,
+}).then(console.log).catch(console.log);
 ```
-
 ```java
 
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");

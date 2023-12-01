@@ -5,8 +5,8 @@ You can create a full refund using the SDK below. For details on the request par
 [[[
 ```php
 <?php
-  $refund_client = new PaymentRefundClient();
-  $refund_client->refund('123456789', 5);
+ $refund_client = new PaymentRefundClient();
+ $refund_client->refundTotal(123456789);
 ?>
 ```
 ]]]
@@ -18,14 +18,8 @@ You can create a partial refund using the SDK below. For details on the request 
 [[[
 ```php
 <?php
- 
-MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
- 
-$refund = new MercadoPago\Refund();
-$refund->amount = 0.0;
-$refund->payment_id = 0;
-$refund->save();
- 
+ $refund_client = new PaymentRefundClient();
+ $refund_client->refund(123456789, 100);
 ?>
 ```
 ]]]

@@ -121,7 +121,7 @@ Ingresa el **identifier** de su aplicación y la **URL Schemes** del Deep Link.
 
 ![xcode-paso2](/images/cow/xcode-paso2.png)
 
-Esto generará el siguiente código en el archivo **ios/<appname>/Info.plist**:
+Esto generará el siguiente código en el archivo **ios/appname/Info.plist**:
 
 ```info.plist
 <key>CFBundleURLTypes</key>
@@ -136,7 +136,7 @@ Esto generará el siguiente código en el archivo **ios/<appname>/Info.plist**:
     </array>
 ```
 
-Agrega el siguiente código al archivo **ios/<appname>/AppDelegate.mm**
+Agrega el siguiente código al archivo **ios/appname/AppDelegate.mm**
 
 
 ```AppDelegate.mm

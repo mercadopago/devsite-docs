@@ -21,13 +21,35 @@ To start testing integrations and payment flows with the Point Simulator, you wi
 
 If you prefer, you can also create test users using the following command:
 
+----[mlm]----
 ``` curl
 curl -X POST \
--H "Content-Type: application/json" \
--H 'Authorization: Bearer ${TEST_ACCESS_TOKEN}' \
+-h "Content-Type: application/json" \
+--h 'Authorization: Bearer YOUR_TEST_ACCESS_TOKEN' \
 "https://api.mercadopago.com/users/test" \
 -d '{"site_id":"MLM","description" : "a description"}'
 ```
+------------
+
+----[mla]----
+``` curl
+curl -X POST \
+-h "Content-Type: application/json" \
+--h 'Authorization: Bearer YOUR_TEST_ACCESS_TOKEN'\
+"https://api.mercadopago.com/users/test" \
+-d '{"site_id":"MLA","description" : "a description"}'
+```
+------------
+
+----[mlb]----
+``` curl
+curl -X POST \
+-h "Content-Type: application/json" \
+--h 'Authorization: Bearer YOUR_TEST_ACCESS_TOKEN'\
+"https://api.mercadopago.com/users/test" \
+-d '{"site_id":"MLB","description" : "a description"}'
+```
+------------
 
 ## 2. Configure your credentials
 

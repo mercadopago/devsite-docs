@@ -8,6 +8,6 @@ The integration of the Mercado Pago module with the PrestaShop store allows you 
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-* [Checkout Pro](/developers/en/docs/prestashop/payment-configuration/checkout-pro): payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash (Mercado Pago account or boleto bancário) and bank transfer.
-* [Checkout API](/developers/en/docs/prestashop/payment-configuration/checkout-api/introduction): payment is made without leaving your virtual store with cards (debit or credit), ticket checkout (Mercado Pago account or boleto bancário).
+* [Checkout Pro](/developers/en/docs/prestashop/payment-configuration/checkout-pro): payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash (Mercado Pago account or ticket) and bank transfer.
+* [Checkout API](/developers/en/docs/prestashop/payment-configuration/checkout-api/introduction): payment is made without leaving your virtual store with cards (debit or credit), ticket checkout (Mercado Pago account or ticket).
 ------------

@@ -1,0 +1,259 @@
+{
+  "url": "https://api.mercadopago.com",
+  "paths": {
+    "/instore/orders/{merchant_order_id}/confirmation": {
+      "post": {
+        "tags": [
+          "cash-out",
+          "qr-code"
+        ],
+        "description": {
+          "en": "After complete a cashout transaction physically, confirm the status of the money delivered. This endpoint works until 5 minutes after the transaction was done",
+          "pt": "Após concluir uma transação de saque fisicamente, confirme o status do dinheiro entregue. Este endpoint funciona até 5 minutos após a realização da transação",
+          "es": "Después de completar una transacción de retiro físicamente, confirma el estado del dinero entregado. Este endpoint funciona hasta 5 minutos después de que se realizó la transacción"
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "status": {
+                    "$ref": "#/components/schemas/status"
+                  },
+                  "status_detail": {
+                    "$ref": "#/components/schemas/status_detail"
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": {
+                      "en": "Custom description of status.",
+                      "pt": "Descrição personalizada do status.",
+                      "es": "Descripción personalizada del estado."
+                    },
+                    "example": {
+                      "en": "connection lost",
+                      "pt": "conexão perdida",
+                      "es": "conexión perdida"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "es": "Success",
+              "pt": "Success",
+              "en": "Success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "order_id": {
+                      "type": "number",
+                      "example": 123456789,
+                      "description": {
+                        "en": "Merchant order id asociated to transaction",
+                        "pt": "ID do merchant_order associado à transação.",
+                        "es": "ID del merchant_order asociado a la transacción."
+                      }
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "confirmed",
+                      "description": {
+                        "en": "Transaction status",
+                        "pt": "Status da transação.",
+                        "es": "Estado de la transacción."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": null,
+                    "type": "string",
+                    "enum": [
+                      {
+                        "title": "400-invalid_status_detail",
+                        "description": {
+                          "en": "the-status-detail-is-not-correct",
+                          "es": "the-status-detail-is-not-correct",
+                          "pt": "the-status-detail-is-not-correct"
+                        }
+                      },
+                      {
+                        "title": "400-invalid_status",
+                        "description": {
+                          "en": "the-cashout-status-is-not-correct",
+                          "es": "the-cashout-status-is-not-correct",
+                          "pt": "the-cashout-status-is-not-correct"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": null,
+                    "type": "string",
+                    "enum": [
+                      {
+                        "title": "409-already_confirmed",
+                        "description": {
+                          "en": "Order-already-confirmed-",
+                          "es": "Order-already-confirmed-",
+                          "pt": "Order-already-confirmed-"
+                        }
+                      },
+                      {
+                        "title": "409-already_notified",
+                        "description": {
+                          "en": "Order-already-notified-with-status:-{STATUS}",
+                          "es": "Order-already-notified-with-status:-{STATUS}",
+                          "pt": "Order-already-notified-with-status:-{STATUS}"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Confirm cashout status",
+          "pt": "Confirmar o status da retirada",
+          "es": "Confirmar el estado de retiro"
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "status": {
+        "type": "string",
+        "description": {
+          "en": "Status of the money. If the status of cashout and payment (if applies) is not confirmed, the amount will be refunded to the payer.",
+          "pt": "Status do dinheiro. Se o status de saque e pagamento (se aplicável) não for confirmado, o valor será reembolsado ao pagador.",
+          "es": "Estado del dinero. Si no se confirma el estado de retiro y pago (si corresponde), el monto se reembolsará al pagador."
+        },
+        "example": "confirmed",
+        "enum": [
+          {
+            "title": "confirmed",
+            "description": {
+              "en": "the money was delivered correctly to the payer.",
+              "es": "the money was delivered correctly to the payer.",
+              "pt": "the money was delivered correctly to the payer."
+            }
+          },
+          {
+            "title": "fail",
+            "description": {
+              "en": "the transaction failed by one or some errors.",
+              "es": "the transaction failed by one or some errors.",
+              "pt": "the transaction failed by one or some errors."
+            }
+          },
+          {
+            "title": "cancelled",
+            "description": {
+              "en": "cashout cancelled for any reason.",
+              "es": "cashout cancelled for any reason.",
+              "pt": "cashout cancelled for any reason."
+            }
+          }
+        ]
+      },
+      "status_detail": {
+        "type": "string",
+        "description": {
+          "en": "Detail of the status.",
+          "pt": "Detalhe do status.",
+          "es": "Detalle del estado."
+        },
+        "example": "confirmed",
+        "enum": [
+          {
+            "title": "internal_comunication_error",
+            "description": {
+              "en": "an error occurs in seller infraestructure (only for fail status).",
+              "es": "an error occurs in seller infraestructure (only for fail status).",
+              "pt": "an error occurs in seller infraestructure (only for fail status)."
+            }
+          },
+          {
+            "title": "manually_cancelled",
+            "description": {
+              "en": "cancelled manually for the cashier (only for cancelled status).",
+              "es": "cancelled manually for the cashier (only for cancelled status).",
+              "pt": "cancelled manually for the cashier (only for cancelled status)."
+            }
+          },
+          {
+            "title": "confirmation_not_received",
+            "description": {
+              "en": "the notification for this transaction was not received by the seller (only for cancelled status).",
+              "es": "the notification for this transaction was not received by the seller (only for cancelled status).",
+              "pt": "the notification for this transaction was not received by the seller (only for cancelled status)."
+            }
+          },
+          {
+            "title": "merchant_order_not_found",
+            "description": {
+              "en": "merchant order associated to the transaction not found (only for cancelled status).",
+              "es": "merchant order associated to the transaction not found (only for cancelled status).",
+              "pt": "merchant order associated to the transaction not found (only for cancelled status)."
+            }
+          },
+          {
+            "title": "other",
+            "description": {
+              "en": "other error (only for cancelled and fail status).",
+              "es": "other error (only for cancelled and fail status).",
+              "pt": "other error (only for cancelled and fail status)."
+            }
+          },
+          {
+            "title": "confirmed",
+            "description": {
+              "en": "cashout confirmed (only for confirmed status).",
+              "es": "cashout confirmed (only for confirmed status).",
+              "pt": "cashout confirmed (only for confirmed status)."
+            }
+          }
+        ]
+      }
+    }
+  }
+}

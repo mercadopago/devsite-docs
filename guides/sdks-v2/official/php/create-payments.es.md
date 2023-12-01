@@ -1,6 +1,12 @@
 # Crear pago
 
-Es posible crear y agregar información de pago utilizando el SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, consulte la API [Crear pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post).
+Es posible crear y agregar información de pago utilizando el SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, consulte la API [Crear pago](/developers/es/reference/payments/_payments/post).
+
+> NOTE
+>
+> Importante
+>
+> Al ejecutar las APIs mencionadas en esta documentación, es posible que encuentre el atributo `X-Idempotency-Key`. Completarlo es crucial para asegurar la ejecución y reejecución de las solicitudes sin situaciones no deseadas, como pagos duplicados, por ejemplo.
 
 [[[
 ```php

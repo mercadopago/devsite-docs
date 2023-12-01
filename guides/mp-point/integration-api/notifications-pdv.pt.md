@@ -284,12 +284,12 @@ seguinte comando:
 
 ```curl
 curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/integrator' \
---header 'Authorization: Bearer ${ACCESS_TOKEN}' \
+--h 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-	"event_channel_devices": [
-		"email"
-	]
+        "event_channel_devices": [
+                "email"
+        ]
 }'
 ```
 
@@ -306,7 +306,7 @@ Uma vez configurado o canal de notificação, você pode verificar seu status ex
 
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/integrator' \
---header 'Authorization: Bearer ${ACCESS_TOKEN}'
+--h 'Authorization: Bearer YOUR_ACCESS_TOKEN'
 ```
 
 

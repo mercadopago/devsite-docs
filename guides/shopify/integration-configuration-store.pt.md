@@ -7,7 +7,7 @@ Recomendamos personalizar as informações do checkout da loja para garantir uma
 >
 > Atenção
 >
-> Caso esteja utilizando a aplicação antiga do Mercado Pago ("Mercado Pago"), [clique aqui](/developers/pt/docs/shopify/how-tos/migration) para saber como migrar para a versão atual ("Checkout Mercado Pago").
+> Se estava utilizando o antigo app do Mercado Pago (“**Mercado Pago**”) e deixou de receber pagamentos em sua loja, não se preocupe. Para voltar a vender, instale nosso novo app (“**Checkout Mercado Pago**”) seguindo os passos abaixo.
 
 ------------
 

@@ -37,7 +37,7 @@ initMercadoPago('YOUR_PUBLIC_KEY');
 
 ## Choose the Brick
 
-With the MercadoPago library added and configured in your project, you are ready to add Bricks to your website. To do so, choose the Brick that best meets your needs and follow the steps detailed in the section corresponding to the chosen Brick.
+With the Mercado Pago library added and configured in your project, you are ready to add Bricks to your website. To do so, choose the Brick that best meets your needs and follow the steps detailed in the section corresponding to the chosen Brick.
 
 ----[mlm]----
 
@@ -46,7 +46,7 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
- - card_description: Offer different payment methods from which your customers can choose, with the ability to save card details for future purchases. Test the Brick demonstration before integrating it.
+ - card_description: Offer different payment methods that your customers can choose, with the ability to save card details for future purchases. Test the Brick demonstration before integrating it. 
  - card_link: /developers/en/docs/checkout-bricks/payment-brick/introduction
  - card_linkDescription: Learn more
  - card_pillText: AVAILABLE
@@ -88,7 +88,7 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
- - card_description: Offer different payment methods from which your customers can choose, with the ability to save card details for future purchases. Test the Brick demonstration before integrating it.
+ - card_description: Offer different payment methods that your customers can choose, with the ability to save card details for future purchases. Test the Brick demonstration before integrating it. 
  - card_link: /developers/en/docs/checkout-bricks/payment-brick/introduction
  - card_linkDescription: Learn more
  - card_pillText: AVAILABLE

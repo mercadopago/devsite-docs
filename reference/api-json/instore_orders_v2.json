@@ -1,4 +1,5 @@
 {
+  "url": "https://api.mercadopago.com",
   "paths": {
     "/instore/qr/seller/collectors/{user_id}/pos/{external_pos_id}/orders": {
       "delete": {
@@ -16,8 +17,8 @@
             "in": "path",
             "description": {
               "en": "User Id",
-              "es": "User Id",
-              "pt": "User Id"
+              "pt": "User Id",
+              "es": "User Id"
             },
             "required": true,
             "schema": {
@@ -30,8 +31,8 @@
             "in": "path",
             "description": {
               "en": "External POS Id",
-              "es": "External POS Id",
-              "pt": "External POS Id"
+              "pt": "External POS Id",
+              "es": "External POS Id"
             },
             "required": true,
             "schema": {
@@ -137,8 +138,8 @@
             "in": "path",
             "description": {
               "en": "User Id",
-              "es": "User Id",
-              "pt": "User Id"
+              "pt": "User Id",
+              "es": "User Id"
             },
             "required": true,
             "schema": {
@@ -151,8 +152,8 @@
             "in": "path",
             "description": {
               "en": "External POS Id",
-              "es": "External POS Id",
-              "pt": "External POS Id"
+              "pt": "External POS Id",
+              "es": "External POS Id"
             },
             "required": true,
             "schema": {
@@ -164,9 +165,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "success",
+              "es": "success",
               "pt": "success",
-              "es": "success"
+              "en": "success"
             },
             "content": {
               "application/json": {
@@ -235,7 +236,7 @@
                         "properties": {
                           "id": {
                             "type": "number",
-                            "example": 329653963
+                            "example": 662208785
                           }
                         }
                       },
@@ -245,7 +246,7 @@
                       },
                       "notification_url": {
                         "type": "string",
-                        "example": "www.yourserver.com"
+                        "example": "http://www.yourserver.com/notification"
                       },
                       "user_id": {
                         "type": "string",
@@ -388,8 +389,8 @@
             "in": "path",
             "description": {
               "en": "Find the User ID in your developer dashboard at our devsite",
-              "es": "Encuentre la identificación de usuario en su panel de desarrollador en nuestro sitio para desarrolladores",
-              "pt": "Encontre a ID do usuário no painel do desenvolvedor em nosso site de desenvolvedores"
+              "pt": "Encontre a ID do usuário no painel do desenvolvedor em nosso site de desenvolvedores",
+              "es": "Encuentre la identificación de usuario en su panel de desarrollador en nuestro sitio para desarrolladores"
             },
             "required": true,
             "schema": {
@@ -400,7 +401,11 @@
           {
             "name": "external_store_id",
             "in": "path",
-            "description": "Custom Store ID associated to the order.",
+            "description": {
+              "es": "Custom Store ID associated to the order.",
+              "pt": "Custom Store ID associated to the order.",
+              "en": "Custom Store ID associated to the order."
+            },
             "required": true,
             "schema": {
               "type": "string",
@@ -410,7 +415,11 @@
           {
             "name": "external_pos_id",
             "in": "path",
-            "description": "Custom POS ID associated to the order.",
+            "description": {
+              "es": "Custom POS ID associated to the order.",
+              "pt": "Custom POS ID associated to the order.",
+              "en": "Custom POS ID associated to the order."
+            },
             "required": true,
             "schema": {
               "type": "string",
@@ -426,15 +435,19 @@
                 "properties": {
                   "external_reference": {
                     "type": "string",
-                    "description": "Custom order ID you can synchronize with your sale system.",
-                    "example": 12345
+                    "description": {
+                      "es": "Custom order ID you can synchronize with your sale system.",
+                      "pt": "Custom order ID you can synchronize with your sale system.",
+                      "en": "Custom order ID you can synchronize with your sale system."
+                    },
+                    "example": "12345"
                   },
                   "title": {
                     "type": "string",
                     "description": {
                       "en": "Purchase title.",
-                      "es": "Título de la compra",
-                      "pt": "Título de compra"
+                      "pt": "Título de compra",
+                      "es": "Título de la compra"
                     },
                     "example": "Product order"
                   },
@@ -442,25 +455,34 @@
                     "type": "string",
                     "description": {
                       "en": "Purchase description.",
-                      "es": "Descripción de la compra",
-                      "pt": "Descrição de compra"
-                    }
+                      "pt": "Descrição de compra",
+                      "es": "Descripción de la compra"
+                    },
+                    "example": "Purchase description."
                   },
                   "notification_url": {
                     "type": "string",
-                    "description": "URL where you'd like to receive a payment or merchant_order notification.",
-                    "example": "www.yourserver.com"
+                    "description": {
+                      "es": "URL where you'd like to receive a payment or merchant_order notification.",
+                      "pt": "URL where you'd like to receive a payment or merchant_order notification.",
+                      "en": "URL where you'd like to receive a payment or merchant_order notification."
+                    },
+                    "example": "http://www.yourserver.com/notification"
                   },
                   "expiration_date": {
                     "type": "string",
-                    "description": "Expiration date with format \"2020-08-22T16:34:56.559-04:00\""
+                    "description": {
+                      "es": "Expiration date with format \"2020-08-22T16:34:56.559-04:00\"",
+                      "pt": "Expiration date with format \"2020-08-22T16:34:56.559-04:00\"",
+                      "en": "Expiration date with format \"2020-08-22T16:34:56.559-04:00\""
+                    }
                   },
                   "total_amount": {
                     "type": "number",
                     "description": {
                       "en": "Total amount of the transaction in local currency.",
-                      "es": "Monto total de la transacción en moneda local",
-                      "pt": "Valor total da transação na moeda local"
+                      "pt": "Valor total da transação na moeda local",
+                      "es": "Monto total de la transacción en moneda local"
                     },
                     "example": 100
                   },
@@ -468,8 +490,8 @@
                     "type": "array",
                     "description": {
                       "en": "Information on the products involved in the order.",
-                      "es": "Información de los productos involucrados en la orden",
-                      "pt": "Informações sobre os produtos envolvidos no ordem"
+                      "pt": "Informações sobre os produtos envolvidos no ordem",
+                      "es": "Información de los productos involucrados en la orden"
                     },
                     "items": {
                       "type": "object",
@@ -478,8 +500,8 @@
                           "type": "string",
                           "description": {
                             "en": "Item code.",
-                            "es": "Código de ítem",
-                            "pt": "Código de anúncio"
+                            "pt": "Código de anúncio",
+                            "es": "Código de ítem"
                           },
                           "example": "A123K9191938"
                         },
@@ -487,8 +509,8 @@
                           "type": "string",
                           "description": {
                             "en": "Item category.",
-                            "es": "Category del ítem",
-                            "pt": "Categoria do item"
+                            "pt": "Categoria do item",
+                            "es": "Category del ítem"
                           },
                           "example": "marketplace"
                         },
@@ -496,8 +518,8 @@
                           "type": "string",
                           "description": {
                             "en": "Item title.",
-                            "es": "Título del ítem",
-                            "pt": "Título do item"
+                            "pt": "Título do item",
+                            "es": "Título del ítem"
                           },
                           "example": "Point Mini"
                         },
@@ -505,8 +527,8 @@
                           "type": "string",
                           "description": {
                             "en": "Item description.",
-                            "es": "Descripción del item",
-                            "pt": "Descrição do artigo"
+                            "pt": "Descrição do artigo",
+                            "es": "Descripción del item"
                           },
                           "example": "This is the Point Mini"
                         },
@@ -514,8 +536,8 @@
                           "type": "number",
                           "description": {
                             "en": "Unit price of the item (maximum 2 decimals).",
-                            "es": "Precio unitario del producto (máximo 2 decimales)",
-                            "pt": "Preço unitário do produto (máximo de 2 decimais)"
+                            "pt": "Preço unitário do produto (máximo de 2 decimais)",
+                            "es": "Precio unitario del producto (máximo 2 decimales)"
                           },
                           "example": 100
                         },
@@ -523,8 +545,8 @@
                           "type": "number",
                           "description": {
                             "en": "Number of item units.",
-                            "es": "Cantidad de unidades del ítem",
-                            "pt": "Quantidade do unidades do item"
+                            "pt": "Quantidade do unidades do item",
+                            "es": "Cantidad de unidades del ítem"
                           },
                           "example": 1
                         },
@@ -535,8 +557,8 @@
                           "type": "string",
                           "description": {
                             "en": "Item total.",
-                            "es": "Total de elementos.",
-                            "pt": "Total de itens."
+                            "pt": "Total de itens.",
+                            "es": "Total de elementos."
                           },
                           "example": 100
                         }
@@ -547,32 +569,37 @@
                     "type": "object",
                     "description": {
                       "en": "Integrator information.",
-                      "es": "Información del integrador",
-                      "pt": "Informações do integrador"
+                      "pt": "Informações do integrador",
+                      "es": "Información del integrador"
                     },
                     "properties": {
                       "id": {
                         "type": "number",
                         "description": {
                           "en": "Mercado Pago's USER_ID of the integrator system.",
-                          "es": "USER_ID de la cuenta de Mercado Pago del sistema integrador",
-                          "pt": "USER_ID da conta Mercado Pago do sistema integrador"
+                          "pt": "USER_ID da conta Mercado Pago do sistema integrador",
+                          "es": "USER_ID de la cuenta de Mercado Pago del sistema integrador"
                         },
-                        "example": 446566691
+                        "example": 662208785
                       }
                     }
                   },
                   "cash_out": {
                     "type": "object",
-                    "description": "Cash withdrawal (Commercial contact required)",
+                    "description": {
+                      "es": "Cash withdrawal (Commercial contact required)",
+                      "pt": "Cash withdrawal (Commercial contact required)",
+                      "en": "Cash withdrawal (Commercial contact required)"
+                    },
                     "properties": {
                       "amount": {
                         "type": "number",
                         "description": {
                           "en": "Amount to withdraw in local currency.",
-                          "es": "Monto a retirar en moneda local",
-                          "pt": "Montante a retirar em moeda local"
-                        }
+                          "pt": "Montante a retirar em moeda local",
+                          "es": "Monto a retirar en moneda local"
+                        },
+                        "example": 0
                       }
                     }
                   }
@@ -839,16 +866,29 @@
         "type": "string",
         "description": {
           "en": "Unit of measure of the item.",
-          "es": "Unidad de medida del ítem",
-          "pt": "Unidade de medida do item"
+          "pt": "Unidade de medida do item",
+          "es": "Unidad de medida del ítem"
         },
         "example": "unit",
         "enum": [
-          "unit -- Unit",
-          "pack -- Pack"
+          {
+            "title": "unit",
+            "description": {
+              "en": "Unit",
+              "es": "Unit",
+              "pt": "Unit"
+            }
+          },
+          {
+            "title": "pack",
+            "description": {
+              "en": "Pack",
+              "es": "Pack",
+              "pt": "Pack"
+            }
+          }
         ]
       }
     }
-  },
-  "url": "https://api.mercadopago.com"
+  }
 }

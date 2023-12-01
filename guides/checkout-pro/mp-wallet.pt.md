@@ -41,42 +41,41 @@ Se você é um usuário e deseja que todos os seus pagamentos sejam feitos via W
 O modo Conta Mercado Pago funciona adicionando o atributo _purpose_ na preferência.
 ===
 <?php
-// Cria um objeto de preferência
-$preference = new MercadoPago\Preference();
-
-// Cria um item na preferência
-$item = new MercadoPago\Item();
-$item->title = 'Meu produto';
-$item->quantity = 1;
-$item->unit_price = 75;
-$preference->items = array($item);
-$preference->purpose = 'wallet_purchase';
-$preference->save();
+   $client = new PreferenceClient();
+   $preference = $client->create([
+          "items"=> array(
+            array(
+              "title" => "My product",
+              "description" => "Test product",
+              "picture_url" => "http://i.mlcdn.com.br/portaldalu/fotosconteudo/48029_01.jpg",
+              "category_id" => "electronics",
+              "quantity" => 1,
+              "currency_id" => "BRL",
+              "unit_price" => 100
+            )
+          )
+  ]);
+  echo implode($preference);
 ?>
 ```
 ```node
 ===
 O modo Conta Mercado Pago funciona adicionando o atributo _purpose_ na preferência.
 ===
-// Cria um objeto de preferência
-let preference = {
-  items: [
-    {
-      title: 'Meu produto',
-      unit_price: 100,
-      quantity: 1,
-    }
-  ],
-  purpose: 'wallet_purchase'
-};
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>', options: { timeout: 5000 } });
 
-mercadopago.preferences.create(preference)
-.then(function(response){
-// Este valor substituirá a string "<%= global.id %>" no seu HTML
-  global.id = response.body.id;
-}).catch(function(error){
-  console.log(error);
-});
+const preference = new Preference(client);
+
+preference.create({ body: {
+items: [
+ {
+  id: '<ID>',
+  title: '<title>',
+  quantity: 1,
+  unit_price: 100
+ }
+],
+} }).then(console.log).catch(console.log);
 ```
 ```java
 ===

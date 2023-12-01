@@ -6,7 +6,7 @@ Os testes de compras ajudam a garantir que os pagamentos sejam processados corre
 2. Clique em **Comprar** e continue com o seu carrinho.
 3. Digite um código postal válido de acordo com o país onde a loja opera, para simular o envio. Clique em **Continuar**.
 4. Preencha os campos requeridos e selecione o **Mercado Pago como o seu método de pagamento**.
-5. Na tela de finalização da compra, escolha **pagar com um novo cartão de crédito** e use os [cartões de teste](/developers/pt/docs/shopify/test-cards) para efetuar o pagamento. **Importante**: não faça login em sua conta do Mercado Pago nem tente efetuar o pagamento com cartões para uso próprio.
+5. Na tela de finalização da compra, escolha **pagar com um novo cartão de crédito** e use os [cartões de teste](/developers/pt/docs/shopify/additional-content/your-integrations/test/cards) para efetuar o pagamento. **Importante**: não faça login em sua conta do Mercado Pago nem tente efetuar o pagamento com cartões para uso próprio.
 6. Adicione as informações do cartão de teste indicadas e clique em **Pagar**.
 7. Ao concluir a compra, você visualizará o comprovante de realização da compra no Mercado Pago e será redirecionado de volta à loja.
 

@@ -146,8 +146,13 @@ Ao incluir o elemento do tipo `select` com o id: `form-checkout__identificationT
 
 Ao finalizar a inclusão do formulário de pagamento, é preciso enviar o e-mail do comprador, tipo e número de documento, o meio de pagamento utilizado (pix) e o detalhe do valor.
 
-Para configurar pagamento com Pix, envie um POST ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça a requisição utilizando nossos SDKs.
+> NOTE
+>
+> Importante
+>
+> Ao executar as APIs citadas nesta documentação, você poderá encontrar o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições sem que haja situações indesejadas como, por exemplo, pagamentos em duplicidade.
 
+Para configurar pagamento com Pix, envie um POST ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça a requisição utilizando nossos SDKs.
 
 [[[
 ```php
@@ -183,31 +188,38 @@ Para configurar pagamento com Pix, envie um POST ao endpoint [/v1/payments](/dev
 ?>
 ```
 ```node
-import { MercadoPagoConfig, Payments } from 'mercadopago';
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
-const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const payments = new Payments(client);
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
-payments.create({
-  transaction_amount: req.transaction_amount,
-  token: req.token,
-  description: req.description,
-  installments: req.installments,
-  payment_method_id: req.paymentMethodId,
-  issuer_id: req.issuer,
-  payer: {
-    email: req.email,
-    identification: {
-      type: req.identificationType,
-      number: req.number
-    }
-  } 
-}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
-    .then((result) => console.log(result))
-    .catch((error) => console.log(error));
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
+
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
+ 
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
 
 PaymentClient client = new PaymentClient();
 
@@ -226,18 +238,24 @@ PaymentCreateRequest paymentCreateRequest =
                .build())
        .build();
 
-client.create(paymentCreateRequest);
+client.create(paymentCreateRequest, requestOptions);
 ```
 ```ruby
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
 
 payment_request = {
   transaction_amount: 100,
   description: 'Título do produto',
   payment_method_id: 'pix',
   payer: {
-    email: 'PAYER_EMAIL\',
+    email: 'PAYER_EMAIL',
     identification: {
       type: 'CPF',
       number: '19119119100',
@@ -245,7 +263,7 @@ payment_request = {
   }
 }
 
-payment_response = sdk.payment.create(payment_request)
+payment_response = sdk.payment.create(payment_request, custom_request_options)
 payment = payment_response[:response]
 
 ```
@@ -257,6 +275,9 @@ using MercadoPago.Client.Payment;
 using MercadoPago.Resource.Payment;
 
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
 
 var request = new PaymentCreateRequest
 {
@@ -277,12 +298,17 @@ var request = new PaymentCreateRequest
 };
 
 var client = new PaymentClient();
-Payment payment = await client.CreateAsync(request);
+Payment payment = await client.CreateAsync(request, requestOptions);
 
 ```
 ```python
 import mercadopago
 sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
 
 payment_data = {
     "transaction_amount": 100,
@@ -307,7 +333,7 @@ payment_data = {
     }
 }
 
-payment_response = sdk.payment().create(payment_data)
+payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 ```
 ```curl
@@ -315,6 +341,7 @@ curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
@@ -341,10 +368,7 @@ curl -X POST \
 ```
 ]]]
 
-
-
 A resposta mostrará o estado pendente do pagamento e todas as informações que você precisa para mostrar ao comprador. O valor `transaction_data` retornará os dados para código QR.
-
 
 [[[
 ```json
@@ -380,7 +404,6 @@ A resposta mostrará o estado pendente do pagamento e todas as informações que
 ```
 ]]]
 
-
 Com Pix, você também pode escolher o prazo que o cliente terá para pagar a compra, definindo a validade do código de pagamento enviado a ele após a realização do pedido.
 
 > NOTE
@@ -395,7 +418,6 @@ Para o usuário efetuar o pagamento, você deve escolher a forma de abertura do 
 
 Selecione a opção que mais se adéqua ao seu modelo de negócio e siga as etapas descritas abaixo.
 
-
 * **Adicionar Link ou botão**: Ao optar por adicionar um link ou botão para pagamento com Pix, o comprador será direcionado a uma nova janela contendo todas as informações para pagamento, como QR Code, Pix Copia e Cola e as instruções de pagamento.
 
 Para oferecer esta opção, utilize o atributo `ticket_url`, que mostra um Pix em uma nova janela com todas as informações de QR Code, Pix Copia e Cola e instruções de pagamentos. 
@@ -407,14 +429,11 @@ Para oferecer esta opção, utilize o atributo `ticket_url`, que mostra um Pix e
 ```
 ]]]
 
-
 * **Renderizar código QR**: É possível renderizar o código QR vigente, que deverá ser utilizado somente uma vez, na própria tela. Além disso, também é possível adicionar uma opção para copiar e colar o código de pagamento, o que permitirá realizar a transação a partir de um Internet Banking.
 
 Siga as etapas abaixo para renderizar o QR code e disponibilizar o recurso copia e cola.
 
-
 1. Adicione o `qr_code_base64` para exibir o código QR.
-
 
 [[[
 ```html
@@ -422,7 +441,6 @@ Siga as etapas abaixo para renderizar o QR code e disponibilizar o recurso copia
 
 ```
 ]]]
-
 
 2. Para apresentar a opção que permitirá copiar e colar o código de pagamento, adicione o qr_code da seguinte forma:
 
@@ -433,6 +451,4 @@ Siga as etapas abaixo para renderizar o QR code e disponibilizar o recurso copia
 ```
 ]]]
 
-
 Ao concluir essas etapas, o código QR terá sido renderizado e será exibido para o comprador no momento do pagamento.
-

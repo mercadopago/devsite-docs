@@ -35,49 +35,47 @@ If you are a user and want all your payments to be made via Wallet, you can dete
 
 > In addition to the SDKs, it is also possible to create a preference through the preferences API. For that, send a **POST** with the parameter `purpose` and the value `wallet_purchase` to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, use one of the SDKs below.
 
-
 [[[
 ```php
 ===
 Wallet mode works by adding the _purpose_ attribute to the preference.
 ===
 <?php
-// Create a preference object
-$preference = new MercadoPago\Preference();
-
-// Create an item in the preference
-$item = new MercadoPago\Item();
-$item->title = 'My product';
-$item->quantity = 1;
-$item->unit_price = 75;
-$preference->items = array($item);
-$preference->purpose = 'wallet_purchase';
-$preference->save();
+   $client = new PreferenceClient();
+   $preference = $client->create([
+          "items"=> array(
+            array(
+              "title" => "My product",
+              "description" => "Test product",
+              "picture_url" => "http://i.mlcdn.com.br/portaldalu/fotosconteudo/48029_01.jpg",
+              "category_id" => "electronics",
+              "quantity" => 1,
+              "currency_id" => "BRL",
+              "unit_price" => 100
+            )
+          )
+  ]);
+  echo implode($preference);
 ?>
 ```
 ```node
 ===
 Wallet mode works by adding the _purpose_ attribute to the preference.
 ===
-// Create a preference object
-let preference = {
-items: [
-{
-title: 'My product',
-unit_price: 100,
-quantity: 1,
-}
-],
-purpose: 'wallet_purchase'
-};
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>', options: { timeout: 5000 } });
 
-Mercadopago.preferences.create(preference)
-.then(function(response){
-// This value will replace the string "<%= global.id %>" in your HTML
-global.id = response.body.id;
-}).catch(function(error){
-console.log(error);
-});
+const preference = new Preference(client);
+
+preference.create({ body: {
+items: [
+ {
+  id: '<ID>',
+  title: '<title>',
+  quantity: 1,
+  unit_price: 100
+ }
+],
+} }).then(console.log).catch(console.log);
 ```
 ```java
 ===

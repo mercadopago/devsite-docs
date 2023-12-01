@@ -1,4 +1,5 @@
 {
+  "url": "https://api.mercadopago.com",
   "paths": {
     "/v1/customers": {
       "post": {
@@ -21,53 +22,53 @@
                     "type": "String",
                     "example": "jhon@doe.com",
                     "description": {
-                      "eng": "Customer's email.",
-                      "spa": "Email del cliente",
-                      "por": "E-mail do cliente"
+                      "en": "Customer's email.",
+                      "pt": "E-mail do cliente",
+                      "es": "Email del cliente"
                     }
                   },
                   "first_name": {
                     "type": "String",
                     "example": "Jhon",
                     "description": {
-                      "eng": "Customer's name.",
-                      "spa": "Nombre del cliente",
-                      "por": "Nome do cliente"
+                      "en": "Customer's name.",
+                      "pt": "Nome do cliente",
+                      "es": "Nombre del cliente"
                     }
                   },
                   "last_name": {
                     "type": "String",
                     "example": "Doe",
                     "description": {
-                      "eng": "Customer's last name.",
-                      "spa": "Apellido del cliente",
-                      "por": "Sobrenome do cliente"
+                      "en": "Customer's last name.",
+                      "pt": "Sobrenome do cliente",
+                      "es": "Apellido del cliente"
                     }
                   },
                   "phone": {
                     "type": "object",
                     "description": {
-                      "eng": "Customer phone's information.",
-                      "spa": "Teléfono del cliente",
-                      "por": "Telefone do cliente"
+                      "en": "Customer phone's information.",
+                      "pt": "Telefone do cliente",
+                      "es": "Teléfono del cliente"
                     },
                     "properties": {
                       "area_code": {
                         "type": "String",
                         "example": "55",
                         "description": {
-                          "eng": "Phone's area code.",
-                          "spa": "Código de área",
-                          "por": "Código de área"
+                          "en": "Phone's area code.",
+                          "pt": "Código de área",
+                          "es": "Código de área"
                         }
                       },
                       "number": {
                         "type": "String",
                         "example": "991234567",
                         "description": {
-                          "eng": "Phone number.",
-                          "spa": "Número telefónico",
-                          "por": "Número de telefone"
+                          "en": "Phone number.",
+                          "pt": "Número de telefone",
+                          "es": "Número telefónico"
                         }
                       }
                     }
@@ -75,27 +76,27 @@
                   "identification": {
                     "type": "object",
                     "description": {
-                      "eng": "Customer identification's information.",
-                      "spa": "Información sobre la identificación del cliente",
-                      "por": "Informações sobre a identificação do cliente"
+                      "en": "Customer identification's information.",
+                      "pt": "Informações sobre a identificação do cliente",
+                      "es": "Información sobre la identificación del cliente"
                     },
                     "properties": {
                       "type": {
                         "type": "String",
                         "example": "CPF",
                         "description": {
-                          "eng": "Identification type.",
-                          "spa": "Tipo de identificación",
-                          "por": "Tipo de identificação"
+                          "en": "Identification type.",
+                          "pt": "Tipo de identificação",
+                          "es": "Tipo de identificación"
                         }
                       },
                       "number": {
                         "type": "String",
                         "example": "12345678900",
                         "description": {
-                          "eng": "Identification number.",
-                          "spa": "Número de identificación",
-                          "por": "Número de identificação"
+                          "en": "Identification number.",
+                          "pt": "Número de identificação",
+                          "es": "Número de identificación"
                         }
                       }
                     }
@@ -104,69 +105,69 @@
                     "type": "String",
                     "example": "Home",
                     "description": {
-                      "eng": "Customer's default address.",
-                      "spa": "Dirección por defecto del cliente",
-                      "por": "Endereço padrão do cliente"
+                      "en": "Customer's default address.",
+                      "pt": "Endereço padrão do cliente",
+                      "es": "Dirección por defecto del cliente"
                     }
                   },
                   "address": {
                     "type": "object",
                     "description": {
-                      "eng": "Default address's information.",
-                      "spa": "Información sobre la dirección por defecto del cliente",
-                      "por": "Informação sobre o endereço padrão do cliente"
+                      "en": "Default address's information.",
+                      "pt": "Informação sobre o endereço padrão do cliente",
+                      "es": "Información sobre la dirección por defecto del cliente"
                     },
                     "properties": {
                       "id": {
                         "type": "String",
                         "example": "123123",
                         "description": {
-                          "eng": "Address ID.",
-                          "spa": "Identificador de la dirección",
-                          "por": "Identificador de endereço"
+                          "en": "Address ID.",
+                          "pt": "Identificador de endereço",
+                          "es": "Identificador de la dirección"
                         }
                       },
                       "zip_code": {
                         "type": "String",
                         "example": "01234567",
                         "description": {
-                          "eng": "Zip code.",
-                          "spa": "Código postal",
-                          "por": "Código postal"
+                          "en": "Zip code.",
+                          "pt": "Código postal",
+                          "es": "Código postal"
                         }
                       },
                       "street_name": {
                         "type": "String",
                         "example": "Rua Exemplo",
                         "description": {
-                          "eng": "Street name.",
-                          "spa": "Nombre de la calle.",
-                          "por": "Nome da rua."
+                          "en": "Street name.",
+                          "pt": "Nome da rua.",
+                          "es": "Nombre de la calle."
                         }
                       },
                       "street_number": {
                         "type": "number",
                         "example": 123,
                         "description": {
-                          "eng": "Street number.",
-                          "spa": "Número de calle.",
-                          "por": "Número da rua"
+                          "en": "Street number.",
+                          "pt": "Número da rua",
+                          "es": "Número de calle."
                         }
                       },
                       "city": {
                         "type": "object",
                         "description": {
-                          "eng": "City.",
-                          "spa": "Ciudad.",
-                          "por": "Cidade."
+                          "en": "City.",
+                          "pt": "Cidade.",
+                          "es": "Ciudad."
                         },
                         "properties": {
                           "name": {
                             "type": "string",
                             "description": {
-                              "eng": "City name. For example, Autonomous City of Buenos Aires.",
-                              "spa": "Nombre de la ciudad. Por ejemplo, Ciudad Autónoma de Buenos Aires.",
-                              "por": "Nome da cidade. Por exemplo, Cidade Autônoma de Buenos Aires."
+                              "en": "City name. For example, Autonomous City of Buenos Aires.",
+                              "pt": "Nome da cidade. Por exemplo, Cidade Autônoma de Buenos Aires.",
+                              "es": "Nombre de la ciudad. Por ejemplo, Ciudad Autónoma de Buenos Aires."
                             }
                           }
                         }
@@ -177,27 +178,27 @@
                     "type": "Date(ISO_8601)",
                     "example": "2021-10-20T11:37:30.000-04:00",
                     "description": {
-                      "eng": "Customer's registration date.",
-                      "spa": "Fecha de registro del cliente",
-                      "por": "Data de registo do cliente"
+                      "en": "Customer's registration date.",
+                      "pt": "Data de registo do cliente",
+                      "es": "Fecha de registro del cliente"
                     }
                   },
                   "description": {
                     "type": "String",
                     "example": "Description del user",
                     "description": {
-                      "eng": "Customer's description.",
-                      "spa": "Descripción del cliente",
-                      "por": "Descrição do cliente"
+                      "en": "Customer's description.",
+                      "pt": "Descrição do cliente",
+                      "es": "Descripción del cliente"
                     }
                   },
                   "default_card": {
                     "type": "String",
                     "example": "None",
                     "description": {
-                      "eng": "Customer's default card.",
-                      "spa": "Tarjeta por defecto del cliente",
-                      "por": "Cartão padrão do cliente"
+                      "en": "Customer's default card.",
+                      "pt": "Cartão padrão do cliente",
+                      "es": "Tarjeta por defecto del cliente"
                     }
                   }
                 }
@@ -208,9 +209,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "success",
+              "es": "success",
               "pt": "success",
-              "es": "success"
+              "en": "success"
             },
             "content": {
               "application/json": {
@@ -401,9 +402,9 @@
                         }
                       },
                       "description": {
-                        "en": "metadata",
+                        "es": "metadata",
                         "pt": "metadata",
-                        "es": "metadata"
+                        "en": "metadata"
                       }
                     },
                     "default_card": {
@@ -893,9 +894,9 @@
             "in": "path",
             "required": true,
             "description": {
-              "eng": "Customer ID.",
-              "spa": "Identificador de cliente",
-              "por": "Identificador de cliente"
+              "en": "Customer ID.",
+              "pt": "Identificador de cliente",
+              "es": "Identificador de cliente"
             },
             "schema": {
               "type": "number",
@@ -913,53 +914,53 @@
                     "type": "String",
                     "example": "jhon@doe.com",
                     "description": {
-                      "eng": "Customer's email. It can only be updated if the customer has not yet associated an email.",
-                      "spa": "Email del cliente. Solo puede ser actualizado si el cliente no tiene un email asociado aún.",
-                      "por": "E-mail do cliente. Só pode ser atualizado se o cliente ainda não tiver um e-mail associado."
+                      "en": "Customer's email. It can only be updated if the customer has not yet associated an email.",
+                      "pt": "E-mail do cliente. Só pode ser atualizado se o cliente ainda não tiver um e-mail associado.",
+                      "es": "Email del cliente. Solo puede ser actualizado si el cliente no tiene un email asociado aún."
                     }
                   },
                   "first_name": {
                     "type": "String",
                     "example": "Jhon",
                     "description": {
-                      "eng": "Customer's name.",
-                      "spa": "Nombre del cliente",
-                      "por": "Nome do cliente"
+                      "en": "Customer's name.",
+                      "pt": "Nome do cliente",
+                      "es": "Nombre del cliente"
                     }
                   },
                   "last_name": {
                     "type": "String",
                     "example": "Doe",
                     "description": {
-                      "eng": "Customer's last name.",
-                      "spa": "Apellido del cliente",
-                      "por": "Sobrenome do cliente"
+                      "en": "Customer's last name.",
+                      "pt": "Sobrenome do cliente",
+                      "es": "Apellido del cliente"
                     }
                   },
                   "phone": {
                     "type": "object",
                     "description": {
-                      "eng": "Customer phone's information.",
-                      "spa": "Teléfono del cliente",
-                      "por": "Telefone do cliente"
+                      "en": "Customer phone's information.",
+                      "pt": "Telefone do cliente",
+                      "es": "Teléfono del cliente"
                     },
                     "properties": {
                       "area_code": {
                         "type": "String",
                         "example": "55",
                         "description": {
-                          "eng": "Phone's area code.",
-                          "spa": "Código de área",
-                          "por": "Código de área"
+                          "en": "Phone's area code.",
+                          "pt": "Código de área",
+                          "es": "Código de área"
                         }
                       },
                       "number": {
                         "type": "String",
                         "example": "991234567",
                         "description": {
-                          "eng": "Phone number.",
-                          "spa": "Número telefónico",
-                          "por": "Número de telefone"
+                          "en": "Phone number.",
+                          "pt": "Número de telefone",
+                          "es": "Número telefónico"
                         }
                       }
                     }
@@ -967,27 +968,27 @@
                   "identification": {
                     "type": "object",
                     "description": {
-                      "eng": "Customer identification's information.",
-                      "spa": "Información sobre la identificación del cliente",
-                      "por": "Informações sobre a identificação do cliente"
+                      "en": "Customer identification's information.",
+                      "pt": "Informações sobre a identificação do cliente",
+                      "es": "Información sobre la identificación del cliente"
                     },
                     "properties": {
                       "type": {
                         "type": "String",
                         "example": "CPF",
                         "description": {
-                          "eng": "Identification type.",
-                          "spa": "Tipo de identificación",
-                          "por": "Tipo de identificação"
+                          "en": "Identification type.",
+                          "pt": "Tipo de identificação",
+                          "es": "Tipo de identificación"
                         }
                       },
                       "number": {
                         "type": "String",
                         "example": "12345678900",
                         "description": {
-                          "eng": "Identification number.",
-                          "spa": "Número de identificación",
-                          "por": "Número de identificação"
+                          "en": "Identification number.",
+                          "pt": "Número de identificação",
+                          "es": "Número de identificación"
                         }
                       }
                     }
@@ -996,53 +997,53 @@
                     "type": "String",
                     "example": "Home",
                     "description": {
-                      "eng": "Customer's default address.",
-                      "spa": "Dirección por defecto del cliente",
-                      "por": "Endereço padrão do cliente"
+                      "en": "Customer's default address.",
+                      "pt": "Endereço padrão do cliente",
+                      "es": "Dirección por defecto del cliente"
                     }
                   },
                   "address": {
                     "type": "object",
                     "description": {
-                      "eng": "Default address's information.",
-                      "spa": "Información sobre la dirección por defecto del cliente",
-                      "por": "Informação sobre o endereço padrão do cliente"
+                      "en": "Default address's information.",
+                      "pt": "Informação sobre o endereço padrão do cliente",
+                      "es": "Información sobre la dirección por defecto del cliente"
                     },
                     "properties": {
                       "id": {
                         "type": "String",
                         "example": "123123",
                         "description": {
-                          "eng": "Address ID.",
-                          "spa": "Identificador de la dirección",
-                          "por": "Identificador de endereço"
+                          "en": "Address ID.",
+                          "pt": "Identificador de endereço",
+                          "es": "Identificador de la dirección"
                         }
                       },
                       "zip_code": {
                         "type": "String",
                         "example": "01234567",
                         "description": {
-                          "eng": "Zip code.",
-                          "spa": "Código postal",
-                          "por": "Código postal"
+                          "en": "Zip code.",
+                          "pt": "Código postal",
+                          "es": "Código postal"
                         }
                       },
                       "street_name": {
                         "type": "String",
                         "example": "Rua Exemplo",
                         "description": {
-                          "eng": "Street name.",
-                          "spa": "Calle",
-                          "por": "Rua"
+                          "en": "Street name.",
+                          "pt": "Rua",
+                          "es": "Calle"
                         }
                       },
                       "street_number": {
                         "type": "number",
                         "example": 123,
                         "description": {
-                          "eng": "Street number.",
-                          "spa": "Número",
-                          "por": "O Número"
+                          "en": "Street number.",
+                          "pt": "O Número",
+                          "es": "Número"
                         }
                       }
                     }
@@ -1051,27 +1052,27 @@
                     "type": "Date(ISO_8601)",
                     "example": "22021-10-20T11:37:30.000-04:00",
                     "description": {
-                      "eng": "Customer's registration date.",
-                      "spa": "Fecha de registro del cliente",
-                      "por": "Data de registo do cliente"
+                      "en": "Customer's registration date.",
+                      "pt": "Data de registo do cliente",
+                      "es": "Fecha de registro del cliente"
                     }
                   },
                   "description": {
                     "type": "String",
                     "example": "Description del user",
                     "description": {
-                      "eng": "Customer's description.",
-                      "spa": "Descripción del cliente",
-                      "por": "Descrição do cliente"
+                      "en": "Customer's description.",
+                      "pt": "Descrição do cliente",
+                      "es": "Descripción del cliente"
                     }
                   },
                   "default_card": {
                     "type": "String",
                     "example": "None",
                     "description": {
-                      "eng": "Customer's default card.",
-                      "spa": "Tarjeta por defecto del cliente",
-                      "por": "Cartão padrão do cliente"
+                      "en": "Customer's default card.",
+                      "pt": "Cartão padrão do cliente",
+                      "es": "Tarjeta por defecto del cliente"
                     }
                   }
                 }
@@ -1082,9 +1083,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "success",
+              "es": "success",
               "pt": "success",
-              "es": "success"
+              "en": "success"
             },
             "content": {
               "application/json": {
@@ -1268,9 +1269,9 @@
                     "metadata": {
                       "type": "object",
                       "description": {
-                        "en": "metadata",
+                        "es": "metadata",
                         "pt": "metadata",
-                        "es": "metadata"
+                        "en": "metadata"
                       }
                     },
                     "default_card": {
@@ -1756,9 +1757,9 @@
             "in": "path",
             "required": true,
             "description": {
-              "eng": "Customer ID.",
-              "spa": "Identificador de cliente",
-              "por": "Identificador de cliente"
+              "en": "Customer ID.",
+              "pt": "Identificador de cliente",
+              "es": "Identificador de cliente"
             },
             "schema": {
               "type": "number",
@@ -1769,9 +1770,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "success",
+              "es": "success",
               "pt": "success",
-              "es": "success"
+              "en": "success"
             },
             "content": {
               "application/json": {
@@ -2171,9 +2172,9 @@
                                 "subtype": {
                                   "type": "string",
                                   "description": {
-                                    "en": "Identification subtype.",
+                                    "es": "Identification subtype.",
                                     "pt": "Identification subtype.",
-                                    "es": "Identification subtype."
+                                    "en": "Identification subtype."
                                   }
                                 },
                                 "type": {
@@ -2889,9 +2890,9 @@
             "name": "email",
             "in": "query",
             "description": {
-              "eng": "Customer's email.",
-              "spa": "Email del cliente",
-              "por": "E-mail do cliente"
+              "en": "Customer's email.",
+              "pt": "E-mail do cliente",
+              "es": "Email del cliente"
             },
             "required": true,
             "schema": {
@@ -2903,9 +2904,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "success",
+              "es": "success",
               "pt": "success",
-              "es": "success"
+              "en": "success"
             },
             "content": {
               "application/json": {
@@ -2961,9 +2962,9 @@
                                 "type": "string",
                                 "format": "nullable",
                                 "description": {
-                                  "eng": "Address ID.",
-                                  "spa": "Identificador de la dirección",
-                                  "por": "Identificador de endereço"
+                                  "en": "Address ID.",
+                                  "pt": "Identificador de endereço",
+                                  "es": "Identificador de la dirección"
                                 },
                                 "example": "1162600213"
                               },
@@ -2971,9 +2972,9 @@
                                 "type": "string",
                                 "format": "nullable",
                                 "description": {
-                                  "eng": "Street name.",
-                                  "spa": "Calle",
-                                  "por": "Rua"
+                                  "en": "Street name.",
+                                  "pt": "Rua",
+                                  "es": "Calle"
                                 },
                                 "example": "Caetano Poli, 12"
                               },
@@ -2981,26 +2982,26 @@
                                 "type": "number",
                                 "format": "nullable",
                                 "description": {
-                                  "eng": "Street number.",
-                                  "spa": "Número",
-                                  "por": "O Número"
+                                  "en": "Street number.",
+                                  "pt": "O Número",
+                                  "es": "Número"
                                 }
                               },
                               "zip_code": {
                                 "type": "string",
                                 "format": "nullable",
                                 "description": {
-                                  "eng": "Zip code.",
-                                  "spa": "Código postal",
-                                  "por": "Código postal"
+                                  "en": "Zip code.",
+                                  "pt": "Código postal",
+                                  "es": "Código postal"
                                 },
                                 "example": "05187010"
                               }
                             },
                             "description": {
-                              "eng": "Default address's information.",
-                              "spa": "Información sobre la dirección por defecto del cliente",
-                              "por": "Informação sobre o endereço padrão do cliente"
+                              "en": "Default address's information.",
+                              "pt": "Informação sobre o endereço padrão do cliente",
+                              "es": "Información sobre la dirección por defecto del cliente"
                             }
                           },
                           "addresses": {
@@ -3009,9 +3010,9 @@
                               "type": "object"
                             },
                             "description": {
-                              "eng": "Customer's addresses.",
-                              "spa": "Dirección del cliente",
-                              "por": "Endereço do cliente"
+                              "en": "Customer's addresses.",
+                              "pt": "Endereço do cliente",
+                              "es": "Dirección del cliente"
                             }
                           },
                           "cards": {
@@ -3020,45 +3021,45 @@
                               "type": "object"
                             },
                             "description": {
-                              "eng": "Customer's cards.",
-                              "spa": "Tarjetas del cliente",
-                              "por": "Cartões do cliente"
+                              "en": "Customer's cards.",
+                              "pt": "Cartões do cliente",
+                              "es": "Tarjetas del cliente"
                             }
                           },
                           "date_created": {
                             "type": "string",
                             "example": "2017-05-05T04:00:00.000Z",
                             "description": {
-                              "eng": "Customer's date created.",
-                              "spa": "Fecha de creación del cliente",
-                              "por": "Data de criação do cliente"
+                              "en": "Customer's date created.",
+                              "pt": "Data de criação do cliente",
+                              "es": "Fecha de creación del cliente"
                             }
                           },
                           "date_last_updated": {
                             "type": "string",
                             "example": "2017-05-05T13:23:25.021Z",
                             "description": {
-                              "eng": "Last modified date.",
-                              "spa": "Fecha de la última modificación",
-                              "por": "Data da última modificação"
+                              "en": "Last modified date.",
+                              "pt": "Data da última modificação",
+                              "es": "Fecha de la última modificación"
                             }
                           },
                           "date_registered": {
                             "type": "string",
                             "format": "nullable",
                             "description": {
-                              "eng": "Customer's registration date.",
-                              "spa": "Fecha de registro del cliente",
-                              "por": "Data de registo do cliente"
+                              "en": "Customer's registration date.",
+                              "pt": "Data de registo do cliente",
+                              "es": "Fecha de registro del cliente"
                             }
                           },
                           "default_address": {
                             "type": "string",
                             "format": "nullable",
                             "description": {
-                              "eng": "Customer's default address.",
-                              "spa": "Dirección por defecto del cliente",
-                              "por": "Endereço padrão do cliente"
+                              "en": "Customer's default address.",
+                              "pt": "Endereço padrão do cliente",
+                              "es": "Dirección por defecto del cliente"
                             },
                             "example": "1162600213"
                           },
@@ -3066,35 +3067,35 @@
                             "type": "string",
                             "example": 1493990563105,
                             "description": {
-                              "eng": "Customer's default card.",
-                              "spa": "Tarjeta por defecto del cliente",
-                              "por": "Cartão padrão do cliente"
+                              "en": "Customer's default card.",
+                              "pt": "Cartão padrão do cliente",
+                              "es": "Tarjeta por defecto del cliente"
                             }
                           },
                           "description": {
                             "type": "string",
                             "format": "nullable",
                             "description": {
-                              "eng": "Customer's description.",
-                              "spa": "Descripción del cliente",
-                              "por": "Descrição do cliente"
+                              "en": "Customer's description.",
+                              "pt": "Descrição do cliente",
+                              "es": "Descripción del cliente"
                             }
                           },
                           "email": {
                             "type": "string",
                             "example": "test@test.com",
                             "description": {
-                              "eng": "Customer's email.",
-                              "spa": "Email del cliente",
-                              "por": "E-mail do cliente"
+                              "en": "Customer's email.",
+                              "pt": "E-mail do cliente",
+                              "es": "Email del cliente"
                             }
                           },
                           "first_name": {
                             "type": "string",
                             "description": {
-                              "eng": "Customer's name.",
-                              "spa": "Nombre del cliente",
-                              "por": "Nome do cliente"
+                              "en": "Customer's name.",
+                              "pt": "Nome do cliente",
+                              "es": "Nombre del cliente"
                             },
                             "example": "Customer"
                           },
@@ -3102,9 +3103,9 @@
                             "type": "string",
                             "example": "123456789-jxOV430go9fx2e",
                             "description": {
-                              "eng": "Customer ID.",
-                              "spa": "Identificador de cliente",
-                              "por": "Identificador de cliente"
+                              "en": "Customer ID.",
+                              "pt": "Identificador de cliente",
+                              "es": "Identificador de cliente"
                             }
                           },
                           "identification": {
@@ -3114,9 +3115,9 @@
                                 "type": "string",
                                 "format": "nullable",
                                 "description": {
-                                  "eng": "Identification number.",
-                                  "spa": "Número de identificación",
-                                  "por": "Número de identificação"
+                                  "en": "Identification number.",
+                                  "pt": "Número de identificação",
+                                  "es": "Número de identificación"
                                 },
                                 "example": "19119119100"
                               },
@@ -3124,41 +3125,45 @@
                                 "type": "string",
                                 "format": "nullable",
                                 "description": {
-                                  "eng": "Identification type.",
-                                  "spa": "Tipo de identificación",
-                                  "por": "Tipo de identificação"
+                                  "en": "Identification type.",
+                                  "pt": "Tipo de identificação",
+                                  "es": "Tipo de identificación"
                                 },
                                 "example": "CPF"
                               }
                             },
                             "description": {
-                              "eng": "Customer identification's information.",
-                              "spa": "Información sobre la identificación del cliente",
-                              "por": "Informações sobre a identificação do cliente"
+                              "en": "Customer identification's information.",
+                              "pt": "Informações sobre a identificação do cliente",
+                              "es": "Información sobre la identificación del cliente"
                             }
                           },
                           "last_name": {
                             "type": "string",
                             "format": "nullable",
                             "description": {
-                              "eng": "Customer's last name.",
-                              "spa": "Apellido del cliente",
-                              "por": "Sobrenome do cliente"
+                              "en": "Customer's last name.",
+                              "pt": "Sobrenome do cliente",
+                              "es": "Apellido del cliente"
                             },
                             "example": "Tester"
                           },
                           "live_mode": {
                             "type": "boolean",
                             "description": {
-                              "eng": "Whether the customers will be in sandbox or in production mode.",
-                              "spa": "Indica si los clientes se crean en el entorno de sandbox o producción",
-                              "por": "Indica se os comentários são criados no ambiente de sandbox ou produção"
+                              "en": "Whether the customers will be in sandbox or in production mode.",
+                              "pt": "Indica se os comentários são criados no ambiente de sandbox ou produção",
+                              "es": "Indica si los clientes se crean en el entorno de sandbox o producción"
                             },
                             "example": true
                           },
                           "metadata": {
                             "type": "object",
-                            "description": "metadata"
+                            "description": {
+                              "es": "metadata",
+                              "pt": "metadata",
+                              "en": "metadata"
+                            }
                           },
                           "phone": {
                             "type": "object",
@@ -3167,9 +3172,9 @@
                                 "type": "string",
                                 "format": "nullable",
                                 "description": {
-                                  "eng": "Phone's area code.",
-                                  "spa": "Código de área",
-                                  "por": "Código de área"
+                                  "en": "Phone's area code.",
+                                  "pt": "Código de área",
+                                  "es": "Código de área"
                                 },
                                 "example": "11"
                               },
@@ -3177,17 +3182,17 @@
                                 "type": "string",
                                 "format": "nullable",
                                 "description": {
-                                  "eng": "Phone number.",
-                                  "spa": "Número telefónico",
-                                  "por": "Número de telefone"
+                                  "en": "Phone number.",
+                                  "pt": "Número de telefone",
+                                  "es": "Número telefónico"
                                 },
                                 "example": "987654321"
                               }
                             },
                             "description": {
-                              "eng": "Customer phone's information.",
-                              "spa": "Teléfono del cliente",
-                              "por": "Telefone do cliente"
+                              "en": "Customer phone's information.",
+                              "pt": "Telefone do cliente",
+                              "es": "Teléfono del cliente"
                             }
                           }
                         }
@@ -3618,6 +3623,5 @@
         }
       }
     }
-  },
-  "url": "https://api.mercadopago.com"
+  }
 }

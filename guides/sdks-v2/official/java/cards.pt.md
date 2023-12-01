@@ -1,6 +1,6 @@
 # Salvar cartão
 
-É possível armazenar com segurança em nossos servidores a referência a um cartão utilizado pelo cliente no pagamento através do SDK abaixo. Para detalhamento dos parâmetros de requisição, veja a API [Salvar cartão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/cards/_customers_customer_id_cards/post).
+É possível armazenar com segurança em nossos servidores a referência a um cartão utilizado pelo cliente no pagamento através do SDK abaixo. Para detalhamento dos parâmetros de requisição, veja a API [Salvar cartão](/developers/pt/reference/cards/_customers_customer_id_cards/post).
 
 
 [[[

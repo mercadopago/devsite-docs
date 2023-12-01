@@ -2,11 +2,13 @@
 
 Dentro del callback `onSubmit` hay un segundo parámetro, **de uso opcional**, llamado `additionalData`. Es un objeto y puede contener datos adicionales útiles para su integración, pero que **no son necesarios** para el compromiso de pago en el backend.
 
-Consulte la siguiente tabla para ver los campos contenidos en el objeto `additionalData`.
+Consulta en la tabla siguiente los campos contenidos dentro del objeto `additionalData`, los cuales solo se devolverán si el usuario ha optado por el pago con tarjeta.
 
 | Campo | Tipo | Descripción |
 |--- |--- | --- |
-| bin | string | BIN de la tarjeta ingresada por el usuario. Solo se devuelve si el usuario ha elegido pagar con tarjeta. |
+| bin | string | BIN de la tarjeta ingresada por el usuario. |
+| lastFourDigits | string | Los últimos cuatro dígitos para compras con tarjeta.|
+| cardholderName | string | Nombre de la persona titular de la tarjeta. |
 
 Vea a continuación un ejemplo de uso:
 

@@ -2,7 +2,7 @@
 
 ![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 
-Una vez que hayas realizado la integración tal como te explicaremos aquí, podrás recibir pagos con QR en tu negocio **imprimiendo el Código QR y colocándolo en un lugar visible de tu PDV, o bien mostrándolo desde tu dispositivo móvil**, y cobrar desde la app de Mercado Pago.
+Una vez que hayas realizado la integración tal como te explicaremos aquí, podrás recibir pagos con QR en tu negocio **imprimiendo el Código QR y colocándolo en un lugar visible de tu tienda, o bien mostrándolo desde tu dispositivo móvil**, y cobrar desde la app de Mercado Pago.
 
 ![Flujo QR](/images/mobile/qr_flujo.es.png)
 

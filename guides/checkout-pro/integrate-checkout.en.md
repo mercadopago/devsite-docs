@@ -83,11 +83,9 @@ MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 ```
 ```node
 // Mercado Pago SDK
-const mercadopago = require ('mercadopago');
+import { MercadoPagoConfig } from 'mercadopago';
 // Add Your credentials
-mercadopago.configure({
-  access_token: 'PROD_ACCESS_TOKEN'
-});
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 ```
 ```java
 // Mercado Pago SDK
@@ -122,36 +120,34 @@ When you finish creating the preference, you need to configure it according to y
 [[[
  ```php
 <?php
-// Create a preference object
-$preference = new MercadoPago\Preference();
-
-// Create a preference item
-$item = new MercadoPago\Item();
-$item->title = 'My Item';
-$item->quantity = 1;
-$item->unit_price = 75.56;
-$preference->items = array($item);
-$preference->save();
+$client = new PreferenceClient();
+$preference = $client->create([
+  "items"=> array(
+    array(
+      "title" => "Meu produto",
+      "quantity" => 1,
+      "currency_id" => "BRL",
+      "unit_price" => 100
+    )
+  )
+]);
 ?>
 ```
 ```node
-// Create a preference object
-let preference = {
-  items: [
-    {
-      title: 'My Item',
-      unit_price: 100,
-      quantity: 1,
-    }
-  ]
-};
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>', options: { timeout: 5000 } });
 
-mercadopago.preferences.create(preference)
-.then(function(response){
-  global.id = response.body.id;
-}).catch(function(error){
-  console.log(error);
-});
+const preference = new Preference(client);
+
+preference.create({ body: {
+items: [
+ {
+  id: '<ID>',
+  title: '<title>',
+  quantity: 1,
+  unit_price: 100
+ }
+],
+} }).then(console.log).catch(console.log);
 ```
 ```java
  PreferenceItemRequest itemRequest =
@@ -232,37 +228,36 @@ preference = preference_response["response"]
 [[[
  ```php
 <?php
-// Create a preference object
-$preference = new MercadoPago\Preference();
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>', options: { timeout: 5000 } });
 
-// Create a preference item
-$item = new MercadoPago\Item();
-$item->title = 'My Item';
-$item->quantity = 1;
-$item->unit_price = 75;
-$preference->items = array($item);
-$preference->save();
-?>
+const preference = new Preference(client);
+
+preference.create({ body: {
+items: [
+ {
+  id: '<ID>',
+  title: '<title>',
+  quantity: 1,
+  unit_price: 100
+ }
+],
+} }).then(console.log).catch(console.log);
 ```
 ```node
-// Create a preference object
-let preference = {
-  items: [
-    {
-      title: 'My Item',
-      unit_price: 100,
-      quantity: 1,
-    }
-  ]
-};
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>', options: { timeout: 5000 } });
 
-mercadopago.preferences.create(preference)
-.then(function(response){
-// This value replaces the String "<%= global.id %>" in your HTML
-  global.id = response.body.id;
-}).catch(function(error){
-  console.log(error);
-});
+const preference = new Preference(client);
+
+preference.create({ body: {
+items: [
+ {
+  id: '<ID>',
+  title: '<title>',
+  quantity: 1,
+  unit_price: 100
+ }
+],
+} }).then(console.log).catch(console.log);
 ```
 ```java
  PreferenceItemRequest itemRequest =

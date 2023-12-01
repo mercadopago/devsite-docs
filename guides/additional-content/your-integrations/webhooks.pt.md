@@ -67,10 +67,10 @@ $client->create(body);
 ```
 ```node
 const client = new MercadoPagoConfig({ accessToken: 'ACCESS_TOKEN' });
-const payments = new Payments(client);
+const payment = new Payment(client);
 
-payments.create({
-  transaction_amount: '100',
+const body = {
+ transaction_amount: '100',
   token: 'token',
   description: 'description',
   installments: 1,
@@ -83,9 +83,9 @@ payments.create({
       number: '19119119100'
     }
   }
-}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
- .then((result) => { console.log(result); })
- .catch((error) => { console.error(error); });
+};
+
+payment.create({ body: body, requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' } }).then(console.log).catch(console.log);
 ```
 ```java
 MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
