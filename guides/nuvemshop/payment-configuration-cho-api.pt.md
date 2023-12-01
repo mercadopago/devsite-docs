@@ -26,15 +26,15 @@ Para integrar o Checkout API, siga os passos abaixo.
 
 ------------
 ----[mlb]---- 
-* **Pix**. Indique também um prazo de vencimento para pagamento com código Pix. Além disso, a opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [assista o vídeo](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
-* **Cartão de crédito**. Indique também o número máximo de parcelas permitidas.
-* **Boleto**. Indique também o número de dias para vencimento do boleto (incluindo sábado e domingo).
+ * **Pix**: Indique também um prazo de vencimento para pagamento com código Pix. Além disso, a opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [assista o vídeo](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
+ * **Cartão de crédito**: Indique também o número máximo de parcelas permitidas.
+ * **Boleto**: Indique também o número de dias para vencimento do boleto (incluindo sábado e domingo).
  
 ------------ 
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
-* **Cartão de crédito**. Indique também o número máximo de parcelas permitidas.
-* **Cartão de débito**.
-* **Redes de pago en efectivo**. Indique também o número de dias para vencimento do ticket (incluindo sábado e domingo).
+ * **Cartão de crédito**: Indique também o número máximo de parcelas permitidas.
+ * **Cartão de débito**.
+ * **Redes de pago en efectivo**: Indique também o número de dias para vencimento do ticket (incluindo sábado e domingo).
 
 ------------
 6. Por fim, clique em **Salvar alterações**.

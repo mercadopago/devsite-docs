@@ -21,7 +21,7 @@ Para **configurar Mercado Crédito en el checkout de tu tienda**, sigue los paso
 
 ## Configurar el medio de pago en el checkout de tu tienda
 
-1. Entra al panel de administrador de tu **Tiendanube >> Configuración (parte inferior izquierda)**. 
+1. Entra al panel de administrador de tu **Tiendanube > Configuración (parte inferior izquierda)**. 
 2. Al entrar a configuración, luego debes ir a **Métodos de Pago**.
 3. Localiza el plugin "Mercado Pago" y haz clic en **Editar**.
 4. Desplázate hasta la parte inferior de la página y haz clic en **Editar** en el sitio web de Mercado Pago.

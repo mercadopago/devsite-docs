@@ -17,6 +17,6 @@ Para instalar o plugin manualmente no Wordpress, siga estes passos:
 6. Clique em **Instalar agora**.
 7. Quando a instalação estiver concluída, clique no botão **Ativar plug-in**.
 
-![Instalação manual](/images/woocommerce/pt_envio_manual.gif)
+![Instalação manual](/images/woocomerce/pt_envio_manual.gif)
 
 A conclusão dessas etapas instalará e ativará o plug-in de pagamentos do Mercado Pago para WooCommerce em sua loja e você poderá configurar sua integração.
