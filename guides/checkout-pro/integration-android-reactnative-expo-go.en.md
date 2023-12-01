@@ -89,7 +89,7 @@ To learn more, you can visit the documentation on [Return URLs](/developers/es/d
 > Application configuration to manage Deep Link 
 
 In order to receive and manage the Deep Link, it is necessary to configure in our React Native project the scheme and path that make up the Deep Links that we receive to redirect to some part of your application.
-To do this, add the following configuration to your app.json file located in the root of your project:
+To do this, add the following configuration to your app.json file located in the root of your file:
 
 ```JavaScript
 {

@@ -27,8 +27,6 @@ Al crear una preferencia, puedes asociarla con un pixel (identificador) para ras
 
 Para integrar Checkout Pro con los anuncios de Facebook sigue los pasos a continuación.
 
-> Además de la SDKs, también es posible integrar los anuncios de Facebook Ads con Checkout Pro a través de la API de referencias. Para eso, envía el parámetro `track` con los atributos `type` y `values` informando tu *facebook_id* y el *pixel ID* repectivamente, al endpoint  [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta el request.
-
 [[[
 ```php
 ===
@@ -144,14 +142,13 @@ preference = preference_response["response"]
 
 Una vez completada la configuración, se asociará un evento de `purchase` con el _píxel_ especificado cuando se apruebe un pago reenviado por tu anuncio.
 
-
-
 > NOTE
 >
 > Importante
 >
 > Solo es posible configurar un solo píxel por preferencia. Prueba cómo funciona su integración con la extensión de Chrome Facebook Pixel Helper. Para obtener más información, visita el [sitio oficial de Facebook](https://www.facebook.com/business/help/742478679120153?id=1205376682832142).
 
+> Además de la SDKs, también es posible integrar los anuncios de Facebook Ads con Checkout Pro a través de la API de preferencias. Para eso, envía el parámetro `track` con los atributos `type` y `values` informando tu *facebook_id* y el *pixel ID* repectivamente, al endpoint [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta el request.
 
 ## Google Ads
 
@@ -291,4 +288,4 @@ Una vez completada la configuración, se asociará una conversión con la _tag_ 
 >
 > Importante
 >
-> Solo es posible configurar una sola _tag_ por preferencia. Para obtener más información sobre las _tags_ de conversión de Google Ads, visita el [sitio oficial de Google](https://support.google.com/google-ads?hl=es-419#topic=7456157).
+> Solo es posible configurar una sola _tag_ por preferencia. Para obtener más información sobre las _tags_ de conversión de Google Ads, visita el [sitio oficial de Google](https://ads.google.com/home/).
