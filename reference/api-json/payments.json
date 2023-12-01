@@ -18,7 +18,7 @@
           {
             "in": "header",
             "name": "X-Idempotency-Key",
-            "required": true,
+            "required": false,
             "schema": {
               "type": "string",
               "example": "0d5020ed-1af6-469c-ae06-c3bec19954bb"
