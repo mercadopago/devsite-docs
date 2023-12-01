@@ -4,9 +4,9 @@
 >
 > Importante
 >
-> Antes de começar a integrar o Checkout Pro para Mobile, você precisará ter uma preferência criada em seu backend. Se você ainda não fez isso, vá para [Criar preferências](/developers/pt/docs/checkout-pro/integrate-preferences).
+> Antes de começar a integrar o Checkout Pro para Mobile, certifique-se de ter uma preferência criada em seu backend. Se você ainda não fez isso, vá para [Criar preferências](/developers/pt/docs/checkout-pro/integrate-preferences).
 
-Para integrar o Checkout Pro em uma aplicação móvel desenvolvida com o Flutter, você precisará exibir o checkout da web dentro da aplicação. Para isso, existem diversas opções, sendo uma delas o uso de Custom Tabs. Essa tecnologia permite que páginas da web sejam abertas em um navegador nativo incorporado á aplicação, proporcionando uma experiência de navegação mais suave e consistente aos usuários.
+Para integrar o Checkout Pro em uma aplicação móvel desenvolvida com o Flutter, você precisará exibir o checkout da web dentro da aplicação. Para isso, existem diversas opções, sendo uma delas o uso de Custom Tabs. Essa tecnologia permite que páginas da web sejam abertas em um navegador nativo incorporado à aplicação, proporcionando uma experiência de navegação mais fluída e consistente aos usuários.
 
 Nesta etapa, vamos implementar Custom Tabs em uma aplicação Flutter usando **flutter_custom_tabs**. Mostraremos como instalar as bibliotecas necessárias, como configurar as dependências e daremos exemplos práticos de como abrir páginas da web usando Custom Tabs.
 
@@ -112,17 +112,17 @@ class MyApp extends StatelessWidget {
 >
 > h2
 >
-> Como retornar ao sua app
+> Como retornar à sua app
 
 **Deep Links**, também conhecidos como links diretos, são uma forma poderosa de permitir a navegação direta para telas ou seções específicas de uma aplicação móvel.
 
 Nesta seção da documentação, você encontrará como configurar os Deep Links em uma aplicação Flutter com base na [documentação oficial do Flutter](https://docs.flutter.dev/ui/navigation/deep-linking?gclid=CjwKCAjwrranBhAEEiwAzbhNtSuZ4qnpJoRrs1AgJ8SzP80sc4EmZA3_VlFInWPQ-42suf1Wm31K9RoC0f4QAvD_BwE&gclsrc=aw.ds).
 
-Com a configuração adequada dos Deep Links no Flutter, você poderá oferecer aos usuários a capacidade de acessar diretamente conteúdo específico em sua aplicação, melhorando a navegação e a experiência geral do usuário.
+Com a configuração adequada dos Deep Links no Flutter, você poderá oferecer aos usuários a capacidade de acessar diretamente um conteúdo específico em sua aplicação, melhorando a navegação e a experiência geral do usuário.
 
 ### Criar um Deep Link
 
-A partir do nosso checkout, é possível configurar Deep Links para retornar ao sua aplicação, seja clicando em um link "Voltar" ou automaticamente após concluir um fluxo de pagamento bem-sucedido, redirecionando-o de volta ao sua aplicação.
+A partir do nosso checkout, é possível configurar Deep Links para retornar à sua aplicação. Isso pode ser feito clicando em um link "Voltar" ou automaticamente após a conclusão bem-sucedida de um fluxo de pagamento, redirecionando-o de volta à sua aplicação.
 
 Para isso, devemos adicionar as propriedades `back_urls` e `auto_return` ao criar a preferência de pagamento, conforme necessário.
 
@@ -134,7 +134,7 @@ Para saber mais, você pode acessar a documentação sobre [URLs de retorno](/de
 >
 > Configuração da aplicação para gerenciar o Deep Link
 
-O Flutter oferece suporte para Deep Link no iOS e navegadores da web. Ao abrir uma URL, essa tela será exibida em sua aplicação. A seguir, mostraremos como você pode lançar e exibir rotas criando rotas com nome (seja com o parâmetro routes ou com onGenerateRoute), ou com o widget Router.
+O Flutter oferece suporte para Deep Link no iOS e navegadores da web. Ao abrir uma URL, a tela correspondente será exibida em sua aplicação. A seguir, mostraremos como você pode lançar e exibir rotas. Isso pode ser feito criando rotas com nome, seja através do parâmetro `routes` ou `onGenerateRoute`, ou utilizando o widget `Router`.
 
 > WARNING
 >
@@ -142,7 +142,7 @@ O Flutter oferece suporte para Deep Link no iOS e navegadores da web. Ao abrir u
 >
 > As rotas com nome não são mais recomendadas para a maioria dos aplicativos.
 
-Se a aplicação for executado em um navegador da web, nenhuma configuração adicional será necessária. As rotas são tratadas da mesma forma que um link profundo do Android. Por padrão, as aplicações da web lêem o caminho do link profundo a partir do fragmento de URL usando o padrão `/#/path/to/app/screen`, mas isso pode ser alterado configurando a estratégia de URL para a sua aplicação.
+Se a aplicação for executada em um navegador da web, nenhuma configuração adicional será necessária. As rotas são tratadas da mesma forma que um deep link do Android. Por padrão, as aplicações da web lêem o caminho do deep link a partir do fragmento de URL usando o padrão `/#/path/to/app/screen`, mas isso pode ser alterado configurando a estratégia de URL para a sua aplicação.
 
 > Para saber mais, acesse as documentações oficiais sobre [como lidar com Deep Links para aplicações Flutter](https://medium.com/flutter-community/deep-links-and-flutter-applications-how-to-handle-them-properly-8c9865af9283) e [como configurar o App Link para Android](https://docs.flutter.dev/cookbook/navigation/set-up-app-links).
 
