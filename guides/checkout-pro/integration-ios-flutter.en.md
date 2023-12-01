@@ -135,7 +135,7 @@ To learn more, you can access the documentation on [Return URLs](/developers/en/
 >
 > Configuring the application for Deep Link handling
 
-Flutter supports deep linking on iOS and web browsers. Opening a URL will display that screen in your app. Below, we will show you how you can launch and display routes by creating named routes (either with the routes parameter or with onGenerateRoute), or using the Router widget.
+Flutter supports the use of Deep Links on iOS and web browsers. Opening a URL will display that screen in your app. Below, we will show you how you can launch and display routes by creating **named routes** (either with the routes parameter or with onGenerateRoute), or using the **Router widget**.
 
 > WARNING
 >
