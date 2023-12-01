@@ -4,7 +4,7 @@
 >
 > Important
 >
-> Before you start integrating Checkout Pro for Mobile, you need to have a preference created in your backend. If you haven't done it yet, go to [Preference creation](/developers/en/docs/checkout-pro/integrate-preferences).
+> Before you start integrating Checkout Pro for Mobile, you need to have a preference created in your backend. If you haven't done it yet, go to [Create preference](/developers/en/docs/checkout-pro/integrate-preferences).
 
 To integrate Checkout Pro into a mobile application developed with Flutter, you need to display the web checkout inside the application. To achieve this, there are several options, among which Custom Tabs stands out. This technology allows you to open web pages in a native browser integrated into the application, providing a smoother and more consistent browsing experience for users.
 
@@ -114,7 +114,7 @@ class MyApp extends StatelessWidget {
 >
 > Returning to your App
 
-**Deep Links**, also known as deep links, are a powerful way to enable direct navigation to specific screens or sections of a mobile application. In Flutter, setting up Deep Links correctly is essential to ensure a seamless and smooth user experience.
+**Deep Links** are a powerful way to enable direct navigation to specific screens or sections of a mobile application. In Flutter, setting up Deep Links correctly is essential to ensure a seamless and smooth user experience.
 
 In this section of the documentation, you will find how to configure Deep Links in a Flutter application based on the [official Flutter documentation](https://docs.flutter.dev/ui/navigation/deep-linking?gclid=CjwKCAjwrranBhAEEiwAzbhNtSuZ4qnpJoRrs1AgJ8SzP80sc4EmZA3_VlFInWPQ-42suf1Wm31K9RoC0f4QAvD_BwE&gclsrc=aw.ds).
 
@@ -125,7 +125,7 @@ With the proper configuration of Deep Links in Flutter, you can offer users the 
 
 From the checkout, it is possible to configure Deep Links to return to your application, either by clicking on a "Return" link, or automatically after completing a successful payment flow, and then being redirected to your App.
 
-To do this, we must add the `back_urls` and `auto_return` properties to the payment preference creation as appropriate.
+To do this, you must add the `back_urls` and `auto_return` properties to the payment preference creation as appropriate.
 
 To learn more, you can access the documentation on [Return URLs](/developers/en/docs/checkout-pro/checkout-customization/user-interface/redirection).
 
@@ -143,6 +143,6 @@ Flutter supports deep linking on Android and web browsers. When opening a URL, t
 >
 > Named routes are no longer recommended for most applications.
 
-If the application is run in a web browser, no additional configuration is needed. Routes are handled the same way as an Android deep link. By default, web applications read the deep link path from the URL fragment using the pattern `/#/path/to/app/screen`, but this can be changed by configuring the URL strategy for your app.
+If the application is run in a web browser, no additional configuration is needed. Routes are handled the same way as an Android Deep Link. By default, web applications read the Deep Link path from the URL fragment using the pattern `/#/path/to/app/screen`, but this can be changed by configuring the URL strategy for your app.
 
 > To learn more, refer to the official documentation on [handling Deep Links for Flutter applications](https://medium.com/flutter-community/deep-links-and-flutter-applications-how-to-handle-them-properly-8c9865af9283) and [setting up App Link for Android](https://docs.flutter.dev/cookbook/navigation/set-up-app-links).

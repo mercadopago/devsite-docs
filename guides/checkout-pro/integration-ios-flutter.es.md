@@ -4,11 +4,11 @@
 >
 > Importante
 >
-> Antes de comenzar a integrar Checkout Pro para Mobile, deberás contar con una preferencia creada en tu backend. Si aún no lo has hecho, ve a [Creación de preferencia](/developers/es/docs/checkout-pro/integrate-preferences).
+> Antes de comenzar a integrar Checkout Pro para Mobile, deberás contar con una preferencia creada en tu backend. Si aún no lo has hecho, ve a [Crear preferencias](/developers/es/docs/checkout-pro/integrate-preferences).
 
 Para integrar Checkout Pro en una aplicación móvil desarrollada con Flutter, deberás mostrar el checkout web dentro de la aplicación. Para lograr esto, existen varias opciones, entre las cuales se destacan el uso de Custom Tabs. Esta tecnología te permitirá abrir páginas web en un navegador nativo integrado en la aplicación, brindando una experiencia de navegación más fluida y coherente para los usuarios.
 
-En este paso vamos a implementar Custom Tabs en una aplicación de Flutter utilizando **flutter_custom_tabs**. Te mostraremos como realizar la instalación de las bibliotecas necesarias, cómo configurar las dependencias y te daremos ejemplos prácticos de cómo abrir páginas web utilizando Custom Tabs.
+En este paso vamos a implementar Custom Tabs en una aplicación de Flutter utilizando **flutter_custom_tabs**. Te mostraremos cómo realizar la instalación de las bibliotecas necesarias, cómo configurar las dependencias y te daremos ejemplos prácticos de cómo abrir páginas web utilizando Custom Tabs.
 
 > CLIENT_SIDE
 >
@@ -16,7 +16,7 @@ En este paso vamos a implementar Custom Tabs en una aplicación de Flutter utili
 >
 > Instalación de la dependencia Flutter Custom Tabs
 
-Para la instalación de la dependencia Flutter Custom Tabs, ejecutaa el siguiente comando en el directorio raíz de tu proyecto:
+Para la instalación de la dependencia Flutter Custom Tabs, ejecuta el siguiente comando en el directorio raíz de tu proyecto:
 
 ```terminal
 $ flutter pub add flutter_custom_tabs
@@ -30,7 +30,7 @@ Esto agregará la línea `dependencies:  flutter_custom_tabs: ^1.2.1` al archivo
 > 
 > Te invitamos a conocer más en la [documentación oficial de Flutter Custom Tabs](https://pub.dev/packages/flutter_custom_tabs).
 
-Para hacer uso de la dependencia deberás importarla primero en el código Dart donde vayas a requerir mostrar el Checkout. Para importarla, agrega la siguiente línea en tu código:
+Para hacer uso de la dependencia deberás importarla primero en el código Dart donde vayas a requerir mostrar el Checkout. Para hacerlo, agrega la siguiente línea en tu código:
 
 ```dart
 import 'package:flutter_custom_tabs/flutter_custom_tabs.dart';
@@ -106,7 +106,7 @@ class MyApp extends StatelessWidget {
 >
 > Personalizar la visualización según la plataforma
 >
-> Es posible personalizar el look & feel de la pantalla que se mostrará especificando opciones para cada plataforma. Para personalizar la apariencia en iOS, deberás hacerlo con SFSSafariViewController. Conoce más en la [documentación oficial](https://pub.dev/packages/flutter_custom_tabs).
+> Es posible personalizar el *look & feel* de la pantalla a ser mostrada especificando opciones para cada plataforma. Para personalizar la apariencia en iOS, deberás hacerlo con SFSSafariViewController. Conoce más en la [documentación oficial](https://pub.dev/packages/flutter_custom_tabs).
 
 > CLIENT_SIDE
 >
@@ -123,9 +123,9 @@ Con la configuración adecuada de los Deep Links en Flutter, podrás ofrecer a l
 
 ### Crear un Deep Link
 
-Desde el checkout es posible configurar Deep Links para volver a tu aplicación, ya sea haciendo click en un link de “Volver”, o de forma automática al terminar todo un flujo de pago exitoso, para luego ser redirigido a tu App.
+Desde el Checkout es posible configurar Deep Links para volver a tu aplicación, ya sea haciendo click en un link de “Volver”, o de forma automática al terminar todo un flujo de pago exitoso, para luego ser redirigido a tu App.
 
-Para esto debemos agregar en la creación de la preferencia de pago las propiedades `back_urls` y `auto_return` según corresponda.
+Para esto debes agregar en la creación de la preferencia de pago las propiedades `back_urls` y `auto_return` según corresponda.
 
 Para conocer más, puedes acceder a la documentación de [URLs de retorno](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).
 
