@@ -1,4 +1,4 @@
-# TESTING
+# Primeros pasos
 
 Mercado Pago ofrece varias soluciones que te permiten recibir pagos virtuales o presenciales. Puedes brindar medios de pago sin contratos ni cuotas mensuales, a través de integraciones con tiendas en línea o productos, tales como link de pago, Código QR, y la máquina de Mercado Pago, el Point, que pueden o no estar integrados.
 
