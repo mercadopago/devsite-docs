@@ -135,7 +135,7 @@ To learn more, you can access the documentation on [Return URLs](/developers/en/
 >
 > Configuring the App for Deep Link Handling
 
-Flutter supports deep linking on Android and web browsers. When opening a URL, that screen will be displayed in your app. Below, we will show you how you can launch and display routes by creating named routes (either with the routes parameter or with onGenerateRoute), or with the Router widget.
+Flutter supports the use of Deep Links on Android and web browsers. When opening a URL, that screen will be displayed in your app. Below, we will show you how you can launch and display routes by creating **named routes** (either with the routes parameter or with onGenerateRoute), or with the **Router widget**.
 
 > WARNING
 >
