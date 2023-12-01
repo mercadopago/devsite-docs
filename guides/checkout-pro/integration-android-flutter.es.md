@@ -135,7 +135,7 @@ Para conocer más, puedes acceder a la documentación de [URLs de retorno](/deve
 >
 > Configuración de la aplicación para la gestión del Deep Link
 
-Flutter admite deep linking en Android y navegadores web. Al abrir una URL, se mostrará esa pantalla en tu app. A continuación, te mostraremos cómo puedes lanzar y mostrar rutas creando rutas con nombre (ya sea con el parámetro routes o con onGenerateRoute), o con el widget Router.
+Flutter admite utilizar Deep Links en Android y navegadores web. Al abrir una URL, se mostrará esa pantalla en tu app. A continuación, te mostraremos cómo puedes lanzar y mostrar rutas creando **rutas con nombre** (ya sea con el parámetro routes o con onGenerateRoute), o con el **widget Router**.
 
 > WARNING
 > 
