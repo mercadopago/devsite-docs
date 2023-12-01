@@ -90,7 +90,7 @@ Para saber mais, você pode acessar a documentação sobre [URLs de retorno](/de
 
 Para receber e gerenciar o Deep Link, é necessário configurar no projeto React Native o esquema (scheme) e o caminho (path) que compõem os Deep Links que recebemos para redirecionar para alguma parte da sua aplicação.
 
-Para fazer isso, adicione a seguinte configuração ao seu arquivo app.json localizado na raiz do seu projeto:
+Para fazer isso, adicione a seguinte configuração ao seu arquivo app.json localizado na raiz do seu archivo:
 
 ```JavaScript
 {

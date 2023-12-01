@@ -35,7 +35,7 @@ En la siguiente tabla, detallamos los atributos de preferencia y la descripción
 ------------
 
 
-Con esta información en la mano, utilice uno de los SDKs disponibles a continuación para configurar los métodos de pago que desea ofrecer.
+Con esta información, utilice uno de los SDKs disponibles a continuación para configurar los métodos de pago que desea ofrecer.
 
 
 [[[
