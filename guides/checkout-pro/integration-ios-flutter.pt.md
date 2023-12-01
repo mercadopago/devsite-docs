@@ -142,7 +142,7 @@ O Flutter oferece suporte para Deep Link no iOS e navegadores da web. Ao abrir u
 >
 > As rotas com nome não são mais recomendadas para a maioria dos aplicativos.
 
-Se a aplicação for executada em um navegador da web, nenhuma configuração adicional será necessária. As rotas são tratadas da mesma forma que um deep link do Android. Por padrão, as aplicações da web lêem o caminho do deep link a partir do fragmento de URL usando o padrão `/#/path/to/app/screen`, mas isso pode ser alterado configurando a estratégia de URL para a sua aplicação.
+Se a aplicação for executada em um navegador da web, nenhuma configuração adicional será necessária. As rotas são tratadas da mesma forma que um Deep Link do Android. Por padrão, as aplicações da web lêem o caminho do Deep Link a partir do fragmento de URL usando o padrão `/#/path/to/app/screen`, mas isso pode ser alterado configurando a estratégia de URL para a sua aplicação.
 
 > Para saber mais, acesse as documentações oficiais sobre [como lidar com Deep Links para aplicações Flutter](https://medium.com/flutter-community/deep-links-and-flutter-applications-how-to-handle-them-properly-8c9865af9283) e [como configurar o App Link para Android](https://docs.flutter.dev/cookbook/navigation/set-up-app-links).
 

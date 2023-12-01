@@ -115,11 +115,11 @@ class MyApp extends StatelessWidget {
 >
 > How to return to your App
 
-Deep links are a powerful way to allow direct navigation to specific screens or sections of a mobile application. In Flutter, correctly configuring deep links is essential to ensure a smooth and seamless user experience.
+Deep links are a powerful way to allow direct navigation to specific screens or sections of a mobile application. In Flutter, correctly configuring Deep Links is essential to ensure a smooth and seamless user experience.
 
-In this section of the documentation, you will find how to configure deep links in a Flutter application based on the [official Flutter documentation](https://docs.flutter.dev/ui/navigation/deep-linking?gclid=CjwKCAjwrranBhAEEiwAzbhNtSuZ4qnpJoRrs1AgJ8SzP80sc4EmZA3_VlFInWPQ-42suf1Wm31K9RoC0f4QAvD_BwE&gclsrc=aw.ds).
+In this section of the documentation, you will find how to configure Deep Links in a Flutter application based on the [official Flutter documentation](https://docs.flutter.dev/ui/navigation/deep-linking?gclid=CjwKCAjwrranBhAEEiwAzbhNtSuZ4qnpJoRrs1AgJ8SzP80sc4EmZA3_VlFInWPQ-42suf1Wm31K9RoC0f4QAvD_BwE&gclsrc=aw.ds).
 
-With the proper configuration of deep links in Flutter, you can offer users the ability to directly access specific content in your application, improving navigation and the overall user experience.
+With the proper configuration of Deep Links in Flutter, you can offer users the ability to directly access specific content in your application, improving navigation and the overall user experience.
 
 
 ### Creating a Deep Link
