@@ -10,9 +10,9 @@ Para configurar o Parcelamento via Pix em até 12x no checkout da loja, acesse o
 1. Clique no botão "+ (Adicionar novo plano de pagamento para...)". 
 2. Dentro da categoria **Outro**, procure por **Buy now, pay later Mercado Pago** e selecione-o.
 3. Preencha os campos exibidos na próxima tela: 
-    * Digite o **Nome da regra**, que permitirá identificar esse meio de pagamento. 
-    * Em **Processo com a afiliação**, selecione **MercadoPagoV2**. 
-    * Ative a condição de pagamento no campo **Status**, usando o botão deslizante. 
+    1. Digite o **Nome da regra**, que permitirá identificar esse meio de pagamento. 
+    2. Em **Processo com a afiliação**, selecione **MercadoPagoV2**. 
+    3. No campo **Status**, ative a condição de pagamento usando o botão deslizante. 
 
 4. Clique em **Salvar** para ativar a configuração
 
@@ -31,9 +31,9 @@ Para configurar o Parcelamento em até 12 meses sem cartão no checkout da loja,
 1. Clique no botão "+ (Adicionar novo plano de pagamento para...)". 
 2. Dentro da categoria **Outro**, procure por **Buy now, pay later Mercado Pago** e selecione-o.
 3. Preencha os campos exibidos na próxima tela: 
-    * Digite o **Nome da regra**, que permitirá identificar esse meio de pagamento. 
-    * Em **Processo com a afiliação**, selecione **MercadoPagoV2**. 
-    * Ative a condição de pagamento no campo **Status**, usando o botão deslizante. 
+    1. Digite o **Nome da regra**, que permitirá identificar esse meio de pagamento. 
+    2. Em **Processo com a afiliação**, selecione **MercadoPagoV2**. 
+    3. No campo **Status**, ative a condição de pagamento usando o botão deslizante. 
 
 4. Clique em **Salvar** para ativar a configuração
 
@@ -51,9 +51,9 @@ Para configurar Até 12 meses sem cartão no Mercado Pago no checkout da loja, a
 1. Clique no botão "+ (Adicionar novo plano de pagamento para...)". 
 2. Dentro da categoria **Outro**, procure por **Buy now, pay later Mercado Pago** e selecione-o.
 3. Preencha os campos exibidos na próxima tela: 
-    * Digite o **Nome da regra**, que permitirá identificar esse meio de pagamento. 
-    * Em **Processo com a afiliação**, selecione **MercadoPagoV2**. 
-    * Ative a condição de pagamento no campo **Status**, usando o botão deslizante. 
+    1. Digite o **Nome da regra**, que permitirá identificar esse meio de pagamento. 
+    2. Em **Processo com a afiliação**, selecione **MercadoPagoV2**. 
+    3. No campo **Status**, ative a condição de pagamento usando o botão deslizante. 
 
 4. Clique em **Salvar** para ativar a configuração
 

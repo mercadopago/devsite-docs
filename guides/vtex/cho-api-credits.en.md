@@ -8,9 +8,9 @@ To configure the Installment via Pix up to 12x in the store's checkout, access t
 1. Click on the "+ (Add new payment plan for...)" button. 
 2. Within the **Other** category, search for **Buy now, pay later Mercado Pago** and select it. 
 3. Fill in the fields displayed on the next screen: 
-    * Enter the **Rule name**, which will allow you to identify this payment method. 
-    * In **Process with affiliation**, select **MercadoPagoV2**. 
-    * Activate the payment condition in the **Status** field using the sliding button. 
+    1. Enter the **Rule name**, which will allow you to identify this payment method. 
+    2. In **Process with affiliation**, select **MercadoPagoV2**. 
+    3. In the **Status** field, activate the payment condition using the slider button. 
 
 4. Click **Save** to activate the configuration
 ------------ 
@@ -25,9 +25,9 @@ To configure the Up to 12 installments without a card without a card in the stor
 1. Click on the "+ (Add new payment plan for...)" button. 
 2. Within the **Other** category, search for **Buy now, pay later Mercado Pago** and select it. 
 3. Fill in the fields displayed on the next screen: 
-    * Enter the **Rule name**, which will allow you to identify this payment method. 
-    * In **Process with affiliation**, select **MercadoPagoV2**. 
-    * Activate the payment condition in the **Status** field using the sliding button. 
+    1. Enter the **Rule name**, which will allow you to identify this payment method. 
+    2. In **Process with affiliation**, select **MercadoPagoV2**. 
+    3. In the **Status** field, activate the payment condition using the slider button. 
 
 4. Click **Save** to activate the configuration 
 ------------ 
@@ -42,9 +42,9 @@ To configure Up to 12 installments without a card with Mercado Pago in the store
 1. Click on the "+ (Add new payment plan for...)" button. 
 2. Within the **Other** category, search for **Buy now, pay later Mercado Pago** and select it. 
 3. Fill in the fields displayed on the next screen: 
-    * Enter the **Rule name**, which will allow you to identify this payment method. 
-    * In **Process with affiliation**, select **MercadoPagoV2**. 
-    * Activate the payment condition in the **Status** field using the sliding button. 
+    1. Enter the **Rule name**, which will allow you to identify this payment method. 
+    2. In **Process with affiliation**, select **MercadoPagoV2**. 
+    3. In the **Status** field, activate the payment condition using the slider button. 
 4. Click **Save** to activate the configuration 
 ------------ 
 

@@ -57,8 +57,7 @@ gem install mercadopago-sdk
 Para instalar o SDK, você deve executar o seguinte código na linha de comandos do seu terminal usando [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference):
 
 ------------
-
-----[mla, mlm, mco, mlc, mlu]----
+----[mla, mpe, mlm, mco, mlc, mlu]----
 Para instalar o SDK, você deve executar o seguinte código na linha de comandos do seu terminal usando [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference):
 
 ------------
@@ -94,7 +93,7 @@ MercadoPagoConfig::setAccessToken("PROD_ACCESS_TOKEN");
 ```
 ```node
 // SDK do Mercado Pago
-import { MercadoPagoConfig } from 'MercadoPago';
+import { MercadoPagoConfig } from 'mercadopago';
 // Adicione as credenciais
 const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 ```
@@ -145,19 +144,20 @@ $preference = $client->create([
 ?>
 ```
 ```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
+
 const preference = new Preference(client);
 
-preference.create({
-  'items': [
-     {
-	 'title': 'Meu produto',
-	 'quantity': 1,
-	 'currency_id': 'BRL',
-	 'unit_price': 100
-     }
-  ]
-}).then((result) => console.log(result))
-	.catch((error) => console.log(error));
+preference.create({ body: {
+	items: [
+		{
+			id: '<ID>',
+			title: '<title>',
+			quantity: 1,
+			unit_price: 100
+		}
+	],
+} }).then(console.log).catch(console.log);
 ```
 ```java
  PreferenceItemRequest itemRequest =
@@ -252,19 +252,20 @@ $preference = $client->create([
 ?>
 ```
 ```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
+
 const preference = new Preference(client);
 
-preference.create({
-  'items': [
-     {
-	 'title': 'Meu produto',
-	 'quantity': 1,
-	 'currency_id': 'BRL',
-	 'unit_price': 100
-     }
-  ]
-}).then((result) => console.log(result))
-	.catch((error) => console.log(error));
+preference.create({ body: {
+	items: [
+		{
+			id: '<ID>',
+			title: '<title>',
+			quantity: 1,
+			unit_price: 100
+		}
+	],
+} }).then(console.log).catch(console.log);
 ```
 ```java
  PreferenceItemRequest itemRequest =

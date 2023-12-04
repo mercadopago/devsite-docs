@@ -2982,11 +2982,7 @@ paths:
                               spa: Estado
                               por: Estado
                           country_name:
-                            type: Country name.
-                            x-type-i18n:
-                              eng: Country name.
-                              spa: Nombre del país
-                              por: Nome do país
+                            type: string
                             description: Country name.
                             x-description-i18n:
                               eng: Country name.

@@ -27,7 +27,7 @@ dependencies {
 
 El siguiente paso es **implementar las Custom Tabs**. Para hacerlo, sólo deberás instanciarlas. A continuación, te compartimos un ejemplo de una Custom Tab simple. 
 
-> Las Custom Tabs pueden ser configuradas con estilos customizables. Para conocer más, accede a la [guía de Custom Tabs](https://developer.chrome.com/docs/android/custom-tabs/guide-get-started/).
+> Las Custom Tabs pueden ser customizadas con varios estilos. Para conocer más, accede a la [guía de Custom Tabs](https://developer.chrome.com/docs/android/custom-tabs/guide-get-started/).
 
 
 El siguiente código puede ser colocado al abrir una actividad o al ejecutar una acción de la misma, en donde el valor `url` es igual a la `init url` de nuestro checkout.

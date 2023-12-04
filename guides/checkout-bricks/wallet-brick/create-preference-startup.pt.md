@@ -6,14 +6,15 @@ Caso prefira, também é possível adicionar a preferência na inicialização d
 [[[
 ```Javascript
 const settings = {
- ...,
- initialization: {
-   preferenceId: '<PREFERENCE_ID>',
- },
+...,
+initialization: {
+  preferenceId: '<PREFERENCE_ID>',
+},
 customization: {
- texts: {
-  valueProp: 'smart_option',
+texts: {
+ valueProp: 'smart_option',
  },
+},
 };
 ```
 ```react-jsx

@@ -78,7 +78,7 @@ export default function ExpoWebBrowserExample(url) {
 
 A partir do nosso checkout, é possível configurar Deep Links para retornar ao sua aplicação, seja clicando em um link "Voltar" ou automaticamente após concluir um fluxo de pagamento bem-sucedido, redirecionando-o de volta ao sua aplicação.
 
-Para isso, devemos adicionar as propriedades back_urls e auto_return ao criar a preferência de pagamento, conforme necessário.
+Para isso, devemos adicionar as propriedades `back_urls` e `auto_return` ao criar a preferência de pagamento, conforme necessário.
 
 Para saber mais, você pode acessar a documentação sobre [URLs de retorno](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).
 
@@ -90,7 +90,7 @@ Para saber mais, você pode acessar a documentação sobre [URLs de retorno](/de
 
 Para receber e gerenciar o Deep Link, é necessário configurar no projeto React Native o esquema (scheme) e o caminho (path) que compõem os Deep Links que recebemos para redirecionar para alguma parte da sua aplicação.
 
-Para fazer isso, adicione a seguinte configuração ao seu arquivo app.json localizado na raiz do seu projeto:
+Para fazer isso, adicione a seguinte configuração ao seu arquivo app.json localizado na raiz do seu archivo:
 
 ```JavaScript
 {

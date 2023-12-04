@@ -4,7 +4,7 @@ Com o _agreement_ criado e a aprovação do comprador concedida, é preciso cria
 
 Confira o diagrama abaixo que ilustra como funciona o fluxo de criação de um payer token.
 
-![Criar payer token](/images/wallet-connect/create-payer-token.pt.png)
+![Criar payer token](/images/wallet-connect/create-payer-token-v2-pt.png)
 
 Para criar um _payer token_, envie um **POST** com todos os atributos necessários ao endpoint [/v2/wallet_connect/agreements/{agreementId}/payer_token](/developers/pt/reference/wallet_connect/_wallet_connect_agreements_agreement_id_payer_token/post) e execute a requisição ou, se preferir, utilize o `curl` disponível abaixo.
 
@@ -12,13 +12,23 @@ Para criar um _payer token_, envie um **POST** com todos os atributos necessári
 ```curl
 
 curl -X POST \
-      'https://api.mercadopago.com/v2/wallet_connect/agreements/{agreement_id}/payer_token?client.id=<CLIENT.ID>&caller.id=<CALLER.ID>' \
+      'https://api.mercadopago.com/v2/wallet_connect/agreements/<YOUR_AGREEMENT_ID>/payer_token \
       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
-      -H 'Content-Type: application/json' \ 
+      -H 'Content-Type: application/json' \
       -H 'x-platform-id: YOUR_ACCESS_TOKEN' \
       -d '{
-  "code": "aeecea3e11f2545d1e7790eb6591ff68df74c57930551ed980239f4538a7e530"
+  "code": "abcdef1211f2545d1e7790eb6591ff68df74c567a30551ed99994538a7e530"
 }'
+```
+]]]
+
+## Resposta
+
+[[[
+```json
+{
+  "payer_token": "abcdef1e23f4567d8e9123eb6591ff68df74c57930551ed980239f4538a7e530"
+}
 ```
 ]]]
 

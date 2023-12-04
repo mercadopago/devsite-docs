@@ -1,4 +1,5 @@
 {
+  "url": "https://api.mercadopago.com",
   "paths": {
     "/stores/{id}": {
       "get": {
@@ -16,9 +17,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "eng": "Store's Id",
-              "spa": "Store's Id",
-              "por": "Store's Id"
+              "en": "Store's Id",
+              "pt": "Store's Id",
+              "es": "Store's Id"
             },
             "required": true,
             "schema": {
@@ -30,9 +31,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "Success",
+              "es": "Success",
               "pt": "Success",
-              "es": "Success"
+              "en": "Success"
             },
             "content": {
               "application/json": {
@@ -43,18 +44,18 @@
                       "type": "string",
                       "example": 30163646,
                       "description": {
-                        "en": "id",
+                        "es": "id",
                         "pt": "id",
-                        "es": "id"
+                        "en": "id"
                       }
                     },
                     "name": {
                       "type": "string",
                       "example": "Sucursal Instore",
                       "description": {
-                        "en": "name",
+                        "es": "name",
                         "pt": "name",
-                        "es": "name"
+                        "en": "name"
                       }
                     },
                     "date_creation": {
@@ -62,9 +63,9 @@
                       "format": "date-time",
                       "example": "2021-04-16T14:54:28.573Z",
                       "description": {
-                        "en": "date_creation",
+                        "es": "date_creation",
                         "pt": "date_creation",
-                        "es": "date_creation"
+                        "en": "date_creation"
                       }
                     },
                     "business_hours": {
@@ -78,19 +79,27 @@
                               "open": {
                                 "type": "string",
                                 "example": "08:00",
-                                "description": "open"
+                                "description": {
+                                  "es": "open",
+                                  "pt": "open",
+                                  "en": "open"
+                                }
                               },
                               "close": {
                                 "type": "string",
                                 "example": "13:00",
-                                "description": "close"
+                                "description": {
+                                  "es": "close",
+                                  "pt": "close",
+                                  "en": "close"
+                                }
                               }
                             }
                           },
                           "description": {
-                            "en": "monday",
+                            "es": "monday",
                             "pt": "monday",
-                            "es": "monday"
+                            "en": "monday"
                           }
                         },
                         "tuesday": {
@@ -101,19 +110,27 @@
                               "open": {
                                 "type": "string",
                                 "example": "08:00",
-                                "description": "open"
+                                "description": {
+                                  "es": "open",
+                                  "pt": "open",
+                                  "en": "open"
+                                }
                               },
                               "close": {
                                 "type": "string",
                                 "example": "18:00",
-                                "description": "close"
+                                "description": {
+                                  "es": "close",
+                                  "pt": "close",
+                                  "en": "close"
+                                }
                               }
                             }
                           },
                           "description": {
-                            "en": "tuesday",
+                            "es": "tuesday",
                             "pt": "tuesday",
-                            "es": "tuesday"
+                            "en": "tuesday"
                           }
                         },
                         "wednesday": {
@@ -124,26 +141,34 @@
                               "open": {
                                 "type": "string",
                                 "example": "07:00",
-                                "description": "open"
+                                "description": {
+                                  "es": "open",
+                                  "pt": "open",
+                                  "en": "open"
+                                }
                               },
                               "close": {
                                 "type": "string",
                                 "example": "10:00",
-                                "description": "close"
+                                "description": {
+                                  "es": "close",
+                                  "pt": "close",
+                                  "en": "close"
+                                }
                               }
                             }
                           },
                           "description": {
-                            "en": "wednesday",
+                            "es": "wednesday",
                             "pt": "wednesday",
-                            "es": "wednesday"
+                            "en": "wednesday"
                           }
                         }
                       },
                       "description": {
-                        "en": "business_hours",
+                        "es": "business_hours",
                         "pt": "business_hours",
-                        "es": "business_hours"
+                        "en": "business_hours"
                       }
                     },
                     "location": {
@@ -151,54 +176,54 @@
                       "properties": {
                         "address_line": {
                           "type": "string",
-                          "example": "Caseros 3039, Belgrano, Capital Federal, Argentina",
+                          "example": "Rua Ângelo Piva, Osasco, São Paulo, Brasil",
                           "description": {
-                            "en": "address_line",
+                            "es": "address_line",
                             "pt": "address_line",
-                            "es": "address_line"
+                            "en": "address_line"
                           }
                         },
                         "reference": {
                           "type": "string",
-                          "example": "3er Piso",
+                          "example": "Melicidade",
                           "description": {
-                            "en": "reference",
+                            "es": "reference",
                             "pt": "reference",
-                            "es": "reference"
+                            "en": "reference"
                           }
                         },
                         "latitude": {
                           "type": "number",
-                          "example": -32.8897322,
+                          "example": -23.52613,
                           "description": {
-                            "en": "latitude",
+                            "es": "latitude",
                             "pt": "latitude",
-                            "es": "latitude"
+                            "en": "latitude"
                           }
                         },
                         "longitude": {
                           "type": "number",
-                          "example": -68.8443275,
+                          "example": -46.76169,
                           "description": {
-                            "en": "longitude",
+                            "es": "longitude",
                             "pt": "longitude",
-                            "es": "longitude"
+                            "en": "longitude"
                           }
                         }
                       },
                       "description": {
-                        "en": "location",
+                        "es": "location",
                         "pt": "location",
-                        "es": "location"
+                        "en": "location"
                       }
                     },
                     "external_id": {
                       "type": "string",
                       "example": "SUC001",
                       "description": {
-                        "en": "external_id",
+                        "es": "external_id",
                         "pt": "external_id",
-                        "es": "external_id"
+                        "en": "external_id"
                       }
                     }
                   }
@@ -259,9 +284,9 @@
             "name": "user_id",
             "in": "path",
             "description": {
-              "eng": "User Id",
-              "spa": "User Id",
-              "por": "User Id"
+              "en": "User Id",
+              "pt": "User Id",
+              "es": "User Id"
             },
             "required": true,
             "schema": {
@@ -279,14 +304,18 @@
                   "name": {
                     "type": "string",
                     "description": {
-                      "eng": "Store name.",
-                      "spa": "Nombre de la Sucursal",
-                      "por": "Nome da loja"
+                      "en": "Store name.",
+                      "pt": "Nome da loja",
+                      "es": "Nombre de la Sucursal"
                     },
                     "example": "Sucursal Instore"
                   },
                   "business_hours": {
-                    "description": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.",
+                    "description": {
+                      "es": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.",
+                      "pt": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.",
+                      "en": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed."
+                    },
                     "type": "object",
                     "properties": {
                       "monday": {
@@ -297,16 +326,28 @@
                             "open": {
                               "type": "string",
                               "example": "08:00",
-                              "description": "open"
+                              "description": {
+                                "es": "open",
+                                "pt": "open",
+                                "en": "open"
+                              }
                             },
                             "close": {
                               "type": "string",
                               "example": "12:00",
-                              "description": "close"
+                              "description": {
+                                "es": "close",
+                                "pt": "close",
+                                "en": "close"
+                              }
                             }
                           }
                         },
-                        "description": "monday"
+                        "description": {
+                          "es": "monday",
+                          "pt": "monday",
+                          "en": "monday"
+                        }
                       },
                       "tuesday": {
                         "type": "array",
@@ -316,98 +357,110 @@
                             "open": {
                               "type": "string",
                               "example": "09:00",
-                              "description": "open"
+                              "description": {
+                                "es": "open",
+                                "pt": "open",
+                                "en": "open"
+                              }
                             },
                             "close": {
                               "type": "string",
                               "example": "18:00",
-                              "description": "close"
+                              "description": {
+                                "es": "close",
+                                "pt": "close",
+                                "en": "close"
+                              }
                             }
                           }
                         },
-                        "description": "tuesday"
+                        "description": {
+                          "es": "tuesday",
+                          "pt": "tuesday",
+                          "en": "tuesday"
+                        }
                       }
                     }
                   },
                   "external_id": {
                     "type": "string",
                     "description": {
-                      "eng": "Unique identifier of the store defined by integrator system.",
-                      "spa": "Identificador único de la Sucursal definido por el integrador",
-                      "por": "Identificador único da loja definido pelo sistema integrador"
+                      "en": "Unique identifier of the store defined by integrator system.",
+                      "pt": "Identificador único da loja definido pelo sistema integrador.",
+                      "es": "Identificador único de la Sucursal definido por el integrador."
                     },
                     "example": "SUC001"
                   },
                   "location": {
                     "type": "object",
                     "description": {
-                      "eng": "Store location.",
-                      "spa": "Ubicación de la Sucursal",
-                      "por": "Localização da Loja"
+                      "en": "Store location.",
+                      "pt": "Localização da Loja",
+                      "es": "Ubicación de la Sucursal"
                     },
                     "properties": {
                       "street_number": {
                         "type": "string",
                         "description": {
-                          "eng": "Street number.",
-                          "spa": "Número",
-                          "por": "O Número"
+                          "en": "Street number.",
+                          "pt": "O Número",
+                          "es": "Número"
                         },
                         "example": "3039"
                       },
                       "street_name": {
                         "type": "string",
                         "description": {
-                          "eng": "Street name.",
-                          "spa": "Calle",
-                          "por": "Rua"
+                          "en": "Street name.",
+                          "pt": "Rua",
+                          "es": "Calle"
                         },
-                        "example": "Caseros"
+                        "example": "Rua Ângelo Piva"
                       },
                       "city_name": {
                         "type": "string",
                         "description": {
-                          "eng": "City.",
-                          "spa": "Ciudad",
-                          "por": "Cidade"
+                          "en": "City.",
+                          "pt": "Cidade",
+                          "es": "Ciudad"
                         },
-                        "example": "Belgrano"
+                        "example": "Osasco"
                       },
                       "state_name": {
                         "type": "string",
                         "description": {
-                          "eng": "State.",
-                          "spa": "Provincia",
-                          "por": "Província"
+                          "en": "State.",
+                          "pt": "Província",
+                          "es": "Provincia"
                         },
-                        "example": "Capital Federal"
+                        "example": "São Paulo"
                       },
                       "latitude": {
                         "type": "number",
                         "description": {
-                          "eng": "Latitude.",
-                          "spa": "Latitud",
-                          "por": "Latitude"
+                          "en": "Latitude.",
+                          "pt": "Latitude",
+                          "es": "Latitud"
                         },
                         "example": -32.8897322
                       },
                       "longitude": {
                         "type": "number",
                         "description": {
-                          "eng": "Longitude.",
-                          "spa": "Longitud",
-                          "por": "Longitude"
+                          "en": "Longitude.",
+                          "pt": "Longitude",
+                          "es": "Longitud"
                         },
                         "example": -68.8443275
                       },
                       "reference": {
                         "type": "string",
                         "description": {
-                          "eng": "Reference.",
-                          "spa": "Referencia",
-                          "por": "Referência"
+                          "en": "Reference.",
+                          "pt": "Referência",
+                          "es": "Referencia"
                         },
-                        "example": "3er Piso"
+                        "example": "Melicidade"
                       }
                     }
                   }
@@ -419,9 +472,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "Success",
+              "es": "Success",
               "pt": "Success",
-              "es": "Success"
+              "en": "Success"
             },
             "content": {
               "application/json": {
@@ -432,27 +485,27 @@
                       "type": "string",
                       "example": 1234567,
                       "description": {
-                        "en": "id",
+                        "es": "id",
                         "pt": "id",
-                        "es": "id"
+                        "en": "id"
                       }
                     },
                     "name": {
                       "type": "string",
                       "example": "Sucursal Instore",
                       "description": {
-                        "en": "name",
+                        "es": "name",
                         "pt": "name",
-                        "es": "name"
+                        "en": "name"
                       }
                     },
                     "date_created": {
                       "type": "string",
                       "example": "2019-08-08T19:29:45.019Z",
                       "description": {
-                        "en": "date_created",
+                        "es": "date_created",
                         "pt": "date_created",
-                        "es": "date_created"
+                        "en": "date_created"
                       }
                     },
                     "business_hours": {
@@ -466,19 +519,27 @@
                               "open": {
                                 "type": "string",
                                 "example": "08:00",
-                                "description": "open"
+                                "description": {
+                                  "es": "open",
+                                  "pt": "open",
+                                  "en": "open"
+                                }
                               },
                               "close": {
                                 "type": "string",
                                 "example": "12:00",
-                                "description": "close"
+                                "description": {
+                                  "es": "close",
+                                  "pt": "close",
+                                  "en": "close"
+                                }
                               }
                             }
                           },
                           "description": {
-                            "en": "monday",
+                            "es": "monday",
                             "pt": "monday",
-                            "es": "monday"
+                            "en": "monday"
                           }
                         },
                         "tuesday": {
@@ -489,26 +550,34 @@
                               "open": {
                                 "type": "string",
                                 "example": "09:00",
-                                "description": "open"
+                                "description": {
+                                  "es": "open",
+                                  "pt": "open",
+                                  "en": "open"
+                                }
                               },
                               "close": {
                                 "type": "string",
                                 "example": "18:00",
-                                "description": "close"
+                                "description": {
+                                  "es": "close",
+                                  "pt": "close",
+                                  "en": "close"
+                                }
                               }
                             }
                           },
                           "description": {
-                            "en": "tuesday",
+                            "es": "tuesday",
                             "pt": "tuesday",
-                            "es": "tuesday"
+                            "en": "tuesday"
                           }
                         }
                       },
                       "description": {
-                        "en": "business_hours",
+                        "es": "business_hours",
                         "pt": "business_hours",
-                        "es": "business_hours"
+                        "en": "business_hours"
                       }
                     },
                     "location": {
@@ -518,52 +587,52 @@
                           "type": "string",
                           "example": "Caseros 3039 Belgrano Capital Federal",
                           "description": {
-                            "en": "address_line",
+                            "es": "address_line",
                             "pt": "address_line",
-                            "es": "address_line"
+                            "en": "address_line"
                           }
                         },
                         "latitude": {
                           "type": "number",
                           "example": -32.8897322,
                           "description": {
-                            "en": "latitude",
+                            "es": "latitude",
                             "pt": "latitude",
-                            "es": "latitude"
+                            "en": "latitude"
                           }
                         },
                         "longitude": {
                           "type": "number",
                           "example": -68.8443275,
                           "description": {
-                            "en": "longitude",
+                            "es": "longitude",
                             "pt": "longitude",
-                            "es": "longitude"
+                            "en": "longitude"
                           }
                         },
                         "reference": {
                           "type": "string",
                           "example": "3er Piso",
                           "description": {
-                            "en": "reference",
+                            "es": "reference",
                             "pt": "reference",
-                            "es": "reference"
+                            "en": "reference"
                           }
                         }
                       },
                       "description": {
-                        "en": "location",
+                        "es": "location",
                         "pt": "location",
-                        "es": "location"
+                        "en": "location"
                       }
                     },
                     "external_id": {
                       "type": "string",
                       "example": "SUC001",
                       "description": {
-                        "en": "external_id",
+                        "es": "external_id",
                         "pt": "external_id",
-                        "es": "external_id"
+                        "en": "external_id"
                       }
                     }
                   }
@@ -736,9 +805,9 @@
             "name": "user_id",
             "in": "path",
             "description": {
-              "eng": "User Id",
-              "spa": "User Id",
-              "por": "User Id"
+              "en": "User Id",
+              "pt": "User Id",
+              "es": "User Id"
             },
             "required": true,
             "schema": {
@@ -750,9 +819,9 @@
             "name": "external_id",
             "in": "query",
             "description": {
-              "eng": "Unique identifier of the store defined by integrator system",
-              "spa": "Unique identifier of the store defined by integrator system",
-              "por": "Unique identifier of the store defined by integrator system"
+              "en": "Unique identifier of the store defined by integrator system",
+              "pt": "Unique identifier of the store defined by integrator system",
+              "es": "Unique identifier of the store defined by integrator system"
             },
             "required": false,
             "schema": {
@@ -764,9 +833,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "Success",
+              "es": "Success",
               "pt": "Success",
-              "es": "Success"
+              "en": "Success"
             },
             "content": {
               "application/json": {
@@ -782,34 +851,34 @@
                             "type": "number",
                             "example": 1,
                             "description": {
-                              "en": "total",
+                              "es": "total",
                               "pt": "total",
-                              "es": "total"
+                              "en": "total"
                             }
                           },
                           "offset": {
                             "type": "number",
                             "example": 0,
                             "description": {
-                              "en": "offset",
+                              "es": "offset",
                               "pt": "offset",
-                              "es": "offset"
+                              "en": "offset"
                             }
                           },
                           "limit": {
                             "type": "number",
                             "example": 30,
                             "description": {
-                              "en": "limit",
+                              "es": "limit",
                               "pt": "limit",
-                              "es": "limit"
+                              "en": "limit"
                             }
                           }
                         },
                         "description": {
-                          "en": "paging",
+                          "es": "paging",
                           "pt": "paging",
-                          "es": "paging"
+                          "en": "paging"
                         }
                       },
                       "results": {
@@ -820,18 +889,30 @@
                             "id": {
                               "type": "string",
                               "example": 30163646,
-                              "description": "id"
+                              "description": {
+                                "es": "id",
+                                "pt": "id",
+                                "en": "id"
+                              }
                             },
                             "name": {
                               "type": "string",
                               "example": "Sucursal Instore",
-                              "description": "name"
+                              "description": {
+                                "es": "name",
+                                "pt": "name",
+                                "en": "name"
+                              }
                             },
                             "date_creation": {
                               "type": "string",
                               "format": "date-time",
                               "example": "2021-04-16T14:54:28.573Z",
-                              "description": "date_creation"
+                              "description": {
+                                "es": "date_creation",
+                                "pt": "date_creation",
+                                "en": "date_creation"
+                              }
                             },
                             "business_hours": {
                               "type": "object",
@@ -844,16 +925,28 @@
                                       "open": {
                                         "type": "string",
                                         "example": "08:00",
-                                        "description": "open"
+                                        "description": {
+                                          "es": "open",
+                                          "pt": "open",
+                                          "en": "open"
+                                        }
                                       },
                                       "close": {
                                         "type": "string",
                                         "example": "13:00",
-                                        "description": "close"
+                                        "description": {
+                                          "es": "close",
+                                          "pt": "close",
+                                          "en": "close"
+                                        }
                                       }
                                     }
                                   },
-                                  "description": "monday"
+                                  "description": {
+                                    "es": "monday",
+                                    "pt": "monday",
+                                    "en": "monday"
+                                  }
                                 },
                                 "tuesday": {
                                   "type": "array",
@@ -863,16 +956,28 @@
                                       "open": {
                                         "type": "string",
                                         "example": "08:00",
-                                        "description": "open"
+                                        "description": {
+                                          "es": "open",
+                                          "pt": "open",
+                                          "en": "open"
+                                        }
                                       },
                                       "close": {
                                         "type": "string",
                                         "example": "18:00",
-                                        "description": "close"
+                                        "description": {
+                                          "es": "close",
+                                          "pt": "close",
+                                          "en": "close"
+                                        }
                                       }
                                     }
                                   },
-                                  "description": "tuesday"
+                                  "description": {
+                                    "es": "tuesday",
+                                    "pt": "tuesday",
+                                    "en": "tuesday"
+                                  }
                                 },
                                 "wednesday": {
                                   "type": "array",
@@ -882,19 +987,35 @@
                                       "open": {
                                         "type": "string",
                                         "example": "07:00",
-                                        "description": "open"
+                                        "description": {
+                                          "es": "open",
+                                          "pt": "open",
+                                          "en": "open"
+                                        }
                                       },
                                       "close": {
                                         "type": "string",
                                         "example": "10:00",
-                                        "description": "close"
+                                        "description": {
+                                          "es": "close",
+                                          "pt": "close",
+                                          "en": "close"
+                                        }
                                       }
                                     }
                                   },
-                                  "description": "wednesday"
+                                  "description": {
+                                    "es": "wednesday",
+                                    "pt": "wednesday",
+                                    "en": "wednesday"
+                                  }
                                 }
                               },
-                              "description": "business_hours"
+                              "description": {
+                                "es": "business_hours",
+                                "pt": "business_hours",
+                                "en": "business_hours"
+                              }
                             },
                             "location": {
                               "type": "object",
@@ -902,37 +1023,61 @@
                                 "address_line": {
                                   "type": "string",
                                   "example": "Caseros 3039, Belgrano, Capital Federal, Argentina",
-                                  "description": "address_line"
+                                  "description": {
+                                    "es": "address_line",
+                                    "pt": "address_line",
+                                    "en": "address_line"
+                                  }
                                 },
                                 "reference": {
                                   "type": "string",
                                   "example": "3er Piso",
-                                  "description": "reference"
+                                  "description": {
+                                    "es": "reference",
+                                    "pt": "reference",
+                                    "en": "reference"
+                                  }
                                 },
                                 "latitude": {
                                   "type": "number",
                                   "example": -32.8897322,
-                                  "description": "latitude"
+                                  "description": {
+                                    "es": "latitude",
+                                    "pt": "latitude",
+                                    "en": "latitude"
+                                  }
                                 },
                                 "longitude": {
                                   "type": "number",
                                   "example": -68.8443275,
-                                  "description": "longitude"
+                                  "description": {
+                                    "es": "longitude",
+                                    "pt": "longitude",
+                                    "en": "longitude"
+                                  }
                                 }
                               },
-                              "description": "location"
+                              "description": {
+                                "es": "location",
+                                "pt": "location",
+                                "en": "location"
+                              }
                             },
                             "external_id": {
                               "type": "string",
                               "example": "SUC001",
-                              "description": "external_id"
+                              "description": {
+                                "es": "external_id",
+                                "pt": "external_id",
+                                "en": "external_id"
+                              }
                             }
                           }
                         },
                         "description": {
-                          "en": "results",
+                          "es": "results",
                           "pt": "results",
-                          "es": "results"
+                          "en": "results"
                         }
                       }
                     }
@@ -1018,9 +1163,9 @@
             "name": "user_id",
             "in": "path",
             "description": {
-              "eng": "User Id",
-              "spa": "User Id",
-              "por": "User Id"
+              "en": "User Id",
+              "pt": "User Id",
+              "es": "User Id"
             },
             "required": true,
             "schema": {
@@ -1032,9 +1177,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "eng": "Store's Id",
-              "spa": "Store's Id",
-              "por": "Store's Id"
+              "en": "Store's Id",
+              "pt": "Store's Id",
+              "es": "Store's Id"
             },
             "required": true,
             "schema": {
@@ -1052,14 +1197,18 @@
                   "name": {
                     "type": "string",
                     "description": {
-                      "eng": "Store name.",
-                      "spa": "Nombre de la Sucursal",
-                      "por": "Nome da loja"
+                      "en": "Store name.",
+                      "pt": "Nome da loja",
+                      "es": "Nombre de la Sucursal"
                     },
                     "example": "Sucursal Instore 2"
                   },
                   "business_hours": {
-                    "description": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.",
+                    "description": {
+                      "es": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.",
+                      "pt": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.",
+                      "en": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed."
+                    },
                     "type": "object",
                     "properties": {
                       "monday": {
@@ -1070,16 +1219,28 @@
                             "open": {
                               "type": "string",
                               "example": "08:00",
-                              "description": "open"
+                              "description": {
+                                "es": "open",
+                                "pt": "open",
+                                "en": "open"
+                              }
                             },
                             "close": {
                               "type": "string",
                               "example": "12:00",
-                              "description": "close"
+                              "description": {
+                                "es": "close",
+                                "pt": "close",
+                                "en": "close"
+                              }
                             }
                           }
                         },
-                        "description": "monday"
+                        "description": {
+                          "es": "monday",
+                          "pt": "monday",
+                          "en": "monday"
+                        }
                       },
                       "tuesday": {
                         "type": "array",
@@ -1089,96 +1250,108 @@
                             "open": {
                               "type": "string",
                               "example": "09:00",
-                              "description": "open"
+                              "description": {
+                                "es": "open",
+                                "pt": "open",
+                                "en": "open"
+                              }
                             },
                             "close": {
                               "type": "string",
                               "example": "18:00",
-                              "description": "close"
+                              "description": {
+                                "es": "close",
+                                "pt": "close",
+                                "en": "close"
+                              }
                             }
                           }
                         },
-                        "description": "tuesday"
+                        "description": {
+                          "es": "tuesday",
+                          "pt": "tuesday",
+                          "en": "tuesday"
+                        }
                       }
                     }
                   },
                   "external_id": {
                     "type": "string",
                     "description": {
-                      "eng": "Unique identifier of the store defined by integrator system.",
-                      "spa": "Identificador único de la Sucursal definido por el integrador",
-                      "por": "Identificador único da loja definido pelo sistema integrador"
+                      "en": "Unique identifier of the store defined by integrator system.",
+                      "pt": "Identificador único da loja definido pelo sistema integrador",
+                      "es": "Identificador único de la Sucursal definido por el integrador"
                     },
                     "example": "SUC002"
                   },
                   "location": {
                     "type": "object",
                     "description": {
-                      "eng": "Store location.",
-                      "spa": "Ubicación de la Sucursal",
-                      "por": "Localização da Loja"
+                      "en": "Store location.",
+                      "pt": "Localização da Loja",
+                      "es": "Ubicación de la Sucursal"
                     },
                     "properties": {
                       "street_number": {
                         "type": "string",
                         "description": {
-                          "eng": "Street number.",
-                          "spa": "Número",
-                          "por": "O Número"
+                          "en": "Street number.",
+                          "pt": "O Número",
+                          "es": "Número"
                         },
-                        "example": 3040
+                        "example": "3040"
                       },
                       "street_name": {
                         "type": "string",
                         "description": {
-                          "eng": "Street name.",
-                          "spa": "Calle",
-                          "por": "Rua"
+                          "en": "Street name.",
+                          "pt": "Rua",
+                          "es": "Calle"
                         },
                         "example": "Caseros"
                       },
                       "city_name": {
                         "type": "string",
                         "description": {
-                          "eng": "City.",
-                          "spa": "Ciudad",
-                          "por": "Cidade"
+                          "en": "City.",
+                          "pt": "Cidade",
+                          "es": "Ciudad"
                         },
                         "example": "Belgrano"
                       },
                       "state_name": {
                         "type": "string",
                         "description": {
-                          "eng": "State.",
-                          "spa": "Provincia",
-                          "por": "Província"
+                          "en": "State.",
+                          "pt": "Província",
+                          "es": "Provincia"
                         },
                         "example": "Capital Federal"
                       },
                       "latitude": {
                         "type": "number",
                         "description": {
-                          "eng": "Latitude.",
-                          "spa": "Latitud",
-                          "por": "Latitude"
+                          "en": "Latitude.",
+                          "pt": "Latitude",
+                          "es": "Latitud"
                         },
                         "example": -32.8897322
                       },
                       "longitude": {
                         "type": "number",
                         "description": {
-                          "eng": "Longitude.",
-                          "spa": "Longitud",
-                          "por": "Longitude"
+                          "en": "Longitude.",
+                          "pt": "Longitude",
+                          "es": "Longitud"
                         },
                         "example": -68.8443275
                       },
                       "reference": {
                         "type": "string",
                         "description": {
-                          "eng": "Reference.",
-                          "spa": "Referencia",
-                          "por": "Referência"
+                          "en": "Reference.",
+                          "pt": "Referência",
+                          "es": "Referencia"
                         },
                         "example": "3er Piso"
                       }
@@ -1192,9 +1365,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "success",
+              "es": "success",
               "pt": "success",
-              "es": "success"
+              "en": "success"
             },
             "content": {
               "application/json": {
@@ -1205,18 +1378,18 @@
                       "type": "string",
                       "example": 1234567,
                       "description": {
-                        "en": "id",
+                        "es": "id",
                         "pt": "id",
-                        "es": "id"
+                        "en": "id"
                       }
                     },
                     "name": {
                       "type": "string",
                       "example": "Sucursal Instore 2",
                       "description": {
-                        "en": "name",
+                        "es": "name",
                         "pt": "name",
-                        "es": "name"
+                        "en": "name"
                       }
                     },
                     "date_creation": {
@@ -1234,26 +1407,34 @@
                               "open": {
                                 "type": "string",
                                 "example": "08:00",
-                                "description": "open"
+                                "description": {
+                                  "es": "open",
+                                  "pt": "open",
+                                  "en": "open"
+                                }
                               },
                               "close": {
                                 "type": "string",
                                 "example": "12:00",
-                                "description": "close"
+                                "description": {
+                                  "es": "close",
+                                  "pt": "close",
+                                  "en": "close"
+                                }
                               }
                             }
                           },
                           "description": {
-                            "en": "monday",
+                            "es": "monday",
                             "pt": "monday",
-                            "es": "monday"
+                            "en": "monday"
                           }
                         }
                       },
                       "description": {
-                        "en": "business_hours",
+                        "es": "business_hours",
                         "pt": "business_hours",
-                        "es": "business_hours"
+                        "en": "business_hours"
                       }
                     },
                     "location": {
@@ -1263,61 +1444,61 @@
                           "type": "string",
                           "example": "Caseros 3040, Belgrano, Capital Federal, Argentina",
                           "description": {
-                            "en": "address_line",
+                            "es": "address_line",
                             "pt": "address_line",
-                            "es": "address_line"
+                            "en": "address_line"
                           }
                         },
                         "latitude": {
                           "type": "number",
                           "example": -32.8897322,
                           "description": {
-                            "en": "latitude",
+                            "es": "latitude",
                             "pt": "latitude",
-                            "es": "latitude"
+                            "en": "latitude"
                           }
                         },
                         "longitude": {
                           "type": "number",
                           "example": -68.8443275,
                           "description": {
-                            "en": "longitude",
+                            "es": "longitude",
                             "pt": "longitude",
-                            "es": "longitude"
+                            "en": "longitude"
                           }
                         },
                         "reference": {
                           "type": "string",
                           "example": "3er Piso",
                           "description": {
-                            "en": "reference",
+                            "es": "reference",
                             "pt": "reference",
-                            "es": "reference"
+                            "en": "reference"
                           }
                         }
                       },
                       "description": {
-                        "en": "location",
+                        "es": "location",
                         "pt": "location",
-                        "es": "location"
+                        "en": "location"
                       }
                     },
                     "external_id": {
                       "type": "string",
                       "example": "SUC002",
                       "description": {
-                        "en": "external_id",
+                        "es": "external_id",
                         "pt": "external_id",
-                        "es": "external_id"
+                        "en": "external_id"
                       }
                     },
                     "date_created": {
                       "type": "string",
                       "example": "2019-08-08T19:29:45.019Z",
                       "description": {
-                        "en": "date_created",
+                        "es": "date_created",
                         "pt": "date_created",
-                        "es": "date_created"
+                        "en": "date_created"
                       }
                     }
                   }
@@ -1488,9 +1669,9 @@
             "name": "user_id",
             "in": "path",
             "description": {
-              "eng": "User Id",
-              "spa": "User Id",
-              "por": "User Id"
+              "en": "User Id",
+              "pt": "User Id",
+              "es": "User Id"
             },
             "required": true,
             "schema": {
@@ -1502,9 +1683,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "eng": "Store's Id",
-              "spa": "Store's Id",
-              "por": "Store's Id"
+              "en": "Store's Id",
+              "pt": "Store's Id",
+              "es": "Store's Id"
             },
             "required": true,
             "schema": {
@@ -1516,9 +1697,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "success",
+              "es": "success",
               "pt": "success",
-              "es": "success"
+              "en": "success"
             },
             "content": {
               "application/json": {
@@ -1591,6 +1772,5 @@
         }
       }
     }
-  },
-  "url": "https://api.mercadopago.com"
+  }
 }

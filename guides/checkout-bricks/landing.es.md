@@ -39,7 +39,7 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
- - card_description: Ofrece diferentes medios de pago entre los que podrán elegir tus clientes, con la posibilidad de guardar los datos de la tarjeta para futuras compras. Prueba la demostración del Brick antes de integrarlo.
+ - card_description: Ofrece diferentes medios de pago entre los que podrán elegir tus clientes, con la posibilidad de guardar datos de la tarjeta para futuras compras. Prueba la demostración del Brick antes de integrarlo.
  - card_link: /developers/es/docs/checkout-bricks/payment-brick/introduction
  - card_linkDescription: Saber más
  - card_pillText: DISPONIBLE
@@ -97,7 +97,7 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
- - card_description: Ofrece diferentes medios de pago entre los que podrán elegir tus clientes, con la posibilidad de guardar los datos de la tarjeta para futuras compras. Prueba la demostración del Brick antes de integrarlo.
+ - card_description: Ofrece diferentes medios de pago entre los que podrán elegir tus clientes, con la posibilidad de guardar datos de la tarjeta para futuras compras. Prueba la demostración del Brick antes de integrarlo.
  - card_link: /developers/es/docs/checkout-bricks/payment-brick/introduction
  - card_linkDescription: Saber más
  - card_pillText: DISPONIBLE
@@ -155,7 +155,7 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
- - card_description: Ofrece diferentes medios de pago entre los que podrán elegir tus clientes, con la posibilidad de guardar los datos de la tarjeta para futuras compras. Prueba la demostración del Brick antes de integrarlo.
+ - card_description: Ofrece diferentes medios de pago entre los que podrán elegir tus clientes, con la posibilidad de guardar datos de la tarjeta para futuras compras. Prueba la demostración del Brick antes de integrarlo.
  - card_link: /developers/es/docs/checkout-bricks/payment-brick/introduction
  - card_linkDescription: Saber más
  - card_pillText: DISPONIBLE

@@ -7,10 +7,10 @@ Para configurar estos medios de pago, dirígete al panel de administración de t
 1. Haz clic en el botón "+ (Agregar nuevo plan de pago para ...)”.
 2. Dentro de las categorías **Tarjeta de débito** o **Tarjeta de crédito**, encontrarás las distintas marcas de tarjeta que puedes ofrecer. Debes hacer clic en ellas y configurar cada una de manera particular para poder habilitarlas. Puedes consultar más información sobre esta configuración en la [sección de tutoriales de VTEX](https://help.vtex.com/es/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros). 
 3. Una vez hayas seleccionado la marca de la tarjeta que deseas ofrecer, completa los campos que te mostrará la pantalla siguiente: 
-    * Escribe el **Nombre de la Regla**, que te permitirá identificar este medio de pago.
-    * En **Proceso con la afiliación**, selecciona **MercadoPagoV2**. 
-    * Activa la condición de pago desde el campo **Status**, utilizando el botón slider. 
-    * Para activar el pago financiado, selecciona la opción **Automático**. Se ofrecerá la financiación previamente configurada en la cuenta de vendedor de Mercado Pago. Dirígete al subtítulo “Plazos e intereses” para saber más. 
+    1. Escribe el **Nombre de la Regla**, que te permitirá identificar este medio de pago.
+    2. En **Proceso con la afiliación**, selecciona **MercadoPagoV2**. 
+    3. En el campo **Status**, activa la condición de pago utilizando el botón slider. 
+    4. Para activar el pago financiado, selecciona la opción **Automático**. Se ofrecerá la financiación previamente configurada en la cuenta de vendedor de Mercado Pago. Dirígete al subtítulo “Plazos e intereses” para saber más. 
 
 > NOTE
 >
@@ -20,7 +20,7 @@ Para configurar estos medios de pago, dirígete al panel de administración de t
 
 4. Haz clic en **Guardar** para activar la configuración de esa tarjeta y, si lo deseas, repite el proceso para configurar otras marcas.
 
-![Configurar condiciones de pago con tarjeta de crédito](/images/vtex/paymentconditions-cc-imagenv2-pt.gif)
+![Configurar condiciones de pago con tarjeta de crédito](/images/vtex/paymentconditions-cc-imagenv2-es.gif)
 
 ## Plazos e intereses
 

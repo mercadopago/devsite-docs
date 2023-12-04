@@ -2,11 +2,13 @@
 
 Inside the `onSubmit` callback there is a second parameter, **of optional use**, called `additionalData.` It is an object and can contain additional data useful for your integration, but which is **not necessary** for the commit of payment on the backend.
 
-See the following table for the fields contained within the `additionalData` object.
+Check out the table below for the fields contained within the `additionalData` object, which will only be returned if the user has opted for payment with a card.
 
 |Field | Type | Description |
 |--- |--- | --- |
-| bin | string | BIN of the card entered by the user. It is only returned if the user has chosen to pay by card.|
+| bin | string | BIN of the card entered by the user. |
+| lastFourDigits | string | The last four digits for card purchases.|
+| cardholderName | string | Name of the cardholder.|
 
 See an example of usage below:
 

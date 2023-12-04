@@ -26,7 +26,7 @@ Para incluir o SDK do Mercado Pago.js, adicione o seguinte código ao HTML do se
 // SDK MercadoPago.js
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
-```bash
+```node
 npm install @mercadopago/sdk-react
 ```
 ]]]
@@ -68,13 +68,14 @@ Ao finalizar a etapa anterior, **inicialize seu checkout utilizando o ID da pref
 [[[
 ```Javascript
 mp.bricks().create("wallet", "wallet_container", {
-   initialization: {
-       preferenceId: "<PREFERENCE_ID>",
-   },
-customization: {
- texts: {
-  valueProp: 'smart_option',
- },
+  initialization: {
+      preferenceId: "<PREFERENCE_ID>",
+  },
+  customization: {
+    texts: {
+      valueProp: 'smart_option',
+    },
+  },
 });
 ```
 ```react-jsx
