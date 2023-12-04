@@ -192,11 +192,7 @@ Para casos en que el _Challenge_ es necesario, el `status` mostrará el valor `p
 
 ### Overview del response (se omitió información)
 
-> NOTE
->
-> Importante
->
-> Cuando se inicia el Challenge, el usuario tiene aproximadamente 5 minutos para completarlo. Si no se completa, el banco rechazará la transacción y Mercado Pago considerará el pago cancelado. Mientras el usuario no complete el Challenge, el estado del pago permanecerá como `pending_challenge`.
+Cuando se inicia el Challenge, el usuario tiene aproximadamente 5 minutos para completarlo. Si no se completa, el banco rechazará la transacción y Mercado Pago considerará el pago cancelado. Mientras el usuario no complete el Challenge, el estado del pago permanecerá como `pending_challenge`.
 
 [[[
 ```Json
@@ -265,12 +261,6 @@ function doChallenge(payment) {
 ]]]
 
 Cuando el _Challenge_ es finalizado, el status del pago será actualizado. Será `approved` si la autenticación fue exitosa, `rejected` si no lo fue y, en caso de que la autenticación no fuera  hecha, el pago permanecerá `pending`. Esta actualización no es inmediata, puede tardar unos instantes. 
-
-> NOTE
->
-> Importante
->
-> Cuando se inicia el proceso de _Challenge_, el usuario tiene 5 minutos, aproximadamente, para realizarlo. En caso de que no sea hecho, el banco recusará la transacción y Mercado Pago considerará el pago cancelado. Mientras el usuario no complete el _Challenge_, el pago quedará como `pending_challenge`.
 
 Mira la sección a continuación para más detalles sobre cómo consultar el status de cada transacción.
 

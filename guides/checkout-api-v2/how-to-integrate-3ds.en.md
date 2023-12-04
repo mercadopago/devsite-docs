@@ -192,6 +192,8 @@ For cases where the Challenge is necessary, the status will show the value `pend
 
 ### Response overview (information omitted)
 
+When the Challenge is initiated, the user has about 5 minutes to complete it. If it is not completed, the bank will decline the transaction and Mercado Pago will consider the payment cancelled. While the user doesn't complete the Challenge, the payment will remain as `pending_challenge`.
+
 [[[
 ```Json
 
@@ -260,11 +262,6 @@ function doChallenge(payment) {
 
 When the Challenge is completed, the payment status will be updated to `approved` if the authentication is successful, and `rejected` if it is not. In situations where authentication is not performed, the payment remains `pending`. This update is not immediate and may take a few moments.
 
-> NOTE
->
-> Important
->
-> When the Challenge is initiated, the user has about 5 minutes to complete it. If it is not completed, the bank will decline the transaction and Mercado Pago will consider the payment cancelled. While the user doesn't complete the Challenge, the payment will remain as `pending_challenge`.
 
 See the section below for more details on how to check the status of each transaction.
 
