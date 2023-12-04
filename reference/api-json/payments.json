@@ -940,9 +940,9 @@
                       "type": "string",
                       "example": "2019-07-24T14:47:58.000Z",
                       "description": {
-                        "en": "Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).",
-                        "pt": "Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).",
-                        "es": "Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago)."
+                        "en": "Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment). The field can take on the values “pending” or “released”, where the first indicates that the payment has not yet been released (money held for a period) and “released” means that the money has already been released to the user's available balance.",
+                        "pt": "Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento). O campo pode assumir os valores “pending” ou “released”, sendo que o primeiro indica que o pagamento ainda não foi liberado (dinheiro retido por tempo) e “released” significa que o dinheiro já foi liberado para o saldo disponível do usuário.",
+                        "es": "Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago). El campo puede tomar los valores “pending” o “released”, siendo que el primero indica que el pago todavía no fue liberado (dinero retenido por tiempo) y “released” significa que el dinero ya fue liberado al disponible del usuario."
                       }
                     },
                     "operation_type": {
@@ -2790,9 +2790,9 @@
                       "type": "string",
                       "example": "2017-09-14T11:26:38.000Z",
                       "description": {
-                        "en": "Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).",
-                        "pt": "Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).",
-                        "es": "Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago)."
+                        "en": "Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment). The field can take on the values “pending” or “released”, where the first indicates that the payment has not yet been released (money held for a period) and “released” means that the money has already been released to the user's available balance.",
+                        "pt": "Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento). O campo pode assumir os valores “pending” ou “released”, sendo que o primeiro indica que o pagamento ainda não foi liberado (dinheiro retido por tempo) e “released” significa que o dinheiro já foi liberado para o saldo disponível do usuário.",
+                        "es": "Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago). El campo puede tomar los valores “pending” o “released”, siendo que el primero indica que el pago todavía no fue liberado (dinero retenido por tiempo) y “released” significa que el dinero ya fue liberado al disponible del usuario."
                       }
                     },
                     "operation_type": {
@@ -4120,9 +4120,9 @@
                       "type": "string",
                       "example": "2019-07-24T14:47:58.000Z",
                       "description": {
-                        "en": "Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).",
-                        "pt": "Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).",
-                        "es": "Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago)."
+                        "en": "Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment). The field can take on the values “pending” or “released”, where the first indicates that the payment has not yet been released (money held for a period) and “released” means that the money has already been released to the user's available balance.",
+                        "pt": "Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento). O campo pode assumir os valores “pending” ou “released”, sendo que o primeiro indica que o pagamento ainda não foi liberado (dinheiro retido por tempo) e “released” significa que o dinheiro já foi liberado para o saldo disponível do usuário.",
+                        "es": "Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago). El campo puede tomar los valores “pending” o “released”, siendo que el primero indica que el pago todavía no fue liberado (dinero retenido por tiempo) y “released” significa que el dinero ya fue liberado al disponible del usuario."
                       }
                     },
                     "operation_type": {
@@ -5537,9 +5537,9 @@
                               "type": "string",
                               "example": "2017-09-14T11:26:38.000Z",
                               "description": {
-                                "en": "Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).",
-                                "pt": "Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).",
-                                "es": "Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago)."
+                                "en": "Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment). The field can take on the values “pending” or “released”, where the first indicates that the payment has not yet been released (money held for a period) and “released” means that the money has already been released to the user's available balance.",
+                                "pt": "Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento). O campo pode assumir os valores “pending” ou “released”, sendo que o primeiro indica que o pagamento ainda não foi liberado (dinheiro retido por tempo) e “released” significa que o dinheiro já foi liberado para o saldo disponível do usuário.",
+                                "es": "Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago). El campo puede tomar los valores “pending” o “released”, siendo que el primero indica que el pago todavía no fue liberado (dinero retenido por tiempo) y “released” significa que el dinero ya fue liberado al disponible del usuario."
                               }
                             },
                             "operation_type": {
