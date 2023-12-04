@@ -171,7 +171,7 @@ npm install @mercadopago/sdk-js
 ```
 ]]]
 
-## Configurar credencial
+## Configurar credenciais
 
 As credenciais são senhas únicas com as quais identificamos uma integração na sua conta. Servem para capturar pagamentos em lojas virtuais e outras aplicações de forma segura.
 

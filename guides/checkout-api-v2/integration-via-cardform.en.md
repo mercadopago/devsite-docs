@@ -47,7 +47,7 @@ npm install @mercadopago/sdk-js
 
 Credentials are unique keys with which we identify an integration in your account. They are made to capture payments in virtual stores and other applications securely.
 
-This is the first step of a complete code structure that must be followed for the correct integration of payment via card. Pay attention to the blocks below to add to the codes as indicated.
+This is the first step of a complete code structure that must be followed for the correct integration of payment via card. 
 
 [[[
 ```html
