@@ -9,7 +9,7 @@ Para oferecer pagamentos com **PSE**, siga as etapas abaixo.
 >
 > Importante
 >
-> Lembre-se de configurar suas [credenciais](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials) antes de iniciar sua integração.
+> Lembre-se de configurar suas [Credenciais](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials) antes de iniciar sua integração.
 
 > SERVER_SIDE
 >
@@ -712,7 +712,7 @@ A resposta mostrará o status `pendente` até que o comprador realize o pagament
 >
 > Importante
 >
-> Caso receba um erro ao gerar um pagamento, você pode consultar a lista de possíveis erros na seção [Referência de API](/developers/pt/reference/payments/_payments/post), ou vá para [Erros em pagamentos com PSE](/developers/pt/checkout-api/error-messages/pse-errors).
+> Caso receba um erro ao gerar um pagamento, você pode consultar a lista de possíveis erros na seção [Referência de API](/developers/pt/reference/payments/_payments/post), ou vá para [Erros em pagamentos com PSE](/developers/pt/docs/checkout-api/error-messages/pse-errors).
 
 ### Exemplos de mensagens para callback URL
 

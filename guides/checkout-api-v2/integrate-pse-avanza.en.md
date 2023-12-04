@@ -9,7 +9,7 @@ To offer **PSE** payments, please follow the steps below.
 >
 > Important
 >
-> Remember to configure your [credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials) before starting your integration.
+> Remember to configure your [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials) before starting your integration.
 
 > SERVER_SIDE
 >
@@ -668,7 +668,7 @@ The following are **mandatory** fields that must be completed when sending a pay
 | `payer.entity_type` | Type of personality, physical or legal. | *individual* or *association* | - |
 | `payer.identification` | Type and number of the buyer's document. | - | curl -X GET \<br>'https://api.mercadopago.com/v1/identification_types' \<br>-H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
 | `additional_info.ip_address` |  Buyer’s IP address, where the payment is made.. | - | - |
-| `callback_url` | URL where the buyer is redirected by default after making the payment within the bank's page, when the buyer indicates that they want to return to the store.<br>You can check suggested messages to show the buyer under [Message examples for callback URLs](/developers/en/docs/checkout-api/integration-configuration/pse#bookmark_message_examples_for_callback_urls). | - | - |
+| `callback_url` | URL where the buyer is redirected by default after making the payment within the bank's page, when the buyer indicates that they want to return to the store.<br>You can check suggested messages to show the buyer under [Examples for callback URLs](/developers/en/docs/checkout-api/integration-configuration/pse#bookmark_examples_for_callback_urls). | - | - |
 | `payer.address.zip_code` | Zip code of the payer’s address. | - | - |
 | `payer.address.street_name` | Street name of the payer’s address. | - | - |
 | `payer.address.street_number` | Street number of the payer’s address. | - | - |
@@ -717,7 +717,7 @@ The response will show the **pending status** until the buyer completes the paym
 >
 > Important
 >
-> In case an error is returned when generating a payment, you can check the list of possible errors in the [API Reference section](/developers/en/reference/payments/_payments/post), or go to [Errors with PSE payments](/developers/en/checkout-api/error-messages/pse-errors).
+> In case an error is returned when generating a payment, you can check the list of possible errors in the [API Reference section](/developers/en/reference/payments/_payments/post), or go to [Errors with PSE payments](/developers/en/docs/checkout-api/error-messages/pse-errors).
 
 ### Examples for callback URLs
 
