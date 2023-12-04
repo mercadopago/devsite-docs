@@ -9,4 +9,4 @@ Atualmente existem formas diferentes através das quais os **access tokens** e *
 * **Limpeza de sessão do usuário**: aciona a atualização de todos os tokens de vendedor e concessões temporárias.
 * **Exclusão de aplicação**: quando uma aplicação é excluída, todos os tokens e concessões temporárias pertencentes a ele são excluídos.
  
-Você pode receber notificações webhook sempre que um vendedor autorizar ou desautorizar sua aplicação. Para configurá-las, veja mais informações em [Webhooks](/developers/pt/docs/checkout-pro/additional-content/your-integrations/notifications/webhooks) nas [Suas integraçÕes](/developers/pt/docs/checkout-pro/additional-content/your-integrations/introduction).
+Você pode receber notificações webhook sempre que um vendedor autorizar ou desautorizar sua aplicação. Para configurá-las, veja mais informações em [Webhooks](/developers/pt/docs/checkout-pro/additional-content/your-integrations/notifications/webhooks) nas [Suas integrações](/developers/pt/docs/checkout-pro/additional-content/your-integrations/introduction).

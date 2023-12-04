@@ -236,7 +236,7 @@
                         "properties": {
                           "id": {
                             "type": "number",
-                            "example": 329653963
+                            "example": 662208785
                           }
                         }
                       },
@@ -246,7 +246,7 @@
                       },
                       "notification_url": {
                         "type": "string",
-                        "example": "www.yourserver.com"
+                        "example": "http://www.yourserver.com/notification"
                       },
                       "user_id": {
                         "type": "string",
@@ -440,7 +440,7 @@
                       "pt": "Custom order ID you can synchronize with your sale system.",
                       "en": "Custom order ID you can synchronize with your sale system."
                     },
-                    "example": 12345
+                    "example": "12345"
                   },
                   "title": {
                     "type": "string",
@@ -457,7 +457,8 @@
                       "en": "Purchase description.",
                       "pt": "Descrição de compra",
                       "es": "Descripción de la compra"
-                    }
+                    },
+                    "example": "Purchase description."
                   },
                   "notification_url": {
                     "type": "string",
@@ -466,7 +467,7 @@
                       "pt": "URL where you'd like to receive a payment or merchant_order notification.",
                       "en": "URL where you'd like to receive a payment or merchant_order notification."
                     },
-                    "example": "www.yourserver.com"
+                    "example": "http://www.yourserver.com/notification"
                   },
                   "expiration_date": {
                     "type": "string",
@@ -579,7 +580,7 @@
                           "pt": "USER_ID da conta Mercado Pago do sistema integrador",
                           "es": "USER_ID de la cuenta de Mercado Pago del sistema integrador"
                         },
-                        "example": 446566691
+                        "example": 662208785
                       }
                     }
                   },
@@ -597,7 +598,8 @@
                           "en": "Amount to withdraw in local currency.",
                           "pt": "Montante a retirar em moeda local",
                           "es": "Monto a retirar en moneda local"
-                        }
+                        },
+                        "example": 0
                       }
                     }
                   }

@@ -182,4 +182,4 @@ preference = preference_response["response"]
 >
 > Añadir checkout
 
-Los pasos para configurar el Cuenta de Mercado Pago (*client-side*) son los mismos que los presentados [en esta sección](/developers/es/docs/checkout-pro/integrate-checkout-pro).
+Los pasos para configurar el Cuenta de Mercado Pago (*client-side*) son los mismos que los presentados [en esta sección](/developers/es/docs/checkout-pro/integrate-preferences).
