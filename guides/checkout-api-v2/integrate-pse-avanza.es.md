@@ -2,24 +2,43 @@
 # PSE
 Con el Checkout API de Mercado Pago puedes ofrecer pagos con **PSE -Pagos Seguros en Línea-**, el servicio que permite realizar compras y pagos a través de internet debitando los recursos en línea directamente de cuentas de ahorros, corriente o depósito electrónico.
 
-Para obtener una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu _Access token_ al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.
+Para ofrecer pagos con PSE, sigue los siguientes pasos.
+
+> WARNING
+>
+> Importante
+>
+> Recuerda configurar tus [credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials) previo a iniciar tu integración.
+
+
+> SERVER_SIDE
+>
+> h2
+>
+> Obtener medios de pago
+
+Para obtener una lista detallada de todos los medios de pago disponibles para realizar tu integración, envía un **GET** con tu _Access token_ al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.
 
 [[[
 ```php
 <?php
+  use MercadoPago\Client\PaymentMethod\PaymentMethodClient;
+  use MercadoPago\MercadoPagoConfig;
 
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
-  $payment_methods = MercadoPago::get("/v1/payment_methods");
-
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+  $client = new PaymentMethodClient();
+  $payment_methods = $client->list();
 ?>
 ```
 ```node
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
+import MercadoPago, { PaymentMethod } from 'mercadopago';
 
-var response = await mercadopago.payment_methods.listAll();
-var payment_methods = response.body;
+const client = new MercadoPago({ accessToken: '<ACCESS_TOKEN>' });
+const paymentMethod = new PaymentMethod(client);
+
+paymentMethod.get()
+  .then(paymentMethods => res.status(200).json(paymentMethods))
+  .catch(console.log);
 ```
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
@@ -64,62 +83,64 @@ curl -X GET \
 ```
 ]]]
 
-> NOTE
->
-> Nota
->
-> Recomendamos que, al momento de exhibir el listado de bancos, lo hagas en orden alfabético y de manera ascendente; es decir, de la A a la Z. 
+Una vez obtenidos los medios de pago, podrás filtrar la lista de bancos disponibles para pagos con PSE a través del campo `financial_institutions` dentro del objeto con `id=pse`, tal como se muestra en el ejemplo de respuesta a continuación. 
 
-Para ofrecer pagos con **PSE**, sigue los siguientes pasos.
-
-
-## Importar MercadoPago.js
-
-Para realizar la integración de Checkout API, es necesario capturar los datos necesarios para procesar el pago.
-
-Esta captura se realiza incluyendo la biblioteca `MercadoPago.js` en tu proyecto, seguida del formulario de pago. Utiliza el siguiente código para importar la biblioteca MercadoPago.js antes de añadir el formulario de pago.
-
-[[[
-```html
-
-<body>
-  <script src="https://sdk.mercadopago.com/js/v2"></script>
-</body>
+```json
+[
+  {
+       "id": "pse",
+       "name": "PSE",
+       "payment_type_id": "bank_transfer",
+       "status": "active",
+       "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pse.gif",
+       "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pse.gif",
+       "deferred_capture": "does_not_apply",
+       "settings": [],
+       "additional_info_needed": [
+           "entity_type"
+       ],
+       "min_allowed_amount": 1600,
+       "max_allowed_amount": 340000000,
+       "accreditation_time": 30,
+       "financial_institutions": [
+           {
+               "id": "1040",
+               "description": "Banco Agrario"
+           },
+           {
+               "id": "1507",
+               "description": "NEQUI"
+           },
+           {
+               "id": "1052",
+               "description": "Banco AV Villas"
+           },
+           {
+               "id": "1032",
+               "description": "Banco Caja Social"
+           }
+       ],
+       "processing_modes": [
+           "aggregator"
+       ]
+   }
+]
 ```
-]]]
+
+Este listado de bancos será necesario para continuar con la integración durante la etapa [Listar bancos](/developers/es/docs/checkout-api/integration-configuration/pse#bookmark_listar_bancos).
 
 
-## Configurar credenciales
+> CLIENT_SIDE
+>
+> h2
+>
+> Añadir formulario de pago
 
-Las [credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials) son claves únicas con las que identificamos una integración en tu cuenta. Se utilizan para capturar pagos en tiendas online y otras aplicaciones de forma segura.
+Una vez obtenidos los medios de pago, añade el siguiente formulario de pago a tu proyecto.
 
-Esta es la primera etapa de una estructura de código completa que se debe seguir para integrar correctamente los pagos. Presta atención a los siguientes bloques para añadirlos a los códigos como se indica.
-
-
-[[[
-```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-```
-]]]
-
-
-## Añadir formulario de pago
-
-Con la biblioteca `MercadoPago.js` incluida, añade el siguiente formulario de pago a tu proyecto para garantizar la captura segura de los datos de los compradores. En esta etapa es importante utilizar la lista que consultaste para obtener los medios de pago disponibles para crear las opciones de pago que deseas ofrecer.
-
-[[[
 ```html
-
-   <form id="form-checkout" action="/process_payment" method="post">
+ <form id="form-checkout" action="/process_payment" method="post">
     <div>
-      <div>
-        <label for="payerFirstName">Nombre</label>
-        <input id="form-checkout__payerFirstName" name="payerFirstName" type="text">
-      </div>
-      <div>
-        <label for="payerLastName">Appelido</label>
-        <input id="form-checkout__payerLastName" name="payerLastName" type="text">
-      </div>
       <div>
         <label for="zipCode">Zip Code</label>
         <input id="form-checkout__zipCode" name="zipCode" type="text">
@@ -172,7 +193,12 @@ Con la biblioteca `MercadoPago.js` incluida, añade el siguiente formulario de p
         <input id="form-checkout__identificationNumber" name="identificationNumber" type="text">
       </div>
     </div>
-
+    <div>
+      <div>
+        <label for="banksList">Banco</label>
+        <div id="banksList"></div> 
+      </div>
+    </div>
     <div>
       <div>
         <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
@@ -183,17 +209,16 @@ Con la biblioteca `MercadoPago.js` incluida, añade el siguiente formulario de p
     </div>
   </form>
 
-
 ```
-]]]
 
+> CLIENT_SIDE
+>
+> h2
+>
+> Obtener tipos de documentos
 
-## Obtener tipos de documentos
+Para crear un pago con PSE es necesario también obtener el tipo y número de documento del usuario. Estos documentos dependerán del tipo de persona (natural o jurídica) seleccionada durante la adición del formulario de pago, y podrás obtenerlos automáticamente utilizando la siguiente función:  
 
-Después de añadir el formulario de pago, es necesario obtener los tipos de documentos que se utilizarán para rellenarlo. Estos documentos dependerán del tipo de persona (natural o jurídica) seleccionada durante la adición del formulario de pago, y podrás obtenerlos automáticamente utilizando la siguiente función: 
-
-
-[[[
 ```javascript
 
 document.getElementById('form-checkout__personType').addEventListener('change', e => {
@@ -221,24 +246,74 @@ function updateSelectOptions(selectedValue){
         juridicaDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
     }
 }
- 
- (function setIdentificationTypes () {
+
+```
+
+Para que los elementos dinámicos creados con este javascript se carguen cuando la página termine de renderizar, deberás añadir el siguiente código:
+
+```javascript
+(function initCheckout() {
     try {
         const docTypeElement = document.getElementById('form-checkout__identificationType');
- 
+        setPse();
         updateSelectOptions('natural')
     }catch(e) {
         return console.error('Error getting identificationTypes: ', e);
     }
  })();
 
+``` 
+
+> CLIENT_SIDE
+>
+> h2
+>
+> Listar bancos
+
+Al crear un pago con PSE, es necesario enviar el código del banco que será utilizado para hacer la transferencia. Para ello, deberás listar los bancos disponibles y ofrecer las opciones al pagador, para que elija el banco de su preferencia. 
+
+Si todavía no lo has hecho, obtén el listado de bancos disponibles, tal como se indica en la etapa [Obtener medios de pago](/developers/es/docs/checkout-api/integration-configuration/pse#bookmark_obtener_medios_de_pago). Luego, crea un elemento `select` en javascript, y enriquécelo con los datos devueltos en ese llamado, tal como lo muestra el ejemplo a continuación:
+
+```javascript
+function setPse() {
+    fetch('/payment_methods')
+        .then(async function(response) {
+            const paymentMethods = await response.json();
+            const pse = paymentMethods.filter((method) => method.id === 'pse')[0];
+            const banksList = pse.financial_institutions;
+            const banksListElement = document.getElementById('banksList');
+            const selectElement = document.createElement('select');
+            selectElement.name = 'financialInstitution';
+
+            banksList.forEach(bank => {
+                const option = document.createElement('option');
+                option.value = bank.id;
+                option.textContent = bank.description;
+                selectElement.appendChild(option);
+            });
+
+            banksListElement.appendChild(selectElement);
+
+        }).catch(function(reason) {
+            console.error('Failed to get payment methods', reason);
+        });
+}
 ```
-]]]
+
+> NOTE
+>
+> Nota
+>
+> Recomendamos que, al momento de exhibir el listado de bancos, lo hagas en orden alfabético y de manera ascendente; es decir, de la *A* a la *Z*. 
 
 
-## Enviar pago
+> SERVER_SIDE
+>
+> h2
+>
+> Enviar pago
 
-Al finalizar la inclusión del formulario de pago y obtener los tipos de documentos, es necesario enviar el email del comprador, el tipo y número de documento, el medio de pago utilizado y el detalle del importe a pagar utilizando nuestra API de Pagos o uno de nuestros SDKs.
+Al finalizar la inclusión del formulario de pago, obtener los tipos de documentos y configurar el listado de bancos, es necesario enviar el email del comprador, el tipo y número de documento, el medio de pago utilizado y el detalle del importe a pagar utilizando nuestra API de Pagos o uno de nuestros SDKs.
 
 Para configurar pagos con **PSE**, envía un **POST** con los parámetros requeridos al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
@@ -252,97 +327,88 @@ Para configurar pagos con **PSE**, envía un **POST** con los parámetros requer
 ```php
 
 <?php
-require '../vendor/autoload.php';
+use MercadoPago\Client\Payment\PaymentClient;
+use MercadoPago\MercadoPagoConfig;
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-$payment = new MercadoPago\Payment();
-$payment->transaction_amount = 5000;
-$payment->description = "Título del producto";
-$payment->payment_method_id = "pse";
-$payment->additional_info = array(
-  "ip_address" => "127.0.0.1"
-);
-$payment->transaction_details = array(
-  "financial_institution" => '1009'
-);
-$payment->callback_url = "http://www.your-site.com";
+MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+$client = new PaymentClient();
+$payment = $client->create([
+  "transaction_amount" => 5000,
+  "description" => "Product description",
+  "payment_method_id" => "pse",
+  "additional_info" => [
+    "ip_address" => "127.0.0.1"
+  ],
+  "transaction_details" => [
+    "financial_institution" => $_POST['financialInstitution']
+  ],
+  "callback_url" => "http://www.your-site.com",
+  "email" => $_POST['email'],
+  "identification" => [
+       "type" => $_POST['identificationType'],
+       "number" => $_POST['identificationNumber']
+  ],
+  "address" => [
+        "zip_code" => $_POST['zipCode'],
+        "street_name": $_POST['streetName'],
+        "street_number": $_POST['streetNumber'],
+        "neighborhood": $_POST['neighborhood'],
+        "city": $_POST['city'],
+        "federal_unit": $_POST['federalUnit']
+  ],
 
-$payer = new MercadoPago\Payer();
-$payer->email = $_POST['email'];
-$payer->identification = array(
-     "type" => $_POST['identificationType'],
-     "number" => $_POST['identificationNumber']
-);
-$payer->address = array(
-      "zip_code" => $_POST['zipCode'],
-      "street_name": $_POST['streetName'],
-      "street_number": $_POST['streetNumber'],
-      "neighborhood": $_POST['neighborhood'],
-      "city": $_POST['city'],
-      "federal_unit": $_POST['federalUnit']
-);
+  "phone" => [
+       "area_code" => $_POST['phoneAreaCode'],
+       "number" => $_POST['phoneNumber']
+  ],
+  "entity_type" => "individual";
+]);
 
-$payer->phone = array(
-     "area_code" => $_POST['phoneAreaCode'],
-     "number" => $_POST['phoneNumber']
-);
-$payer->entity_type = "individual";
-
-$payment->payer = $payer;
-
-$payment->save();
-
-$response = array(
-    'status' => $payment->status,
-    'status_detail' => $payment->status_detail,
-    'id' => $payment->id
-);
-echo json_encode($response);
+echo implode($payment);
+?>
 
 ```
 ```node
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
- const mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
- 
-var payment = req.body;
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+const payment = new Payment(client);
 
-var payment_data = {
+payment.create({
+      body: {
  	transaction_amount: 5000,
- 	description: 'Título del producto',
+ 	description: 'Product description',
  	payment_method_id: 'pse',
  	payer: {
  		entity_type: 'individual',
- 		email: payment.email,
+ 		email: req.body.email,
  		identification: {
- 			type: payment.identificationType,
- 			number: payment.identificationNumber
+ 			type: req.body.identificationType,
+ 			number: req.body.identificationNumber
  		}
             address: {
-                 zip_code: payment.zipCode,
-                 street_name: payment.streetName,
-                 street_number: payment.streetNumber,
-                 neighborhood: payment.neighborhood,
-                 city: payment.city,
-                 Federal_unit: payment.federalUnit
+                 zip_code: req.body.zipCode,
+                 street_name: req.body.streetName,
+                 street_number: req.body.streetNumber,
+                 neighborhood: req.body.neighborhood,
+                 city: req.body.city,
+                 Federal_unit: req.body.federalUnit
            },
            phone: {
-                 area_code: payment.phoneAreaCode,
-                 number: payment.phoneNumber
+                 area_code: req.body.phoneAreaCode,
+                 number: req.body.phoneNumber
            }
  	},
  	additional_info: {
  		ip_address: '127.0.0.1'
  	},
  	transaction_details: {
- 		financial_institution: '1009'
+ 		financial_institution: req.body.financialInstitution
  	},
  	callback_url: 'http://www.your-site.com'
-};
-
-mercadopago.payment.save(payment_data)
- 	.then(function(response) {
+   }
+}).then(function(response) {
  		res.status(response.status).json({
  			status: response.body.status,
  			status_detail: response.body.status_detail,
@@ -355,39 +421,36 @@ mercadopago.payment.save(payment_data)
 
 ```
 ```java
- MercadoPagoConfig.setAccessToken("YOUR_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("YOUR_ACCESS_TOKEN");
 
   PaymentClient client = new PaymentClient();
 
   IdentificationRequest identification =
   	IdentificationRequest.builder()
-  	.type(request.getPayer().getIdentification().getType())
-  	.number(request.getPayer().getIdentification().getNumber())
+  	.type(request.getIdentificationType())
+  	.number(request.getIdentificationNumber())
   	.build();
 
   PaymentPayerAddressRequest address =
       PaymentPayerAddressRequest.builder()
-      .zipCode(request.getPayer().getAddress().getZipCode())
-      .streetName(request.getPayer().getAddress().getStreetName())
-      .streetNumber(request.getPayer().getAddress().getStretNumber())
-      .neighborhood(request.getPayer().getAddress().getNeighborhood())
-      .city(request.getPayer().getAddress().getCity())
-      .federalUnit(request.getPayer().getAddress().getFederalUnit())
+      .zipCode(request.getZipCode())
+      .streetName(request.getStreetName())
+      .streetNumber(request.getStretNumber())
+      .neighborhood(request.getNeighborhood())
+      .city(request.getCity())
+      .federalUnit(request.getFederalUnit())
       .build();
 
   PaymentPayerPhoneRequest phone =
       PaymentPayerPhoneRequest.builder()
-      .areaCode(request.getPayer().getPhone().getAreaCode())
-      .number(request.getPayer().getPhone().getNumber())
+      .areaCode(request.getPhoneAreaCode())
+      .number(request.getPhoneNumber())
       .build();
 
   PaymentPayerRequest payer =
   	PaymentPayerRequest.builder()
-  	.type("customer")
-  	.email("test_payer_9999999@testuser.com")
+  	.email(request.getEmail())
   	.entityType("individual")
-  	.firstName("Test")
-  	.lastName("User")
   	.identification(identification)
       .address(address)
       .phone(phone)
@@ -399,12 +462,12 @@ mercadopago.payment.save(payment_data)
   	.build();
 
   PaymentTransactionDetailsRequest transactionDetails = PaymentTransactionDetailsRequest.builder()
-  	.financialInstitution("1009")
+  	.financialInstitution(request.getFinancialInstitution())
   	.build();
 
   PaymentCreateRequest paymentCreateRequest = PaymentCreateRequest.builder()
   	.transactionAmount(new BigDecimal(5000))
-  	.description("description")
+  	.description("Product description")
   	.paymentMethodId("pse")
   	.additionalInfo(additionalInfo)
   	.transactionDetails(transactionDetails)
@@ -415,48 +478,46 @@ mercadopago.payment.save(payment_data)
   client.create(paymentCreateRequest);
 ```
 ```ruby
- require 'mercadopago'
+require 'mercadopago'
 sdk = Mercadopago::SDK.new('ACCESS_TOKEN')
 
 payment_data = {
 
   transaction_amount: 5000,
-  description: "description",
+  description: "Product description",
   payment_method_id: "pse",
   additional_info: {
     ip_address: "127.0.0.1"
   },
   transaction_details: {
-    financial_institution: "1009"
+    financial_institution: params[: financialInstitution]
   },
   callback_url: "https://your-site.com"
   payer: {
-    type: "customer",
-    email: "test_payer_9999999@testuser.com",
+    email: params[:email],
     entity_type: "individual",
-    first_name: "Test",
-    last_name: "User",
     identification: {
       type: params[: identificationType],
       number: params[: identificationNumber]
     }
     address: {
-      zip_code: params[: zip_code],
-      street_name: params[: street_name],
-      street_number: params[: street_number],
+      zip_code: params[: zipCode],
+      street_name: params[: streetName],
+      street_number: params[: streetNumber],
       neighborhood: params[: neighborhood],
       city: params[: city],
-      federal_unit: params[: federal_unit]
+      federal_unit: params[: federalUnit]
     }
     phone: {
-      area_code: params[: area_code],
-      number: params[: number]
+      area_code: params[: phoneAreaCode],
+      number: params[: phoneNumber]
     }
   }
 }
 
 payment_response = sdk.payment.create(payment_data)
 payment = payment_response[: response]
+
 
 ```
 ```csharp
@@ -471,30 +532,27 @@ MercadoPagoConfig.AccessToken = "ACCESS_TOKEN";
 var client = new PaymentClient();
 
 var identification = new IdentificationRequest() {
-  Type = request.Payer.Identification.Type,
-    Number = request.Payer.Identification.Number
+  Type = request.IdentificationType,
+    Number = request.IdentificationNumber
 };
 
 var address = new PaymentPayerAddressRequest() {
-    ZipCode = request.Payer.Address.ZipCode,
-    StreetName = request.Payer.Address.StreetName,
-    StreetNumber = request.Payer.Address.StreetNumber,
-    Neighborhood = request.Payer.Address.Neighborhood,
-    City = request.Payer.Address.City,
-    FederalUnit = request.Payer.Address.FederalUnit
+    ZipCode = request.ZipCode,
+    StreetName = request.StreetName,
+    StreetNumber = request.StreetNumber,
+    Neighborhood = request.Neighborhood,
+    City = request.City,
+    FederalUnit = request.FederalUnit
 };
 
 var phone = new PaymentPayerPhoneRequest() {
-    AreaCode = request.Payer.Phone.AreaCode,
-    Number = request.Payer.Phone.Number
+    AreaCode = request.PhoneAreaCode,
+    Number = request.PhoneNumber
 };
 
 var payer = new PaymentPayerRequest() {
-    Type = "customer",
-    Email = "test_payer_9999999@testuser.com",
+    Email = request.Email,
     EntityType = "individual",
-    FirstName = "Test",
-    LastName = "User",
     Identification = identification,
     Address = address,
     Phone = phone
@@ -505,12 +563,12 @@ var additionalInfo = new PaymentAdditionalInfoRequest() {
 };
 
 var transactionDetails = new PaymentTransactionDetailsRequest() {
-  FinancialInstitution = "1009"
+  FinancialInstitution = request.FinancialInstitution
 };
 
 var paymentCreateRequest = new PaymentCreateRequest() {
     TransactionAmount = 5000,
-    Description = "description",
+    Description = "Product description",
     PaymentMethodId = "pse",
     AdditionalInfo = additionalInfo,
     TransactionDetails = transactionDetails,
@@ -522,30 +580,26 @@ var payment = await client.CreateAsync(paymentCreateRequest);
 
 ```
 ```python
-
  import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
  
 payment_data = {
    "transaction_amount": 5000,
-   "description": "description",
+   "description": "Product description",
    "payment_method_id": "pse",
    "additional_info": {
       "ip_address": "127.0.0.1"
    },
    "transaction_details": {
-      "financial_institution": "1009"
+      "financial_institution": request.POST.get("financialInstitution")
    },
    "callback_url": "https://your-site.com"
    "payer": {
-       "type": "customer",
-       "email": "test_payer_9999999@testuser.com",
+       "email": request.POST.get("email"),
        "entity_type": "individual",
-       "first_name": "Test",
-       "last_name": "User",
        "identification": {
-           "type": request.POST.get("type"), 
-           "number": request.POST.get("number")
+           "type": request.POST.get("identificationType"), 
+           "number": request.POST.get("identificationNumber")
        }
        "address": {
                  "zip_code": request.POST.get("zipCode"),
@@ -564,8 +618,6 @@ payment_data = {
  
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
-
-
 ```
 ```curl
  curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
@@ -573,7 +625,7 @@ payment = payment_response["response"]
 -H 'Content-Type: application/json' \
 --d '{
     "transaction_amount": 5000,
-    "description": "Título del producto",
+    "description": "Product description",
     "payment_method_id": "pse",
     "payer": {
         "email": "test_user_19549678@testuser.com",
@@ -615,7 +667,7 @@ Los siguientes campos para enviar un pago son **obligatorios** y deberás comple
 | `payer.entity_type` | Tipo de personería, física o jurídica.  | *individual* o *association* | - |
 | `payer.identification` | Tipo y número de documento del comprador. | - | curl -X GET \<br>'https://api.mercadopago.com/v1/identification_types' \<br>-H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
 | `additional_info.ip_address` | Dirección IP del comprador, donde se genera el pago. | - | - |
-| `callback_url` | Página donde se redirecciona al comprador por defecto luego de realizar el pago dentro de la interfaz del banco, cuando el comprador indica que desea regresar a la tienda. <br>Puedes ver mensajes sugeridos para mostrar al comprador en el subtítulo “Ejemplos de mensajes para callback URL”. | - | - |
+| `callback_url` | Página donde se redirecciona al comprador por defecto luego de realizar el pago dentro de la interfaz del banco, cuando el comprador indica que desea regresar a la tienda. <br>Puedes ver mensajes sugeridos para mostrar al comprador en el subtítulo [Ejemplos de mensajes para callback URL](/developers/es/docs/checkout-api/integration-configuration/pse#bookmark_ejemplos_de_mensajes_para_callback_url). | - | - |
 | `payer.address.zip_code` | Código postal del comprador | - | - |
 | `payer.address.street_name` | Nombre de la calle del domicilio del comprador | - | - |
 | `payer.address.street_number` | Número del domicilio del comprador | - | - |
