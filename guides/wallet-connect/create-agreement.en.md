@@ -1,8 +1,17 @@
-# Create agreement 
+# Create Agreement
 
-The first step to integrating Wallet Connect is the creation of an agreement, that is, an authorization link that the buyer accesses to authorize the merchant access to his Mercado Pago wallet when making a payment. 
+The first step in integrating Wallet Connect is to create an agreement, an authorization link that the buyer uses to grant the seller access to their Mercado Pago wallet at the moment a payment is made.
 
-The agreement stores the payment methods selected by the payer and allows the modification of these settings without the intervention of the merchant, turning this step transparent during the payment flow.
+The agreement stores the payment methods selected by the payer and allows for changes to these settings without seller intervention, making this step transparent during the payment flow.
+
+Any change to payment methods is communicated through a webhook notification, which provides details of the update. 
+For more information, consult the section [Agreement payment method update](/developers/en/docs/wallet-connect/additional-content/your-integrations/notifications/webhooks).
+
+> WARNING
+>
+> Important
+>
+> A user may have only one active agreement per integration. To create a new agreement, the previous one must be canceled. To do this, send a **DELETE** to the endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/en/reference/wallet_connect/_wallet_connect_agreements_agreement_id/delete) and execute the request. After cancellation, a webhook notification will be sent containing all the details of the operation. To understand the process in more detail, visit the section [Cancellation of agreement between integrator and Mercado Pago](/developers/en/docs/wallet-connect/additional-content/your-integrations/notifications/webhooks).
 
 Check out the diagram below that illustrates how the agreement creation flow works.
 
@@ -16,10 +25,10 @@ To create an _agreement_, send a **POST** with the necessary attributes to the [
 curl -X POST \
       'https://api.mercadopago.com/v2/wallet_connect/agreements?client.id=<CLIENT.ID>' \
       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
-      -H 'Content-Type: application/json' \ 
+      -H 'Content-Type: application/json' \
       -H 'x-platform-id: YOUR_ACCESS_TOKEN' \
       -d '{
-  "return_url": "https://www.mercadopago.com/",
+  "return_uri": "https://www.mercadopago.com/",
   "external_flow_id": "EXTERNAL_FLOW_ID",
   "external_user": {
     "id": "usertest",
@@ -33,9 +42,13 @@ curl -X POST \
 ```
 ]]]
 
-> WARNING
->
-> Important
->
-> A user can only have one active agreement per integration. If you want to create a new agreement, you must cancel the previous one. To cancel an agreement, send a DELETE to the endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/en/reference/wallet_connect/_wallet_connect_agreements_agreement_id/delete) and execute the request.
+## Response
 
+[[[
+```json
+{
+  "agreement_id": "22abcd1235ed497f945f755fcaba3c6c",
+  "agreement_uri": "https://wwww.mercadopago.com.ar/v1/wallet_agreement/22abcd1235ed497f945f755fcaba3c6c"
+}
+```
+]]]
