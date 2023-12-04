@@ -22,8 +22,14 @@ Abaixo estão as etapas para realizar uma integração com 3DS.
 2. Em seguida, envie os **dados do checkout** junto com o **token do cartão** para o backend.
 3. Feito isso, faça uma chamada para criar um novo pagamento com os dados recebidos. O atributo `three_d_secure_mode` precisa ser enviado com um dos seguintes valores:
     1. `not_supported`: 3DS não deve ser usado (é o valor padrão).
-    2. `opcional`: 3DS pode ou não ser exigido, dependendo do perfil de risco da operação.
+    2. `optional`: 3DS pode ou não ser exigido, dependendo do perfil de risco da operação.
     3. `mandatory`: 3DS será requerido obrigatoriamente.
+
+> NOTE
+>
+> Importante
+>
+> Recomendamos utilizar o valor `optional` na implementação do 3DS, por equilibrar segurança e aprovação de transações. `mandatory` deve ser usado apenas quando necessário para garantir a aprovação de 100% das transações, contudo, pode reduzir a taxa de aprovação.
 
 [[[
 ```curl
@@ -185,6 +191,12 @@ Para os casos em que o _Challenge_ é necessário, o `status` mostrará o valor 
 > Neste último caso, a resposta mostrará um atributo de pagamento chamado `three_ds_info` com os campos `external_resource_url`, que contém a URL do _Challenge_, e `creq`, um identificador da solicitação do _Challenge_. Para exibi-lo e tratar seu resultado siga os passos abaixo.
 
 ### Visão geral da resposta (informação omitida)
+
+> NOTE
+>
+> Importante
+>
+> Quando o _Challenge_ é iniciado, o usuário tem cerca de 5 minutos para completá-lo. Se não for concluído, o banco recusará a transação e o Mercado Pago considerará o pagamento cancelado. Enquanto o usuário não completar o _Challenge_, o pagamento ficará como `pending_challenge`.
 
 [[[
 ```Json
@@ -358,7 +370,7 @@ Para realizar testes de pagamento em um ambiente *sandbox*, é necessário utili
 |-----------|--------------------------|--------------------|---------------------|--------------------|
 | Mastercard | Challenge com sucesso    | 5483 9281 6457 4623 | 123                 | 11/25              |
 | Mastercard | Challenge não autorizado | 5361 9568 0611 7557 | 123                 | 11/25              |
-| Mastercard | Challenge mandatory | 5031 7557 3453 0604 | 123 | 11/25 |
+| Mastercard | 3ds mandatory | 5031 7557 3453 0604 | 123 | 11/25 |
 
 Os passos para criar o pagamento são os mesmos. Em caso de dúvida sobre como criar pagamentos com cartão, consulte a [documentação sobre Cartões](https://www.mercadopago.com.br/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform). 
 

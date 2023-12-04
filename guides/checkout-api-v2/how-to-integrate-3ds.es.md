@@ -25,6 +25,12 @@ A continuación se presentan los pasos para realizar una integración con 3DS.
     2. `optional`: se puede requerir 3DS o no, dependiendo del perfil de riesgo de la transacción.
     3. `mandatory`: 3DS será requerido obligatoriamente.
 
+> NOTE
+>
+> Importante
+>
+> Recomendamos usar el valor `optional` en la implementación del 3DS, ya que equilibra la seguridad y la aprobación de transacciones. `mandatory` debe usarse solo cuando sea necesario para garantizar la aprobación del 100% de las transacciones, sin embargo, puede reducir la tasa de aprobación.
+
 [[[
 ```curl
 
@@ -185,6 +191,12 @@ Para casos en que el _Challenge_ es necesario, el `status` mostrará el valor `p
 > En este último caso, la respuesta mostrará un atributo del pago llamado `three_ds_info` con los campos `external_resource_url`, que contiene la URL del _Challenge_, y `creq`, un identificador del _Challenge_ request. Será necesario mostrar el _Challenge_ y tratar su resultado con los pasos siguientes.
 
 ### Overview del response (se omitió información)
+
+> NOTE
+>
+> Importante
+>
+> Cuando se inicia el Challenge, el usuario tiene aproximadamente 5 minutos para completarlo. Si no se completa, el banco rechazará la transacción y Mercado Pago considerará el pago cancelado. Mientras el usuario no complete el Challenge, el estado del pago permanecerá como `pending_challenge`.
 
 [[[
 ```Json
@@ -358,7 +370,7 @@ Para probar pagos en un entorno *sandbox*, se deben usar tarjetas específicas q
 |-------------|-------------------------|--------------------|---------------------|----------------------|
 | Mastercard  | Challenge exitoso       | 5483 9281 6457 4623 | 123                 | 11/25                |
 | Mastercard  | Challenge no autorizado | 5361 9568 0611 7557 | 123                 | 11/25                |
-| Mastercard | Challenge mandatory | 5031 7557 3453 0604 | 123 | 11/25 |
+| Mastercard | 3ds mandatory | 5031 7557 3453 0604 | 123 | 11/25 |
 
 Los pasos para crear el pago son los mismos. En caso de duda sobre cómo crear pagos con tarjeta, consulta la [documentación sobre Tarjetas](https://www.mercadopago.com.br/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform). 
 
