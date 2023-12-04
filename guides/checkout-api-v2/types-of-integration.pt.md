@@ -5,36 +5,36 @@ A integração com o Checkout Transparente pode ser feita utilizando procediment
 ----[mlb]---- 
 | Tipo de integração  | Meios de pagamento  | Complexidade a nível frontend  | User interface (UI)  |
 | --- | --- | --- | --- | 
-| [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) | Crédito, débito virtual Caixa, Pix, boleto, pagamento em lotérica, Conta Mercado Pago e Parcelamento sem cartão | Fácil  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | 
-| [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | Todos os meios disponíveis  | Médio  | Formulário sem estilizações para começar as configurações do zero.  | 
-|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | Todos os meios disponíveis  | Alto | Crie seu formulário e suas estilizações  | 
+| [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) | Crédito, débito virtual Caixa, Pix, boleto, pagamento em lotérica, Conta Mercado Pago e Parcelamento sem cartão. Veja mais detalhes em nossa documentação [Meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods). | Fácil  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | 
+| [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos os meios disponíveis](/developers/pt/docs/sales-processing/payment-methods).  | Médio  | Formulário sem estilizações para começar as configurações do zero.  | 
+|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | [Todos os meios disponíveis](/developers/pt/docs/sales-processing/payment-methods).   | Alto | Crie seu formulário e suas estilizações  | 
 
 ------------
 
 ----[mla]---- 
 | Tipo de integração  | Meios de pagamento  | Complexidade a nível frontend  | User interface (UI)  |
 | --- | --- | --- | --- | 
-| [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing)  | Crédito, débito, Pago Fácil, Rapipago, Conta Mercado Pago e Parcelamento sem cartão | Fácil  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | 
-| [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | Todos os meios disponíveis  | Médio  | Formulário sem estilizações para começar as configurações do zero.  | 
-|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | Todos os meios disponíveis  | Alto | Crie seu formulário e suas estilizações  | 
+| [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing)  | Crédito, débito, Pago Fácil, Rapipago, Conta Mercado Pago e Parcelamento sem cartão. Veja mais detalhes em nossa documentação [Meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) | Fácil  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | 
+| [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos os meios disponíveis](/developers/pt/docs/sales-processing/payment-methods).   | Médio  | Formulário sem estilizações para começar as configurações do zero.  | 
+|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | [Todos os meios disponíveis](/developers/pt/docs/sales-processing/payment-methods).   | Alto | Crie seu formulário e suas estilizações  | 
 
 ------------
 
 ----[mlm]---- 
 | Tipo de integração  | Meios de pagamento  | Complexidade a nível frontend  | User interface (UI)  |
 | --- | --- | --- | --- | 
-| [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing)  | Crédito, débito, Conta Mercado Pago, Parcelamento sem cartão, Efectivo e ATM | Fácil  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | 
-| [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | Todos os meios disponíveis  | Médio  | Formulário sem estilizações para começar as configurações do zero.  | 
-|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | Todos os meios disponíveis  | Alto | Crie seu formulário e suas estilizações  | 
+| [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing)  | Crédito, débito, Conta Mercado Pago, Parcelamento sem cartão, Efectivo e ATM. Veja mais detalhes em nossa documentação [Meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) | Fácil  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | 
+| [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos os meios disponíveis](/developers/pt/docs/sales-processing/payment-methods).   | Médio  | Formulário sem estilizações para começar as configurações do zero.  | 
+|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | [Todos os meios disponíveis](/developers/pt/docs/sales-processing/payment-methods).   | Alto | Crie seu formulário e suas estilizações  | 
 
 ------------
 
 ----[mpe]---- 
 | Tipo de integração  | Meios de pagamento  | Complexidade a nível frontend  | User interface (UI)  |
 | --- | --- | --- | --- | 
-| [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing)  | Crédito, débito, Conta Mercado Pago e Pago Efectivo | Fácil  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | 
+| [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing)  | Crédito, débito, Conta Mercado Pago e Pago Efectivo. Veja mais detalhes em nossa documentação [Meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) | Fácil  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | 
 | [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | Todos os meios disponíveis  | Médio  | Formulário sem estilizações para começar as configurações do zero.  | 
-|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | Todos os meios disponíveis  | Alto | Crie seu formulário e suas estilizações  | 
+|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | [Todos os meios disponíveis](/developers/pt/docs/sales-processing/payment-methods).   | Alto | Crie seu formulário e suas estilizações  | 
 
 ------------
 
@@ -42,36 +42,30 @@ A integração com o Checkout Transparente pode ser feita utilizando procediment
 | Tipo de integração  | Meios de pagamento  | Complexidade a nível frontend  | User interface (UI)  |
 | --- | --- | --- | --- | 
 | [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing)  | Crédito, débito, Conta Mercado Pago, PSE e Efecty | Fácil  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | 
-| [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | Todos os meios disponíveis  | Médio  | Formulário sem estilizações para começar as configurações do zero.  | 
-|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | Todos os meios disponíveis  | Alto | Crie seu formulário e suas estilizações  | 
+| [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos os meios disponíveis](/developers/pt/docs/sales-processing/payment-methods).   | Médio  | Formulário sem estilizações para começar as configurações do zero.  | 
+|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | [Todos os meios disponíveis](/developers/pt/docs/sales-processing/payment-methods).   | Alto | Crie seu formulário e suas estilizações  | 
 
 ------------
 
 ----[mlu]---- 
 | Tipo de integração  | Meios de pagamento  | Complexidade a nível frontend  | User interface (UI)  |
 | --- | --- | --- | --- | 
-| [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing)  | Crédito, débito, Conta Mercado Pago, Abitab e Redpagos | Fácil  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | 
-| [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | Todos os meios disponíveis  | Médio  | Formulário sem estilizações para começar as configurações do zero.  | 
-|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | Todos os meios disponíveis  | Alto | Crie seu formulário e suas estilizações  | 
+| [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing)  | Crédito, débito, Conta Mercado Pago, Abitab e Redpagos. Veja mais detalhes em nossa documentação [Meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) | Fácil  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | 
+| [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos os meios disponíveis](/developers/pt/docs/sales-processing/payment-methods).   | Médio  | Formulário sem estilizações para começar as configurações do zero.  | 
+|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | [Todos os meios disponíveis](/developers/pt/docs/sales-processing/payment-methods).   | Alto | Crie seu formulário e suas estilizações  | 
 
 ------------
 
 ----[mlc]---- 
 | Tipo de integração  | Meios de pagamento  | Complexidade a nível frontend  | User interface (UI)  |
 | --- | --- | --- | --- | 
-| [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing)  | Crédito, débito e Conta Mercado Pago | Fácil  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | 
-| [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | Todos os meios disponíveis  | Médio  | Formulário sem estilizações para começar as configurações do zero.  | 
-|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | Todos os meios disponíveis  | Alto | Crie seu formulário e suas estilizações  | 
+| [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing)  | Crédito, débito e Conta Mercado Pago. Veja mais detalhes em nossa documentação [Meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) | Fácil  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | 
+| [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos os meios disponíveis](/developers/pt/docs/sales-processing/payment-methods).   | Médio  | Formulário sem estilizações para começar as configurações do zero.  | 
+|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | [Todos os meios disponíveis](/developers/pt/docs/sales-processing/payment-methods).   | Alto | Crie seu formulário e suas estilizações  | 
 
 ------------
 
 Os três tipos de integração citados anteriormente são elegíveis a **certificação PCI SAQ A**. Isso porque os **dados de cartão**, **CVV** e **data de expiração** trafegam através de um iframe diretamente aos servidores do Mercado Pago, que impedem que os dados PCI (número do cartão, código de segurança e data de vencimento) sejam acessíveis a terceiros.
-
-> NOTE
->
-> Importante
->
-> Para ser elegível ao PCI SAQ A é necessário que sua integração seja feita utilizando Secure Fields (Campos de cartão em formato Iframe). 
 
 Além dos meios de pagamento mostrados na tabela acima, também é possível oferecer outras formas de pagamento. Para obter uma lista detalhada com todos as opções disponíveis para integração, envie um **GET** ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição. Na resposta você terá acesso a cada uma das opções.
 

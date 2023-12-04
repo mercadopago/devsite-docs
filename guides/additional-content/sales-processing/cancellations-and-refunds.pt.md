@@ -10,7 +10,7 @@ Nesta documentação, você encontra as instruções e os links das APIs necess�
 
 > WARNING
 >
-> Important
+> Importante
 >
 > Ao executar as APIs citadas nesta documentação, você poderá encontrar o atributo **X-Idempotency-Key**. Seu preenchimento é importante para garantir a execução e re-execução de requisições sem que haja efeitos colaterais como por exemplo, pagamentos em duplicidade em casos de reembolso.
 

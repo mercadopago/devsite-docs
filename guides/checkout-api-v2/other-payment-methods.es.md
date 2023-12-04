@@ -171,7 +171,7 @@ npm install @mercadopago/sdk-js
 ```
 ]]]
 
-## Configurar credencial
+## Configurar credenciales
 
 Las credenciales son claves únicas con las que identificamos una integración en tu cuenta. Se utilizan para capturar pagos en tiendas online y otras aplicaciones de forma segura.
 
@@ -598,7 +598,7 @@ paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-
 ```
 ```python
 ===
-La fecha usa el formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00"
