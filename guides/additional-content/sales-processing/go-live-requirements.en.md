@@ -1,6 +1,6 @@
 # Requirements to go to production
 
-When you have your integration ready and want to start receiving payments, you must [activate your credentials]([FAKER][CREDENTIALS][URL]) for production and replace the test credentials if needed.
+When you have your integration ready and want to start receiving payments, you must [activate your credentials](/developers/en/guides/additional-content/your-integrations/credentials) for production and replace the test credentials if needed. 
 
 You must also test your [integration’s quality](/developers/en/guides/additional-content/homologator/homologator) to verify if you are meeting the Mercado Pago quality and security standards.
 

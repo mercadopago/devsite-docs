@@ -17,22 +17,36 @@
             "in": "path",
             "description": {
               "en": "The \"id\" parameter represents a unique identifier for the chargeback transaction. If you do not have this specific information, simply insert the payment ID for which you want to obtain the chargeback details. It is important to note that when using the payment ID, a small modification to the endpoint is required in order to make the call following the following format - https://api.mercadopago.com/v1/chargebacks/search?payment_id=PAYMENT_ID_.",
-              "es": "El parámetro \"id\" corresponde a un identificador único para la transacción de reembolso. En caso de no contar con esta información, simplemente debes ingresar el ID de pago para el cual deseas obtener los detalles del reembolso. Es importante resaltar que al utilizar el ID de pago, es necesario realizar una pequeña modificación en el endpoint para poder realizar la llamada de la siguiente manera - https://api.mercadopago.com/v1/chargebacks/search?payment_id=PAYMENT_ID.",
-              "pt": "O parâmetro \"id\" refere-se a um identificador exclusivo para a transação de estorno. Caso não possua essa informação, basta inserir o ID do pagamento para o qual deseja obter os detalhes do estorno. É fundamental destacar que, ao utilizar o ID de pagamento, é necessário efetuar uma pequena alteração no endpoint a fim de realizar a chamada corretamente. A URL modificada deve seguir o seguinte formato - https://api.mercadopago.com/v1/chargebacks/search?payment_id=PAYMENT_ID."
+              "pt": "O parâmetro \"id\" refere-se a um identificador exclusivo para a transação de estorno. Caso não possua essa informação, basta inserir o ID do pagamento para o qual deseja obter os detalhes do estorno. É fundamental destacar que, ao utilizar o ID de pagamento, é necessário efetuar uma pequena alteração no endpoint a fim de realizar a chamada corretamente. A URL modificada deve seguir o seguinte formato - https://api.mercadopago.com/v1/chargebacks/search?payment_id=PAYMENT_ID.",
+              "es": "El parámetro \"id\" corresponde a un identificador único para la transacción de reembolso. En caso de no contar con esta información, simplemente debes ingresar el ID de pago para el cual deseas obtener los detalles del reembolso. Es importante resaltar que al utilizar el ID de pago, es necesario realizar una pequeña modificación en el endpoint para poder realizar la llamada de la siguiente manera - https://api.mercadopago.com/v1/chargebacks/search?payment_id=PAYMENT_ID."
             },
             "required": true,
             "schema": {
               "type": "string",
               "example": "12123adfasdf123u4u"
             }
+          },
+          {
+            "in": "header",
+            "name": "x-caller-id",
+            "schema": {
+              "type": "string",
+              "example": "543802539"
+            },
+            "required": true,
+            "description": {
+              "en": "This parameter refers to the seller's ID, an identification necessary to correctly locate the refund information.",
+              "pt": "Este parâmetro refere-se ao ID do vendedor, identificação necessária para que se possa localizar corretamente as informações de estorno.",
+              "es": "Este parámetro hace referencia al ID del vendedor, identificación necesaria para localizar correctamente la información del reembolso."
+            }
           }
         ],
         "responses": {
           "200": {
             "description": {
-              "en": "success",
+              "es": "success",
               "pt": "success",
-              "es": "success"
+              "en": "success"
             },
             "content": {
               "application/json": {
@@ -170,24 +184,24 @@
                             "type": "string",
                             "description": {
                               "en": "Documentation's file type",
-                              "es": "Tipo de archivo de documentacion",
-                              "pt": "Tipo de arquivo da documentação"
+                              "pt": "Tipo de arquivo da documentação",
+                              "es": "Tipo de archivo de documentacion"
                             }
                           },
                           "url": {
                             "type": "string",
                             "description": {
                               "en": "URL to see the documentation file",
-                              "es": "URL para ver el archivo de documentación",
-                              "pt": "URL para ver o arquivo da documentação"
+                              "pt": "URL para ver o arquivo da documentação",
+                              "es": "URL para ver el archivo de documentación"
                             }
                           },
                           "description": {
                             "type": "string",
                             "description": {
                               "en": "Documentation's description",
-                              "es": "Descripcion de la documentacion",
-                              "pt": "Descrição da documentação"
+                              "pt": "Descrição da documentação",
+                              "es": "Descripcion de la documentacion"
                             }
                           }
                         }
@@ -257,8 +271,8 @@
             "in": "path",
             "description": {
               "en": "Payment identifier",
-              "es": "Identificador de pago",
-              "pt": "Identificador de pagamento"
+              "pt": "Identificador de pagamento",
+              "es": "Identificador de pago"
             },
             "required": true,
             "schema": {
@@ -270,9 +284,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "success",
+              "es": "success",
               "pt": "success",
-              "es": "success"
+              "en": "success"
             },
             "content": {
               "application/json": {
@@ -327,21 +341,24 @@
                         "properties": {
                           "name": {
                             "type": "string",
-                            "example": "Firstname Lastname",
-                            "x-example-i18n": {
+                            "example": {
                               "en": "Firstname Lastname",
-                              "es": "Nombre y apellido",
-                              "pt": "Nome e sobrenome"
+                              "pt": "Nome e sobrenome",
+                              "es": "Nombre y apellido"
                             },
-                            "description": "The name of the user who submitted the refund request"
+                            "description": {
+                              "es": "The name of the user who submitted the refund request",
+                              "pt": "The name of the user who submitted the refund request",
+                              "en": "The name of the user who submitted the refund request"
+                            }
                           },
                           "id": {
                             "type": "string",
                             "example": "1003743392",
                             "description": {
                               "en": "The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)",
-                              "es": "El ID del usuario que envió el pedido de reembolso (collector, operator, owner del marketplace)",
-                              "pt": "O ID do usuário que enviou a solicitação de reembolso (coletor, operador e proprietário do marketplace)"
+                              "pt": "O ID do usuário que enviou a solicitação de reembolso (coletor, operador e proprietário do marketplace)",
+                              "es": "El ID del usuario que envió el pedido de reembolso (collector, operator, owner del marketplace)"
                             }
                           },
                           "type": {
@@ -349,8 +366,8 @@
                             "example": "collector",
                             "description": {
                               "en": "Source type. The possible values are Admin, Collector, BPP, and Marketplace.",
-                              "es": "Tipo de fuente. Los valores posibles son Admin, Collector, BPP y Marketplace.",
-                              "pt": "Tipo de fonte. Os valores possíveis são Admin, Collector, BPP e Marketplace."
+                              "pt": "Tipo de fonte. Os valores possíveis são Admin, Collector, BPP e Marketplace.",
+                              "es": "Tipo de fuente. Los valores posibles son Admin, Collector, BPP y Marketplace."
                             }
                           }
                         }
@@ -589,8 +606,8 @@
             "in": "path",
             "description": {
               "en": "Payment identifier",
-              "es": "Identificador de pago",
-              "pt": "Identificador de pagamento"
+              "pt": "Identificador de pagamento",
+              "es": "Identificador de pago"
             },
             "required": true,
             "schema": {
@@ -603,8 +620,8 @@
             "in": "header",
             "description": {
               "en": "Idempotency key. When used, avoids duplicated refund",
-              "es": "Idempotency key. Al usarse, evita los reembolsos duplicados",
-              "pt": "Idempotency key. Quando usada, evita reembolsos duplicados"
+              "pt": "Idempotency key. Quando usada, evita reembolsos duplicados",
+              "es": "Idempotency key. Al usarse, evita los reembolsos duplicados"
             },
             "required": false,
             "schema": {
@@ -623,8 +640,8 @@
                     "type": "number",
                     "description": {
                       "en": "Refund amount. If this property (amount) is removed from body, it will create a full refund.",
-                      "es": "Monto de reembolso. Si esta propiedad (monto) es removida del body, creará un reembolso total.",
-                      "pt": "Valor do reembolso. Se a propriedade (amount) for removida do body, criará um reembolso integral."
+                      "pt": "Valor do reembolso. Se a propriedade (amount) for removida do body, criará um reembolso integral.",
+                      "es": "Monto de reembolso. Si esta propiedad (monto) es removida del body, creará un reembolso total."
                     },
                     "example": 5
                   }
@@ -636,9 +653,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "Sucess",
+              "es": "Sucess",
               "pt": "Sucess",
-              "es": "Sucess"
+              "en": "Sucess"
             },
             "content": {
               "application/json": {
@@ -695,21 +712,24 @@
                         "properties": {
                           "name": {
                             "type": "string",
-                            "example": "Firstname Lastname",
-                            "x-example-i18n": {
+                            "example": {
                               "en": "Firstname Lastname",
-                              "es": "Nombre y apellido",
-                              "pt": "Nome e sobrenome"
+                              "pt": "Nome e sobrenome",
+                              "es": "Nombre y apellido"
                             },
-                            "description": "The name of the user who submitted the refund request"
+                            "description": {
+                              "es": "The name of the user who submitted the refund request",
+                              "pt": "The name of the user who submitted the refund request",
+                              "en": "The name of the user who submitted the refund request"
+                            }
                           },
                           "id": {
                             "type": "string",
                             "example": "1003743392",
                             "description": {
                               "en": "The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)",
-                              "es": "El ID del usuario que envió el pedido de reembolso (collector, operator, owner del marketplace)",
-                              "pt": "O ID do usuário que enviou a solicitação de reembolso (coletor, operador e proprietário do marketplace)"
+                              "pt": "O ID do usuário que enviou a solicitação de reembolso (coletor, operador e proprietário do marketplace)",
+                              "es": "El ID del usuario que envió el pedido de reembolso (collector, operator, owner del marketplace)"
                             }
                           },
                           "type": {
@@ -717,8 +737,8 @@
                             "example": "collector",
                             "description": {
                               "en": "Source type. The possible values are Admin, Collector, BPP, and Marketplace.",
-                              "es": "Tipo de fuente. Los valores posibles son Admin, Collector, BPP y Marketplace.",
-                              "pt": "Tipo de fonte. Os valores possíveis são Admin, Collector, BPP e Marketplace."
+                              "pt": "Tipo de fonte. Os valores possíveis são Admin, Collector, BPP e Marketplace.",
+                              "es": "Tipo de fuente. Los valores posibles son Admin, Collector, BPP y Marketplace."
                             }
                           }
                         }
@@ -1095,8 +1115,8 @@
             "in": "path",
             "description": {
               "en": "Payment identifier",
-              "es": "Identificador de pago",
-              "pt": "Identificador de pagamento"
+              "pt": "Identificador de pagamento",
+              "es": "Identificador de pago"
             },
             "required": true,
             "schema": {
@@ -1109,8 +1129,8 @@
             "in": "path",
             "description": {
               "en": "Refund identifier",
-              "es": "Identificador de reembolso",
-              "pt": "Identificador do reembolso"
+              "pt": "Identificador do reembolso",
+              "es": "Identificador de reembolso"
             },
             "required": true,
             "schema": {
@@ -1122,9 +1142,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "Sucess",
+              "es": "Sucess",
               "pt": "Sucess",
-              "es": "Sucess"
+              "en": "Sucess"
             },
             "content": {
               "application/json": {
@@ -1144,9 +1164,9 @@
                       "type": "number",
                       "example": 18552260055,
                       "description": {
-                        "en": "Payment identifier from the payment",
+                        "es": "Payment identifier from the payment",
                         "pt": "Payment identifier from the payment",
-                        "es": "Payment identifier from the payment"
+                        "en": "Payment identifier from the payment"
                       }
                     },
                     "amount": {
@@ -1181,21 +1201,24 @@
                         "properties": {
                           "name": {
                             "type": "string",
-                            "example": "Firstname Lastname",
-                            "x-example-i18n": {
+                            "example": {
                               "en": "Firstname Lastname",
-                              "es": "Nombre y apellido",
-                              "pt": "Nome e sobrenome"
+                              "pt": "Nome e sobrenome",
+                              "es": "Nombre y apellido"
                             },
-                            "description": "The name of the user who submitted the refund request"
+                            "description": {
+                              "es": "The name of the user who submitted the refund request",
+                              "pt": "The name of the user who submitted the refund request",
+                              "en": "The name of the user who submitted the refund request"
+                            }
                           },
                           "id": {
                             "type": "string",
                             "example": "1003743392",
                             "description": {
                               "en": "The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)",
-                              "es": "El ID del usuario que envió el pedido de reembolso (collector, operator, owner del marketplace)",
-                              "pt": "O ID do usuário que enviou a solicitação de reembolso (coletor, operador e proprietário do marketplace)"
+                              "pt": "O ID do usuário que enviou a solicitação de reembolso (coletor, operador e proprietário do marketplace)",
+                              "es": "El ID del usuario que envió el pedido de reembolso (collector, operator, owner del marketplace)"
                             }
                           },
                           "type": {
@@ -1203,8 +1226,8 @@
                             "example": "collector",
                             "description": {
                               "en": "Source type. The possible values are Admin, Collector, BPP, and Marketplace.",
-                              "es": "Tipo de fuente. Los valores posibles son Admin, Collector, BPP y Marketplace.",
-                              "pt": "Tipo de fonte. Os valores possíveis são Admin, Collector, BPP e Marketplace."
+                              "pt": "Tipo de fonte. Os valores possíveis são Admin, Collector, BPP e Marketplace.",
+                              "es": "Tipo de fuente. Los valores posibles son Admin, Collector, BPP y Marketplace."
                             }
                           }
                         }
@@ -1453,8 +1476,8 @@
             "in": "path",
             "description": {
               "en": "Payment ID",
-              "es": "ID de pago",
-              "pt": "ID de pagamento"
+              "pt": "ID de pagamento",
+              "es": "ID de pago"
             },
             "required": true,
             "schema": {
@@ -1474,8 +1497,8 @@
                     "example": "cancelled",
                     "description": {
                       "en": "Payment status.",
-                      "es": "Estado del pago",
-                      "pt": "Estado do pagamento"
+                      "pt": "Estado do pagamento",
+                      "es": "Estado del pago"
                     }
                   }
                 }
@@ -1486,9 +1509,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "success",
+              "es": "success",
               "pt": "success",
-              "es": "success"
+              "en": "success"
             },
             "content": {
               "application/json": {
@@ -1594,9 +1617,9 @@
                       "type": "string",
                       "example": "cancelled",
                       "description": {
-                        "en": "Status",
+                        "es": "Status",
                         "pt": "Status",
-                        "es": "Status"
+                        "en": "Status"
                       }
                     },
                     "status_detail": {
@@ -1765,33 +1788,45 @@
                           "first_name": {
                             "type": "string",
                             "example": null,
-                            "description": "First name"
+                            "description": {
+                              "es": "First name",
+                              "pt": "First name",
+                              "en": "First name"
+                            }
                           },
                           "last_name": {
                             "type": "string",
                             "example": null,
-                            "description": "Last name"
+                            "description": {
+                              "es": "Last name",
+                              "pt": "Last name",
+                              "en": "Last name"
+                            }
                           },
                           "email": {
                             "type": "string",
                             "example": "test_user_80507629@testuser.com",
-                            "description": "E-mail"
+                            "description": {
+                              "es": "E-mail",
+                              "pt": "E-mail",
+                              "en": "E-mail"
+                            }
                           },
                           "type": {
                             "type": "string",
                             "example": "collector",
                             "description": {
                               "en": "Type",
-                              "es": "Tipo",
-                              "pt": "Tipo"
+                              "pt": "Tipo",
+                              "es": "Tipo"
                             }
                           },
                           "identification": {
                             "type": "array",
                             "description": {
                               "en": "List of identification",
-                              "es": "Lista de identificación",
-                              "pt": "Lista de identificação"
+                              "pt": "Lista de identificação",
+                              "es": "Lista de identificación"
                             },
                             "items": {
                               "type": "object",
@@ -1801,8 +1836,8 @@
                                   "example": "32659430",
                                   "description": {
                                     "en": "Identification number.",
-                                    "es": "Número de identificación",
-                                    "pt": "Número de identificação"
+                                    "pt": "Número de identificação",
+                                    "es": "Número de identificación"
                                   }
                                 },
                                 "type": {
@@ -1810,8 +1845,8 @@
                                   "example": "DNI",
                                   "description": {
                                     "en": "Identification type.",
-                                    "es": "Tipo de identificación",
-                                    "pt": "Tipo de identificação"
+                                    "pt": "Tipo de identificação",
+                                    "es": "Tipo de identificación"
                                   }
                                 }
                               }
@@ -1821,8 +1856,8 @@
                             "type": "array",
                             "description": {
                               "en": "List of phones",
-                              "es": "Lista de teléfonos",
-                              "pt": "Lista de telefones"
+                              "pt": "Lista de telefones",
+                              "es": "Lista de teléfonos"
                             },
                             "items": {
                               "type": "object",
@@ -1832,8 +1867,8 @@
                                   "example": null,
                                   "description": {
                                     "en": "Area code",
-                                    "es": "Código de área",
-                                    "pt": "Código de área"
+                                    "pt": "Código de área",
+                                    "es": "Código de área"
                                   }
                                 },
                                 "number": {
@@ -1841,8 +1876,8 @@
                                   "example": null,
                                   "description": {
                                     "en": "Number",
-                                    "es": "Número",
-                                    "pt": "O Número"
+                                    "pt": "O Número",
+                                    "es": "Número"
                                   }
                                 },
                                 "extension": {
@@ -1850,8 +1885,8 @@
                                   "example": null,
                                   "description": {
                                     "en": "Extension",
-                                    "es": "Extensión",
-                                    "pt": "Ramal"
+                                    "pt": "Ramal",
+                                    "es": "Extensión"
                                   }
                                 }
                               }
@@ -1862,8 +1897,8 @@
                             "example": null,
                             "description": {
                               "en": "Entity type",
-                              "es": "Tipo de entidad",
-                              "pt": "Tipo de entidade"
+                              "pt": "Tipo de entidade",
+                              "es": "Tipo de entidad"
                             }
                           },
                           "id": {
@@ -1871,8 +1906,8 @@
                             "example": "1003743392",
                             "description": {
                               "en": "Identifier",
-                              "es": "Identificador",
-                              "pt": "Identificador"
+                              "pt": "Identificador",
+                              "es": "Identificador"
                             }
                           },
                           "operator_id": {
@@ -1880,8 +1915,8 @@
                             "example": null,
                             "description": {
                               "en": "Operator identifier",
-                              "es": "Identificador del operador",
-                              "pt": "Identificador do operador"
+                              "pt": "Identificador do operador",
+                              "es": "Identificador del operador"
                             }
                           }
                         }
@@ -1919,8 +1954,8 @@
                             "type": "array",
                             "description": {
                               "en": "List of items",
-                              "es": "Lista de items",
-                              "pt": "Lista de ítens"
+                              "pt": "Lista de ítens",
+                              "es": "Lista de items"
                             },
                             "items": {
                               "type": "object",
@@ -1930,31 +1965,34 @@
                                   "example": "234",
                                   "description": {
                                     "en": "Identifier",
-                                    "es": "Identificador",
-                                    "pt": "Identificador"
+                                    "pt": "Identificador",
+                                    "es": "Identificador"
                                   }
                                 },
                                 "title": {
                                   "type": "string",
-                                  "example": "My product",
-                                  "x-example-i18n": {
+                                  "example": {
                                     "en": "My product",
-                                    "es": "Mi producto",
-                                    "pt": "Meu produto"
+                                    "pt": "Meu produto",
+                                    "es": "Mi producto"
                                   },
                                   "description": {
                                     "en": "Item title.",
-                                    "es": "Título del ítem",
-                                    "pt": "Título do item"
+                                    "pt": "Título do item",
+                                    "es": "Título del ítem"
                                   }
                                 },
                                 "description": {
                                   "type": "string",
-                                  "example": "E-commerce store cellphone",
-                                  "description": {
+                                  "example": {
                                     "en": "E-commerce store cellphone",
-                                    "es": "Celular de la tienda online",
-                                    "pt": "Celular da loja online"
+                                    "pt": "Celular da loja online",
+                                    "es": "Celular de la tienda online"
+                                  },
+                                  "description": {
+                                    "en": "Description",
+                                    "pt": "Descrição",
+                                    "es": "Descripción"
                                   }
                                 },
                                 "picture_url": {
@@ -1962,8 +2000,8 @@
                                   "example": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
                                   "description": {
                                     "en": "Picture URL",
-                                    "es": "URL de la imagen",
-                                    "pt": "URL da imagem"
+                                    "pt": "URL da imagem",
+                                    "es": "URL de la imagen"
                                   }
                                 },
                                 "category_id": {
@@ -1971,8 +2009,8 @@
                                   "example": "art",
                                   "description": {
                                     "en": "Category identifier",
-                                    "es": "Identificador de la categoría",
-                                    "pt": "Identificador da categoria"
+                                    "pt": "Identificador da categoria",
+                                    "es": "Identificador de la categoría"
                                   }
                                 },
                                 "quantity": {
@@ -1980,8 +2018,8 @@
                                   "example": "1",
                                   "description": {
                                     "en": "Quantity",
-                                    "es": "Cantidad",
-                                    "pt": "Quantidade"
+                                    "pt": "Quantidade",
+                                    "es": "Cantidad"
                                   }
                                 },
                                 "unit_price": {
@@ -1989,8 +2027,8 @@
                                   "example": "75.76",
                                   "description": {
                                     "en": "Unit price",
-                                    "es": "Precio unitario",
-                                    "pt": "Preço unitário"
+                                    "pt": "Preço unitário",
+                                    "es": "Precio unitario"
                                   }
                                 }
                               }
@@ -2005,8 +2043,8 @@
                             "type": "array",
                             "description": {
                               "en": "List of phone",
-                              "es": "Lista de telefóno",
-                              "pt": "Lista de telefone"
+                              "pt": "Lista de telefone",
+                              "es": "Lista de telefóno"
                             },
                             "items": {
                               "type": "object",
@@ -2016,8 +2054,8 @@
                                   "example": "55",
                                   "description": {
                                     "en": "Area code",
-                                    "es": "Código de área",
-                                    "pt": "Código de área"
+                                    "pt": "Código de área",
+                                    "es": "Código de área"
                                   }
                                 },
                                 "number": {
@@ -2025,8 +2063,8 @@
                                   "example": "8529-1111",
                                   "description": {
                                     "en": "Number",
-                                    "es": "Número",
-                                    "pt": "O Número"
+                                    "pt": "O Número",
+                                    "es": "Número"
                                   }
                                 }
                               }
@@ -2036,8 +2074,8 @@
                             "type": "array",
                             "description": {
                               "en": "List of address",
-                              "es": "Lista de direcciones",
-                              "pt": "Lista de endereços"
+                              "pt": "Lista de endereços",
+                              "es": "Lista de direcciones"
                             },
                             "items": {
                               "type": "object",
@@ -2047,8 +2085,8 @@
                                   "example": "78134-190",
                                   "description": {
                                     "en": "Zip code",
-                                    "es": "Código postal",
-                                    "pt": "Código postal"
+                                    "pt": "Código postal",
+                                    "es": "Código postal"
                                   }
                                 },
                                 "street_name": {
@@ -2056,8 +2094,8 @@
                                   "example": "Insurgentes Sur",
                                   "description": {
                                     "en": "Street name",
-                                    "es": "Nombre de la calle",
-                                    "pt": "Nome da rua"
+                                    "pt": "Nome da rua",
+                                    "es": "Nombre de la calle"
                                   }
                                 },
                                 "street_number": {
@@ -2065,8 +2103,8 @@
                                   "example": "1200",
                                   "description": {
                                     "en": "Street number",
-                                    "es": "Número de la calle",
-                                    "pt": "Número da rua"
+                                    "pt": "Número da rua",
+                                    "es": "Número de la calle"
                                   }
                                 }
                               }
@@ -2077,8 +2115,8 @@
                             "example": "Lalo",
                             "description": {
                               "en": "First name",
-                              "es": "Nombre",
-                              "pt": "Nome"
+                              "pt": "Nome",
+                              "es": "Nombre"
                             }
                           },
                           "last_name": {
@@ -2086,8 +2124,8 @@
                             "example": "Santos",
                             "description": {
                               "en": "Last name",
-                              "es": "Apellido",
-                              "pt": "Sobrenome"
+                              "pt": "Sobrenome",
+                              "es": "Apellido"
                             }
                           }
                         }
@@ -2097,8 +2135,8 @@
                         "example": "201.63.25.34",
                         "description": {
                           "en": "IP address",
-                          "es": "Dirección IP",
-                          "pt": "Endereço do IP"
+                          "pt": "Endereço do IP",
+                          "es": "Dirección IP"
                         }
                       },
                       "available_balance": {
@@ -2106,8 +2144,8 @@
                         "example": null,
                         "description": {
                           "en": "Available balance",
-                          "es": "Saldo disponible",
-                          "pt": "Saldo disponível"
+                          "pt": "Saldo disponível",
+                          "es": "Saldo disponible"
                         }
                       },
                       "nsu_processadora": {
@@ -2115,8 +2153,8 @@
                         "example": null,
                         "description": {
                           "en": "NSU processadora",
-                          "es": "Procesadora NSU",
-                          "pt": "Processadora NSU"
+                          "pt": "Processadora NSU",
+                          "es": "Procesadora NSU"
                         }
                       },
                       "authentication_code": {
@@ -2124,8 +2162,8 @@
                         "example": null,
                         "description": {
                           "en": "Authentication code",
-                          "es": "Código de autenticacion",
-                          "pt": "Código de autenticação"
+                          "pt": "Código de autenticação",
+                          "es": "Código de autenticacion"
                         }
                       }
                     },
@@ -2144,8 +2182,8 @@
                             "example": "mercadopago",
                             "description": {
                               "en": "Type",
-                              "es": "Tipo",
-                              "pt": "Tipo"
+                              "pt": "Tipo",
+                              "es": "Tipo"
                             }
                           },
                           "id": {
@@ -2153,8 +2191,8 @@
                             "example": "3754501423",
                             "description": {
                               "en": "Order identifier",
-                              "es": "Identificador de la orden",
-                              "pt": "Identificador do pedido"
+                              "pt": "Identificador do pedido",
+                              "es": "Identificador de la orden"
                             }
                           }
                         }
@@ -2229,8 +2267,8 @@
                             "example": "23791883300000075763380250600221946300633330",
                             "description": {
                               "en": "Content",
-                              "es": "Contenido",
-                              "pt": "Conteúdo"
+                              "pt": "Conteúdo",
+                              "es": "Contenido"
                             }
                           }
                         }
@@ -2240,9 +2278,9 @@
                       "type": "number",
                       "example": 1,
                       "description": {
-                        "en": "Installments",
+                        "es": "Installments",
                         "pt": "Installments",
-                        "es": "Installments"
+                        "en": "Installments"
                       }
                     },
                     "transaction_details": {
@@ -2260,8 +2298,8 @@
                             "example": "6002219463",
                             "description": {
                               "en": "Payment method reference identifier",
-                              "es": "Identificador de referencia de medio de pago",
-                              "pt": "Identificador de referência do meio de pagamento"
+                              "pt": "Identificador de referência do meio de pagamento",
+                              "es": "Identificador de referencia de medio de pago"
                             }
                           },
                           "verification_code": {
@@ -2269,8 +2307,8 @@
                             "example": "6002219463",
                             "description": {
                               "en": "Verification code",
-                              "es": "Código de verificación",
-                              "pt": "Código de verificação"
+                              "pt": "Código de verificação",
+                              "es": "Código de verificación"
                             }
                           },
                           "net_received_amount": {
@@ -2278,8 +2316,8 @@
                             "example": 0,
                             "description": {
                               "en": "Net received amount",
-                              "es": "Monto neto recibido",
-                              "pt": "Valor líquido recebido"
+                              "pt": "Valor líquido recebido",
+                              "es": "Monto neto recibido"
                             }
                           },
                           "total_paid_amount": {
@@ -2287,8 +2325,8 @@
                             "example": 75.76,
                             "description": {
                               "en": "Total paid amount",
-                              "es": "Monto total pago",
-                              "pt": "Valor total pago"
+                              "pt": "Valor total pago",
+                              "es": "Monto total pago"
                             }
                           },
                           "overpaid_amount": {
@@ -2296,8 +2334,8 @@
                             "example": 0,
                             "description": {
                               "en": "Overpaid amount",
-                              "es": "Monto pagado en exceso",
-                              "pt": "Valor pago a mais"
+                              "pt": "Valor pago a mais",
+                              "es": "Monto pagado en exceso"
                             }
                           },
                           "external_resource_url": {
@@ -2305,8 +2343,8 @@
                             "example": "https://www.mercadopago.com/mlb/payments/beta/ticket/helper?payment_id=18746874919&payment_method_reference_id=6002219463&caller_id=1003743392&hash=6a8c570f-9c39-4a5c-9b55-85ae1b724bf",
                             "description": {
                               "en": "External resource url",
-                              "es": "URL de recurso externo",
-                              "pt": "URL de recurso externo"
+                              "pt": "URL de recurso externo",
+                              "es": "URL de recurso externo"
                             }
                           },
                           "installment_amount": {
@@ -2314,8 +2352,8 @@
                             "example": 0,
                             "description": {
                               "en": "Installment amount",
-                              "es": "Valor de la cuota",
-                              "pt": "Valor da parcela"
+                              "pt": "Valor da parcela",
+                              "es": "Valor de la cuota"
                             }
                           },
                           "financial_institution": {
@@ -2323,8 +2361,8 @@
                             "example": null,
                             "description": {
                               "en": "Financial institution",
-                              "es": "Institución financiera",
-                              "pt": "Instituição financeira"
+                              "pt": "Instituição financeira",
+                              "es": "Institución financiera"
                             }
                           },
                           "payable_deferral_period": {
@@ -2332,8 +2370,8 @@
                             "example": null,
                             "description": {
                               "en": "Payable deferral period",
-                              "es": "Período de aplazamiento de pago",
-                              "pt": "Período de diferimento a pagar"
+                              "pt": "Período de diferimento a pagar",
+                              "es": "Período de aplazamiento de pago"
                             }
                           },
                           "acquirer_reference": {
@@ -2341,8 +2379,8 @@
                             "example": null,
                             "description": {
                               "en": "Acquirer reference",
-                              "es": "Referencia de adquirente",
-                              "pt": "Referência do adquirente"
+                              "pt": "Referência do adquirente",
+                              "es": "Referencia de adquirente"
                             }
                           }
                         }
@@ -2480,16 +2518,16 @@
                             "example": "UNSPECIFIED",
                             "description": {
                               "en": "Type",
-                              "es": "Tipo",
-                              "pt": "Tipo"
+                              "pt": "Tipo",
+                              "es": "Tipo"
                             }
                           },
                           "business_info": {
                             "type": "array",
                             "description": {
                               "en": "List of business information",
-                              "es": "Lista de información de negocio",
-                              "pt": "Lista de informação de negócio"
+                              "pt": "Lista de informação de negócio",
+                              "es": "Lista de información de negocio"
                             },
                             "items": {
                               "type": "object",
@@ -2499,14 +2537,18 @@
                                   "example": "online_payments",
                                   "description": {
                                     "en": "Unit",
-                                    "es": "Unidad",
-                                    "pt": "Unidade"
+                                    "pt": "Unidade",
+                                    "es": "Unidad"
                                   }
                                 },
                                 "sub_unit": {
                                   "type": "string",
                                   "example": "checkout_pro",
-                                  "description": "Sub unit"
+                                  "description": {
+                                    "es": "Sub unit",
+                                    "pt": "Sub unit",
+                                    "en": "Sub unit"
+                                  }
                                 }
                               }
                             }

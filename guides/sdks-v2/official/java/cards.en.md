@@ -1,7 +1,7 @@
 # Save card
 
 
-It is possible to securely store the reference to a card used by the customer in the payment on our servers through the SDK below. For details of the request parameters, check the [Save card](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/cards/_customers_customer_id_cards/post) API.
+It is possible to securely store the reference to a card used by the customer in the payment on our servers through the SDK below. For details of the request parameters, check the [Save card](/developers/en/reference/cards/_customers_customer_id_cards/post) API.
 
 [[[
 ```java

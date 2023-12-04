@@ -11,6 +11,8 @@ To configure payments with **PagoEfectivo**, send a **POST** with the following 
 > Important
 >
 > Remember that Brick already resolves most parameters to send the POST. The information return comes in the `onSubmit` callback, inside the `formData` object, where you can find parameters like: `payment_method_id`, `payer.email` and `amount`.
+> <br><br>
+> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example. 
 
 | Payment Type | Parameter | Value |
 | --- | --- | --- |
@@ -19,46 +21,64 @@ To configure payments with **PagoEfectivo**, send a **POST** with the following 
 [[[
 ```php
 <?php
- 
- require_once 'vendor/autoload.php';
- 
- MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
- 
- $payment = new MercadoPago\Payment();
- $payment->transaction_amount = 100;
- $payment->description = "Product title";
- $payment->payment_method_id = "pagoefectivo_atm";
- $payment->payer = array(
-     "email" => "test@test.com",
- );
- $payment->metadata = array(
-     "payment_mode" => "online",
- );
- $payment->save();
- 
+  use MercadoPago\Client\Payment\PaymentClient;
+
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "first_name" => $_POST['payerFirstName'],
+      "last_name" => $_POST['payerLastName'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
-var payment_data = {
- transaction_amount: 100,
- description: 'Título do produto',
- payment_method_id: 'pagoefectivo_atm',
- payer: {
-   email: 'test@test.com',
- },
- metadata: {
-   payment_mode: 'online',
- }
-};
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
-mercadopago.payment.create(payment_data)
- .then(function(data) {})
- .catch(function(error) {});
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
+ 
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
+
 PaymentClient client = new PaymentClient();
 PaymentCreateRequest paymentCreateRequest =
    PaymentCreateRequest.builder()
@@ -73,12 +93,19 @@ PaymentCreateRequest paymentCreateRequest =
           Map.of("payment_mode", "online")
        )
       .build();
-client.create(paymentCreateRequest);
+client.create(paymentCreateRequest, requestOptions);
 ```
 ```ruby
 require 'mercadopago'
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
+
 payment_request = {
   transaction_amount: 100,
   description: 'Product title',
@@ -90,7 +117,7 @@ payment_request = {
     payment_mode: 'online',
   }
 }
-payment_response = sdk.payment.create(payment_request)
+payment_response = sdk.payment.create(payment_request, custom_request_options)
 payment = payment_response[:response]
 ```
 ```csharp
@@ -100,6 +127,10 @@ using MercadoPago.Client.Payment;
 using MercadoPago.Resource.Payment;
  
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
+
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 100,
@@ -116,12 +147,17 @@ var request = new PaymentCreateRequest
 };
  
 var client = new PaymentClient();
-Payment payment = await client.CreateAsync(request);
+Payment payment = await client.CreateAsync(request, requestOptions);
 ```
 ```python
 import mercadopago
 sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
- 
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
 payment_data = {
     "transaction_amount": 100,
     "description": "Product title",
@@ -133,7 +169,7 @@ payment_data = {
         "payment_mode": "online",
     }
 }
-payment_response = sdk.payment().create(payment_data)
+payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 ```
 ```curl
@@ -141,6 +177,7 @@ curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
@@ -183,7 +220,7 @@ The response will show the **pending status** until the buyer completes the paym
 
 After the payment creation in the backend using the Mercado Pago SDK, use the **id** received in the response to instantiate the Status Screen Brick and show it to the buyer.
 
-In addition to displaying the payment status, Status Screen Brick will also display the barcode to copy and paste or scan in order for the buyer to pay. Learn how simple it is to integrate [click here](/developers/en/docs/checkout-bricks/status-screen-brick/default-rendering).
+In addition to displaying the payment status, Status Screen Brick will also display the barcode to copy and paste or scan in order for the buyer to pay. Learn how simple it is to integrate [click here](/developers/en/docs/checkout-bricks/status-screen-brick/introduction).
 
 <center>
 

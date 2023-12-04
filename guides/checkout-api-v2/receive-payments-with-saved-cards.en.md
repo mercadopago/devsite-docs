@@ -4,14 +4,11 @@ In order for a customer to be able to make a payment with their cards previously
 
 To receive payments from previously saved cards, follow the steps below.
 
-
 ## View saved cards
 
 The first step is to display the list of saved cards to the buyer so that they can choose the option they want to use when making a payment. To do so, send a **GET** with the necessary attributes to the endpoint [/v1/customers/{customer_id}/cards](/developers/en/reference/cards/_customers_customer_id_cards/get) and execute the request or, if you prefer, use the SDKs Listed below.
 
-
 [[[
-
 ```php
 <?php
   $customer_client = new CustomerClient();
@@ -21,10 +18,9 @@ The first step is to display the list of saved cards to the buyer so that they c
 ```
 ```node
 const client = new MercadoPagoConfig({ accessToken: 'access_token' });
-const customerClient = new Customer(client);
+const customerCard = new CustomerCard(client);
 
-customerClient.listCards({ customerId: '123' })
-	.then((result) => console.log(result));
+customerCard.list({ customerId: '<CUSTOMER_UD>' }).then(console.log).catch(console.log);
 ```
 ```java
 
@@ -140,11 +136,9 @@ After displaying the saved cards, create the payment form using the code below d
 ```
 ]]]
 
-
 ## Capture security code
 
 After viewing the saved cards and creating the payment form, it is necessary to capture the card's security code. To do so, you must create a token by submitting the form with the card ID and security code using the Javascript below.
-
 
 [[[
 ```javascript
@@ -169,13 +163,9 @@ After viewing the saved cards and creating the payment form, it is necessary to 
 ```
 ]]]
 
-
-
 ## Create payment
 
 Once the token is obtained, it is necessary to create the payment with the corresponding value. When making a payment with a saved card, you must send the customer ID along with the token using the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) or one of the SDKs below.
-
-
 
 [[[
 ```php
@@ -211,24 +201,25 @@ Once the token is obtained, it is necessary to create the payment with the corre
 const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
-customerClient.listCards({ customerId: '123' })
+customerClient.listCards({ customerId: '<CUSTOMER_ID>' })
 	.then((result) => {
 
   const payment = new Payment(client);
 
-  body = {
-    transaction_amount: 100.0,
+  const body = {
+    transaction_amount: 100,
     token: result[0].token,
     description: 'My product',
     installments: 1,
     payment_method_id: 'visa',
-    issuer_id: '123',
+    issuer_id: 123,
     payer: {
       type: 'customer',
       id: '123'
   }
+};
 
-  payment.create({ body }).then((result) => console.log(result));
+  payment.create({ body: body }).then((result) => console.log(result));
 });
 ```
 ```java
@@ -330,4 +321,3 @@ id: "123456789-jxOV430go9fx2e"
 
 ```
 ]]]
-

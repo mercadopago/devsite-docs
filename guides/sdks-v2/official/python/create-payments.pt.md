@@ -1,12 +1,23 @@
 # Criar pagamento
 
-É possível criar e acrescentar informações de determinado pagamento utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Criar pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post).
+É possível criar e acrescentar informações de determinado pagamento utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Criar pagamento](/developers/pt/reference/payments/_payments/post).
+
+> NOTE
+>
+> Importante
+>
+> Ao executar as APIs citadas nesta documentação, você poderá encontrar o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições sem que haja situações indesejadas como, por exemplo, pagamentos em duplicidade.
 
 [[[
 ```python
 
 import mercadopago
 sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
 
 payment_data = {
     "transaction_amount": 100,
@@ -18,7 +29,7 @@ payment_data = {
     }
 }
 
-payment_response = sdk.payment().create(payment_data)
+payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 
 ```

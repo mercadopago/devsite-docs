@@ -1,6 +1,6 @@
 # Crear preferencia
 
-Puede crear una preferencia usando el SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, consulte la API [Crear preferencia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences/post).
+Puede crear una preferencia usando el SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, consulte la API [Crear preferencia](/developers/es/reference/preferences/_checkout_preferences/post).
 
 [[[
 ```java

@@ -18,7 +18,7 @@ If you haven't created any stores or POS yet, you can do so through our API.
 
 First, you must create a store using the endpoint [Create store](/developers/en/reference/stores/_users_user_id_stores/post). You must replace the values `user_id` and `YOUR_ACCESS_TOKEN` with the ones obtained when creating your application, as well as modify the necessary parameters according to your business characteristics.
 
-Then, you must create a POS using the endpoint [Create POS](/developers/en/reference/pos/_pos/post). This POS must be associated with the store created earlier, so you must replace the parameter `external_store_id` with the one obtained during the store creation.
+Then, you must create a POS using the endpoint [Create POS](/developers/en/reference/pos/_pos/post). This POS must be associated with the store created earlier, so you must replace the parameters `external_store_id` and `store_id` with the ones obtained during the store creation. In the case of `store_id`, the value will correspond to the `id` returned in that response.
 
 ## Associate the Point device to your Mercado Pago account
 
@@ -47,7 +47,7 @@ Then, make a PATCH request to the endpoint [Change operating mode](/developers/e
 ``` curl
 curl -X PATCH \
       'https://api.mercadopago.com/point/integration-api/devices/{device-id}' \
-       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+       --h 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
        -H 'Content-Type: application/json' \ 
       -d '{
   "operating_mode": "PDV"

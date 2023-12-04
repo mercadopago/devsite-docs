@@ -1,6 +1,5 @@
 # Reembolsos de transações com Pix
 
-
 Ao receber pagamentos com Pix, é possível que surja a necessidade de realizar operações de reembolso. Caso seja necessário, é possível que os reembolsos permaneçam em processo (contingência) devido a algum erro durante o processamento da transação, por exemplo, na comunicação com o Bacen. 
 
 Por padrão, esses erros são reportados a quem fez a requisição como um `400 - Bad Request`, o que pode dificultar a compreensão sobre o status em que se encontra o reembolso até que o pagamento passe ao status `refunded` (caso seja aprovado). 
@@ -51,13 +50,17 @@ var refund = client.Refund(paymentId, 20, requestOptions);
 
 ```
 ```node
-import { MercadoPagoConfig, Payments } from 'mercadopago';
+import { MercadoPagoConfig, PaymentRefund } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const paymentRefunds = new PaymentRefunds(client);
+const paymentRefund = new PaymentRefund(client);
 
-paymentRefunds.refund({ id: '123', amount: 20 }).then((result) => console.log(result))
-	.catch((error) => console.log(error));
+refund.create({
+payment_id: '<PAYMENT_ID>',
+body: {
+amount: 100
+}
+}).then(console.log).catch(console.log);
 ```
 ```php
 <?php

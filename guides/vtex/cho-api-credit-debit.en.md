@@ -7,10 +7,10 @@ To configure these payment methods, access the administration panel of your VTEX
 1. Click on the "+ (Add new payment plan for...)" button. 
 2. Within the **Debit Card** or **Credit Card** categories, you will find the different card brands that you can offer. Click on them and configure each one individually to enable them. You can get more information about this configuration in the [VTEX tutorials section](https://help.vtex.com/en/tutorial/payment-conditions--tutorials_455#interest-free-installments). 
 3. After selecting the card brand you want to offer, fill in the fields displayed on the next screen: 
-    * Enter the **Rule name**, which will allow you to identify this payment method. 
-    * In **Affiliation process**, select **MercadoPagoV2**. 
-    * Activate the payment condition in the **Status** field, using the sliding button. 
-    * To enable installment payments, select the **Automatic** option. The financing option previously configured in the Mercado Pago seller's account will be offered. Refer to the "Installments and interest" section for more information. 
+    1. Enter the **Rule name**, which will allow you to identify this payment method. 
+    2. In **Affiliation process**, select **MercadoPagoV2**. 
+    3. In the **Status** field, activate the payment condition using the slider button. 
+    4. To enable installment payments, select the **Automatic** option. The financing option previously configured in the Mercado Pago seller's account will be offered. Refer to the "Installments and interest" section for more information. 
 
 > NOTE 
 >
@@ -20,7 +20,7 @@ To configure these payment methods, access the administration panel of your VTEX
 
 4. Click **Save** to activate the configuration for this card, and if desired, repeat the process to configure other brands. 
 
-![Configure payment conditions with credit card](/images/vtex/paymentconditions-cc-imagenv2-pt.gif) 
+![Configure payment conditions with credit card](/images/vtex/paymentconditions-cc-imagenv2-en.gif) 
 
 
 ## Installments and Interest 

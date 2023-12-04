@@ -1,11 +1,3 @@
----
-  sites_supported:
-      - mla
-      - mlb
-      - mlm
-      - mpe
----
-
 # Reservar fondos
 
 Una reserva de fondos ocurre cuando se realiza una compra y se reserva su monto del límite total de la tarjeta, asegurando que el valor se mantenga hasta la finalización del procesamiento.
@@ -59,24 +51,24 @@ client.create(request);
 
 ```
 ```node
-import { MercadoPagoConfig, Payments } from 'mercadopago';
+import { MercadoPagoConfig, Payment } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const payments = new Payments(client);
+const payment = new Payment(client);
 
-payments.create({
-  transaction_amount: 100.0,
-  token: "123456",
-  description: "My product",
-  installments: 1,
-  payment_method_id: "visa",
-  payer: {
-    email: "my.user@example.com",
-  },
-  capture: false 
-}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
-  .then((result) => console.log(result))
-  .catch((error) => console.log(error));
+const body = {
+transaction_amount: 100,
+token: '123456',
+description: 'My product',
+installments: 1,
+payment_method_id: 'visa',
+payer: {
+email: 'my.user@example.com',
+},
+capture: false
+};
+
+payment.create({ body: body, requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' } }).then(console.log).catch(console.log);
 ```
 ```ruby
 

@@ -45,42 +45,41 @@ Si eres un usuario y deseas que todos tus pagos se realicen a través de Wallet,
 El modo Cuenta de Mercado Pago funciona añadiendo el atributo _purpose_ en la preferencia.
 ===
 <?php
-// Crea un objeto de preferencia
-$preference = new MercadoPago\Preference();
-
-// Crea un ítem en la preferencia
-$item = new MercadoPago\Item();
-$item->title = 'Mi producto';
-$item->quantity = 1;
-$item->unit_price = 75;
-$preference->items = array($item);
-$preference->purpose = 'wallet_purchase';
-$preference->save();
+   $client = new PreferenceClient();
+   $preference = $client->create([
+          "items"=> array(
+            array(
+              "title" => "My product",
+              "description" => "Test product",
+              "picture_url" => "http://i.mlcdn.com.br/portaldalu/fotosconteudo/48029_01.jpg",
+              "category_id" => "electronics",
+              "quantity" => 1,
+              "currency_id" => "BRL",
+              "unit_price" => 100
+            )
+          )
+  ]);
+  echo implode($preference);
 ?>
 ```
 ```node
 ===
 El modo Cuenta de Mercado Pago funciona añadiendo el atributo _purpose_ en la preferencia.
 ===
-// Crea un objeto de preferencia
-let preference = {
-  items: [
-    {
-      title: 'Mi producto',
-      unit_price: 100,
-      quantity: 1,
-    }
-  ],
-  purpose: 'wallet_purchase'
-};
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>', options: { timeout: 5000 } });
 
-mercadopago.preferences.create(preference)
-.then(function(response){
-// Este valor substituirá a la string "<%= global.id %>" en tu HTML
-  global.id = response.body.id;
-}).catch(function(error){
-  console.log(error);
-});
+const preference = new Preference(client);
+
+preference.create({ body: {
+items: [
+ {
+  id: '<ID>',
+  title: '<title>',
+  quantity: 1,
+  unit_price: 100
+ }
+],
+} }).then(console.log).catch(console.log);
 ```
 ```java
 ===
@@ -183,4 +182,4 @@ preference = preference_response["response"]
 >
 > Añadir checkout
 
-Los pasos para configurar el Cuenta de Mercado Pago (*client-side*) son los mismos que los presentados [en esta sección](/developers/es/docs/checkout-pro/integrate-checkout-pro).
+Los pasos para configurar el Cuenta de Mercado Pago (*client-side*) son los mismos que los presentados [en esta sección](/developers/es/docs/checkout-pro/integrate-preferences).

@@ -1,4 +1,4 @@
-## Cómo aceptar pagos con dos medios de pago
+# Cómo aceptar pagos con dos medios de pago
 
 Aceptar pagos con dos tarjetas es la funcionalidad que permite a los compradores realizar pagos con más de un medio de pago directamente al finalizar la compra.
 

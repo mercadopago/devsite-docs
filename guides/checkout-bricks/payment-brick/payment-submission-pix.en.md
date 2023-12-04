@@ -6,46 +6,55 @@
 
 When finalizing the inclusion of the payment form, it is necessary to send the buyer's email, type and document number, the payment method used (pix) and the value detail.
 
+> NOTE
+> 
+> Important
+>
+> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example. 
+
 To configure payment with Pix, send a **POST** to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, make the request using our SDKs.
 
 [[[
 ```php
 <?php
- require_once 'vendor/autoload.php';
+  use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\MercadoPagoConfig;
 
- MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  MercadoPagoConfig::setAccessToken("<YOUR_ACCESS_TOKEN>");
 
- $payment = new MercadoPago\Payment();
- $payment->transaction_amount = 100;
- $payment->payment_method_id = "pix";
- $payment->payer = array(
-    "email" => "PAYER_EMAIL_HERE",
-  );
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
- $payment->save();
-
+  $payment = $client->create([
+    "transaction_amount" => 100,
+    "description" => "<DESCRIPTION>",
+    "payment_method_id" => "pix",
+    "payer" => [
+      "email" => "<EMAIL>",
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
-
-var payment_data = {
-  transaction_amount: 100,
-  payment_method_id: 'pix',
-  payer: {
-    email: 'PAYER_EMAIL_HERE',
-  }
-};
-
-mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function (error) {
-
-});
-
+payment.create({ body: {
+	transaction_amount: 12.34,
+	description: '<DESCRIPTION>',
+	payment_method_id: 'pix',
+	payer: {
+		email: '<EMAIL>'
+	}}, requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' } 
+}).then(console.log).catch(console.log);
 ```
 ```java
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
+ 
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
+
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
 PaymentClient client = new PaymentClient();
@@ -60,11 +69,17 @@ PaymentCreateRequest paymentCreateRequest =
                .build())
        .build();
 
-client.create(paymentCreateRequest);
+client.create(paymentCreateRequest, requestOptions);
 ```
 ```ruby
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
 
 payment_request = {
   transaction_amount: 100,
@@ -74,7 +89,7 @@ payment_request = {
   }
 }
 
-payment_response = sdk.payment.create(payment_request)
+payment_response = sdk.payment.create(payment_request, custom_request_options)
 payment = payment_response[:response]
 
 ```
@@ -87,6 +102,9 @@ using MercadoPago.Resource.Payment;
 
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
+
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 105,
@@ -98,12 +116,17 @@ var request = new PaymentCreateRequest
 };
 
 var client = new PaymentClient();
-Payment payment = await client.CreateAsync(request);
+Payment payment = await client.CreateAsync(request, requestOptions);
 
 ```
 ```python
 import mercadopago
 sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
 
 payment_data = {
     "transaction_amount": 100,
@@ -113,7 +136,7 @@ payment_data = {
     }
 }
 
-payment_response = sdk.payment().create(payment_data)
+payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 ```
 ```curl
@@ -121,6 +144,7 @@ curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
@@ -170,7 +194,7 @@ The response will show the payment **pending status** and all the information yo
 
 After the payment creation in the backend using the Mercado Pago SDK, use the **id** received in the response to instantiate the Status Screen Brick and show it to the buyer.
 
-In addition to displaying the payment status, Status Screen Brick will also display the Pix code to copy and paste and the QRCode for the buyer to scan and pay. Learn how simple it is to integrate [click here](/developers/en/docs/checkout-bricks/status-screen-brick/configure-integration).
+In addition to displaying the payment status, Status Screen Brick will also display the Pix code to copy and paste and the QR Code for the buyer to scan and pay. Learn how simple it is to integrate [click here](/developers/en/docs/checkout-bricks/status-screen-brick/configure-integration).
 
 > WARNING
 >
