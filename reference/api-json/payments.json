@@ -7,7 +7,8 @@
           "checkout-pro",
           "mobile-checkout",
           "subscriptions",
-          "checkout-api"
+          "checkout-api",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Create a payment and add all the information you need. Remember to add the payment details and the payer's information",
@@ -5311,7 +5312,8 @@
           "qr-code",
           "subscriptions",
           "checkout-api",
-          "mp-point"
+          "mp-point",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Search and return payments made in the last twelve months from the search date",

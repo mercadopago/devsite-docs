@@ -77,6 +77,13 @@ tags:
       es: 'Wallet connect'
     externalDocs: 
       url: '/docs/wallet-connect/landing'
+  checkout-bricks:
+    description:
+      pt: 'Checkout Bricks'
+      en: 'Checkout Bricks'
+      es: 'Checkout Bricks'
+    externalDocs: 
+      url: '/docs/checkout-bricks/landing'
   
 #------DEFAULT - ALL ARCHIVES - END------
 

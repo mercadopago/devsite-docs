@@ -1467,7 +1467,8 @@
       "get": {
         "tags": [
           "checkout-pro",
-          "mobile-checkout"
+          "mobile-checkout",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Find all the information related to generated preferences using specific filters or a specific date range",
@@ -1963,7 +1964,8 @@
       "get": {
         "tags": [
           "checkout-pro",
-          "mobile-checkout"
+          "mobile-checkout",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Check all the payment information for a product or service with the ID of the preference of your choice",
@@ -2733,7 +2735,9 @@
       "put": {
         "tags": [
           "checkout-pro",
-          "mobile-checkout"
+          "mobile-checkout",
+          "checkout-bricks",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Renew the details of a payment preference. Indicate the ID of the preference and send the parameters with the information you want to update",
