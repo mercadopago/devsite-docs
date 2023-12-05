@@ -136,7 +136,7 @@ This list of banks will be necessary to continue with the integration during the
 >
 > Add payment form
 
-Once you have obtained the payment methods, add the following payment form to your project.
+In the frontend of your project, you must add the following payment form.
 
 ```html
  <form id="form-checkout" action="/process_payment" method="post">

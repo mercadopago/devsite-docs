@@ -1,7 +1,7 @@
 ----[mco]----
 # PSE
 
-Com o Checkout Transparente do Mercado Pago você pode oferecer pagamentos com **PSE - Pagos Seguros en Línea -**, serviço que permite fazer compras e pagamentos pela Internet debitando recursos online diretamente da poupança, conta corrente ou depósito eletrônico.
+Com o Checkout Transparente do Mercado Pago você pode oferecer pagamentos com **PSE - Pagos Seguros en Línea -**, serviço que permite fazer compras e pagamentos pela Internet debitando recursos online diretamente da poupança, conta corrente ou carteira digital.
 
 Para oferecer pagamentos com **PSE**, siga as etapas abaixo.
 
@@ -135,7 +135,7 @@ Esta lista de bancos será necessária para continuar a integração durante a f
 >
 > Adicionar formulário de pagamento
 
-Uma vez obtidos os métodos de pagamento, adicione o seguinte formulário de pagamento ao seu projeto.
+No frontend do seu projeto, você deve adicionar a seguinte forma de pagamento.
 
 ```html
  <form id="form-checkout" action="/process_payment" method="post">

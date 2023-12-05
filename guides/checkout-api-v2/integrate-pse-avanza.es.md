@@ -136,7 +136,7 @@ Este listado de bancos será necesario para continuar con la integración durant
 >
 > Añadir formulario de pago
 
-Una vez obtenidos los medios de pago, añade el siguiente formulario de pago a tu proyecto.
+En el frontend de tu proyecto, deberás añadir el siguiente formulario de pago.
 
 ```html
  <form id="form-checkout" action="/process_payment" method="post">
