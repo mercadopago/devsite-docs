@@ -4,7 +4,7 @@
 >
 > Importante
 >
-> Antes de começar a integrar o Checkout Pro para Mobile, certifique-se de ter uma preferência criada em seu backend. Se você ainda não fez isso, vá para [Criar preferências](/developers/pt/docs/checkout-pro/integrate-preferences).
+> Antes de começar a integrar o Checkout Pro para Mobile, certifique-se de ter uma preferência criada em seu backend. Se você ainda não fez isso, vá para [Criar preferências.](/developers/pt/docs/checkout-pro/integrate-preferences)
 
 Para integrar o Checkout Pro em uma aplicação móvel desenvolvida com o Flutter, você precisará exibir o checkout da web dentro da aplicação. Para isso, existem diversas opções, sendo uma delas o uso de Custom Tabs. Essa tecnologia permite que páginas da web sejam abertas em um navegador nativo incorporado à aplicação, proporcionando uma experiência de navegação mais fluída e consistente aos usuários.
 
@@ -28,7 +28,7 @@ Isso adicionará a linha `dependencies: flutter_custom_tabs: ^1.2.1` ao arquivo 
 >
 > Nota
 > 
-> Conheça mais na [documentação oficial do Flutter Custom Tabs](https://pub.dev/packages/flutter_custom_tabs).
+> Conheça mais na [documentação oficial do Flutter Custom Tabs.](https://pub.dev/packages/flutter_custom_tabs)
 
 Para usar a dependência, você deve importá-la primeiro no código Dart onde deseja exibir o Checkout. Para importar, adicione a seguinte linha no seu código:
 
@@ -106,7 +106,7 @@ class MyApp extends StatelessWidget {
 >
 > Personalizar a aparência de acordo com a plataforma
 >
-> É possível personalizar a aparência da tela que será exibida, especificando opções para cada plataforma. Para personalizar a aparência no Android, você deve fazer isso com o CustomTabsOption. Saiba mais na [documentação oficial](https://pub.dev/packages/flutter_custom_tabs).
+> É possível personalizar a aparência da tela que será exibida, especificando opções para cada plataforma. Para personalizar a aparência no Android, você deve fazer isso com o CustomTabsOption. Saiba mais na [documentação oficial.](https://pub.dev/packages/flutter_custom_tabs)
 
 > CLIENT_SIDE
 >
