@@ -1,7 +1,5 @@
 # Erros em pagamentos com PSE
-Ao processar transações através do PSE, a chamada para envio de pagamento pode retornar erros externos ao Checkout.
-
-Abaixo, você confere quais são e quais formas você pode oferecer ao comprador para resolvê-los.
+Ao processar transações via PSE, é possível que a chamada de envio de pagamento encontre erros externos ao Checkout. A seguir, você encontrará uma lista desses erros e as soluções que pode sugerir ao comprador para resolvê-los.
 
 
 | Código | Descrição | Mensagem sugerida |

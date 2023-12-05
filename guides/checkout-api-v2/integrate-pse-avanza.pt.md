@@ -1,7 +1,7 @@
 ----[mco]----
 # PSE
 
-Com o Checkout Transparente do Mercado Pago você pode oferecer pagamentos com **PSE - Pagos Seguros en Línea -**, serviço que permite fazer compras e pagamentos pela Internet debitando recursos online diretamente da poupança, conta corrente ou carteira digital.
+Com o Checkout Transparente do Mercado Pago é possível oferecer pagamentos com **PSE - Pagos Seguros en Línea -**, serviço que permite fazer compras e pagamentos pela Internet utilizando recursos online diretamente da poupança, conta corrente ou carteira digital.
 
 Para oferecer pagamentos com **PSE**, siga as etapas abaixo.
 
@@ -9,7 +9,7 @@ Para oferecer pagamentos com **PSE**, siga as etapas abaixo.
 >
 > Importante
 >
-> Lembre-se de configurar suas [Credenciais](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials) antes de iniciar sua integração.
+> Tenha em mente que é preciso configurar suas [Credenciais](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials) antes de iniciar sua integração.
 
 > SERVER_SIDE
 >
@@ -17,7 +17,7 @@ Para oferecer pagamentos com **PSE**, siga as etapas abaixo.
 >
 > Obter meios de pagamento
 
-Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um **GET** com sua _Access Token_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) ou, se preferir, faça a requisição utilizando nossos SDKs abaixo.
+Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um **GET** com seu _Access Token_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) ou, se preferir, faça a requisição utilizando nossos SDKs abaixo.
 
 [[[
 ```php
@@ -135,7 +135,7 @@ Esta lista de bancos será necessária para continuar a integração durante a f
 >
 > Adicionar formulário de pagamento
 
-No frontend do seu projeto, você deve adicionar a seguinte forma de pagamento.
+No frontend do seu projeto, você deve adicionar o seguinte formulário de pagamento.
 
 ```html
  <form id="form-checkout" action="/process_payment" method="post">
@@ -216,7 +216,8 @@ No frontend do seu projeto, você deve adicionar a seguinte forma de pagamento.
 >
 > Obter tipos de documento
 
-Para criar um pagamento com PSE também é necessário obter o tipo e número do documento do usuário. Estes documentos dependerão do tipo de pessoa (física ou jurídica) selecionada durante a adição do formulário de pagamento, e você poderá obtê-los automaticamente através da seguinte função:
+Para criar um pagamento com PSE, é necessário obter o tipo e número do documento do usuário.  A especificidade destes documentos está diretamente relacionada ao perfil do usuário — seja ele pessoa física ou jurídica —, selecionado no momento de preenchimento do formulário de pagamento. Essas informações podem ser coletadas de maneira automática por meio da função a seguir:
+
 
 ```javascript
 document.getElementById('form-checkout__personType').addEventListener('change', e => {
@@ -246,30 +247,15 @@ function updateSelectOptions(selectedValue){
 }
 ```
 
-Para que os elementos dinâmicos criados com este javascript sejam carregados quando a página terminar de renderizar, você deve adicionar o seguinte código:
-
-```javascript
-(function initCheckout() {
-    try {
-        const docTypeElement = document.getElementById('form-checkout__identificationType');
-        setPse();
-        updateSelectOptions('natural')
-    }catch(e) {
-        return console.error('Error getting identificationTypes: ', e);
-    }
- })();
-
-``` 
-
 > CLIENT_SIDE
 >
 > h2
 >
 > Listar bancos
 
-Ao criar um pagamento com PSE, é necessário enviar o código do banco que será utilizado para realizar a transferência. Para isso, você deve listar os bancos disponíveis e oferecer as opções ao pagador, para que ele escolha o banco de sua preferência.
+Ao criar um pagamento com PSE, é necessário enviar o código do banco que será utilizado para a transferência. Para isso, é preciso listar os bancos disponíveis e apresentar essas opções ao pagador, permitindo que ele escolha o banco de sua preferência.
 
-Caso ainda não o tenha feito, obtenha a lista de bancos disponíveis, conforme indicado na etapa [Obter meios de pagamento](/developers/pt/docs/checkout-api/integration-configuration/pse#bookmark_obter_meios_de_pagamento). A seguir, crie um elemento `select` em javascript e enriqueça-o com os dados retornados nessa chamada, como mostra o exemplo abaixo:
+Caso ainda não o tenha feito, obtenha os meios de pagamento, conforme indicado na etapa [Obter meios de pagamento](/developers/pt/docs/checkout-api/integration-configuration/pse#bookmark_obter_meios_de_pagamento), e filtre a lista de bancos disponíveis para PSE. A seguir, crie um elemento `select` em javascript e enriqueça-o com os dados retornados nessa chamada, como mostra o exemplo abaixo:
 
 ```javascript
 function setPse() {
@@ -296,6 +282,21 @@ function setPse() {
         });
 }
 ```
+
+Para que os elementos dinâmicos criados com esses javascript sejam carregados quando a página terminar de renderizar, adicione o seguinte código:
+
+```javascript
+(function initCheckout() {
+    try {
+        const docTypeElement = document.getElementById('form-checkout__identificationType');
+        setPse();
+        updateSelectOptions('natural')
+    }catch(e) {
+        return console.error('Error getting identificationTypes: ', e);
+    }
+ })();
+
+``` 
 
 > NOTE
 >
@@ -656,7 +657,7 @@ payment = payment_response["response"]
 ```
 ]]]
 
-Os seguintes campos para enviar um pagamento são **obrigatórios** e você deve preenchê-los seguindo as especificações da tabela abaixo:
+É necessário preencher os campos obrigatórios listados abaixo, seguindo as especificações mostradas na tabela a seguir:
 
 | Campo | Descrição | Possíveis valores/validações | Chamado para obter os valores |
 |:---:|:---:|:---:|:---:|
@@ -716,9 +717,9 @@ A resposta mostrará o status `pendente` até que o comprador realize o pagament
 
 ### Exemplos de mensagens para callback URL
 
-Assim que o comprador efetuar o pagamento na plataforma do banco selecionado, ele será redirecionado para uma *callback URL*, na qual será informado sobre o status de sua transação.
+Após o comprador realizar o pagamento na plataforma do banco escolhido, ele será redirecionado para uma URL de callback. Nesta página, ele receberá informações sobre o status da transação. 
 
-A seguir mostramos exemplos de mensagens que você pode oferecer, de acordo com os três status possíveis em que o pagamento pode ser encontrado.
+Abaixo, apresentamos exemplos de mensagens que você pode exibir, alinhadas aos três possíveis status em que o pagamento pode se encontrar.
 
 #### Status aprovado
 
@@ -734,6 +735,6 @@ A seguir mostramos exemplos de mensagens que você pode oferecer, de acordo com 
 
 ## Expiração
 
-O pagamento criado com **PSE** expira automaticamente em 15 minutos após a geração e seu status passa a ser `rejeitado`. Caso o comprador não acesse a web e efetue o pagamento dentro desse prazo, deverá ser gerado um novo. 
+O pagamento criado com **PSE** expira automaticamente em 15 minutos após ter sido criado e seu status passa a ser `rejeitado`. Caso o comprador não acesse a web e efetue o pagamento dentro desse prazo, um novo pagamento deverá ser criado. 
 
 ------------

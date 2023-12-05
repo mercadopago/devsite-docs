@@ -249,20 +249,6 @@ function updateSelectOptions(selectedValue){
 
 ```
 
-Para que los elementos dinámicos creados con este javascript se carguen cuando la página termine de renderizar, deberás añadir el siguiente código:
-
-```javascript
-(function initCheckout() {
-    try {
-        const docTypeElement = document.getElementById('form-checkout__identificationType');
-        setPse();
-        updateSelectOptions('natural')
-    }catch(e) {
-        return console.error('Error getting identificationTypes: ', e);
-    }
- })();
-
-``` 
 
 > CLIENT_SIDE
 >
@@ -272,7 +258,7 @@ Para que los elementos dinámicos creados con este javascript se carguen cuando 
 
 Al crear un pago con PSE, es necesario enviar el código del banco que será utilizado para hacer la transferencia. Para ello, deberás listar los bancos disponibles y ofrecer las opciones al pagador, para que elija el banco de su preferencia. 
 
-Si todavía no lo has hecho, obtén el listado de bancos disponibles, tal como se indica en la etapa [Obtener medios de pago](/developers/es/docs/checkout-api/integration-configuration/pse#bookmark_obtener_medios_de_pago). Luego, crea un elemento `select` en javascript, y enriquécelo con los datos devueltos en ese llamado, tal como lo muestra el ejemplo a continuación:
+Si todavía no lo has hecho, obtén los medios de pago, tal como se indica en la etapa [Obtener medios de pago](/developers/es/docs/checkout-api/integration-configuration/pse#bookmark_obtener_medios_de_pago), y filtra el listado de bancos disponibles para PSE. Luego, crea un elemento `select` en javascript, y enriquécelo con los datos devueltos en ese llamado, tal como lo muestra el ejemplo a continuación:
 
 ```javascript
 function setPse() {
@@ -300,6 +286,20 @@ function setPse() {
 }
 ```
 
+Para que los elementos dinámicos creados con estos javascript se carguen cuando la página termine de renderizar, deberás añadir el siguiente código:
+
+```javascript
+(function initCheckout() {
+    try {
+        const docTypeElement = document.getElementById('form-checkout__identificationType');
+        setPse();
+        updateSelectOptions('natural')
+    }catch(e) {
+        return console.error('Error getting identificationTypes: ', e);
+    }
+ })();
+
+``` 
 > NOTE
 >
 > Nota

@@ -249,21 +249,6 @@ function updateSelectOptions(selectedValue){
 
 ```
 
-In order for the dynamic elements created with this javascript to load when the page finishes rendering, you must add the following code:
-
-```javascript
-(function initCheckout() {
-    try {
-        const docTypeElement = document.getElementById('form-checkout__identificationType');
-        setPse();
-        updateSelectOptions('natural')
-    }catch(e) {
-        return console.error('Error getting identificationTypes: ', e);
-    }
- })();
-
-``` 
-
 > CLIENT_SIDE
 >
 > h2
@@ -272,7 +257,7 @@ In order for the dynamic elements created with this javascript to load when the 
 
 When creating a payment with PSE, it is necessary to send the bank code that will be used to make the transfer. To do this, you must list the available banks and offer the options to the payer, so that they can choose the bank of their preference.
 
-If you have not done so yet, obtain the list of available banks, as indicated in the [Get payment methods](/developers/es/docs/checkout-api/integration-configuration/pse#bookmark_get_payment_methods) stage. Next, create a `select` element in javascript, and enrich it with the data returned in that call, as shown in the example below:
+If you have not done so yet, obtain the list of payment methods, as indicated in the [Get payment methods](/developers/es/docs/checkout-api/integration-configuration/pse#bookmark_get_payment_methods) stage, and filter the list of available banks for PSE. Next, create a `select` element in javascript, and enrich it with the data returned in that call, as shown in the example below:
 
 ```javascript
 function setPse() {
@@ -299,6 +284,21 @@ function setPse() {
         });
 }
 ```
+
+In order for the dynamic elements created with this javascript to load when the page finishes rendering, you must add the following code:
+
+```javascript
+(function initCheckout() {
+    try {
+        const docTypeElement = document.getElementById('form-checkout__identificationType');
+        setPse();
+        updateSelectOptions('natural')
+    }catch(e) {
+        return console.error('Error getting identificationTypes: ', e);
+    }
+ })();
+
+``` 
 
 > NOTE
 >
