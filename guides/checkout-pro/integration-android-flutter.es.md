@@ -4,7 +4,7 @@
 >
 > Importante
 >
-> Antes de comenzar a integrar Checkout Pro para Mobile, deberás contar con una preferencia creada en tu backend. Si aún no lo has hecho, ve a [Crear preferencias](/developers/es/docs/checkout-pro/integrate-preferences).
+> Antes de comenzar a integrar Checkout Pro para Mobile, deberás contar con una preferencia creada en tu backend. Si aún no lo has hecho, ve a [Crear preferencias.](/developers/es/docs/checkout-pro/integrate-preferences)
 
 Para integrar Checkout Pro en una aplicación móvil desarrollada con Flutter, deberás mostrar el checkout web dentro de la aplicación. Para lograr esto, existen varias opciones, entre las cuales se destaca el uso de Custom Tabs. Esta tecnología te permitirá abrir páginas web en un navegador nativo integrado en la aplicación, lo que brinda una experiencia de navegación más fluida y coherente para los usuarios.
 
@@ -28,7 +28,7 @@ Esto agregará la línea `dependencies:  flutter_custom_tabs: ^1.2.1` al archivo
 >
 > Nota
 > 
-> Te invitamos a conocer más en la [documentación oficial de Flutter Custom Tabs](https://pub.dev/packages/flutter_custom_tabs).
+> Te invitamos a conocer más en la [documentación oficial de Flutter Custom Tabs.](https://pub.dev/packages/flutter_custom_tabs)
 
 Para hacer uso de la dependencia deberás importarla primero en el código Dart donde vayas a requerir mostrar el Checkout. Para hacerlo, agrega la siguiente línea en tu código:
 
@@ -106,7 +106,7 @@ class MyApp extends StatelessWidget {
 >
 > Personalizar la visualización según la plataforma
 >
-> Es posible personalizar el *look & feel* de la pantalla a ser mostrada especificando opciones para cada plataforma. Para personalizar la apariencia en Android, deberás hacerlo con CustomTabsOption. Conoce más en la [documentación oficial](https://pub.dev/packages/flutter_custom_tabs).
+> Es posible personalizar el *look & feel* de la pantalla a ser mostrada especificando opciones para cada plataforma. Para personalizar la apariencia en Android, deberás hacerlo con CustomTabsOption. Conoce más en la [documentación oficial.](https://pub.dev/packages/flutter_custom_tabs)
 
 > CLIENT_SIDE
 >
@@ -119,7 +119,6 @@ Los **Deep Links**, también conocidos como enlaces profundos, son una forma pod
 En esta sección de la documentación, encontrarás cómo configurar los Deep Links en una aplicación de Flutter basados en la [documentación oficial de Flutter](https://docs.flutter.dev/ui/navigation/deep-linking?gclid=CjwKCAjwrranBhAEEiwAzbhNtSuZ4qnpJoRrs1AgJ8SzP80sc4EmZA3_VlFInWPQ-42suf1Wm31K9RoC0f4QAvD_BwE&gclsrc=aw.ds).
 
 Con la configuración adecuada de los Deep Links en Flutter, podrás ofrecer a los usuarios la capacidad de acceder directamente a contenido específico en tu aplicación, mejorando la navegación y la experiencia general del usuario.
-
 
 ### Crear un Deep Link
 
@@ -145,4 +144,4 @@ Flutter admite utilizar Deep Links en Android y navegadores web. Al abrir una UR
 
 Si se ejecuta la aplicación en un navegador web, no es necesaria ninguna configuración adicional. Las rutas se gestionan del mismo modo que un enlace profundo de Android. Por defecto, las aplicaciones web leen la ruta del enlace profundo a partir del fragmento de url utilizando el patrón `/#/path/to/app/screen`, pero esto puede cambiarse configurando la estrategia de URL para tu app. 
 
-> Para conocer más, ingresa a las documentaciones oficiales sobre [cómo manejar Deep Links para aplicaciones Flutter](https://medium.com/flutter-community/deep-links-and-flutter-applications-how-to-handle-them-properly-8c9865af9283) y [cómo configurar App Link para Android](https://docs.flutter.dev/cookbook/navigation/set-up-app-links)
+> Para conocer más, ingresa a las documentaciones oficiales sobre [cómo manejar Deep Links para aplicaciones Flutter](https://medium.com/flutter-community/deep-links-and-flutter-applications-how-to-handle-them-properly-8c9865af9283) y [cómo configurar App Link para Android.](https://docs.flutter.dev/cookbook/navigation/set-up-app-links)

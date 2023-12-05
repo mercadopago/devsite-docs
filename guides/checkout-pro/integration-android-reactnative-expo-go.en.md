@@ -4,7 +4,7 @@
 >
 > Important
 >
-> Before you start integrating Checkout Pro for Mobile, you'll need to have a preference created in your backend. If you haven't already done so, go to [Preference Creation](/developers/en/docs/checkout-pro/integrate-preferences).
+> Before you start integrating Checkout Pro for Mobile, you'll need to have a preference created in your backend. If you haven't already done so, go to [Preference Creation.](/developers/en/docs/checkout-pro/integrate-preferences).
 
 In mobile application development, the need to display web content within the application often arises. For this, there are several options, among which the use of Custom Tabs (for Android) and Safari View Controller (for iOS) stand out. These technologies allow web pages to be opened in a native browser incorporated into the application, providing a smoother and more consistent browsing experience for users.
 
@@ -139,5 +139,3 @@ In case of running a **prebuild** of the application, you should verify that the
 Finally, you will need to configure your React Native application to receive and manage Deep Links. This will be addressed using the react-native-inappbrowser dependency.
 
 In the case of Android, **the closing of the custom tab is done automatically** when redirecting to a valid Deep Link. In the event that the link is not valid, no redirection action will be executed from the custom tab.
-
-
