@@ -1,8 +1,8 @@
 > WARNING
 >
 > Aviso de descontinuação
->
-Em 29 de novembro de 2023, foi descontinuado o modelo de integração baseado em WebView, que incluía uma tentativa de login a partir de um navegador embutido. Para seguir oferecendo uma experiência de usuário fluída, recomendamos a transição para o Checkout Pro específico para aplicativos móveis. Abaixo, apresentamos opções detalhadas para facilitar o processo de atualização. 
+> 
+> Em 29 de novembro de 2023, foi descontinuado o modelo de integração baseado em WebView, que incluía uma tentativa de login a partir de um navegador embutido. Para seguir oferecendo uma experiência de usuário fluída, recomendamos a transição para o Checkout Pro específico para aplicativos móveis. Abaixo, apresentamos opções detalhadas para facilitar o processo de atualização. 
 
 # Integrar Checkout Pro para Mobile
 
