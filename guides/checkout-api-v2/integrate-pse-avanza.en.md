@@ -217,7 +217,7 @@ In the frontend of your project, you must add the following payment form.
 >
 > Get document types
 
-To create a payments with PSE, it is also necessary to obtain the user's document type and number. These documents will depend on the type of person (natural or legal) selected while adding the payment form, and you can obtain them automatically using the following function:
+To create a payments with PSE, it is also necessary to obtain the user's document type and number. This information will depend on the type of person (natural or legal) selected while adding the payment form, and you can obtain them automatically using the following function:
 
 ```javascript
 
@@ -665,7 +665,7 @@ The following are **mandatory** fields that must be completed when sending a pay
 | Field | Description | Posssible values/validaations | Request to get the values |
 |:---:|:---:|:---:|:---:|
 | `transaction_details.financial_institution` | Bank informed in the POST to make the electronic transfer. You must show the list to the user and allow him to select. This list usually refreshes, so it’s  Se debe mostrar al usuario el listado de bancos y permitirle seleccionar. El listado se actualiza, por lo que recommended to consume the information every hour. | - | https://api.mercadopago.com/v1/payment_methods/search?site_id=MCO&id=pse&public_key=YOUR_PUBLIC_KEY  |
-| `payer.entity_type` | Type of personality, physical or legal. | *individual* or *association* | - |
+| `payer.entity_type` | Type of person, natural or legal. | *individual* or *association* | - |
 | `payer.identification` | Type and number of the buyer's document. | - | curl -X GET \<br>'https://api.mercadopago.com/v1/identification_types' \<br>-H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
 | `additional_info.ip_address` |  Buyer’s IP address, where the payment is made.. | - | - |
 | `callback_url` | URL where the buyer is redirected by default after making the payment within the bank's page, when the buyer indicates that they want to return to the store.<br>You can check suggested messages to show the buyer under [Examples for callback URLs](/developers/en/docs/checkout-api/integration-configuration/pse#bookmark_examples_for_callback_urls). | - | - |
@@ -713,7 +713,7 @@ The response will show the **pending status** until the buyer completes the paym
 
 ```
 
-> NOTE
+> WARNING
 >
 > Important
 >

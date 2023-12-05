@@ -659,7 +659,7 @@ payment = payment_response["response"]
 ```
 ]]]
 
-Los siguientes campos para enviar un pago son **obligatorios** y deberás completarlos siguiendo las especificaciones de la de la tabla a continuación:
+Los siguientes campos para enviar un pago son **obligatorios** y deberás completarlos siguiendo las especificaciones de la tabla a continuación:
 
 | Campo | Descripción | Valores posibles/validaciones | Llamado para obtener los valores |
 |:---:|:---:|:---:|:---:|
