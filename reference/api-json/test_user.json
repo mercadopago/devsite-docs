@@ -5,10 +5,10 @@
       "post": {
         "tags": [
           "checkout-api",
+          "checkout-bricks",
           "checkout-pro",
           "subscriptions",
-          "qr-code",
-          "checkout-bricks"
+          "qr-code"
         ],
         "description": {
           "en": "This endpoint handles http requests to create a test user",
