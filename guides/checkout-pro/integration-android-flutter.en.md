@@ -4,7 +4,7 @@
 >
 > Important
 >
-> Before you start integrating Checkout Pro for Mobile, you need to have a preference created in your backend. If you haven't done it yet, go to [Create preference](/developers/en/docs/checkout-pro/integrate-preferences).
+> Before you start integrating Checkout Pro for Mobile, you need to have a preference created in your backend. If you haven't done it yet, go to [Create preference.](/developers/en/docs/checkout-pro/integrate-preferences)
 
 To integrate Checkout Pro into a mobile application developed with Flutter, you need to display the web checkout inside the application. To achieve this, there are several options, among which Custom Tabs stands out. This technology allows you to open web pages in a native browser integrated into the application, providing a smoother and more consistent browsing experience for users.
 
@@ -28,7 +28,7 @@ This will add the line `dependencies:  flutter_custom_tabs: ^1.2.1` to the **pub
 >
 > Note
 > 
-> You can learn more in the [official documentation of Flutter Custom Tabs](https://pub.dev/packages/flutter_custom_tabs).
+> You can learn more in the [official documentation of Flutter Custom Tabs.](https://pub.dev/packages/flutter_custom_tabs)
 
 To make use of the dependency, you must first import it in the Dart code where you will need to display the Checkout. To import it, add the following line to your code:
 
@@ -106,7 +106,7 @@ class MyApp extends StatelessWidget {
 >
 > Customize the Display per Platform
 >
-> It is possible to customize the look & feel of the screen that will be displayed by specifying options for each platform. To customize the appearance on Android, you must do it with CustomTabsOption. Learn more in the [official documentation](https://pub.dev/packages/flutter_custom_tabs).
+> It is possible to customize the look & feel of the screen that will be displayed by specifying options for each platform. To customize the appearance on Android, you must do it with CustomTabsOption. Learn more in the [official documentation.](https://pub.dev/packages/flutter_custom_tabs)
 
 > CLIENT_SIDE
 >
@@ -119,7 +119,6 @@ class MyApp extends StatelessWidget {
 In this section of the documentation, you will find how to configure Deep Links in a Flutter application based on the [official Flutter documentation](https://docs.flutter.dev/ui/navigation/deep-linking?gclid=CjwKCAjwrranBhAEEiwAzbhNtSuZ4qnpJoRrs1AgJ8SzP80sc4EmZA3_VlFInWPQ-42suf1Wm31K9RoC0f4QAvD_BwE&gclsrc=aw.ds).
 
 With the proper configuration of Deep Links in Flutter, you can offer users the ability to directly access specific content in your application, improving navigation and the overall user experience.
-
 
 ### Creating a Deep Link
 
@@ -145,4 +144,4 @@ Flutter supports the use of Deep Links on Android and web browsers. When opening
 
 If the application is run in a web browser, no additional configuration is needed. Routes are handled the same way as an Android Deep Link. By default, web applications read the Deep Link path from the URL fragment using the pattern `/#/path/to/app/screen`, but this can be changed by configuring the URL strategy for your app.
 
-> To learn more, refer to the official documentation on [handling Deep Links for Flutter applications](https://medium.com/flutter-community/deep-links-and-flutter-applications-how-to-handle-them-properly-8c9865af9283) and [setting up App Link for Android](https://docs.flutter.dev/cookbook/navigation/set-up-app-links).
+> To learn more, refer to the official documentation on [handling Deep Links for Flutter applications](https://medium.com/flutter-community/deep-links-and-flutter-applications-how-to-handle-them-properly-8c9865af9283) and [setting up App Link for Android.](https://docs.flutter.dev/cookbook/navigation/set-up-app-links)

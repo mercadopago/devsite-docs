@@ -4,7 +4,7 @@
 >
 > Important
 >
-> Before starting to integrate Checkout Pro for Mobile, you will need to have a preference created in your backend. If you haven't already, go to [Preference creation](/developers/en/docs/checkout-pro/integrate-preferences).
+> Before starting to integrate Checkout Pro for Mobile, you will need to have a preference created in your backend. If you haven't already, go to [Preference creation.](/developers/en/docs/checkout-pro/integrate-preferences)
 
 When developing mobile apps with React Native, the need to display web content within the app often arises. To achieve this, there are several options, among which the use of Custom Tabs (for Android) and Safari View Controller (for iOS) stand out. These technologies allow web pages to be opened in a native browser embedded within the application, providing a smoother and more consistent browsing experience for users.
 
@@ -32,7 +32,6 @@ npm install react-native-inappbrowser-reborn --save
 yarn add react-native-inappbrowser-reborn
 ```
 ]]]
-
 
 ### Android support
 
@@ -68,7 +67,6 @@ buildscript {
     // Put here other AndroidX dependencies
   }
 ```
-
 
 > CLIENT_SIDE
 >
@@ -162,7 +160,6 @@ In the example below, you'll set up a Deep Link of the form _myapp://checkout/co
 
 The `pathPrefix` property is optional and can be added to direct a specific view of the application.
 
-
 > CLIENT_SIDE
 >
 > h2
@@ -171,6 +168,4 @@ The `pathPrefix` property is optional and can be added to direct a specific view
 
 Finally, we will see how we can configure our React Native application to receive and manage Deep Links. This will be addressed using the react-native-inappbrowser dependency.
 
-In the case of Android, **the closing of the custom tab is done automatically** when redirecting to a valid Deep Link. In the event that the link is not valid, no redirection action will be executed from the custom tab..
-
-
+In the case of Android, **the closing of the custom tab is done automatically** when redirecting to a valid Deep Link. In the event that the link is not valid, no redirection action will be executed from the custom tab.
