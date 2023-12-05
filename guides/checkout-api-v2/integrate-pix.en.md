@@ -139,13 +139,17 @@ elem.appendChild(tempOptions);
 ```
 ]]]
 
-
 ## Send payment
 
 When finalizing the inclusion of the payment form, it is necessary to send the buyer's email, type and document number, the payment method used (pix) and the value detail.
 
-To configure payment with Pix, send a **POST** to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, make the request using our SDKs.
+> NOTE
+>
+> Important
+>
+> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
+To configure payment with Pix, send a **POST** to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, make the request using our SDKs.
 
 [[[
 ```php
@@ -181,31 +185,38 @@ To configure payment with Pix, send a **POST** to the endpoint [/v1/payments](/d
 ?>
 ```
 ```node
-import { MercadoPagoConfig, Payments } from 'mercadopago';
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
-const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const payments = new Payments(client);
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
-payments.create({
-  transaction_amount: req.transaction_amount,
-  token: req.token,
-  description: req.description,
-  installments: req.installments,
-  payment_method_id: req.paymentMethodId,
-  issuer_id: req.issuer,
-  payer: {
-    email: req.email,
-    identification: {
-      type: req.identificationType,
-      number: req.number
-    }
-  } 
-}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
-    .then((result) => console.log(result))
-    .catch((error) => console.log(error));
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
+
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
+ 
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
 
 PaymentClient client = new PaymentClient();
 
@@ -224,11 +235,17 @@ IdentificationRequest.builder().type("CPF").number("19119119100").build())
 .build())
 .build();
 
-client.create(paymentCreateRequest);
+client.create(paymentCreateRequest, requestOptions);
 ```
 ```ruby
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
 
 payment_request = {
 transaction_amount: 100,
@@ -243,7 +260,7 @@ number: '19119119100',
 }
 }
 
-payment_response = sdk.payment.create(payment_request)
+payment_response = sdk.payment.create(payment_request, custom_request_options)
 payment = payment_response[:response]
 
 ```
@@ -255,6 +272,9 @@ using MercadoPago.Client.Payment;
 using MercadoPago.Resource.Payment;
 
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
 
 var request = new PaymentCreateRequest
 {
@@ -275,12 +295,17 @@ Number = "191191191-00",
 };
 
 var client = new PaymentClient();
-Payment payment = await client.CreateAsync(request);
+Payment payment = await client.CreateAsync(request, requestOptions);
 
 ```
 ```python
 import market
 sdk = Mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
 
 payment_data = {
 "transaction_amount": 100,
@@ -305,7 +330,7 @@ payment_data = {
 }
 }
 
-payment_response = sdk.payment().create(payment_data)
+payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 ```
 ```curl
@@ -313,6 +338,7 @@ curl -X POST \
 -H 'accept: application/json' \
 -H 'content-type: application/json' \
 -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+-H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
 'https://api.mercadopago.com/v1/payments' \
 -d '{
 "transaction_amount": 100,

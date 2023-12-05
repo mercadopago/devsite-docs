@@ -6,7 +6,7 @@ Essa etapa adicional proporciona ao comprador uma experiência mais transparente
 
 <center>
 
-![review-confirm-pt](checkout-bricks/review-confirm-pt.gif)
+![review-confirm](checkout-bricks/confirmation-step-es.gif)
 
 </center>
 
@@ -48,6 +48,7 @@ const settings = {
       receiverAddress: {
         streetName: "<STREET_NAME>",
         streetNumber: "<STREET_NUMBER>",
+        complement: "<COMPLEMENT>",
         neighborhood: "<PAYER_NEIGHBORHOOD>", // opcional
         city: "<PAYER_CITY>", // opcional
         federalUnit: "<PAYER_FED_UNIT>", // opcional

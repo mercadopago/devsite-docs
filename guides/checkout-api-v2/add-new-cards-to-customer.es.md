@@ -8,7 +8,6 @@ Si es necesario, es posible agregar nuevas tarjetas a un cliente específico. Pa
 >
 > Si es necesario eliminar una tarjeta antes de agregar nuevas tarjetas a un cliente, envíe un **DELETE** al endpoint [/v1/customers/{customer_id}/cards/{id}](/developers/es/reference/cards/_customers_customer_id_cards_id/delete) proporcionando el `customer_id` y el `id` de la tarjeta que desea eliminar. Después de la ejecución exitosa de la solicitud, podrá agregar la nueva tarjeta.
 
-
 [[[
 ```php
 <?php
@@ -32,17 +31,19 @@ Si es necesario, es posible agregar nuevas tarjetas a un cliente específico. Pa
 const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
-customerClient.get('1234')
+const customer = customerClient.get({ customerId: '<CUSTOMER_ID>' })
 	.then((result) => {
+
   const cardClient = new CustomerCard(client);
 
   const body = {
-  	token : result.token,
-    issuer_id: '2345',
-    payment_method: 'debit_card' 
+       token : result.token,
+       issuer_id: '2345',
+       payment_method: 'debit_card' 
   };
 
-  customerClient.create({ customerId: 'customer_id', customerCardBody :   body}).then((result) => console.log(result));
+cardClient.create({ customerId: customer, body: body })
+.then(console.log).catch(console.log);
 });
 ```
 ```java

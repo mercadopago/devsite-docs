@@ -3,7 +3,6 @@
 If you need specific customer data, such as ID, address or registration date, you can get it through our customer API. To do this, send a GET with the customer's email to the endpoint [/v1/customers/search](/developers/en/reference/customers/_customers_search/get) and execute the request or, if you prefer, use one of our SDKs below.
 
 [[[
-
 ```php
 <?php
   MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
@@ -14,16 +13,12 @@ If you need specific customer data, such as ID, address or registration date, yo
 ?>
 ```
 ```node
-const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const customerClient = new Customer(client);
+import { Customer, MercadoPagoConfig } from '@src/index';
 
-customerClient.search({ 
-  limit: 1, 
-  offset: 0, 
-  filters: {
-    email: 'my.user@example.com'
-  } 
-}).then((result) => console.log(result));
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+const customer = new Customer(client);
+
+customer.search({ options: { email: '<EMAIL>' } }).then(console.log).catch(console.log);
 ```
 ```java
 

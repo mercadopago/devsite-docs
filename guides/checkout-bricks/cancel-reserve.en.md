@@ -7,46 +7,61 @@ To cancel a reserve, use one of our available codes below.
 [[[
 ```php
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
-$payment = MercadoPago\Payment::find_by_id($payment_id);
-$payment->status = "cancelled";
-$payment->update();
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+
+  $payment = $client->cancel($payment_id, $request_options);
+  echo $payment->status;
 ?>
 ```
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
-
 Long paymentId = 123456789L;
 
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
+ 
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
+
 PaymentClient client = new PaymentClient();
-client.cancel(paymentId);
+client.cancel(paymentId, requestOptions);
 ```
 ```node
-var Mercadopago = require('mercadopago');
-Mercadopago.configurations.setAccessToken(config.access_token);
+import { MercadoPagoConfig, Payment } from 'mercadopago';
 
-let paymentToBeCanceled = 123;
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const payment = new Payment(client);
 
-Mercadopago.payment.cancel(paymentToBeCanceled, Mercadopago, (error, response) => {
-if (error){
-console.log(error);
-}else{
-console.log(response)
-}
-});
+payment.cancel({
+id: '<PAYMENT_ID>',
+requestOptions: {
+idempotencyKey: '<IDEMPOTENCY_KEY>'
+},
+}).then(console.log).catch(console.log);
 ```
 ```ruby
 require 'mercadopago'
 sdk = Mercadopago::SDK.new(ENV_ACCESS_TOKEN)
 
-request = {
-status: 'canceled'
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
 }
 
-payment_response = sdk.payment.update(payment_id, request)
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
+
+request = {
+  status: 'canceled'
+}
+
+payment_response = sdk.payment.update(payment_id, request, custom_request_options)
 payment = payment_response[:response]
 ```
 ```csharp
@@ -56,26 +71,35 @@ using MercadoPago.Resource.Payment;
 
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
+
 var client = new PaymentClient();
-Payment payment = await client.CancelAsync(paymentId);
+Payment payment = await client.CancelAsync(paymentId, requestOptions);
 ```
 ```python
-import market
-sdk = Mercadopago.SDK("ENV_ACCESS_TOKEN")
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
-payment_data = {
-"status": "cancelled"
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
 }
 
-payment_response = sdk.payment().update(payment_id, payment_data)
+payment_data = {
+  "status": "cancelled"
+}
+
+payment_response = sdk.payment().update(payment_id, payment_data, request_options)
 payment = payment_response["response"]
 ```
 ```curl
 curl -X PUT \
-'https://api.mercadopago.com/v1/payments/PAYMENT_ID' \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
--d '{"status": "cancelled"}'
+  'https://api.mercadopago.com/v1/payments/PAYMENT_ID' \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+  -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
+  -d '{"status": "cancelled"}'
 ```
 ]]]
 

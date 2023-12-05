@@ -2,7 +2,6 @@
 
 É possível criar o token necessário para operar seu aplicativo em nome de um vendedor utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Criar e atualizar token](/developers/pt/reference/oauth/_oauth_token/post)
 
-[[[
 ```node
 const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } }); 
 
@@ -16,13 +15,11 @@ oauth.create({
 }).then((result) => console.log(result))
 	.catch((error) => console.log(error));
 ```
-]]]
 
 ## Atualizar token
 
 É possível atualizar o token necessário para operar seu aplicativo em nome de um vendedor utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Criar e atualizar token](/developers/pt/reference/oauth/_oauth_token/post)
 
-[[[
 ```node
 const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 
@@ -35,4 +32,3 @@ oauth.refresh({
 }).then((result) => console.log(result))
 	.catch((error) => console.log(error));
 ```
-]]]

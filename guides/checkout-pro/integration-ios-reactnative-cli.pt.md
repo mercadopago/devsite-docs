@@ -33,7 +33,7 @@ yarn add react-native-inappbrowser-reborn
 ```
 ]]]
 
-Luego, ejecuta el siguiente comando para instalar la dependencia.
+Em seguida, execute o seguinte comando para instalar a dependência.
 
 ```
 cd ios && pod install && cd ..
@@ -106,7 +106,7 @@ const ButtonCustomTabs = () => {
 
 A partir do nosso checkout, é possível configurar Deep Links para retornar ao sua aplicação, seja clicando em um link "Voltar" ou automaticamente após concluir um fluxo de pagamento bem-sucedido, redirecionando-o de volta ao sua aplicação.
 
-Para isso, devemos adicionar as propriedades back_urls e auto_return ao criar a preferência de pagamento, conforme necessário.
+Para isso, devemos adicionar as propriedades `back_urls` e `auto_return` ao criar a preferência de pagamento, conforme necessário.
 
 Para saber mais, você pode acessar a documentação sobre [URLs de retorno](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).
 
@@ -124,7 +124,7 @@ Insira o **identificador** da sua aplicação e os **Esquemas de URL** do Deep L
 
 ![xcode-paso2](/images/cow/xcode-paso2.png)
 
-Isso gerará o seguinte código no arquivo **ios/<appname>/Info.plist**:
+Isso gerará o seguinte código no arquivo **ios/appname/Info.plist**:
 
 ```info.plist
 <key>CFBundleURLTypes</key>
@@ -139,7 +139,7 @@ Isso gerará o seguinte código no arquivo **ios/<appname>/Info.plist**:
     </array>
 ```
 
-Adicione o seguinte código ao arquivo **ios/<appname>/AppDelegate.mm**
+Adicione o seguinte código ao arquivo **ios/appname/AppDelegate.mm**
 
 ```AppDelegate.mm
 // iOS 9.x or newer

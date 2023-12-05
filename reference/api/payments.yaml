@@ -476,7 +476,6 @@ paths:
                     spa: Descripción del producto adquirido, el motivo del pago. Ej. - "Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Original Global Blue Version" (descripción de un producto en el marketplace).
                     por: Descrição do produto comprado, a razão de pagamento. Por exemplo -  "Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Versão Global Original azul" (descrição de um produto no marketplace).
                   example: Payment for product
-                  required: true
                 differential_pricing_id:
                   type: number
                   description: Attribute that commonly contains an agreement on how much the user will be charged (generally, this field is more relevant for Marketplace payments). Pricing and fees are calculated based on this identifier.
@@ -516,7 +515,6 @@ paths:
                     eng: It is the identifier of the card issuer being used in a credit or debit card payment.
                     spa: Es el identificador del emisor de la tarjeta que se utiliza en un pago con tarjeta de crédito o débito.
                     por: É o identificador do emissor do cartão que está sendo utilizado em um pagamento com cartão de crédito ou débito.
-                  required: true
                 metadata:
                   type: object
                   description: This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex - {"payments_group_size":1,"payments_group_timestamp":"2022-11-18T15:01:44Z","payments_group_uuid":"96cfd2a4-0b06-4dea-b25f-c5accb02ba10"}
@@ -622,7 +620,6 @@ paths:
                     - Debin_transfer -- Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.
                     - Ted -- It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;
                     - Cvu -- Payment method used in Argentina.
-                  required: true
                   example: master 
                 statement_descriptor:
                   type: string
@@ -1536,6 +1533,7 @@ paths:
                       - 4037 -- Invalid transaction_amount.
                       - 4038 -- application_fee cannot be bigger than transaction_amount.
                       - 4039 -- application_fee cannot be a negative value.
+                      - 4049 -- transaction_amount must be positive.
                       - 4050 -- payer.email must be a valid email.
                       - 4051 -- payer.email must be shorter than 254 characters.
                       - 6033 -- User unavailable.

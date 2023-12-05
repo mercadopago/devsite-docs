@@ -9,7 +9,7 @@ Además de recopilar los campos necesarios para realizar el pago, este component
 ---
 live_demo_code_action:
  - title: Prueba nuestro Brick
- - description: Construye y comprueba la experiencia visual de Card Payment Brick en tiempo real. Cuando esté todo listo, descarga o copia el código generado.
+ - description: Construye y comprueba la experiencia visual en tiempo real. Cuando esté todo listo, descarga o copia el código generado para agregarlo a tu sitio web o compartirlo con un desarrollador.
  - link: /developers/es/live-demo/card-payment-brick
  - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/card-payment-brick.png
  - linkName: Demo

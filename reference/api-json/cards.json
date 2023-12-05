@@ -4,8 +4,8 @@
     "/v1/customers/{customer_id}/cards": {
       "get": {
         "tags": [
-          "checkout-pro",
-          "checkout-api"
+          "checkout-api",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Consult a client's saved cards in order to be able to show them when making a payment.",
@@ -18,8 +18,8 @@
             "in": "path",
             "description": {
               "en": "Customer's Id",
-              "es": "Customer's Id",
-              "pt": "Customer's Id"
+              "pt": "Customer's Id",
+              "es": "Customer's Id"
             },
             "required": true,
             "schema": {
@@ -31,9 +31,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "success",
+              "es": "success",
               "pt": "success",
-              "es": "success"
+              "en": "success"
             },
             "content": {
               "application/json": {
@@ -268,9 +268,9 @@
                               "subtype": {
                                 "type": "string",
                                 "description": {
-                                  "en": "Identification subtype.",
+                                  "es": "Identification subtype.",
                                   "pt": "Identification subtype.",
-                                  "es": "Identification subtype."
+                                  "en": "Identification subtype."
                                 }
                               },
                               "type": {
@@ -717,7 +717,8 @@
       "post": {
         "tags": [
           "checkout-pro",
-          "checkout-api"
+          "checkout-api",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Store the card reference used by the customer in the payment securely on our servers to avoid asking for all the data in future transactions",
@@ -748,7 +749,11 @@
                 "properties": {
                   "token": {
                     "type": "string",
-                    "description": "Card Token",
+                    "description": {
+                      "es": "Card Token",
+                      "pt": "Card Token",
+                      "en": "Card Token"
+                    },
                     "example": "9b2d63e00d66a8c721607214ceda233a"
                   }
                 }
@@ -759,9 +764,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "success",
+              "es": "success",
               "pt": "success",
-              "es": "success"
+              "en": "success"
             },
             "content": {
               "application/json": {
@@ -772,45 +777,45 @@
                       "type": "string",
                       "example": 1562188766852,
                       "description": {
-                        "en": "id",
+                        "es": "id",
                         "pt": "id",
-                        "es": "id"
+                        "en": "id"
                       }
                     },
                     "expiration_month": {
                       "type": "number",
                       "example": 6,
                       "description": {
-                        "en": "expiration_month",
+                        "es": "expiration_month",
                         "pt": "expiration_month",
-                        "es": "expiration_month"
+                        "en": "expiration_month"
                       }
                     },
                     "expiration_year": {
                       "type": "number",
                       "example": 2023,
                       "description": {
-                        "en": "expiration_year",
+                        "es": "expiration_year",
                         "pt": "expiration_year",
-                        "es": "expiration_year"
+                        "en": "expiration_year"
                       }
                     },
                     "first_six_digits": {
                       "type": "string",
                       "example": 423564,
                       "description": {
-                        "en": "first_six_digits",
+                        "es": "first_six_digits",
                         "pt": "first_six_digits",
-                        "es": "first_six_digits"
+                        "en": "first_six_digits"
                       }
                     },
                     "last_four_digits": {
                       "type": "string",
                       "example": 5682,
                       "description": {
-                        "en": "last_four_digits",
+                        "es": "last_four_digits",
                         "pt": "last_four_digits",
-                        "es": "last_four_digits"
+                        "en": "last_four_digits"
                       }
                     },
                     "payment_method": {
@@ -820,52 +825,52 @@
                           "type": "string",
                           "example": "visa",
                           "description": {
-                            "en": "id",
+                            "es": "id",
                             "pt": "id",
-                            "es": "id"
+                            "en": "id"
                           }
                         },
                         "name": {
                           "type": "string",
                           "example": "visa",
                           "description": {
-                            "en": "name",
+                            "es": "name",
                             "pt": "name",
-                            "es": "name"
+                            "en": "name"
                           }
                         },
                         "payment_type_id": {
                           "type": "string",
                           "example": "credit_card",
                           "description": {
-                            "en": "payment_type_id",
+                            "es": "payment_type_id",
                             "pt": "payment_type_id",
-                            "es": "payment_type_id"
+                            "en": "payment_type_id"
                           }
                         },
                         "thumbnail": {
                           "type": "string",
                           "example": "http://img.mlstatic.com/org-img/MP3/API/logos/visa.gif",
                           "description": {
-                            "en": "thumbnail",
+                            "es": "thumbnail",
                             "pt": "thumbnail",
-                            "es": "thumbnail"
+                            "en": "thumbnail"
                           }
                         },
                         "secure_thumbnail": {
                           "type": "string",
                           "example": "https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif",
                           "description": {
-                            "en": "secure_thumbnail",
+                            "es": "secure_thumbnail",
                             "pt": "secure_thumbnail",
-                            "es": "secure_thumbnail"
+                            "en": "secure_thumbnail"
                           }
                         }
                       },
                       "description": {
-                        "en": "payment_method",
+                        "es": "payment_method",
                         "pt": "payment_method",
-                        "es": "payment_method"
+                        "en": "payment_method"
                       }
                     },
                     "security_code": {
@@ -875,25 +880,25 @@
                           "type": "number",
                           "example": 3,
                           "description": {
-                            "en": "length",
+                            "es": "length",
                             "pt": "length",
-                            "es": "length"
+                            "en": "length"
                           }
                         },
                         "card_location": {
                           "type": "string",
                           "example": "back",
                           "description": {
-                            "en": "card_location",
+                            "es": "card_location",
                             "pt": "card_location",
-                            "es": "card_location"
+                            "en": "card_location"
                           }
                         }
                       },
                       "description": {
-                        "en": "security_code",
+                        "es": "security_code",
                         "pt": "security_code",
-                        "es": "security_code"
+                        "en": "security_code"
                       }
                     },
                     "issuer": {
@@ -903,25 +908,25 @@
                           "type": "number",
                           "example": 25,
                           "description": {
-                            "en": "id",
+                            "es": "id",
                             "pt": "id",
-                            "es": "id"
+                            "en": "id"
                           }
                         },
                         "name": {
                           "type": "string",
                           "example": "Visa",
                           "description": {
-                            "en": "name",
+                            "es": "name",
                             "pt": "name",
-                            "es": "name"
+                            "en": "name"
                           }
                         }
                       },
                       "description": {
-                        "en": "issuer",
+                        "es": "issuer",
                         "pt": "issuer",
-                        "es": "issuer"
+                        "en": "issuer"
                       }
                     },
                     "cardholder": {
@@ -931,9 +936,9 @@
                           "type": "string",
                           "example": "APRO",
                           "description": {
-                            "en": "name",
+                            "es": "name",
                             "pt": "name",
-                            "es": "name"
+                            "en": "name"
                           }
                         },
                         "identification": {
@@ -943,77 +948,77 @@
                               "type": "string",
                               "example": 19119119100,
                               "description": {
-                                "en": "number",
+                                "es": "number",
                                 "pt": "number",
-                                "es": "number"
+                                "en": "number"
                               }
                             },
                             "type": {
                               "type": "string",
                               "example": "CPF",
                               "description": {
-                                "en": "type",
+                                "es": "type",
                                 "pt": "type",
-                                "es": "type"
+                                "en": "type"
                               }
                             }
                           },
                           "description": {
-                            "en": "identification",
+                            "es": "identification",
                             "pt": "identification",
-                            "es": "identification"
+                            "en": "identification"
                           }
                         }
                       },
                       "description": {
-                        "en": "cardholder",
+                        "es": "cardholder",
                         "pt": "cardholder",
-                        "es": "cardholder"
+                        "en": "cardholder"
                       }
                     },
                     "date_created": {
                       "type": "string",
                       "example": "2019-07-03T21:15:35.000Z",
                       "description": {
-                        "en": "date_created",
+                        "es": "date_created",
                         "pt": "date_created",
-                        "es": "date_created"
+                        "en": "date_created"
                       }
                     },
                     "date_last_updated": {
                       "type": "string",
                       "example": "2019-07-03T21:19:18.000Z",
                       "description": {
-                        "en": "date_last_updated",
+                        "es": "date_last_updated",
                         "pt": "date_last_updated",
-                        "es": "date_last_updated"
+                        "en": "date_last_updated"
                       }
                     },
                     "customer_id": {
                       "type": "string",
                       "example": "448870796-7ZjwhKGxILixxN",
                       "description": {
-                        "en": "customer_id",
+                        "es": "customer_id",
                         "pt": "customer_id",
-                        "es": "customer_id"
+                        "en": "customer_id"
                       }
                     },
                     "user_id": {
                       "type": "string",
                       "example": 448870796,
                       "description": {
-                        "en": "user_id",
+                        "es": "user_id",
                         "pt": "user_id",
-                        "es": "user_id"
+                        "en": "user_id"
                       }
                     },
                     "live_mode": {
                       "type": "boolean",
                       "example": true,
                       "description": {
-                        "en": "live_mode",
+                        "es": "live_mode",
                         "pt": "live_mode",
-                        "es": "live_mode"
+                        "en": "live_mode"
                       }
                     }
                   }
@@ -1440,7 +1445,8 @@
       "get": {
         "tags": [
           "checkout-pro",
-          "checkout-api"
+          "checkout-api",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Check the reference information for a saved card associated with a customer",
@@ -1466,9 +1472,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "en": "Customer's Id",
-              "pt": "Customer's Id",
-              "es": "Customer's Id"
+              "en": "Card's Id",
+              "pt": "Card's Id",
+              "es": "Card's Id"
             },
             "required": true,
             "schema": {
@@ -1480,9 +1486,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "success",
+              "es": "success",
               "pt": "success",
-              "es": "success"
+              "en": "success"
             },
             "content": {
               "application/json": {
@@ -1715,9 +1721,9 @@
                             "subtype": {
                               "type": "string",
                               "description": {
-                                "en": "Identification subtype.",
+                                "es": "Identification subtype.",
                                 "pt": "Identification subtype.",
-                                "es": "Identification subtype."
+                                "en": "Identification subtype."
                               }
                             },
                             "type": {
@@ -2163,7 +2169,8 @@
       "put": {
         "tags": [
           "checkout-pro",
-          "checkout-api"
+          "checkout-api",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Renew the details of a card associated with a customer. Indicate the IDs and send the parameters with the information you want to update",
@@ -2202,7 +2209,11 @@
           {
             "name": "cardholder.name",
             "in": "requestBody",
-            "description": "Card's name.",
+            "description": {
+              "es": "Card's name.",
+              "pt": "Card's name.",
+              "en": "Card's name."
+            },
             "required": false,
             "schema": {
               "type": "string",
@@ -2212,7 +2223,11 @@
           {
             "name": "cardholder.identification",
             "in": "requestBody",
-            "description": "Card's owner identification",
+            "description": {
+              "es": "Card's owner identification",
+              "pt": "Card's owner identification",
+              "en": "Card's owner identification"
+            },
             "required": false,
             "schema": {
               "type": "string",
@@ -2228,7 +2243,11 @@
                 "properties": {
                   "token": {
                     "type": "string",
-                    "description": "Card Token",
+                    "description": {
+                      "es": "Card Token",
+                      "pt": "Card Token",
+                      "en": "Card Token"
+                    },
                     "example": "9b2d63e00d66a8c721607214ceda233a"
                   }
                 }
@@ -2239,9 +2258,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "success",
+              "es": "success",
               "pt": "success",
-              "es": "success"
+              "en": "success"
             },
             "content": {
               "application/json": {
@@ -2809,9 +2828,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "en": "Customer's Id",
-              "pt": "Customer's Id",
-              "es": "Customer's Id"
+              "en": "Card's Id",
+              "pt": "Card's Id",
+              "es": "Card's Id"
             },
             "required": true,
             "schema": {
@@ -2823,9 +2842,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "success",
+              "es": "success",
               "pt": "success",
-              "es": "success"
+              "en": "success"
             },
             "content": {
               "application/json": {

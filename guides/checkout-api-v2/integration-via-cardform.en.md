@@ -47,7 +47,7 @@ npm install @mercadopago/sdk-js
 
 Credentials are unique keys with which we identify an integration in your account. They are made to capture payments in virtual stores and other applications securely.
 
-This is the first step of a complete code structure that must be followed for the correct integration of payment via card. Pay attention to the blocks below to add to the codes as indicated.
+This is the first step of a complete code structure that must be followed for the correct integration of payment via card. 
 
 [[[
 ```html
@@ -377,7 +377,9 @@ With all the information collected in the backend, send a POST with the necessar
 >
 > Important
 >
-> To increase the chances of payment approval and prevent the anti-fraud analysis from authorizing the transaction, we recommend entering as much information about the buyer when making the request. For more details on how to increase approval chances, see [How to improve payment approval](/developers/en/docs/checkout-api/how-tos/improve-payment-approval).
+> To increase the chances of payment approval and prevent the anti-fraud analysis from authorizing the transaction, we recommend entering as much information about the buyer when making the request. For more details on how to increase approval chances, see [How to improve payment approval.](/developers/en/docs/checkout-api/how-tos/improve-payment-approval)
+> <br><br>
+> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 [[[
 ```php
@@ -411,33 +413,40 @@ With all the information collected in the backend, send a POST with the necessar
 ?>
 ```
 ```node
-import { MercadoPagoConfig, Payments } from 'mercadopago';
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
-const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const payments = new Payments(client);
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
-payments.create({
-  transaction_amount: req.transaction_amount,
-  token: req.token,
-  description: req.description,
-  installments: req.installments,
-  payment_method_id: req.paymentMethodId,
-  issuer_id: req.issuer,
-  payer: {
-    email: req.email,
-    identification: {
-      type: req.identificationType,
-      number: req.number
-    }
-  } 
-}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
-  .then((result) => console.log(result))
-  .catch((error) => console.log(error));
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
 ===
 Find the payment status in the _status_ field.
 ===
+
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
+ 
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
 
 PaymentClient client = new PaymentClient();
 
@@ -460,7 +469,7 @@ IdentificationRequest.builder()
 .build())
 .build();
 
-client.create(paymentCreateRequest);
+client.create(paymentCreateRequest, requestOptions);
 
 ```
 ```ruby
@@ -469,7 +478,13 @@ Find the payment status in the _status_ field.
 ===
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
- 
+
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
+
 payment_data = {
 transaction_amount: params[:transactionAmount].to_f,
 token: params[:token],
@@ -485,7 +500,7 @@ number: params[:identificationNumber]
 }
 }
  
-payment_response = sdk.payment.create(payment_data)
+payment_response = sdk.payment.create(payment_data, custom_request_options)
 payment = payment_response[:response]
  
 puts payment
@@ -502,6 +517,9 @@ using MercadoPago.Config;
 using MercadoPago.Resource.Payment;
  
 MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
+
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
  
 var paymentRequest = new PaymentCreateRequest
 {
@@ -522,7 +540,7 @@ Number = Request["identificationNumber"],
 };
  
 var client = new PaymentClient();
-Payment payment = await client.CreateAsync(paymentRequest);
+Payment payment = await client.CreateAsync(paymentReques, requestOptions);
  
 Console.WriteLine(payment.Status);
  
@@ -533,7 +551,12 @@ Find the payment status in the _status_ field.
 ===
 import market
 sdk = Mercadopago.SDK("ACCESS_TOKEN")
- 
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
 payment_data = {
 "transaction_amount": float(request.POST.get("transaction_amount")),
 "token": request.POST.get("token"),
@@ -549,7 +572,7 @@ payment_data = {
 }
 }
  
-payment_response = sdk.payment().create(payment_data)
+payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
  
 print(payment)
@@ -563,6 +586,7 @@ curl -X POST \
 -H 'accept: application/json' \
 -H 'content-type: application/json' \
 -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+-H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
 'https://api.mercadopago.com/v1/payments' \
 -d '{
 "transaction_amount": 100,

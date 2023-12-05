@@ -2,7 +2,6 @@
 
 É possível criar clientes utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Criar cliente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/customers/_customers/post).
 
-[[[
 ```node
 const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
@@ -32,24 +31,19 @@ const body = {
 	default_card: 'None'
 };
 
-customerClient.create({ body })
-    .then((result) => { console.log(result); })
-    .catch((error) => { console.error(error); });
+customerClient.create({ body: body }).then(console.log).catch(console.log);
 ```
-]]]
 
 ## Pesquisar clientes
 
-É possível pesquisar clientes utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Pesquisar Clientes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/customers/_customers_search/get).
+É possível pesquisar clientes utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Pesquisar Clientes](/developers/pt/reference/customers/_customers_search/get).
 
 [[[
 ```node
 const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
-customerClient.search({ email: 'john.doe@example.com' })
-    .then((result) => { console.log(result); })
-    .catch((error) => { console.error(error); });
+customerClient.search({ options: { email: '<EMAIL>' } }).then(console.log).catch(console.log);
 ```
 ]]]
 
@@ -57,23 +51,17 @@ customerClient.search({ email: 'john.doe@example.com' })
 
 É possível obter clientes utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Obter clientes](/developers/pt/reference/customers/_customers_id/get).
 
-[[[
 ```node
 const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
 
-customerClient.get('247711297-jxOV430go9fx2e')
-    .then((result) => { console.log(result); })
-    .catch((error) => { console.error(error); });
+customerClient.get({ customerId: '<CUSTOMER_ID>' }).then(console.log).catch(console.log);
 ```
-]]]
-
 
 ## Atualizar clientes
 
-É possível atualizar clientes utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Atualizar clientes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/customers/_customers_id/put).
+É possível atualizar clientes utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Atualizar clientes](/developers/pt/reference/customers/_customers_id/put).
 
-[[[
 ```node
 const client = new MercadoPagoConfig({ accessToken: 'access_token' });
 const customerClient = new Customer(client);
@@ -103,8 +91,6 @@ const customerRequest = {
 	default_card: 'None'
 };
 
-customerClient.update('247711297-jxOV430go9fx2e', customerRequest)
-    .then((result) => { console.log(result); })
-    .catch((error) => { console.error(error); });
+customerClient.update({ customerId: '247711297-jxOV430go9fx2e', body: customerRequest,
+}).then(console.log).catch(console.log);
 ```
-]]]

@@ -27,8 +27,6 @@ Ao criar uma preferência, você pode associá-la a um pixel (identificator) par
 
 Para integrar o Checkout Pro com o Facebook Ads, utilize um dos SDKs disponíveis abaixo.
 
-> Além dos SDKs, também é possível integrar os anúncios do Facebook Ads ao Checkout Pro através da API de preferências. Para isso, envie o parâmetro `track` com os atributos `type` e `values` informando seu *facebook_id* e o *pixel ID* respectivamente ao endopoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição.
-
 [[[
 ```php
 ===
@@ -152,6 +150,7 @@ Ao concluir a configuração, um evento `Purchase` será associado ao pixel espe
 >
 > Somente é possível configurar um único pixel por preferência. Teste o funcionamento da sua integração utilizando a extensão do Chrome Facebook Pixel Helper. Para mais informações, visite o site oficial do Facebook .
 
+> Além dos SDKs, também é possível integrar os anúncios do Facebook Ads ao Checkout Pro através da API de preferências. Para isso, envie o parâmetro `track` com os atributos `type` e `values` informando seu *facebook_id* e o *pixel ID* respectivamente ao endopoint [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição.
 
 ## Google Ads
 

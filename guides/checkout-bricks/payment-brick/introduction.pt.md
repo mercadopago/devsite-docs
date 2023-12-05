@@ -11,7 +11,7 @@ A possibilidade de guardar os dados dos cartões que já foram debitados em comp
 ---
 live_demo_code_action:
  - title: Experimente nosso Brick
- - description: Construa e confira a experiência visual do Payment Brick em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado.
+ - description: Construa experiências visuais em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado para adicionar no seu site ou compartilhar com um desenvolvedor.
  - link: /developers/pt/live-demo/payment-brick
  - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
  - linkName: Demo

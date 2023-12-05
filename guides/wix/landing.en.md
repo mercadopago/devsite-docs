@@ -105,4 +105,4 @@ available_payments: mercadopago, atm, credit, debit, mercadocredito
 ----
 ------------
 
-> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods).
+> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)

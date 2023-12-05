@@ -123,7 +123,7 @@ Enter the **identifier** of your application and the **URL Schemes** of the Deep
 
 ![xcode-paso2](/images/cow/xcode-paso2.png)
 
-This will generate the following code in the **ios/<appname>/Info.plist** file:
+This will generate the following code in the **ios/appname/Info.plist** file:
 
 ```info.plist
 <key>CFBundleURLTypes</key>
@@ -138,7 +138,7 @@ This will generate the following code in the **ios/<appname>/Info.plist** file:
     </array>
 ```
 
-Add the following code to the **ios/<appname>/AppDelegate.mm** file
+Add the following code to the **ios/appname/AppDelegate.mm** file
 
 ```AppDelegate.mm
 // iOS 9.x or newer

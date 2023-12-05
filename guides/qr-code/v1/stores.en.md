@@ -42,13 +42,13 @@ https://api.mercadopago.com/users/$USER_ID/stores \
       ]   
    },
    "location":{  
-      "street_number":"3039",
-      "street_name":"Caseros",
-      "city_name":"Belgrano",
-      "state_name":"Capital Federal",
-      "latitude":-32.8897322,
-      "longitude":-68.8443275,
-      "reference":"3er Piso"
+       "street_number": “144",
+      "street_name": “Rua Ângelo Piva",
+      "city_name": “Osasco",
+      "state_name": “São Paulo",
+      "latitude": -23.52613,
+      "longitude": -46.76169,
+      "reference": “Melicidade"
    },
    "external_id":"STORE001"
 }

@@ -11,7 +11,7 @@ The possibility of saving the data of cards that have already been charged in pr
 ---
 live_demo_code_action:
  - title: Try our Brick
- - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
+ - description: Build visual experiences in real time. When you are ready, download or copy the generated code to add to your website or share with a developer.
  - link: /developers/en/live-demo/payment-brick
  - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
  - linkName: Demo

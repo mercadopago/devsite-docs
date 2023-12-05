@@ -12,17 +12,6 @@ Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é credi
 
 Siga os passos abaixo para oferecer o parcelamento sem cartão em sua loja.
 
-## Pré-requisitos
-
-Para realizar a integração é importante atender aos requisitos mostrados abaixo.
-
-| Requisitos | Descrição |
-|---|---|
-| Conta de vendedor Mercado Pago ou Mercado Livre | Para integrar é preciso uma conta de vendedor no Mercado Pago ou Mercado Livre. Caso não tenha, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para criar. | 
-| Aplicação  | As aplicações são as diferentes integrações contidas em uma ou mais lojas. Você pode criar uma aplicação para cada solução que implementar, a fim de ter tudo organizado e manter um controle que facilite a gestão. Veja [Dashboard](/developers/pt/docs/checkout-api/additional-content/your-integrations/introduction) para mais informações sobre como criar uma aplicação. |
-| Instale o SDK do Mercado Pago | Instale os SDKs oficiais para simplificar sua integração com nossas [APIs](/developers/pt/reference/payments/_payments/post). Para mais informações, [clique aqui](/developers/pt/docs/sdks-library/landing). |
-
-Se todos os pré-requisitos foram cumpridos, siga as próximas etapas para integração do parcelamento sem cartão.
 
 ## Configuração da integração
 
@@ -32,7 +21,7 @@ Se todos os pré-requisitos foram cumpridos, siga as próximas etapas para integ
 >
 > Criar preferência
 
-Preferências são conjuntos de informações sobre um produto e/ou serviço que permitem definir o nome, meio de pagamento, além de outras configurações relacionadas ao fluxo de pagamento definido. 
+Preferência é um conjunto de informações sobre um produto e/ou serviço que permitem definir o nome, meio de pagamento, além de outras configurações relacionadas ao fluxo de pagamento definido. 
 
 A primeira etapa para configurar pagamentos com Mercado Crédito é a criação da preferência. Para isso, envie um POST com o parâmetro `purpose` e o valor `onboarding_credits` ao **endpoint** [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição ou, se preferir, utilize o SDK abaixo.
 

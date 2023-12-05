@@ -1,8 +1,17 @@
-# Crear agreement
+# Crear Agreement
 
-La primera etapa para integrar Wallet Connect es la creación de un _agreement_, un link de autorización al que el comprador accede para otorgar al vendedor acceso a su billetera de Mercado Pago en el momento en que se efectúe un pago. 
+El primer paso para integrar Wallet Connect es la creación de un _agreement_, un enlace de autorización que el comprador utiliza para conceder al vendedor acceso a su billetera de Mercado Pago en el momento en que se realiza un pago.
 
-El _agreement_ almacena los medios de pago seleccionados por el pagador y permite modificar estas configuraciones sin la intervención del vendedor, haciendo que esta etapa sea transparente durante el flujo de pago.
+El _agreement_ almacena los métodos de pago seleccionados por el pagador y permite la modificación de estas configuraciones sin la intervención del vendedor, lo que hace que esta etapa sea transparente durante el flujo de pago.
+
+Cualquier cambio en los medios de pago se comunica a través de una notificación webhook, que proporciona detalles de la actualización.
+Para más información, consulte la sección [Actualización del medio de pago de un agreement](/developers/es/docs/wallet-connect/additional-content/your-integrations/notifications/webhooks).
+
+> WARNING
+>
+> Importante
+>
+> Un usuario puede tener solo un agreement activo por integración. Para crear un nuevo agreement, es necesario cancelar el anterior. Para ello, envíe un **DELETE** al endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/es/reference/wallet_connect/_wallet_connect_agreements_agreement_id/delete) y ejecute la solicitud. Tras la cancelación, se enviará una notificación webhook con todos los detalles de la operación. Para entender el proceso con más detalle, visite la sección [Cancelación de agreement entre integrador y Mercado Pago](/developers/es/docs/wallet-connect/additional-content/your-integrations/notifications/webhooks).
 
 Consulte el siguiente diagrama que ilustra cómo funciona el flujo de creación de un agreement.
 
@@ -16,10 +25,10 @@ Para crear un _agreement_, envía un **POST** con los atributos necesarios al en
 curl -X POST \
       'https://api.mercadopago.com/v2/wallet_connect/agreements?client.id=<CLIENT.ID>' \
       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
-      -H 'Content-Type: application/json' \ 
+      -H 'Content-Type: application/json' \
       -H 'x-platform-id: YOUR_ACCESS_TOKEN' \
       -d '{
-  "return_url": "https://www.mercadopago.com/",
+  "return_uri": "https://www.mercadopago.com/",
   "external_flow_id": "EXTERNAL_FLOW_ID",
   "external_user": {
     "id": "usertest",
@@ -33,9 +42,13 @@ curl -X POST \
 ```
 ]]]
 
-> WARNING
->
-> Importante
->
-> Un usuario sólo puede tener un agreement activo por integración. Si quieres crear un nuevo agreement, debes cancelar el anterior. Para cancelar un agreement, envía un DELETE al endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/es/reference/wallet_connect/_wallet_connect_agreements_agreement_id/delete) y ejecuta el request.
+## Respuesta
 
+[[[
+```json
+{
+  "agreement_id": "22abcd1235ed497f945f755fcaba3c6c",
+  "agreement_uri": "https://wwww.mercadopago.com.ar/v1/wallet_agreement/22abcd1235ed497f945f755fcaba3c6c"
+}
+```
+]]]

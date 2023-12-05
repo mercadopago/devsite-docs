@@ -4,7 +4,7 @@
 >
 > Important
 >
-> Before you start integrating Checkout Pro for Mobile, you'll need to have a preference created in your backend. If you haven't already done so, go to [Preference Creation](/developers/en/docs/checkout-pro/integrate-preferences).
+> Before you start integrating Checkout Pro for Mobile, you'll need to have a preference created in your backend. If you haven't already done so, go to [Preference Creation.](/developers/en/docs/checkout-pro/integrate-preferences)
 
 In mobile application development, the need to display web content within the application often arises. For this, there are several options, among which the use of Custom Tabs (for Android) and Safari View Controller (for iOS) stand out. These technologies allow web pages to be opened in a native browser incorporated into the application, providing a smoother and more consistent browsing experience for users.
 
@@ -94,5 +94,3 @@ To set up a native Deep Link on Android, go to the Android **/app/src/main/Andro
 In the `intent` values, you must define the activity as browsable by other applications. With the `scheme` and `host` values, you can set the application's Deep Link to a specific activity.
 
 Remember that this Deep Link will be used on all `back_urls` you prefer. In the cycles of the activity that was exposed (e.g. onCreate, onResume) you will be able to enter your business logic after payment.
-
-

@@ -23,7 +23,13 @@ Below are the steps to integrate with 3DS.
 3. After that, make a request to create a new payment with the received data. The `three_d_secure_mode` attribute needs to be sent with one of the following values:
     1. `not_supported`: 3DS must not be used (this is the default value).
     2. `optional`: 3DS may or may not be required, depending on the risk profile of the transaction.
+    3. `mandatory`: 3DS will be required mandatorily.
 
+> NOTE
+>
+> Important
+>
+> We recommend using the `optional` value in the implementation of 3DS, as it balances security and transaction approval. `mandatory` should only be used when necessary to ensure 100% transaction approval, however, it may reduce the approval rate.
 
 [[[
 ```curl
@@ -120,12 +126,12 @@ Payment payment = await client.CreateAsync(request);
 ?>
 ```
 ```node
-import { MercadoPagoConfig, Payments } from 'mercadopago';
+import { MercadoPagoConfig, Payment } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: '<ENV_ACCESS_TOKEN>' });
-const payments = new Payments(client);
+const payment = new Payment(client);
 
-payments.create({
+const body = {
   transaction_amount: <TRANSACTION_AMOUNT>,
   token: '<CARD_TOKEN>',
   description:  '<DESCRIPTION>',
@@ -135,10 +141,9 @@ payments.create({
   payer: {
     email: '<BUYER_EMAIL>',
   },
-  three_d_secure_mode: 'optional' 
-}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
-  .then((result) => console.log(result))
-  .catch((error) => console.log(error));
+  three_d_secure_mode: 'optional'
+}
+payment.create({ body: body, requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' } }).then(console.log).catch(console.log);
 ```
 ```ruby
 
@@ -187,6 +192,7 @@ For cases where the Challenge is necessary, the status will show the value `pend
 
 ### Response overview (information omitted)
 
+When the Challenge is initiated, the user has about 5 minutes to complete it. If it is not completed, the bank will decline the transaction and Mercado Pago will consider the payment cancelled. While the user doesn't complete the Challenge, the payment will remain as `pending_challenge`.
 
 [[[
 ```Json
@@ -256,11 +262,6 @@ function doChallenge(payment) {
 
 When the Challenge is completed, the payment status will be updated to `approved` if the authentication is successful, and `rejected` if it is not. In situations where authentication is not performed, the payment remains `pending`. This update is not immediate and may take a few moments.
 
-> NOTE
->
-> Important
->
-> When the Challenge is initiated, the user has about 5 minutes to complete it. If it is not completed, the bank will decline the transaction and Mercado Pago will consider the payment cancelled. While the user doesn't complete the Challenge, the payment will remain as `pending_challenge`.
 
 See the section below for more details on how to check the status of each transaction.
 
@@ -342,6 +343,7 @@ See below the table with the possible statuses and their respective descriptions
 | "rejected" | -                            | Transaction rejected without authentication. To check the reasons, please refer to the standard [list of status details](https://mercadopago.com.br/developers/en/docs/checkout-api/response-handling/collection-results).                     |
 | "pending"  | "pending_challenge"           | Transaction pending authentication or Challenge timeout. |
 | "rejected" | "cc_rejected_3ds_challenge"   | Transaction rejected due to Challenge failure.                 |
+| "rejected" | "cc_rejected_3ds_mandatory" | Transaction rejected for not complying with 3DS validation when it is mandatory. |
 
 ## Integration test
 
@@ -349,7 +351,9 @@ To facilitate the validation of 3DS payments, we have created a sandbox testing 
 
 > WARNING
 >
-> Remember to use the test credentials for your application.
+> Important
+>
+> To test the integration, it is necessary to use your test credentials. Also, make sure to include the `three_d_secure_mode` attribute, setting it as `optional` or `mandatory`, to ensure the correct implementation of the 3DS payment.
 
 To test payments in a sandbox environment, specific cards should be used to test the implementation of the Challenge with both success and failure flows, as shown in the table below:
 
@@ -357,12 +361,10 @@ To test payments in a sandbox environment, specific cards should be used to test
 |-------------|-------------------------|---------------------|----------------|-----------------|
 | Mastercard  | Successful Challenge    | 5483 9281 6457 4623 | 123            | 11/25           |
 | Mastercard  | Unauthorized Challenge | 5361 9568 0611 7557 | 123            | 11/25           |
+| Matercard | 3ds mandatory | 5031 7557 3453 0604 | 123 | 11/25 |
 
 The steps to create the payment remain the same. If you have any doubts about how to create card payments, please refer to the [documentation on Cards](https://www.mercadopago.com.br/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
 
-> NOTE
->
-> To ensure that the payment is created with 3DS, remember to include the three_d_secure_mode attribute with the value optional.
 
 [[[
 ```curl
@@ -414,13 +416,13 @@ curl -X POST \
 ?>
 ```
 ```node
-import { MercadoPagoConfig, Payments } from 'mercadopago';
+import { MercadoPagoConfig, Payment } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
-const payments = new Payments(client);
+const payment = new Payment(client);
 
-payments.create({
-  transaction_amount: req.transaction_amount,
+const body = {
+transaction_amount: req.transaction_amount,
   token: req.token,
   description: req.description,
   installments: req.installments,
@@ -434,9 +436,9 @@ payments.create({
     }
   },
   three_d_secure_mode: 'optional' 
-}, { idempotencyKey: '<SOME_UNIQUE_VALUE>' })
-  .then((result) => console.log(result))
-  .catch((error) => console.log(error));
+};
+
+payment.create({ body: body, requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' } }).then(console.log).catch(console.log);
 ```
 ```java
 PaymentClient client = new PaymentClient();

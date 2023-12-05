@@ -33,32 +33,32 @@ A tabela abaixo mostra os métodos de pagamento disponíveis:
 
 | paymentMethods | Tipo | Valores possíveis |
 |--- |--- | --- |
-| creditCard | string[] | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
-| debitCard | string[] | Para obter os valores de cartões de débito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
-| mercadoPago |  string[] | ['onboarding_credits',  'wallet_purchase'] |
-| ticket |  string[] | ['bolbradesco', 'pec'] |
-| bankTransfer |  string[] | ['pix'] |
+| creditCard | string | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
+| debitCard | string | Para obter os valores de cartões de débito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
+| mercadoPago |  string | ['onboarding_credits',  'wallet_purchase'] |
+| ticket |  string | ['bolbradesco', 'pec'] |
+| bankTransfer |  string | ['pix'] |
 
 ------------
 ----[mla]---- 
 
 | paymentMethods | Tipo | Valores possíveis |
 |--- |--- | --- |
-| creditCard |  string[] | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
-| debitCard |  string[] | Para obter os valores de cartões de débito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
-| mercadoPago |  string[] |['onboarding_credits',  'wallet_purchase'] |
-| ticket |  string[] | ['pagofacil', 'rapipago'] |
+| creditCard |  string | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
+| debitCard |  string | Para obter os valores de cartões de débito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
+| mercadoPago |  string |['onboarding_credits',  'wallet_purchase'] |
+| ticket |  string | ['pagofacil', 'rapipago'] |
 
 ------------
 ----[mlm]---- 
 
 | paymentMethods | Tipo | Valores possíveis |
 |--- |--- | --- |
-| creditCard |  string[] | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
-| debitCard |  string[] | Para obter os valores de cartões de débito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
-| mercadoPago |  string[] | ['onboarding_credits',  'wallet_purchase'] |
-| ticket |  string[] | ['paycash', 'oxxo'] |
-| atm |  string[] | ['banamex',  'bancomer'] |
+| creditCard |  string | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
+| debitCard |  string | Para obter os valores de cartões de débito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
+| mercadoPago |  strinh | ['onboarding_credits',  'wallet_purchase'] |
+| ticket |  string | ['paycash', 'oxxo'] |
+| atm |  string | ['banamex',  'bancomer'] |
 
 ------------
 ----[mco]---- 
@@ -96,8 +96,8 @@ A tabela abaixo mostra os métodos de pagamento disponíveis:
 
 | paymentMethods |  Tipo | Valores possíveis |
 |--- |--- | --- |
-| creditCard |  string[] |  Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
-| debitCard |  string[] |  Para obter os valores de cartões de débito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
-| mercadoPago |  string[] | ['wallet_purchase'] |
+| creditCard |  string |  Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
+| debitCard |  string |  Para obter os valores de cartões de débito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
+| mercadoPago |  string | ['wallet_purchase'] |
 
 ------------

@@ -15,47 +15,61 @@ To capture the total amount of a reservation, send the value to be captured to t
 
 [[[
 ```php
-<?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
-$payment = MercadoPago\Payment::find_by_id($payment_id);
-$payment->capture = true;
-$payment->update();
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+
+  $client->capture($payment_id, $request_options);
 ?>
 ```
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
-
 Long paymentId = 123456789L;
 
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
+ 
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
+
 PaymentClient client = new PaymentClient();
-client.capture(paymentId);
+client.capture(paymentId, requestOptions);
 ```
 ```node
-var Mercadopago = require('mercadopago');
-Mercadopago.configurations.setAccessToken(config.access_token);
+import { MercadoPagoConfig, Payment } from 'mercadopago';
 
-let paymentId = 123;
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const payment = new Payment(client);
 
-Mercadopago.payment.capture(paymentId, Mercadopago, (error, response) => {
-if (error){
-console.log(error);
-}else{
-console.log(response)
+payment.capture({
+id: '<PAYMENT_ID>',
+transaction_amount: 12.34,
+requestOptions: {
+idempotencyKey: '<IDEMPOTENCY_KEY>'
 }
-});
+}).then(console.log).catch(console.log);
 ```
 ```ruby
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-request = {
-capture: true
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
 }
 
-payment_response = sdk.payment.update(payment_id, request)
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
+
+request = {
+  capture: true
+}
+
+payment_response = sdk.payment.update(payment_id, request, custom_request_options)
 payment = payment_response[:response]
 ```
 ```csharp
@@ -65,23 +79,32 @@ using MercadoPago.Resource.Payment;
 
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
+
 var client = new PaymentClient();
-Payment payment = await client.CaptureAsync(paymentId);
+Payment payment = await client.CaptureAsync(paymentId, requestOptions);
 ```
 ```python
-import market
-sdk = Mercadopago.SDK("ENV_ACCESS_TOKEN")
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
 
 payment_data = { "capture": True }
-payment_response = sdk.payment().update(payment_id, payment_data)
+payment_response = sdk.payment().update(payment_id, payment_data, request_options)
 payment = payment_response["response"]
 ```
 ```curl
 curl -X PUT \
-'https://api.mercadopago.com/v1/payments/PAYMENT_ID' \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
--d '{"capture": true}'
+  'https://api.mercadopago.com/v1/payments/PAYMENT_ID' \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+  -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
+  -d '{"capture": true}'
 ```
 ]]]
 

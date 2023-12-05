@@ -2,7 +2,7 @@
 
 ![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 
-Once you complete the integration as explained below, your business will be able to receive payments with QR by **printing the QR Code and showcasing it in a visible spot of your POS, or by displaying it on your mobile device**, and to collect payments via Mercado Pago App.
+Once you complete the integration as explained below, your business will be able to receive payments with QR by **printing the QR Code and showcasing it in a visible spot of your store, or by displaying it on your mobile device**, and to collect payments via Mercado Pago App.
 
 ![QR Flow](/images/mobile/qr_flujo.es.png)
 
