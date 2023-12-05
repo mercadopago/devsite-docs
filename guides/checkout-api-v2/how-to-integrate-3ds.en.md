@@ -343,7 +343,7 @@ See below the table with the possible statuses and their respective descriptions
 | "rejected" | -                            | Transaction rejected without authentication. To check the reasons, please refer to the standard [list of status details](https://mercadopago.com.br/developers/en/docs/checkout-api/response-handling/collection-results).                     |
 | "pending"  | "pending_challenge"           | Transaction pending authentication or Challenge timeout. |
 | "rejected" | "cc_rejected_3ds_challenge"   | Transaction rejected due to Challenge failure.                 |
-| "rejected" | "cc_rejected_3ds_challenge" | Transaction rejected for not complying with 3DS validation when it is mandatory. |
+| "rejected" | "cc_rejected_3ds_mandatory" | Transaction rejected for not complying with 3DS validation when it is mandatory. |
 
 ## Integration test
 
