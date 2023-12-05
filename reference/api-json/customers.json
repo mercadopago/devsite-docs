@@ -5,7 +5,8 @@
       "post": {
         "tags": [
           "mobile-checkout",
-          "checkout-api"
+          "checkout-api",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Create a customer with all its data and save the cards used to simplify the payment process",
