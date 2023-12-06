@@ -2,12 +2,12 @@
 content_section_with_media: 
  - title: Primeros pasos
  - message: ¿Primera vez integrando las soluciones de pago de Mercado Pago? En esta documentación podrás encontrar la información que necesitas para comenzar.
- - media_image: /images/getting-started/women-dev.png
+ - media_image: /getting-started/women-dev.png
 ---
 
 ## Por qué elegir Mercado Pago
 
-Mercado Pago ofrece varias soluciones que te permiten recibir pagos virtuales o presenciales. Puedes brindar medios de pago sin contratos ni cuotas mensuales, a través de integraciones con tiendas en línea o productos, tales como link de pago, Código QR, y la máquina de Mercado Pago, el Point, que pueden o no estar integrados.
+Mercado Pago ofrece varias soluciones que te permiten **recibir pagos virtuales o presenciales**. Puedes brindar medios de pago sin contratos ni cuotas mensuales, a través de integraciones con tiendas en línea o productos, tales como link de pago, Código QR, y la máquina de Mercado Pago, el Point, que pueden o no estar integrados.
 
 ## Una cuenta, distintas oportunidades para integrar
 
