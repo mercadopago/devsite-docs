@@ -22,7 +22,14 @@ Abaixo estão as etapas para realizar uma integração com 3DS.
 2. Em seguida, envie os **dados do checkout** junto com o **token do cartão** para o backend.
 3. Feito isso, faça uma chamada para criar um novo pagamento com os dados recebidos. O atributo `three_d_secure_mode` precisa ser enviado com um dos seguintes valores:
     1. `not_supported`: 3DS não deve ser usado (é o valor padrão).
-    2. `opcional`: 3DS pode ou não ser exigido, dependendo do perfil de risco da operação.
+    2. `optional`: 3DS pode ou não ser exigido, dependendo do perfil de risco da operação.
+    3. `mandatory`: 3DS será requerido obrigatoriamente.
+
+> NOTE
+>
+> Importante
+>
+> Recomendamos utilizar o valor `optional` na implementação do 3DS, por equilibrar segurança e aprovação de transações. `mandatory` deve ser usado apenas quando necessário para garantir a aprovação de 100% das transações, contudo, pode reduzir a taxa de aprovação.
 
 [[[
 ```curl
@@ -185,6 +192,8 @@ Para os casos em que o _Challenge_ é necessário, o `status` mostrará o valor 
 
 ### Visão geral da resposta (informação omitida)
 
+Quando o _Challenge_ é iniciado, o usuário tem cerca de 5 minutos para completá-lo. Se não for concluído, o banco recusará a transação e o Mercado Pago considerará o pagamento cancelado. Enquanto o usuário não completar o _Challenge_, o pagamento ficará como `pending_challenge`.
+
 [[[
 ```Json
 
@@ -252,12 +261,6 @@ function doChallenge(payment) {
 ]]]
 
 Quando o _Challenge_ for concluído, o status do pagamento será atualizado para `approved` se a autenticação for bem-sucedida, e `rejected` se não for. Em situações nas quais a autenticação não é realizada, o pagamento permanece `pending`. Esta atualização não é imediata e pode levar alguns instantes.
-
-> NOTE
->
-> Importante
->
-> Quando o _Challenge_ é iniciado, o usuário tem cerca de 5 minutos para completá-lo. Se não for concluído, o banco recusará a transação e o Mercado Pago considerará o pagamento cancelado. Enquanto o usuário não completar o _Challenge_, o pagamento ficará como `pending_Challenge`.
 
 Consulte a seção abaixo para obter mais detalhes sobre como verificar o status de cada transação.
 
@@ -339,6 +342,7 @@ Veja abaixo a tabela com os possíveis status e suas respectivas descrições.
 | "rejected" | -                            | Transação rejeitada sem autenticação. Para conferir os motivos, consulte a [lista padrão de status detail](https://mercadopago.com.br/developers/pt/docs/checkout-api/response-handling/collection-results).                              |
 | "pending"  | "pending_challenge"           | Transação pendente de autenticação ou _timeout_ do _Challenge_.       |
 | "rejected" | "cc_rejected_3ds_challenge"   | Transação rejeitada devido a falha no _Challenge_.                  |
+| "rejected" | "cc_rejected_3ds_mandatory" | Transação rejeitada por não cumprir a validação de 3DS quando esta é obrigatória. |
 
 ## Teste de integração
 
@@ -346,7 +350,9 @@ Para que seja possível validar pagamentos com 3DS, disponibilizamos um ambiente
 
 > WARNING
 >
-> Lembre-se de utilizar as credenciais de teste da sua aplicação. 
+> Importante
+>
+> Para testar a integração é necessário utilizar suas **credenciais de teste**. Certifique-se também de incluir o atributo `three_d_secure_mode`, definindo-o como `optional` ou `mandatory`, para garantir a correta implementação do pagamento 3DS.
 
 Para realizar testes de pagamento em um ambiente *sandbox*, é necessário utilizar cartões específicos que permitem testar a implementação do _Challenge_ com os fluxos de sucesso e falha. A tabela a seguir apresenta os detalhes desses cartões:
 
@@ -354,12 +360,10 @@ Para realizar testes de pagamento em um ambiente *sandbox*, é necessário utili
 |-----------|--------------------------|--------------------|---------------------|--------------------|
 | Mastercard | Challenge com sucesso    | 5483 9281 6457 4623 | 123                 | 11/25              |
 | Mastercard | Challenge não autorizado | 5361 9568 0611 7557 | 123                 | 11/25              |
+| Mastercard | 3ds mandatory | 5031 7557 3453 0604 | 123 | 11/25 |
 
 Os passos para criar o pagamento são os mesmos. Em caso de dúvida sobre como criar pagamentos com cartão, consulte a [documentação sobre Cartões](https://www.mercadopago.com.br/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform). 
 
-> NOTE
->
-> Para garantir que o pagamento seja criado com 3DS, lembre-se de incluir o atributo three_d_secure_mode com o valor optional.
  
 [[[
 ```curl
