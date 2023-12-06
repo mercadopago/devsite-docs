@@ -113,12 +113,8 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Loading
  - card_title: Comienza a integrar
- - card_description: Elige el producto que se ajuste a tus necesidades y comienza a integrar. Regresa a la landing de documentación.
+ - card_description: Elige el producto que se ajuste a tus necesidades y comienza a integrar.
  - card_link: /developers/en/docs
  - card_linkDescription: Volver a la documentación
  - card_pillText: 
 ---
-
-
-
-
