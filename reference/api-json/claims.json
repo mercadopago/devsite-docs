@@ -593,9 +593,9 @@
                                     "type": "string",
                                     "example": "payer",
                                     "description": {
-                                      "en": ".",
-                                      "pt": ".",
-                                      "es": "Rol que ocupa la persona sobre la operación que se está reclamando y puede variar de acuerdo con el 'resource'."
+                                      "en": "Role that the person occupies in the operation that is being claimed and may vary according to the 'resource'. It can take one of the following values:",
+                                      "pt": "Papel que a pessoa ocupa na operação que está sendo reivindicada e pode variar de acordo com o 'resource'. Pode assumir um dos seguintes valores:",
+                                      "es": "Rol que ocupa la persona sobre la operación que se está reclamando y puede variar de acuerdo con el 'resource'. Puede tomar alguno de los siguientes valores:"
                                     },
                                     "enum": [
                                       {
@@ -628,9 +628,9 @@
                                     "type": "number",
                                     "example": 242829175,
                                     "description": {
-                                      "en": "ID of the type of the previous parameter.",
-                                      "pt": "ID do tipo do parâmetro anterior.",
-                                      "es": "ID del type del parámetro anterior."
+                                      "en": "ID of the 'type' indicated in the previous parameter.",
+                                      "pt": "ID do 'type' indicado no parâmetro anterior.",
+                                      "es": "ID del 'type' indicado en el parámetro anterior."
                                     }
                                   },
                                   "available_actions": {
@@ -642,20 +642,97 @@
                                     },
                                     "items": {
                                       "type": "object",
-                                      "description": {
-                                        "es": "List of actions that each of the involved parties can execute.",
-                                        "pt": "Lista de ações que cada uma das partes envolvidas pode executar.",
-                                        "en": "Lista de acciones que pueden ejecutar cada una de las partes intervinientes."
-                                      },
                                       "properties": {
                                         "action": {
                                           "type": "string",
                                           "example": "recontact",
                                           "description": {
-                                            "en": "Acciones posibles de realizarse. Para el vendedor serán 'send_message_to_complainant': enviar mensaje para el comprador (con o sin anexos). 'send_message_to_mediator': enviar mensaje para el mediador (con o sin anexos). 'recontact' (no disponible aún): reabrir un reclamo ya cerrado, por medio de una interacción, como un mensaje. 'refund': devolver el dinero del comprado. Debe ser realizado por el front de Mercado Pago. 'open_dispute': iniciar una mediación. 'send_potential_shipping': enviar una promesa de post, una fecha. 'add_shipping_evidence': publicar una evidencia de que el producto fue enviado. 'send_attachments': enviar mensaje con adjuntos. 'allow_return_label': generar etiqueta de devolución. 'allow_return': generar etiqueta de devolución. 'send_tracking_number': enviar el número de rastreo de envío (tracking number).",
-                                            "pt": "Acciones posibles de realizarse. Para el vendedor serán 'send_message_to_complainant': enviar mensaje para el comprador (con o sin anexos). 'send_message_to_mediator': enviar mensaje para el mediador (con o sin anexos). 'recontact' (no disponible aún): reabrir un reclamo ya cerrado, por medio de una interacción, como un mensaje. 'refund': devolver el dinero del comprado. Debe ser realizado por el front de Mercado Pago. 'open_dispute': iniciar una mediación. 'send_potential_shipping': enviar una promesa de post, una fecha. 'add_shipping_evidence': publicar una evidencia de que el producto fue enviado. 'send_attachments': enviar mensaje con adjuntos. 'allow_return_label': generar etiqueta de devolución. 'allow_return': generar etiqueta de devolución. 'send_tracking_number': enviar el número de rastreo de envío (tracking number).",
-                                            "es": "Acciones posibles de realizarse. Para el vendedor serán 'send_message_to_complainant': enviar mensaje para el comprador (con o sin anexos). 'send_message_to_mediator': enviar mensaje para el mediador (con o sin anexos). 'recontact' (no disponible aún): reabrir un reclamo ya cerrado, por medio de una interacción, como un mensaje. 'refund': devolver el dinero del comprado. Debe ser realizado por el front de Mercado Pago. 'open_dispute': iniciar una mediación. 'send_potential_shipping': enviar una promesa de post, una fecha. 'add_shipping_evidence': publicar una evidencia de que el producto fue enviado. 'send_attachments': enviar mensaje con adjuntos. 'allow_return_label': generar etiqueta de devolución. 'allow_return': generar etiqueta de devolución. 'send_tracking_number': enviar el número de rastreo de envío (tracking number)."
-                                          }
+                                            "es": "List of actions that each of the involved parties can execute.",
+                                            "pt": "Lista de ações que cada uma das partes envolvidas pode executar.",
+                                            "en": "Lista de acciones que pueden ejecutar cada una de las partes intervinientes."
+                                          },
+                                          "enum": [
+                                            {
+                                              "title": "send_message_to_complainant",
+                                              "description": {
+                                                "en": "Send a message to the buyer (with or without attachments).",
+                                                "pt": "Enviar mensagem para o comprador (com ou sem anexos).",
+                                                "es": "Enviar mensaje para el comprador (con o sin anexos)."
+                                              }
+                                            },
+                                            {
+                                              "title": "send_message_to_mediator",
+                                              "description": {
+                                                "en": "Send a message to the mediator (with or without attachments).",
+                                                "pt": "Enviar mensagem para o mediador (com ou sem anexos).",
+                                                "es": "Enviar mensaje para el mediador (con o sin anexos)."
+                                              }
+                                            },
+                                            {
+                                              "title": "recontact (no disponible aún)",
+                                              "description": {
+                                                "en": "Reopen a closed complaint through an interaction, such as a message.",
+                                                "pt": "Reabrir uma reclamação já fechada, por meio de uma interação, como uma mensagem.",
+                                                "es": "Reabrir un reclamo ya cerrado, por medio de una interacción, como un mensaje."
+                                              }
+                                            },
+                                            {
+                                              "title": "refund",
+                                              "description": {
+                                                "en": "Refund the buyer's money. Must be performed by the Mercado Pago front end.",
+                                                "pt": "Devolver o dinheiro do comprador. Deve ser realizado pelo front do Mercado Pago.",
+                                                "es": "Devolver el dinero del comprado. Debe ser realizado por el front de Mercado Pago."
+                                              }
+                                            },
+                                            {
+                                              "title": "open_dispute",
+                                              "description": {
+                                                "en": "Initiate mediation.",
+                                                "pt": "Iniciar uma mediação.",
+                                                "es": "Iniciar una mediación."
+                                              }
+                                            },
+                                            {
+                                              "title": "send_potential_shipping",
+                                              "description": {
+                                                "en": "Send a promise of shipment, indicating a date.",
+                                                "pt": "Enviar uma promessa de postagem, indicando uma data.",
+                                                "es": "Enviar una promesa de post, indicando una fecha."
+                                              }
+                                            },
+                                            {
+                                              "title": "add_shipping_evidence",
+                                              "description": {
+                                                "en": "Publish evidence that the product has been shipped.",
+                                                "pt": "Publicar uma evidência de que o produto foi enviado.",
+                                                "es": "Publicar una evidencia de que el producto fue enviado."
+                                              }
+                                            },
+                                            {
+                                              "title": "send_attachments",
+                                              "description": {
+                                                "en": "Send a message with attachments.",
+                                                "pt": "Enviar mensagem com anexos.",
+                                                "es": "Enviar mensaje con adjuntos."
+                                              }
+                                            },
+                                            {
+                                              "title": "allow_return_label",
+                                              "description": {
+                                                "en": "Generate a return label.",
+                                                "pt": "Gerar etiqueta de devolução.",
+                                                "es": "Generar etiqueta de devolución."
+                                              }
+                                            },
+                                            {
+                                              "title": "send_tracking_number",
+                                              "description": {
+                                                "en": "Send the shipping tracking number.",
+                                                "pt": "Enviar o número de rastreamento de envio (tracking number).",
+                                                "es": "Enviar el número de rastreo de envío (tracking number)."
+                                              }
+                                            }
+                                          ]
                                         },
                                         "due_date": {
                                           "type": "string",
@@ -708,15 +785,12 @@
                                   }
                                 },
                                 "benefited": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "string",
-                                    "example": "complainant",
-                                    "description": {
-                                      "en": "It will indicate who will benefit from resolving the claim.",
-                                      "pt": "Indicará quem for beneficiado pela resolução da reclamação.",
-                                      "es": "Indicará quién se beneficiará de resolver el reclamo."
-                                    }
+                                  "type": "string",
+                                  "example": "complainant",
+                                  "description": {
+                                    "en": "It will indicate who will benefit from resolving the claim.",
+                                    "pt": "Indicará quem for beneficiado pela resolução da reclamação.",
+                                    "es": "Indicará quién se beneficiará de resolver el reclamo."
                                   }
                                 },
                                 "closed_by": {
