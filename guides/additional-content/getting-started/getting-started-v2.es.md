@@ -5,15 +5,18 @@ content_section_with_media:
  - media_image: /getting-started/women-dev.png
 ---
 
-## Por qué elegir Mercado Pago
+# Por qué elegir Mercado Pago
 
 Mercado Pago ofrece varias soluciones que te permiten **recibir pagos virtuales o presenciales**. Puedes brindar medios de pago sin contratos ni cuotas mensuales, a través de integraciones con tiendas en línea o productos, tales como link de pago, Código QR, y la máquina de Mercado Pago, el Point, que pueden o no estar integrados.
 
-## Una cuenta, distintas oportunidades para integrar
 
-El primer paso para comenzar a integrar es tener una cuenta de Mercado Pago, ya que es allí donde se enviarán los pagos de las ventas.
-
-> Si no tienes una cuenta de Mercado Pago, ----[mlb]----[haz clic aquí](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[haz clic aquí](https://www.mercadopago.com.ar/hub/registration/landing) ------------  ----[mlm]----[haz clic aquí](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[haz clic aquí](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[clic aquí](https://www.mercadopago.com.co/hub/registration/landing) ------------ ----[mlu]----[haz clic aquí](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[haz clic aquí](https://www.mercadopago.cl/hub/registration/landing) ------------ para crearla gratis.
+---
+bullet_section_with_media:
+ - type: normal
+ - title: Una cuenta, distintas oportunidades para integrar
+ - message: **El primer paso para comenzar a integrar es tener una cuenta de Mercado Pago**. Si no tienes una cuenta de Mercado Pago, ----[mlb]----[haz clic aquí](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[haz clic aquí](https://www.mercadopago.com.ar/hub/registration/landing) ------------  ----[mlm]----[haz clic aquí](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[haz clic aquí](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[clic aquí](https://www.mercadopago.com.co/hub/registration/landing) ------------ ----[mlu]----[haz clic aquí](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[haz clic aquí](https://www.mercadopago.cl/hub/registration/landing) ------------ para crearla gratis.
+ - image: /getting-started/woman-mobile-dev.png
+---
 
 > NOTE
 >
@@ -21,15 +24,17 @@ El primer paso para comenzar a integrar es tener una cuenta de Mercado Pago, ya 
 >
 > Si ya tienes una cuenta de Mercado Libre, accede al Panel de Negocios de Mercado Pago con el mismo usuario y contraseña.
 
-Con la cuenta ya activa, tienes acceso a dos paneles diferentes con información crucial:
-
-## Tus integraciones
+# Tus integraciones
 
 Con la cuenta ya activa, tienes acceso [Tus integraciones](https://www.mercadopago.com/developers/panel/app), que te permite administrar integraciones con desarrollo de código, tus aplicaciones, realizar pruebas y configurar las notificaciones de eventos relacionados con transacciones.
 
-## Credenciales
-
-Las credenciales son contraseñas exclusivas utilizadas para identificar una integración en tu cuenta. Desempeñan un papel fundamental en la captura segura de pagos en tiendas en línea y otras aplicaciones. Puedes encontrarlas en **Detalles de la aplicación > Credenciales** dentro del [Panel del desarrollador](/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
+---
+bullet_section_with_media:
+ - title: Credenciales
+ - type: reverse
+ - message: Las credenciales son contraseñas exclusivas utilizadas para identificar una integración en tu cuenta. Desempeñan un papel fundamental en la captura segura de pagos en tiendas en línea y otras aplicaciones. Puedes encontrarlas en **Detalles de la aplicación > Credenciales** dentro del [Panel del desarrollador](/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
+ - image: /getting-started/woman-male-dev.png
+---
 
 ## Conoce los productos
 
