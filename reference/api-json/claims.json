@@ -287,7 +287,7 @@
                             "example": 0,
                             "description": {
                               "en": "Offset over the total set of data gathered by the search.",
-                              "pt": "Desplazamiento sobre el conjunto total de datos levantados por la búsqueda.",
+                              "pt": "Deslocamento sobre o conjunto total de dados levantados pela busca.",
                               "es": "Desplazamiento sobre el conjunto total de datos levantados por la búsqueda."
                             }
                           },
@@ -295,17 +295,17 @@
                             "type": "number",
                             "example": 30,
                             "description": {
-                              "en": "Cantidad límite de reclamos que retornados en la búsqueda",
-                              "pt": "Cantidad límite de reclamos que retornados en la búsqueda",
-                              "es": "Cantidad límite de reclamos que retornados en la búsqueda."
+                              "en": "Limit of claims returned in the search.",
+                              "pt": "Quantidade limite de reclamações que serão retornadas na busca.",
+                              "es": "Cantidad límite de reclamos que se devolverán en la búsqueda."
                             }
                           },
                           "total": {
                             "type": "number",
                             "example": 1,
                             "description": {
-                              "en": "Cantidad de reclamos encontrados en la búsqueda",
-                              "pt": "Cantidad de reclamos encontrados en la búsqueda",
+                              "en": "Number of claims found in the search.",
+                              "pt": "Quantidade de reclamações encontradas na busca.",
                               "es": "Cantidad de reclamos encontrados en la búsqueda"
                             }
                           }
@@ -320,8 +320,8 @@
                               "type": "number",
                               "example": 5033102536,
                               "description": {
-                                "en": "ID del reclamo.",
-                                "pt": "ID del reclamo.",
+                                "en": "Claim ID.",
+                                "pt": "ID da reclamação.",
                                 "es": "ID del reclamo."
                               }
                             },
@@ -329,10 +329,52 @@
                               "type": "string",
                               "example": "mediations",
                               "description": {
-                                "en": "Tipo de reclamo. Puede tomar alguno de los siguientes valores - mediations reclamo entre comprador y vendedor. cancel_purchase - cancelación de compra por parte del comprador. return - devolución de producto. En este caso, no hay mensajes. cancel_sale - cancelación de compra por parte del vendedor. El status siempre va a ser 'closed'. El stage siempre va a ser 'none'. El rol complainant siempre va a ser el type seller, collector o sender dependiendo el resource. change - cambios de producto. Indica que se va a realizar un cambio del producto.",
-                                "pt": "Tipo de reclamo. Puede tomar alguno de los siguientes valores - mediations reclamo entre comprador y vendedor. cancel_purchase - cancelación de compra por parte del comprador. return - devolución de producto. En este caso, no hay mensajes. cancel_sale - cancelación de compra por parte del vendedor. El status siempre va a ser 'closed'. El stage siempre va a ser 'none'. El rol complainant siempre va a ser el type seller, collector o sender dependiendo el resource. change - cambios de producto. Indica que se va a realizar un cambio del producto.",
-                                "es": "Tipo de reclamo. Puede tomar alguno de los siguientes valores - mediations reclamo entre comprador y vendedor. cancel_purchase - cancelación de compra por parte del comprador. return - devolución de producto. En este caso, no hay mensajes. cancel_sale - cancelación de compra por parte del vendedor. El status siempre va a ser 'closed'. El stage siempre va a ser 'none'. El rol complainant siempre va a ser el type seller, collector o sender dependiendo el resource. change - cambios de producto. Indica que se va a realizar un cambio del producto."
-                              }
+                                "en": "Type of claim. It can take one of the following values:",
+                                "pt": "Tipo de reclamação. Pode assumir um dos seguintes valores:",
+                                "es": "Tipo de reclamo. Puede tomar alguno de los siguientes valores:"
+                              },
+                              "enum": [
+                                {
+                                  "title": "mediations",
+                                  "description": {
+                                    "en": "Mediation of the claim between buyer and seller.",
+                                    "es": "Mediación del reclamo entre comprador y vendedor.",
+                                    "pt": "Mediação da reclamação entre comprador e vendedor."
+                                  }
+                                },
+                                {
+                                  "title": "cancel_purchase",
+                                  "description": {
+                                    "en": "Buyer's cancellation of purchase.",
+                                    "es": "Cancelación de compra por parte del comprador.",
+                                    "pt": "Cancelamento de compra por parte do comprador."
+                                  }
+                                }
+                                {
+                                  "title": "return",
+                                  "description": {
+                                    "en":  "Product return. In this case, there are no messages.",
+                                    "es": "Devolución de producto. En este caso, no hay mensajes.",
+                                    "pt": "Devolução de produto. Neste caso, não há mensagens."
+                                  }
+                                }
+                                {
+                                  "title": "cancel_sale",
+                                  "description": {
+                                    "en":  "Seller's cancellation of purchase. The stage will always be 'none', and the complainant's role will always be, depending on the resource, the type 'seller', 'collector', or 'sender'.",
+                                    "es": "Cancelación de compra por parte del vendedor. El stage siempre va a ser 'none' y el rol complainant siempre va a ser el type seller, collector o sender dependiendo el resource.",
+                                    "pt": "Cancelamento de compra por parte do vendedor. O stage sempre será 'none' e o papel do reclamante sempre será, dependendo do recurso, o tipo 'seller', 'collector' ou 'sender'."
+                                  }
+                                }
+                                {
+                                  "title": "change",
+                                  "description": {
+                                    "en":  "Indicates that a product exchange will take place.",
+                                    "es": "Indica que se va a realizar un cambio del producto.",
+                                    "pt": "Indica que haverá uma troca do produto."
+                                  }
+                                }
+                              ]
                             },
                             "stage": {
                               "type": "string",
@@ -347,8 +389,8 @@
                               "type": "string",
                               "example": "closed",
                               "description": {
-                                "en": "Estado del reclamo. Puede tomar dos valores: 'opened' y 'closed'.",
-                                "pt": "Estado del reclamo. Puede tomar dos valores: 'opened' y 'closed'.",
+                                "en": "Claim status. It can take two values: 'opened' and 'closed'.",
+                                "pt": "Estado da reclamação. Pode assumir dois valores: 'opened' e 'closed'.",
                                 "es": "Estado del reclamo. Puede tomar dos valores: 'opened' y 'closed'."
                               }
                             },
@@ -356,8 +398,8 @@
                               "type": "string",
                               "example": null,
                               "description": {
-                                "en": "ID de otro reclamo del que depende.",
-                                "pt": "ID de otro reclamo del que depende.",
+                                "en": "ID of another claim on which it depends.",
+                                "pt": "ID de outra reclamação da qual esta depende.",
                                 "es": "ID de otro reclamo del que depende."
                               }
                             },
@@ -365,8 +407,8 @@
                               "type": "number",
                               "example": 1569196570216262,
                               "description": {
-                                "en": "ID de la app que creo el reclamo",
-                                "pt": "ID de la app que creo el reclamo",
+                                "en": "ID of the app that created the claim.",
+                                "pt": "ID do aplicativo que criou a reclamação.",
                                 "es": "ID de la app que creo el reclamo"
                               }
                             },
@@ -374,36 +416,36 @@
                               "type": "number",
                               "example": 7138572864,
                               "description": {
-                                "en": "ID del recurso sobre el que se crea el reclamo y depende del parámetro resource.",
-                                "pt": "ID del recurso sobre el que se crea el reclamo y depende del parámetro resource.",
-                                "es": "ID del recurso sobre el que se crea el reclamo y depende del parámetro resource."
+                                "en": "ID of the resource on which the claim is created and depends on the 'resource' parameter.",
+                                "pt": "ID do recurso sobre o qual a reclamação é criada e depende do parâmetro 'resource'.",
+                                "es": "ID del recurso sobre el que se crea el reclamo y depende del parámetro 'resource'."
                               }
                             },
                             "resource": {
                               "type": "string",
                               "example": "shipment",
                               "description": {
-                                "en": "Identificador del recurso sobre el que se crea el reclamo. Puede ser: payment, order, shipment, purchase",
-                                "pt": "Identificador del recurso sobre el que se crea el reclamo. Puede ser: payment, order, shipment, purchase",
-                                "es": "Identificador del recurso sobre el que se crea el reclamo. Puede ser: payment, order, shipment, purchase"
+                                "en": "Identifier of the resource on which the claim is created. It can take the values: 'payment', 'order', 'shipment', or 'purchase'.",
+                                "pt": "Identificador do recurso sobre o qual a reclamação é criada. Pode ser: 'payment', 'order', 'shipment' ou 'purchase'.",
+                                "es": "Identificador del recurso sobre el que se crea el reclamo. Puede tomar los valores: 'payment', 'order', 'shipment' o 'purchase'."
                               }
                             },
                             "reason_id": {
                               "type": "string",
                               "example": "PNR4071",
                               "description": {
-                                "en": "Razón/motivo por el cual se creó el reclamo",
-                                "pt": "Razón/motivo por el cual se creó el reclamo",
-                                "es": "Razón/motivo por el cual se creó el reclamo"
+                                "en": "Reason/motive for which the claim was created.",
+                                "pt": "Razão/motivo pelo qual a reclamação foi criada.",
+                                "es": "Razón/motivo por el cual se creó el reclamo."
                               }
                             },
                             "quantity_type": {
                               "type": "string",
                               "example": "total",
                               "description": {
-                                "en": "Inicialmente sólo mostrará el valor 'total' y en el futuro se visualizará el valor 'partial'. Indica si una devolución corresponde a todos los productos de la orden o solo algunos.",
-                                "pt": "Inicialmente sólo mostrará el valor 'total' y en el futuro se visualizará el valor 'partial'. Indica si una devolución corresponde a todos los productos de la orden o solo algunos.",
-                                "es": "Inicialmente sólo mostrará el valor 'total' y en el futuro se visualizará el valor 'partial'. Indica si una devolución corresponde a todos los productos de la orden o solo algunos."
+                                "en": "Indica si una devolución corresponde a todos los productos de la orden o solo algunos. Inicialmente sólo mostrará el valor 'total' y en el futuro se visualizará el valor 'partial'.",
+                                "pt": "Indica se um reembolso corresponde a todos os produtos do pedido ou apenas alguns. Inicialmente, mostrará apenas o valor 'total' e, no futuro, será exibido o valor 'partial'.",
+                                "es": "Indicates whether a return corresponds to all products in the order or only some. Initially, it will only show the value 'total', and in the future, the value 'partial' will be displayed."
                               }
                             },
                             "players": {
@@ -433,8 +475,8 @@
                                     "type": "number",
                                     "example": 242829175,
                                     "description": {
-                                      "en": "ID del type del parámetro anterior.",
-                                      "pt": "ID del type del parámetro anterior.",
+                                      "en": "ID of the type of the previous parameter.",
+                                      "pt": "ID do tipo do parâmetro anterior.",
                                       "es": "ID del type del parámetro anterior."
                                     }
                                   },
@@ -443,9 +485,9 @@
                                     "items": {
                                       "type": "object",
                                       "description": {
-                                        "es": "Lista de acciones que pueden ejecutar cada una de las partes intervinientes",
-                                        "pt": "Lista de acciones que pueden ejecutar cada una de las partes intervinientes",
-                                        "en": "Lista de acciones que pueden ejecutar cada una de las partes intervinientes"
+                                        "es": "List of actions that each of the involved parties can execute.",
+                                        "pt": "Lista de ações que cada uma das partes envolvidas pode executar.",
+                                        "en": "Lista de acciones que pueden ejecutar cada una de las partes intervinientes."
                                       },
                                       "properties": {
                                         "action": {
@@ -461,18 +503,18 @@
                                           "type": "string",
                                           "example": "2020-11-16T22:36:59.000-04:00",
                                           "description": {
-                                            "en": "Tiempo límite para realizar la acción",
-                                            "pt": "Tiempo límite para realizar la acción",
-                                            "es": "Tiempo límite para realizar la acción"
+                                            "en": "Deadline to perform the action.",
+                                            "pt": "Prazo limite para realizar a ação.",
+                                            "es": "Tiempo límite para realizar la acción."
                                           }
                                         },
                                         "mandatory": {
                                           "type": "boolean",
                                           "example": true,
                                           "description": {
-                                            "en": "Este campo en true indica que la acción es obligatoria y debe ser realizada dentro del tiempo informado.",
-                                            "pt": "Este campo en true indica que la acción es obligatoria y debe ser realizada dentro del tiempo informado.",
-                                            "es": "Este campo en true indica que la acción es obligatoria y debe ser realizada dentro del tiempo informado."
+                                            "en": "This field being 'true' indicates that the action is mandatory and must be performed within the specified time.",
+                                            "pt": "Este campo como 'true' indica que a ação é obrigatória e deve ser realizada dentro do tempo informado.",
+                                            "es": "Este campo en 'true' indica que la acción es obligatoria y debe ser realizada dentro del tiempo informado."
                                           }
                                         }
                                       }
@@ -488,18 +530,18 @@
                                   "type": "string",
                                   "example": "already_shipped",
                                   "description": {
-                                    "en": "Motivo de resolucion/cierre",
-                                    "pt": "Motivo de resolucion/cierre",
-                                    "es": "Motivo de resolucion/cierre"
+                                    "en": "Reason for resolution/closure.",
+                                    "pt": "Motivo de resolução/encerramento.",
+                                    "es": "Motivo de resolucion/cierre."
                                   }
                                 },
                                 "date_created": {
                                   "type": "string",
                                   "example": "2020-10-02T01:12:31.000-04:00",
                                   "description": {
-                                    "en": "Fecha de la resolucion/cierre del reclamo",
-                                    "pt": "Fecha de la resolucion/cierre del reclamo",
-                                    "es": "Fecha de la resolucion/cierre del reclamo"
+                                    "en": "Date of resolution/closure of the claim.",
+                                    "pt": "Data de resolução/encerramento da reclamação.",
+                                    "es": "Fecha de la resolucion/cierre del reclamo."
                                   }
                                 },
                                 "benefited": {
@@ -508,24 +550,19 @@
                                     "type": "string",
                                     "example": "complainant",
                                     "description": {
-                                      "es": "Beneficiario/s de la resolucion",
-                                      "pt": "Beneficiario/s de la resolucion",
-                                      "en": "Beneficiario/s de la resolucion"
+                                      "en": "It will indicate who will benefit from resolving the claim.",
+                                      "pt": "Indicará quem for beneficiado pela resolução da reclamação.",
+                                      "es": "Indicará quién se beneficiará de resolver el reclamo."
                                     }
-                                  },
-                                  "description": {
-                                    "en": "Beneficiario/s de la resolucion",
-                                    "pt": "Beneficiario/s de la resolucion",
-                                    "es": "Beneficiario/s de la resolucion"
                                   }
                                 },
                                 "closed_by": {
                                   "type": "string",
                                   "example": "mediator",
                                   "description": {
-                                    "en": "Actor que cerró el reclamo",
-                                    "pt": "Actor que cerró el reclamo",
-                                    "es": "Actor que cerró el reclamo"
+                                    "en": "Person who closed the claim.",
+                                    "pt": "Pessoa que encerrou a reclamação.",
+                                    "es": "Persona que cerró el reclamo."
                                   }
                                 }
                               }
@@ -534,17 +571,17 @@
                               "type": "string",
                               "example": "MLA",
                               "description": {
-                                "en": "ID del site donde se desarrolla el reclamo",
-                                "pt": "ID del site donde se desarrolla el reclamo",
-                                "es": "ID del site donde se desarrolla el reclamo"
+                                "en": "ID of the site where the claim occurs.",
+                                "pt": "ID do site em que ocorre a reclamação.",
+                                "es": "ID del site donde se desarrolla el reclamo."
                               }
                             },
                             "date_created": {
                               "type": "string",
                               "example": "2020-09-30T09:48:06.000-04:00",
                               "description": {
-                                "en": "Fecha en la que se creó el reclamo.",
-                                "pt": "Fecha en la que se creó el reclamo.",
+                                "en": "Date the claim was created.",
+                                "pt": "Data em que a reclamação foi criada.",
                                 "es": "Fecha en la que se creó el reclamo."
                               }
                             },
@@ -552,8 +589,8 @@
                               "type": "string",
                               "example": "2020-10-02T01:12:31.000-04:00",
                               "description": {
-                                "en": "Fecha de última actualización reclamo.",
-                                "pt": "Fecha de última actualización reclamo.",
+                                "en": "Date of the last update to the claim.",
+                                "pt": "Data da última atualização da reclamação.",
                                 "es": "Fecha de última actualización reclamo."
                               }
                             }
