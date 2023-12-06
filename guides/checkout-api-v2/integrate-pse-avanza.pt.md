@@ -83,7 +83,10 @@ curl -X GET \
 ```
 ]]]
 
-Uma vez obtidos os meios de pagamento, você pode filtrar a lista de bancos disponíveis para pagamentos com PSE através do campo `financial_institutions` dentro do objeto com `id=pse`, conforme exemplo de resposta abaixo.
+Uma vez obtidos os meios de pagamento, você pode listar os bancos disponíveis para pagamentos com PSE através do campo `financial_institutions` dentro do objeto com `id=pse`, conforme exemplo de resposta abaixo.
+
+Esta lista de bancos será necessária para continuar a integração durante a fase de [Listar Bancos](/developers/pt/docs/checkout-api/integration-configuration/pse#bookmark_listar_bancos).
+
 
 ```json
 [
@@ -126,8 +129,6 @@ Uma vez obtidos os meios de pagamento, você pode filtrar a lista de bancos disp
    }
 ]
 ```
-
-Esta lista de bancos será necessária para continuar a integração durante a fase de [Listar Bancos](/developers/pt/docs/checkout-api/integration-configuration/pse#bookmark_listar_bancos).
 
 > CLIENT_SIDE
 >
@@ -283,6 +284,13 @@ function setPse() {
 }
 ```
 
+> NOTE
+>
+> Nota
+>
+> Recomendamos que, ao visualizar a lista de bancos, o faça por ordem alfabética e crescente; isto é, de *A* a *Z*. 
+
+
 Para que os elementos dinâmicos criados com esses javascript sejam carregados quando a página terminar de renderizar, adicione o seguinte código:
 
 ```javascript
@@ -298,12 +306,6 @@ Para que os elementos dinâmicos criados com esses javascript sejam carregados q
 
 ``` 
 
-> NOTE
->
-> Nota
->
-> Recomendamos que, ao visualizar a lista de bancos, o faça por ordem alfabética e crescente; isto é, de *A* a *Z*. 
-
 
 > SERVER_SIDE
 >
@@ -311,7 +313,7 @@ Para que os elementos dinâmicos criados com esses javascript sejam carregados q
 >
 > Enviar pagamento
 
-Ao finalizar a inclusão do formulário de pagamento, obter os tipos de documento e configurar lista de bancos, utilize nossa API de Pagamentos ou um de nossos SDKs para encaminhar o e-mail do comprador, o tipo e o número do documento, o meio de pagamento utilizado e o detalhe do valor a ser pago.
+Ao finalizar a inclusão do formulário de pagamento, obter os tipos de documento e configurar lista de bancos, utilize nossa API de Pagamentos ou um de nossos SDKs para encaminhar o e-mail do comprador, o telefone, o endereço, o tipo e o número do documento, o meio de pagamento utilizado e o detalhe do valor a ser pago.
 
 Para configurar pagamentos com **PSE**, envie um **POST** com os devidos parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
@@ -674,12 +676,14 @@ payment = payment_response["response"]
 | `payer.phone.area_code` | DDD do telefone do comprador. | - | - |
 | `payer.phone.number` | Número de telefone do comprador | - | - |
 
-A resposta mostrará o status `pendente` até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL para a qual você deverá redirecionar o comprador para que ele conclua o fluxo de pagamento.
+A resposta mostrará o status `pendente` até que o comprador realize o pagamento. Além disso, o parâmetro `external_resource_url` retornará uma URL para a qual você deverá redirecionar o comprador para que ele conclua o fluxo de pagamento.
+
+Você pode ver um exemplo dessa resposta abaixo. Tenha em conta que as informações foram omitidas para mostrar os campos mais relevantes.
 
 ```json
 {
     "id": 1312147735,
-     ..., 
+     … 
     "operation_type": "regular_payment",
     "payment_method_id": "pse",
     "payment_type_id": "bank_transfer",
@@ -689,22 +693,22 @@ A resposta mostrará o status `pendente` até que o comprador realize o pagament
     },
     "status": "pending",
     "status_detail": "pending_waiting_transfer",
-     ...,
+     … 
     "description": "Título del producto",
-     ..., 
+     … 
     "callback_url": "http://www.your-site.com",
-    "installments": 1,
+    
     "transaction_details": {
-     ...,
+     … 
         "total_paid_amount": 5000,
-     ...,
+     … 
         "external_resource_url": "https://www.mercadopago.com.co/sandbox/payments/1312147735/bank_transfer?caller_id=1148920820&hash=f41dd14f-b3a6-4ac4-9b78-5cfeb5a35e77",
-     ...,
+     … 
         "financial_institution": "1009",
-     ...,
+     … 
         "bank_transfer_id": 129229,
         "transaction_id": "10022214"
-    }, 
+    },
 }
 
 ```

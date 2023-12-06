@@ -83,7 +83,9 @@ curl -X GET \
 ```
 ]]]
 
-Una vez obtenidos los medios de pago, podrás filtrar la lista de bancos disponibles para pagos con PSE a través del campo `financial_institutions` dentro del objeto con `id=pse`, tal como se muestra en el ejemplo de respuesta a continuación. 
+Una vez obtenidos los medios de pago, podrás listar los bancos disponibles para pagos con PSE a través del campo `financial_institutions` dentro del objeto con `id=pse`, tal como se muestra en el ejemplo de respuesta a continuación. 
+
+Este listado de bancos será necesario para continuar con la integración durante la etapa [Listar bancos](/developers/es/docs/checkout-api/integration-configuration/pse#bookmark_listar_bancos).
 
 ```json
 [
@@ -126,8 +128,6 @@ Una vez obtenidos los medios de pago, podrás filtrar la lista de bancos disponi
    }
 ]
 ```
-
-Este listado de bancos será necesario para continuar con la integración durante la etapa [Listar bancos](/developers/es/docs/checkout-api/integration-configuration/pse#bookmark_listar_bancos).
 
 
 > CLIENT_SIDE
@@ -217,7 +217,7 @@ En el frontend de tu proyecto, deberás añadir el siguiente formulario de pago.
 >
 > Obtener tipos de documentos
 
-Para crear un pago con PSE es necesario también obtener el tipo y número de documento del usuario. Estos documentos dependerán del tipo de persona (natural o jurídica) seleccionada durante la adición del formulario de pago, y podrás obtenerlos automáticamente utilizando la siguiente función:  
+Para crear un pago con PSE es necesario obtener el tipo y número de documento del usuario. Los tipos de documentos aceptados dependerán del tipo de persona (natural o jurídica) seleccionada durante la adición del formulario de pago, y podrás obtenerlos automáticamente utilizando la siguiente función:  
 
 ```javascript
 
@@ -286,6 +286,12 @@ function setPse() {
 }
 ```
 
+> NOTE
+>
+> Nota
+>
+> Recomendamos que, al momento de exhibir el listado de bancos, lo hagas en orden alfabético y de manera ascendente; es decir, de la *A* a la *Z*. 
+
 Para que los elementos dinámicos creados con estos javascript se carguen cuando la página termine de renderizar, deberás añadir el siguiente código:
 
 ```javascript
@@ -300,11 +306,6 @@ Para que los elementos dinámicos creados con estos javascript se carguen cuando
  })();
 
 ``` 
-> NOTE
->
-> Nota
->
-> Recomendamos que, al momento de exhibir el listado de bancos, lo hagas en orden alfabético y de manera ascendente; es decir, de la *A* a la *Z*. 
 
 
 > SERVER_SIDE
@@ -313,7 +314,7 @@ Para que los elementos dinámicos creados con estos javascript se carguen cuando
 >
 > Enviar pago
 
-Al finalizar la inclusión del formulario de pago, obtener los tipos de documentos y configurar el listado de bancos, es necesario enviar el email del comprador, el tipo y número de documento, el medio de pago utilizado y el detalle del importe a pagar utilizando nuestra API de Pagos o uno de nuestros SDKs.
+Al finalizar la inclusión del formulario de pago, obtener los tipos de documentos y configurar el listado de bancos, es necesario enviar el email del comprador, la dirección, el télefono, el tipo y número de documento, el medio de pago utilizado y el detalle del importe a pagar utilizando nuestra API de Pagos o uno de nuestros SDKs.
 
 Para configurar pagos con **PSE**, envía un **POST** con los parámetros requeridos al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
@@ -664,7 +665,7 @@ Los siguientes campos para enviar un pago son **obligatorios** y deberás comple
 | Campo | Descripción | Valores posibles/validaciones | Llamado para obtener los valores |
 |:---:|:---:|:---:|:---:|
 | `transaction_details.financial_institution` | Banco informado en el POST para hacer la transferencia electrónica. Se debe mostrar al usuario el listado de bancos y permitirle seleccionar. El listado se actualiza, por lo que se recomienda consumir la información cada una hora. | - | https://api.mercadopago.com/v1/payment_methods/search?site_id=MCO&id=pse&public_key=YOUR_PUBLIC_KEY  |
-| `payer.entity_type` | Tipo de personería, física o jurídica.  | *individual* o *association* | - |
+| `payer.entity_type` | Tipo de personería, natural o jurídica.  | *individual* o *association* | - |
 | `payer.identification` | Tipo y número de documento del comprador. | - | curl -X GET \<br>'https://api.mercadopago.com/v1/identification_types' \<br>-H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
 | `additional_info.ip_address` | Dirección IP del comprador, donde se genera el pago. | - | - |
 | `callback_url` | Página donde se redirecciona al comprador por defecto luego de realizar el pago dentro de la interfaz del banco, cuando el comprador indica que desea regresar a la tienda. <br>Puedes ver mensajes sugeridos para mostrar al comprador en el subtítulo [Ejemplos de mensajes para callback URL](/developers/es/docs/checkout-api/integration-configuration/pse#bookmark_ejemplos_de_mensajes_para_callback_url). | - | - |
@@ -677,12 +678,15 @@ Los siguientes campos para enviar un pago son **obligatorios** y deberás comple
 | `payer.phone.number` | Número de teléfono del comprador | - | - |
 
 
-La respuesta mostrará el status `pendiente` hasta que el comprador realice el pago. Además, en la respuesta a la solicitud, el parámetro `external_resource_url` devolverá una URL a la que debes redirigir al comprador para que finalice el flujo de pago.
+La respuesta mostrará el status `pendiente` hasta que el comprador realice el pago. Además, el parámetro `external_resource_url` devolverá una URL a la que debes redirigir al comprador para que finalice el flujo de pago.
+
+Puedes ver un ejemplo de esta respuesta aquí debajo. Ten en cuenta que se omitió información para poder mostrar los campos de mayor relevancia. 
+
 
 ```json
 {
     "id": 1312147735,
-     ..., 
+     … 
     "operation_type": "regular_payment",
     "payment_method_id": "pse",
     "payment_type_id": "bank_transfer",
@@ -692,22 +696,22 @@ La respuesta mostrará el status `pendiente` hasta que el comprador realice el p
     },
     "status": "pending",
     "status_detail": "pending_waiting_transfer",
-     ...,
+     … 
     "description": "Título del producto",
-     ..., 
+     … 
     "callback_url": "http://www.your-site.com",
-    "installments": 1,
+    
     "transaction_details": {
-     ...,
+     … 
         "total_paid_amount": 5000,
-     ...,
+     … 
         "external_resource_url": "https://www.mercadopago.com.co/sandbox/payments/1312147735/bank_transfer?caller_id=1148920820&hash=f41dd14f-b3a6-4ac4-9b78-5cfeb5a35e77",
-     ...,
+     … 
         "financial_institution": "1009",
-     ...,
+     … 
         "bank_transfer_id": 129229,
         "transaction_id": "10022214"
-    }, 
+    },
 }
 
 ```
