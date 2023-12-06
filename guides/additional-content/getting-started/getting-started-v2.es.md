@@ -23,11 +23,7 @@ El primer paso para comenzar a integrar es **tener una cuenta de Mercado Pago**.
 
 Con la cuenta ya activa, tienes acceso [Tus integraciones](https://www.mercadopago.com/developers/panel/app), que te permite administrar integraciones con desarrollo de código, tus aplicaciones, realizar pruebas y configurar las notificaciones de eventos relacionados con transacciones.
 
-> NOTE
->
-> Importante
->
-> Si ya tienes una cuenta de Mercado Libre, accede a [Tus integraciones](https://www.mercadopago.com/developers/panel/app) con el mismo usuario y contraseña.
+> **Importante**<br>Si ya tienes una cuenta de Mercado Libre, accede a [Tus integraciones](https://www.mercadopago.com/developers/panel/app) con el mismo usuario y contraseña.
 
 ---
 bullet_section_with_media:
