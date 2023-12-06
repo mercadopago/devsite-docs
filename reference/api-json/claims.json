@@ -2426,9 +2426,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": ".",
-            "pt": ".",
-            "es": "Utilizando el campo resource del campo data de la novedad recibida del tópico podrás realizar un get al recurso de claim."
+            "en": "Using the 'resource' field of the 'data' parameter of the news received from the topic, you can perform a 'get' to the claim resource.",
+            "pt": "Utilizando o campo 'resource' do parâmetro 'data' das notícias recebidas do tópico, você pode realizar um 'get' ao recurso de reclamações.",
+            "es": "Utilizando el campo 'resource' del parâmetro 'data' de la novedad recibida del tópico, podrás realizar un 'get' al recurso de reclamo."
           },
           "parameters": [
             {
@@ -2449,16 +2449,16 @@
           "responses": {
             "200": {
               "description": {
-                "es": "Success",
-                "pt": "Sucesso",
-                "en": "Éxito"
+                "es": "Success.",
+                "pt": "Sucesso.",
+                "en": "Éxito."
               }
             }
           },
           "title": {
-            "en": ".",
-            "pt": ".",
-            "es": "Notificaciones de reclamos"
+            "en": "Claim notifications.",
+            "pt": "Notificações de reclamações.",
+            "es": "Notificaciones de reclamos."
           }
         }
       }
