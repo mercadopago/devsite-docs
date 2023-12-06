@@ -1,6 +1,9 @@
-# Primeros pasos
-
-¿Primera vez integrando las soluciones de pago de Mercado Pago? En esta documentación podrás encontrar la información que necesitas para comenzar.
+---
+content_section_with_media: 
+ - title: Primeros pasos
+ - message: ¿Primera vez integrando las soluciones de pago de Mercado Pago? En esta documentación podrás encontrar la información que necesitas para comenzar.
+ - media_image: /images/getting-started/women-dev.png
+---
 
 ## Por qué elegir Mercado Pago
 
@@ -20,7 +23,7 @@ El primer paso para comenzar a integrar es tener una cuenta de Mercado Pago, ya 
 
 Con la cuenta ya activa, tienes acceso a dos paneles diferentes con información crucial:
 
-### Tus integraciones
+## Tus integraciones
 
 Con la cuenta ya activa, tienes acceso [Tus integraciones](https://www.mercadopago.com/developers/panel/app), que te permite administrar integraciones con desarrollo de código, tus aplicaciones, realizar pruebas y configurar las notificaciones de eventos relacionados con transacciones.
 
@@ -32,7 +35,7 @@ Las credenciales son contraseñas exclusivas utilizadas para identificar una int
 
 Conoce cuáles son las principales ventajas de los productos de Mercado Pago y encuentra la mejor solución para tu negocio.
 
-### Procesa pagos online
+## Procesa pagos online
 
 | Producto | Descripción | Dificultad de integración |
 |---|---|---|
@@ -70,7 +73,7 @@ Conoce la disponibilidad de nuestros productos por plataforma en cada país:
 | Prestashop | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
 | Wix | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
 | Linx Commerce | - | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
-| Magento 2 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
+| Adobe Commerce (Magento) | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
 | iSet | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
 | Yampi | - | 🇧🇷 |
 
@@ -87,7 +90,7 @@ Conoce la disponibilidad de nuestros productos por plataforma en cada país:
 | Prestashop | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
 | Wix | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
 | Linx Commerce | - | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
-| Magento 2 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
+| Adobe Commerce (Magento) | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
 | iSet | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
 | Yampi | - | 🇧🇷 |
 
