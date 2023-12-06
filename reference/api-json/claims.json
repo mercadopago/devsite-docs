@@ -49,49 +49,49 @@
                 "example": "mediations"
               },
               "description": {
-                "en": "Defines the nature of the claim being processed.",
-                "pt": "Define a natureza da reclamação em processamento.",
-                "es": "Define la naturaleza del reclamo que se está procesando."
+                "en": "Defines the nature of the claim being processed. It can take one of the following values:",
+                "pt": "Define a natureza da reclamação em processamento. Pode assumir um dos seguintes valores:",
+                "es": "Define la naturaleza del reclamo que se está procesando. Puede tomar alguno de los siguientes valores:"
               },
               "enum": [
                 {
                   "title": "mediations",
                   "description": {
                     "en": "Refers to the process of mediating between parties in a claim.",
-                    "es": "Se refiere al proceso de mediación entre las partes en un reclamo.",
-                    "pt": "Refere-se ao processo de mediação entre as partes em uma reclamação."
+                    "pt": "Refere-se ao processo de mediação entre as partes em uma reclamação.",
+                    "es": "Se refiere al proceso de mediación entre las partes en un reclamo."
                   }
                 },
                 {
                   "title": "cancel_purchase",
                   "description": {
                     "en": "Involves the process of cancelling a previously made purchase.",
-                    "es": "Involucra el proceso de cancelar una compra previamente realizada.",
-                    "pt": "Envolve o processo de cancelar uma compra previamente realizada."
+                    "pt": "Envolve o processo de cancelar uma compra previamente realizada.",
+                    "es": "Involucra el proceso de cancelar una compra previamente realizada."
                   }
                 },
                 {
                   "title": "return",
                   "description": {
                     "en": "Pertains to the process of returning a purchased item.",
-                    "es": "Se refiere al proceso de devolver un artículo comprado.",
-                    "pt": "Refere-se ao processo de devolução de um item comprado."
+                    "pt": "Refere-se ao processo de devolução de um item comprado.",
+                    "es": "Se refiere al proceso de devolver un artículo comprado."
                   }
                 },
                 {
                   "title": "cancel_sale",
                   "description": {
                     "en": "oncerns the process of cancelling a sale that has been made.",
-                    "es": "Se ocupa del proceso de cancelar una venta realizada.",
-                    "pt": "Refere-se ao processo de cancelar uma venda realizada."
+                    "pt": "Refere-se ao processo de cancelar uma venda realizada.",
+                    "es": "Se ocupa del proceso de cancelar una venta realizada."
                   }
                 },
                 {
                   "title": "change",
                   "description": {
                     "en": "Refers to the alteration or modification of the details or status of a claim.",
-                    "es": "Se refiere a la alteración o modificación de los detalles o el estado de un reclamo.",
-                    "pt": "Refere-se à alteração ou modificação dos detalhes ou status de uma reclamação."
+                    "pt": "Refere-se à alteração ou modificação dos detalhes ou status de uma reclamação.",
+                    "es": "Se refiere a la alteración o modificación de los detalles o el estado de un reclamo."
                   }
                 }
               ]
@@ -105,41 +105,41 @@
                 "example": "claim"
               },
               "description": {
-                "en": "Indicates the current stage of the claim within the processing cycle involving the buyer and seller.",
-                "pt": "Indica a fase atual da reclamação dentro do ciclo de processamento que envolve o comprador e vendedor.",
-                "es": "Indica la fase actual del reclamo dentro del ciclo de procesamiento que involucra al comprador y al vendedor."
+                "en": "Indicates the current stage of the claim within the processing cycle involving the buyer and seller. It can take one of the following values:",
+                "pt": "Indica a fase atual da reclamação dentro do ciclo de processamento que envolve o comprador e vendedor. Pode assumir um dos seguintes valores:",
+                "es": "Indica la fase actual del reclamo dentro del ciclo de procesamiento que involucra al comprador y al vendedor. Puede tomar alguno de los siguientes valores:"
               },
               "enum": [
                 {
                   "title": "claim",
                   "description": {
                     "en": "Initial stage of the claim process in which both the buyer and seller are involved.",
-                    "es": "Fase inicial del proceso de reclamo en la que intervienen el comprador y el vendedor.",
-                    "pt": "Fase inicial do processo de reclamação na qual intervém o comprador e vendedor."
+                    "pt": "Fase inicial do processo de reclamação na qual intervém o comprador e vendedor.",
+                    "es": "Fase inicial del proceso de reclamo en la que intervienen el comprador y el vendedor."
                   }
                 },
                 {
                   "title": "dispute",
                   "description": {
                     "en": "Phase where the claim is under dispute or disagreement.",
-                    "es": "Fase donde el reclamo está en disputa o desacuerdo.",
-                    "pt": "Fase em que a reclamação está em disputa ou desacordo."
+                    "pt": "Fase em que a reclamação está em disputa ou desacordo.",
+                    "es": "Fase donde el reclamo está en disputa o desacuerdo."
                   }
                 },
                 {
                   "title": "recontact",
                   "description": {
                     "en": "Stage in which one of the parties makes contact after the claim/dispute has been closed.",
-                    "es": "Fase en la que alguna de las partes se contacta luego de cerrado el reclamo/disputa.",
-                    "pt": "Fase na qual uma das partes entra em contato após o encerramento da reclamação/disputa."
+                    "pt": "Fase na qual uma das partes entra em contato após o encerramento da reclamação/disputa.",
+                    "es": "Fase en la que alguna de las partes se contacta luego de cerrado el reclamo/disputa."
                   }
                 },
                 {
                   "title": "none",
                   "description": {
                     "en": "Indicates no specific stage is currently applicable.",
-                    "es": "Indica que no se aplica ninguna etapa específica.",
-                    "pt": "Indica que nenhuma etapa específica é aplicável."
+                    "pt": "Indica que nenhuma etapa específica é aplicável.",
+                    "es": "Indica que no se aplica ninguna etapa específica."
                   }
                 }
               ]
@@ -153,25 +153,25 @@
                 "example": "closed"
               },
               "description": {
-                "en": "Specifies the current state of the claim, indicating whether it is open or closed.",
-                "pt": "Especifica o estado atual da reclamação, indicando se está aberta ou fechada.",
-                "es": "Especifica el estado actual del reclamo, indicando si está abierto o cerrado."
+                "en": "Specifies the current state of the claim, indicating whether it is open or closed. It can take one of the following values:",
+                "pt": "Especifica o estado atual da reclamação, indicando se está aberta ou fechada. Pode assumir um dos seguintes valores:",
+                "es": "Especifica el estado actual del reclamo, indicando si está abierto o cerrado. Puede tomar alguno de los siguientes valores:"
               },
               "enum": [
                 {
                   "title": "opened",
                   "description": {
                     "en": "Indicates that the claim is open.",
-                    "es": "Indica que el reclamo está abierto.",
-                    "pt": "Indica que a reclamação está aberta."
+                    "pt": "Indica que a reclamação está aberta.",
+                    "es": "Indica que el reclamo está abierto."
                   }
                 },
                 {
                   "title": "closed",
                   "description": {
                     "en": "Indicates that the claim is closed.",
-                    "es": "Indica que el reclamo está cerrado.",
-                    "pt": "Indica que a reclamação está fechada."
+                    "pt": "Indica que a reclamação está fechada.",
+                    "es": "Indica que el reclamo está cerrado."
                   }
                 }
               ]
@@ -185,41 +185,41 @@
                 "example": "shipment"
               },
               "description": {
-                "en": "Identificador del recurso sobre el que se crea el reclamo. such as a payment, order, shipment, or purchase.",
-                "pt": "Identificador do recurso sobre o qual se cria a reclação, como um pagamento, pedido, envio ou compra.",
-                "es": "Identificador del recurso sobre el que se crea el reclamo, como un pago, pedido, envío o compra."
+                "en": "Identificador del recurso sobre el que se crea el reclamo, such as a payment, order, shipment, or purchase. It can take one of the following values:",
+                "pt": "Identificador do recurso sobre o qual se cria a reclação, como um pagamento, pedido, envio ou compra. Pode assumir um dos seguintes valores:",
+                "es": "Identificador del recurso sobre el que se crea el reclamo, como un pago, pedido, envío o compra. Puede tomar alguno de los siguientes valores:"
               },
               "enum": [
                 {
                   "title": "payment",
                   "description": {
                     "en": "Related to claims involving payment transactions.",
-                    "es": "Relacionado con reclamos que involucran transacciones de pago.",
-                    "pt": "Relacionado a reclamações envolvendo transações de pagamento."
+                    "pt": "Relacionado a reclamações envolvendo transações de pagamento.",
+                    "es": "Relacionado con reclamos que involucran transacciones de pago."
                   }
                 },
                 {
                   "title": "order",
                   "description": {
                     "en": "Pertains to claims arising from order processing issues.",
-                    "es": "Se refiere a reclamos surgidos de problemas en el procesamiento de pedidos.",
-                    "pt": "Refere-se a reclamações decorrentes de problemas no processamento de pedidos."
+                    "pt": "Refere-se a reclamações decorrentes de problemas no processamento de pedidos.",
+                    "es": "Se refiere a reclamos surgidos de problemas en el procesamiento de pedidos."
                   }
                 },
                 {
                   "title": "shipment",
                   "description": {
                     "en": "Concerns claims related to shipping or delivery matters.",
-                    "es": "Concierna a reclamos relacionados con asuntos de envío o entrega.",
-                    "pt": "Refere-se a reclamações relacionadas a questões de envio ou entrega."
+                    "pt": "Refere-se a reclamações relacionadas a questões de envio ou entrega.",
+                    "es": "Concierna a reclamos relacionados con asuntos de envío o entrega."
                   }
                 },
                 {
                   "title": "purchase",
                   "description": {
                     "en": "Involves claims associated with the purchase process.",
-                    "es": "Involucra reclamos asociados con el proceso de compra.",
-                    "pt": "Envolve reclamações associadas ao processo de compra."
+                    "pt": "Envolve reclamações associadas ao processo de compra.",
+                    "es": "Involucra reclamos asociados con el proceso de compra."
                   }
                 }
               ]
@@ -339,49 +339,49 @@
                               "type": "string",
                               "example": "mediations",
                               "description": {
-                                "en": "Indicates the type of claim. It can take one of the following values:",
-                                "pt": "Indica o tipo de reclamação. Pode assumir um dos seguintes valores:",
-                                "es": "Indica el tipo de reclamo. Puede tomar alguno de los siguientes valores:"
+                                "en": "Defines the nature of the claim being processed. It can take one of the following values:",
+                                "pt": "Define a natureza da reclamação em processamento. Pode assumir um dos seguintes valores:",
+                                "es": "Define la naturaleza del reclamo que se está procesando. Puede tomar alguno de los siguientes valores:"
                               },
                               "enum": [
                                 {
                                   "title": "mediations",
                                   "description": {
-                                    "en": "Mediation of the claim between buyer and seller.",
-                                    "pt": "Mediación del reclamo entre comprador y vendedor.",
-                                    "es": "Mediação da reclamação entre comprador e vendedor."
+                                    "en": "Refers to the process of mediating between parties in a claim.",
+                                    "pt": "Refere-se ao processo de mediação entre as partes em uma reclamação.",
+                                    "es": "Se refiere al proceso de mediación entre las partes en un reclamo."
                                   }
                                 },
                                 {
                                   "title": "cancel_purchase",
                                   "description": {
-                                    "en": "Buyer's cancellation of purchase.",
-                                    "pt": "Cancelación de compra por parte del comprador.",
-                                    "es": "Cancelamento de compra por parte do comprador."
+                                    "en": "Involves the process of cancelling a previously made purchase.",
+                                    "pt": "Envolve o processo de cancelar uma compra previamente realizada.",
+                                    "es": "Involucra el proceso de cancelar una compra previamente realizada."
                                   }
                                 },
                                 {
                                   "title": "return",
                                   "description": {
-                                    "en": "Product return. In this case, there are no messages.",
-                                    "pt": "Devolución de producto. En este caso, no hay mensajes.",
-                                    "es": "Devolução de produto. Neste caso, não há mensagens."
+                                    "en": "Pertains to the process of returning a purchased item.",
+                                    "pt": "Refere-se ao processo de devolução de um item comprado.",
+                                    "es": "Se refiere al proceso de devolver un artículo comprado."
                                   }
                                 },
                                 {
                                   "title": "cancel_sale",
                                   "description": {
-                                    "en": "Seller's cancellation of purchase. The stage will always be 'none', and the complainant's role will always be, depending on the resource, the type 'seller', 'collector', or 'sender'.",
-                                    "pt": "Cancelación de compra por parte del vendedor. El stage siempre va a ser 'none' y el rol complainant siempre va a ser el type seller, collector o sender dependiendo el resource.",
-                                    "es": "Cancelamento de compra por parte do vendedor. O stage sempre será 'none' e o papel do reclamante sempre será, dependendo do recurso, o tipo 'seller', 'collector' ou 'sender'."
+                                    "en": "oncerns the process of cancelling a sale that has been made.",
+                                    "pt": "Refere-se ao processo de cancelar uma venda realizada.",
+                                    "es": "Se ocupa del proceso de cancelar una venta realizada."
                                   }
                                 },
                                 {
                                   "title": "change",
                                   "description": {
-                                    "en": "Indicates that a product exchange will take place.",
-                                    "pt": "Indica que se va a realizar un cambio del producto.",
-                                    "es": "Indica que haverá uma troca do produto."
+                                    "en": "Refers to the alteration or modification of the details or status of a claim.",
+                                    "pt": "Refere-se à alteração ou modificação dos detalhes ou status de uma reclamação.",
+                                    "es": "Se refiere a la alteración o modificación de los detalles o el estado de un reclamo."
                                   }
                                 }
                               ]
@@ -390,41 +390,41 @@
                               "type": "string",
                               "example": "dispute",
                               "description": {
-                                "en": "Indicates the stage of the complaint. It can take one of the following values:",
-                                "pt": "Indica a etapa da reclamação. Pode assumir um dos seguintes valores:",
-                                "es": "Indica la etapa del reclamo. Puede tomar alguno de los siguientes valores:"
+                                "en": "Indicates the current stage of the claim within the processing cycle involving the buyer and seller. It can take one of the following values:",
+                                "pt": "Indica a fase atual da reclamação dentro do ciclo de processamento que envolve o comprador e vendedor. Pode assumir um dos seguintes valores:",
+                                "es": "Indica la fase actual del reclamo dentro del ciclo de procesamiento que involucra al comprador y al vendedor. Puede tomar alguno de los siguientes valores:"
                               },
                               "enum": [
                                 {
                                   "title": "claim",
                                   "description": {
-                                    "en": "Stage of complaint involving the buyer and the seller.",
-                                    "pt": "Estágio de reclamação onde intervenham o comprador e o vendedor.",
-                                    "es": "Etapa de reclamo donde intervienen el comprador y el vendedor."
+                                    "en": "Initial stage of the claim process in which both the buyer and seller are involved.",
+                                    "pt": "Fase inicial do processo de reclamação na qual intervém o comprador e vendedor.",
+                                    "es": "Fase inicial del proceso de reclamo en la que intervienen el comprador y el vendedor."
                                   }
                                 },
                                 {
                                   "title": "dispute",
                                   "description": {
-                                    "en": "Mediation stage involving a representative from Mercado Libre.",
-                                    "pt": "Estágio de mediação onde intervenha um representante do Mercado Livre.",
-                                    "es": "Etapa de mediación donde interviene un representante de Mercado Libre."
+                                    "en": "Phase where the claim is under dispute or disagreement.",
+                                    "pt": "Fase em que a reclamação está em disputa ou desacordo.",
+                                    "es": "Fase donde el reclamo está en disputa o desacuerdo."
                                   }
                                 },
                                 {
                                   "title": "recontact",
                                   "description": {
-                                    "en": "Stage in which either party contacts each other after the complaint/dispute is closed.",
-                                    "pt": "Estágio em que uma das partes entra em contato após o encerramento da reclamação/disputa.",
-                                    "es": "Etapa en la que alguna de las partes se contacta luego de cerrado el reclamo/disputa."
+                                    "en": "Stage in which one of the parties makes contact after the claim/dispute has been closed.",
+                                    "pt": "Fase na qual uma das partes entra em contato após o encerramento da reclamação/disputa.",
+                                    "es": "Fase en la que alguna de las partes se contacta luego de cerrado el reclamo/disputa."
                                   }
                                 },
                                 {
                                   "title": "none",
                                   "description": {
-                                    "en": "Not applicable.",
-                                    "pt": "No se aplica.",
-                                    "es": "No aplica."
+                                    "en": "Indicates no specific stage is currently applicable.",
+                                    "pt": "Indica que nenhuma etapa específica é aplicável.",
+                                    "es": "Indica que no se aplica ninguna etapa específica."
                                   }
                                 }
                               ]
@@ -433,10 +433,28 @@
                               "type": "string",
                               "example": "closed",
                               "description": {
-                                "en": "Claim status. It can take two values: 'opened' and 'closed'.",
-                                "pt": "Estado da reclamação. Pode assumir dois valores: 'opened' e 'closed'.",
-                                "es": "Estado del reclamo. Puede tomar dos valores: 'opened' y 'closed'."
-                              }
+                                "en": "Specifies the current state of the claim, indicating whether it is open or closed.",
+                                "pt": "Especifica o estado atual da reclamação, indicando se está aberta ou fechada.",
+                                "es": "Especifica el estado actual del reclamo, indicando si está abierto o cerrado."
+                              },
+                              "enum": [
+                                {
+                                  "title": "opened",
+                                  "description": {
+                                    "en": "Indicates that the claim is open.",
+                                    "pt": "Indica que a reclamação está aberta.",
+                                    "es": "Indica que el reclamo está abierto."
+                                  }
+                                },
+                                {
+                                  "title": "closed",
+                                  "description": {
+                                    "en": "Indicates that the claim is closed.",
+                                    "pt": "Indica que a reclamação está fechada.",
+                                    "es": "Indica que el reclamo está cerrado."
+                                  }
+                                }
+                              ]
                             },
                             "parent_id": {
                               "type": "string",
@@ -469,10 +487,44 @@
                               "type": "string",
                               "example": "shipment",
                               "description": {
-                                "en": "Identifier of the resource on which the claim is created. It can take the values: 'payment', 'order', 'shipment', or 'purchase'.",
-                                "pt": "Identificador do recurso sobre o qual a reclamação é criada. Pode ser: 'payment', 'order', 'shipment' ou 'purchase'.",
-                                "es": "Identificador del recurso sobre el que se crea el reclamo. Puede tomar los valores: 'payment', 'order', 'shipment' o 'purchase'."
-                              }
+                                "en": "Identificador del recurso sobre el que se crea el reclamo, such as a payment, order, shipment, or purchase.",
+                                "pt": "Identificador do recurso sobre o qual se cria a reclação, como um pagamento, pedido, envio ou compra.",
+                                "es": "Identificador del recurso sobre el que se crea el reclamo, como un pago, pedido, envío o compra."
+                              },
+                              "enum": [
+                                {
+                                  "title": "payment",
+                                  "description": {
+                                    "en": "Related to claims involving payment transactions.",
+                                    "pt": "Relacionado a reclamações envolvendo transações de pagamento.",
+                                    "es": "Relacionado con reclamos que involucran transacciones de pago."
+                                  }
+                                },
+                                {
+                                  "title": "order",
+                                  "description": {
+                                    "en": "Pertains to claims arising from order processing issues.",
+                                    "pt": "Refere-se a reclamações decorrentes de problemas no processamento de pedidos.",
+                                    "es": "Se refiere a reclamos surgidos de problemas en el procesamiento de pedidos."
+                                  }
+                                },
+                                {
+                                  "title": "shipment",
+                                  "description": {
+                                    "en": "Concerns claims related to shipping or delivery matters.",
+                                    "pt": "Refere-se a reclamações relacionadas a questões de envio ou entrega.",
+                                    "es": "Concierna a reclamos relacionados con asuntos de envío o entrega."
+                                  }
+                                },
+                                {
+                                  "title": "purchase",
+                                  "description": {
+                                    "en": "Involves claims associated with the purchase process.",
+                                    "pt": "Envolve reclamações associadas ao processo de compra.",
+                                    "es": "Involucra reclamos asociados con el proceso de compra."
+                                  }
+                                }
+                              ]
                             },
                             "reason_id": {
                               "type": "string",
