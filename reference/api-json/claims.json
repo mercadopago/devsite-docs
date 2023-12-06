@@ -306,7 +306,7 @@
                             "description": {
                               "en": "Number of claims found in the search.",
                               "pt": "Quantidade de reclamações encontradas na busca.",
-                              "es": "Cantidad de reclamos encontrados en la búsqueda"
+                              "es": "Cantidad de reclamos encontrados en la búsqueda."
                             }
                           }
                         }
@@ -349,7 +349,7 @@
                                     "es": "Cancelación de compra por parte del comprador.",
                                     "pt": "Cancelamento de compra por parte do comprador."
                                   }
-                                }
+                                },
                                 {
                                   "title": "return",
                                   "description": {
@@ -357,7 +357,7 @@
                                     "es": "Devolución de producto. En este caso, no hay mensajes.",
                                     "pt": "Devolução de produto. Neste caso, não há mensagens."
                                   }
-                                }
+                                },
                                 {
                                   "title": "cancel_sale",
                                   "description": {
@@ -365,7 +365,7 @@
                                     "es": "Cancelación de compra por parte del vendedor. El stage siempre va a ser 'none' y el rol complainant siempre va a ser el type seller, collector o sender dependiendo el resource.",
                                     "pt": "Cancelamento de compra por parte do vendedor. O stage sempre será 'none' e o papel do reclamante sempre será, dependendo do recurso, o tipo 'seller', 'collector' ou 'sender'."
                                   }
-                                }
+                                },
                                 {
                                   "title": "change",
                                   "description": {
