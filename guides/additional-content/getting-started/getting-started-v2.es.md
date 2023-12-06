@@ -14,9 +14,11 @@ Mercado Pago ofrece varias soluciones que te permiten **recibir pagos virtuales 
 bullet_section_with_media:
  - type: normal
  - title: Una cuenta, distintas oportunidades para integrar
- - message: **El primer paso para comenzar a integrar es tener una cuenta de Mercado Pago**. Si no tienes una cuenta de Mercado Pago, ----[mlb]----[haz clic aquí](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[haz clic aquí](https://www.mercadopago.com.ar/hub/registration/landing) ------------  ----[mlm]----[haz clic aquí](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[haz clic aquí](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[clic aquí](https://www.mercadopago.com.co/hub/registration/landing) ------------ ----[mlu]----[haz clic aquí](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[haz clic aquí](https://www.mercadopago.cl/hub/registration/landing) ------------ para crearla gratis.
+ - message: El primer paso para comenzar a integrar es tener una cuenta de Mercado Pago. 
  - image: /getting-started/woman-mobile-dev.png
 ---
+
+#### Si no tienes una cuenta de Mercado Pago, ----[mlb]----[haz clic aquí](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[haz clic aquí](https://www.mercadopago.com.ar/hub/registration/landing) ------------  ----[mlm]----[haz clic aquí](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[haz clic aquí](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[clic aquí](https://www.mercadopago.com.co/hub/registration/landing) ------------ ----[mlu]----[haz clic aquí](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[haz clic aquí](https://www.mercadopago.cl/hub/registration/landing) ------------ para crearla gratis.
 
 > NOTE
 >
@@ -32,13 +34,17 @@ Con la cuenta ya activa, tienes acceso [Tus integraciones](https://www.mercadopa
 bullet_section_with_media:
  - title: Credenciales
  - type: reverse
- - message: Las credenciales son contraseñas exclusivas utilizadas para identificar una integración en tu cuenta. Desempeñan un papel fundamental en la captura segura de pagos en tiendas en línea y otras aplicaciones. Puedes encontrarlas en **Detalles de la aplicación > Credenciales** dentro del [Panel del desarrollador](/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
+ - message: Las credenciales son contraseñas exclusivas utilizadas para identificar una integración en tu cuenta. Desempeñan un papel fundamental en la captura segura de pagos en tiendas en línea y otras aplicaciones.
  - image: /getting-started/woman-male-dev.png
 ---
 
-## Conoce los productos
+Puedes encontrar las credenciales en **Detalles de la aplicación > Credenciales** dentro del [Panel del desarrollador](/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
+
+# Conoce los productos
 
 Conoce cuáles son las principales ventajas de los productos de Mercado Pago y encuentra la mejor solución para tu negocio.
+
+![Getting started](/images/getting-started/getting-started-diagram2-es.png)
 
 ## Procesa pagos online
 
@@ -51,7 +57,7 @@ Conoce cuáles son las principales ventajas de los productos de Mercado Pago y e
 | [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) | Una solución de pagos modular, segura y personalizable, en donde tú controlas la experiencia completa y eliges qué brick y diseño utilizar según las necesidades de tu sitio. | 🔵🔵🔵⚪⚪   |
 | [Wallet Connect](/developers/es/docs/wallet-connect/landing) | Procesa los pagos de forma automática a través de la billetera digital de Mercado Pago. Con Wallet Connect es posible realizar pagos utilizando el saldo disponible en la cuenta Mercado Pago o tarjetas. | 🔵🔵🔵⚪⚪   |
 
-### Ofrece pagos presenciales
+## Ofrece pagos presenciales
 
 | Producto | Descripción | Dificultad de integración |
 |---|---|---|
@@ -59,7 +65,7 @@ Conoce cuáles son las principales ventajas de los productos de Mercado Pago y e
 | [Point de Mercado Pago](https://www.mercadopago.com.ar/developers/es/docs/mp-point/landing) | Integra el Point de Mercado Pago y conecta el lector de tarjeta a cualquier sistema IOS o Android para aceptar pagos en caja. | 🔵🔵🔵⚪⚪   |
 | [Mercado Pago Delivery](/developers/es/docs/payment-link/intro-button) | Una solución de entrega de comidas a demanda, en la que el cliente accede a un listado de restaurantes registrados, realiza su pedido y paga directamente a través de la app de Mercado Pago. | 🔵🔵⚪⚪⚪  |
 
-### Procesa pagos en plataformas de e-commerce
+## Procesa pagos en plataformas de e-commerce
 
 ¿Quieres utilizar una plataforma de e-commerce? Instala el Checkout Pro o el Checkout API en tu tienda y comienza a ofrecer pagos con Mercado Pago.
 
@@ -101,14 +107,19 @@ Conoce la disponibilidad de nuestros productos por plataforma en cada país:
 
 ------------
 
-
-![Getting started](/images/getting-started/getting-started-diagram2-es.png)
-
-> Para obtener detalles sobre los medios de pago aceptados en cada país, consulte la lista completa con [disponibilidad de medios de pago.](/developers/es/docs/sales-processing/payment-methods) 
+> Para obtener detalles sobre los medios de pago aceptados en cada país, consulta la lista completa con [disponibilidad de medios de pago.](/developers/es/docs/sales-processing/payment-methods) 
 
 
-
-
+---
+future_product_avaible: 
+ - card_avaible: true
+ - card_icon: Loading
+ - card_title: Comienza a integrar
+ - card_description: Elige el producto que se ajuste a tus necesidades y comienza a integrar. Regresa a la landing de documentación.
+ - card_link: /developers/en/docs
+ - card_linkDescription: Volver a la documentación
+ - card_pillText:
+---
 
 
 
