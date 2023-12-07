@@ -962,9 +962,9 @@
                           "type": "string",
                           "example": "available",
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "Estado del mensaje (available - moderated - rejected - pending_translation)"
+                            "en": "Displays the status of the message associated with the claim. It can take one of the following values: 'available', 'moderated', 'rejected', 'pending_translation'.",
+                            "pt": "Apresenta o estado em que se encontra a mensagem associada à reclamação. Pode assumir um dos seguintes valores: 'available', 'moderated', 'rejected', 'pending_translation'.",
+                            "es": "Muestra el estado en que se encuentra el mensaje asociado al reclamo. Puede tomar alguno de los siguientes valores: 'available', 'moderated', 'rejected', 'pending_translation'."
                           }
                         },
                         "moderation": {
