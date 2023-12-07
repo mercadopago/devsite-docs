@@ -7,8 +7,8 @@
           "mp-point"
         ],
         "description": {
-          "en": "This endpoint allows to create a payment intent, which is a call that contains all the details of a transaction, and assign it to a device",
-          "pt": "Este endpoint permite que você crie uma intenção de pagamento, ou seja, uma chamada que contém os detalhes de uma transação a ser realizada e atribuí-la a um dispositivo",
+          "en": "This endpoint allows to create a payment intent, which is a call that contains all the details of a transaction, and assign it to a device.",
+          "pt": "Este endpoint permite que você crie uma intenção de pagamento, ou seja, uma chamada que contém os detalhes de uma transação a ser realizada e atribuí-la a um dispositivo.",
           "es": "Este endpoint permite crear una intención de pago, es decir, un llamado que contiene los detalles de una transacción a realizarse, y asignarla a un dispositivo."
         },
         "parameters": [

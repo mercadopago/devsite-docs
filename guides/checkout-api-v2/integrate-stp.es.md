@@ -1,6 +1,6 @@
 # Transferencias SPEI
 
-Con el Checkout API de Mercado Pago puedes ofrecer pagos a través de **Transferências SPEI**. Este servicio permite realizar pagos desde cualquier banco o institución financiera utilizando tu CLABE **(Clave Bancaria Estandarizada)**.
+Con el Checkout API de Mercado Pago puedes ofrecer pagos a través de **Transferencias SPEI**. Este servicio permite realizar pagos desde cualquier banco o institución financiera utilizando tu CLABE **(Clave Bancaria Estandarizada)**.
 
 Para una lista detallada de todos los medios de pago disponibles para integración, envía un **GET** con tu `access_token` al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) y ejecuta la solicitud o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.
 
