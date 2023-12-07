@@ -7,9 +7,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": "This endpoint allows searching, through a valid token, which claims belong to a certain user",
-            "pt": "Este endpoint permite buscar, por meio de um token válido, quais reclamações pertencem a determinado usuário",
-            "es": "Este endpoint permite buscar, mediante un token válido, qué reclamos pertenecen a un usuario determinado"
+            "en": "This endpoint allows searching, through a valid token, which claims belong to a certain user.",
+            "pt": "Este endpoint permite buscar, por meio de um token válido, quais reclamações pertencem a determinado usuário.",
+            "es": "Este endpoint permite buscar, mediante un token válido, qué reclamos pertenecen a un usuario determinado."
           },
           "parameters": [
             {
@@ -853,9 +853,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": "\".\"",
-            "pt": "\".\"",
-            "es": "Para recuperar los mensajes asociados a un reclamo"
+            "en": "This endpoint allows searching, through a valid token, messages associated with a claim.",
+            "pt": "Este endpoint permite buscar, por meio de um token válido, as mensagens associados a uma reclamação.",
+            "es": "Este endpoint permite buscar, mediante un token válido, los mensajes asociados a un reclamo."
           },
           "parameters": [
             {
@@ -876,9 +876,9 @@
           "responses": {
             "200": {
               "description": {
-                "es": "Success",
-                "pt": "Sucesso",
-                "en": "Éxito"
+                "es": "Success.",
+                "pt": "Sucesso.",
+                "en": "Éxito."
               },
               "content": {
                 "application/json": {
@@ -891,18 +891,18 @@
                           "type": "string",
                           "example": "complainant",
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "Player que envió el mensaje."
+                            "en": "Person who sent the message associated with the claim.",
+                            "pt": "Pessoa que enviou a mensagem que está associada à reclamação.",
+                            "es": "Persona que envió el mensaje asociado a la reclamación."
                           }
                         },
                         "receiver_role": {
                           "type": "string",
                           "example": "respondent",
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "Player hacia quién va dirigido el mensaje."
+                            "en": "Person to whom the message associated with the complaint was sent.",
+                            "pt": "Pessoa para quem a mensagem associada à reclamação foi enviada.",
+                            "es": "Persona a la que se envió el mensaje asociado al reclamo."
                           }
                         },
                         "attachments": {
@@ -932,27 +932,27 @@
                                 "type": "number",
                                 "example": 1880609,
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": "Tamaño del archivo en bytes"
+                                  "en": "Size (in bytes) of the file attached to the message associated with the claim.",
+                                  "pt": "Tamanho (em bytes) do arquivo anexado à mensagem associada à reclamação.",
+                                  "es": "Tamaño (en bytes) del archivo adjunto al mensaje asociado al reclamo"
                                 }
                               },
                               "type": {
                                 "type": "string",
                                 "example": "image/jpeg",
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": "Tipo del archivo"
+                                  "en": "Type of file attached to the message associated with the claim.",
+                                  "pt": "Tipo do arquivo anexado à mensagem associada à reclamação.",
+                                  "es": "Tipo de archivo adjunto al mensaje asociado al reclamo."
                                 }
                               },
                               "date_created": {
                                 "type": "string",
                                 "example": "2020-07-22T20:43:15.000-04:00",
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": "Fecha de carga del adjunto"
+                                  "en": "Date when the file was attached to the message associated with the complaint.",
+                                  "pt": "Data em que o arquivo foi anexado à mensagem que está associada à reclamação.",
+                                  "es": "Fecha en que se adjuntó el archivo al mensaje que está asociado al reclamo."
                                 }
                               }
                             }
@@ -974,35 +974,69 @@
                               "type": "string",
                               "example": "clean",
                               "description": {
-                                "en": ".",
-                                "pt": ".",
-                                "es": "Resultado del proceso de moderación. Posibles valores: clean: el mensaje está limpio. rejected: el mensaje fue moderado. pending: la moderación está en proceso. non_moderated: no aplicó la moderación. Por ejemplo: casos antiguos."
-                              }
+                                "en": ".It can take one of the following values:",
+                                "pt": "Resultado do processo de moderação da mensagem. Pode assumir um dos seguintes valores:",
+                                "es": "Resultado del proceso de moderación. Puede tomar alguno de los siguientes valores:"
+                              },
+                              "enum": [
+                                {
+                                  "title": "clean",
+                                  "description": {
+                                    "en": ".",
+                                    "pt": ".",
+                                    "es": "el mensaje está limpio."
+                                  }
+                                },
+                                {
+                                  "title": "rejected",
+                                  "description": {
+                                    "en": ".",
+                                    "pt": ".",
+                                    "es": "el mensaje fue moderado."
+                                  }
+                                },
+                                {
+                                  "title": "pending",
+                                  "description": {
+                                    "en": ".",
+                                    "pt": ".",
+                                    "es": "la moderación está en proceso."
+                                  }
+                                },
+                                {
+                                  "title": "non_moderated",
+                                  "description": {
+                                    "en": ".",
+                                    "pt": ".",
+                                    "es": "no aplicó la moderación. Por ejemplo: casos antiguos."
+                                  }
+                                }
+                              ]
                             },
                             "reason": {
                               "type": "string",
                               "example": "",
                               "description": {
-                                "en": ".",
-                                "pt": ".",
-                                "es": "Razón por la cual se moderó el mensaje. Actualmente, esta moderación puede ser por lenguaje inapropiado"
+                                "en": "Reason for moderating the message. Currently, this moderation can be due to inappropriate language.",
+                                "pt": "Razão pela qual a mensagem foi moderada. Atualmente, essa moderação pode ser devido a linguagem inadequada.",
+                                "es": "Razón por la cual se moderó el mensaje. Actualmente, esta moderación puede ser por lenguaje inapropiado."
                               }
                             },
                             "source": {
                               "type": "string",
                               "example": "online",
                               "description": {
-                                "en": ".",
-                                "pt": ".",
-                                "es": "Modalidad de la moderación. Posibles valores: online: se modera durante la instancia de creación del mensaje. Única modalidad actualmente."
+                                "en": "Displays the moderation mode. Currently, the only available mode is 'online,' where the message is moderated during its creation.",
+                                "pt": "Exibe a modalidade da moderação. Atualmente, a única modalidade disponível é a 'online', em que se modera a mensagem durante a sua criação.",
+                                "es": "Muestra la modalidad de moderación. Actualmente, la única modalidad disponible es la 'online', en la que se modera el mensaje durante su creación."
                               }
                             },
                             "date_moderated": {
                               "type": "string",
                               "example": "2023-02-01T20:13:50Z",
                               "description": {
-                                "en": ".",
-                                "pt": ".",
+                                "en": "Date when the moderation information was impacted.",
+                                "pt": "Data em que a informação de moderação foi impactada.",
                                 "es": "Fecha en que se impactó la información de moderación."
                               }
                             },
@@ -1010,27 +1044,61 @@
                               "type": "string",
                               "example": "claim",
                               "description": {
-                                "en": ".",
-                                "pt": ".",
-                                "es": "Etapa en la que se encontraba el reclamo al momento en que se envió el mensaje."
-                              }
+                                "en": "Stage at which the claim was at the time the message was sent. It can take one of the following values:",
+                                "pt": "Estágio em que a reclamação se encontrava no momento em que a mensagem foi enviada. Pode assumir um dos seguintes valores:",
+                                "es": "Etapa en la que se encontraba el reclamo al momento en que se envió el mensaje. Puede tomar alguno de los siguientes valores:"
+                                },
+                              "enum": [
+                                {
+                                  "title": "claim",
+                                  "description": {
+                                    "en": "Initial stage of the claim process in which both the buyer and seller are involved.",
+                                    "pt": "Fase inicial do processo de reclamação na qual intervém o comprador e vendedor.",
+                                    "es": "Fase inicial del proceso de reclamo en la que intervienen el comprador y el vendedor."
+                                  }
+                                },
+                                {
+                                  "title": "dispute",
+                                  "description": {
+                                    "en": "Phase where the claim is under dispute or disagreement.",
+                                    "pt": "Fase em que a reclamação está em disputa ou desacordo.",
+                                    "es": "Fase donde el reclamo está en disputa o desacuerdo."
+                                  }
+                                },
+                                {
+                                  "title": "recontact",
+                                  "description": {
+                                    "en": "Stage in which one of the parties makes contact after the claim/dispute has been closed.",
+                                    "pt": "Fase na qual uma das partes entra em contato após o encerramento da reclamação/disputa.",
+                                    "es": "Fase en la que alguna de las partes se contacta luego de cerrado el reclamo/disputa."
+                                  }
+                                },
+                                {
+                                  "title": "none",
+                                  "description": {
+                                    "en": "Indicates no specific stage is currently applicable.",
+                                    "pt": "Indica que nenhuma etapa específica é aplicável.",
+                                    "es": "Indica que no se aplica ninguna etapa específica."
+                                  }
+                                }
+                              ]
                             },
                             "date_created": {
                               "type": "string",
                               "example": "2020-07-22T20:43:15.000-04:00",
                               "description": {
-                                "en": ".",
-                                "pt": ".",
-                                "es": "Fecha en la que se creó el mensaje"
+                                "en": "Date the message was created.",
+                                "pt": "Data em que a mensagem foi criada.",
+                                "es": "Fecha en la que se creó el mensaje."
                               }
                             },
                             "message": {
                               "type": "string",
                               "example": "Boa noite! A tampa veio com uma rachadura. Gostaria de anexar foto",
                               "description": {
-                                "en": ".",
-                                "pt": ".",
-                                "es": "Texto del mensaje."
+                                "en": "Displays the message text associated with the complaim.",
+                                "pt": "Exibe o texto da mensagem associada à reclamação.",
+                                "es": "Presenta el texto del mensaje asociado con lo reclamo."
                               }
                             }
                           }
@@ -1043,9 +1111,9 @@
             }
           },
           "title": {
-            "en": ".",
-            "pt": ".",
-            "es": "Obtener todos los mensajes de un reclamo"
+            "en": "Get claim messages",
+            "pt": "Obter mensagens da reclamação",
+            "es": "Obtener mensajes del reclamo"
           }
         }
       },
