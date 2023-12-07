@@ -7,9 +7,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": "This endpoint allows searching, through a valid token, which claims belong to a certain user.",
-            "pt": "Este endpoint permite buscar, por meio de um token válido, quais reclamações pertencem a determinado usuário.",
-            "es": "Este endpoint permite buscar, mediante un token válido, qué reclamos pertenecen a un usuario determinado."
+            "en": "This endpoint allows searching, through a valid token, which claims belong to a certain user",
+            "pt": "Este endpoint permite buscar, por meio de um token válido, quais reclamações pertencem a determinado usuário",
+            "es": "Este endpoint permite buscar, mediante un token válido, qué reclamos pertenecen a un usuario determinado"
           },
           "parameters": [
             {
@@ -853,9 +853,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": "This endpoint allows searching, through a valid token, messages associated with a claim.",
-            "pt": "Este endpoint permite buscar, por meio de um token válido, as mensagens associados a uma reclamação.",
-            "es": "Este endpoint permite buscar, mediante un token válido, los mensajes asociados a un reclamo."
+            "en": "This endpoint allows searching, through a valid token, messages associated with a claim",
+            "pt": "Este endpoint permite buscar, por meio de um token válido, as mensagens associados a uma reclamação",
+            "es": "Este endpoint permite buscar, mediante un token válido, los mensajes asociados a un reclamo"
           },
           "parameters": [
             {
@@ -915,17 +915,17 @@
                                 "example": "8007ee20-be67-471f-9e59-e32d9ba02fae_239628932.jpeg",
                                 "description": {
                                   "en": "Current name of the attached file",
-                                  "pt": ".",
-                                  "es": "."
+                                  "pt": "Nome atual do arquivo anexado.",
+                                  "es": "Nombre actual del archivo adjunto."
                                 }
                               },
                               "original_filename": {
                                 "type": "string",
                                 "example": "F8FB05C5-1D67-4B99-8E7D-3FE1EB3DBEBC.jpeg",
                                 "description": {
-                                  "en": "Original name of the attached file",
-                                  "pt": ".",
-                                  "es": "."
+                                  "en": "Original name of the file attached to the message associated with the claim.",
+                                  "pt": "Nome original do arquivo anexado à mensagem associada à reclamação.",
+                                  "es": "Nombre original del archivo adjunto al mensaje asociado al reclamo."
                                 }
                               },
                               "size": {
@@ -934,7 +934,7 @@
                                 "description": {
                                   "en": "Size (in bytes) of the file attached to the message associated with the claim.",
                                   "pt": "Tamanho (em bytes) do arquivo anexado à mensagem associada à reclamação.",
-                                  "es": "Tamaño (en bytes) del archivo adjunto al mensaje asociado al reclamo"
+                                  "es": "Tamaño (en bytes) del archivo adjunto al mensaje asociado al reclamo."
                                 }
                               },
                               "type": {
@@ -974,41 +974,41 @@
                               "type": "string",
                               "example": "clean",
                               "description": {
-                                "en": ".It can take one of the following values:",
+                                "en": "Result of the message moderation process. It can take one of the following values:",
                                 "pt": "Resultado do processo de moderação da mensagem. Pode assumir um dos seguintes valores:",
-                                "es": "Resultado del proceso de moderación. Puede tomar alguno de los siguientes valores:"
+                                "es": "Resultado del proceso de moderación de mensajes. Puede tomar alguno de los siguientes valores:"
                               },
                               "enum": [
                                 {
                                   "title": "clean",
                                   "description": {
-                                    "en": ".",
-                                    "pt": ".",
-                                    "es": "el mensaje está limpio."
+                                    "en": "Indicates that the message is clean, without information.",
+                                    "pt": "Indica que a mensagem está limpa, sem informações.",
+                                    "es": "Indica que el mensaje está limpio, sin información."
                                   }
                                 },
                                 {
                                   "title": "rejected",
                                   "description": {
-                                    "en": ".",
-                                    "pt": ".",
-                                    "es": "el mensaje fue moderado."
+                                    "en": "Indicates that the message has been moderated.",
+                                    "pt": "Indica que a mensagem foi moderada.",
+                                    "es": "Indica que el mensaje ha sido moderado."
                                   }
                                 },
                                 {
                                   "title": "pending",
                                   "description": {
-                                    "en": ".",
-                                    "pt": ".",
-                                    "es": "la moderación está en proceso."
+                                    "en": "Indicates that message moderation is in progress.",
+                                    "pt": "Indica que a moderação da mensagem está em processo.",
+                                    "es": "Indica que la moderación del mensaje está en proceso."
                                   }
                                 },
                                 {
                                   "title": "non_moderated",
                                   "description": {
-                                    "en": ".",
-                                    "pt": ".",
-                                    "es": "no aplicó la moderación. Por ejemplo: casos antiguos."
+                                    "en": "Indicates that the message has not been moderated. For example: cases of old messages.",
+                                    "pt": "Indica que a mensagem não foi moderada. Por exemplo: casos de mensagens antigas.",
+                                    "es": "Indica que el mensaje no ha sido moderado. Por ejemplo: casos de mensajes antiguos."
                                   }
                                 }
                               ]
@@ -2194,9 +2194,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": "This endpoint allows you to view, through a valid token, the history of states and scenarios that the complaint has gone through. It will also be possible to consult the history of actions taken by the people responsible for the complaint.",
-            "pt": "Este endpoint permite visualizar, por meio de um token válido, o histórico de estados e cenários pelos quais a reclamação passou. Também será possível consultar o histórico de ações tomadas pelas pessoas responsáveis pela reclamação.",
-            "es": "Este endpoint permite visualizar, a través de un token válido, el historial de estados y escenarios por los que ha pasado el reclamo. También será posible consultar el historial de acciones tomadas por los responsables del reclamo."
+            "en": "This endpoint allows you to view, through a valid token, the history of states and scenarios that the complaint has gone through. It will also be possible to consult the history of actions taken by the people responsible for the complaint",
+            "pt": "Este endpoint permite visualizar, por meio de um token válido, o histórico de estados e cenários pelos quais a reclamação passou. Também será possível consultar o histórico de ações tomadas pelas pessoas responsáveis pela reclamação",
+            "es": "Este endpoint permite visualizar, a través de un token válido, el historial de estados y escenarios por los que ha pasado el reclamo. También será posible consultar el historial de acciones tomadas por los responsables del reclamo"
           },
           "parameters": [
             {
@@ -2362,9 +2362,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": "This endpoint allows you to view, through a valid token, the 'reason' why the claim was created, so that based on its classification, certain behaviors are allowed. A claim can be created for three general reasons: PNR (Product not received), PDD (Different or defective product) or CS (Purchase cancellation).",
-            "pt": "Este endpoint permite visualizar, a través de un token válido, o motivo ('reason') pelo qual uma reclamação foi criada, de forma que com base na sua classificação sejam permitidos determinados comportamentos. Uma reclamação pode ser criada por três motivos gerais: PNR (Produto não recebido), PDD (Produto diferente ou defeituoso) ou CS (Cancelamento de compra).",
-            "es": "Este endpoint permite visualizar, mediante un token válido, el motivo ('reason') por el cual se ha creado un reclamo, de manera que en base a su tipificación se permiten determinados comportamientos. Se puede crear un reclamo por tres motivos generales: PNR (Producto no recibido), PDD (Producto diferente o defectuoso) o CS (Cancelación de la compra)."
+            "en": "This endpoint allows you to view, through a valid token, the 'reason' why the claim was created, so that based on its classification, certain behaviors are allowed. A claim can be created for three general reasons: PNR (Product not received), PDD (Different or defective product) or CS (Purchase cancellation)",
+            "pt": "Este endpoint permite visualizar, a través de un token válido, o motivo ('reason') pelo qual uma reclamação foi criada, de forma que com base na sua classificação sejam permitidos determinados comportamentos. Uma reclamação pode ser criada por três motivos gerais: PNR (Produto não recebido), PDD (Produto diferente ou defeituoso) ou CS (Cancelamento de compra)",
+            "es": "Este endpoint permite visualizar, mediante un token válido, el motivo ('reason') por el cual se ha creado un reclamo, de manera que en base a su tipificación se permiten determinados comportamientos. Se puede crear un reclamo por tres motivos generales: PNR (Producto no recibido), PDD (Producto diferente o defectuoso) o CS (Cancelación de la compra)"
           },
           "parameters": [
             {
@@ -2572,9 +2572,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": "Using the 'resource' field of the 'data' parameter of the news received from the topic, you can perform a 'get' to the claim resource.",
-            "pt": "Utilizando o campo 'resource' do parâmetro 'data' das notícias recebidas do tópico, você pode realizar um 'get' ao recurso de reclamações.",
-            "es": "Utilizando el campo 'resource' del parâmetro 'data' de la novedad recibida del tópico, podrás realizar un 'get' al recurso de reclamo."
+            "en": "Using the 'resource' field of the 'data' parameter of the news received from the topic, you can perform a 'get' to the claim resource",
+            "pt": "Utilizando o campo 'resource' do parâmetro 'data' das notícias recebidas do tópico, você pode realizar um 'get' ao recurso de reclamações",
+            "es": "Utilizando el campo 'resource' del parâmetro 'data' de la novedad recibida del tópico, podrás realizar un 'get' al recurso de reclamo"
           },
           "parameters": [
             {
@@ -2602,9 +2602,9 @@
             }
           },
           "title": {
-            "en": "Claim notifications.",
-            "pt": "Notificações de reclamações.",
-            "es": "Notificaciones de reclamos."
+            "en": "Get claim notifications",
+            "pt": "Obter notificações de reclamos",
+            "es": "Obtener notificaciones del reclamo"
           }
         }
       }
