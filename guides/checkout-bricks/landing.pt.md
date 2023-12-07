@@ -200,4 +200,12 @@ available_payments: credit, debit, mercadopago, atm
 ---
 ------------
 
+---
+anchored_menu: 
+ - title: Card Payment Brick
+ - link: /developers/es/live-demo/card-payment-brick
+ - title: Payment Brick
+ - link: /developers/es/live-demo/payment-brick
+---
+
 > Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.](/developers/pt/docs/sales-processing/payment-methods)
