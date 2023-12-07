@@ -4,7 +4,8 @@
     "/v1/customers/{customer_id}/cards": {
       "get": {
         "tags": [
-          "checkout-api"
+          "checkout-api",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Consult a client's saved cards in order to be able to show them when making a payment.",
@@ -716,7 +717,8 @@
       "post": {
         "tags": [
           "checkout-pro",
-          "checkout-api"
+          "checkout-api",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Store the card reference used by the customer in the payment securely on our servers to avoid asking for all the data in future transactions",
@@ -1443,7 +1445,8 @@
       "get": {
         "tags": [
           "checkout-pro",
-          "checkout-api"
+          "checkout-api",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Check the reference information for a saved card associated with a customer",
@@ -2166,7 +2169,8 @@
       "put": {
         "tags": [
           "checkout-pro",
-          "checkout-api"
+          "checkout-api",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Renew the details of a card associated with a customer. Indicate the IDs and send the parameters with the information you want to update",

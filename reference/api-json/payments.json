@@ -7,7 +7,8 @@
           "checkout-pro",
           "mobile-checkout",
           "subscriptions",
-          "checkout-api"
+          "checkout-api",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Create a payment and add all the information you need. Remember to add the payment details and the payer's information",
@@ -18,15 +19,15 @@
           {
             "in": "header",
             "name": "X-Idempotency-Key",
-            "required": true,
+            "required": false,
             "schema": {
               "type": "string",
               "example": "0d5020ed-1af6-469c-ae06-c3bec19954bb"
             },
             "description": {
-              "en": "This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments, for example. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings. It is important to consider that this field is only mandatory for integrations carried out after 01/11/2023.",
-              "pt": "Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos, por exemplo. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas. É importante considerar que este campo somente é obrigatório para integrações realizadas após 01/11/2023.",
-              "es": "Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos, por ejemplo. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el header de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorias. Es importante considerar que este campo solo es obligatorio para integraciones realizadas después del 01/11/2023"
+              "en": "This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments, for example. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings. It is important to note that, starting from 12/01, sending this parameter will become mandatory in all requests.",
+              "pt": "Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos, por exemplo. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas. É importante saliente que, a partir de 01/12, o envio deste parâmetro passará a ser obrigatório em todas as requisições.",
+              "es": "Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos, por ejemplo. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el header de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorias. Es importante destacar que, a partir del 01/12, el envío de este parámetro se volverá obligatorio en todas las solicitudes."
             }
           }
         ],
@@ -628,9 +629,9 @@
                   "notification_url": {
                     "type": "string",
                     "description": {
-                      "en": "Notifications URL available to receive notifications of events related to Payment.",
-                      "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento.",
-                      "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago."
+                      "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
+                      "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
+                      "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
                     }
                   },
                   "payer": {
@@ -797,9 +798,9 @@
                   "payment_method_id": {
                     "type": "string",
                     "description": {
-                      "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples.",
-                      "pt": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos.",
-                      "es": "Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago."
+                      "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples. Get all available payment methods by consulting the 'Get payment Methods API'.",
+                      "pt": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos. Obtenha todos os meios de pagamento disponíveis consultando a API de 'Obter meios de pagamento'.",
+                      "es": "Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago. A continuación presentamos algunos ejemplos. Obtén todos los métodos de pago disponibles consultando la API de 'Obtener métodos de pago'."
                     },
                     "enum": [
                       {
@@ -940,9 +941,9 @@
                       "type": "string",
                       "example": "2019-07-24T14:47:58.000Z",
                       "description": {
-                        "en": "Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).",
-                        "pt": "Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).",
-                        "es": "Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago)."
+                        "en": "Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment). The field can take on the values “pending” or “released”, where the first indicates that the payment has not yet been released (money held for a period) and “released” means that the money has already been released to the user's available balance.",
+                        "pt": "Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento). O campo pode assumir os valores “pending” ou “released”, sendo que o primeiro indica que o pagamento ainda não foi liberado (dinheiro retido por tempo) e “released” significa que o dinheiro já foi liberado para o saldo disponível do usuário.",
+                        "es": "Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago). El campo puede tomar los valores “pending” o “released”, siendo que el primero indica que el pago todavía no fue liberado (dinero retenido por tiempo) y “released” significa que el dinero ya fue liberado al disponible del usuario."
                       }
                     },
                     "operation_type": {
@@ -1784,9 +1785,9 @@
                       "type": "string",
                       "example": "https://www.suaurl.com/notificacoes/",
                       "description": {
-                        "en": "Notifications URL available to receive notifications of events related to Payment.",
-                        "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento.",
-                        "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago."
+                        "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
+                        "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
+                        "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
                       }
                     },
                     "processing_mode": {
@@ -2790,9 +2791,9 @@
                       "type": "string",
                       "example": "2017-09-14T11:26:38.000Z",
                       "description": {
-                        "en": "Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).",
-                        "pt": "Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).",
-                        "es": "Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago)."
+                        "en": "Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment). The field can take on the values “pending” or “released”, where the first indicates that the payment has not yet been released (money held for a period) and “released” means that the money has already been released to the user's available balance.",
+                        "pt": "Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento). O campo pode assumir os valores “pending” ou “released”, sendo que o primeiro indica que o pagamento ainda não foi liberado (dinheiro retido por tempo) e “released” significa que o dinheiro já foi liberado para o saldo disponível do usuário.",
+                        "es": "Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago). El campo puede tomar los valores “pending” o “released”, siendo que el primero indica que el pago todavía no fue liberado (dinero retenido por tiempo) y “released” significa que el dinero ya fue liberado al disponible del usuario."
                       }
                     },
                     "operation_type": {
@@ -2811,9 +2812,9 @@
                       "type": "string",
                       "example": "account_money",
                       "description": {
-                        "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples.",
-                        "pt": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos.",
-                        "es": "Indica el identificador del medio de pago seleccionado para realizarlo. A continuación presentamos algunos ejemplos."
+                        "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples. Get all available payment methods by consulting the 'Get payment Methods API'.",
+                        "pt": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos. Obtenha todos os meios de pagamento disponíveis consultando a API de 'Obter meios de pagamento'.",
+                        "es": "Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago. A continuación presentamos algunos ejemplos. Obtén todos los métodos de pago disponibles consultando la API de 'Obtener métodos de pago'."
                       },
                       "enum": [
                         {
@@ -4120,9 +4121,9 @@
                       "type": "string",
                       "example": "2019-07-24T14:47:58.000Z",
                       "description": {
-                        "en": "Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).",
-                        "pt": "Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).",
-                        "es": "Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago)."
+                        "en": "Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment). The field can take on the values “pending” or “released”, where the first indicates that the payment has not yet been released (money held for a period) and “released” means that the money has already been released to the user's available balance.",
+                        "pt": "Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento). O campo pode assumir os valores “pending” ou “released”, sendo que o primeiro indica que o pagamento ainda não foi liberado (dinheiro retido por tempo) e “released” significa que o dinheiro já foi liberado para o saldo disponível do usuário.",
+                        "es": "Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago). El campo puede tomar los valores “pending” o “released”, siendo que el primero indica que el pago todavía no fue liberado (dinero retenido por tiempo) y “released” significa que el dinero ya fue liberado al disponible del usuario."
                       }
                     },
                     "operation_type": {
@@ -4141,9 +4142,9 @@
                       "type": "string",
                       "example": "visa",
                       "description": {
-                        "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples.",
-                        "pt": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos.",
-                        "es": "Indica el identificador del medio de pago seleccionado para realizarlo. A continuación presentamos algunos ejemplos."
+                        "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples. Get all available payment methods by consulting the 'Get payment Methods API'.",
+                        "pt": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos. Obtenha todos os meios de pagamento disponíveis consultando a API de 'Obter meios de pagamento'.",
+                        "es": "Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago. A continuación presentamos algunos ejemplos. Obtén todos los métodos de pago disponibles consultando la API de 'Obtener métodos de pago'."
                       },
                       "enum": [
                         {
@@ -5012,9 +5013,9 @@
                       "type": "string",
                       "example": "https://www.suaurl.com/notificacoes/",
                       "description": {
-                        "en": "Notifications URL available to receive notifications of events related to Payment.",
-                        "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento.",
-                        "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago."
+                        "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
+                        "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
+                        "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
                       }
                     },
                     "processing_mode": {
@@ -5311,7 +5312,8 @@
           "qr-code",
           "subscriptions",
           "checkout-api",
-          "mp-point"
+          "mp-point",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Search and return payments made in the last twelve months from the search date",
@@ -5537,9 +5539,9 @@
                               "type": "string",
                               "example": "2017-09-14T11:26:38.000Z",
                               "description": {
-                                "en": "Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment).",
-                                "pt": "Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento).",
-                                "es": "Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago)."
+                                "en": "Date on which the payment is settled and the money is made available in the Mercado Pago account of the Collector (the one who receives the payment). The field can take on the values “pending” or “released”, where the first indicates that the payment has not yet been released (money held for a period) and “released” means that the money has already been released to the user's available balance.",
+                                "pt": "Data em que o pagamento é liquidado e o dinheiro é disponibilizado na conta Mercado Pago do Collector (aquele que recebe o pagamento). O campo pode assumir os valores “pending” ou “released”, sendo que o primeiro indica que o pagamento ainda não foi liberado (dinheiro retido por tempo) e “released” significa que o dinheiro já foi liberado para o saldo disponível do usuário.",
+                                "es": "Fecha en que se liquida el pago y se pone a disposición el dinero en la cuenta de Mercado Pago del Collector (el que recibe el pago). El campo puede tomar los valores “pending” o “released”, siendo que el primero indica que el pago todavía no fue liberado (dinero retenido por tiempo) y “released” significa que el dinero ya fue liberado al disponible del usuario."
                               }
                             },
                             "operation_type": {
@@ -5558,9 +5560,9 @@
                               "type": "string",
                               "example": "account_money",
                               "description": {
-                                "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples",
-                                "pt": "Indica el identificador del medio de pago seleccionado para realizarlo. A continuación presentamos algunos ejemplos.",
-                                "es": "Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago."
+                                "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples. Get all available payment methods by consulting the 'Get payment Methods API'.",
+                                "pt": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos. Obtenha todos os meios de pagamento disponíveis consultando a API de 'Obter meios de pagamento'.",
+                                "es": "Identificador del medio de pago. Indica el ID del medio de pago seleccionado para realizar el pago. A continuación presentamos algunos ejemplos. Obtén todos los métodos de pago disponibles consultando la API de 'Obtener métodos de pago'."
                               },
                               "enum": [
                                 {
@@ -6172,9 +6174,9 @@
                               "type": "string",
                               "format": "nullable",
                               "description": {
-                                "en": "Notifications URL available to receive notifications of events related to Payment.",
-                                "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento.",
-                                "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago."
+                                "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
+                                "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
+                                "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
                               }
                             },
                             "processing_mode": {

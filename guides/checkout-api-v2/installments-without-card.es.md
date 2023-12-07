@@ -31,18 +31,6 @@ En esta guía encontrarás los pasos necesarios para ofrecer meses sin tarjeta e
 
 ------------
 
-## Requisitos previos
-
-Para realizar la integración es importante cumplir con los requisitos que se muestran a continuación.
-
-| Requisitos | Descripción | 
-|---|---|
-| Cuenta de vendedor de Mercado Pago o Mercado Libre | Para integrar necesitas una cuenta de vendedor en Mercado Pago o Mercado Libre. Si no, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para crear. | 
-| Aplicación  | Las aplicaciones son las diversas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes a fin de tener todo organizado y mantener un control que facilite la gestión. Consulta [Tus integraciones](/developers/es/docs/checkout-bricks/additional-content/your-integrations/introduction) para obtener más información sobre cómo crear una aplicación. |
-| Instalar el SDK de Mercado Pago | Instale los SDK oficiales para simplificar su integración con nuestras [APIs](/developers/es/reference/payments/_payments/post). Para obtener más información, [haz clic aquí](/developers/es/docs/sdks-library/landing). |
-
-Si se cumplen todos los requisitos previos, podrás realizar la integración de pagos en cuotas sin tarjeta.
-
 ## Configuración de integración
 
 > SERVER_SIDE
@@ -51,7 +39,7 @@ Si se cumplen todos los requisitos previos, podrás realizar la integración de 
 >
 > Crear preferencia 
 
-Las preferencias son conjuntos de información sobre un producto y/o servicio que te permiten definir el nombre, el método de pago y otros atributos necesarios para obtener la URL para iniciar el flujo de pago al finalizar la compra.
+Preferencia es un conjunto de información sobre un producto y/o servicio que te permiten definir el nombre, el método de pago y otros atributos necesarios para obtener la URL para iniciar el flujo de pago al finalizar la compra.
 
 La primera etapa para configurar los pagos con Mercado Crédito es la creación de la preferencia. Para esto, envía un POST con el parámetro `purpose` y el valor `onboarding_credits` al **endpoint** [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de los SDKs indicados a continuación.
 

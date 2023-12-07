@@ -5,7 +5,8 @@
       "post": {
         "tags": [
           "mobile-checkout",
-          "checkout-api"
+          "checkout-api",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Create a customer with all its data and save the cards used to simplify the payment process",
@@ -1744,7 +1745,8 @@
       "get": {
         "tags": [
           "mobile-checkout",
-          "checkout-api"
+          "checkout-api",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Check all the information of a client created with the client ID of your choice",

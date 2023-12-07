@@ -26,7 +26,7 @@ To include the Mercado Pago.js SDK, add the code below to the project's HTML or 
 // SDK MercadoPago.js
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
-```bash
+```node
 npm install @mercadopago/sdk-react
 ```
 ]]]
@@ -73,11 +73,11 @@ mp.bricks().create("wallet", "wallet_container", {
   initialization: {
       preferenceId: "<PREFERENCE_ID>",
   },
-customization: {
-texts: {
- valueProp: 'smart_option',
- },
-},
+  customization: {
+    texts: {
+      valueProp: 'smart_option',
+    },
+  },
 });
 ```
 ```react-jsx

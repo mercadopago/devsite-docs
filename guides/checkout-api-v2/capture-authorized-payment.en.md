@@ -217,7 +217,7 @@ The answer will yield the following result
 ]]]
 
 ------------
-----[mlb, mlu, mlc, mco, mpe]----
+----[mlb, mlu, mlc, mco, mpe, mlm]----
 ## Capture partial value
 
 To capture an amount lower than the one reserved, send the value to be captured to the `transaction_amount` parameter and execute the request through the codes available below.

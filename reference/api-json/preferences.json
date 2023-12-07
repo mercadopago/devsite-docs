@@ -547,9 +547,9 @@
                   "notification_url": {
                     "type": "string",
                     "description": {
-                      "en": "URL where you'd like to receive a payment notification.",
-                      "pt": "URL para a qual você gostaria de receber notificações de pagamentos",
-                      "es": "URL a la cual te gustaría recibir notificaciones de pagos"
+                      "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
+                      "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
+                      "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
                     }
                   },
                   "statement_descriptor": {
@@ -585,15 +585,6 @@
                       "en": "Boolean value that determines if a preference expires.",
                       "pt": "Preferência que determina se uma preferência expira",
                       "es": "Preferencia que determina si una preferencia expira"
-                    }
-                  },
-                  "date_of_expiration": {
-                    "type": "string",
-                    "format": "date",
-                    "description": {
-                      "en": "Expiration date of cash payment.",
-                      "pt": "Data de expiração de meios de pagamento em dinheiro",
-                      "es": "Fecha de vencimiento del medio de pago en efectivo"
                     }
                   },
                   "expiration_date_from": {
@@ -1210,9 +1201,9 @@
                       "type": "string",
                       "format": "nullable",
                       "description": {
-                        "en": "URL where you'd like to receive a payment notification.",
-                        "pt": "URL para a qual você gostaria de receber notificações de pagamentos",
-                        "es": "URL a la cual te gustaría recibir notificaciones de pagos"
+                        "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
+                        "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
+                        "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
                       }
                     },
                     "statement_descriptor": {
@@ -1476,7 +1467,8 @@
       "get": {
         "tags": [
           "checkout-pro",
-          "mobile-checkout"
+          "mobile-checkout",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Find all the information related to generated preferences using specific filters or a specific date range",
@@ -1972,7 +1964,8 @@
       "get": {
         "tags": [
           "checkout-pro",
-          "mobile-checkout"
+          "mobile-checkout",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Check all the payment information for a product or service with the ID of the preference of your choice",
@@ -2294,9 +2287,9 @@
                       "type": "string",
                       "format": "nullable",
                       "description": {
-                        "en": "URL where you'd like to receive a payment notification.",
-                        "pt": "URL para a qual você gostaria de receber notificações de pagamentos",
-                        "es": "URL a la cual te gustaría recibir notificaciones de pagos"
+                        "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
+                        "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
+                        "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
                       }
                     },
                     "statement_descriptor": {
@@ -2742,7 +2735,9 @@
       "put": {
         "tags": [
           "checkout-pro",
-          "mobile-checkout"
+          "mobile-checkout",
+          "checkout-bricks",
+          "checkout-bricks"
         ],
         "description": {
           "en": "Renew the details of a payment preference. Indicate the ID of the preference and send the parameters with the information you want to update",
@@ -3295,9 +3290,9 @@
                   "notification_url": {
                     "type": "string",
                     "description": {
-                      "en": "URL where you'd like to receive a payment notification.",
-                      "pt": "URL para a qual você gostaria de receber notificações de pagamentos",
-                      "es": "URL a la cual te gustaría recibir notificaciones de pagos"
+                      "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
+                      "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
+                      "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
                     }
                   },
                   "additional_info": {
@@ -3741,9 +3736,9 @@
                       "example": "https://url.com.br/notificacao",
                       "format": "nullable",
                       "description": {
-                        "en": "URL where you'd like to receive a payment notification.",
-                        "pt": "URL para a qual você gostaria de receber notificações de pagamentos",
-                        "es": "URL a la cual te gustaría recibir notificaciones de pagos"
+                        "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
+                        "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
+                        "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
                       }
                     },
                     "operation_type": {
@@ -4168,11 +4163,7 @@
                               }
                             },
                             "country_name": {
-                              "type": {
-                                "en": "Country name.",
-                                "pt": "Nome do país",
-                                "es": "Nombre del país"
-                              },
+                              "type": "string",
                               "description": {
                                 "en": "Country name.",
                                 "pt": "Nome do país",

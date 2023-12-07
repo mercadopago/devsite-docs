@@ -12,19 +12,6 @@ With this line of credit, administered by Mercado Pago, the payment is credited 
 
 Follow the steps below to offer installments without card in your store.
 
-## Prerequisites 
-
-To perform a Card Payment Brick integration, you must meet the requirements listed below.
-
-| Requirements | Description | 
-|---|---|
-| Mercado Pago or Mercado Libre seller account | To integrate you need a seller account on Mercado Pago or Mercado Libre. If not, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create. |
-| Application | Applications are the different integrations in one or more stores. You can create an application for each solution you implement to keep everything organized and on track for easier management. Check [Your integrations](/developers/en/docs/checkout-bricks/additional-content/your-integrations/introduction) for more information on how to create an application. |
-| Credentials | Unique passwords with which we identify an integration in your account. To perform the integrations, you will need the _Public key_ and the _Access Token_. [Click here](/developers/en/guides/additional-content/your-integrations/credentials) for more information. |
-| Install the Mercado Pago SDK | Install the official SDKs to simplify your integration with our [APIs](/developers/en/reference/payments/_payments/post). For more information, [click here](/developers/en/docs/sdks-library/landing). |
-
-If all prerequisites have been met, follow the next steps to integrate installments without credit card.
-
 ## Integration configuration
 
 > SERVER_SIDE
@@ -33,7 +20,7 @@ If all prerequisites have been met, follow the next steps to integrate installme
 >
 > Create preference
 
-Preferences are sets of information about a product and/or service that allow you to define the name, payment method, as well as other settings related to the defined payment flow.
+Preference is a set of information about a product and/or service that allow you to define the name, payment method, as well as other settings related to the defined payment flow.
 
 The first step to configure payments with Mercado Crédito is to create the preference. To do so, send a POST with the `purpose` parameter and the `onboarding_credits` value to the **endpoint** [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, use the SDK below.
 
