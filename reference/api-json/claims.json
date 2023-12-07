@@ -35,9 +35,9 @@
                 "example": 5039218470
               },
               "description": {
-                "en": "Claim ID: A unique identifier used to reference a specific claim in the system. Essential for tracking and managing individual claims.",
-                "pt": "ID da reclamação: Identificador único usado para referenciar uma reclamação específica no sistema. Essencial para rastrear e gerenciar reclamações específicas.",
-                "es": "ID del reclamo: Identificador único utilizado para referenciar un reclamo específico en el sistema. Esencial para el seguimiento y la gestión de reclamos individuales."
+                "en": "Claim ID is a unique identifier used to reference a specific claim in the system. Essential for tracking and managing individual claims.",
+                "pt": "O ID da reclamação é um identificador único usado para referenciar uma reclamação específica no sistema. Essencial para rastrear e gerenciar reclamações específicas.",
+                "es": "El ID del reclamo es un identificador único utilizado para referenciar un reclamo específico en el sistema. Esencial para el seguimiento y la gestión de reclamos individuales."
               }
             },
             {
@@ -433,9 +433,9 @@
                               "type": "string",
                               "example": "closed",
                               "description": {
-                                "en": "Specifies the current state of the claim, indicating whether it is open or closed.",
-                                "pt": "Especifica o estado atual da reclamação, indicando se está aberta ou fechada.",
-                                "es": "Especifica el estado actual del reclamo, indicando si está abierto o cerrado."
+                                "en": "Specifies the current state of the claim, indicating whether it is open or closed. It can take one of the following values:",
+                                "pt": "Especifica o estado atual da reclamação, indicando se está aberta ou fechada. Pode assumir um dos seguintes valores:",
+                                "es": "Especifica el estado actual del reclamo, indicando si está abierto o cerrado. Puede tomar alguno de los siguientes valores:"
                               },
                               "enum": [
                                 {
@@ -810,7 +810,7 @@
                               "description": {
                                 "en": "ID of the site where the claim occurs.",
                                 "pt": "ID do site em que ocorre a reclamação.",
-                                "es": "ID del site donde se desarrolla el reclamo."
+                                "es": "ID del sitio donde se desarrolla el reclamo."
                               }
                             },
                             "date_created": {
@@ -2126,9 +2126,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": ".",
-            "pt": ".",
-            "es": "Accede al historial de estados y escenario por el que pasó el reclamo, también puedes ver el historial de acciones que se tomaron."
+            "en": "This endpoint allows you to view, through a valid token, the history of states and scenarios that the complaint has gone through. It will also be possible to consult the history of actions taken by the people responsible for the complaint.",
+            "pt": "Este endpoint permite visualizar, por meio de um token válido, o histórico de estados e cenários pelos quais a reclamação passou. Também será possível consultar o histórico de ações tomadas pelas pessoas responsáveis pela reclamação.",
+            "es": "Este endpoint permite visualizar, a través de un token válido, el historial de estados y escenarios por los que ha pasado el reclamo. También será posible consultar el historial de acciones tomadas por los responsables del reclamo."
           },
           "parameters": [
             {
@@ -2149,9 +2149,9 @@
           "responses": {
             "200": {
               "description": {
-                "es": "Success",
-                "pt": "Sucesso",
-                "en": "Éxito"
+                "es": "Success.",
+                "pt": "Sucesso.",
+                "en": "Éxito."
               },
               "content": {
                 "application/json": {
@@ -2164,37 +2164,115 @@
                           "type": "string",
                           "example": "dispute",
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "Etapa a la que transicionó el claim"
-                          }
+                            "en": "Indicates the current stage of the claim within the processing cycle involving the buyer and seller. It can take one of the following values:",
+                            "pt": "Indica a fase atual da reclamação dentro do ciclo de processamento que envolve o comprador e vendedor. Pode assumir um dos seguintes valores:",
+                            "es": "Indica la fase actual del reclamo dentro del ciclo de procesamiento que involucra al comprador y al vendedor. Puede tomar alguno de los siguientes valores:"
+                          },
+                          "enum": [
+                            {
+                              "title": "claim",
+                              "description": {
+                                "en": "Initial stage of the claim process in which both the buyer and seller are involved.",
+                                "pt": "Fase inicial do processo de reclamação na qual intervém o comprador e vendedor.",
+                                "es": "Fase inicial del proceso de reclamo en la que intervienen el comprador y el vendedor."
+                              }
+                            },
+                            {
+                              "title": "dispute",
+                              "description": {
+                                "en": "Phase where the claim is under dispute or disagreement.",
+                                "pt": "Fase em que a reclamação está em disputa ou desacordo.",
+                                "es": "Fase donde el reclamo está en disputa o desacuerdo."
+                              }
+                            },
+                            {
+                              "title": "recontact",
+                              "description": {
+                                "en": "Stage in which one of the parties makes contact after the claim/dispute has been closed.",
+                                "pt": "Fase na qual uma das partes entra em contato após o encerramento da reclamação/disputa.",
+                                "es": "Fase en la que alguna de las partes se contacta luego de cerrado el reclamo/disputa."
+                              }
+                            },
+                            {
+                              "title": "none",
+                              "description": {
+                                "en": "Indicates no specific stage is currently applicable.",
+                                "pt": "Indica que nenhuma etapa específica é aplicável.",
+                                "es": "Indica que no se aplica ninguna etapa específica."
+                              }
+                            }
+                          ]
                         },
                         "status": {
                           "type": "string",
                           "example": "closed",
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "Estado al que transicionó el claim"
-                          }
+                            "en": "Specifies the current state of the claim, indicating whether it is open or closed. It can take one of the following values:",
+                            "pt": "Especifica o estado atual da reclamação, indicando se está aberta ou fechada. Pode assumir um dos seguintes valores:",
+                            "es": "Especifica el estado actual del reclamo, indicando si está abierto o cerrado. Puede tomar alguno de los siguientes valores:"
+                          },
+                          "enum": [
+                            {
+                              "title": "opened",
+                              "description": {
+                                "en": "Indicates that the claim is open.",
+                                "pt": "Indica que a reclamação está aberta.",
+                                "es": "Indica que el reclamo está abierto."
+                              }
+                            },
+                            {
+                              "title": "closed",
+                              "description": {
+                                "en": "Indicates that the claim is closed.",
+                                "pt": "Indica que a reclamação está fechada.",
+                                "es": "Indica que el reclamo está cerrado."
+                              }
+                            }
+                          ]
                         },
                         "date": {
                           "type": "string",
                           "example": "2020-09-08T23:59:36.000-04:00",
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "Fecha de la transición"
+                            "en": "Date of change in claim status.",
+                            "pt": "Data de alteração do estado da reclamação.",
+                            "es": "Fecha de cambio en el estado del reclamo."
                           }
                         },
                         "change_by": {
                           "type": "string",
                           "example": "mediator",
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "Actor que disparó la transición"
-                          }
+                            "en": "Indicates the person who changed the claim. It can take one of the following values:",
+                            "pt": "Indica a pessoa que alterou aa reclamação. Pode assumir um dos seguintes valores:",
+                            "es": "Indica la persona que cambió el reclamo. Puede tomar alguno de los siguientes valores:"
+                          },
+                          "enum": [
+                            {
+                              "title": "complainant",
+                              "description": {
+                                "en": "Person who claims",
+                                "pt": "Pessoa que reclama.",
+                                "es": "Persona que reclama."
+                              }
+                            },
+                            {
+                              "title": "respondent",
+                              "description": {
+                                "en": "Person to whom they are complaining.",
+                                "pt": "Pessoa a quem estão reclamando.",
+                                "es": "Persona a quién le reclaman."
+                              }
+                            },
+                            {
+                              "title": "mediator",
+                              "description": {
+                                "en": "Person who intervenes to help solve the problem.",
+                                "pt": "Pessoa que intervém para ajudar a resolver o problema.",
+                                "es": "Persona que interviene para ayudar a solucionar el problema."
+                              }
+                            }
+                          ]
                         }
                       }
                     }
@@ -2204,9 +2282,9 @@
             }
           },
           "title": {
-            "en": ".",
-            "pt": ".",
-            "es": "Historial de estados y acciones del reclamo"
+            "en": "Get claim history",
+            "pt": "Obter histórico da reclamação",
+            "es": "Obtener historial del reclamo"
           }
         }
       },
@@ -2216,9 +2294,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": ".",
-            "pt": ".",
-            "es": "\"La reason de un claim indica el motivo por el cual se ha creado un reclamo, de manera que en base a su tipificación se permiten determinados comportamientos. Básicamente un claim se puede crear por dos motivos generales: PNR: Producto No Recibido. PDD: Producto Diferente o Defectuoso CS: Cancelación de la Compra\""
+            "en": "This endpoint allows you to view, through a valid token, the 'reason' why the claim was created, so that based on its classification, certain behaviors are allowed. A claim can be created for three general reasons: PNR (Product not received), PDD (Different or defective product) or CS (Purchase cancellation).",
+            "pt": "Este endpoint permite visualizar, a través de un token válido, o motivo ('reason') pelo qual uma reclamação foi criada, de forma que com base na sua classificação sejam permitidos determinados comportamentos. Uma reclamação pode ser criada por três motivos gerais: PNR (Produto não recebido), PDD (Produto diferente ou defeituoso) ou CS (Cancelamento de compra).",
+            "es": "Este endpoint permite visualizar, mediante un token válido, el motivo ('reason') por el cual se ha creado un reclamo, de manera que en base a su tipificación se permiten determinados comportamientos. Se puede crear un reclamo por tres motivos generales: PNR (Producto no recibido), PDD (Producto diferente o defectuoso) o CS (Cancelación de la compra)."
           },
           "parameters": [
             {
@@ -2239,9 +2317,9 @@
           "responses": {
             "200": {
               "description": {
-                "es": "Success",
-                "pt": "Sucesso",
-                "en": "Éxito"
+                "es": "Success.",
+                "pt": "Sucesso.",
+                "en": "Éxito."
               },
               "content": {
                 "application/json": {
@@ -2252,9 +2330,9 @@
                         "type": "string",
                         "example": "PDD1",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "ID de la reason"
+                          "en": "ID of the 'reason' for the complaint.",
+                          "pt": "ID da 'reason' da reclamação.",
+                          "es": "ID de la 'reason' del reclamo."
                         }
                       },
                       "flow": {
@@ -2263,25 +2341,25 @@
                         "description": {
                           "en": ".",
                           "pt": ".",
-                          "es": "Flujo del reclamo"
+                          "es": "."
                         }
                       },
                       "name": {
                         "type": "string",
                         "example": "defective_item",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "Nombre de la reason"
+                          "en": "Displays the description of the 'reason' for the complaint.",
+                          "pt": "Exibe a descrição da 'reason' da reclamação.",
+                          "es": "Presenta la descripción de la 'reason' del reclamo."
                         }
                       },
                       "detail": {
                         "type": "string",
-                        "example": "El producto es defectuoso",
+                        "example": "El producto es defectuoso.",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "Detalle de la reason"
+                          "en": "Displays details about the reason for the claim.",
+                          "pt": "Exibe os detalhes sobre o motivo da reclamação.",
+                          "es": "Muestra detalles sobre el motivo del reclamo."
                         }
                       },
                       "position": {
@@ -2290,7 +2368,7 @@
                         "description": {
                           "en": ".",
                           "pt": ".",
-                          "es": ""
+                          "es": "."
                         }
                       },
                       "filter": {
@@ -2303,7 +2381,7 @@
                               "description": {
                                 "en": ".",
                                 "pt": ".",
-                                "es": ""
+                                "es": "."
                               }
                             }
                           },
@@ -2313,9 +2391,9 @@
                               "type": "string",
                               "example": "MLA",
                               "description": {
-                                "en": ".",
-                                "pt": ".",
-                                "es": "ID del site donde se desarrolla el reclamo"
+                                "en": "Site ID where the complaint is taking place.",
+                                "pt": "ID do site em que ocorre a reclamação.",
+                                "es": "ID del sitio donde se desarrolla el reclamo."
                               }
                             }
                           }
@@ -2332,7 +2410,7 @@
                               "description": {
                                 "en": ".",
                                 "pt": ".",
-                                "es": ""
+                                "es": "."
                               }
                             }
                           },
@@ -2342,9 +2420,9 @@
                               "type": "string",
                               "example": "change_product",
                               "description": {
-                                "en": ".",
-                                "pt": ".",
-                                "es": "posibles resoluciones esperadas por quien reclama"
+                                "en": "Presents possible resolutions expected by the complainant.",
+                                "pt": "Apresenta as possíveis resoluções esperadas por quem reclama.",
+                                "es": "posibles resoluciones esperadas por quien reclama."
                               }
                             }
                           },
@@ -2356,7 +2434,7 @@
                               "description": {
                                 "en": ".",
                                 "pt": ".",
-                                "es": ""
+                                "es": "."
                               }
                             }
                           }
@@ -2368,7 +2446,7 @@
                         "description": {
                           "en": ".",
                           "pt": ".",
-                          "es": "Reason padre"
+                          "es": "."
                         }
                       },
                       "children_title": {
@@ -2377,34 +2455,34 @@
                         "description": {
                           "en": ".",
                           "pt": ".",
-                          "es": ""
+                          "es": "."
                         }
                       },
                       "status": {
                         "type": "string",
                         "example": "active",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "Estado de la reason"
+                          "en": "The state of the 'reason' for the complaint.",
+                          "pt": "Estado em que se encontra a 'reason' da reclamação.",
+                          "es": "Estado en el que se encuentra la 'reason' del reclamo."
                         }
                       },
                       "date_created": {
                         "type": "string",
                         "example": "2022-01-04T17:09:50.793Z",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "Fecha de creación de la reason"
+                          "en": "Creation date of the claim 'reason'.",
+                          "pt": "Data de criação da 'reason' da reclamação.",
+                          "es": "Fecha de creación de la 'reason' del reclamo."
                         }
                       },
                       "last_updated": {
                         "type": "string",
                         "example": "2022-01-04T17:09:50.793Z",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "Fecha de la última actualización de la reason"
+                          "en": "Date of the last update to the claim 'reason'.",
+                          "pt": "Data da última atualização da 'reason' da reclamação.",
+                          "es": "Fecha de la última actualización de la 'reason' del reclamo."
                         }
                       }
                     }
@@ -2414,9 +2492,9 @@
             }
           },
           "title": {
-            "en": ".",
-            "pt": ".",
-            "es": "Obtener detalle del motivo por el que se inició el reclamo"
+            "en": "Get the reason for the claim",
+            "pt": "Obter motivo da reclamação",
+            "es": "Obtener motivo del reclamo"
           }
         }
       },
