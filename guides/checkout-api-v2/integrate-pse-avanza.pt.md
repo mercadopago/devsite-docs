@@ -622,6 +622,7 @@ payment = payment_response["response"]
 ```curl
  curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+-H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
 -H 'Content-Type: application/json' \
 --d '{
     "transaction_amount": 5000,
