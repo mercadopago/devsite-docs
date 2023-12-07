@@ -23,7 +23,11 @@ El primer paso para comenzar a integrar es **tener una cuenta de Mercado Pago**.
 
 Con la cuenta ya activa, tienes acceso [Tus integraciones](https://www.mercadopago.com/developers/panel/app), que te permite administrar integraciones con desarrollo de código, tus aplicaciones, realizar pruebas y configurar las notificaciones de eventos relacionados con transacciones.
 
-> **Importante**<br>Si ya tienes una cuenta de Mercado Libre, accede a [Tus integraciones](https://www.mercadopago.com/developers/panel/app) con el mismo usuario y contraseña.
+> NOTE
+>
+> Importante
+> 
+> Si ya tienes una cuenta de Mercado Libre, accede a [Tus integraciones](https://www.mercadopago.com/developers/panel/app) con el mismo usuario y contraseña.
 
 ---
 bullet_section_with_media:
@@ -33,7 +37,7 @@ bullet_section_with_media:
  - image: /getting-started/woman-male-dev.png
 ---
 
-Puedes encontrar las credenciales en **Detalles de la aplicación > Credenciales** dentro del [Panel del desarrollador](/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
+Puedes encontrar las credenciales en **Detalles de la aplicación > Credenciales** dentro de [Tus integraciones](/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
 ## Conoce los productos
 
@@ -42,6 +46,8 @@ Conoce cuáles son las principales ventajas de los productos de Mercado Pago y e
 ![Getting started](/images/getting-started/getting-started-diagram2-es.png)
 
 ### Procesa pagos online
+
+Soluciones para quienes vendan por el sitio, desde WhatsApp o redes sociales.
 
 |  |  | Dificultad de integración |
 |:---|:---|:---|
@@ -54,6 +60,8 @@ Conoce cuáles son las principales ventajas de los productos de Mercado Pago y e
 
 ### Ofrece pagos presenciales
 
+Soluciones para quienes venden desde casa, en la calle, en el coche o en la tienda. 
+
 |  |  | Dificultad de integración |
 |:---|:---|:---|
 | Código QR | Elige un modelo de integración para generar códigos QR y brindar una experiencia completa de pago presencial. | 🔵🔵⚪⚪⚪  |
@@ -62,7 +70,7 @@ Conoce cuáles son las principales ventajas de los productos de Mercado Pago y e
 
 ### Procesa pagos en plataformas de e-commerce
 
-¿Quieres utilizar una plataforma de e-commerce? Instala el Checkout Pro o el Checkout API en tu tienda y **comienza a ofrecer pagos con Mercado Pago**. Integrar soluciones conectándote a una plataforma es simple y rápido. Todo el proceso se realiza en el panel de negocios de Mercado Pago y en la propia plataforma.
+Instala el Checkout Pro o el Checkout API en tu tienda y **comienza a ofrecer pagos con Mercado Pago** en tu plataforma de e-commerce. Integrar soluciones conectándote a una plataforma es simple y rápido. Todo el proceso se realiza en el panel de negocios de Mercado Pago y en la propia plataforma.
 
 Conoce la disponibilidad de nuestros productos por plataforma en cada país:
 
