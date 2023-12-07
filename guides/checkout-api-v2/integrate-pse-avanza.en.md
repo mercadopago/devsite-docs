@@ -729,15 +729,15 @@ Below, we show you examples of messages that you can offer, according to the thr
 
 #### Approved status
 
-![image of an approved transaction and the redirection ](/images/api/pse-transaccion-aprobada.png)
+![image of an approved transaction and the redirection ](/images/api/pse-callback-approved.png)
 
 #### Pending status
 
-![Pending transaction image](/images/api/pse-transaccion-pendiente.png)
+![Pending transaction image](/images/api/pse-callback-pending.png)
 
 #### Rejected status
 
-![Rejected transaction image](/images/api/pse-transaccion-rechazada.png)
+![Rejected transaction image](/images/api/pse-callback-rejected.png)
 
 
 ## Expiration
