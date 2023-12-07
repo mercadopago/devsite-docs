@@ -711,9 +711,9 @@
                                             {
                                               "title": "send_attachments",
                                               "description": {
-                                                "en": "Send a message with attachments.",
-                                                "pt": "Enviar mensagem com anexos.",
-                                                "es": "Enviar mensaje con adjuntos."
+                                                "en": "Send message with attached images.",
+                                                "pt": "Enviar mensagem com imagens anexadas.",
+                                                "es": "Enviar mensaje con imágenes adjuntas."
                                               }
                                             },
                                             {
@@ -876,9 +876,9 @@
           "responses": {
             "200": {
               "description": {
-                "es": "Success.",
-                "pt": "Sucesso.",
-                "en": "Éxito."
+                "es": "Success",
+                "pt": "Sucesso",
+                "en": "Éxito"
               },
               "content": {
                 "application/json": {
@@ -914,45 +914,45 @@
                                 "type": "string",
                                 "example": "8007ee20-be67-471f-9e59-e32d9ba02fae_239628932.jpeg",
                                 "description": {
-                                  "en": "Current name of the attached file",
-                                  "pt": "Nome atual do arquivo anexado.",
-                                  "es": "Nombre actual del archivo adjunto."
+                                  "en": "Current name (hashed - used for retrieving the attachment) of the image file attached to the message associated with the claim.",
+                                  "pt": "Nome atual (hashado - utilizado para recuperar o anexo) do arquivo de imagem anexado à mensagem associada à reclamação.",
+                                  "es": "Nombre actual (hasheado - utilizado para recuperar el attachment) del archivo de imagen adjunto al mensaje asociado al reclamo."
                                 }
                               },
                               "original_filename": {
                                 "type": "string",
                                 "example": "F8FB05C5-1D67-4B99-8E7D-3FE1EB3DBEBC.jpeg",
                                 "description": {
-                                  "en": "Original name of the file attached to the message associated with the claim.",
-                                  "pt": "Nome original do arquivo anexado à mensagem associada à reclamação.",
-                                  "es": "Nombre original del archivo adjunto al mensaje asociado al reclamo."
+                                  "en": "Original name of the image file attached to the message associated with the claim.",
+                                  "pt": "Nome original do arquivo de imagem anexado à mensagem associada à reclamação.",
+                                  "es": "Nombre original del archivo de imagen adjunto al mensaje asociado al reclamo."
                                 }
                               },
                               "size": {
                                 "type": "number",
                                 "example": 1880609,
                                 "description": {
-                                  "en": "Size (in bytes) of the file attached to the message associated with the claim.",
-                                  "pt": "Tamanho (em bytes) do arquivo anexado à mensagem associada à reclamação.",
-                                  "es": "Tamaño (en bytes) del archivo adjunto al mensaje asociado al reclamo."
+                                  "en": "Size (in bytes) of the image file attached to the message associated with the claim.",
+                                  "pt": "Tamanho (em bytes) do arquivo de imagem anexado à mensagem associada à reclamação.",
+                                  "es": "Tamaño (en bytes) del archivo de imagen adjunto al mensaje asociado al reclamo."
                                 }
                               },
                               "type": {
                                 "type": "string",
                                 "example": "image/jpeg",
                                 "description": {
-                                  "en": "Type of file attached to the message associated with the claim.",
-                                  "pt": "Tipo do arquivo anexado à mensagem associada à reclamação.",
-                                  "es": "Tipo de archivo adjunto al mensaje asociado al reclamo."
+                                  "en": "Type of image file attached to the message associated with the claim.",
+                                  "pt": "Tipo do arquivo de imagem anexado à mensagem associada à reclamação.",
+                                  "es": "Tipo de archivo de imagen adjunto al mensaje asociado al reclamo."
                                 }
                               },
                               "date_created": {
                                 "type": "string",
                                 "example": "2020-07-22T20:43:15.000-04:00",
                                 "description": {
-                                  "en": "Date when the file was attached to the message associated with the complaint.",
-                                  "pt": "Data em que o arquivo foi anexado à mensagem que está associada à reclamação.",
-                                  "es": "Fecha en que se adjuntó el archivo al mensaje que está asociado al reclamo."
+                                  "en": "Date when the image file was attached to the message associated with the complaint.",
+                                  "pt": "Data em que o arquivo de imagem foi anexado à mensagem que está associada à reclamação.",
+                                  "es": "Fecha en que se adjuntó el archivo de imagen al mensaje que está asociado al reclamo."
                                 }
                               }
                             }
@@ -1123,9 +1123,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": ".",
-            "pt": ".",
-            "es": "Este endpoint permite responder mensajes y adjuntar archivos"
+            "en": "This endpoint, through a valid token, allows for responding and attaching files to the messages associated with the claim.",
+            "pt": "Este endpoint permite, por meio de um token válido, responder e anexar arquivos de imagem as mensagens associados à reclamação.",
+            "es": "Este endpoint permite, mediante un token válido, responder y adjuntar archivos de imagen a los mensajes asociados al reclamo."
           },
           "parameters": [
             {
@@ -1153,9 +1153,9 @@
                 "example": "file=@/Users/user/Desktop/file.jpg"
               },
               "description": {
-                "en": ".",
-                "pt": ".",
-                "es": "\"El archivo a subir en JPG, PNG o PDF de hasta un tamaño máximo de 5 MB. El nombre del archivo no puede tener más de 125 caracteres y estar compuesto solo por los siguientes caracteres: Letras, números, punto, guion medio, guion bajo ([a-zA-Z0-9._\\s-])\""
+                "en": "Location of the image file that will be attached to the message associated with the claim. The file must be a maximum of 5 MB and be in JPG, PNG or PDF format. The file name cannot be more than 125 characters and be composed only of the following characters: letters, numbers, period, hyphen, underscore, etc.",
+                "pt": "Localização do arquivo de imagem que será anexado à mensagem associada à reclamação. O arquivo deverá ter, no máximo, 5 MB e estar nos formatos JPG, PNG ou PDF. O nome do arquivo não pode ter mais de 125 caracteres e ser composto apenas pelos seguintes caracteres: letras, números, ponto, hífen, sublinhado, etc.",
+                "es": "Ubicación del archivo de imagen que se adjuntará al mensaje asociado al reclamo. El archivo debe tener un tamaño máximo de 5 MB y estar en formato JPG, PNG o PDF. El nombre del archivo no puede tener más de 125 caracteres y estar compuesto solo por los siguientes caracteres: letras, números, punto, guion medio, guion bajo, etc."
               }
             }
           ],
@@ -1175,27 +1175,27 @@
                         "type": "number",
                         "example": 415836081,
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "Usuario que envía el archivo (tiene que ser un player del claim)"
+                          "en": "Presents the ID of the person who sent the image file that was attached to the message associated with the claim. It is necessary for this person to be a participant in the claim.",
+                          "pt": "Apresenta o ID de quem enviou o arquivo de imagem que foi anexado à mensagem associada à reclamação. É necessário que seja uma pessoa participante da reclamação.",
+                          "es": "Muestra el ID de la persona que envió el archivo de imagen que fue adjunto al mensaje asociado con el reclamo. Es necesario que sea una persona participante del reclamo."
                         }
                       },
                       "filename": {
                         "type": "string",
                         "example": "44739b8c-592f-4fa3-bdc0-ed1905879eab.jpeg",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "Nombre del archivo hasheado (utilizado para recuperar el attachment)"
+                          "en": "Hashed file name (used for retrieving the attachment).",
+                          "pt": "Nome do arquivo hashado (utilizado para recuperar o anexo).",
+                          "es": "Nombre del archivo hasheado (utilizado para recuperar el attachment)."
                         }
                       },
                       "render_url": {
                         "type": "string",
-                        "example": "",
+                        "example": "https://fury-storage-private-default.s3.amazonaws.com/mediations-api-core/attachment2/767b79a6-88c8-4fa4-8d95-2cb78fcd897f.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA2W4YYFSFIIM7ONWJ%2F20201009%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20201009T174026Z&X-Amz-Expires=43200&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEA8aCXVzLWVhc3QtMSJHMEUCIBznL6LSjtxZx2rmNacevS3fkUtCntzn8hEERS3I9zGcAiEArLoRIu6slpEVHMaKK2%2B3LaXK5vJeEVlwmQ1en1xBlswqtAMIRxABGgw3MzYzNzAzNzE3MjIiDN38MnchbBVYZCS%2BfiqRA9sgC51NLCQ0stU6s2Dek7gt8JmSth7oYLHE8v1WhK3WaiBfe%2FV6LqnrqJcGIikCXr05GqQalWZQLITG1mwC%2Fkx6x5XL5jKFw67lXUvoZzmctRoQPpXpA6MJBTvdCZJKifAS2grLExBJ7KUrgGH6MCxiHpZwm5cO1VP9E5ETFcOTtVzgJtSU0TX70Z4%2BVZPwbxbuEnnqCuW61MZkMvT4dF6oVkZZBR8JuaaiM4w17FV%2B%2Bzt3l39EP9iZdv7NG6G6ZFjvL5UgkVfOm0Bn2w6JONEl8upiOqQN1voen8TugywgWm683isabg1LK2c5GNVWR4qEYbnpS2jZhd732IuDgl1De1V93O5WW2Xf0HGqXhIWYHf9ZDViwWrMXQc5VRQwDIukAgwIy5%2FiBUEwjNBavu4eiWcqtVIQ8OxH9CJIBrQMgPaB%2FtV9LZRGAH24ZwcBD%2FEu%2BEWEDPnR6giE24nAAkWAMlhPQI5NKGGy6y4SLxJ5KalD5yb4Twi0W%2Fvj7bUxfYBSebAn%2B4zldwvFPzWwJRxbMMTdgfwFOusBof6%2FydFCa12JdZERNpiC49pjSmal6DP7rl91JmwVKzG%2FIIENnlBIjZ1yvEtFWy2WcEDqnn2OfEeRc5vop%2FUHnRo3i1TEC8IHs7ECCwwWcf6UAB0%2FUXL8fGj6uQ7KuQ7DLphrZBMfpUz8JXRx1FVRKMWioszeYfL9dQ%2B24GDsESAN83y%2B19ZRdy727X7GsvnZQvdWo7zHQT4zXDmJB0RFtMHwHYtALsGHUyymyA%2FaQjfnbnccvesgGvLGpqdwmXZ0QFMmNobOlJA4STZY%2FejLulxq%2BNhmrvih83%2BSn5Q0043c2%2BzLYeSGs8jUJg%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=cb9a006b693e4b4e17948be0ccbb28739627daf0766f521cb98a2e5643ab9229",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "Direccion para obtener el archivo renderizado"
+                          "en": "URL where you can get the rendered image file.",
+                          "pt": "URL em que será possível obter o arquivo de imagem renderizado.",
+                          "es": "URL donde puede obtener el archivo de imagen renderizada."
                         }
                       }
                     }
@@ -1205,8 +1205,8 @@
             }
           },
           "title": {
-            "en": ".",
-            "pt": ".",
+            "en": "Answer messages and attach files",
+            "pt": "Responder mensagens e anexar arquivos",
             "es": "Responder mensajes y adjuntar archivos"
           }
         }
@@ -1339,9 +1339,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": ".",
-            "pt": ".",
-            "es": "Descargar el archivo."
+            "en": "This endpoint allows, through a valid token, downloading image files attached to the messages associated with the claim.",
+            "pt": "Este endpoint permite, por meio de um token válido, fazer download de arquivos de imagem anexados as mensagens associados à reclamação.",
+            "es": "Este endpoint permite, mediante un token válido, descargar archivos de imagen adjuntos a los mensajes asociados al reclamo."
           },
           "parameters": [
             {
@@ -1369,9 +1369,9 @@
             }
           },
           "title": {
-            "en": ".",
-            "pt": ".",
-            "es": "Descargar el archivo"
+            "en": "Download attached files",
+            "pt": "Baixar arquivos anexados",
+            "es": "Descargar archivos adjuntos"
           }
         }
       },
@@ -1381,9 +1381,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": ".",
-            "pt": ".",
-            "es": "Obtener información del archivo."
+            "en": "This endpoint allows searching, through a valid token, for image files attached to the message associated with the complaint.",
+            "pt": "Este endpoint permite buscar, mediante un token válido, arquivos de imagem anexados à mensagem associada à reclamaçao.",
+            "es": "Este endpoint permite buscar, mediante un token válido, archivos de imagen adjuntos al mensaje asociado a la reclamación."
           },
           "parameters": [
             {
@@ -1417,54 +1417,55 @@
                         "type": "string",
                         "example": "767b79a6-88c8-4fa4-8d95-2cb78fcd897f.jpeg",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "Nombre del archivo"
+
+                          "en": "Current name (hashed - used for retrieving the attachment) of the image file attached to the message associated with the claim.",
+                          "pt": "Nome atual (hashado - utilizado para recuperar o anexo) do arquivo de imagem anexado à mensagem associada à reclamação.",
+                          "es": "Nombre actual (hasheado - utilizado para recuperar el attachment) del archivo de imagen adjunto al mensaje asociado al reclamo."
                         }
                       },
                       "original_filename": {
                         "type": "string",
                         "example": "WhatsApp Image 2020-09-22 at 15.37.13.jpeg",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "Nombre real del archivo"
+                          "en": "Original name of the image file attached to the message associated with the claim.",
+                          "pt": "Nome original do arquivo de imagem anexado à mensagem associada à reclamação.",
+                          "es": "Nombre original del archivo de imagen adjunto al mensaje asociado al reclamo."
                         }
                       },
                       "size": {
                         "type": "number",
-                        "example": 59447,
+                        "example": 1880609,
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "Tamaño del archivo adjunto en Bytes"
-                        }
-                      },
-                      "date_created": {
-                        "type": "string",
-                        "example": "2020-10-09T13:39:57.000-04:00",
-                        "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "Fecha de carga del adjunto"
+                          "en": "Size (in bytes) of the image file attached to the message associated with the claim.",
+                          "pt": "Tamanho (em bytes) do arquivo de imagem anexado à mensagem associada à reclamação.",
+                          "es": "Tamaño (en bytes) del archivo de imagen adjunto al mensaje asociado al reclamo."
                         }
                       },
                       "type": {
                         "type": "string",
                         "example": "image/jpeg",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "Tipo de adjunto"
+                          "en": "Type of image file attached to the message associated with the claim.",
+                          "pt": "Tipo do arquivo de imagem anexado à mensagem associada à reclamação.",
+                          "es": "Tipo de archivo de imagen adjunto al mensaje asociado al reclamo."
+                        }
+                      },
+                      "date_created": {
+                        "type": "string",
+                        "example": "2020-07-22T20:43:15.000-04:00",
+                        "description": {
+                          "en": "Date when the image file was attached to the message associated with the complaint.",
+                          "pt": "Data em que o arquivo de imagem foi anexado à mensagem que está associada à reclamação.",
+                          "es": "Fecha en que se adjuntó el archivo de imagen al mensaje que está asociado al reclamo."
                         }
                       },
                       "file_url": {
                         "type": "string",
                         "example": "https://fury-storage-private-default.s3.amazonaws.com/mediations-api-core/attachment2/767b79a6-88c8-4fa4-8d95-2cb78fcd897f.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA2W4YYFSFIIM7ONWJ%2F20201009%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20201009T174026Z&X-Amz-Expires=43200&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEA8aCXVzLWVhc3QtMSJHMEUCIBznL6LSjtxZx2rmNacevS3fkUtCntzn8hEERS3I9zGcAiEArLoRIu6slpEVHMaKK2%2B3LaXK5vJeEVlwmQ1en1xBlswqtAMIRxABGgw3MzYzNzAzNzE3MjIiDN38MnchbBVYZCS%2BfiqRA9sgC51NLCQ0stU6s2Dek7gt8JmSth7oYLHE8v1WhK3WaiBfe%2FV6LqnrqJcGIikCXr05GqQalWZQLITG1mwC%2Fkx6x5XL5jKFw67lXUvoZzmctRoQPpXpA6MJBTvdCZJKifAS2grLExBJ7KUrgGH6MCxiHpZwm5cO1VP9E5ETFcOTtVzgJtSU0TX70Z4%2BVZPwbxbuEnnqCuW61MZkMvT4dF6oVkZZBR8JuaaiM4w17FV%2B%2Bzt3l39EP9iZdv7NG6G6ZFjvL5UgkVfOm0Bn2w6JONEl8upiOqQN1voen8TugywgWm683isabg1LK2c5GNVWR4qEYbnpS2jZhd732IuDgl1De1V93O5WW2Xf0HGqXhIWYHf9ZDViwWrMXQc5VRQwDIukAgwIy5%2FiBUEwjNBavu4eiWcqtVIQ8OxH9CJIBrQMgPaB%2FtV9LZRGAH24ZwcBD%2FEu%2BEWEDPnR6giE24nAAkWAMlhPQI5NKGGy6y4SLxJ5KalD5yb4Twi0W%2Fvj7bUxfYBSebAn%2B4zldwvFPzWwJRxbMMTdgfwFOusBof6%2FydFCa12JdZERNpiC49pjSmal6DP7rl91JmwVKzG%2FIIENnlBIjZ1yvEtFWy2WcEDqnn2OfEeRc5vop%2FUHnRo3i1TEC8IHs7ECCwwWcf6UAB0%2FUXL8fGj6uQ7KuQ7DLphrZBMfpUz8JXRx1FVRKMWioszeYfL9dQ%2B24GDsESAN83y%2B19ZRdy727X7GsvnZQvdWo7zHQT4zXDmJB0RFtMHwHYtALsGHUyymyA%2FaQjfnbnccvesgGvLGpqdwmXZ0QFMmNobOlJA4STZY%2FejLulxq%2BNhmrvih83%2BSn5Q0043c2%2BzLYeSGs8jUJg%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=cb9a006b693e4b4e17948be0ccbb28739627daf0766f521cb98a2e5643ab9229",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "URL de la imagen"
+                          "en": "URL where you can get the rendered image file.",
+                          "pt": "URL em que será possível obter o arquivo de imagem renderizado.",
+                          "es": "URL donde puede obtener el archivo de imagen renderizada."
                         }
                       }
                     }
@@ -1474,8 +1475,8 @@
             }
           },
           "title": {
-            "en": ".",
-            "pt": ".",
+            "en": "Get file data",
+            "pt": "Obter dados do arquivo",
             "es": "Obtener información del archivo"
           }
         }
@@ -2217,9 +2218,9 @@
           "responses": {
             "200": {
               "description": {
-                "es": "Success.",
-                "pt": "Sucesso.",
-                "en": "Éxito."
+                "es": "Success",
+                "pt": "Sucesso",
+                "en": "Éxito"
               },
               "content": {
                 "application/json": {
@@ -2312,7 +2313,7 @@
                           "example": "mediator",
                           "description": {
                             "en": "Indicates the person who changed the claim. It can take one of the following values:",
-                            "pt": "Indica a pessoa que alterou aa reclamação. Pode assumir um dos seguintes valores:",
+                            "pt": "Apresenta a pessoa que alterou a reclamação. Pode assumir um dos seguintes valores:",
                             "es": "Indica la persona que cambió el reclamo. Puede tomar alguno de los siguientes valores:"
                           },
                           "enum": [
@@ -2385,9 +2386,9 @@
           "responses": {
             "200": {
               "description": {
-                "es": "Success.",
-                "pt": "Sucesso.",
-                "en": "Éxito."
+                "es": "Success",
+                "pt": "Sucesso",
+                "en": "Éxito"
               },
               "content": {
                 "application/json": {
@@ -2595,9 +2596,9 @@
           "responses": {
             "200": {
               "description": {
-                "es": "Success.",
-                "pt": "Sucesso.",
-                "en": "Éxito."
+                "es": "Success",
+                "pt": "Sucesso",
+                "en": "Éxito"
               }
             }
           },
