@@ -1555,10 +1555,10 @@
           "tags": [
             "subscriptions"
           ],
-          "description": {
-            "en": ".",
-            "pt": ".",
-            "es": "Este endpoint permite Ver resoluciones esperadas de un claim"
+            "description": {
+              "en": "This endpoint allows, through a valid token, viewing the expected resolutions by the user in their claim.",
+              "pt": "Este endpoint permite visualizar, mediante un token válido, resoluções esperadas pela pessoa usuária em sua reclamação.",
+              "es": "Este endpoint permite visualizar, mediante un token válido, las resoluciones esperadas por la persona usuaria en su reclamo."
           },
           "parameters": [
             {
@@ -1592,35 +1592,69 @@
                         "type": "string",
                         "example": "complainant",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "Actor que inicia el reclamo."
+                          "en": "User who initiated the claim.",
+                          "pt": "Pessoa usuária que iniciou a reclamação.",
+                          "es": "Persona usuaria que inició el reclamo."
                         }
                       },
                       "user_id": {
                         "type": "number",
                         "example": 40014151,
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "ID del usuario que inicia el reclamo"
+                          "en": "User ID who initiated the claim.",
+                          "pt": "ID da pessoa usuária que iniciou a reclamação.",
+                          "es": "ID de al persona usuaria que inicia el reclamo."
                         }
                       },
                       "expected_resolution": {
                         "type": "string",
                         "example": "product",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "Resolución del reclamo cargada por el player indicado en el parámetro anterior. Los valores posibles son: refund: el player espera que se devuelva el dinero. product: el player espera que le llegue el producto. change_product: el player espera cambiar el producto. return_product: el player espera que se devuelva el producto con la posterior devoluvión del dinero."
-                        }
+                          "en": "Presents possible resolutions expected by the complainant. It can take one of the following values:",
+                          "pt": "Apresenta as possíveis resoluções esperadas por quem reclama. Pode assumir um dos seguintes valores:",
+                          "es": "Muestra las posibles resoluciones esperadas por quien reclama. Puede tomar alguno de los siguientes valores:"
+                        },
+                        "enum": [
+                          {
+                            "title": "refund",
+                            "description": {
+                              "en": "The user expects the money to be refunded.",
+                              "pt": "A pessoa usuária espera que o dinheiro seja devolvido.",
+                              "es": "La persona usuaria espera que se le devuelva el dinero."
+                            }
+                          },
+                          {
+                            "title": "product",
+                            "description": {
+                              "en": "The user expects the product to be delivered.",
+                              "pt": "A pessoa usuária espera que o produto seja entregue.",
+                              "es": "La persona usuaria espera que el producto sea entregado."
+                            }
+                          },
+                          {
+                            "title": "change_product",
+                            "description": {
+                              "en": "The user expects the product to be exchanged.",
+                              "pt": "A pessoa usuária espera que o produto seja trocado.",
+                              "es": "La persona usuaria espera que el producto sea cambiado."
+                            }
+                          },
+                          {
+                            "title": "return_product",
+                            "description": {
+                              "en": "The user will wait for the return of the product to receive the refund.",
+                              "pt": "A pessoa usuária irá esperar a devolução do produto para poder receber a devolução do dinheiro.",
+                              "es": "La persona usuaria esperará la devolución del producto para poder recibir el dinero de vuelta."
+                            }
+                          }
+                        ]
                       },
                       "date_created": {
                         "type": "string",
                         "example": "2020-09-30T09:48:06.000-04:00",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
+                          "en": "Date the claim was created.",
+                          "pt": "Data em que a reclamação foi criada.",
                           "es": "Fecha en la que se creó el reclamo."
                         }
                       },
@@ -1628,8 +1662,8 @@
                         "type": "string",
                         "example": "2020-10-02T01:12:31.000-04:00",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
+                          "en": "Date of the last update to the claim.",
+                          "pt": "Data da última atualização da reclamação.",
                           "es": "Fecha de última actualización reclamo."
                         }
                       },
@@ -1637,10 +1671,36 @@
                         "type": "string",
                         "example": "pending",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "Estado de la resolución esperada. Puede tomar los siguientes valores: pending: el player cargó la resolución esperada pero no aún no fue aceptada por la contraparte. accepted: la resolución cargada por el player fue aceptada por su contraparte o en su defecto por el mediador de Mercado Pago. rejected: la resolución cargada por el player fue rechazada por su contraparte y en su defecto cargó una nueva opción de resolución."
-                        }
+                          "en": "Displays the status of the expected resolution by the person who initiated the claim. It can take one of the following values:",
+                          "pt": "Apresenta o estado da resolução esperada por quem iniciou a reclamação. Pode assumir um dos seguintes valores:",
+                          "es": "Muestra el estado de la resolución esperada por quien inició el reclamo. Puede tomar alguno de los siguientes valores:"
+                        },
+                        "enum": [
+                          {
+                            "title": "pending",
+                            "description": {
+                              "en": "The person loaded the expected resolution but it has not been accepted by the counterpart yet.",
+                              "pt": "A pessoa carregou a resolução esperada, mas ainda não foi aceita pela contraparte.",
+                              "es": "La persona cargó la resolución esperada pero no aún no fue aceptada por la contraparte."
+                            }
+                          },
+                          {
+                            "title": "accepted",
+                            "description": {
+                              "en": "The resolution loaded by the person was accepted by their counterpart or, alternatively, by the Mercado",
+                              "pt": "A resolução carregada pela pessoa foi aceita por sua contraparte ou, caso contrário, pelo mediador do Mercado Pago.",
+                              "es": "La resolución cargada por la persona fue aceptada por su contraparte o, en su defecto, por el mediador de Mercado Pago."
+                            }
+                          },
+                          {
+                            "title": "rejected",
+                            "description": {
+                              "en": "The resolution loaded by the person was rejected by the counterpart, and alternatively, they loaded a new resolution option.",
+                              "pt": "A resolução carregada pela pessoa foi rejeitada pela contraparte e, em contra partida, ela carregou uma nova opção de resolução.",
+                              "es": "La resolución cargada por la persona fue rechazada por su contraparte y, en su defecto, cargó una nueva opción de resolución."
+                            }
+                          }
+                        ]
                       }
                     }
                   }
@@ -1649,9 +1709,9 @@
             }
           },
           "title": {
-            "en": ".",
-            "pt": ".",
-            "es": "Ver resoluciones esperadas"
+            "en": "See expected resolutions at mediation",
+            "pt": "Ver resoluções esperadas na mediação",
+            "es": "Ver resoluciones esperadas en mediación"
           }
         }
       },
@@ -2489,10 +2549,44 @@
                               "type": "string",
                               "example": "change_product",
                               "description": {
-                                "en": "Presents possible resolutions expected by the complainant.",
-                                "pt": "Apresenta as possíveis resoluções esperadas por quem reclama.",
-                                "es": "posibles resoluciones esperadas por quien reclama."
-                              }
+                                "en": "Presents possible resolutions expected by the complainant. It can take one of the following values:",
+                                "pt": "Apresenta as possíveis resoluções esperadas por quem reclama. Pode assumir um dos seguintes valores:",
+                                "es": "Muestra las posibles resoluciones esperadas por quien reclama. Puede tomar alguno de los siguientes valores:"
+                              },
+                              "enum": [
+                                {
+                                  "title": "refund",
+                                  "description": {
+                                    "en": "The user expects the money to be refunded.",
+                                    "pt": "A pessoa usuária espera que o dinheiro seja devolvido.",
+                                    "es": "La persona usuaria espera que se le devuelva el dinero."
+                                  }
+                                },
+                                {
+                                  "title": "product",
+                                  "description": {
+                                    "en": "The user expects the product to be delivered.",
+                                    "pt": "A pessoa usuária espera que o produto seja entregue.",
+                                    "es": "La persona usuaria espera que el producto sea entregado."
+                                  }
+                                },
+                                {
+                                  "title": "change_product",
+                                  "description": {
+                                    "en": "The user expects the product to be exchanged.",
+                                    "pt": "A pessoa usuária espera que o produto seja trocado.",
+                                    "es": "La persona usuaria espera que el producto sea cambiado."
+                                  }
+                                },
+                                {
+                                  "title": "return_product",
+                                  "description": {
+                                    "en": "The user will wait for the return of the product to receive the refund.",
+                                    "pt": "A pessoa usuária irá esperar a devolução do produto para poder receber a devolução do dinheiro.",
+                                    "es": "La persona usuaria esperará la devolución del producto para poder recibir el dinero de vuelta."
+                                  }
+                                }
+                              ]
                             }
                           },
                           "rules_engine_triage": {
