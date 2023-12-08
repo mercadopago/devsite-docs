@@ -1098,7 +1098,7 @@
                               "description": {
                                 "en": "Displays the message text associated with the complaim.",
                                 "pt": "Exibe o texto da mensagem associada à reclamação.",
-                                "es": "Presenta el texto del mensaje asociado con lo reclamo."
+                                "es": "Muestra el texto del mensaje asociado con el reclamo."
                               }
                             }
                           }
@@ -1123,9 +1123,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": "This endpoint, through a valid token, allows for responding and attaching files to the messages associated with the claim.",
-            "pt": "Este endpoint permite, por meio de um token válido, responder e anexar arquivos de imagem as mensagens associados à reclamação.",
-            "es": "Este endpoint permite, mediante un token válido, responder y adjuntar archivos de imagen a los mensajes asociados al reclamo."
+            "en": "This endpoint allows, through a valid token, attaching image files to the messages that will be associated with the complaint.",
+            "pt": "Este endpoint permite anexar, por meio de um token válido, anexar arquivos de imagem as mensagens que serão associados à reclamação.",
+            "es": "Este endpoint permite, mediante un token válido, adjuntar archivos de imagen a los mensajes que se asociarán con el reclamo."
           },
           "parameters": [
             {
@@ -1205,9 +1205,9 @@
             }
           },
           "title": {
-            "en": "Answer messages and attach files",
-            "pt": "Responder mensagens e anexar arquivos",
-            "es": "Responder mensajes y adjuntar archivos"
+            "en": "Attach files to the message",
+            "pt": "Anexar arquivos à mensagem",
+            "es": "Adjuntar archivos al mensaje"
           }
         }
       },
@@ -1217,9 +1217,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": ".",
-            "pt": ".",
-            "es": "Se envía un mensaje habiendo previamente adjuntado un archivo."
+            "en": "This endpoint allows, through a valid token, sending and associating messages with attached image files to the claim",
+            "pt": "Este endpoint permite enviar e associar à reclamação, por meio de um token válido, mensagens com arquivos de imagens anexados",
+            "es": "Este endpoint permite enviar y asociar al reclamo, mediante un token válido, mensajes con archivos de imágenes adjuntos."
           },
           "parameters": [
             {
@@ -1244,12 +1244,12 @@
               "name": "application_id",
               "schema": {
                 "type": "string",
-                "example": "file=@/Users/user/Desktop/file.jpg"
+                "example": "123456789"
               },
               "description": {
-                "en": ".",
-                "pt": ".",
-                "es": "\"\""
+                "en": "This is the client unique identificator who initiated the claim.",
+                "pt": "Identificador único do cliente que iniciou a reclamação.",
+                "es": "Identificador único del cliente que inició el reclamo."
               }
             }
           ],
@@ -1268,29 +1268,29 @@
                       "type": "string",
                       "example": "respondent",
                       "description": {
-                        "en": ".",
-                        "pt": ".",
-                        "es": "Player hacia quién va dirigido el mensaje."
+                        "en": "Person to whom the message associated with the complaint was sent.",
+                        "pt": "Pessoa para quem a mensagem associada à reclamação foi enviada.",
+                        "es": "Persona a la que se envió el mensaje asociado al reclamo."
                       }
                     },
                     "message": {
                       "type": "string",
                       "example": "Mensaje de prueba",
                       "description": {
-                        "en": ".",
-                        "pt": ".",
-                        "es": "Mensaje a enviar"
+                        "en": "Displays the message text associated with the complaim.",
+                        "pt": "Exibe o texto da mensagem associada à reclamação.",
+                        "es": "Muestra el texto del mensaje asociado con el reclamo."
                       }
                     },
                     "attachments": {
                       "type": "array",
                       "items": {
                         "type": "string",
-                        "example": "Mensaje de prueba",
+                        "example": "WhatsApp Image 2020-09-22 at 15.37.13.jpeg",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "Mensaje a enviar"
+                          "en": "Original name of the image file attached to the message associated with the claim.",
+                          "pt": "Nome original do arquivo de imagem anexado à mensagem associada à reclamação.",
+                          "es": "Nombre original del archivo de imagen adjunto al mensaje asociado al reclamo."
                         }
                       }
                     }
@@ -1315,9 +1315,9 @@
                         "type": "number",
                         "example": 62229132,
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "ID del mensaje posteado"
+                          "en": "Displays the ID of the message sent and associated with the claim.",
+                          "pt": "Exibe o ID da mensagem enviada e associada à reclamação.",
+                          "es": "Muestra el ID del mensaje enviado y asociado al reclamo."
                         }
                       }
                     }
@@ -1327,9 +1327,9 @@
             }
           },
           "title": {
-            "en": ".",
-            "pt": ".",
-            "es": "Post de Message con el attachment previamente adjuntado"
+            "en": "Send message with file",
+            "pt": "Enviar mensaje con archivo",
+            "es": "Enviar mensagem com arquivo"
           }
         }
       },
@@ -1487,9 +1487,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": ".",
-            "pt": ".",
-            "es": "Este endpoint permite responder mensajes y adjuntar archivos"
+            "en": "This endpoint allows searching, through a valid token, requesting mediation in the claim opened by the user.",
+            "pt": "Este endpoint permite solicitar, mediante un token válido, uma mediação na reclamação aberta pela pessoa usuária.",
+            "es": "Este endpoint permite buscar, mediante un token válido, solicitar mediación en el reclamo abierto por la persona usuaria."
           },
           "parameters": [
             {
@@ -1523,18 +1523,18 @@
                         "type": "number",
                         "example": 201,
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "."
+                          "en": "Shows the status of the mediation requested in the claim opened by the user.",
+                          "pt": "Exibe o status da mediação solicitada na reclamação aberta pela pessoa usuária.",
+                          "es": "Exhibe el estado de la mediación solicitada en el reclamo abierto por la persona usuaria."
                         }
                       },
                       "message": {
                         "type": "string",
                         "example": "DISPUTE_CREATED",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "."
+                          "en": "Displays the message related to the status of the mediation requested in the claim.",
+                          "pt": "Apresenta a mensagem relacionada à situação da mediação solicitada na reclamação.",
+                          "es": "Muestra el mensaje relacionado con la situación de la mediación solicitada en el reclamo."
                         }
                       }
                     }
@@ -1544,9 +1544,9 @@
             }
           },
           "title": {
-            "en": ".",
-            "pt": ".",
-            "es": "Solicitar mediación"
+            "en": "Request claim mediation",
+            "pt": "Solicitar mediação da reclamação",
+            "es": "Solicitar mediación del reclamo"
           }
         }
       },
