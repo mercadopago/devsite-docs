@@ -907,6 +907,11 @@
                         },
                         "attachments": {
                           "type": "array",
+                          "description": {
+                            "en": "Presents information about the file attached to the message associated with the claim.",
+                            "pt": "Apresenta informações sobre o arquivo de imagem anexado à mensagem associada à reclamação.",
+                            "es": "Muestra información sobre el archivo de imagen adjunto al mensaje asociado al reclamo."
+                          },
                           "items": {
                             "type": "object",
                             "properties": {
@@ -921,7 +926,7 @@
                               },
                               "original_filename": {
                                 "type": "string",
-                                "example": "F8FB05C5-1D67-4B99-8E7D-3FE1EB3DBEBC.jpeg",
+                                "example": "Captura de Tela 2019-07-30 a?s 09.45.40.png",
                                 "description": {
                                   "en": "Original name of the image file attached to the message associated with the claim.",
                                   "pt": "Nome original do arquivo de imagem anexado à mensagem associada à reclamação.",
@@ -1288,9 +1293,9 @@
                         "type": "string",
                         "example": "WhatsApp Image 2020-09-22 at 15.37.13.jpeg",
                         "description": {
-                          "en": "Original name of the image file attached to the message associated with the claim.",
-                          "pt": "Nome original do arquivo de imagem anexado à mensagem associada à reclamação.",
-                          "es": "Nombre original del archivo de imagen adjunto al mensaje asociado al reclamo."
+                          "en": "File attached to the message associated with the claim.",
+                          "pt": "Arquivo de imagem anexado à mensagem associada à reclamação.",
+                          "es": "Archivo de imagen adjunto al mensaje asociado al reclamo."
                         }
                       }
                     }
@@ -1328,8 +1333,8 @@
           },
           "title": {
             "en": "Send message with file",
-            "pt": "Enviar mensaje con archivo",
-            "es": "Enviar mensagem com arquivo"
+            "pt": "Enviar mensagem com arquivo ",
+            "es": "Enviar mensaje con archivo"
           }
         }
       },
@@ -1488,7 +1493,7 @@
           ],
           "description": {
             "en": "This endpoint allows searching, through a valid token, requesting mediation in the claim opened by the user.",
-            "pt": "Este endpoint permite solicitar, mediante un token válido, uma mediação na reclamação aberta pela pessoa usuária.",
+            "pt": "Este endpoint permite solicitar, mediante um token válido, uma mediação na reclamação aberta pela pessoa usuária.",
             "es": "Este endpoint permite buscar, mediante un token válido, solicitar mediación en el reclamo abierto por la persona usuaria."
           },
           "parameters": [
@@ -1721,9 +1726,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": ".",
-            "pt": ".",
-            "es": "Este endpoint permite obtener evidencias del reclamo"
+            "en": "This endpoint allows, through a valid token, obtaining evidence of the order that generated the claim, such as order shipping information and attached image files associated with the claim.",
+            "pt": "Este endpoint permite obter, mediante um token válido, evidências do pedido que gerou a reclamação como, por exemplo, informações de envio do pedido e de anexos de imagens associados à reclamação.",
+            "es": "Este endpoint permite obtener, mediante un token válido, evidencias del pedido que generó el reclamo, como información de envío del pedido y archivos de imágenes adjuntos asociados al reclamo."
           },
           "parameters": [
             {
@@ -1757,61 +1762,66 @@
                       "properties": {
                         "attachments": {
                           "type": "array",
+                          "description": {
+                            "en": "Presents information about the file attached to the message associated with the claim.",
+                            "pt": "Apresenta informações sobre o arquivo de imagem anexado à mensagem associada à reclamação.",
+                            "es": "Muestra información sobre el archivo de imagen adjunto al mensaje asociado al reclamo."
+                          },
                           "items": {
                             "type": "object",
                             "properties": {
                               "filename": {
                                 "type": "string",
-                                "example": null,
+                                "example": "8007ee20-be67-471f-9e59-e32d9ba02fae_239628932.jpeg",
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": "Nombre del archivo"
+                                  "en": "Current name (hashed - used for retrieving the attachment) of the image file attached to the message associated with the claim.",
+                                  "pt": "Nome atual (hashado - utilizado para recuperar o anexo) do arquivo de imagem anexado à mensagem associada à reclamação.",
+                                  "es": "Nombre actual (hasheado - utilizado para recuperar el attachment) del archivo de imagen adjunto al mensaje asociado al reclamo."
                                 }
                               },
                               "original_filename": {
                                 "type": "string",
                                 "example": "Captura de Tela 2019-07-30 a?s 09.45.40.png",
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": "Nombre original del archivo"
+                                  "en": "Original name of the image file attached to the message associated with the claim.",
+                                  "pt": "Nome original do arquivo de imagem anexado à mensagem associada à reclamação.",
+                                  "es": "Nombre original del archivo de imagen adjunto al mensaje asociado al reclamo."
                                 }
                               },
                               "size": {
                                 "type": "number",
-                                "example": 63337,
+                                "example": 1880609,
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": "Tamaño del archivo en bytes"
-                                }
-                              },
-                              "date_created": {
-                                "type": "string",
-                                "example": null,
-                                "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": "Fecha de creación del archivo"
+                                  "en": "Size (in bytes) of the image file attached to the message associated with the claim.",
+                                  "pt": "Tamanho (em bytes) do arquivo de imagem anexado à mensagem associada à reclamação.",
+                                  "es": "Tamaño (en bytes) del archivo de imagen adjunto al mensaje asociado al reclamo."
                                 }
                               },
                               "type": {
                                 "type": "string",
-                                "example": "image/png",
+                                "example": "image/jpeg",
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": "Tipo del archivo"
+                                  "en": "Type of image file attached to the message associated with the claim.",
+                                  "pt": "Tipo do arquivo de imagem anexado à mensagem associada à reclamação.",
+                                  "es": "Tipo de archivo de imagen adjunto al mensaje asociado al reclamo."
+                                }
+                              },
+                              "date_created": {
+                                "type": "string",
+                                "example": "2020-07-22T20:43:15.000-04:00",
+                                "description": {
+                                  "en": "Date when the image file was attached to the message associated with the complaint.",
+                                  "pt": "Data em que o arquivo de imagem foi anexado à mensagem que está associada à reclamação.",
+                                  "es": "Fecha en que se adjuntó el archivo de imagen al mensaje que está asociado al reclamo."
                                 }
                               },
                               "file_url": {
                                 "type": "string",
-                                "example": "/mediations/claims/attachments/render/193294183",
+                                "example": "https://fury-storage-private-default.s3.amazonaws.com/mediations-api-core/attachment2/767b79a6-88c8-4fa4-8d95-2cb78fcd897f.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA2W4YYFSFIIM7ONWJ%2F20201009%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20201009T174026Z&X-Amz-Expires=43200&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEA8aCXVzLWVhc3QtMSJHMEUCIBznL6LSjtxZx2rmNacevS3fkUtCntzn8hEERS3I9zGcAiEArLoRIu6slpEVHMaKK2%2B3LaXK5vJeEVlwmQ1en1xBlswqtAMIRxABGgw3MzYzNzAzNzE3MjIiDN38MnchbBVYZCS%2BfiqRA9sgC51NLCQ0stU6s2Dek7gt8JmSth7oYLHE8v1WhK3WaiBfe%2FV6LqnrqJcGIikCXr05GqQalWZQLITG1mwC%2Fkx6x5XL5jKFw67lXUvoZzmctRoQPpXpA6MJBTvdCZJKifAS2grLExBJ7KUrgGH6MCxiHpZwm5cO1VP9E5ETFcOTtVzgJtSU0TX70Z4%2BVZPwbxbuEnnqCuW61MZkMvT4dF6oVkZZBR8JuaaiM4w17FV%2B%2Bzt3l39EP9iZdv7NG6G6ZFjvL5UgkVfOm0Bn2w6JONEl8upiOqQN1voen8TugywgWm683isabg1LK2c5GNVWR4qEYbnpS2jZhd732IuDgl1De1V93O5WW2Xf0HGqXhIWYHf9ZDViwWrMXQc5VRQwDIukAgwIy5%2FiBUEwjNBavu4eiWcqtVIQ8OxH9CJIBrQMgPaB%2FtV9LZRGAH24ZwcBD%2FEu%2BEWEDPnR6giE24nAAkWAMlhPQI5NKGGy6y4SLxJ5KalD5yb4Twi0W%2Fvj7bUxfYBSebAn%2B4zldwvFPzWwJRxbMMTdgfwFOusBof6%2FydFCa12JdZERNpiC49pjSmal6DP7rl91JmwVKzG%2FIIENnlBIjZ1yvEtFWy2WcEDqnn2OfEeRc5vop%2FUHnRo3i1TEC8IHs7ECCwwWcf6UAB0%2FUXL8fGj6uQ7KuQ7DLphrZBMfpUz8JXRx1FVRKMWioszeYfL9dQ%2B24GDsESAN83y%2B19ZRdy727X7GsvnZQvdWo7zHQT4zXDmJB0RFtMHwHYtALsGHUyymyA%2FaQjfnbnccvesgGvLGpqdwmXZ0QFMmNobOlJA4STZY%2FejLulxq%2BNhmrvih83%2BSn5Q0043c2%2BzLYeSGs8jUJg%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=cb9a006b693e4b4e17948be0ccbb28739627daf0766f521cb98a2e5643ab9229",
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": "URL del archivo"
+                                  "en": "URL where you can get the rendered image file.",
+                                  "pt": "URL em que será possível obter o arquivo de imagem renderizado.",
+                                  "es": "URL donde puede obtener el archivo de imagen renderizada."
                                 }
                               }
                             }
@@ -1821,90 +1831,108 @@
                           "type": "string",
                           "example": "shipping_evidence",
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "Es el tipo de demostración. Los valores esperados para este campo son: shipping_evidence cuando el vendedor ya tiene la prueba de envío o handling_shipping_evidence que debe usarse cuando existe un previsión de publicaciones."
-                          }
+                            "en": "Presents the type of evidence of sending the request related to the claim. It can take one of the following values:",
+                            "pt": "Apresenta o tipo de evidência de envio do pedido relacionado à reclamação. Pode assumir um dos seguintes valores:",
+                            "es": "Muestra el tipo de evidencia de envío del pedido relacionado con el reclamo. Puede tomar alguno de los siguientes valores:"
+                          },
+                          "enum": [
+                            {
+                              "title": "shipping_evidence",
+                              "description": {
+                                "en": "The seller has an evidence that the order was shipped.",
+                                "pt": "O vendedor tem uma prova referente ao envio do pedido.",
+                                "es": "El vendedor tiene una prueba relacionada con el envío del pedido."
+                              }
+                            },
+                            {
+                              "title": "handling_shipping_evidence",
+                              "description": {
+                                "en": "There is still no evidence of sending the order, but this information is expected.",
+                                "pt": "Ainda não há uma prova de envio do pedido, mas há uma previsão desta informação.",
+                                "es": "Aún no hay una prueba de envío del pedido, pero hay una previsión de esta información."
+                              }
+                            }
+                          ]
                         },
                         "date_shipped": {
                           "type": "string",
                           "example": "2018-03-07T05:00:00Z",
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "Fecha de envío."
+                            "en": "Displays the shipping date of the order associated with the claim.",
+                            "pt": "Apresenta a data de envio do pedido associado à reclamação.",
+                            "es": "Muestra la fecha de envío del pedido asociado al reclamo."
                           }
                         },
                         "date_delivered": {
                           "type": "string",
                           "example": null,
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "Fecha de entrega."
+                            "en": "Displays the delivery date of the order associated with the claim.",
+                            "pt": "Exibe a data de entrega do pedido associado à reclamação.",
+                            "es": "Muestra la fecha de entrega del pedido asociado al reclamo."
                           }
                         },
                         "destination_agency": {
                           "type": "string",
                           "example": null,
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "nombre de la agencia de destino"
+                            "en": "Informs the name of the agency to which the order is being sent.",
+                            "pt": "Informa o nome da agência para a qual o pedido está sendo enviado.",
+                            "es": "Informa el nombre de la agencia a la que se envía el pedido."
                           }
                         },
                         "receiver_email": {
                           "type": "string",
                           "example": null,
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "correo electrónico del destinatario del pedido digital"
+                            "en": "Email of the recipient of the order associated with the claim.",
+                            "pt": "E-mail do destinatário do pedido associado à reclamação.",
+                            "es": "Email del destinatario del pedido asociado al reclamo."
                           }
                         },
                         "receiver_id": {
                           "type": "string",
                           "example": null,
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "documento de quién recibió el producto"
+                            "en": "Displays a personal document number of the person who received the product.",
+                            "pt": "Exibe um número de documento pessoal de quem recebeu o produto.",
+                            "es": "Muestra un número de documento personal de quien recibió el producto."
                           }
                         },
                         "receiver_name": {
                           "type": "string",
                           "example": null,
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "nombre del destinatario"
+                            "en": "Displays the name of the order recipient.",
+                            "pt": "Apresenta o nome do destinatário do pedido.",
+                            "es": "Presenta el nombre del destinatario del pedido."
                           }
                         },
                         "shipping_company_name": {
                           "type": "string",
                           "example": "servientrega",
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "nombre del transportista"
+                            "en": "Name of the company responsible for transporting the order.",
+                            "pt": "Nome da empresa responsável pelo transporte do pedido.",
+                            "es": "Nombre de la empresa responsable del transporte del pedido."
                           }
                         },
                         "shipping_method": {
                           "type": "string",
                           "example": "mail",
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "Refiere a cómo enviaron el producto, por correo, encomienda (por un transportista), entrega personal (por una persona) o por email (correo electrónico)."
+                            "en": "Refers to the method of shipping the product, which can be: order (by tracking), personal delivery (by person) or by email (e-mail).",
+                            "pt": "Refere-se à forma de envio do produto, podendo ser: encomenda (por transportadora), entrega pessoal (por pessoa) ou por e-mail (e-mail).",
+                            "es": "Refiere a cómo enviaron el producto, que puede ser: encomienda (por un transportista), entrega personal (por una persona) o por email (correo electrónico)."
                           }
                         },
                         "tracking_number": {
                           "type": "string",
                           "example": "132456787",
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "Número de seguimiento"
+                            "en": "Provides the order delivery tracking number.",
+                            "pt": "Informa o número de rastreio da entrega do pedido.",
+                            "es": "Informa el número de seguimiento del envío del pedido."
                           }
                         }
                       }
@@ -1915,9 +1943,9 @@
             }
           },
           "title": {
-            "en": ".",
-            "pt": ".",
-            "es": "Obtener evidencias del reclamo"
+            "en": "Get shipping evidence",
+            "pt": "Obter evidências do envio",
+            "es": "Obtener evidencias del envío"
           }
         }
       },
@@ -1927,9 +1955,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": ".",
-            "pt": ".",
-            "es": "Este endpoint permite cargar evidencias de envíos. Para una entrega por correo son obligatorios los campos \"shipping_company_name\" y \"date_shipped\" y opcional \"tracking_number\" y \"attachments\". Para una entrega por encomienda los campos obligatorios son \"shipping_company_name\", \"destination_agency\", \"date_shipped\" y \"receiver_name\" y opcionales \"receiver_id\", \"tracking_number\", \"date_delivered\", \"receiver_email\" y \"attachments\". Para una entrega en mano es obligatorio el campo \"date_delivered\" y opcional el campo \"attachments\". Para entrega por email son obligatorios los campos \"receiver_email\" y \"date_shipped\" y opcional \"attachments\""
+            "en": "This endpoint allows you to upload, through a valid token, evidence of sending the order. For a delivery by mail the fields 'shipping_company_name' and 'date_shipped' are required, while for a delivery to order the required fields are 'shipping_company_name', 'destination_agency', 'date_shipped' and 'receiver_name' For delivery by email, the 'receiver_email' and 'date_shipped' fields are mandatory.",
+            "pt": "Este endpoint permite carregar, mediante um token válido, evidências de envio do pedido. Para uma entrega por correio, os campos 'shipping_company_name' e 'date_shipped' são obrigatórios, enquanto para uma entrega por encomenda os campos obrigatórios são 'shipping_company_name', 'destination_agency', 'date_shipped' e 'receiver_name' Para entrega por e-mail, os campos 'receiver_email' e 'date_shipped' são obrigatórios.",
+            "es": "Este endpoint permite cargar, mediante un token válido, evidencias de envío del pedido. Para una entrega por correo son obligatorios los campos 'shipping_company_name' y 'date_shipped', mientras una entrega por encomienda los campos obligatorios son 'shipping_company_name', 'destination_agency', 'date_shipped' y 'receiver_name'. Para entrega por email son obligatorios los campos 'receiver_email' y 'date_shipped'."
           },
           "parameters": [
             {
@@ -1958,10 +1986,10 @@
                       "items": {
                         "type": "string",
                         "example": "38f4e399-0f18-41e4-8f48-91aecd2dee1a_419059118.png",
-                        "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "Archivos"
+                       "description": {
+                          "en": "File attached to the message associated with the claim.",
+                          "pt": "Arquivo de imagem anexado à mensagem associada à reclamação.",
+                          "es": "Archivo de imagen adjunto al mensaje asociado al reclamo."
                         }
                       }
                     },
@@ -1969,99 +1997,108 @@
                       "type": "string",
                       "example": "shipping_evidence",
                       "description": {
-                        "en": ".",
-                        "pt": ".",
-                        "es": "Es el tipo de demostración. Los valores esperados para este campo son: \"shipping_evidence\" cuando el vendedor ya tiene la prueba de envío o \"handling_shipping_evidence\" que debe usarse cuando existe un previsión de publicaciones. En el segundo caso se puede enviar este campo junto con el campo \"handling_date\" especificando la fecha de envío prevista."
-                      }
+                        "en": "Presents the type of evidence of sending the request related to the claim. It can take one of the following values:",
+                        "pt": "Apresenta o tipo de evidência de envio do pedido relacionado à reclamação. Pode assumir um dos seguintes valores:",
+                        "es": "Muestra el tipo de evidencia de envío del pedido relacionado con el reclamo. Puede tomar alguno de los siguientes valores:"
+                      },
+                      "enum": [
+                        {
+                          "title": "shipping_evidence",
+                          "description": {
+                            "en": "The seller has an evidence that the order was shipped.",
+                            "pt": "O vendedor tem uma prova referente ao envio do pedido.",
+                            "es": "El vendedor tiene una prueba relacionada con el envío del pedido."
+                          }
+                        },
+                        {
+                          "title": "handling_shipping_evidence",
+                          "description": {
+                            "en": "There is still no evidence of sending the order, but this information is expected.",
+                            "pt": "Ainda não há uma prova de envio do pedido, mas há uma previsão desta informação.",
+                            "es": "Aún no hay una prueba de envío del pedido, pero hay una previsión de esta información."
+                          }
+                        }
+                      ]
                     },
                     "date_shipped": {
                       "type": "string",
-                      "example": "2018-03-07T05:00:01.858-03:00",
+                      "example": "2018-03-07T05:00:00Z",
                       "description": {
-                        "en": ".",
-                        "pt": ".",
-                        "es": "fecha de envío"
+                        "en": "Displays the shipping date of the order associated with the claim.",
+                        "pt": "Apresenta a data de envio do pedido associado à reclamação.",
+                        "es": "Muestra la fecha de envío del pedido asociado al reclamo."
                       }
                     },
                     "date_delivered": {
                       "type": "string",
-                      "example": "2018-03-07T05:00:01.858-03:00",
+                      "example": null,
                       "description": {
-                        "en": ".",
-                        "pt": ".",
-                        "es": "fecha de entrega"
-                      }
-                    },
-                    "shipping_company_name": {
-                      "type": "string",
-                      "example": "servientrega",
-                      "description": {
-                        "en": ".",
-                        "pt": ".",
-                        "es": "nombre del transportista"
-                      }
-                    },
-                    "shipping_method": {
-                      "type": "string",
-                      "example": "mail",
-                      "description": {
-                        "en": ".",
-                        "pt": ".",
-                        "es": "Refiere a cómo enviaron el producto, por correo, encomienda (por un transportista), entrega personal (por una persona) o por email (correo electrónico)."
-                      }
-                    },
-                    "tracking_number": {
-                      "type": "string",
-                      "example": "XX123456789XX",
-                      "description": {
-                        "en": ".",
-                        "pt": ".",
-                        "es": "Numero de seguimiento del paquete"
+                        "en": "Displays the delivery date of the order associated with the claim.",
+                        "pt": "Exibe a data de entrega do pedido associado à reclamação.",
+                        "es": "Muestra la fecha de entrega del pedido asociado al reclamo."
                       }
                     },
                     "destination_agency": {
                       "type": "string",
-                      "example": "Agencia",
+                      "example": null,
                       "description": {
-                        "en": ".",
-                        "pt": ".",
-                        "es": "nombre de la agencia de destino"
+                        "en": "Informs the name of the agency to which the order is being sent.",
+                        "pt": "Informa o nome da agência para a qual o pedido está sendo enviado.",
+                        "es": "Informa el nombre de la agencia a la que se envía el pedido."
                       }
                     },
-                    "receiver_name": {
+                    "receiver_email": {
                       "type": "string",
-                      "example": "John Doe",
+                      "example": null,
                       "description": {
-                        "en": ".",
-                        "pt": ".",
-                        "es": "nombre del destinatario"
+                        "en": "Email of the recipient of the order associated with the claim.",
+                        "pt": "E-mail do destinatário do pedido associado à reclamação.",
+                        "es": "Email del destinatario del pedido asociado al reclamo."
                       }
                     },
                     "receiver_id": {
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": ".",
-                        "pt": ".",
-                        "es": "documento de quién recibió el producto"
+                        "en": "Displays a personal document number of the person who received the product.",
+                        "pt": "Exibe um número de documento pessoal de quem recebeu o produto.",
+                        "es": "Muestra un número de documento personal de quien recibió el producto."
                       }
                     },
-                    "receiver_email": {
+                    "receiver_name": {
                       "type": "string",
-                      "example": "john.doe@provider.com",
+                      "example": null,
                       "description": {
-                        "en": ".",
-                        "pt": ".",
-                        "es": "correo electrónico del destinatario del pedido digital"
+                        "en": "Displays the name of the order recipient.",
+                        "pt": "Apresenta o nome do destinatário do pedido.",
+                        "es": "Presenta el nombre del destinatario del pedido."
                       }
                     },
-                    "handling_date": {
+                    "shipping_company_name": {
                       "type": "string",
-                      "example": "2018-03-07T05:00:01.858-03:00",
+                      "example": "servientrega",
                       "description": {
-                        "en": ".",
-                        "pt": ".",
-                        "es": "fecha de publicación"
+                        "en": "Name of the company responsible for transporting the order.",
+                        "pt": "Nome da empresa responsável pelo transporte do pedido.",
+                        "es": "Nombre de la empresa responsable del transporte del pedido."
+                      }
+                    },
+                    "shipping_method": {
+                      "type": "string",
+                      "example": "mail",
+                      "description": {
+                        "en": "Refers to the method of shipping the product, which can be: order (by tracking), personal delivery (by person) or by email (e-mail).",
+                        "pt": "Refere-se à forma de envio do produto, podendo ser: encomenda (por transportadora), entrega pessoal (por pessoa) ou por e-mail (e-mail).",
+                        "es": "Refiere a cómo enviaron el producto, que puede ser: encomienda (por un transportista), entrega personal (por una persona) o por email (correo electrónico)."
+                      }
+                    },
+                    "tracking_number": {
+                      "type": "string",
+                      "example": "132456787",
+                      "description": {
+                        "en": "Provides the order delivery tracking number.",
+                        "pt": "Informa o número de rastreio da entrega do pedido.",
+                        "es": "Informa el número de seguimiento del envío del pedido."
                       }
                     }
                   }
@@ -2085,61 +2122,66 @@
                       "properties": {
                         "attachments": {
                           "type": "array",
+                          "description": {
+                            "en": "Presents information about the file attached to the message associated with the claim.",
+                            "pt": "Apresenta informações sobre o arquivo de imagem anexado à mensagem associada à reclamação.",
+                            "es": "Muestra información sobre el archivo de imagen adjunto al mensaje asociado al reclamo."
+                          },
                           "items": {
                             "type": "object",
                             "properties": {
                               "filename": {
                                 "type": "string",
-                                "example": null,
+                                "example": "8007ee20-be67-471f-9e59-e32d9ba02fae_239628932.jpeg",
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": "Nombre del archivo"
+                                  "en": "Current name (hashed - used for retrieving the attachment) of the image file attached to the message associated with the claim.",
+                                  "pt": "Nome atual (hashado - utilizado para recuperar o anexo) do arquivo de imagem anexado à mensagem associada à reclamação.",
+                                  "es": "Nombre actual (hasheado - utilizado para recuperar el attachment) del archivo de imagen adjunto al mensaje asociado al reclamo."
                                 }
                               },
                               "original_filename": {
                                 "type": "string",
                                 "example": "Captura de Tela 2019-07-30 a?s 09.45.40.png",
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": "Nombre original del archivo"
+                                  "en": "Original name of the image file attached to the message associated with the claim.",
+                                  "pt": "Nome original do arquivo de imagem anexado à mensagem associada à reclamação.",
+                                  "es": "Nombre original del archivo de imagen adjunto al mensaje asociado al reclamo."
                                 }
                               },
                               "size": {
                                 "type": "number",
-                                "example": 63337,
+                                "example": 1880609,
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": "Tamaño del archivo en bytes"
+                                  "en": "Size (in bytes) of the image file attached to the message associated with the claim.",
+                                  "pt": "Tamanho (em bytes) do arquivo de imagem anexado à mensagem associada à reclamação.",
+                                  "es": "Tamaño (en bytes) del archivo de imagen adjunto al mensaje asociado al reclamo."
                                 }
                               },
                               "date_created": {
                                 "type": "string",
-                                "example": null,
+                                "example": "2020-07-22T20:43:15.000-04:00",
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": "Fecha de creación del archivo"
+                                  "en": "Date when the image file was attached to the message associated with the complaint.",
+                                  "pt": "Data em que o arquivo de imagem foi anexado à mensagem que está associada à reclamação.",
+                                  "es": "Fecha en que se adjuntó el archivo de imagen al mensaje que está asociado al reclamo."
                                 }
                               },
                               "type": {
                                 "type": "string",
-                                "example": "image/png",
+                                "example": "image/jpeg",
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": "Tipo del archivo"
+                                  "en": "Type of image file attached to the message associated with the claim.",
+                                  "pt": "Tipo do arquivo de imagem anexado à mensagem associada à reclamação.",
+                                  "es": "Tipo de archivo de imagen adjunto al mensaje asociado al reclamo."
                                 }
                               },
                               "file_url": {
                                 "type": "string",
-                                "example": "/mediations/claims/attachments/render/193294183",
+                                "example": "https://fury-storage-private-default.s3.amazonaws.com/mediations-api-core/attachment2/767b79a6-88c8-4fa4-8d95-2cb78fcd897f.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA2W4YYFSFIIM7ONWJ%2F20201009%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20201009T174026Z&X-Amz-Expires=43200&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEA8aCXVzLWVhc3QtMSJHMEUCIBznL6LSjtxZx2rmNacevS3fkUtCntzn8hEERS3I9zGcAiEArLoRIu6slpEVHMaKK2%2B3LaXK5vJeEVlwmQ1en1xBlswqtAMIRxABGgw3MzYzNzAzNzE3MjIiDN38MnchbBVYZCS%2BfiqRA9sgC51NLCQ0stU6s2Dek7gt8JmSth7oYLHE8v1WhK3WaiBfe%2FV6LqnrqJcGIikCXr05GqQalWZQLITG1mwC%2Fkx6x5XL5jKFw67lXUvoZzmctRoQPpXpA6MJBTvdCZJKifAS2grLExBJ7KUrgGH6MCxiHpZwm5cO1VP9E5ETFcOTtVzgJtSU0TX70Z4%2BVZPwbxbuEnnqCuW61MZkMvT4dF6oVkZZBR8JuaaiM4w17FV%2B%2Bzt3l39EP9iZdv7NG6G6ZFjvL5UgkVfOm0Bn2w6JONEl8upiOqQN1voen8TugywgWm683isabg1LK2c5GNVWR4qEYbnpS2jZhd732IuDgl1De1V93O5WW2Xf0HGqXhIWYHf9ZDViwWrMXQc5VRQwDIukAgwIy5%2FiBUEwjNBavu4eiWcqtVIQ8OxH9CJIBrQMgPaB%2FtV9LZRGAH24ZwcBD%2FEu%2BEWEDPnR6giE24nAAkWAMlhPQI5NKGGy6y4SLxJ5KalD5yb4Twi0W%2Fvj7bUxfYBSebAn%2B4zldwvFPzWwJRxbMMTdgfwFOusBof6%2FydFCa12JdZERNpiC49pjSmal6DP7rl91JmwVKzG%2FIIENnlBIjZ1yvEtFWy2WcEDqnn2OfEeRc5vop%2FUHnRo3i1TEC8IHs7ECCwwWcf6UAB0%2FUXL8fGj6uQ7KuQ7DLphrZBMfpUz8JXRx1FVRKMWioszeYfL9dQ%2B24GDsESAN83y%2B19ZRdy727X7GsvnZQvdWo7zHQT4zXDmJB0RFtMHwHYtALsGHUyymyA%2FaQjfnbnccvesgGvLGpqdwmXZ0QFMmNobOlJA4STZY%2FejLulxq%2BNhmrvih83%2BSn5Q0043c2%2BzLYeSGs8jUJg%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=cb9a006b693e4b4e17948be0ccbb28739627daf0766f521cb98a2e5643ab9229",
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": "URL del archivo"
+                                  "en": "URL where you can get the rendered image file.",
+                                  "pt": "URL em que será possível obter o arquivo de imagem renderizado.",
+                                  "es": "URL donde puede obtener el archivo de imagen renderizada."
                                 }
                               }
                             }
@@ -2149,90 +2191,108 @@
                           "type": "string",
                           "example": "shipping_evidence",
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "Es el tipo de demostración. Los valores esperados para este campo son: shipping_evidence cuando el vendedor ya tiene la prueba de envío o handling_shipping_evidence que debe usarse cuando existe un previsión de publicaciones."
-                          }
+                            "en": "Presents the type of evidence of sending the request related to the claim. It can take one of the following values:",
+                            "pt": "Apresenta o tipo de evidência de envio do pedido relacionado à reclamação. Pode assumir um dos seguintes valores:",
+                            "es": "Muestra el tipo de evidencia de envío del pedido relacionado con el reclamo. Puede tomar alguno de los siguientes valores:"
+                          },
+                          "enum": [
+                            {
+                              "title": "shipping_evidence",
+                              "description": {
+                                "en": "The seller has an evidence that the order was shipped.",
+                                "pt": "O vendedor tem uma prova referente ao envio do pedido.",
+                                "es": "El vendedor tiene una prueba relacionada con el envío del pedido."
+                              }
+                            },
+                            {
+                              "title": "handling_shipping_evidence",
+                              "description": {
+                                "en": "There is still no evidence of sending the order, but this information is expected.",
+                                "pt": "Ainda não há uma prova de envio do pedido, mas há uma previsão desta informação.",
+                                "es": "Aún no hay una prueba de envío del pedido, pero hay una previsión de esta información."
+                              }
+                            }
+                          ]
                         },
                         "date_shipped": {
                           "type": "string",
                           "example": "2018-03-07T05:00:00Z",
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "Fecha de envío"
+                            "en": "Displays the shipping date of the order associated with the claim.",
+                            "pt": "Apresenta a data de envio do pedido associado à reclamação.",
+                            "es": "Muestra la fecha de envío del pedido asociado al reclamo."
                           }
                         },
                         "date_delivered": {
                           "type": "string",
                           "example": null,
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "Fecha de entrega"
+                            "en": "Displays the delivery date of the order associated with the claim.",
+                            "pt": "Exibe a data de entrega do pedido associado à reclamação.",
+                            "es": "Muestra la fecha de entrega del pedido asociado al reclamo."
                           }
                         },
                         "destination_agency": {
                           "type": "string",
                           "example": null,
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "nombre de la agencia de destino"
+                            "en": "Informs the name of the agency to which the order is being sent.",
+                            "pt": "Informa o nome da agência para a qual o pedido está sendo enviado.",
+                            "es": "Informa el nombre de la agencia a la que se envía el pedido."
                           }
                         },
                         "receiver_email": {
                           "type": "string",
                           "example": null,
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "correo electrónico del destinatario del pedido digital"
+                            "en": "Email of the recipient of the order associated with the claim.",
+                            "pt": "E-mail do destinatário do pedido associado à reclamação.",
+                            "es": "Email del destinatario del pedido asociado al reclamo."
                           }
                         },
                         "receiver_id": {
                           "type": "string",
                           "example": null,
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "documento de quién recibió el producto"
+                            "en": "Displays a personal document number of the person who received the product.",
+                            "pt": "Exibe um número de documento pessoal de quem recebeu o produto.",
+                            "es": "Muestra un número de documento personal de quien recibió el producto."
                           }
                         },
                         "receiver_name": {
                           "type": "string",
                           "example": null,
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "nombre del destinatario"
+                            "en": "Displays the name of the order recipient.",
+                            "pt": "Apresenta o nome do destinatário do pedido.",
+                            "es": "Presenta el nombre del destinatario del pedido."
                           }
                         },
                         "shipping_company_name": {
                           "type": "string",
                           "example": "servientrega",
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "nombre del transportista"
+                            "en": "Name of the company responsible for transporting the order.",
+                            "pt": "Nome da empresa responsável pelo transporte do pedido.",
+                            "es": "Nombre de la empresa responsable del transporte del pedido."
                           }
                         },
                         "shipping_method": {
                           "type": "string",
                           "example": "mail",
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "refiere a cómo enviaron el producto, por correo, encomienda (por un transportista), entrega personal (por una persona) o por email (correo electrónico)."
+                            "en": "Refers to the method of shipping the product, which can be: order (by tracking), personal delivery (by person) or by email (e-mail).",
+                            "pt": "Refere-se à forma de envio do produto, podendo ser: encomenda (por transportadora), entrega pessoal (por pessoa) ou por e-mail (e-mail).",
+                            "es": "Refiere a cómo enviaron el producto, que puede ser: encomienda (por un transportista), entrega personal (por una persona) o por email (correo electrónico)."
                           }
                         },
                         "tracking_number": {
                           "type": "string",
                           "example": "132456787",
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "ingrese el número de seguimiento"
+                            "en": "Provides the order delivery tracking number.",
+                            "pt": "Informa o número de rastreio da entrega do pedido.",
+                            "es": "Informa el número de seguimiento del envío del pedido."
                           }
                         }
                       }
@@ -2243,9 +2303,9 @@
             }
           },
           "title": {
-            "en": ".",
-            "pt": ".",
-            "es": "Cargar evidencias de envíos"
+            "en": "Upload shipping evidence",
+            "pt": "Carregar evidências do envio",
+            "es": "Cargar evidencias de envío"
           }
         }
       },
@@ -2698,7 +2758,7 @@
           },
           "title": {
             "en": "Get claim notifications",
-            "pt": "Obter notificações de reclamos",
+            "pt": "Obter notificações da reclamação",
             "es": "Obtener notificaciones del reclamo"
           }
         }
