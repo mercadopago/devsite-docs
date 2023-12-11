@@ -2721,7 +2721,7 @@
           }
         }
       },
-      "/$DATA.RESOURCE": {
+      "/data_resource": {
         "get": {
           "tags": [
             "subscriptions"
