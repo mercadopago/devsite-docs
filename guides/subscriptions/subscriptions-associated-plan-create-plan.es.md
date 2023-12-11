@@ -2,23 +2,17 @@
 
 Las suscripciones con plan asociado se utilizan cuando es necesario utilizar la misma suscripción en diferentes ocasiones para organizarlas en grupos identificables. Por ejemplo, para una suscripción mensual y anual a un gimnasio.
 
-> NOTE
->
-> Importante
->
-> Una Suscripción con Plan siempre deberá ser creada con su `card_token_id` y en status `Authorized`.
+La integración de **suscripciones con plan asociado** se realiza en dos pasos. En el primero es necesario **crear un plan** que irá asociado a la suscripción y en el segundo, la **creación de la suscripción**. 
 
 ## Crear plan
-
-La integración de **suscripciones con plan asociado** se realiza en dos pasos. En el primero es necesario **crear un plan** que irá asociado a la suscripción y en el segundo, la **creación de la suscripción**. 
 
 El plan de suscripción te permite definir, entre otros atributos, el título, el valor y la frecuencia de las suscripciones creadas por el vendedor. Para crear un plan y asociarlo con una suscripción, mira el endpoint [/preapproval_plan](/developers/es/reference/subscriptions/_preapproval_plan/post), completa los atributos necesarios y ejecuta el request o, si prefieres, usa el curl a continuación.
 
 > NOTE
 >
-> Importante
 >
-> Al ejecutar la API, se creará el plan y tendrás acceso a `preapproval_plan_id`, **que en la respuesta de la API se mostrará como `id`.** Este **atributo es obligatorio** para crear la suscripción. 
+>
+> Al ejecutar la API, se creará el plan y tendrás acceso a `preapproval_plan_id`, **que en la respuesta de la API se mostrará como `id`**. Este **atributo es obligatorio** para crear la suscripción. 
 
 [[[
 ```curl
@@ -54,6 +48,12 @@ curl -X POST \
 }'
 ```
 ]]]
+
+> WARNING
+>
+> Importante
+>
+> Una _Suscripción con plan asociado_ siempre deberá ser creada con su `card_token_id` y en status `Authorized`.
 
 ## Crear suscripción
 

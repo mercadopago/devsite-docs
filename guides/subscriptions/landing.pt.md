@@ -68,7 +68,7 @@ available_payments: credit, debit, mercadopago
 ---
 available_payments: credit, debit, mercadopago, efectivo, atm, spei
 
-----
+---
 ------------
 
 ----[mlu]---- 
@@ -76,7 +76,7 @@ available_payments: credit, debit, mercadopago, efectivo, atm, spei
 ---
 available_payments: credit, debit, mercadopago, efectivo
 
-----
+---
 ------------
 
 ----[mco]---- 
@@ -84,7 +84,7 @@ available_payments: credit, debit, mercadopago, efectivo
 ---
 available_payments: mercadopago, pse, credit, debit, efectivo
 
-----
+---
 ------------
 
 ----[mlc]---- 
@@ -92,7 +92,7 @@ available_payments: mercadopago, pse, credit, debit, efectivo
 ---
 available_payments: mercadopago, credit, debit
 
-----
+---
 ------------
 
 ----[mpe]---- 
@@ -100,6 +100,6 @@ available_payments: mercadopago, credit, debit
 ---
 available_payments: mercadopago, atm, credit, debit
 
-----
+---
 ------------
 > Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.](/developers/pt/docs/sales-processing/payment-methods)
