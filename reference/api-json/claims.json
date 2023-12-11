@@ -1726,9 +1726,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": "This endpoint allows, through a valid token, obtaining evidence of the order that generated the claim, such as order shipping information and attached image files associated with the claim.",
-            "pt": "Este endpoint permite obter, mediante um token válido, evidências do pedido que gerou a reclamação como, por exemplo, informações de envio do pedido e de anexos de imagens associados à reclamação.",
-            "es": "Este endpoint permite obtener, mediante un token válido, evidencias del pedido que generó el reclamo, como información de envío del pedido y archivos de imágenes adjuntos asociados al reclamo."
+            "en": "This endpoint allows, through a valid token, obtaining evidence of the the claim, such as order shipping information and attached image files associated with the claim.",
+            "pt": "Este endpoint permite obter, mediante um token válido, evidências da reclamação como, por exemplo, informações de envio do pedido e de anexos de imagens associados à reclamação.",
+            "es": "Este endpoint permite obtener, mediante un token válido, evidencias del reclamo, como información de envío del pedido y archivos de imágenes adjuntos asociados al reclamo."
           },
           "parameters": [
             {
@@ -1943,9 +1943,9 @@
             }
           },
           "title": {
-            "en": "Get shipping evidence",
-            "pt": "Obter evidências do envio",
-            "es": "Obtener evidencias del envío"
+            "en": "Get claim evidence",
+            "pt": "Obter evidências da reclamação",
+            "es": "Obtener evidencias del reclamo"
           }
         }
       },
