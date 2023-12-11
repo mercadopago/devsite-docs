@@ -847,7 +847,7 @@
           }
         }
       },
-      "/claims/$CLAIM_ID/messages": {
+      "/claims/{claim_id}/messages": {
         "get": {
           "tags": [
             "subscriptions"
@@ -1122,7 +1122,7 @@
           }
         }
       },
-      "/claims/$CLAIM_ID/attachments": {
+      "/claims/{claim_id}/attachments": {
         "post": {
           "tags": [
             "subscriptions"
@@ -1216,7 +1216,7 @@
           }
         }
       },
-      "/claims/$CLAIM_ID/actions/message": {
+      "/claims/{claim_id}/actions/message": {
         "post": {
           "tags": [
             "subscriptions"
@@ -1338,7 +1338,7 @@
           }
         }
       },
-      "/claims/$CLAIM_ID/attachments/$ATTACH_ID/download": {
+      "/claims/{claim_id}/attachments/{attach_id}/download": {
         "get": {
           "tags": [
             "subscriptions"
@@ -1380,7 +1380,7 @@
           }
         }
       },
-      "/claims/$CLAIM_ID/attachments/$ATTACH_ID": {
+      "/claims/{claim_id}/attachments/{attach_id}": {
         "get": {
           "tags": [
             "subscriptions"
@@ -1486,7 +1486,7 @@
           }
         }
       },
-      "/claims/$CLAIM_ID/actions/open_dispute": {
+      "/claims/{claim_id}/actions/open_dispute": {
         "post": {
           "tags": [
             "subscriptions"
@@ -1555,7 +1555,7 @@
           }
         }
       },
-      "/claims/$CLAIM_ID/expected_resolutions": {
+      "/claims/{claim_id}/expected_resolutions": {
         "get": {
           "tags": [
             "subscriptions"
@@ -1720,7 +1720,7 @@
           }
         }
       },
-      "/claims/$CLAIM_ID/evidences": {
+      "/claims/{claim_id}/evidences": {
         "get": {
           "tags": [
             "subscriptions"
@@ -1949,7 +1949,7 @@
           }
         }
       },
-      "/claims/$CLAIM_ID/actions/evidences": {
+      "/claims/{claim_id}/actions/evidences": {
         "post": {
           "tags": [
             "subscriptions"
@@ -2309,7 +2309,7 @@
           }
         }
       },
-      "/claims/$CLAIM_ID/status_history": {
+      "/claims/{claim_id}/status_history": {
         "get": {
           "tags": [
             "subscriptions"
@@ -2477,7 +2477,7 @@
           }
         }
       },
-      "/post-purchase/sites/$SITE_ID/v2/reasons/$REASON_ID": {
+      "/post-purchase/sites/{site_id}/v2/reasons/{reason_id}": {
         "get": {
           "tags": [
             "subscriptions"
