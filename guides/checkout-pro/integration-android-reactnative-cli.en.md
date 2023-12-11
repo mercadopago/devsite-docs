@@ -4,7 +4,7 @@
 >
 > Important
 >
-> Before starting to integrate Checkout Pro for Mobile, you will need to have a preference created in your backend. If you haven't already, go to [Preference creation.](/developers/en/docs/checkout-pro/integrate-preferences)
+> Before starting to integrate Checkout Pro for Mobile, you will need to have a preference created in your backend. If you haven't already, go to [Create preference](/developers/en/docs/checkout-pro/integrate-preferences).
 
 When developing mobile apps with React Native, the need to display web content within the app often arises. To achieve this, there are several options, among which the use of Custom Tabs (for Android) and Safari View Controller (for iOS) stand out. These technologies allow web pages to be opened in a native browser embedded within the application, providing a smoother and more consistent browsing experience for users.
 
