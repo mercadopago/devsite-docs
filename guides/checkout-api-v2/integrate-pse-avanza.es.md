@@ -83,9 +83,7 @@ curl -X GET \
 ```
 ]]]
 
-Una vez obtenidos los medios de pago, podrás listar los bancos disponibles para pagos con PSE a través del campo `financial_institutions` dentro del objeto con `id=pse`, tal como se muestra en el ejemplo de respuesta a continuación. 
-
-Este listado de bancos será necesario para continuar con la integración durante la etapa [Listar bancos](/developers/es/docs/checkout-api/integration-configuration/pse#bookmark_listar_bancos).
+Una vez obtenidos los medios de pago, podrás listar los bancos disponibles para pagos con PSE a través del campo `financial_institutions` dentro del objeto con `id=pse`, tal como se muestra en el ejemplo de respuesta a continuación. Este listado de bancos será necesario para continuar con la integración durante la etapa [Listar bancos](/developers/es/docs/checkout-api/integration-configuration/pse#bookmark_listar_bancos).
 
 ```json
 [
@@ -128,6 +126,8 @@ Este listado de bancos será necesario para continuar con la integración durant
    }
 ]
 ```
+
+Para que la lista de los medios de pago sea consumida por el frontend en los siguientes pasos, deberás crear un nuevo endpoint `GET /payment_methods` en tu aplicación. 
 
 
 > CLIENT_SIDE
@@ -227,7 +227,6 @@ document.getElementById('form-checkout__personType').addEventListener('change', 
 });
 
 function updateSelectOptions(selectedValue){
-    console.log(selectedValue);
     const naturalDocTypes = [
         new Option('C.C', 'CC'),
         new Option('C.E.', 'CE'),
