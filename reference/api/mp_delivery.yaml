@@ -3344,9 +3344,9 @@ paths:
         por: Importação de catálogo
       description: This endpoint sends a catalog to be imported asynchronously to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards. It will return a 202 - Success response when all requests were sent successfully, or 206 - Partial Error if any post fails
       x-description-i18n:
-        eng: This endpoint sends a catalog to be imported asynchronously to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards. It will return a 202 - Success response when all requests were sent successfully, or 206 - Partial Error if any post fails
-        spa: Este endpoint importa un catálogo de manera asíncrona a una o más tiendas. Cada tienda genera un identificador de importación que se puede utilizar para comprobar el estado del proceso posteriormente.  Retornará una respuesta 202 - Success cuando todas las solicitudes se enviaron correctamente, o 206 - Partial Error en caso de que alguna publicación falle
-        por: Esse endpoint importa um catálogo de forma assíncrona para uma ou mais lojas. Cada loja gera um identificador de importação que pode ser usado para verificar o status do processo posteriormente. Retornará uma resposta 202 - Success quando todas as requisições forem enviadas corretamente ou 206 - Partial error caso alguma requisição falhe
+        eng: This endpoint sends a catalog to be imported asynchronously to one or more stores. Each store generates an import identifier that can be used to check the process status afterwards. The catalog must have at least 60% of its items with images. It will return a 202 - Success response when all requests were sent successfully, or 206 - Partial Error if any post fails
+        spa: Este endpoint importa un catálogo de manera asíncrona a una o más tiendas. Cada tienda genera un identificador de importación que se puede utilizar para comprobar el estado del proceso posteriormente. El catálogo debe tener al menos el 60% de sus ítems con imágenes. Retornará una respuesta 202 - Success cuando todas las solicitudes se enviaron correctamente, o 206 - Partial Error en caso de que alguna publicación falle
+        por: Esse endpoint importa um catálogo de forma assíncrona para uma ou mais lojas. Cada loja gera um identificador de importação que pode ser usado para verificar o status do processo posteriormente. O catálogo deve ter pelo menos 60% dos itens com imagens. Retornará uma resposta 202 - Success quando todas as requisições forem enviadas corretamente ou 206 - Partial error caso alguma requisição falhe
       requestBody:
         content:
           application/json:
@@ -3377,17 +3377,17 @@ paths:
                         example: "The most delicious burgers in town"
                         description: Optional string, that describes the catalog section.
                         x-description-i18n:
-                          eng: Optional string that describes the catalog section.
-                          spa: String opcional que describe la sección del catálogo.
-                          por: String opcional que descreve a seção do catálogo.
+                          eng: Optional string that describes the catalog section. Maximum length of 1020 characters.
+                          spa: String opcional que describe la sección del catálogo. Tamaño máximo de 1020 caracteres.
+                          por: String opcional que descreve a seção do catálogo. Tamanho máximo de 1020 caracteres.
                       name:
                         type: string
                         example: "Hamburguers"
                         description: Name of the section.
                         x-description-i18n:
-                          eng: Name of the section.
-                          spa: Nombre de la sección.
-                          por: Nome da seção.
+                          eng: Name of the section. Maximum length of 60 characters.
+                          spa: Nombre de la sección. Tamaño máximo de 60 caracteres.
+                          por: Nome da seção. Tamanho máximo de 60 caracteres.
                       items:
                         type: array
                         description: Array of objects containing the items to be imported into the section.
@@ -3402,33 +3402,33 @@ paths:
                               type: string
                               description: Optional string that describes the item.
                               x-description-i18n:
-                                eng: Optional string that describes the item.
-                                spa: String opcional que describe el ítem.
-                                por: String opcional que descreve o item.
+                                eng: Optional string that describes the item. Maximum length of 1020 characters.
+                                spa: String opcional que describe el ítem. Tamaño máximo de 1020 caracteres.
+                                por: String opcional que descreve o item. Tamanho máximo de 1020 caracteres.
                               example: "Item Description"
                             external_id:
                               type: string
                               description: The item public identifier (SKU) must be unique for each store. It is used for future item updates.
                               x-description-i18n:
-                                eng: The item public identifier (SKU) must be unique for each store. It is used for future item updates.
-                                spa: El identificador público (SKU) del ítem debe ser único para cada tienda. Se utiliza para futuras actualizaciones de elementos.
-                                por: O identificador público do item (SKU) deve ser único para cada loja. Utilizado para futuras atualizações de itens.
+                                eng: The item public identifier (SKU) must be unique for each store. It is used for future item updates. Maximum length of 100 characters.
+                                spa: El identificador público (SKU) del ítem debe ser único para cada tienda. Se utiliza para futuras actualizaciones de elementos. Tamaño máximo de 100 caracteres.
+                                por: O identificador público do item (SKU) deve ser único para cada loja. Utilizado para futuras atualizações de itens. Tamanho máximo de 100 caracteres.
                               example: "M147"
                             image:
                               type: string
                               description: Public link to the item image that will be displayed to the buyer. The image will be copied to an internal storage during the item creation.
                               x-description-i18n:
-                                eng: Public link to the item image that will be displayed to the buyer. The image will be copied to an internal storage during the item creation.
-                                spa: Enlace público a la imagen del ítem que se mostrará al comprador. La imagen se copiará en un almacenamiento interno durante la creación del ítem.
-                                por: Link público para a imagem do item que será exibida ao comprador. A imagem será copiada para um armazenamento interno durante a criação do item.
+                                eng: Public link to the item image that will be displayed to the buyer. The image will be copied to an internal storage during the item creation. Allowed image formatting: .jpg, .png, .bmp, .webp. Minimum size of 500 px on one side.
+                                spa: Enlace público a la imagen del ítem que se mostrará al comprador. La imagen se copiará en un almacenamiento interno durante la creación del ítem. Formato de imágenes permitidas: .jpg, .png, .bmp, .webp. Tamaño mínimo de 500 px en alguno de sus lados.
+                                por: Link público para a imagem do item que será exibida ao comprador. A imagem será copiada para um armazenamento interno durante a criação do item. Formato de imagens permitidas: .jpg, .png, .bmp, .webp. Tamanho mínimo de 500 px em um dos lados.
                               example: "https://"
                             name:
                               type: string
                               description: Item name.
                               x-description-i18n:
-                                eng: Item name.
-                                spa: Nombre del ítem.
-                                por: Nome do item.
+                                eng: Item name. Maximum length of 60 characters.
+                                spa: Nombre del ítem. Tamaño máximo de 60 caracteres.
+                                por: Nome do item. Tamanho máximo de 60 caracteres.
                               example: "Cheese Burger"
                             price:
                               type: number
@@ -3472,9 +3472,9 @@ paths:
                                     example: "Desserts"
                                     description: Name of the complements group.
                                     x-description-i18n:
-                                      eng: Name of the complements group.
-                                      spa: Nombre del grupo de complementos.
-                                      por: Nome do grupo de complementos.
+                                      eng: Name of the complements group. Maximum length of 60 characters.
+                                      spa: Nombre del grupo de complementos. Tamaño máximo de 60 caracteres.
+                                      por: Nome do grupo de complementos. Tamanho máximo de 60 caracteres.
                                   group_min:
                                     type: number
                                     description: Optional integer number, default is 0. Minimum number of complements that the buyer can select for the group. Zero is allowed if the complement is optional. Cannot be greater than group_max.
@@ -3505,17 +3505,17 @@ paths:
                                           type: string
                                           description: Optional string. A description of the complement item to be displayed to the buyer.
                                           x-description-i18n:
-                                            eng: Optional string. A description of the complement item to be displayed to the buyer.
-                                            spa: String opcional. Una descripción del ítem de complemento que se mostrará al comprador.
-                                            por: String opcional. Descrição do item complementar a ser exibido ao comprador.
+                                            eng: Optional string. A description of the complement item to be displayed to the buyer. Maximum length of 1020 characters.
+                                            spa: String opcional. Una descripción del ítem de complemento que se mostrará al comprador. Tamaño máximo de 1020 caracteres.
+                                            por: String opcional. Descrição do item complementar a ser exibido ao comprador. Tamanho máximo de 1020 caracteres.
                                           example: "Complement description"
                                         external_id:
                                           type: string
                                           description: Required string. The complement item public identifier (SKU), must be unique for each store. It is used for future item updates.
                                           x-description-i18n:
-                                            eng: Required string.The complement item public identifier (SKU) must be unique for each store. It is used for future item updates.
-                                            spa: String requerida. El identificador público (SKU) del elemento complementario debe ser único para cada tienda. Se utiliza para futuras actualizaciones de elementos.
-                                            por: String obrigatória. O identificador público do item complementar (SKU) deve ser único para cada loja. Utilizado para futuras atualizações de itens.
+                                            eng: Required string.The complement item public identifier (SKU) must be unique for each store. It is used for future item updates. Maximum length of 100 characters.
+                                            spa: String requerida. El identificador público (SKU) del elemento complementario debe ser único para cada tienda. Se utiliza para futuras actualizaciones de elementos. Tamaño máximo de 100 caracteres.
+                                            por: String obrigatória. O identificador público do item complementar (SKU) deve ser único para cada loja. Utilizado para futuras atualizações de itens. Tamanho máximo de 100 caracteres.
                                           example: "D184"
                                         image:
                                           type: string
@@ -3545,9 +3545,9 @@ paths:
                                           type: string
                                           description: Name of the complement item.
                                           x-description-i18n:
-                                            eng: Name of the complement item.
-                                            spa: Nombre del ítem de complemento.
-                                            por: Nome do item de complemento.
+                                            eng: Name of the complement item. Maximum length of 40 characters.
+                                            spa: Nombre del ítem de complemento. Tamaño máximo de 40 caracteres.
+                                            por: Nome do item de complemento. Tamanho máximo de 40 caracteres.
                                           example: Chocolate ice cream
                                         price:
                                           type: number
