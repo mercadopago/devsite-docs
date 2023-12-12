@@ -105,9 +105,9 @@
                 "example": "claim"
               },
               "description": {
-                "en": "Indicates the current stage of the claim within the processing cycle involving the buyer and seller. It can take one of the following values:",
-                "pt": "Indica a fase atual da reclamação dentro do ciclo de processamento que envolve o comprador e vendedor. Pode assumir um dos seguintes valores:",
-                "es": "Indica la fase actual del reclamo dentro del ciclo de procesamiento que involucra al comprador y al vendedor. Puede tomar alguno de los siguientes valores:"
+                "en": "he current stage of the claim within the processing cycle involving the buyer and seller. It can take one of the following values:",
+                "pt": "Fase atual da reclamação dentro do ciclo de processamento que envolve o comprador e vendedor. Pode assumir um dos seguintes valores:",
+                "es": "La fase actual del reclamo dentro del ciclo de procesamiento que involucra al comprador y al vendedor. Puede tomar alguno de los siguientes valores:"
               },
               "enum": [
                 {
@@ -153,9 +153,9 @@
                 "example": "closed"
               },
               "description": {
-                "en": "Specifies the current state of the claim, indicating whether it is open or closed. It can take one of the following values:",
-                "pt": "Especifica o estado atual da reclamação, indicando se está aberta ou fechada. Pode assumir um dos seguintes valores:",
-                "es": "Especifica el estado actual del reclamo, indicando si está abierto o cerrado. Puede tomar alguno de los siguientes valores:"
+                "en": "The current state of the claim, indicating whether it is open or closed. It can take one of the following values:",
+                "pt": "Estado atual da reclamação, indicando se está aberta ou fechada. Pode assumir um dos seguintes valores:",
+                "es": "El estado actual del reclamo, indicando si está abierto o cerrado. Puede tomar alguno de los siguientes valores:"
               },
               "enum": [
                 {
@@ -1951,9 +1951,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": "This endpoint allows you to upload, through a valid token, evidence of sending the order. For a delivery by mail the fields 'shipping_company_name' and 'date_shipped' are required, while for a delivery to order the required fields are 'shipping_company_name', 'destination_agency', 'date_shipped' and 'receiver_name' For delivery by email, the 'receiver_email' and 'date_shipped' fields are mandatory",
-            "pt": "Este endpoint permite carregar, mediante um token válido, evidências de envio do pedido. Para uma entrega por correio, os campos 'shipping_company_name' e 'date_shipped' são obrigatórios, enquanto para uma entrega por encomenda os campos obrigatórios são 'shipping_company_name', 'destination_agency', 'date_shipped' e 'receiver_name' Para entrega por e-mail, os campos 'receiver_email' e 'date_shipped' são obrigatórios",
-            "es": "Este endpoint permite cargar, mediante un token válido, evidencias de envío del pedido. Para una entrega por correo son obligatorios los campos 'shipping_company_name' y 'date_shipped', mientras una entrega por encomienda los campos obligatorios son 'shipping_company_name', 'destination_agency', 'date_shipped' y 'receiver_name'. Para entrega por email son obligatorios los campos 'receiver_email' y 'date_shipped' "
+            "en": "This endpoint allows you to upload, through a valid token, evidence of sending the order. For a delivery by mail the fields 'shipping_company_name' and 'date_shipped' are required, while for a delivery to order the required fields are 'shipping_company_name', 'destination_agency', 'date_shipped' and 'receiver_name'. For delivery by email, the 'receiver_email' and 'date_shipped' fields are mandatory",
+            "pt": "Este endpoint permite carregar, mediante um token válido, evidências de envio do pedido. Para uma entrega por correio, os campos 'shipping_company_name' e 'date_shipped' são obrigatórios, enquanto para uma entrega por encomenda os campos obrigatórios são 'shipping_company_name', 'destination_agency', 'date_shipped' e 'receiver_name'. Para entrega por e-mail, os campos 'receiver_email' e 'date_shipped' são obrigatórios",
+            "es": "Este endpoint permite cargar, mediante un token válido, evidencias de envío del pedido. Para una entrega por correo son obligatorios los campos 'shipping_company_name' y 'date_shipped', mientras una entrega por encomienda los campos obligatorios son 'shipping_company_name', 'destination_agency', 'date_shipped' y 'receiver_name'. Para entrega por email son obligatorios los campos 'receiver_email' y 'date_shipped'"
           },
           "parameters": [
             {
@@ -1979,23 +1979,20 @@
                   "properties": {
                     "attachments": {
                       "type": "array",
-                      "items": {
-                        "type": "string",
-                        "example": "38f4e399-0f18-41e4-8f48-91aecd2dee1a_419059118.png",
-                        "description": {
-                          "en": "File attached to the message associated with the claim.",
-                          "pt": "Arquivo de imagem anexado à mensagem associada à reclamação.",
-                          "es": "Archivo de imagen adjunto al mensaje asociado al reclamo."
-                        }
+                      "example": "38f4e399-0f18-41e4-8f48-91aecd2dee1a_419059118.png",
+                      "description": {
+                        "en": "File attached to the message associated with the claim.",
+                        "pt": "Arquivo de imagem anexado à mensagem associada à reclamação.",
+                        "es": "Archivo de imagen adjunto al mensaje asociado al reclamo."
                       }
                     },
                     "type": {
                       "type": "string",
                       "example": "shipping_evidence",
                       "description": {
-                        "en": "Presents the type of evidence of sending the request related to the claim. It can take one of the following values:",
-                        "pt": "Apresenta o tipo de evidência de envio do pedido relacionado à reclamação. Pode assumir um dos seguintes valores:",
-                        "es": "Muestra el tipo de evidencia de envío del pedido relacionado con el reclamo. Puede tomar alguno de los siguientes valores:"
+                        "en": "The type of evidence of sending the request related to the claim. It can take one of the following values:",
+                        "pt": "Tipo de evidência de envio do pedido relacionado à reclamação. Pode assumir um dos seguintes valores:",
+                        "es": "Tipo de evidencia de envío del pedido relacionado con el reclamo. Puede tomar alguno de los siguientes valores:"
                       },
                       "enum": [
                         {
@@ -2020,27 +2017,27 @@
                       "type": "string",
                       "example": "2023-03-07T05:00:00Z",
                       "description": {
-                        "en": "Displays the shipping date of the order associated with the claim.",
-                        "pt": "Apresenta a data de envio do pedido associado à reclamação.",
-                        "es": "Muestra la fecha de envío del pedido asociado al reclamo."
+                        "en": "The shipping date of the order associated with the claim.",
+                        "pt": "Data de envio do pedido associado à reclamação.",
+                        "es": "Fecha de envío del pedido asociado al reclamo."
                       }
                     },
                     "date_delivered": {
                       "type": "string",
                       "example": "2023-03-15T05:00:00Z",
                       "description": {
-                        "en": "Displays the delivery date of the order associated with the claim.",
-                        "pt": "Exibe a data de entrega do pedido associado à reclamação.",
-                        "es": "Muestra la fecha de entrega del pedido asociado al reclamo."
+                        "en": "Delivery date of the order associated with the claim.",
+                        "pt": "Data de entrega do pedido associado à reclamação.",
+                        "es": "Fecha de entrega del pedido asociado al reclamo."
                       }
                     },
                     "destination_agency": {
                       "type": "string",
                       "example": "Melicidade",
                       "description": {
-                        "en": "Informs the name of the agency to which the order is being sent.",
-                        "pt": "Informa o nome da agência para a qual o pedido está sendo enviado.",
-                        "es": "Informa el nombre de la agencia a la que se envía el pedido."
+                        "en": "Name of the agency to which the order is being sent.",
+                        "pt": "Nome da agência para a qual o pedido está sendo enviado.",
+                        "es": "Nombre de la agencia a la que se envía el pedido."
                       }
                     },
                     "receiver_email": {
@@ -2056,18 +2053,18 @@
                       "type": "string",
                       "example": 156762,
                       "description": {
-                        "en": "Displays a personal document number of the person who received the product.",
-                        "pt": "Exibe um número de documento pessoal de quem recebeu o produto.",
-                        "es": "Muestra un número de documento personal de quien recibió el producto."
+                        "en": "Personal document number of the person who received the product.",
+                        "pt": "Número de documento pessoal de quem recebeu o produto.",
+                        "es": "Número de documento personal de quien recibió el producto."
                       }
                     },
                     "receiver_name": {
                       "type": "string",
                       "example": "Tester",
                       "description": {
-                        "en": "Displays the name of the order recipient.",
-                        "pt": "Apresenta o nome do destinatário do pedido.",
-                        "es": "Presenta el nombre del destinatario del pedido."
+                        "en": "Name of the order recipient.",
+                        "pt": "Nome do destinatário do pedido.",
+                        "es": "Nombre del destinatario del pedido."
                       }
                     },
                     "shipping_company_name": {
@@ -2092,9 +2089,9 @@
                       "type": "string",
                       "example": 132456787,
                       "description": {
-                        "en": "Provides the order delivery tracking number.",
-                        "pt": "Informa o número de rastreio da entrega do pedido.",
-                        "es": "Informa el número de seguimiento del envío del pedido."
+                        "en": "The order delivery tracking number.",
+                        "pt": "Número de rastreio da entrega do pedido.",
+                        "es": "Número de seguimiento del envío del pedido."
                       }
                     }
                   }
