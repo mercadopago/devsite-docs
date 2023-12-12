@@ -1985,7 +1985,7 @@
                       "items": {
                         "type": "string",
                         "example": "38f4e399-0f18-41e4-8f48-91aecd2dee1a_419059118.png",
-                       "description": {
+                        "description": {
                           "en": "File attached to the message associated with the claim.",
                           "pt": "Arquivo de imagem anexado à mensagem associada à reclamação.",
                           "es": "Archivo de imagen adjunto al mensaje asociado al reclamo."
@@ -2021,7 +2021,7 @@
                     },
                     "date_shipped": {
                       "type": "string",
-                      "example": "2018-03-07T05:00:00Z",
+                      "example": "2023-03-07T05:00:00Z",
                       "description": {
                         "en": "Displays the shipping date of the order associated with the claim.",
                         "pt": "Apresenta a data de envio do pedido associado à reclamação.",
@@ -2030,7 +2030,7 @@
                     },
                     "date_delivered": {
                       "type": "string",
-                      "example": null,
+                      "example": "2023-03-15T05:00:00Z",
                       "description": {
                         "en": "Displays the delivery date of the order associated with the claim.",
                         "pt": "Exibe a data de entrega do pedido associado à reclamação.",
@@ -2039,7 +2039,7 @@
                     },
                     "destination_agency": {
                       "type": "string",
-                      "example": null,
+                      "example": "Melicidade",
                       "description": {
                         "en": "Informs the name of the agency to which the order is being sent.",
                         "pt": "Informa o nome da agência para a qual o pedido está sendo enviado.",
@@ -2048,7 +2048,7 @@
                     },
                     "receiver_email": {
                       "type": "string",
-                      "example": null,
+                      "example": "test_user_123@testuser.com",
                       "description": {
                         "en": "Email of the recipient of the order associated with the claim.",
                         "pt": "E-mail do destinatário do pedido associado à reclamação.",
@@ -2057,7 +2057,7 @@
                     },
                     "receiver_id": {
                       "type": "string",
-                      "example": null,
+                      "example": 156762,
                       "description": {
                         "en": "Displays a personal document number of the person who received the product.",
                         "pt": "Exibe um número de documento pessoal de quem recebeu o produto.",
@@ -2066,7 +2066,7 @@
                     },
                     "receiver_name": {
                       "type": "string",
-                      "example": null,
+                      "example": "Tester",
                       "description": {
                         "en": "Displays the name of the order recipient.",
                         "pt": "Apresenta o nome do destinatário do pedido.",
@@ -2093,7 +2093,7 @@
                     },
                     "tracking_number": {
                       "type": "string",
-                      "example": "132456787",
+                      "example": 132456787,
                       "description": {
                         "en": "Provides the order delivery tracking number.",
                         "pt": "Informa o número de rastreio da entrega do pedido.",
@@ -2215,7 +2215,7 @@
                         },
                         "date_shipped": {
                           "type": "string",
-                          "example": "2018-03-07T05:00:00Z",
+                          "example": "2023-03-07T05:00:00Z",
                           "description": {
                             "en": "Displays the shipping date of the order associated with the claim.",
                             "pt": "Apresenta a data de envio do pedido associado à reclamação.",
@@ -2224,7 +2224,7 @@
                         },
                         "date_delivered": {
                           "type": "string",
-                          "example": null,
+                          "example": "2023-03-15T05:00:00Z",
                           "description": {
                             "en": "Displays the delivery date of the order associated with the claim.",
                             "pt": "Exibe a data de entrega do pedido associado à reclamação.",
@@ -2233,7 +2233,7 @@
                         },
                         "destination_agency": {
                           "type": "string",
-                          "example": null,
+                          "example": "Melicidade",
                           "description": {
                             "en": "Informs the name of the agency to which the order is being sent.",
                             "pt": "Informa o nome da agência para a qual o pedido está sendo enviado.",
@@ -2242,7 +2242,7 @@
                         },
                         "receiver_email": {
                           "type": "string",
-                          "example": null,
+                          "example": "test_user_123@testuser.com",
                           "description": {
                             "en": "Email of the recipient of the order associated with the claim.",
                             "pt": "E-mail do destinatário do pedido associado à reclamação.",
@@ -2251,7 +2251,7 @@
                         },
                         "receiver_id": {
                           "type": "string",
-                          "example": null,
+                          "example": 156762,
                           "description": {
                             "en": "Displays a personal document number of the person who received the product.",
                             "pt": "Exibe um número de documento pessoal de quem recebeu o produto.",
@@ -2260,7 +2260,7 @@
                         },
                         "receiver_name": {
                           "type": "string",
-                          "example": null,
+                          "example": "Teste",
                           "description": {
                             "en": "Displays the name of the order recipient.",
                             "pt": "Apresenta o nome do destinatário do pedido.",
@@ -2287,7 +2287,7 @@
                         },
                         "tracking_number": {
                           "type": "string",
-                          "example": "132456787",
+                          "example": 132456787,
                           "description": {
                             "en": "Provides the order delivery tracking number.",
                             "pt": "Informa o número de rastreio da entrega do pedido.",
