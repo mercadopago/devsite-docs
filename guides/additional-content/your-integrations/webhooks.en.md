@@ -36,6 +36,7 @@ Below we will explain how to indicate the URLs that will be notified and how to 
 | `point_integration_wh` | `state_ERROR` | An error occurred while processing the payment attempt |
 | `delivery` | `delivery.updated`| Shipping data and order update |
 | `delivery_cancellation` | `case_created`| Shipment cancellation request |
+| `topic_claims_integration_wh` | `updated`| Claims made by sales |
 
 ## Setup while creating payments
 
@@ -279,7 +280,7 @@ curl -X POST \
 >
 > For the event type `point_integration_wh` the notification format changes. [Click here](/developers/en/docs/mp-point/introduction) to consult the documentation of **Mercado Pago Point**.
 > <br/>
-> In the case of the `delivery` event, we will also have some different attributes in the response. Check the table below for these features.
+> In the case of the `delivery` and `topic_claims_integration_wh` events, we will also have some different attributes in the response. Check the table below for these features.
 
 ```json
 {
@@ -302,16 +303,18 @@ This indicates that payment **999999999** was created for user **44444** in prod
 | --- | --- |
 | **id** | Notification ID |
 | **live_mode** | Indicates if the URL entered is valid. |
-| **date_created** | Resorce (payments, mp-connect, subscription etc) creation date |
+| **type** | Type of notification received (payments, mp-connect, subscription, claim, etc) |
+| **date_created** | Resorce creation date |
 | **user_id** | Vendor UserID |
 | **api_version** | Indicates if it is a duplicate notification or not |
 | **action** | Type of notification received, indicating whether it is the update of a resource or the creation of a new |
-| **data - id** | Payment ID or merchant_order |
+| **data - id** | ID of the payment, merchant_order or claim|
 | **attempts** (delivery) | Number of times a notification was sent |
 | **received** (delivery) | Resource Creation Date |
 | **resource** (delivery) | Type of notification received, indicating whether this is an update to a feature or the creation of a new one |
 | **sent** (delivery) | Notification sent date |
 | **topic** (delivery) | Type of notification received |
+| **resource** (claims) | Type of notification received, indicating notifications related to claims made by sales |
 
 4. If you want to receive notifications only from Webhook and not from IPN, you can add in the `notification_url` the parameter `source_news=webhook`. For example: https://www.yourserver.com/notifications?source_news=webhooks
 
@@ -328,6 +331,7 @@ After returning the notification and confirming its receipt, you will obtain the
 | subscription_preapproval | `https://api.mercadopago.com/preapproval` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval/post) |
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [check documentation](/developers/en/reference/subscriptions/_preapproval_plan/post) |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [check documentation](/developers/en/reference/subscriptions/_authorized_payments_id/get) |
+| topic_claims_integration_wh | `https://api.mercadopago.com/data_resource` | [check documentation](/developers/en/developers/pt/reference/claims/_data_resource/get) |
 
 ------------
 ----[mlm, mlb]---- 
@@ -338,6 +342,7 @@ After returning the notification and confirming its receipt, you will obtain the
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [check documentation](/developers/en/reference/subscriptions/_preapproval_plan/post) |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [check documentation](/developers/en/reference/subscriptions/_authorized_payments_id/get) |
 | point_integration_wh | - | [check documentation](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
+| topic_claims_integration_wh | `https://api.mercadopago.com/data_resource` | [check documentation](/developers/en/developers/pt/reference/claims/_data_resource/get) |
 
 ------------
 ----[mla]----
@@ -349,6 +354,7 @@ After returning the notification and confirming its receipt, you will obtain the
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [check documentation](/developers/en/reference/subscriptions/_authorized_payments_id/get) |
 | point_integration_wh | - | [check documentation](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
 | delivery | - | [check documentation](/developers/en/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put)
+| topic_claims_integration_wh | `https://api.mercadopago.com/data_resource` | [check documentation](/developers/en/developers/pt/reference/claims/_data_resource/get) |
 
 ------------
 

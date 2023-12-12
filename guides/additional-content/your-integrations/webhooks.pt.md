@@ -33,7 +33,8 @@ Abaixo explicaremos como indicar as URLs que serão notificadas e como configura
 | `point_integration_wh` | `state_CANCELED` | Processo de pagamento cancelado |
 | `point_integration_wh` | `state_ERROR`| Ocorreu um erro ao processar a tentativa de pagamento |
 | `delivery` | `delivery.updated`| Dados de envio e atualização do pedido |
-| `delivery_cancellation` | `case_created`| Solicitação de cancelamento do envi
+| `delivery_cancellation` | `case_created`| Solicitação de cancelamento do envio |
+| `topic_claims_integration_wh` | `updated`| Reclamações feitas pelas vendas |
 
 ## Configuração durante a criação de pagamentos
 
@@ -277,7 +278,7 @@ curl -X POST \
 >
 > Para o tipo de evento `point_integration_wh`, o formato da notificação muda. [Clique aqui](/developers/pt/docs/mp-point/landing) para consultar a documentação do **Mercado Pago Point**.
 > <br/>
-> No caso do evento de `delivery`, também teremos alguns atributos diferentes na resposta. Veja na tabela abaixo quais são essas particularidades.
+> No caso dos eventos de `delivery` e `topic_claims_integration_wh`, também teremos alguns atributos diferentes na resposta. Veja na tabela abaixo quais são essas particularidades.
 
 
 ```json
@@ -300,17 +301,18 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 | --- | --- |
 | **id** | ID de notificação |
 | **live_mode** | Indica se a URL informada é valida |
-| **type** | Tipo de notificação recebida (payments, mp-connect, subscription, etc) |
-| **date_created** | Data de criação do recurso (payments, mp-connect, subscription etc) |
+| **type** | Tipo de notificação recebida (payments, mp-connect, subscription, claim, etc) |
+| **date_created** | Data de criação do recurso |
 | **user_id**| UserID de vendedor |
 | **api_version** | Indica se é uma notificação duplicada ou não |
 | **action** | Tipo de notificação recebida, indicando se se trata da atualização de um recurso ou da criação de um novo |
-| **data - id** | ID do payment ou merchant_order |
+| **data - id** | ID do payment, do merchant_order ou da reclamação |
 | **attempts** (delivery) | Número de vezes que uma notificação foi enviada |
 | **received** (delivery) | Data de criação do recurso |
-| **resource** (delivery) | Tipo de notificação recebida, indicando se se trata da atualização de um recurso ou da criação de um novo |
+| **resource** (delivery) | Tipo de notificação recebida, indicando se trata-se da atualização de um recurso ou da criação de um novo |
 | **sent** (delivery) | Data de envio da notificação |
 | **topic** (delivery) | Tipo de notificação recebida  |
+| **resource** (claims) | Tipo de notificação recebida, indicando notificações relacionadas à reclamações feitas por vendas |
 
 4. Caso deseje receber notificações apenas de Webhook e não de IPN, você pode adicionar na `notification_url` o parâmetro `source_news=webhook`. Por exemplo: https://www.yourserver.com/notifications?source_news=webhooks
 
@@ -333,6 +335,7 @@ Depois de dar um retorno à notificação e confirmar o seu recebimento, você o
 | subscription_preapproval | `https://api.mercadopago.com/preapproval` | [ver documentação](/developers/pt/reference/subscriptions/_preapproval/post) |
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [ver documentación](/developers/pt/reference/subscriptions/_preapproval_plan/post)  |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [ver documentación](/developers/pt/reference/subscriptions/_authorized_payments_id/get) |
+| topic_claims_integration_wh | `https://api.mercadopago.com/data_resource` | [ver documentação](/developers/pt/developers/pt/reference/claims/_data_resource/get) |
 
 ------------
 ----[mlm, mlb]---- 
@@ -343,6 +346,7 @@ Depois de dar um retorno à notificação e confirmar o seu recebimento, você o
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [ver documentación](/developers/pt/reference/subscriptions/_preapproval_plan/post)  |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [ver documentación](/developers/pt/reference/subscriptions/_authorized_payments_id/get) |
 | point_integration_wh | - | [ver documentação](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
+| topic_claims_integration_wh | `https://api.mercadopago.com/data_resource` | [ver documentação](/developers/pt/developers/pt/reference/claims/_data_resource/get) |
 
 ------------
 ----[mla]---- 
@@ -354,6 +358,7 @@ Depois de dar um retorno à notificação e confirmar o seu recebimento, você o
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [ver documentación](/developers/pt/reference/subscriptions/_authorized_payments_id/get) |
 | point_integration_wh | - | [ver documentação](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
 | delivery | - | [ver documentação](/developers/pt/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put) |
+| topic_claims_integration_wh | `https://api.mercadopago.com/data_resource` | [ver documentação](/developers/pt/developers/pt/reference/claims/_data_resource/get) |
 
 ------------
 
