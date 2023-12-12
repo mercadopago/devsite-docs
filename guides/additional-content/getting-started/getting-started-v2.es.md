@@ -112,15 +112,16 @@ Conoce la disponibilidad de nuestros productos por plataforma en cada país:
 
 Para obtener detalles sobre los medios de pago aceptados en cada país, consulta la lista completa con [disponibilidad de medios de pago](/developers/es/docs/sales-processing/payment-methods).
 
---- mini_landing_separator ---
 ---
 future_product_avaible: 
+ - title: 
+ - description: 
  - card_avaible: true
  - card_icon: Loading
  - card_title: Comienza a integrar
  - card_description: Elige el producto que se ajuste a tus necesidades y comienza a integrar.
  - card_link:  /developers/es/docs
  - card_linkDescription: Volver a la documentación
- - card_pillText: DISPONIBLE
+ - card_pillText: 
 ---
-------------
+
