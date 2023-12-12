@@ -974,6 +974,11 @@
                         },
                         "moderation": {
                           "type": "object",
+                          "description": {
+                            "en": "Presents information about the file attached to the message associated with the claim.",
+                            "pt": "Apresenta informações sobre o arquivo de imagem anexado à mensagem associada à reclamação.",
+                            "es": "Muestra información sobre el archivo de imagen adjunto al mensaje asociado al reclamo."
+                          },
                           "properties": {
                             "status": {
                               "type": "string",
@@ -1128,9 +1133,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": "This endpoint allows, through a valid token, attaching image files to the messages that will be associated with the complaint.",
-            "pt": "Este endpoint permite anexar, por meio de um token válido, anexar arquivos de imagem as mensagens que serão associados à reclamação.",
-            "es": "Este endpoint permite, mediante un token válido, adjuntar archivos de imagen a los mensajes que se asociarán con el reclamo."
+            "en": "This endpoint allows, through a valid token, attaching image files to the messages that will be associated with the complaint",
+            "pt": "Este endpoint permite anexar, por meio de um token válido, anexar arquivos de imagem as mensagens que serão associados à reclamação",
+            "es": "Este endpoint permite, mediante un token válido, adjuntar archivos de imagen a los mensajes que se asociarán con el reclamo"
           },
           "parameters": [
             {
@@ -1145,10 +1150,7 @@
                 "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
                 "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
                 "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
-              },
-              "consumes": [
-                "multipart/form-data"
-              ]
+              }
             },
             {
               "in": "formData",
@@ -1289,14 +1291,11 @@
                     },
                     "attachments": {
                       "type": "array",
-                      "items": {
-                        "type": "string",
-                        "example": "WhatsApp Image 2020-09-22 at 15.37.13.jpeg",
-                        "description": {
-                          "en": "File attached to the message associated with the claim.",
-                          "pt": "Arquivo de imagem anexado à mensagem associada à reclamação.",
-                          "es": "Archivo de imagen adjunto al mensaje asociado al reclamo."
-                        }
+                      "example": "WhatsApp Image 2020-09-22 at 15.37.13.jpeg",
+                      "description": {
+                        "en": "File attached to the message associated with the claim.",
+                        "pt": "Arquivo de imagem anexado à mensagem associada à reclamação.",
+                        "es": "Archivo de imagen adjunto al mensaje asociado al reclamo."
                       }
                     }
                   }
@@ -1344,9 +1343,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": "This endpoint allows, through a valid token, downloading image files attached to the messages associated with the claim.",
-            "pt": "Este endpoint permite, por meio de um token válido, fazer download de arquivos de imagem anexados as mensagens associados à reclamação.",
-            "es": "Este endpoint permite, mediante un token válido, descargar archivos de imagen adjuntos a los mensajes asociados al reclamo."
+            "en": "This endpoint allows, through a valid token, downloading image files attached to the messages associated with the claim",
+            "pt": "Este endpoint permite, por meio de um token válido, fazer download de arquivos de imagem anexados as mensagens associados à reclamação",
+            "es": "Este endpoint permite, mediante un token válido, descargar archivos de imagen adjuntos a los mensajes asociados al reclamo"
           },
           "parameters": [
             {
@@ -1386,9 +1385,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": "This endpoint allows searching, through a valid token, for image files attached to the message associated with the complaint.",
-            "pt": "Este endpoint permite buscar, mediante un token válido, arquivos de imagem anexados à mensagem associada à reclamaçao.",
-            "es": "Este endpoint permite buscar, mediante un token válido, archivos de imagen adjuntos al mensaje asociado a la reclamación."
+            "en": "This endpoint allows searching, through a valid token, for image files attached to the message associated with the complaint",
+            "pt": "Este endpoint permite buscar, mediante un token válido, arquivos de imagem anexados à mensagem associada à reclamaçao",
+            "es": "Este endpoint permite buscar, mediante un token válido, archivos de imagen adjuntos al mensaje asociado a la reclamación"
           },
           "parameters": [
             {
@@ -1492,9 +1491,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": "This endpoint allows searching, through a valid token, requesting mediation in the claim opened by the user.",
-            "pt": "Este endpoint permite solicitar, mediante um token válido, uma mediação na reclamação aberta pela pessoa usuária.",
-            "es": "Este endpoint permite buscar, mediante un token válido, solicitar mediación en el reclamo abierto por la persona usuaria."
+            "en": "This endpoint allows searching, through a valid token, requesting mediation in the claim opened by the user",
+            "pt": "Este endpoint permite solicitar, mediante um token válido, uma mediação na reclamação aberta pela pessoa usuária",
+            "es": "Este endpoint permite buscar, mediante un token válido, solicitar mediación en el reclamo abierto por la persona usuaria"
           },
           "parameters": [
             {
@@ -1561,9 +1560,9 @@
             "subscriptions"
           ],
             "description": {
-              "en": "This endpoint allows, through a valid token, viewing the expected resolutions by the user in their claim.",
-              "pt": "Este endpoint permite visualizar, mediante un token válido, resoluções esperadas pela pessoa usuária em sua reclamação.",
-              "es": "Este endpoint permite visualizar, mediante un token válido, las resoluciones esperadas por la persona usuaria en su reclamo."
+              "en": "This endpoint allows, through a valid token, viewing the expected resolutions by the user in their claim",
+              "pt": "Este endpoint permite visualizar, mediante un token válido, resoluções esperadas pela pessoa usuária em sua reclamação",
+              "es": "Este endpoint permite visualizar, mediante un token válido, las resoluciones esperadas por la persona usuaria en su reclamo"
           },
           "parameters": [
             {
@@ -1726,9 +1725,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": "This endpoint allows, through a valid token, obtaining evidence of the the claim, such as order shipping information and attached image files associated with the claim.",
-            "pt": "Este endpoint permite obter, mediante um token válido, evidências da reclamação como, por exemplo, informações de envio do pedido e de anexos de imagens associados à reclamação.",
-            "es": "Este endpoint permite obtener, mediante un token válido, evidencias del reclamo, como información de envío del pedido y archivos de imágenes adjuntos asociados al reclamo."
+            "en": "This endpoint allows, through a valid token, obtaining evidence of the the claim, such as order shipping information and attached image files associated with the claim",
+            "pt": "Este endpoint permite obter, mediante um token válido, evidências da reclamação como, por exemplo, informações de envio do pedido e de anexos de imagens associados à reclamação",
+            "es": "Este endpoint permite obtener, mediante un token válido, evidencias del reclamo, como información de envío del pedido y archivos de imágenes adjuntos asociados al reclamo"
           },
           "parameters": [
             {
@@ -1955,9 +1954,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": "This endpoint allows you to upload, through a valid token, evidence of sending the order. For a delivery by mail the fields 'shipping_company_name' and 'date_shipped' are required, while for a delivery to order the required fields are 'shipping_company_name', 'destination_agency', 'date_shipped' and 'receiver_name' For delivery by email, the 'receiver_email' and 'date_shipped' fields are mandatory.",
-            "pt": "Este endpoint permite carregar, mediante um token válido, evidências de envio do pedido. Para uma entrega por correio, os campos 'shipping_company_name' e 'date_shipped' são obrigatórios, enquanto para uma entrega por encomenda os campos obrigatórios são 'shipping_company_name', 'destination_agency', 'date_shipped' e 'receiver_name' Para entrega por e-mail, os campos 'receiver_email' e 'date_shipped' são obrigatórios.",
-            "es": "Este endpoint permite cargar, mediante un token válido, evidencias de envío del pedido. Para una entrega por correo son obligatorios los campos 'shipping_company_name' y 'date_shipped', mientras una entrega por encomienda los campos obligatorios son 'shipping_company_name', 'destination_agency', 'date_shipped' y 'receiver_name'. Para entrega por email son obligatorios los campos 'receiver_email' y 'date_shipped'."
+            "en": "This endpoint allows you to upload, through a valid token, evidence of sending the order. For a delivery by mail the fields 'shipping_company_name' and 'date_shipped' are required, while for a delivery to order the required fields are 'shipping_company_name', 'destination_agency', 'date_shipped' and 'receiver_name' For delivery by email, the 'receiver_email' and 'date_shipped' fields are mandatory",
+            "pt": "Este endpoint permite carregar, mediante um token válido, evidências de envio do pedido. Para uma entrega por correio, os campos 'shipping_company_name' e 'date_shipped' são obrigatórios, enquanto para uma entrega por encomenda os campos obrigatórios são 'shipping_company_name', 'destination_agency', 'date_shipped' e 'receiver_name' Para entrega por e-mail, os campos 'receiver_email' e 'date_shipped' são obrigatórios",
+            "es": "Este endpoint permite cargar, mediante un token válido, evidencias de envío del pedido. Para una entrega por correo son obligatorios los campos 'shipping_company_name' y 'date_shipped', mientras una entrega por encomienda los campos obligatorios son 'shipping_company_name', 'destination_agency', 'date_shipped' y 'receiver_name'. Para entrega por email son obligatorios los campos 'receiver_email' y 'date_shipped'"
           },
           "parameters": [
             {
@@ -2304,7 +2303,7 @@
           },
           "title": {
             "en": "Upload shipping evidence",
-            "pt": "Carregar evidências do envio",
+            "pt": "Carregar evidências de envio",
             "es": "Cargar evidencias de envío"
           }
         }
@@ -2519,27 +2518,69 @@
                         "type": "string",
                         "example": "PDD1",
                         "description": {
-                          "en": "ID of the 'reason' for the complaint.",
-                          "pt": "ID da 'reason' da reclamação.",
-                          "es": "ID de la 'reason' del reclamo."
+                          "en": "ID of the reason for the claim.",
+                          "pt": "ID do motivo da reclamação.",
+                          "es": "ID del motivo del reclamo."
                         }
                       },
                       "flow": {
                         "type": "string",
                         "example": "meadiations",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "."
-                        }
+                          "en": "Indicates which mediation flow the claim is currently in.",
+                          "pt": "Indica em qual fluxo de mediação a reclamação se encontra no momento em questão.",
+                          "es": "Indica en qué flujo de mediación se encuentra el reclamo en el momento en cuestión."
+                        },
+                        "enum": [
+                          {
+                            "title": "mediations",
+                            "description": {
+                              "en": "Refers to the process of mediating between parties in a claim.",
+                              "pt": "Refere-se ao processo de mediação entre as partes em uma reclamação.",
+                              "es": "Se refiere al proceso de mediación entre las partes en un reclamo."
+                            }
+                          },
+                          {
+                            "title": "cancel_purchase",
+                            "description": {
+                              "en": "Involves the process of cancelling a previously made purchase.",
+                              "pt": "Envolve o processo de cancelar uma compra previamente realizada.",
+                              "es": "Involucra el proceso de cancelar una compra previamente realizada."
+                            }
+                          },
+                          {
+                            "title": "return",
+                            "description": {
+                              "en": "Pertains to the process of returning a purchased item.",
+                              "pt": "Refere-se ao processo de devolução de um item comprado.",
+                              "es": "Se refiere al proceso de devolver un artículo comprado."
+                            }
+                          },
+                          {
+                            "title": "cancel_sale",
+                            "description": {
+                              "en": "oncerns the process of cancelling a sale that has been made.",
+                              "pt": "Refere-se ao processo de cancelar uma venda realizada.",
+                              "es": "Se ocupa del proceso de cancelar una venta realizada."
+                            }
+                          },
+                          {
+                            "title": "change",
+                            "description": {
+                              "en": "Refers to the alteration or modification of the details or status of a claim.",
+                              "pt": "Refere-se à alteração ou modificação dos detalhes ou status de uma reclamação.",
+                              "es": "Se refiere a la alteración o modificación de los detalles o el estado de un reclamo."
+                            }
+                          }
+                        ]
                       },
                       "name": {
                         "type": "string",
                         "example": "defective_item",
                         "description": {
-                          "en": "Displays the description of the 'reason' for the complaint.",
-                          "pt": "Exibe a descrição da 'reason' da reclamação.",
-                          "es": "Presenta la descripción de la 'reason' del reclamo."
+                          "en": "Displays the description of the reason for the claim.",
+                          "pt": "Exibe a descrição do motivo da reclamação.",
+                          "es": "Presenta la descripción del motivo del reclamo."
                         }
                       },
                       "detail": {
