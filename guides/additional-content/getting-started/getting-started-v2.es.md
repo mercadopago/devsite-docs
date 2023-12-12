@@ -123,3 +123,20 @@ future_product_avaible:
  - card_pillText: DISPONIBLE
 ---
 
+---
+future_product_avaible: 
+ - card_avaible: true
+ - card_icon: Card
+ - card_title: Checkout Pro para Web
+ - card_description: Ofrece diferentes medios de pago a los clientes en una web de manera simple, rápida y segura.
+ - card_link:  /developers/es/docs/checkout-pro/integrate-checkout-pro/web
+ - card_linkDescription: Integrar
+ - card_pillText: DISPONIBLE
+ - card_avaible: true
+ - card_icon: Loading
+ - card_title: Checkout Pro para Mobile
+ - card_description: Ofrece diferentes medios de pago a los clientes en tu aplicación mobile utilizando el lenguaje que más se adapte a tu proyecto.
+ - card_link: /developers/es/docs/checkout-pro/integrate-checkout-pro/mobile
+ - card_linkDescription: Integrar
+ - card_pillText: DISPONIBLE
+---
