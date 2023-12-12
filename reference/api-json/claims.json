@@ -1777,7 +1777,7 @@
                               },
                               "original_filename": {
                                 "type": "string",
-                                "example": "Captura de Tela 2019-07-30 a?s 09.45.40.png",
+                                "example": "Captura-de-Tela-2019-07-30.png",
                                 "description": {
                                   "en": "Original name of the image file attached to the message associated with the claim.",
                                   "pt": "Nome original do arquivo de imagem anexado à mensagem associada à reclamação.",
@@ -1978,7 +1978,7 @@
                   "type": "object",
                   "properties": {
                     "attachments": {
-                      "type": "array",
+                      "type": "string",
                       "example": "38f4e399-0f18-41e4-8f48-91aecd2dee1a_419059118.png",
                       "description": {
                         "en": "File attached to the message associated with the claim.",
@@ -2134,7 +2134,7 @@
                               },
                               "original_filename": {
                                 "type": "string",
-                                "example": "Captura de Tela 2019-07-30 a?s 09.45.40.png",
+                                "example": "Captura-de-Tela-2019-07-30.png",
                                 "description": {
                                   "en": "Original name of the image file attached to the message associated with the claim.",
                                   "pt": "Nome original do arquivo de imagem anexado à mensagem associada à reclamação.",
