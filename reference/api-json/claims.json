@@ -1287,7 +1287,7 @@
                       }
                     },
                     "attachments": {
-                      "type": "array",
+                      "type": "string",
                       "example": "WhatsApp-Image-2020-09-22.jpeg",
                       "description": {
                         "en": "Image file attached to the message that will be associated with the claim.",
