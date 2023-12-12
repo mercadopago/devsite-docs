@@ -1956,7 +1956,7 @@
           "description": {
             "en": "This endpoint allows you to upload, through a valid token, evidence of sending the order. For a delivery by mail the fields 'shipping_company_name' and 'date_shipped' are required, while for a delivery to order the required fields are 'shipping_company_name', 'destination_agency', 'date_shipped' and 'receiver_name' For delivery by email, the 'receiver_email' and 'date_shipped' fields are mandatory",
             "pt": "Este endpoint permite carregar, mediante um token válido, evidências de envio do pedido. Para uma entrega por correio, os campos 'shipping_company_name' e 'date_shipped' são obrigatórios, enquanto para uma entrega por encomenda os campos obrigatórios são 'shipping_company_name', 'destination_agency', 'date_shipped' e 'receiver_name' Para entrega por e-mail, os campos 'receiver_email' e 'date_shipped' são obrigatórios",
-            "es": "Este endpoint permite cargar, mediante un token válido, evidencias de envío del pedido. Para una entrega por correo son obligatorios los campos 'shipping_company_name' y 'date_shipped', mientras una entrega por encomienda los campos obligatorios son 'shipping_company_name', 'destination_agency', 'date_shipped' y 'receiver_name'. Para entrega por email son obligatorios los campos 'receiver_email' y 'date_shipped'"
+            "es": "Este endpoint permite cargar, mediante un token válido, evidencias de envío del pedido. Para una entrega por correo son obligatorios los campos 'shipping_company_name' y 'date_shipped', mientras una entrega por encomienda los campos obligatorios son 'shipping_company_name', 'destination_agency', 'date_shipped' y 'receiver_name'. Para entrega por email son obligatorios los campos 'receiver_email' y 'date_shipped' "
           },
           "parameters": [
             {
@@ -2768,9 +2768,9 @@
             "subscriptions"
           ],
           "description": {
-            "en": "Using the 'resource' field of the 'data' parameter of the news received from the topic, you can perform a 'get' to the claim resource",
-            "pt": "Utilizando o campo 'resource' do parâmetro 'data' das notícias recebidas do tópico, você pode realizar um 'get' ao recurso de reclamações",
-            "es": "Utilizando el campo 'resource' del parâmetro 'data' de la novedad recibida del tópico, podrás realizar un 'get' al recurso de reclamo"
+            "en": "This endpoint allows, through a valid token, to obtain notifications of the complaint by making a 'get' request to the complaints resource using the 'resource' field of the 'data' parameter from the notifications received from the topic",
+            "pt": "Este endpoint permite, por meio de um token válido, ober notificações da reclamação realizando um 'get' ao recurso de reclamações utilizando o campo 'resource', do parâmetro 'data', das notificaçÕes recebidas do tópico",
+            "es": "Este endpoint permite, mediante un token válido, obtener notificaciones de la queja realizando una solicitud 'get' al recurso de reclamos utilizando el campo 'resource', del parámetro 'data', de las notificaciones recibidas del tema"
           },
           "parameters": [
             {
