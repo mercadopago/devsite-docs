@@ -1272,27 +1272,27 @@
                       "type": "string",
                       "example": "respondent",
                       "description": {
-                        "en": "Person to whom the message associated with the complaint was sent.",
-                        "pt": "Pessoa para quem a mensagem associada à reclamação foi enviada.",
-                        "es": "Persona a la que se envió el mensaje asociado al reclamo."
+                        "en": "Person to whom the message associated with the claim will be sent.",
+                        "pt": "Pessoa para quem a mensagem associada à reclamação será enviada.",
+                        "es": "Persona a quien se enviará el mensaje asociado al reclamo."
                       }
                     },
                     "message": {
                       "type": "string",
                       "example": "Mensaje de prueba",
                       "description": {
-                        "en": "Displays the message text associated with the complaim.",
-                        "pt": "Exibe o texto da mensagem associada à reclamação.",
-                        "es": "Muestra el texto del mensaje asociado con el reclamo."
+                        "en": "Text of the message to be associated with the claim.",
+                        "pt": "Texto da mensagem a ser associada à reclamação.",
+                        "es": "Texto del mensaje que se asociará al reclamo."
                       }
                     },
                     "attachments": {
                       "type": "array",
-                      "example": "WhatsApp Image 2020-09-22 at 15.37.13.jpeg",
+                      "example": "WhatsApp-Image-2020-09-22.jpeg",
                       "description": {
-                        "en": "File attached to the message associated with the claim.",
-                        "pt": "Arquivo de imagem anexado à mensagem associada à reclamação.",
-                        "es": "Archivo de imagen adjunto al mensaje asociado al reclamo."
+                        "en": "Image file attached to the message that will be associated with the claim.",
+                        "pt": "Arquivo de imagem anexado à mensagem que será associada à reclamação.",
+                        "es": "Archivo de imagen adjunto al mensaje que se asociará al reclamo."
                       }
                     }
                   }
@@ -1426,7 +1426,7 @@
                       },
                       "original_filename": {
                         "type": "string",
-                        "example": "WhatsApp Image 2020-09-22 at 15.37.13.jpeg",
+                        "example": "WWhatsApp-Image-2020-09-22.jpeg",
                         "description": {
                           "en": "Original name of the image file attached to the message associated with the claim.",
                           "pt": "Nome original do arquivo de imagem anexado à mensagem associada à reclamação.",
