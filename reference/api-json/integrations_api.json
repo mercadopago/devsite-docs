@@ -31,7 +31,7 @@
             "description": {
               "en": "Optional. It's the store identifier, that you should send only if you want to filter the available devices by store.",
               "es": "Opcional. Es el identificador de la tienda, que deberás enviar sólo si quieres filtrar los dispositivos disponibles por tienda.",
-              "pt": "Opcional. É o identificador da loja. Você deve enviá-lo apenas se quiser filtrar os dispositivos disponíveis por loja. "
+              "pt": "Opcional. É o identificador da loja. Você deve enviá-lo apenas se quiser filtrar os dispositivos disponíveis por loja."
             },
             "schema": {
               "type": "string",
@@ -314,7 +314,7 @@
         "description": {
           "en": "This endpoint allows to create a payment intent, which is a call that contains all the details of a transaction, and assign it to a device",
           "pt": "Este endpoint permite que você crie uma intenção de pagamento, ou seja, uma chamada que contém os detalhes de uma transação a ser realizada, e atribuí-la a um dispositivo",
-          "es": "Este endpoint permite crear una intención de pago, es decir, un llamado que contiene los detalles de una transacción a realizarse, y asignarla a un dispositivo."
+          "es": "Este endpoint permite crear una intención de pago, es decir, un llamado que contiene los detalles de una transacción a realizarse, y asignarla a un dispositivo"
         },
         "parameters": [
           {
@@ -377,7 +377,7 @@
                         "type": "string",
                         "example": "some-reference-from-your-application",
                         "description": {
-                          "en": "Alphanumeric value that functions as a transaction identificator in your application. It will be returned in the Webhook notification",
+                          "en": "Alphanumeric value that functions as a transaction identificator in your application. It will be returned in the Webhook notification.",
                           "es": "Valor alfanumérico que funciona como un identificador de la transacción en tu aplicación. Será devolvuelto en la notificación de Webhook.",
                           "pt": "Valor alfanumérico que funciona como um identificador da transação em seu aplicativo. Ele será retornado na notificação do Webhook."
                         }
@@ -455,7 +455,7 @@
                           "type": "string",
                           "example": "someone-reference-from-your-application",
                           "description": {
-                            "en":"Alphanumeric value that functions as a transaction identificator in your application. It will be returned in the Webhook notification",
+                            "en":"Alphanumeric value that functions as a transaction identificator in your application. It will be returned in the Webhook notification.",
                             "es": "Valor alfanumérico que funciona como un identificador de la transacción en tu aplicación. Será devolvuelto en la notificación de Webhook.",
                             "pt": "Valor alfanumérico que funciona como um identificador da transação em seu aplicativo. Ele será retornado na notificação do Webhook."
                           }
@@ -645,7 +645,7 @@
         ],
         "description": {
           "en": "This endpoint allows to cancel a payment intent while it's status is [opened] and it has not been send to the terminal yet.",
-          "pt": "Este endpoint permite cancelar uma intenção de pagamento quando seu status for [opened] e ainda não tiver sido enviada para o terminal",
+          "pt": "Este endpoint permite cancelar uma intenção de pagamento quando seu status for [opened] e ainda não tiver sido enviada para o terminal.",
           "es": "Este endpoint permite cancelar una intención de pago cuando su estado sea [opened] y todavía no haya sido enviada a la terminal."
         },
         "parameters": [
@@ -1102,7 +1102,7 @@
         ],
         "description": {
           "en": "This endpoint allows you to change a device operating mode. The options are: PDV, that is when a device is used in integration with our API, and STANDALONE, that is when you want to process payments in a device without our API",
-          "pt": "Este endpoint permite alterar o modo de operação do dispositivo. As opções são: PDV,que é quando o dispositivo é usado em modo integrado com nossa API, e STANDALONE, que é usado quando você deseja processar pagamentos sem nossa API",
+          "pt": "Este endpoint permite alterar o modo de operação do dispositivo. As opções são: PDV, que é quando o dispositivo é usado em modo integrado com nossa API, e STANDALONE, que é usado quando você deseja processar pagamentos sem nossa API",
           "es": "Este endpoint te permite cambiar el modo de operación del dispositivo. Las opciones son: PDV, que es cuando el dispositivo es usado en modo integrado con nuestra API, y STANDALONE,  que se usa cuando deseas procesar pagos sin nuestra API"
         },
         "parameters": [
@@ -1139,7 +1139,7 @@
                         "description": {
                           "en": "Point of Sale, integrated mode with the API.",
                           "es": "Punto de Venta, modo integrado con la API.",
-                          "pt": "Ponto de Venda, modo integrado à API"
+                          "pt": "Ponto de Venda, modo integrado à API."
                         }
                       },
                       {
@@ -1147,7 +1147,7 @@
                         "description": {
                           "en": "Default device configuration. Mode not integrated with the API.",
                           "es": "Configuración predeterminada del dispositivo. Modo no integrado con la API.",
-                          "pt": "Configuração padrão do dispositivo. Modo não integrado à API"
+                          "pt": "Configuração padrão do dispositivo. Modo não integrado à API."
                         }
                       }
                     ]
