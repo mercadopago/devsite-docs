@@ -114,9 +114,9 @@ Para obtener detalles sobre los **medios de pago aceptados en cada país**, cons
 
 
 ## Comienza a integrar
-Elige el producto que se ajuste a tus necesidades y comienza a integrar.
+Elige el producto que se ajuste a tus necesidades y revisa su documentación para comenzar a integrar las soluciones de Mercado Pago.
 
-[Volver a Documentación](/developers/es/docs)
+[**Volver a Documentación**](/developers/es/docs)
 
 
 ---
@@ -126,7 +126,7 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Loading
  - card_title: Comienza a integrar
- - card_description: Elige el producto que se ajuste a tus necesidades y comienza a integrar.
+ - card_description: Elige el producto que se ajuste a tus necesidades y revisa su documentación para comenzar a integrar las soluciones de Mercado Pago.
  - card_link:  /developers/es/docs
  - card_linkDescription: Volver a la documentación
  - card_pillText: 
