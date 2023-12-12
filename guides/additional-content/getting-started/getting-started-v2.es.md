@@ -39,7 +39,7 @@ bullet_section_with_media:
 
 Puedes encontrar las credenciales en **Detalles de la aplicación > Credenciales** dentro de [Tus integraciones](/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
-## Conoce los productos
+## Cuáles son los productos
 
 Conoce cuáles son las principales ventajas de los productos de Mercado Pago y encuentra la mejor solución para tu negocio.
 
@@ -120,5 +120,5 @@ future_product_avaible:
  - card_description: Elige el producto que se ajuste a tus necesidades y comienza a integrar.
  - card_link: /developers/es/docs
  - card_linkDescription: Volver a la documentación
- - card_pillText: 
+ - card_pillText:  
 ---
