@@ -7,8 +7,8 @@
             "checkout-pro"
           ],
           "description": {
-            "en": "This endpoint allows you to obtain, through a valid token, details of claims such as, for example, information about the users involved and the request that generated the claim",
-            "pt": "Este endpoint permite obter, por meio de um token válido, detalhes das reclamações como, por exemplo, informaçÕes sobre as pessoas usuárias envolvidas e do pedido que gerou a reclamação",
+            "en": "This endpoint allows you to obtain, through a valid token, details of claims such as, for example, information about the users involved and the order that generated the claim",
+            "pt": "Este endpoint permite obter, por meio de um token válido, detalhes das reclamações como, por exemplo, informaçõees sobre as pessoas usuárias envolvidas e sobre o pedido que gerou a reclamação",
             "es": "Este endpoint permite obtener, a través de un token válido, detalles de los reclamos como, por ejemplo, información sobre las personas usuarias involucradas y el pedido que generó el reclamo"
           },
           "parameters": [
