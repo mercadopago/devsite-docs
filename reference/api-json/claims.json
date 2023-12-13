@@ -1,6 +1,740 @@
 {
     "url": "https://api.mercadopago.com",
     "paths": {
+      "/v1/claims/{claim_id}": {
+        "get": {
+          "tags": [
+            "subscriptions"
+          ],
+          "description": {
+            "en": "This endpoint allows searching, through a valid token, which claims belong to a certain user",
+            "pt": "Este endpoint permite obter, por meio de um token válido, detalhes das mensagens",
+            "es": "Este endpoint permite obter, mediante un token válido, qué reclamos pertenecen a un usuario determinado"
+          },
+          "parameters": [
+            {
+              "in": "header",
+              "name": "Authorization",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
+              },
+              "description": {
+                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
+                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
+                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": {
+                "es": "Success",
+                "pt": "Sucesso",
+                "en": "Éxito"
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "number",
+                        "example": 5033102536,
+                        "description": {
+                          "en": "Claim ID.",
+                          "pt": "ID da reclamação.",
+                          "es": "ID del reclamo."
+                        }
+                      },
+                      "type": {
+                        "type": "string",
+                        "example": "mediations",
+                        "description": {
+                          "en": "Defines the nature of the claim being processed. It can take one of the following values:",
+                          "pt": "Define a natureza da reclamação em processamento. Pode assumir um dos seguintes valores:",
+                          "es": "Define la naturaleza del reclamo que se está procesando. Puede tomar alguno de los siguientes valores:"
+                        },
+                        "enum": [
+                          {
+                            "title": "mediations",
+                            "description": {
+                              "en": "Refers to the process of mediating between parties in a claim.",
+                              "pt": "Refere-se ao processo de mediação entre as partes em uma reclamação.",
+                              "es": "Se refiere al proceso de mediación entre las partes en un reclamo."
+                            }
+                          },
+                          {
+                            "title": "cancel_purchase",
+                            "description": {
+                              "en": "Involves the process of cancelling a previously made purchase.",
+                              "pt": "Envolve o processo de cancelar uma compra previamente realizada.",
+                              "es": "Involucra el proceso de cancelar una compra previamente realizada."
+                            }
+                          },
+                          {
+                            "title": "return",
+                            "description": {
+                              "en": "Pertains to the process of returning a purchased item.",
+                              "pt": "Refere-se ao processo de devolução de um item comprado.",
+                              "es": "Se refiere al proceso de devolver un artículo comprado."
+                            }
+                          },
+                          {
+                            "title": "cancel_sale",
+                            "description": {
+                              "en": "oncerns the process of cancelling a sale that has been made.",
+                              "pt": "Refere-se ao processo de cancelar uma venda realizada.",
+                              "es": "Se ocupa del proceso de cancelar una venta realizada."
+                            }
+                          },
+                          {
+                            "title": "change",
+                            "description": {
+                              "en": "Refers to the alteration or modification of the details or status of a claim.",
+                              "pt": "Refere-se à alteração ou modificação dos detalhes ou status de uma reclamação.",
+                              "es": "Se refiere a la alteración o modificación de los detalles o el estado de un reclamo."
+                            }
+                          }
+                        ]
+                      },
+                      "stage": {
+                        "type": "string",
+                        "example": "dispute",
+                        "description": {
+                          "en": "Indicates the current stage of the claim within the processing cycle involving the buyer and seller. It can take one of the following values:",
+                          "pt": "Indica a fase atual da reclamação dentro do ciclo de processamento que envolve o comprador e o vendedor. Pode assumir um dos seguintes valores:",
+                          "es": "Indica la fase actual del reclamo dentro del ciclo de procesamiento que involucra al comprador y al vendedor. Puede tomar alguno de los siguientes valores:"
+                        },
+                        "enum": [
+                          {
+                            "title": "claim",
+                            "description": {
+                              "en": "Initial stage of the claim process in which both the buyer and seller are involved.",
+                              "pt": "Fase inicial do processo de reclamação na qual intervém o comprador e o vendedor.",
+                              "es": "Fase inicial del proceso de reclamo en la que intervienen el comprador y el vendedor."
+                            }
+                          },
+                          {
+                            "title": "dispute",
+                            "description": {
+                              "en": "Phase where the claim is under dispute or disagreement.",
+                              "pt": "Fase em que a reclamação está em disputa ou desacordo.",
+                              "es": "Fase donde el reclamo está en disputa o desacuerdo."
+                            }
+                          },
+                          {
+                            "title": "recontact",
+                            "description": {
+                              "en": "Stage in which one of the parties makes contact after the claim/dispute has been closed.",
+                              "pt": "Fase na qual uma das partes entra em contato após o encerramento da reclamação/disputa.",
+                              "es": "Fase en la que alguna de las partes se contacta luego de cerrado el reclamo/disputa."
+                            }
+                          },
+                          {
+                            "title": "none",
+                            "description": {
+                              "en": "Indicates no specific stage is currently applicable.",
+                              "pt": "Indica que nenhuma etapa específica é aplicável.",
+                              "es": "Indica que no se aplica ninguna etapa específica."
+                            }
+                          }
+                        ]
+                      },
+                      "status": {
+                        "type": "string",
+                        "example": "closed",
+                        "description": {
+                          "en": "Specifies the current state of the claim, indicating whether it is open or closed. It can take one of the following values:",
+                          "pt": "Especifica o estado atual da reclamação, indicando se está aberta ou fechada. Pode assumir um dos seguintes valores:",
+                          "es": "Especifica el estado actual del reclamo, indicando si está abierto o cerrado. Puede tomar alguno de los siguientes valores:"
+                        },
+                        "enum": [
+                          {
+                            "title": "opened",
+                            "description": {
+                              "en": "Indicates that the claim is open.",
+                              "pt": "Indica que a reclamação está aberta.",
+                              "es": "Indica que el reclamo está abierto."
+                            }
+                          },
+                          {
+                            "title": "closed",
+                            "description": {
+                              "en": "Indicates that the claim is closed.",
+                              "pt": "Indica que a reclamação está fechada.",
+                              "es": "Indica que el reclamo está cerrado."
+                            }
+                          }
+                        ]
+                      },
+                      "parent_id": {
+                        "type": "string",
+                        "example": null,
+                        "description": {
+                          "en": "ID of another claim on which it depends.",
+                          "pt": "ID de outra reclamação da qual esta depende.",
+                          "es": "ID de otro reclamo del que depende."
+                        }
+                      },
+                      "client_id": {
+                        "type": "number",
+                        "example": 1569196570216262,
+                        "description": {
+                          "en": "ID of the app that created the claim.",
+                          "pt": "ID do aplicativo que criou a reclamação.",
+                          "es": "ID de la app que creo el reclamo"
+                        }
+                      },
+                      "resource_id": {
+                        "type": "number",
+                        "example": 7138572864,
+                        "description": {
+                          "en": "ID of the resource on which the claim is created and depends on the 'resource' parameter.",
+                          "pt": "ID do recurso sobre o qual a reclamação é criada e depende do parâmetro 'resource'.",
+                          "es": "ID del recurso sobre el que se crea el reclamo y depende del parámetro 'resource'."
+                        }
+                      },
+                      "resource": {
+                        "type": "string",
+                        "example": "shipment",
+                        "description": {
+                          "en": "Identificador del recurso sobre el que se crea el reclamo, such as a payment, order, shipment or purchase.",
+                          "pt": "Identificador do recurso sobre o qual se cria a reclação, como um pagamento, pedido, envio ou compra.",
+                          "es": "Identificador del recurso sobre el que se crea el reclamo, como un pago, pedido, envío o compra."
+                        },
+                        "enum": [
+                          {
+                            "title": "payment",
+                            "description": {
+                              "en": "Related to claims involving payment transactions.",
+                              "pt": "Relacionado a reclamações envolvendo transações de pagamento.",
+                              "es": "Relacionado con reclamos que involucran transacciones de pago."
+                            }
+                          },
+                          {
+                            "title": "order",
+                            "description": {
+                              "en": "Pertains to claims arising from order processing issues.",
+                              "pt": "Refere-se a reclamações decorrentes de problemas no processamento de pedidos.",
+                              "es": "Se refiere a reclamos surgidos de problemas en el procesamiento de pedidos."
+                            }
+                          },
+                          {
+                            "title": "shipment",
+                            "description": {
+                              "en": "Concerns claims related to shipping or delivery matters.",
+                              "pt": "Refere-se a reclamações relacionadas a questões de envio ou entrega.",
+                              "es": "Concierna a reclamos relacionados con asuntos de envío o entrega."
+                            }
+                          },
+                          {
+                            "title": "purchase",
+                            "description": {
+                              "en": "Involves claims associated with the purchase process.",
+                              "pt": "Envolve reclamações associadas ao processo de compra.",
+                              "es": "Involucra reclamos asociados con el proceso de compra."
+                            }
+                          }
+                        ]
+                      },
+                      "reason_id": {
+                        "type": "string",
+                        "example": "PNR4071",
+                        "description": {
+                          "en": "Reason/motive for which the claim was created.",
+                          "pt": "Razão/motivo pelo qual a reclamação foi criada.",
+                          "es": "Razón/motivo por el cual se creó el reclamo."
+                        }
+                      },
+                      "quantity_type": {
+                        "type": "string",
+                        "example": "total",
+                        "description": {
+                          "en": "Indica si una devolución corresponde a todos los productos de la orden o solo algunos. Inicialmente sólo mostrará el valor 'total' y en el futuro se visualizará el valor 'partial'.",
+                          "pt": "Indica se um reembolso corresponde a todos os produtos do pedido ou apenas alguns. Inicialmente, mostrará apenas o valor 'total' e, no futuro, será exibido o valor 'partial'.",
+                          "es": "Indicates whether a return corresponds to all products in the order or only some. Initially, it will only show the value 'total', and in the future, the value 'partial' will be displayed."
+                        }
+                      },
+                      "players": {
+                        "type": "array",
+                        "description": {
+                          "en": "People who are participating in the complaint.",
+                          "pt": "Pessoas que estão participando da reclamação.",
+                          "es": "Personas que están participando en el reclamo."
+                        },
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "role": {
+                              "type": "string",
+                              "example": "mediator",
+                              "description": {
+                                "en": "Indicates the person's role within the claim. It can take one of the following values:",
+                                "pt": "Indica o papel da pessoa dentro da reclamação. Pode assumir um dos seguintes valores:",
+                                "es": "Indica el rol de la persona dentro del reclamo. Puede tomar alguno de los siguientes valores:"
+                              },
+                              "enum": [
+                                {
+                                  "title": "complainant",
+                                  "description": {
+                                    "en": "Person who claims",
+                                    "pt": "Pessoa que reclama.",
+                                    "es": "Persona que reclama."
+                                  }
+                                },
+                                {
+                                  "title": "respondent",
+                                  "description": {
+                                    "en": "Person to whom they are complaining.",
+                                    "pt": "Pessoa a quem estão reclamando.",
+                                    "es": "Persona a quién le reclaman."
+                                  }
+                                },
+                                {
+                                  "title": "mediator",
+                                  "description": {
+                                    "en": "Person who intervenes to help solve the problem.",
+                                    "pt": "Pessoa que intervém para ajudar a resolver o problema.",
+                                    "es": "Persona que interviene para ayudar a solucionar el problema."
+                                  }
+                                }
+                              ]
+                            },
+                            "type": {
+                              "type": "string",
+                              "example": "payer",
+                              "description": {
+                                "en": "Role that the person occupies in the operation that is being claimed and may vary according to the 'resource'. It can take one of the following values:",
+                                "pt": "Papel que a pessoa ocupa na operação que está sendo reivindicada e pode variar de acordo com o 'resource'. Pode assumir um dos seguintes valores:",
+                                "es": "Rol que ocupa la persona sobre la operación que se está reclamando y puede variar de acuerdo con el 'resource'. Puede tomar alguno de los siguientes valores:"
+                              },
+                              "enum": [
+                                {
+                                  "title": "payment",
+                                  "description": {
+                                    "en": "Indicates that the person is the buyer or collector.",
+                                    "pt": "Indica que a pessoa é compradora ou cobradora.",
+                                    "es": "Indica que la persona es el comprador o collector."
+                                  }
+                                },
+                                {
+                                  "title": "order",
+                                  "description": {
+                                    "en": "Indicates that the person is the buyer or seller.",
+                                    "pt": "Indica que a pessoa é compradora ou vendedora.",
+                                    "es": "Indica que la persona es el comprador o vendedor."
+                                  }
+                                },
+                                {
+                                  "title": "shipment",
+                                  "description": {
+                                    "en": "Indicates that the person is the receiver or sender.",
+                                    "pt": "Indica que a pessoa é o destinatário ou remetente.",
+                                    "es": "Indica que la persona es el receptor o remitente."
+                                  }
+                                }
+                              ]
+                            },
+                            "user_id": {
+                              "type": "number",
+                              "example": 242829175,
+                              "description": {
+                                "en": "ID of the 'type' indicated in the previous parameter.",
+                                "pt": "ID do 'type' indicado no parâmetro anterior.",
+                                "es": "ID del 'type' indicado en el parámetro anterior."
+                              }
+                            },
+                            "available_actions": {
+                              "type": "array",
+                              "description": {
+                                "en": "Provides information about the actions that each of the involved parties can execute.",
+                                "pt": "Exibe informações sobre as ações que cada uma das partes envolvidas pode executar.",
+                                "es": "Presenta información sobre las acciones que pueden ejecutar cada una de las partes intervinientes."
+                              },
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "action": {
+                                    "type": "string",
+                                    "example": "recontact",
+                                    "description": {
+                                      "es": "List of actions that each of the involved parties can execute.",
+                                      "pt": "Lista de ações que cada uma das partes envolvidas pode executar.",
+                                      "en": "Lista de acciones que pueden ejecutar cada una de las partes intervinientes."
+                                    },
+                                    "enum": [
+                                      {
+                                        "title": "send_message_to_complainant",
+                                        "description": {
+                                          "en": "Send a message to the buyer (with or without attachments).",
+                                          "pt": "Enviar mensagem para o comprador (com ou sem anexos).",
+                                          "es": "Enviar mensaje para el comprador (con o sin anexos)."
+                                        }
+                                      },
+                                      {
+                                        "title": "send_message_to_mediator",
+                                        "description": {
+                                          "en": "Send a message to the mediator (with or without attachments).",
+                                          "pt": "Enviar mensagem para o mediador (com ou sem anexos).",
+                                          "es": "Enviar mensaje para el mediador (con o sin anexos)."
+                                        }
+                                      },
+                                      {
+                                        "title": "recontact (no disponible aún)",
+                                        "description": {
+                                          "en": "Reopen a closed complaint through an interaction, such as a message.",
+                                          "pt": "Reabrir uma reclamação já fechada, por meio de uma interação, como uma mensagem.",
+                                          "es": "Reabrir un reclamo ya cerrado, por medio de una interacción, como un mensaje."
+                                        }
+                                      },
+                                      {
+                                        "title": "refund",
+                                        "description": {
+                                          "en": "Refund the buyer's money. Must be performed by the Mercado Pago front end.",
+                                          "pt": "Devolver o dinheiro do comprador. Deve ser realizado pelo front do Mercado Pago.",
+                                          "es": "Devolver el dinero del comprado. Debe ser realizado por el front de Mercado Pago."
+                                        }
+                                      },
+                                      {
+                                        "title": "open_dispute",
+                                        "description": {
+                                          "en": "Initiate mediation.",
+                                          "pt": "Iniciar uma mediação.",
+                                          "es": "Iniciar una mediación."
+                                        }
+                                      },
+                                      {
+                                        "title": "send_potential_shipping",
+                                        "description": {
+                                          "en": "Send a promise of shipment, indicating a date.",
+                                          "pt": "Enviar uma promessa de postagem, indicando uma data.",
+                                          "es": "Enviar una promesa de post, indicando una fecha."
+                                        }
+                                      },
+                                      {
+                                        "title": "add_shipping_evidence",
+                                        "description": {
+                                          "en": "Publish evidence that the product has been shipped.",
+                                          "pt": "Publicar uma evidência de que o produto foi enviado.",
+                                          "es": "Publicar una evidencia de que el producto fue enviado."
+                                        }
+                                      },
+                                      {
+                                        "title": "send_attachments",
+                                        "description": {
+                                          "en": "Send message with attached images.",
+                                          "pt": "Enviar mensagem com imagens anexadas.",
+                                          "es": "Enviar mensaje con imágenes adjuntas."
+                                        }
+                                      },
+                                      {
+                                        "title": "allow_return_label",
+                                        "description": {
+                                          "en": "Generate a return label.",
+                                          "pt": "Gerar etiqueta de devolução.",
+                                          "es": "Generar etiqueta de devolución."
+                                        }
+                                      },
+                                      {
+                                        "title": "send_tracking_number",
+                                        "description": {
+                                          "en": "Send the shipping tracking number.",
+                                          "pt": "Enviar o número de rastreamento de envio (tracking number).",
+                                          "es": "Enviar el número de rastreo de envío (tracking number)."
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "due_date": {
+                                    "type": "string",
+                                    "example": "2020-11-16T22:36:59.000-04:00",
+                                    "description": {
+                                      "en": "Deadline to perform the action.",
+                                      "pt": "Prazo limite para realizar a ação.",
+                                      "es": "Tiempo límite para realizar la acción."
+                                    }
+                                  },
+                                  "mandatory": {
+                                    "type": "boolean",
+                                    "example": true,
+                                    "description": {
+                                      "en": "This field being 'true' indicates that the action is mandatory and must be performed within the specified time.",
+                                      "pt": "Este campo como 'true' indica que a ação é obrigatória e deve ser realizada dentro do tempo informado.",
+                                      "es": "Este campo en 'true' indica que la acción es obligatoria y debe ser realizada dentro del tiempo informado."
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "resolution": {
+                        "type": "object",
+                        "description": {
+                          "en": "Provides information about claim resolution.",
+                          "pt": "Exibe informações sobre a resolução da reclamação.",
+                          "es": "Presenta información sobre la resolución del reclamo."
+                        },
+                        "properties": {
+                          "reason": {
+                            "type": "string",
+                            "example": "already_shipped",
+                            "description": {
+                              "en": "Reason for resolution/closure.",
+                              "pt": "Motivo de resolução/encerramento.",
+                              "es": "Motivo de resolucion/cierre."
+                            }
+                          },
+                          "date_created": {
+                            "type": "string",
+                            "example": "2020-10-02T01:12:31.000-04:00",
+                            "description": {
+                              "en": "Date of resolution/closure of the claim.",
+                              "pt": "Data de resolução/encerramento da reclamação.",
+                              "es": "Fecha de la resolucion/cierre del reclamo."
+                            }
+                          },
+                          "decision": {
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "example": "complainant",
+                              "description": {
+                                "en": "Person who defined the resolution of the claim.",
+                                "pt": "Pessoa que definiu a resolução da reclamação.",
+                                "es": "Persona que definió la resolución del reclamo."
+                              }
+                            }
+                          },
+                          "closed_by": {
+                            "type": "string",
+                            "example": "mediator",
+                            "description": {
+                              "en": "Person who closed the claim.",
+                              "pt": "Pessoa que encerrou a reclamação.",
+                              "es": "Persona que cerró el reclamo."
+                            }
+                          }
+                        }
+                      },
+                      "coverages": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "example": "bpp",
+                              "description": {
+                                "en": ".",
+                                "pt": ".",
+                                "es": "."
+                              }
+                            },
+                            "benefited": {
+                              "type": "string",
+                              "example": "complainant",
+                              "description": {
+                                "en": "It will indicate who will benefit from resolving the claim.",
+                                "pt": "Indicará quem for beneficiado pela resolução da reclamação.",
+                                "es": "Indicará quién se beneficiará de resolver el reclamo."
+                              }
+                            },
+                            "amount": {
+                              "type": "number",
+                              "example": 194.99,
+                              "description": {
+                                "en": ".",
+                                "pt": "",
+                                "es": ""
+                              }
+                            },
+                            "resource": {
+                              "type": "string",
+                              "example": "shipment",
+                              "description": {
+                                "en": "Identificador del recurso sobre el que se crea el reclamo, such as a payment, order, shipment or purchase.",
+                                "pt": "Identificador do recurso sobre o qual se cria a reclação, como um pagamento, pedido, envio ou compra.",
+                                "es": "Identificador del recurso sobre el que se crea el reclamo, como un pago, pedido, envío o compra."
+                              },
+                              "enum": [
+                                {
+                                  "title": "payment",
+                                  "description": {
+                                    "en": "Related to claims involving payment transactions.",
+                                    "pt": "Relacionado a reclamações envolvendo transações de pagamento.",
+                                    "es": "Relacionado con reclamos que involucran transacciones de pago."
+                                  }
+                                },
+                                {
+                                  "title": "order",
+                                  "description": {
+                                    "en": "Pertains to claims arising from order processing issues.",
+                                    "pt": "Refere-se a reclamações decorrentes de problemas no processamento de pedidos.",
+                                    "es": "Se refiere a reclamos surgidos de problemas en el procesamiento de pedidos."
+                                  }
+                                },
+                                {
+                                  "title": "shipment",
+                                  "description": {
+                                    "en": "Concerns claims related to shipping or delivery matters.",
+                                    "pt": "Refere-se a reclamações relacionadas a questões de envio ou entrega.",
+                                    "es": "Concierna a reclamos relacionados con asuntos de envío o entrega."
+                                  }
+                                },
+                                {
+                                  "title": "purchase",
+                                  "description": {
+                                    "en": "Involves claims associated with the purchase process.",
+                                    "pt": "Envolve reclamações associadas ao processo de compra.",
+                                    "es": "Involucra reclamos asociados con el proceso de compra."
+                                  }
+                                }
+                              ]
+                            },
+                            "resource_id": {
+                              "type": "number",
+                              "example": 7138572864,
+                              "description": {
+                                "en": "ID of the resource on which the claim is created and depends on the 'resource' parameter.",
+                                "pt": "ID do recurso sobre o qual a reclamação é criada e depende do parâmetro 'resource'.",
+                                "es": "ID del recurso sobre el que se crea el reclamo y depende del parámetro 'resource'."
+                              }
+                            },
+                            "date_created": {
+                              "type": "string",
+                              "example": "2018-03-08T10:35:30.000-0400",
+                              "description": {
+                                "en": "Date the claim was created.",
+                                "pt": "Data em que a reclamação foi criada.",
+                                "es": "Fecha en la que se creó el reclamo."
+                              }
+                            },
+                            "costs": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "role": {
+                                    "type": "string",
+                                    "example": "respondent",
+                                    "description": {
+                                      "en": ".",
+                                      "pt": ".",
+                                      "es": ""
+                                    }
+                                  },
+                                  "amount": {
+                                    "type": "number",
+                                    "example": 194.99,
+                                    "description": {
+                                      "en": ".",
+                                      "pt": ".",
+                                      "es": ""
+                                    }
+                                  },
+                                  "date_created": {
+                                    "type": "string",
+                                    "example": "2018-03-08T10:35:30.000-0400",
+                                    "description": {
+                                      "en": ".",
+                                      "pt": ".",
+                                      "es": ""
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "labels": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "example": "reputation",
+                              "description": {
+                                "en": ".",
+                                "pt": ".",
+                                "es": ""
+                              },
+                              "value": {
+                                "type": "string",
+                                "example": "avoid",
+                                "description": {
+                                  "en": ".",
+                                  "pt": ".",
+                                  "es": ""
+                                }
+                              },
+                              "admin_id": {
+                                "type": "string",
+                                "example": null,
+                                "description": {
+                                  "en": ".",
+                                  "pt": ".",
+                                  "es": ""
+                                }
+                              },
+                              "date_created": {
+                                "type": "string",
+                                "example": "2018-03-08T09:56:00.078-0400",
+                                "description": {
+                                  "en": ".",
+                                  "pt": ".",
+                                  "es": ""
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "site_id": {
+                        "type": "string",
+                        "example": "MLA",
+                        "description": {
+                          "en": "ID of the site where the claim occurs.",
+                          "pt": "ID do site em que ocorre a reclamação.",
+                          "es": "ID del sitio donde se desarrolla el reclamo."
+                        }
+                      },
+                      "date_created": {
+                        "type": "string",
+                        "example": "2020-09-30T09:48:06.000-04:00",
+                        "description": {
+                          "en": "Date the claim was created.",
+                          "pt": "Data em que a reclamação foi criada.",
+                          "es": "Fecha en la que se creó el reclamo."
+                        }
+                      },
+                      "last_updated": {
+                        "type": "string",
+                        "example": "2020-10-02T01:12:31.000-04:00",
+                        "description": {
+                          "en": "Date of the last update to the claim.",
+                          "pt": "Data da última atualização da reclamação.",
+                          "es": "Fecha de última actualización reclamo."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "title": {
+            "en": "Get message details",
+            "pt": "Obter detalhes da mensagem",
+            "es": "Obtener detalles del mensaje"
+          }
+        }
+      },
       "/claims/search": {
         "get": {
           "tags": [
@@ -106,7 +840,7 @@
               },
               "description": {
                 "en": "he current stage of the claim within the processing cycle involving the buyer and seller. It can take one of the following values:",
-                "pt": "Fase atual da reclamação dentro do ciclo de processamento que envolve o comprador e vendedor. Pode assumir um dos seguintes valores:",
+                "pt": "Fase atual da reclamação dentro do ciclo de processamento que envolve o comprador e o vendedor. Pode assumir um dos seguintes valores:",
                 "es": "La fase actual del reclamo dentro del ciclo de procesamiento que involucra al comprador y al vendedor. Puede tomar alguno de los siguientes valores:"
               },
               "enum": [
@@ -114,7 +848,7 @@
                   "title": "claim",
                   "description": {
                     "en": "Initial stage of the claim process in which both the buyer and seller are involved.",
-                    "pt": "Fase inicial do processo de reclamação na qual intervém o comprador e vendedor.",
+                    "pt": "Fase inicial do processo de reclamação na qual intervém o comprador e o vendedor.",
                     "es": "Fase inicial del proceso de reclamo en la que intervienen el comprador y el vendedor."
                   }
                 },
@@ -185,7 +919,7 @@
                 "example": "shipment"
               },
               "description": {
-                "en": "Identificador del recurso sobre el que se crea el reclamo, such as a payment, order, shipment, or purchase. It can take one of the following values:",
+                "en": "Identificador del recurso sobre el que se crea el reclamo, such as a payment, order, shipment or purchase. It can take one of the following values:",
                 "pt": "Identificador do recurso sobre o qual se cria a reclação, como um pagamento, pedido, envio ou compra. Pode assumir um dos seguintes valores:",
                 "es": "Identificador del recurso sobre el que se crea el reclamo, como un pago, pedido, envío o compra. Puede tomar alguno de los siguientes valores:"
               },
@@ -391,7 +1125,7 @@
                               "example": "dispute",
                               "description": {
                                 "en": "Indicates the current stage of the claim within the processing cycle involving the buyer and seller. It can take one of the following values:",
-                                "pt": "Indica a fase atual da reclamação dentro do ciclo de processamento que envolve o comprador e vendedor. Pode assumir um dos seguintes valores:",
+                                "pt": "Indica a fase atual da reclamação dentro do ciclo de processamento que envolve o comprador e o vendedor. Pode assumir um dos seguintes valores:",
                                 "es": "Indica la fase actual del reclamo dentro del ciclo de procesamiento que involucra al comprador y al vendedor. Puede tomar alguno de los siguientes valores:"
                               },
                               "enum": [
@@ -399,7 +1133,7 @@
                                   "title": "claim",
                                   "description": {
                                     "en": "Initial stage of the claim process in which both the buyer and seller are involved.",
-                                    "pt": "Fase inicial do processo de reclamação na qual intervém o comprador e vendedor.",
+                                    "pt": "Fase inicial do processo de reclamação na qual intervém o comprador e o vendedor.",
                                     "es": "Fase inicial del proceso de reclamo en la que intervienen el comprador y el vendedor."
                                   }
                                 },
@@ -487,7 +1221,7 @@
                               "type": "string",
                               "example": "shipment",
                               "description": {
-                                "en": "Identificador del recurso sobre el que se crea el reclamo, such as a payment, order, shipment, or purchase.",
+                                "en": "Identificador del recurso sobre el que se crea el reclamo, such as a payment, order, shipment or purchase.",
                                 "pt": "Identificador do recurso sobre o qual se cria a reclação, como um pagamento, pedido, envio ou compra.",
                                 "es": "Identificador del recurso sobre el que se crea el reclamo, como un pago, pedido, envío o compra."
                               },
@@ -1063,7 +1797,7 @@
                                   "title": "claim",
                                   "description": {
                                     "en": "Initial stage of the claim process in which both the buyer and seller are involved.",
-                                    "pt": "Fase inicial do processo de reclamação na qual intervém o comprador e vendedor.",
+                                    "pt": "Fase inicial do processo de reclamação na qual intervém o comprador e o vendedor.",
                                     "es": "Fase inicial del proceso de reclamo en la que intervienen el comprador y el vendedor."
                                   }
                                 },
@@ -2347,7 +3081,7 @@
                           "example": "dispute",
                           "description": {
                             "en": "Indicates the current stage of the claim within the processing cycle involving the buyer and seller. It can take one of the following values:",
-                            "pt": "Indica a fase atual da reclamação dentro do ciclo de processamento que envolve o comprador e vendedor. Pode assumir um dos seguintes valores:",
+                            "pt": "Indica a fase atual da reclamação dentro do ciclo de processamento que envolve o comprador e o vendedor. Pode assumir um dos seguintes valores:",
                             "es": "Indica la fase actual del reclamo dentro del ciclo de procesamiento que involucra al comprador y al vendedor. Puede tomar alguno de los siguientes valores:"
                           },
                           "enum": [
@@ -2355,7 +3089,7 @@
                               "title": "claim",
                               "description": {
                                 "en": "Initial stage of the claim process in which both the buyer and seller are involved.",
-                                "pt": "Fase inicial do processo de reclamação na qual intervém o comprador e vendedor.",
+                                "pt": "Fase inicial do processo de reclamação na qual intervém o comprador e o vendedor.",
                                 "es": "Fase inicial del proceso de reclamo en la que intervienen el comprador y el vendedor."
                               }
                             },
