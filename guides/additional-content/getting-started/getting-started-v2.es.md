@@ -9,13 +9,15 @@ content_section_with_media:
 
 Mercado Pago ofrece varias soluciones que te permiten **recibir pagos virtuales o presenciales**. Puedes brindar medios de pago sin contratos ni cuotas mensuales, a través de integraciones con tiendas en línea o productos, tales como link de pago, Código QR, y la máquina de Mercado Pago, el Point, que pueden o no estar integrados.
 
-# Cuáles son los productos
+---
+bullet_section_with_media:
+ - type: normal
+ - title: Conoce nuestras soluciones de pago
+ - message: Mercado Pago tiene diferentes medios de pago que se adecúan a tu negocio.
+ - image: /getting-started/integration.png
+---
 
-Conoce cuáles son las principales ventajas de los productos de Mercado Pago y encuentra la mejor solución para tu negocio.
-
-![Getting started](/images/getting-started/getting-started-diagram2-es.png)
-
-# Procesa pagos online
+## Procesa pagos online
 
 Soluciones para quienes vendan por el sitio, desde WhatsApp o redes sociales.
 
@@ -28,7 +30,7 @@ Soluciones para quienes vendan por el sitio, desde WhatsApp o redes sociales.
 | Checkout Bricks | Una solución de pagos modular, segura y personalizable, en donde tú controlas la experiencia completa y eliges qué brick y diseño utilizar según las necesidades de tu sitio. | 🔵🔵🔵⚪⚪   |
 | Wallet Connect | Procesa los pagos de forma automática a través de la billetera digital de Mercado Pago. Con Wallet Connect es posible realizar pagos utilizando el saldo disponible en la cuenta Mercado Pago o tarjetas. | 🔵🔵🔵⚪⚪   |
 
-# Ofrece pagos presenciales
+## Ofrece pagos presenciales
 
 Soluciones para quienes venden desde casa, en la calle, en el coche o en la tienda. 
 
@@ -38,11 +40,19 @@ Soluciones para quienes venden desde casa, en la calle, en el coche o en la tien
 | Point de Mercado Pago | Integra el Point de Mercado Pago y conecta el lector de tarjeta a cualquier sistema IOS o Android para aceptar pagos en caja. | 🔵🔵🔵⚪⚪   |
 | Mercado Pago Delivery | Una solución de entrega de comidas a demanda, en la que el cliente accede a un listado de restaurantes registrados, realiza su pedido y paga directamente a través de la app de Mercado Pago. | 🔵🔵⚪⚪⚪  |
 
-# Procesa pagos en plataformas de e-commerce
+## Procesa pagos en plataformas de e-commerce
 
 Instala el Checkout Pro o el Checkout API en tu tienda y **comienza a ofrecer pagos con Mercado Pago** en tu plataforma de e-commerce. Integrar soluciones conectándote a una plataforma es simple y rápido. Todo el proceso se realiza en el panel de negocios de Mercado Pago y en la propia plataforma.
 
-Conoce la disponibilidad de nuestros productos por plataforma en cada país:
+Encuentra nuestro plugin en las plataformas Shopify, WooCommerce, Tiendanube, VTEX, Wix, Adobe Commerce (Magento), y muchas más.
+
+# Por dónde comenzar a integrar
+
+Conoce cuáles son las principales ventajas de los productos de Mercado Pago y encuentra la mejor solución para tu negocio.
+
+![Getting started](/images/getting-started/getting-started-diagram2-es.png)
+
+## Disponibilidad de nuestros productos por plataforma en cada país
 
 ----[mlb]----
 |  | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colombia | 🇲🇽 <br> México | 🇵🇪 <br> Perú | 🇺🇾 <br>Uruguay |
@@ -86,17 +96,13 @@ bullet_section_with_media:
  - image: /getting-started/woman-mobile-dev.png
 ---
 
-El primer paso para comenzar a integrar es **tener una cuenta de Mercado Pago**. Si no tienes una cuenta de Mercado Pago, ----[mlb]----[**haz clic aquí**](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[**haz clic aquí**](https://www.mercadopago.com.ar/hub/registration/landing) ------------  ----[mlm]----[**haz clic aquí**](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[**haz clic aquí**](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[**haz clic aquí**](https://www.mercadopago.com.co/hub/registration/landing) ------------ ----[mlu]----[**haz clic aquí**](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[**haz clic aquí**](https://www.mercadopago.cl/hub/registration/landing) ------------ para crearla gratis.
+El primer paso para comenzar a integrar es **tener una cuenta de Mercado Pago** o de Mercado Libre. Si no tienes una cuenta de Mercado Pago, ----[mlb]----[**haz clic aquí**](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[**haz clic aquí**](https://www.mercadopago.com.ar/hub/registration/landing) ------------  ----[mlm]----[**haz clic aquí**](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[**haz clic aquí**](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[**haz clic aquí**](https://www.mercadopago.com.co/hub/registration/landing) ------------ ----[mlu]----[**haz clic aquí**](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[**haz clic aquí**](https://www.mercadopago.cl/hub/registration/landing) ------------ para crearla gratis.
+
+Si ya tienes una cuenta de Mercado Libre, accede a [Tus integraciones](https://www.mercadopago.com/developers/panel/app) con el mismo usuario y contraseña.
 
 # Tus integraciones
 
 Con la cuenta ya activa, tienes acceso [Tus integraciones](https://www.mercadopago.com/developers/panel/app), que te permite administrar integraciones con desarrollo de código, tus aplicaciones, realizar pruebas y configurar las notificaciones de eventos relacionados con transacciones.
-
-> NOTE
->
-> Importante
-> 
-> Si ya tienes una cuenta de Mercado Libre, accede a [Tus integraciones](https://www.mercadopago.com/developers/panel/app) con el mismo usuario y contraseña.
 
 ---
 bullet_section_with_media:
@@ -110,10 +116,11 @@ Puedes encontrar las credenciales en **Detalles de la aplicación > Credenciales
 
 Existen dos tipos diferentes de credenciales: las **credenciales de prueba** y las **credenciales de producción**. Ambos tipos de credenciales constan de dos pares de claves que deberás utilizar según el producto elegido: **Public Key** y **Access Token** o **Client ID** y **Client secret**.
 
-Para conocer más, accede a la [documentación de credenciales]()
+Para conocer más, accede a la [documentación de credenciales](/developers/es/docs/your-integrations/credentials).
 
 
 # Comienza a integrar
+
 Elige el producto que se ajuste a tus necesidades y revisa su documentación para comenzar a integrar las soluciones de Mercado Pago.
 
 [**Volver a Documentación**](/developers/es/docs)
@@ -128,6 +135,6 @@ future_product_avaible:
  - card_description: Elige el producto que se ajuste a tus necesidades y revisa su documentación para comenzar a integrar las soluciones de Mercado Pago.
  - card_link:  /developers/es/docs
  - card_linkDescription: Volver a la documentación
- - card_pillText: 
+ - card_pillText: AVAILABLE
 ---
 
