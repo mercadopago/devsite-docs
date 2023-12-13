@@ -3490,7 +3490,7 @@
           }
         }
       },
-      "/{data.resource}": {
+      "/{data-resource}": {
         "get": {
           "tags": [
             "checkout-pro"
