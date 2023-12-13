@@ -9,7 +9,11 @@ content_section_with_media:
 
 Mercado Pago ofrece varias soluciones que te permiten **recibir pagos virtuales o presenciales**. Puedes brindar medios de pago sin contratos ni cuotas mensuales, a través de integraciones con tiendas en línea o productos, tales como link de pago, Código QR, y la máquina de Mercado Pago, el Point, que pueden o no estar integrados.
 
-# Cómo comenzar a integrar
+# Por dónde comenzar a integrar
+
+Conoce cuáles son las principales ventajas de los productos de Mercado Pago y encuentra la mejor solución para tu negocio.
+
+![Getting started](/images/getting-started/getting-started-diagram2-es.png)
 
 ---
 bullet_section_with_media:
@@ -123,8 +127,6 @@ Elige el producto que se ajuste a tus necesidades y revisa su documentación par
 
 ---
 future_product_avaible: 
- - title: 
- - description: 
  - card_avaible: true
  - card_icon: Loading
  - card_title: Comienza a integrar
