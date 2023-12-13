@@ -567,7 +567,7 @@ The table below has the full list of **required fields** for your reference:
 | `payer.entity_type` | Type of person, natural or legal. | *individual* or *association* | - |
 | `payer.identification` | Type and number of the buyer's document. | - | curl -X GET \ <br> 'https://api.mercadopago.com/v1/identification_types' \ <br> -H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
 | `additional_info.ip_address` |  Buyer’s IP address, where the payment is made.. | - | - |
-| `callback_url` | URL where the buyer is redirected by default after making the payment within the bank's page, when the buyer indicates that they want to return to the store.<br>You can check suggested messages to show the buyer under [Examples for callback URLs](/developers/es/docs/checkout-api/how-tos/migrate-pse#bookmark_examples_for_callback_urls). | - | - |
+| `callback_url` | URL where the buyer is redirected by default after making the payment within the bank's page, when the buyer indicates that they want to return to the store.<br>You can check suggested messages to show the buyer under [Examples for callback URLs](/developers/en/docs/checkout-api/how-tos/migrate-pse#bookmark_examples_for_callback_urls). | - | - |
 | `payer.address.zip_code` | Zip code of the payer’s address. | - | - |
 | `payer.address.street_name` | Street name of the payer’s address. | - | - |
 | `payer.address.street_number` | Street number of the payer’s address. | - | - |
