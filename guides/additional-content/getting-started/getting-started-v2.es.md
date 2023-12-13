@@ -5,9 +5,78 @@ content_section_with_media:
  - media_image: /getting-started/women-dev.png
 ---
 
-## Por qué elegir Mercado Pago
+# Por qué elegir Mercado Pago
 
 Mercado Pago ofrece varias soluciones que te permiten **recibir pagos virtuales o presenciales**. Puedes brindar medios de pago sin contratos ni cuotas mensuales, a través de integraciones con tiendas en línea o productos, tales como link de pago, Código QR, y la máquina de Mercado Pago, el Point, que pueden o no estar integrados.
+
+# Cuáles son los productos
+
+Conoce cuáles son las principales ventajas de los productos de Mercado Pago y encuentra la mejor solución para tu negocio.
+
+![Getting started](/images/getting-started/getting-started-diagram2-es.png)
+
+# Procesa pagos online
+
+Soluciones para quienes vendan por el sitio, desde WhatsApp o redes sociales.
+
+|  |  | Dificultad de integración |
+|:---|:---|:---|
+| Checkout Pro | Procesa pagos en el ambiente de Mercado Pago, de manera simple y segura con un diseño listo para usar. Desarrollamos este checkout optimizado para aumentar la conversión. | 🔵🔵⚪⚪⚪  |
+| Checkout API | Una solución versatil para que construyas tu procesador de pagos en tu sitio. Tú controlas toda la experiencia de configuraciones básicas y avanzadas. | 🔵🔵🔵🔵⚪    |
+| Link de pago | Crea un link de pago en pocas etapas y úsalo en el momento para recibir pagos por chat y redes sociales. No necesitas conocimientos técnicos. | 🔵⚪⚪⚪⚪ |
+| Suscripciones | Automatiza los cobros recurrentes a través de una suscripción. Puedes configurar la frecuencia de los pagos y el monto a cobrar. | 🔵🔵⚪⚪⚪  |
+| Checkout Bricks | Una solución de pagos modular, segura y personalizable, en donde tú controlas la experiencia completa y eliges qué brick y diseño utilizar según las necesidades de tu sitio. | 🔵🔵🔵⚪⚪   |
+| Wallet Connect | Procesa los pagos de forma automática a través de la billetera digital de Mercado Pago. Con Wallet Connect es posible realizar pagos utilizando el saldo disponible en la cuenta Mercado Pago o tarjetas. | 🔵🔵🔵⚪⚪   |
+
+# Ofrece pagos presenciales
+
+Soluciones para quienes venden desde casa, en la calle, en el coche o en la tienda. 
+
+|  |  | Dificultad de integración |
+|:---|:---|:---|
+| Código QR | Elige un modelo de integración para generar códigos QR y brindar una experiencia completa de pago presencial. | 🔵🔵⚪⚪⚪  |
+| Point de Mercado Pago | Integra el Point de Mercado Pago y conecta el lector de tarjeta a cualquier sistema IOS o Android para aceptar pagos en caja. | 🔵🔵🔵⚪⚪   |
+| Mercado Pago Delivery | Una solución de entrega de comidas a demanda, en la que el cliente accede a un listado de restaurantes registrados, realiza su pedido y paga directamente a través de la app de Mercado Pago. | 🔵🔵⚪⚪⚪  |
+
+# Procesa pagos en plataformas de e-commerce
+
+Instala el Checkout Pro o el Checkout API en tu tienda y **comienza a ofrecer pagos con Mercado Pago** en tu plataforma de e-commerce. Integrar soluciones conectándote a una plataforma es simple y rápido. Todo el proceso se realiza en el panel de negocios de Mercado Pago y en la propia plataforma.
+
+Conoce la disponibilidad de nuestros productos por plataforma en cada país:
+
+----[mlb]----
+|  | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colombia | 🇲🇽 <br> México | 🇵🇪 <br> Perú | 🇺🇾 <br>Uruguay |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Checkout Transparente | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Checkout Bricks | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Link de Pago | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Suscripciones | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Wallet Connect | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Mercado Pago Delivery | ✔ | - | - | - | - | - | - |
+| Código QR | ✔ | ✔ | ✔ | - | - | - | ✔ |
+| Point de Mercado Pago | ✔ | ✔ | - | - | ✔ | - | - |
+
+------------
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
+|  | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colombia | 🇲🇽 <br> México | 🇵🇪 <br> Perú | 🇺🇾 <br>Uruguay |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Checkout API | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Checkout Bricks | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Link de Pago | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Suscripciones | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Wallet Connect | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Mercado Pago Delivery | ✔ | - | - | - | - | - | - |
+| Código QR | ✔ | ✔ | ✔ | - | - | - | ✔ |
+| Point de Mercado Pago | ✔ | ✔ | - | - | ✔ | - | - |
+
+------------
+
+<br>
+
+Para obtener detalles sobre los **medios de pago aceptados en cada país**, consulta la lista completa con [disponibilidad de medios de pago](/developers/es/docs/sales-processing/payment-methods).
 
 ---
 bullet_section_with_media:
@@ -19,7 +88,7 @@ bullet_section_with_media:
 
 El primer paso para comenzar a integrar es **tener una cuenta de Mercado Pago**. Si no tienes una cuenta de Mercado Pago, ----[mlb]----[**haz clic aquí**](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[**haz clic aquí**](https://www.mercadopago.com.ar/hub/registration/landing) ------------  ----[mlm]----[**haz clic aquí**](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[**haz clic aquí**](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[**haz clic aquí**](https://www.mercadopago.com.co/hub/registration/landing) ------------ ----[mlu]----[**haz clic aquí**](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[**haz clic aquí**](https://www.mercadopago.cl/hub/registration/landing) ------------ para crearla gratis.
 
-## Tus integraciones
+# Tus integraciones
 
 Con la cuenta ya activa, tienes acceso [Tus integraciones](https://www.mercadopago.com/developers/panel/app), que te permite administrar integraciones con desarrollo de código, tus aplicaciones, realizar pruebas y configurar las notificaciones de eventos relacionados con transacciones.
 
@@ -39,85 +108,15 @@ bullet_section_with_media:
 
 Puedes encontrar las credenciales en **Detalles de la aplicación > Credenciales** dentro de [Tus integraciones](/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
-## Cuáles son los productos
+Existen dos tipos diferentes de credenciales: las **credenciales de prueba** y las **credenciales de producción**. Ambos tipos de credenciales constan de dos pares de claves que deberás utilizar según el producto elegido: **Public Key** y **Access Token** o **Client ID** y **Client secret**.
 
-Conoce cuáles son las principales ventajas de los productos de Mercado Pago y encuentra la mejor solución para tu negocio.
-
-![Getting started](/images/getting-started/getting-started-diagram2-es.png)
-
-### Procesa pagos online
-
-Soluciones para quienes vendan por el sitio, desde WhatsApp o redes sociales.
-
-|  |  | Dificultad de integración |
-|:---|:---|:---|
-| Checkout Pro | Procesa pagos en el ambiente de Mercado Pago, de manera simple y segura con un diseño listo para usar. Desarrollamos este checkout optimizado para aumentar la conversión. | 🔵🔵⚪⚪⚪  |
-| Checkout API | Una solución versatil para que construyas tu procesador de pagos en tu sitio. Tú controlas toda la experiencia de configuraciones básicas y avanzadas. | 🔵🔵🔵🔵⚪    |
-| Link de pago | Crea un link de pago en pocas etapas y úsalo en el momento para recibir pagos por chat y redes sociales. No necesitas conocimientos técnicos. | 🔵⚪⚪⚪⚪ |
-| Suscripciones | Automatiza los cobros recurrentes a través de una suscripción. Puedes configurar la frecuencia de los pagos y el monto a cobrar. | 🔵🔵⚪⚪⚪  |
-| Checkout Bricks | Una solución de pagos modular, segura y personalizable, en donde tú controlas la experiencia completa y eliges qué brick y diseño utilizar según las necesidades de tu sitio. | 🔵🔵🔵⚪⚪   |
-| Wallet Connect | Procesa los pagos de forma automática a través de la billetera digital de Mercado Pago. Con Wallet Connect es posible realizar pagos utilizando el saldo disponible en la cuenta Mercado Pago o tarjetas. | 🔵🔵🔵⚪⚪   |
-
-### Ofrece pagos presenciales
-
-Soluciones para quienes venden desde casa, en la calle, en el coche o en la tienda. 
-
-|  |  | Dificultad de integración |
-|:---|:---|:---|
-| Código QR | Elige un modelo de integración para generar códigos QR y brindar una experiencia completa de pago presencial. | 🔵🔵⚪⚪⚪  |
-| Point de Mercado Pago | Integra el Point de Mercado Pago y conecta el lector de tarjeta a cualquier sistema IOS o Android para aceptar pagos en caja. | 🔵🔵🔵⚪⚪   |
-| Mercado Pago Delivery | Una solución de entrega de comidas a demanda, en la que el cliente accede a un listado de restaurantes registrados, realiza su pedido y paga directamente a través de la app de Mercado Pago. | 🔵🔵⚪⚪⚪  |
-
-### Procesa pagos en plataformas de e-commerce
-
-Instala el Checkout Pro o el Checkout API en tu tienda y **comienza a ofrecer pagos con Mercado Pago** en tu plataforma de e-commerce. Integrar soluciones conectándote a una plataforma es simple y rápido. Todo el proceso se realiza en el panel de negocios de Mercado Pago y en la propia plataforma.
-
-Conoce la disponibilidad de nuestros productos por plataforma en cada país:
-
-----[mlb]----
-|  | Checkout Pro | Checkout Transparente |
- :--- | :--- | :--- |
-| Shopify | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇧🇷 |
-| WooCommerce | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾| 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾|
-| Nuvemshop | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | - |
-| VTEX| 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
-| Loja Integrada | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
-| Prestashop | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
-| Wix | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
-| Linx Commerce | - | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
-| Adobe Commerce (Magento) | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
-| iSet | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
-| Yampi | - | 🇧🇷 |
-
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-| | Checkout Pro | Checkout API |
- :--- | :--- | :--- |
-| Shopify | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇧🇷 |
-| WooCommerce | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾| 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾|
-| Nuvemshop | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | - |
-| VTEX| 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
-| Loja Integrada | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
-| Prestashop | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
-| Wix | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
-| Linx Commerce | - | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
-| Adobe Commerce (Magento) | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
-| iSet | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 | 🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇵🇪🇺🇾 |
-| Yampi | - | 🇧🇷 |
-
-------------
-
-<br>
-
-Para obtener detalles sobre los **medios de pago aceptados en cada país**, consulta la lista completa con [disponibilidad de medios de pago](/developers/es/docs/sales-processing/payment-methods).
+Para conocer más, accede a la [documentación de credenciales]()
 
 
-## Comienza a integrar
+# Comienza a integrar
 Elige el producto que se ajuste a tus necesidades y revisa su documentación para comenzar a integrar las soluciones de Mercado Pago.
 
 [**Volver a Documentación**](/developers/es/docs)
-
 
 ---
 future_product_avaible: 
