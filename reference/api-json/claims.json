@@ -3490,7 +3490,7 @@
           }
         }
       },
-      "/DATA.RESOURCE": {
+      "/DATA_RESOURCE": {
         "get": {
           "tags": [
             "checkout-pro"
