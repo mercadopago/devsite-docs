@@ -3500,7 +3500,7 @@
           ],
           "description": {
             "en": "This endpoint allows, through a valid token, to obtain notifications of the complaint by making a 'get' request to the complaints resource using the 'resource' field of the 'data' parameter from the Webhook notifications received from the topic. For more information about Webhook notifications, visit: https://www.mercadopago.com/developers/en/docs/your-integrations/notifications/webhooks",
-            "pt": "Este endpoint permite, por meio de um token válido, ober notificações da reclamação realizando um 'get' ao recurso de reclamações utilizando o campo 'resource', do parâmetro 'data', das notificaçõees Webhook recebidas do tópico. Para mais informações sobre notificações Webhook, acesse: https://www.mercadopago.com/developers/pt/docs/your-integrations/notifications/webhooks",
+            "pt": "Este endpoint permite, por meio de um token válido, obter notificações da reclamação realizando um 'get' ao recurso de reclamações utilizando o campo 'resource', do parâmetro 'data', das notificaçõees Webhook recebidas do tópico. Para mais informações sobre notificações Webhook, acesse: https://www.mercadopago.com/developers/pt/docs/your-integrations/notifications/webhooks",
             "es": "Este endpoint permite, mediante un token válido, obtener notificaciones de la queja realizando una solicitud 'get' al recurso de reclamos utilizando el campo 'resource', del parámetro 'data', de las notificaciones Webhook recibidas del tema. Para obtener más información sobre las notificaciones de Webhook, visite: https://www.mercadopago.com/developers/es/docs/your-integrations/notifications/webhooks"
           },
           "parameters": [
