@@ -3493,7 +3493,7 @@
           }
         }
       },
-      "/{claim_resource}": {
+      "/claim_resource": {
         "get": {
           "tags": [
             "checkout-pro"
