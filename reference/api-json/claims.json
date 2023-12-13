@@ -7,9 +7,9 @@
             "checkout-pro"
           ],
           "description": {
-            "en": "This endpoint allows searching, through a valid token, which claims belong to a certain user",
-            "pt": "Este endpoint permite obter, por meio de um token válido, detalhes das mensagens",
-            "es": "Este endpoint permite obter, mediante un token válido, qué reclamos pertenecen a un usuario determinado"
+            "en": "This endpoint allows you to obtain, through a valid token, details of claims such as, for example, information about the users involved and the request that generated the claim",
+            "pt": "Este endpoint permite obter, por meio de um token válido, detalhes das reclamações como, por exemplo, informaçÕes sobre as pessoas usuárias envolvidas e do pedido que gerou a reclamação",
+            "es": "Este endpoint permite obtener, a través de un token válido, detalles de los reclamos como, por ejemplo, información sobre las personas usuarias involucradas y el pedido que generó el reclamo"
           },
           "parameters": [
             {
@@ -729,9 +729,9 @@
             }
           },
           "title": {
-            "en": "Get message details",
-            "pt": "Obter detalhes da mensagem",
-            "es": "Obtener detalles del mensaje"
+            "en": "Get claim details",
+            "pt": "Obter detalhes da reclamação",
+            "es": "Obtener detalles del reclamo"
           }
         }
       },
@@ -1884,7 +1884,10 @@
                 "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
                 "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
                 "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
-              }
+              },
+              "consumes": [
+                "multipart/form-data"
+              ]
             },
             {
               "in": "formData",
@@ -3490,7 +3493,7 @@
           }
         }
       },
-      "/{data-resource}": {
+      "/{claim_resource}": {
         "get": {
           "tags": [
             "checkout-pro"
