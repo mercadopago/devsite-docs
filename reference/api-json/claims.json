@@ -4,7 +4,7 @@
       "/v1/claims/{claim_id}": {
         "get": {
           "tags": [
-            "subscriptions"
+            "checkout-pro"
           ],
           "description": {
             "en": "This endpoint allows searching, through a valid token, which claims belong to a certain user",
@@ -738,7 +738,7 @@
       "/claims/search": {
         "get": {
           "tags": [
-            "subscriptions"
+            "checkout-pro"
           ],
           "description": {
             "en": "This endpoint allows searching, through a valid token, which claims belong to a certain user",
@@ -1584,7 +1584,7 @@
       "/claims/{claim_id}/messages": {
         "get": {
           "tags": [
-            "subscriptions"
+            "checkout-pro"
           ],
           "description": {
             "en": "This endpoint allows searching, through a valid token, messages associated with a claim",
@@ -1864,7 +1864,7 @@
       "/claims/{claim_id}/attachments": {
         "post": {
           "tags": [
-            "subscriptions"
+            "checkout-pro"
           ],
           "description": {
             "en": "This endpoint allows, through a valid token, attaching image files to the messages that will be associated with the complaint",
@@ -1955,7 +1955,7 @@
       "/claims/{claim_id}/actions/message": {
         "post": {
           "tags": [
-            "subscriptions"
+            "checkout-pro"
           ],
           "description": {
             "en": "This endpoint allows, through a valid token, sending and associating messages with attached image files to the claim",
@@ -2071,7 +2071,7 @@
       "/claims/{claim_id}/attachments/{attach_id}/download": {
         "get": {
           "tags": [
-            "subscriptions"
+            "checkout-pro"
           ],
           "description": {
             "en": "This endpoint allows, through a valid token, downloading image files attached to the messages associated with the claim",
@@ -2113,7 +2113,7 @@
       "/claims/{claim_id}/attachments/{attach_id}": {
         "get": {
           "tags": [
-            "subscriptions"
+            "checkout-pro"
           ],
           "description": {
             "en": "This endpoint allows searching, through a valid token, for image files attached to the message associated with the complaint",
@@ -2219,7 +2219,7 @@
       "/claims/{claim_id}/actions/open_dispute": {
         "post": {
           "tags": [
-            "subscriptions"
+            "checkout-pro"
           ],
           "description": {
             "en": "This endpoint allows searching, through a valid token, requesting mediation in the claim opened by the user",
@@ -2288,7 +2288,7 @@
       "/claims/{claim_id}/expected_resolutions": {
         "get": {
           "tags": [
-            "subscriptions"
+            "checkout-pro"
           ],
             "description": {
               "en": "This endpoint allows, through a valid token, viewing the expected resolutions by the user in their claim",
@@ -2453,7 +2453,7 @@
       "/claims/{claim_id}/evidences": {
         "get": {
           "tags": [
-            "subscriptions"
+            "checkout-pro"
           ],
           "description": {
             "en": "This endpoint allows, through a valid token, obtaining evidence of the the claim, such as order shipping information and attached image files associated with the claim",
@@ -2682,7 +2682,7 @@
       "/claims/{claim_id}/actions/evidences": {
         "post": {
           "tags": [
-            "subscriptions"
+            "checkout-pro"
           ],
           "description": {
             "en": "This endpoint allows you to upload, through a valid token, evidence of sending the order. For a delivery by mail the fields 'shipping_company_name' and 'date_shipped' are required, while for a delivery to order the required fields are 'shipping_company_name', 'destination_agency', 'date_shipped' and 'receiver_name'. For delivery by email, the 'receiver_email' and 'date_shipped' fields are mandatory",
@@ -3039,7 +3039,7 @@
       "/claims/{claim_id}/status_history": {
         "get": {
           "tags": [
-            "subscriptions"
+            "checkout-pro"
           ],
           "description": {
             "en": "This endpoint allows you to view, through a valid token, the history of states and scenarios that the complaint has gone through. It will also be possible to consult the history of actions taken by the people responsible for the complaint",
@@ -3207,7 +3207,7 @@
       "/post-purchase/sites/{site_id}/v2/reasons/{reason_id}": {
         "get": {
           "tags": [
-            "subscriptions"
+            "checkout-pro"
           ],
           "description": {
             "en": "This endpoint allows you to view, through a valid token, the 'reason' why the claim was created, so that based on its classification, certain behaviors are allowed. A claim can be created for three general reasons: PNR (Product not received), PDD (Different or defective product) or CS (Purchase cancellation)",
@@ -3490,10 +3490,10 @@
           }
         }
       },
-      "/data_resource": {
+      "/DATA.RESOURCE": {
         "get": {
           "tags": [
-            "subscriptions"
+            "checkout-pro"
           ],
           "description": {
             "en": "This endpoint allows, through a valid token, to obtain notifications of the complaint by making a 'get' request to the complaints resource using the 'resource' field of the 'data' parameter from the Webhook notifications received from the topic. For more information about Webhook notifications, visit: https://www.mercadopago.com/developers/en/docs/your-integrations/notifications/webhooks",
