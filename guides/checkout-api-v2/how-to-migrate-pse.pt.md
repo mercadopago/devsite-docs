@@ -563,9 +563,9 @@ A tabela a seguir tem a lista completa de campos obrigatórios para sua referên
 |:---:|:---:|:---:|:---:|
 | `transaction_details.financial_institution` | Banco informado no POST para efetuar a transferência eletrônica. A lista de bancos deve ser mostrada ao usuário e permitida a seleção. A lista é atualizada, por isso é recomendável consumir as informações a cada hora. | - | https://api.mercadopago.com/v1/payment_methods/search?site_id=MCO&id=pse&public_key=YOUR_PUBLIC_KEY  |
 | `payer.entity_type` | Tipo de pessoa, física ou jurídica. | *individual* ou *association* | - |
-| `payer.identification` | Tipo e número do documento do comprador. | - | curl -X GET \<br>'https://api.mercadopago.com/v1/identification_types' \<br>-H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
+| `payer.identification` | Tipo e número do documento do comprador. | - | curl -X GET \ <br> 'https://api.mercadopago.com/v1/identification_types' \ <br> -H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
 | `additional_info.ip_address` | IP address do comprador, onde o pagamento é gerado. | - | - |
-| `callback_url` | Página onde o comprador é redirecionado por padrão após efetuar o pagamento dentro da página do banco, quando o comprador indica que deseja retornar à loja.<br>Você pode ver sugestões de mensagens para mostrar ao comprador no subtítulo [Exemplos de mensagens para callback URL]((/developers/es/docs/checkout-api/how-tos/migrate-pse#bookmark_exemplos_de_mensagens_para_callback_url). | - | - |
+| `callback_url` | Página onde o comprador é redirecionado por padrão após efetuar o pagamento dentro da página do banco, quando o comprador indica que deseja retornar à loja.<br>Você pode ver sugestões de mensagens para mostrar ao comprador no subtítulo [Exemplos de mensagens para callback URL](/developers/es/docs/checkout-api/how-tos/migrate-pse#bookmark_exemplos_de_mensagens_para_callback_url). | - | - |
 | `payer.address.zip_code` | Código postal do comprador. | - | - |
 | `payer.address.street_name` | Nome da rua onde o comprador reside. | - | - |
 | `payer.address.street_number` | Núúmero da residência do comprador. | - | - |
