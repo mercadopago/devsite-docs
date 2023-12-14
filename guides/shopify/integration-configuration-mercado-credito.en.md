@@ -1,6 +1,6 @@
-# Installments without card
+# Mercado Crédito
 
-**Mercado Credits** is Mercado Pago’s financing method that allows paying in installments without having a card.
+It is the financing option from Mercado Pago that offers the possibility to pay in installments without needing a credit card.
 
 With this line of credit, administered by Mercado Pago, the payment is credited in full to the seller's account, while the customer can choose to pay in up to 12 fixed monthly installments, no card needed. The user just has to enter their Mercado Pago account (or create one), determine their available limit, and choose how many installments they want to pay in.
  

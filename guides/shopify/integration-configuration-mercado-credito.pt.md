@@ -1,6 +1,6 @@
-# Parcelamento sem cartão
+# Mercado Crédito
 
-O **Mercado Crédito** é a modalidade de financiamento do Mercado Pago que oferece a opção de parcelar sem precisar de cartão.
+É a modalidade de financiamento do Mercado Pago que oferece a opção de parcelar sem precisar de cartão de crédito.
 
 Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão. O usuário terá apenas que entrar em sua conta no Mercado Pago (ou criar uma), saber o limite disponível e escolher em quantas parcelas deseja pagar.
 
