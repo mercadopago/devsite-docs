@@ -9,6 +9,14 @@ content_section_with_media:
 
 Mercado Pago ofrece varias soluciones que te permiten **recibir pagos virtuales o presenciales**. Puedes brindar medios de pago sin contratos ni cuotas mensuales, a través de integraciones con tiendas en línea o productos, tales como link de pago, Código QR, y la máquina de Mercado Pago, el Point, que pueden o no estar integrados.
 
+--- mini_landing_separator ---
+
+# Por dónde comenzar a integrar
+
+Si no tienes certeza de por donde comenzar según tus conocimientos de programación, no te preocupes. Tenemos diferentes soluciones que se ajustan a tus necesidades. Sigue el diagrama que te compartimos a continuación para descubrir cuál es tu producto ideal.
+
+![Getting started](/images/getting-started/getting-started-diagram2-es.png)
+
 ---
 bullet_section_with_media:
  - type: reverse
@@ -46,12 +54,15 @@ Instala el Checkout Pro o el Checkout API en tu tienda y **comienza a ofrecer pa
 
 Encuentra nuestro plugin en las plataformas **Shopify**, **WooCommerce**, **Tiendanube**, **VTEX**, **Wix**, **Adobe Commerce (Magento)**, y muchas más. 
 
-# Por dónde comenzar a integrar
+## Utiliza nuestras SDKs
 
-Si no tienes certeza de por donde comenzar según tus conocimientos de programación, no te preocupes. Tenemos diferentes soluciones que se ajustan a tus necesidades. Sigue el diagrama que te compartimos a continuación para descubrir cuál es tu producto ideal.
+Con las bibliotecas de SDKs de Mercado Pago, puedes reducir el tiempo de integración client-side y server-side. 
 
-![Getting started](/images/getting-started/getting-started-diagram2-es.png)
+Al utilizar nuestros **SDKs de backend**, obtienes un acceso fácil a las funcionalidades server-side de nuestras soluciones. Esto te permite crear y consultar el estado de diversas transacciones, integrar pagos a través de tarjeta y otros métodos, además de realizar reembolsos o contracargos.
 
+Con las **SDKs de frontend**, puedes realizar llamadas para el token de tarjetas y utilizar muchas otras funcionalidades en la integración. 
+
+--- mini_landing_separator ---
 
 # Disponibilidad de las soluciones en cada país
 
@@ -67,7 +78,6 @@ Si no tienes certeza de por donde comenzar según tus conocimientos de programac
 | Mercado Pago Delivery | ✔ | - | - | - | - | - | - |
 | Código QR | ✔ | ✔ | ✔ | - | - | - | ✔ |
 | Point de Mercado Pago | ✔ | ✔ | - | - | ✔ | - | - |
-
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
@@ -82,14 +92,11 @@ Si no tienes certeza de por donde comenzar según tus conocimientos de programac
 | Mercado Pago Delivery | ✔ | - | - | - | - | - | - |
 | Código QR | ✔ | ✔ | ✔ | - | - | - | ✔ |
 | Point de Mercado Pago | ✔ | ✔ | - | - | ✔ | - | - |
-
 ------------
 
 <br>
 
 > Para obtener detalles sobre los **medios de pago aceptados en cada país**, consulta la lista completa con [disponibilidad de medios de pago](/developers/es/docs/sales-processing/payment-methods).
-
-<br>
 
 <br>
 
@@ -104,6 +111,8 @@ bullet_section_with_media:
 El primer paso para comenzar a integrar es **tener una cuenta de Mercado Pago** o de Mercado Libre. Si no tienes una cuenta de Mercado Pago, ----[mlb]----[**haz clic aquí**](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[**haz clic aquí**](https://www.mercadopago.com.ar/hub/registration/landing) ------------  ----[mlm]----[**haz clic aquí**](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[**haz clic aquí**](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[**haz clic aquí**](https://www.mercadopago.com.co/hub/registration/landing) ------------ ----[mlu]----[**haz clic aquí**](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[**haz clic aquí**](https://www.mercadopago.cl/hub/registration/landing) ------------ para crearla gratis.
 
 Si ya tienes una cuenta de Mercado Libre, accede a [Tus integraciones](https://www.mercadopago.com/developers/panel/app) con el mismo usuario y contraseña.
+
+--- mini_landing_separator ---
 
 # Tus integraciones
 
@@ -125,7 +134,7 @@ Para conocer más, accede a la [documentación de credenciales](/developers/es/d
 
 --- mini_landing_separator ---
 
-# Comienza a integrar
+# ¡Comienza a integrar!
 
 Elige el producto que se ajuste a tus necesidades y revisa su documentación para comenzar a integrar las soluciones de Mercado Pago.
 
