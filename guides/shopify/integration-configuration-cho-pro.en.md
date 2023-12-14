@@ -21,15 +21,15 @@ To configure Checkout Pro in a Shopify store, follow the steps below:
 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-When installing [Checkout Pro](/developers/en/docs/checkout-pro/landing) ("**Checkout Mercado Pago**"), there may be an **increase in the approval rate of online store sales**. This happens because buyers will be able to pay using a Mercado Pago account and the entire purchase process will be done in our environment, which facilitates payment. At the end of the transaction, these buyers are redirected to the store environment.
+When installing [Checkout Pro](/developers/en/docs/checkout-pro/landing) (**Checkout Mercado Pago**), there may be an **increase in the approval rate of online store sales**. This happens because buyers will be able to pay using a Mercado Pago account and the entire purchase process will be done in our environment, which facilitates payment. At the end of the transaction, these buyers are redirected to the store environment.
 
 > WARNING
 >
 > Attention
 >
-> If you were using the old Mercado Pago app ("**Mercado Pago**") and stopped receiving payments in your store, don't worry. To start selling again, install our new app("**Checkout Mercado Pago**") by following the steps below.
+> If you were using the old Mercado Pago app (**Mercado Pago**) and stopped receiving payments in your store, don't worry. To start selling again, install our new app (**Checkout Mercado Pago**) by following the steps below.
 
-To install Checkout Pro ("**Checkout Mercado Pago**") in a Shopify store, follow these steps:
+To install Checkout Pro (**Checkout Mercado Pago**) in a Shopify store, follow these steps:
 
 1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
 2. In the store's administrative panel, click on **Settings**.
@@ -46,3 +46,5 @@ To install Checkout Pro ("**Checkout Mercado Pago**") in a Shopify store, follow
 > In case you renew your credentials, remember to replace them in your integration.
 
 ------------
+
+Ready! Mercado Pago's Checkout Pro is ready to process payments for your store.

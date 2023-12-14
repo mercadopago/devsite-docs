@@ -15,7 +15,7 @@ Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredit
 
 ------------
  
-**Mercado Crédito** actualmente es ofrecido en nuestro [Checkout Pro](/developers/es/docs/checkout-pro/landing) y ahora también es posible acceder directo desde el checkout de la tienda. En caso de no haber configurado todavía Checkout Pro, accede a la sección [Configurar pagos con Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).
+**Mercado Crédito** actualmente es ofrecido en nuestro [Checkout Pro](/developers/es/docs/checkout-pro/landing) (**Checkout Mercado Pago**) y ahora también es posible acceder directo desde el checkout de la tienda. En caso de no haber configurado todavía Checkout Pro, accede a la sección [Configuración de la integración > Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).
 
 Para **configurar Mercado Crédito en el checkout de tu tienda**, sigue los pasos a continuación.
 
