@@ -88,7 +88,9 @@ Encuentra nuestro plugin en las plataformas **Shopify**, **WooCommerce**, **Tien
 
 > Para obtener detalles sobre los **medios de pago aceptados en cada país**, consulta la lista completa con [disponibilidad de medios de pago](/developers/es/docs/sales-processing/payment-methods).
 
---- mini_landing_separator ---
+<br>
+
+<br>
 
 ---
 bullet_section_with_media:
@@ -120,21 +122,10 @@ Existen dos tipos diferentes de credenciales: las **credenciales de prueba** y l
 
 Para conocer más, accede a la [documentación de credenciales](/developers/es/docs/your-integrations/credentials).
 
+--- mini_landing_separator ---
 
 # Comienza a integrar
 
 Elige el producto que se ajuste a tus necesidades y revisa su documentación para comenzar a integrar las soluciones de Mercado Pago.
 
 [**Volver a Documentación**](/developers/es/docs)
-
----
-future_product_avaible: 
- - card_avaible: true
- - card_icon: Loading
- - card_title: Comienza a integrar
- - card_description: Elige el producto que se ajuste a tus necesidades y revisa su documentación para comenzar a integrar las soluciones de Mercado Pago.
- - card_link:  /developers/es/docs
- - card_linkDescription: Volver a la documentación
- - card_pillText: AVAILABLE
----
-
