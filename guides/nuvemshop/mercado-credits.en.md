@@ -6,7 +6,7 @@ With this line of credit, administered by Mercado Pago, the payment is credited 
  
 **Mercado Credits** is currently offered in our [Checkout Pro](/developers/en/docs/checkout-pro/landing) (**Checkout Mercado Pago**), and now it is also possible to access directly from the store checkout. 
 
-> If you haven't set up Checkout Pro yet, you must access the [Payment configuration > Checkout Pro](/developers/en/docs/nuvemshop/payments-configuration/checkout-pro) section.
+> If you haven't set up Checkout Pro yet, you must access the [Payment configuration > Checkout Pro](/developers/en/docs/nuvemshop/payments-configuration/checkout-pro) section to configure it.
 
 If you want to **show Mercado Credits in your store's checkout**, follow the steps below.
 
