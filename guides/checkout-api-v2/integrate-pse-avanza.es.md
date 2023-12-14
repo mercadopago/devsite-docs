@@ -136,7 +136,7 @@ Para que la lista de los medios de pago sea consumida por el frontend en los sig
 >
 > Añadir formulario de pago
 
-En el frontend de tu proyecto, deberás añadir el siguiente formulario de pago.
+Una vez obtenidos los medios de pago, añade el siguiente formulario de pago a tu proyecto. 
 
 ```html
  <form id="form-checkout" action="/process_payment" method="post">
@@ -313,9 +313,9 @@ Para que los elementos dinámicos creados con estos javascript se carguen cuando
 >
 > Enviar pago
 
-Al finalizar la inclusión del formulario de pago, obtener los tipos de documentos y configurar el listado de bancos, es necesario enviar el email del comprador, la dirección, el télefono, el tipo y número de documento, el medio de pago utilizado y el detalle del importe a pagar utilizando nuestra API de Pagos o uno de nuestros SDKs.
+Al finalizar la inclusión del formulario de pago, obtener los tipos de documentos y configurar el listado de bancos, es necesario enviar el email del comprador, la dirección, el télefono, el tipo y número de documento, el medio de pago utilizado y el detalle del importe a pagar.
 
-Para configurar pagos con **PSE**, envía un **POST** con los parámetros requeridos al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
+Para hacerlo, envía un **POST** con los parámetros requeridos al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
 > WARNING
 >

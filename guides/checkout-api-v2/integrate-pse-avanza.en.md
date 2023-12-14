@@ -313,9 +313,9 @@ In order for the dynamic elements created with this javascript to load when the 
 >
 > Send payment
 
-When finalizing the inclusion of the payment form, obtaining the types of documents and configuring the banks list, it is necessary to forward the buyer's email, telephone number, address, type and document number, the payment method used and the details of the amount to be paid using our Payments API or one of our SDKs.
+When finalizing the inclusion of the payment form, obtaining the types of documents and configuring the banks list, it is necessary to forward the buyer's email, telephone number, address, type and document number, the payment method used and the details of the amount to be paid.
 
-To configure payments with **PSE**, send a **POST** with the appropriate parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post ) and execute the request or, if you prefer, use one of our SDKs below.
+To do so, send a **POST** with the appropriate parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post ) and execute the request or, if you prefer, use one of our SDKs below.
 
 > WARNING
 >
