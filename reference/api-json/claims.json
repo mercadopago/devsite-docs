@@ -3517,6 +3517,20 @@
                 "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
                 "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
               }
+            },
+            {
+              "in": "path",
+              "name": "CLAIM_RESOURCE",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "/v1/claims/1041417027"
+              },
+              "description": {
+                "en": "The 'data.resource' received in the claims notification, indicates the path that must be accessed to retrieve the information.",
+                "pt": "O 'data.resource' recebido na notificação da reclamação, indicando o path que deve ser acessado para recuperar suas informações.",
+                "es": "El 'data.resource' recibido en la notificación de reclamos, indicando el path al que se debe acceder para recuperar su información."
+              }
             }
           ],
           "responses": {
