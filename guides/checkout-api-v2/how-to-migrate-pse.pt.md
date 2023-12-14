@@ -158,6 +158,48 @@ Para acessar a lista de bancos disponíveis para PSE, é preciso inicialmente, a
 
 No exemplo a seguir, mostramos como enviar meios de pagamento através de um endpoint do aplicativo, `/payment_methods`. Uma vez chamado esse endpoint pelo frontend, a lista de bancos disponíveis para PSE retorna através do campo `financial_institutions` dentro do objeto com `id=pse`.
 
+```json
+[
+  {
+       "id": "pse",
+       "name": "PSE",
+       "payment_type_id": "bank_transfer",
+       "status": "active",
+       "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pse.gif",
+       "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pse.gif",
+       "deferred_capture": "does_not_apply",
+       "settings": [],
+       "additional_info_needed": [
+           "entity_type"
+       ],
+       "min_allowed_amount": 1600,
+       "max_allowed_amount": 340000000,
+       "accreditation_time": 30,
+       "financial_institutions": [
+           {
+               "id": "1040",
+               "description": "Banco Agrario"
+           },
+           {
+               "id": "1507",
+               "description": "NEQUI"
+           },
+           {
+               "id": "1052",
+               "description": "Banco AV Villas"
+           },
+           {
+               "id": "1032",
+               "description": "Banco Caja Social"
+           }
+       ],
+       "processing_modes": [
+           "aggregator"
+       ]
+   }
+]
+```
+
 Para exibir a lista de bancos, crie um elemento `select` em javascript e enriqueça-o com os dados retornados na chamada da API.
 
 

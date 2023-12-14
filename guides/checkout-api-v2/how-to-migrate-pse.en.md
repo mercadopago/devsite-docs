@@ -159,6 +159,48 @@ To obtain the list of banks available for PSE you must first, from the backend, 
 
 In the following example, you can see how to send payment methods through an application endpoint, `/payment_methods`. Once this endpoint is called from the frontend, the list of banks available for PSE is obtained through the `financial_institutions` field within the object with `id=pse`.
 
+```json
+[
+  {
+       "id": "pse",
+       "name": "PSE",
+       "payment_type_id": "bank_transfer",
+       "status": "active",
+       "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pse.gif",
+       "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pse.gif",
+       "deferred_capture": "does_not_apply",
+       "settings": [],
+       "additional_info_needed": [
+           "entity_type"
+       ],
+       "min_allowed_amount": 1600,
+       "max_allowed_amount": 340000000,
+       "accreditation_time": 30,
+       "financial_institutions": [
+           {
+               "id": "1040",
+               "description": "Banco Agrario"
+           },
+           {
+               "id": "1507",
+               "description": "NEQUI"
+           },
+           {
+               "id": "1052",
+               "description": "Banco AV Villas"
+           },
+           {
+               "id": "1032",
+               "description": "Banco Caja Social"
+           }
+       ],
+       "processing_modes": [
+           "aggregator"
+       ]
+   }
+]
+```
+
 To display the list of banks, create a `select` element in javascript, and enrich it with the data returned in the API call, as this example also shows.
 
 ```javascript

@@ -153,7 +153,49 @@ Al crear un pago con PSE, es necesario enviar el código del banco que será uti
 
 Para obtener el listado de bancos disponibles para PSE primero deberás, desde el backend, obtener los medios de pago enviando un **GET** con tu _Access Token_ al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get), o bien obtenerlos mediante [nuestras SDKs](/developers/es/docs/sdks-library/landing) y enviarlos al frontend. 
 
-En el siguiente ejemplo, puedes ver cómo enviar los medios de pago por medio de un endpoint de aplicación, `/payment_methods`. Una vez que este endpoint es llamado desde el frontend, el listado de bancos disponibles para PSE es obtenido a través del campo `financial_institutions` dentro del objeto con `id=pse`. 
+En el siguiente ejemplo, puedes ver cómo enviar los medios de pago por medio de un endpoint de aplicación, `/payment_methods`. Una vez que este endpoint es llamado desde el frontend, el listado de bancos disponibles para PSE es obtenido a través del campo `financial_institutions` dentro del objeto con `id=pse`.
+
+```json
+[
+  {
+       "id": "pse",
+       "name": "PSE",
+       "payment_type_id": "bank_transfer",
+       "status": "active",
+       "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pse.gif",
+       "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pse.gif",
+       "deferred_capture": "does_not_apply",
+       "settings": [],
+       "additional_info_needed": [
+           "entity_type"
+       ],
+       "min_allowed_amount": 1600,
+       "max_allowed_amount": 340000000,
+       "accreditation_time": 30,
+       "financial_institutions": [
+           {
+               "id": "1040",
+               "description": "Banco Agrario"
+           },
+           {
+               "id": "1507",
+               "description": "NEQUI"
+           },
+           {
+               "id": "1052",
+               "description": "Banco AV Villas"
+           },
+           {
+               "id": "1032",
+               "description": "Banco Caja Social"
+           }
+       ],
+       "processing_modes": [
+           "aggregator"
+       ]
+   }
+]
+```
 
 Para mostrar la lista de bancos, crea un un elemento `select` en javascript, y enriquécelo con los datos devueltos en el llamado a la API, como también muestra el ejemplo.
 
