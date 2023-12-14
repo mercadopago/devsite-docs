@@ -11,7 +11,7 @@ If **you already have a PSE integration implemented** in Checkout API, you can u
 >
 > Important
 >
-> f you haven't implemented an integration with PSE yet and want to know how to develop one, see the [guide for new integrations](/developers/en/docs/checkout-api/integration-configuration/pse). 
+> If you haven't implemented an integration with PSE yet and want to know how to develop one, see the [guide for new integrations](/developers/en/docs/checkout-api/integration-configuration/pse). 
 
 > CLIENT_SIDE
 >
@@ -155,7 +155,7 @@ function updateSelectOptions(selectedValue){
 
 When creating a payment with PSE, it is necessary to send the bank code that will be used to make the transfer. To do this, you must list the available banks and offer these options to the payer, so that they can choose the bank of their preference.
 
-To obtain the list of banks available for PSE you must first, from the backend, obtain the payment methods by sending a **GET** with your `Access Token` to the endpoint  [/v1/payment_methods](/developers/en/reference/payment_methods/_payment_methods/get), or obtain them through [our SDKs](/developers/en/docs/sdks-library/landing) and send them to the frontend.
+To obtain the list of banks available for PSE you must first, from the backend, obtain the payment methods by sending a **GET** with your `Access Token` to the endpoint [/v1/payment_methods](/developers/en/reference/payment_methods/_payment_methods/get), or obtain them through [our SDKs](/developers/en/docs/sdks-library/landing) and send them to the frontend.
 
 In the following example, you can see how to send payment methods through an application endpoint, `/payment_methods`. Once this endpoint is called from the frontend, the list of banks available for PSE is obtained through the `financial_institutions` field within the object with `id=pse`.
 

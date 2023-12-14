@@ -10,7 +10,7 @@ Si **ya cuentas con una integración PSE implementada** en Checkout API, podrás
 >
 > Importante
 >
-> Si todavía no implementaste una integración con PSE y  deseas saber cómo desarrollarla, consulta la [guía para nuevas integraciones](/developers/es/docs/checkout-api/integration-configuration/pse). 
+> Si todavía no implementaste una integración con PSE y deseas saber cómo desarrollarla, consulta la [guía para nuevas integraciones](/developers/es/docs/checkout-api/integration-configuration/pse). 
 
 > CLIENT_SIDE
 >
@@ -189,7 +189,7 @@ function setPse() {
 >
 > Recomendamos que, al momento de exhibir el listado de bancos, lo hagas en orden alfabético y de manera ascendente; es decir, de la *A* a la *Z*. 
 
-Para que los elementos dinámicos creados con estos javascript se carguen cuando la página termine de renderizar, deberás añadir el siguiente código:
+Para que los elementos dinámicos creados en javascript se carguen cuando la página termine de renderizar, deberás añadir el siguiente código:
 
 ```javascript
 (function initCheckout() {
