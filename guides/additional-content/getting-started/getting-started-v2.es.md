@@ -5,15 +5,9 @@ content_section_with_media:
  - media_image: /getting-started/women-dev.png
 ---
 
-# Por qué elegir Mercado Pago
+# Beneficios de elegir Mercado Pago
 
 Mercado Pago ofrece varias soluciones que te permiten **recibir pagos virtuales o presenciales**. Puedes brindar medios de pago sin contratos ni cuotas mensuales, a través de integraciones con tiendas en línea o productos, tales como link de pago, Código QR, y la máquina de Mercado Pago, el Point, que pueden o no estar integrados.
-
-# Por dónde comenzar a integrar
-
-Conoce cuáles son las principales ventajas de los productos de Mercado Pago y encuentra la mejor solución para tu negocio.
-
-![Getting started](/images/getting-started/getting-started-diagram2-es.png)
 
 ---
 bullet_section_with_media:
@@ -51,6 +45,13 @@ Soluciones para quienes venden desde casa, en la calle, en el coche o en la tien
 Instala el Checkout Pro o el Checkout API en tu tienda y **comienza a ofrecer pagos con Mercado Pago** en tu plataforma de e-commerce. Integrar soluciones conectándote a una plataforma es simple y rápido. Todo el proceso se realiza en el panel de negocios de Mercado Pago y en la propia plataforma.
 
 Encuentra nuestro plugin en las plataformas **Shopify**, **WooCommerce**, **Tiendanube**, **VTEX**, **Wix**, **Adobe Commerce (Magento)**, y muchas más. 
+
+# Por dónde comenzar a integrar
+
+Si no tienes certeza de por donde comenzar según tus conocimientos de programación, no te preocupes. Tenemos diferentes soluciones que se ajustan a tus necesidades. Sigue el diagrama que te compartimos a continuación para descubrir cuál es tu producto ideal.
+
+![Getting started](/images/getting-started/getting-started-diagram2-es.png)
+
 
 # Disponibilidad de las soluciones en cada país
 
