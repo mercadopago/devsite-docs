@@ -594,7 +594,7 @@ Once the configurations are created, enter the code below to render the Brick.
 >
 > Important
 >
-> The id `paymentBrick_container` of the HTML div below should correspond to the value used in the method `create()` of the last step.
+> The id `paymentBrick_container` of the html div below should correspond to the value used in the method `create()` of the last step.
 
 [[[
 ```html
