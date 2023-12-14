@@ -50,7 +50,7 @@ Soluciones para quienes venden desde casa, en la calle, en el coche o en la tien
 
 Instala el Checkout Pro o el Checkout API en tu tienda y **comienza a ofrecer pagos con Mercado Pago** en tu plataforma de e-commerce. Integrar soluciones conectándote a una plataforma es simple y rápido. Todo el proceso se realiza en el panel de negocios de Mercado Pago y en la propia plataforma.
 
-Encuentra nuestro plugin en las plataformas **Shopify**, **WooCommerce**, **Tiendanube**, **VTEX**, **Wix**, **Adobe Commerce (Magento)**, y muchas más.
+Encuentra nuestro plugin en las plataformas **Shopify**, **WooCommerce**, **Tiendanube**, **VTEX**, **Wix**, **Adobe Commerce (Magento)**, y muchas más. 
 
 # Disponibilidad de las soluciones en cada país
 
@@ -86,14 +86,16 @@ Encuentra nuestro plugin en las plataformas **Shopify**, **WooCommerce**, **Tien
 
 <br>
 
-Para obtener detalles sobre los **medios de pago aceptados en cada país**, consulta la lista completa con [disponibilidad de medios de pago](/developers/es/docs/sales-processing/payment-methods).
+> Para obtener detalles sobre los **medios de pago aceptados en cada país**, consulta la lista completa con [disponibilidad de medios de pago](/developers/es/docs/sales-processing/payment-methods).
+
+--- mini_landing_separator ---
 
 ---
 bullet_section_with_media:
  - type: normal
  - title: Una cuenta, distintas oportunidades para integrar
  - message: 
- - image: /getting-started/woman-mobile-dev.png
+ - image: /getting-started/credenciales.png
 ---
 
 El primer paso para comenzar a integrar es **tener una cuenta de Mercado Pago** o de Mercado Libre. Si no tienes una cuenta de Mercado Pago, ----[mlb]----[**haz clic aquí**](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[**haz clic aquí**](https://www.mercadopago.com.ar/hub/registration/landing) ------------  ----[mlm]----[**haz clic aquí**](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[**haz clic aquí**](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[**haz clic aquí**](https://www.mercadopago.com.co/hub/registration/landing) ------------ ----[mlu]----[**haz clic aquí**](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[**haz clic aquí**](https://www.mercadopago.cl/hub/registration/landing) ------------ para crearla gratis.
@@ -109,7 +111,7 @@ bullet_section_with_media:
  - title: Credenciales
  - type: reverse
  - message: Las credenciales son contraseñas exclusivas utilizadas para identificar una integración en tu cuenta. Desempeñan un papel fundamental en la captura segura de pagos en tiendas en línea y otras aplicaciones.
- - image: /getting-started/credenciales.png
+ - image: /getting-started/woman-male-dev.png
 ---
 
 Puedes encontrar las credenciales en **Detalles de la aplicación > Credenciales** dentro de [Tus integraciones](/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
