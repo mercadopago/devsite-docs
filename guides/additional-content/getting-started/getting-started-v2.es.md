@@ -21,11 +21,11 @@ El primer paso para comenzar a integrar es **tener una cuenta de Mercado Pago** 
 
 Si ya tienes una cuenta de Mercado Libre, accede a [Tus integraciones](https://www.mercadopago.com/developers/panel/app) con el mismo usuario y contraseña.
 
-# Por dónde comenzar a integrar
+# Tus integraciones
 
-Si no tienes certeza de por donde comenzar según tus conocimientos de programación, no te preocupes. Tenemos diferentes soluciones que se ajustan a tus necesidades. Sigue el diagrama que te compartimos a continuación para descubrir cuál es tu producto ideal.
+Con la cuenta ya activa, tienes acceso [Tus integraciones](https://www.mercadopago.com/developers/panel/app), que te permite administrar integraciones con desarrollo de código, tus aplicaciones, realizar pruebas y configurar las notificaciones de eventos relacionados con transacciones.
 
-![Getting started](/images/getting-started/getting-started-diagram2-es.png)
+<br>
 
 ---
 bullet_section_with_media:
@@ -72,7 +72,7 @@ Al utilizar nuestros **SDKs de backend**, obtienes un acceso fácil a las funcio
 
 Con las **SDKs de frontend**, puedes realizar llamadas para el token de tarjetas y utilizar muchas otras funcionalidades en la integración. 
 
---- mini_landing_separator ---
+<br>
 
 # Disponibilidad de las soluciones en cada país
 
@@ -106,21 +106,17 @@ Con las **SDKs de frontend**, puedes realizar llamadas para el token de tarjetas
 
 <br>
 
-> Para obtener detalles sobre los **medios de pago aceptados en cada país**, consulta la lista completa con [disponibilidad de medios de pago](/developers/es/docs/sales-processing/payment-methods).
+# Por dónde comenzar a integrar
+
+Si no tienes certeza de por donde comenzar según tus conocimientos de programación, no te preocupes. Tenemos diferentes soluciones que se ajustan a tus necesidades. Sigue el diagrama que te compartimos a continuación para descubrir cuál es tu producto ideal.
+
+![Getting started](/images/getting-started/getting-started-diagram2-es.png)
 
 <br>
 
----
-bullet_section_with_media:
- - title: 
- - type: reverse
- - message: 
- - image: 
----
+> Para obtener detalles sobre los **medios de pago aceptados en cada país**, consulta la lista completa con [disponibilidad de medios de pago](/developers/es/docs/sales-processing/payment-methods).
 
-# Tus integraciones
-
-Con la cuenta ya activa, tienes acceso [Tus integraciones](https://www.mercadopago.com/developers/panel/app), que te permite administrar integraciones con desarrollo de código, tus aplicaciones, realizar pruebas y configurar las notificaciones de eventos relacionados con transacciones.
+<br>
 
 ---
 bullet_section_with_media:
@@ -136,13 +132,7 @@ Existen dos tipos diferentes de credenciales: las **credenciales de prueba** y l
 
 Para conocer más, accede a la [documentación de credenciales](/developers/es/docs/your-integrations/credentials).
 
----
-bullet_section_with_media:
- - title: 
- - type: reverse
- - message: 
- - image: 
----
+<br>
 
 # ¡Comienza a integrar!
 
