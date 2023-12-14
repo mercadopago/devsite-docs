@@ -25,8 +25,6 @@ Si ya tienes una cuenta de Mercado Libre, accede a [Tus integraciones](https://w
 
 Con la cuenta ya activa, tienes acceso [Tus integraciones](https://www.mercadopago.com/developers/panel/app), que te permite administrar integraciones con desarrollo de código, tus aplicaciones, realizar pruebas y configurar las notificaciones de eventos relacionados con transacciones.
 
-<br>
-
 ---
 bullet_section_with_media:
  - type: reverse
@@ -74,7 +72,7 @@ Con las **SDKs de frontend**, puedes realizar llamadas para el token de tarjetas
 
 <br>
 
-# Disponibilidad de las soluciones en cada país
+## Disponibilidad de las soluciones en cada país
 
 ----[mlb]----
 | Solución | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colombia | 🇲🇽 <br> México | 🇵🇪 <br> Perú | 🇺🇾 <br>Uruguay |
@@ -112,11 +110,7 @@ Si no tienes certeza de por donde comenzar según tus conocimientos de programac
 
 ![Getting started](/images/getting-started/getting-started-diagram2-es.png)
 
-<br>
-
 > Para obtener detalles sobre los **medios de pago aceptados en cada país**, consulta la lista completa con [disponibilidad de medios de pago](/developers/es/docs/sales-processing/payment-methods).
-
-<br>
 
 ---
 bullet_section_with_media:
@@ -130,7 +124,7 @@ Puedes encontrar las credenciales en **Detalles de la aplicación > Credenciales
 
 Existen dos tipos diferentes de credenciales: las **credenciales de prueba** y las **credenciales de producción**. Ambos tipos de credenciales constan de dos pares de claves que deberás utilizar según el producto elegido: **Public Key** y **Access Token** o **Client ID** y **Client secret**.
 
-Para conocer más, accede a la [documentación de credenciales](/developers/es/docs/your-integrations/credentials).
+> Para conocer más, accede a la [documentación de credenciales](/developers/es/docs/your-integrations/credentials).
 
 <br>
 
