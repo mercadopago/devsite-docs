@@ -70,7 +70,7 @@ Encuentra nuestro plugin en las plataformas **Shopify**, **WooCommerce**, **Tien
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-|  | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colombia | 🇲🇽 <br> México | 🇵🇪 <br> Perú | 🇺🇾 <br>Uruguay |
+| Solución | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brasil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colombia | 🇲🇽 <br> México | 🇵🇪 <br> Perú | 🇺🇾 <br>Uruguay |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Checkout API | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
