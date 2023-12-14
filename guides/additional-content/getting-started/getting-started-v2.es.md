@@ -9,7 +9,17 @@ content_section_with_media:
 
 Mercado Pago ofrece varias soluciones que te permiten **recibir pagos virtuales o presenciales**. Puedes brindar medios de pago sin contratos ni cuotas mensuales, a través de integraciones con tiendas en línea o productos, tales como link de pago, Código QR, y la máquina de Mercado Pago, el Point, que pueden o no estar integrados.
 
---- mini_landing_separator ---
+---
+bullet_section_with_media:
+ - type: normal
+ - title: Una cuenta, distintas oportunidades para integrar
+ - message: 
+ - image: /getting-started/credenciales.png
+---
+
+El primer paso para comenzar a integrar es **tener una cuenta de Mercado Pago** o de Mercado Libre. Si no tienes una cuenta de Mercado Pago, ----[mlb]----[**haz clic aquí**](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[**haz clic aquí**](https://www.mercadopago.com.ar/hub/registration/landing) ------------  ----[mlm]----[**haz clic aquí**](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[**haz clic aquí**](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[**haz clic aquí**](https://www.mercadopago.com.co/hub/registration/landing) ------------ ----[mlu]----[**haz clic aquí**](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[**haz clic aquí**](https://www.mercadopago.cl/hub/registration/landing) ------------ para crearla gratis.
+
+Si ya tienes una cuenta de Mercado Libre, accede a [Tus integraciones](https://www.mercadopago.com/developers/panel/app) con el mismo usuario y contraseña.
 
 # Por dónde comenzar a integrar
 
@@ -102,17 +112,11 @@ Con las **SDKs de frontend**, puedes realizar llamadas para el token de tarjetas
 
 ---
 bullet_section_with_media:
- - type: normal
- - title: Una cuenta, distintas oportunidades para integrar
+ - title: 
+ - type: reverse
  - message: 
- - image: /getting-started/credenciales.png
+ - image: 
 ---
-
-El primer paso para comenzar a integrar es **tener una cuenta de Mercado Pago** o de Mercado Libre. Si no tienes una cuenta de Mercado Pago, ----[mlb]----[**haz clic aquí**](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[**haz clic aquí**](https://www.mercadopago.com.ar/hub/registration/landing) ------------  ----[mlm]----[**haz clic aquí**](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[**haz clic aquí**](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[**haz clic aquí**](https://www.mercadopago.com.co/hub/registration/landing) ------------ ----[mlu]----[**haz clic aquí**](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[**haz clic aquí**](https://www.mercadopago.cl/hub/registration/landing) ------------ para crearla gratis.
-
-Si ya tienes una cuenta de Mercado Libre, accede a [Tus integraciones](https://www.mercadopago.com/developers/panel/app) con el mismo usuario y contraseña.
-
---- mini_landing_separator ---
 
 # Tus integraciones
 
@@ -132,7 +136,13 @@ Existen dos tipos diferentes de credenciales: las **credenciales de prueba** y l
 
 Para conocer más, accede a la [documentación de credenciales](/developers/es/docs/your-integrations/credentials).
 
---- mini_landing_separator ---
+---
+bullet_section_with_media:
+ - title: 
+ - type: reverse
+ - message: 
+ - image: 
+---
 
 # ¡Comienza a integrar!
 
