@@ -4,7 +4,9 @@
 
 Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão. O usuário terá apenas que entrar em sua conta no Mercado Pago (ou criar uma), saber o limite disponível e escolher em quantas parcelas deseja pagar.
 
-Atualmente o **Mercado Crédito** é oferecido em nosso [Checkout Pro](/developers/pt/docs/checkout-pro/landing) (**Checkout Mercado Pago**) e agora também é possível acessá-lo diretamente do checkout da loja. Caso ainda não tenha o Checkout Pro habilitado em sua loja, acesse a seção de [Configuração da integração > Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro) para configurá-lo.
+Atualmente o **Mercado Crédito** é oferecido em nosso [Checkout Pro](/developers/pt/docs/checkout-pro/landing) (**Checkout Mercado Pago**) e agora também é possível acessá-lo diretamente do checkout da loja. 
+
+> Caso ainda não tenha o Checkout Pro habilitado em sua loja, acesse a seção de [Configuração da integração > Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro) para configurá-lo.
 
 Para **exibir o Mercado Crédito no checkout da sua loja**, siga os passos abaixo.
 
