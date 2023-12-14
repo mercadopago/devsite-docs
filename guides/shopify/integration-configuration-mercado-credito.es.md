@@ -1,11 +1,11 @@
 # Mercado Crédito
 
 ----[mla, mlb]----
-Es la modalidad de financiación de Mercado Pago que ofrece la opción de pagar en cuotas sin contar con una tarjeta de crédito..
+Es la modalidad de financiación de Mercado Pago que ofrece la opción de pagar en cuotas sin contar con una tarjeta de crédito.
 
 ------------
 ----[mlm]----
-Es la modalidad de financiamiento de Mercado Pago que ofrece la opción de pagar en mensualidades sin contar con una tarjeta de crédito..
+Es la modalidad de financiamiento de Mercado Pago que ofrece la opción de pagar en mensualidades sin contar con una tarjeta de crédito.
 
 ------------
 
