@@ -8,6 +8,14 @@
 
 O relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ e um **relatório para ser baixado que te permite saber como seu saldo disponível está composto no Mercado Pago. Ou seja, quanto você tem para usar**. Ele contém **detalhes de todos os valores envolvidos em um período de tempo,** e inclui os casos de ----[mla]---- liquidaçao ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberação ------------ de dinheiro, como de bloqueios e desbloqueios.
 
+----[mlm]----
+> WARNING
+>
+> Importante
+>
+> Os relatórios gerados a partir de 3 de outubro vão apresentar suas movimentações em ordem cronológica, assim, você pode identificá-las mais facilmente e controlar ainda melhor as finanças dos seus negócios. [Confira o novo formato do relatório.](https://bit.ly/3QiCD2f)
+------------
+
 ## Como baixar o relatório?
 
 Lembre-se de que a geração deste relatório leva alguns minutos, dependendo de quantas informações você queira incluir nele. Nem sempre ele estará pronto de imediato e, enquanto estiver sendo gerado, você verá na tela o status *Em preparação*.
