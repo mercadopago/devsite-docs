@@ -101,7 +101,7 @@ future_product_avaible:
  - card_link: /developers/pt/docs/checkout-bricks/wallet-brick/introduction
  - card_linkDescription: Saiba mais
  - card_pillText: DISPONÍVEL
- -  card_avaible: true
+ - card_avaible: true
  - card_icon: Card
  - card_title: Card Payment Brick
  - card_description: Ofereça pagamentos com cartão de crédito e débito. Teste a demonstração do Brick antes de integrá-lo.
