@@ -653,6 +653,11 @@
                       },
                       "labels": {
                         "type": "array",
+                        "description": {
+                          "en": "Presents the claim tags, indicating, for example, whether the claim affects the reputation or not.",
+                          "pt": "Apresenta as tags da reclamação, indicando, por exemplo, se a reclamação afeta a reputação ou não.",
+                          "es": "Muestra las tags del reclamo, indicando, por ejemplo, si el reclamo afecta la reputación o no."
+                        },
                         "items": {
                           "type": "object",
                           "properties": {
@@ -3323,15 +3328,6 @@
                           "es": "Muestra detalles sobre el motivo del reclamo."
                         }
                       },
-                      "position": {
-                        "type": "number",
-                        "example": 1000,
-                        "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "."
-                        }
-                      },
                       "filter": {
                         "type": "object",
                         "properties": {
@@ -3439,18 +3435,9 @@
                         "type": "string",
                         "example": "PDD9501",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "."
-                        }
-                      },
-                      "children_title": {
-                        "type": "string",
-                        "example": null,
-                        "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "."
+                          "en": "ID of another claim on which it depends.",
+                          "pt": "ID de outra reclamação da qual esta depende.",
+                          "es": "ID de otro reclamo del que depende."
                         }
                       },
                       "status": {
