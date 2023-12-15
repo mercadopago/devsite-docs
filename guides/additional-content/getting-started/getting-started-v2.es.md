@@ -7,7 +7,9 @@ content_section_with_media:
 
 # Beneficios de elegir Mercado Pago
 
-Mercado Pago ofrece varias soluciones que te permiten **recibir pagos virtuales o presenciales**. Puedes brindar medios de pago sin contratos ni cuotas mensuales, a través de integraciones con tiendas en línea o productos, tales como link de pago, Código QR, y la máquina de Mercado Pago, el Point, que pueden o no estar integrados.
+Ya sea que desees integrar Mercado Pago para tu negocio o que seas un desarrollador integrando para otras personas, Mercado Pago ofrece diferentes soluciones que permiten **recibir pagos virtuales o presenciales**. 
+
+Puedes ofrecer pagos con diversos tipos de pago en tiendas físicas o tiendas online a través del link de pago, Código QR y la máquina de Mercado Pago, el Point, que pueden o no estar integrados entre sí.
 
 ---
 bullet_section_with_media:
@@ -17,7 +19,7 @@ bullet_section_with_media:
  - image: /getting-started/credenciales.png
 ---
 
-El primer paso para comenzar a integrar es **tener una cuenta de Mercado Pago** o de Mercado Libre. Si no tienes una cuenta de Mercado Pago, ----[mlb]----[**haz clic aquí**](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[**haz clic aquí**](https://www.mercadopago.com.ar/hub/registration/landing) ------------  ----[mlm]----[**haz clic aquí**](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[**haz clic aquí**](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[**haz clic aquí**](https://www.mercadopago.com.co/hub/registration/landing) ------------ ----[mlu]----[**haz clic aquí**](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[**haz clic aquí**](https://www.mercadopago.cl/hub/registration/landing) ------------ para crearla gratis.
+El primer paso para comenzar a integrar, ya sea para tí o para otra persona, es **tener una cuenta de Mercado Pago** o de Mercado Libre. Si no tienes una cuenta de Mercado Pago, ----[mlb]----[**haz clic aquí**](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[**haz clic aquí**](https://www.mercadopago.com.ar/hub/registration/landing) ------------  ----[mlm]----[**haz clic aquí**](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[**haz clic aquí**](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[**haz clic aquí**](https://www.mercadopago.com.co/hub/registration/landing) ------------ ----[mlu]----[**haz clic aquí**](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[**haz clic aquí**](https://www.mercadopago.cl/hub/registration/landing) ------------ para crearla gratis.
 
 Si ya tienes una cuenta de Mercado Libre, accede a [Tus integraciones](https://www.mercadopago.com/developers/panel/app) con el mismo usuario y contraseña.
 
@@ -29,7 +31,7 @@ Con la cuenta ya activa, tienes acceso [Tus integraciones](https://www.mercadopa
 bullet_section_with_media:
  - type: reverse
  - title: Conoce nuestras soluciones de pago
- - message: Mercado Pago tiene diferentes soluciones de pago que se adecúan a tu negocio. Te las presentamos a continuación:
+ - message: Mercado Pago tiene diferentes soluciones de pago para cada tipo de negocio. Te las presentamos a continuación:
  - image: /getting-started/integration.png
 ---
 
@@ -120,9 +122,11 @@ bullet_section_with_media:
  - image: /getting-started/woman-male-dev.png
 ---
 
-Puedes encontrar las credenciales en **Detalles de la aplicación > Credenciales** dentro de [Tus integraciones](/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
+Puedes encontrar las credenciales en **Detalles de la aplicación > Credenciales** dentro de [Tus integraciones](/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuración > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
 Existen dos tipos diferentes de credenciales: las **credenciales de prueba** y las **credenciales de producción**. Ambos tipos de credenciales constan de dos pares de claves que deberás utilizar según el producto elegido: **Public Key** y **Access Token** o **Client ID** y **Client secret**.
+
+Si necesitas compartir tus credenciales, puedes hacerlo de forma segura. Navega hasta [Tu negocio > Configuración > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) y selecciona la opción **Compartir credenciales**. 
 
 > Para conocer más, accede a la [documentación de credenciales](/developers/es/docs/your-integrations/credentials).
 
