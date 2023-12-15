@@ -2,6 +2,12 @@
 
 To use the Mercado Pago integration with WooCommerce on a WordPress site, you must comply with the requirements below.
 
+> WARNING
+>
+> Compatibility with WooCommerce Blocks
+>
+> After WooCommerce stores update, we are working to make Mercado Pago plugin compatible with Blocks. If you are having problems, check the [official documentation](https://woo.com/document/cart-checkout-blocks-status/#section-6) and revert momentarily the update of your store.
+
 | Requirements | Description | Specifications |
 |---|---|---|
 | Additional settings | Recommended tweaks for better performance and proper functioning of PrestaShop and Mercado Pago module. | safe_mode off * memory_limit greater than 256MB (512MB recommended) |
