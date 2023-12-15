@@ -25,7 +25,7 @@ Si ya tienes una cuenta de Mercado Libre, accede a [Tus integraciones](https://w
 
 # Tus integraciones
 
-Con la cuenta ya activa, tienes acceso [Tus integraciones](https://www.mercadopago.com/developers/panel/app), que te permite administrar integraciones con desarrollo de código, tus aplicaciones, realizar pruebas y configurar las notificaciones de eventos relacionados con transacciones.
+Con la cuenta ya activa, tienes acceso [Tus integraciones](https://www.mercadopago.com/developers/panel/app), que te permite administrar integraciones con desarrollo de código, tus aplicaciones, realizar pruebas y configurar notificaciones que te brindan información sobre las transacciones.
 
 ---
 bullet_section_with_media:
