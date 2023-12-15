@@ -12,11 +12,22 @@ Para que se adapte ao estilo da loja, o banner permite as seguintes customizaç�
 >
 > Observe atentamente qual cor de fundo e de texto irá adotar para que contrastem e permitam que o conteúdo seja legível.
 
-Os valores possíveis e os padrões de cada customização estão definidos no snippet abaixo, que devem ser enviados como terceiro parâmetro no método `create()`.
-
 | Customização | Aplicação|
 |---|---|
-|`` | |
+|`hideMercadoPagoLogo` | Controla se o logo do Mercado Pago será exibido ao lado da mensagem.|
+|`contentAlign` | Define o alinhamento do conteúdo não textual no banner.|
+|`border` | Controla se será mostrada uma borda ao redor do banner.|
+|`borderColor` | Define a cor da borda do banner.|
+|`borderWidth` | Define a largura da borda do banner.|
+|`borderRadius` | Define a curvatura da borda do banner.|
+|`verticalPadding` |Define o preenchimento vertical do banner. |
+|`horizontalPadding` | Define o preenchimento horizontal do banner.|
+|`useCustomFont` |Controla se o banner usará uma fonte customizada ou a fonte padrão do Mercado Pago. |
+|`align` | Define o alinhamento do conteúdo textual no banner.|
+|`textSize` | Define o tamanho do texto no banner.|
+|`fontWeight` | Define o peso da fonte no banner.|
+
+Os valores possíveis e os padrões de cada customização estão definidos no snippet abaixo, que devem ser enviados como terceiro parâmetro no método `create()`.
 
 [[[
 ```javascript
