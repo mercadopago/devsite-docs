@@ -8,7 +8,7 @@ O Brick é formado por **_banners_** com estilos altamente customizáveis que po
  
 O banner é o elemento inicial que comunica a mensagem de valor ao usuário, sendo sua estrutura básica composta por uma imagem, um texto e um link que abre um **_pop-up_** com mais informações sobre as condições de compra (quando aplicável).  
 
-Nele são permitidas diversas [customizações visuais](), para que se adapte ao estilo de sua loja, e todo o conteúdo exibido é definido a partir da escolha de uma das quatro _value props_ disponíveis e descritas em [configurações]().
+Nele são permitidas diversas [customizações visuais](/developers/pt/docs/checkout-bricks/brand-brick/visual-customizations), para que se adapte ao estilo de sua loja, e todo o conteúdo exibido é definido a partir da escolha de uma das quatro _value props_ disponíveis e descritas em [configurações](/developers/pt/docs/checkout-bricks/brand-brick/settings/default-rendering).
 
 > NOTE
 > 

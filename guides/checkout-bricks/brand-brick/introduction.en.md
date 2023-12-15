@@ -8,7 +8,7 @@ The Brick is formed by highly customizable **banners** that can be applied to an
 
 The banner is the initial element that communicates the value message to the user, with its basic structure consisting of an image, text, and a link that opens a **pop-up** with more information about the purchasing conditions (when applicable).
 
-Various [visual customizations]() are allowed to adapt to your store's style, and all displayed content is defined by choosing one of the four available value propositions described in the [settings]().
+Various [visual customizations](/developers/en/docs/checkout-bricks/brand-brick/visual-customizations) are allowed to adapt to your store's style, and all displayed content is defined by choosing one of the four available value propositions described in the [settings](/developers/en/docs/checkout-bricks/brand-brick/settings/default-rendering).
 
 > NOTE
 > 
