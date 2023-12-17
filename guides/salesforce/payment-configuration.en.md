@@ -13,14 +13,14 @@ To start receiving payments with Mercado Pago, credit or debit cards and Mercado
 
 Here's how to activate each payment method in your Salesforce Commerce Cloud store:
 
-* [Configure Checkout Pro](/docs/salesforce-commerce-cloud/payments-configuration/checkout-pro)
-* [Configure Checkout Transparente](/docs/salesforce-commerce-cloud/payments-configuration/checkout-api)
+* [Configure Checkout Pro](/developers/en/docs/salesforce-commerce-cloud/payments-configuration/checkout-pro)
+* [Configure Checkout Transparente](/developers/en/docs/salesforce-commerce-cloud/payments-configuration/checkout-api)
 ----[mlb]----
-* [Configure Pix payments](/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/pix)
-* [Configure installments without a card](/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/credits)
+* [Configure Pix payments](/developers/en/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/pix)
+* [Configure installments without a card](/developers/en/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/credits)
 ------------
 ----[mla, mlm]----
-* [Configure installments without a card](/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/credits)
+* [Configure installments without a card](/developers/en/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/credits)
 ------------
 
 ## Choose the location of the means of payment

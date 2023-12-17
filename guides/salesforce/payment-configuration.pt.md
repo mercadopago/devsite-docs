@@ -13,14 +13,14 @@ Para começar a receber pagamentos com Mercado Pago, cartões de crédito ou dé
 
 Veja como ativar cada meio de pagamento em sua loja Salesforce:
 
-* [Configurar Checkout Pro](/docs/salesforce-commerce-cloud/payments-configuration/checkout-pro)
-* [Configurar Checkout Transparente](/docs/salesforce-commerce-cloud/payments-configuration/checkout-api)
+* [Configurar Checkout Pro](/developers/pt/docs/salesforce-commerce-cloud/payments-configuration/checkout-pro)
+* [Configurar Checkout Transparente](/developers/pt/docs/salesforce-commerce-cloud/payments-configuration/checkout-api)
 ----[mlb]----
-* [Configurar pagamentos com Pix](/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/pix)
-* [Configurar parcelamento sem cartão](/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/credits)
+* [Configurar pagamentos com Pix](/developers/pt/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/pix)
+* [Configurar parcelamento sem cartão](/developers/pt/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/credits)
 ------------
 ----[mla, mlm]----
-* [Configurar parcelamento sem cartão](/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/credits)
+* [Configurar parcelamento sem cartão](/developers/pt/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/credits)
 ------------
 
 ## Escolha a localização do meio de pagamento
