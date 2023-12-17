@@ -1,15 +1,26 @@
 # Configure payment methods
 
-To start receiving payments with Mercado Pago, credit or debit cards----[mlb]---- and Pix------------, follow the steps outlined below.
+----[mlb]----
+To start receiving payments with Mercado Pago, credit or debit cards, Pix and Mercado Crédito, follow the steps outlined below.
+
+------------
+----[mlm, mla]----
+To start receiving payments with Mercado Pago, credit or debit cards and Mercado Crédito, follow the steps outlined below.
+
+------------
 
 ## Activate payment methods
 
 Here's how to activate each payment method in your Salesforce Commerce Cloud store:
 
-* [Configure Mercado Pago](/developers/en/docs/salesforce-commerce-cloud/integration-configuration/payments-configuration/mercadopago)
-* [Configure credit and/or debit cards](/developers/en/docs/salesforce-commerce-cloud/integration-configuration/payments-configuration/credit-debit)
+* [Configure Checkout Pro](/docs/salesforce-commerce-cloud/payments-configuration/checkout-pro)
+* [Configure Checkout Transparente](/docs/salesforce-commerce-cloud/payments-configuration/checkout-api)
 ----[mlb]----
-* [Configure payments with Pix](/developers/en/docs/salesforce-commerce-cloud/integration-configuration/payments-configuration/pix)
+* [Configure Pix payments](/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/pix)
+* [Configure installments without a card](/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/credits)
+------------
+----[mla, mlm]----
+* [Configure installments without a card](/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/credits)
 ------------
 
 ## Choose the location of the means of payment
@@ -18,6 +29,7 @@ By default, the Mercado Pago cartridge will show the means of payment in a certa
 
 ----[mlb]----
 ![payment_methods_v2](/images/salesforce/payment_methods_v2.png)
+
 ------------
 
 If you want to change this order, follow these steps.

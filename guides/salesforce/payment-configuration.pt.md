@@ -1,15 +1,26 @@
 # Configurar formas de pagamento
 
-Para começar a receber pagamentos com Mercado Pago, cartões de crédito ou débito----[mlb]---- e Pix------------, siga as etapas descritas abaixo.
+----[mlb]----
+Para começar a receber pagamentos com Mercado Pago, cartões de crédito ou débito, Pix e Mercado Crédito, siga as etapas descritas abaixo.
+
+------------
+----[mla, mlm]----
+Para começar a receber pagamentos com Mercado Pago, cartões de crédito ou débito e Mercado Crédito, siga as etapas descritas abaixo.
+
+------------
 
 ## Ativar métodos de pagamento
 
 Veja como ativar cada meio de pagamento em sua loja Salesforce:
 
-* [Configurar Mercado Pago](/developers/pt/docs/salesforce-commerce-cloud/integration-configuration/payments-configuration/mercadopago)
-* [Configurar cartões de crédito e/ou débito](/developers/pt/docs/salesforce-commerce-cloud/integration-configuration/payments-configuration/credit-debit)
+* [Configurar Checkout Pro](/docs/salesforce-commerce-cloud/payments-configuration/checkout-pro)
+* [Configurar Checkout Transparente](/docs/salesforce-commerce-cloud/payments-configuration/checkout-api)
 ----[mlb]----
-* [Configurar pagamentos com Pix](/developers/pt/docs/salesforce-commerce-cloud/integration-configuration/payments-configuration/pix)
+* [Configurar pagamentos com Pix](/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/pix)
+* [Configurar parcelamento sem cartão](/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/credits)
+------------
+----[mla, mlm]----
+* [Configurar parcelamento sem cartão](/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/credits)
 ------------
 
 ## Escolha a localização do meio de pagamento
@@ -18,6 +29,7 @@ Por padrão, o cartucho do Mercado Pago mostrará os tipos de pagamento em uma d
 
 ----[mlb]----
 ![payment_methods_v2](/images/salesforce/payment_methods_v2.png)
+
 ------------
 
 Caso queira alterar essa ordem, siga estas etapas.
