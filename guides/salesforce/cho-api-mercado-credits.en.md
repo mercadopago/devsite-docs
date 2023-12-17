@@ -17,9 +17,9 @@ To activate Mercado Crédito as a payment method in your store, follow these ins
  1. Update the Mercado Pago application from the Salesforce Marketplace. For instructions on how to do this, refer to our [documentation](/developers/en/docs/salesforce-commerce-cloud/installation).
  2. In the Salesforce admin panel, go to "Merchant Tools" and then "Ordering."
  3. Click on "Payment Methods" and look for the "Mercado Crédito" option. Activate it by selecting "yes" in the "Enabled" column.
-
+<center>
 ![Activate Mercado Crédito](/images/salesforce/credits-es.gif) 
-
+</center>
 For more information, contact your commercial advisor for personalized assistance.
 
 > NOTE

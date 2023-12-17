@@ -4,6 +4,6 @@ Para começar a receber pagamentos com o Mercado Pago em sua loja Salesforce Com
 
 * [Preencher credenciais](/developers/pt/docs/salesforce-commerce-cloud/integration-configuration/credentials)
 * [Verificar instalação do Mercado Pago](/developers/pt/docs/salesforce-commerce-cloud/integration-configuration/installation-verification)
-* [Configurar meios de pagamento](/developers/es/docs/salesforce-commerce-cloud/payments-configuration)
+* [Configurar meios de pagamento](/developers/pt/docs/salesforce-commerce-cloud/payments-configuration)
 
 Assim que essas configurações estiverem concluídas, sua loja estará pronta para receber vendas.
