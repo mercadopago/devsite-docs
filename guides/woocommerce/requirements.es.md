@@ -2,6 +2,12 @@
 
 Para utilizar la integración de Mercado Pago con WooCommerce en un sitio WordPress, debes cumplir con los requisitos a continuación.
 
+> WARNING
+>
+> Compatibilidad con WooCommerce Blocks
+>
+> Luego de la actualización de tiendas WooCommerce, estamos trabajando para que el plugin de Mercado Pago sea compatible con Blocks. Si estás teniendo problemas, consulta la [documentación oficial](https://woo.com/document/cart-checkout-blocks-status/#section-6) para revertir momentáneamente la actualización de tu tienda.
+
 | Requisitos | Descripción | Especificaciones |
 | --- | --- | --- |
 | Ambiente | Servicio de hospedaje |  MySQL, PHP o servicio equivalente que admita la instalación de WordPress.  |
