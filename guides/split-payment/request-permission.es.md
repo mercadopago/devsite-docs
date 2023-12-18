@@ -8,8 +8,8 @@ Para iniciar el proceso de autorización y solicitar permisos a sus usuarios par
      https://auth.mercadopago.com.ar/authorization?client_id=<APP_ID>&response_type=code&platform_id=mp&redirect_uri=<REDIRECT_URI>
      ```
    
-     - Donde `<APP_ID>` es el valor obtenido en el paso 2, y
-     - `<REDIRECT_URI>` es el valor ingresado en el campo Redirect Uri en el paso 3.
+     - Donde `<APP_ID>` es el valor obtenido durante la [Creación de la aplicación](/developers/es/docs/split-payment/integration-configuration/create-application), y
+     - `<REDIRECT_URI>` es el valor ingresado en el campo Redirect Uri durante la [Configuración del Redirect URL](/developers/es/docs/split-payment/integration-configuration/create-application).
 
  
  2. Una vez que los usuarios autoricen la gestión de ventas, recibirás un código de autorización en la URL que especificaste en el paso anterior. Este código estará en el parámetro `code` de la siguiente manera:
