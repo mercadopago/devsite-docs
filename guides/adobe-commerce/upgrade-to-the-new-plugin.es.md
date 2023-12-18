@@ -23,7 +23,6 @@ Para actualizar tu plugin e instalar la nueva versión, simplemente sigue los pa
 | Cuotas **con** interés                          | ✅           | ✅              |
 | Secure Fields / PCI                             | ✅           | ✅              |
 | Cuotas **sin** interés                          | ✅           | ✅              |
-| Checkout Pro Modal                              | ✅           | ❌              |
 | Buy Now Pay Later - Mercado Crédito              | ✅           | ❌              |
 | Pagos con 2 tarjetas                            | ✅           | ❌              |
 | Refunds directamente a través de la plataforma   | ✅           | ❌              |
