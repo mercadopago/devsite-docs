@@ -664,9 +664,9 @@
                       "labels": {
                         "type": "array",
                         "description": {
-                          "en": "Presents the claim tags, indicating, for example, whether the claim affects the reputation or not.",
-                          "pt": "Apresenta as tags da reclamação, indicando, por exemplo, se a reclamação afeta a reputação ou não.",
-                          "es": "Muestra las tags del reclamo, indicando, por ejemplo, si el reclamo afecta la reputación o no."
+                          "en": "Presents information about the labels associated with the claim, indicating, for example, whether the complaint affects the seller's reputation or not.",
+                          "pt": "Apresenta informações sobre as estiquetas associadas à reclamação, indicando, por exemplo, se a reclamação afeta ou não a reputação do vendedor.",
+                          "es": "Presenta información sobre las etiquetas asociadas al reclamo, indicando, por ejemplo, si la reclamación afecta o no la reputación del vendedor."
                         },
                         "items": {
                           "type": "object",
@@ -675,35 +675,35 @@
                               "type": "string",
                               "example": "reputation",
                               "description": {
-                                "en": ".",
-                                "pt": ".",
-                                "es": ""
+                                "en": "Name of the label associated with the claim.",
+                                "pt": "Nome da etiqueta associada à reclamação.",
+                                "es": "Nombre de la etiqueta asociada al reclamo."
                               },
                               "value": {
                                 "type": "string",
                                 "example": "avoid",
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": ""
+                                  "en": "Value of the label.",
+                                  "pt": "Valor da etiqueta.",
+                                  "es": "Valor de la etiqueta."
                                 }
                               },
                               "admin_id": {
                                 "type": "string",
                                 "example": null,
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": ""
+                                  "en": "ID of the user managing the claim and who associated the label.",
+                                  "pt": "ID da pessoa usuária que está administrando a reclamação e associou a etiqueta.",
+                                  "es": "ID de la persona usuaria que está gestionando el reclamo y ha asociado la etiqueta."
                                 }
                               },
                               "date_created": {
                                 "type": "string",
                                 "example": "2018-03-08T09:56:00.078-0400",
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": ""
+                                  "en": "Date on which the label was associated with the claim.",
+                                  "pt": "Data em que a etiqueta foi associada à reclamação.",
+                                  "es": "Fecha en que la etiqueta fue asociada al reclamo."
                                 }
                               }
                             }
@@ -4167,9 +4167,9 @@
                       "labels": {
                         "type": "array",
                         "description": {
-                          "en": "Presents the claim tags, indicating, for example, whether the claim affects the reputation or not.",
-                          "pt": "Apresenta as tags da reclamação, indicando, por exemplo, se a reclamação afeta a reputação ou não.",
-                          "es": "Muestra las tags del reclamo, indicando, por ejemplo, si el reclamo afecta la reputación o no."
+                          "en": "Presents information about the labels associated with the claim, indicating, for example, whether the complaint affects the seller's reputation or not.",
+                          "pt": "Apresenta informações sobre as estiquetas associadas à reclamação, indicando, por exemplo, se a reclamação afeta ou não a reputação do vendedor.",
+                          "es": "Presenta información sobre las etiquetas asociadas al reclamo, indicando, por ejemplo, si la reclamación afecta o no la reputación del vendedor."
                         },
                         "items": {
                           "type": "object",
@@ -4178,35 +4178,35 @@
                               "type": "string",
                               "example": "reputation",
                               "description": {
-                                "en": ".",
-                                "pt": ".",
-                                "es": ""
+                                "en": "Name of the label associated with the claim.",
+                                "pt": "Nome da etiqueta associada à reclamação.",
+                                "es": "Nombre de la etiqueta asociada al reclamo."
                               },
                               "value": {
                                 "type": "string",
                                 "example": "avoid",
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": ""
+                                  "en": "Value of the label.",
+                                  "pt": "Valor da etiqueta.",
+                                  "es": "Valor de la etiqueta."
                                 }
                               },
                               "admin_id": {
                                 "type": "string",
                                 "example": null,
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": ""
+                                  "en": "ID of the user managing the claim and who associated the label.",
+                                  "pt": "ID da pessoa usuária que está administrando a reclamação e associou a etiqueta.",
+                                  "es": "ID de la persona usuaria que está gestionando el reclamo y ha asociado la etiqueta."
                                 }
                               },
                               "date_created": {
                                 "type": "string",
                                 "example": "2018-03-08T09:56:00.078-0400",
                                 "description": {
-                                  "en": ".",
-                                  "pt": ".",
-                                  "es": ""
+                                  "en": "Date on which the label was associated with the claim.",
+                                  "pt": "Data em que a etiqueta foi associada à reclamação.",
+                                  "es": "Fecha en que la etiqueta fue asociada al reclamo."
                                 }
                               }
                             }
