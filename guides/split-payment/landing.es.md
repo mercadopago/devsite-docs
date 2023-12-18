@@ -1,8 +1,8 @@
 ---
 content_section_with_media: 
  - title: Split de Pagos
- - message: La solución de Split de Pagos, compuesta por APIs, está diseñada para proporcionar servicios de Proveedor de Servicios de Pago (PSP) a vendedores en modelos de marketplace. Los marketplaces son plataformas de comercio electrónico que conectan vendedores y compradores, ofreciendo un entorno unificado para ventas en línea, ampliando el alcance y la conversión.
-- media_image: /subscriptions/mini-landing-pt.png
+ - message: La solución de Split de Pagos, compuesta por APIs, está diseñada para proporcionar servicios de Proveedor de Servicios de Pago (PSP) a vendedores en modelos de marketplace. Los marketplaces son plataformas de comercio electrónico que conectan vendedores y compradores, ofreciendo un entorno unificado para ventas en línea, ampliando el alcance y la conversión. 
+ - media_image: /adobe-commerce/magento2-landing.png 
 ---
 
 --- mini_landing_separator ---
@@ -10,12 +10,21 @@ content_section_with_media:
 >>>> Disponibilidad por país <<<<
 ---
 available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
+
 ---
+
+---
+bullet_section_with_media:
+ - type: normal
+ - title: Gestión
+ - message: Además de estructurar transacciones, algunos marketplaces gestionan aspectos como la disposición de productos, métodos de pago y envío, optimizando las ventas y simplificando la gestión comercial.
+ - image: /wallet-connect/wallet-connect-landing.png
+---
+
 ---
 bullet_section_with_media: 
  - title: Ventajas
  - type: normal
- - message: Además de estructurar transacciones, algunos marketplaces gestionan aspectos como la disposición de productos, métodos de pago y envío, optimizando las ventas y simplificando la gestión comercial.
  - benefit_title: Simplifica la división de pagos
  - benefit_message: Simplificamos tu gestión B2B y B2C, dividiendo el pago entre tu empresa y cada actor de una transacción. Deja de preocuparte por tasas, impuestos y división de comisiones, nosotros lo hacemos por ti.
  - benefit_title: Controla y haz seguimiento a tus ventas

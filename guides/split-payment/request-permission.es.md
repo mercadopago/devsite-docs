@@ -11,6 +11,7 @@ Para iniciar el proceso de autorización y solicitar permisos a sus usuarios par
      - Donde `<APP_ID>` es el valor obtenido en el paso 2, y
      - `<REDIRECT_URI>` es el valor ingresado en el campo Redirect Uri en el paso 3.
 
+ 
  2. Una vez que los usuarios autoricen la gestión de ventas, recibirás un código de autorización en la URL que especificaste en el paso anterior. Este código estará en el parámetro `code` de la siguiente manera:
 
      ```
@@ -22,5 +23,3 @@ Para iniciar el proceso de autorización y solicitar permisos a sus usuarios par
 > Nota
 >
 > El `AUTHORIZATION_CODE` tiene una validez de 10 minutos y será utilizado para crear las credenciales necesarias. 
-
-

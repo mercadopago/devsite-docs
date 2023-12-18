@@ -1,4 +1,4 @@
-# Integrate checkout in Split Payment (marketplace)
+# Integrate checkout in Split Payments (marketplace)
 
 If you choose to sell through a Marketplace, it is possible to integrate **two types of Mercado Pago checkout** to process payments made.
 
