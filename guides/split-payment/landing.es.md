@@ -28,9 +28,9 @@ bullet_section_with_media:
  - benefit_title: Simplifica la división de pagos
  - benefit_message: Simplificamos tu gestión B2B y B2C, dividiendo el pago entre tu empresa y cada actor de una transacción. Deja de preocuparte por tasas, impuestos y división de comisiones, nosotros lo hacemos por ti.
  - benefit_title: Controla y haz seguimiento a tus ventas
- - benefit_message: Con Split Payments tienes visibilidad 360 de todas las ventas de tus sellers. Puedes hacer seguimiento detallado a los pagos y tasas por cada vendedor con reportes unificados en tiempo real.
+ - benefit_message: Con Split de Pagos tienes visibilidad 360 de todas las ventas de tus sellers. Puedes hacer seguimiento detallado a los pagos y tasas por cada vendedor con reportes unificados en tiempo real.
  - benefit_title: Aumenta tu eficiencia operacional
- - benefit_message: Disminuye tus costos operativos por medio de la automatización y gestión eficiente de tus pagos y comisiones. Split de pagos hace la división del dinero de la transacción entre las partes.
+ - benefit_message: Disminuye tus costos operativos por medio de la automatización y gestión eficiente de tus pagos y comisiones. Split de Pagos hace la división del dinero de la transacción entre las partes.
  - benefit_title: Aprovecha el ecosistema Mercado Pago
  - benefit_message: Contarás con el respaldo de la plataforma de productos financieros y de venta de Mercado Libre y Mercado Pago, usada por millones de usuarios en América Latina.
  - image: /checkout-bricks/cho-bricks-landing-v4.png
