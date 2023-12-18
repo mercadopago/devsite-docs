@@ -1,8 +1,4 @@
-# How to integrate checkout in marketplace
-
-Marketplace is an e-commerce site/platform that connects sellers and buyers in a single sales environment, allowing the sale of products and/or services online with greater scope and possibility of conversion.
-
-In addition to the structure needed to make sales, some marketplaces take care of the arrangement of products, payment and shipping methods, optimizing the sales process and facilitating business management.
+# Integrate checkout in Split Payment (marketplace)
 
 If you choose to sell through a Marketplace, it is possible to integrate **two types of Mercado Pago checkout** to process payments made.
 
@@ -25,6 +21,6 @@ To perform the integration you will need to follow the usual integration flow of
 4. To determine the marketplace commission percentage:
 
     - If the checkout is Pro, fill the `marketplace_fee` parameter with the amount to be charged for each payment preference created in the **/checkout/preferences** API.
-    - If the checkout is API, fill the `application_fee` parameter with the amount to be charged for each payment created in the **/payments** API.
+    - If the checkout is ----[mla, mlu, mpe, mco, mlc, mlm]----API------------ ----[mlb]----Transparente------------, fill the `application_fee` parameter with the amount to be charged for each payment created in the **/payments** API.
 
 Upon completing these steps, the checkout will have been integrated into the marketplace and will be ready to process payments.
