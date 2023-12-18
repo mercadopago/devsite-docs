@@ -2,38 +2,29 @@
 
 You can consult the list of saved cards for a particular customer. To do so, send a **GET** with the customer's `customer_id` to the endpoint [/v1/customers/{customer_id}/cards](/developers/en/reference/cards/_customers_customer_id_cards/get) and execute the request or, if you prefer, use one of our SDKs below.
 
-
 [[[
 
 ```php
-
 <?php
-$customer = MercadoPago\Customer::find_by_id($id);
-$cards = $customer->cards();
+  $customer_client = new CustomerClient();
+  $cards = $client->list("customer_id");
+  echo implode ($cards);
 ?>
-
 ```
 ```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
+const customerCard = new CustomerCard(client);
 
-var filters = {
-id: customer_id
-};
-
-Mercadopago.customers.search({
-qs: filters
-}).then(function (customer) {
-console.log(customer);
-});
-
+customerCard.list({ customerId: '<CUSTOMER_UD>' }).then(console.log).catch(console.log);
 ```
 ```java
 
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
-CustomerClient customerClient = new CustomerClient();
+CustomerCardClient customerCardClient = new CustomerCardClient();
 
-Customer customer = customerClient.get("247711297-jxOV430go9fx2e");
-customerClient.listCards(customer.getId());
+MPResourceList<CustomerCard> list = customerCardClient.listAll("000000000-abcdEfghiJklM");
+List<CustomerCard> customerCards = list.getResults();
 
 ```
 ```ruby
@@ -63,7 +54,7 @@ curl -X GET \
 ```
 ]]]
 
-The response will bring the following result.
+The response will bring the following result:
 
 ```json
 [{
@@ -75,19 +66,3 @@ The response will bring the following result.
 ...
 }]
 ```
-
-> PREV_STEP_CARD_EN
->
-> Add new cards to a customer
->
-> Learn how  to add new cards to a previously created customer.
->
-> [Add new cards to a customer](/developers/en/docs/checkout-api/cards-and-customers-management/add-new-cards-to-customer)
-
-> NEXT_STEP_CARD_EN
->
-> Receive payments with saved cards
->
-> Learn how to receive payments from cards previously saved in the buyer's account.
->
-> [Receive payments with saved cards](/developers/en/docs/checkout-api/cards-and-customers-management/receive-payments-with-saved-cards)

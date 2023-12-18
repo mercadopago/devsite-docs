@@ -157,7 +157,7 @@ paths:
                             spa: Código de área
                             por: Código de área
                         number:
-                          type: string
+                          type: number
                           description: Number.
                           x-description-i18n:
                             eng: Number.
@@ -481,19 +481,19 @@ paths:
                 expiration_date_from:
                   type: string
                   format: date
-                  description: Date in YYYY-MM-DD-HH-MM-SS format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.
+                  description: Date in "yyyy-MM-dd'T'HH:mm:ssz" format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.
                   x-description-i18n:
-                    eng: Date in YYYY-MM-DD-HH-MM-SS format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.
-                    spa: Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el inicio del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas.
-                    por: Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas.
+                    eng: Date in "yyyy-MM-dd'T'HH:mm:ssz" format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.
+                    spa: Fecha en formato "yyyy-MM-dd'T'HH:mm:ssz" que indica el inicio del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas. Por ejemplo - 2022-11-17T09:37:52.000-04:00.
+                    por: Data no formato "yyyy-MM-dd'T'HH:mm:ssz". que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas. Por exemplo - 2022-11-17T09:37:52.000-04:00. 
                 expiration_date_to:
                   type: string
                   format: date
-                  description: Date in YYYY-MM-DD-HH-MM-SS format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.
+                  description: Date in "yyyy-MM-dd'T'HH:mm:ssz" format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.
                   x-description-i18n:
-                    eng: Date in YYYY-MM-DD-HH-MM-SS format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.
-                    spa: Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas.
-                    por: Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas.
+                    eng: Date in "yyyy-MM-dd'T'HH:mm:ssz" format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.
+                    spa: Fecha en formato "yyyy-MM-dd'T'HH:mm:ssz" que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas. Por ejemplo - 2022-11-17T09:37:52.000-04:00.
+                    por: Data no formato "yyyy-MM-dd'T'HH:mm:ssz" que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas. Por exemplo - 2022-11-17T09:37:52.000-04:00.
                 marketplace:
                   type: string
                   description: Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. As the marketplace is associated to the Application ID, the marketplace credentials must correspond to the credentials used to create the preference. Using the wrong credentials will result in an error.
@@ -511,6 +511,10 @@ paths:
                 differential_pricing:
                   type: object
                   description: Differential pricing configuration for this preference. The seller can have their own configuration regarding payment methods and installments, and it`s in this parameter where they will include the numeric ID to indicate so. This value is used to apply custom payment methods. 
+                  x-description-i18n:
+                    eng: Differential pricing configuration for this preference. The seller can have their own configuration regarding payment methods and installments, and it`s in this parameter where they will include the numeric ID to indicate so. This value is used to apply custom payment methods.
+                    spa: Configuración de precio diferencial para esta preferencia. El vendedor puede tener su propia configuración en cuanto a formas de pago y cuotas, y es en este parámetro donde incluirá el ID numérico para indicarlo. Este valor se utiliza para aplicar métodos de pago personalizados.
+                    por: Configuração de preço diferencial para esta preferência. O vendedor pode ter sua própria configuração em relação às formas de pagamento e taxas, e é neste parâmetro que incluirá o ID numérico para indicá-lo. Esse valor é usado para aplicar métodos de pagamento personalizados.
                   properties:
                     id:
                       type: number
@@ -703,7 +707,7 @@ paths:
                               spa: Código de área
                               por: Código de área
                           number:
-                            type: string
+                            type: number
                             description: Phone number.
                             x-description-i18n:
                               eng: Phone number.
@@ -2039,7 +2043,7 @@ paths:
                             spa: Código de área
                             por: Código de área
                         number:
-                          type: string
+                          type: number
                           description: Number.
                           x-description-i18n:
                             eng: Number.
@@ -2683,7 +2687,7 @@ paths:
                               spa: Código de área
                               por: Código de área
                           number:
-                            type: string
+                            type: number
                             description: Number.
                             x-description-i18n:
                               eng: Number.
@@ -2978,11 +2982,7 @@ paths:
                               spa: Estado
                               por: Estado
                           country_name:
-                            type: Country name.
-                            x-type-i18n:
-                              eng: Country name.
-                              spa: Nombre del país
-                              por: Nome do país
+                            type: string
                             description: Country name.
                             x-description-i18n:
                               eng: Country name.

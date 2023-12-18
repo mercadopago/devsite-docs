@@ -1,0 +1,2660 @@
+{
+  "url": "https://api.mercadopago.com",
+  "paths": {
+    "/v1/chargebacks/{id}": {
+      "get": {
+        "tags": [
+          "checkout-api"
+        ],
+        "description": {
+          "en": "Check all the information related to a chargeback for your product or service with the ID of the chargeback you want",
+          "pt": "Veja todas as informações de operações contestadas de seu produto ou serviço com a identificação do estorno que você deseja",
+          "es": "Consulta toda la información de un contracargo de tu producto o servicio con el ID del contracargo que quieras"
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": {
+              "en": "The \"id\" parameter represents a unique identifier for the chargeback transaction. If you do not have this specific information, simply insert the payment ID for which you want to obtain the chargeback details. It is important to note that when using the payment ID, a small modification to the endpoint is required in order to make the call following the following format - https://api.mercadopago.com/v1/chargebacks/search?payment_id=PAYMENT_ID_.",
+              "pt": "O parâmetro \"id\" refere-se a um identificador exclusivo para a transação de estorno. Caso não possua essa informação, basta inserir o ID do pagamento para o qual deseja obter os detalhes do estorno. É fundamental destacar que, ao utilizar o ID de pagamento, é necessário efetuar uma pequena alteração no endpoint a fim de realizar a chamada corretamente. A URL modificada deve seguir o seguinte formato - https://api.mercadopago.com/v1/chargebacks/search?payment_id=PAYMENT_ID.",
+              "es": "El parámetro \"id\" corresponde a un identificador único para la transacción de reembolso. En caso de no contar con esta información, simplemente debes ingresar el ID de pago para el cual deseas obtener los detalles del reembolso. Es importante resaltar que al utilizar el ID de pago, es necesario realizar una pequeña modificación en el endpoint para poder realizar la llamada de la siguiente manera - https://api.mercadopago.com/v1/chargebacks/search?payment_id=PAYMENT_ID."
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-caller-id",
+            "schema": {
+              "type": "string",
+              "example": "543802539"
+            },
+            "required": true,
+            "description": {
+              "en": "This parameter refers to the seller's ID, an identification necessary to correctly locate the refund information.",
+              "pt": "Este parâmetro refere-se ao ID do vendedor, identificação necessária para que se possa localizar corretamente as informações de estorno.",
+              "es": "Este parámetro hace referencia al ID del vendedor, identificación necesaria para localizar correctamente la información del reembolso."
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "es": "success",
+              "pt": "success",
+              "en": "success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "description": {
+                        "en": "Unique chargeback identifier",
+                        "pt": "Identificador único do estorno",
+                        "es": "Identificador único del contracargo"
+                      }
+                    },
+                    "payments": {
+                      "type": "array",
+                      "description": {
+                        "en": "List of payments IDs associated to the case",
+                        "pt": "Lista de IDs de pagamentos associados ao caso",
+                        "es": "Lista de pagos con IDs asociados al caso"
+                      },
+                      "items": {
+                        "type": "number"
+                      }
+                    },
+                    "currency": {
+                      "type": "string",
+                      "description": {
+                        "en": "Chergeback amount currency",
+                        "pt": "Moeda do valor do estorno",
+                        "es": "Moneda del monto de la contracargo"
+                      }
+                    },
+                    "amount": {
+                      "type": "number",
+                      "description": {
+                        "en": "Chergeback amount",
+                        "pt": "Valor do estorno",
+                        "es": "Monto de la contracargo"
+                      }
+                    },
+                    "coverage_applied": {
+                      "type": "boolean",
+                      "description": {
+                        "en": "Whether the seller has been covered or not",
+                        "pt": "Se o vendedor está coberto ou não",
+                        "es": "Si el vendedor ha sido cubierto o no"
+                      }
+                    },
+                    "coverage_elegible": {
+                      "type": "boolean",
+                      "description": {
+                        "en": "Indicates if the money returned to the buyer can be covered by Mercado Pago. It is only possible to continue with the rest of the steps if the chargeback can be covered.",
+                        "pt": "Define se o dinheiro devolvido ao comprador pode ser coberto pelo Mercado Pago. Só é possível continuar com o restante das etapas se o estorno puder ser coberto.",
+                        "es": "Define si el dinero devuelto al comprador puede ser cubierto por Mercado Pago. Solo es posible continuar con el resto de los pasos si el contracargo puede ser cubierto."
+                      }
+                    },
+                    "documentation_required": {
+                      "type": "boolean",
+                      "description": {
+                        "en": "Whether the seller needs to send documentation for this chargeback",
+                        "pt": "Se o vendedor precisa enviar a documentação para este estorno",
+                        "es": "Si el vendedor debe enviar la documentación para el contracargo"
+                      }
+                    },
+                    "documentation_status": {
+                      "type": "string",
+                      "description": {
+                        "en": "Detail of decision taken for the documentation",
+                        "pt": "Detalhe da decisão tomada para a documentação",
+                        "es": "Detalle de la decisión tomada por la documentación"
+                      },
+                      "enum": [
+                        {
+                          "title": "pending",
+                          "description": {
+                            "en": "No documentation has been received",
+                            "es": "No documentation has been received",
+                            "pt": "No documentation has been received"
+                          }
+                        },
+                        {
+                          "title": "review_pending",
+                          "description": {
+                            "en": "Documentation received, waiting for decision to be taken",
+                            "es": "Documentation received, waiting for decision to be taken",
+                            "pt": "Documentation received, waiting for decision to be taken"
+                          }
+                        },
+                        {
+                          "title": "valid",
+                          "description": {
+                            "en": "The documentation received is valid",
+                            "es": "The documentation received is valid",
+                            "pt": "The documentation received is valid"
+                          }
+                        },
+                        {
+                          "title": "invalid",
+                          "description": {
+                            "en": "The documentation received is invalid",
+                            "es": "The documentation received is invalid",
+                            "pt": "The documentation received is invalid"
+                          }
+                        },
+                        {
+                          "title": "not_supplied",
+                          "description": {
+                            "en": "The documentation wasn't supplied on time",
+                            "es": "The documentation wasn't supplied on time",
+                            "pt": "The documentation wasn't supplied on time"
+                          }
+                        },
+                        {
+                          "title": "not_applicable",
+                          "description": {
+                            "en": "Documentation wasn't needed for this chargeback",
+                            "es": "Documentation wasn't needed for this chargeback",
+                            "pt": "Documentation wasn't needed for this chargeback"
+                          }
+                        }
+                      ]
+                    },
+                    "documentation": {
+                      "type": "array",
+                      "description": {
+                        "en": "List of documentation received from the seller",
+                        "pt": "Lista de documentação recebida do vendedor",
+                        "es": "Lista de documentación recibida del vendedor"
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "description": {
+                              "en": "Documentation's file type",
+                              "pt": "Tipo de arquivo da documentação",
+                              "es": "Tipo de archivo de documentacion"
+                            }
+                          },
+                          "url": {
+                            "type": "string",
+                            "description": {
+                              "en": "URL to see the documentation file",
+                              "pt": "URL para ver o arquivo da documentação",
+                              "es": "URL para ver el archivo de documentación"
+                            }
+                          },
+                          "description": {
+                            "type": "string",
+                            "description": {
+                              "en": "Documentation's description",
+                              "pt": "Descrição da documentação",
+                              "es": "Descripcion de la documentacion"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "date_documentation_deadline": {
+                      "type": "string",
+                      "format": "date",
+                      "description": {
+                        "en": "Chargeback's last day to send documentation",
+                        "pt": "Último dia para o envio da documentação do estorno",
+                        "es": "Último día para el envío de documentación del contracargo"
+                      }
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "format": "date",
+                      "description": {
+                        "en": "Chargeback’s creation date",
+                        "pt": "Data de criação do Estorno",
+                        "es": "Fecha de creación del contracargo"
+                      }
+                    },
+                    "date_last_updated": {
+                      "type": "string",
+                      "format": "date",
+                      "description": {
+                        "en": "Chargeback's last modified date",
+                        "pt": "Data da última modificação do estorno",
+                        "es": "Fecha de última modificación del contracargo"
+                      }
+                    },
+                    "live_mode": {
+                      "type": "boolean",
+                      "description": {
+                        "en": "Whether the chargeback will be processed in sandbox or in production mode. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.",
+                        "pt": "Se o estorno será processada em modo sandbox ou em produção. Se TRUE, o estorno será processado em modo de produção. Se FALSE, o estorno será processado no modo sandbox.",
+                        "es": "Si la devolución será procesada en el \"sandbox\" o en el modo de producción. Si es TRUE, el contracargo se procesará en modo de producción. Si es FALSE, el contracargo se procesará en modo sandbox."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Get chargeback",
+          "pt": "Obter estorno",
+          "es": "Obtener contracargo"
+        }
+      }
+    },
+    "/v1/payments/{id}/refunds": {
+      "get": {
+        "tags": [
+          "checkout-api"
+        ],
+        "description": {
+          "en": "Get all Refunds for a specific payment",
+          "pt": "Consultar todos os reembolsos para um pagamento específico",
+          "es": "Consultar todos los reembolsos para un pago específico"
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": {
+              "en": "Payment identifier",
+              "pt": "Identificador de pagamento",
+              "es": "Identificador de pago"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": 18552260055
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "es": "success",
+              "pt": "success",
+              "en": "success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "example": 1032332129,
+                      "description": {
+                        "en": "Refund identifier",
+                        "pt": "Identificador do reembolso",
+                        "es": "Identificador de reembolso"
+                      }
+                    },
+                    "payment_id": {
+                      "type": "number",
+                      "example": 18552260055,
+                      "description": {
+                        "en": "Payment identifier",
+                        "pt": "Identificador de pagamento",
+                        "es": "Identificador de pago"
+                      }
+                    },
+                    "amount": {
+                      "type": "number",
+                      "example": 4,
+                      "description": {
+                        "en": "Payment identifier",
+                        "pt": "Identificador de pagamento",
+                        "es": "Identificador de pago"
+                      }
+                    },
+                    "metadata": {
+                      "type": "array",
+                      "description": {
+                        "en": "Contains payment metadata that is sent to us in the payment post",
+                        "pt": "Contém metadados de pagamento que nos são enviados no post de payment",
+                        "es": "Contiene metadatos del pago que nos envían en el post del payment"
+                      },
+                      "items": null
+                    },
+                    "source": {
+                      "type": "array",
+                      "description": {
+                        "en": "Contains the data to identify who originated the refund (contains ID, name and type)",
+                        "pt": "Contém os dados para identificar quem originou o reembolso (contém ID, nome e tipo)",
+                        "es": "Contiene los datos para identificar quién originó el reembolso (contiene ID, name y type)"
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "example": {
+                              "en": "Firstname Lastname",
+                              "pt": "Nome e sobrenome",
+                              "es": "Nombre y apellido"
+                            },
+                            "description": {
+                              "es": "The name of the user who submitted the refund request",
+                              "pt": "The name of the user who submitted the refund request",
+                              "en": "The name of the user who submitted the refund request"
+                            }
+                          },
+                          "id": {
+                            "type": "string",
+                            "example": "1003743392",
+                            "description": {
+                              "en": "The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)",
+                              "pt": "O ID do usuário que enviou a solicitação de reembolso (coletor, operador e proprietário do marketplace)",
+                              "es": "El ID del usuario que envió el pedido de reembolso (collector, operator, owner del marketplace)"
+                            }
+                          },
+                          "type": {
+                            "type": "string",
+                            "example": "collector",
+                            "description": {
+                              "en": "Source type. The possible values are Admin, Collector, BPP, and Marketplace.",
+                              "pt": "Tipo de fonte. Os valores possíveis são Admin, Collector, BPP e Marketplace.",
+                              "es": "Tipo de fuente. Los valores posibles son Admin, Collector, BPP y Marketplace."
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "example": "2021-11-24T13:58:49.312-04:00",
+                      "format": "date",
+                      "description": {
+                        "en": "Refund creation date",
+                        "pt": "Data de criação do reembolso",
+                        "es": "Fecha de creación del reembolso"
+                      }
+                    },
+                    "unique_sequence_number": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "It is an identifier of the refund that was generated by the card processor.",
+                        "pt": "É um identificador do reembolso que foi gerado pelo processador do cartão.",
+                        "es": "Es un identificador del reembolso que generó el procesador de la tarjeta."
+                      }
+                    },
+                    "refund_mode": {
+                      "type": "string",
+                      "example": "standard",
+                      "description": {
+                        "en": "Type of refund",
+                        "pt": "Tipo de reembolso",
+                        "es": "Tipo de reembolso"
+                      }
+                    },
+                    "adjustment_amount": {
+                      "type": "number",
+                      "example": 0,
+                      "description": {
+                        "en": "Refund adjustment",
+                        "pt": "Ajuste de reembolso",
+                        "es": "Ajuste de reembolso"
+                      }
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "approved",
+                      "description": {
+                        "en": "Refund status",
+                        "pt": "Status de reembolso",
+                        "es": "Status de reembolso"
+                      },
+                      "enum": [
+                        {
+                          "title": "approved",
+                          "description": {
+                            "en": "The payment has been approved and accredited.",
+                            "es": "The payment has been approved and accredited.",
+                            "pt": "The payment has been approved and accredited."
+                          }
+                        },
+                        {
+                          "title": "in_process",
+                          "description": {
+                            "en": "Payment is being reviewed.",
+                            "es": "Payment is being reviewed.",
+                            "pt": "Payment is being reviewed."
+                          }
+                        },
+                        {
+                          "title": "rejected",
+                          "description": {
+                            "en": "Payment was rejected. The user may retry payment.",
+                            "es": "Payment was rejected. The user may retry payment.",
+                            "pt": "Payment was rejected. The user may retry payment."
+                          }
+                        },
+                        {
+                          "title": "cancelled",
+                          "description": {
+                            "en": "Payment was cancelled by one of the parties or because time for payment has expired.",
+                            "es": "Payment was cancelled by one of the parties or because time for payment has expired.",
+                            "pt": "Payment was cancelled by one of the parties or because time for payment has expired."
+                          }
+                        },
+                        {
+                          "title": "authorized",
+                          "description": {
+                            "en": "The payment has been authorized but not captured yet.",
+                            "es": "The payment has been authorized but not captured yet.",
+                            "pt": "The payment has been authorized but not captured yet."
+                          }
+                        }
+                      ]
+                    },
+                    "reason": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Refund reason",
+                        "pt": "Motivo do reembolso",
+                        "es": "Motivo de reembolso"
+                      }
+                    },
+                    "label": {
+                      "type": "array",
+                      "description": {
+                        "en": "Information relevant to the refund. Currently only one label called hidden is used. When the payment search is made, refunds with the hidden label are not returned in the response JSON.",
+                        "pt": "Informações relevantes para o reembolso. Atualmente, apenas uma label chamada hidden é usada. Quando a pesquisa de pagamento é feita, os reembolsos com o label hiddden não são retornados no JSON de resposta.",
+                        "es": "Información pertinente al reembolso. Actualmente solo se usa una label llamada hidden. Cuando se hace la búsqueda del pago, en el JSON de respuesta no se devuelven los refunds que tienen el label hidden."
+                      },
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "partition_details": {
+                      "type": "array",
+                      "description": {
+                        "en": "Indicates the amount returned for each of the partitions with which the payment was generated. Currently, payments with several money partitions are created only for one product from Brazil (Valeras), so it does not apply to all. Valeras allows offering benefits to employees, and is currently turned on in Brazil only for some employers.",
+                        "pt": "Indica o valor devolvido para cada uma das partições com as quais o pagamento foi gerado. Atualmente apenas para um produto do Brasil (Valeras) são criados pagamentos com várias partições de dinheiro, portanto não se aplica a todos. O Valeras permite oferecer benefícios aos empregados e atualmente está ativo no Brasil apenas para alguns empregadores.",
+                        "es": "Indica el monto devuelto para cada una de las particiones con las que fue generado el pago. Actualmente solo para un producto de Brasil (Valeras) se crean pagos con varias particiones de dinero, por lo que no aplica a todos. Valeras permite ofrecer beneficios a empleados, y actualmente se encuentra encendido en Brasil solo para algunos empleadores."
+                      },
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "5",
+                          "description": {
+                            "en": "Must-provide-your-access-token-to -proceed",
+                            "es": "Must-provide-your-access-token-to -proceed",
+                            "pt": "Must-provide-your-access-token-to -proceed"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "2000",
+                          "description": {
+                            "en": "Payment-not-found",
+                            "es": "Payment-not-found",
+                            "pt": "Payment-not-found"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Get refunds list",
+          "pt": "Obter lista de reembolsos",
+          "es": "Obtener lista de reembolsos"
+        }
+      },
+      "post": {
+        "tags": [
+          "checkout-api"
+        ],
+        "description": {
+          "en": "Create Partial/Full Refund for a specific payment. If the amount field is filled, it will create a partial refund, if not, it will create a full refund",
+          "pt": "Criar um reembolso parcial/total para um pagamento específico. Se o campo amount estiver preechido, será criado um reembolso parcial, caso contrário, se criará um reembolso total",
+          "es": "Crear reembolsos parciales/totales para un pago específico. Si el campo de suma ha sido completado, creará un reembolso parcial, en caso contrario, creará un reembolso total"
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": {
+              "en": "Payment identifier",
+              "pt": "Identificador de pagamento",
+              "es": "Identificador de pago"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": 12345678901
+            }
+          },
+          {
+            "name": "X-Idempotency-Key",
+            "in": "header",
+            "description": {
+              "en": "Idempotency key. When used, avoids duplicated refund",
+              "pt": "Idempotency key. Quando usada, evita reembolsos duplicados",
+              "es": "Idempotency key. Al usarse, evita los reembolsos duplicados"
+            },
+            "required": false,
+            "schema": {
+              "type": "string",
+              "example": "77e1c83b-7bb0-437b-bc50-a7a58e5660ac"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "amount": {
+                    "type": "number",
+                    "description": {
+                      "en": "Refund amount. If this property (amount) is removed from body, it will create a full refund.",
+                      "pt": "Valor do reembolso. Se a propriedade (amount) for removida do body, criará um reembolso integral.",
+                      "es": "Monto de reembolso. Si esta propiedad (monto) es removida del body, creará un reembolso total."
+                    },
+                    "example": 5
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "es": "Sucess",
+              "pt": "Sucess",
+              "en": "Sucess"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "example": 1009042015,
+                      "description": {
+                        "en": "Refund identifier",
+                        "pt": "Identificador do reembolso",
+                        "es": "Identificador de reembolso"
+                      }
+                    },
+                    "payment_id": {
+                      "type": "number",
+                      "example": 18552260055,
+                      "description": {
+                        "en": "Payment identifier",
+                        "pt": "Identificador de pagamento",
+                        "es": "Identificador de pago"
+                      }
+                    },
+                    "amount": {
+                      "type": "number",
+                      "example": 10,
+                      "description": {
+                        "en": "Refund amount",
+                        "pt": "Valor do reembolso",
+                        "es": "Monto de reembolso"
+                      }
+                    },
+                    "metadata": {
+                      "type": "array",
+                      "description": {
+                        "en": "Contains payment metadata that is sent to us in the payment post",
+                        "pt": "Contém metadados de pagamento que nos são enviados no post de payment",
+                        "es": "Contiene metadatos del pago que nos envían en el post del payment"
+                      },
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "source": {
+                      "type": "array",
+                      "description": {
+                        "en": "Contains the data to identify who originated the refund (contains ID, name and type)",
+                        "pt": "Contém os dados para identificar quem originou o reembolso (contém ID, nome e tipo)",
+                        "es": "Contiene los datos para identificar quién originó el reembolso (contiene ID, name y type)"
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "example": {
+                              "en": "Firstname Lastname",
+                              "pt": "Nome e sobrenome",
+                              "es": "Nombre y apellido"
+                            },
+                            "description": {
+                              "es": "The name of the user who submitted the refund request",
+                              "pt": "The name of the user who submitted the refund request",
+                              "en": "The name of the user who submitted the refund request"
+                            }
+                          },
+                          "id": {
+                            "type": "string",
+                            "example": "1003743392",
+                            "description": {
+                              "en": "The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)",
+                              "pt": "O ID do usuário que enviou a solicitação de reembolso (coletor, operador e proprietário do marketplace)",
+                              "es": "El ID del usuario que envió el pedido de reembolso (collector, operator, owner del marketplace)"
+                            }
+                          },
+                          "type": {
+                            "type": "string",
+                            "example": "collector",
+                            "description": {
+                              "en": "Source type. The possible values are Admin, Collector, BPP, and Marketplace.",
+                              "pt": "Tipo de fonte. Os valores possíveis são Admin, Collector, BPP e Marketplace.",
+                              "es": "Tipo de fuente. Los valores posibles son Admin, Collector, BPP y Marketplace."
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "example": "2021-11-24T13:58:49.312-04:00",
+                      "format": "date",
+                      "description": {
+                        "en": "Refund creation date",
+                        "pt": "Data de criação do reembolso",
+                        "es": "Fecha de creación del reembolso"
+                      }
+                    },
+                    "unique_sequence_number": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "It is an identifier of the refund that was generated by the card processor.",
+                        "pt": "É um identificador do reembolso que foi gerado pelo processador do cartão.",
+                        "es": "Es un identificador del reembolso que generó el procesador de la tarjeta."
+                      }
+                    },
+                    "refund_mode": {
+                      "type": "string",
+                      "example": "standard",
+                      "description": {
+                        "en": "Type of Refund",
+                        "pt": "Tipo de reembolso",
+                        "es": "Tipo de reembolso"
+                      }
+                    },
+                    "adjustment_amount": {
+                      "type": "number",
+                      "example": 0,
+                      "description": {
+                        "en": "Refund adjustment",
+                        "pt": "Ajuste de reembolso",
+                        "es": "Ajuste de reembolso"
+                      }
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "approved",
+                      "description": {
+                        "en": "Refund status",
+                        "pt": "Status de reembolso",
+                        "es": "Status de reembolso"
+                      },
+                      "enum": [
+                        {
+                          "title": "approved",
+                          "description": {
+                            "en": "The payment has been approved and accredited.",
+                            "es": "The payment has been approved and accredited.",
+                            "pt": "The payment has been approved and accredited."
+                          }
+                        },
+                        {
+                          "title": "in_process",
+                          "description": {
+                            "en": "Payment is being reviewed.",
+                            "es": "Payment is being reviewed.",
+                            "pt": "Payment is being reviewed."
+                          }
+                        },
+                        {
+                          "title": "rejected",
+                          "description": {
+                            "en": "Payment was rejected. The user may retry payment.",
+                            "es": "Payment was rejected. The user may retry payment.",
+                            "pt": "Payment was rejected. The user may retry payment."
+                          }
+                        },
+                        {
+                          "title": "cancelled",
+                          "description": {
+                            "en": "Payment was cancelled by one of the parties or because time for payment has expired.",
+                            "es": "Payment was cancelled by one of the parties or because time for payment has expired.",
+                            "pt": "Payment was cancelled by one of the parties or because time for payment has expired."
+                          }
+                        },
+                        {
+                          "title": "authorized",
+                          "description": {
+                            "en": "The payment has been authorized but not captured yet.",
+                            "es": "The payment has been authorized but not captured yet.",
+                            "pt": "The payment has been authorized but not captured yet."
+                          }
+                        }
+                      ]
+                    },
+                    "reason": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Refund reason",
+                        "pt": "Motivo do reembolso",
+                        "es": "Motivo de reembolso"
+                      }
+                    },
+                    "label": {
+                      "type": "array",
+                      "description": {
+                        "en": "Information relevant to the refund. Currently only one label called hidden is used. When the payment search is made, refunds with the hidden label are not returned in the response JSON.",
+                        "pt": "Informações relevantes para o reembolso. Atualmente, apenas uma label chamada hidden é usada. Quando a pesquisa de pagamento é feita, os reembolsos com o label hiddden não são retornados no JSON de resposta.",
+                        "es": "Información pertinente al reembolso. Actualmente solo se usa una label llamada hidden. Cuando se hace la búsqueda del pago, en el JSON de respuesta no se devuelven los refunds que tienen el label hidden."
+                      },
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "partition_details": {
+                      "type": "array",
+                      "description": {
+                        "en": "Indicates the amount returned for each of the partitions with which the payment was generated. Currently, payments with several money partitions are created only for one product from Brazil (Valeras), so it does not apply to all. Valeras allows offering benefits to employees, and is currently turned on in Brazil only for some employers.",
+                        "pt": "Indica o valor devolvido para cada uma das partições com as quais o pagamento foi gerado. Atualmente apenas para um produto do Brasil (Valeras) são criados pagamentos com várias partições de dinheiro, portanto não se aplica a todos. O Valeras permite oferecer benefícios aos empregados e atualmente está ativo no Brasil apenas para alguns empregadores.",
+                        "es": "Indica el monto devuelto para cada una de las particiones con las que fue generado el pago. Actualmente solo para un producto de Brasil (Valeras) se crean pagos con varias particiones de dinero, por lo que no aplica a todos. Valeras permite ofrecer beneficios a empleados, y actualmente se encuentra encendido en Brasil solo para algunos empleadores."
+                      },
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "2063",
+                          "description": {
+                            "en": "The-action-requested-is-not-valid-for-the-current-payment-state",
+                            "es": "The-action-requested-is-not-valid-for-the-current-payment-state",
+                            "pt": "The-action-requested-is-not-valid-for-the-current-payment-state"
+                          }
+                        },
+                        {
+                          "title": "2085",
+                          "description": {
+                            "en": "Invalid-value-for-gateway_operation-",
+                            "es": "Invalid-value-for-gateway_operation-",
+                            "pt": "Invalid-value-for-gateway_operation-"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "401",
+                          "description": {
+                            "en": "Invalid-token",
+                            "es": "Invalid-token",
+                            "pt": "Invalid-token"
+                          }
+                        },
+                        {
+                          "title": "4040",
+                          "description": {
+                            "en": "amount-attribute-must-be-positive",
+                            "es": "amount-attribute-must-be-positive",
+                            "pt": "amount-attribute-must-be-positive"
+                          }
+                        },
+                        {
+                          "title": "4041",
+                          "description": {
+                            "en": "amount-attribute-must-be-numeric",
+                            "es": "amount-attribute-must-be-numeric",
+                            "pt": "amount-attribute-must-be-numeric"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "2000",
+                          "description": {
+                            "en": "Payment-not-found",
+                            "es": "Payment-not-found",
+                            "pt": "Payment-not-found"
+                          }
+                        },
+                        {
+                          "title": "2024",
+                          "description": {
+                            "en": "Payment-too-old-to-be-refunded",
+                            "es": "Payment-too-old-to-be-refunded",
+                            "pt": "Payment-too-old-to-be-refunded"
+                          }
+                        },
+                        {
+                          "title": "2032",
+                          "description": {
+                            "en": "Refund-not-found",
+                            "es": "Refund-not-found",
+                            "pt": "Refund-not-found"
+                          }
+                        },
+                        {
+                          "title": "3012",
+                          "description": {
+                            "en": "Invalid parameter security_code_length",
+                            "es": "Invalid parameter security_code_length",
+                            "pt": "Invalid parameter security_code_length"
+                          }
+                        },
+                        {
+                          "title": "3024",
+                          "description": {
+                            "en": "Not valid action - partial refund unsupported for this transaction",
+                            "es": "Not valid action - partial refund unsupported for this transaction",
+                            "pt": "Not valid action - partial refund unsupported for this transaction"
+                          }
+                        },
+                        {
+                          "title": "4211",
+                          "description": {
+                            "en": "Charge-detail-can't-be-null-or-empty",
+                            "es": "Charge-detail-can't-be-null-or-empty",
+                            "pt": "Charge-detail-can't-be-null-or-empty"
+                          }
+                        },
+                        {
+                          "title": "4248",
+                          "description": {
+                            "en": "Charge not found - Shown when the charge is not found",
+                            "es": "Charge not found - Shown when the charge is not found",
+                            "pt": "Charge not found - Shown when the charge is not found"
+                          }
+                        },
+                        {
+                          "title": "4291",
+                          "description": {
+                            "en": "Param-charge-id-can’t-be-null-or-empty",
+                            "es": "Param-charge-id-can’t-be-null-or-empty",
+                            "pt": "Param-charge-id-can’t-be-null-or-empty"
+                          }
+                        },
+                        {
+                          "title": "4292",
+                          "description": {
+                            "en": "Header-X-Idempotency-Key-can’t-be-null",
+                            "es": "Header-X-Idempotency-Key-can’t-be-null",
+                            "pt": "Header-X-Idempotency-Key-can’t-be-null"
+                          }
+                        },
+                        {
+                          "title": "4293",
+                          "description": {
+                            "en": "Invalid-payment-status-to-refund-charges",
+                            "es": "Invalid-payment-status-to-refund-charges",
+                            "pt": "Invalid-payment-status-to-refund-charges"
+                          }
+                        },
+                        {
+                          "title": "4294",
+                          "description": {
+                            "en": "Charge-type-not-valid-to-refund",
+                            "es": "Charge-type-not-valid-to-refund",
+                            "pt": "Charge-type-not-valid-to-refund"
+                          }
+                        },
+                        {
+                          "title": "4295",
+                          "description": {
+                            "en": "Partial-charge-refund-is-not-allowed",
+                            "es": "Partial-charge-refund-is-not-allowed",
+                            "pt": "Partial-charge-refund-is-not-allowed"
+                          }
+                        },
+                        {
+                          "title": "4296",
+                          "description": {
+                            "en": "Charge-already-refunded",
+                            "es": "Charge-already-refunded",
+                            "pt": "Charge-already-refunded"
+                          }
+                        },
+                        {
+                          "title": "4297",
+                          "description": {
+                            "en": "Invalid-charge-id",
+                            "es": "Invalid-charge-id",
+                            "pt": "Invalid-charge-id"
+                          }
+                        },
+                        {
+                          "title": "15016",
+                          "description": {
+                            "en": "Payment-too-old-to-be-refunded",
+                            "es": "Payment-too-old-to-be-refunded",
+                            "pt": "Payment-too-old-to-be-refunded"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Create refund",
+          "pt": "Criar reembolso",
+          "es": "Crear reembolso"
+        }
+      }
+    },
+    "/v1/payments/{id}/refunds/{refund_id}": {
+      "get": {
+        "tags": [
+          "checkout-api"
+        ],
+        "description": {
+          "en": "Get a specific Refund from a specific payment",
+          "pt": "Consultar reembolso específico de determinado pagamento",
+          "es": "Consultar reembolso específico de un pago determinado"
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": {
+              "en": "Payment identifier",
+              "pt": "Identificador de pagamento",
+              "es": "Identificador de pago"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": 18552260055
+            }
+          },
+          {
+            "name": "refund_id",
+            "in": "path",
+            "description": {
+              "en": "Refund identifier",
+              "pt": "Identificador do reembolso",
+              "es": "Identificador de reembolso"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": 1032332129
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "es": "Sucess",
+              "pt": "Sucess",
+              "en": "Sucess"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "example": 1032332129,
+                      "description": {
+                        "en": "Refund identifier",
+                        "pt": "Identificador do reembolso",
+                        "es": "Identificador de reembolso"
+                      }
+                    },
+                    "payment_id": {
+                      "type": "number",
+                      "example": 18552260055,
+                      "description": {
+                        "es": "Payment identifier from the payment",
+                        "pt": "Payment identifier from the payment",
+                        "en": "Payment identifier from the payment"
+                      }
+                    },
+                    "amount": {
+                      "type": "number",
+                      "example": 10,
+                      "description": {
+                        "en": "Refund amount",
+                        "pt": "Valor do reembolso",
+                        "es": "Monto de reembolso"
+                      }
+                    },
+                    "metadata": {
+                      "type": "array",
+                      "description": {
+                        "en": "Contains payment metadata that is sent to us in the payment post",
+                        "pt": "Contém metadados de pagamento que nos são enviados no post de payment",
+                        "es": "Contiene metadatos del pago que nos envían en el post del payment"
+                      },
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "source": {
+                      "type": "array",
+                      "description": {
+                        "en": "Contains the data to identify who originated the refund (contains ID, name and type)",
+                        "pt": "Contém os dados para identificar quem originou o reembolso (contém ID, nome e tipo)",
+                        "es": "Contiene los datos para identificar quién originó el reembolso (contiene ID, name y type)"
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "example": {
+                              "en": "Firstname Lastname",
+                              "pt": "Nome e sobrenome",
+                              "es": "Nombre y apellido"
+                            },
+                            "description": {
+                              "es": "The name of the user who submitted the refund request",
+                              "pt": "The name of the user who submitted the refund request",
+                              "en": "The name of the user who submitted the refund request"
+                            }
+                          },
+                          "id": {
+                            "type": "string",
+                            "example": "1003743392",
+                            "description": {
+                              "en": "The ID of the user who submitted the refund request (collector, operator, owner of the marketplace)",
+                              "pt": "O ID do usuário que enviou a solicitação de reembolso (coletor, operador e proprietário do marketplace)",
+                              "es": "El ID del usuario que envió el pedido de reembolso (collector, operator, owner del marketplace)"
+                            }
+                          },
+                          "type": {
+                            "type": "string",
+                            "example": "collector",
+                            "description": {
+                              "en": "Source type. The possible values are Admin, Collector, BPP, and Marketplace.",
+                              "pt": "Tipo de fonte. Os valores possíveis são Admin, Collector, BPP e Marketplace.",
+                              "es": "Tipo de fuente. Los valores posibles son Admin, Collector, BPP y Marketplace."
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "example": "2021-11-24T13:58:49.312-04:00",
+                      "format": "date",
+                      "description": {
+                        "en": "Refund creation date",
+                        "pt": "Data de criação do reembolso",
+                        "es": "Fecha de creación del reembolso"
+                      }
+                    },
+                    "unique_sequence_number": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "It is an identifier of the refund that was generated by the card processor.",
+                        "pt": "É um identificador do reembolso que foi gerado pelo processador do cartão.",
+                        "es": "Es un identificador del reembolso que generó el procesador de la tarjeta."
+                      }
+                    },
+                    "refund_mode": {
+                      "type": "string",
+                      "example": "standard",
+                      "description": {
+                        "en": "Type of refund",
+                        "pt": "Tipo de reembolso",
+                        "es": "Tipo de reembolso"
+                      }
+                    },
+                    "adjustment_amount": {
+                      "type": "number",
+                      "example": 0,
+                      "description": {
+                        "en": "Refund adjustment",
+                        "pt": "Ajuste de reembolso",
+                        "es": "Ajuste de reembolso"
+                      }
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "approved",
+                      "description": {
+                        "en": "Refund status",
+                        "pt": "Status de reembolso",
+                        "es": "Status de reembolso"
+                      },
+                      "enum": [
+                        {
+                          "title": "approved",
+                          "description": {
+                            "en": "The payment has been approved and accredited.",
+                            "es": "The payment has been approved and accredited.",
+                            "pt": "The payment has been approved and accredited."
+                          }
+                        },
+                        {
+                          "title": "in_process",
+                          "description": {
+                            "en": "Payment is being reviewed.",
+                            "es": "Payment is being reviewed.",
+                            "pt": "Payment is being reviewed."
+                          }
+                        },
+                        {
+                          "title": "rejected",
+                          "description": {
+                            "en": "Payment was rejected. The user may retry payment.",
+                            "es": "Payment was rejected. The user may retry payment.",
+                            "pt": "Payment was rejected. The user may retry payment."
+                          }
+                        },
+                        {
+                          "title": "cancelled",
+                          "description": {
+                            "en": "Payment was cancelled by one of the parties or because time for payment has expired.",
+                            "es": "Payment was cancelled by one of the parties or because time for payment has expired.",
+                            "pt": "Payment was cancelled by one of the parties or because time for payment has expired."
+                          }
+                        },
+                        {
+                          "title": "authorized",
+                          "description": {
+                            "en": "The payment has been authorized but not captured yet.",
+                            "es": "The payment has been authorized but not captured yet.",
+                            "pt": "The payment has been authorized but not captured yet."
+                          }
+                        }
+                      ]
+                    },
+                    "reason": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Refund reason",
+                        "pt": "Motivo do reembolso",
+                        "es": "Motivo de reembolso"
+                      }
+                    },
+                    "label": {
+                      "type": "array",
+                      "description": {
+                        "en": "Information relevant to the refund. Currently only one label called hidden is used. When the payment search is made, refunds with the hidden label are not returned in the response JSON.",
+                        "pt": "Informações relevantes para o reembolso. Atualmente, apenas uma label chamada hidden é usada. Quando a pesquisa de pagamento é feita, os reembolsos com o label hiddden não são retornados no JSON de resposta.",
+                        "es": "Información pertinente al reembolso. Actualmente solo se usa una label llamada hidden. Cuando se hace la búsqueda del pago, en el JSON de respuesta no se devuelven los refunds que tienen el label hidden."
+                      },
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "partition_details": {
+                      "type": "array",
+                      "description": {
+                        "en": "Indicates the amount returned for each of the partitions with which the payment was generated. Currently, payments with several money partitions are created only for one product from Brazil (Valeras), so it does not apply to all. Valeras allows offering benefits to employees, and is currently turned on in Brazil only for some employers.",
+                        "pt": "Indica o valor devolvido para cada uma das partições com as quais o pagamento foi gerado. Atualmente apenas para um produto do Brasil (Valeras) são criados pagamentos com várias partições de dinheiro, portanto não se aplica a todos. O Valeras permite oferecer benefícios aos empregados e atualmente está ativo no Brasil apenas para alguns empregadores.",
+                        "es": "Indica el monto devuelto para cada una de las particiones con las que fue generado el pago. Actualmente solo para un producto de Brasil (Valeras) se crean pagos con varias particiones de dinero, por lo que no aplica a todos. Valeras permite ofrecer beneficios a empleados, y actualmente se encuentra encendido en Brasil solo para algunos empleadores."
+                      },
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "5",
+                          "description": {
+                            "en": "Must-provide-your-access-token-to-proceed",
+                            "es": "Must-provide-your-access-token-to-proceed",
+                            "pt": "Must-provide-your-access-token-to-proceed"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "2000",
+                          "description": {
+                            "en": "Payment-not-found",
+                            "es": "Payment-not-found",
+                            "pt": "Payment-not-found"
+                          }
+                        },
+                        {
+                          "title": "2032",
+                          "description": {
+                            "en": "Refund-not-found",
+                            "es": "Refund-not-found",
+                            "pt": "Refund-not-found"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Get specific refund",
+          "pt": "Obter reembolso específico",
+          "es": "Obtener reembolso específico"
+        }
+      }
+    },
+    "/v1/payments/{payment_id}": {
+      "put": {
+        "tags": [
+          "checkout-api"
+        ],
+        "description": {
+          "en": "Cancel a sale for a specific payment",
+          "pt": "Cancelar uma compra de um pagamento específico",
+          "es": "Cancelar una compra para un pago específico"
+        },
+        "parameters": [
+          {
+            "name": "payment_id",
+            "in": "path",
+            "description": {
+              "en": "Payment ID",
+              "pt": "ID de pagamento",
+              "es": "ID de pago"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "status": {
+                    "type": "String",
+                    "example": "cancelled",
+                    "description": {
+                      "en": "Payment status.",
+                      "pt": "Estado do pagamento",
+                      "es": "Estado del pago"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "es": "success",
+              "pt": "success",
+              "en": "success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "example": 18746874919,
+                      "description": {
+                        "en": "Payment identifier",
+                        "pt": "Identificador de pagamento",
+                        "es": "Identificador de pago"
+                      }
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "example": "2021-12-10T17:13:23.000-04:00",
+                      "format": "date",
+                      "description": {
+                        "en": "Cancelation creation date",
+                        "pt": "Data de criação do cancelamento",
+                        "es": "Fecha de creación de la cancelación"
+                      }
+                    },
+                    "date_approved": {
+                      "type": "string",
+                      "example": null,
+                      "format": "date",
+                      "description": {
+                        "en": "Cancelation approved date",
+                        "pt": "Data de aprovação do cancelamento",
+                        "es": "Fecha de aprovación de la cancelación"
+                      }
+                    },
+                    "date_last_updated": {
+                      "type": "string",
+                      "example": "2021-12-10T17:31:34.000-04:00",
+                      "format": "date",
+                      "description": {
+                        "en": "Last updated date",
+                        "pt": "Data da última atualização",
+                        "es": "Última fecha de actualización"
+                      }
+                    },
+                    "date_of_expiration": {
+                      "type": "string",
+                      "example": "2021-12-13T22:59:59.000-04:00",
+                      "format": "date",
+                      "description": {
+                        "en": "Expiration date",
+                        "pt": "Data de validade",
+                        "es": "Fecha de vencimiento"
+                      }
+                    },
+                    "money_release_date": {
+                      "type": "string",
+                      "example": null,
+                      "format": "date",
+                      "description": {
+                        "en": "Money release date",
+                        "pt": "Data de liberação do dinheiro",
+                        "es": "Fecha de liberación del dinero"
+                      }
+                    },
+                    "operation_type": {
+                      "type": "string",
+                      "example": "regular_payment",
+                      "description": {
+                        "en": "Operation type",
+                        "pt": "Tipo de operação",
+                        "es": "Tipo de operación"
+                      }
+                    },
+                    "issuer_id": {
+                      "type": "number",
+                      "example": null,
+                      "description": {
+                        "en": "Issuer identifier",
+                        "pt": "Identificador do emissor",
+                        "es": "Identificador del emisor"
+                      }
+                    },
+                    "payment_method_id": {
+                      "type": "string",
+                      "example": "bolbradesco",
+                      "description": {
+                        "en": "Payment method identifier",
+                        "pt": "Identificador do meio de pagamento",
+                        "es": "Identificador del medio de pago"
+                      }
+                    },
+                    "payment_type_id": {
+                      "type": "string",
+                      "example": "ticket",
+                      "description": {
+                        "en": "Payment type identifier",
+                        "pt": "Identificador do tipo de pagamento",
+                        "es": "Identificador del tipo de pago"
+                      }
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "cancelled",
+                      "description": {
+                        "es": "Status",
+                        "pt": "Status",
+                        "en": "Status"
+                      }
+                    },
+                    "status_detail": {
+                      "type": "string",
+                      "example": "by_collector",
+                      "description": {
+                        "en": "Status detail",
+                        "pt": "Detalhe do status",
+                        "es": "Detalle del status"
+                      }
+                    },
+                    "currency_id": {
+                      "type": "string",
+                      "example": "BRL",
+                      "description": {
+                        "en": "Currency identifier",
+                        "pt": "Identificador de moeda",
+                        "es": "Identificador de moneda"
+                      }
+                    },
+                    "description": {
+                      "type": "string",
+                      "example": "Meu produto",
+                      "description": {
+                        "en": "Description",
+                        "pt": "Descrição",
+                        "es": "Descripción"
+                      }
+                    },
+                    "live_mode": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Whether the chargeback will be processed in sandbox or in production mode. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.",
+                        "pt": "Se o estorno será processada em modo sandbox ou em produção. Se TRUE, o estorno será processado em modo de produção. Se FALSE, o estorno será processado no modo sandbox.",
+                        "es": "Si la devolución será procesada en el \"sandbox\" o en el modo de producción. Si es TRUE, el contracargo se procesará en modo de producción. Si es FALSE, el contracargo se procesará en modo sandbox."
+                      }
+                    },
+                    "sponsor_id": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Sponsor identifier",
+                        "pt": "Identificador do patrocinador",
+                        "es": "Identificador de patrocinador"
+                      }
+                    },
+                    "authorization_code": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Authorization code",
+                        "pt": "Código de autorização",
+                        "es": "Código de autorización"
+                      }
+                    },
+                    "money_release_schema": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Money release schema",
+                        "pt": "Esquema de liberação de dinheiro",
+                        "es": "Esquema de liberación de dinero"
+                      }
+                    },
+                    "taxes_amount": {
+                      "type": "number",
+                      "example": 0,
+                      "description": {
+                        "en": "Tax amount",
+                        "pt": "Valor de imposto",
+                        "es": "Importe del impuesto"
+                      }
+                    },
+                    "counter_currency": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Counter currency",
+                        "pt": "Contador de moeda",
+                        "es": "Contador de moneda"
+                      }
+                    },
+                    "brand_id": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Brand identifier",
+                        "pt": "Identificador de marca",
+                        "es": "Identificador de marca"
+                      }
+                    },
+                    "shipping_amount": {
+                      "type": "number",
+                      "example": 0,
+                      "description": {
+                        "en": "Shipping amount",
+                        "pt": "Valor de envio",
+                        "es": "Valor de envío"
+                      }
+                    },
+                    "pos_id": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "POS identifier",
+                        "pt": "Identificador de POS",
+                        "es": "Identificador de POS"
+                      }
+                    },
+                    "store_id": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Store identifier",
+                        "pt": "Identificador da loja",
+                        "es": "Identificador de la tienda"
+                      }
+                    },
+                    "integrator_id": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Integrator identifier",
+                        "pt": "Identificador do integrador",
+                        "es": "Identificador del integrador"
+                      }
+                    },
+                    "platform_id": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Platform identifier",
+                        "pt": "Identificador da plataforma",
+                        "es": "Identificador de la plataforma"
+                      }
+                    },
+                    "corporation_id": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Corporation identifier",
+                        "pt": "Identificador da corporação",
+                        "es": "Identificador de la corporación"
+                      }
+                    },
+                    "collector_id": {
+                      "type": "number",
+                      "example": null,
+                      "description": {
+                        "en": "Number identifier",
+                        "pt": "Número identificador",
+                        "es": "Número identificador"
+                      }
+                    },
+                    "payers": {
+                      "type": "array",
+                      "description": {
+                        "en": "List of payers",
+                        "pt": "Lista de pagadores",
+                        "es": "Lista de pagadores"
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "first_name": {
+                            "type": "string",
+                            "example": null,
+                            "description": {
+                              "es": "First name",
+                              "pt": "First name",
+                              "en": "First name"
+                            }
+                          },
+                          "last_name": {
+                            "type": "string",
+                            "example": null,
+                            "description": {
+                              "es": "Last name",
+                              "pt": "Last name",
+                              "en": "Last name"
+                            }
+                          },
+                          "email": {
+                            "type": "string",
+                            "example": "test_user_80507629@testuser.com",
+                            "description": {
+                              "es": "E-mail",
+                              "pt": "E-mail",
+                              "en": "E-mail"
+                            }
+                          },
+                          "type": {
+                            "type": "string",
+                            "example": "collector",
+                            "description": {
+                              "en": "Type",
+                              "pt": "Tipo",
+                              "es": "Tipo"
+                            }
+                          },
+                          "identification": {
+                            "type": "array",
+                            "description": {
+                              "en": "List of identification",
+                              "pt": "Lista de identificação",
+                              "es": "Lista de identificación"
+                            },
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "number": {
+                                  "type": "string",
+                                  "example": "32659430",
+                                  "description": {
+                                    "en": "Identification number.",
+                                    "pt": "Número de identificação",
+                                    "es": "Número de identificación"
+                                  }
+                                },
+                                "type": {
+                                  "type": "string",
+                                  "example": "DNI",
+                                  "description": {
+                                    "en": "Identification type.",
+                                    "pt": "Tipo de identificação",
+                                    "es": "Tipo de identificación"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "phone": {
+                            "type": "array",
+                            "description": {
+                              "en": "List of phones",
+                              "pt": "Lista de telefones",
+                              "es": "Lista de teléfonos"
+                            },
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "area_code": {
+                                  "type": "string",
+                                  "example": null,
+                                  "description": {
+                                    "en": "Area code",
+                                    "pt": "Código de área",
+                                    "es": "Código de área"
+                                  }
+                                },
+                                "number": {
+                                  "type": "string",
+                                  "example": null,
+                                  "description": {
+                                    "en": "Number",
+                                    "pt": "O Número",
+                                    "es": "Número"
+                                  }
+                                },
+                                "extension": {
+                                  "type": "string",
+                                  "example": null,
+                                  "description": {
+                                    "en": "Extension",
+                                    "pt": "Ramal",
+                                    "es": "Extensión"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "entity_type": {
+                            "type": "string",
+                            "example": null,
+                            "description": {
+                              "en": "Entity type",
+                              "pt": "Tipo de entidade",
+                              "es": "Tipo de entidad"
+                            }
+                          },
+                          "id": {
+                            "type": "string",
+                            "example": "1003743392",
+                            "description": {
+                              "en": "Identifier",
+                              "pt": "Identificador",
+                              "es": "Identificador"
+                            }
+                          },
+                          "operator_id": {
+                            "type": "string",
+                            "example": null,
+                            "description": {
+                              "en": "Operator identifier",
+                              "pt": "Identificador do operador",
+                              "es": "Identificador del operador"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "marketplace_owner": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Marketplace owner",
+                        "pt": "Proprietário do marketplace",
+                        "es": "Propietario del marketplace"
+                      }
+                    },
+                    "metadata": {
+                      "type": "array",
+                      "description": {
+                        "en": "Contains payment metadata that is sent to us in the payment post",
+                        "pt": "Contém metadados de pagamento que nos são enviados no post de payment",
+                        "es": "Contiene metadatos del pago que nos envían en el post del payment"
+                      },
+                      "items": null
+                    },
+                    "additional_info": {
+                      "type": "array",
+                      "description": {
+                        "en": "List of additional information",
+                        "pt": "Lista de informação adicional",
+                        "es": "Lista de información adicional"
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "items": {
+                            "type": "array",
+                            "description": {
+                              "en": "List of items",
+                              "pt": "Lista de ítens",
+                              "es": "Lista de items"
+                            },
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string",
+                                  "example": "234",
+                                  "description": {
+                                    "en": "Identifier",
+                                    "pt": "Identificador",
+                                    "es": "Identificador"
+                                  }
+                                },
+                                "title": {
+                                  "type": "string",
+                                  "example": {
+                                    "en": "My product",
+                                    "pt": "Meu produto",
+                                    "es": "Mi producto"
+                                  },
+                                  "description": {
+                                    "en": "Item title.",
+                                    "pt": "Título do item",
+                                    "es": "Título del ítem"
+                                  }
+                                },
+                                "description": {
+                                  "type": "string",
+                                  "example": {
+                                    "en": "E-commerce store cellphone",
+                                    "pt": "Celular da loja online",
+                                    "es": "Celular de la tienda online"
+                                  },
+                                  "description": {
+                                    "en": "Description",
+                                    "pt": "Descrição",
+                                    "es": "Descripción"
+                                  }
+                                },
+                                "picture_url": {
+                                  "type": "string",
+                                  "example": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
+                                  "description": {
+                                    "en": "Picture URL",
+                                    "pt": "URL da imagem",
+                                    "es": "URL de la imagen"
+                                  }
+                                },
+                                "category_id": {
+                                  "type": "string",
+                                  "example": "art",
+                                  "description": {
+                                    "en": "Category identifier",
+                                    "pt": "Identificador da categoria",
+                                    "es": "Identificador de la categoría"
+                                  }
+                                },
+                                "quantity": {
+                                  "type": "string",
+                                  "example": "1",
+                                  "description": {
+                                    "en": "Quantity",
+                                    "pt": "Quantidade",
+                                    "es": "Cantidad"
+                                  }
+                                },
+                                "unit_price": {
+                                  "type": "string",
+                                  "example": "75.76",
+                                  "description": {
+                                    "en": "Unit price",
+                                    "pt": "Preço unitário",
+                                    "es": "Precio unitario"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "payer": {
+                        "type": "object",
+                        "properties": {
+                          "phone": {
+                            "type": "array",
+                            "description": {
+                              "en": "List of phone",
+                              "pt": "Lista de telefone",
+                              "es": "Lista de telefóno"
+                            },
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "area_code": {
+                                  "type": "string",
+                                  "example": "55",
+                                  "description": {
+                                    "en": "Area code",
+                                    "pt": "Código de área",
+                                    "es": "Código de área"
+                                  }
+                                },
+                                "number": {
+                                  "type": "string",
+                                  "example": "8529-1111",
+                                  "description": {
+                                    "en": "Number",
+                                    "pt": "O Número",
+                                    "es": "Número"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "address": {
+                            "type": "array",
+                            "description": {
+                              "en": "List of address",
+                              "pt": "Lista de endereços",
+                              "es": "Lista de direcciones"
+                            },
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "zip_code": {
+                                  "type": "string",
+                                  "example": "78134-190",
+                                  "description": {
+                                    "en": "Zip code",
+                                    "pt": "Código postal",
+                                    "es": "Código postal"
+                                  }
+                                },
+                                "street_name": {
+                                  "type": "string",
+                                  "example": "Insurgentes Sur",
+                                  "description": {
+                                    "en": "Street name",
+                                    "pt": "Nome da rua",
+                                    "es": "Nombre de la calle"
+                                  }
+                                },
+                                "street_number": {
+                                  "type": "string",
+                                  "example": "1200",
+                                  "description": {
+                                    "en": "Street number",
+                                    "pt": "Número da rua",
+                                    "es": "Número de la calle"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "first_name": {
+                            "type": "string",
+                            "example": "Lalo",
+                            "description": {
+                              "en": "First name",
+                              "pt": "Nome",
+                              "es": "Nombre"
+                            }
+                          },
+                          "last_name": {
+                            "type": "string",
+                            "example": "Santos",
+                            "description": {
+                              "en": "Last name",
+                              "pt": "Sobrenome",
+                              "es": "Apellido"
+                            }
+                          }
+                        }
+                      },
+                      "ip_address": {
+                        "type": "string",
+                        "example": "201.63.25.34",
+                        "description": {
+                          "en": "IP address",
+                          "pt": "Endereço do IP",
+                          "es": "Dirección IP"
+                        }
+                      },
+                      "available_balance": {
+                        "type": "string",
+                        "example": null,
+                        "description": {
+                          "en": "Available balance",
+                          "pt": "Saldo disponível",
+                          "es": "Saldo disponible"
+                        }
+                      },
+                      "nsu_processadora": {
+                        "type": "string",
+                        "example": null,
+                        "description": {
+                          "en": "NSU processadora",
+                          "pt": "Processadora NSU",
+                          "es": "Procesadora NSU"
+                        }
+                      },
+                      "authentication_code": {
+                        "type": "string",
+                        "example": null,
+                        "description": {
+                          "en": "Authentication code",
+                          "pt": "Código de autenticação",
+                          "es": "Código de autenticacion"
+                        }
+                      }
+                    },
+                    "order": {
+                      "type": "array",
+                      "description": {
+                        "en": "List of orders",
+                        "pt": "Lista de pedidos",
+                        "es": "Lista de órdenes"
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "example": "mercadopago",
+                            "description": {
+                              "en": "Type",
+                              "pt": "Tipo",
+                              "es": "Tipo"
+                            }
+                          },
+                          "id": {
+                            "type": "string",
+                            "example": "3754501423",
+                            "description": {
+                              "en": "Order identifier",
+                              "pt": "Identificador do pedido",
+                              "es": "Identificador de la orden"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "external_reference": {
+                      "type": "string",
+                      "example": "firstname@gmail.com",
+                      "description": {
+                        "en": "External Reference",
+                        "pt": "Referência externa",
+                        "es": "Referencia externa"
+                      }
+                    },
+                    "transaction_amount": {
+                      "type": "number",
+                      "example": 75.76,
+                      "description": {
+                        "en": "Transaction amount",
+                        "pt": "Valor da transação",
+                        "es": "Monto de la transacción"
+                      }
+                    },
+                    "transaction_amount_refunded": {
+                      "type": "number",
+                      "example": 0,
+                      "description": {
+                        "en": "Transaction amount refunded",
+                        "pt": "Valor reembolsado da transação",
+                        "es": "Monto reembolsado de transacción"
+                      }
+                    },
+                    "coupon_amount": {
+                      "type": "number",
+                      "example": 0,
+                      "description": {
+                        "en": "Coupon amount",
+                        "pt": "Valor do cupom",
+                        "es": "Valor de cupón"
+                      }
+                    },
+                    "differential_pricing_id": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Differential pricing identifier",
+                        "pt": "Identificador do diferencial de preço",
+                        "es": "Identificador de precio diferencial"
+                      }
+                    },
+                    "deduction_schema": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Deduction schema",
+                        "pt": "Esquema de dedução",
+                        "es": "Esquema de deducción"
+                      }
+                    },
+                    "barcode": {
+                      "type": "array",
+                      "description": {
+                        "en": "List of barcode",
+                        "pt": "Lista de códigos de barra",
+                        "es": "Lista de códigos de barra"
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "content": {
+                            "type": "string",
+                            "example": "23791883300000075763380250600221946300633330",
+                            "description": {
+                              "en": "Content",
+                              "pt": "Conteúdo",
+                              "es": "Contenido"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "installments": {
+                      "type": "number",
+                      "example": 1,
+                      "description": {
+                        "es": "Installments",
+                        "pt": "Installments",
+                        "en": "Installments"
+                      }
+                    },
+                    "transaction_details": {
+                      "type": "array",
+                      "description": {
+                        "en": "List of transaction details",
+                        "pt": "Lista de detalhes da transação",
+                        "es": "Lista de detalles de transacción"
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "payment_method_reference_id": {
+                            "type": "string",
+                            "example": "6002219463",
+                            "description": {
+                              "en": "Payment method reference identifier",
+                              "pt": "Identificador de referência do meio de pagamento",
+                              "es": "Identificador de referencia de medio de pago"
+                            }
+                          },
+                          "verification_code": {
+                            "type": "string",
+                            "example": "6002219463",
+                            "description": {
+                              "en": "Verification code",
+                              "pt": "Código de verificação",
+                              "es": "Código de verificación"
+                            }
+                          },
+                          "net_received_amount": {
+                            "type": "number",
+                            "example": 0,
+                            "description": {
+                              "en": "Net received amount",
+                              "pt": "Valor líquido recebido",
+                              "es": "Monto neto recibido"
+                            }
+                          },
+                          "total_paid_amount": {
+                            "type": "number",
+                            "example": 75.76,
+                            "description": {
+                              "en": "Total paid amount",
+                              "pt": "Valor total pago",
+                              "es": "Monto total pago"
+                            }
+                          },
+                          "overpaid_amount": {
+                            "type": "number",
+                            "example": 0,
+                            "description": {
+                              "en": "Overpaid amount",
+                              "pt": "Valor pago a mais",
+                              "es": "Monto pagado en exceso"
+                            }
+                          },
+                          "external_resource_url": {
+                            "type": "string",
+                            "example": "https://www.mercadopago.com/mlb/payments/beta/ticket/helper?payment_id=18746874919&payment_method_reference_id=6002219463&caller_id=1003743392&hash=6a8c570f-9c39-4a5c-9b55-85ae1b724bf",
+                            "description": {
+                              "en": "External resource url",
+                              "pt": "URL de recurso externo",
+                              "es": "URL de recurso externo"
+                            }
+                          },
+                          "installment_amount": {
+                            "type": "number",
+                            "example": 0,
+                            "description": {
+                              "en": "Installment amount",
+                              "pt": "Valor da parcela",
+                              "es": "Valor de la cuota"
+                            }
+                          },
+                          "financial_institution": {
+                            "type": "string",
+                            "example": null,
+                            "description": {
+                              "en": "Financial institution",
+                              "pt": "Instituição financeira",
+                              "es": "Institución financiera"
+                            }
+                          },
+                          "payable_deferral_period": {
+                            "type": "string",
+                            "example": null,
+                            "description": {
+                              "en": "Payable deferral period",
+                              "pt": "Período de diferimento a pagar",
+                              "es": "Período de aplazamiento de pago"
+                            }
+                          },
+                          "acquirer_reference": {
+                            "type": "string",
+                            "example": null,
+                            "description": {
+                              "en": "Acquirer reference",
+                              "pt": "Referência do adquirente",
+                              "es": "Referencia de adquirente"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "fee_details": {
+                      "type": "array",
+                      "description": {
+                        "en": "List of fee details",
+                        "pt": "Lista de detalhes das taxas",
+                        "es": "Lista de detalles de la tarifa"
+                      },
+                      "items": null
+                    },
+                    "charges_details": {
+                      "type": "array",
+                      "description": {
+                        "en": "List of charges details",
+                        "pt": "Lista de detalhes da cobrança",
+                        "es": "Lista de detalles de cobro"
+                      },
+                      "items": null
+                    },
+                    "captured": {
+                      "type": "boolean",
+                      "example": true,
+                      "description": {
+                        "en": "Captured flag",
+                        "pt": "Captura habilitada",
+                        "es": "Captura habilitada"
+                      }
+                    },
+                    "binary_mode": {
+                      "type": "boolean",
+                      "example": true,
+                      "description": {
+                        "en": "Binary mode flag",
+                        "pt": "Modo binário habilitado",
+                        "es": "Modo binario habilitado"
+                      }
+                    },
+                    "call_for_authorize_id": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Call for authorize identifier",
+                        "pt": "Chamada para autorizar identificador",
+                        "es": "Llamada para autorizar identificador"
+                      }
+                    },
+                    "statement_descriptor": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Statement descriptor",
+                        "pt": "Descritor de extrato bancário",
+                        "es": "Descriptor de extracto bancario"
+                      }
+                    },
+                    "card": {
+                      "type": "array",
+                      "description": {
+                        "en": "List of cards",
+                        "pt": "Lista de cartões",
+                        "es": "Lista de tarjetas"
+                      },
+                      "items": null
+                    },
+                    "notification_url": {
+                      "type": "string",
+                      "example": "https://webhook.site/17a3a5ce-28d4-4b4f-ba3f-a7595c17c6d8",
+                      "description": {
+                        "en": "Notification URL",
+                        "pt": "URL de notificação",
+                        "es": "URL de notificación"
+                      }
+                    },
+                    "refunds": {
+                      "type": "array",
+                      "description": {
+                        "en": "List of refunds",
+                        "pt": "Lista de reembolsos",
+                        "es": "Lista de reembolsos"
+                      },
+                      "items": null
+                    },
+                    "processing_mode": {
+                      "type": "string",
+                      "example": "aggregator",
+                      "description": {
+                        "en": "Processing mode",
+                        "pt": "Modo de processamento",
+                        "es": "Modo de procesamiento"
+                      }
+                    },
+                    "merchant_account_id": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Merchant account identifier",
+                        "pt": "Identificador da conta do merchant",
+                        "es": "Identificador de cuenta del merchant"
+                      }
+                    },
+                    "merchant_number": {
+                      "type": "string",
+                      "example": null,
+                      "description": {
+                        "en": "Merchant number",
+                        "pt": "Número do merchant",
+                        "es": "Número de merchant"
+                      }
+                    },
+                    "acquirer_reconciliation": {
+                      "type": "array",
+                      "description": {
+                        "en": "List of acquirer reconciliation",
+                        "pt": "Lista de reconciliação do adquirente",
+                        "es": "Lista de reconciliación de adquirente"
+                      },
+                      "items": null
+                    },
+                    "point_of_interaction": {
+                      "type": "array",
+                      "description": {
+                        "en": "List of point of interaction",
+                        "pt": "Lista de ponto de interação",
+                        "es": "Lista de punto de interacción"
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "example": "UNSPECIFIED",
+                            "description": {
+                              "en": "Type",
+                              "pt": "Tipo",
+                              "es": "Tipo"
+                            }
+                          },
+                          "business_info": {
+                            "type": "array",
+                            "description": {
+                              "en": "List of business information",
+                              "pt": "Lista de informação de negócio",
+                              "es": "Lista de información de negocio"
+                            },
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "unit": {
+                                  "type": "string",
+                                  "example": "online_payments",
+                                  "description": {
+                                    "en": "Unit",
+                                    "pt": "Unidade",
+                                    "es": "Unidad"
+                                  }
+                                },
+                                "sub_unit": {
+                                  "type": "string",
+                                  "example": "checkout_pro",
+                                  "description": {
+                                    "es": "Sub unit",
+                                    "pt": "Sub unit",
+                                    "en": "Sub unit"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "5",
+                          "description": {
+                            "en": "Must-provide-your-access-token-to -proceed",
+                            "es": "Must-provide-your-access-token-to -proceed",
+                            "pt": "Must-provide-your-access-token-to -proceed"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "2000",
+                          "description": {
+                            "en": "Payment-not-found",
+                            "es": "Payment-not-found",
+                            "pt": "Payment-not-found"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Create cancellation",
+          "pt": "Criar cancelamento",
+          "es": "Crear cancelación"
+        }
+      }
+    }
+  }
+}

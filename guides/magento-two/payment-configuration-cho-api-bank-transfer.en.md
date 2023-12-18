@@ -1,4 +1,4 @@
-# Configure bank transfer payments
+# Bank transfer
 
 With the [Checkout API](/developers/en/guides/checkout-api/landing), offer **bank transfer** payments directly in your store.
 
@@ -18,19 +18,3 @@ To integrate the payment method, follow the steps below.
 6. In **Checkout Position**, indicate the position in which the payment method will be available to the buyer in the checkout flow.
 7. In the **Redirect Payer** field, indicate whether the buyer will be automatically redirected to the bank's payment page, without having to go through an intermediate page in your store.
 8. Then click** **Save Config** to save your preferences.
-
-> PREV_STEP_CARD_EN
->
-> Configure offline payments (ticket)
->
-> Configure your store to receive payments offline (ticket and ATM) using the Checkout API.
->
-> [Ticket](/developers/en/docs/magento-two/payment-configuration/checkout-api/ticket)
-
-> NEXT_STEP_CARD_EN
->
-> Configure payments with Checkout Pro
->
-> Learn how to set up Checkout Pro to receive payments from your store.
->
-> [Configure payments with Checkout Pro](/developers/en/docs/magento-two/payment-configuration/checkout-pro)

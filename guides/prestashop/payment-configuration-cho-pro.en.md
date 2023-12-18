@@ -1,6 +1,6 @@
-# Configure payments Checkout Pro
+# Checkout Pro
  
-With [Checkout Pro](/developers/en/guides/checkout-pro/landing), the buyer will be directed from the store to the Mercado Pago website where he must fill in the requested information and make the payment. This way, the transaction is processed and completed outside your store environment. It is not necessary for the buyer to have a Mercado Pago account and, at the end of the transaction, the buyer can be returned to your store.
+With [Checkout Pro](/developers/en/docs/checkout-pro/landing), the buyer will be directed from the store to the Mercado Pago website where he must fill in the requested information and make the payment. This way, the transaction is processed and completed outside your store environment. It is not necessary for the buyer to have a Mercado Pago account and, at the end of the transaction, the buyer can be returned to your store.
  
 To integrate Checkout Pro, follow the steps below.
  
@@ -9,7 +9,7 @@ To integrate Checkout Pro, follow the steps below.
  ----[mlb]----
  * Debit and credit cards;
  * Cash (Mercado Pago account or boleto bancário);
- * Bank transfer (Pix and PEC). The Pix payment option will only be displayed if there is a [Pix key registered](/developers/en/guides/checkout-api/receiving-payment-by-pix) on Mercado Pago.
+ * Bank transfer (Pix and PEC). The Pix payment option will only be displayed if there is a Pix key registered in Mercado Pago. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps.
  ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
  * Debit and credit cards;
@@ -25,20 +25,9 @@ To integrate Checkout Pro, follow the steps below.
 
 Ready! Mercado Pago Checkout Pro is ready to receive payments from your store.
 
+----[mlb]----
+> If you want to use the Checkout Transparente to receive payments in the store, see the section [Configure payments with Checkout Transparente](/developers/en/docs/prestashop/payment-configuration/checkout-api/introduction)
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
 > If you want to use the Checkout API to receive payments in the store, see the section [Configure payments with Checkout API](/developers/en/docs/prestashop/payment-configuration/checkout-api/introduction)
-
-> PREV_STEP_CARD_EN
->
-> Payment configuration
->
-> Learn how to configure Mercado Pago checkouts to receive payments from your store.
->
-> [Payment configuration](/developers/en/docs/prestashop/payment-configuration)
-
-> NEXT_STEP_CARD_EN
->
-> Test payments
->
-> Learn how to make a test purchase and ensure the integration works.
->
-> [Test payments](/developers/en/docs/prestashop/sales-processing/integration-test)
+------------

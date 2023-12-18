@@ -4,9 +4,14 @@ En este método de integración, el responsable de la integración se encarga de
 
 En la integración vía Métodos Core, el integrador decide cuándo buscar información sobre el tipo de documento, además de la información de la tarjeta (emisor y cuotas). De esta forma, tiene total flexibilidad para construir la experiencia del flujo de pago.
 
+> NOTE
+>
+> Importante
+>
+> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de CardPayment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de CardPayment para obtener más detalles.
+
+
 Consulta el diagrama que ilustra el proceso de pago con tarjeta a través de los Métodos Core.
-
-
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-es.png)
 
@@ -14,22 +19,23 @@ Consulta el diagrama que ilustra el proceso de pago con tarjeta a través de los
 
 La primera etapa del proceso de integración de los pagos con tarjeta es la **captura de los datos de la tarjeta**. Esta captura se realiza a través de la inclusión de la biblioteca MercadoPago.js en tu proyecto, seguida del formulario de pago. Utiliza el siguiente código para importar la biblioteca MercadoPago.js antes de añadir el formulario de pago.
 
-
 [[[
 ```html
 <body>
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
 ```
-]]]
+```bash
+npm install @mercadopago/sdk-js
 
+```
+]]]
 
 > NOTE
 >
 > Importante
 >
 > La información de la tarjeta se convertirá en un token para enviar los datos a tus servidores de forma segura.
-
 
 ## Configurar credencial
 
@@ -38,10 +44,17 @@ Las credenciales son claves únicas con las que identificamos una integración e
 Esta es la primera etapa de una estructura de código completa que se debe seguir para integrar correctamente los pagos con tarjeta. Presta atención a los siguientes bloques para añadirlos a los códigos como se indica.
 
 [[[
+```html
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+```
 ```javascript
-  <script>
-    const mp = new MercadoPago("YOUR_PUBLIC_KEY");
-  </script>
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 
@@ -51,6 +64,7 @@ La captura de los datos de la tarjeta (número de tarjeta, código de seguridad 
 
 Para obtener estos datos y procesar los pagos, inserta el siguiente HTML directamente en tu proyecto.
 
+----[mla, mlu, mpe, mco, mlb, mlc]----
 [[[
 ```html
 
@@ -73,9 +87,9 @@ Para obtener estos datos y procesar los pagos, inserta el siguiente HTML directa
     <div id="form-checkout__cardNumber" class="container"></div>
     <div id="form-checkout__expirationDate" class="container"></div>
     <div id="form-checkout__securityCode" class="container"></div>
-    <input type="text" id="form-checkout__cardholderName" placeholder="Titular do cartão" />
+    <input type="text" id="form-checkout__cardholderName" placeholder="Titular de la tarjeta" />
     <select id="form-checkout__issuer" name="issuer">
-      <option value="" disabled selected>Banco emissor</option>
+      <option value="" disabled selected>Banco emisor</option>
     </select>
     <select id="form-checkout__installments" name="installments">
       <option value="" disabled selected>Cuotas</option>
@@ -95,6 +109,51 @@ Para obtener estos datos y procesar los pagos, inserta el siguiente HTML directa
   </form>
 ```
 ]]]
+
+------------
+----[mlm]----
+[[[
+```html
+
+  <style>
+    #form-checkout {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+    }
+
+    .container {
+      height: 18px;
+      display: inline-block;
+      border: 1px solid rgb(118, 118, 118);
+      border-radius: 2px;
+      padding: 1px 2px;
+    }
+  </style>
+  <form id="form-checkout" action="/process_payment" method="POST">
+    <div id="form-checkout__cardNumber" class="container"></div>
+    <div id="form-checkout__expirationDate" class="container"></div>
+    <div id="form-checkout__securityCode" class="container"></div>
+    <input type="text" id="form-checkout__cardholderName" placeholder="Titular de la tarjeta" />
+    <select id="form-checkout__issuer" name="issuer">
+      <option value="" disabled selected>Banco emisor</option>
+    </select>
+    <select id="form-checkout__installments" name="installments">
+      <option value="" disabled selected>Cuotas</option>
+    </select>
+    <input type="email" id="form-checkout__email" name="email" placeholder="E-mail" />
+
+    <input id="token" name="token" type="hidden">
+    <input id="paymentMethodId" name="paymentMethodId" type="hidden">
+    <input id="transactionAmount" name="transactionAmount" type="hidden" value="100">
+    <input id="description" name="description" type="hidden" value="Nome do Produto">
+
+    <button type="submit" id="form-checkout__submit">Pagar</button>
+  </form>
+```
+]]]
+
+------------
 
 ## Inicializar campos de tarjeta
 
@@ -117,12 +176,12 @@ Una vez finalizada la inicialización de los campos, los divs contendrán los if
 ```
 ]]]
 
+----[mla, mlu, mpe, mco, mlb, mlc]----
 ## Obtener tipos de documentos
 
 Después de configurar la credencial, añadir el formulario de pago y inicializar los campos de tarjeta, es necesario obtener los tipos de documentos que se utilizarán para rellenar el formulario de pago.
 
 Al incluir el elemento del tipo `select` con el id: `form-checkout__identificationType`  que se encuentra en el formulario, será posible completar automáticamente las opciones disponibles al llamar la siguiente función.
-
 
 [[[
 ```javascript
@@ -161,10 +220,11 @@ Al incluir el elemento del tipo `select` con el id: `form-checkout__identificati
 ```
 ]]]
 
+------------
+
 ## Obtener métodos de pago de la tarjeta
 
 En esta etapa se validan los datos de los compradores cuando rellenan los campos necesarios para realizar el pago. Para poder identificar el método de pago utilizado por el comprador, introduce el siguiente código directamente en tu proyecto. 
-
 
 [[[
 ```javascript
@@ -246,7 +306,6 @@ Al rellenar el formulario de pago, es posible identificar el banco emisor de la 
 
 El banco emisor se obtiene a través del parámetro `issuer_id`. Para obtenerlo, utiliza el Javascript que se indica a continuación.
 
-
 [[[
 ```javascript
 
@@ -272,11 +331,9 @@ El banco emisor se obtiene a través del parámetro `issuer_id`. Para obtenerlo,
 ```
 ]]]
 
-
 ## Obtener cantidad de cuotas
 
 Uno de los campos obligatorios que componen el formulario de pago es la **cantidad de cuotas**. Para activarlo y mostrar las cuotas disponibles a la hora de efectuar el pago, utiliza la siguiente función. 
-
 
 [[[
 ```javascript
@@ -302,12 +359,11 @@ Uno de los campos obligatorios que componen el formulario de pago es la **cantid
 
 El token de la tarjeta se crea a partir de la información de la misma, lo que aumenta la seguridad durante el flujo de pago. Además, después de que el token se utiliza en una compra determinada, este es descartado y se debe crear uno nuevo para futuras compras. Para crear el token de la tarjeta, utiliza la siguiente función.
 
-
 > NOTE
 >
 > Importante
 >
-> El método `createCardToken` devuelve un token con la representación segura de los datos de la tarjeta, además tomaremos el ID del token de la respuesta y lo guardaremos en una input oculto denominado`token` para enviar posteriormente el formulario a los servidores.
+> El método `createCardToken` devuelve un token con la representación segura de los datos de la tarjeta. Tomaremos el ID del token de la respuesta y lo guardaremos en una input oculto denominado`token` para enviar posteriormente el formulario a los servidores. Además, ten en cuenta que el **token tiene una validez de 7 días** y solo se **puede usar una vez**.
 
 [[[
 ```javascript
@@ -341,13 +397,11 @@ Para finalizar el proceso de integración de pagos con tarjeta, es necesario que
 
 Con toda la información recopilada en el backend, envíe un POST con los atributos necesarios, prestando atención a los parámetros `token, `transaction_amount`, `installments`, `payment_method_id` y `payer.email` al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecute la solicitud o, si lo prefieres, envía la información utilizando los SDKs que aparecen a continuación.
 
-
 > NOTE
 >
 > Importante
 >
 > Para aumentar las posibilidades de aprobación del pago y evitar que el análisis antifraude no autorice la transacción, recomendamos introducir toda la información posible sobre el comprador al realizar la solicitud. Para más detalles sobre cómo aumentar las posibilidades de aprobación, consulta [Cómo mejorar la aprobación de los pagos](/developers/es/docs/checkout-api/how-tos/improve-payment-approval).
-
 
 [[[
 ```php
@@ -572,23 +626,6 @@ curl -X POST \
 >
 > Importante
 >
-> Al crear un pago es posible recibir 3 estados diferentes: "Pendiente", "Rechazado" y "Aprobado". Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-api/additional-content/notifications/introduction) para obtener más detalles.
+> Al crear un pago es posible recibir 3 estados diferentes: "Pendiente", "Rechazado" y "Aprobado". Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-api/additional-content/your-integrations/notifications) para obtener más detalles.
 
 Al finalizar, podrás realizar pruebas y asegurarte de que la integración funciona correctamente.
-
-> PREV_STEP_CARD_ES
->
-> Requisitos previos
->
-> Consulta los requisitos previos que se necesitan para integrar Checkout API.
->
-> [Integrar Checkout API](/developers/es/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_ES
->
-> Prueba de integración
->
-> Aprende cómo probar la integración de Checkout API en tu tienda.
->
-> [Prueba de integración](/developers/es/docs/checkout-api/test-integration/create-test-user)

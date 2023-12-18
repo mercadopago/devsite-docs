@@ -3,7 +3,7 @@
 Após realizar a integração e fazer os devidos testes, sua loja já está pronta para entrar em produção. Para começar a receber pagamentos é necessário ativar o modo Produção. Para isso, siga os procedimentos abaixo.
 
 1. No Painel Administrativo da sua loja na Prestashop, acesse o menu **Módulos e serviços**, localize o módulo do Mercado Pago e clique em **configurar**.
-2. Na tela de gerenciamento do módulo, confirme se as [credenciais](/developers/pt/guides/additional-content/credentials/credentials) de produção são as mesmas da conta que você recebe o dinheiro das vendas. Essa informação poderá ser visualizada em seu [Dashboard](/developers/pt/guides/additional-content/dashboard/introduction).
+2. Na tela de gerenciamento do módulo, confirme se as [credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) de produção são as mesmas da conta que você recebe o dinheiro das vendas. Essa informação poderá ser visualizada em seu [Dashboard](/developers/pt/guides/additional-content/your-integrations/introduction).
 3. Em seguida, clique em **sim** para ativar o modo Produção. 
 
 Pronto! O módulo do Mercado Pago está pronto para receber pagamentos online.
@@ -17,11 +17,3 @@ Pronto! O módulo do Mercado Pago está pronto para receber pagamentos online.
 > Existem alguns motivos que podem impactar diretamente na aprovação dos pagamentos na sua loja. Veja mais informações em [Motivos de recusas de pagamentos](/developers/pt/docs/prestashop/additional-content/reasons-for-refusals).
 
 ![Status de pagamento](/images/prestashop/status_pt.png)
-
-> PREV_STEP_CARD_PT
->
-> Testar os pagamentos
->
-> Saiba como realizar uma compra teste e garantir o funcionamento da integração.
->
-> [Testar os pagamentos](/developers/pt/docs/prestashop/sales-processing/integration-test)

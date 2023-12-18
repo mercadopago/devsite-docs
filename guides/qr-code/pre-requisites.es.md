@@ -1,4 +1,4 @@
-# Requisitos previos para tu integración
+# Requisitos previos
 
 Ten en cuenta estos aspectos antes de empezar:
 
@@ -7,7 +7,6 @@ Ten en cuenta estos aspectos antes de empezar:
 * Genera usuarios de prueba
 * Obtén tu Access token
 * Identifica tu integración
-
 
 ## 1. Accede a una cuenta
 
@@ -28,29 +27,15 @@ Es fácil, te contamos cómo hacerlo:
 3. Ponle un nombre con el que puedas identificarla más adelante.
 4. Acepta nuestros Términos y Condiciones. ¡Y listo!
 
-
 > NOTE
 >
 > Nota
 >
-> En caso de PDV integrador con varias conexiones con cuentas Mercado Pago, ver tema 4 y 5. Atención a la seguridad de tu integración e implementa [Oauth](/developers/es/docs/qr-code/additional-content/security/oauth/introduction).
-
+> En caso de PDV integrador con varias conexiones con cuentas Mercado Pago, ver tema 4 y 5. Atención a la seguridad de tu integración e implementa [Oauth.](/developers/es/docs/qr-code/additional-content/security/oauth/introduction)
 
 ## 3. Genera usuarios de prueba
 
-Para comenzar la integración es necesario que tengas como mínimo dos usuarios: un comprador y un vendedor.
-
-Para crearlos, accede a [Crear usuarios de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/test_user/_users_test_user/post) en nuestra referencia de API. Allí encontrarás toda la información que necesitas.
-
-> WARNING
->
-> IMPORTANTE
->
-> * Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Por eso, te recomendamos guardar el email y password de cada uno.
-> * Los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago.
-> * Para hacer pagos de prueba te recomendamos usar montos bajos.
-> * Tanto el comprador como el vendedor deben ser usuarios de prueba.
-> * Usa tarjetas de pruebas, ya que no es posible retirar el dinero.
+[TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
 
 Una vez creados los usuarios de prueba, ya puedes comenzar con la integración y crear las sucursales y cajas.
 
@@ -59,8 +44,6 @@ Una vez creados los usuarios de prueba, ya puedes comenzar con la integración y
 Si eres un integrador que trabajará con varios comercios para que operen con Mercado Pago, te recomendamos realizar el proceso **OAuth - autenticación entre cuentas**. Este proceso consiste en que el cliente permita que sus datos sean compartidos con un sistema de terceros de forma segura.
 
 El access token no se puede compartir de ninguna otra forma que no sea mediante OAuth.
-
-
 
 ## 5. Identifica tu integración (Sponsor ID)
 
@@ -72,5 +55,3 @@ Paso a paso:
 > * Obtén la identificación del usuario (Cust ID o User ID) de su cuenta.
 > * Incluye el ID de usuario de su cuenta de integrador dentro del sponsor ID del vendedor.
 > * Envía el sponsor ID en todas las transacciones QR. [Ver API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post).
-
----

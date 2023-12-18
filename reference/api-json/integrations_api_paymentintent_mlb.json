@@ -1,0 +1,420 @@
+{
+  "url": "https://api.mercadopago.com",
+  "paths": {
+    "/point/integration-api/devices/{deviceid}/payment-intents": {
+      "post": {
+        "tags": [
+          "mp-point"
+        ],
+        "description": {
+          "en": "This endpoint allows to create a payment intent, which is a call that contains all the details of a transaction, and assign it to a device.",
+          "pt": "Este endpoint permite que você crie uma intenção de pagamento, ou seja, uma chamada que contém os detalhes de uma transação a ser realizada e atribuí-la a um dispositivo.",
+          "es": "Este endpoint permite crear una intención de pago, es decir, un llamado que contiene los detalles de una transacción a realizarse, y asignarla a un dispositivo."
+        },
+        "parameters": [
+          {
+            "name": "x-test-scope",
+            "in": "header",
+            "description": {
+              "en": "This is a temporary header. It should be used only in the development stage with the value \"sandbox\"",
+              "es": "Este es un header temporal. Debe usarse sólo para la etapa de desarrollo con el valor \"sandbox\"",
+              "pt": "Este é um header temporário. Deve ser usado apenas para desenvolvimento com o valor \"sandbox\""
+            },
+            "schema": {
+              "type": "string",
+              "example": "sandbox"
+            }
+          },
+          {
+            "name": "deviceId",
+            "in": "path",
+            "description": {
+              "en": "Identifier of the device that will receive the payment intent",
+              "es": "Identificador del dispositivo que recibirá la intención de pago",
+              "pt": "Identificador do dispositivo que irá receber a intenção de pagamento"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "{deviceId}"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "amount": {
+                    "type": "integer",
+                    "format": "int64",
+                    "required": true,
+                    "example": 1500,
+                    "minimum": 1,
+                    "description": {
+                      "en": "A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75).",
+                      "pt": "Um valor inteiro positivo que representa quanto carregar. O valor deve ter duas casas decimais na parte inteira (por exemplo, 175 para cobrar R$ 1,75).",
+                      "es": "Un valor entero positivo que representa cuánto cobrar. El valor debe tener dos decimales en la parte entera (por ejemplo, 175 para cobrar $1,75)."
+                    }
+                  },
+                  "description": {
+                    "type": "string",
+                    "example": "your payment intent description",
+                    "description": {
+                      "en": "Payment intent description",
+                      "pt": "Descrição da intenção de pagamento",
+                      "es": "Descripción de la intención de pago"
+                    }
+                  },
+                  "payment": {
+                    "type": "object",
+                    "description": {
+                      "en": "Properties of the payment intent",
+                      "pt": "Propriedades da intenção de pagamento",
+                      "es": "Propiedades de la intención de pago"
+                    },
+                    "properties": {
+                      "installments": {
+                        "type": "integer",
+                        "example": 1,
+                        "description": {
+                          "en": "An integer value that must be between 1 and 72, this value can be setted only if type field is equal to [credit_card]",
+                          "pt": "Um valor inteiro que deve estar entre 1 e 72, este valor pode ser configurado somente se o campo type for igual a [credit_card]",
+                          "es": "Un valor entero que debe estar entre 1 y 72, este valor se puede configurar sólo si el campo de tipo es igual a [credit_card]"
+                        }
+                      },
+                      "type": {
+                        "type": "string",
+                        "example": "credit_card",
+                        "description": {
+                          "en": "An alphanumeric value that must be [credit_card], [debit_card] or [voucher_card]",
+                          "pt": "Um valor alfanumérico que deve ser [credit_card], [debit_card] ou [voucher_card]",
+                          "es": "Un valor alfanumérico que debe ser [credit_card, [debit_card] o [voucher_card]"
+                        }
+                      },
+                      "installments_cost": {
+                        "type": "string",
+                        "example": "seller",
+                        "description": {
+                          "en": "A string value that must be [seller] or [buyer]. This value can be setted only if type field is equal to [credit_card]",
+                          "es": "Un valor de string que debe ser [seller] o [buyer]. Este valor se puede establecer sólo si el campo de tipo es igual a [credit_card]",
+                          "pt": "Um valor de string que deve ser [seller] ou [buyer]. Esse valor pode ser definido somente se o campo de tipo for igual a [credit_card]"
+                        }
+                      },
+                      "voucher_type": {
+                        "type": "string",
+                        "description": {
+                          "en": "A string value that must be [sodexo] or [alelo]. This value can be setted only if type field is equal to [voucher_card]",
+                          "es": "Un valor de string que debe ser [sodexo] o [alelo]. Este valor se puede configurar sólo si el campo de tipo es igual a [voucher_card]",
+                          "pt": "Um valor de string que deve ser [sodexo] ou [alelo]. Esse valor pode ser configurado somente se o campo tipo for igual a [voucher_card]"
+                        }
+                      }
+                    },
+                    "example": {
+                      "installments": 1,
+                      "type": "credit_card",
+                      "installments_cost": "buyer"
+                    }
+                  },
+                  "additional_info": {
+                    "type": "object",
+                    "description": {
+                      "en": "Payment intent additional info",
+                      "pt": "Informações adicionais de intenção de pagamento",
+                      "es": "Información adicional de intención de pago"
+                    },
+                    "properties": {
+                      "external_reference": {
+                        "type": "string",
+                        "example": "4561ads-das4das4-das4754-das456",
+                        "description": {
+                          "en": "An alphanumeric value can be an identificator in your application. It will be returned in the Webhook notification",
+                          "pt": "Um valor alfanumérico pode ser um identificador em seu aplicativo. Ele será retornado na notificação do Webhook.",
+                          "es": "Un valor alfanumérico puede ser un identificador en tu aplicación. Se devolverá en la notificación de Webhook."
+                        }
+                      },
+                      "print_on_terminal": {
+                        "type": "boolean",
+                        "example": true,
+                        "description": {
+                          "en": "A boolean value that determines if you want to print the ticket on the device",
+                          "pt": "Um valor booleano que determina se você deseja imprimir o ticket no dispositivo",
+                          "es": "Un valor booleano que determina si deseas imprimir el ticket en el dispositivo"
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": [
+                  "amount"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "en": "Success - Payment intent succesfully created",
+              "pt": "Sucesso - intenção de pagamento criada com sucesso",
+              "es": "Éxito - intención de pago creada con éxito"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "example": "7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1",
+                      "description": {
+                        "en": "Payment intent identifier",
+                        "pt": "Identificador de intenção de pagamento",
+                        "es": "Identificador de intención de pago"
+                      }
+                    },
+                    "device_id": {
+                      "type": "string",
+                      "example": "PAX_A910__SMARTPOS1234345545",
+                      "description": {
+                        "en": "Identifier of the device to which the payment intent was assigned",
+                        "pt": "Identificador do dispositivo ao qual a intenção de pagamento foi atribuída",
+                        "es": "Identificador del dispositivo al que se asignó la intención de pago"
+                      }
+                    },
+                    "amount": {
+                      "type": "integer",
+                      "format": "int64",
+                      "example": 1500,
+                      "description": {
+                        "en": "Payment intent amount",
+                        "pt": "Valor da intenção de pagamento",
+                        "es": "Importe de la intención de pago"
+                      }
+                    },
+                    "description": {
+                      "type": "string",
+                      "example": "your payment intent description",
+                      "description": {
+                        "en": "Payment intent description",
+                        "pt": "Descrição da intenção de pagamento",
+                        "es": "Descripción de la intención de pago"
+                      }
+                    },
+                    "payment": {
+                      "type": "object",
+                      "properties": {
+                        "installments": {
+                          "type": "integer",
+                          "example": 1,
+                          "description": {
+                            "en": "An integer value that must be between 1 and 72, this value can be setted only if type field is equal to [credit_card]",
+                            "pt": "Um valor inteiro que deve estar entre 1 e 72, este valor pode ser configurado somente se o campo type for igual a [credit_card]",
+                            "es": "Un valor entero que debe estar entre 1 y 72, este valor se puede configurar sólo si el campo de tipo es igual a [credit_card]"
+                          }
+                        },
+                        "type": {
+                          "type": "string",
+                          "example": "credit_card",
+                          "description": {
+                            "en": "An alphanumeric value that must be one of this [credit_card], [debit_card] or [voucher_card]",
+                            "pt": "Um valor alfanumérico que deve ser um destes [credit_card], [debit_card] ou [voucher_card]",
+                            "es": "Un valor alfanumérico que debe ser uno de estos [credit_card], [debit_card] o [voucher_card]"
+                          }
+                        },
+                        "installments_cost": {
+                          "type": "string",
+                          "example": "seller",
+                          "description": {
+                            "en": "A string value that must be one of this [seller] or [buyer]. This value can be setted only if type field is equal to [credit_card]",
+                            "pt": "Um valor de string que deve ser um destes [seller] ou [buyer]. Esse valor pode ser definido somente se o campo de tipo for igual a [credit_card]",
+                            "es": "Un valor de string que debe ser uno de este [seller] o [buyer]. Este valor se puede establecer sólo si el campo de tipo es igual a [credit_card]"
+                          }
+                        }
+                      }
+                    },
+                    "additional_info": {
+                      "type": "object",
+                      "properties": {
+                        "external_reference": {
+                          "type": "string",
+                          "example": "someone-reference-from-your-application",
+                          "description": {
+                            "en": "An alphanumeric value can be an identificator in your application. It will be returned in the Webhook notification",
+                            "pt": "Um valor alfanumérico pode ser um identificador em seu aplicativo. Ele será retornado na notificação do Webhook.",
+                            "es": "Un valor alfanumérico puede ser un identificador en tu aplicación. Se devolverá en la notificación de Webhook."
+                          }
+                        },
+                        "print_on_terminal": {
+                          "type": "boolean",
+                          "example": true,
+                          "description": {
+                            "en": "A boolean value that determines if you want to print the ticket on the device",
+                            "pt": "Um valor booleano que determina se você deseja imprimir o ticket no dispositivo",
+                            "es": "Un valor booleano que determina si desea imprimir el ticket en el dispositivo"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad request - Field is missing o incorrect",
+                            "es": "Bad request - Field is missing o incorrect",
+                            "pt": "Bad request - Field is missing o incorrect"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "401",
+                          "description": {
+                            "en": "Unauthorized - Token is invalid",
+                            "es": "Unauthorized - Token is invalid",
+                            "pt": "Unauthorized - Token is invalid"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "403",
+                          "description": {
+                            "en": "Forbidden - Integrator isn't registered",
+                            "es": "Forbidden - Integrator isn't registered",
+                            "pt": "Forbidden - Integrator isn't registered"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "409",
+                          "description": {
+                            "en": "Conflict error - Device has a queued payment intent",
+                            "es": "Conflict error - Device has a queued payment intent",
+                            "pt": "Conflict error - Device has a queued payment intent"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Internal server error",
+                            "es": "Internal server error",
+                            "pt": "Internal server error"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Create payment intent",
+          "pt": "Criar intenção de pagamento",
+          "es": "Crear intención de pago"
+        }
+      }
+    }
+  }
+}

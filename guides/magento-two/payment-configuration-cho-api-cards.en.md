@@ -1,4 +1,4 @@
-# Configure card payments
+# Cards
 
 With the [Checkout API](/developers/en/guides/checkout-api/landing), offer payments with **credit or debit cards** (available in the country where the store is installed) directly in your store, without the buyer needs to be redirected to make the payment.
 
@@ -15,19 +15,3 @@ To integrate the payment method, follow the steps below.
 9. In the **Cards saved in Mercado Pago** field, indicate whether you want the buyer to have the option of saving their card information for future payments or using their balance on Mercado Pago to make payments. Customers pay faster and you increase conversion using this feature.
 10. Click on **Set up installment and interest** to [set up in Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/costs-section#from-section=menu) the rate that will be paid in each purchase and also offer interest-free installments to your customers.
 11. Then click** **Save Config** to save your preferences.
-
-> PREV_STEP_CARD_EN
->
-> Configure payments with Checkout API
->
-> Learn how to configure the Checkout API to receive payments in your store.
->
-> [Checkout API](/developers/en/docs/magento-two/payment-configuration/checkout-api)
-
-> NEXT_STEP_CARD_EN
->
-> Configure offline payments (ticket)
->
-> Configure your store to receive payments offline (ticket and ATM) using the Checkout API.
->
-> [Ticket](/developers/en/docs/magento-two/payment-configuration/checkout-api/ticket)

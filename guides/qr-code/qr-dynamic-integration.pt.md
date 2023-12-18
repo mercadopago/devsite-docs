@@ -6,7 +6,6 @@ Para cobrar através de um QR Modelo Dinâmico, você precisará criar um pedido
 
 Assim é como o modelo dinâmico funciona:
 
-
 1. Um pedido com todos os dados de pagamento necessários é criado.
 2. A resposta incluirá uma string de dados com o atributo `qr_data'.
 3. Um código QR com o atributo recebido é gerado.
@@ -20,11 +19,9 @@ Antes de mais nada, gere a publicação do pedido. Assim que os dados forem envi
 
 Para gerar um pedido, acesse nossa [Referência de API](/developers/pt/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/post)  e execute a curl encontrada na mesma. Na resposta, você receberá os dados necessários para criar o código QR.
 
-
 ----[mco]----
 > Se você tiver que pagar IVA pelos produtos em seu pedido, consulte a [seção Considerações IVA Colômbia](/developers/en/guides/additional-content/localization/iva-colombia).
 ------------
-
 
 > NOTE
 >
@@ -34,16 +31,15 @@ Para gerar um pedido, acesse nossa [Referência de API](/developers/pt/reference
 
 **Resposta**
 
-Json
+```json
 {
   "qr_data": "00020101021243650016COM.MERCADOLIBRE02013063638f1192a-5fd1-4180-a180-8bcae3556bc35204000053039865802BR5925IZABEL AAAA DE MELO6007BARUERI62070503***63040B6D"
 }
 ```
+
 A resposta será uma string com o padrão EMVCo. Utilize o `qr_data` para disponibilizar o código QR com um gerador ou através da sua aplicação.
 
 ----[mlb]----
-
-
 Se você tiver uma **chave Pix configurada** na sua conta Mercado Pago, a estrutura da string terá dados referentes a Pix.
 Por exemplo:
 
@@ -54,7 +50,6 @@ Por exemplo:
 ```
 
 ------------
-
 
 ## Criar um pedido associado a uma caixa
 
@@ -68,4 +63,4 @@ As notificações IPN (Instant Payment Notification) são a **forma automática 
 
 Implemente o IPN de `merchant_order` com uma busca do pedido por `external_reference` como um método de contingência.
 
-[Receber notificações IPN](/developers/pt/docs/qr-code/additional-content/notifications/ipn)
+[Receber notificações IPN](/developers/pt/docs/qr-code/additional-content/your-integrations/notifications/ipn)

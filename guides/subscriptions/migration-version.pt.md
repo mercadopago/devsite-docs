@@ -12,7 +12,7 @@ A nova versão tem uma arquitetura superior e conta com notificações por e-mai
 * Cobrança de assinatura;
 * Alteração de planos. 
 
-Além das notificações por e-mail, a nova versão também conta com [Webhooks](/developers/pt/guides/additional-content/notifications/webhooks/webhooks) para `plans`, `subscriptions` e `invoices`.
+Além das notificações por e-mail, a nova versão também conta com [Webhooks](/developers/pt/guides/additional-content/your-integrations/notifications/webhooks) para `plans`, `subscriptions` e `invoices`.
 
 > WARNING
 > 
@@ -45,11 +45,3 @@ curl --location
 > Importante
 > 
 > Vamos notificá-lo por e-mail quando chegar a data limite da sua migração. É importante que você se programe e tenha as mudanças preparadas para a migração, pois todos os `Plans` e `Subscriptions`com status **cancelled**, **inactive** e/ou **finished**, bem como `Ìnvoices` com mais de seis meses, não serão migrados. 
-
-> PREV_STEP_CARD_PT 
->
-> Processamento de vendas
->
-> Saiba realizar a gestão dos pagamentos, estornos e reembolsos.
->
-> [Realizar compra teste](/developers/pt/docs/subscriptions/production-mode/sales-processing/cancellations-and-refunds)

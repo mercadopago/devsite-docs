@@ -24,8 +24,7 @@ Assim que o pedido for criado, ele estará disponível para ser **escaneado e pa
 >
 > Nota
 >
-> No caso de não ter carregado anteriormente o nome ou logotipo de seu negócio em [ sua conta Mercado Pago](https://www.mercadopago.com.br/settings/account), o título e a imagem do pedido exibidos ao cliente no aplicativo serão os do primeiro item carregado.
-
+> No caso de não ter carregado anteriormente o nome ou logotipo de seu negócio em [ sua conta Mercado Pago,](https://www.mercadopago.com.br/settings/account) o título e a imagem do pedido exibidos ao cliente no aplicativo serão os do primeiro item carregado.
 
 ## Eliminar um pedido
 
@@ -39,5 +38,4 @@ As notificações IPN **(Instant Payment Notification)** são a **forma automát
 
 Implemente o IPN de `merchant_order` com uma pesquisa de pedido por `external_reference` como um método de contingência.
 
-[Receber notificações IPN](/developers/pt/docs/qr-code/additional-content/notifications/ipn)
-
+[Receber notificações IPN](/developers/pt/docs/qr-code/additional-content/your-integrations/notifications/ipn)

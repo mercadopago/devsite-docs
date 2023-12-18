@@ -1,13 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
 # Pagamentos QR modelo comprador
 
 > WARNING
@@ -15,8 +5,6 @@ sites_supported:
 > Contato comercial necessário
 >
 > Você deve acionar nosso time comercial para que sua conta seja habilitada e tenha permissão para cobrança por meio deste modelo de serviço.
-
-
 
 ## O que é o QR modelo comprador?
 
@@ -39,15 +27,6 @@ As principais características são:
 - Permite pagamentos offline (sem conexão com a internet) para o pagador. 
 - Ao enviar a API de cobrança, a validação do pagamento acontecerá de forma sincronizada.
 
----
+## Integração
 
-## Próximos passos
-
-
-> LEFT_BUTTON_REQUIRED_PT
->
-> Como integrar QR modelo Comprador
->
-> Acesse o passo-a-passo para integração.
->
-> [Como integrar QR modelo Comprador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/qr-buyer/qr-buyer-part-b)
+Para integrar este modelo de cobrança, acesse a documentação de [Integrar QR modelo comprador](/developers/pt/docs/qr-code/qr-buyer/qr-buyer-part-b).

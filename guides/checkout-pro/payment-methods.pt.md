@@ -1,23 +1,135 @@
 # Meios de pagamento
 
-Com as preferências criadas, é possível customizar a integração do Checkout Pro e determinar os meios de pagamento que serão aceitos.
+Por padrão, todos os meios de pagamento são oferecidos no Checkout Pro. Por meio da preferência de pagamento, você pode configurar um meio de pagamento padrão para ser renderizado, excluir algum indesejado, ou ainda escolher um número máximo de parcelas a serem ofertadas.
 
-Através de um GET no endpoint [/v1/payment_methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payment_methods/_payment_methods/get), você pode ter acesso à lista de cada uma das opções disponíveis e com ela, definir se deseja, por exemplo, excluir um meio de pagamento ou definir um número máximo de parcelas para uma compra.
+Na tabela abaixo detalhamos os atributos de preferência e a descrição de cada um deles para que você possa definir qual informação deseja alterar e/ou inserir.
 
-Para definir os meios de pagamento que serão oferecidos, envie o atributo `payment_methods` informando o meio de pagamento que será oferecido ao endpoint [/checkout/preferences](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição ou, se preferir veja [SDKs](developers/pt/docs/sdks-library/landing) e realize a integração utilizando nossas bibliotecas.
 
-> PREV_STEP_CARD_PT
->
-> Vigência da preferência 
->
-> Saiba como definir o período de validade para determinada preferência de pagamento.
->
-> [Vigência da preferência](/developers/pt/docs/checkout-pro/checkout-customization/preferences/term-of-preference)
+| Atributo de preferência | Descrição |
+| --- | --- |
+| `payment_methods` | Classe que descreve os atributos e métodos de meios de pagamento do Checkout Pro. |
+| `excluded_payment_types` | Método que exclui meios de pagamento indesejados, como cartão de crédito, ticket (boleto ou pagamento em lotérica), entre outros. |
+| `excluded_payment_methods` | Método que exclui bandeiras específicas de cartões de crédito e débito, como Visa, Mastercard, American Express, entre outros. |
+| `installments` | Método que define o número máximo de parcelas a serem ofertadas. |
+| `purpose` | Ao indicar o valor "wallet_purchase" neste método, o Checkout Pro apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
 
-> NEXT_STEP_CARD_PT
->
-> Modo binário
->
-> Veja mais informações sobre o modo binário e como ativá-lo.
->
-> [Modo binário](/developers/pt/docs/checkout-pro/checkout-customization/preferences/binary-mode)
+
+Com essas informações utilize um dos SDKs disponíveis abaixo para configurar os meios de pagamento que deseja oferecer.
+
+
+[[[
+```php
+<?php
+$preference = new MercadoPago\Preference();
+// ...
+$preference->payment_methods = array(
+  "excluded_payment_methods" => array(
+    array("id" => "master")
+  ),
+  "excluded_payment_types" => array(
+    array("id" => "ticket")
+  ),
+  "installments" => 12
+);
+// ...
+?>
+```
+```node
+var preference = {}
+preference = {
+//...
+"payment_methods": {
+    "excluded_payment_methods": [
+        {
+            "id": "master"
+        }
+    ],
+    "excluded_payment_types": [
+        {
+            "id": "ticket"
+        }
+    ],
+    "installments": 12
+	}
+//...
+}
+```
+```java
+PreferenceClient client = new PreferenceClient();
+//...
+List<PreferencePaymentMethodRequest> excludedPaymentMethods = new ArrayList<>();
+excludedPaymentMethods.add(PreferencePaymentMethodRequest.builder().id("master").build());
+excludedPaymentMethods.add(PreferencePaymentMethodRequest.builder().id("amex").build());
+
+List<PreferencePaymentTypeRequest> excludedPaymentTypes = new ArrayList<>();
+excludedPaymentTypes.add(PreferencePaymentTypeRequest.builder().id("ticket").build());
+
+PreferencePaymentMethodsRequest paymentMethods =
+   PreferencePaymentMethodsRequest.builder()
+       .excludedPaymentMethods(excludedPaymentMethods)
+       .excludedPaymentTypes(excludedPaymentTypes)
+       .installments(12)
+       .build();
+
+PreferenceRequest request = PreferenceRequest.builder().paymentMethods(paymentMethods).build();
+
+client.create(request);
+//...
+```
+```ruby
+#...
+preference_data = {
+  # ...
+  payment_methods: {
+    excluded_payment_methods: [
+      { id: 'master' }
+    ],
+    excluded_payment_types: [
+      { id: 'ticket' }
+    ],
+    installments: 12
+  }
+  # ...
+}
+#...
+```
+```csharp
+var paymentMethods = new PreferencePaymentMethodsRequest
+{
+    ExcludedPaymentMethods = new List<PreferencePaymentMethodRequest>
+    {
+        new PreferencePaymentMethodRequest
+        {
+            Id = "master",
+        },
+    },
+    ExcludedPaymentTypes = new List<PreferencePaymentTypeRequest>
+    {
+        new PreferencePaymentTypeRequest
+        {
+            Id = "ticket",
+        },
+    },
+    Installments = 12,
+};
+
+var request = new PreferenceRequest
+{
+    // ...
+    PaymentMethods = paymentMethods,
+};
+```
+```python
+#...
+preference_data = {
+    "excluded_payment_methods": [
+        { "id": "master" }
+    ],
+    "excluded_payment_types": [
+        { "id": "ticket" }
+    ],
+    "installments": 12
+}
+#...
+```
+]]]

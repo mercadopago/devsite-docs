@@ -11,6 +11,8 @@ paths:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/subscriptions'
+        - $ref: '#/tags/mp-point'
+        - $ref: '#/tags/qr-code'
       summary: Create and refresh token
       x-summary-i18n:
         eng: Create and refresh token
@@ -139,11 +141,11 @@ paths:
                   refresh_token:
                     type: string
                     example: 'TG-XXXXXXXX-241983636'
-                    description: temporal grants code used to obtain access tokens so that authorization and access to resources remain valid before the end of the access token's validity period. They define an ID used to retrieve authorization information. Unlike access tokens, refresh tokens can only be used for calls on the authorization server and are never sent to resource servers.
+                    description: Temporal grants code used to obtain access tokens so that authorization and access to resources remain valid before the end of the access token's validity period. They define an ID used to retrieve authorization information. Unlike access tokens, refresh tokens can only be used for calls on the authorization server and are never sent to resource servers. The refresh token can only be used once and only for the client_id it is associated with. After a refreh_token is used it will become invalid.
                     x-description-i18n:
-                      eng: temporal grants code used to obtain access tokens so that authorization and access to resources remain valid before the end of the access token's validity period. They define an ID used to retrieve authorization information. Unlike access tokens, refresh tokens can only be used for calls on the authorization server and are never sent to resource servers.
-                      spa: Código de temporal grants utilizadas para obtener access tokens para que la autorización y el acceso a los recursos sigan siendo válidos antes del final del período de validez del access token. Definen un ID utilizado para recuperar información de autorización. A diferencia de los access tokens, los refresh tokens solo se pueden usar para llamadas en el servidor de autorización y nunca se envían a los servidores de recursos.
-                      por: Código de temporal grants usadas para obter access tokens de modo que a autorização e acesso a recursos continuem válidos antes do final do período de validade do access token. Definem um ID usado para recuperar informações de autorização. Ao contrário dos access tokens, os tokens de atualização só podem ser usados ​​para chamadas no servidor de autorização e nunca são enviados para servidores de recursos.
+                      eng: Temporal grants code used to obtain access tokens so that authorization and access to resources remain valid before the end of the access token's validity period. They define an ID used to retrieve authorization information. Unlike access tokens, refresh tokens can only be used for calls on the authorization server and are never sent to resource servers. The refresh token can only be used once and only for the client_id it is associated with. After a refreh_token is used it will become invalid.
+                      spa: Código de temporal grants utilizadas para obtener access tokens para que la autorización y el acceso a los recursos sigan siendo válidos antes del final del período de validez del access token. Definen un ID utilizado para recuperar información de autorización. A diferencia de los access tokens, los refresh tokens solo se pueden usar para llamadas en el servidor de autorización y nunca se envían a los servidores de recursos. El refresh_token solo puede ser usado una vez y solo por el client_id con el que está asociado. Después de que un refresh_token es usado, queda inválido.
+                      por: Código de temporal grants utilizadas para obter access tokens de modo que a autorização e acesso a recursos continuem válidos antes do final do período de validade do access token. Definem um ID utilizado para recuperar informações de autorização. Ao contrário dos access tokens, os tokens de atualização só podem ser utilizados ​​para chamadas no servidor de autorização e nunca são enviados para servidores de recursos. O refresh_token só pode ser utilizado uma vez e apenas para o client_id ao qual está associado. Depois que um refresh_token é utilizado, ele se torna inválido.
                   public_key:
                     type: string
                     example: 'APP_USR-d0a26210-XXXXXXXX-479f0400869e'
@@ -160,6 +162,14 @@ paths:
                       eng: Indicates whether the application is in production or test mode.
                       spa: Indica si la aplicación está en modo de producción o de prueba.
                       por: indica se a aplicação está em modo de produção ou de teste.
+                  redirect_uri: 
+                    type: string
+                    example: 'redirect_uri'
+                    description: URL reported in the Redirect URL field of your application. Required only when grant_type=authorization_code.
+                    x-description-i18n:
+                      eng: URL reported in the Redirect URL field of your application. Required only when grant_type=authorization_code.
+                      spa: URL informada en el campo URL de redirección de tu aplicación. Obligatorio solo cuando grant_type=authorization_code.
+                      por: URL informada no campo Redirect URL da sua aplicação. Requerido apenas quando grant_type=authorization_code.
         '400':
           description: Error
           x-description-i18n:

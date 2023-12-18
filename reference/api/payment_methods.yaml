@@ -24,6 +24,10 @@ paths:
       responses:
         '200':
           description: Success
+          x-description-i18n:
+            eng: Success
+            spa: Success
+            por: Success
           content:
             application/json:
               schema:
@@ -49,17 +53,23 @@ paths:
                     payment_type_id:
                       type: string
                       example: credit_card
-                      description: Types of payment methods.
+                      description: It is the type of payment method (card, bank transfer, boleto bancário, ATM, etc.). They can be of the following types.
                       x-description-i18n:
-                        eng: Types of payment methods.
-                        spa: Tipo de medio de pago
-                        por: Tipo de meio de pagamento
+                        eng: It is the type of payment method (card, bank transfer, boleto bancário, ATM, etc.). They can be of the following types.
+                        spa: Es el tipo de método de pago (tarjeta, transferencia bancaria, ticket, ATM, etc.). Puede ser de los siguientes tipos.
+                        por: É o tipo da forma de pagamento (cartão, transferência bancária, boleto, caixa eletrônico, etc). Podem ser dos seguintes tipos.
                       enum:
-                        - ticket -- Printed ticket
-                        - atm -- Payment by ATM
-                        - credit_card -- Payment by credit card
-                        - debit_card -- Payment by debit card
-                        - prepaid_card -- Payment by prepaid card
+                        - account_money -- Money in the Mercado Pago account.
+                        - ticket -- Boletos, Caixa Electronica Payment, PayCash, Efecty, Oxxo, etc.
+                        - bank_transfer -- Pix and PSE (Pagos Seguros en Línea).
+                        - atm -- ATM payment (widely used in Mexico through BBVA Bancomer).
+                        - credit_card -- Payment by credit card.
+                        - debit_card -- Payment by debit card.
+                        - prepaid_card -- Payment by prepaid card.
+                        - digital_currency -- Purchases with Mercado Crédito.
+                        - digital_wallet -- Paypal.
+                        - voucher_card -- Alelo benefits, Sodexo.
+                        - crypto_transfer -- Payment with cryptocurrencies such as Ethereum and Bitcoin.
                     status:
                       type: string
                       example: active

@@ -1,10 +1,22 @@
 # Create payment
 
-You can create and add payment information using the SDK below. For details on the request parameters, check the [Create payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post) API.
+You can create and add payment information using the SDK below. For details on the request parameters, check the [Create payment](/developers/en/reference/payments/_payments/post) API.
 
+> NOTE
+>
+> Important
+>
+> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 [[[
 ```java
+
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
+ 
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
 
 PaymentClient client = new PaymentClient();
 
@@ -57,7 +69,7 @@ PaymentCreateRequest createRequest =
        .transactionAmount(new BigDecimal("58.8"))
        .build();
 
-client.create(createRequest);
+client.create(createRequest, requestOptions);
 
 ```
 ]]]

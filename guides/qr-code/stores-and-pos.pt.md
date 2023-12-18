@@ -26,9 +26,9 @@ Acesse [Criar loja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/re
 >
 > Importante
 >
-> 1. Você deve saber o `country_id` do país onde a loja está localizada. Para isso consulte a [nossa API de países](https://api.mercadolibre.com/countries).
-> 2. O `state_name` deve corresponder aos **estados** do [país especificado](https://api.mercadolibre.com/countries/$country_id).
-> 3. O `city_name` deve corresponder às **cidades** [dos estados](https://api.mercadolibre.com/states/$state_id).
+> 1. Você deve saber o `country_id` do país onde a loja está localizada. Para isso consulte a [nossa API de países.](https://api.mercadolibre.com/countries)
+> 2. O `state_name` deve corresponder aos **estados** do [país especificado.](https://api.mercadolibre.com/countries/$country_id)
+> 3. O `city_name` deve corresponder às **cidades** [dos estados.](https://api.mercadolibre.com/states/$state_id)
 
 # Caixas
 
@@ -51,4 +51,3 @@ Acesse [Criar caixa](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/r
 >
 >
 > Uma vez criado o caixa, você poderá ver no `Response` os links para os diferentes entregáveis do QR, junto com outros dados relevantes do caixa.
-

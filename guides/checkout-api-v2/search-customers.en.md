@@ -3,32 +3,22 @@
 If you need specific customer data, such as ID, address or registration date, you can get it through our customer API. To do this, send a GET with the customer's email to the endpoint [/v1/customers/search](/developers/en/reference/customers/_customers_search/get) and execute the request or, if you prefer, use one of our SDKs below.
 
 [[[
-
 ```php
-
 <?php
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+  
+  $client = new CustomerClient();
 
-$filters = array(
-"id"=>"247711297-jxOV430go9fx2e"
-);
-
-$customers = MercadoPago\Customer::search($filters);
-
+  $customer = $client->search(1, 0, ["email" => "my.user@example.com"]);
 ?>
-
 ```
 ```node
+import { Customer, MercadoPagoConfig } from '@src/index';
 
-var filters = {
-email: "test_payer_12345@testuser.com"
-};
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+const customer = new Customer(client);
 
-Mercadopago.customers.search({
-qs: filters
-}).then(function (customer) {
-console.log(customer);
-});
-
+customer.search({ options: { email: '<EMAIL>' } }).then(console.log).catch(console.log);
 ```
 ```java
 
@@ -132,18 +122,3 @@ The response will bring the following result.
 }
 ```
 
-> PREV_STEP_CARD_EN
->
-> Modify customer
->
-> Learn how to change data from a previously created customer
->
-> [Modify Customer](/developers/en/docs/checkout-api/cards-and-customers-management/modify-customer)
-
-> NEXT_STEP_CARD_EN
->
-> Add new cards to a customer
->
-> Learn how to add new cards to a previously created customer.
->
-> [Add new cards to a customer](/developers/en/docs/checkout-api/cards-and-customers-management/add-new-cards-to-customer)

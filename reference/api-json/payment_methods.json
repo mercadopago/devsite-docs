@@ -1,0 +1,632 @@
+{
+  "url": "https://api.mercadopago.com",
+  "paths": {
+    "/v1/payment_methods": {
+      "get": {
+        "tags": [
+          "checkout-pro",
+          "subscriptions",
+          "checkout-api"
+        ],
+        "description": {
+          "en": "Consult all the available payment methods and obtain a list with the details of each one and its properties",
+          "pt": "Consulte todas as formas de pagamento disponíveis e obtenha uma lista com os detalhes de cada uma delas e suas propriedades",
+          "es": "Consulta todos los medios de pago disponibles y obtén un listado con el detalle de cada uno y sus propiedades"
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "en": "Success",
+              "pt": "Success",
+              "es": "Success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "example": "visa",
+                        "description": {
+                          "en": "Payment method identifier.",
+                          "pt": "Id do meio de pagamento",
+                          "es": "Identificador del medio de pago"
+                        }
+                      },
+                      "name": {
+                        "type": "string",
+                        "example": "Visa",
+                        "description": {
+                          "en": "Descriptive name of the payment method, for example Visa, American Express, etc.",
+                          "pt": "Nome descritivo da forma de pagamento como, por exemplo, Visa, American Express, etc.",
+                          "es": "Nombre descriptivo del método de pago, por ejemplo Visa, American Express, etc."
+                        }
+                      },
+                      "payment_type_id": {
+                        "type": "string",
+                        "example": "credit_card",
+                        "description": {
+                          "en": "It is the type of payment method (card, bank transfer, boleto bancário, ATM, etc.). They can be of the following types.",
+                          "pt": "É o tipo da forma de pagamento (cartão, transferência bancária, boleto, caixa eletrônico, etc). Podem ser dos seguintes tipos.",
+                          "es": "Es el tipo de método de pago (tarjeta, transferencia bancaria, ticket, ATM, etc.). Puede ser de los siguientes tipos."
+                        },
+                        "enum": [
+                          {
+                            "title": "account_money",
+                            "description": {
+                              "en": "Money in the Mercado Pago account.",
+                              "es": "Money in the Mercado Pago account.",
+                              "pt": "Money in the Mercado Pago account."
+                            }
+                          },
+                          {
+                            "title": "ticket",
+                            "description": {
+                              "en": "Boletos, Caixa Electronica Payment, PayCash, Efecty, Oxxo, etc.",
+                              "es": "Boletos, Caixa Electronica Payment, PayCash, Efecty, Oxxo, etc.",
+                              "pt": "Boletos, Caixa Electronica Payment, PayCash, Efecty, Oxxo, etc."
+                            }
+                          },
+                          {
+                            "title": "bank_transfer",
+                            "description": {
+                              "en": "Pix and PSE (Pagos Seguros en Línea).",
+                              "es": "Pix and PSE (Pagos Seguros en Línea).",
+                              "pt": "Pix and PSE (Pagos Seguros en Línea)."
+                            }
+                          },
+                          {
+                            "title": "atm",
+                            "description": {
+                              "en": "ATM payment (widely used in Mexico through BBVA Bancomer).",
+                              "es": "ATM payment (widely used in Mexico through BBVA Bancomer).",
+                              "pt": "ATM payment (widely used in Mexico through BBVA Bancomer)."
+                            }
+                          },
+                          {
+                            "title": "credit_card",
+                            "description": {
+                              "en": "Payment by credit card.",
+                              "es": "Payment by credit card.",
+                              "pt": "Payment by credit card."
+                            }
+                          },
+                          {
+                            "title": "debit_card",
+                            "description": {
+                              "en": "Payment by debit card.",
+                              "es": "Payment by debit card.",
+                              "pt": "Payment by debit card."
+                            }
+                          },
+                          {
+                            "title": "prepaid_card",
+                            "description": {
+                              "en": "Payment by prepaid card.",
+                              "es": "Payment by prepaid card.",
+                              "pt": "Payment by prepaid card."
+                            }
+                          },
+                          {
+                            "title": "digital_currency",
+                            "description": {
+                              "en": "Purchases with Mercado Crédito.",
+                              "es": "Purchases with Mercado Crédito.",
+                              "pt": "Purchases with Mercado Crédito."
+                            }
+                          },
+                          {
+                            "title": "digital_wallet",
+                            "description": {
+                              "en": "Paypal.",
+                              "es": "Paypal.",
+                              "pt": "Paypal."
+                            }
+                          },
+                          {
+                            "title": "voucher_card",
+                            "description": {
+                              "en": "Alelo benefits, Sodexo.",
+                              "es": "Alelo benefits, Sodexo.",
+                              "pt": "Alelo benefits, Sodexo."
+                            }
+                          },
+                          {
+                            "title": "crypto_transfer",
+                            "description": {
+                              "en": "Payment with cryptocurrencies such as Ethereum and Bitcoin.",
+                              "es": "Payment with cryptocurrencies such as Ethereum and Bitcoin.",
+                              "pt": "Payment with cryptocurrencies such as Ethereum and Bitcoin."
+                            }
+                          }
+                        ]
+                      },
+                      "status": {
+                        "type": "string",
+                        "example": "active",
+                        "description": {
+                          "en": "Payment methods status.",
+                          "pt": "Estado do meio de pagamento",
+                          "es": "Estado del medio de pago"
+                        },
+                        "enum": [
+                          {
+                            "title": "active",
+                            "description": {
+                              "en": "Available for use.",
+                              "es": "Available for use.",
+                              "pt": "Available for use."
+                            }
+                          },
+                          {
+                            "title": "deactive",
+                            "description": {
+                              "en": "Decommissioned, we don't support it anymore.",
+                              "es": "Decommissioned, we don't support it anymore.",
+                              "pt": "Decommissioned, we don't support it anymore."
+                            }
+                          },
+                          {
+                            "title": "temporally_deactive",
+                            "description": {
+                              "en": "Unavailable for use, possible interruption of the service.",
+                              "es": "Unavailable for use, possible interruption of the service.",
+                              "pt": "Unavailable for use, possible interruption of the service."
+                            }
+                          }
+                        ]
+                      },
+                      "secure_thumbnail": {
+                        "type": "string",
+                        "example": "https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif",
+                        "description": {
+                          "en": "Logo to display on secure sites. Link to the thumbnail image that identifies the issuer and the payment method hosted on a server with a secure transfer protocol.",
+                          "pt": "Logo para exibir em sites seguros. Link para a imagem em miniatura que identifica o issuer (emissor) e o meio de pagamento hospedado em um servidor com protocolo de transferência seguro.",
+                          "es": "Logo para mostrar en sitios seguros. Enlace a la imagen en miniatura que identifica al issuer (emisor) y al medio de pago alojado en un servidor con protocolo de transferencia seguro."
+                        }
+                      },
+                      "thumbnail": {
+                        "type": "string",
+                        "example": "http://img.mlstatic.com/org-img/MP3/API/logos/visa.gif",
+                        "description": {
+                          "en": "Logo to show. Link to the thumbnail image that identifies the issuer and the payment method.",
+                          "pt": "Logo para exibir. Link para a imagem em miniatura que identifica o issuer (emissor) e o meio de pagamento.",
+                          "es": "Logo para mostrar. Enlace a la imagen en miniatura que identifica al issuer (emisor) y al medio de pago."
+                        }
+                      },
+                      "deferred_capture": {
+                        "type": "string",
+                        "example": "supported",
+                        "description": {
+                          "en": "Indicates whether the capture can be delayed or not. It has three possible values.",
+                          "pt": "Indica se a captura pode ser lenta ou não. Tem três valores possíveis.",
+                          "es": "Indica si la captura puede ser diferida o no. Tiene tres valores posibles."
+                        },
+                        "enum": [
+                          {
+                            "title": "supported",
+                            "description": {
+                              "en": "This payment method supports authorization and capture operations.",
+                              "es": "This payment method supports authorization and capture operations.",
+                              "pt": "This payment method supports authorization and capture operations."
+                            }
+                          },
+                          {
+                            "title": "unsupported",
+                            "description": {
+                              "en": "Deferred capture is not available for this payment method.",
+                              "es": "Deferred capture is not available for this payment method.",
+                              "pt": "Deferred capture is not available for this payment method."
+                            }
+                          },
+                          {
+                            "title": "does_not_apply",
+                            "description": {
+                              "en": "Cash payment methods don't allow deferred capture.",
+                              "es": "Cash payment methods don't allow deferred capture.",
+                              "pt": "Cash payment methods don't allow deferred capture."
+                            }
+                          }
+                        ]
+                      },
+                      "settings": {
+                        "type": "object",
+                        "properties": {
+                          "bin": {
+                            "type": "object",
+                            "description": {
+                              "en": "Regular expression through which it will be verified if a bin corresponds to the means of payment.",
+                              "pt": "Expressão regular pela qual será verificado se um bin corresponde ao meio de pagamento.",
+                              "es": "Expresión regular por la cual se verificará si un bin corresponde al medio de pago."
+                            },
+                            "properties": {
+                              "pattern": {
+                                "type": "string",
+                                "example": "^(4)",
+                                "description": {
+                                  "en": "Regular expression representing the accepted bins.",
+                                  "pt": "A expressão regular, representando bines aceitos",
+                                  "es": "Expresión regular representando los bines aceptados"
+                                }
+                              },
+                              "exclusion_pattern": {
+                                "type": "string",
+                                "description": {
+                                  "en": "Regular expression representing the excluded bins.",
+                                  "pt": "A expressão regular, representando bines excluídos",
+                                  "es": "Expresión regular representando los bines excluídos"
+                                },
+                                "example": "^(400163|400176|400178|400185|400199|423808|439267|471233|473200|476332|482481|451416|438935|(40117[8-9])|(45763[1-2])|457393|431274)"
+                              },
+                              "installments_pattern": {
+                                "type": "string",
+                                "example": "^(?!(417401|453998|426398|462437|451212|456188))",
+                                "description": {
+                                  "en": "Regular expression representing bins allowed to pay with more than one installment.",
+                                  "pt": "A expressão regular, representando bines aceitos para pagar com mais de uma cota",
+                                  "es": "Expresión regular representando los bines aceptados para pagar con más de una cuota"
+                                }
+                              }
+                            }
+                          },
+                          "card_number": {
+                            "type": "object",
+                            "description": {
+                              "en": "Contains information about card length and validaton.",
+                              "pt": "Contém informações sobre o comprimento e validação do cartão.",
+                              "es": "Contiene información sobre la longitud y la validación de la tarjeta."
+                            },
+                            "properties": {
+                              "length": {
+                                "type": "string",
+                                "description": {
+                                  "en": "Card number length.",
+                                  "pt": "Comprimento do número do cartão de crédito",
+                                  "es": "Longitud del número de la tarjeta de crédito"
+                                },
+                                "example": 16
+                              },
+                              "validation": {
+                                "type": "string",
+                                "example": "standard",
+                                "description": {
+                                  "es": "Whether the card number can be validated using a checksum algorithm (usually Luhn)",
+                                  "pt": "Whether the card number can be validated using a checksum algorithm (usually Luhn)",
+                                  "en": "Whether the card number can be validated using a checksum algorithm (usually Luhn)"
+                                },
+                                "enum": [
+                                  {
+                                    "title": "standard",
+                                    "description": {
+                                      "en": "The card number should validate Luhn's algorithm.",
+                                      "es": "The card number should validate Luhn's algorithm.",
+                                      "pt": "The card number should validate Luhn's algorithm."
+                                    }
+                                  },
+                                  {
+                                    "title": "none",
+                                    "description": {
+                                      "en": "There is no algorithm to validate the checksum.",
+                                      "es": "There is no algorithm to validate the checksum.",
+                                      "pt": "There is no algorithm to validate the checksum."
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "security_code": {
+                            "type": "object",
+                            "description": {
+                              "en": "Card security code information.",
+                              "pt": "Informações do código de segurança do cartão.",
+                              "es": "Información del código de seguridad de una tarjeta."
+                            },
+                            "properties": {
+                              "mode": {
+                                "type": "string",
+                                "example": "mandatory",
+                                "description": {
+                                  "en": "Whether the security code is mandatory or not.",
+                                  "pt": "Indica se o código de segurança é obrigatório ou não",
+                                  "es": "Indica si el código de seguridad es mandatorio o no"
+                                },
+                                "enum": [
+                                  {
+                                    "title": "mandatory",
+                                    "description": {
+                                      "en": "The security code should be given to process the payment.",
+                                      "es": "The security code should be given to process the payment.",
+                                      "pt": "The security code should be given to process the payment."
+                                    }
+                                  },
+                                  {
+                                    "title": "optional",
+                                    "description": {
+                                      "en": "A payment could be issued without the security code.",
+                                      "es": "A payment could be issued without the security code.",
+                                      "pt": "A payment could be issued without the security code."
+                                    }
+                                  }
+                                ]
+                              },
+                              "length": {
+                                "type": "number",
+                                "description": {
+                                  "en": "Security code length.",
+                                  "pt": "Comprimento do código de segurança",
+                                  "es": "Longitud del código de seguridad"
+                                },
+                                "example": 3
+                              },
+                              "card_location": {
+                                "type": "string",
+                                "example": "back",
+                                "description": {
+                                  "es": "Whether the security code is located in the back or in the front of the card.",
+                                  "pt": "Whether the security code is located in the back or in the front of the card.",
+                                  "en": "Whether the security code is located in the back or in the front of the card."
+                                },
+                                "enum": [
+                                  {
+                                    "title": "back",
+                                    "description": {
+                                      "en": "The security code is located in the back of the card.",
+                                      "es": "The security code is located in the back of the card.",
+                                      "pt": "The security code is located in the back of the card."
+                                    }
+                                  },
+                                  {
+                                    "title": "front",
+                                    "description": {
+                                      "en": "The security code is located in the front of the card.",
+                                      "es": "The security code is located in the front of the card.",
+                                      "pt": "The security code is located in the front of the card."
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        },
+                        "description": {
+                          "en": "Payment method settings.",
+                          "pt": "Configuração de métodos de pagamento",
+                          "es": "Configuración de métodos de pago"
+                        }
+                      },
+                      "additional_info_needed": {
+                        "type": "array",
+                        "description": {
+                          "en": "List of additional information that must be supplied by the payer.",
+                          "pt": "Lista de informações que devem ser fornecidas pelo pagador",
+                          "es": "Lista de información adicional que debe ser provista por el pagador"
+                        },
+                        "enum": [
+                          {
+                            "title": "cardholder_identification_number",
+                            "description": {
+                              "en": "Identification number of the card owner.",
+                              "es": "Identification number of the card owner.",
+                              "pt": "Identification number of the card owner."
+                            }
+                          },
+                          {
+                            "title": "cardholder_identification_type",
+                            "description": {
+                              "en": "Identification type of the card owner.",
+                              "es": "Identification type of the card owner.",
+                              "pt": "Identification type of the card owner."
+                            }
+                          },
+                          {
+                            "title": "cardholder_name",
+                            "description": {
+                              "en": "Name as seen in the card of the card owner.",
+                              "es": "Name as seen in the card of the card owner.",
+                              "pt": "Name as seen in the card of the card owner."
+                            }
+                          },
+                          {
+                            "title": "issuer_id",
+                            "description": {
+                              "en": "ID of the card issuing entity.",
+                              "es": "ID of the card issuing entity.",
+                              "pt": "ID of the card issuing entity."
+                            }
+                          }
+                        ]
+                      },
+                      "min_allowed_amount": {
+                        "type": "number",
+                        "example": 0.5,
+                        "description": {
+                          "en": "Minimum amount that can be processed with this payment method.",
+                          "pt": "Mínimo valor que pode ser processado com este meio de pagamento",
+                          "es": "Mínimo monto que se puede procesar con este medio de pago"
+                        }
+                      },
+                      "max_allowed_amount": {
+                        "type": "number",
+                        "example": 60000,
+                        "description": {
+                          "en": "Maximum amount that can be processed with this payment method.",
+                          "pt": "Máximo valor que pode ser processado com este meio de pagamento",
+                          "es": "Máximo monto que se puede procesar con este medio de pago"
+                        }
+                      },
+                      "accreditation_time": {
+                        "type": "number",
+                        "example": 2880,
+                        "description": {
+                          "en": "How many time in minutes could happen until processing of the payment.",
+                          "pt": "Tempo de processamento do pagamento",
+                          "es": "Tiempo de procesamiento del pago"
+                        }
+                      },
+                      "financial_institutions": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "number",
+                            "description": {
+                              "es": "External financial institution identifier (e.g.: company id for atm)",
+                              "pt": "External financial institution identifier (e.g.: company id for atm)",
+                              "en": "External financial institution identifier (e.g.: company id for atm)"
+                            }
+                          },
+                          "description": {
+                            "type": "string",
+                            "description": {
+                              "en": "Descriptive finantial institution name.",
+                              "pt": "Nome descritivo para a instituição financeira",
+                              "es": "Nombre descriptivo de la institución financiera"
+                            }
+                          }
+                        },
+                        "description": {
+                          "en": "Finantial institution processing this payment method.",
+                          "pt": "Instituição financeira processando o meio de pagamento",
+                          "es": "Institución financiera procesando el medio de pago"
+                        }
+                      },
+                      "processing_modes": {
+                        "type": "string",
+                        "example": "aggregator",
+                        "description": {
+                          "en": "The processing mode of the means of payment. There are 2 types.",
+                          "pt": "Informações do código de segurança do cartão. Existem 2 tipos.",
+                          "es": "Modo de proceso del medio de pago. Hay 2 tipos."
+                        },
+                        "enum": [
+                          {
+                            "title": "Aggegator",
+                            "description": {
+                              "en": "aggregator mode. Receive payments using all the cards and promotions that Mercado Pago offers, in addition to bank transfers and offline payment methods and where the money is deposited and managed in a Mercado Pago bank accounts.",
+                              "es": "aggregator mode. Receive payments using all the cards and promotions that Mercado Pago offers, in addition to bank transfers and offline payment methods and where the money is deposited and managed in a Mercado Pago bank accounts.",
+                              "pt": "aggregator mode. Receive payments using all the cards and promotions that Mercado Pago offers, in addition to bank transfers and offline payment methods and where the money is deposited and managed in a Mercado Pago bank accounts."
+                            }
+                          },
+                          {
+                            "title": "Gateway",
+                            "description": {
+                              "en": "gateway mode. Receive payments directly into the store codes (merchant account) of the seller using all the seller's own promotions. With this mode they can also negotiate with purchasers, both in terms of tariffs and interest-free installments and promotions.",
+                              "es": "gateway mode. Receive payments directly into the store codes (merchant account) of the seller using all the seller's own promotions. With this mode they can also negotiate with purchasers, both in terms of tariffs and interest-free installments and promotions.",
+                              "pt": "gateway mode. Receive payments directly into the store codes (merchant account) of the seller using all the seller's own promotions. With this mode they can also negotiate with purchasers, both in terms of tariffs and interest-free installments and promotions."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "1000",
+                          "description": {
+                            "en": "the credentials are required.",
+                            "es": "the credentials are required.",
+                            "pt": "the credentials are required."
+                          }
+                        },
+                        {
+                          "title": "1001",
+                          "description": {
+                            "en": "public_key not found.",
+                            "es": "public_key not found.",
+                            "pt": "public_key not found."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unauthorized",
+                          "description": {
+                            "en": "unauthorized.",
+                            "es": "unauthorized.",
+                            "pt": "unauthorized."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "not_found",
+                          "description": {
+                            "en": "not_found.",
+                            "es": "not_found.",
+                            "pt": "not_found."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Get payment methods",
+          "pt": "Obter meios de pagamento",
+          "es": "Obtener medios de pago"
+        }
+      }
+    }
+  }
+}

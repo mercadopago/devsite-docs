@@ -2,33 +2,53 @@
 
 A primeira etapa para integrar o Wallet Connect é a criação de um _agreement_, um link de autorização que o comprador acessa para conceder ao vendedor o acesso à sua carteira do Mercado Pago no momento em que um pagamento for realizado. 
 
-O _agreement_ armazena os meios de pagamento selecionados pelo pagador e permite a alteração dessas configurações sem a intervenção do vendedor, tornando esta etapa transparente durante o fluxo de pagamento.
+O _agreement_ armazena os meios de pagamento selecionados pelo pagador e permite a alteração dessas configurações sem a intervenção do vendedor, tornando esta etapa transparente durante o fluxo de pagamento. 
 
-Confira o diagrama abaixo que ilustra como funciona o fluxo de criação do agreement.
-
-![Criar agreement](/images/wallet-connect/new-create-agreement.pt.png)
-
-Para criar um _agreement_, envie um **POST** com os atributos necessários ao endpoint [/v2/wallet_connect/agreements](/developers/pt/reference/wallet_connect/_wallet_connect_agreements/post) e execute a requisição. Na resposta, atente-se a dois parâmetros que serão necessários para obter a aprovação do pagador: `agreement_uri` e `return_uri`. 
-
+Qualquer mudança nos métodos de pagamento é comunicada através de uma notificação webhook, que traz detalhes da atualização. 
+Para mais informações, consulte a seção [Atualização do meio de pagamento de um agreement](/developers/pt/docs/wallet-connect/additional-content/your-integrations/notifications/webhooks).
 
 > WARNING
 >
 > Importante
 >
-> Um usuário pode ter apenas um agreement ativo por integração. Caso queira criar um novo agreement, é preciso cancelar o anterior. Para cancelar um agreement, envie um DELETE ao endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/pt/reference/wallet_connect/_wallet_connect_agreements_agreement_id/delete) e execute a requisição.
+> Um usuário pode ter apenas um agreement ativo por integração. Para criar um novo agreement, é preciso cancelar o anterior. Para isso, envie um **DELETE** ao endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/pt/reference/wallet_connect/_wallet_connect_agreements_agreement_id/delete) e execute a requisição. Após o cancelamento, uma notificação webhook será enviada contendo todos os detalhes da operação. Para entender o processo com mais detalhes, acesse a seção [Cancelamento de agreement entre integrador e Mercado Pago](/developers/pt/docs/wallet-connect/additional-content/your-integrations/notifications/webhooks).
 
-> PREV_STEP_CARD_PT
->
-> Pré-requisitos 
->
-> Conheça os pré-requisitos necessários para integrar o Wallet Connect.
->
-> [Pré-requisitos](/developers/pt/docs/wallet-connect/prerequisites)
+Confira o diagrama abaixo que ilustra como funciona o fluxo de criação do agreement.
 
-> NEXT_STEP_CARD_PT
->
-> Obter aprovação
->
-> Saiba como obter a aprovação do pagador para utilização dos dados de pagamento.
->
-> [Obter aprovação](/developers/pt/docs/wallet-connect/integration-configuration/get-approval)
+![Criar agreement](/images/wallet-connect/new-create-agreement.pt.png)
+
+Para criar um _agreement_, envie um **POST** com os atributos necessários ao endpoint [/v2/wallet_connect/agreements](/developers/pt/reference/wallet_connect/_wallet_connect_agreements/post) e execute a requisição ou, se preferir, utilize o `curl` abaixo e atente-se à resposta da requisição que retornará **dois parâmetros** obrigatórios para obter a aprovação do pagador: `agreement_uri` e `return_uri`. 
+
+[[[
+```curl
+
+curl -X POST \
+      'https://api.mercadopago.com/v2/wallet_connect/agreements?client.id=<CLIENT.ID>' \
+      -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+      -H 'Content-Type: application/json' \
+      -H 'x-platform-id: YOUR_ACCESS_TOKEN' \
+      -d '{
+  "return_uri": "https://www.mercadopago.com/",
+  "external_flow_id": "EXTERNAL_FLOW_ID",
+  "external_user": {
+    "id": "usertest",
+    "description": "Test account"
+  },
+  "agreement_data": {
+    "validation_amount": 3.14,
+    "description": "Test agreement"
+  }
+}'
+```
+]]]
+
+## Resposta
+
+[[[
+```json
+{
+  "agreement_id": "22abcd1235ed497f945f755fcaba3c6c",
+  "agreement_uri": "https://wwww.mercadopago.com.ar/v1/wallet_agreement/22abcd1235ed497f945f755fcaba3c6c"
+}
+```
+]]]

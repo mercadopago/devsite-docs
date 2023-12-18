@@ -1,0 +1,1124 @@
+{
+  "url": "https://api.mercadopago.com",
+  "paths": {
+    "/users/test": {
+      "post": {
+        "tags": [
+          "checkout-api",
+          "checkout-bricks",
+          "checkout-pro",
+          "subscriptions",
+          "qr-code"
+        ],
+        "description": {
+          "en": "This endpoint handles http requests to create a test user",
+          "pt": "Este endpoint lida com http requests para criar um usuário de teste",
+          "es": "Este endpoint maneja las http requests para crear un usuario de prueba"
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "site_id": {
+                    "type": "string",
+                    "description": {
+                      "en": "ID of the site where the test user will be created.",
+                      "pt": "ID do site em que o usuário de teste será criado.",
+                      "es": "ID del sitio donde se creará el usuario de prueba."
+                    },
+                    "required": true,
+                    "example": "MLA",
+                    "enum": [
+                      {
+                        "title": "MPE",
+                        "description": {
+                          "en": "Mercado Libre Perú",
+                          "es": "Mercado Libre Perú",
+                          "pt": "Mercado Libre Perú"
+                        }
+                      },
+                      {
+                        "title": "MLU",
+                        "description": {
+                          "en": "Mercado Libre Uruguay",
+                          "es": "Mercado Libre Uruguay",
+                          "pt": "Mercado Libre Uruguay"
+                        }
+                      },
+                      {
+                        "title": "MLA",
+                        "description": {
+                          "en": "Mercado Libre Argentina",
+                          "es": "Mercado Libre Argentina",
+                          "pt": "Mercado Libre Argentina"
+                        }
+                      },
+                      {
+                        "title": "MLC",
+                        "description": {
+                          "en": "Mercado Libre Chile",
+                          "es": "Mercado Libre Chile",
+                          "pt": "Mercado Libre Chile"
+                        }
+                      },
+                      {
+                        "title": "MCO",
+                        "description": {
+                          "en": "Mercado Libre Colombia",
+                          "es": "Mercado Libre Colombia",
+                          "pt": "Mercado Libre Colombia"
+                        }
+                      },
+                      {
+                        "title": "MLB",
+                        "description": {
+                          "en": "Mercado Libre Brasil",
+                          "es": "Mercado Libre Brasil",
+                          "pt": "Mercado Libre Brasil"
+                        }
+                      },
+                      {
+                        "title": "MLM",
+                        "description": {
+                          "en": "Mercado Libre México",
+                          "es": "Mercado Libre México",
+                          "pt": "Mercado Libre México"
+                        }
+                      }
+                    ]
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": {
+                      "en": "Description of the test user being created.",
+                      "pt": "Descrição do usuário de teste que está sendo criado.",
+                      "es": "Descripción del usuario de pruebas que está siendo creado."
+                    },
+                    "required": true,
+                    "example": "a description"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "es": "Created",
+              "pt": "Created",
+              "en": "Created"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer",
+                      "example": 123,
+                      "description": {
+                        "en": "Unique ID that identifies the test user.",
+                        "pt": "ID exclusivo que identifica o usuário de teste.",
+                        "es": "ID único que identifica al usuario de prueba."
+                      }
+                    },
+                    "nickname": {
+                      "type": "string",
+                      "example": "TEST45I5GYIH",
+                      "description": {
+                        "en": "Nickname that identifies the test user.",
+                        "pt": "Apelido que identifica o usuário de teste.",
+                        "es": "Apodo que identifica el usuario de prueba."
+                      }
+                    },
+                    "password": {
+                      "type": "string",
+                      "example": "qatest6730",
+                      "description": {
+                        "en": "Test user password.",
+                        "pt": "Senha do usuário de teste.",
+                        "es": "Contraseña de usuario de prueba."
+                      }
+                    },
+                    "site_status": {
+                      "type": "string",
+                      "example": "active",
+                      "description": {
+                        "en": "Status of the site where the test user was created.",
+                        "pt": "Status do site em que o usuário de teste foi criado.",
+                        "es": "Estado del sitio donde se creó el usuario de prueba."
+                      }
+                    },
+                    "site_id": {
+                      "type": "string",
+                      "example": "MLA",
+                      "description": {
+                        "en": "ID of the site where the test user was created.",
+                        "pt": "ID do site em que o usuário de teste foi criado.",
+                        "es": "ID del sitio donde se creó el usuario de prueba."
+                      }
+                    },
+                    "description": {
+                      "type": "string",
+                      "example": "a description",
+                      "description": {
+                        "en": "Description of the test user being created.",
+                        "pt": "Descrição do usuário de teste que está sendo criado.",
+                        "es": "Descripción del usuario de pruebas que está siendo creado."
+                      }
+                    },
+                    "email": {
+                      "type": "string",
+                      "example": "test_user_123@testuser.com",
+                      "description": {
+                        "en": "Test user email.",
+                        "pt": "E-mail do usuário de teste.",
+                        "es": "Correo electrónico del usuario de prueba."
+                      }
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "example": "2022-02-01T12:00:00.000-04:00",
+                      "description": {
+                        "en": "Test user creation date.",
+                        "pt": "Data de criação do usuário de teste.",
+                        "es": "Fecha de creación del usuario de prueba."
+                      }
+                    },
+                    "date_last_updated": {
+                      "type": "string",
+                      "example": "2022-02-01T12:00:00.000-04:00",
+                      "description": {
+                        "en": "Date of last record update.",
+                        "pt": "Data da última atualização do registro.",
+                        "es": "Fecha de la última actualización del registro."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "es": "Bad request",
+              "pt": "Bad request",
+              "en": "Bad request"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "es": "Not found",
+              "pt": "Not found",
+              "en": "Not found"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "401",
+                          "description": {
+                            "en": "Not-Found",
+                            "es": "Not-Found",
+                            "pt": "Not-Found"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": {
+              "es": "Forbidden",
+              "pt": "Forbidden",
+              "en": "Forbidden"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "403",
+                          "description": {
+                            "en": "Forbidden",
+                            "es": "Forbidden",
+                            "pt": "Forbidden"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "es": "Resource not found",
+              "pt": "Resource not found",
+              "en": "Resource not found"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "404",
+                          "description": {
+                            "en": "Resource-Not-Found",
+                            "es": "Resource-Not-Found",
+                            "pt": "Resource-Not-Found"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "es": "Internal server error",
+              "pt": "Internal server error",
+              "en": "Internal server error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Internal-Server-Error",
+                            "es": "Internal-Server-Error",
+                            "pt": "Internal-Server-Error"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Create test user",
+          "pt": "Criar usuário de teste",
+          "es": "Crear usuario de prueba"
+        }
+      }
+    },
+    "/test_user/search": {
+      "get": {
+        "tags": [
+          "checkout-api",
+          "checkout-pro",
+          "subscriptions",
+          "qr-code"
+        ],
+        "description": {
+          "en": "This endpoint handles http requests to search a test user",
+          "pt": "Este endpoint lida com http requests para pesquisar um usuário de teste",
+          "es": "Este endpoint maneja las http requests para buscar un usuario de prueba"
+        },
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "query",
+            "description": {
+              "en": "Test access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of",
+              "pt": "Token de acesso de teste gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por",
+              "es": "Token de acceso de prueba generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por"
+            },
+            "enum": [
+              {
+                "title": "Access token type",
+                "description": {
+                  "en": "APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)",
+                  "es": "APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)",
+                  "pt": "APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)"
+                }
+              },
+              {
+                "title": "Client ID",
+                "description": {
+                  "en": "1585551492",
+                  "es": "1585551492",
+                  "pt": "1585551492"
+                }
+              },
+              {
+                "title": "Creation date (MMddHH)",
+                "description": {
+                  "en": "030918",
+                  "es": "030918",
+                  "pt": "030918"
+                }
+              },
+              {
+                "title": "Security hash",
+                "description": {
+                  "en": "25######3458",
+                  "es": "25######3458",
+                  "pt": "25######3458"
+                }
+              },
+              {
+                "title": "User ID",
+                "description": {
+                  "en": "2880736",
+                  "es": "2880736",
+                  "pt": "2880736"
+                }
+              }
+            ],
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "es": "OK",
+              "pt": "OK",
+              "en": "OK"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "total": {
+                      "description": {
+                        "en": "Total test users found.",
+                        "pt": "Total de usuários de teste encontrados.",
+                        "es": "Total de usuarios de prueba encontrados."
+                      },
+                      "type": "integer",
+                      "example": 1
+                    },
+                    "results": {
+                      "description": {
+                        "en": "Localized test user information.",
+                        "pt": "Informações do usuário de teste localizadas.",
+                        "es": "Información de usuario de prueba localizada."
+                      },
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "integer",
+                            "description": {
+                              "en": "Unique ID that identifies the test user.",
+                              "pt": "ID exclusivo que identifica o usuário de teste.",
+                              "es": "ID único que identifica al usuario de prueba."
+                            },
+                            "example": 123
+                          },
+                          "nickname": {
+                            "type": "string",
+                            "description": {
+                              "en": "Nickname that identifies the test user.",
+                              "pt": "Apelido que identifica o usuário de teste.",
+                              "es": "Apodo que identifica el usuario de prueba."
+                            },
+                            "example": "TEST45I5GYIH"
+                          },
+                          "site_status": {
+                            "type": "string",
+                            "description": {
+                              "en": "Status of the site where the test user was created.",
+                              "pt": "Status do site em que o usuário de teste foi criado.",
+                              "es": "Estado del sitio donde se creó el usuario de prueba."
+                            },
+                            "example": "active"
+                          },
+                          "site_id": {
+                            "type": "string",
+                            "description": {
+                              "en": "ID of the site where the test user was created.",
+                              "pt": "ID do site em que o usuário de teste foi criado.",
+                              "es": "ID del sitio donde se creó el usuario de prueba."
+                            },
+                            "example": "MLA"
+                          },
+                          "email": {
+                            "type": "string",
+                            "description": {
+                              "en": "Test user email.",
+                              "pt": "E-mail do usuário de teste.",
+                              "es": "Correo electrónico del usuario de prueba."
+                            },
+                            "example": "test_user_123@testuser.com"
+                          },
+                          "date_created": {
+                            "type": "string",
+                            "description": {
+                              "en": "Test user creation date.",
+                              "pt": "Data de criação do usuário de teste.",
+                              "es": "Fecha de creación del usuario de prueba."
+                            },
+                            "example": "2021-11-04T12:02:35Z"
+                          },
+                          "date_last_updated": {
+                            "type": "string",
+                            "description": {
+                              "en": "Date of last record update.",
+                              "pt": "Data da última atualização do registro.",
+                              "es": "Fecha de la última actualización del registro."
+                            },
+                            "example": "2021-11-04T12:02:35Z"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "es": "Not found",
+              "pt": "Not found",
+              "en": "Not found"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "401",
+                          "description": {
+                            "en": "Not-Found",
+                            "es": "Not-Found",
+                            "pt": "Not-Found"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": {
+              "es": "Forbidden",
+              "pt": "Forbidden",
+              "en": "Forbidden"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "403",
+                          "description": {
+                            "en": "Forbidden",
+                            "es": "Forbidden",
+                            "pt": "Forbidden"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "es": "Resource not found",
+              "pt": "Resource not found",
+              "en": "Resource not found"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "404",
+                          "description": {
+                            "en": "Resource-Not-Found",
+                            "es": "Resource-Not-Found",
+                            "pt": "Resource-Not-Found"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "405": {
+            "description": {
+              "es": "Method Not Allowed",
+              "pt": "Method Not Allowed",
+              "en": "Method Not Allowed"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "405",
+                          "description": {
+                            "en": "Method-Not-Allowed",
+                            "es": "Method-Not-Allowed",
+                            "pt": "Method-Not-Allowed"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "es": "Internal Server Error",
+              "pt": "Internal Server Error",
+              "en": "Internal Server Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Internal-Server-Error",
+                            "es": "Internal-Server-Error",
+                            "pt": "Internal-Server-Error"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Search test user",
+          "pt": "Buscar usuário de teste",
+          "es": "Buscar usuario de prueba"
+        }
+      }
+    },
+    "/test_user/{id}/password": {
+      "put": {
+        "tags": [
+          "checkout-api",
+          "checkout-pro",
+          "subscriptions",
+          "qr-code"
+        ],
+        "description": {
+          "en": "This endpoint handles http requests to change the test user password",
+          "pt": "Este endpoint lida com http requests para alterar a senha do usuário de teste",
+          "es": "Este endpoint maneja las http requests para cambiar la contraseña del usuario de prueba"
+        },
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "query",
+            "description": {
+              "en": "Test access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of",
+              "pt": "Token de acesso de teste gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por",
+              "es": "Token de acceso de prueba generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por"
+            },
+            "enum": [
+              {
+                "title": "Access token type",
+                "description": {
+                  "en": "APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)",
+                  "es": "APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)",
+                  "pt": "APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)"
+                }
+              },
+              {
+                "title": "Client ID",
+                "description": {
+                  "en": "1585551492",
+                  "es": "1585551492",
+                  "pt": "1585551492"
+                }
+              },
+              {
+                "title": "Creation date (MMddHH)",
+                "description": {
+                  "en": "030918",
+                  "es": "030918",
+                  "pt": "030918"
+                }
+              },
+              {
+                "title": "Security hash",
+                "description": {
+                  "en": "25######3458",
+                  "es": "25######3458",
+                  "pt": "25######3458"
+                }
+              },
+              {
+                "title": "User ID",
+                "description": {
+                  "en": "2880736",
+                  "es": "2880736",
+                  "pt": "2880736"
+                }
+              }
+            ],
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": {
+              "en": "Unique ID that identifies the test user.",
+              "pt": "ID exclusivo que identifica o usuário de teste.",
+              "es": "ID único que identifica al usuario de prueba."
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "es": "OK",
+              "pt": "OK",
+              "en": "OK"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "description": {
+                        "en": "Message with the password change status.",
+                        "pt": "Mensagem com o status de alteração de senha.",
+                        "es": "Mensaje con el estado de cambio de contraseña."
+                      },
+                      "type": "string",
+                      "example": "password successfully reset"
+                    },
+                    "new_password": {
+                      "description": {
+                        "en": "New test user password.",
+                        "pt": "Nova senha do usuário de teste.",
+                        "es": "Nueva contraseña de usuario de prueba."
+                      },
+                      "type": "string",
+                      "example": "random"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": {
+              "es": "Forbidden",
+              "pt": "Forbidden",
+              "en": "Forbidden"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "403",
+                          "description": {
+                            "en": "Forbidden",
+                            "es": "Forbidden",
+                            "pt": "Forbidden"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "405": {
+            "description": {
+              "es": "Method Not Allowed",
+              "pt": "Method Not Allowed",
+              "en": "Method Not Allowed"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "405",
+                          "description": {
+                            "en": "Method-Not-Allowed",
+                            "es": "Method-Not-Allowed",
+                            "pt": "Method-Not-Allowed"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "es": "Internal server error",
+              "pt": "Internal server error",
+              "en": "Internal server error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Internal-Server-Error",
+                            "es": "Internal-Server-Error",
+                            "pt": "Internal-Server-Error"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Update test user password",
+          "pt": "Atualizar senha do usuário de teste",
+          "es": "Actualizar contraseña de usuario de prueba"
+        }
+      }
+    },
+    "/test_user/{id}/account_money": {
+      "put": {
+        "tags": [
+          "checkout-api",
+          "checkout-pro",
+          "subscriptions",
+          "qr-code"
+        ],
+        "description": {
+          "en": "This endpoint handles http requests to add amount (account_money) to the test user account",
+          "pt": "Este endpoint lida com http requests para adicionar um valor (account_money) à conta do usuário de teste",
+          "es": "Este endpoint maneja las http requests para agregar un valor (account_money) a la cuenta de usuario de prueba"
+        },
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "query",
+            "description": {
+              "en": "Test access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of",
+              "pt": "Token de acesso de teste gerado do vendedor pelo processo de autenticação (OAuth). Código de segurança que identifica o usuário, seus privilégios e uma aplicação utilizado nas diferentes requests de origem pública para ter acesso a recursos protegidos. Tem sua validade determinada pelo parâmetro expires_in e são semelhantes a APP_USR-1585551492-030918-25######3458-2880736 sendo compostos por",
+              "es": "Token de acceso de prueba generado desde el vendedor por el proceso de autenticación (OAuth). Código de seguridad que identifica al usuario, sus privilegios y una aplicación utilizada en diferentes solicitudes de origen público para acceder a los recursos protegidos. Su validez está determinada por el parámetro expires_in y es similar a APP_USR-1585551492-030918-25######3458-2880736 estando compuesto por"
+            },
+            "enum": [
+              {
+                "title": "Access token type",
+                "description": {
+                  "en": "APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)",
+                  "es": "APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)",
+                  "pt": "APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)"
+                }
+              },
+              {
+                "title": "Client ID",
+                "description": {
+                  "en": "1585551492",
+                  "es": "1585551492",
+                  "pt": "1585551492"
+                }
+              },
+              {
+                "title": "Creation date (MMddHH)",
+                "description": {
+                  "en": "030918",
+                  "es": "030918",
+                  "pt": "030918"
+                }
+              },
+              {
+                "title": "Security hash",
+                "description": {
+                  "en": "25######3458",
+                  "es": "25######3458",
+                  "pt": "25######3458"
+                }
+              },
+              {
+                "title": "User ID",
+                "description": {
+                  "en": "2880736",
+                  "es": "2880736",
+                  "pt": "2880736"
+                }
+              }
+            ],
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": {
+              "en": "Unique ID that identifies the test user.",
+              "pt": "ID exclusivo que identifica o usuário de teste.",
+              "es": "ID único que identifica al usuario de prueba."
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": {
+            "es": "Amount request",
+            "pt": "Amount request",
+            "en": "Amount request"
+          },
+          "content": {
+            "application/json": {
+              "schema": {
+                "required": [
+                  "site_id"
+                ],
+                "type": "object",
+                "properties": {
+                  "amount": {
+                    "description": {
+                      "en": "Amount added to the test user account.",
+                      "pt": "Valor adicionado à conta do usuário de teste.",
+                      "es": "Valor agregado a la cuenta de usuario de prueba.’"
+                    },
+                    "type": "number",
+                    "example": 1000.23,
+                    "required": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "204": {
+            "description": {
+              "es": "No content",
+              "pt": "No content",
+              "en": "No content"
+            }
+          },
+          "400": {
+            "description": {
+              "es": "Bad request",
+              "pt": "Bad request",
+              "en": "Bad request"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": {
+              "es": "Forbidden",
+              "pt": "Forbidden",
+              "en": "Forbidden"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "403",
+                          "description": {
+                            "en": "Forbidden",
+                            "es": "Forbidden",
+                            "pt": "Forbidden"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "405": {
+            "description": {
+              "es": "Method not allowed",
+              "pt": "Method not allowed",
+              "en": "Method not allowed"
+            }
+          },
+          "500": {
+            "description": {
+              "es": "Internal server error",
+              "pt": "Internal server error",
+              "en": "Internal server error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Internal-Server-Error",
+                            "es": "Internal-Server-Error",
+                            "pt": "Internal-Server-Error"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Add amount (account_money) to test user account",
+          "pt": "Adicionar valor (account_money) à conta do usuário de teste",
+          "es": "Agregar valor (account_money) a la cuenta de usuario"
+        }
+      }
+    }
+  }
+}

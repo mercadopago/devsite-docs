@@ -1,6 +1,15 @@
-# How to customize payment notification for Checkout API
+----[mla, mlm, mpe, mco, mlu, mlc]----
+# How to customize payment notification for Checkout API 
+ 
+Having selected [Checkout API](/developers/en/guides/checkout-api-v2/landing) to receive payments from your store, it is important to configure the email notifications that will notify the user of their transactions. 
 
-Having selected [Checkout API](/developers/en/guides/checkout-api/introduction) to receive payments from your store, it is important to configure the email notifications that will notify the user of their transactions. 
+------------
+----[mlb]----
+# How to customize payment notification for Checkout Transparente
+ 
+Having selected [Checkout Transparente](/developers/en/guides/checkout-api-v2/landing) to receive payments from your store, it is important to configure the email notifications that will notify the user of their transactions. 
+
+------------
 
 See below how to customize the **transactional email** notifications in the PrestaShop management panel.
 
@@ -11,11 +20,3 @@ See below how to customize the **transactional email** notifications in the Pres
 5. Configure the SMTP server and enable the sending of emails.
 6. Access **Advanced Parameters > E-mail** and select the option "Set my own SMTP parameters (for advanced users ONLY)". Fill in the information of the server responsible for sending.
 7. Send a test email to ensure the platform is sending emails correctly.
-
-> PREV_STEP_CARD_EN
->
-> How to install the Mercado Pago module manually
->
-> See how, if necessary, to install the module manually.
->
-> [How to install the Mercado Pago module manually](/developers/en/docs/prestashop/how-tos/install-module-manually)

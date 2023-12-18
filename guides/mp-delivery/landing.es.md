@@ -1,15 +1,15 @@
 ---
 content_section_with_media: 
- - title: Mercado Pago Delivery
+ - title: Introducción
  - message: Mercado Pago Delivery es una solución de entrega de comidas a pedido en la que el cliente ingresa a una lista de restaurantes registrados, selecciona su pedido y paga directamente desde la aplicación de Mercado Pago.
  - media_video: https://www.youtube.com/embed/YXSiXXpk0L8
 ---
-
 
 --- mini_landing_separator ---
 >>>>Disponibilidad por país <<<<
 ---
 available_countries: mla
+
 ---
 
 ---
@@ -37,7 +37,10 @@ bullet_section_with_media:
 ---
 
 --- mini_landing_separator ---
->>>> Métodos de pago aceptados <<<<
+>>>> Tipos de pago aceptados <<<<
 ---
-available_payments: credit, debit, mercadopago
+available_payments: credit, debit, mercadopago, efectivo, atm
+
 ---
+
+> Para obtener detalles sobre los medios de pago aceptados en cada país, consulte la lista completa con [disponibilidad de medios de pago.](/developers/es/docs/sales-processing/payment-methods) 

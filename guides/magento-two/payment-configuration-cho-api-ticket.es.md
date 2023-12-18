@@ -1,12 +1,11 @@
-# Configurar pagos offline (ticket)
+# Medios offline (ticket)
 
 ----[mlb]----
-Con **ticket**, ofrezca al comprador la opción de realizar pagos mediante métodos de pago fuera de línea (boleto bancário y cajero automático), usando [Checkout Transparente](/developers/es/guides/checkout-api/landing).
+Con **ticket**, ofrezca al comprador la opción de realizar pagos mediante medios de pago fuera de línea (boleto bancário y cajero automático), usando [Checkout Transparente](/developers/es/guides/checkout-api/landing).
 
 ------------
-
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-Con **ticket**, ofrezca al comprador la opción de realizar pagos utilizando métodos de pago fuera de línea (efectivo y cajero automático), utilizando la [Checkout API](/developers/es/guides/checkout-api/landing).
+Con **ticket**, ofrezca al comprador la opción de realizar pagos utilizando medios de pago fuera de línea (efectivo y cajero automático), utilizando la [Checkout API](/developers/es/guides/checkout-api/landing).
 
 ------------
 
@@ -21,30 +20,3 @@ Para integrar el método de pago, siga los pasos a continuación.
 7. En **Checkout Position**, indique la posición en la que el método de pago estará disponible para el comprador en el flujo de pago.
 8. Luego haga clic en **Save Config** para guardar sus preferencias.
 
-> PREV_STEP_CARD_ES
->
-> Configurar pagamentos com cartões
->
-> Aprende a configurar ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para recibir pagos con tarjeta en tu tienda.
->
-> [Configurar pagamentos com cartões](/developers/es/docs/magento-two/payment-configuration/checkout-api/cards)
-
-----[mlb]----
-> NEXT_STEP_CARD_ES
->
-> Configurar pagos con Pix
->
-> Configura tu tienda para recibir pagos de Pix usando Clear Checkout.
->
-> [Pix](/developers/es/docs/magento-two/payment-configuration/checkout-api/pix)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> NEXT_STEP_CARD_ES
->
-> Configurar pagos por transferencia bancaria
->
-> Configura tu tienda para recibir pagos mediante transferencia bancaria utilizando la API de Checkout.
->
-> [Transferencia bancaria](/developers/es/docs/magento-two/payment-configuration/checkout-api/bank-transfer)
-------------

@@ -10,9 +10,9 @@ To generate the authorization code, the following requirements must be met.
  
 | Requirements | Description | Specifications |
 | --- | --- | --- |
-| Seller Mercado Pago Accounts | Mercado Pago seller accounts will be required. One for you and one for the seller. | Seller account in Mercado Pago. If you don't have one, [clik here](https://www.mercadopago[FAKER][URL[DOMAIN]/hub/registration/landing) to create it. |
-| Application | Applications are the different integrations contained in one or more stores. You can create an application for each solution you implement, in order to have everything organized and maintain control to facilitate management. | To use OAuth you will need to have an application created. See the [Dashboard](https://www.mercadopago[FAKER][URL[DOMAIN]/developers/en/guides/additional-content/dashboard/introduction) documentation for information on how to create an app. |
-| Credentials | The [credenciales](/developers/en/guides/additional-content/credentials/credentials) are unique passwords with which we identify an integration in your account, and are used to securely capture payments in virtual stores and other applications. | To test and ensure the integration works, test credentials will be required. After this step, you will need production credentials to receive actual payments. |
+| Seller Mercado Pago Accounts | Mercado Pago seller accounts will be required. One for you and one for the seller. | Seller account in Mercado Pago. If you don't have one, [clik here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create it. |
+| Application | Applications are the different integrations contained in one or more stores. You can create an application for each solution you implement, in order to have everything organized and maintain control to facilitate management. | To use OAuth you will need to have an application created. See the [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/your-integrations/introduction) documentation for information on how to create an app. |
+| Credentials | The [credenciales](/developers/en/guides/additional-content/your-integrations/credentials) are unique passwords with which we identify an integration in your account, and are used to securely capture payments in virtual stores and other applications. | To test and ensure the integration works, test credentials will be required. After this step, you will need production credentials to receive actual payments. |
 | Redirect URL | Address you want to forward sellers to after successfully linking them. | This is an address on your server where access tokens will be received. |
 | Authentication URL | Address where you wish to send sellers to authorize access to private data. | This is an address on the Mercado Pago server where permission is expressly granted to access private data. |
  
@@ -22,13 +22,13 @@ To generate the authorization code, the following requirements must be met.
 >
 > Remember that you will use sensitive information from your sellers. Make sure you store it safely. Do not use it in the authentication URL and manage the entire process only from your server.
  
-1. Edit your application so that it contains your Redirect URL. See [Edit Application](/developers/en/guides/additional-content/dashboard/applications).
+1. Edit your application so that it contains your Redirect URL. See [Edit Application](/developers/en/guides/additional-content/your-integrations/application-details).
 2. Send the authentication URL to the seller whose account you want to link to yours with the following fields:
 
     |Description|URL| 
     |---|---|
     | Authentication URL | https://auth.mercadopago.com/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com |
-     * **client_id**: replace the "APP_ID" value with your application ID. Check [Application ID](/developers/en/guides/additional-content/dashboard/applications).
+     * **client_id**: replace the "APP_ID" value with your application ID. Check [Application ID](/developers/en/guides/additional-content/your-integrations/application-details).
      * **state**: replace the "RANDOM_ID" value with an identifier that is unique for each attempt and does not include sensitive information so that you can identify who the received code is from.
      * **redirect_uri**: add the reported URL in the Redirect URL field of your application.
      <br/>
@@ -48,19 +48,3 @@ To generate the authorization code, the following requirements must be met.
 > It is recommended to carry out this procedure all at once together with the user, since the code received by the Redirect URL after authorization is valid for 10 minutes and the access token received through the endpoint is valid for 180 days.
 >
 > To generate sandbox credentials for testing, send the `test_token` parameter with the value `true`.
-
-> PREV_STEP_CARD_EN
->
-> Introduction
->
-> Check more information about the main features of OAuth.
->
-> [Introduction](/developers/en/guides/additional-content/security/oauth/introduction)
-
-> NEXT_STEP_CARD_EN
->
-> Access token renewal
->
-> View the renewal flow for an expired access token.
->
-> [Renewal](/developers/en/guides/additional-content/security/oauth/creation)

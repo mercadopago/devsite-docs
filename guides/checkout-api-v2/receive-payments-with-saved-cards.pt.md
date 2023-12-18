@@ -4,34 +4,24 @@ Para que um cliente possa fazer um pagamento com seus cartões previamente salvo
 
 Para receber pagamentos a partir de cartões previamente salvos, siga as etapas abaixo.
 
-
 ## Exibir cartões salvos
 
 A primeira etapa é exibir para o comprador a lista de cartões salvos para que seja possível escolher a opção que deseja utilizar ao realizar um pagamento. Para isso, envie um GET com os atributos necessários ao endpoint [/v1/customers/{customer_id}/cards](/developers/pt/reference/cards/_customers_customer_id_cards/get) e execute a requisição ou, se preferir, utilize os SDKs listados abaixo.
 
-
 [[[
 
 ```php
-
 <?php
-    $customer = MercadoPago\Customer::find_by_id($id);
-    $cards = $customer->cards();
+  $customer_client = new CustomerClient();
+  $cards = $client->list("customer_id");
+  echo implode ($cards);
 ?>
-
 ```
 ```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
+const customerCard = new CustomerCard(client);
 
-  var filters = {
-    id: customer_id
-  };
-
-  mercadopago.customers.search({
-    qs: filters
-  }).then(function (customer) {
-    console.log(customer);
-  });
-
+customerCard.list({ customerId: '<CUSTOMER_UD>' }).then(console.log).catch(console.log);
 ```
 ```java
 
@@ -177,54 +167,65 @@ Após exibir os cartões salvos e criar o formulário de pagamento, é necessár
 ]]]
 
 
-
 ## Criar pagamento
 
 Uma vez obtido o token, é preciso criar o pagamento com o valor correspondente. Ao realizar um pagamento com um cartão guardado, deve-se enviar o ID do cliente junto do token utilizando o endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) ou um dos SDKs abaixo.
 
 
-
 [[[
 ```php
-
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-  $payment = new MercadoPago\Payment();
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
-  $payment->transaction_amount = 100;
-  $payment->token = "ff8080814c11e237014c1ff593b57b4d";
-  $payment->installments = 1;
-  $payment->payer = array(
-        "type" => "customer",
-        "id" => "123456789-jxOV430go9fx2e"
-    );
+  $customer_client = new CustomerClient();
+  $cards = $client->list("customer_id");
+  
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-  $payment->save();
-
+  $payment = $client->create([
+    "transaction_amount" => 100.0,
+    "token" => $cards[0]-> token,
+    "description" => "My product",
+    "installments" => 1,
+    "payment_method_id" => "visa",
+    "issuer_id" => "123",
+    "payer" => [
+      "type" => "customer",
+      "id" => "1234"
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
-
 ```
 ```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
+const customerClient = new Customer(client);
 
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
+customerClient.listCards({ customerId: '<CUSTOMER_ID>' })
+	.then((result) => {
 
-var payment_data = {
-  transaction_amount: 100,
-  token: 'ff8080814c11e237014c1ff593b57b4d',
-  installments: 1,
-  payer: {
-    type: "customer"
-    id: "123456789-jxOV430go9fx2e"
+  const payment = new Payment(client);
+
+  const body = {
+    transaction_amount: 100,
+    token: result[0].token,
+    description: 'My product',
+    installments: 1,
+    payment_method_id: 'visa',
+    issuer_id: 123,
+    payer: {
+      type: 'customer',
+      id: '123'
   }
 };
 
-mercadopago.payment.create(payment_data).then(function (data) {
-  console.log(data);
+  payment.create({ body: body }).then((result) => console.log(result));
 });
-
 ```
 ```java
 
@@ -325,11 +326,3 @@ curl -X POST \
 
 ```
 ]]]
-
-> PREV_STEP_CARD_PT
->
-> Consultar lista de cartões
->
-> Saiba como consultar a lista de cartões de determinado cliente.
->
-> [Consultar lista de cartões](/developers/pt/docs/checkout-api/customer-management/get-cards-list)

@@ -1,4 +1,4 @@
-## How to accept payments with two payment methods
+# How to accept payments with two payment methods
  
 Accepting dual card payments is the feature that allows shoppers to make payments using more than one payment method directly at checkout.
   

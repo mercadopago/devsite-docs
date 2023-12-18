@@ -1,22 +1,10 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
-# Payments with QR Buyer model
+# Payments with QR buyer model
 
 > WARNING
 >
 > Business contact required
 >
 > You must contact our commercial team to enable your account and give permission to make charges using this service model.
-
-
 
 ## What is the QR Buyer model?
 
@@ -39,14 +27,6 @@ The main characteristics are:
 - Allows offline payments (without internet connection) to the payer.
 - By submitting the billing API, the payment validation takes place synchronously.
 
----
+# Integration
 
-## Next steps
-
-> LEFT_BUTTON_REQUIRED_EN
->
-> How to integrate the QR Buyer model
->
-> Check out how to integrate the QR Buyer model.
->
-> [How to integrate the QR Buyer model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/qr-buyer/qr-buyer-part-b)
+To integrate this billing model, access the documentation on [Integrate the QR Buyer model](/developers/en/docs/qr-code/qr-buyer/qr-buyer-part-b)

@@ -1,23 +1,21 @@
 # Binary mode
- 
-Binary mode is a function that allows automatic approval or rejection of a payment. This means that when activated, payments made will be automatically approved or declined without the need for action on the part of the seller.
- 
+
+You can enable binary mode if your business model requires payment approval to be instantaneous. In this way, the payment can only be approved or declined.
+
 If disabled, payment may be pending (if any action is required from the buyer) or in process (if manual review is required).
- 
-To enable binary mode, send the `binary_mode` parameter to the endpoint [/checkout/preferences](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences/post) with the value `true` and execute the request.
 
-> PREV_STEP_CARD_EN
->
-> Payment methods  
->
-> Learn how to customize the Checkout Pro integration and determine which payment methods will be accepted. 
->
-> [Payment methods](/developers/en/docs/checkout-pro/checkout-customization/preferences/payment-methods)
 
-> NEXT_STEP_CARD_EN
+> NOTE
 >
-> Invoice description 
+> Important
 >
-> Check how to define the name of the establishment that will be displayed on the buyer's invoice.
->
-> [Invoice description](/developers/en/docs/checkout-pro/checkout-customization/preferences/invoice-description)
+> Enabling binary mode simplifies integration with Checkout Pro, but may result in a decrease in the percentage rate of approved payments. This is because, in order to maintain the instant flow, payments pending or still being processed will by default automatically be rejected.
+
+
+To enable binary mode, send the parameter `binary_mode` with the value `true` to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) as indicated in the example below and execute the request.
+
+
+```json
+"binary_mode": true
+```
+

@@ -6,57 +6,35 @@ In addition, we recommend storing your card data whenever a payment is successfu
 
 To create a customer and card, use one of the codes below.
 
-> WARNING
->
-> Important
->
-> If the request response returns an error like `invalid parameter` with HTTP code 400, review the `payment_method_id` and `issuer_id` parameters to ensure that the values have been entered correctly. Also, when using test users, keep in mind the following format for customer email: `test_payer_[0-9]{1,10}@testuser.com` For example: `test_payer_12345@testuser.com`.
-
 [[[
 ```php
-
 <?php
-
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
-$customer = new MercadoPago\Customer();
-$customer->email = "test_payer_12345@testuser.com";
-$customer->save();
-
-$card = new MercadoPago\Card();
-$card->token = "9b2d63e00d66a8c721607214cedaecda";
-$card->customer_id = $customer->id();
-$card->issuer = array("id" => "3245612");
-$card->payment_method = array("id" => "debit_card");
-$card->save();
-
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+  
+  $client_customer = new CustomerClient();
+  $customer = $client_customer->create(["email" => "my.user@example.com"]);
+  $client = new CustomerCardClient();
+  $customer_card = $client->create($customer->id, ["token" => "your_card_token"]);
 ?>
-
 ```
 ```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
+const customerClient = new Customer(client);
 
-var Mercadopago = require('mercadopago');
-Mercadopago.configure({
-access_token: 'ENV_ACCESS_TOKEN'
+const customer = customerClient.get({ customerId: '<CUSTOMER_ID>' })
+	.then((result) => {
+
+  const cardClient = new CustomerCard(client);
+
+  const body = {
+       token : result.token,
+       issuer_id: '2345',
+       payment_method: 'debit_card' 
+  };
+
+cardClient.create({ customerId: customer, body: body })
+.then(console.log).catch(console.log);
 });
-
-var customer_data = { "email": "test_payer_12345@testuser.com" }
-
-Mercadopago.customers.create(customer_data).then(function (customer) {
-
-var card_data = {
-"token": "9b2d63e00d66a8c721607214cedaecda",
-"customer_id": customer.id,
-"issuer_id": "23",
-"payment_method_id": "debit_card"
-}
-
-Mercadopago.card.create(card_data).then(function (card) {
-console.log(card);
-});
-
-});
-
 ```
 ```java
 
@@ -98,7 +76,7 @@ customer = customer_response[:response]
 card_request = {
 token: '9b2d63e00d66a8c721607214cedaecda',
 issuer_id: '3245612',
-payment_method_id: 'debit_card'
+payment_method_id: 'visa'
 }
 card_response = sdk.card.create(customer['id'], card_request)
 card = card_response[:response]
@@ -136,7 +114,7 @@ customer = customer_response["response"]
 card_data = {
 "token": "9b2d63e00d66a8c721607214cedaecda",
 "issuer_id": "3245612",
-"payment_method_id": "debit_card"
+"payment_method_id": "visa"
 }
 card_response = sdk.card().create(customer["id"], card_data)
 card = card_response["response"]
@@ -148,7 +126,7 @@ curl -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
--d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id": "debit_card"}'
+-d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id": "visa"}'
 
 ```
 ]]]
@@ -177,14 +155,6 @@ The response will bring the following result.
 
 > WARNING
 >
-> Important
+> Attention
 >
 > If the request response returns an error like `invalid parameter` with HTTP code 400, review the `payment_method_id` and `issuer_id` parameters to ensure that the values have been entered correctly. Also, when using test users, keep in mind the following format for customer email: `test_payer_[0-9]{1,10}@testuser.com` For example: `test_payer_12345@testuser.com`.
-
-> NEXT_STEP_CARD_EN
->
-> Modify customer
->
-> Learn how to change data from a previously created customer
->
-> [Modify Customer](/developers/en/docs/checkout-api/cards-and-customers-management/modify-customer)

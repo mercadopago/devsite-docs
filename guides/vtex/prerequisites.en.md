@@ -1,19 +1,11 @@
 # Prerequisites
 
-To use Mercado Pago's integration with VTEX, you must meet the following requirements.
+To configure the integration of Mercado Pago in VTEX stores, you need to meet the following requirements. 
 
-|Requirements|Description|Specifications|
-|---|---|---|
-|VTEX Account|TIn order to sell, you need a VTEX account. If you don't have one, click [here](https://vtex.com/us-en/contact/).|Having a VTEX account|
-|Mercado Pago seller account|TIn order to sell, you need a seller account in Mercado Pago. If you don't have one yet, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create one.|Mercado Pago seller account.|
-|Activated production credentials|If credentials are not active, they can't be used. When you have your integration ready and want to start receiving payments, you must [activate your credentials]([FAKER][CREDENTIALS][URL]) for production and replace the test credentials.|Activated production credentials|
-|Mercado Pago Payment APP installed|Verify that the App **Mercado Pago Payment APP** is has been installed  in your VTEX application store, in order to use the payment conditions **MercadoPagoPro, MercadoPagoWallet and MercadoPagoOff**, or request its installation by the VTEX team through a ticket in [VTEX Support](https://help.vtex.com/en/support).|Mercado Pago Payment APP installed  in your VTEX application store.|
-----[mlb]----|Pix Key|To configure Pix in your integration with Mercado Pago, you must have your Pix key configured. If you don't have one, click [here](https://www.mercadopago.com.br/ajuda/17843).|Pix Key|------------
-
-> NEXT_STEP_CARD_EN
->
-> Gateway affiliation
->
-> Learn how to register an affiliation.
->
-> [Gateway affiliation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/vtex/gateway-affiliations)
+| Requirements | Description |
+| --- | --- |
+| VTEX Account | To integrate Mercado Pago solutions, you need to have a VTEX account. If you don't have one, go to [VTEX](https://vtex.com/br-pt/contato/) and select your country from the country menu located in the top right corner of the screen. |
+| Mercado Pago seller account | To make sales, you need a seller account on Mercado Pago. If you don't have one, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create one. |
+| Credentials | The [credentials](/developers/en/docs/vtex/additional-content/your-integrations/credentials) are unique passwords that we use to identify an integration in your account and they serve to securely capture payments in online stores and other applications. <br>You will need **test credentials** to test the integration and **production credentials** to receive real payments. |
+| Mercado Pago Payment APP | Make sure in your VTEX app store that the **Mercado Pago Payment APP** is installed. If it is not, you can request its installation through a ticket in [Support VTEX](https://help.vtex.com/en/support). |
+----[mlb]----| Pix Key | To configure Pix in your integration with Mercado Pago, you must have your Pix key configured. If you don't have one, click [here](https://www.mercadopago.com.br/ajuda/17843).|------------

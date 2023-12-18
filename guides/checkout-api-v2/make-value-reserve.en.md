@@ -1,12 +1,3 @@
----
-sites_supported:
-- mla
-- mlb
-- mlm
-- mpe
-- mlu
----
-
 # Reserve values
 
 A reserve of values happens when a purchase is made and its amount is reserved from the total limit of the card, ensuring that the value is kept until the completion of processing.
@@ -15,26 +6,28 @@ To carry out a reserve authorization, send a **POST** with all the necessary att
 
 [[[
 ```php
-
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-$payment = new MercadoPago\Payment();
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
-$payment->transaction_amount = 100;
-$payment->token = "ff8080814c11e237014c1ff593b57b4d";
-$payment->description = "Product title";
-$payment->installments = 1;
-$payment->payment_method_id = "visa";
-$payment->payer = array(
-"email" => "test_user_19653727@testuser.com"
-);
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-$payment->capture=false;
-
-$payment->save();
-
+  $payment = $client->create([
+    "transaction_amount" => 100.0,
+    "token" => "123456",
+    "description" => "My product",
+    "installments" => 1,
+    "payment_method_id" => "visa",
+    "payer" => [
+      "email" => "my.user@example.com",
+    ],
+    "capture" => false
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```java
@@ -58,28 +51,24 @@ client.create(request);
 
 ```
 ```node
+import { MercadoPagoConfig, Payment } from 'mercadopago';
 
-var Mercadopago = require('mercadopago');
-Mercadopago.configurations.setAccessToken(config.access_token);
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const payment = new Payment(client);
 
-var payment_data = {
+const body = {
 transaction_amount: 100,
-token: 'ff8080814c11e237014c1ff593b57b4d'
-description: 'Product title',
+token: '123456',
+description: 'My product',
 installments: 1,
 payment_method_id: 'visa',
 payer: {
-email: 'test_user_3931694@testuser.com'
+email: 'my.user@example.com',
 },
 capture: false
 };
 
-Mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function(error) {
-
-});
-
+payment.create({ body: body, requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' } }).then(console.log).catch(console.log);
 ```
 ```ruby
 
@@ -149,21 +138,23 @@ payment = payment_response["response"]
 ```curl
 
 curl -X POST \
--H 'accept: application/json' \
--H 'content-type: application/json' \
--H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-'https://api.mercadopago.com/v1/payments' \
--d '{
-"transaction_amount": 100,
-"token": "ff8080814c11e237014c1ff593b57b4d",
-"description": "Product title",
-"installations": 1,
-"payment_method_id": "visa",
-"payer": {
-"email": "test_user_19653727@testuser.com"
-},
-"capture": "false"
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payments' \
+    -d '
+{
+   "transaction_amount":100,
+   "token":"ff8080814c11e237014c1ff593b57b4d",
+   "description":"Product title",
+   "installments":1,
+   "payment_method_id":"visa",
+   "payer":{
+      "email":"test_user_3931694@testuser.com"
+   },
+   "capture":false
 }'
+
 ```
 ]]]
 
@@ -185,7 +176,9 @@ The response indicates that the payment is authorized and pending capture.
 ```
 ]]]
 
-In addition, it is also possible to return as `rejected` or `pending`. Please note that authorized values cannot be used by your client until they are captured. We recommend capturing as soon as possible.
+In addition, it is also possible to return as `rejected` or `pending`. In case it returns as `pending`, you should pay attention to the notifications to know what the final status of the payment is.
+
+Please note that authorized values cannot be used by your client until they are captured. We recommend capturing as soon as possible.
 
 
 ----[mla, mlm]----
@@ -211,11 +204,3 @@ In addition, it is also possible to return as `rejected` or `pending`. Please no
 >
 > The reservation will be valid for 5 days. If you do not capture it within this period, it will be canceled. In addition, it is necessary to save the payment ID in order to complete the process.
 ------------
-
-> NEXT_STEP_CARD_EN
->
-> Capture authorized payment
->
-> Learn about the available ways to capture an authorized payment.
->
-> [Capture authorized payment](/developers/en/docs/checkout-api/payment-management/capture-authorized-payment)

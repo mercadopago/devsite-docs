@@ -1,0 +1,3388 @@
+{
+  "url": "https://api.mercadopago.com",
+  "paths": {
+    "/v1/customers/{customer_id}/cards": {
+      "get": {
+        "tags": [
+          "checkout-api",
+          "checkout-bricks"
+        ],
+        "description": {
+          "en": "Consult a client's saved cards in order to be able to show them when making a payment.",
+          "pt": "Consulte a lista de cartões armazenados de um cliente a fim de mostrá-los no momento de fazer um pagamento",
+          "es": "Consulta el listado de tarjetas almacenadas de un cliente para poder mostrarlas al momento de hacer un pago"
+        },
+        "parameters": [
+          {
+            "name": "customer_id",
+            "in": "path",
+            "description": {
+              "en": "Customer's Id",
+              "pt": "Customer's Id",
+              "es": "Customer's Id"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "es": "success",
+              "pt": "success",
+              "en": "success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "description": {
+                          "en": "Card ID.",
+                          "pt": "Identificador de cartão",
+                          "es": "Identificador de tarjeta"
+                        },
+                        "example": "277090284"
+                      },
+                      "date_registered": {
+                        "type": "string",
+                        "description": null
+                      },
+                      "date_created": {
+                        "type": "string",
+                        "format": "date",
+                        "description": {
+                          "en": "Card's date created.",
+                          "pt": "Data de criação do cartão",
+                          "es": "Fecha de creación de la tarjeta"
+                        },
+                        "example": "2018-07-18T13:28:32.000-04:00"
+                      },
+                      "date_last_updated": {
+                        "type": "string",
+                        "format": "date",
+                        "description": {
+                          "en": "Card's last modified date.",
+                          "pt": "Última data de atualização do cartão",
+                          "es": "Última fecha de actualización de la tarjeta"
+                        },
+                        "example": "2018-08-07T12:21:32.243-04:00"
+                      },
+                      "customer_id": {
+                        "type": "string",
+                        "description": {
+                          "en": "Customer ID.",
+                          "pt": "Identificador de cliente",
+                          "es": "Identificador de cliente"
+                        },
+                        "example": "329653963-byLEdchVPhPc4H"
+                      },
+                      "expiration_month": {
+                        "type": "number",
+                        "description": {
+                          "en": "Card's expiration month.",
+                          "pt": "Mês de validade do cartão",
+                          "es": "Mes de expiración de la tarjeta"
+                        },
+                        "example": 11
+                      },
+                      "expiration_year": {
+                        "type": "number",
+                        "description": {
+                          "en": "Card's expiration year.",
+                          "pt": "Ano de validade do cartão",
+                          "es": "Año de expiración de la tarjeta"
+                        },
+                        "example": 2020
+                      },
+                      "first_six_digits": {
+                        "type": "string",
+                        "description": {
+                          "en": "Card's first six digits.",
+                          "pt": "Os primeiros seis dígitos do cartão",
+                          "es": "Primeros seis dígitos de la tarjeta"
+                        },
+                        "example": "423564"
+                      },
+                      "last_four_digits": {
+                        "type": "string",
+                        "description": {
+                          "en": "Card's last four digits.",
+                          "pt": "Últimos quatro dígitos do cartão",
+                          "es": "Últimos cuatro dígitos de la tarjeta"
+                        },
+                        "example": "5682"
+                      },
+                      "payment_method": {
+                        "type": "object",
+                        "description": {
+                          "en": "Payment method information.",
+                          "pt": "Informação dos meios de pagamento",
+                          "es": "Información de los medios de pago"
+                        },
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "description": {
+                              "en": "Payment method ID.",
+                              "pt": "Identificador do método de pagamento",
+                              "es": "Identificador del método de pago"
+                            },
+                            "example": "visa"
+                          },
+                          "name": {
+                            "type": "string",
+                            "description": {
+                              "en": "Payment method name.",
+                              "pt": "Nome do meio de pagamento",
+                              "es": "Nombre del medio de pago"
+                            },
+                            "example": "Visa"
+                          },
+                          "payment_type_id": {
+                            "type": "string",
+                            "description": {
+                              "en": "Payment method type.",
+                              "pt": "Tipo do meio de pagamento",
+                              "es": "Tipo del medio de pago"
+                            },
+                            "example": "credit_card"
+                          },
+                          "thumbnail": {
+                            "type": "string",
+                            "description": {
+                              "en": "Payment method thumbnail.",
+                              "pt": "Thumbnail do meio de pagamento",
+                              "es": "Thumbnail del medio de pago"
+                            },
+                            "example": "http://img.mlstatic.com/org-img/MP3/API/logos/visa.gif"
+                          },
+                          "secure_thumbnail": {
+                            "type": "string",
+                            "description": {
+                              "en": "Payment method secure thumbnail.",
+                              "pt": "Secure thumbnail do meio de pagamento",
+                              "es": "Secure thumbnail del medio de pago"
+                            },
+                            "example": "https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif"
+                          }
+                        }
+                      },
+                      "security_code": {
+                        "type": "object",
+                        "description": {
+                          "en": "Security code information.",
+                          "pt": "Informação do código de segurança",
+                          "es": "Información del código de seguridad"
+                        },
+                        "properties": {
+                          "length": {
+                            "type": "number",
+                            "description": {
+                              "en": "Security code's length.",
+                              "pt": "Comprimento do código de segurança",
+                              "es": "Longitud del código de seguridad"
+                            },
+                            "example": 3
+                          },
+                          "card_location": {
+                            "type": "string",
+                            "description": {
+                              "en": "Security code's card location.",
+                              "pt": "Localização do código de segurança no cartão",
+                              "es": "Ubicación del código de seguridad en la tarjeta"
+                            },
+                            "example": "back"
+                          }
+                        }
+                      },
+                      "issuer": {
+                        "type": "object",
+                        "description": {
+                          "en": "Issuer information.",
+                          "pt": "Informações do emitente",
+                          "es": "Información del emisor"
+                        },
+                        "properties": {
+                          "id": {
+                            "type": "number",
+                            "description": {
+                              "en": "Issuer Id.",
+                              "pt": "Id do remetente",
+                              "es": "Identificador del emisor"
+                            },
+                            "example": 25
+                          },
+                          "name": {
+                            "type": "string",
+                            "description": {
+                              "en": "Issuer name.",
+                              "pt": "Nome do emitente",
+                              "es": "Nombre del emisor"
+                            },
+                            "example": "Visa"
+                          }
+                        }
+                      },
+                      "cardholder": {
+                        "type": "object",
+                        "description": {
+                          "en": "Card holder information.",
+                          "pt": "Informações do dono do cartão",
+                          "es": "Información del dueño de la tarjeta"
+                        },
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "description": {
+                              "en": "Card holder name.",
+                              "pt": "O nome",
+                              "es": "Nombre"
+                            },
+                            "example": "APRO"
+                          },
+                          "identification": {
+                            "type": "object",
+                            "description": {
+                              "en": "Identification information.",
+                              "pt": "Informação de identificação",
+                              "es": "Información de la identificación"
+                            },
+                            "properties": {
+                              "number": {
+                                "type": "string",
+                                "description": {
+                                  "en": "Identification number.",
+                                  "pt": "Número de identificação",
+                                  "es": "Número de identificación"
+                                },
+                                "example": "19119119100"
+                              },
+                              "subtype": {
+                                "type": "string",
+                                "description": {
+                                  "es": "Identification subtype.",
+                                  "pt": "Identification subtype.",
+                                  "en": "Identification subtype."
+                                }
+                              },
+                              "type": {
+                                "type": "string",
+                                "description": {
+                                  "en": "Identification type.",
+                                  "pt": "Tipo de identificação",
+                                  "es": "Tipo de identificación"
+                                },
+                                "example": "CPF"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "user_id": {
+                        "type": "string",
+                        "example": "12123adfasdf123u4u"
+                      },
+                      "live_mode": {
+                        "type": "boolean",
+                        "example": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "100",
+                          "description": {
+                            "en": "the credentials are required.",
+                            "es": "the credentials are required.",
+                            "pt": "the credentials are required."
+                          }
+                        },
+                        {
+                          "title": "101",
+                          "description": {
+                            "en": "the customer already exist.",
+                            "es": "the customer already exist.",
+                            "pt": "the customer already exist."
+                          }
+                        },
+                        {
+                          "title": "102",
+                          "description": {
+                            "en": "missing customer id.",
+                            "es": "missing customer id.",
+                            "pt": "missing customer id."
+                          }
+                        },
+                        {
+                          "title": "103",
+                          "description": {
+                            "en": "parameter must be an object",
+                            "es": "parameter must be an object",
+                            "pt": "parameter must be an object"
+                          }
+                        },
+                        {
+                          "title": "104",
+                          "description": {
+                            "en": "parameter length is too large.",
+                            "es": "parameter length is too large.",
+                            "pt": "parameter length is too large."
+                          }
+                        },
+                        {
+                          "title": "105",
+                          "description": {
+                            "en": "the customer id is invalid.",
+                            "es": "the customer id is invalid.",
+                            "pt": "the customer id is invalid."
+                          }
+                        },
+                        {
+                          "title": "106",
+                          "description": {
+                            "en": "the email format is invalid.",
+                            "es": "the email format is invalid.",
+                            "pt": "the email format is invalid."
+                          }
+                        },
+                        {
+                          "title": "107",
+                          "description": {
+                            "en": "the first_name is invalid.",
+                            "es": "the first_name is invalid.",
+                            "pt": "the first_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "108",
+                          "description": {
+                            "en": "the last_name is invalid.",
+                            "es": "the last_name is invalid.",
+                            "pt": "the last_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "109",
+                          "description": {
+                            "en": "the phone.area_code is invalid.",
+                            "es": "the phone.area_code is invalid.",
+                            "pt": "the phone.area_code is invalid."
+                          }
+                        },
+                        {
+                          "title": "110",
+                          "description": {
+                            "en": "the phone.number is invalid.",
+                            "es": "the phone.number is invalid.",
+                            "pt": "the phone.number is invalid."
+                          }
+                        },
+                        {
+                          "title": "111",
+                          "description": {
+                            "en": "the identification.type is invalid.",
+                            "es": "the identification.type is invalid.",
+                            "pt": "the identification.type is invalid."
+                          }
+                        },
+                        {
+                          "title": "112",
+                          "description": {
+                            "en": "the identification.number is invalid.",
+                            "es": "the identification.number is invalid.",
+                            "pt": "the identification.number is invalid."
+                          }
+                        },
+                        {
+                          "title": "113",
+                          "description": {
+                            "en": "the address.zip_code is invalid.",
+                            "es": "the address.zip_code is invalid.",
+                            "pt": "the address.zip_code is invalid."
+                          }
+                        },
+                        {
+                          "title": "114",
+                          "description": {
+                            "en": "the address.street_name is invalid.",
+                            "es": "the address.street_name is invalid.",
+                            "pt": "the address.street_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "115",
+                          "description": {
+                            "en": "the date_registered format is invalid.",
+                            "es": "the date_registered format is invalid.",
+                            "pt": "the date_registered format is invalid."
+                          }
+                        },
+                        {
+                          "title": "116",
+                          "description": {
+                            "en": "the description is invalid.",
+                            "es": "the description is invalid.",
+                            "pt": "the description is invalid."
+                          }
+                        },
+                        {
+                          "title": "117",
+                          "description": {
+                            "en": "the metadata is invalid.",
+                            "es": "the metadata is invalid.",
+                            "pt": "the metadata is invalid."
+                          }
+                        },
+                        {
+                          "title": "118",
+                          "description": {
+                            "en": "the body must be a Json object",
+                            "es": "the body must be a Json object",
+                            "pt": "the body must be a Json object"
+                          }
+                        },
+                        {
+                          "title": "119",
+                          "description": {
+                            "en": "the card is required.",
+                            "es": "the card is required.",
+                            "pt": "the card is required."
+                          }
+                        },
+                        {
+                          "title": "120",
+                          "description": {
+                            "en": "card not found.",
+                            "es": "card not found.",
+                            "pt": "card not found."
+                          }
+                        },
+                        {
+                          "title": "121",
+                          "description": {
+                            "en": "the card is invalid.",
+                            "es": "the card is invalid.",
+                            "pt": "the card is invalid."
+                          }
+                        },
+                        {
+                          "title": "122",
+                          "description": {
+                            "en": "the card data is invalid.",
+                            "es": "the card data is invalid.",
+                            "pt": "the card data is invalid."
+                          }
+                        },
+                        {
+                          "title": "123",
+                          "description": {
+                            "en": "the payment_method_id is required.",
+                            "es": "the payment_method_id is required.",
+                            "pt": "the payment_method_id is required."
+                          }
+                        },
+                        {
+                          "title": "124",
+                          "description": {
+                            "en": "the issuer_id is required.",
+                            "es": "the issuer_id is required.",
+                            "pt": "the issuer_id is required."
+                          }
+                        },
+                        {
+                          "title": "125",
+                          "description": {
+                            "en": "invalid parameters.",
+                            "es": "invalid parameters.",
+                            "pt": "invalid parameters."
+                          }
+                        },
+                        {
+                          "title": "126",
+                          "description": {
+                            "en": "invalid parameter. You cannot update the email.",
+                            "es": "invalid parameter. You cannot update the email.",
+                            "pt": "invalid parameter. You cannot update the email."
+                          }
+                        },
+                        {
+                          "title": "127",
+                          "description": {
+                            "en": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.",
+                            "es": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.",
+                            "pt": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id."
+                          }
+                        },
+                        {
+                          "title": "128",
+                          "description": {
+                            "en": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.",
+                            "es": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.",
+                            "pt": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'."
+                          }
+                        },
+                        {
+                          "title": "129",
+                          "description": {
+                            "en": "the customer has reached the maximum allowed number of cards.",
+                            "es": "the customer has reached the maximum allowed number of cards.",
+                            "pt": "the customer has reached the maximum allowed number of cards."
+                          }
+                        },
+                        {
+                          "title": "140",
+                          "description": {
+                            "en": "invalid card owner.",
+                            "es": "invalid card owner.",
+                            "pt": "invalid card owner."
+                          }
+                        },
+                        {
+                          "title": "150",
+                          "description": {
+                            "en": "invalid users involved.",
+                            "es": "invalid users involved.",
+                            "pt": "invalid users involved."
+                          }
+                        },
+                        {
+                          "title": "200",
+                          "description": {
+                            "en": "invalid range format (range=:date_parameter:after::date_from,before::date_to).",
+                            "es": "invalid range format (range=:date_parameter:after::date_from,before::date_to).",
+                            "pt": "invalid range format (range=:date_parameter:after::date_from,before::date_to)."
+                          }
+                        },
+                        {
+                          "title": "201",
+                          "description": {
+                            "en": "range attribute must belong to date entity.",
+                            "es": "range attribute must belong to date entity.",
+                            "pt": "range attribute must belong to date entity."
+                          }
+                        },
+                        {
+                          "title": "202",
+                          "description": {
+                            "en": "invalid 'after' parameter. It should be date[iso_8601].",
+                            "es": "invalid 'after' parameter. It should be date[iso_8601].",
+                            "pt": "invalid 'after' parameter. It should be date[iso_8601]."
+                          }
+                        },
+                        {
+                          "title": "203",
+                          "description": {
+                            "en": "invalid 'before' parameter. It should be date[iso_8601].",
+                            "es": "invalid 'before' parameter. It should be date[iso_8601].",
+                            "pt": "invalid 'before' parameter. It should be date[iso_8601]."
+                          }
+                        },
+                        {
+                          "title": "204",
+                          "description": {
+                            "en": "invalid filters format.",
+                            "es": "invalid filters format.",
+                            "pt": "invalid filters format."
+                          }
+                        },
+                        {
+                          "title": "205",
+                          "description": {
+                            "en": "invalid query format.",
+                            "es": "invalid query format.",
+                            "pt": "invalid query format."
+                          }
+                        },
+                        {
+                          "title": "206",
+                          "description": {
+                            "en": "attributes to sort must belong to 'customer' entity.",
+                            "es": "attributes to sort must belong to 'customer' entity.",
+                            "pt": "attributes to sort must belong to 'customer' entity."
+                          }
+                        },
+                        {
+                          "title": "207",
+                          "description": {
+                            "en": "order filter must be 'asc' or 'desc'.",
+                            "es": "order filter must be 'asc' or 'desc'.",
+                            "pt": "order filter must be 'asc' or 'desc'."
+                          }
+                        },
+                        {
+                          "title": "208",
+                          "description": {
+                            "en": "invalid 'sort' parameter format.",
+                            "es": "invalid 'sort' parameter format.",
+                            "pt": "invalid 'sort' parameter format."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unauthorized",
+                          "description": {
+                            "en": "unauthorized.",
+                            "es": "unauthorized.",
+                            "pt": "unauthorized."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "not_found",
+                          "description": {
+                            "en": "not_found.",
+                            "es": "not_found.",
+                            "pt": "not_found."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Get customer cards",
+          "pt": "Obter cartões de um cliente",
+          "es": "Obtener tarjetas de un cliente"
+        }
+      },
+      "post": {
+        "tags": [
+          "checkout-pro",
+          "checkout-api",
+          "checkout-bricks"
+        ],
+        "description": {
+          "en": "Store the card reference used by the customer in the payment securely on our servers to avoid asking for all the data in future transactions",
+          "pt": "Armazena com segurança em nossos servidores a referência a um cartão utilizado pelo cliente no pagamento para evitar pedir todos os dados em transações futuras",
+          "es": "Almacena de manera segura en nuestro servidores la referencia de la tarjeta utilizada por el cliente en el pago para evitar volver a pedir todos los datos en futuras transacciones"
+        },
+        "parameters": [
+          {
+            "name": "customer_id",
+            "in": "path",
+            "description": {
+              "en": "Customer's Id",
+              "pt": "Customer's Id",
+              "es": "Customer's Id"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string",
+                    "description": {
+                      "es": "Card Token",
+                      "pt": "Card Token",
+                      "en": "Card Token"
+                    },
+                    "example": "9b2d63e00d66a8c721607214ceda233a"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "es": "success",
+              "pt": "success",
+              "en": "success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "example": 1562188766852,
+                      "description": {
+                        "es": "id",
+                        "pt": "id",
+                        "en": "id"
+                      }
+                    },
+                    "expiration_month": {
+                      "type": "number",
+                      "example": 6,
+                      "description": {
+                        "es": "expiration_month",
+                        "pt": "expiration_month",
+                        "en": "expiration_month"
+                      }
+                    },
+                    "expiration_year": {
+                      "type": "number",
+                      "example": 2023,
+                      "description": {
+                        "es": "expiration_year",
+                        "pt": "expiration_year",
+                        "en": "expiration_year"
+                      }
+                    },
+                    "first_six_digits": {
+                      "type": "string",
+                      "example": 423564,
+                      "description": {
+                        "es": "first_six_digits",
+                        "pt": "first_six_digits",
+                        "en": "first_six_digits"
+                      }
+                    },
+                    "last_four_digits": {
+                      "type": "string",
+                      "example": 5682,
+                      "description": {
+                        "es": "last_four_digits",
+                        "pt": "last_four_digits",
+                        "en": "last_four_digits"
+                      }
+                    },
+                    "payment_method": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "example": "visa",
+                          "description": {
+                            "es": "id",
+                            "pt": "id",
+                            "en": "id"
+                          }
+                        },
+                        "name": {
+                          "type": "string",
+                          "example": "visa",
+                          "description": {
+                            "es": "name",
+                            "pt": "name",
+                            "en": "name"
+                          }
+                        },
+                        "payment_type_id": {
+                          "type": "string",
+                          "example": "credit_card",
+                          "description": {
+                            "es": "payment_type_id",
+                            "pt": "payment_type_id",
+                            "en": "payment_type_id"
+                          }
+                        },
+                        "thumbnail": {
+                          "type": "string",
+                          "example": "http://img.mlstatic.com/org-img/MP3/API/logos/visa.gif",
+                          "description": {
+                            "es": "thumbnail",
+                            "pt": "thumbnail",
+                            "en": "thumbnail"
+                          }
+                        },
+                        "secure_thumbnail": {
+                          "type": "string",
+                          "example": "https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif",
+                          "description": {
+                            "es": "secure_thumbnail",
+                            "pt": "secure_thumbnail",
+                            "en": "secure_thumbnail"
+                          }
+                        }
+                      },
+                      "description": {
+                        "es": "payment_method",
+                        "pt": "payment_method",
+                        "en": "payment_method"
+                      }
+                    },
+                    "security_code": {
+                      "type": "object",
+                      "properties": {
+                        "length": {
+                          "type": "number",
+                          "example": 3,
+                          "description": {
+                            "es": "length",
+                            "pt": "length",
+                            "en": "length"
+                          }
+                        },
+                        "card_location": {
+                          "type": "string",
+                          "example": "back",
+                          "description": {
+                            "es": "card_location",
+                            "pt": "card_location",
+                            "en": "card_location"
+                          }
+                        }
+                      },
+                      "description": {
+                        "es": "security_code",
+                        "pt": "security_code",
+                        "en": "security_code"
+                      }
+                    },
+                    "issuer": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "number",
+                          "example": 25,
+                          "description": {
+                            "es": "id",
+                            "pt": "id",
+                            "en": "id"
+                          }
+                        },
+                        "name": {
+                          "type": "string",
+                          "example": "Visa",
+                          "description": {
+                            "es": "name",
+                            "pt": "name",
+                            "en": "name"
+                          }
+                        }
+                      },
+                      "description": {
+                        "es": "issuer",
+                        "pt": "issuer",
+                        "en": "issuer"
+                      }
+                    },
+                    "cardholder": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "example": "APRO",
+                          "description": {
+                            "es": "name",
+                            "pt": "name",
+                            "en": "name"
+                          }
+                        },
+                        "identification": {
+                          "type": "object",
+                          "properties": {
+                            "number": {
+                              "type": "string",
+                              "example": 19119119100,
+                              "description": {
+                                "es": "number",
+                                "pt": "number",
+                                "en": "number"
+                              }
+                            },
+                            "type": {
+                              "type": "string",
+                              "example": "CPF",
+                              "description": {
+                                "es": "type",
+                                "pt": "type",
+                                "en": "type"
+                              }
+                            }
+                          },
+                          "description": {
+                            "es": "identification",
+                            "pt": "identification",
+                            "en": "identification"
+                          }
+                        }
+                      },
+                      "description": {
+                        "es": "cardholder",
+                        "pt": "cardholder",
+                        "en": "cardholder"
+                      }
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "example": "2019-07-03T21:15:35.000Z",
+                      "description": {
+                        "es": "date_created",
+                        "pt": "date_created",
+                        "en": "date_created"
+                      }
+                    },
+                    "date_last_updated": {
+                      "type": "string",
+                      "example": "2019-07-03T21:19:18.000Z",
+                      "description": {
+                        "es": "date_last_updated",
+                        "pt": "date_last_updated",
+                        "en": "date_last_updated"
+                      }
+                    },
+                    "customer_id": {
+                      "type": "string",
+                      "example": "448870796-7ZjwhKGxILixxN",
+                      "description": {
+                        "es": "customer_id",
+                        "pt": "customer_id",
+                        "en": "customer_id"
+                      }
+                    },
+                    "user_id": {
+                      "type": "string",
+                      "example": 448870796,
+                      "description": {
+                        "es": "user_id",
+                        "pt": "user_id",
+                        "en": "user_id"
+                      }
+                    },
+                    "live_mode": {
+                      "type": "boolean",
+                      "example": true,
+                      "description": {
+                        "es": "live_mode",
+                        "pt": "live_mode",
+                        "en": "live_mode"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "100",
+                          "description": {
+                            "en": "the credentials are required.",
+                            "es": "the credentials are required.",
+                            "pt": "the credentials are required."
+                          }
+                        },
+                        {
+                          "title": "101",
+                          "description": {
+                            "en": "the customer already exist.",
+                            "es": "the customer already exist.",
+                            "pt": "the customer already exist."
+                          }
+                        },
+                        {
+                          "title": "102",
+                          "description": {
+                            "en": "missing customer id.",
+                            "es": "missing customer id.",
+                            "pt": "missing customer id."
+                          }
+                        },
+                        {
+                          "title": "103",
+                          "description": {
+                            "en": "parameter must be an object",
+                            "es": "parameter must be an object",
+                            "pt": "parameter must be an object"
+                          }
+                        },
+                        {
+                          "title": "104",
+                          "description": {
+                            "en": "parameter length is too large.",
+                            "es": "parameter length is too large.",
+                            "pt": "parameter length is too large."
+                          }
+                        },
+                        {
+                          "title": "105",
+                          "description": {
+                            "en": "the customer id is invalid.",
+                            "es": "the customer id is invalid.",
+                            "pt": "the customer id is invalid."
+                          }
+                        },
+                        {
+                          "title": "106",
+                          "description": {
+                            "en": "the email format is invalid.",
+                            "es": "the email format is invalid.",
+                            "pt": "the email format is invalid."
+                          }
+                        },
+                        {
+                          "title": "107",
+                          "description": {
+                            "en": "the first_name is invalid.",
+                            "es": "the first_name is invalid.",
+                            "pt": "the first_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "108",
+                          "description": {
+                            "en": "the last_name is invalid.",
+                            "es": "the last_name is invalid.",
+                            "pt": "the last_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "109",
+                          "description": {
+                            "en": "the phone.area_code is invalid.",
+                            "es": "the phone.area_code is invalid.",
+                            "pt": "the phone.area_code is invalid."
+                          }
+                        },
+                        {
+                          "title": "110",
+                          "description": {
+                            "en": "the phone.number is invalid.",
+                            "es": "the phone.number is invalid.",
+                            "pt": "the phone.number is invalid."
+                          }
+                        },
+                        {
+                          "title": "111",
+                          "description": {
+                            "en": "the identification.type is invalid.",
+                            "es": "the identification.type is invalid.",
+                            "pt": "the identification.type is invalid."
+                          }
+                        },
+                        {
+                          "title": "112",
+                          "description": {
+                            "en": "the identification.number is invalid.",
+                            "es": "the identification.number is invalid.",
+                            "pt": "the identification.number is invalid."
+                          }
+                        },
+                        {
+                          "title": "113",
+                          "description": {
+                            "en": "the address.zip_code is invalid.",
+                            "es": "the address.zip_code is invalid.",
+                            "pt": "the address.zip_code is invalid."
+                          }
+                        },
+                        {
+                          "title": "114",
+                          "description": {
+                            "en": "the address.street_name is invalid.",
+                            "es": "the address.street_name is invalid.",
+                            "pt": "the address.street_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "115",
+                          "description": {
+                            "en": "the date_registered format is invalid.",
+                            "es": "the date_registered format is invalid.",
+                            "pt": "the date_registered format is invalid."
+                          }
+                        },
+                        {
+                          "title": "116",
+                          "description": {
+                            "en": "the description is invalid.",
+                            "es": "the description is invalid.",
+                            "pt": "the description is invalid."
+                          }
+                        },
+                        {
+                          "title": "117",
+                          "description": {
+                            "en": "the metadata is invalid.",
+                            "es": "the metadata is invalid.",
+                            "pt": "the metadata is invalid."
+                          }
+                        },
+                        {
+                          "title": "118",
+                          "description": {
+                            "en": "the body must be a Json object",
+                            "es": "the body must be a Json object",
+                            "pt": "the body must be a Json object"
+                          }
+                        },
+                        {
+                          "title": "119",
+                          "description": {
+                            "en": "the card is required.",
+                            "es": "the card is required.",
+                            "pt": "the card is required."
+                          }
+                        },
+                        {
+                          "title": "120",
+                          "description": {
+                            "en": "card not found.",
+                            "es": "card not found.",
+                            "pt": "card not found."
+                          }
+                        },
+                        {
+                          "title": "121",
+                          "description": {
+                            "en": "the card is invalid.",
+                            "es": "the card is invalid.",
+                            "pt": "the card is invalid."
+                          }
+                        },
+                        {
+                          "title": "122",
+                          "description": {
+                            "en": "the card data is invalid.",
+                            "es": "the card data is invalid.",
+                            "pt": "the card data is invalid."
+                          }
+                        },
+                        {
+                          "title": "123",
+                          "description": {
+                            "en": "the payment_method_id is required.",
+                            "es": "the payment_method_id is required.",
+                            "pt": "the payment_method_id is required."
+                          }
+                        },
+                        {
+                          "title": "124",
+                          "description": {
+                            "en": "the issuer_id is required.",
+                            "es": "the issuer_id is required.",
+                            "pt": "the issuer_id is required."
+                          }
+                        },
+                        {
+                          "title": "125",
+                          "description": {
+                            "en": "invalid parameters.",
+                            "es": "invalid parameters.",
+                            "pt": "invalid parameters."
+                          }
+                        },
+                        {
+                          "title": "126",
+                          "description": {
+                            "en": "invalid parameter. You cannot update the email.",
+                            "es": "invalid parameter. You cannot update the email.",
+                            "pt": "invalid parameter. You cannot update the email."
+                          }
+                        },
+                        {
+                          "title": "127",
+                          "description": {
+                            "en": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.",
+                            "es": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.",
+                            "pt": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id."
+                          }
+                        },
+                        {
+                          "title": "128",
+                          "description": {
+                            "en": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.",
+                            "es": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.",
+                            "pt": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'."
+                          }
+                        },
+                        {
+                          "title": "129",
+                          "description": {
+                            "en": "the customer has reached the maximum allowed number of cards.",
+                            "es": "the customer has reached the maximum allowed number of cards.",
+                            "pt": "the customer has reached the maximum allowed number of cards."
+                          }
+                        },
+                        {
+                          "title": "140",
+                          "description": {
+                            "en": "invalid card owner.",
+                            "es": "invalid card owner.",
+                            "pt": "invalid card owner."
+                          }
+                        },
+                        {
+                          "title": "150",
+                          "description": {
+                            "en": "invalid users involved.",
+                            "es": "invalid users involved.",
+                            "pt": "invalid users involved."
+                          }
+                        },
+                        {
+                          "title": "200",
+                          "description": {
+                            "en": "invalid range format (range=:date_parameter:after::date_from,before::date_to).",
+                            "es": "invalid range format (range=:date_parameter:after::date_from,before::date_to).",
+                            "pt": "invalid range format (range=:date_parameter:after::date_from,before::date_to)."
+                          }
+                        },
+                        {
+                          "title": "201",
+                          "description": {
+                            "en": "range attribute must belong to date entity.",
+                            "es": "range attribute must belong to date entity.",
+                            "pt": "range attribute must belong to date entity."
+                          }
+                        },
+                        {
+                          "title": "202",
+                          "description": {
+                            "en": "invalid 'after' parameter. It should be date[iso_8601].",
+                            "es": "invalid 'after' parameter. It should be date[iso_8601].",
+                            "pt": "invalid 'after' parameter. It should be date[iso_8601]."
+                          }
+                        },
+                        {
+                          "title": "203",
+                          "description": {
+                            "en": "invalid 'before' parameter. It should be date[iso_8601].",
+                            "es": "invalid 'before' parameter. It should be date[iso_8601].",
+                            "pt": "invalid 'before' parameter. It should be date[iso_8601]."
+                          }
+                        },
+                        {
+                          "title": "204",
+                          "description": {
+                            "en": "invalid filters format.",
+                            "es": "invalid filters format.",
+                            "pt": "invalid filters format."
+                          }
+                        },
+                        {
+                          "title": "205",
+                          "description": {
+                            "en": "invalid query format.",
+                            "es": "invalid query format.",
+                            "pt": "invalid query format."
+                          }
+                        },
+                        {
+                          "title": "206",
+                          "description": {
+                            "en": "attributes to sort must belong to 'customer' entity.",
+                            "es": "attributes to sort must belong to 'customer' entity.",
+                            "pt": "attributes to sort must belong to 'customer' entity."
+                          }
+                        },
+                        {
+                          "title": "207",
+                          "description": {
+                            "en": "order filter must be 'asc' or 'desc'.",
+                            "es": "order filter must be 'asc' or 'desc'.",
+                            "pt": "order filter must be 'asc' or 'desc'."
+                          }
+                        },
+                        {
+                          "title": "208",
+                          "description": {
+                            "en": "invalid 'sort' parameter format.",
+                            "es": "invalid 'sort' parameter format.",
+                            "pt": "invalid 'sort' parameter format."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unauthorized",
+                          "description": {
+                            "en": "unauthorized.",
+                            "es": "unauthorized.",
+                            "pt": "unauthorized."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "not_found",
+                          "description": {
+                            "en": "not_found.",
+                            "es": "not_found.",
+                            "pt": "not_found."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Save card",
+          "pt": "Salvar cartão",
+          "es": "Guardar tarjeta"
+        }
+      }
+    },
+    "/v1/customers/{customer_id}/cards/{id}": {
+      "get": {
+        "tags": [
+          "checkout-pro",
+          "checkout-api",
+          "checkout-bricks"
+        ],
+        "description": {
+          "en": "Check the reference information for a saved card associated with a customer",
+          "pt": "Consultar as informações de referência de um cartão armazenado associado a um cliente",
+          "es": "Consulta la información de referencia de una tarjeta guardada asociada a un cliente"
+        },
+        "parameters": [
+          {
+            "name": "customer_id",
+            "in": "path",
+            "description": {
+              "en": "Customer's Id",
+              "pt": "Customer's Id",
+              "es": "Customer's Id"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": {
+              "en": "Card's Id",
+              "pt": "Card's Id",
+              "es": "Card's Id"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "es": "success",
+              "pt": "success",
+              "en": "success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "description": {
+                        "en": "Card ID.",
+                        "pt": "Identificador de cartão",
+                        "es": "Identificador de tarjeta"
+                      },
+                      "example": "8987269652"
+                    },
+                    "date_registered": {
+                      "type": "string",
+                      "description": null
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "format": "date",
+                      "description": {
+                        "en": "Card's date created.",
+                        "pt": "Data de criação do cartão",
+                        "es": "Fecha de creación de la tarjeta"
+                      },
+                      "example": "2021-03-16T16:08:20.592-04:00"
+                    },
+                    "date_last_updated": {
+                      "type": "string",
+                      "format": "date",
+                      "description": {
+                        "en": "Card's last modified date.",
+                        "pt": "Última data de atualização do cartão",
+                        "es": "Última fecha de actualización de la tarjeta"
+                      },
+                      "example": "2021-03-16T16:08:20.592-04:00"
+                    },
+                    "customer_id": {
+                      "type": "string",
+                      "description": {
+                        "en": "Customer ID.",
+                        "pt": "Identificador de cliente",
+                        "es": "Identificador de cliente"
+                      },
+                      "example": "470183340-cpunOI7UsIHlHr"
+                    },
+                    "expiration_month": {
+                      "type": "number",
+                      "description": {
+                        "en": "Card's expiration month.",
+                        "pt": "Mês de validade do cartão",
+                        "es": "Mes de expiración de la tarjeta"
+                      },
+                      "example": 6
+                    },
+                    "expiration_year": {
+                      "type": "number",
+                      "description": {
+                        "en": "Card's expiration year.",
+                        "pt": "Ano de validade do cartão",
+                        "es": "Año de expiración de la tarjeta"
+                      },
+                      "example": 2023
+                    },
+                    "first_six_digits": {
+                      "type": "string",
+                      "description": {
+                        "en": "Card's first six digits.",
+                        "pt": "Os primeiros seis dígitos do cartão",
+                        "es": "Primeros seis dígitos de la tarjeta"
+                      },
+                      "example": "503143"
+                    },
+                    "last_four_digits": {
+                      "type": "string",
+                      "description": {
+                        "en": "Card's last four digits.",
+                        "pt": "Últimos quatro dígitos do cartão",
+                        "es": "Últimos cuatro dígitos de la tarjeta"
+                      },
+                      "example": "6351"
+                    },
+                    "payment_method": {
+                      "type": "object",
+                      "description": {
+                        "en": "Payment method information.",
+                        "pt": "Informação dos meios de pagamento",
+                        "es": "Información de los medios de pago"
+                      },
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "description": {
+                            "en": "Payment method ID.",
+                            "pt": "Identificador do método de pagamento",
+                            "es": "Identificador del método de pago"
+                          },
+                          "example": "master"
+                        },
+                        "name": {
+                          "type": "string",
+                          "description": {
+                            "en": "Payment method name.",
+                            "pt": "Nome do meio de pagamento",
+                            "es": "Nombre del medio de pago"
+                          },
+                          "example": "Mastercard"
+                        },
+                        "payment_type_id": {
+                          "type": "string",
+                          "description": {
+                            "en": "Payment method type.",
+                            "pt": "Tipo do meio de pagamento",
+                            "es": "Tipo del medio de pago"
+                          },
+                          "example": "credit_card"
+                        },
+                        "thumbnail": {
+                          "type": "string",
+                          "description": {
+                            "en": "Payment method thumbnail.",
+                            "pt": "Thumbnail do meio de pagamento",
+                            "es": "Thumbnail del medio de pago"
+                          },
+                          "example": "http://img.mlstatic.com/org-img/MP3/API/logos/master.gif"
+                        },
+                        "secure_thumbnail": {
+                          "type": "string",
+                          "description": {
+                            "en": "Payment method secure thumbnail.",
+                            "pt": "Secure thumbnail do meio de pagamento",
+                            "es": "Secure thumbnail del medio de pago"
+                          },
+                          "example": "https://www.mercadopago.com/org-img/MP3/API/logos/master.gif"
+                        }
+                      }
+                    },
+                    "security_code": {
+                      "type": "object",
+                      "description": {
+                        "en": "Security code information.",
+                        "pt": "Informação do código de segurança",
+                        "es": "Información del código de seguridad"
+                      },
+                      "properties": {
+                        "length": {
+                          "type": "number",
+                          "description": {
+                            "en": "Security code's length.",
+                            "pt": "Comprimento do código de segurança",
+                            "es": "Longitud del código de seguridad"
+                          },
+                          "example": 3
+                        },
+                        "card_location": {
+                          "type": "string",
+                          "description": {
+                            "en": "Security code's card location.",
+                            "pt": "Localização do código de segurança no cartão",
+                            "es": "Ubicación del código de seguridad en la tarjeta"
+                          },
+                          "example": "back"
+                        }
+                      }
+                    },
+                    "issuer": {
+                      "type": "object",
+                      "description": {
+                        "en": "Issuer information.",
+                        "pt": "Informações do emitente",
+                        "es": "Información del emisor"
+                      },
+                      "properties": {
+                        "id": {
+                          "type": "number",
+                          "description": {
+                            "en": "Issuer Id.",
+                            "pt": "Id do remetente",
+                            "es": "Identificador del emisor"
+                          },
+                          "example": 24
+                        },
+                        "name": {
+                          "type": "string",
+                          "description": {
+                            "en": "Issuer name.",
+                            "pt": "Nome do emitente",
+                            "es": "Nombre del emisor"
+                          },
+                          "example": "Mastercard"
+                        }
+                      }
+                    },
+                    "cardholder": {
+                      "type": "object",
+                      "description": {
+                        "en": "Card holder information.",
+                        "pt": "Informações do dono do cartão",
+                        "es": "Información del dueño de la tarjeta"
+                      },
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "description": {
+                            "en": "Card holder name.",
+                            "pt": "O nome",
+                            "es": "Nombre"
+                          },
+                          "example": "APRO"
+                        },
+                        "identification": {
+                          "type": "object",
+                          "description": {
+                            "en": "Identification information.",
+                            "pt": "Informação de identificação",
+                            "es": "Información de la identificación"
+                          },
+                          "properties": {
+                            "number": {
+                              "type": "string",
+                              "description": {
+                                "en": "Identification number.",
+                                "pt": "Número de identificação",
+                                "es": "Número de identificación"
+                              },
+                              "example": "19119119100"
+                            },
+                            "subtype": {
+                              "type": "string",
+                              "description": {
+                                "es": "Identification subtype.",
+                                "pt": "Identification subtype.",
+                                "en": "Identification subtype."
+                              }
+                            },
+                            "type": {
+                              "type": "string",
+                              "description": {
+                                "en": "Identification type.",
+                                "pt": "Tipo de identificação",
+                                "es": "Tipo de identificación"
+                              },
+                              "example": "CPF"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "user_id": {
+                      "type": "string",
+                      "example": "470183340"
+                    },
+                    "live_mode": {
+                      "type": "boolean",
+                      "example": true
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "100",
+                          "description": {
+                            "en": "the credentials are required.",
+                            "es": "the credentials are required.",
+                            "pt": "the credentials are required."
+                          }
+                        },
+                        {
+                          "title": "101",
+                          "description": {
+                            "en": "the customer already exist.",
+                            "es": "the customer already exist.",
+                            "pt": "the customer already exist."
+                          }
+                        },
+                        {
+                          "title": "102",
+                          "description": {
+                            "en": "missing customer id.",
+                            "es": "missing customer id.",
+                            "pt": "missing customer id."
+                          }
+                        },
+                        {
+                          "title": "103",
+                          "description": {
+                            "en": "parameter must be an object",
+                            "es": "parameter must be an object",
+                            "pt": "parameter must be an object"
+                          }
+                        },
+                        {
+                          "title": "104",
+                          "description": {
+                            "en": "parameter length is too large.",
+                            "es": "parameter length is too large.",
+                            "pt": "parameter length is too large."
+                          }
+                        },
+                        {
+                          "title": "105",
+                          "description": {
+                            "en": "the customer id is invalid.",
+                            "es": "the customer id is invalid.",
+                            "pt": "the customer id is invalid."
+                          }
+                        },
+                        {
+                          "title": "106",
+                          "description": {
+                            "en": "the email format is invalid.",
+                            "es": "the email format is invalid.",
+                            "pt": "the email format is invalid."
+                          }
+                        },
+                        {
+                          "title": "107",
+                          "description": {
+                            "en": "the first_name is invalid.",
+                            "es": "the first_name is invalid.",
+                            "pt": "the first_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "108",
+                          "description": {
+                            "en": "the last_name is invalid.",
+                            "es": "the last_name is invalid.",
+                            "pt": "the last_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "109",
+                          "description": {
+                            "en": "the phone.area_code is invalid.",
+                            "es": "the phone.area_code is invalid.",
+                            "pt": "the phone.area_code is invalid."
+                          }
+                        },
+                        {
+                          "title": "110",
+                          "description": {
+                            "en": "the phone.number is invalid.",
+                            "es": "the phone.number is invalid.",
+                            "pt": "the phone.number is invalid."
+                          }
+                        },
+                        {
+                          "title": "111",
+                          "description": {
+                            "en": "the identification.type is invalid.",
+                            "es": "the identification.type is invalid.",
+                            "pt": "the identification.type is invalid."
+                          }
+                        },
+                        {
+                          "title": "112",
+                          "description": {
+                            "en": "the identification.number is invalid.",
+                            "es": "the identification.number is invalid.",
+                            "pt": "the identification.number is invalid."
+                          }
+                        },
+                        {
+                          "title": "113",
+                          "description": {
+                            "en": "the address.zip_code is invalid.",
+                            "es": "the address.zip_code is invalid.",
+                            "pt": "the address.zip_code is invalid."
+                          }
+                        },
+                        {
+                          "title": "114",
+                          "description": {
+                            "en": "the address.street_name is invalid.",
+                            "es": "the address.street_name is invalid.",
+                            "pt": "the address.street_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "115",
+                          "description": {
+                            "en": "the date_registered format is invalid.",
+                            "es": "the date_registered format is invalid.",
+                            "pt": "the date_registered format is invalid."
+                          }
+                        },
+                        {
+                          "title": "116",
+                          "description": {
+                            "en": "the description is invalid.",
+                            "es": "the description is invalid.",
+                            "pt": "the description is invalid."
+                          }
+                        },
+                        {
+                          "title": "117",
+                          "description": {
+                            "en": "the metadata is invalid.",
+                            "es": "the metadata is invalid.",
+                            "pt": "the metadata is invalid."
+                          }
+                        },
+                        {
+                          "title": "118",
+                          "description": {
+                            "en": "the body must be a Json object",
+                            "es": "the body must be a Json object",
+                            "pt": "the body must be a Json object"
+                          }
+                        },
+                        {
+                          "title": "119",
+                          "description": {
+                            "en": "the card is required.",
+                            "es": "the card is required.",
+                            "pt": "the card is required."
+                          }
+                        },
+                        {
+                          "title": "120",
+                          "description": {
+                            "en": "card not found.",
+                            "es": "card not found.",
+                            "pt": "card not found."
+                          }
+                        },
+                        {
+                          "title": "121",
+                          "description": {
+                            "en": "the card is invalid.",
+                            "es": "the card is invalid.",
+                            "pt": "the card is invalid."
+                          }
+                        },
+                        {
+                          "title": "122",
+                          "description": {
+                            "en": "the card data is invalid.",
+                            "es": "the card data is invalid.",
+                            "pt": "the card data is invalid."
+                          }
+                        },
+                        {
+                          "title": "123",
+                          "description": {
+                            "en": "the payment_method_id is required.",
+                            "es": "the payment_method_id is required.",
+                            "pt": "the payment_method_id is required."
+                          }
+                        },
+                        {
+                          "title": "124",
+                          "description": {
+                            "en": "the issuer_id is required.",
+                            "es": "the issuer_id is required.",
+                            "pt": "the issuer_id is required."
+                          }
+                        },
+                        {
+                          "title": "125",
+                          "description": {
+                            "en": "invalid parameters.",
+                            "es": "invalid parameters.",
+                            "pt": "invalid parameters."
+                          }
+                        },
+                        {
+                          "title": "126",
+                          "description": {
+                            "en": "invalid parameter. You cannot update the email.",
+                            "es": "invalid parameter. You cannot update the email.",
+                            "pt": "invalid parameter. You cannot update the email."
+                          }
+                        },
+                        {
+                          "title": "127",
+                          "description": {
+                            "en": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.",
+                            "es": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.",
+                            "pt": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id."
+                          }
+                        },
+                        {
+                          "title": "128",
+                          "description": {
+                            "en": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.",
+                            "es": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.",
+                            "pt": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'."
+                          }
+                        },
+                        {
+                          "title": "129",
+                          "description": {
+                            "en": "the customer has reached the maximum allowed number of cards.",
+                            "es": "the customer has reached the maximum allowed number of cards.",
+                            "pt": "the customer has reached the maximum allowed number of cards."
+                          }
+                        },
+                        {
+                          "title": "140",
+                          "description": {
+                            "en": "invalid card owner.",
+                            "es": "invalid card owner.",
+                            "pt": "invalid card owner."
+                          }
+                        },
+                        {
+                          "title": "150",
+                          "description": {
+                            "en": "invalid users involved.",
+                            "es": "invalid users involved.",
+                            "pt": "invalid users involved."
+                          }
+                        },
+                        {
+                          "title": "200",
+                          "description": {
+                            "en": "invalid range format (range=:date_parameter:after::date_from,before::date_to).",
+                            "es": "invalid range format (range=:date_parameter:after::date_from,before::date_to).",
+                            "pt": "invalid range format (range=:date_parameter:after::date_from,before::date_to)."
+                          }
+                        },
+                        {
+                          "title": "201",
+                          "description": {
+                            "en": "range attribute must belong to date entity.",
+                            "es": "range attribute must belong to date entity.",
+                            "pt": "range attribute must belong to date entity."
+                          }
+                        },
+                        {
+                          "title": "202",
+                          "description": {
+                            "en": "invalid 'after' parameter. It should be date[iso_8601].",
+                            "es": "invalid 'after' parameter. It should be date[iso_8601].",
+                            "pt": "invalid 'after' parameter. It should be date[iso_8601]."
+                          }
+                        },
+                        {
+                          "title": "203",
+                          "description": {
+                            "en": "invalid 'before' parameter. It should be date[iso_8601].",
+                            "es": "invalid 'before' parameter. It should be date[iso_8601].",
+                            "pt": "invalid 'before' parameter. It should be date[iso_8601]."
+                          }
+                        },
+                        {
+                          "title": "204",
+                          "description": {
+                            "en": "invalid filters format.",
+                            "es": "invalid filters format.",
+                            "pt": "invalid filters format."
+                          }
+                        },
+                        {
+                          "title": "205",
+                          "description": {
+                            "en": "invalid query format.",
+                            "es": "invalid query format.",
+                            "pt": "invalid query format."
+                          }
+                        },
+                        {
+                          "title": "206",
+                          "description": {
+                            "en": "attributes to sort must belong to 'customer' entity.",
+                            "es": "attributes to sort must belong to 'customer' entity.",
+                            "pt": "attributes to sort must belong to 'customer' entity."
+                          }
+                        },
+                        {
+                          "title": "207",
+                          "description": {
+                            "en": "order filter must be 'asc' or 'desc'.",
+                            "es": "order filter must be 'asc' or 'desc'.",
+                            "pt": "order filter must be 'asc' or 'desc'."
+                          }
+                        },
+                        {
+                          "title": "208",
+                          "description": {
+                            "en": "invalid 'sort' parameter format.",
+                            "es": "invalid 'sort' parameter format.",
+                            "pt": "invalid 'sort' parameter format."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unauthorized",
+                          "description": {
+                            "en": "unauthorized.",
+                            "es": "unauthorized.",
+                            "pt": "unauthorized."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "not_found",
+                          "description": {
+                            "en": "not_found.",
+                            "es": "not_found.",
+                            "pt": "not_found."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Get card",
+          "pt": "Obter cartão",
+          "es": "Obtener tarjeta"
+        }
+      },
+      "put": {
+        "tags": [
+          "checkout-pro",
+          "checkout-api",
+          "checkout-bricks"
+        ],
+        "description": {
+          "en": "Renew the details of a card associated with a customer. Indicate the IDs and send the parameters with the information you want to update",
+          "pt": "Atualize os dados de um cartão associado a um cliente. Indique o ID e envie as informações que você deseja atualizar",
+          "es": "Renueva los datos de una tarjeta asociada a un cliente. Indica los ID y envía los parámetros con la información que quieras actualizar"
+        },
+        "parameters": [
+          {
+            "name": "expiration_month",
+            "in": "requestBody",
+            "description": {
+              "en": "Card's expiration month.",
+              "pt": "Mês de validade do cartão",
+              "es": "Mes de expiración de la tarjeta"
+            },
+            "required": false,
+            "schema": {
+              "type": "number",
+              "example": 12
+            }
+          },
+          {
+            "name": "expiration_year",
+            "in": "requestBody",
+            "description": {
+              "en": "Card's expiration year.",
+              "pt": "Ano de validade do cartão",
+              "es": "Año de expiración de la tarjeta"
+            },
+            "required": false,
+            "schema": {
+              "type": "number",
+              "example": 2025
+            }
+          },
+          {
+            "name": "cardholder.name",
+            "in": "requestBody",
+            "description": {
+              "es": "Card's name.",
+              "pt": "Card's name.",
+              "en": "Card's name."
+            },
+            "required": false,
+            "schema": {
+              "type": "string",
+              "example": "Juan Pérez"
+            }
+          },
+          {
+            "name": "cardholder.identification",
+            "in": "requestBody",
+            "description": {
+              "es": "Card's owner identification",
+              "pt": "Card's owner identification",
+              "en": "Card's owner identification"
+            },
+            "required": false,
+            "schema": {
+              "type": "string",
+              "example": 27009907
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string",
+                    "description": {
+                      "es": "Card Token",
+                      "pt": "Card Token",
+                      "en": "Card Token"
+                    },
+                    "example": "9b2d63e00d66a8c721607214ceda233a"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "es": "success",
+              "pt": "success",
+              "en": "success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "example": "8987269652"
+                    },
+                    "expiration_month": {
+                      "type": "number",
+                      "example": 7
+                    },
+                    "expiration_year": {
+                      "type": "number",
+                      "example": 2023
+                    },
+                    "first_six_digits": {
+                      "type": "string",
+                      "example": "503143"
+                    },
+                    "last_four_digits": {
+                      "type": "string",
+                      "example": "6351"
+                    },
+                    "payment_method": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "example": "master"
+                        },
+                        "name": {
+                          "type": "string",
+                          "example": "Mastercard"
+                        },
+                        "payment_type_id": {
+                          "type": "string",
+                          "example": "credit_card"
+                        },
+                        "thumbnail": {
+                          "type": "string",
+                          "example": "http://img.mlstatic.com/org-img/MP3/API/logos/master.gif"
+                        },
+                        "secure_thumbnail": {
+                          "type": "string",
+                          "example": "https://www.mercadopago.com/org-img/MP3/API/logos/master.gif"
+                        }
+                      }
+                    },
+                    "security_code": {
+                      "type": "object",
+                      "properties": {
+                        "length": {
+                          "type": "number",
+                          "example": 3
+                        },
+                        "card_location": {
+                          "type": "string",
+                          "example": "back"
+                        }
+                      }
+                    },
+                    "issuer": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "number",
+                          "example": 24
+                        },
+                        "name": {
+                          "type": "string",
+                          "example": "Mastercard"
+                        }
+                      }
+                    },
+                    "cardholder": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "example": "APRO"
+                        },
+                        "identification": {
+                          "type": "object",
+                          "properties": {
+                            "number": {
+                              "type": "string",
+                              "example": "19119119100"
+                            },
+                            "type": {
+                              "type": "string",
+                              "example": "CPF"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "example": "2021-03-16T16:08:21.000-04:00"
+                    },
+                    "date_last_updated": {
+                      "type": "string",
+                      "example": "2021-03-16T16:11:54.294-04:00"
+                    },
+                    "customer_id": {
+                      "type": "string",
+                      "example": "470183340-cpunOI7UsIHlHr"
+                    },
+                    "user_id": {
+                      "type": "string",
+                      "example": "470183340"
+                    },
+                    "live_mode": {
+                      "type": "boolean",
+                      "example": true
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "100",
+                          "description": {
+                            "en": "the credentials are required.",
+                            "es": "the credentials are required.",
+                            "pt": "the credentials are required."
+                          }
+                        },
+                        {
+                          "title": "101",
+                          "description": {
+                            "en": "the customer already exist.",
+                            "es": "the customer already exist.",
+                            "pt": "the customer already exist."
+                          }
+                        },
+                        {
+                          "title": "102",
+                          "description": {
+                            "en": "missing customer id.",
+                            "es": "missing customer id.",
+                            "pt": "missing customer id."
+                          }
+                        },
+                        {
+                          "title": "103",
+                          "description": {
+                            "en": "parameter must be an object",
+                            "es": "parameter must be an object",
+                            "pt": "parameter must be an object"
+                          }
+                        },
+                        {
+                          "title": "104",
+                          "description": {
+                            "en": "parameter length is too large.",
+                            "es": "parameter length is too large.",
+                            "pt": "parameter length is too large."
+                          }
+                        },
+                        {
+                          "title": "105",
+                          "description": {
+                            "en": "the customer id is invalid.",
+                            "es": "the customer id is invalid.",
+                            "pt": "the customer id is invalid."
+                          }
+                        },
+                        {
+                          "title": "106",
+                          "description": {
+                            "en": "the email format is invalid.",
+                            "es": "the email format is invalid.",
+                            "pt": "the email format is invalid."
+                          }
+                        },
+                        {
+                          "title": "107",
+                          "description": {
+                            "en": "the first_name is invalid.",
+                            "es": "the first_name is invalid.",
+                            "pt": "the first_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "108",
+                          "description": {
+                            "en": "the last_name is invalid.",
+                            "es": "the last_name is invalid.",
+                            "pt": "the last_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "109",
+                          "description": {
+                            "en": "the phone.area_code is invalid.",
+                            "es": "the phone.area_code is invalid.",
+                            "pt": "the phone.area_code is invalid."
+                          }
+                        },
+                        {
+                          "title": "110",
+                          "description": {
+                            "en": "the phone.number is invalid.",
+                            "es": "the phone.number is invalid.",
+                            "pt": "the phone.number is invalid."
+                          }
+                        },
+                        {
+                          "title": "111",
+                          "description": {
+                            "en": "the identification.type is invalid.",
+                            "es": "the identification.type is invalid.",
+                            "pt": "the identification.type is invalid."
+                          }
+                        },
+                        {
+                          "title": "112",
+                          "description": {
+                            "en": "the identification.number is invalid.",
+                            "es": "the identification.number is invalid.",
+                            "pt": "the identification.number is invalid."
+                          }
+                        },
+                        {
+                          "title": "113",
+                          "description": {
+                            "en": "the address.zip_code is invalid.",
+                            "es": "the address.zip_code is invalid.",
+                            "pt": "the address.zip_code is invalid."
+                          }
+                        },
+                        {
+                          "title": "114",
+                          "description": {
+                            "en": "the address.street_name is invalid.",
+                            "es": "the address.street_name is invalid.",
+                            "pt": "the address.street_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "115",
+                          "description": {
+                            "en": "the date_registered format is invalid.",
+                            "es": "the date_registered format is invalid.",
+                            "pt": "the date_registered format is invalid."
+                          }
+                        },
+                        {
+                          "title": "116",
+                          "description": {
+                            "en": "the description is invalid.",
+                            "es": "the description is invalid.",
+                            "pt": "the description is invalid."
+                          }
+                        },
+                        {
+                          "title": "117",
+                          "description": {
+                            "en": "the metadata is invalid.",
+                            "es": "the metadata is invalid.",
+                            "pt": "the metadata is invalid."
+                          }
+                        },
+                        {
+                          "title": "118",
+                          "description": {
+                            "en": "the body must be a Json object",
+                            "es": "the body must be a Json object",
+                            "pt": "the body must be a Json object"
+                          }
+                        },
+                        {
+                          "title": "119",
+                          "description": {
+                            "en": "the card is required.",
+                            "es": "the card is required.",
+                            "pt": "the card is required."
+                          }
+                        },
+                        {
+                          "title": "120",
+                          "description": {
+                            "en": "card not found.",
+                            "es": "card not found.",
+                            "pt": "card not found."
+                          }
+                        },
+                        {
+                          "title": "121",
+                          "description": {
+                            "en": "the card is invalid.",
+                            "es": "the card is invalid.",
+                            "pt": "the card is invalid."
+                          }
+                        },
+                        {
+                          "title": "122",
+                          "description": {
+                            "en": "the card data is invalid.",
+                            "es": "the card data is invalid.",
+                            "pt": "the card data is invalid."
+                          }
+                        },
+                        {
+                          "title": "123",
+                          "description": {
+                            "en": "the payment_method_id is required.",
+                            "es": "the payment_method_id is required.",
+                            "pt": "the payment_method_id is required."
+                          }
+                        },
+                        {
+                          "title": "124",
+                          "description": {
+                            "en": "the issuer_id is required.",
+                            "es": "the issuer_id is required.",
+                            "pt": "the issuer_id is required."
+                          }
+                        },
+                        {
+                          "title": "125",
+                          "description": {
+                            "en": "invalid parameters.",
+                            "es": "invalid parameters.",
+                            "pt": "invalid parameters."
+                          }
+                        },
+                        {
+                          "title": "126",
+                          "description": {
+                            "en": "invalid parameter. You cannot update the email.",
+                            "es": "invalid parameter. You cannot update the email.",
+                            "pt": "invalid parameter. You cannot update the email."
+                          }
+                        },
+                        {
+                          "title": "127",
+                          "description": {
+                            "en": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.",
+                            "es": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.",
+                            "pt": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id."
+                          }
+                        },
+                        {
+                          "title": "128",
+                          "description": {
+                            "en": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.",
+                            "es": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.",
+                            "pt": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'."
+                          }
+                        },
+                        {
+                          "title": "129",
+                          "description": {
+                            "en": "the customer has reached the maximum allowed number of cards.",
+                            "es": "the customer has reached the maximum allowed number of cards.",
+                            "pt": "the customer has reached the maximum allowed number of cards."
+                          }
+                        },
+                        {
+                          "title": "140",
+                          "description": {
+                            "en": "invalid card owner.",
+                            "es": "invalid card owner.",
+                            "pt": "invalid card owner."
+                          }
+                        },
+                        {
+                          "title": "150",
+                          "description": {
+                            "en": "invalid users involved.",
+                            "es": "invalid users involved.",
+                            "pt": "invalid users involved."
+                          }
+                        },
+                        {
+                          "title": "200",
+                          "description": {
+                            "en": "invalid range format (range=:date_parameter:after::date_from,before::date_to).",
+                            "es": "invalid range format (range=:date_parameter:after::date_from,before::date_to).",
+                            "pt": "invalid range format (range=:date_parameter:after::date_from,before::date_to)."
+                          }
+                        },
+                        {
+                          "title": "201",
+                          "description": {
+                            "en": "range attribute must belong to date entity.",
+                            "es": "range attribute must belong to date entity.",
+                            "pt": "range attribute must belong to date entity."
+                          }
+                        },
+                        {
+                          "title": "202",
+                          "description": {
+                            "en": "invalid 'after' parameter. It should be date[iso_8601].",
+                            "es": "invalid 'after' parameter. It should be date[iso_8601].",
+                            "pt": "invalid 'after' parameter. It should be date[iso_8601]."
+                          }
+                        },
+                        {
+                          "title": "203",
+                          "description": {
+                            "en": "invalid 'before' parameter. It should be date[iso_8601].",
+                            "es": "invalid 'before' parameter. It should be date[iso_8601].",
+                            "pt": "invalid 'before' parameter. It should be date[iso_8601]."
+                          }
+                        },
+                        {
+                          "title": "204",
+                          "description": {
+                            "en": "invalid filters format.",
+                            "es": "invalid filters format.",
+                            "pt": "invalid filters format."
+                          }
+                        },
+                        {
+                          "title": "205",
+                          "description": {
+                            "en": "invalid query format.",
+                            "es": "invalid query format.",
+                            "pt": "invalid query format."
+                          }
+                        },
+                        {
+                          "title": "206",
+                          "description": {
+                            "en": "attributes to sort must belong to 'customer' entity.",
+                            "es": "attributes to sort must belong to 'customer' entity.",
+                            "pt": "attributes to sort must belong to 'customer' entity."
+                          }
+                        },
+                        {
+                          "title": "207",
+                          "description": {
+                            "en": "order filter must be 'asc' or 'desc'.",
+                            "es": "order filter must be 'asc' or 'desc'.",
+                            "pt": "order filter must be 'asc' or 'desc'."
+                          }
+                        },
+                        {
+                          "title": "208",
+                          "description": {
+                            "en": "invalid 'sort' parameter format.",
+                            "es": "invalid 'sort' parameter format.",
+                            "pt": "invalid 'sort' parameter format."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unauthorized",
+                          "description": {
+                            "en": "unauthorized.",
+                            "es": "unauthorized.",
+                            "pt": "unauthorized."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "not_found",
+                          "description": {
+                            "en": "not_found.",
+                            "es": "not_found.",
+                            "pt": "not_found."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Update card",
+          "pt": "Atualizar cartão",
+          "es": "Actualizar tarjeta"
+        }
+      },
+      "delete": {
+        "tags": [
+          "checkout-pro",
+          "checkout-api"
+        ],
+        "description": {
+          "en": "Delete the data of a card associated with a customer whenever you need to",
+          "pt": "Exclua a referência a um cartão associado ao cliente sempre que for necessário",
+          "es": "Elimina los datos de una tarjeta asociada a un cliente siempre que lo necesites"
+        },
+        "parameters": [
+          {
+            "name": "customer_id",
+            "in": "path",
+            "description": {
+              "en": "Customer's Id",
+              "pt": "Customer's Id",
+              "es": "Customer's Id"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": {
+              "en": "Card's Id",
+              "pt": "Card's Id",
+              "es": "Card's Id"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "12123adfasdf123u4u"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "es": "success",
+              "pt": "success",
+              "en": "success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "example": "8987269652"
+                    },
+                    "expiration_month": {
+                      "type": "number",
+                      "example": 7
+                    },
+                    "expiration_year": {
+                      "type": "number",
+                      "example": 2023
+                    },
+                    "first_six_digits": {
+                      "type": "string",
+                      "example": "503143"
+                    },
+                    "last_four_digits": {
+                      "type": "string",
+                      "example": "6351"
+                    },
+                    "payment_method": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "example": "master"
+                        },
+                        "name": {
+                          "type": "string",
+                          "example": "Mastercard"
+                        },
+                        "payment_type_id": {
+                          "type": "string",
+                          "example": "credit_card"
+                        },
+                        "thumbnail": {
+                          "type": "string",
+                          "example": "http://img.mlstatic.com/org-img/MP3/API/logos/master.gif"
+                        },
+                        "secure_thumbnail": {
+                          "type": "string",
+                          "example": "https://www.mercadopago.com/org-img/MP3/API/logos/master.gif"
+                        }
+                      }
+                    },
+                    "security_code": {
+                      "type": "object",
+                      "properties": {
+                        "length": {
+                          "type": "number",
+                          "example": 3
+                        },
+                        "card_location": {
+                          "type": "string",
+                          "example": "back"
+                        }
+                      }
+                    },
+                    "issuer": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "number",
+                          "example": 24
+                        },
+                        "name": {
+                          "type": "string",
+                          "example": "Mastercard"
+                        }
+                      }
+                    },
+                    "cardholder": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "example": "APRO"
+                        },
+                        "identification": {
+                          "type": "object",
+                          "properties": {
+                            "number": {
+                              "type": "string",
+                              "example": "19119119100"
+                            },
+                            "type": {
+                              "type": "string",
+                              "example": "CPF"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "example": "2021-03-16T16:08:21.000-04:00"
+                    },
+                    "date_last_updated": {
+                      "type": "string",
+                      "example": "2021-03-16T16:14:40.962-04:00"
+                    },
+                    "customer_id": {
+                      "type": "string",
+                      "example": "470183340-cpunOI7UsIHlHr"
+                    },
+                    "user_id": {
+                      "type": "string",
+                      "example": "470183340"
+                    },
+                    "live_mode": {
+                      "type": "boolean",
+                      "example": true
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "100",
+                          "description": {
+                            "en": "the credentials are required.",
+                            "es": "the credentials are required.",
+                            "pt": "the credentials are required."
+                          }
+                        },
+                        {
+                          "title": "101",
+                          "description": {
+                            "en": "the customer already exist.",
+                            "es": "the customer already exist.",
+                            "pt": "the customer already exist."
+                          }
+                        },
+                        {
+                          "title": "102",
+                          "description": {
+                            "en": "missing customer id.",
+                            "es": "missing customer id.",
+                            "pt": "missing customer id."
+                          }
+                        },
+                        {
+                          "title": "103",
+                          "description": {
+                            "en": "parameter must be an object",
+                            "es": "parameter must be an object",
+                            "pt": "parameter must be an object"
+                          }
+                        },
+                        {
+                          "title": "104",
+                          "description": {
+                            "en": "parameter length is too large.",
+                            "es": "parameter length is too large.",
+                            "pt": "parameter length is too large."
+                          }
+                        },
+                        {
+                          "title": "105",
+                          "description": {
+                            "en": "the customer id is invalid.",
+                            "es": "the customer id is invalid.",
+                            "pt": "the customer id is invalid."
+                          }
+                        },
+                        {
+                          "title": "106",
+                          "description": {
+                            "en": "the email format is invalid.",
+                            "es": "the email format is invalid.",
+                            "pt": "the email format is invalid."
+                          }
+                        },
+                        {
+                          "title": "107",
+                          "description": {
+                            "en": "the first_name is invalid.",
+                            "es": "the first_name is invalid.",
+                            "pt": "the first_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "108",
+                          "description": {
+                            "en": "the last_name is invalid.",
+                            "es": "the last_name is invalid.",
+                            "pt": "the last_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "109",
+                          "description": {
+                            "en": "the phone.area_code is invalid.",
+                            "es": "the phone.area_code is invalid.",
+                            "pt": "the phone.area_code is invalid."
+                          }
+                        },
+                        {
+                          "title": "110",
+                          "description": {
+                            "en": "the phone.number is invalid.",
+                            "es": "the phone.number is invalid.",
+                            "pt": "the phone.number is invalid."
+                          }
+                        },
+                        {
+                          "title": "111",
+                          "description": {
+                            "en": "the identification.type is invalid.",
+                            "es": "the identification.type is invalid.",
+                            "pt": "the identification.type is invalid."
+                          }
+                        },
+                        {
+                          "title": "112",
+                          "description": {
+                            "en": "the identification.number is invalid.",
+                            "es": "the identification.number is invalid.",
+                            "pt": "the identification.number is invalid."
+                          }
+                        },
+                        {
+                          "title": "113",
+                          "description": {
+                            "en": "the address.zip_code is invalid.",
+                            "es": "the address.zip_code is invalid.",
+                            "pt": "the address.zip_code is invalid."
+                          }
+                        },
+                        {
+                          "title": "114",
+                          "description": {
+                            "en": "the address.street_name is invalid.",
+                            "es": "the address.street_name is invalid.",
+                            "pt": "the address.street_name is invalid."
+                          }
+                        },
+                        {
+                          "title": "115",
+                          "description": {
+                            "en": "the date_registered format is invalid.",
+                            "es": "the date_registered format is invalid.",
+                            "pt": "the date_registered format is invalid."
+                          }
+                        },
+                        {
+                          "title": "116",
+                          "description": {
+                            "en": "the description is invalid.",
+                            "es": "the description is invalid.",
+                            "pt": "the description is invalid."
+                          }
+                        },
+                        {
+                          "title": "117",
+                          "description": {
+                            "en": "the metadata is invalid.",
+                            "es": "the metadata is invalid.",
+                            "pt": "the metadata is invalid."
+                          }
+                        },
+                        {
+                          "title": "118",
+                          "description": {
+                            "en": "the body must be a Json object",
+                            "es": "the body must be a Json object",
+                            "pt": "the body must be a Json object"
+                          }
+                        },
+                        {
+                          "title": "119",
+                          "description": {
+                            "en": "the card is required.",
+                            "es": "the card is required.",
+                            "pt": "the card is required."
+                          }
+                        },
+                        {
+                          "title": "120",
+                          "description": {
+                            "en": "card not found.",
+                            "es": "card not found.",
+                            "pt": "card not found."
+                          }
+                        },
+                        {
+                          "title": "121",
+                          "description": {
+                            "en": "the card is invalid.",
+                            "es": "the card is invalid.",
+                            "pt": "the card is invalid."
+                          }
+                        },
+                        {
+                          "title": "122",
+                          "description": {
+                            "en": "the card data is invalid.",
+                            "es": "the card data is invalid.",
+                            "pt": "the card data is invalid."
+                          }
+                        },
+                        {
+                          "title": "123",
+                          "description": {
+                            "en": "the payment_method_id is required.",
+                            "es": "the payment_method_id is required.",
+                            "pt": "the payment_method_id is required."
+                          }
+                        },
+                        {
+                          "title": "124",
+                          "description": {
+                            "en": "the issuer_id is required.",
+                            "es": "the issuer_id is required.",
+                            "pt": "the issuer_id is required."
+                          }
+                        },
+                        {
+                          "title": "125",
+                          "description": {
+                            "en": "invalid parameters.",
+                            "es": "invalid parameters.",
+                            "pt": "invalid parameters."
+                          }
+                        },
+                        {
+                          "title": "126",
+                          "description": {
+                            "en": "invalid parameter. You cannot update the email.",
+                            "es": "invalid parameter. You cannot update the email.",
+                            "pt": "invalid parameter. You cannot update the email."
+                          }
+                        },
+                        {
+                          "title": "127",
+                          "description": {
+                            "en": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.",
+                            "es": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.",
+                            "pt": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id."
+                          }
+                        },
+                        {
+                          "title": "128",
+                          "description": {
+                            "en": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.",
+                            "es": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.",
+                            "pt": "the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'."
+                          }
+                        },
+                        {
+                          "title": "129",
+                          "description": {
+                            "en": "the customer has reached the maximum allowed number of cards.",
+                            "es": "the customer has reached the maximum allowed number of cards.",
+                            "pt": "the customer has reached the maximum allowed number of cards."
+                          }
+                        },
+                        {
+                          "title": "140",
+                          "description": {
+                            "en": "invalid card owner.",
+                            "es": "invalid card owner.",
+                            "pt": "invalid card owner."
+                          }
+                        },
+                        {
+                          "title": "150",
+                          "description": {
+                            "en": "invalid users involved.",
+                            "es": "invalid users involved.",
+                            "pt": "invalid users involved."
+                          }
+                        },
+                        {
+                          "title": "200",
+                          "description": {
+                            "en": "invalid range format (range=:date_parameter:after::date_from,before::date_to).",
+                            "es": "invalid range format (range=:date_parameter:after::date_from,before::date_to).",
+                            "pt": "invalid range format (range=:date_parameter:after::date_from,before::date_to)."
+                          }
+                        },
+                        {
+                          "title": "201",
+                          "description": {
+                            "en": "range attribute must belong to date entity.",
+                            "es": "range attribute must belong to date entity.",
+                            "pt": "range attribute must belong to date entity."
+                          }
+                        },
+                        {
+                          "title": "202",
+                          "description": {
+                            "en": "invalid 'after' parameter. It should be date[iso_8601].",
+                            "es": "invalid 'after' parameter. It should be date[iso_8601].",
+                            "pt": "invalid 'after' parameter. It should be date[iso_8601]."
+                          }
+                        },
+                        {
+                          "title": "203",
+                          "description": {
+                            "en": "invalid 'before' parameter. It should be date[iso_8601].",
+                            "es": "invalid 'before' parameter. It should be date[iso_8601].",
+                            "pt": "invalid 'before' parameter. It should be date[iso_8601]."
+                          }
+                        },
+                        {
+                          "title": "204",
+                          "description": {
+                            "en": "invalid filters format.",
+                            "es": "invalid filters format.",
+                            "pt": "invalid filters format."
+                          }
+                        },
+                        {
+                          "title": "205",
+                          "description": {
+                            "en": "invalid query format.",
+                            "es": "invalid query format.",
+                            "pt": "invalid query format."
+                          }
+                        },
+                        {
+                          "title": "206",
+                          "description": {
+                            "en": "attributes to sort must belong to 'customer' entity.",
+                            "es": "attributes to sort must belong to 'customer' entity.",
+                            "pt": "attributes to sort must belong to 'customer' entity."
+                          }
+                        },
+                        {
+                          "title": "207",
+                          "description": {
+                            "en": "order filter must be 'asc' or 'desc'.",
+                            "es": "order filter must be 'asc' or 'desc'.",
+                            "pt": "order filter must be 'asc' or 'desc'."
+                          }
+                        },
+                        {
+                          "title": "208",
+                          "description": {
+                            "en": "invalid 'sort' parameter format.",
+                            "es": "invalid 'sort' parameter format.",
+                            "pt": "invalid 'sort' parameter format."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unauthorized",
+                          "description": {
+                            "en": "unauthorized.",
+                            "es": "unauthorized.",
+                            "pt": "unauthorized."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "not_found",
+                          "description": {
+                            "en": "not_found.",
+                            "es": "not_found.",
+                            "pt": "not_found."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Delete card",
+          "pt": "Excluir cartão",
+          "es": "Eliminar tarjeta"
+        }
+      }
+    }
+  }
+}

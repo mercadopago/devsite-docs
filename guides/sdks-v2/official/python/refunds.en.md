@@ -1,6 +1,6 @@
 # Create full refund
 
-You can create a full refund using the SDK below. For details on the request parameters, check the [Create refund](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_id_refunds/post) API. 
+You can create a full refund using the SDK below. For details on the request parameters, check the [Create refund](/developers/en/reference/chargebacks/_payments_id_refunds/post) API. 
 
 [[[
 ```python

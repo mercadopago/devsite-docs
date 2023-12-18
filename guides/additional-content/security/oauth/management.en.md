@@ -9,20 +9,10 @@ Currently there are different ways in which the **access tokens** and **temporal
 * **User session cleanup**: enables refresh of all vendor tokens and temporal grants.
 * **Application elimination**: when an application is eliminated, all tokens and temporal grants belonging to it are deleted.
  
-You can receive webhook notifications every time a seller authorizes or deauthorizes your application. To configure them, read [Creation](/developers/en/guides/additional-content/dashboard/applications) via Dashboard.
- 
-> PREV_STEP_CARD_EN
->
-> Access token renewal
->
-> View the renewal flow for an expired access token.
->
-> [Renewal](/developers/en/guides/additional-content/security/oauth/creation)
+You can receive webhook notifications every time a seller authorizes or deauthorizes your application. To configure them, read [Dashboard](/developers/en/guides/additional-content/your-integrations/dashboard).
 
-> NEXT_STEP_CARD_EN
->
-> Extra resources
->
-> Check the APIs map.
->
-> [Resources](/developers/en/guides/additional-content/security/oauth/resources)
+To configure them, see more information on [Webhooks](/developers/en/docs/checkout-pro/additional-content/your-integrations/notifications/webhooks) in [Your integrations](/developers/en/docs/checkout-pro/additional-content/your-integrations/introduction).
+
+
+
+

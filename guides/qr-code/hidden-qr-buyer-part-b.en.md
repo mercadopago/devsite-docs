@@ -1,16 +1,8 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
-# How to integrate the QR Buyer model
+# Integrate the QR buyer model
 
 To use this model, you must read the QR and send the code and the order information (value, items and quantity). This way, the transaction will be processed automatically in the Mercado Pago application.
+
+> For more information about this billing model, please refer to the documentation [Payments with QR Buyer model.](/developers/en/docs/qr-code/qr-buyer/qr-buyer-part-a)
 
 ## Pre-requirements 
 
@@ -21,8 +13,6 @@ For this integration to work correctly, you need to:
 - Have a QR CODE reader.
 - Enable your Mercado Pago account for this type of charge.
 
-
-
 ## Model flow
 
 The buyer model works as follows:
@@ -32,8 +22,6 @@ The buyer model works as follows:
 1. The Integrator will read the QR CODE using a reader.
 2. With the order billing information and QR code reading, the integrator sends the billing data to API.
 3. In the API response, the integrator gets a return about the payment approval or denial.
-
-
 
 ## Order creation
 
@@ -93,7 +81,6 @@ curl --location --request POST
 | `scan_timestamp` | _string (256)_ | Date and time of the period in which the scan was performed at the POS.  |
 | `payment_token` | _string (256)_ | Code captured from the payer's phone. **This attribute is in Base64 and has variable length. There is no character limit.** (mandatory) |
 
-
 ## Additional information for request
 
 After using the combination between X-Idempotency-key and the payer's token for the first time, it is possible to use them in different ways, as shown in the table below: 
@@ -150,23 +137,3 @@ The request returns a response as follows:
                "total_paid_amount": 100
            },
 ```
-
-## Next steps
-
-
-> LEFT_BUTTON_REQUIRED_EN
->
-> Advanced integration
->
-> Check the options available to take your integration to the next level.
->
-> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/qr-buyer-model/qr-advanced-integration)
-
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Test your integration
->
-> Perform the most frequent usage tests to validate your integration
->
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/qr-buyer-model/qr-integration-test)

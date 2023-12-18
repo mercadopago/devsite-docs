@@ -1,22 +1,10 @@
----
-sites_supported:
-- mla
-- mpe
-- mco
-- mlu
-- mlm
-- mlc
-- mlb
----
-
-# QR unattended model
+# Payments with QR unattended model
 
 > WARNING
 >
 > Commercial contact required
 >
 > This product is only available through prior contact with one of our executives.
-
 
 ## What’s QR unattended model?
 
@@ -31,10 +19,6 @@ The main characteristics are:
 - When a client scans the QR code in a Point of Sale, Mercado Pago sends a recurrent request to the URL associated on the POS. When order is ready, it will show the amount to pay in the client app. 
 - Client will be able to pay only if there’s an order created for the scanned QR. 
 
-> NOTE
-> 
-> Note
-> 
 > The URL should point to a service under your domain where you can display if there are pending orders for each Point of Sale of your store.
 
 ## Model flow
@@ -62,10 +46,6 @@ This is how the QR unattended model works:
 (B) Mercado Pago returns respective data like status and payment information, among others. 
 9. Once order is **closed**, receipt can be printed.
 
-> NOTE
-> 
-> Note
-> 
 > On point 5, you’ll have to follow steps 8A and 8B to get order status.
 
 ## POS for the unattended model
@@ -89,15 +69,6 @@ https://api.mercadopago.com/pos \
 ```
 ]]]
 
----
+# Integration
 
-### Next steps
-
-
-> LEFT_BUTTON_REQUIRED_EN
->
-> How to integrate QR unattended model
->
-> Learn how to set up this model step by step.
->
-> [How to integrate QR unattended model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/qr-unattended/qr-unattended-part-b)
+To integrate this billing model, access the documentation on [Integrate QR unattended model](/developers/en/docs/qr-code/qr-unattended/qr-unattended-part-b)

@@ -1,14 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
 # Cómo integrar QR modelo desatendido
 
 > WARNING
@@ -16,7 +5,8 @@ sites_supported:
 > Contacto comercial requerido
 >
 > Solo puedes integrar este producto si tu contacto comercial te compartió toda la información necesaria para hacerlo.
-
+>
+> Para obtener más información sobre este modelo de facturación, consulta la documentación [Pagos QR modelo desatendido.](/developers/es/docs/qr-code/qr-unattended/qr-unattended-part-a)
 
 Para integrar el modelo desatendido es necesario:
 
@@ -145,25 +135,3 @@ Debes informar a tu asesor técnico asignado la URL base de tu dominio a la que 
 > ATENCIÓN
 > 
 > No funcionará la integración si no cumples con este paso.
-
----
-
-### Próximos pasos
-
-
-> LEFT_BUTTON_REQUIRED_ES
->
-> Integración avanzada
->
-> Conoce las opciones que dispones para llevar tu integración al siguiente nivel.
->
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-unattended-model/qr-advanced-integration)
-
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Prueba tu integración
->
-> Realiza los casos de uso más frecuentes para validar tu integración.
->
-> [Prueba tu integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-unattended-model/qr-integration-test)

@@ -1,6 +1,6 @@
 # Obter dados do pedido
 
-Para consultar dados de um pedido, realize um GET enviando o `shipment_id` e o `access-token` (gerado pelo processo de autenticação do OAuth) ao endpoint [/proximity-integration/v1/orders/{shipmentId}](/developers/pt/reference/mp_delivery/_proximity-integrationorders_shipment_id/get). Veja [Segurança](/developers/pt/guides/additional-content/security/oauth/introduction) para mais informações sobre OAuth.
+Para consultar dados de um pedido, faça um GET enviando o `shipment_id` e o `access_token` (gerado pelo processo de autenticação do OAuth) ao endpoint [/proximity-integration/v1/orders/{shipmentId}](/developers/pt/reference/mp_delivery/_proximity-integrationorders_shipment_id/get). Veja [Segurança](/developers/pt/guides/additional-content/security/oauth/introduction) para mais informações sobre OAuth.
 
 * **Merchant**: informações sobre o restaurante que recebeu o pedido.
 * **Items**: descrição sobre os itens e adicionais do pedido.
@@ -26,19 +26,3 @@ Para consultar dados de um pedido, realize um GET enviando o `shipment_id` e o `
   * **Ready_to_ship > printed**: pedido aceito e impresso.
   * **Out_for_delivery**: pedido saiu para entrega. 
   * **Delivery_failed**: entrega não concluída.
-
-> PREV_STEP_CARD_PT
->
-> Gerenciamento de pedidos
->
-> Saiba gerenciar os pedidos com o Mercado Pago Delivery.
->
-> [Gerenciamento de pedidos](/developers/pt/docs/mp-delivery/order-management)
-
-> NEXT_STEP_CARD_PT
->
-> Aceitar pedido
->
-> Saiba como aceitar pedidos com o Mercado Pago Delivery.
->
-> [Aceitar pedido](/developers/pt/docs/mp-delivery/order-management/accept-order)

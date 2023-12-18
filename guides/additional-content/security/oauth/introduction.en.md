@@ -7,16 +7,8 @@ The flows, also called grant types, refer to the way in which an application obt
 * **Access token**: code used in different requests of public origin to access a protected resource that represents an authorization granted by a seller to a client application that contains scopes and a limited period of time for such access.
 * **Temporal grants**: temporal codes used to exchange for an access token. Sound of type `authorization_code` and `refresh_token`.
  
-> WARNING
+> NOTE
 >
-> Important
+> Note
 >
 > The use of the OAuth protocol differs from the shared use of credentials process. OAuth does not address questions related to client authentication, nor information related to that, its responsibility lies in the methods of obtaining a token to access a resource.
- 
-> NEXT_STEP_CARD_EN
->
-> Access creation
->
-> Know the data access authorization flow.
->
-> [Creation](developers/en/guides/security/additional-content/oauth/creation)

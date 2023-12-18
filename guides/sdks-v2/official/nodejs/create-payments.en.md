@@ -1,26 +1,64 @@
 ## Create payment
 
-You can create and add payment information using the SDK below. For details on request parameters, check the [Create payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post) API.
+You can create and add payment information using the SDK below. For details on request parameters, check the [Create payment](/developers/en/reference/payments/_payments/post) API.
 
-[[[
 ```node
+const client = new MercadoPagoConfig({ accessToken: 'ACCESS_TOKEN' });
+const payment = new Payment(client);
 
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
-
-var payment_data = {
-  transaction_amount: 100,
-  token: 'ff8080814c11e237014c1ff593b57b4d',
-  installments: 1,
-  payer: {
-    type: "customer"
-    id: "123456789-jxOV430go9fx2e"
-  }
-};
-
-mercadopago.payment.create(payment_data).then(function (data) {
-  console.log(data);
-});
-
+payment.create({ body: {
+	transaction_amount: 12.34,
+	description: '<DESCRIPTION>',
+	payment_method_id: '<PAYMENT_METHOD_ID>',
+	payer: {
+		email: '<EMAIL>'
+	},
+} }).then(console.log).catch(console.log);
 ```
-]]]
+
+# Search payments
+
+You can search for payments made in the last twelve months from the search date using the SDK below. For details of the request parameters, access the [Search Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_search/get) API.
+
+```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
+
+const payment = new Payment(client);
+
+payment.search({ options: {
+	criteria: 'desc',
+      sort: 'date_created',
+      external_reference: 'ID_REF'
+} })
+.then(console.log).catch(console.log);
+```
+
+# Get payment
+
+It is possible to query all the information of a payment through the payment ID using the SDK below. For details of the request parameters, access the [Get Payment](/developers/en/reference/payments/_payments_id/get) API.
+
+```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
+const payment = new Payment(client);
+
+payment.get({
+	id: '<PAYMENT_ID>',
+}).then(console.log).catch(console.log);
+```
+
+# Update payment
+
+It is possible to change the data of a certain payment by sending the parameters with the information you want to update through the SDK below. For details of the request parameters, access the [Update payment](/developers/en/reference/payments/_payments_id/put) API.
+
+```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
+const payment = new PaymentCapture(client);
+
+payment.capture({
+	id: '<PAYMENT_ID>',
+	transaction_amount: 100,
+	requestOptions: {
+		idempotencyKey: '<IDEMPOTENCY_KEY>'
+	}
+}).then(console.log).catch(console.log);
+```

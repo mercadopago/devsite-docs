@@ -5,26 +5,18 @@ Com o _agreement_ criado, é preciso obter a aprovação do comprador para utili
 * `agreement_uri`: endereço para onde o comprador é redirecionado para conceder o acesso à carteira do Mercado Pago para realizar o pagamento.
 * `return_uri`: endereço de redirecionamento após a confirmação do agreement concedida pelo comprador.
 
+> NOTE
+>
+> Importante
+>
+> Ao confirmar o agreement e obter a aprovação do comprador, uma notificação webhook será enviada com os detalhes da aprovação. Veja a seção [Confirmação do agreement pelo usuário](/developers/pt/docs/wallet-connect/additional-content/your-integrations/notifications/webhooks) para mais detalhes.
+
 Veja abaixo o diagrama que ilustra o processo de aprovação do comprador.
 
 ![Obter aprovação](/images/wallet-connect/get-payer-approval.pt.png)
 
-Conforme indicado no diagrama de sequência acima, a aprovação do comprador ocorre no momento da compra, onde o mesmo dá o consentimento para conectar sua conta do Mercado Pago e utilizar os meios de pagamento disponíveis para conclusão da transação.
+O diagrama de sequência exibido anteriormente ilustra que a confirmação do comprador ocorre simultaneamente ao processo de compra. Dentro deste cenário, o comprador concede autorização para integrar sua conta do Mercado Pago, permitindo o uso dos diversos métodos de pagamento oferecidos para efetivar a transação.
 
-Com a conexão autorizada, veja a seção Criar payer token para concluir a integração do Wallet Connect.
+Após concluir o agreement, consulte a seção [Criar payer token](/developers/pt/docs/wallet-connect/account-linking-flow/create-payer-token). Essa etapa é fundamental para finalizar com sucesso o fluxo de vinculação de contas, habilitando a progressão para a fase subsequente do fluxo de pagamentos.
 
-> PREV_STEP_CARD_PT
->
-> Criar agreement
->
-> Veja os passos para a criação de um agreement necessário para integração do Wallet Connect.
->
-> [Criar agreement](/developers/pt/docs/wallet-connect/integration-configuration/create-agreement)
 
-> NEXT_STEP_CARD_PT
->
-> Criar payer token
->
-> Saiba como criar um payer token e concluir a integração com Wallet Connect.
->
-> [Criar payer token](/developers/pt/docs/wallet-connect/integration-configuration/create-payer-token)

@@ -2,11 +2,11 @@
 
 Pix is an instant electronic payment method offered by the Central Bank of Brazil to individuals and legal entities. Through the Checkout API, it is possible to offer this payment option through QR code or payment code.
 
-> WARNING
+> NOTE
 >
 > Important
 >
-> To offer payments with Pix, you must ensure that the Pix keys have been created. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps.
+> In addition to the options available in this documentation, it is also possible to integrate **payments with Pix** using the **Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/payment-brick/default-rendering#editor_2) documentation of Payment for more details.
 
 To integrate payments with Pix, follow the steps below, but if you have already integrated card payments, start the integration from the [Add payment form](/developers/en/docs/checkout-api/integration-configuration/integrate-with-pix#bookmark_Add_payment_form) step.
 
@@ -16,10 +16,14 @@ After creating the Pix keys, it is necessary to capture data for payment. This c
 
 [[[
 ```html
-
 <body>
-<script src="https://sdk.mercadopago.com/js/v2"></script>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
+
+```
+```bash
+npm install @mercadopago/sdk-js
+
 ```
 ]]]
 
@@ -31,11 +35,18 @@ Credentials are unique keys with which we identify an integration in your accoun
 This is the first step of a complete code structure that must be followed for the correct integration of payment via Pix. Pay attention to the blocks below to add to the codes as indicated.
 
 [[[
-```javascript
-
+```html
 <script>
-const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 </script>
+
+```
+```javascript
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 
@@ -128,83 +139,84 @@ elem.appendChild(tempOptions);
 ```
 ]]]
 
-
 ## Send payment
 
 When finalizing the inclusion of the payment form, it is necessary to send the buyer's email, type and document number, the payment method used (pix) and the value detail.
 
-To configure payment with Pix, send a **POST** to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, make the request using our SDKs.
+> NOTE
+>
+> Important
+>
+> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
+To configure payment with Pix, send a **POST** to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, make the request using our SDKs.
 
 [[[
 ```php
 <?php
-require_once 'vendor/autoload.php';
+  use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\MercadoPagoConfig;
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
-$payment = new MercadoPago\Payment();
-$payment->transaction_amount = 100;
-$payment->description = "Product title";
-$payment->payment_method_id = "pix";
-$payment->payer = array(
-"email" => "test@test.com",
-"first_name" => "Test",
-"last_name" => "User",
-"identification" => array(
-"type" => "CPF",
-"number" => "19119119100"
-),
-"address"=> array(
-"zip_code" => "06233200",
-"street_name" => "Avenida das Nações Unidas",
-"street_number" => "3003",
-"neighborhood" => "Bonfim",
-"city" => "Osasco",
-"federal_unit" => "SP"
-)
-);
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-$payment->save();
 
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "first_name" => $_POST['payerFirstName'],
+      "last_name" => $_POST['payerLastName'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
-var Mercadopago = require('mercadopago');
-Mercadopago.configurations.setAccessToken(config.access_token);
+import { Payment, MercadoPagoConfig } from 'mercadopago';
 
-var payment_data = {
-transaction_amount: 100,
-description: 'Product title',
-payment_method_id: 'pix',
-payer: {
-email: 'test@test.com',
-first_name: 'Test',
-last_name: 'User',
-identification: {
-type: 'CPF',
-number: '19119119100'
-},
-address: {
-zip_code: '06233200',
-street_name: '"Avenida das Nações Unidas"',
-street_number: '3003',
-neighborhood: 'Bonfim',
-city: 'Osasco',
-federal_unit: 'SP'
-}
-}
-};
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
-Mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function(error) {
-
-});
-
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
+
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
+ 
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
 
 PaymentClient client = new PaymentClient();
 
@@ -216,25 +228,31 @@ PaymentCreateRequest.builder()
 .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
 .payer(
 PaymentPayerRequest.builder()
-.email("test@test.com")
+.email("PAYER_EMAIL")
 .firstName("Test")
 .identification(
 IdentificationRequest.builder().type("CPF").number("19119119100").build())
 .build())
 .build();
 
-client.create(paymentCreateRequest);
+client.create(paymentCreateRequest, requestOptions);
 ```
 ```ruby
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
 
 payment_request = {
 transaction_amount: 100,
 description: 'Product title',
 payment_method_id: 'pix',
 payer: {
-email: 'test@test.com',
+email: 'PAYER_EMAIL',
 identification: {
 type: 'CPF',
 number: '19119119100',
@@ -242,7 +260,7 @@ number: '19119119100',
 }
 }
 
-payment_response = sdk.payment.create(payment_request)
+payment_response = sdk.payment.create(payment_request, custom_request_options)
 payment = payment_response[:response]
 
 ```
@@ -255,6 +273,9 @@ using MercadoPago.Resource.Payment;
 
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
+
 var request = new PaymentCreateRequest
 {
 TransactionAmount = 105,
@@ -262,7 +283,7 @@ Description = "Product Title",
 PaymentMethodId = "pix",
 Payer = new PaymentPayerRequest
 {
-Email = "test@test.com",
+Email = "PAYER_EMAIL",
 FirstName = "Test",
 LastName = "User",
 Identification = new IdentificationRequest
@@ -274,19 +295,24 @@ Number = "191191191-00",
 };
 
 var client = new PaymentClient();
-Payment payment = await client.CreateAsync(request);
+Payment payment = await client.CreateAsync(request, requestOptions);
 
 ```
 ```python
 import market
 sdk = Mercadopago.SDK("ENV_ACCESS_TOKEN")
 
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
 payment_data = {
 "transaction_amount": 100,
 "description": "Product title",
 "payment_method_id": "pix",
 "payer": {
-"email": "test@test.com",
+"email": "PAYER_EMAIL",
 "first_name": "Test",
 "last_name": "User",
 "identification": {
@@ -304,7 +330,7 @@ payment_data = {
 }
 }
 
-payment_response = sdk.payment().create(payment_data)
+payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 ```
 ```curl
@@ -312,13 +338,14 @@ curl -X POST \
 -H 'accept: application/json' \
 -H 'content-type: application/json' \
 -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+-H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
 'https://api.mercadopago.com/v1/payments' \
 -d '{
 "transaction_amount": 100,
 "description": "Product title",
 "payment_method_id": "pix",
 "payer": {
-"email": "test@test.com",
+"email": "PAYER_EMAIL",
 "first_name": "Test",
 "last_name": "User",
 "identification": {
@@ -380,8 +407,11 @@ The response will show the payment **pending status** and all the information yo
 
 With Pix, you can also choose the period that the customer will have to pay for the purchase, defining the expiration date of the payment code sent after the order is placed.
 
-By default, the expiration date for payments with Pix is **24 hours**, but you can change it by submitting the `date_of_expiration` field in the payment creation request.
-
+> NOTE
+>
+> Important
+>
+> By default, the expiration date for payments with Pix is **24 hours**, but you can change it by submitting the `date_of_expiration` field in the payment creation request. The configured date must be between **30 minutes and 30 days** from the payment issue date.
 
 ## Payment visualization
 
@@ -430,19 +460,4 @@ Follow the steps below to render the QR code and make copy and paste available.
 
 Upon completing these steps, the QR code will have been rendered and will be displayed to the buyer at checkout.
 
-> PREV_STEP_CARD_EN
->
-> Prerequisites
->
-> See the necessary prerequisites to integrate the Checkout API.
->
-> [Integrate Checkout API](/developers/en/docs/checkout-api/prerequisites)
 
-
-> NEXT_STEP_CARD_EN
->
-> Integration test
->
-> Learn how to test the Checkout API integration in your store.
->
-> [Integration Test](/developers/en/docs/checkout-api/integration-test/make-test-purchase)

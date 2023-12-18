@@ -17,13 +17,3 @@ La **consistencia** es una cualidad necesaria para aportar coherencia y congruen
 ![es Consistencia](/images/best-practices-guide/EspCreaUnChoAgilConsistenciaDoDonts.png)
 
 ¡Ya tienes todo lo que necesitas para crear la mejor experiencia de pago para tus clientes! Integra nuestros productos y optimiza su UX con estas buenas prácticas.
-
-
-> PREV_STEP_CARD_ES
->
-> Optimiza la experiencia de tu checkout
->
-> Conoce los componentes principales de un checkout y cómo optimizarlos para ofrecerle una mejor experiencia a tus usuarios y generar más conversiones.
->
-> [Experiencia optimizada](/developers/es/guides/additional-content/best-practices/ux-for-checkouts/optimized-experience)
-

@@ -1,22 +1,19 @@
-
 # Generating through API
 
 Generate the Released money report manually as many times as you want or schedule it according to the desired frequency through our API.
 
+----[mco, mlc, mlu, mpe, mla, mlm, mlb]----
 > WARNING
 >
-> The Available Balance report will be disabled from March 1st, 2022.
+> Important
 >
-> You can use the [Release report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+> We have limited the use of this API to the consultation and manual download of historical files due to the deactivation of the "Money withdrawn" report in the coming months. Instead, we recommend [using the "Releases" report.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/23879?utm_source=faq_mp&utm_medium=faq&utm_campaign=bank_disable)
+------------
 
 ## Configurable attributes
 
 Know the fields you can configure to adjust your preferences before you start:
 
-> WARNING
->
-> Important
->
 > Setting up `frequency` feature does not mean that the report will be generated automatically. The settings will apply only when the automatic scheduling is activated. For more details, please go to the [Schedule your automatic reports](#bookmark_schedule_your_automatic_reports) section.
 
 | Configurable fields | Description |
@@ -1040,21 +1037,3 @@ function callback(error, response, body) {
 request(options, callback);
 ```
 ]]]
-
-### Next steps
-
-> LEFT_BUTTON_REQUIRED_EN
->
-> Generating from Mercado Pago
->
-> You can generate your Available Balance reports from the Mercado Pago panel in three simple steps.
->
-> [Generating from Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/panel)
-
-> RIGHT_BUTTON_REQUIRED_EN
->
-> Generating per withdrawal
->
-> You can generate a report every time you withdraw available money to a bank account.
->
-> [Generating per withdrawal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/withdrawal)

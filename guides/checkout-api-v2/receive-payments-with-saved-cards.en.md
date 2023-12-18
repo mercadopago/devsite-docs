@@ -4,34 +4,23 @@ In order for a customer to be able to make a payment with their cards previously
 
 To receive payments from previously saved cards, follow the steps below.
 
-
 ## View saved cards
 
 The first step is to display the list of saved cards to the buyer so that they can choose the option they want to use when making a payment. To do so, send a **GET** with the necessary attributes to the endpoint [/v1/customers/{customer_id}/cards](/developers/en/reference/cards/_customers_customer_id_cards/get) and execute the request or, if you prefer, use the SDKs Listed below.
 
-
 [[[
-
 ```php
-
 <?php
-$customer = MercadoPago\Customer::find_by_id($id);
-$cards = $customer->cards();
+  $customer_client = new CustomerClient();
+  $cards = $client->list("customer_id");
+  echo implode ($cards);
 ?>
-
 ```
 ```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
+const customerCard = new CustomerCard(client);
 
-var filters = {
-id: customer_id
-};
-
-Mercadopago.customers.search({
-qs: filters
-}).then(function (customer) {
-console.log(customer);
-});
-
+customerCard.list({ customerId: '<CUSTOMER_UD>' }).then(console.log).catch(console.log);
 ```
 ```java
 
@@ -147,11 +136,9 @@ After displaying the saved cards, create the payment form using the code below d
 ```
 ]]]
 
-
 ## Capture security code
 
 After viewing the saved cards and creating the payment form, it is necessary to capture the card's security code. To do so, you must create a token by submitting the form with the card ID and security code using the Javascript below.
-
 
 [[[
 ```javascript
@@ -176,55 +163,64 @@ After viewing the saved cards and creating the payment form, it is necessary to 
 ```
 ]]]
 
-
-
 ## Create payment
 
 Once the token is obtained, it is necessary to create the payment with the corresponding value. When making a payment with a saved card, you must send the customer ID along with the token using the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) or one of the SDKs below.
 
-
-
 [[[
 ```php
-
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-$payment = new MercadoPago\Payment();
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
-$payment->transaction_amount = 100;
-$payment->token = "ff8080814c11e237014c1ff593b57b4d";
-$payment->installments = 1;
-$payment->payer = array(
-"type" => "customer",
-"id" => "123456789-jxOV430go9fx2e"
-);
+  $customer_client = new CustomerClient();
+  $cards = $client->list("customer_id");
+  
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-$payment->save();
-
+  $payment = $client->create([
+    "transaction_amount" => 100.0,
+    "token" => $cards[0]-> token,
+    "description" => "My product",
+    "installments" => 1,
+    "payment_method_id" => "visa",
+    "issuer_id" => "123",
+    "payer" => [
+      "type" => "customer",
+      "id" => "1234"
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
-
 ```
 ```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
+const customerClient = new Customer(client);
 
-var Mercadopago = require('mercadopago');
-Mercadopago.configurations.setAccessToken(config.access_token);
+customerClient.listCards({ customerId: '<CUSTOMER_ID>' })
+	.then((result) => {
 
-var payment_data = {
-transaction_amount: 100,
-token: 'ff8080814c11e237014c1ff593b57b4d',
-installments: 1,
-payer: {
-type: "customer"
-id: "123456789-jxOV430go9fx2e"
-}
+  const payment = new Payment(client);
+
+  const body = {
+    transaction_amount: 100,
+    token: result[0].token,
+    description: 'My product',
+    installments: 1,
+    payment_method_id: 'visa',
+    issuer_id: 123,
+    payer: {
+      type: 'customer',
+      id: '123'
+  }
 };
 
-Mercadopago.payment.create(payment_data).then(function (data) {
-console.log(date);
+  payment.create({ body: body }).then((result) => console.log(result));
 });
-
 ```
 ```java
 
@@ -325,11 +321,3 @@ id: "123456789-jxOV430go9fx2e"
 
 ```
 ]]]
-
-> PREV_STEP_CARD_EN
->
-> Get cards list
->
-> Learn how to consult the list of cards for a given customer.
->
-> [Get cards list](/developers/en/docs/checkout-api/customer-management/get-cards-list)

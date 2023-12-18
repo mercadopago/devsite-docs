@@ -26,10 +26,9 @@ Go to [Create store](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/r
 >
 > Important
 >
-> 1. You should know the `country_id` of your current location at [our countries API](https://api.mercadolibre.com/countries).
-> 2. The `state_name` has to match the **states** of [the specific country](https://api.mercadolibre.com/countries/$country_id).
-> 3. The `city_name` must match the **cities** of [the states](https://api.mercadolibre.com/states/$state_id).
-
+> 1. You should know the `country_id` of your current location at [our countries API.](https://api.mercadolibre.com/countries)
+> 2. The `state_name` has to match the **states** of [the specific country.](https://api.mercadolibre.com/countries/$country_id)
+> 3. The `city_name` must match the **cities** of [the states.](https://api.mercadolibre.com/states/$state_id)
 
 # Point of Sale (POS)
 
@@ -43,7 +42,6 @@ Having your stores set, you can create your POS. Consider the following:
 | --- | --- |
 | `EXTERNAL_STORE_ID` | Links the POS to the store. It is a mandatory field and matches the `external_id` of the previously created store. |
 | `EXTERNAL_ID` | Identifies each Point of Sale (POS). It is required and can not be modified nor repeated on the same Mercado Pago account. You may also find it as `EXTERNAL_POS_ID`. |
-
 
 Go to [Create POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/pos/_pos/post) in our API Reference to create a POS. There you will find all the necessary information.
 

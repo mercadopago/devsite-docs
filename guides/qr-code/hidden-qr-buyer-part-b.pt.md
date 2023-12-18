@@ -1,18 +1,10 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
----
-
-# Como integrar QR modelo comprador
+# Integrar QR modelo comprador
 
 Para realizar a cobrança do pagamento, é preciso ler o QR e enviar o código desta leitura junto com as informações do pedido (valor, ítens, quantidade). Dessa forma, a transação será processada automaticamente no aplicativo do Mercado Pago.
 
-## Requisitos  previos
+> Para saber mais informações sobre este modelo de cobrança, acesse a documentação [Pagamentos QR modelo comprador.](/developers/pt/docs/qr-code/qr-buyer/qr-buyer-part-a)
+
+## Pré-requisitos
 
 Para que a integração funcione corretamente, é preciso:
 
@@ -20,7 +12,6 @@ Para que a integração funcione corretamente, é preciso:
 - Criar [QR](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/stores-and-pos).
 - Ter um leitor para código QR.
 - Habilitar sua conta do Mercado Pago para este tipo de cobrança. 
-
 
 ## Fluxo do modelo
 
@@ -32,13 +23,10 @@ O modelo comprador funciona da seguinte forma:
 2. Com as informações para cobrança do pedido e código de leitura do QR, o integrador envia os dados de cobrança para API.
 3. Na resposta da API, o integrador recebe a resposta sobre a aprovação ou rejeição do pagamento.
 
-
-
 ## Criação de pedido
 
 Neste modelo, existe uma API que enviará ao Mercado Pago as informações do pedido obtidas na leitura do QR. Isso permitirá que o valor da transação seja cobrado.
 Antes de publicar a ordem, será necessário coletar 2 dados:
-
 
 -**payment_token**
 Informação obtida ao ler o código QR do comprador (não modificar a informação do token)
@@ -92,7 +80,6 @@ curl --location --request POST
 | `description` | _string (256)_ | Descrição do pedido. |
 | `scan_timestamp` | _string (256)_ | Data e hora do período em que a varredura foi realizada no ponto de venda.  |
 | `payment_token` | _string (256)_ | Código capturado do telefone do pagador. **Este atributo está em Base64 e possui comprimento variável. Não há limite de caracteres.** (obrigatório) |
-
 
 ## Informações adicionais para requisição
 
@@ -150,23 +137,3 @@ Esta chamada retornará uma resposta semelhante a descrita abaixo.
                "total_paid_amount": 100
            },
 ```
-
-### Próximos passos
-
-
-> LEFT_BUTTON_REQUIRED_PT
->
-> Integração avançada
->
-> Conheça as opções disponíveis para levar sua integração ao próximo nível. 
->
-> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/qr-buyer-model/qr-advanced-integration)
-
-
-> RIGHT_BUTTON_RECOMMENDED_PT
->
-> Teste sua Integração
->
-> Realize os teste de uso mais frequentes para validar sua integração 
->
-> [Teste sua Integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/qr-buyer-model/qr-integration-test)

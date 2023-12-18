@@ -4,10 +4,34 @@ La integración de los pagos con tarjeta se realiza a través de cardform. En es
 
 A medida que se introducen los datos de la tarjeta, se realiza una búsqueda automática de la información del emisor y las cuotas disponibles para ese método de pago. Con esto, la implementación del flujo es transparente para quien realiza la integración.
 
+----[mlb]----
+> NOTE
+>
+> Importante
+>
+> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de CardPayment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de CardPayment para obtener más detalles. También recomendamos adoptar el protocolo 3DS 2.0 para aumentar la probabilidad de que se aprueben sus pagos. Para obtener más información, consulte la documentación sobre [Cómo integrar 3DS con Checkout Transparente.](/developers/es/docs/checkout-api/how-tos/integrate-3ds)
+
+------------
+----[mla, mlm, mpe, mlc]----
+> NOTE
+>
+> Importante
+>
+> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de CardPayment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de CardPayment para obtener más detalles. También recomendamos adoptar el protocolo 3DS 2.0 para aumentar la probabilidad de que se aprueben sus pagos. Para obtener más información, consulte la documentación sobre [Cómo integrar 3DS con Checkout API.](/developers/es/docs/checkout-api/how-tos/integrate-3ds)
+
+------------
+----[mlu, mco]----
+> NOTE
+>
+> Importante
+>
+> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de CardPayment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de CardPayment para obtener más detalles.
+
+------------
+
 Consulta el siguiente diagrama que ilustra el proceso de pago con tarjeta utilizando Card Form.
 
-![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-es.png)
-
+![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-es.png)
 
 Para integrar los pagos con tarjeta en Checkout API sigue las siguientes etapas.
 
@@ -21,19 +45,31 @@ La primera etapa del proceso de integración de pagos con tarjeta es la captura 
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
 ```
+```bash
+
+npm install @mercadopago/sdk-js
+
+```
 ]]]
 
-## Configurar credencial
+## Configurar credenciales
 
 Las credenciales son claves únicas con las que identificamos una integración en tu cuenta. Se utilizan para capturar pagos en tiendas online y otras aplicaciones de forma segura.
 
-Esta es la primera etapa de una estructura de código completa que se debe seguir para integrar correctamente pagos con tarjeta. Presta atención a los siguientes bloques para añadirlos a los códigos como se indica.
+Esta es la primera etapa de una estructura de código completa que se debe seguir para integrar correctamente pagos con tarjeta. 
 
 [[[
+```html
+<script>
+  const mp = new MercadoPago("YOUR_PUBLIC_KEY");
+</script>
+```
 ```javascript
-  <script>
-    const mp = new MercadoPago("YOUR_PUBLIC_KEY");
-  </script>
+import { loadMercadoPago } from "@mercadopago/sdk-js";
+
+await loadMercadoPago();
+const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 
@@ -41,8 +77,15 @@ Esta es la primera etapa de una estructura de código completa que se debe segui
 
 La captura de los datos de la tarjeta se realiza a través del CardForm de la biblioteca MercadoPago.js. Nuestro CardForm se conectará a tu formulario de pago HTML, facilitando la obtención y validación de todos los datos necesarios para procesar el pago.
 
+> WARNING
+>
+> Atención
+>
+> El cardtoken puede ser utilizado **solo una vez** y caduca en un plazo de **7 días**.
+
 Para añadir el formulario de pago, inserta el siguiente HTML directamente en el proyecto. 
 
+----[mla, mlu, mpe, mco, mlb, mlc]----
 [[[
 ```html
   <style>
@@ -72,15 +115,58 @@ Para añadir el formulario de pago, inserta el siguiente HTML directamente en el
     <input type="email" id="form-checkout__cardholderEmail" />
 
     <button type="submit" id="form-checkout__submit">Pagar</button>
-    <progress value="0" class="progress-bar">Carregando...</progress>
+    <progress value="0" class="progress-bar">Cargando...</progress>
   </form>
 ```
 ]]]
+
+------------
+----[mlm]----
+[[[
+```html
+  <style>
+    #form-checkout {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+    }
+
+    .container {
+      height: 18px;
+      display: inline-block;
+      border: 1px solid rgb(118, 118, 118);
+      border-radius: 2px;
+      padding: 1px 2px;
+    }
+  </style>
+  <form id="form-checkout">
+    <div id="form-checkout__cardNumber" class="container"></div>
+    <div id="form-checkout__expirationDate" class="container"></div>
+    <div id="form-checkout__securityCode" class="container"></div>
+    <input type="text" id="form-checkout__cardholderName" />
+    <select id="form-checkout__issuer"></select>
+    <select id="form-checkout__installments"></select>
+    <input type="email" id="form-checkout__cardholderEmail" />
+
+    <button type="submit" id="form-checkout__submit">Pagar</button>
+    <progress value="0" class="progress-bar">Cargando...</progress>
+  </form>
+```
+]]]
+
+------------
 
 ## Inicializar formulario de pago
 
 Después de añadir el formulario de pago, es necesario inicializarlo. Esta etapa consiste en relacionar el ID de cada campo del formulario con los atributos correspondientes. La biblioteca se encargará de rellenar, obtener y validar todos los datos necesarios en la confirmación del pago.  
 
+> NOTE
+>
+> Importante
+>
+> Al enviar el formulario, se genera un token que representa de manera segura los datos de la tarjeta. Es posible acceder a él mediante la función `cardForm.getCardFormData()`, como se muestra a continuación en el callback `onSubmit`. Además, este token también se almacena en un campo oculto dentro del formulario, donde se puede encontrar con la nomenclatura `MPHiddenInputToken`.
+
+----[mla, mlu, mpe, mco, mlb, mlc]----
 [[[
 ```javascript
 
@@ -183,15 +269,109 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
 ```
 ]]]
 
+------------
+----[mlm]----
+[[[
+```javascript
 
-Al enviar el formulario, se genera un token que representa de forma segura los datos de la tarjeta. Se puede acceder a este a través de la función`getCardFormData`, como se mostró anteriormente en el callback `onSubmit`. Además, este token también se almacena en un input oculto en el formulario y puede ser encontrado con el nombre `MPHiddenInputToken`.
+    const cardForm = mp.cardForm({
+      amount: "100.5",
+      iframe: true,
+      form: {
+        id: "form-checkout",
+        cardNumber: {
+          id: "form-checkout__cardNumber",
+          placeholder: "Numero de tarjeta",
+        },
+        expirationDate: {
+          id: "form-checkout__expirationDate",
+          placeholder: "MM/YY",
+        },
+        securityCode: {
+          id: "form-checkout__securityCode",
+          placeholder: "Código de seguridad",
+        },
+        cardholderName: {
+          id: "form-checkout__cardholderName",
+          placeholder: "Titular de la tarjeta",
+        },
+        issuer: {
+          id: "form-checkout__issuer",
+          placeholder: "Banco emisor",
+        },
+        installments: {
+          id: "form-checkout__installments",
+          placeholder: "Cuotas",
+        },        
+        cardholderEmail: {
+          id: "form-checkout__cardholderEmail",
+          placeholder: "E-mail",
+        },
+      },
+      callbacks: {
+        onFormMounted: error => {
+          if (error) return console.warn("Form Mounted handling error: ", error);
+          console.log("Form mounted");
+        },
+        onSubmit: event => {
+          event.preventDefault();
 
+          const {
+            paymentMethodId: payment_method_id,
+            issuerId: issuer_id,
+            cardholderEmail: email,
+            amount,
+            token,
+            installments,
+            identificationNumber,
+            identificationType,
+          } = cardForm.getCardFormData();
+
+          fetch("/process_payment", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              token,
+              issuer_id,
+              payment_method_id,
+              transaction_amount: Number(amount),
+              installments: Number(installments),
+              description: "Descripción del producto",
+              payer: {
+                email,
+                identification: {
+                  type: identificationType,
+                  number: identificationNumber,
+                },
+              },
+            }),
+          });
+        },
+        onFetching: (resource) => {
+          console.log("Fetching resource: ", resource);
+
+          // Animate progress bar
+          const progressBar = document.querySelector(".progress-bar");
+          progressBar.removeAttribute("value");
+
+          return () => {
+            progressBar.setAttribute("value", "0");
+          };
+        }
+      },
+    });
+```
+]]]
+
+------------
 
 > NOTE
 >
 > Importante
 >
-> Si necesitas añadir o modificar alguna lógica en el flujo de los métodos de Javascript consulta la documentación: [Integración vía Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
+> Si necesitas añadir o modificar alguna lógica en el flujo de los métodos de Javascript consulta la documentación [Integración vía Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
 
 ## Enviar pago
 
@@ -201,97 +381,103 @@ En el ejemplo de la sección previa, enviamos todos los datos necesarios para la
 
 Con toda la información recopilada en el backend, envía un **POST** con los atributos requeridos, prestando atención a los parámetros `token`, `transaction_amount`, `installments`, `payment_method_id` y `payer.email` al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, envía la información utilizando nuestros SDKs.
 
-
 > NOTE
 >
 > Importante
 >
-> Para aumentar las posibilidades de aprobación del pago y evitar que el análisis antifraude no autorice la transacción, recomendamos introducir toda la información posible sobre el comprador al realizar la solicitud. Para más detalles sobre cómo aumentar las posibilidades de aprobación, consulta [Cómo mejorar la aprobación de los pagos](/developers/es/docs/checkout-api/how-tos/improve-payment-approval).
-
-
+> Para aumentar las posibilidades de aprobación del pago y evitar que el análisis antifraude no autorice la transacción, recomendamos introducir toda la información posible sobre el comprador al realizar la solicitud. Para más detalles sobre cómo aumentar las posibilidades de aprobación, consulta [Cómo mejorar la aprobación de los pagos.](/developers/es/docs/checkout-api/how-tos/improve-payment-approval)
+> <br><br>
+> Al ejecutar las APIs mencionadas en esta documentación, es posible que encuentre el atributo `X-Idempotency-Key`. Completarlo es crucial para asegurar la ejecución y reejecución de las solicitudes sin situaciones no deseadas, como pagos duplicados, por ejemplo.
 
 [[[
 ```php
-===
-Encuentra el estado del pago en el campo _status_.
-===
 <?php
-   require_once 'vendor/autoload.php';
- 
-   MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
- 
-   $payment = new MercadoPago\Payment();
-   $payment->transaction_amount = (float)$_POST['transactionAmount'];
-   $payment->token = $_POST['token'];
-   $payment->description = $_POST['description'];
-   $payment->installments = (int)$_POST['installments'];
-   $payment->payment_method_id = $_POST['paymentMethodId'];
-   $payment->issuer_id = (int)$_POST['issuer'];
- 
-   $payer = new MercadoPago\Payer();
-   $payer->email = $_POST['email'];
-   $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-       "type" => $_POST['identificationType'],------------
-       "number" => $_POST['identificationNumber']
-   );
-   $payment->payer = $payer;
- 
-   $payment->save();
- 
-   $response = array(
-       'status' => $payment->status,
-       'status_detail' => $payment->status_detail,
-       'id' => $payment->id
-   );
-   echo json_encode($response);
- 
+  use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\MercadoPagoConfig;
+
+
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+
+  $payment = $client->create([
+    "transaction_amount" => (float) $_POST['transactionAmount'],
+    "token" => $_POST['token'],
+    "description" => $_POST['description'],
+    "installments" => $_POST['installments'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "issuer_id" => $_POST['issuer'],
+    "payer" => [
+      "email" => $_POST['email'],
+      "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['number']
+      ]
+    ]
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```node
-===
-Encuentra el estado del pago en el campo _status_.
-===
- 
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
- 
-mercadopago.payment.save(req.body)
-  .then(function(response) {
-    const { status, status_detail, id } = response.body;
-    res.status(response.status).json({ status, status_detail, id });
-  })
-  .catch(function(error) {
-    console.error(error);
-  });
+import { Payment, MercadoPagoConfig } from 'mercadopago';
+
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+
+payment.create({
+    body: { 
+        transaction_amount: req.transaction_amount,
+        token: req.token,
+        description: req.description,
+        installments: req.installments,
+        payment_method_id: req.paymentMethodId,
+        issuer_id: req.issuer,
+            payer: {
+            email: req.email,
+            identification: {
+        type: req.identificationType,
+        number: req.number
+    }}},
+    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
 ```
 ```java
 ===
 Encuentra el estado del pago en el campo _status_.
 ===
+
+Map<String, String> customHeaders = new HashMap<>();
+    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
  
-MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
- 
-Payment payment = new Payment();
-payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmount")))
-      .setToken(request.getParameter("token"))
-      .setDescription(request.getParameter("description"))
-      .setInstallments(Integer.valueOf(request.getParameter("installments")))
-      .setPaymentMethodId(request.getParameter("paymentMethodId"));
- 
-Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
-identification.setType(request.getParameter("identificationType"))
-             .setNumber(request.getParameter("identificationNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("identificationNumber"));------------
- 
-Payer payer = new Payer();
-payer.setEmail(request.getParameter("email"))
-    .setIdentification(identification);
-   
-payment.setPayer(payer);
- 
-payment.save();
- 
-System.out.println(payment.getStatus());
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
+
+PaymentClient client = new PaymentClient();
+
+PaymentCreateRequest paymentCreateRequest =
+   PaymentCreateRequest.builder()
+       .transactionAmount(request.getTransactionAmount())
+       .token(request.getToken())
+       .description(request.getDescription())
+       .installments(request.getInstallments())
+       .paymentMethodId(request.getPaymentMethodId())
+       .payer(
+           PaymentPayerRequest.builder()
+               .email(request.getPayer().getEmail())
+               .firstName(request.getPayer().getFirstName())
+               .identification(
+                   IdentificationRequest.builder()
+                       .type(request.getPayer().getIdentification().getType())
+                       .number(request.getPayer().getIdentification().getNumber())
+                       .build())
+               .build())
+       .build();
+
+client.create(paymentCreateRequest, requestOptions);
  
 ```
 ```ruby
@@ -300,7 +486,13 @@ Encuentra el estado del pago en el campo _status_.
 ===
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
- 
+
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
+
 payment_data = {
  transaction_amount: params[:transactionAmount].to_f,
  token: params[:token],
@@ -316,7 +508,7 @@ payment_data = {
  }
 }
  
-payment_response = sdk.payment.create(payment_data)
+payment_response = sdk.payment.create(payment_data, custom_request_options)
 payment = payment_response[:response]
  
 puts payment
@@ -333,6 +525,9 @@ using MercadoPago.Config;
 using MercadoPago.Resource.Payment;
  
 MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
+
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
  
 var paymentRequest = new PaymentCreateRequest
 {
@@ -353,7 +548,7 @@ var paymentRequest = new PaymentCreateRequest
 };
  
 var client = new PaymentClient();
-Payment payment = await client.CreateAsync(paymentRequest);
+Payment payment = await client.CreateAsync(paymentRequest, requestOptions);
  
 Console.WriteLine(payment.Status);
  
@@ -364,7 +559,12 @@ Encuentra el estado del pago en el campo _status_.
 ===
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
- 
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
+
 payment_data = {
    "transaction_amount": float(request.POST.get("transaction_amount")),
    "token": request.POST.get("token"),
@@ -380,7 +580,7 @@ payment_data = {
    }
 }
  
-payment_response = sdk.payment().create(payment_data)
+payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
  
 print(payment)
@@ -394,6 +594,7 @@ curl -X POST \
    -H 'accept: application/json' \
    -H 'content-type: application/json' \
    -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+   -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
    'https://api.mercadopago.com/v1/payments' \
    -d '{
          "transaction_amount": 100,
@@ -403,7 +604,7 @@ curl -X POST \
          "payment_method_id": "visa",
          "issuer_id": 310,
          "payer": {
-           "email": "test@test.com"
+           "email": "PAYER_EMAIL"
          }
    }'
  
@@ -431,33 +632,24 @@ La respuesta devolverá el siguiente resultado
 
 > WARNING
 >
-> Importante
+> Atención
 >
-> Al crear un pago es posible recibir 3 estados diferentes: "Pendiente", "Rechazado" y "Aprobado". Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-api/additional-content/notifications/introduction) para obtener más detalles.
+> Al crear un pago es posible recibir 3 estados diferentes: "Pendiente", "Rechazado" y "Aprobado". Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-api/additional-content/your-integrations/notifications) para obtener más detalles.
 
 ## Ejemplo de código
 
+----[mlb]----
+> GIT
+>
+> Checkout Transparente
+>
+> Para ejemplos completos de código, consulte nuestros [ejemplos completos de integración.](http://github.com/mercadopago/card-payment-sample/tree/1.0.0)
+------------
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
 > GIT
 >
 > Checkout API
 >
-> Para ejemplos completos de código, consulte nuestros [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample/tree/1.0.0).
-
+> Para ejemplos completos de código, consulte nuestros [ejemplos completos de integración.](http://github.com/mercadopago/card-payment-sample/tree/1.0.0)
 ------------
-
-> PREV_STEP_CARD_ES
->
-> Requisitos previos
->
-> Consulta los requisitos previos que se necesitan para integrar Checkout API.
->
-> [Integrar Checkout API](/developers/es/docs/checkout-api/prerequisites)
-
-
-> NEXT_STEP_CARD_ES
->
-> Otros medios de pagos
->
-> Descubre las otras opciones de pago disponibles para la integración.
->
-> [Otros medios de pagos](/developers/es/docs/checkout-api/integration-configuration/other-payment-methods)

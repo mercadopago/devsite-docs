@@ -31,6 +31,4 @@ window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 ```
 ]]]
 
->
-> Saiba mais sobre a public key em Credenciais.
->
+> Saiba mais sobre a public key em [Credenciais.](/developers/pt/docs/your-integrations/credentials)

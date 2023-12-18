@@ -1,10 +1,9 @@
-# Configurar pagos con tarjeta
+# Tarjeta
 
 ----[mlb]----
 Con el [Checkout Transparente](/developers/es/guides/checkout-api/landing), ofrece pagos con **tarjetas de crédito o débito** (disponibles en el país donde está instalada la tienda) directamente en tu tienda, sin la el comprador debe ser redirigido para realizar el pago.
 
 ------------
-
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 Con el [Checkout API](/developers/es/guides/checkout-api/landing), ofrece pagos con **tarjetas de crédito o débito** (disponibles en el país donde está instalada la tienda) directamente en tu tienda, sin la el comprador debe ser redirigido para realizar el pago.
 
@@ -22,32 +21,5 @@ Para integrar el método de pago, siga los pasos a continuación.
 8. En **Checkout Position**, indique la posición en la que el método de pago estará disponible para el comprador en el flujo de pago.
 9. En el campo **Cards saved in Mercado Pago**, indica si deseas que el comprador tenga la opción de guardar los datos de su tarjeta para futuros pagos o usar su saldo en Mercado Pago para realizar pagos. Los clientes pagan más rápido y usted aumenta la conversión con esta función.
 10. Haga clic en **Set up installment and interest** para [configurar en Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/costs-section#from-section=menu) la tarifa que se pagará en cada compra y además ofrecer cuotas sin intereses a sus clientes.
-11. Luego haga clic en **Save Config**para guardar sus preferencias.
+11. Luego haga clic en **Save Config** para guardar sus preferencias.
 
-> PREV_STEP_CARD_ES
->
-> Configurar pagos con ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------
->
-> Aprenda a configurar ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para recibir pagos en tu tienda.
->
-> [Checkout Transparente](/developers/es/docs/magento-two/payment-configuration/checkout-api)
-
-----[mlb]----
-> NEXT_STEP_CARD_ES
->
-> Configurar pagos offline (ticket)
->
-> Configure su tienda para recibir pagos offline (boleto bancário y cajero automático) utilizando el Checkout Transparente.
->
-> [Ticket](/developers/es/docs/magento-two/payment-configuration/checkout-api/ticket)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> NEXT_STEP_CARD_ES
->
-> Configurar pagos offline (ticket)
->
-> Configure su tienda para recibir pagos offline (efectivo y cajero automático) utilizando el Checkout API.
->
-> [Ticket](/developers/es/docs/magento-two/payment-configuration/checkout-api/ticket)
-------------

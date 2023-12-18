@@ -5,8 +5,8 @@ In the table below you can find the main events, deadlines and waiting time for 
 | Event | Deadline after the first dispatch | Confirmation waiting time |
 | --- | --- | --- |
 | Shipping | - | 22 seconds |
-| First try | 5 minutes | 5 seconds |
-| Second attempt | 45 minutes | 5 seconds |
+| First try | 15 minutes | 5 seconds |
+| Second attempt | 30 minutes | 5 seconds |
 | Third attempt | 6 hours | 5 seconds |
-| Fourth attempt | 2 days | 5 seconds |
-| Fifth attempt | 4 days | 5 seconds |
+| Fourth attempt | 48 hours | 5 seconds |
+| Fifth attempt | 96 hours | 5 seconds |

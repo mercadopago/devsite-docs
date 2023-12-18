@@ -1,10 +1,10 @@
 # Salida a producción
 
-Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y quieras empezar a procesar pagos reales, debes [activar tus credenciales](/developers/es/docs/qr-code/additional-content/credentials), y **solicitar el proceso de homologación al equipo de integraciones**.
+Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y quieras empezar a procesar pagos reales, debes [activar tus credenciales](/developers/es/docs/qr-code/additional-content/your-integrations/credentials) y **solicitar el proceso de homologación al equipo de integraciones**.
 
 ## Homologación
 
-En esta etapa, se realizarán pruebas en tu entorno con el equipo técnico, socios y software house, se te solicitará que uses Sponsor ID y [OAuth](/developers/es/docs/qr-code/additional-content/security/oauth/introduction), (autenticación entre cuentas de Mercado Pago).
+En esta etapa, se realizarán pruebas en tu entorno con el equipo técnico, socios y software house, se te solicitará que uses Sponsor ID y [OAuth](/developers/es/docs/qr-code/additional-content/security/oauth/introduction)(autenticación entre cuentas de Mercado Pago).
 
 Mercado Pago podrá auditar tu sitio, app o Software de Punto de Venta y verificar que se cumplan las reglas detalladas en el apartado **Prueba de integración**. Caso contrario, un asesor entrará en contacto contigo para discutir si hay cosas que debes corregir en tu integración.
 
@@ -25,5 +25,3 @@ Estos son algunos puntos a tener en cuenta para aumentar la calidad de tus integ
 
 * Mantén actualizado el estado de los pedidos en tus sistemas usando y procesando notificaciones de IPN o Webhooks.
 * Utiliza los reportes de conciliación de API para mejorar la gestión financiera empresarial.
-
-

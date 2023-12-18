@@ -1,29 +1,39 @@
----
-  sites_supported:
-      - mla
-      - mlb
-      - mlm
-      - mpe
-      - mlu
----
-
 # Cancelar reserva
 
-O cancelamento de uma reserva ocorre quando, por algum motivo, o pagamento de uma compra não é aprovado e a reserva do valor precisa retornar para o limite do cartão do cliente ou quando um comprador desiste da compra. Para mais informações sobre reembolsos e cancelamentos de pagamentos, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds).
+O cancelamento de uma reserva ocorre quando, por algum motivo, o pagamento de uma compra não é aprovado e a reserva do valor precisa retornar para o limite do cartão do cliente ou quando um comprador desiste da compra.
+
+> Para mais informações sobre reembolsos e cancelamentos de pagamentos, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds).
 
 Para cancelar uma reserva utilize um dos códigos disponíveis abaixo.
-
 
 [[[
 ```php
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-  $payment = MercadoPago\Payment::find_by_id($payment_id);
-  $payment->status = "cancelled";
-  $payment->update();
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+
+  $payment = $client->cancel($payment_id, $request_options);
+  echo $payment->status;
 ?>
+```
+```node
+import { MercadoPagoConfig, Payment } from 'mercadopago';
+
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const payment = new Payment(client);
+
+payment.cancel({
+id: '<PAYMENT_ID>',
+requestOptions: {
+idempotencyKey: '<IDEMPOTENCY_KEY>'
+},
+}).then(console.log).catch(console.log);
 ```
 ```java
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
@@ -33,20 +43,6 @@ Long paymentId = 123456789L;
 
 PaymentClient client = new PaymentClient();
 client.cancel(paymentId);
-```
-```node
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
-
-let paymentToBeCanceled = 123;
-
-mercadopago.payment.cancel(paymentToBeCanceled, mercadopago, (error, response) => {
-    if (error){
-        console.log(error);
-    }else{
-        console.log(response)
-    }
-});
 ```
 ```ruby
 require 'mercadopago'
@@ -104,20 +100,5 @@ A resposta trará o seguinte resultado
 ```
 ]]]
 
-> PREV_STEP_CARD_PT
->
-> Capturar pagamento autorizado
->
-> Conheça as formas disponíveis para captura de um pagamento autorizado.
->
-> [Capturar pagamento autorizado](/developers/pt/docs/checkout-api/payment-management/capture-authorized-payment)
 
-
-> NEXT_STEP_CARD_PT
->
-> Reembolsos e cancelamentos
->
-> Saiba como realizar reembolsos e/ou cancelamentos de um pagamento.
->
-> [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds)
 

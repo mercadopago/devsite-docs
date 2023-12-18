@@ -1,0 +1,3279 @@
+{
+  "url": "https://api.mercadopago.com",
+  "paths": {
+    "/v2/wallet_connect/agreements": {
+      "post": {
+        "tags": [
+          "wallet-connect"
+        ],
+        "description": {
+          "en": "An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment",
+          "pt": "Um Agreement é um link de autorização recebido pelo comprador para permitir ao vendedor acessar a sua carteira do Mercado Pago, a fim de debitar o pagamento",
+          "es": "Un Agreement es un link de autorización recibido por el comprador para permitir al vendedor acceder a su billetera de Mercado Pago con el fin de debitar el pago"
+        },
+        "parameters": [
+          {
+            "name": "client.id",
+            "in": "query",
+            "description": {
+              "en": "Unique ID that identifies a specific Client",
+              "pt": "ID único que identifica um cliente específico",
+              "es": "ID único que identifica un cliente específico"
+            },
+            "schema": {
+              "type": "number",
+              "example": "<CLIENT.ID>"
+            }
+          },
+          {
+            "name": "x-platform-id",
+            "in": "header",
+            "description": {
+              "en": "Field intended for platforms or modules that offer Mercado Pago in their solutions",
+              "pt": "Campo destinado para as plataformas ou módulos que oferecem Mercado Pago em suas soluções",
+              "es": "Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones"
+            },
+            "schema": {
+              "type": "string",
+              "example": "PLATFORM_ID"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": {
+            "en": "Here are the fields needed to complete a request for create an Agreement",
+            "pt": "Estes são os campos necessários para completar o pedido de criação de um Agreement",
+            "es": "Estos son los campos necesarios para completar la orden de creación de un Agreement"
+          },
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "return_url": {
+                    "type": "string",
+                    "description": {
+                      "en": "URL that redirects the user back to the sellers site",
+                      "pt": "O URL que redireciona o usuário de volta ao site do vendedor.",
+                      "es": "Es el URL que redirige al usuario de regreso al sitio del vendedor"
+                    },
+                    "example": "https://www.mercadopago.com/"
+                  },
+                  "external_flow_id": {
+                    "type": "string",
+                    "description": {
+                      "en": "Identifies the Seller side flow current state",
+                      "pt": "Identifica o estado do fluxo pelo lado do vendedor",
+                      "es": "Identifica el estado del flujo por el lado del vendedor"
+                    },
+                    "example": "EXTERNAL_FLOW_ID"
+                  },
+                  "external_user": {
+                    "type": "object",
+                    "description": {
+                      "en": "The external_user contains the data that the Seller will need to use to indentify a User, so then it can continue with their own flow.",
+                      "pt": "O external_user contém os dados que o vendedor precisará para identificar um usuário, de modo que este possa prosseguir com o seu próprio fluxo.",
+                      "es": "El external_user contiene los datos que el vendedor necesitará para identificar un usuario a fin de que este pueda continuar con su propio flujo."
+                    },
+                    "properties": {
+                      "id": {
+                        "required": true,
+                        "type": "string",
+                        "description": {
+                          "en": "Unique ID that is going to be used by the Seller to identify the external_user",
+                          "pt": "ID único que será usado pelo vendedor para identificar o external_user",
+                          "es": "ID único que será utilizado por el vendedor para identificar el external_user"
+                        },
+                        "example": "usertest"
+                      },
+                      "description": {
+                        "required": true,
+                        "type": "string",
+                        "description": {
+                          "en": "A brief description with information of the user. It can contains for example the name of the user",
+                          "pt": "Breve descrição com informações do usuário. Por exemplo, essa pode conter o nome do usuário",
+                          "es": "Breve descripción con información del usuario. Por ejemplo, esta puede contener el nombre del usuario"
+                        },
+                        "example": "Test account"
+                      }
+                    }
+                  },
+                  "agreement_data": {
+                    "type": "object",
+                    "description": {
+                      "en": "Contains information about actions the user must do and the amount to be paid",
+                      "pt": "Contém informação sobre as ações que o usuário deve fazer e o valor a ser pago",
+                      "es": "Contiene información sobre las acciones que el usuario debe realizar y el monto a pagar"
+                    },
+                    "properties": {
+                      "validation_amount": {
+                        "required": false,
+                        "type": "number",
+                        "description": {
+                          "en": "Amount that the user is going to pay",
+                          "pt": "Valor que o usuário pagará",
+                          "es": "Monto que el usuario pagará"
+                        },
+                        "example": 3.14
+                      },
+                      "description": {
+                        "type": "string",
+                        "required": false,
+                        "description": {
+                          "en": "Description of the actions that the user is trying to perform",
+                          "pt": "Descrição das ações que o usuário tenta realizar",
+                          "es": "Descripción de las acciones que el usuario intenta realizar"
+                        },
+                        "example": "Test agreement"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "en": "Agreement created",
+              "pt": "Agreement criado",
+              "es": "Agreement creado"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": {
+                    "en": "Agreement that contains an unique identifier and a success URL.",
+                    "pt": "Agreement que contém um identificador único e um URL de sucesso.",
+                    "es": "Agreement que contiene un identificador único y un URL de éxito."
+                  },
+                  "type": "object",
+                  "properties": {
+                    "agreement_id": {
+                      "type": "string",
+                      "description": {
+                        "en": "Unique ID that identifies an Agreement",
+                        "pt": "ID único que identifica um Agreement",
+                        "es": "ID único que identifica un Agreement"
+                      },
+                      "example": "22abcd1235ed497f945f755fcaba3c6c"
+                    },
+                    "agreement_uri": {
+                      "type": "string",
+                      "description": {
+                        "es": "This is the uri to redirect the user to the wallet linking in the frontend",
+                        "pt": "This is the uri to redirect the user to the wallet linking in the frontend",
+                        "en": "This is the uri to redirect the user to the wallet linking in the frontend"
+                      },
+                      "example": "https://wwww.mercadopago.com.ar/v1/wallet_agreement/22abcd1235ed497f945f755fcaba3c6c"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Create Agreement",
+          "pt": "Criar Agreement",
+          "es": "Crear Agreement"
+        }
+      }
+    },
+    "/v2/wallet_connect/agreements/{agreement_id}/payer_token": {
+      "post": {
+        "tags": [
+          "wallet-connect"
+        ],
+        "description": {
+          "en": "A payer token is an ID that represents the authorization the user gave to the seller",
+          "pt": "Um Payer Token é um ID que representa a autorização que o usuário deu ao vendedor",
+          "es": "Un Payer Token es un ID que representa la autorización que el usuario dio al vendedor"
+        },
+        "parameters": [
+          {
+            "name": "agreement_id",
+            "in": "path",
+            "description": {
+              "en": "Unique ID that identifies an Agreement",
+              "pt": "ID único que identifica um Agreement",
+              "es": "ID único que identifica un Agreement"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "<AGREEMENT.ID>"
+            }
+          },
+          {
+            "name": "x-platform-id",
+            "in": "header",
+            "description": {
+              "en": "Field intended for platforms or modules that offer Mercado Pago in their solutions",
+              "pt": "Campo destinado para as plataformas ou módulos que oferecem Mercado Pago em suas soluções",
+              "es": "Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones"
+            },
+            "schema": {
+              "type": "string",
+              "example": "PLATFORM_ID"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "description": {
+                  "es": "It's a reference of the authorization that the user gave to the seller",
+                  "pt": "It's a reference of the authorization that the user gave to the seller",
+                  "en": "It's a reference of the authorization that the user gave to the seller"
+                },
+                "type": "object",
+                "properties": {
+                  "code": {
+                    "type": "string",
+                    "description": {
+                      "en": "This is the payer token. It is a reference to the Id that represents the authorization of the user",
+                      "pt": "Este é o Payer Token. É uma referência do ID que representa a autorização do usuário",
+                      "es": "Este es el Payer Token. Es una referencia del ID que representa la autorización del usuario"
+                    },
+                    "required": true,
+                    "example": "aeecea3e11f2545d1e7790eb6591ff68df74c57930551ed980239f4538a7e530"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "en": "Payer token created",
+              "pt": "Payer Token criado",
+              "es": "Payer Token creado"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "payer_token": {
+                      "type": "string",
+                      "description": {
+                        "en": "This is the token of the payer.",
+                        "pt": "Este é o token do pagador.",
+                        "es": "Este es el token del pagador."
+                      },
+                      "example": "abcdef1e23f4567d8e9123eb6591ff68df74c57930551ed980239f4538a7e530"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "404",
+                          "description": {
+                            "en": "Not-Found",
+                            "es": "Not-Found",
+                            "pt": "Not-Found"
+                          }
+                        },
+                        {
+                          "title": "404",
+                          "description": {
+                            "en": "Not-Found",
+                            "es": "Not-Found",
+                            "pt": "Not-Found"
+                          }
+                        },
+                        {
+                          "title": "404",
+                          "description": {
+                            "en": "Not-Found",
+                            "es": "Not-Found",
+                            "pt": "Not-Found"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Error",
+                            "es": "Error",
+                            "pt": "Error"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Create payer token",
+          "pt": "Criar Payer Token",
+          "es": "Crear Payer Token"
+        }
+      }
+    },
+    "/v2/wallet_connect/agreements/{agreement_id}": {
+      "delete": {
+        "tags": [
+          "wallet-connect"
+        ],
+        "description": {
+          "en": "Endpoint to cancel an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment. You will need to cancel an agreement when the vinculation flow has ended",
+          "pt": "Endpoint para cancelar um Agreement por ID. Um Agreement é um link de autorização que o comprador recebe para permitir ao vendedor acessar a sua carteira do Mercado Pago a fim de debitar o pagamento. Você deve cancelar um Agreement quando o fluxo de vinculação tenha terminado",
+          "es": "Endpoint para cancelar un Agreement por ID. Un Agreement es un link de autorización que el comprador recibe para permitir al vendedor acceder a su billetera de Mercado Pago a fin de debitar el pago. Deberás cancelar un agreement cuando el flujo de vinculación haya terminado"
+        },
+        "operationId": "cancelAgreement_DELETE",
+        "parameters": [
+          {
+            "name": "agreementId",
+            "in": "path",
+            "description": {
+              "en": "Unique ID that identifies an Agreement",
+              "pt": "ID único que identifica um Agreement",
+              "es": "ID único que identifica un Agreement"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "b1234e5678b91c23a456e78912345b67"
+            }
+          },
+          {
+            "name": "client.id",
+            "in": "query",
+            "description": {
+              "en": "Unique ID that identifies a Client",
+              "pt": "ID único que identifica um cliente",
+              "es": "ID unico que identifica un cliente"
+            },
+            "required": false,
+            "schema": {
+              "type": "number",
+              "example": 1451895580758649
+            }
+          },
+          {
+            "name": "x-platform-id",
+            "in": "header",
+            "description": {
+              "en": "Field intended for platforms or modules that offer Mercado Pago in their solutions",
+              "pt": "Campo destinado para as plataformas ou módulos que oferecem Mercado Pago em suas soluções",
+              "es": "Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones"
+            },
+            "schema": {
+              "type": "string",
+              "example": "YOUR_ACCESS_TOKEN"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "es": "Success",
+              "pt": "Success",
+              "en": "Success"
+            },
+            "name": "Agreement cancelled"
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "404",
+                          "description": {
+                            "en": "Not-Found",
+                            "es": "Not-Found",
+                            "pt": "Not-Found"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Error",
+                            "es": "Error",
+                            "pt": "Error"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Cancel agreement",
+          "pt": "Cancelar Agreement",
+          "es": "Cancelar Agreement"
+        }
+      },
+      "get": {
+        "tags": [
+          "wallet-connect"
+        ],
+        "description": {
+          "en": "Endpoint to get an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment",
+          "pt": "Endpoint para obter um Agreement por ID. Um Agreement é um link de autorização que o comprador recebe para permitir ao vendedor acessar a sua carteira do Mercado Pago a fim de debitar o pagamento",
+          "es": "Endpoint para obtener un Agreement por ID. Un Agreement es un link de autorización que el comprador recibe para permitir al vendedor acceder a su billetera de Mercado Pago a fin de debitar el pago"
+        },
+        "operationId": "getAgreement_GET",
+        "parameters": [
+          {
+            "name": "agreementId",
+            "in": "path",
+            "description": {
+              "en": "Unique ID that identifies an Agreement",
+              "pt": "ID único que identifica um Agreement",
+              "es": "ID único que identifica un Agreement"
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "b1234e5678b91c23a456e78912345b67"
+            }
+          },
+          {
+            "name": "client.id",
+            "in": "query",
+            "description": {
+              "en": "Unique ID that identifies a Client",
+              "pt": "ID único que identifica um cliente",
+              "es": "ID unico que identifica un cliente"
+            },
+            "required": false,
+            "schema": {
+              "type": "number",
+              "example": 1451895580758649
+            }
+          },
+          {
+            "name": "x-platform-id",
+            "in": "header",
+            "description": {
+              "en": "Field intended for platforms or modules that offer Mercado Pago in their solutions",
+              "pt": "Campo destinado às plataformas ou módulos que oferecem Mercado Pago em suas soluções",
+              "es": "Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones"
+            },
+            "schema": {
+              "type": "string",
+              "example": "YOUR_ACCESS_TOKEN"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "es": "Success",
+              "pt": "Success",
+              "en": "Success"
+            },
+            "name": "Agreement obtained",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": {
+                    "en": "Agreement response.",
+                    "pt": "Resposta do Agreement.",
+                    "es": "Respuesta del Agreement."
+                  },
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "description": {
+                        "en": "Unique ID that identifies an Agreement.",
+                        "pt": "ID único que identifica um Agreement.",
+                        "es": "ID único que identifica un Agreement."
+                      },
+                      "example": "b1234e5678b91c23a456e78912345b67"
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "description": {
+                        "en": "Agreement creation date.",
+                        "pt": "Data de criação do Agreement.",
+                        "es": "Data de creación del Agreement."
+                      },
+                      "example": "2023-02-16T00:02:52Z"
+                    },
+                    "date_cancelled": {
+                      "type": "string",
+                      "description": {
+                        "en": "Agreement cancelled date.",
+                        "pt": "Data de cancelamento do Agreement.",
+                        "es": "Fecha de cancelación del Agreement."
+                      },
+                      "example": "2023-02-16T00:02:52Z"
+                    },
+                    "date_expire": {
+                      "type": "string",
+                      "description": {
+                        "en": "Agreement expiration date.",
+                        "pt": "Data de vencimento do Agreement.",
+                        "es": "Fecha de vencimiento del Agreement."
+                      },
+                      "example": "2023-02-16T00:02:52Z"
+                    },
+                    "validation_code": {
+                      "type": "string",
+                      "description": {
+                        "en": "The code obtained to generate the Payer Token.",
+                        "pt": "Código obtido para gerar o Payer Token.",
+                        "es": "Código obtenido para generar el Payer Token."
+                      },
+                      "example": "790eb6591ff68df74c57930551ed980239f4538a7e530"
+                    },
+                    "approval_uri": {
+                      "type": "string",
+                      "description": {
+                        "en": "Necessary uri to redirect the user to the previously linked wallet in the frontend.",
+                        "pt": "Uri necessária para redirecionar o usuário à wallet previamente vinculada no frontend.",
+                        "es": "Uri necesaria para redirigir al usuario a la billetera previamente vinculada en la interfaz."
+                      },
+                      "example": "https://www.mercadopago.com.ar/v1/wallet_agreement/b1234e5678b91c23a456e78912345b67"
+                    },
+                    "redirect_uri": {
+                      "type": "string",
+                      "description": {
+                        "en": "Indicates the Uri to return the user to after the agreement is complete.",
+                        "pt": "Indica o Uri para o qual o usuário retornará após ter completado o agreement.",
+                        "es": "Indica el Uri al que regresará el usuario después de que se complete el agreement."
+                      },
+                      "example": "https://www.mercadopago.com/"
+                    },
+                    "status": {
+                      "type": "string",
+                      "description": {
+                        "en": "Agreement status.",
+                        "pt": "Status do Agreement.",
+                        "es": "Status del Agreement."
+                      },
+                      "example": "confirmed_by_user"
+                    },
+                    "external_flow_id": {
+                      "type": "string",
+                      "description": {
+                        "en": "Identifies the Seller side flow current state.",
+                        "pt": "Identifica o status atual do fluxo Seller side.",
+                        "es": "Identifica el status actual del flujo Seller side."
+                      },
+                      "example": "external_flow_id"
+                    },
+                    "external_user": {
+                      "type": "object",
+                      "description": {
+                        "en": "The external_user contains the data that the Seller will need to use to indentify a User, so then it can continue with their own flow.",
+                        "pt": "O external_user contém os dados que o vendedor precisará para identificar um usuário, de modo que este possa seguir com o seu próprio fluxo.",
+                        "es": "El external_user contiene los datos que el vendedor necesitará para identificar un usuario a fin de que este pueda continuar con su propio flujo."
+                      },
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "description": {
+                            "en": "Unique ID that was used by the Seller to identify the external_user",
+                            "pt": "ID único que usou o vendedor para identificar o external_user",
+                            "es": "ID único que utilizó el vendedor para identificar el external_user"
+                          },
+                          "example": "usertest"
+                        },
+                        "description": {
+                          "type": "string",
+                          "description": {
+                            "en": "A brief description with information of the user. For example the name of the user",
+                            "pt": "Breve descrição com informações do usuário. Por exemplo, o nome do usuário",
+                            "es": "Breve descripción con información del usuario. Por ejemplo, el nombre del usuario"
+                          },
+                          "example": "Test account"
+                        }
+                      }
+                    },
+                    "agreement_data": {
+                      "type": "object",
+                      "description": {
+                        "en": "Contains information about actions the user must do and the amount to be paid",
+                        "pt": "Contém informação sobre as ações que o usuário deve fazer e o valor a ser pago",
+                        "es": "Contiene información sobre las acciones que el usuario debe realizar y el monto a pagar"
+                      },
+                      "properties": {
+                        "validation_amount": {
+                          "type": "number",
+                          "description": {
+                            "en": "Amount that the user is going to pay",
+                            "pt": "Valor que o usuário pagará",
+                            "es": "Monto que el usuario pagará"
+                          },
+                          "example": 3.14
+                        },
+                        "description": {
+                          "type": "string",
+                          "description": {
+                            "en": "Description of the actions that the user is trying to perform",
+                            "pt": "Descrição das ações que o usuário tenta realizar",
+                            "es": "Descripción de las acciones que el usuario intenta realizar"
+                          },
+                          "example": "Test agreement"
+                        }
+                      }
+                    },
+                    "site_id": {
+                      "type": "string",
+                      "description": {
+                        "en": "Country of origin of the Mercado Pago account.",
+                        "pt": "País de origem da conta do Mercado Pago.",
+                        "es": "País de origen de la cuenta de Mercado Pago."
+                      },
+                      "example": "MLA"
+                    },
+                    "application_id": {
+                      "type": "number",
+                      "description": {
+                        "en": "This is the client unique identificator.",
+                        "pt": "Identificador único do cliente.",
+                        "es": "Identificador único del cliente."
+                      },
+                      "example": 123456789
+                    },
+                    "collector_id": {
+                      "type": "number",
+                      "description": {
+                        "en": "User owner of the application_id.",
+                        "pt": "Usuário proprietário do application_id.",
+                        "es": "Usuario propietario del application_id."
+                      },
+                      "example": 987654
+                    },
+                    "model_version": {
+                      "type": "number",
+                      "description": {
+                        "en": "Agreement API version.",
+                        "pt": "Versão da API do Agreement.",
+                        "es": "Versión de la API del Agreement."
+                      },
+                      "example": 2
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "404",
+                          "description": {
+                            "en": "Not-Found",
+                            "es": "Not-Found",
+                            "pt": "Not-Found"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Error",
+                            "es": "Error",
+                            "pt": "Error"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Get agreement",
+          "pt": "Obter Agreement",
+          "es": "Obtener Agreement"
+        }
+      }
+    },
+    "/v1/advanced_payments": {
+      "post": {
+        "tags": [
+          "wallet-connect"
+        ],
+        "description": {
+          "en": "Advanced Payments are specific payments for Wallet Connect. During the agreement process, the integrator receives a \"payer token\" from the payer. This token allows the integrator to execute the payment directly from the payer's wallet. If you wish to apply discounts, it is necessary to first create a discount promise before using them",
+          "pt": "Advanced Payments são pagamentos específicos para Wallet Connect. Durante o processo de agreement, o integrador recebe um \"payer token\" do pagador. Esse token permite que o integrador efetue o pagamento diretamente da carteira do pagador. Se desejar aplicar descontos, é necessário criar uma promessa de desconto antes de utilizá-los",
+          "es": "Los Advanced Payments son pagos específicos para Wallet Connect. Durante el proceso del agreement, el integrador recibe un \"payer token\" del pagador. Este token permite que el integrador realice el pago directamente desde la billetera del pagador. Si desea aplicar descuentos, primero es necesario crear una promesa de descuento antes de utilizarlos"
+        },
+        "requestBody": {
+          "description": {
+            "en": "Here are the fields needed to complete a request for create an Advanced Payments.",
+            "pt": "Estes são os campos necessários para preencher um request e criar um Advanced Payment.",
+            "es": "Estos son los campos necesarios para completar un request para crear un Advanced Payment."
+          },
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "description": {
+                  "en": "Advanced payment data.",
+                  "pt": "Dados do Advanced Payment.",
+                  "es": "Datos del Advanced Payment."
+                },
+                "properties": {
+                  "wallet_payment": {
+                    "required": true,
+                    "type": "object",
+                    "description": {
+                      "en": "It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.",
+                      "pt": "Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.",
+                      "es": "Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect."
+                    },
+                    "properties": {
+                      "transaction_amount": {
+                        "required": true,
+                        "type": "number",
+                        "description": {
+                          "en": "Payment amount.",
+                          "pt": "Valor do pagamento.",
+                          "es": "Monto del pago."
+                        },
+                        "example": 125.98
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": {
+                          "en": "A brief description of the payment.",
+                          "pt": "Breve descrição do pagamento.",
+                          "es": "Breve descripción del pago."
+                        },
+                        "example": "Payment for the purchase of furniture"
+                      },
+                      "external_reference": {
+                        "type": "string",
+                        "description": {
+                          "en": "An string to allow identification of payment in case of an issue.",
+                          "pt": "Uma string que permite identificar um pagamento caso haja algum problema.",
+                          "es": "Una string para permitir la identificación del pago en caso de un problema."
+                        },
+                        "example": "Payment_seller_123"
+                      },
+                      "discount": {
+                        "required": false,
+                        "type": "object",
+                        "description": {
+                          "en": "Information of the discount to be used in payment.",
+                          "pt": "Informação do desconto a ser utilizado no pagamento.",
+                          "es": "informacion del descuento a utilizar en el pago."
+                        },
+                        "properties": {
+                          "amount": {
+                            "required": true,
+                            "type": "number",
+                            "description": {
+                              "en": "Discounted amount from the total payment amount",
+                              "pt": "Valor descontado do valor total do pagamento.",
+                              "es": "Monto descontado del monto total del pago."
+                            },
+                            "example": 10
+                          },
+                          "description": {
+                            "required": true,
+                            "type": "string",
+                            "description": {
+                              "en": "Description of discount to be aplied.",
+                              "pt": "Descrição do desconto a ser aplicado.",
+                              "es": "Descripcion del descuento a aplicar."
+                            },
+                            "example": "DESC20"
+                          },
+                          "code": {
+                            "required": false,
+                            "type": "number",
+                            "description": {
+                              "en": "Unique ID that identifies coupon used for discount. This field must be only sent when the user fulfilled the coupon field in the seller flow.",
+                              "pt": "ID único que identifica o cupom usado para o desconto. Este campo deve ser enviado apenas quando o usuário preencher o campo de cupom no fluxo do vendedor.",
+                              "es": "ID único que identifica el cupón utilizado para el descuento. Este campo solo debe ser enviado cuando el usuario haya completado el campo del cupón en el proceso de compra del vendedor."
+                            },
+                            "example": "WALLET10"
+                          },
+                          "detail": {
+                            "required": true,
+                            "type": "object",
+                            "description": {
+                              "en": "Discount information details.",
+                              "pt": "Informação detalhada sobre o desconto.",
+                              "es": "Informacion detallada del descuento."
+                            },
+                            "properties": {
+                              "cap": {
+                                "required": true,
+                                "type": "number",
+                                "description": {
+                                  "en": "Discount cap. This parameter is used to limit the maximum amount to be deducted from the payment.",
+                                  "pt": "Limite do desconto. Este parâmetro é utilizado para limitar o valor máximo a ser descontado do pagamento.",
+                                  "es": "Límite de descuento. Este parámetro é usado para limitar o valor máximo a ser deduzido do pagamento."
+                                },
+                                "example": 1000000
+                              },
+                              "type": {
+                                "required": true,
+                                "type": "string",
+                                "description": {
+                                  "en": "Type of discount applied.",
+                                  "pt": "Tipo de desconto aplicado.",
+                                  "es": "Tipo de descuento aplicado."
+                                },
+                                "example": "percentage"
+                              },
+                              "value": {
+                                "required": true,
+                                "type": "number",
+                                "description": {
+                                  "en": "Value of discount based on its type.",
+                                  "pt": "Valor do desconto segundo seu tipo.",
+                                  "es": "Valor del descuento segun su tipo."
+                                },
+                                "example": 10
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "payer": {
+                    "required": true,
+                    "type": "object",
+                    "description": {
+                      "en": "Payer information required to craete the advanced payment.",
+                      "pt": "Informação obrigatória sobre o pagador para criar o advanced payment.",
+                      "es": "Información del pagador requerida para crear el advanced payment."
+                    },
+                    "properties": {
+                      "token": {
+                        "required": true,
+                        "type": "string",
+                        "description": {
+                          "en": "The payer token is a code used by the integrator to make payments from the payer's wallet.",
+                          "pt": "O payer token é uma chave utilizada pelo integrador para efetuar o pagamento a partir da conta do pagador.",
+                          "es": "El payer token es una clave utilizada por el integrador para realizar el pago desde la billetera del pagador."
+                        },
+                        "example": "abcdef1e23f4567d8e9123eb6591ff68df74c57930551ed980239f4538a7e530"
+                      },
+                      "type_token": {
+                        "required": true,
+                        "type": "string",
+                        "description": {
+                          "en": "The token type.",
+                          "pt": "Tipo de token.",
+                          "es": "El tipo de token"
+                        },
+                        "example": "wallet-tokens"
+                      }
+                    }
+                  },
+                  "binary_mode": {
+                    "type": "boolean",
+                    "description": {
+                      "en": "When the payment is activated, it can only be approved or rejected. Otherwise, the payment may be pending.",
+                      "pt": "Quando o pagamento é ativado, somente pode ser aprovado ou rejeitado, caso contrário, o pagamento ficará como pendente.",
+                      "es": "Cuando el pago está activado, solo puede ser aprobado o rechazado. De lo contrario, el pago puede estar pendiente."
+                    },
+                    "example": false
+                  },
+                  "capture": {
+                    "type": "boolean",
+                    "description": {
+                      "en": "It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).",
+                      "pt": "É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).",
+                      "es": "Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true)."
+                    },
+                    "example": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": {
+              "en": "Advanced payment created. Check SCHEMAS Status for variants, payment associated to the advanced payments may be rejected.",
+              "pt": "Advanced payment criado. Verifique o status do SCHEMAS para variantes, o pagamento associado aos advanced payments pode ser rejeitado.",
+              "es": "Advanced payment creado. Consulta SCHEMAS Status por variantes, el pago asociado a los advanced payments puede ser rechazado."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "description": {
+                        "en": "Unique ID that identifies the advanced payment.",
+                        "pt": "ID único que identifica o advanced payment.",
+                        "es": "ID único que identifica el advanced payment."
+                      },
+                      "example": 10267812
+                    },
+                    "payments": {
+                      "type": "array",
+                      "description": {
+                        "en": "List of payments.",
+                        "pt": "Lista de pagamentos.",
+                        "es": "Listado de pagos."
+                      },
+                      "items": {
+                        "type": "object",
+                        "description": {
+                          "en": "Payment data generated.",
+                          "pt": "Dados de pagamento gerados.",
+                          "es": "Datos de pago generados."
+                        },
+                        "properties": {
+                          "id": {
+                            "type": "number",
+                            "description": {
+                              "en": "Unique payment ID.",
+                              "pt": "ID único de pagamento.",
+                              "es": "ID de pago único."
+                            },
+                            "example": 3870106238
+                          },
+                          "status": {
+                            "type": "string",
+                            "description": {
+                              "en": "The status of a payment made by Advanced Payments internal-api.mercadopago.com",
+                              "pt": "O status de um pagamento feito pelo Advanced Payments internal-api.mercadopago.com",
+                              "es": "El status de un pago realizado por Advanced Paymentrs internal-api.mercadopago.com"
+                            },
+                            "enum": [
+                              {
+                                "title": "approved",
+                                "description": {
+                                  "en": "approved",
+                                  "es": "approved",
+                                  "pt": "approved"
+                                }
+                              },
+                              {
+                                "title": "in_process",
+                                "description": {
+                                  "en": "in process",
+                                  "es": "in process",
+                                  "pt": "in process"
+                                }
+                              }
+                            ]
+                          },
+                          "status_detail": {
+                            "type": "string",
+                            "description": {
+                              "en": "Status description.",
+                              "pt": "Descrição do status.",
+                              "es": "Descripción del status."
+                            },
+                            "example": "approved_id"
+                          },
+                          "payment_type_id": {
+                            "type": "string",
+                            "description": {
+                              "en": "O tipo de pagamento preferencial do pagador.",
+                              "pt": "Tipo de pagamento preferido pelo pagador.",
+                              "es": "El tipo de pago preferido del pagador."
+                            },
+                            "enum": [
+                              {
+                                "title": "credit_card",
+                                "description": {
+                                  "en": "credit card",
+                                  "es": "credit card",
+                                  "pt": "credit card"
+                                }
+                              },
+                              {
+                                "title": "debit_card",
+                                "description": {
+                                  "en": "debit card",
+                                  "es": "debit card",
+                                  "pt": "debit card"
+                                }
+                              },
+                              {
+                                "title": "account_money",
+                                "description": {
+                                  "en": "account money",
+                                  "es": "account money",
+                                  "pt": "account money"
+                                }
+                              }
+                            ]
+                          },
+                          "payment_method_id": {
+                            "type": "string",
+                            "description": {
+                              "en": "Method used in payment type.",
+                              "pt": "Método utilizado no tipo de pagamento.",
+                              "es": "Método utilizado en el tipo de pago."
+                            },
+                            "example": "credit_card_id"
+                          },
+                          "transaction_amount": {
+                            "type": "number",
+                            "description": {
+                              "en": "The payment amount.",
+                              "pt": "Valor do pagamento.",
+                              "es": "Monto del pago."
+                            },
+                            "example": 700.5
+                          },
+                          "installments": {
+                            "type": "number",
+                            "description": {
+                              "en": "Total installment for the payment.",
+                              "pt": "Total de parcelas para o pagamento.",
+                              "es": "Cuota total para el pago."
+                            },
+                            "example": 1
+                          },
+                          "description": {
+                            "type": "string",
+                            "description": {
+                              "en": "Purchased product’s description, the reason for payment.",
+                              "pt": "Descrição do produto adquirido, motivo do pagamento.",
+                              "es": "Descripción del producto adquirido, motivo del pago."
+                            },
+                            "example": "Payment for the purchase of furniture"
+                          },
+                          "capture": {
+                            "type": "boolean",
+                            "description": {
+                              "en": "It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).",
+                              "pt": "É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).",
+                              "es": "Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true)."
+                            },
+                            "example": true
+                          },
+                          "external_reference": {
+                            "type": "string",
+                            "description": {
+                              "en": "This is a custom seller identifier, used in case to match a request between seller and Mercado Pago.",
+                              "pt": "Identificador de vendedor personalizado, usado no caso de corresponder uma solicitação entre o vendedor e o Mercado Pago.",
+                              "es": "Este es un identificador de vendedor personalizado, utilizado en caso de hacer coincidir una solicitud entre el vendedor y Mercado Pago."
+                            },
+                            "example": "payment_123"
+                          }
+                        }
+                      }
+                    },
+                    "wallet_payment": {
+                      "required": true,
+                      "type": "object",
+                      "description": {
+                        "en": "It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.",
+                        "pt": "Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.",
+                        "es": "Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect."
+                      },
+                      "properties": {
+                        "transaction_amount": {
+                          "required": true,
+                          "type": "number",
+                          "description": {
+                            "en": "Payment amount.",
+                            "pt": "Valor do pagamento.",
+                            "es": "Monto del pago."
+                          },
+                          "example": 125.98
+                        },
+                        "description": {
+                          "type": "string",
+                          "description": {
+                            "en": "A brief description of the payment.",
+                            "pt": "Breve descrição do pagamento.",
+                            "es": "Una breve descripción del pago."
+                          },
+                          "example": "payment of a bussines trip"
+                        },
+                        "external_reference": {
+                          "type": "string",
+                          "description": {
+                            "en": "An string to allow identification of payment in case of an issue.",
+                            "pt": "Uma string que permite identificar um pagamento caso haja algum problema.",
+                            "es": "Una string para permitir la identificación del pago en caso de un problema."
+                          },
+                          "example": "Payment_seller_123"
+                        },
+                        "discount": {
+                          "type": "object",
+                          "description": {
+                            "en": "Information of the discount to be used in payment.",
+                            "pt": "Informação do desconto a ser utilizado no pagamento.",
+                            "es": "informacion del descuento a utilizar en el pago."
+                          },
+                          "properties": {
+                            "amount": {
+                              "type": "number",
+                              "description": {
+                                "en": "Discounted amount from the total payment amount",
+                                "pt": "Valor descontado do valor total do pagamento.",
+                                "es": "Monto descontado del monto total del pago."
+                              },
+                              "example": 10
+                            },
+                            "code": {
+                              "required": true,
+                              "type": "number",
+                              "description": {
+                                "en": "Unique ID that identifies coupon used for discount.",
+                                "pt": "ID único que identifica o cupom utilizado para o desconto.",
+                                "es": "ID unico que identifica el cupón usado para el descuento"
+                              },
+                              "example": "WALLET10"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "disbursements": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "description": {
+                          "en": "List of payments that correspond to each Seller.",
+                          "pt": "Lista de pagamentos que correspondem a cada Seller.",
+                          "es": "Lista de pagos que corresponden a cada Seller."
+                        },
+                        "properties": {
+                          "collector_id": {
+                            "type": "string",
+                            "description": {
+                              "en": "Merchant Mercado Pago account id.",
+                              "pt": "ID da conta Mercado Pago do Merchant.",
+                              "es": "Identificación de la cuenta de Mercado Pago del Merchant."
+                            },
+                            "example": "collectorId"
+                          }
+                        }
+                      }
+                    },
+                    "payer": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "number",
+                          "description": {
+                            "en": "The payment identifier.",
+                            "pt": "Identificador do pagamento.",
+                            "es": "El identificador de pago."
+                          },
+                          "example": 8879
+                        }
+                      }
+                    },
+                    "site_id": {
+                      "type": "string",
+                      "description": {
+                        "en": "Country of origin of the Mercado Pago account.",
+                        "pt": "País de origem da conta Mercado Pago.",
+                        "es": "País de origen de la cuenta de Mercado Pago."
+                      },
+                      "example": "MLA"
+                    },
+                    "binary_mode": {
+                      "type": "boolean",
+                      "description": {
+                        "en": "When the payment is activated, it can only be approved or rejected. Otherwise, the payment may be pending.",
+                        "pt": "Quando o pagamento é ativado, somente pode ser aprovado ou rejeitado, caso contrário, o paagmento ficará como pendente.",
+                        "es": "Cuando el pago está activado, solo puede ser aprobado o rechazado. De lo contrario, el pago puede estar pendiente."
+                      },
+                      "example": true
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "description": {
+                        "en": "Advance Payment creation date.",
+                        "pt": "Data de criação do Advanced Payment.",
+                        "es": "Fecha de creación del Advanced Payment."
+                      },
+                      "example": "2018-10-20T09:34:20.518-04:00"
+                    },
+                    "date_last_updated": {
+                      "type": "string",
+                      "description": {
+                        "en": "Advance Payment last update date.",
+                        "pt": "Data da última atualização do Advanced Payment.",
+                        "es": "Fecha de la última actualización del Advanced Payment."
+                      },
+                      "example": "2018-10-20T09:34:20.518-04:00"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Error",
+                            "es": "Error",
+                            "pt": "Error"
+                          }
+                        },
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Error",
+                            "es": "Error",
+                            "pt": "Error"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Create an Advanced Payment",
+          "pt": "Criar um Advanced Payment",
+          "es": "Crear un Advanced Payment"
+        }
+      }
+    },
+    "/v1/advanced_payments/{advanced_payment_id}": {
+      "put": {
+        "tags": [
+          "wallet-connect"
+        ],
+        "description": {
+          "en": "This endpoint allows to perform one two actions. Capture or cancel and advanced payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status \"cancelled\"",
+          "pt": "Este endpoint permite executar duas ações. Captura ou cancelamento de um advanced payment. Para confirmar, é preciso enviar os dados de pagamento da carteira e o campo de captura em true. Para cancelar, envie os dados de pagamento da carteira e o campo status \"cancelled\"",
+          "es": "Este endpoint le permite realizar dos acciones. Capturar o cancelar un advanced payment. Para confirmar, es necesario enviar los datos de pago de la billetera y el campo de captura en true. Para cancelar, envíe los detalles de pago de su billetera y el campo de status \"cancelled\""
+        },
+        "parameters": [
+          {
+            "name": "advanced_payment_id",
+            "in": "path",
+            "description": {
+              "es": "Advanced payment identifier",
+              "pt": "Advanced payment identifier",
+              "en": "Advanced payment identifier"
+            },
+            "required": true,
+            "schema": {
+              "type": "number",
+              "example": 12345678
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "capture": {
+                    "type": "boolean",
+                    "description": {
+                      "en": "This node only needs to be sent when you need to confirm an Advanced Payment. It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).",
+                      "pt": "Este node apenas necessita ser enviado quando for necessário confirmar um Advanced Payment. É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).",
+                      "es": "Este node solo debe enviarse cuando necesite confirmar un Advanced Payment. Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true)."
+                    },
+                    "example": true
+                  },
+                  "wallet_payment": {
+                    "type": "object",
+                    "required": true,
+                    "description": {
+                      "en": "It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.",
+                      "pt": "Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.",
+                      "es": "Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect."
+                    },
+                    "properties": {
+                      "transaction_amount": {
+                        "type": "number",
+                        "required": true,
+                        "description": {
+                          "en": "Payment amount.",
+                          "pt": "Valor do pagamento.",
+                          "es": "Monto del pago."
+                        },
+                        "example": 125.98
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": {
+                          "en": "A brief description of the payment.",
+                          "pt": "Breve descrição do pagamento.",
+                          "es": "Breve descripción del pago."
+                        },
+                        "example": "Payment for the purchase of furniture"
+                      },
+                      "external_reference": {
+                        "type": "string",
+                        "description": {
+                          "en": "An string to allow identification of payment in case of an issue.",
+                          "pt": "Uma string que permite identificar um pagamento caso haja algum problema.",
+                          "es": "Una string para permitir la identificación del pago en caso de un problema."
+                        },
+                        "example": "Payment_seller_123"
+                      }
+                    }
+                  },
+                  "status": {
+                    "type": "string",
+                    "description": {
+                      "en": "This node only needs to be sent when you need to cancel an Advanced Payment. The value to be entered is 'cancelled'.",
+                      "pt": "Este node somente precisa ser enviado quando é necessário cancelar um Advanced Payment. O valor a ser inserido é 'cancelled'.",
+                      "es": "Este node solo debe enviarse cuando sea necesario cancelar un Advanced Payment. El valor a introducir es 'cancelado'."
+                    },
+                    "example": "cancelled"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "en": "Advanced Payments confirmed.",
+              "pt": "Advanced Payments confirmado.",
+              "es": "Advanced Payments confirmado."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "description": {
+                        "en": "Unique ID that identifies the advanced payment.",
+                        "pt": "ID único que identifica o advanced payment.",
+                        "es": "ID único que identifica el advanced payment."
+                      },
+                      "example": 10234567
+                    },
+                    "payments": {
+                      "type": "array",
+                      "description": {
+                        "es": "List of payments.",
+                        "pt": "List of payments.",
+                        "en": "List of payments."
+                      },
+                      "items": {
+                        "type": "object",
+                        "description": {
+                          "en": "Payment data generated.",
+                          "pt": "Dados de pagamento gerados.",
+                          "es": "Datos de pago generados."
+                        },
+                        "properties": {
+                          "id": {
+                            "type": "number",
+                            "description": {
+                              "en": "Unique payment ID.",
+                              "pt": "ID único de pagamento.",
+                              "es": "ID de pago único."
+                            },
+                            "example": 3870106238
+                          },
+                          "status": {
+                            "type": "string",
+                            "description": {
+                              "en": "The status of a payment made by Advanced Payments internal-api.mercadopago.com",
+                              "pt": "O status de um pagamento feito pelo Advanced Payments internal-api.mercadopago.com",
+                              "es": "El status de un pago realizado por Advanced Paymentrs internal-api.mercadopago.com"
+                            },
+                            "enum": [
+                              {
+                                "title": "approved",
+                                "description": {
+                                  "en": "approved",
+                                  "es": "approved",
+                                  "pt": "approved"
+                                }
+                              },
+                              {
+                                "title": "in_process",
+                                "description": {
+                                  "en": "in process",
+                                  "es": "in process",
+                                  "pt": "in process"
+                                }
+                              }
+                            ]
+                          },
+                          "status_detail": {
+                            "type": "string",
+                            "description": {
+                              "en": "Status description.",
+                              "pt": "Descrição do status.",
+                              "es": "Descripción del status."
+                            },
+                            "example": "approved_id"
+                          },
+                          "payment_type_id": {
+                            "type": "string",
+                            "description": {
+                              "en": "O tipo de pagamento preferencial do pagador.",
+                              "pt": "Tipo de pagamento preferido pelo pagador.",
+                              "es": "El tipo de pago preferido del pagador."
+                            },
+                            "enum": [
+                              {
+                                "title": "credit_card",
+                                "description": {
+                                  "en": "credit card",
+                                  "es": "credit card",
+                                  "pt": "credit card"
+                                }
+                              },
+                              {
+                                "title": "debit_card",
+                                "description": {
+                                  "en": "debit card",
+                                  "es": "debit card",
+                                  "pt": "debit card"
+                                }
+                              },
+                              {
+                                "title": "account_money",
+                                "description": {
+                                  "en": "account money",
+                                  "es": "account money",
+                                  "pt": "account money"
+                                }
+                              }
+                            ]
+                          },
+                          "payment_method_id": {
+                            "type": "string",
+                            "description": {
+                              "en": "Method used in payment type.",
+                              "pt": "Método utilizado no tipo de pagamento.",
+                              "es": "Método utilizado en el tipo de pago."
+                            },
+                            "example": "credit_card_id"
+                          },
+                          "transaction_amount": {
+                            "type": "number",
+                            "description": {
+                              "en": "The payment amount.",
+                              "pt": "Valor do pagamento.",
+                              "es": "Monto del pago."
+                            },
+                            "example": 700.5
+                          },
+                          "installments": {
+                            "type": "number",
+                            "description": {
+                              "en": "Total installment for the payment.",
+                              "pt": "Total de parcelas para o pagamento.",
+                              "es": "Cuota total para el pago."
+                            },
+                            "example": 1
+                          },
+                          "description": {
+                            "type": "string",
+                            "description": {
+                              "en": "Purchased product’s description, the reason for payment.",
+                              "pt": "Descrição do produto adquirido, motivo do pagamento.",
+                              "es": "Descripción del producto adquirido, motivo del pago."
+                            },
+                            "example": "Payment for the purchase of furniture"
+                          },
+                          "capture": {
+                            "type": "boolean",
+                            "description": {
+                              "en": "It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).",
+                              "pt": "É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).",
+                              "es": "Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true)."
+                            },
+                            "example": true
+                          },
+                          "external_reference": {
+                            "type": "string",
+                            "description": {
+                              "en": "This is a custom seller identifier, used in case to match a request between seller and Mercado Pago.",
+                              "pt": "Identificador de vendedor personalizado, usado no caso de corresponder uma solicitação entre o vendedor e o Mercado Pago.",
+                              "es": "Este es un identificador de vendedor personalizado, utilizado en caso de hacer coincidir una solicitud entre el vendedor y Mercado Pago."
+                            },
+                            "example": "payment_123"
+                          }
+                        }
+                      }
+                    },
+                    "wallet_payment": {
+                      "type": "object",
+                      "required": true,
+                      "description": {
+                        "en": "It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.",
+                        "pt": "Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.",
+                        "es": "Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect."
+                      },
+                      "properties": {
+                        "transaction_amount": {
+                          "type": "number",
+                          "required": true,
+                          "description": {
+                            "en": "Payment amount.",
+                            "pt": "Valor do pagamento.",
+                            "es": "Monto del pago."
+                          },
+                          "example": 125.98
+                        },
+                        "description": {
+                          "type": "string",
+                          "description": {
+                            "en": "A brief description of the payment.",
+                            "pt": "Breve descrição do pagamento.",
+                            "es": "Una breve descripción del pago."
+                          },
+                          "example": "Payment for the purchase of furniture"
+                        },
+                        "external_reference": {
+                          "type": "string",
+                          "description": {
+                            "en": "An string to allow identification of payment in case of an issue.",
+                            "pt": "Uma string que permite identificar um pagamento caso haja algum problema.",
+                            "es": "Una string para permitir la identificación del pago en caso de un problema."
+                          },
+                          "example": "Payment_seller_123"
+                        }
+                      }
+                    },
+                    "disbursements": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "description": {
+                          "en": "List of payments that correspond to each Seller.",
+                          "pt": "Lista de pagamentos que correspondem a cada Seller.",
+                          "es": "Lista de pagos que corresponden a cada Seller."
+                        },
+                        "properties": {
+                          "collector_id": {
+                            "type": "string",
+                            "description": {
+                              "en": "Merchant Mercado Pago account id.",
+                              "pt": "ID da conta Mercado Pago do Merchant.",
+                              "es": "Identificación de la cuenta de Mercado Pago del Merchant."
+                            },
+                            "example": "collectorId"
+                          }
+                        }
+                      }
+                    },
+                    "payer": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "number",
+                          "description": {
+                            "en": "The payment identifier.",
+                            "pt": "Identificador do pagamento.",
+                            "es": "El identificador de pago."
+                          },
+                          "example": 8879
+                        }
+                      }
+                    },
+                    "site_id": {
+                      "type": "string",
+                      "description": {
+                        "en": "Country of origin of the Mercado Pago account.",
+                        "pt": "País de origem da conta Mercado Pago.",
+                        "es": "País de origen de la cuenta de Mercado Pago."
+                      },
+                      "example": "MLA"
+                    },
+                    "binary_mode": {
+                      "type": "boolean",
+                      "description": {
+                        "en": "When the payment is activated, it can only be approved or rejected. Otherwise, the payment may be pending.",
+                        "pt": "Quando o pagamento é ativado, somente pode ser aprovado ou rejeitado, caso contrário, o paagmento ficará como pendente.",
+                        "es": "Cuando el pago está activado, solo puede ser aprobado o rechazado. De lo contrario, el pago puede estar pendiente."
+                      },
+                      "example": true
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "description": {
+                        "en": "Advance Payment creation date.",
+                        "pt": "Data de criação do Advanced Payment.",
+                        "es": "Fecha de creación del Advanced Payment."
+                      },
+                      "example": "2018-10-20T09:34:20.518-04:00"
+                    },
+                    "date_last_updated": {
+                      "type": "string",
+                      "description": {
+                        "en": "Advance Payment last update date.",
+                        "pt": "Data da última atualização do Advanced Payment.",
+                        "es": "Fecha de la última actualización del Advanced Payment."
+                      },
+                      "example": "2018-10-20T09:34:20.518-04:00"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Error",
+                            "es": "Error",
+                            "pt": "Error"
+                          }
+                        },
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Error",
+                            "es": "Error",
+                            "pt": "Error"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Confirm or cancel an advanced payment",
+          "pt": "Confirmar ou cancelar um advanced payment",
+          "es": "Confirmar o cancelar un advanced payment"
+        }
+      },
+      "get": {
+        "tags": [
+          "wallet-connect"
+        ],
+        "description": {
+          "en": "This endpoint is used to get an Advanced Payment data from its id",
+          "pt": "Este endpoint é utilizado para obter os dados de um Advanced Payment a partir de seu id",
+          "es": "Este endpoint se utiliza para obtener datos de un Advanced Payment desde su id"
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "advanced_payment_id",
+            "required": true,
+            "description": {
+              "en": "The advanced payment, with id 'advanced_payment_id' to be confirmed.",
+              "pt": "Refere-se ao advanced payment com o id 'advanced_payment_id' a ser confirmado.",
+              "es": "Se refiere al advanced payment con el id 'advanced_payment_id' para ser confirmado."
+            },
+            "schema": {
+              "type": "number",
+              "example": 12345678
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "en": "Advanced Payments confirmed.",
+              "pt": "Este endpoint é utilizado para recuperar os dados de um Advanced Payment a partir de seu id.",
+              "es": "Este endpoint se utiliza para recuperar datos de un Advanced Payment desde su id."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "description": {
+                        "en": "Unique ID that identifies the advanced payment.",
+                        "pt": "ID único que identifica o advanced payment.",
+                        "es": "ID único que identifica el advanced payment."
+                      },
+                      "example": 10267812
+                    },
+                    "wallet_payment": {
+                      "type": "object",
+                      "description": {
+                        "en": "It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.",
+                        "pt": "Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.",
+                        "es": "Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect."
+                      },
+                      "properties": {
+                        "transaction_amount": {
+                          "type": "number",
+                          "description": {
+                            "en": "Payment amount.",
+                            "pt": "Valor do pagamento.",
+                            "es": "Monto del pago."
+                          },
+                          "example": 125.98
+                        },
+                        "description": {
+                          "type": "string",
+                          "description": {
+                            "en": "A brief description of the payment.",
+                            "pt": "Breve descrição do pagamento.",
+                            "es": "Una breve descripción del pago."
+                          },
+                          "example": "Payment for the purchase of furniture"
+                        },
+                        "external_reference": {
+                          "type": "string",
+                          "description": {
+                            "en": "An string to allow identification of payment in case of an issue.",
+                            "pt": "Uma string que permite identificar um pagamento caso haja algum problema.",
+                            "es": "Una string para permitir la identificación del pago en caso de un problema."
+                          },
+                          "example": "Payment_seller_123"
+                        }
+                      }
+                    },
+                    "payments": {
+                      "type": "array",
+                      "description": {
+                        "es": "Response Advanced Payment approved",
+                        "pt": "Response Advanced Payment approved",
+                        "en": "Response Advanced Payment approved"
+                      },
+                      "items": {
+                        "type": "object",
+                        "description": {
+                          "en": "Payment data generated.",
+                          "pt": "Dados de pagamento gerados.",
+                          "es": "Datos de pago generados."
+                        },
+                        "properties": {
+                          "id": {
+                            "type": "number",
+                            "description": {
+                              "en": "Unique payment ID.",
+                              "pt": "ID único de pagamento.",
+                              "es": "ID de pago único."
+                            },
+                            "example": 3870106238
+                          },
+                          "status": {
+                            "type": "string",
+                            "description": {
+                              "en": "The status of a payment made by Advanced Payments internal-api.mercadopago.com",
+                              "pt": "O status de um pagamento feito pelo Advanced Payments internal-api.mercadopago.com",
+                              "es": "El status de un pago realizado por Advanced Paymentrs internal-api.mercadopago.com"
+                            },
+                            "enum": [
+                              {
+                                "title": "approved",
+                                "description": {
+                                  "en": "approved",
+                                  "es": "approved",
+                                  "pt": "approved"
+                                }
+                              },
+                              {
+                                "title": "in_process",
+                                "description": {
+                                  "en": "in process",
+                                  "es": "in process",
+                                  "pt": "in process"
+                                }
+                              }
+                            ]
+                          },
+                          "status_detail": {
+                            "type": "string",
+                            "description": {
+                              "en": "Status description.",
+                              "pt": "Descrição do status.",
+                              "es": "Descripción del status."
+                            },
+                            "example": "approved_id"
+                          },
+                          "payment_type_id": {
+                            "type": "string",
+                            "description": {
+                              "en": "O tipo de pagamento preferencial do pagador.",
+                              "pt": "Tipo de pagamento preferido pelo pagador.",
+                              "es": "El tipo de pago preferido del pagador."
+                            },
+                            "enum": [
+                              {
+                                "title": "credit_card",
+                                "description": {
+                                  "en": "credit card",
+                                  "es": "credit card",
+                                  "pt": "credit card"
+                                }
+                              },
+                              {
+                                "title": "debit_card",
+                                "description": {
+                                  "en": "debit card",
+                                  "es": "debit card",
+                                  "pt": "debit card"
+                                }
+                              },
+                              {
+                                "title": "account_money",
+                                "description": {
+                                  "en": "account money",
+                                  "es": "account money",
+                                  "pt": "account money"
+                                }
+                              }
+                            ]
+                          },
+                          "payment_method_id": {
+                            "type": "string",
+                            "description": {
+                              "en": "Method used in payment type.",
+                              "pt": "Método utilizado no tipo de pagamento.",
+                              "es": "Método utilizado en el tipo de pago."
+                            },
+                            "example": "credit_card_id"
+                          },
+                          "transaction_amount": {
+                            "type": "number",
+                            "description": {
+                              "en": "The payment amount.",
+                              "pt": "Valor do pagamento.",
+                              "es": "Monto del pago."
+                            },
+                            "example": 700.5
+                          },
+                          "installments": {
+                            "type": "number",
+                            "description": {
+                              "en": "Total installment for the payment.",
+                              "pt": "Total de parcelas para o pagamento.",
+                              "es": "Cuota total para el pago."
+                            },
+                            "example": 1
+                          },
+                          "description": {
+                            "type": "string",
+                            "description": {
+                              "en": "Purchased product’s description, the reason for payment.",
+                              "pt": "Descrição do produto adquirido, motivo do pagamento.",
+                              "es": "Descripción del producto adquirido, motivo del pago."
+                            },
+                            "example": "Payment for the purchase of furniture"
+                          },
+                          "capture": {
+                            "type": "boolean",
+                            "description": {
+                              "en": "It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).",
+                              "pt": "É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).",
+                              "es": "Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true)."
+                            },
+                            "example": true
+                          },
+                          "external_reference": {
+                            "type": "string",
+                            "description": {
+                              "en": "This is a custom seller identifier, used in case to match a request between seller and Mercado Pago.",
+                              "pt": "Identificador de vendedor personalizado, usado no caso de corresponder uma solicitação entre o vendedor e o Mercado Pago.",
+                              "es": "Este es un identificador de vendedor personalizado, utilizado en caso de hacer coincidir una solicitud entre el vendedor y Mercado Pago."
+                            },
+                            "example": "payment_123"
+                          }
+                        }
+                      }
+                    },
+                    "disbursements": {
+                      "type": "object",
+                      "description": {
+                        "en": "List of payments that correspond to each Seller.",
+                        "pt": "Lista de pagamentos que correspondem a cada Seller.",
+                        "es": "Lista de pagos que corresponden a cada Seller."
+                      },
+                      "properties": {
+                        "collector_id": {
+                          "type": "string",
+                          "description": {
+                            "en": "Merchant Mercado Pago account id.",
+                            "pt": "ID da conta Mercado Pago do Merchant.",
+                            "es": "Identificación de la cuenta de Mercado Pago del Merchant."
+                          },
+                          "example": "collectorId"
+                        }
+                      }
+                    },
+                    "payer": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "number",
+                          "description": {
+                            "en": "The payment identifier.",
+                            "pt": "Identificador do pagamento.",
+                            "es": "El identificador de pago."
+                          },
+                          "example": 8879
+                        }
+                      }
+                    },
+                    "site_id": {
+                      "type": "string",
+                      "description": {
+                        "en": "Country of origin of the Mercado Pago account.",
+                        "pt": "País de origem da conta Mercado Pago.",
+                        "es": "País de origen de la cuenta de Mercado Pago."
+                      },
+                      "example": "MLB"
+                    },
+                    "binary_mode": {
+                      "type": "boolean",
+                      "description": {
+                        "en": "When the payment is activated, it can only be approved or rejected. Otherwise, the payment may be pending.",
+                        "pt": "Quando o pagamento é ativado, somente pode ser aprovado ou rejeitado, caso contrário, o paagmento ficará como pendente.",
+                        "es": "Cuando el pago está activado, solo puede ser aprobado o rechazado. De lo contrario, el pago puede estar pendiente."
+                      }
+                    },
+                    "date_created": {
+                      "type": "string",
+                      "description": {
+                        "en": "Advance Payment creation date.",
+                        "pt": "Data de criação do Advanced Payment.",
+                        "es": "Fecha de creación del Advanced Payment."
+                      },
+                      "example": "2018-10-20T09:34:20.518-04:00"
+                    },
+                    "date_last_updated": {
+                      "type": "string",
+                      "description": {
+                        "en": "Advance Payment last update date.",
+                        "pt": "Data da última atualização do Advanced Payment.",
+                        "es": "Fecha de la última actualización del Advanced Payment."
+                      },
+                      "example": "2018-10-20T09:34:20.518-04:00"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "404",
+                          "description": {
+                            "en": "Not-Found",
+                            "es": "Not-Found",
+                            "pt": "Not-Found"
+                          }
+                        },
+                        {
+                          "title": "404",
+                          "description": {
+                            "en": "Not-Found",
+                            "es": "Not-Found",
+                            "pt": "Not-Found"
+                          }
+                        },
+                        {
+                          "title": "404",
+                          "description": {
+                            "en": "Not-Found",
+                            "es": "Not-Found",
+                            "pt": "Not-Found"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Error",
+                            "es": "Error",
+                            "pt": "Error"
+                          }
+                        },
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Error",
+                            "es": "Error",
+                            "pt": "Error"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Get Advanced Payment data",
+          "pt": "Obter dados de um advanced payment",
+          "es": "Obtener datos de um Advanced Payment"
+        }
+      }
+    },
+    "/v1/advanced_payments/{advanced_payment_id}/refunds": {
+      "post": {
+        "tags": [
+          "wallet-connect"
+        ],
+        "description": {
+          "en": "A refund operation may be total, this is the total amount of the advnaced payment will be restored, o may be a partial refund, the amount in the request will be restored",
+          "pt": "Uma operação de reembolso pode ser total, ou seja, o valor total do advanced payment que será reposto, ou pode ser um reembolso parcial, o valor parcial do pedido será reposto",
+          "es": "Una operación de reembolso puede ser total, es decir se devolverá el importe total del advanced payment, o puede ser una devolución parcial, se devolverá el importe solicitado"
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "advanced_payment_id",
+            "schema": {
+              "type": "number"
+            },
+            "required": true,
+            "description": {
+              "en": "The advanced payment, with id 'advanced_payment_id' to be confirmed.",
+              "pt": "Refere-se ao advanced payment com o id 'advanced_payment_id' a ser confirmado.",
+              "es": "Se refiere al advanced payment con el id 'advanced_payment_id' para ser confirmado."
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "description": {
+                  "en": "If the body of the request is empty, a total refund will be done.",
+                  "pt": "Se o body do request estiver vazio, o reebolso será feito de forma integral.",
+                  "es": "Si el body del request está vacío, el reembolso se realizará en su totalidad."
+                },
+                "properties": {
+                  "amount": {
+                    "type": "number",
+                    "description": {
+                      "en": "If amount is 0 then this is a refund of the total advanced payments amounts, otherwise is a partial refund.",
+                      "pt": "Se o valor for 0, trata-se de um reembolso do valor total dos advanced payments; caso contrário, será um reembolso parcial.",
+                      "es": "Si el monto es 0, se trata de un reembolso de los montos totales de los advanced payments; de lo contrario, se trata de un reembolso parcial."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "en": "A refund data array will be returned.",
+              "pt": "Um array de dados de reembolso será retornado.",
+              "es": "Se devolverá un array de datos de reembolso."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "title": "Refund information.",
+                    "type": "object",
+                    "description": {
+                      "en": "Refund information data.",
+                      "pt": "Dados informativos a respeito do reembolso.",
+                      "es": "Información sobre el reembolso."
+                    },
+                    "properties": {
+                      "id": {
+                        "type": "number",
+                        "description": {
+                          "en": "Refund id.",
+                          "pt": "Identificação de reembolso.",
+                          "es": "Identificación de reembolso."
+                        },
+                        "example": "1009042015"
+                      },
+                      "payment_id": {
+                        "type": "number",
+                        "description": {
+                          "en": "Payment id.",
+                          "pt": "Identificação de pagamento.",
+                          "es": "Identificación de pago."
+                        },
+                        "example": "18552260055"
+                      },
+                      "amount": {
+                        "type": "number",
+                        "description": {
+                          "en": "Refund amount.",
+                          "pt": "Valor do reembolso",
+                          "es": "Monto del reembolso."
+                        },
+                        "example": 10
+                      },
+                      "source": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "description": {
+                              "en": "The name of the user who submitted the refund.",
+                              "pt": "Nome do usuário que enviou o reembolso.",
+                              "es": "El nombre del usuario que envió el reembolso."
+                            },
+                            "example": "user_name"
+                          },
+                          "id": {
+                            "type": "string",
+                            "description": {
+                              "en": "The id of the user who sent the refund request.",
+                              "pt": "Id do usuário que enviou a solicitação de reembolso.",
+                              "es": "El id del usuario que envió el request de reembolso."
+                            },
+                            "example": "abcdef1e23f4567d8e9123eb6591ff68df74c57930551ed980239f4538a7e530"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request",
+                            "es": "Bad-Request",
+                            "pt": "Bad-Request"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Error",
+                            "es": "Error",
+                            "pt": "Error"
+                          }
+                        },
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Error",
+                            "es": "Error",
+                            "pt": "Error"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Refund an advanced payment",
+          "pt": "Reembolsar um advanced payment",
+          "es": "Reembolsar un advanced payment"
+        }
+      }
+    },
+    "/v2/wallet_connect/discounts": {
+      "post": {
+        "tags": [
+          "wallet-connect"
+        ],
+        "description": {
+          "en": "This endpoint allows you to create a \"Discount Promise\" for Wallet Connect. This \"Discount Promise\" serves as a reference that can be used when generating an Advanced Payment, enabling the application of a specific discount to the payment. During the payment creation process, it's essential to include the information from the previously provided \"Discount Promise\"",
+          "pt": "Este endpoint permite criar uma \"Discount Promise\" para o Wallet Connect. Essa \"Discount Promise\" é uma referência que será usada ao gerar um Advanced Payment, possibilitando aplicar um desconto específico ao pagamento. Durante a criação do pagamento, é essencial incluir as informações da \"Discount Promise\" fornecida anteriormente",
+          "es": "Este endpoint te permite crear una \"Discount Promise\" para Wallet Connect. Esta \"Discount Promise\" actúa como una referencia que se utilizará al generar un Advanced Payment, permitiendo aplicar un descuento específico al pago. Durante el proceso de creación del pago, es esencial incluir la información de la \"Discount Promise\" proporcionada anteriormente"
+        },
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-payer-token",
+            "description": {
+              "en": "Token associated to the potential payer who will use the discount. For example - e9449535fe074e0e8ff4f2055f604e51.",
+              "pt": "Token relacionado ao potencial pagador que utilizará o desconto. Por exemplo - e9449535fe074e0e8ff4f2055f604e51.",
+              "es": "Token relacionado con el posible pagador que espera utilizar el descuento. Por ejemplo - e9449535fe074e0e8ff4f2055f604e51."
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "<PAYER_TOKEN>"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": {
+            "en": "Here are the fields needed to complete a request for create an Discount Promise.",
+            "pt": "Aqui estão os campos necessários para completar uma solicitação para criar uma Discount Promise.",
+            "es": "Estos son los campos necesarios para completar un request para crear una Discount Promise."
+          },
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "description": {
+                  "en": "Discount Promise data.",
+                  "pt": "Dados do Discount Promise.",
+                  "es": "Datos del Discount Promise."
+                },
+                "properties": {
+                  "coupon": {
+                    "required": false,
+                    "type": "string",
+                    "description": {
+                      "en": "UUnique ID that identifies the coupon for discount application. This field should be filled out only when the user enters a coupon during the purchasing process with the seller.",
+                      "pt": "ID único que identifica o cupom para aplicação do desconto. Este campo deve ser preenchido somente quando o usuário inserir um cupom durante o processo de compra junto ao seller.",
+                      "es": "ID único que identifica el cupón para la aplicación del descuento. Este campo debe ser completado solamente cuando el usuario ingrese un cupón durante el proceso de compra con el seller."
+                    },
+                    "example": "WALLET10"
+                  },
+                  "amount": {
+                    "required": true,
+                    "type": "number",
+                    "description": {
+                      "en": "Total payment amount before aplying discount. For example, 15.05.",
+                      "pt": "Valor total do pagamento antes da aplicação do desconto. Por exemplo, 15.05.",
+                      "es": "Monto total del pago previo a la aplicacion del descuento. Por ejemplo, 15.05."
+                    },
+                    "example": 15.05
+                  }
+                }
+              }
+            }
+          }
+        },
+
+        "responses": {
+          "200": {
+            "description": {
+              "en": "Discount Promise created.",
+              "pt": "Discount Promise criada.",
+              "es": "Discount Promise creada."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "transaction_amount": {
+                      "type": "number",
+                      "description": {
+                        "en": "Total payment amount before aplying discount. For example, 150.",
+                        "pt": "Valor total do pagamento antes da aplicação do desconto. Por exemplo, 150.",
+                        "es": "Monto total del pago previo a la aplicacion del descuento. Por ejemplo, 150."
+                      },
+                      "example": 150
+                    },
+                    "currency_id": {
+                      "type": "string",
+                      "description": {
+                        "en": "Type of currency to be used in payment. For example, ARS for Argentina, BRL for Brazil. This field varies according to your location.",
+                        "pt": "Tipo de moeda a ser utilizada no pagamento. Por exemplo, ARS, para Argentina, BRL, para Brasil. Este campo varia de acordo com sua localidade.",
+                        "es": "Tipo de moneda a usar en el pago. Por ejemplo, ARS para Argentina, BRL para Brasil. Este campo varía según tu ubicación."
+                      },
+                      "example": "ARS"
+                    },
+                    "legal_terms": {
+                      "type": "string",
+                      "description": {
+                        "en": "Terms and conditions of discount.",
+                        "pt": "Termos e condições do desconto.",
+                        "es": "Terminos y condiciones del descuento."
+                      },
+                      "example": "https://api.mercadopago.com/v2/discounts/campaign/10580513/terms/html"
+                    },
+                    "discount": {
+                      "type": "object",
+                      "description": {
+                        "en": "Discount description.",
+                        "pt": "Descrição do desconto.",
+                        "es": "Descripcion del descuento."
+                      },
+                      "properties": {
+                        "amount": {
+                          "type": "number",
+                          "description": {
+                            "en": "Discounted amount from the total payment amount.",
+                            "pt": "Valor descontado do valor total do pagamento.",
+                            "es": "Monto descontado del monto total del pago."
+                          },
+                          "example": 15
+                        },
+                        "detail": {
+                          "type": "object",
+                          "description": {
+                            "en": "Discount information details.",
+                            "pt": "Informação detalhada do desconto",
+                            "es": "Informacion detallada del descuento."
+                          },
+                          "properties": {
+                            "cap": {
+                              "type": "number",
+                              "description": {
+                                "en": "Discount Limit. This field indicates the maximum amount to be deducted from the payment.",
+                                "pt": "Limite do desconto. Este campo informa o valor máximo a ser descontado do pagamento.",
+                                "es": "Límite de descuento. Este campo indica la cantidad máxima a deducir del pago."
+                              },
+                              "example": 1000000
+                            },
+                            "type": {
+                              "type": "string",
+                              "description": {
+                                "en": "Type of discount applied.",
+                                "pt": "Tipo de desconto aplicado.",
+                                "es": "Tipo de descuento aplicado."
+                              },
+                              "example": "percentage"
+                            },
+                            "value": {
+                              "type": "number",
+                              "description": {
+                                "en": "Discount value determined by its type.",
+                                "pt": "Valor do desconto com base no seu tipo.",
+                                "es": "Valor del descuento según su tipo"
+                              },
+                              "example": 10
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request - Invalid amount in discount.",
+                            "es": "Bad-Request - Monto de descuento inválido.",
+                            "pt": "Bad-Request - Valor de desconto inválido."
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request - Invalid coupon in discount.",
+                            "es": "Bad-Request - Cupón de descuento inv;alido.",
+                            "pt": "Bad-Request - Cupom de desconto inválido."
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request - Invalid payer token.",
+                            "es": "Bad-Request - Payer token inválido.",
+                            "pt": "Bad-Request - Payer token inválido."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Error - Internal server error.",
+                            "es": "Error - Error interno del servidor.",
+                            "pt": "Erro - Erro interno do servidor."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Create a Discount Promise",
+          "pt": "Criar uma Discount Promise",
+          "es": "Crear una Discount Promise"
+        }
+      }
+    }, 
+    "/v2/wallet_connect/coupons": {
+      "post": {
+        "tags": [
+          "wallet-connect"
+        ],
+        "description": {
+          "en": "This endpoint enables the validation of a Wallet Connect coupon, returning the applicable discount amount. These coupons are designed to provide discounts on payments made through Wallet Connect.",
+          "pt": "Este endpoint possibilita a validação de um cupom do Wallet Connect, retornando o valor do desconto aplicável. Estes cupons destinam-se a conceder descontos em pagamentos realizadas via Wallet Connect",
+          "es": "Este endpoint permite la validación de un cupón de Wallet Connect, devolviendo el monto de descuento aplicable. Estos cupones están diseñados para ofrecer descuentos en pagos realizados a través de Wallet Connect"
+        },
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-payer-token",
+            "description": {
+              "en": "Token associated to the potential payer who will use the discount. For example - e9449535fe074e0e8ff4f2055f604e51.",
+              "pt": "Token relacionado ao potencial pagador que utilizará o desconto. Por exemplo - e9449535fe074e0e8ff4f2055f604e51.",
+              "es": "Token relacionado con el posible pagador que espera utilizar el descuento. Por ejemplo - e9449535fe074e0e8ff4f2055f604e51."
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "<PAYER_TOKEN>"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": {
+            "en": "Parameters needed to validate the Wallet Connect coupon.",
+            "pt": "Parâmetros necessários para validar o cupom do Wallet Connect.",
+            "es": "Parámetros necesarios para validar el cupón de Wallet Connect."
+          },
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "description": {
+                  "en": "Specific identifier used to check the coupon's validity.",
+                  "pt": "Identificador específico usado para verificar a validade do cupom.",
+                  "es": "Identificador específico utilizado para comprobar la validez del cupón."
+                },
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": {
+                      "en": "Unique combination of letters and numbers that stands for the coupon code. For example - BLACKFRIDAY20.",
+                      "pt": "Combinação única de letras e números que representa o código do cupom. Por exemplo - BLACKFRIDAY20.",
+                      "es": "Combinación única de letras y números que representa el código del cupón. Por ejemplo - BLACKFRIDAY20."
+                    },
+                    "example": "BLACKFRIDAY20"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "en": "Provides information about the validated coupon, including its discount value and present status.",
+              "pt": "Fornece informações sobre o cupom validado, incluindo seu valor de desconto e status atual.",
+              "es": "Ofrece información sobre el cupón validado, incluyendo su valor de descuento y estado actual."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "description": {
+                        "en": "Indicates the coupon's status post-validation. Reflects if it's \"success\", \"pending\", or \"invalid\".",
+                        "pt": "Indica o status do cupom após a validação. Reflete se é \"success\", \"pending\", or \"invalid\".",
+                        "es": "Indica el estado del cupón después de la validación. Refleja si es \"success\", \"pending\", or \"invalid\"."
+                      },
+                      "example": "success"
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": {
+                        "en": "A brief overview of the validated coupon's characteristics. For example: 30% discount coupon for Black Friday.",
+                        "pt": "Uma breve descrição das características do cupom validado. Por exemplo: cupom de desconto de 30% para Black Friday.",
+                        "es": "Una breve descripción de las características del cupón validado. Por ejemplo: cupón de descuento del 30% para Black Friday."
+                      },
+                      "example": "Cupom de desconto de 30% para Black Friday."
+                    },
+                    "legal_terms": {
+                      "type": "string",
+                      "description": {
+                        "en": "URL directing to the specific legal terms associated with the coupon campaign. For example - https://www.mercadopago.com.ar/campaigns/terms-and-conditions/123456.",
+                        "pt": "URL que direciona para os termos legais específicos associados à campanha do cupom. Por exemplo - https://www.mercadopago.com.ar/campaigns/terms-and-conditions/123456.",
+                        "es": "Una URL que dirige a los términos legales específicos asociados con la campaña del cupón. Por ejemplo - https://www.mercadopago.com.ar/campaigns/terms-and-conditions/123456."
+                      },
+                      "example": "https://www.mercadopago.com.ar/campaigns/terms-and-conditions/123456"
+                    },
+                    "detail": {
+                      "type": "object",
+                      "description": {
+                        "en": "This object offers an in-depth view of advanced payments coming from sellers that have a prior Wallet Connect association.",
+                        "pt": "Este objeto Fornece uma visão detalhada dos pagamentos antecipados de vendedores que têm uma associação prévia a Wallet Connect.",
+                        "es": "Este objeto proporciona una visión detallada de los pagos anticipados de los vendedores que tienen una asociación previa de Wallet Connect."
+                      },
+                      "properties": {
+                        "value": {
+                          "type": "number",
+                          "description": {
+                            "en": "Specifies the exact discount amount provided by the coupon. For example - 10.0.",
+                            "pt": "Especifica o valor exato do desconto fornecido pelo cupom. Por exemplo - 10.0.",
+                            "es": "Especifica la cantidad exacta de descuento proporcionada por el cupón. Por ejemplo - 10.0."
+                          },
+                          "example": 10
+                        },
+                        "type": {
+                          "type": "string",
+                          "description": {
+                            "en": "Differentiates if the discount is percentage-based or a fixed value. In cases of percentage, it will return `percent`, while in cases of a fixed value, it will return `fixed`.",
+                            "pt": "Diferencia se o desconto é baseado em porcentagem ou um valor fixo. Em casos de porcentagem, retornará `percent`, já em casos de valor fixo, retornará `fixed`.",
+                            "es": "Diferencia si el descuento es en porcentaje o un valor fijo. En casos de porcentaje, devolverá `percent`, mientras que en casos de valor fijo, devolverá `fixed`."
+                          },
+                          "example": "percent"
+                        },
+                        "cap": {
+                          "type": "number",
+                          "description": {
+                            "en": "The highest possible discount amount that can be applied using the coupon. For example - 100.0.",
+                            "pt": "Valor máximo de desconto que pode ser aplicado utilizando o cupom. Por exemplo - 100.0.",
+                            "es": "Monto máximo de descuento que se puede aplicar utilizando el cupón. Por ejemplo - 100.0."
+                          },
+                          "example": 100
+                        },
+                        "min_payment_amount": {
+                          "type": "number",
+                          "description": {
+                            "en": "The minimum amount required to qualify for the discount. For example - 100.0.",
+                            "pt": "Valor mínimo necessário para se qualificar ao desconto. Por exemplo - 100.0.",
+                            "es": "Monto mínimo requerido para calificar para el descuento. Por ejemplo - 100.0."
+                          },
+                          "example": 100
+                        },
+                        "max_payment_amount": {
+                          "type": "number",
+                          "description": {
+                            "en": "Maximum amount to which the discount can still be applied upon payment. For example - 10000.0.",
+                            "pt": "Valor máximo ao qual o desconto ainda pode ser aplicado ao efetuar o pagamento. Por exemplo - 10000.0.",
+                            "es": "Monto máximo al cual aún se puede aplicar el descuento al realizar el pago. Por ejemplo - 10000.0"
+                          },
+                          "example": 10000
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "es": "Error encontrado durante el proceso de validación.",
+              "pt": "Erro encontrado durante o processo de validação.",
+              "en": "Error encountered during the validation process."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request - Invalid coupon_id.",
+                            "es": "Bad-Request - coupon_id inválido.",
+                            "pt": "Bad-Request - coupon_id inválido."
+                          }
+                        },
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Bad-Request - Invalid Payer Token.",
+                            "es": "Bad-Request - Payer Token inválido.",
+                            "pt": "Bad-Request - Payer Token inválido."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "es": "Erro resultante de problemas internos do servidor.",
+              "pt": "Erro resultante de problemas internos do servidor.",
+              "en": "Error resulting from internal server issues."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Internal server error.",
+                            "es": "Error interno del servidor.",
+                            "pt": "Erro interno do servidor."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Validate wallet connect coupon",
+          "pt": "Validar cupom para Wallet Connect",
+          "es": "Validar cúpon para Wallet Connect"
+        }
+      }
+    }
+  }
+}
+
+

@@ -13,7 +13,7 @@ For each payment status, you can select an order status. Then, when your store r
 >
 > The module is prepared to receive payment notifications automatically, that is, without the need to configure your Mercado Pago account or the module. </br>
 > </br><br/>
-> [Click here](/developers/en/guides/additional-content/notifications/webhooks/webhooks) for more information about Webhooks notifications.
+> [Click here](/developers/en/docs/your-integrations/notifications/webhooks) for more information about Webhooks notifications.
 
 Ready! Notification status has been configured successfully.
 
@@ -27,19 +27,3 @@ Having selected **Checkout API** to receive payments from your store, it is impo
 4. Send a **test email** to ensure the platform is sending emails correctly.
 
 Ready! email notifications have been successfully configured.
-
-> PREV_STEP_CARD_EN
->
-> Configure your credentials
->
-> Learn how to enter credentials to enable payment methods available in the store's country of origin.
->
-> [Configure suas credenciais](/developers/pt/docs/magento-two/integration-configuration/credentials)
-
-> NEXT_STEP_CARD_EN
->
-> Store settings
->
-> Learn how to configure your store's business information.
->
-> [Store settings](/developers/en/docs/magento-two/integration-store)

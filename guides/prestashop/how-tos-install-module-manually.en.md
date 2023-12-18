@@ -10,11 +10,3 @@ To install the module manually, follow the steps below:
 6. Finally, **activate the module** to proceed with your account integration and configuration steps.
 
 ![Activate plugin manually](/images/prestashop/instalacao_manual_en.gif)
-
-> NEXT_STEP_CARD_EN
->
-> How to customize payment notification for Checkout API
->
-> After configuring the Checkout API to receive payments, learn how to configure sending emails that will notify the user of their transactions.
->
-> [How to customize payment notification for Checkout API](/developers/en/docs/prestashop/how-tos/checkout-api/email-customization)

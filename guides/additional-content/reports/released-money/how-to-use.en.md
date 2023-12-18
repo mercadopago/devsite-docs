@@ -17,7 +17,6 @@ The report is composed by:
 | Subtotal | <br/>The sum of the operations that make up each section.<br/><br/>|
 | Total| <br/> It is the final result composed of the sum of all subtotals. <br/><br/>That is to say:<br/> subtotal `Release` + subtotal `Block` + subtotal `Unblock` = total result<br/><br/> |
 
-
 In addition, the report reflects the accounting concepts of *owe* (money you must pay) and *will have* (money you must collect) in two columns, one for each concept:
 
 
@@ -31,13 +30,11 @@ You will see the available balance from the released transactions in the `NET_CR
 
 If this happens, the report is still valid. The money returns to your account and the transaction will appear in the report as a new line in the `NET_CREDIT` column.
 
-
 > NOTE
 >
 > Note
 >
 > Have the [Glossary of Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/glossary) on hand to review it when needed or want to review a technical term.
-
 
 ## Report example
 
@@ -47,22 +44,41 @@ Note how the Release report is composed in this example to identify the sections
 
 The default version will show an extended view of the columns. The final report will have as much detail as possible.
 
-<hr/>
+----[mpe]----
+## How do I analyze the reports generated from January 2022 onwards?
+------------
+----[mlu]----
+## How do I analyze the reports generated from March 2022 onwards?
+----[mlc, mco]----
+## How do I analyze the reports generated from August 2022 onwards?
+------------
+----[mla, mlm]----
+## How do I analyze the reports generated from October 2022 onwards?
+------------
+----[mlb]----
+## How do I analyze the reports generated from January 2023 onwards?
+------------
+----[mpe, mlu, mla, mlm, mlc, mco, mlb]----
+The reports generated as of  ------------ ----[mpe]----January 2022------------  ----[mlu]----March 2022------------ ----[mla, mlm]----October 2022------------  ----[mco, mlc]----August 2022------------ ----[mlb]----January 2023------------  ----[mpe, mlu, mla, mlm, mlc, mco, mlb]----  have the following characteristics:
 
-### Next steps
+1. The movements are displayed in chronological order, which allows you to identify them more easily and better control your orders.
+2. If there is a complaint or chargeback due to a problem with the service or the product provided, the respective amount is withheld until the mediation is resolved. This information is included in your report and you can find it by searching for the prefix "reserve-".  
+3. The movements related to the money withdrawals and/or transfers from your available money are displayed as "Payout", and all the mediations that may arise when a complaint is initiated or resolved are shown as "Dispute". You can review this glossary to check the description of all the other movements and terms.
 
-> LEFT_BUTTON_REQUIRED_EN
->
-> Generate your report
->
-> Learn the ways to generate a report and follow the steps to set your preferences.
->
-> [Generate your report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/generate)
+## What information is in the report?
 
-> RIGHT_BUTTON_RECOMMENDED_EN
->
-> Glossary
->
-> Know what each term means and the detail of the columns that make up the report.
->
-> [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/glossary)
+The report has a simplified structure to make it easier to understand it:
+
+| Report Composition | Description |
+| --- | --- |
+| Initial Available Balance |<br/> Initial balance. Indicates the amount that was available on the initial date of the period you selected to make the reconciliation.  <br/><br/>|
+| Release |<br/> The detail of the transactions that impact the total balance. <br/><br/> |
+| Total| <br/> It is the difference between the total net amount credited and the total net amount debited. <br/><br/> |
+
+## Example of a report
+
+Check in this example how the report "Releases" is composed to identify the sections and analyze your own reports:
+
+![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/example-nledger-en.jpg) 
+
+------------

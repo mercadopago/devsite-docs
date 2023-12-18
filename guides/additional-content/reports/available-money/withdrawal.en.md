@@ -1,7 +1,6 @@
 
 # Generating per withdrawal
 
-
 You can create an Available Balance report automatically every time you transfer money from your Mercado Pago account to a bank account. Set up this option from your Mercado Pago panel or via API.
 
 > WARNING
@@ -234,23 +233,3 @@ request(options, callback);
 > Important
 >
 > The generation by withdrawal is another option for generating the Available Balance report. It does not modify the generation that you set up from your Mercado Pago panel or via API. Explore the rest of the documentation to learn how you can generate your reports: from the Mercado Pago panel and through API.
-
-<hr/>
-
-### Next steps
-
-> LEFT_BUTTON_REQUIRED_EN
->
-> Generating from Mercado Pago
->
-> You can generate your Available Balance reports from the Mercado Pago panel in three simple steps.
->
-> [Generating from Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/panel)
-
-> RIGHT_BUTTON_REQUIRED_EN
->
-> Generating through API
->
-> Create reports in scheduled and manual ways through an integration with Mercado Pago.
->
-> [Generating through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/api)

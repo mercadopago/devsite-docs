@@ -1,45 +1,20 @@
-> CLIENT_SIDE
+# Prueba el flujo de pago
+
+La etapa de prueba permite analizar si la integración se realizó correctamente y si los pagos se están procesando sin errores, evitando que aparezcan errores al poner el checkout a disposición de los compradores finales.
+
+Para realizar una compra de prueba, debe usar las **credenciales de prueba** de su **usuario de producción**. Para obtenerlos, vaya a **Panel del desarrollador > Su aplicación > Credenciales de prueba** y copie la información disponible.
+
+Con las credenciales configuradas, siga los pasos a continuación para realizar la compra de prueba.
+
+1. Inicie la integración configurada con sus **Credenciales de prueba**.
+2. Ingrese cualquier correo electrónico como usuario pagador (recordando que debe ser diferente al correo que usas en Mercado Pago).
+4. Ingresa los datos de una de nuestras [tarjetas de prueba](/developers/es/guides/additional-content/your-integrations/test-cards).
+3. Confirma la compra.
+
+¡Listo! Una vez que se completen estos pasos, la integración estará completa y podrá usar sus credenciales de producción para usar el Checkout Bricks.
+
+> WARNING
 >
-> h1
+> Atención
 >
-> Crear usuarios de prueba
-
-[TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
-
-</br>
-
-> CLIENT_SIDE
->
-> h1
->
-> Prueba el flujo de pago
-
-## Configura la integración con los datos de tu usuario vendedor
-
-Configura la [public key de producción]([FAKER][CREDENTIALS][URL]) de tu **usuario de prueba vendedor** en el frontend de tu aplicación y el [access token de producción]([FAKER][CREDENTIALS][URL]) en el backend.
-
-## Realiza un pago con tu usuario comprador
-
-### Pruebas con tarjeta de crédito
-
-Inicia tu integración configurada con las credenciales de tu usuario de prueba vendedor:
-
-1. Completa los datos de una [tarjeta de prueba](/developers/es/guides/additional-content/testing/test-cards).
-1. Ingresa el e-mail de tu usuario de prueba comprador.
-1. Confirma la compra, ¡y listo!
-
-> PREV_STEP_CARD_ES
->
-> Enviar pago a Mercado Pago
->
-> Después de configurar la integración, consulta cómo enviar el pago a Mercado Pago.
->
-> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/integration/payment-submission)
-
-> NEXT_STEP_CARD_ES
->
-> Ejemplo de código
->
-> Para facilitar y optimizar el proceso de integración, consulta un ejemplo de integración con Checkout Bricks.
->
-> [Enviar pago a Mercado Pago](/developers/es/docs/checkout-bricks/integration/code-example)
+> No use el correo electrónico de usuario de prueba en el campo de correo electrónico del Brick (si corresponde).

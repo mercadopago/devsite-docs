@@ -52,6 +52,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | TAXES_DISAGGREGATED | Impuestos desagregados en formato JSON. |
 | EFFECTIVE_COUPON_AMOUNT | Costo por ofrecer descuento. |
 | POI_ID | ID del lector si el pago se realiza a través de un comercio físico. |
+
 ----[mpe]----
 > INFO
 >
@@ -59,22 +60,3 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 >
 > Usa este glosario para conocer los términos de los reportes que generes a partir de enero de 2022.Para los reportes que abarquen fechas previas [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/glossary)
 ------------
-<hr/>
-
-### Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
->
-> Reporte de Dinero retirado
->
-> Qué es y para qué sirve el reporte de Dinero retirado. Descubre ejemplos y casos de uso.
->
-> [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/how-to-use)
-
-> RIGHT_BUTTON_REQUIRED_ES
->
-> Genera tus reportes
->
-> Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
->
-> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/generate)

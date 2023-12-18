@@ -1,4 +1,3 @@
-
 # Generating through API
 
 Generate the Released money report manually as many times as you want or schedule it according to the desired frequency through our API.
@@ -830,6 +829,10 @@ request(options, callback);
 
 You will receive an `HTTP STATUS 202 (Accepted)` in response if no error is found, and the report will be generated asynchronously.
 
+----[mlm, mla, mco, mpe, mlu, mlc]----
+An `HTTP STATUS 203 (Non-Authoritative Information)` response indicates that the request is as expected, however, it was not possible to create your report and it will be necessary to request it again with the dates indicated by the system.
+
+------------
 ### 2. Query
 
 Check the API according to the snippet below to see if the report creation is ready:
@@ -1153,21 +1156,3 @@ function callback(error, response, body) {
 request(options, callback);
 ```
 ]]]
-
-### Next steps
-
-> LEFT_BUTTON_REQUIRED_EN
->
-> Generating from Mercado Pago
->
-> You can generate your Available Balance reports from the Mercado Pago panel in three simple steps.
->
-> [Generating from Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/panel)
-
-> RIGHT_BUTTON_REQUIRED_EN
->
-> Generating per API
->
-> You can generate a report every time you withdraw available money to a bank account.
->
-> [Generating per withdrawal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/withdrawal)

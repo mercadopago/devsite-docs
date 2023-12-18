@@ -2,38 +2,28 @@
 
 É possível consultar a lista de cartões salvos para determinado cliente. Para isso, envie um **GET** com o `customer_id` do cliente ao endpoint [/v1/customers/{customer_id}/cards](/developers/pt/reference/cards/_customers_customer_id_cards/get) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
-
 [[[
-
 ```php
-
 <?php
-    $customer = MercadoPago\Customer::find_by_id($id);
-    $cards = $customer->cards();
+  $customer_client = new CustomerClient();
+  $cards = $client->list("customer_id");
+  echo implode ($cards);
 ?>
-
 ```
 ```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
+const customerCard = new CustomerCard(client);
 
-  var filters = {
-    id: customer_id
-  };
-
-  mercadopago.customers.search({
-    qs: filters
-  }).then(function (customer) {
-    console.log(customer);
-  });
-
+customerCard.list({ customerId: '<CUSTOMER_UD>' }).then(console.log).catch(console.log);
 ```
 ```java
 
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
-CustomerClient customerClient = new CustomerClient();
+CustomerCardClient customerCardClient = new CustomerCardClient();
 
-Customer customer = customerClient.get("247711297-jxOV430go9fx2e");
-customerClient.listCards(customer.getId());
+MPResourceList<CustomerCard> list = customerCardClient.listAll("000000000-abcdEfghiJklM");
+List<CustomerCard> customerCards = list.getResults();
 
 ```
 ```ruby
@@ -63,9 +53,7 @@ curl -X GET \
 ```
 ]]]
 
-A resposta trará o seguinte resultado.
-
-### Resposta
+A resposta trará o seguinte resultado:
 
 ```json
 [{
@@ -77,19 +65,3 @@ A resposta trará o seguinte resultado.
     ...
 }]
 ```
-
-> PREV_STEP_CARD_PT
->
-> Adicionar novos cartões a um cliente
->
-> Saiba como buscar adicionar novos cartões a um cliente previamente criado.
->
-> [Adicionar novos cartões a um cliente](/developers/pt/docs/checkout-api/cards-and-customers-management/add-new-cards-to-customer)
-
-> NEXT_STEP_CARD_PT
->
-> Receber pagamentos com cartões salvos
->
-> Saiba como receber pagamentos a partir de cartões previamente salvos na conta do comprador.
->
-> [Receber pagamentos com cartões salvos](/developers/pt/docs/checkout-api/cards-and-customers-management/receive-payments-with-saved-cards)

@@ -1,4 +1,4 @@
-# Configure payments with Checkout Pro
+# Checkout Pro
  
 With [Checkout Pro](/developers/en/guides/checkout-pro/landing), the buyer will be directed from the store to the Mercado Pago website where he must fill in the requested information and make the payment. This way, the transaction is processed and completed outside your store environment. It is not necessary for the buyer to have a Mercado Pago account and, at the end of the transaction, the buyer can be returned to your store.
  
@@ -17,31 +17,3 @@ To integrate Checkout Pro, follow the steps below.
 11. In **Checkout Position**, indicate the position in which the payment method will be available to the buyer in the checkout flow.
 12. Click on **Set up installment and interest** to [set up in Mercado Pago](https://www.mercadopago.com.br/costs-section#from-section=menu) the rate that will be paid in each purchase and also offer interest-free installments to your customers.
 13. Click **Save Config** to save your preferences.
-
-----[mlb]----
-> NEXT_STEP_CARD_EN
->
-> Configure payments with Pix
->
-> Set up your store to receive Pix payments using Checkout API.
->
-> [Pix](/developers/en/docs/magento-two/payment-configuration/checkout-api/pix)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> NEXT_STEP_CARD_EN
->
-> Configure bank transfer payments
->
-> Configure your store to receive payments via bank transfer using the Checkout API.
->
-> [Bank transfer](/developers/en/docs/magento-two/payment-configuration/checkout-api/bank-transfer)
-------------
-
-> NEXT_STEP_CARD_EN
->
-> Test payments
->
-> Learn how to make a test purchase and ensure the integration works.
->
-> [Test payments](/developers/en/docs/magento-two/sales-processing/integration-test)

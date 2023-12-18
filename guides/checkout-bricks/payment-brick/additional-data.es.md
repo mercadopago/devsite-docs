@@ -1,0 +1,90 @@
+# Datos adicionales
+
+Dentro del callback `onSubmit` hay un segundo parámetro, **de uso opcional**, llamado `additionalData`. Es un objeto y puede contener datos adicionales útiles para su integración, pero que **no son necesarios** para el compromiso de pago en el backend.
+
+Consulta en la tabla siguiente los campos contenidos dentro del objeto `additionalData`, los cuales solo se devolverán si el usuario ha optado por el pago con tarjeta.
+
+| Campo | Tipo | Descripción |
+|--- |--- | --- |
+| bin | string | BIN de la tarjeta ingresada por el usuario. |
+| lastFourDigits | string | Los últimos cuatro dígitos para compras con tarjeta.|
+| cardholderName | string | Nombre de la persona titular de la tarjeta. |
+
+Mira a continuación un ejemplo de uso:
+
+[[[
+```Javascript
+const settings = {
+ ...,
+ callbacks: {
+   onSubmit: ({ selectedPaymentMethod, formData }, additionalData) => {
+     // callback llamado al usuario para hacer clic en el botón de envío de datos
+     // el parámetro additionalData es opcional, puede eliminarlo si lo desea
+     console.log(additionalData);
+     // ejemplo de envío de los datos recopilados por Brick a su servidor
+     return new Promise((resolve, reject) => {
+       let url = undefined;
+       if (selectedPaymentMethod === 'credit_card' || selectedPaymentMethod === 'debit_card') {
+         url = 'process_payment_card';
+       } else if (selectedPaymentMethod === 'bank_transfer') {
+         url = 'process_payment_pix';
+       } else if (selectedPaymentMethod === 'ticket') {
+         url = 'process_payment_ticket';
+       }
+
+
+       if (url) {
+         fetch(url, {
+           method: "POST",
+           headers: {
+             "Content-Type": "application/json",
+           },
+           body: JSON.stringify(formData),
+         })
+           .then((response) => response.json())
+           .then((response) => {
+             // recibir el resultado del pago
+             resolve();
+           })
+           .catch((error) => {
+             // manejar la respuesta de error al intentar crear el pago
+             reject();
+           })
+       } else if (selectedPaymentMethod === 'wallet_purchase') {
+         // wallet_purchase (Conta Mercado Pago) no necesita ser enviada desde el backend
+         resolve();
+       } else {
+         reject();
+       }
+     });
+   },
+ },
+}
+```
+```react-jsx
+<Payment
+ initialization={initialization}
+ customization={customization}
+ onSubmit={async ({ selectedPaymentMethod, formData }, additionalData) => {
+   console.log({ selectedPaymentMethod, formData }, additionalData);
+ }}
+/>
+```
+]]]
+
+Si no estás utilizando el botón nativo [enviar formulario de Brick](/developers/es/docs/checkout-bricks/payment-brick/visual-customizations/hide-element), también puedes acceder al objeto `additionalData` a través de `getAdditionalData`. Ve un ejemplo de uso a continuación.
+
+```javascript
+// variable donde se guarda el controller del Brick
+paymentBrickController.getAdditionalData()
+        .then((additionalData) => {
+            console.log("Additional data:", additionalData);
+        })
+        .catch((error) => console.error(error));
+```
+
+> WARNING
+>
+> Atención
+>
+> Llama al método `getAdditionalData` solo después de que se haya enviado el formulario; es decir, después de llamar al [getFormData.](/developers/es/docs/checkout-bricks/payment-brick/visual-customizations/hide-element) . Esto asegura que los datos devueltos sean válidos y fiables.

@@ -33,19 +33,3 @@ chmod 777 -R var/ pub/ generated/
 ```
 
 And you’re done! You have already successfully installed the Mercado Pago module for Magento 2.
-
-> PREV_STEP_CARD_EN
->
-> Module installation
->
-> Learn how to install the Mercado Pago module on the Magento 2 platform.
->
-> [Pluguin installation](/developers/en/docs/magento-two/installation)
-
-> NEXT_STEP_CARD_EN
->
-> Installation via Magento Marketplace
->
-> Check how to install the Mercado Pago module on the Magento 2 platform via Magento Marketplace.
->
-> [Installation via Magento Marketplace](/developers/en/docs/magento-two/installation/magento-marketplace)

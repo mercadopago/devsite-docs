@@ -12,7 +12,7 @@ The new version has a superior architecture with much more functionality and has
 * Subscription charge;
 * Change of plans.
 
-In addition to email notifications, the new version also has [Webhooks](/developers/en/guides/additional-content/notifications/webhooks/webhooks) for `plans`, `subscriptions` and `invoices`.
+In addition to email notifications, the new version also has [Webhooks](/developers/en/guides/additional-content/your-integrations/notifications/webhooks) for `plans`, `subscriptions` and `invoices`.
 
 > WARNING
 >
@@ -45,11 +45,3 @@ curl --location
 > Important
 >
 > We will notify you by email when the due date for your migration is reached. It is important that you schedule and have the changes prepared for the migration, as all `Plans` and `Subscriptions` with status **cancelled**, **inactive** and/or **finished**, as well as `Invoices` older than six months will not be migrated.
-
-> PREV_STEP_CARD_EN
->
-> Sales processing
->
-> Know how to manage payments, chargebacks and refunds.
->
-> [Sales processing](/developers/en/docs/subscriptions/production-mode/sales-processing/cancellations-and-refunds)

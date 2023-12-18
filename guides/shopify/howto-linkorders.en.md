@@ -1,4 +1,4 @@
-# Link an order between the Shopify panel and the Mercado Pago panel
+# How to link an order in the Mercado Pago panel
 
 To link an order from the Shopify control panel with an order from the Mercado Pago activity panel, follow the steps below:
 

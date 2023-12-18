@@ -1,4 +1,4 @@
-# Previous requirements to integrate
+# Prerequisites
 
 Keep these aspects in mind before you start:
 
@@ -27,30 +27,15 @@ It's quite easy to do:
 3. Name the application to identify it later.
 4. Accept our Terms and Conditions. Done!
 
-
 > NOTE
 >
 > Note
 >
->If your POS integrator has several tenants, see topic 4 and 5. Check your integration security and implement [OAuth](/developers/es/docs/qr-code/additional-content/security/oauth/introduction).
+>If your POS integrator has several tenants, see topic 4 and 5. Check your integration security and implement [OAuth.](/developers/es/docs/qr-code/additional-content/security/oauth/introduction)
 
 ## 3. Generate test users
 
-To start integrating, you need a minimum of two users: a buyer and a seller.
-
-In order to create them, go to [Create test users](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/test_user/_users_test_user/post) in our API Reference. There you will find all the necessary information.
-
-> WARNING
->
-> IMPORTANT
->
-> * You can generate up to 10 test accounts simultaneously. Therefore, we recommend saving each user's e-mail and password.
-> * Test users expire after 60 days of no activity on Mercado Pago.
-> * To perform test payments, we recommend using low amounts.
-> * Both buyer and seller must be test users.
-> * Use the test cards, as no cash withdrawals are possible.
-
-Once you have test users, you can start to integrate and create Stores and POS.
+[TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
 
 ## 4. Obtain your Access Token (OAuth)
 
@@ -68,5 +53,3 @@ Step by step:
 > * Obtain the user identification (Cust ID or User ID) of your account.
 > * Include the User ID of your integrator account in the seller's Sponsor ID.
 > * Submit the Sponsor ID on all QR transactions. [See API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post).
-
----

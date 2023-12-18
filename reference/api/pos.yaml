@@ -9,6 +9,7 @@ paths:
     post:
       tags:
         - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/mp-point'
       summary: Create POS
       x-summary-i18n:
         eng: Create POS
@@ -231,6 +232,7 @@ paths:
     get:
       tags:
         - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/mp-point'
       summary: Search POS
       x-summary-i18n:
         eng: Search POS
@@ -379,6 +381,7 @@ paths:
     get:
       tags:
         - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/mp-point'
       summary: Get POS
       x-summary-i18n:
         eng: Get POS
@@ -457,6 +460,12 @@ paths:
                   fixed_amount:
                     type: boolean
                     example: false
+                  store_id:
+                    type: string
+                    example: 56807753
+                  external_store_id:
+                    type: string
+                    example: SUC01  
                   external_id:
                     type: string
                     example: SUC001POS002
@@ -504,6 +513,7 @@ paths:
     put:
       tags:
         - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/mp-point'
       summary: Update POS
       x-summary-i18n:
         eng: Update POS
@@ -733,6 +743,7 @@ paths:
     delete:
       tags:
         - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/mp-point'
       summary: Delete POS
       x-summary-i18n:
         eng: Delete POS

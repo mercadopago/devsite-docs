@@ -1,4 +1,4 @@
-# Vincula un pedido entre el panel de Shopify y el de Mercado Pago
+# Cómo vincular un pedido en el panel de Mercado Pago
 
 Para vincular un pedido del panel de control de Shopify con un pedido del panel de actividades de Mercado Pago, sigue los pasos a continuación:
 
@@ -10,5 +10,3 @@ Para vincular un pedido del panel de control de Shopify con un pedido del panel 
 6. Por último, dirígete a tu panel de [Mercado Pago](http://mercadopago.com) y utiliza el valor copiado en el buscador de actividades de Mercado Pago. 
 
 ![link-pedidos-choapi](shopify/shopify-link-pedidos-es.png)
-
-

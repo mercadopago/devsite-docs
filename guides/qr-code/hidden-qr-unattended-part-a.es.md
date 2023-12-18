@@ -1,14 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
 # Pagos QR modelo desatendido
 
 > WARNING
@@ -31,10 +20,6 @@ Las características principales son:
 - Cuando el cliente escanea el QR de la caja, Mercado Pago realiza un request de manera recurrente a la URL asociada a la caja, y cuando la orden esté lista, mostrará el monto a pagar en la app al cliente.
 - El cliente podrá pagar solamente si hay una orden creada para el QR que escaneó.
 
-> NOTE
-> 
-> Nota
-> 
 > La URL deberá apuntar a un servicio de tu dominio donde expongas por cada caja de tu sucursal si hay un orden lista de ser paga o no.
 
 ## Flujo del modelo
@@ -42,7 +27,6 @@ Las características principales son:
 Te explicamos cómo funciona el modelo desatendido: 
 
 ![Flujo de pago en punto de venta QR Mercado Pago](/images/mobile/qr-gas-station-flow.es.png)
-
 
 1. El cliente escanea el código QR desde su aplicación.
 2. En función de la URL asociada a la caja, Mercado Pago busca la orden en el servidor del vendedor.
@@ -63,10 +47,6 @@ Te explicamos cómo funciona el modelo desatendido:
    (B) Mercado Pago devuelve los datos correspondientes como su estado, información de pagos, entre otros.
 9. Si la orden se encuentra cerrada (**closed**), se puede imprimir el comprobante para finalizar la transacción.
 
-> NOTE
-> 
-> Nota
-> 
 > En el punto 5 deberás ejecutar los pasos 8A y 8B para obtener el estado de la orden.
 
 ## Cajas para el modelo desatendido
@@ -90,16 +70,6 @@ https://api.mercadopago.com/pos \
 ```
 ]]]
 
----
+## Integración
 
-### Próximos pasos
-
-
-> LEFT_BUTTON_REQUIRED_ES
->
-> Cómo integrar QR modelo desatendido
->
-> Conoce paso a paso como integrar este modelo.
->
-> [Cómo integrar QR modelo desatendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/qr-unattended/qr-unattended-part-b)
-
+Para integrar este modelo de facturación, accede a la documentación sobre [Integrar QR modelo desatendido](/developers/es/docs/qr-code/qr-unattended/qr-unattended-part-b)

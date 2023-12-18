@@ -1,6 +1,6 @@
 # Renovação
  
-O fluxo `refresh_token` é utilizado para trocar um **temporal grant** do tipo `refresh_token` por um access token quando o access token em uso estiver com sua validade expirada. O access token recebido através do endpoint tem **validade de 180 dias** e passado esse período é preciso reconfigurar todo fluxo de autorização.
+O fluxo `refresh_token` é utilizado para trocar um **temporal grant** do tipo `refresh_token` por um access token quando o access token em uso estiver **próximo do vencimento**. O access token recebido através do endpoint tem **validade de 180 dias** e passado esse período é preciso reconfigurar todo fluxo de autorização.
  
 O fluxo permite continuar utilizando um access token válido com as mesmas características do token original sem a necessidade de uma nova interação com o usuário. Ao realizar este fluxo, o token original é trocado por um novo token que também oferece a possibilidade de limitar os scopes devolvendo um novo refresh token para ser trocado no futuro.
  
@@ -20,19 +20,3 @@ Para renovar o **access token**:
 > Importante
 >
 > Lembre-se que cada vez que você renovar o `access_token`, o `refresh_token` também vai ser renovado, por tanto, você deverá armazená-lo novamente.
- 
-> PREV_STEP_CARD_PT
->
-> Criação de acesso
->
-> Conheça o fluxo de autorização de acesso aos dados.
->
-> [Criação](/developers/pt/guides/additional-content/security/oauth/creation)
-
-> NEXT_STEP_CARD_PT
->
-> Genrenciamento do OAuth
->
-> Veja como desabilitar e invalidar os recursos.
->
-> [Gerenciamento](developers/pt/guides/additional-content/security/oauth/management)

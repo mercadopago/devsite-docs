@@ -45,8 +45,61 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
->>>> Accepted payment methods <<<<
----
-available_payments: credit, mercadopago, ticket
+>>>> Accepted payment types <<<<
+
+----[mlb]----
 
 ---
+available_payments: credit, mercadopago, boleto, pix
+
+---
+------------
+
+----[mla]---- 
+
+---
+available_payments: credit, debit, mercadopago
+
+----
+------------
+
+----[mlm]---- 
+
+---
+available_payments: credit, debit, mercadopago, efectivo, atm, spei
+
+----
+------------
+
+----[mlu]---- 
+
+---
+available_payments: credit, debit, mercadopago, efectivo
+
+----
+------------
+
+----[mco]---- 
+
+---
+available_payments: mercadopago, pse, credit, debit, efectivo
+
+----
+------------
+
+----[mlc]---- 
+
+---
+available_payments: mercadopago, credit, debit
+
+----
+------------
+
+----[mpe]---- 
+
+---
+available_payments: mercadopago, atm, credit, debit
+
+----
+------------
+> For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)

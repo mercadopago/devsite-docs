@@ -2,55 +2,49 @@
 
 Caso necessário, é possível adicionar novos cartões a um determinado cliente. Para isso, busque o cliente e defina os novos dados de cartão utilizando um dos códigos disponíveis abaixo.
 
+> NOTE
+>
+> Importante
+>
+> Caso seja necessário excluir um cartão antes de adicionar novos cartões a um cliente, envie um **DELETE** ao endpoint [/v1/customers/{customer_id}/cards/{id}](/developers/pt/reference/cards/_customers_customer_id_cards_id/delete) fornecendo o `customer_id` e o `id` do cartão que deseja excluir. Após a execução bem-sucedida da requisição, você poderá adicionar o novo cartão.
 
 [[[
 ```php
+<?php
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+  
+  $customer_client = new CustomerClient();
+  $customer = $customer_client->get("1234");
 
-<?php  
+  $card_client = new CustomerCardClient();
+  
+  $customer_card = $client->create($customer->id, [
+    "token" => "your_card_token",
+    "issuer_id" => "2345",
+    "payment_method_id" => "debit_card"
+  ]);
 
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
-  $customer = MercadoPago\Customer::find_by_id("247711297-jxOV430go9fx2e");
-
-  $card = new MercadoPago\Card();
-  $card->token = "9b2d63e00d66a8c721607214cedaecda";
-  $card->customer_id = $customer->id;
-  $card->issuer = array("id" => "3245612");
-  $card->payment_method = array("id" => "debit_card");
-  $card->save();
-
-  print_r($card);
-
+  echo implode($customer_card);
 ?>
-
 ```
 ```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
+const customerClient = new Customer(client);
 
-var mercadopago = require('mercadopago');
-mercadopago.configure({
-    access_token: 'ENV_ACCESS_TOKEN'
+const customer = customerClient.get({ customerId: '<CUSTOMER_ID>' })
+	.then((result) => {
+
+  const cardClient = new CustomerCard(client);
+
+  const body = {
+       token : result.token,
+       issuer_id: '2345',
+       payment_method: 'debit_card' 
+  };
+
+cardClient.create({ customerId: customer, body: body })
+.then(console.log).catch(console.log);
 });
-
-var filters = {
-  id: "247711297-jxOV430go9fx2e"
-};
-
-mercadopago.customers.search({
-  qs: filters
-}).then(function (customer) {
-  card_data = {
-    "token": "9b2d63e00d66a8c721607214cedaecda",
-    "customer_id": customer.id,
-    "issuer_id": "3245612",
-    "payment_method_id": "debit_card"
-  }
-
-  mercadopago.card.create(card_data).then(function (card) {
-    console.log(card);
-  });
-});
-
-
 ```
 ```java
 
@@ -183,19 +177,3 @@ A resposta trará o seguinte resultado.
     "live_mode": false
 }
 ```
-
-> PREV_STEP_CARD_PT
->
-> Buscar cliente
->
-> Saiba como buscar um cliente a partir de informações específicas.
->
-> [Buscar cliente](/developers/pt/docs/checkout-api/cards-and-customers-management/search-customers)
-
-> NEXT_STEP_CARD_PT
->
-> Consultar lista de cartões
->
-> Saiba como consultar a lista de cartões de determinado cliente.
->
-> [Consultar lista de cartões](/developers/pt/docs/checkout-api/cards-and-customers-management/get-cards-list)

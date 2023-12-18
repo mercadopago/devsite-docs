@@ -12,10 +12,8 @@ Existen dos formas de generar un reporte de Todas las transacciones:
 
 | Canales | Descripción |
 | --- | --- |
-| Panel de Mercado Pago | <br/>Es muy simple y rápido. Para generarlo desde tu cuenta de Mercado Pago, ve a ----[mla]---- [tus informes](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [tus informes](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [tus informes](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [tus informes](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [tus informes](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [tus informes](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [tus informes](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------ y elige la opción de *Reportes*.<br/><br/>Sigue el paso a paso para [generar reportes desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/panel).<br/><br/> |
-| Integración vía API | <br/>Programa la frecuencia de tu reporte según tus necesidades. Puede ser tanto de forma manual como de forma programada.<br/><br/>Lee la documentación para [generar reportes por API.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/api) <br/><br/> |
-
-<br/>
+| Panel de Mercado Pago | <br/> ----[mlb, mpe, mlu, mco]---- *Reportes de tus cobros y estados de cuenta.* ------------ Es muy simple y rápido. Para generarlo desde tu cuenta de Mercado Pago, ve a ----[mla]---- [Informes y facturación](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [Informes y facturación](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [tus informes](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [tus informes](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [tus informes](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [tus informes](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [tus informes](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------ y elige la opción de ----[mla, mlm]---- *Reportes de tus cobros y estados de cuenta.* ------------ ----[mlb, mpe, mlu, mco]---- *Reportes*. ------------ <br/><br/>Sigue el paso a paso para [generar reportes desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/panel).<br/><br/> |
+| Integración vía API | <br/>Programa la frecuencia de tu reporte según tus necesidades. Puede ser tanto de forma manual como de forma programada.<br/><br/>Lee la documentación para [generar reportes por API.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/api) <br/><br/>
 
 ## Características técnicas del reporte
 
@@ -25,17 +23,14 @@ Ten en cuenta la siguiente información técnica cuando quieras generar, program
 
 Programa cómo y con qué frecuencia quieres generar tus reportes.
 
-
 | Elemento | Características |
 | --- | --- |
 | Programacion | <br/>- Diaria<br/> - Semanal<br/>- Mensual<br/><br/> |
 | Generación | <br/>- Manual<br/><br/> |
 
-
 ### Estructura del reporte
 
 Conoce las características de los elementos que conforman tu reporte.
-
 
 | Elemento o acción | Características |
 | --- | --- |

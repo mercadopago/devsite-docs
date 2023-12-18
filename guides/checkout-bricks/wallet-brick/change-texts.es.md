@@ -1,0 +1,118 @@
+> CLIENT_SIDE
+>
+> h1
+>
+> Cambiar textos
+
+Wallet Brick ofrece dos niveles de lectura: el **call to action (botón)** y la **propuesta de valor**. En ambos casos, el texto se puede personalizar de acuerdo a las opciones brindadas por Mercado Pago.
+
+> WARNING
+>
+> Atención
+>
+> Para ofrecer una mejor experiencia acorde con nuestra propuesta de marca, actualmente no es posible personalizar completamente los textos.
+
+| - | Descripción |
+| --- | --- |
+| Momento de personalización  | Al renderizar el Brick  |
+| Propiedad  | customization.texts.{action, valueProp} |
+| Tipo  | String  |
+| Observaciones  | Al enviar un texto vacío, la pantalla presentará el texto definido por el layout predeterminado que se muestra después de la [renderización del Brick](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering#bookmark_renderizar_o_brick). Por otro lado, al enviar un texto alternativos, reemplazará el texto predeterminado. Para comprobar cuáles son los textos por defecto, consulta la tabla a continuación. |
+
+Consulta a continuación los textos disponibles para modificar y un código de ejemplo.
+
+----[mla, mlb]----
+| Clave | Opciones disponibles | Predeterminado |
+|--- |--- | --- |
+| action | pay, buy | pay |
+| valueProp | practicality, convenience_all, security_details, security_safety, smart_option, convenience_credits | security_safety |
+
+Consulta los textos relacionados con cada opción:
+
+| Clave | Opción | Texto |
+|--- |--- | --- |
+|action |pay | Pagar con Mercado Pago |
+|action |buy | Comprar con Mercado Pago |
+|valueProp |practicality | Usá tarjetas guardadas o dinero en cuenta |
+|valueProp |convenience_all | Cuotas con o sin tarjeta |
+|valueProp |security_details | Todos tus datos protegidos |
+|valueProp |security_safety | Pagá de forma segura |
+|valueProp |smart_option| El texto será elegido automáticamente por Wallet Brick para aumentar las posibilidades de venta según las características de la compra. |
+|valueProp |convenience_credits| Hasta 12 cuotas sin tarjeta  |
+
+> NOTE
+>
+> Importante
+>
+> Para usar la Value Prop de `convenience_credits`, el Brick debe estar [inicializado con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preference-startup) y la preferencia debe tener el `purpose` de [onboarding_credits.](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preferences) 
+
+------------
+----[mlm]----
+| Clave | Opciones disponibles | Predeterminado |
+|--- |--- | --- |
+| action | pay, buy | pay |
+| valueProp | practicality, convenience_all, security_details, security_safety, smart_option, convenience_credits | security_safety |
+
+Consulte los textos relacionados con cada opción:
+
+| Clave | Opción | Texto |
+|--- |--- | --- |
+|action |pay | Pagar con Mercado Pago |
+|action |buy | Comprar con Mercado Pago |
+|valueProp |practicality | Usa tarjetas guardadas o saldo en cuenta |
+|valueProp |convenience_all | Meses con o sin tarjeta de crédito |
+|valueProp |security_details | Todos tus datos protegidos |
+|valueProp |security_safety | Paga de forma segura |
+|valueProp |smart_option| El texto será elegido automáticamente por Wallet Brick para aumentar las posibilidades de venta según las características de la compra. |
+|valueProp |convenience_credits| Hasta 12 mensualidades sin tarjeta |
+
+> NOTE
+>
+> Importante
+>
+> Para usar la Value Prop de `convenience_credits`, el Brick debe estar [inicializado con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preference-startup) y la preferencia debe tener el `purpose` de [onboarding_credits.](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preferences)
+
+------------
+----[mlu, mlc, mco, mpe]----
+| Clave | Opciones disponibles | Predeterminado |
+|--- |--- | --- |
+| action | pay, buy | pay |
+| valueProp | practicality, security_details, security_safety, smart_option | security_safety |
+
+Consulte los textos relacionados con cada opción:
+
+| Clave | Opción | Texto |
+|--- |--- | --- |
+|action |pay | Pagar con Mercado Pago |
+|action |buy | Comprar con Mercado Pago |
+|valueProp |practicality | Usa tarjetas guardadas o dinero en cuenta |
+|valueProp |security_details | Todos tus datos protegidos |
+|valueProp |security_safety | Paga de forma segura |
+|valueProp |smart_option| El texto será elegido automáticamente por Wallet Brick para aumentar las posibilidades de venta según las características de la compra. |
+
+------------
+
+[[[
+```javascript
+const settings = {
+    ...,
+    customization: {
+         texts: {
+             action: 'buy',
+             valueProp: 'security_details',
+         },
+    },
+}
+```
+```react-jsx
+const customization = {
+ visual: {
+   texts: {
+     action: 'buy',
+     valueProp: 'security_details'
+     ...,
+   }
+ }
+};
+```
+]]]

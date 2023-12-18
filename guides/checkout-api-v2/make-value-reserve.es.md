@@ -1,12 +1,3 @@
----
-  sites_supported:
-      - mla
-      - mlb
-      - mlm
-      - mpe
-      - mlu
----
-
 # Reservar fondos
 
 Una reserva de fondos ocurre cuando se realiza una compra y se reserva su monto del límite total de la tarjeta, asegurando que el valor se mantenga hasta la finalización del procesamiento.
@@ -15,26 +6,28 @@ Para realizar una autorización de reserva, envíe un **POST** con todos los atr
 
 [[[
 ```php
-
 <?php
+  use MercadoPago\Client\Payment\PaymentClient;
 
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
-  $payment = new MercadoPago\Payment();
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
-  $payment->transaction_amount = 100;
-  $payment->token = "ff8080814c11e237014c1ff593b57b4d";
-  $payment->description = "Título do produto";
-  $payment->installments = 1;
-  $payment->payment_method_id = "visa";
-  $payment->payer = array(
-    "email" => "test_user_19653727@testuser.com"
-  );
+  $client = new PaymentClient();
+  $request_options = new MPRequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-  $payment->capture=false;
-
-  $payment->save();
-
+  $payment = $client->create([
+    "transaction_amount" => 100.0,
+    "token" => "123456",
+    "description" => "My product",
+    "installments" => 1,
+    "payment_method_id" => "visa",
+    "payer" => [
+      "email" => "my.user@example.com",
+    ],
+    "capture" => false
+  ], $request_options);
+  echo implode($payment);
 ?>
 ```
 ```java
@@ -58,28 +51,24 @@ client.create(request);
 
 ```
 ```node
+import { MercadoPagoConfig, Payment } from 'mercadopago';
 
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const payment = new Payment(client);
 
-var payment_data = {
-  transaction_amount: 100,
-  token: 'ff8080814c11e237014c1ff593b57b4d'
-  description: 'Título do produto',
-  installments: 1,
-  payment_method_id: 'visa',
-  payer: {
-    email: 'test_user_3931694@testuser.com'
-  },
-  capture: false
+const body = {
+transaction_amount: 100,
+token: '123456',
+description: 'My product',
+installments: 1,
+payment_method_id: 'visa',
+payer: {
+email: 'my.user@example.com',
+},
+capture: false
 };
 
-mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function (error) {
-
-});
-
+payment.create({ body: body, requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' } }).then(console.log).catch(console.log);
 ```
 ```ruby
 
@@ -153,17 +142,19 @@ curl -X POST \
     -H 'content-type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/payments' \
-    -d '{
-          "transaction_amount": 100,
-          "token": "ff8080814c11e237014c1ff593b57b4d",
-          "description": "Título del producto",
-          "installments": 1,
-          "payment_method_id": "visa",
-          "payer": {
-            "email": "test_user_19653727@testuser.com"
-          },
-          "capture": "false"
-    }'
+    -d '
+{
+   "transaction_amount":100,
+   "token":"ff8080814c11e237014c1ff593b57b4d",
+   "description":"Product title",
+   "installments":1,
+   "payment_method_id":"visa",
+   "payer":{
+      "email":"test_user_3931694@testuser.com"
+   },
+   "capture":false
+}'
+
 ```
 ]]]
 
@@ -184,14 +175,17 @@ La respuesta indica que el pago se encuentra autorizado y pendiente de captura.
 ]]]
 
 
-Además, también es posible resultar como rechazado o pendiente. Ten en cuenta que los fondos autorizados no podrán ser utilizados por su cliente hasta que sean capturados. Recomendamos capturar lo antes posible.
+Además, también es posible que retorne como `rechazado` o `pendiente`. En caso de que retorne como `pendiente`, deberás prestar atención a las notificaciones para saber cuál es el estado final del pago.
+
+Ten en cuenta que tu cliente no podrá utilizar los valores autorizados hasta que se capturen. Recomendamos realizar la captura lo antes posible.
+
 
 ----[mla, mlm]----
 > WARNING
 >
 > Importante
 >
-> La reserva tendrá una validez de 7 días. Si no la capturas hasta ese momento, será cancelada. Además, ebes guardar el ID del pago para poder finalizar el proceso.
+> La reserva tendrá una validez de 7 días. Si no la capturas hasta ese momento, será cancelada. Además, debes guardar el ID del pago para poder finalizar el proceso.
 ------------
 
 ----[mpe]----
@@ -199,7 +193,7 @@ Además, también es posible resultar como rechazado o pendiente. Ten en cuenta 
 >
 > Importante
 >
-> La reserva tendrá una validez de 22 días. Si no la capturas hasta ese momento, será cancelada. Además, ebes guardar el ID del pago para poder finalizar el proceso.
+> La reserva tendrá una validez de 22 días. Si no la capturas hasta ese momento, será cancelada. Además, debes guardar el ID del pago para poder finalizar el proceso.
 ------------
 
 ----[mlb]----
@@ -207,13 +201,7 @@ Además, también es posible resultar como rechazado o pendiente. Ten en cuenta 
 >
 > Importante
 >
-> La reserva tendrá una validez de 5 días. Si no la capturas hasta ese momento, será cancelada. Además, ebes guardar el ID del pago para poder finalizar el proceso.
+> La reserva tendrá una validez de 5 días. Si no la capturas hasta ese momento, será cancelada. Además, debes guardar el ID del pago para poder finalizar el proceso.
+
 ------------
 
-> NEXT_STEP_CARD_ES
->
-> Capturar pago autorizado
->
-> Conozca las formas disponibles para capturar un pago autorizado.
->
-> [Capturar pago autorizado](/developers/es/docs/checkout-api/payment-management/capture-authorized-payment)

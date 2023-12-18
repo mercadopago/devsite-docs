@@ -1,75 +1,83 @@
-## Crear preferencia
+# Crear preferencia
 
 Es posible crear preferencias utilizando lo SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, consulte la API [Crear preferencia](/developers/es/reference/preferences/_checkout_preferences/post).
 
-----[mla, mlb, mlu, mpe, mlm]----
-
-[[[
 ```node
-// SDK de Mercado Pago
-const mercadopago = require ('mercadopago');
-// Agrega credenciales
-mercadopago.configure({
-  access_token: 'PROD_ACCESS_TOKEN'
-});
-// Crea un objeto de preferencia
-let preference = {
-  items: [
-    {
-      title: 'Mi producto',
-      unit_price: 100,
-      quantity: 1,
-    }
-  ]
-};
-mercadopago.preferences.create(preference)
-.then(function(response){
-// Este valor reemplazará el string "<%= global.id %>" en tu HTML
-  global.id = response.body.id;
-}).catch(function(error){
-  console.log(error);
-});
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
+
+const preference = new Preference(client);
+
+preference.create({ body: {
+	items: [
+		{
+			id: '<ID>',
+			title: '<title>',
+			quantity: 1,
+			unit_price: 100
+		}
+	],
+} }).then(console.log).catch(console.log);
 ```
-]]]
 
-------------
+# Buscar preferencias
 
-----[mlc, mco]----
-[[[
+Puede encontrar toda la información de preferencias generada a través de filtros específicos o por un rango de fechas específico utilizando el SDK a continuación. Para detalles de los parámetros de la solicitud, acceda a la API [Buscar preferencias](/developers/es/reference/preferences/_checkout_preferences_search/get).
+
 ```node
-// SDK de Mercado Pago
-const mercadopago = require ('mercadopago');
-// Agrega credenciales
-mercadopago.configure({
-  access_token: 'PROD_ACCESS_TOKEN'
-});
-// Crea un objeto de preferencia
-let preference = {
-  items: [
-    {
-      title: 'Mi producto',
-      unit_price: 100,
-      quantity: 1,
-    }
-  ]
-};
-mercadopago.preferences.create(preference)
-.then(function(response){
-// Este valor reemplazará el string "<%= global.id %>" en tu HTML
-  global.id = response.body.id;
-}).catch(function(error){
-  console.log(error);
-});
-```
-]]]
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
 
-------------
+const preference = new Preference(client);
+
+preference.search({ options: {
+  sponsor_id: '0',
+  external_reference: '',
+  site_id: 'MLA',
+  marketplace: 'NONE'
+},
+}).then((result) => console.log(result))
+  .catch((error) => console.log(error));
+```
+
+# Obtener preferencia
+
+Puede obtener toda la información de pago de un producto o servicio con el ID de preferencia deseado utilizando el SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, acceda a la API [Obtener preferencia](/developers/es/reference/preferences/_checkout_preferences_id/get).
+
+```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
+const preference = new Preference(client);
+
+preference.get({ preferenceId: '123456789' })
+.then(console.log).catch(console.log);
+```
+
+# Actualizar preferencia
+
+Puede actualizar los detalles de una preferencia de pago utilizando el ID de preferencia. Para detalles de los parámetros de la solicitud, acceda a la API [Actualizar preferencia](/developers/es/reference/preferences/_checkout_preferences_id/put).
+
+```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
+
+const preference = new Preference(client);
+
+preference.update({
+	id: '123456789',
+	updatePreferenceRequest: {
+		items: [
+			{
+				id: '1234',
+				title: 'Dummy Title',
+				quantity: 1,
+				unit_price: 100
+			}
+		],
+	}
+}).then(console.log).catch(console.log);
+```
 
 ## Asociar Facebook Ads
 
 Puede asociar la preferencia con un píxel para rastrear las conversiones de anuncios de Facebook. Para obtener detalles sobre los parámetros de solicitud, consulte la API [Crear preferencia](/developers/es/reference/preferences/_checkout_preferences/post).
 
-[[[
 ```node
 ===
 Agrega el código en la preferencia y reemplaza el valor <code>PIXEL_ID</code> por tu identificador.
@@ -88,13 +96,11 @@ var preference = {
   //...
 };
 ```
-]]]
 
 ## Asociar Google Ads
 
 Puede asociar una *tag* a la preferencia para realizar el seguimiento de las conversiones de Google Ads. Para obtener detalles sobre los parámetros de solicitud, consulte la API [Crear preferencia](/developers/es/reference/preferences/_checkout_preferences/post).
 
-[[[
 ```node
 ===
 Agrega el código en la preferencia y reemplaza los valores <code>CONVERSION\_ID</code> y <code>CONVERSION\_LABEL</code> por los datos de tu _tag_.
@@ -115,4 +121,3 @@ var preference = {
   ...
 };
 ```
-]]]

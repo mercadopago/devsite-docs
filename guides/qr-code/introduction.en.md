@@ -2,7 +2,7 @@
 
 ![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 
-Once you complete the integration as explained below, your business will be able to receive payments with QR by **printing the QR Code and showcasing it in a visible spot of your POS, or by displaying it on your mobile device**, and to collect payments via Mercado Pago App.
+Once you complete the integration as explained below, your business will be able to receive payments with QR by **printing the QR Code and showcasing it in a visible spot of your store, or by displaying it on your mobile device**, and to collect payments via Mercado Pago App.
 
 ![QR Flow](/images/mobile/qr_flujo.es.png)
 
@@ -10,7 +10,7 @@ Once you complete the integration as explained below, your business will be able
 >
 > Note
 >
-> If your model does not require integration with a POS system, view all the information available in [Generate QR via Mercado Pago dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/qr-code/integrations-front).
+> If your model does not require integration with a POS system, view all the information available in [Generate QR via Mercado Pago dashboard.](/developers/en/docs/qr-code/integrations-front)
 
 ## Integration Types
 
@@ -20,4 +20,3 @@ Once you complete the integration as explained below, your business will be able
 | QR Dynamic Model  | Integration model that generates a QR per transaction. Used for QR models in tickets.  |
 
 Depending on your business model, you can choose one of these options to offer your customers a seamless in-store shopping experience.
-

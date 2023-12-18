@@ -4,13 +4,11 @@ Caso ocorra alguma alteração nos dados de um cliente como por exemplo, endere�
 
 Na tabela abaixo descrevemos todos os atributos que podem ser modificados, e para realizar a alteração, envie um **PUT** com o `customer_id`e os atributos que deseja modificar ao endpoint [/v1/customers/{id}](/developers/pt/reference/customers/_customers_id/put) e execute a requisição ou, se preferir, utilize um dos SDKs a seguir.
 
-
 > NOTE
 >
 > Importante
 >
 > Caso você não tenha o `customer_id`, siga os passos descritos na seção [Buscar cliente](/developers/pt/docs/checkout-api/cards-and-customers-management/search-customers) para obter a informação. Além disso, o campo `email` só pode ser atualizado se o cliente ainda não tiver um e-mail associado.
-
 
 | Atributo  | Descrição  |
 | --- | --- |
@@ -24,64 +22,61 @@ Na tabela abaixo descrevemos todos os atributos que podem ser modificados, e par
 | `phone`  | Telefone cadastrado  |
 | `identification`  | Tipo e número do documento  |
 
-
 [[[
 ```php
-
 <?php
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+  
+  $client = new CustomerClient();
 
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
-  $customer = new MercadoPago\Customer();
-  $customer->email = "user@user.com";
-  $customer->first_name = "john";
-  $customer->last_name = "wagner";
-  $customer->phone = array("area_code" => "[FAKER][PHONE_NUMBER][AREA_CODE]", "number" => "001234567");
-  $customer->identification = array("type" => "[FAKER][IDENTIFICATION][TYPE]", "number" => "12341234");
-  $customer->default_address = "Casa";
-  $customer->address = array("zip_code" => "[FAKER][ADDRESS][ZIP_CODE]", "street_name" => "[FAKER][ADDRESS][STREET_NAME]", "street_number" => "2");
-  $customer->description = "Informações do cliente";
-  $customer->default_card = "None";
-  $customer->update();
-
+  $customer = $client->update("user_id", [
+    "email" => "my.user@example.com",
+    "first_name" => "john",
+    "last_name" => "wagner",
+    "phone" => array(
+      "area_code" => "11",
+      "number" => "001234567"
+    ),
+    "identification" => array(
+      "type" => "CPF",
+      "number" => "12341234"
+    ),
+    "default_address" => "Casa",
+    "address" => array(
+      "zip_code" => "52",
+      "street_name" => "Av. das Nações Unidas"
+      "street_number" => "3033"
+    )
+  ]);
 ?>
-
 ```
 ```node
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const customer = new Customer(client);
 
-var mercadopago = require('mercadopago');
-mercadopago.configure({
-    access_token: 'ENV_ACCESS_TOKEN'
-});
-
-var customer_data = { 
-  "email": "test_payer_12345@testuser.com",
-  "first_name": "john" ,
-  "last_name": "wagner",
-  "phone": {
-    "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
-    "number": "001234567"
+const body = {
+  email: "my.user@example.com"
+  first_name: "john",
+  last_name: "wagner",
+  phone: {
+    area_code: "11",
+    number: "001234567"
+  }
+  identification: {
+    type: "CPF",
+    number: "12341234"
   },
-  "identification": {
-    "type": "[FAKER][IDENTIFICATION][TYPE]",
-    "number": "12341234"
-  }, 
-  "default_address": "Casa",
-  "address": {
-    "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
-    "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-    "street_number": "2"
-  },
-  "description": "Informações do cliente",
-  "default_card": "None
- }
+  default_address: "Casa",
+  address: {
+    zip_code: "52",
+    street_name: "Av. das Nações Unidas"
+    street_number: "3033"
+  }
+};
 
-mercadopago.customers.update(customer_data).then(function (customer) {
- // code ...
-});
-
+customer.update({ customerId: '<CUSTOMER_ID>', body: body,
+}).then(console.log).catch(console.log);
 ```
-
 ```java
 
 MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
@@ -281,19 +276,3 @@ Exemplo de resposta sem o parâmetro `customer_id`:
 }
 ```
 
-
-> PREV_STEP_CARD_PT
->
-> Criar cliente e cartão
->
-> Saiba como criar um cliente e um cartão
->
-> [Criar cliente e cartão](/developers/pt/docs/checkout-api/cards-and-customers-management/create-customer-and-card)
-
-> NEXT_STEP_CARD_PT
->
-> Buscar cliente
->
-> Saiba como buscar um cliente a partir de informações específicas.
->
-> [Buscar cliente](/developers/pt/docs/checkout-api/cards-and-customers-management/search-customers)
