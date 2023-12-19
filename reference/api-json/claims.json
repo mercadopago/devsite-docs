@@ -11,22 +11,7 @@
             "pt": "Este endpoint permite obter, por meio de um token válido, detalhes das reclamações como, por exemplo, informaçõees sobre as pessoas usuárias envolvidas e sobre o pedido que gerou a reclamação",
             "es": "Este endpoint permite obtener, a través de un token válido, detalles de los reclamos como, por ejemplo, información sobre las personas usuarias involucradas y el pedido que generó el reclamo"
           },
-          "parameters": [
-            {
-              "in": "header",
-              "name": "Authorization",
-              "required": true,
-              "schema": {
-                "type": "string",
-                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
-              },
-              "description": {
-                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
-                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
-                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
-              }
-            }
-          ],
+          "parameters": [],
           "responses": {
             "200": {
               "description": {
@@ -761,20 +746,6 @@
             "es": "Este endpoint permite buscar, mediante un token válido, qué reclamos pertenecen a un usuario determinado"
           },
           "parameters": [
-            {
-              "in": "header",
-              "name": "Authorization",
-              "required": true,
-              "schema": {
-                "type": "string",
-                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
-              },
-              "description": {
-                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
-                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
-                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
-              }
-            },
             {
               "in": "query",
               "name": "id",
@@ -1606,22 +1577,7 @@
             "pt": "Este endpoint permite buscar, por meio de um token válido, as mensagens associados a uma reclamação",
             "es": "Este endpoint permite buscar, mediante un token válido, los mensajes asociados a un reclamo"
           },
-          "parameters": [
-            {
-              "in": "header",
-              "name": "Authorization",
-              "required": true,
-              "schema": {
-                "type": "string",
-                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
-              },
-              "description": {
-                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
-                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
-                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
-              }
-            }
-          ],
+          "parameters": [],
           "responses": {
             "200": {
               "description": {
@@ -1888,23 +1844,6 @@
           },
           "parameters": [
             {
-              "in": "header",
-              "name": "Authorization",
-              "required": true,
-              "schema": {
-                "type": "string",
-                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
-              },
-              "description": {
-                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
-                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
-                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
-              },
-              "consumes": [
-                "multipart/form-data"
-              ]
-            },
-            {
               "in": "formData",
               "name": "file",
               "schema": {
@@ -1981,20 +1920,6 @@
             "es": "Este endpoint permite enviar y asociar al reclamo, mediante un token válido, mensajes con archivos de imágenes adjuntos."
           },
           "parameters": [
-            {
-              "in": "header",
-              "name": "Authorization",
-              "required": true,
-              "schema": {
-                "type": "string",
-                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
-              },
-              "description": {
-                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
-                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
-                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
-              }
-            },
             {
               "in": "query",
               "name": "application_id",
@@ -2096,22 +2021,7 @@
             "pt": "Este endpoint permite, por meio de um token válido, fazer download de arquivos de imagem anexados as mensagens associados à reclamação",
             "es": "Este endpoint permite, mediante un token válido, descargar archivos de imagen adjuntos a los mensajes asociados al reclamo"
           },
-          "parameters": [
-            {
-              "in": "header",
-              "name": "Authorization",
-              "required": true,
-              "schema": {
-                "type": "string",
-                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
-              },
-              "description": {
-                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
-                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
-                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
-              }
-            }
-          ],
+          "parameters": [],
           "responses": {
             "200": {
               "description": {
@@ -2138,22 +2048,7 @@
             "pt": "Este endpoint permite buscar, mediante un token válido, arquivos de imagem anexados à mensagem associada à reclamaçao",
             "es": "Este endpoint permite buscar, mediante un token válido, archivos de imagen adjuntos al mensaje asociado a la reclamación"
           },
-          "parameters": [
-            {
-              "in": "header",
-              "name": "Authorization",
-              "required": true,
-              "schema": {
-                "type": "string",
-                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
-              },
-              "description": {
-                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
-                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
-                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
-              }
-            }
-          ],
+          "parameters": [],
           "responses": {
             "200": {
               "description": {
@@ -2244,22 +2139,7 @@
             "pt": "Este endpoint permite solicitar, mediante um token válido, uma mediação na reclamação aberta pela pessoa usuária",
             "es": "Este endpoint permite buscar, mediante un token válido, solicitar mediación en el reclamo abierto por la persona usuaria"
           },
-          "parameters": [
-            {
-              "in": "header",
-              "name": "Authorization",
-              "required": true,
-              "schema": {
-                "type": "string",
-                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
-              },
-              "description": {
-                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
-                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
-                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
-              }
-            }
-          ],
+          "parameters": [],
           "responses": {
             "200": {
               "description": {
@@ -2313,22 +2193,7 @@
               "pt": "Este endpoint permite visualizar, mediante un token válido, resoluções esperadas pela pessoa usuária em sua reclamação",
               "es": "Este endpoint permite visualizar, mediante un token válido, las resoluciones esperadas por la persona usuaria en su reclamo"
           },
-          "parameters": [
-            {
-              "in": "header",
-              "name": "Authorization",
-              "required": true,
-              "schema": {
-                "type": "string",
-                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
-              },
-              "description": {
-                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
-                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
-                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
-              }
-            }
-          ],
+          "parameters": [],
           "responses": {
             "200": {
               "description": {
@@ -2478,22 +2343,7 @@
             "pt": "Este endpoint permite obter, mediante um token válido, evidências da reclamação como, por exemplo, informações de envio do pedido e de anexos de imagens associados à reclamação",
             "es": "Este endpoint permite obtener, mediante un token válido, evidencias del reclamo, como información de envío del pedido y archivos de imágenes adjuntos asociados al reclamo"
           },
-          "parameters": [
-            {
-              "in": "header",
-              "name": "Authorization",
-              "required": true,
-              "schema": {
-                "type": "string",
-                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
-              },
-              "description": {
-                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
-                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
-                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
-              }
-            }
-          ],
+          "parameters": [],
           "responses": {
             "200": {
               "description": {
@@ -2707,22 +2557,7 @@
             "pt": "Este endpoint permite carregar, mediante um token válido, evidências de envio do pedido. Para uma entrega por correio, os campos 'shipping_company_name' e 'date_shipped' são obrigatórios, enquanto para uma entrega por encomenda os campos obrigatórios são 'shipping_company_name', 'destination_agency', 'date_shipped' e 'receiver_name'. Para entrega por e-mail, os campos 'receiver_email' e 'date_shipped' são obrigatórios",
             "es": "Este endpoint permite cargar, mediante un token válido, evidencias de envío del pedido. Para una entrega por correo son obligatorios los campos 'shipping_company_name' y 'date_shipped', mientras una entrega por encomienda los campos obligatorios son 'shipping_company_name', 'destination_agency', 'date_shipped' y 'receiver_name'. Para entrega por email son obligatorios los campos 'receiver_email' y 'date_shipped'"
           },
-          "parameters": [
-            {
-              "in": "header",
-              "name": "Authorization",
-              "required": true,
-              "schema": {
-                "type": "string",
-                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
-              },
-              "description": {
-                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
-                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
-                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
-              }
-            }
-          ],
+          "parameters": [],
           "requestBody": {
             "content": {
               "application/json": {
@@ -3064,22 +2899,7 @@
             "pt": "Este endpoint permite visualizar, por meio de um token válido, o histórico de estados e cenários pelos quais a reclamação passou. Também será possível consultar o histórico de ações tomadas pelas pessoas responsáveis pela reclamação",
             "es": "Este endpoint permite visualizar, a través de un token válido, el historial de estados y escenarios por los que ha pasado el reclamo. También será posible consultar el historial de acciones tomadas por los responsables del reclamo"
           },
-          "parameters": [
-            {
-              "in": "header",
-              "name": "Authorization",
-              "required": true,
-              "schema": {
-                "type": "string",
-                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
-              },
-              "description": {
-                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
-                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
-                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
-              }
-            }
-          ],
+          "parameters": [],
           "responses": {
             "200": {
               "description": {
@@ -3232,22 +3052,7 @@
             "pt": "Este endpoint permite visualizar, a través de un token válido, o motivo ('reason') pelo qual uma reclamação foi criada, de forma que com base na sua classificação sejam permitidos determinados comportamentos. Uma reclamação pode ser criada por três motivos gerais: PNR (Produto não recebido), PDD (Produto diferente ou defeituoso) ou CS (Cancelamento de compra)",
             "es": "Este endpoint permite visualizar, mediante un token válido, el motivo ('reason') por el cual se ha creado un reclamo, de manera que en base a su tipificación se permiten determinados comportamientos. Se puede crear un reclamo por tres motivos generales: PNR (Producto no recibido), PDD (Producto diferente o defectuoso) o CS (Cancelación de la compra)"
           },
-          "parameters": [
-            {
-              "in": "header",
-              "name": "Authorization",
-              "required": true,
-              "schema": {
-                "type": "string",
-                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
-              },
-              "description": {
-                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
-                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
-                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
-              }
-            }
-          ],
+          "parameters": [],
           "responses": {
             "200": {
               "description": {
@@ -3502,20 +3307,6 @@
             "es": "Este endpoint permite, mediante un token válido, obtener notificaciones de la queja realizando una solicitud 'get' al recurso de reclamos utilizando el campo 'resource', del parámetro 'data', de las notificaciones Webhook recibidas del tema. Para obtener más información sobre las notificaciones de Webhook, visite: https://www.mercadopago.com/developers/es/docs/your-integrations/notifications/webhooks"
           },
           "parameters": [
-            {
-              "in": "header",
-              "name": "Authorization",
-              "required": true,
-              "schema": {
-                "type": "string",
-                "example": "APP_USR-135032289-072018-24f7b8e0971d1de87c575646ef38d350-2"
-              },
-              "description": {
-                "en": "The application's private key is typically used in the backend for generating payments. It is crucial that this data remains protected on your servers and is not accessible by any user of the system or by any intruder.",
-                "pt": "Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.",
-                "es": "Clave privada de la aplicación se utiliza normalmente en el backend para generar pagos. Es muy importante que estos datos estén protegidos en sus servidores y no sean accesibles para ningún usuario del sistema ni para invasores."
-              }
-            },
             {
               "in": "path",
               "name": "CLAIM_RESOURCE",
