@@ -6,7 +6,6 @@ Com o objetivo de oferecer mais transparência e possibilidades de atuação em 
 | --- |--- | --- | 
 | onReady | Callback chamado quando o botão estiver totalmente carregado.  | Aqui você pode ocultar loadings do seu site, por exemplo. |
 | onSubmit | Callback chamado ao clicar no botão. | Poderia-se usar esse callback para indicar ao usuário de que deve-se completar o fluxo em outra aba, por exemplo. **Suportado em modo redirect.** |
-| onError | Callback chamado para todos os casos de erro prévios à abertura do modal. | Útil para tratamento de erros, envio de métricas ou outros fluxos de exceção. |
 
 Veja abaixo um exemplo de como integrá-las em sua integração.
 

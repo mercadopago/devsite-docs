@@ -10,7 +10,7 @@ Installation is done in two steps: adding the Mercado Pago SDK to the project wi
 ```html
 <html>
 <head>
-   <title>Pay Modal Version</title>
+   <title>Pay Redirect Version</title>
 </head>
  
 <body>

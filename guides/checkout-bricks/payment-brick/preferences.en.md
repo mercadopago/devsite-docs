@@ -602,12 +602,6 @@ At the end of the checkout process, you have the option to redirect the buyer to
 
 You can also add the `auto_return` attribute with the `approved` value if you want the redirect for approved payments to be automatic without rendering a return button.
 
-> NOTE
->
-> Note
->
-> Note that the `auto_return` attribute only works for Payment Brick's `redirect` and `mobile` mode. It does not work in modal mode since in the latter the buyer remains on the site throughout the payment process.
-
 ![autoreturn](/images/web-payment-checkout/autoreturn-img.png)
 
 | Attribute | Description |
