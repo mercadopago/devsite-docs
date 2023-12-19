@@ -17,6 +17,13 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 > Algunas definiciones ya no están disponibles o han cambiado. Usa este glosario para conocer los términos de los reportes que generes a partir de enero. Para los reportes que abarquen fechas previas [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/additional-content/reports/released-money/glossary-old)
 ------------
 ----[mla]----
+> WARNING
+>
+> Importante
+>
+> Conocé los términos que necesitás para leer tu reporte. Usá este glosario para conocer los términos de los reportes que generes con fechas anteriores a octubre. Para los reportes que abarquen fechas posteriores [consultá este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/subscriptions/additional-content/reports/released-money/report-fields)
+
+------------
 
 | Nombre de la columna del reporte    | Qué significa  |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
@@ -71,4 +78,4 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 > (*) Esta información solo se podrá usar para conciliar, será tratada conforme a las leyes de protección de datos
 > personales aplicables y estará disponible cuando se reciban pagos con QR, transferencias o cuando reciba una donación
 > como ONG.
-------------
+
