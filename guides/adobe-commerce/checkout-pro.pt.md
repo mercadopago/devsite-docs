@@ -17,7 +17,7 @@ Para configurar o Checkout Pro, siga os passos descritos abaixo.
     2. Em **Título**, defina o título de como a forma de pagamento será exibida no checkout da loja.
     3. Em **Prazo limite para pagamento**, escolha o tempo que o cliente terá para concluir o pagamento.
     4. Em **Usar modo binário**, selecione entre **Sim, processar pedidos síncrono** ou **Não, processar pedidos assíncrono**. Este campo define se irá aceitar apenas pagamentos nos quais o status final é recebido imediatamente ou não.
-    5. Em **Visualização da conclusão de pagamento**, escolha "Redirecionamento". Em esse modo, o cliente será redirecionado para o site do Mercado Pago.
+    5. Em **Visualização da conclusão de pagamento**, escolha "Redirecionamento". Neste modelo, o cliente será redirecionado para o site do Mercado Pago.
     6. Em **Limite de parcelas**, defina o número máximo de parcelas que será aceito.
     7. Na opção **Meio de pagamento excluído**, escolha os pagamentos que não deverão ser aceitos na loja.
     8. Clique em **Gravar Configuração** para salvar as alterações realizadas.
