@@ -10,14 +10,12 @@ The opening scheme allows you to define how the checkout will open for the user.
 
 # Redirection scheme to another page
 
-Changing the redirection behavior is done by the `redirectMode` property, which can assume the values `self`, `blank` or `modal`.
+Changing the redirection behavior is done by the `redirectMode` property, which can assume the values `self` or `blank`.
 
 | Valor | Descrição | 
 |--- |--- | 
 | self | Keeps the redirect on the same page. | 
 | blank | Externalizes the redirect to a new page. |
-| modal | Opens the checkout experience in modal mode. |
-
 The code blocks below implement checkout in **redirect** mode to another page.
 
 [[[
@@ -41,31 +39,3 @@ renderComponent (bricksBuilder);
 <Wallet initialization={{ preferenceId: '<PREFERENCE_ID>', redirectMode: 'blank' }} />
 ```
 ]]]
-
-# Opening scheme in modal mode
-
-To define the **modal opening model**, just change the `redirectMode: 'modal'` property during integration, as in the example below.
-
-[[[
-```Javascript
-const renderComponent = async (bricksBuilder) => {
- const settings = {
-   initialization: {
-     preferenceId: '<PREFERENCE_ID>',
-     redirectMode: 'modal'
-   },
- };
- const brickController = await bricksBuilder.create(
-   'wallet',
-   'wallet_container',
-   settings
- );
-};
-renderComponent (bricksBuilder);
-```
-```react-jsx
-<Wallet initialization={{ preferenceId: '<PREFERENCE_ID>', redirectMode: 'modal' }} />
-```
-]]]
-
-The `redirectMode: 'modal'` property indicates that the checkout should open in **modal** mode and not **redirect**.

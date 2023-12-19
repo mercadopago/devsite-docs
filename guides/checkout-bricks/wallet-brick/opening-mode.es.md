@@ -10,13 +10,12 @@ El esquema de apertura le permite definir cómo se abrirá la caja para el usuar
 
 # Esquema de redirección a otra página
 
-El cambio del comportamiento de redirección se realiza mediante la propiedad `redirectMode`, que puede asumir los valores `self`, `blank` o `modal`.
+El cambio del comportamiento de redirección se realiza mediante la propiedad `redirectMode`, que puede asumir los valores `self` o `blank`.
 
 | Valor | Descrição | 
 |--- |--- | 
 | self | Mantiene la redirección en la misma página. | 
 | blank | Externaliza la redirección a una página nueva. |
-| modal | Abre la experiencia de pago en modo modal. |
 
 Los bloques de código a continuación implementan el pago en modo **redirect** a otra página.
 

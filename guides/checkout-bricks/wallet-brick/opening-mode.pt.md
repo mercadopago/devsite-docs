@@ -10,13 +10,12 @@ O esquema de abertura permite definir como o checkout será aberto para o usuár
 
 # Esquema de redirecionamento para outra página
 
-A alteração no comportamento do redirecionamento é feita pela propriedade `redirectMode`, a qual pode assumir os valores `self`, `blank` ou `modal`.
+A alteração no comportamento do redirecionamento é feita pela propriedade `redirectMode`, a qual pode assumir os valores `self` ou `blank`.
 
 | Valor | Descrição | 
 |--- |--- | 
 | self | Mantém o redirecionamento na mesma página. | 
 | blank | Externaliza o redirecionamento para uma nova página. |
-| modal | Abre a experiência de checkout em modo modal. |
 
 Os blocos de código abaixo implementam o checkout em modo **redirect** para outra página
 
