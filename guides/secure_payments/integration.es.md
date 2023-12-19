@@ -10,7 +10,7 @@ Esta funcionalidad permite realizar pagos de forma rápida y sencilla, sin la ne
 |---|---|
 | Cuenta Mercado Pago | Es necesario que el integrador tenga una cuenta en Mercado Pago para poder generar sus credenciales. Si no la tienes, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para crearla. |
 | Credenciales | Las [credenciales](/developers/es/docs/your-integrations/credentials) son contraseñas únicas con las que identificamos una integración en tu cuenta, y que sirven para capturar pagos en tiendas virtuales y otras aplicaciones de forma segura. |
-| Normativa PCI DSS | Para garantizar la protección de los datos confidenciales de nuestros usuarios y cumplir con las mejores prácticas de seguridad de la industria, solo se tendrá acceso por medio de flujos que cumplan con requisitos PCI DSS. Recomendamos acceder al [sitio oficial de PCI](https://www.pcisecuritystandards.org/) para más información. | Requerido |
+| Normativa PCI DSS | Para garantizar la protección de los datos confidenciales de nuestros usuarios y cumplir con las mejores prácticas de seguridad de la industria, solo se tendrá acceso por medio de flujos que cumplan con requisitos PCI DSS. Recomendamos acceder al [sitio oficial de PCI](https://www.pcisecuritystandards.org/) para más información. |
 
 ## Integración
 
@@ -24,7 +24,7 @@ Para utilizar Secure Payments, deberás hacerlo a través de pedidos a las sigui
 A continuación, te compartimos un pedido de ejemplo. Ten en cuenta que deberás cambiar el valor del campo `token` por tu Access Token.
 
 ```curl
-curl --location 'https://api.mercadopago.com/v1/secure_payments/zeta?access_token=TOKEN' \
+curl -X POST 'https://api.mercadopago.com/v1/secure_payments/zeta?access_token=TOKEN' \
 -H 'X-Caller-Scopes: payments' \
 -H 'Content-Type: application/json' \
 -d '{
@@ -78,32 +78,32 @@ Es posible realizar un pago presencial en un dispositivo MPOST (dispositivo capt
 
 Para realizar un pago presencial, deberás cambiar el campo `card` por **`card_present`**. A continuación, te mostramos un ejemplo de petición:
 
-```
-curl--location 'https://api.mercadopago.com/v1/secure_payments/zeta?access_token=TOKEN'\ -
-	H 'X-Caller-Scopes: payments'\ -
-	H 'Content-Type: application/json'\ -
-	d '{
-"binary_mode": true,
-"capture": true,
-"card_present": {
-	"card_data_entry_mode": "2",
-	"card_sequence_number": "02",
-	"track2": "107547ee4bad13deb793c8f04ddc4a70c88913e2680856c38f8f48b4a5ab64c213d0512428a73f6d",
-	"ksn": "0d040b76543210e001f8",
-	"icc_related_data": "5010414D45524943414E204558505245535382025C008408A0000000250108018E180000000000000000420141035E035F0300000000000000008F01C9950502000080009A032011199B02E8009C010091005F201041454950532032332F56455220322E305F24032412315F25031711015F2A0209865F300202015F3401029F02060000000033009F03060000000000009F0608A0000000250108019F0702FF009F090200019F0D05FC50ECA8009F0E0500000000009F0F05FC78FCF8009F100706020103A400009F160F4D45524348414E54303030303030319F1A0200769F1C085445524D303030319F1E0830373030303034319F26087F490A8F139D58BA9F2701809F3303E0F0E89F34034103029F3501229F360204019F37049325DA479F4104000000019F4502DAC1",
-	"fallback_indicator": false,
-	"poi": "8701012007000041",
-	"poi_signature": "0c074a2b [APP_PRO2]:aa6d737ff3faef73b9c96b868a83e6f11e959950095b8045a02a9467",
-	"poi_type": "GERTEC_MP35P",
-	"trx_id": "1754288142011191155248701012007000041",
-	"tag": "chip",
-	"has_chip": "true",
-	"app_version": "1.2.1"
-},
-"cardholder": {
-	"name": "AEIPS 23/VER 2.0"
-},
-"security_code": "0000"
+```curl
+curl -X POST 'https://api.mercadopago.com/v1/secure_payments/zeta?access_token=TOKEN'\ -
+-H 'X-Caller-Scopes: payments'\ -
+-H 'Content-Type: application/json'\ -
+-d '{
+    "binary_mode": true,
+    "capture": true,
+    "card_present": {
+        "card_data_entry_mode": "2",
+        "card_sequence_number": "02",
+        "track2": "107547ee4bad13deb793c8f04ddc4a70c88913e2680856c38f8f48b4a5ab64c213d0512428a73f6d",
+        "ksn": "0d040b76543210e001f8",
+        "icc_related_data": "5010414D45524943414E204558505245535382025C008408A0000000250108018E180000000000000000420141035E035F0300000000000000008F01C9950502000080009A032011199B02E8009C010091005F201041454950532032332F56455220322E305F24032412315F25031711015F2A0209865F300202015F3401029F02060000000033009F03060000000000009F0608A0000000250108019F0702FF009F090200019F0D05FC50ECA8009F0E0500000000009F0F05FC78FCF8009F100706020103A400009F160F4D45524348414E54303030303030319F1A0200769F1C085445524D303030319F1E0830373030303034319F26087F490A8F139D58BA9F2701809F3303E0F0E89F34034103029F3501229F360204019F37049325DA479F4104000000019F4502DAC1",
+        "fallback_indicator": false,
+        "poi": "8701012007000041",
+        "poi_signature": "0c074a2b [APP_PRO2]:aa6d737ff3faef73b9c96b868a83e6f11e959950095b8045a02a9467",
+        "poi_type": "GERTEC_MP35P",
+        "trx_id": "1754288142011191155248701012007000041",
+        "tag": "chip",
+        "has_chip": "true",
+        "app_version": "1.2.1"
+    },
+    "cardholder": {
+        "name": "AEIPS 23/VER 2.0"
+    },
+    "security_code": "0000"
 }
 ```
 
