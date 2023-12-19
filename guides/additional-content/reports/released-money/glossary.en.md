@@ -70,4 +70,4 @@ If you have any doubts about the technical terms used, check the glossary below.
 > (*) This information can only be used for reconciliation purposes, will be treated according to the applicable
 > personal data protection laws and will be available when payments via QR code or transfers are received, as well as
 > when a donation is received by an NGO.
-------------
+

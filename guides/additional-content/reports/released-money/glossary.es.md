@@ -78,4 +78,4 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 > (*) Esta información solo se podrá usar para conciliar, será tratada conforme a las leyes de protección de datos
 > personales aplicables y estará disponible cuando se reciban pagos con QR, transferencias o cuando reciba una donación
 > como ONG.
-------------
+
