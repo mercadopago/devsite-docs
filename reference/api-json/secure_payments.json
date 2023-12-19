@@ -1,0 +1,160 @@
+{
+  "url": "https://api.mercadopago.com",
+  "paths": {
+    "/external_payment": {
+      "post": {
+        "tags": [
+          "checkout-pro"
+        ],
+        "description": {
+          "en": "It is used to make external Mercado Pago payments. Nowadays, it is only being used by WhatsApp",
+          "pt": "É utilizado para realizar pagamentos externos ao Mercado Pago. Hoje em dia só é usado pelo WhatsApp",
+          "es": "Se utiliza para realizar pagos externos de Mercado Pago. Actualmente sólo lo utiliza WhatsApp"
+        },
+        "requestBody": {
+          "distribution": [
+            {
+              "amount": {
+                "currency": "BRL",
+                "value": 120
+              },
+              "destination": {
+                "account_id": "PSP-MA-ID-456",
+                "type": "MERCHANT_ACCOUNT"
+              }
+            }
+          ],
+          "external_order_id": "FB-ORDER-ID-123",
+          "external_payment_id": "FB-PAYMENT-ID-12356",
+          "installments": 1,
+          "payer": {
+            "address": {
+              "country": "BR",
+              "postal_code": "23080-060"
+            },
+            "device": {
+              "device_id": "DEVICE-ID",
+              "ip_address": "São Paulo"
+            },
+            "full_name": "Joe Doe",
+            "phone_number": "5559800000016",
+            "registered_at": "2022-06",
+            "tax_info": {
+              "country": "BR",
+              "type": "CPF",
+              "value": "19459377548"
+            },
+            "type": "string"
+          },
+          "payment_actions": [
+            {
+              "amount": {
+                "currency": "BRL",
+                "value": 120
+              },
+              "external_action_id": "FB-ACTION-ID-1234",
+              "type": "SALE"
+            }
+          ],
+          "soft_descriptor": "IG-ABCD",
+          "source": {
+            "card_data": {
+              "card_network": "VISA",
+              "card_type": "CREDIT",
+              "cryptogram": "CRYPTOGRAM",
+              "expiry_month": "11",
+              "expiry_year": "2035",
+              "token_number": "1234123412341234"
+            },
+            "type": "NETWORK_TOKEN"
+          }
+        }
+        "responses": {
+          "200": {
+            "description": {
+              "es": "Success",
+              "pt": "Success",
+              "en": "Success"
+            },
+            "content": {
+              "external_payment_id": "FB-PAYMENT-ID-12356",
+              "installments": 1,
+              "payment_actions": [
+                {
+                  "action_id": "PSP-ACTION-ID-124",
+                  "amount": {
+                    "currency": "BRL",
+                    "value": 120
+                  },
+                  "external_action_id": "FB-ACTION-ID-1234",
+                  "status": "COMPLETED",
+                  "type": "SALE",
+                  "updated_at": 1611787574
+                }
+              ],
+              "payment_id": "PSP-PAYMENT-ID-12356",
+              "status": "COMPLETED"
+            }
+            "400": {
+              "description": {
+                "en": "Bad request",
+                "pt": "Bad request",
+                "es": "Bad request"
+              },
+              "content": {
+                "details": [
+                  {
+                    "message": "Unsupported currency for this transaction",
+                    "path": "/distribution[0]/amount/currency"
+                  }
+                ],
+                "error_code": "UNSUPPORTED_CURRENCY",
+                "error_message": "Unsupported payment currency"
+              }
+            }
+            "401": {
+              "description": {
+                "en": "Unauthorized",
+                "pt": "Unauthorized",
+                "es": "Unauthorized"
+              },
+              "content": {
+                {
+                  "error_code": "MISSING_ACCESS_TOKEN",
+                  "error_message": "Access token is missing in the header"
+                }
+              }
+            }
+            "422": {
+              "description": {
+                "en": "Unprocessable Entity",
+                "pt": "Unprocessable Entity",
+                "es": "Unprocessable Entity"
+              },
+              "content": {
+                {
+                  "error_code": "INSUFFICIENT_FUNDS",
+                  "error_message": "Insufficient funds in the funding source to complete the payment"
+                }
+              }
+            }
+            "500": {
+              "description": {
+                "en": "Internal Server Error",
+                "pt": "Internal Server Error",
+                "es": "Internal Server Error"
+              },
+              "content": {
+                {
+                  "error_code": "INSUFFICIENT_FUNDS",
+                  "error_message": "Insufficient funds in the funding source to complete the payment"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+          
