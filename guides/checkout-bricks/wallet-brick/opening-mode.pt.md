@@ -40,31 +40,3 @@ renderComponent (bricksBuilder);
 <Wallet initialization={{ preferenceId: '<PREFERENCE_ID>', redirectMode: 'blank' }} />
 ```
 ]]]
-
-# Esquema de abertura em modo modal
-
-Para definir o **modelo de abertura modal**, basta alterar a propriedade `redirectMode: 'modal'` durante a integração, como no exemplo abaixo.
-
-[[[
-```Javascript
-const renderComponent = async (bricksBuilder) => {
- const settings = {
-   initialization: {
-     preferenceId: '<PREFERENCE_ID>',
-     redirectMode: 'modal'
-   },
- };
- const brickController = await bricksBuilder.create(
-   'wallet',
-   'wallet_container',
-   settings
- );
-};
-renderComponent (bricksBuilder);
-```
-```react-jsx
-<Wallet initialization={{ preferenceId: '<PREFERENCE_ID>', redirectMode: 'modal' }} />
-```
-]]]
-
-A propriedade `redirectMode: 'modal'`  indica que o checkout deve abrir em modo **modal** e não **redirect**.

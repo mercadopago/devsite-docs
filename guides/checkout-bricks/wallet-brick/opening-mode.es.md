@@ -40,31 +40,3 @@ renderComponent (bricksBuilder);
 <Wallet initialization={{ preferenceId: '<PREFERENCE_ID>', redirectMode: 'blank' }} />
 ```
 ]]]
-
-# Esquema de apertura en modo modal
-
-Para definir el **modelo de apertura modal**, simplemente cambie la propiedad `redirectMode: 'modal'` durante la integración, como en el ejemplo a continuación.
-
-[[[
-```Javascript
-const renderComponent = async (bricksBuilder) => {
- const settings = {
-   initialization: {
-     preferenceId: '<PREFERENCE_ID>',
-     redirectMode: 'modal'
-   },
- };
- const brickController = await bricksBuilder.create(
-   'wallet',
-   'wallet_container',
-   settings
- );
-};
-renderComponent (bricksBuilder);
-```
-```react-jsx
-<Wallet initialization={{ preferenceId: '<PREFERENCE_ID>', redirectMode: 'modal' }} />
-```
-]]]
-
-La propiedad `redirectMode: 'modal'` indica que la caja debe abrirse en modo **modal** y no **redirect**.
