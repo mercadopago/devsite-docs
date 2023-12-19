@@ -12,12 +12,12 @@ To create a **payer token**, send a POST with all necessary attributes to the en
 ```curl
 
 curl -X POST \
-      'https://api.mercadopago.com/v2/wallet_connect/agreements/<YOUR_AGREEMENT_ID>/payer_token \
-      -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
-      -H 'Content-Type: application/json' \
-      -H 'x-platform-id: YOUR_ACCESS_TOKEN' \
-      -d '{
-  "code": "abcdef1211f2545d1e7790eb6591ff68df74c567a30551ed99994538a7e530"
+      'https://api.mercadopago.com/v2/wallet_connect/agreements/<AGREEMENT.ID>/payer_token'\
+       -H 'Content-Type: application/json' \
+       -H 'x-platform-id: YOUR_PLATFORM_ID' \
+       -H 'Authorization: Bearer TEST-3322*********190-03031*********46528954c*********0339910-1*********' \
+       -d '{
+  "code": "aeecea3e11f2545d1e7790eb6591ff68df74c57930551ed980239f4538a7e530"
 }'
 ```
 ]]]
