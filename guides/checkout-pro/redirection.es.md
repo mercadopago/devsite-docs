@@ -6,7 +6,8 @@ Al final del proceso de pago, es posible redirigir al comprador a otro entorno d
 >
 > Redirección automática
 >
-> Si deseas que la redirección para los pagos aprobados sea automática, sin generar un botón de retorno, debes agregar también el atributo `auto_return` con el valor `aprobado`. Además, el atributo `auto_return` solo funciona para el modo **redirect** y **mobile** de Checkout Pro.
+> Si deseas que la redirección para los pagos aprobados sea automática, sin generar un botón de retorno, debes agregar también el atributo `auto_return` con el valor `aprobado`.
+
 En las siguientes tablas encontrarás el detalle de cada uno de los posibles parámetros de request y respuesta.
 
 | Atributo | 	Descripción |
