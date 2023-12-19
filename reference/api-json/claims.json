@@ -3148,7 +3148,7 @@
                         "description": {
                           "en": "Filtering attributes of claim information.",
                           "pt": "Atributos de filtragem de informações da reclamação.",
-                          "es": "Atributos de filtrado de la información del reclamo."
+                          "es": "Atributos de filtrado de información del reclamo."
                         },
                         "items": {
                           "type": "array",
