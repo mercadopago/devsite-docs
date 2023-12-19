@@ -678,33 +678,33 @@
                                 "en": "Name of the label associated with the claim.",
                                 "pt": "Nome da etiqueta associada à reclamação.",
                                 "es": "Nombre de la etiqueta asociada al reclamo."
-                              },
-                              "value": {
-                                "type": "string",
-                                "example": "avoid",
-                                "description": {
-                                  "en": "Value of the label.",
-                                  "pt": "Valor da etiqueta.",
-                                  "es": "Valor de la etiqueta."
-                                }
-                              },
-                              "admin_id": {
-                                "type": "string",
-                                "example": null,
-                                "description": {
-                                  "en": "ID of the user managing the claim and who associated the label.",
-                                  "pt": "ID da pessoa usuária que está administrando a reclamação e associou a etiqueta.",
-                                  "es": "ID de la persona usuaria que está gestionando el reclamo y ha asociado la etiqueta."
-                                }
-                              },
-                              "date_created": {
-                                "type": "string",
-                                "example": "2018-03-08T09:56:00.078-0400",
-                                "description": {
-                                  "en": "Date on which the label was associated with the claim.",
-                                  "pt": "Data em que a etiqueta foi associada à reclamação.",
-                                  "es": "Fecha en que la etiqueta fue asociada al reclamo."
-                                }
+                              }
+                            },
+                            "value": {
+                              "type": "string",
+                              "example": "avoid",
+                              "description": {
+                                "en": "Value of the label.",
+                                "pt": "Valor da etiqueta.",
+                                "es": "Valor de la etiqueta."
+                              }
+                            },
+                            "admin_id": {
+                              "type": "string",
+                              "example": null,
+                              "description": {
+                                "en": "ID of the user managing the claim and who associated the label.",
+                                "pt": "ID da pessoa usuária que está administrando a reclamação e associou a etiqueta.",
+                                "es": "ID de la persona usuaria que está gestionando el reclamo y ha asociado la etiqueta."
+                              }
+                            },
+                            "date_created": {
+                              "type": "string",
+                              "example": "2018-03-08T09:56:00.078-0400",
+                              "description": {
+                                "en": "Date on which the label was associated with the claim.",
+                                "pt": "Data em que a etiqueta foi associada à reclamação.",
+                                "es": "Fecha en que la etiqueta fue asociada al reclamo."
                               }
                             }
                           }
@@ -3340,38 +3340,45 @@
                       },
                       "filter": {
                         "type": "object",
-                        "properties": {
-                          "group": {
-                            "type": "array",
-                            "items": {
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "."
+                        },
+                        "items": {
+                          "type": "array",
+                          "properties": {
+                            "group": {
                               "type": "string",
                               "description": {
                                 "en": "List of groups to which 'reason' belongs.",
                                 "pt": "Lista de grupos aos quais o 'reason' pertence",
                                 "es": "Listado de grupos al que pertenece el 'reason'."
                               }
-                            }
-                          },
-                          "site_id": {
-                            "type": "array",
-                            "items": {
+                            },
+                            "site_id": {
                               "type": "string",
                               "example": "MLA",
                               "description": {
                                 "en": "Site ID where the complaint is taking place.",
                                 "pt": "ID do site em que ocorre a reclamação.",
                                 "es": "ID del sitio donde se desarrolla el reclamo."
-                              }
+                              }  
                             }
                           }
                         }
                       },
                       "settings": {
                         "type": "object",
-                        "properties": {
-                          "allowed_flows": {
-                            "type": "array",
-                            "items": {
+                        "description": {
+                          "en": ".",
+                          "pt": ".",
+                          "es": "."
+                        },
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "allowed_flows": {
                               "type": "string",
                               "example": "returns",
                               "description": {
@@ -3379,11 +3386,8 @@
                                 "pt": ".",
                                 "es": "."
                               }
-                            }
-                          },
-                          "expected_resolutions": {
-                            "type": "array",
-                            "items": {
+                            },
+                            "expected_resolutions": {
                               "type": "string",
                               "example": "change_product",
                               "description": {
@@ -3425,11 +3429,8 @@
                                   }
                                 }
                               ]
-                            }
-                          },
-                          "rules_engine_triage": {
-                            "type": "array",
-                            "items": {
+                            },
+                            "rules_engine_triage": {
                               "type": "string",
                               "example": "repentant",
                               "description": {
@@ -4181,33 +4182,33 @@
                                 "en": "Name of the label associated with the claim.",
                                 "pt": "Nome da etiqueta associada à reclamação.",
                                 "es": "Nombre de la etiqueta asociada al reclamo."
-                              },
-                              "value": {
-                                "type": "string",
-                                "example": "avoid",
-                                "description": {
-                                  "en": "Value of the label.",
-                                  "pt": "Valor da etiqueta.",
-                                  "es": "Valor de la etiqueta."
-                                }
-                              },
-                              "admin_id": {
-                                "type": "string",
-                                "example": null,
-                                "description": {
-                                  "en": "ID of the user managing the claim and who associated the label.",
-                                  "pt": "ID da pessoa usuária que está administrando a reclamação e associou a etiqueta.",
-                                  "es": "ID de la persona usuaria que está gestionando el reclamo y ha asociado la etiqueta."
-                                }
-                              },
-                              "date_created": {
-                                "type": "string",
-                                "example": "2018-03-08T09:56:00.078-0400",
-                                "description": {
-                                  "en": "Date on which the label was associated with the claim.",
-                                  "pt": "Data em que a etiqueta foi associada à reclamação.",
-                                  "es": "Fecha en que la etiqueta fue asociada al reclamo."
-                                }
+                              }
+                            },
+                            "value": {
+                              "type": "string",
+                              "example": "avoid",
+                              "description": {
+                                "en": "Value of the label.",
+                                "pt": "Valor da etiqueta.",
+                                "es": "Valor de la etiqueta."
+                              }
+                            },
+                            "admin_id": {
+                              "type": "string",
+                              "example": null,
+                              "description": {
+                                "en": "ID of the user managing the claim and who associated the label.",
+                                "pt": "ID da pessoa usuária que está administrando a reclamação e associou a etiqueta.",
+                                "es": "ID de la persona usuaria que está gestionando el reclamo y ha asociado la etiqueta."
+                              }
+                            },
+                            "date_created": {
+                              "type": "string",
+                              "example": "2018-03-08T09:56:00.078-0400",
+                              "description": {
+                                "en": "Date on which the label was associated with the claim.",
+                                "pt": "Data em que a etiqueta foi associada à reclamação.",
+                                "es": "Fecha en que la etiqueta fue asociada al reclamo."
                               }
                             }
                           }
