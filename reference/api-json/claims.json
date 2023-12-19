@@ -3146,9 +3146,9 @@
                       "filter": {
                         "type": "object",
                         "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "."
+                          "en": "Filtering attributes of claim information.",
+                          "pt": "Atributos de filtragem de informações da reclamação.",
+                          "es": "Atributos de filtrado de la información del reclamo."
                         },
                         "items": {
                           "type": "array",
@@ -3169,80 +3169,6 @@
                                 "pt": "ID do site em que ocorre a reclamação.",
                                 "es": "ID del sitio donde se desarrolla el reclamo."
                               }  
-                            }
-                          }
-                        }
-                      },
-                      "settings": {
-                        "type": "object",
-                        "description": {
-                          "en": ".",
-                          "pt": ".",
-                          "es": "."
-                        },
-                        "items": {
-                          "type": "object",
-                          "properties": {
-                            "allowed_flows": {
-                              "type": "string",
-                              "example": "returns",
-                              "description": {
-                                "en": ".",
-                                "pt": ".",
-                                "es": "."
-                              }
-                            },
-                            "expected_resolutions": {
-                              "type": "string",
-                              "example": "change_product",
-                              "description": {
-                                "en": "Presents possible resolutions expected by the complainant. It can take one of the following values:",
-                                "pt": "Apresenta as possíveis resoluções esperadas por quem reclama. Pode assumir um dos seguintes valores:",
-                                "es": "Muestra las posibles resoluciones esperadas por quien reclama. Puede tomar alguno de los siguientes valores:"
-                              },
-                              "enum": [
-                                {
-                                  "title": "refund",
-                                  "description": {
-                                    "en": "The user expects the money to be refunded.",
-                                    "pt": "A pessoa usuária espera que o dinheiro seja devolvido.",
-                                    "es": "La persona usuaria espera que se le devuelva el dinero."
-                                  }
-                                },
-                                {
-                                  "title": "product",
-                                  "description": {
-                                    "en": "The user expects the product to be delivered.",
-                                    "pt": "A pessoa usuária espera que o produto seja entregue.",
-                                    "es": "La persona usuaria espera que el producto sea entregado."
-                                  }
-                                },
-                                {
-                                  "title": "change_product",
-                                  "description": {
-                                    "en": "The user expects the product to be exchanged.",
-                                    "pt": "A pessoa usuária espera que o produto seja trocado.",
-                                    "es": "La persona usuaria espera que el producto sea cambiado."
-                                  }
-                                },
-                                {
-                                  "title": "return_product",
-                                  "description": {
-                                    "en": "The user will wait for the return of the product to receive the refund.",
-                                    "pt": "A pessoa usuária irá esperar a devolução do produto para poder receber a devolução do dinheiro.",
-                                    "es": "La persona usuaria esperará la devolución del producto para poder recibir el dinero de vuelta."
-                                  }
-                                }
-                              ]
-                            },
-                            "rules_engine_triage": {
-                              "type": "string",
-                              "example": "repentant",
-                              "description": {
-                                "en": ".",
-                                "pt": ".",
-                                "es": "."
-                              }
                             }
                           }
                         }
