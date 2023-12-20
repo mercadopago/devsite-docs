@@ -1,3 +1,4 @@
+---
 content_section_with_media: 
  - title: Split Payments
  - message: The Split Payments solution, composed of APIs, is designed to provide Payment Service Provider (PSP) services to sellers in marketplace models. Marketplaces are e-commerce platforms that connect sellers and buyers, offering a unified environment for online sales, expanding reach, and conversion.
