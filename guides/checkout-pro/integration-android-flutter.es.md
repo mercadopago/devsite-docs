@@ -4,7 +4,7 @@
 >
 > Importante
 >
-> Antes de comenzar a integrar Checkout Pro para Mobile, deberás contar con una preferencia creada en tu backend. Si aún no lo has hecho, ve a [Crear preferencias.](/developers/es/docs/checkout-pro/integrate-preferences)
+> Antes de comenzar a integrar Checkout Pro para Mobile, deberás contar con una preferencia creada en tu backend. Si aún no lo has hecho, ve a [Crear preferencias](/developers/es/docs/checkout-pro/integrate-preferences).
 
 Para integrar Checkout Pro en una aplicación móvil desarrollada con Flutter, deberás mostrar el checkout web dentro de la aplicación. Para lograr esto, existen varias opciones, entre las cuales se destaca el uso de Custom Tabs. Esta tecnología te permitirá abrir páginas web en un navegador nativo integrado en la aplicación, lo que brinda una experiencia de navegación más fluida y coherente para los usuarios.
 

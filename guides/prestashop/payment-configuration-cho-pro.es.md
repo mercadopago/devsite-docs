@@ -19,9 +19,8 @@ Para integrar Checkout Pro, sigue los pasos a continuación.
 3. Selecciona las **cuotas máximas** que deseas ofrecer en tu tienda.
 4. [Configura](https://www.mercadopago[FAKER][URL][DOMAIN]/costs-section#from-section=menu) la tarifa que se pagará en cada compra y además ofrecer cuotas sin intereses a tus clientes.
 5. Selecciona si deseas o no que el cliente **regrese automáticamente** a tu tienda después de completar el pago.
-6. Define si los clientes tendrán acceso a **modal checkout**, una forma de pago de Mercado Pago sin salir de tu tienda. Si esta opción está deshabilitada, los compradores serán redirigidos a otra página.
-7. Si lo deseas, activa el **modo binario** cuando no desees dejar los pagos en estado pendiente o en revisión. Con el modo binario, los pagos se aceptarán o rechazarán automáticamente.
-8. Indica el plazo en el que se guardarán las preferencias de pago del cliente sin que el cliente tenga que volver a introducirlas.
+6. Si lo deseas, activa el **modo binario** cuando no desees dejar los pagos en estado pendiente o en revisión. Con el modo binario, los pagos se aceptarán o rechazarán automáticamente.
+7. Indica el plazo en el que se guardarán las preferencias de pago del cliente sin que el cliente tenga que volver a introducirlas.
 
 ¡Listo! Checkout Pro está listo para recibir pagos de tu tienda.
 

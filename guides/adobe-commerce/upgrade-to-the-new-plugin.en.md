@@ -23,7 +23,6 @@ To update your plugin by installing the new version, simply follow the installat
 | Installments **with** interest              | ✅          | ✅          |
 | Secure Fields / PCI                        | ✅          | ✅          |
 | Installments **without** interest          | ✅          | ✅          |
-| Checkout Pro Modal                         | ✅          | ❌          |
 | Buy Now Pay Later - Mercado Crédito        | ✅          | ❌          |
 | Payments with 2 cards                      | ✅          | ❌          |
 | Refunds directly through the platform      | ✅          | ❌          |

@@ -24,6 +24,14 @@ O relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco
 > Os relatórios gerados a partir de 1º de janeiro de 2023 vão apresentar suas movimentações em ordem cronológica, assim, você pode identificá-las mais facilmente e controlar ainda melhor as finanças dos seus negócios. [Confira o novo formato do relatório.](https://bit.ly/3UivgKt)
 ------------
 
+----[mlm]----
+> WARNING
+>
+> Importante
+>
+> Os relatórios gerados a partir de 3 de outubro vão apresentar suas movimentações em ordem cronológica, assim, você pode identificá-las mais facilmente e controlar ainda melhor as finanças dos seus negócios. [Confira o novo formato do relatório.](https://bit.ly/3QiCD2f)
+------------
+
 ## Como baixar o relatório?
 
 Lembre-se de que a geração deste relatório leva alguns minutos, dependendo de quantas informações você queira incluir nele. Nem sempre ele estará pronto de imediato e, enquanto estiver sendo gerado, você verá na tela o status *Em preparação*.
