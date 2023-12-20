@@ -11,7 +11,22 @@
             "pt": "Este endpoint permite obter, por meio de um token válido, detalhes das reclamações como, por exemplo, informaçõees sobre as pessoas usuárias envolvidas e sobre o pedido que gerou a reclamação",
             "es": "Este endpoint permite obtener, a través de un token válido, detalles de los reclamos como, por ejemplo, información sobre las personas usuarias involucradas y el pedido que generó el reclamo"
           },
-          "parameters": [],
+          "parameters": [
+            {
+              "in": "path",
+              "name": "claim_id",
+              "required": true,
+              "schema": {
+                "type": "number",
+                "example": 5039218470
+              },
+              "description": {
+                "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
+                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
+              }
+            }
+          ],
           "responses": {
             "200": {
               "description": {
@@ -28,9 +43,9 @@
                         "type": "number",
                         "example": 5033102536,
                         "description": {
-                          "en": "Claim ID.",
-                          "pt": "ID da reclamação.",
-                          "es": "ID del reclamo."
+                          "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
+                          "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                          "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
                         }
                       },
                       "type": {
@@ -228,10 +243,36 @@
                         "type": "string",
                         "example": "PNR4071",
                         "description": {
-                          "en": "Reason/motive for which the claim was created.",
-                          "pt": "Razão/motivo pelo qual a reclamação foi criada.",
-                          "es": "Razón/motivo por el cual se creó el reclamo."
-                        }
+                          "en": "Reason ID of the claim. A claim can be created for three general reasons:",
+                          "pt": "ID da 'reason' da reclamação. Uma reclamação pode ser criada por três motivos gerais:",
+                          "es": "ID de la 'reason' del reclamo. Se puede crear un reclamo por tres motivos generales:"
+                        },
+                        "enum": [
+                          {
+                            "title": "PNR",
+                            "description": {
+                              "en": "Product not received.",
+                              "pt": "Produto não recebido.",
+                              "es": "Producto no recibido."
+                            }
+                          },
+                          {
+                            "title": "PDD",
+                            "description": {
+                              "en": "Different or defective product.",
+                              "pt": "Produto diferente ou defeituoso",
+                              "es": "Producto diferente o defectuoso."
+                            }
+                          },
+                          {
+                            "title": "CS",
+                            "description": {
+                              "en": "Purchase cancellation.",
+                              "pt": "Cancelamento de compra.",
+                              "es": "Cancelación de la compra."
+                            }
+                          }
+                        ]
                       },
                       "quantity_type": {
                         "type": "string",
@@ -702,7 +743,65 @@
                           "en": "ID of the site where the claim occurs.",
                           "pt": "ID do site em que ocorre a reclamação.",
                           "es": "ID del sitio donde se desarrolla el reclamo."
-                        }
+                        },
+                        "enum": [
+                          {
+                            "title": "MCO",
+                            "description": {
+                              "en": "Mercado Libre Colombia",
+                              "pt": "Mercado Livre Colômbia",
+                              "es": "Mercado Libre Colombia"
+                            }
+                          },
+                          {
+                            "title": "MLA",
+                            "description": {
+                              "en": "Mercado Livre Argentina",
+                              "pt": "Mercado Libre Argentina",
+                              "es": "Mercado Libre Argentina"
+                            }
+                          },
+                          {
+                            "title": "MLB",
+                            "description": {
+                              "en": "Mercado Libre Brasil",
+                              "pt": "Mercado Livre Brasil",
+                              "es": "Mercado Libre Brasil"
+                            }
+                          },
+                          {
+                            "title": "MLC",
+                            "description": {
+                              "en": "Mercado Libre Chile",
+                              "pt": "Mercado Livre Chile",
+                              "es": "Mercado Libre Chile"
+                            }
+                          },
+                          {
+                            "title": "MLM",
+                            "description": {
+                              "en": "Mercado Libre México",
+                              "pt": "Mercado Livre México",
+                              "es": "Mercado Libre México"
+                            }
+                          },
+                          {
+                            "title": "MLU",
+                            "description": {
+                              "en": "Mercado Libre Uruguay",
+                              "pt": "Mercado Livre Uruguai",
+                              "es": "Mercado Libre Uruguay"
+                            }
+                          },
+                          {
+                            "title": "MPE",
+                            "description": {
+                              "en": "Mercado Libre Perú",
+                              "pt": "Mercado Livre Perú",
+                              "es": "Mercado Libre Perú"
+                            }
+                          }
+                        ]
                       },
                       "date_created": {
                         "type": "string",
@@ -755,9 +854,9 @@
                 "example": 5039218470
               },
               "description": {
-                "en": "Claim ID is a unique identifier used to reference a specific claim in the system. Essential for tracking and managing individual claims.",
-                "pt": "O ID da reclamação é um identificador único usado para referenciar uma reclamação específica no sistema. Essencial para rastrear e gerenciar reclamações específicas.",
-                "es": "El ID del reclamo es un identificador único utilizado para referenciar un reclamo específico en el sistema. Esencial para el seguimiento y la gestión de reclamos individuales."
+                "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
+                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
               }
             },
             {
@@ -1050,9 +1149,9 @@
                               "type": "number",
                               "example": 5033102536,
                               "description": {
-                                "en": "Claim ID.",
-                                "pt": "ID da reclamação.",
-                                "es": "ID del reclamo."
+                                "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
+                                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                                "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
                               }
                             },
                             "type": {
@@ -1250,10 +1349,36 @@
                               "type": "string",
                               "example": "PNR4071",
                               "description": {
-                                "en": "Reason/motive for which the claim was created.",
-                                "pt": "Razão/motivo pelo qual a reclamação foi criada.",
-                                "es": "Razón/motivo por el cual se creó el reclamo."
-                              }
+                                "en": "Reason ID of the claim. A claim can be created for three general reasons:",
+                                "pt": "ID da 'reason' da reclamação. Uma reclamação pode ser criada por três motivos gerais:",
+                                "es": "ID de la 'reason' del reclamo. Se puede crear un reclamo por tres motivos generales:"
+                              },
+                              "enum": [
+                                {
+                                  "title": "PNR",
+                                  "description": {
+                                    "en": "Product not received.",
+                                    "pt": "Produto não recebido.",
+                                    "es": "Producto no recibido."
+                                  }
+                                },
+                                {
+                                  "title": "PDD",
+                                  "description": {
+                                    "en": "Different or defective product.",
+                                    "pt": "Produto diferente ou defeituoso",
+                                    "es": "Producto diferente o defectuoso."
+                                  }
+                                },
+                                {
+                                  "title": "CS",
+                                  "description": {
+                                    "en": "Purchase cancellation.",
+                                    "pt": "Cancelamento de compra.",
+                                    "es": "Cancelación de la compra."
+                                  }
+                                }
+                              ]
                             },
                             "quantity_type": {
                               "type": "string",
@@ -1531,7 +1656,65 @@
                                 "en": "ID of the site where the claim occurs.",
                                 "pt": "ID do site em que ocorre a reclamação.",
                                 "es": "ID del sitio donde se desarrolla el reclamo."
-                              }
+                              },
+                              "enum": [
+                                {
+                                  "title": "MCO",
+                                  "description": {
+                                    "en": "Mercado Libre Colombia",
+                                    "pt": "Mercado Livre Colômbia",
+                                    "es": "Mercado Libre Colombia"
+                                  }
+                                },
+                                {
+                                  "title": "MLA",
+                                  "description": {
+                                    "en": "Mercado Livre Argentina",
+                                    "pt": "Mercado Libre Argentina",
+                                    "es": "Mercado Libre Argentina"
+                                  }
+                                },
+                                {
+                                  "title": "MLB",
+                                  "description": {
+                                    "en": "Mercado Libre Brasil",
+                                    "pt": "Mercado Livre Brasil",
+                                    "es": "Mercado Libre Brasil"
+                                  }
+                                },
+                                {
+                                  "title": "MLC",
+                                  "description": {
+                                    "en": "Mercado Libre Chile",
+                                    "pt": "Mercado Livre Chile",
+                                    "es": "Mercado Libre Chile"
+                                  }
+                                },
+                                {
+                                  "title": "MLM",
+                                  "description": {
+                                    "en": "Mercado Libre México",
+                                    "pt": "Mercado Livre México",
+                                    "es": "Mercado Libre México"
+                                  }
+                                },
+                                {
+                                  "title": "MLU",
+                                  "description": {
+                                    "en": "Mercado Libre Uruguay",
+                                    "pt": "Mercado Livre Uruguai",
+                                    "es": "Mercado Libre Uruguay"
+                                  }
+                                },
+                                {
+                                  "title": "MPE",
+                                  "description": {
+                                    "en": "Mercado Libre Perú",
+                                    "pt": "Mercado Livre Perú",
+                                    "es": "Mercado Libre Perú"
+                                  }
+                                }
+                              ]
                             },
                             "date_created": {
                               "type": "string",
@@ -1577,7 +1760,22 @@
             "pt": "Este endpoint permite buscar, por meio de um token válido, as mensagens associados a uma reclamação",
             "es": "Este endpoint permite buscar, mediante un token válido, los mensajes asociados a un reclamo"
           },
-          "parameters": [],
+          "parameters": [
+            {
+              "in": "path",
+              "name": "claim_id",
+              "required": true,
+              "schema": {
+                "type": "number",
+                "example": 5039218470
+              },
+              "description": {
+                "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
+                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
+              }
+            }
+          ],
           "responses": {
             "200": {
               "description": {
@@ -1844,6 +2042,20 @@
           },
           "parameters": [
             {
+              "in": "path",
+              "name": "claim_id",
+              "required": true,
+              "schema": {
+                "type": "number",
+                "example": 5039218470
+              },
+              "description": {
+                "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
+                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
+              }
+            },
+            {
               "in": "formData",
               "name": "file",
               "schema": {
@@ -1920,6 +2132,20 @@
             "es": "Este endpoint permite enviar y asociar al reclamo, mediante un token válido, mensajes con archivos de imágenes adjuntos."
           },
           "parameters": [
+            {
+              "in": "path",
+              "name": "claim_id",
+              "required": true,
+              "schema": {
+                "type": "number",
+                "example": 5039218470
+              },
+              "description": {
+                "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
+                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
+              }
+            },
             {
               "in": "query",
               "name": "application_id",
@@ -2021,7 +2247,36 @@
             "pt": "Este endpoint permite, por meio de um token válido, fazer download de arquivos de imagem anexados as mensagens associados à reclamação",
             "es": "Este endpoint permite, mediante un token válido, descargar archivos de imagen adjuntos a los mensajes asociados al reclamo"
           },
-          "parameters": [],
+          "parameters": [
+            {
+              "in": "path",
+              "name": "claim_id",
+              "required": true,
+              "schema": {
+                "type": "number",
+                "example": 5039218470
+              },
+              "description": {
+                "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
+                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
+              }
+            },
+            {
+              "in": "path",
+              "name": "attach_id",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "0f2d81a2-c489-435e-96af-59688ad3d8f4_305860144.jpeg"
+              },
+              "description": {
+                "en": "Identifier of the attached file.",
+                "pt": "Identificador do arquivo anexado.",
+                "es": "Identificador del archivo adjunto."
+              }
+            }
+          ],
           "responses": {
             "200": {
               "description": {
@@ -2048,7 +2303,36 @@
             "pt": "Este endpoint permite buscar, mediante un token válido, arquivos de imagem anexados à mensagem associada à reclamaçao",
             "es": "Este endpoint permite buscar, mediante un token válido, archivos de imagen adjuntos al mensaje asociado a la reclamación"
           },
-          "parameters": [],
+          "parameters": [
+            {
+              "in": "path",
+              "name": "claim_id",
+              "required": true,
+              "schema": {
+                "type": "number",
+                "example": 5039218470
+              },
+              "description": {
+                "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
+                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
+              }
+            },
+            {
+              "in": "path",
+              "name": "attach_id",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "0f2d81a2-c489-435e-96af-59688ad3d8f4_305860144.jpeg"
+              },
+              "description": {
+                "en": "Identifier of the attached file.",
+                "pt": "Identificador do arquivo anexado.",
+                "es": "Identificador del archivo adjunto."
+              }
+            }
+          ],
           "responses": {
             "200": {
               "description": {
@@ -2139,7 +2423,22 @@
             "pt": "Este endpoint permite solicitar, mediante um token válido, uma mediação na reclamação aberta pela pessoa usuária",
             "es": "Este endpoint permite buscar, mediante un token válido, solicitar mediación en el reclamo abierto por la persona usuaria"
           },
-          "parameters": [],
+          "parameters": [
+            {
+              "in": "path",
+              "name": "claim_id",
+              "required": true,
+              "schema": {
+                "type": "number",
+                "example": 5039218470
+              },
+              "description": {
+                "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
+                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
+              }
+            }
+          ],
           "responses": {
             "200": {
               "description": {
@@ -2193,7 +2492,22 @@
               "pt": "Este endpoint permite visualizar, mediante un token válido, resoluções esperadas pela pessoa usuária em sua reclamação",
               "es": "Este endpoint permite visualizar, mediante un token válido, las resoluciones esperadas por la persona usuaria en su reclamo"
           },
-          "parameters": [],
+          "parameters": [
+            {
+              "in": "path",
+              "name": "claim_id",
+              "required": true,
+              "schema": {
+                "type": "number",
+                "example": 5039218470
+              },
+              "description": {
+                "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
+                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
+              }
+            }
+          ],
           "responses": {
             "200": {
               "description": {
@@ -2343,7 +2657,22 @@
             "pt": "Este endpoint permite obter, mediante um token válido, evidências da reclamação como, por exemplo, informações de envio do pedido e de anexos de imagens associados à reclamação",
             "es": "Este endpoint permite obtener, mediante un token válido, evidencias del reclamo, como información de envío del pedido y archivos de imágenes adjuntos asociados al reclamo"
           },
-          "parameters": [],
+          "parameters": [
+            {
+              "in": "path",
+              "name": "claim_id",
+              "required": true,
+              "schema": {
+                "type": "number",
+                "example": 5039218470
+              },
+              "description": {
+                "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
+                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
+              }
+            }
+          ],
           "responses": {
             "200": {
               "description": {
@@ -2557,7 +2886,22 @@
             "pt": "Este endpoint permite carregar, mediante um token válido, evidências de envio do pedido. Para uma entrega por correio, os campos 'shipping_company_name' e 'date_shipped' são obrigatórios, enquanto para uma entrega por encomenda os campos obrigatórios são 'shipping_company_name', 'destination_agency', 'date_shipped' e 'receiver_name'. Para entrega por e-mail, os campos 'receiver_email' e 'date_shipped' são obrigatórios",
             "es": "Este endpoint permite cargar, mediante un token válido, evidencias de envío del pedido. Para una entrega por correo son obligatorios los campos 'shipping_company_name' y 'date_shipped', mientras una entrega por encomienda los campos obligatorios son 'shipping_company_name', 'destination_agency', 'date_shipped' y 'receiver_name'. Para entrega por email son obligatorios los campos 'receiver_email' y 'date_shipped'"
           },
-          "parameters": [],
+          "parameters": [
+            {
+              "in": "path",
+              "name": "claim_id",
+              "required": true,
+              "schema": {
+                "type": "number",
+                "example": 5039218470
+              },
+              "description": {
+                "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
+                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
+              }
+            }
+          ],
           "requestBody": {
             "content": {
               "application/json": {
@@ -2899,7 +3243,22 @@
             "pt": "Este endpoint permite visualizar, por meio de um token válido, o histórico de estados e cenários pelos quais a reclamação passou. Também será possível consultar o histórico de ações tomadas pelas pessoas responsáveis pela reclamação",
             "es": "Este endpoint permite visualizar, a través de un token válido, el historial de estados y escenarios por los que ha pasado el reclamo. También será posible consultar el historial de acciones tomadas por los responsables del reclamo"
           },
-          "parameters": [],
+          "parameters": [
+            {
+              "in": "path",
+              "name": "claim_id",
+              "required": true,
+              "schema": {
+                "type": "number",
+                "example": 5039218470
+              },
+              "description": {
+                "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
+                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
+              }
+            }
+          ],
           "responses": {
             "200": {
               "description": {
@@ -3048,11 +3407,124 @@
             "checkout-pro"
           ],
           "description": {
-            "en": "This endpoint allows you to view, through a valid token, the 'reason' why the claim was created, so that based on its classification, certain behaviors are allowed. A claim can be created for three general reasons: PNR (Product not received), PDD (Different or defective product) or CS (Purchase cancellation)",
-            "pt": "Este endpoint permite visualizar, a través de un token válido, o motivo ('reason') pelo qual uma reclamação foi criada, de forma que com base na sua classificação sejam permitidos determinados comportamentos. Uma reclamação pode ser criada por três motivos gerais: PNR (Produto não recebido), PDD (Produto diferente ou defeituoso) ou CS (Cancelamento de compra)",
-            "es": "Este endpoint permite visualizar, mediante un token válido, el motivo ('reason') por el cual se ha creado un reclamo, de manera que en base a su tipificación se permiten determinados comportamientos. Se puede crear un reclamo por tres motivos generales: PNR (Producto no recibido), PDD (Producto diferente o defectuoso) o CS (Cancelación de la compra)"
+            "en": "This endpoint allows you to view, through a valid token, the 'reason' why the claim was created, so that based on its classification, certain behaviors are allowed.",
+            "pt": "Este endpoint permite visualizar, a través de un token válido, o motivo ('reason') pelo qual uma reclamação foi criada, de forma que com base na sua classificação sejam permitidos determinados comportamentos.",
+            "es": "Este endpoint permite visualizar, mediante un token válido, el motivo ('reason') por el cual se ha creado un reclamo, de manera que en base a su tipificación se permiten determinados comportamientos."
           },
-          "parameters": [],
+          "parameters": [
+            {
+              "in": "path",
+              "name": "site_id",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "MLA"
+              },
+              "description": {
+                "en": "ID of the site where the claim occurs.",
+                "pt": "ID do site em que ocorre a reclamação.",
+                "es": "ID del sitio donde se desarrolla el reclamo."
+              },
+              "enum": [
+                {
+                  "title": "MCO",
+                  "description": {
+                    "en": "Mercado Libre Colombia",
+                    "pt": "Mercado Livre Colômbia",
+                    "es": "Mercado Libre Colombia"
+                  }
+                },
+                {
+                  "title": "MLA",
+                  "description": {
+                    "en": "Mercado Livre Argentina",
+                    "pt": "Mercado Libre Argentina",
+                    "es": "Mercado Libre Argentina"
+                  }
+                },
+                {
+                  "title": "MLB",
+                  "description": {
+                    "en": "Mercado Libre Brasil",
+                    "pt": "Mercado Livre Brasil",
+                    "es": "Mercado Libre Brasil"
+                  }
+                },
+                {
+                  "title": "MLC",
+                  "description": {
+                    "en": "Mercado Libre Chile",
+                    "pt": "Mercado Livre Chile",
+                    "es": "Mercado Libre Chile"
+                  }
+                },
+                {
+                  "title": "MLM",
+                  "description": {
+                    "en": "Mercado Libre México",
+                    "pt": "Mercado Livre México",
+                    "es": "Mercado Libre México"
+                  }
+                },
+                {
+                  "title": "MLU",
+                  "description": {
+                    "en": "Mercado Libre Uruguay",
+                    "pt": "Mercado Livre Uruguai",
+                    "es": "Mercado Libre Uruguay"
+                  }
+                },
+                {
+                  "title": "MPE",
+                  "description": {
+                    "en": "Mercado Libre Perú",
+                    "pt": "Mercado Livre Perú",
+                    "es": "Mercado Libre Perú"
+                  }
+                }
+              ]
+            },
+            {
+              "in": "path",
+              "name": "reason_id",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "PNR3430"
+              },
+              "description": {
+                "en": "Reason ID of the claim. A claim can be created for three general reasons:",
+                "pt": "ID da 'reason' da reclamação. Uma reclamação pode ser criada por três motivos gerais:",
+                "es": "ID de la 'reason' del reclamo. Se puede crear un reclamo por tres motivos generales:"
+              },
+              "enum": [
+                {
+                  "title": "PNR",
+                  "description": {
+                    "en": "Product not received.",
+                    "pt": "Produto não recebido.",
+                    "es": "Producto no recibido."
+                  }
+                },
+                {
+                  "title": "PDD",
+                  "description": {
+                    "en": "Different or defective product.",
+                    "pt": "Produto diferente ou defeituoso",
+                    "es": "Producto diferente o defectuoso."
+                  }
+                },
+                {
+                  "title": "CS",
+                  "description": {
+                    "en": "Purchase cancellation.",
+                    "pt": "Cancelamento de compra.",
+                    "es": "Cancelación de la compra."
+                  }
+                }
+              ]
+            }
+          ],
           "responses": {
             "200": {
               "description": {
@@ -3069,10 +3541,36 @@
                         "type": "string",
                         "example": "PDD1",
                         "description": {
-                          "en": "ID of the reason for the claim.",
-                          "pt": "ID do motivo da reclamação.",
-                          "es": "ID del motivo del reclamo."
-                        }
+                          "en": "Reason ID of the claim. A claim can be created for three general reasons:",
+                          "pt": "ID da 'reason' da reclamação. Uma reclamação pode ser criada por três motivos gerais:",
+                          "es": "ID de la 'reason' del reclamo. Se puede crear un reclamo por tres motivos generales:"
+                        },
+                        "enum": [
+                          {
+                            "title": "PNR",
+                            "description": {
+                              "en": "Product not received.",
+                              "pt": "Produto não recebido.",
+                              "es": "Producto no recibido."
+                            }
+                          },
+                          {
+                            "title": "PDD",
+                            "description": {
+                              "en": "Different or defective product.",
+                              "pt": "Produto diferente ou defeituoso",
+                              "es": "Producto diferente o defectuoso."
+                            }
+                          },
+                          {
+                            "title": "CS",
+                            "description": {
+                              "en": "Purchase cancellation.",
+                              "pt": "Cancelamento de compra.",
+                              "es": "Cancelación de la compra."
+                            }
+                          }
+                        ]
                       },
                       "flow": {
                         "type": "string",
@@ -3165,10 +3663,68 @@
                               "type": "string",
                               "example": "MLA",
                               "description": {
-                                "en": "Site ID where the complaint is taking place.",
+                                "en": "ID of the site where the claim occurs.",
                                 "pt": "ID do site em que ocorre a reclamação.",
                                 "es": "ID del sitio donde se desarrolla el reclamo."
-                              }  
+                              },
+                              "enum": [
+                                {
+                                  "title": "MCO",
+                                  "description": {
+                                    "en": "Mercado Libre Colombia",
+                                    "pt": "Mercado Livre Colômbia",
+                                    "es": "Mercado Libre Colombia"
+                                  }
+                                },
+                                {
+                                  "title": "MLA",
+                                  "description": {
+                                    "en": "Mercado Livre Argentina",
+                                    "pt": "Mercado Libre Argentina",
+                                    "es": "Mercado Libre Argentina"
+                                  }
+                                },
+                                {
+                                  "title": "MLB",
+                                  "description": {
+                                    "en": "Mercado Libre Brasil",
+                                    "pt": "Mercado Livre Brasil",
+                                    "es": "Mercado Libre Brasil"
+                                  }
+                                },
+                                {
+                                  "title": "MLC",
+                                  "description": {
+                                    "en": "Mercado Libre Chile",
+                                    "pt": "Mercado Livre Chile",
+                                    "es": "Mercado Libre Chile"
+                                  }
+                                },
+                                {
+                                  "title": "MLM",
+                                  "description": {
+                                    "en": "Mercado Libre México",
+                                    "pt": "Mercado Livre México",
+                                    "es": "Mercado Libre México"
+                                  }
+                                },
+                                {
+                                  "title": "MLU",
+                                  "description": {
+                                    "en": "Mercado Libre Uruguay",
+                                    "pt": "Mercado Livre Uruguai",
+                                    "es": "Mercado Libre Uruguay"
+                                  }
+                                },
+                                {
+                                  "title": "MPE",
+                                  "description": {
+                                    "en": "Mercado Libre Perú",
+                                    "pt": "Mercado Livre Perú",
+                                    "es": "Mercado Libre Perú"
+                                  }
+                                }
+                              ]
                             }
                           }
                         }
@@ -3264,9 +3820,9 @@
                         "type": "number",
                         "example": 5033102536,
                         "description": {
-                          "en": "Claim ID.",
-                          "pt": "ID da reclamação.",
-                          "es": "ID del reclamo."
+                          "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
+                          "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                          "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
                         }
                       },
                       "type": {
@@ -3464,10 +4020,36 @@
                         "type": "string",
                         "example": "PNR4071",
                         "description": {
-                          "en": "Reason/motive for which the claim was created.",
-                          "pt": "Razão/motivo pelo qual a reclamação foi criada.",
-                          "es": "Razón/motivo por el cual se creó el reclamo."
-                        }
+                          "en": "Reason ID of the claim. A claim can be created for three general reasons:",
+                          "pt": "ID da 'reason' da reclamação. Uma reclamação pode ser criada por três motivos gerais:",
+                          "es": "ID de la 'reason' del reclamo. Se puede crear un reclamo por tres motivos generales:"
+                        },
+                        "enum": [
+                          {
+                            "title": "PNR",
+                            "description": {
+                              "en": "Product not received.",
+                              "pt": "Produto não recebido.",
+                              "es": "Producto no recibido."
+                            }
+                          },
+                          {
+                            "title": "PDD",
+                            "description": {
+                              "en": "Different or defective product.",
+                              "pt": "Produto diferente ou defeituoso",
+                              "es": "Producto diferente o defectuoso."
+                            }
+                          },
+                          {
+                            "title": "CS",
+                            "description": {
+                              "en": "Purchase cancellation.",
+                              "pt": "Cancelamento de compra.",
+                              "es": "Cancelación de la compra."
+                            }
+                          }
+                        ]
                       },
                       "quantity_type": {
                         "type": "string",
@@ -3938,7 +4520,65 @@
                           "en": "ID of the site where the claim occurs.",
                           "pt": "ID do site em que ocorre a reclamação.",
                           "es": "ID del sitio donde se desarrolla el reclamo."
-                        }
+                        },
+                        "enum": [
+                          {
+                            "title": "MCO",
+                            "description": {
+                              "en": "Mercado Libre Colombia",
+                              "pt": "Mercado Livre Colômbia",
+                              "es": "Mercado Libre Colombia"
+                            }
+                          },
+                          {
+                            "title": "MLA",
+                            "description": {
+                              "en": "Mercado Livre Argentina",
+                              "pt": "Mercado Libre Argentina",
+                              "es": "Mercado Libre Argentina"
+                            }
+                          },
+                          {
+                            "title": "MLB",
+                            "description": {
+                              "en": "Mercado Libre Brasil",
+                              "pt": "Mercado Livre Brasil",
+                              "es": "Mercado Libre Brasil"
+                            }
+                          },
+                          {
+                            "title": "MLC",
+                            "description": {
+                              "en": "Mercado Libre Chile",
+                              "pt": "Mercado Livre Chile",
+                              "es": "Mercado Libre Chile"
+                            }
+                          },
+                          {
+                            "title": "MLM",
+                            "description": {
+                              "en": "Mercado Libre México",
+                              "pt": "Mercado Livre México",
+                              "es": "Mercado Libre México"
+                            }
+                          },
+                          {
+                            "title": "MLU",
+                            "description": {
+                              "en": "Mercado Libre Uruguay",
+                              "pt": "Mercado Livre Uruguai",
+                              "es": "Mercado Libre Uruguay"
+                            }
+                          },
+                          {
+                            "title": "MPE",
+                            "description": {
+                              "en": "Mercado Libre Perú",
+                              "pt": "Mercado Livre Perú",
+                              "es": "Mercado Libre Perú"
+                            }
+                          }
+                        ]
                       },
                       "date_created": {
                         "type": "string",
