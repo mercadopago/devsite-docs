@@ -3,6 +3,7 @@ content_section_with_media:
  - title: Split de Pagamentos
  - message: A solução de Split de Pagamentos, composta por APIs, foi projetada para fornecer serviços de Provedor de Serviços de Pagamento (PSP) a vendedores em modelos de marketplace. Os marketplaces são plataformas de comércio eletrônico que conectam vendedores e compradores, oferecendo um ambiente unificado para vendas online, ampliando o alcance e a conversão.
  - media_image: /split-payment/split-de-pago-01.png
+ 
 ---
 
 --- mini_landing_separator ---

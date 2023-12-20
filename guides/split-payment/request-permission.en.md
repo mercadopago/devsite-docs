@@ -19,4 +19,6 @@ To initiate the authorization process and request permissions from your users to
 
 > NOTE
 >
+> Nota
+>
 > The `AUTHORIZATION_CODE` is valid for 10 minutes and will be used to create the necessary credentials.
