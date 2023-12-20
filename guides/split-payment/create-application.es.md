@@ -20,4 +20,4 @@
 
 Después de crear la aplicación, es necesario dirigirse a la pantalla de edición para completar el campo de Redirect URL (en las solicitudes de OAuth se muestra como redirect_uri), el cual debe contener la URL del sitio del marketplace donde se enviará el token del vendedor al completar el proceso de vinculación.
 
-![Redirect URL](/images/split-payment/redirect-url-pt.png)
+![Redirect URL](/images/split-payment/redirect-url-es.png)
