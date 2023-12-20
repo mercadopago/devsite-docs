@@ -1,3 +1,9 @@
+> WARNING
+>
+> Importante
+>
+> Esta documentación es sólo para uso por parte del equipo interno, ya que es un producto exclusivo o fue deprecado. Para más detalles, comunícate con el equipo comercial o de integraciones.
+
 # Integrar Secure Payments
 
 Para utilizar Secure Payments, deberás hacerlo a través de pedidos a las siguientes APIs. Ten en cuenta que deberás adicionar en el body de la petición tanto los datos de la tarjeta como la información necesaria para realizar el pago.
@@ -7,7 +13,7 @@ Para utilizar Secure Payments, deberás hacerlo a través de pedidos a las sigui
 | Staging (pruebas) | `https://api.mercadopago.com/v1/secure_payments/zeta` |
 | Producción | `https://api.mercadopago.com/v1/secure_payments/ ` |
 
-## Pagos online
+## Integrar pagos online
 
 A continuación, te compartimos un pedido de ejemplo. Ten en cuenta que deberás cambiar el valor del campo `token` por tu Access Token.
 
@@ -54,7 +60,7 @@ curl -X POST 'https://api.mercadopago.com/v1/secure_payments/zeta?access_token=T
 }
 ```
 
-## Pagos presenciales
+## Integrar pagos presenciales
 
 Es posible realizar un pago presencial en un dispositivo MPOST (dispositivo captador de dinero) que cuente con la información de la tarjeta cifrada. 
 
