@@ -4,7 +4,7 @@ To initiate the authorization process and request permissions from your users to
 
 1. Redirect your users to the following URL to authorize sales management:
 
-    ```
+    ```curl
     https://auth.mercadopago.com.ar/authorization?client_id=<APP_ID>&response_type=code&platform_id=mp&redirect_uri=<REDIRECT_URI>
     ```
 
@@ -13,7 +13,7 @@ To initiate the authorization process and request permissions from your users to
 
 2. Once users authorize sales management, you will receive an authorization code in the URL you specified in the previous step. This code will be in the `code` parameter as follows:
 
-    ```
+    ```curl
     http://<REDIRECT_URI>?code=AUTHORIZATION_CODE
     ```
 

@@ -2,14 +2,14 @@
 content_section_with_media: 
  - title: Split de Pagos
  - message: La solución de Split de Pagos, compuesta por APIs, está diseñada para proporcionar servicios de Proveedor de Servicios de Pago (PSP) a vendedores en modelos de marketplace. Los marketplaces son plataformas de comercio electrónico que conectan vendedores y compradores, ofreciendo un entorno unificado para ventas en línea, ampliando el alcance y la conversión. 
- - media_image: /adobe-commerce/magento2-landing.png 
+ - media_image: /split-payment/split-de-pago-01.png
 ---
 
 --- mini_landing_separator ---
 
 >>>> Disponibilidad por país <<<<
 ---
-available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
+available_countries: mla, mlb, mlm, mlc, mpe
 
 ---
 
@@ -18,7 +18,7 @@ bullet_section_with_media:
  - type: normal
  - title: Gestión
  - message: Además de estructurar transacciones, algunos marketplaces gestionan aspectos como la disposición de productos, métodos de pago y envío, optimizando las ventas y simplificando la gestión comercial.
- - image: /wallet-connect/wallet-connect-landing.png
+ - image: /split-payment/split-de-pago-02.png
 ---
 
 ---
@@ -33,5 +33,5 @@ bullet_section_with_media:
  - benefit_message: Disminuye tus costos operativos por medio de la automatización y gestión eficiente de tus pagos y comisiones. Split de Pagos hace la división del dinero de la transacción entre las partes.
  - benefit_title: Aprovecha el ecosistema Mercado Pago
  - benefit_message: Contarás con el respaldo de la plataforma de productos financieros y de venta de Mercado Libre y Mercado Pago, usada por millones de usuarios en América Latina.
- - image: /checkout-bricks/cho-bricks-landing-v4.png
+ - image: /split-payment/split-de-pago-03.png
 ---

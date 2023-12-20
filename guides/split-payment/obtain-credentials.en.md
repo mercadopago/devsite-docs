@@ -39,7 +39,7 @@ curl -X POST \
 The response includes:
 - `access_token` and `public_key` of the linked seller.
 - `refresh_token`, which you should use to periodically renew the linkages.
-- `user_id`, equal to the `collector_id` used to capture payments specifically in the node.
+- `user_id`, equal to the `collector_id` used to capture payments.
 
 > WARNING
 >

@@ -4,7 +4,7 @@ Para iniciar o processo de autorização e solicitar permissões aos seus usuár
 
 1. Redirecione seus usuários para a seguinte URL para autorizar o gerenciamento de vendas:
 
-    ```
+    ```curl
     https://auth.mercadopago.com.ar/authorization?client_id=<APP_ID>&response_type=code&platform_id=mp&redirect_uri=<REDIRECT_URI>
     ```
 
@@ -13,7 +13,7 @@ Para iniciar o processo de autorização e solicitar permissões aos seus usuár
 
 2. Assim que os usuários autorizarem o gerenciamento de vendas, você receberá um código de autorização na URL que especificou no passo anterior. Este código estará no parâmetro `code` da seguinte forma:
 
-    ```
+    ```curl
     http://<REDIRECT_URI>?code=AUTHORIZATION_CODE
     ```
 

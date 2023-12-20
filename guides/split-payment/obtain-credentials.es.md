@@ -39,7 +39,7 @@ curl -X POST \
 La respuesta incluye:
 - `access_token` y `public_key` del vendedor vinculado.
 - `refresh_token`, que debes utilizar para renovar periódicamente las vinculaciones.
-- `user_id`, igual al `collector_id` utilizado para capturar pagos específicamente en el nodo.
+- `user_id`, igual al `collector_id` que se utiliza para capturar pagos.
 
 > WARNING
 >
