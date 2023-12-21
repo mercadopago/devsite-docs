@@ -21,6 +21,34 @@ To perform the integration you will need to follow the usual integration flow of
 4. To determine the marketplace commission percentage:
 
     - If the checkout is Pro, fill the `marketplace_fee` parameter with the amount to be charged for each payment preference created in the **/checkout/preferences** API.
+    ```json
+    {
+    "items": [
+        {
+            "id": "item-ID-1234",
+            "title": "Meu produto",
+            "currency_id": "BRL",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ],
+    "marketplace_fee": 10
+    }
+    ```
     - If the checkout is ----[mla, mlu, mpe, mco, mlc, mlm]----API------------ ----[mlb]----Transparente------------, fill the `application_fee` parameter with the amount to be charged for each payment created in the **/payments** API.
+    ```json
+    {
+    "description": "API TRANSPARENTE MARKETPLACE",
+    "installments": 1,
+    "token": "{{card_token}}",
+    "payer": {
+        "id": "{{payer_id}}"
+    },
+    "marketplace": "{{marketplace_id}}",
+    "payment_method_id": "master",
+    "application_fee": 2,
+    "transaction_amount": 10
+    }
+    ```
 
 Upon completing these steps, the checkout will have been integrated into the marketplace and will be ready to process payments.

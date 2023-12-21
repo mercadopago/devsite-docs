@@ -10,7 +10,10 @@ Para iniciar o processo de autorização e solicitar permissões aos seus usuár
 
     - Onde `<APP_ID>` é o valor obtido durante a [Criação da aplicação](/developers/pt/docs/split-payment/integration-configuration/create-application), e
     - `<REDIRECT_URI>` é o valor inserido no campo Redirect Uri durante a [Configuração do Redirect URL](/developers/pt/docs/split-payment/integration-configuration/create-application).
-<br>
+
+
+
+
 2. Assim que os usuários autorizarem o gerenciamento de vendas, você receberá um código de autorização na URL que especificou no passo anterior. Este código estará no parâmetro `code` da seguinte forma:
 
     ```curl

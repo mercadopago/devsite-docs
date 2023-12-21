@@ -10,7 +10,9 @@ To initiate the authorization process and request permissions from your users to
 
     - Where `<APP_ID>` is the value obtained during [Application creation](/developers/en/docs/split-payment/integration-configuration/create-application), and
     - `<REDIRECT_URI>` is the value entered in the Redirect Uri field during [Redirect URL configuration](/developers/en/docs/split-payment/integration-configuration/create-application).
-<br>
+
+
+
 2. Once users authorize sales management, you will receive an authorization code in the URL you specified in the previous step. This code will be in the `code` parameter as follows:
 
     ```curl
