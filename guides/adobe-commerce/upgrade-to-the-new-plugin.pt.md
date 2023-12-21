@@ -23,7 +23,6 @@ Para atualizar seu plugin instalando a nova versão, basta seguir os passos de i
 | Parcelas **com** juros                     | ✅           | ✅             |
 | Secure Fields / PCI                        | ✅           | ✅             |
 | Parcelas **sem** juros                     | ✅           | ✅             |
-| Checkout Pro Modal                         | ✅           | ❌             |
 | Buy Now Pay Later - Mercado Crédito        | ✅           | ❌             |
 | Pagamentos com 2 cartões                   | ✅           | ❌             |
 | Reembolsos diretamente através da plataforma | ✅           | ❌             |
