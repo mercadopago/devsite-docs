@@ -1,4 +1,4 @@
-## Crear suscripción
+# Crear suscripción
 
 > WARNING
 >
@@ -6,9 +6,11 @@
 >
 > Antes de comenzar a crear la suscripción, deberás contar con un plan creado. Si aún no lo has hecho, ve a [Crear plan](/developers/es/docs/subscriptions/integration-configuration/subscriptions-associated-plan/create-plan).
 
-Una vez que hayas creado un plan, puedes crear la suscripción. La suscripción es una autorización del pagador para cargos recurrentes con un medio de pago definido (tarjeta de crédito, por ejemplo). Al suscribirse a un producto/servicio, el cliente acepta que se le cobre periódicamente un cierto monto por el período de tiempo definido.
+La suscripción es una autorización del pagador para cargos recurrentes con un medio de pago definido (tarjeta de crédito, por ejemplo). Al suscribirse a un producto/servicio, el cliente acepta que se le cobre periódicamente un cierto monto por el período de tiempo definido.
 
-Para crear una suscripción, tenga a mano el `preapproval_plan_id`, accede al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y completa los atributos como se indica en la tabla de parámetros o, si prefieres, usa el curl a continuación.
+Para crear una suscripción, primero deberás contar con el valor `preapproval_plan_id`. 
+
+Luego, podrás continuar la integración por dos caminos: puedes acceder al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y completar los atributos como se indica en la tabla de parámetros, o también puedes usar el _curl_ que te compartimos a continuación.
 
 [[[
 ```curl
@@ -37,4 +39,5 @@ curl -X POST \
 ```
 ]]]
 
-Cuando termines de llenar los atributos, ejecuta el request y ¡listo! Se habrá creado la suscripción con el plan asociado.
+Cuando termines de llenar los atributos, ejecuta el request y ¡listo! Ya habrás creado la suscripción con el plan asociado.
+
