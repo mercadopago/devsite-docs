@@ -17,7 +17,7 @@ To perform the integration you will need to follow the usual integration flow of
 
 1. Follow the steps described in the [OAuth documentation](/developers/en/guides/additional-content/security/oauth/introduction) to get each `access_token`. This information will be needed during the checkout integration process into the marketplace.
 2. Choose the type of checkout you want ([Checkout Pro](/developers/en/guides/checkout-pro/landing) or [Checkout API](/developers/en/guides/checkout-api/introduction) and follow the entire onboarding flow.
-3. In the checkout integration, use the `public_key` of your integrator account in the frontend and insert the seller's `access_token` obtained in step 1, in the backend or in the request header.
+3. In the checkout integration, use the `public_key` of your integrator account in the frontend and insert the seller's `access_token` (obtained in step 1) in the backend or in the request header.
 4. To determine the marketplace commission percentage:
 
     - If the checkout is Pro, fill the `marketplace_fee` parameter with the amount to be charged for each payment preference created in the **/checkout/preferences** API.
