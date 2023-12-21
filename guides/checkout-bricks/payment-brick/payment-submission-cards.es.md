@@ -44,21 +44,14 @@ Con toda la información recopilada en el backend, envía un **POST** con los at
 ?>
 ```
 ```node
-var mercadopago = require('mercadopago');
-import { MercadoPagoConfig, Payment } from '@src/index';
+import { MercadoPagoConfig, Payment } from 'mercadopago';
 
-const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>', options: { timeout: 5000 } });
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
 
 const payment = new Payment(client);
-
-payment.create({ body: {
- transaction_amount: 100,
- description: '<DESCRIPTION>',
- payment_method_id: '<PAYMENT_METHOD_ID>',
- payer: {
- email: '<EMAIL>'
-},
-} }).then(console.log).catch(console.log);
+payment.create({ body: req.body })
+.then(console.log)
+.catch(console.log);
 ```
 ----[mlm]----
 ```java
