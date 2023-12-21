@@ -34,11 +34,11 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval?access_t
 >
 > We make a payment with a minimum amount to prove the card's validity. If it is successful, we will proceed with returning that payment. The value may differ according to each country.
 
-### Collection reattempt logic
+## Collection reattempt logic
 
 By automating the recurrence of your collections, authorized payments that will have a debit date configured based on the periodicity that was defined in the subscription are created. The first installment is charged until the period of approximately one hour to subscribe.
 
-#### Payment statuses
+### Payment statuses
 
 ----[mlb, mlm]----
 
@@ -48,7 +48,7 @@ At the time the installment is collected, two alternatives may arise based on th
 
 * __Payment is declined__ so the installment will always remain in `recycling` status and when the installment is not expired or has not reached the maximum number of reattempts. Otherwise, it will be processed with the `processed` status.
 
-#### Declined payments
+### Declined payments
 
 When an installment remains in `recycling` status, it enters a reattempt scheme with a maximum of 4 possibilities, when the installment is collected again. The result can be any of the two points mentioned above. 
 
@@ -68,7 +68,7 @@ At the time the installment is collected, three alternatives may arise, based on
 
 * __Payment is declined__ so the installment will always remain in `recycling` status and when the installment is not expired or has not reached the maximum number of reattempts. Otherwise, it will be processed with the `processed` status.
 
-#### Declined payments
+### Declined payments
 
 When an installment remains in `recycling` status, it enters a reattempt scheme with a maximum of 4 possibilities, when the installment is collected again. The result can be any of the three points mentioned above. 
 
@@ -76,7 +76,7 @@ If the payment is declined, it is updated to a new collection date by adding 1 o
 
 By default the reattempt is within a 10 day window. In case the installment has an expiration date, the time window is adjusted to that date and maintains the logic of 4 reattempts.
 
-#### Payments in process
+### Payments in process
 
 If an installment is in `waiting for gateway` status and, when the payment is resolved, it appears as declined, and the expiration date is met, the installment will automatically appear as processed with the `processed` status. Otherwise, it will enter the reattempt scheme.
 

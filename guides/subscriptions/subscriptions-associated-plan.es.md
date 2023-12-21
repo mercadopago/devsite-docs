@@ -55,5 +55,41 @@ curl -X POST \
 >
 > Una _Suscripción con plan asociado_ siempre deberá ser creada con su `card_token_id` y en status `Authorized`.
 
-¡Listo! Ya creaste el plan de su suscripción con plan asociado. Para finalizar la integración, dirígete al siguiente paso, que es **crear una suscripción**.
+¡Listo! Ya creaste el plan de su suscripción con plan asociado. Para finalizar la integración, ahora deberás **crear una suscripción**.
 
+## Crear suscripción
+
+La suscripción es una autorización del pagador para cargos recurrentes con un medio de pago definido (tarjeta de crédito, por ejemplo). Al suscribirse a un producto/servicio, el cliente acepta que se le cobre periódicamente un cierto monto por el período de tiempo definido.
+
+Para crear una suscripción, primero deberás contar con el valor `preapproval_plan_id`. 
+
+Luego, podrás continuar la integración por dos caminos: puedes acceder al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y completar los atributos como se indica en la tabla de parámetros, o también puedes usar el _curl_ que te compartimos a continuación.
+
+[[[
+```curl
+
+curl -X POST \
+      'https://api.mercadopago.com/preapproval' \
+      -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+      -H 'Content-Type: application/json' \ 
+      -d '{
+  "preapproval_plan_id": "2c938084726fca480172750000000000",
+  "reason": "Yoga classes",
+  "external_reference": "YG-1234",
+  "payer_email": "test_user@testuser.com",
+  "card_token_id": "e3ed6f098462036dd2cbabe314b9de2a",
+  "auto_recurring": {
+    "frequency": 1,
+    "frequency_type": "months",
+    "start_date": "2020-06-02T13:07:14.260Z",
+    "end_date": "2022-07-20T15:59:52.581Z",
+    "transaction_amount": 10,
+    "currency_id": "ARS"
+  },
+  "back_url": "https://www.mercadopago.com.ar",
+  "status": "authorized"
+}'
+```
+]]]
+
+Cuando termines de llenar los atributos, ejecuta el request y ¡listo! Ya habrás creado la suscripción con el plan asociado.

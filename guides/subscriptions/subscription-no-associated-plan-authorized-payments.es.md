@@ -6,7 +6,6 @@ Para ofrecer **suscripciones sin plan asociado y con pago autorizado**, envía u
 
 [[[
 ```curl
-
 curl --location --request POST 'https://api.mercadopago.com/preapproval?access_token=APP_USR-????????' \
 --header 'Content-Type: application/json' \
 --header 'X-scope: stage' \
@@ -34,13 +33,13 @@ Después de completar los campos, ejecuta el request.
 >
 > Importante
 >
-> Para acreditar la validez de la tarjeta, realizamos un pago con un importe mínimo. Si el pago es exitoso, procederemos a la devolución de dicho pago. El valor puede diferir según cada país.
+> Para acreditar la validez de la tarjeta, Mercado Pago realizará un cobro con un importe mínimo. Si el pago es exitoso, procederemos a la devolución de dicho pago. El valor puede diferir según cada país.
 
-### Lógica de reintentos de cobro
+## Lógica de reintentos de cobro
 
 Al automatizar la recurrencia de tus cobros, se crean pagos autorizados que tendrán una fecha de débito configurada en base a la periodicidad que se definió en la suscripción. Luego de suscribirse, el pago de la primera cuota se acreditará en 1 hora.
 
-#### Estados de pago
+### Estados de pago
 
 ----[mlb, mlm]----
 
@@ -50,7 +49,7 @@ En el momento en que se cobre la cuota pueden surgir dos alternativas en base al
 
 * __El pago es rechazado__ por lo que la cuota quedará en `recycling` siempre y cuando la cuota no esté expirada o no haya alcanzado el máximo de reintentos. Caso contrario, quedará en `processed`.
 
-#### Pagos rechazados
+### Pagos rechazados
 
 Cuando una cuota queda en el estado `recycling` entra en un esquema de reintentos con un máximo de 4 posibilidades, en los que se vuelve a realizar el cobro de la cuota. El resultado puede ser cualquiera de los dos puntos mencionados arriba. 
 
@@ -70,7 +69,7 @@ En el momento en que se cobre la cuota pueden surgir tres alternativas en base a
 
 * __El pago es rechazado__ por lo que la cuota quedará en `recycling` siempre y cuando la cuota no esté expirada o no haya alcanzado el máximo de reintentos. Caso contrario, quedará en `processed`.
 
-#### Pagos rechazados
+### Pagos rechazados
 
 Cuando una cuota queda en el estado `recycling` entra en un esquema de reintentos con un máximo de 4 posibilidades, en los que se vuelve a realizar el cobro de la cuota. El resultado puede ser cualquiera de los tres puntos mencionados arriba. 
 
@@ -78,7 +77,7 @@ Si el pago resulta rechazado, se actualiza a una nueva fecha de cobro sumando 1 
 
 Por defecto se reintenta dentro de una ventana de 10 días. En caso de que la cuota tenga fecha de expiración, la ventana de tiempo se ajusta a esa fecha y mantiene la lógica de 4 reintentos.
 
-#### Pagos en proceso
+### Pagos en proceso
 
 Si una cuota se encuentra en el estado `waiting for gateway` y cuando se resuelve el pago resulta rechazada y se cumplió la fecha de expiración, la cuota automáticamente pasará a procesada con el estado `processed`. Caso contrario, entrará al esquema de reintento.
 
