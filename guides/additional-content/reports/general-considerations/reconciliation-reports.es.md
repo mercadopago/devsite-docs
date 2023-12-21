@@ -1,31 +1,20 @@
 # Reportes
 
-Los reportes de Mercado Pago son conjuntos de información financiera que te ayudan a visualizar los movimientos de tu cuenta (saldo disponible, transacciones, liquidez), permitiéndote combinar ventas y otras operaciones con tus sistemas de gestión interna.
-
-Consulta la tabla a continuación para obtener más detalles sobre los tipos de reportes disponibles.
-
-
-
-* ----[mlm, mlb, mlc, mco, mlu, mpe]---- Reportes de conciliación ------------ ----[mla, mlm]---- Movimientos generales ------------
-    ----[mla]----
-    + [Liquidaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/introduction)
-    ------------
-    ----[mlm, mlb, mlc, mco, mlu, mpe]----
-    + [Liberaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/introduction)
-    ------------
-    + [Todas las transacciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/introduction)
-    + [Dinero retirado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/introduction)
+Los reportes de Mercado Pago proporcionan información financiera para dar seguimiento a las transacciones de su cuenta, como el saldo disponible, las transacciones y la liquidez. Esto facilita la conciliación de las ventas y otras operaciones con sus sistemas de gestión internos.
 
 > NOTE
 >
-> El reporte de Dinero retirado será deshabilitado desde el 1 de marzo de 2022
+> El reporte de Dinero Disponible fue deshabilitado el 1 de marzo de 2022
 >
-> Puedes usar el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
+> Puedes usar el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/introduction) para realizar la conciliación de las transacciones que afecten el saldo disponible en su cuenta, incluyendo sus retiros bancarios.
 
+Consulta la tabla a continuación para obtener más detalles sobre los tipos de reportes disponibles.
 
 | Tipo de reporte | Descripción |
 |---|---|
-| ----[mlm, mlb, mlc, mco, mlu, mpe]---- Reporte de liberaciones ------------ ----[mla]---- Reporte de Liquidaciones ------------ | Informa cómo está compuesto el saldo disponible en tu cuenta, detallando todos los montos involucrados en un período de tiempo. Para más información, [haz clic aquí](https://www.mercadopago.com.br/developers/es/guides/additional-content/reports/released-money/introduction).|
-| Reporte de todas las transacciones| Informa las transacciones/movimientos que afectaron el saldo de tu cuenta. Para más información, [haz clic aquí](https://www.mercadopago.com.br/developers/es/guides/additional-content/reports/account-money/introduction).|
-| Reporte de dinero retirado| Informa la liquidez de tu negocio, detallando el monto disponible para ser usado en la cuenta. [Haz clic aquí](https://www.mercadopago.com.br/developers/es/guides/additional-content/reports/available-money/introduction) para más información. <br><br>* **Próximamente este reporte será deshabilitado**. Recomendamos utilizar el ----[mlm, mlb, mlc, mco, mlu, mpe]---- [Reporte de Liberaciones](https://www.mercadopago.com.br/developers/es/guides/additional-content/reports/available-money/introduction) ------------ ----[mla]---- [Reporte de Liquidaciones](https://www.mercadopago.com.ar/developers/es/guides/additional-content/reports/available-money/introduction) ------------  para conciliar las transacciones que conforman el saldo disponible en tu cuenta, incluidos los retiros bancarios.|
-| Reportes de facturación| El equipo de **Marketplace de Mercado Libre** ha desarrollado una serie de reportes de facturación para proporcionar los detalles financieros de las transacciones realizadas en Mercado Pago a partir de las ventas en Mercado Libre. <br><br>Los datos de los reportes también incluyen información financiera de los usuarios que no venden a través de Mercado Libre, ya que los datos de facturación son de Mercado Pago. Para más información, [haz clic aquí](https://developers.mercadolibre.com.ar/es_ar/reportes-de-facturacion).|
+| ----[mlm, mlb, mlc, mco, mlu, mpe]---- Reporte de Liberaciones ------------ ----[mla]---- Reporte de Liquidaciones ------------ | Proporciona la composición del saldo disponible en su cuenta, con detalles sobre los valores involucrados en un período determinado. Consulte la [documentación de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago.com[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/introduction) para obtener más información. |
+| Reporte de Dinero en cuenta | Informa sobre las transacciones/movimientos que afectaron su saldo en cuenta. Para obtener más información, consulte la [documentación de Dinero en cuenta](https://www.mercadopago.com[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/introduction). |
+| Reporte de Dinero disponible | Presenta la liquidez de su negocio, detallando el valor disponible en cuenta para su uso. Para obtener más información, consulte la [documentación de Dinero disponible](https://www.mercadopago.com[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/available-money/introduction).
+<br><br>* **Este reporte ya no está disponible**. Utilice el [Reporte de Liberaciones](https://www.mercadopago.com[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/introduction) para conciliar las transacciones que componen el saldo disponible en su cuenta, incluyendo los retiros bancarios. |
+| Reportes de Facturación | El **Marketplace de Mercado Libre** ha desarrollado una serie de reportes de facturación para proporcionar detalles financieros de las transacciones realizadas en Mercado Pago a partir de las ventas en Mercado Libre. <br><br>Los datos de los reportes también incluyen información financiera de usuarios que no realizan ventas en Mercado Libre, ya que los datos de facturación son de Mercado Pago. Para obtener más información, consulte la [documentación](https://developers.mercadolibre.com.ar/es_ar/reportes-de-facturacion).|
+| Reporte de Ventas de la Solución Split de Pagos do Mercado Pago | El Reporte de ventas de la solución split de pagos do Mercado Pago ofrece una visión completa de las transacciones de los vendedores vinculados, disponible para su descarga en los formatos _csv_ y _json_. Para obtener más información, consulte la [documentación](https://www.mercadopago.com[FAKER][URL][DOMAIN]/developers/es/docs/checkout-pro/additional-content/reports/sales-report/introduction). |

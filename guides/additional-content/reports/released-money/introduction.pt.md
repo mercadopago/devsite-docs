@@ -1,70 +1,66 @@
 ----[mla]----
-# O que é o relatório de Liquidações?
+# Relatório de Liquidações
 ------------
 
 ----[mlm, mlb, mlc, mco, mlu, mpe]----
-# O que é o relatório de Liberações?
+# Relatório de Liberações
 ------------
 
-O relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ é um **relatório para ser baixado que te permite saber como seu saldo disponível está composto no Mercado Pago. Ou seja, quanto você tem para usar**. Ele contém **detalhes de todos os valores envolvidos em um período de tempo,** e inclui os casos de ----[mla]---- liquidaçao ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberação ------------ de dinheiro, como de bloqueios e desbloqueios.
+O Relatório de----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ é um arquivo que pode ser baixado e que detalha o saldo que você tem disponível no Mercado Pago. Ele não apenas mostra o valor total disponível, mas também fornece informações sobre as transações realizadas em um período determinado, incluindo situações como bloqueios e desbloqueios de fundos.
 
+Além disso, permite que você saiba se o seu dinheiro está disponível ou não, e você pode solicitar essa informação para o período de datas que for mais conveniente para você. Tenha em mente que atualmente este relatório só é gerado através do seu computador.
+
+----[mpe]----
+## Análise dos relatórios a partir de janeiro de 2022
+------------
+----[mlu]----
+## Análise dos relatórios a partir de marchar de 2022
+----[mlc, mco]----
+## Análise dos relatórios a partir de agosto de 2022
+------------
 ----[mla, mlm]----
-> WARNING
->
-> Importante
->
-> Nos seus relatórios de outubro e dos próximos meses, suas movimentações estarão ordenadas por data de criação para que você possa identificá-las mais facilmente.
+## Análise dos relatórios a partir de outubro de 2022
 ------------
-
 ----[mlb]----
-> WARNING
->
-> Importante
->
-> Os relatórios gerados a partir de 1º de janeiro de 2023 vão apresentar suas movimentações em ordem cronológica, assim, você pode identificá-las mais facilmente e controlar ainda melhor as finanças dos seus negócios. [Confira o novo formato do relatório.](https://bit.ly/3UivgKt)
+## Análise dos relatórios a partir de janeiro de 2023
 ------------
 
-----[mlm]----
-> WARNING
->
-> Importante
->
-> Os relatórios gerados a partir de 3 de outubro vão apresentar suas movimentações em ordem cronológica, assim, você pode identificá-las mais facilmente e controlar ainda melhor as finanças dos seus negócios. [Confira o novo formato do relatório.](https://bit.ly/3QiCD2f)
-------------
+Os relatórios que você gerar a partir de ----[mpe]----janeiro de 2022------------  ----[mlu]----marchar de 2022------------ ----[mla, mlm]----outubro de 2022------------  ----[mco, mlc]----agosto de 2022------------ ----[mlb]----janeiro de 2023------------ têm as seguintes características: 
 
-## Como baixar o relatório?
+1. As movimentações são mostradas em ordem cronológica, o que permite identificá-las mais facilmente e ter ainda mais controle sobre suas vendas.
+2. Caso haja alguma reclamação ou contestação referente a algum problema com o serviço ou produto oferecido, o valor correspondente fica retido até a mediação ser resolvida. Essas informações constam no seu relatório e você pode encontrá-las ao procurar pelo prefixo "reserve-".
+3. As movimentações relacionadas aos saques e/ou transferências do seu saldo disponível aparecem como "Payout", e todas as mediações que surgirem quando uma reclamação for iniciada ou resolvida aparecem como "Dispute". Para conferir a descrição das demais movimentações e termos, consulte [o glossário](/developers/pt/docs/checkout-pro/additional-content/reports/released-money/report-use).
+4. Você encontrará uma nova coluna chamada "Sale detail" ou "Detalhe da venda" que fornece informações detalhadas sobre os itens vendidos, facilitando a conciliação e o controle das suas vendas. Cada entrada nesta coluna mostra o primeiro elemento da venda, seguido pelo agrupamento de outros itens.
 
-Lembre-se de que a geração deste relatório leva alguns minutos, dependendo de quantas informações você queira incluir nele. Nem sempre ele estará pronto de imediato e, enquanto estiver sendo gerado, você verá na tela o status *Em preparação*.
+## Baixar relatório
 
-Ao estar disponível, ele ficará na sua bandeja de relatórios e você poderá baixá-lo de duas formas:
+Siga este caminho para saber como gerar e baixar o relatório de Liberações:
+**Relatórios e faturamento -> Relatórios de vendas e extratos de conta -> Liberações**.
 
-* Por um link de download que enviaremos via e-mail.
-* Na sua conta Mercado Pago, vá até "Relatórios de pagamentos e extratos de conta" e selecione o relatório *Liberações*. 
+### Criar relatório por API
+
+Crie o relatório de Liberações manualmente quantas vezes desejar ou programe-o conforme suas necessidades de frequência por meio da [API](/developers/pt/docs/checkout-pro/additional-content/reports/released-money/api).
+
+A geração do relatório leva alguns minutos, dependendo de quanta informação você deseja incluir. Nem sempre estará pronto instantaneamente e, até que esteja, você verá o status "Em preparação" na tela.
+
+Consulta ["Como analisar o relatório de Liberações?"](https://www.mercadopago.com.br/ajuda/28771) para entender melhor o seu relatório.
 
 ### Valores do relatório
 
-Dependendo das [tarifas e prazos](/settings/release-options) que você escolher, o dinheiro que você ganhar pela venda será liberado um tempo depois que o pagamento for creditado. Por isso, o valor total exibido no relatório nem sempre vai coincidir com o seu saldo total ou com o valor total que aparece nos relatórios de faturamento.
+Dependendo das [tarifas e prazos](/settings/release-options) selecionados, o valor obtido com a venda será liberado após o pagamento ser creditado. Por isso, o valor total indicado no relatório pode não coincidir sempre com seu saldo total ou com o valor total nos relatórios de faturamento.
 
-Os prazos de liberação têm relação com os tempos dos bancos ou com os fluxos de intermediação quando as transações são feitas no Mercado Livre. Outras transações que podem afetar a liberação do seu dinheiro são as Contestações e Reclamações que você possa receber na venda.
+Os prazos de liberação estão relacionados aos processos bancários e aos fluxos de intermediação quando as transações são feitas no Mercado Livre. Além disso, contestações e reclamações recebidas em vendas podem impactar a liberação do dinheiro.
 
+> Para obter a data exata de disponibilidade do dinheiro de uma transação, é importante revisar os [detalhes dos pagamentos creditados](https://www.mercadopago.com.br/activities/balance).
 
-> Para saber a data exata que o dinheiro de uma transação vai estar disponível, revise os [detalhes dos seus pagamentos creditados](/activities/balance).
+## Utilizar relatório
 
-## Para que usar o relatório
+O relatório de ----[mla]----Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ é uma ferramenta importante tanto para conciliação quanto para análise de seu histórico financeiro. Ele detalha as transações da conta, proporciona compreensão e conciliação do saldo disponível em datas determinadas e fornece dados de cada transação, incluindo data, conceito e valor. 
 
-### Use o relatório para conciliar
-
-**Este relatório é usado para conciliar** o dinheiro que existe na sua conta em um determinado momento e inclui as transações que o compõem. 
-
-Gere o relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ toda vez que precisar reconciliar os detalhes do dinheiro liberado entre duas datas. Você poderá saber quando cada transação foi feita, em que conceito e por qual quantia. 
-
-
-### Use o relatório para conhecer seu histórico
-
-Além disso, você pode usar o relatório para saber o histórico de dinheiro ----[mla]---- liquidado ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberado ------------ entre duas datas, o detalhe dos eventos que compõem uma transferência bancária, os detalhes de disputas, reembolsos, envios, estornos, impostos e outras transações. Você também verá os detalhes das parcelas liquidadas e as parcelas ainda a serem pagas.
+Além disso, este relatório apresenta o histórico completo de dinheiro liberado, abordando eventos como transferências bancárias, disputas, reembolsos e estornos, e destaca as parcelas liquidadas em comparação às pendentes de pagamento.
 
 > NOTE
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](/developers/pt/guides/additional-content/reports/released-money/glossary) de dinheiro ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ para revisá-lo quando precisar ou caso queira consultar algum termo técnico.
+> Utilize o [Glossário do Relatório de----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------](https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/additional-content/reports/released-money/report-use) para consulta de termos técnicos, caso necessário.
