@@ -34,8 +34,8 @@ Os relatórios que você gerar a partir de ----[mpe]----janeiro de 2022---------
 
 ## Baixar relatório
 
-Siga este caminho para saber como gerar e baixar o relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------:
-**Relatórios e faturamento** -> **Relatórios de vendas e extratos de conta** -> ----[mla]---- **Liquidações** ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- **Liberações** ------------.
+Siga este caminho para saber como gerar e baixar o relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações------------:
+**Relatórios e faturamento** -> **Ielatórios de vendas e extratos de conta** -> ----[mla]---- **Liquidações** ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- **Liberações** ------------.
 
 ### Criar relatório por API
 
