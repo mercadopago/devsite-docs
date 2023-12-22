@@ -35,7 +35,7 @@ Los informes que genere a partir de ----[mpe]---- enero de 2022------------  ---
 ## Descargar reporte
 
 Siga esta ruta para saber cómo generar y descargar el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------:
-**Informes y facturación -> Informes de ventas y extractos de cuenta -> ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------**.
+**Informes y facturación** -> **Informes de ventas y extractos de cuenta** -> ----[mla]---- **Liquidaciones** ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- **Liberaciones** ------------.
 
 ### Crear reporte por API
 
@@ -43,7 +43,7 @@ Genera el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc
 
 La generación del reporte lleva algunos minutos dependiendo de cuánta información desee incluir. No siempre estará listo instantáneamente y, hasta que lo esté, verá el estado "En preparación" en la pantalla.
 
-> Consulte ["Cómo analizar el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------?"](https://www.mercadopago.com.ar/ayuda/28771) para comprender mejor su reporte.
+> Consulte ["Cómo analizar el reporte de ----[mla]---- Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones------------?"](https://www.mercadopago.com.ar/ayuda/28771) para comprender mejor su reporte.
 
 ### Valores del reporte
 
@@ -59,6 +59,6 @@ El reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, 
 
 Además, este reporte presenta el historial completo del dinero liberado, abordando eventos como transferencias bancarias, disputas, reembolsos y estornos, y destaca las cuotas liquidadas en comparación con las pendientes de pago.
 
-> NOTA
+> NOTE
 >
-> Utilice el [Glosario del reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------](/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use) para consultar términos técnicos, si es necesario.
+> Utilice el [Glosario del Reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------](/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use) para consultar términos técnicos, si es necesario.

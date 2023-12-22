@@ -24,8 +24,8 @@ Puedes generar un reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, 
 
 | Canales                    | Descripción                                                                                                                                                                                                                                                                                                                  |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Panel de Mercado Pago      | Es posible crear el reporte manualmente a través del panel de Mercado Pago. Accede a la sección de [Informes y facturación](https://www.mercadopago.com.ar/movements), haz clic en **Ir a reportes de pagos y extractos de cuenta** y selecciona el reporte. Para obtener más información, consulta la documentación [Generar informe desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/panel).                                               |
-| Integración vía API | Crea el reporte manualmente o programa su generación según la frecuencia deseada utilizando nuestra integración a través de la API. Para obtener más información, consulta la documentación [Generar informe a través de la API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/api). |
+| Panel de Mercado Pago      | Es posible crear el reporte manualmente a través del panel de Mercado Pago. Accede a la sección de [Informes y facturación](https://www.mercadopago.com.ar/movements), haz clic en **Ir a reportes de pagos y extractos de cuenta** y selecciona el reporte. Para obtener más información, consulta la documentación [Generar reporte desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/panel).                                               |
+| Integración vía API | Crea el reporte manualmente o programa su generación según la frecuencia deseada utilizando nuestra integración a través de la API. Para obtener más información, consulta la documentación [Generar reporte a través de la API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/api). |
 
 ## Características técnicas del reporte
 
@@ -33,7 +33,7 @@ Ten en cuenta la siguiente información técnica siempre que estés creando, pro
 
 ### Estructura del reporte
 
-Comprende las características de los elementos que componen tu informe.
+Comprende las características de los elementos que componen tu reporte.
 
 | Elemento o acción | Características |
 | --- | --- |
@@ -50,15 +50,15 @@ Todas las opciones disponibles al descargar tu reporte.
 
 | Elemento o acción | Características |
 | --- | --- |
-| Formato del nombre del archivo | Informe programado o manual:<br/> "prefijo-configurable-<span style='color:#999999;'>fecha-de-creación.csv</span>" <br/> Ejemplo: mitienda-28-05-2024.csv. |
+| Formato del nombre del archivo | Reporte programado o manual:<br/> "prefijo-configurable-<span style='color:#999999;'>fecha-de-creación.csv</span>" <br/> Ejemplo: mitienda-28-05-2024.csv. |
 | Formatos de descarga | ._csv_, ._xlsx_ <br/><br/>**Nota**: descarga el reporte en formato ._csv_ para importar los datos y usarlos en otras aplicaciones. Descárgalo en formato ._xlsx_ para leer la información en tablas de hojas de cálculo. |
-| Archivo | Los informes generados se guardan en tu cuenta de Mercado Pago. |
+| Archivo | Los reportes generados se guardan en tu cuenta de Mercado Pago. |
 
 ## Notificaciones
 
 ### Webhook
 
-Webhook, también conocido como "retorno de llamada web", es un método eficiente para recibir información en tiempo real cada vez que ocurre un evento en una aplicación o sistema. Este enfoque permite la transferencia pasiva de datos entre dos sistemas mediante solicitudes HTTP POST. En relación con los informes utilizados en la conciliación, se envía una notificación al usuario que haya configurado este servicio cuando sus archivos sean generados.
+Webhook, también conocido como "retorno de llamada web", es un método eficiente para recibir información en tiempo real cada vez que ocurre un evento en una aplicación o sistema. Este enfoque permite la transferencia pasiva de datos entre dos sistemas mediante solicitudes HTTP POST. En relación con los reportes utilizados en la conciliación, se envía una notificación al usuario que haya configurado este servicio cuando sus archivos sean generados.
 
 | Atributo        | Descripción                         |
 |-----------------|-----------------------------------|

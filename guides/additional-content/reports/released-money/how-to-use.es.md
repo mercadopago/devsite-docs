@@ -25,7 +25,7 @@ Los saldos disponibles de las transacciones liquidadas se muestran en las column
 
 Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la operación aparecerá en el reporte como una nueva línea en la columna `NET_CREDIT_AMOUNT`.
 
-> NOTA
+> NOTE
 >
 > Importante
 >

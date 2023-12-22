@@ -1,8 +1,8 @@
 # Crear reporte a través de la API
 
-Crea el Reporte de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------ manualmente tantas veces como desees o prográmalo según la frecuencia deseada a través de nuestra API.
+Crea el Reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ manualmente tantas veces como desees o prográmalo según la frecuencia deseada a través de nuestra API.
 
-## Configurar el Reporte de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------
+## Configurar el Reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------
 
 ### Atributos configurables
 
@@ -730,6 +730,7 @@ En ausencia de errores, se emitirá un código de estado `HTTP 202 (Accepted)`. 
 ----[mlm, mla, mco, mpe, mlu, mlc]----
 Una respuesta `HTTP STATUS 203 (Non-Authoritative Information)` indica que la solicitud se realizó según lo esperado; sin embargo, no fue posible crear su reporte y será necesario solicitarlo nuevamente con las fechas indicadas en el sistema.
 
+------------
 ### Consultar reporte
 
 Consulta la API según se muestra a continuación para explorar la lista de reportes que has generado:

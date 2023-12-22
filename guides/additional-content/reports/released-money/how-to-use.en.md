@@ -29,11 +29,11 @@ If a transfer is not completed, the report remains valid. The amount will be ref
 >
 > Important
 >
-> Have the [Release Report Glossary](https://www.mercadopago.com.br/developers/en/guides/additional-content/reports/released-money/glossary) on hand to consult when needed to check any technical term.
+> Have the [Releases Report Glossary](https://www.mercadopago.com.br/developers/en/guides/additional-content/reports/released-money/glossary) on hand to consult when needed to check any technical term.
 
 ## Report example
 
-Observe what comprises the Release Report in the following example to identify the sections and analyze your own reports:
+Observe what comprises the Releases Report in the following example to identify the sections and analyze your own reports:
 ----[mla]----
 ![Reporte de liquidaciones](/images/manage-account/reports/example-release-es.jpg)
 

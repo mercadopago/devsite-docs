@@ -35,7 +35,7 @@ Os relatórios que você gerar a partir de ----[mpe]----janeiro de 2022---------
 ## Baixar relatório
 
 Siga este caminho para saber como gerar e baixar o relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------:
-**Relatórios e faturamento -> Relatórios de vendas e extratos de conta -> ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------**.
+**Relatórios e faturamento** -> **Relatórios de vendas e extratos de conta** -> ----[mla]---- **Liquidações** ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- **Liberações** ------------.
 
 ### Criar relatório por API
 
@@ -43,11 +43,11 @@ Crie o relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc
 
 A geração do relatório leva alguns minutos, dependendo de quanta informação você deseja incluir. Nem sempre estará pronto instantaneamente e, até que esteja, você verá o status "Em preparação" na tela.
 
-> Consulta ["Como analisar o relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------?"](https://www.mercadopago.com.br/ajuda/28771) para entender melhor o seu relatório.
+> Consulta ["Como analisar o relatório de ----[mla]---- Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações------------?"](https://www.mercadopago.com.br/ajuda/28771) para entender melhor o seu relatório.
 
 ### Valores do relatório
 
-Dependendo das [tarifas e prazos](/settings/release-options) selecionados, o valor obtido com a venda será liberado após o pagamento ser creditado. Por isso, o valor total indicado no relatório pode não coincidir sempre com seu saldo total ou com o valor total nos relatórios de faturamento.
+Dependendo das [tarifas e prazos](https://www.mercadopago.com.br/settings/release-options) selecionados, o valor obtido com a venda será liberado após o pagamento ser creditado. Por isso, o valor total indicado no relatório pode não coincidir sempre com seu saldo total ou com o valor total nos relatórios de faturamento.
 
 Os prazos de liberação estão relacionados aos processos bancários e aos fluxos de intermediação quando as transações são feitas no Mercado Livre. Além disso, contestações e reclamações recebidas em vendas podem impactar a liberação do dinheiro.
 
