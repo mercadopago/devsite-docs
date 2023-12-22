@@ -1,17 +1,9 @@
-# Generation by the Mercado Pago panel
+# Generate report through the panel
 
-Generate your Release report from your Mercado Pago panel.
+Generate your Releases Reports from your Mercado Pago panel. You can schedule the report to be generated each time you withdraw funds from your balance to a bank account. To do this, follow the steps below:
+1. From your Mercado Pago account, click [Sales and Billing](https://www.mercadopago.com.br/balance/reports) in the left menu.
+2. Select the option **Sales and Account Statement Reports -> [Releases](https://www.mercadopago.com.br/balance/reports/release)** and click **Generate report**.
+3. Search for transactions by time period and select the ones you want to reconcile.
+4. Click **Generate**. The report will be _In preparation_, and you will receive an email when it's ready.
 
-Follow these steps to generate your reports:
-
-1. From your Mercado Pago account, go to your reports and select the *Reports* option.
-2. Go to [Release report](https://www.mercadopago.com.ar/balance/reports/release) and click on *Create report*.
-3. Search the transactions per period of time and select the ones you wish to reconcile.
-
-Done! You will see your report *In preparation*.
-
-> NOTE
->
-> Important
->
-> Have the [Glossary of Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/glossary) on hand to review it when needed or want to review a technical term.
+> Have the [Glossary of the Releases Report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/glossary) on hand for reference whenever needed or to check any technical terms.
