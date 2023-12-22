@@ -11,7 +11,7 @@ Você pode gerar um relatório de ----[mla]---- Liquidações ------------ ----[
 
 ------------
 
-## Canais de geração
+## Canais de criação
 
 Você pode gerar um relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ pela sua conta Mercado Pago:
 
