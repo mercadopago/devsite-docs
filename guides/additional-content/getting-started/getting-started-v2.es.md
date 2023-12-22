@@ -14,7 +14,7 @@ Puedes ofrecer pagos con diversos tipos de pago en tiendas físicas o tiendas on
 ---
 bullet_section_with_media:
  - type: normal
- - title: Una cuenta, distintas oportunidades para integrar
+ - title: Comienza a integrar con tu cuenta de Mercado Pago
  - message: 
  - image: /getting-started/credenciales.png
 ---
@@ -122,11 +122,11 @@ bullet_section_with_media:
  - image: /getting-started/woman-male-dev.png
 ---
 
-Puedes encontrar las credenciales en **Detalles de la aplicación > Credenciales** dentro de [Tus integraciones](/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuración > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
+Puedes encontrar las credenciales en **Detalles de la aplicación > Credenciales** dentro de [Tus integraciones](/developers/panel/app).
 
 Existen dos tipos diferentes de credenciales: las **credenciales de prueba** y las **credenciales de producción**. Ambos tipos de credenciales constan de dos pares de claves que deberás utilizar según el producto elegido: **Public Key** y **Access Token** o **Client ID** y **Client secret**.
 
-Si necesitas compartir tus credenciales, puedes hacerlo de forma segura. Navega hasta [Tu negocio > Configuración > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) y selecciona la opción **Compartir credenciales**. 
+Si necesitas compartir tus credenciales, puedes hacerlo de forma segura. En el sitio de Mercado Pago, navega hasta [Tu negocio > Configuración > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) y selecciona la opción **Compartir credenciales**. 
 
 > Para conocer más, accede a la [documentación de credenciales](/developers/es/docs/your-integrations/credentials).
 
