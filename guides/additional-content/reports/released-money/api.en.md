@@ -1,147 +1,43 @@
-# Generating through API
+# Generate Report via API
 
-Generate the Released money report manually as many times as you want or schedule it according to the desired frequency through our API.
+Generate the Release Report manually as many times as you want or schedule it according to the desired frequency through our API.
 
-## Configurable attributes
+## Configure the Release Report
 
-Know the fields you can configure to adjust your preferences before you start:
+### Configurable attributes
+
+Check the fields you can configure to adjust your preferences before starting:
 
 > WARNING
 >
 > Important
 >
-> Setting up `frequency` feature does not mean that the report will be generated automatically. The settings will apply only when the automatic scheduling is activated. For more details, please go to the [Schedule your automatic reports](#bookmark_schedule_your_automatic_reports) section.
+> Configuring the `frequency` attribute does not mean that the report will be generated automatically. The configuration will only be applied when automatic scheduling is activated. For more information, see the section [Schedule report automatically.](#bookmark_schedule_report_automatically)
 
-| Configurable field | Description |
-| --- | --- |
-| `columns` | <br/>Field with the details of columns to be included in your report. Find all possible values in the [Glossary section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/glossary).<br/><br/>|
-| `file_name_prefix` | <br/>Prefix that composes the report name once generated and ready for download.<br/><br/> |
-| `frequency` | <br/>Indicates the daily, weekly or monthly frequency of scheduled reports.<br/><br/> - `frequency` applies type *monthly* to the day of the month or *weekly* to the day of the week.<br/> - `hour` Hour Time of day to generate the report. <br/> - `type` Type indicates the type of frequency *daily*, *weekly* and *monthly*.<br/><br/> |
-| `sftp_info` (optional) | <br/>Indicates the uploaded data to SFTP when you need it.<br/><br/> |
-| `separator` (optional) | <br/>Separator that you can use in the .csv file when you don't want the separator to be a comma. <br/><br/> |
-| `display_timezone` (optional) | <br/>This field determines the date and time displayed in the reports. If you do not set a time zone in this field, the system will consider GMT-04 as default. If you choose a time zone which adopts daylight saving time, you will need to adjust it manually when the time changes.<br/><br/> |
-| `report_translation` (optional) | <br/>Allows you to change the default language of the column headers in reports that are generated in Excel format (.xlsx). If you have an integration based on this format and configure this feature, we recommend that you verify if it works correctly.<br/><br/> If your integration does not work properly, update it based on the new headers.<br/><br/> |
-| `notification_email_list` (optional) | <br/>Allows you to add a group of e-mail recipients to be notified when a report is ready and available for download. Make sure to include the email linked to your Mercado Pago account so you can be notified as well. <br/><br/> |
-| `refund_detailed` (optional) | <br/>Displays the reference code (external_reference) of the refund instead of the reference code (external_reference) of the payment.<br/><br/> |
-| `include_withdrawal` (optional) | <br/>Includes withdrawals in the report.<br/><br/> |
-| `coupon_detailed` (optional) | <br/>Includes a column to show the detail of the discount coupons.<br/><br/> |
-| `scheduled` (read_only) | <br/>Informative field that indicates if there are already scheduled reports in the user account.<br/>`True` The automatic generation is activated <br/> `False` The automatic generation is disabled<br/><br/>  |
-| `check_available_balance` (optional) | <br/>Balance before and after a cash withdrawal, which explains the account balance. (This configuration is only informative. It should not be considered for balance and/or account balance checks). <br/><br/> |
-| `compensate_detail` (optional) | <br/>Blocking and unblocking of money that offset each other and do not affect the final balance. Helps to understand how the final balance of the report is made up, in a chronological format. (This setting is recommended if you have a high volume of transactions). <br/><br/>|
+| Configurable field        | Type       | Example                                                                                                                | Description                                                                                                                                                                                                                                                                                                      |
+|---------------------------|------------|------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `columns`                  | JSON Array | ``` [{"key": "DATE"}, {"key": "SOURCE_ID"}] ```                                                                       | Field with details of the columns to be included in your report. Find all possible values in the [Glossary](/developers/en/docs/checkout-pro/additional-content/reports/released-money/report-use).                                                                                                                                                                              |
+| `file_name_prefix`         | String     | "conciliation-settlement-report"                                                                                      | Prefix that composes the name of the generated and ready-to-download report.                                                                                                                                                                                                                                    |
+| `frequency`                | JSON       | ``` {"hour": 0, "type": "monthly", "value": 1} ```                                                                    | Indicates the daily, weekly, or monthly frequency of scheduled reports.<br> - `frequency`: applies type _monthly_ to the day of the month or _weekly_ to the day of the week.<br> - `hour`: the time of day the report should be generated.<br> - `type`: indicates the type of frequency: _daily_, _weekly_, or _monthly_.                                          |
+| `sftp_info` (optional)    | JSON       | ``` {"server": "sftp.myserver.com", "password": "mypassword", "remote_dir": "/myfolder", "port": 22, "username": "myusername"} ```                                                  | Provides the necessary connection data to access the server.<br> - `server`: URL or IP address (public) of the server.<br> - `password`: password of the user with which we will establish the connection.<br> - `remote_dir`: folder where we will deposit your reports.<br> - `port`: port used to establish the connection.<br> - `username`: user with which we will authenticate on your server.<br>          |
+| `separator` (optional)    | String     | ";"                                                                                                                    | Alternative separator for _csv_ files when a character other than a comma (',') is desired.                                                                                                                                                                                                                   |
+| `display_timezone` (optional)| String   | "GMT-04"                                                                                                               | This field determines the date and time shown in the reports. If you do not configure a time zone for this field, the system will consider GMT-04 as the default time zone. If you choose a time zone that observes daylight saving time, you will need to manually adjust it when the time changes.                   |
+| `report_translation` (optional)| String  | "es"                                                                                                                  | Allows changing the default language of column headers. If enabled, it is recommended to check if Excel file (_xlsx_) integrations are working correctly to allow automatic reconciliation. If the integration is not working correctly, please update it using the new headers as a reference. Supported languages: en (English), es (Neutral Spanish), pt (Portuguese).   |
+| `notification_email_list` (optional)| Array| ``` ["example@email.com", "john@example.com"] ```                                                                    | Allows adding a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account so you also receive the notifications.                                                                                 |
+| `refund_detailed` (optional)| Boolean   | true                                                                                                                   | Displays the reference code (`external_reference`) of the refund instead of the payment reference code (`external_reference`).                                                                                                                                                                                 |
+| `include_withdrawal` (optional)| Boolean | true                                                                                                                   | Includes money withdrawals in the report.                                                                                                                                                                                                                                                                     |
+| `coupon_detailed` (optional)| Boolean   | true                                                                                                                   | Includes a column to show discount coupon details.                                                                                                                                                                                                                                                             |
+| `scheduled` (read_only)    | Boolean    | true                                                                                                                   | Informative field indicating whether there are already scheduled reports in the user's account.<br> - `True`: Automatic generation is enabled.<br> - `False`: Automatic generation is disabled.                                                                                                                                                                               |
+| `check_available_balance` (optional)| Boolean| true                                                                                                                  | Balance before and after making a withdrawal, explaining the account balance. (This setting is purely informational. It should not be considered for proof of balance and/or account balance).                                                                                                                  |
+| `compensate_detail` (optional)| Boolean | true                                                                                                                  | Blocking and unblocking of money that offset each other and do not affect the final balance. Helps understand how the final report balance is made, in a chronological format (recommended setting if you have a large volume of transactions).                                                                       |
 
-## Set up your reports
+You can configure your reports as needed. Below, we highlight the available API calls so you can manage the configuration of your report and, based on these settings, generate the reports.
 
-You can configure your reports according to your preferences. Up next, you'll find the API calls you can make to create, consult and update your reports.
+> Have the [Glossary of the Releases Report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/glossary) on hand for reference whenever needed or to check any technical terms.
 
-> NOTE
->
-> Note
->
-> Have the [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/release-money/glossary) at hand to review technical terms when managing your reports.
+## Create a new configuration
 
-### Check the configuration 
-
-You can check the configuration of your reports by API using these codes:
-
-[[[
-```curl
-curl -X GET \
-    -H 'accept: application/json' \
-    -H 'content-type: application/json' \
-    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-    'https://api.mercadopago.com/v1/account/release_report/config' \
-```
-```php
-<?php
-include('vendor/rmccue/requests/library/Requests.php');
-Requests::register_autoloader();
-$headers = array(
-    'accept' => 'application/json',
-    'content-type' => 'application/json',
-    'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
-);
-$response = Requests::get('https://api.mercadopago.com/v1/account/release_report/config', $headers);
-```
-```java
- URL url = new URL("https://api.mercadopago.com/v1/account/release_report/config");
-
-HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-
-connection.setRequestMethod("GET");
-connection.setRequestProperty("Accept", "application/json");
-connection.setRequestProperty("Content-Type", "application/json");
-connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
-
-System.out.println(connection.getResponseCode());
-System.out.println(connection.getResponseMessage());
-System.out.println(connection.getInputStream());
-```
-```python
-import requests
-headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json',
-    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
-}
-
-response = requests.get('https://api.mercadopago.com/v1/account/release_report/config', headers=headers)
-```
-```node
-var request = require('request');
-
-var headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json',
-    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
-};
-
-var options = {
-    url: 'https://api.mercadopago.com/v1/account/release_report/config',
-    headers: headers
-};
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    }
-}
-request(options, callback);
-```
-]]]
-
-You will receive an `HTTP STATUS 200 (OK)` in response if no error is found.
-
-The response object will have a similar structure to the following example:
-
-```json
-{
-    "file_name_prefix": "release-report-USER_ID",
-    "include_withdrawal_at_end": true,
-    "scheduled": false,
-    "execute_after_withdrawal": false,
-    "separator": ";",
-    "display_timezone": "GMT-04",
-    "frequency": {
-        "hour": 0,
-        "type": "monthly",
-        "value": 1
-    },
-    "columns": [
-        {
-            "key": "DATE"
-        },
-        {
-            "key": "SOURCE_ID"
-        },
-        {
-            "key": "EXTERNAL_REFERENCE"
-        }
-    ]
-}
-```
-
-### Create your configuration
-
-Create your generation preferences through API to export columns, name your files and configure other settings:
+Customize your reports by assigning different creation properties by running the following _curl_:
 
 [[[
 ```curl
@@ -151,7 +47,7 @@ curl -X POST \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/account/release_report/config' \
     -d '{
-            "file_name_prefix": "release-USER_ID",
+            "file_name_prefix": "release-report-USER_ID",
             "include_withdrawal_at_end": true,
             "execute_after_withdrawal": false,
             "display_timezone": "GMT-04",
@@ -241,9 +137,9 @@ String body = "{
                     \\"value\\": 1
                 },
                 \\"columns\\": [
-                        { \\"key\\": \\"DATE\\" },
-                        { \\"key\\": \\"SOURCE_ID\\" },
-                        { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
+                    { \\"key\\": \\"DATE\\" },
+                    { \\"key\\": \\"SOURCE_ID\\" },
+                    { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
                 ]
             }";
 
@@ -347,9 +243,9 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 201 (Created)` in response if no error is found.
+In the absence of errors, an HTTP status code `201 (Created)` will be issued. The API will respond with a JSON structure, where the properties will represent the configuration you created.
 
-The response object will have a similar structure to the following example:
+#### Response
 
 ```json
 {
@@ -382,9 +278,9 @@ The response object will have a similar structure to the following example:
 }
 ```
 
-### Check the configuration 
+### Check settings
 
-To check the configuration of your reports by API using these codes:
+Check the current configuration of your reports by executing the following _curl_:
 
 [[[
 ```curl
@@ -451,7 +347,9 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 200 (OK)` in response:
+In the absence of errors, an `HTTP 200 (Ok)` status code will be issued. The API will respond with a JSON structure whose properties will represent the characteristics of your reports.
+
+#### Response
 
 ```json
 {
@@ -459,7 +357,7 @@ You will receive an `HTTP STATUS 200 (OK)` in response:
     "include_withdrawal_at_end": true,
     "scheduled": false,
     "execute_after_withdrawal": false,
-    "separator": ",",
+    "separator": ";",
     "display_timezone": "GMT-04",
     "frequency": {
         "hour": 0,
@@ -480,16 +378,15 @@ You will receive an `HTTP STATUS 200 (OK)` in response:
 }
 ```
 
+### Update settings
 
-### Update configuration
+Update the default settings of your reports when necessary by executing the following _curl_.
 
 > NOTE
 >
-> Nota
+> Note
 >
->If when updating the settings you want to edit the "Frequency" feature, and you have already enabled the automatic generation of your reports, you must follow these steps:<br/><br/> 1.  Cancel the scheduled generation of your reports, following the steps in the section Deactivate scheduling. [Deactivate](#bookmark_2._deactivation). <br/> 2.  Update the settings by editing the `Frequency` feature, using the snippets available in this section. <br/> 3. Schedule again the automatic generation of the report, following the steps in the section Activate scheduling. [Activate](#bookmark_1._activation).
-
-When you need to update your settings, you can adjust the following attributes:
+> If, when updating the configuration, you want to change the `frequency` attribute and have already activated the automatic creation of your reports, follow these steps: <br/><br/> 1. Cancel the scheduled creation of your reports by following the steps described in the section **Disable automatic generation** in [Schedule report automatically.](#bookmark_schedule_report_automatically) <br/> 2. Update the configuration. <br/> 3. Re-enable the automatic creation of your reports by following the steps in the section **Enable automatic generation** in [Schedule report automatically.](#bookmark_schedule_report_automatically)
 
 [[[
 ```curl
@@ -589,9 +486,9 @@ String body = "{
                     \\"value\\": 1
                 },
                 \\"columns\\": [
-                   { \\"key\\": \\"DATE\\" },
-                   { \\"key\\": \\"SOURCE_ID\\" },
-                   { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
+                    { \\"key\\": \\"DATE\\" },
+                    { \\"key\\": \\"SOURCE_ID\\" },
+                    { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
                 ]
             }";
 
@@ -654,7 +551,7 @@ var headers = {
 var dataString = '{
             "file_name_prefix": "release-report-USER_ID",
             "include_withdrawal_at_end": true,
-            "execute_after_withdrawal": false,
+            "execute_after_withdrawal": falsre,
             "display_timezone": "GMT-04",
             "notification_email_list": [
                 "example@email.com",
@@ -695,9 +592,9 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 200 (OK)` in response if no error is found.
+In the absence of errors, an `HTTP 200 (Ok)` status code will be issued. The API will respond with a JSON structure whose properties will represent the configuration you have updated.
 
-The response object will have a similar structure to the following example:
+#### Response
 
 ```json
 {
@@ -730,13 +627,13 @@ The response object will have a similar structure to the following example:
 }
 ```
 
-## Generating your reports manually 
+## Manually create report
 
-Generate your reports manually by configuring three instances: creation, query, and download.
+You have various resources at your disposal that will allow you to interact with your reports manually.
 
-### 1. Creation
+### Create report
 
-Perform a POST to the API by specifying the desired start and end dates as follows:
+Make a POST request to the API to manually generate a new report within a specific date range:
 
 [[[
 ```curl
@@ -806,8 +703,8 @@ var request = require('request');
 
 var headers = { 
     'accept': 'application/json', 
-    'content-type': 'application/json',
-    'Authorization': 'Bearer ENV_ACCESS_TOKEN' 
+    'content-type': 'application/json', 
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 };
 
 var dataString = '{ "begin_date": "2019-05-01T00:00:00Z", "end_date": "2019-06-01T00:00:00Z" }';
@@ -827,15 +724,16 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 202 (Accepted)` in response if no error is found, and the report will be generated asynchronously.
+In the absence of errors, an HTTP status code of `202 (Accepted)` will be issued. After that, your report will be generated asynchronously. You will receive, as a response, a JSON structure with relevant information regarding your creation request.
 
 ----[mlm, mla, mco, mpe, mlu, mlc]----
-An `HTTP STATUS 203 (Non-Authoritative Information)` response indicates that the request is as expected, however, it was not possible to create your report and it will be necessary to request it again with the dates indicated by the system.
+An HTTP status response of `203 (Non-Authoritative Information)` indicates that the request occurred as expected; however, it was not possible to create your report, and you will need to request it again with the dates indicated in the system.
 
 ------------
-### 2. Query
 
-Check the API according to the snippet below to see if the report creation is ready:
+### Query report
+
+Consult the API as follows to explore the list of reports you have generated:
 
 [[[
 ```curl
@@ -872,7 +770,7 @@ System.out.println(connection.getInputStream());
 import requests
 
 headers = { 
-    'accept': 'application/json',
+    'accept': 'application/json', 
     'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 }
 
@@ -897,15 +795,15 @@ request(options, callback);
 ```
 ]]]
 
-You will receive `HTTP STATUS 200 (OK)` in response if no error is found.
+In the absence of errors, an `HTTP 200 (Ok)` status code will be issued. The API will respond with a JSON Array in which you will find the list of all the reports it generated.
 
-The response object will have a similar structure to the following example:
+#### Response
 
 ```json
 [
     {
         "id": 12345678,
-        "user_id": USER-ID,
+        "user_id": "USER_ID",
         "begin_date": "2015-05-01T00:00:00Z",
         "end_date": "2015-06-01T23:59:59Z",
         "file_name": "release-report-USER_ID-2016-01-20-131015.csv",
@@ -918,9 +816,9 @@ The response object will have a similar structure to the following example:
 ]
 ```
 
-### 3. Download
+### Download report
 
-Using the `file_name` attribute, you can download the report from the following URL:
+Using the `file_name` attribute, you can download any of your reports from the following URL:
 
 [[[
 ```curl
@@ -959,7 +857,6 @@ headers = {
     'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 }
 
-
 response = requests.get('https://api.mercadopago.com/v1/account/release_report/:file_name', headers=headers)
 ```
 ```node
@@ -968,6 +865,7 @@ var request = require('request');
 var headers = {
     'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 };
+
 
 var options = {
     url: 'https://api.mercadopago.com/v1/account/release_report/:file_name',
@@ -984,9 +882,9 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 200 (OK)` in response if no error is found.
+In the absence of errors, an HTTP status code `200 (Ok)` will be issued. In the API response, you will have the requested report file available for download.
 
-The response object will have a similar structure to the following example:
+#### Response
 
 ```csv
 DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
@@ -998,19 +896,16 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
 ```
 
-## Schedule your automatic reports
+## Schedule report automatically
 
-Generate your reports on a scheduled basis by configuring two instances: activation and Deactivation.
+Create your reports on a scheduled basis by configuring two instances: activation and deactivation.
 
-### 1. Activation
+### Activate automatic generation
 
-Schedule the automatic generation of your report using the desired frequency in the configuration resource. 
-
-Keep in mind to update the *`scheduled`* attribute in the configuration to *`true`*:
-
-`POST /v1/account/release_report/schedule`
+Schedule the automatic generation of the report using the frequency assigned during the configuration of your reports. When using this service, the `scheduled` property of your configuration will be automatically updated to `true`:
 
 [[[
+
 ```curl
 curl -X POST \
     -H 'accept: application/json' \
@@ -1018,6 +913,7 @@ curl -X POST \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/account/release_report/schedule'
 ```
+
 ```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
@@ -1029,6 +925,7 @@ $headers = array(
 );
 $response = Requests::post('https://api.mercadopago.com/v1/account/release_report/schedule', $headers);
 ```
+
 ```java
 URL url = new URL("https://api.mercadopago.com/v1/account/release_report/schedule");
 
@@ -1043,6 +940,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
+
 ```python
 import requests
 
@@ -1054,6 +952,7 @@ headers = {
 
 response = requests.post('https://api.mercadopago.com/v1/account/release_report/schedule', headers=headers)
 ```
+
 ```node
 var request = require('request');
 
@@ -1077,15 +976,31 @@ function callback(error, response, body) {
 
 request(options, callback);
 ```
+
 ]]]
 
-### 2. Deactivation
+In the absence of errors, an HTTP status code `200 (OK)` will be issued. The API will respond with a JSON structure in which you will find information associated with the scheduled report.
 
-Execute the following curls to respectively start and cancel the scheduled generation of your reports, according to your desired scenario.
+#### Response
 
-Stops automatic report generation. Update the *`scheduled`* attribute in the false configuration:
+```json
+{
+    "id": 2541818,
+    "user_id": "USER-ID",
+    "begin_date": "2019-07-01T06:00:00Z",
+    "end_date": "2019-08-01T05:59:59Z",
+    "created_from": "schedule",
+    "status": "pending",
+    "report_type": "release",
+    "generation_date": "2019-08-01T06:00:00.000Z",
+    "last_modified": "2019-07-24T13:45:33.479-04:00",
+    "retries": 0
+}
+```
 
-`DELETE /v1/account/release_report/schedule`
+### Disable automatic generation
+
+You can disable the automatic generation of your reports at any time when needed. When using this service, the `scheduled` property in your configuration will be automatically updated to `false`.
 
 [[[
 ```curl
@@ -1102,7 +1017,7 @@ include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
 $headers = array(
     'accept' => 'application/json',
-    'content-type' => 'application/json',
+    'content-type' => 'application/json',    
     'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
 );
 $response = Requests::delete('https://api.mercadopago.com/v1/account/release_report/schedule', $headers);
@@ -1156,3 +1071,22 @@ function callback(error, response, body) {
 request(options, callback);
 ```
 ]]]
+
+In the absence of errors, an HTTP status code `200 (OK)` will be issued. The API will respond with a JSON structure in which you will find information associated with the report you deactivated.
+
+#### Response
+
+```json
+{
+    "id": 2787882,
+    "begin_date": "2019-08-15T06:00:00Z",
+    "created_from": "schedule",
+    "end_date": "2019-08-16T05:59:59Z",
+    "generation_date": "2019-08-16T02:00:00.000-04:00",
+    "last_modified": "2019-08-15T15:41:53.681-04:00",
+    "report_type": "release",
+    "retries": 0,
+    "status": "deleted",
+    "user_id": USER_ID
+}
+```

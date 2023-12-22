@@ -14,7 +14,7 @@ Além disso, permite que você saiba se o seu dinheiro está disponível ou não
 ## Análise dos relatórios a partir de janeiro de 2022
 ------------
 ----[mlu]----
-## Análise dos relatórios a partir de marchar de 2022
+## Análise dos relatórios a partir de março de 2022
 ----[mlc, mco]----
 ## Análise dos relatórios a partir de agosto de 2022
 ------------
@@ -25,7 +25,7 @@ Além disso, permite que você saiba se o seu dinheiro está disponível ou não
 ## Análise dos relatórios a partir de janeiro de 2023
 ------------
 
-Os relatórios que você gerar a partir de ----[mpe]----janeiro de 2022------------  ----[mlu]----marchar de 2022------------ ----[mla, mlm]----outubro de 2022------------  ----[mco, mlc]----agosto de 2022------------ ----[mlb]----janeiro de 2023------------ têm as seguintes características: 
+Os relatórios que você gerar a partir de ----[mpe]----janeiro de 2022------------  ----[mlu]----março de 2022------------ ----[mla, mlm]----outubro de 2022------------  ----[mco, mlc]----agosto de 2022------------ ----[mlb]----janeiro de 2023------------ têm as seguintes características: 
 
 1. As movimentações são mostradas em ordem cronológica, o que permite identificá-las mais facilmente e ter ainda mais controle sobre suas vendas.
 2. Caso haja alguma reclamação ou contestação referente a algum problema com o serviço ou produto oferecido, o valor correspondente fica retido até a mediação ser resolvida. Essas informações constam no seu relatório e você pode encontrá-las ao procurar pelo prefixo "reserve-".
@@ -34,16 +34,16 @@ Os relatórios que você gerar a partir de ----[mpe]----janeiro de 2022---------
 
 ## Baixar relatório
 
-Siga este caminho para saber como gerar e baixar o relatório de Liberações:
-**Relatórios e faturamento -> Relatórios de vendas e extratos de conta -> Liberações**.
+Siga este caminho para saber como gerar e baixar o relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------:
+**Relatórios e faturamento -> Relatórios de vendas e extratos de conta -> ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------**.
 
 ### Criar relatório por API
 
-Crie o relatório de Liberações manualmente quantas vezes desejar ou programe-o conforme suas necessidades de frequência por meio da [API](/developers/pt/docs/checkout-pro/additional-content/reports/released-money/api).
+Crie o relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ manualmente quantas vezes desejar ou programe-o conforme suas necessidades de frequência por meio da [API](/developers/pt/docs/checkout-pro/additional-content/reports/released-money/api).
 
 A geração do relatório leva alguns minutos, dependendo de quanta informação você deseja incluir. Nem sempre estará pronto instantaneamente e, até que esteja, você verá o status "Em preparação" na tela.
 
-> Consulta ["Como analisar o relatório de Liberações?"](https://www.mercadopago.com.br/ajuda/28771) para entender melhor o seu relatório.
+> Consulta ["Como analisar o relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------?"](https://www.mercadopago.com.br/ajuda/28771) para entender melhor o seu relatório.
 
 ### Valores do relatório
 

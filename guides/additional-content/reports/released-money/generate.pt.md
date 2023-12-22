@@ -43,7 +43,7 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 
 | Ações e componentes | Características |
 | --- | --- |
-| Formato do nome do arquivo | Relatório programado ou manual:<br/> "prefixo-configuravel-<span style='color:#999999;'>data-de-criacao.csv</span>" <br/> Exemplo: minhaloja-28-05-2019.csv. |
+| Formato do nome do arquivo | Relatório programado ou manual:<br/> "prefixo-configuravel-<span style='color:#999999;'>data-de-criacao.csv</span>" <br/> Exemplo: minhaloja-28-05-2024.csv. |
 | Formatos de download | ._csv_, ._xlsx_ <br/><br/>**Nota**: baixe o relatório em ._csv_ para importar os dados e usá-los em outros aplicativos. Baixe-o em ._xlsx_ para ler as informações em tabelas de planilha. |
 | Arquivo | Os relatórios gerados são salvos na sua conta do Mercado Pago. |
 
