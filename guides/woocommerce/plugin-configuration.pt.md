@@ -1,3 +1,9 @@
+> WARNING
+>
+> Compatibilidade com WooCommerce Blocks
+>
+> Após a atualização das lojas WooCommerce, estamos trablhando para o plugin do Mercado Pago ser compatível com Blocks. Caso esteja enfrentando problemas, consulte a [documentação oficial](https://woo.com/document/cart-checkout-blocks-status/#section-6) para reverter temporariamente a atualização da sua loja.
+
 # Configuração da integração
 
 Uma vez instalado o plugin Mercado Pago com WooCommerce, é necessário configurá-lo. Para isso, siga estes passos:

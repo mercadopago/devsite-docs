@@ -595,7 +595,7 @@ Una vez creadas las configuraciones, ingrese el código a continuación para ren
 >
 > Importante
 >
-> El id `paymentBrick_container` de la div HTML abajo debe corresponder que el valor enviado en el metodo `create()` de la etapa anterior.
+> El id `paymentBrick_container` de la _div html_  abajo debe corresponder que el valor enviado en el metodo `create()` de la etapa anterior.
 
 [[[
 ```html

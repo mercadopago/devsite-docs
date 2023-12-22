@@ -1,54 +1,60 @@
-# What is the Releases report?
+# Releases report
 
-Releases report is a **downloadable report that allows you to know the liquidity of your business and to know how your available money is composed in Mercado Pago.** It contains the **detail of all funds involved in a date period,** and includes money release cases as well as blockings and unblockings.
+The Releases Report is a downloadable file detailing the balance available in your Mercado Pago account. It not only displays the total available amount but also provides information on transactions conducted within a specified period, including situations like fund blocks and unblocks.
 
-----[mlm, mla]----
-> WARNING
->
-> Important
->
-> In your reports for October and the coming months you will see your transactions sorted by date of creation so that you can identify them more easily. [Learn how to read your report.](https://bit.ly/3zCb1ye)
+Additionally, it informs you whether your money is available or not, allowing you to request this information for a convenient date range. Keep in mind that currently, this report is only generated through your computer.
+
+----[mpe]----
+## Analysis of reports from January 2022
+------------
+----[mlu]----
+## Analysis of reports from March 2022
+----[mlc, mco]----
+## Analysis of reports from August 2022
+------------
+----[mla, mlm]----
+## Analysis of reports from October 2022
 ------------
 ----[mlb]----
-> WARNING
->
-> Important
->
-> The reports you generate from January 1st 2023 will show your money movements in chronological order, so you will be able to identify them more easily and better control your business finances [Learn how to use it.](https://bit.ly/3zCb1ye)
+## Analysis of reports from January 2023
 ------------
 
-## How do I download the report?
+The reports you generate from ----[mpe]----January 2022------------  ----[mlu]----March 2022------------ ----[mla, mlm]----October 2022------------  ----[mco, mlc]----August 2022------------ ----[mlb]----January 2023------------ have the following characteristics:
 
-Keep in mind that the report generation takes a few minutes depending on how much information you want it to include. It will not always be ready instantly and, until it is, you will see the status *In preparation* on the screen.
+1. Movements are shown in chronological order, making them easier to identify and providing more control over your sales.
+2. In case of any complaints or disputes related to an issue with the service or product offered, the corresponding amount is held until the mediation is resolved. This information is included in your report, and you can find it by searching for the "reserve-" prefix.
+3. Movements related to withdrawals and/or transfers from your available balance appear as "Payout," and all mediations that arise when a complaint is initiated or resolved appear as "Dispute." To check the description of other movements and terms, refer to [the glossary](/developers/en/docs/checkout-pro/additional-content/reports/released-money/report-use).
+4. You will find a new column called "Sale detail," providing detailed information about the items sold, facilitating reconciliation and control of your sales. Each entry in this column shows the first element of the sale, followed by the grouping of other items.
 
-Once available, it will be in your report tray and you can always download it two ways:
+## Download report
 
-* From the download link we’ll email you.
-* From your Mercado Pago account, go to *Reports* and select the Release report option. 
+Follow this path to learn how to generate and download the Releases Report:
+**Reports and Billing -> Sales and Account Statements -> Release**.
 
-### Report Values
+### Create report via API
 
-Depending on the [rates and terms](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options) you choose, the money you earn from an order will be released some time after the payment is credited. For this reason, the total value you see in the report will not always match your total balance or the value you see in the billing reports.
+Manually create the Releases Report as often as you wish or schedule it according to your frequency needs through the [API](/developers/en/docs/checkout-pro/additional-content/reports/released-money/api).
 
-The release periods have to do with the bank terms or the intermediation flows when the operations are carried out in Mercado Libre. Other operations that may affect the release of your money are Chargebacks and Complaints that you may receive for an order.
+Report generation takes a few minutes, depending on how much information you want to include. It won't always be ready instantly, and until it is, you will see the status "In preparation" on the screen.
 
+> Refer to ["How to analyze the Releases Report?"](https://www.mercadopago.com.br/ajuda/28771) for a better understanding of your report.
 
-> To know the exact date on which the money of an operation will be available, check the [details of your accredited collections](https://www.mercadopago[FAKER][URL][DOMAIN]/activities/balance).
+### Report values
 
-## What to use the report for
+Depending on the [selected fees and deadlines](https://www.mercadopago.com.br/settings/release-options), the value obtained from the sale will be released after the payment is credited. Therefore, the total amount indicated in the report may not always coincide with your total balance or the total amount in billing reports.
 
-### Use the report to reconcile
+Release deadlines are related to banking processes and mediation flows when transactions are made on Mercado Livre. Additionally, disputes and complaints received in sales can impact money release.
 
-**This report is used to reconcile** the money that exists in your account at any given time and includes the transactions that make up those movements. 
+> For the exact date of availability of funds from a transaction, it is important to review [the details of credited payments](https://www.mercadopago.com.br/activities/balance).
 
-Generate the release report every time you need to reconcile the detail of the money released between two dates. You will be able to know when each transaction was made, in what concept and for what amount, including the cases of blocking and unblocking. 
+## Using the report
 
-### Use the report to view your history
+The Releases Report is an essential tool for both reconciliation and analysis of your financial history. It details account transactions, provides understanding and reconciliation of available balances on specific dates, and provides data for each transaction, including date, concept, and amount.
 
-In addition, you can use the report to know the history of releases between two dates or two withdrawals, the detail of the events that make up an automatic or manual withdrawal (total or partial), the detail of disputes, refunds, shipments, chargebacks , taxes and other operations that affect the available balance and the detail of the installments released and the ones that are still to be paid.
+Furthermore, this report presents the complete history of released money, covering events such as bank transfers, disputes, refunds, and chargebacks, and highlights settled installments compared to those pending payment.
 
 > NOTE
 >
 > Note
 >
-> Have the [Releases report Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/glossary) on hand to review it when needed or want to review a technical term.
+> Use the [Releases Report Glossary](https://www.mercadopago.com.br/developers/en/docs/checkout-pro/additional-content/reports/released-money/report-use) for technical term reference, if needed.
