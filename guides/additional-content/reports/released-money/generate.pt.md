@@ -1,4 +1,6 @@
-# Como gerar o seu relatório de Liberações?
+# Gerar relatório
+
+Você pode gerar um relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ através da sua conta Mercado Pago ou por meio da integração via API. Veja a tabela a seguir para obter mais informações.
 
 ----[mla]----
 > NOTE
@@ -13,27 +15,27 @@
 
 Você pode gerar um relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ pela sua conta Mercado Pago:
 
-| Canais | Descrição |
-| --- | --- |
-| Painel do Mercado Pago | Para gerar um relatório manualmente pelo Mercado Pago, vá até a seção [Relatórios e faturamento](https://www.mercadopago[FAKER][URL][DOMAIN]/movements)  clique em "Ir para Relatórios de pagamentos e extratos de conta" e escolha o relatório que desejar.<br/><br/>Siga o passo a passo para [gerar seus relatórios a partir do painel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/panel). |
-| Integração via API | Para gerar manualmente o report ou agendar um de acordo com a frequência desejada, use a nossa integração via API. <br/><br/> Leia a documentação para [gerar relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/api). |
+| Canais                    | Descrição                                                                                                                                                                                                                                                                                                                  |
+|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Painel do Mercado Pago     | É possível criar o relatório manualmente através do painel Mercado Pago. Acesse a seção de [Relatórios e faturamento](https://www.mercadopago.com.br/movements), clique em **Ir para Relatórios de pagamentos e extratos de conta** e selecione o relatório. Para mais informações, leia a documentação [Gerar relatório pelo painel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/panel).                                               |
+| Integração via API         | Crie o relatório de forma manual ou agendada de acordo com a frequência desejada utilizando nossa integração via API. Para mais informações, consulte as documentações [Gerar relatório via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/api), [Gerar relatório manualmente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/manual) ou [Agendar relatório automaticamente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/automatic) a depender da opção pretendida. |
 
 ## Características técnicas do relatório
 
-Considere as seguintes informações técnicas sempre que for gerar, programar e configurar seus relatórios.
+Considere as seguintes informações técnicas sempre que for criar, programar ou configurar um relatório.
 
 ### Estrutura do relatório
 
-Saiba as características dos elementos que compõem seu relatório.
+Entenda as características dos elementos que compõem seu relatório.
 
 | Ações e componentes | Características |
 | --- | --- |
-| Detalhes das tablas | Os detalhes das tabelas compreende as informações no mínimo de 1 dia. |
+| Detalhes das tabelas | Os detalhes das tabelas compreendem as informações de no mínimo 1 dia. |
 | Ordem das colunas | Fixa |
 | Período máximo | Relatórios com dados de até 60 dias. |
 | Moeda | Local (com base no país onde está cadastrada a conta do Mercado Pago) |
 | Fuso horário das colunas: | GMT-4 <br/> <br/> Tome como referência o lugar de onde o relatório é baixado. |
-| Seleção de datas via web | Deve ter como base o fuso horário da conta do usuário. <br/>Por exemplo, a conta do usuário cadastrada no Brasil corresponde ao fuso horário de São Paulo. |
+| Seleção de datas via web | Com base no fuso horário da conta do usuário. <br/>Por exemplo, a conta do usuário cadastrada no Brasil corresponde ao fuso horário de São Paulo. |
 
 ### Exportação do relatório
 
@@ -41,21 +43,21 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 
 | Ações e componentes | Características |
 | --- | --- |
-| Formato do nome do arquivo | Quando o relatório é programado ou manual:<br/> "prefixo-configuravel-<span style='color:#999999;'>data-de-criacao.csv</span>" <br/> Exemplo: minhaloja-28-05-2019.csv |
-| Formatos de download | .csv, .xlsx <br/><br/>Dica: baixe o relatório em .csv para importar os dados e usá-los em outros aplicativos. Baixe-o em .xlsx para ler as informações nas tabelas da planilha. |
-| Arquivo | Os relatórios gerados ficam salvos na sua conta do Mercado Pago. |
+| Formato do nome do arquivo | Relatório programado ou manual:<br/> "prefixo-configuravel-<span style='color:#999999;'>data-de-criacao.csv</span>" <br/> Exemplo: minhaloja-28-05-2019.csv. |
+| Formatos de download | ._csv_, ._xlsx_ <br/><br/>**Nota**: baixe o relatório em ._csv_ para importar os dados e usá-los em outros aplicativos. Baixe-o em ._xlsx_ para ler as informações em tabelas de planilha. |
+| Arquivo | Os relatórios gerados são salvos na sua conta do Mercado Pago. |
 
 ## Notificações
 
 ### Webhook
 
-Webhook (também conhecido como "retorno de chamada web"), é um método simples que permite que um aplicativo ou sistema forneça informações em tempo real toda vez que um evento acontece, ou seja, é uma maneira de receber dados entre dois sistemas de forma passiva, por meio de um HTTP POST. No caso dos relatórios usados na reconciliação, uma notificação é enviada ao usuário que tiver configurado este serviço quando seus arquivos forem gerados.
+Webhook, também chamado de "retorno de chamada web", é um método eficiente para receber informações em tempo real sempre que um evento ocorre em um aplicativo ou sistema. Essa abordagem permite a transferência passiva de dados entre dois sistemas por meio de solicitações HTTP POST. Em relação aos relatórios utilizados na reconciliação, uma notificação é enviada ao usuário que tiver configurado este serviço assim que os arquivos correspondentes forem gerados.
 
 | Atributo        | Descrição                         |
 |-----------------|-----------------------------------|
 | transaction_id  | ID da transação                   |
 | request_date    | Data da solicitação               |
-| generation_date | Data da geração                   |
+| generation_date | Data da criação                   |
 | files           | Arquivos disponíveis              |
 | type            | Formato do arquivo                |
 | url             | Link de download                  |
@@ -68,16 +70,16 @@ Webhook (também conhecido como "retorno de chamada web"), é um método simples
 
 ### Senha para criptografia
 
-Para garantir o processo de notificação ao sistema, será enviado no corpo da mensagem (payload) um atributo chamado **_"signature"_** para validar que a notificação Webhook teve origem no Mercado Pago e que não se trata de uma imitação.
+A senha de criptografia é essencial para assegurar o processo de notificação ao sistema. No corpo da mensagem (_payload_), um atributo chamado **_"signature"_** é enviado para validar a origem legítima da notificação Webhook do Mercado Pago, evitando possíveis imitações.
 
-A **signature** é criada ao unir o `transaction_id` com a `senha criptografada` na seção **_"Notificação por Webhook"_** e o `generation_date` do relatório. Assim que os valores forem vinculados, eles são criptografados usando o algoritmo **_BCrypt_** da seguinte maneira:
+A criação da **signature** ocorre pela combinação do `transaction_id` com a `senha criptografada` na seção **_"Notificação por Webhook"_**, juntamente com o `generation_date` do relatório. Esses valores são então criptografados utilizando o algoritmo **_BCrypt_** da seguinte forma:
 
 `signature = BCrypt(transaction_id + '-' + password_for_encryption + '-' + generation_date)`
 
-Para validar que foi o Mercado Pago quem emitiu a notificação, é necessário usar a **_função de verificação oferecida_** pelo algoritmo do **_BCrypt_** para a linguagem desejada.
+Para validar que foi o Mercado Pago quem emitiu a notificação, é necessário utilizar a **_função de verificação oferecida_** pelo algoritmo do **_BCrypt_** para a linguagem desejada.
 
-**Exemplo Java:**
+**Exemplo em Java:**
 
 `BCrypt.checkpw(transaction_id + '-' + password_for_encryption + '-' + generation_date, payload_signature)`
 
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/glossary) de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ para consultá-lo quando precisar ou queira conferir algum termo técnico.
+> Tenha o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/glossary) de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ à mão para consulta sempre que necessário ou para conferir algum termo técnico.
