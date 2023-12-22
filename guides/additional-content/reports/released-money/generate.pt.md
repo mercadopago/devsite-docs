@@ -18,7 +18,7 @@ Você pode gerar um relatório de ----[mla]---- Liquidações ------------ ----[
 | Canais                    | Descrição                                                                                                                                                                                                                                                                                                                  |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Painel do Mercado Pago     | É possível criar o relatório manualmente através do painel Mercado Pago. Acesse a seção de [Relatórios e faturamento](https://www.mercadopago.com.br/movements), clique em **Ir para Relatórios de pagamentos e extratos de conta** e selecione o relatório. Para mais informações, leia a documentação [Gerar relatório pelo painel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/panel).                                               |
-| Integração via API         | Crie o relatório de forma manual ou agendada de acordo com a frequência desejada utilizando nossa integração via API. Para mais informações, consulte as documentações [Gerar relatório via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/api). |
+| Integração via API         | Crie o relatório de forma manual ou agendada de acordo com a frequência desejada utilizando nossa integração via API. Para mais informações, consulte a documentação [Gerar relatório via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/api). |
 
 ## Características técnicas do relatório
 
@@ -33,7 +33,7 @@ Entenda as características dos elementos que compõem seu relatório.
 | Detalhes das tabelas | Os detalhes das tabelas compreendem as informações de no mínimo 1 dia. |
 | Ordem das colunas | Fixa |
 | Período máximo | Relatórios com dados de até 60 dias. |
-| Moeda | Local (com base no país onde está cadastrada a conta do Mercado Pago) |
+| Moeda | Local (com base no país onde está cadastrada a conta do Mercado Pago). |
 | Fuso horário das colunas: | GMT-4 <br/> <br/> Tome como referência o lugar de onde o relatório é baixado. |
 | Seleção de datas via web | Com base no fuso horário da conta do usuário. <br/>Por exemplo, a conta do usuário cadastrada no Brasil corresponde ao fuso horário de São Paulo. |
 
@@ -82,4 +82,4 @@ Para validar que foi o Mercado Pago quem emitiu a notificação, é necessário 
 
 `BCrypt.checkpw(transaction_id + '-' + password_for_encryption + '-' + generation_date, payload_signature)`
 
-> Tenha o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/glossary) de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ à mão para consulta sempre que necessário ou para conferir algum termo técnico.
+> Tenha o [Glossário do relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/glossary) à mão para consulta sempre que necessário ou para conferir algum termo técnico.

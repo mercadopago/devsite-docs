@@ -49,5 +49,3 @@ A versão padrão mostrará uma visualização estendida das colunas. O relatór
 Veja no exemplo a seguir a organização do relatório:
 
 ![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/example-nledger-pt.jpg) 
-
-------------

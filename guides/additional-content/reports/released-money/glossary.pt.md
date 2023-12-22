@@ -71,4 +71,3 @@ Veja a descrição de cada campo presente no relatório na tabela abaixo.
 > (*) Estas informações só podem ser usadas para fins de reconciliação e serão tratadas de acordo com as leis de
 > proteção de dados pessoais aplicáveis. Elas estarão disponíveis quando pagamentos via código QR e transferências forem
 > recebidos ou quando uma doação for recebida por uma ONG.
-------------

@@ -43,7 +43,7 @@ Crie o relatório de Liberações manualmente quantas vezes desejar ou programe-
 
 A geração do relatório leva alguns minutos, dependendo de quanta informação você deseja incluir. Nem sempre estará pronto instantaneamente e, até que esteja, você verá o status "Em preparação" na tela.
 
-Consulta ["Como analisar o relatório de Liberações?"](https://www.mercadopago.com.br/ajuda/28771) para entender melhor o seu relatório.
+> Consulta ["Como analisar o relatório de Liberações?"](https://www.mercadopago.com.br/ajuda/28771) para entender melhor o seu relatório.
 
 ### Valores do relatório
 
@@ -51,7 +51,7 @@ Dependendo das [tarifas e prazos](/settings/release-options) selecionados, o val
 
 Os prazos de liberação estão relacionados aos processos bancários e aos fluxos de intermediação quando as transações são feitas no Mercado Livre. Além disso, contestações e reclamações recebidas em vendas podem impactar a liberação do dinheiro.
 
-> Para obter a data exata de disponibilidade do dinheiro de uma transação, é importante revisar os [detalhes dos pagamentos creditados](https://www.mercadopago.com.br/activities/balance).
+> Para obter a data exata de disponibilidade do dinheiro de uma transação, é importante revisar os [detalhes dos pagamentos creditados.](https://www.mercadopago.com.br/activities/balance)
 
 ## Utilizar relatório
 

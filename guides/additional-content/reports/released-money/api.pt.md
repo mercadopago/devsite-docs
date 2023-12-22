@@ -12,7 +12,7 @@ Confira os campos que você pode configurar para ajustar as suas preferências a
 >
 > Importante
 > 
-> Configurar o atributo `frequency` não significa que o relatório será gerado automaticamente. A configuração será aplicada somente quando o agendamento automático for ativado. Para mais informações, confira a seção [Agendar relatório automático.](#bookmark_agendar_relatório_automático)
+> Configurar o atributo `frequency` não significa que o relatório será gerado automaticamente. A configuração será aplicada somente quando o agendamento automático for ativado. Para mais informações, confira a seção [Agendar relatório automático.](#bookmark_agendar_relatório_automaticamente)
 
 | Campo configurável        | Tipo       | Exemplo                                                                                                                | Descrição                                                                                                                                                                                                                                                                                                       |
 |---------------------------|------------|------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
