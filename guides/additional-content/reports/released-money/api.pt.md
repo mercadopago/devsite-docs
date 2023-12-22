@@ -12,7 +12,7 @@ Confira os campos que você pode configurar para ajustar as suas preferências a
 >
 > Importante
 > 
-> Configurar o atributo `frequency` não significa que o relatório será gerado automaticamente. A configuração será aplicada somente quando o agendamento automático for ativado. Para mais informações, confira a seção [Agendar relatório automático.](#bookmark_agendar_relatório_automaticamente)
+> Configurar o atributo `frequency` não significa que o relatório será gerado automaticamente. A configuração será aplicada somente quando o agendamento automático for ativado. Para mais informações, confira a seção [Agendar relatório automaticamente.](#bookmark_agendar_relatório_automaticamente)
 
 | Campo configurável        | Tipo       | Exemplo                                                                                                                | Descrição                                                                                                                                                                                                                                                                                                       |
 |---------------------------|------------|------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -33,7 +33,7 @@ Confira os campos que você pode configurar para ajustar as suas preferências a
 
 Você pode configurar seus relatórios conforme necessário. Abaixo, destacamos as chamadas de API disponíveis para que você possa gerenciar a configuração do seu relatório e, posteriormente, com base nessas configurações, gerar os relatórios.
 
-> Tenha o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/glossary) de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ à mão para consulta sempre que necessário ou para conferir algum termo técnico.
+> Tenha o [Glossário do relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/glossary) à mão para consulta sempre que necessário ou para conferir algum termo técnico.
 
 ## Criar uma nova configuração
 
@@ -347,7 +347,7 @@ request(options, callback);
 ```
 ]]]
 
-Na ausência de erros, será emitido um código de status HTTP 200 (Ok). A API responderá com uma estrutura JSON cujas propriedades representarão as características dos seus relatórios.
+Na ausência de erros, será emitido um código de status `HTTP 200 (Ok)`. A API responderá com uma estrutura JSON cujas propriedades representarão as características dos seus relatórios.
 
 #### Resposta
 
@@ -386,7 +386,7 @@ Atualize as configurações predefinidas dos seus relatórios quando necessário
 >
 > Nota
 >
-> Se, ao atualizar a configuração, você quiser alterar o atributo `frequency`, e já tiver ativado a criação automática dos seus relatórios, siga os seguintes passos: <br/><br/> 1. Cancele a criação agendada dos seus relatórios seguindo os passos descritos na seção [Desativar criação automática](#bookmark_2._desativar_criacao_automatica). <br/> 2. Atualize a configuração. <br/> 3. Habilite novamente a criação automática dos seus relatórios seguindo os passos da seção [Ativar criação automática](#bookmark_1._ativação).
+> Se, ao atualizar a configuração, você quiser alterar o atributo `frequency`, e já tiver ativado a criação automática dos seus relatórios, siga os seguintes passos: <br/><br/> 1. Cancele a criação agendada dos seus relatórios seguindo os passos descritos na seção **Desativar criação automática** em [Agendar relatório automaticamente.](#bookmark_agendar_relatório_automaticamente) <br/> 2. Atualize a configuração. <br/> 3. Habilite novamente a criação automática dos seus relatórios seguindo os passos da seção **Ativar criação automática** em [Agendar relatório automaticamente.](#bookmark_agendar_relatório_automaticamente)
 
 [[[
 ```curl
@@ -592,7 +592,7 @@ request(options, callback);
 ```
 ]]]
 
-Na ausência de erros, será emitido um código de status HTTP 200 (Ok). A API responderá com uma estrutura JSON cujas propriedades representarão a configuração que você atualizou.
+Na ausência de erros, será emitido um código de status `HTTP 200 (Ok)`. A API responderá com uma estrutura JSON cujas propriedades representarão a configuração que você atualizou.
 
 #### Resposta
 
