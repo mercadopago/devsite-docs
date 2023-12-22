@@ -19,9 +19,8 @@ To integrate Checkout Pro, follow the steps below.
 3. Select the **maximum installments** you wish to offer in your store.
 4. [Configure](https://www.mercadopago[FAKER][URL][DOMAIN]/costs-section#from-section=menu) the tariff that will be paid on each purchase and also offer interest-free installments to your customers.
 5. Select whether or not you want the customer to **automatically return** to your store after completing payment.
-6. Define whether customers will have access to **modal checkout**, a Mercado Pago payment form without leaving your store. If this option is disabled, buyers will be redirected to another page.
-7. If desired, activate **binary mode** when you do not want to leave payments in a pending or review state. With binary mode, payments will be automatically accepted or declined.
-8. Indicate the period in which the customer's payment preferences will be saved without the customer having to re-enter them.
+6. If desired, activate **binary mode** when you do not want to leave payments in a pending or review state. With binary mode, payments will be automatically accepted or declined.
+7. Indicate the period in which the customer's payment preferences will be saved without the customer having to re-enter them.
 
 Ready! Mercado Pago Checkout Pro is ready to receive payments from your store.
 

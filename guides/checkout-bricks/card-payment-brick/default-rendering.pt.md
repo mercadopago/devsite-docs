@@ -114,7 +114,7 @@ Uma vez criadas as configurações, insira o código abaixo para renderizar o Br
 >
 > Importante
 >
-> O id `cardPaymentBrick_container` da div html abaixo, deve corresponder ao valor enviado dentro do método create() da etapa anterior.
+> O id `cardPaymentBrick_container` da _div html_ abaixo, deve corresponder ao valor enviado dentro do método create() da etapa anterior.
 
 [[[
 ```html

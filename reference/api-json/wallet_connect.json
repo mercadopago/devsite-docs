@@ -35,7 +35,7 @@
             },
             "schema": {
               "type": "string",
-              "example": "YOUR_ACCESS_TOKEN"
+              "example": "PLATFORM_ID"
             }
           }
         ],
@@ -272,35 +272,7 @@
             "required": true,
             "schema": {
               "type": "string",
-              "example": "b1234e5678b91c23a456e78912345b67"
-            }
-          },
-          {
-            "name": "client.id",
-            "in": "query",
-            "description": {
-              "en": "Unique ID that identifies a specific Client",
-              "pt": "ID único que identifica um cliente específico",
-              "es": "ID único que identifica un cliente específico"
-            },
-            "required": true,
-            "schema": {
-              "type": "number",
-              "example": "<CLIENT.ID>"
-            }
-          },
-          {
-            "name": "caller.id",
-            "in": "query",
-            "description": {
-              "en": "Unique ID that identifies a specific Caller",
-              "pt": "ID único que identifica um Caller específico",
-              "es": "ID único que identifica un Caller específico"
-            },
-            "required": true,
-            "schema": {
-              "type": "number",
-              "example": "<CALLER.ID>"
+              "example": "<AGREEMENT.ID>"
             }
           },
           {
@@ -313,7 +285,7 @@
             },
             "schema": {
               "type": "string",
-              "example": "YOUR_ACCESS_TOKEN"
+              "example": "PLATFORM_ID"
             }
           }
         ],
