@@ -1,84 +1,51 @@
-# How to use the report?
+# Report uses
 
-Once the report is ready and downloaded, you will have a file to review the spreadsheets or import into the reconciliation program you use.
+Once the report is ready and downloaded, you will have a file ready to consult spreadsheets and import them into the program you use.
 
-To review the report we recommend downloading it in .csv format to open it in the program that you view it. Configure your program to support the UTF-8 format, so you avoid reading problems.
+To review the report, we recommend downloading it in CSV format to open it in a program that can visualize it. The file should be configured in UTF-8 format to avoid reading issues.
 
-## What does the report contain?
+## Report content
 
-The report is composed by:
-
-| Report composition | Description |
+| Report field | Description |
 | --- | --- |
-| Initial Available Balance |<br/> Initial balance.<br/><br/>|
-| Release |<br/> The detail of the money releases that includes the initial balance.<br/><br/> |
+| Initial Available Balance |<br/> Initial balance. Indicates the amount available on the initial date of the period you selected for reconciliation. <br/><br/>|
+| Release |<br/>Details of releases of money, including the initial balance and transactions impacting the total balance. <br/><br/> |
 | Block | <br/>Money blocks due to disputes.<br/><br/> |
-| Unblock |<br/>Unlocks for the resolution of disputes.<br/><br/>|
-| Subtotal | <br/>The sum of the operations that make up each section.<br/><br/>|
-| Total| <br/> It is the final result composed of the sum of all subtotals. <br/><br/>That is to say:<br/> subtotal `Release` + subtotal `Block` + subtotal `Unblock` = total result<br/><br/> |
+| Unblock |<br/> Unblocks after dispute resolution.<br/><br/>|
+| Subtotal | <br/>Sum of transactions within each section.<br/><br/>|
+| Total| <br/> Final result composed of the sum of all subtotals. <br/><br/>In other words:<br/> subtotal `Release` + subtotal `Block` + subtotal `Unblock` = total result. <br/><br/>It is the difference between the total credited net amount and the total debited net amount. |
 
-In addition, the report reflects the accounting concepts of *owe* (money you must pay) and *will have* (money you must collect) in two columns, one for each concept:
+Additionally, the report reflects accounting concepts of debit (money you need to pay) and credit (money you are due to receive), organizing the report into two columns, one for each concept:
 
-
-> Your **will have** will be seen in the `NET_CREDIT` column.
+> Your **credit** will be in the `NET_CREDIT_AMOUNT` column.
 ><br>
-> Your **owe** will be seen in the `NET_DEBIT` column.
+> Your **debt** will be in the `NET_DEBIT_AMOUNT` column.
 
-You will see the available balance from the released transactions in the `NET_CREDIT` (credited) and `NET_DEBIT` (debited) columns, depending on whether the amount is positive or negative. You will also see there the gross amount and the financing costs, taxes and shipping costs that we deducted to reach the net amount.
+The available balances of transactions are displayed in the `NET_CREDIT` (credit) and `NET_DEBIT` (debit) columns according to positive or negative values. In these fields, the gross amount and discounts related to financing, taxes, and shipping costs are also detailed, resulting in the final net amount.
 
-**What happens if a transfer fails?**
-
-If this happens, the report is still valid. The money returns to your account and the transaction will appear in the report as a new line in the `NET_CREDIT` column.
+If a transfer is not completed, the report remains valid. The amount will be refunded to your account, and the transaction will be displayed on a new line in the `NET_CREDIT` column.
 
 > NOTE
 >
-> Note
+> Important
 >
-> Have the [Glossary of Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/glossary) on hand to review it when needed or want to review a technical term.
+> Have the [Releases Report Glossary](https://www.mercadopago.com.br/developers/en/guides/additional-content/reports/released-money/glossary) on hand to consult when needed to check any technical term.
 
 ## Report example
 
-Note how the Release report is composed in this example to identify the sections and read your own reports:
-
-![Mercado Pago Release report example](/images/manage-account/reports/example-release-en.jpg)
-
-The default version will show an extended view of the columns. The final report will have as much detail as possible.
-
-----[mpe]----
-## How do I analyze the reports generated from January 2022 onwards?
-------------
-----[mlu]----
-## How do I analyze the reports generated from March 2022 onwards?
-----[mlc, mco]----
-## How do I analyze the reports generated from August 2022 onwards?
-------------
-----[mla, mlm]----
-## How do I analyze the reports generated from October 2022 onwards?
-------------
-----[mlb]----
-## How do I analyze the reports generated from January 2023 onwards?
-------------
-----[mpe, mlu, mla, mlm, mlc, mco, mlb]----
-The reports generated as of  ------------ ----[mpe]----January 2022------------  ----[mlu]----March 2022------------ ----[mla, mlm]----October 2022------------  ----[mco, mlc]----August 2022------------ ----[mlb]----January 2023------------  ----[mpe, mlu, mla, mlm, mlc, mco, mlb]----  have the following characteristics:
-
-1. The movements are displayed in chronological order, which allows you to identify them more easily and better control your orders.
-2. If there is a complaint or chargeback due to a problem with the service or the product provided, the respective amount is withheld until the mediation is resolved. This information is included in your report and you can find it by searching for the prefix "reserve-".  
-3. The movements related to the money withdrawals and/or transfers from your available money are displayed as "Payout", and all the mediations that may arise when a complaint is initiated or resolved are shown as "Dispute". You can review this glossary to check the description of all the other movements and terms.
-
-## What information is in the report?
-
-The report has a simplified structure to make it easier to understand it:
-
-| Report Composition | Description |
-| --- | --- |
-| Initial Available Balance |<br/> Initial balance. Indicates the amount that was available on the initial date of the period you selected to make the reconciliation.  <br/><br/>|
-| Release |<br/> The detail of the transactions that impact the total balance. <br/><br/> |
-| Total| <br/> It is the difference between the total net amount credited and the total net amount debited. <br/><br/> |
-
-## Example of a report
-
-Check in this example how the report "Releases" is composed to identify the sections and analyze your own reports:
-
-![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/example-nledger-en.jpg) 
+Observe what comprises the Releases Report in the following example to identify the sections and analyze your own reports:
+----[mla]----
+![Reporte de liquidaciones](/images/manage-account/reports/example-release-es.jpg)
 
 ------------
+----[mlm, mlb, mlc, mco, mlu, mpe]----
+![Reporte de liberaciones](/images/manage-account/reports/example-release-es.jpg)
+
+------------
+The default version will show an extended view of the columns. The final report will have the most detailed information possible.
+
+## Report organization
+
+See the following example for the organization of the report:
+
+![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/example-nledger-es.jpg) 
