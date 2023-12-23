@@ -37,8 +37,8 @@ future_product_avaible:
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_linkAvailable: true
- - card_linkProof: /developers/es
- - card_linkProofDescription: test
+ - card_linkProof: /developers/es/live-demo/card-payment-brick
+ - card_linkProofDescription: Acceder a demostración
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
@@ -46,9 +46,9 @@ future_product_avaible:
  - card_button: /developers/es/docs/checkout-bricks/payment-brick/introduction
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
- - card_linkAvailable: false
- - card_linkProof:
- - card_linkProofDescription: 
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/payment-brick
+ - card_linkProofDescription: Acceder a demostración
  - card_avaible: true
  - card_icon: Loading
  - card_title: Status Screen Brick
@@ -56,9 +56,9 @@ future_product_avaible:
  - card_button: /developers/es/docs/checkout-bricks/status-screen-brick/introduction
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
- - card_linkAvailable: false
- - card_linkProof:
- - card_linkProofDescription: 
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/status-screen-brick
+ - card_linkProofDescription: Acceder a demostración
  - card_avaible: true
  - card_icon: Wallet
  - card_title: Wallet Brick
@@ -66,9 +66,9 @@ future_product_avaible:
  - card_button: /developers/es/docs/checkout-bricks/wallet-brick/introduction
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
- - card_linkAvailable: false
- - card_linkProof:
- - card_linkProofDescription:
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/wallet-brick
+ - card_linkProofDescription: Acceder a demostración
  - card_avaible: false
  - card_icon: Check
  - card_title: Review & Confirm
@@ -115,6 +115,9 @@ future_product_avaible:
  - card_button: /developers/es/docs/checkout-bricks/card-payment-brick/introduction
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/card-payment-brick
+ - card_linkProofDescription: Acceder a demostración
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
@@ -122,6 +125,9 @@ future_product_avaible:
  - card_button: /developers/es/docs/checkout-bricks/payment-brick/introduction
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/payment-brick
+ - card_linkProofDescription: Acceder a demostración
  - card_avaible: true
  - card_icon: Loading
  - card_title: Status Screen Brick
@@ -129,6 +135,9 @@ future_product_avaible:
  - card_button: /developers/es/docs/checkout-bricks/status-screen-brick/introduction
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/status-screen-brick
+ - card_linkProofDescription: Acceder a demostración
  - card_avaible: true
  - card_icon: Wallet
  - card_title: Wallet Brick
@@ -136,6 +145,9 @@ future_product_avaible:
  - card_button: /developers/es/docs/checkout-bricks/wallet-brick/introduction
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/wallet-brick
+ - card_linkProofDescription: Acceder a demostración
  - card_avaible: true
  - card_icon: Check
  - card_title: Review & Confirm
@@ -143,6 +155,9 @@ future_product_avaible:
  - card_button: /developers/es/docs/checkout-bricks/payment-brick/advanced-features/add-confirmation-step
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
  - card_avaible: false
  - card_icon: User
  - card_title: User Info Brick
@@ -150,6 +165,9 @@ future_product_avaible:
  - card_button:
  - card_buttonDescription:
  - card_pillText: MUY PRONTO
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
  - card_avaible: false
  - card_icon: Truck
  - card_title: Shipping Brick
@@ -157,6 +175,9 @@ future_product_avaible:
  - card_button:
  - card_buttonDescription:
  - card_pillText: MUY PRONTO
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
 ---
 
 ------------
@@ -173,6 +194,9 @@ future_product_avaible:
  - card_button: /developers/es/docs/checkout-bricks/card-payment-brick/introduction
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/card-payment-brick
+ - card_linkProofDescription: Acceder a demostración
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
@@ -180,6 +204,9 @@ future_product_avaible:
  - card_button: /developers/es/docs/checkout-bricks/payment-brick/introduction
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/payment-brick
+ - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Loading
  - card_title: Status Screen Brick
@@ -187,6 +214,12 @@ future_product_avaible:
  - card_button: /developers/es/docs/checkout-bricks/status-screen-brick/introduction
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/status-screen-brick
+ - card_linkProofDescription: Acceder a demostración
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Wallet
  - card_title: Wallet Brick
@@ -194,6 +227,9 @@ future_product_avaible:
  - card_button: /developers/es/docs/checkout-bricks/wallet-brick/introduction
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/wallet-brick
+ - card_linkProofDescription: Acceder a demostración
  - card_avaible: false
  - card_icon: Check
  - card_title: Review & Confirm
@@ -201,6 +237,9 @@ future_product_avaible:
  - card_button:
  - card_buttonDescription:
  - card_pillText: MUY PRONTO
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
  - card_avaible: false
  - card_icon: User
  - card_title: User Info Brick
@@ -208,6 +247,9 @@ future_product_avaible:
  - card_button:
  - card_buttonDescription:
  - card_pillText: MUY PRONTO
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
  - card_avaible: false
  - card_icon: Truck
  - card_title: Shipping Brick
@@ -215,6 +257,9 @@ future_product_avaible:
  - card_button:
  - card_buttonDescription:
  - card_pillText: MUY PRONTO
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
 ---
 
 ------------
@@ -286,6 +331,10 @@ anchored_menu:
  - link: /developers/es/live-demo/card-payment-brick
  - title: Payment Brick
  - link: /developers/es/live-demo/payment-brick
+ - title: Status Screen Brick
+ - link: /developers/es/live-demo/status-screen-brick
+ - title: Wallet Brick
+ - link: /developers/es/live-demo/wallet-brick
 ---
 
 
