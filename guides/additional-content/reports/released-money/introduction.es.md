@@ -1,65 +1,64 @@
 ----[mla]----
-# ¿Qué es el reporte de Liquidaciones?
+# Reporte de Liquidaciones
 ------------
 
 ----[mlm, mlb, mlc, mco, mlu, mpe]----
-# ¿Qué es el reporte de Liberaciones?
+# Reporte de Liberaciones
 ------------
 
-El reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ es un **informe descargable que te permite conocer cómo está compuesto tu dinero disponible en Mercado Pago.** Contiene el **detalle de todos los fondos involucrados en un período de fechas,** e incluye los casos de ----[mla]---- liquidación ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberación ------------ de dinero como de bloqueos y desbloqueos.
+El Reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ es un archivo que se puede descargar y detalla el saldo disponible en tu cuenta de Mercado Pago. No solo muestra el valor total disponible, sino que también proporciona información sobre las transacciones realizadas en un período determinado, incluyendo situaciones como bloqueos y desbloqueos de fondos.
 
+Además, le permite saber si su dinero se encuentra en un estado disponible o retirado, y puede solicitar esta información para el período de fechas que le resulte más conveniente. Ten presente que actualmente este reporte solo se genera a través de tu computadora.
+
+----[mpe]----
+## Análisis de los reportes a partir de enero de 2022
+------------
+----[mlu]----
+## Análisis de los reportes a partir de marzo de 2022
+----[mlc, mco]----
+## Análisis de los reportes a partir de agosto de 2022
+------------
+----[mla, mlm]----
+## Análisis de los reportes a partir de octubre de 2022
+------------
 ----[mlb]----
-> WARNING
->   
-> Importante
->
-> Los informes que generes a partir del 1 de enero de 2023 mostrarán los movimientos de tu dinero en orden cronológico, por eso podrás identificarlos más fácilmente y controlar mejor las finanzas de tu negocio. [Conoce cómo utilizarlo.](https://bit.ly/3QiCD2f)
+## Análisis de los reportes a partir de enero de 2023
 ------------
 
-## ¿Cómo descargo el reporte?
+Los informes que genere a partir de ----[mpe]---- enero de 2022------------  ----[mlu]---- marzo de 2022------------ ----[mla, mlm]---- octubre de 2022------------  ----[mco, mlc]---- agosto de 2022------------ ----[mlb]---- enero de 2023------------ tienen las siguientes características: 
 
-Ten en cuenta que la generación del reporte lleva unos minutos dependiendo de cuánta información quieras que incluya. No siempre estará listo al instante y, hasta que lo esté, verás el estado *En preparación* en la pantalla.
+1. Los movimientos ahora se presentan en el orden en que ocurrieron, con lo cual puedess identificarlos con mayor facilidad y controlar tus ventas.
+2. En caso de reclamación o contracargo relacionada con algún problema en el servicio o producto que vendiste, el valor correspondiente se retiene hasta que se resuelva la mediación. Esta información se refleja en su reporte y puede encontrarse buscando el prefijo "reserve-".
+3. Las transacciones relacionadas con retiros y/o transferencias de su saldo disponible aparecen como _payout_, y todas las mediaciones que surgen cuando se inicia o resuelve una reclamación aparecen como _dispute_. Para obtener la descripción de otras transacciones y términos, consulte [el glosario](/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use).
+4. Encontrará una nueva columna llamada "Sale detail" o "Detalle de venta" que proporciona información detallada sobre los artículos vendidos, facilitando la conciliación y el control de sus ventas. Cada entrada en esta columna muestra el primer elemento de la venta, seguido del agrupamiento de otros artículos.
 
-Una vez disponible, estará en tu bandeja de reportes y siempre lo podrás descargar de dos formas:
+## Descargar reporte
 
-* Desde un link de descarga que te enviaremos por e-mail.
-* Desde tu cuenta de Mercado Pago, en ----[mla, mlm]---- *Reportes de tus cobros y estados de cuenta.* ------------ ----[mlb, mpe, mlu, mco]---- *Reportes*. ------------ 
+Siga esta ruta para saber cómo generar y descargar el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------:
+**Informes y facturación** -> **Informes de ventas y extractos de cuenta** -> ----[mla]---- **Liquidaciones** ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- **Liberaciones** ------------.
+
+### Crear reporte por API
+
+Genera el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ manualmente tantas veces desee o prográmelo según sus necesidades de frecuencia a través de la [API](/developers/es/docs/checkout-pro/additional-content/reports/released-money/api).
+
+La generación del reporte lleva algunos minutos dependiendo de cuánta información desee incluir. No siempre estará listo instantáneamente y, hasta que lo esté, verá el estado "En preparación" en la pantalla.
+
+> Consulte ["Cómo analizar el reporte de ----[mla]---- Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones------------?"](https://www.mercadopago.com.ar/ayuda/28771) para comprender mejor su reporte.
 
 ### Valores del reporte
 
-Dependiendo de las [tasas y plazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options) que elijas, el dinero que ganes por una venta se va a liquidar un tiempo después de acreditado el cobro. Por esta razón, el valor total que verás en el reporte no siempre va a coincidir con tu saldo total o con el valor que veas en los reportes de facturación.
+Dependiendo de las [tasas y plazos](https://www.mercadopago.com.ar/settings/release-options) seleccionados, el valor obtenido con la venta se va a liquidar un tiempo después de acreditado el cobro. Por lo tanto, el valor total indicado en el reporte puede no coincidir siempre con su saldo total o con el valor total en los reportes de facturación.
 
-Los plazos de liquidación tienen que ver con los tiempos de los bancos o por los flujos de intermediación cuando las operaciones se realizan en Mercado Libre. Otras operaciones que pueden afectar la liquidación de tu dinero son los Contracargos y Reclamos que puedas recibir por una venta.
+Los plazos de liberación están relacionados con los procesos bancarios y los flujos de intermediación cuando las transacciones se realizan en Mercado Libre. Además, las reclamaciones y contracargos recibidas en las ventas pueden afectar la liberación del dinero.
 
-> Para saber la fecha exacta en la que estará disponible el dinero de una operación, revisa el [detalle de tus cobros acreditados](https://www.mercadopago[FAKER][URL][DOMAIN]/activities/balance).
+> Para obtener la fecha exacta de disponibilidad del dinero de una transacción, es importante revisar los [detalles de los pagos acreditados.](https://www.mercadopago.com.ar/activities/balance)
 
-## Para qué usar el reporte
+## Uso del reporte
 
-### Usa el reporte para conciliar
+El reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ es una herramienta importante tanto para la conciliación como para el análisis de su historial financiero. Detalla las transacciones de la cuenta, proporciona comprensión y conciliación del saldo disponible en fechas específicas y ofrece datos de cada transacción, incluyendo la fecha, concepto y el monto. 
 
-**Este reporte se usa para conciliar** el dinero que existe en tu cuenta en un momento determinado e incluye las transacciones que componen a esos movimientos. 
+Además, este reporte presenta el historial completo del dinero liberado, abordando eventos como transferencias bancarias, disputas, reembolsos y estornos, y destaca las cuotas liquidadas en comparación con las pendientes de pago.
 
-Genera el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ cada vez que necesites conciliar el detalle del dinero liberado entre dos fechas. Podrás saber cuándo se hizo cada transacción, en qué concepto ----[mlb, mpe, mlu, mco]---- y por qué monto, incluyendo los casos de bloqueo y desbloqueo. ------------ ----[mla, mlm]---- y por qué monto.  ------------ 
-
-### Usa el reporte para conocer tu historial
-
-Además, puedes usar el reporte para conocer el historial de dinero ----[mla]---- liquidado ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberado ------------ entre dos fechas, el detalle de los eventos que componen una transferencia bancaria, el detalle de disputas, reembolsos, envíos, contracargos, impuestos y otras operaciones. También verás el detalle de las cuotas liquidadas y las cuotas que aún faltan saldar.
-
-----[mpe, mlu]----
-> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary) de  Liberaciones para revisarlo cuando lo necesites o quieras consultar algún término técnico.
-
-> INFO
->
-> Encuentra con mayor facilidad todos tus movimientos
->
-> A partir de ------------ ----[mpe]----enero de 2022 ------------  ----[mlu]---- marzo de 2022 ------------ ----[mpe, mlu]---- este reporte muestra tus movimientos en orden cronológico, para que sea más fácil identificar cuándo se realizaron. Este cambio no se visualiza en los reportes que generes con fechas previas.
-
-------------
-----[mlm, mlb, mlc, mco, mla]----
 > NOTE
 >
-> Nota
->
-> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla]---- para revisarlo cuando lo necesites o quieras consultar algún término técnico.
-
-------------
+> Utilice el [Glosario del Reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------](/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use) para consultar términos técnicos, si es necesario.
