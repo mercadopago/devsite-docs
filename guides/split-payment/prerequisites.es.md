@@ -1,6 +1,8 @@
 # Requisitos previos
 
-> WARNING
+Para integrar la solución de Split de Pagos, es importante cumplir con los requisitos que se muestran a continuación.
+
+> NOTE
 >
 > Importante
 >

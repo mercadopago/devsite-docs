@@ -1,20 +1,19 @@
 # Criar aplicação
 
-1. Acesse [Suas integrações](https://www.mercadopago.com.br/developers/panel/app). Uma vez lá, clique no botão **Criar aplicação**, localizado no canto superior direito.
+Crie sua aplicação para integrar com a solução Split de Pagamentos seguindo os passos abaixo. 
 
-   > WARNING
+   > NOTE
    >
    > Importante
    >
-   > Durante a criação da sua aplicação, pode ser necessário realizar uma reautenticação de identidade. Se você já concluiu o processo de verificação, será solicitada a reautenticação. Se ainda não o fez, será redirecionado para enviar os documentos necessários. Este passo adicional de autenticação é essencial para proteger sua conta e garantir a conformidade das operações. Siga as instruções fornecidas para criar sua aplicação com sucesso.
+   > Durante a criação da sua aplicação, talvez seja necessário reautenticar sua identidade. Se já concluiu a verificação, será solicitada a reautenticação. Caso contrário, será redirecionado para enviar os documentos necessários. Esse passo extra é essencial para proteger sua conta e garantir a conformidade das operações. Você pode consultar a [documentação sobre o Painel do desenvolvedor](/developers/pt/docs/split-payment/additional-content/your-integrations/dashboard) se tiver dúvidas sobre como usá-lo.
 
+1. Acesse [Suas integrações](https://www.mercadopago.com.br/developers/panel/app). Uma vez lá, clique no botão **Criar aplicação**, localizado no canto superior direito.
 2. Insira um nome para identificar sua aplicação (você tem um limite de 50 caracteres).
 3. Escolha a solução de **Pagamentos online**.
 4. Ao escolher o produto a ser integrado, você pode optar por "Checkout Pro" ou "Checkout API".
 5. Escolha o modelo de integração **Marketplace**.
 6. Após preencher as informações solicitadas, clique em **Criar aplicação** e pronto!
-
-> Você pode consultar a [documentação sobre o Painel do Desenvolvedor](/developers/pt/docs/split-payment/additional-content/your-integrations/dashboard) se tiver dúvidas sobre como usá-lo.
 
 ## Configurar o Redirect URL
 

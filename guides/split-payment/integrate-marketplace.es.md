@@ -21,7 +21,7 @@ Para realizar la integración deberás seguir el flujo de integración habitual 
 4. Para determinar el porcentaje de comisión del mercado:
 
     - Si el checkout es Pro, completa el parámetro `marketplace_fee` con el monto que se cobrará por cada preferencia de pago creada en la API **/checkout/preferences**.
-
+    <br>
     #### Ejemplo
     ```json
     {
@@ -38,7 +38,7 @@ Para realizar la integración deberás seguir el flujo de integración habitual 
     }
     ```
     - Si el checkout es ----[mla, mlu, mpe, mco, mlc, mlm]----API------------ ----[mlb]----Transparente------------, completa el parámetro `application_fee` con el monto que se cobrará por cada pago creado en la API **/payments**.
-
+    <br>
     #### Ejemplo
     ```json
     {

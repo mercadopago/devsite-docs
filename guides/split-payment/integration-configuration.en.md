@@ -1,6 +1,6 @@
 # Integration configuration
 
-To initiate integration with the Split Payments solution, it is necessary to configure your integration. To do so, follow the steps below:
+To set up the integration with the Split Payments solution, follow the steps below:
 
    1. [Create an application](/developers/en/docs/split-payment/integration-configuration/create-application)
    2. [Request permission from your users](/developers/en/docs/split-payment/integration-configuration/request-permission)

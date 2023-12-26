@@ -1,6 +1,6 @@
 # Configuração da integração
 
-Para iniciar a integração com a solução de Pagamentos Divididos, é necessário configurar a sua integração. Para fazer isso, siga os passos abaixo:
+Para configurar a integração com a solução Split de Pagamentos, siga as etapas abaixo:
 
    1. [Criar uma aplicação](/developers/pt/docs/split-payment/integration-configuration/create-application)
    2. [Solicitar permissão aos seus usuários](/developers/pt/docs/split-payment/integration-configuration/request-permission)

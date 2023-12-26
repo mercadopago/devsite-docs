@@ -2,6 +2,13 @@
 
 Utilize o código de autorização obtido na etapa anterior para adquirir as credenciais do usuário por meio da [API de OAuth](/developers/pt/reference/oauth/_oauth_token/post), permitindo a gestão de suas vendas.
 
+| Parâmetro                | Descrição                                                                                      |
+|--------------------------|--------------------------------------------------------------------------------------------------|
+| `<CLIENT_ID>`            | Valor de APP_ID obtido nos detalhes de sua aplicação.                                      |
+| `<CLIENT_SECRET>`        | Sua SECRET_KEY, também disponível nos detalhes de sua aplicação.                              |
+| `<AUTHORIZATION_CODE>`   | Código de autorização obtido ao redirecionar o usuário de volta para o seu site.                     |
+| `<REDIRECT_URI>`         | Deve ser a mesma Redirect URI configurada em sua aplicação.                                     |
+
 ```curl
 curl -X POST \
      -H 'accept: application/json' \
@@ -13,13 +20,6 @@ curl -X POST \
      -d 'code=<AUTHORIZATION_CODE>' \
      -d 'redirect_uri=<REDIRECT_URI>'
 ```
-
-| Parâmetro                | Descrição                                                                                      |
-|--------------------------|--------------------------------------------------------------------------------------------------|
-| `<CLIENT_ID>`            | Valor de APP_ID obtido nos detalhes de sua aplicação.                                      |
-| `<CLIENT_SECRET>`        | Sua SECRET_KEY, também disponível nos detalhes de sua aplicação.                              |
-| `<AUTHORIZATION_CODE>`   | Código de autorização obtido ao redirecionar o usuário de volta para o seu site.                     |
-| `<REDIRECT_URI>`         | Deve ser a mesma Redirect URI configurada em sua aplicação.                                     |
 
 #### Resposta
 

@@ -1,6 +1,8 @@
 # Prerequisites
 
-> WARNING
+To integrate the Split Payments solution, it is important to meet the requirements shown below.
+
+> NOTE
 >
 > Important
 >
