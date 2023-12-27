@@ -15,17 +15,11 @@ available_countries: mla, mlb, mlm, mlc, mpe
 ---
 
 ---
-bullet_section_with_media:
- - type: normal
- - title: Simplify payment splitting
- - message: We simplify your B2B and B2C management by splitting payments between your company and each participant in a transaction. Stop worrying about fees, taxes, and commission splitting – we do it for you.
- - image: /split-payment/payment-split-02.png
----
-
----
 bullet_section_with_media: 
  - title: Advantages
  - type: normal
+ - benefit_title: Simplify payment splitting
+ - benefit_message: We simplify your B2B and B2C management by splitting payments between your company and each participant in a transaction. Stop worrying about fees, taxes, and commission splitting – we do it for you.
  - benefit_title: Monitor and track your sales
  - benefit_message: With Split Payments, you have a 360-degree view of all your sellers' sales. Track in detail the payments and fees in detail for each vendor with real-time unified reports.
  - benefit_title: Increase operational efficiency

@@ -15,17 +15,11 @@ available_countries: mla, mlb, mlm, mlc, mpe
 ---
 
 ---
-bullet_section_with_media:
- - type: normal
- - title: Simplifique a divisão de pagamentos
- - message: Facilite sua gestão B2B e B2C, dividindo o pagamento entre sua empresa e cada participante de uma transação. Pare de se preocupar com taxas, impostos e divisão de comissões, nós cuidamos disso para você.
- - image: /split-payment/split-de-pago-02.png
----
-
----
 bullet_section_with_media: 
  - title: Vantagens
  - type: normal
+ - benefit_title: Simplifique a divisão de pagamentos
+ - benefit_message: Facilite sua gestão B2B e B2C, dividindo o pagamento entre sua empresa e cada participante de uma transação. Pare de se preocupar com taxas, impostos e divisão de comissões, nós cuidamos disso para você.
  - benefit_title: Controle e acompanhe suas vendas
  - benefit_message: Com o Split de Pagamentos, você tem uma visão completa de todas as vendas dos seus vendedores. Acompanhe detalhadamente os pagamentos e taxas de cada vendedor com relatórios unificados em tempo real.
  - benefit_title: Aumente sua eficiência operacional
