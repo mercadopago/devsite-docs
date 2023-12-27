@@ -39,6 +39,18 @@ bullet_section_with_media:
 
 Soluciones para quienes vendan por el sitio, desde WhatsApp o redes sociales.
 
+----[mlb]----
+| Solución | Descripción | Complejidad de integración |
+|:---|:---|:---|
+| Checkout Pro | Procesa pagos en el ambiente de Mercado Pago, de manera simple y segura con un diseño listo para usar. Desarrollamos este checkout optimizado para aumentar la conversión. | 🔵🔵⚪⚪  |
+| Checkout Transparente | Una solución versatil para que construyas tu procesador de pagos en tu sitio. Tú controlas toda la experiencia de configuraciones básicas y avanzadas. | 🔵🔵🔵🔵    |
+| Link de pago | Crea un link de pago en pocas etapas y úsalo en el momento para recibir pagos por chat y redes sociales. No necesitas conocimientos técnicos. | 🔵⚪⚪⚪ |
+| Suscripciones | Automatiza los cobros recurrentes a través de una suscripción. Puedes configurar la frecuencia de los pagos y el monto a cobrar. | 🔵🔵⚪⚪  |
+| Checkout Bricks | Una solución de pagos modular, segura y personalizable, en donde tú controlas la experiencia completa y eliges qué brick y diseño utilizar según las necesidades de tu sitio. | 🔵🔵🔵⚪   |
+| Wallet Connect | Procesa los pagos de forma automática a través de la billetera digital de Mercado Pago. Con Wallet Connect es posible realizar pagos utilizando el saldo disponible en la cuenta Mercado Pago o tarjetas. | 🔵🔵🔵🔵   |
+------------
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
 | Solución | Descripción | Complejidad de integración |
 |:---|:---|:---|
 | Checkout Pro | Procesa pagos en el ambiente de Mercado Pago, de manera simple y segura con un diseño listo para usar. Desarrollamos este checkout optimizado para aumentar la conversión. | 🔵🔵⚪⚪  |
@@ -47,20 +59,31 @@ Soluciones para quienes vendan por el sitio, desde WhatsApp o redes sociales.
 | Suscripciones | Automatiza los cobros recurrentes a través de una suscripción. Puedes configurar la frecuencia de los pagos y el monto a cobrar. | 🔵🔵⚪⚪  |
 | Checkout Bricks | Una solución de pagos modular, segura y personalizable, en donde tú controlas la experiencia completa y eliges qué brick y diseño utilizar según las necesidades de tu sitio. | 🔵🔵🔵⚪   |
 | Wallet Connect | Procesa los pagos de forma automática a través de la billetera digital de Mercado Pago. Con Wallet Connect es posible realizar pagos utilizando el saldo disponible en la cuenta Mercado Pago o tarjetas. | 🔵🔵🔵🔵   |
+------------
+
 
 ## Ofrece pagos presenciales
 
 Soluciones para quienes venden desde casa, en la calle, en el coche o en la tienda. 
 
+----[mla]----
 | Solución | Descripción | Complejidad de integración |
 |:---|:---|:---|
 | Código QR | Elige un modelo de integración para generar códigos QR y brindar una experiencia completa de pago presencial. | 🔵🔵⚪⚪  |
 | Point de Mercado Pago | Integra el Point de Mercado Pago y conecta el lector de tarjeta a cualquier sistema iOS o Android para aceptar pagos en caja. | 🔵🔵🔵⚪   |
 | Mercado Pago Delivery | Una solución de entrega de comidas a demanda, en la que el cliente accede a un listado de restaurantes registrados, realiza su pedido y paga directamente a través de la app de Mercado Pago. | 🔵🔵⚪⚪  |
+------------
+
+----[mlb, mlm, mpe, mco, mlu, mlc]----
+| Solución | Descripción | Complejidad de integración |
+|:---|:---|:---|
+| Código QR | Elige un modelo de integración para generar códigos QR y brindar una experiencia completa de pago presencial. | 🔵🔵⚪⚪  |
+| Point de Mercado Pago | Integra el Point de Mercado Pago y conecta el lector de tarjeta a cualquier sistema iOS o Android para aceptar pagos en caja. | 🔵🔵🔵⚪   |
+------------
 
 ## Procesa pagos en plataformas de e-commerce
 
-Instala el Checkout Pro o el Checkout API en tu tienda y **comienza a ofrecer pagos con Mercado Pago** en tu plataforma de e-commerce. Integrar soluciones conectándote a una plataforma es simple y rápido. Todo el proceso se realiza en el panel de negocios de Mercado Pago y en la propia plataforma.
+Instala el Checkout Pro o el ----[mla, mlm, mpe, mco, mlu, mlc]----Checkout API ------------ ----[mlb]----Checkout Transparente ------------ en tu tienda y **comienza a ofrecer pagos con Mercado Pago** en tu plataforma de e-commerce. Integrar soluciones conectándote a una plataforma es simple y rápido. Todo el proceso se realiza en el panel de negocios de Mercado Pago y en la propia plataforma.
 
 Encuentra nuestro plugin en las plataformas **Shopify**, **WooCommerce**, **Tiendanube**, **VTEX**, **Wix**, **Adobe Commerce (Magento)**, y muchas más. 
 
