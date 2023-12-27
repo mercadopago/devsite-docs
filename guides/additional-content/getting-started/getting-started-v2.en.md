@@ -19,7 +19,7 @@ bullet_section_with_media:
  - image: /getting-started/credenciales.png
 ---
 
-The first step to start integrating, whether for yourself or for someone else, is to **have a Mercado Pago or Mercado Libre account**. If you don't have a Mercado Pago account, , ----[mlb]----[**click here**](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[**click here**](https://www.mercadopago.com.ar/hub/registration/landing) ------------  ----[mlm]----[**click here**](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[**click here**](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[**click here**](https://www.mercadopago.com.co/hub/registration/landing) ------------ ----[mlu]----[**click here**](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[**click here**](https://www.mercadopago.cl/hub/registration/landing) ------------ to create one for free.
+The first step to start integrating, whether for yourself or for someone else, is to **have a Mercado Pago or Mercado Libre account**. If you don't have a Mercado Pago account, ----[mlb]----[**click here**](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[**click here**](https://www.mercadopago.com.ar/hub/registration/landing) ------------  ----[mlm]----[**click here**](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[**click here**](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[**click here**](https://www.mercadopago.com.co/hub/registration/landing) ------------ ----[mlu]----[**click here**](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[**click here**](https://www.mercadopago.cl/hub/registration/landing) ------------ to create one for free.
 
 If you already have a Mercado Libre account, access [Your integrations](https://www.mercadopago.com/developers/panel/app) with the same username and password.
 
@@ -51,6 +51,8 @@ Solutions for those who sell on the website, through WhatsApp, or social media.
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
+| Solution | Description | Integration Complexity |
+|:---|:---|:---|
 | Checkout Pro | Process payments in Mercado Pago in a simple and secure way with a ready-to-use design. We have developed this optimized checkout to increase your conversion. | 🔵🔵⚪⚪ |
 | Checkout API | A versatile solution so that you build your payment processor on your website. You control the entire experience, from basic to advanced settings. | 🔵🔵🔵🔵 |
 | Payment Link | Create a payment link in just a few steps and use it to collect payments via chat and social networks. No technical knowledge is required. | 🔵⚪⚪⚪ |
