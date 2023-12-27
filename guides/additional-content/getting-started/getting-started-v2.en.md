@@ -7,7 +7,7 @@ content_section_with_media:
 
 # Benefits of choosing Mercado Pago
 
-Whether you want to integrate Mercado Pago for your business or you are a developer integrating for others, Mercado Pago offers different solutions that allow you to **receive virtual or in person payments**.
+Whether you want to integrate Mercado Pago for your business or you are a developer integrating for others, Mercado Pago offers different solutions that allow you to **receive virtual or in-person payments**.
 
 You can offer payments with various types of payment in physical stores or online stores through the payment link, QR Code, and the Mercado Pago device, Point, which may or may not be integrated with each other.
 
@@ -19,7 +19,7 @@ bullet_section_with_media:
  - image: /getting-started/credenciales.png
 ---
 
-The first step to start integrating, whether for yourself or for someone else, is to **have a Mercado Pago or Mercado Libre account**. If you don't have a Mercado Pago account, ----[mlb]----[**click here**](https://www.mercadopago.com.br/hub/registration/landing) ----[mla]----[**click here**](https://www.mercadopago.com.ar/hub/registration/landing) ----[mlm]----[**click here**](https://www.mercadopago.com.mx/hub/registration/landing) ----[mpe]----[**click here**](https://www.mercadopago.com.pe/hub/registration/landing) ----[mco]----[**click here**](https://www.mercadopago.com.co/hub/registration/landing) ----[mlu]----[**click here**](https://www.mercadopago.com.uy/hub/registration/landing) ----[mlc]----[**click here**](https://www.mercadopago.cl/hub/registration/landing) ---- to create one for free.
+The first step to start integrating, whether for yourself or for someone else, is to **have a Mercado Pago or Mercado Libre account**. If you don't have a Mercado Pago account, , ----[mlb]----[**click here**](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[**click here**](https://www.mercadopago.com.ar/hub/registration/landing) ------------  ----[mlm]----[**click here**](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[**click here**](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[**click here**](https://www.mercadopago.com.co/hub/registration/landing) ------------ ----[mlu]----[**click here**](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[**click here**](https://www.mercadopago.cl/hub/registration/landing) ------------ to create one for free.
 
 If you already have a Mercado Libre account, access [Your integrations](https://www.mercadopago.com/developers/panel/app) with the same username and password.
 
