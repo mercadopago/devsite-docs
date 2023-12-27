@@ -1,22 +1,22 @@
 ---
 content_section_with_media:
-- title: Getting started
-- message: First time integrating Mercado Pago's payment solutions? In this documentation, you will find the information you need to get started.
-- media_image: /getting-started/women-dev.png
+ - title: Getting started
+ - message: First time integrating Mercado Pago's payment solutions? In this documentation, you will find the information you need to get started.
+ - media_image: /getting-started/women-dev.png
 ---
 
-# Benefits of Choosing Mercado Pago
+# Benefits of choosing Mercado Pago
 
-Whether you want to integrate Mercado Pago for your business or you are a developer integrating for others, Mercado Pago offers different solutions that allow you to **receive virtual or in-person payments**.
+Whether you want to integrate Mercado Pago for your business or you are a developer integrating for others, Mercado Pago offers different solutions that allow you to **receive virtual or in person payments**.
 
 You can offer payments with various types of payment in physical stores or online stores through the payment link, QR Code, and the Mercado Pago device, Point, which may or may not be integrated with each other.
 
 ---
 bullet_section_with_media:
-- type: normal
-- title: Start integrating with your Mercado Pago account
-- message:
-- image: /getting-started/credenciales.png
+ - type: normal
+ - title: Start integrating with your Mercado Pago account
+ - message:
+ - image: /getting-started/credenciales.png
 ---
 
 The first step to start integrating, whether for yourself or for someone else, is to **have a Mercado Pago or Mercado Libre account**. If you don't have a Mercado Pago account, ----[mlb]----[**click here**](https://www.mercadopago.com.br/hub/registration/landing) ----[mla]----[**click here**](https://www.mercadopago.com.ar/hub/registration/landing) ----[mlm]----[**click here**](https://www.mercadopago.com.mx/hub/registration/landing) ----[mpe]----[**click here**](https://www.mercadopago.com.pe/hub/registration/landing) ----[mco]----[**click here**](https://www.mercadopago.com.co/hub/registration/landing) ----[mlu]----[**click here**](https://www.mercadopago.com.uy/hub/registration/landing) ----[mlc]----[**click here**](https://www.mercadopago.cl/hub/registration/landing) ---- to create one for free.
@@ -29,10 +29,10 @@ With your account already active, you have access to [Your integrations](https:/
 
 ---
 bullet_section_with_media:
-- type: reverse
-- title: Get to know our payment solutions
-- message: Mercado Pago has different payment solutions for each type of business. Find them below:
-- image: /getting-started/integration.png
+ - type: reverse
+ - title: Get to know our payment solutions
+ - message: Mercado Pago has different payment solutions for each type of business. Find them below:
+ - image: /getting-started/integration.png
 ---
 
 ## Process online payments
@@ -136,10 +136,10 @@ If you're not sure where to start based on your programming knowledge, don't wor
 
 ---
 bullet_section_with_media:
-- title: Credentials
-- type: reverse
-- message: Credentials are unique passwords used to identify an integration in your account. They play a fundamental role in securely capturing payments in online stores and other applications.
-- image: /getting-started/woman-male-dev.png
+ - title: Credentials
+ - type: reverse
+ - message: Credentials are unique passwords used to identify an integration in your account. They play a fundamental role in securely capturing payments in online stores and other applications.
+ - image: /getting-started/woman-male-dev.png
 ---
 
 You can find the credentials in **Application details > Credentials** within [Your integrations](/developers/panel/app).
