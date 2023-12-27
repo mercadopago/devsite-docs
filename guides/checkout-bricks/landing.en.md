@@ -81,6 +81,16 @@ future_product_avaible:
  - card_linkProofDescription:
  - card_avaible: false
  - card_icon: User
+ - card_title: Brand Brick
+ - card_description: Communicate different messages related to the available payment methods via Mercado Pago in your store.
+ - card_button:
+ - card_buttonDescription:
+ - card_pillText: SOON
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
+ - card_avaible: false
+ - card_icon: User
  - card_title: User Info Brick
  - card_description: Collect the data of your clients and infer those that will be needed in the purchase process.
  - card_button: Learn more
@@ -245,6 +255,16 @@ future_product_avaible:
  - card_button: /developers/en/docs/checkout-bricks/payment-brick/advanced-features/add-confirmation-step
  - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
+ - card_avaible: false
+ - card_icon: User
+ - card_title: Brand Brick
+ - card_description: Communicate different messages related to the available payment methods via Mercado Pago in your store.
+ - card_button:
+ - card_buttonDescription:
+ - card_pillText: SOON
  - card_linkAvailable: false
  - card_linkProof:
  - card_linkProofDescription:
