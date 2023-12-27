@@ -134,7 +134,7 @@ future_product_avaible:
  - card_linkAvailable: true
  - card_linkProof: /developers/es/live-demo/status-screen-brick
  - card_linkProofDescription: Acceder a demostración
- - card_avaible: false
+ - card_avaible: true
  - card_icon: User
  - card_title: Brand Brick
  - card_description: Comunica diferentes mensajes relacionados con las formas de pago disponibles a través de Mercado Pago en tu tienda.
