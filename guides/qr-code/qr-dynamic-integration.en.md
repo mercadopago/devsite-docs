@@ -61,6 +61,4 @@ Execute the API call detailed [in this section of our API Reference](/developers
 
 An IPN (Instant Payment Notification) notification is an **automatic message that notifies the creation of new orders and their status updates**. I.e.: If an order is approved, rejected, or pending.
 
-Implement IPN `merchant_order` with an order search by `external_reference` as a contingency method.
-
-[Receive IPN notifications](/developers/en/docs/qr-code/additional-content/your-integrations/notifications/ipn)
+Go to [IPN notifications](/developers/en/docs/qr-code/additional-content/your-integrations/notifications/ipn) to learn how to implement them, more specifically the `merchant_order` notifications, which are the ones associated with orders. You will be able to identify each one of theses orders by the `external_reference` parameter.

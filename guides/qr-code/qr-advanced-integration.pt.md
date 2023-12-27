@@ -20,7 +20,7 @@ Você encontrará mais informações na seção [Reembolsos e cancelamentos](/de
 >
 > Nota
 >
-> Considere que para pagamentos comerciais, você somente poderá fazer reembolsos, mas não cancelamentos.
+> Considere que para pagamentos presenciais, você somente poderá fazer reembolsos, mas não cancelamentos.
 
 ## Obter dados do pedido
 
