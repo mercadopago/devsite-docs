@@ -6,7 +6,7 @@ At the end of the payment process, it is possible to redirect the buyer back to 
 >
 > Automatic redirection
 >
-> If you want the redirection for approved payments to be automatic, without rendering a return button, you must also add the `auto_return` attribute with the value `approved`. Also, the `auto_return` attribute only works for Checkout Pro's **redirect** and **mobile mode**. The same does not work in modal mode, since the buyer remains on the site during the entire payment process.
+> If you want the redirection for approved payments to be automatic, without rendering a return button, you must also add the `auto_return` attribute with the value `approved`.
 
 In the following tables you will find the details of each of the possible request and response parameters.
 

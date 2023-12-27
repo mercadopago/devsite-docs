@@ -10,13 +10,12 @@ O esquema de abertura permite definir como o checkout será aberto para o usuár
 
 # Esquema de redirecionamento para outra página
 
-A alteração no comportamento do redirecionamento é feita pela propriedade `redirectMode`, a qual pode assumir os valores `self`, `blank` ou `modal`.
+A alteração no comportamento do redirecionamento é feita pela propriedade `redirectMode`, a qual pode assumir os valores `self` ou `blank`.
 
 | Valor | Descrição | 
 |--- |--- | 
 | self | Mantém o redirecionamento na mesma página. | 
 | blank | Externaliza o redirecionamento para uma nova página. |
-| modal | Abre a experiência de checkout em modo modal. |
 
 Os blocos de código abaixo implementam o checkout em modo **redirect** para outra página
 
@@ -41,31 +40,3 @@ renderComponent (bricksBuilder);
 <Wallet initialization={{ preferenceId: '<PREFERENCE_ID>', redirectMode: 'blank' }} />
 ```
 ]]]
-
-# Esquema de abertura em modo modal
-
-Para definir o **modelo de abertura modal**, basta alterar a propriedade `redirectMode: 'modal'` durante a integração, como no exemplo abaixo.
-
-[[[
-```Javascript
-const renderComponent = async (bricksBuilder) => {
- const settings = {
-   initialization: {
-     preferenceId: '<PREFERENCE_ID>',
-     redirectMode: 'modal'
-   },
- };
- const brickController = await bricksBuilder.create(
-   'wallet',
-   'wallet_container',
-   settings
- );
-};
-renderComponent (bricksBuilder);
-```
-```react-jsx
-<Wallet initialization={{ preferenceId: '<PREFERENCE_ID>', redirectMode: 'modal' }} />
-```
-]]]
-
-A propriedade `redirectMode: 'modal'`  indica que o checkout deve abrir em modo **modal** e não **redirect**.

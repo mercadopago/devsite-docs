@@ -1,129 +1,46 @@
-# Generación por API
+# Crear reporte a través de la API
 
-Genera el reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------ de forma manual las veces que quieras o prográmalo según tus necesidades de frecuencia a través de nuestra API.
+Crea el Reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ manualmente tantas veces como desees o prográmalo según la frecuencia deseada a través de nuestra API.
 
-## Atributos configurables
+## Configurar el Reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------
 
-Conoce los campos que puedes configurar para ajustar tus preferencias antes de empezar:
+### Atributos configurables
+
+Consulta los campos que puedes configurar para ajustar tus preferencias antes de empezar:
 
 > WARNING
 >
-> Atención
->
-> Configurar el atributo `frequency` no implica que el reporte se genere automáticamente. La configuración aplicará solo cuando se active la programación automática. Para mayor detalle puedes dirigirte a la sección [Programa tus reportes.](#bookmark_programa_tus_reportes_automáticos)
+> Importante
+> 
+> Configurar el atributo `frequency` no implica que el reporte se genere automáticamente. La configuración se aplicará solo cuando se active la programación automática. Para obtener más información, consulta la sección [Programar reporte automáticamente](#bookmark_programar_reporte_automaticamente)
 
-| Campo configurable | Descripción |
-| --- | --- |
-| `columns` | <br/>Campo con el detalle de columnas a incluir en tu reporte. Encuentra todos los posibles valores en la sección de  [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary).<br/><br/>|
-| `file_name_prefix` | <br/>Prefijo que compone el nombre del reporte una vez generado y listo para descargar.<br/><br/> |
-| `frequency` | <br/>Indica la frecuencia diaria, semanal o mensual de los reportes programados.<br/><br/> - `frequency` aplica type *monthly* al día del mes o *weekly* el día de la semana<br/> - `hour` hora del día en la que generar el reporte <br/> - `type` indica el tipo de frecuencia *daily* (diaria), *weekly* (semanal) y *monthly* (mensual).<br/><br/>|
-| `sftp_info` (opcional) | <br/>Indica los datos de subida a SFTP cuando lo necesites.<br/><br/> |
-| `separator` (opcional) | <br/>Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma. <br/><br/> |
-| `display_timezone` (opcional) | <br/>Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora.<br/><br/> |
-| `report_translation` (opcional) | <br/>Permite cambiar el idioma predeterminado de los encabezados de las columnas. En caso de habilitarlo, se recomienda verificar que funcionen correctamente las integraciones con archivos de Excel (.xlsx) que permiten conciliar de forma automática.<br/><br/> Si la integración no funciona bien, asegúrate de actualizarla tomando como referencia los nuevos encabezados.<br/><br/> |
-| `notification_email_list` (opcional) | <br/>Permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones.<br/><br/> |
-| `refund_detailed` (opcional) | <br/>Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago.<br/><br/> |
-| `include_withdrawal` (opcional) | <br/>Incluye los retiros de dinero en el reporte.<br/><br/> |
-| `coupon_detailed` (opcional) | <br/>Suma una columna para mostrar el detalle de los cupones de descuento.<br/><br/>  |
-| `scheduled` (read_only) | <br/>Campo informativo que indica si ya existen reportes programados en la cuenta de usuario. `True` la generación automática se encuentra activada. <br/> `False` la generación automática se encuentra Desactivada.<br/><br/> |
-| `check_available_balance` (opcional) | <br/>Saldo antes y después de realizar un retiro de dinero que explica el balance de la cuenta. (Esta configuración es solo informativa. Debe excluirse para comprobaciones del balance y/o saldo de cuenta)<br/><br/> |
-| `compensate_detail` (opcional) | <br/>Bloqueos y desbloqueos de dinero que se compensan entre sí y que no afectan el saldo final. Ayuda a entender cómo se conforma el balance final del reporte, en una lectura cronológica (recomendado si tienes un volumen alto de transacciones).<br/><br/>| 
+| Campo configurable        | Tipo       | Ejemplo                                                                                                                | Descripción                                                                                                                                                                                                                                                                                                       |
+|---------------------------|------------|------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `columns`                   | JSON Array | ``` [{"key": "DATE"}, {"key": "SOURCE_ID"}] ```                                                                       | Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección [Glossário](/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use).                                                                                                                                                                                   |
+| `file_name_prefix`          | String     | "conciliation-settlement-report"                                                                                      | Prefijo que compone el nombre del reporte generado y listo para descargar.                                                                                                                                                                                                                                           |
+| `frequency`                 | JSON       | ``` {"hour": 0, "type": "monthly", "value": 1} ```                                                                    | Indica la frecuencia diaria, semanal o mensual de los reportes programados.<br> - `frequency`: aplica type _monthly_ al día del mes o _weekly_ al día de la semana.<br> - `hour`: hora del día en que se debe generar el reporte.<br> - `type`: indica el tipo de frecuencia: _daily_ (diaria), _weekly_ (semanal) y _monthly_ (mensual).                                            |
+| `sftp_info` (opcional)      | JSON       | ``` {"server": "sftp.myserver.com", "password": "mypassword", "remote_dir": "/myfolder", "port": 22, "username": "myusername"} ```                                                  | Proporciona los datos de conexión necesarios para acceder al servidor.<br> - `server`: URL o dirección IP (pública) del servidor.<br> - `password`: contraseña del usuario con el que estableceremos la conexión.<br> - `remote_dir`: carpeta donde depositaremos tus reportes.<br> - `port`: puerto utilizado para establecer la conexión.<br> - `username`: usuario con el que nos autenticaremos en tu servidor.<br>               |
+| `separator` (opcional)      | String     | ";"                                                                                                                    | Separador alternativo para archivos _csv_ cuando se desea utilizar un carácter diferente de la coma (',').                                                                                                                                                                                                   |
+| `display_timezone` (opcional)| String     | "GMT-04"                                                                                                               | Este campo determina la fecha y la hora mostradas en los reportes. Si no configuras una zona horaria para este campo, el sistema considerará la zona horaria GMT-04 como predeterminada. Si eliges una zona horaria que utiliza horario de verano, deberás ajustar manualmente cuando cambie la hora.                           |
+| `report_translation` (opcional)| String   | "es"                                                                                                                  | Permite cambiar el idioma predeterminado de los encabezados de las columnas. Si está activado, asegúrate de verificar si las integraciones con archivos Excel (_xlsx_) están funcionando correctamente para permitir la conciliación automática. Si la integración no funciona correctamente, actualízala utilizando los nuevos encabezados como referencia. Idiomas admitidos: en (inglés), es (español neutro), pt (portugués). |
+| `notification_email_list` (opcional)| Array| ``` ["example@email.com", "john@example.com"] ```                                                                    | Permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte esté listo y disponible para descargar. Asegúrate de incluir el correo electrónico asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones.                                              |
+| `refund_detailed` (opcional) | Boolean    | true                                                                                                                   | Muestra el código de referencia (`external_reference`) del reembolso en lugar del código de referencia (`external_reference`) del pago.                                                                                                                                                                               |
+| `include_withdrawal` (opcional)| Boolean  | true                                                                                                                   | Incluye las retiradas de dinero en el reporte.                                                                                                                                                                                                                                                                   |
+| `coupon_detailed` (opcional)| Boolean    | true                                                                                                                   | Incluye una columna para mostrar los detalles de los cupones de descuento.                                                                                                                                                                                                                                               |
+| `scheduled` (read_only)      | Boolean    | true                                                                                                                   | Campo informativo que indica si ya existen reportes programados en la cuenta del usuario.<br> - `True`: La generación automática está activada. - `False`: La generación automática está desactivada.                                                                                                                                                                                     |
+| `check_available_balance` (opcional)| Boolean| true                                                                                                                  | Saldo antes y después de hacer una retirada, que explica el balance de la cuenta. (Esta configuración es meramente informativa. No debe considerarse como prueba de saldo y/o saldo de cuenta).                                                                                                                |
+| `compensate_detail` (opcional)| Boolean  | true                                                                                                                  | Bloqueo y desbloqueo de dinero que se compensan entre sí y que no afectan el saldo final. Ayuda a entender cómo se realiza el balance final del reporte, en una lectura cronológica (recomendado si tienes un volumen alto de transacciones).                                                           |
 
-## Configura tus reportes
+Puedes configurar tus reportes según sea necesario. A continuación, destacamos las llamadas de la API disponibles para que puedas gestionar la configuración de tu reporte y, posteriormente, en función de esas configuraciones, generar los reportes.
 
-Puedes configurar tus reportes según lo que necesites. A continuación, te mencionamos cuáles son las llamadas a la API que puedes hacer para crear, consultar y actualizar tus reportes.
+> Ten a mano el [Glossário del Reporte de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/glossary) para consultarlo siempre que sea necesario o para verificar algún término técnico.
 
-> NOTE
->
-> Nota
->
-> Ten a mano el [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/released-money/glossary) para consultar algún término técnico durante la generacion de tus reportes.
 
-### Consulta tu configuración
+## Crear una nueva configuración
 
-Consulta la configuración de tus reportes por API de esta forma:
+Personaliza tus reportes asignando diferentes propiedades de creación ejecutando el siguiente _curl_:
 
 [[[
-
-```curl
-curl -X GET \
-    -H 'accept: application/json' \
-    -H 'content-type: application/json' \
-    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-    'https://api.mercadopago.com/v1/account/release_report/config' \
-```
-
-```php
-<?php
-include('vendor/rmccue/requests/library/Requests.php');
-Requests::register_autoloader();
-$headers = array(
-    'accept' => 'application/json',
-    'content-type' => 'application/json',
-    'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
-);
-$response = Requests::get('https://api.mercadopago.com/v1/account/release_report/config', $headers);
-```
-
-```java
- URL url = new URL("https://api.mercadopago.com/v1/account/release_report/config");
-
-HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-
-connection.setRequestMethod("GET");
-connection.setRequestProperty("Accept", "application/json");
-connection.setRequestProperty("Content-Type", "application/json");
-connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
-
-System.out.println(connection.getResponseCode());
-System.out.println(connection.getResponseMessage());
-System.out.println(connection.getInputStream());
-```
-
-```python
-import requests
-headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json',
-    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
-}
-
-response = requests.get('https://api.mercadopago.com/v1/account/release_report/config', headers=headers)
-```
-
-```node
-var request = require('request');
-
-var headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json',
-    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
-};
-
-var options = {
-    url: 'https://api.mercadopago.com/v1/account/release_report/config',
-    headers: headers
-};
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    }
-}
-request(options, callback);
-```
-
-]]]
-
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)` si no se encuentra ningún error.
-
-El objeto de respuesta tendrá una estructura similar al ejemplo siguiente:
-
-### Crea tus configuraciones
-
-Crea tus preferencias de generación por API para exportar columnas, nombrar a tus archivos y configurar otros ajustes:
-
-[[[
-
 ```curl
 curl -X POST \
     -H 'accept: application/json' \
@@ -157,7 +74,6 @@ curl -X POST \
             ]
     }'
 ```
-
 ```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
@@ -195,7 +111,6 @@ $data = '{
     }';
 $response = Requests::post('https://api.mercadopago.com/v1/account/release_report/config', $headers, $data);
 ```
-
 ```java
 URL url = new URL("https://api.mercadopago.com/v1/account/release_report/config");
 
@@ -223,9 +138,9 @@ String body = "{
                     \\"value\\": 1
                 },
                 \\"columns\\": [
-                   { \\"key\\": \\"DATE\\" },
-                   { \\"key\\": \\"SOURCE_ID\\" },
-                   { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
+                    { \\"key\\": \\"DATE\\" },
+                    { \\"key\\": \\"SOURCE_ID\\" },
+                    { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
                 ]
             }";
 
@@ -238,7 +153,6 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-
 ```python
 import requests
 
@@ -277,7 +191,6 @@ data = '{
 
 response = requests.post('https://api.mercadopago.com/v1/account/release_report/config', headers=headers, data=data)
 ```
-
 ```node
 var request = require('request');
 
@@ -329,12 +242,11 @@ function callback(error, response, body) {
 
 request(options, callback);
 ```
-
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 201 (Created)` si no se encuentra ningún error.
+En ausencia de errores, se emitirá un código de estado `HTTP 201 (Created)`. El API responderá con una estructura JSON cuyas propiedades representarán la configuración que has creado. 
 
-El objeto de respuesta tendrá una estructura similar al ejemplo siguiente:
+#### Respuesta
 
 ```json
 {
@@ -342,8 +254,8 @@ El objeto de respuesta tendrá una estructura similar al ejemplo siguiente:
     "include_withdrawal_at_end": true,
     "scheduled": false,
     "execute_after_withdrawal": false,
-    "display_timezone": "GMT-04",
     "separator": ",",
+    "display_timezone": "GMT-04",
     "notification_email_list": [
         "example@email.com",
         "john@example.com"
@@ -367,18 +279,117 @@ El objeto de respuesta tendrá una estructura similar al ejemplo siguiente:
 }
 ```
 
-### Actualiza tus configuraciones
+### Consultar configuraciones
+
+Consulta la configuración actual de tus reportes ejecutando el siguiente _curl_:
+
+[[[
+```curl
+curl -X GET \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/account/release_report/config' \
+```
+```php
+<?php
+include('vendor/rmccue/requests/library/Requests.php');
+Requests::register_autoloader();
+$headers = array(
+    'accept' => 'application/json',
+    'content-type' => 'application/json',
+    'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
+);
+$response = Requests::get('https://api.mercadopago.com/v1/account/release_report/config', $headers);
+```
+```java
+ URL url = new URL("https://api.mercadopago.com/v1/account/release_report/config");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("GET");
+connection.setRequestProperty("Accept", "application/json");
+connection.setRequestProperty("Content-Type", "application/json");
+connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
+```python
+import requests
+headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
+}
+
+response = requests.get('https://api.mercadopago.com/v1/account/release_report/config', headers=headers)
+```
+```node
+var request = require('request');
+
+var headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
+};
+
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/release_report/config',
+    headers: headers
+};
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+request(options, callback);
+```
+]]]
+
+En ausencia de errores, se emitirá un código de estado `HTTP 200 (Ok)`. El API responderá con una estructura JSON cuyas propiedades representarán las características de tus reportes. 
+
+#### Respuesta
+
+```json
+{
+    "file_name_prefix": "release-report-USER_ID",
+    "include_withdrawal_at_end": true,
+    "scheduled": false,
+    "execute_after_withdrawal": false,
+    "separator": ";",
+    "display_timezone": "GMT-04",
+    "frequency": {
+        "hour": 0,
+        "type": "monthly",
+        "value": 1
+    },
+    "columns": [
+        {
+            "key": "DATE"
+        },
+        {
+            "key": "SOURCE_ID"
+        },
+        {
+            "key": "EXTERNAL_REFERENCE"
+        }
+    ]
+}
+```
+
+### Actualizar configuraciones
+
+Actualiza las configuraciones predeterminadas de tus reportes cuando sea necesario ejecutando el _curl_ a continuación.
 
 > NOTE
 >
 > Nota
 >
->Si en la actualización de la configuración deseas modificar el atributo `frequency`, y ya tienes habilitada la generación automática de tus reportes, debes seguir estos pasos:<br/><br/> 1. Cancelar la generación programada de tus reportes, siguiendo los pasos de la sección [Desactivación](#bookmark_2._desactivación). <br/> 2. Realizar la actualización de la configuración modificando el atributo `frequency`, mediante los snippets dispuestos en esta sección. <br/> 3. Programar nuevamente la generación automática del reporte, siguiendo los pasos de la sección [Activación](#bookmark_1._activación).
-
-Cuando necesites actualizar tu configuración, puedes ajustar los siguientes atributos:
+> Si, al actualizar la configuración, deseas cambiar el atributo `frequency` y ya has activado la creación automática de tus reporte, sigue los siguientes pasos: <br/><br/> 1. Cancela la creación programada de tus reportes siguiendo los pasos descritos en la sección **Desactivar creación automática** en [Programar reporte automáticamente.](#bookmark_programar_reporte_automaticamente) <br/> 2. Actualiza la configuración. <br/> 3. Vuelve a habilitar la creación automática de tus reportes siguiendo los pasos de la sección **Activar creación automática** en [Programar reporte automáticamente.](#bookmark_programar_reporte_automaticamente)
 
 [[[
-
 ```curl
 curl -X PUT \
     -H 'accept: application/json' \
@@ -412,7 +423,6 @@ curl -X PUT \
             ]
     }'
 ```
-
 ```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
@@ -450,7 +460,6 @@ $data = '{
     }';
 $response = Requests::put('https://api.mercadopago.com/v1/account/release_report/config', $headers, $data);
 ```
-
 ```java
 URL url = new URL("https://api.mercadopago.com/v1/account/release_report/config");
 
@@ -478,9 +487,9 @@ String body = "{
                     \\"value\\": 1
                 },
                 \\"columns\\": [
-                   { \\"key\\": \\"DATE\\" },
-                   { \\"key\\": \\"SOURCE_ID\\" },
-                   { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
+                    { \\"key\\": \\"DATE\\" },
+                    { \\"key\\": \\"SOURCE_ID\\" },
+                    { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
                 ]
             }";
 
@@ -493,7 +502,6 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-
 ```python
 import requests
 
@@ -532,7 +540,6 @@ data = '{
 
 response = requests.put('https://api.mercadopago.com/v1/account/release_report/config', headers=headers, data=data)
 ```
-
 ```node
 var request = require('request');
 
@@ -545,7 +552,7 @@ var headers = {
 var dataString = '{
             "file_name_prefix": "release-report-USER_ID",
             "include_withdrawal_at_end": true,
-            "execute_after_withdrawal": false,
+            "execute_after_withdrawal": falsre,
             "display_timezone": "GMT-04",
             "notification_email_list": [
                 "example@email.com",
@@ -584,12 +591,11 @@ function callback(error, response, body) {
 
 request(options, callback);
 ```
-
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)` si no se encuentra ningún error.
+En ausencia de errores, se emitirá un código de estado `HTTP 200 (Ok)`. El API responderá con una estructura JSON cuyas propiedades representarán la configuración que has actualizado. 
 
-El objeto de respuesta tendrá una estructura similar al ejemplo siguiente:
+#### Respuesta
 
 ```json
 {
@@ -597,7 +603,7 @@ El objeto de respuesta tendrá una estructura similar al ejemplo siguiente:
     "include_withdrawal_at_end": true,
     "scheduled": false,
     "execute_after_withdrawal": false,
-    "separator": ","
+    "separator": ",",
     "display_timezone": "GMT-04",
     "notification_email_list": [
         "example@email.com",
@@ -622,16 +628,15 @@ El objeto de respuesta tendrá una estructura similar al ejemplo siguiente:
 }
 ```
 
-## Genera tu reporte de forma manual
+## Agendar reporte manualmente
 
-Genera tus reportes de forma manual configurando tres instancias: creación, consulta y descarga.
+Tienes a tu disposición varios recursos que te permitirán interactuar con tus reportes manualmente.
 
-### 1. Creación
+### Crear reporte
 
-Haz el llamado POST a la API especificando las fechas deseadas para inicio y fin del reporte de la siguiente manera:
+Realiza una solicitud POST a la API para generar manualmente un nuevo reporte dentro de un intervalo de fechas específico:
 
 [[[
-
 ```curl
 curl -X POST \
     -H 'accept: application/json' \
@@ -643,7 +648,6 @@ curl -X POST \
             "end_date": "2019-06-01T00:00:00Z"
     }'
 ```
-
 ```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
@@ -660,7 +664,6 @@ $data ='{
 
 $response = Requests::post("https://api.mercadopago.com/v1/account/release_report", $headers, $data);
 ```
-
 ```java
 URL url = new URL("https://api.mercadopago.com/v1/account/release_report");
 
@@ -683,7 +686,6 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-
 ```python
 import requests
 
@@ -697,13 +699,12 @@ data = '{ "begin_date": "2019-05-01T00:00:00Z", "end_date": "2019-06-01T00:00:00
 
 response = requests.post('https://api.mercadopago.com/v1/account/release_report', headers=headers, data=data)
 ```
-
 ```node
 var request = require('request');
 
 var headers = { 
     'accept': 'application/json', 
-    'content-type': 'application/json',
+    'content-type': 'application/json', 
     'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 };
 
@@ -722,29 +723,25 @@ function callback(error, response, body) {
 }
 request(options, callback);
 ```
-
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 202 (Accepted)` si no se encuentra ningún error, y el reporte se generará de manera asincrónica.
+En ausencia de errores, se emitirá un código de estado `HTTP 202 (Accepted)`. Después de esto, su reporte se generará de forma asíncrona. Recibirá como respuesta una estructura JSON con información relevante a su solicitud de creación.
 
 ----[mlm, mla, mco, mpe, mlu, mlc]----
-Una respuesta `HTTP STATUS 203 (Non-Authoritative Information)` indica que la solicitud es la esperada, sin embargo, no fue posible crear tu reporte y será necesario solicitarlo nuevamente con las fechas que te indique el sistema.
+Una respuesta `HTTP STATUS 203 (Non-Authoritative Information)` indica que la solicitud se realizó según lo esperado; sin embargo, no fue posible crear su reporte y será necesario solicitarlo nuevamente con las fechas indicadas en el sistema.
 
 ------------
+### Consultar reporte
 
-### 2. Consulta
-
-Consulta a la API para ver si la generación de reportes quedó lista:
+Consulta la API según se muestra a continuación para explorar la lista de reportes que has generado:
 
 [[[
-
 ```curl
 curl -G \
     -H 'accept: application/json' \
     -d 'access_token=ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/account/release_report/list'
 ```
-
 ```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
@@ -757,7 +754,6 @@ $data = array(
 );
 $response = Requests::post('https://api.mercadopago.com/v1/account/release_report/list', $headers, $data);
 ```
-
 ```java
 URL url = new URL("https://api.mercadopago.com/v1/account/release_report/list");
 
@@ -770,18 +766,16 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-
 ```python
 import requests
 
 headers = { 
-    'accept': 'application/json',
+    'accept': 'application/json', 
     'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 }
 
 response = requests.post('https://api.mercadopago.com/v1/account/release_report/list', headers=headers)
 ```
-
 ```node
 var request = require('request');
 var headers = { 'accept': 'application/json'};
@@ -799,18 +793,17 @@ function callback(error, response, body) {
 }
 request(options, callback);
 ```
-
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)` si no se encuentra ningún error.
+En ausencia de errores, se emitirá un código de estado `HTTP 200 (Ok)`. La API responderá con una estructura JSON Array en la cual encontrarás el listado de todos los reportes que has generado.
 
-El objeto de respuesta tendrá una estructura similar a este ejemplo:
+#### Respuesta
 
 ```json
 [
     {
         "id": 12345678,
-        "user_id": USER-ID,
+        "user_id": "USER_ID",
         "begin_date": "2015-05-01T00:00:00Z",
         "end_date": "2015-06-01T23:59:59Z",
         "file_name": "release-report-USER_ID-2016-01-20-131015.csv",
@@ -823,18 +816,16 @@ El objeto de respuesta tendrá una estructura similar a este ejemplo:
 ]
 ```
 
-### 3. Descarga
+### Descargar reporte
 
-Utilizando el atributo `file_name`, puedes descargar el reporte desde la siguiente URL:
+Utilizando el atributo `file_name`, puedes descargar cualquiera de tus reportes desde la siguiente URL:
 
 [[[
-
 ```curl
 curl -X GET \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/account/release_report/:file_name'
 ```
-
 ```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
@@ -847,7 +838,6 @@ $data = array(
 );
 $response = Requests::post('https://api.mercadopago.com/v1/account/release_report/:file_name', $headers, $data);
 ```
-
 ```java
 URL url = new URL("https://api.mercadopago.com/v1/account/release_report/:file_name");
 
@@ -860,7 +850,6 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-
 ```python
 import requests
 
@@ -870,7 +859,6 @@ headers = {
 
 response = requests.get('https://api.mercadopago.com/v1/account/release_report/:file_name', headers=headers)
 ```
-
 ```node
 var request = require('request');
 
@@ -878,9 +866,10 @@ var headers = {
     'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 };
 
+
 var options = {
     url: 'https://api.mercadopago.com/v1/account/release_report/:file_name',
-    headers: headers
+    headers: headers,
 };
 
 function callback(error, response, body) {
@@ -891,12 +880,11 @@ function callback(error, response, body) {
 
 request(options, callback);
 ```
-
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)` si no se encuentra ningún error.
+En ausencia de errores, se emitirá un código de estado `HTTP 200 (Ok)`. En la respuesta del API tendrás a disposición el archivo del reporte que solicitaste descargar. 
 
-El objeto de respuesta tendrá una estructura similar al ejemplo siguiente:
+#### Respuesta
 
 ```csv
 DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
@@ -908,18 +896,13 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
 ```
 
-## Programa tus reportes automáticos
+## Programar reporte automaticamente
 
+Programa la generación de tu reporte configurando dos instancias: activación y desactivación.
 
-Programa la generación de tu reporte configurando dos instancias: activación y Desactivación.
+### Activar generación automática
 
-### 1. Activación
-
-Programa la generación automática del reporte utilizando la frecuencia deseada en el recurso de configuración.
-
-Actualiza el atributo `scheduled` como `true` en la configuración:
-
-`POST /v1/account/release_report/schedule`
+Programa la generación automática del reporte utilizando la frecuencia asignada durante la configuración de tus reportes. Al consumir este servicio, la propiedad `scheduled` de tu configuración se actualizará automáticamente a `true`:
 
 [[[
 
@@ -996,9 +979,9 @@ request(options, callback);
 
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)` si no se encuentra ningún error en la generación.
+En ausencia de errores, se emitirá un código de estado `HTTP 200 (Ok)`. La API responderá con una estructura JSON en la cual encontrarás información asociada al reporte que has programado. 
 
-La respuesta con los datos del reporte tendrá una estructura similar al ejemplo siguiente:
+#### Respuesta
 
 ```json
 {
@@ -1015,16 +998,11 @@ La respuesta con los datos del reporte tendrá una estructura similar al ejemplo
 }
 ```
 
-### 2. Desactivación
+### Desactivar generación automática
 
-Ejecuta el curl para cancelar la generación programada de tus reportes:
-
-Para detener la generación automática del reporte, actualiza el atributo`scheduled`como `false` en tu configuración:
-
-`DELETE /v1/account/release_report/schedule`
+Puedes desactivar la generación automática de tus reportes en cualquier momento, cuando lo necesites. Al consumir este servicio, la propiedad `scheduled` de tu configuración se actualizará automáticamente a `false`.
 
 [[[
-
 ```curl
 curl -X DELETE \
     -H 'accept: application/json' \
@@ -1039,12 +1017,11 @@ include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
 $headers = array(
     'accept' => 'application/json',
-    'content-type' => 'application/json',
+    'content-type' => 'application/json',    
     'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
 );
 $response = Requests::delete('https://api.mercadopago.com/v1/account/release_report/schedule', $headers);
 ```
-
 ```java
 URL url = new URL("https://api.mercadopago.com/v1/account/release_report/schedule");
 
@@ -1059,7 +1036,6 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-
 ```python
 import requests
 
@@ -1071,7 +1047,6 @@ headers = {
 
 response = requests.delete('https://api.mercadopago.com/v1/account/release_report/schedule', headers=headers)
 ```
-
 ```node
 var request = require('request');
 
@@ -1095,12 +1070,11 @@ function callback(error, response, body) {
 
 request(options, callback);
 ```
-
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)` si no se encuentra ningún error para cancelar.
+En ausencia de errores, se emitirá un código de estado `HTTP 200 (Ok)`. El API responderá con una estructura JSON en la cual encontrarás información asociada al reporte que has desactivado. 
 
-La respuesta con los datos de la cancelación tendrá una estructura similar al ejemplo siguiente:
+#### Respuesta
 
 ```json
 {

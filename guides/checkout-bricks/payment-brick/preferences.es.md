@@ -663,12 +663,6 @@ Al final del proceso de pago, tienes la opción de redireccionar al comprador a 
 
 Si quieres que la redirección sea automática para los pagos aprobados, sin mostrar un botón de retorno, también debes agregar el atributo `auto_return` con el valor de `approved`.
 
-> NOTE
->
-> Nota
->
-> Ten en cuenta que el atributo `auto_return` solo funciona para el modo `redirect` y `mobile` de Payment Brick. No funciona en modo modal, ya que en este último el comprador permanece en el sitio durante todo el proceso de pago.
-
 ![autoreturn](/images/web-payment-checkout/autoreturn-img.png)
 
 | Atributo | Descripción |
