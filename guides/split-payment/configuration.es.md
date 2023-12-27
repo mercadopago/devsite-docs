@@ -1,6 +1,6 @@
 # Crear configuración
 
-Para configurar la integración con la solución de Split de Pagos, deberás crear tu aplicación, solicitar permisos a tus usuarios y obtener las credenciales. Continúa leyendo para crear la configuración necesaria.
+Para configurar la integración con la solución de Split de Pagos, deberás [crear tu aplicación](#bookmark_crear_aplicación), [solicitar permisos a tus usuarios](#bookmark_solicitar_permiso_a_usuarios) y [obtener las credenciales](#bookmark_obtener_credenciales). Continúa leyendo para crear la configuración necesaria.
 
 ## Crear aplicación
 
@@ -21,7 +21,9 @@ Crea tu aplicación para integrar con la solución de Split de siguiendo los pas
 
 ### Configurar Redirect URL
 
-Después de crear la aplicación, es necesario dirigirse a la pantalla de edición para completar el campo de Redirect URL (en las solicitudes de OAuth se muestra como redirect_uri), el cual debe contener la URL del sitio del marketplace donde se enviará el token del vendedor al completar el proceso de vinculación.
+En esta etapa, es necesario configurar la Redirect URL para que los vendedores autoricen al marketplace a realizar ventas.
+
+Después de crear la aplicación, es necesario dirigirse a la pantalla de edición para completar el campo de Redirect URL (en las solicitudes de OAuth se muestra como redirect_uri), el cual debe contener la URL del sitio del marketplace a donde se enviará el token del vendedor al completar el proceso de vinculación.
 
 ![Redirect URL](/images/split-payment/redirect-url-es.png)
 

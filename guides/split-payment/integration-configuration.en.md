@@ -2,7 +2,5 @@
 
 To set up the integration with the Split Payments solution, follow the steps below:
 
-   1. [Create an application](/developers/en/docs/split-payment/integration-configuration/create-application)
-   2. [Request permission from your users](/developers/en/docs/split-payment/integration-configuration/request-permission)
-   3. [Obtain the credentials](/developers/en/docs/split-payment/integration-configuration/obtain-credentials)
-   4. [Integrate the checkout in Split Payments (marketplace)](/developers/en/docs/split-payment/integration-configuration/integrate-marketplace)
+   1. [Create configuration](/developers/en/docs/split-payment/integration-configuration/create-configuration)
+   2. [Integrate the checkout in Split Payments (marketplace)](/developers/en/docs/split-payment/integration-configuration/integrate-marketplace)
