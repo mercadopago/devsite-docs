@@ -25,16 +25,16 @@ const body = {
   email: "my.user@example.com"
 };
 
-customer.create({ body: body }).then(result) => {
+customer.create({ body: body }).then((result) => {
   const customerCard = new CustomerCard(client);
 
   const body = {
-  	token : result.token,
+    token : result.token,
   };
 
   customerCard.create({ customerId: 'customer_id', body })
      .then((result) => console.log(result));
-};
+})
 ```
 ```java
 

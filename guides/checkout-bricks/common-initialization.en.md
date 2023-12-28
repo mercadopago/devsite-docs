@@ -43,34 +43,48 @@ With the Mercado Pago library added and configured in your project, you are read
 
 ---
 future_product_avaible:
+ - title: Bricks
+ - description: Know all Checkout Bricks modules and their availability.
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
  - card_description: Offer different payment methods that your customers can choose, with the ability to save card details for future purchases. Test the Brick demonstration before integrating it. 
- - card_link: /developers/en/docs/checkout-bricks/payment-brick/introduction
- - card_linkDescription: Learn more
+ - card_button: /developers/en/docs/checkout-bricks/payment-brick/introduction
+ - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/en/live-demo/payment-brick
+ - card_linkProofDescription: Access demo
  - card_avaible: true
  - card_icon: Wallet
  - card_title: Wallet Brick
  - card_description: Link Mercado Pago Wallet and allow logged payments. Test the Brick demonstration before integrating it.
- - card_link: /developers/en/docs/checkout-bricks/wallet-brick/introduction
- - card_linkDescription: Learn more
+ - card_button: /developers/en/docs/checkout-bricks/wallet-brick/introduction
+ - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/en/live-demo/wallet-brick
+ - card_linkProofDescription: Access demo
  - card_avaible: true
  - card_icon: Card
  - card_title: Card Payment Brick
  - card_description: Offer credit and debit card payments. Test the Brick demonstration before integrating it.
- - card_link: /developers/en/docs/checkout-bricks/card-payment-brick/introduction
- - card_linkDescription: Learn more
+ - card_button: /developers/en/docs/checkout-bricks/card-payment-brick/introduction
+ - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/en/live-demo/card-payment-brick
+ - card_linkProofDescription: Access demo
  - card_avaible: true
  - card_icon: Loading
  - card_title: Status Screen Brick
  - card_description: Inform your customers of the results of the purchase process, after making the payment. Test the Brick demonstration before integrating it.
- - card_link: /developers/en/docs/checkout-bricks/status-screen-brick/introduction
- - card_linkDescription: Learn more
+ - card_button: /developers/en/docs/checkout-bricks/status-screen-brick/introduction
+ - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/en/live-demo/status-screen-brick
+ - card_linkProofDescription: Access demo
 ---
 
 ------------
@@ -78,41 +92,58 @@ future_product_avaible:
 
 ---
 future_product_avaible:
+ - title: Bricks
+ - description: Know all Checkout Bricks modules and their availability.
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
  - card_description: Offer different payment methods that your customers can choose, with the ability to save card details for future purchases. Test the Brick demonstration before integrating it. 
- - card_link: /developers/en/docs/checkout-bricks/payment-brick/introduction
- - card_linkDescription: Learn more
+ - card_button: /developers/en/docs/checkout-bricks/payment-brick/introduction
+ - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/en/live-demo/payment-brick
+ - card_linkProofDescription: Access demo
  - card_avaible: true
  - card_icon: Wallet
  - card_title: Wallet Brick
  - card_description: Link Mercado Pago Wallet and allow logged payments. Test the Brick demonstration before integrating it.
- - card_link: /developers/en/docs/checkout-bricks/wallet-brick/introduction
- - card_linkDescription: Learn more
+ - card_button: /developers/en/docs/checkout-bricks/wallet-brick/introduction
+ - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/en/live-demo/wallet-brick
+ - card_linkProofDescription: Access demo
  - card_avaible: true
  - card_icon: Card
  - card_title: Card Payment Brick
  - card_description: Offer credit and debit card payments. Test the Brick demonstration before integrating it.
- - card_link: /developers/en/docs/checkout-bricks/card-payment-brick/introduction
- - card_linkDescription: Learn more
+ - card_button: /developers/en/docs/checkout-bricks/card-payment-brick/introduction
+ - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/en/live-demo/card-payment-brick
+ - card_linkProofDescription: Access demo
  - card_avaible: true
  - card_icon: Loading
  - card_title: Status Screen Brick
  - card_description: Inform your customers of the results of the purchase process, after making the payment. Test the Brick demonstration before integrating it.
- - card_link: /developers/en/docs/checkout-bricks/status-screen-brick/introduction
- - card_linkDescription: Learn more
+ - card_button: /developers/en/docs/checkout-bricks/status-screen-brick/introduction
+ - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/en/live-demo/status-screen-brick
+ - card_linkProofDescription: Access demo
  - card_avaible: true
  - card_icon: User
  - card_title: Brand Brick
  - card_description: Communicate different messages related to the available payment methods via Mercado Pago in your store.
- - card_link: /developers/en/docs/checkout-bricks/brand-brick/introduction
- - card_linkDescription: Learn more
+ - card_button: /developers/en/docs/checkout-bricks/brand-brick/introduction
+ - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
 ---
 
 ------------
@@ -120,41 +151,58 @@ future_product_avaible:
 
 ---
 future_product_avaible:
+ - title: Bricks
+ - description: Know all Checkout Bricks modules and their availability.
  - card_avaible: true
  - card_icon: Pay
  - card_title: Payment Brick
  - card_description: Offer different payment methods that your customers can choose, with the ability to save card details for future purchases. Test the Brick demonstration before integrating it. 
- - card_link: /developers/en/docs/checkout-bricks/payment-brick/introduction
- - card_linkDescription: Learn more
+ - card_button: /developers/en/docs/checkout-bricks/payment-brick/introduction
+ - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/en/live-demo/payment-brick
+ - card_linkProofDescription: Access demo
  - card_avaible: true
  - card_icon: Wallet
  - card_title: Wallet Brick
  - card_description: Link Mercado Pago Wallet and allow logged payments. Test the Brick demonstration before integrating it.
- - card_link: /developers/en/docs/checkout-bricks/wallet-brick/introduction
- - card_linkDescription: Learn more
+ - card_button: /developers/en/docs/checkout-bricks/wallet-brick/introduction
+ - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/en/live-demo/wallet-brick
+ - card_linkProofDescription: Access demo
  - card_avaible: true
  - card_icon: Card
  - card_title: Card Payment Brick
  - card_description: Offer credit and debit card payments. Test the Brick demonstration before integrating it.
- - card_link: /developers/en/docs/checkout-bricks/card-payment-brick/introduction
- - card_linkDescription: Learn more
+ - card_button: /developers/en/docs/checkout-bricks/card-payment-brick/introduction
+ - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/en/live-demo/card-payment-brick
+ - card_linkProofDescription: Access demo
  - card_avaible: true
  - card_icon: Loading
  - card_title: Status Screen Brick
  - card_description: Inform your customers of the results of the purchase process, after making the payment. Test the Brick demonstration before integrating it.
- - card_link: /developers/en/docs/checkout-bricks/status-screen-brick/introduction
- - card_linkDescription: Learn more
+ - card_button: /developers/en/docs/checkout-bricks/status-screen-brick/introduction
+ - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/en/live-demo/status-screen-brick
+ - card_linkProofDescription: Access demo
  - card_avaible: true
  - card_icon: Check
  - card_title: Review & Confirm
  - card_description: Shows a summary of the entire purchase process, with the most relevant information, so that your customers can review before confirming the purchase.
- - card_link: /developers/en/docs/checkout-bricks/payment-brick/advanced-features/add-confirmation-step
- - card_linkDescription: Learn more
+ - card_button: /developers/en/docs/checkout-bricks/payment-brick/advanced-features/add-confirmation-step
+ - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
 ---
 
 ------------
