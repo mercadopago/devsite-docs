@@ -35,8 +35,8 @@ Para solicitar permissão aos seus usuários para gerenciar vendas em seu nome, 
 
 | Valor              | Descrição                                                                                                              |
 |--------------------------|----------------------------------------------------------------------------------------------------------------------|
-| `<APP_ID>`               | Valor obtido durante a [Criação da aplicação](/developers/pt/docs/split-payment/integration-configuration/create-application).      |
-| `<REDIRECT_URI>`         | Valor inserido no campo Redirect Uri durante a [Configuração do Redirect URL](/developers/pt/docs/split-payment/integration-configuration/create-application). |
+| `<APP_ID>`               | Valor obtido durante a [criação da aplicação](/developers/pt/docs/split-payment/integration-configuration/create-application).      |
+| `<REDIRECT_URI>`         | Valor inserido no campo Redirect Uri durante a [configuração do Redirect URL](/developers/pt/docs/split-payment/integration-configuration/create-application). |
 
 ----[mla]----
 ```curl
@@ -141,4 +141,4 @@ A resposta inclui:
 >
 > Importante
 >
-> Essas credenciais têm uma validade de 6 meses. Caso não sejam renovadas antes desse período, perderão a validade, e será necessário repetir o processo de vinculação para autorizar novamente o vendedor. Para saber como renovar essas credenciais, consulte o passo a passo na [documentação de Renovação](/developers/pt/docs/split-payment/additional-content/security/oauth/renewal).
+> Essas credenciais têm uma validade de 6 meses. Caso não sejam renovadas antes desse período, perderão a validade, e será necessário repetir o processo de vinculação para autorizar novamente o vendedor. Para saber como renovar essas credenciais, consulte o passo a passo na [documentação de Renovação.](/developers/pt/docs/split-payment/additional-content/security/oauth/renewal)

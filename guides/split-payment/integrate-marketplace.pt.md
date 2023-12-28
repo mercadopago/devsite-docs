@@ -3,7 +3,7 @@
 Caso escolha vender através de um _marketplace_, é possível integrar **dois tipos de checkout do Mercado Pago** para processar os pagamentos realizados.
  
 * [Checkout Pro](/developers/pt/guides/checkout-pro/landing): Neste modelo de checkout, o comprador é direcionado para uma página do Mercado Pago para concluir o pagamento.
-* ----[mla, mlu, mpe, mco, mlc, mlm]----[Checkout API](/developers/pt/guides/checkout-api/introduction)------------ ----[mlb]----[Checkout Transparente](/developers/pt/guides/checkout-api/introduction)------------: Este modelo de checkout permite ao comprador realizar o pagamento dentro do ambiente do _marketplace_.
+* ----[mla, mlu, mpe, mco, mlc, mlm]----[Checkout API](/developers/pt/guides/checkout-api/introduction)----------------[mlb]----[Checkout Transparente](/developers/pt/guides/checkout-api/introduction)------------: Este modelo de checkout permite ao comprador realizar o pagamento dentro do ambiente do _marketplace_.
 
 Ambos os checkouts realizam automaticamente a divisão dos valores entre o vendedor e o _marketplace_ por meio do _split_ de pagamento, sem a necessidade de qualquer ação por parte do vendedor.
 
@@ -22,7 +22,11 @@ Para realizar a integração você precisará seguir o fluxo de integração usu
 4. Para determinar a porcentagem de comissão do marketplace:
 
     - Se o checkout for Pro, preencha o parâmetro `marketplace_fee` com o valor a ser cobrado para cada preferência de pagamento criada na API **/checkout/preferences**.
-    #### Exemplo
+
+<br>
+
+#### Exemplo
+
     ```json
     {
     "items": [
@@ -38,7 +42,11 @@ Para realizar a integração você precisará seguir o fluxo de integração usu
     }
     ```
     - Se o checkout for ----[mla, mlu, mpe, mco, mlc, mlm]----API------------ ----[mlb]----Transparente------------, preencha o parâmetro `application_fee` com o valor a ser cobrado para cada pagamento criado na API **/payments**.
-    #### Exemplo
+
+<br>
+
+#### Exemplo
+
     ```json
     {
     "description": "API TRANSPARENTE MARKETPLACE",

@@ -3,7 +3,7 @@
 Si eliges vender a través de un _marketplace_, es posible integrar **dos tipos de checkout de Mercado Pago** para procesar los pagos realizados.
 
 * [Checkout Pro](/developers/es/guides/checkout-pro/landing): en este modelo de checkout, el comprador es dirigido a una página de Mercado Pago para completar el pago.
-* ----[mla, mlu, mpe, mco, mlc, mlm]----[Checkout API](/developers/es/guides/checkout-api/introduction)------------ ----[mlb]----[Checkout Transparente](/developers/es/guides/checkout-api/introduction)------------: este modelo de pago permite al comprador realizar el pago dentro del entorno del _marketplace_.
+* ----[mla, mlu, mpe, mco, mlc, mlm]----[Checkout API](/developers/es/guides/checkout-api/introduction)----------------[mlb]----[Checkout Transparente](/developers/es/guides/checkout-api/introduction)------------: este modelo de pago permite al comprador realizar el pago dentro del entorno del _marketplace_.
 
 Ambos checkouts reparten automáticamente los importes entre el vendedor y el _marketplace_ a través del _split del pago_ sin necesidad de ninguna acción por parte del vendedor.
 
@@ -21,7 +21,11 @@ Para realizar la integración deberás seguir el flujo de integración habitual 
 4. Para determinar el porcentaje de comisión del mercado:
 
     - Si el checkout es Pro, completa el parámetro `marketplace_fee` con el monto que se cobrará por cada preferencia de pago creada en la API **/checkout/preferences**.
-    #### Ejemplo
+
+<br>
+
+#### Ejemplo
+
     ```json
     {
     "items": [
@@ -37,7 +41,11 @@ Para realizar la integración deberás seguir el flujo de integración habitual 
     }
     ```
     - Si el checkout es ----[mla, mlu, mpe, mco, mlc, mlm]----API------------ ----[mlb]----Transparente------------, completa el parámetro `application_fee` con el monto que se cobrará por cada pago creado en la API **/payments**.
-    #### Ejemplo
+
+<br>
+
+#### Ejemplo
+
     ```json
     {
     "description": "API TRANSPARENTE MARKETPLACE",

@@ -21,7 +21,11 @@ To perform the integration you will need to follow the usual integration flow of
 4. To determine the marketplace commission percentage:
 
     - If the checkout is Pro, fill the `marketplace_fee` parameter with the amount to be charged for each payment preference created in the **/checkout/preferences** API.
-    #### Example
+
+<br>
+
+#### Example
+
     ```json
     {
     "items": [
@@ -37,7 +41,11 @@ To perform the integration you will need to follow the usual integration flow of
     }
     ```
     - If the checkout is ----[mla, mlu, mpe, mco, mlc, mlm]----API------------ ----[mlb]----Transparente------------, fill the `application_fee` parameter with the amount to be charged for each payment created in the **/payments** API.
-    #### Example
+
+<br>
+
+#### Example
+
     ```json
     {
     "description": "API TRANSPARENTE MARKETPLACE",
