@@ -6,7 +6,7 @@ Para integrar la solución de Split de Pagos, es importante cumplir con los requ
 >
 > Importante
 >
-> En caso de que sea necesario realizar configuraciones sobre la fecha de liberación de la comisión (marketplace fee or application fee), contactá a tu **ejecutivo comercial de cartera asesorada**.
+> En caso de que sea necesario realizar configuraciones sobre la fecha de liberación de la comisión (marketplace fee o application fee), contactá a tu **ejecutivo comercial de cartera asesorada**.
 
 | Requisito                        | Descripción                                                                                                                                                                                                                                      |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
