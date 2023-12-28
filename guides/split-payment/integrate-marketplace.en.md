@@ -26,7 +26,7 @@ To perform the integration you will need to follow the usual integration flow of
 
 #### Example
 
-    ```json
+```json
     {
     "items": [
         {
@@ -39,7 +39,7 @@ To perform the integration you will need to follow the usual integration flow of
     ],
     "marketplace_fee": 10
     }
-    ```
+```
     
   - If the checkout is ----[mla, mlu, mpe, mco, mlc, mlm]----API------------ ----[mlb]----Transparente------------, fill the `application_fee` parameter with the amount to be charged for each payment created in the **/payments** API.
 
@@ -47,7 +47,7 @@ To perform the integration you will need to follow the usual integration flow of
 
 #### Example
 
-    ```json
+```json
     {
     "description": "API TRANSPARENTE MARKETPLACE",
     "installments": 1,
@@ -60,6 +60,6 @@ To perform the integration you will need to follow the usual integration flow of
     "application_fee": 2,
     "transaction_amount": 10
     }
-    ```
+```
 
 Upon completing these steps, the checkout will have been integrated into the marketplace and will be ready to process payments.
