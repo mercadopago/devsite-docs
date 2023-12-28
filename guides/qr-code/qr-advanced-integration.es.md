@@ -26,17 +26,7 @@ Puedes encontrar toda la información en la sección [Reembolsos y cancelaciones
 
 Si deseas obtener la orden vigente de una caja, puedes hacerlo utilizando el curl que encontrarás en nuestra **Referencia de API** ingresando a [Obtener orden](/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get), donde además encontrarás información detallada sobre los parámetros de solicitud y respuesta.
 
-## Genera reportes de tus ventas
+## Generar reportes de tus ventas
 
 Integra los [reportes de conciliación de Mercado Pago](/developers/es/guides/additional-content/reports/general-considerations/reconciliation-reports) con tu sistema para conciliar tus ventas y conocer los movimientos de tu cuenta.
 
-## Prueba y valida tu integración
-
-Detallamos todos los casos necesarios que debes probar para validar que tu sistema esté integrado correctamente con Mercado Pago.
-
-**Casos para validar:**
-
-|Modelo de QR|Link|
-|---|---|
-|Atendido|[Haz clic aquí](/developers/es/docs/qr-code/additional-content/qr-validation-cases/qr-attended-events)|
-|Dinámico|[Haz clic aquí](/developers/es/docs/qr-code/additional-content/qr-validation-cases/qr-dynamic-events)|

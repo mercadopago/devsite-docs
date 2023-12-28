@@ -9,7 +9,7 @@ Este modelo permite que o valor a ser cobrado já esteja incluído no código QR
 As suas principais características são:
 
 - O valor já está configurado no código QR.
-- Permite exibir o código QR impresso em um recibo ou no seu dispositivo PDV. Não é necessário fixar um código no caixa.
+- Permite exibir o código QR impresso em um recibo ou no seu dispositivo Ponto de Venda (PDV). Não é necessário fixar um código no caixa.
 - Você pode coletar vários pedidos simultaneamente com códigos diferentes.
 
 > WARNING

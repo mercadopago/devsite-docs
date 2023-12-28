@@ -23,5 +23,5 @@ El incumplimiento de estas normas puede implicar desde el no procesamiento de pa
 
 Estos son algunos puntos a tener en cuenta para aumentar la calidad de tus integraciones:
 
-* Mantén actualizado el estado de los pedidos en tus sistemas usando y procesando notificaciones de IPN o Webhooks.
-* Utiliza los reportes de conciliación de API para mejorar la gestión financiera empresarial.
+* Mantén actualizado el estado de los pedidos en tus sistemas usando y procesando [notificaciones de IPN o Webhooks](/developers/es/docs/qr-code/additional-content/your-integrations/notifications).
+* Utiliza los [reportes de Liberaciones](/developers/es/docs/qr-code/additional-content/reports/released-money) para mejorar la gestión financiera empresarial.
