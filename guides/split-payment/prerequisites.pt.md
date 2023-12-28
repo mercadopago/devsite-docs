@@ -6,7 +6,7 @@ Para integrar a solução Split de Pagamentos, é importante atender aos requisi
 >
 > Importante
 >
-> Caso seja necessário realizar configurações de comissão (taxa de marketplace ou taxa de aplicação), entre em contato com o seu **executivo comercial de carteira assessorada**.
+> Caso seja necessário realizar configurações sobre a data de liberação da comissão (marketplace fee ou application fee), entre em contato com o seu **executivo comercial de carteira assessorada**.
 
 | Requisito                        | Descrição                                                                                                                                                                                                                                      |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

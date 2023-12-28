@@ -6,7 +6,7 @@ To integrate the Split Payments solution, it is important to meet the requiremen
 >
 > Important
 >
-> In case it is necessary to make commission settings (marketplace fee or application fee), contact your **assisted portfolio commercial executive**.
+> If it is necessary to make configurations regarding the commission release date (marketplace fee or application fee), contact your **assisted portfolio commercial executive**.
 
 | Requirement                      | Description                                                                                                                                                                                                                                      |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
