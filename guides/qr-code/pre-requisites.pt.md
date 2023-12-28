@@ -32,7 +32,7 @@ Crie uma aplicação para obter as credenciais e configurar notificações webho
 >
 > Nota
 >
-> Caso a caixa integrada tenha várias conexões com contas Mercado Pago, consulte os itens 4 e 5. Fique atento à segurança da sua integração e implemente [OAuth.](/developers/pt/docs/qr-code/additional-content/security/oauth/introduction)
+> Caso o caixa integrado tenha várias conexões com contas Mercado Pago, consulte os itens 4 e 5. Fique atento à segurança da sua integração e implemente [OAuth.](/developers/pt/docs/qr-code/additional-content/security/oauth/introduction)
 
 ## 3. Gere usuários de teste
 
