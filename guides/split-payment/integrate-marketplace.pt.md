@@ -21,7 +21,7 @@ Para realizar a integração você precisará seguir o fluxo de integração usu
 
 4. Para determinar a porcentagem de comissão do marketplace:
 
-    - Se o checkout for Pro, preencha o parâmetro `marketplace_fee` com o valor a ser cobrado para cada preferência de pagamento criada na API **/checkout/preferences**.
+  - Se o checkout for Pro, preencha o parâmetro `marketplace_fee` com o valor a ser cobrado para cada preferência de pagamento criada na API **/checkout/preferences**.
 
 <br>
 
@@ -41,7 +41,8 @@ Para realizar a integração você precisará seguir o fluxo de integração usu
     "marketplace_fee": 10
     }
     ```
-    - Se o checkout for ----[mla, mlu, mpe, mco, mlc, mlm]----API------------ ----[mlb]----Transparente------------, preencha o parâmetro `application_fee` com o valor a ser cobrado para cada pagamento criado na API **/payments**.
+
+  - Se o checkout for ----[mla, mlu, mpe, mco, mlc, mlm]----API------------ ----[mlb]----Transparente------------, preencha o parâmetro `application_fee` com o valor a ser cobrado para cada pagamento criado na API **/payments**.
 
 <br>
 

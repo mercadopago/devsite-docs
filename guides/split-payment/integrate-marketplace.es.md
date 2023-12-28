@@ -20,7 +20,7 @@ Para realizar la integración deberás seguir el flujo de integración habitual 
 3. En la integración del _checkout_, usa la `public_key` de tu cuenta de integrador en el _frontend_ e inserta el `access_token` del vendedor (obtenido en el paso 1) en el _backend_ o en el _header_ de la solicitud.
 4. Para determinar el porcentaje de comisión del mercado:
 
-    - Si el checkout es Pro, completa el parámetro `marketplace_fee` con el monto que se cobrará por cada preferencia de pago creada en la API **/checkout/preferences**.
+  - Si el checkout es Pro, completa el parámetro `marketplace_fee` con el monto que se cobrará por cada preferencia de pago creada en la API **/checkout/preferences**.
 
 <br>
 
@@ -40,7 +40,8 @@ Para realizar la integración deberás seguir el flujo de integración habitual 
     "marketplace_fee": 10
     }
     ```
-    - Si el checkout es ----[mla, mlu, mpe, mco, mlc, mlm]----API------------ ----[mlb]----Transparente------------, completa el parámetro `application_fee` con el monto que se cobrará por cada pago creado en la API **/payments**.
+
+  - Si el checkout es ----[mla, mlu, mpe, mco, mlc, mlm]----API------------ ----[mlb]----Transparente------------, completa el parámetro `application_fee` con el monto que se cobrará por cada pago creado en la API **/payments**.
 
 <br>
 
