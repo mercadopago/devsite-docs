@@ -1,6 +1,6 @@
 # Sucursales y Cajas
 
-Las **sucursales** y **cajas** son importantes para recibir pagos presenciales con QR. Te permiten crear tu tienda y asignar sus puntos de venta.
+Las **sucursales** y **cajas**, también conocidas como Puntos de Venta (PDV), son importantes para recibir pagos presenciales con QR. Te permiten crear tu tienda y asignar sus puntos de venta.
 
 ![Cajas y Sucursales](/images/mobile/stores_pos.es.png)
 
@@ -32,7 +32,7 @@ Accede a [Crear sucursal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers
 
 ## Cajas
 
-Es un **punto de venta** que existe en una sucursal o tienda física. Cada caja tendrá vinculado un código QR unívoco.
+Es un **punto de venta (PDV)** que existe en una sucursal o tienda física. Cada caja tendrá vinculado un código QR unívoco.
 
 ### Crear una caja
 
@@ -50,3 +50,5 @@ Accede a [Crear caja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/
 > Nota
 >
 > Una vez creada la caja, podrás ver en el `Response` los links a distintos entregables del QR, junto con otros datos relevantes de la caja.
+
+Si lo deseas, puedes ver nuestro [video tutorial para conocer cómo crear sucursales y cajas](/developers/es/docs/qr-code/resources/tutorial-videos/qr-videos-attended).

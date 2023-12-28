@@ -34,8 +34,12 @@ Para obtener información sobre cómo eliminar la orden asociada a un QR antes d
 
 ## Recibe notificaciones de tus órdenes
 
-Las notificaciones IPN **(Instant Payment Notification)** son la **forma automática de aviso de la creación de nuevas órdenes y las actualizaciones de sus estados**. Por ejemplo, si fueron aprobados, rechazados o si se encuentran pendientes.
+Las notificaciones IPN (Instant Payment Notification) son la **forma automática de aviso de la creación de nuevas órdenes y las actualizaciones de sus estados**. Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes.
 
-Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `external_reference` como método de contingencia.
+Dirígete a [notificaciones IPN](/developers/es/docs/qr-code/additional-content/your-integrations/notifications/ipn) para saber cómo implementarlas, específicamente las notificaciones de `merchant_order`, que son aquellas asociadas a pedidos. Podrás identificar cada uno de ellos por medio del parámetro `external_reference`.
 
-[Recibir notificaciones IPN](/developers/es/docs/qr-code/additional-content/your-integrations/notifications/ipn)
+> NOTE
+>
+> Nota
+>
+> Si lo deseas, puedes ver el [video tutorial sobre cómo integrar un Código QR modelo atendido](/developers/es/docs/qr-code/resources/tutorial-videos/qr-videos-attended).

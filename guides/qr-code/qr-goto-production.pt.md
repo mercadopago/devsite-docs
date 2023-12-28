@@ -22,5 +22,5 @@ Desta maneira podemos garantir a segurança dos dados de seus clientes e oferece
 
 Estes são alguns pontos a considerar para aprimorar a qualidade das suas integrações:
 
-* Mantenha atualizado o status dos pedidos nos seus sistemas, usando e processando notificações IPN ou Webhooks.
-* Use relatórios de conciliação de API para melhorar a gestão financeira do seu negócio.
+* Mantenha atualizado o status dos pedidos nos seus sistemas, usando e processando [notificações IPN ou Webhooks](/developers/pt/docs/qr-code/additional-content/your-integrations/notifications).
+* Utilize [relatórios de Liberações](/developers/pt/docs/qr-code/additional-content/reports/released-money) de API para melhorar a gestão financeira do seu negócio.
