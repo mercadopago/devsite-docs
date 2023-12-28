@@ -27,7 +27,6 @@ Para testar o modelo atendido, gere um pedido com as credenciais do usuário de 
 
 Verifique se o seu sistema já recebeu as notificações de status do pedido. E pronto!
 
-
 ## Valide a sua integração
 
 Detalhamos os casos necessários para validar que o seu sistema esteja corretamente integrado ao Mercado Pago.
