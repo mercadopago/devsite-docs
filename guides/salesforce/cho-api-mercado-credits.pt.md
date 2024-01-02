@@ -1,5 +1,15 @@
-# Parcelamento sem cartão
+----[mlb]----
+# Parcelamento via Pix em até 12 vezes
 
+------------
+----[mla]----
+# Parcelamento em até 12 meses sem cartão no Mercado Pago
+
+------------
+----[mlm]----
+# Parcelamento em até 12 meses sem cartão no Mercado Pago
+
+------------
 ----[mlb, mlm]----
 Mercado Crédito é o método de **financiamento** do Mercado Pago que permite aos seus clientes pagar em até **12 parcelas fixas** sem a necessidade de usar um cartão. Com essa opção, seus clientes pagam as parcelas mensalmente diretamente de sua conta no Mercado Pago, utilizando cartão de débito ou dinheiro disponível. A cobrança é totalmente gerenciada pelo Mercado Crédito, que cobre qualquer tentativa de fraude ou descumprimento por parte do comprador.
 

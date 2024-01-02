@@ -1,5 +1,15 @@
-# Financiación sin tarjeta
+----[mlb]----
+# Financiación vía Pix en hasta 12 veces
 
+------------
+----[mla]----
+# Hasta 12 cuotas sin tarjeta con Mercado Pago
+
+------------
+----[mlm]----
+# Hasta 12 meses sin tarjeta con Mercado Pago
+
+------------
 ----[mlb, mlm]----
 Mercado Crédito es el método de **financiamiento** de Mercado Pago que permite a tus clientes pagar en hasta **12 cuotas fijas** sin necesidad de usar una tarjeta. Con esta opción, tus clientes pagan las cuotas mes a mes directamente desde su cuenta de Mercado Pago utilizando tarjeta de débito o dinero disponible. La cobranza está completamente a cargo de Mercado Crédito, que cubre cualquier intento de fraude o incumplimiento por parte del comprador.
 

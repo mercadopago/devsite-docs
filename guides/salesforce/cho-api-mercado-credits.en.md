@@ -1,5 +1,15 @@
-# Financing without a card
+----[mlb]----
+# Installment payment via Pix in up to 12x
 
+------------
+----[mla]----
+# Up to 12 installments without card with Mercado Pago
+
+------------
+----[mlm]----
+# Up to 12 installments without card with Mercado Pago
+
+------------
 ----[mlb, mlm]----
 Mercado Crédito is the **financing** method provided by Mercado Pago, enabling your customers to pay in up to **12 fixed installments** without the need for a credit card. With this option, your customers can make monthly payments directly from their Mercado Pago account using a debit card or available funds. The entire collection process is managed by Mercado Crédito, covering any attempts at fraud or non-compliance by the buyer.
 
