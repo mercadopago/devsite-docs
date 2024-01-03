@@ -74,10 +74,22 @@ Soluciones para quienes venden desde casa, en la calle, en el coche o en la tien
 | Mercado Pago Delivery | Una solución de entrega de comidas a demanda, en la que el cliente accede a un listado de restaurantes registrados, realiza su pedido y paga directamente a través de la app de Mercado Pago. | 🔵🔵⚪⚪  |
 ------------
 
-----[mlb, mlm, mpe, mco, mlu, mlc]----
+----[mpe, mco, mlu, mlc]----
+| Solución | Descripción | Complejidad de integración |
+|:---|:---|:---|
+| Point de Mercado Pago | Integra el Point de Mercado Pago y conecta el lector de tarjeta a cualquier sistema iOS o Android para aceptar pagos en caja. | 🔵🔵🔵⚪   |
+------------
+
+----[mlb]----
 | Solución | Descripción | Complejidad de integración |
 |:---|:---|:---|
 | Código QR | Elige un modelo de integración para generar códigos QR y brindar una experiencia completa de pago presencial. | 🔵🔵⚪⚪  |
+| Point de Mercado Pago | Integra el Point de Mercado Pago y conecta el lector de tarjeta a cualquier sistema iOS o Android para aceptar pagos en caja. | 🔵🔵🔵⚪   |
+------------
+
+----[mlm]----
+| Solución | Descripción | Complejidad de integración |
+|:---|:---|:---|
 | Point de Mercado Pago | Integra el Point de Mercado Pago y conecta el lector de tarjeta a cualquier sistema iOS o Android para aceptar pagos en caja. | 🔵🔵🔵⚪   |
 ------------
 

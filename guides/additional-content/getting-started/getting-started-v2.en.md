@@ -73,12 +73,25 @@ Solutions for those who sell from home, on the street, in the car, or in the sto
 | Mercado Pago Delivery | A on-demand food delivery solution in which the customer accesses a list of registered restaurants, places an order, and pays directly through the Mercado Pago app. | 🔵🔵⚪⚪ |
 ------------
 
-----[mlb, mlm, mpe, mco, mlu, mlc]----
+----[mpe, mco, mlu, mlc]----
+| Solution | Description | Integration Complexity |
+|:---|:---|:---|
+| Mercado Pago Point | Integrate the Mercado Pago Point and connect the card reader to any iOS or Android system to accept payments at the counter. | 🔵🔵🔵⚪ |
+------------
+
+----[mlb]----
 | Solution | Description | Integration Complexity |
 |:---|:---|:---|
 | QR Code | Choose an integration model to generate QR codes and provide a complete in-person payment experience. | 🔵🔵⚪⚪ |
 | Mercado Pago Point | Integrate the Mercado Pago Point and connect the card reader to any iOS or Android system to accept payments at the counter. | 🔵🔵🔵⚪ |
 ------------
+
+----[mlm]----
+| Solution | Description | Integration Complexity |
+|:---|:---|:---|
+| Mercado Pago Point | Integrate the Mercado Pago Point and connect the card reader to any iOS or Android system to accept payments at the counter. | 🔵🔵🔵⚪ |
+------------
+
 
 ## Process payments on e-commerce platforms
 
