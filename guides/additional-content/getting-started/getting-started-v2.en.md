@@ -37,14 +37,14 @@ bullet_section_with_media:
 
 ## Process online payments
 
-Solutions for those who sell on the website, through WhatsApp, or social media.
+Solutions for those who sell on websites, through WhatsApp, or social media.
 
 ----[mlb]----
 | Solution | Description | Integration Complexity |
 |:---|:---|:---|
 | Checkout Pro | Process payments in Mercado Pago in a simple and secure way with a ready-to-use design. We have developed this optimized checkout to increase your conversion. | 🔵🔵⚪⚪ |
-| Checkout Transparent | A versatile solution so that you build your payment processor on your website. You control the entire experience, from basic to advanced settings. | 🔵🔵🔵🔵 |
-| Payment Link | Create a payment link in just a few steps and use it to collect payments via chat and social networks. No technical knowledge is required. | 🔵⚪⚪⚪ |
+| Checkout Transparente | A versatile solution so that you build your payment processor on your website. You control the entire experience, from basic to advanced settings. | 🔵🔵🔵🔵 |
+| Payment Link | Create a payment link in just a few steps and use it to collect payments via chat and social media. No technical knowledge is required. | 🔵⚪⚪⚪ |
 | Subscriptions | Automates recurrent payment collections with a subscription. You can set up the payment frequency and the amount to be charged. | 🔵🔵⚪⚪ |
 | Checkout Bricks | A modular, secure and customizable payment solution, where you control the entire experience and choose which brick and layout to use based on your site's needs. | 🔵🔵🔵⚪ |
 | Wallet Connect | Process payments automatically through the Mercado Pago digital wallet. With Wallet Connect it is possible to make payments using the balance available in the Mercado Pago account or cards. | 🔵🔵🔵🔵 |
@@ -55,7 +55,7 @@ Solutions for those who sell on the website, through WhatsApp, or social media.
 |:---|:---|:---|
 | Checkout Pro | Process payments in Mercado Pago in a simple and secure way with a ready-to-use design. We have developed this optimized checkout to increase your conversion. | 🔵🔵⚪⚪ |
 | Checkout API | A versatile solution so that you build your payment processor on your website. You control the entire experience, from basic to advanced settings. | 🔵🔵🔵🔵 |
-| Payment Link | Create a payment link in just a few steps and use it to collect payments via chat and social networks. No technical knowledge is required. | 🔵⚪⚪⚪ |
+| Payment Link | Create a payment link in just a few steps and use it to collect payments via chat and social media. No technical knowledge is required. | 🔵⚪⚪⚪ |
 | Subscriptions | Automates recurrent payment collections with a subscription. You can set up the payment frequency and the amount to be charged. | 🔵🔵⚪⚪ |
 | Checkout Bricks | A modular, secure and customizable payment solution, where you control the entire experience and choose which brick and layout to use based on your site's needs. | 🔵🔵🔵⚪ |
 | Wallet Connect | Process payments automatically through the Mercado Pago digital wallet. With Wallet Connect it is possible to make payments using the balance available in the Mercado Pago account or cards. | 🔵🔵🔵🔵 |
@@ -82,7 +82,7 @@ Solutions for those who sell from home, on the street, in the car, or in the sto
 
 ## Process payments on e-commerce platforms
 
-Install Checkout Pro or ----[mla, mlm, mpe, mco, mlu, mlc]----Checkout API ------------ ----[mlb]----Checkout Transparent ------------ in your store and **start offering payments with Mercado Pago** on your e-commerce platform. Integrating solutions by connecting to a platform is simple and fast. The entire process is done in the Mercado Pago business panel and on the platform itself.
+Install Checkout Pro or ----[mla, mlm, mpe, mco, mlu, mlc]----Checkout API ------------ ----[mlb]----Checkout Transparente ------------ in your store and **start offering payments with Mercado Pago** on your e-commerce platform. Integrating solutions by connecting to a platform is simple and fast. The entire process is done in the Mercado Pago business panel and on the platform itself.
 
 Find our plugin on platforms like **Shopify**, **WooCommerce**, **Tiendanube**, **VTEX**, **Wix**, **Adobe Commerce (Magento)**, and many more.
 
@@ -102,7 +102,7 @@ With our **frontend SDKs**, you can make calls for card tokens and use many othe
 | Solution | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brazil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colombia | 🇲🇽 <br> Mexico | 🇵🇪 <br> Peru | 🇺🇾 <br>Uruguay |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Transparent Checkout | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Checkout Transparente | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Checkout Bricks | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Payment Link | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Subscriptions | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |

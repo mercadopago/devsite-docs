@@ -1,7 +1,7 @@
 ---
 content_section_with_media: 
  - title: Primeros pasos
- - message: ¿Primera vez integrando las soluciones de pago de Mercado Pago? En esta documentación podrás encontrar la información que necesitas para comenzar.
+ - message: ¿Primera vez integrando las soluciones de pago de Mercado Pago? En esta documentación encontrarás la información que necesitas para comenzar.
  - media_image: /getting-started/women-dev.png
 ---
 
