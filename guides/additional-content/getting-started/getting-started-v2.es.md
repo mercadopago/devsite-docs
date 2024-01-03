@@ -25,7 +25,7 @@ Si ya tienes una cuenta de Mercado Libre, accede a [Tus integraciones](https://w
 
 # Tus integraciones
 
-Con la cuenta ya activa, tienes acceso [Tus integraciones](https://www.mercadopago.com/developers/panel/app), que te permite administrar integraciones con desarrollo de código, tus aplicaciones, realizar pruebas y configurar notificaciones que te brindan información sobre las transacciones.
+Con la cuenta ya activa, tienes acceso a [Tus integraciones](https://www.mercadopago.com/developers/panel/app), que te permite administrar integraciones con desarrollo de código, tus aplicaciones, realizar pruebas y configurar notificaciones que te brindan información sobre las transacciones.
 
 ---
 bullet_section_with_media:
@@ -37,13 +37,13 @@ bullet_section_with_media:
 
 ## Procesa pagos online
 
-Soluciones para quienes vendan por el sitio, desde WhatsApp o redes sociales.
+Soluciones para quienes vendan por sitio web, desde WhatsApp o redes sociales.
 
 ----[mlb]----
 | Solución | Descripción | Complejidad de integración |
 |:---|:---|:---|
-| Checkout Pro | Procesa pagos en el ambiente de Mercado Pago, de manera simple y segura con un diseño listo para usar. Desarrollamos este checkout optimizado para aumentar la conversión. | 🔵🔵⚪⚪  |
-| Checkout Transparente | Una solución versatil para que construyas tu procesador de pagos en tu sitio. Tú controlas toda la experiencia de configuraciones básicas y avanzadas. | 🔵🔵🔵🔵    |
+| Checkout Pro | Procesa pagos en el ambiente de Mercado Pago de manera simple y segura con un diseño listo para usar. Desarrollamos este checkout optimizado para aumentar la conversión. | 🔵🔵⚪⚪  |
+| Checkout Transparente | Una solución versátil para que construyas tu procesador de pagos en tu sitio. Tú controlas toda la experiencia de configuraciones básicas y avanzadas. | 🔵🔵🔵🔵    |
 | Link de pago | Crea un link de pago en pocas etapas y úsalo en el momento para recibir pagos por chat y redes sociales. No necesitas conocimientos técnicos. | 🔵⚪⚪⚪ |
 | Suscripciones | Automatiza los cobros recurrentes a través de una suscripción. Puedes configurar la frecuencia de los pagos y el monto a cobrar. | 🔵🔵⚪⚪  |
 | Checkout Bricks | Una solución de pagos modular, segura y personalizable, en donde tú controlas la experiencia completa y eliges qué brick y diseño utilizar según las necesidades de tu sitio. | 🔵🔵🔵⚪   |
@@ -53,8 +53,8 @@ Soluciones para quienes vendan por el sitio, desde WhatsApp o redes sociales.
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Solución | Descripción | Complejidad de integración |
 |:---|:---|:---|
-| Checkout Pro | Procesa pagos en el ambiente de Mercado Pago, de manera simple y segura con un diseño listo para usar. Desarrollamos este checkout optimizado para aumentar la conversión. | 🔵🔵⚪⚪  |
-| Checkout API | Una solución versatil para que construyas tu procesador de pagos en tu sitio. Tú controlas toda la experiencia de configuraciones básicas y avanzadas. | 🔵🔵🔵🔵    |
+| Checkout Pro | Procesa pagos en el ambiente de Mercado Pago de manera simple y segura con un diseño listo para usar. Desarrollamos este checkout optimizado para aumentar la conversión. | 🔵🔵⚪⚪  |
+| Checkout API | Una solución versátil para que construyas tu procesador de pagos en tu sitio. Tú controlas toda la experiencia de configuraciones básicas y avanzadas. | 🔵🔵🔵🔵    |
 | Link de pago | Crea un link de pago en pocas etapas y úsalo en el momento para recibir pagos por chat y redes sociales. No necesitas conocimientos técnicos. | 🔵⚪⚪⚪ |
 | Suscripciones | Automatiza los cobros recurrentes a través de una suscripción. Puedes configurar la frecuencia de los pagos y el monto a cobrar. | 🔵🔵⚪⚪  |
 | Checkout Bricks | Una solución de pagos modular, segura y personalizable, en donde tú controlas la experiencia completa y eliges qué brick y diseño utilizar según las necesidades de tu sitio. | 🔵🔵🔵⚪   |
@@ -70,7 +70,7 @@ Soluciones para quienes venden desde casa, en la calle, en el coche o en la tien
 | Solución | Descripción | Complejidad de integración |
 |:---|:---|:---|
 | Código QR | Elige un modelo de integración para generar códigos QR y brindar una experiencia completa de pago presencial. | 🔵🔵⚪⚪  |
-| Point de Mercado Pago | Integra el Point de Mercado Pago y conecta el lector de tarjeta a cualquier sistema iOS o Android para aceptar pagos en caja. | 🔵🔵🔵⚪   |
+| Point de Mercado Pago | Integra el Point de Mercado Pago utilizando nuestra API o conecta el lector de tarjeta a cualquier sistema iOS o Android para aceptar pagos en caja. | 🔵🔵🔵⚪   |
 | Mercado Pago Delivery | Una solución de entrega de comidas a demanda, en la que el cliente accede a un listado de restaurantes registrados, realiza su pedido y paga directamente a través de la app de Mercado Pago. | 🔵🔵⚪⚪  |
 ------------
 
