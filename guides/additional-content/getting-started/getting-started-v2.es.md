@@ -9,7 +9,7 @@ content_section_with_media:
 
 Ya sea que desees integrar Mercado Pago para tu negocio o que seas un desarrollador integrando para otras personas, Mercado Pago ofrece diferentes soluciones que permiten **recibir pagos virtuales o presenciales**. 
 
-Puedes ofrecer pagos con diversos tipos de pago en tiendas físicas o tiendas online a través del link de pago, Código QR y la máquina de Mercado Pago, el Point, que pueden o no estar integrados entre sí.
+Puedes ofrecer pagos con diversos tipos de pago en tiendas físicas o en línea a través del link de pago, Código QR y la máquina de Mercado Pago, el Point, que pueden o no estar integrados entre sí.
 
 ---
 bullet_section_with_media:
