@@ -83,7 +83,7 @@ Soluciones para quienes venden desde casa, en la calle, en el coche o en la tien
 
 ## Procesa pagos en plataformas de e-commerce
 
-Instala el Checkout Pro o el ----[mla, mlm, mpe, mco, mlu, mlc]----Checkout API ------------ ----[mlb]----Checkout Transparente ------------ en tu tienda y **comienza a ofrecer pagos con Mercado Pago** en tu plataforma de e-commerce. Integrar soluciones conectándote a una plataforma es simple y rápido. Todo el proceso se realiza en el panel de negocios de Mercado Pago y en la propia plataforma.
+Instala Checkout Pro o ----[mla, mlm, mpe, mco, mlu, mlc]----Checkout API ------------ ----[mlb]----Checkout Transparente ------------ en tu tienda y **comienza a ofrecer pagos con Mercado Pago** en tu plataforma de e-commerce. Integrar soluciones conectándote a una plataforma es simple y rápido. Todo el proceso se realiza en el panel de negocios de Mercado Pago y en la propia plataforma.
 
 Encuentra nuestro plugin en las plataformas **Shopify**, **WooCommerce**, **Tiendanube**, **VTEX**, **Wix**, **Adobe Commerce (Magento)**, y muchas más. 
 
@@ -131,11 +131,11 @@ Con las **SDKs de frontend**, puedes realizar llamadas para el token de tarjetas
 
 # Por dónde comenzar a integrar
 
-Si no tienes certeza de por donde comenzar según tus conocimientos de programación, no te preocupes. Tenemos diferentes soluciones que se ajustan a tus necesidades. Sigue el diagrama que te compartimos a continuación para descubrir cuál es tu producto ideal.
+Si no tienes certeza de por dónde comenzar según tus conocimientos de programación, no te preocupes. Tenemos diferentes soluciones que se ajustan a tus necesidades. Sigue el diagrama que te compartimos a continuación para descubrir cuál es tu producto ideal.
 
 ![Getting started](/images/getting-started/getting-started-diagram2-es.png)
 
-> Para obtener detalles sobre los **medios de pago aceptados en cada país**, consulta la lista completa con [disponibilidad de medios de pago](/developers/es/docs/sales-processing/payment-methods).
+> Para obtener detalles sobre los **medios de pago aceptados en cada país**, consulta la lista completa de [disponibilidad de medios de pago](/developers/es/docs/sales-processing/payment-methods).
 
 ---
 bullet_section_with_media:
