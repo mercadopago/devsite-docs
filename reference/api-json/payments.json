@@ -2697,7 +2697,58 @@
           "en": "Create payment",
           "pt": "Criar pagamento",
           "es": "Crear pago"
-        }
+        },
+        "userCases": [
+          {
+              "name": {
+                  "en": "Create payment with Rapipago",
+                  "pt": "Criar pagamento Rapipago",
+                  "es": "Crear pago con Rapipago"
+              },
+              "requestBody": {
+                  "content": {
+                      "application/json": {
+                          "schema": {
+                              "properties": {
+                                  "payment_method_id": {
+                                      "example": "rapipago"
+                                  }
+                              }
+                          }
+                      }
+                  }
+              },
+              "responses": {
+                  "200": {
+                      "content": {
+                          "application/json": {
+                              "schema": {
+                                  "type": "object",
+                                  "properties": {
+                                      "id": {
+                                          "example": 123456
+                                      },
+                                      "payment_method_id": {
+                                          "example": "rapipago"
+                                      },
+                                      "description": {
+                                          "example": "Test payment rapipago"
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  }
+              },
+              "parameters": [
+                  {
+                      "schema": {
+                          "example": "0d5020ed-1af6-469c-ae06-c3bec19954bb"
+                      }
+                  }
+              ]
+          }
+      ]
       }
     },
     "/v1/payments/{id}": {
