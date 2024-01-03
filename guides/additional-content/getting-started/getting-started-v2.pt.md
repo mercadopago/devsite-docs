@@ -144,9 +144,9 @@ bullet_section_with_media:
  - image: /getting-started/woman-male-dev.png
 ---
 
-Você pode encontrar as credenciais em **Detalhes do aplicativo > Credenciais** dentro de [Suas integrações](/developers/panel/app).
+Você pode encontrar as credenciais em **Detalhes da aplicação > Credenciais** dentro de [Suas integrações](/developers/panel/app).
 
-Existem dois tipos diferentes de credenciais: as **credenciais de teste** e as **credenciais de produção**. Ambos os tipos de credenciais consistem em dois pares de chaves que você deve usar dependendo do produto escolhido: **Public Key** e **Access Token** ou **ID do Cliente** e **Segredo do Cliente**.
+Existem dois tipos diferentes de credenciais: as **credenciais de teste** e as **credenciais de produção**. Ambos os tipos de credenciais consistem em dois pares de chaves que você deve usar dependendo do produto escolhido: **Public Key** e **Access Token** ou **ID do Cliente** e **Client Secret**.
 
 Se você precisar compartilhar suas credenciais, você pode fazer isso com segurança. No site do Mercado Pago, acesse [Seu negócio > Configurações > Gerenciamento e administração > Credenciais](https://www.mercadopago[FAKE][URL][DOMAIN]/settings/account/credentials) e selecione a opção **Compartilhar credenciais**.
 
