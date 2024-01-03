@@ -147,7 +147,7 @@ Si no tienes certeza de por dónde comenzar según tus conocimientos de programa
 
 ![Getting started](/images/getting-started/getting-started-diagram2-es.png)
 
-> Para obtener detalles sobre los **medios de pago aceptados en cada país**, consulta la lista completa de [disponibilidad de medios de pago](/developers/es/docs/sales-processing/payment-methods).
+Para obtener detalles sobre los **medios de pago aceptados en cada país**, consulta la lista completa de [disponibilidad de medios de pago](/developers/es/docs/sales-processing/payment-methods).
 
 ---
 bullet_section_with_media:
@@ -163,7 +163,7 @@ Existen dos tipos diferentes de credenciales: las **credenciales de prueba** y l
 
 Si necesitas compartir tus credenciales, puedes hacerlo de forma segura. En el sitio de Mercado Pago, navega hasta [Tu negocio > Configuración > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) y selecciona la opción **Compartir credenciales**. 
 
-> Para conocer más, accede a la [documentación de credenciales](/developers/es/docs/your-integrations/credentials).
+Para conocer más, accede a la [documentación de credenciales](/developers/es/docs/your-integrations/credentials).
 
 <br>
 

@@ -147,7 +147,7 @@ If you're not sure where to start based on your programming knowledge, don't wor
 
 ![Getting started](/images/getting-started/getting-started-diagram2-en.png)
 
-> For details on the **accepted payment methods in each country**, consult the complete list of [available payment methods](/developers/en/docs/sales-processing/payment-methods).
+For details on the **accepted payment methods in each country**, consult the complete list of [available payment methods](/developers/en/docs/sales-processing/payment-methods).
 
 ---
 bullet_section_with_media:
@@ -163,7 +163,7 @@ There are two different types of credentials: **test credentials** and **product
 
 If you need to share your credentials, you can do so securely. On the Mercado Pago site, navigate to [Your business > Settings > Management and administration > Credentials](https://www.mercadopago[FAKE][URL][DOMAIN]/settings/account/credentials) and select the **Share credentials** option.
 
-> To learn more, access the [credentials documentation](/developers/en/docs/your-integrations/credentials).
+To learn more, access the [credentials documentation](/developers/en/docs/your-integrations/credentials).
 
 <br>
 
