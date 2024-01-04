@@ -1,6 +1,6 @@
 # Webhooks
 
-Webhook (also known as web callback) is a simple method that makes it easy for an app or system to provide real-time information whenever an event happens, that is, it is a way to passively receive data between two systems through of an `HTTP POST`.
+**Webhooks** (also known as web callback) is a simple method that makes it easy for an app or system to provide real-time information whenever an event happens, that is, it is a way to passively receive data between two systems through of an `HTTP POST`.
 
 Webhook notifications can be configured for one or more applications created in your [Developer Dashboard](/developers/panel/app).
 
