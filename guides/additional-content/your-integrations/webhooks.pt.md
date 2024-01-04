@@ -47,7 +47,7 @@ Abaixo explicaremos como: indicar as URLs que serão notificadas, configurar os 
 > <br>
 > A assinatura gerada não tem prazo de validade e, embora não seja obrigatório, recomendamos renovar periodicamente a **assinatura secreta**. Para isso, basta clicar no botão de redefinição ao lado da assinatura.
 
-### Validar notificação
+### Validar origem da notificação
 
 1. Após configurar as URLs e os Eventos, **revele a assinatura secreta** gerada.
 2. Em seguida, utilize a assinatura secreta para validar o cabeçalho `x-signature-id`. O valor do campo deve coincidir com a assinatura, como mostra o exemplo abaixo.
@@ -59,7 +59,7 @@ accept	*/*
 x-signature-id	59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1
 ```
 
-### Simular notificações
+### Simular o recebimento da notificação
 
 1. Após configurar as URLs e os Eventos, clique em **Simular** para experimentar e testar se a URL indicada está recebendo as notificações corretamente.
 2. Na tela em questão, selecione a URL a ser testada, podendo ser **de teste ou de produção**. 

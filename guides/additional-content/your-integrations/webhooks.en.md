@@ -49,7 +49,7 @@ Below, we will explain how to: specify the URLs that will be notified, configure
 > <br>
 > The generated signature has no expiration date, and while not mandatory, we recommend periodically renewing the **secret signature**. To do this, simply click the reset button next to the signature.
 
-### Validate notification
+### Validate notification origin
 
 1. After configuring the URLs and Events, **reveal the generated secret signature**.
 2. Then, use the secret signature to validate the `x-signature-id` header. The field value must match the signature, as shown in the example below.
@@ -61,7 +61,7 @@ accept	*/*
 x-signature-id	59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1
 ```
 
-### Simulate notifications
+### Simulate notification receipt
 
 1. After configuring the URLs and Events, click **Simulate** to experiment and test if the indicated URL is receiving notifications correctly.
 2. On the relevant screen, select the URL to be tested, which can be **either the test or production URL**.

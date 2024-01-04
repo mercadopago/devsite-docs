@@ -47,7 +47,7 @@ A continuación explicaremos cómo: indicar las URL que serán notificadas, conf
 > <br>
 > La clave generada no tiene fecha de caducidad y, aunque no es obligatorio, recomendamos renovar periódicamente la **clave secreta**. Para hacerlo, simplemente haz clic en el botón de restablecimiento junto a la clave.
 
-### Validar notificación
+### Validar origen de la notificación
 
 1. Después de configurar las URLs y los Eventos, **revela la clave secreta** generada.
 2. A continuación, utiliza la clave secreta para validar el encabezado `x-signature-id`. El valor del campo debe coincidir con la clave, como se muestra en el ejemplo a continuación.
@@ -59,7 +59,7 @@ accept	*/*
 x-signature-id	59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1
 ```
 
-### Simular notificaciones
+### Simular la recepción de la notificación
 
 1. Después de configurar las URLs y los Eventos, haz clic en **Simular** para experimentar y probar si la URL indicada está recibiendo las notificaciones correctamente.
 2. En la pantalla correspondiente, selecciona la URL que se va a probar, que puede ser **la URL de prueba o la de producción**.
