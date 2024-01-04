@@ -2,7 +2,9 @@
 
 ## Create test users
 
-[TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
+Use test accounts to ensure that your integration supports all possible flows and scenarios. They have the same features as a real Mercado Pago account, which allows you to test the functioning of the integrations you are developing.
+
+If you haven't created test users yet, go to [Prerequisites](/developers/en/docs/qr-code/pre-requisites) to learn how to do it.
 
 ## Test cards
 
@@ -23,3 +25,15 @@ To test the attended model, generate an order with the test user credentials you
 ### 3. Receive order notifications
 
 Lastly, make sure you’ve received a status notification in your system. And it's done!
+
+
+## Validate your integration
+
+We detailed all the necessary scenarios you should test to ensure your system's successful integration with Mercado Pago.
+
+**Validation events:**
+
+|QR Model|Link|
+|---|---|
+|Attended|[Click here](/developers/en/docs/qr-code/additional-content/qr-validation-cases/qr-attended-events)|
+|Dynamic|[Click here](/developers/en/docs/qr-code/additional-content/qr-validation-cases/qr-dynamic-events)|

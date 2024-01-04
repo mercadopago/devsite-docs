@@ -26,14 +26,3 @@ If you want to obtain the current order data of a POS, use the curl that you wil
 ## Generate sales reports
 
 Integrate the [Mercado Pago reconciliation reports](/developers/en/guides/additional-content/reports/general-considerations/reconciliation-reports) with your system to reconcile your sales and view your account movements.
-
-## Test and validate your integration
-
-We detailed all the necessary scenarios you should test to ensure your system's successful integration with Mercado Pago.
-
-**Validation events:**
-
-|QR Model|Link|
-|---|---|
-|Attended|[Click here](/developers/en/docs/qr-code/additional-content/qr-validation-cases/qr-attended-events)|
-|Dynamic|[Click here](/developers/en/docs/qr-code/additional-content/qr-validation-cases/qr-dynamic-events)|

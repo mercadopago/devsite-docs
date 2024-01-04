@@ -1,6 +1,6 @@
 # Stores and POS
 
-The **Stores** and **POS** are critical for receiving in-store payments with QR. They allow creating your store and assign its points of sale.
+The **Stores** and **POS (Point of Sale)** are critical for receiving in-store payments with QR. They allow creating your store and assign its points of sale.
 
 ![POS and Stores](/images/mobile/stores_pos.es.png)
 
@@ -36,7 +36,7 @@ It is a **point of sale** that exists in a branch or physical store. Each POS wi
 
 ### Create POS
 
-Having your stores set, you can create your POS. Consider the following:
+Having your stores set, you can create your Point of Sale. Consider the following:
 
 | Term | Description |
 | --- | --- |
@@ -50,3 +50,5 @@ Go to [Create POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/ref
 > Note
 >
 > After the Point of Sale creation, you will see the QR files in the `Response` section, with other relevant data.
+
+If you wish, you can check our [tutorial videos on how to create a store and a POS](/developers/en/docs/qr-code/resources/tutorial-videos/qr-videos-attended).

@@ -108,7 +108,7 @@ A continuación, encontrarás el botón de pago que se muestra en tu página.
 
 </center>
 
-En el ejemplo anterior, se renderizará un botón de pago que será responsable por abrir el Checkout Pro. Si deseas que la experiencia con Checkout Pro se realice en una **pestaña externa o de manera modal**, consulta la sección [Esquema de apertura](/developers/es/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
+En el ejemplo anterior, se renderizará un botón de pago que será responsable por abrir el Checkout Pro. Si deseas que la experiencia con Checkout Pro se realice en una **pestaña externa**, consulta la sección [Esquema de apertura](/developers/es/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 
 ## Configurar las back_url
 

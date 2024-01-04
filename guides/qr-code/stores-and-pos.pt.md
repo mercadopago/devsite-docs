@@ -1,6 +1,6 @@
 # Lojas e caixas
 
-As **lojas** e os **caixas** são importantes para receber pagamentos in-store com QR. Permitem que você crie sua loja e designe seus pontos de venda.
+As **lojas** e os **caixas**, também conhecidas como Ponto de Venda (PDV), são importantes para receber pagamentos presenciais com QR. Permitem que você crie sua loja e designe seus pontos de venda.
 
 ![Caixas e lojas](/images/mobile/stores_pos.pt.png)
 
@@ -32,7 +32,7 @@ Acesse [Criar loja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/re
 
 # Caixas
 
-É um **ponto de venda** que existe numa loja física. Cada caixa tem um código QR único vinculado.
+É um **ponto de venda (PDV)** que existe numa loja física. Cada caixa tem um código QR único vinculado.
 
 ## Criar um caixa
 
@@ -51,3 +51,5 @@ Acesse [Criar caixa](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/r
 >
 >
 > Uma vez criado o caixa, você poderá ver no `Response` os links para os diferentes entregáveis do QR, junto com outros dados relevantes do caixa.
+
+Se deseja, você pode assistir ao [vídeo tutorial para conhecer como é criar lojas e caixas](/developers/pt/docs/qr-code/resources/tutorial-videos/qr-videos-attended).
