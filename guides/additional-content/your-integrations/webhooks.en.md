@@ -39,7 +39,9 @@ Below, we will explain how to: specify the URLs that will be notified, configure
 | `delivery_cancellation` | `case_created`| Shipment cancellation request |
 | `topic_claims_integration_wh` | `updated`| Claims made by sales |
 
-5. Finally, click **Save** to generate a secret signature for the application.
+5. Finally, click **Save** to generate a secret signature for the application. The signature is a validation method to ensure that received notifications were sent by Mercado Pago.
+
+
 
 > WARNING
 >

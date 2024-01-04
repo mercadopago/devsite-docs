@@ -37,7 +37,7 @@ Abaixo explicaremos como: indicar as URLs que serão notificadas, configurar os 
 | `delivery_cancellation` | `case_created`| Solicitação de cancelamento do envio |
 | `topic_claims_integration_wh` | `updated`| Reclamações feitas pelas vendas |
 
-5. Por fim, clique em **Salvar** para gerar uma assinatura secreta para a aplicação. 
+5. Por fim, clique em **Salvar** para gerar uma **assinatura secreta** para a aplicação. A assinatura é um método de validação para garantir que notificações recebidas foram enviadas pelo Mercado Pago. 
 
 > WARNING
 >

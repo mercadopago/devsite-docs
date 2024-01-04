@@ -37,7 +37,7 @@ A continuación explicaremos cómo: indicar las URL que serán notificadas, conf
 | `delivery_cancellation` | `case_created`| Solicitud de cancelación de envío |
 | `topic_claims_integration_wh` | `updated`| Reclamos hechos por las ventas |
 
-5. Por último, haz clic en **Guardar** para generar una clave secreta para la aplicación.
+5. Por último, haz clic en **Guardar** para generar una clave secreta para la aplicación. La clave es un método de validación para asegurar que las notificaciones recibidas fueron enviadas por Mercado Pago.
 
 > WARNING
 > 
