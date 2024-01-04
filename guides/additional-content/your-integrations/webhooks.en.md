@@ -12,15 +12,16 @@ In this documentation, we will explain the necessary settings to receive message
 
 ## Configuration via Dashboard
 
-Below we will explain how to indicate the URLs that will be notified and how to configure the events for which notification will be received.
+Below, we will explain how to: specify the URLs that will be notified, configure the events from which notifications will be received, validate that the notifications you receive are sent by Mercado Pago and simulate the receipt of various types of notifications.
 
-![webhooks](/images/notifications/webhooks_es.png)
+![webhooks](/images/notifications/webhooks-es.png)
+
+### Configure URLs and Events
 
 1. If you haven't done so already, create an application in the [Developer Dashboard](/developers/panel/app).
-2. Once the application is created, navigate to the Webhooks section in the Application Details page and configure the **production** and **test** URLs where notifications will be received.
-3. You will also be able to experiment and test if the indicated URL is receiving notifications correctly, being able to verify the request, the response given by the server and the description of the event.
-4. If you need to identify multiple accounts, at the end of the indicated URL you can indicate the parameter `?customer=(sellername) endpoint` to identify the sellers.
-5. Next, select the **events** from which you will receive notifications in `json` format via an `HTTP POST` to the URL specified above. An event is any type of update to the reported object, including status or attribute changes. See the events that can be configured in the table below.
+2. Once the application is created, navigate to the Webhooks section in the "Application details" page and configure the **production** and **test** URLs where notifications will be received.
+3. If you need to identify multiple accounts, at the end of the indicated URL you can indicate the parameter `?customer=(sellername) endpoint` to identify the sellers.
+4. Next, select the **events** from which you will receive notifications in `json` format via an `HTTP POST` to the URL specified above. An event is any type of update to the reported object, including status or attribute changes. See the events that can be configured in the table below.
 
 | Notification Type | Action | Description |
 | :--- | :--- | :--- |
@@ -37,6 +38,35 @@ Below we will explain how to indicate the URLs that will be notified and how to 
 | `delivery` | `delivery.updated`| Shipping data and order update |
 | `delivery_cancellation` | `case_created`| Shipment cancellation request |
 | `topic_claims_integration_wh` | `updated`| Claims made by sales |
+
+5. Finally, click **Save** to generate a secret signature for the application.
+
+> WARNING
+>
+> Important
+> 
+> Mercado Pago will always send this signature in Webhook notifications. Always verify this authenticity information to prevent fraud.
+> <br>
+> The generated signature has no expiration date, and while not mandatory, we recommend periodically renewing the **secret signature**. To do this, simply click the reset button next to the signature.
+
+### Validate notification
+
+1. After configuring the URLs and Events, **reveal the generated secret signature**.
+2. Then, use the secret signature to validate the `x-signature-id` header. The field value must match the signature, as shown in the example below.
+
+```
+accept-encoding	*
+content-type	application/json
+accept	*/*
+x-signature-id	59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1
+```
+
+### Simulate notifications
+
+1. After configuring the URLs and Events, click **Simulate** to experiment and test if the indicated URL is receiving notifications correctly.
+2. On the relevant screen, select the URL to be tested, which can be **either the test or production URL**.
+3. Next, choose the **event type** and enter the **identification** that will be sent in the notification body.
+4. Finally, click **Send test** to check the request, the server's response and the event description.
 
 ## Setup while creating payments
 

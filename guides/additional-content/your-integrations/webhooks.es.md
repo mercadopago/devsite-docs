@@ -10,15 +10,16 @@ En esta documentación, explicaremos las configuraciones necesarias para recibir
 
 ## Configuración a través del Panel del desarrollador
 
-A continuación explicaremos cómo indicar las URLs que serán notificadas y cómo configurar los eventos para los que se recibirán notificaciones.
+A continuación explicaremos cómo: indicar las URL que serán notificadas, configurar los eventos de los cuales se recibirá la notificación, validar que las notificaciones que recibes son enviadas por Mercado Pago y simular la recepción de diversos tipos de notificaciones.
 
-![webhooks](/images/dashboard/webhooks_es_.png)
+![webhooks](/images/dashboard/webhooks-es_.png)
+
+### Configurar URLs y Eventos
 
 1. Caso aún no tengas una aplicación, crea una en el [Panel del desarrollador](/developers/panel/app).
-2. Una vez creada la aplicación, navega hasta la sección de Webhooks en la página de Detalles de la aplicación y configura las URLs de **producción** y **prueba** a las cuales se recibirán las notificaciones.
-3. También podrás experimentar y probar si la URL indicada está recibiendo notificaciones correctamente, pudiendo verificar la solicitud, la respuesta dada por el servidor y la descripción del evento.
-4. Si necesitas identificar varias cuentas, al final de la URL indicada puedes indicar el parámetro `?cliente=(nommbredelvendedor) endpoint` para identificar a los vendedores.
-5. A continuación, selecciona los **eventos** de los que recibirás notificaciones en formato `json` a través de un `HTTP POST` a la URL especificada anteriormente. Un evento es cualquier tipo de actualización del objeto informado, incluidos los cambios de estado o atributos. Vea los eventos que se pueden configurar en la siguiente tabla.
+2. Una vez creada la aplicación, navega hasta la sección de Webhooks en la página de "Detalles de la aplicación" y configura las URLs de **producción** y **prueba** a las cuales se recibirán las notificaciones.
+3. Si necesitas identificar varias cuentas, al final de la URL indicada puedes indicar el parámetro `?cliente=(nommbredelvendedor) endpoint` para identificar a los vendedores.
+4. A continuación, selecciona los **eventos** de los que recibirás notificaciones en formato `json` a través de un `HTTP POST` a la URL especificada anteriormente. Un evento es cualquier tipo de actualización del objeto informado, incluidos los cambios de estado o atributos. Vea los eventos que se pueden configurar en la siguiente tabla.
 
 | Tipo de notificación | Acción | Descripción |
 | :--- | :--- | :--- |
@@ -35,6 +36,35 @@ A continuación explicaremos cómo indicar las URLs que serán notificadas y có
 | `delivery` | `delivery.updated`| Datos de envío y actualización de pedidos |
 | `delivery_cancellation` | `case_created`| Solicitud de cancelación de envío |
 | `topic_claims_integration_wh` | `updated`| Reclamos hechos por las ventas |
+
+5. Por último, haz clic en **Guardar** para generar una clave secreta para la aplicación.
+
+> WARNING
+> 
+> Importante
+> 
+> Mercado Pago siempre enviará esta clave en las notificaciones Webhooks. Siempre verifica esta información de autenticidad para evitar fraudes.
+> <br>
+> La clave generada no tiene fecha de caducidad y, aunque no es obligatorio, recomendamos renovar periódicamente la **clave secreta**. Para hacerlo, simplemente haz clic en el botón de restablecimiento junto a la clave.
+
+### Validar notificación
+
+1. Después de configurar las URLs y los Eventos, **revela la clave secreta** generada.
+2. A continuación, utiliza la clave secreta para validar el encabezado `x-signature-id`. El valor del campo debe coincidir con la clave, como se muestra en el ejemplo a continuación.
+
+```
+accept-encoding	*
+content-type	application/json
+accept	*/*
+x-signature-id	59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1
+```
+
+### Simular notificaciones
+
+1. Después de configurar las URLs y los Eventos, haz clic en **Simular** para experimentar y probar si la URL indicada está recibiendo las notificaciones correctamente.
+2. En la pantalla correspondiente, selecciona la URL que se va a probar, que puede ser **la URL de prueba o la de producción**.
+3. A continuación, elige el **tipo de evento** e ingresa la **identificación** que se enviará en el cuerpo de la notificación.
+4. Por último, haz clic en **Enviar prueba** para verificar la solicitud, la respuesta proporcionada por el servidor y la descripción del evento.
 
 ## Configuración al crear pagos
 

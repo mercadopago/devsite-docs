@@ -10,15 +10,16 @@ Nesta documentação, explicaremos as configurações necessárias para o recebi
 
 ## Configuração através do Painel do desenvolvedor
 
-Abaixo explicaremos como indicar as URLs que serão notificadas e como configurar os eventos dos quais se receberá a notificação.
+Abaixo explicaremos como: indicar as URLs que serão notificadas, configurar os eventos dos quais se receberá a notificação, simular o recebimento de diversos tipos de notificações e validar que as notificações que recebe são enviadas pelo Mercado Pago.
 
-![webhooks](/images/dashboard/webhooks_pt_.png)
+![webhooks](/images/dashboard/webhooks-pt_.png)
+
+### Configurar URLs e Eventos
 
 1. Caso ainda não tenha, crie uma aplicação no [Painel do desenvolvedor](/developers/panel/app).
-2. Com a aplicação criada, navegue até a seção Webhooks na página de Detalhes da aplicação e configure as URLs de **produção** e **teste** da qual serão recebidas as notificações.
-3. Você também poderá experimentar e testar se a URL indicada está recebendo as notificações corretamente, podendo verificar a solicitação, a resposta dada pelo servidor e a descrição do evento.
-4. Caso seja necessário identificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para identificar os vendedores.
-5. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
+2. Com a aplicação criada, navegue até a seção Webhooks na página de "Detalhes da aplicação" e configure as URLs de **produção** e **teste** da qual serão recebidas as notificações.
+3. Caso seja necessário identificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para identificar os vendedores.
+4. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
 
 | Tipo de notificação | Ação | Descrição |
 | :--- | :--- | :--- |
@@ -35,6 +36,35 @@ Abaixo explicaremos como indicar as URLs que serão notificadas e como configura
 | `delivery` | `delivery.updated`| Dados de envio e atualização do pedido |
 | `delivery_cancellation` | `case_created`| Solicitação de cancelamento do envio |
 | `topic_claims_integration_wh` | `updated`| Reclamações feitas pelas vendas |
+
+5. Por fim, clique em **Salvar** para gerar uma assinatura secreta para a aplicação. 
+
+> WARNING
+>
+> Importante
+>
+> O Mercado Pago sempre enviará essa assinatura nas notificações Webhooks. Sempre confira essa informação de autenticidade para evitar fraudes.
+> <br>
+> A assinatura gerada não tem prazo de validade e, embora não seja obrigatório, recomendamos renovar periodicamente a **assinatura secreta**. Para isso, basta clicar no botão de redefinição ao lado da assinatura.
+
+### Validar notificação
+
+1. Após configurar as URLs e os Eventos, **revele a assinatura secreta** gerada.
+2. Em seguida, utilize a assinatura secreta para validar o cabeçalho `x-signature-id`. O valor do campo deve coincidir com a assinatura, como mostra o exemplo abaixo.
+
+```
+accept-encoding	*
+content-type	application/json
+accept	*/*
+x-signature-id	59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1
+```
+
+### Simular notificações
+
+1. Após configurar as URLs e os Eventos, clique em **Simular** para experimentar e testar se a URL indicada está recebendo as notificações corretamente.
+2. Na tela em questão, selecione a URL a ser testada, podendo ser **de teste ou de produção**. 
+3. Em seguida, selecione o **tipo de evento** e insira a **identificação** que será enviada no corpo da notificação.
+4. Por fim, cique em **Enviar teste** para verificar a solicitação, a resposta dada pelo servidor e a descrição do evento.
 
 ## Configuração durante a criação de pagamentos
 
