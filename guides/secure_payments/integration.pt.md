@@ -2,20 +2,20 @@
 >
 > Importante
 >
-> Esta documentación es sólo para uso por parte del equipo interno, ya que es un producto exclusivo o fue deprecado. Para más detalles, comunícate con el equipo comercial o de integraciones.
+> Esta documentação é apenas para uso interno da equipe, pois é um produto exclusivo ou foi desativado. Para mais detalhes, entre em contato com a equipe comercial ou de integrações.
 
 # Integrar Secure Payments
 
-Para utilizar Secure Payments, deberás hacerlo a través de pedidos a las siguientes APIs. Ten en cuenta que deberás adicionar en el body de la petición tanto los datos de la tarjeta como la información necesaria para realizar el pago.
+Para utilizar Secure Payments, é necessário fazer chamadas para as seguintes APIs. Lembre-se de adicionar no corpo da solicitação tanto os dados do cartão quanto as informações necessárias para realizar o pagamento.
 
 | Ambiente | URL |
 |---|---|
-| Staging (pruebas) | `https://api.mercadopago.com/v1/secure_payments/zeta` |
-| Producción | `https://api.mercadopago.com/v1/secure_payments/ ` |
+| Staging (testes) | `https://api.mercadopago.com/v1/secure_payments/zeta` |
+| Produção | `https://api.mercadopago.com/v1/secure_payments/ ` |
 
-## Integrar pagos online
+## Integrar pagamentos online
 
-A continuación, te compartimos un pedido de ejemplo. Ten en cuenta que deberás cambiar el valor del campo `token` por tu Access Token.
+A seguir, compartilhamos um exemplo de solicitação. Lembre-se de alterar o valor do campo `token` pelo seu Access Token.
 
 ```curl
 curl - X POST\ -
@@ -71,15 +71,15 @@ curl - X POST\ -
 
 ## Integrar pagos presenciales
 
-Es posible realizar un pago presencial en un dispositivo MPOST (dispositivo captador de dinero) que cuente con la información de la tarjeta cifrada. 
+É possível fazer um pagamento presencial em um dispositivo MPOST (dispositivo captador de dinheiro) que contenha as informações do cartão criptografadas.
 
 > WARNING
 >
 > Importante
 >
-> Antes de utilizar este método, verifica que el dispositivo se encuentre registrado y aprobado por Mercado Pago. 
+> Antes de utilizar esse método, verifique se o dispositivo está registrado e aprovado pelo Mercado Pago.
 
-Para realizar un pago presencial, deberás cambiar el campo `card` por **`card_present`**. A continuación, te mostramos un ejemplo de petición:
+Para fazer um pagamento presencial, altere o campo `card` para **`card_present`**. A seguir, mostramos um exemplo de solicitação:
 
 ```curl
 curl - X POST\ -
@@ -114,7 +114,7 @@ curl - X POST\ -
 }
 ```
 
-## Descripción de los campos del request
+## Descrição dos campos da solicitação
 
-Para conocer la descripción de cada campo del request, accese a la [documentación de Swagger](https://web.furycloud.io/gateway-unified-payment-go/specs-hub/spec/14d77c1c-8c3c-4617-ba40-07c9dc39b7c2). Para visualizar la descripción, deberás acceder a la sección de modelos y navegar por el json hasta llegar al ejemplo y descripción del campo.
+Para conhecer a descrição de cada campo da solicitação, acesse a [documentação do Swagger](https://web.furycloud.io/gateway-unified-payment-go/specs-hub/spec/14d77c1c-8c3c-4617-ba40-07c9dc39b7c2). Para visualizar a descrição, acesse a seção de modelos e navegue pelo json até chegar ao exemplo e descrição do campo.
 
