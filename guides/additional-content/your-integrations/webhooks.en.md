@@ -14,7 +14,7 @@ In this documentation, we will explain the necessary settings to receive message
 
 Below, we will explain how to: specify the URLs that will be notified, configure the events from which notifications will be received, validate that the notifications you receive are sent by Mercado Pago and simulate the receipt of various types of notifications.
 
-![webhooks](/images/notifications/webhooks-es.png)
+![webhooks](/images/dashboard/webhooks-es.png)
 
 ### Configure URLs and Events
 
@@ -46,7 +46,7 @@ Below, we will explain how to: specify the URLs that will be notified, configure
 > Important
 > 
 > Mercado Pago will always send this signature in Webhook notifications. Always verify this authenticity information to prevent fraud.
-> <br>
+> </br>
 > The generated signature has no expiration date, and while not mandatory, we recommend periodically renewing the **secret signature**. To do this, simply click the reset button next to the signature.
 
 ### Validate notification origin

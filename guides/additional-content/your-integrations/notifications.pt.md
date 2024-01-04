@@ -17,5 +17,5 @@ Existe **dois tipos** de notificações disponíveis para configuração, que um
 
 | Tipo | Descrição |
 | --- | --- |
-| **Webhooks** | Utiliza HTTP REST, notifica instantâneamente as atualizações e traz mais segurança em sua integração por meio da **assinatura secreta**, um método de validação para garantir que notificações recebidas foram enviadas pelo Mercado Pago. Para saber como configurar notificações Webhooks [clique aqui](/developers/pt/guides/additional-content/your-integrations/webhooks). |
+| **Webhooks** | Utiliza HTTP REST, notifica instantâneamente as atualizações e traz mais segurança em sua integração por meio da **assinatura secreta**, um método de validação para garantir que notificações recebidas foram enviadas pelo Mercado Pago. </br> Para saber como configurar notificações Webhooks [clique aqui](/developers/pt/guides/additional-content/your-integrations/webhooks). |
 | **IPN** | A notificação pode demorar alguns instantes para ser enviada. Para saber como configurar notificações IPN [clique aqui](/developers/pt/guides/additional-content/your-integrations/ipn). |

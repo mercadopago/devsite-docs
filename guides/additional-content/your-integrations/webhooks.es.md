@@ -12,7 +12,7 @@ En esta documentación, explicaremos las configuraciones necesarias para recibir
 
 A continuación explicaremos cómo: indicar las URL que serán notificadas, configurar los eventos de los cuales se recibirá la notificación, validar que las notificaciones que recibes son enviadas por Mercado Pago y simular la recepción de diversos tipos de notificaciones.
 
-![webhooks](/images/dashboard/webhooks-es_.png)
+![webhooks](/images/dashboard/webhooks-es.png)
 
 ### Configurar URLs y Eventos
 
@@ -44,7 +44,7 @@ A continuación explicaremos cómo: indicar las URL que serán notificadas, conf
 > Importante
 > 
 > Mercado Pago siempre enviará esta clave en las notificaciones Webhooks. Siempre verifica esta información de autenticidad para evitar fraudes.
-> <br>
+> </br>
 > La clave generada no tiene fecha de caducidad y, aunque no es obligatorio, recomendamos renovar periódicamente la **clave secreta**. Para hacerlo, simplemente haz clic en el botón de restablecimiento junto a la clave.
 
 ### Validar origen de la notificación
