@@ -1,6 +1,6 @@
 # Webhooks
 
-O **Webhook** (também conhecido como retorno de chamada web) é um método simples que facilita com que um app ou sistema forneça informações em tempo real sempre que um evento acontece, ou seja, é um modo de receber dados entre dois sistemas de forma passiva através de um `HTTP POST`.
+O **Webhooks** (também conhecido como retorno de chamada web) é um método simples que facilita com que um app ou sistema forneça informações em tempo real sempre que um evento acontece, ou seja, é um modo de receber dados entre dois sistemas de forma passiva através de um `HTTP POST`.
 
 As notificações Webhooks poderão ser configuradas para uma ou mais aplicações criadas em seu [Painel do desenvolvedor](/developers/panel/app).
 
@@ -43,7 +43,7 @@ Abaixo explicaremos como: indicar as URLs que serão notificadas, configurar os 
 >
 > Importante
 >
-> O Mercado Pago sempre enviará essa assinatura nas notificações Webhooks. Sempre confira essa informação de autenticidade para evitar fraudes. </br>
+> O Mercado Pago sempre enviará essa assinatura nas notificações Webhooks. Sempre confira essa informação de autenticidade para evitar fraudes. </br></br>
 > </br></br>
 > A assinatura gerada não tem prazo de validade e, embora não seja obrigatório, recomendamos renovar periodicamente a **assinatura secreta**. Para isso, basta clicar no botão de redefinição ao lado da assinatura.
 
