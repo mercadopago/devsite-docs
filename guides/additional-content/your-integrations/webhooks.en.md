@@ -41,8 +41,6 @@ Below, we will explain how to: specify the URLs that will be notified, configure
 
 5. Finally, click **Save** to generate a secret signature for the application. The signature is a validation method to ensure that received notifications were sent by Mercado Pago.
 
-
-
 > WARNING
 >
 > Important
@@ -54,13 +52,15 @@ Below, we will explain how to: specify the URLs that will be notified, configure
 ### Validate notification origin
 
 1. After configuring the URLs and Events, **reveal the generated secret signature**.
-2. Then, use the secret signature to validate the `x-signature-id` header. The field value must match the signature, as shown in the example below.
+2. Then, use the secret signature to validate the `x-signature-id` header. The value received in the header must match the key obtained in the previous step. In the example shown below, the value `59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1` should match the generated secret key.
 
 ```
+...
 accept-encoding	*
 content-type	application/json
 accept	*/*
 x-signature-id	59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1
+...
 ```
 
 ### Simulate notification receipt

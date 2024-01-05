@@ -50,13 +50,15 @@ Abaixo explicaremos como: indicar as URLs que serão notificadas, configurar os 
 ### Validar origem da notificação
 
 1. Após configurar as URLs e os Eventos, **revele a assinatura secreta** gerada.
-2. Em seguida, utilize a assinatura secreta para validar o cabeçalho `x-signature-id`. O valor do campo deve coincidir com a assinatura, como mostra o exemplo abaixo.
+2. Em seguida, utilize a assinatura secreta para validar o *header* `x-signature-id`. O valor recebido no *header* deve coincidir com a chave obtida na etapa anterior. No exemplo mostrado abaixo, o valor `59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1` deve coincidir com a chave secreta gerada.
 
 ```
+...
 accept-encoding	*
 content-type	application/json
 accept	*/*
 x-signature-id	59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1
+...
 ```
 
 ### Simular o recebimento da notificação
