@@ -17,10 +17,7 @@ A continuación, te explicamos cómo activar cada medio de pago en tu tienda Sal
 * [Configurar Checkout Transparente](/developers/es/docs/salesforce-commerce-cloud/payments-configuration/checkout-api)
 ----[mlb]----
 * [Configurar pagos con Pix](/developers/es/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/pix)
-* [Configurar financiación sin tarjeta](/developers/es/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/credits)
-------------
-----[mla, mlm]----
-* [Configurar financiación sin tarjeta](/developers/es/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/credits)
+
 ------------
 
 ## Elegir la ubicación de los medios de pago

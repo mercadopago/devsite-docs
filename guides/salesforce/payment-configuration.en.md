@@ -17,10 +17,7 @@ Here's how to activate each payment method in your Salesforce Commerce Cloud sto
 * [Configure Checkout Transparente](/developers/en/docs/salesforce-commerce-cloud/payments-configuration/checkout-api)
 ----[mlb]----
 * [Configure Pix payments](/developers/en/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/pix)
-* [Configure installments without a card](/developers/en/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/credits)
-------------
-----[mla, mlm]----
-* [Configure installments without a card](/developers/en/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/credits)
+
 ------------
 
 ## Choose the location of the means of payment

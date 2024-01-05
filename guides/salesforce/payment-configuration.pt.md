@@ -17,10 +17,7 @@ Veja como ativar cada meio de pagamento em sua loja Salesforce:
 * [Configurar Checkout Transparente](/developers/pt/docs/salesforce-commerce-cloud/payments-configuration/checkout-api)
 ----[mlb]----
 * [Configurar pagamentos com Pix](/developers/pt/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/pix)
-* [Configurar parcelamento sem cartão](/developers/pt/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/credits)
-------------
-----[mla, mlm]----
-* [Configurar parcelamento sem cartão](/developers/pt/docs/salesforce-commerce-cloud/payments-configuration/checkout-api/credits)
+
 ------------
 
 ## Escolha a localização do meio de pagamento
