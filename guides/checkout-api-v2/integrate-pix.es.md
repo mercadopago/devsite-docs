@@ -27,7 +27,6 @@ npm install @mercadopago/sdk-js
 ```
 ]]]
 
-
 ## Configurar credencial
 
 Las credenciales son claves únicas con las que identificamos una integración en tu cuenta. Se utilizan para capturar pagos en tiendas online y otras aplicaciones de forma segura.
@@ -94,7 +93,6 @@ Con la biblioteca MercadoPago.js incluida y la credencial configurada, añade el
   </form>
 ```
 ]]]
-
 
 ## Obtener tipos de documento
 
@@ -365,45 +363,41 @@ curl -X POST \
 ```
 ]]]
 
-
-
 La respuesta mostrará el estado del pago pendiente y toda la información que necesitas mostrar al comprador. El valor `transaction_data` devolverá los datos del código QR.
 
-
-[[[
 ```json
 {
   ...,
-  "id": 5466310457,
-  "status": "pending",
-  "status_detail": "pending_waiting_transfer",
-  ...,
-  "transaction_details": {
-      "net_received_amount": 0,
-      "total_paid_amount": 100,
-      "overpaid_amount": 0,
-      "external_resource_url": null,
-      "installment_amount": 0,
-      "financial_institution": null
-  },
-  "point_of_interaction": {
-      "type": "PIX",
-      "sub_type": null,
-      "application_data": {
-        "name": "NAME_SDK",
-        "version": "VERSION_NUMBER"
-      },
-      "transaction_data": {
-        "qr_code_base64": "iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAIABJREFUeJzs2luO3LiWQNFmI+Y/Zd6vRt36KGNXi7ZOBtcagHD4kNLeiLX33v8DAAAAABD879sDAAAAAAA/h6AIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCAAAAAJmgCAAAAABkgiIAAAAAkAmKAAAAAEAmKAIAAAAAmaAIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCA...",
-        "qr_code": "00020126600014br.gov.bcb.pix0117john@yourdomain.com0217additional data520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA",
-        "ticket_url": "https://www.mercadopago.com.br/payments/123456789/ticket?caller_id=123456&hash=123e4567-e89b-12d3-a456-426655440000"
-      }
-  }
-  ...,
+ "id": 5466310457,
+ "status": "pending",
+ "status_detail": "pending_waiting_transfer",
+ ...,
+ "transaction_details": {
+     "net_received_amount": 0,
+     "total_paid_amount": 100,
+     "overpaid_amount": 0,
+     "external_resource_url": null,
+     "installment_amount": 0,
+     "financial_institution": null,
+     "transaction_id": null
+ },
+ "point_of_interaction": {
+     "type": "PIX",
+     "sub_type": null,
+     "application_data": {
+       "name": "NAME_SDK",
+       "version": "VERSION_NUMBER"
+     },
+     "transaction_data": {
+       "qr_code_base64": "iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAIABJREFUeJzs2luO3LiWQNFmI+Y/Zd6vRt36KGNXi7ZOBtcagHD4kNLeiLX33v8DAAAAABD879sDAAAAAAA/h6AIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCAAAAAJmgCAAAAABkgiIAAAAAkAmKAAAAAEAmKAIAAAAAmaAIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCA...",
+       "qr_code": "00020126600014br.gov.bcb.pix0117john@yourdomain.com0217additional data520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA",
+       "ticket_url": "https://www.mercadopago.com.br/payments/123456789/ticket?caller_id=123456&hash=123e4567-e89b-12d3-a456-426655440000",
+       "transaction_id": null
+     }
+ }
+ ...,
 }
 ```
-]]]
-
 
 Con Pix, también puedes elegir el plazo que el cliente tendrá para pagar la compra, definiendo la validez del código de pago que se le envía después de realizar el pedido.
 
@@ -418,7 +412,6 @@ Con Pix, también puedes elegir el plazo que el cliente tendrá para pagar la co
 Para que el usuario pueda efectuar el pago, debes elegir la forma de visualización del mismo, que puede ser a través de un botón o de un código QR que debe ser renderizado. 
 
 Selecciona la opción que mejor se adapte a tu modelo de negocio y sigue las etapas descritas a continuación.
-
 
 * **Añadir link o botón**: Al optar por añadir un link o botón para el pago con Pix, el comprador será dirigido a una nueva ventana que contiene toda la información para el pago, como QR Code, Pix Copia e Cola y las instrucciones de pago.
 
@@ -436,9 +429,7 @@ Para ofrecer esta opción, utiliza el atributo `ticket_url`, que muestra un Pix 
 
 Sigue las etapas que se indican a continuación para renderizar el código QR y hacer que el recurso de copiar y pegar esté disponible.
 
-
 1. Añade el `qr_code_base64` para exhibir el código QR.
-
 
 [[[
 ```html
@@ -446,7 +437,6 @@ Sigue las etapas que se indican a continuación para renderizar el código QR y 
 
 ```
 ]]]
-
 
 2. Para mostrar la opción que permitirá copiar y pegar el código de pago, añade el qr_code de la siguiente manera:
 
@@ -457,7 +447,4 @@ Sigue las etapas que se indican a continuación para renderizar el código QR y 
 ```
 ]]]
 
-
 Al finalizar estas etapas, el código QR estará renderizado y se mostrará al comprador durante el pago. 
-
-

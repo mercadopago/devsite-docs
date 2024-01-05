@@ -2,7 +2,9 @@
 
 ## Crear usuarios de prueba
 
-[TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
+Utiliza cuentas de prueba para asegurar que tu integración soporta todos los flujos y escenarios posibles. Tienen las mismas características que una cuenta real de Mercado Pago, lo que te permite probar el funcionamiento de las integraciones que estás desarrollando.
+
+Si todavía no creaste usuarios de prueba, dirígete a [Requisitos previos](/developers/es/docs/qr-code/pre-requisites) para saber cómo hacerlo.
 
 ## Tarjetas de prueba
 
@@ -23,3 +25,14 @@ Para probar el modelo atendido, genera una orden con las credenciales del usuari
 ### 3. Recibe notificaciones de la orden
 
 Comprueba que hayas recibido las notificaciones del estado de la orden en tu sistema, ¡y listo!
+
+## Valida tu integración
+
+Detallamos todos los casos necesarios que debes probar para validar que tu sistema esté integrado correctamente con Mercado Pago.
+
+**Casos para validar:**
+
+|Modelo de QR|Link|
+|---|---|
+|Atendido|[Haz clic aquí](/developers/es/docs/qr-code/additional-content/qr-validation-cases/qr-attended-events)|
+|Dinámico|[Haz clic aquí](/developers/es/docs/qr-code/additional-content/qr-validation-cases/qr-dynamic-events)|

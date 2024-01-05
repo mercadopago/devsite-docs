@@ -1,4 +1,4 @@
-# Introdução
+# IPN
 
 O **IPN** (Instant Payment Notification) é um mecanismo que permite que sua aplicação receba notificações do Mercado Pago informando o estado de um determinado pagamento, chargeback e `merchant_order`, mediante uma chamada HTTP POST para informar sobre suas transações.
 

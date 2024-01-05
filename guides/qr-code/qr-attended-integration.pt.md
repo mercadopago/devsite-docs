@@ -34,8 +34,12 @@ A resposta será um `HTTP 204 No Content`.
 
 ## Receber notificações de pedidos
 
-As notificações IPN **(Instant Payment Notification)** são a **forma automática de notificar a criação de novos pedidos e as atualizações de seus status**. Por exemplo, se foram aprovados, recusados ou se estiverem pendentes.
+As notificações IPN (Instant Payment Notification) são a **forma automática de notificar a criação de novos pedidos e as atualizações de status das mesmas**. Por exemplo, se eles foram aprovados, recusados ou se estão pendentes.
 
-Implemente o IPN de `merchant_order` com uma pesquisa de pedido por `external_reference` como um método de contingência.
+Vá para [notificações IPN](/developers/pt/docs/qr-code/additional-content/your-integrations/notifications/ipn) para aprender como implementá-los, especificamente notificações de `merchant_order`, que são aqueles associados a pedidos. Você poderá identificar cada um deles através do parâmetro `external_reference`.
 
-[Receber notificações IPN](/developers/pt/docs/qr-code/additional-content/your-integrations/notifications/ipn)
+> NOTE
+>
+> Nota
+>
+> Se deseja, você pode assistir ao [vídeo tutorial sobre a integração do QR modelo atendido](/developers/pt/docs/qr-code/resources/tutorial-videos/qr-videos-attended).

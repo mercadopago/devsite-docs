@@ -18,7 +18,6 @@ Changing the redirection behavior is done by the `redirectMode` property, which 
 | --- |--- |
 | self | Keeps the redirect on the same page. |
 | blank | Externalizes the redirect to a new page. |
-| modal | Opens the checkout experience in modal mode. |
 
 The code blocks below implement checkout in **redirect** mode to another page.
 
@@ -36,25 +35,6 @@ mp.bricks().create("wallet", "wallet_container", {
 ```
 ]]]
 
-## Opening scheme in modal mode
-
-To define the modal opening model, just change the `redirectMode: 'modal'` property during integration, as in the example below.
-
-[[[
-```Javascript
-mp.bricks().create("wallet", "wallet_container", {
-   initialization: {
-       preferenceId: "<PREFERENCE_ID>",
-       redirectMode: "modal"
-   },
-});
-```
-```react-jsx
-<Wallet initialization={{ preferenceId: '<PREFERENCE_ID>', redirectMode: 'modal' }} />
-```
-]]]
-
-The `redirectMode: 'modal'` property indicates that the checkout should open in **modal** mode and not **redirect**.
 
 ## Direct opening scheme
 

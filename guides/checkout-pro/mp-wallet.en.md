@@ -53,7 +53,8 @@ Wallet mode works by adding the _purpose_ attribute to the preference.
               "currency_id" => "BRL",
               "unit_price" => 100
             )
-          )
+          ),
+          "purpose"=> "wallet_purchase"
   ]);
   echo implode($preference);
 ?>
@@ -62,20 +63,23 @@ Wallet mode works by adding the _purpose_ attribute to the preference.
 ===
 Wallet mode works by adding the _purpose_ attribute to the preference.
 ===
-const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>', options: { timeout: 5000 } });
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 
 const preference = new Preference(client);
 
-preference.create({ body: {
-items: [
- {
-  id: '<ID>',
-  title: '<title>',
-  quantity: 1,
-  unit_price: 100
- }
-],
-} }).then(console.log).catch(console.log);
+preference.create({ 
+  body: {
+    items: [
+      {
+        id: '<ID>',
+        title: '<title>',
+        quantity: 1,
+        unit_price: 100
+      }
+    ],
+    purpose: "wallet_purchase",
+  }
+}).then(console.log).catch(console.log);
 ```
 ```java
 ===

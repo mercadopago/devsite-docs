@@ -109,34 +109,29 @@ refund = sdk.refund.create(payment_id, refund_data: data, request_options: custo
 
 ## Response examples (some fields have been omitted)
 
-
-[[[
 ```Json
-
 {
-    "id": 1150873004,
-    "payment_id": 23443394602,
-    "amount": 20,
-    "metadata": {},
-    "source": {
-        "id": "475845652",
-        "name": "Test Test",
-        "type": "collector"
-    },
-    "date_created": "2022-06-24T16:09:03.944-04:00",
-    "unique_sequence_number": null,
-    "refund_mode": "standard",
-    "adjustment_amount": 0,
-    "status": "in_process",
-    "reason": "1",
-    "labels": [
-        "hidden",
-        "contingency"
-    ],
-    "amount_refunded_to_payer": 20,
-    "partition_details": []
+ "id": 1150873004,
+ "payment_id": 23443394602,
+ "amount": 20,
+ "metadata": {},
+ "source": {
+     "id": "475845652",
+     "name": "Test Test",
+     "type": "collector"
+ },
+ "date_created": "2022-06-24T16:09:03.944-04:00",
+ "unique_sequence_number": null,
+ "refund_mode": "standard",
+ "adjustment_amount": 0,
+ "status": "in_process",
+ "reason": "1",
+ "labels": [
+     "hidden",
+     "contingency"
+ ],
+ "amount_refunded_to_payer": 20,
+ "e2e_id": "D00000000202312220000abcdefghijklm",
+ "partition_details": []
 }
-
 ```
-]]]
-

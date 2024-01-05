@@ -2,7 +2,7 @@ Você pode utilizar cartões de teste de métodos de pagamento locais e simular 
 
 Para isso, de acordo com o seu país, utilize algum dos cartões de **crédito** ou **débito** que disponibilizamos a seguir.
  
-## Cartões de crédito
+### Cartões de crédito
 
 ----[mla]----
 | Cartão | Número | Código de segurança | Data de vencimento |
@@ -59,7 +59,7 @@ Para isso, de acordo com o seu país, utilize algum dos cartões de **crédito**
 
 ------------
 
-## Cartões de débito
+### Cartões de débito
 
 ----[mla]----
 | Cartão | Número | Código de segurança | Data de vencimento |
