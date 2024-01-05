@@ -2,15 +2,9 @@
 
 Subscriptions with an associated plan are used when it is necessary to use the same subscription on different occasions to organize them into identifiable groups. For example, for a monthly and yearly subscription to a gym.
 
-> NOTE
->
-> Important
->
-> A subscription with an associated plan must always be created with your `card_token_id` and with the status `Authorized`
+The integration of **subscriptions with an associated plan** happens in two steps: In the first one, it is necessary to **create a plan** to be associated with the subscription, and in the second step, to **create a subscription**.
 
 ## Create plan 
-
-The integration of **subscriptions with an associated plan** happens in two steps: In the first one, it is necessary to **create a plan** to be associated with the subscription, and in the second step, to **create a subscription**.
 
 The subscription plan allows you to define, among other attributes, the title, value, and frequency of subscriptions created by the seller. To create a plan and associate it with a subscription, check out the [preapproval_plan](/developers/en/reference/subscriptions/_preapproval_plan/post) endpoint, fill in the necessary attributes, and execute the request. If you prefer, use the _curl_ below.
 
@@ -55,11 +49,21 @@ curl -X POST \
 ```
 ]]]
 
+> NOTE
+>
+> Important
+>
+> A subscription with an associated plan must always be created with your `card_token_id` and with the status `Authorized`.
+
+Done! You have created the subscription with associated plan. To complete the integration, proceed to **create a subscription**.
+
 ## Create subscription
 
-Once you create a plan, you can create a subscription. A subscription is a payer authorization for recurring charges with a defined payment method (credit card, for example). When subscribing to a product/service, the customer agrees to be periodically charged a certain amount for the defined period.
+A subscription is a payer authorization for recurring charges with a defined payment method (credit card, for example). When subscribing to a product/service, the customer agrees to be periodically charged a certain amount for the defined period.
 
-To create a subscription, have the `preapproval_plan_id` at hand, access the [/preapproval](/developers/en/reference/subscriptions/_preapproval/post) endpoint, and fill in the attributes as indicated in the parameter table. 
+To create a subscription, you first need to have the `preapproval_plan_id` value.
+
+Then, you can continue the integration through two paths: you can access the endpoint [/preapproval](/developers/en/reference/subscriptions/_preapproval/post) and fill in the attributes as indicated in the parameter table, or you can also use the curl command we provided below.
 
 [[[
 ```curl
