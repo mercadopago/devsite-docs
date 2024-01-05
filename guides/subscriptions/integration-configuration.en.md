@@ -1,6 +1,6 @@
 # Integration configuration
 
-To get started, choose the Subscription Integration model:
+To get started, choose the Subscription integration model:
 
 ### Subscriptions with an associated plan
 

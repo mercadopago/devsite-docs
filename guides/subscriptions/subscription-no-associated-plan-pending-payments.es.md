@@ -4,7 +4,7 @@ Las suscripciones con pago pendiente son un modelo de suscripción donde no se d
 
 En este caso, es posible actualizar la suscripción y definir un medio de pago a través del endpoint [/preapproval/{id}](/developers/es/reference/subscriptions/_preapproval_id/put), o compartir un link de pago para que el comprador pueda completar la compra con el método de pago de su elección.
 
-Para ofrecer **suscripciones sin plan asociado y con pago pendiente**, envía un POST con los atributos necesarios al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y presta atención al parámetro `status`, que debe ser rellenado con el valor `pending`. Si prefieres, usa el curl a continuación.
+Para ofrecer **suscripciones sin plan asociado y con pago pendiente**, envía un POST con los atributos necesarios al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y presta atención al parámetro `status`, que debe ser rellenado con el valor `pending`. Si prefieres, usa el _curl_ a continuación.
 
 [[[
 ```curl

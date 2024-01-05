@@ -47,7 +47,7 @@ En el momento en que se cobre la cuota pueden surgir dos alternativas en base al
 
 * __El pago es realizado exitosamente__ por lo que la cuota quedará `processed` y ya no se reintentará cobrarla. 
 
-* __El pago es rechazado__ por lo que la cuota quedará en `recycling` siempre y cuando la cuota no esté expirada o no haya alcanzado el máximo de reintentos. Caso contrario, quedará en `processed`.
+* __El pago es rechazado__ por lo que la cuota quedará en `recycling` siempre y cuando no esté expirada o no haya alcanzado el máximo de reintentos. Caso contrario, quedará en `processed`.
 
 ### Pagos rechazados
 
@@ -67,7 +67,7 @@ En el momento en que se cobre la cuota pueden surgir tres alternativas en base a
 
 * __El pago se está procesando__ por lo que la cuota quedará en `waiting for gateway` hasta que se resuelva el pago.
 
-* __El pago es rechazado__ por lo que la cuota quedará en `recycling` siempre y cuando la cuota no esté expirada o no haya alcanzado el máximo de reintentos. Caso contrario, quedará en `processed`.
+* __El pago es rechazado__ por lo que la cuota quedará en `recycling` siempre y cuando no esté expirada o no haya alcanzado el máximo de reintentos. Caso contrario, quedará en `processed`.
 
 ### Pagos rechazados
 
@@ -79,7 +79,7 @@ Por defecto se reintenta dentro de una ventana de 10 días. En caso de que la cu
 
 ### Pagos en proceso
 
-Si una cuota se encuentra en el estado `waiting for gateway` y cuando se resuelve el pago resulta rechazada y se cumplió la fecha de expiración, la cuota automáticamente pasará a procesada con el estado `processed`. Caso contrario, entrará al esquema de reintento.
+Si una cuota se encuentra en el estado `waiting for gateway`, y cuando se resuelve el pago resulta rechazada y se cumplió la fecha de expiración, la cuota automáticamente pasará a ser procesada con el estado `processed`. Caso contrario, entrará al esquema de reintento.
 
 ------------
 
