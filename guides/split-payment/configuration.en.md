@@ -15,7 +15,7 @@ Create your application to integrate with the Split Payments solution by followi
 1. Access [Your Integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app). Once there, click on the **Create application** button, located in the upper right corner.
 2. Enter a name to identify your application (you have a limit of 50 characters).
 3. Choose the **Online Payments** solution.
-4. When choosing the product to integrate, you can select "Checkout Pro" or "Checkout API."
+4. When choosing the product to integrate, you can select "Checkout Pro" or "Checkout API".
 5. Choose the **Marketplace** integration model.
 6. Once you have completed the requested information, click on **Create application** and you're done!
 
