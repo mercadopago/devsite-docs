@@ -12,7 +12,7 @@ Create your application to integrate with the Split Payments solution by followi
    >
    > During the creation of your application, it may be necessary to reauthenticate your identity. If you have already completed the verification, reauthentication will be requested. Otherwise, you will be redirected to submit the necessary documents. This additional step is essential to protect your account and ensure compliance with operations. You can refer to the [Developer dashboard documentation](/developers/es/docs/split-payment/additional-content/your-integrations/dashboard) if you have any questions on how to use it.
 
-1. Access [Your Integrations](https://www.mercadopago.com.br/developers/panel/app). Once there, click on the **Create application** button, located in the upper right corner.
+1. Access [Your Integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app). Once there, click on the **Create application** button, located in the upper right corner.
 2. Enter a name to identify your application (you have a limit of 50 characters).
 3. Choose the **Online Payments** solution.
 4. When choosing the product to integrate, you can select "Checkout Pro" or "Checkout API."

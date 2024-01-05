@@ -25,6 +25,6 @@ bullet_section_with_media:
  - benefit_title: Increase operational efficiency
  - benefit_message: Reduce your operating costs through automation and efficient management of your payments and commissions. Split Payments divides the transaction money among the parties involved.
  - benefit_title: Leverage the Mercado Pago ecosystem
- - benefit_message: Count on the support of the financial products and sales platform of Mercado Livre and Mercado Pago, used by millions of users in Latin America.
+ - benefit_message: Count on the support of the financial products and sales platform of Mercado Libre and Mercado Pago, used by millions of users in Latin America.
  - image: /split-payment/payment-split-03.png
 ---

@@ -4,18 +4,18 @@ Para configurar la integración con la solución de Split de Pagos, deberás [cr
 
 ## Crear aplicación
 
-Crea tu aplicación para integrar con la solución de Split de siguiendo los pasos a continuación.
+Crea tu aplicación para integrar con la solución de Split de Pagos siguiendo los pasos a continuación.
 
    > NOTE
    >
    > Importante
    >
-   > Durante la creación de su aplicación, es posible que sea necesario reautenticar su identidad. Si ya ha completado la verificación, se solicitará la reautenticación. En caso contrario, se le redirigirá para enviar los documentos necesarios. Este paso adicional es esencial para proteger su cuenta y garantizar la conformidad de las operaciones. Puede consultar la [documentación sobre el Panel del desarrollador](/developers/es/docs/split-payment/additional-content/your-integrations/dashboard) si tiene alguna pregunta sobre cómo utilizarlo.
+   > Durante la creación de tu aplicación, es posible que sea necesario reautenticar tu identidad. Si ya has completado la verificación, se solicitará la reautenticación. En caso contrario, serás redirigido para enviar los documentos necesarios. Este paso adicional es esencial para proteger tu cuenta y garantizar la conformidad de las operaciones. Puedes consultar la [documentación sobre el Panel del desarrollador](/developers/es/docs/split-payment/additional-content/your-integrations/dashboard) si tienes alguna pregunta sobre cómo utilizarlo.
 
-1. Accede a [Tus integraciones](https://www.mercadopago.com.br/developers/panel/app). Una vez allí, haz clic en el botón **Crear aplicación**, ubicado en la esquina superior derecha.
+1. Accede a [Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app). Una vez allí, haz clic en el botón **Crear aplicación**, ubicado en la esquina superior derecha.
 2. Ingresa un nombre para identificar tu aplicación (tienes un límite de 50 caracteres).
 3. Elige la solución de **Pagos online**.
-4. A la hora de elegir el producto a integrar, puedes elegir “Checkout Pro” o “Checkout API”. 
+4. A la hora de elegir el producto a integrar, puedes elegir “Checkout Pro” o ----[mla, mlm, mpe, mco, mlu, mlc]----“Checkout API” ------------ ----[mlb]----"Checkout Transparente" ------------. 
 5. Elige el modelo de integración **Marketplace**.
 6. Una vez que hayas completado la información solicitada, haz clic en **Crear aplicación** y ¡listo!
 
@@ -29,7 +29,7 @@ Después de crear la aplicación, es necesario dirigirse a la pantalla de edici�
 
 ## Solicitar permiso a usuarios 
 
-Para solicitar permiso a sus usuarios para gestionar ventas en su nombre, es necesario implementar el flujo de autorización utilizando OAuth. Siga los pasos a continuación:
+Para gestionar ventas en nombre de otro usuario, debes solicitar permiso. Para esto, es necesario implementar el flujo de autorización utilizando OAuth, tal como indicamos en los pasos a continuación:
 
  1. Redirige a tus usuarios a la siguiente URL para autorizar la gestión de ventas:
 
@@ -96,7 +96,7 @@ http://<REDIRECT_URI>?code=AUTHORIZATION_CODE
 
 ## Obtener credenciales
 
-Utiliza el código de autorización obtenido en el paso anterior para adquirir las credenciales del usuario mediante la [API de OAuth](/developers/es/reference/oauth/_oauth_token/post), permitiéndote gestionar sus ventas.
+Utiliza el código de autorización obtenido en el paso anterior para adquirir las credenciales del usuario mediante la [API de OAuth](/developers/es/reference/oauth/_oauth_token/post), lo que te permitirá gestionar sus ventas.
 
 | Parámetro                | Descripción                                                                                      |
 |--------------------------|--------------------------------------------------------------------------------------------------|
@@ -141,4 +141,4 @@ La respuesta incluye:
 >
 > Importante
 >
-> Estas credenciales tienen una validez de 6 meses. En caso de no renovarse antes de ese período, perderán vigencia y será necesario repetir el proceso de vinculación para autorizar nuevamente al vendedor. Para saber cómo renovar estas credenciales, consulta el paso a paso en la [documentación de Renovación.](/developers/es/docs/split-payment/additional-content/security/oauth/renewal)
+> Estas credenciales tienen una validez de 6 meses. En caso de no renovarlas antes de ese período, perderán vigencia y será necesario repetir el proceso de vinculación para autorizar nuevamente al vendedor. Para saber cómo renovar estas credenciales, consulta el paso a paso en la [documentación de Renovación.](/developers/es/docs/split-payment/additional-content/security/oauth/renewal)
