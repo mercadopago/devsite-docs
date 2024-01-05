@@ -1,14 +1,17 @@
 # Configurar formas de pagamento
 
 ----[mlb]----
-Para começar a receber pagamentos com Mercado Pago, cartões de crédito ou débito, Pix e Mercado Crédito, siga as etapas descritas abaixo.
+Para começar a receber pagamentos com Checkout Pro, Checkout Transparente e Pix, siga as etapas descritas abaixo.
 
 ------------
 ----[mla, mlm]----
-Para começar a receber pagamentos com Mercado Pago, cartões de crédito ou débito e Mercado Crédito, siga as etapas descritas abaixo.
+Para começar a receber pagamentos com Mercado Pago e Checkout Transparente, siga as etapas descritas abaixo.
 
 ------------
+----[mlu, mpe, mco, mlc]----
+Para começar a receber pagamentos com Mercado Pago e Checkout Transparente, siga as etapas descritas abaixo.
 
+------------
 ## Ativar métodos de pagamento
 
 Veja como ativar cada meio de pagamento em sua loja Salesforce:

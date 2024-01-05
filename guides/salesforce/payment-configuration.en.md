@@ -1,14 +1,17 @@
 # Configure payment methods
 
 ----[mlb]----
-To start receiving payments with Mercado Pago, credit or debit cards, Pix and Mercado Crédito, follow the steps outlined below.
+To start receiving payments with Checkout Pro, Checkout Transparente and Pix, follow the steps outlined below.
 
 ------------
 ----[mlm, mla]----
-To start receiving payments with Mercado Pago, credit or debit cards and Mercado Crédito, follow the steps outlined below.
+To start receiving payments with Checkout Pro and Checkout Transparente, follow the steps outlined below.
 
 ------------
+----[mlu, mpe, mco, mlc]----
+To start receiving payments with Checkout Pro and Checkout Transparente, follow the outlined steps below.
 
+------------
 ## Activate payment methods
 
 Here's how to activate each payment method in your Salesforce Commerce Cloud store:
