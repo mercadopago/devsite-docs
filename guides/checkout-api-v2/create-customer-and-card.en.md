@@ -18,23 +18,23 @@ To create a customer and card, use one of the codes below.
 ?>
 ```
 ```node
-const client = new MercadoPagoConfig({ accessToken: 'access_token' });
-const customerClient = new Customer(client);
+const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
+const customer = new Customer(client);
 
-const customer = customerClient.get({ customerId: '<CUSTOMER_ID>' })
-	.then((result) => {
+const body = {
+  email: "my.user@example.com"
+};
 
-  const cardClient = new CustomerCard(client);
+customer.create({ body: body }).then((result) => {
+  const customerCard = new CustomerCard(client);
 
   const body = {
-       token : result.token,
-       issuer_id: '2345',
-       payment_method: 'debit_card' 
+    token : result.token,
   };
 
-cardClient.create({ customerId: customer, body: body })
-.then(console.log).catch(console.log);
-});
+  customerCard.create({ customerId: 'customer_id', body })
+     .then((result) => console.log(result));
+})
 ```
 ```java
 

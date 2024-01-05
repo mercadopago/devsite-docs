@@ -2,8 +2,6 @@
 
 Mercado Pago offers several solutions that allow you to receive virtual or in-person payments. You can provide payment methods without contracts or monthly fees, through integrations with online stores or products, such as a payment link, QR Code, and the Mercado Pago machine, the Point, which may or may not be integrated.
 
-> **Do you already know the advantages of each product?** Check out [here](https://www.mercadopago[FAKER][URL][DOMAIN]/ferramentas-para-vender?gclid=CjwKCAiAx8KQBhAGEiwAD3EiP9TeLRYVwHhVkKajMvy7LONL7t49Q0pSjdly3TNkOLrileJdl5lHSBoCUcAQAvD_BwE&matt_tool=79642323&utm_experiment=optimize&matt_word=MLB_MP_G_AO_OP_COW_BRAND_SELL_CONV_TRANPARENTE#from=public_navigation), get to know all features in-depth, and find the best solution for your business. 
-
 In the case of integrable solutions, the initial integration flow is always the same: the first step is to have a Mercado Pago account, as this is where the sale payments will be sent. 
 
 > NOTE

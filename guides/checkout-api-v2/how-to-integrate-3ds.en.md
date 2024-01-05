@@ -29,7 +29,7 @@ Below are the steps to integrate with 3DS.
 >
 > Important
 >
-> We recommend using the `optional` value in the implementation of 3DS, as it balances security and transaction approval. `mandatory` should only be used when necessary to ensure 100% transaction approval, however, it may reduce the approval rate.
+> We recommend using the `optional` value in the implementation of 3DS, as it balances security and transaction approval. The `mandatory`should be used only for integrations that require all approved transactions to go through 3DS.
 
 [[[
 ```curl
@@ -262,10 +262,9 @@ function doChallenge(payment) {
 
 When the Challenge is completed, the payment status will be updated to `approved` if the authentication is successful, and `rejected` if it is not. In situations where authentication is not performed, the payment remains `pending`. This update is not immediate and may take a few moments.
 
-
 See the section below for more details on how to check the status of each transaction.
 
-## Check transaction status
+## Check the status of the transaction
 
 To find out the result of each transaction, there are three options:
 
@@ -344,6 +343,7 @@ See below the table with the possible statuses and their respective descriptions
 | "pending"  | "pending_challenge"           | Transaction pending authentication or Challenge timeout. |
 | "rejected" | "cc_rejected_3ds_challenge"   | Transaction rejected due to Challenge failure.                 |
 | "rejected" | "cc_rejected_3ds_mandatory" | Transaction rejected for not complying with 3DS validation when it is mandatory. |
+| "cancelled" | "expired" | Transaction with Challenge canceled after 24 hours in pending status. |
 
 ## Integration test
 
@@ -557,4 +557,4 @@ In both the success and failure flows, the Challenge, which is a screen similar 
 
 ![Challenge](/images/api/sandbox-v1-en.png)
 
-The provided verification code is for illustrative purposes only. To complete the test flow, simply click the **Confirm** button. After completing this action, follow the detailed instructions in the **Verify Transaction Status** section to determine when the Challenge has been completed and how to check for payment updates. 
+The provided verification code is for illustrative purposes only. To complete the test flow, simply click the **Confirm** button. After completing this action, follow the detailed instructions in the [Check the status of the transaction](/developers/en/docs/checkout-api/how-tos/integrate-3ds#bookmark_check_transaction_status) section to determine when the Challenge has been completed and how to check for payment updates. 

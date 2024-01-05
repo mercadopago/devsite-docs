@@ -9,7 +9,7 @@ Este modelo es ideal para cobrar con un código QR en ticket, en servicios de me
 Sus principales características son:
 
 - El valor ya está configurado dentro del código QR.
-- Te permite mostrar el código QR impreso en un ticket o en tu dispositivo PDV. No requiere uno fijo en caja.
+- Te permite mostrar el código QR impreso en un ticket o en tu dispositivo Punto de Venta (PDV). No requiere uno fijo en caja.
 - Puedes cobrar varias órdenes en el mismo momento con diferentes códigos.
 
 > WARNING

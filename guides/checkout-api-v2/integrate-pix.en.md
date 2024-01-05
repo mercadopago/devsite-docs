@@ -27,7 +27,6 @@ npm install @mercadopago/sdk-js
 ```
 ]]]
 
-
 ## Configure credentials
 
 Credentials are unique keys with which we identify an integration in your account. They serve to capture payments in virtual stores and other applications securely.
@@ -50,11 +49,9 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 ```
 ]]]
 
-
 ## Add payment form
 
 With the MercadoPago.js library included and the credentials configured, add the payment form below to your project to ensure secure capture of customer data.
-
 
 [[[
 ```html
@@ -94,7 +91,6 @@ With the MercadoPago.js library included and the credentials configured, add the
 </form>
 ```
 ]]]
-
 
 ## Get document types
 
@@ -365,45 +361,41 @@ curl -X POST \
 ```
 ]]]
 
-
-
 The response will show the payment **pending status** and all the information you need to show to the buyer. The `transaction_data` value will return the data for QR code.
 
-
-[[[
 ```json
 {
-...,
-"id": 5466310457,
-"status": "pending",
-"status_detail": "pending_waiting_transfer",
-...,
-"transaction_details": {
-"net_received_amount": 0,
-"total_paid_amount": 100,
-"overpaid_amount": 0,
-"external_resource_url": null,
-"installment_amount": 0,
-"financial_institution": null
-},
-"point_of_interaction": {
-"type": "PIX",
-"sub_type": null,
-"application_data": {
-"name": "NAME_SDK",
-"version": "VERSION_NUMBER"
-},
-"transaction_data": {
-"qr_code_base64": "iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAIABJREFUeJzs2luO3LiWQNFmI+Y/Zd6vRt36KGNXi7ZOBtcagHD4kNLeiLX33v8DAAAAABD879sDAAAAAAA/h6AIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCAAAAAJmgCAAAAABkgiIAAAAAkAmKAAAAAEAmKAIAAAAAmaAIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCA...",
-"qr_code": "00020126600014br.gov.bcb.pix0117john@yourdomain.com0217additional data520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA",
-"ticket_url": "https://www.mercadopago.com.br/payments/123456789/ticket?caller_id=123456&hash=123e4567-e89b-12d3-a456-426655440000"
-}
-}
-...,
+  ...,
+ "id": 5466310457,
+ "status": "pending",
+ "status_detail": "pending_waiting_transfer",
+ ...,
+ "transaction_details": {
+     "net_received_amount": 0,
+     "total_paid_amount": 100,
+     "overpaid_amount": 0,
+     "external_resource_url": null,
+     "installment_amount": 0,
+     "financial_institution": null,
+     "transaction_id": null
+ },
+ "point_of_interaction": {
+     "type": "PIX",
+     "sub_type": null,
+     "application_data": {
+       "name": "NAME_SDK",
+       "version": "VERSION_NUMBER"
+     },
+     "transaction_data": {
+       "qr_code_base64": "iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAIABJREFUeJzs2luO3LiWQNFmI+Y/Zd6vRt36KGNXi7ZOBtcagHD4kNLeiLX33v8DAAAAABD879sDAAAAAAA/h6AIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCAAAAAJmgCAAAAABkgiIAAAAAkAmKAAAAAEAmKAIAAAAAmaAIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCA...",
+       "qr_code": "00020126600014br.gov.bcb.pix0117john@yourdomain.com0217additional data520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA",
+       "ticket_url": "https://www.mercadopago.com.br/payments/123456789/ticket?caller_id=123456&hash=123e4567-e89b-12d3-a456-426655440000",
+       "transaction_id": null
+     }
+ }
+ ...,
 }
 ```
-]]]
-
 
 With Pix, you can also choose the period that the customer will have to pay for the purchase, defining the expiration date of the payment code sent after the order is placed.
 
@@ -419,7 +411,6 @@ For the user to make the payment, you must choose the way to open it, which can 
 
 Select the option that best suits your business model and follow the steps described below.
 
-
 * **Add Link or Button**: When choosing to add a link or button for payment with Pix, the buyer will be directed to a new window containing all payment information, such as **QR Code**, **Pix Copy and Paste** and instructions for payment.
 
 To offer this option, use the `ticket_url` attribute, which shows a Pix in a new window with all the QR Code, Pix Copy and Paste information and payment instructions.
@@ -431,14 +422,11 @@ To offer this option, use the `ticket_url` attribute, which shows a Pix in a new
 ```
 ]]]
 
-
 * **Render QR code**: It is possible to render the current QR code, which must be used only once, on the screen itself. In addition, it is also possible to add an option to copy and paste the payment code, which will allow you to carry out the transaction from an Internet Banking.
 
 Follow the steps below to render the QR code and make copy and paste available.
 
-
 1. Add `qr_code_base64` to display the QR code.
-
 
 [[[
 ```html
@@ -446,7 +434,6 @@ Follow the steps below to render the QR code and make copy and paste available.
 
 ```
 ]]]
-
 
 2. To present the option that will allow you to copy and paste the payment code, add the qr code as follows:
 
@@ -457,7 +444,4 @@ Follow the steps below to render the QR code and make copy and paste available.
 ```
 ]]]
 
-
 Upon completing these steps, the QR code will have been rendered and will be displayed to the buyer at checkout.
-
-

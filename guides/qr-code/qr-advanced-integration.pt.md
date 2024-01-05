@@ -20,7 +20,7 @@ Você encontrará mais informações na seção [Reembolsos e cancelamentos](/de
 >
 > Nota
 >
-> Considere que para pagamentos comerciais, você somente poderá fazer reembolsos, mas não cancelamentos.
+> Considere que para pagamentos presenciais, você somente poderá fazer reembolsos, mas não cancelamentos.
 
 ## Obter dados do pedido
 
@@ -30,13 +30,3 @@ Para obter o pedido vigente de um caixa, você pode utilizar a curl que está em
 
 Integre os [relatórios de conciliação do Mercado Pago](/developers/pt/guides/additional-content/reports/general-considerations/reconciliation-reports) com o seu sistema para conciliar as suas vendas e ver as movimentações em sua conta.
 
-## Teste e valide a sua integração
-
-Detalhamos os casos necessários para validar que o seu sistema esteja corretamente integrado ao Mercado Pago.
-
-**Casos para validar:**
-
-|Modelo QR|Link|
-|---|---|
-|Atendido|[Clique aqui](/developers/pt/docs/qr-code/additional-content/qr-validation-cases/qr-attended-events)|
-|Dinâmico|[Clique aqui](/developers/pt/docs/qr-code/additional-content/qr-validation-cases/qr-dynamic-events)|
