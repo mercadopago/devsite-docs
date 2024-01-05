@@ -141,4 +141,4 @@ La respuesta incluye:
 >
 > Importante
 >
-> Estas credenciales tienen una validez de 6 meses. En caso de no renovarlas antes de ese período, perderán vigencia y será necesario repetir el proceso de vinculación para autorizar nuevamente al vendedor. Para saber cómo renovar estas credenciales, consulta el paso a paso en la [documentación de Renovación.](/developers/es/docs/split-payment/additional-content/security/oauth/renewal)
+> Estas credenciales tienen una validez de 6 meses. En caso de no renovarlas antes de ese período, perderán vigencia y será necesario repetir el proceso de vinculación para autorizar nuevamente al vendedor. Para saber cómo renovar estas credenciales, consulta el paso a paso en la [documentación de Renovación.](/developers/es/docs/split-payments/additional-content/security/oauth/renewal)

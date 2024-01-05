@@ -141,4 +141,4 @@ The response includes:
 >
 > Important
 >
-> These credentials are valid for 6 months. If not renewed before that period, they will expire, and it will be necessary to repeat the linking process to authorize the seller again. To learn how to renew these credentials, consult the step-by-step in the [Renewal documentation.](/developers/en/docs/split-payment/additional-content/security/oauth/renewal)
+> These credentials are valid for 6 months. If not renewed before that period, they will expire, and it will be necessary to repeat the linking process to authorize the seller again. To learn how to renew these credentials, consult the step-by-step in the [Renewal documentation.](/developers/en/docs/split-payments/additional-content/security/oauth/renewal)
