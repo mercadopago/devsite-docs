@@ -18,5 +18,5 @@ There are **two types** of notifications available for configuration which ,once
 
 | Type | Description |
 | --- | --- |
-| **Webhooks** | It uses HTTP REST and instantly notifies updates. To learn how to configure webhook notifications [click here](/developers/pt/guides/additional-content/your-integrations/webhooks). |
+| **Webhooks** | It uses HTTP REST, instantly notifies updates and enhances security in your integration through the **secret signature**, a validation method to ensure that received notifications were sent by Mercado Pago. </br [Click here](/developers/pt/guides/additional-content/your-integrations/webhooks) to learn how to configure and simulate the sending of Webhooks notifications. |
 | **IPN** | The notification may take a few moments to send. To learn how to configure IPN notifications [click here](/developers/pt/guides/additional-content/your-integrations/ipn). |
