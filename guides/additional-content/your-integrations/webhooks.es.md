@@ -52,7 +52,7 @@ A continuación explicaremos cómo: indicar las URL que serán notificadas, conf
 1. Después de configurar las URLs y los Eventos, **revela la clave secreta** generada.
 2. A continuación, utiliza la clave secreta para validar el encabezado `x-signature-id`. El valor recibido en el encabezado debe coincidir con la clave obtenida en el paso previo. En el ejemplo que se muestra a continuación el valor `59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1` debería coincidir con la clave secreta generada.
 
-```
+```header
 ...
 accept-encoding	*
 content-type	application/json
