@@ -25,7 +25,7 @@ bullet_section_with_media:
 bullet_section_with_media: 
  - title: Assinaturas sem plano associado
  - type: reversed
- - message: Assinaturas sem plano associado ssão utilizadas em situações em que diferentes assinaturas possuem características diferentes por serem específicas para cada pagador. Por exemplo, uma assinatura que, de acordo com as opções selecionadas pelo pagador, tem seu preço final alterado.
+ - message: Assinaturas sem plano associado são utilizadas em situações em que diferentes assinaturas possuem características diferentes por serem específicas para cada pagador. Por exemplo, uma assinatura que, de acordo com as opções selecionadas pelo pagador, tem seu preço final alterado.
  - image: /subscriptions/mini-landing-3-pt.png
 ---
 
