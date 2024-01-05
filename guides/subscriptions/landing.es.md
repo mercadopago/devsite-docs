@@ -25,7 +25,7 @@ bullet_section_with_media:
 bullet_section_with_media: 
  - title: Suscripciones sin plan asociado
  - type: reversed
- - message: Las suscripciones sin plan asociado se utilizan en situaciones en las que diferentes suscripciones tienen características diferentes, ya que son específicas de cada pagador. Por ejemplo, una suscripción que, según las opciones seleccionadas por el pagador, tenga modificado su precio final.
+ - message: Las suscripciones sin plan asociado se utilizan en situaciones en las que distintas suscripciones tienen características diferentes, ya que son específicas de cada pagador. Por ejemplo, una suscripción que, según las opciones seleccionadas por el pagador, tenga modificado su precio final.
  - image: /subscriptions/mini-landing-3-pt.png
 ---
 

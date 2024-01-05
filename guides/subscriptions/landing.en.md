@@ -25,7 +25,7 @@ bullet_section_with_media:
 bullet_section_with_media: 
  - title: Subscriptions without associated plan
  - type: reversed
- - message: Subscriptions without an associated plan are used in situations where different subscriptions have different characteristics, since they are specific to each payer. For example, a subscription that, depending on the options selected by the payer, has its final price modified.
+ - message: Subscriptions without an associated plan are used in situations where different subscriptions have different features, since they are specific to each payer. For example, a subscription that, depending on the options selected by the payer, has its final price modified.
  - image: /subscriptions/mini-landing-3-pt.png
 ---
 
