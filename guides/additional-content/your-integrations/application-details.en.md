@@ -28,7 +28,6 @@ Click on **Evaluate quality** to start the process of analyzing your integration
 >
 > For now, the **Integration quality** section is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Mercado Pago Point,](/developers/en/docs/mp-point/landing) [Checkout API](/developers/en/docs/checkout-api/landing) and [Checkout Bricks](/developers/en/docs/checkout-bricks/landing).
 
-
 ------------
 ----[mlb]----
 
@@ -38,10 +37,10 @@ Click on **Evaluate quality** to start the process of analyzing your integration
 >
 > For now, the **Integration quality** section is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Mercado Pago Point,](/developers/en/docs/mp-point/landing) [Checkout API](/developers/en/docs/checkout-api/landing) and [Checkout Bricks.](/developers/en/docs/checkout-bricks/landing)
 
-
 ------------
 
 ## Application data
+
 * **Application data**: This section displays the basic data of the application, including:
   - **User ID**: Automatically generated user identification number.
   - **Application number**: Automatically generated application identification number.
@@ -49,7 +48,9 @@ Click on **Evaluate quality** to start the process of analyzing your integration
   - **Integration model** (if applicable): Integration model options are available depending on the used product or platform.
 
 ### Edit data
+
 You can click on the **Edit data** button to view and edit the advanced settings that include the data of your application and the product to be integrated. They are:
+
 * **Logo**: JPG or PNG image format up to 1MB.
 * **Application name**: To easily identify your applications (maximum of 50 characters).
 * **Application short name**: secondary identifier of the application (this field cannot contain spaces or special characters).
@@ -67,7 +68,9 @@ If you are not using an e-commerce platform, mark **No** and select the **produc
 </br>
 
 ### Delete application
+
 To remove an application, follow these steps:
+
 1. Access the "Edit Application" page.
 2. Scroll to the bottom of the page and click on the **Delete Application** button.
 This way, the application will be successfully deleted.

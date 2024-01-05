@@ -28,7 +28,6 @@ Clique em **Avaliar a qualidade** para iniciar o processo de análise da sua int
 >
 > Por enquanto, a seção **Qualidade da integração** só está disponível para integrações com o [Checkout Pro,](/developers/pt/docs/checkout-pro/landing) [Mercado Pago Point,](/developers/pt/docs/mp-point/landing) [Checkout API](/developers/pt/docs/checkout-api/landing) e [Checkout Bricks.](/developers/pt/docs/checkout-bricks/landing)
 
-
 ------------
 ----[mlb]----
 
@@ -38,10 +37,10 @@ Clique em **Avaliar a qualidade** para iniciar o processo de análise da sua int
 >
 > Por enquanto, a seção **Qualidade da integração** só está disponível para integrações com o [Checkout Pro,](/developers/pt/docs/checkout-pro/landing) [Mercado Pago Point,](/developers/pt/docs/mp-point/landing) [Checkout Transparente](/developers/pt/docs/checkout-api/landing) e [Checkout Bricks.](/developers/pt/docs/checkout-bricks/landing)
 
-
 ------------
 
 ## Dados da aplicação
+
 * **Dados da aplicação**: esta seção exibe os dados básicos da aplicação, incluindo:
   - **User ID**: número de identificação do usuário criado automaticamente.
   - **Número da aplicação**: número de identificação da aplicação criado automaticamente.
@@ -49,7 +48,9 @@ Clique em **Avaliar a qualidade** para iniciar o processo de análise da sua int
   - **Modelo da integração** (se houver): as opções de modelo de integração são disponibilizadas de acordo com o produto ou plataforma utilizada. 
 
 ### Editar dados
+
 Você pode clicar no botão **Editar dados** para visualizar e editar as configurações avançadas que incluem os dados da sua aplicação e o produto a ser integrado. São elas:
+
 * **Logotipo**: imagem em formato JPG ou PNG de até 1MB.
 * **Nome de aplicação**: para identificar suas aplicações com mais facilidade (máximo de 50 caracteres).
 * **Nome curto da aplicação**: identificador secundário da aplicação (este campo não pode ter espaços ou caracteres especiais). 
@@ -67,7 +68,9 @@ Caso você não esteja utilizando uma plataforma de comércio eletrônico, marqu
 </br>
 
 ### Excluir aplicação
-Para remover uma aplicação, siga estas etapas: 
+
+Para remover uma aplicação, siga estas etapas:
+
 1. Acesse a página "Editar aplicação". 
 2. Role até o final da página e clique no botão **Excluir aplicação**. 
 Dessa forma, a aplicação será excluída com sucesso.

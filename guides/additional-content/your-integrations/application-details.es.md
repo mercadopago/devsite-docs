@@ -40,6 +40,7 @@ Haz clic en **Evaluar calidad** para iniciar el proceso de análisis de tu integ
 ------------
 
 ## Datos de la aplicación
+
 * **Datos de la aplicación**: esta sección muestra los datos básicos de la aplicación, incluyendo:
   - **ID de usuario**: número de identificación de usuario, que es creado automáticamente.
   - **Número de aplicación**: número de identificación de la aplicación, que es creado automáticamente.
@@ -47,7 +48,9 @@ Haz clic en **Evaluar calidad** para iniciar el proceso de análisis de tu integ
   - **Modelo de integración** (si corresponde): las opciones de modelo de integración se proporcionan según el producto o plataforma utilizada.
 
 ### Editar datos
+
 Puedes hacer clic en el botón **Editar datos** para ver y editar las configuraciones avanzadas que incluyen los datos de tu aplicación y el producto a integrar. Estas son:
+
 * **Logo**: imagen en formato JPG o PNG de hasta 1 MB.
 * **Nombre de la aplicación**: sirve para identificar tus aplicaciones con más facilidad (permite un máximo de 50 caracteres).
 * **Nombre corto de la aplicación**: identificador secundario de la aplicación (este campo no puede contener espacios ni caracteres especiales).
@@ -65,7 +68,9 @@ Si no estás utilizando una plataforma de comercio electrónico, marca **No** y 
 </br>
 
 ### Eliminar aplicación
+
 Para eliminar una aplicación, sigue estos pasos:
+
 1. Accede a la página "Editar aplicación".
 2. Desplázate hasta el final de la página y haz clic en el botón **Eliminar aplicación**.
 De esta manera, la aplicación se eliminará correctamente.
