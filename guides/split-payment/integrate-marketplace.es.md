@@ -1,8 +1,4 @@
-# Cómo integrar el checkout en marketplace
-
-Marketplace es un sitio/plataforma de comercio electrónico que conecta a vendedores y compradores en un mismo entorno de ventas, permitiendo la venta de productos y/o servicios online con mayor alcance y posibilidad de conversión.
-
-Además de la estructura necesaria para realizar las ventas, algunos _marketplaces_ se encargan de la disposición de productos, formas de pago y envío, optimizando el proceso de venta y facilitando la gestión comercial.
+# Integrar el checkout en Split de Pagos (marketplace)
 
 Si eliges vender a través de un _marketplace_, es posible integrar **dos tipos de checkout de Mercado Pago** para procesar los pagos realizados.
 
