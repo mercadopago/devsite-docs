@@ -1,22 +1,21 @@
-# Como gerar o seu relatório de Dinheiro em conta
+# Gerar relatório
+
+Você pode gerar um relatório de Dinheiro em conta através da sua conta Mercado Pago ou por meio da integração via API. Veja a tabela a seguir para obter mais informações.
 
 > NOTE
 >
 > Atenção
 >
-> Gerencie suas vendas com código QR de um jeito fácil. Criamos novas colunas que permitem que você identifique as carteiras digitais ou os bancos que seus clientes utilizam ao pagarem com um código QR do Mercado Pago. Atualize suas preferências de configuração [no painel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) ou [via API](/developers/pt/guides/additional-content/reports/account-money/api) para incluir as colunas nos seus relatórios.
-> <br/>
-> O relatório somente irá gerar informações após configuração do relatório ter sido feita e este seja executado a primeira vez.
-Desse modo, a primeira execução terá um relatório vazio. Não é possível gerar o relatório com informações retroativas à data da configuração e primeira execução.
+> Gerencie suas vendas com código QR de um jeito fácil. Criamos novas colunas que permitem que você identifique as carteiras digitais ou os bancos que seus clientes utilizam ao pagarem com um código QR do Mercado Pago. Atualize suas preferências de configuração [no painel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) ou [via API](/developers/pt/guides/additional-content/reports/account-money/api) para incluir as colunas nos seus relatórios. O relatório somente irá gerar informações após a configuração do relatório ter sido feita e este seja executado a primeira vez. Desse modo, a primeira execução terá um relatório vazio. Não é possível gerar o relatório com informações retroativas à data da configuração e primeira execução.
 
-## Canais de geração
+## Canais de criação
 
 Há duas formas de gerar um relatório de Dinheiro em conta:
 
 | Canais | Descrição |
 | --- | --- |
-| Painel do Mercado Pago | <br/>Para gerar o relatório pela sua conta Mercado Pago, vá até a seção [Relatórios e faturamento](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) e selecione *Relatórios de pagamentos e extratos de conta*.<br/><br/>No painel é possível efetuar customizações e programar a geração automática do relatório.<br/><br/>Siga o passo a passo para [gerar relatórios a partir do painel](/developers/pt/guides/additional-content/reports/account-money/panel).<br/><br/> |
-| Integração via API | <br/>Programa a frequência do seu relatório de acordo com as suas necessidades. Pode ser tanto de forma manual como de forma programada.<br/><br/>Como no painel, também é possível efetuar customizações no relatório.<br/><br/>Leia a documentação para [gerar relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/api). <br/><br/> |
+| Painel do Mercado Pago | É possível criar o relatório manualmente através do painel Mercado Pago. Acesse a seção de [Relatórios e faturamento](https://www.mercadopago.com.br/movements), clique em **Ir para Relatórios de pagamentos e extratos de conta** e selecione o relatório. Para mais informações, leia a documentação [Gerar relatório pelo painel](/developers/pt/guides/additional-content/reports/account-money/panel). |
+| Integração via API | Crie o relatório de forma manual ou agendada de acordo com a frequência desejada utilizando nossa integração via API. Para mais informações, consulte a documentação [Gerar relatório via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/api). |
 
 ## Características técnicas do relatório
 
@@ -29,7 +28,7 @@ Programe como e com que frequência você quer gerar seus relatórios.
 | Elemento | Características |
 | --- | --- |
 | Programação | <br/>- Diária<br/> - Semanal<br/>- Mensal<br/><br/> |
-| Geração | <br/>- Manual<br/><br/> | <br/>- Automática<br/><br/> |
+| Criação | <br/>- Manual<br/>- Automática<br/><br/> |
 
 ### Estrutura do relatório
 
@@ -60,7 +59,7 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 
 ### Webhook
 
-Webhook (também conhecido como "retorno de chamada web"), é um método simples que permite que um aplicativo ou sistema forneça informações em tempo real toda vez que um evento acontece, ou seja, é uma maneira de receber dados entre dois sistemas de forma passiva, por meio de um HTTP POST. No caso dos relatórios usados na reconciliação, uma notificação é enviada ao usuário que tiver configurado este serviço quando seus arquivos forem gerados.
+Webhook, também chamado de "retorno de chamada web", é um método eficiente para receber informações em tempo real sempre que um evento ocorre em um aplicativo ou sistema. Essa abordagem permite a transferência passiva de dados entre dois sistemas por meio de solicitações HTTP POST. Em relação aos relatórios utilizados na reconciliação, uma notificação é enviada ao usuário que tiver configurado este serviço assim que os arquivos correspondentes forem gerados.
 
 | Atributo        | Descrição                         |
 |-----------------|-----------------------------------|
@@ -79,19 +78,17 @@ Webhook (também conhecido como "retorno de chamada web"), é um método simples
 
 ### Senha para criptografia
 
-Para garantir o processo de notificação ao sistema, será enviado no corpo da mensagem (payload) um atributo chamado **_"signature"_** para validar que a notificação Webhook teve origem no Mercado Pago e que não se trata de uma imitação.
+A senha de criptografia é essencial para assegurar o processo de notificação ao sistema. No corpo da mensagem (_payload_), um atributo chamado **_"signature"_** é enviado para validar a origem legítima da notificação Webhook do Mercado Pago, evitando possíveis imitações.
 
-A **signature** é criada ao unir o `transaction_id` com a `senha criptografada` na seção **_"Notificação por Webhook"_** e o `generation_date` do relatório. Assim que os valores forem vinculados, eles são criptografados usando o algoritmo **_BCrypt_** da seguinte maneira:
+A criação da **signature** ocorre pela combinação do `transaction_id` com a `senha criptografada` na seção **_"Notificação por Webhook"_**, juntamente com o `generation_date` do relatório. Esses valores são então criptografados utilizando o algoritmo **_BCrypt_** da seguinte forma:
 
 `signature = BCrypt(transaction_id + '-' + password_for_encryption + '-' + generation_date)`
 
-Para validar que foi o Mercado Pago quem emitiu a notificação, é necessário usar a **_função de verificação oferecida_** pelo algoritmo do **_BCrypt_** para a linguagem desejada.
+Para validar que foi o Mercado Pago quem emitiu a notificação, é necessário utilizar a **_função de verificação oferecida_** pelo algoritmo do **_BCrypt_** para a linguagem desejada.
 
-**Exemplo Java:**
+**Exemplo em Java:**
 
 `BCrypt.checkpw(transaction_id + '-' + password_for_encryption + '-' + generation_date, payload_signature)`
-
-> Tenha em mãos o [Glossário do relatório](/developers/pt/guides/additional-content/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
 > NOTE
 >

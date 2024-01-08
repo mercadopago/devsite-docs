@@ -69,22 +69,3 @@ Na coluna `DESCRIPTION` você pode identificar cada parcela com o valor `install
 > Nota
 >
 > Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/glossary) de Dinheiro disponível para revisá-lo quando precisar ou caso queira consultar algum termo técnico.
-
-
-### Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> Gere seu relatório de Dinheiro disponível
->
-> Conheça as formas de gerar um relatório e siga os passos para configurar suas preferências.
->
-> [Gere seu relatório de Dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/available-money/generate)
-
-> RIGHT_BUTTON_RECOMMENDED_PT
->
-> Detalhamento de informações sobre seu relatório
->
-> Vamos lhe mostrar todas as informações necessárias sobre os dados dos seus relatórios e como lê-los.
->
-> [Detalhamento de informações sobre seu relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/extra/reports-information-details)

@@ -1,7 +1,6 @@
 # Glossary
 
-We know, some terms are technical and you may not be familiar with all of them. Use this glossary to not get lost!
-
+If you have any doubts about the technical terms used, check the glossary below.
 
 | Name on the report column      | What it means          |
 |--------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -53,9 +52,10 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | Payment platform (SUB_UNIT)    | It allows to identify the method used to collect a payment with Mercado Pago.                  |
 | Product SKU Code (PRODUCT_SKU) | SKU code with which you will be able to identify your sold products.   |  
 | Sale detail (SALE_DETAIL)      | This column offers detailed information on the items sold in each delivery, making it easier to reconcile and control your sales.              |  
+
 > INFO
 >
 > (*) This information can only be used for reconciliation purposes, will be treated according to the applicable 
 > personal data protection laws and will be available when payments via QR code or transfers are received, as well as
 > when a donation is received by an NGO.
-------------
+

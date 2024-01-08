@@ -28,8 +28,8 @@ The reports you generate from ----[mpe]----January 2022------------  ----[mlu]--
 
 ## Download report
 
-Follow this path to learn how to generate and download the Releases Report:
-**Reports and Billing -> Sales and Account Statements -> Release**.
+Follow this path to learn how to generate and download the Releases report:
+[Sales and billing](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports) > **Sales and Account Statement Reports > [Releases](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release)** > **Generate report**.
 
 ### Create report via API
 
@@ -37,15 +37,15 @@ Manually create the Releases Report as often as you wish or schedule it accordin
 
 Report generation takes a few minutes, depending on how much information you want to include. It won't always be ready instantly, and until it is, you will see the status "In preparation" on the screen.
 
-> Refer to ["How to analyze the Releases Report?"](https://www.mercadopago.com.br/ajuda/28771) for a better understanding of your report.
+> Refer to ["How to analyze the Releases report?"](https://www.mercadopago.com.br/ajuda/28771) for a better understanding of your report.
 
 ### Report values
 
-Depending on the [selected fees and deadlines](https://www.mercadopago.com.br/settings/release-options), the value obtained from the sale will be released after the payment is credited. Therefore, the total amount indicated in the report may not always coincide with your total balance or the total amount in billing reports.
+Depending on the [selected fees and deadlines](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options), the value obtained from the sale will be released after the payment is credited. Therefore, the total amount indicated in the report may not always coincide with your total balance or the total amount in billing reports.
 
 Release deadlines are related to banking processes and mediation flows when transactions are made on Mercado Livre. Additionally, disputes and complaints received in sales can impact money release.
 
-> For the exact date of availability of funds from a transaction, it is important to review [the details of credited payments](https://www.mercadopago.com.br/activities/balance).
+> For the exact date of availability of funds from a transaction, it is important to review [the details of credited payments](https://www.mercadopago[FAKER][URL][DOMAIN]/activities/balance).
 
 ## Using the report
 
@@ -57,4 +57,4 @@ Furthermore, this report presents the complete history of released money, coveri
 >
 > Note
 >
-> Use the [Releases Report Glossary](https://www.mercadopago.com.br/developers/en/docs/checkout-pro/additional-content/reports/released-money/report-use) for technical term reference, if needed.
+> Use the [Releases report glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs/checkout-pro/additional-content/reports/released-money/report-use) for technical term reference, if needed.
