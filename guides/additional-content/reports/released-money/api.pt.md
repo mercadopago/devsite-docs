@@ -902,7 +902,7 @@ Crie seus relatórios de forma programada configurando duas instâncias: ativaç
 
 ### Ativar criação automática
 
-Programe a geração automática do relatório utilizando a frequência atribuída durante a configuração dos seus relatórios. Ao consumir este serviço, a propriedade `scheduled` da sua configuração será atualizada automaticamente para `true`:
+Programe a criação automática do relatório utilizando a frequência atribuída durante a configuração dos seus relatórios. Ao consumir este serviço, a propriedade `scheduled` da sua configuração será atualizada automaticamente para `true`:
 
 [[[
 
