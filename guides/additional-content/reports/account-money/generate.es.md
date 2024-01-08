@@ -1,5 +1,7 @@
 # Generar reporte
 
+Puedes generar un reporte de Todas las transacciones a través de tu cuenta de Mercado Pago o mediante la integración a través de la API. Consulta la tabla a continuación para obtener más información.
+
 > NOTE
 >
 > Lleva con facilidad el control de tus ventas con QR

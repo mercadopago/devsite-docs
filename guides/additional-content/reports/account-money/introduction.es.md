@@ -1,6 +1,6 @@
 # Reporte de Todas las transacciones
 
-El reporte de Todas las transacciones es un **informe descargable que te permite conocer las operaciones que afectaron el balance de tu dinero.**
+El reporte de Todas las transacciones es un **reporte descargable que te permite conocer las operaciones que afectaron el balance de tu dinero.**
 
 Contiene, por ejemplo, el detalle de tus pagos, los ingresos de dinero, los contracargos y las devoluciones, en un periodo de tiempo con su desglose en bruto y neto. Está compuesto por la suma del dinero disponible, el dinero a liquidar y el dinero embargado o retenido. Es decir, todo el dinero que hay en tu cuenta independientemente del estado en el que se encuentre. 
 

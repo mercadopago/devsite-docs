@@ -1,11 +1,13 @@
 # Gerar relatório
 
+Você pode gerar um relatório de Dinheiro em conta através da sua conta Mercado Pago ou por meio da integração via API. Veja a tabela a seguir para obter mais informações.
+
 > NOTE
 >
 > Atenção
 >
 > Gerencie suas vendas com código QR de um jeito fácil. Criamos novas colunas que permitem que você identifique as carteiras digitais ou os bancos que seus clientes utilizam ao pagarem com um código QR do Mercado Pago. Atualize suas preferências de configuração [no painel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) ou [via API](/developers/pt/guides/additional-content/reports/account-money/api) para incluir as colunas nos seus relatórios.
-> <br/>
+> 
 > O relatório somente irá gerar informações após a configuração do relatório ter sido feita e este seja executado a primeira vez.
 Desse modo, a primeira execução terá um relatório vazio. Não é possível gerar o relatório com informações retroativas à data da configuração e primeira execução.
 
@@ -15,8 +17,8 @@ Há duas formas de gerar um relatório de Dinheiro em conta:
 
 | Canais | Descrição |
 | --- | --- |
-| Painel do Mercado Pago | É possível criar o relatório manualmente através do painel Mercado Pago. Acesse a seção de [Relatórios e faturamento](https://www.mercadopago.com.br/movements), clique em **Ir para Relatórios de pagamentos e extratos de conta** e selecione o relatório. Para mais informações, leia a documentação [Gerar relatório pelo painel](/developers/pt/guides/additional-content/reports/account-money/panel).<br/><br/> |
-| Integração via API | <br/>Programa a frequência do seu relatório de acordo com as suas necessidades. Pode ser tanto de forma manual como de forma programada.<br/><br/>Como no painel, também é possível efetuar customizações no relatório.<br/><br/>Leia a documentação para [gerar relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/api). <br/><br/> |
+| Painel do Mercado Pago | É possível criar o relatório manualmente através do painel Mercado Pago. Acesse a seção de [Relatórios e faturamento](https://www.mercadopago.com.br/movements), clique em **Ir para Relatórios de pagamentos e extratos de conta** e selecione o relatório. Para mais informações, leia a documentação [Gerar relatório pelo painel](/developers/pt/guides/additional-content/reports/account-money/panel). |
+| Integração via API | Crie o relatório de forma manual ou agendada de acordo com a frequência desejada utilizando nossa integração via API. Para mais informações, consulte a documentação [Gerar relatório via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/api). |
 
 ## Características técnicas do relatório
 
@@ -29,7 +31,7 @@ Programe como e com que frequência você quer gerar seus relatórios.
 | Elemento | Características |
 | --- | --- |
 | Programação | <br/>- Diária<br/> - Semanal<br/>- Mensal<br/><br/> |
-| Geração | <br/>- Manual<br/><br/> | <br/>- Automática<br/><br/> |
+| Criação | <br/>- Manual<br/><br/> | <br/>- Automática<br/><br/> |
 
 ### Estrutura do relatório
 

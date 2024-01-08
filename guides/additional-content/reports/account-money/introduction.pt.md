@@ -6,7 +6,7 @@ Contém, por exemplo, os detalhes dos seus pagamentos, as entradas de dinheiro, 
 
 ## Baixar o relatório
 
-Siga este caminho para saber como gerar e baixar o relatório de Dinheiro em conta:
+Siga o seguinte caminho para saber como gerar e baixar o relatório de Dinheiro em conta:
 [Relatórios e faturamento](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports) > **Relatórios de vendas e extratos de conta -> [Dinheiro em conta](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement)** > **Criar relatório**.
 
 ## Valores do relatório
@@ -26,5 +26,5 @@ Opcionalmente, o relatório traz colunas com o agendamento das previsões de lib
 > Atenção
 >
 > Quando você incluir as novas colunas de previsibilidade de liberações, fique atento que as informações somente serão agregadas ao relatório depois que a configuração for atualizada e o relatório for processado ao menos uma vez com as novas colunas. Relatórios com data retroativa à data dessa nova configuração com as colunas novas não apresentarão as informações de previsibilidade.
-> <br/>
+> 
 > Tenha em mãos o [Glossário do relatório](/developers/pt/guides/additional-content/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.

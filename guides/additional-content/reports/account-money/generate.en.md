@@ -1,5 +1,7 @@
 # Generate report
 
+You can generate your Account money report through your Mercado Pago account or via API integration. Refer to the table below for more information.
+
 > NOTE
 >
 > Easily keep track of your sales made with a QR Code

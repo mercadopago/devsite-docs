@@ -70,22 +70,3 @@ Column `DESCRIPTION` identifies each installment with `installment` value and fe
 > Note
 >
 > Have the [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/glossary) of the Available Balance report on hand to review it when needed or want to review a technical term.
-
-
-### Next steps
-
-> LEFT_BUTTON_RECOMMENDED_EN
->
-> Create your Available Money report
->
-> Learn how to create a report and follow the steps to set up your references.
->
-> [Create your Available Money report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/available-money/generate)
-
-> RIGHT_BUTTON_RECOMMENDED_EN
->
-> Information detail about your report
->
-> We will explain all the information necessary about your report data and how to read them.
->
-> [Information detail about your report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/extra/reports-information-details)
