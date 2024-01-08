@@ -2,23 +2,17 @@
 
 Las suscripciones con plan asociado se utilizan cuando es necesario utilizar la misma suscripción en diferentes ocasiones para organizarlas en grupos identificables. Por ejemplo, para una suscripción mensual y anual a un gimnasio.
 
-> NOTE
->
-> Importante
->
-> Una Suscripción con Plan siempre deberá ser creada con su `card_token_id` y en status `Authorized`.
+La integración de **suscripciones con plan asociado** se realiza en dos pasos. En el primero es necesario **crear un plan** que irá asociado a la suscripción y en el segundo, la **creación de la suscripción**. 
 
 ## Crear plan
 
-La integración de **suscripciones con plan asociado** se realiza en dos pasos. En el primero es necesario **crear un plan** que irá asociado a la suscripción y en el segundo, la **creación de la suscripción**. 
-
-El plan de suscripción te permite definir, entre otros atributos, el título, el valor y la frecuencia de las suscripciones creadas por el vendedor. Para crear un plan y asociarlo con una suscripción, mira el endpoint [/preapproval_plan](/developers/es/reference/subscriptions/_preapproval_plan/post), completa los atributos necesarios y ejecuta el request o, si prefieres, usa el curl a continuación.
+El plan de suscripción te permite definir, entre otros atributos, el título, el valor y la frecuencia de las suscripciones creadas por el vendedor. Para crear un plan y asociarlo con una suscripción, mira el endpoint [/preapproval_plan](/developers/es/reference/subscriptions/_preapproval_plan/post), completa los atributos necesarios y ejecuta el request o, si prefieres, usa el _curl_ a continuación.
 
 > NOTE
 >
-> Importante
+> Nota
 >
-> Al ejecutar la API, se creará el plan y tendrás acceso a `preapproval_plan_id`, **que en la respuesta de la API se mostrará como `id`.** Este **atributo es obligatorio** para crear la suscripción. 
+> Al ejecutar la API, se creará el plan y tendrás acceso a `preapproval_plan_id`, **que en la respuesta de la API se mostrará como `id`**. Este **atributo es obligatorio** para crear la suscripción. 
 
 [[[
 ```curl
@@ -55,11 +49,21 @@ curl -X POST \
 ```
 ]]]
 
+> WARNING
+>
+> Importante
+>
+> Una _Suscripción con plan asociado_ siempre deberá ser creada con su `card_token_id` y en status `Authorized`.
+
+¡Listo! Ya creaste el plan de su suscripción con plan asociado. Para finalizar la integración, ahora deberás **crear una suscripción**.
+
 ## Crear suscripción
 
-Una vez que hayas creado un plan, puedes crear la suscripción. La suscripción es una autorización del pagador para cargos recurrentes con un medio de pago definido (tarjeta de crédito, por ejemplo). Al suscribirse a un producto/servicio, el cliente acepta que se le cobre periódicamente un cierto monto por el período de tiempo definido.
+La suscripción es una autorización del pagador para cargos recurrentes con un medio de pago definido (tarjeta de crédito, por ejemplo). Al suscribirse a un producto/servicio, el cliente acepta que se le cobre periódicamente un cierto monto por el período de tiempo definido.
 
-Para crear una suscripción, tenga a mano el `preapproval_plan_id`, accede al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y completa los atributos como se indica en la tabla de parámetros o, si prefieres, usa el curl a continuación.
+Para crear una suscripción, primero deberás contar con el valor `preapproval_plan_id`. 
+
+Luego, podrás continuar la integración por dos caminos: puedes acceder al endpoint [/preapproval](/developers/es/reference/subscriptions/_preapproval/post) y completar los atributos como se indica en la tabla de parámetros, o también puedes usar el _curl_ que te compartimos a continuación.
 
 [[[
 ```curl
@@ -88,4 +92,4 @@ curl -X POST \
 ```
 ]]]
 
-Cuando termines de llenar los atributos, ejecuta el request y ¡listo! Se habrá creado la suscripción con el plan asociado.
+Cuando termines de llenar los atributos, ejecuta el request y ¡listo! Ya habrás creado la suscripción con el plan asociado.

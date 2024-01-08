@@ -35,7 +35,7 @@ Você pode configurar seus relatórios conforme necessário. Abaixo, destacamos 
 
 > Tenha o [Glossário do relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/glossary) à mão para consulta sempre que necessário ou para conferir algum termo técnico.
 
-## Criar uma nova configuração
+### Criar uma nova configuração
 
 Personalize seus relatórios atribuindo diferentes propriedades de criação executando o seguinte _curl_: 
 
