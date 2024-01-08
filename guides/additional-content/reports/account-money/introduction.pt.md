@@ -7,7 +7,7 @@ Contém, por exemplo, os detalhes dos seus pagamentos, as entradas de dinheiro, 
 ## Baixar o relatório
 
 Siga o seguinte caminho para saber como gerar e baixar o relatório de Dinheiro em conta:
-[Relatórios e faturamento](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports) > **Relatórios de vendas e extratos de conta -> [Dinheiro em conta](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement)** > **Criar relatório**.
+[Relatórios e faturamento](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports) > **Relatórios de vendas e extratos de conta > [Dinheiro em conta](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement)** > **Criar relatório**.
 
 ## Valores do relatório
 

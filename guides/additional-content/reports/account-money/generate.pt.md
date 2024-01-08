@@ -6,10 +6,7 @@ Você pode gerar um relatório de Dinheiro em conta através da sua conta Mercad
 >
 > Atenção
 >
-> Gerencie suas vendas com código QR de um jeito fácil. Criamos novas colunas que permitem que você identifique as carteiras digitais ou os bancos que seus clientes utilizam ao pagarem com um código QR do Mercado Pago. Atualize suas preferências de configuração [no painel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) ou [via API](/developers/pt/guides/additional-content/reports/account-money/api) para incluir as colunas nos seus relatórios.
-> 
-> O relatório somente irá gerar informações após a configuração do relatório ter sido feita e este seja executado a primeira vez.
-Desse modo, a primeira execução terá um relatório vazio. Não é possível gerar o relatório com informações retroativas à data da configuração e primeira execução.
+> Gerencie suas vendas com código QR de um jeito fácil. Criamos novas colunas que permitem que você identifique as carteiras digitais ou os bancos que seus clientes utilizam ao pagarem com um código QR do Mercado Pago. Atualize suas preferências de configuração [no painel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) ou [via API](/developers/pt/guides/additional-content/reports/account-money/api) para incluir as colunas nos seus relatórios. O relatório somente irá gerar informações após a configuração do relatório ter sido feita e este seja executado a primeira vez. Desse modo, a primeira execução terá um relatório vazio. Não é possível gerar o relatório com informações retroativas à data da configuração e primeira execução.
 
 ## Canais de criação
 
@@ -31,7 +28,7 @@ Programe como e com que frequência você quer gerar seus relatórios.
 | Elemento | Características |
 | --- | --- |
 | Programação | <br/>- Diária<br/> - Semanal<br/>- Mensal<br/><br/> |
-| Criação | <br/>- Manual><br/>- Automática<br/><br/> |
+| Criação | <br/>- Manual<br/>- Automática<br/><br/> |
 
 ### Estrutura do relatório
 
