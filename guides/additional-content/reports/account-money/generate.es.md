@@ -28,7 +28,7 @@ Programa cómo y con qué frecuencia quieres generar tus reportes.
 | Elemento | Características |
 | --- | --- |
 | Programacion | <br/>- Diaria<br/> - Semanal<br/>- Mensual<br/><br/> |
-| Generación | <br/>- Manual<br/><br/> |
+| Generación | <br/>- Manual<br/>- Automática<br/><br/> |
 
 ### Estructura del reporte
 

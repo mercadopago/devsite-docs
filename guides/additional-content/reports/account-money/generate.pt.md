@@ -31,7 +31,7 @@ Programe como e com que frequência você quer gerar seus relatórios.
 | Elemento | Características |
 | --- | --- |
 | Programação | <br/>- Diária<br/> - Semanal<br/>- Mensal<br/><br/> |
-| Criação | <br/>- Manual<br/><br/> | <br/>- Automática<br/><br/> |
+| Criação | <br/>- Manual><br/>- Automática<br/><br/> |
 
 ### Estrutura do relatório
 

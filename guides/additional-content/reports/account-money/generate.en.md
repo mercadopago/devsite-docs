@@ -28,7 +28,7 @@ Set up how and how often you want to generate your reports.
 | Element | Characteristics |
 | --- | --- |
 | Schedule | <br/>- Daily<br/> - Weekly<br/>- Monthly<br/><br/> |
-| Generation | <br/>- Manual<br/><br/> |
+| Generation | <br/>- Manual<br/>- Automatic<br/><br/> |
 
 ### Report structure
 
