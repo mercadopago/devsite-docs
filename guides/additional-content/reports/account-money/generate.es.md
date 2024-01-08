@@ -1,4 +1,4 @@
-# ¿Cómo generar tu reporte de Todas las transacciones?
+# Generar reporte
 
 > NOTE
 >
@@ -12,8 +12,8 @@ Existen dos formas de generar un reporte de Todas las transacciones:
 
 | Canales | Descripción |
 | --- | --- |
-| Panel de Mercado Pago | <br/> ----[mlb, mpe, mlu, mco]---- *Reportes de tus cobros y estados de cuenta.* ------------ Es muy simple y rápido. Para generarlo desde tu cuenta de Mercado Pago, ve a ----[mla]---- [Informes y facturación](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [Informes y facturación](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [tus informes](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [tus informes](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [tus informes](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [tus informes](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [tus informes](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------ y elige la opción de ----[mla, mlm]---- *Reportes de tus cobros y estados de cuenta.* ------------ ----[mlb, mpe, mlu, mco]---- *Reportes*. ------------ <br/><br/>Sigue el paso a paso para [generar reportes desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/panel).<br/><br/> |
-| Integración vía API | <br/>Programa la frecuencia de tu reporte según tus necesidades. Puede ser tanto de forma manual como de forma programada.<br/><br/>Lee la documentación para [generar reportes por API.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/api) <br/><br/>
+| Panel de Mercado Pago | Es posible crear el reporte manualmente a través del panel de Mercado Pago. Accede a la sección de ----[mla]---- [Informes y facturación](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [Informes y facturación](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [Informes y facturación](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [Informes y facturación](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [Informes y facturación](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [Informes y facturación](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [Informes y facturación](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------, haz clic en **Ir a reportes de pagos y extractos de cuenta** y selecciona el reporte. Para obtener más información, consulta la documentación [Generar reporte desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/panel). |
+| Integración vía API | Crea el reporte manualmente o programa su generación según la frecuencia deseada utilizando nuestra integración a través de la API. Para obtener más información, consulta la documentación [Generar reporte a través de la API.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/api) |
 
 ## Características técnicas del reporte
 
@@ -76,15 +76,15 @@ Webhook (también conocido como devolución de llamada web) es un método simple
 
 ### Contraseña para cifrado
 
-Para hacer seguro el proceso de notificación hacia el sistema se enviará en el cuerpo del mensaje (payload) un atributo llamado **_Signature_**, con el objetivo de validar que la notificación Webhook se haya originado desde Mercado Pago y no se trate de una suplantación.
+La contraseña de cifrado es esencial para asegurar el proceso de notificación al sistema. En el cuerpo del mensaje (_payload_), se envía un atributo llamado **_"signature"_** para validar la origen legítima de la notificación Webhook de Mercado Pago, evitando posibles imitaciones.
 
-El **_Signature_** se construye uniendo el `transaction_id` con la `contraseña para cifrado` configurada en la sección de **_Notificación por Webhook_**, más el `generation_date` del reporte. Una vez concatenados los valores se cifran haciendo uso del algoritmo **_BCrypt_** de la siguiente manera:
+La creación de la **_signature_** ocurre mediante la combinación del `transaction_id` con la `contraseña para cifrado` en la sección **_"Notificación por Webhook"_**, junto con la `generation_date` del reporte. Estos valores se cifran utilizando el algoritmo **_BCrypt_** de la siguiente manera:
 
 `signature = BCrypt(transaction_id + '-' + password_for_encryption + '-' + generation_date)`
 
-Para validar que sea Mercado Pago quien emitió la notificación se debe usar la **_función de verificación_** que ofrece el algoritmo de **_BCrypt_** para el lenguaje deseado.
+Para validar que sea Mercado Pago quien emitió la notificación, es necesario utilizar la **_función de verificación_**  ofrecida por el algoritmo de **_BCrypt_** para el lenguaje deseado.
 
-**Ejemplo Java:**
+**Ejemplo en Java:**
 
 `BCrypt.checkpw(transaction_id + '-' + password_for_encryption + '-' + generation_date, payload_signature)`
 

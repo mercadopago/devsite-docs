@@ -1,10 +1,10 @@
-# Como usar o relatório?
+# Usos do relatório
 
 Quando o relatório estiver pronto e baixado, você terá um arquivo pronto para consultar as planilhas de cálculo e importá-las para o programa que você usa.
 
 Para consultar o relatório, recomendamos baixá-lo em formato .csv para poder abri-lo no programa que possa visualizá-lo. O arquivo deve estar configurado em formato UTF-8 para evitar problemas de leitura. 
 
-## O que contém no relatório?
+## Conteúdo do relatório
 
 O relatório está composto por diferentes tipos de transações que você pode ver na coluna `TRANSACTION_TYPE`. Cada uma delas terá um valor bruto da operação.
 
@@ -30,7 +30,7 @@ Na coluna `SETTLEMENT_NET_AMOUNT` está o impacto real sobre o dinheiro da sua c
 >
 > Utilize o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/glossary) de dinheiro em conta para consultá-lo quando precisar, como, por exemplo, conferir algum termo técnico.
 
-## Exemplo de um relatório
+## Exemplo de relatório
 
 Observe como está composto o relatório de Dinheiro em conta neste exemplo para identificar as operações e analisar seus próprios relatórios:
 

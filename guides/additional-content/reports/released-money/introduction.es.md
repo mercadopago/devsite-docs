@@ -35,7 +35,7 @@ Los informes que genere a partir de ----[mpe]---- enero de 2022------------  ---
 ## Descargar reporte
 
 Siga esta ruta para saber cómo generar y descargar el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------:
-**Informes y facturación** -> **Informes de ventas y extractos de cuenta** -> ----[mla]---- **Liquidaciones** ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- **Liberaciones** ------------.
+[Informes y facturación](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports) > **Reportes de ventas y extractos de cuenta > [----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release)** > **Crear reporte**.
 
 ### Crear reporte por API
 
@@ -47,11 +47,11 @@ La generación del reporte lleva algunos minutos dependiendo de cuánta informac
 
 ### Valores del reporte
 
-Dependiendo de las [tasas y plazos](https://www.mercadopago.com.ar/settings/release-options) seleccionados, el valor obtenido con la venta se va a liquidar un tiempo después de acreditado el cobro. Por lo tanto, el valor total indicado en el reporte puede no coincidir siempre con su saldo total o con el valor total en los reportes de facturación.
+Dependiendo de las [tasas y plazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options) seleccionados, el valor obtenido con la venta se va a liquidar un tiempo después de acreditado el cobro. Por lo tanto, el valor total indicado en el reporte puede no coincidir siempre con su saldo total o con el valor total en los reportes de facturación.
 
 Los plazos de liberación están relacionados con los procesos bancarios y los flujos de intermediación cuando las transacciones se realizan en Mercado Libre. Además, las reclamaciones y contracargos recibidas en las ventas pueden afectar la liberación del dinero.
 
-> Para obtener la fecha exacta de disponibilidad del dinero de una transacción, es importante revisar los [detalles de los pagos acreditados.](https://www.mercadopago.com.ar/activities/balance)
+> Para obtener la fecha exacta de disponibilidad del dinero de una transacción, es importante revisar los [detalles de los pagos acreditados.](https://www.mercadopago[FAKER][URL][DOMAIN]/activities/balance)
 
 ## Uso del reporte
 
@@ -61,4 +61,4 @@ Además, este reporte presenta el historial completo del dinero liberado, aborda
 
 > NOTE
 >
-> Utilice el [Glosario del Reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------](/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use) para consultar términos técnicos, si es necesario.
+> Utilice el [Glosario del Reporte](/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use) para consultar términos técnicos, si es necesario.

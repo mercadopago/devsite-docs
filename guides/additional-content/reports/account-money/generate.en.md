@@ -1,4 +1,4 @@
-# How to generate your Account Money report?
+# Generate report
 
 > NOTE
 >
@@ -12,14 +12,14 @@ There are two ways to generate an Available Balance report:
 
 | Channels | Description |
 | --- | --- |
-| Mercado Pago panel | <br/> It's very simple and fast. To generate it from your Mercado Pago account, go to ----[mla]---- [your reports](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [your reports](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [your reports](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [your reports](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [your reports](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [your reports](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [your reports](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------ and choose the Reports option.<br/><br/>Follow the step by step to [generate reports from this panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/panel).<br/><br/> |
-| API integration | <br/>Schedule the frequency of your report according to your needs. It can be both manually and on a scheduled basis.<br/><br/>Read the documentation to [generate reports through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/api). <br/><br/> |
+| Mercado Pago panel | Manually create the report through the Mercado Pago panel. Access ----[mla]---- [your reports](https://www.mercadopago.com.ar/balance/reports?page=1#!/settlement-report) ------------ ----[mlm]---- [your reports](https://www.mercadopago.com.mx/balance/reports?page=1#!/settlement-report) ------------ ----[mlu]---- [your reports](https://www.mercadopago.com.uy/balance/reports?page=1#!/settlement-report) ------------ ----[mlc]---- [your reports](https://www.mercadopago.cl/balance/reports?page=1#!/settlement-report) ------------ ----[mco]---- [your reports](https://www.mercadopago.com.co/balance/reports?page=1#!/settlement-report) ------------ ----[mpe]---- [your reports](https://www.mercadopago.com.pe/balance/reports?page=1#!/settlement-report) ------------ ----[mlb]---- [your reports](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) ------------, click **Go to Payment and Account Statement Reports**, and select the report. For more information, read the documentation [Generate report through the panel.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/panel) |
+| API integration | Create the report manually or scheduled according to the desired frequency using our API integration. For more information, refer to the documentation [Generate report via API.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/api) <br/><br/> |
 
 ## Technical characteristics of the report
 
 Consider the following technical information when you want to generate, schedule and set up your reports.
 
-### Report Schedule
+### Report schedule
 
 Set up how and how often you want to generate your reports.
 
@@ -28,7 +28,7 @@ Set up how and how often you want to generate your reports.
 | Schedule | <br/>- Daily<br/> - Weekly<br/>- Monthly<br/><br/> |
 | Generation | <br/>- Manual<br/><br/> |
 
-### Report Structure
+### Report structure
 
 Know the characteristics of the elements that make up your report.
 
@@ -42,7 +42,7 @@ Know the characteristics of the elements that make up your report.
 | Date selection via API |<br/> Timezone format: UTC / GMT-0. <br/> <br/> |
 | Date selection via web | <br/> It must be based on the timezone of the user's account. <br/> For example, the timezone of São Paulo corresponds to the user account registered in Brazil. <br/> <br/> |
 
-### Report Export
+### Report export
 
 All the options you have available when downloading your report.
 
@@ -76,9 +76,9 @@ Webhook (also known as "web callback") is a simple method that allows an applica
 
 ### Password for encryption
 
-To ensure the notification process to the system, an attribute called **_signature_** will be sent in the body of the message (payload) in order to validate that the Webhook notification originated from Mercado Pago and that it is not an imitation.
+The encryption password is essential to secure the notification process to the system. In the message body (_payload_), an attribute called **_"signature"_** is sent to validate the legitimate origin of the Mercado Pago Webhook notification, avoiding possible imitations.
 
-The **_signature_** is build up by joining the `transaction_id` with the `password for encryption` configured in the **_"Webhook Notification"_** section, plus the `generation_date` of the report. Once the values are joined, they are encrypted using the **_BCrypt_** algorithm as follows:
+The creation of the **signature** occurs by combining the `transaction_id` with the `encrypted password` in the **_"Webhook Notification"_** section, along with the `generation_date` of the report. These values are then encrypted using the **_BCrypt_** algorithm as follows:
 
 `signature = BCrypt(transaction_id + '-' + password_for_encryption + '-' + generation_date)`
 
@@ -88,4 +88,4 @@ To validate that it is Mercado Pago who issued the notification, the **_verifica
 
 `BCrypt.checkpw(transaction_id + '-' + password_for_encryption + '-' + generation_date, payload_signature)`
 
-> Have the [Glossary of the Account Money report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.
+> Have the [Glossary of the report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.

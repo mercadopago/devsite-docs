@@ -1,8 +1,8 @@
 # Generate report via API
 
-Generate the Releases Report manually as many times as you want or schedule it according to the desired frequency through our API.
+Generate the Releases report manually as many times as you want or schedule it according to the desired frequency through our API.
 
-## Configure the Releases Report
+## Configure the Releases report
 
 ### Configurable attributes
 
