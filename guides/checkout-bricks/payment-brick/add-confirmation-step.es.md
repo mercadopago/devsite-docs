@@ -138,7 +138,7 @@ Vamos a examinar cada aspecto de estas configuraciones en detalle a continuació
 
 La propiedad `enableReviewStep` es responsable de habilitar la funcionalidad, es decir, la sección de revisión se renderizará solo cuando esta propiedad esté definida como _true_.
 
-## Ítems (opcional)
+## Ítems (obligatorio)
 
 Define los elementos que componen el pedido, siendo obligatorio completar esta propiedad. A continuación, se muestra un ejemplo:
 

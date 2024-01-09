@@ -2,8 +2,6 @@
 
 O Mercado Pago oferece diversas soluções que permitem receber pagamentos virtuais ou presenciais. Você pode oferecer meios de pagamento sem contratos nem mensalidades, através de integrações em loja online ou produtos, como link de pagamento, Código QR e com Point, a maquininha do Mercado Pago, que podem ou não ser integrados.
 
-> **Você já conhece as vantagens de cada produto?** Dê uma olhada [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/ferramentas-para-vender?gclid=CjwKCAiAx8KQBhAGEiwAD3EiP9TeLRYVwHhVkKajMvy7LONL7t49Q0pSjdly3TNkOLrileJdl5lHSBoCUcAQAvD_BwE&matt_tool=79642323&utm_experiment=optimize&matt_word=MLB_MP_G_AO_OP_COW_BRAND_SELL_CONV_TRANPARENTE#from=public_navigation), conheça a fundo todas as suas funcionalidades e saiba qual a melhor solução para o negócio.
-
 No caso das soluções integráveis, o fluxo inicial de integração é sempre o mesmo: o primeiro passo para integrar é ter uma conta Mercado Pago, pois é nela que serão recebidos os pagamentos das vendas. 
 
 > NOTE

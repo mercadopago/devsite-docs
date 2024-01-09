@@ -24,5 +24,5 @@ The non-compliance with these standards may imply anything from the non-processi
 
 Consider the following points to improve the quality of your integration:
 
-* Keep the order status of your system up to date by using and processing IPN or Webhooks notifications.
-* Use API reconciliation reports to streamline your business financial management.
+* Keep the order status of your system up to date by using and processing [IPN or Webhooks notifications](/developers/en/docs/qr-code/additional-content/your-integrations/notifications).
+* Use [Releases reports](/developers/en/docs/qr-code/additional-content/reports/released-money)to streamline your business financial management.

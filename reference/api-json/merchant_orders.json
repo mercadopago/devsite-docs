@@ -256,7 +256,7 @@
                       "pt": "Id do aplicativo",
                       "es": "Identificador de aplicación"
                     },
-                    "example": 10000000000000000
+                    "example": "10000000000000000"
                   }
                 }
               }
@@ -606,7 +606,7 @@
                     },
                     "application_id": {
                       "type": "string",
-                      "example": 10000000000000000,
+                      "example": "10000000000000000",
                       "description": {
                         "en": "application identifier.",
                         "pt": "Id do aplicativo",
@@ -2111,7 +2111,7 @@
                           },
                           "application_id": {
                             "type": "string",
-                            "example": 10000000000000000,
+                            "example": "10000000000000000",
                             "description": {
                               "en": "application identifier.",
                               "pt": "Id do aplicativo",
@@ -3348,7 +3348,7 @@
                     },
                     "application_id": {
                       "type": "string",
-                      "example": 10000000000000000,
+                      "example": "10000000000000000",
                       "description": {
                         "en": "application identifier.",
                         "pt": "Id do aplicativo",
@@ -3706,7 +3706,7 @@
                       "pt": "Id do aplicativo",
                       "es": "Identificador de aplicación"
                     },
-                    "example": 10000000000000000
+                    "example": "10000000000000000"
                   }
                 }
               }
@@ -4091,7 +4091,7 @@
                     },
                     "application_id": {
                       "type": "string",
-                      "example": 10000000000000000,
+                      "example": "10000000000000000",
                       "description": {
                         "en": "application identifier.",
                         "pt": "Id do aplicativo",

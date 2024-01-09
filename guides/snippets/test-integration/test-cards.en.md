@@ -1,8 +1,8 @@
 You can use test cards of local payment methods and simulate different payment responses, without the need to use a real card.
  
-For this, depending on your country, use one of the **credit** or **debit** cards we provide below..
+For this, depending on your country, use one of the **credit** or **debit** cards we provide below.
 
-## Credit cards
+### Credit cards
 
 ----[mla]----
 
@@ -60,7 +60,7 @@ For this, depending on your country, use one of the **credit** or **debit** card
 
 ------------
 
-## Debit cards
+### Debit cards
 
 ----[mla]----
 

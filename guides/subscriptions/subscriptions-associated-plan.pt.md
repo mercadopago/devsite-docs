@@ -2,15 +2,9 @@
 
 Assinaturas com plano associado são utilizadas quando é necessário utilizar a mesma assinatura em ocasiões diferentes e organizá-las em grupos identificáveis. Por exemplo, para uma assinatura mensal e anual de uma academia.
 
-> NOTE
->
-> Importante
->
-> Uma assinatura com plano associado sempre deverá ser criada com seu `card_token_id` e com status `Authorized`
+A integração de **assinaturas com plano associado** é feita em duas etapas. Na primeira, é preciso **criar um plano** que será associado à assinatura e na segunda, a **criação da assinatura**. 
 
 ## Criar plano
-
-A integração de **assinaturas com plano associado** é feita em duas etapas. Na primeira, é preciso **criar um plano** que será associado à assinatura e na segunda, a **criação da assinatura**. 
 
 O plano de assinatura permite definir, entre outros atributos, o título, valor e frequência das assinaturas criadas pelo vendedor. Para criar um plano e associá-lo à uma assinatura, veja o endpoint [/preapproval_plan](/developers/pt/reference/subscriptions/_preapproval_plan/post), preencha os atributos necessários e execute a requisição ou, se preferir, utilize o _curl_ abaixo.
 
@@ -55,12 +49,21 @@ curl -X POST \
 ```
 ]]]
 
+> NOTE
+>
+> Importante
+>
+> Uma assinatura com plano associado sempre deverá ser criada com seu `card_token_id` e com status `Authorized`. 
+
+Pronto! Você já criou o plano de assinatura com plano associado. Para finalizar a integração, você precisará **criar assinatura** agora.
 
 ## Criar assinatura
 
-Tendo um plano criado, você poderá criar a assinatura de fato. Assinatura é uma autorização do pagador para cobranças recorrentes com um meio de pagamento definido (cartão de crédito, por exemplo). Ao realizar a assinatura de um produto/serviço, o cliente concorda com a cobrança periódica de determinado valor pelo período de tempo definido.
+Assinatura é uma autorização do pagador para cobranças recorrentes com um meio de pagamento definido (cartão de crédito, por exemplo). Ao realizar a assinatura de um produto/serviço, o cliente concorda com a cobrança periódica de determinado valor pelo período de tempo definido.
 
-Para criar uma assinatura, tenha o `preapproval_plan_id` em mãos, acesse o endpoint [/preapproval](/developers/pt/reference/subscriptions/_preapproval/post), e preencha os atributos conforme indicado na tabela de parâmetros ou, se preferir, utilize o _curl_ disponível abaixo.
+Para criar uma assinatura, primeiro você precisará ter o valor `preapproval_plan_id`.
+
+Em seguida, você pode prosseguir com a integração de duas maneiras: você pode acessar o endpoint [/preapproval](/developers/pt/reference/subscriptions/_preapproval/post) e preencher os atributos conforme indicado na tabela de parâmetros, ou você também pode usar o _curl_ que fornecemos abaixo.
 
 [[[
 ```curl

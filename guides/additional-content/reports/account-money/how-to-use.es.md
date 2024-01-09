@@ -1,10 +1,10 @@
-# ¿Cómo usar el reporte?
+# Usos del reporte
 
 Una vez listo y descargado el reporte, tendrás un archivo para consultar las planillas de cálculo o importar en el programa de conciliación que uses.
 
 Para consultar el reporte te recomendamos descargarlo en formato .csv para abrirlo en el programa que lo visualices. Configura tu programa para que soporte el formato UTF-8, así evitas problemas de lectura.
 
-## ¿Qué contiene el reporte?
+## Contenido del reporte
 
 El reporte está compuesto por distintos tipo de transacciones que puedes ver en la columna `TRANSACTION_TYPE`. Cada una de ellas tendrá el monto bruto de la operación.
 
@@ -29,7 +29,7 @@ Y en la columna `SETTLEMENT_NET_AMOUNT` encontrarás el impacto real sobre tu di
 >
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/glossary) de Todas las transacciones para revisarlo cuando necesites o quieras consultar algún término técnico.
 
-## Ejemplo de un reporte
+## Ejemplo de reporte
 
 Observa cómo está compuesto el reporte de Todas las transacciones en este ejemplo para identificar las operaciones y leer tus propios reportes:
 

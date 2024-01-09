@@ -29,7 +29,7 @@ A continuación se presentan los pasos para realizar una integración con 3DS.
 >
 > Importante
 >
-> Recomendamos usar el valor `optional` en la implementación del 3DS, ya que equilibra la seguridad y la aprobación de transacciones. `mandatory` debe usarse solo cuando sea necesario para garantizar la aprobación del 100% de las transacciones, sin embargo, puede reducir la tasa de aprobación.
+> Recomendamos usar el valor `optional` en la implementación del 3DS, ya que equilibra la seguridad y la aprobación de transacciones. El uso de `mandatory` debe limitarse a integraciones que requieran que todas las transacciones aprobadas pasen por 3DS.
 
 [[[
 ```curl
@@ -180,9 +180,9 @@ payment = payment_response["response"]
 ```
 ]]]
 
-En caso de que no sea necesario utilizar el flujo de _Challenge_, el campo `status` del pago tendrá valor `approved` y no será necesario mostrarlo, por lo que puedes seguir con el flujo de tu aplicación. 
+En caso de que no sea necesario utilizar el flujo de _Challenge_, el campo del _status_ del pago tendrá valor `approved` y no será necesario mostrarlo, por lo que puedes seguir con el flujo de tu aplicación. 
 
-Para casos en que el _Challenge_ es necesario, el `status` mostrará el valor `pending`, y el `status_detail` será `pending_challenge`.
+Para casos en que el _Challenge_ es necesario, el _status_ mostrará el valor `pending`, y el `status_detail` será `pending_challenge`.
 
 > NOTE
 >
@@ -260,17 +260,17 @@ function doChallenge(payment) {
 ```
 ]]]
 
-Cuando el _Challenge_ es finalizado, el status del pago será actualizado. Será `approved` si la autenticación fue exitosa, `rejected` si no lo fue y, en caso de que la autenticación no fuera  hecha, el pago permanecerá `pending`. Esta actualización no es inmediata, puede tardar unos instantes. 
+Cuando el _Challenge_ es finalizado, el _status_ del pago será actualizado. Será `approved` si la autenticación fue exitosa, `rejected` si no lo fue y, en caso de que la autenticación no fuera  hecha, el pago permanecerá `pending`. Esta actualización no es inmediata, puede tardar unos instantes. 
 
-Mira la sección a continuación para más detalles sobre cómo consultar el status de cada transacción.
+Mira la sección a continuación para más detalles sobre cómo consultar el _status_ de cada transacción.
 
 ## Consultar status de la transacción
 
 Para saber cuál es el resultado de la transacción, hay tres opciones:
 
-* **Notificaciones**: Recibirás la notificación del cambio del status del pago usando Webhooks y deberás redireccionar el buyer para una pantalla que indica que la transacción fue exitosa. Consulta la sección de [Webhooks](/developers/es/docs/checkout-api/additional-content/your-integrations/notifications/webhooks) y aprende cómo configurarlos.
-* **API de Payments**: Deberás hacer un pooling en [Payments](/developers/es/reference/payments/_payments/post) y, si el status cambia, redireccionar el buyer para una pantalla de confirmación.
-* **Tratar el evento del iframe (recomendado)**: debes recordar que el evento solo indica que finalizó el _Challenge_ y no que el pago pasó a un status final, dado que la actualización no es inmediata y puede tardar unos instantes. Deberás hacer una consulta en [Payments](/developers/es/reference/payments/_payments/post) y, si el status cambia, redireccionar al buyer para una pantalla que indica que la transacción fue exitosa. 
+* **Notificaciones**: Recibirás la notificación del cambio del _status_ del pago usando Webhooks y deberás redireccionar el buyer para una pantalla que indica que la transacción fue exitosa. Consulta la sección de [Webhooks](/developers/es/docs/checkout-api/additional-content/your-integrations/notifications/webhooks) y aprende cómo configurarlos.
+* **API de Payments**: Deberás hacer un pooling en [Payments](/developers/es/reference/payments/_payments/post) y, si el _status_ cambia, redireccionar el buyer para una pantalla de confirmación.
+* **Tratar el evento del iframe (recomendado)**: debes recordar que el evento solo indica que finalizó el _Challenge_ y no que el pago pasó a un _status_ final, dado que la actualización no es inmediata y puede tardar unos instantes. Deberás hacer una consulta en [Payments](/developers/es/reference/payments/_payments/post) y, si el _status_ cambia, redireccionar al buyer para una pantalla que indica que la transacción fue exitosa. 
 
 Para **tratar el evento del iframe**, sigue los pasos a continuación.
 
@@ -292,7 +292,7 @@ window.addEventListener("message", (e) => {
 
 ### Buscar status del pago
 
-El siguiente Javascript indica cómo se puede realizar la búsqueda del status de pago actualizado y mostrarlo en la pantalla de confirmación.
+El siguiente Javascript indica cómo se puede realizar la búsqueda del _status_ de pago actualizado y mostrarlo en la pantalla de confirmación.
 
 [[[
 ```javascript
@@ -330,11 +330,11 @@ Después de seguir estos pasos, tu integración está lista para autenticar tran
 
 ## Posibles status del pago 
 
-Una transacción con 3DS puede devolver diferentes status según el tipo de autenticación realizada (con o sin _Challenge_). En un pago sin _Challenge_, el estado de la transacción será directamente "approved" o "rejected".
+Una transacción con 3DS puede devolver diferentes _status_ según el tipo de autenticación realizada (con o sin _Challenge_). En un pago sin _Challenge_, el _status_ de la transacción será directamente `approved` o `rejected`.
 
-En un pago con _Challenge_, la transacción estará en status `pending` y se iniciará el proceso de autenticación con el banco. Solo después de esta etapa se mostrará el status final.
+En un pago con _Challenge_, la transacción estará en _status_ `pending` y se iniciará el proceso de autenticación con el banco. Solo después de esta etapa se mostrará el _status_ final.
 
-A continuación se muestra una tabla con los posibles status y sus descripciones correspondientes.
+A continuación se muestra una tabla con los posibles _status_ y sus descripciones correspondientes.
 
 | Status    | Status_detail               | Descripción                                                      |
 |-----------|-----------------------------|------------------------------------------------------------------|
@@ -343,6 +343,7 @@ A continuación se muestra una tabla con los posibles status y sus descripciones
 | "pending"  | "pending_challenge"         | Transacción pendiente de autenticación o _timeout_ del _Challenge_. |
 | "rejected" | "cc_rejected_3ds_challenge" | Transacción denegada debido a falla en el _Challenge_.            |
 | "rejected"| "cc_rejected_3ds_mandatory" | Transacción rechazada por no cumplir validación de 3DS cuando esta es mandatory. |
+| "cancelled" | "expired" | Transacción con _Challenge_ cancelada después de 24 horas en estado pendiente. |
 
 ## Prueba de integración
 
@@ -557,4 +558,4 @@ En ambos flujos (éxito y falla), el _Challenge_, que es una pantalla similar a 
 ![Challenge](/images/api/sandbox-v1-es.png)
 
 El código de verificación proporcionado es meramente ilustrativo. Para completar el flujo de prueba, simplemente haz clic en el botón **Confirmar**. 
-Una vez que hayas completado esta acción, sigue las instrucciones detalladas en la sección **Verificar status de la Transacción** para determinar cuándo se ha finalizado el _Challenge_ y cómo verificar la actualización del pago.
+Una vez que hayas completado esta acción, sigue las instrucciones detalladas en la sección [Consultar status de la transacción](/developers/es/docs/checkout-api/how-tos/integrate-3ds#bookmark_consultar_status_de_la_transacción) para determinar cuándo se ha finalizado el _Challenge_ y cómo verificar la actualización del pago.

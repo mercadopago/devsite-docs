@@ -619,9 +619,9 @@
             "name": "X-Idempotency-Key",
             "in": "header",
             "description": {
-              "en": "Idempotency key. When used, avoids duplicated refund",
-              "pt": "Idempotency key. Quando usada, evita reembolsos duplicados",
-              "es": "Idempotency key. Al usarse, evita los reembolsos duplicados"
+              "en": "This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical refunds, for example. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings. It is important to note that, starting from 2024/01/01, sending this parameter will become mandatory in all requests.",
+              "pt": "Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois reembolsos idênticos, por exemplo. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas. É importante salientar que, a partir de 01/01/24, o envio deste parâmetro passará a ser obrigatório em todas as requisições.",
+              "es": "Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos reembolsos idénticos, por ejemplo. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el header de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorias. Es importante destacar que, a partir del 01/01/24, el envío de este parámetro se volverá obligatorio en todas las solicitudes."
             },
             "required": false,
             "schema": {
