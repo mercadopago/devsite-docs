@@ -13,10 +13,10 @@ Para **exibir o Mercado Crédito no checkout da sua loja**, siga os passos abaix
 3. Uma vez lá, selecione a opção **Pagamentos**. 
 4. Em "Formas de pagamento adicionais", clique em **Adicionar formas de pagamento**.
 5. Acesse a aba **Pesquisar por fornecedor** e procure o novo app com o nome "Mercado Crédito".
-6. Após localizá-lo, selecione-o, clique em **Ativar** e, por fim, em **Conectar**.
-7. Selecione **Instalar app** e, depois, clique em **Gerenciar**.
+6. Após localizá-lo, selecione-o, clique em **Instalar** e, por fim, em **Conectar**.
+7. Selecione **Instalar app > Mais ações** e, depois, clique em **Gerenciar**.
 8. Insira as suas **credenciais de produção** (`public key` e `access token`) nos campos solicitados e clique em **Salvar**. Lembre-se de ter suas [credenciais](/developers/pt/docs/shopify/additional-content/your-integrations/credentials) à mão.
-9. Para finalizar a instalação, clique em **Ativar Mercado Crédito**.
+9. Para finalizar a instalação, clique em **Ativar**.
 
 > WARNING
 >

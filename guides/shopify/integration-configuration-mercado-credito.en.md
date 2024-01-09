@@ -13,10 +13,10 @@ If you want to **show Mercado Credits in your store's checkout**, follow the ste
 3. Once there, select the **Payments** option. 
 4. In "Additional payment methods", click on the **Add payment methods** option.
 5. Go to the **Search by provider** tab and look for the new app with the name "Mercado Crédito".
-6. Once you have found it, select it and click **Activate** and then **Connect**.
-7. Select **Install App** and then **Manage**.
+6. Once you have found it, select it and click **Install** and then **Connect**.
+7. Select **Install App > More actions** and then **Manage**.
 8. Put your **production credentials** (`public key` and `access token`) in the fields that request it and click **Save**. Remember to keep your [credentials](/developers/en/docs/shopify/additional-content/your-integrations/credentials) handy.
-9. To finish the installation, select **Activate Mercado Crédito**.
+9. To finish the installation, select **Activate**.
 
 > WARNING
 >
