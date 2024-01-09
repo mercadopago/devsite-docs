@@ -166,7 +166,7 @@ Después de obtener el token, es necesario crear el pago con el importe correspo
   $cards = $client->list("customer_id");
   
   $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
+  $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([

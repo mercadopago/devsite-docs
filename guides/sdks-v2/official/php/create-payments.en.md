@@ -21,7 +21,7 @@ You can create and add payment information using the SDK below. For details on r
   ];
 
   $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
+  $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $client->create($createRequest, $request_options);
@@ -42,7 +42,7 @@ You can search for payments made in the last twelve months from the search date 
     "external_reference" => "ID_REF"
   ]);
   $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
+  $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $client->search($searchRequest, $request_options);
@@ -71,7 +71,7 @@ It is possible to change the data of a certain payment by sending the parameters
 ```php
 <?php
   $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
+  $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->capture(123456789, 100, $request_options);
