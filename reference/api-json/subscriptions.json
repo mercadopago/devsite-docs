@@ -1462,182 +1462,6 @@
                             "es": "Bad-Request",
                             "pt": "Bad-Request"
                           }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
-                          }
                         }
                       ]
                     }
@@ -3121,70 +2945,6 @@
                     "errorKey": {
                       "type": "string",
                       "enum": [
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-request",
-                            "es": "Bad-request",
-                            "pt": "Bad-request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-request",
-                            "es": "Bad-request",
-                            "pt": "Bad-request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-request",
-                            "es": "Bad-request",
-                            "pt": "Bad-request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-request",
-                            "es": "Bad-request",
-                            "pt": "Bad-request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-request",
-                            "es": "Bad-request",
-                            "pt": "Bad-request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-request",
-                            "es": "Bad-request",
-                            "pt": "Bad-request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-request",
-                            "es": "Bad-request",
-                            "pt": "Bad-request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-request",
-                            "es": "Bad-request",
-                            "pt": "Bad-request"
-                          }
-                        },
                         {
                           "title": "400",
                           "description": {
@@ -4944,14 +4704,6 @@
                     "errorKey": {
                       "type": "string",
                       "enum": [
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-request",
-                            "es": "Bad-request",
-                            "pt": "Bad-request"
-                          }
-                        },
                         {
                           "title": "400",
                           "description": {
@@ -6999,22 +6751,6 @@
                             "es": "Bad-request",
                             "pt": "Bad-request"
                           }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-request",
-                            "es": "Bad-request",
-                            "pt": "Bad-request"
-                          }
-                        },
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-request",
-                            "es": "Bad-request",
-                            "pt": "Bad-request"
-                          }
                         }
                       ]
                     }
@@ -7912,14 +7648,6 @@
                     "errorKey": {
                       "type": "string",
                       "enum": [
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Bad-request",
-                            "es": "Bad-request",
-                            "pt": "Bad-request"
-                          }
-                        },
                         {
                           "title": "400",
                           "description": {
