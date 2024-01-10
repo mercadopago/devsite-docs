@@ -2,7 +2,7 @@
 # Checkout Transparente (tarjetas de crédito o débito)
 
 ------------
-----[mlm, mla]----
+----[mlm, mla, mlu, mpe, mco, mlc]----
 # Checkout API (tarjetas de crédito o débito)
 
 ------------
