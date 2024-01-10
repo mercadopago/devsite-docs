@@ -81,7 +81,7 @@ List of devices attached
 ```
 
 4. Copia y pega tu aplicación Android en la carpeta **platform-tools**.
-5. Por último, todavía desde la terminal del computador y en la carpeta `platform-tools`, ejecuta el siguiente comando, reemplazando “nombre_de_archivo+extensión” por el nombre de tu aplicación seguidamente de su extensión.
+5. Por último, todavía desde la terminal del computador y en la carpeta *platform-tools*, ejecuta el siguiente comando, reemplazando “nombre_de_archivo+extensión” por el nombre de tu aplicación seguidamente de su extensión.
 
 ```terminal
 

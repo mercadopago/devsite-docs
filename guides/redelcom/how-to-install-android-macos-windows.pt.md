@@ -82,7 +82,7 @@ List of devices attached
 ```
 
 4. Copie e cole seu aplicativo Android na pasta **platform-tools**.
-5. Por fim, ainda no terminal do computador e na pasta `platform-tools`, execute o seguinte comando, substituindo "nome_do_arquivo + extensão" pelo nome do seu aplicativo seguido de sua extensão.
+5. Por fim, ainda no terminal do computador e na pasta *platform-tools*, execute o seguinte comando, substituindo "nome_do_arquivo + extensão" pelo nome do seu aplicativo seguido de sua extensão.
 
 ```terminal
 
