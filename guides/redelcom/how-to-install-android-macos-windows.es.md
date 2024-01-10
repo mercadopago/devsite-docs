@@ -1,10 +1,10 @@
 # Cómo instalar aplicaciones en dispositivos Redelcom con MacOS y Windows
 
-Para poder realizar integraciones con terminales Redelcom, puedes necesitar instalar una aplicación Android, como RDCPass, o alguna propia que te permita conectarte con RDCPass.
+Para poder realizar integraciones con terminales Redelcom, puedes necesitar instalar una aplicación Android, como RDCPass, o alguna propia que te permita conectarte con ella.
 
 Si estás trabajando con MacOS o Windows como sistema operativo, `adb` (Android Debug Bridge) es la herramienta que te permitirá instalar aplicaciones a las terminales para comunicarte con RDCPass de manera adecuada.
 
-A continuación, te presentamos el paso a paso para que puedas instalar `adb` en tus computadores MacOS y/o Windows e instalar tu aplicación Android.
+A continuación, te presentamos el paso a paso para que puedas instalar `adb` en computadores MacOS y/o Windows e instalar tu aplicación Android.
 
 ## Cómo instalar tu app Android en MacOS
 

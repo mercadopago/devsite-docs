@@ -40,3 +40,10 @@ pm.environment.set("X-Authentication", pm.collectionVariables.get("clientId") + 
 ```
 
 Once you've performed the encryption, you will get your *token*, named `X-Authentication`. This *token* should be used in the headers of API requests.
+
+
+> WARNING
+>
+> Important
+>
+> If you need to update the RDCPass application from MacOS or Windows computers, you can learn how to do so by accessing [our documentation](/developers/en/docs/redelcom/how-tos/install-app-android-macos-windows).

@@ -85,7 +85,7 @@ List of devices attached
 
 ```terminal
 
-adb.exe install nombre_de_archivo + extensión
+adb.exe install filename + extension
 
 ```
 
