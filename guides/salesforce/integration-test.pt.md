@@ -14,8 +14,6 @@ Descubra como testar os diversos tipos de pagamento.
 
 Para realizar uma compra teste, siga estas etapas:
 
-
-
 1. Adicione um produto ao carrinho da loja.
 2. Clique no botão **comprar**.
 3. Continue comprando como usuário convidado e preencha as informações de envio. Em seguida, clique em “Avançar > Pagamento”.
@@ -33,7 +31,7 @@ Para realizar um teste, siga estas etapas:
 2. Clique no botão **comprar**.
 2. Continue comprando como usuário convidado e preencha as informações de envio. Em seguida, clique em "Avançar: Pagamento".
 3. Na página de pagamento, selecione a opção **Cartão de Crédito**.
-4. Opte por pagar com um novo cartão de crédito e use os [cartões de teste](/developers/pt/docs/salesforce-commerce-cloud/additional-content/your-integrations/test/cards para efetuar o pagamento. **É importante não pagar com cartões de uso pessoal**.
+4. Opte por pagar com um novo cartão de crédito e use os [cartões de teste](/developers/pt/docs/salesforce-commerce-cloud/additional-content/your-integrations/test/cards) para efetuar o pagamento. **É importante não pagar com cartões de uso pessoal**.
 5. Adicione as informações do cartão de teste indicado (número do cartão, CVV e data de validade).
 6. Clique no botão **Pagar**.
 
