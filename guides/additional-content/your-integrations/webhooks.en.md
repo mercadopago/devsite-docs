@@ -4,13 +4,15 @@
 
 Webhook notifications can be configured for one or more applications created in your [Developer Dashboard](/developers/panel/app).
 
+Uma vez configurado, o Webhook será enviado sempre que ocorrer um ou mais eventos cadastrados, evitando que haja um trabalho de pesquisa a cada minuto em busca de uma resposta e, por consequência, que ocorra uma sobrecarga do sistema e a perda de dados sempre que houver alguma situação. Após receber uma notificação na sua plataforma, o Mercado Pago aguardará uma resposta para validar se você a recebeu corretamente.
+
 Once configured, the Webhook will be sent whenever one or more registered events occur, avoiding a search job every minute in search of an answer and, consequently, a system overload and data loss whenever there is some situation. After receiving a notification on your platform, Mercado Pago will wait for a response to validate that you received it correctly
 
 In this documentation, we will explain the necessary settings to receive messages (through the Dashboard or when creating payments), in addition to showing the necessary actions that you must take for Mercado Pago to validate that the notifications were properly received.
 
 ## Configuration via Dashboard
 
-Below, we will explain how to: specify the URLs that will be notified, configure the events from which notifications will be received, validate that the notifications you receive are sent by Mercado Pago and simulate the receipt of various types of notifications.
+Below, we will explain how to specify the URLs that will be notified, configure the events from which notifications will be received and simulate the receipt of various types of notifications.
 
 ![webhooks](/images/dashboard/webhooks-es.png)
 
@@ -36,30 +38,6 @@ Below, we will explain how to: specify the URLs that will be notified, configure
 | `delivery` | `delivery.updated`| Shipping data and order update |
 | `delivery_cancellation` | `case_created`| Shipment cancellation request |
 | `topic_claims_integration_wh` | `updated`| Claims made by sales |
-
-5. Finally, click **Save** to generate a secret signature for the application. The signature is a validation method to ensure that received notifications were sent by Mercado Pago.
-
-> WARNING
->
-> Important
-> 
-> Mercado Pago will always send this signature in Webhook notifications. Always verify this authenticity information to prevent fraud. </br></br>
-> </br></br>
-> The generated signature has no expiration date, and while not mandatory, we recommend periodically renewing the **secret signature**. To do this, simply click the reset button next to the signature.
-
-### Validate notification origin
-
-1. After configuring the URLs and Events, **reveal the generated secret signature**.
-2. Then, use the secret signature to validate the `x-signature-id` header. The value received in the header must match the key obtained in the previous step. In the example shown below, the value `59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1` should match the generated secret key.
-
-```header
-...
-accept-encoding	*
-content-type	application/json
-accept	*/*
-x-signature-id	59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1
-...
-```
 
 ### Simulate notification receipt
 
@@ -392,8 +370,7 @@ Also, specifically in fraud alerts, you must not deliver the order and you will 
 
 In the notification, you will receive a `JSON` with the following information containing the payment id to cancel.
 
-[[[
-```Json
+```json
 
 
  "description": ".....",
@@ -402,8 +379,6 @@ In the notification, you will receive a `JSON` with the following information co
 
 
 ```
-]]]
-
 
 > NOTE
 >
