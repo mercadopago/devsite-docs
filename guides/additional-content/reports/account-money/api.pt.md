@@ -15,7 +15,7 @@ Confira os campos que você pode configurar para ajustar suas preferências ante
 > Configurar este atributo de `frequency` não significa que o relatório será gerado automaticamente. A configuração será aplicada somente quando o agendamento automático for ativado. Para mais detalhes, confira a seção [Agende seus relatórios.](#bookmark_programar_reporte_automaticamente)
 
 | Campos configuráveis | Tipo | Exemplo | Descrição |
-| --- | --- |
+| --- | --- | --- | --- |
 | *`coupon_detailed` (opcional)* | Boolean | true | <br/>Inclui uma coluna para mostrar os detalhes dos cupons de desconto.<br/><br/> |
 | `columns` | JSON Array | ```[ { "key": "DATE" }, { "key": "SOURCE_ID" } ]``` | <br/>Campo com os detalhes das colunas a serem incluídas no seu relatório. Encontre todos os valores possíveis na seção [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/glossary).<br/><br/>|
 | `file_name_prefix` | String | "conciliation-settlement-report" | <br/>Prefixo que compõe o nome do relatório assim que estiver gerado e pronto para baixar.<br/><br/> |

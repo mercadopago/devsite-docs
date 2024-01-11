@@ -15,7 +15,7 @@ Know the fields you can configure to adjust your preferences before you start:
 > Setting up `frequency` feature does not mean that the report will be generated automatically. The settings will apply only when the automatic scheduling is activated. For more details, please go to the [Schedule your automatic reports](#bookmark_schedule_report_automatically) section.
 
 | Configurable fields | Type | Example | Description |
-| --- | --- |
+| --- | --- | --- | --- |
 | *`coupon_detailed` (optional)* | Boolean | true | <br/>Includes a column to show the detail of the discount coupons.<br/><br/> |
 | `columns` | JSON Array | ```[ { "key": "DATE" }, { "key": "SOURCE_ID" } ]``` | <br/>Field with the details of columns to be included in your report. Find all possible values in the [Glossary section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/glossary).<br/><br/>|
 | `file_name_prefix` | String | "conciliation-settlement-report" | <br/>Prefix that composes the report name once generated and ready for download.<br/><br/> |
