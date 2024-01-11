@@ -2730,7 +2730,6 @@
                       "content": {
                           "application/json": {
                               "schema": {
-                                  "type": "object",
                                   "properties": {
                                       "id": {
                                           "example": 123456
