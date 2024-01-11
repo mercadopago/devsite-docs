@@ -1,9 +1,10 @@
-# Geração via API
+# Gerar relatório via API
 
-Você pode gerar seu relatório via API, tanto de forma manual quanto programada.
-Ganhe tempo e **automatizá la frecuencia de generación del reporte** de Dinheiro em conta sempre que quiser.
+Você pode gerar seu relatório via API manualmente quantas vezes quiser ou programe-o de acordo com a frequência desejada por meio de nossa API.
 
-## Atributos configuráveis
+## Configurar seus relatórios
+
+### Atributos configuráveis
 
 Confira os campos que você pode configurar para ajustar suas preferências antes de começar:
 
@@ -11,7 +12,7 @@ Confira os campos que você pode configurar para ajustar suas preferências ante
 >
 > Importante
 >
-> Configurar este atributo de `frequency` não significa que o relatório será gerado automaticamente. A configuração será aplicada somente quando o agendamento automático for ativado. Para mais detalhes, confira a seção [Agende seus relatórios](#bookmark_agende_seus_relatórios_automáticos).
+> Configurar este atributo de `frequency` não significa que o relatório será gerado automaticamente. A configuração será aplicada somente quando o agendamento automático for ativado. Para mais detalhes, confira a seção [Agende seus relatórios.](#bookmark_programar_reporte_automaticamente)
 
 | Campos configuráveis | Descrição |
 | --- | --- |
@@ -31,114 +32,11 @@ Confira os campos que você pode configurar para ajustar suas preferências ante
 | *`show_chargeback_cancel` (opcional)* | <br/> Inclui os detalhes dos cancelamentos das contestações. <br/> <br/>|
 | *`show_fee_prevision` (opcional)* | <br/> Inclui os detalhes das comissões. <br/> <br/>|
 
-## Configurar seus relatórios
+Você pode configurar seus relatórios conforme necessário. Abaixo, destacamos as chamadas de API disponíveis para que você possa gerenciar a configuração do seu relatório e, posteriormente, com base nessas configurações, gerar os relatórios.
 
-Execute o curl que você precisa para consultar, gerar e atualizar seus relatórios.
+### Criar uma nova configuração
 
-### Consultar configurações
-
-Consulte a configuração dos seus relatórios via API da seguinte maneira:
-
-[[[
-```curl
-curl -X GET \
-    -H 'accept: application/json' \
-    -H 'content-type: application/json' \
-    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-    'https://api.mercadopago.com/v1/account/settlement_report/config' \
-```
-```php
-<?php
-include('vendor/rmccue/requests/library/Requests.php');
-Requests::register_autoloader();
-$headers = array(
-    'accept' => 'application/json',
-    'content-type' => 'application/json',
-    'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
-);
-$response = Requests::get('https://api.mercadopago.com/v1/account/settlement_report/config', $headers);
-```
-```java
- URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/config");
-
-HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-
-connection.setRequestMethod("GET");
-connection.setRequestProperty("Accept", "application/json");
-connection.setRequestProperty("Content-Type", "application/json");
-connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
-
-System.out.println(connection.getResponseCode());
-System.out.println(connection.getResponseMessage());
-System.out.println(connection.getInputStream());
-```
-```python
-import requests
-headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json',
-    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
-}
-
-response = requests.get('https://api.mercadopago.com/v1/account/settlement_report/config', headers=headers)
-```
-```node
-var request = require('request');
-
-var headers = {
-    'accept': 'application/json',
-    'content-type': 'application/json',
-    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
-};
-
-var options = {
-    url: 'https://api.mercadopago.com/v1/account/settlement_report/config',
-    headers: headers
-};
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    }
-}
-request(options, callback);
-```
-]]]
-
-Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
-
-```json
-{
-    "file_name_prefix": "settlement-report-USER_ID",
-    "show_fee_prevision": false,
-    "show_chargeback_cancel": true,
-    "scheduled": false,
-    "coupon_detailed": true,
-    "include_withdraw": true,
-    "shipping_detail": true,
-    "refund_detailed": true,
-    "display_timezone": "GMT-04",
-    "frequency": {
-        "hour": 0,
-        "type": "monthly",
-        "value": 1
-    },
-     "columns": [
-        {
-            "key": "TRANSACTION_DATE"
-        },
-        {
-            "key": "SOURCE_ID"
-        },
-        {
-            "key": "EXTERNAL_REFERENCE"
-        }
-    ]
-}
-```
-
-### Criar configuração
-
-Crie suas preferências de geração via API para exportar colunas, nomear seus arquivos e configurar outros ajustes:
+Personalize seus relatórios atribuindo diferentes propriedades de criação executando o seguinte _curl_: 
 
 [[[
 ```curl
@@ -364,7 +262,9 @@ request(options, callback);
 ```
 ]]]
 
-Como resposta, você receberá um `HTTP STATUS 201 (Created)`
+Na ausência de erros, será emitido um código de status `HTTP 201 (Created)`. A API responderá com uma estrutura JSON, cujas propriedades representarão a configuração que você criou.
+
+#### Resposta
 
 ```json
 {
@@ -400,15 +300,118 @@ Como resposta, você receberá um `HTTP STATUS 201 (Created)`
 }
 ```
 
-### Atualizar configuração
+### Consultar configurações
+
+Consulte a configuração atual dos seus relatórios executando o seguinte _curl_:
+
+[[[
+```curl
+curl -X GET \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/account/settlement_report/config' \
+```
+```php
+<?php
+include('vendor/rmccue/requests/library/Requests.php');
+Requests::register_autoloader();
+$headers = array(
+    'accept' => 'application/json',
+    'content-type' => 'application/json',
+    'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
+);
+$response = Requests::get('https://api.mercadopago.com/v1/account/settlement_report/config', $headers);
+```
+```java
+ URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/config");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("GET");
+connection.setRequestProperty("Accept", "application/json");
+connection.setRequestProperty("Content-Type", "application/json");
+connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
+```python
+import requests
+headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
+}
+
+response = requests.get('https://api.mercadopago.com/v1/account/settlement_report/config', headers=headers)
+```
+```node
+var request = require('request');
+
+var headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
+};
+
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/settlement_report/config',
+    headers: headers
+};
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+request(options, callback);
+```
+]]]
+
+Na ausência de erros, será emitido um código de status `HTTP 200 (Ok)`. A API responderá com uma estrutura JSON cujas propriedades representarão as características dos seus relatórios.
+
+#### Resposta
+
+```json
+{
+    "file_name_prefix": "settlement-report-USER_ID",
+    "show_fee_prevision": false,
+    "show_chargeback_cancel": true,
+    "scheduled": false,
+    "coupon_detailed": true,
+    "include_withdraw": true,
+    "shipping_detail": true,
+    "refund_detailed": true,
+    "display_timezone": "GMT-04",
+    "frequency": {
+        "hour": 0,
+        "type": "monthly",
+        "value": 1
+    },
+     "columns": [
+        {
+            "key": "TRANSACTION_DATE"
+        },
+        {
+            "key": "SOURCE_ID"
+        },
+        {
+            "key": "EXTERNAL_REFERENCE"
+        }
+    ]
+}
+```
+
+### Atualizar configurações
+
+Atualize as configurações predefinidas dos seus relatórios quando necessário executando o _curl_ abaixo.
 
 > NOTE
 >
 > Nota
 >
->Se, ao atualizar a configuração, você quiser alterar o atributo "Frequency", e já tiver ativado a geração automática dos seus relatórios, siga estes passos: <br/><br/> 1. Cancele a geração agendada dos seus relatórios, seguindo os passos na seção [Desativação](#bookmark_2._desativação). <br/> 2. Atualize a configuração alterando o atributo `frequency` pelos snippets disponíveis nessa seção.  <br/> 3. Agende novamente a geração automática do relatório, seguindo os passos da seção [Ativação](#bookmark_1._ativação).
-
-Quando precisar atualizar sua configuração, você pode ajustar os seguintes atributos:
+> Se, ao atualizar a configuração, você quiser alterar o atributo `frequency`, e já tiver ativado a criação automática dos seus relatórios, siga os seguintes passos: <br/><br/> 1. Cancele a criação agendada dos seus relatórios seguindo os passos descritos na seção **Desativar criação automática** em [Agendar relatório automaticamente.](#bookmark_agendar_relatório_automaticamente) <br/> 2. Atualize a configuração. <br/> 3. Habilite novamente a criação automática dos seus relatórios seguindo os passos da seção **Ativar criação automática** em [Agendar relatório automaticamente.](#bookmark_agendar_relatório_automaticamente)
 
 
 [[[
@@ -635,8 +638,9 @@ request(options, callback);
 ```
 ]]]
 
+Na ausência de erros, será emitido um código de status `HTTP 200 (Ok)`. A API responderá com uma estrutura JSON cujas propriedades representarão a configuração que você atualizou.
 
-Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
+#### Resposta
 
 ```json
 {
@@ -678,13 +682,13 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
 >
 > Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
-## Gerar de forma manual
+## Criar relatório manualmente
 
-Gere seus relatórios de forma manual configurando três cenários: geração, pesquisa e download.
+Você tem à sua disposição vários recursos que permitirão interagir com seus relatórios manualmente.
 
-### 1. Geração
+### Criar relatório
 
-Faça o POST à API especificando as datas de início e fim, assim:
+Faça uma requisição POST à API para gerar manualmente um novo relatório dentro de um intervalo de datas específico:
 
 [[[
 ```curl
@@ -776,11 +780,16 @@ request(options, callback);
 ```
 ]]]
 
-Como resposta, você receberá um `HTTP STATUS 202 (Accepted)`, e o relatório será gerado de forma assincrônica.
+Na ausência de erros, será emitido um código de status `HTTP 202 (Accepted)`. Após isso, o seu relatório será gerado de forma assíncrona. Você receberá como resposta uma estrutura JSON com informações relevantes ao seu pedido de criação.
 
-### 2. Busca
+----[mlm, mla, mco, mpe, mlu, mlc]----
+Uma resposta `HTTP STATUS 203 (Non-Authoritative Information)` indica que a solicitação ocorreu conforme o esperado, apesar disso, não foi possível criar seu relatório e será necessário solicitá-lo novamente com as datas indicadas no sistema.
 
-Para ver se a geração de relatórios está pronta, consulte a API desta forma: 
+------------
+
+### Consultar relatório
+
+Consulte a API conforme abaixo para explorar a lista de relatórios que você gerou:
 
 [[[
 ```curl
@@ -844,7 +853,9 @@ request(options, callback);
 ```
 ]]]
 
-Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
+Na ausência de erros, será emitido um código de status `HTTP 200 (Ok)`. A API responderá com um JSON Array no qual você encontrará a lista de todos os relatórios que gerou.
+
+#### Resposta
 
 ```json
 [
@@ -863,9 +874,9 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
 ]
 ```
 
-### 3. Download
+### Baixar relatório
 
-Usando o atributo `file_name`, você pode baixar o relatório na seguinte URL:
+Usando o atributo `file_name`, você pode baixar qualquer um de seus relatórios na seguinte URL:
 
 [[[
 ```curl
@@ -931,8 +942,9 @@ request(options, callback);
 ```
 ]]]
 
+Na ausência de erros, será emitido um código de status `HTTP 200 (Ok)`. Na resposta da API, você terá à disposição o arquivo do relatório que solicitou baixar.
 
-Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
+#### Resposta
 
 ```csv
 EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRANSACTION_TYPE;TRANSACTION_AMOUNT;TRANSACTION_CURRENCY;TRANSACTION_DATE;FEE_AMOUNT;SETTLEMENT_NET_AMOUNT;SETTLEMENT_CURRENCY;SETTLEMENT_DATE;REAL_AMOUNT;COUPON_AMOUNT;METADATA;MKP_FEE_AMOUNT;FINANCING_FEE_AMOUNT;SHIPPING_FEE_AMOUNT;TAXES_AMOUNT;INSTALLMENTS;ORDER_ID;SHIPPING_ID;SHIPMENT_MODE;PACK_ID
@@ -948,13 +960,13 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 2112729919;5067463621;123456789;credit_card;master;MLB;SETTLEMENT;79.00;BRL;2019-08-11T20:41:46.000-04:00;-8.85;70.15;BRL;2019-08-11T20:41:55.000-04:00;70.15;0.00;[{}];-8.85;0.00;0.00;0.00;1;2112729919;;;
 ```
 
-## Agende seus relatórios automáticos
+## Agendar relatório automaticamente
 
-Gere seus relatórios de forma programada configurando duas instâncias: ativação e desativação.
+Crie seus relatórios de forma programada configurando duas instâncias: ativação e desativação.
 
-### 1. Ativação
+### Ativar criação automática
 
-Programe a geração automática do relatório usando a frequência do recurso de configuração. Atualize o atributo *`scheduled`* na configuração *`true`*:
+Programe a criação automática do relatório utilizando a frequência atribuída durante a configuração dos seus relatórios. Ao consumir este serviço, a propriedade `scheduled` da sua configuração será atualizada automaticamente para `true`:
 
 [[[
 ```curl
@@ -1025,7 +1037,9 @@ request(options, callback);
 ```
 ]]]
 
-Como resposta, você receberá um  `HTTP STATUS 200 (Ok)`
+Na ausência de erros, será emitido um código de status `HTTP 200 (OK)`. A API responderá com uma estrutura JSON na qual você encontrará informações associadas ao relatório que você agendou.
+
+#### Resposta
 
 ```json
 {
@@ -1042,10 +1056,9 @@ Como resposta, você receberá um  `HTTP STATUS 200 (Ok)`
 }
 ```
 
-### 2. Desativação
+### Desativar criação automática
 
-Execute o curl que precisar para iniciar e cancelar a geração programada dos seus relatórios.
-
+Pode desativar a geração automática dos seus relatórios a qualquer momento, quando necessário. Ao consumir este serviço, a propriedade `scheduled` da sua configuração será atualizada automaticamente para `false`.
 
 [[[
 ```curl
@@ -1116,7 +1129,9 @@ request(options, callback);
 ```
 ]]]
 
-Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
+Na ausência de erros, será emitido um código de status `HTTP 200 (OK)`. A API responderá com uma estrutura JSON na qual você encontrará informações associadas ao relatório que desativou.
+
+#### Resposta
 
 ```json
 {
@@ -1132,9 +1147,3 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
     "user_id": USER_ID
 }
 ```
-
-> NOTE
->
-> Esta documentação corresponde à nova versão da API
->
-> Para consultar a versão anterior, por favor, acesse a [seção Geração por API antiga.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/account-money/v1/api)

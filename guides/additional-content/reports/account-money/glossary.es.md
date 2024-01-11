@@ -1,8 +1,6 @@
 # Glosario
 
-
-Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa este glosario para no
-perderte!
+Consulta la descripción de cada campo presente en el reporte en la tabla siguiente.
 
 | Nombre de la columna del reporte                     | Qué significa                    |
 |------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -54,9 +52,9 @@ perderte!
 | Plataforma de cobro (SUB_UNIT)                       | Permite identificar el medio que se utilizó para cobrar una venta con Mercado Pago.                      |
 | Código de producto SKU (PRODUCT_SKU)                 | Código con el que como vendedor podrás identificar tus productos.                |  
 | Detalle de la venta (SALE_DETAIL)                    | Esta columna ofrece información detallada sobre los artículos vendidos en cada entrega, facilitando la conciliación y el control de tus ventas.          |
+
 > INFO
 >
 > (*) Esta información solo se podrá usar para conciliar, será tratada conforme a las leyes de protección de datos 
 > personales aplicables y estará disponible cuando se reciban pagos con QR, transferencias o cuando reciba una donación 
 > como ONG.
-------------

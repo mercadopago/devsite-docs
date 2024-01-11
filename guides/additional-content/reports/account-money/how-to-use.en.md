@@ -1,10 +1,10 @@
-# How to use the report?
+# Report uses
 
 Once the report is ready and downloaded, you will have a file to review the spreadsheets or import into the reconciliation program you use.
 
 To review the report we recommend downloading it in .csv format to open it in the program that you view it. Configure your program to support the UTF-8 format, so you avoid reading problems.
 
-## What does the report contain?
+## Report content
 
 The report is made up of different types of transactions that you can see in the `TRANSACTION_TYPE` column. Each of them will have the gross amount of the operation.
 
@@ -27,11 +27,11 @@ And in the `SETTLEMENT_NET_AMOUNT` column you will find the real impact on your 
 >
 > Note
 >
-> Have the [Glossary of the Account Money report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.
+> Have the [Glossary of the Account balance report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.
 
 ## Report example
 
-Note how the Account Money report is composed in this example to identify the operations and read your own reports:
+Note how the Account balance report is composed in this example to identify the operations and read your own reports:
 
 ![Reporte de dinero en cuenta Ejemplos Mercado Pago](/images/manage-account/reports/example-settlement-en.jpg)
 

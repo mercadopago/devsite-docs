@@ -25,7 +25,7 @@ bullet_section_with_media:
 bullet_section_with_media: 
  - title: Subscriptions without associated plan
  - type: reversed
- - message: Subscriptions without an associated plan are used in situations where different subscriptions have different characteristics, since they are specific to each payer. For example, a subscription that, depending on the options selected by the payer, has its final price modified.
+ - message: Subscriptions without an associated plan are used in situations where different subscriptions have different features, since they are specific to each payer. For example, a subscription that, depending on the options selected by the payer, has its final price modified.
  - image: /subscriptions/mini-landing-3-pt.png
 ---
 
@@ -68,7 +68,7 @@ available_payments: credit, debit, mercadopago
 ---
 available_payments: credit, debit, mercadopago, efectivo, atm, spei
 
-----
+---
 ------------
 
 ----[mlu]---- 
@@ -76,7 +76,7 @@ available_payments: credit, debit, mercadopago, efectivo, atm, spei
 ---
 available_payments: credit, debit, mercadopago, efectivo
 
-----
+---
 ------------
 
 ----[mco]---- 
@@ -84,7 +84,7 @@ available_payments: credit, debit, mercadopago, efectivo
 ---
 available_payments: mercadopago, pse, credit, debit, efectivo
 
-----
+---
 ------------
 
 ----[mlc]---- 
@@ -92,7 +92,7 @@ available_payments: mercadopago, pse, credit, debit, efectivo
 ---
 available_payments: mercadopago, credit, debit
 
-----
+---
 ------------
 
 ----[mpe]---- 
@@ -100,6 +100,6 @@ available_payments: mercadopago, credit, debit
 ---
 available_payments: mercadopago, atm, credit, debit
 
-----
+---
 ------------
 > For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)

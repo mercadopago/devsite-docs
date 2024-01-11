@@ -1,4 +1,4 @@
-# Introduction
+# IPN
 
 The **IPN** (Instant Payment Notification) is a mechanism that allows your application to receive notifications from Mercado Pago informing the status of a certain payment, chargeback and `merchant_order`, through a call HTTP POST to inform about your transactions.
 

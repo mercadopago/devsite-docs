@@ -44,14 +44,14 @@ const renderBrandBrick = async (bricksBuilder) => {
         borderWidth: "1px", // optional "1px" | "2px"
         borderRadius: "0px", // optional  string format: "Npx"
         verticalPadding: "8px", // optional  string format: "Npx". max "40px"
- horizontalPadding: "16px", // optional  string format: "Npx". max "40px"
+        horizontalPadding: "16px", // optional  string format: "Npx". max "40px"
       },
       text: {
          align: "left", // optional "left" | "center" | "right",
         useCustomFont: false, // optional boolean. OBS: If is true the Brick inheriths the font from the parent
         textSize: "medium", // optional "extra_small" | "small" | "medium" | "large".
         fontWeight: "semibold", // optional "regular" | "semibold".
-textColor: "primary", // optional "primary" | "secondary" |"inverted".
+        textColor: "primary", // optional "primary" | "secondary" |"inverted".
       },
     },
   };

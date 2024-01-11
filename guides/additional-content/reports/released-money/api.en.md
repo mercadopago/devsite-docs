@@ -1,8 +1,8 @@
 # Generate report via API
 
-Generate the Releases Report manually as many times as you want or schedule it according to the desired frequency through our API.
+Generate the Releases report manually as many times as you want or schedule it according to the desired frequency through our API.
 
-## Configure the Releases Report
+## Configure the Releases report
 
 ### Configurable attributes
 
@@ -35,7 +35,7 @@ You can configure your reports as needed. Below, we highlight the available API 
 
 > Have the [Glossary of the Releases Report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/released-money/glossary) on hand for reference whenever needed or to check any technical terms.
 
-## Create a new configuration
+### Create a new configuration
 
 Customize your reports by assigning different creation properties by running the following _curl_:
 
