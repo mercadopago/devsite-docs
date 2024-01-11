@@ -2701,6 +2701,13 @@
                 "userCases": [
                     {
                         "name": {
+                            "en": "Create payment with master",
+                            "pt": "Criar pagamento master",
+                            "es": "Crear pago con master"
+                        }
+                    },
+                    {
+                        "name": {
                             "en": "Create payment with Rapipago",
                             "pt": "Criar pagamento Rapipago",
                             "es": "Crear pago con Rapipago"
@@ -2723,7 +2730,6 @@
                                 "content": {
                                     "application/json": {
                                         "schema": {
-                                            "type": "object",
                                             "properties": {
                                                 "id": {
                                                     "example": 123456
