@@ -35,7 +35,7 @@ Os relatórios que você gerar a partir de ----[mpe]----janeiro de 2022---------
 ## Baixar relatório
 
 Siga este caminho para saber como gerar e baixar o relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações------------:
-**Relatórios e faturamento** -> **Ielatórios de vendas e extratos de conta** -> ----[mla]---- **Liquidações** ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- **Liberações** ------------.
+[Relatórios e faturamento](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports) > **Relatórios de vendas e extratos de conta -> [----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/release)** > **Criar relatório**.
 
 ### Criar relatório por API
 
