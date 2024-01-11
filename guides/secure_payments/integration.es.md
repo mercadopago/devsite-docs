@@ -18,55 +18,76 @@ Para utilizar Secure Payments, deberás hacerlo a través de pedidos a las sigui
 A continuación, te compartimos un pedido de ejemplo. Ten en cuenta que deberás cambiar el valor del campo `token` por tu Access Token.
 
 ```curl
-curl - X POST\ -
-  H 'X-Caller-Scopes: payments'\ -
-  H 'accept: application/json'\ -
-  H 'Authorization: Bearer YOUR_ACCESS_TOKEN'\ -
-  d '{
-"binary_mode": true,
-"capture": true,
-"card":
-{
-  "card_number": "4688163623817035",
-  "security_code": "438",
-  "expiration_month": "08",
-  "expiration_year": "2024",
-  "cardholder":
-  {
-    "identification":
-    {
-      "number": "123456",
-      "type": "DNI"
+curl -X POST \
+  -H 'X-Caller-Scopes: payments' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+  -d '{
+    "binary_mode": true,
+    "capture": true,
+    "card": {
+      "card_number": "4688163623817035",
+      "security_code": "438",
+      "expiration_month": "08",
+      "expiration_year": "2024",
+      "cardholder": {
+        "identification": {
+          "number": "123456",
+          "type": "DNI"
+        },
+        "name": "APRO"
+      },
+      "device": {
+        "fingerprint": {}
+      },
+      "require_esc": false
     },
-    "name": "APRO"
-  },
-  "device":
-  {
-    "fingerprint":
-    {}
-  },
-  "require_esc": false
-},
-"description": "Lorem ipsum.",
-"installments": 1,
-"issuer_id": "303",
-"payer":
-{
-  "first_name": "APRO",
-  "last_name": "APRO",
-  "address":
-  {},
-  "identification":
-  {
-    "number": "123456",
-    "type": "DNI"
-  },
-  "email": "test@testuser.com"
-},
-"payment_method_id": "visa",
-"statement_descriptor": "Lorem ipsum.",
-"transaction_amount": 9000
-}
+    "description": "Lorem ipsum.",
+    "installments": 1,
+    "issuer_id": "303",
+    "payer": {
+      "first_name": "APRO",
+      "last_name": "APRO",
+      "address": {},
+      "identification": {
+        "number": "123456",
+        "type": "DNI"
+      },
+      "email": "test@testuser.com"
+    },
+    "payment_method_id": "visa",
+    "statement_descriptor": "Lorem ipsum.",
+    "transaction_amount": 9000,
+    "additional_info": {
+      "items": [
+        {
+          "id": "ItemID1234",
+          "title": "Nombre del servicio",
+          "description": "Descripción del servicio",
+          "category_id": "travels",
+          "quantity": 1,
+          "unit_price": 1234.56
+        }
+      ],
+      "payer": {
+        "first_name": "Carlos",
+        "last_name": "Perez",
+        "is_prime_user": "1",
+        "is_first_purchase_online": "1",
+        "last_purchase": "2022-11-25T19:30:00.000-03:00",
+        "phone": {
+          "area_code": "57",
+          "number": "13123772"
+        },
+        "address": {
+          "zip_code": "11001",
+          "street_name": "Calle Falsa",
+          "street_number": "52"
+        },
+        "registration_date": "2020-08-06T09:25:04.000-03:00"
+      }
+    }
+  }'
 ```
 
 ## Integrar pagos presenciales
