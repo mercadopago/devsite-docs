@@ -1,6 +1,6 @@
 # Generate report
 
-You can generate your Account money report through your Mercado Pago account or via API integration. Refer to the table below for more information.
+You can generate your Account balance report through your Mercado Pago account or via API integration. Refer to the table below for more information.
 
 > NOTE
 >

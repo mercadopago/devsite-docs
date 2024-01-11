@@ -14,23 +14,23 @@ Know the fields you can configure to adjust your preferences before you start:
 >
 > Setting up `frequency` feature does not mean that the report will be generated automatically. The settings will apply only when the automatic scheduling is activated. For more details, please go to the [Schedule your automatic reports](#bookmark_schedule_report_automatically) section.
 
-| Configurable fields | Description |
+| Configurable fields | Type | Example | Description |
 | --- | --- |
-| *`coupon_detailed` (optional)* | <br/>Includes a column to show the detail of the discount coupons.<br/><br/> |
-| `columns` | <br/>Field with the details of columns to be included in your report. Find all possible values in the [Glossary section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/glossary).<br/><br/>|
-| `file_name_prefix` | <br/>Prefix that composes the report name once generated and ready for download.<br/><br/> |
-| `frequency` | <br/>Indicates the daily, weekly or monthly frequency of scheduled reports.<br/><br/> - `frequency` applies type *monthly* to the day of the month or *weekly* to the day of the week.<br/> - `hour` time of day to generate the report. <br/> - `type` indicates the type of frequency *daily*, *weekly* and *monthly*.<br/><br/> |
-| `display_timezone` (optional) | <br/>This field determines the date and time displayed in the reports. If you do not set a time zone in this field, the system will consider GMT-04 as default. If you choose a time zone which adopts daylight saving time, you will need to adjust it manually when the time changes.<br/><br/> |
-| `include_withdraw` | <br/>This parameter allows to ignore (false) or include (true) money withdraw in the report.<br/><br/> |
-| `report_translation` (optional) | <br/>Allows you to change the default language of the column headers in reports that are generated in Excel format (.xlsx). If you have an integration based on this format and configure this feature, we recommend that you verify if it works correctly.<br/><br/> If your integration does not work properly, update it based on the new headers.<br/><br/> |
-| *`refund_detailed` (optional)* | <br/> Displays the reference code (`external_reference`) of the refund instead of the reference code (`external_reference`) of the payment.<br/><br/> |
-| `scheduled` (read_only) | <br/> Informative field that indicates if there are already scheduled reports in the user account. <br/> `True` The automatic generation is activated <br/> `False` The automatic generation is disabled<br/><br/> |
-| *`separator` (optional)* | <br/> Separator that you can use in the .csv file when you don't want the separator to be a comma. <br/><br/> |
-| `notification_email_list` (optional) | <br/>Allows you to add a group of e-mail recipients to be notified when a report is ready and available for download. Make sure to include the email linked to your Mercado Pago account so you can be notified as well. <br/><br/> |
-| *`sftp_info` (optional)* | <br/> Indicates the uploaded data to SFTP when you need it. <br/><br/> |
-| *`shipping_detail` (optional)* | <br/> Includes the detail of the shipments. <br/> <br/>|
-| *`show_chargeback_cancel` (optional)* | <br/> Includes the detail of cancellations of chargebacks. <br/> <br/>|
-| *`show_fee_prevision` (optional)* | <br/> Includes the details of the fees. <br/> <br/>|
+| *`coupon_detailed` (optional)* | Boolean | true | <br/>Includes a column to show the detail of the discount coupons.<br/><br/> |
+| `columns` | JSON Array | ```[ { "key": "DATE" }, { "key": "SOURCE_ID" } ]``` | <br/>Field with the details of columns to be included in your report. Find all possible values in the [Glossary section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/glossary).<br/><br/>|
+| `file_name_prefix` | String | "conciliation-settlement-report" | <br/>Prefix that composes the report name once generated and ready for download.<br/><br/> |
+| `frequency` | JSON | ```{ "hour": 0, "type": "monthly", "value": 1 }``` | <br/>Indicates the daily, weekly or monthly frequency of scheduled reports.<br/><br/> - `frequency` applies type *monthly* to the day of the month or *weekly* to the day of the week.<br/> - `hour` time of day to generate the report. <br/> - `type` indicates the type of frequency *daily*, *weekly* and *monthly*.<br/><br/> |
+| `display_timezone` (optional) | String | "GMT-04" | <br/>This field determines the date and time displayed in the reports. If you do not set a time zone in this field, the system will consider GMT-04 as default. If you choose a time zone which adopts daylight saving time, you will need to adjust it manually when the time changes.<br/><br/> |
+| `include_withdraw` | Boolean | true | <br/>This parameter allows to ignore (false) or include (true) money withdraw in the report.<br/><br/> |
+| `report_translation` (optional) | String | "es" | <br/>Allows you to change the default language of the column headers in reports that are generated in Excel format (.xlsx). If you have an integration based on this format and configure this feature, we recommend that you verify if it works correctly.<br/><br/> If your integration does not work properly, update it based on the new headers.<br/><br/> |
+| *`refund_detailed` (optional)* |  Boolean | true | <br/> Displays the reference code (`external_reference`) of the refund instead of the reference code (`external_reference`) of the payment.<br/><br/> |
+| `scheduled` (read_only) | Boolean | true | <br/> Informative field that indicates if there are already scheduled reports in the user account. <br/> `True` The automatic generation is activated <br/> `False` The automatic generation is disabled<br/><br/> |
+| *`separator` (optional)* | String | ";" | <br/> Separator that you can use in the .csv file when you don't want the separator to be a comma. <br/><br/> |
+| `notification_email_list` (optional) |  Array | ```["example@email.com", "john@example.com"]``` | <br/>Allows you to add a group of e-mail recipients to be notified when a report is ready and available for download. Make sure to include the email linked to your Mercado Pago account so you can be notified as well. <br/><br/> |
+| *`sftp_info` (optional)* | JSON | ```{ "server": "sftp.myserver.com", "password": "mypassword", "remote_dir": "/myfolder", "port": 22, "username": "myusername" }``` | <br/> Indicates the uploaded data to SFTP when you need it. <br/><br/> |
+| *`shipping_detail` (optional)* | Boolean | true | <br/> Includes the detail of the shipments. <br/> <br/>|
+| *`show_chargeback_cancel` (optional)* | Boolean | true | <br/> Includes the detail of cancellations of chargebacks. <br/> <br/>|
+| *`show_fee_prevision` (optional)* | Boolean | true | <br/> Includes the details of the fees. <br/> <br/>|
 
 You can configure your reports as needed. Below, we highlight the available API calls so you can manage the configuration of your report and, based on these settings, generate the reports.
 
@@ -678,7 +678,7 @@ In the absence of errors, an `HTTP 200 (Ok)` status code will be issued. The API
 >
 > Note
 >
-> Have the [Glossary of the Account Money report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.
+> Have the [Glossary of the Account balance report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.
 
 ## Manually create report
 

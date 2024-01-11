@@ -14,23 +14,23 @@ Consulta los campos que puedes configurar para ajustar tus preferencias antes de
 >
 > Configurar el atributo `frequency` no implica que el reporte se genere automáticamente. La configuración aplicará solo cuando se active la programación automática. Para mayor detalle puedes dirigirte a la sección [Programa tus reportes](#bookmark_agendar_relatório_automaticamente).
 
-| Campos configurables | Descripción |
-| --- | --- |
-| *`coupon_detailed` (opcional)* | <br/>Incluye una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |
-| `columns` | <br/>Campo con el detalle de columnas a incluir en tu reporte. Encuentra todos los posibles valores en la sección de  [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/glossary).<br/><br/>|
-| `file_name_prefix` | <br/>Prefijo que compone el nombre del reporte una vez generado y listo para descargar.<br/><br/> |
-| `display_timezone` (opcional) | <br/>Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora.<br/><br/> |
-| `include_withdraw` | <br/>Este parámetro nos permite ignorar (false) o incluir (true) los retiros de dinero en el reporte.<br/><br/> |
-| `report_translation` (opcional) | <br/>Permite cambiar el idioma predeterminado de los encabezados de las columnas. En caso de habilitarlo, se recomienda verificar que funcionen correctamente las integraciones con archivos de Excel (.xlsx) que permiten conciliar de forma automática.<br/><br/> Si la integración no funciona bien, asegúrate de actualizarla tomando como referencia los nuevos encabezados.<br/><br/> |
-| `frequency` | <br/>Indica la frecuencia diaria, semanal o mensual de los reportes programados.<br/><br/> - `frequency` aplica type *monthly* al día del mes o *weekly* el día de la semana<br/> - `hour` hora del día en la que generar el reporte <br/> - `type` indica el tipo de frecuencia *daily* (diaria), *weekly* (semanal) y *monthly* (mensual).<br/><br/> |
-| *`refund_detailed` (opcional)* | <br/>Muestra el código de referencia (`external_reference`) del reembolso en vez del código de referencia (`external_reference`) del pago.<br/><br/> |
-| `scheduled` (read_only) | <br/>Campo informativo que indica si ya existen reportes programados en la cuenta de usuario.<br/> `True` la generación automática se encuentra activada. <br/> `False` la generación automática se encuentra Desactivada.<br/><br/> |
-| *`separator` (opcional)* | <br/>Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma. <br/><br/> |
-| `notification_email_list` (opcional) | <br/>Permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones.<br/><br/> |
-| *`sftp_info` (opcional)* | <br/>Indica los datos de subida a SFTP cuando lo necesites.<br/><br/> |
-| *`shipping_detail` (opcional)* | <br/> Incluye el detalle de los envíos <br/> <br/>|
-| *`show_chargeback_cancel` (opcional)* | <br/> Incluye el detalle de las cancelaciones de los contracargos <br/> <br/>|
-| *`show_fee_prevision` (opcional)* | <br/> Incluye el detalle de las comisiones <br/> <br/>|
+| Campos configurables | Tipo | Ejemplo | Descripción | 
+| --- | --- | --- |
+| *`coupon_detailed` (opcional)* | Boolean | true | <br/>Incluye una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |
+| `columns` | JSON Array | ```[ { "key": "DATE" }, { "key": "SOURCE_ID" } ]``` | <br/>Campo con el detalle de columnas a incluir en tu reporte. Encuentra todos los posibles valores en la sección de  [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/reports/account-money/glossary).<br/><br/>|
+| `file_name_prefix` | String | "conciliation-settlement-report" | <br/>Prefijo que compone el nombre del reporte una vez generado y listo para descargar.<br/><br/> |
+| `display_timezone` (opcional) | String | "GMT-04" | <br/>Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora.<br/><br/> |
+| `include_withdraw` | Boolean | true | <br/>Este parámetro nos permite ignorar (false) o incluir (true) los retiros de dinero en el reporte.<br/><br/> |
+| `report_translation` (opcional) | String | "es" | <br/>Permite cambiar el idioma predeterminado de los encabezados de las columnas. En caso de habilitarlo, se recomienda verificar que funcionen correctamente las integraciones con archivos de Excel (.xlsx) que permiten conciliar de forma automática.<br/><br/> Si la integración no funciona bien, asegúrate de actualizarla tomando como referencia los nuevos encabezados.<br/><br/> |
+| `frequency` | JSON | ```{ "hour": 0, "type": "monthly", "value": 1 }``` | <br/>Indica la frecuencia diaria, semanal o mensual de los reportes programados.<br/><br/> - `frequency` aplica type *monthly* al día del mes o *weekly* el día de la semana<br/> - `hour` hora del día en la que generar el reporte <br/> - `type` indica el tipo de frecuencia *daily* (diaria), *weekly* (semanal) y *monthly* (mensual).<br/><br/> |
+| *`refund_detailed` (opcional)* | Boolean | true | <br/>Muestra el código de referencia (`external_reference`) del reembolso en vez del código de referencia (`external_reference`) del pago.<br/><br/> |
+| `scheduled` (read_only) | Boolean | true | <br/>Campo informativo que indica si ya existen reportes programados en la cuenta de usuario.<br/> `True` la generación automática se encuentra activada. <br/> `False` la generación automática se encuentra Desactivada.<br/><br/> |
+| *`separator` (opcional)* | String | ";" | <br/>Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma. <br/><br/> |
+| `notification_email_list` (opcional) | Array | ```["example@email.com", "john@example.com"]``` | <br/>Permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones.<br/><br/> |
+| *`sftp_info` (opcional)* | JSON | ```{ "server": "sftp.myserver.com", "password": "mypassword", "remote_dir": "/myfolder", "port": 22, "username": "myusername" }``` | <br/>Indica los datos de subida a SFTP cuando lo necesites.<br/><br/> |
+| *`shipping_detail` (opcional)* | Boolean | true | <br/> Incluye el detalle de los envíos <br/> <br/>|
+| *`show_chargeback_cancel` (opcional)* | Boolean | true | <br/> Incluye el detalle de las cancelaciones de los contracargos <br/> <br/>|
+| *`show_fee_prevision` (opcional)* | Boolean | true | <br/> Incluye el detalle de las comisiones <br/> <br/>|
 
 Puedes configurar tus reportes según sea necesario. A continuación, destacamos las llamadas de la API disponibles para que puedas gestionar la configuración de tu reporte y, posteriormente, en función de esas configuraciones, generar los reportes.
 
