@@ -1101,9 +1101,9 @@
           "mp-point"
         ],
         "description": {
-          "en": "This endpoint allows to create a refund intent, with the details of the transaction, and assign it to a device. That is, it allows you to create an attempt to return the amount associated with a previous transaction, which will be processed on the assigned Point device.",
-          "pt": "Este endpoint permite que você crie uma intenção de reembolso, com os detalhes da transação a ser realizada, e atribuí-la a um dispositivo. Ou seja, permite criar uma tentativa de devolução do valor associado a uma transação anterior, que será processada no dispositivo Point atribuído.",
-          "es": "Este endpoint permite crear una intención de reembolso, con los detalles de la transacción a realizarse, y asignarla a un dispositivo. Es decir, permite crear un intento de devolución del monto asociado a una transacción previa, que será procesado en el dispositivo Point asignado."
+          "en": "This endpoint allows to create a refund intent, with the details of the transaction, and assign it to a device. That is, it allows you to create an attempt to return the amount associated with a previous transaction, which will be processed on the assigned Point device",
+          "pt": "Este endpoint permite que você crie uma intenção de reembolso, com os detalhes da transação a ser realizada, e atribuí-la a um dispositivo. Ou seja, permite criar uma tentativa de devolução do valor associado a uma transação anterior, que será processada no dispositivo Point atribuído",
+          "es": "Este endpoint permite crear una intención de reembolso, con los detalles de la transacción a realizarse, y asignarla a un dispositivo. Es decir, permite crear un intento de devolución del monto asociado a una transacción previa, que será procesado en el dispositivo Point asignado"
         },
         "parameters": [
           {
@@ -1428,9 +1428,9 @@
           "mp-point"
         ],
         "description": {
-          "en": "This endpoint allows to cancel a refund intent while its status is [open] and it has not yet been send to the terminal.",
-          "pt": "Este endpoint permite cancelar uma intenção de reembolso quando seu status for [open] e ainda não tiver sido enviada para o terminal.",
-          "es": "Este endpoint permite cancelar una intención de reembolso cuando su estado sea [open] y todavía no haya sido enviada a la terminal."
+          "en": "This endpoint allows to cancel a refund intent while its status is [open] and it has not yet been send to the terminal",
+          "pt": "Este endpoint permite cancelar uma intenção de reembolso quando seu status for [open] e ainda não tiver sido enviada para o terminal",
+          "es": "Este endpoint permite cancelar una intención de reembolso cuando su estado sea [open] y todavía no haya sido enviada a la terminal"
         },
         "parameters": [
           {
@@ -1597,9 +1597,9 @@
           "mp-point"
         ],
         "description": {
-          "en": "This endpoint will provide information of a refund intent, such as its final status, the device to which it was assigned, or the payment identifier to which it belongs.",
-          "pt": "Este endpoint fornecerá as informações da intenção de reembolso, como seu status final, o dispositivo ao qual foi atribuído ou o identificador de pagamento ao qual pertence.",
-          "es": "Este endpoint proporcionará información de una intención de reembolso, como su estado final, el dispositivo al que fue asignada, o el identificador del pago al que pertenece."
+          "en": "This endpoint will provide information of a refund intent, such as its final status, the device to which it was assigned, or the payment identifier to which it belongs",
+          "pt": "Este endpoint fornecerá as informações da intenção de reembolso, como seu status final, o dispositivo ao qual foi atribuído ou o identificador de pagamento ao qual pertence",
+          "es": "Este endpoint proporcionará información de una intención de reembolso, como su estado final, el dispositivo al que fue asignada, o el identificador del pago al que pertenece"
         },
         "parameters": [
           {
