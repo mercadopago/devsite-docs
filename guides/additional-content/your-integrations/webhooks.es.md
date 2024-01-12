@@ -10,7 +10,7 @@ En esta documentación, explicaremos las configuraciones necesarias para recibir
 
 ## Configuración a través del Panel del desarrollador
 
-A continuación explicaremos cómo: indicar las URL que serán notificadas, configurar los eventos de los cuales se recibirá la notificación, validar que las notificaciones que recibes son enviadas por Mercado Pago y simular la recepción de diversos tipos de notificaciones.
+A continuación explicaremos cómo indicar las URL que serán notificadas, configurar los eventos de los cuales se recibirá la notificación y simular la recepción de diversos tipos de notificaciones.
 
 ![webhooks](/images/dashboard/webhooks-es.png)
 
@@ -37,29 +37,7 @@ A continuación explicaremos cómo: indicar las URL que serán notificadas, conf
 | `delivery_cancellation` | `case_created`| Solicitud de cancelación de envío |
 | `topic_claims_integration_wh` | `updated`| Reclamos hechos por las ventas |
 
-5. Por último, haz clic en **Guardar** para generar una clave secreta para la aplicación. La clave es un método de validación para asegurar que las notificaciones recibidas fueron enviadas por Mercado Pago.
-
-> WARNING
-> 
-> Importante
-> 
-> Mercado Pago siempre enviará esta clave en las notificaciones Webhooks. Siempre verifica esta información de autenticidad para evitar fraudes. </br></br>
-> </br></br>
-> La clave generada no tiene fecha de caducidad y, aunque no es obligatorio, recomendamos renovar periódicamente la **clave secreta**. Para hacerlo, simplemente haz clic en el botón de restablecimiento junto a la clave.
-
-### Validar origen de la notificación
-
-1. Después de configurar las URLs y los Eventos, **revela la clave secreta** generada.
-2. A continuación, utiliza la clave secreta para validar el encabezado `x-signature-id`. El valor recibido en el encabezado debe coincidir con la clave obtenida en el paso previo. En el ejemplo que se muestra a continuación el valor `59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1` debería coincidir con la clave secreta generada.
-
-```header
-...
-accept-encoding	*
-content-type	application/json
-accept	*/*
-x-signature-id	59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1
-...
-```
+5. Por último y haz clic en **Guardar**.
 
 ### Simular la recepción de la notificación
 
@@ -392,9 +370,7 @@ En el caso de las alertas de fraude, específicamente, no entregues el pedido, y
 
 En la notificación recibirás un `JSON` con la siguiente información que contiene el payment id para realizar la cancelación.
 
-
-[[[
-```Json
+```json
 
 
  "description": ".....",
@@ -403,13 +379,11 @@ En la notificación recibirás un `JSON` con la siguiente información que conti
 
 
 ```
-]]]
 
 > NOTE
 >
 > Importante
 >
 > También puedes obtener más información sobre la orden utilizando la API [Obtener orden](/developers/es/reference/merchant_orders/_merchant_orders_id/get).
-
 
 Con esta información podrás realizar las actualizaciones necesarias a tu plataforma, como actualizar un pago aprobado.

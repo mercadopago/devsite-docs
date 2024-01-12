@@ -4420,16 +4420,16 @@
             "title": "approved",
             "description": {
               "en": "The redirection takes place only for approved payments.",
-              "es": "The redirection takes place only for approved payments.",
-              "pt": "The redirection takes place only for approved payments."
+              "es": "El redireccionamiento solo ocurre para pagos aprobados.",
+              "pt": "O redirecionamento ocorre apenas para pagamentos aprovados."
             }
           },
           {
             "title": "all",
             "description": {
-              "en": "The redirection takes place only for approved payments, forward compatibility only if we change the default behavior",
-              "es": "The redirection takes place only for approved payments, forward compatibility only if we change the default behavior",
-              "pt": "The redirection takes place only for approved payments, forward compatibility only if we change the default behavior"
+              "en": "The redirection takes place only for approved payments, forward compatibility only if we change the default behavior.",
+              "es": "El redireccionamiento se realiza únicamente para pagos aprobados, compatibilidad con versiones posteriores solo si cambiamos el comportamiento predeterminado.",
+              "pt": "O redirecionamento ocorre apenas para pagamentos aprovados, compatibilidade futura somente se alterarmos o comportamento padrão."
             }
           }
         ]
