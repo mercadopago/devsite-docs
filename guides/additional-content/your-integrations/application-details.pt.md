@@ -59,7 +59,7 @@ Você pode clicar no botão **Editar dados** para visualizar e editar as **confi
 * **Descrição da aplicação** (máximo de 150 caracteres).
 * **Setor**: escolha a categoria que melhor descreve seu negócio.
 * **URL do site em produção** (opcional).
-* **Solução de pagamento a ser integrada**: edite a solução de pagamento a ser integrada entre **Pagamentos on-line** e **Pagamentos presenciais**.
+* **Solução de pagamento a ser integrada**: edite a solução de pagamento a ser integrada entre **Pagamentos online** e **Pagamentos presenciais**.
   - **Pagamentos online**: se você pretende utilizar uma plataforma de comércio eletrônico, marque **Sim**. Em seguida, selecione a **plataforma** com a qual você irá integrar. Por fim, escolha o **produto** que está integrando. Caso você não esteja utilizando uma plataforma de comércio eletrônico, marque **Não** e selecione o **produto** que está integrando. Opcionalmente, você poderá selecionar o(s) modelo(s) de integração.
   - **Pagamentos presenciais**: selecione o **produto** que você está integrando. Se você selecionar a opção Código QR, opcionalmente você também poderá escolher o(s) modelo(s) de integração.
 

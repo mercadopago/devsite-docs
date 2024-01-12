@@ -59,7 +59,7 @@ You can click on the **Edit data** button to view and edit the basic and advance
 * **Application description** (maximum of 150 characters).
 * **Industry**: Choose the category that best describes your business.
 * **Production website URL** (optional).
-* **Payment Solution to be Integrated**: Edit the payment solution to be integrated between **Online Payments** and **In-person payments**.
+* **Payment Solution to be Integrated**: Edit the payment solution to be integrated between **Online Ppyments** and **In-person payments**.
   - **Online payments**: If you are going to use an e-commerce platform, mark **Yes**. Then, select the **platform** you will integrate with. Finally, choose the **product** you are integrating. If you are not using an e-commerce platform, mark **No** and select the **product** you are integrating. Optionally, you can select the integration model(s).
   - **In-person payments**: Select the **product** you are integrating. If you select the QR Code option, optionally you can also choose the integration model(s).
 
