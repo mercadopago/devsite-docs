@@ -1,6 +1,6 @@
 # Gerar relatório via API
 
-Você pode gerar seu relatório via API manualmente quantas vezes quiser ou programe-o de acordo com a frequência desejada por meio de nossa API.
+Você pode gerar seu relatório via API manualmente quantas vezes quiser ou programe-o de acordo com a frequência desejada por meio da nossa API.
 
 ## Configurar seus relatórios
 
