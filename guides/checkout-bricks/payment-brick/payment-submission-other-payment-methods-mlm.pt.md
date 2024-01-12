@@ -41,7 +41,7 @@ Na criação de um pagamento, além de enviar o parâmetro `payment_method_id`, 
   use MercadoPago\Client\Payment\PaymentClient;
 
   $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
+  $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([

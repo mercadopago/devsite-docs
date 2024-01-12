@@ -313,7 +313,7 @@ Para configurar pagamentos com **boleto bancário** ou **pagamento em lotérica*
   use MercadoPago\Client\Payment\PaymentClient;
 
   $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
+  $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
@@ -640,7 +640,7 @@ Para configurar pagamentos com **Rapipago** e/ou **Pago Fácil**, envie um **POS
   use MercadoPago\Client\Payment\PaymentClient;
 
   $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
+  $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
@@ -882,7 +882,7 @@ Para configurar pagamentos com  **OXXO**, **Paycash**,  **Citibanamex**,  **Sant
   use MercadoPago\Client\Payment\PaymentClient;
 
   $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
+  $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
@@ -1080,7 +1080,7 @@ Para configurar pagamentos com **PagoEfectivo**, envie um **POST** com os parâm
   use MercadoPago\Client\Payment\PaymentClient;
 
   $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
+  $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
@@ -1266,7 +1266,7 @@ Para configurar pagamentos com **Efecty**, envie um **POST** com os devidos par�
   use MercadoPago\Client\Payment\PaymentClient;
 
   $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
+  $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
@@ -1511,7 +1511,7 @@ Para configurar pagamentos com **Abitab** e/ou **Redpagos**, envie um POST com o
   use MercadoPago\Client\Payment\PaymentClient;
 
   $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
+  $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([

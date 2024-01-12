@@ -1,6 +1,6 @@
-# Inicialização comum entre os Bricks
+# Inicialização comum
 
-Para configurar a integração dos Bricks e ter um checkout responsivo, otimizado e configurável você precisa seguir os passos abaixo. Esses passos se aplicam à integração de todos os Bricks.
+Para configurar a integração dos Bricks e ter um checkout responsivo, otimizado e configurável, disponibilizamos nos passos abaixo o processo de configuração inicial comum para todos os Bricks.
 
 > CLIENT_SIDE
 >
