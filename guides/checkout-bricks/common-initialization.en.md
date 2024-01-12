@@ -1,6 +1,6 @@
-# Common initialization among Bricks
+# Common initialization
 
-To set up the Bricks integration and have a responsive, optimized and configurable checkout you need to follow the steps below. These steps apply to the integration of all Bricks.
+To set up Brick integrations and have a responsive, optimized, and configurable checkout, we provide the common initial configuration process for all Bricks in the steps below.
 
 > CLIENT_SIDE
 >

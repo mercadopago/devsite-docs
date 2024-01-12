@@ -1,6 +1,6 @@
-# Inicio común entre los Bricks
+# Inicio común
 
-Para configurar la integración de Bricks y tener un pago receptivo, optimizado y configurable, debe seguir los pasos a continuación. Estos pasos se aplican a la integración de todos los Bricks.
+Para configurar la integración de Bricks y tener un pago receptivo, optimizado y configurable, proporcionamos en los pasos a continuación el proceso de configuración inicial común para todos los Bricks.
 
 > CLIENT_SIDE
 >

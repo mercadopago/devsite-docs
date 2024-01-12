@@ -6,8 +6,8 @@ It contains, for example, the detail of your payments, money receipts, chargebac
 
 ## Download report
 
-Follow this path to learn how to generate and download the Account balance report:
-[Sales and Billing](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports) > **Sales and account statement reports > [Account balance](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement)** > **Generate report**.
+Follow this path to learn how to generate and download the All transactions report:
+[Sales and billing](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports) > **Sales and account statement reports > [All transactions](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement)** > **Generate report**.
 
 ## Report values
 
