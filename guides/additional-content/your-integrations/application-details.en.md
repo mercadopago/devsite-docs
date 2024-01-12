@@ -65,8 +65,8 @@ You can click on the **Edit data** button to view and edit the basic and advance
 
 #### Advanced settings
 
-* **Redirect URL**: URL (in https) where you want to receive the authorization code when your integration is set up as a marketplace or performed through OAuth. See [OAuth](/developers/en/docs/additional-content/security/oauth/introduction) for more details.
-* **Enable PKCE verification**: If the integration is done with [OAuth](/developers/en/docs/additional-content/security/oauth/introduction), you can enable PKCE (Proof Key for Code Exchange) to generate an additional secret code to be used during the authorization process.
+* **Redirect URL**: URL (in https) where you want to receive the authorization code when your integration is set up as a marketplace or performed through OAuth. Check out [OAuth](/developers/en/docs/additional-content/security/oauth/introduction) documentation for more details.
+* **Enable PKCE verification**: If the integration is done with OAuth, you can enable PKCE (Proof Key for Code Exchange) to generate an additional secret code to be used during the authorization process.  Check out [OAuth](/developers/en/docs/additional-content/security/oauth/introduction) documentation for more details.
 * **Allow flow**: Select the types of authentication your application can use, limiting an application only to the flows necessary for its operation and minimizing potential attacks or vulnerability points. The options are: `client_credentials` ([application credentials](/developers/en/guides/additional-content/your-integrations/credentials)) and `authorization_code` ([OAuth authorization code](/developers/en/docs/additional-content/security/oauth/introduction)). By default, applications will have both options enabled, and by enabling or disabling these options, you can control which authentication flows an application can use.
 * **Application permissions**: Options for accessing your application, including **read**, **offline access** and **write**. By default, your application is created with all permissions enabled, but you can disable a permission by unchecking the corresponding checkbox.
 
