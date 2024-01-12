@@ -1,20 +1,5 @@
-# Additional callbacks
 
-When initializing Brick it is possible to configure additional callbacks, which provide the integrator with more information during the Brick execution.
-
-## onBinChange
-
-The `onBinChange` callback is used to get the **bin** of the card being inserted into the Brick. This callback is called on the fly whenever the card bin is updated.
-
-[[[
-```Javascript
-const settings = {
-   ...,
-   callbacks: {
-       ...
-       onBinChange: (bin) => {
-           // allback called whenever card bin is changed
-           console.log(bin);
+);
        },
    }
 };
