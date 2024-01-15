@@ -10,7 +10,7 @@ Nesta documentação, explicaremos as configurações necessárias para o recebi
 
 ## Configuração através do Painel do desenvolvedor
 
-Abaixo explicaremos como indicar as URLs que serão notificadas, configurar os eventos dos quais se receberá a notificação e simular o recebimento de diversos tipos de notificações.
+Abaixo explicaremos como: indicar as URLs que serão notificadas, configurar os eventos dos quais se receberá a notificação, simular o recebimento de diversos tipos de notificações e validar que as notificações que recebe são enviadas pelo Mercado Pago.
 
 ![webhooks](/images/dashboard/webhooks-pt.png)
 
@@ -37,7 +37,29 @@ Abaixo explicaremos como indicar as URLs que serão notificadas, configurar os e
 | `delivery_cancellation` | `case_created`| Solicitação de cancelamento do envio |
 | `topic_claims_integration_wh` | `updated`| Reclamações feitas pelas vendas |
 
-5. Por fim, clique em **Salvar**.
+5. Por fim, clique em **Salvar** para gerar uma **assinatura secreta** para a aplicação. A assinatura é um método de validação para garantir que notificações recebidas foram enviadas pelo Mercado Pago. 
+
+> WARNING
+>
+> Importante
+>
+> O Mercado Pago sempre enviará essa assinatura nas notificações Webhooks. Sempre confira essa informação de autenticidade para evitar fraudes. </br></br>
+> </br></br>
+> A assinatura gerada não tem prazo de validade e, embora não seja obrigatório, recomendamos renovar periodicamente a **assinatura secreta**. Para isso, basta clicar no botão de redefinição ao lado da assinatura.
+
+### Validar origem da notificação
+
+1. Após configurar as URLs e os Eventos, **revele a assinatura secreta** gerada.
+2. Em seguida, utilize a assinatura secreta para validar o *header* `x-signature-id`. O valor recebido no *header* deve coincidir com a chave obtida na etapa anterior. No exemplo mostrado abaixo, o valor `59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1` deve coincidir com a chave secreta gerada.
+
+```header
+...
+accept-encoding	*
+content-type	application/json
+accept	*/*
+x-signature-id	59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1
+...
+```
 
 ### Simular o recebimento da notificação
 
@@ -290,6 +312,7 @@ curl -X POST \
 > <br/>
 > No caso dos eventos de `delivery` e `topic_claims_integration_wh`, também teremos alguns atributos diferentes na resposta. Veja na tabela abaixo quais são essas particularidades.
 
+
 ```json
 {
  "id": 12345,
@@ -304,7 +327,6 @@ curl -X POST \
  }
 }
 ```
-
 Isso indica que foi criado o pagamento **999999999** para o usuário **44444** em modo de produção com a versão V1 da API e que esse evento ocorreu na data **2016-03-25T10:04:58.396-04:00**.
 
 | Atributo | Descrição |
