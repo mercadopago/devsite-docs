@@ -315,75 +315,50 @@ To configure payments with **Boleto Bancário** or **Pagamento em lotérica**, s
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
-    "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
-    "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
-    "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
+    "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+    "payment_method_id" => $_POST['<PAYMENT_METHOD_ID>'],
     "payer" => [
-      "email" => $_POST['email'],
-      "first_name" => $_POST['payerFirstName'],
-      "last_name" => $_POST['payerLastName'],
-      "identification" => [
-        "type" => $_POST['identificationType'],
-        "number" => $_POST['number']
-      ]
+      "email" => $_POST['<EMAIL>']
     ]
   ], $request_options);
   echo implode($payment);
 ?>
 ```
 ```node
-import { Payment, MercadoPagoConfig } from 'mercadopago';
+import { MercadoPagoConfig, Payments } from 'mercadopago';
 
-const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+const client = new MercadoPagoConfig({ accessToken: '<YOUR_ACCESS_TOKEN>' });
+const payments = new Payments(client);
 
-payment.create({
-    body: { 
-        transaction_amount: req.transaction_amount,
-        token: req.token,
-        description: req.description,
-        installments: req.installments,
-        payment_method_id: req.paymentMethodId,
-        issuer_id: req.issuer,
-            payer: {
-            email: req.email,
-            identification: {
-        type: req.identificationType,
-        number: req.number
-    }}},
-    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+payments.create({
+body: {
+		transaction_amount: '<TRANSACTION_AMOUNT>',
+		payment_method_id: '<PAYMENT_METHOD_ID>',
+		payer: {
+			email: '<EMAIL>'
+			}
+},
+	requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
 })
-.then((result) => console.log(result))
-.catch((error) => console.log(error));
+	.then((result) => console.log(result))
+	.catch((error) => console.log(error));
 ```
 ```java
+PaymentCreateRequest paymentCreateRequest = PaymentCreateRequest.builder()
+          .transactionAmount(new BigDecimal("<TRANSACTION_AMOUNT>"))
+          .paymentMethodId("<PAYMENT_METHOD_ID>")
+          .payer(
+              PaymentPayerRequest.builder()
+                  .email("<EMAIL>").build()
+          ).build();
+
 Map<String, String> customHeaders = new HashMap<>();
-    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
- 
+customHeaders.put("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
+
 MPRequestOptions requestOptions = MPRequestOptions.builder()
-    .customHeaders(customHeaders)
-    .build();
+    .customHeaders(customHeaders).build();
 
 PaymentClient client = new PaymentClient();
-
-PaymentCreateRequest paymentCreateRequest =
-PaymentCreateRequest.builder()
-.transactionAmount(new BigDecimal("100"))
-.description("Product Title")
-.paymentMethodId("bolbradesco")
-.dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
-.payer(
-PaymentPayerRequest.builder()
-.email("PAYER_EMAIL")
-.firstName("Test")
-.lastName("User")
-.identification(
-IdentificationRequest.builder().type("CPF").number("19119119100").build())
-.build())
-.build();
-
 client.create(paymentCreateRequest, requestOptions);
 ```
 ```ruby
@@ -493,34 +468,25 @@ payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 ```
 ```curl
-curl -X POST \
--H 'accept: application/json' \
--H 'content-type: application/json' \
--H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
--H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
-'https://api.mercadopago.com/v1/payments' \
--d '{
-"transaction_amount": 100,
-"description": "Product title",
-"payment_method_id": "bolbradesco",
-"payer": {
-"email": "PAYER_EMAIL",
-"first_name": "Test",
-"last_name": "User",
-"identification": {
-"type": "CPF",
-"number": "19119119100"
-},
-"address": {
-"zip_code": "06233200",
-"street_name": "Avenida das Nações Unidas",
-"street_number": "3003",
-"neighborhood": "Bonfim",
-"city": "Osasco",
-"federal_unit": "SP"
-}
-}
+curl --location 'https://api.mercadopago.com/v1/payments' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+--header 'X-Idempotency-Key: <SOME_UNIQUE_VALUE>' \
+--data-raw '{
+    "transaction_amount": 100,
+    "description": "Titulo do produto",
+    "payment_method_id": "bolbradesco",
+    "payer": {
+        "email": "test_user_12345@testuser.com",
+        "first_name": "Test",
+        "last_name": "User",
+        "identification": {
+            "type": "CPF",
+            "number": "01234567890"
+        }
+    }
 }'
+
 ```
 ]]]
 
@@ -642,77 +608,51 @@ To configure payments with **Rapipago** and/or **Pago Fácil**, send a **POST** 
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
-    "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
-    "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
-    "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
+    "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+    "payment_method_id" => $_POST['<PAYMENT_METHOD_ID>'],
     "payer" => [
-      "email" => $_POST['email'],
-      "first_name" => $_POST['payerFirstName'],
-      "last_name" => $_POST['payerLastName'],
-      "identification" => [
-        "type" => $_POST['identificationType'],
-        "number" => $_POST['number']
-      ]
+      "email" => $_POST['<EMAIL>']
     ]
   ], $request_options);
   echo implode($payment);
 ?>
 ```
 ```node
-import { Payment, MercadoPagoConfig } from 'mercadopago';
+import { MercadoPagoConfig, Payments } from 'mercadopago';
 
-const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+const client = new MercadoPagoConfig({ accessToken: '<YOUR_ACCESS_TOKEN>' });
+const payments = new Payments(client);
 
-payment.create({
-    body: { 
-        transaction_amount: req.transaction_amount,
-        token: req.token,
-        description: req.description,
-        installments: req.installments,
-        payment_method_id: req.paymentMethodId,
-        issuer_id: req.issuer,
-            payer: {
-            email: req.email,
-            identification: {
-        type: req.identificationType,
-        number: req.number
-    }}},
-    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+payments.create({
+body: {
+		transaction_amount: '<TRANSACTION_AMOUNT>',
+		payment_method_id: '<PAYMENT_METHOD_ID>',
+		payer: {
+			email: '<EMAIL>'
+			}
+},
+	requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
 })
-.then((result) => console.log(result))
-.catch((error) => console.log(error));
+	.then((result) => console.log(result))
+	.catch((error) => console.log(error));
 ```
 ```java
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+PaymentCreateRequest paymentCreateRequest = PaymentCreateRequest.builder()
+          .transactionAmount(new BigDecimal("<TRANSACTION_AMOUNT>"))
+          .paymentMethodId("<PAYMENT_METHOD_ID>")
+          .payer(
+              PaymentPayerRequest.builder()
+                  .email("<EMAIL>").build()
+          ).build();
 
-Payment payment = new Payment();
+Map<String, String> customHeaders = new HashMap<>();
+customHeaders.put("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
 
-payment.setTransactionAmount(100f)
-.setDescription("Product Title")
-.setPaymentMethodId("rapipago")
-.setPayer(new Payer("test_user_19653727@testuser.com"));
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders).build();
 
-payment.save();
-```
-```ruby
-require 'mercadopago'
-sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
-
-payment_request = {
-transaction_amount: 100,
-description: 'Product title',
-payment_method_id: 'rapipago',
-payer: {
-email: 'test_user_19653727@testuser.com',
-}
-}
-
-payment_response = sdk.payment.create(payment_request)
-payment = payment_response[:response]
+PaymentClient client = new PaymentClient();
+client.create(paymentCreateRequest, requestOptions);
 
 ```
 ```csharp
@@ -755,16 +695,17 @@ payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
 ```curl
-curl -X POST \
-'https://api.mercadopago.com/v1/payments' \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
--d '{
-transaction_amount: 100,
-description: "Product Title",
-payment_method_id: "rapipago",
-payer: { email: "test_user_19653727@testuser.com" }
+curl --location 'https://api.mercadopago.com/v1/payments' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+--header 'X-Idempotency-Key: <SOME_UNIQUE_VALUE>' \
+--data-raw '{
+  "transaction_amount": 100,
+  "description": "Titulo del producto",
+  "payment_method_id": "rapipago",
+  "payer": { "email": "test_user_12345@testuser.com" }
 }'
+
 ```
 ]]]
 
@@ -886,61 +827,52 @@ To configure payments with **OXXO**, **Paycash**, **Citibanamex**, **Santander**
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
-    "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
-    "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
-    "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
+    "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+    "payment_method_id" => $_POST['<PAYMENT_METHOD_ID>'],
     "payer" => [
-      "email" => $_POST['email'],
-      "first_name" => $_POST['payerFirstName'],
-      "last_name" => $_POST['payerLastName'],
-      "identification" => [
-        "type" => $_POST['identificationType'],
-        "number" => $_POST['number']
-      ]
+      "email" => $_POST['<EMAIL>']
     ]
   ], $request_options);
   echo implode($payment);
 ?>
 ```
 ```node
-import { Payment, MercadoPagoConfig } from 'mercadopago';
+import { MercadoPagoConfig, Payments } from 'mercadopago';
 
-const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+const client = new MercadoPagoConfig({ accessToken: '<YOUR_ACCESS_TOKEN>' });
+const payments = new Payments(client);
 
-payment.create({
-    body: { 
-        transaction_amount: req.transaction_amount,
-        token: req.token,
-        description: req.description,
-        installments: req.installments,
-        payment_method_id: req.paymentMethodId,
-        issuer_id: req.issuer,
-            payer: {
-            email: req.email,
-            identification: {
-        type: req.identificationType,
-        number: req.number
-    }}},
-    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+payments.create({
+body: {
+		transaction_amount: '<TRANSACTION_AMOUNT>',
+		payment_method_id: '<PAYMENT_METHOD_ID>',
+		payer: {
+			email: '<EMAIL>'
+			}
+},
+	requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
 })
-.then((result) => console.log(result))
-.catch((error) => console.log(error));
+	.then((result) => console.log(result))
+	.catch((error) => console.log(error));
 ```
 ```java
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+PaymentCreateRequest paymentCreateRequest = PaymentCreateRequest.builder()
+          .transactionAmount(new BigDecimal("<TRANSACTION_AMOUNT>"))
+          .paymentMethodId("<PAYMENT_METHOD_ID>")
+          .payer(
+              PaymentPayerRequest.builder()
+                  .email("<EMAIL>").build()
+          ).build();
 
-Payment payment = new Payment();
+Map<String, String> customHeaders = new HashMap<>();
+customHeaders.put("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
 
-payment.setTransactionAmount(100f)
-.setDescription("Product Title")
-.setPaymentMethodId("oxxo")
-.setPayer(new Payer("test_user_82045343@testuser.com"));
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders).build();
 
-payment.save();
+PaymentClient client = new PaymentClient();
+client.create(paymentCreateRequest, requestOptions);
+
 ```
 ```ruby
 require 'mercadopago'
@@ -999,16 +931,17 @@ payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
 ```curl
-curl -X POST \
-'https://api.mercadopago.com/v1/payments' \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
--d '{
-transaction_amount: 100,
-description: "Product Title",
-payment_method_id: "oxxo",
-payer: { email: "test_user_82045343@testuser.com" }
+curl --location 'https://api.mercadopago.com/v1/payments' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+--header 'X-Idempotency-Key: <SOME_UNIQUE_VALUE>' \
+--data-raw '{
+  "transaction_amount": 100,
+  "description": "Titulo del producto",
+  "payment_method_id": "oxxo",
+  "payer": { "email": "test_user_12345@testuser.com" }
 }'
+
 ```
 ]]]
 
@@ -1085,61 +1018,52 @@ To configure payments with **PagoEfectivo**, send a **POST** with the required p
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
-    "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
-    "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
-    "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
+    "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+    "payment_method_id" => $_POST['<PAYMENT_METHOD_ID>'],
     "payer" => [
-      "email" => $_POST['email'],
-      "first_name" => $_POST['payerFirstName'],
-      "last_name" => $_POST['payerLastName'],
-      "identification" => [
-        "type" => $_POST['identificationType'],
-        "number" => $_POST['number']
-      ]
+      "email" => $_POST['<EMAIL>']
     ]
   ], $request_options);
   echo implode($payment);
 ?>
 ```
 ```node
-import { Payment, MercadoPagoConfig } from 'mercadopago';
+import { MercadoPagoConfig, Payments } from 'mercadopago';
 
-const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+const client = new MercadoPagoConfig({ accessToken: '<YOUR_ACCESS_TOKEN>' });
+const payments = new Payments(client);
 
-payment.create({
-    body: { 
-        transaction_amount: req.transaction_amount,
-        token: req.token,
-        description: req.description,
-        installments: req.installments,
-        payment_method_id: req.paymentMethodId,
-        issuer_id: req.issuer,
-            payer: {
-            email: req.email,
-            identification: {
-        type: req.identificationType,
-        number: req.number
-    }}},
-    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+payments.create({
+body: {
+		transaction_amount: '<TRANSACTION_AMOUNT>',
+		payment_method_id: '<PAYMENT_METHOD_ID>',
+		payer: {
+			email: '<EMAIL>'
+			}
+},
+	requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
 })
-.then((result) => console.log(result))
-.catch((error) => console.log(error));
+	.then((result) => console.log(result))
+	.catch((error) => console.log(error));
 ```
 ```java
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+PaymentCreateRequest paymentCreateRequest = PaymentCreateRequest.builder()
+          .transactionAmount(new BigDecimal("<TRANSACTION_AMOUNT>"))
+          .paymentMethodId("<PAYMENT_METHOD_ID>")
+          .payer(
+              PaymentPayerRequest.builder()
+                  .email("<EMAIL>").build()
+          ).build();
 
-Payment payment = new Payment();
+Map<String, String> customHeaders = new HashMap<>();
+customHeaders.put("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
 
-payment.setTransactionAmount(100f)
-.setDescription("Product Title")
-.setPaymentMethodId("pagoefectivo_atm")
-.setPayer(new Payer("test_user_42972582@testuser.com"));
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders).build();
 
-payment.save();
+PaymentClient client = new PaymentClient();
+client.create(paymentCreateRequest, requestOptions);
+
 ```
 ```ruby
 require 'mercadopago'
@@ -1197,16 +1121,17 @@ payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
 ```curl
-curl -X POST \
-'https://api.mercadopago.com/v1/payments' \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
--d '{
-transaction_amount: 100,
-description: "Product Title",
-payment_method_id: "paypayment_atm",
-payer: { email: "test_user_42972582@testuser.com" }
+curl --location 'https://api.mercadopago.com/v1/payments' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+--header 'X-Idempotency-Key: <SOME_UNIQUE_VALUE>' \
+--data-raw '{
+  "transaction_amount": 100,
+  "description": "Titulo del producto",
+  "payment_method_id": "pagoefectivo_atm",
+  "payer": { "email": "test_user_12345@testuser.com" }
 }'
+
 ```
 ]]]
 
@@ -1271,61 +1196,52 @@ To configure payments with **Efecty**, send a **POST** with the appropriate para
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
-    "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
-    "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
-    "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
+    "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+    "payment_method_id" => $_POST['<PAYMENT_METHOD_ID>'],
     "payer" => [
-      "email" => $_POST['email'],
-      "first_name" => $_POST['payerFirstName'],
-      "last_name" => $_POST['payerLastName'],
-      "identification" => [
-        "type" => $_POST['identificationType'],
-        "number" => $_POST['number']
-      ]
+      "email" => $_POST['<EMAIL>']
     ]
   ], $request_options);
   echo implode($payment);
 ?>
 ```
 ```node
-import { Payment, MercadoPagoConfig } from 'mercadopago';
+import { MercadoPagoConfig, Payments } from 'mercadopago';
 
-const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+const client = new MercadoPagoConfig({ accessToken: '<YOUR_ACCESS_TOKEN>' });
+const payments = new Payments(client);
 
-payment.create({
-    body: { 
-        transaction_amount: req.transaction_amount,
-        token: req.token,
-        description: req.description,
-        installments: req.installments,
-        payment_method_id: req.paymentMethodId,
-        issuer_id: req.issuer,
-            payer: {
-            email: req.email,
-            identification: {
-        type: req.identificationType,
-        number: req.number
-    }}},
-    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+payments.create({
+body: {
+		transaction_amount: '<TRANSACTION_AMOUNT>',
+		payment_method_id: '<PAYMENT_METHOD_ID>',
+		payer: {
+			email: '<EMAIL>'
+			}
+},
+	requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
 })
-.then((result) => console.log(result))
-.catch((error) => console.log(error));
+	.then((result) => console.log(result))
+	.catch((error) => console.log(error));
 ```
 ```java
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+PaymentCreateRequest paymentCreateRequest = PaymentCreateRequest.builder()
+          .transactionAmount(new BigDecimal("<TRANSACTION_AMOUNT>"))
+          .paymentMethodId("<PAYMENT_METHOD_ID>")
+          .payer(
+              PaymentPayerRequest.builder()
+                  .email("<EMAIL>").build()
+          ).build();
 
-Payment payment = new Payment();
+Map<String, String> customHeaders = new HashMap<>();
+customHeaders.put("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
 
-payment.setTransactionAmount(5000f)
-.setDescription("Product Title")
-.setPaymentMethodId("efecty")
-.setPayer(new Payer("test_user_19549678@testuser.com"));
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders).build();
 
-payment.save();
+PaymentClient client = new PaymentClient();
+client.create(paymentCreateRequest, requestOptions);
+
 ```
 ```ruby
 require 'mercadopago'
@@ -1384,16 +1300,17 @@ payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
 ```curl
-curl -X POST \
-'https://api.mercadopago.com/v1/payments' \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
--d '{
-transaction_amount: 5000,
-description: "Product Title",
-payment_method_id: "effect",
-payer: { email: "test_user_19549678@testuser.com" }
+curl --location 'https://api.mercadopago.com/v1/payments' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+--header 'X-Idempotency-Key: <SOME_UNIQUE_VALUE>' \
+--data-raw '{
+  "transaction_amount": 10000,
+  "description": "Titulo del producto",
+  "payment_method_id": "efecty",
+  "payer": { "email": "test_user_12345@testuser.com" }
 }'
+
 ```
 ]]]
 
@@ -1517,61 +1434,52 @@ To configure payments with **Abitab** and/or **Redpagos**, send a **POST** with 
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
-    "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
-    "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
-    "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
+    "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+    "payment_method_id" => $_POST['<PAYMENT_METHOD_ID>'],
     "payer" => [
-      "email" => $_POST['email'],
-      "first_name" => $_POST['payerFirstName'],
-      "last_name" => $_POST['payerLastName'],
-      "identification" => [
-        "type" => $_POST['identificationType'],
-        "number" => $_POST['number']
-      ]
+      "email" => $_POST['<EMAIL>']
     ]
   ], $request_options);
   echo implode($payment);
 ?>
 ```
 ```node
-import { Payment, MercadoPagoConfig } from 'mercadopago';
+import { MercadoPagoConfig, Payments } from 'mercadopago';
 
-const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+const client = new MercadoPagoConfig({ accessToken: '<YOUR_ACCESS_TOKEN>' });
+const payments = new Payments(client);
 
-payment.create({
-    body: { 
-        transaction_amount: req.transaction_amount,
-        token: req.token,
-        description: req.description,
-        installments: req.installments,
-        payment_method_id: req.paymentMethodId,
-        issuer_id: req.issuer,
-            payer: {
-            email: req.email,
-            identification: {
-        type: req.identificationType,
-        number: req.number
-    }}},
-    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+payments.create({
+body: {
+		transaction_amount: '<TRANSACTION_AMOUNT>',
+		payment_method_id: '<PAYMENT_METHOD_ID>',
+		payer: {
+			email: '<EMAIL>'
+			}
+},
+	requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
 })
-.then((result) => console.log(result))
-.catch((error) => console.log(error));
+	.then((result) => console.log(result))
+	.catch((error) => console.log(error));
 ```
 ```java
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+PaymentCreateRequest paymentCreateRequest = PaymentCreateRequest.builder()
+          .transactionAmount(new BigDecimal("<TRANSACTION_AMOUNT>"))
+          .paymentMethodId("<PAYMENT_METHOD_ID>")
+          .payer(
+              PaymentPayerRequest.builder()
+                  .email("<EMAIL>").build()
+          ).build();
 
-Payment payment = new Payment();
+Map<String, String> customHeaders = new HashMap<>();
+customHeaders.put("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
 
-payment.setTransactionAmount(100f)
-.setDescription("Product Title")
-.setPaymentMethodId("abitab")
-.setPayer(new Payer("test_user_84162205@testuser.com"));
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders).build();
 
-payment.save();
+PaymentClient client = new PaymentClient();
+client.create(paymentCreateRequest, requestOptions);
+
 ```
 ```ruby
 require 'mercadopago'
@@ -1629,16 +1537,17 @@ payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
 ```curl
-curl -X POST \
-'https://api.mercadopago.com/v1/payments' \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
--d '{
-transaction_amount: 100,
-description: "Product Title",
-payment_method_id: "abitab",
-payer: { email: "test_user_84162205@testuser.com" }
+curl --location 'https://api.mercadopago.com/v1/payments' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+--header 'X-Idempotency-Key: <SOME_UNIQUE_VALUE>' \
+--data-raw '{
+  "transaction_amount": 100,
+  "description": "Titulo del producto",
+  "payment_method_id": "abitab",
+  "payer": { "email": "test_user_12345@testuser.com" }
 }'
+
 ```
 ]]]
 
