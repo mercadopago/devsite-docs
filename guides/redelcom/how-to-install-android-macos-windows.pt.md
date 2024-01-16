@@ -33,7 +33,7 @@ List of devices attached
 
 ```
 
-3. Por último, ainda no terminal do computador, acesse pasta na qual está localizado o aplicativo Android e execute o seguinte comando, substituindo "prueba.apk" pelo nome do arquivo e a extensão `apk`.
+3. Por último, ainda no terminal do computador, acesse a pasta na qual está localizado o aplicativo Android e execute o seguinte comando, substituindo "prueba.apk" pelo nome do arquivo e a extensão `apk`.
 
 ```terminal
 
@@ -52,7 +52,6 @@ Success
 
 Ao concluir essas etapas, o aplicativo Android estará instalado e pronto para integrar pagamentos. Escolha o [tipo de integração](/developers/pt/docs/redelcom/types-of-integration) de sua preferência para começar a operar com a Redelcom. 
 
-
 ## Instalar aplicativo Android no Windows
 
 1. Baixe o SDK do Android acessando o [site oficial](https://developer.android.com/tools/releases/platform-tools?hl=es-419#downloads) e clique em 'Como baixar as Ferramentas da Plataforma SDK para Windows'. É necessário ler e concordar com os termos e condições para realizar o download.
@@ -65,7 +64,7 @@ Ao concluir essas etapas, o aplicativo Android estará instalado e pronto para i
 
 </center>
 
-3. Após a conclusão da instalação, verifique se o `adb` detecta corretamente o dispositivo Redelcom. Para isso, conecte-o ao computador por meio de USB e, por meio do terminal de sua preferência, navegue até o diretório no qual a pasta foi baixada. Em seguida, execute o seguinte comando:
+3. Após a conclusão da instalação, verifique se o `adb` detecta corretamente o dispositivo Redelcom. Para isso, conecte-o ao computador por meio de USB e, no terminal de sua preferência, navegue até o diretório no qual a pasta foi baixada. Em seguida, execute o seguinte comando:
 
 ```terminal
 

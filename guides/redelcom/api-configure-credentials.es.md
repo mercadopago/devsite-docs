@@ -49,4 +49,4 @@ Una vez realizada la encriptación, obtendrás tu *token*, que recibe el nombre 
 >
 > Importante
 >
-> Si necesitas actualizar la aplicación RDCPass desde computadores MacOS o Windows, puedes ver cómo accediendo a [nuestra documentación](/developers/es/docs/redelcom/how-tos/install-app-android-macos-windows).
+> Si necesitas actualizar la aplicación RDCPass desde computadores MacOS o Windows, entra en contacto con nuestro equipo de integradores para recibir la última versión, y accede a [nuestra documentación](/developers/es/docs/redelcom/how-tos/install-app-android-macos-windows) para saber cómo instalar una aplicación Android en los dispositivos. 

@@ -46,4 +46,4 @@ Once you've performed the encryption, you will get your *token*, named `X-Authen
 >
 > Important
 >
-> If you need to update the RDCPass application from MacOS or Windows computers, you can learn how to do so by accessing [our documentation](/developers/en/docs/redelcom/how-tos/install-app-android-macos-windows).
+> If you need to update the RDCPass application from MacOS or Windows computers, you will have to contact our team to get the newest version, and access [our documentation](/developers/en/docs/redelcom/how-tos/install-app-android-macos-windows) to learn how to install an Android app on the devices.

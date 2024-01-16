@@ -8,7 +8,7 @@ Your app will communicate with the RDCPass system locally, allowing you to proce
 >
 > Important
 >
-> If you wish to perform a local integration from MacOS or Windows computers, you can learn how to do so by accessing [our documentation](/developers/en/docs/redelcom/how-tos/install-app-android-macos-windows).
+> If you wish to perform a local integration from MacOS or Windows computers, you can learn how to install an Android app on our devices by accessing [our documentation](/developers/en/docs/redelcom/how-tos/install-app-android-macos-windows).
 
 You can see how the local integration with Redelcom works in the diagram below.
 
