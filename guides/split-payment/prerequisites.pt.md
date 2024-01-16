@@ -1,6 +1,6 @@
 # Pré-requisitos
 
-Para integrar a solução Split de Pagamentos, é importante atender aos requisitos mostrados abaixo.
+Para integrar a solução Split de pagamentos, é importante atender aos requisitos mostrados abaixo.
 
 > NOTE
 >
