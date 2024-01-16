@@ -1,6 +1,6 @@
-# Relatório de vendas da solução Split de Pagamentos do Mercado Pago
+# Relatório de vendas da solução Split de pagamentos do Mercado Pago
 
-O relatório de vendas da solução Split de Pagamentos do Mercado Pago oferece um **panorama completo das transações de vendedores vinculados**, disponível para download nos formatos _csv_ e _json_. Este relatório detalha as operações realizadas durante um período de tempo específico, abrangendo desde as diferentes tarifas (_fees_) relacionadas a cada transação até casos de liquidação, bloqueios e desbloqueios financeiros. Nele, você também poderá encontrar dados importantes como o total da transação, taxa do marketplace, taxa do Mercado Pago e o total de dinheiro recebido.
+O relatório de vendas da solução Split de pagamentos do Mercado Pago oferece um **panorama completo das transações de vendedores vinculados**, disponível para download nos formatos _csv_ e _json_. Este relatório detalha as operações realizadas durante um período de tempo específico, abrangendo desde as diferentes tarifas (_fees_) relacionadas a cada transação até casos de liquidação, bloqueios e desbloqueios financeiros. Nele, você também poderá encontrar dados importantes como o total da transação, taxa do marketplace, taxa do Mercado Pago e o total de dinheiro recebido.
 
 > NOTE
 >
@@ -10,7 +10,7 @@ O relatório de vendas da solução Split de Pagamentos do Mercado Pago oferece 
 
 ## Baixar relatório
 
-Para baixar o Relatório de vendas da solução Split de Pagamentos do Mercado Pago, é necessário configurá-lo via API. Esse processo pode ser realizado de duas formas: **manualmente** ou **automaticamente**. No entanto, em ambas as opções, é necessário efetuar algumas configurações preliminares conforme indicado abaixo.
+Para baixar o Relatório de vendas da solução Split de pagamentos do Mercado Pago, é necessário configurá-lo via API. Esse processo pode ser realizado de duas formas: **manualmente** ou **automaticamente**. No entanto, em ambas as opções, é necessário efetuar algumas configurações preliminares conforme indicado abaixo.
 
    - Frequência.
    - Lista de e-mails que receberão o relatório.

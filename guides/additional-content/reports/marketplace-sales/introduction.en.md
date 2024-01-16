@@ -1,6 +1,6 @@
-# Mercado Pago’s Split Payments solution sales report
+# Mercado Pago’s Split payments solution sales report
 
-The Mercado Pago’s Split Payments solution sales report provides a **comprehensive view of transactions by linked sellers**, available for download in both _csv_ and _json_ formats. This report details operations conducted during a specific time period, covering various transaction fees, settlement cases, financial blocking, and unblocking. It also contains essential data such as the total transaction amount, marketplace fee, Mercado Pago fee, and the total amount of received money.
+The Mercado Pago’s Split payments solution sales report provides a **comprehensive view of transactions by linked sellers**, available for download in both _csv_ and _json_ formats. This report details operations conducted during a specific time period, covering various transaction fees, settlement cases, financial blocking, and unblocking. It also contains essential data such as the total transaction amount, marketplace fee, Mercado Pago fee, and the total amount of received money.
 
 > NOTE
 >
@@ -10,7 +10,7 @@ The Mercado Pago’s Split Payments solution sales report provides a **comprehen
 
 ## Downloading the report
 
-To download the Mercado Pago’s Split Payments solution sales report, you need to configure it via the API. This process can be done manually or automatically. However, in both options, some preliminary configurations are required, as outlined below.
+To download the Mercado Pago’s Split payments solution sales report, you need to configure it via the API. This process can be done manually or automatically. However, in both options, some preliminary configurations are required, as outlined below.
 
    - Frequency.
    - List of email addresses that will receive the report.

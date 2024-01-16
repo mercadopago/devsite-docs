@@ -1,10 +1,10 @@
 # Create configuration
 
-To configure the integration with the Split Payments solution, you will need to [create your application](#bookmark_create_application), [request permissions from your users](#bookmark_request_permission_from_users), and [obtain the credentials](#bookmark_obtain_credentials). Keep reading to create the required configuration.
+To configure the integration with the Split payments solution, you will need to [create your application](#bookmark_create_application), [request permissions from your users](#bookmark_request_permission_from_users), and [obtain the credentials](#bookmark_obtain_credentials). Keep reading to create the required configuration.
 
 ## Create application
 
-Create your application to integrate with the Split Payments solution by following the steps below.
+Create your application to integrate with the Split payments solution by following the steps below.
 
    > NOTE
    >
