@@ -49,16 +49,24 @@ Abaixo explicaremos como: indicar as URLs que serão notificadas, configurar os 
 
 ### Validar origem da notificação
 
-1. Após configurar as URLs e os Eventos, **revele a assinatura secreta** gerada.
-2. Em seguida, utilize a assinatura secreta para validar o *header* `x-signature-id`. O valor recebido no *header* deve coincidir com a chave obtida na etapa anterior. No exemplo mostrado abaixo, o valor `59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1` deve coincidir com a chave secreta gerada.
+No momento em que a URL cadastrada receber uma notificação, você poderá validar se o conteúdo enviado no _header_ `x-signature` foi enviado pelo Mercado Pago, a fim de obter mais segurança no recebimento das suas notificações. Veja abaixo como configurar essa validação.
 
-```header
-...
-accept-encoding	*
-content-type	application/json
-accept	*/*
-x-signature-id	59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1
-...
+1. Utilizando o template abaixo, substitua os parâmetros pelos dados recebidos no corpo da notificação e como _query param_ na URL.
+
+```template
+post;[urlpath];data.id=[data.id_url];type=[topic_url];user-agent:mercadopago webhook v1.0;[timestamp];action:[json_action];api_version:[json_apiversion];date_created:[json_datecreated_RFC3339];id:[id_json];live_mode:[livemode_json];type:[type_json];user_id:[userid_json];
+```
+
+2. No [Painel do desenvolvedor](/developers/panel/app), selecione a aplicação desejada, navegue até a seção Webhooks e **revele a assinatura secreta** gerada.
+3. A assinatura será utilizada para gerar o `hmac sha256` e, consequentemente, o `hash sha256` do template com os dados preenchidos (em hexadecimal).
+4. Por fim, o parâmetro `ts` apresentado com o _hash_ gerado e seguido por `v1`, serão o conteúdo a ser utilizado para comparação com **assinatura secreta**, validando o *header* `x-signature` e garantindo que a notificação foi recebida pelo Mercado Pago. Exemplo: `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`
+
+```node
+const crypto = require('crypto');
+const cyphedSignature = crypto
+    .createHmac('sha256', secret)
+    .update(signatureTemplateParsed)
+    .digest('hex'); 
 ```
 
 ### Simular o recebimento da notificação
