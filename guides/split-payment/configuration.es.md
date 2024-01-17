@@ -1,10 +1,10 @@
 # Crear configuración
 
-Para configurar la integración con la solución de Split de Pagos, deberás [crear tu aplicación](#bookmark_crear_aplicación), [solicitar permisos a tus usuarios](#bookmark_solicitar_permiso_a_usuarios) y [obtener las credenciales](#bookmark_obtener_credenciales). Continúa leyendo para crear la configuración necesaria.
+Para configurar la integración con la solución de Split de pagos, deberás [crear tu aplicación](#bookmark_crear_aplicación), [solicitar permisos a tus usuarios](#bookmark_solicitar_permiso_a_usuarios) y [obtener las credenciales](#bookmark_obtener_credenciales). Continúa leyendo para crear la configuración necesaria.
 
 ## Crear aplicación
 
-Crea tu aplicación para integrar con la solución de Split de Pagos siguiendo los pasos a continuación.
+Crea tu aplicación para integrar con la solución de Split de pagos siguiendo los pasos a continuación.
 
    > NOTE
    >

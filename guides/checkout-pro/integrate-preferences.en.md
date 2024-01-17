@@ -911,14 +911,20 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Checkout Pro for Web
  - card_description: Offer different payment methods to customers on a website in a simple, fast, and secure manner.
- - card_link: /developers/en/docs/checkout-pro/integrate-checkout-pro/web
- - card_linkDescription: Integrar
+ - card_button:  /developers/en/docs/checkout-pro/integrate-checkout-pro/web
+ - card_buttonDescription: Integrar
  - card_pillText: AVAILABLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Loading
  - card_title: Checkout Pro for Mobile
  - card_description: Offer various payment methods to customers in your mobile application, using the language that best suits your project.
- - card_link: /developers/en/docs/checkout-pro/integrate-checkout-pro/mobile
- - card_linkDescription: Integrar
+ - card_button: /developers/en/docs/checkout-pro/integrate-checkout-pro/mobile
+ - card_buttonDescription: Integrar
  - card_pillText: AVAILABLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
 ---

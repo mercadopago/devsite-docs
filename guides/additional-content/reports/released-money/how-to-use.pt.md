@@ -1,8 +1,8 @@
 # Usos do relatório
 
-Quando o relatório estiver pronto e baixado, você terá um arquivo pronto para consultar as planilhas de cálculo e importá-las para o programa que você usa.
+Após o download do relatório, você terá um arquivo pronto para consulta e poderá importá-lo para o programa de sua escolha.
 
-Para consultar o relatório, recomendamos baixá-lo em formato _csv_ para poder abri-lo no programa que possa visualizá-lo. O arquivo deve estar configurado em formato UTF-8 para evitar problemas de leitura.
+Sugerimos que o baixe no formato _csv_ para facilitar a visualização em um programa compatível. Certifique-se de que o arquivo esteja configurado no formato UTF-8 para evitar problemas de leitura.
 
 ## Conteúdo do relatório
 

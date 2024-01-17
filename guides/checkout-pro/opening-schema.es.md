@@ -12,7 +12,7 @@ Sin embargo, es posible personalizar la apertura para que se abra en una página
 
 ## Esquema de redirección a otra página
 
-El cambio del comportamiento de redirección se realiza mediante la propiedad `redirectMode`, que puede asumir los valores `self`, `blank` o `modal`.
+El cambio del comportamiento de redirección se realiza mediante la propiedad `redirectMode`, que puede asumir los valores `self` o `blank`.
 
 | Valor | Descripción |
 | --- |--- |
