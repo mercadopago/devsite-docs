@@ -648,7 +648,83 @@
           "en": "Create order",
           "pt": "Criar pedido",
           "es": "Crear orden"
-        }
+        },
+        "userCases": [
+          {
+            "name": {
+              "en": "Create order",
+              "pt": "Criar pedido",
+              "es": "Crear orden"
+            }
+          },
+          {
+            "name": {
+              "en": "Create order v2",
+              "pt": "Criar pedido v2",
+              "es": "Crear orden v2"
+            },
+            "parameters": [
+              {
+                "name": "X-Ttl-Store-Preference",
+                "schema": {
+                  "example": 123
+                }
+              },
+              {
+                "name": "user_id",
+                "schema": {
+                  "example": "123123123123"
+                }
+              },
+              {
+                "name": "external_id",
+                "schema": {
+                  "example": "SUC001POS123123"
+                }
+              }
+            ]
+          },
+          {
+            "name": {
+              "en": "Create order v3",
+              "pt": "Criar pedido v3",
+              "es": "Crear orden v3"
+            },
+            "parameters": [
+              {
+                "name": "X-Ttl-Store-Preference",
+                "schema": {
+                  "example": 456
+                }
+              },
+              {
+                "name": "user_id",
+                "schema": {
+                  "example": "456456456"
+                }
+              }
+            ],
+            "requestBody": {
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "properties": {
+                      "external_reference": {
+                        "example": "Factura-456"
+                      },
+                      "notification_url": {
+                        "example": "http://www.yourserver456.com"
+                      },
+                      "sponsor_id": {
+                        "example": "456456"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
       },
       "delete": {
         "tags": [
