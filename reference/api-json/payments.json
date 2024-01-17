@@ -2701,9 +2701,9 @@
         "userCases": [
           {
             "name": {
-              "en": "Create payment with master",
-              "pt": "Criar pagamento master",
-              "es": "Crear pago con master "
+              "en": "Create payment with visa",
+              "pt": "Criar pagamento visa",
+              "es": "Crear pago con visa "
             }
           },
           {
@@ -2716,6 +2716,7 @@
                   "content": {
                       "application/json": {
                           "schema": {
+                              "type": "array",
                               "properties": {
                                   "payment_method_id": {
                                       "example": "rapipago"
@@ -2753,7 +2754,56 @@
                       }
                   }
               ]
-          }
+          },
+          {
+            "name": {
+                "en": "Create payment with master",
+                "pt": "Criar pagamento master",
+                "es": "Crear pago con master"
+            },
+            "requestBody": {
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type": "array",
+                            "properties": {
+                                "payment_method_id": {
+                                    "example": "master"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "responses": {
+                "200": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "id": {
+                                        "example": 123456
+                                    },
+                                    "payment_method_id": {
+                                        "example": "master"
+                                    },
+                                    "description": {
+                                        "example": "Test payment master"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "parameters": [
+                {
+                    "schema": {
+                        "example": "0d5020ed-1af6-469c-ae06-c3bec19954bb"
+                    }
+                }
+            ]
+        }
       ]
       }
     },

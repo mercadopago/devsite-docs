@@ -484,7 +484,56 @@
           "en": "Create POS",
           "pt": "Criar caixa",
           "es": "Crear caja"
-        }
+        },
+        "userCases": [
+          {
+            "name": {
+              "en": "Create POS",
+              "pt": "Criar caixa",
+              "es": "Crear caja"
+            }
+          },
+          {
+            "name": {
+              "en": "Create second POS",
+              "pt": "Criar segundo caixa",
+              "es": "Crear segunda caja"
+            },
+            "requestBody": {
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "properties": {
+                      "name": {
+                        "example": "Second POS"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": {
+              "en": "Create third POS",
+              "pt": "Criar terceiro caixa",
+              "es": "Crear tercera caja"
+            },
+            "requestBody": {
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "properties": {
+                      "name": {
+                        "example": "Third POS"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
       },
       "get": {
         "tags": [
