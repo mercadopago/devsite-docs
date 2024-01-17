@@ -79,6 +79,8 @@ Map<String, String> customHeaders = new HashMap<>();
 MPRequestOptions requestOptions = MPRequestOptions.builder()
     .customHeaders(customHeaders)
     .build();
+    
+MercadoPagoConfig.setAccessToken("YOUR_ACCESS_TOKEN");
 
 PaymentClient client = new PaymentClient();
  

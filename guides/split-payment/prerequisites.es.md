@@ -1,6 +1,6 @@
 # Requisitos previos
 
-Para integrar la solución de Split de Pagos, es importante cumplir con los requisitos que se muestran a continuación.
+Para integrar la solución de Split de pagos, es importante cumplir con los requisitos que se muestran a continuación.
 
 > NOTE
 >

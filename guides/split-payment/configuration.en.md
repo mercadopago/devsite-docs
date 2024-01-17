@@ -1,10 +1,10 @@
 # Create configuration
 
-To configure the integration with the Split Payments solution, you will need to [create your application](#bookmark_create_application), [request permissions from your users](#bookmark_request_permission_from_users), and [obtain the credentials](#bookmark_obtain_credentials). Keep reading to create the required configuration.
+To configure the integration with the Split payments solution, you will need to [create your application](#bookmark_create_application), [request permissions from your users](#bookmark_request_permission_from_users), and [obtain the credentials](#bookmark_obtain_credentials). Keep reading to create the required configuration.
 
 ## Create application
 
-Create your application to integrate with the Split Payments solution by following the steps below.
+Create your application to integrate with the Split payments solution by following the steps below.
 
    > NOTE
    >
@@ -104,6 +104,7 @@ Use the authorization code obtained in the previous step to acquire user credent
 | `<CLIENT_SECRET>`        | Your SECRET_KEY, also available in the details of your application.                              |
 | `<AUTHORIZATION_CODE>`   | Authorization code obtained when redirecting the user back to your site.                     |
 | `<REDIRECT_URI>`         | Should be the same Redirect URI configured in your application.                                     |
+| `<STATE>`         | Replace the "RANDOM_ID" value with an identifier that is unique for each attempt and does not include sensitive information so that you can identify who the received code is from.                                     |
 
 ```curl
 curl -X POST \
@@ -114,7 +115,8 @@ curl -X POST \
      -d 'client_secret=<CLIENT_SECRET>' \
      -d 'grant_type=authorization_code' \
      -d 'code=<AUTHORIZATION_CODE>' \
-     -d 'redirect_uri=<REDIRECT_URI>'
+     -d 'redirect_uri=<REDIRECT_URI>' \
+     -d 'state=<RANDOM_ID>'
 ```
 
 #### Response
