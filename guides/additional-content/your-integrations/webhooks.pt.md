@@ -10,7 +10,7 @@ Nesta documentação, explicaremos as configurações necessárias para o recebi
 
 ## Configuração através do Painel do desenvolvedor
 
-Abaixo explicaremos como indicar as URLs que serão notificadas, configurar os eventos dos quais se receberá a notificação e simular o recebimento de diversos tipos de notificações.
+Abaixo explicaremos como: indicar as URLs que serão notificadas, configurar os eventos dos quais se receberá a notificação, simular o recebimento de diversos tipos de notificações e validar que as notificações que recebe são enviadas pelo Mercado Pago.
 
 ![webhooks](/images/dashboard/webhooks-pt.png)
 
@@ -37,7 +37,62 @@ Abaixo explicaremos como indicar as URLs que serão notificadas, configurar os e
 | `delivery_cancellation` | `case_created`| Solicitação de cancelamento do envio |
 | `topic_claims_integration_wh` | `updated`| Reclamações feitas pelas vendas |
 
-5. Por fim, clique em **Salvar**.
+5. Por fim, clique em **Salvar** para gerar uma **assinatura secreta** para a aplicação. A assinatura é um método de validação para garantir que notificações recebidas foram enviadas pelo Mercado Pago. 
+
+> WARNING
+>
+> Importante
+>
+> O Mercado Pago sempre enviará essa assinatura nas notificações Webhooks. Sempre confira essa informação de autenticidade para evitar fraudes. </br></br>
+> </br></br>
+> A assinatura gerada não tem prazo de validade e, embora não seja obrigatório, recomendamos renovar periodicamente a **assinatura secreta**. Para isso, basta clicar no botão de redefinição ao lado da assinatura.
+
+### Validar origem da notificação
+
+No momento em que a URL cadastrada receber uma notificação, você poderá validar se o conteúdo enviado no _header_ `x-signature` (exemplo: `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`) foi enviado pelo Mercado Pago, a fim de obter mais segurança no recebimento das suas notificações. Veja abaixo como configurar essa validação.
+
+1. Extraia o _timestamp_ (`ts`) e a assinatura do _header_ `x-signature`. Para isso, divida o conteúdo do _header_ pelo caractere `,`, o que resultará em uma lista de elementos. 
+2. Em seguida, divida cada elemento da lista pelo caractere `=`, o que resultará em um par de prefixos e os valores. O valor para o prefixo `ts` é o _timestamp_ da notificação e `v1` é a assinatura encriptada.
+3. Utilizando o _template_ abaixo, substitua os parâmetros pelos dados recebidos na sua notificação. 
+
+```template
+post;[urlpath];data.id=[data.id_url];type=[topic_url];user-agent:mercadopago webhook v1.0;[timestamp];action:[json_action];api_version:[json_apiversion];date_created:[json_datecreated_RFC3339];id:[id_json];live_mode:[livemode_json];type:[type_json];user_id:[userid_json];
+```
+
+No _template_, os valores englobados por `[]` devem ser trocados pelos valores da notificação, como:
+
+- Parâmetros com sufixo `_url` são provenientes de _query params_. Exemplo: `[topic_url]` será substituido pelo valor `payment` (sem os colchetes).
+- Parâmetros com sufixo `_json` são provenientes do _body_ da requisição.
+- `[urlpath]` será somente o domíno + o _path_ da URL (sem "http://" ou "https://").
+- `[timestamp]` será o valor `ts` extraído do _header_ `x-signature`.
+
+> Caso algum dos valores apresentados no _template_ abaixo não esteja presente em sua notificação, você deverá removê-los do template.
+
+4. No [Painel do desenvolvedor](/developers/panel/app), selecione a aplicação integrada, navegue até a seção Webhooks e **revele a assinatura secreta** gerada.
+5. Gere a contra chave para validação. Para isso, calcule um [HMAC](https://pt.wikipedia.org/wiki/HMAC) com a função de `hash SHA256` em base hexadecimal, utilize a **assinatura secreta** como chave e o _template_ populado com os valores como mensagem. Exemplo:
+
+[[[
+```php
+$cyphedSignature = hash_hmac('sha256', $data, $key);
+```
+```node
+const crypto = require('crypto');
+const cyphedSignature = crypto
+    .createHmac('sha256', secret)
+    .update(signatureTemplateParsed)
+    .digest('hex'); 
+```
+```java
+String cyphedSignature = new HmacUtils("HmacSHA256", secret).hmacHex(signedTemplate);
+```
+```python
+import hashlib, hmac, binascii
+
+cyphedSignature = binascii.hexlify(hmac_sha256(secret.encode(), signedTemplate.encode()))
+```
+]]]
+
+6. Por fim, compare a chave gerada com a chave extraída do cabeçalho, considerando elas devem ter uma correspondência exata. Além disso, é possível usar o _timestamp_ extraído do _header_ para comparação com um _timestamp_ gerado na hora do recebimento da notificação, a fim de estipular uma tolerância de atraso no recebimento da mensagem.
 
 ### Simular o recebimento da notificação
 
@@ -290,6 +345,7 @@ curl -X POST \
 > <br/>
 > No caso dos eventos de `delivery` e `topic_claims_integration_wh`, também teremos alguns atributos diferentes na resposta. Veja na tabela abaixo quais são essas particularidades.
 
+
 ```json
 {
  "id": 12345,
@@ -304,7 +360,6 @@ curl -X POST \
  }
 }
 ```
-
 Isso indica que foi criado o pagamento **999999999** para o usuário **44444** em modo de produção com a versão V1 da API e que esse evento ocorreu na data **2016-03-25T10:04:58.396-04:00**.
 
 | Atributo | Descrição |
