@@ -96,6 +96,8 @@ MPRequestOptions requestOptions = MPRequestOptions.builder()
     .customHeaders(customHeaders)
     .build();
 
+MercadoPagoConfig.setAccessToken("YOUR_ACCESS_TOKEN");
+
 PaymentClient client = new PaymentClient();
 PaymentCreateRequest paymentCreateRequest =
   PaymentCreateRequest.builder()
