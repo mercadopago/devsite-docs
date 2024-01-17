@@ -104,6 +104,7 @@ Utilize o código de autorização obtido na etapa anterior para adquirir as cre
 | `<CLIENT_SECRET>`        | Sua SECRET_KEY, também disponível nos detalhes de sua aplicação.                              |
 | `<AUTHORIZATION_CODE>`   | Código de autorização obtido ao redirecionar o usuário de volta para o seu site.                     |
 | `<REDIRECT_URI>`         | Deve ser a mesma Redirect URI configurada em sua aplicação.                                     |
+| `<STATE>`         | Substitua o valor "RANDOM_ID" por um identificador que seja único para cada tentativa e que não inclua informações sensíveis de forma que você consiga identificar de quem é o código recebido.                                     |
 
 ```curl
 curl -X POST \
@@ -114,7 +115,8 @@ curl -X POST \
      -d 'client_secret=<CLIENT_SECRET>' \
      -d 'grant_type=authorization_code' \
      -d 'code=<AUTHORIZATION_CODE>' \
-     -d 'redirect_uri=<REDIRECT_URI>'
+     -d 'redirect_uri=<REDIRECT_URI>' \
+     -d 'state=<RANDOM_ID>'
 ```
 
 #### Resposta
