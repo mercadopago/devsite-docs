@@ -61,16 +61,20 @@ post;[urlpath];data.id=[data.id_url];type=[topic_url];user-agent:mercadopago web
 
 En el _template_, los valores entre `[]` deben ser reemplazados por los valores de la notificación, como:
 
-- Los parámetros con el sufijo *_url* provienen de _query params_. Ejemplo: [topic_url] se sustituirá por el valor `payment`` (sin corchetes).
-- Los parámetros con el sufijo *_json* provienen del _body_ de la solicitud.
-- [urlpath] será solo el dominio + el _path_ de la URL (sin "http://" o "https://").
-- [timestamp] será el valor ts extraído del _header_ `x-signature`.
+- Los parámetros con el sufijo `_url` provienen de _query params_. Ejemplo: `[topic_url]` se sustituirá por el valor `payment`` (sin corchetes).
+- Los parámetros con el sufijo `_json` provienen del _body_ de la solicitud.
+- `[urlpath]` será solo el dominio + el _path_ de la URL (sin "http://" o "https://").
+- `[timestamp]` será el valor ts extraído del _header_ `x-signature`.
 
 > Si alguno de los valores presentados en el _header_ a continuación no está presente en tu notificación, deberás eliminarlos de la plantilla.
 
 4. En el [Panel del desarrollador](/developers/panel/app), selecciona la aplicación integrada, ve a la sección de Webhooks y revela la clave secreta generada.
 5. Genera la contraclave para la validación. Para hacer esto, calcula un [HMAC](https://es.wikipedia.org/wiki/HMAC) con la función de `hash SHA256` en base hexadecimal, utilizando la **clave secreta** como clave y el _template_ poblada con los valores como mensaje. Ejemplo:
 
+[[[
+```php
+$cyphedSignature = hash_hmac('sha256', $data, $key);
+```
 ```node
 const crypto = require('crypto');
 const cyphedSignature = crypto
@@ -78,6 +82,15 @@ const cyphedSignature = crypto
     .update(signatureTemplateParsed)
     .digest('hex'); 
 ```
+```java
+String cyphedSignature = new HmacUtils("HmacSHA256", secret).hmacHex(signedTemplate);
+```
+```python
+import hashlib, hmac, binascii
+
+cyphedSignature = binascii.hexlify(hmac_sha256(secret.encode(), signedTemplate.encode()))
+```
+]]]
 
 6. Finalmente, compara la clave generada con la clave extraída del _header_, asegurándote de que tengan una correspondencia exacta. Además, puedes usar el _timestamp_ extraído del _header_ para compararlo con un timestamp generado en el momento de la recepción de la notificación, con el fin de establecer una tolerancia de demora en la recepción del mensaje.
 
