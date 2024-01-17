@@ -388,7 +388,7 @@ Você pode verificar os possíveis estados de uma intenção de pagamento acessa
 
 Se desejar, você pode cancelar uma intenção de pagamento atribuída a um dispositivo Point. Para isso, você tem duas opções:
 
-* Se o estado da intenção for `opened` e ainda não tiver sido enviada para o terminal, você pode [cancelá-la via API](/developers/pt/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) fazendo a seguinte chamada:
+* Se o estado da intenção for `open` e ainda não tiver sido enviada para o terminal, você pode [cancelá-la via API](/developers/pt/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) fazendo a seguinte chamada:
 
 ``` curl
 curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/{deviceid}/payment-intents/{paymentintentid}' \
