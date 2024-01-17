@@ -49,17 +49,37 @@ A continuación explicaremos cómo: indicar las URL que serán notificadas, conf
 
 ### Validar origen de la notificación
 
-1. Después de configurar las URLs y los Eventos, **revela la clave secreta** generada.
-2. A continuación, utiliza la clave secreta para validar el encabezado `x-signature-id`. El valor recibido en el encabezado debe coincidir con la clave obtenida en el paso previo. En el ejemplo que se muestra a continuación el valor `59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1` debería coincidir con la clave secreta generada.
+En el momento en que la URL registrada reciba una notificación, podrás validar si el contenido enviado en el _header_ `x-signature` (ejemplo: `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`) fue enviado por Mercado Pago, con el fin de obtener mayor seguridad en la recepción de tus notificaciones. A continuación, te indicamos cómo configurar esta validación.
 
-```header
-...
-accept-encoding	*
-content-type	application/json
-accept	*/*
-x-signature-id	59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1
-...
+1. Extrae el _timestamp_ (`ts`) y la clave del _header_ `x-signature`. Para hacer esto, divide el contenido del _header_ por el carácter `,`, lo que resultará en una lista de elementos.
+2. Luego, divide cada elemento de la lista por el carácter `=`, lo que resultará en un par de prefijos y los valores. El valor para el prefijo `ts` es el _timestamp_ de la notificación y `v1` es la clave encriptada.
+3. Utilizando el _template_ a continuación, sustituye los parámetros con los datos recibidos en tu notificación.
+
+```template
+post;[urlpath];data.id=[data.id_url];type=[topic_url];user-agent:mercadopago webhook v1.0;[timestamp];action:[json_action];api_version:[json_apiversion];date_created:[json_datecreated_RFC3339];id:[id_json];live_mode:[livemode_json];type:[type_json];user_id:[userid_json];
 ```
+
+En el _template_, los valores entre `[]` deben ser reemplazados por los valores de la notificación, como:
+
+- Los parámetros con el sufijo *_url* provienen de _query params_. Ejemplo: [topic_url] se sustituirá por el valor `payment`` (sin corchetes).
+- Los parámetros con el sufijo *_json* provienen del _body_ de la solicitud.
+- [urlpath] será solo el dominio + el _path_ de la URL (sin "http://" o "https://").
+- [timestamp] será el valor ts extraído del _header_ `x-signature`.
+
+> Si alguno de los valores presentados en el _header_ a continuación no está presente en tu notificación, deberás eliminarlos de la plantilla.
+
+4. En el [Panel del desarrollador](/developers/panel/app), selecciona la aplicación integrada, ve a la sección de Webhooks y revela la clave secreta generada.
+5. Genera la contraclave para la validación. Para hacer esto, calcula un [HMAC](https://es.wikipedia.org/wiki/HMAC) con la función de `hash SHA256` en base hexadecimal, utilizando la **clave secreta** como clave y el _template_ poblada con los valores como mensaje. Ejemplo:
+
+```node
+const crypto = require('crypto');
+const cyphedSignature = crypto
+    .createHmac('sha256', secret)
+    .update(signatureTemplateParsed)
+    .digest('hex'); 
+```
+
+6. Finalmente, compara la clave generada con la clave extraída del _header_, asegurándote de que tengan una correspondencia exacta. Además, puedes usar el _timestamp_ extraído del _header_ para compararlo con un timestamp generado en el momento de la recepción de la notificación, con el fin de establecer una tolerancia de demora en la recepción del mensaje.
 
 ### Simular la recepción de la notificación
 

@@ -66,7 +66,7 @@ No _template_, os valores englobados por `[]` devem ser trocados pelos valores d
 - [urlpath] será somente o domíno + o _path_ da URL (sem "http://" ou "https://").
 - [timestamp] será o valor `ts` extraído do _header_ `x-signature`.
 
-> Caso algum dos valores apresentados no _template_ abaixo não esteja presente em sua notificação, você deverá remover estes valores do template.
+> Caso algum dos valores apresentados no _template_ abaixo não esteja presente em sua notificação, você deverá removê-los do template.
 
 4. No [Painel do desenvolvedor](/developers/panel/app), selecione a aplicação integrada, navegue até a seção Webhooks e **revele a assinatura secreta** gerada.
 5. Gere a contra chave para validação. Para isso, calcule um [HMAC](https://pt.wikipedia.org/wiki/HMAC) com a função de `hash SHA256` em base hexadecimal, utilize a **assinatura secreta** como chave e o _template_ populado com os valores como mensagem. Exemplo:
@@ -79,7 +79,7 @@ const cyphedSignature = crypto
     .digest('hex'); 
 ```
 
-6. Por fim, compare a chave gerada com a chave extraída do cabeçalho, elas devem ter uma correspondência exata. Além disso, é possível usar o _timestamp_ extraído do `header` para comparação com um _timestamp_ gerado na hora do recebimento da notificação, a fim de estipular uma tolerância de atraso no recebimento da mensagem.
+6. Por fim, compare a chave gerada com a chave extraída do cabeçalho, considerando elas devem ter uma correspondência exata. Além disso, é possível usar o _timestamp_ extraído do _header_ para comparação com um _timestamp_ gerado na hora do recebimento da notificação, a fim de estipular uma tolerância de atraso no recebimento da mensagem.
 
 ### Simular o recebimento da notificação
 
