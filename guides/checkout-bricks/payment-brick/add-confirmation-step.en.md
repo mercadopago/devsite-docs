@@ -6,7 +6,7 @@ This additional step provides the buyer with a more transparent and secure exper
 
 <center>
 
-![review-confirm](checkout-bricks/confirmation-step-es.gif)
+![review-confirm-mlm](checkout-bricks/review-confirm-mlm-es.gif)
 
 </center>
 
@@ -16,7 +16,7 @@ To integrate this functionality, it is necessary to send additional information 
 >
 > Attention
 >
-> Make sure to replace all numeric and textual values within "<>".
+> Make sure to replace all numeric and textual values within `<>`.
 
 ```Javascript
 const settings = {
@@ -53,6 +53,7 @@ const settings = {
         city: "<PAYER_CITY>", // optional
         federalUnit: "<PAYER_FED_UNIT>", // optional
         zipCode: "<ZIP_CODE>",
+        additionalInformation: "<ADDITIONAL_INFORMATION>", // opcional
       },
     },
     payer: { // optional
@@ -184,7 +185,7 @@ Data related to the shipping address panel, which will only be rendered when suc
 
 <center>
 
-![review-confirm-shipping-en](checkout-bricks/review-confirm-shipping-en.png)
+![review-confirm-shipping-mlm](checkout-bricks/review-confirm-shipping-mlm-en.png)
 
 </center>
 
@@ -217,7 +218,7 @@ Panel displaying the fiscal data of the order, which will only be rendered when 
 
 <center>
 
-![review-confirm-billing-en](checkout-bricks/review-confirm-billing-en.png)
+![review-confirm-billing-mlm](checkout-bricks/review-confirm-billing-mlm-en.png)
 
 </center>
 
@@ -255,7 +256,7 @@ In the `discounts` field, you can enter coupons or other types of discounts that
 
 <center>
 
-![review-confirm-discounts-en](checkout-bricks/review-confirm-discounts-en.png)
+![review-confirm-discounts-mlm](checkout-bricks/review-confirm-discounts-mlm-en.png)
 
 </center>
 
