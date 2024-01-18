@@ -1102,7 +1102,7 @@
         ],
         "description": {
           "en": "This endpoint allows to create a refund intent, where you can specify the details of the transaction that you are willing to refund. This intent must be assigned to the device that processed the original payment. That is, you will be able to start a process of returning the money associated with a previous transaction, and it will be processed on the assigned Point device",
-          "pt": "ste endpoint permite criar uma intenção de reembolso, onde é possível especificar os detalhes da transação que deseja reembolsar. Esta intenção deve ser associada ao dispositivo específico no qual a transação inicial foi processada. Isso significa que você pode iniciar um processo para devolver o dinheiro de uma transação anterior, e essa ação será processada no dispositivo Point atribuído",
+          "pt": "Este endpoint permite criar uma intenção de reembolso, onde é possível especificar os detalhes da transação que deseja reembolsar. Esta intenção deve ser associada ao dispositivo específico no qual a transação inicial foi processada. Isso significa que você pode iniciar um processo para devolver o dinheiro de uma transação anterior, e essa ação será processada no dispositivo Point atribuído",
           "es": "Este endpoint permite crear una intención de reembolso, donde es posible especificar los detalles de la transacción que deseas reembolsar. Esta intención debe asociarse al dispositivo específico en el que se procesó esa transacción inicial. Es decir, podrás comenzar un proceso de devolución del dinero asociado a una transacción anterior, y esa acción será procesada en el dispositivo Point asignado"
         },
         "parameters": [
@@ -1428,9 +1428,9 @@
           "mp-point"
         ],
         "description": {
-          "en": "This endpoint allows to cancel a refund intent while its status is \"[open]\" and it has not yet been send to the terminal",
-          "pt": "Este endpoint permite cancelar uma intenção de reembolso quando seu status for \"[open]\" e ainda não tiver sido enviada para o terminal",
-          "es": "Este endpoint permite cancelar una intención de reembolso cuando su estado sea \"[open]\" y todavía no haya sido enviada a la terminal"
+          "en": "This endpoint allows to cancel a refund intent while its status is [open] and it has not yet been send to the terminal",
+          "pt": "Este endpoint permite cancelar uma intenção de reembolso quando seu status for [open] e ainda não tiver sido enviada para o terminal",
+          "es": "Este endpoint permite cancelar una intención de reembolso cuando su estado sea [open] y todavía no haya sido enviada a la terminal"
         },
         "parameters": [
           {
@@ -1464,9 +1464,9 @@
             "name": "refundintentid",
             "in": "path",
             "description": {
-              "en": "Refund intent identifier that was received in the respose to its creation.",
-              "es": "Identificador de la intención de reembolso, que fue recibido en la respuesta al momento de su creación.",
-              "pt": "Identificador da intenção de reembolso, que foi recebido na resposta no momento de sua criação."
+              "en": "Refund intent identifier that was received in the respose to its creation. For example, \"7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1\"",
+              "es": "Identificador de la intención de reembolso, que fue recibido en la respuesta al momento de su creación. Por ejemplo, \"7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1\"",
+              "pt": "Identificador da intenção de reembolso, que foi recebido na resposta no momento de sua criação. Por ejemplo, \"7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1\""
             },
             "required": true,
             "schema": {
