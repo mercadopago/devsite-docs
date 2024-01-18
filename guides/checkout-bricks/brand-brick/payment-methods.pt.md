@@ -28,11 +28,12 @@ const settings = {
 ```react-jsx
 const customization = {
     paymentMethods: {
-      excludedPaymentMethods: ["master"], // optional string[]. default []
-      excludedPaymentTypes: ["ticket"], // optional string[]. default []
+        excludedPaymentMethods: ["master"], // optional string[]. default []. options ["master", "visa", "amex", "naranja", "maestro", "cabal", "cencosud", "cordobesa", "argencard", "diners", "tarshop", "cmr", "rapipago", "pagofacil", "mercadopago"]
+         excludedPaymentTypes: ["ticket"], // optional string[]. default []. optional string[]. default []. options ["credit_card", "debit_card", "ticket", "account_money", "mercado_credito"]
       maxInstallments: 12, // optional number. min 2 max 12
       interestFreeInstallments: false, // optional boolean
     },
 };
+
 ```
 ]]]
