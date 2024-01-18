@@ -16,9 +16,9 @@
             "name": "x-test-scope",
             "in": "header",
             "description": {
-              "en": "This is a temporary header. It should be used only in the development stage with the value \"sandbox\"",
-              "es": "Este es un header temporal. Debe usarse sólo para la etapa de desarrollo con el valor \"sandbox\"",
-              "pt": "Este é um header temporário. Deve ser usado apenas para desenvolvimento com o valor \"sandbox\""
+              "en": "This is a temporary header. It should be used only in the development stage with the value \"sandbox\". When going to production, it should be removed",
+              "es": "Este es un header temporal, debe usarse solo para desarrollo con el valor \"sandbox\". Al momento de salir a producción, debe ser removido",
+              "pt": "Este é um header temporário, deve ser usado apenas para desenvolvimento com o valor \"sandbox\". Na hora de entrar em produção, deve ser retirado"
             },
             "schema": {
               "type": "string",
@@ -321,9 +321,9 @@
             "name": "x-test-scope",
             "in": "header",
             "description": {
-              "en": "This is a temporary header. It should be used only in the development stage with the value \"sandbox\"",
-              "es": "Este es un header temporal. Debe usarse sólo para la etapa de desarrollo con el valor \"sandbox\"",
-              "pt": "Este é um header temporário. Deve ser usado apenas para desenvolvimento com o valor \"sandbox\""
+                "en": "This is a temporary header. It should be used only in the development stage with the value \"sandbox\". When going to production, it should be removed",
+                "es": "Este es un header temporal, debe usarse solo para desarrollo con el valor \"sandbox\". Al momento de salir a producción, debe ser removido",
+                "pt": "Este é um header temporário, deve ser usado apenas para desenvolvimento com o valor \"sandbox\". Na hora de entrar em produção, deve ser retirado"
             },
             "schema": {
               "type": "string",
@@ -653,9 +653,9 @@
             "name": "x-test-scope",
             "in": "header",
             "description": {
-              "es": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
-              "pt": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
-              "en": "This is a temporary header, it should be used just for development with the value \"sandbox\""
+              "en": "This is a temporary header. It should be used only in the development stage with the value \"sandbox\". When going to production, it should be removed",
+              "es": "Este es un header temporal, debe usarse solo para desarrollo con el valor \"sandbox\". Al momento de salir a producción, debe ser removido",
+              "pt": "Este é um header temporário, deve ser usado apenas para desenvolvimento com o valor \"sandbox\". Na hora de entrar em produção, deve ser retirado"
             },
             "schema": {
               "type": "string",
@@ -1101,18 +1101,18 @@
           "mp-point"
         ],
         "description": {
-          "en": "This endpoint allows to create a refund intent, with the details of the transaction, and assign it to a device. That is, it allows you to create an attempt to return the amount associated with a previous transaction, which will be processed on the assigned Point device",
-          "pt": "Este endpoint permite que você crie uma intenção de reembolso, com os detalhes da transação a ser realizada, e atribuí-la a um dispositivo. Ou seja, permite criar uma tentativa de devolução do valor associado a uma transação anterior, que será processada no dispositivo Point atribuído",
-          "es": "Este endpoint permite crear una intención de reembolso, con los detalles de la transacción a realizarse, y asignarla a un dispositivo. Es decir, permite crear un intento de devolución del monto asociado a una transacción previa, que será procesado en el dispositivo Point asignado"
+          "en": "This endpoint allows to create a refund intent, where you can specify the details of the transaction that you are willing to refund. This intent must be assigned to the device that processed the original payment. That is, you will be able to start a process of returning the money associated with a previous transaction, and it will be processed on the assigned Point device",
+          "pt": "ste endpoint permite criar uma intenção de reembolso, onde é possível especificar os detalhes da transação que deseja reembolsar. Esta intenção deve ser associada ao dispositivo específico no qual a transação inicial foi processada. Isso significa que você pode iniciar um processo para devolver o dinheiro de uma transação anterior, e essa ação será processada no dispositivo Point atribuído",
+          "es": "Este endpoint permite crear una intención de reembolso, donde es posible especificar los detalles de la transacción que deseas reembolsar. Esta intención debe asociarse al dispositivo específico en el que se procesó esa transacción inicial. Es decir, podrás comenzar un proceso de devolución del dinero asociado a una transacción anterior, y esa acción será procesada en el dispositivo Point asignado"
         },
         "parameters": [
           {
             "name": "x-test-scope",
             "in": "header",
             "description": {
-              "en": "This is a temporary header. It should be used only in the development stage with the value \"sandbox\"",
-              "es": "Este es un header temporal. Debe usarse sólo para la etapa de desarrollo con el valor \"sandbox\"",
-              "pt": "Este é um header temporário. Deve ser usado apenas para desenvolvimento com o valor \"sandbox\""
+              "en": "This is a temporary header. It should be used only in the development stage with the value \"sandbox\". When going to production, it should be removed",
+              "es": "Este es un header temporal, debe usarse solo para desarrollo con el valor \"sandbox\". Al momento de salir a producción, debe ser removido",
+              "pt": "Este é um header temporário, deve ser usado apenas para desenvolvimento com o valor \"sandbox\". Na hora de entrar em produção, deve ser retirado"
             },
             "schema": {
               "type": "string",
@@ -1123,9 +1123,9 @@
             "name": "deviceId",
             "in": "path",
             "description": {
-              "en": "Identifier of the device that will receive the refund intent",
-              "es": "Identificador del dispositivo que recibirá la intención de reembolso",
-              "pt": "Identificador do dispositivo que irá receber a intenção de reembolso"
+              "en": "Identifier of the device that will receive the refund intent, for example \"PAX_A910__SMARTPOS1234345545\". If you don't know this value, you can send a GET to \"Search payment intent endpoint\"",
+              "es": "Identificador del dispositivo que recibirá la intención de reembolso, por ejemplo \"PAX_A910__SMARTPOS1234345545\". Si no conoces este valor, puedes obtenerlo a través del GET \"Buscar en intención de pago\"",
+              "pt": "Identificador do dispositivo que irá receber a intenção de reembolso, por exemplo \"PAX_A910__SMARTPOS1234345545\". Caso você não saiba esse valor, poderá obtê-lo através do GET \"Buscar em intenção de pagamento\""
             },
             "required": true,
             "schema": {
@@ -1146,9 +1146,9 @@
                     "example": "12345678",
                     "required": true,
                     "description": {
-                      "en": "Identification number of the payment to refund. This payment must be already processed, which is when you get its ID.",
-                      "pt": "Número de identificação do pagamento a reembolsar. Deve ser um pagamento já processado,  que é quando você recebe a identificação.",
-                      "es": "Número de identificación del pago a reembolsar. Debe ser un pago ya procesado, que es cuando se obtiene su identificación."
+                      "en": "Identification number of the payment to refund, for example \"65412345\". This payment must be already processed, not an intent.",
+                      "pt": "Número de identificação do pagamento a reembolsar, por exemplo \"65412345\". Deve ser um pagamento já processado, não uma intenção",
+                      "es": "Número de identificación del pago a reembolsar, por ejemplo \"65412345\". Debe ser un pago ya procesado, no una intención."
                     }
                   },
                   "additional_info": {
@@ -1163,9 +1163,9 @@
                       "print_on_terminal": {
                         "type": "array",
                         "description": {
-                          "en": "Indicates if you want to print the seller ticket or the buyer ticket on the device.",
-                          "pt": "Indica se você quer imprimir o ticket do vendedor ou o ticket do comprador na terminal.",
-                          "es": "Indica si quieres imprimir el ticket del vendedor o el ticket del comprador en la terminal."
+                          "en": "Indicates if you want to print the seller ticket (\"SELLER_TICKET\") or the buyer ticket (\"BUYER_TICKET\") on the device.",
+                          "pt": "Indica se você quer imprimir o ticket do vendedor (\"SELLER_TICKET\") ou o ticket do comprador (\"BUYER_TICKET\") na terminal.",
+                          "es": "Indica si quieres imprimir el ticket del vendedor (\"SELLER_TICKET\") o el ticket del comprador (\"BUYER_TICKET\") en la terminal . "
                         },
                         "items": {
                           "type": "string"
@@ -1258,8 +1258,8 @@
                           "title": "400",
                           "description": {
                             "en": "Bad request - Field is missing o incorrect",
-                            "es": "Bad request - Field is missing o incorrect",
-                            "pt": "Bad request - Field is missing o incorrect"
+                            "es": "Bad request - Hay campos faltantes o incorrectos",
+                            "pt": "Bad request - Tem campos ausentes ou incorretos"
                           }
                         }
                       ]
@@ -1287,8 +1287,8 @@
                           "title": "401",
                           "description": {
                             "en": "Unauthorized - Token is invalid or expired",
-                            "es": "Unauthorized - Token is invalid or expired",
-                            "pt": "Unauthorized - Token is invalid or expired"
+                            "es": "Unauthorized - El Token es inválido o expiró",
+                            "pt": "Unauthorized - O Token é inválido ou expirou"
                           }
                         }
                       ]
@@ -1316,8 +1316,8 @@
                           "title": "403",
                           "description": {
                             "en": "Forbidden - Integrator isn't registered",
-                            "es": "Forbidden - Integrator isn't registered",
-                            "pt": "Forbidden - Integrator isn't registered"
+                            "es": "Forbidden - Integrador no registrado",
+                            "pt": "Forbidden - Integrador não registrado"
                           }
                         }
                       ]
@@ -1345,8 +1345,8 @@
                           "title": "404",
                           "description": {
                             "en": "Not Found - Device or Payment not found",
-                            "es": "Not Found - Device or Payment not found",
-                            "pt": "Not Found - Device or Payment not found"
+                            "es": "Not Found - Dispositivo o pago no encontrado",
+                            "pt": "Not Found - Dispositivo o pagamento não encontrado"
                           }
                         }
                       ]
@@ -1374,8 +1374,8 @@
                           "title": "409",
                           "description": {
                             "en": "Conflict-error - Device has a queued intent",
-                            "es": "Conflict-error - Device has a queued intent",
-                            "pt": "Conflict-error - Device has a queued intent"
+                            "es": "Conflict-error - El dispositivo tiene una intención en espera",
+                            "pt": "Conflict-error - O dispositivo tem uma intenção de espera"
                           }
                         }
                       ]
@@ -1428,18 +1428,18 @@
           "mp-point"
         ],
         "description": {
-          "en": "This endpoint allows to cancel a refund intent while its status is [open] and it has not yet been send to the terminal",
-          "pt": "Este endpoint permite cancelar uma intenção de reembolso quando seu status for [open] e ainda não tiver sido enviada para o terminal",
-          "es": "Este endpoint permite cancelar una intención de reembolso cuando su estado sea [open] y todavía no haya sido enviada a la terminal"
+          "en": "This endpoint allows to cancel a refund intent while its status is \"[open]\" and it has not yet been send to the terminal",
+          "pt": "Este endpoint permite cancelar uma intenção de reembolso quando seu status for \"[open]\" e ainda não tiver sido enviada para o terminal",
+          "es": "Este endpoint permite cancelar una intención de reembolso cuando su estado sea \"[open]\" y todavía no haya sido enviada a la terminal"
         },
         "parameters": [
           {
             "name": "x-test-scope",
             "in": "header",
             "description": {
-              "es": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
-              "pt": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
-              "en": "This is a temporary header, it should be used just for development with the value \"sandbox\""
+              "en": "This is a temporary header. It should be used only in the development stage with the value \"sandbox\". When going to production, it should be removed",
+              "es": "Este es un header temporal, debe usarse solo para desarrollo con el valor \"sandbox\". Al momento de salir a producción, debe ser removido",
+              "pt": "Este é um header temporário, deve ser usado apenas para desenvolvimento com o valor \"sandbox\". Na hora de entrar em produção, deve ser retirado"
             },
             "schema": {
               "type": "string",
@@ -1450,9 +1450,9 @@
             "name": "deviceId",
             "in": "path",
             "description": {
-              "en": "Identifier of the device that have the intent queued",
-              "pt": "Identificador do dispositivo que tem a tentativa em fila",
-              "es": "Identificador del dispositivo que tiene el intento en cola"
+              "en": "Identifier of the device that have the refund intent queued, for example \"PAX_A910__SMARTPOS1234345545\". If you don't know this value, you can send a GET to \"Search refund intent endpoint\"",
+              "es": "Identificador del dispositivo que tiene la intención de reembolso en fila, por ejemplo \"PAX_A910__SMARTPOS1234345545\". Si no conoces este valor, puedes obtenerlo a través del GET \"Buscar en intención de reembolso\"",
+              "pt": "Identificador do dispositivo que tem a intenção de reembolso em fila, por exemplo \"PAX_A910__SMARTPOS1234345545\". Caso você não saiba esse valor, poderá obtê-lo através do GET \"Buscar em intenção de reembolso\""
             },
             "required": true,
             "schema": {
@@ -1489,7 +1489,12 @@
                   "properties": {
                     "id": {
                       "type": "string",
-                      "example": "d71e88d6-6281-416b-b8ed-592c27352c99"
+                      "example": "d71e88d6-6281-416b-b8ed-592c27352c99",
+                      "description":{
+                        "en": "Identifier of the refund intent that was successfully cancelled",
+                        "es": "Identificador de la intención de reembolso que fue cancelada con éxito",
+                        "pt": "Identificador da intenção de reembolso que foi cancelada com sucesso"
+                      }
                     }
                   }
                 }
@@ -1514,8 +1519,8 @@
                           "title": "401",
                           "description": {
                             "en": "Unauthorized - Token is invalid",
-                            "es": "Unauthorized - Token is invalid",
-                            "pt": "Unauthorized - Token is invalid"
+                            "es": "Unauthorized - Token inválido",
+                            "pt": "Unauthorized - Token inválido"
                           }
                         }
                       ]
@@ -1543,8 +1548,8 @@
                           "title": "403",
                           "description": {
                             "en": "Forbidden - Integrator isn't registered",
-                            "es": "Forbidden - Integrator isn't registered",
-                            "pt": "Forbidden - Integrator isn't registered"
+                            "es": "Forbidden - Integrador no registrado",
+                            "pt": "Forbidden - Integrador não registrado"
                           }
                         }
                       ]
@@ -1606,9 +1611,9 @@
             "name": "x-test-scope",
             "in": "header",
             "description": {
-              "en": "This is a temporary header, it should be used just for development with the value \"sandbox\"",
-              "es": "Este es un header temporal, debe usarse sólo para desarrollo con el valor \"sandbox\"",
-              "pt": "Este é um header temporário, deve ser usado apenas para desenvolvimento com o valor \"sandbox\""
+              "en": "This is a temporary header. It should be used only in the development stage with the value \"sandbox\". When going to production, it should be removed",
+              "es": "Este es un header temporal, debe usarse solo para desarrollo con el valor \"sandbox\". Al momento de salir a producción, debe ser removido",
+              "pt": "Este é um header temporário, deve ser usado apenas para desenvolvimento com o valor \"sandbox\". Na hora de entrar em produção, deve ser retirado"
             },
             "required": false,
             "schema": {
@@ -1620,9 +1625,9 @@
             "name": "refundintentid",
             "in": "path",
             "description": {
-              "en": "Refund intent identification",
-              "es": "Identificador de la intención de reembolso",
-              "pt": "Identificador da intenção de reembolso"
+              "en": "Refund intent identification, obtained when creating it. For example \"7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1\"",
+              "es": "Identificador de la intención de reembolso, obtenido al momento de crearla. Por ejemplo, \"7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1\"",
+              "pt": "Identificador da intenção de reembolso, obtido no momento de sua criação. Por exemplo, \"7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1\""
             },
             "required": true,
             "schema": {
@@ -1685,9 +1690,9 @@
                         "print_on_terminal": {
                           "type": "array",
                           "description": {
-                            "en": "Indicates if it will print the seller ticket or the buyer ticket on the device.",
-                            "pt": "Indica se irá imprimir o ticket do vendedor ou o ticket do comprador no dispositivo.",
-                            "es": "Indica si imprimir el ticket del vendedor o el ticket del comprador en el dispositivo."
+                            "en": "Indicates if it will print the seller (\"SELLER_TICKET\") ticket or the buyer ticket (\"BUYER_TICKET\") on the device.",
+                            "pt": "Indica se irá imprimir o ticket do vendedor (\"SELLER_TICKET\") ou o ticket do comprador (\"BUYER_TICKET\") no dispositivo.",
+                            "es": "Indica si imprimir el ticket del vendedor (\"SELLER_TICKET\") o el ticket del comprador (\"BUYER_TICKET\") en el dispositivo."
                           },
                           "items": {
                             "type": "string"
@@ -1719,8 +1724,8 @@
                           "title": "401",
                           "description": {
                             "en": "Unauthorized - Token is invalid",
-                            "es": "Unauthorized - Token is invalid",
-                            "pt": "Unauthorized - Token is invalid"
+                            "es": "Unauthorized - Token inválido",
+                            "pt": "Unauthorized - Token inválido"
                           }
                         }
                       ]
@@ -1748,8 +1753,8 @@
                           "title": "403",
                           "description": {
                             "en": "Forbidden - Integrator isn't registered",
-                            "es": "Forbidden - Integrator isn't registered",
-                            "pt": "Forbidden - Integrator isn't registered"
+                            "es": "Forbidden - Integrador no registrado",
+                            "pt": "Forbidden - Integrador não registrado"
                           }
                         }
                       ]
@@ -1777,8 +1782,8 @@
                           "title": "404",
                           "description": {
                             "en": "Not-found - Refund intent doesn't exist",
-                            "es": "Not-found - Refund intent doesn't exist",
-                            "pt": "Not-found - Refund intent doesn't exist"
+                            "es": "Not-found - Intención de reembolso inexistente",
+                            "pt": "Not-found - Intenção de reembolso inexistente"
                           }
                         }
                       ]
