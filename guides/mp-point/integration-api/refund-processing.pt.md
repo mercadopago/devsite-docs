@@ -36,7 +36,7 @@ Você pode [criar uma intenção de reembolso](/developers/pt/reference/integrat
 
 ``` curl
 curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/{deviceid}/refund' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+--h 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "payment_id": "68316255058",
      "additional_info": {
@@ -90,7 +90,7 @@ Lembre-se que o `id` e status da intenção de reembolso (por exemplo, *7f25f9aa
 
 ``` curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/refund/{intentid}' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+--h 'Authorization: Bearer YOUR_ACCESS_TOKEN'
 ```
 
 A resposta será semelhante a isso:

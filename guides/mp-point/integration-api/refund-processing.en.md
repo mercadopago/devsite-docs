@@ -35,7 +35,7 @@ You can [create a refund intent](/developers/en/reference/integrations_api/_poin
 
 ``` curl
 curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/{deviceid}/refund' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+--h 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "payment_id": "68316255058",
      "additional_info": {
@@ -86,7 +86,7 @@ Remember that `id` and status of the refund intent (for example, *7f25f9aa-eea6-
 
 ``` curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/refund/{intentid}' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+--h 'Authorization: Bearer YOUR_ACCESS_TOKEN'
 ```
 
 You will receive a response similar to this one below:
