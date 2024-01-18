@@ -1,12 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlb
-  - mlm
-  - mco
-  - mlc
----
-
 # Banners de Mercado Pago 
 
 Ofereça os benefícios de pagar com Mercado Pago no seu site

@@ -10,7 +10,7 @@
 
 Creae la configuración de inicio de Brick
 
-```Javascript
+```javascript
 bricksBuilder.create(
     "brand",
     "brandBrick_container"

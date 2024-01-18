@@ -1,12 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlb
-  - mlm
-  - mco
-  - mlc
----
-
 # Mercado Pago banners
 
 Promote all the benefits of using Mercado Pago as a payment method in your site.

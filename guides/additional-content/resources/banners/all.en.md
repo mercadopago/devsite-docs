@@ -1,12 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlb
-  - mlm
-  - mco
-  - mlc
----
-
 # All payments methods
 
 Allows your clients to pay with all available methods in Mercado Pago.
@@ -449,12 +440,3 @@ width="120" height="600"/>
 
 
 ------------
-
-
-> LEFT_BUTTON_RECOMMENDED_EN
->
-> Mercado Pago banners
->
-> Promote all the benefits of using Mercado Pago as a payment method in your site.
->
-> [Banners de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/banners/introduction)
