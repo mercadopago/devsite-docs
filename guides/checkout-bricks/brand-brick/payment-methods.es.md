@@ -5,7 +5,7 @@ La tabla a continuación muestra cuáles son las configuraciones de los medios d
 | Value prop | Configuraciones |
 |---|---|
 |`payment_methods` (por defecto) e `payment_methods_logos`| - Métodos de pago (Saldo disponible y Credits siempre estarán habilitados, tarjetas de crédito, débito y ticket) <br/><br/> - Marcas de tarjetas de crédito (Visa, Mastercard, American Express, Maestro, Naranja X, Cabal Cencosud, Cordobesa, Argencard, Diners, Tarjeta Shopping y CMR) <br/><br/> - Cantidad de cuotas (2 a 12) <br/><br/> - Cuotas con o sin interés <br/><br/> - Marcas de tarjetas de débito (Visa, Mastercard, Maestro y Cabal) <br/><br/> - Ticket (Rapipago y Pago Fácil) |
-|`installments`| - Marcas de tarjetas de crédito (Visa, Mastercard, American Express, Maestro, Naranja X, Cabal Cencosud, Cordobesa, Argencard, Diners, Tarjeta Shopping y CMR) - Cantidad de cuotas (2 a 12) <br/><br/> - Cuotas con o sin interés |
+|`installments`| - Marcas de tarjetas de crédito (Visa, Mastercard, American Express, Maestro, Naranja X, Cabal Cencosud, Cordobesa, Argencard, Diners, Tarjeta Shopping y CMR) <br/><br/> - Cantidad de cuotas (2 a 12) <br/><br/> - Cuotas con o sin interés |
 |`security`|No tiene configuraciones para el pop-up. |
 |`credits`| No hay pop-up.|
 

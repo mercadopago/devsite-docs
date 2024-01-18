@@ -38,7 +38,7 @@ const renderBrandBrick = async (bricksBuilder) => {
       visual: {
         hideMercadoPagoLogo: false, // optional boolean.
         contentAlign: "center", // optional "left" | "center" | "right".
-        backgroundColor: "white", // optional "white" | "MPPrimary" | "MPSecondary" | "black" | "transparent"
+             backgroundColor: "white", // optional "white" | "MPPrimary" | "MPSecondary" | "black" | "transparent"
         border: false, // optional boolean
         borderColor: "dark", // optional "dark" | "light"
         borderWidth: "1px", // optional "1px" | "2px"
@@ -48,10 +48,10 @@ const renderBrandBrick = async (bricksBuilder) => {
       },
       text: {
          align: "left", // optional "left" | "center" | "right",
-        useCustomFont: false, // optional boolean. OBS: If is true the Brick inheriths the font from the parent
-        textSize: "medium", // optional "extra_small" | "small" | "medium" | "large".
-        fontWeight: "semibold", // optional "regular" | "semibold".
-        textColor: "primary", // optional "primary" | "secondary" |"inverted".
+         useCustomFont: false, // optional boolean. OBS: If is true the Brick inheriths the font from the parent
+         textSize: "medium", // optional "extra_small" | "small" | "medium" | "large".
+         fontWeight: "semibold", // optional "regular" | "semibold".
+         textColor: "primary", // optional "primary" | "secondary" |"inverted".
       },
     },
   };
@@ -73,11 +73,10 @@ const customization = {
     },
     text: {
          align: "left", // optional "left" | "center" | "right",
-   valueProp: "payment_methods", // optional "installments" | "payment_methods" | "security" | "payment_methods_icons"
-        useCustomFont: false, // optional boolean. OBS: If is true the Brick inheriths the font from the parent
-       textSize: "medium", // optional "extra-small" | "small" | "medium" | "large".
+         useCustomFont: false, // optional boolean. OBS: If is true the Brick inheriths the font from the parent
+         textSize: "medium", // optional "extra-small" | "small" | "medium" | "large".
          fontWeight: "semibold", // optional "regular" | "semibold".
-       textColor: "primary", // optional "primary" | "secondary" | "inverted".
+      textColor: "primary", // optional "primary" | "secondary" | "inverted".
     },
   },
 };

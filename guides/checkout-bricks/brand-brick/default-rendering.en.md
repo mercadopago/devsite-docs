@@ -4,7 +4,7 @@
 >
 > Important
 >
-> To perform Status Screen Brick rendering, first perform the [initialization steps](/developers/en/docs/checkout-bricks/common-initialization) shared among all Bricks. 
+> To perform Brand Brick rendering, first perform the [initialization steps](/developers/en/docs/checkout-bricks/common-initialization) shared among all Bricks. 
 
 ## Configure the Brick
 
