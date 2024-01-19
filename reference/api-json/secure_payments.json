@@ -4,12 +4,12 @@
     "/external_payment": {
       "post": {
         "tags": [
-          "Payment"
+          "checkout-pro"
         ],
         "description": {
           "en": "This endopoint is used to make external Mercado Pago payments. Nowadays, it's only being used by WhatsApp.",
           "pt": "Esse endpoint é usada para realizar pagamentos externos do Mercado Pago. Atualmente, está sendo utilizada apenas pelo WhatsApp.",
-          "en": "Este endpoint se utiliza para realizar pagos externos de Mercado Pago. Actualmente, solo está siendo utilizada por WhatsApp."
+          "es": "Este endpoint se utiliza para realizar pagos externos de Mercado Pago. Actualmente, solo está siendo utilizada por WhatsApp."
         },
         "parameters": [
           {
@@ -119,7 +119,7 @@
                           "description": {
                             "en": "Country of the payer.",
                             "pt": "País do pagador.",
-                            "en": "País del pagador"
+                            "es": "País del pagador"
                           },
                           "type": "string",
                           "example": "BR"
