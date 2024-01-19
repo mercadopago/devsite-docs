@@ -38,7 +38,7 @@ const renderBrandBrick = async (bricksBuilder) => {
       visual: {
         hideMercadoPagoLogo: false, // optional boolean.
         contentAlign: "center", // optional "left" | "center" | "right".
-             backgroundColor: "white", // optional "white" | "MPPrimary" | "MPSecondary" | "black" | "transparent"
+        backgroundColor: "white", // optional "white" | "MPPrimary" | "MPSecondary" | "black" | "transparent"
         border: false, // optional boolean
         borderColor: "dark", // optional "dark" | "light"
         borderWidth: "1px", // optional "1px" | "2px"
@@ -47,11 +47,11 @@ const renderBrandBrick = async (bricksBuilder) => {
         horizontalPadding: "16px", // optional  string format: "Npx". max "40px"
       },
       text: {
-         align: "left", // optional "left" | "center" | "right",
-         useCustomFont: false, // optional boolean. OBS: If is true the Brick inheriths the font from the parent
-         textSize: "medium", // optional "extra_small" | "small" | "medium" | "large".
-         fontWeight: "semibold", // optional "regular" | "semibold".
-         textColor: "primary", // optional "primary" | "secondary" |"inverted".
+        align: "left", // optional "left" | "center" | "right",
+        useCustomFont: false, // optional boolean. OBS: If is true the Brick inheriths the font from the parent
+        textSize: "medium", // optional "extra_small" | "small" | "medium" | "large".
+        fontWeight: "semibold", // optional "regular" | "semibold".
+        textColor: "primary", // optional "primary" | "secondary" |"inverted".
       },
     },
   };
@@ -72,10 +72,10 @@ const customization = {
       horizontalPadding: "16px" // optional  string format: "Npx". max "40px"
     },
     text: {
-         align: "left", // optional "left" | "center" | "right",
-         useCustomFont: false, // optional boolean. OBS: If is true the Brick inheriths the font from the parent
-         textSize: "medium", // optional "extra-small" | "small" | "medium" | "large".
-         fontWeight: "semibold", // optional "regular" | "semibold".
+      align: "left", // optional "left" | "center" | "right",
+      useCustomFont: false, // optional boolean. OBS: If is true the Brick inheriths the font from the parent
+      textSize: "medium", // optional "extra-small" | "small" | "medium" | "large".
+      fontWeight: "semibold", // optional "regular" | "semibold".
       textColor: "primary", // optional "primary" | "secondary" | "inverted".
     },
   },
