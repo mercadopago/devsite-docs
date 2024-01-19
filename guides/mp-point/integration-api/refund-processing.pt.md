@@ -2,10 +2,10 @@
 
 Reembolsos são transações realizadas quando determinada cobrança é revertida e os valores pagos retornam para o comprador. Isso significa que o cliente receberá de volta em sua conta ou na fatura do cartão de crédito, o valor pago na aquisição de determinado produto ou serviço.
 
-Quando você integra o Point via API para Ponto de Venda, você pode realizar reembolsos de duas maneiras: 
- * **Utilizando seu dispositivo Point:** sempre que se tratar de transações recentes, você pode buscar os pagamentos realizados, selecionar o que deseja reembolsar e seguir as instruções do dispositivo.
+Ao integrar o Point via API para Ponto de Venda, é possível realizar reembolsos de duas formas distintas: 
+ * **Utilizando o dispositivo Point:** sempre que se tratar de transações recentes, você pode buscar os pagamentos efetuados para selecionar aquele que deseja reembolsar. As etapas para realizar este reembolso serão exibidas na tela do dispositivo Point.
 
- * **Utilizando  nossa API:** você poderá reembolsar transações que o dispositivo não exibe. Além disso, realizar reembolsos via API lhe permitirá ter um maior controle sobre a operação.
+ * **Utilizando  nossa API:** você poderá reembolsar transações que não são exibidas no dispositivo. Além disso, efetuar reembolsos por meio da API proporciona maior controle sobre a operação.
 
 
 ----[mlb]----
@@ -17,22 +17,22 @@ Quando você integra o Point via API para Ponto de Venda, você pode realizar re
 > O processamento de reembolsos está disponível apenas para dispositivos Point Pro 2.
 ------------
 
-Para realizar reembolsos via API, você precisará primeiro criar uma intenção de reembolso e, em seguida, processá-la. Além disso, você pode consultar o status de uma intenção de reembolso ou cancelá-la. Continue lendo para saber como realizar cada operação. 
+Para efetuar reembolsos via API, é necessário primeiramente criar uma intenção de reembolso e, em seguida, processá-la. Além disso, é possível consultar o status de uma intenção de reembolso ou cancelá-la, se for preciso. Veja abaixo as etapas necessárias para realizar cada operação. 
 
 
 ## Criar intenção de reembolso
 
-Uma intenção de reembolso é uma chamada que contém os detalhes da transação a ser realizada, e que deve ser criada para iniciar o reembolso de um pagamento realizado anteriormente via API.
+Uma intenção de reembolso é uma chamada que contém os detalhes da transação que se deseja realizar. Esta chamada deve ser criada para iniciar o processo de reembolso de um pagamento previamente realizado via API.
 
-Esta é uma tentativa que, se bem-sucedida, retornará um `id` e seu status. Tenha em mente que as intenções de reembolso são a base para o processamento de reembolsos com dispositivos Point. Por esse motivo, é importante que você registre e salve os dados obtidos durante sua criação, especialmente o `id`.
+Esta é uma tentativa que, se bem-sucedida, retornará um `ID` e seu status. Tenha em mente que as intenções de reembolso são a base para o processamento de reembolsos com dispositivos Point. Portanto, é essencial registrar e salvar os dados obtidos durante sua criação, principalmente o `ID`.
 
 > WARNING
 >
 > Importante
 >
-> A intenção de reembolso só pode ser criada para o dispositivo em que o pagamento foi processado e para o usuário que realizou a transação.
+> A intenção de reembolso só pode ser criada para o dispositivo no qual o pagamento foi processado e para o usuário que realizou a transação.
 
-Você pode [criar uma intenção de reembolso](/developers/pt/reference/integrations_api/_point_integration-api_devices_deviceid_refund/post) e atribuí-la ao seu dispositivo Point através da seguinte chamada: 
+Para [criar uma intenção de reembolso](/developers/pt/reference/integrations_api/_point_integration-api_devices_deviceid_refund/post) e atribuí-la ao dispositivo Point, utilize a chamada a seguir e preencha os parâmetros com base nas descrições disponíveis na tabela. 
 
 ``` curl
 curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/{deviceid}/refund' \
@@ -46,15 +46,13 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 
 ```
 
-Você deverá enviar os campos indicados abaixo, seguindo sua descrição:
-
 | Campo  | Descrição | Valores possíveis | Obrigatório/não obrigatório |
 |:---:|:---:|:---:|:---:|
 | `payment_id` | Identificação do pagamento que deseja reembolsar. | String numérico. Por exemplo, *65412345*. | Obrigatório |
 | `print_on_terminal` | Campo para determinar se o dispositivo imprime o comprovante, seja para o vendedor ou para o comprador. | `SELLER_TICKET`: Imprime o ticket para o vendedor<br>`BUYER_TICKET`: Imprime o ticket para o comprador | Não obrigatório |
 
 
-Como resposta, você receberá algo semelhante a isso: 
+Como resposta, você receberá algo semelhante ao exemplo abaixo: 
 
 ``` json
 {
@@ -72,28 +70,29 @@ Como resposta, você receberá algo semelhante a isso:
 
 ## Processar intenção de reembolso
 
-Uma vez que a intenção de reembolso é criada, você pode obtê-la de seu dispositivo Point pressionando a tecla para iniciar a transação (no caso de Point Plus e Point Pro 2 o **botão verde** e, no caso de Point Smart, o botão digital **Atualizar**).
+Após criar a intenção de reembolso, você pode acessá-la no seu dispositivo Point. Para isso, inicie a transação pressionando a tecla correspondente: no caso de Point Plus e Point Pro 2 o **botão verde** e, no caso de Point Smart, o botão digital **Atualizar**.
 
 ## Verificar status da intenção de reembolso
 
-Se você deseja saber o status de uma intenção de reembolso específica, você pode [verificar o status atual da sua intenção de reembolso](/developers/pt/reference/integrations_api/_point_integration-api_refund_refundintentid/get) usando o `id` que você recebeu na resposta ao criá-la.
+Para acessar informações sobre uma intenção de reembolso específica, você deve [verificar seu status](/developers/pt/reference/integrations_api/_point_integration-api_refund_refundintentid/get) utilizando o `ID` obtido da criação da intenção.
 
-Lembre-se que o `id` e status da intenção de reembolso (por exemplo, *7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1*) são diferentes do `id` do pagamento e status do reembolso (por ejemplo, *65412345*). Neste caso, trata-se de consultar os detalhes de uma tentativa. 
+Lembre-se que o `ID` e status da intenção de reembolso (por exemplo, *7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1*) são distintos do `ID` e status associados ao pagamento e ao reembolso em si (por exemplo, *65412345*). Neste caso, trata-se de consultar os detalhes de uma tentativa. 
 
 
 > WARNING
 >
 > Importante
 >
-> O principal mecanismo recomendado para saber o resultado de uma intenção de pagamento é a assinatura de [notificações de integrações](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications). Aconselhamos usar o endpoint aqui presente apenas como um mecanismo alternativo.
+> O principal mecanismo recomendado para obter o resultado de uma intenção de pagamento são as [notificações de integrações](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications). A utilização do endpoint disponível nesta seção é aconselhada somente como uma alternativa secundária.
 
+Para consultar o status da intenção de reembolso, insira o `ID` correspondente no PATH do código abaixo e execute a requisição.
 
 ``` curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/refund/{intentid}' \
 --h 'Authorization: Bearer YOUR_ACCESS_TOKEN'
 ```
 
-A resposta será semelhante a isso:
+A resposta obtida será similar ao exemplo a seguir.
 
 ``` json
 {
@@ -107,12 +106,12 @@ A resposta será semelhante a isso:
 }
 ```
 
-Você pode verificar os possíveis estados de uma intenção de pagamento acessando nosso [Glossário](/developers/pt/docs/mp-point/integration-api/glossary).
+Para mais detalhes sobre os possíveis status de uma intenção de reembolso, acesse nosso [Glossário](/developers/pt/docs/mp-point/integration-api/glossary).
 
 
 ## Cancelar  uma intenção de reembolso
 
-Se desejar, você pode cancelar uma intenção de reembolso atribuída a um dispositivo Point, desde que o estado da intenção seja open e ainda não tenha sido enviada para o dispositivo. 
+Se desejar, você pode cancelar uma intenção de reembolso atribuída a um dispositivo Point, desde que o status da intenção seja `open` e ainda não tenha sido enviada para o dispositivo. 
 
 Se esses requisitos forem atendidos, você pode [cancelar uma intenção de reembolso via API](/developers/pt/reference/integrations_api/_point_integration-api_devices_deviceid_refund_refundintentid/delete) realizando a seguinte chamada:
 

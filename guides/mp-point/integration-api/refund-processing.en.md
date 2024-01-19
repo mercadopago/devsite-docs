@@ -23,7 +23,7 @@ To perform refunds via API, first you will need to create a refund intent and th
 
 A refund intent is a call that contains all the details of the transaction to be made, and it must be created in order to start a refund of a payment previously made via API. 
 
-It is an attempt that, if successful, will return a refund `id` and its status. Please note that refund intents are the foundation for processing refunds with Point devices. For this reason, it is important that you register and save the data obtained during their creation, especially their `id`.
+It is an attempt that, if successful, will return a refund `ID` and its status. Please note that refund intents are the foundation for processing refunds with Point devices. For this reason, it is important that you register and save the data obtained during their creation, especially their `ID`.
 
 > WARNING
 >
@@ -70,12 +70,12 @@ In response, you will receive something similar to this:
 ```
 
 ## Process your refund intent
-Once the refund intent has been created, you can obtain it from your Point device by pressing on the key to start the transaction (in the case of Point Plus and Point Pro 2 the **green button** and, in the case of the Point Smart, the digital button **Update**).
+Once the refund intent has been created, you can obtain it from your Point device. To start the transaction, press on the corresponding key: in the case of Point Plus and Point Pro 2 the **green button** and, in the case of the Point Smart, the digital button **Update**.
 
 ## Check the status of your refund intent
-If you want to know the status of a particular refund intent, you can [check its current status](/developers/en/reference/integrations_api/_point_integration-api_refund_refundintentid/get) using the `id` that you received in the response when creating it.
+If you want to know the status of a particular refund intent, you can [check its current status](/developers/en/reference/integrations_api/_point_integration-api_refund_refundintentid/get) using the `ID` that you received in the response when creating it.
 
-Remember that `id` and status of the refund intent (for example, *7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1*) are not the same as `id` of the payment and status of the refund (for example, *65412345*).  In this case, you will be trying to obtain the details of an attempt.
+Remember that `ID` and status of the refund intent (for example, *7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1*) are not the same as `ID` of the payment and status of the refund (for example, *65412345*).  In this case, you will be trying to obtain the details of an attempt.
 
 > WARNING
 >

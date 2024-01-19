@@ -2,7 +2,7 @@
 
 Un reembolso es una transacción que se realiza cuando un determinado cargo se revierte y la cantidad pagada se devuelve al comprador. Esto significa que el cliente recibirá en su cuenta o en el extracto de su tarjeta el monto pagado por la compra de un determinado producto o servicio.
 
-Cuando realizas una integración Point vía API para Punto de Venta, puedes realizar reembolsos de dos maneras:  
+Cuando realizas una integración Point vía API para Punto de Venta, puedes efectuar reembolsos de dos maneras:  
  * **Utilizando tu dispositivo Point:**  siempre y cuando se trate de transacciones recientes, puedes buscar los pagos realizados, seleccionar aquel que desees reembolsar, y seguir las indicaciones del dispositivo para hacerlo.
  * **Utilizando nuestra API:** te permitirá reembolsar transacciones que el dispositivo no despliega, además de un mayor control sobre la operación.
 
@@ -21,7 +21,7 @@ Para realizar reembolsos vía API deberás, primero, crear una intención de ree
 
 Una intención de reembolso es un llamado que contiene los detalles de la transacción a realizarse, y que debe ser creada para poder iniciar el reembolso de un pago realizado anteriormente vía API.  
 
-De ser exitoso, el intento devolverá un `id` de la intención y su estado. Ten en cuenta que las intenciones de reembolso son la base para el procesamiento de reembolsos con dispositivos Point. Por este motivo, es importante que registres y guardes los datos obtenidos en su creación, especialmente su `id`.
+De ser exitoso, el intento devolverá un `ID` de la intención y su estado. Ten en cuenta que las intenciones de reembolso son la base para el procesamiento de reembolsos con dispositivos Point. Por este motivo, es importante que registres y guardes los datos obtenidos en su creación, especialmente su `ID`.
 
 > WARNING
 >
@@ -69,13 +69,13 @@ Como respuesta, recibirás algo similar a esto:
 
 ## Procesar intención de reembolso
 
-Una vez creada la intención de reembolso, puedes obtenerla desde tu dispositivo Point oprimiendo el botón para iniciar la transacción (en caso de Point Plus y Point Pro 2, el **botón verde**, y en el caso de Point Smart, el botón digital **Actualizar**).
+Una vez creada la intención de reembolso, puedes obtenerla desde tu dispositivo Point. Para eso, inicia la transacción oprimiendo el botón correspondiente: en caso de Point Plus y Point Pro 2, el **botón verde**, y en el caso de Point Smart, el botón digital **Actualizar**.
 
 ## Consultar el estado de una intención de reembolso
 
-Si deseas saber el estado de una intención de reembolso en particular, puedes [consultar su estado actual](/developers/es/reference/integrations_api/_point_integration-api_refund_refundintentid/get) utilizando el `id` que recibiste en la respuesta al momento de crearla.
+Si deseas saber el estado de una intención de reembolso en particular, puedes [consultar su estado actual](/developers/es/reference/integrations_api/_point_integration-api_refund_refundintentid/get) utilizando el `ID` que recibiste en la respuesta al momento de crearla.
 
-Recuerda que `id` y estado de la intención de reembolso (por ejemplo, *75j8sfa-euu6-4x56-slk8-a341f71ba2f1*) son diferentes a `id` del pago y estado del reembolso (por ejemplo, *65412345*). En este caso, se trata de consultar los detalles de un intento.
+Recuerda que `ID` y estado de la intención de reembolso (por ejemplo, *75j8sfa-euu6-4x56-slk8-a341f71ba2f1*) son diferentes a `ID` del pago y estado del reembolso (por ejemplo, *65412345*). En este caso, se trata de consultar los detalles de un intento.
 
 > WARNING
 >
