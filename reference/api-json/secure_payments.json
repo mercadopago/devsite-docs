@@ -7,9 +7,9 @@
           "Payment"
         ],
         "description": {
-          "en": "This API is used to make external Mercado Pago payments. Nowadays, it's only being used by WhatsApp.",
-          "pt": "Essa API é usada para realizar pagamentos externos do Mercado Pago. Atualmente, está sendo utilizada apenas pelo WhatsApp.",
-          "en": "Esta API se utiliza para realizar pagos externos de Mercado Pago. Actualmente, solo está siendo utilizada por WhatsApp."
+          "en": "This endopoint is used to make external Mercado Pago payments. Nowadays, it's only being used by WhatsApp.",
+          "pt": "Esse endpoint é usada para realizar pagamentos externos do Mercado Pago. Atualmente, está sendo utilizada apenas pelo WhatsApp.",
+          "en": "Este endpoint se utiliza para realizar pagos externos de Mercado Pago. Actualmente, solo está siendo utilizada por WhatsApp."
         },
         "parameters": [
           {
