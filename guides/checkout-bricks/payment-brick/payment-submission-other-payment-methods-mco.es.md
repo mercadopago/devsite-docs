@@ -24,7 +24,7 @@ Para configurar pagos con **Efecty**, envía un POST con los siguientes parámet
   use MercadoPago\Client\Payment\PaymentClient;
 
   $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
+  $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
@@ -78,6 +78,8 @@ Map<String, String> customHeaders = new HashMap<>();
 MPRequestOptions requestOptions = MPRequestOptions.builder()
     .customHeaders(customHeaders)
     .build();
+
+MercadoPagoConfig.setAccessToken("YOUR_ACCESS_TOKEN");
 
 PaymentClient client = new PaymentClient();
 PaymentCreateRequest paymentCreateRequest =

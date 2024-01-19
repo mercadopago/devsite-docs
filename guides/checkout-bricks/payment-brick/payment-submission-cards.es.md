@@ -22,7 +22,7 @@ Con toda la información recopilada en el backend, envía un **POST** con los at
   MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
   $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
+  $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
@@ -69,6 +69,8 @@ MPRequestOptions requestOptions = MPRequestOptions.builder()
     .customHeaders(customHeaders)
     .build();
 
+MercadoPagoConfig.setAccessToken("YOUR_ACCESS_TOKEN");
+
 PaymentClient client = new PaymentClient();
 
 PaymentCreateRequest paymentCreateRequest =
@@ -100,6 +102,8 @@ Map<String, String> customHeaders = new HashMap<>();
 MPRequestOptions requestOptions = MPRequestOptions.builder()
     .customHeaders(customHeaders)
     .build();
+
+MercadoPagoConfig.setAccessToken("YOUR_ACCESS_TOKEN");
 
 PaymentClient client = new PaymentClient();
 

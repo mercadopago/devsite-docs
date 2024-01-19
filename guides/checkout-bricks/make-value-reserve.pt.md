@@ -13,7 +13,7 @@ Para realizar uma autorização de reserva de valores, envie um **POST** com com
   MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
   $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
+  $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([

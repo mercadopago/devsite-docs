@@ -4,8 +4,6 @@
 
 Webhook notifications can be configured for one or more applications created in your [Developer Dashboard](/developers/panel/app).
 
-Uma vez configurado, o Webhook será enviado sempre que ocorrer um ou mais eventos cadastrados, evitando que haja um trabalho de pesquisa a cada minuto em busca de uma resposta e, por consequência, que ocorra uma sobrecarga do sistema e a perda de dados sempre que houver alguma situação. Após receber uma notificação na sua plataforma, o Mercado Pago aguardará uma resposta para validar se você a recebeu corretamente.
-
 Once configured, the Webhook will be sent whenever one or more registered events occur, avoiding a search job every minute in search of an answer and, consequently, a system overload and data loss whenever there is some situation. After receiving a notification on your platform, Mercado Pago will wait for a response to validate that you received it correctly
 
 In this documentation, we will explain the necessary settings to receive messages (through the Dashboard or when creating payments), in addition to showing the necessary actions that you must take for Mercado Pago to validate that the notifications were properly received.
@@ -51,17 +49,50 @@ Below, we will explain how to: specify the URLs that will be notified, configure
 
 ### Validate notification origin
 
-1. After configuring the URLs and Events, **reveal the generated secret signature**.
-2. Then, use the secret signature to validate the `x-signature-id` header. The value received in the header must match the key obtained in the previous step. In the example shown below, the value `59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1` should match the generated secret key.
+At the moment the registered URL receives a notification, you can validate whether the content sent in the `x-signature` header (example: `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`) was sent by Mercado Pago, in order to enhance the security of receiving your notifications. See below how to configure this validation.
 
-```header
-...
-accept-encoding	*
-content-type	application/json
-accept	*/*
-x-signature-id	59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1
-...
+1. Extract the timestamp (`ts`) and the signature from the `x-signature` header. To do this, split the content of the header by the `,` character, resulting in a list of elements.
+2. Then, split each element of the list by the equal sign `=`, resulting in a pair of prefixes and values. The value for the prefix `ts` is the timestamp of the notification, and `v1` is the encrypted signature.
+3. Using the template below, replace the parameters with the data received in your notification.
+
+```template
+post;[urlpath];data.id=[data.id_url];type=[topic_url];user-agent:mercadopago webhook v1.0;[timestamp];action:[json_action];api_version:[json_apiversion];date_created:[json_datecreated_RFC3339];id:[id_json];live_mode:[livemode_json];type:[type_json];user_id:[userid_json];
 ```
+
+In the template, values enclosed in `[]` should be replaced with the notification data, such as:
+
+- Parameters with the `_url` suffix come from query params. For example, `[topic_url]` will be replaced by the value `payment` (without brackets).
+- Parameters with the `_json` suffix come from the `body` of the request.
+- `[urlpath]` will be only the domain + the path of the URL (without "http://" or "https://").
+- `[timestamp]` will be the value of ts extracted from the x-signature header.
+
+> If any of the values presented in the template below are not present in your notification, you should remove them from the template.
+
+4. In the Developer [Dashboard](/developers/panel/app), select the integrated application, navigate to the Webhooks section, and reveal the generated secret signature.
+5. Generate the counter key for validation. To do this, calculate an [HMAC](https://en.wikipedia.org/wiki/HMAC) with the `SHA256 hash` function in hexadecimal, using the **secret signature** as the key and the populated template with the values as the message. For example:
+
+[[[
+```php
+$cyphedSignature = hash_hmac('sha256', $data, $key);
+```
+```node
+const crypto = require('crypto');
+const cyphedSignature = crypto
+    .createHmac('sha256', secret)
+    .update(signatureTemplateParsed)
+    .digest('hex'); 
+```
+```java
+String cyphedSignature = new HmacUtils("HmacSHA256", secret).hmacHex(signedTemplate);
+```
+```python
+import hashlib, hmac, binascii
+
+cyphedSignature = binascii.hexlify(hmac_sha256(secret.encode(), signedTemplate.encode()))
+```
+]]]
+
+6. Finally, compare the generated key with the key extracted from the header, ensuring they have an exact match. Additionally, you can use the timestamp extracted from the header for comparison with a timestamp generated at the time of receiving the notification to establish a tolerance for message reception delays.
 
 ### Simulate notification receipt
 
@@ -394,8 +425,7 @@ Also, specifically in fraud alerts, you must not deliver the order and you will 
 
 In the notification, you will receive a `JSON` with the following information containing the payment id to cancel.
 
-[[[
-```Json
+```json
 
 
  "description": ".....",
@@ -404,8 +434,6 @@ In the notification, you will receive a `JSON` with the following information co
 
 
 ```
-]]]
-
 
 > NOTE
 >
