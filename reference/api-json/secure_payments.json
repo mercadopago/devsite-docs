@@ -395,7 +395,7 @@
     "/unified_payments": {
       "post": {
         "tags": [
-          "Payment"
+          "checkout-pro"
         ],
         "description": {
           "en": "This endpoint allows you to make a one-step-payment.",
