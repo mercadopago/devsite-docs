@@ -6,10 +6,10 @@ Hay cuatro propuestas de valor disponibles para su uso, y cada una permite ciert
 
 | Value prop | Mensaje en el banner |
 |---|---|
-|`payment_methods` (por defecto)| Logo Mercado Pago + "Pagá con [medio de pago] o tu dinero disponible en Mercado Pago. Saber más" (link para pop-up)|
+|`payment_methods` (por defecto)| Logo Mercado Pago + "Paga con [medio de pago] o tu dinero disponible en Mercado Pago. Saber más" (link para pop-up)|
 |`payment_methods_logos`|Logos + "Medios de pago disponibles con Mercado Pago. Saber más" (link para pop-up)|
 |`installments`|Logo Mercado Pago + "Hasta 12 cuotas sin interés con Mercado Pago. Saber más" (link para pop-up)|
-|`security`|Logo Mercado Pago + "Pagá de forma segura con Mercado Pago"|
+|`security`|Logo Mercado Pago + "Paga de forma segura con Mercado Pago"|
 |`credits`|Logo Mercado Pago + "Hasta 12 cuotas sin tarjeta con Mercado Pago. Saber más" (link para pop-up)|
 
 Las personalizaciones se pasan a Brick a través del objeto siguiente, que debe enviarse como un tercer parámetro en el método `create()`.
@@ -19,7 +19,7 @@ Las personalizaciones se pasan a Brick a través del objeto siguiente, que debe 
 const settings = {
     customization: {
       text: {
-        valueProp: "payment_methods", // optional "installments" | "payment_methods" | "security" | "payment_methods_icons"
+        valueProp: "payment_methods", // optional "installments" | "payment_methods" | "security" | "payment_methods_logos"
       },
     },
   };
@@ -27,7 +27,7 @@ const settings = {
 ```react-jsx
 const customization = {
    text: {
-   valueProp: "payment_methods", // optional "installments" | "payment_methods" | "security" | "payment_methods_icons"
+   valueProp: "payment_methods", // optional "installments" | "payment_methods" | "security" | "payment_methods_logos"
     },
 };
 ```

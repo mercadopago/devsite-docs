@@ -1,8 +1,3 @@
----
-sites_supported:
-  - mlb
----
-
 # Medios de pago: 3 cuotas sin interés
 
 Permite a tus clientes pagar al instante con estos medios de pago.

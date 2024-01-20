@@ -47,7 +47,7 @@ const renderBrandBrick = async (bricksBuilder) => {
         horizontalPadding: "16px", // optional  string format: "Npx". max "40px"
       },
       text: {
-         align: "left", // optional "left" | "center" | "right",
+        align: "left", // optional "left" | "center" | "right",
         useCustomFont: false, // optional boolean. OBS: If is true the Brick inheriths the font from the parent
         textSize: "medium", // optional "extra_small" | "small" | "medium" | "large".
         fontWeight: "semibold", // optional "regular" | "semibold".
@@ -72,12 +72,11 @@ const customization = {
       horizontalPadding: "16px" // optional  string format: "Npx". max "40px"
     },
     text: {
-         align: "left", // optional "left" | "center" | "right",
-   valueProp: "payment_methods", // optional "installments" | "payment_methods" | "security" | "payment_methods_icons"
-        useCustomFont: false, // optional boolean. OBS: If is true the Brick inheriths the font from the parent
-       textSize: "medium", // optional "extra-small" | "small" | "medium" | "large".
-         fontWeight: "semibold", // optional "regular" | "semibold".
-       textColor: "primary", // optional "primary" | "secondary" | "inverted".
+      align: "left", // optional "left" | "center" | "right",
+      useCustomFont: false, // optional boolean. OBS: If is true the Brick inheriths the font from the parent
+      textSize: "medium", // optional "extra-small" | "small" | "medium" | "large".
+      fontWeight: "semibold", // optional "regular" | "semibold".
+      textColor: "primary", // optional "primary" | "secondary" | "inverted".
     },
   },
 };

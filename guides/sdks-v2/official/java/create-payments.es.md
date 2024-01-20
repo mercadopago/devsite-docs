@@ -113,7 +113,7 @@ client.get(paymentId);
 
 # Actualizar pago
 
-Es posible cambiar los datos de un determinado pago enviando los parámetros con la información que desea actualizar a través del SDK a continuación. Para detalles de los parámetros de la solicitud, acceda a la API [Actualizar pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/put)
+Es posible cambiar los datos de un determinado pago enviando los parámetros con la información que desea actualizar a través del SDK a continuación. Para detalles de los parámetros de la solicitud, acceda a la API [Actualizar pago](/developers/es/reference/payments/_payments_id/put)
 
 [[[
 ```java
@@ -121,7 +121,6 @@ Es posible cambiar los datos de un determinado pago enviando los parámetros con
 PaymentClient client = new PaymentClient();
 
 Long paymentId = 123456789L;
-client.capture(paymentId);
 client.capture(paymentId);
 ```
 ]]]
