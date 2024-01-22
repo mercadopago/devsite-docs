@@ -19,7 +19,7 @@ Customizations are passed to Brick through the object below, which must be sent 
 const settings = {
     customization: {
       text: {
-        valueProp: "payment_methods", // optional "installments" | "payment_methods" | "security" | "payment_methods_icons"
+        valueProp: "payment_methods", // optional "installments" | "payment_methods" | "security" | "payment_methods_logos"
       },
     },
   };
@@ -27,7 +27,7 @@ const settings = {
 ```react-jsx
 const customization = {
    text: {
-   valueProp: "payment_methods", // optional "installments" | "payment_methods" | "security" | "payment_methods_icons"
+   valueProp: "payment_methods", // optional "installments" | "payment_methods" | "security" | "payment_methods_logos"
     },
 };
 ```

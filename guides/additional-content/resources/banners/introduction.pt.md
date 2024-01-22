@@ -1,46 +1,40 @@
----
-sites_supported:
-  - mla
-  - mlb
-  - mlm
-  - mco
-  - mlc
----
-
 # Banners de Mercado Pago 
 
-Ofereça os benefícios de pagar com Mercado Pago no seu site
-
 ----[mla]----
+Esta documentação foi descontinuada para o país em que está sendo acessada. Para mais informações sobre _banners_, conheça o **Brand Brick**.
 
-* Tipos de banners
-    + [Todos os meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/banners/all)
-    + [Meios de acreditação imediata](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/online)
+O Brick de **Brand** comunica ao usuário vantagens, facilidades e informações, como: as formas de pagamento disponíveis via Mercado Pago, bandeiras aceitas, possibilidade de parcelamento com ou sem cartão de crédito. Esses fatores, associados à credibilidade da marca Mercado Pago, trazem confiança ao usuário, podem incentivar a realização de compras e, consequentemente, aumentar o engajamento do usuário com sua loja.
+
+Acesse a [documentação](/developers/pt/docs/checkout-bricks/brand-brick/introduction) do **Checkout Bricks** para saber como integrá-lo!
 
 ------------
 ----[mlm]----
+Ofereça os benefícios de pagar com Mercado Pago no seu site.
 
-* Tipos de banners
+* Tipos de banners:
     + [Todos os meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/banners/all)
 
 ------------
 ----[mco]----
+Ofereça os benefícios de pagar com Mercado Pago no seu site.
 
-* Tipos de banners
+* Tipos de banners:
     + [Todos os meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/banners/all)
     + [Meios de acreditação imediata](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/online)
 
 ------------
 ----[mlc]----
+Ofereça os benefícios de pagar com Mercado Pago no seu site.
 
-* Tipos de banners
+* Tipos de banners:
     + [Todos os meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/banners/all)
     + [Meios de pagamento: 6x sem juros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/seis)
 
 ------------
 ----[mlb]----
+Ofereça os benefícios de pagar com Mercado Pago no seu site.
 
-* Tipos de banners
+* Tipos de banners:
     + [Todos os meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/banners/all)
     + [Meios de pagamento: 3x sem juros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/tres)
     + [Meios de pagamento: 6x sem juros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/seis)

@@ -1,8 +1,3 @@
----
-sites_supported:
-  - mlb
----
-
 # Meios de pagamento: 3x sem juros
 
 Permita que seus clientes paguem instantaneamente com esses meios de pagamento.
