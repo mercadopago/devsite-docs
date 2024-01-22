@@ -1,11 +1,11 @@
-# Integrar el checkout en Split de Pagos (marketplace)
+# Integrar el checkout en Split de pagos (marketplace)
 
 Si eliges vender a través de un _marketplace_, es posible integrar **dos tipos de checkout de Mercado Pago** para procesar los pagos realizados.
 
 * [Checkout Pro](/developers/es/guides/checkout-pro/landing): en este modelo de checkout, el comprador es dirigido a una página de Mercado Pago para completar el pago.
 * ----[mla, mlu, mpe, mco, mlc, mlm]----[Checkout API](/developers/es/guides/checkout-api/introduction)----------------[mlb]----[Checkout Transparente](/developers/es/guides/checkout-api/introduction)------------: este modelo de pago permite al comprador realizar el pago dentro del entorno del _marketplace_.
 
-Ambos checkouts reparten automáticamente los importes entre el vendedor y el _marketplace_ a través del _split del pago_ sin necesidad de ninguna acción por parte del vendedor.
+Ambos checkouts reparten automáticamente los importes entre el vendedor y el _marketplace_ a través del _split de pagos_ sin necesidad de ninguna acción por parte del vendedor.
 
 > NOTE
 >

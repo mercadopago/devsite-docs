@@ -72,6 +72,8 @@ PreferenceItemRequest.builder()
 .unitPrice(new BigDecimal("75"))
 .build();
 
+MercadoPagoConfig.setAccessToken("YOUR_ACCESS_TOKEN");
+
 List<PreferenceItemRequest> items = new ArrayList<>();
 items.add(item);
 

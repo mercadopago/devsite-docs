@@ -1,10 +1,3 @@
----
-sites_supported:
-  - mla
-  - mco
-  - mlc
----
-
 # Medios de pago al instante
 
 Permite a tus clientes pagar al instante con estos medios de pago.

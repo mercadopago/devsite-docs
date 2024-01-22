@@ -12,7 +12,7 @@ However, it is possible to customize the opening so that it opens on an external
 
 ## Redirection scheme to another page
 
-Changing the redirection behavior is done by the `redirectMode` property, which can assume the values `self`, `blank` or `modal`.
+Changing the redirection behavior is done by the `redirectMode` property, which can assume the values `self` or `blank`.
 
 | Value | Description |
 | --- |--- |

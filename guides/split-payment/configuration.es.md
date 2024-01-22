@@ -1,10 +1,10 @@
 # Crear configuración
 
-Para configurar la integración con la solución de Split de Pagos, deberás [crear tu aplicación](#bookmark_crear_aplicación), [solicitar permisos a tus usuarios](#bookmark_solicitar_permiso_a_usuarios) y [obtener las credenciales](#bookmark_obtener_credenciales). Continúa leyendo para crear la configuración necesaria.
+Para configurar la integración con la solución de Split de pagos, deberás [crear tu aplicación](#bookmark_crear_aplicación), [solicitar permisos a tus usuarios](#bookmark_solicitar_permiso_a_usuarios) y [obtener las credenciales](#bookmark_obtener_credenciales). Continúa leyendo para crear la configuración necesaria.
 
 ## Crear aplicación
 
-Crea tu aplicación para integrar con la solución de Split de Pagos siguiendo los pasos a continuación.
+Crea tu aplicación para integrar con la solución de Split de pagos siguiendo los pasos a continuación.
 
    > NOTE
    >
@@ -104,6 +104,7 @@ Utiliza el código de autorización obtenido en el paso anterior para adquirir l
 | `<CLIENT_SECRET>`        | Tu SECRET_KEY, también disponible en los detalles de tu aplicación.                              |
 | `<AUTHORIZATION_CODE>`   | Código de autorización obtenido al redirigir al usuario de vuelta a tu sitio.                     |
 | `<REDIRECT_URI>`         | Debe ser la misma Redirect URI configurada en tu aplicación.                                     |
+| `<STATE>`         | Reemplaza el valor "RANDOM_ID" con un identificador que sea único para cada intento y que no incluya información confidencial para que puedas identificar de quién es el código recibido.                                     |
 
 ```curl
 curl -X POST \
@@ -114,7 +115,8 @@ curl -X POST \
      -d 'client_secret=<CLIENT_SECRET>' \
      -d 'grant_type=authorization_code' \
      -d 'code=<AUTHORIZATION_CODE>' \
-     -d 'redirect_uri=<REDIRECT_URI>'
+     -d 'redirect_uri=<REDIRECT_URI>' \
+     -d 'state=<RANDOM_ID>'
 ```
 
 #### Respuesta

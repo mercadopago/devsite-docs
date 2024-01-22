@@ -12,7 +12,7 @@ Contudo, é possível personalizar a abertura para que a abertura seja em uma p�
 
 ## Esquema de redirecionamento para outra página
 
-A alteração no comportamento do redirecionamento é feita pela propriedade `redirectMode`, a qual pode assumir os valores `self`, `blank` ou `modal`.
+A alteração no comportamento do redirecionamento é feita pela propriedade `redirectMode`, a qual pode assumir os valores `self` ou `blank`.
 
 | Valor | Descrição |
 | --- |--- | 

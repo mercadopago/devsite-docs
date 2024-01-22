@@ -18,6 +18,8 @@ MPRequestOptions requestOptions = MPRequestOptions.builder()
     .customHeaders(customHeaders)
     .build();
 
+MercadoPagoConfig.setAccessToken("YOUR_ACCESS_TOKEN");
+
 PaymentClient client = new PaymentClient();
 
 List<PaymentItemRequest> items = new ArrayList<>();
@@ -119,7 +121,6 @@ It is possible to change the data of a certain payment by sending the parameters
 PaymentClient client = new PaymentClient();
 
 Long paymentId = 123456789L;
-client.capture(paymentId);
 client.capture(paymentId);
 ```
 ]]]

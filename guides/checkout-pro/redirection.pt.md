@@ -6,13 +6,13 @@ Ao final do processo de pagamento, é possível redirecionar o comprador novamen
 >
 > Redirecionamento automático
 >
-> Caso queira que o redirecionamento para os pagamentos aprovados seja automático, sem a renderização de um botão de retorno, é preciso adicionar também o atributo `auto_return` com valor `approved`.
+> Caso queira que o redirecionamento para os pagamentos aprovados seja automático, sem a renderização de um botão de retorno, é preciso adicionar também o atributo `auto_return` com valor `approved`. O tempo de redirecionamento será de 40 segundos.
 
 Nas tabelas a seguir você encontra o detalhe de cada um dos possíveis parâmetros de requisição e de resposta.
 
 | Atributo |	Descrição |
 | ------------ 	|	-------- | 
-| `auto_return` | Os compradores são redirecionados automaticamente para o  _site_ quando o pagamento é aprovado. O valor padrão é `approved`. |
+| `auto_return` | Os compradores são redirecionados automaticamente para o  _site_ quando o pagamento é aprovado. O valor padrão é `approved`. O tempo de redirecionamento é de 40 segundos e não pode ser personalizado. |
 | `back_urls` | URL de retorno ao site. Possíveis cenários são:<br/><br/>`success`: URL de retorno perante pagamento aprovado.<br/><br/>`pending`: URL de retorno perante pagamento pendente.<br/><br/>`failure`: URL de retorno perante pagamento rejeitado.
 
 > WARNING

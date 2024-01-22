@@ -1,13 +1,9 @@
----
-sites_supported:
-  - mlb
-  - mlc
----
-----[mlb]----
 
 # Meios de pagamento: 6x sem juros
 
-Permita que seus clientes paguem instantaneamente com esses meios de pagamento. 
+Permita que seus clientes paguem instantaneamente com esses meios de pagamento.
+
+----[mlb]----
 
 ## 735 x 40 px
 
@@ -189,13 +185,3 @@ width="120" height="600"/>
 <img src="https://www.mercadopago.cl/banner/120x600_banner_psj_6x.jpg" alt="Mercado Pago - Meios de pagamento" width="120" height="600"/>
 
 ------------
-
-
-
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> Banners de Mercado Pago
->
-> Ofereça os benefícios de pagar com Mercado Pago no seu site.
->
-> [Banners de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/introduction)

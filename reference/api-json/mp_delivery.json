@@ -4918,9 +4918,9 @@
                               "image": {
                                 "type": "string",
                                 "description": {
-                                  "en": "Public link to the item image that will be displayed to the buyer. The image will be copied to an internal storage during the item creation. Allowed image formatting .jpg, .png, .bmp, .webp. Minimum size of 500 px on one side.",
-                                  "pt": "Link público para a imagem do item que será exibida ao comprador. A imagem será copiada para um armazenamento interno durante a criação do item. Formato de imagens permitidos .jpg, .png, .bmp, .webp. Tamanho mínimo de 500 px em um dos lados.",
-                                  "es": "Enlace público a la imagen del ítem que se mostrará al comprador. La imagen se copiará en un almacenamiento interno durante la creación del ítem. Formato de imágenes permitidas .jpg, .png, .bmp, .webp. Tamano mínimo de 500 px en alguno de sus lados."
+                                  "en": "Public link to the item image that will be displayed to the buyer. The image will be copied to an internal storage during the item creation. Allowed image formatting .jpg, .png, .bmp, .webp. Minimum size of 500 px on one side. Use content-type 'image/*' in your URL.  ",
+                                  "pt": "Link público para a imagem do item que será exibida ao comprador. A imagem será copiada para um armazenamento interno durante a criação do item. Formato de imagens permitidos .jpg, .png, .bmp, .webp. Tamanho mínimo de 500 px em um dos lados. Use content-type 'image/*' na sua URL.",
+                                  "es": "Enlace público a la imagen del ítem que se mostrará al comprador. La imagen se copiará en un almacenamiento interno durante la creación del ítem. Formato de imágenes permitidas .jpg, .png, .bmp, .webp. Tamano mínimo de 500 px en alguno de sus lados. Utilice content-type 'image/*' en su URL."
                                 },
                                 "example": "https://"
                               },
