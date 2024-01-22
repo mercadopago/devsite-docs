@@ -6,13 +6,13 @@ At the end of the payment process, it is possible to redirect the buyer back to 
 >
 > Automatic redirection
 >
-> If you want the redirection for approved payments to be automatic, without rendering a return button, you must also add the `auto_return` attribute with the value `approved`.
+> If you want the redirection for approved payments to be automatic, without rendering a return button, you must also add the `auto_return` attribute with the value `approved`. The redirect time will be 40 seconds.
 
 In the following tables you will find the details of each of the possible request and response parameters.
 
 | Attribute | 	Description |
 | ------------ 	| 	-------- |
-| `auto_return` | Buyers are automatically redirected to _site_ when payment is approved. The default value is `approved`. |
+| `auto_return` | Buyers are automatically redirected to _site_ when payment is approved. The default value is `approved`. The redirect time is 40 seconds and this cannot be customized. |
 | `back_urls` | Return URL to the site. Possible scenarios are:<br/><br/>`success`: Return URL when payment is approved.<br/><br/>`pending`: Return URL when payment is pending.<br/><br/> `failure`: Return URL when payment is rejected.
 
 > WARNING
