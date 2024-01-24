@@ -33,7 +33,7 @@ Consulta los campos que puedes configurar para ajustar tus preferencias antes de
 
 Puedes configurar tus reportes según sea necesario. A continuación, destacamos las llamadas de la API disponibles para que puedas gestionar la configuración de tu reporte y, posteriormente, en función de esas configuraciones, generar los reportes.
 
-> Ten a mano el [Glossário del Reporte de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/glossary) para consultarlo siempre que sea necesario o para verificar algún término técnico.
+> Ten a mano el [Glossário del Reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/reports/released-money/glossary) para consultarlo siempre que sea necesario o para verificar algún término técnico.
 
 ### Crear una nueva configuración
 
