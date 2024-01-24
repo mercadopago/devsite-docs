@@ -305,9 +305,9 @@
                       "excluded_payment_methods": {
                         "type": "array",
                         "description": {
-                          "en": "Payment methods excluded from the payment process (except account_money, which is always allowed). The payment methods included here will not be available at checkout.",
-                          "pt": "Métodos de pagamento excluídos do checkout (exceto account_money, que estará sempre disponível). Os métodos de pagamento aqui incluídos não estarão disponíveis no checkout.",
-                          "es": "Métodos de pago excluidos del proceso de pago (excepto account_money, que siempre estará disponible). Los métodos de pago incluidos aquí no estarán disponibles en el checkout."
+                          "en": "Payment methods excluded from the payment process (except account_money and wallet, which is always allowed). The payment methods included here will not be available at checkout.",
+                          "pt": "Métodos de pagamento excluídos do checkout (exceto account_money e wallet, que estará sempre disponível). Os métodos de pagamento aqui incluídos não estarão disponíveis no checkout.",
+                          "es": "Métodos de pago excluidos del proceso de pago (excepto account_money y wallet, que siempre estará disponible). Los métodos de pago incluidos aquí no estarán disponibles en el checkout."
                         },
                         "items": {
                           "type": "object",
@@ -326,9 +326,9 @@
                       "excluded_payment_types": {
                         "type": "array",
                         "description": {
-                          "en": "Payment types excluded from the payment process. The payment types included here will not be available at checkout. The payment methods Wallet and Cash in account cannot be excluded.",
-                          "pt": "Tipos de pagamento excluídos do processo de pagamento. Os tipos de pagamento incluídos aqui não estarão disponíveis no checkout. Os tipos de pagamento Wallet e Dinero em conta não podem ser excluídos.",
-                          "es": "Tipos de pago excluidos del proceso de pago. Los tipos de pago incluidos aquí no estarán disponibles en el checkout. Los tipos de pago Wallet y Dinero en cuenta no pueden ser excluídos."
+                          "en": "Payment types excluded from the payment process. The payment types included here will not be available at checkout.",
+                          "pt": "Tipos de pagamento excluídos do processo de pagamento. Os tipos de pagamento incluídos aqui não estarão disponíveis no checkout.",
+                          "es": "Tipos de pago excluidos del proceso de pago. Los tipos de pago incluidos aquí no estarán disponibles en el checkout."
                         },
                         "items": {
                           "type": "object",
