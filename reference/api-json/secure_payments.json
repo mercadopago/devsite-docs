@@ -11,352 +11,64 @@
           "pt": "Esse endpoint é usada para realizar pagamentos externos do Mercado Pago. Atualmente, está sendo utilizada apenas pelo WhatsApp.",
           "es": "Este endpoint se utiliza para realizar pagos externos de Mercado Pago. Actualmente, solo está siendo utilizada por WhatsApp."
         },
-        "parameters": [
-          {
-            "name": "request",
-            "in": "body",
-            "description": {
-              "en": "request body",
-              "es": "request body",
-              "pt": "request body"
-            },
-            "schema": {
-              "type": "object",
-              "description": {
-                "en": "This represents data from an external payment.",
-                "pt": "Isso representa dados de um pagamento externo.",
-                "es": "Esto representa datos de un pago externo."
+        "requestBody": {
+          "distribution": [
+            {
+              "amount": {
+                "currency": "BRL",
+                "value": 120
               },
-              "properties": {
-                "distribution": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "amount": {
-                        "type": "object",
-                        "properties": {
-                          "currency": {
-                            "description": {
-                              "en": "Currency of the amount.",
-                              "pt": "Moeda do valor.",
-                              "es": "Tipo de moneda del monto."
-                            },
-                            "type": "string",
-                            "example": "BRL"
-                          },
-                          "value": {
-                            "description": {
-                              "en": "Value of the amount.",
-                              "pt": "Valor do montante.",
-                              "es": "Valor del monto."
-                            },
-                            "type": "integer",
-                            "example": 120
-                          }
-                        }
-                      },
-                      "destination": {
-                        "type": "object",
-                        "properties": {
-                          "account_id": {
-                            "description": {
-                              "en": "ID of account destination.",
-                              "pt": "ID da conta de destino.",
-                              "es": "ID de la cuenta de destino."
-                            },
-                            "type": "string",
-                            "example": "PSP-MA-ID-456"
-                          },
-                          "type": {
-                            "description": {
-                              "en": "Type of destination.",
-                              "pt": "Tipo de destino.",
-                              "es": "Tipo de destino."
-                            },
-                            "type": "string",
-                            "example": "MERCHANT_ACCOUNT"
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
-                "external_order_id": {
-                  "description": {
-                    "en": "ID Order external.",
-                    "pt": "ID do pedido externo.",
-                    "es": "ID de un pedido externo."
-                  },
-                  "type": "string",
-                  "example": "FB-ORDER-ID-123"
-                },
-                "external_payment_id": {
-                  "description": {
-                    "en": "ID Payment external.",
-                    "pt": "ID do pagamento externo.",
-                    "es": "ID de un pago externo."
-                  },
-                  "type": "string",
-                  "example": "FB-PAYMENT-ID-12356"
-                },
-                "installments": {
-                  "description": {
-                    "en": "Amount of fees.",
-                    "pt": "Quantidade de taxas.",
-                    "es": "Cantidad de tasas"
-                  },
-                  "type": "integer",
-                  "example": 1
-                },
-                "payer": {
-                  "type": "object",
-                  "properties": {
-                    "address": {
-                      "type": "object",
-                      "properties": {
-                        "country": {
-                          "description": {
-                            "en": "Country of the payer.",
-                            "pt": "País do pagador.",
-                            "es": "País del pagador"
-                          },
-                          "type": "string",
-                          "example": "BR"
-                        },
-                        "postal_code": {
-                          "description": {
-                            "en": "Postal code of the payer.",
-                            "pt": "Codigo postal do pagador.",
-                            "es": "Código postal del pagador."
-                          },
-                          "type": "string",
-                          "example": "23080-060"
-                        }
-                      }
-                    },
-                    "device": {
-                      "type": "object",
-                      "properties": {
-                        "device_id": {
-                          "description": {
-                            "en": "Device id of the device.",
-                            "pt": "Device id do dispositivo.",
-                            "es": "Device id del dispositivo"
-                          },
-                          "type": "string",
-                          "example": "DEVICE-ID"
-                        },
-                        "ip_address": {
-                          "description": {
-                            "en": "Ip address of the device.",
-                            "pt": "Direção IP do dispositivo.",
-                            "es": "Dirección IP del dispositivo."
-                          },
-                          "type": "string",
-                          "example": "São Paulo"
-                        }
-                      }
-                    },
-                    "full_name": {
-                      "description": {
-                        "en": "Full name of the payer.",
-                        "pt": "Nome completo do pagador.",
-                        "es": "Nombre completo del pagador."
-                      },
-                      "type": "string",
-                      "example": "Joe Doe"
-                    },
-                    "phone_number": {
-                      "description": {
-                        "en": "Phone number of the payer.",
-                        "pt": "Número de telefone do pagador.",
-                        "es": "Núero de teléfono del pagador."
-                      },
-                      "type": "string",
-                      "example": "5559800000016"
-                    },
-                    "registered_at": {
-                      "description": {
-                        "en": "ID register of the payer.",
-                        "pt": "Registro do ID do pagador.",
-                        "es": "Registro del ID del pagador."
-                      },
-                      "type": "string",
-                      "example": "2022-06"
-                    },
-                    "tax_info": {
-                      "type": "object",
-                      "properties": {
-                        "country": {
-                          "description": {
-                            "en": "Country of the tax.",
-                            "pt": "País do imposto.",
-                            "es": "País del impuesto."
-                          },
-                          "type": "string",
-                          "example": "BR"
-                        },
-                        "type": {
-                          "description": {
-                            "en": "Type of tax.",
-                            "pt": "Tipo de taxa.",
-                            "es": "Tipo de tasa."
-                          },
-                          "type": "string",
-                          "example": "CPF"
-                        },
-                        "value": {
-                          "description": {
-                            "en": "Value of tax.",
-                            "pt": "Valor da taxa.",
-                            "es": "Valor de la tasa."
-                          },
-                          "type": "string",
-                          "example": "19459377548"
-                        }
-                      }
-                    },
-                    "type": {
-                      "type": "string"
-                    }
-                  }
-                },
-                "payment_actions": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "amount": {
-                        "type": "object",
-                        "properties": {
-                          "currency": {
-                            "description": {
-                              "en": "Currency of the amount.",
-                              "pt": "Moeda do valor.",
-                              "es": "Moneda del valor."
-                            },
-                            "type": "string",
-                            "example": "BRL"
-                          },
-                          "value": {
-                            "description": {
-                              "en": "Value of the amount.",
-                              "pt": "Valor do montante.",
-                              "es": "Valor del monto."
-                            },
-                            "type": "integer",
-                            "example": 120
-                          }
-                        }
-                      },
-                      "external_action_id": {
-                        "description": {
-                          "en": "ID of the action.",
-                          "pt": "ID da ação.",
-                          "es": "ID de la acción."
-                        },
-                        "type": "string",
-                        "example": "FB-ACTION-ID-1234"
-                      },
-                      "type": {
-                        "description": {
-                          "en": "Type of the payment action.",
-                          "pt": "Tipo de ação de pagamento.",
-                          "es": "Tipo de acción de pago."
-                        },
-                        "type": "string",
-                        "example": "SALE"
-                      }
-                    }
-                  }
-                },
-                "soft_descriptor": {
-                  "description": {
-                    "en": "Short version of the description of the product.",
-                    "pt": "Versão curta da descrição do produto.",
-                    "es": "Versión corta de la descripción del producto."
-                  },
-                  "type": "string",
-                  "example": "IG-ABCD"
-                },
-                "source": {
-                  "type": "object",
-                  "properties": {
-                    "card_data": {
-                      "type": "object",
-                      "properties": {
-                        "card_network": {
-                          "description": {
-                            "en": "Network of card.",
-                            "pt": "Bandeira do cartão.",
-                            "es": "Bandera de la tarjeta"
-                          },
-                          "type": "string",
-                          "example": "VISA"
-                        },
-                        "card_type": {
-                          "description": {
-                            "en": "Type of card.",
-                            "pt": "Tipo de cartão",
-                            "es": "Tipo de tarjeta"
-                          },
-                          "type": "string",
-                          "example": "CREDIT"
-                        },
-                        "cryptogram": {
-                          "description": {
-                            "en": "Cryptogram of the card.",
-                            "pt": "Criptograma do cartão.",
-                            "es": "Criptograma de la tarjeta"
-                          },
-                          "type": "string",
-                          "example": "CRYPTOGRAM"
-                        },
-                        "expiry_month": {
-                          "description": {
-                            "en": "Expiration month of the card.",
-                            "pt": "Mês de expiração do cartão.",
-                            "es": "Mes de vencimiento de la tarjeta."
-                          },
-                          "type": "string",
-                          "example": "11"
-                        },
-                        "expiry_year": {
-                          "description": {
-                            "en": "Expiry year of the card.",
-                            "pt": "Ano de expiração do cartão.",
-                            "es": "Año de vencimiento de la tarjeta."
-                          },
-                          "type": "string",
-                          "example": "2035"
-                        },
-                        "token_number": {
-                          "description": {
-                            "en": "Token number of the card.",
-                            "pt": "Número de token do cartão",
-                            "es": "Número de token de la tarjeta"
-                          },
-                          "type": "string",
-                          "example": "1234123412341234"
-                        }
-                      }
-                    },
-                    "type": {
-                      "description": {
-                        "en": "Type of payment.",
-                        "pt": "Tipo de pagamento",
-                        "es": "Tipo de pago"
-                      },
-                      "type": "string",
-                      "example": "NETWORK_TOKEN"
-                    }
-                  }
-                }
+              "destination": {
+                "account_id": "PSP-MA-ID-456",
+                "type": "MERCHANT_ACCOUNT"
               }
             }
+          ],
+          "external_order_id": "FB-ORDER-ID-123",
+          "external_payment_id": "FB-PAYMENT-ID-12356",
+          "installments": 1,
+          "payer": {
+            "address": {
+              "country": "BR",
+              "postal_code": "23080-060"
+            },
+            "device": {
+              "device_id": "DEVICE-ID",
+              "ip_address": "São Paulo"
+            },
+            "full_name": "Joe Doe",
+            "phone_number": "5559800000016",
+            "registered_at": "2022-06",
+            "tax_info": {
+              "country": "BR",
+              "type": "CPF",
+              "value": "19459377548"
+            },
+            "type": "string"
+          },
+          "payment_actions": [
+            {
+              "amount": {
+                "currency": "BRL",
+                "value": 120
+              },
+              "external_action_id": "FB-ACTION-ID-1234",
+              "type": "SALE"
+            }
+          ],
+          "soft_descriptor": "IG-ABCD",
+          "source": {
+            "card_data": {
+              "card_network": "VISA",
+              "card_type": "CREDIT",
+              "cryptogram": "CRYPTOGRAM",
+              "expiry_month": "11",
+              "expiry_year": "2035",
+              "token_number": "1234123412341234"
+            },
+            "type": "NETWORK_TOKEN"
           }
-        ],
+        },
         "responses": {
           "200": {
             "description": {
