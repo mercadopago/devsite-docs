@@ -28,7 +28,7 @@ Ofereça os benefícios de pagar com Mercado Pago no seu site.
 
 * Tipos de banners:
     + [Todos os meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/banners/all)
-    + [Meios de pagamento: 6x sem juros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/seis)
+    + [Meios de pagamento: 6x sem acréscimos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/seis)
 
 ------------
 ----[mlb]----
@@ -36,10 +36,10 @@ Ofereça os benefícios de pagar com Mercado Pago no seu site.
 
 * Tipos de banners:
     + [Todos os meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/banners/all)
-    + [Meios de pagamento: 3x sem juros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/tres)
-    + [Meios de pagamento: 6x sem juros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/seis)
-    + [Meios de pagamento: 9x sem juros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/nove)
-    + [Meios de pagamento: 10x sem juros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/dez)
-    + [Meios de pagamento: 12x sem juros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/doze)
+    + [Meios de pagamento: 3x sem acréscimos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/tres)
+    + [Meios de pagamento: 6x sem acréscimos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/seis)
+    + [Meios de pagamento: 9x sem acréscimos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/nove)
+    + [Meios de pagamento: 10x sem acréscimos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/dez)
+    + [Meios de pagamento: 12x sem acréscimos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/doze)
 
 ------------

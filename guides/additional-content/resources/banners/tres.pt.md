@@ -1,4 +1,4 @@
-# Meios de pagamento: 3x sem juros
+# Meios de pagamento: 3x sem acréscimos
 
 Permita que seus clientes paguem instantaneamente com esses meios de pagamento.
 

@@ -5,7 +5,7 @@
 
 ## Configurar as formas de pagamento
 
-Após vincular sua conta, você tem a opção de **ativar dois tipos de checkout ao mesmo tempo**, são eles: Checkout Transparente e Checkout Pro. Além disso, você pode [configurar pagamentos por boleto](#bookmark_configuração_boleto) e [parcelas sem juros](#bookmark_configuração_de_parcelamento).
+Após vincular sua conta, você tem a opção de **ativar dois tipos de checkout ao mesmo tempo**, são eles: Checkout Transparente e Checkout Pro. Além disso, você pode [configurar pagamentos por boleto](#bookmark_configuração_boleto) e [parcelas sem acréscimos](#bookmark_configuração_de_parcelamento).
 
 Você pode consultar e configurar as [taxas e prazos](https://www.mercadopago.com.br/settings/release-options) de suas vendas online quando quiser.
 

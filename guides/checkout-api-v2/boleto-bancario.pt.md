@@ -2,7 +2,7 @@
 
 # Boleto bancário
 
-Com o Checkout Transparente do Mercado Pago, é possível oferecer, além de cartão e  Pix, **pagamentos através de boleto bancário**. Além disso, você pode **criar boletos bancários com descontos, multas e juros** para pagamentos antecipados ou fora do prazo estipulado na data de vencimento.
+Com o Checkout Transparente do Mercado Pago, é possível oferecer, além de cartão e  Pix, **pagamentos através de boleto bancário**. Além disso, você pode **criar boletos bancários com descontos, multas e acréscimos** para pagamentos antecipados ou fora do prazo estipulado na data de vencimento.
 
 Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um **GET** com seu _Access token_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição. Se preferir, faça a requisição utilizando os SDKs abaixo:
 
@@ -397,9 +397,9 @@ A resposta mostrará o **status pendente** até que o comprador realize o pagame
 >
 > O cliente tem entre 3 e 5 dias para pagar, dependendo do meio de pagamento. Após esse tempo, o pagamento deve ser cancelado.
 
-## Criar boletos com multas, juros e descontos
+## Criar boletos com multas, acréscimos e descontos
 
-Se você deseja oferecer **boletos bancários com descontos, multas e juros**, seja para pagamentos antecipados, seja para pagamentos efetuados após o vencimento, você pode criá-los diretamente via API do Mercado Pago, ou utilizando os seguintes SDKs:
+Se você deseja oferecer **boletos bancários com descontos, multas e acréscimos**, seja para pagamentos antecipados, seja para pagamentos efetuados após o vencimento, você pode criá-los diretamente via API do Mercado Pago, ou utilizando os seguintes SDKs:
 
 [[[
 ```php
@@ -726,7 +726,7 @@ Você deve preencher os campos para enviar um pagamento seguindo as especificaç
 | rules          | Objeto | Objeto para manter as regras relacionadas ao meio de pagamento.      | -                                                             |
 | discounts      | Lista  | Lista com os descontos a serem praticados.                           | Atualmente apenas o primeiro desconto da lista será aplicado. |
 | fine           | Objeto | Objeto para manter as informações relacionadas a multa.              | -                                                             |
-| interest       | Objeto | Objeto para manter as informações relacionadas ao juros.             | -                                                             |
+| interest       | Objeto | Objeto para manter as informações relacionadas ao acréscimos.             | -                                                             |
 
 Dentro do campo **"Discounts"**, você deve substituir os valores seguindo as especificações abaixo:
 
@@ -747,7 +747,7 @@ Dentro do campo **"Interest"**, você deve substituir os valores seguindo as esp
 
 | CAMPO |    TIPO    |                                                           DESCRIÇÃO                                                          |                                   VALIDAÇÕES                                  |
 |:-----:|:----------:|:----------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|
-| value | BigDecimal | Propriedade para definir o valor de juros mensal a serem aplicados quando o pagamento for efetuado após data de vencimento. | **Número de casas decimais**: 0 - 2. **Valor máximo**:  "1%". |
+| value | BigDecimal | Propriedade para definir o valor de acréscimos mensal a serem aplicados quando o pagamento for efetuado após data de vencimento. | **Número de casas decimais**: 0 - 2. **Valor máximo**:  "1%". |
 | type  | String     | Propriedade para definir o tipo de cálculo sobre o valor informado em "value".                                               | Valores possíveis: "percentage".                                              |
 
 
@@ -805,7 +805,7 @@ Nas tabelas a seguir você encontra as especificações de cada campo retornado 
 | rules          | Objeto | Objeto para manter as regras relacionadas ao meio de pagamento       |
 | discounts      | Lista  | Lista com os descontos praticados                                    |
 | fine           | Objeto | Objeto para manter as informações relacionadas a multa               |
-| interest       | Objeto | Objeto para manter as informações relacionadas ao juros              |
+| interest       | Objeto | Objeto para manter as informações relacionadas ao acréscimo              |
 
 
 Para o valor **“Discounts”** as especificações são as seguintes:
@@ -827,7 +827,7 @@ Para o valor **“Interest”** as especificações são as seguintes:
 
 |      CAMPO     |    TIPO    |                                                                                                                                                                                                                     DESCRIÇÃO                                                                                                                                                                                                                     |
 |:--------------:|:----------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| value          | BigDecimal | Propriedade para definir o valor de juros diários a serem aplicados quando o pagamento for efetuado após data de vencimento.                                                                                                                                                                                                                                                                                                                      |
+| value          | BigDecimal | Propriedade para definir o valor de acréscimos diários a serem aplicados quando o pagamento for efetuado após data de vencimento.                                                                                                                                                                                                                                                                                                                      |
 | type           | String     | Propriedade para definir o tipo de cálculo sobre o valor informado em "value".                                                                                                                                                                                                                                                                                                                                                                      |
 
 

@@ -43,7 +43,7 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 ----[mpe, mco, mlu, mlc]----
 * **Login facilitado**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre. 
 * **Pagar mais rápido**: utilizar dinheiro ou saldo disponível na conta Mercado Pago. 
-* **Parcelamento**: parcelar sem juros em bancos selecionados.
+* **Parcelamento**: parcelar sem acréscimos em bancos selecionados.
 
 <center>
 

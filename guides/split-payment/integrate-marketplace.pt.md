@@ -16,7 +16,7 @@ Ambos os checkouts realizam automaticamente a divisão dos valores entre o vende
 Para realizar a integração você precisará seguir o fluxo de integração usual do checkout escolhido utilizando um _access token_ para cada vendedor, obtido através de OAuth. Abaixo, listamos as etapas necessárias para integrar um checkout ao _marketplace_.
 
 1. Siga as etapas descritas na [documentação OAuth](/developers/pt/guides/additional-content/security/oauth/introduction) para obter cada `access_token`. Esta informação será necessária durante o processo de integração do checkout ao _marketplace_.
-2. Escolha o tipo de checkout ([Checkout Pro](/developers/pt/guides/checkout-pro/landing) ou ----[mla, mlu, mpe, mco, mlc, mlm]----[Checkout API](/developers/pt/guides/checkout-api/introduction------------ ----[mlb]----[Checkout Transparente](/developers/pt/guides/checkout-api/introduction)------------)) e siga o fluxo de integração.
+2. Escolha o tipo de checkout ([Checkout Pro](/developers/pt/guides/checkout-pro/landing) ou ----[mla, mlu, mpe, mco, mlc, mlm]----[Checkout API](/developers/pt/guides/checkout-api/introduction)------------ ----[mlb]----[Checkout Transparente](/developers/pt/guides/checkout-api/introduction)------------) e siga o fluxo de integração.
 3. Na integração do checkout, utilize a `public_key` da sua conta de integrador no _frontend_ e insira o `access_token` do vendedor (obtido na etapa 1) no _backend_ ou no _header_ da requisição. 
 4. Para determinar a porcentagem de comissão do marketplace:
 

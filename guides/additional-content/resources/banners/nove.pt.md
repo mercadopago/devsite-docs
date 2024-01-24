@@ -1,4 +1,4 @@
-# Meios de pagamento: 9x sem juros
+# Meios de pagamento: 9x sem acréscimos
 
 Permita que seus clientes paguem instantaneamente com esses meios de pagamento.
 

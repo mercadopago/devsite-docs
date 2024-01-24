@@ -32,9 +32,9 @@ A ativação desta funcionalidade proporciona a inserção automática do CPF do
 
 [TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
 
-## Parcelamento e juros
+## Parcelamento e acréscimos
 
-A configuração de parcelamento e juros é feita diretamente na sua conta Mercado Pago. Para isso, siga as etapas descritas abaixo.
+A configuração de parcelamento e acréscimos é feita diretamente na sua conta Mercado Pago. Para isso, siga as etapas descritas abaixo.
 
 1. Clique no botão **Definir Parcelas e Juros** e faça o login na sua conta de pessoa vendedora Mercado Pago.
 2. Selecione a opção **Código QR e pagamentos online**, habilite o parcelamento e selecione o número de parcelas que deseja oferecer no checkout. As opções vão de 1 a 12 vezes.

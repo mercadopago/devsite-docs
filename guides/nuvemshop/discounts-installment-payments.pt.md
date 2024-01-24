@@ -1,4 +1,4 @@
-# Descontos, parcelamentos e juros
+# Descontos, parcelamentos e acréscimos
 
 Com o Mercado Pago, você tem a flexibilidade de oferecer benefícios exclusivos aos seus clientes, como créditos, descontos e condições especiais, de forma personalizada e opcional. Você pode personalizar essas configurações de acordo com suas necessidades, através do Painel Administrativo da sua loja, diretamente pelo site do Mercado Pago ou pela sua conta Mercado Pago vinculada.
 
@@ -44,7 +44,7 @@ Você também pode configurar as experiências de parcelamento de cada Checkout 
 
 ### Checkout Mercado Pago (Checkout Pro)
 
-Nesta seção, você pode definir o **número máximo de meses**, com e sem juros, nos quais seus clientes poderão efetuar o pagamento utilizando o Checkout Mercado Pago:
+Nesta seção, você pode definir o **número máximo de meses**, com e sem acréscimos, nos quais seus clientes poderão efetuar o pagamento utilizando o Checkout Mercado Pago:
 
 ----[mlm, mpe, mco, mlu, mlc]----
 ![Pro](/images/nuvemshop/parc-pro-es.gif)
@@ -67,7 +67,7 @@ Nesta seção, você pode definir o **número máximo de meses**, com e sem juro
 
 ------------
 
-Nesta seção, você pode definir o **número máximo de meses**, com e sem juros, nos quais seus clientes poderão efetuar o pagamento utilizando o Checkout Transparente:
+Nesta seção, você pode definir o **número máximo de meses**, com e sem acréscimos, nos quais seus clientes poderão efetuar o pagamento utilizando o Checkout Transparente:
 
 ----[mlm, mpe, mco, mlu, mlc]----
 ![API](/images/nuvemshop/parc-api-es.gif)
@@ -84,13 +84,13 @@ Nesta seção, você pode definir o **número máximo de meses**, com e sem juro
 
 ## Configuração através da conta Mercado Pago
 
-Na sua conta do Mercado Pago, você pode consultar e configurar o número de meses sem juros que deseja oferecer para seus clientes. Nesta opção, seus clientes podem comprar em parcelas sem juros, e você assume a taxa de financiamento.
+Na sua conta do Mercado Pago, você pode consultar e configurar o número de meses sem acréscimos que deseja oferecer para seus clientes. Nesta opção, seus clientes podem comprar em parcelas sem acréscimos, e você assume a taxa de financiamento.
 
 * No site do Mercado Pago, clique em **Configurar parcelamentos e juros**.
 * Você será redirecionado para a conta do Mercado Pago vinculada à sua loja.
 * Clique em **Vender em parcelas sem juros**.
 * Escolha quantos meses deseja oferecer, marcando a opção correspondente, e clique em avançar.
-* Defina os valores mínimos para oferecer parcelamento sem juros e clique em **Salvar**.
+* Defina os valores mínimos para oferecer parcelamento sem acréscimos e clique em **Salvar**.
 
 <center>
 

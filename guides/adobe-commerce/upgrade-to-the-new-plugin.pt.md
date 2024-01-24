@@ -20,15 +20,15 @@ Para atualizar seu plugin instalando a nova versão, basta seguir os passos de i
 | Pix                                         | ✅           | ✅             |
 | Meios offline                               | ✅           | ✅             |
 | Descontos por produtos e meios de pagamento | ✅           | ✅             |
-| Parcelas **com** juros                     | ✅           | ✅             |
-| Secure Fields / PCI                        | ✅           | ✅             |
-| Parcelas **sem** juros                     | ✅           | ✅             |
-| Buy Now Pay Later - Mercado Crédito        | ✅           | ❌             |
-| Pagamentos com 2 cartões                   | ✅           | ❌             |
-| Reembolsos diretamente através da plataforma | ✅           | ❌             |
-| Data de vencimento em meios offline        | ✅           | ❌             |
-| Desativar meios de pagamento em Checkout Pro | ✅           | ❌             |
-| Salvar cartões                             | ✅           | ❌             |
+| Parcelas **com** acréscim                   | ✅           | ✅             |
+| Secure Fields / PCI                         | ✅           | ✅             |
+| Parcelas **sem** acréscimos                 | ✅           | ✅             |
+| Buy Now Pay Later - Mercado Crédito         | ✅           | ❌             |
+| Pagamentos com 2 cartões                    | ✅           | ❌             |
+| Reembolsos diretamente através da plataforma| ✅           | ❌             |
+| Data de vencimento em meios offline         | ✅           | ❌             |
+| Desativar meios de pagamento em Checkout Pro | ✅          | ❌             |
+| Salvar cartões                              | ✅           | ❌             |
 
 > As versões antigas continuam funcionando e recebem suporte normalmente, mas só teremos novas atualizações para o novo plugin.
 

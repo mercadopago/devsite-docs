@@ -1,6 +1,6 @@
-# Meios de pagamento: 10x sem juros
+# Meios de pagamento: 10x sem acréscimos
 
-Informe aos seus clientes os meios de pagamento em até 10x sem juros que você oferece.
+Informe aos seus clientes os meios de pagamento em até 10x sem acréscimos que você oferece.
 
 ## 735 x 40 px
 
