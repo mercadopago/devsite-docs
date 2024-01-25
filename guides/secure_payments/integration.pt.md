@@ -134,8 +134,3 @@ curl - X POST\ -
 "security_code": "0000"
 }
 ```
-
-## Descrição dos campos da solicitação
-
-Para conhecer a descrição de cada campo da solicitação, acesse a [documentação do Swagger](https://web.furycloud.io/gateway-unified-payment-go/specs-hub/spec/14d77c1c-8c3c-4617-ba40-07c9dc39b7c2). Para visualizar a descrição, acesse a seção de modelos e navegue pelo json até chegar ao exemplo e descrição do campo.
-

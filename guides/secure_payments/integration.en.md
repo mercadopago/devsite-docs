@@ -135,6 +135,3 @@ curl - X POST\ -
 }
 ```
 
-## Request field description
-
-To learn the description of each field in the request, access the [Swagger documentation](https://web.furycloud.io/gateway-unified-payment-go/specs-hub/spec/14d77c1c-8c3c-4617-ba40-07c9dc39b7c2). To view the description, access the models section and navigate through the JSON until you reach the example and field description.
