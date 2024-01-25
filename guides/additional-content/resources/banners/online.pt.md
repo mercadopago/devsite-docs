@@ -1,10 +1,3 @@
----
-sites_supported:
-  - mla
-  - mco
-  - mlc
----
-
 # Meios de pagamento
 
 Permita que seus clientes paguem instantaneamente com esses meios de pagamento.
@@ -93,13 +86,3 @@ width="120" height="600"/>
 ### Vista prévia:
 
 <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/120X600.jpg" alt="Mercado Pago - Medios de pago" width="120" height="600"/>
-
-
-
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> Banners de Mercado Pago
->
-> Ofereça os benefícios de pagar com Mercado Pago no seu site.
->
-> [Banners de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/introduction)

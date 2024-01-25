@@ -1,6 +1,6 @@
 # Callbacks
 
-Para simplificar a integração e interação com o Brick, são disponibilizados callbacks que podem ser utilizados em diferentes momentos do ciclo de vida para executar funções em seu site.
+Para simplificar a integração e interação com o Brick, são disponibilizados _callbacks_ que podem ser utilizados em diferentes momentos do ciclo de vida para executar funções em seu site.
 
 | Value prop | Momento de uso |
 |---|---|
