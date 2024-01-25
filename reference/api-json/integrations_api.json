@@ -1162,15 +1162,15 @@
                     "properties": {
                       "print_on_terminal": {
                         "type": "array",
-                        "items": {
-                          "type": "string",
-                          "example": "SELLER_TICKET, BUYER_TICKET"
-                        },
                         "description": {
                           "en": "Indicates if you want to print the seller ticket (\"SELLER_TICKET\") or the buyer ticket (\"BUYER_TICKET\") on the device.",
                           "pt": "Indica se você quer imprimir o ticket do vendedor (\"SELLER_TICKET\") ou o ticket do comprador (\"BUYER_TICKET\") na terminal.",
                           "es": "Indica si quieres imprimir el ticket del vendedor (\"SELLER_TICKET\") o el ticket del comprador (\"BUYER_TICKET\") en la terminal . "
-                        }
+                        },
+                        "items": {
+                          "type": "string",
+                          "example": ["SELLER_TICKET, BUYER_TICKET"]
+                        } 
                       }
                     }
                   }
@@ -1230,8 +1230,8 @@
                           },
                           "items": {
                             "type": "string",
-                            "example": "SELLER_TICKET, BUYER_TICKET"
-                          }
+                            "example": ["SELLER_TICKET, BUYER_TICKET"]
+                          } 
                         }
                       }
                     }
@@ -1696,8 +1696,8 @@
                           },
                           "items": {
                             "type": "string",
-                            "example": "SELLER_TICKET, BUYER_TICKET"
-                          }
+                            "example": ["SELLER_TICKET, BUYER_TICKET"]
+                          } 
                         }
                       }
                     }
