@@ -27,7 +27,7 @@ De ser exitoso, el intento devolverá un `ID` de la intención y su estado. Ten 
 >
 > Importante
 >
-> La intención de reembolso sólo podrá ser creada para el dispositivo en el que fue procesado el pago y para el usuario que efectuó la transacción. 
+> La intención de reembolso sólo podrá ser creada para el dispositivo en el que fue procesado el pago y por el usuario que efectuó la transacción. 
 
 Puedes [crear una intención de reembolso](/developers/es/reference/integrations_api/_point_integration-api_devices_deviceid_refund/post) y asignarla a tu dispositivo Point mediante el siguiente llamado: 
 
@@ -35,7 +35,7 @@ Puedes [crear una intención de reembolso](/developers/es/reference/integrations
 curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/{deviceid}/refund' \
 --h 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
-    "payment_id": "68316255058",
+    "payment_id": "93921210001",
      "additional_info": {
         "print_on_terminal": [ "SELLER_TICKET", "BUYER_TICKET"]
     }
@@ -56,7 +56,7 @@ Como respuesta, recibirás algo similar a esto:
 ``` json
 {
   "id": "75j8sfa-euu6-4x56-slk8-a341f71ba2f1",
-   "payment_id": "93647810056",
+   "payment_id": "93921210001",
    "device_id": "PAX_A910__SMARTPOS1490451054",	
    "additional_info": {
        "print_on_terminal": [
@@ -94,7 +94,7 @@ Recibirás una respuesta similar a la siguiente:
 {
    "device_id": "GERTEC_MP35P__8701012142072431",
    "id": "75j8sfa-euu6-4x56-slk8-a341f71ba2f1",
-   "payment_id": "93647810056",
+   "payment_id": "93921210001",
    "state": "FINISHED"
    "additional_info": {
        "print_on_terminal": [ "SELLER_TICKET", "BUYER_TICKET" ]

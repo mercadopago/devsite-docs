@@ -38,7 +38,7 @@ Para [criar uma intenção de reembolso](/developers/pt/reference/integrations_a
 curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/{deviceid}/refund' \
 --h 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
-    "payment_id": "68316255058",
+    "payment_id": "93921210001",
      "additional_info": {
         "print_on_terminal": [ "SELLER_TICKET", "BUYER_TICKET"]
     }
@@ -57,7 +57,7 @@ Como resposta, você receberá algo semelhante ao exemplo abaixo:
 ``` json
 {
   "id": "75j8sfa-euu6-4x56-slk8-a341f71ba2f1",
-   "payment_id": "93647810056",
+   "payment_id": "93921210001",
    "device_id": "PAX_A910__SMARTPOS1490451054",	
    "additional_info": {
        "print_on_terminal": [
@@ -98,7 +98,7 @@ A resposta obtida será similar ao exemplo a seguir.
 {
    "device_id": "GERTEC_MP35P__8701012142072431",
    "id": "75j8sfa-euu6-4x56-slk8-a341f71ba2f1",
-   "payment_id": "93647810056",
+   "payment_id": "93921210001",
    "state": "FINISHED"
    "additional_info": {
        "print_on_terminal": [ "SELLER_TICKET", "BUYER_TICKET" ]

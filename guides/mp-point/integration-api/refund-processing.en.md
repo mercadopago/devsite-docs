@@ -29,7 +29,7 @@ It is an attempt that, if successful, will return a refund `ID` and its status. 
 >
 > Important
 >
-> The refund intent can only be created for the device in which the payment was processed, and for the user that made the transaction.
+> The refund intent can only be created for the device in which the payment was processed, and by the user that made the transaction.
 
 You can [create a refund intent](/developers/en/reference/integrations_api/_point_integration-api_devices_deviceid_refund/post) and assign it to your Point device by performing the following request:
 
@@ -37,7 +37,7 @@ You can [create a refund intent](/developers/en/reference/integrations_api/_poin
 curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/{deviceid}/refund' \
 --h 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
-    "payment_id": "68316255058",
+    "payment_id": "93921210001",
      "additional_info": {
         "print_on_terminal": [ "SELLER_TICKET", "BUYER_TICKET"]
     }
@@ -58,7 +58,7 @@ In response, you will receive something similar to this:
 ``` json
 {
   "id": "75j8sfa-euu6-4x56-slk8-a341f71ba2f1",
-   "payment_id": "93647810056",
+   "payment_id": "93921210001",
    "device_id": "PAX_A910__SMARTPOS1490451054",	
    "additional_info": {
        "print_on_terminal": [
@@ -95,7 +95,7 @@ You will receive a response similar to this one below:
 {
    "device_id": "GERTEC_MP35P__8701012142072431",
    "id": "75j8sfa-euu6-4x56-slk8-a341f71ba2f1",
-   "payment_id": "93647810056",
+   "payment_id": "93921210001",
    "state": "FINISHED"
    "additional_info": {
        "print_on_terminal": [ "SELLER_TICKET", "BUYER_TICKET" ]
