@@ -4359,9 +4359,9 @@
           {
             "title": "custom",
             "description": {
-              "en": "Custom shipping.",
-              "es": "Custom shipping.",
-              "pt": "Custom shipping."
+              "en": "Custom shipping. Not available for Checkout Pro or Payment Link",
+              "es": "Custom shipping. No disponible para Checkout Pro o Link de pago",
+              "pt": "Custom shipping. Não disponível para o Checkout Pro ou Link de pagamento"
             }
           },
           {
