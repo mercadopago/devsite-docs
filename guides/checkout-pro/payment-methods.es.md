@@ -14,7 +14,7 @@ Por defecto, todos los métodos de pago se ofrecen en Checkout Pro. A través de
 >
 > Importante
 >
-> Los tipos de pago Dinero en cuenta y Wallet no pueden ser excluidos.
+> Los medios de pago **Dinero en cuenta** y **Wallet** no pueden ser excluidos.
 
 En la siguiente tabla, detallamos los atributos de preferencia y la descripción de cada uno de ellos para que puedas definir qué información quieres cambiar y/o agregar.
 

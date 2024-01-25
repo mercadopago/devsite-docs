@@ -17,7 +17,7 @@ In the table below, we detail the preference attributes and the description of e
 >
 > Important
 >
-> The payment methods 'Cash in account' and 'Wallet' cannot be excluded.
+> The payment methods **Cash in account** and **Wallet** cannot be excluded.
 
 With this information, use one of the SDKs available below to configure the payment methods you want to offer.
 
