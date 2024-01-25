@@ -6,7 +6,7 @@ Es importante tener en cuenta que, en su mayoría, los errores mencionados en la
 
 ## Modelos de cifrado 
 
-Para dispositivos Poi del tipo **“newland_mlb”** con KSN el cifrado se realiza con la derived key  a través de 3DES y con modo de operación ECB, obteniendo de esta forma los datos de card present como son el PAN, fecha de expiración, datos del titular de la tarjeta y el track1:
+Para dispositivos Poi del tipo **“newland_mlb”** con KSN el cifrado se realiza con la _derived key_  a través de 3DES y con modo de operación ECB, obteniendo de esta forma los datos de _card present_ como son el PAN, fecha de expiración, datos del titular de la tarjeta y el track1:
 
 | Ejemplo |
 |---|
@@ -22,7 +22,7 @@ Para dispositivos Poi del tipo **“newland_mlb”** con KSN el cifrado se reali
 | Track1 = B7657773111126363^KREIFF/ |
 | DEMENTIRA^2207201000000100000000950000000|
 
-Para los dispositivos **"pax_d180c", "gertec_mp35p", "pax_a910", "dspread_cr100", "dspread_d20", "dspread_mp300", "redelcompax_d210", "redelcompax_a910", "redelcompax_a920", "redelcompax_a920-pro", "redelcompax_im20", "smartpesa_softpos"** y **"newland_n950"** que soportan HEX CBC decoding el cifrado se realiza con la derived key a través de 3DES y con modo de operación CBC, obteniendo de esta forma los datos de card present como son el PAN, fecha de expiración, datos del titular de la tarjeta y el track1.
+Para los dispositivos **"pax_d180c", "gertec_mp35p", "pax_a910", "dspread_cr100", "dspread_d20", "dspread_mp300", "redelcompax_d210", "redelcompax_a910", "redelcompax_a920", "redelcompax_a920-pro", "redelcompax_im20", "smartpesa_softpos"** y **"newland_n950"** que soportan HEX CBC decoding el cifrado se realiza con la _derived key_ a través de 3DES y con modo de operación CBC, obteniendo de esta forma los datos de _card present_ como son el PAN, fecha de expiración, datos del titular de la tarjeta y el track1.
 
 | Ejemplo |
 |---|
@@ -36,7 +36,7 @@ Para los dispositivos **"pax_d180c", "gertec_mp35p", "pax_a910", "dspread_cr100"
 | Titular de la tarjeta = John Doe |
 | Track1 = B4000340099900505^John/Doe ^22251110000123000 |
 
-Para dispositivos POI del tipo **“Bbpos”** con KSN el cifrado se realiza con la derived key a través de 3DES y con modo de operación CBC, obteniendo de esta forma los datos de card present como son el PAN, fecha de expiración, datos del titular de la tarjeta y el track1.
+Para dispositivos POI del tipo **“Bbpos”** con KSN el cifrado se realiza con la _derived key_ a través de 3DES y con modo de operación CBC, obteniendo de esta forma los datos de _card present_ como son el PAN, fecha de expiración, datos del titular de la tarjeta y el track1.
 
 | Ejemplo |
 |---|
@@ -50,7 +50,7 @@ Para dispositivos POI del tipo **“Bbpos”** con KSN el cifrado se realiza con
 | Titular de la tarjeta = “” |
 | Track1 = 4540750031789984=19102016010000000000 |
 
-Para dispositivos POI del tipo **“abecs”** el cifrado se realiza con la working key a tráves de 3DES y con modo de operación CBC, obteniendo de esta forma los datos de card present como son el PAN, fecha de expiración, datos del titular de la tarjeta y el track1 .
+Para dispositivos POI del tipo **“abecs”** el cifrado se realiza con la _working key_ a tráves de 3DES y con modo de operación CBC, obteniendo de esta forma los datos de _card present_ como son el PAN, fecha de expiración, datos del titular de la tarjeta y el track1 .
 
 | Ejemplo |
 |---|
@@ -64,7 +64,7 @@ Para dispositivos POI del tipo **“abecs”** el cifrado se realiza con la work
 | Titular de la tarjeta = TEST MARCELO |
 | Track1 = B4074090252161538^TEST MARCELO            ^171220100000        00510000000 |
 
-Para dispositivos Poi del tipo **“newland”** el cifrado se realiza con la working key a través de 3DES y con modo de operación ECB, obteniendo de esta forma los datos de card present como son el PAN, fecha de expiración, datos del titular de la tarjeta y el track1.
+Para dispositivos Poi del tipo **“newland”** el cifrado se realiza con la _working key_ a través de 3DES y con modo de operación ECB, obteniendo de esta forma los datos de _card present_ como son el PAN, fecha de expiración, datos del titular de la tarjeta y el track1.
 
 | Ejemplo |
 |---|

@@ -2,7 +2,7 @@
 >
 > Importante
 >
-> Esta documentação é apenas para uso interno da equipe, pois é um produto exclusivo ou foi desativado. Para mais detalhes, entre em contato com a equipe comercial ou de integrações.
+> Esta documentação é apenas para uso interno da equipe porque é um produto exclusivo ou que foi desativado. Para mais detalhes, entre em contato com a equipe comercial ou de integrações.
 
 # Integrar Secure Payments
 
@@ -15,7 +15,7 @@ Para utilizar Secure Payments, é necessário fazer chamadas para as seguintes A
 
 ## Integrar pagamentos online
 
-A seguir, compartilhamos um exemplo de solicitação. Lembre-se de alterar o valor do campo `token` pelo seu Access Token.
+A seguir, compartilhamos um exemplo de solicitação. Lembre-se de alterar o valor do campo `token` pelo seu Access Token. [Acesse a documentação do OAuth](/developers/pt/docs/security/oauth/introduction) para mais informações sobre o Access token.
 
 ```curl
 curl -X POST \
