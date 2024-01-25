@@ -15,7 +15,7 @@ To use Secure Payments, you will need to make requests to the following APIs. Pl
 
 ## Integrate online payments
 
-Below is an example request. Please remember to replace the value of the `token` field with your Access Token.
+Below is an example request. Please remember to replace the value of the `token` field with your Access Token. [Go to the OAuth documentation](/developers/en/docs/security/oauth/introduction) for more information about the Access Token.
 
 ```curl
 curl -X POST \

@@ -15,7 +15,7 @@ Para utilizar Secure Payments, deberás hacerlo a través de pedidos a las sigui
 
 ## Integrar pagos online
 
-A continuación, te compartimos un pedido de ejemplo. Ten en cuenta que deberás cambiar el valor del campo `token` por tu Access Token.
+A continuación, te compartimos un pedido de ejemplo. Ten en cuenta que deberás cambiar el valor del campo `token` por tu Access Token. [Accede a la documentación de OAuth](/developers/es/docs/security/oauth/introduction) para más información sobre el Access Token.
 
 ```curl
 curl -X POST \
