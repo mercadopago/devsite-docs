@@ -1168,9 +1168,9 @@
                           "es": "Indica si quieres imprimir el ticket del vendedor (\"SELLER_TICKET\") o el ticket del comprador (\"BUYER_TICKET\") en la terminal . "
                         },
                         "items": {
-                          "type": "string"
-                        },
-                        "example": "SELLER_TICKET, BUYER_TICKET"
+                          "type": "string",
+                          "example": "SELLER_TICKET, BUYER_TICKET"
+                        }
                       }
                     }
                   }
@@ -1229,9 +1229,9 @@
                             "es": "Indica si imprimir el ticket del vendedor o el ticket del comprador en el dispositivo."
                           },
                           "items": {
-                            "type": "string"
-                          },
-                          "example": "SELLER_TICKET, BUYER_TICKET"
+                            "type": "string",
+                            "example": "SELLER_TICKET, BUYER_TICKET"
+                          }
                         }
                       }
                     }
@@ -1373,9 +1373,9 @@
                         {
                           "title": "409",
                           "description": {
-                            "en": "Conflict-error - Device has a queued intent",
-                            "es": "Conflict-error - El dispositivo tiene una intención en espera",
-                            "pt": "Conflict-error - O dispositivo tem uma intenção de espera"
+                            "en": "Conflict error - Device has a queued intent",
+                            "es": "Conflict error - El dispositivo tiene una intención en espera",
+                            "pt": "Conflict error - O dispositivo tem uma intenção de espera"
                           }
                         }
                       ]
@@ -1695,9 +1695,9 @@
                             "es": "Indica si imprimir el ticket del vendedor (\"SELLER_TICKET\") o el ticket del comprador (\"BUYER_TICKET\") en el dispositivo."
                           },
                           "items": {
-                            "type": "string"
-                          },
-                          "example": "SELLER_TICKET, BUYER_TICKET"
+                            "type": "string",
+                            "example": "SELLER_TICKET, BUYER_TICKET"
+                          }
                         }
                       }
                     }
@@ -1781,9 +1781,9 @@
                         {
                           "title": "404",
                           "description": {
-                            "en": "Not-found - Refund intent doesn't exist",
-                            "es": "Not-found - Intención de reembolso inexistente",
-                            "pt": "Not-found - Intenção de reembolso inexistente"
+                            "en": "Not found - Refund intent doesn't exist",
+                            "es": "Not found - Intención de reembolso inexistente",
+                            "pt": "Not found - Intenção de reembolso inexistente"
                           }
                         }
                       ]
