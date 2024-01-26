@@ -1169,25 +1169,7 @@
                         },
                         "items": {
                           "type": "string",
-                          "example": "SELLER_TICKET, BUYER_TICKET",
-                          "enum": [
-                            {
-                              "title": "SELLER_TICKET",
-                              "description": {
-                                "en": "Indicates if you want to print the seller ticket",
-                                "es": "Indica si quieres imprimir el ticket del vendedor",
-                                "pt": "Indica se você quer imprimir o ticket do vendedor"
-                              }
-                            },
-                            {
-                              "title": "BUYER_TICKET",
-                              "description": {
-                                "en": "Indicates if you want to print the buyer ticket",
-                                "es": "Indica si quieres imprimir el ticket del comprador",
-                                "pt": "Indica se você quer imprimir o ticket do vendedor"
-                              }
-                            }
-                          ]
+                          "example": ["SELLER_TICKET, BUYER_TICKET"]
                         } 
                       }
                     }
