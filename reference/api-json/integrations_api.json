@@ -1169,7 +1169,7 @@
                         },
                         "items": {
                           "type": "string",
-                          "example": ["SELLER_TICKET, BUYER_TICKET"],
+                          "example": "SELLER_TICKET, BUYER_TICKET",
                           "enum": [
                             {
                               "title": "SELLER_TICKET",
