@@ -10,6 +10,11 @@ Por defecto, todos los medios de pago se ofrecen en Checkout Pro. A través de l
 Por defecto, todos los métodos de pago se ofrecen en Checkout Pro. A través de la preferencia de pago, puedes configurar un método de pago por defecto, eliminar los no deseados, o elegir un número máximo de mensualidades que se ofrecerán.
 ------------
 
+> WARNING
+>
+> Importante
+>
+> Los medios de pago **Dinero en cuenta** y **Wallet** no pueden ser excluidos.
 
 En la siguiente tabla, detallamos los atributos de preferencia y la descripción de cada uno de ellos para que puedas definir qué información quieres cambiar y/o agregar.
 
