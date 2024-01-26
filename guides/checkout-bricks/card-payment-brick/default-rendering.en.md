@@ -75,7 +75,7 @@ const onSubmit = async (formData) => {
      },
      body: JSON.stringify(formData),
    })
-     .then(response) => response.json())
+     .then((response) => response.json())
      .then((response) => {
        // receive payment result
        resolve();

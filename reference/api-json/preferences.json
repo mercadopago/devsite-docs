@@ -98,56 +98,56 @@
                               "title": "ARS",
                               "description": {
                                 "en": "Argentine peso.",
-                                "es": "Argentine peso.",
-                                "pt": "Argentine peso."
+                                "es": "Peso argentino.",
+                                "pt": "Peso argentino."
                               }
                             },
                             {
                               "title": "BRL",
                               "description": {
                                 "en": "Brazilian real.",
-                                "es": "Brazilian real.",
-                                "pt": "Brazilian real."
+                                "es": "Real brasileño.",
+                                "pt": "Real brasileiro."
                               }
                             },
                             {
                               "title": "CLP",
                               "description": {
                                 "en": "Chilean peso.",
-                                "es": "Chilean peso.",
-                                "pt": "Chilean peso."
+                                "es": "Peso chileno.",
+                                "pt": "Peso chileno."
                               }
                             },
                             {
                               "title": "MXN",
                               "description": {
                                 "en": "Mexican peso.",
-                                "es": "Mexican peso.",
-                                "pt": "Mexican peso."
+                                "es": "Peso mexicano.",
+                                "pt": "Peso mexicano."
                               }
                             },
                             {
                               "title": "COP",
                               "description": {
                                 "en": "Colombian peso.",
-                                "es": "Colombian peso.",
-                                "pt": "Colombian peso."
+                                "es": "Peso colombiano.",
+                                "pt": "Peso colombiano."
                               }
                             },
                             {
                               "title": "PEN",
                               "description": {
                                 "en": "Peruvian sol.",
-                                "es": "Peruvian sol.",
-                                "pt": "Peruvian sol."
+                                "es": "Sol peruano.",
+                                "pt": "Sol peruano."
                               }
                             },
                             {
                               "title": "UYU",
                               "description": {
                                 "en": "Uruguayan peso.",
-                                "es": "Uruguayan peso.",
-                                "pt": "Uruguayan peso."
+                                "es": "Peso uruguayo.",
+                                "pt": "Peso uruguaio."
                               }
                             }
                           ]
@@ -656,22 +656,21 @@
                             "pt": "Tipo da track. Especifique a herramienta pertenecen los valores",
                             "es": "Tipo del track. Especifica a qué herramienta pertenecen los valores"
                           },
-                          "example": "google_ad",
                           "enum": [
                             {
                               "title": "google_ad",
                               "description": {
                                 "en": "Allows configurations for GTM's Google Ads Conversion Tracking tag. Necessary values as conversion_id and conversion_label.",
-                                "es": "Allows configurations for GTM's Google Ads Conversion Tracking tag. Necessary values as conversion_id and conversion_label.",
-                                "pt": "Allows configurations for GTM's Google Ads Conversion Tracking tag. Necessary values as conversion_id and conversion_label."
+                                "es": "Permite configuraciones para la tag de seguimiento de conversiones de Google Ads en GTM. Valores necesarios como 'conversion_id' y 'conversion_label'.",
+                                "pt": "Permite configurações para a tag de rastreamento de conversões do Google Ads no GTM. Valores necessários como 'conversion_id' e 'conversion_label'."
                               }
                             },
                             {
                               "title": "facebook_ad",
                               "description": {
                                 "en": "Allows configurations for Facebook Pixel. Necessary values as pixel_id.",
-                                "es": "Allows configurations for Facebook Pixel. Necessary values as pixel_id.",
-                                "pt": "Allows configurations for Facebook Pixel. Necessary values as pixel_id."
+                                "es": "Permite configuraciones para el Píxel de Facebook. Valores necesarios como 'pixel_id'.",
+                                "pt": "Permite configurações para o Pixel do Facebook. Valores necessários como 'pixel_id'."
                               }
                             }
                           ]
@@ -4359,9 +4358,9 @@
           {
             "title": "custom",
             "description": {
-              "en": "Custom shipping. Not available for Checkout Pro or Payment Link",
-              "es": "Custom shipping. No disponible para Checkout Pro o Link de pago",
-              "pt": "Custom shipping. Não disponível para Checkout Pro ou Link de pagamento"
+              "en": "Custom shipping. Not available for Checkout Pro or Payment link.",
+              "es": "Envío personalizado. No disponible para Checkout Pro o Link de pago.",
+              "pt": "Envio personalizado. Não disponível para Checkout Pro ou Link de pagamento."
             }
           },
           {
@@ -4369,15 +4368,15 @@
             "description": {
               "en": "Mercado Envíos.",
               "es": "Mercado Envíos.",
-              "pt": "Mercado Envíos."
+              "pt": "Mercado Envios."
             }
           },
           {
             "title": "not_specified",
             "description": {
               "en": "Shipping mode not specified.",
-              "es": "Shipping mode not specified.",
-              "pt": "Shipping mode not specified."
+              "es": "Modo de envío no especificado.",
+              "pt": "Modo de envio não especificado."
             }
           }
         ]
@@ -4394,16 +4393,16 @@
             "title": "regular_payment",
             "description": {
               "en": "Normal payment.",
-              "es": "Normal payment.",
-              "pt": "Normal payment."
+              "es": "Pago normal.",
+              "pt": "Pagamento normal."
             }
           },
           {
             "title": "money_transfer",
             "description": {
               "en": "Money request.",
-              "es": "Money request.",
-              "pt": "Money request."
+              "es": "Solicitud de dinero.",
+              "pt": "Solicitação de dinheiro."
             }
           }
         ]

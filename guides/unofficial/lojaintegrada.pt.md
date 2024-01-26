@@ -9,7 +9,7 @@
 
 Loja Integrada é uma **plataforma para sua loja virtual que permite processar pagamentos através do Mercado Pago**. Para contas gratuitas na Loja Integrada esse é o único meio de pagamento possível.
 
-Você pode ativar a opção de [vender diretamente em seu site](#bookmark_configurar_as_formas_de_pagamento), [receber pagamentos por boleto](#bookmark_configuração_boleto) e [oferecer parcelamento sem juros](#bookmark_configuração_de_parcelamento).
+Você pode ativar a opção de [vender diretamente em seu site](#bookmark_configurar_as_formas_de_pagamento), [receber pagamentos por boleto](#bookmark_configuração_boleto) e [oferecer parcelamento sem acréscimos](#bookmark_configuração_de_parcelamento).
 
 ## Etapas para configurar
 
@@ -43,7 +43,7 @@ E pronto! Sua conta Mercado Pago já está sincronizada em sua loja e você pode
 
 ## Configurar as formas de pagamento
 
-Após vincular sua conta, você tem a opção de **ativar dois tipos de checkout ao mesmo tempo**, são eles: Checkout Transparente e Checkout Pro. Além disso, você pode [configurar pagamentos por boleto](#bookmark_configuração_boleto) e [parcelas sem juros](#bookmark_configuração_de_parcelamento).
+Após vincular sua conta, você tem a opção de **ativar dois tipos de checkout ao mesmo tempo**, são eles: Checkout Transparente e Checkout Pro. Além disso, você pode [configurar pagamentos por boleto](#bookmark_configuração_boleto) e [parcelas sem acréscimos](#bookmark_configuração_de_parcelamento).
 
 Você pode consultar e configurar as [taxas e prazos](https://www.mercadopago.com.br/settings/release-options) de suas vendas online quando quiser.
 
@@ -85,7 +85,7 @@ Operar com **boleto do Mercado Pago como opção de pagamento**:
 
 ## Configuração de parcelamento
 
-**Ofereça a opção de parcelamento** sem juros com cartão de crédito em seu site com Mercado Pago.
+**Ofereça a opção de parcelamento** sem acréscimos com cartão de crédito em seu site com Mercado Pago.
 
 > WARNING
 >
@@ -97,7 +97,7 @@ Operar com **boleto do Mercado Pago como opção de pagamento**:
 2. Preencha os seguintes campos de acordo com a configuração da sua conta Mercado Pago:
   - Apenas para pagamento transparente, **marcar a opção para utilizar o serviço de parcelamento externo do Mercado Pago**.
   - **Complete o valor máximo e mínimo de parcelas** que deseja receber.
-  - E por último, de acordo com a configuração da sua conta Mercado Pago, **escolha o número de parcelas sem juros para pagamentos**.
+  - E por último, de acordo com a configuração da sua conta Mercado Pago, **escolha o número de parcelas sem acréscimos para pagamentos**.
 3. Clique em “Salvar alterações”.
 
 ![Setting credit card - Loja Integrada](/images/lojaintegrada/lojaintegrada-credit-card-1.gif)

@@ -65,9 +65,9 @@ curl --location --request PUT 'https://pix-api.mercadopago.com/cobv/1655996626' 
 ]]]
 
 
-## Criar cobrança com vencimento, desconto, juros e multa
+## Criar cobrança com vencimento, desconto, acréscimos e multa
 
-Para criar uma cobrança com vencimento, desconto, juros e multa execute a requisição abaixo.
+Para criar uma cobrança com vencimento, desconto, acréscimos e multa execute a requisição abaixo.
 
 [[[
 ```curl
@@ -173,7 +173,7 @@ curl --location --request PUT 'https://pix-api.mercadopago.com/cobv/1655996626' 
 | --- | --- |
 | valor.multa.modalidade  | Modalidade da multa  Valores possíveis: 1 a 2, conforme tabela abaixo  1: Valor fixo  2: Percentual  |
 | valor.multa.valorPerc  | Multa em valor absoluto ou percentual, conforme "valor.multa.modalidade".  |
-| valor.juros.modalidade  | Modalidade de juros  Valores possíveis: 1 a 8, conforme tabela abaixo  1: Valor (dias corridos)  2: Percentual ao dia (dias corridos)  3: Percentual ao mês (dias corridos)  4: Percentual ao ano (dias corridos)  5: Valor (dias úteis)  6: Percentual ao dia (dias úteis)  7: Percentual ao mês (dias úteis)  8: Percentual ao ano (dias úteis)  |
+| valor.juros.modalidade  | Modalidade de acréscimos  Valores possíveis: 1 a 8, conforme tabela abaixo  1: Valor (dias corridos)  2: Percentual ao dia (dias corridos)  3: Percentual ao mês (dias corridos)  4: Percentual ao ano (dias corridos)  5: Valor (dias úteis)  6: Percentual ao dia (dias úteis)  7: Percentual ao mês (dias úteis)  8: Percentual ao ano (dias úteis)  |
 | valor.juros.valorPerc  | Juros em valor absoluto ou percentual, conforme "valor.juros.modalidade".  |
 | valor.desconto.modalidade  | Modalidade de desconto  Valores possíveis: 1 a 6, conforme tabela abaixo  1: Valor Fixo até a[s] data[s] informada[s]  2: Percentual até a data informada  3: Valor por antecipação dia corrido  4: Valor por antecipação dia útil  5: Percentual por antecipação dia corrido  6: Percentual por antecipação dia útil  |
 | valor.desconto.valorPerc  | Desconto em valor absoluto ou percentual, conforme "valor.desconto.modalidade".  |

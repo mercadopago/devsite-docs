@@ -10,7 +10,7 @@ Para configurar esses meios de pagamento, acesse o painel de administração da 
     1. Digite o **Nome da regra**, que permitirá identificar esse meio de pagamento. 
     2. Em **Processo com a afiliação**, selecione **MercadoPagoV2**. 
     3. No campo **Status**, ative a condição de pagamento usando o botão deslizante. 
-    4. Para ativar o pagamento parcelado, selecione a opção **Automático**. Será oferecida a opção de financiamento previamente configurada na conta do vendedor do Mercado Pago. Consulte a seção "Parcelamento e juros" para obter mais informações.
+    4. Para ativar o pagamento parcelado, selecione a opção **Automático**. Será oferecida a opção de financiamento previamente configurada na conta do vendedor do Mercado Pago. Consulte a seção "Parcelamento e acréscimos" para obter mais informações.
 
 > NOTE
 >
@@ -22,11 +22,11 @@ Para configurar esses meios de pagamento, acesse o painel de administração da 
 
 ![Configurar condições de pagamento com cartão de crédito](/images/vtex/paymentconditions-cc-imagenv2-pt.gif)
 
-## Parcelamento e juros
+## Parcelamento e acréscimos
 
-Atualmente, o Mercado Pago oferece apenas a opção de parcelamento sem juros dentro da plataforma VTEX.
+Atualmente, o Mercado Pago oferece apenas a opção de parcelamento sem acréscimos dentro da plataforma VTEX.
 
-Da mesma forma, você tem a opção de configurar o parcelamento e os juros diretamente a partir da conta de vendedor do Mercado Pago. Para isso, siga as etapas descritas abaixo.
+Da mesma forma, você tem a opção de configurar o parcelamento e os acréscimos diretamente a partir da conta de vendedor do Mercado Pago. Para isso, siga as etapas descritas abaixo.
 
 1. Clique no botão **Definir Parcelas e Juros** e faça o login na sua conta de pessoa vendedora Mercado Pago.
 2. Selecione a opção **Código QR e pagamentos online**, habilite o parcelamento e selecione o número de parcelas que deseja oferecer no checkout. As opções vão de 1 a 12 vezes.

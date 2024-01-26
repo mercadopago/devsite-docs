@@ -1,4 +1,4 @@
-# Meios de pagamento: 12x sem juros
+# Meios de pagamento: 12x sem acréscimos
 
 Permita que seus clientes paguem instantaneamente com esses meios de pagamento.
 
