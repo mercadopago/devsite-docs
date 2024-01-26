@@ -52,7 +52,7 @@ payment.get({
 
 ```node
 const client = new MercadoPagoConfig({ accessToken: 'access_token' });
-const payment = new PaymentCapture(client);
+const payment = new Payment(client);
 
 payment.capture({
 	id: '<PAYMENT_ID>',

@@ -1,12 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlb
-  - mlm
-  - mco
-  - mlc
----
-
 # Todos os meios de pagamento
 
 Permita que seus clientes paguem com todos os meios de pagamento disponíveis no Mercado Pago.
@@ -449,13 +440,3 @@ width="120" height="600"/>
 
 
 ------------
-
-
-
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> Banners de Mercado Pago
->
-> Ofereça os benefícios de pagar com Mercado Pago no seu site.
->
-> [Banners de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/introduction)

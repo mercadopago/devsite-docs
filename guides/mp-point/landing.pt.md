@@ -1,7 +1,7 @@
 ---
 content_section_with_media: 
  - title: Mercado Pago Point
- - message: Point é a maquininha de cartão do Mercado Pago que permite aos compradores realizarem pagamentos presenciais de maneira rápida e segura utilizando cartões de crédito ou débito. Além disso, utilizando Point é possível oferecer parcelamento com ou sem juros, além de todos os benefícios que o Mercado Pago disponibiliza.
+ - message: Point é a maquininha de cartão do Mercado Pago que permite aos compradores realizarem pagamentos presenciais de maneira rápida e segura utilizando cartões de crédito ou débito. Além disso, utilizando Point é possível oferecer parcelamento com ou sem acréscimos, além de todos os benefícios que o Mercado Pago disponibiliza.
  - media_image: /point-api/point-landing.png
 ---
 

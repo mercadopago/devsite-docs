@@ -122,6 +122,5 @@ PaymentClient client = new PaymentClient();
 
 Long paymentId = 123456789L;
 client.capture(paymentId);
-client.capture(paymentId);
 ```
 ]]]

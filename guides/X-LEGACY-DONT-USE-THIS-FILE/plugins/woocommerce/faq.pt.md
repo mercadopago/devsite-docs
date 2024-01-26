@@ -18,7 +18,7 @@ Ao concluir esses passos, o plugin do Mercado Pago para WooCommerce estará inst
 
 [TXTSNIPPET][/guides/snippets/test-integration/faq-integration-ID]
 
-### 3. Como configuro o parcelado sem juros e antecipação de meus recebíveis?
+### 3. Como configuro o parcelado sem acréscimos e antecipação de meus recebíveis?
 
 Você pode configurar as opções de parcelamento e a forma como serão creditados seus recebíveis diretamente na sua área logada no Mercado Pago. Para isso, acesse sua conta do **Mercado Pago** e clique em **Seu negócio > Custos**.
 

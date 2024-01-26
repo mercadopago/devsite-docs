@@ -1,6 +1,6 @@
 # Configurar condições de pagamento
 
-**Condições de pagamento** são as formas de pagamento exibidas no site para a finalização de compra. Permitem a configuração de parcelamento, juros, condições especiais e etc.
+**Condições de pagamento** são as formas de pagamento exibidas no site para a finalização de compra. Permitem a configuração de parcelamento, acréscimos, condições especiais e etc.
 
 Após criar sua afiliação com o **MercadoPagoV2**, você deverá configurar as **condições de pagamento** que serão oferecidas aos compradores.
 

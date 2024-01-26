@@ -1,6 +1,6 @@
 # Pix cobrança com vencimento
 
-Pix Cobrança com vencimento é uma modalidade de pagamentos oferecida pelo Mercado Pago que permite criar cobranças com data de vencimento futura, incluir descontos, juros e multas. 
+Pix Cobrança com vencimento é uma modalidade de pagamentos oferecida pelo Mercado Pago que permite criar cobranças com data de vencimento futura, incluir descontos, acréscimos e multas. 
 
 Neste modelo, o Mercado Pago atua como gestor de pagamentos, de forma que todas as transações poderão ser visualizadas no Painel Mercado Pago. Contudo, as APIs descritas neste documento são de propriedade do Bacen. 
 
