@@ -9,4 +9,4 @@ content_section_with_media:
 >
 > Importante
 >
-> Esta documentação destina-se apenas para uso interno da equipe porque trata-se de um produto exclusivo ou foi depreciado. Para mais detalhes, entre em contato com a equipe de vendas ou integrações.
+> Esta documentação destina-se apenas para uso interno da equipe porque trata-se de um produto exclusivo ou foi descontinuado. Para mais detalhes, entre em contato com a equipe de vendas ou integrações.
