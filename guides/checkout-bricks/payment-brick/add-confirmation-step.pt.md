@@ -4,16 +4,20 @@ Após o preenchimento dos dados necessários para processar o pagamento, é poss
 
 Essa etapa adicional proporciona ao comprador uma experiência mais transparente e segura, pois permite que ele revise e edite as informações antes de confirmar o pagamento. Além disso, para os integradores, ela agiliza o desenvolvimento de uma experiência de pagamento consistente e completa.
 
+----[mlm]----
 <center>
 
 ![review-confirm-mlm](checkout-bricks/review-confirm-mlm-es.gif)
 
 </center>
+------------
+----[mla]----
 <center>
 
 ![review-confirm-mla](checkout-bricks/review-confirm-mla-pt.gif)
 
 </center>
+------------
 
 Para integrar essa funcionalidade, faz-se necessário o envio de informações adicionais durante a inicialização do Payment Brick. Apresentamos agora um exemplo do objeto de configuração com destaque para a propriedade `enableReviewStep`, que habilita o fluxo de revisão:
 
@@ -187,17 +191,20 @@ const settings = {
 
 Dados relativos ao quadro de endereço de entrega, sendo que o mesmo somente será renderizado quando tais informações forem disponibilizadas.
 
+----[mlm]----
 <center>
 
 ![review-confirm-shipping-mlm](checkout-bricks/review-confirm-shipping-mlm-pt.png)
 
 </center>
-
+------------
+----[mla]----
 <center>
 
 ![review-confirm-shipping-mla](checkout-bricks/review-confirm-shipping-mla-pt.png)
 
 </center>
+------------
 
 Segue um exemplo do objeto de _shipping_:
 
@@ -226,16 +233,20 @@ const settings = {
 
 Quadro que exibe os dados fiscais do pedido, sendo que o mesmo somente será renderizado quando tais informações forem disponibilizadas.
 
+----[mlm]----
 <center>
 
 ![review-confirm-billing-mlm](checkout-bricks/review-confirm-billing-mlm-pt.png)
 
 </center>
+------------
+----[mla]----
 <center>
 
 ![review-confirm-billing-mla](checkout-bricks/review-confirm-billing-mla-pt.png)
 
 </center>
+------------
 
 Segue um exemplo do objeto de _billing_:
 
@@ -269,16 +280,20 @@ const settings = {
 
 No campo `discounts` é possível informar cupons ou outros tipos de desconto que tenham sido aplicados ao pedido:
 
+----[mlm]----
 <center>
 
 ![review-confirm-discounts-mlm](checkout-bricks/review-confirm-discounts-mlm-pt.png)
 
 </center>
+------------
+----[mla]----
 <center>
 
 ![review-confirm-discounts-mla](checkout-bricks/review-confirm-discounts-mla-pt.png)
 
 </center>
+------------
 
 ```Javascript
 const settings = {
@@ -364,11 +379,13 @@ As informações de itens e _shipping_ serão retornadas no objeto `formData`, e
 
 Consulte esse [tópico](/developers/pt/docs/checkout-bricks/payment-brick/advanced-features/additional-data) especializado caso deseje utilizar o campo `additionalData`. Já para mais detalhes sobre o processo de submissão, consulte a seção de [envio de pagamentos](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission).
 
+----[mla]----
 <center>
 
 ![review-confirm-payment-mla](checkout-bricks/review-confirm-payment-mla-pt.png)
 
 </center>
+------------
 
 ## Customização dos textos 
 
