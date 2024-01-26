@@ -307,7 +307,7 @@
                         "description": {
                           "en": "Payment methods excluded from the payment process (except account_money and wallet, which is always allowed). The payment methods included here will not be available at checkout.",
                           "pt": "Métodos de pagamento excluídos do checkout (exceto account_money e wallet, que estará sempre disponível). Os métodos de pagamento aqui incluídos não estarão disponíveis no checkout.",
-                          "es": "Métodos de pago excluidos del proceso de pago (excepto account_money y wallet, que siempre estará disponible). Los métodos de pago incluidos aquí no estarán disponibles en el checkout."
+                          "es": "Métodos de pago excluidos del proceso de pago (excepto account_money y wallet, que siempre estarán disponibles). Los métodos de pago incluidos aquí no estarán disponibles en el checkout."
                         },
                         "items": {
                           "type": "object",
