@@ -9,6 +9,11 @@ Esta etapa adicional brinda al comprador una experiencia más transparente y seg
 ![review-confirm-mlm](checkout-bricks/review-confirm-mlm-es.gif)
 
 </center>
+<center>
+
+![review-confirm-mla](checkout-bricks/review-confirm-mla-es.gif)
+
+</center>
 
 Para integrar esta funcionalidad, es necesario enviar información adicional durante la inicialización de Payment Brick. Presentamos ahora un ejemplo del objeto de configuración con énfasis en la propiedad `enableReviewStep`, que habilita el flujo de revisión:
 
@@ -187,6 +192,11 @@ Datos relacionados con la dirección de entrega, que solo se renderizará cuando
 ![review-confirm-shipping-mlm](checkout-bricks/review-confirm-shipping-mlm-es.png)
 
 </center>
+<center>
+
+![review-confirm-shipping-mla](checkout-bricks/review-confirm-shipping-mla-es.png)
+
+</center>
 
 A continuación se muestra un ejemplo del objeto de _shipping_:
 
@@ -218,6 +228,11 @@ Cuadro que muestra los datos fiscales del pedido, que solo se renderizará cuand
 <center>
 
 ![review-confirm-billing-mlm](checkout-bricks/review-confirm-billing-mlm-es.png)
+
+</center>
+<center>
+
+![review-confirm-billing-mla](checkout-bricks/review-confirm-billing-mla-es.png)
 
 </center>
 
@@ -256,6 +271,11 @@ En el campo `discounts`, es posible indicar cupones u otros tipos de descuento a
 <center>
 
 ![review-confirm-discounts-mlm](checkout-bricks/review-confirm-discounts-mlm-es.png)
+
+</center>
+<center>
+
+![review-confirm-discounts-mla](checkout-bricks/review-confirm-discounts-mla-es.png)
 
 </center>
 
@@ -342,6 +362,12 @@ Finalmente, al hacer clic en **Pagar**, se activa la _callback_ `onSubmit`, que 
 La información de los ítems y el envío se devolverá en el objeto `formData`, y para datos adicionales, existe el campo `additionalData`, que incluye, entre otros datos, los últimos cuatro dígitos para compras con tarjeta.
 
 Consulte este [tema](/developers/es/docs/checkout-bricks/payment-brick/advanced-features/additional-data) especializado si desea utilizar el campo `additionalData`. Para obtener más detalles sobre el proceso de envío, consulte la sección de [envío de pagos](/developers/es/docs/checkout-bricks/payment-brick/payment-submission).
+
+<center>
+
+![review-confirm-payment-mla](checkout-bricks/review-confirm-payment-mla-es.png)
+
+</center>
 
 ## Personalización de textos
 

@@ -9,6 +9,11 @@ This additional step provides the buyer with a more transparent and secure exper
 ![review-confirm-mlm](checkout-bricks/review-confirm-mlm-es.gif)
 
 </center>
+<center>
+
+![review-confirm-mla](checkout-bricks/review-confirm-mla-en.gif)
+
+</center>
 
 To integrate this functionality, it is necessary to send additional information during the initialization of Payment Brick. We now present an example of the configuration object with emphasis on the `enableReviewStep` property, which enables the review flow:
 
@@ -188,6 +193,11 @@ Data related to the shipping address panel, which will only be rendered when suc
 ![review-confirm-shipping-mlm](checkout-bricks/review-confirm-shipping-mlm-en.png)
 
 </center>
+<center>
+
+![review-confirm-shipping-mla](checkout-bricks/review-confirm-shipping-mla-en.png)
+
+</center>
 
 Below is an example of the shipping object:
 
@@ -219,6 +229,11 @@ Panel displaying the fiscal data of the order, which will only be rendered when 
 <center>
 
 ![review-confirm-billing-mlm](checkout-bricks/review-confirm-billing-mlm-en.png)
+
+</center>
+<center>
+
+![review-confirm-billing-mla](checkout-bricks/review-confirm-billing-mla-en.png)
 
 </center>
 
@@ -257,6 +272,11 @@ In the `discounts` field, you can enter coupons or other types of discounts that
 <center>
 
 ![review-confirm-discounts-mlm](checkout-bricks/review-confirm-discounts-mlm-en.png)
+
+</center>
+<center>
+
+![review-confirm-discounts-mla](checkout-bricks/review-confirm-discounts-mla-en.png)
 
 </center>
 
@@ -343,6 +363,12 @@ Finally, when clicking **Pay**, the `onSubmit` callback is triggered, which proc
 Information about items and shipping will be returned in the `formData` object, and for additional data, there is the `additionalData` field, which includes, among other details, the last four digits for card purchases.
 
 If you wish to use the `additionalData` field, please check out to this specialized [topic](/developers/en/docs/checkout-bricks/payment-brick/advanced-features/additional-data). For more details on the submission process, consult the [payment submission](/developers/en/docs/checkout-bricks/payment-brick/payment-submission) section.
+
+<center>
+
+![review-confirm-payment-mla](checkout-bricks/review-confirm-payment-mla-en.png)
+
+</center>
 
 ## Text customization
 

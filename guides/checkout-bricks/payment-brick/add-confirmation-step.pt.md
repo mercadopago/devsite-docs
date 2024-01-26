@@ -6,7 +6,12 @@ Essa etapa adicional proporciona ao comprador uma experiência mais transparente
 
 <center>
 
-![review-confirm-mlm](checkout-bricks/review-confirm-mlm-pt.gif)
+![review-confirm-mlm](checkout-bricks/review-confirm-mlm-es.gif)
+
+</center>
+<center>
+
+![review-confirm-mla](checkout-bricks/review-confirm-mla-pt.gif)
 
 </center>
 
@@ -188,6 +193,12 @@ Dados relativos ao quadro de endereço de entrega, sendo que o mesmo somente ser
 
 </center>
 
+<center>
+
+![review-confirm-shipping-mla](checkout-bricks/review-confirm-shipping-mla-pt.png)
+
+</center>
+
 Segue um exemplo do objeto de _shipping_:
 
 ```Javascript
@@ -218,6 +229,11 @@ Quadro que exibe os dados fiscais do pedido, sendo que o mesmo somente será ren
 <center>
 
 ![review-confirm-billing-mlm](checkout-bricks/review-confirm-billing-mlm-pt.png)
+
+</center>
+<center>
+
+![review-confirm-billing-mla](checkout-bricks/review-confirm-billing-mla-pt.png)
 
 </center>
 
@@ -256,6 +272,11 @@ No campo `discounts` é possível informar cupons ou outros tipos de desconto qu
 <center>
 
 ![review-confirm-discounts-mlm](checkout-bricks/review-confirm-discounts-mlm-pt.png)
+
+</center>
+<center>
+
+![review-confirm-discounts-mla](checkout-bricks/review-confirm-discounts-mla-pt.png)
 
 </center>
 
@@ -342,6 +363,12 @@ Por fim, ao clicar em **Pagar**, é acionada a _callback_ `onSubmit`, a qual seg
 As informações de itens e _shipping_ serão retornadas no objeto `formData`, e para dados adicionais, tem-se o campo `additionalData`, que inclui dentre outros dados, os últimos quatro dígitos para compras com cartão. 
 
 Consulte esse [tópico](/developers/pt/docs/checkout-bricks/payment-brick/advanced-features/additional-data) especializado caso deseje utilizar o campo `additionalData`. Já para mais detalhes sobre o processo de submissão, consulte a seção de [envio de pagamentos](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission).
+
+<center>
+
+![review-confirm-payment-mla](checkout-bricks/review-confirm-payment-mla-pt.png)
+
+</center>
 
 ## Customização dos textos 
 
