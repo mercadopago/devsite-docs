@@ -12,7 +12,7 @@ In order to start receiving payments with Mercado Pago, after creating a Mercado
 > 
 > Important
 > 
-> The MercadoPagoV1 gateway affiliation will be discontinued. If you already have a MercadoPagoV1 gateway affiliation, you'll need to [migrate to MercadoPagoV2](/developers/en/docs/vtex/integration/v1-v2-migration) so you can keep operating with Mercado Pago and benefit from the advantages that this new conector offers.
+> The MercadoPagoV1 gateway affiliation will be discontinued. If you already have a MercadoPagoV1 gateway affiliation, you'll need to [migrate to MercadoPagoV2](/developers/en/docs/vtex/how-tos/migrate-v1-v2) so you can keep operating with Mercado Pago and benefit from the advantages that this new conector offers.
 
 
 See below the available payment methods for the store when integrating Checkout Transparente. Keep in mind that you will need to configure them one by one, individually. 
@@ -40,7 +40,7 @@ In order to start receiving payments with Mercado Pago, after creating a Mercado
 > 
 > Important
 > 
-> The MercadoPagoV1 gateway affiliation will be discontinued. If you already have a MercadoPagoV1 gateway affiliation, you'll need to [migrate to MercadoPagoV2](/developers/en/docs/vtex/integration/v1-v2-migration) so you can keep operating with Mercado Pago and benefit from the advantages that this new conector offers. 
+> The MercadoPagoV1 gateway affiliation will be discontinued. If you already have a MercadoPagoV1 gateway affiliation, you'll need to [migrate to MercadoPagoV2](/developers/en/docs/vtex/how-tos/migrate-v1-v2) so you can keep operating with Mercado Pago and benefit from the advantages that this new conector offers. 
 
 
 See below the available payment methods for the store when integrating Checkout API. Keep in mind that you will need to configure them one by one, individually. 

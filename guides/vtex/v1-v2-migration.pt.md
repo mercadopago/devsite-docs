@@ -20,11 +20,11 @@ Se você já possui uma afiliação com o gateway MercadoPagoV1, agora deverá c
 | Campo | Descrição |
 |---|---|
 | Application Key  | Refere-se às suas [credenciais](/developers/pt/docs/vtex/additional-content/your-integrations/credentials) de produção do Mercado Pago. Complete com sua **Public Key**. |
-| Application Token | Refere-se às suas [credenciais](/developers/pt/docs/vtex/additional-content/your-integrations/credentials) do Mercado Pago. Complete com seu Access Token. |
+| Application Token | Refere-se às suas [credenciais](/developers/pt/docs/vtex/additional-content/your-integrations/credentials) do Mercado Pago. Complete com seu **Access Token**. |
 | Prazo de vencimento do boleto  | Prazo, em dias úteis, de vencimento do pedido de compra. Caso o cliente efetue o pagamento após o prazo, o dinheiro será depositado na conta do mesmo no Mercado Pago. |
 | Nome da loja  | Nome da loja. O valor deste campo aparecerá na fatura do cartão do cliente. |
 | Parcelamento máximo   | Número máximo de parcelas disponíveis para efetuar o pagamento. Com o Mercado Pago, você pode oferecer parcelamento em até 12 vezes. |
-| Suporte 3DS 2.0 | 3-D Secure é um protocolo criado para proteger transações em comércio eletrônico por meio de uma camada adicional de verificação de identidade antes da autorização final. Apenas transações rejeitadas por Alto Risco são enviadas para validação do 3DS e não afetam a experiência de compra.Ative-o selecionando a opção "Sim". Certifique-se de ter instalado o Mercado Pago Payment App para que ele funcione corretamente. |
+| Suporte 3DS 2.0 | 3-D Secure é um protocolo criado para proteger transações em comércio eletrônico por meio de uma camada adicional de verificação de identidade antes da autorização final. Apenas transações rejeitadas por Alto Risco são enviadas para validação do 3DS e não afetam a experiência de compra.<br>Ative-o selecionando a opção **"Sim"**. <br>Certifique-se de ter instalado o Mercado Pago Payment App para que ele funcione corretamente. |
 | Categoría principal da loja | Ramo de atividades da loja. |
 | Compartilhamento da categoria (loja ou produto) por transação | Para ajudar nosso sistema de prevenção de fraudes, você tem a opção de compartilhar os dados da categoria da loja ou do produto para cada transação realizada. Recomendamos selecionar a opção **Categoria da Loja**. |
 | Reembolso automático / manual  | Em caso de cancelamento, você pode escolher se deseja que o Mercado Pago reembolse automaticamente o dinheiro ou se deseja reter o valor pago para que o cliente possa usá-lo em compras futuras na mesma loja. |
@@ -53,6 +53,6 @@ Para fazé-lo, siga os passos abaixo.
 3. Em **Processo de afiliação**, substitua MercadoPagoV1 por **MercadoPagoV2**. 
 4. Repita o processo com os demais meios de pagamento que você disponibilizou em sua plataforma.
 
-![Configure v2 in payment methods](devsite-docs/images/vtex/migration-payment-conditions.gif) 
+![Configure v2 in payment methods](/images/vtex/migration-payment-conditions.gif) 
 
 Ao concluir o processo, você terá configurado sua nova afiliação do gateway MercadoPagoV2 e poderá continuar operando com o Mercado Pago, aproveitando as novas vantagens que esse conector oferece.

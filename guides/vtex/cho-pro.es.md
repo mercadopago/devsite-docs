@@ -6,7 +6,7 @@ Con Checkout Pro, el comprador será dirigido desde la tienda al sitio web de Me
 >
 > Importante
 >
-> La afiliación de gateway MercadoPagoV1 será discontinuada para el procesamiento de pagos. Si ya cuentas con una afiliación de gateway MercadoPagoV1, deberás [migrar a MercadoPagoV2](/developers/es/docs/vtex/mp1-mp2-migration) para continuar operando con Mercado Pago y aprovechar las ventajas que este nuevo conector ofrece.
+> La afiliación de gateway MercadoPagoV1 será discontinuada para el procesamiento de pagos. Si ya cuentas con una afiliación de gateway MercadoPagoV1, deberás [migrar a MercadoPagoV2](/developers/es/docs/vtex/how-tos/migrate-v1-v2) para continuar operando con Mercado Pago y aprovechar las ventajas que este nuevo conector ofrece.
 
 Configurando Checkout Pro, puedes ofrecer pagos con los mismos medios que tienes previamente configurados en tu cuenta de Mercado Pago:
 

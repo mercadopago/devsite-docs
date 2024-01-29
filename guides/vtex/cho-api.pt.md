@@ -10,7 +10,7 @@ Além de permitir maior controle no processo de customização e integração, o
 >
 > Importante
 >
-> A afiliação de gateway MercadoPagoV1 será descontinuada. Se você já possui uma afiliação de gateway MercadoPagoV1, você precisará [migrar para o MercadoPagoV2](/developers/pt/docs/vtex/integration/v1-v2-migration) para continuar operando com o Mercado Pago e aproveitar as novas vantagens que esse conector oferece.
+> A afiliação de gateway MercadoPagoV1 será descontinuada. Se você já possui uma afiliação de gateway MercadoPagoV1, você precisará [migrar para o MercadoPagoV2](/developers/pt/docs/vtex/how-tos/migrate-v1-v2) para continuar operando com o Mercado Pago e aproveitar as novas vantagens que esse conector oferece.
 
 
 Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integrar o Checkout Transparente. Tenha em mente que você precisará configurá-los um por um, de forma individual.
@@ -36,7 +36,7 @@ Além de permitir maior controle no processo de customização e integração, o
 >
 > Importante
 >
-> A afiliação de gateway MercadoPagoV1 será descontinuada. Se você já possui uma afiliação de gateway MercadoPagoV1, você precisará [migrar para o MercadoPagoV2](/developers/pt/docs/vtex/integration/v1-v2-migration) para continuar operando com o Mercado Pago e aproveitar as novas vantagens que esse conector oferece.
+> A afiliação de gateway MercadoPagoV1 será descontinuada. Se você já possui uma afiliação de gateway MercadoPagoV1, você precisará [migrar para o MercadoPagoV2](/developers/pt/docs/vtex/how-tos/migrate-v1-v2) para continuar operando com o Mercado Pago e aproveitar as novas vantagens que esse conector oferece.
 
 
 Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integrar o Checkout API. Tenha em mente que você precisará configurá-los um por um, de forma individual.

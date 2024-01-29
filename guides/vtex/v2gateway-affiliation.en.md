@@ -16,7 +16,7 @@ In addition, MercadoPagoV2 offers you the possibility to activate **3DS (3-D Sec
 To create a **MercadoPagoV2 gateway affiliation**, follow the steps below: 
 
 1. In your VTEX store admin panel, go to **Payments>Settings**. 
-2. At the top of the screen, go to the "Gateway affiliations" tab and click the "+" button to create a new affiliation. 
+2. At the top of the screen, go to the **"Gateway affiliations"** tab and click the "+" button to create a new affiliation. 
 3. Look for the **MercadoPagoV2** connector and select it. This will take you to a new screen. 
 4. On said screen, choose the **Affiliation Name** within the store. Also, make sure you have enabled the **Live/Production** slider button, even if you are using test accounts. 
 5. Then, fill in the corresponding fields: 
@@ -27,7 +27,7 @@ To create a **MercadoPagoV2 gateway affiliation**, follow the steps below:
 | Prazo de vencimento do boleto - Período de vencimiento del ticket  | Deadline, in business days, for the purchase order to expire. If the customer makes the payment after the deadline, the money will be deposited into their Mercado Pago account.  |
 | Nome da loja - Nombre para resúmenes:  | Store name. The value of this field will appear on the customer's credit card statement.  |
 | Parcelamento máximo - Cuotas máximas  | Maximum number of installments available to make the payment. With Mercado Pago, you can offer payments up to 12 installments. |
-| Suporte 3DS 2.0 - Soporte 3DS 2.0 | 3-D Secure is a protocol created to protect transactions in e-commerce by adding an extra layer of identity verification before the final authorization. Only transactions rejected as High Risk are sent for 3-D Secure validation, which does not affect the shopping experience.<br>To activate it, choose the option **Yes**. Make sure you have Mercado Pago Payment App installed so 3DS can work correctly. |
+| Suporte 3DS 2.0 - Soporte 3DS 2.0 | 3-D Secure is a protocol created to protect transactions in e-commerce by adding an extra layer of identity verification before the final authorization. Only transactions rejected as High Risk are sent for 3-D Secure validation, which does not affect the shopping experience.<br>To activate it, choose the option **Yes**. <br>Make sure you have Mercado Pago Payment App installed so 3DS can work correctly. |
 | Categoría principal da loja - Categoría principal de la tienda  | Store's line of business |
 | Compartilhamento da categoria (loja ou produto) por transação - Categoría (tienda o producto) compartida por transacción | To assist our fraud prevention system, you have the option to share the store's or product's category data for each transaction. We recommend selecting the **"categoría da loja - categoría de tienda"** option.  |
 | Reembolso automático / manual  | In case of cancellation, you can choose whether you want Mercado Pago to automatically refund the money or if you want to hold the paid amount so the customer can use it for future purchases in the same store.  |

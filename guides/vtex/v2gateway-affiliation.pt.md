@@ -15,18 +15,18 @@ Também permitirá ativar o **3DS (3-D Secure)**, um protocolo criado para prote
 Para criar uma **afiliação de gateway com o MercadoPagoV2**, siga os passos abaixo:
 
 1. No painel de administração de sua loja VTEX, acesse **Pagamentos>Configurações**.
-2. Na parte superior da tela, vá para a aba "Afiliaciones de gateway" e clique no botão "+" para criar uma nova afiliação.
+2. Na parte superior da tela, vá para a aba **"Afiliaciones de gateway"** e clique no botão "+" para criar uma nova afiliação.
 3. Procure pelo conector **MercadoPagoV2** e selecione-o. Isso irá te levar para uma nova tela.
 4. Nesta tela, escolha qual será o **Nome da afiliação** dentro da loja. Além disso, certifique-se de ter ativado o botão deslizante **Live/Produção**, mesmo que esteja usando contas de teste.
 5. Após, preencha os campos correspondentes:
 | Campo | Descrição |
 |---|---|
 | Application Key  | Refere-se às suas [credenciais](/developers/pt/docs/vtex/additional-content/your-integrations/credentials) de produção do Mercado Pago. Complete com sua **Public Key**. |
-| Application Token | Refere-se às suas [credenciais](/developers/pt/docs/vtex/additional-content/your-integrations/credentials) do Mercado Pago. Complete com seu Access Token. |
+| Application Token | Refere-se às suas [credenciais](/developers/pt/docs/vtex/additional-content/your-integrations/credentials) do Mercado Pago. Complete com seu **Access Token**. |
 | Prazo de vencimento do boleto  | Prazo, em dias úteis, de vencimento do pedido de compra. Caso o cliente efetue o pagamento após o prazo, o dinheiro será depositado na conta do mesmo no Mercado Pago. |
 | Nome da loja  | Nome da loja. O valor deste campo aparecerá na fatura do cartão do cliente. |
 | Parcelamento máximo   | Número máximo de parcelas disponíveis para efetuar o pagamento. Com o Mercado Pago, você pode oferecer parcelamento em até 12 vezes. |
-| Suporte 3DS 2.0 | 3-D Secure é um protocolo criado para proteger transações em comércio eletrônico por meio de uma camada adicional de verificação de identidade antes da autorização final. Apenas transações rejeitadas por Alto Risco são enviadas para validação do 3DS e não afetam a experiência de compra.Ative-o selecionando a opção "Sim". Certifique-se de ter instalado o Mercado Pago Payment App para que ele funcione corretamente. |
+| Suporte 3DS 2.0 | 3-D Secure é um protocolo criado para proteger transações em comércio eletrônico por meio de uma camada adicional de verificação de identidade antes da autorização final. Apenas transações rejeitadas por Alto Risco são enviadas para validação do 3DS e não afetam a experiência de compra.<br>Ative-o selecionando a opção **"Sim"**. <br>Certifique-se de ter instalado o Mercado Pago Payment App para que ele funcione corretamente. |
 | Categoría principal da loja | Ramo de atividades da loja. |
 | Compartilhamento da categoria (loja ou produto) por transação | Para ajudar nosso sistema de prevenção de fraudes, você tem a opção de compartilhar os dados da categoria da loja ou do produto para cada transação realizada. Recomendamos selecionar a opção **Categoria da Loja**. |
 | Reembolso automático / manual  | Em caso de cancelamento, você pode escolher se deseja que o Mercado Pago reembolse automaticamente o dinheiro ou se deseja reter o valor pago para que o cliente possa usá-lo em compras futuras na mesma loja. |
@@ -50,5 +50,3 @@ Depois de preencher todos os campos, clique em **Salvar** e pronto! Sua afiliaç
 > Nota
 >
 > Se você tiver dificuldades durante sua integração, verifique nossa [lista de erros](/developers/pt/guides/vtex/additional-content/possible-errors) e nosso documento sobre [logs da VTEX.](/developers/pt/guides/vtex/how-tos/logs)
-
-![Criando afiliação de gateway MercadoPagoV2](/images/vtex/vtex-admin-gateway-pt.gif)

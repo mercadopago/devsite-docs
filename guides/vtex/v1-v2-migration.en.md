@@ -23,7 +23,7 @@ If you already have a MercadoPagoV1 gateway affiliation, you will now need to cr
 | Prazo de vencimento do boleto - Período de vencimiento del ticket  | Deadline, in business days, for the purchase order to expire. If the customer makes the payment after the deadline, the money will be deposited into their Mercado Pago account.  |
 | Nome da loja - Nombre para resúmenes:  | Store name. The value of this field will appear on the customer's credit card statement.  |
 | Parcelamento máximo - Cuotas máximas  | Maximum number of installments available to make the payment. With Mercado Pago, you can offer payments up to 12 installments. |
-| Suporte 3DS 2.0 - Soporte 3DS 2.0 | 3-D Secure is a protocol created to protect transactions in e-commerce by adding an extra layer of identity verification before the final authorization. Only transactions rejected as High Risk are sent for 3-D Secure validation, which does not affect the shopping experience.<br>To activate it, choose the option **Yes**. Make sure you have Mercado Pago Payment App installed so 3DS can work correctly. |
+| Suporte 3DS 2.0 - Soporte 3DS 2.0 | 3-D Secure is a protocol created to protect transactions in e-commerce by adding an extra layer of identity verification before the final authorization. Only transactions rejected as High Risk are sent for 3-D Secure validation, which does not affect the shopping experience.<br>To activate it, choose the option **Yes**. <br>Make sure you have Mercado Pago Payment App installed so 3DS can work correctly. |
 | Categoría principal da loja - Categoría principal de la tienda  | Store's line of business |
 | Compartilhamento da categoria (loja ou produto) por transação - Categoría (tienda o producto) compartida por transacción | To assist our fraud prevention system, you have the option to share the store's or product's category data for each transaction. We recommend selecting the **"categoría da loja - categoría de tienda"** option.  |
 | Reembolso automático / manual  | In case of cancellation, you can choose whether you want Mercado Pago to automatically refund the money or if you want to hold the paid amount so the customer can use it for future purchases in the same store.  |
@@ -54,6 +54,6 @@ To change the configuration of your payment methods, follow the steps below:
 3. On **Affiliation process**, change from MercadoPagoV1 to **MercadoPagoV2**.
 4. Repeat the process with all the payment methods you have already made available on your platform.
 
-![Configure v2 in payment methods](devsite-docs/images/vtex/migration-payment-conditions.gif) 
+![Configure v2 in payment methods](/images/vtex/migration-payment-conditions.gif) 
 
 Upon completing the process, you will have your new MercadoPagoV2 gateway affiliation configured and you will be able to continue operating with Mercado Pago, benefiting from the new advantages that this connector offers.
