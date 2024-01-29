@@ -6,8 +6,6 @@ Revisa que campos puedes enviar según tu industria para mejorar tu aprobación.
 > 
 > Atención
 >
-> Uso de ejemplos
-> 
 > Esta información solo funciona para la API de Preferencias.
 
 ## Apparel
@@ -343,7 +341,9 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "category_id": "entertainment",
             "quantity": 1,
             "unit_price": 150,
-            "event_date": "2020-06-02T12:58:41.425-04:00",
+            "category_descriptor":{
+                "event_date": "2022-03-12T12:58:41.425-04:00"
+            },
         }
     ],
     "payer": {
@@ -840,7 +840,9 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "category_id": "services",
             "quantity": 1,
             "unit_price": 150,
-            "event_date": "2020-06-02T12:58:41.425-04:00"
+            "category_descriptor":{
+                "event_date": "2022-03-12T12:58:41.425-04:00"
+            },
         }
     ],
     "payer": {
@@ -1096,6 +1098,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "description": "Descripción de servicio",
             "category_id": "Travels",
             "category_descriptor": {
+                "event_date": "2020-06-02T12:58:41.425-04:00",
                 "passenger": {
                     "first_name": "[FAKER][NAME][FIRST_NAME]",
                     "last_name": "[FAKER][NAME][LAST_NAME]",
@@ -1104,7 +1107,6 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
                 }
             },
             "quantity": 1,
-            "event_date": "2020-06-02T12:58:41.425-04:00",
             "unit_price": 150
         }
     ],
