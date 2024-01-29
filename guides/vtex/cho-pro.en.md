@@ -2,6 +2,14 @@
 
 With Checkout Pro, the buyer will be redirected to the Mercado Pago website, where they will need to fill in the requested information and make the payment. The transaction is processed and completed outside the store environment. It is not necessary for the buyer to have a Mercado Pago account, and upon completing the transaction, the buyer can be redirected back to the store. 
 
+In order to start receiving payments with Mercado Pago, after creating a MercadoPagoV2 gateway affiliation, you will need to configure the payment methods you wish to offer.
+
+> WARNING 
+> 
+> Important
+> 
+> The MercadoPagoV1 gateway affiliation will be discontinued. If you already have a MercadoPagoV1 gateway affiliation, you'll need to [migrate to MercadoPagoV2](/developers/en/docs/vtex/integration/v1-v2-migration) so you can keep operating with Mercado Pago and benefit from the advantages that this new conector offers.
+
 When setting up Checkout Pro, you can offer payments with the same methods you have previously configured in your Mercado Pago account: 
 
 ----[mlb]---- 

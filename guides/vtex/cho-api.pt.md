@@ -6,6 +6,13 @@ Com o Checkout Transparente, todo o processo de finalização de compra acontece
 
 Além de permitir maior controle no processo de customização e integração, o Checkout Transparente oferece uma estrutura completa para processamento de pagamentos com os principais meios disponíveis no mercado.
 
+> WARNING
+>
+> Importante
+>
+> A afiliação de gateway MercadoPagoV1 será descontinuada. Se você já possui uma afiliação de gateway MercadoPagoV1, você precisará [migrar para o MercadoPagoV2](/developers/pt/docs/vtex/integration/v1-v2-migration) para continuar operando com o Mercado Pago e aproveitar as novas vantagens que esse conector oferece.
+
+
 Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integrar o Checkout Transparente. Tenha em mente que você precisará configurá-los um por um, de forma individual.
 
 | Meio de pagamento | Descrição |
@@ -24,6 +31,13 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 Com o Checkout API, todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa.
 
 Além de permitir maior controle no processo de customização e integração, o Checkout API oferece uma estrutura completa para processamento de pagamentos com os principais meios disponíveis no mercado.
+
+> WARNING
+>
+> Importante
+>
+> A afiliação de gateway MercadoPagoV1 será descontinuada. Se você já possui uma afiliação de gateway MercadoPagoV1, você precisará [migrar para o MercadoPagoV2](/developers/pt/docs/vtex/integration/v1-v2-migration) para continuar operando com o Mercado Pago e aproveitar as novas vantagens que esse conector oferece.
+
 
 Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integrar o Checkout API. Tenha em mente que você precisará configurá-los um por um, de forma individual.
 

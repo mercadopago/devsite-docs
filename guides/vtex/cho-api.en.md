@@ -6,6 +6,15 @@ With Checkout Transparente, the entire purchase process will take place within t
 
 In addition to allowing greater control in the customization and integration process, Checkout Transparente offers a complete structure for processing payments with the main methods available in the market. 
 
+In order to start receiving payments with Mercado Pago, after creating a MercadoPagoV2 gateway affiliation, you will need to configure the payment methods you wish to offer.
+
+> WARNING 
+> 
+> Important
+> 
+> The MercadoPagoV1 gateway affiliation will be discontinued. If you already have a MercadoPagoV1 gateway affiliation, you'll need to [migrate to MercadoPagoV2](/developers/en/docs/vtex/integration/v1-v2-migration) so you can keep operating with Mercado Pago and benefit from the advantages that this new conector offers.
+
+
 See below the available payment methods for the store when integrating Checkout Transparente. Keep in mind that you will need to configure them one by one, individually. 
 
 | Payment Method | Description | 
@@ -25,6 +34,14 @@ See below the available payment methods for the store when integrating Checkout 
 With Checkout API, the entire purchase process will take place within the online store environment, without the need for redirection to an external page. 
 
 In addition to allowing greater control in the customization and integration process, Checkout API offers a complete structure for processing payments with the main methods available in the market. 
+In order to start receiving payments with Mercado Pago, after creating a MercadoPagoV2 gateway affiliation, you will need to configure the payment methods you wish to offer.
+
+> WARNING 
+> 
+> Important
+> 
+> The MercadoPagoV1 gateway affiliation will be discontinued. If you already have a MercadoPagoV1 gateway affiliation, you'll need to [migrate to MercadoPagoV2](/developers/en/docs/vtex/integration/v1-v2-migration) so you can keep operating with Mercado Pago and benefit from the advantages that this new conector offers. 
+
 
 See below the available payment methods for the store when integrating Checkout API. Keep in mind that you will need to configure them one by one, individually. 
 

@@ -1,6 +1,14 @@
 # Configuração de meios de pagamento 
 
-O Mercado Pago permite que você escolha quais métodos de pagamento oferecer nas lojas VTEX por meio da configuração dos nossos checkouts: 
+Para começar a receber pagamentos com o Mercado Pago, após criar uma afiliação do gateway MercadoPagoV2, você deverá configurar os meios de pagamento que deseja disponibilizar.
+
+> WARNING
+>
+> Importante
+>
+> A afiliação de gateway MercadoPagoV1 será descontinuada. Se você já possui uma afiliação de gateway MercadoPagoV1, você precisará [migrar para o MercadoPagoV2](/developers/pt/docs/vtex/integration/v1-v2-migration) para continuar operando com o Mercado Pago e aproveitar as novas vantagens que esse conector oferece.
+
+Ao utilizar o MercadoPagoV2 como conector, você pode escolher quais métodos de pagamento oferecer nas lojas VTEX por meio da configuração dos nossos checkouts: 
 
 * ----[mla, mlu, mlc, mlm, mpe, mco]----[Checkout API:](/developers/pt/docs/vtex/payments-configuration/checkout-api)------------ ----[mlb]---- [Checkout Transparente:](/developers/pt/docs/vtex/payments-configuration/checkout-api)------------ Você pode oferecer pagamentos parcelados sem juros, ----[mla, mlm, mlb]----financiamentos sem cartão,------------ pagamentos com cartões de débito, ----[mlb]---- com Boleto Bancário ou Pix------------, e todo o processo de pagamento será realizado dentro do ambiente da loja, sem a necessidade de redirecionar para uma página externa. 
 

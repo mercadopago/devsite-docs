@@ -45,7 +45,7 @@ Si ya cuentas con una afiliación de gateway MercadoPagoV1, deberás crear ahora
 
 ## 2. Configurar medios de pago
 
-Si ya tienes configurados tus medios de pago con la afiliación MercadoPagoV1, deberás efectuar la **migración a MercadoPagoV2 para cada uno de los medios que hayas disponibilizado**. El conector V2 te permitirá ofrecer los mismos medios de pago y sumar, además, nuevas opciones, como ----[mco]----PSE,------------ ----[mla, mlb, mlm]----financiación sin tarjeta,------------ o pagos con dinero en cuenta de Mercado Pago.
+Si ya tienes configurados tus medios de pago con la afiliación MercadoPagoV1, deberás efectuar la **migración a MercadoPagoV2 para cada uno de los medios que hayas disponibilizado**. El conector V2 te permitirá ofrecer los mismos medios de pago y sumar, además, nuevas opciones, como ----[mco]----PSE o------------ ----[mla, mlb, mlm]----financiación sin tarjeta o------------ pagos con dinero en cuenta de Mercado Pago.
 
 Para hacerlo, sigue los pasos enumerados debajo.
 

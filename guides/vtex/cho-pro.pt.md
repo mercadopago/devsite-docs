@@ -2,6 +2,12 @@
 
 Com o Checkout Pro, o comprador será direcionado para o site do Mercado Pago, no qual deverá preencher as informações solicitadas e efetuar o pagamento. Sendo assim, a transação é processada e concluída fora do ambiente da loja. Não é necessário que o comprador tenha uma conta no Mercado Pago e, ao finalizar a transação, o comprador pode ser redirecionado de volta para a loja. 
 
+> WARNING
+>
+> Importante
+>
+> A afiliação de gateway MercadoPagoV1 será descontinuada. Se você já possui uma afiliação de gateway MercadoPagoV1, você precisará [migrar para o MercadoPagoV2](/developers/pt/docs/vtex/integration/v1-v2-migration) para continuar operando com o Mercado Pago e aproveitar as novas vantagens que esse conector oferece.
+
 Ao configurar o Checkout Pro, você pode oferecer pagamentos com os mesmos meios que você já configurou anteriormente em sua conta do Mercado Pago:
 
 ----[mlb]----
