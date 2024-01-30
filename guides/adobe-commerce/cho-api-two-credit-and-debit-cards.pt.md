@@ -33,7 +33,7 @@ Ao finalizar o preenchimento desses campos, o pagamento via cartão terá sido h
 
 A configuração de parcelamento e acréscimos é feita diretamente na sua conta Mercado Pago. Para isso, siga as etapas descritas abaixo.
 
-1. Clique no botão **Definir Parcelas e Acréscimos** e faça o login na sua conta de pessoa vendedora Mercado Pago.
+1. Clique no botão **Definir parcelas e acréscimos** e faça o login na sua conta de pessoa vendedora Mercado Pago.
 2. Selecione a opção **Código QR e pagamentos online**, habilite o parcelamento e selecione o número de parcelas que deseja oferecer no Checkout. As opções vão de 1 a 12 vezes.
 
 ![Installment and interest](/images/adobe-commerce/contaptac.gif)
