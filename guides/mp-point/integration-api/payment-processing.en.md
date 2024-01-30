@@ -56,7 +56,6 @@ You will receive a response like this:
 ```
 
 ------------
-
 ----[mlb]----
 ```json
 {
@@ -98,7 +97,6 @@ You will receive a response like this:
 }
 ```
 ------------
-
 ----[mlm]----
 ```json
 {
@@ -144,7 +142,6 @@ You will receive a response like this:
 ## Create the payment intent
 
 A payment intent is a call that contains all the details of the transaction to be made, and it must be created in order to start a payment. It is an attempt that, if successful, will return a payment `id`  and its status.
-
 
 ----[mla]----
 
@@ -282,7 +279,6 @@ You will receive a response like this:
 
 Please note that payment intents are the foundation for processing payments with Point devices. For this reason, it is important that you register and save the data obtained during their creation, especially their `id`.
 
-
 ## Process your payment intent
 
 Once the payment intent has been created, you can obtain it from your Point device by pressing on the key to pay (in the case of Point Plus and Point Pro 2 the **green button** and, in the case of the Point Smart, the **digital button “Cobrar”**). 
@@ -299,6 +295,14 @@ Then, follow the steps shown on the screen afterwards to complete the payment.
 
 If you want to know the status of a particular payment intent, you can ----[mla, mlb]----[check the current status of your payment intent](/developers/en/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get)------------ ----[mlm]----[check the current status of your payment intent](/developers/en/reference/point_apis_mlm/_point_integration-api_payment-intents_paymentintentid/get)------------ using the `id` that you received in the response when creating it.
 
+----[mla, mlb, mlm]----
+> WARNING
+>
+> Attention
+> 
+> Keep in mind that it's only possible to **check the status of a payment intent that was created up to, at most, 3 months ago**. Make sure to use the identifier (`id`) corresponding to the payment attempt that falls within this period. If you need information about older payment intents, we recommend contacting our customer service for additional assistance.
+------------
+
 Remember that `id`and `status`of the payment intent (for example, _7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1_) are not the same as `id`and `status`of the payment (for example, _65412345_). In this case, you will be trying to obtain the details of an attempt. If you want to check out all the information corresponding to the payment, access the [Payment API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) in our API Reference.
 
 > WARNING
@@ -314,7 +318,6 @@ curl --location --request GET 'https://api.mercadopago.com/point/integration-api
 --h 'Authorization: Bearer YOUR_ACCESS_TOKEN' 
 ```
 ------------
-
 ----[mla, mlb]----
 
 ``` curl
@@ -392,7 +395,6 @@ You will receive a response similar to this one below:
 > `Confirmation_required` is a final status and will not change. If you receive it as a response to the payment intent, you must check on your device the status of the payment, using the `payment_id` given in said response. Do not deliver your service or product until you verify it.
 
 You can check all the possible status of a payment intent by accessing our [Glossary](/developers/en/docs/mp-point/integration-api/glossary).
-
 
 ## Cancel a payment intent
 
