@@ -20,7 +20,6 @@ Você pode **adicionar o código de segurança do Mercado Pago** na sua página 
 <script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
 ```
 
-
 > NOTE
 >
 > Importante

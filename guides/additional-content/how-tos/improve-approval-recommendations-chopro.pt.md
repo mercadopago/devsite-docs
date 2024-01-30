@@ -20,7 +20,6 @@ Você pode **adicionar o código de segurança do Mercado Pago** na sua página 
 <script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
 ```
 
-
 > NOTE
 >
 > Importante
@@ -209,7 +208,7 @@ Se atente a todos os atributos disponíveis ao criar um pagamento usando o méto
  * Dados do produto,
  * Dados do envio.
 
-Existem também **campos extras** que podem ser enviados de acordo com **o ramo de atividade**. Você pode encontrar mais detalhes sobre cada setor e os dados do comprador e do shipping que recomendamos incluir em cada um deles [aqui](/developers/pt/docs/checkout-api/additional-content/industry-data).
+Existem também **campos extras** que podem ser enviados de acordo com **o ramo de atividade**. Você pode encontrar mais detalhes sobre cada setor e os dados do comprador e do shipping que recomendamos incluir em cada um deles [aqui](/developers/pt/docs/checkout-pro/additional-content/industry-data).
 
 ## Melhorar a experiência do usuário
 Muitas vezes o comprador pode errar na hora de preencher seus dados no checkout. Por isso, vale a pena revisar cada passo, interações e até design, para checar se tudo está claro como deveria. 
