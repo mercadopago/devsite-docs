@@ -14,7 +14,7 @@ This additional step provides the buyer with a more transparent and secure exper
 ----[mla]----
 <center>
 
-![review-confirm-mla](checkout-bricks/review-confirm-mla-en.gif)
+![review-confirm-mla](checkout-bricks/review-confirm-intro-mla-en.gif)
 
 </center>
 ------------

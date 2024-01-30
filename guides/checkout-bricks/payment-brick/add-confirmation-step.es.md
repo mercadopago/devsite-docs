@@ -14,7 +14,7 @@ Esta etapa adicional brinda al comprador una experiencia más transparente y seg
 ----[mla]----
 <center>
 
-![review-confirm-mla](checkout-bricks/review-confirm-mla-es.gif)
+![review-confirm-mla](checkout-bricks/review-confirm-intro-mla-es.gif)
 
 </center>
 ------------
