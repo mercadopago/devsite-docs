@@ -86,11 +86,11 @@ Nesta seção, você pode definir o **número máximo de meses**, com e sem acr�
 
 Na sua conta do Mercado Pago, você pode consultar e configurar o número de meses sem acréscimos que deseja oferecer para seus clientes. Nesta opção, seus clientes podem comprar em parcelas sem acréscimos, e você assume a taxa de financiamento.
 
-* No site do Mercado Pago, clique em **Configurar parcelamentos e acréscimos**.
-* Você será redirecionado para a conta do Mercado Pago vinculada à sua loja.
-* Clique em **Vender em parcelas sem acréscimos**.
-* Escolha quantos meses deseja oferecer, marcando a opção correspondente, e clique em avançar.
-* Defina os valores mínimos para oferecer parcelamento sem acréscimos e clique em **Salvar**.
+1. No site do Mercado Pago, clique em **Configurar parcelamentos e acréscimos**.
+2. Você será redirecionado para a conta do Mercado Pago vinculada à sua loja.
+3. Clique em **Vender em parcelas sem acréscimos**.
+4. Escolha quantos meses deseja oferecer, marcando a opção correspondente, e clique em avançar.
+5. Defina os valores mínimos para oferecer parcelamento sem acréscimos e clique em **Salvar**.
 
 <center>
 

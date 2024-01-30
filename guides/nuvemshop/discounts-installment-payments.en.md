@@ -85,11 +85,11 @@ In this section, you can set the **maximum number of months**, with and without 
 
 Within your Mercado Pago account, you can check and configure the number of interest-free months you want to offer to your customers. In this option, your customers can make installment purchases without interest, and you assume the financing fee.
 
-* On the Mercado Pago website, click on **Configure installments and interest**.
-* You will be redirected to the Mercado Pago account linked to your store.
-* Click on **Sell in interest-free installments**.
-* Select how many months you want to offer by marking the corresponding option and click continue.
-* Set the minimum values to offer interest-free installments and click **Save**.
+1. On the Mercado Pago website, click on **Configure installments and interest**.
+2. You will be redirected to the Mercado Pago account linked to your store.
+3. Click on **Sell in interest-free installments**.
+4. Select how many months you want to offer by marking the corresponding option and click continue.
+5. Set the minimum values to offer interest-free installments and click **Save**.
 
 <center>
 
