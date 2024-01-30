@@ -284,6 +284,7 @@ Agrega toda la información adicional que quieras.
 | `category_id` | String | Categoría |
 | `quantity` | Integer | Cantidad |
 | `unit_price` | Float | Precio unitario |
+| `category_descriptor` | Object | Descripción de la categoría |
 | `event_date` | Date | Fecha del evento |
 
 #### Sobre el comprador
@@ -781,6 +782,7 @@ Agrega toda la información adicional que quieras.
 | `category_id` | String | Categoría |
 | `quantity` | Integer | Cantidad |
 | `unit_price` | Float | Precio unitario |
+| `category_descriptor` | Object | Descripción de la categoría | 
 | `event_date` | Date | Fecha del evento |
 
 #### Sobre el comprador

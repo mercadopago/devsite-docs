@@ -286,6 +286,7 @@ Adicione todas as informações adicionais que você deseja.
 | `category_id` | String | Categoria |
 | `quantity` | Integer | Quantidade |
 | `unit_price` | Float | Preço unitário |
+| `category_descriptor` | Object | Descrição da categoria | 
 | `event_date` | Date |Data do evento |
 
 #### Sobre o comprador
@@ -783,6 +784,7 @@ Adicione todas as informações adicionais que você deseja.
 | `category_id` | String | Categoria |
 | `quantity` | Integer | Quantidade |
 | `unit_price` | Float | Preço unitário |
+| `category_descriptor` | Object | Descrição da categoria | 
 | `event_date` | Date |Data do evento |
 
 #### Sobre o comprador
@@ -1048,8 +1050,8 @@ Adicione todas as informações adicionais que você deseja.
 | `quantity` | Integer | Quantidade |
 | `unit_price` | Float | Preço unitário |
 | `event_date` | Date |Data do evento |
-| `category_descriptor` | Object | Descrição de la categoría. |
-| `passenger` | Object |Informações adicionais sobre passageiros. |
+| `category_descriptor` | Object | Descrição da categoria |
+| `passenger` | Object |Informações adicionais sobre passageiros |
 | `first_name`| String | Nome |
 | `last_name` | String | Sobrenome |
 | `identification_type`| String | Tipo de identificação |

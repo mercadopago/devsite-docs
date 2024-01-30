@@ -5,8 +5,6 @@ Check what fields you can submit according to your industry to improve your appr
 > WARNING 
 > 
 > Attention
->
-> Use of examples
 > 
 > This information applies only for the Preferences API.
 
@@ -286,6 +284,7 @@ Add all the additional information you want.
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
 | `unit_price` | Float | Unit price |
+| `category_descriptor` | Object | Category description |
 | `event_date` | Date | Event date |
 
 #### About the buyer
@@ -783,6 +782,7 @@ Add all the additional information you want.
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
 | `unit_price` | Float | Unit price |
+| `category_descriptor` | Object | Category description |
 | `event_date` | Date | Event date |
 
 #### About the buyer
@@ -1048,8 +1048,8 @@ Add all the additional information you want.
 | `quantity` | Integer | Quantity |
 | `unit_price` | Float | Unit price |
 | `event_date` | Date | Event date |
-| `category_descriptor` | Object | Category description. |
-| `passenger` | Object | Additional passenger information. |
+| `category_descriptor` | Object | Category description |
+| `passenger` | Object | Additional passenger information |
 | `first_name`| String | Name |
 | `last_name` | String | Surname |
 | `identification_type`| String | Identification type |
