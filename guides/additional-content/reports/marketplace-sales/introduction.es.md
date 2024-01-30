@@ -1,6 +1,6 @@
-# Reporte de ventas de la solución Split de pagos do Mercado Pago
+# Reporte de ventas de la solución Split de pagos de Mercado Pago
 
-El reporte de ventas de la solución Split de pagos do Mercado Pago proporciona una **visión completa de las transacciones de los vendedores vinculados**, disponible para su descarga en formatos _csv_ y _json_. Este reporte detalla las operaciones realizadas durante un período de tiempo específico, abarcando desde las diferentes tarifas (_fees_) relacionadas con cada transacción hasta casos de liquidación, bloqueo y desbloqueo financiero. En él, también podrás encontrar datos importantes como el monto total de la transacción, tarifa del marketplace, tarifa de Mercado Pago y monto total de dinero recibido
+El reporte de ventas de la solución Split de pagos de Mercado Pago proporciona una **visión completa de las transacciones de los vendedores vinculados**, disponible para su descarga en formatos _csv_ y _json_. Este reporte detalla las operaciones realizadas durante un período de tiempo específico, abarcando desde las diferentes tarifas (_fees_) relacionadas con cada transacción hasta casos de liquidación, bloqueo y desbloqueo financiero. En él, también podrás encontrar datos importantes como el monto total de la transacción, tarifa del marketplace, tarifa de Mercado Pago y monto total de dinero recibido
 
 > NOTE
 >
