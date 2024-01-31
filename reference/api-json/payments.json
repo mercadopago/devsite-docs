@@ -2719,7 +2719,6 @@
               "content": {
                 "application/json": {
                   "schema": {
-                    "type": "array",
                     "properties": {
                       "payment_method_id": {
                         "example": "rapipago"
@@ -2772,7 +2771,6 @@
               "content": {
                 "application/json": {
                   "schema": {
-                    "type": "array",
                     "properties": {
                       "payment_method_id": {
                         "example": "master"
