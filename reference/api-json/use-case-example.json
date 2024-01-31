@@ -2701,9 +2701,9 @@
                 "userCases": [
                     {
                         "name": {
-                            "en": "Create payment with master",
-                            "pt": "Criar pagamento master",
-                            "es": "Crear pago con master"
+                            "en": "Create payment with visa",
+                            "pt": "Criar pagamento visa",
+                            "es": "Crear pago con visa "
                         }
                     },
                     {
@@ -2712,6 +2712,9 @@
                             "pt": "Criar pagamento Rapipago",
                             "es": "Crear pago con Rapipago"
                         },
+                        "siteId": [
+                            "MLA"
+                        ],
                         "requestBody": {
                             "content": {
                                 "application/json": {
@@ -2748,6 +2751,59 @@
                         },
                         "parameters": [
                             {
+                                "name": "X-Idempotency-Key",
+                                "schema": {
+                                    "example": "123445678901234"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": {
+                            "en": "Create payment with master",
+                            "pt": "Criar pagamento master",
+                            "es": "Crear pago con master"
+                        },
+                        "siteId": [
+                            "allSites"
+                        ],
+                        "requestBody": {
+                            "content": {
+                                "application/json": {
+                                    "schema": {
+                                        "properties": {
+                                            "payment_method_id": {
+                                                "example": "master"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "responses": {
+                            "200": {
+                                "content": {
+                                    "application/json": {
+                                        "schema": {
+                                            "properties": {
+                                                "id": {
+                                                    "example": 123456
+                                                },
+                                                "payment_method_id": {
+                                                    "example": "master"
+                                                },
+                                                "description": {
+                                                    "example": "Test payment master"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "parameters": [
+                            {
+                                "name": "X-Idempotency-Key",
                                 "schema": {
                                     "example": "0d5020ed-1af6-469c-ae06-c3bec19954bb"
                                 }
