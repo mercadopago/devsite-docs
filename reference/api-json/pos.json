@@ -499,6 +499,9 @@
               "pt": "Criar segundo caixa",
               "es": "Crear segunda caja"
             },
+            "siteId": [
+              "allSites"
+            ],
             "requestBody": {
               "content": {
                 "application/json": {
@@ -519,6 +522,9 @@
               "pt": "Criar terceiro caixa",
               "es": "Crear tercera caja"
             },
+            "siteId": [
+              "allSites"
+            ],
             "requestBody": {
               "content": {
                 "application/json": {

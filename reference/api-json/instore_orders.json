@@ -663,6 +663,9 @@
               "pt": "Criar pedido v2",
               "es": "Crear orden v2"
             },
+            "siteId": [
+              "allSites"
+            ],
             "parameters": [
               {
                 "name": "X-Ttl-Store-Preference",
@@ -690,6 +693,9 @@
               "pt": "Criar pedido v3",
               "es": "Crear orden v3"
             },
+            "siteId": [
+              "allSites"
+            ],
             "parameters": [
               {
                 "name": "X-Ttl-Store-Preference",
