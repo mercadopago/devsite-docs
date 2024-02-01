@@ -29,26 +29,16 @@ De ser exitoso, el intento devolverá un `ID` de la intención y su estado. Ten 
 >
 > La intención de reembolso sólo podrá ser creada para el dispositivo en el que fue procesado el pago y por el usuario que efectuó la transacción. 
 
-Puedes [crear una intención de reembolso](/developers/es/reference/integrations_api/_point_integration-api_devices_deviceid_refund/post) y asignarla a tu dispositivo Point mediante el siguiente llamado: 
+Puedes [crear una intención de reembolso](/developers/es/reference/integrations_api/_point_integration-api_devices_deviceid_refund/post) y asignarla a tu dispositivo Point enviando el `payment_id` del pago que estás queriendo reembolsar en el siguiente llamado: 
 
 ``` curl
 curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/{deviceid}/refund' \
 --h 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
-    "payment_id": "93921210001",
-     "additional_info": {
-        "print_on_terminal": [ "SELLER_TICKET", "BUYER_TICKET"]
-    }
+    "payment_id": "93921210001"
 }'
 
 ```
-
-Deberás enviar los campos señalados a continuación siguiendo su descripción:
-
-| Campo  | Descripción | Valores posibles | Requerido/no requerido |
-|:---:|:---:|:---:|:---:|
-| `payment_id` | Identificador del pago que se está queriendo reembolsar.  | String numérico. Por ejemplo, *65412345*. | Requerido |
-| `print_on_terminal` | Campo para determinar si el dispositivo imprime el comprobante, sea para el vendedor o para el comprador. | `SELLER_TICKET`: Imprime el ticket para el vendedor<br>`BUYER_TICKET`: Imprime el ticket para el comprador | No requerido |
 
 
 Como respuesta, recibirás algo similar a esto: 
@@ -57,13 +47,7 @@ Como respuesta, recibirás algo similar a esto:
 {
   "id": "75j8sfa-euu6-4x56-slk8-a341f71ba2f1",
    "payment_id": "93921210001",
-   "device_id": "PAX_A910__SMARTPOS1490451054",	
-   "additional_info": {
-       "print_on_terminal": [
-           "SELLER_TICKET",
-           "BUYER_TICKET"
-       ]
-   }
+   "device_id": "PAX_A910__SMARTPOS1490451054"
 }
 ```
 
@@ -96,9 +80,6 @@ Recibirás una respuesta similar a la siguiente:
    "id": "75j8sfa-euu6-4x56-slk8-a341f71ba2f1",
    "payment_id": "93921210001",
    "state": "FINISHED"
-   "additional_info": {
-       "print_on_terminal": [ "SELLER_TICKET", "BUYER_TICKET" ]
-   },
 }
 ```
 

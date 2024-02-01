@@ -31,26 +31,16 @@ It is an attempt that, if successful, will return a refund `ID` and its status. 
 >
 > The refund intent can only be created for the device in which the payment was processed, and by the user that made the transaction.
 
-You can [create a refund intent](/developers/en/reference/integrations_api/_point_integration-api_devices_deviceid_refund/post) and assign it to your Point device by performing the following request:
+You can [create a refund intent](/developers/en/reference/integrations_api/_point_integration-api_devices_deviceid_refund/post) and assign it to your Point device by performing the following request, sending the `payment_id` for the payment you are willing to refund:
 
 ``` curl
 curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/{deviceid}/refund' \
 --h 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
-    "payment_id": "93921210001",
-     "additional_info": {
-        "print_on_terminal": [ "SELLER_TICKET", "BUYER_TICKET"]
-    }
+    "payment_id": "93921210001"
 }'
 
 ```
-
-You will need to send the following fields as described below:
-
-| Field  | Description | Possible values | Required/Optional |
-|:---:|:---:|:---:|:---:|
-| `payment_id` | Identifier of the payment you are trying to refund. | Numeric string. For example, *65412345*. | Required |
-| `print_on_terminal` | This field is used to determine whether the device should print the receipt, either for the seller or the buyer. | `SELLER_TICKET`: Prints the seller ticket.<br>`BUYER_TICKET`: Prints the buyer ticket. | Optional |
 
 
 In response, you will receive something similar to this:
@@ -59,13 +49,7 @@ In response, you will receive something similar to this:
 {
   "id": "75j8sfa-euu6-4x56-slk8-a341f71ba2f1",
    "payment_id": "93921210001",
-   "device_id": "PAX_A910__SMARTPOS1490451054",	
-   "additional_info": {
-       "print_on_terminal": [
-           "SELLER_TICKET",
-           "BUYER_TICKET"
-       ]
-   }
+   "device_id": "PAX_A910__SMARTPOS1490451054"
 }
 ```
 
@@ -97,9 +81,6 @@ You will receive a response similar to this one below:
    "id": "75j8sfa-euu6-4x56-slk8-a341f71ba2f1",
    "payment_id": "93921210001",
    "state": "FINISHED"
-   "additional_info": {
-       "print_on_terminal": [ "SELLER_TICKET", "BUYER_TICKET" ]
-   },
 }
 ```
 

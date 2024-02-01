@@ -1150,29 +1150,6 @@
                       "pt": "Número de identificação do pagamento a reembolsar, por exemplo \"65412345\". Deve ser um pagamento já processado, não uma intenção",
                       "es": "Número de identificación del pago a reembolsar, por ejemplo \"65412345\". Debe ser un pago ya procesado, no una intención."
                     }
-                  },
-                  "additional_info": {
-                    "type": "object",
-                    "required": false,
-                    "description": {
-                      "en": "Refund intent additional info",
-                      "es": "Información adicional sobre la intención de reembolso",
-                      "pt": "Informações adicionais da intenção de reembolso"
-                    },
-                    "properties": {
-                      "print_on_terminal": {
-                        "type": "array",
-                        "description": {
-                          "en": "Indicates if you want to print the seller ticket (\"SELLER_TICKET\") or the buyer ticket (\"BUYER_TICKET\") on the device.",
-                          "pt": "Indica se você quer imprimir o ticket do vendedor (\"SELLER_TICKET\") ou o ticket do comprador (\"BUYER_TICKET\") na terminal.",
-                          "es": "Indica si quieres imprimir el ticket del vendedor (\"SELLER_TICKET\") o el ticket del comprador (\"BUYER_TICKET\") en la terminal . "
-                        },
-                        "items": {
-                          "type": "string",
-                          "example": ["SELLER_TICKET, BUYER_TICKET"]
-                        } 
-                      }
-                    }
                   }
                 }
               }
@@ -1216,23 +1193,6 @@
                         "en": "Identification number of the payment to refund.",
                         "pt": "Número de identificação do pagamento a reembolsar.",
                         "es": "Número de identificación del pago a reembolsar."
-                      }
-                    },
-                    "additional_info": {
-                      "type": "object",
-                      "properties": {
-                        "print_on_terminal": {
-                          "type": "array",
-                          "description": {
-                            "en": "Indicates if it will print the seller ticket or the buyer ticket on the device.",
-                            "pt": "Indica se irá imprimir o ticket do vendedor ou o ticket do comprador no dispositivo.",
-                            "es": "Indica si imprimir el ticket del vendedor o el ticket del comprador en el dispositivo."
-                          },
-                          "items": {
-                            "type": "string",
-                            "example": ["SELLER_TICKET, BUYER_TICKET"]
-                          } 
-                        }
                       }
                     }
                   }
@@ -1682,23 +1642,6 @@
                         "en": "Identification number of the payment to refund.",
                         "pt": "Número de identificação do pagamento a reembolsar.",
                         "es": "Número de identificación del pago a reembolsar."
-                      }
-                    },
-                    "additional_info": {
-                      "type": "object",
-                      "properties": {
-                        "print_on_terminal": {
-                          "type": "array",
-                          "description": {
-                            "en": "Indicates if it will print the seller (\"SELLER_TICKET\") ticket or the buyer ticket (\"BUYER_TICKET\") on the device.",
-                            "pt": "Indica se irá imprimir o ticket do vendedor (\"SELLER_TICKET\") ou o ticket do comprador (\"BUYER_TICKET\") no dispositivo.",
-                            "es": "Indica si imprimir el ticket del vendedor (\"SELLER_TICKET\") o el ticket del comprador (\"BUYER_TICKET\") en el dispositivo."
-                          },
-                          "items": {
-                            "type": "string",
-                            "example": ["SELLER_TICKET, BUYER_TICKET"]
-                          } 
-                        }
                       }
                     }
                   }
