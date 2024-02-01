@@ -10,6 +10,7 @@ bullet_section_with_media:
  - title: Vantagens
  - type: normal
  - message: Nossos SDKs são projetados para simplificar sua interação com as APIs do Mercado Pago. Sua utilização não é obrigatória, mas é fortemente recomendada visto que diminui o esforço de desenvolvimento, por proporcionar diversas vantagens, como:
+ - image: /sdk/mpjsv2-3.png
  - benefit_title: Mais eficiência e redução de custos
  - benefit_message: Redução de custos ao adotar uma ferramenta pronta para usar e homologada pelo Mercado Pago.
  - benefit_title: Instalação otimizada
@@ -18,8 +19,7 @@ bullet_section_with_media:
  - benefit_message: Reduza a complexidade das suas requisições com nossa ferramenta intuitiva, otimizando o desenvolvimento e permitindo uma implementação eficaz e sem erros.
  - benefit_title: Segurança de dados
  - benefit_message: Fortaleça a segurança dos dados com nossa solução, que utiliza as melhores práticas de segurança para proteger as informações no envio e recebimento de dados.
- - media_image: /sdk/library-media-3.png
-—
+—--
 ---
 
 --- mini_landing_separator ---
