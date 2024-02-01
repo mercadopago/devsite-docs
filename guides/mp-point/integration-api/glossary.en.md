@@ -15,14 +15,14 @@ Some terms are new and you may not be familiar with them. Use this glossary so y
 
 ## Possible statuses of an intent
 
-| Type of intent | Status | Description |
-|---|---|---|
-| Payment intent and refund intent | `Open` | Initial status of an intent when creating it from the POS. |
-| Payment intent and refund intent | `On Terminal` | Intermediate status of an intent when obtaining it from the Point device. |
-| Payment intent and refund intent | `Processing` | Intermediate status of an intent at the time of reconciliation with a financial institution. |
-| Payment intent | `Processed` | Intermediate status of a payment intent at the time of finalizing the reconciliation with a financial institution. |
-| Payment intent and refund intent | `Finished` | Final status of an intent when the transaction ends. |
-| Payment intent | `Confirmation_required` | Final status of a payment intent when it ends without obtaining a payment status. Once obtained, this status will not change. When you receive this, you must confirm on your device what the payment status is, using the `payment_id` received in the response, before delivering your product or service. |
-| Payment intent and refund intent | `Canceled` | Final status of an intent when it is canceled. |
-| Payment intent and refund intent | `Error` | Final status of an intent when a transaction error occurs. |
-| Payment intent and refund intent | `Abandoned` | Final status of an intent when hasn’t been processed after a certain time. |
+| Status | Description | Payment intent | Refund intent
+|---|---|---|---|
+| `Open` | Initial status of an intent when creating it from the POS. | ✔ | ✔ |
+| `On Terminal` | Intermediate status of an intent when obtaining it from the Point device. | ✔ | ✔ |
+| `Processing` | Intermediate status of an intent at the time of reconciliation with a financial institution. | ✔ | ✔ |
+| `Processed` | Intermediate status of a payment intent at the time of finalizing the reconciliation with a financial institution. | ✔ | - |
+|`Finished` | Final status of an intent when the transaction ends. | ✔ | ✔ |
+| `Confirmation_required` | Final status of a payment intent when it ends without obtaining a payment status. Once obtained, this status will not change. When you receive this, you must confirm on your device what the payment status is, using the `payment_id` received in the response, before delivering your product or service. | ✔ | - |
+| `Canceled` | Final status of an intent when it is canceled. | ✔ | ✔ |
+| `Error` | Final status of an intent when a transaction error occurs. | ✔ | ✔ |
+| `Abandoned` | Final status of an intent when hasn’t been processed after a certain time. | ✔ | ✔ |
