@@ -5,7 +5,7 @@ content_section_with_media:
  - media_image: /sdk/library-media-3.png
 ---
 
---- mini_landing_separator —
+--- mini_landing_separator ---
 
 ---
 bullet_section_with_media: 
@@ -20,7 +20,7 @@ bullet_section_with_media:
  - image: /checkout-bricks/cho-bricks-landing-v4.png
  - benefit_message: Reduce la complejidad de tus requisiciones con nuestra herramienta intuitiva, optimizando el desarrollo y permitiendo una implementación eficaz, sin errores.
  - benefit_title: Seguridad en el tratamiento de datos
-- benefit_message: Fortalece la seguridad en el tratamiento de los datos con nuestra solución, que utiliza las mejores prácticas de seguridad para proteger la información en su envío y recepción.
+ - benefit_message: Fortalece la seguridad en el tratamiento de los datos con nuestra solución, que utiliza las mejores prácticas de seguridad para proteger la información en su envío y recepción.
 —--
 ---
 
