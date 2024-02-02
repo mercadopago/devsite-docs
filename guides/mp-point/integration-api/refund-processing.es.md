@@ -120,8 +120,3 @@ Si la ejecución fue exitosa, obtendrás una respuesta como la siguiente:
 
 ```
 
-> NOTE
->
-> Nota
->
-> El único caso en el que es posible cancelar una intención de reembolso en estado `on_terminal` es si se trata de un reembolso a realizarse en una tarjeta sin contacto. El dispositivo esperará, o bien que se acerque la tarjeta para confirmar el reembolso, o bien que el operador cancele el intento.

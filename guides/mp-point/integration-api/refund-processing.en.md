@@ -117,8 +117,3 @@ If the execution is successful, you will receive a response similar to the follo
 
 ```
 
-> NOTE
->
-> Note
->
-> The only case in which it is possible to cancel a refund intent in the `on_terminal` state is if it is a refund to be made on a contactless card. The device will wait either for the card to be tapped to confirm the refund or for the operator to cancel the attempt.
