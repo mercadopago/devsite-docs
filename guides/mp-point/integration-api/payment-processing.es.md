@@ -294,6 +294,14 @@ Luego, continúa con los pasos que se muestran en la pantalla para completar el 
 
 Si deseas saber el estado de una intención de pago en particular, puedes ----[mla, mlb]----[consultar el estado actual de tu intención de pago](/developers/es/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get)------------ ----[mlm]----[consultar el estado actual de tu intención de pago](/developers/es/reference/point_apis_mlm/_point_integration-api_payment-intents_paymentintentid/get)------------ utilizando el `id` que recibiste en la respuesta al momento de crearla.
 
+----[mla, mlb, mlm]----
+> WARNING
+>
+> Atención
+> 
+> Tenga en cuenta que solo es posible **verificar el estado de una intención de pago que haya sido creada hace, como máximo, 3 meses**. Asegúrate de utilizar el identificador (`id`) correspondiente al intento de pago que esté dentro de este período. Si necesitas información sobre intenciones de pago más antiguas, te recomendamos que contactes con nuestro servicio de atención al cliente para obtener asistencia adicional.
+------------
+
 Recuerda que `id` y estado de la intención de pago (por ejemplo, _7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1_)son diferentes a `id` y estado del pago (por ejemplo, _65412345_). En este caso, se trata de consultar los detalles de un intento. Si quieres consultar la información correspondiente al pago, accede a la sección [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) en Referencia de API. 
 
 > WARNING
@@ -409,7 +417,6 @@ El llamado devolverá la siguiente respuesta:
 ```
 
 * Si, en cambio, el estado de la intención de pago es `on_terminal`, deberás realizar la cancelación directamente desde el dispositivo Point.
-
 
 > NOTE
 >

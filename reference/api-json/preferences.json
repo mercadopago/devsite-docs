@@ -454,56 +454,64 @@
                             "type": "string",
                             "description": {
                               "en": "Zip code.",
-                              "pt": "Código postal",
-                              "es": "Código postal"
+                              "pt": "Código postal.",
+                              "es": "Código postal."
                             }
                           },
                           "street_name": {
                             "type": "string",
                             "description": {
                               "en": "Street name.",
-                              "pt": "Rua",
-                              "es": "Calle"
+                              "pt": "Rua.",
+                              "es": "Calle."
                             }
                           },
                           "city_name": {
                             "type": "string",
                             "description": {
                               "en": "City name.",
-                              "pt": "Cidade",
-                              "es": "Ciudad"
+                              "pt": "Cidade.",
+                              "es": "Ciudad."
                             }
                           },
                           "state_name": {
                             "type": "string",
                             "description": {
                               "en": "State name.",
-                              "pt": "Estado",
-                              "es": "Estado"
+                              "pt": "Estado.",
+                              "es": "Estado."
                             }
                           },
                           "street_number": {
                             "type": "number",
                             "description": {
                               "en": "Street number.",
-                              "pt": "O Número",
-                              "es": "Número"
+                              "pt": "O Número.",
+                              "es": "Número."
                             }
                           },
                           "floor": {
                             "type": "string",
                             "description": {
                               "en": "Floor.",
-                              "pt": "Apartamento",
-                              "es": "Piso"
+                              "pt": "Andar.",
+                              "es": "Piso."
                             }
                           },
                           "apartment": {
                             "type": "string",
                             "description": {
                               "en": "Apartment.",
-                              "pt": "Apartamento",
-                              "es": "Departamento"
+                              "pt": "Apartamento.",
+                              "es": "Departamento."
+                            }
+                          },
+                          "country_name": {
+                            "type": "string",
+                            "description": {
+                              "en": "Country name.",
+                              "pt": "Nome do país.",
+                              "es": "Nombre del país."
                             }
                           }
                         }
@@ -1155,41 +1163,64 @@
                               "type": "string",
                               "description": {
                                 "en": "Zip code.",
-                                "pt": "Código postal",
-                                "es": "Código postal"
-                              }
-                            },
-                            "street_number": {
-                              "type": "string",
-                              "format": "nullable",
-                              "description": {
-                                "en": "Street number.",
-                                "pt": "O Número",
-                                "es": "Número"
+                                "pt": "Código postal.",
+                                "es": "Código postal."
                               }
                             },
                             "street_name": {
                               "type": "string",
                               "description": {
                                 "en": "Street name.",
-                                "pt": "Rua",
-                                "es": "Calle"
+                                "pt": "Rua.",
+                                "es": "Calle."
+                              }
+                            },
+                            "city_name": {
+                              "type": "string",
+                              "description": {
+                                "en": "City name.",
+                                "pt": "Cidade.",
+                                "es": "Ciudad."
+                              }
+                            },
+                            "state_name": {
+                              "type": "string",
+                              "description": {
+                                "en": "State name.",
+                                "pt": "Estado.",
+                                "es": "Estado."
+                              }
+                            },
+                            "street_number": {
+                              "type": "number",
+                              "description": {
+                                "en": "Street number.",
+                                "pt": "O Número.",
+                                "es": "Número."
                               }
                             },
                             "floor": {
                               "type": "string",
                               "description": {
                                 "en": "Floor.",
-                                "pt": "Apartamento",
-                                "es": "Piso"
+                                "pt": "Andar.",
+                                "es": "Piso."
                               }
                             },
                             "apartment": {
                               "type": "string",
                               "description": {
                                 "en": "Apartment.",
-                                "pt": "Apartamento",
-                                "es": "Departamento"
+                                "pt": "Apartamento.",
+                                "es": "Departamento."
+                              }
+                            },
+                            "country_name": {
+                              "type": "string",
+                              "description": {
+                                "en": "Country name.",
+                                "pt": "Nome do país.",
+                                "es": "Nombre del país."
                               }
                             }
                           }
@@ -2541,45 +2572,68 @@
                             "es": "Dirección de envío"
                           },
                           "properties": {
-                            "floor": {
-                              "type": "string",
-                              "description": {
-                                "en": "Floor.",
-                                "pt": "Apartamento",
-                                "es": "Piso"
-                              }
-                            },
                             "zip_code": {
                               "type": "string",
                               "description": {
                                 "en": "Zip code.",
-                                "pt": "Código postal",
-                                "es": "Código postal"
+                                "pt": "Código postal.",
+                                "es": "Código postal."
                               }
                             },
                             "street_name": {
                               "type": "string",
                               "description": {
                                 "en": "Street name.",
-                                "pt": "Rua",
-                                "es": "Calle"
+                                "pt": "Rua.",
+                                "es": "Calle."
+                              }
+                            },
+                            "city_name": {
+                              "type": "string",
+                              "description": {
+                                "en": "City name.",
+                                "pt": "Cidade.",
+                                "es": "Ciudad."
+                              }
+                            },
+                            "state_name": {
+                              "type": "string",
+                              "description": {
+                                "en": "State name.",
+                                "pt": "Estado.",
+                                "es": "Estado."
+                              }
+                            },
+                            "street_number": {
+                              "type": "number",
+                              "description": {
+                                "en": "Street number.",
+                                "pt": "O Número.",
+                                "es": "Número."
+                              }
+                            },
+                            "floor": {
+                              "type": "string",
+                              "description": {
+                                "en": "Floor.",
+                                "pt": "Andar.",
+                                "es": "Piso."
                               }
                             },
                             "apartment": {
                               "type": "string",
                               "description": {
                                 "en": "Apartment.",
-                                "pt": "Apartamento",
-                                "es": "Departamento"
+                                "pt": "Apartamento.",
+                                "es": "Departamento."
                               }
                             },
-                            "street_number": {
+                            "country_name": {
                               "type": "string",
-                              "format": "nullable",
                               "description": {
-                                "en": "Street number.",
-                                "pt": "O Número",
-                                "es": "Número"
+                                "en": "Country name.",
+                                "pt": "Nome do país.",
+                                "es": "Nombre del país."
                               }
                             }
                           }
@@ -3196,56 +3250,64 @@
                             "type": "string",
                             "description": {
                               "en": "Zip code.",
-                              "pt": "Código postal",
-                              "es": "Código postal"
+                              "pt": "Código postal.",
+                              "es": "Código postal."
                             }
                           },
                           "street_name": {
                             "type": "string",
                             "description": {
                               "en": "Street name.",
-                              "pt": "Rua",
-                              "es": "Calle"
+                              "pt": "Rua.",
+                              "es": "Calle."
                             }
                           },
                           "city_name": {
                             "type": "string",
                             "description": {
                               "en": "City name.",
-                              "pt": "Cidade",
-                              "es": "Ciudad"
+                              "pt": "Cidade.",
+                              "es": "Ciudad."
                             }
                           },
                           "state_name": {
                             "type": "string",
                             "description": {
                               "en": "State name.",
-                              "pt": "Estado",
-                              "es": "Estado"
+                              "pt": "Estado.",
+                              "es": "Estado."
                             }
                           },
                           "street_number": {
                             "type": "number",
                             "description": {
                               "en": "Street number.",
-                              "pt": "O Número",
-                              "es": "Número"
+                              "pt": "O Número.",
+                              "es": "Número."
                             }
                           },
                           "floor": {
                             "type": "string",
                             "description": {
                               "en": "Floor.",
-                              "pt": "Apartamento",
-                              "es": "Piso"
+                              "pt": "Andar.",
+                              "es": "Piso."
                             }
                           },
                           "apartment": {
                             "type": "string",
                             "description": {
                               "en": "Apartment.",
-                              "pt": "Apartamento",
-                              "es": "Departamento"
+                              "pt": "Apartamento.",
+                              "es": "Departamento."
+                            }
+                          },
+                          "country_name": {
+                            "type": "string",
+                            "description": {
+                              "en": "Country name.",
+                              "pt": "Nome do país.",
+                              "es": "Nombre del país."
                             }
                           }
                         }
@@ -4100,24 +4162,24 @@
                           "type": "object",
                           "description": {
                             "en": "Shipping address.",
-                            "pt": "Endereço de envio",
-                            "es": "Dirección de envío"
+                            "pt": "Endereço de envio.",
+                            "es": "Dirección de envío."
                           },
                           "properties": {
                             "zip_code": {
                               "type": "string",
                               "description": {
                                 "en": "Zip code.",
-                                "pt": "Código postal",
-                                "es": "Código postal"
+                                "pt": "Código postal.",
+                                "es": "Código postal."
                               }
                             },
                             "street_name": {
                               "type": "string",
                               "description": {
                                 "en": "Street name.",
-                                "pt": "Rua",
-                                "es": "Calle"
+                                "pt": "Rua.",
+                                "es": "Calle."
                               }
                             },
                             "street_number": {
@@ -4125,48 +4187,48 @@
                               "format": "nullable",
                               "description": {
                                 "en": "Street number.",
-                                "pt": "O Número",
-                                "es": "Número"
+                                "pt": "O Número.",
+                                "es": "Número."
                               }
                             },
                             "floor": {
                               "type": "string",
                               "description": {
                                 "en": "Floor.",
-                                "pt": "Apartamento",
-                                "es": "Piso"
+                                "pt": "Andar.",
+                                "es": "Piso."
                               }
                             },
                             "apartment": {
                               "type": "string",
                               "description": {
                                 "en": "Apartment.",
-                                "pt": "Apartamento",
-                                "es": "Departamento"
+                                "pt": "Apartamento.",
+                                "es": "Departamento."
                               }
                             },
                             "city_name": {
                               "type": "object",
                               "description": {
                                 "en": "City name.",
-                                "pt": "Cidade",
-                                "es": "Ciudad"
+                                "pt": "Cidade.",
+                                "es": "Ciudad."
                               }
                             },
                             "state_name": {
                               "type": "object",
                               "description": {
                                 "en": "State name.",
-                                "pt": "Estado",
-                                "es": "Estado"
+                                "pt": "Estado.",
+                                "es": "Estado."
                               }
                             },
                             "country_name": {
                               "type": "string",
                               "description": {
                                 "en": "Country name.",
-                                "pt": "Nome do país",
-                                "es": "Nombre del país"
+                                "pt": "Nome do país.",
+                                "es": "Nombre del país."
                               }
                             }
                           }
