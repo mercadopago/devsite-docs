@@ -1,0 +1,549 @@
+{
+  "url": "https://api.mercadopago.com",
+  "paths": {
+    "/v1/account/release_report/config": {
+      "post": {
+        "tags": [
+          "reporting",
+          "relese"
+        ],
+        "description": {
+          "en": "",
+          "pt": "",
+          "es": "Crea el reporte de Liberaciones manualmente tantas veces como desees o prográmalo según la frecuencia deseada a través de nuestra API."
+        },
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "description": {
+              "en": "",
+              "pt": "",
+              "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
+            },
+            "schema": {
+              "type": "string",
+              "example": "Bearer <TOKEN>"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": {
+            "en": "",
+            "pt": "",
+            "es": "Estos son los campos necesarios para la creacion de una configuracion para el reportes de liberacion"
+          },
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "columns": {
+                    "type": "object",
+                    "required": true,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección Glossário"
+                    },
+                    "example": "[{\"key\": \"DATE\"}, {\"key\": \"SOURCE_ID\"}]"
+                  },
+                  "file_name_prefix": {
+                    "type": "string",
+                    "required": true,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Prefijo que compone el nombre del reporte una vez generado y listo para descargar."
+                    },
+                    "example": "conciliation-settlement-report"
+                  },
+                  "frequency": {
+                    "type": "object",
+                    "required": true,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Indica la frecuencia diaria, semanal o mensual de los reportes programados."
+                    },
+                    "properties": {
+                      "hour": {
+                        "required": true,
+                        "type": "number",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                        },
+                        "example": 0
+                      },
+                      "value": {
+                        "required": true,
+                        "type": "number",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                        },
+                        "example": 1
+                      },
+                      "type": {
+                        "required": true,
+                        "type": "string",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "indica el tipo de frecuencia: daily (diaria), weekly (semanal) y monthly (mensual)"
+                        },
+                        "example": "monthly"
+                      }
+                    }
+                  },
+                  "sftp_info": {
+                    "type": "object",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Proporciona los datos de conexión necesarios para que podamos acceder a tu servidor."
+                    },
+                    "properties": {
+                      "server": {
+                        "type": "string",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "URL o dirección IP (Pública) del servidor"
+                        },
+                        "example": "sftp.myserver.com"
+                      },
+                      "password": {
+                        "type": "string",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "Contraseña del usuario con el cual estableceremos la conexión."
+                        },
+                        "example": "mypassword"
+                      },
+                      "remote_dir": {
+                        "type": "string",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "Carpeta en la que depositaremos tus reportes."
+                        },
+                        "example": "/myfolder"
+                      },
+                      "port": {
+                        "type": "number",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "Puerto empleado para establecer la conexión"
+                        },
+                        "example": 22
+                      },
+                      "username": {
+                        "type": "string",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "Usuario con el cual nos autenticaremos en tu servidor."
+                        },
+                        "example": "username"
+                      }
+                    }
+                  },
+                  "separator": {
+                    "type": "string",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma."
+                    },
+                    "example": ";"
+                  },
+                  "display_timezone": {
+                    "type": "string",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora."
+                    },
+                    "example": "GMT-04"
+                  },
+                  "report_translation": {
+                    "type": "string",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Permite cambiar el idioma predeterminado de los encabezados de las columnas. En caso de habilitarlo, se recomienda verificar que funcionen correctamente las integraciones con archivos de Excel (.xlsx) que permiten conciliar de forma automática.\n\nSi la integración no funciona bien, asegúrate de actualizarla tomando como referencia los nuevos encabezados.\n\nIdiomas soportados:\n\nen: Inglés\nes: Español neutro\npt: Portugués\n"
+                    },
+                    "example": "es"
+                  },
+                  "notification_email_list": {
+                    "type": "Array",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                    },
+                    "example": "[\",example@email.com\",\",john@example.com\",]"
+                  },
+                  "refund_detailed": {
+                    "type": "boolean",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago."
+                    },
+                    "example": true
+                  },
+                  "include_withdrawal": {
+                    "type": "boolean",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Incluye los retiros de dinero en el reporte."
+                    },
+                    "example": true
+                  },
+                  "coupon_detailed": {
+                    "type": "boolean",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Suma una columna para mostrar el detalle de los cupones de descuento."
+                    },
+                    "example": true
+                  },
+                  "check_available_balance": {
+                    "type": "boolean",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "(read_only) Saldo antes y después de realizar un retiro de dinero que explica el balance de la cuenta. (Esta configuración es solo informativa. Debe excluirse para comprobaciones del balance y/o saldo de cuenta)"
+                    },
+                    "example": true
+                  },
+                  "compensate_detail": {
+                    "type": "boolean",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Bloqueos y desbloqueos de dinero que se compensan entre sí y que no afectan el saldo final. Ayuda a entender cómo se conforma el balance final del reporte, en una lectura cronológica (recomendado si tienes un volumen alto de transacciones)."
+                    },
+                    "example": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": {
+              "en": "created",
+              "pt": "",
+              "es": "created"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": {
+                    "en": "",
+                    "pt": "",
+                    "es": "El API responderá con una estructura JSON cuyas propiedades representarán la configuración que has creado"
+                  },
+                  "type": "object",
+                  "properties": {
+                    "file_name_prefix": {
+                      "type": "string",
+                      "description": {
+                        "en": "",
+                        "pt": "",
+                        "es": "Prefijo que compone el nombre del reporte una vez generado y listo para descargar."
+                      },
+                      "example": "release-report-USER_ID"
+                    },
+                    "notification_email_list": {
+                      "type": "Array",
+                      "description": {
+                        "es": "Grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "[\",example@email.com\",\",john@example.com\",]"
+                    },
+                    "display_timezone": {
+                      "type": "string",
+                      "description": {
+                        "es": "Determina la fecha y la hora que se visualiza en los reportes",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "GMT-04"
+                    },
+                    "include_withdrawal_at_end": {
+                      "type": "boolean",
+                      "description": {
+                        "es": "",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": true
+                    },
+                    "scheduled": {
+                      "type": "boolean",
+                      "description": {
+                        "es": "Indica si el reporte es programado",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": false
+                    },
+                    "execute_after_withdrawal": {
+                      "type": "boolean",
+                      "description": {
+                        "es": "",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": false
+                    },
+                    "columns": {
+                      "type": "Array",
+                      "description": {
+                        "es": "Las columna configuradas del reporte ",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": [{"key": "DATE"},{"key": "SOURCE_ID"}, {"key": "EXTERNAL_REFERENCE"}]
+                    },
+                    "report_translation": {
+                      "type": "string",
+                      "description": {
+                        "es": "Idioma configurado del reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "es"
+                    },
+                    "frequency": {
+                      "type": "object",
+                      "required": true,
+                      "description": {
+                        "en": "",
+                        "pt": "",
+                        "es": "Indica la frecuencia diaria, semanal o mensual del reporte programado."
+                      },
+                      "properties": {
+                        "hour": {
+                          "required": true,
+                          "type": "number",
+                          "description": {
+                            "en": "",
+                            "pt": "",
+                            "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                          },
+                          "example": 0
+                        },
+                        "value": {
+                          "required": true,
+                          "type": "number",
+                          "description": {
+                            "en": "",
+                            "pt": "",
+                            "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                          },
+                          "example": 1
+                        },
+                        "type": {
+                          "required": true,
+                          "type": "string",
+                          "description": {
+                            "en": "",
+                            "pt": "",
+                            "es": "indica el tipo de frecuencia: daily (diaria), weekly (semanal) y monthly (mensual)"
+                          },
+                          "example": "monthly"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "Invalid file_name_prefix",
+                          "description": {
+                            "en": "",
+                            "es": "Invalid file name prefix",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "Invalid execute_after_withdrawal",
+                          "description": {
+                            "en": "",
+                            "es": "invalid execute after withdrawal",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "Invalid columns",
+                          "description": {
+                            "en": "",
+                            "es": "Invalid columns",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "Invalid frequency",
+                          "description": {
+                            "en": "",
+                            "es": "Invalid frequency",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "Invalid sftp info",
+                          "description": {
+                            "en": "",
+                            "es": "Invalid sftp info",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "Invalid web hook",
+                          "description": {
+                            "en": "",
+                            "es": "Invalid web hook",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "Invalid file config",
+                          "description": {
+                            "en": "",
+                            "es": "Invalid file config",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "Invalid report_language",
+                          "description": {
+                            "en": "",
+                            "es": "Invalid report language",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "Invalid notification_email_list",
+                          "description": {
+                            "en": "",
+                            "es": "Invalid notification email list",
+                            "pt": ""
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": {
+              "en": "",
+              "pt": "",
+              "es": "Conflict"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "Duplicated id",
+                          "description": {
+                            "en": "",
+                            "es": "el registro ya existe",
+                            "pt": ""
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "invalid token",
+                          "description": {
+                            "en": "",
+                            "es": "invalid token",
+                            "pt": ""
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "",
+          "pt": "",
+          "es": "Crear reporte a través de la API"
+        }
+      }
+    }
+  }
+}
