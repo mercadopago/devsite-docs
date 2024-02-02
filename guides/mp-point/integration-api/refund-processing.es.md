@@ -2,9 +2,20 @@
 
 Un reembolso es una transacción que se realiza cuando un determinado cargo se revierte y la cantidad pagada se devuelve al comprador. Esto significa que el cliente recibirá en su cuenta o en el extracto de su tarjeta el monto pagado por la compra de un determinado producto o servicio.
 
-Cuando realizas una integración Point vía API para Punto de Venta, puedes efectuar reembolsos de dos maneras:  
- * **Utilizando tu dispositivo Point:**  siempre y cuando se trate de transacciones recientes, puedes buscar los pagos realizados, seleccionar aquel que desees reembolsar, y seguir las indicaciones del dispositivo para hacerlo.
- * **Utilizando nuestra API:** te permitirá reembolsar transacciones que el dispositivo no despliega, además de un mayor control sobre la operación.
+Al elegir la integración Point vía API para Punto de Venta, cuentas con tres opciones para realizar reembolsos de manera eficiente:
+
+1. **A través del Dispositivo Point:**
+    * Reembolsa transacciones recientes directamente desde tu dispositivo Point por su valor total. 
+    * Deberás buscar los pagos realizados, seleccionar la transacción y seguir las indicaciones del dispositivo.
+2. **A través de la API de Payments:**
+    * Realiza devoluciones totales o parciales de cualquier tipo de pago utilizando el recurso de reembolsos de la [API de Payments](/developers/es/reference/chargebacks/_payments_id_refunds/post).
+3. **A través de nuestra API para dispositivos Point**:
+    * Reembolsa transacciones cuya antigüedad sea de hasta 90 días por su valor total.
+    * El procesamiento del reembolso se lleva adelante en los dispositivos Point, lo que te permitirá imprimir comprobantes y realizar devoluciones de pagos efectuados con tarjeta presente.
+    * Recibe notificaciones vía Webhook al completar el ciclo del intento de reembolso.
+
+Puedes elegir la opción de reembolso que mejor se adapte a tus necesidades. Sin embargo, recomendamos utilizar nuestra API para dispositivos Point en los casos en los que se requiera la **impresión de tickets de reembolso, o bien realizar reembolsos aproximando la tarjeta al dispositivo**. 
+
 
 ----[mlb]----
 

@@ -2,11 +2,19 @@
 
 Reembolsos são transações realizadas quando determinada cobrança é revertida e os valores pagos retornam para o comprador. Isso significa que o cliente receberá de volta em sua conta ou na fatura do cartão de crédito, o valor pago na aquisição de determinado produto ou serviço.
 
-Ao integrar o Point via API para Ponto de Venda, é possível realizar reembolsos de duas formas distintas: 
- * **Utilizando o dispositivo Point:** sempre que se tratar de transações recentes, você pode buscar os pagamentos efetuados para selecionar aquele que deseja reembolsar. As etapas para realizar este reembolso serão exibidas na tela do dispositivo Point.
+É possível integrar Point via API para ponto de venda e realizar reembolsos de três formas distintas:
 
- * **Utilizando  nossa API:** você poderá reembolsar transações que não são exibidas no dispositivo. Além disso, efetuar reembolsos por meio da API proporciona maior controle sobre a operação.
+1. **Através do dispositivo Point:**
+    * Reembolse transações recentes diretamente do dispositivo Point pelo valor total.
+    * Busque os pagamentos realizados, selecione aquele que deseja reembolsar, e siga as instruções do dispositivo.
+2. **Através da API de Payments:**
+    - Reembolse total ou parcialmente qualquer tipo de pagamento usando o recurso de reembolso da [API de Payments](/developers/pt/reference/chargebacks/_payments_id_refunds/post).
+3. **Através da API para dispositivos Point:**
+    - Reembolse transações integralmente com até 90 dias.
+    - O processamento do reembolso é realizado pelo dispositivo Point, o que permitirá imprimir recibos e reembolsar pagamentos efetuados com cartão presente.
+    - Receba notificações Webhook após a conclusão do ciclo da intenção de reembolso.
 
+É possível escolher a opção de reembolso que melhor atenda às suas necessidades. No entanto, recomendamos usar nossa API para dispositivos Point sempre que for necessária a **impressão de tickets de reembolso ou realizar reembolsos aproximando o cartão do dispositivo**.
 
 ----[mlb]----
 
