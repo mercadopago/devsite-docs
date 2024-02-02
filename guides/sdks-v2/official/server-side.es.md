@@ -10,12 +10,12 @@ bullet_section_with_media:
  - title: Ventajas
  - type: normal
  - message: Nuestros SDKs están diseñados para simplificar tu interacción con las APIs de Mercado Pago. No es obligatorio utilizarlos, pero sí es recomendado, ya que disminuyen el esfuerzo puesto en el desarrollo. Algunas de sus ventajas son:
+ - image: /checkout-bricks/cho-bricks-landing-v4.png
  - benefit_title: Mayor eficiencia y reducción de costos
  - benefit_message: Adopta esta herramienta lista para usar y homologada por Mercado Pago.
  - benefit_title: Instalación optimizada
  - benefit_message: Nuestra solución de fácil instalación se conecta a sistemas de gestión de paquetes, como Composer, Gradle, Maven y NPM. Esto agiliza la integración a tu proyecto y los tiempos de desarrollo. 
  - benefit_title: Construcción de requisiciones simplificadas
- - image: /checkout-bricks/cho-bricks-landing-v4.png
  - benefit_message: Reduce la complejidad de tus requisiciones con nuestra herramienta intuitiva, optimizando el desarrollo y permitiendo una implementación eficaz, sin errores.
  - benefit_title: Seguridad en el tratamiento de datos
  - benefit_message: Fortalece la seguridad en el tratamiento de los datos con nuestra solución, que utiliza las mejores prácticas de seguridad para proteger la información en su envío y recepción.
