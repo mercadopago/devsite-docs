@@ -14,7 +14,7 @@ bullet_section_with_media:
  - benefit_title: Mais eficiência e redução de custos
  - benefit_message: Redução de custos ao adotar uma ferramenta pronta para usar e homologada pelo Mercado Pago.
  - benefit_title: Instalação otimizada
- - benefit_message: Nossa solução de fácil instalação se conecta a sistemas de gestão de pacotes como Composer, Gradle, Maven e Npm, agilizando a integração ao seu projeto e poupando tempo de desenvolvimento.
+ - benefit_message: Nossa solução de fácil instalação se conecta a sistemas de gestão de pacotes como Composer, Gradle, Maven e NPM, agilizando a integração ao seu projeto e poupando tempo de desenvolvimento.
  - benefit_title: Construção de Requisições Simplificada
  - benefit_message: Reduza a complexidade das suas requisições com nossa ferramenta intuitiva, otimizando o desenvolvimento e permitindo uma implementação eficaz e sem erros.
  - benefit_title: Segurança de dados
