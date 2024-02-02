@@ -25,12 +25,12 @@ Veja abaixo como testar a integração de acordo com o tipo de checkout escolhid
 
 1. Acesse a aplicação criada e clique em **Credenciais de produção** no menu à esquerda. Copie o `client_id` e o `client_secret`.
 
-![Credenciais de produção](/images/shopify/test-prod-credentials.gif)
+![Credenciais de produção](/images/shopify/test-prod-credentials.png)
 
 2. Vá até as configurações do painel da Shopify (**Configurações > Pagamentos > Gerenciar**).
 3. Insira o `client_id` e o `client_secret` da conta de teste do vendedor.
 
-![Painel](/images/shopify/test-pro-shopify.gif)
+![Painel](/images/shopify/test-pro-shopify.png)
 
 4. Clique em **Salvar**.
 5. Acesse o [Mercado Pago](https://www.mercadolivre.com/jms/mlb/lgz/msl/login/H4sIAAAAAAAEA42QTU_DMAyG_0sPnNAGQuJjUoXSUrZq6zrWDTYuVpZ4aUTSVGlKhxD_nbTAnaOf149j5zNQRsgK3EeNwSTAU60kky44D2pF3dFYDZL7QNceNdLhb6kOfQu1VKND2wSTz36QQB6hl_pRR6oa9E20dSUclek8G97yTDaAJ-9VVEGHh3eJffpnCOOL0rm6mYzHXdeNNFpGuampMCNm9OhgxzWV_J4ZjuHDZbFaXOyn-VnrNDSmtQxDYYxQOBCNXLY6bJBaVg6EUe11UYXZIoJsBVMgOUTzF9hBkZB1PIN0WWxgsytglmfJj2Mqh5ULh6SnXhwCf4UOY5KtyHJGhv7BTjfbOM2XZAGr7To_09Q5cMao8Obi9uru-vryB3XG8v-uIZiSPExIStMnc4jLLK35x_yE8bQk2fMueUxJdAXYvW4TQvakICQR85s9PEDUJcHXuf_fxi9hKXsLJs62-PUNyyMqtf0BAAA/user) e faça login na conta de teste do comprador criada anteriormente.
@@ -40,12 +40,12 @@ Veja abaixo como testar a integração de acordo com o tipo de checkout escolhid
 
 1. Acesse a aplicação criada e clique em **Credenciais de produção** no menu à esquerda. Copie a `public_key`.
 
-![Credenciais de produção](/images/shopify/test-prod-credentials.gif)
+![Credenciais de produção](/images/shopify/test-prod-credentials.png)
 
 2. Vá até as configurações do painel da Shopify (**Apps > Checkout Transparente MP**).
 3. Insira a `public_key` da conta de teste do vendedor.
 
-![Painel](/images/shopify/test-api-shopify.gif)
+![Painel](/images/shopify/test-api-shopify.png)
 
 4. Clique em **Salvar alterações**.
 5. Acesse o [Mercado Pago](https://www.mercadolivre.com/jms/mlb/lgz/msl/login/H4sIAAAAAAAEA42QTU_DMAyG_0sPnNAGQuJjUoXSUrZq6zrWDTYuVpZ4aUTSVGlKhxD_nbTAnaOf149j5zNQRsgK3EeNwSTAU60kky44D2pF3dFYDZL7QNceNdLhb6kOfQu1VKND2wSTz36QQB6hl_pRR6oa9E20dSUclek8G97yTDaAJ-9VVEGHh3eJffpnCOOL0rm6mYzHXdeNNFpGuampMCNm9OhgxzWV_J4ZjuHDZbFaXOyn-VnrNDSmtQxDYYxQOBCNXLY6bJBaVg6EUe11UYXZIoJsBVMgOUTzF9hBkZB1PIN0WWxgsytglmfJj2Mqh5ULh6SnXhwCf4UOY5KtyHJGhv7BTjfbOM2XZAGr7To_09Q5cMao8Obi9uru-vryB3XG8v-uIZiSPExIStMnc4jLLK35x_yE8bQk2fMueUxJdAXYvW4TQvakICQR85s9PEDUJcHXuf_fxi9hKXsLJs62-PUNyyMqtf0BAAA/user) e faça login na conta de teste do comprador criada anteriormente.
@@ -55,7 +55,9 @@ Veja abaixo como testar a integração de acordo com o tipo de checkout escolhid
 > 
 > Importante
 >
-> Após concluir uma compra de teste utilizando o Checkout Pro, observe que no Painel Administrativo da Shopify, não será possível visualizar a aprovação da compra. Isso ocorre porque o processo acontece dentro do ambiente do Mercado Pago, e não na loja. No entanto, ao realizar o teste utilizando o Checkout Transparente, será possível visualizar a aprovação do pedido no mesmo painel. <br> Além disso, em ambos os checkouts, a informação de pagamento aprovado não será registrada no histórico da conta do Mercado Pago. Isso acontece porque nesse histórico só constam despesas reais realizadas em ambiente de produção.
+> Após concluir uma compra de teste utilizando o Checkout Pro, observe que no Painel Administrativo da Shopify, não será possível visualizar a aprovação da compra. Isso ocorre porque o processo acontece dentro do ambiente do Mercado Pago, e não na loja. No entanto, ao realizar o teste utilizando o Checkout Transparente, será possível visualizar a aprovação do pedido no mesmo painel. 
+> </br> <br/> 
+> Além disso, em ambos os checkouts, a informação de pagamento aprovado não será registrada no histórico da conta do Mercado Pago. Isso acontece porque nesse histórico só constam despesas reais realizadas em ambiente de produção.
 
 > NOTE
 > 
