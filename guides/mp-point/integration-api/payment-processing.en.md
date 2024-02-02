@@ -398,7 +398,7 @@ You can check all the possible status of a payment intent by accessing our [Glos
 
 If you want to, you can cancel a payment intent assigned to a Point device. To do so,  you have two posibilities:
 
-* If the status of the intent is `opened` and it has not yet been sent to the terminal, you can [cancel it via API](/developers/en/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) by making the following call:
+* If the status of the intent is `open` and it has not yet been sent to the terminal, you can [cancel it via API](/developers/en/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) by making the following call:
 
 ``` curl
 curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/{deviceid}/payment-intents/{paymentintentid}' \
