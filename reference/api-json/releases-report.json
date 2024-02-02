@@ -4,12 +4,12 @@
     "/v1/account/release_report/config": {
       "post": {
         "tags": [
-          "reporting",
-          "relese"
+          "checkout-pro",
+          "mobile-checkout"
         ],
         "description": {
           "en": "",
-          "pt": "",
+          "pt": "Criar relatório de liberações",
           "es": "Crea el reporte de Liberaciones manualmente tantas veces como desees o prográmalo según la frecuencia deseada a través de nuestra API."
         },
         "parameters": [
@@ -539,8 +539,8 @@
           }
         },
         "title": {
-          "en": "",
-          "pt": "",
+          "en": "Create release report",
+          "pt": "Criar relatório de liberações",
           "es": "Crear reporte a través de la API"
         }
       }
