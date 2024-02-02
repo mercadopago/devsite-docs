@@ -1,40 +1,52 @@
-# Teste a integração
+# Testar pagamentos
 
-Para verificar se a loja está configurada corretamente, recomendamos que você teste sua loja antes de iniciá-la em produção.
-Para ativar o modo de teste para sua loja, siga estas etapas:
-
-1. Acesse sua conta [Wordpress](https://wordpress.com/).
-2. Acesse o Painel da sua conta e clique em **Plugins > Plugins instalados**.
-3. No buscador de plugins, procure por “Mercado Pago payments for WooCommerce”.
-4. Clique em **Configurar plug-in**.
-5. Clique em **4. Teste sua loja antes de vender** para exibir as opções.
-6. Em **Escolha como deseja administrar sua loja**, selecione **Modo de teste**.
-7. Clique em **Salvar alterações** para finalizar.
-
-## Checkout Pro
-1. Selecione a opção **Quero pagar com Mercado Pago sem custo adicional**.
-1. Clique em **pedido com pagamento obrigatório** para ser redirecionado ao ambiente de pagamento do Mercado Pago.
-1. Na tela de pagamento, escolha pagar com um novo cartão de crédito e use os [cartões de teste](/developers/pt/docs/woocommerce/additional-content/your-integrations/test/cards) para efetuar o pagamento. É importante não fazer login na conta do Mercado Pago ou tentar pagar com cartões para uso pessoal.
-1. Adicione as informações do cartão de teste indicado (número do cartão, CVV e data de validade).
-1. Ao final da compra, você poderá visualizar, dentro do Mercado Pago, o comprovante de que a compra foi realizada e será redirecionado de volta à loja.
-
-----[mlb]----
-## Checkout transparente
-------------
-----[mla, mlm, mpe, mco, mlu, mlc]----
-## Checkout API
-------------
-1. Selecione a opção **Quero pagar com cartão de crédito**.
-1. Opte por pagar com um novo cartão de crédito e use os [cartões de teste](/developers/pt/docs/woocommerce/additional-content/your-integrations/test/cards) para faça o pagamento. É importante não pagar com cartões para uso pessoal.
-1. Adicione as informações do cartão de teste indicado (número do cartão, CVV e data de validade).
-1. Clique em **pedido com pagamento obrigatório**.
-1. Ao final da compra, você pode ver que a compra foi aprovada.
+Os testes de compras são essenciais para garantir que os pagamentos sejam processados corretamente antes de autorizar transações reais. Para verificar se a sua loja está configurada corretamente, recomendamos que você teste os pagamentos antes de iniciá-la em produção. 
 
 > WARNING
->
-> Atenção
 > 
-> Ao finalizar a compra teste com Checkout Pro, no Painel Administrativo da WooCommerce não será possível visualizar a compra como aprovada porque o processo ocorre dentro do ambiente do Mercado Pago e não no ambiente da loja. Com o teste feito com o ----[mlb]---- Checkout Transparente, ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API, ------------ será possível visualizar a aprovação do pedido.<br>
-> </br> <br/>
-> Além disso, em ambos os checkouts essa informação de pagamento aprovado não constará no histórico da conta do Mercado Pago porque nele só constam despesas reais (feitas em produção).
+> Importante
+>
+> O teste só poderá ser realizado após a etapa de [configuração da integração](/developers/pt/docs/woocommerce/integration-configuration/plugin-configuration).
 
+
+Veja abaixo como testar a integração:
+1. Acesse **[Suas integrações](https://www.mercadopago.com/developers/panel/app)** e selecione a aplicação que deseja testar. 
+2. Clique em **Contas de teste** no menu à esquerda.
+3. Dentro da seção **Contas de teste**, clique em **Criar conta de teste** e crie duas contas diferentes: uma para vendedor e outra para comprador. Não é possível utilizar a mesma conta de teste para vendedor e comprador. Consulte a **[documentação de Contas de teste](/developers/pt/docs/shopify/additional-content/your-integrations/test/accounts)** para acessar o passo a passo de criação de contas teste.
+
+![Criar conta](/images/woocomerce/test-create-account.gif)
+
+4. Abra uma nova janela anônima e faça login no [Mercado Pago](https://www.mercadolivre.com/jms/mlb/lgz/msl/login/H4sIAAAAAAAEA42QTU_DMAyG_0sPnNAGQuJjUoXSUrZq6zrWDTYuVpZ4aUTSVGlKhxD_nbTAnaOf149j5zNQRsgK3EeNwSTAU60kky44D2pF3dFYDZL7QNceNdLhb6kOfQu1VKND2wSTz36QQB6hl_pRR6oa9E20dSUclek8G97yTDaAJ-9VVEGHh3eJffpnCOOL0rm6mYzHXdeNNFpGuampMCNm9OhgxzWV_J4ZjuHDZbFaXOyn-VnrNDSmtQxDYYxQOBCNXLY6bJBaVg6EUe11UYXZIoJsBVMgOUTzF9hBkZB1PIN0WWxgsytglmfJj2Mqh5ULh6SnXhwCf4UOY5KtyHJGhv7BTjfbOM2XZAGr7To_09Q5cMao8Obi9uru-vryB3XG8v-uIZiSPExIStMnc4jLLK35x_yE8bQk2fMueUxJdAXYvW4TQvakICQR85s9PEDUJcHXuf_fxi9hKXsLJs62-PUNyyMqtf0BAAA/user) usando a conta de teste do vendedor criada no passo anterior.
+5. Na mesma janela anônima logada como vendedor, acesse o [Painel do desenvolvedor](https://www.mercadopago.com/developers/panel/app) e crie uma nova aplicação, seguindo as instruções detalhadas na [documentação do Painel do desenvolvedor](/developers/pt/docs/woocommerce/additional-content/your-integrations/dashboard).
+
+![Login](/images/woocomerce/test-login.gif)
+
+6. Acesse a aplicação criada e clique em **Credenciais de produção** no menu à esquerda. Copie o `access_token` e a `public_key`.
+
+![Credenciais de produção](/images/woocomerce/test-prod-credentials.gif)
+
+7. Vá até as configurações do painel de Woocommerce (**WooCommerce > Mercado Pago > Integre a loja com o Mercado Pago**).
+8. Insira as credenciais produtivas `access_token` e a `public_key` da conta de teste do vendedor no campo **Credenciais de produção**.
+9. Na aplicação, clique em **Credenciais de teste** no menu à esquerda. Copie o `access_token` e a `public_key`.
+
+![Credenciais de teste](/images/woocomerce/test-test-credentials.gif)
+
+10. Insira também as credenciais de teste `access_token` e a `public_key` da conta de teste do vendedor no campo **Credenciais de teste**.
+
+![Painel](/images/woocomerce/test-woo.gif)
+
+11. Clique em **Salvar e continuar**.
+12. Acesse o [Mercado Pago](https://www.mercadolivre.com/jms/mlb/lgz/msl/login/H4sIAAAAAAAEA42QTU_DMAyG_0sPnNAGQuJjUoXSUrZq6zrWDTYuVpZ4aUTSVGlKhxD_nbTAnaOf149j5zNQRsgK3EeNwSTAU60kky44D2pF3dFYDZL7QNceNdLhb6kOfQu1VKND2wSTz36QQB6hl_pRR6oa9E20dSUclek8G97yTDaAJ-9VVEGHh3eJffpnCOOL0rm6mYzHXdeNNFpGuampMCNm9OhgxzWV_J4ZjuHDZbFaXOyn-VnrNDSmtQxDYYxQOBCNXLY6bJBaVg6EUe11UYXZIoJsBVMgOUTzF9hBkZB1PIN0WWxgsytglmfJj2Mqh5ULh6SnXhwCf4UOY5KtyHJGhv7BTjfbOM2XZAGr7To_09Q5cMao8Obi9uru-vryB3XG8v-uIZiSPExIStMnc4jLLK35x_yE8bQk2fMueUxJdAXYvW4TQvakICQR85s9PEDUJcHXuf_fxi9hKXsLJs62-PUNyyMqtf0BAAA/user) e faça login na conta de teste do comprador criada anteriormente.
+13. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como [CPF](https://www.4devs.com.br/gerador_de_cpf), [RG](https://www.4devs.com.br/gerador_de_rg), [telefone](https://geradornv.com.br/gerador-telefone/) e e-mail da conta de teste do comprador. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/woocommerce/additional-content/your-integrations/test/cards) correspondente.
+
+> WARNING
+> 
+> Importante
+>
+> Após concluir uma compra de teste utilizando o Checkout Pro, observe que no Painel Administrativo da WooCommerce, não será possível visualizar a aprovação da compra. Isso ocorre porque o processo acontece dentro do ambiente do Mercado Pago, e não na loja. No entanto, ao realizar o teste utilizando o Checkout Transparente, será possível visualizar a aprovação do pedido no mesmo painel. <br> Além disso, em ambos os checkouts, a informação de pagamento aprovado não será registrada no histórico da conta do Mercado Pago. Isso acontece porque nesse histórico só constam despesas reais realizadas em ambiente de produção.
+
+> NOTE
+> 
+> Nota
+>
+> Consulte a [documentação do Painel do desenvolvedor](/developers/pt/docs/shopify/additional-content/your-integrations/dashboard) para saber como criar uma aplicação. Para obter informações sobre a criação de contas de teste, consulte a documentação sobre [Contas de teste](/developers/pt/docs/shopify/additional-content/your-integrations/test/accounts). Para saber mais sobre as credenciais utilizadas durante os testes de pagamentos, consulte a [documentação dedicada às Credenciais](/developers/pt/docs/woocommerce/additional-content/your-integrations/credentials).

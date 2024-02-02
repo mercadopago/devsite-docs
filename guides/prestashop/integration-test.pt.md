@@ -1,41 +1,52 @@
-# Testar os pagamentos
- 
-O módulo do Mercado Pago vem com o **ambiente Sandbox** ativo por padrão. Nesse ambiente você poderá simular pagamentos na loja e ver se tudo está funcionando corretamente antes de começar a receber pagamentos reais dos seus clientes. Para realizar o teste, siga os passos abaixo.
- 
-1. No Painel Administrativo da sua loja na Prestashop, acesse o menu Módulos e serviços, localize o módulo do Mercado Pago e clique em **configurar**.
-2. Na tela de gerenciamento do módulo, confirme se as [credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) de teste estão devidamente preenchidas de acordo com as informações disponíveis em seu [Dashboard](/developers/pt/guides/additional-content/your-integrations/introduction).
-3. Em seguida, desça até a seção **Teste sua loja** e clique em **Quero testar minhas vendas**.
-4. Na página inicial da sua loja na PrestaShop, selecione um produto e clique em adicionar.
-5. Com o produto no carrinho, clique em **finalizar pedido**.
-6. Preencha com as informações pessoais, indique um endereço de entrega e selecione um método de envio. Lembrando que todas essas informações são apenas para o teste.
+# Testar pagamentos
 
-Feito o processo inicial de compra, veja abaixo como testar a integração de acordo com o tipo de checkout selecionado para receber os pagamentos.
-
-## Checkout Pro
-
-1. Selecione a opção **Quero pagar com Mercado Pago sem custo adicional**.
-2. Clique em **pedido com pagamento obrigatório** para ser redirecionado o ambiente de pagamento do Mercado Pago. 
-3. Na tela de checkout, escolha pagar com um novo cartão de crédito e utilize os [cartões de teste](/developers/pt/guides/additional-content/your-integrations/test/cards) para realizar o pagamento. Importante não efetuar o login na conta do Mercado Pago ou tentar realizar o pagamento com cartões de uso pessoal. 
-3. Adicione as informações do cartão de teste indicado (nº do cartão, CVV e data de validade). 
-4. Ao finalizar a compra você poderá visualizar, dentro do Mercado Pago, a comprovação de que a compra foi realizada e será redirecionado à loja novamente. 
-
-----[mlb]---- 
-## Checkout Transparente 
------------- 
-----[mla, mlm, mpe, mco, mlu, mlc]---- 
-## Checkout API 
-------------
-
-1. Selecione a opção **Quero pagar com cartão de crédito**.
-2. Escolha pagar com um novo cartão de crédito e utilize os [cartões de teste](/developers/pt/guides/additional-content/your-integrations/test/cards) para realizar o pagamento. É importante não realizar o pagamento com cartões de uso pessoal.
-3. Adicione as informações do cartão de teste indicado (nº do cartão, CVV e data de validade). 
-4. Clique em **pedido com pagamento obrigatório**.
-5. Ao finalizar a compra será possível visualizar que a compra foi aprovada.
+Os testes de compras são essenciais para garantir que os pagamentos sejam processados corretamente antes de autorizar transações reais. Para verificar se a sua loja está configurada corretamente, recomendamos que você teste os pagamentos antes de iniciá-la em produção. 
 
 > WARNING
->
-> Atenção
 > 
-> Ao finalizar a compra teste com Checkout Pro, no Painel Administrativo da PrestaShop não será possível visualizar a compra como aprovada porque o processo ocorre dentro do ambiente do Mercado Pago e não no ambiente da loja. Com o teste feito com o ----[mlb]---- Checkout Transparente, ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API, ------------ será possível visualizar a aprovação do pedido.<br>
-> </br> <br/>
-> Além disso, em ambos os checkouts essa informação de pagamento aprovado não constará no histórico da conta do Mercado Pago porque nele só constam despesas reais (feitas em produção).
+> Importante
+>
+> O teste só poderá ser realizado após a etapa de [configuração da integração](/developers/pt/docs/prestashop/integration).
+
+
+Veja abaixo como testar a integração:
+1. Acesse **[Suas integrações](https://www.mercadopago.com/developers/panel/app)** e selecione a aplicação que deseja testar. 
+2. Clique em **Contas de teste** no menu à esquerda.
+3. Dentro da seção **Contas de teste**, clique em **Criar conta de teste** e crie duas contas diferentes: uma para vendedor e outra para comprador. Não é possível utilizar a mesma conta de teste para vendedor e comprador. Consulte a **[documentação de Contas de teste](/developers/pt/docs/prestashop/additional-content/your-integrations/test/accounts)** para acessar o passo a passo de criação de contas teste.
+
+![Criar conta](/images/prestashop/test-create-account.gif)
+
+4. Abra uma nova janela anônima e faça login no [Mercado Pago](https://www.mercadolivre.com/jms/mlb/lgz/msl/login/H4sIAAAAAAAEA42QTU_DMAyG_0sPnNAGQuJjUoXSUrZq6zrWDTYuVpZ4aUTSVGlKhxD_nbTAnaOf149j5zNQRsgK3EeNwSTAU60kky44D2pF3dFYDZL7QNceNdLhb6kOfQu1VKND2wSTz36QQB6hl_pRR6oa9E20dSUclek8G97yTDaAJ-9VVEGHh3eJffpnCOOL0rm6mYzHXdeNNFpGuampMCNm9OhgxzWV_J4ZjuHDZbFaXOyn-VnrNDSmtQxDYYxQOBCNXLY6bJBaVg6EUe11UYXZIoJsBVMgOUTzF9hBkZB1PIN0WWxgsytglmfJj2Mqh5ULh6SnXhwCf4UOY5KtyHJGhv7BTjfbOM2XZAGr7To_09Q5cMao8Obi9uru-vryB3XG8v-uIZiSPExIStMnc4jLLK35x_yE8bQk2fMueUxJdAXYvW4TQvakICQR85s9PEDUJcHXuf_fxi9hKXsLJs62-PUNyyMqtf0BAAA/user) usando a conta de teste do vendedor criada no passo anterior.
+5. Na mesma janela anônima logada como vendedor, acesse o [Painel do desenvolvedor](https://www.mercadopago.com/developers/panel/app) e crie uma nova aplicação, seguindo as instruções detalhadas na [documentação do Painel do desenvolvedor](/developers/pt/docs/prestashop/additional-content/your-integrations/dashboard).
+
+![Login](/images/prestashop/test-login.gif)
+
+6. Acesse a aplicação criada e clique em **Credenciais de produção** no menu à esquerda. Copie o `access_token` e a `public_key`.
+
+![Credenciais de produção](/images/prestashop/test-prod-credentials.gif)
+
+7. Vá até as configurações do painel de Prestashop (**CAMINHO**).
+8. Insira as credenciais produtivas `access_token` e a `public_key` da conta de teste do vendedor no campo **Credenciais de produção**.
+9. Na aplicação, clique em **Credenciais de teste** no menu à esquerda. Copie o `access_token` e a `public_key`.
+
+![Credenciais de teste](/images/prestashop/test-test-credentials.gif)
+
+10. Insira também as credenciais de teste `access_token` e a `public_key` da conta de teste do vendedor no campo **Credenciais de teste**.
+
+![Painel](image)
+
+11. Clique em **Salvar e continuar**.
+12. Acesse o [Mercado Pago](https://www.mercadolivre.com/jms/mlb/lgz/msl/login/H4sIAAAAAAAEA42QTU_DMAyG_0sPnNAGQuJjUoXSUrZq6zrWDTYuVpZ4aUTSVGlKhxD_nbTAnaOf149j5zNQRsgK3EeNwSTAU60kky44D2pF3dFYDZL7QNceNdLhb6kOfQu1VKND2wSTz36QQB6hl_pRR6oa9E20dSUclek8G97yTDaAJ-9VVEGHh3eJffpnCOOL0rm6mYzHXdeNNFpGuampMCNm9OhgxzWV_J4ZjuHDZbFaXOyn-VnrNDSmtQxDYYxQOBCNXLY6bJBaVg6EUe11UYXZIoJsBVMgOUTzF9hBkZB1PIN0WWxgsytglmfJj2Mqh5ULh6SnXhwCf4UOY5KtyHJGhv7BTjfbOM2XZAGr7To_09Q5cMao8Obi9uru-vryB3XG8v-uIZiSPExIStMnc4jLLK35x_yE8bQk2fMueUxJdAXYvW4TQvakICQR85s9PEDUJcHXuf_fxi9hKXsLJs62-PUNyyMqtf0BAAA/user) e faça login na conta de teste do comprador criada anteriormente.
+13. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como [CPF](https://www.4devs.com.br/gerador_de_cpf), [RG](https://www.4devs.com.br/gerador_de_rg), [telefone](https://geradornv.com.br/gerador-telefone/) e e-mail da conta de teste do comprador. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/prestashop/additional-content/your-integrations/test/cards) correspondente.
+
+> WARNING
+> 
+> Importante
+>
+> Após concluir uma compra de teste utilizando o Checkout Pro, observe que no Painel Administrativo da Prestashop, não será possível visualizar a aprovação da compra. Isso ocorre porque o processo acontece dentro do ambiente do Mercado Pago, e não na loja. No entanto, ao realizar o teste utilizando o Checkout Transparente, será possível visualizar a aprovação do pedido no mesmo painel. <br> Além disso, em ambos os checkouts, a informação de pagamento aprovado não será registrada no histórico da conta do Mercado Pago. Isso acontece porque nesse histórico só constam despesas reais realizadas em ambiente de produção.
+
+> NOTE
+> 
+> Nota
+>
+> Consulte a [documentação do Painel do desenvolvedor](/developers/pt/docs/prestashop/additional-content/your-integrations/dashboard) para saber como criar uma aplicação. Para obter informações sobre a criação de contas de teste, consulte a documentação sobre [Contas de teste](/developers/pt/docs/prestashop/additional-content/your-integrations/test/accounts). Para saber mais sobre as credenciais utilizadas durante os testes de pagamentos, consulte a [documentação dedicada às Credenciais](/developers/pt/docs/prestashop/additional-content/your-integrations/credentials).
