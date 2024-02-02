@@ -8,7 +8,7 @@ Os testes de compras são essenciais para garantir que os pagamentos sejam proce
 >
 > O teste só poderá ser realizado após a etapa de [configuração da integração](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
 
-Veja abaixo como testar a integração de acordo com o tipo de checkout escolhido para processar os pagamentos:
+Veja abaixo como testar a integração:
 
 1. Acesse **[Suas integrações](https://www.mercadopago.com/developers/panel/app)** e selecione a aplicação que deseja testar. 
 2. Clique em **Contas de teste** no menu à esquerda.
@@ -20,6 +20,8 @@ Veja abaixo como testar a integração de acordo com o tipo de checkout escolhid
 5. Na mesma janela anônima logada como vendedor, acesse o [Painel do desenvolvedor](https://www.mercadopago.com/developers/panel/app) e crie uma nova aplicação, seguindo as instruções detalhadas na [documentação do Painel do desenvolvedor](/developers/pt/docs/shopify/additional-content/your-integrations/dashboard).
 
 ![Login](/images/shopify/test-login.gif)
+
+Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para processar os pagamentos:
 
 ## Checkout Pro
 
