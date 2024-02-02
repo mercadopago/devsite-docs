@@ -5,14 +5,16 @@ Reembolsos são transações realizadas quando determinada cobrança é revertid
 É possível integrar Point via API para ponto de venda e realizar reembolsos de três formas distintas:
 
 1. **Através do dispositivo Point:**
-    * Reembolse transações recentes diretamente do dispositivo Point pelo valor total.
-    * Busque os pagamentos realizados, selecione aquele que deseja reembolsar, e siga as instruções do dispositivo.
+ * Reembolse transações recentes diretamente do dispositivo Point pelo valor total.
+ * Busque os pagamentos realizados, selecione aquele que deseja reembolsar, e siga as instruções do dispositivo.
+
 2. **Através da API de Payments:**
-    - Reembolse total ou parcialmente qualquer tipo de pagamento usando o recurso de reembolso da [API de Payments](/developers/pt/reference/chargebacks/_payments_id_refunds/post).
+ * Reembolse total ou parcialmente qualquer tipo de pagamento usando o recurso de reembolso da [API de Payments](/developers/pt/reference/chargebacks/_payments_id_refunds/post).
+
 3. **Através da API para dispositivos Point:**
-    - Reembolse transações integralmente com até 90 dias.
-    - O processamento do reembolso é realizado pelo dispositivo Point, o que permitirá imprimir recibos e reembolsar pagamentos efetuados com cartão presente.
-    - Receba notificações Webhook após a conclusão do ciclo da intenção de reembolso.
+ * Reembolse transações integralmente com até 90 dias.
+ * O processamento do reembolso é realizado pelo dispositivo Point, o que permitirá imprimir recibos e reembolsar pagamentos efetuados com cartão presente.
+ * Receba notificações Webhook após a conclusão do ciclo da intenção de reembolso.
 
 É possível escolher a opção de reembolso que melhor atenda às suas necessidades. No entanto, recomendamos usar nossa API para dispositivos Point sempre que for necessária a **impressão de tickets de reembolso ou realizar reembolsos aproximando o cartão do dispositivo**.
 

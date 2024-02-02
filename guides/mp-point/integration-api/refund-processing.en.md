@@ -5,14 +5,16 @@ Refunds are transactions made when a certain charge is reversed and the amounts 
 When choosing a Point integration via API for Point of Sale, you have three options to efficiently process refunds: 
 
 1. **Through the Point Device**: 
-    * Refund recent transactions directly from your Point device for their full value. 
-    * You will need to search for the payments made, select the transaction, and follow the device's instructions. 
+ * Refund recent transactions directly from your Point device for their full value. 
+ * You will need to search for the payments made, select the transaction, and follow the device's instructions. 
+
 2. **Through the Payments API**: 
-    * Complete full or partial refunds for any type of payment using the refunds resource in the [Payments API](/developers/en/reference/chargebacks/_payments_id_refunds/post). 
+ * Complete full or partial refunds for any type of payment using the refunds resource in the [Payments API](/developers/en/reference/chargebacks/_payments_id_refunds/post). 
+
 3. **Through our API for Point Devices**:
-    * Refund transactions that are up to 90 days old for their full value. 
-    * The refund processing is done on the Point devices, allowing you to print receipts and refund payments made with a contactless card. 
-    * Receive notifications via Webhook upon completing the refund attempt cycle. 
+ * Refund transactions that are up to 90 days old for their full value. 
+ * The refund processing is done on the Point devices, allowing you to print receipts and refund payments made with a contactless card. 
+ * Receive notifications via Webhook upon completing the refund attempt cycle. 
 
 You can choose the refund option that best suits your needs. However, we recommend using our API for Point Devices in **cases where the printing of refund tickets is required, or for refunds made by tapping the card on the device**.
 
