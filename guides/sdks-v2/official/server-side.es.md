@@ -36,7 +36,7 @@ Los SDKs de Mercado Pago están disponibles en distintos lenguajes de programaci
 | Ruby 2.2.0    | Ruby 2.3+ | [Gem](https://rubygems.org/gems/mercadopago-sdk)   | [GitHub](https://github.com/mercadopago/sdk-ruby)    |
 | .NET 2.3.3    | .NET Standard 2.0+ <br> .NET Core 2.0+  <br> .NET Framework 4.6.1+ | [NuGet](https://www.nuget.org/packages/mercadopago-sdk)   | [GitHub](https://github.com/mercadopago/sdk-dotnet)   |
 | Python 2.2.1 | Python 3+   | [pypi](https://pypi.org/project/mercadopago/)   | [GitHub](https://github.com/mercadopago/sdk-python)     |
----
+
 
 --- mini_landing_separator ---
 
