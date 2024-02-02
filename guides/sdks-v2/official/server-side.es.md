@@ -5,8 +5,6 @@ content_section_with_media:
  - media_image: /sdk/library-media-3.png
 ---
 
---- mini_landing_separator ---
-
 ---
 bullet_section_with_media: 
  - title: Ventajas
