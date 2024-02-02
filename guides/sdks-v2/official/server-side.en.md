@@ -10,7 +10,7 @@ bullet_section_with_media:
  - title: Advantages
  - type: normal
  - message: Our SDKs are designed to simplify your interaction with Mercado Pago's APIs. Their use is not mandatory, but is strongly recommended as they decrease development effort, by providing several advantages, such as:
- - image: /checkout-bricks/cho-bricks-landing-v4.png
+ - image: /sdk/mpjsv2-3.png
  - benefit_title: More efficiency and cost reduction
  - benefit_message: Cost reduction by adopting a ready-to-use tool approved by Mercado Pago.
  - benefit_title: Optimized installation
