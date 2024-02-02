@@ -6,7 +6,7 @@ Os testes de compras são essenciais para garantir que os pagamentos sejam proce
 > 
 > Importante
 >
-> O teste só poderá ser realizado após a etapa de [configuração da integração](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
+> O teste só poderá ser realizado após a etapa de [configuração da integração.](/developers/pt/docs/shopify/integration-configuration/checkout-pro)
 
 Veja abaixo como testar a integração:
 
@@ -17,7 +17,7 @@ Veja abaixo como testar a integração:
 ![Criar conta](/images/shopify/test-create-account.gif)
 
 4. Abra uma nova janela anônima e faça login no [Mercado Pago](https://www.mercadolivre.com/jms/mlb/lgz/msl/login/H4sIAAAAAAAEA42QTU_DMAyG_0sPnNAGQuJjUoXSUrZq6zrWDTYuVpZ4aUTSVGlKhxD_nbTAnaOf149j5zNQRsgK3EeNwSTAU60kky44D2pF3dFYDZL7QNceNdLhb6kOfQu1VKND2wSTz36QQB6hl_pRR6oa9E20dSUclek8G97yTDaAJ-9VVEGHh3eJffpnCOOL0rm6mYzHXdeNNFpGuampMCNm9OhgxzWV_J4ZjuHDZbFaXOyn-VnrNDSmtQxDYYxQOBCNXLY6bJBaVg6EUe11UYXZIoJsBVMgOUTzF9hBkZB1PIN0WWxgsytglmfJj2Mqh5ULh6SnXhwCf4UOY5KtyHJGhv7BTjfbOM2XZAGr7To_09Q5cMao8Obi9uru-vryB3XG8v-uIZiSPExIStMnc4jLLK35x_yE8bQk2fMueUxJdAXYvW4TQvakICQR85s9PEDUJcHXuf_fxi9hKXsLJs62-PUNyyMqtf0BAAA/user) usando a conta de teste do vendedor criada no passo anterior.
-5. Na mesma janela anônima logada como vendedor, acesse o [Painel do desenvolvedor](https://www.mercadopago.com/developers/panel/app) e crie uma nova aplicação, seguindo as instruções detalhadas na [documentação do Painel do desenvolvedor](/developers/pt/docs/shopify/additional-content/your-integrations/dashboard).
+5. Na mesma janela anônima logada como vendedor, acesse o [Painel do desenvolvedor](https://www.mercadopago.com/developers/panel/app) e crie uma nova aplicação, seguindo as instruções detalhadas na [documentação do Painel do desenvolvedor.](/developers/pt/docs/shopify/additional-content/your-integrations/dashboard)
 
 ![Login](/images/shopify/test-login.gif)
 
@@ -65,4 +65,4 @@ Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para proc
 > 
 > Nota
 >
-> Consulte a [documentação do Painel do desenvolvedor](/developers/pt/docs/shopify/additional-content/your-integrations/dashboard) para saber como criar uma aplicação. Para obter informações sobre a criação de contas de teste, consulte a documentação sobre [Contas de teste](/developers/pt/docs/shopify/additional-content/your-integrations/test/accounts). Para saber mais sobre as credenciais utilizadas durante os testes de pagamentos, consulte a [documentação dedicada às Credenciais](/developers/pt/docs/shopify/additional-content/your-integrations/credentials).
+> Para saber mais sobre as credenciais utilizadas durante os testes de pagamentos, consulte a [documentação dedicada às Credenciais.](/developers/pt/docs/shopify/additional-content/your-integrations/credentials)
