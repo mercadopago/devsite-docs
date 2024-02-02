@@ -20,7 +20,6 @@ bullet_section_with_media:
  - benefit_title: Seguridad en el tratamiento de datos
  - benefit_message: Fortalece la seguridad en el tratamiento de los datos con nuestra solución, que utiliza las mejores prácticas de seguridad para proteger la información en su envío y recepción.
 ---
----
 
 --- mini_landing_separator ---
 
@@ -45,7 +44,7 @@ Los SDKs de Mercado Pago están disponibles en distintos lenguajes de programaci
 
 Luego de instalar uno de nuestros SDKs, puedes utilizar nuestra Referencia de API para generar fragmentos de código en el lenguaje de programación de tu preferencia. Para explorar cómo integrar utilizando nuestras APIs, sigue las etapas a continuación: 
 
-1. Acede a nuestra [Referencia de API](https://www.mercadopago.com.br/developers/pt/reference)
+1. Acede a nuestra [Referencia de API](https://www.mercadopago.com/developers/pt/reference)
 2. En el menú desplegable ubicado en el borde superior del bloque de código, selecciona el lenguaje de programación de tu preferencia.
 3. Inserta los parámetros necesarios siguiendo las descripciones, y visualiza el bloque de código actualizado.
 

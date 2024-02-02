@@ -46,7 +46,7 @@ Os SDKs do Mercado Pago estão disponíveis em diversas linguagens de programaç
 
 Depois de instalar um de nossos SDKs, você pode utilizar nossa API Reference para gerar trechos de código na linguagem de programação de sua escolha. Para explorar como integrar utilizando nossas APIs, siga as etapas abaixo.
 
-1. Acesse nossa [API Reference](https://www.mercadopago.com.br/developers/pt/reference)
+1. Acesse nossa [Referência de API](https://www.mercadopago.com/developers/pt/reference)
 2. No seletor, dentro do bloco de código, selecione a linguagem de programação de sua preferência.
 3. Insira os parâmetros necessários e visualize o trecho de código atualizado.
 
