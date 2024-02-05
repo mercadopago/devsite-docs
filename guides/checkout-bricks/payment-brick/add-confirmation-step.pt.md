@@ -223,6 +223,7 @@ const settings = {
         city: "<PAYER_CITY>", // opcional
         federalUnit: "<PAYER_FED_UNIT>", // opcional
         zipCode: "<ZIP_CODE>",
+      additionalInformation: "<ADDITIONAL_INFORMATION>", // opcional  
       },
     },
   },

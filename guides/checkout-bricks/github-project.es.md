@@ -11,6 +11,7 @@ Haz clic en los links a continuación para acceder a los proyectos disponibles e
 ------------
 ----[mla]----
 * [Proyecto funcional - Payment Brick](https://github.com/mercadopago/payment-bricks-sample-node)
+* [Proyecto funcional - Payment Brick con etapa de confirmación](https://github.com/mercadopago/payment-bricks-review-sample-node)
 * [Proyecto funcional - Card Payment Brick](https://github.com/mercadopago/card-payment-bricks-sample)
 * [Proyecto funcional - Brand Brick](https://github.com/mercadopago/wallet-brand-bricks-sample)
 * [Documentación técnica - SDK MercadoPago.js V2](https://github.com/mercadopago/sdk-js)

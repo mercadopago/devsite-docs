@@ -25,7 +25,7 @@ Para integrar esta funcionalidad, es necesario enviar información adicional dur
 >
 > Atención
 >
-> Asegúrese de reemplazar todos los valores numéricos y de texto entre `<>`.
+> Asegúrate de reemplazar todos los valores numéricos y de texto entre `<>`.
 
 ```Javascript
 const settings = {
@@ -223,6 +223,7 @@ const settings = {
         city: "<PAYER_CITY>", // opcional
         federalUnit: "<PAYER_FED_UNIT>", // opcional
         zipCode: "<ZIP_CODE>",
+      additionalInformation: "<ADDITIONAL_INFORMATION>", // opcional    
       },
     },
   },

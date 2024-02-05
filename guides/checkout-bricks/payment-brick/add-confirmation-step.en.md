@@ -224,6 +224,7 @@ const settings = {
         city: "<PAYER_CITY>", // optional
         federalUnit: "<PAYER_FED_UNIT>", // optional
         zipCode: "<ZIP_CODE>",
+      additionalInformation: "<ADDITIONAL_INFORMATION>", // optional    
       },
     },
   },
