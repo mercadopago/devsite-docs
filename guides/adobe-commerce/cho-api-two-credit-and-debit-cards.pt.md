@@ -22,20 +22,20 @@ Para habilitar o pagamento via 2 cartões de crédito e débito no Checkout API,
 
 ![Two cards](/images/adobe-commerce/dois_cartoes.png)
 
-Ao finalizar o preenchimento desses campos, o pagamento via cartão terá sido habilitado no Checkout Transparente. Clique em **Gravar configuração** para salvar as alterações realizadas ou, se preferir, siga para a próxima etapa e configure o parcelamento e juros para cartões.
+Ao finalizar o preenchimento desses campos, o pagamento via cartão terá sido habilitado no Checkout Transparente. Clique em **Gravar configuração** para salvar as alterações realizadas ou, se preferir, siga para a próxima etapa e configure o parcelamento e acréscimos para cartões.
 
 
 ## Definições comuns de meios de pagamento
 
 [TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
 
-## Parcelamento e juros
+## Parcelamento e acréscimos
 
-A configuração de parcelamento e juros é feita diretamente na sua conta Mercado Pago. Para isso, siga as etapas descritas abaixo.
+A configuração de parcelamento e acréscimos é feita diretamente na sua conta Mercado Pago. Para isso, siga as etapas descritas abaixo.
 
-1. Clique no botão **Definir Parcelas e Juros** e faça o login na sua conta de pessoa vendedora Mercado Pago.
+1. Clique no botão **Definir parcelas e acréscimos** e faça o login na sua conta de pessoa vendedora Mercado Pago.
 2. Selecione a opção **Código QR e pagamentos online**, habilite o parcelamento e selecione o número de parcelas que deseja oferecer no Checkout. As opções vão de 1 a 12 vezes.
 
-![Installment and interest](/images/adobe-commerce/parcelamento.gif)
+![Installment and interest](/images/adobe-commerce/contaptac.gif)
 
 Pronto! Finalizadas essas etapas, o parcelamento no checkout estará configurado e pronto para processar vendas.

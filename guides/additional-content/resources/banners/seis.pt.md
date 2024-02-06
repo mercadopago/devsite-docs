@@ -1,5 +1,5 @@
 
-# Meios de pagamento: 6x sem juros
+# Meios de pagamento: 6x sem acréscimos
 
 Permita que seus clientes paguem instantaneamente com esses meios de pagamento.
 

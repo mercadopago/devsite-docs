@@ -55,6 +55,7 @@
                     "example": "test_user@testuser.com"
                   },
                   "card_token_id": {
+                    "required": true,
                     "type": "string",
                     "description": {
                       "en": "The card_token_id is a token generated from the form submission with the capture of payment data. When submitting the form, a token is generated that securely represents the card data. To get the card_token_id, see the \"Card\" section of the Checkout API documentation and follow all the steps up to the \"Initialize payment form\" section. It is through this form that it will be possible to obtain the card_token_id.",

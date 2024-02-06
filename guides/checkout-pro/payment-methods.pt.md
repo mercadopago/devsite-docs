@@ -2,6 +2,12 @@
 
 Por padrão, todos os meios de pagamento são oferecidos no Checkout Pro. Por meio da preferência de pagamento, você pode configurar um meio de pagamento padrão para ser renderizado, excluir algum indesejado, ou ainda escolher um número máximo de parcelas a serem ofertadas.
 
+> WARNING
+>
+> Importante
+>
+> Os meios de pagamento **Dinheiro em conta** e **Wallet** não podem ser excluídos.
+
 Na tabela abaixo detalhamos os atributos de preferência e a descrição de cada um deles para que você possa definir qual informação deseja alterar e/ou inserir.
 
 

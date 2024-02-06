@@ -37,7 +37,7 @@ Para **adicionar o Mercado Pago em sua loja**, siga os passos abaixo:
 
 Depois de adicionar o Mercado Pago, você terá a opção de oferecer pagamentos com [cartão de crédito](#bookmark_configurando_os_dados_de_cartão_de_crédito) e [boleto bancário](#bookmark_configurando_os_dados_de_boleto).
 
-Além disso, você pode [oferecer parcelas sem juros](#bookmark_configurando_o_parcelamento_na_sua_conta_do_mercado_pago), consultar e configurar as [taxas e prazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de suas vendas online quando quiser.
+Além disso, você pode [oferecer parcelas sem acréscimos](#bookmark_configurando_o_parcelamento_na_sua_conta_do_mercado_pago), consultar e configurar as [taxas e prazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de suas vendas online quando quiser.
 
 ### Configurando os dados da integração
 
@@ -64,10 +64,10 @@ Para **configurar os dados de Cartão de Crédito em sua loja**, siga os passos 
 
     | Campos | Dados |
     | --- | --- |
-    | Porcentagem de juros | Caso queira adicionar uma porcentagem de juros, preencha um valor, caso não, deixe em 0,00. |
-    | Tipo de juros | Emissor - Incluir juros no total do pedido. Emissor - Juros acrescido pelo emissor. Lojista - Incluir juros no total do pedido. |
+    | Porcentagem de acréscimos | Caso queira adicionar uma porcentagem de acréscimos, preencha um valor, caso não, deixe em 0,00. |
+    | Tipo de acréscimos | Emissor - Incluir acréscimos no total do pedido. Emissor - Juros acrescido pelo emissor. Lojista - Incluir acréscimos no total do pedido. |
     | Número total de parcelas | Coloque o número total de parcelas que será possível escolher por compra. |
-    | Número de parcelas sem juros | O número total de parcelas sem juros que será possível escolher por compra. |
+    | Número de parcelas sem acréscimos | O número total de parcelas sem acréscimos que será possível escolher por compra. |
     | Parcela mínima | Valor mínimo disponível para cada parcela de uma compra. |
     | Identificador de Integração | Coloque um código que será identificado no seu ERP. |
     | Ordem | Configure a ordem em que as bandeiras aparecerão no Checkout. |
@@ -104,14 +104,14 @@ Para **configurar os dados de Boleto Bancário o em sua loja**, siga os passos a
 ## Configurando o parcelamento na sua conta do Mercado Pago
 
 1. Na seção [Seu negócio](https://www.mercadopago.com.br/business/) na sua conta do Mercado Pago.
-1. Procure por Oferecer parcelamento sem juros e clique em "Ativar".
+1. Procure por "Oferecer parcelamento sem juros" e clique em "Ativar".
 1. Escolha quantas parcelas você quer oferecer e clique em “Ativar” para confirmar as alterações.
 <p>&nbsp;</p>
 
 ![LINX Configuracao](/images/linx/linx_parcelamento_conta-5.gif)
 <p>&nbsp;</p>
 
-E pronto! Você está oferecendo parcelamento sem juros, assumindo as tarifas de parcelamento que você configurou.
+E pronto! Você está oferecendo parcelamento sem acréscimos, assumindo as tarifas de parcelamento que você configurou.
 
 ## Configurando meios de pagamento do contrato
 

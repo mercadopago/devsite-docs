@@ -210,7 +210,7 @@ Puedes ver todos los atributos disponibles al crear un pago usando el método [C
  * Datos del producto,
  * Datos del envío.
 
-Existen también **campos extra** que pueden ser enviados dependiendo del **ramo de actividades o industria** de tu tienda. Puedes encontrar más detalles sobre cada ramo y los datos del comprador y del envío que recomendamos incluir en cada uno de ellos [aquí](/developers/es/docs/checkout-api/additional-content/industry-data).
+Existen también **campos extra** que pueden ser enviados dependiendo del **ramo de actividades o industria** de tu tienda. Puedes encontrar más detalles sobre cada ramo y los datos del comprador y del envío que recomendamos incluir en cada uno de ellos [aquí](/developers/es/docs/checkout-pro/additional-content/industry-data).
 
 ## Mejora la experiencia del usuario
 A menudo, el comprador puede cometer un error al completar sus datos en el checkout, así que vale la pena revisar cada paso, posibles interacciones, e incluso el diseño, para comprobar que todo esté tan claro como debería ser. 

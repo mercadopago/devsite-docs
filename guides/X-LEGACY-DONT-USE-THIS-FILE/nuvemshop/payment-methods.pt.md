@@ -11,7 +11,7 @@
 
 Você poderá escolher qual **tipo de integração utilizar em sua loja**. Você pode optar por um [processo de compra diretamente em seu site](#bookmark_checkout_transparente) ou [no site do Mercado Pago](#bookmark_checkout_pro), sendo possível ativar um ou outro.
 
-Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o_parcelamento_em_sua_conta_mercado_pago) e consultar e configurar as [taxas e prazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de suas vendas online quando quiser.
+Além disso, você pode [configurar parcelas sem acréscimos](#bookmark_configurando_o_parcelamento_em_sua_conta_mercado_pago) e consultar e configurar as [taxas e prazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de suas vendas online quando quiser.
 
 ## Checkout Pro
 

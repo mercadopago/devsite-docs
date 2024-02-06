@@ -1,7 +1,7 @@
 ---
 content_section_with_media: 
  - title: Redelcom
- - message: Redelcom é um dispositivo Mercado Livre que permite aos compradores fazer pagamentos presenciais de forma rápida e segura usando cartões de crédito e débito, dinheiro ou carteiras digitais. Além disso, usando o Redelcom, é possível oferecer parcelamento com ou sem juros e, dependendo do dispositivo, gerenciar e atualizar facilmente o estoque da loja.
+ - message: Redelcom é um dispositivo Mercado Livre que permite aos compradores fazer pagamentos presenciais de forma rápida e segura usando cartões de crédito e débito, dinheiro ou carteiras digitais. Além disso, usando o Redelcom, é possível oferecer parcelamento com ou sem acréscimos e, dependendo do dispositivo, gerenciar e atualizar facilmente o estoque da loja.
  - media_image: /Redelcom/redelcom-mercadopago.png
 ---
 
@@ -44,7 +44,7 @@ bullet_section_with_media:
  - title: Dispositivos disponíveis
  - type: normal
  - benefit_title: SMART
- - benefit_message: Terminal multisserviços: você pode fazer pagamentos sem contato, com chip, com tarja magnética ou QR e oferecer parcelas sem juros. Também permite recargas de celular e pagamentos de contas. Além disso, você pode gerar comprovantes e faturas eletrônicas. Nosso dispositivo possui certificações de segurança PCI PTS 5.x SRED, possui bateria recarregável e oferece conectividade de celular e Wi-Fi com o SIM de dados incluído sem custo.
+ - benefit_message: Terminal multisserviços: você pode fazer pagamentos sem contato, com chip, com tarja magnética ou QR e oferecer parcelas sem acréscimos. Também permite recargas de celular e pagamentos de contas. Além disso, você pode gerar comprovantes e faturas eletrônicas. Nosso dispositivo possui certificações de segurança PCI PTS 5.x SRED, possui bateria recarregável e oferece conectividade de celular e Wi-Fi com o SIM de dados incluído sem custo.
  - image: /Redelcom/smart-costado.png
 ---
 

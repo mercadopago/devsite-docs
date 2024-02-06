@@ -98,56 +98,56 @@
                               "title": "ARS",
                               "description": {
                                 "en": "Argentine peso.",
-                                "es": "Argentine peso.",
-                                "pt": "Argentine peso."
+                                "es": "Peso argentino.",
+                                "pt": "Peso argentino."
                               }
                             },
                             {
                               "title": "BRL",
                               "description": {
                                 "en": "Brazilian real.",
-                                "es": "Brazilian real.",
-                                "pt": "Brazilian real."
+                                "es": "Real brasileño.",
+                                "pt": "Real brasileiro."
                               }
                             },
                             {
                               "title": "CLP",
                               "description": {
                                 "en": "Chilean peso.",
-                                "es": "Chilean peso.",
-                                "pt": "Chilean peso."
+                                "es": "Peso chileno.",
+                                "pt": "Peso chileno."
                               }
                             },
                             {
                               "title": "MXN",
                               "description": {
                                 "en": "Mexican peso.",
-                                "es": "Mexican peso.",
-                                "pt": "Mexican peso."
+                                "es": "Peso mexicano.",
+                                "pt": "Peso mexicano."
                               }
                             },
                             {
                               "title": "COP",
                               "description": {
                                 "en": "Colombian peso.",
-                                "es": "Colombian peso.",
-                                "pt": "Colombian peso."
+                                "es": "Peso colombiano.",
+                                "pt": "Peso colombiano."
                               }
                             },
                             {
                               "title": "PEN",
                               "description": {
                                 "en": "Peruvian sol.",
-                                "es": "Peruvian sol.",
-                                "pt": "Peruvian sol."
+                                "es": "Sol peruano.",
+                                "pt": "Sol peruano."
                               }
                             },
                             {
                               "title": "UYU",
                               "description": {
                                 "en": "Uruguayan peso.",
-                                "es": "Uruguayan peso.",
-                                "pt": "Uruguayan peso."
+                                "es": "Peso uruguayo.",
+                                "pt": "Peso uruguaio."
                               }
                             }
                           ]
@@ -305,9 +305,9 @@
                       "excluded_payment_methods": {
                         "type": "array",
                         "description": {
-                          "en": "Payment methods excluded from the payment process (except account_money, which is always allowed). The payment methods included here will not be available at checkout.",
-                          "pt": "Métodos de pagamento excluídos do checkout (exceto account_money, que estará sempre disponível). Os métodos de pagamento aqui incluídos não estarão disponíveis no checkout.",
-                          "es": "Métodos de pago excluidos del proceso de pago (excepto account_money, que siempre estará disponible). Los métodos de pago incluidos aquí no estarán disponibles en el checkout."
+                          "en": "Payment methods excluded from the payment process (except account_money and wallet, which is always allowed). The payment methods included here will not be available at checkout.",
+                          "pt": "Métodos de pagamento excluídos do checkout (exceto account_money e wallet, que estarão sempre disponíveis). Os métodos de pagamento aqui incluídos não estarão disponíveis no checkout.",
+                          "es": "Métodos de pago excluidos del proceso de pago (excepto account_money y wallet, que siempre estarán disponibles). Los métodos de pago incluidos aquí no estarán disponibles en el checkout."
                         },
                         "items": {
                           "type": "object",
@@ -454,56 +454,64 @@
                             "type": "string",
                             "description": {
                               "en": "Zip code.",
-                              "pt": "Código postal",
-                              "es": "Código postal"
+                              "pt": "Código postal.",
+                              "es": "Código postal."
                             }
                           },
                           "street_name": {
                             "type": "string",
                             "description": {
                               "en": "Street name.",
-                              "pt": "Rua",
-                              "es": "Calle"
+                              "pt": "Rua.",
+                              "es": "Calle."
                             }
                           },
                           "city_name": {
                             "type": "string",
                             "description": {
                               "en": "City name.",
-                              "pt": "Cidade",
-                              "es": "Ciudad"
+                              "pt": "Cidade.",
+                              "es": "Ciudad."
                             }
                           },
                           "state_name": {
                             "type": "string",
                             "description": {
                               "en": "State name.",
-                              "pt": "Estado",
-                              "es": "Estado"
+                              "pt": "Estado.",
+                              "es": "Estado."
                             }
                           },
                           "street_number": {
                             "type": "number",
                             "description": {
                               "en": "Street number.",
-                              "pt": "O Número",
-                              "es": "Número"
+                              "pt": "O Número.",
+                              "es": "Número."
                             }
                           },
                           "floor": {
                             "type": "string",
                             "description": {
                               "en": "Floor.",
-                              "pt": "Apartamento",
-                              "es": "Piso"
+                              "pt": "Andar.",
+                              "es": "Piso."
                             }
                           },
                           "apartment": {
                             "type": "string",
                             "description": {
                               "en": "Apartment.",
-                              "pt": "Apartamento",
-                              "es": "Departamento"
+                              "pt": "Apartamento.",
+                              "es": "Departamento."
+                            }
+                          },
+                          "country_name": {
+                            "type": "string",
+                            "description": {
+                              "en": "Country name.",
+                              "pt": "Nome do país.",
+                              "es": "Nombre del país."
                             }
                           }
                         }
@@ -656,22 +664,21 @@
                             "pt": "Tipo da track. Especifique a herramienta pertenecen los valores",
                             "es": "Tipo del track. Especifica a qué herramienta pertenecen los valores"
                           },
-                          "example": "google_ad",
                           "enum": [
                             {
                               "title": "google_ad",
                               "description": {
                                 "en": "Allows configurations for GTM's Google Ads Conversion Tracking tag. Necessary values as conversion_id and conversion_label.",
-                                "es": "Allows configurations for GTM's Google Ads Conversion Tracking tag. Necessary values as conversion_id and conversion_label.",
-                                "pt": "Allows configurations for GTM's Google Ads Conversion Tracking tag. Necessary values as conversion_id and conversion_label."
+                                "es": "Permite configuraciones para la tag de seguimiento de conversiones de Google Ads en GTM. Valores necesarios como 'conversion_id' y 'conversion_label'.",
+                                "pt": "Permite configurações para a tag de rastreamento de conversões do Google Ads no GTM. Valores necessários como 'conversion_id' e 'conversion_label'."
                               }
                             },
                             {
                               "title": "facebook_ad",
                               "description": {
                                 "en": "Allows configurations for Facebook Pixel. Necessary values as pixel_id.",
-                                "es": "Allows configurations for Facebook Pixel. Necessary values as pixel_id.",
-                                "pt": "Allows configurations for Facebook Pixel. Necessary values as pixel_id."
+                                "es": "Permite configuraciones para el Píxel de Facebook. Valores necesarios como 'pixel_id'.",
+                                "pt": "Permite configurações para o Pixel do Facebook. Valores necessários como 'pixel_id'."
                               }
                             }
                           ]
@@ -1156,41 +1163,64 @@
                               "type": "string",
                               "description": {
                                 "en": "Zip code.",
-                                "pt": "Código postal",
-                                "es": "Código postal"
-                              }
-                            },
-                            "street_number": {
-                              "type": "string",
-                              "format": "nullable",
-                              "description": {
-                                "en": "Street number.",
-                                "pt": "O Número",
-                                "es": "Número"
+                                "pt": "Código postal.",
+                                "es": "Código postal."
                               }
                             },
                             "street_name": {
                               "type": "string",
                               "description": {
                                 "en": "Street name.",
-                                "pt": "Rua",
-                                "es": "Calle"
+                                "pt": "Rua.",
+                                "es": "Calle."
+                              }
+                            },
+                            "city_name": {
+                              "type": "string",
+                              "description": {
+                                "en": "City name.",
+                                "pt": "Cidade.",
+                                "es": "Ciudad."
+                              }
+                            },
+                            "state_name": {
+                              "type": "string",
+                              "description": {
+                                "en": "State name.",
+                                "pt": "Estado.",
+                                "es": "Estado."
+                              }
+                            },
+                            "street_number": {
+                              "type": "number",
+                              "description": {
+                                "en": "Street number.",
+                                "pt": "O Número.",
+                                "es": "Número."
                               }
                             },
                             "floor": {
                               "type": "string",
                               "description": {
                                 "en": "Floor.",
-                                "pt": "Apartamento",
-                                "es": "Piso"
+                                "pt": "Andar.",
+                                "es": "Piso."
                               }
                             },
                             "apartment": {
                               "type": "string",
                               "description": {
                                 "en": "Apartment.",
-                                "pt": "Apartamento",
-                                "es": "Departamento"
+                                "pt": "Apartamento.",
+                                "es": "Departamento."
+                              }
+                            },
+                            "country_name": {
+                              "type": "string",
+                              "description": {
+                                "en": "Country name.",
+                                "pt": "Nome do país.",
+                                "es": "Nombre del país."
                               }
                             }
                           }
@@ -2542,45 +2572,68 @@
                             "es": "Dirección de envío"
                           },
                           "properties": {
-                            "floor": {
-                              "type": "string",
-                              "description": {
-                                "en": "Floor.",
-                                "pt": "Apartamento",
-                                "es": "Piso"
-                              }
-                            },
                             "zip_code": {
                               "type": "string",
                               "description": {
                                 "en": "Zip code.",
-                                "pt": "Código postal",
-                                "es": "Código postal"
+                                "pt": "Código postal.",
+                                "es": "Código postal."
                               }
                             },
                             "street_name": {
                               "type": "string",
                               "description": {
                                 "en": "Street name.",
-                                "pt": "Rua",
-                                "es": "Calle"
+                                "pt": "Rua.",
+                                "es": "Calle."
+                              }
+                            },
+                            "city_name": {
+                              "type": "string",
+                              "description": {
+                                "en": "City name.",
+                                "pt": "Cidade.",
+                                "es": "Ciudad."
+                              }
+                            },
+                            "state_name": {
+                              "type": "string",
+                              "description": {
+                                "en": "State name.",
+                                "pt": "Estado.",
+                                "es": "Estado."
+                              }
+                            },
+                            "street_number": {
+                              "type": "number",
+                              "description": {
+                                "en": "Street number.",
+                                "pt": "O Número.",
+                                "es": "Número."
+                              }
+                            },
+                            "floor": {
+                              "type": "string",
+                              "description": {
+                                "en": "Floor.",
+                                "pt": "Andar.",
+                                "es": "Piso."
                               }
                             },
                             "apartment": {
                               "type": "string",
                               "description": {
                                 "en": "Apartment.",
-                                "pt": "Apartamento",
-                                "es": "Departamento"
+                                "pt": "Apartamento.",
+                                "es": "Departamento."
                               }
                             },
-                            "street_number": {
+                            "country_name": {
                               "type": "string",
-                              "format": "nullable",
                               "description": {
-                                "en": "Street number.",
-                                "pt": "O Número",
-                                "es": "Número"
+                                "en": "Country name.",
+                                "pt": "Nome do país.",
+                                "es": "Nombre del país."
                               }
                             }
                           }
@@ -3197,56 +3250,64 @@
                             "type": "string",
                             "description": {
                               "en": "Zip code.",
-                              "pt": "Código postal",
-                              "es": "Código postal"
+                              "pt": "Código postal.",
+                              "es": "Código postal."
                             }
                           },
                           "street_name": {
                             "type": "string",
                             "description": {
                               "en": "Street name.",
-                              "pt": "Rua",
-                              "es": "Calle"
+                              "pt": "Rua.",
+                              "es": "Calle."
                             }
                           },
                           "city_name": {
                             "type": "string",
                             "description": {
                               "en": "City name.",
-                              "pt": "Cidade",
-                              "es": "Ciudad"
+                              "pt": "Cidade.",
+                              "es": "Ciudad."
                             }
                           },
                           "state_name": {
                             "type": "string",
                             "description": {
                               "en": "State name.",
-                              "pt": "Estado",
-                              "es": "Estado"
+                              "pt": "Estado.",
+                              "es": "Estado."
                             }
                           },
                           "street_number": {
                             "type": "number",
                             "description": {
                               "en": "Street number.",
-                              "pt": "O Número",
-                              "es": "Número"
+                              "pt": "O Número.",
+                              "es": "Número."
                             }
                           },
                           "floor": {
                             "type": "string",
                             "description": {
                               "en": "Floor.",
-                              "pt": "Apartamento",
-                              "es": "Piso"
+                              "pt": "Andar.",
+                              "es": "Piso."
                             }
                           },
                           "apartment": {
                             "type": "string",
                             "description": {
                               "en": "Apartment.",
-                              "pt": "Apartamento",
-                              "es": "Departamento"
+                              "pt": "Apartamento.",
+                              "es": "Departamento."
+                            }
+                          },
+                          "country_name": {
+                            "type": "string",
+                            "description": {
+                              "en": "Country name.",
+                              "pt": "Nome do país.",
+                              "es": "Nombre del país."
                             }
                           }
                         }
@@ -4101,24 +4162,24 @@
                           "type": "object",
                           "description": {
                             "en": "Shipping address.",
-                            "pt": "Endereço de envio",
-                            "es": "Dirección de envío"
+                            "pt": "Endereço de envio.",
+                            "es": "Dirección de envío."
                           },
                           "properties": {
                             "zip_code": {
                               "type": "string",
                               "description": {
                                 "en": "Zip code.",
-                                "pt": "Código postal",
-                                "es": "Código postal"
+                                "pt": "Código postal.",
+                                "es": "Código postal."
                               }
                             },
                             "street_name": {
                               "type": "string",
                               "description": {
                                 "en": "Street name.",
-                                "pt": "Rua",
-                                "es": "Calle"
+                                "pt": "Rua.",
+                                "es": "Calle."
                               }
                             },
                             "street_number": {
@@ -4126,48 +4187,48 @@
                               "format": "nullable",
                               "description": {
                                 "en": "Street number.",
-                                "pt": "O Número",
-                                "es": "Número"
+                                "pt": "O Número.",
+                                "es": "Número."
                               }
                             },
                             "floor": {
                               "type": "string",
                               "description": {
                                 "en": "Floor.",
-                                "pt": "Apartamento",
-                                "es": "Piso"
+                                "pt": "Andar.",
+                                "es": "Piso."
                               }
                             },
                             "apartment": {
                               "type": "string",
                               "description": {
                                 "en": "Apartment.",
-                                "pt": "Apartamento",
-                                "es": "Departamento"
+                                "pt": "Apartamento.",
+                                "es": "Departamento."
                               }
                             },
                             "city_name": {
                               "type": "object",
                               "description": {
                                 "en": "City name.",
-                                "pt": "Cidade",
-                                "es": "Ciudad"
+                                "pt": "Cidade.",
+                                "es": "Ciudad."
                               }
                             },
                             "state_name": {
                               "type": "object",
                               "description": {
                                 "en": "State name.",
-                                "pt": "Estado",
-                                "es": "Estado"
+                                "pt": "Estado.",
+                                "es": "Estado."
                               }
                             },
                             "country_name": {
                               "type": "string",
                               "description": {
                                 "en": "Country name.",
-                                "pt": "Nome do país",
-                                "es": "Nombre del país"
+                                "pt": "Nome do país.",
+                                "es": "Nombre del país."
                               }
                             }
                           }
@@ -4359,9 +4420,9 @@
           {
             "title": "custom",
             "description": {
-              "en": "Custom shipping.",
-              "es": "Custom shipping.",
-              "pt": "Custom shipping."
+              "en": "Custom shipping. Not available for Checkout Pro or Payment link.",
+              "es": "Envío personalizado. No disponible para Checkout Pro o Link de pago.",
+              "pt": "Envio personalizado. Não disponível para Checkout Pro ou Link de pagamento."
             }
           },
           {
@@ -4369,15 +4430,15 @@
             "description": {
               "en": "Mercado Envíos.",
               "es": "Mercado Envíos.",
-              "pt": "Mercado Envíos."
+              "pt": "Mercado Envios."
             }
           },
           {
             "title": "not_specified",
             "description": {
               "en": "Shipping mode not specified.",
-              "es": "Shipping mode not specified.",
-              "pt": "Shipping mode not specified."
+              "es": "Modo de envío no especificado.",
+              "pt": "Modo de envio não especificado."
             }
           }
         ]
@@ -4394,16 +4455,16 @@
             "title": "regular_payment",
             "description": {
               "en": "Normal payment.",
-              "es": "Normal payment.",
-              "pt": "Normal payment."
+              "es": "Pago normal.",
+              "pt": "Pagamento normal."
             }
           },
           {
             "title": "money_transfer",
             "description": {
               "en": "Money request.",
-              "es": "Money request.",
-              "pt": "Money request."
+              "es": "Solicitud de dinero.",
+              "pt": "Solicitação de dinheiro."
             }
           }
         ]

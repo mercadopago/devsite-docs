@@ -7,7 +7,7 @@
 
 Após ativar o Mercado Pago, você tem a opção de oferecer os seguintes modelos de checkout: [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/iset/set-payment-methods#bookmark_checkout_pro), [Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/iset/set-payment-methods#bookmark_checkout_transparente) ou [Ambos os checkouts](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/iset/set-payment-methods#bookmark_ambos_checkouts).
 
-Além disso, você pode [configurar parcelas sem juros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/iset/set-interestfree-installments), consultar e configurar as [taxas e prazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de suas vendas online quando quiser.
+Além disso, você pode [configurar parcelas sem acréscimos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/iset/set-interestfree-installments), consultar e configurar as [taxas e prazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de suas vendas online quando quiser.
 
 ## Configure os tipos de pagamentos
 

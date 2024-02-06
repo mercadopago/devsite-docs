@@ -23,7 +23,7 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 * **Ativar o checkout:** selecione **Sim** para ativar a experiência do Mercado Pago no checkout da sua loja.
 * **Meios de pagamento:** escolha os meios de pagamento que deseja oferecer.
 * **Máximo de parcelas:** selecione o máximo de parcelas que deseja oferecer em sua loja.
-* **Parcelamento e juros:** [configure](https://www.mercadopago.[FAKER][URL][DOMAIN]/costs-section) a tarifa que será paga em cada compra e também ofereça parcelas sem juros para seus clientes.
+* **Parcelamento e acréscimos:** [configure](https://www.mercadopago.[FAKER][URL][DOMAIN]/costs-section) a tarifa que será paga em cada compra e também ofereça parcelas sem acréscimos para seus clientes.
 * **Voltar à loja:** selecione se deseja ou não que o cliente retorne automaticamente à sua loja após concluir o pagamento.
 * **Modal checkout:** defina se os clientes terão acesso ao formulário de pagamentos do Mercado Pago sem sair da sua loja.
 * **Modo binário:** ative quando não quiser deixar os pagamentos em estado pendente ou em revisão. Com o modo binário, os pagamentos serão aceitos ou recusados automaticamente.

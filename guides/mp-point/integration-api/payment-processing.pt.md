@@ -13,7 +13,6 @@ curl --location --request GET 'https://api.mercadopago.com/point/integration-api
 
 Você receberá uma resposta como esta:
 
-
 ----[mla]----
 ```json
 {
@@ -57,7 +56,6 @@ Você receberá uma resposta como esta:
 ```
 
 ------------
-
 ----[mlb]----
 ```json
 {
@@ -99,7 +97,6 @@ Você receberá uma resposta como esta:
 }
 ```
 ------------
-
 ----[mlm]----
 ```json
 {
@@ -276,7 +273,6 @@ Em resposta, você receberá algo semelhante a isso:
 
 Tenha em mente que as intenções de pagamento são a base para o processamento de pagamentos com dispositivos Point. Por esse motivo, é importante que você registre e salve os dados obtidos durante sua criação, especialmente o `id`.
 
-
 ## Processar intenção de pagamento
 
 Uma vez que a intenção de pagamento é criada, você pode obtê-la de seu dispositivo Point pressionando a tecla para iniciar o pagamento (no caso de Point Plus e Point Pro 2 o **botão verde** e, no caso de Point Smart, o **botão digital “Cobrar”**) e continuar com as etapas mostradas em tela para concluir o pagamento.
@@ -290,6 +286,14 @@ Uma vez que a intenção de pagamento é criada, você pode obtê-la de seu disp
 ## Verificar status da intenção de pagamento
 
 Se você deseja saber o status de uma intenção de pagamento específica, você pode ----[mla, mlb]----[verificar o status atual da sua intenção de pagamento](/developers/pt/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get)------------ ----[mlm]----[verificar o status atual da sua intenção de pagamento](/developers/pt/reference/point_apis_mlm/_point_integration-api_payment-intents_paymentintentid/get)------------ usando o `id` que você recebeu na resposta ao criá-la.
+
+----[mla, mlb, mlm]----
+> WARNING
+>
+> Atenção
+> 
+> Tenha em mente que só é possível verificar o status de uma **intenção de pagamento que tenha sido criada há, no máximo, 3 meses**. Certifique-se de usar o identificador (`id`) correspondente à tentativa de pagamento que esteja dentro deste período. Se precisar de informações sobre intenções de pagamento mais antigas, recomendamos que entre em contato com nosso serviço de atendimento ao cliente para obter assistência adicional.
+------------
 
 Lembre-se que o `id` e status da intenção de pagamento (por exemplo, _7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1_) são diferentes do `id` e status do pagamento (por ejemplo, _65412345_). Neste caso, trata-se de consultar os detalhes de uma tentativa. Você pode consultar todas as informações correspondentes ao pagamento na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) de Referência da API.
 
@@ -306,7 +310,6 @@ curl --location --request GET 'https://api.mercadopago.com/point/integration-api
 --h 'Authorization: Bearer YOUR_ACCESS_TOKEN' 
 ```
 ------------
-
 ----[mla, mlb]----
 
 ``` curl
@@ -388,7 +391,7 @@ Você pode verificar os possíveis estados de uma intenção de pagamento acessa
 
 Se desejar, você pode cancelar uma intenção de pagamento atribuída a um dispositivo Point. Para isso, você tem duas opções:
 
-* Se o estado da intenção for `opened` e ainda não tiver sido enviada para o terminal, você pode [cancelá-la via API](/developers/pt/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) fazendo a seguinte chamada:
+* Se o estado da intenção for `open` e ainda não tiver sido enviada para o terminal, você pode [cancelá-la via API](/developers/pt/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) fazendo a seguinte chamada:
 
 ``` curl
 curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/{deviceid}/payment-intents/{paymentintentid}' \

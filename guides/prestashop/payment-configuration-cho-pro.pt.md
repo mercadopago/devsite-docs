@@ -17,7 +17,7 @@ Para integrar o Checkout Pro, siga os passos abaixo.
  * Transferência bancária. 
   ------------
 3. Selecione o **máximo de parcelas** que deseja oferecer em sua loja.
-4. [Configure](https://www.mercadopago[FAKER][URL][DOMAIN]/costs-section#from-section=menu) a tarifa que será paga em cada compra e também ofereça parcelas sem juros para seus clientes.
+4. [Configure](https://www.mercadopago[FAKER][URL][DOMAIN]/costs-section#from-section=menu) a tarifa que será paga em cada compra e também ofereça parcelas sem acréscimos para seus clientes.
 5. Selecione se deseja ou não que o cliente **retorne automaticamente** à sua loja após concluir o pagamento.
 6. Caso deseje, ative o **modo binário** quando não quiser deixar os pagamentos em estado pendente ou em revisão. Com o modo binário, os pagamentos serão aceitos ou recusados automaticamente.
 7. Indique o período em que as preferências de pagamento do cliente ficarão salvas sem que este precise incluí-las novamente.
