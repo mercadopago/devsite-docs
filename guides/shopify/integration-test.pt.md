@@ -40,6 +40,10 @@ Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para proc
 
 ## Checkout Transparente
 
+> WARNING
+>
+> Para garantir o correto funcionamento do Checkout Transparente, é essencial configurar o Checkout Pro e usar as respectivas credenciais de produção da conta de teste do vendedor em ambas as configurações, tanto no Checkout Transparente quanto no Checkout Pro.
+
 6. Acesse a aplicação criada no passo 5 e clique em **Credenciais de produção** no menu à esquerda. Copie a `public_key`.
 
 ![Credenciais de produção](/images/shopify/test-prod-credentials.png)
