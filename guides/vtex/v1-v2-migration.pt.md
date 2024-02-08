@@ -9,9 +9,9 @@ Para realizar a migração do MercadoPagoV1 para o MercadoPagoV2, siga os seguin
 
 ## 1. Registre uma afiliação do gateway MercadoPagoV2
 
-Se você já possui uma afiliação com o gateway MercadoPagoV1, agora deverá criar uma nova afiliação com o MercadoPagoV2. É simples e semelhante ao processo que você fez ao configurar o conector anterior. Portanto, preste atenção especial ao processo e à descrição dos campos a seguir.
+Se você já possui uma afiliação com o gateway MercadoPagoV1, agora deverá criar uma nova afiliação com o MercadoPagoV2. É simples e semelhante ao processo que você fez ao configurar o conector anterior. Portanto, se atente especialmente ao processo e à descrição dos campos a seguir.
 
-1. No painel de administração de sua loja VTEX, acesse **Pagamentos>Configurações**.
+1. No painel de administração de sua loja VTEX, acesse **Pagamentos > Configurações**.
 2. Na parte superior da tela, vá para a aba **"Afiliações de gateway"** e clique no botão "+" para criar uma nova afiliação.
 3. Procure pelo conector **MercadoPagoV2** e selecione-o. Isso irá te levar para uma nova tela.
 4. Nesta tela, escolha qual será o **Nome da afiliação** dentro da loja. Além disso, certifique-se de ter ativado o botão deslizante **"Live/Produção"**.
@@ -21,7 +21,7 @@ Se você já possui uma afiliação com o gateway MercadoPagoV1, agora deverá c
 |---|---|
 | Application Key  | Refere-se às suas [credenciais](/developers/pt/docs/vtex/additional-content/your-integrations/credentials) de produção do Mercado Pago. Complete com sua **Public Key**. |
 | Application Token | Refere-se às suas [credenciais](/developers/pt/docs/vtex/additional-content/your-integrations/credentials) do Mercado Pago. Complete com seu **Access Token**. |
-| Prazo de vencimento do boleto  | Prazo, em dias úteis, de vencimento do pedido de compra. Caso o cliente efetue o pagamento após o prazo, o dinheiro será depositado na conta do mesmo no Mercado Pago. |
+| Prazo de vencimento do boleto  | Prazo, em dias úteis, de vencimento do pedido de compra. Caso o cliente efetue o pagamento após o prazo, o dinheiro será depositado na conta do cliente no Mercado Pago. |
 | Nome da loja  | Nome da loja. O valor deste campo aparecerá na fatura do cartão do cliente. |
 | Parcelamento máximo   | Número máximo de parcelas disponíveis para efetuar o pagamento. Com o Mercado Pago, você pode oferecer parcelamento em até 12 vezes. |
 | Suporte 3DS 2.0 | 3-D Secure é um protocolo criado para proteger transações em comércio eletrônico por meio de uma camada adicional de verificação de identidade antes da autorização final. Apenas transações rejeitadas por Alto Risco são enviadas para validação do 3DS e não afetam a experiência de compra.<br>Para ativá-lo, **desative a opção Modo binário** e selecione a opção **"Sim"**. <br>Certifique-se de ter instalado o Mercado Pago Payment App para que ele funcione corretamente. |
