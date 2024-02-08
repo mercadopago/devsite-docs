@@ -2,7 +2,7 @@
 
 The textual content displayed within the banner and pop-up depends on the choice of a **value prop**.
 
-There are four available value propositions for use, and each one enables specific customizations. The table below shows how each value proposition impacts the messages displayed in the banner:
+There are five available value propositions for use, and each one enables specific customizations. The table below shows how each value proposition impacts the messages displayed in the banner:
 
 | Value prop | Message on the banner|
 |---|---|
@@ -19,7 +19,7 @@ Customizations are passed to Brick through the object below, which must be sent 
 const settings = {
     customization: {
       text: {
-        valueProp: "payment_methods", // optional "installments" | "payment_methods" | "security" | "payment_methods_logos"
+        valueProp: "payment_methods", // optional "installments" | "payment_methods" | "security" | "payment_methods_logos" | "credits"
       },
     },
   };
@@ -27,7 +27,7 @@ const settings = {
 ```react-jsx
 const customization = {
    text: {
-   valueProp: "payment_methods", // optional "installments" | "payment_methods" | "security" | "payment_methods_logos"
+   valueProp: "payment_methods", // optional "installments" | "payment_methods" | "security" | "payment_methods_logos" | "credits"
     },
 };
 ```
