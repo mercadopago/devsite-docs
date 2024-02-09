@@ -11,13 +11,6 @@ Essa etapa adicional proporciona ao comprador uma experiência mais transparente
 
 </center>
 ------------
-----[mla]----
-<center>
-
-![review-confirm-mla](checkout-bricks/review-confirm-intro-mla-pt.gif)
-
-</center>
-------------
 
 Para integrar essa funcionalidade, faz-se necessário o envio de informações adicionais durante a inicialização do Payment Brick. Apresentamos agora um exemplo do objeto de configuração com destaque para a propriedade `enableReviewStep`, que habilita o fluxo de revisão:
 

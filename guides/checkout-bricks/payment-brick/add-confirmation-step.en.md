@@ -11,13 +11,6 @@ This additional step provides the buyer with a more transparent and secure exper
 
 </center>
 ------------
-----[mla]----
-<center>
-
-![review-confirm-mla](checkout-bricks/review-confirm-intro-mla-en.gif)
-
-</center>
-------------
 
 To integrate this functionality, it is necessary to send additional information during the initialization of Payment Brick. We now present an example of the configuration object with emphasis on the `enableReviewStep` property, which enables the review flow:
 
