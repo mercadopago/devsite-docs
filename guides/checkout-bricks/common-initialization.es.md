@@ -144,6 +144,16 @@ future_product_avaible:
  - card_linkAvailable: false
  - card_linkProof:
  - card_linkProofDescription:
+ - card_avaible: true
+ - card_icon: Check
+ - card_title: Review & Confirm
+ - card_description: Muestra un resumen de todo el proceso de compra, con la información más relevante, para que tus clientes puedan revisar antes de confirmar la compra.
+ - card_button: /developers/es/docs/checkout-bricks/payment-brick/advanced-features/add-confirmation-step
+ - card_buttonDescription: Saber más
+ - card_pillText: DISPONIBLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
 ---
 
 ------------
@@ -193,7 +203,7 @@ future_product_avaible:
  - card_linkAvailable: true
  - card_linkProof: /developers/es/live-demo/status-screen-brick
  - card_linkProofDescription: Acceder a demostración
- - card_avaible: false
+ - card_avaible: true
  - card_icon: Check
  - card_title: Review & Confirm
  - card_description: Muestra un resumen de todo el proceso de compra, con la información más relevante, para que tus clientes puedan revisar antes de confirmar la compra.
