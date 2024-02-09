@@ -168,7 +168,7 @@ future_product_avaible:
  - card_linkAvailable: false
  - card_linkProof:
  - card_linkProofDescription:
- - card_avaible: false
+ - card_avaible: true
  - card_icon: Check
  - card_title: Review & Confirm
  - card_description: Shows a summary of the entire purchase process, with the most relevant information, so that your customers can review before confirming the purchase.
