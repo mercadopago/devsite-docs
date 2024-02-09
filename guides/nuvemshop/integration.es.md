@@ -1,4 +1,4 @@
-# Configuración de integración
+# Configuración de la integración
  
 Para integrar Mercado Pago a tu Tiendanube, sigue los procedimientos a continuación.
 

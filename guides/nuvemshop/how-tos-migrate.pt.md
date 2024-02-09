@@ -9,6 +9,10 @@ Saiba como migrar para a versão atual do plugin do Mercado Pago para a Nuvemsho
 3. Dê o seu consentimento as permissões da aplicação e, por fim, clique em **Aceitar**.
 4. Você **será redirecionado para uma página do Mercado Pago** para acessar com seus dados. Clique em **Permitir** para autorizar a conexão.
 
+> NOTE
+>
+> Nota
+>
 > Neste exato momento você terá ambas as versões do plugin instaladas em seu site. Isso servirá para a sua loja ficar sem nenhum meio de pagamento enquanto estiverem sendo realizadas as etapas de migração.
 
 ## Desative o antigo plugin
