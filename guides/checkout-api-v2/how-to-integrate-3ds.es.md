@@ -214,7 +214,23 @@ Cuando se inicia el Challenge, el usuario tiene aproximadamente 5 minutos para c
 ```
 ]]]
 
-4. Para **mostrar el _Challenge_**, es necesario que generes un _iframe_ (altura mínima: 500px, ancho mínimo: 600px) que contenga un formulario con `method post`, `action` que contenga la URL obtenida en el campo `external_resource_url`, y un input oculto con el valor obtenido en `creq`. Después, debes hacer el post del form a continuación para empezar el _challenge_.
+4. Para una mejor visualización del _Challenge_ del 3DS de forma responsiva, debes agregar el CSS que se muestra a continuación.
+
+```css
+  #myframe{
+    width: 500px;
+    height: 600px;
+    border: none;
+  }
+  @media only screen and (width <= 980px) {
+    #myframe{
+      width: 100%;
+      height: 440px;
+    }
+  }
+```
+
+5. Para **mostrar el _Challenge_**, es necesario que generes un _iframe_ que contenga un formulario con `method post`, `action` que contenga la URL obtenida en el campo `external_resource_url`, y un input oculto con el valor obtenido en `creq`. Después, debes hacer el post del form a continuación para empezar el _challenge_.
 
 [[[
 ```javascript
@@ -230,8 +246,6 @@ function doChallenge(payment) {
       var iframe = document.createElement("iframe");
       iframe.name = "myframe";
       iframe.id = "myframe";
-      iframe.height = "500px";
-      iframe.width = "600px";
       document.body.appendChild(iframe);
 
       var idocument = iframe.contentWindow.document;

@@ -214,7 +214,23 @@ When the Challenge is initiated, the user has about 5 minutes to complete it. If
 ```
 ]]]
 
-4. To **display the Challenge**, you need to generate an iframe (min height: 500px, min width: 600px) containing a form with `method post`, `action` containing the URL obtained in the field `external_resource_url`, and a hidden input with the value returned in `creq`. Then, you must post the form below to start the Challenge.
+4. For a better view of the 3DS Challenge in a responsive way, you should add the CSS below.
+
+```css
+  #myframe{
+    width: 500px;
+    height: 600px;
+    border: none;
+  }
+  @media only screen and (width <= 980px) {
+    #myframe{
+      width: 100%;
+      height: 440px;
+    }
+  }
+```
+
+5. To **display the Challenge**, you need to generate an iframe containing a form with `method post`, `action` containing the URL obtained in the field `external_resource_url`, and a hidden input with the value returned in `creq`. Then, you must post the form below to start the Challenge.
 
 [[[
 ```javascript
@@ -230,8 +246,6 @@ function doChallenge(payment) {
       var iframe = document.createElement("iframe");
       iframe.name = "myframe";
       iframe.id = "myframe";
-      iframe.height = "500px";
-      iframe.width = "600px";
       document.body.appendChild(iframe);
 
       var idocument = iframe.contentWindow.document;
