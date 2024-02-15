@@ -8,8 +8,8 @@
           "mobile-checkout"
         ],
         "description": {
-          "en": "",
-          "pt": "Criar relatório de liberações",
+          "en": "Create the release report manually as many times as you wish or schedule it according to the desired frequency through our API.",
+          "pt": "Crie o relatório de liberações manualmente quantas vezes desejar ou programe-o de acordo com a frequência desejada por meio de nossa API.",
           "es": "Crea el reporte de Liberaciones manualmente tantas veces como desees o prográmalo según la frecuencia deseada a través de nuestra API."
         },
         "parameters": [
@@ -18,8 +18,8 @@
             "in": "header",
             "required": true,
             "description": {
-              "en": "",
-              "pt": "",
+              "en": "Token required for authentication. This field is intended for platforms or modules that offer Mercado Pago in their solutions.",
+              "pt": "Token necessário para autenticação. Este campo é destinado a plataformas ou módulos que oferecem o Mercado Pago em suas soluções.",
               "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
             },
             "schema": {
@@ -30,9 +30,9 @@
         ],
         "requestBody": {
           "description": {
-            "en": "",
-            "pt": "",
-            "es": "Estos son los campos necesarios para la creacion de una configuracion para el reportes de liberacion"
+            "en": "These are the required fields for creating a configuration for the Release Report.",
+            "pt": "Estes são os campos necessários para a criação de uma configuração para o Relatório de Liberações.",
+            "es": "Estos son los campos necesarios para la creacion de una configuracion para el Reporte de Liberaciones."
           },
           "content": {
             "application/json": {
@@ -43,9 +43,9 @@
                     "type": "object",
                     "required": true,
                     "description": {
-                      "en": "",
-                      "pt": "",
-                      "es": "Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección Glossário"
+                      "en": "Field with details of the columns that will be included in your report. Find all possible values in the Glossary section.",
+                      "pt": "Campo com detalhes das colunas que serão incluídas no seu relatório. Encontre todos os valores possíveis na seção Glossário.",
+                      "es": "Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección Glossário."
                     },
                     "example": "[{\"key\": \"DATE\"}, {\"key\": \"SOURCE_ID\"}]"
                   },
@@ -53,8 +53,8 @@
                     "type": "string",
                     "required": true,
                     "description": {
-                      "en": "",
-                      "pt": "",
+                      "en": "Prefix that makes up the name of the report once generated and ready for download.",
+                      "pt": "Prefixo que compõe o nome do relatório uma vez gerado e pronto para download.",
                       "es": "Prefijo que compone el nombre del reporte una vez generado y listo para descargar."
                     },
                     "example": "conciliation-settlement-report"
