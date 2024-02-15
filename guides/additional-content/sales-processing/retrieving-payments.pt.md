@@ -179,11 +179,3 @@ Exemplo de paginação:
 ```
 
 Isso exibiria 50 resultados, filtrando os primeiros 200, ordenados por `id` de forma decrescente.
-
-> NEXT_STEP_CARD_PT
->
-> Gerenciamento de operações contestadas
->
-> Encontre toda a informação sobre contestação de pagamentos, como preveni-las e gerenciá-las pela API.
->
-> [Gerenciamento de operações contestadas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sales-processing/chargebacks)

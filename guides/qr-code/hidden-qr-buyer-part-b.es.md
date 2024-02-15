@@ -8,8 +8,8 @@ Para cobrar a través de este modelo, es necesario leer el QR y enviar el códig
 
 Para que la integración funcione correctamente, es necesario:
 
-- Crear [Sucursales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/stores-and-pos).
-- Generar [Cajas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/qr-code/stores-and-pos).
+- Crear [Sucursales](/developers/es/docs/qr-code/stores-pos/stores-and-pos).
+- Generar [Cajas](/developers/es/docs/qr-code/stores-pos/stores-and-pos).
 - Contar con un lector QR.
 - Habilitar tu cuenta de Mercado Pago para realizar cobros con este modelo. 
 

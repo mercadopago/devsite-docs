@@ -22,6 +22,7 @@
                   "email": {
                     "type": "String",
                     "example": "jhon@doe.com",
+                    "required": true,
                     "description": {
                       "en": "Customer's email.",
                       "pt": "E-mail do cliente",

@@ -42,4 +42,4 @@ curl -X POST \
 ```
 ]]]
 
-Ao executar o `request` você poderá receber diferentes tipos de respostas originadas por razões específicas. Veja a seção [Respostas](/developers/pt/docs/wallet-connect/advanced-payments/idempotency/returns) para mais informações.
+Ao executar o `request` você poderá receber diferentes tipos de respostas originadas por razões específicas. Veja a seção [Respostas](/developers/pt/docs/wallet-connect/payment-flow/idempotency/responses) para mais informações.
