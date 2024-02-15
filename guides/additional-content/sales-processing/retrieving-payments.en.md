@@ -179,11 +179,3 @@ Example of pagination:
 ```
 
 This would display 50 results, filtering the first 200, and sorting them by `id` in descending order.
-
-> NEXT_STEP_CARD_EN
->
-> Chargeback management
->
-> Encuentra toda la información sobre los contracargos, cómo prevenirlos y gestionarlos por API.
->
-> [Chargeback management](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sales-processing/chargebacks)

@@ -48,7 +48,7 @@ To activate this model, follow these steps:
 1. Search in the payment methods list for Mercado Pago and go to “Setting options”.
 1. In the section Checkout model, choose the option “Transparent”.
 1. Enter the [e-mail from your Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/profile#from-section=menu) in “Registered e-mail in Mercado Pago”.
-1. Complete the fields Client ID, Client Secret and Public Key with the [credentials of your Mercado Pago account]((https://www.mercadopago[FAKER][URL][DOMAIN]developers/en/guides/resources/credentials)).
+1. Complete the fields Client ID, Client Secret and Public Key with the [credentials of your Mercado Pago account](/developers/en/guides/additional-content/your-integrations/credentials).
 1. Click on “Close” and then on “Save changes”.
 <p>&nbsp;</p>
 
@@ -65,7 +65,7 @@ To **activate both checkouts**, follow these steps:
 1. Search in the payment methods list for Mercado Pago and go to “Setting options”.
 1. In the section Checkout model, choose the option “Both”.
 1. Enter the [e-mail from your Mercado Pago account](https://www.mercadopago.com.br/profile#from-section=menu) in “Registered e-mail in Mercado Pago”.
-1. Complete the fields “Client ID, Client Secret and Public Key” with the [credentials of your Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials).
+1. Complete the fields “Client ID, Client Secret and Public Key” with the [credentials of your Mercado Pago account](/developers/en/guides/additional-content/your-integrations/credentials).
 1. Click on “Close” and then on “Save changes”.
 <p>&nbsp;</p>
 
