@@ -8,8 +8,8 @@ Para realizar a cobrança do pagamento, é preciso ler o QR e enviar o código d
 
 Para que a integração funcione corretamente, é preciso:
 
-- Criar [Store](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/stores-and-pos).
-- Criar [QR](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/qr-code/stores-and-pos).
+- Criar [Store](/developers/pt/docs/qr-code/stores-pos/stores-and-pos).
+- Criar [QR](/developers/pt/docs/qr-code/stores-pos/stores-and-pos).
 - Ter um leitor para código QR.
 - Habilitar sua conta do Mercado Pago para este tipo de cobrança. 
 
