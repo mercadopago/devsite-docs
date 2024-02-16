@@ -14,4 +14,4 @@ En esta documentación, podrás encontrar los siguientes endpoints para la integ
 * [Capturar pago](/developers/es/docs/wallet-connect/advanced-payments/capture-payment)
 * [Idempotencia](/developers/es/docs/wallet-connect/advanced-payments/idempotency)
 * [Obtener información de pago](/developers/es/docs/wallet-connect/advanced-payments/get-payment-information)
-* [Reembolsar pago (total y parcial)](/developers/es/docs/wallet-connect/advanced-payments/refund-pago)
+* [Reembolsar pago (total y parcial)](/developers/es/docs/wallet-connect/advanced-payments/refund-payment)

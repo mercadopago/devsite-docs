@@ -86,11 +86,11 @@ En esta sección, puedes establecer el **número máximo de meses**, con y sin i
 
 Dentro de tu cuenta de Mercado Pago, puedes consultar y configurar el número de meses sin interés que deseas ofrecer a tus clientes. En esta opción, tus clientes pueden comprar en cuotas sin interés, y tú asumes la tasa de financiamiento.
 
-* En el sitio de Mercado Pago, haz clic en **Configurar cuotas e intereses**.
-* Serás redirigido a la cuenta de Mercado Pago vinculada a tu tienda.
-* Haz clic en **Vender en cuotas sin interés**.
-* Selecciona cuántos meses deseas ofrecer marcando la opción correspondiente y haz clic en continuar.
-* Establece los valores mínimos para ofrecer cuotas sin interés y haz clic en **Guardar**.
+1. En el sitio de Mercado Pago, haz clic en **Configurar cuotas e intereses**.
+2. Serás redirigido a la cuenta de Mercado Pago vinculada a tu tienda.
+3. Haz clic en **Vender en cuotas sin interés**.
+4. Selecciona cuántos meses deseas ofrecer marcando la opción correspondiente y haz clic en continuar.
+5. Establece los valores mínimos para ofrecer cuotas sin interés y haz clic en **Guardar**.
 
 <center>
 

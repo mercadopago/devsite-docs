@@ -45,4 +45,4 @@ curl -X POST \
 ```
 ]]]
 
-Al ejecutar el _request_, puedes recibir diferentes tipos de respuestas originadas por razones específicas. Consulta la sección [Respuestas](/developers/es/docs/wallet-connect/advanced-payments/idempotency/returns) para obtener más información.
+Al ejecutar el _request_, puedes recibir diferentes tipos de respuestas originadas por razones específicas. Consulta la sección [Respuestas](/developers/es/docs/wallet-connect/payment-flow/idempotency/responses) para obtener más información.

@@ -10,7 +10,7 @@ Crie sua aplicação para integrar com a solução Split de pagamentos seguindo 
    >
    > Importante
    >
-   > Durante a criação da sua aplicação, talvez seja necessário reautenticar sua identidade. Se já concluiu a verificação, será solicitada a reautenticação. Caso contrário, será redirecionado para enviar os documentos necessários. Esse passo extra é essencial para proteger sua conta e garantir a conformidade das operações. Você pode consultar a [documentação sobre o Painel do desenvolvedor](/developers/pt/docs/split-payment/additional-content/your-integrations/dashboard) se tiver dúvidas sobre como usá-lo.
+   > Durante a criação da sua aplicação, talvez seja necessário reautenticar sua identidade. Se já concluiu a verificação, será solicitada a reautenticação. Caso contrário, será redirecionado para enviar os documentos necessários. Esse passo extra é essencial para proteger sua conta e garantir a conformidade das operações. Você pode consultar a [documentação sobre o Painel do desenvolvedor](/developers/pt/docs/split-payments/additional-content/your-integrations/dashboard) se tiver dúvidas sobre como usá-lo.
 
 1. Acesse [Suas integrações](https://www.mercadopago.com.br/developers/panel/app). Uma vez lá, clique no botão **Criar aplicação**, localizado no canto superior direito.
 2. Insira um nome para identificar sua aplicação (você tem um limite de 50 caracteres).

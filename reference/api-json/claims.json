@@ -22,7 +22,7 @@
               },
               "description": {
                 "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
-                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "pt": "ID da reclamação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
                 "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
               }
             }
@@ -44,7 +44,7 @@
                         "example": 5033102536,
                         "description": {
                           "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
-                          "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                          "pt": "ID da reclamação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
                           "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
                         }
                       },
@@ -855,7 +855,7 @@
               },
               "description": {
                 "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
-                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "pt": "ID da reclamação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
                 "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
               }
             },
@@ -1150,7 +1150,7 @@
                               "example": 5033102536,
                               "description": {
                                 "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
-                                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                                "pt": "ID da reclamação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
                                 "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
                               }
                             },
@@ -1771,7 +1771,7 @@
               },
               "description": {
                 "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
-                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "pt": "ID da reclamação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
                 "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
               }
             }
@@ -2051,7 +2051,7 @@
               },
               "description": {
                 "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
-                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "pt": "ID da reclamação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
                 "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
               }
             },
@@ -2142,7 +2142,7 @@
               },
               "description": {
                 "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
-                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "pt": "ID da reclamação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
                 "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
               }
             },
@@ -2258,7 +2258,7 @@
               },
               "description": {
                 "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
-                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "pt": "ID da reclamação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
                 "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
               }
             },
@@ -2314,7 +2314,7 @@
               },
               "description": {
                 "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
-                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "pt": "ID da reclamação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
                 "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
               }
             },
@@ -2434,7 +2434,7 @@
               },
               "description": {
                 "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
-                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "pt": "ID da reclamação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
                 "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
               }
             }
@@ -2503,7 +2503,7 @@
               },
               "description": {
                 "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
-                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "pt": "ID da reclamação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
                 "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
               }
             }
@@ -2668,7 +2668,7 @@
               },
               "description": {
                 "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
-                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "pt": "ID da reclamação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
                 "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
               }
             }
@@ -2897,7 +2897,7 @@
               },
               "description": {
                 "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
-                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "pt": "ID da reclamação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
                 "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
               }
             }
@@ -3254,7 +3254,7 @@
               },
               "description": {
                 "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
-                "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                "pt": "ID da reclamação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
                 "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
               }
             }
@@ -3821,7 +3821,7 @@
                         "example": 5033102536,
                         "description": {
                           "en": "Claim ID. Unique identifier used to reference a specific claim in the system, essential for tracking and managing these claims.",
-                          "pt": "ID da contestação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
+                          "pt": "ID da reclamação. Identificador único usado para referenciar uma reclamação específica no sistema, sendo essencial para rastrear e gerenciar estas reclamações.",
                           "es": "ID del reclamo. Identificador único utilizado para hacer referencia a un reclamo específico en el sistema, esencial para rastrear y gestionar estos reclamos."
                         }
                       },

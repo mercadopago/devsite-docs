@@ -56,7 +56,6 @@ Recibirás una respuesta como esta:
 ```
 
 ------------
-
 ----[mlb]----
 ```json
 {
@@ -98,7 +97,6 @@ Recibirás una respuesta como esta:
 }
 ```
 ------------
-
 ----[mlm]----
 ```json
 {
@@ -140,7 +138,9 @@ Recibirás una respuesta como esta:
 }
 ```
 ------------
+
 ## Crear la intención de pago
+
 Una intención de pago es un llamado que contiene los detalles de la transacción a realizarse, y que debe ser creada para poder iniciar un cobro. Se trata de un intento que, de ser exitoso, devolverá un `id` del pago y su estado.
 
 ----[mla]----
@@ -161,7 +161,7 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 
 | Campo | Descripción |
 |---|---|
-| `amount` | Monto total de la intención de pago.  <br>**Monto mínimo permitido**: 500 (dispositivos POS y SMART). <br>**Monto máximo permitido**: 400000000 (ambos dispositivos). <br>**Importante**: este campo no admite puntos decimales. Si deseas generar una intención de pago, debes contemplar los dos decimales del valor en su total. Por ejemplo: para generar orden de pago de valor "15,00" deberás ingresar "1500". |
+| `amount` | Monto total de la intención de pago.  <br>**Monto mínimo permitido**: 1500 (dispositivos POS y SMART). <br>**Monto máximo permitido**: 530000000 (ambos dispositivos). <br>**Importante**: este campo no admite puntos decimales. Si deseas generar una intención de pago, debes contemplar los dos decimales del valor en su total. Por ejemplo: para generar orden de pago de valor "15,00" deberás ingresar "1500". |
 | `external_reference` | Campo de uso exclusivo del integrador para incluir referencias propias de su sistema. |
 | `print_on_terminal` | Campo que determina si el dispositivo realiza la impresión del comprobante de pago. |
 | `ticket_number` | Número de ticket de la intención de pago. |
@@ -294,6 +294,14 @@ Luego, continúa con los pasos que se muestran en la pantalla para completar el 
 
 Si deseas saber el estado de una intención de pago en particular, puedes ----[mla, mlb]----[consultar el estado actual de tu intención de pago](/developers/es/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get)------------ ----[mlm]----[consultar el estado actual de tu intención de pago](/developers/es/reference/point_apis_mlm/_point_integration-api_payment-intents_paymentintentid/get)------------ utilizando el `id` que recibiste en la respuesta al momento de crearla.
 
+----[mla, mlb, mlm]----
+> WARNING
+>
+> Atención
+> 
+> Tenga en cuenta que solo es posible **verificar el estado de una intención de pago que haya sido creada hace, como máximo, 3 meses**. Asegúrate de utilizar el identificador (`id`) correspondiente al intento de pago que esté dentro de este período. Si necesitas información sobre intenciones de pago más antiguas, te recomendamos que contactes con nuestro servicio de atención al cliente para obtener asistencia adicional.
+------------
+
 Recuerda que `id` y estado de la intención de pago (por ejemplo, _7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1_)son diferentes a `id` y estado del pago (por ejemplo, _65412345_). En este caso, se trata de consultar los detalles de un intento. Si quieres consultar la información correspondiente al pago, accede a la sección [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) en Referencia de API. 
 
 > WARNING
@@ -393,7 +401,7 @@ Puedes consultar los estados posibles de una intención de pago accediendo a nue
 
 Si lo deseas, puedes cancelar una intención de pago asignada a un dispositivo Point. Para ello, tienes dos posibilidades:
 
-* Si el estado de la intención es `opened` y todavía no fue enviada a la terminal, puedes [cancelarlo vía API](/developers/es/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) realizando el siguiente llamado:
+* Si el estado de la intención es `open` y todavía no fue enviada a la terminal, puedes [cancelarlo vía API](/developers/es/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) realizando el siguiente llamado:
 
 ``` curl
 curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/{deviceid}/payment-intents/{paymentintentid}' \
@@ -409,7 +417,6 @@ El llamado devolverá la siguiente respuesta:
 ```
 
 * Si, en cambio, el estado de la intención de pago es `on_terminal`, deberás realizar la cancelación directamente desde el dispositivo Point.
-
 
 > NOTE
 >

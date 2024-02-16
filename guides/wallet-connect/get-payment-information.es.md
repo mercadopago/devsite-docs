@@ -17,4 +17,4 @@ curl -X GET \
 ]]]
 
 
-Al ejecutar el _request_ puedes recibir diferentes tipos de respuestas originadas por razones específicas. Consulta la sección [Respuestas](/developers/es/docs/wallet-connect/advanced-payments/get-payment-information/returns) para obtener más información.
+Al ejecutar el _request_ puedes recibir diferentes tipos de respuestas originadas por razones específicas. Consulta la sección [Respuestas](/developers/es/docs/wallet-connect/payment-flow/capture-payment/responses) para obtener más información.
