@@ -9,6 +9,10 @@ Find out how to migrate to the current version of the Mercado Pago plugin for Ti
 3. Give your consent to the application's permissions and, finally, click on **Accept**.
 4. You **will be redirected to a Mercado Pago** page to access with your data. Click **Allow** to authorize the connection.
 
+> NOTE
+>
+> Note
+>
 > Right now you will have both versions of the plugin installed on your site. This will allow your store to have no means of payment while the migration steps are being carried out.
 
 ## Deactivate the old plugin

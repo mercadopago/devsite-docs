@@ -20,7 +20,7 @@ Para capturar el monto total de una reserva, envía el valor a capturar al pará
   MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
   $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
+  $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $client->capture($payment_id, $request_options);

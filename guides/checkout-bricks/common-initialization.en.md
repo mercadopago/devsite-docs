@@ -1,6 +1,6 @@
-# Common initialization among Bricks
+# Common initialization
 
-To set up the Bricks integration and have a responsive, optimized and configurable checkout you need to follow the steps below. These steps apply to the integration of all Bricks.
+To set up Brick integrations and have a responsive, optimized, and configurable checkout, we provide the common initial configuration process for all Bricks in the steps below.
 
 > CLIENT_SIDE
 >
@@ -139,6 +139,16 @@ future_product_avaible:
  - card_title: Brand Brick
  - card_description: Communicate different messages related to the available payment methods via Mercado Pago in your store.
  - card_button: /developers/en/docs/checkout-bricks/brand-brick/introduction
+ - card_buttonDescription: Learn more
+ - card_pillText: AVAILABLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
+ - card_avaible: true
+ - card_icon: Check
+ - card_title: Review & Confirm
+ - card_description: Shows a summary of the entire purchase process, with the most relevant information, so that your customers can review before confirming the purchase.
+ - card_button: /developers/en/docs/checkout-bricks/payment-brick/advanced-features/add-confirmation-step
  - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
  - card_linkAvailable: false

@@ -1,9 +1,3 @@
-> WARNING
->
-> Compatibility with WooCommerce Blocks
->
-> After WooCommerce stores update, we are working to make Mercado Pago plugin compatible with Blocks. If you are having problems, check the [official documentation](https://woo.com/document/cart-checkout-blocks-status/#section-6) and revert momentarily the update of your store.
-
 # How do I install the plugin manually?
 
 To install the plugin manually in Wordpress, follow these steps:

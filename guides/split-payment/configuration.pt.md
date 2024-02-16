@@ -1,16 +1,16 @@
 # Criar configuração
 
-Para configurar a integração com a solução Split de Pagamentos, você deverá [criar sua aplicação](#bookmark_criar_aplicação), [solicitar permissões aos seus usuários](#bookmark_solicitar_permissão_aos_usuários) e [obter as credenciais](#bookmark_obter_credenciais). Continue lendo para criar a configuração necessária.
+Para configurar a integração com a solução Split de pagamentos, você deverá [criar sua aplicação](#bookmark_criar_aplicação), [solicitar permissões aos seus usuários](#bookmark_solicitar_permissão_aos_usuários) e [obter as credenciais](#bookmark_obter_credenciais). Continue lendo para criar a configuração necessária.
 
 ## Criar aplicação
 
-Crie sua aplicação para integrar com a solução Split de Pagamentos seguindo os passos abaixo. 
+Crie sua aplicação para integrar com a solução Split de pagamentos seguindo os passos abaixo. 
 
    > NOTE
    >
    > Importante
    >
-   > Durante a criação da sua aplicação, talvez seja necessário reautenticar sua identidade. Se já concluiu a verificação, será solicitada a reautenticação. Caso contrário, será redirecionado para enviar os documentos necessários. Esse passo extra é essencial para proteger sua conta e garantir a conformidade das operações. Você pode consultar a [documentação sobre o Painel do desenvolvedor](/developers/pt/docs/split-payment/additional-content/your-integrations/dashboard) se tiver dúvidas sobre como usá-lo.
+   > Durante a criação da sua aplicação, talvez seja necessário reautenticar sua identidade. Se já concluiu a verificação, será solicitada a reautenticação. Caso contrário, será redirecionado para enviar os documentos necessários. Esse passo extra é essencial para proteger sua conta e garantir a conformidade das operações. Você pode consultar a [documentação sobre o Painel do desenvolvedor](/developers/pt/docs/split-payments/additional-content/your-integrations/dashboard) se tiver dúvidas sobre como usá-lo.
 
 1. Acesse [Suas integrações](https://www.mercadopago.com.br/developers/panel/app). Uma vez lá, clique no botão **Criar aplicação**, localizado no canto superior direito.
 2. Insira um nome para identificar sua aplicação (você tem um limite de 50 caracteres).
@@ -104,6 +104,7 @@ Utilize o código de autorização obtido na etapa anterior para adquirir as cre
 | `<CLIENT_SECRET>`        | Sua SECRET_KEY, também disponível nos detalhes de sua aplicação.                              |
 | `<AUTHORIZATION_CODE>`   | Código de autorização obtido ao redirecionar o usuário de volta para o seu site.                     |
 | `<REDIRECT_URI>`         | Deve ser a mesma Redirect URI configurada em sua aplicação.                                     |
+| `<STATE>`         | Substitua o valor "RANDOM_ID" por um identificador que seja único para cada tentativa e que não inclua informações sensíveis de forma que você consiga identificar de quem é o código recebido.                                     |
 
 ```curl
 curl -X POST \
@@ -114,7 +115,8 @@ curl -X POST \
      -d 'client_secret=<CLIENT_SECRET>' \
      -d 'grant_type=authorization_code' \
      -d 'code=<AUTHORIZATION_CODE>' \
-     -d 'redirect_uri=<REDIRECT_URI>'
+     -d 'redirect_uri=<REDIRECT_URI>' \
+     -d 'state=<RANDOM_ID>'
 ```
 
 #### Resposta

@@ -1,10 +1,3 @@
----
-sites_supported:
-  - mla
-  - mco
-  - mlc
----
-
 # Payment methods
 
 Allows your clients to pay immediately with these payment methods.

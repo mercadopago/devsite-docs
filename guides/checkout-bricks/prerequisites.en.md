@@ -2,6 +2,12 @@
 
 To perform a Bricks integration, you must meet the requirements listed below.
 
+> WARNING
+> 
+> Attention
+>
+> The Bricks do not have official support when used in WebView flows on Android and iOS platforms.
+
 | Requirements | Description | 
 |---|---|
 | Application | Applications are the different integrations in one or more stores. You can create an application for each solution you implement to keep everything organized and on track for easier management. Check [Dashboard](/developers/en/docs/checkout-bricks/additional-content/your-integrations/introduction) for more information on how to create an application. |

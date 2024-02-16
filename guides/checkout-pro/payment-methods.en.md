@@ -13,6 +13,11 @@ In the table below, we detail the preference attributes and the description of e
 | `installments` | Method that defines the maximum number of installments to be offered. |
 | `purpose` | By indicating the value `wallet_purchase` in this method, Checkout Pro will only accept payments from users registered in Mercado Pago, with card and account balance. |
 
+> WARNING
+>
+> Important
+>
+> The payment methods **Cash in account** and **Wallet** cannot be excluded.
 
 With this information, use one of the SDKs available below to configure the payment methods you want to offer.
 

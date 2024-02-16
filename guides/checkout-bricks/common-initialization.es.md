@@ -1,6 +1,6 @@
-# Inicio común entre los Bricks
+# Inicio común
 
-Para configurar la integración de Bricks y tener un pago receptivo, optimizado y configurable, debe seguir los pasos a continuación. Estos pasos se aplican a la integración de todos los Bricks.
+Para configurar la integración de Bricks y tener un pago receptivo, optimizado y configurable, proporcionamos en los pasos a continuación el proceso de configuración inicial común para todos los Bricks.
 
 > CLIENT_SIDE
 >
@@ -144,6 +144,16 @@ future_product_avaible:
  - card_linkAvailable: false
  - card_linkProof:
  - card_linkProofDescription:
+ - card_avaible: true
+ - card_icon: Check
+ - card_title: Review & Confirm
+ - card_description: Muestra un resumen de todo el proceso de compra, con la información más relevante, para que tus clientes puedan revisar antes de confirmar la compra.
+ - card_button: /developers/es/docs/checkout-bricks/payment-brick/advanced-features/add-confirmation-step
+ - card_buttonDescription: Saber más
+ - card_pillText: DISPONIBLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
 ---
 
 ------------
@@ -193,7 +203,7 @@ future_product_avaible:
  - card_linkAvailable: true
  - card_linkProof: /developers/es/live-demo/status-screen-brick
  - card_linkProofDescription: Acceder a demostración
- - card_avaible: false
+ - card_avaible: true
  - card_icon: Check
  - card_title: Review & Confirm
  - card_description: Muestra un resumen de todo el proceso de compra, con la información más relevante, para que tus clientes puedan revisar antes de confirmar la compra.

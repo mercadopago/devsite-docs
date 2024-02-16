@@ -118,14 +118,6 @@
                             }
                           },
                           {
-                            "title": "digital_wallet",
-                            "description": {
-                              "en": "Paypal.",
-                              "es": "Paypal.",
-                              "pt": "Paypal."
-                            }
-                          },
-                          {
                             "title": "voucher_card",
                             "description": {
                               "en": "Alelo benefits, Sodexo.",

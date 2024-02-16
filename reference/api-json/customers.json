@@ -22,6 +22,7 @@
                   "email": {
                     "type": "String",
                     "example": "jhon@doe.com",
+                    "required": true,
                     "description": {
                       "en": "Customer's email.",
                       "pt": "E-mail do cliente",
@@ -803,6 +804,14 @@
                             "en": "invalid 'sort' parameter format.",
                             "es": "invalid 'sort' parameter format.",
                             "pt": "invalid 'sort' parameter format."
+                          }
+                        },
+                        {
+                          "title": "214",
+                          "description": {
+                            "en": "invalid zip code.",
+                            "es": "invalid zip code.",
+                            "pt": "invalid zip code."
                           }
                         }
                       ]
@@ -1668,6 +1677,14 @@
                             "en": "invalid 'sort' parameter format.",
                             "es": "invalid 'sort' parameter format.",
                             "pt": "invalid 'sort' parameter format."
+                          }
+                        },
+                        {
+                          "title": "214",
+                          "description": {
+                            "en": "invalid zip code.",
+                            "es": "invalid zip code.",
+                            "pt": "invalid zip code."
                           }
                         }
                       ]
@@ -2802,6 +2819,14 @@
                             "es": "invalid 'sort' parameter format.",
                             "pt": "invalid 'sort' parameter format."
                           }
+                        },
+                        {
+                          "title": "214",
+                          "description": {
+                            "en": "invalid zip code.",
+                            "es": "invalid zip code.",
+                            "pt": "invalid zip code."
+                          }
                         }
                       ]
                     }
@@ -3550,6 +3575,14 @@
                             "en": "invalid 'sort' parameter format.",
                             "es": "invalid 'sort' parameter format.",
                             "pt": "invalid 'sort' parameter format."
+                          }
+                        },
+                        {
+                          "title": "214",
+                          "description": {
+                            "en": "invalid zip code.",
+                            "es": "invalid zip code.",
+                            "pt": "invalid zip code."
                           }
                         }
                       ]

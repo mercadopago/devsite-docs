@@ -178,11 +178,3 @@ Ejemplo de paginación:
 ```
 
 Esto traería 50 resultados, filtrando los primeros 200, y los ordenaría por `id` de forma descendente.
-
-> NEXT_STEP_CARD_ES
->
-> Gestión de contracargos
->
-> Encuentra toda la información sobre los contracargos, cómo prevenirlos y gestionarlos por API.
->
-> [Gestión de contracargos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sales-processing/chargebacks)

@@ -31,7 +31,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | GROSS_AMOUNT | Valor bruto da transação. |
 | METADATA | Dados adicionais como, por exemplo, o ID das devoluções parciais ou dados informados pelo vendedor em caso de integração externa. |
 | MP_FEE_AMOUNT | Pagamento da tarifa doMercado Pago e/ou Mercado Livre. ----[mla, mpe, mco, mlm, mlu, mlc]---- Inclui IVA. ------------ |
-| FINANCING_FEE_AMOUNT | Custo de oferecer parcelamento sem juros. |
+| FINANCING_FEE_AMOUNT | Custo de oferecer parcelamento sem acréscimos. |
 | SHIPPING_FEE_AMOUNT | Custo de envio. |
 | TAXES_AMOUNT | ----[mla]---- Impostos cobrados por retenção de Receita Bruta na fonte, IVA, Lucros; e impostos sobre Créditos e Débitos, entre outros.[Saiba mais sobre retenções e impostos.](https://vendedores.mercadolibre.com.ar/nota/retenciones-y-percepciones-sobre-tus-ventas-lo-que-debes-saber/) ------------  ----[mlm, mlc, mlu, mlb, mco, mpe]----Impostos recebidos por retenção de receita bruta.------------ |
 | COUPON_AMOUNT | Valor do cupom de desconto. Apenas o valor bruto (`GROSS_AMOUNT`) é descontado se fornecido pelo vendedor. |

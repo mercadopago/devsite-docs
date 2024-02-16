@@ -61,4 +61,6 @@ Además, este reporte presenta el historial completo del dinero liberado, aborda
 
 > NOTE
 >
+> Nota
+>
 > Utilice el [Glosario del Reporte](/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use) para consultar términos técnicos, si es necesario.

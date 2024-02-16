@@ -47,20 +47,6 @@ Abaixo explicaremos como: indicar as URLs que serão notificadas, configurar os 
 > </br></br>
 > A assinatura gerada não tem prazo de validade e, embora não seja obrigatório, recomendamos renovar periodicamente a **assinatura secreta**. Para isso, basta clicar no botão de redefinição ao lado da assinatura.
 
-### Validar origem da notificação
-
-1. Após configurar as URLs e os Eventos, **revele a assinatura secreta** gerada.
-2. Em seguida, utilize a assinatura secreta para validar o *header* `x-signature-id`. O valor recebido no *header* deve coincidir com a chave obtida na etapa anterior. No exemplo mostrado abaixo, o valor `59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1` deve coincidir com a chave secreta gerada.
-
-```header
-...
-accept-encoding	*
-content-type	application/json
-accept	*/*
-x-signature-id	59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1
-...
-```
-
 ### Simular o recebimento da notificação
 
 1. Após configurar as URLs e os Eventos, clique em **Simular** para experimentar e testar se a URL indicada está recebendo as notificações corretamente.
@@ -398,8 +384,7 @@ Além disso, especificamente em alertas de fraude, o pedido não deve ser entreg
 
 Na notificação, você receberá um `JSON` com as seguintes informações contendo o id de pagamento para efetuar o cancelamento.
 
-[[[
-```Json
+```json
 
 
  "description": ".....",
@@ -408,14 +393,11 @@ Na notificação, você receberá um `JSON` com as seguintes informações conte
 
 
 ```
-]]]
-
 
 > NOTE
 >
 > Importante
 >
 > É possível obter mais detalhes sobre o pedido utilizando a API [Obter pedido](/developers/pt/reference/merchant_orders/_merchant_orders_id/get).
-
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma como, por exemplo, atualizar um pagamento aprovado.

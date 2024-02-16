@@ -7,4 +7,5 @@ O Checkout Pro é uma solução que permite aos seus clientes realizar compras p
 
 ----[mlb]----
 ![chopro-br](/images/salesforce/chopro-br.png)
+
 ------------

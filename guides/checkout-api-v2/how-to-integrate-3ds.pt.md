@@ -107,7 +107,7 @@ Payment payment = await client.CreateAsync(request);
   MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
   $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
+  $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
@@ -214,7 +214,23 @@ Quando o _Challenge_ é iniciado, o usuário tem cerca de 5 minutos para complet
 ```
 ]]]
 
-4. Para **exibir o _Challenge_**, é necessário gerar um _iframe_ (altura mínima: 500px, largura mínima: 600px) que contenha um formulário com `method post`, `action` contendo a URL obtida no campo `external_resource_url`, e um input oculto com o valor obtido em `creq`. Em seguida, faça o post do formulário abaixo para iniciar o _Challenge_.
+4. Para uma melhor visualização do _Challenge_ do 3DS de forma responsiva, você deve adicionar o CSS abaixo. 
+
+```css
+  #myframe{
+    width: 500px;
+    height: 600px;
+    border: none;
+  }
+  @media only screen and (width <= 980px) {
+    #myframe{
+      width: 100%;
+      height: 440px;
+    }
+  }
+```
+
+5. Para **exibir o _Challenge_**, é necessário gerar um _iframe_ que contenha um formulário com `method post`, `action` contendo a URL obtida no campo `external_resource_url`, e um input oculto com o valor obtido em `creq`. Em seguida, faça o post do formulário abaixo para iniciar o _Challenge_.
 
 [[[
 ```javascript
@@ -230,8 +246,6 @@ function doChallenge(payment) {
       var iframe = document.createElement("iframe");
       iframe.name = "myframe";
       iframe.id = "myframe";
-      iframe.height = "500px";
-      iframe.width = "600px";
       document.body.appendChild(iframe);
 
       var idocument = iframe.contentWindow.document;
@@ -393,7 +407,7 @@ curl -X POST \
   MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
   $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
+  $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([

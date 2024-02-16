@@ -158,7 +158,7 @@ Para configurar los pagos con Pix, envía un **POST** al endpoint [/v1/payments]
   MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
   $client = new PaymentClient();
-  $request_options = new MPRequestOptions();
+  $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
 
@@ -433,7 +433,7 @@ Sigue las etapas que se indican a continuación para renderizar el código QR y 
 
 [[[
 ```html
-<img src={`data:image/jpeg;base64,${qr_code_base64}`/>
+<img src={`data:image/jpeg;base64,${qr_code_base64}}`/>
 
 ```
 ]]]
@@ -443,7 +443,7 @@ Sigue las etapas que se indican a continuación para renderizar el código QR y 
 [[[
  ```html
     <label for="copiar">Copiar Hash:</label>
-    <input type="text" id="copiar"  value={qr_code}/>
+    <input type="text" id="copiar" value={qr_code} readonly/>
 ```
 ]]]
 

@@ -47,20 +47,6 @@ A continuación explicaremos cómo: indicar las URL que serán notificadas, conf
 > </br></br>
 > La clave generada no tiene fecha de caducidad y, aunque no es obligatorio, recomendamos renovar periódicamente la **clave secreta**. Para hacerlo, simplemente haz clic en el botón de restablecimiento junto a la clave.
 
-### Validar origen de la notificación
-
-1. Después de configurar las URLs y los Eventos, **revela la clave secreta** generada.
-2. A continuación, utiliza la clave secreta para validar el encabezado `x-signature-id`. El valor recibido en el encabezado debe coincidir con la clave obtenida en el paso previo. En el ejemplo que se muestra a continuación el valor `59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1` debería coincidir con la clave secreta generada.
-
-```header
-...
-accept-encoding	*
-content-type	application/json
-accept	*/*
-x-signature-id	59f768b5fcd30f47764052992e42b0f8812d02ffa34ca9f8d9947f2dcb7027f1
-...
-```
-
 ### Simular la recepción de la notificación
 
 1. Después de configurar las URLs y los Eventos, haz clic en **Simular** para experimentar y probar si la URL indicada está recibiendo las notificaciones correctamente.
@@ -392,24 +378,19 @@ En el caso de las alertas de fraude, específicamente, no entregues el pedido, y
 
 En la notificación recibirás un `JSON` con la siguiente información que contiene el payment id para realizar la cancelación.
 
-
-[[[
-```Json
+```json
 
 
  "description": ".....",
  "merchant_order": 4945357007,
  "payment_id": 23064274473
 
-
 ```
-]]]
 
 > NOTE
 >
 > Importante
 >
 > También puedes obtener más información sobre la orden utilizando la API [Obtener orden](/developers/es/reference/merchant_orders/_merchant_orders_id/get).
-
 
 Con esta información podrás realizar las actualizaciones necesarias a tu plataforma, como actualizar un pago aprobado.

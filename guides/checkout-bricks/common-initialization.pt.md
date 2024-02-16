@@ -1,6 +1,6 @@
-# Inicialização comum entre os Bricks
+# Inicialização comum
 
-Para configurar a integração dos Bricks e ter um checkout responsivo, otimizado e configurável você precisa seguir os passos abaixo. Esses passos se aplicam à integração de todos os Bricks.
+Para configurar a integração dos Bricks e ter um checkout responsivo, otimizado e configurável, disponibilizamos nos passos abaixo o processo de configuração inicial comum para todos os Bricks.
 
 > CLIENT_SIDE
 >
@@ -139,6 +139,16 @@ future_product_avaible:
  - card_title: Brand Brick
  - card_description: Comunique diferentes mensagens relacionadas às formas de pagamento disponíveis via Mercado Pago em sua loja.
  - card_button: /developers/pt/docs/checkout-bricks/brand-brick/introduction
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
+ - card_avaible: true
+ - card_icon: Check
+ - card_title: Review & Confirm
+ - card_description: Exiba um resumo de todo o processo de compra com as informações mais relevantes, assim os clientes poderão analisar antes de confirmar a compra.
+ - card_button: /developers/pt/docs/checkout-bricks/payment-brick/advanced-features/add-confirmation-step
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false

@@ -7,15 +7,15 @@
 
 Depois de adicionar o Mercado Pago, você terá a opção de oferecer pagamentos com [cartão de crédito](#bookmark_configurando_os_dados_de_cartão_de_crédito) e [boleto bancário](#bookmark_configurando_os_dados_de_boleto).
 
-Além disso, você pode [oferecer parcelas sem juros](#bookmark_configurando_o_parcelamento_na_sua_conta_do_mercado_pago), consultar e configurar as [taxas e prazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de suas vendas online quando quiser.
+Além disso, você pode [oferecer parcelas sem acréscimos](#bookmark_configurando_o_parcelamento_na_sua_conta_do_mercado_pago), consultar e configurar as [taxas e prazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de suas vendas online quando quiser.
 
 ## Configurando os dados da integração
 
 Após adicionar o meio de pagamento, **configure os dados de sua integração com o Mercado Pago** através dos seguintes passos:
 
-1. Acesse a aba "Integração" e complete os campos Public Key e Access Token com as [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) de produção de sua conta do Mercado Pago.
+1. Acesse a aba "Integração" e complete os campos Public Key e Access Token com as [Credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) de produção de sua conta do Mercado Pago.
 1. Preencha o nome que será informado na fatura do seu cliente para que ele possa reconhecê-lo.
-1. Se deseja habilitar pagamentos de teste, na seção Modo teste selecione a opção "Sim". Depois complete os campos Public Key e Access Token com as [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) de teste  da sua conta do Mercado Pago.
+1. Se deseja habilitar pagamentos de teste, na seção Modo teste selecione a opção "Sim". Depois complete os campos Public Key e Access Token com as [Credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) de teste  da sua conta do Mercado Pago.
 1. Na seção de Parcelamento, selecione "Externo (API do Mercado Pago)" onde você vai utilizar as condições de parcelamento diretamente da sua conta Mercado Pago.
 1. Por último, clique em "Salvar".
 <p>&nbsp;</p>
@@ -34,10 +34,10 @@ Para **configurar os dados de Cartão de Crédito em sua loja**, siga os passos 
 
     | Campos | Dados |
     | --- | --- |
-    | Porcentagem de juros | Caso queira adicionar uma porcentagem de juros, preencha um valor, caso não, deixe em 0,00. |
-    | Tipo de juros | Emissor - Incluir juros no total do pedido. Emissor - Juros acrescido pelo emissor. Lojista - Incluir juros no total do pedido. |
+    | Porcentagem de acréscimos | Caso queira adicionar uma porcentagem de acréscimos, preencha um valor, caso não, deixe em 0,00. |
+    | Tipo de acréscimos | Emissor - Incluir acréscimos no total do pedido. Emissor - Acréscimos acrescido pelo emissor. Lojista - Incluir acréscimos no total do pedido. |
     | Número total de parcelas | Coloque o número total de parcelas que será possível escolher por compra. |
-    | Número de parcelas sem juros | O número total de parcelas sem juros que será possível escolher por compra. |
+    | Número de parcelas sem acréscimos | O número total de parcelas sem acréscimos que será possível escolher por compra. |
     | Parcela mínima | Valor mínimo disponível para cada parcela de uma compra. |
     | Identificador de Integração | Coloque um código que será identificado no seu ERP. |
     | Ordem | Configure a ordem em que as bandeiras aparecerão no Checkout. |

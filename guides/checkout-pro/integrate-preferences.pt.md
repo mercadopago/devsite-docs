@@ -125,10 +125,10 @@ sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 
 Ao finalizar a criação da preferência, é preciso configurá-la de acordo com seu produto ou serviço. Para isso, utilize um dos códigos disponíveis abaixo preenchendo os atributos com as respectivas informações.
 
-----[mla, mlb, mlu, mpe, mlm]----
+----[mlb]----
 
 [[[
- ```php
+```php
 <?php
 $client = new PreferenceClient();
 $preference = $client->create([
@@ -136,28 +136,28 @@ $preference = $client->create([
     array(
       "title" => "Meu produto",
       "quantity" => 1,
-      "currency_id" => "BRL",
-      "unit_price" => 100
+      "unit_price" => 25
     )
   )
 ]);
 ?>
 ```
 ```node
-const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
-
 const preference = new Preference(client);
 
-preference.create({ body: {
-	items: [
-		{
-			id: '<ID>',
-			title: '<title>',
-			quantity: 1,
-			unit_price: 100
-		}
-	],
-} }).then(console.log).catch(console.log);
+preference.create({
+  body: {
+    items: [
+      {
+        title: 'Meu produto',
+        quantity: 1,
+        unit_price: 25
+      }
+    ],
+  }
+})
+.then(console.log)
+.catch(console.log);
 ```
 ```java
  PreferenceItemRequest itemRequest =
@@ -233,10 +233,10 @@ preference = preference_response["response"]
 ]]]
 
 ------------
-----[mlc, mco]----
+----[mla]----
 
 [[[
- ```php
+```php
 <?php
 $client = new PreferenceClient();
 $preference = $client->create([
@@ -244,28 +244,574 @@ $preference = $client->create([
     array(
       "title" => "Meu produto",
       "quantity" => 1,
-      "currency_id" => "BRL",
-      "unit_price" => 100
+      "unit_price" => 2000
     )
   )
 ]);
 ?>
 ```
 ```node
-const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
-
 const preference = new Preference(client);
 
-preference.create({ body: {
-	items: [
-		{
-			id: '<ID>',
-			title: '<title>',
-			quantity: 1,
-			unit_price: 100
-		}
-	],
-} }).then(console.log).catch(console.log);
+preference.create({
+  body: {
+    items: [
+      {
+        title: 'Meu produto',
+        quantity: 1,
+        unit_price: 2000
+      }
+    ],
+  }
+})
+.then(console.log)
+.catch(console.log);
+```
+```java
+ PreferenceItemRequest itemRequest =
+       PreferenceItemRequest.builder()
+           .id("1234")
+           .title("Games")
+           .description("PS5")
+           .pictureUrl("http://picture.com/PS5")
+           .categoryId("games")
+           .quantity(2)
+           .currencyId("BRL")
+           .unitPrice(new BigDecimal("4000"))
+           .build();
+   List<PreferenceItemRequest> items = new ArrayList<>();
+   items.add(itemRequest);
+PreferenceRequest preferenceRequest = PreferenceRequest.builder()
+.items(items).build();
+PreferenceClient client = new PreferenceClient();
+Preference preference = client.create(request);
+```
+```ruby
+# Cria um objeto de preferência
+preference_data = {
+  items: [
+    {
+      title: 'Meu produto',
+      unit_price: 75.56,
+      quantity: 1
+    }
+  ]
+}
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
+
+# Este valor substituirá a string "<%= @preference_id %>" no seu HTML
+@preference_id = preference['id']
+```
+```csharp
+// Cria o objeto de request da preferência
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Meu produto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75.56m,
+        },
+    },
+};
+
+// Cria a preferência usando o client
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+# Cria um item na preferência
+preference_data = {
+    "items": [
+        {
+            "title": "My Item",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ]
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
+]]]
+
+------------
+----[mlm]----
+
+[[[
+```php
+<?php
+$client = new PreferenceClient();
+$preference = $client->create([
+  "items"=> array(
+    array(
+      "title" => "Meu produto",
+      "quantity" => 1,
+      "unit_price" => 85
+    )
+  )
+]);
+?>
+```
+```node
+const preference = new Preference(client);
+
+preference.create({
+  body: {
+    items: [
+      {
+        title: 'Meu produto',
+        quantity: 1,
+        unit_price: 85
+      }
+    ],
+  }
+})
+.then(console.log)
+.catch(console.log);
+```
+```java
+ PreferenceItemRequest itemRequest =
+       PreferenceItemRequest.builder()
+           .id("1234")
+           .title("Games")
+           .description("PS5")
+           .pictureUrl("http://picture.com/PS5")
+           .categoryId("games")
+           .quantity(2)
+           .currencyId("BRL")
+           .unitPrice(new BigDecimal("4000"))
+           .build();
+   List<PreferenceItemRequest> items = new ArrayList<>();
+   items.add(itemRequest);
+PreferenceRequest preferenceRequest = PreferenceRequest.builder()
+.items(items).build();
+PreferenceClient client = new PreferenceClient();
+Preference preference = client.create(request);
+```
+```ruby
+# Cria um objeto de preferência
+preference_data = {
+  items: [
+    {
+      title: 'Meu produto',
+      unit_price: 75.56,
+      quantity: 1
+    }
+  ]
+}
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
+
+# Este valor substituirá a string "<%= @preference_id %>" no seu HTML
+@preference_id = preference['id']
+```
+```csharp
+// Cria o objeto de request da preferência
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Meu produto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75.56m,
+        },
+    },
+};
+
+// Cria a preferência usando o client
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+# Cria um item na preferência
+preference_data = {
+    "items": [
+        {
+            "title": "My Item",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ]
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
+]]]
+
+------------
+----[mlu]----
+
+[[[
+```php
+<?php
+$client = new PreferenceClient();
+$preference = $client->create([
+  "items"=> array(
+    array(
+      "title" => "Meu produto",
+      "quantity" => 1,
+      "unit_price" => 200
+    )
+  )
+]);
+?>
+```
+```node
+const preference = new Preference(client);
+
+preference.create({
+  body: {
+    items: [
+      {
+        title: 'Meu produto',
+        quantity: 1,
+        unit_price: 200
+      }
+    ],
+  }
+})
+.then(console.log)
+.catch(console.log);
+```
+```java
+ PreferenceItemRequest itemRequest =
+       PreferenceItemRequest.builder()
+           .id("1234")
+           .title("Games")
+           .description("PS5")
+           .pictureUrl("http://picture.com/PS5")
+           .categoryId("games")
+           .quantity(2)
+           .currencyId("BRL")
+           .unitPrice(new BigDecimal("4000"))
+           .build();
+   List<PreferenceItemRequest> items = new ArrayList<>();
+   items.add(itemRequest);
+PreferenceRequest preferenceRequest = PreferenceRequest.builder()
+.items(items).build();
+PreferenceClient client = new PreferenceClient();
+Preference preference = client.create(request);
+```
+```ruby
+# Cria um objeto de preferência
+preference_data = {
+  items: [
+    {
+      title: 'Meu produto',
+      unit_price: 75.56,
+      quantity: 1
+    }
+  ]
+}
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
+
+# Este valor substituirá a string "<%= @preference_id %>" no seu HTML
+@preference_id = preference['id']
+```
+```csharp
+// Cria o objeto de request da preferência
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Meu produto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75.56m,
+        },
+    },
+};
+
+// Cria a preferência usando o client
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+# Cria um item na preferência
+preference_data = {
+    "items": [
+        {
+            "title": "My Item",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ]
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
+]]]
+
+------------
+----[mpe]----
+
+[[[
+```php
+<?php
+$client = new PreferenceClient();
+$preference = $client->create([
+  "items"=> array(
+    array(
+      "title" => "Meu produto",
+      "quantity" => 1,
+      "unit_price" => 20
+    )
+  )
+]);
+?>
+```
+```node
+const preference = new Preference(client);
+
+preference.create({
+  body: {
+    items: [
+      {
+        title: 'Meu produto',
+        quantity: 1,
+        unit_price: 20
+      }
+    ],
+  }
+})
+.then(console.log)
+.catch(console.log);
+```
+```java
+ PreferenceItemRequest itemRequest =
+       PreferenceItemRequest.builder()
+           .id("1234")
+           .title("Games")
+           .description("PS5")
+           .pictureUrl("http://picture.com/PS5")
+           .categoryId("games")
+           .quantity(2)
+           .currencyId("BRL")
+           .unitPrice(new BigDecimal("4000"))
+           .build();
+   List<PreferenceItemRequest> items = new ArrayList<>();
+   items.add(itemRequest);
+PreferenceRequest preferenceRequest = PreferenceRequest.builder()
+.items(items).build();
+PreferenceClient client = new PreferenceClient();
+Preference preference = client.create(request);
+```
+```ruby
+# Cria um objeto de preferência
+preference_data = {
+  items: [
+    {
+      title: 'Meu produto',
+      unit_price: 75.56,
+      quantity: 1
+    }
+  ]
+}
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
+
+# Este valor substituirá a string "<%= @preference_id %>" no seu HTML
+@preference_id = preference['id']
+```
+```csharp
+// Cria o objeto de request da preferência
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Meu produto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75.56m,
+        },
+    },
+};
+
+// Cria a preferência usando o client
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+# Cria um item na preferência
+preference_data = {
+    "items": [
+        {
+            "title": "My Item",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ]
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
+]]]
+
+------------
+----[mco]----
+
+[[[
+```php
+<?php
+$client = new PreferenceClient();
+$preference = $client->create([
+  "items"=> array(
+    array(
+      "title" => "Meu produto",
+      "quantity" => 1,
+      "unit_price" => 20000
+    )
+  )
+]);
+?>
+```
+```node
+const preference = new Preference(client);
+
+preference.create({
+  body: {
+    items: [
+      {
+        title: 'Meu produto',
+        quantity: 1,
+        unit_price: 20000
+      }
+    ],
+  }
+})
+.then(console.log)
+.catch(console.log);
+```
+```java
+ PreferenceItemRequest itemRequest =
+       PreferenceItemRequest.builder()
+           .id("1234")
+           .title("Games")
+           .description("PS5")
+           .pictureUrl("http://picture.com/PS5")
+           .categoryId("games")
+           .quantity(2)
+           .currencyId("BRL")
+           .unitPrice(new BigDecimal("4000"))
+           .build();
+   List<PreferenceItemRequest> items = new ArrayList<>();
+   items.add(itemRequest);
+PreferenceRequest preferenceRequest = PreferenceRequest.builder()
+.items(items).build();
+PreferenceClient client = new PreferenceClient();
+Preference preference = client.create(request);
+```
+```ruby
+# Cria um objeto de preferência
+preference_data = {
+  items: [
+    {
+      title: 'Meu produto',
+      unit_price: 75,
+      quantity: 1
+    }
+  ]
+}
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
+
+# Este valor substituirá a string "<%= @preference_id %>" no seu HTML
+@preference_id = preference['id']
+```
+```csharp
+// Cria o objeto de request da preferência
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Meu produto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75m,
+        },
+    },
+};
+
+// Cria a preferência usando o client
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+# Cria um objeto de preferência
+preference_data = {
+    "items": [
+        {
+            "title": "My Item",
+            "quantity": 1,
+            "unit_price": 75
+        }
+    ]
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
+]]]
+
+> WARNING
+>
+> Importante
+>
+> O valor de `unit_price` deve ser um número inteiro.
+
+------------
+----[mlc]----
+
+[[[
+```php
+<?php
+$client = new PreferenceClient();
+$preference = $client->create([
+  "items"=> array(
+    array(
+      "title" => "Meu produto",
+      "quantity" => 1,
+      "unit_price" => 4500
+    )
+  )
+]);
+?>
+```
+```node
+const preference = new Preference(client);
+
+preference.create({
+  body: {
+    items: [
+      {
+        title: 'Meu produto',
+        quantity: 1,
+        unit_price: 4500
+      }
+    ],
+  }
+})
+.then(console.log)
+.catch(console.log);
 ```
 ```java
  PreferenceItemRequest itemRequest =
@@ -362,14 +908,20 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Checkout Pro para Web
  - card_description: Ofereça diferentes meios de pagamento aos clientes em um site de maneira simples, rápida e segura.
- - card_link:  /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
- - card_linkDescription: Integrar
+ - card_button:  /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
+ - card_buttonDescription: Integrar
  - card_pillText: DISPONÍVEL
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Loading
  - card_title: Checkout Pro para Mobile
  - card_description: Ofereça diferentes meios de pagamento aos clientes na sua aplicação móvel, utilizando a linguagem que melhor se adapte ao seu projeto.
- - card_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/mobile
- - card_linkDescription: Integrar
+ - card_button: /developers/pt/docs/checkout-pro/integrate-checkout-pro/mobile
+ - card_buttonDescription: Integrar
  - card_pillText: DISPONÍVEL
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
 ---

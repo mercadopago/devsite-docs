@@ -9,11 +9,11 @@
 
 Devido à [Resolução E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) da Secretaria de Comércio da Argentina, sobre a transparência de preços, é necessário cumprir certos requisitos ao criar o formulário de compra com cartão de crédito em seu site:
 
-1. Ao exibir o preço financiado, deve-se indicar o preço à vista, o preço total financiado, o número e o valor de cada uma das parcelas, a taxa de juros efetiva anual aplicada e o custo financeiro total.
+1. Ao exibir o preço financiado, deve-se indicar o preço à vista, o preço total financiado, o número e o valor de cada uma das parcelas, a taxa de acréscimos efetiva anual aplicada e o custo financeiro total.
 
-2. Caso comercialize produtos e/ou serviços na modalidade de venda financiada em parcelas, não será possível incluir a frase “sem juros” (ou qualquer outra similar) quando o custo do financiamento é transferido ao preço de venda ao consumidor.
+2. Caso comercialize produtos e/ou serviços na modalidade de venda financiada em parcelas, não será possível incluir a frase “sem acréscimos” (ou qualquer outra similar) quando o custo do financiamento é transferido ao preço de venda ao consumidor.
 
-3. A informação sobre o custo financeiro total (CFT) da transação deverá ser posicionada próxima das outras variáveis informadas no ponto anterior, destacada em negrito em fonte idêntica e tamanho pelo menos 5 (CINCO) vezes maior – preservando todas as proporções de espessura do traço, altura e largura – à utilizada para informar a taxa de juros efetiva anual (TEA) aplicada. Multiplicar a largura dos lados x 2,25 é o suficiente. Exemplo:
+3. A informação sobre o custo financeiro total (CFT) da transação deverá ser posicionada próxima das outras variáveis informadas no ponto anterior, destacada em negrito em fonte idêntica e tamanho pelo menos 5 (CINCO) vezes maior – preservando todas as proporções de espessura do traço, altura e largura – à utilizada para informar a taxa de acréscimos efetiva anual (TEA) aplicada. Multiplicar a largura dos lados x 2,25 é o suficiente. Exemplo:
 
 ![cft-tea](/images/resources/tea-cft.png)
 
@@ -66,7 +66,7 @@ O resultado obtido será uma lista de parcelas contendo tais informações dentr
 }
 ```
 
-Vale ressaltar que nos casos de 1 parcela ou parcelas relacionadas à [promoções](https://www.mercadopago.com.ar/promociones) sem juros, os valores de TEA e CFT serão iguais a 0. Embora o valor seja 0, caso o cliente selecione mais de uma parcela, você deverá indicar o valor no formulário de compras de qualquer forma.
+Vale ressaltar que nos casos de 1 parcela ou parcelas relacionadas à [promoções](https://www.mercadopago.com.ar/promociones) sem acréscimos, os valores de TEA e CFT serão iguais a 0. Embora o valor seja 0, caso o cliente selecione mais de uma parcela, você deverá indicar o valor no formulário de compras de qualquer forma.
 
 ### Exemplo de código
 

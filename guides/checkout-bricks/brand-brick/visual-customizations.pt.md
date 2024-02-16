@@ -24,7 +24,7 @@ Para que se adapte ao estilo da loja, o banner permite as seguintes customizaç�
 |`horizontalPadding` | Define o preenchimento horizontal do banner.|
 |`useCustomFont` |Controla se o banner usará uma fonte customizada ou a fonte padrão do Mercado Pago. |
 |`align` | Define o alinhamento do conteúdo textual no banner.|
-|`textSize` | Define o tamanho do texto no banner.|
+|`size` | Define o tamanho do texto no banner.|
 |`fontWeight` | Define o peso da fonte no banner.|
 
 Os valores possíveis e os padrões de cada customização estão definidos no snippet abaixo, que devem ser enviados como terceiro parâmetro no método `create()`.
@@ -38,7 +38,7 @@ const renderBrandBrick = async (bricksBuilder) => {
       visual: {
         hideMercadoPagoLogo: false, // optional boolean.
         contentAlign: "center", // optional "left" | "center" | "right".
-        backgroundColor: "white", // optional "white" | "MPPrimary" | "MPSecondary" | "black" | "transparent"
+        backgroundColor: "white", // optional "white" | "mercado_pago_primary" | "mercado_pago_secondary" | "black" | "transparent"
         border: false, // optional boolean
         borderColor: "dark", // optional "dark" | "light"
         borderWidth: "1px", // optional "1px" | "2px"
@@ -47,11 +47,11 @@ const renderBrandBrick = async (bricksBuilder) => {
         horizontalPadding: "16px", // optional  string format: "Npx". max "40px"
       },
       text: {
-         align: "left", // optional "left" | "center" | "right",
+        align: "left", // optional "left" | "center" | "right",
         useCustomFont: false, // optional boolean. OBS: If is true the Brick inheriths the font from the parent
-        textSize: "medium", // optional "extra_small" | "small" | "medium" | "large".
+        size: "medium", // optional "extra_small" | "small" | "medium" | "large".
         fontWeight: "semibold", // optional "regular" | "semibold".
-        textColor: "primary", // optional "primary" | "secondary" |"inverted".
+        color: "secondary", // optional "primary" | "secondary" |"inverted".
       },
     },
   };
@@ -72,12 +72,11 @@ const customization = {
       horizontalPadding: "16px" // optional  string format: "Npx". max "40px"
     },
     text: {
-         align: "left", // optional "left" | "center" | "right",
-   valueProp: "payment_methods", // optional "installments" | "payment_methods" | "security" | "payment_methods_icons"
-        useCustomFont: false, // optional boolean. OBS: If is true the Brick inheriths the font from the parent
-       textSize: "medium", // optional "extra-small" | "small" | "medium" | "large".
-         fontWeight: "semibold", // optional "regular" | "semibold".
-       textColor: "primary", // optional "primary" | "secondary" | "inverted".
+      align: "left", // optional "left" | "center" | "right",
+      useCustomFont: false, // optional boolean. OBS: If is true the Brick inheriths the font from the parent
+      size: "medium", // optional "extra-small" | "small" | "medium" | "large".
+      fontWeight: "semibold", // optional "regular" | "semibold".
+      color: "secondary", // optional "primary" | "secondary" | "inverted".
     },
   },
 };

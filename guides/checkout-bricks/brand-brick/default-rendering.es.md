@@ -4,13 +4,13 @@
 >
 > Importante
 >
-> Para realizar el renderizado de Status Screen Brick, primero realice los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. 
+> Para realizar el renderizado de Brand Brick, primero realice los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. 
 
 ## Configurar el Brick
 
 Creae la configuración de inicio de Brick
 
-```Javascript
+```javascript
 bricksBuilder.create(
     "brand",
     "brandBrick_container"
