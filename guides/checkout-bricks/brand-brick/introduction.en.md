@@ -18,6 +18,6 @@ Various [visual customizations](/developers/en/docs/checkout-bricks/brand-brick/
 
 <center>
 
-![brand-brick-layout](checkout-bricks/brand-brick-layout.gif)
+![brand-brick-layout](checkout-bricks/brand-brick-layout-en.gif)
 
 </center>
