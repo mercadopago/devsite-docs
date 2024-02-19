@@ -18,6 +18,12 @@ Para **exibir o Mercado Crédito no checkout da sua loja**, siga os passos abaix
 8. Insira as suas **credenciais de produção** (`public key` e `access token`) nos campos solicitados e clique em **Salvar**. Lembre-se de ter suas [credenciais](/developers/pt/docs/shopify/additional-content/your-integrations/credentials) à mão.
 9. Para finalizar a instalação, clique em **Ativar**.
 
+<center>
+
+![shopify-mercado-credito](/images/shopify/mercado-credito-es.gif)
+
+</center>
+
 > WARNING
 >
 > Atenção

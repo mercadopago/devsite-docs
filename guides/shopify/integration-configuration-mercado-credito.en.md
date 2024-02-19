@@ -18,6 +18,12 @@ If you want to **show Mercado Credits in your store's checkout**, follow the ste
 8. Put your **production credentials** (`public key` and `access token`) in the fields that request it and click **Save**. Remember to keep your [credentials](/developers/en/docs/shopify/additional-content/your-integrations/credentials) handy.
 9. To finish the installation, select **Activate**.
 
+<center>
+
+![shopify-mercado-credito](/images/shopify/mercado-credito-es.gif)
+
+</center>
+
 > WARNING
 >
 > Attention
