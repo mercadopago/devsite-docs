@@ -43,7 +43,7 @@ To create a **MercadoPagoV2 gateway affiliation**, follow the steps below:
 
 6. Click on **Save**, and you are done! Your MercadoPagoV2 gateway affiliation is set.
 
-![Configure MercadoPagoV2](/images/vtex/vtex-new-admin-gateway-es.gif) 
+![Configure MercadoPagoV2](/images/vtex/vtex-v2-new-admin-es.gif) 
 
 
 After filling out all the fields, click on **Save** and you're done! Your affiliation with MercadoPagoV2 is now activated. 

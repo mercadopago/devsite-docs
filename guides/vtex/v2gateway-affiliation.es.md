@@ -42,7 +42,7 @@ Para crear una **afiliación de gateway MercadoPagoV2**, sigue los pasos a conti
 
 
 
-![Configure MercadoPagoV2](/images/vtex/vtex-new-admin-gateway-es.gif) 
+![Configure MercadoPagoV2](/images/vtex/vtex-v2-new-admin-es.gif) 
 
 Una vez que hayas completado todos los campos, haz clic en **Guardar**, ¡y listo! Tu afiliación con MercadoPagoV2 ya está activa.
 

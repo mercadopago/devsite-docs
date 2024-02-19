@@ -40,7 +40,7 @@ Se você já possui uma afiliação com o gateway MercadoPagoV1, agora deverá c
 
 6. Depois de preencher todos os campos, clique em **Salvar** e pronto! Sua afiliação com o MercadoPagoV2 já está ativada.
 
-![Configure MercadoPagoV2](/images/vtex/vtex-new-admin-gateway-es.gif) 
+![Configure MercadoPagoV2](/images/vtex/vtex-v2-new-admin-pt.gif) 
 
 ## 2. Configurar meios de pagamento
 

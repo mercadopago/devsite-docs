@@ -39,7 +39,7 @@ If you already have a MercadoPagoV1 gateway affiliation, you will now need to cr
 
 6. Click on **Save**, and you are done! Your MercadoPagoV2 gateway affiliation is set.
 
-![Configure MercadoPagoV2](/images/vtex/vtex-new-admin-gateway-es.gif) 
+![Configure MercadoPagoV2](/images/vtex/vtex-v2-new-admin-es.gif) 
 
 ## 2. Configure Payment Methods
 
