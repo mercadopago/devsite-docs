@@ -4,8 +4,8 @@
     "/v1/account/release_report/config": {
       "post": {
         "tags": [
-          "",
-          ""
+          "mp-point",
+          "qr-code"
         ],
         "description": {
           "en": "Check the fields that you can configure to adjust your preferences before starting. Based on these settings, you will be able to generate reports later.",
