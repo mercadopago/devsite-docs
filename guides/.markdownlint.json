@@ -1,0 +1,19 @@
+ {
+  "config": {
+    "default": true,
+    "MD003": false,
+    "MD013": false,
+    "MD022": false,
+    "MD031": false,
+    "MD032": false,
+    "MD035": false
+  },
+
+  "customRules": [
+    "markdownlint-customrules/newTest5.js"
+  ],
+
+  "ignores": [
+    "(?m)\\[TXTSNIPPET\\]\\[\\/(?<path>.*)\\]$"
+  ]
+}
