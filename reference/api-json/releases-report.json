@@ -4,13 +4,13 @@
     "/v1/account/release_report/config": {
       "post": {
         "tags": [
-          "checkout-pro",
-          "mobile-checkout"
+          "",
+          ""
         ],
         "description": {
-          "en": "Create the release report manually as many times as you wish or schedule it according to the desired frequency through our API.",
-          "pt": "Crie o relatório de liberações manualmente quantas vezes desejar ou programe-o de acordo com a frequência desejada por meio de nossa API.",
-          "es": "Crea el reporte de Liberaciones manualmente tantas veces como desees o prográmalo según la frecuencia deseada a través de nuestra API."
+          "en": "Check the fields that you can configure to adjust your preferences before starting. Based on these settings, you will be able to generate reports later.",
+          "pt": "Confira os campos que você pode configurar para ajustar as suas preferências antes de começar. Com base nessas configurações, você conseguirá gerar os relatórios posteriormente.",
+          "es": "Revise los campos que puede configurar para ajustar sus preferencias antes de comenzar. Con base en estas configuraciones, podrá generar reportes posteriormente."
         },
         "parameters": [
           {
@@ -298,9 +298,9 @@
                     "include_withdrawal_at_end": {
                       "type": "boolean",
                       "description": {
-                        "es": "",
-                        "pt": "",
-                        "en": ""
+                        "es": "Indica si se deben incluir las transacciones de retiro que ocurran al final del intervalo de fechas especificado en el reporte.",
+                        "pt": "Indica se devem ser incluídas as transações de saque que ocorram no final do intervalo de datas especificado no relatório.",
+                        "en": "Indicate whether withdrawal transactions occurring at the end of the specified date range in the report should be included."
                       },
                       "example": true
                     },
@@ -316,9 +316,9 @@
                     "execute_after_withdrawal": {
                       "type": "boolean",
                       "description": {
-                        "es": "",
-                        "pt": "",
-                        "en": ""
+                        "es": "Este parámetro controla si el reporte se ejecutará después de que se realice un retiro.",
+                        "pt": "Este parâmetro controla se o relatório será executado após um saque ser realizado.",
+                        "en": "This parameter controls whether the report will run after a withdrawal is made."
                       },
                       "example": false
                     },
