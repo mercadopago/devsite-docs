@@ -37,15 +37,13 @@ Below, we will explain how to: specify the URLs that will be notified, configure
 | `delivery_cancellation` | `case_created`| Shipment cancellation request |
 | `topic_claims_integration_wh` | `updated`| Claims made by sales |
 
-5. Finally, click **Save** to generate a secret signature for the application. The signature is a validation method to ensure that received notifications were sent by Mercado Pago.
+5. Finally, click **Save** to generate a secret signature for the application. The signature is a validation method to ensure that the notifications received were sent by Mercado Pago, therefore, it is important to check the authenticity information to avoid fraud.
 
 > WARNING
 >
 > Important
 > 
-> Mercado Pago will always send this signature in Webhook notifications. Always verify this authenticity information to prevent fraud. </br></br>
-> </br></br>
-> The generated signature has no expiration date, and while not mandatory, we recommend periodically renewing the **secret signature**. To do this, simply click the reset button next to the signature.
+> The functionality of validating the secret signature through the `x-signature` header has been temporarily suspended due to technical instabilities. We are working on a new version of the solution to ensure effective validation of your notifications. 
 
 ## Setup while creating payments
 

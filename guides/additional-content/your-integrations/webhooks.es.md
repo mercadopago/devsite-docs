@@ -37,15 +37,13 @@ A continuación explicaremos cómo: indicar las URL que serán notificadas, conf
 | `delivery_cancellation` | `case_created`| Solicitud de cancelación de envío |
 | `topic_claims_integration_wh` | `updated`| Reclamos hechos por las ventas |
 
-5. Por último, haz clic en **Guardar** para generar una clave secreta para la aplicación. La clave es un método de validación para asegurar que las notificaciones recibidas fueron enviadas por Mercado Pago.
+5. Por último, haz clic en **Guardar** para generar una clave secreta para la aplicación. La clave es un método de validación para asegurar que las notificaciones recibidas fueron enviadas por Mercado Pago, por lo tanto, es importante verificar la información de autenticidad para evitar fraudes.
 
 > WARNING
 > 
 > Importante
 > 
-> Mercado Pago siempre enviará esta clave en las notificaciones Webhooks. Siempre verifica esta información de autenticidad para evitar fraudes. </br></br>
-> </br></br>
-> La clave generada no tiene fecha de caducidad y, aunque no es obligatorio, recomendamos renovar periódicamente la **clave secreta**. Para hacerlo, simplemente haz clic en el botón de restablecimiento junto a la clave.
+> La validación de la firma secreta a través del header `x-signature` fue temporalmente suspendida debido a inestabilidades técnicas. Estamos desarrollando una nueva versión de esta solución para asegurar una validación eficaz de tus notificaciones. 
 
 ### Simular la recepción de la notificación
 
