@@ -72,9 +72,9 @@
                         "required": true,
                         "type": "number",
                         "description": {
-                          "en": "",
-                          "pt": "",
-                          "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                          "en": "Indicate the daily, weekly, or monthly frequency of scheduled reports.",
+                          "pt": "Indique a frequência diária, semanal ou mensal dos relatórios programados.",
+                          "es": "Indique a frequência diária, semanal ou mensal dos relatórios programados."
                         },
                         "example": 0
                       },
@@ -82,9 +82,9 @@
                         "required": true,
                         "type": "number",
                         "description": {
-                          "en": "",
-                          "pt": "",
-                          "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                          "en": "Apply the type monthly to the day of the month or weekly to the day of the week.",
+                          "pt": "Aplique o tipo mensal ao dia do mês ou semanal ao dia da semana.",
+                          "es": "Aplica el type monthly al día del mes o weekly al día de la semana."
                         },
                         "example": 1
                       },
@@ -92,9 +92,9 @@
                         "required": true,
                         "type": "string",
                         "description": {
-                          "en": "",
-                          "pt": "",
-                          "es": "indica el tipo de frecuencia: daily (diaria), weekly (semanal) y monthly (mensual)"
+                          "en": "Indicate the type of frequency: daily, weekly, and monthly.",
+                          "pt": "Indique o tipo de frequência: daily (diária), weekly (semanal) e monthly (mensal).",
+                          "es": "Indica el tipo de frecuencia: daily (diaria), weekly (semanal) y monthly (mensual)."
                         },
                         "example": "monthly"
                       }
@@ -104,25 +104,25 @@
                     "type": "object",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
+                      "en": "Provide the necessary connection data so that we can access your server.",
+                      "pt": "Forneça os dados de conexão necessários para que possamos acessar seu servidor.",
                       "es": "Proporciona los datos de conexión necesarios para que podamos acceder a tu servidor."
                     },
                     "properties": {
                       "server": {
                         "type": "string",
                         "description": {
-                          "en": "",
-                          "pt": "",
-                          "es": "URL o dirección IP (Pública) del servidor"
+                          "en": "URL or IP address (public) of the server.",
+                          "pt": "URL ou endereço IP (público) do servidor.",
+                          "es": "URL o dirección IP (pública) del servidor."
                         },
                         "example": "sftp.myserver.com"
                       },
                       "password": {
                         "type": "string",
                         "description": {
-                          "en": "",
-                          "pt": "",
+                          "en": "User password with which we will establish the connection.",
+                          "pt": "Senha do usuário com o qual estabeleceremos a conexão.",
                           "es": "Contraseña del usuario con el cual estableceremos la conexión."
                         },
                         "example": "mypassword"
@@ -130,8 +130,8 @@
                       "remote_dir": {
                         "type": "string",
                         "description": {
-                          "en": "",
-                          "pt": "",
+                          "en": "Folder where we will deposit your reports.",
+                          "pt": "Pasta onde depositaremos seus relatórios.",
                           "es": "Carpeta en la que depositaremos tus reportes."
                         },
                         "example": "/myfolder"
@@ -139,17 +139,17 @@
                       "port": {
                         "type": "number",
                         "description": {
-                          "en": "",
-                          "pt": "",
-                          "es": "Puerto empleado para establecer la conexión"
+                          "en": "Port used to establish the connection.",
+                          "pt": "Porta usada para estabelecer a conexão.",
+                          "es": "Puerto empleado para establecer la conexión."
                         },
                         "example": 22
                       },
                       "username": {
                         "type": "string",
                         "description": {
-                          "en": "",
-                          "pt": "",
+                          "en": "User with whom we will authenticate on your server.",
+                          "pt": "Usuário com o qual faremos autenticação em seu servidor.",
                           "es": "Usuario con el cual nos autenticaremos en tu servidor."
                         },
                         "example": "username"
@@ -160,8 +160,8 @@
                     "type": "string",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
+                      "en": "Separator that you can use in the .csv file when you don't want the separator to be a comma.",
+                      "pt": "Separador que você pode usar no arquivo .csv quando não desejar que o separador seja uma vírgula.",
                       "es": "Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma."
                     },
                     "example": ";"
@@ -170,8 +170,8 @@
                     "type": "string",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
+                      "en": "This field determines the date and time displayed in the reports. If you do not configure this field with a time zone, the system will default to GMT-04. If you choose a time zone that observes daylight saving time, it is necessary to make manual adjustments when the time changes.",
+                      "pt": "Este campo determina a data e a hora que são exibidas nos relatórios. Se você não configurar este campo com um fuso horário, por padrão, o sistema usará o valor GMT-04. Se escolher um fuso horário que utiliza horário de verão, será necessário fazer ajustes manuais quando houver mudanças no horário.",
                       "es": "Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora."
                     },
                     "example": "GMT-04"
@@ -180,8 +180,8 @@
                     "type": "string",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
+                      "en": "Allows changing the default language of column headers. If enabled, it is recommended to verify that integrations with Excel files (.xlsx) that allow automatic reconciliation are working correctly. If the integration is not working well, make sure to update it using the new headers as a reference.\n\nSupported languages:\n\nen: English\nes: Neutral spanish\npt: Portuguese\n",
+                      "pt": "Permite alterar o idioma padrão dos cabeçalhos das colunas. Se ativado, é recomendável verificar se as integrações com arquivos do Excel (.xlsx) que permitem reconciliação automática estão funcionando corretamente. Se a integração não estiver funcionando bem, certifique-se de atualizá-la usando os novos cabeçalhos como referência.\n\nIdiomas suportador:\n\nen: Inglês\nes: Espanhol neutro\npt: Português\n",
                       "es": "Permite cambiar el idioma predeterminado de los encabezados de las columnas. En caso de habilitarlo, se recomienda verificar que funcionen correctamente las integraciones con archivos de Excel (.xlsx) que permiten conciliar de forma automática.\n\nSi la integración no funciona bien, asegúrate de actualizarla tomando como referencia los nuevos encabezados.\n\nIdiomas soportados:\n\nen: Inglés\nes: Español neutro\npt: Portugués\n"
                     },
                     "example": "es"
@@ -190,8 +190,8 @@
                     "type": "Array",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
+                      "en": "Allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
+                      "pt": "Permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
                       "es": "Permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
                     },
                     "example": "[\",example@email.com\",\",john@example.com\",]"
@@ -200,8 +200,8 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
+                      "en": "Display the refund's reference code (external_reference) instead of the payment's reference code (external_reference).",
+                      "pt": "Mostre o código de referência do reembolso (external_reference) em vez do código de referência do pagamento (external_reference).",
                       "es": "Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago."
                     },
                     "example": true
@@ -210,8 +210,8 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
+                      "en": "Include money withdrawals in the report.",
+                      "pt": "Inclua os saques de dinheiro no relatório.",
                       "es": "Incluye los retiros de dinero en el reporte."
                     },
                     "example": true
@@ -220,8 +220,8 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
+                      "en": "Add a column to display the details of the discount coupons.",
+                      "pt": "Adicione uma coluna para mostrar os detalhes dos cupons de desconto.",
                       "es": "Suma una columna para mostrar el detalle de los cupones de descuento."
                     },
                     "example": true
@@ -230,9 +230,9 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
-                      "es": "(read_only) Saldo antes y después de realizar un retiro de dinero que explica el balance de la cuenta. (Esta configuración es solo informativa. Debe excluirse para comprobaciones del balance y/o saldo de cuenta)"
+                      "en": "(read_only) Balance before and after making a withdrawal that explains the account balance. (This setting is for informational purposes only. It should be excluded for balance and/or account balance checks.)",
+                      "pt": "(read_only) Saldo antes e depois de realizar um saque que explica o saldo da conta. (Essa configuração é apenas informativa. Deve ser excluída para verificações de saldo e/ou saldo da conta.)",
+                      "es": "(read_only) Saldo antes y después de realizar un retiro de dinero que explica el balance de la cuenta. (Esta configuración es solo informativa. Debe excluirse para comprobaciones del balance y/o saldo de cuenta.)"
                     },
                     "example": true
                   },
@@ -240,8 +240,8 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
+                      "en": "Locks and unlocks of money that offset each other and do not affect the final balance. Helps understand how the final balance of the report is formed in a chronological reading (recommended if you have a high volume of transactions).",
+                      "pt": "Bloqueios e desbloqueios de dinheiro que se compensam entre si e não afetam o saldo final. Ajuda a entender como o saldo final do relatório é formado em uma leitura cronológica (recomendado se você tiver um volume alto de transações).",
                       "es": "Bloqueos y desbloqueos de dinero que se compensan entre sí y que no afectan el saldo final. Ayuda a entender cómo se conforma el balance final del reporte, en una lectura cronológica (recomendado si tienes un volumen alto de transacciones)."
                     },
                     "example": true
@@ -262,17 +262,17 @@
               "application/json": {
                 "schema": {
                   "description": {
-                    "en": "",
-                    "pt": "",
-                    "es": "El API responderá con una estructura JSON cuyas propiedades representarán la configuración que has creado"
+                    "en": "The API will respond with a JSON structure whose properties will represent the configuration you have created.",
+                    "pt": "A API responderá com uma estrutura JSON cujas propriedades representarão a configuração que você criou.",
+                    "es": "El API responderá con una estructura JSON cuyas propiedades representarán la configuración que has creado."
                   },
                   "type": "object",
                   "properties": {
                     "file_name_prefix": {
                       "type": "string",
                       "description": {
-                        "en": "",
-                        "pt": "",
+                        "en": "Prefix that makes up the name of the report once generated and ready for download.",
+                        "pt": "Prefixo que compõe o nome do relatório uma vez gerado e pronto para ser baixado.",
                         "es": "Prefijo que compone el nombre del reporte una vez generado y listo para descargar."
                       },
                       "example": "release-report-USER_ID"
@@ -281,17 +281,17 @@
                       "type": "Array",
                       "description": {
                         "es": "Grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar.",
-                        "pt": "",
-                        "en": ""
+                        "pt": "Grupo de destinatários de e-mail para receber uma notificação quando um relatório estiver pronto e disponível para download.",
+                        "en": "Email recipient group to receive a notification when a report is ready and available for download."
                       },
                       "example": "[\",example@email.com\",\",john@example.com\",]"
                     },
                     "display_timezone": {
                       "type": "string",
                       "description": {
-                        "es": "Determina la fecha y la hora que se visualiza en los reportes",
-                        "pt": "",
-                        "en": ""
+                        "es": "Determina la fecha y la hora que se visualiza en los reporte.",
+                        "pt": "Determine a data e a hora exibidas nos relatórios.",
+                        "en": "Determine the date and time displayed in the reports."
                       },
                       "example": "GMT-04"
                     },
@@ -307,9 +307,9 @@
                     "scheduled": {
                       "type": "boolean",
                       "description": {
-                        "es": "Indica si el reporte es programado",
-                        "pt": "",
-                        "en": ""
+                        "es": "Indica si el reporte es programado.",
+                        "pt": "Indique se o relatório está agendado.",
+                        "en": "Indicate if the report is scheduled."
                       },
                       "example": false
                     },
@@ -325,18 +325,18 @@
                     "columns": {
                       "type": "Array",
                       "description": {
-                        "es": "Las columna configuradas del reporte ",
-                        "pt": "",
-                        "en": ""
+                        "es": "Las columna configuradas del reporte.",
+                        "pt": "As colunas configuradas do relatório.",
+                        "en": "The configured columns of the report."
                       },
                       "example": [{"key": "DATE"},{"key": "SOURCE_ID"}, {"key": "EXTERNAL_REFERENCE"}]
                     },
                     "report_translation": {
                       "type": "string",
                       "description": {
-                        "es": "Idioma configurado del reporte",
-                        "pt": "",
-                        "en": ""
+                        "es": "Idioma configurado del reporte.",
+                        "pt": "Idioma configurado do relatório.",
+                        "en": "Configured language of the report."
                       },
                       "example": "es"
                     },
@@ -344,8 +344,8 @@
                       "type": "object",
                       "required": true,
                       "description": {
-                        "en": "",
-                        "pt": "",
+                        "en": "Indicate the daily, weekly, or monthly frequency of the scheduled report.",
+                        "pt": "Indique a frequência diária, semanal ou mensal do relatório programado.",
                         "es": "Indica la frecuencia diaria, semanal o mensual del reporte programado."
                       },
                       "properties": {
@@ -353,9 +353,9 @@
                           "required": true,
                           "type": "number",
                           "description": {
-                            "en": "",
-                            "pt": "",
-                            "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                            "en": "Apply type monthly to the day of the month or weekly to the day of the week.",
+                            "pt": "Aplique o type monthly ao dia do mês ou weekly ao dia da semana.",
+                            "es": "Aplica type monthly al día del mes o weekly al día de la semana."
                           },
                           "example": 0
                         },
@@ -363,9 +363,9 @@
                           "required": true,
                           "type": "number",
                           "description": {
-                            "en": "",
-                            "pt": "",
-                            "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                            "en": "Apply type monthly to the day of the month or weekly to the day of the week.",
+                            "pt": "Aplique o type monthly ao dia do mês ou weekly ao dia da semana.",
+                            "es": "Aplica type monthly al día del mes o weekly al día de la semana."
                           },
                           "example": 1
                         },
@@ -373,9 +373,9 @@
                           "required": true,
                           "type": "string",
                           "description": {
-                            "en": "",
-                            "pt": "",
-                            "es": "indica el tipo de frecuencia: daily (diaria), weekly (semanal) y monthly (mensual)"
+                            "en": "Indicate the type of frequency: daily, weekly, and monthly.",
+                            "pt": "Indique o tipo de frequência: daily (diária), weekly (semanal) e monthly (mensal).",
+                            "es": "Indica el tipo de frecuencia: daily (diaria), weekly (semanal) y monthly (mensual)."
                           },
                           "example": "monthly"
                         }
@@ -388,9 +388,9 @@
           },
           "400": {
             "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
             },
             "content": {
               "application/json": {
@@ -403,73 +403,73 @@
                         {
                           "title": "Invalid file_name_prefix",
                           "description": {
-                            "en": "",
-                            "es": "Invalid file name prefix",
-                            "pt": ""
+                            "en": "Invalid file name prefix.",
+                            "es": "Prefijo de nombre de archivo no válido.",
+                            "pt": "Prefixo de nome de arquivo inválido."
                           }
                         },
                         {
                           "title": "Invalid execute_after_withdrawal",
                           "description": {
-                            "en": "",
-                            "es": "invalid execute after withdrawal",
-                            "pt": ""
+                            "en": "Invalid execute after withdrawal.",
+                            "es": "Ejecución inválida después de la retirada.",
+                            "pt": "Execução inválida após a retirada."
                           }
                         },
                         {
                           "title": "Invalid columns",
                           "description": {
-                            "en": "",
-                            "es": "Invalid columns",
-                            "pt": ""
+                            "en": "Invalid columns.",
+                            "es": "Columnas inválidas.",
+                            "pt": "Colunas inválidas."
                           }
                         },
                         {
                           "title": "Invalid frequency",
                           "description": {
-                            "en": "",
-                            "es": "Invalid frequency",
-                            "pt": ""
+                            "en": "Invalid frequency.",
+                            "es": "Frecuencia no válida.",
+                            "pt": "Frequência inválida."
                           }
                         },
                         {
-                          "title": "Invalid sftp info",
+                          "title": "Invalid SFTP info",
                           "description": {
-                            "en": "",
-                            "es": "Invalid sftp info",
-                            "pt": ""
+                            "en": "Invalid SFTP info.",
+                            "es": "Información SFTP no válida.",
+                            "pt": "Informações SFTP inválidas."
                           }
                         },
                         {
-                          "title": "Invalid web hook",
+                          "title": "Invalid webhook",
                           "description": {
-                            "en": "",
-                            "es": "Invalid web hook",
-                            "pt": ""
+                            "en": "Invalid webhook.",
+                            "es": "Webhook no válido.",
+                            "pt": "Webhook inválido."
                           }
                         },
                         {
                           "title": "Invalid file config",
                           "description": {
-                            "en": "",
-                            "es": "Invalid file config",
-                            "pt": ""
+                            "en": "Invalid file config.",
+                            "es": "Archivo de configuración no válido.",
+                            "pt": "Arquivo de configuração inválido."
                           }
                         },
                         {
                           "title": "Invalid report_language",
                           "description": {
-                            "en": "",
-                            "es": "Invalid report language",
-                            "pt": ""
+                            "en": "Invalid report language.",
+                            "es": "Idioma del reporte no válido.",
+                            "pt": "Idioma de relatório inválido."
                           }
                         },
                         {
                           "title": "Invalid notification_email_list",
                           "description": {
-                            "en": "",
-                            "es": "Invalid notification email list",
-                            "pt": ""
+                            "en": "Invalid notification email list.",
+                            "es": "Lista de correo electrónico de notificaciones no válida.",
+                            "pt": "Lista de e-mails de notificação inválida."
                           }
                         }
                       ]
@@ -481,9 +481,9 @@
           },
           "409": {
             "description": {
-              "en": "",
-              "pt": "",
-              "es": "Conflict"
+              "en": "Conflict.",
+              "pt": "Conflito.",
+              "es": "Conflicto."
             },
             "content": {
               "application/json": {
@@ -496,9 +496,9 @@
                         {
                           "title": "Duplicated id",
                           "description": {
-                            "en": "",
-                            "es": "el registro ya existe",
-                            "pt": ""
+                            "en": "The record already exists.",
+                            "es": "El registro ya existe.",
+                            "pt": "O registro já existe."
                           }
                         }
                       ]
@@ -510,9 +510,9 @@
           },
           "401": {
             "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
             },
             "content": {
               "application/json": {
@@ -523,11 +523,11 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "invalid token",
+                          "title": "Invalid token",
                           "description": {
-                            "en": "",
-                            "es": "invalid token",
-                            "pt": ""
+                            "en": "Invalid token.",
+                            "es": "Token no válido.",
+                            "pt": "Token inválido."
                           }
                         }
                       ]
@@ -539,9 +539,9 @@
           }
         },
         "title": {
-          "en": "Create release report",
-          "pt": "Criar relatório de liberações",
-          "es": "Crear reporte a través de la API"
+          "en": "Create a new configuration",
+          "pt": "Criar uma nova configuração",
+          "es": "Crear una nueva configuración"
         }
       }
     }
