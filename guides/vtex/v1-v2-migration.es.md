@@ -11,10 +11,10 @@ Para realizar la migración de MercadoPagoV1 a MercadoPagoV2, sigue los siguient
 
 Si ya cuentas con una afiliación de gateway MercadoPagoV1, deberás crear ahora una **nueva afiliación MercadoPagoV2**. Es sencillo y similar al proceso que has hecho al configurar el conector anterior, por lo que deberás prestar particular atención al proceso y la descripción de los campos a continuación.
 
-1. Accede al panel de administración de tu plataforma **VTEX > Pagos > Configuración**.
-2. En la parte superior de la pantalla, dirígete a la pestaña **Afiliaciones de gateway**, y  haz clic en el botón **+** para crear una nueva afiliación.
+1. Accede al panel de administración de tu plataforma **VTEX > Pagos > Proveedores**.
+2. En la parte superior de la pantalla, haz clic en el botón **Nuevo Proveedor** para crear una nueva afiliación.
 3. Busca el conector **MercadoPagoV2** y selecciónalo. Esto te llevará a una nueva pantalla.
-4. En esta pantalla, elige cuál quieres que sea el **Nombre de la afiliación** dentro de la tienda. Además, asegúrate de tener activado el botón slider **Live/Producción**.
+4. En esta pantalla, elige cuál quieres que sea el **Nombre de la afiliación** dentro de la tienda. Además, asegúrate de tener desactivada la opción **Activar modo de prueba**.
 5. Luego, completa los campos siguiendo las indicaciones:
 
 | Campo | Descripción |

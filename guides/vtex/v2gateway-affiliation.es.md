@@ -14,10 +14,10 @@ Además, MercadoPagoV2 te ofrece la posibilidad de activar **3DS (3-D Secure)**,
 
 Para crear una **afiliación de gateway MercadoPagoV2**, sigue los pasos a continuación:
 
-1. En el panel de administración de tu plataforma VTEX, accede a **Pagos > Configuración**.
-2. En la parte superior de la pantalla, dirígete a la pestaña **Afiliaciones de gateway**, y  haz clic en el botón "+" para crear una nueva afiliación.
+1. En el panel de administración de tu plataforma VTEX, accede a **Pagos > Proveedores**.
+2. En la parte superior de la pantalla, haz clic en el botón **Nuevo proveedor** para crear una nueva afiliación.
 3. Busca por el conector **MercadoPagoV2** y selecciónalo. Esto te llevará a una nueva pantalla.
-4. En esta pantalla, elige cuál quieres que sea el **Nombre de la afiliación** dentro de la tienda. Además, asegúrate de tener activado el botón slider **Live/Producción**.
+4. En esta pantalla, elige cuál quieres que sea el **Nombre de la afiliación** dentro de la tienda. Además, asegúrate de tener desactivada la opción **Activar modo de prueba**.
 5. Luego, completa los campos correspondientes:
 | Campo | Descripción |
 |---|---|

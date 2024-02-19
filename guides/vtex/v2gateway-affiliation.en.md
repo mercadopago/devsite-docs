@@ -15,10 +15,10 @@ In addition, MercadoPagoV2 offers you the possibility to activate **3DS (3-D Sec
 
 To create a **MercadoPagoV2 gateway affiliation**, follow the steps below: 
 
-1. In your VTEX store admin panel, go to **Payments > Settings**. 
-2. At the top of the screen, go to the **"Gateway affiliations"** tab and click the "+" button to create a new affiliation. 
+1. In your VTEX store admin panel, go to **Payments > Suppliers**. 
+2. At the top of the screen, click the **New Supplier** button to create a new affiliation. 
 3. Look for the **MercadoPagoV2** connector and select it. This will take you to a new screen. 
-4. On said screen, choose the **Affiliation Name** within the store. Also, make sure you have enabled the **Live/Production** slider button. 
+4. On said screen, choose the **Affiliation Name** within the store. Also, make sure you have disabled the **"Activate test mode"** button.  
 5. Then, fill in the corresponding fields: 
 | Field | Description |
 |---|---|

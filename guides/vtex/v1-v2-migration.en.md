@@ -10,10 +10,10 @@ To perform the migration from MercadoPagoV1 to MercadoPagoV2, follow these steps
 
 If you already have a MercadoPagoV1 gateway affiliation, you will now need to create a **new MercadoPagoV2 affiliation**. The process is simple and similar to the process you followed when setting up the previous connector. Please pay close attention to the following process and field descriptions:
 
-1. In your VTEX store admin panel, go to **Payments > Settings**. 
-2. At the top of the screen, go to the **"Gateway affiliations"** tab and click the "+" button to create a new affiliation. 
+1. In your VTEX store admin panel, go to **Payments > Suppliers**. 
+2. At the top of the screen, click the **New Supplier** button to create a new affiliation. 
 3. Look for the **MercadoPagoV2** connector and select it. This will take you to a new screen. 
-4. On said screen, choose the **Affiliation Name** within the store. Also, make sure you have enabled the **"Live/Production"** slider button. 
+4. On said screen, choose the **Affiliation Name** within the store. Also, make sure you have disabled the **"Activate test mode"** button. 
 5. Then, fill in the corresponding fields: 
 
 | Field | Description |
