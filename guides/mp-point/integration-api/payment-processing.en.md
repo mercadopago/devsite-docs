@@ -162,7 +162,7 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 
 | Field | Description |
 |---|---|
-| `amount` | Total amount of the payment intent. <br>**Minimum amount allowed**: 1500 (POS and SMART devices). <br>**Maximum amount allowed**: 530000000 (both devices). <br>**Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
+| `amount` | Total amount of the payment intent. <br>**Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
 | `external_reference` | Field exclusively used by the integrator to include references to their system. |
 | `print_on_terminal` | Field that determines if the device prints the payment receipt. |
 | `ticket_number` | Ticket number of the payment intent. |
@@ -206,7 +206,7 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 
 | Field | Description |
 |---|---|
-| `amount` | Total amount of the payment intent. <br>**Minimum amount allowed**: 100 (POS and SMART devices). <br>**Maximum amount allowed**: 7000000 (both devices). <br>**Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
+| `amount` | Total amount of the payment intent. <br>**Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
 | `description` | Description of payment intent. |
 | `payment.type` | Payment method type.  |
 | `payment.installments` | Number of installments in which the payment is processed. The minimum value of each installment must be 5.00 (500). <br>In the case of Smart devices, if the value is less than the minimum accepted, the payment will be processed at once, without considering the established fees. |
@@ -254,7 +254,7 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 
 | Field | Description |
 |---|---|
-| `amount` | Total amount of the payment intent. <br>**Minimum amount allowed**: 500 (SMART devices). <br>**Maximum amount allowed**: 35000000. <br>**Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
+| `amount` | Total amount of the payment intent. <br>**Important**: this field does not allow decimal points. Therefore, if you want to generate a payment intent, you must consider the two decimals of the value in its total. For example: to generate payment order value "15.00" you must enter "1500". |
 | `external_reference` | Field exclusively used by the integrator to include references to their system. |
 | `print_on_terminal` | Field that determines if the device prints the payment receipt. |
 
