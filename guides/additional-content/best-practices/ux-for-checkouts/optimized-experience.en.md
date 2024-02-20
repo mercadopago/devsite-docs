@@ -111,7 +111,6 @@ For example, you can use the personal and shipping information to get the billin
 
 ![en Saltea pasos innecesarios](/images/best-practices-guide/EngAspectosGeneralesSalteaPasosInnecesarios.png)
 
-
 ## Give visibility during the process 
 
 Add a fixed **summary component** or a direct access to the shopping cart that shows the total price to pay according to the actions that the user is performing.
@@ -119,7 +118,6 @@ Add a fixed **summary component** or a direct access to the shopping cart that s
 Although most users review their purchase at the end, they feel more secure if they can control what they are doing throughout the process.
 
 ![en da visibilidad del proceso](/images/best-practices-guide/EngAspectosGeneralesVisibilidadDelProceso_V2.gif)
-
 
 Also, before finalizing the purchase, allow your users to **review** the entire process and the final price. For this, add a confirmation or review page, prior to making the payment, that includes a summary of all the decisions made, all the information uploaded and the detail of the total to pay. It is important to give the possibility to edit any of the data from there, without the need to go back to the previous steps.
 

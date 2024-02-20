@@ -21,15 +21,15 @@ Para configurar el Checkout Pro en una tienda Shopify, sigue los pasos a continu
 
 ------------
 ----[mla, mlm, mpe, mlu, mlc, mco]----
-Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing) ("**Checkout Mercado Pago**"), puede haber un **aumento en la tasa de aprobación de las ventas en la tienda en línea**. Esto sucede porque los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago. Al final de la transacción, estos compradores son redirigidos al entorno de la tienda.
+Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing) (**Checkout Mercado Pago**), puede haber un **aumento en la tasa de aprobación de las ventas en la tienda en línea**. Esto sucede porque los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago. Al final de la transacción, estos compradores son redirigidos al entorno de la tienda.
 
 > WARNING
 >
 > Atención
 >
-> Si estabas usando la app antigua de Mercado Pago ("**Mercado Pago**") y dejaste de recibir pagos en tu tienda, no te preocupes. Para volver a vender instala nuestra nueva app ("**Checkout Mercado Pago**") siguiendo los pasos a continuación.
+> Si estabas usando la app antigua de Mercado Pago (**Mercado Pago**) y dejaste de recibir pagos en tu tienda, no te preocupes. Para volver a vender instala nuestra nueva app (**Checkout Mercado Pago**) siguiendo los pasos a continuación.
 
-Para instalar Checkout Pro ("**Checkout Mercado Pago**") en una tienda Shopify, sigue los siguientes pasos:
+Para instalar Checkout Pro (**Checkout Mercado Pago**) en una tienda Shopify, sigue los siguientes pasos:
 
 1. Ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
 2. Dentro del panel administrativo de la tienda, haz clic en **Configuración**.
@@ -46,11 +46,11 @@ Para instalar Checkout Pro ("**Checkout Mercado Pago**") en una tienda Shopify, 
 
 7. Selecciona **Instalar aplicación** y luego **Gestionar**.
 8. Coloca tus **credenciales de producción** (`public key` y `access token`) en los campos que lo solicitan y haz clic en **Guardar**. Recuerda tener a mano tus [credenciales](/developers/es/docs/shopify/additional-content/your-integrations/credentials).
-9. Para terminar la instalación, selecciona **Activar Checkout Mercado Pago**.
+9. Para completar la instalación, selecciona **Activar Checkout Mercado Pago**.
 
-> En este paso, podrás seleccionar las imágenes de los medios de pago que quieras mostrar en tu tienda a modo ilustrativo. También, en caso que lo desees, podrás habilitar el [modo de prueba.](/developers/es/docs/shopify/sales-processing/integration-test)
+> En este paso, podrás seleccionar las imágenes de los medios de pago que quieras mostrar en tu tienda a modo ilustrativo. También, en caso que lo desees, podrás habilitar el [modo de prueba](/developers/es/docs/shopify/sales-processing/integration-test) para probar el flujo de su integración.
 > <br/><br/>
-> En caso de renovar tus credenciales, recuerda reemplazar tanto las de producción como las de prueba en tu integración.
+> En caso de renovar sus credenciales, recuerde reemplazarlas en su integración.
 
 <center>
 
@@ -59,3 +59,5 @@ Para instalar Checkout Pro ("**Checkout Mercado Pago**") en una tienda Shopify, 
 </center>
 
 ------------
+
+¡Listo! El Checkout Pro de Mercado Pago está preparado para recibir los pagos de tu tienda.
