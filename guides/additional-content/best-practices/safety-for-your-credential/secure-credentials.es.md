@@ -32,7 +32,7 @@ Te recomendamos renovar tus credenciales de forma frecuente para evitar posibles
 
 Renueva tus credenciales de forma simple siguiendo estos pasos:
 
-1. Ve al [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app). 
+1. Ve al [Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app). 
 2. Accede a la aplicación cuyas credenciales quieres renovar.
 3. Selecciona Credenciales de Producción.
 4. Una vez allí, podrás renovar el Access Token y el Client Secret. Haz clic en **Más opciones > Renovar**.
@@ -47,7 +47,7 @@ Renueva tus credenciales de forma simple siguiendo estos pasos:
 Si necesitas compartir las credenciales de tu aplicación con otras cuentas de Mercado Pago, hazlo de manera segura a través de Tus Aplicaciones. 
 Cuando compartes tus credenciales permites que otra cuenta de Mercado Pago las vea y pueda usarlas. Para hacerlo, sigue estos pasos:
 
-1. Ve al [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
+1. Ve al [Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 2. Accede a la aplicación cuyas credenciales deseas compartir.
 3. Haz clic en **Compartir mis credenciales**.
 4. Ingresa los e-mail de las cuentas de Mercado Pago con quien deseas compartir tus credenciales. Se compartirán tanto las de prueba como las de producción. 
@@ -61,11 +61,3 @@ Puedes quitar estos permisos cuando quieras desde el panel de Credenciales.
 OAuth es un protocolo de autorización que permite que las aplicaciones tengan acceso limitado a la información privada de las cuentas de Mercado Pago, a través del protocolo HTTP que introduce una capa de autenticación y autorización en la que solicitas acceso a los recursos protegidos de los vendedores, a través de un token de acceso limitado a una aplicación en particular, sin necesidad de las credenciales de los vendedores a través de los flujos de acceso. 
 
 Para conocer más sobre OAuth, ve a [esta documentación](/developers/es/guides/additional-content/security/oauth/introduction).
-
-> PREV_STEP_CARD_ES
->
-> Prácticas de seguridad para tus credenciales
->
-> Vea cuáles son las mejores prácticas que puedes llevar a cabo para que tus integraciones sean seguras.
->
-> [Prácticas de seguridad para tus credenciales](/developers/es/guides/additional-content/best-practices/safety-for-your-credential/introduction)
