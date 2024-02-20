@@ -17,6 +17,6 @@ Se permiten diversas [personalizaciones visuales](/developers/es/docs/checkout-b
 
 <center>
 
-![brand-brick-layout](checkout-bricks/brand-brick-layout-es.gif)
+![brand-brick-layout](checkout-bricks/brand-brick-layout.gif)
 
 </center>
