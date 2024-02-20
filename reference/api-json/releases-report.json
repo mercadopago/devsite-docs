@@ -256,9 +256,9 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "(read_only) Balance before and after making a withdrawal that explains the account balance. (This setting is for informational purposes only. It should be excluded for balance and/or account balance checks.)",
-                      "pt": "(read_only) Saldo antes e depois de realizar um saque que explica o saldo da conta. (Essa configuração é apenas informativa. Deve ser excluída para verificações de saldo e/ou saldo da conta.)",
-                      "es": "(read_only) Saldo antes y después de realizar un retiro de dinero que explica el balance de la cuenta. (Esta configuración es solo informativa. Debe excluirse para comprobaciones del balance y/o saldo de cuenta.)"
+                      "en": "Balance before and after making a withdrawal that explains the account balance. (This setting is for informational purposes only. It should be excluded for balance and/or account balance checks.)",
+                      "pt": "Saldo antes e depois de realizar um saque que explica o saldo da conta. (Essa configuração é apenas informativa. Deve ser excluída para verificações de saldo e/ou saldo da conta.)",
+                      "es": "Saldo antes y después de realizar un retiro de dinero que explica el balance de la cuenta. (Esta configuración es solo informativa. Debe excluirse para comprobaciones del balance y/o saldo de cuenta.)"
                     },
                     "example": true
                   },
