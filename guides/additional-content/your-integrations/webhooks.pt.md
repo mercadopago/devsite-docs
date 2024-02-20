@@ -37,15 +37,13 @@ Abaixo explicaremos como: indicar as URLs que serão notificadas, configurar os 
 | `delivery_cancellation` | `case_created`| Solicitação de cancelamento do envio |
 | `topic_claims_integration_wh` | `updated`| Reclamações feitas pelas vendas |
 
-5. Por fim, clique em **Salvar** para gerar uma **assinatura secreta** para a aplicação. A assinatura é um método de validação para garantir que notificações recebidas foram enviadas pelo Mercado Pago. 
+5. Por fim, clique em **Salvar** para gerar uma **assinatura secreta** para a aplicação. A assinatura é um método de validação para garantir que as notificações recebidas foram enviadas pelo Mercado Pago, por isso, é importante conferir as informações de autenticidade para evitar fraudes.
 
 > WARNING
 >
 > Importante
 >
-> O Mercado Pago sempre enviará essa assinatura nas notificações Webhooks. Sempre confira essa informação de autenticidade para evitar fraudes. </br></br>
-> </br></br>
-> A assinatura gerada não tem prazo de validade e, embora não seja obrigatório, recomendamos renovar periodicamente a **assinatura secreta**. Para isso, basta clicar no botão de redefinição ao lado da assinatura.
+> A validação da assinatura secreta através do header `x-signature` foi temporariamente suspensa devido a instabilidades técnicas. Estamos desenvolvendo uma nova versão da solução para assegurar a validação eficaz de suas notificações. 
 
 ### Simular o recebimento da notificação
 
