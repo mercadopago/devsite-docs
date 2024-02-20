@@ -8,9 +8,9 @@
           "qr-code"
         ],
         "description": {
-          "en": "",
-          "pt": "",
-          "es": "Crea el reporte de Liberaciones manualmente tantas veces como desees o prográmalo según la frecuencia deseada a través de nuestra API."
+          "en": "Check the fields that you can configure to adjust your preferences before starting. Based on these settings, you will be able to generate reports later.",
+          "pt": "Confira os campos que você pode configurar para ajustar as suas preferências antes de começar. Com base nessas configurações, você conseguirá gerar os relatórios posteriormente.",
+          "es": "Revise los campos que puede configurar para ajustar sus preferencias antes de comenzar. Con base en estas configuraciones, podrá generar reportes posteriormente."
         },
         "parameters": [
           {
@@ -290,9 +290,9 @@
         "responses": {
           "201": {
             "description": {
-              "en": "created",
-              "pt": "created",
-              "es": "created"
+              "en": "Created.",
+              "pt": "Created.",
+              "es": "Created."
             },
             "content": {
               "application/json": {
