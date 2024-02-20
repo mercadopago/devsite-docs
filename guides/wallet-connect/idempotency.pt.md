@@ -1,18 +1,18 @@
 # Idempotência 
 
-Problemas de conexão ou quedas de serviço podem interromper a comunicação no momento de enviar ou receber os dados para criar um Advanced Payment.
+Problemas de conexão ou quedas de serviço podem interromper a comunicação no momento de enviar ou receber os dados para criar um pagamento.
 
-Para garantir a criação correta de um Advanced Payment, você pode realizar uma nova tentativa de envio dos dados, contudo, é possível que o mesmo já tenha sido criado e devido à interrupção não tenha recebido a resposta correta. Portanto, essas novas tentativas criarão um novo Advanced Payment.
+Para garantir a criação correta de um pagamento, você pode realizar uma nova tentativa de envio dos dados, contudo, é possível que o mesmo já tenha sido criado e devido à interrupção não tenha recebido a resposta correta. Portanto, essas novas tentativas criarão um novo pagamento.
 
-Para evitar duplicidade, é obrigatório o envio de uma chave única no Header X-Idempotency-Key que identifique a criação de um único Advanced Payment. Desta forma, quando uma nova tentativa for feita, a mesma chave pode ser enviada para indicar que é o mesmo processo.
+Para evitar duplicidade, é obrigatório o envio de uma chave única no _header_ `X-Idempotency-Key` que identifique a criação de um único pagamento. Desta forma, quando uma nova tentativa for feita, a mesma chave pode ser enviada para indicar que é o mesmo processo.
 
 > NOTE
 >
 > Importante
 >
-> Se o Advanced Payment já foi criado, suas informações são retornadas sem a criação de um novo pagamento.
+> Se o pagamento já foi criado, suas informações são retornadas sem a criação de um novo pagamento.
 
-Veja abaixo o diagrama que ilustra o funcionamento da `Idempotency Key` no processo de criação de um Advanced Payment.
+Veja abaixo o diagrama que ilustra o funcionamento da `Idempotency Key` no processo de criação de um pagamento.
 
 ![idempotency-flow](/images/wallet-connect/idempotency.pt.png)
 

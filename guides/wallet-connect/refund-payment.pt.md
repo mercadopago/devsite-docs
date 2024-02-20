@@ -8,8 +8,8 @@ Com Wallet Connect, também é possível reembolsar um Advanced Payment. Esta op
 >
 > Importante
 >
-> O reembolso não acontece imediatamente. A chamada para este endpoint aciona um processo assíncrono que reembolsa o pagamento, e sua alteração será notificada via webhook.
+> O reembolso não acontece imediatamente. A chamada para este endpoint aciona um processo assíncrono que reembolsa o pagamento, e sua alteração será notificada via [Webhooks](/developers/pt/docs/wallet-connect/additional-content/your-integrations/notifications/webhooks).
 
-O diagrama abaixo ilustra o fluxo de reembolso de um Advanced Payment.
+O diagrama abaixo ilustra o fluxo de reembolso de um pagamento.
 
 ![refund-a-payment](/images/wallet-connect/refund-a-payment.pt.png)

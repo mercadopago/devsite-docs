@@ -1,4 +1,4 @@
-# Create Discount Promise Without Pre-Added Coupon
+# Create discount promise without pre-added coupon
 
 The **discount promise without a pre-added coupon** is a method in which the discount is applied to a transaction without the need for a coupon already linked to the user's account or transaction.
 
@@ -13,7 +13,6 @@ To **create a discount promise without a pre-added coupon**, use the _curl_ belo
 | Authorization  | User's authorization token (Access token). This information can be obtained through the menu [your integrations](/developers/pt/docs/wallet-connect/additional-content/your-integrations/credentials).  | APP_USR-123456-test-access-t0ken  |
 | x-payer-token  | This is a specific token of the payer, replace <PAYER_TOKEN> with the corresponding token. This information is obtained at the end of the [account linking flow](/developers/pt/docs/wallet-connect/account-linking-flow/create-agreement)  | payer1-token2-test3-example4  |
 | amount  | Total value of the transaction.  | 550.50  |
-
 
 [[[
 ```curl

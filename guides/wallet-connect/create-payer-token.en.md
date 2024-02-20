@@ -1,6 +1,6 @@
 # Create payer token
 
-After the _agreement_ creation and the buyer's approval, you must create the _payer token_. The _payer token_ is responsible for storing the buyer's data and ensuring the security of the transaction, it is also a mandatory attribute for creating transactions throughout the validity period of the `agreement` previously created.
+After the agreement creation and the buyer's approval, you must create the payer token. The _payer token_ is responsible for storing the buyer's data and ensuring the security of the transaction, it is also a mandatory attribute for creating transactions throughout the validity period of the `agreement` previously created.
 
 Check out the diagram below that illustrates how the payer token creation flow works.
 
@@ -32,5 +32,4 @@ curl -X POST \
 ```
 ]]]
 
-With the payer token created, the account integration flow with Wallet Connect will have been successfully completed. Go to the [Advanced Payments](/developers/en/docs/wallet-connect/advanced-payments) section to perform the payment flow.
-
+With the payer token created, the account integration flow with Wallet Connect will have been successfully completed. Go to the [Payments](/developers/en/docs/wallet-connect/advanced-payments) section to perform the payment flow.

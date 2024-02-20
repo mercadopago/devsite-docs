@@ -8,8 +8,8 @@ With Wallet Connect, it is also possible to refund an Advanced Payment. This ope
 >
 > Important
 >
-> The refund does not happen immediately. Calling this endpoint triggers an asynchronous process that refunds the payment, and your change will be notified via webhook.
+> The refund does not happen immediately. Calling this endpoint triggers an asynchronous process that refunds the payment, and your change will be notified via [Webhooks](/developers/en/docs/wallet-connect/additional-content/your-integrations/notifications/webhooks).
 
-The diagram below illustrates the refund flow for an Advanced Payment.
+The diagram below illustrates the refund flow for an payment.
 
 ![refund-a-payment](/images/wallet-connect/refund-a-payment.en.png)

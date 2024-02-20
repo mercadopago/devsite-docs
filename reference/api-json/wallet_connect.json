@@ -7,18 +7,18 @@
           "wallet-connect"
         ],
         "description": {
-          "en": "An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment",
-          "pt": "Um Agreement é um link de autorização recebido pelo comprador para permitir ao vendedor acessar a sua carteira do Mercado Pago, a fim de debitar o pagamento",
-          "es": "Un Agreement es un link de autorización recibido por el comprador para permitir al vendedor acceder a su billetera de Mercado Pago con el fin de debitar el pago"
+          "en": "An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment.",
+          "pt": "Uma vinculação é um link de autorização recebido pelo comprador para permitir ao vendedor acessar a sua carteira do Mercado Pago, a fim de debitar o pagamento.",
+          "es": "Una vinculación es un link de autorización recibido por el comprador para permitir al vendedor acceder a su billetera de Mercado Pago con el fin de debitar el pago."
         },
         "parameters": [
           {
             "name": "client.id",
             "in": "query",
             "description": {
-              "en": "Unique ID that identifies a specific Client",
-              "pt": "ID único que identifica um cliente específico",
-              "es": "ID único que identifica un cliente específico"
+              "en": "Unique ID that identifies a specific client.",
+              "pt": "ID único que identifica um cliente específico.",
+              "es": "ID único que identifica un cliente específico."
             },
             "schema": {
               "type": "number",
@@ -29,9 +29,9 @@
             "name": "x-platform-id",
             "in": "header",
             "description": {
-              "en": "Field intended for platforms or modules that offer Mercado Pago in their solutions",
-              "pt": "Campo destinado para as plataformas ou módulos que oferecem Mercado Pago em suas soluções",
-              "es": "Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones"
+              "en": "Field intended for platforms or modules that offer Mercado Pago in their solutions.",
+              "pt": "Campo destinado para as plataformas ou módulos que oferecem Mercado Pago em suas soluções.",
+              "es": "Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
             },
             "schema": {
               "type": "string",
@@ -41,9 +41,9 @@
         ],
         "requestBody": {
           "description": {
-            "en": "Here are the fields needed to complete a request for create an Agreement",
-            "pt": "Estes são os campos necessários para completar o pedido de criação de um Agreement",
-            "es": "Estos son los campos necesarios para completar la orden de creación de un Agreement"
+            "en": "Here are the fields needed to complete a request for create an agreement",
+            "pt": "Estes são os campos necessários para completar o pedido de criação de uma vinculación.",
+            "es": "Estos son los campos necesarios para completar la orden de creación de una vinculação."
           },
           "content": {
             "application/json": {
@@ -53,25 +53,25 @@
                   "return_url": {
                     "type": "string",
                     "description": {
-                      "en": "URL that redirects the user back to the sellers site",
+                      "en": "URL that redirects the user back to the sellers site.",
                       "pt": "O URL que redireciona o usuário de volta ao site do vendedor.",
-                      "es": "Es el URL que redirige al usuario de regreso al sitio del vendedor"
+                      "es": "Es el URL que redirige al usuario de regreso al sitio del vendedor."
                     },
                     "example": "https://www.mercadopago.com/"
                   },
                   "external_flow_id": {
                     "type": "string",
                     "description": {
-                      "en": "Identifies the Seller side flow current state",
-                      "pt": "Identifica o estado do fluxo pelo lado do vendedor",
-                      "es": "Identifica el estado del flujo por el lado del vendedor"
+                      "en": "Identifies the Seller side flow current state.",
+                      "pt": "Identifica o estado do fluxo pelo lado do vendedor.",
+                      "es": "Identifica el estado del flujo por el lado del vendedor."
                     },
                     "example": "EXTERNAL_FLOW_ID"
                   },
                   "external_user": {
                     "type": "object",
                     "description": {
-                      "en": "The external_user contains the data that the Seller will need to use to indentify a User, so then it can continue with their own flow.",
+                      "en": "The external_user contains the data that the seller will need to use to indentify a User, so then it can continue with their own flow.",
                       "pt": "O external_user contém os dados que o vendedor precisará para identificar um usuário, de modo que este possa prosseguir com o seu próprio fluxo.",
                       "es": "El external_user contiene los datos que el vendedor necesitará para identificar un usuario a fin de que este pueda continuar con su propio flujo."
                     },
@@ -80,9 +80,9 @@
                         "required": true,
                         "type": "string",
                         "description": {
-                          "en": "Unique ID that is going to be used by the Seller to identify the external_user",
-                          "pt": "ID único que será usado pelo vendedor para identificar o external_user",
-                          "es": "ID único que será utilizado por el vendedor para identificar el external_user"
+                          "en": "Unique ID that is going to be used by the seller to identify the external_user.",
+                          "pt": "ID único que será usado pelo vendedor para identificar o external_user.",
+                          "es": "ID único que será utilizado por el vendedor para identificar el external_user."
                         },
                         "example": "usertest"
                       },
@@ -90,9 +90,9 @@
                         "required": true,
                         "type": "string",
                         "description": {
-                          "en": "A brief description with information of the user. It can contains for example the name of the user",
-                          "pt": "Breve descrição com informações do usuário. Por exemplo, essa pode conter o nome do usuário",
-                          "es": "Breve descripción con información del usuario. Por ejemplo, esta puede contener el nombre del usuario"
+                          "en": "A brief description with information of the user. It can contains for example the name of the user.",
+                          "pt": "Breve descrição com informações do usuário. Por exemplo, essa pode conter o nome do usuário.",
+                          "es": "Breve descripción con información del usuario. Por ejemplo, esta puede contener el nombre del usuario."
                         },
                         "example": "Test account"
                       }
@@ -101,18 +101,18 @@
                   "agreement_data": {
                     "type": "object",
                     "description": {
-                      "en": "Contains information about actions the user must do and the amount to be paid",
-                      "pt": "Contém informação sobre as ações que o usuário deve fazer e o valor a ser pago",
-                      "es": "Contiene información sobre las acciones que el usuario debe realizar y el monto a pagar"
+                      "en": "Contains information about actions the user must do and the amount to be paid.",
+                      "pt": "Contém informação sobre as ações que o usuário deve fazer e o valor a ser pago.",
+                      "es": "Contiene información sobre las acciones que el usuario debe realizar y el monto a pagar."
                     },
                     "properties": {
                       "validation_amount": {
                         "required": false,
                         "type": "number",
                         "description": {
-                          "en": "Amount that the user is going to pay",
-                          "pt": "Valor que o usuário pagará",
-                          "es": "Monto que el usuario pagará"
+                          "en": "Amount that the user is going to pay.",
+                          "pt": "Valor que o usuário pagará.",
+                          "es": "Monto que el usuario pagará."
                         },
                         "example": 3.14
                       },
@@ -120,9 +120,9 @@
                         "type": "string",
                         "required": false,
                         "description": {
-                          "en": "Description of the actions that the user is trying to perform",
-                          "pt": "Descrição das ações que o usuário tenta realizar",
-                          "es": "Descripción de las acciones que el usuario intenta realizar"
+                          "en": "Description of the actions that the user is trying to perform.",
+                          "pt": "Descrição das ações que o usuário tenta realizar.",
+                          "es": "Descripción de las acciones que el usuario intenta realizar."
                         },
                         "example": "Test agreement"
                       }
@@ -137,34 +137,34 @@
           "200": {
             "description": {
               "en": "Agreement created",
-              "pt": "Agreement criado",
-              "es": "Agreement creado"
+              "pt": "Vinculação criada",
+              "es": "Vinculación creada"
             },
             "content": {
               "application/json": {
                 "schema": {
                   "description": {
                     "en": "Agreement that contains an unique identifier and a success URL.",
-                    "pt": "Agreement que contém um identificador único e um URL de sucesso.",
-                    "es": "Agreement que contiene un identificador único y un URL de éxito."
+                    "pt": "Vinculação que contém um identificador único e um URL de sucesso.",
+                    "es": "Vinculación que contiene un identificador único y un URL de éxito."
                   },
                   "type": "object",
                   "properties": {
                     "agreement_id": {
                       "type": "string",
                       "description": {
-                        "en": "Unique ID that identifies an Agreement",
-                        "pt": "ID único que identifica um Agreement",
-                        "es": "ID único que identifica un Agreement"
+                        "en": "Unique ID that identifies an agreement.",
+                        "pt": "ID único que identifica uma vincualção.",
+                        "es": "ID único que identifica una vinculación."
                       },
                       "example": "22abcd1235ed497f945f755fcaba3c6c"
                     },
                     "agreement_uri": {
                       "type": "string",
                       "description": {
-                        "es": "This is the uri to redirect the user to the wallet linking in the frontend",
-                        "pt": "This is the uri to redirect the user to the wallet linking in the frontend",
-                        "en": "This is the uri to redirect the user to the wallet linking in the frontend"
+                        "es": "This is the uri to redirect the user to the wallet linking in the frontend.",
+                        "pt": "Este é o uri para redirecionar o usuário para a carteira vinculada no frontend.",
+                        "en": "Esto es el uri para redirigir al usuario al enlace de la billetera en el frontend.                        ."
                       },
                       "example": "https://wwww.mercadopago.com.ar/v1/wallet_agreement/22abcd1235ed497f945f755fcaba3c6c"
                     }
@@ -204,9 +204,9 @@
           }
         },
         "title": {
-          "en": "Create Agreement",
-          "pt": "Criar Agreement",
-          "es": "Crear Agreement"
+          "en": "Create agreement",
+          "pt": "Criar vinculação",
+          "es": "Crear vinculación"
         }
       }
     },
@@ -217,17 +217,17 @@
         ],
         "description": {
           "en": "A payer token is an ID that represents the authorization the user gave to the seller",
-          "pt": "Um Payer Token é um ID que representa a autorização que o usuário deu ao vendedor",
-          "es": "Un Payer Token es un ID que representa la autorización que el usuario dio al vendedor"
+          "pt": "Um token de pagamento Token é um ID que representa a autorização que o usuário deu ao vendedor",
+          "es": "Un token de pago es un ID que representa la autorización que el usuario dio al vendedor"
         },
         "parameters": [
           {
             "name": "agreement_id",
             "in": "path",
             "description": {
-              "en": "Unique ID that identifies an Agreement",
-              "pt": "ID único que identifica um Agreement",
-              "es": "ID único que identifica un Agreement"
+              "en": "Unique ID that identifies an agreement.",
+              "pt": "ID único que identifica uma vinculação.",
+              "es": "ID único que identifica una vinculación."
             },
             "required": true,
             "schema": {
@@ -239,9 +239,9 @@
             "name": "x-platform-id",
             "in": "header",
             "description": {
-              "en": "Field intended for platforms or modules that offer Mercado Pago in their solutions",
-              "pt": "Campo destinado para as plataformas ou módulos que oferecem Mercado Pago em suas soluções",
-              "es": "Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones"
+              "en": "Field intended for platforms or modules that offer Mercado Pago in their solutions.",
+              "pt": "Campo destinado para as plataformas ou módulos que oferecem Mercado Pago em suas soluções.",
+              "es": "Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
             },
             "schema": {
               "type": "string",
@@ -254,18 +254,18 @@
             "application/json": {
               "schema": {
                 "description": {
-                  "es": "It's a reference of the authorization that the user gave to the seller",
-                  "pt": "It's a reference of the authorization that the user gave to the seller",
-                  "en": "It's a reference of the authorization that the user gave to the seller"
+                  "es": "It's a reference of the authorization that the user gave to the seller.",
+                  "pt": "É uma referência da autorização que o usuário concedeu ao vendedor.",
+                  "en": "Es una referencia de la autorización que el usuario dio al vendedor."
                 },
                 "type": "object",
                 "properties": {
                   "code": {
                     "type": "string",
                     "description": {
-                      "en": "This is the payer token. It is a reference to the Id that represents the authorization of the user",
-                      "pt": "Este é o Payer Token. É uma referência do ID que representa a autorização do usuário",
-                      "es": "Este es el Payer Token. Es una referencia del ID que representa la autorización del usuario"
+                      "en": "This is the payer token. It is a reference to the ID that represents the authorization of the user.",
+                      "pt": "Este é o token de pagamento. É uma referência do ID que representa a autorização do usuário.",
+                      "es": "Este es el token de pago. Es una referencia del ID que representa la autorización del usuario."
                     },
                     "required": true,
                     "example": "aeecea3e11f2545d1e7790eb6591ff68df74c57930551ed980239f4538a7e530"
@@ -278,9 +278,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "Payer token created",
-              "pt": "Payer Token criado",
-              "es": "Payer Token creado"
+              "en": "Payer token created.",
+              "pt": "Token de pagamento criado.",
+              "es": "Token de pago creado."
             },
             "content": {
               "application/json": {
@@ -290,9 +290,9 @@
                     "payer_token": {
                       "type": "string",
                       "description": {
-                        "en": "This is the token of the payer.",
-                        "pt": "Este é o token do pagador.",
-                        "es": "Este es el token del pagador."
+                        "en": "This is the payer token. It is a reference to the ID that represents the authorization of the user.",
+                        "pt": "Este é o token de pagamento. É uma referência do ID que representa a autorização do usuário.",
+                        "es": "Este es el token de pago. Es una referencia del ID que representa la autorización del usuario."
                       },
                       "example": "abcdef1e23f4567d8e9123eb6591ff68df74c57930551ed980239f4538a7e530"
                     }
@@ -391,8 +391,8 @@
         },
         "title": {
           "en": "Create payer token",
-          "pt": "Criar Payer Token",
-          "es": "Crear Payer Token"
+          "pt": "Criar token de pagamento",
+          "es": "Crear token de pago"
         }
       }
     },

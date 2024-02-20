@@ -57,9 +57,6 @@ curl -X POST \
 ```
 ]]]
 
-
-
-
 ## Respuestas
 
 A continuación detallamos las diferentes respuestas que pueden recibirse al procesar un pago con descuento. Las mismas se categorizan en base al resultado de la solicitud, variando desde el éxito en el procesamiento hasta un error específico.

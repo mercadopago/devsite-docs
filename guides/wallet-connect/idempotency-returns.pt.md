@@ -69,7 +69,7 @@ Código de status: 400
 
 ## Falha devido a conflito
 
-Esta falha ocorre quando um Advanced Payment é criado e o mesmo está em processamento ou já foi pago. Neste caso, o processo de idempotência não é cumprido e por isso é rejeitado.
+Esta falha ocorre quando um pagamento é criado e o mesmo está em processamento ou já foi pago. Neste caso, o processo de idempotência não é cumprido e por isso é rejeitado.
 
 [[[
 ```Json
@@ -94,7 +94,7 @@ Código de status: 409
 
 ## Falha devido a entidade não processável
 
-Esta falha ocorre quando, ao criar um Advanced Payment é identificado um erro ou alguma informação vazia. Quando isso acontece, não se cumpre o processo de idempotência, tornando-se uma entidade não processável e por isso é rejeitado.
+Esta falha ocorre quando, ao criar um pagamento é identificado um erro ou alguma informação vazia. Quando isso acontece, não se cumpre o processo de idempotência, tornando-se uma entidade não processável e por isso é rejeitado.
 
 [[[
 ```Json

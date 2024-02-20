@@ -1,12 +1,12 @@
-# Criar payer token
+# Gerar token de pagamento
 
-Com o _agreement_ criado e a aprovação do comprador concedida, é preciso criar o _payer token_. O _payer token_ é responsável por armazenar os dados do comprador e garantir a segurança da transação, além de ser um atributo mandatório para criar transações durante todo o período de validade do `agreement` criado anteriormente.
+Com a vinculação criada e a aprovação do comprador concedida, é preciso criar o _token_ de pagamento. O _token_ de pagamento é responsável por armazenar os dados do comprador e garantir a segurança da transação, além de ser um atributo mandatório para criar transações durante todo o período de validade do `agreement` criado anteriormente.
 
-Confira o diagrama abaixo que ilustra como funciona o fluxo de criação de um payer token.
+Confira o diagrama abaixo que ilustra como funciona o fluxo de criação de um _token_ de pagamento.
 
-![Criar payer token](/images/wallet-connect/create-payer-token-v2-pt.png)
+![Gerar token](/images/wallet-connect/create-payer-token-v2-pt.png)
 
-Para criar um _payer token_, envie um **POST** com todos os atributos necessários ao endpoint [/v2/wallet_connect/agreements/{agreementId}/payer_token](/developers/pt/reference/wallet_connect/_wallet_connect_agreements_agreement_id_payer_token/post) e execute a requisição ou, se preferir, utilize o `curl` disponível abaixo.
+Para criar um _token_ de pagamento, envie um **POST** com todos os atributos necessários ao endpoint [/v2/wallet_connect/agreements/{agreementId}/payer_token](/developers/pt/reference/wallet_connect/_wallet_connect_agreements_agreement_id_payer_token/post) e execute a requisição ou, se preferir, utilize o `curl` disponível abaixo.
 
 [[[
 ```curl
@@ -32,5 +32,4 @@ curl -X POST \
 ```
 ]]]
 
-Com o payer token criado, o fluxo de integração de contas com o Wallet Connect terá sido concluída com sucesso. Siga para a seção [Advanced Payments](/developers/pt/docs/wallet-connect/advanced-payments) para realizar o fluxo de pagamentos.
-
+Com o _token_ de pagamento criado, o fluxo de integração de contas com o Wallet Connect terá sido concluída com sucesso. Siga para a seção [Pagamentos](/developers/pt/docs/wallet-connect/advanced-payments) para realizar o fluxo de pagamentos.
