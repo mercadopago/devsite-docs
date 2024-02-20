@@ -402,9 +402,9 @@
           "wallet-connect"
         ],
         "description": {
-          "en": "Endpoint to cancel an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment. You will need to cancel an agreement when the vinculation flow has ended",
-          "pt": "Endpoint para cancelar um Agreement por ID. Um Agreement é um link de autorização que o comprador recebe para permitir ao vendedor acessar a sua carteira do Mercado Pago a fim de debitar o pagamento. Você deve cancelar um Agreement quando o fluxo de vinculação tenha terminado",
-          "es": "Endpoint para cancelar un Agreement por ID. Un Agreement es un link de autorización que el comprador recibe para permitir al vendedor acceder a su billetera de Mercado Pago a fin de debitar el pago. Deberás cancelar un agreement cuando el flujo de vinculación haya terminado"
+          "en": "Endpoint to cancel an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment. You will need to cancel an agreement when the vinculation flow has ended.",
+          "pt": "Endpoint para cancelar uma vinculação por ID. Uma vinculação é um link de autorização que o comprador recebe para permitir ao vendedor acessar a sua carteira do Mercado Pago a fim de debitar o pagamento. Você deve cancelar um Agreement quando o fluxo de vinculação tenha terminado.",
+          "es": "Endpoint para cancelar una vinculación por ID. Una vinculación es un link de autorización que el comprador recibe para permitir al vendedor acceder a su billetera de Mercado Pago a fin de debitar el pago. Deberás cancelar un agreement cuando el flujo de vinculación haya terminado."
         },
         "operationId": "cancelAgreement_DELETE",
         "parameters": [
@@ -412,9 +412,9 @@
             "name": "agreementId",
             "in": "path",
             "description": {
-              "en": "Unique ID that identifies an Agreement",
-              "pt": "ID único que identifica um Agreement",
-              "es": "ID único que identifica un Agreement"
+              "en": "Unique ID that identifies an agreement.",
+              "pt": "ID único que identifica uma vinculação.",
+              "es": "ID único que identifica una vinculación."
             },
             "required": true,
             "schema": {
@@ -426,7 +426,7 @@
             "name": "client.id",
             "in": "query",
             "description": {
-              "en": "Unique ID that identifies a Client",
+              "en": "Unique ID that identifies a client",
               "pt": "ID único que identifica um cliente",
               "es": "ID unico que identifica un cliente"
             },
@@ -440,9 +440,9 @@
             "name": "x-platform-id",
             "in": "header",
             "description": {
-              "en": "Field intended for platforms or modules that offer Mercado Pago in their solutions",
-              "pt": "Campo destinado para as plataformas ou módulos que oferecem Mercado Pago em suas soluções",
-              "es": "Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones"
+              "en": "Field intended for platforms or modules that offer Mercado Pago in their solutions.",
+              "pt": "Campo destinado para as plataformas ou módulos que oferecem Mercado Pago em suas soluções.",
+              "es": "Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
             },
             "schema": {
               "type": "string",
@@ -549,8 +549,8 @@
         },
         "title": {
           "en": "Cancel agreement",
-          "pt": "Cancelar Agreement",
-          "es": "Cancelar Agreement"
+          "pt": "Cancelar vinculação",
+          "es": "Cancelar vinculación"
         }
       },
       "get": {
@@ -558,9 +558,9 @@
           "wallet-connect"
         ],
         "description": {
-          "en": "Endpoint to get an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment",
-          "pt": "Endpoint para obter um Agreement por ID. Um Agreement é um link de autorização que o comprador recebe para permitir ao vendedor acessar a sua carteira do Mercado Pago a fim de debitar o pagamento",
-          "es": "Endpoint para obtener un Agreement por ID. Un Agreement es un link de autorización que el comprador recibe para permitir al vendedor acceder a su billetera de Mercado Pago a fin de debitar el pago"
+          "en": "Endpoint to get an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment.",
+          "pt": "Endpoint para obter uma vinculação por ID. Uma vinculação é um link de autorização que o comprador recebe para permitir ao vendedor acessar a sua carteira do Mercado Pago a fim de debitar o pagamento.",
+          "es": "Endpoint para obtener una vinculación por ID. Una vinculación es un link de autorización que el comprador recibe para permitir al vendedor acceder a su billetera de Mercado Pago a fin de debitar el pago."
         },
         "operationId": "getAgreement_GET",
         "parameters": [
@@ -568,9 +568,9 @@
             "name": "agreementId",
             "in": "path",
             "description": {
-              "en": "Unique ID that identifies an Agreement",
-              "pt": "ID único que identifica um Agreement",
-              "es": "ID único que identifica un Agreement"
+              "en": "Unique ID that identifies an agreement.",
+              "pt": "ID único que identifica uma vinculação.",
+              "es": "ID único que identifica una vinculación."
             },
             "required": true,
             "schema": {
@@ -582,9 +582,9 @@
             "name": "client.id",
             "in": "query",
             "description": {
-              "en": "Unique ID that identifies a Client",
-              "pt": "ID único que identifica um cliente",
-              "es": "ID unico que identifica un cliente"
+              "en": "Unique ID that identifies a client.",
+              "pt": "ID único que identifica um cliente.",
+              "es": "ID unico que identifica un cliente."
             },
             "required": false,
             "schema": {
@@ -596,9 +596,9 @@
             "name": "x-platform-id",
             "in": "header",
             "description": {
-              "en": "Field intended for platforms or modules that offer Mercado Pago in their solutions",
-              "pt": "Campo destinado às plataformas ou módulos que oferecem Mercado Pago em suas soluções",
-              "es": "Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones"
+              "en": "Field intended for platforms or modules that offer Mercado Pago in their solutions.",
+              "pt": "Campo destinado às plataformas ou módulos que oferecem Mercado Pago em suas soluções.",
+              "es": "Campo destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
             },
             "schema": {
               "type": "string",
@@ -619,17 +619,17 @@
                 "schema": {
                   "description": {
                     "en": "Agreement response.",
-                    "pt": "Resposta do Agreement.",
-                    "es": "Respuesta del Agreement."
+                    "pt": "Resposta da vinculação.",
+                    "es": "Respuesta de la vinculación."
                   },
                   "type": "object",
                   "properties": {
                     "id": {
                       "type": "string",
                       "description": {
-                        "en": "Unique ID that identifies an Agreement.",
-                        "pt": "ID único que identifica um Agreement.",
-                        "es": "ID único que identifica un Agreement."
+                        "en": "Unique ID that identifies an agreement.",
+                        "pt": "ID único que identifica uma vinculação..",
+                        "es": "ID único que identifica una vinculación.."
                       },
                       "example": "b1234e5678b91c23a456e78912345b67"
                     },
@@ -637,8 +637,8 @@
                       "type": "string",
                       "description": {
                         "en": "Agreement creation date.",
-                        "pt": "Data de criação do Agreement.",
-                        "es": "Data de creación del Agreement."
+                        "pt": "Data de criação da vinculação.",
+                        "es": "Data de inicio de la vinculación."
                       },
                       "example": "2023-02-16T00:02:52Z"
                     },
@@ -646,8 +646,8 @@
                       "type": "string",
                       "description": {
                         "en": "Agreement cancelled date.",
-                        "pt": "Data de cancelamento do Agreement.",
-                        "es": "Fecha de cancelación del Agreement."
+                        "pt": "Data de cancelamento da vinculação.",
+                        "es": "Fecha de cancelación de la vinculación."
                       },
                       "example": "2023-02-16T00:02:52Z"
                     },
@@ -655,8 +655,8 @@
                       "type": "string",
                       "description": {
                         "en": "Agreement expiration date.",
-                        "pt": "Data de vencimento do Agreement.",
-                        "es": "Fecha de vencimiento del Agreement."
+                        "pt": "Data de vencimento da vinculação.",
+                        "es": "Fecha de vencimiento de la vinculación."
                       },
                       "example": "2023-02-16T00:02:52Z"
                     },
