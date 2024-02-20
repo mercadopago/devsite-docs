@@ -1497,7 +1497,7 @@
             "in": "path",
             "description": {
               "es": "Payment identifier",
-              "pt": "Apayment identifier",
+              "pt": "Agipayment identifier",
               "en": "Advanced payment identifier"
             },
             "required": true,
