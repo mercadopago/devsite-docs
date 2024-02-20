@@ -96,7 +96,7 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
 
 ### Actualización del medio de pago de una vinculación
 
-En este caso, el usuario puede agregar o actualizar un medio de pago secundario (por defecto, _Account Money_ de Mercado Pago es el primer medio de pago). 
+En este caso, el usuario puede agregar o actualizar un medio de pago secundario (por defecto, dinero en cuenta de Mercado Pago es el primer medio de pago). 
 
 En función de los estados de pago, es posible detectar pagos rechazados y notificar al usuario para que realice la actualización o agregue un medio de pago secundario.
 

@@ -663,9 +663,9 @@
                     "validation_code": {
                       "type": "string",
                       "description": {
-                        "en": "The code obtained to generate the Payer Token.",
-                        "pt": "Código obtido para gerar o Payer Token.",
-                        "es": "Código obtenido para generar el Payer Token."
+                        "en": "The code obtained to generate the payer token.",
+                        "pt": "Código obtido para gerar o token de pagamento.",
+                        "es": "Código obtenido para generar el token de pagador."
                       },
                       "example": "790eb6591ff68df74c57930551ed980239f4538a7e530"
                     },
@@ -681,9 +681,9 @@
                     "redirect_uri": {
                       "type": "string",
                       "description": {
-                        "en": "Indicates the Uri to return the user to after the agreement is complete.",
-                        "pt": "Indica o Uri para o qual o usuário retornará após ter completado o agreement.",
-                        "es": "Indica el Uri al que regresará el usuario después de que se complete el agreement."
+                        "en": "Indicates the uri to return the user to after the agreement is complete.",
+                        "pt": "Indica o uri para o qual o usuário retornará após ter completado a vinculação.",
+                        "es": "Indica el uri al que regresará el usuario después de que se complete la vinculación."
                       },
                       "example": "https://www.mercadopago.com/"
                     },
@@ -691,24 +691,24 @@
                       "type": "string",
                       "description": {
                         "en": "Agreement status.",
-                        "pt": "Status do Agreement.",
-                        "es": "Status del Agreement."
+                        "pt": "Status da vinculação.",
+                        "es": "Status de la vinculación."
                       },
                       "example": "confirmed_by_user"
                     },
                     "external_flow_id": {
                       "type": "string",
                       "description": {
-                        "en": "Identifies the Seller side flow current state.",
-                        "pt": "Identifica o status atual do fluxo Seller side.",
-                        "es": "Identifica el status actual del flujo Seller side."
+                        "en": "Identifies the seller-side flow current state.",
+                        "pt": "Identifica o status atual do fluxo seller-side.",
+                        "es": "Identifica el status actual del flujo seller-side."
                       },
                       "example": "external_flow_id"
                     },
                     "external_user": {
                       "type": "object",
                       "description": {
-                        "en": "The external_user contains the data that the Seller will need to use to indentify a User, so then it can continue with their own flow.",
+                        "en": "The external_user contains the data that the seller will need to use to indentify a User, so then it can continue with their own flow.",
                         "pt": "O external_user contém os dados que o vendedor precisará para identificar um usuário, de modo que este possa seguir com o seu próprio fluxo.",
                         "es": "El external_user contiene los datos que el vendedor necesitará para identificar un usuario a fin de que este pueda continuar con su propio flujo."
                       },
@@ -716,18 +716,18 @@
                         "id": {
                           "type": "string",
                           "description": {
-                            "en": "Unique ID that was used by the Seller to identify the external_user",
-                            "pt": "ID único que usou o vendedor para identificar o external_user",
-                            "es": "ID único que utilizó el vendedor para identificar el external_user"
+                            "en": "Unique ID that was used by the seller to identify the external_use.r",
+                            "pt": "ID único que usou o vendedor para identificar o external_user.",
+                            "es": "ID único que utilizó el vendedor para identificar el external_user."
                           },
                           "example": "usertest"
                         },
                         "description": {
                           "type": "string",
                           "description": {
-                            "en": "A brief description with information of the user. For example the name of the user",
-                            "pt": "Breve descrição com informações do usuário. Por exemplo, o nome do usuário",
-                            "es": "Breve descripción con información del usuario. Por ejemplo, el nombre del usuario"
+                            "en": "A brief description with information of the user. For example the name of the user.",
+                            "pt": "Breve descrição com informações do usuário. Por exemplo, o nome do usuário.",
+                            "es": "Breve descripción con información del usuario. Por ejemplo, el nombre del usuario."
                           },
                           "example": "Test account"
                         }
@@ -736,26 +736,26 @@
                     "agreement_data": {
                       "type": "object",
                       "description": {
-                        "en": "Contains information about actions the user must do and the amount to be paid",
-                        "pt": "Contém informação sobre as ações que o usuário deve fazer e o valor a ser pago",
-                        "es": "Contiene información sobre las acciones que el usuario debe realizar y el monto a pagar"
+                        "en": "Contains information about actions the user must do and the amount to be paid,",
+                        "pt": "Contém informação sobre as ações que o usuário deve fazer e o valor a ser pago.",
+                        "es": "Contiene información sobre las acciones que el usuario debe realizar y el monto a pagar."
                       },
                       "properties": {
                         "validation_amount": {
                           "type": "number",
                           "description": {
-                            "en": "Amount that the user is going to pay",
-                            "pt": "Valor que o usuário pagará",
-                            "es": "Monto que el usuario pagará"
+                            "en": "Amount that the user is going to pay.",
+                            "pt": "Valor que o usuário pagará.",
+                            "es": "Monto que el usuario pagará."
                           },
                           "example": 3.14
                         },
                         "description": {
                           "type": "string",
                           "description": {
-                            "en": "Description of the actions that the user is trying to perform",
-                            "pt": "Descrição das ações que o usuário tenta realizar",
-                            "es": "Descripción de las acciones que el usuario intenta realizar"
+                            "en": "Description of the actions that the user is trying to perform.",
+                            "pt": "Descrição das ações que o usuário tenta realizar.",
+                            "es": "Descripción de las acciones que el usuario intenta realizar."
                           },
                           "example": "Test agreement"
                         }
@@ -792,8 +792,8 @@
                       "type": "number",
                       "description": {
                         "en": "Agreement API version.",
-                        "pt": "Versão da API do Agreement.",
-                        "es": "Versión de la API del Agreement."
+                        "pt": "Versão da API da vinculação.",
+                        "es": "Versión de la API de la vinculación."
                       },
                       "example": 2
                     }
@@ -892,8 +892,8 @@
         },
         "title": {
           "en": "Get agreement",
-          "pt": "Obter Agreement",
-          "es": "Obtener Agreement"
+          "pt": "Obter vinculação",
+          "es": "Obtener vinculación"
         }
       }
     },
@@ -903,15 +903,15 @@
           "wallet-connect"
         ],
         "description": {
-          "en": "Advanced Payments are specific payments for Wallet Connect. During the agreement process, the integrator receives a \"payer token\" from the payer. This token allows the integrator to execute the payment directly from the payer's wallet. If you wish to apply discounts, it is necessary to first create a discount promise before using them",
-          "pt": "Advanced Payments são pagamentos específicos para Wallet Connect. Durante o processo de agreement, o integrador recebe um \"payer token\" do pagador. Esse token permite que o integrador efetue o pagamento diretamente da carteira do pagador. Se desejar aplicar descontos, é necessário criar uma promessa de desconto antes de utilizá-los",
-          "es": "Los Advanced Payments son pagos específicos para Wallet Connect. Durante el proceso del agreement, el integrador recibe un \"payer token\" del pagador. Este token permite que el integrador realice el pago directamente desde la billetera del pagador. Si desea aplicar descuentos, primero es necesario crear una promesa de descuento antes de utilizarlos"
+          "en": "Specific payments for Wallet Connect. During the agreement process, the integrator receives a \"payer token\" from the payer. This token allows the integrator to execute the payment directly from the payer's wallet. If you wish to apply discounts, it is necessary to first create a discount promise before using them.",
+          "pt": "São pagamentos específicos para Wallet Connect. Durante o processo de vinculação, o integrador recebe um \"payer token\" do pagador. Esse token permite que o integrador efetue o pagamento diretamente da carteira do pagador. Se desejar aplicar descontos, é necessário criar uma promessa de desconto antes de utilizá-los.",
+          "es": "Pagos específicos para Wallet Connect. Durante el proceso de la vinculación, el integrador recibe un \"payer token\" del pagador. Este token permite que el integrador realice el pago directamente desde la billetera del pagador. Si desea aplicar descuentos, primero es necesario crear una promesa de descuento antes de utilizarlos."
         },
         "requestBody": {
           "description": {
-            "en": "Here are the fields needed to complete a request for create an Advanced Payments.",
-            "pt": "Estes são os campos necessários para preencher um request e criar um Advanced Payment.",
-            "es": "Estos son los campos necesarios para completar un request para crear un Advanced Payment."
+            "en": "Here are the fields needed to complete a request for create a payment.",
+            "pt": "Estes são os campos necessários para preencher um request e criar um pagamento.",
+            "es": "Estos son los campos necesarios para completar un request para crear un pago."
           },
           "required": true,
           "content": {
@@ -920,17 +920,17 @@
                 "type": "object",
                 "description": {
                   "en": "Advanced payment data.",
-                  "pt": "Dados do Advanced Payment.",
-                  "es": "Datos del Advanced Payment."
+                  "pt": "Dados do pagamento.",
+                  "es": "Datos del pago."
                 },
                 "properties": {
                   "wallet_payment": {
                     "required": true,
                     "type": "object",
                     "description": {
-                      "en": "It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.",
-                      "pt": "Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.",
-                      "es": "Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect."
+                      "en": "It indicates is a payment from a seller with a previous Wallet Connect vinculation.",
+                      "pt": "Indica que é um pagamento de um vendedor com Wallet Connect previamente vinculado.",
+                      "es": "Indica que es un pago de un vendedor con una vinculación previa de Wallet Connect."
                     },
                     "properties": {
                       "transaction_amount": {
@@ -1049,9 +1049,9 @@
                     "required": true,
                     "type": "object",
                     "description": {
-                      "en": "Payer information required to craete the advanced payment.",
-                      "pt": "Informação obrigatória sobre o pagador para criar o advanced payment.",
-                      "es": "Información del pagador requerida para crear el advanced payment."
+                      "en": "Payer information required to craete the payment.",
+                      "pt": "Informação obrigatória sobre o pagador para criar o pagamento.",
+                      "es": "Información del pagador requerida para crear el pago."
                     },
                     "properties": {
                       "token": {
@@ -1059,8 +1059,8 @@
                         "type": "string",
                         "description": {
                           "en": "The payer token is a code used by the integrator to make payments from the payer's wallet.",
-                          "pt": "O payer token é uma chave utilizada pelo integrador para efetuar o pagamento a partir da conta do pagador.",
-                          "es": "El payer token es una clave utilizada por el integrador para realizar el pago desde la billetera del pagador."
+                          "pt": "O token de pagamento é uma chave utilizada pelo integrador para efetuar o pagamento a partir da conta do pagador.",
+                          "es": "El token de pago  es una clave utilizada por el integrador para realizar el pago desde la billetera del pagador."
                         },
                         "example": "abcdef1e23f4567d8e9123eb6591ff68df74c57930551ed980239f4538a7e530"
                       },
@@ -1070,7 +1070,7 @@
                         "description": {
                           "en": "The token type.",
                           "pt": "Tipo de token.",
-                          "es": "El tipo de token"
+                          "es": "El tipo de token."
                         },
                         "example": "wallet-tokens"
                       }
@@ -1102,9 +1102,9 @@
         "responses": {
           "201": {
             "description": {
-              "en": "Advanced payment created. Check SCHEMAS Status for variants, payment associated to the advanced payments may be rejected.",
-              "pt": "Advanced payment criado. Verifique o status do SCHEMAS para variantes, o pagamento associado aos advanced payments pode ser rejeitado.",
-              "es": "Advanced payment creado. Consulta SCHEMAS Status por variantes, el pago asociado a los advanced payments puede ser rechazado."
+              "en": "Payment created. Check SCHEMAS status for variants, payment associated to the advanced payments may be rejected.",
+              "pt": "Pagamento criado. Verifique o status do SCHEMAS para variantes, o pagamento associado aos advanced payments pode ser rejeitado.",
+              "es": "Pago creado. Consulta el estado del SCHEMAS por variantes, el pago asociado a los advanced payments puede ser rechazado."
             },
             "content": {
               "application/json": {
@@ -1114,9 +1114,9 @@
                     "id": {
                       "type": "number",
                       "description": {
-                        "en": "Unique ID that identifies the advanced payment.",
-                        "pt": "ID único que identifica o advanced payment.",
-                        "es": "ID único que identifica el advanced payment."
+                        "en": "Unique ID that identifies the payment.",
+                        "pt": "ID único que identifica o pagamento.",
+                        "es": "ID único que identifica el pago."
                       },
                       "example": 10267812
                     },
@@ -1156,16 +1156,16 @@
                                 "title": "approved",
                                 "description": {
                                   "en": "approved",
-                                  "es": "approved",
-                                  "pt": "approved"
+                                  "es": "aprobado",
+                                  "pt": "aprovado"
                                 }
                               },
                               {
                                 "title": "in_process",
                                 "description": {
                                   "en": "in process",
-                                  "es": "in process",
-                                  "pt": "in process"
+                                  "es": "en proceso",
+                                  "pt": "em processo"
                                 }
                               }
                             ]
@@ -1191,24 +1191,24 @@
                                 "title": "credit_card",
                                 "description": {
                                   "en": "credit card",
-                                  "es": "credit card",
-                                  "pt": "credit card"
+                                  "es": "tarjeta de crédito",
+                                  "pt": "cartão de crédito"
                                 }
                               },
                               {
                                 "title": "debit_card",
                                 "description": {
                                   "en": "debit card",
-                                  "es": "debit card",
-                                  "pt": "debit card"
+                                  "es": "tarjeta de débito",
+                                  "pt": "cartão de débito"
                                 }
                               },
                               {
                                 "title": "account_money",
                                 "description": {
                                   "en": "account money",
-                                  "es": "account money",
-                                  "pt": "account money"
+                                  "es": "dinero en cuenta",
+                                  "pt": "dinheiro em conta"
                                 }
                               }
                             ]
@@ -1274,9 +1274,9 @@
                       "required": true,
                       "type": "object",
                       "description": {
-                        "en": "It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.",
-                        "pt": "Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.",
-                        "es": "Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect."
+                        "en": "It indicates is a payment from a seller with a previous Wallet Connect vinculation.",
+                        "pt": "Indica que é um pagamento de um vendedor com Wallet Connect previamente vinculado.",
+                        "es": "Indica que es un pago de un vendedor con una vinculación previa de Wallet Connect."
                       },
                       "properties": {
                         "transaction_amount": {
@@ -1343,17 +1343,17 @@
                       "items": {
                         "type": "object",
                         "description": {
-                          "en": "List of payments that correspond to each Seller.",
-                          "pt": "Lista de pagamentos que correspondem a cada Seller.",
-                          "es": "Lista de pagos que corresponden a cada Seller."
+                          "en": "List of payments that correspond to each seller.",
+                          "pt": "Lista de pagamentos que correspondem a cada vendedor.",
+                          "es": "Lista de pagos que corresponden a cada vendedor."
                         },
                         "properties": {
                           "collector_id": {
                             "type": "string",
                             "description": {
                               "en": "Merchant Mercado Pago account id.",
-                              "pt": "ID da conta Mercado Pago do Merchant.",
-                              "es": "Identificación de la cuenta de Mercado Pago del Merchant."
+                              "pt": "ID da conta Mercado Pago do merchant.",
+                              "es": "Identificación de la cuenta de Mercado Pago del merchant."
                             },
                             "example": "collectorId"
                           }
@@ -1395,18 +1395,18 @@
                     "date_created": {
                       "type": "string",
                       "description": {
-                        "en": "Advance Payment creation date.",
-                        "pt": "Data de criação do Advanced Payment.",
-                        "es": "Fecha de creación del Advanced Payment."
+                        "en": "Payment creation date.",
+                        "pt": "Data de criação do pagamento.",
+                        "es": "Fecha de creación del pago."
                       },
                       "example": "2018-10-20T09:34:20.518-04:00"
                     },
                     "date_last_updated": {
                       "type": "string",
                       "description": {
-                        "en": "Advance Payment last update date.",
-                        "pt": "Data da última atualização do Advanced Payment.",
-                        "es": "Fecha de la última actualización del Advanced Payment."
+                        "en": "Payment last update date.",
+                        "pt": "Data da última atualização do pagamento.",
+                        "es": "Fecha de la última actualización del pago."
                       },
                       "example": "2018-10-20T09:34:20.518-04:00"
                     }
@@ -1475,9 +1475,9 @@
           }
         },
         "title": {
-          "en": "Create an Advanced Payment",
-          "pt": "Criar um Advanced Payment",
-          "es": "Crear un Advanced Payment"
+          "en": "Create a payment",
+          "pt": "Criar um pagamento",
+          "es": "Crear un pago"
         }
       }
     },
@@ -1487,17 +1487,17 @@
           "wallet-connect"
         ],
         "description": {
-          "en": "This endpoint allows to perform one two actions. Capture or cancel and advanced payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status \"cancelled\"",
-          "pt": "Este endpoint permite executar duas ações. Captura ou cancelamento de um advanced payment. Para confirmar, é preciso enviar os dados de pagamento da carteira e o campo de captura em true. Para cancelar, envie os dados de pagamento da carteira e o campo status \"cancelled\"",
-          "es": "Este endpoint le permite realizar dos acciones. Capturar o cancelar un advanced payment. Para confirmar, es necesario enviar los datos de pago de la billetera y el campo de captura en true. Para cancelar, envíe los detalles de pago de su billetera y el campo de status \"cancelled\""
+          "en": "This endpoint allows to perform one two actions. Capture or cancel a payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status \"cancelled\".",
+          "pt": "Este endpoint permite executar duas ações. Captura ou cancelamento de um pagamento. Para confirmar, é preciso enviar os dados de pagamento da carteira e o campo de captura em true. Para cancelar, envie os dados de pagamento da carteira e o campo status \"cancelled\".",
+          "es": "Este endpoint le permite realizar dos acciones. Capturar o cancelar un pago. Para confirmar, es necesario enviar los datos de pago de la billetera y el campo de captura en true. Para cancelar, envíe los detalles de pago de su billetera y el campo de status \"cancelled\"."
         },
         "parameters": [
           {
             "name": "advanced_payment_id",
             "in": "path",
             "description": {
-              "es": "Advanced payment identifier",
-              "pt": "Advanced payment identifier",
+              "es": "Payment identifier",
+              "pt": "Apayment identifier",
               "en": "Advanced payment identifier"
             },
             "required": true,
