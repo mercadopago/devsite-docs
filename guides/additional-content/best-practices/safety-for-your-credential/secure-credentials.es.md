@@ -32,7 +32,7 @@ Te recomendamos renovar tus credenciales de forma frecuente para evitar posibles
 
 Renueva tus credenciales de forma simple siguiendo estos pasos:
 
-1. Ve al [Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app). 
+1. Ve al [Panel del desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app). 
 2. Accede a la aplicación cuyas credenciales quieres renovar.
 3. Selecciona Credenciales de Producción.
 4. Una vez allí, podrás renovar el Access Token y el Client Secret. Haz clic en **Más opciones > Renovar**.
@@ -47,7 +47,7 @@ Renueva tus credenciales de forma simple siguiendo estos pasos:
 Si necesitas compartir las credenciales de tu aplicación con otras cuentas de Mercado Pago, hazlo de manera segura a través de Tus Aplicaciones. 
 Cuando compartes tus credenciales permites que otra cuenta de Mercado Pago las vea y pueda usarlas. Para hacerlo, sigue estos pasos:
 
-1. Ve al [Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
+1. Ve al [Panel del desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 2. Accede a la aplicación cuyas credenciales deseas compartir.
 3. Haz clic en **Compartir mis credenciales**.
 4. Ingresa los e-mail de las cuentas de Mercado Pago con quien deseas compartir tus credenciales. Se compartirán tanto las de prueba como las de producción. 
