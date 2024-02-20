@@ -8,9 +8,9 @@
           "qr-code"
         ],
         "description": {
-          "en": "Check the fields that you can configure to adjust your preferences before starting. Based on these settings, you will be able to generate reports later.",
-          "pt": "Confira os campos que você pode configurar para ajustar as suas preferências antes de começar. Com base nessas configurações, você conseguirá gerar os relatórios posteriormente.",
-          "es": "Revise los campos que puede configurar para ajustar sus preferencias antes de comenzar. Con base en estas configuraciones, podrá generar reportes posteriormente."
+          "en": "",
+          "pt": "",
+          "es": "Crea el reporte de Liberaciones manualmente tantas veces como desees o prográmalo según la frecuencia deseada a través de nuestra API."
         },
         "parameters": [
           {
@@ -40,14 +40,27 @@
                 "type": "object",
                 "properties": {
                   "columns": {
-                    "type": "object",
+                    "type": "array",
                     "required": true,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "key": {
+                          "type": "string",
+                          "example": "SOURCE_ID",
+                          "description": {
+                            "es": "Nombre de la columna del reporte que se desea presentar en el reporte.",
+                            "pt": "Nome da coluna que se deseja apresentar no relatório.",
+                            "en": "Column name of the report to be displayed in the report."
+                          }
+                        }
+                      }
+                    },
                     "description": {
                       "en": "Field with details of the columns that will be included in your report. Find all possible values in the Glossary section.",
                       "pt": "Campo com detalhes das colunas que serão incluídas no seu relatório. Encontre todos os valores possíveis na seção Glossário.",
                       "es": "Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección Glossário."
-                    },
-                    "example": "[{\"key\": \"DATE\"}, {\"key\": \"SOURCE_ID\"}]"
+                    }
                   },
                   "file_name_prefix": {
                     "type": "string",
@@ -63,8 +76,8 @@
                     "type": "object",
                     "required": true,
                     "description": {
-                      "en": "",
-                      "pt": "",
+                      "en": "Specify the daily, weekly, or monthly frequency of scheduled reports.",
+                      "pt": "Indique a frequência diária, semanal ou mensal dos relatórios agendados.",
                       "es": "Indica la frecuencia diaria, semanal o mensual de los reportes programados."
                     },
                     "properties": {
@@ -72,9 +85,9 @@
                         "required": true,
                         "type": "number",
                         "description": {
-                          "en": "Indicate the daily, weekly, or monthly frequency of scheduled reports.",
-                          "pt": "Indique a frequência diária, semanal ou mensal dos relatórios programados.",
-                          "es": "Indique a frequência diária, semanal ou mensal dos relatórios programados."
+                          "en": "Apply the type monthly to the day of the month or weekly to the day of the week.",
+                          "pt": "Aplique o tipo mensal ao dia do mês ou semanal ao dia da semana.",
+                          "es": "Aplica el type monthly al día del mes o weekly al día de la semana."
                         },
                         "example": 0
                       },
@@ -187,14 +200,27 @@
                     "example": "es"
                   },
                   "notification_email_list": {
-                    "type": "Array",
+                    "type": "array",
                     "required": false,
-                    "description": {
-                      "en": "Allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
-                      "pt": "Permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
-                      "es": "Permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
-                    },
-                    "example": "[\",example@email.com\",\",john@example.com\",]"
+                    "items": {
+                      "type": "object",
+                      "description": {
+                        "en": "Allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
+                        "pt": "Permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
+                        "es": "Permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                      },
+                      "properties": {
+                        "email": {
+                          "type": "string",
+                          "description": {
+                            "en": "Emails.",
+                            "pt": "E-mails.",
+                            "es": "Correos electrónicos."
+                          },
+                          "example": "example@email.com"
+                        }
+                      }
+                    }
                   },
                   "refund_detailed": {
                     "type": "boolean",
@@ -245,6 +271,16 @@
                       "es": "Bloqueos y desbloqueos de dinero que se compensan entre sí y que no afectan el saldo final. Ayuda a entender cómo se conforma el balance final del reporte, en una lectura cronológica (recomendado si tienes un volumen alto de transacciones)."
                     },
                     "example": true
+                  },
+                  "scheduled": {
+                    "type": "boolean",
+                    "required": false,
+                    "description": {
+                      "en": "The API will respond with a JSON structure whose properties will represent the configuration you have created.",
+                      "pt": "A API responderá com uma estrutura JSON cujas propriedades representarão a configuração que você criou.",
+                      "es": "El API responderá con una estructura JSON cuyas propiedades representarán la configuración que has creado."
+                    },
+                    "example": true
                   }
                 }
               }
@@ -255,7 +291,7 @@
           "201": {
             "description": {
               "en": "created",
-              "pt": "",
+              "pt": "created",
               "es": "created"
             },
             "content": {
@@ -278,13 +314,27 @@
                       "example": "release-report-USER_ID"
                     },
                     "notification_email_list": {
-                      "type": "Array",
-                      "description": {
-                        "es": "Grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar.",
-                        "pt": "Grupo de destinatários de e-mail para receber uma notificação quando um relatório estiver pronto e disponível para download.",
-                        "en": "Email recipient group to receive a notification when a report is ready and available for download."
-                      },
-                      "example": "[\",example@email.com\",\",john@example.com\",]"
+                      "type": "array",
+                      "required": false,
+                      "items": {
+                        "type": "object",
+                        "description": {
+                          "es": "Grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar.",
+                          "pt": "Grupo de destinatários de e-mail para receber uma notificação quando um relatório estiver pronto e disponível para download.",
+                          "en": "Email recipient group to receive a notification when a report is ready and available for download."
+                        },
+                        "properties": {
+                          "email": {
+                            "type": "string",
+                            "description": {
+                              "en": "Emails.",
+                              "pt": "E-mails.",
+                              "es": "Correos electrónicos."
+                            },
+                            "example": "example@email.com"
+                          }
+                        }
+                      }
                     },
                     "display_timezone": {
                       "type": "string",
@@ -323,13 +373,27 @@
                       "example": false
                     },
                     "columns": {
-                      "type": "Array",
-                      "description": {
-                        "es": "Las columna configuradas del reporte.",
-                        "pt": "As colunas configuradas do relatório.",
-                        "en": "The configured columns of the report."
+                      "type": "array",
+                      "required": true,
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "key": {
+                            "type": "string",
+                            "example": "SOURCE_ID",
+                            "description": {
+                              "es": "Nombre de la columna del reporte que se desea presentar en el reporte.",
+                              "pt": "Nome da coluna do relatório que deseja apresentar no relatório.",
+                              "en": "Name of the column in the report that you want to display in the report."
+                            }
+                          }
+                        }
                       },
-                      "example": [{"key": "DATE"},{"key": "SOURCE_ID"}, {"key": "EXTERNAL_REFERENCE"}]
+                      "description": {
+                        "en": "Field with details of the columns to be included in your report. Find all possible values in the Glossary section (https://www.mercadopago.com.co/developers/en/docs/checkout-pro/additional-content/reports/released-money/report-use).",
+                        "pt": "Campo com os detalhes das colunas que serão incluídas no seu relatório. Encontre todos os valores possíveis na seção Glossário (https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/additional-content/reports/released-money/report-use).",
+                        "es": "Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección Glossário (https://www.mercadopago.com.co/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use)."
+                      }
                     },
                     "report_translation": {
                       "type": "string",
@@ -353,9 +417,9 @@
                           "required": true,
                           "type": "number",
                           "description": {
-                            "en": "Apply type monthly to the day of the month or weekly to the day of the week.",
-                            "pt": "Aplique o type monthly ao dia do mês ou weekly ao dia da semana.",
-                            "es": "Aplica type monthly al día del mes o weekly al día de la semana."
+                            "en": "Time of day to generate the report.",
+                            "pt": "Horário do dia para gerar o relatório.",
+                            "es": "Hora del día en la que generar el reporte."
                           },
                           "example": 0
                         },
@@ -433,7 +497,7 @@
                           }
                         },
                         {
-                          "title": "Invalid SFTP info",
+                          "title": "Invalid sftp info",
                           "description": {
                             "en": "Invalid SFTP info.",
                             "es": "Información SFTP no válida.",
@@ -441,7 +505,7 @@
                           }
                         },
                         {
-                          "title": "Invalid webhook",
+                          "title": "Invalid web hook",
                           "description": {
                             "en": "Invalid webhook.",
                             "es": "Webhook no válido.",
@@ -479,6 +543,35 @@
               }
             }
           },
+          "401": {
+            "description": {
+              "en": "Unauthorized.",
+              "pt": "Unauthorized.",
+              "es": "Unauthorized."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "invalid token",
+                          "description": {
+                            "en": "Invalid token.",
+                            "es": "Token no válido.",
+                            "pt": "Token inválido."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
           "409": {
             "description": {
               "en": "Conflict.",
@@ -507,12 +600,467 @@
                 }
               }
             }
-          },
-          "401": {
+          }
+        },
+        "title": {
+          "en": "Create a new configuration",
+          "pt": "Criar uma nova configuração",
+          "es": "Crear una nueva configuración"
+        }
+      },
+      "put": {
+        "tags": [
+          "mp-point",
+          "mp-point"
+        ],
+        "description": {
+          "en": "",
+          "pt": "",
+          "es": "Actualiza las configuraciones predeterminadas de tus reportes cuando sea necesario."
+        },
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
             "description": {
-              "en": "Error.",
-              "pt": "Erro.",
-              "es": "Error."
+              "en": "",
+              "pt": "",
+              "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
+            },
+            "schema": {
+              "type": "string",
+              "example": "Bearer <TOKEN>"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": {
+            "en": "",
+            "pt": "",
+            "es": "Estos son los campos necesarios para la actulizacion de una configuracion para el reportes de liberacion"
+          },
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "columns": {
+                    "type": "array",
+                    "required": true,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "key": {
+                          "type": "string",
+                          "example": "SOURCE_ID",
+                          "description": {
+                            "es": "Nombre de la columna del reporte  que se desea presentar en el reporte.",
+                            "pt": "",
+                            "en": ""
+                          }
+                        }
+                      }
+                    },
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección Glossário -> https://www.mercadopago.com.co/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use"
+                    }
+                  },
+                  "file_name_prefix": {
+                    "type": "string",
+                    "required": true,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Prefijo que compone el nombre del reporte una vez generado y listo para descargar."
+                    },
+                    "example": "conciliation-settlement-report"
+                  },
+                  "frequency": {
+                    "type": "object",
+                    "required": true,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Indica la frecuencia diaria, semanal o mensual de los reportes programados."
+                    },
+                    "properties": {
+                      "hour": {
+                        "required": true,
+                        "type": "number",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                        },
+                        "example": 0
+                      },
+                      "value": {
+                        "required": true,
+                        "type": "number",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                        },
+                        "example": 1
+                      },
+                      "type": {
+                        "required": true,
+                        "type": "string",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "indica el tipo de frecuencia: daily (diaria), weekly (semanal) y monthly (mensual)"
+                        },
+                        "example": "monthly"
+                      }
+                    }
+                  },
+                  "sftp_info": {
+                    "type": "object",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Proporciona los datos de conexión necesarios para que podamos acceder a tu servidor."
+                    },
+                    "properties": {
+                      "server": {
+                        "type": "string",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "URL o dirección IP (Pública) del servidor"
+                        },
+                        "example": "sftp.myserver.com"
+                      },
+                      "password": {
+                        "type": "string",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "Contraseña del usuario con el cual estableceremos la conexión."
+                        },
+                        "example": "mypassword"
+                      },
+                      "remote_dir": {
+                        "type": "string",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "Carpeta en la que depositaremos tus reportes."
+                        },
+                        "example": "/myfolder"
+                      },
+                      "port": {
+                        "type": "number",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "Puerto empleado para establecer la conexión"
+                        },
+                        "example": 22
+                      },
+                      "username": {
+                        "type": "string",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "Usuario con el cual nos autenticaremos en tu servidor."
+                        },
+                        "example": "username"
+                      }
+                    }
+                  },
+                  "separator": {
+                    "type": "string",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma."
+                    },
+                    "example": ";"
+                  },
+                  "display_timezone": {
+                    "type": "string",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora."
+                    },
+                    "example": "GMT-04"
+                  },
+                  "report_translation": {
+                    "type": "string",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Permite cambiar el idioma predeterminado de los encabezados de las columnas. En caso de habilitarlo, se recomienda verificar que funcionen correctamente las integraciones con archivos de Excel (.xlsx) que permiten conciliar de forma automática.\n\nSi la integración no funciona bien, asegúrate de actualizarla tomando como referencia los nuevos encabezados.\n\nIdiomas soportados:\n\nen: Inglés\nes: Español neutro\npt: Portugués\n"
+                    },
+                    "example": "es"
+                  },
+                  "notification_email_list": {
+                    "type": "array",
+                    "required": false,
+                    "items": {
+                      "type": "object",
+                      "description": {
+                        "en": "",
+                        "pt": "",
+                        "es": "Permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                      },
+                      "properties": {
+                        "email": {
+                          "type": "string",
+                          "description": {
+                            "en": "",
+                            "pt": "",
+                            "es": "correos electrónicos"
+                          },
+                          "example": "example@email.com"
+                        }
+                      }
+                    }
+                  },
+                  "refund_detailed": {
+                    "type": "boolean",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago."
+                    },
+                    "example": true
+                  },
+                  "include_withdrawal": {
+                    "type": "boolean",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Incluye los retiros de dinero en el reporte."
+                    },
+                    "example": true
+                  },
+                  "coupon_detailed": {
+                    "type": "boolean",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Suma una columna para mostrar el detalle de los cupones de descuento."
+                    },
+                    "example": true
+                  },
+                  "check_available_balance": {
+                    "type": "boolean",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "(read_only) Saldo antes y después de realizar un retiro de dinero que explica el balance de la cuenta. (Esta configuración es solo informativa. Debe excluirse para comprobaciones del balance y/o saldo de cuenta)"
+                    },
+                    "example": true
+                  },
+                  "compensate_detail": {
+                    "type": "boolean",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Bloqueos y desbloqueos de dinero que se compensan entre sí y que no afectan el saldo final. Ayuda a entender cómo se conforma el balance final del reporte, en una lectura cronológica (recomendado si tienes un volumen alto de transacciones)."
+                    },
+                    "example": true
+                  },
+                  "scheduled": {
+                    "type": "boolean",
+                    "required": false,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Campo informativo que indica si ya existen reportes programados en la cuenta del usuario.\n- True: La generación automática está activada. - False: La generación automática está desactivada."
+                    },
+                    "example": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": {
+              "en": "ok",
+              "pt": "",
+              "es": "ok"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": {
+                    "en": "",
+                    "pt": "",
+                    "es": "El API responderá con una estructura JSON cuyas propiedades representarán la configuración que has actualizado"
+                  },
+                  "type": "object",
+                  "properties": {
+                    "file_name_prefix": {
+                      "type": "string",
+                      "description": {
+                        "en": "",
+                        "pt": "",
+                        "es": "Prefijo que compone el nombre del reporte una vez generado y listo para descargar."
+                      },
+                      "example": "release-report-USER_ID"
+                    },
+                    "notification_email_list": {
+                      "type": "array",
+                      "required": false,
+                      "items": {
+                        "type": "object",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "Permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                        },
+                        "properties": {
+                          "email": {
+                            "type": "string",
+                            "description": {
+                              "en": "",
+                              "pt": "",
+                              "es": "correos electrónicos"
+                            },
+                            "example": "example@email.com"
+                          }
+                        }
+                      }
+                    },
+                    "display_timezone": {
+                      "type": "string",
+                      "description": {
+                        "es": "Determina la fecha y la hora que se visualiza en los reportes",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "GMT-04"
+                    },
+                    "include_withdrawal_at_end": {
+                      "type": "boolean",
+                      "description": {
+                        "es": "indica si se deben incluir las transacciones de retiro que ocurran al final del intervalo de fechas especificado en el reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": true
+                    },
+                    "scheduled": {
+                      "type": "boolean",
+                      "description": {
+                        "es": "Indica si ya existen reportes programados en la cuenta del usuario.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": false
+                    },
+                    "execute_after_withdrawal": {
+                      "type": "boolean",
+                      "description": {
+                        "es": "parámetro controla si el reporte se ejecutará después de que se realice un retiro",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": false
+                    },
+                    "columns": {
+                      "type": "array",
+                      "required": true,
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "key": {
+                            "type": "string",
+                            "example": "SOURCE_ID",
+                            "description": {
+                              "es": "Nombre de la columna del reporte  que se desea presentar en el reporte.",
+                              "pt": "",
+                              "en": ""
+                            }
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "",
+                        "pt": "",
+                        "es": "Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección Glossário -> https://www.mercadopago.com.co/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use"
+                      }
+                    },
+                    "report_translation": {
+                      "type": "string",
+                      "description": {
+                        "es": "Idioma configurado del reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "es"
+                    },
+                    "frequency": {
+                      "type": "object",
+                      "required": true,
+                      "description": {
+                        "en": "",
+                        "pt": "",
+                        "es": "Indica la frecuencia diaria, semanal o mensual del reporte programado."
+                      },
+                      "properties": {
+                        "hour": {
+                          "required": true,
+                          "type": "number",
+                          "description": {
+                            "en": "",
+                            "pt": "",
+                            "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                          },
+                          "example": 0
+                        },
+                        "value": {
+                          "required": true,
+                          "type": "number",
+                          "description": {
+                            "en": "",
+                            "pt": "",
+                            "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                          },
+                          "example": 1
+                        },
+                        "type": {
+                          "required": true,
+                          "type": "string",
+                          "description": {
+                            "en": "",
+                            "pt": "",
+                            "es": "indica el tipo de frecuencia: daily (diaria), weekly (semanal) y monthly (mensual)"
+                          },
+                          "example": "monthly"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
             },
             "content": {
               "application/json": {
@@ -523,11 +1071,104 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "Invalid token",
+                          "title": "Invalid file_name_prefix",
                           "description": {
-                            "en": "Invalid token.",
-                            "es": "Token no válido.",
-                            "pt": "Token inválido."
+                            "en": "",
+                            "es": "Invalid file name prefix",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "Invalid execute_after_withdrawal",
+                          "description": {
+                            "en": "",
+                            "es": "invalid execute after withdrawal",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "Invalid columns",
+                          "description": {
+                            "en": "",
+                            "es": "Invalid columns",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "Invalid frequency",
+                          "description": {
+                            "en": "",
+                            "es": "Invalid frequency",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "Invalid sftp info",
+                          "description": {
+                            "en": "",
+                            "es": "Invalid sftp info",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "Invalid web hook",
+                          "description": {
+                            "en": "",
+                            "es": "Invalid web hook",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "Invalid file config",
+                          "description": {
+                            "en": "",
+                            "es": "Invalid file config",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "Invalid report_language",
+                          "description": {
+                            "en": "",
+                            "es": "Invalid report language",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "Invalid notification_email_list",
+                          "description": {
+                            "en": "",
+                            "es": "Invalid notification email list",
+                            "pt": ""
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Unauthorized",
+              "pt": "Unauthorized",
+              "es": "Unauthorized"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "invalid token",
+                          "description": {
+                            "en": "",
+                            "es": "invalid token",
+                            "pt": ""
                           }
                         }
                       ]
@@ -539,9 +1180,1531 @@
           }
         },
         "title": {
-          "en": "Create a new configuration",
-          "pt": "Criar uma nova configuração",
-          "es": "Crear una nueva configuración"
+          "en": "",
+          "pt": "",
+          "es": "Actualizar configuraciones"
+        }
+      },
+      "get": {
+        "tags": [
+          "mp-point",
+          "mp-point"
+        ],
+        "description": {
+          "en": "",
+          "pt": "",
+          "es": "Consulta la configuración actual de tus reportes."
+        },
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "description": {
+              "en": "",
+              "pt": "",
+              "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
+            },
+            "schema": {
+              "type": "string",
+              "example": "Bearer <TOKEN>"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "en": "ok",
+              "pt": "",
+              "es": "ok"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": {
+                    "en": "",
+                    "pt": "",
+                    "es": "El API responderá con una estructura JSON cuyas propiedades representarán la configuración que has actualizado"
+                  },
+                  "type": "object",
+                  "properties": {
+                    "file_name_prefix": {
+                      "type": "string",
+                      "description": {
+                        "en": "",
+                        "pt": "",
+                        "es": "Prefijo que compone el nombre del reporte una vez generado y listo para descargar."
+                      },
+                      "example": "release-report-USER_ID"
+                    },
+                    "notification_email_list": {
+                      "type": "array",
+                      "required": false,
+                      "items": {
+                        "type": "object",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "Permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                        },
+                        "properties": {
+                          "email": {
+                            "type": "string",
+                            "description": {
+                              "en": "",
+                              "pt": "",
+                              "es": "correos electrónicos"
+                            },
+                            "example": "example@email.com"
+                          }
+                        }
+                      }
+                    },
+                    "display_timezone": {
+                      "type": "string",
+                      "description": {
+                        "es": "Determina la fecha y la hora que se visualiza en los reportes",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "GMT-04"
+                    },
+                    "include_withdrawal_at_end": {
+                      "type": "boolean",
+                      "description": {
+                        "es": "indica si se deben incluir las transacciones de retiro que ocurran al final del intervalo de fechas especificado en el reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": true
+                    },
+                    "scheduled": {
+                      "type": "boolean",
+                      "description": {
+                        "es": "Indica si ya existen reportes programados en la cuenta del usuario.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": false
+                    },
+                    "execute_after_withdrawal": {
+                      "type": "boolean",
+                      "description": {
+                        "es": " parámetro controla si el reporte se ejecutará después de que se realice un retiro",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": false
+                    },
+                    "columns": {
+                      "type": "array",
+                      "required": true,
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "key": {
+                            "type": "string",
+                            "example": "SOURCE_ID",
+                            "description": {
+                              "es": "Nombre de la columna del reporte  que se desea presentar en el reporte.",
+                              "pt": "",
+                              "en": ""
+                            }
+                          }
+                        }
+                      },
+                      "description": {
+                        "en": "",
+                        "pt": "",
+                        "es": "Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección Glossário -> https://www.mercadopago.com.co/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use"
+                      }
+                    },
+                    "report_translation": {
+                      "type": "string",
+                      "description": {
+                        "es": "Idioma configurado del reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "es"
+                    },
+                    "frequency": {
+                      "type": "object",
+                      "required": true,
+                      "description": {
+                        "en": "",
+                        "pt": "",
+                        "es": "Indica la frecuencia diaria, semanal o mensual del reporte programado."
+                      },
+                      "properties": {
+                        "hour": {
+                          "required": true,
+                          "type": "number",
+                          "description": {
+                            "en": "",
+                            "pt": "",
+                            "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                          },
+                          "example": 0
+                        },
+                        "value": {
+                          "required": true,
+                          "type": "number",
+                          "description": {
+                            "en": "",
+                            "pt": "",
+                            "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                          },
+                          "example": 1
+                        },
+                        "type": {
+                          "required": true,
+                          "type": "string",
+                          "description": {
+                            "en": "",
+                            "pt": "",
+                            "es": "indica el tipo de frecuencia: daily (diaria), weekly (semanal) y monthly (mensual)"
+                          },
+                          "example": "monthly"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Unauthorized",
+              "pt": "Unauthorized",
+              "es": "Unauthorized"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "invalid token",
+                          "description": {
+                            "en": "",
+                            "es": "invalid token",
+                            "pt": ""
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "",
+          "pt": "",
+          "es": "Consultar configuraciones"
+        }
+      }
+    },
+    "/v1/account/release_report": {
+      "post": {
+        "tags": [
+          "mp-point",
+          "mp-point"
+        ],
+        "description": {
+          "en": "",
+          "pt": "",
+          "es": "generar manualmente un nuevo reporte dentro de un intervalo de fechas específico."
+        },
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "description": {
+              "en": "",
+              "pt": "",
+              "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
+            },
+            "schema": {
+              "type": "string",
+              "example": "Bearer <TOKEN>"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": {
+            "en": "",
+            "pt": "",
+            "es": "Estos son los campos necesarios para generar manualmente un nuevo reporte"
+          },
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "begin_date": {
+                    "type": "string",
+                    "required": true,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Este campo indica la fecha y hora de inicio del intervalo para el reporte.en el huso horario UTC (indicado por la 'Z' al final, que significa \"Zulu time\" o tiempo coordinado universal)"
+                    },
+                    "example": "2019-05-01T00:00:00Z"
+                  },
+                  "end_date": {
+                    "type": "string",
+                    "required": true,
+                    "description": {
+                      "en": "",
+                      "pt": "",
+                      "es": "Este campo indica  la fecha y hora de finalización del intervalo para el reporte.en el huso horario UTC (indicado por la 'Z' al final, que significa \"Zulu time\" o tiempo coordinado universal)"
+                    },
+                    "example": "2019-06-01T00:00:00Z"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": {
+              "en": "Accepted",
+              "pt": "",
+              "es": "Accepted"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": {
+                    "en": "",
+                    "pt": "",
+                    "es": "El API responderá con una estructura JSON con información relevante a tu pedido de generación"
+                  },
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "description": {
+                        "en": "",
+                        "pt": "",
+                        "es": "Este campo indica el identificador único del reporte generado."
+                      },
+                      "example": 99336983670
+                    },
+                    "account_id": {
+                      "type": "number",
+                      "description": {
+                        "es": "Este campo indica el identificador único de la cuenta asociada al reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": 167345291
+                    },
+                    "begin_date": {
+                      "type": "string",
+                      "description": {
+                        "es": "Es la fecha y hora de inicio del intervalo del reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "2022-08-01T03:00:00Z"
+                    },
+                    "created_from": {
+                      "type": "string",
+                      "description": {
+                        "es": "Indica cómo se generó el reporte. En este caso",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "manual"
+                    },
+                    "currency_id": {
+                      "type": "string",
+                      "description": {
+                        "es": "Es el identificador de la moneda utilizada en el reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "ARS"
+                    },
+                    "end_date": {
+                      "type": "string",
+                      "description": {
+                        "es": "Representa la fecha y hora de finalización del intervalo del reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "2022-08-08T02:59:59Z"
+                    },
+                    "generation_date": {
+                      "type": "string",
+                      "description": {
+                        "es": "Es la fecha y hora en la que se generó la respuesta del reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "2024-02-16T15:55:22.258-04:00"
+                    },
+                    "internal_management": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "Lista que contiene información interna de gestión del reporte, como la visibilidad, notificaciones y configuraciones de tiempo."
+                        },
+                        "properties": {
+                          "is_visible": {
+                            "type": "boolean",
+                            "description": {
+                              "en": "",
+                              "pt": "",
+                              "es": "Indica si el reporte es visible o no"
+                            },
+                            "example": true
+                          },
+                          "notify": {
+                            "type": "boolean",
+                            "description": {
+                              "en": "",
+                              "pt": "",
+                              "es": "Controla si se notificará al correo electrónico asociado sobre eventos relacionados con el reporte."
+                            },
+                            "example": false
+                          },
+                          "use_exact_time": {
+                            "type": "boolean",
+                            "description": {
+                              "en": "",
+                              "pt": "",
+                              "es": "Determina si se utilizarán fechas y horas exactas en el reporte"
+                            },
+                            "example": true
+                          }
+                        }
+                      }
+                    },
+                    "is_reserve": {
+                      "type": "boolean",
+                      "description": {
+                        "es": "Indica si el reporte es una reserva o no. ",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": false
+                    },
+                    "is_test": {
+                      "type": "boolean",
+                      "description": {
+                        "es": "Indica si el reporte es de prueba o no ",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": false
+                    },
+                    "last_modified": {
+                      "type": "string",
+                      "description": {
+                        "es": "Es la fecha y hora de la última modificación en el reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "2024-02-16T15:55:22.261-04:00"
+                    },
+                    "report_id": {
+                      "type": "number",
+                      "description": {
+                        "es": "Es el identificador del reporte generado, si está disponible",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": 17012160
+                    },
+                    "retries": {
+                      "type": "number",
+                      "description": {
+                        "es": "Representa el número de intentos realizados para generar el reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": 0
+                    },
+                    "status": {
+                      "type": "string",
+                      "description": {
+                        "es": "Indica el estado del reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "processed"
+                    },
+                    "sub_type": {
+                      "type": "string",
+                      "description": {
+                        "es": "Indica el subtipo de reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "release"
+                    },
+                    "user_id": {
+                      "type": "number",
+                      "description": {
+                        "es": "Es el identificador único del usuario asociado al reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": 123456789
+                    },
+                    "format": {
+                      "type": "string",
+                      "description": {
+                        "es": "Indica el formato del reporte generado",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "CSV"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Bad request",
+              "pt": "Bad request",
+              "es": "Bad request"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "invalid_begin_date",
+                          "description": {
+                            "en": "",
+                            "es": "Must specify begin_date parameter",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "invalid_end_date",
+                          "description": {
+                            "en": "",
+                            "es": "Must specify end_date parameter",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "end_date_before_begin_date",
+                          "description": {
+                            "en": "",
+                            "es": "Begin date should be before end date",
+                            "pt": ""
+                          }
+                        },
+                        {
+                          "title": "end_date_before_begin_date",
+                          "description": {
+                            "en": "",
+                            "es": "Begin date should be before end date",
+                            "pt": ""
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Unauthorized",
+              "pt": "Unauthorized",
+              "es": "Unauthorized"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "invalid token",
+                          "description": {
+                            "en": "",
+                            "es": "invalid token",
+                            "pt": ""
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "title": {
+        "en": "",
+        "pt": "",
+        "es": "Crear reporte"
+      }
+    },
+    "/v1/account/release_report/list": {
+      "get": {
+        "tags": [
+          "mp-point",
+          "mp-point"
+        ],
+        "description": {
+          "en": "",
+          "pt": "",
+          "es": "la lista de informes que has generado"
+        },
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "description": {
+              "en": "",
+              "pt": "",
+              "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
+            },
+            "schema": {
+              "type": "string",
+              "example": "Bearer <TOKEN>"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "en": "Ok",
+              "pt": "Ok",
+              "es": "Ok"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": {
+                    "en": "",
+                    "pt": "",
+                    "es": "La API responderá con una estructura JSON Array en la cual encontrarás el listado de todos los reportes que has generado."
+                  },
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "description": {
+                        "en": "",
+                        "pt": "",
+                        "es": "Este campo indica el identificador único del reporte generado."
+                      },
+                      "example": 99336983670
+                    },
+                    "account_id": {
+                      "type": "number",
+                      "description": {
+                        "es": "Este campo indica el identificador único de la cuenta asociada al reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": 167345291
+                    },
+                    "begin_date": {
+                      "type": "string",
+                      "description": {
+                        "es": "Es la fecha y hora de inicio del intervalo del reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "2022-08-01T03:00:00Z"
+                    },
+                    "created_from": {
+                      "type": "string",
+                      "description": {
+                        "es": "Indica cómo se generó el reporte. En este caso",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "manual"
+                    },
+                    "currency_id": {
+                      "type": "string",
+                      "description": {
+                        "es": "Es el identificador de la moneda utilizada en el reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "ARS"
+                    },
+                    "end_date": {
+                      "type": "string",
+                      "description": {
+                        "es": "Representa la fecha y hora de finalización del intervalo del reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "2022-08-08T02:59:59Z"
+                    },
+                    "generation_date": {
+                      "type": "string",
+                      "description": {
+                        "es": "Es la fecha y hora en la que se generó la respuesta del reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "2024-02-16T15:55:22.258-04:00"
+                    },
+                    "internal_management": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "Lista que contiene información interna de gestión del reporte, como la visibilidad, notificaciones y configuraciones de tiempo."
+                        },
+                        "properties": {
+                          "is_visible": {
+                            "type": "boolean",
+                            "description": {
+                              "en": "",
+                              "pt": "",
+                              "es": "Indica si el reporte es visible o no"
+                            },
+                            "example": true
+                          },
+                          "notify": {
+                            "type": "boolean",
+                            "description": {
+                              "en": "",
+                              "pt": "",
+                              "es": "Controla si se notificará al correo electrónico asociado sobre eventos relacionados con el reporte."
+                            },
+                            "example": false
+                          },
+                          "use_exact_time": {
+                            "type": "boolean",
+                            "description": {
+                              "en": "",
+                              "pt": "",
+                              "es": "Determina si se utilizarán fechas y horas exactas en el reporte"
+                            },
+                            "example": true
+                          }
+                        }
+                      }
+                    },
+                    "is_reserve": {
+                      "type": "boolean",
+                      "description": {
+                        "es": "Indica si el reporte es una reserva o no. ",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": false
+                    },
+                    "is_test": {
+                      "type": "boolean",
+                      "description": {
+                        "es": "Indica si el reporte es de prueba o no ",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": false
+                    },
+                    "last_modified": {
+                      "type": "string",
+                      "description": {
+                        "es": "Es la fecha y hora de la última modificación en el reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "2024-02-16T15:55:22.261-04:00"
+                    },
+                    "report_id": {
+                      "type": "number",
+                      "description": {
+                        "es": "Es el identificador del reporte generado, si está disponible",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": 17012160
+                    },
+                    "retries": {
+                      "type": "number",
+                      "description": {
+                        "es": "Representa el número de intentos realizados para generar el reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": 0
+                    },
+                    "status": {
+                      "type": "string",
+                      "description": {
+                        "es": "Indica el estado del reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "processed"
+                    },
+                    "sub_type": {
+                      "type": "string",
+                      "description": {
+                        "es": "Indica el subtipo de reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "release"
+                    },
+                    "user_id": {
+                      "type": "number",
+                      "description": {
+                        "es": "Es el identificador único del usuario asociado al reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": 123456789
+                    },
+                    "format": {
+                      "type": "string",
+                      "description": {
+                        "es": "Indica el formato del reporte generado",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "CSV"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Unauthorized",
+              "pt": "Unauthorized",
+              "es": "Unauthorized"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "invalid token",
+                          "description": {
+                            "en": "",
+                            "es": "invalid token",
+                            "pt": ""
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "title": {
+        "en": "",
+        "pt": "",
+        "es": "Consultar reporte"
+      }
+    },
+    "/v1/account/release_report/schedule": {
+      "post": {
+        "tags": [
+          "mp-point",
+          "mp-point",
+          "mp-point"
+        ],
+        "description": {
+          "en": "",
+          "pt": "",
+          "es": "Programa la generación automática del reporte utilizando la frecuencia asignada durante la configuración de tus reportes. Al consumir este servicio, la propiedad scheduled de tu configuración se actualizará automáticamente a true"
+        },
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "description": {
+              "en": "",
+              "pt": "",
+              "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
+            },
+            "schema": {
+              "type": "string",
+              "example": "Bearer <TOKEN>"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": {
+              "es": "Created",
+              "pt": "Created",
+              "en": "Created"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": {
+                    "en": "",
+                    "pt": "",
+                    "es": "El API responderá con una estructura JSON con información relevante a tu pedido de generación"
+                  },
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "description": {
+                        "en": "",
+                        "pt": "",
+                        "es": "Este campo indica el identificador único del reporte generado."
+                      },
+                      "example": 99336983670
+                    },
+                    "account_id": {
+                      "type": "number",
+                      "description": {
+                        "es": "Este campo indica el identificador único de la cuenta asociada al reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": 167345291
+                    },
+                    "begin_date": {
+                      "type": "string",
+                      "description": {
+                        "es": "Es la fecha y hora de inicio del intervalo del reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "2022-08-01T03:00:00Z"
+                    },
+                    "created_from": {
+                      "type": "string",
+                      "description": {
+                        "es": "Indica cómo se generó el reporte. En este caso",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "schedule"
+                    },
+                    "currency_id": {
+                      "type": "string",
+                      "description": {
+                        "es": "Es el identificador de la moneda utilizada en el reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "ARS"
+                    },
+                    "end_date": {
+                      "type": "string",
+                      "description": {
+                        "es": "Representa la fecha y hora de finalización del intervalo del reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "2022-08-08T02:59:59Z"
+                    },
+                    "generation_date": {
+                      "type": "string",
+                      "description": {
+                        "es": "Es la fecha y hora en la que se generó la respuesta del reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "2024-02-16T15:55:22.258-04:00"
+                    },
+                    "internal_management": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "Lista que contiene información interna de gestión del reporte, como la visibilidad, notificaciones y configuraciones de tiempo."
+                        },
+                        "properties": {
+                          "is_visible": {
+                            "type": "boolean",
+                            "description": {
+                              "en": "",
+                              "pt": "",
+                              "es": "Indica si el reporte es visible o no"
+                            },
+                            "example": true
+                          },
+                          "notify": {
+                            "type": "boolean",
+                            "description": {
+                              "en": "",
+                              "pt": "",
+                              "es": "Controla si se notificará al correo electrónico asociado sobre eventos relacionados con el reporte."
+                            },
+                            "example": false
+                          },
+                          "use_exact_time": {
+                            "type": "boolean",
+                            "description": {
+                              "en": "",
+                              "pt": "",
+                              "es": "Determina si se utilizarán fechas y horas exactas en el reporte"
+                            },
+                            "example": true
+                          }
+                        }
+                      }
+                    },
+                    "is_reserve": {
+                      "type": "boolean",
+                      "description": {
+                        "es": "Indica si el reporte es una reserva o no. ",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": false
+                    },
+                    "is_test": {
+                      "type": "boolean",
+                      "description": {
+                        "es": "Indica si el reporte es de prueba o no ",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": false
+                    },
+                    "last_modified": {
+                      "type": "string",
+                      "description": {
+                        "es": "Es la fecha y hora de la última modificación en el reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "2024-02-16T15:55:22.261-04:00"
+                    },
+                    "report_id": {
+                      "type": "number",
+                      "description": {
+                        "es": "Es el identificador del reporte generado, si está disponible",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": 17012160
+                    },
+                    "retries": {
+                      "type": "number",
+                      "description": {
+                        "es": "Representa el número de intentos realizados para generar el reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": 0
+                    },
+                    "status": {
+                      "type": "string",
+                      "description": {
+                        "es": "Indica el estado del reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "processed"
+                    },
+                    "sub_type": {
+                      "type": "string",
+                      "description": {
+                        "es": "Indica el subtipo de reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "release"
+                    },
+                    "user_id": {
+                      "type": "number",
+                      "description": {
+                        "es": "Es el identificador único del usuario asociado al reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": 123456789
+                    },
+                    "format": {
+                      "type": "string",
+                      "description": {
+                        "es": "Indica el formato del reporte generado",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "CSV"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Unauthorized",
+              "pt": "Unauthorized",
+              "es": "Unauthorized"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "invalid token",
+                          "description": {
+                            "en": "",
+                            "es": "invalid token",
+                            "pt": ""
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "",
+          "pt": "",
+          "es": "Activar generación automática"
+        }
+      },
+      "delete": {
+        "tags": [
+          "mp-point",
+          "mp-point",
+          "mp-point"
+        ],
+        "description": {
+          "en": "",
+          "pt": "",
+          "es": "Puedes desactivar la generación automática de tus reportes en cualquier momento, cuando lo necesites. Al consumir este servicio, la propiedad scheduled de tu configuración se actualizará automáticamente a false."
+        },
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "description": {
+              "en": "",
+              "pt": "",
+              "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
+            },
+            "schema": {
+              "type": "string",
+              "example": "Bearer <TOKEN>"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "es": "ok",
+              "pt": "ok",
+              "en": "ok"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": {
+                    "en": "",
+                    "pt": "",
+                    "es": "El API responderá con una estructura JSON con información relevante a tu pedido de generación"
+                  },
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "description": {
+                        "en": "",
+                        "pt": "",
+                        "es": "Este campo indica el identificador único del reporte generado."
+                      },
+                      "example": 99336983670
+                    },
+                    "account_id": {
+                      "type": "number",
+                      "description": {
+                        "es": "Este campo indica el identificador único de la cuenta asociada al reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": 167345291
+                    },
+                    "begin_date": {
+                      "type": "string",
+                      "description": {
+                        "es": "Es la fecha y hora de inicio del intervalo del reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "2022-08-01T03:00:00Z"
+                    },
+                    "created_from": {
+                      "type": "string",
+                      "description": {
+                        "es": "Indica cómo se generó el reporte. En este caso",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "schedule"
+                    },
+                    "currency_id": {
+                      "type": "string",
+                      "description": {
+                        "es": "Es el identificador de la moneda utilizada en el reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "ARS"
+                    },
+                    "end_date": {
+                      "type": "string",
+                      "description": {
+                        "es": "Representa la fecha y hora de finalización del intervalo del reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "2022-08-08T02:59:59Z"
+                    },
+                    "generation_date": {
+                      "type": "string",
+                      "description": {
+                        "es": "Es la fecha y hora en la que se generó la respuesta del reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "2024-02-16T15:55:22.258-04:00"
+                    },
+                    "internal_management": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "description": {
+                          "en": "",
+                          "pt": "",
+                          "es": "Lista que contiene información interna de gestión del reporte, como la visibilidad, notificaciones y configuraciones de tiempo."
+                        },
+                        "properties": {
+                          "is_visible": {
+                            "type": "boolean",
+                            "description": {
+                              "en": "",
+                              "pt": "",
+                              "es": "Indica si el reporte es visible o no"
+                            },
+                            "example": true
+                          },
+                          "notify": {
+                            "type": "boolean",
+                            "description": {
+                              "en": "",
+                              "pt": "",
+                              "es": "Controla si se notificará al correo electrónico asociado sobre eventos relacionados con el reporte."
+                            },
+                            "example": false
+                          },
+                          "use_exact_time": {
+                            "type": "boolean",
+                            "description": {
+                              "en": "",
+                              "pt": "",
+                              "es": "Determina si se utilizarán fechas y horas exactas en el reporte"
+                            },
+                            "example": true
+                          }
+                        }
+                      }
+                    },
+                    "is_reserve": {
+                      "type": "boolean",
+                      "description": {
+                        "es": "Indica si el reporte es una reserva o no. ",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": false
+                    },
+                    "is_test": {
+                      "type": "boolean",
+                      "description": {
+                        "es": "Indica si el reporte es de prueba o no ",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": false
+                    },
+                    "last_modified": {
+                      "type": "string",
+                      "description": {
+                        "es": "Es la fecha y hora de la última modificación en el reporte.",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "2024-02-16T15:55:22.261-04:00"
+                    },
+                    "report_id": {
+                      "type": "number",
+                      "description": {
+                        "es": "Es el identificador del reporte generado, si está disponible",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": 17012160
+                    },
+                    "retries": {
+                      "type": "number",
+                      "description": {
+                        "es": "Representa el número de intentos realizados para generar el reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": 0
+                    },
+                    "status": {
+                      "type": "string",
+                      "description": {
+                        "es": "Indica el estado del reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "deleted"
+                    },
+                    "sub_type": {
+                      "type": "string",
+                      "description": {
+                        "es": "Indica el subtipo de reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "release"
+                    },
+                    "user_id": {
+                      "type": "number",
+                      "description": {
+                        "es": "Es el identificador único del usuario asociado al reporte",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": 123456789
+                    },
+                    "format": {
+                      "type": "string",
+                      "description": {
+                        "es": "Indica el formato del reporte generado",
+                        "pt": "",
+                        "en": ""
+                      },
+                      "example": "CSV"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Unauthorized",
+              "pt": "Unauthorized",
+              "es": "Unauthorized"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "invalid token",
+                          "description": {
+                            "en": "",
+                            "es": "invalid token",
+                            "pt": ""
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "",
+          "pt": "",
+          "es": "Desactivar generación automática"
+        }
+      }
+    },
+    "/v1/account/release_report/{file_name}": {
+      "get": {
+        "tags": [
+          "mp-point",
+          "mp-point"
+        ],
+        "description": {
+          "en": "",
+          "pt": "",
+          "es": "Utilizando el atributo file_name, puedes descargar cualquiera de tus reportes"
+        },
+        "parameters": [
+          {
+            "name": "file_name",
+            "in": "path",
+            "description": {
+              "en": "",
+              "pt": "",
+              "es": "El parámetro \"file_name\" corresponde al nombre del archivo del reporte que deseas descargar."
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "reserve-release-report.csv"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "description": {
+              "en": "",
+              "pt": "",
+              "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
+            },
+            "schema": {
+              "type": "string",
+              "example": "Bearer <TOKEN>"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "es": "OK",
+              "pt": "OK",
+              "en": "OK"
+            },
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "description": {
+                    "en": "",
+                    "pt": "",
+                    "es": "La respuesta del API proporciona los datos del reporte solicitado,La respuesta puede contener varios campos, dependiendo de la naturaleza del reporte y los parámetros proporcionados"
+                  },
+                  "example": "DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,SELLER_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD,TAX_DETAIL,TAX_AMOUNT_TELCO,TRANSACTION_APPROVAL_DATE,POS_ID,POS_NAME,EXTERNAL_POS_ID,STORE_ID,STORE_NAME,EXTERNAL_STORE_ID,TAXES_DISAGGREGATED,METADATA,REFUND_ID"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Unauthorized",
+              "pt": "Unauthorized",
+              "es": "Unauthorized"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "invalid token",
+                          "description": {
+                            "en": "",
+                            "es": "invalid token",
+                            "pt": ""
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Not Found",
+              "pt": "Not Found",
+              "es": "Not Found"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "not_found",
+                          "description": {
+                            "en": "",
+                            "es": "Resource /account/release_report/1234234587/ not found.",
+                            "pt": ""
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "",
+          "pt": "",
+          "es": "Descargar reporte"
         }
       }
     }
