@@ -1496,9 +1496,9 @@
             "name": "advanced_payment_id",
             "in": "path",
             "description": {
-              "es": "Payment identifier",
-              "pt": "Agipayment identifier",
-              "en": "Advanced payment identifier"
+              "en": "The payment identifier.",
+              "pt": "Identificador do pagamento.",
+              "es": "El identificador de pago."
             },
             "required": true,
             "schema": {
