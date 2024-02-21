@@ -7,9 +7,9 @@
           "wallet-connect"
         ],
         "description": {
-          "en": "An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment.",
-          "pt": "Uma vinculação é um link de autorização recebido pelo comprador para permitir ao vendedor acessar a sua carteira do Mercado Pago, a fim de debitar o pagamento.",
-          "es": "Una vinculación es un link de autorización recibido por el comprador para permitir al vendedor acceder a su billetera de Mercado Pago con el fin de debitar el pago."
+          "en": "An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment",
+          "pt": "Uma vinculação é um link de autorização recebido pelo comprador para permitir ao vendedor acessar a sua carteira do Mercado Pago, a fim de debitar o pagamento",
+          "es": "Una vinculación es un link de autorización recibido por el comprador para permitir al vendedor acceder a su billetera de Mercado Pago con el fin de debitar el pago"
         },
         "parameters": [
           {
@@ -206,7 +206,7 @@
         "title": {
           "en": "Create agreement",
           "pt": "Criar vinculação",
-          "es": "Crear vinculación"
+          "es": "Iniciar vinculación"
         }
       }
     },
@@ -402,9 +402,9 @@
           "wallet-connect"
         ],
         "description": {
-          "en": "Endpoint to cancel an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment. You will need to cancel an agreement when the vinculation flow has ended.",
-          "pt": "Endpoint para cancelar uma vinculação por ID. Uma vinculação é um link de autorização que o comprador recebe para permitir ao vendedor acessar a sua carteira do Mercado Pago a fim de debitar o pagamento. Você deve cancelar um Agreement quando o fluxo de vinculação tenha terminado.",
-          "es": "Endpoint para cancelar una vinculación por ID. Una vinculación es un link de autorización que el comprador recibe para permitir al vendedor acceder a su billetera de Mercado Pago a fin de debitar el pago. Deberás cancelar un agreement cuando el flujo de vinculación haya terminado."
+          "en": "Endpoint to cancel an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment. You will need to cancel an agreement when the vinculation flow has ended",
+          "pt": "Endpoint para cancelar uma vinculação por ID. Uma vinculação é um link de autorização que o comprador recebe para permitir ao vendedor acessar a sua carteira do Mercado Pago a fim de debitar o pagamento. Você deve cancelar um Agreement quando o fluxo de vinculação tenha terminado",
+          "es": "Endpoint para cancelar una vinculación por ID. Una vinculación es un link de autorización que el comprador recibe para permitir al vendedor acceder a su billetera de Mercado Pago a fin de debitar el pago. Deberás cancelar un agreement cuando el flujo de vinculación haya terminado"
         },
         "operationId": "cancelAgreement_DELETE",
         "parameters": [
@@ -903,9 +903,9 @@
           "wallet-connect"
         ],
         "description": {
-          "en": "Specific payments for Wallet Connect. During the agreement process, the integrator receives a \"payer token\" from the payer. This token allows the integrator to execute the payment directly from the payer's wallet. If you wish to apply discounts, it is necessary to first create a discount promise before using them.",
-          "pt": "São pagamentos específicos para Wallet Connect. Durante o processo de vinculação, o integrador recebe um \"payer token\" do pagador. Esse token permite que o integrador efetue o pagamento diretamente da carteira do pagador. Se desejar aplicar descontos, é necessário criar uma promessa de desconto antes de utilizá-los.",
-          "es": "Pagos específicos para Wallet Connect. Durante el proceso de la vinculación, el integrador recibe un \"payer token\" del pagador. Este token permite que el integrador realice el pago directamente desde la billetera del pagador. Si desea aplicar descuentos, primero es necesario crear una promesa de descuento antes de utilizarlos."
+          "en": "Specific payments for Wallet Connect. During the agreement process, the integrator receives a \"payer token\" from the payer. This token allows the integrator to execute the payment directly from the payer's wallet. If you wish to apply discounts, it is necessary to first create a discount promise before using them",
+          "pt": "São pagamentos específicos para Wallet Connect. Durante o processo de vinculação, o integrador recebe um \"payer token\" do pagador. Esse token permite que o integrador efetue o pagamento diretamente da carteira do pagador. Se desejar aplicar descontos, é necessário criar uma promessa de desconto antes de utilizá-los",
+          "es": "Pagos específicos para Wallet Connect. Durante el proceso de la vinculación, el integrador recibe un \"payer token\" del pagador. Este token permite que el integrador realice el pago directamente desde la billetera del pagador. Si desea aplicar descuentos, primero es necesario crear una promesa de descuento antes de utilizarlos"
         },
         "requestBody": {
           "description": {
@@ -1487,9 +1487,9 @@
           "wallet-connect"
         ],
         "description": {
-          "en": "This endpoint allows to perform one two actions. Capture or cancel a payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status \"cancelled\".",
-          "pt": "Este endpoint permite executar duas ações. Captura ou cancelamento de um pagamento. Para confirmar, é preciso enviar os dados de pagamento da carteira e o campo de captura em true. Para cancelar, envie os dados de pagamento da carteira e o campo status \"cancelled\".",
-          "es": "Este endpoint le permite realizar dos acciones. Capturar o cancelar un pago. Para confirmar, es necesario enviar los datos de pago de la billetera y el campo de captura en true. Para cancelar, envíe los detalles de pago de su billetera y el campo de status \"cancelled\"."
+          "en": "This endpoint allows to perform one two actions. Capture or cancel a payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status \"cancelled\"",
+          "pt": "Este endpoint permite executar duas ações. Captura ou cancelamento de um pagamento. Para confirmar, é preciso enviar os dados de pagamento da carteira e o campo de captura em true. Para cancelar, envie os dados de pagamento da carteira e o campo status \"cancelled\"",
+          "es": "Este endpoint le permite realizar dos acciones. Capturar o cancelar un pago. Para confirmar, es necesario enviar los datos de pago de la billetera y el campo de captura en true. Para cancelar, envíe los detalles de pago de su billetera y el campo de status \"cancelled\""
         },
         "parameters": [
           {
@@ -1516,9 +1516,9 @@
                   "capture": {
                     "type": "boolean",
                     "description": {
-                      "en": "This node only needs to be sent when you need to confirm an Advanced Payment. It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).",
-                      "pt": "Este node apenas necessita ser enviado quando for necessário confirmar um Advanced Payment. É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).",
-                      "es": "Este node solo debe enviarse cuando necesite confirmar un Advanced Payment. Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true)."
+                      "en": "This node only needs to be sent when you need to confirm a payment. It is a boolean field found in two-step payments (like debit card). In this type of payment, which is carried out asynchronously, the purchase value is first reserved (capture = false). This amount is captured and not debited from the account instantly. When the money is actually transferred to the collector (who receives the payment) the amount is captured (capture = true).",
+                      "pt": "Este node apenas necessita ser enviado quando for necessário confirmar um pagamento. É um campo booleano encontrado em pagamentos em duas etapas (como cartão de débito). Nesse tipo de pagamento, que é realizado de forma assíncrona, o valor da compra é reservado primeiro (capture = false). Esse valor é capturado e não debitado da conta instantaneamente. Quando o dinheiro é realmente transferido para o cobrador (quem recebe o pagamento) o valor é capturado (capture = true).",
+                      "es": "Este node solo debe enviarse cuando necesite confirmar un pago. Es un campo booleano que se encuentra en pagos de dos pasos (como tarjeta de débito). En este tipo de pago, que se realiza de forma asíncrona, primero se reserva el valor de la compra (capture = false). Esta cantidad se captura y no se debita de la cuenta al instante. Cuando el dinero se transfiere realmente al cobrador (que recibe el pago), se captura la cantidad (capture = true)."
                     },
                     "example": true
                   },
@@ -1526,9 +1526,9 @@
                     "type": "object",
                     "required": true,
                     "description": {
-                      "en": "It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.",
-                      "pt": "Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.",
-                      "es": "Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect."
+                      "en": "It indicates is a payment from a seller with a previous Wallet Connect vinculation.",
+                      "pt": "Indica que é um pagamento de um vendedor com Wallet Connect previamente vinculado.",
+                      "es": "Indica que es un pago de un vendedor con una vinculación previa de Wallet Connect."
                     },
                     "properties": {
                       "transaction_amount": {
@@ -1564,9 +1564,9 @@
                   "status": {
                     "type": "string",
                     "description": {
-                      "en": "This node only needs to be sent when you need to cancel an Advanced Payment. The value to be entered is 'cancelled'.",
-                      "pt": "Este node somente precisa ser enviado quando é necessário cancelar um Advanced Payment. O valor a ser inserido é 'cancelled'.",
-                      "es": "Este node solo debe enviarse cuando sea necesario cancelar un Advanced Payment. El valor a introducir es 'cancelado'."
+                      "en": "This node only needs to be sent when you need to cancel a payment. The value to be entered is 'cancelled'.",
+                      "pt": "Este node somente precisa ser enviado quando é necessário cancelar um pagamento. O valor a ser inserido é 'cancelled'.",
+                      "es": "Este node solo debe enviarse cuando sea necesario cancelar un pago. El valor a introducir es 'cancelado'."
                     },
                     "example": "cancelled"
                   }
@@ -1578,9 +1578,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "Advanced Payments confirmed.",
-              "pt": "Advanced Payments confirmado.",
-              "es": "Advanced Payments confirmado."
+              "en": "Payment confirmed.",
+              "pt": "Pagamento confirmado.",
+              "es": "Pago confirmado."
             },
             "content": {
               "application/json": {
@@ -1590,9 +1590,9 @@
                     "id": {
                       "type": "number",
                       "description": {
-                        "en": "Unique ID that identifies the advanced payment.",
-                        "pt": "ID único que identifica o advanced payment.",
-                        "es": "ID único que identifica el advanced payment."
+                        "en": "Unique ID that identifies the payment.",
+                        "pt": "ID único que identifica o pagamento.",
+                        "es": "ID único que identifica el pago."
                       },
                       "example": 10234567
                     },
@@ -1623,25 +1623,25 @@
                           "status": {
                             "type": "string",
                             "description": {
-                              "en": "The status of a payment made by Advanced Payments internal-api.mercadopago.com",
-                              "pt": "O status de um pagamento feito pelo Advanced Payments internal-api.mercadopago.com",
-                              "es": "El status de un pago realizado por Advanced Paymentrs internal-api.mercadopago.com"
+                              "en": "The status of a payment made by 'internal-api.mercadopago.com'.",
+                              "pt": "O status de um pagamento feito pelo 'internal-api.mercadopago.com'.",
+                              "es": "El status de un pago realizado por 'internal-api.mercadopago.com;."
                             },
                             "enum": [
                               {
                                 "title": "approved",
                                 "description": {
                                   "en": "approved",
-                                  "es": "approved",
-                                  "pt": "approved"
+                                  "es": "aprobado",
+                                  "pt": "aprovado"
                                 }
                               },
                               {
                                 "title": "in_process",
                                 "description": {
                                   "en": "in process",
-                                  "es": "in process",
-                                  "pt": "in process"
+                                  "es": "en proceso",
+                                  "pt": "em processo"
                                 }
                               }
                             ]
@@ -1667,24 +1667,24 @@
                                 "title": "credit_card",
                                 "description": {
                                   "en": "credit card",
-                                  "es": "credit card",
-                                  "pt": "credit card"
+                                  "es": "tarjeta de crédito",
+                                  "pt": "cartão de crédito"
                                 }
                               },
                               {
                                 "title": "debit_card",
                                 "description": {
                                   "en": "debit card",
-                                  "es": "debit card",
-                                  "pt": "debit card"
+                                  "es": "tarjeta de débito",
+                                  "pt": "cartão de débito"
                                 }
                               },
                               {
                                 "title": "account_money",
                                 "description": {
                                   "en": "account money",
-                                  "es": "account money",
-                                  "pt": "account money"
+                                  "es": "dinero en cuenta",
+                                  "pt": "dinheiro em conta"
                                 }
                               }
                             ]
@@ -1790,17 +1790,17 @@
                       "items": {
                         "type": "object",
                         "description": {
-                          "en": "List of payments that correspond to each Seller.",
-                          "pt": "Lista de pagamentos que correspondem a cada Seller.",
-                          "es": "Lista de pagos que corresponden a cada Seller."
+                          "en": "List of payments that correspond to each seller.",
+                          "pt": "Lista de pagamentos que correspondem a cada vendedor.",
+                          "es": "Lista de pagos que corresponden a cada vendedor."
                         },
                         "properties": {
                           "collector_id": {
                             "type": "string",
                             "description": {
-                              "en": "Merchant Mercado Pago account id.",
-                              "pt": "ID da conta Mercado Pago do Merchant.",
-                              "es": "Identificación de la cuenta de Mercado Pago del Merchant."
+                              "en": "Merchant Mercado Pago account ID.",
+                              "pt": "ID da conta Mercado Pago do merchant.",
+                              "es": "Identificación de la cuenta de Mercado Pago del merchant."
                             },
                             "example": "collectorId"
                           }
@@ -1842,18 +1842,18 @@
                     "date_created": {
                       "type": "string",
                       "description": {
-                        "en": "Advance Payment creation date.",
-                        "pt": "Data de criação do Advanced Payment.",
-                        "es": "Fecha de creación del Advanced Payment."
+                        "en": "Payment creation date.",
+                        "pt": "Data de criação do pagamento.",
+                        "es": "Fecha de creación del pago."
                       },
                       "example": "2018-10-20T09:34:20.518-04:00"
                     },
                     "date_last_updated": {
                       "type": "string",
                       "description": {
-                        "en": "Advance Payment last update date.",
-                        "pt": "Data da última atualização do Advanced Payment.",
-                        "es": "Fecha de la última actualización del Advanced Payment."
+                        "en": "Payment last update date.",
+                        "pt": "Data da última atualização do pagamento.",
+                        "es": "Fecha de la última actualización del pago."
                       },
                       "example": "2018-10-20T09:34:20.518-04:00"
                     }
@@ -1922,9 +1922,9 @@
           }
         },
         "title": {
-          "en": "Confirm or cancel an advanced payment",
-          "pt": "Confirmar ou cancelar um advanced payment",
-          "es": "Confirmar o cancelar un advanced payment"
+          "en": "Confirm or cancel a payment.",
+          "pt": "Confirmar ou cancelar um pagamento.",
+          "es": "Confirmar o cancelar un pago."
         }
       },
       "get": {
@@ -1942,9 +1942,9 @@
             "name": "advanced_payment_id",
             "required": true,
             "description": {
-              "en": "The advanced payment, with id 'advanced_payment_id' to be confirmed.",
-              "pt": "Refere-se ao advanced payment com o id 'advanced_payment_id' a ser confirmado.",
-              "es": "Se refiere al advanced payment con el id 'advanced_payment_id' para ser confirmado."
+              "en": "The payment, with id 'advanced_payment_id' to be confirmed.",
+              "pt": "Refere-se ao pagamento com o id 'advanced_payment_id' a ser confirmado.",
+              "es": "Se refiere al pago con el id 'advanced_payment_id' para ser confirmado."
             },
             "schema": {
               "type": "number",
@@ -1955,9 +1955,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "Advanced Payments confirmed.",
-              "pt": "Este endpoint é utilizado para recuperar os dados de um Advanced Payment a partir de seu id.",
-              "es": "Este endpoint se utiliza para recuperar datos de un Advanced Payment desde su id."
+              "en": "This endpoint is used to retrieve payment data from its ID.",
+              "pt": "Este endpoint é utilizado para recuperar os dados de um pagamento a partir de seu ID.",
+              "es": "Este endpoint se utiliza para recuperar datos de un pago desde su ID."
             },
             "content": {
               "application/json": {
@@ -1967,18 +1967,18 @@
                     "id": {
                       "type": "number",
                       "description": {
-                        "en": "Unique ID that identifies the advanced payment.",
-                        "pt": "ID único que identifica o advanced payment.",
-                        "es": "ID único que identifica el advanced payment."
+                        "en": "Unique ID that identifies the payment.",
+                        "pt": "ID único que identifica o pagamento.",
+                        "es": "ID único que identifica el pago."
                       },
                       "example": 10267812
                     },
                     "wallet_payment": {
                       "type": "object",
                       "description": {
-                        "en": "It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.",
-                        "pt": "Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.",
-                        "es": "Indica que es un advanced payment de un vendedor con una vinculación previa de Wallet Connect."
+                        "en": "It indicates that is a payement from a seller with a previous Wallet Connect vinculation.",
+                        "pt": "Indica que é um pago de um vendedor com Wallet Connect previamente vinculado.",
+                        "es": "Indica que es un pagamento de un vendedor con una vinculación previa de Wallet Connect."
                       },
                       "properties": {
                         "transaction_amount": {
@@ -2013,9 +2013,9 @@
                     "payments": {
                       "type": "array",
                       "description": {
-                        "es": "Response Advanced Payment approved",
-                        "pt": "Response Advanced Payment approved",
-                        "en": "Response Advanced Payment approved"
+                        "es": "Response payment approved.",
+                        "pt": "Resposta de pagamento aprovado.",
+                        "en": "Respuesta de pago aprobado"
                       },
                       "items": {
                         "type": "object",
@@ -2037,25 +2037,25 @@
                           "status": {
                             "type": "string",
                             "description": {
-                              "en": "The status of a payment made by Advanced Payments internal-api.mercadopago.com",
-                              "pt": "O status de um pagamento feito pelo Advanced Payments internal-api.mercadopago.com",
-                              "es": "El status de un pago realizado por Advanced Paymentrs internal-api.mercadopago.com"
+                              "en": "The status of a payment made by 'internal-api.mercadopago.com'.",
+                              "pt": "O status de um pagamento feito pelo 'internal-api.mercadopago.com'.",
+                              "es": "El status de un pago realizado por 'internal-api.mercadopago.com'."
                             },
                             "enum": [
                               {
                                 "title": "approved",
                                 "description": {
                                   "en": "approved",
-                                  "es": "approved",
-                                  "pt": "approved"
+                                  "es": "aprobado",
+                                  "pt": "aprovado"
                                 }
                               },
                               {
                                 "title": "in_process",
                                 "description": {
                                   "en": "in process",
-                                  "es": "in process",
-                                  "pt": "in process"
+                                  "es": "en proceso",
+                                  "pt": "em processo"
                                 }
                               }
                             ]
@@ -2081,24 +2081,24 @@
                                 "title": "credit_card",
                                 "description": {
                                   "en": "credit card",
-                                  "es": "credit card",
-                                  "pt": "credit card"
+                                  "es": "tarjeta de crédito",
+                                  "pt": "cartão de crédito"
                                 }
                               },
                               {
                                 "title": "debit_card",
                                 "description": {
                                   "en": "debit card",
-                                  "es": "debit card",
-                                  "pt": "debit card"
+                                  "es": "tarjeta de débito",
+                                  "pt": "cartão de débito"
                                 }
                               },
                               {
                                 "title": "account_money",
                                 "description": {
                                   "en": "account money",
-                                  "es": "account money",
-                                  "pt": "account money"
+                                  "es": "dinero en cuenta",
+                                  "pt": "dinheiro em conta"
                                 }
                               }
                             ]
@@ -2163,17 +2163,17 @@
                     "disbursements": {
                       "type": "object",
                       "description": {
-                        "en": "List of payments that correspond to each Seller.",
-                        "pt": "Lista de pagamentos que correspondem a cada Seller.",
-                        "es": "Lista de pagos que corresponden a cada Seller."
+                        "en": "List of payments that correspond to each seller.",
+                        "pt": "Lista de pagamentos que correspondem a cada vendedor.",
+                        "es": "Lista de pagos que corresponden a cada vendedor."
                       },
                       "properties": {
                         "collector_id": {
                           "type": "string",
                           "description": {
-                            "en": "Merchant Mercado Pago account id.",
-                            "pt": "ID da conta Mercado Pago do Merchant.",
-                            "es": "Identificación de la cuenta de Mercado Pago del Merchant."
+                            "en": "Merchant Mercado Pago account ID.",
+                            "pt": "ID da conta Mercado Pago do merchant.",
+                            "es": "Identificación de la cuenta de Mercado Pago del merchant."
                           },
                           "example": "collectorId"
                         }
@@ -2213,18 +2213,18 @@
                     "date_created": {
                       "type": "string",
                       "description": {
-                        "en": "Advance Payment creation date.",
-                        "pt": "Data de criação do Advanced Payment.",
-                        "es": "Fecha de creación del Advanced Payment."
+                        "en": "Payment creation date.",
+                        "pt": "Data de criação do pagamento.",
+                        "es": "Fecha de creación del pago."
                       },
                       "example": "2018-10-20T09:34:20.518-04:00"
                     },
                     "date_last_updated": {
                       "type": "string",
                       "description": {
-                        "en": "Advance Payment last update date.",
-                        "pt": "Data da última atualização do Advanced Payment.",
-                        "es": "Fecha de la última actualización del Advanced Payment."
+                        "en": "Payment last update date.",
+                        "pt": "Data da última atualização do pagamento.",
+                        "es": "Fecha de la última actualización del pago."
                       },
                       "example": "2018-10-20T09:34:20.518-04:00"
                     }
@@ -2301,9 +2301,9 @@
           }
         },
         "title": {
-          "en": "Get Advanced Payment data",
-          "pt": "Obter dados de um advanced payment",
-          "es": "Obtener datos de um Advanced Payment"
+          "en": "Get payment",
+          "pt": "Obter pagamento",
+          "es": "Obtener pago"
         }
       }
     },
@@ -2313,9 +2313,9 @@
           "wallet-connect"
         ],
         "description": {
-          "en": "A refund operation may be total, this is the total amount of the advnaced payment will be restored, o may be a partial refund, the amount in the request will be restored",
-          "pt": "Uma operação de reembolso pode ser total, ou seja, o valor total do advanced payment que será reposto, ou pode ser um reembolso parcial, o valor parcial do pedido será reposto",
-          "es": "Una operación de reembolso puede ser total, es decir se devolverá el importe total del advanced payment, o puede ser una devolución parcial, se devolverá el importe solicitado"
+          "en": "A refund operation may be total, this is the total amount of the payment will be restored, o may be a partial refund, the amount in the request will be restored",
+          "pt": "Uma operação de reembolso pode ser total, ou seja, o valor total do pagamento que será reposto, ou pode ser um reembolso parcial, o valor parcial do pedido será reposto",
+          "es": "Una operación de reembolso puede ser total, es decir se devolverá el importe total del pago, o puede ser una devolución parcial, se devolverá el importe solicitado"
         },
         "parameters": [
           {
@@ -2326,9 +2326,9 @@
             },
             "required": true,
             "description": {
-              "en": "The advanced payment, with id 'advanced_payment_id' to be confirmed.",
-              "pt": "Refere-se ao advanced payment com o id 'advanced_payment_id' a ser confirmado.",
-              "es": "Se refiere al advanced payment con el id 'advanced_payment_id' para ser confirmado."
+              "en": "The payment, with id 'advanced_payment_id' to be confirmed.",
+              "pt": "Refere-se ao pagamento com o id 'advanced_payment_id' a ser confirmado.",
+              "es": "Se refiere al pago con el id 'advanced_payment_id' para ser confirmado."
             }
           }
         ],
@@ -2492,9 +2492,9 @@
           }
         },
         "title": {
-          "en": "Refund an advanced payment",
-          "pt": "Reembolsar um advanced payment",
-          "es": "Reembolsar un advanced payment"
+          "en": "Refund payment",
+          "pt": "Reembolsar pagamento",
+          "es": "Reembolsar pago"
         }
       }
     },
@@ -2743,9 +2743,9 @@
           }
         },
         "title": {
-          "en": "Create a Discount Promise",
-          "pt": "Criar uma Discount Promise",
-          "es": "Crear una Discount Promise"
+          "en": "Create discount promise",
+          "pt": "Criar promessa de desconto",
+          "es": "Crear promesa de descuento"
         }
       }
     }, 
@@ -2755,7 +2755,7 @@
           "wallet-connect"
         ],
         "description": {
-          "en": "This endpoint enables the validation of a Wallet Connect coupon, returning the applicable discount amount. These coupons are designed to provide discounts on payments made through Wallet Connect.",
+          "en": "This endpoint enables the validation of a Wallet Connect coupon, returning the applicable discount amount. These coupons are designed to provide discounts on payments made through Wallet Connect",
           "pt": "Este endpoint possibilita a validação de um cupom do Wallet Connect, retornando o valor do desconto aplicável. Estes cupons destinam-se a conceder descontos em pagamentos realizadas via Wallet Connect",
           "es": "Este endpoint permite la validación de un cupón de Wallet Connect, devolviendo el monto de descuento aplicable. Estos cupones están diseñados para ofrecer descuentos en pagos realizados a través de Wallet Connect"
         },
@@ -2973,7 +2973,7 @@
           }
         },
         "title": {
-          "en": "Validate wallet connect coupon",
+          "en": "Validate Wallet Connect coupon",
           "pt": "Validar cupom para Wallet Connect",
           "es": "Validar cúpon para Wallet Connect"
         }
