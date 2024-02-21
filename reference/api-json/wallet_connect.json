@@ -904,8 +904,8 @@
         ],
         "description": {
           "en": "Specific payments for Wallet Connect. During the agreement process, the integrator receives a \"payer token\" from the payer. This token allows the integrator to execute the payment directly from the payer's wallet. If you wish to apply discounts, it is necessary to first create a discount promise before using them",
-          "pt": "São pagamentos específicos para Wallet Connect. Durante o processo de vinculação, o integrador recebe um \"payer token\" do pagador. Esse token permite que o integrador efetue o pagamento diretamente da carteira do pagador. Se desejar aplicar descontos, é necessário criar uma promessa de desconto antes de utilizá-los",
-          "es": "Pagos específicos para Wallet Connect. Durante el proceso de la vinculación, el integrador recibe un \"payer token\" del pagador. Este token permite que el integrador realice el pago directamente desde la billetera del pagador. Si desea aplicar descuentos, primero es necesario crear una promesa de descuento antes de utilizarlos"
+          "pt": "São pagamentos específicos para Wallet Connect. Durante o processo de vinculação, o integrador recebe um \"token de pagamento\" do pagador. Esse token permite que o integrador efetue o pagamento diretamente da carteira do pagador. Se desejar aplicar descontos, é necessário criar uma promessa de desconto antes de utilizá-los",
+          "es": "Pagos específicos para Wallet Connect. Durante el proceso de la vinculación, el integrador recibe un \"token de pago\" del pagador. Este token permite que el integrador realice el pago directamente desde la billetera del pagador. Si desea aplicar descuentos, primero es necesario crear una promesa de descuento antes de utilizarlos"
         },
         "requestBody": {
           "description": {
