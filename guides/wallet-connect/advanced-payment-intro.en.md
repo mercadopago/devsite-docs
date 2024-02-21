@@ -6,7 +6,7 @@ Payment flows are specific configurations for Wallet Connect in which the integr
 >
 > Important
 >
-> It is only possible to consume the Payments API to Wallet Connect after the end of the agreement flow. For more information on how to create an agreement, see section [Create agreement](/developers/en/docs/wallet-connect/integration-configuration/create-agreement).
+> It is only possible to consume the Payments API to Wallet Connect after the end of the agreement flow. For more information on how to create an agreement, see section [Create agreement.](/developers/en/docs/wallet-connect/integration-configuration/create-agreement)
 
 In this documentation you will find the following endpoints for integration with payments:
 

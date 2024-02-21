@@ -1487,9 +1487,9 @@
           "wallet-connect"
         ],
         "description": {
-          "en": "This endpoint allows to perform one two actions. Capture or cancel a payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status \"cancelled\"",
-          "pt": "Este endpoint permite executar duas ações. Captura ou cancelamento de um pagamento. Para confirmar, é preciso enviar os dados de pagamento da carteira e o campo de captura em true. Para cancelar, envie os dados de pagamento da carteira e o campo status \"cancelled\"",
-          "es": "Este endpoint le permite realizar dos acciones. Capturar o cancelar un pago. Para confirmar, es necesario enviar los datos de pago de la billetera y el campo de captura en true. Para cancelar, envíe los detalles de pago de su billetera y el campo de status \"cancelled\""
+          "en": "This endpoint allows to perform one two actions: capture or cancel a payment. To confirm you must send the wallet payment data and field capture in true. To cancel you send wallet payment data and field status \"cancelled\"",
+          "pt": "Este endpoint permite executar duas ações: capturar ou cancelar um pagamento. Para confirmar, é preciso enviar os dados de pagamento da carteira e o campo de captura em true. Para cancelar, envie os dados de pagamento da carteira e o campo status \"cancelled\"",
+          "es": "Este endpoint le permite realizar dos acciones: capturar o cancelar un pago. Para confirmar, es necesario enviar los datos de pago de la billetera y el campo de captura en true. Para cancelar, envíe los detalles de pago de su billetera y el campo de status \"cancelled\""
         },
         "parameters": [
           {
@@ -1922,9 +1922,9 @@
           }
         },
         "title": {
-          "en": "Confirm or cancel a payment.",
-          "pt": "Confirmar ou cancelar um pagamento.",
-          "es": "Confirmar o cancelar un pago."
+          "en": "Get payment",
+          "pt": "Obter pagamento",
+          "es": "Obtener pago"
         }
       },
       "get": {
@@ -1932,9 +1932,9 @@
           "wallet-connect"
         ],
         "description": {
-          "en": "This endpoint is used to get an Advanced Payment data from its id",
-          "pt": "Este endpoint é utilizado para obter os dados de um Advanced Payment a partir de seu id",
-          "es": "Este endpoint se utiliza para obtener datos de un Advanced Payment desde su id"
+          "en": "This endpoint is used to get a payment data from its ID",
+          "pt": "Este endpoint é utilizado para obter os dados de um pagamento a partir de seu ID",
+          "es": "Este endpoint se utiliza para obtener datos de un pago desde su ID"
         },
         "parameters": [
           {
@@ -2301,9 +2301,9 @@
           }
         },
         "title": {
-          "en": "Get payment",
-          "pt": "Obter pagamento",
-          "es": "Obtener pago"
+          "en": "Capture payment",
+          "pt": "Capturar pagamento",
+          "es": "Capturar pago"
         }
       }
     },

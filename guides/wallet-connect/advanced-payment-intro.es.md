@@ -6,7 +6,7 @@ Flujo de pagos son configuraciones específicas para Wallet Connect en las cuale
 >
 > Importante
 >
-> Solo es posible consumir la API de Pagos de Wallet Connect después de la finalización del flujo de la vinculación. Para obtener más información sobre cómo crear una vinculación, consulta la sección [Iniciar vinculación](/developers/es/docs/wallet-connect/integration-configuration/create-agreement).
+> Solo es posible consumir la API de Pagos de Wallet Connect después de la finalización del flujo de la vinculación. Para obtener más información sobre cómo crear una vinculación, consulta la sección [Iniciar vinculación.](/developers/es/docs/wallet-connect/integration-configuration/create-agreement)
 
 En esta documentación, podrás encontrar los siguientes endpoints para la integración con pagos.
 
