@@ -2504,9 +2504,9 @@
           "wallet-connect"
         ],
         "description": {
-          "en": "This endpoint allows you to create a \"Discount Promise\" for Wallet Connect. This \"Discount Promise\" serves as a reference that can be used when generating an Advanced Payment, enabling the application of a specific discount to the payment. During the payment creation process, it's essential to include the information from the previously provided \"Discount Promise\"",
-          "pt": "Este endpoint permite criar uma \"Discount Promise\" para o Wallet Connect. Essa \"Discount Promise\" é uma referência que será usada ao gerar um Advanced Payment, possibilitando aplicar um desconto específico ao pagamento. Durante a criação do pagamento, é essencial incluir as informações da \"Discount Promise\" fornecida anteriormente",
-          "es": "Este endpoint te permite crear una \"Discount Promise\" para Wallet Connect. Esta \"Discount Promise\" actúa como una referencia que se utilizará al generar un Advanced Payment, permitiendo aplicar un descuento específico al pago. Durante el proceso de creación del pago, es esencial incluir la información de la \"Discount Promise\" proporcionada anteriormente"
+          "en": "This endpoint allows you to create a \"discount promise\" for Wallet Connect. This \"discount promise\" serves as a reference that can be used when generating an Advanced Payment, enabling the application of a specific discount to the payment. During the payment creation process, it's essential to include the information from the previously provided \"discount promise\"",
+          "pt": "Este endpoint permite criar uma \"promesa de descuento\" para o Wallet Connect. Essa \"promesa de descuento\" é uma referência que será usada ao gerar um Advanced Payment, possibilitando aplicar um desconto específico ao pagamento. Durante a criação do pagamento, é essencial incluir as informações da \"promesa de descuento\" fornecida anteriormente",
+          "es": "Este endpoint te permite crear una \"promessa de desconto\" para Wallet Connect. Esta \"promessa de desconto\" actúa como una referencia que se utilizará al generar un Advanced Payment, permitiendo aplicar un descuento específico al pago. Durante el proceso de creación del pago, es esencial incluir la información de la \"promessa de desconto\" proporcionada anteriormente"
         },
         "parameters": [
           {
@@ -2526,9 +2526,9 @@
         ],
         "requestBody": {
           "description": {
-            "en": "Here are the fields needed to complete a request for create an Discount Promise.",
-            "pt": "Aqui estão os campos necessários para completar uma solicitação para criar uma Discount Promise.",
-            "es": "Estos son los campos necesarios para completar un request para crear una Discount Promise."
+            "en": "Here are the fields needed to complete a request for create an discount promise.",
+            "pt": "Aqui estão os campos necessários para completar uma solicitação para criar uma promessa de desconto.",
+            "es": "Estos son los campos necesarios para completar un request para crear una promesa de descuento."
           },
           "required": true,
           "content": {
@@ -2536,9 +2536,9 @@
               "schema": {
                 "type": "object",
                 "description": {
-                  "en": "Discount Promise data.",
-                  "pt": "Dados do Discount Promise.",
-                  "es": "Datos del Discount Promise."
+                  "en": "Discount promise data.",
+                  "pt": "Dados da promessa de desconto.",
+                  "es": "Datos de la promesa de descuento."
                 },
                 "properties": {
                   "coupon": {
@@ -2546,8 +2546,8 @@
                     "type": "string",
                     "description": {
                       "en": "UUnique ID that identifies the coupon for discount application. This field should be filled out only when the user enters a coupon during the purchasing process with the seller.",
-                      "pt": "ID único que identifica o cupom para aplicação do desconto. Este campo deve ser preenchido somente quando o usuário inserir um cupom durante o processo de compra junto ao seller.",
-                      "es": "ID único que identifica el cupón para la aplicación del descuento. Este campo debe ser completado solamente cuando el usuario ingrese un cupón durante el proceso de compra con el seller."
+                      "pt": "ID único que identifica o cupom para aplicação do desconto. Este campo deve ser preenchido somente quando o usuário inserir um cupom durante o processo de compra junto ao vendedor.",
+                      "es": "ID único que identifica el cupón para la aplicación del descuento. Este campo debe ser completado solamente cuando el usuario ingrese un cupón durante el proceso de compra con el vendedor."
                     },
                     "example": "WALLET10"
                   },
@@ -2570,9 +2570,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "Discount Promise created.",
-              "pt": "Discount Promise criada.",
-              "es": "Discount Promise creada."
+              "en": "Discount promise created.",
+              "pt": "Promessa de desconto criada.",
+              "es": "Promesa de descuento creada."
             },
             "content": {
               "application/json": {
