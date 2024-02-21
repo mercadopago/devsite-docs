@@ -106,7 +106,6 @@ Evita pedir datos repetidos o que no sean necesarios para finalizar la compra. P
 
 También puedes utilizar **checkboxes**, o casillas de verificación, que infieran información de pasos previos o desplieguen un formulario en caso de que el usuario quiera cargar información diferente.
 
-
 ![es Saltea pasos innecesarios](/images/best-practices-guide/EspAspectosGeneralesSalteaPasosInnecesarios.png)
 
 ## Da visibilidad del proceso
@@ -118,6 +117,5 @@ Si bien la mayoría de los usuarios revisan su compra al final, se sienten más 
 ![es da visibilidad del proceso](/images/best-practices-guide/EspAspectosGeneralesVisibilidadDelProceso_V2.gif)
 
 Además, antes de finalizar la compra, permite que tus usuarios puedan **revisar** todo el proceso y el precio final. Para esto, agrega una página de confirmación o revisión, previo a realizar el pago, que incluya un resumen de todas las decisiones tomadas, toda la información cargada y el detalle del total a pagar. Es importante dar la posibilidad de editar cualquiera de los datos desde allí, sin la necesidad de volver a los pasos previos.
-
 
 ![es confrima tu compra](/images/best-practices-guide/EspAspectosGeneralesConfirmaTuCompra_V2.gif)

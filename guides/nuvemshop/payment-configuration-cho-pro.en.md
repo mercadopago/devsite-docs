@@ -2,7 +2,7 @@
  
 When installing [Checkout Pro](/developers/en/docs/checkout-pro/landing) (Checkout Mercado Pago), there may be an **increase in the approval rate of online store sales**. This happens because buyers will be able to pay using a Mercado Pago account and the entire purchase process will be done in our environment, which facilitates payment. At the end of the transaction, these buyers are redirected to the store environment.
  
-To integrate Checkout Pro, follow the steps below.
+To integrate Checkout Pro (**Checkout Mercado Pago**), follow the steps below.
  
 1. In your store's Administrative Panel at Nuvemshop, access **Potencializar > My apps**. 
 2. Locate the Mercado Pago plugin in the list of applications and click on **Configure application**.
@@ -56,4 +56,5 @@ To integrate Checkout Pro, follow the steps below.
 </center>
 
 ------------
-Ready! Mercado Pago Checkout Pro is ready to receive payments from your store.
+
+Ready! Mercado Pago's Checkout Pro is ready to process payments for your store.

@@ -32,7 +32,7 @@ Recomendamos que você renove suas credenciais com frequência para evitar poss�
 
 Renove suas credenciais de maneira simples seguindo estas etapas:
 
-1. Acesse o [Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
+1. Acesse o [Painel do desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 2. Acesse a aplicação cujas credenciais você deseja renovar.
 3. Selecione as credenciais de produção.
 4. Uma vez lá, você pode renovar o Access Token e o Client Secret. Para fazer isso, clique em **Mais opções > Renovar**.
@@ -62,11 +62,3 @@ Você pode remover essas permissões a qualquer momento no painel de credenciais
 OAuth é um protocolo de autorização que permite que aplicativos tenham acesso limitado às informações privadas das contas do Mercado Pago, por meio do protocolo HTTP que introduz uma camada de autenticação e autorização na qual você solicita acesso aos recursos protegidos dos vendedores, por meio de um token de acesso limitado a um determinado aplicativo, sem a necessidade das credenciais dos vendedores através dos fluxos de acesso.
 
 Para saber mais sobre o OAuth, acesse [esta documentação](/developers/pt/guides/additional-content/security/oauth/introduction).
-
-> PREV_STEP_CARD_PT
->
-> Práticas de segurança para suas credenciais
->
-> Confira quais são as melhores práticas que você pode realizar para que suas integrações sejam seguras.
->
-> [Práticas de segurança para suas credenciais](/developers/pt/guides/additional-content/best-practices/safety-for-your-credential/introduction)

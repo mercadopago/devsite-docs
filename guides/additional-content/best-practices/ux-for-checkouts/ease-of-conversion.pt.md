@@ -8,9 +8,7 @@ Aconselhamos que você construa uma experiência com diferentes etapas onde cada
 
 Para **dispositivos móveis**, opte por etapas curtas, que chamem a atenção do usuário e permitam uma navegação mais amigável. No caso do **desktop**, você pode usar experiências "one step", já que o usuário consegue controlar melhor suas ações, ficando mais fácil encontrar o que busca.
 
-
 ![pt Checkout agil](/images/best-practices-guide/PortCreaUnChoAgilIntro.png)
-
 
 ## Ofereça consistência 
 
