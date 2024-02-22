@@ -18,10 +18,10 @@ Various [visual customizations](/developers/en/docs/checkout-bricks/brand-brick/
 
 ---
 live_demo_code_action:
-- title: Try our Brick
-- description: Build visual experiences in real time. When you are ready, download or copy the generated code to add to your website or share with a developer.
-- link: /developers/en/live-demo/brand-brick
-- image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/brand-brick.png
-- linkName: Demo
-- buttonDescription: Build your Brand Brick
+  - title: Try our Brick
+  - description: Build visual experiences in real time. When you are ready, download or copy the generated code to add to your website or share with a developer.
+  - link: /developers/en/live-demo/brand-brick
+  - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/brand-brick.png
+  - linkName: Demo
+  - buttonDescription: Build your Brand Brick
 ---
