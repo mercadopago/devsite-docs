@@ -265,7 +265,7 @@ En esta sección encontrarás las posibles respuestas relacionadas con la prueba
 
 ### Collector no está en la Whitelist
 
-* Descripción: Este error se produce cuando el collector no se encuentra en la Whitelist. Consulta la sección [Lista de permisos](/developers/es/zero-dollar-auth/api-responses#bookmark_lista_de_permisos) para obtener más detalles.
+* Descripción: Este error se produce cuando el collector no se encuentra en la Whitelist. Consulta la sección [Lista de permisos](/developers/es/docs/zero-dollar-auth/api-responses#bookmark_lista_de_permisos) para obtener más detalles.
 * Cuerpo de la respuesta:
 
 ```

@@ -265,7 +265,7 @@ Nesta seção você encontra as possíveis respostas referentes ao teste de vali
 
 ### Collector não está na Whitelist
 
-* Descrição: Este erro retorna quando o collector não está inserido na Whitelist. Veja a seção [Lista de permissões]((developers/pt/zero-dollar-auth/api-responses#bookmark_lista_de_permissões)) para mais detalhes.
+* Descrição: Este erro retorna quando o collector não está inserido na Whitelist. Veja a seção [Lista de permissões](/developers/pt/docs/zero-dollar-auth/api-responses#bookmark_lista_de_permissões) para mais detalhes.
 * Corpo da resposta:
 
 ```
