@@ -217,7 +217,7 @@
         ],
         "description": {
           "en": "A payer token is an ID that represents the authorization the user gave to the seller",
-          "pt": "Um token de pagamento Token é um ID que representa a autorização que o usuário deu ao vendedor",
+          "pt": "Um token de pagamento é um ID que representa a autorização que o usuário deu ao vendedor",
           "es": "Un token de pago es un ID que representa la autorización que el usuario dio al vendedor"
         },
         "parameters": [
