@@ -1,6 +1,9 @@
-# Validación de tarjetas (Zero Dollar Auth)
-
-Zero Dollar Auth es una función desarrollada para mejorar la validación de tarjetas de crédito o débito, con el objetivo de optimizar la experiencia del cliente. Con ella, es posible asegurar que no se cobren cargos efectivos en la tarjeta del cliente, eliminando la necesidad de cancelaciones o devoluciones después de la autorización de la transacción.
+---
+content_section_with_media: 
+ - title: Validación de tarjetas (Zero Dollar Auth)
+ - message: Zero Dollar Auth es una función desarrollada para mejorar la validación de tarjetas de crédito o débito, con el objetivo de optimizar la experiencia del cliente. Con ella, es posible asegurar que no se cobren cargos efectivos en la tarjeta del cliente, eliminando la necesidad de cancelaciones o devoluciones después de la autorización de la transacción.
+ - media_image: /zero-dollar-auth/credit-card.png
+---
 
 > WARNING
 >

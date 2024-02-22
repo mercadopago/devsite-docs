@@ -17,7 +17,7 @@ Abaixo listamos o `body` de resposta para cada um dos cenários.
 ### Cartão validado com sucesso
 
 * **Status**: approved
-* **Descrição**: resposta indicando o sucesso da criação da validação Zero Dollar.
+* **Descrição**: resposta indicando o sucesso da criação da validação Zero Dollar Auth.
 * **Corpo da resposta**:
 
 ```json

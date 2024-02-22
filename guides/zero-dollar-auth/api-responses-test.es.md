@@ -1,6 +1,6 @@
-# Respuestas de la API
+# Respuestas de la API en pruebas
 
-En esta sección encontrarás las posibles respuestas relacionadas con la prueba de validación de Zero Dollar, con detalles sobre cada tipo de respuesta, incluyendo casos de éxito y error.
+En esta sección encontrarás las posibles respuestas relacionadas con la prueba de validación de Zero Dollar Auth, con detalles sobre cada tipo de respuesta, incluyendo casos de éxito y error.
 
 ## Éxito
 

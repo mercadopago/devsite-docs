@@ -1,6 +1,6 @@
-# Retornos da API
+# Retornos da API em testes
 
-Nesta seção você encontra as possíveis respostas referentes ao teste de validação Zero Dollar, com detalhes sobre cada tipo de resposta, incluindo casos de sucesso e erro.
+Nesta seção você encontra as possíveis respostas referentes ao teste de validação Zero Dollar Auth, com detalhes sobre cada tipo de resposta, incluindo casos de sucesso e erro.
 
 ## Sucesso
 
@@ -254,7 +254,7 @@ Nesta seção você encontra as possíveis respostas referentes ao teste de vali
 
 ### Feature desativada
 
-* Descrição: Esta mensagem retorna quando a feature de Zero Dollar está temporariamente desativada.
+* Descrição: Esta mensagem retorna quando a feature de Zero Dollar Auth está temporariamente desativada.
 * Corpo da resposta:
 
 ```
