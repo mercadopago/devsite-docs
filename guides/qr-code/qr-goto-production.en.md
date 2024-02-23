@@ -1,28 +1,41 @@
 # Go to production
 
-Once your application is **ready and running** in test mode, you can start processing payments by [activating your credentials](/developers/en/docs/qr-code/additional-content/your-integrations/credentials) and **requesting the homologation process to the integrations team**.
+When your integration is ready and you want to start receiving payments, activate your [production credentials](/developers/en/docs/qr-code/additional-content/your-integrations/credentials) and replace the test ones. 
 
-## Homologation
+Also, we recommend the following additional considerations. 
 
-At this stage, the technical team, partners and software house will test your environment, requesting you to use Sponsor ID and [OAuth](/developers/en/docs/qr-code/additional-content/security/oauth/introduction)(authentication between Mercado Pago accounts).
+## Homologation 
+To provide the best experience for both sellers and buyers, it is important to **validate the quality of your integration** according to Mercado Pago standards before going live. 
 
-Mercado Pago may audit your site, app, or POS Software, verifying if all rules are being followed. If necessary, an advisor will contact you to discuss how to fix your integration.
+The homologation process allows you to certify that your integration meets the necessary quality requirements. If any adjustments are needed, the process will suggest ways to optimize your development to receive real payments. 
+
+To measure the quality of your integration with QR Code, follow the steps below. 
 
 > WARNING
 >
-> IMPORTANT
+> Important
+> 
+> The homologation process must be performed for the application you created with your **production credentials**.
+
+1. Go to [Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) in the top-right panel of the Devsite. 
+2. In the [Developer Panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app), click on the application you created and select **Update score** to access the tool where you can measure its quality. 
+3. Follow the instructions provided by the homologation tool to complete the process. Please note that actions indicated as **required** must be completed to earn points that will improve the quality of your integration, while actions indicated as **best practices** are recommended but won't affect the score. 
+
+> NOTE
 >
-> If you do not activate your credentials, you won’t be able to perform any type of refund.
+> Note
+> 
+> If you are part of our Assisted Portfolio, contact the Integrations team to carry out your homologation.
 
-## Why is this a necessary process?
+## SSL Certificate 
+To ensure the security of your integration and protect the data involved in transactions, an **SSL certificate** is necessary. 
 
-By following these steps, we can guarantee the security of your client's data and deliver the smoothest shopping experience, maximizing your payment conversion.
+This process aims to guarantee the security of your customer's data, comply with legal requirements in each country, and provide the best purchasing experience for your sales. 
 
-The non-compliance with these standards may imply anything from the non-processing of payments to legal actions according to the provisions of the [Terms and Conditions](https://www.mercadopago[FAKER][URL][DOMAIN]/help/terms-and-conditions_299).
+Although an SSL certificate may not be required during the testing phase, it is mandatory when going live. 
 
-## Additional considerations
+## Reports 
+[Mercado Pago reports](/developers/en/docs/qr-code/additional-content/reports/introduction) provide financial information to track account transactions, such as available balance, movements, and liquidity. This facilitates the reconciliation of sales and other operations with your internal management systems. 
 
-Consider the following points to improve the quality of your integration:
+We recommend using the reports to improve your company's financial management once you go live.
 
-* Keep the order status of your system up to date by using and processing [IPN or Webhooks notifications](/developers/en/docs/qr-code/additional-content/your-integrations/notifications).
-* Use [Releases reports](/developers/en/docs/qr-code/additional-content/reports/released-money)to streamline your business financial management.
