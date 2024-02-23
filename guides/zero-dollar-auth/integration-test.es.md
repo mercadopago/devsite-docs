@@ -72,12 +72,12 @@ curl -X POST \
       'https://api.mercadopago.com/v1/payments'\
       Content-Type: application/json
       X-Card-Validation: card_validation
-      Authorization: Bearer {access_token}
+      Authorization: Bearer {{access_token}}
 {
-    "token": "{card_token}",
+    "token": "{{card_token}}",
     "payment_method_id": "master",
     "payer": {
-        "id": "{customer_id}",
+        "id": "{{customer_id}}",
         "type" : "customer"
     },
     "description": "validação de cartão com valor zero dollar master crédito sem cvv",
