@@ -23,7 +23,7 @@ Para testar a validação de Zero Dollar Auth, o primeiro passo é gerar um toke
 | site_id | String | Sigla de país de origem da requisição | MLB |
 | security_code | String | Código de segurança | 123 |
 | cardholder.name | String | Titular do cartão | APRO |
-| cardholder.identification.type | String | Tipo de documento | CPF |
+| cardholder.identification.type | String | Refere-se ao tipo de identificação. Pode ser dos seguintes tipos.<br>CPF: Individual Taxpayer Registration, Brazil.<br>CNPJ: National Register of Legal Entities, Brazil.<br>CUIT: Unique Tax Identification Code, Argentina.<br>CUIL: Unique Labor Identification Code, Argentina.<br>DNI: National Identity Document, Argentina.<br>CURP: Single Population Registration Code, Mexico.<br>RFC: Federal Registry of Taxpayers, Mexico.<br>CC: Citizenship Card, Colombia.<br>RUT: Single Tax List, Chile.<br>CI: Identity Card, Uruguay. | CPF |
 | cardholder.identification.number | String | Número do documento | 15635614680 |
 
 ```curl
