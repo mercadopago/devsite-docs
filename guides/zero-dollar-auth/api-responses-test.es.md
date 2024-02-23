@@ -10,7 +10,7 @@ En esta sección encontrarás las posibles respuestas relacionadas con la prueba
 * Descripción: Esta respuesta indica que el flujo de Zero Dollar Auth ha sido aprobado.
 * Cuerpo de la respuesta:
 
-```
+```json
 {
     "id": 64962742075,
     "date_created": "2023-10-11T10:06:56.466-04:00",

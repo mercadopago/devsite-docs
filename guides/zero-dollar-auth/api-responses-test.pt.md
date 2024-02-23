@@ -10,7 +10,7 @@ Nesta seção você encontra as possíveis respostas referentes ao teste de vali
 * Descrição: Esta resposta retorna a aprovação do fluxo de Zero Dollar Auth.
 * Corpo da resposta:
 
-```
+```json
 {
     "id": 64962742075,
     "date_created": "2023-10-11T10:06:56.466-04:00",

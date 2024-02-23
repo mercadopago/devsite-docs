@@ -53,8 +53,8 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
     "token": "TOKEN",
     "payment_method_id": "master",
     "payer": {
-        "id": "1271664686-sl7aQsXWRh6AkC"
-        "type" : "customer"
+        "id": "1271664686-sl7aQsXWRh6AkC",
+        "type" : "customer",
     },
     "description": "validação de cartão com valor zero dollar master",
     "transaction_amount": 0

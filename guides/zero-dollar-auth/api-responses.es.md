@@ -96,7 +96,7 @@ Este error ocurre cuando el campo `transaction_amount` tiene un valor diferente 
 
 ### Bad request
 
-* **Status**: 400 (Bad request)
+* **Status**: 400
 Assistant
 * **Descripción**: Si recibes este error, te recomendamos que revises los parámetros de la solicitud para asegurarte de que estén en conformidad con los valores aceptados por nuestra API. Después de la revisión, realiza una nueva solicitud.
 * **Cuerpo de la respuesta**:

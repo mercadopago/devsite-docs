@@ -28,7 +28,7 @@ Para probar la validación de Zero Dollar Auth, el primer paso es generar un tok
 | cardholder.identification.number | String | Número de documento | 15635614680 |
 
 ```curl
-curl --location 'https://api.mercadopago.com/v1/card_tokens?public_key=APP_USR-d1502151-a13a-41b0-bd2e-138df2473cf9' \
+curl --location 'https://api.mercadopago.com/v1/card_tokens?public_key={{public_key}}' \
      --header 'Content-Type: application/json' \
      --header 'Cookie: _d2id=573665fb-5ad1-4bc9-a25e-dd82b6689f38-n' \
      --heade    r 'X-Test-Token: true' \
@@ -48,16 +48,15 @@ curl --location 'https://api.mercadopago.com/v1/card_tokens?public_key=APP_USR-d
 }'
 ```
 
-## Validar la integración
-
-Como último paso, es necesario validar la integración utilizando el token obtenido en el paso anterior. Para ello, envía al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) los parámetros descritos en la tabla siguiente y ejecuta la solicitud.
-
 > WARNING
 >
 > Importante
 >
 > Para poder realizar transacciones con datos de tarjeta abiertos, es necesario que el vendedor cumpla con los requisitos de [PCI Compliant](/developers/es/docs/security/pci). De lo contrario, estos datos no podrán ser procesados en el backend de su aplicación.
 
+## Validar la integración
+
+Como último paso, es necesario validar la integración utilizando el token obtenido en el paso anterior. Para ello, envía al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) los parámetros descritos en la tabla siguiente y ejecuta la solicitud.
 
 | Parámetro | Tipo | Descripción | Ejemplo |
 |---|---|---|---|

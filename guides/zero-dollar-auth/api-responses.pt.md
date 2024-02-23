@@ -73,7 +73,7 @@ Abaixo listamos o `body` de resposta para cada um dos cenários.
 ### 'transaction_amount' diferente de zero
 
 * **Status**: 400
-* **Descrição**: Este erro ocorre quando o campo `transaction_amount` está com um valor diferente de zero. Para evitar este tipo de erro, revise o body da requisição e garanta que o parâmetro `transcation_amount` esteja com valor igual a zero.
+* **Descrição**: Este erro ocorre quando o campo `transaction_amount` está com um valor diferente de zero. Para evitar este tipo de erro, revise o body da requisição e garanta que o parâmetro `transaction_amount` esteja com valor igual a zero.
 * **Corpo da resposta**:
 
 ```json
@@ -93,7 +93,7 @@ Abaixo listamos o `body` de resposta para cada um dos cenários.
 
 ### Bad request
 
-* **Status**: 400 (Bad request)
+* **Status**: 400
 * **Descrição**: Caso receba este erro, recomendamos revisar os parâmetros de requisição para garantir que todos estejam em conformidade com os valores aceitos pela nossa API. Após a revisão, realize uma nova requisição.
 * **Corpo da resposta**:
 
