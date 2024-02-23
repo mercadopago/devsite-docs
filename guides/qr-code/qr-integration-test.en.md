@@ -1,39 +1,12 @@
-# Test your integration
+# Integration test
 
-## Create test users
+Before going to production, we recommend testing the proper functioning of your integration and payment processing. This will allow you to verify if the integration was done correctly and if payments are being processed without errors. 
 
-Use test accounts to ensure that your integration supports all possible flows and scenarios. They have the same features as a real Mercado Pago account, which allows you to test the functioning of the integrations you are developing.
+## Prerequisites 
 
-If you haven't created test users yet, go to [Prerequisites](/developers/en/docs/qr-code/pre-requisites) to learn how to do it.
+To perform an integration test with the attended QR code model, you must meet the following prerequisites:
 
-## Test cards
-
-[TXTSNIPPET][/guides/snippets/test-integration/test-cards]
-
-## Test payment process
-
-### 1. Assign an order to a checkout using your seller user.
-
-To test the attended model, generate an order with the test user credentials you want to use as a seller and send an order to the previously created QR.
-
-### 2. Make a payment with your buyer user.
-
-- A. Sign Mercado Pago App in with your buyer test user.
-- B. Click on Pay with QR and scan the POS QR code.
-- C. Choose a saved card or enter data of a new one, and pay.
-
-### 3. Receive order notifications
-
-Lastly, make sure you’ve received a status notification in your system. And it's done!
-
-
-## Validate your integration
-
-We detailed all the necessary scenarios you should test to ensure your system's successful integration with Mercado Pago.
-
-**Validation events:**
-
-|QR Model|Link|
+| Prerequisite | Description |
 |---|---|
-|Attended|[Click here](/developers/en/docs/qr-code/additional-content/qr-validation-cases/qr-attended-events)|
-|Dynamic|[Click here](/developers/en/docs/qr-code/additional-content/qr-validation-cases/qr-dynamic-events)|
+| Test users  (seller and buyer) | [Test users](/developers/en/docs/qr-code/additional-content/your-integrations/test/accounts) have the same characteristics as a real Mercado Pago account, allowing you to test the functionality of the integrations you are developing without compromising real data. <br>Please note that the entire QR code integration development phase should be carried out with test users. Therefore, we recommend **creating new test users** specifically for the integration testing phase. |
+| Production credentials of test users | To test your integration correctly, you will need to use the **production credentials** of the test user you created. You can find more information about credentials by accessing [our documentation](/developers/en/docs/qr-code/additional-content/your-integrations/credentials). |
