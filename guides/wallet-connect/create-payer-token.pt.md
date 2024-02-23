@@ -1,6 +1,6 @@
 # Gerar token de pagamento
 
-Com a vinculação criada e a aprovação do comprador concedida, é preciso criar o _token_ de pagamento. O _token_ de pagamento é responsável por armazenar os dados do comprador e garantir a segurança da transação, além de ser um atributo mandatório para criar transações durante todo o período de validade do `agreement` criado anteriormente.
+Com a vinculação criada e a aprovação do comprador concedida, é preciso criar o _token_ de pagamento. O _token_ de pagamento é responsável por armazenar os dados do comprador e garantir a segurança da transação, além de ser um atributo mandatório para criar transações durante todo o período de validade da vinculação criada anteriormente.
 
 Confira o diagrama abaixo que ilustra como funciona o fluxo de criação de um _token_ de pagamento.
 

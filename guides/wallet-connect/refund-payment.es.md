@@ -1,8 +1,8 @@
-# Reembolsar pagos
+# Reembolsar pago
 
 Los reembolsos son transacciones realizadas cuando cierto cobro es revertido y los valores pagados son devueltos al comprador. Esto significa que el cliente recibirá de vuelta en su cuenta o en la factura de su tarjeta, el valor pagado en la adquisición de cierto producto o servicio.
 
-Con Wallet Connect, también es posible reembolsar un Advanced Payment. Esta operación cambiará el estado a `refunded`.
+Con Wallet Connect, también es posible reembolsar un pago. Esta operación cambiará el estado a `refunded`.
 
 > WARNING
 >

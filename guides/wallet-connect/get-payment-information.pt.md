@@ -1,6 +1,6 @@
-## Obter informações de pagamento
+## Obter informações do pagamento
 
-Este endpoint é utilizado para obter os dados de um pagamento feito a partir de seu id.  Veja o diagrama abaixo que ilustra o processo de captura de pagamento por meio do endpoint de Pagamentos das APIs de Wallet Connect.
+Este endpoint é utilizado para obter os dados de um pagamento feito a partir de seu ID. Veja o diagrama abaixo que ilustra o processo de captura de pagamento por meio do endpoint de Pagamentos das APIs de Wallet Connect.
 
 ![get-payment-info](/images/wallet-connect/get-payment-information.pt.png)
 

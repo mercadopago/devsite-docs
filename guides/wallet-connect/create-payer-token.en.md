@@ -1,6 +1,6 @@
 # Create payer token
 
-After the agreement creation and the buyer's approval, you must create the payer token. The _payer token_ is responsible for storing the buyer's data and ensuring the security of the transaction, it is also a mandatory attribute for creating transactions throughout the validity period of the `agreement` previously created.
+After the agreement creation and the buyer's approval, you must create the payer token. The _payer token_ is responsible for storing the buyer's data and ensuring the security of the transaction, it is also a mandatory attribute for creating transactions throughout the validity period of the agreement previously created.
 
 Check out the diagram below that illustrates how the payer token creation flow works.
 

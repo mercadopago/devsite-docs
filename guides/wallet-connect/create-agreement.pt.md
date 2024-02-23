@@ -1,4 +1,4 @@
-# Criar vinculação
+# Iniciar vinculação
 
 A primeira etapa para integrar o Wallet Connect é a criação de uma vinculação, um link de autorização que o comprador acessa para conceder ao vendedor o acesso à sua carteira do Mercado Pago no momento em que um pagamento for realizado. 
 

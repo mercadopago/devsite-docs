@@ -1,8 +1,8 @@
-# Refund payments
+# Refund payment
 
 Refunds are transactions carried out when a certain charge is reversed and the amounts paid are returned to the buyer. This means that the customer will receive back in his account or on his card statement, the amount paid for the purchase of a certain product or service.
 
-With Wallet Connect, it is also possible to refund an Advanced Payment. This operation will change the status to `refunded`.
+With Wallet Connect, it is also possible to refund an payment. This operation will change the status to `refunded`.
 
 > WARNING
 >

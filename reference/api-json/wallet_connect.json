@@ -205,7 +205,7 @@
         },
         "title": {
           "en": "Create agreement",
-          "pt": "Criar vinculação",
+          "pt": "Iniciar vinculação",
           "es": "Iniciar vinculación"
         }
       }
@@ -1475,9 +1475,9 @@
           }
         },
         "title": {
-          "en": "Create a payment",
-          "pt": "Criar um pagamento",
-          "es": "Crear un pago"
+          "en": "Create payment",
+          "pt": "Criar pagamento",
+          "es": "Crear pago"
         }
       }
     },
