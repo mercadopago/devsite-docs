@@ -1,10 +1,12 @@
-# Payments with QR unattended model
+# Payments with QR unattended model 
 
 > WARNING
 >
 > Commercial contact required
 >
 > This product is only available through prior contact with one of our executives.
+> </br></br>
+> For more information about this billing model, please refer to the documentation [Integrate QR unattended model.](/developers/en/docs/qr-code/qr-unattended/qr-unattended-part-b)
 
 ## What’s QR unattended model?
 

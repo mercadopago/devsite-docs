@@ -2,7 +2,7 @@
 
 Para realizar a cobrança do pagamento, é preciso ler o QR e enviar o código desta leitura junto com as informações do pedido (valor, ítens, quantidade). Dessa forma, a transação será processada automaticamente no aplicativo do Mercado Pago.
 
-> Para saber mais informações sobre este modelo de cobrança, acesse a documentação [Pagamentos QR modelo comprador.](/developers/pt/docs/qr-code/qr-buyer/qr-buyer-part-a) 
+> Para saber mais informações sobre este modelo de cobrança, acesse a documentação [Pagamentos QR modelo comprador.](/developers/pt/docs/qr-code/qr-buyer/qr-buyer-part-a)
 
 ## Pré-requisitos
 
