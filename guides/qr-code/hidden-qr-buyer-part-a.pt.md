@@ -5,6 +5,8 @@
 > Contato comercial necessário
 >
 > Você deve acionar nosso time comercial para que sua conta seja habilitada e tenha permissão para cobrança por meio deste modelo de serviço.
+> </br></br>
+> Para saber mais informações sobre este modelo de integração, acesse a documentação [Integrar QR modelo comprador.](/developers/pt/docs/qr-code/qr-buyer/qr-buyer-part-b) 
 
 ## O que é o QR modelo comprador?
 

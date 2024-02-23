@@ -5,6 +5,8 @@
 > Business contact required
 >
 > You must contact our commercial team to enable your account and give permission to make charges using this service model.
+> </br></br>
+> For more information about this integration model, please refer to the documentation [Integrate the QR buyer model.](/developers/en/docs/qr-code/qr-buyer/qr-buyer-part-b)
 
 ## What is the QR Buyer model?
 

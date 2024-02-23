@@ -35,8 +35,8 @@ Para gestionar ventas en nombre de otro usuario, debes solicitar permiso. Para e
 
  | Valor                    | Descripción                                                                                                              |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| `<APP_ID>`               | Valor obtenido durante la [creación de la aplicación](/developers/es/docs/split-payment/integration-configuration/create-application).      |
-| `<REDIRECT_URI>`         | Valor ingresado en el campo Redirect Uri durante la [configuración de la Redirect URL](/developers/es/docs/split-payment/integration-configuration/create-application). |
+| `<APP_ID>`               | Valor obtenido durante la [creación de la aplicación](#bookmark_crear_aplicación).      |
+| `<REDIRECT_URI>`         | Valor ingresado en el campo Redirect Uri durante la [configuración de la Redirect URL](#bookmark_crear_aplicación). |
 
 ----[mla]----
 ```curl

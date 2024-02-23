@@ -5,6 +5,8 @@
 > Contacto comercial requerido
 >
 > Solo puedes integrar este producto si tu contacto comercial te compartió toda la información necesaria para hacerlo.
+> </br></br>
+> Para obtener más información sobre este modelo de integración, consulta la documentación [Integrar QR modelo comprador.](/developers/es/docs/qr-code/qr-buyer/qr-buyer-part-b)
 
 ## ¿Qué es el QR modelo Comprador?
 
