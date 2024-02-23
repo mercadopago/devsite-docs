@@ -75,8 +75,7 @@ A continuación, enumeramos el `body` de respuesta para cada uno de los escenari
 ### 'transaction_amount' distinto a cero
 
 * **Status**: 400
-* **Descripción**: Assistant
-Este error ocurre cuando el campo `transaction_amount` tiene un valor diferente de cero. Para evitar este tipo de error, revisa el cuerpo de la solicitud y asegúrate de que el parámetro `transaction_amount` tenga un valor igual a cero.
+* **Descripción**: Este error ocurre cuando el campo `transaction_amount` tiene un valor diferente de cero. Para evitar este tipo de error, revisa el cuerpo de la solicitud y asegúrate de que el parámetro `transaction_amount` tenga un valor igual a cero.
 * **Cuerpo de la respuesta**:
 
 ```json
@@ -97,7 +96,6 @@ Este error ocurre cuando el campo `transaction_amount` tiene un valor diferente 
 ### Bad request
 
 * **Status**: 400
-Assistant
 * **Descripción**: Si recibes este error, te recomendamos que revises los parámetros de la solicitud para asegurarte de que estén en conformidad con los valores aceptados por nuestra API. Después de la revisión, realiza una nueva solicitud.
 * **Cuerpo de la respuesta**:
 
