@@ -5,6 +5,8 @@
 > Contacto comercial requerido
 >
 > Solo puedes integrar este producto si tu contacto comercial te compartió toda la información necesaria para hacerlo.
+> </br></br>
+> Para obtener más información sobre este modelo de facturación, consulta la documentación [Pagos con QR modelo comprador.](/developers/pt/docs/qr-code/qr-buyer/qr-buyer-part-a)
 
 ## ¿Qué es el QR modelo Comprador?
 

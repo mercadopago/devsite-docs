@@ -5,6 +5,8 @@
 > Contato comercial necessário
 >
 > Você deve acionar nosso time comercial para que sua conta seja habilitada e tenha permissão para cobrança por meio deste modelo de serviço.
+> </br></br>
+> Para aprender cómo integrar este modelo de facturación, acesse a documentação [Integrar QR modelo comprador.](/developers/pt/docs/qr-code/qr-unattended/qr-unattended-part-b) 
 
 ## O que é o QR modelo comprador?
 
