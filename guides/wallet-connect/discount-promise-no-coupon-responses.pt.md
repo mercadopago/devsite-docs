@@ -2,14 +2,13 @@
 
 Esta seção detalha as diferentes respostas que podem ser recebidas ao criar uma promessa de desconto sem um cupom pré adicionado. As respostas são categorizadas com base no resultado da requisição, variando desde o sucesso na criação da promessa de desconto até diferentes tipos de erros. 
 
-
 ## Sucesso
 
-1. Resposta com Desconto Aplicado
+1. Resposta com desconto aplicado
 
-* Código de Status: 200 (Sucesso)
-* Descrição: Retorna o valor da transação com o desconto aplicado, informações detalhadas sobre o desconto, e um link para os termos legais do desconto.
-* Corpo da Resposta:
+* Código de status: 200 (Sucesso)
+* Descrição: retorna o valor da transação com o desconto aplicado, informações detalhadas sobre o desconto, e um link para os termos legais do desconto.
+* Corpo da resposta:
 
 [[[
 ```Json
@@ -29,11 +28,11 @@ Esta seção detalha as diferentes respostas que podem ser recebidas ao criar um
 ```
 ]]]
 
-2. Resposta para Usuário/Campanha Sem Descontos 
+2. Resposta para usuário/campanha sem descontos 
 
-* Código de Status: 200 (Sucesso)
-* Descrição: Indica que a transação foi processada sem desconto aplicado.
-* Corpo da Resposta:
+* Código de status: 200 (Sucesso)
+* Descrição: indica que a transação foi processada sem desconto aplicado.
+* Corpo da resposta:
 
 
 [[[
@@ -47,17 +46,13 @@ Esta seção detalha as diferentes respostas que podem ser recebidas ao criar um
 ```
 ]]]
 
-
-
-
 ## Erro
 
-1. Resposta para Requisição Incorreta
+1. Resposta para requisição incorreta
 
-
-* Código de Status: 400 (Bad Request)
-* Descrição: Ocorre quando a requisição está mal-formada ou incompleta.
-* Corpo da Resposta:
+* Código de status: 400 (Bad Request)
+* Descrição: ocorre quando a requisição está mal-formada ou incompleta.
+* Corpo da resposta:
 [[[
 ```Json
 
@@ -70,13 +65,11 @@ Esta seção detalha as diferentes respostas que podem ser recebidas ao criar um
 ```
 ]]]
 
+2. Resposta para recurso não encontrado
 
-2. Resposta para Recurso Não Encontrado
-
-
-* Código de Status: 404 (Not Found)
-* Descrição: Significa que o recurso solicitado não existe no servidor.
-* Corpo da Resposta:
+* Código de status: 404 (Not Found)
+* Descrição: significa que o recurso solicitado não existe no servidor.
+* Corpo da resposta:
 
 [[[
 ```Json
@@ -90,12 +83,11 @@ Esta seção detalha as diferentes respostas que podem ser recebidas ao criar um
 ```
 ]]]
 
-3. Resposta para Erro Interno do Servidor
+3. Resposta para erro interno do servidor
 
-
-* Status Code: 500 (Internal Server Error)
-* Descrição: Indica um erro genérico do servidor, sugerindo problemas no lado do servidor do Mercado Pago.
-* Corpo da Resposta:
+* Código de status: 500 (Internal Server Error)
+* Descrição: indica um erro genérico do servidor, sugerindo problemas no lado do servidor do Mercado Pago.
+* Corpo da resposta:
 
 [[[
 ```Json
@@ -108,4 +100,3 @@ Esta seção detalha as diferentes respostas que podem ser recebidas ao criar um
 
 ```
 ]]]
-

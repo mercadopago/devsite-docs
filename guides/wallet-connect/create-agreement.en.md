@@ -1,4 +1,4 @@
-# Create Agreement
+# Create agreement
 
 The first step in integrating Wallet Connect is to create an agreement, an authorization link that the buyer uses to grant the seller access to their Mercado Pago wallet at the moment a payment is made.
 
@@ -17,7 +17,7 @@ Check out the diagram below that illustrates how the agreement creation flow wor
 
 ![Create agreement](/images/wallet-connect/new-create-agreement.en.png)
 
-To create an _agreement_, send a **POST** with the necessary attributes to the [/v2/wallet_connect/agreements](/developers/en/reference/wallet_connect/_wallet_connect_agreements/post) endpoint and execute the request or, if you prefer, use the `curl` below and pay attention to the request response that will return **two parameters** mandatory to obtain the payer's approval: `agreement_uri` and `return_uri`.
+To create an agreement, send a **POST** with the necessary attributes to the [/v2/wallet_connect/agreements](/developers/en/reference/wallet_connect/_wallet_connect_agreements/post) endpoint and execute the request or, if you prefer, use the `curl` below and pay attention to the request response that will return **two parameters** mandatory to obtain the payer's approval: `agreement_uri` and `return_uri`.
 
 [[[
 ```curl

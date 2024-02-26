@@ -169,11 +169,8 @@ Para configurar pagamento com Pix, envie um POST ao endpoint [/v1/payments](/dev
 
   $payment = $client->create([
     "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
     "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
     "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
     "payer" => [
       "email" => $_POST['email'],
       "first_name" => $_POST['payerFirstName'],
@@ -195,11 +192,8 @@ const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 payment.create({
     body: { 
         transaction_amount: req.transaction_amount,
-        token: req.token,
         description: req.description,
-        installments: req.installments,
         payment_method_id: req.paymentMethodId,
-        issuer_id: req.issuer,
             payer: {
             email: req.email,
             identification: {

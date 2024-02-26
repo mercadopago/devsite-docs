@@ -10,7 +10,7 @@ Los descuentos son reducciones aplicadas al precio original de un producto o ser
 
 La implementación de descuentos a través de Wallet Connect se realiza a partir de la creación de una promesa de descuento, que debe hacerse tras completar la [vinculación de cuentas](/developers/pt/docs/wallet-connect/account-linking-flow/create-agreement) y antes de iniciar el [flujo de pagos](/developers/pt/docs/wallet-connect/payment-flow). Este proceso implica:
 
-## Crear una Promesa de Descuento
+## Crear una promesa de descuento
 
 Existen dos opciones para crear una promesa de descuento, adecuadas para diferentes situaciones:
 
