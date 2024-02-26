@@ -5,8 +5,6 @@
 > Contacto comercial requerido
 >
 > Solo puedes integrar este producto si tu contacto comercial te compartió toda la información necesaria para hacerlo.
-> </br></br>
-> Para obtener más información sobre este modelo de intrgración, consulta la documentación [Integrar QR modelo desatendido.](/developers/es/docs/qr-code/qr-unattended/qr-unattended-part-b) 
 
 ## ¿Qué es QR por modelo desatendido?
 
