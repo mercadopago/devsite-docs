@@ -12,7 +12,7 @@ En esta documentación encontrarás toda la información necesaria para realizar
 
 La autenticación 3DS se puede realizar a través de dos flujos distintos: **con o sin _Challenge_**, que son pasos adicionales que el comprador debe completar para garantizar su identidad. La decisión de incluir o no el _Challenge_ depende del emisor de la tarjeta y del perfil de riesgo de la transacción que se realiza.
 
-> Obtenga también información sobre las integraciones a través de [Checkout Bricks](/developers/es/docs/checkout-bricks/how-tos/integrate-3ds,) un método de pago modular, seguro y personalizable que automatiza varios de los procesos que se describen a continuación.
+> Obtenga también información sobre las integraciones a través de [Checkout Bricks,](/developers/es/docs/checkout-bricks/how-tos/integrate-3ds) un método de pago modular, seguro y personalizable que automatiza varios de los procesos que se describen a continuación.
 
 Para **transacciones de bajo riesgo**, la información enviada en el momento del pago es suficiente y los pasos adicionales de _Challenge_ **no son necesarios**. Sin embargo, **para casos donde existe un alto riesgo de fraude**, _Challenge_ es requerido para **verificar la identidad del comprador**, lo que aumenta la conversión de las transacciones con tarjeta.
 

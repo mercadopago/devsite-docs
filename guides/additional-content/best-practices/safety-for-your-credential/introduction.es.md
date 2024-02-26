@@ -7,11 +7,3 @@ Tus integraciones manejan información sensible y por eso, es necesario que apli
 En Mercado Pago aseguramos la confidencialidad, disponibilidad e integridad de todos nuestros procesos siguiendo las mejores prácticas del mercado para que puedas utilizar todos nuestros productos de forma segura. Puedes conocer más sobre estas prácticas leyendo las documentaciones de [OWASP](/developers/es/guides/additional-content/security/owasp) y de [PCI DSS](/developers/es/guides/additional-content/security/pci).
 
 En esta guía te mostraremos cuáles son las mejores prácticas que puedes llevar a cabo para que tus integraciones sean seguras de punta a punta, en todo momento.
-
-> NEXT_STEP_CARD_ES
->
-> Mantén tus credenciales seguras
->
-> Vea cómo puedes optimizar la seguridad de tus integraciones de forma sencilla y rápida.
->
-> [Mantén tus credenciales seguras ](/developers/es/guides/additional-content/best-practices/safety-for-your-credential/secure-credentials)

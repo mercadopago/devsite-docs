@@ -97,7 +97,7 @@ Código de status: 201
 
 ## Pagamento rejeitado devido a dinheiro insuficiente na conta
 
-Esta resposta retorna quando ocorre a tentativa de criação de um Advanced Payment porém o payer não tem saldo em sua conta Mercado Pago. 
+Esta resposta retorna quando ocorre a tentativa de criação de um pagamento, porém o _payer_ não tem saldo em sua conta Mercado Pago. 
 
 [[[
 ```Json
@@ -139,7 +139,7 @@ Código de status: 201
 
 ## Pagamento rejeitado por falta de autorização
 
-Este erro é retornado quando o cliente cancela o agreement.
+Este erro é retornado quando o cliente cancela a vinculação.
 
 [[[
 ```Json
@@ -161,4 +161,3 @@ Código de status: 401
 
 ```
 ]]]
-

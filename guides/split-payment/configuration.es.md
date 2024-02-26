@@ -10,7 +10,7 @@ Crea tu aplicación para integrar con la solución de Split de pagos siguiendo l
    >
    > Importante
    >
-   > Durante la creación de tu aplicación, es posible que sea necesario reautenticar tu identidad. Si ya has completado la verificación, se solicitará la reautenticación. En caso contrario, serás redirigido para enviar los documentos necesarios. Este paso adicional es esencial para proteger tu cuenta y garantizar la conformidad de las operaciones. Puedes consultar la [documentación sobre el Panel del desarrollador](/developers/es/docs/split-payment/additional-content/your-integrations/dashboard) si tienes alguna pregunta sobre cómo utilizarlo.
+   > Durante la creación de tu aplicación, es posible que sea necesario reautenticar tu identidad. Si ya has completado la verificación, se solicitará la reautenticación. En caso contrario, serás redirigido para enviar los documentos necesarios. Este paso adicional es esencial para proteger tu cuenta y garantizar la conformidad de las operaciones. Puedes consultar la [documentación sobre el Panel del desarrollador](/developers/es/docs/split-payments/additional-content/your-integrations/dashboard) si tienes alguna pregunta sobre cómo utilizarlo.
 
 1. Accede a [Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app). Una vez allí, haz clic en el botón **Crear aplicación**, ubicado en la esquina superior derecha.
 2. Ingresa un nombre para identificar tu aplicación (tienes un límite de 50 caracteres).
@@ -35,8 +35,8 @@ Para gestionar ventas en nombre de otro usuario, debes solicitar permiso. Para e
 
  | Valor                    | Descripción                                                                                                              |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| `<APP_ID>`               | Valor obtenido durante la [creación de la aplicación](/developers/es/docs/split-payment/integration-configuration/create-application).      |
-| `<REDIRECT_URI>`         | Valor ingresado en el campo Redirect Uri durante la [configuración de la Redirect URL](/developers/es/docs/split-payment/integration-configuration/create-application). |
+| `<APP_ID>`               | Valor obtenido durante la [creación de la aplicación](#bookmark_crear_aplicación).      |
+| `<REDIRECT_URI>`         | Valor ingresado en el campo Redirect Uri durante la [configuración de la Redirect URL](#bookmark_crear_aplicación). |
 
 ----[mla]----
 ```curl

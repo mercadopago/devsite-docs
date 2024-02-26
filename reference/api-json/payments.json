@@ -592,12 +592,12 @@
                   },
                   "external_reference": {
                     "type": "string",
+                    "example": "MP0001",
                     "description": {
                       "en": "It is a payment external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.",
                       "pt": "É uma referência externa do pagamento. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação.",
                       "es": "Es una referencia de pago externa. Podría ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador del origen de la transacción."
-                    },
-                    "example": "MP0001"
+                    }
                   },
                   "installments": {
                     "type": "number",
@@ -3229,6 +3229,7 @@
                     "external_reference": {
                       "type": "string",
                       "format": "nullable",
+                      "example": "MP0001",
                       "description": {
                         "en": "It is a payment external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.",
                         "pt": "É uma referência externa do pagamento. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação.",
@@ -5976,6 +5977,7 @@
                             },
                             "external_reference": {
                               "type": "string",
+                              "example": "MP0001",
                               "format": "nullable",
                               "description": {
                                 "en": "It is a payment’s external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.",

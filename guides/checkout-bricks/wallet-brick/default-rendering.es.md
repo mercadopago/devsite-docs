@@ -126,7 +126,7 @@ const onReady = async () => {
 >
 > Cada vez que el usuario sale de la pantalla donde se muestra algún Brick, es necesario destruir la instancia actual con el comando `window.walletBrickController.unmount()`. Al ingresar nuevamente se debe generar una nueva instancia.
 
-Este flujo de creación de preferencia en _onSubmit_ está diseñado para vendedores que tienen flujos de one clic, si lo desea, también puede enviar Preferencia en el inicio. Ver más información en la sección [Preferencia en el inicio](/developers/es/docs/checkout-bricks/wallet-brick/additional-customization/preference-startup).
+Este flujo de creación de preferencia en _onSubmit_ está diseñado para vendedores que tienen flujos de one clic, si lo desea, también puede enviar Preferencia en el inicio. Ver más información en la sección [Preferencia en el inicio](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preference-startup).
 
 ## Renderizar el Brick
 

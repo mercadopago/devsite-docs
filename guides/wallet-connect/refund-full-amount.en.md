@@ -69,11 +69,9 @@ Status code: 400
 ```
 ]]]
 
-
-
 ### Failed response: Not found
 
-This is a common response that is returned when no Advanced Payment created with the id given in the request parameters is found.
+This is a common response that is returned when no Advanced Payment created with the ID given in the request parameters is found.
 
 [[[
 ```Json

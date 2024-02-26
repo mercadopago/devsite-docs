@@ -162,11 +162,8 @@ To configure payment with Pix, send a **POST** to the endpoint [/v1/payments](/d
 
   $payment = $client->create([
     "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
     "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
     "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
     "payer" => [
       "email" => $_POST['email'],
       "first_name" => $_POST['payerFirstName'],
@@ -188,11 +185,8 @@ const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 payment.create({
     body: { 
         transaction_amount: req.transaction_amount,
-        token: req.token,
         description: req.description,
-        installments: req.installments,
         payment_method_id: req.paymentMethodId,
-        issuer_id: req.issuer,
             payer: {
             email: req.email,
             identification: {
@@ -217,19 +211,19 @@ MPRequestOptions requestOptions = MPRequestOptions.builder()
 PaymentClient client = new PaymentClient();
 
 PaymentCreateRequest paymentCreateRequest =
-PaymentCreateRequest.builder()
-.transactionAmount(new BigDecimal("100"))
-.description("Product Title")
-.paymentMethodId("pix")
-.dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
-.payer(
-PaymentPayerRequest.builder()
-.email("PAYER_EMAIL")
-.firstName("Test")
-.identification(
-IdentificationRequest.builder().type("CPF").number("19119119100").build())
-.build())
-.build();
+   PaymentCreateRequest.builder()
+       .transactionAmount(new BigDecimal("100"))
+       .description("Título do produto")
+       .paymentMethodId("pix")
+       .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
+       .payer(
+           PaymentPayerRequest.builder()
+               .email("PAYER_EMAIL")
+               .firstName("Test")
+               .identification(
+                   IdentificationRequest.builder().type("CPF").number("19119119100").build())
+               .build())
+       .build();
 
 client.create(paymentCreateRequest, requestOptions);
 ```
@@ -244,16 +238,16 @@ custom_headers = {
 custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
 
 payment_request = {
-transaction_amount: 100,
-description: 'Product title',
-payment_method_id: 'pix',
-payer: {
-email: 'PAYER_EMAIL',
-identification: {
-type: 'CPF',
-number: '19119119100',
-}
-}
+  transaction_amount: 100,
+  description: 'Título do produto',
+  payment_method_id: 'pix',
+  payer: {
+    email: 'PAYER_EMAIL',
+    identification: {
+      type: 'CPF',
+      number: '19119119100',
+    }
+  }
 }
 
 payment_response = sdk.payment.create(payment_request, custom_request_options)
@@ -274,20 +268,20 @@ requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
 
 var request = new PaymentCreateRequest
 {
-TransactionAmount = 105,
-Description = "Product Title",
-PaymentMethodId = "pix",
-Payer = new PaymentPayerRequest
-{
-Email = "PAYER_EMAIL",
-FirstName = "Test",
-LastName = "User",
-Identification = new IdentificationRequest
-{
-Type = "CPF",
-Number = "191191191-00",
-},
-},
+    TransactionAmount = 105,
+    Description = "Título do produto",
+    PaymentMethodId = "pix",
+    Payer = new PaymentPayerRequest
+    {
+        Email = "PAYER_EMAIL",
+        FirstName = "Test",
+        LastName = "User",
+        Identification = new IdentificationRequest
+        {
+            Type = "CPF",
+            Number = "191191191-00",
+        },
+    },
 };
 
 var client = new PaymentClient();
@@ -295,8 +289,8 @@ Payment payment = await client.CreateAsync(request, requestOptions);
 
 ```
 ```python
-import market
-sdk = Mercadopago.SDK("ENV_ACCESS_TOKEN")
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
 request_options = mercadopago.config.RequestOptions()
 request_options.custom_headers = {
@@ -304,26 +298,26 @@ request_options.custom_headers = {
 }
 
 payment_data = {
-"transaction_amount": 100,
-"description": "Product title",
-"payment_method_id": "pix",
-"payer": {
-"email": "PAYER_EMAIL",
-"first_name": "Test",
-"last_name": "User",
-"identification": {
-"type": "CPF",
-"number": "191191191-00"
-},
-"address": {
-"zip_code": "06233-200",
-"street_name": "Avenida das Nações Unidas",
-"street_number": "3003",
-"neighborhood": "Bonfim",
-"city": "Osasco",
-"federal_unit": "SP"
-}
-}
+    "transaction_amount": 100,
+    "description": "Título do produto",
+    "payment_method_id": "pix",
+    "payer": {
+        "email": "PAYER_EMAIL",
+        "first_name": "Test",
+        "last_name": "User",
+        "identification": {
+            "type": "CPF",
+            "number": "191191191-00"
+        },
+        "address": {
+            "zip_code": "06233-200",
+            "street_name": "Av. das Nações Unidas",
+            "street_number": "3003",
+            "neighborhood": "Bonfim",
+            "city": "Osasco",
+            "federal_unit": "SP"
+        }
+    }
 }
 
 payment_response = sdk.payment().create(payment_data, request_options)
@@ -331,33 +325,33 @@ payment = payment_response["response"]
 ```
 ```curl
 curl -X POST \
--H 'accept: application/json' \
--H 'content-type: application/json' \
--H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
--H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
-'https://api.mercadopago.com/v1/payments' \
--d '{
-"transaction_amount": 100,
-"description": "Product title",
-"payment_method_id": "pix",
-"payer": {
-"email": "PAYER_EMAIL",
-"first_name": "Test",
-"last_name": "User",
-"identification": {
-"type": "CPF",
-"number": "19119119100"
-},
-"address": {
-"zip_code": "06233200",
-"street_name": "Avenida das Nações Unidas",
-"street_number": "3003",
-"neighborhood": "Bonfim",
-"city": "Osasco",
-"federal_unit": "SP"
-}
-}
-}'
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
+    'https://api.mercadopago.com/v1/payments' \
+    -d '{
+      "transaction_amount": 100,
+      "description": "Título do produto",
+      "payment_method_id": "pix",
+      "payer": {
+        "email": "PAYER_EMAIL",
+        "first_name": "Test",
+        "last_name": "User",
+        "identification": {
+            "type": "CPF",
+            "number": "19119119100"
+        },
+        "address": {
+            "zip_code": "06233200",
+            "street_name": "Av. das Nações Unidas",
+            "street_number": "3003",
+            "neighborhood": "Bonfim",
+            "city": "Osasco",
+            "federal_unit": "SP"
+        }
+      }
+    }'
 ```
 ]]]
 

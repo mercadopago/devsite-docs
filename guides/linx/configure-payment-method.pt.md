@@ -13,9 +13,9 @@ Além disso, você pode [oferecer parcelas sem acréscimos](#bookmark_configuran
 
 Após adicionar o meio de pagamento, **configure os dados de sua integração com o Mercado Pago** através dos seguintes passos:
 
-1. Acesse a aba "Integração" e complete os campos Public Key e Access Token com as [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) de produção de sua conta do Mercado Pago.
+1. Acesse a aba "Integração" e complete os campos Public Key e Access Token com as [Credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) de produção de sua conta do Mercado Pago.
 1. Preencha o nome que será informado na fatura do seu cliente para que ele possa reconhecê-lo.
-1. Se deseja habilitar pagamentos de teste, na seção Modo teste selecione a opção "Sim". Depois complete os campos Public Key e Access Token com as [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) de teste  da sua conta do Mercado Pago.
+1. Se deseja habilitar pagamentos de teste, na seção Modo teste selecione a opção "Sim". Depois complete os campos Public Key e Access Token com as [Credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) de teste  da sua conta do Mercado Pago.
 1. Na seção de Parcelamento, selecione "Externo (API do Mercado Pago)" onde você vai utilizar as condições de parcelamento diretamente da sua conta Mercado Pago.
 1. Por último, clique em "Salvar".
 <p>&nbsp;</p>
