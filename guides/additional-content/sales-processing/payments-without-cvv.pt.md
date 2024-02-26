@@ -16,7 +16,7 @@ Além disso, o vendedor deve cumprir as seguintes políticas de integração do 
 
 - No caso de usuários ou clientes existentes do vendedor estarem sendo migrados para a plataforma de pagamentos recorrentes do Mercado Pago, o vendedor deve comunicar por escrito indicando que o Mercado Pago processará os pagamentos, informando que na fatura verá a cobrança como Mercado Pago ou Mercado Livre.
 
-> No caso de cartões de crédito **Master e Amex**, na fatura do cartão aparecerá como: `MP*&ltbrand_name&gt`. Portanto, para esses meios de pagamento, você pode comunicar: "Na sua fatura, você verá a cobrança como `MP*&ltbrand_name&gt`" onde `&ltbrand_name&gt` é configurado na conta do Mercado Pago do vendedor, acessando [Seu negócio > Configurações > Dados do seu negócio](https://www.mercadopago[FAKER][URL][DOMAIN]/business#from-section=menu).
+> No caso de cartões de crédito **Master e Amex**, na fatura do cartão aparecerá como: `MP*&ltbrand_name&gt`. Portanto, para esses meios de pagamento, você pode comunicar: "Na sua fatura, você verá a cobrança como `MP*&ltbrand_name&gt`" onde `&ltbrand_name&gt` é configurado na conta do Mercado Pago do vendedor, acessando [Seu negócio > Configurações > Dados do seu negócio.](https://www.mercadopago[FAKER][URL][DOMAIN]/business#from-section=menu)
 
 ## Pré-requisitos
 
@@ -26,7 +26,7 @@ Além disso, o vendedor deve cumprir as seguintes políticas de integração do 
 | Conta de vendedor de Mercado Pago  | Para utilizar o recursos de pagamentos sem CVV, é preciso uma conta vendedor no Mercado Pago. Caso não tenha, ----[mlb]----[clique aqui](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[clique aqui](https://www.mercadopago.com.ar/hub/registration/landing) ------------ ----[mlm]----[clique aqui](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[clique aqui](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[clique aqui](https://www.mercadopago.com.co/hub/registration/landing) ------------  ----[mlu]----[clique aqui](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[clique aqui](https://www.mercadopago.cl/hub/registration/landing) ------------   para criá-la gratuitamente.  |
 | Aplicação  | As aplicações são as diferentes integrações contidas em uma ou mais lojas. Você pode criar uma aplicação para cada solução que implementar, a fim de ter tudo organizado e manter um controle que facilite a gestão. Para operar pagamentos sem CVV, a aplicação deve ser habilitada para esse fim. Essas permissões são atribuídas pelo Mercado Pago, então você deve nos enviar o **ID da aplicação** para realizar a configuração correspondente. <br><br> Veja [Suas integrações](/developers/pt/docs/checkout-api/additional-content/your-integrations/introduction) para mais informações sobre como criar uma aplicação. |
 
-## Cobre os seus clientes de forma recorrente
+## Cobrar os seus clientes de forma recorrente
 
 Siga os processos abaixo para configurar o recebimento de pagamentos recorrentes de seus clientes.
 
@@ -264,8 +264,7 @@ curl -X POST \
 ```
 ]]]
 
-
-> Para mais informações, siga os passos de nossa integração de [pagamentos com cartão do Checkout Transparente](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) ou utilizando o [Brick de Card Payment](/developers/pt/docs/checkout-bricks/card-payment-brick/payment-submission).|
+> Para mais informações, siga os passos de nossa integração de [pagamentos com cartão do Checkout Transparente](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) ou utilizando o [Brick de Card Payment.](/developers/pt/docs/checkout-bricks/card-payment-brick/payment-submission)
 
 ### Associar cartão ao cliente
 
@@ -404,7 +403,7 @@ curl -X POST \
 
 > Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout Transparente.](/developers/pt/docs/checkout-api/customer-management)
 
-### Obtenha os dados do cliente
+### Obter os dados do cliente
 
 Para obter os dados do cliente como, por exemplo, ID, endereço ou data de registro, é possível obtê-los através da nossa API de clientes. Para isso, envie um GET com e-mail do cliente ao endpoint [/v1/customers/search](/developers/pt/reference/customers/_customers_search/get) e execute a requisição ou, se preferir, utilize um dos SDKs abaixo.
 
@@ -482,7 +481,7 @@ curl -X GET \
 
 > Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout Transparente](/developers/pt/docs/checkout-api/customer-management) ou a seção de [renderização padrão do Brick de Card Payment.](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering)
 
-### Obtenha o cartão associado ao cliente
+### Obter o cartão associado ao cliente
 
 Tendo obtido o ID do cliente, utilize-o para localizar o cartão associado.
 
@@ -539,7 +538,7 @@ curl -X GET \
 
 > Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout Transparente.](/developers/pt/docs/checkout-api/customer-management)
 
-### Gere um token do cartão
+### Gerar um token do cartão
 
 Após localizar os dados do cartão associado ao cliente, utilize o Javascript abaixo para tokenizar o cartão utilizando o seu ID e o código de segurança.
 
@@ -572,7 +571,7 @@ Após localizar os dados do cartão associado ao cliente, utilize o Javascript a
 > <br><br>
 > Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout Transparente.](/developers/pt/docs/checkout-api/customer-management)
 
-### Realize a cobrança
+### Realizar a cobrança
 
 Utilize o token gerado anteriormente para registrar o pagamento, indicando o ID do cliente associado ao cartão.
 
@@ -733,7 +732,7 @@ curl -X POST \
 
 > Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout Transparente](/developers/pt/docs/checkout-api/customer-management) ou a seção de [renderização padrão do Brick de Card Payment.](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering)
 
-## Visualize notificações sobre os pagamentos
+## Vizualizar notificações sobre os pagamentos
 
 Sempre que um pagamento for processado e houver alguma novidade sobre o processo, o Mercado Pago enviará uma notificação para que você possa atualizar seus sistemas. Acesse a documentação de [notificações Webhooks](/developers/pt/docs/your-integrations/notifications/webhooks) para saber como configurar o recebimento destas notificações.
 
@@ -745,7 +744,7 @@ Caso haja uma rejeição por fundos insuficientes, uma nova tentativa com o mesm
 
 Em cada caso, é importante comunicar ao seu cliente o resultado do pagamento e fornecer instruções para a próxima etapa. Informaremos um `HTTP Status 201 OK` de que o pagamento foi criado corretamente e enviaremos um código de resultado para que você possa redirecionar o cliente para a página com a mensagem correta.
 
-## Teste a integração
+## Testar a integração
 
 É crucial realizar testes do fluxo completo antes de ir para a produção, verificando se a criação de pagamentos é feita corretamente e se as mensagens são eficazes na comunicação com o usuário. Uma boa experiência para seus clientes no checkout ajuda a melhorar a conversão.
 
