@@ -5,7 +5,7 @@
 > Contato comercial necessário
 >
 > Você só pode integrar este produto se o seu contato comercial compartilhar todas as informações necessárias para isso.
->
+> </br></br>
 > Para saber mais informações sobre este modelo de cobrança, acesse a documentação [Pagamentos QR modelo desatendido.](/developers/pt/docs/qr-code/qr-unattended/qr-unattended-part-a)
 
 Para integrar o modelo desatendido, é necessário: 
