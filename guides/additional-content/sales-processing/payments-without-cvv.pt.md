@@ -32,9 +32,13 @@ Siga os processos abaixo para configurar o recebimento de pagamentos recorrentes
 
 ### Processar primeiro pagamento  
 
-Para a primeira transação, sempre será necessário solicitar os dados do cartão e processar o pagamento com o código de segurança. debe tomar en consideración dos flujos para guardar los datos de la tarjeta del cliente: 
+Para a primeira transação, sempre será necessário solicitar os dados do cartão e processar o pagamento com o código de segurança. Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs. Os campos mínimos requeridos para enviar são: `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email`.
 
-1. en caso de que la afiliación incluya el cobro de una primera cuota, se ejecuta el primer pago con cho api o cho bricks tal como se hace en la actualidad
+Deve-se levar em consideração dois fluxos para salvar os dados do cartão do cliente:
+
+1. No caso de a afiliação incluir o pagamento da primeira parcela, o primeiro pagamento é processado com Checkout Transparente ou Checkout Bricks seguindo os processos de pagamento ao Mercado Pago. Para isso, é necessário que seu backend possa receber a informação do formulário com o token gerado e os dados completos. 
+
+2. No caso em que a afiliação não inclua o pagamento de uma primeira parcela, devem ser considerados dois fluxos: um para cartões Visa e Master com autenticação via [Zero Dollar Auth](/developers/pt/docs/zero-dollar-auth/integration) e outro com a cobrança de um valor baixo e o [reembolso do dinheiro](/guides/additional-content/sales-processing/cancellations-and-refunds).
 
 [[[
 ```php
@@ -259,8 +263,6 @@ curl -X POST \
  
 ```
 ]]]
-
-2. en caso que la afiliación no incluya el cobro de una primera cuota, se deben tener dos flujos uno para tarjeta visa y master con zero dolar   y otro con el cobro de un monto bajo y la devolución del dinero.
 
 
 > Para mais informações, siga os passos de nossa integração de [pagamentos com cartão do Checkout Transparente](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) ou utilizando o [Brick de Card Payment](/developers/pt/docs/checkout-bricks/card-payment-brick/payment-submission).|
