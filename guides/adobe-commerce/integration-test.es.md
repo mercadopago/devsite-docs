@@ -13,16 +13,16 @@ A continuación, te indicamos cómo probar la integración:
 2. Haz clic en **Cuentas de prueba** en el menú de la izquierda.
 3. Dentro de la sección de **Cuentas de prueba**, haz clic en **Crear cuenta de prueba** y crea dos cuentas diferentes: una para el vendedor y otra para el comprador. No es posible utilizar la misma cuenta de prueba para el vendedor y el comprador. Consulta la [documentación de Cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts) para acceder al paso a paso de creación de cuentas de prueba.
 
-![Crear cuenta](/images/adobe-commerce/test-create-account.gif)
+![Crear cuenta](/images/adobe-commerce/test-create-account-es.gif)
 
 4. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago usando la cuenta de prueba del vendedor creada en el paso anterior.
 5. En la misma ventana de incógnito iniciada como vendedor, accede al [Panel del desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) y crea una nueva aplicación siguiendo las instrucciones detalladas en la [documentación del Panel del desarrollador.](/developers/es/docs/adobe-commerce/additional-content/your-integrations/dashboard)
 
-![Iniciar sesión](/images/adobe-commerce/test-login.gif)
+![Iniciar sesión](/images/adobe-commerce/test-login-es.gif)
 
 6. Accede a la aplicación creada en el paso anterior y haz clic en **Credenciales de producción** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
 
-![Credenciales de producción](/images/adobe-commerce/test-prod-credentials.png)
+![Credenciales de producción](/images/adobe-commerce/test-prod-credentials-es.png)
 
 7. Ve a la configuración del panel de Adobe Commerce (**Tiendas > Configuración > Ventas > Métodos de pago > Otros métodos de pago > Configurar > Configuración básica > Integración Mercado Pago**).
 8. Selecciona la opción **Producción** en el campo "Modo de operación de pago".

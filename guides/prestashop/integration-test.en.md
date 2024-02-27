@@ -13,22 +13,22 @@ Here's how to test the integration:
 2. Click on **Test accounts** in the left menu.
 3. Within the **Test accounts** section, click on **Create test account** and create two different accounts: one for the seller and another for the buyer. It's not possible to use the same test account for both seller and buyer. Refer to the [Test accounts documentation](/developers/en/docs/prestashop/additional-content/your-integrations/test/accounts) for step-by-step account creation.
 
-![Create account](/images/prestashop/test-create-account.gif)
+![Create account](/images/prestashop/test-create-account-es.gif)
 
 4. Open a new incognito window and log in to Mercado Pago using the seller's test account created in the previous step.
 5. In the same incognito window logged in as a seller, access the [Developer dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) and create a new application, following the detailed instructions in the [Developer dashboard documentation](/developers/en/docs/prestashop/additional-content/your-integrations/dashboard).
 
-![Login](/images/prestashop/test-login.gif)
+![Login](/images/prestashop/test-login-es.gif)
 
 6. Access the application created in step 5 and click on **Production credentials** in the left menu. Copy the `access_token` and `public_key`.
 
-![Production credentials](/images/prestashop/test-prod-credentials.png)
+![Production credentials](/images/prestashop/test-prod-credentials-es.png)
 
-7. Go to the Prestashop panel settings (**Modules > Module Manager > Payment > Mercado Pago > Configure**).
+7. Go to the PrestaShop panel settings (**Modules > Module Manager > Payment > Mercado Pago > Configure**).
 8. Enter the production credentials `access_token` and `public_key` of the seller's test account in the **Production credentials** field.
 9. In the application created in step 5, click on **Test credentials** in the left menu. Copy the `access_token` and `public_key`.
 
-![Test credentials](/images/prestashop/test-test-credentials.png)
+![Test credentials](/images/prestashop/test-test-credentials-es.png)
 
 10. Also, enter the test credentials `access_token` and `public_key` of the seller's test account in the **Test credentials** field.
 
@@ -51,6 +51,6 @@ Here's how to test the integration:
 >
 > During testing, you will be operating in the production environment. However, this is a test in which you will be using fictitious credentials to simulate real scenarios. After completing the tests, remember to replace the seller's credentials (both production and test) entered in the plugin panel in steps 8 and 10 with the actual credentials from your Mercado Pago account. This action will allow you to continue selling in your store and avoid confusion.
 
-After completing a test purchase using Checkout Pro or Checkout ----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, the purchase approval will be visible in the Prestashop Admin Panel, except for purchases made offline----[mlb]---- and Pix------------, which will remain pending.
+After completing a test purchase using Checkout Pro or Checkout ----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, the purchase approval will be visible in the PrestaShop Admin Panel, except for purchases made offline----[mlb]---- and Pix------------, which will remain pending.
 
 Furthermore, orders will be recorded in the history of the Mercado Pago test seller account.

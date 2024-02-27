@@ -13,22 +13,22 @@ A continuación, le mostramos cómo probar la integración:
 2. Haga clic en **Cuentas de prueba** en el menú de la izquierda.
 3. Dentro de la sección **Cuentas de prueba**, haga clic en **Crear cuenta de prueba** y cree dos cuentas diferentes: una para el vendedor y otra para el comprador. No es posible utilizar la misma cuenta de prueba para el vendedor y el comprador. Consulte la [documentación de Cuentas de prueba](/developers/es/docs/prestashop/additional-content/your-integrations/test/accounts) para obtener instrucciones detalladas sobre cómo crear cuentas de prueba.
 
-![Crear cuenta](/images/prestashop/test-create-account.gif)
+![Crear cuenta](/images/prestashop/test-create-account-es.gif)
 
 4. Abra una nueva ventana de incógnito e inicie sesión en Mercado Pago con la cuenta de prueba del vendedor creada en el paso anterior.
 5. En la misma ventana de incógnito conectada como vendedor, acceda al [Panel del desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) y cree una nueva aplicación, siguiendo las instrucciones detalladas en la [documentación del Panel del desarrollador.](/developers/es/docs/prestashop/additional-content/your-integrations/dashboard)
 
-![Inicio de sesión](/images/prestashop/test-login.gif)
+![Inicio de sesión](/images/prestashop/test-login-es.gif)
 
 6. Acceda a la aplicación creada en el paso 5 y haga clic en **Credenciales de producción** en el menú de la izquierda. Copie el `access_token` y la `public_key`.
 
-![Credenciales de producción](/images/prestashop/test-prod-credentials.png)
+![Credenciales de producción](/images/prestashop/test-prod-credentials-es.png)
 
-7. Vaya a la configuración del panel de Prestashop (**Módulos > Module Manager > Pago > Mercado Pago > Configurar**).
+7. Vaya a la configuración del panel de PrestaShop (**Módulos > Module Manager > Pago > Mercado Pago > Configurar**).
 8. Ingrese las credenciales de producción `access_token` y `public_key` de la cuenta de prueba del vendedor en el campo **Credenciales de producción**.
 9. En la aplicación creada en el paso 5, haga clic en **Credenciales de prueba** en el menú de la izquierda. Copie el `access_token` y la `public_key`.
 
-![Credenciales de prueba](/images/prestashop/test-test-credentials.png)
+![Credenciales de prueba](/images/prestashop/test-test-credentials-es.png)
 
 10. Ingrese también las credenciales de prueba `access_token` y `public_key` de la cuenta de prueba del vendedor en el campo **Credenciales de prueba**.
 
@@ -52,6 +52,6 @@ A continuación, le mostramos cómo probar la integración:
 >
 > Durante las pruebas, estará operando en el entorno de producción; sin embargo, es una prueba en la que utilizará credenciales ficticias para simular escenarios reales. Al finalizar las pruebas, recuerde reemplazar las credenciales del vendedor (tanto de producción como de prueba) ingresadas en el panel del complemento en los pasos 8 y 10, por las credenciales reales de su cuenta en Mercado Pago. Esta acción le permitirá seguir vendiendo en su tienda y evitará confusiones.
 
-Después de completar una compra de prueba utilizando el Checkout Pro o el Checkout ----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, la aprobación de la compra será visible en el Panel Administrativo de Prestashop, excepto en las compras realizadas por métodos offline----[mlb]---- y Pix------------, que permanecerán con estado pendiente.
+Después de completar una compra de prueba utilizando el Checkout Pro o el Checkout ----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, la aprobación de la compra será visible en el Panel Administrativo de PrestaShop, excepto en las compras realizadas por métodos offline----[mlb]---- y Pix------------, que permanecerán con estado pendiente.
 
 Además, los pedidos se registrarán en el historial de la cuenta de prueba del vendedor de Mercado Pago.

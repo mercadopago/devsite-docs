@@ -24,7 +24,7 @@ Veja abaixo como testar a integração:
 
 ![Credenciais de produção](/images/prestashop/test-prod-credentials.png)
 
-7. Vá até as configurações do painel de Prestashop (**Módulos > Module Manager > Pagamento > Mercado Pago > Configurar**).
+7. Vá até as configurações do painel de PrestaShop (**Módulos > Module Manager > Pagamento > Mercado Pago > Configurar**).
 8. Insira as credenciais produtivas `access_token` e a `public_key` da conta de teste do vendedor no campo **Credenciais de produção**.
 9. Na aplicação criada no passo 5, clique em **Credenciais de teste** no menu à esquerda. Copie o `access_token` e a `public_key`.
 
@@ -51,6 +51,6 @@ Veja abaixo como testar a integração:
 >
 > Durante os testes, você estará operando no ambiente de produção, no entanto, trata-se de um teste no qual você estará utilizando credenciais fictícias para simular cenários reais. Ao concluir os testes, lembre-se de substituir as credenciais do vendedor (tanto de produção quanto de teste), inseridas no painel do plugin nos passos 8 e 10, pelas credenciais reais da sua conta no Mercado Pago. Essa ação permitirá que você continue vendendo em sua loja e evitará confusões.
 
-Após concluir uma compra de teste utilizando o Checkout Pro ou o Checkout ----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, a aprovação da compra será visível no Painel Administrativo de Prestashop, com exceção das compras feitas por meios offline----[mlb]---- e Pix------------, que permanecerão com status pendente.
+Após concluir uma compra de teste utilizando o Checkout Pro ou o Checkout ----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, a aprovação da compra será visível no Painel Administrativo de PrestaShop, com exceção das compras feitas por meios offline----[mlb]---- e Pix------------, que permanecerão com status pendente.
 
 Além disso, os pedidos serão registrados no histórico da conta de teste de vendedor do Mercado Pago.
