@@ -22,7 +22,7 @@ A continuación, le mostramos cómo probar la integración:
 4. Abra una nueva ventana de incógnito e inicie sesión en Mercado Pago con la cuenta de prueba del vendedor creada en el paso anterior.
 5. En la misma ventana de incógnito conectada como vendedor, acceda al [Panel del desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) y cree una nueva aplicación, siguiendo las instrucciones detalladas en la [documentación del Panel del desarrollador.](/developers/es/docs/prestashop/additional-content/your-integrations/dashboard)
 
-![Inicio de sesión](/images/prestashop/test-login-es.gif)
+![Inicio de sesión](/images/prestashop/test-login-esp.gif)
 
 6. Acceda a la aplicación creada en el paso 5 y haga clic en **Credenciales de producción** en el menú de la izquierda. Copie el `access_token` y la `public_key`.
 

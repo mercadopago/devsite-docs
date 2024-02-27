@@ -22,7 +22,7 @@ Here's how to test the integration:
 4. Open a new incognito window and log in to Mercado Pago using the seller's test account created in the previous step.
 5. In the same incognito window logged in as the seller, access the [Developer dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) and create a new application, following the detailed instructions in the [Developer dashboard documentation.](/developers/pt/docs/woocommerce/additional-content/your-integrations/dashboard)
 
-![Login](/images/woocomerce/test-login-es.gif)
+![Login](/images/woocomerce/test-login-esp.gif)
 
 6. Access the application created in the previous step and click on **Production credentials** in the left menu. Copy the `access_token` and the `public_key`.
 

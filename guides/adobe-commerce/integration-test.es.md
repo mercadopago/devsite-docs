@@ -22,7 +22,7 @@ A continuación, te indicamos cómo probar la integración:
 4. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago usando la cuenta de prueba del vendedor creada en el paso anterior.
 5. En la misma ventana de incógnito iniciada como vendedor, accede al [Panel del desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) y crea una nueva aplicación siguiendo las instrucciones detalladas en la [documentación del Panel del desarrollador.](/developers/es/docs/adobe-commerce/additional-content/your-integrations/dashboard)
 
-![Iniciar sesión](/images/adobe-commerce/test-login-es.gif)
+![Iniciar sesión](/images/adobe-commerce/test-login-esp.gif)
 
 6. Accede a la aplicación creada en el paso anterior y haz clic en **Credenciales de producción** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
 
