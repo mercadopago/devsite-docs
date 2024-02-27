@@ -393,8 +393,8 @@ Con toda la información recopilada en el backend, envía un **POST** con los at
 ```php
 <?php
   use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\Client\Common\RequestOptions;
   use MercadoPago\MercadoPagoConfig;
-
 
   MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
@@ -403,17 +403,17 @@ Con toda la información recopilada en el backend, envía un **POST** con los at
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
-    "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
-    "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
-    "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
+    "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+    "token" => $_POST['<TOKEN>'],
+    "description" => $_POST['<DESCRIPTION>'],
+    "installments" => $_POST['<INSTALLMENTS>'],
+    "payment_method_id" => $_POST['<PAYMENT_METHOD_ID'],
+    "issuer_id" => $_POST['<ISSUER>'],
     "payer" => [
-      "email" => $_POST['email'],
+      "email" => $_POST['<EMAIL>'],
       "identification" => [
-        "type" => $_POST['identificationType'],
-        "number" => $_POST['number']
+        "type" => $_POST['<IDENTIFICATION_TYPE'],
+        "number" => $_POST['<NUMBER>']
       ]
     ]
   ], $request_options);
