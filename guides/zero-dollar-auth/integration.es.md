@@ -43,22 +43,188 @@ A continuación, completa los campos necesarios según la siguiente tabla. Luego
 | description | String | Descripción de la validación | "validación de tarjeta con valor zero dollar master crédito con cvv" |
 | transaction_amount | Number | Costo de la validación | Siempre cero (0) para Zero Dollar Auth |
 
+[[[
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
---header 'Authorization: Bearer TOKEN' \
---header 'Content-Type: application/json' \
---header 'X-Card-Validation: card_validation' \
---data-raw '{
-    "token": "TOKEN",
-    "payment_method_id": "master",
-    "payer": {
-        "id": "1271664686-sl7aQsXWRh6AkC"
-        "type" : "customer"
-    },
-    "description": "validação de cartão com valor zero dollar master",
-    "transaction_amount": 0
+curl --location 'https://api.mercadopago.com/v1/card_tokens?public_key={{public_key}}' \
+     --header 'Content-Type: application/json' \
+     --header 'Cookie: _d2id=573665fb-5ad1-4bc9-a25e-dd82b6689f38-n' \
+     --heade    r 'X-Test-Token: true' \
+     --data '{
+              "card_number": "4074090000000004",
+              "expiration_month": 11,
+              "expiration_year": 2025,
+              "site_id": "MLB",
+              "security_code": "123",
+              "cardholder": {
+                             "name": "APRO",
+                             "identification": {
+                                                "type": "CPF",
+                                                "number": "15635614680"
+        }
+    }
 }'
 ```
+```php
+<?php
+  use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\MercadoPagoConfig;
+
+
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+
+  $client = new PaymentClient();
+  $request_options = new RequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>", "X-Card-Validation: card_validation"]);
+
+  $payment = $client->create([
+    "token" => $_POST['token'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "payer" => [
+      "id" => $_POST['id'],
+      "type" => $_POST['type']
+    ],
+    "description" => $_POST['description'],
+    "transaction_amount" => (float) $_POST['transactionAmount']
+  ], $request_options);
+  echo implode($payment);
+?>
+```
+```node
+import { Payment, MercadoPagoConfig } from 'mercadopago';
+
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+
+payment.create({
+    body: { 
+        token: req.token,
+        payment_method_id: req.payment_method_id,
+        payer: {
+            id: req.id,
+            type: req.type
+        },
+        description: req.description,
+        transaction_amount: req.transaction_amount,
+    },
+    requestOptions: { 
+        idempotencyKey: '<SOME_UNIQUE_VALUE>',
+        X-Card-Validation: 'card_validation' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
+```
+```java
+Map<String, String> customHeaders = new HashMap<>();
+customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
+customHeaders.put("X-Card-Validation", "card_validation");
+ 
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
+
+MercadoPagoConfig.setAccessToken("YOUR_ACCESS_TOKEN");
+
+PaymentClient client = new PaymentClient();
+
+PaymentCreateRequest paymentCreateRequest =
+   PaymentCreateRequest.builder()
+       .transactionAmount(request.getTransactionAmount())
+       .token(request.getToken())
+       .description(request.getDescription())
+       .paymentMethodId(request.getPaymentMethodId())
+       .payer(
+           PaymentPayerRequest.builder()
+               .id(request.getPayer().getId())
+               .type(request.getPayer().getType())
+               .build())
+       .build();
+
+client.create(paymentCreateRequest, requestOptions);
+```
+```ruby
+require 'mercadopago'
+sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
+
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>',
+ 'X-Card-Validation': 'card_validation'
+}
+
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
+
+payment_data = {
+ transaction_amount: params[:transactionAmount].to_f,
+ token: params[:token],
+ description: params[:description],
+ payment_method_id: params[:paymentMethodId],
+ payer: {
+   id: 'params[:id]',
+   type: params[:type]
+ }
+}
+ 
+payment_response = sdk.payment.create(payment_data, custom_request_options)
+payment = payment_response[:response]
+ 
+puts payment
+```
+```dotnet
+using System;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+ 
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
+
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
+requestOptions.CustomHeaders.Add("X-Card-Validation", "card_validation");
+
+var paymentRequest = new PaymentCreateRequest
+{
+   TransactionAmount = decimal.Parse(Request["transactionAmount"]),
+   Token = Request["token"],
+   Description = Request["description"],
+   PaymentMethodId = Request["paymentMethodId"],
+   Payer = new PaymentPayerRequest
+   {
+       Id = Request["id"],
+       Type = Request["type"]
+   },
+};
+ 
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest, requestOptions);
+ 
+Console.WriteLine(payment.Status);
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'x-idempotency-key': '<SOME_UNIQUE_VALUE>',
+    'X-Card-Validation': 'card_validation'
+}
+
+payment_data = {
+   "transaction_amount": float(request.POST.get("transaction_amount")),
+   "token": request.POST.get("token"),
+   "description": request.POST.get("description"),
+   "payment_method_id": request.POST.get("payment_method_id"),
+   "payer": {
+       "id": request.POST.get("id"),
+       "type": request.POST.get("type")
+   }
+}
+ 
+payment_response = sdk.payment().create(payment_data, request_options)
+payment = payment_response["response"]
+ 
+print(payment)
+```
+]]]
 
 Al realizar las solicitudes, es posible que se devuelvan diferentes respuestas y estados. Para obtener más detalles sobre las respuestas recibidas, consulta la sección de "Respuestas de la API".
 

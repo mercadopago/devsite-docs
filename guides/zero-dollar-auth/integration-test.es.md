@@ -24,7 +24,7 @@ Para probar la validación de Zero Dollar Auth, el primer paso es generar un tok
 | site_id | String | Sigla del país de origen de la solicitud | MLA |
 | security_code | String | Código de seguridad | 123 |
 | cardholder.name | String | Titular de la tarjeta | APRO |
-| cardholder.identification.type | String | Tipo de documento | CPF |
+| cardholder.identification.type | String | Se refiere al tipo de identificación. Puede ser de los siguientes tipos:<br>**CPF**: Individual Taxpayer Registration, Brazil.<br>**CNPJ**: National Register of Legal Entities, Brazil.<br>**CUIT**: Unique Tax Identification Code, Argentina.<br>**CUIL**: Unique Labor Identification Code, Argentina.<br>**DNI**: National Identity Document, Argentina.<br>**CURP**: Single Population Registration Code, Mexico.<br>**RFC**: Federal Registry of Taxpayers, Mexico.<br>**CC**: Citizenship Card, Colombia.<br>**RUT**: Single Tax List, Chile.<br>**CI**: Identity Card, Uruguay. | CPF |
 | cardholder.identification.number | String | Número de documento | 15635614680 |
 
 ```curl
