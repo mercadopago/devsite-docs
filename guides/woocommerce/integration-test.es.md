@@ -1,52 +1,50 @@
-# Probar la integración
+# Probar pagos
 
-Para corroborar que la tienda esté configurada correctamente, te recomendamos testear tu tienda antes de lanzarla a producción. 
-Para activar el modo de pruebas de tu tienda, sigue estos pasos:
+Las pruebas de compra son esenciales para asegurar que los pagos se procesen correctamente antes de autorizar transacciones reales. Para verificar que tu tienda esté configurada correctamente, recomendamos realizar pruebas de pago antes de ponerla en producción.
 
-1. Ve a tu cuenta de [Wordpress](https://wordpress.com/).
-2. Accede al Panel de tu cuenta y haz clic en **Plugins > Plugins instalados**.
-3. En el buscador de plugins, busca “Mercado Pago payments for WooCommerce”.
-4. Haz clic en **Configurar Plugin**.
-5. Haz clic en **4. Testea tu tienda antes de vender** para desplegar las opciones.
-6. En **Elige cómo quieres operar tu tienda**, selecciona **Modo Test**.
-7. Haz clic en **Guardar cambios** para finalizar.
-
-## Checkout Pro
-1. Selecciona la opción **Quiero pagar con Mercado Pago sin costo adicional**.
-1. Haz clic en **pedido con pago obligatorio** para ser redirigido al entorno de pago de Mercado Pago.
-1. En la pantalla de pago, elige pagar con una nueva tarjeta de crédito y usa las [tarjetas de prueba](/developers/es/docs/woocommerce/additional-content/your-integrations/test/cards) para realizar el pago. Es importante no iniciar sesión en la cuenta de Mercado Pago ni intentar pagar con tarjetas de uso personal.
-1. Agrega la información de la tarjeta de prueba indicada (número de tarjeta, CVV y fecha de vencimiento).
-1. Al finalizar la compra, podrás visualizar, dentro de Mercado Pago, el comprobante de que se realizó la compra y serás redirigido nuevamente a la tienda.
-
-----[mlb]----
-## Checkout Transparente
-------------
-----[mla, mlm, mpe, mco, mlu, mlc]----
-## Checkout API
-------------
-1. Selecciona la opción **Quiero pagar con tarjeta de crédito**.
-1. Elige pagar con una nueva tarjeta de crédito y utiliza las [tarjetas de prueba](/developers/es/docs/woocommerce/additional-content/your-integrations/test/cards) para realizar el pago. Es importante no pagar con tarjetas de uso personal.
-1. Agrega la información de la tarjeta de prueba indicada (número de tarjeta, CVV y fecha de vencimiento).
-1. Haz clic en **pedir con pago requerido**.
-1. Al finalizar la compra, se podrá ver que la compra ha sido aprobada.
-
-----[mlb]----
 > WARNING
+> 
+> Importante
 >
-> Atención
->
-> Al finalizar la compra de prueba con Checkout Pro, en el Admin Panel de WooCommerce no será posible visualizar la compra como aprobada debido a que el proceso se realiza dentro del ambiente de Mercado Pago y no en el ambiente de la tienda. Con pruebas realizadas con Checkout Transparente podrás ver la aprobación del pedido.<br>
-> </br> <br/>
-> Además, en ambos checkouts esta información sobre el pago aprobado no se incluirá en el historial de la cuenta de Mercado Pago porque solo contiene gastos reales (hechos en producción).
-------------
+> La prueba solo se puede realizar después de la [configuración de la integración.](/developers/en/docs/woocommerce/integration-configuration/plugin-configuration)
 
-----[mla, mlm, mpe, mco, mlu, mlc]----
+Aquí te explicamos cómo probar la integración:
+
+1. Accede a **[Tus integraciones](https://www.mercadopago.com/developers/panel/app)** en el administrador de Mercado Pago y selecciona la aplicación que deseas probar.
+2. Haz clic en **Cuentas de prueba** en el menú de la izquierda.
+3. Dentro de la sección **Cuentas de prueba**, haz clic en **Crear cuenta de prueba** y crea dos cuentas diferentes: una para el vendedor y otra para el comprador. No es posible utilizar la misma cuenta de prueba para vendedor y comprador. Consulta la [documentación de Cuentas de prueba](/developers/en/docs/shopify/additional-content/your-integrations/test/accounts) para acceder a la guía paso a paso de creación de cuentas de prueba.
+
+![Crear cuenta](/images/woocomerce/test-create-account.gif)
+
+4. Abre una nueva ventana de incógnito e inicia sesión en [Mercado Pago](https://www.mercadolivre.com/jms/mlb/lgz/msl/login/H4sIAAAAAAAEA42QTU_DMAyG_0sPnNAGQuJjUoXSUrZq6zrWDTYuVpZ4aUTSVGlKhxD_nbTAnaOf149j5zNQRsgK3EeNwSTAU60kky44D2pF3dFYDZL7QNceNdLhb6kOfQu1VKND2wSTz36QQB6hl_pRR6oa9E20dSUclek8G97yTDaAJ-9VVEGHh3eJffpnCOOL0rm6mYzHXdeNNFpGuampMCNm9OhgxzWV_J4ZjuHDZbFaXOyn-VnrNDSmtQxDYYxQOBCNXLY6bJBaVg6EUe11UYXZIoJsBVMgOUTzF9hBkZB1PIN0WWxgsytglmfJj2Mqh5ULh6SnXhwCf4UOY5KtyHJGhv7BTjfbOM2XZAGr7To_09Q5cMao8Obi9uru-vryB3XG8v-uIZiSPExIStMnc4jLLK35x_yE8bQk2fMueUxJdAXYvW4TQvakICQR85s9PEDUJcHXuf_fxi9hKXsLJs62-PUNyyMqtf0BAAA/user) usando la cuenta de prueba del vendedor creada en el paso anterior.
+5. En la misma ventana de incógnito iniciada como vendedor, accede al [Panel de desarrollador](https://www.mercadopago.com/developers/panel/app) y crea una nueva aplicación, siguiendo las instrucciones detalladas en la [documentación del Panel de desarrollador.](/developers/pt/docs/woocommerce/additional-content/your-integrations/dashboard)
+
+![Inicio de sesión](/images/woocomerce/test-login.gif)
+
+6. Accede a la aplicación creada en el paso anterior y haz clic en **Credenciales de producción** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
+
+![Credenciales de producción](/images/woocomerce/test-prod-credentials.png)
+
+7. Ve a la configuración del panel de WooCommerce (**WooCommerce > Mercado Pago > Integrar la tienda con Mercado Pago**).
+8. Ingresa las credenciales de producción `access_token` y `public_key` de la cuenta de prueba del vendedor en el campo **Credenciales de producción**.
+9. En la aplicación creada en el paso 5, haz clic en **Credenciales de prueba** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
+
+![Credenciales de prueba](/images/woocomerce/test-test-credentials.png)
+
+10. También ingresa las credenciales de prueba `access_token` y `public_key` de la cuenta de prueba del vendedor en el campo **Credenciales de prueba**.
+
+![Panel](/images/woocomerce/test-woo.png)
+
+11. Haz clic en **Guardar y continuar**.
+12. Accede a [Mercado Pago](https://www.mercadolivre.com/jms/mlb/lgz/msl/login/H4sIAAAAAAAEA42QTU_DMAyG_0sPnNAGQuJjUoXSUrZq6zrWDTYuVpZ4aUTSVGlKhxD_nbTAnaOf149j5zNQRsgK3EeNwSTAU60kky44D2pF3dFYDZL7QNceNdLhb6kOfQu1VKND2wSTz36QQB6hl_pRR6oa9E20dSUclek8G97yTDaAJ-9VVEGHh3eJffpnCOOL0rm6mYzHXdeNNFpGuampMCNm9OhgxzWV_J4ZjuHDZbFaXOyn-VnrNDSmtQxDYYxQOBCNXLY6bJBaVg6EUe11UYXZIoJsBVMgOUTzF9hBkZB1PIN0WWxgsytglmfJj2Mqh5ULh6SnXhwCf4UOY5KtyHJGhv7BTjfbOM2XZAGr7To_09Q5cMao8Obi9uru-vryB3XG8v-uIZiSPExIStMnc4jLLK35x_yE8bQk2fMueUxJdAXYvW4TQvakICQR85s9PEDUJcHXuf_fxi9hKXsLJs62-PUNyyMqtf0BAAA/user) e inicia sesión en la cuenta de prueba del comprador creada en el paso 3.
+13. En la misma ventana iniciada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como CPF, RG, número de teléfono y correo electrónico de la cuenta de prueba del comprador. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/pt/docs/woocommerce/additional-content/your-integrations/test/cards) correspondiente.
+
 > WARNING
+> 
+> Importante
 >
-> Atención
->
-> Al finalizar la compra de prueba con Checkout Pro, en el Admin Panel de WooCommerce no será posible visualizar la compra como aprobada debido a que el proceso se realiza dentro del ambiente de Mercado Pago y no en el ambiente de la tienda. Con pruebas realizadas con Checkout API podrás ver la aprobación del pedido.<br>
-> </br> <br/>
-> Además, en ambos checkouts esta información sobre el pago aprobado no se incluirá en el historial de la cuenta de Mercado Pago porque solo contiene gastos reales (hechos en producción).
-------------
+> Durante las pruebas, estarás operando en el entorno de producción; sin embargo, se trata de una prueba en la que utilizarás credenciales ficticias para simular escenarios reales. Al concluir las pruebas, recuerda reemplazar las credenciales del vendedor (tanto de producción como de prueba), ingresadas en el panel del complemento en los pasos 8 y 10, con las credenciales reales de tu cuenta en Mercado Pago. Esta acción te permitirá seguir vendiendo en tu tienda y evitará confusiones.
 
+Después de completar una compra de prueba utilizando Checkout Pro o Checkout----[mlb]----Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, la aprobación de la compra será visible en el Panel Administrativo de WooCommerce, excepto las compras realizadas por métodos offline y Pix, que permanecerán con estado pendiente.
+
+Además, los pedidos se registrarán en el historial de la cuenta de prueba del vendedor de Mercado Pago.
