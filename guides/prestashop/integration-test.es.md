@@ -52,6 +52,6 @@ A continuación, le mostramos cómo probar la integración:
 >
 > Durante las pruebas, estará operando en el entorno de producción; sin embargo, es una prueba en la que utilizará credenciales ficticias para simular escenarios reales. Al finalizar las pruebas, recuerde reemplazar las credenciales del vendedor (tanto de producción como de prueba) ingresadas en el panel del complemento en los pasos 8 y 10, por las credenciales reales de su cuenta en Mercado Pago. Esta acción le permitirá seguir vendiendo en su tienda y evitará confusiones.
 
-Después de completar una compra de prueba utilizando el Checkout Pro o el Checkout Transparente, la aprobación de la compra será visible en el Panel Administrativo de Prestashop, excepto en las compras realizadas por métodos offline y Pix, que permanecerán con estado pendiente.
+Después de completar una compra de prueba utilizando el Checkout Pro o el Checkout ----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, la aprobación de la compra será visible en el Panel Administrativo de Prestashop, excepto en las compras realizadas por métodos offline----[mlb]---- y Pix------------, que permanecerán con estado pendiente.
 
 Además, los pedidos se registrarán en el historial de la cuenta de prueba del vendedor de Mercado Pago.

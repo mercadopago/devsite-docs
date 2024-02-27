@@ -45,19 +45,25 @@ Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para proc
 
 ------------
 
-## Checkout Transparente
+## Checkout----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------
 
 > WARNING
 >
 > Importante
 >
-> Para garantir o correto funcionamento do Checkout Transparente, é essencial configurar o Checkout Pro e usar as respectivas credenciais de produção da conta de teste do vendedor em ambas as configurações, tanto no Checkout Transparente quanto no Checkout Pro.
+> Para garantir o correto funcionamento do Checkout----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, é essencial configurar o Checkout Pro e usar as respectivas credenciais de produção da conta de teste do vendedor em ambas as configurações, tanto no Checkout----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------ quanto no Checkout Pro.
 
 6. Acesse a aplicação criada no passo 5 e clique em **Credenciais de produção** no menu à esquerda. Copie a `public_key`.
 
 ![Credenciais de produção](/images/shopify/test-prod-credentials.png)
-
+----[mlb]----
 7. Vá até as configurações do painel da Shopify (**Apps > Checkout Transparente MP**).
+
+------------
+----[mla, mpe, mco, mlm, mco, mlu, mlc]----
+7. Vá até as configurações do painel da Shopify (**Apps > Checkout API MP**).
+
+------------
 8. Insira a `public_key` da conta de teste do vendedor.
 
 ![Painel](/images/shopify/test-api-shopify.png)
@@ -79,6 +85,6 @@ Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para proc
 >
 > Durante os testes, você estará operando no ambiente de produção, no entanto, trata-se de um teste no qual você estará utilizando credenciais fictícias para simular cenários reais. Ao concluir os testes, lembre-se de substituir as credenciais do vendedor (tanto de produção quanto de teste), inseridas no painel do plugin nos passos 8, pelas credenciais reais da sua conta no Mercado Pago. Essa ação permitirá que você continue vendendo em sua loja e evitará confusões.
 
-Após concluir uma compra de teste utilizando o Checkout Pro ou o Checkout Transparente, a aprovação da compra será visível no Painel Administrativo da Shopify, com exceção das compras feitas por meios offline e Pix, que permanecerão com status pendente.
+Após concluir uma compra de teste utilizando o Checkout Pro ou o Checkout----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, a aprovação da compra será visível no Painel Administrativo da Shopify, com exceção das compras feitas por meios offline----[mlb]---- e Pix------------, que permanecerão com status pendente.
 
 Além disso, os pedidos serão registrados no histórico da conta de teste de vendedor do Mercado Pago.

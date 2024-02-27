@@ -52,6 +52,6 @@ Veja abaixo como testar a integração:
 >
 > Durante os testes, você estará operando no ambiente de produção, no entanto, trata-se de um teste no qual você estará utilizando credenciais fictícias para simular cenários reais. Ao concluir os testes, lembre-se de substituir as credenciais do vendedor (tanto de produção quanto de teste), inseridas no painel do plugin nos passos 8 e 10, pelas credenciais reais da sua conta no Mercado Pago. Essa ação permitirá que você continue vendendo em sua loja e evitará confusões.
 
-Após concluir uma compra de teste utilizando o Checkout Pro ou o Checkout----[mlb]----Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, a aprovação da compra será visível no Painel Administrativo de Woocommerce, com exceção das compras feitas por meios offline e Pix, que permanecerão com status pendente.
+Após concluir uma compra de teste utilizando o Checkout Pro ou o Checkout----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, a aprovação da compra será visível no Painel Administrativo de Woocommerce, com exceção das compras feitas por meios offline----[mlb]---- e Pix------------, que permanecerão com status pendente.
 
 Além disso, os pedidos serão registrados no histórico da conta de teste de vendedor do Mercado Pago.

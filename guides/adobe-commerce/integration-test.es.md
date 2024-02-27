@@ -47,6 +47,6 @@ A continuación, te indicamos cómo probar la integración:
 >
 > Durante las pruebas, estarás operando en el entorno de producción; sin embargo, se trata de una prueba en la que utilizarás credenciales ficticias para simular escenarios reales. Al concluir las pruebas, recuerda reemplazar las credenciales del vendedor (tanto de producción como de prueba) ingresadas en el panel del complemento en el paso 9, por las credenciales reales de tu cuenta en Mercado Pago. Esta acción te permitirá seguir vendiendo en tu tienda y evitará confusiones.
 
-Después de completar una compra de prueba utilizando Checkout Pro o Checkout----[mlb]----Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, la aprobación de la compra será visible en el Panel Administrativo de Adobe, con excepción de las compras realizadas mediante métodos offline ----[mlb]----y Pix------------, que permanecerán con estado pendiente.
+Después de completar una compra de prueba utilizando Checkout Pro o Checkout----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, la aprobación de la compra será visible en el Panel Administrativo de Adobe, con excepción de las compras realizadas mediante métodos offline----[mlb]---- y Pix------------, que permanecerán con estado pendiente.
 
 Además, los pedidos se registrarán en el historial de la cuenta de prueba del vendedor de Mercado Pago.

@@ -45,19 +45,25 @@ Now, follow the step-by-step according to the chosen checkout type to process pa
 
 ------------
 
-## Checkout Transparente
+## Checkout----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------
 
 > WARNING
 >
 > Important
 >
-> To ensure the correct operation of Checkout Transparente, it is essential to set up Checkout Pro and use the respective production credentials of the seller's test account in both configurations, both in Transparent Checkout and Checkout Pro.
+> To ensure the correct operation of Checkout----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, it is essential to set up Checkout Pro and use the respective production credentials of the seller's test account in both configurations, both in Checkout----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------ and Checkout Pro.
 
 6. Access the application created in step 5 and click on **Production credentials** in the left menu. Copy the `public_key`.
 
 ![Production credentials](/images/shopify/test-prod-credentials.png)
+----[mlb]----
+7. Go to the Shopify panel settings (**Apps > Checkout Transparente MP**).
 
-7. Go to the Shopify panel settings (**Apps > Transparent Checkout MP**).
+------------
+----[mla, mpe, mco, mlm, mco, mlu, mlc]----
+7. Go to the Shopify panel settings (**Apps > Checkout API MP**).
+
+------------
 8. Enter the `public_key` from the seller's test account.
 
 ![Panel](/images/shopify/test-api-shopify.png)
@@ -79,6 +85,6 @@ Now, follow the step-by-step according to the chosen checkout type to process pa
 >
 > During testing, you will be operating in the production environment. However, this is a test in which you will be using fictitious credentials to simulate real scenarios. After completing the tests, remember to replace the seller's credentials (both production and test) entered in the plugin panel in steps 8 with the actual credentials from your Mercado Pago account. This action will allow you to continue selling in your store and avoid confusion.
 
-After completing a test purchase using Checkout Pro or Checkout Transparente, the purchase approval will be visible in the Shopify admin panel, except for purchases made offline and with Pix, which will remain with pending status.
+After completing a test purchase using Checkout Pro or Checkout----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, the purchase approval will be visible in the Shopify Admin Panel, except for purchases made offline----[mlb]---- and Pix------------, which will remain with pending status.
 
 Furthermore, orders will be recorded in the history of the Mercado Pago test seller account.
