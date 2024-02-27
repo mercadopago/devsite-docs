@@ -13,7 +13,11 @@ A continuación, le mostramos cómo probar la integración:
 2. Haga clic en **Cuentas de prueba** en el menú de la izquierda.
 3. Dentro de la sección **Cuentas de prueba**, haga clic en **Crear cuenta de prueba** y cree dos cuentas diferentes: una para el vendedor y otra para el comprador. No es posible utilizar la misma cuenta de prueba para el vendedor y el comprador. Consulte la [documentación de Cuentas de prueba](/developers/es/docs/prestashop/additional-content/your-integrations/test/accounts) para obtener instrucciones detalladas sobre cómo crear cuentas de prueba.
 
+<center>
+
 ![Crear cuenta](/images/prestashop/test-create-account-es.gif)
+
+</center>
 
 4. Abra una nueva ventana de incógnito e inicie sesión en Mercado Pago con la cuenta de prueba del vendedor creada en el paso anterior.
 5. En la misma ventana de incógnito conectada como vendedor, acceda al [Panel del desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) y cree una nueva aplicación, siguiendo las instrucciones detalladas en la [documentación del Panel del desarrollador.](/developers/es/docs/prestashop/additional-content/your-integrations/dashboard)

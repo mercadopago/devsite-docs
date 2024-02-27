@@ -13,7 +13,11 @@ Here's how to test the integration:
 2. Click on **Test Accounts** in the left menu.
 3. Within the **Test Accounts** section, click on **Create test account** and create two different accounts: one for the seller and another for the buyer. It is not possible to use the same test account for both roles. Refer to the [Test accounts documentation](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts) for a step-by-step guide on creating test accounts.
 
+<center>
+
 ![Create Account](/images/adobe-commerce/test-create-account-es.gif)
+
+</center>
 
 4. Open a new incognito window and log in to Mercado Pago using the seller's test account created in the previous step.
 5. In the same incognito window logged in as the seller, access the [Developer dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) and create a new application, following the detailed instructions in the [Developer dashboard documentation.](/developers/en/docs/adobe-commerce/additional-content/your-integrations/dashboard)

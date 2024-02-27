@@ -2,12 +2,22 @@
 
 Os testes de compras são essenciais para garantir que os pagamentos sejam processados corretamente antes de autorizar transações reais. Para verificar se a sua loja está configurada corretamente, recomendamos que você teste os pagamentos antes de iniciá-la em produção. 
 
+----[mla, mlm, mpe, mco, mlu, mlc]----
 > WARNING
 > 
 > Importante
 >
-> O teste só poderá ser realizado após a etapa de [configuração da integração.](/developers/pt/docs/shopify/integration-configuration/checkout-pro)
+> O teste só poderá ser realizado após a etapa de [configuração da integração.](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
 
+------------
+----[mlb]----
+> WARNING
+> 
+> Importante
+>
+> O teste só poderá ser realizado após a etapa de configuração da integração. Para configurar o Checkout Pro, acesse [esta documentação](/developers/pt/docs/shopify/integration-configuration/checkout-pro). Para configurar o Checkout Transparente, acesse [esta documentação.](/developers/pt/docs/shopify/integration-configuration/checkout-transparente)
+
+------------
 Veja abaixo como testar a integração:
 
 1. Acesse **[Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** no admin do Mercado Pago e selecione a aplicação que deseja testar. 
@@ -57,14 +67,16 @@ Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para proc
 6. Acesse a aplicação criada no passo 5 e clique em **Credenciais de produção** no menu à esquerda. Copie a `public_key`.
 
 ![Credenciais de produção](/images/shopify/test-prod-credentials.png)
+
 7. Vá até as configurações do painel da Shopify (**Apps > Checkout Transparente MP**).
 8. Insira a `public_key` da conta de teste do vendedor.
+9. Ative o **Modo Produção para checkouts Mercado Pago**. Como estamos utilizando contas de teste para testar a integração, é necessário habilitar o modo produtivo em Checkout Transparente.
 
 ![Painel](/images/shopify/test-api-shopify.png)
 
-9. Clique em **Salvar alterações**.
-10. Acesse o Mercado Pago e faça login na conta de teste do comprador criada no passo 3.
-11. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como CPF, RG, telefone e e-mail da conta de teste do comprador. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/shopify/additional-content/your-integrations/test/cards) correspondente.
+10. Clique em **Salvar alterações**.
+11. Acesse o Mercado Pago e faça login na conta de teste do comprador criada no passo 3.
+12. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como CPF, RG, telefone e e-mail da conta de teste do comprador. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/shopify/additional-content/your-integrations/test/cards) correspondente.
 
 ------------
 

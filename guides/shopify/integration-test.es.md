@@ -2,19 +2,33 @@
 
 Las pruebas de compra son esenciales para asegurarse de que los pagos se procesen correctamente antes de autorizar transacciones reales. Para verificar si su tienda está configurada correctamente, recomendamos que realice pruebas de pagos antes de ponerla en producción.
 
+----[mla, mlm, mpe, mco, mlu, mlc]----
 > WARNING
 >
 > Importante
 >
 > Las pruebas solo se pueden realizar después de la etapa de [configuración de la integración.](/developers/es/docs/shopify/integration-configuration/checkout-pro)
 
+------------
+----[mlb]----
+> WARNING
+> 
+> Importante
+>
+> La prueba solo podrá realizarse después de completar la etapa de configuración de la integración. Para configurar Checkout Pro, consulta [esta documentación](/developers/es/docs/shopify/integration-configuration/checkout-pro). Para configurar Checkout Transparente, consulta [esta documentación.](/developers/es/docs/shopify/integration-configuration/checkout-transparente)
+
+------------
 A continuación, te indicamos cómo probar la integración:
 
 1. Accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** en el administrador de Mercado Pago y selecciona la aplicación que deseas probar.
 2. Haz clic en **Cuentas de prueba** en el menú de la izquierda.
 3. Dentro de la sección **Cuentas de prueba**, haz clic en **Crear cuenta de prueba** y crea dos cuentas diferentes: una para el vendedor y otra para el comprador. No es posible utilizar la misma cuenta de prueba para el vendedor y el comprador. Consulta la [documentación de Cuentas de prueba](/developers/es/docs/shopify/additional-content/your-integrations/test/accounts) para acceder al paso a paso de creación de cuentas de prueba.
 
+<center>
+
 ![Crear cuenta](/images/shopify/test-create-account-es.gif)
+
+</center>
 
 4. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago utilizando la cuenta de prueba del vendedor creada en el paso anterior.
 5. En la misma ventana de incógnito, iniciada como vendedor, accede al [Panel del desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) y crea una nueva aplicación siguiendo las instrucciones detalladas en la [documentación del Panel del desarrollador.](/developers/es/docs/shopify/additional-content/your-integrations/dashboard)
@@ -57,14 +71,16 @@ Ahora, sigue los pasos según el tipo de pago que hayas elegido para procesar lo
 6. Accede a la aplicación creada en el paso 5 y haz clic en **Credenciales de producción** en el menú de la izquierda. Copia la `public_key`.
 
 ![Credenciales de producción](/images/shopify/test-prod-credentials-es.png)
+
 7. Ve a la configuración del panel de Shopify (**Aplicaciones > Checkout Transparente MP**).
 8. Ingresa la `public_key` de la cuenta de prueba del vendedor.
+9. Active el **Modo de Producción para los checkouts de Mercado Pago**. Como estamos utilizando cuentas de prueba para probar la integración, es necesario habilitar el modo productivo en Checkout Transparente.
 
 ![Panel](/images/shopify/test-api-shopify.png)
 
-9. Haz clic en **Guardar cambios**.
-10. Accede a Mercado Pago e inicia sesión en la cuenta de prueba del comprador creada en el paso 3.
-11. En la misma ventana iniciada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como CPF, RG, teléfono y correo electrónico de la cuenta de prueba del comprador. También utiliza las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
+10. Haz clic en **Guardar cambios**.
+11. Accede a Mercado Pago e inicia sesión en la cuenta de prueba del comprador creada en el paso 3.
+12. En la misma ventana iniciada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como CPF, RG, teléfono y correo electrónico de la cuenta de prueba del comprador. También utiliza las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
 
 ------------
 > WARNING

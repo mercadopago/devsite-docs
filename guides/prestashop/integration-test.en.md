@@ -6,14 +6,18 @@ Purchase tests are essential to ensure that payments are processed correctly bef
 >
 > Important
 >
-> Testing can only be performed after the [integration setup step](/developers/en/docs/prestashop/integration).
+> Testing can only be performed after the [integration configuration.](/developers/en/docs/prestashop/integration)
 
 Here's how to test the integration:
 1. Access **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** in the Mercado Pago admin and select the application you want to test.
 2. Click on **Test accounts** in the left menu.
 3. Within the **Test accounts** section, click on **Create test account** and create two different accounts: one for the seller and another for the buyer. It's not possible to use the same test account for both seller and buyer. Refer to the [Test accounts documentation](/developers/en/docs/prestashop/additional-content/your-integrations/test/accounts) for step-by-step account creation.
 
+<center>
+
 ![Create account](/images/prestashop/test-create-account-es.gif)
+
+</center>
 
 4. Open a new incognito window and log in to Mercado Pago using the seller's test account created in the previous step.
 5. In the same incognito window logged in as a seller, access the [Developer dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) and create a new application, following the detailed instructions in the [Developer dashboard documentation](/developers/en/docs/prestashop/additional-content/your-integrations/dashboard).
