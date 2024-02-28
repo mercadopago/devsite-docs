@@ -61,7 +61,7 @@ id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 
 No _template_, os valores englobados por `[]` devem ser trocados pelos valores da notificação, como:
 
-- Parâmetros com sufixo `_url` são provenientes de _query params_. Exemplo: `[data.id_url]` será substituido pelo valor correspondente ao `payment` (sem os colchetes).
+- Parâmetros com sufixo `_url` são provenientes de _query params_. Exemplo: `[data.id_url]` será substituido pelo valor correspondente ao ID do evento (`data.id`).
 - `[timestamp]` será o valor `ts` extraído do _header_ `x-signature`.
 
 > Caso algum dos valores apresentados no _template_ abaixo não esteja presente em sua notificação, você deverá removê-los do template.

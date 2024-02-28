@@ -60,7 +60,7 @@ id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 
 In the template, values enclosed in `[]` should be replaced with the notification data, such as:
 
-- Parameters with the `_url` suffix come from query params. For example, `[data.id_url]` will be replaced by the value corresponding to `payment` (without brackets).
+- Parameters with the `_url` suffix come from query params. For example, `[data.id_url]` will be replaced by the value corresponding to the event ID (`data.id`).
 - `[timestamp]` will be the value of ts extracted from the x-signature header.
 
 > If any of the values presented in the template below are not present in your notification, you should remove them from the template.

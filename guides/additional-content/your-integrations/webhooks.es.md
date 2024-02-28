@@ -60,7 +60,7 @@ id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 
 En el _template_, los valores entre `[]` deben ser reemplazados por los valores de la notificación, como:
 
-- Los parámetros con el sufijo `_url` provienen de _query params_. Ejemplo: `[data.id_url]` se sustituirá por el valor correspondiente al `payment`` (sin corchetes).
+- Los parámetros con el sufijo `_url` provienen de _query params_. Ejemplo: `[data.id_url]` se sustituirá por el valor correspondiente al ID del evento (`data.id`).
 - `[timestamp]` será el valor ts extraído del _header_ `x-signature`.
 
 > Si alguno de los valores presentados en el _header_ a continuación no está presente en tu notificación, deberás eliminarlos de la plantilla.
