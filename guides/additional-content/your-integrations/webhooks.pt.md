@@ -56,7 +56,7 @@ No momento em que a URL cadastrada receber uma notificação, você poderá vali
 3. Utilizando o _template_ abaixo, substitua os parâmetros pelos dados recebidos na sua notificação. 
 
 ```template
-post;[urlpath];data.id=[data.id_url];type=[topic_url];user-agent:mercadopago webhook v1.0;[timestamp…” por “id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header]
+id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 ```
 
 No _template_, os valores englobados por `[]` devem ser trocados pelos valores da notificação, como:

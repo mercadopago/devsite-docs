@@ -55,7 +55,7 @@ At the moment the registered URL receives a notification, you can validate wheth
 3. Using the template below, replace the parameters with the data received in your notification.
 
 ```template
-post;[urlpath];data.id=[data.id_url];type=[topic_url];user-agent:mercadopago webhook v1.0;[timestamp…” por “id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header]
+id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 ```
 
 In the template, values enclosed in `[]` should be replaced with the notification data, such as:

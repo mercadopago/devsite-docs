@@ -55,7 +55,7 @@ En el momento en que la URL registrada reciba una notificación, podrás validar
 3. Utilizando el _template_ a continuación, sustituye los parámetros con los datos recibidos en tu notificación.
 
 ```template
-post;[urlpath];data.id=[data.id_url];type=[topic_url];user-agent:mercadopago webhook v1.0;[timestamp…” por “id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header]
+id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 ```
 
 En el _template_, los valores entre `[]` deben ser reemplazados por los valores de la notificación, como:
