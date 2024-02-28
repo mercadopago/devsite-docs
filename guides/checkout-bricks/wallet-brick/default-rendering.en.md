@@ -245,7 +245,7 @@ $preference->items = array($item);
 // o $preference->purpose = 'wallet_purchase'; only allow logged in payments
 // to allow guest payments you can omit this property
 $preference->purpose = 'wallet_purchase';
-$preference->save();
+$preference->create();
 ?>
 ```
 ```node

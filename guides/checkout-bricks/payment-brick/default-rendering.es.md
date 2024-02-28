@@ -741,7 +741,7 @@ $preference->items = array($item);
 // el $preference->purpose = 'wallet_purchase'; solo permite pagos registrados
 // para permitir pagos de guests, puede omitir esta propiedad
 $preference->purpose = 'wallet_purchase';
-$preference->save();
+$preference->create();
 ?>
 ```
 ```node
