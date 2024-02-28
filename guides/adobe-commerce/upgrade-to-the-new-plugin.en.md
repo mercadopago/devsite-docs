@@ -1,9 +1,9 @@
 # How to upgrade to the new Adobe Commerce plugin?
 
-To update your plugin by installing the new version, simply follow the installation steps for the Mercado Pago module on the Adobe Commerce (Magento) platform. You can install it on the platform in three different ways:
+To update your plugin by installing the new version, simply follow the installation steps for the Mercado Pago module on the Adobe Commerce platform. You can install it on the platform in three different ways:
 
  * [Installation via Composer](https://www.mercadopago.com.br/developers/en/docs/adobe-commerce/installation/composer)
- * [Installation via Adobe Commerce (Magento)](https://www.mercadopago.com.br/developers/en/docs/adobe-commerce/installation/magento-marketplace)
+ * [Installation via Adobe Commerce](https://www.mercadopago.com.br/developers/en/docs/adobe-commerce/installation/magento-marketplace)
  * [Installation via FTP](https://www.mercadopago.com.br/developers/en/docs/adobe-commerce/installation/ftp)
 
 > NOTE
@@ -36,4 +36,4 @@ To update your plugin by installing the new version, simply follow the installat
 >
 > Note
 >
-> If you are already using the new plugin, be sure to keep an eye out for the latest releases to take advantage of the new features. To update, simply follow the same method you used for installation previously, whether it's via [Composer,](/developers/en/docs/adobe-commerce/installation/composer) [Adobe Commerce (Magento) Marketplace,](/developers/en/docs/adobe-commerce/installation/magento-marketplace) or [FTP.](/developers/en/docs/adobe-commerce/installation/ftp)
+> If you are already using the new plugin, be sure to keep an eye out for the latest releases to take advantage of the new features. To update, simply follow the same method you used for installation previously, whether it's via [Composer,](/developers/en/docs/adobe-commerce/installation/composer) [Adobe Commerce Marketplace,](/developers/en/docs/adobe-commerce/installation/magento-marketplace) or [FTP.](/developers/en/docs/adobe-commerce/installation/ftp)

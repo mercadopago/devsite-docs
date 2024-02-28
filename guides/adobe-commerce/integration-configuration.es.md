@@ -6,7 +6,7 @@ Una vez instalado el Plugin de Mercado Pago, deberás configurarlo para poder co
 >
 > Importante
 >
-> Hemos lanzado un **nuevo plugin** para Adobe Commerce (Magento) compatible con las últimas actualizaciones de la plataforma. Recomendamos a los usuarios de las versiones **3.5 a 3.19** su actualización para aprovechar las nuevas funcionalidades. Las versiones anteriores ya no recibirán más actualizaciones, funcionalidades ni correcciones. Ve cómo actualizar el plugin en la [documentación de Adobe Commerce.](/developers/es/docs/adobe-commerce/upgrade-to-the-new-plugin)
+> Hemos lanzado un **nuevo plugin** para Adobe Commerce compatible con las últimas actualizaciones de la plataforma. Recomendamos a los usuarios de las versiones **3.5 a 3.19** su actualización para aprovechar las nuevas funcionalidades. Las versiones anteriores ya no recibirán más actualizaciones, funcionalidades ni correcciones. Ve cómo actualizar el plugin en la [documentación de Adobe Commerce.](/developers/es/docs/adobe-commerce/upgrade-to-the-new-plugin)
 
 ----[mlb]----
 La configuración básica del plugin se realiza en 3 pasos: **Integración con Mercado Pago**, **Nombre de la tienda**, **Categoría e ID del Integrador** y **API Integración**, seguida de la **Configuración de pagos** (Checkout Transparente y Checkout Pro).
@@ -16,7 +16,7 @@ La configuración básica del plugin se realiza en 3 pasos: **Integración con M
 La configuración básica del plugin se realiza en 3 pasos: **Integración con Mercado Pago**, **Nombre de la tienda**, **Categoría e ID del Integrador** y **API Integración**, seguida de la **Configuración de pagos** (Checkout API y Checkout Pro).
 
 ------------
-Sigue los pasos descriptos en esta documentación para configurar el plugin de Mercado Pago en la tienda Adobe Commerce (Magento).
+Sigue los pasos descriptos en esta documentación para configurar el plugin de Mercado Pago en la tienda Adobe Commerce.
 
 > NOTE
 >

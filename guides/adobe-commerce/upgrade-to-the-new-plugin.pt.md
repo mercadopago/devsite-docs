@@ -1,9 +1,9 @@
 # Como atualizar para o novo plugin de Adobe Commerce?
 
-Para atualizar seu plugin instalando a nova versão, basta seguir os passos de instalação do módulo do Mercado Pago na plataforma Adobe Commerce (Magento). Você pode instalá-lo na plataforma de três maneiras diferentes:
+Para atualizar seu plugin instalando a nova versão, basta seguir os passos de instalação do módulo do Mercado Pago na plataforma Adobe Commerce. Você pode instalá-lo na plataforma de três maneiras diferentes:
 
  * [Instalação via Composer](https://www.mercadopago.com.br/developers/pt/docs/adobe-commerce/installation/composer)
- * [Instalação via Adobe Commerce (Magento)](https://www.mercadopago.com.br/developers/pt/docs/adobe-commerce/installation/magento-marketplace)
+ * [Instalação via Adobe Commerce](https://www.mercadopago.com.br/developers/pt/docs/adobe-commerce/installation/magento-marketplace)
  * [Instalação via FTP](https://www.mercadopago.com.br/developers/pt/docs/adobe-commerce/installation/ftp)
 
 > NOTE
@@ -36,4 +36,4 @@ Para atualizar seu plugin instalando a nova versão, basta seguir os passos de i
 >
 > Nota
 >
-> Se você já utiliza o novo plugin, esteja atento aos lançamentos das versões mais recentes para aproveitar as novas funcionalidades. Para atualizar, basta seguir o mesmo método que utilizou para a instalação anteriormente, seja via [Composer,](/developers/pt/docs/adobe-commerce/installation/composer) [Adobe Commerce (Magento)](/developers/pt/docs/adobe-commerce/installation/magento-marketplace) ou via [FTP.](/developers/pt/docs/adobe-commerce/installation/ftp)
+> Se você já utiliza o novo plugin, esteja atento aos lançamentos das versões mais recentes para aproveitar as novas funcionalidades. Para atualizar, basta seguir o mesmo método que utilizou para a instalação anteriormente, seja via [Composer,](/developers/pt/docs/adobe-commerce/installation/composer) [Adobe Commerce](/developers/pt/docs/adobe-commerce/installation/magento-marketplace) ou via [FTP.](/developers/pt/docs/adobe-commerce/installation/ftp)

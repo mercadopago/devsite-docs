@@ -1,7 +1,7 @@
 ---
 content_section_with_media:
- - title: Adobe Commerce (Magento)
- - message: Adobe Commerce (Magento) is an e-commerce platform that allows you to create a customizable online store, ideal for large companies that want to offer a unique experience. Adobe Commerce (Magento) is the latest version of this platform, offering a user-friendly interface, higher speed, built-in cache cleaning support, and more stability.
+ - title: Adobe Commerce
+ - message: Adobe Commerce is an e-commerce platform that allows you to create a customizable online store, ideal for large companies that want to offer a unique experience. Adobe Commerce is the latest version of this platform, offering a user-friendly interface, higher speed, built-in cache cleaning support, and more stability.
  - media_image: /adobe-commerce/magento2-landing.png 
 ---
  
