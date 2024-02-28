@@ -741,7 +741,7 @@ $preference->items = array($item);
 // para permitir pagamentos como guest, você pode omitir essa propriedade
 $preference->purpose = 'wallet_purchase';
 $preference->create();
-?>
+?> 
 ```
 ```node
 // Cria um objeto de preferência

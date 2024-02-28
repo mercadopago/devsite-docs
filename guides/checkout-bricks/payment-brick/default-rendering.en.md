@@ -722,22 +722,18 @@ The code examples below set the **purpose of preference** to `wallet_purchase`, 
 ------------
 
 [[[
- ```php
+```php
 <?php
-// Create a preference object
-$preference = new MercadoPago\Preference();
-
-// Create an item in the preference
-$item = new MercadoPago\Item();
-$item->title = 'Meu produto';
-$item->quantity = 1;
-$item->unit_price = 75.56;
-$preference->items = array($item);
-
-// o $preference->purpose = 'wallet_purchase'; only allow logged in payments
-// to allow guest payments you can omit this property
-$preference->purpose = 'wallet_purchase';
-$preference->create();
+$client = new PreferenceClient();
+$preference = $client->create([
+  "items"=> array(
+    array(
+      "title" => "My product",
+      "quantity" => 1,
+      "unit_price" => 25
+    )
+  )
+]);
 ?>
 ```
 ```node
