@@ -15,7 +15,7 @@ Las pruebas de compra son esenciales para asegurarse de que los pagos se procese
 > 
 > Importante
 >
-> La prueba solo podrá realizarse después de completar la etapa de configuración de la integración. Para configurar Checkout Pro, consulta [esta documentación](/developers/es/docs/shopify/integration-configuration/checkout-pro). Para configurar Checkout Transparente, consulta [esta documentación.](/developers/es/docs/shopify/integration-configuration/checkout-transparente)
+> La prueba solo podrá realizarse después de completar la etapa de configuración de la integración. Para configurar Checkout Pro, consulta [esta documentación.](/developers/es/docs/shopify/integration-configuration/checkout-pro) Para configurar Checkout Transparente, consulta [esta documentación.](/developers/es/docs/shopify/integration-configuration/checkout-transparente)
 
 ------------
 A continuación, te indicamos cómo probar la integración:
