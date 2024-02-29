@@ -50,7 +50,7 @@ Ahora, sigue los pasos según el checkout que hayas elegido para procesar los pa
 ![Panel](/images/shopify/test-pro-shopify-es.png)
 
 9. Haz clic en **Guardar**.
-10. Accede a Mercado Pago e inicia sesión en la cuenta de prueba del comprador creada en el paso 3.
+10. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago utilizando la cuenta de prueba del comprador creada en el paso 3.
 ----[mlb]----
 11. En la misma ventana iniciada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como CPF, RG, teléfono y correo electrónico de la cuenta de prueba del comprador. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
 
@@ -79,7 +79,7 @@ Ahora, sigue los pasos según el checkout que hayas elegido para procesar los pa
 ![Panel](/images/shopify/test-api-shopify.png)
 
 10. Haz clic en **Guardar cambios**.
-11. Accede a Mercado Pago e inicia sesión en la cuenta de prueba del comprador creada en el paso 3.
+11. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago utilizando la cuenta de prueba del comprador creada en el paso 3.
 12. En la misma ventana en la que iniciaste sesión como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como CPF, RG, teléfono y correo electrónico de la cuenta de prueba del comprador. También utiliza las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
 
 ------------

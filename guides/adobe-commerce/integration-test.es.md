@@ -35,7 +35,7 @@ A continuación, te indicamos cómo probar la integración:
 ![Panel](/images/adobe-commerce/test-adobe-commerce.png)
 
 11. Haz clic en **Guardar configuración**.
-12. Accede a Mercado Pago e inicia sesión en la cuenta de prueba del comprador creada en el paso 3.
+12. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago usando la cuenta de prueba del comprador creada en el paso 3.
 ----[mlb]----
 13. En la misma ventana iniciada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como CPF, RG, número de teléfono y correo electrónico de la cuenta de prueba del comprador. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/cards) correspondiente.
 

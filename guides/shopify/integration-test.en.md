@@ -50,7 +50,7 @@ Now, follow the step-by-step according to the chosen checkout type to process pa
 ![Panel](/images/shopify/test-pro-shopify-es.png)
 
 9. Click **Save**.
-10. Access Mercado Pago and log in to the buyer's test account created in step 3.
+10. Open a new incognito window and log in to Mercado Pago using the buyer's test account created in step 3.
 ----[mlb]----
 11. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as CPF, RG, phone, and email from the buyer's test account. Also, use the test cards available in the [corresponding documentation](/developers/en/docs/shopify/additional-content/your-integrations/test/cards) .
 
@@ -79,7 +79,7 @@ Now, follow the step-by-step according to the chosen checkout type to process pa
 ![Panel](/images/shopify/test-api-shopify.png)
 
 10. Click **Save Changes**.
-11. Access Mercado Pago and log in to the buyer's test account created in step 3.
+11. Open a new incognito window and log in to Mercado Pago using the buyer's test account created in step 3.
 12. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as CPF, RG, phone, and email from the buyer's test account. Also, use the test cards available in the [documentation](/developers/en/docs/shopify/additional-content/your-integrations/test/cards) corresponding.
 
 ------------

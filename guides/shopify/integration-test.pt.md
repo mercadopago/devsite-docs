@@ -46,7 +46,7 @@ Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para proc
 ![Painel](/images/shopify/test-pro-shopify.png)
 
 9. Clique em **Salvar**.
-10. Acesse o Mercado Pago e faça login na conta de teste do comprador criada no passo 3.
+10. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do comprador criada no passo 3.
 ----[mlb]----
 11. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como CPF, RG, telefone e e-mail da conta de teste do comprador. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/shopiy/additional-content/your-integrations/test/cards) correspondente.
 
@@ -75,7 +75,7 @@ Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para proc
 ![Painel](/images/shopify/test-api-shopify.png)
 
 10. Clique em **Salvar alterações**.
-11. Acesse o Mercado Pago e faça login na conta de teste do comprador criada no passo 3.
+11. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do comprador criada no passo 3.
 12. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como CPF, RG, telefone e e-mail da conta de teste do comprador. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/shopify/additional-content/your-integrations/test/cards) correspondente.
 
 ------------

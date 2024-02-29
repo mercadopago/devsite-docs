@@ -39,7 +39,7 @@ A continuación, te mostramos cómo probar la integración:
 ![Panel](/images/prestashop/test-prestashop.png)
 
 11. Haz clic en **Guardar**.
-12. Accede a Mercado Pago e inicia sesión en la cuenta de prueba del comprador creada en el paso 3.
+12. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago con la cuenta de prueba del comprador creada en el paso 3.
 
 ----[mlb]----
 13. En la misma ventana conectada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como CPF, RG, teléfono y correo electrónico de la cuenta de prueba del comprador. También utiliza las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/prestashop/additional-content/your-integrations/test/cards) correspondiente.

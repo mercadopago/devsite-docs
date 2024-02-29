@@ -39,7 +39,7 @@ Here's how to test the integration:
 ![Panel](/images/woocomerce/test-woo-es.png)
 
 11. Click on **Save and continue**.
-12. Access Mercado Pago and log in to the buyer's test account created in step 3.
+12. Open a new incognito window and log in to Mercado Pago using the buyer's test account created in step 3.
 ----[mlb]----
 13. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as CPF, RG, phone, and email from the buyer's test account. Also, use the test cards available in the [corresponding documentation](/developers/en/docs/woocommerce/additional-content/your-integrations/test/cards).
 

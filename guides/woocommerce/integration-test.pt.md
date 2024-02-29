@@ -36,7 +36,7 @@ Veja abaixo como testar a integração:
 ![Painel](/images/woocomerce/test-woo.png)
 
 11. Clique em **Salvar e continuar**.
-12. Acesse o Mercado Pago e faça login na conta de teste do comprador criada no passo 3.
+12. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do comprador criada no passo 3.
 ----[mlb]----
 13. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como CPF, RG, telefone e e-mail da conta de teste do comprador. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/woocommerce/additional-content/your-integrations/test/cards) correspondente.
 
