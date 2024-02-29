@@ -46,23 +46,19 @@ Em seguida, preencha os campos necessários conforme a tabela abaixo e envie os 
 
 [[[
 ```curl
-curl --location 'https://api.mercadopago.com/v1/card_tokens?public_key={{public_key}}' \
-     --header 'Content-Type: application/json' \
-     --header 'Cookie: _d2id=573665fb-5ad1-4bc9-a25e-dd82b6689f38-n' \
-     --heade    r 'X-Test-Token: true' \
-     --data '{
-              "card_number": "4074090000000004",
-              "expiration_month": 11,
-              "expiration_year": 2025,
-              "site_id": "MLB",
-              "security_code": "123",
-              "cardholder": {
-                             "name": "APRO",
-                             "identification": {
-                                                "type": "CPF",
-                                                "number": "15635614680"
-        }
-    }
+curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+--header 'Content-Type: application/json' \
+--header 'X-Card-Validation: card_validation' \
+--data-raw '{
+    "token": "TOKEN",
+    "payment_method_id": "master",
+    "payer": {
+        "id": "{{customer_id}}",
+        "type" : "customer",
+    },
+    "description": "validação de cartão com valor zero dollar master",
+    "transaction_amount": 0
 }'
 ```
 ```php
@@ -75,7 +71,7 @@ curl --location 'https://api.mercadopago.com/v1/card_tokens?public_key={{public_
 
   $client = new PaymentClient();
   $request_options = new RequestOptions();
-  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>", "X-Card-Validation: card_validation"]);
+  $request_options->setCustomHeaders(["X-Card-Validation: card_validation"]);
 
   $payment = $client->create([
     "token" => $_POST['token'],
@@ -107,7 +103,6 @@ payment.create({
         transaction_amount: req.transaction_amount,
     },
     requestOptions: { 
-        idempotencyKey: '<SOME_UNIQUE_VALUE>',
         X-Card-Validation: 'card_validation' }
 })
 .then((result) => console.log(result))
@@ -115,7 +110,6 @@ payment.create({
 ```
 ```java
 Map<String, String> customHeaders = new HashMap<>();
-customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
 customHeaders.put("X-Card-Validation", "card_validation");
  
 MPRequestOptions requestOptions = MPRequestOptions.builder()
@@ -146,7 +140,6 @@ require 'mercadopago'
 sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
 
 custom_headers = {
- 'x-idempotency-key': '<SOME_UNIQUE_VALUE>',
  'X-Card-Validation': 'card_validation'
 }
 
@@ -168,7 +161,7 @@ payment = payment_response[:response]
  
 puts payment
 ```
-```dotnet
+```csharp
 using System;
 using MercadoPago.Client.Common;
 using MercadoPago.Client.Payment;
@@ -178,7 +171,6 @@ using MercadoPago.Resource.Payment;
 MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
 
 var requestOptions = new RequestOptions();
-requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
 requestOptions.CustomHeaders.Add("X-Card-Validation", "card_validation");
 
 var paymentRequest = new PaymentCreateRequest
@@ -205,7 +197,6 @@ sdk = mercadopago.SDK("ACCESS_TOKEN")
 
 request_options = mercadopago.config.RequestOptions()
 request_options.custom_headers = {
-    'x-idempotency-key': '<SOME_UNIQUE_VALUE>',
     'X-Card-Validation': 'card_validation'
 }
 

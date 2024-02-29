@@ -133,6 +133,8 @@ Abaixo listamos o `body` de resposta para cada um dos cenários.
 }
 ```
 
+Se o erro 500 persistir em várias requisições, entre em contato com nosso [Suporte](/developers/pt/support/center).
+
 ## Lista de permissões
 
 Se o vendedor não estiver na lista de permissões, a resposta será a mensagem "Forbidden", juntamente com o código de status 403. A seguir, apresentamos um exemplo de código que ilustra essa resposta.
@@ -145,5 +147,15 @@ Se o vendedor não estiver na lista de permissões, a resposta será a mensagem 
 
 Se você receber esta resposta, entre em contato com o seu representante comercial do Mercado Pago.
 
+## Feature desativada
+
+* **Descrição**: Esta mensagem retorna quando a feature de Zero Dollar Auth está temporariamente desativada.
+* **Corpo da resposta**:
+
+```json
+{
+    "message": "This feature is temporarily off"
+}
+```
 
 
