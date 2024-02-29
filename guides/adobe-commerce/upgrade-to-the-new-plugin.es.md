@@ -1,10 +1,9 @@
 # ¿Cómo actualizar al nuevo plugin de Adobe Commerce?
 
-Para actualizar tu plugin e instalar la nueva versión, simplemente sigue los pasos de instalación del módulo de Mercado Pago en la plataforma Adobe Commerce. Puedes instalarlo en la plataforma de tres formas diferentes:
+Para actualizar tu plugin e instalar la nueva versión, simplemente sigue los pasos de instalación del módulo de Mercado Pago en la plataforma Adobe Commerce. Puedes instalarlo en la plataforma de dos formas diferentes:
 
  * [Instalación a través de Composer](https://www.mercadopago.com.br/developers/es/docs/adobe-commerce/installation/composer)
  * [Instalación a través de Adobe Commerce](https://www.mercadopago.com.br/developers/es/docs/adobe-commerce/installation/magento-marketplace)
- * [Instalación a través de FTP](https://www.mercadopago.com.br/developers/es/docs/adobe-commerce/installation/ftp)
 
 > NOTE
 >
