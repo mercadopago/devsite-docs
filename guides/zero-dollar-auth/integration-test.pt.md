@@ -1,5 +1,7 @@
 # Teste de integração
 
+Para probar la validación de Zero Dollar Auth, siga las siguientes instrucciones.
+
 ## Adicionar cabeçalho "X-Test-Token: true"
 
 Para todos os curls de token de cartão, é importante adicionar o cabeçalho **X-Test-Token: true**, indicando ao Payments para processar o consumo de ZDA no ambiente de SandBox. Para aprovações, utilize o cartão específico `4074090000000004` no curl de token de cartão. Para simular rejeições, use qualquer outro cartão de teste.
