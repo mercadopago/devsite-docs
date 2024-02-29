@@ -70,8 +70,6 @@ Você pode clicar no botão **Editar dados** para visualizar e editar as **confi
 * **Fluxo de acesso**: selecione os tipos de autenticação que sua aplicação pode utilizar, limitando uma aplicação apenas aos fluxos necessários para sua operação e minimizando possíveis ataques ou pontos de vulnerabilidade. As opções são: `client_credentials` ([credenciais da aplicação](/developers/pt/guides/additional-content/your-integrations/credentials)) e `authorization_code` ([código de autorização OAuth](/developers/pt/docs/security/oauth/introduction)). Por padrão, as aplicações terão ambas as opções habilitadas e, ao habilitar ou desabilitar essas opções, você pode controlar quais fluxos de autenticação uma aplicação pode utilizar.
 * **Permissões da aplicação**: opções de acesso da sua aplicação, como **leitura**, **acesso offline** e **escrita**. Por padrão, sua aplicação é criada com todas as permissões ativadas, mas você pode desativar uma permissão clicando na caixa de seleção referente à permissão que você deseja alterar.
 
-##### Gerar PKCE
-
 ### Excluir aplicação
 
 Para remover uma aplicação, siga estas etapas:

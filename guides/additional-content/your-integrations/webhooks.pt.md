@@ -64,7 +64,8 @@ No _template_, os valores englobados por `[]` devem ser trocados pelos valores d
 - Parâmetros com sufixo `_url` são provenientes de _query params_. Exemplo: `[data.id_url]` será substituido pelo valor correspondente ao ID do evento (`data.id`).
 - `[timestamp]` será o valor `ts` extraído do _header_ `x-signature`.
 
-> Caso algum dos valores apresentados no _template_ abaixo não esteja presente em sua notificação, você deverá removê-los do template.
+> Caso algum dos valores apresentados no _template_ acima não esteja presente em sua notificação, você deverá removê-los do template.
+
 4. No [Painel do desenvolvedor](/developers/panel/app), selecione a aplicação integrada, navegue até a seção Webhooks e **revele a assinatura secreta** gerada.
 5. Gere a contra chave para validação. Para isso, calcule um [HMAC](https://pt.wikipedia.org/wiki/HMAC) com a função de `hash SHA256` em base hexadecimal, utilize a **assinatura secreta** como chave e o _template_ populado com os valores como mensagem. Exemplo:
 

@@ -19,11 +19,9 @@ Check out the diagram below that illustrates how the agreement creation flow wor
 
 To create an agreement, send a **POST** with the necessary attributes to the [/v2/wallet_connect/agreements](/developers/en/reference/wallet_connect/_wallet_connect_agreements/post) endpoint and execute the request or, if you prefer, use the `curl` below and pay attention to the request response that will return **two parameters** mandatory to obtain the payer's approval: `agreement_uri` and `return_uri`.
 
-[[[
 ```curl
-
 curl -X POST \
-      'https://api.mercadopago.com/v2/wallet_connect/agreements?client.id=<CLIENT.ID>' \
+    'https://api.mercadopago.com/v2/wallet_connect/agreements' \
       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
       -H 'Content-Type: application/json' \
       -H 'x-platform-id: YOUR_ACCESS_TOKEN' \
@@ -40,15 +38,12 @@ curl -X POST \
   }
 }'
 ```
-]]]
 
 ## Response
 
-[[[
 ```json
 {
   "agreement_id": "22abcd1235ed497f945f755fcaba3c6c",
   "agreement_uri": "https://wwww.mercadopago.com.ar/v1/wallet_agreement/22abcd1235ed497f945f755fcaba3c6c"
 }
 ```
-]]]

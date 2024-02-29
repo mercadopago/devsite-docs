@@ -63,7 +63,8 @@ In the template, values enclosed in `[]` should be replaced with the notificatio
 - Parameters with the `_url` suffix come from query params. For example, `[data.id_url]` will be replaced by the value corresponding to the event ID (`data.id`).
 - `[timestamp]` will be the value of ts extracted from the x-signature header.
 
-> If any of the values presented in the template below are not present in your notification, you should remove them from the template.
+> If any of the values presented in the template above are not present in your notification, you should remove them from the template.
+
 4. In the Developer [Dashboard](/developers/panel/app), select the integrated application, navigate to the Webhooks section, and reveal the generated secret signature.
 5. Generate the counter key for validation. To do this, calculate an [HMAC](https://en.wikipedia.org/wiki/HMAC) with the `SHA256 hash` function in hexadecimal, using the **secret signature** as the key and the populated template with the values as the message. For example:
 
