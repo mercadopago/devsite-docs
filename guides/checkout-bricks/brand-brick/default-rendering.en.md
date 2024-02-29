@@ -43,6 +43,6 @@ The result of rendering the Brick should look like the image below.
 
 <center>
 
-![brand-brick-layout-pt](checkout-bricks/brand-brick-layout-en.gif)
+![brand-brick-layout-en](checkout-bricks/brand-brick-en.gif)
 
 </center>
