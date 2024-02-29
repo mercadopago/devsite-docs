@@ -1,12 +1,12 @@
-# Crear una validación Zero Dollar Auth
+# Create a Zero Dollar Auth validation
 
-En tu frontend, utiliza nuestra biblioteca **Mercado Pago SDK JS** para capturar los datos de la tarjeta y generar el token.
+In your frontend, use our **Mercado Pago SDK JS** library to capture the card data and generate the token.
 
 > NOTE
 >
-> Importante
+> Important
 >
-> También es posible generar un token de tarjeta utilizando el Brick de CardPayment. Consulta la documentación [Renderización por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering) de CardPayment para obtener más detalles.
+> It is also possible to generate a card token using the CardPayment Brick. Refer to the [Default Rendering](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering) documentation of CardPayment for more details.
 
 
 ```JavaScript
@@ -32,16 +32,16 @@ En tu frontend, utiliza nuestra biblioteca **Mercado Pago SDK JS** para capturar
     }
 ```
 
-A continuación, completa los campos necesarios según la siguiente tabla. Luego, envía los datos, junto con el token de la tarjeta, al backend, realizando una solicitud al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post).
+Next, fill in the necessary fields according to the following table. Then, send the data, along with the card token, to the backend by making a request to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post).
 
-| Parámetro | Tipo | Descripción | Ejemplo |
+| Parameter | Type | Description | Example |
 |---|---|---|----|
-| token | String | Token de la tarjeta | 12346622341 |
-| payment_method_id | String | Indica el identificador del medio de pago seleccionado para efectuar el pago | master |
-| payer.id | String | ID del pagador | 123456 |
-| payer.type | String | Tipo de identificación del pagador asociado | customer |
-| description | String | Descripción de la validación | "validación de tarjeta con valor zero dollar master crédito con cvv" |
-| transaction_amount | Number | Costo de la validación | Siempre cero (0) para Zero Dollar Auth |
+| token | String | Card token | 12346622341 |
+| payment_method_id | String | Indicates the identifier of the selected payment method for the payment | master |
+| payer.id | String | Payer's ID | 123456 |
+| payer.type | String | Type of identification associated with the payer | customer |
+| description | String | Description of the validation | "zero dollar validation for Mastercard credit card with CVV" |
+| transaction_amount | Number | Cost of the validation | Always zero (0) for Zero Dollar Auth |
 
 [[[
 ```curl
@@ -217,6 +217,6 @@ print(payment)
 ```
 ]]]
 
-Al realizar las solicitudes, es posible que se devuelvan diferentes respuestas y estados. Para obtener más detalles sobre las respuestas recibidas, consulta la sección de "Respuestas de la API".
+When making the requests, it is possible to receive different responses and statuses. For more details about the received responses, please refer to the "API Responses" section.
 
 
