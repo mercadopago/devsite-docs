@@ -153,6 +153,7 @@ Para configurar los pagos con Pix, envía un **POST** al endpoint [/v1/payments]
 ```php
 <?php
   use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\Client\Common\RequestOptions;
   use MercadoPago\MercadoPagoConfig;
 
   MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
@@ -161,19 +162,11 @@ Para configurar los pagos con Pix, envía un **POST** al endpoint [/v1/payments]
   $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-
   $payment = $client->create([
-    "transaction_amount" => (float) $_POST['transactionAmount'],
-    "description" => $_POST['description'],
-    "payment_method_id" => $_POST['paymentMethodId'],
+ "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+    "payment_method_id" => $_POST['<PAYMENT_METHOD_ID>'],
     "payer" => [
-      "email" => $_POST['email'],
-      "first_name" => $_POST['payerFirstName'],
-      "last_name" => $_POST['payerLastName'],
-      "identification" => [
-        "type" => $_POST['identificationType'],
-        "number" => $_POST['number']
-      ]
+      "email" => $_POST['<EMAIL>']
     ]
   ], $request_options);
   echo implode($payment);

@@ -23,6 +23,10 @@ To configure payments with **boleto bancário** or **payment in lottery**, send 
 ```php
 <?php
   use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\Client\Common\RequestOptions;
+  use MercadoPago\MercadoPagoConfig;
+
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
   $client = new PaymentClient();
   $request_options = new RequestOptions();

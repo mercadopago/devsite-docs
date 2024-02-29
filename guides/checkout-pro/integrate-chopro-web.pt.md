@@ -74,6 +74,7 @@ customization: {
  texts: {
   valueProp: 'smart_option',
  },
+ },
 });
 ```
 ```react-jsx

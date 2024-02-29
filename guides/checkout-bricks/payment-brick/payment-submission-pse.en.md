@@ -19,7 +19,7 @@ Below are some examples of how to send PSE payments to Mercado Pago.
 <?php
 require '../vendor/autoload.php';
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
 
 $payment = new MercadoPago\Payment();
 $payment->transaction_amount = 10000;

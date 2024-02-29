@@ -387,14 +387,14 @@ Com todas as informações coletadas no backend, envie um POST com os atributos 
 >
 > Para aumentar as chances de aprovação do pagamento e evitar que a análise antifraude não autorize a transação, recomendamos inserir o máximo de informação sobre o comprador ao realizar a requisição. Para mais detalhes sobre como aumentar as chances de aprovação, veja [Como melhorar a aprovação dos pagamentos.](/developers/pt/docs/checkout-api/how-tos/improve-payment-approval)
 > <br><br>
-> Ao executar as APIs citadas nesta documentação, você poderá encontrar o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições sem que haja situações indesejadas como, por exemplo, pagamentos em duplicidade. 
+> Ao executar as APIs citadas nesta documentação, você deverá enviar o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições sem que haja situações indesejadas como, por exemplo, pagamentos em duplicidade. 
 
 [[[
 ```php
 <?php
   use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\Client\Common\RequestOptions;
   use MercadoPago\MercadoPagoConfig;
-
 
   MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
@@ -403,17 +403,17 @@ Com todas as informações coletadas no backend, envie um POST com os atributos 
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
-    "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
-    "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
-    "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
+    "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+    "token" => $_POST['<TOKEN>'],
+    "description" => $_POST['<DESCRIPTION>'],
+    "installments" => $_POST['<INSTALLMENTS>'],
+    "payment_method_id" => $_POST['<PAYMENT_METHOD_ID'],
+    "issuer_id" => $_POST['<ISSUER>'],
     "payer" => [
-      "email" => $_POST['email'],
+      "email" => $_POST['<EMAIL>'],
       "identification" => [
-        "type" => $_POST['identificationType'],
-        "number" => $_POST['number']
+        "type" => $_POST['<IDENTIFICATION_TYPE'],
+        "number" => $_POST['<NUMBER>']
       ]
     ]
   ], $request_options);
