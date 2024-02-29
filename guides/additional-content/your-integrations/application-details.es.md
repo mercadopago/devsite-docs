@@ -10,30 +10,29 @@ En esta sección, nos aseguraremos de que tu aplicación cumpla con los requisit
 
 El puntaje indica qué tan segura y alineada con las buenas prácticas de integración de Mercado Pago está la configuración de tu aplicación.
 
-Haz clic en **Evaluar calidad** para iniciar el proceso de análisis de tu integración. Revisa los puntos de mejora identificados durante el análisis y haz los cambios necesarios en tu integración. Durante este proceso, se analizarán una serie de campos asociados.
-
-> NOTE
+> WARNING
 >
-> Nota
+> Importante
 >
 > Antes de realizar la evaluación, asegúrate de haber completado el proceso de aprobación de la aplicación en el entorno de producción. Además, es necesario haber realizado al menos un pago productivo exitoso.
 
-> Después de realizar las mejoras, haz clic nuevamente en **Actualizar puntaje** para reevaluar tu integración y verificar si cumple con los estándares requeridos.
+Haz clic en **Evaluar calidad** para iniciar el proceso de análisis de tu integración. Revisa los puntos de mejora identificados durante el análisis y haz los cambios necesarios en tu integración. Durante este proceso, se analizarán una serie de campos asociados.
+
+Después de realizar las mejoras, haz clic nuevamente en **Actualizar puntaje** para reevaluar tu integración y verificar si cumple con los estándares requeridos.
 
 ----[mla, mlm, mlu, mco, mlc, mpe]----
-
-> WARNING
+> NOTE
 >
-> Atención
+> Nota
 >
 > Por el momento, la sección **Calidad de integración** solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Mercado Pago Point,](/developers/es/docs/mp-point/landing) [Checkout API](/developers/es/docs/checkout-api/landing) y [Checkout Bricks.](/developers/es/docs/checkout-bricks/landing)
 
 ------------
 ----[mlb]----
 
-> WARNING
+> NOTE
 >
-> Atención
+> Nota
 >
 > Por el momento, la sección **Calidad de integración** solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Mercado Pago Point,](/developers/es/docs/mp-point/landing) [Checkout Transparente](/developers/es/docs/checkout-api/landing) y [Checkout Bricks.](/developers/es/docs/checkout-bricks/landing)
 

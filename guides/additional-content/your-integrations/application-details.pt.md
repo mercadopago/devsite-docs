@@ -10,30 +10,29 @@ Nesta seção, vamos garantir que sua aplicação atenda aos requisitos de quali
 
 A pontuação indica o quão segura e alinhada com as boas práticas de integração do Mercado Pago é a configuração da sua aplicação.
 
-Clique em **Avaliar a qualidade** para iniciar o processo de análise da sua integração. Analise os pontos de melhoria identificados durante a análise e faça as alterações necessárias na sua integração. Nesse processo, serão analisados ​​uma série de campos associados.
-
-> NOTE
+> WARNING
 >
 > Importante
 >
 > Antes de realizar a avaliação, certifique-se de ter concluído o processo de homologação da aplicação em ambiente de produção. Além disso, é necessário ter realizado pelo menos um pagamento produtivo.
 
-> Após realizar as melhorias, clique novamente em **Atualizar pontuação** para reavaliar sua integração e verificar se atende aos padrões exigidos.
+Clique em **Avaliar a qualidade** para iniciar o processo de análise da sua integração. Analise os pontos de melhoria identificados durante a análise e faça as alterações necessárias na sua integração. Nesse processo, serão analisados ​​uma série de campos associados.
+
+Após realizar as melhorias, clique novamente em **Atualizar pontuação** para reavaliar sua integração e verificar se atende aos padrões exigidos.
 
 ----[mla, mlm, mlu, mco, mlc, mpe]----
-
-> WARNING
+> NOTE
 >
-> Atenção
+> Nota
 >
 > Por enquanto, a seção **Qualidade da integração** só está disponível para integrações com o [Checkout Pro,](/developers/pt/docs/checkout-pro/landing) [Mercado Pago Point,](/developers/pt/docs/mp-point/landing) [Checkout API](/developers/pt/docs/checkout-api/landing) e [Checkout Bricks.](/developers/pt/docs/checkout-bricks/landing)
 
 ------------
 ----[mlb]----
 
-> WARNING
+> NOTE
 >
-> Atenção
+> Nota
 >
 > Por enquanto, a seção **Qualidade da integração** só está disponível para integrações com o [Checkout Pro,](/developers/pt/docs/checkout-pro/landing) [Mercado Pago Point,](/developers/pt/docs/mp-point/landing) [Checkout Transparente](/developers/pt/docs/checkout-api/landing) e [Checkout Bricks.](/developers/pt/docs/checkout-bricks/landing)
 
