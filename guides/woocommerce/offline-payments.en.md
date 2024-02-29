@@ -1,6 +1,6 @@
 # Offline payment methods
 
-This means of payment will add----[mlb]---- Transparent Checkout ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------and it will allow you to offer cash payments using offline payment methods through Mercado Pago.
+This means of payment will add----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------and it will allow you to offer cash payments using offline payment methods through Mercado Pago.
 
 1. To activate the checkout, you must click on the slider button.
 2. In the change **Title in the store checkout** you can choose the name with which this payment method will be displayed in the store. For example, you can name it **pay with cash**.
