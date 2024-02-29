@@ -1,6 +1,6 @@
 # Test payments
 
-Purchase tests are essential to ensure that payments are processed correctly before authorizing real transactions. To verify that your store is set up correctly, we recommend testing payments before going live.
+Purchase tests are essential to ensure that payments are being processed correctly before authorizing real transactions. To verify that your store is set up correctly, we recommend testing payments before going live.
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > WARNING
@@ -20,7 +20,7 @@ Purchase tests are essential to ensure that payments are processed correctly bef
 ------------
 Here's how to test the integration:
 
-1. Access **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** in the Mercado Pago admin and select the application you want to test.
+1. Access **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** in the Mercado Pago admin pannel and select the application you want to test.
 2. Click on **Test accounts** in the left menu.
 3. Within the **Test accounts** section, click on **Create test account** and create two different accounts: one for the seller and another for the buyer. It's not possible to use the same test account for both seller and buyer. Refer to the [Test accounts documentation](/developers/en/docs/shopify/additional-content/your-integrations/test/accounts) for step-by-step account creation.
 
@@ -52,11 +52,11 @@ Now, follow the step-by-step according to the chosen checkout type to process pa
 9. Click **Save**.
 10. Access Mercado Pago and log in to the buyer's test account created in step 3.
 ----[mlb]----
-11. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as CPF, RG, phone, and email from the buyer's test account. Also, use the test cards available in the [documentation](/developers/en/docs/shopify/additional-content/your-integrations/test/cards) corresponding.
+11. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as CPF, RG, phone, and email from the buyer's test account. Also, use the test cards available in the [corresponding documentation](/developers/en/docs/shopify/additional-content/your-integrations/test/cards) .
 
 ------------
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
-11. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as phone and email from the buyer's test account. In "Documento," select the option **OTRO** and enter 9 digits. Also, use the test cards available in the [documentation](/developers/en/docs/shopify/additional-content/your-integrations/test/cards) corresponding.
+11. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as phone and email from the buyer's test account. In "Documento," select the option **OTRO** and enter 9 digits. Also, use the test cards available in the [corresponding documentation](/developers/en/docs/shopify/additional-content/your-integrations/test/cards).
 
 ------------
 ----[mlb]---- 

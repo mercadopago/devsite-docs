@@ -1,18 +1,18 @@
 # Probar pagos
 
-Las pruebas de compra son esenciales para asegurar que los pagos se procesen correctamente antes de autorizar transacciones reales. Para verificar que tu tienda esté configurada correctamente, recomendamos realizar pruebas de pago antes de ponerla en producción.
+Las compras de prueba son esenciales para asegurar que los pagos se procesen correctamente antes de autorizar transacciones reales. Para verificar que tu tienda esté configurada correctamente, recomendamos realizar pruebas de pago antes de ponerla en producción.
 
 > WARNING
 > 
 > Importante
 >
-> La prueba solo se puede realizar después de la [configuración de la integración.](/developers/en/docs/woocommerce/integration-configuration/plugin-configuration)
+> La prueba solo se puede realizar después de la [configuración de la integración.](/developers/es/docs/woocommerce/integration-configuration/plugin-configuration)
 
-Aquí te explicamos cómo probar la integración:
+A continuación, te explicamos cómo probar la integración:
 
 1. Accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** en el administrador de Mercado Pago y selecciona la aplicación que deseas probar.
 2. Haz clic en **Cuentas de prueba** en el menú de la izquierda.
-3. Dentro de la sección **Cuentas de prueba**, haz clic en **Crear cuenta de prueba** y crea dos cuentas diferentes: una para el vendedor y otra para el comprador. No es posible utilizar la misma cuenta de prueba para vendedor y comprador. Consulta la [documentación de Cuentas de prueba](/developers/en/docs/shopify/additional-content/your-integrations/test/accounts) para acceder a la guía paso a paso de creación de cuentas de prueba.
+3. Dentro de la sección **Cuentas de prueba**, haz clic en **Crear cuenta de prueba** y crea dos cuentas diferentes: una para el vendedor y otra para el comprador. No es posible utilizar la misma cuenta de prueba para vendedor y comprador. Consulta la [documentación de Cuentas de prueba](/developers/es/docs/shopify/additional-content/your-integrations/test/accounts) para acceder a la guía paso a paso para crearlas.
 
 <center>
 
@@ -21,7 +21,7 @@ Aquí te explicamos cómo probar la integración:
 </center>
 
 4. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago usando la cuenta de prueba del vendedor creada en el paso anterior.
-5. En la misma ventana de incógnito iniciada como vendedor, accede al [Panel de desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) y crea una nueva aplicación, siguiendo las instrucciones detalladas en la [documentación del Panel de desarrollador.](/developers/pt/docs/woocommerce/additional-content/your-integrations/dashboard)
+5. En la misma ventana de incógnito en la que iniciaste sesión como vendedor, accede al [Panel de desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) y crea una nueva aplicación, siguiendo las instrucciones detalladas en la [documentación del Panel de desarrollador.](/developers/pt/docs/woocommerce/additional-content/your-integrations/dashboard)
 
 ![Inicio de sesión](/images/woocomerce/test-login-esp.gif)
 
@@ -46,7 +46,7 @@ Aquí te explicamos cómo probar la integración:
 
 ------------
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
-13. En la misma ventana iniciada sesión como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como el teléfono y el correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/woocommerce/additional-content/your-integrations/test/cards) correspondiente.
+13. En la misma ventana en la que iniciaste sesión como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como el teléfono y el correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/woocommerce/additional-content/your-integrations/test/cards) correspondiente.
 
 ------------
 
@@ -54,8 +54,8 @@ Aquí te explicamos cómo probar la integración:
 > 
 > Importante
 >
-> Durante las pruebas, estarás operando en el entorno de producción; sin embargo, se trata de una prueba en la que utilizarás credenciales ficticias para simular escenarios reales. Al concluir las pruebas, recuerda reemplazar las credenciales del vendedor (tanto de producción como de prueba), ingresadas en el panel del complemento en los pasos 8 y 10, con las credenciales reales de tu cuenta en Mercado Pago. Esta acción te permitirá seguir vendiendo en tu tienda y evitará confusiones.
+> Durante las pruebas, estarás operando en el entorno de producción; sin embargo, se trata de una prueba en la que utilizarás credenciales ficticias para simular escenarios reales. Al concluir las pruebas, recuerda reemplazar las credenciales del vendedor (tanto de producción como de prueba), ingresadas en el panel del plugin en los pasos 8 y 10, con las credenciales reales de tu cuenta en Mercado Pago. Esta acción te permitirá seguir vendiendo en tu tienda y evitará confusiones.
 
-Después de completar una compra de prueba utilizando Checkout Pro o Checkout----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, la aprobación de la compra será visible en el Panel Administrativo de WooCommerce, excepto las compras realizadas por métodos offline----[mlb]---- y Pix------------, que permanecerán con estado pendiente.
+Después de completar una compra de prueba utilizando Checkout Pro o Checkout----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, la aprobación de la compra será visible en el Panel de Administración de WooCommerce, excepto las compras realizadas por métodos offline----[mlb]---- y con Pix------------, que permanecerán con estado pendiente.
 
 Además, los pedidos se registrarán en el historial de la cuenta de prueba del vendedor de Mercado Pago.
