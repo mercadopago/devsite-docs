@@ -18,6 +18,6 @@ Nele são permitidas diversas [customizações visuais](/developers/pt/docs/chec
 
 <center>
 
-![brand-brick-layout](checkout-bricks/brand-brick-layout.gif)
+![brand-brick-layout-pt](checkout-bricks/brand-brick-layout-pt.gif)
 
 </center>

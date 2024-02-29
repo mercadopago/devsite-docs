@@ -57,7 +57,6 @@ curl -X POST \
 ```
 ]]]
 
-
 ## Responses
 
 Below we detail the different responses that can be received when processing a payment with a discount. The responses are categorized based on the outcome of the request, ranging from success in processing to a specific error.
@@ -170,5 +169,3 @@ If the discount applied to the payment is not valid or the amount indicated in t
   ]
 }
 ```
-
-

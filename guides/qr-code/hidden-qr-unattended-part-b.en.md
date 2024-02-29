@@ -1,11 +1,11 @@
-# How to integrate QR unattended model 
+# Integrate QR unattended model
 
 > WARNING
 >
 > Commercial contact required
 >
 > This product is only available through prior contact with one of our executives.
->
+> </br></br>
 > For more information about this billing model, please refer to the documentation [Payments with QR unattended model.](/developers/en/docs/qr-code/qr-unattended/qr-unattended-part-a)
 
 To integrate QR unattended model you need to:

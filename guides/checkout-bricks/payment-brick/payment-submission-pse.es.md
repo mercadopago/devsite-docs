@@ -19,7 +19,7 @@ A continuación se muestran algunos ejemplos de cómo enviar pagos con PSE a Mer
 <?php
 require '../vendor/autoload.php';
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
 
 $payment = new MercadoPago\Payment();
 $payment->transaction_amount = 10000;

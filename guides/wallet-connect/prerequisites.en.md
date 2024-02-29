@@ -16,4 +16,3 @@ To perform the Wallet Connect integration, you must meet the requirements descri
 | Wallet Connect Permission | To enable your application, consume the APIs mentioned in the documentation, and receive payments through Mercado Pago Wallet, contact your account manager. |
 
 If all the prerequisites are met, you can perform the Wallet Connect integration.
-

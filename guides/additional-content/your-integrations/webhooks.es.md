@@ -18,7 +18,7 @@ A continuación explicaremos cómo: indicar las URL que serán notificadas, conf
 
 1. Caso aún no tengas una aplicación, crea una en el [Panel del desarrollador](/developers/panel/app).
 2. Una vez creada la aplicación, navega hasta la sección de Webhooks en la página de "Detalles de la aplicación" y configura las URLs de **producción** y **prueba** a las cuales se recibirán las notificaciones.
-3. Si necesitas identificar varias cuentas, al final de la URL indicada puedes indicar el parámetro `?cliente=(nommbredelvendedor) endpoint` para identificar a los vendedores.
+3. Si necesitas identificar varias cuentas, al final de la URL indicada puedes indicar el parámetro `?cliente=(nombredelvendedor) endpoint` para identificar a los vendedores.
 4. A continuación, selecciona los **eventos** de los que recibirás notificaciones en formato `json` a través de un `HTTP POST` a la URL especificada anteriormente. Un evento es cualquier tipo de actualización del objeto informado, incluidos los cambios de estado o atributos. Vea los eventos que se pueden configurar en la siguiente tabla.
 
 | Tipo de notificación | Acción | Descripción |
@@ -37,7 +37,7 @@ A continuación explicaremos cómo: indicar las URL que serán notificadas, conf
 | `delivery_cancellation` | `case_created`| Solicitud de cancelación de envío |
 | `topic_claims_integration_wh` | `updated`| Reclamos hechos por las ventas |
 
-5. Por último, haz clic en **Guardar** para generar una clave secreta para la aplicación. La clave es un método de validación para asegurar que las notificaciones recibidas fueron enviadas por Mercado Pago.
+5. Por último, haz clic en **Guardar** para generar una clave secreta para la aplicación. La clave es un método de validación para asegurar que las notificaciones recibidas fueron enviadas por Mercado Pago, por lo tanto, es importante verificar la información de autenticidad para evitar fraudes.
 
 > WARNING
 > 
@@ -46,6 +46,49 @@ A continuación explicaremos cómo: indicar las URL que serán notificadas, conf
 > Mercado Pago siempre enviará esta clave en las notificaciones Webhooks. Siempre verifica esta información de autenticidad para evitar fraudes. </br></br>
 > </br></br>
 > La clave generada no tiene fecha de caducidad y, aunque no es obligatorio, recomendamos renovar periódicamente la **clave secreta**. Para hacerlo, simplemente haz clic en el botón de restablecimiento junto a la clave.
+### Validar origen de la notificación
+
+En el momento en que la URL registrada reciba una notificación, podrás validar si el contenido enviado en el _header_ `x-signature` (ejemplo: `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`) fue enviado por Mercado Pago, con el fin de obtener mayor seguridad en la recepción de tus notificaciones. A continuación, te indicamos cómo configurar esta validación.
+
+1. Extrae el _timestamp_ (`ts`) y la clave del _header_ `x-signature`. Para hacer esto, divide el contenido del _header_ por el carácter `,`, lo que resultará en una lista de elementos.
+2. Luego, divide cada elemento de la lista por el carácter `=`, lo que resultará en un par de prefijos y los valores. El valor para el prefijo `ts` es el _timestamp_ (en milisegundos) de la notificación y `v1` es la clave encriptada.
+3. Utilizando el _template_ a continuación, sustituye los parámetros con los datos recibidos en tu notificación.
+
+```template
+id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
+```
+
+En el _template_, los valores entre `[]` deben ser reemplazados por los valores de la notificación, como:
+
+- Los parámetros con el sufijo `_url` provienen de _query params_. Ejemplo: `[data.id_url]` se sustituirá por el valor correspondiente al ID del evento (`data.id`).
+- `[timestamp]` será el valor ts extraído del _header_ `x-signature`.
+
+> Si alguno de los valores presentados en el _header_ a continuación no está presente en tu notificación, deberás eliminarlos de la plantilla.
+4. En el [Panel del desarrollador](/developers/panel/app), selecciona la aplicación integrada, ve a la sección de Webhooks y revela la clave secreta generada.
+5. Genera la contraclave para la validación. Para hacer esto, calcula un [HMAC](https://es.wikipedia.org/wiki/HMAC) con la función de `hash SHA256` en base hexadecimal, utilizando la **clave secreta** como clave y el _template_ poblada con los valores como mensaje. Ejemplo:
+
+[[[
+```php
+$cyphedSignature = hash_hmac('sha256', $data, $key);
+```
+```node
+const crypto = require('crypto');
+const cyphedSignature = crypto
+    .createHmac('sha256', secret)
+    .update(signatureTemplateParsed)
+    .digest('hex'); 
+```
+```java
+String cyphedSignature = new HmacUtils("HmacSHA256", secret).hmacHex(signedTemplate);
+```
+```python
+import hashlib, hmac, binascii
+
+cyphedSignature = binascii.hexlify(hmac_sha256(secret.encode(), signedTemplate.encode()))
+```
+]]]
+
+6. Finalmente, compara la clave generada con la clave extraída del _header_, asegurándote de que tengan una correspondencia exacta. Además, puedes usar el _timestamp_ extraído del _header_ para compararlo con un timestamp generado en el momento de la recepción de la notificación, con el fin de establecer una tolerancia de demora en la recepción del mensaje.
 
 ### Simular la recepción de la notificación
 
