@@ -21,7 +21,7 @@ https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=$APP
 
 - `redirect_uri`: URL informada no campo Redirect URL da [sua aplicação](/developers/pt/guides/additional-content/your-integrations/application-details).
 - `code_challenge`: é o código de verificação gerado a partir de um `code_verifier` (**uma sequência aleatória de caracteres que tenham entre 43-128 caracteres, com letras maiúsculas, minúsculas, dígitos e alguns caracteres especiais**) e criptografado com o `code_challenge_method`. Veja a [documentação oficial](https://datatracker.ietf.org/doc/html/rfc7636#section-4) para mais informações.
-- `code_challenge_method`: método _hash_ utilizado para gerar o `code_challenge` em que, por padrão, utiliza-se o `S256` para especificar que o `code_challenge` é criptografado usando o algoritmo de criptografia **SHA-256**. Veja a [documentação oficial](https://datatracker.ietf.org/doc/html/rfc7636#section-4) para mais informações.
+- `code_challenge_method`: método _hash_ utilizado para gerar o `code_challenge` em que, por padrão, utiliza-se o `S256` para especificar que o `code_challenge` é criptografado usando o algoritmo de criptografia SHA-256. Veja a [documentação oficial](https://datatracker.ietf.org/doc/html/rfc7636#section-4) para mais informações.
 
 3. Tendo enviado os códigos corretamente ao Mercado Pago, você obterá a autorização necessária para que ocorra a verificação por PKCE nas transações feitas com OAuth.
 4. Verifique na Redirect URL do seu servidor (https://www.redirect-url.com?code=CODE&state=RANDOM_ID) o código de autorização retornado no parâmetro `code`.

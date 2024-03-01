@@ -56,8 +56,10 @@ At the moment the registered URL receives a notification, you can validate wheth
 
 See below how to configure this validation.
 
-1. Extract the timestamp (`ts`) and the signature from the `x-signature` header. To do this, split the content of the header by the `,` character, resulting in a list of elements. Example: `ts=1704908010` and `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
-2. Then, split each element of the list by the equal sign `=`, resulting in a pair of prefixes and values. The value for the prefix `ts` is the timestamp (in milliseconds) of the notification, and `v1` is the encrypted signature. Example: **ts = 1704908010** and **v1 = 618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839**.
+1. Extract the timestamp (`ts`) and the signature from the `x-signature` header. To do this, split the content of the header by the `,` character, resulting in a list of elements.<br>
+Example: `ts=1704908010` and `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
+2. Then, split each element of the list by the equal sign `=`, resulting in a pair of prefixes and values. The value for the prefix `ts` is the timestamp (in milliseconds) of the notification, and `v1` is the encrypted signature.<br>
+Example: **ts = 1704908010** and **v1 = 618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839**.
 3. Using the template below, replace the parameters with the data received in your notification.
 
 ```template
