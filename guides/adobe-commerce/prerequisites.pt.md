@@ -4,11 +4,9 @@ Para usar a integração do Mercado Pago com o Adobe Commerce em sua loja, você
 
 > WARNING 
 > 
-> Atenção
+> Importante
 > 
-> As versões do módulo Mercado Pago anteriores a 3.5.0 foram descontinuadas.
-> </br><br/>
-> **Mantenha seu módulo e sua loja sempre atualizados para não perder vendas.**
+> As versões do módulo Mercado Pago anteriores a **3.19** foram descontinuadas. Se você ainda o tem instalado, recomendamos que [atualize para o novo plugin de Adobe Commerce.](/developers/pt/docs/adobe-commerce/upgrade-to-the-new-plugin) **Certifique-se de manter tanto o módulo quanto a loja atualizados para não perder vendas**.
 
 | Requisitos  | Descrição | Especificações |
 | --- | --- | --- |

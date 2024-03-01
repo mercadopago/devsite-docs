@@ -6,9 +6,7 @@ To use the Mercado Pago integration with Adobe Commerce in your store, you must 
 >
 > Attention
 >
-> All versions of the Mercado Pago module prior to 3.5.0 were discontinued.
-> </br><br/>
-> **Keep your module and your store always up to date so you don't lose sales.**
+> The versions of the Mercado Pago module prior to **3.19** have been discontinued. If you still have it installed, we recommend [updating to the new Adobe Commerce plugin.](/developers/en/docs/adobe-commerce/upgrade-to-the-new-plugin) **Make sure to keep both the module and the store updated to avoid losing sales**.
 
 | Requirements | Description | Specifications |
 | --- | --- | --- |
