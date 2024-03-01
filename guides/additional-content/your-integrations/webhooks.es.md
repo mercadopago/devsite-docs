@@ -48,10 +48,16 @@ A continuación explicaremos cómo: indicar las URL que serán notificadas, conf
 > La clave generada no tiene fecha de caducidad y, aunque no es obligatorio, recomendamos renovar periódicamente la **clave secreta**. Para hacerlo, simplemente haz clic en el botón de restablecimiento junto a la clave.
 ### Validar origen de la notificación
 
-En el momento en que la URL registrada reciba una notificación, podrás validar si el contenido enviado en el _header_ `x-signature` (ejemplo: `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`) fue enviado por Mercado Pago, con el fin de obtener mayor seguridad en la recepción de tus notificaciones. A continuación, te indicamos cómo configurar esta validación.
+En el momento en que la URL registrada reciba una notificación, podrás validar si el contenido enviado en el _header_ `x-signature` fue enviado por Mercado Pago, con el fin de obtener mayor seguridad en la recepción de tus notificaciones.
 
-1. Extrae el _timestamp_ (`ts`) y la clave del _header_ `x-signature`. Para hacer esto, divide el contenido del _header_ por el carácter `,`, lo que resultará en una lista de elementos.
-2. Luego, divide cada elemento de la lista por el carácter `=`, lo que resultará en un par de prefijos y los valores. El valor para el prefijo `ts` es el _timestamp_ (en milisegundos) de la notificación y `v1` es la clave encriptada.
+> Ejemplo del contenido enviado en el _header_ x-signature 
+> <br><br>
+> `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`
+
+A continuación, te indicamos cómo configurar esta validación.
+
+1. Extrae el _timestamp_ (`ts`) y la clave del _header_ `x-signature`. Para hacer esto, divide el contenido del _header_ por el carácter `,`, lo que resultará en una lista de elementos. Ejemplo: `ts=1704908010` y `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
+2. Luego, divide cada elemento de la lista por el carácter `=`, lo que resultará en un par de prefijos y los valores. El valor para el prefijo `ts` es el _timestamp_ (en milisegundos) de la notificación y `v1` es la clave encriptada. Ejemplo: **ts = 1704908010** y **v1 = 618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839**.
 3. Utilizando el _template_ a continuación, sustituye los parámetros con los datos recibidos en tu notificación.
 
 ```template
