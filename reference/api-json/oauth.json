@@ -80,14 +80,16 @@
                   },
                   "redirect_uri": {
                     "type": "string",
+                    "example": "APP_USR-4934588586838432-XXXXXXXX-241983636",
                     "description": {
                       "en": "URL reported in the Redirect URL field of your application. Required only when grant_type=authorization_code.",
                       "pt": "URL informada no campo Redirect URL da sua aplicação. Requerido apenas quando grant_type=authorization_code.",
-                      "es": "URL informada en el campo URL de redirección de tu aplicación. Obligatorio solo cuando grant_type=authorization_code."
+                      "es": "URL informada en el campo Redirect URL de tu aplicación. Obligatorio solo cuando grant_type=authorization_code."
                     }
                   },
                   "refresh_token": {
                     "type": "string",
+                    "example": "TG-XXXXXXXX-241983636",
                     "description": {
                       "en": "Value received when the access token is created. Only required when grant_type=refresh_token.",
                       "pt": "Valor recebido quando o access token é criado. Requerido apenas quando grant_type=refresh_token.",
@@ -96,9 +98,10 @@
                   },
                   "test_token": {
                     "type": "string",
+                    "example": "false",
                     "description": {
-                      "es": "Added with value = true only when you want to generate credentials for testing.",
-                      "pt": "Added with value = true only when you want to generate credentials for testing.",
+                      "es": "Añadido con valor = true solo cuando desee generar credenciales para pruebas.",
+                      "pt": "Adicionado com valor = true apenas quando desejar gerar credenciais para testes.",
                       "en": "Added with value = true only when you want to generate credentials for testing."
                     }
                   }
