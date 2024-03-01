@@ -1,9 +1,9 @@
 # Teste de integração 
 
-Antes de sair à produção, recomendamos testar o funcionamento correto da sua integração e do processamento de pagamentos. Isso permitirá que você verifique se a integração foi feita corretamente e se os pagamentos estão sendo processados sem erros. 
+Antes de sair à produção, recomendamos testar o funcionamento da sua integração e do processamento de pagamentos. Isso permitirá verificar se a integração foi feita corretamente e se os pagamentos estão sendo processados sem erros. 
 
-## Requisitos prévios 
-Para realizar um teste de integração com o modelo atendido do Código QR, você precisará cumprir os seguintes requisitos prévios:
+## Pré-requisitos
+Para testar a integração integração com o modelo atendido do Código QR, é importante atender aos requisitos mostrados abaixo.
 
 | Requisito | Descrição |
 |---|---|
