@@ -107,25 +107,15 @@
                             "required": false,
                             "type": "string",
                             "description": {
-                              "en": "URL available to receive notifications of events related to the transaction, such as changes in its status.",
-                              "pt": "URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status.",
-                              "es": "URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado. "
+                              "en": "URL available to receive notifications of events related to the transaction, such as changes in its status. This field has a 500 character limit.",
+                              "pt": "URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. Este campo tem um limite de 500 caracteres.",
+                              "es": "URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado. Este campo tiene un límite de 500 caracteres. "
                             },
                             "example": "www.exemplo.com.br"
                           }
                         }
                       }
                     }
-                  },
-                  "site_id": {
-                    "required": true,
-                    "type": "string",
-                    "description": {
-                      "en": "Country's site identifier.",
-                      "pt": "Identificador do site do país.",
-                      "es": "Identificador del sitio del país."
-                    },
-                    "example": "MLB"
                   },
                   "transaction": {
                     "type": "object",
@@ -136,13 +126,23 @@
                           {
                             "type": "array",
                             "properties": {
+                              "type": {
+                                "type": "string",
+                                "required": false,
+                                "description": {
+                                  "en": "Origin account type. If not sent, the value by default would be \"account_money\", that refers to the Mercado Pago account money.",
+                                  "pt": "Tipo de conta de origem. Caso não seja enviado, o valor padrão é \"account_money\", que se refere ao dinheiro disponível na conta do Mercado Pago.",
+                                  "es": "Tipo de cuenta de origen. Si no es enviado, el valor por defecto es \"account_money\", que refiere al dinero disponible en la cuenta de Mercado Pago."
+                                },
+                                "example": "account_money"
+                              },
                               "amount": {
                                 "type": "number",
                                 "required": true,
                                 "description": {
-                                  "en": "Transaction amount, which will be withdrawn from the source account \"from\".",
-                                  "pt": "Valor da transação, que será retirado da conta de origem \"from\".",
-                                  "es": "Valor de la transacción, que será retirado de la cuenta de origen \"from\"."
+                                  "en": "Transaction amount, which will be withdrawn from the source account \"from\". The minimum value is 0, and the maximum is 10000000000.",
+                                  "pt": "Valor da transação, que será retirado da conta de origem \"from\". O valor mínimo é 0, e o valor máximo é 10000000000.",
+                                  "es": "Valor de la transacción, que será retirado de la cuenta de origen \"from\". El valor mínimo es 0, y el máximo, 10000000000."
                                 },
                                 "example": "100,00"
                               }
@@ -159,9 +159,9 @@
                                 "type": "string",
                                 "required": true,
                                 "description": {
-                                  "es": "Tipo de cuenta de destino",
-                                  "pt": "Tipo de conta",
-                                  "en": "Destination account type"
+                                  "en": "Destination account type. The possible values are \"current\", for bank accounts, and \"mercadopago\", for Mercado Pago accounts.",
+                                  "pt": "Tipo de conta de destino. Os valores possíveis são \"current\", para contas bancárias, e \"mercadopago\", para contas do Mercado Pago.",
+                                  "es": "Tipo de cuenta de destino. Los valores posibles son \"current\", para cuentas bancarias, y \"mercadopago\", para cuentas Mercado Pago."
                                 },
                                 "example": "current"
                               },
@@ -169,9 +169,9 @@
                                 "type": "number",
                                 "required": true,
                                 "description": {
-                                  "es": "Monto a enviar al destino indicado en el TO",
-                                  "pt": "Valor da transação, que se deve ir para o destino indicado no “TO”",
-                                  "en": "Amount to send to the destination indicated in the TO"
+                                  "en": "Amount to send to the destination account, indicated in the \"to\". It must be the same value as in \"from.accounts.amount\" ",
+                                  "pt": "Valor a enviar para a conta de destino indicado no \"to\". Deve ser o mesmo valor indicado para \"from.accounts.amount\"",
+                                  "es": "Monto a enviar a la cuenta destino indicada en el \"to\". Debe ser el mismo valor indicado para \"from.accounts.amount\""
                                 },
                                 "example": 100.00
                               },
@@ -179,9 +179,9 @@
                                 "type": "string",
                                 "required": true,
                                 "description": {
-                                  "pt": "Número de banco (ispb)(no banco recebedor) ",
-                                  "es": "Número que representa cada banco",
-                                  "en": "Number that represents each bank"
+                                  "en": "Number Identificador do Sistema de Pagamento Brasileiro (ISPB) of the bank to which the destination account belongs.",
+                                  "pt": "Número Identificador do Sistema de Pagamento Brasileiro (ISPB) do banco ao qual pertence a conta de destino.",
+                                  "es": "Número Identificador do Sistema de Pagamento Brasileiro (ISPB) del banco al que pertenece la cuenta de destino."
                                 },
                                 "example": "99999004"
                               },
@@ -189,9 +189,9 @@
                                 "type": "string",
                                 "required": true,
                                 "description": {
-                                  "pt": "Número da agência (no banco recebedor)",
-                                  "es": "Número de agencia",
-                                  "en": "Number of agency"
+                                  "en": "Number of agency from the receiving bank to which the destination account belongs.",
+                                  "pt": "Número da agência no banco recebedor à qual pertence a conta de destino.",
+                                  "es": "Número de agencia del banco receptor al que pertenece la cuenta de destino."
                                 },
                                 "example": "0001"
                               },
@@ -199,9 +199,9 @@
                                 "type": "string",
                                 "required": true,
                                 "description": {
-                                  "es": "Nombre del titular de la cuenta",
-                                  "pt": "Nome do titular da conta (no banco recebedor)",
-                                  "en": "Name of the account holder"
+                                  "en": "Name and surname of the destination account holder.",
+                                  "pt": "Nome e sobrenome do titular da conta de destino.",
+                                  "es": "Nombre y apellido del titular de la cuenta de destino." 
                                 },
                                 "example": "Jonh Doe"
                               },
@@ -209,9 +209,9 @@
                                 "type": "string",
                                 "required": true,
                                 "description": {
-                                  "es": "proveedor de la cuenta destino",
-                                  "pt": "provedor da conta destino",
-                                  "en": "provider of the destination account"
+                                  "en": "Identification of the provider of the destination account",
+                                  "pt": "Identificador do provedor da conta destino",
+                                  "es": "Identificador del proveedor de la cuenta de destino"
                                 },
                                 "example": "spi"
                               },
@@ -219,9 +219,9 @@
                                 "type": "string",
                                 "required": true,
                                 "description": {
-                                  "es": "Tipo de moneda",
-                                  "pt": "Tipo de moeda",
-                                  "en": "Type of currency"
+                                  "en": "Identifier of the currency used in the transaction. We currently have the following options.",
+                                  "pt": "Identificador da moeda utilizada na transação. Atualmente, possuímos as opções a seguir. ",
+                                  "es": "Identificador de la moneda utilizada en la transacción. Actualmente tenemos las siguientes opciones."
                                 },
                                 "example": "BRL"
                               },
@@ -229,9 +229,9 @@
                                 "type": "string",
                                 "required": true,
                                 "description": {
-                                  "es": "Número único que representa cada cuenta bancaria",
-                                  "pt": "Número único que representa cada conta bancária",
-                                  "en": "Unique number that represents each bank account"
+                                  "en": "Unique number that represents a bank account. In this case, you must send the unique number that identifies the destination account.",
+                                  "pt": "Número único que representa cada conta bancária. Neste caso, você deve enviar o número único da conta de destino.",
+                                  "es": "Número único que representa cada cuenta bancaria. En este caso, debes enviar el número único de la cuenta de destino."
                                 },
                                 "example": "10266732"
                               },
@@ -239,9 +239,9 @@
                                 "type": "object",
                                 "required": true,
                                 "description": {
-                                  "es": "Información del titular de la cuenta",
-                                  "pt": "Informação do titular da conta",
-                                  "en": "Account holder information"
+                                  "en": "Destination account holder information",
+                                  "pt": "Informação do titular da conta de destino",
+                                  "es": "Información del titular de la cuenta de destino"
                                 },
                                 "properties": {
                                   "identification": {
@@ -249,9 +249,9 @@
                                       "type": "string",
                                       "required": true,
                                       "description": {
-                                        "es": "Datos del titular de la cuenta. Tipo de identificación",
-                                        "pt": "Dados do titular da conta. Tipo de identificação",
-                                        "en": "Account holder data. Type of identification"
+                                        "en": "Type of identification from the account holder",
+                                        "pt": "Tipo de identificação do titular da conta de destino",
+                                        "es": "Tipo de identificación del titular de la cuenta de destino"
                                       },
                                       "example": "CPF"
                                     },
@@ -259,295 +259,314 @@
                                         "type": "string",
                                         "required": true,
                                         "description": {
-                                          "es": "Datos del titular de la cuenta. Número de identificación.",
-                                          "pt": "Dados do titular da conta. Número de identificação (Ex: número do cpf/cpnj).",
-                                          "en": "Account holder data. Identification number (Ex: cpf/cnpj number)."
+                                          "en": "Identification number from the account holder.",
+                                          "pt": "Número de identificação do titular da conta.",
+                                          "es": "Número de identificación del titular de la cuenta de destino."
                                         },
                                         "example": "1234567890"
-                                      }}}}
-                            }}]},
-                    "total_amount": {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "total_amount": {
                           "type": "number",
                           "required": true,
                           "description": {
-                            "es": "Monto total de la transacción",
-                            "pt": "Montante total da transação",
-                            "en": "Total amount of the transaction"
+                            "en": "Total amount of the transaction. It must be the same value as in \"from.accounts.amount\" and \"to.accounts.amount\"",
+                            "pt": "Montante total da transação. Deve ser o mesmo valor indicado para \"from.accounts.amount\" e \"to.accounts.amount\" ",
+                            "es": "Monto total de la transacción. Debe ser el mismo valor indicado para \"from.accounts.amount\" y \"to.accounts.amount\""
                           },
                           "example": 100.00
-                        }
-  }}}}}}}},
-
-      "responses": {
-        "200": {
-          "description": {
-            "es": "Success",
-            "pt": "Sucesso",
-            "en": "Success"
-          }
-        },
-        "content": {
-          "application/json": {
-            "schema": {
-              "type": "object",
-              "properties": {
-                "id": {
-                  "type": "string",
-                  "description": {
-                    "es": "Identificador de la transacción",
-                    "pt": "Identificador da transação",
-                    "en": "Transaction identifier"
-                  },
-                  "example": "0d5020ed"
-                },
-                "status": {
-                  "type": "string",
-                  "description": {
-                    "es": "Estado de la transacción",
-                    "pt": "Estado da transação",
-                    "en": "Transaction status"
-                  },
-                  "example": "approved"
-                },
-                "created_date": {
-                  "type": "string",
-                  "description": {
-                    "es": "Fecha de creación de la transacción",
-                    "pt": "Data de criação da transação",
-                    "en": "Transaction creation date"
-                  },
-                  "example": "2021-01-01T00:00:00.000Z"
-                },
-                "external_reference":{
-                  "type": "string",
-                  "description": {
-                    "es": "Referencia externa de la transacción",
-                    "pt": "Referência externa da transação",
-                    "en": "Transaction external reference"
-                  },
-                  "example": "123456"
-                },
-                "last_updated_date": {
-                  "type": "string",
-                  "description": {
-                    "es": "Fecha de actualización de la transacción",
-                    "pt": "Data de atualização da transação",
-                    "en": "Transaction update date"
-                  },
-                  "example": "2021-01-01T00:00:00.000Z"
-                },
-                "point_of_interaction": {
-                  "type": "string",
-                  "example": "WEB",
-                  "properties": {
-                    "type": {
-                      "type": "string",
-                      "description": {
-                        "es": "Tipo de punto de interacción - Valor fijo, siempre es “PSP_TRANSFER”",
-                        "pt": "Tipo de ponto de interação - Valor FIXO SEMPRE PREENCHER como: “PSP_TRANSFER”",
-                        "en": "Type of point of interaction - Fixed value, always is “PSP_TRANSFER”"
-                      },
-                      "example": "PSP_TRANSFER"
-                    }
-                  }
-                },
-                "seller_configuration": {
-                  "type": "object",
-                  "properties": {
-                    "notification_info": {
-                      "type": "object",
-                      "properties": {
-                        "notification_url": {
-                          "type": "string",
-                          "description": {
-                            "es": "Url para notificación para cuando houver cambios en el status de la transacción",
-                            "pt": "Url para notificação para quando houver alteração no status da transação",
-                            "en": "Url for notification when there is a change in the transaction status"
-                          },
-                          "example": "www.exemplo.com.br"
-                        }
                       }
                     }
                   }
-                },
-                "transaction": {
-                  "type": "object",
-                  "from": {
-                    "properties": {
-                      "type": "object",
-                      "accounts": [
-                        {
-                          "type": "object",
-                          "amount": {
-                            "description": {
-                              "es": "Monto debitado de la cuenta MP",
-                              "pt": "Montante debitado da conta MP",
-                              "en": "Amount debited from the MP account"
-                            }
-                          },
-                          "status_detail": {
-                            "description": {
-                              "es": "Detalle del estado de la transacción",
-                              "pt": "Detalhe do estado da transação",
-                              "en": "Transaction status detail"
-                            }
-                          }}]
-                    }
-                  },
-                  "to": {
-                    "properties": {
-                      "type": "object",
-                      "accounts": [
-                        {
-                          "type": "object",
-                          "amount": {
-                            "description": {
-                              "es": "Monto transferido a la cuenta de destino",
-                              "pt": "Montante transferido para a conta de destino",
-                              "en": "Amount transferred to the destination account"
-                            }
-                          },
-                          "status_detail": {
-                            "description": {
-                              "es": "Información detallada de la operación.",
-                              "pt": "Informação detalhada da operação.",
-                              "en": "Detailed information about the operation."
-                            }
-                          },
-                          "owner": {
-                            "identification": {
-                              "type": "object",
-                              "properties": {
-                                "number": {
-                                  "description": {
-                                    "es": "Datos del titular de la cuenta. Número de identificación.",
-                                    "pt": "Dados do titular da conta. Número de identificação.",
-                                    "en": "Account holder data. Identification number."
-                                  }
-                                },
-                                "type": {
-                                  "description": {
-                                    "es": "Tipo de identificación (EJ. RUT).",
-                                    "pt": "Tipo de identificação (Ex:  RUT)",
-                                    "en": "Account holder data. Identification type."
-                                  }
-                                }
-                              }}
-                          }
-                        }]
-                    }
-                  },
-                  "paid_amount": {
-                    "type": "number",
-                    "description": {
-                      "es": "Monto total cobrado al payer",
-                      "pt": "Montante total cobrado ao payer",
-                      "en": "Total amount charged to the payer"},
-                    "example": 100.00
-                  } ,
-                  "refunded_amount": {
-                    "type": "number",
-                    "description": {
-                      "es": "Monto total reembolsado al payer",
-                      "pt": "Montante total reembolsado ao payer",
-                      "en": "Total amount refunded to the payer"
-                    },
-                    "example": 1.00
-                  },
-                  "payer": {
-                    "type": "object",
-                    "properties": {
-                      "id": {
-                        "type": "number",
-                        "description": {
-                          "es": "Identificador del payer",
-                          "pt": "Identificador do payer",
-                          "en": "Payer identifier"
-                        },
-                        "example": 123456543}}},
-                  "total_amount": {
-                    "type": "number",
-                    "description": {
-                      "es": "Monto total de la transacción",
-                      "pt": "Montante total da transação",
-                      "en": "Total amount of the transaction"
-                    },
-                    "example": 100.00
-                  }}}},
-
-            "400": {
+                }
+              }
+            }
+          }
+        }
+      },
+        "responses": {
+          "200": {
+            "description": {
+              "en": "Exitosa",
+              "pt": "Sucesso",
+              "es": "Success"
+            },
+            "content": {
               "application/json": {
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "message": {
+                    "id": {
                       "type": "string",
                       "description": {
-                        "es": "invalid request payload"
-                      }
+                        "en": "Unique transaction identifier, automatically generated.",
+                        "pt": "Identificador único da transação, gerado automaticamente",
+                        "es": "Identificador único de la transacción, generado automáticamente." 
+                      },
+                      "example": "0d5020ed"
                     },
-                    "code": {
-                      "type": "number",
-                      "example": 400,
+                    "status": {
+                      "type": "string",
+                      "example": "approved",
                       "description": {
-                        "es": "http status code 400"
+                        "es": "Estado actual de la transacción",
+                        "pt": "Estado atual da transação",
+                        "en": "Transaction's current status"
+                      },
+                      "enum": [
+                        {
+                          "title": "new",
+                          "description": {
+                            "en": "Inicial status of a transaction when it's created, prevoius to its execution.",
+                            "es": "Estado inicial de una transacción cuando es creada, previo a su ejecución.",
+                            "pt": "Estado inicial de uma transação quando ela é criada, antes de sua execução."
+                          }
+                        },
+                        {
+                          "title": "processed",
+                          "description": {
+                            "en": "The transaction processing was made successfully",
+                            "es": "El procesamiento de la transacción se realizó de manera exitosa.",
+                            "pt": "O processamento da transação foi bem-sucedido."
+                          }
+                        }
+                      ]
+                    },
+                    "created_date": {
+                      "type": "string",
+                      "description": {
+                        "es": "Fecha de creación de la transacción",
+                        "pt": "Data de criação da transação",
+                        "en": "Transaction creation date"
+                      },
+                      "example": "2021-01-01T00:00:00.000Z"
+                    },
+                    "external_reference":{
+                      "type": "string",
+                      "description": {
+                        "es": "Referencia externa de la transacción, que fue generada por el integrador.",
+                        "pt": "Referência externa da transação, gerada pelo integrador.",
+                        "en": "Transaction external reference, generated by the integrator."
+                      },
+                      "example": "123456"
+                    },
+                    "last_updated_date": {
+                      "type": "string",
+                      "description": {
+                        "es": "Fecha de actualización del estado de la transacción",
+                        "pt": "Data de atualização do status da transação",
+                        "en": "Transaction's status update date"
+                      },
+                      "example": "2021-01-01T00:00:00.000Z"
+                    },
+                    "point_of_interaction": {
+                      "type": "string",
+                      "example": "WEB",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "description": {
+                            "en": "Point of interaction. It is a fix value, always \"PSP_TRANSFER\"",
+                            "pt": "Ponto de interação. É um valor fixo, sempre \"PSP_TRANSFER\"",
+                            "es": "Punto de interacción. Es un valor fijo, siempre \"PSP_TRANSFER\""
+                          },
+                          "example": "PSP_TRANSFER"
+                        }
                       }
                     },
-                    "causes": [
-                      { "message":  "invalid value for field: external_reference"},
-                      { "message": "invalid value for field: point_of_interaction.type"},
-                      { "message": "invalid value for field: transaction.from.accounts[0].amount"},
-                      { "message": "invalid value for field: transaction.to.accounts[0].chave.value"},
-                      { "message": "invalid value for field: transaction.to.accounts[0].chave.type"},
-                      { "message": "invalid value for field: transaction.to.accounts[0].identification.number"},
-                      { "message": "invalid value for field: transaction.to.accounts[0].owner.identification.type"},
-                      { "message": "invalid value for field: transaction.total_amount"}
-
-                    ]}
-                }
-              }}
-          }},
-
-        "paths":{
-          "/v1/transaction-intents/{id}":{
-            "get":{
-              "tags":["payouts", "money-out"],
-              "parameters":[
-                {
-                  "in":"path",
-                  "name":"id",
-                  "required":true,
-                  "schema":{
-                    "type":"string",
-                    "example":"0d5020ed"
-                  },
-                  "description": {
-                    "en": "Transaction Intent ID",
-                    "pt": "ID do Intent de Transação",
-                    "es": "ID de Intent de Transacción"
+                    "seller_configuration": {
+                      "type": "object",
+                      "properties": {
+                        "notification_info": {
+                          "type": "object",
+                          "properties": {
+                            "notification_url": {
+                              "type": "string",
+                              "description": {
+                                "en": "URL available to receive notifications of events related to the transaction, such as changes in its status.",
+                                "pt": "URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. ",
+                                "es": "URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado."
+                              },
+                              "example": "www.exemplo.com.br"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "transaction": {
+                      "type": "object",
+                      "from": {
+                        "properties": {
+                          "type": "object",
+                          "accounts": [
+                            {
+                              "type": "object",
+                              "amount": {
+                                "description": {
+                                  "es": "Monto debitado de la cuenta Mercado Pago de origen.",
+                                  "pt": "Montante debitado da conta Mercado Pago de origem.",
+                                  "en": "Amount debited from the Mercado Pago origin account."
+                                },
+                                "example": "100,00"
+                              },
+                              "status_detail": {
+                                "description": {
+                                  "es": "Detalle del estado de la transacción",
+                                  "pt": "Detalhe do estado da transação",
+                                  "en": "Transaction status detail"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "to": {
+                        "properties": {
+                          "type": "object",
+                          "accounts": [
+                            {
+                              "type": "object",
+                              "amount": {
+                                "description": {
+                                  "es": "Monto transferido a la cuenta de destino",
+                                  "pt": "Montante transferido para a conta de destino",
+                                  "en": "Amount transferred to the destination account"
+                                },
+                                "example": "100,00"
+                              },
+                              "status_detail": {
+                                "description": {
+                                  "es": "Información detallada del estado de la operación.",
+                                  "pt": "Informação detalhada do status da operação.",
+                                  "en": "Detailed information about the status of the operation."
+                                },
+                                "example": "approved"
+                              },
+                              "owner": {
+                                "identification": {
+                                  "type": "object",
+                                  "properties": {
+                                    "number": {
+                                      "description": {
+                                        "en": "Number of identification from the account holder",
+                                        "pt": "Número de identificação do titular da conta de destino",
+                                        "es": "Número de identificación del titular de la cuenta de destino"
+                                      },
+                                      "example": "1234567890"
+                                    },
+                                    "type": {
+                                      "description": {
+                                        "en": "Type of identification from the account holder",
+                                        "pt": "Tipo de identificação do titular da conta de destino",
+                                        "es": "Tipo de identificación del titular de la cuenta de destino"
+                                      },
+                                      "example": "CPF"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "paid_amount": {
+                        "type": "number",
+                        "description": {
+                          "es": "Monto total cobrado al pagador",
+                          "pt": "Montante total cobrado ao pagador",
+                          "en": "Total amount charged to the payer"
+                        },
+                        "example": 100.00
+                      } ,
+                      "refunded_amount": {
+                        "type": "number",
+                        "description": {
+                          "es": "Monto total reembolsado al payer",
+                          "pt": "Montante total reembolsado ao payer",
+                          "en": "Total amount refunded to the payer"
+                        },
+                        "example": 1.00
+                      },
+                      "payer": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "number",
+                            "description": {
+                              "es": "Identificador del payer",
+                              "pt": "Identificador do payer",
+                              "en": "Payer identifier"
+                            },
+                            "example": 123456543
+                          }
+                        }
+                      },
+                      "total_amount": {
+                        "type": "number",
+                        "description": {
+                          "es": "Monto total de la transacción",
+                          "pt": "Montante total da transação",
+                          "en": "Total amount of the transaction"
+                        },
+                        "example": 100.00
+                      }
+                    }
                   }
-                },
-                {
-                  "in":"header",
-                  "name":"Access Token",
-                  "required":true,
-                  "schema":{
-                    "type":"string",
-                    "example":"0d5020ed-c3bec19954bb"
+                }
+              }
+            }
+          },
+          "400": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string",
+                    "description": {
+                      "es": "invalid request payload"
+                    }
                   },
-                  "description":{
-                    "es":"Llave privada de la aplicación que debe usarse exclusivamente en el backend para la generación de pagos, requiriendo que estas piezas de información se mantengan seguras en sus servidores.",
-                    "pt":"Chave privada da aplicação que deve ser usada exclusivamente no backend para geração de pagamentos, exigindo que essas informações sejam mantidas seguras em seus servidores.",
-                    "en":"Application's private key that must be used exclusively in the backend for payment generation, requiring these pieces of information to be kept secure on its servers."
-                  }}]
+                  "code": {
+                    "type": "number",
+                    "example": 400,
+                    "description": {
+                      "es": "http status code 400"
+                    }
+                  },
+                  "causes": [
+                    { "message":  "invalid value for field: external_reference"},
+                    { "message": "invalid value for field: point_of_interaction.type"},
+                    { "message": "invalid value for field: transaction.from.accounts[0].amount"},
+                    { "message": "invalid value for field: transaction.to.accounts[0].chave.value"},
+                    { "message": "invalid value for field: transaction.to.accounts[0].chave.type"},
+                    { "message": "invalid value for field: transaction.to.accounts[0].identification.number"},
+                    { "message": "invalid value for field: transaction.to.accounts[0].owner.identification.type"},
+                    { "message": "invalid value for field: transaction.total_amount"}
+
+                  ]
+                }
+              }
             }
           }
+        }
+      }
         }}},
 
-  "paths":{
     "/v1/transaction-intents/{id}":{
       "get":{
         "tags":["payouts", "money-out"],
+        "description":{
+          "en": "Allows you to obtain information about a previously generated Payout transaction based on its \"id\".",
+          "pt": "Permite obter informações sobre uma transação de Payout gerada anteriormente com base no seu \"id\".",
+          "es": "Permite obtener información sobre una transacción Payout generada previamente en base a su \"id\"."
+        },
         "parameters":[
           {
             "in":"path",
@@ -557,11 +576,11 @@
               "type":"string",
               "example":"0d5020ed"
             },
-          "description": {
-            "en": "Transaction Intent ID",
-            "pt": "ID do Intent de Transação",
-            "es": "ID de Intent de Transacción"
-          }
+            "description": {
+            "en": "Transaction ID, returned in the response to its creation",
+            "pt": "Identificador da transação, retornado na resposta à sua criação.",
+            "es": "Identificador de la transacción, devuelto en la respuesta a su creación."
+            }
           },
           {
             "in":"header",
@@ -572,11 +591,13 @@
               "example":"0d5020ed-c3bec19954bb"
             },
             "description":{
-              "en":"Application's private key that must be used exclusively in the backend for payment generation, requiring these pieces of information to be kept secure on its servers.",
-              "pt":"Chave privada da aplicação que deve ser usada exclusivamente no backend para geração de pagamentos, exigindo que essas informações sejam mantidas seguras em seus servidores.",
-              "es":"Llave privada de la aplicación que debe usarse exclusivamente en el backend para la generación de pagos, requiriendo que estas piezas de información se mantengan seguras en sus servidores."
-            }}]
+              "en": "Application's private key that should always be used on the backend to generate payments. It is essential to keep this information secure on your servers. You can find your Access Token by accessing your application Credentials.",
+              "pt": "Chave privada da aplicação que sempre deve ser usada no backend para gerar pagamentos. É essencial que essa informação seja mantida segura em seus servidores. Você pode encontrar ser Acces Token acessando as Credenciais da sua aplicação.",
+              "es": "Clave privada de la aplicación que siempre se debe utilizar en el backend para generar pagos. Es esencial mantener esta información segura en tus servidores. Puedes encontrar tu Acces Token accediendo a las Credenciales de tu aplicación."
+            }
+          }
+        ]
       }
     }
-  }}
+  }
 }
