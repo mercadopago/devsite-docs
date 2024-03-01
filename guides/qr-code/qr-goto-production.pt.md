@@ -1,6 +1,5 @@
 # Entrar em produção
 
-
 Ao finalizar os testes e garantir o correto funcionamento da integração, será necessário colocá-la em produção, o que permitirá o recebimento de pagamentos reais. Para isso, ative suas [credenciais de produção](/developers/pt/docs/qr-code/additional-content/your-integrations/credentials) e substitua as de teste. 
 
 Feito isso, siga as etapas abaixo e garanta que cada uma delas seja cumprida. Isso garantirá que a saída à produção seja feita com êxito.
@@ -41,4 +40,4 @@ Apesar de não ser obrigatório durante a fase de testes, o certificado é obrig
 ## Relatórios
 Os [relatórios do Mercado Pago](/developers/pt/docs/qr-code/additional-content/reports/introduction) fornecem informações financeiras para acompanhar as movimentações da sua conta, como saldo disponível, transações e liquidez. Isso facilita a conciliação das vendas e outras operações com seus sistemas de gestão internos.
 
-Recomendamos que você utilize os relatórios para melhorar a gestão financeira da sua empresa assim que iniciar a produção.
+Recomendamos que você utilize os relatórios para melhorar a gestão financeira da sua empresa assim que sair a produção.

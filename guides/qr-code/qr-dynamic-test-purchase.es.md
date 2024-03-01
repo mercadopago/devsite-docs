@@ -10,8 +10,8 @@ A continuación, te enseñaremos cómo simular un flujo de pago completo para C�
 
 ## Crear orden
 
-1. Inicia sesión **en la web** de Mercado Pago con el usuario y la contraseña de la cuenta vendedor de prueba que creaste.
-2. Crea una [nueva aplicación](/developers/es/docs/qr-code/additional-content/your-integrations/dashboard) de prueba para código QR y obtén las credenciales productivas (Access Token) del usuario de prueba vendedor.
+1. Inicia sesión en la [web de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) con el usuario y la contraseña de la **cuenta vendedor de prueba que creaste**.
+2. Crea una [nueva aplicación](/developers/es/docs/qr-code/additional-content/your-integrations/dashboard) de prueba para código QR y obtén las **credenciales productivas (Access Token) del usuario de prueba vendedor**.
 3. Utiliza las credenciales productivas del usuario de prueba para crear una [sucursal](/developers/es/reference/stores/_users_user_id_stores/post) y una [caja](/developers/es/reference/pos/_pos/post) siguiendo las instrucciones para configurarlas. Ten en cuenta que, al crear la caja, el campo `fixed_amount` debe ser `true`. 
 4. Todavía con las credenciales del usuario de prueba vendedor, [crea una orden](/developers/es/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/put) y asígnala a la caja que creaste en el paso anterior. Asegúrate de configurar el campo `notification_url` con  la URL donde recibirás las notificaciones sobre las actualizaciones de los pagos con el tópico `merchant_order`. 
 5. Utiliza el parámetro `qr_data` obtenido en la respuesta a la creación de la orden para generar un código QR. Puedes utilizar herramientas o librerías que te ayudarán a convertir esta trama en una imagen de un código QR.
@@ -19,13 +19,19 @@ A continuación, te enseñaremos cómo simular un flujo de pago completo para C�
 
 ## Realizar pago
 
-1. Descarga e instala la **App de Mercado Pago en tu dispositivo móvil**, e inicia sesión con la cuenta del usuario de prueba definido como comprador.
+1. Descarga la **App de Mercado Pago en tu dispositivo móvil**, e inicia sesión con la cuenta del usuario de prueba definido como comprador.
 2. Escanea desde tu dispositivo móvil el Código QR que generaste. La app mostrará el monto de la orden generada y las opciones de pago disponibles. 
 3. Realiza el pago utilizando [tarjetas de prueba](/developers/es/docs/qr-code/additional-content/your-integrations/test/cards), que te permitirán además probar distintos flujos de pago. 
 
 ### Casos de validación
 
 Si lo deseas, puedes probar diversos casos para validar que tu sistema esté integrado correctamente con Mercado Pago. Se trata de escenarios que simulan situaciones que pueden acontecer al momento de realizar un pago. 
+
+> WARNING
+>
+> Importante
+>
+> Si bien el ambiente de pruebas no permite validar casos de devolución de pagos o reembolsos, recomendamos que implementes el flujo de devoluciones en tu integración productiva utilizando nuestra [API de reembolsos](/developers/es/reference/chargebacks/_payments_id_refunds/post).
 
 A continuación, puedes ver estos casos en detalle, así como el resultado esperado en el sistema para cada situación, y una serie de observaciones que te indicarán cómo proceder.
 
@@ -38,11 +44,6 @@ A continuación, puedes ver estos casos en detalle, así como el resultado esper
 | **Segundo intento de pago**. El pago realizado por el usuario es rechazado y, sin necesidad de escanear nuevamente el QR, se realiza un segundo intento, que resulta aprobado. | El sistema de Punto de Venta recibe la información de un pago rechazado, y luego de un pago aprobado. | No elimines la orden luego de recibir un pago rechazado y verifica que tu Punto de Venta no cierre la transacción en caja. |
 | **Expiración de la orden**. El usuario intenta pagar una vez que el QR ha vencido. | Expira la orden y, al escanear el QR, se muestra una pantalla de error. | Verifica haber establecido en la orden el campo `expiration_date`, y que este sea anterior al momento del escaneo de la orden. |
 
-> WARNING
->
-> Importante
->
-> Si bien el ambiente de pruebas no permite validar casos de devolución de pagos o reembolsos, recomendamos que implementes el flujo de devoluciones en tu integración productiva utilizando nuestra [API de reembolsos](/developers/es/reference/chargebacks/_payments_id_refunds/post).
 
 ## Verificar notificaciones
 

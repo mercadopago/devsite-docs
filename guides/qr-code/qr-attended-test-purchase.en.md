@@ -10,7 +10,7 @@ Next, we will teach you how to simulate a complete payment flow for attended QR 
 
 ## Create an order 
 
-1. Log in to the **Mercado Pago website** using the username and password of the test seller account you created. 
+1. Log in to the [Mercado Pago website](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) using the username and password of the test seller account you created. 
 2. Create a [new test application](/developers/en/docs/qr-code/additional-content/your-integrations/dashboard) for QR Code and obtain the production credentials (Access Token) of the test seller user. 
 3. Use the production credentials of the test seller user to create a [store](/developers/en/reference/stores/_users_user_id_stores/post) and a [point of sale](/developers/en/reference/pos/_pos/post) following the instructions for setup. Please note that when creating the point of sale, the `fixed_amount` field should be set on `true`. The links returned in the response for the `qr` object are the images of the QR Code associated with your point of sale. 
 4. Still using the credentials of the test seller user, [create an order](/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put) and assign it to the point of sale you created in the previous step. By doing this, you will also be assigning the order to the QR Code associated with it. Make sure to set the `notification_url` field with the URL where you will receive notifications about payment updates with the `merchant_order` topic. 
@@ -23,6 +23,12 @@ Next, we will teach you how to simulate a complete payment flow for attended QR 
 
 ### Validation cases 
 If you want to, you can test various scenarios to validate that your system is correctly integrated with Mercado Pago. These are situations that simulate possible scenarios when making a payment. 
+
+> WARNING
+>
+> Important
+>
+> While the testing environment does not allow validating payment refunds, we recommend implementing the refund flow in your production integration using our [Refunds API](/developers/en/reference/chargebacks/_payments_id_refunds/post).
 
 Below, you can see these cases in detail, along with the expected result in the system for each scenario, and a series of observations to guide you on how to proceed.
 

@@ -22,9 +22,16 @@ Siga as etapas descritas abaixo para simular um fluxo de pagamento completo para
 3. Realize o pagamento utilizando [cartões de teste](/developers/pt/docs/qr-code/additional-content/your-integrations/test/cards), que também permitirão testar diferentes fluxos de pagamento. 
 
 ### Casos de validação 
-Caso queira, é possível testar diferentes casos para validar se o seu sistema está integrado corretamente com o Mercado Pago. Estes cenários simulam situações que podem ocorrer ao realizar um pagamento. 
+Se você desejar, pode testar diferentes casos para validar se o seu sistema está integrado corretamente com o Mercado Pago. Estes cenários simulam situações que podem ocorrer ao realizar um pagamento. 
 
-A seguir, estão disponíveis detalhes sobre cada caso, incluindo o resultado esperado no sistema para diferentes situações e orientações sobre como proceder em cada cenário.
+> WARNING
+>
+> Importante
+>
+> Apesar de o ambiente de testes não permitir validar casos de devolução de pagamentos ou reembolsos, recomendamos que você implemente o fluxo de devoluções na sua integração de produção utilizando nossa [API de reembolsos](/developers/pt/reference/chargebacks/_payments_id_refunds/post).
+
+
+A seguir, você pode ver estes casos em detalhes, o resultado esperado no sistema para cada situação, e uma série de observações que indicarão o que fazer em cada caso.
 
 | Caso | Resultado esperado | Observações |
 |---|---|---|
@@ -35,11 +42,6 @@ A seguir, estão disponíveis detalhes sobre cada caso, incluindo o resultado es
 | **Pagamento recusado**. O usuário realiza um pagamento e ele é recusado. | O sistema de Ponto de Venda recebe as informações de um pagamento recusado e continua esperando que o pedido seja pago. | Verifique se você recebeu as [notificações](/developers/pt/docs/qr-code/additional-content/your-integrations/notifications) com o tópico `merchant_order` e confirme se o status dessas notificações está como `opened`. Aguarde a segunda tentativa de pagamento. |
 | **Segunda tentativa de pagamento**. O pagamento realizado pelo usuário é rejeitado e, sem a necessidade de escanear novamente o QR, uma segunda tentativa é feita e é aprovada. | O sistema do Ponto de Venda recebe as informações de um pagamento rejeitado e, em seguida, de um pagamento aprovado. | Não elimine o pedido após um pagamento recusado e garanta que seu Ponto de Venda não encerre a transação na caixa.  |
 
-> WARNING
->
-> Importante
->
-> Apesar de o ambiente de testes não permitir validar casos de devolução de pagamentos ou reembolsos, recomendamos que você implemente o fluxo de devoluções na sua integração de produção utilizando nossa [API de reembolsos](/developers/pt/reference/chargebacks/_payments_id_refunds/post).
 
 ## Verificar notificações 
 Após a realização do pagamento com o usuário de teste, verifique o recebimento das notificações com o tópico `merchant_order` sobre os estados do pedido em seu sistema. 

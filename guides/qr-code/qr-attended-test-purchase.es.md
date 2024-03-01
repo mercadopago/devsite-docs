@@ -10,7 +10,7 @@ A continuación, te enseñaremos cómo simular un flujo de pago completo para C�
 
 ## Crear orden
 
-1. Inicia sesión **en la web** de Mercado Pago con el usuario y la contraseña de la cuenta vendedor de prueba que creaste.
+1. Inicia sesión en la [web de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) con el usuario y la contraseña de la cuenta vendedor de prueba que creaste.
 2. Crea una [nueva aplicación](/developers/es/docs/qr-code/additional-content/your-integrations/dashboard) de prueba para código QR y obtén las credenciales productivas (Access Token) del usuario de prueba vendedor.
 3. Utiliza las credenciales productivas del usuario de prueba para crear una [sucursal](/developers/es/reference/stores/_users_user_id_stores/post) y una [caja](/developers/es/reference/pos/_pos/post) siguiendo las instrucciones para configurarlas. Ten en cuenta que, al crear la caja, el campo `fixed_amount` debe ser `true`. Los links devueltos en la respuesta para el objeto `qr` son las imágenes del QR asociado a tu caja.
 4. Todavía con las credenciales del usuario de prueba vendedor, [crea una orden](/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put) y asígnala a la caja que creaste en el paso anterior. Al hacer esto, estarás asignando también esa orden al Código QR asociado a la caja. Asegúrate de configurar el campo `notification_url` con  la URL donde recibirás las notificaciones sobre las actualizaciones de los pagos con el tópico `merchant_order`. 
@@ -26,6 +26,12 @@ A continuación, te enseñaremos cómo simular un flujo de pago completo para C�
 
 Si lo deseas, puedes probar diversos casos para validar que tu sistema esté integrado correctamente con Mercado Pago. Se trata de escenarios que simulan situaciones que pueden acontecer al momento de realizar un pago. 
 
+> WARNING
+>
+> Importante
+>
+> Si bien el ambiente de pruebas no permite validar casos de devolución de pagos o reembolsos, recomendamos que implementes el flujo de devoluciones en tu integración productiva utilizando nuestra [API de reembolsos](/developers/es/reference/chargebacks/_payments_id_refunds/post).
+
 A continuación, puedes ver estos casos en detalle, así como el resultado esperado en el sistema para cada situación, y una serie de observaciones que te indicarán cómo proceder.
 
 | Caso | Resultado esperado | Observaciones |
@@ -37,11 +43,6 @@ A continuación, puedes ver estos casos en detalle, así como el resultado esper
 | **Pago rechazado**. El usuario realiza un pago y resulta rechazado. | El sistema de Punto de Venta recibe la información de un pago rechazado y continúa esperando el pago de la orden. | Verifica haber recibido las [notificaciones](/developers/es/docs/qr-code/additional-content/your-integrations/notifications) con el tópico `merchant_order` y que su status sea `opened`.  Aguarda el segundo intento de pago. |
 | **Segundo intento de pago**. El pago realizado por el usuario es rechazado y, sin necesidad de escanear nuevamente el QR, se realiza un segundo intento, que resulta aprobado. | El sistema de Punto de Venta recibe la información de un pago rechazado, y luego de un pago aprobado. | No elimines la orden luego de recibir un pago rechazado y verifica que tu Punto de Venta no cierre la transacción en caja. |
 
-> WARNING
->
-> Importante
->
-> Si bien el ambiente de pruebas no permite validar casos de devolución de pagos o reembolsos, recomendamos que implementes el flujo de devoluciones en tu integración productiva utilizando nuestra [API de reembolsos](/developers/es/reference/chargebacks/_payments_id_refunds/post).
 
 ## Verificar notificaciones
 
