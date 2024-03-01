@@ -54,7 +54,7 @@ No momento em que a URL cadastrada receber uma notificação, você poderá vali
 > NOTE
 >
 > Exemplo do conteúdo enviado no header x-signature
-> <br><br>
+>
 > `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`
 
 Veja abaixo como configurar essa validação.

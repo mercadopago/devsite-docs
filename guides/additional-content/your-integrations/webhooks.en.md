@@ -52,8 +52,8 @@ At the moment the registered URL receives a notification, you can validate wheth
 
 > NOTE
 >
-> Example of the content sent in the header x-signature:
-> <br><br>
+> Example of the content sent in the header x-signature
+>
 > `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`
 
 See below how to configure this validation.
