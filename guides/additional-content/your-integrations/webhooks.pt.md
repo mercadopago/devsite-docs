@@ -51,7 +51,9 @@ Abaixo explicaremos como: indicar as URLs que serão notificadas, configurar os 
 
 No momento em que a URL cadastrada receber uma notificação, você poderá validar se o conteúdo enviado no _header_ `x-signature` foi enviado pelo Mercado Pago, a fim de obter mais segurança no recebimento das suas notificações.
 
-> **Exemplo do conteúdo enviado no _header_ x-signature**
+> NOTE
+>
+> Exemplo do conteúdo enviado no header x-signature
 > <br><br>
 > `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`
 

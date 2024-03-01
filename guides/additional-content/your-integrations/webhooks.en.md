@@ -50,6 +50,8 @@ Below, we will explain how to: specify the URLs that will be notified, configure
 
 At the moment the registered URL receives a notification, you can validate whether the content sent in the `x-signature` header was sent by Mercado Pago, in order to enhance the security of receiving your notifications.
 
+> NOTE
+>
 > Example of the content sent in the header x-signature:
 > <br><br>
 > `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`

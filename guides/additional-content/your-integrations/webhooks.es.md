@@ -52,8 +52,8 @@ En el momento en que la URL registrada reciba una notificación, podrás validar
 
 > NOTE
 >
-> Ejemplo del contenido enviado en el _header_ x-signature 
-> 
+> Ejemplo del contenido enviado en el header x-signature 
+> <br><br>
 > `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`
 
 A continuación, te indicamos cómo configurar esta validación.
