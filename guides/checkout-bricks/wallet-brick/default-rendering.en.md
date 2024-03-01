@@ -126,7 +126,7 @@ const onReady = async () => {
 >
 > Whenever the user leaves the screen where some Brick is displayed, it is necessary to destroy the current instance with the command `window.walletBrickController.unmount()`. When entering again, a new instance must be generated.
 
-This preference _onSubmit_ creation flow is designed for sellers who have one-click flows, if you want, you can also send preference on startup. See more information in the [Preference on startup](/developers/en/docs/checkout-bricks/wallet-brick/additional-customization/preference-startup) section.
+This preference _onSubmit_ creation flow is designed for sellers who have one-click flows, if you want, you can also send preference on startup. See more information in the [Preference on startup](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preference-startup) section.
 
 ## Render the Brick
 
@@ -230,22 +230,18 @@ The code examples below set the **purpose of preference** to `wallet_purchase`, 
 ------------
 
 [[[
- ```php
+```php
 <?php
-// Create a preference object
-$preference = new MercadoPago\Preference();
-
-// Create an item in the preference
-$item = new MercadoPago\Item();
-$item->title = 'Meu produto';
-$item->quantity = 1;
-$item->unit_price = 75.56;
-$preference->items = array($item);
-
-// o $preference->purpose = 'wallet_purchase'; only allow logged in payments
-// to allow guest payments you can omit this property
-$preference->purpose = 'wallet_purchase';
-$preference->save();
+$client = new PreferenceClient();
+$preference = $client->create([
+  "items"=> array(
+    array(
+      "title" => "My product",
+      "quantity" => 1,
+      "unit_price" => 25
+    )
+  )
+]);
 ?>
 ```
 ```node

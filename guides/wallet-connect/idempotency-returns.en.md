@@ -69,7 +69,7 @@ Status code: 400
 
 ## Failed due to conflict
 
-This failure occurs when an Advanced Payment is created and it is being processed or has already been paid. In this case, the idempotency process is not fulfilled and therefore it is rejected.
+This failure occurs when an payment is created and it is being processed or has already been paid. In this case, the idempotency process is not fulfilled and therefore it is rejected.
 
 [[[
 ```Json
@@ -94,7 +94,7 @@ Status code: 409
 
 ## Failed due to unprocessable entity
 
-This failure occurs when creating an Advanced Payment, an error or some empty information is identified. When this happens, the idempotency process is not fulfilled, becoming an unprocessable entity and therefore it is rejected.
+This failure occurs when creating an payment, an error or some empty information is identified. When this happens, the idempotency process is not fulfilled, becoming an unprocessable entity and therefore it is rejected.
 
 [[[
 ```Json

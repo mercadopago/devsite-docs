@@ -15,7 +15,6 @@ curl -X POST \
 ```
 ]]]
 
-
 ## Respuestas
 
 Al ejecutar el _request_ para un reembolso total, es posible que se devuelvan diferentes respuestas. A continuación, encontrará los detalles de cada una de ellas, así como las posibles causas.
@@ -70,7 +69,6 @@ Código de status: 400
 
 ```
 ]]]
-
 
 ### Respuesta fallida: Not found
 

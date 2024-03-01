@@ -126,7 +126,7 @@ const onReady = async () => {
 >
 > Sempre que o usuário sair da tela onde algum Brick é exibido, é necessário destruir a instância atual com o comando `window.walletBrickController.unmount()`. Ao entrar novamente, uma nova instância deve ser gerada.
 
-Esse fluxo de criação de preferência no _onSubmit_ é pensado para vendedores que tem fluxos de one click, caso queira, também pode enviar a preferência na inicialização. Veja mais informações na seção de [Preferência na inicialização](/developers/pt/docs/checkout-bricks/wallet-brick/additional-customization/preference-startup).
+Esse fluxo de criação de preferência no _onSubmit_ é pensado para vendedores que tem fluxos de one click, caso queira, também pode enviar a preferência na inicialização. Veja mais informações na seção de [Preferência na inicialização](/developers/pt/docs/checkout-bricks/wallet-brick/advanced-features/preference-startup).
 
 ## Renderizar o Brick
 
@@ -230,22 +230,18 @@ Os exemplos de código abaixo configuram o **purpose da preferência** como `wal
 ------------
 
 [[[
- ```php
+```php
 <?php
-// Cria um objeto de preferência
-$preference = new MercadoPago\Preference();
- 
-// Cria um item na preferência
-$item = new MercadoPago\Item();
-$item->title = 'Meu produto';
-$item->quantity = 1;
-$item->unit_price = 75.56;
-$preference->items = array($item);
- 
-// o $preference->purpose = 'wallet_purchase'; permite apenas pagamentos logados
-// para permitir pagamentos como guest, você pode omitir essa propriedade
-$preference->purpose = 'wallet_purchase';
-$preference->save();
+$client = new PreferenceClient();
+$preference = $client->create([
+  "items"=> array(
+    array(
+      "title" => "Meu produto",
+      "quantity" => 1,
+      "unit_price" => 25
+    )
+  )
+]);
 ?>
 ```
 ```node

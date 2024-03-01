@@ -740,8 +740,8 @@ $preference->items = array($item);
 // o $preference->purpose = 'wallet_purchase'; permite apenas pagamentos logados
 // para permitir pagamentos como guest, você pode omitir essa propriedade
 $preference->purpose = 'wallet_purchase';
-$preference->save();
-?>
+$preference->create();
+?> 
 ```
 ```node
 // Cria um objeto de preferência

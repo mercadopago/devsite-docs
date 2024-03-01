@@ -100,7 +100,7 @@ Código de status: 201
 
 ## Pago rechazado debido a falta de saldo en la cuenta
 
-Esta respuesta se produce cuando se intenta crear un Advanced Payment pero el payer no tiene saldo suficiente en su cuenta de Mercado Pago.
+Esta respuesta se produce cuando se intenta crear un pago pero el _payer_ no tiene saldo suficiente en su cuenta de Mercado Pago.
 
 [[[
 ```Json
@@ -143,7 +143,7 @@ Código de status: 201
 
 ## Pago rechazado por falta de autorización
 
-Este error se produce cuando el cliente cancela el Agreement.
+Este error se produce cuando el cliente cancela la vinculación.
 
 [[[
 ```Json

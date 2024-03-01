@@ -10,7 +10,7 @@ Create your application to integrate with the Split payments solution by followi
    >
    > Important
    >
-   > During the creation of your application, it may be necessary to reauthenticate your identity. If you have already completed the verification, reauthentication will be requested. Otherwise, you will be redirected to submit the necessary documents. This additional step is essential to protect your account and ensure compliance with operations. You can refer to the [Developer dashboard documentation](/developers/es/docs/split-payment/additional-content/your-integrations/dashboard) if you have any questions on how to use it.
+   > During the creation of your application, it may be necessary to reauthenticate your identity. If you have already completed the verification, reauthentication will be requested. Otherwise, you will be redirected to submit the necessary documents. This additional step is essential to protect your account and ensure compliance with operations. You can refer to the [Developer dashboard documentation](/developers/en/docs/split-payments/additional-content/your-integrations/dashboard) if you have any questions on how to use it.
 
 1. Access [Your Integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app). Once there, click on the **Create application** button, located in the upper right corner.
 2. Enter a name to identify your application (you have a limit of 50 characters).
@@ -35,8 +35,8 @@ To request permission from your users to manage sales on their behalf, it is nec
 
 | Value                | Description                                                                                                          |
 |----------------------|----------------------------------------------------------------------------------------------------------------------|
-| `<APP_ID>`           | Value obtained during [application creation](/developers/en/docs/split-payment/integration-configuration/create-application).    |
-| `<REDIRECT_URI>`     | Value entered in the Redirect URI field during [Redirect URL configuration](/developers/en/docs/split-payment/integration-configuration/create-application). |
+| `<APP_ID>`           | Value obtained during [application creation](#bookmark_create_application).    |
+| `<REDIRECT_URI>`     | Value entered in the Redirect URI field during [Redirect URL configuration](#bookmark_create_application). |
 
 ----[mla]----
 ```curl

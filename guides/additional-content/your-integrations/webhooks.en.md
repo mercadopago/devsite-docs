@@ -37,7 +37,7 @@ Below, we will explain how to: specify the URLs that will be notified, configure
 | `delivery_cancellation` | `case_created`| Shipment cancellation request |
 | `topic_claims_integration_wh` | `updated`| Claims made by sales |
 
-5. Finally, click **Save** to generate a secret signature for the application. The signature is a validation method to ensure that received notifications were sent by Mercado Pago.
+5. Finally, click **Save** to generate a secret signature for the application. The signature is a validation method to ensure that the notifications received were sent by Mercado Pago, therefore, it is important to check the authenticity information to avoid fraud.
 
 > WARNING
 >
@@ -46,28 +46,24 @@ Below, we will explain how to: specify the URLs that will be notified, configure
 > Mercado Pago will always send this signature in Webhook notifications. Always verify this authenticity information to prevent fraud. </br></br>
 > </br></br>
 > The generated signature has no expiration date, and while not mandatory, we recommend periodically renewing the **secret signature**. To do this, simply click the reset button next to the signature.
-
 ### Validate notification origin
 
 At the moment the registered URL receives a notification, you can validate whether the content sent in the `x-signature` header (example: `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`) was sent by Mercado Pago, in order to enhance the security of receiving your notifications. See below how to configure this validation.
 
 1. Extract the timestamp (`ts`) and the signature from the `x-signature` header. To do this, split the content of the header by the `,` character, resulting in a list of elements.
-2. Then, split each element of the list by the equal sign `=`, resulting in a pair of prefixes and values. The value for the prefix `ts` is the timestamp of the notification, and `v1` is the encrypted signature.
+2. Then, split each element of the list by the equal sign `=`, resulting in a pair of prefixes and values. The value for the prefix `ts` is the timestamp (in milliseconds) of the notification, and `v1` is the encrypted signature.
 3. Using the template below, replace the parameters with the data received in your notification.
 
 ```template
-post;[urlpath];data.id=[data.id_url];type=[topic_url];user-agent:mercadopago webhook v1.0;[timestamp];action:[json_action];api_version:[json_apiversion];date_created:[json_datecreated_RFC3339];id:[id_json];live_mode:[livemode_json];type:[type_json];user_id:[userid_json];
+id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 ```
 
 In the template, values enclosed in `[]` should be replaced with the notification data, such as:
 
-- Parameters with the `_url` suffix come from query params. For example, `[topic_url]` will be replaced by the value `payment` (without brackets).
-- Parameters with the `_json` suffix come from the `body` of the request.
-- `[urlpath]` will be only the domain + the path of the URL (without "http://" or "https://").
+- Parameters with the `_url` suffix come from query params. For example, `[data.id_url]` will be replaced by the value corresponding to the event ID (`data.id`).
 - `[timestamp]` will be the value of ts extracted from the x-signature header.
 
 > If any of the values presented in the template below are not present in your notification, you should remove them from the template.
-
 4. In the Developer [Dashboard](/developers/panel/app), select the integrated application, navigate to the Webhooks section, and reveal the generated secret signature.
 5. Generate the counter key for validation. To do this, calculate an [HMAC](https://en.wikipedia.org/wiki/HMAC) with the `SHA256 hash` function in hexadecimal, using the **secret signature** as the key and the populated template with the values as the message. For example:
 

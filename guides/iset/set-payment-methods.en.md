@@ -12,10 +12,10 @@ You also have the option to [offer interest free installments](https://www.merca
 ## Set payment types
 
 1. Go to “Payment methods” in the section Modules from the admin panel of your store. 
-1. Search in the payment methods list for Mercado Pago and go to “Setting options”.
-1. Select the payment types that you wish to offer: “Boleto bancario” and/or “Credit card”.
-1. Complete in “Brief description/Name of the store" the name that will appear in your client’s invoice so that they can recognize you (maximum 13 characters). 
-1. Click on “Close” and then on “Save changes”.
+2. Search in the payment methods list for Mercado Pago and go to “Setting options”.
+3. Select the payment types that you wish to offer: “Boleto bancario” and/or “Credit card”.
+4. Complete in “Brief description/Name of the store" the name that will appear in your client’s invoice so that they can recognize you (maximum 13 characters). 
+5. Click on “Close” and then on “Save changes”.
 <p>&nbsp;</p>
 
 ![Payments Connect - iSET](/images/iset/iset_configuration_methods_2.gif)
@@ -28,15 +28,13 @@ You also have the option to [offer interest free installments](https://www.merca
 To activate this model, follow these steps:
 
 1. Go to “Payment methods” in the section Modules from the admin panel of your store. 
-1. Search in the payment methods list for Mercado Pago and go to “Setting options”.
-1. In the section Checkout model, choose the option “Pattern”. 
-1. Enter the [e-mail from your Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/profile#from-section=menu) in “Registered e-mail in Mercado Pago”.
-1. Complete the fields Client ID and Client Secret with the [credentials of your Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]developers/en/guides/resources/credentials).
-1. Click on “Close” and then on “Save changes”.
-<p>&nbsp;</p>
+2. Search in the payment methods list for Mercado Pago and go to “Setting options”.
+3. In the section Checkout model, choose the option “Pattern”. 
+4. Enter the [e-mail from your Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/profile#from-section=menu) in “Registered e-mail in Mercado Pago”.
+5. Complete the fields Client ID and Client Secret with the [credentials of your Mercado Pago account](/developers/en/docs/iset/additional-content/your-integrations/credentials).
+6. Click on “Close” and then on “Save changes”.
 
 ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_padrao_3.gif)
-<p>&nbsp;</p>
 
 ## Checkout API
 
@@ -45,15 +43,13 @@ Allows the **client to complete the purchase on your store** without being redir
 To activate this model, follow these steps:
 
 1. Go to “Payment methods” in the section Modules from the admin panel of your store.
-1. Search in the payment methods list for Mercado Pago and go to “Setting options”.
-1. In the section Checkout model, choose the option “Transparent”.
-1. Enter the [e-mail from your Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/profile#from-section=menu) in “Registered e-mail in Mercado Pago”.
-1. Complete the fields Client ID, Client Secret and Public Key with the [credentials of your Mercado Pago account]((https://www.mercadopago[FAKER][URL][DOMAIN]developers/en/guides/resources/credentials)).
-1. Click on “Close” and then on “Save changes”.
-<p>&nbsp;</p>
+2. Search in the payment methods list for Mercado Pago and go to “Setting options”.
+3. In the section Checkout model, choose the option “Transparent”.
+4. Enter the [e-mail from your Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/profile#from-section=menu) in “Registered e-mail in Mercado Pago”.
+5. Complete the fields Client ID, Client Secret and Public Key with the [credentials of your Mercado Pago account](/developers/en/docs/iset/additional-content/your-integrations/credentials).
+6. Click on “Close” and then on “Save changes”.
 
 ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_transparente_4.gif)
-<p>&nbsp;</p>
 
 ## Both checkouts
 
@@ -62,15 +58,13 @@ You can offer your clients the option to complete the payment directly on your s
 To **activate both checkouts**, follow these steps:
 
 1. Go to “Payment methods” in the section Modules from the admin panel of your store. 
-1. Search in the payment methods list for Mercado Pago and go to “Setting options”.
-1. In the section Checkout model, choose the option “Both”.
-1. Enter the [e-mail from your Mercado Pago account](https://www.mercadopago.com.br/profile#from-section=menu) in “Registered e-mail in Mercado Pago”.
-1. Complete the fields “Client ID, Client Secret and Public Key” with the [credentials of your Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials).
-1. Click on “Close” and then on “Save changes”.
-<p>&nbsp;</p>
+2. Search in the payment methods list for Mercado Pago and go to “Setting options”.
+3. In the section Checkout model, choose the option “Both”.
+4. Enter the [e-mail from your Mercado Pago account](https://www.mercadopago.com.br/profile#from-section=menu) in “Registered e-mail in Mercado Pago”.
+5. Complete the fields “Client ID, Client Secret and Public Key” with the [credentials of your Mercado Pago account](/developers/en/docs/iset/additional-content/your-integrations/credentials).
+6. Click on “Close” and then on “Save changes”.
 
 ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_ambos_5.gif)
-<p>&nbsp;</p>
 
 <!-- -->
 > For more information, visit [iSET official website](https://www.iset.com.br/).
