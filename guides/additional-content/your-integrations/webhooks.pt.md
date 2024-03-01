@@ -59,8 +59,8 @@ No momento em que a URL cadastrada receber uma notificação, você poderá vali
 
 Veja abaixo como configurar essa validação.
 
-1. Extraia o _timestamp_ (`ts`) e a assinatura do _header_ `x-signature`. Para isso, divida o conteúdo do _header_ pelo caractere `,`, o que resultará em uma lista de elementos. </br> Exemplo: `ts=1704908010` e `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
-2. Em seguida, divida cada elemento da lista pelo caractere `=`, o que resultará em um par de prefixos e os valores. O valor para o prefixo `ts` é o _timestamp_ (em milissegundos) da notificação e `v1` é a assinatura encriptada. <br> Exemplo: **ts = 1704908010** e **v1 = 618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839**.
+1. Extraia o _timestamp_ (`ts`) e a assinatura do _header_ `x-signature`. Para isso, divida o conteúdo do _header_ pelo caractere `,`, o que resultará em uma lista de elementos. Exemplo: `ts=1704908010` e `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
+2. Em seguida, divida cada elemento da lista pelo caractere `=`, o que resultará em um par de prefixos e os valores. O valor para o prefixo `ts` é o _timestamp_ (em milissegundos) da notificação e `v1` é a assinatura encriptada. Exemplo: **ts = 1704908010** e **v1 = 618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839**.
 3. Utilizando o _template_ abaixo, substitua os parâmetros pelos dados recebidos na sua notificação. 
 
 ```template
