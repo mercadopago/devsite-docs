@@ -10,32 +10,20 @@ In this section, we will ensure that your application meets the quality and secu
 
 The score indicates how secure and aligned with Mercado Pago's integration best practices your application's configuration is.
 
-Click on **Evaluate quality** to start the process of analyzing your integration. Review the improvement points identified during the analysis and make the necessary changes to your integration. In this process, a series of associated fields will be analyzed.
-
-> NOTE
->
-> Note
->
-> Before conducting the evaluation, make sure you have completed the application's approval process in the production environment. Additionally, it is necessary to have performed at least one successful production payment.
-
-> After making the improvements, click on **Update score** again to reassess your integration and verify if it meets the required standards.
-
-----[mla, mlm, mlu, mco, mlc, mpe]----
+By clicking on **Evaluate quality**, you will initiate the review process of your integration. During this assessment, it is essential to identify areas for improvement and make the necessary changes to your integration. This process involves reviewing a series of associated fields.
 
 > WARNING
 >
-> Attention
+> Important
 >
-> For now, the **Integration quality** section is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Mercado Pago Point,](/developers/en/docs/mp-point/landing) [Checkout API](/developers/en/docs/checkout-api/landing) and [Checkout Bricks](/developers/en/docs/checkout-bricks/landing).
+> Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment. After implementing improvements, it is necessary to click again on **Update score** to reassess your integration and verify if it meets the required standards.
+
+----[mla, mlm, mlu, mco, mlc, mpe]----
+For now, the **Integration quality** section is only available for integrations with [**Checkout Pro**,](/developers/en/docs/checkout-pro/landing) [**Mercado Pago Point**,](/developers/en/docs/mp-point/landing) [**Checkout API**](/developers/en/docs/checkout-api/landing) and [**Checkout Bricks**](/developers/en/docs/checkout-bricks/landing).
 
 ------------
 ----[mlb]----
-
-> WARNING
->
-> Attention
->
-> For now, the **Integration quality** section is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Mercado Pago Point,](/developers/en/docs/mp-point/landing) [Checkout API](/developers/en/docs/checkout-api/landing) and [Checkout Bricks.](/developers/en/docs/checkout-bricks/landing)
+For now, the **Integration quality** section is only available for integrations with [**Checkout Pro**,](/developers/en/docs/checkout-pro/landing) [**Mercado Pago Point**,](/developers/en/docs/mp-point/landing) [**Checkout API**](/developers/en/docs/checkout-api/landing) and [**Checkout Bricks**.](/developers/en/docs/checkout-bricks/landing)
 
 ------------
 

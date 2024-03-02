@@ -6,7 +6,7 @@ To integrate the Split payments solution, it is important to meet the requiremen
 >
 > Important
 >
-> If it is necessary to make configurations regarding the commission release date (marketplace fee or application fee), contact your **assisted portfolio commercial executive**.
+> This documentation is specific to the 1:1 Split payments model. If you need information about the 1:N model, we recommend contacting our sales team for more details. Additionally, if it is necessary to make configurations regarding the commission release date (marketplace fee or application fee), contact your **assisted commercial executive**.
 
 | Requirement                      | Description                                                                                                                                                                                                                                      |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
