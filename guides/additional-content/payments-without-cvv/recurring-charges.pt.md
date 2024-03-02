@@ -884,7 +884,7 @@ curl -X POST \
 
 > Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout Transparente](/developers/pt/docs/checkout-api/customer-management) ou a seção de [renderização padrão do Brick de Card Payment.](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering)
 
-# Atualizar cartões de cliente
+# Atualizar cartões
 
 Caso necessário, é possível adicionar novos cartões a um determinado cliente. Para isso, busque o cliente e defina os novos dados de cartão utilizando um dos códigos disponíveis abaixo.
 
