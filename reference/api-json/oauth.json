@@ -100,7 +100,7 @@
                     "type": "string",
                     "example": "false",
                     "description": {
-                      "es": "Añadido con valor = true solo cuando desee generar credenciales para pruebas.",
+                      "es": "Añadido con valor = true solo cuando desees generar credenciales para pruebas.",
                       "pt": "Adicionado com valor = true apenas quando desejar gerar credenciais para testes.",
                       "en": "Added with value = true only when you want to generate credentials for testing."
                     }
