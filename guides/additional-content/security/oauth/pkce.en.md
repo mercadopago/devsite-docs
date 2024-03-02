@@ -1,6 +1,6 @@
 # PKCE
 
-The **PKCE** (Proof Key for Code Exchange) is a security protocol used with OAuth to protect against malicious code attacks during the exchange of authorization codes for an access token. It adds an extra layer of security by generating a verifier that is transformed into a challenge to ensure that even if the authorization code is intercepted, it is not useful without the original verifier.
+The **PKCE** (Proof Key for Code Exchange) is a security protocol used with OAuth to protect against malicious code attacks during the exchange of authorization codes for an Access Token. It adds an extra layer of security by generating a verifier that is transformed into a challenge to ensure that even if the authorization code is intercepted, it is not useful without the original verifier.
 
 In Mercado Pago, you can **enable PKCE verification** from the [Application details](/developers/en/docs/your-integrations/application-details) screen. This allows you to send an additional secret code to be used during the authorization process.
 
@@ -8,7 +8,7 @@ In Mercado Pago, you can **enable PKCE verification** from the [Application deta
 >
 > Important
 >
-> With this field enabled, Mercado Pago will start requiring the `code_challenge` and `code_method` fields as mandatory in OAuth requests.
+> With the PKCE field enabled, Mercado Pago will start requiring the `code_challenge` and `code_method` fields as mandatory in OAuth requests.
 
 Follow the steps below to generate the mandatory fields and configure PKCE verification.
 
@@ -25,4 +25,4 @@ https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=$APP
 
 3. After correctly sending the codes to Mercado Pago, you will obtain the necessary authorization for PKCE verification in transactions made with OAuth.
 4, Check the authorization code returned in the `code` parameter in the Redirect URL of your server (https://www.redirect-url.com?code=CODE&state=RANDOM_ID).
-5. Finally, send your [credentials](/developers/pt/guides/additional-content/your-integrations/credentials) and the authorization code to the [/oauth/token](/developers/pt/reference/oauth/_oauth_token/post) endpoint to receive the access token as a response.
+5. Finally, send your [credentials](/developers/pt/guides/additional-content/your-integrations/credentials) and the authorization code to the [/oauth/token](/developers/pt/reference/oauth/_oauth_token/post) endpoint to receive the Access Token as a response.

@@ -8,7 +8,7 @@ En Mercado Pago, puedes **habilitar la verificación por PKCE** desde la pantall
 >
 > Importante
 >
-> Con este campo habilitado, Mercado Pago comenzará a requerir los campos `code_challenge` y `code_method` como obligatorios en las solicitudes de OAuth.
+> Con el campo PKCE habilitado, Mercado Pago comenzará a requerir los campos `code_challenge` y `code_method` como obligatorios en las solicitudes de OAuth.
 
 Sigue los pasos a continuación para generar los campos obligatorios y configurar la verificación por PKCE.
 
