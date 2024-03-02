@@ -4,13 +4,193 @@ Siga os processos abaixo para configurar o recebimento de pagamentos recorrentes
 
 ## Processar primeiro pagamento  
 
-Para a primeira transação, sempre será necessário solicitar os dados do cartão e processar o pagamento com o código de segurança. Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs. Os campos mínimos requeridos para enviar são: `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email`.
+Para a primeira transação, sempre será necessário solicitar os dados do cartão e processar o pagamento com o código de segurança (**CVV**). Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs. 
+
+Os campos mínimos requeridos para enviar são: `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email`. Lembrando que quanto mais informações adicionais forem transmitidas, maior será a chance do pagamento ser aprovado porque a avaliação de risco terá mais dados para avaliar.
 
 Deve-se levar em consideração dois fluxos para salvar os dados do cartão do cliente:
 
-1. No caso de a afiliação incluir o pagamento da primeira parcela, o primeiro pagamento é processado com Checkout Transparente ou Checkout Bricks seguindo os processos de pagamento ao Mercado Pago. Para isso, é necessário que seu backend possa receber a informação do formulário com o token gerado e os dados completos. 
+1. No caso de a afiliação incluir o pagamento da primeira parcela, o primeiro pagamento é processado com [Checkout Transparente](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) ou [Checkout Bricks](/developers/pt/docs/checkout-bricks/card-payment-brick/payment-submission) seguindo os processos de pagamento ao Mercado Pago. Para isso, é necessário que seu backend possa receber a informação do formulário com o token gerado e os dados informados. 
 
-2. No caso em que a afiliação não inclua o pagamento de uma primeira parcela, devem ser considerados dois fluxos: um para cartões Visa e Master com autenticação via [Zero Dollar Auth](/developers/pt/docs/zero-dollar-auth/integration) e outro com a cobrança de um valor baixo e o [reembolso do dinheiro](/guides/additional-content/sales-processing/cancellations-and-refunds).
+2. No caso em que a afiliação não inclua o pagamento de uma primeira parcela, devem ser considerados dois fluxos: 
+
+- Um primeiro fluxo para cartões _Visa_ e _Master_ com autenticação via [Zero Dollar Auth](/developers/pt/docs/zero-dollar-auth/integration).
+
+[[[
+```php
+<?php
+  use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\MercadoPagoConfig;
+
+
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+
+  $client = new PaymentClient();
+  $request_options = new RequestOptions();
+  $request_options->setCustomHeaders(["X-Card-Validation: card_validation"]);
+
+  $payment = $client->create([
+    "token" => $_POST['token'],
+    "payment_method_id" => $_POST['paymentMethodId'],
+    "payer" => [
+      "id" => $_POST['id'],
+      "type" => $_POST['type']
+    ],
+    "description" => $_POST['description'],
+    "transaction_amount" => (float) $_POST['transactionAmount']
+  ], $request_options);
+  echo implode($payment);
+?>
+```
+```node
+import { Payment, MercadoPagoConfig } from 'mercadopago';
+
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+
+payment.create({
+    body: { 
+        token: req.token,
+        payment_method_id: req.payment_method_id,
+        payer: {
+            id: req.id,
+            type: req.type
+        },
+        description: req.description,
+        transaction_amount: req.transaction_amount,
+    },
+    requestOptions: { 
+        X-Card-Validation: 'card_validation' }
+})
+.then((result) => console.log(result))
+.catch((error) => console.log(error));
+```
+```java
+Map<String, String> customHeaders = new HashMap<>();
+customHeaders.put("X-Card-Validation", "card_validation");
+
+MPRequestOptions requestOptions = MPRequestOptions.builder()
+    .customHeaders(customHeaders)
+    .build();
+
+MercadoPagoConfig.setAccessToken("YOUR_ACCESS_TOKEN");
+
+PaymentClient client = new PaymentClient();
+
+PaymentCreateRequest paymentCreateRequest =
+   PaymentCreateRequest.builder()
+       .transactionAmount(request.getTransactionAmount())
+       .token(request.getToken())
+       .description(request.getDescription())
+       .paymentMethodId(request.getPaymentMethodId())
+       .payer(
+           PaymentPayerRequest.builder()
+               .id(request.getPayer().getId())
+               .type(request.getPayer().getType())
+               .build())
+       .build();
+
+client.create(paymentCreateRequest, requestOptions);
+```
+```ruby
+require 'mercadopago'
+sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
+
+custom_headers = {
+ 'X-Card-Validation': 'card_validation'
+}
+
+custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
+
+payment_data = {
+ transaction_amount: params[:transactionAmount].to_f,
+ token: params[:token],
+ description: params[:description],
+ payment_method_id: params[:paymentMethodId],
+ payer: {
+   id: 'params[:id]',
+   type: params[:type]
+ }
+}
+
+payment_response = sdk.payment.create(payment_data, custom_request_options)
+payment = payment_response[:response]
+
+puts payment
+```
+```csharp
+using System;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
+
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("X-Card-Validation", "card_validation");
+
+var paymentRequest = new PaymentCreateRequest
+{
+   TransactionAmount = decimal.Parse(Request["transactionAmount"]),
+   Token = Request["token"],
+   Description = Request["description"],
+   PaymentMethodId = Request["paymentMethodId"],
+   Payer = new PaymentPayerRequest
+   {
+       Id = Request["id"],
+       Type = Request["type"]
+   },
+};
+
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest, requestOptions);
+
+Console.WriteLine(payment.Status);
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'X-Card-Validation': 'card_validation'
+}
+
+payment_data = {
+   "transaction_amount": float(request.POST.get("transaction_amount")),
+   "token": request.POST.get("token"),
+   "description": request.POST.get("description"),
+   "payment_method_id": request.POST.get("payment_method_id"),
+   "payer": {
+       "id": request.POST.get("id"),
+       "type": request.POST.get("type")
+   }
+}
+
+payment_response = sdk.payment().create(payment_data, request_options)
+payment = payment_response["response"]
+
+print(payment)
+```
+```curl
+curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+--header 'Content-Type: application/json' \
+--header 'X-Card-Validation: card_validation' \
+--data-raw '{
+    "token": "TOKEN",
+    "payment_method_id": "master",
+    "payer": {
+        "id": "{{customer_id}}",
+        "type" : "customer",
+    },
+    "description": "validação de cartão com valor zero dollar master",
+    "transaction_amount": 0
+}'
+```
+]]]
+
+- Um segundo fluxo com a cobrança de um valor baixo e o reembolso do dinheiro.
 
 [[[
 ```php
@@ -236,13 +416,13 @@ curl -X POST \
 ```
 ]]]
 
-> Para mais informações, siga os passos de nossa integração de [pagamentos com cartão do Checkout Transparente](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) ou utilizando o [Brick de Card Payment.](/developers/pt/docs/checkout-bricks/card-payment-brick/payment-submission)
+> Para mais informações, siga os passos de nossa integração de [pagamentos com cartão do Checkout Transparente](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) ou utilizando o [Brick de Card Payment.](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering)
 
 ## Associar cartão ao cliente
 
 Depois de processar o primeiro pagamento e garantir que o cartão é válido, crie um cliente e associe-o ao cartão utilizado no primeiro pagamento. 
 
-Para criar um cliente e associá-lo ao seu cartão, é preciso enviar o campo do e-mail, o tipo de meio de pagamento, o ID do banco emissor e o token gerado. Cada cliente será guardado com o valor `customer` e cada cartão com o valor `card`.
+Para criar um cliente e associá-lo ao seu cartão, é preciso enviar o `customer_id` e o `card_token`. Cada cliente será guardado com o valor `customer` e cada cartão com o valor `card`.
 
 Além disso, recomendamos armazenar os dados do cartão sempre que um pagamento for concluído com sucesso. Isso permite que os dados corretos sejam armazenados para compras futuras e otimiza o processo de pagamento para o comprador.
 
@@ -703,3 +883,144 @@ curl -X POST \
 ]]]
 
 > Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout Transparente](/developers/pt/docs/checkout-api/customer-management) ou a seção de [renderização padrão do Brick de Card Payment.](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering)
+
+# Atualizar cartões de cliente
+
+Caso necessário, é possível adicionar novos cartões a um determinado cliente. Para isso, busque o cliente e defina os novos dados de cartão utilizando um dos códigos disponíveis abaixo.
+
+> NOTE
+>
+> Importante
+>
+> Caso seja necessário excluir um cartão antes de adicionar novos cartões a um cliente, envie um **DELETE** ao endpoint [/v1/customers/{customer_id}/cards/{id}](/developers/pt/reference/cards/_customers_customer_id_cards_id/delete) fornecendo o `customer_id` e o `id` do cartão que deseja excluir. Após a execução bem-sucedida da requisição, você poderá adicionar o novo cartão.
+
+[[[
+```php
+<?php
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+  
+  $customer_client = new CustomerClient();
+  $customer = $customer_client->get("1234");
+
+  $card_client = new CustomerCardClient();
+  
+  $customer_card = $client->create($customer->id, [
+    "token" => "your_card_token",
+    "issuer_id" => "2345",
+    "payment_method_id" => "debit_card"
+  ]);
+
+  echo implode($customer_card);
+?>
+```
+```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token' });
+const customerClient = new Customer(client);
+
+const customer = customerClient.get({ customerId: '<CUSTOMER_ID>' })
+	.then((result) => {
+
+  const cardClient = new CustomerCard(client);
+
+  const body = {
+       token : result.token,
+       issuer_id: '2345',
+       payment_method: 'debit_card' 
+  };
+
+cardClient.create({ customerId: customer, body: body })
+.then(console.log).catch(console.log);
+});
+```
+```java
+
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
+
+CustomerClient customerClient = new CustomerClient();
+CustomerCardClient customerCardClient = new CustomerCardClient();
+
+Customer customer = customerClient.get("247711297-jxOV430go9fx2e");
+
+CustomerCardIssuer issuer = CustomerCardIssuer.builder()
+   .id("3245612")
+   .build();
+
+CustomerCardCreateRequest cardCreateRequest = CustomerCardCreateRequest.builder()
+   .token("9b2d63e00d66a8c721607214cedaecda")
+   .issuer(issuer)
+   .paymentMethodId("debit_card")
+   .build();
+
+customerCardClient.create(customer.getId(), cardCreateRequest);
+
+```
+```ruby
+
+require 'mercadopago'
+
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+customer_response = sdk.customer.get('247711297-jxOV430go9fx2e')
+customer = customer_response[:response]
+
+card_request = {
+  token: '9b2d63e00d66a8c721607214cedaecda',
+  issuer_id: '3245612',
+  payment_method_id: 'debit_card'
+}
+card_response = sdk.card.create(customer['id'], card_request)
+card = card_response[:response]
+
+puts card
+
+```
+```csharp
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var customerClient = new CustomerClient();
+Customer customer = await customerClient.GetAsync("247711297-jxOV430go9fx2e");
+
+var cardRequest = new CustomerCardCreateRequest
+{
+    Token = "9b2d63e00d66a8c721607214cedaecda",
+};
+CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
+
+Console.WriteLine(card.Id);
+
+```
+```python
+
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+customer_response = sdk.customer().get("247711297-jxOV430go9fx2e")
+customer = customer_response["response"]
+
+card_data = {
+  "token": "9b2d63e00d66a8c721607214cedaecda",
+  "issuer_id": "3245612",
+  "payment_method_id": "debit_card"
+}
+card_response = sdk.card().create(customer["id"], card_data)
+card = card_response["response"]
+
+print(card)
+
+```
+```curl
+
+curl -X GET \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+  'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
+
+curl -X POST \
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
+    -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer": {"id": "3245612"}, "payment_method_id":"debit_card"}'
+```
+]]]
+
+> Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout Transparente](/developers/pt/docs/checkout-api/customer-management).
