@@ -13,7 +13,7 @@ En Mercado Pago, puedes **habilitar la verificación por PKCE** desde la pantall
 Sigue los pasos a continuación para generar los campos obligatorios y configurar la verificación por PKCE.
 
 1. Los campos pueden generarse de varias formas, ya sea con desarrollo propio o mediante el uso de SDKs. Sigue los pasos necesarios descritos en [esta documentación oficial](https://datatracker.ietf.org/doc/html/rfc7636#section-4) para generar los campos que serán requeridos.
-2. Después de generar y cifrar los campos, será necesario enviar los códigos respectivos a Mercado Pago. Para ello, envíalos a través de `query_params` utilizando la URL de autenticación a continuación.
+2. Después de generar y cifrar los campos, será necesario enviar los códigos respectivos a Mercado Pago a través de `query_params` utilizando la URL de autenticación a continuación.
 
 ```URL
 https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=$APP_ID`redirect_uri=$YOUR_URL&code_challenge=$CODE_CHALLENGE&code_challenge_method=$CODE_METHOD
