@@ -25,4 +25,4 @@ https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=$APP
 
 3. Después de enviar correctamente los códigos a Mercado Pago, obtendrás la autorización necesaria para realizar la verificación por PKCE en las transacciones realizadas con OAuth.
 4. Verifica en la Redirect URL de tu servidor (https://www.redirect-url.com?code=CODE&state=RANDOM_ID) el código de autorización devuelto en el parámetro `code`.
-5. Finalmente, envía tus credenciales y el código de autorización al endpoint [/oauth/token](/developers/es/reference/oauth/_oauth_token/post) para recibir como respuesta el _access token_.
+5. Finalmente, envía tus credenciales y el código de autorización al endpoint [/oauth/token](/developers/es/reference/oauth/_oauth_token/post) para recibir como respuesta el _Access Token_.
