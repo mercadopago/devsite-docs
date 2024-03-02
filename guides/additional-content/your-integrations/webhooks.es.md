@@ -58,9 +58,8 @@ En el momento en que la URL registrada reciba una notificación, podrás validar
 
 A continuación, te indicamos cómo configurar esta validación.
 
-1. Extrae el _timestamp_ (`ts`) y la clave del _header_ `x-signature`. Para hacer esto, divide el contenido del _header_ por el carácter `,`, lo que resultará en una lista de elementos. Ejemplo: `ts=1704908010` y `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
-2. Luego, divide cada elemento de la lista por el carácter `=`, lo que resultará en un par de prefijos y los valores. El valor para el prefijo `ts` es el _timestamp_ (en milisegundos) de la notificación y `v1` es la clave encriptada. Ejemplo: **ts = 1704908010** y **v1 = 618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839**.
-3. Utilizando el _template_ a continuación, sustituye los parámetros con los datos recibidos en tu notificación.
+1. Extrae el _timestamp_ (`ts`) y la clave del _header_ `x-signature`. Para hacer esto, divide el contenido del _header_ por el carácter `,`, lo que resultará en una lista de elementos. El valor para el prefijo `ts` es el _timestamp_ (en milisegundos) de la notificación y `v1` es la clave encriptada. Ejemplo: `ts=1704908010` y `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
+2. Utilizando el _template_ a continuación, sustituye los parámetros con los datos recibidos en tu notificación.
 
 ```template
 id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
@@ -73,8 +72,8 @@ En el _template_, los valores entre `[]` deben ser reemplazados por los valores 
 
 > Si alguno de los valores presentados en el _template_ anterior no está presente en tu notificación, deberás eliminarlos de la plantilla.
 
-4. En el [Panel del desarrollador](/developers/panel/app), selecciona la aplicación integrada, ve a la sección de Webhooks y revela la clave secreta generada.
-5. Genera la contraclave para la validación. Para hacer esto, calcula un [HMAC](https://es.wikipedia.org/wiki/HMAC) con la función de `hash SHA256` en base hexadecimal, utilizando la **clave secreta** como clave y el _template_ poblada con los valores como mensaje. Ejemplo:
+3. En el [Panel del desarrollador](/developers/panel/app), selecciona la aplicación integrada, ve a la sección de Webhooks y revela la clave secreta generada.
+4. Genera la contraclave para la validación. Para hacer esto, calcula un [HMAC](https://es.wikipedia.org/wiki/HMAC) con la función de `hash SHA256` en base hexadecimal, utilizando la **clave secreta** como clave y el _template_ poblada con los valores como mensaje. Ejemplo:
 
 [[[
 ```php
