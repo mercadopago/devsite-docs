@@ -4,8 +4,7 @@
         "/v1/account/release_report/list": {
             "get": {
               "tags": [
-                "mp-point",
-                "mp-point"
+                "reporting"
               ],
               "description": {
                 "en": "Check the list of reports you have generated",
@@ -274,9 +273,7 @@
           "/v1/account/release_report/schedule": {
             "post": {
               "tags": [
-                "mp-point",
-                "mp-point",
-                "mp-point"
+                "reporting"
               ],
               "description": {
                 "en": "Schedule the automatic generation of the report using the assigned frequency during the configuration of your reports. When consuming this service, the 'scheduled' property of your configuration will be automatically updated to true",
@@ -543,9 +540,7 @@
             },
             "delete": {
               "tags": [
-                "mp-point",
-                "mp-point",
-                "mp-point"
+                "reporting"
               ],
               "description": {
                 "en": "You can deactivate the automatic generation of your reports at any time, when needed. When using this service, the 'scheduled' property in your configuration will be automatically updated to 'false'",
@@ -814,8 +809,7 @@
           "/v1/account/release_report/{file_name}": {
             "get": {
               "tags": [
-                "mp-point",
-                "mp-point"
+                "reporting"
               ],
               "description": {
                 "en": "Use the 'file_name' attribute, and you can download any of your reports",

@@ -4,8 +4,7 @@
         "/v1/account/release_report/create": {
             "post": {
               "tags": [
-                "mp-point",
-                "mp-point"
+                "reporting"
               ],
               "description": {
                 "en": "Manually create a new report within a specific date range",

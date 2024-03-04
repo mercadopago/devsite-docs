@@ -4,8 +4,7 @@
     "/v1/account/release_report/config": {
       "post": {
         "tags": [
-          "mp-point",
-          "qr-code"
+          "reporting"
         ],
         "description": {
           "en": "Check the fields that you can configure to adjust your preferences before starting. Based on these settings, you will be able to generate reports later",
@@ -610,8 +609,7 @@
       },
       "put": {
         "tags": [
-          "mp-point",
-          "mp-point"
+          "reporting"
         ],
         "description": {
           "en": "This endpoint updates the default settings of your reports when necessary",
@@ -1187,8 +1185,7 @@
       },
       "get": {
         "tags": [
-          "mp-point",
-          "mp-point"
+          "reporting"
         ],
         "description": {
           "en": "Check the current configuration of your reports",
