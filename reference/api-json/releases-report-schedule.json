@@ -8,9 +8,9 @@
                 "mp-point"
               ],
               "description": {
-                "en": "",
-                "pt": "",
-                "es": "la lista de informes que has generado"
+                "en": "Check the list of reports you have generated",
+                "pt": "Confira a lista de relatórios que você gerou",
+                "es": "Consulta la lista de reportes que has generado"
               },
               "parameters": [
                 {
@@ -18,8 +18,8 @@
                   "in": "header",
                   "required": true,
                   "description": {
-                    "en": "",
-                    "pt": "",
+                    "en": "Token required for authentication. This field is intended for platforms or modules that offer Mercado Pago in their solutions.",
+                    "pt": "Token necessário para autenticação. Este campo é destinado a plataformas ou módulos que oferecem o Mercado Pago em suas soluções.",
                     "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
                   },
                   "schema": {
@@ -31,16 +31,16 @@
               "responses": {
                 "200": {
                   "description": {
-                    "en": "Ok",
-                    "pt": "Ok",
-                    "es": "Ok"
+                    "en": "Ok.",
+                    "pt": "Ok.",
+                    "es": "Ok."
                   },
                   "content": {
                     "application/json": {
                       "schema": {
                         "description": {
-                          "en": "",
-                          "pt": "",
+                          "en": "The API will respond with a JSON Array structure in which you will find the list of all the reports you have generated.",
+                          "pt": "A API responderá com uma estrutura de JSON Array, na qual você encontrará a lista de todos os relatórios que você gerou.",
                           "es": "La API responderá con una estructura JSON Array en la cual encontrarás el listado de todos los reportes que has generado."
                         },
                         "type": "object",
@@ -48,8 +48,8 @@
                           "id": {
                             "type": "number",
                             "description": {
-                              "en": "",
-                              "pt": "",
+                              "en": "This field indicates the unique identifier of the generated report.",
+                              "pt": "Este campo indica o identificador único do relatório gerado.",
                               "es": "Este campo indica el identificador único del reporte generado."
                             },
                             "example": 99336983670
@@ -58,53 +58,53 @@
                             "type": "number",
                             "description": {
                               "es": "Este campo indica el identificador único de la cuenta asociada al reporte.",
-                              "pt": "",
-                              "en": ""
+                              "pt": "Este campo indica o identificador único da conta associada ao relatório.",
+                              "en": "This field indicates the unique identifier of the account associated with the report."
                             },
                             "example": 167345291
                           },
                           "begin_date": {
                             "type": "string",
                             "description": {
-                              "es": "Es la fecha y hora de inicio del intervalo del reporte.",
-                              "pt": "",
-                              "en": ""
+                              "en": "This field indicates the start date and time of the interval for the report, in the UTC time zone (indicated by the 'Z' at the end, which stands for 'Zulu time' or Coordinated Universal Time).",
+                              "pt": "Este campo indica a data e hora de início do intervalo para o relatório, no fuso horário UTC (indicado pela 'Z' no final, que significa 'Zulu time' ou tempo coordenado universal).",
+                              "es": "Este campo indica la fecha y hora de inicio del intervalo para el informe, en la zona horaria UTC (indicada por la 'Z' al final, que significa 'Zulu time' o tiempo coordinado universal)."
                             },
                             "example": "2022-08-01T03:00:00Z"
                           },
                           "created_from": {
                             "type": "string",
                             "description": {
-                              "es": "Indica cómo se generó el reporte. En este caso",
-                              "pt": "",
-                              "en": ""
+                               "es": "Este campo indica cómo se generó el reporte.",
+                               "pt": "Este campo indica como o relatório foi gerado.",
+                               "en": "This field indicates how the report was generated."
                             },
                             "example": "manual"
                           },
                           "currency_id": {
                             "type": "string",
                             "description": {
-                              "es": "Es el identificador de la moneda utilizada en el reporte.",
-                              "pt": "",
-                              "en": ""
+                               "es": "Es el identificador de la moneda utilizada en el reporte.",
+                               "pt": "É o identificador da moeda utilizada no relatório.",
+                               "en": "It is the identifier of the currency used in the report."
                             },
                             "example": "ARS"
                           },
                           "end_date": {
                             "type": "string",
                             "description": {
-                              "es": "Representa la fecha y hora de finalización del intervalo del reporte.",
-                              "pt": "",
-                              "en": ""
+                               "en": "This field indicates the end date and time of the interval for the report, in the UTC time zone (indicated by the 'Z' at the end, which stands for 'Zulu time' or Coordinated Universal Time).",
+                               "pt": "Este campo indica a data e hora de término do intervalo para o relatório, no fuso horário UTC (indicado pelo 'Z' no final, que significa 'Zulu time' ou tempo coordenado universal).",
+                               "es": "Este campo indica la fecha y hora de finalización del intervalo para el informe, en la zona horaria UTC (indicado por la 'Z' al final, que significa 'Zulu time' o tiempo coordinado universal)."
                             },
                             "example": "2022-08-08T02:59:59Z"
                           },
                           "generation_date": {
                             "type": "string",
                             "description": {
-                              "es": "Es la fecha y hora en la que se generó la respuesta del reporte",
-                              "pt": "",
-                              "en": ""
+                                "es": "Es la fecha y hora en la que se generó la respuesta del reporte.",
+                                "pt": "É a data e hora em que a resposta do relatório foi gerada.",
+                                "en": "It is the date and time when the report response was generated."
                             },
                             "example": "2024-02-16T15:55:22.258-04:00"
                           },
@@ -113,35 +113,35 @@
                             "items": {
                               "type": "object",
                               "description": {
-                                "en": "",
-                                "pt": "",
+                                "en": "List containing internal management information of the report, such as visibility, notifications, and time settings.",
+                                "pt": "Lista que contém informações internas de gestão do relatório, como visibilidade, notificações e configurações de tempo.",
                                 "es": "Lista que contiene información interna de gestión del reporte, como la visibilidad, notificaciones y configuraciones de tiempo."
                               },
                               "properties": {
                                 "is_visible": {
                                   "type": "boolean",
                                   "description": {
-                                    "en": "",
-                                    "pt": "",
-                                    "es": "Indica si el reporte es visible o no"
+                                    "en": "This field indicates whether the report is visible or not.",
+                                    "pt": "Este campo indica se o relatório está visível ou não.",
+                                    "es": "Este campo indica si el reporte es visible o no."
                                   },
                                   "example": true
                                 },
                                 "notify": {
                                   "type": "boolean",
                                   "description": {
-                                    "en": "",
-                                    "pt": "",
-                                    "es": "Controla si se notificará al correo electrónico asociado sobre eventos relacionados con el reporte."
+                                    "en": "This field controls whether the associated email will be notified about events related to the report.",
+                                    "pt": "Este campo controla se o e-mail associado será notificado sobre eventos relacionados ao relatório.",
+                                    "es": "Este campo ontrola si se notificará al correo electrónico asociado sobre eventos relacionados con el reporte."
                                   },
                                   "example": false
                                 },
                                 "use_exact_time": {
                                   "type": "boolean",
                                   "description": {
-                                    "en": "",
-                                    "pt": "",
-                                    "es": "Determina si se utilizarán fechas y horas exactas en el reporte"
+                                    "en": "This field determines whether exact dates and times will be used in the report.",
+                                    "pt": "Este campo determina se serão utilizadas datas e horas exatas no relatório.",
+                                    "es": "Este campo determina si se utilizarán fechas y horas exactas en el reporte."
                                   },
                                   "example": true
                                 }
@@ -151,45 +151,45 @@
                           "is_reserve": {
                             "type": "boolean",
                             "description": {
-                              "es": "Indica si el reporte es una reserva o no. ",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo indica si el reporte es una reserva o no.",
+                                "pt": "Este campo indica se o relatório é uma reserva ou não.",
+                                "en": "This field indicates whether the report is a reservation or not."
                             },
                             "example": false
                           },
                           "is_test": {
                             "type": "boolean",
                             "description": {
-                              "es": "Indica si el reporte es de prueba o no ",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo indica si el reporte es de prueba o no.",
+                                "pt": "Este campo indica se o relatório é de teste ou não.",
+                                "en": "This field indicates whether the report is a test or not."
                             },
                             "example": false
                           },
                           "last_modified": {
                             "type": "string",
                             "description": {
-                              "es": "Es la fecha y hora de la última modificación en el reporte.",
-                              "pt": "",
-                              "en": ""
+                                "es": "La fecha y hora de la última modificación en el reporte.",
+                                "pt": "A data e hora da última modificação no relatório.",
+                                "en": "The date and time of the last modification in the report."
                             },
                             "example": "2024-02-16T15:55:22.261-04:00"
                           },
                           "report_id": {
                             "type": "number",
                             "description": {
-                              "es": "Es el identificador del reporte generado, si está disponible",
-                              "pt": "",
-                              "en": ""
+                                "es": "El identificador del reporte generado, si está disponible.",
+                                "pt": "O identificador do relatório gerado, se estiver disponível.",
+                                "en": "The identifier of the generated report, if available."
                             },
                             "example": 17012160
                           },
                           "retries": {
                             "type": "number",
                             "description": {
-                              "es": "Representa el número de intentos realizados para generar el reporte",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo representa el número de intentos realizados para generar el reporte.",
+                                "pt": "Este campo representa o número de tentativas feitas para gerar o relatório.",
+                                "en": "This field represents the number of attempts made to generate the report."
                             },
                             "example": 0
                           },
@@ -205,27 +205,27 @@
                           "sub_type": {
                             "type": "string",
                             "description": {
-                              "es": "Indica el subtipo de reporte",
-                              "pt": "",
-                              "en": ""
+                                "es": "Indica el estado del reporte.",
+                                "pt": "Indica o estado do relatório.",
+                                "en": "Indicates the status of the report."
                             },
                             "example": "release"
                           },
                           "user_id": {
                             "type": "number",
                             "description": {
-                              "es": "Es el identificador único del usuario asociado al reporte",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo indica el identificador único del usuario asociado al reporte.",
+                                "pt": "Este campo indica o identificador único do usuário associado ao relatório.",
+                                "en": "This field indicates the unique identifier of the user associated with the report."
                             },
                             "example": 123456789
                           },
                           "format": {
                             "type": "string",
                             "description": {
-                              "es": "Indica el formato del reporte generado",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo indica el formato del reporte generado.",
+                                "pt": "Este campo indica o formato do relatório gerado.",
+                                "en": "This field indicates the format of the generated report."
                             },
                             "example": "CSV"
                           }
@@ -236,9 +236,9 @@
                 },
                 "401": {
                   "description": {
-                    "en": "Unauthorized",
-                    "pt": "Unauthorized",
-                    "es": "Unauthorized"
+                    "en": "Unauthorized.",
+                    "pt": "Unauthorized.",
+                    "es": "Unauthorized."
                   },
                   "content": {
                     "application/json": {
@@ -249,11 +249,11 @@
                             "type": "string",
                             "enum": [
                               {
-                                "title": "invalid token",
+                                "title": "Invalid token",
                                 "description": {
-                                  "en": "",
-                                  "es": "invalid token",
-                                  "pt": ""
+                                  "en": "Invalid token.",
+                                  "es": "Invalid token.",
+                                  "pt": "Invalid token."
                                 }
                               }
                             ]
@@ -266,8 +266,8 @@
               }
             },
             "title": {
-              "en": "",
-              "pt": "",
+              "en": "Consult report",
+              "pt": "Consultar relatório",
               "es": "Consultar reporte"
             }
           },
@@ -279,8 +279,8 @@
                 "mp-point"
               ],
               "description": {
-                "en": "",
-                "pt": "",
+                "en": "Schedule the automatic generation of the report using the assigned frequency during the configuration of your reports. When consuming this service, the 'scheduled' property of your configuration will be automatically updated to true",
+                "pt": "Agende a criação automática do relatório utilizando a frequência atribuída durante a configuração dos seus relatórios. Ao consumir este serviço, a propriedade 'scheduled' da sua configuração será atualizada automaticamente para true",
                 "es": "Programa la generación automática del reporte utilizando la frecuencia asignada durante la configuración de tus reportes. Al consumir este servicio, la propiedad scheduled de tu configuración se actualizará automáticamente a true"
               },
               "parameters": [
@@ -289,8 +289,8 @@
                   "in": "header",
                   "required": true,
                   "description": {
-                    "en": "",
-                    "pt": "",
+                    "en": "Token required for authentication. This field is intended for platforms or modules that offer Mercado Pago in their solutions.",
+                    "pt": "Token necessário para autenticação. Este campo é destinado a plataformas ou módulos que oferecem o Mercado Pago em suas soluções.",
                     "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
                   },
                   "schema": {
@@ -302,25 +302,25 @@
               "responses": {
                 "201": {
                   "description": {
-                    "es": "Created",
-                    "pt": "Created",
-                    "en": "Created"
+                    "es": "Created.",
+                    "pt": "Created.",
+                    "en": "Created."
                   },
                   "content": {
                     "application/json": {
                       "schema": {
                         "description": {
-                          "en": "",
-                          "pt": "",
-                          "es": "El API responderá con una estructura JSON con información relevante a tu pedido de generación"
+                          "en": "The API will respond with a JSON structure containing relevant information for your generation request.",
+                          "pt": "A API responderá com uma estrutura JSON contendo informações relevantes para sua solicitação de geração.",
+                          "es": "El API responderá con una estructura JSON con información relevante a tu pedido de generación."
                         },
                         "type": "object",
                         "properties": {
                           "id": {
                             "type": "number",
                             "description": {
-                              "en": "",
-                              "pt": "",
+                              "en": "This field indicates the unique identifier of the generated report.",
+                              "pt": "Este campo indica o identificador único do relatório gerado.",
                               "es": "Este campo indica el identificador único del reporte generado."
                             },
                             "example": 99336983670
@@ -329,26 +329,26 @@
                             "type": "number",
                             "description": {
                               "es": "Este campo indica el identificador único de la cuenta asociada al reporte.",
-                              "pt": "",
-                              "en": ""
+                              "pt": "Este campo indica o identificador único da conta associada ao relatório.",
+                              "en": "This field indicates the unique identifier of the account associated with the report."
                             },
                             "example": 167345291
                           },
                           "begin_date": {
                             "type": "string",
                             "description": {
-                              "es": "Es la fecha y hora de inicio del intervalo del reporte.",
-                              "pt": "",
-                              "en": ""
+                              "es": "Es la fecha y hora de inicio del intervalo del reporte, en la zona horaria UTC (indicado por la 'Z' al final, que significa 'Zulu time' o tiempo coordinado universal).",
+                              "pt": "É a data e hora de início do intervalo do relatório, no fuso horário UTC (indicado pelo 'Z' no final, que significa 'Zulu time' ou tempo coordenado universal).",
+                              "en": "It is the start date and time of the report interval, in the UTC time zone (indicated by the 'Z' at the end, which stands for 'Zulu time' or Coordinated Universal Time)."
                             },
                             "example": "2022-08-01T03:00:00Z"
                           },
                           "created_from": {
                             "type": "string",
                             "description": {
-                              "es": "Indica cómo se generó el reporte. En este caso",
-                              "pt": "",
-                              "en": ""
+                              "es": "Este campo indica cómo se generó el reporte.",
+                              "pt": "Este campo indica como o relatório foi gerado.",
+                              "en": "This field indicates how the report was generated."
                             },
                             "example": "schedule"
                           },
@@ -356,26 +356,26 @@
                             "type": "string",
                             "description": {
                               "es": "Es el identificador de la moneda utilizada en el reporte.",
-                              "pt": "",
-                              "en": ""
+                              "pt": "É o identificador da moeda utilizada no relatório.",
+                              "en": "It is the identifier of the currency used in the report."
                             },
                             "example": "ARS"
                           },
                           "end_date": {
                             "type": "string",
                             "description": {
-                              "es": "Representa la fecha y hora de finalización del intervalo del reporte.",
-                              "pt": "",
-                              "en": ""
+                               "en": "This field indicates the end date and time of the interval for the report, in the UTC time zone (indicated by the 'Z' at the end, which stands for 'Zulu time' or Coordinated Universal Time).",
+                               "pt": "Este campo indica a data e hora de término do intervalo para o relatório, no fuso horário UTC (indicado pelo 'Z' no final, que significa 'Zulu time' ou tempo coordenado universal).",
+                               "es": "Este campo indica la fecha y hora de finalización del intervalo para el reporte, en la zona horaria UTC (indicado por la 'Z' al final, que significa 'Zulu time' o tiempo coordinado universal)."
                             },
                             "example": "2022-08-08T02:59:59Z"
                           },
                           "generation_date": {
                             "type": "string",
                             "description": {
-                              "es": "Es la fecha y hora en la que se generó la respuesta del reporte",
-                              "pt": "",
-                              "en": ""
+                                "es": "Es la fecha y hora en la que se generó la respuesta del reporte.",
+                                "pt": "É a data e hora em que a resposta do relatório foi gerada.",
+                                "en": "It is the date and time when the report response was generated."
                             },
                             "example": "2024-02-16T15:55:22.258-04:00"
                           },
@@ -384,35 +384,35 @@
                             "items": {
                               "type": "object",
                               "description": {
-                                "en": "",
-                                "pt": "",
+                                "en": "List containing internal management information of the report, such as visibility, notifications, and time settings.",
+                                "pt": "Lista que contém informações internas de gestão do relatório, como visibilidade, notificações e configurações de tempo.",
                                 "es": "Lista que contiene información interna de gestión del reporte, como la visibilidad, notificaciones y configuraciones de tiempo."
                               },
                               "properties": {
                                 "is_visible": {
                                   "type": "boolean",
                                   "description": {
-                                    "en": "",
-                                    "pt": "",
-                                    "es": "Indica si el reporte es visible o no"
+                                    "en": "This field indicates whether the report is visible or not.",
+                                    "pt": "Este campo indica se o relatório está visível ou não.",
+                                    "es": "Este campo indica si el reporte es visible o no."
                                   },
                                   "example": true
                                 },
                                 "notify": {
                                   "type": "boolean",
                                   "description": {
-                                    "en": "",
-                                    "pt": "",
-                                    "es": "Controla si se notificará al correo electrónico asociado sobre eventos relacionados con el reporte."
+                                    "en": "This field controls whether the associated email will be notified about events related to the report.",
+                                    "pt": "Este campo controla se o e-mail associado será notificado sobre eventos relacionados ao relatório.",
+                                    "es": "Este campo ontrola si se notificará al correo electrónico asociado sobre eventos relacionados con el reporte."
                                   },
                                   "example": false
                                 },
                                 "use_exact_time": {
                                   "type": "boolean",
                                   "description": {
-                                    "en": "",
-                                    "pt": "",
-                                    "es": "Determina si se utilizarán fechas y horas exactas en el reporte"
+                                    "en": "This field determines whether exact dates and times will be used in the report.",
+                                    "pt": "Este campo determina se serão utilizadas datas e horas exatas no relatório.",
+                                    "es": "Este campo determina si se utilizarán fechas y horas exactas en el reporte."
                                   },
                                   "example": true
                                 }
@@ -422,81 +422,81 @@
                           "is_reserve": {
                             "type": "boolean",
                             "description": {
-                              "es": "Indica si el reporte es una reserva o no. ",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo indica si el reporte es una reserva o no.",
+                                "pt": "Este campo indica se o relatório é uma reserva ou não.",
+                                "en": "This field indicates whether the report is a reservation or not."
                             },
                             "example": false
                           },
                           "is_test": {
                             "type": "boolean",
                             "description": {
-                              "es": "Indica si el reporte es de prueba o no ",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo indica si el reporte es de prueba o no.",
+                                "pt": "Este campo indica se o relatório é de teste ou não.",
+                                "en": "This field indicates whether the report is a test or not."
                             },
                             "example": false
                           },
                           "last_modified": {
                             "type": "string",
                             "description": {
-                              "es": "Es la fecha y hora de la última modificación en el reporte.",
-                              "pt": "",
-                              "en": ""
+                                "es": "La fecha y hora de la última modificación en el reporte.",
+                                "pt": "A data e hora da última modificação no relatório.",
+                                "en": "The date and time of the last modification in the report."
                             },
                             "example": "2024-02-16T15:55:22.261-04:00"
                           },
                           "report_id": {
                             "type": "number",
                             "description": {
-                              "es": "Es el identificador del reporte generado, si está disponible",
-                              "pt": "",
-                              "en": ""
+                                "es": "El identificador del reporte generado, si está disponible.",
+                                "pt": "O identificador do relatório gerado, se estiver disponível.",
+                                "en": "The identifier of the generated report, if available."
                             },
                             "example": 17012160
                           },
                           "retries": {
                             "type": "number",
                             "description": {
-                              "es": "Representa el número de intentos realizados para generar el reporte",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo representa el número de intentos realizados para generar el reporte.",
+                                "pt": "Este campo representa o número de tentativas feitas para gerar o relatório.",
+                                "en": "This field represents the number of attempts made to generate the report."
                             },
                             "example": 0
                           },
                           "status": {
                             "type": "string",
                             "description": {
-                              "es": "Indica el estado del reporte",
-                              "pt": "",
-                              "en": ""
+                                "es": "Indica el estado del reporte.",
+                                "pt": "Indica o estado do relatório.",
+                                "en": "Indicates the status of the report."
                             },
                             "example": "processed"
                           },
                           "sub_type": {
                             "type": "string",
                             "description": {
-                              "es": "Indica el subtipo de reporte",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo indica el subtipo de reporte.",
+                                "pt": "Este campo indica o subtipo de relatório.",
+                                "en": "This field indicates the report subtype."
                             },
                             "example": "release"
                           },
                           "user_id": {
                             "type": "number",
                             "description": {
-                              "es": "Es el identificador único del usuario asociado al reporte",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo indica el identificador único del usuario asociado al reporte.",
+                                "pt": "Este campo indica o identificador único do usuário associado ao relatório.",
+                                "en": "This field indicates the unique identifier of the user associated with the report."
                             },
                             "example": 123456789
                           },
                           "format": {
                             "type": "string",
                             "description": {
-                              "es": "Indica el formato del reporte generado",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo indica el formato del reporte generado.",
+                                "pt": "Este campo indica o formato do relatório gerado.",
+                                "en": "This field indicates the format of the generated report."
                             },
                             "example": "CSV"
                           }
@@ -507,9 +507,9 @@
                 },
                 "401": {
                   "description": {
-                    "en": "Unauthorized",
-                    "pt": "Unauthorized",
-                    "es": "Unauthorized"
+                    "en": "Unauthorized.",
+                    "pt": "Unauthorized.",
+                    "es": "Unauthorized."
                   },
                   "content": {
                     "application/json": {
@@ -520,11 +520,11 @@
                             "type": "string",
                             "enum": [
                               {
-                                "title": "invalid token",
+                                "title": "Invalid token",
                                 "description": {
-                                  "en": "",
-                                  "es": "invalid token",
-                                  "pt": ""
+                                  "en": "Invalid token.",
+                                  "es": "Invalid token.",
+                                  "pt": "Invalid token."
                                 }
                               }
                             ]
@@ -536,8 +536,8 @@
                 }
               },
               "title": {
-                "en": "",
-                "pt": "",
+                "en": "Enable automatic generation",
+                "pt": "Ativar criação automática",
                 "es": "Activar generación automática"
               }
             },
@@ -548,9 +548,9 @@
                 "mp-point"
               ],
               "description": {
-                "en": "",
-                "pt": "",
-                "es": "Puedes desactivar la generación automática de tus reportes en cualquier momento, cuando lo necesites. Al consumir este servicio, la propiedad scheduled de tu configuración se actualizará automáticamente a false."
+                "en": "You can deactivate the automatic generation of your reports at any time, when needed. When using this service, the 'scheduled' property in your configuration will be automatically updated to 'false'",
+                "pt": "Você pode desativar a geração automática dos seus relatórios a qualquer momento, quando necessário. Ao utilizar este serviço, a propriedade 'scheduled' da sua configuração será atualizada automaticamente para 'false'",
+                "es": "Puedes desactivar la generación automática de tus reportes en cualquier momento, cuando lo necesites. Al consumir este servicio, la propiedad 'scheduled' de tu configuración se actualizará automáticamente a 'false'"
               },
               "parameters": [
                 {
@@ -558,8 +558,8 @@
                   "in": "header",
                   "required": true,
                   "description": {
-                    "en": "",
-                    "pt": "",
+                    "en": "Token required for authentication. This field is intended for platforms or modules that offer Mercado Pago in their solutions.",
+                    "pt": "Token necessário para autenticação. Este campo é destinado a plataformas ou módulos que oferecem o Mercado Pago em suas soluções.",
                     "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
                   },
                   "schema": {
@@ -571,25 +571,25 @@
               "responses": {
                 "200": {
                   "description": {
-                    "es": "ok",
-                    "pt": "ok",
-                    "en": "ok"
+                    "es": "Ok.",
+                    "pt": "Ok.",
+                    "en": "Ok."
                   },
                   "content": {
                     "application/json": {
                       "schema": {
                         "description": {
-                          "en": "",
-                          "pt": "",
-                          "es": "El API responderá con una estructura JSON con información relevante a tu pedido de generación"
+                          "en": "The API will respond with a JSON structure containing relevant information for your generation request.",
+                          "pt": "A API responderá com uma estrutura JSON contendo informações relevantes para o seu pedido de criação.",
+                          "es": "El API responderá con una estructura JSON con información relevante a tu pedido de generación."
                         },
                         "type": "object",
                         "properties": {
                           "id": {
                             "type": "number",
                             "description": {
-                              "en": "",
-                              "pt": "",
+                              "en": "This field indicates the unique identifier of the generated report.",
+                              "pt": "Este campo indica o identificador único do relatório gerado.",
                               "es": "Este campo indica el identificador único del reporte generado."
                             },
                             "example": 99336983670
@@ -598,53 +598,53 @@
                             "type": "number",
                             "description": {
                               "es": "Este campo indica el identificador único de la cuenta asociada al reporte.",
-                              "pt": "",
-                              "en": ""
+                              "pt": "Este campo indica o identificador único da conta associada ao relatório.",
+                              "en": "This field indicates the unique identifier of the account associated with the report."
                             },
                             "example": 167345291
                           },
                           "begin_date": {
                             "type": "string",
                             "description": {
-                              "es": "Es la fecha y hora de inicio del intervalo del reporte.",
-                              "pt": "",
-                              "en": ""
+                                "es": "Es la fecha y hora de inicio del intervalo del reporte, en la zona horaria UTC (indicado por la 'Z' al final, que significa 'Zulu time' o tiempo coordinado universal).",
+                                "pt": "É a data e hora de início do intervalo do relatório, no fuso horário UTC (indicado pelo 'Z' no final, que significa 'Zulu time' ou tempo coordenado universal).",
+                                "en": "It is the start date and time of the report interval, in the UTC time zone (indicated by the 'Z' at the end, which stands for 'Zulu time' or Coordinated Universal Time)."
                             },
                             "example": "2022-08-01T03:00:00Z"
                           },
                           "created_from": {
                             "type": "string",
                             "description": {
-                              "es": "Indica cómo se generó el reporte. En este caso",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo indica cómo se generó el reporte.",
+                                "pt": "Este campo indica como o relatório foi gerado.",
+                                "en": "This field indicates how the report was generated."
                             },
                             "example": "schedule"
                           },
                           "currency_id": {
                             "type": "string",
                             "description": {
-                              "es": "Es el identificador de la moneda utilizada en el reporte.",
-                              "pt": "",
-                              "en": ""
+                                "es": "Es el identificador de la moneda utilizada en el reporte.",
+                                "pt": "É o identificador da moeda utilizada no relatório.",
+                                "en": "It is the identifier of the currency used in the report."
                             },
                             "example": "ARS"
                           },
                           "end_date": {
                             "type": "string",
                             "description": {
-                              "es": "Representa la fecha y hora de finalización del intervalo del reporte.",
-                              "pt": "",
-                              "en": ""
+                                "en": "This field indicates the end date and time of the interval for the report, in the UTC time zone (indicated by the 'Z' at the end, which stands for 'Zulu time' or Coordinated Universal Time).",
+                                "pt": "Este campo indica a data e hora de término do intervalo para o relatório, no fuso horário UTC (indicado pelo 'Z' no final, que significa 'Zulu time' ou tempo coordenado universal).",
+                                "es": "Este campo indica la fecha y hora de finalización del intervalo para el reporte, en la zona horaria UTC (indicado por la 'Z' al final, que significa 'Zulu time' o tiempo coordinado universal)."
                             },
                             "example": "2022-08-08T02:59:59Z"
                           },
                           "generation_date": {
                             "type": "string",
                             "description": {
-                              "es": "Es la fecha y hora en la que se generó la respuesta del reporte",
-                              "pt": "",
-                              "en": ""
+                                "es": "La fecha y hora en la que se generó la respuesta del reporte.",
+                                "pt": "A data e hora em que a resposta do relatório foi gerada.",
+                                "en": "The date and time when the report response was generated."
                             },
                             "example": "2024-02-16T15:55:22.258-04:00"
                           },
@@ -653,35 +653,35 @@
                             "items": {
                               "type": "object",
                               "description": {
-                                "en": "",
-                                "pt": "",
+                                "en": "List containing internal management information of the report, such as visibility, notifications, and time settings.",
+                                "pt": "Lista que contém informações internas de gestão do relatório, como visibilidade, notificações e configurações de tempo.",
                                 "es": "Lista que contiene información interna de gestión del reporte, como la visibilidad, notificaciones y configuraciones de tiempo."
                               },
                               "properties": {
                                 "is_visible": {
                                   "type": "boolean",
                                   "description": {
-                                    "en": "",
-                                    "pt": "",
-                                    "es": "Indica si el reporte es visible o no"
+                                    "en": "This field indicates whether the report is visible or not.",
+                                    "pt": "Este campo indica se o relatório está visível ou não.",
+                                    "es": "Este campo indica si el reporte es visible o no."
                                   },
                                   "example": true
                                 },
                                 "notify": {
                                   "type": "boolean",
                                   "description": {
-                                    "en": "",
-                                    "pt": "",
-                                    "es": "Controla si se notificará al correo electrónico asociado sobre eventos relacionados con el reporte."
+                                    "en": "This field controls whether the associated email will be notified about events related to the report.",
+                                    "pt": "Este campo controla se o e-mail associado será notificado sobre eventos relacionados ao relatório.",
+                                    "es": "Este campo ontrola si se notificará al correo electrónico asociado sobre eventos relacionados con el reporte."
                                   },
                                   "example": false
                                 },
                                 "use_exact_time": {
                                   "type": "boolean",
                                   "description": {
-                                    "en": "",
-                                    "pt": "",
-                                    "es": "Determina si se utilizarán fechas y horas exactas en el reporte"
+                                    "en": "This field determines whether exact dates and times will be used in the report.",
+                                    "pt": "Este campo determina se serão utilizadas datas e horas exatas no relatório.",
+                                    "es": "Este campo determina si se utilizarán fechas y horas exactas en el reporte."
                                   },
                                   "example": true
                                 }
@@ -691,81 +691,81 @@
                           "is_reserve": {
                             "type": "boolean",
                             "description": {
-                              "es": "Indica si el reporte es una reserva o no. ",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo indica si el reporte es una reserva o no.",
+                                "pt": "Este campo indica se o relatório é uma reserva ou não.",
+                                "en": "This field indicates whether the report is a reservation or not."
                             },
                             "example": false
                           },
                           "is_test": {
                             "type": "boolean",
                             "description": {
-                              "es": "Indica si el reporte es de prueba o no ",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo indica si el reporte es de prueba o no.",
+                                "pt": "Este campo indica se o relatório é de teste ou não.",
+                                "en": "This field indicates whether the report is a test or not."
                             },
                             "example": false
                           },
                           "last_modified": {
                             "type": "string",
                             "description": {
-                              "es": "Es la fecha y hora de la última modificación en el reporte.",
-                              "pt": "",
-                              "en": ""
+                                "es": "La fecha y hora de la última modificación en el reporte.",
+                                "pt": "A data e hora da última modificação no relatório.",
+                                "en": "The date and time of the last modification in the report."
                             },
                             "example": "2024-02-16T15:55:22.261-04:00"
                           },
                           "report_id": {
                             "type": "number",
                             "description": {
-                              "es": "Es el identificador del reporte generado, si está disponible",
-                              "pt": "",
-                              "en": ""
+                                "es": "El identificador del reporte generado, si está disponible.",
+                                "pt": "O identificador do relatório gerado, se estiver disponível.",
+                                "en": "The identifier of the generated report, if available."
                             },
                             "example": 17012160
                           },
                           "retries": {
                             "type": "number",
                             "description": {
-                              "es": "Representa el número de intentos realizados para generar el reporte",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo representa el número de intentos realizados para generar el reporte.",
+                                "pt": "Este campo representa o número de tentativas feitas para gerar o relatório.",
+                                "en": "This field represents the number of attempts made to generate the report."
                             },
                             "example": 0
                           },
                           "status": {
                             "type": "string",
                             "description": {
-                              "es": "Indica el estado del reporte",
-                              "pt": "",
-                              "en": ""
+                                "es": "Indica el estado del reporte.",
+                                "pt": "Indica o estado do relatório.",
+                                "en": "Indicates the status of the report."
                             },
                             "example": "deleted"
                           },
                           "sub_type": {
                             "type": "string",
                             "description": {
-                              "es": "Indica el subtipo de reporte",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo indica el subtipo de reporte.",
+                                "pt": "Este campo indica o subtipo de relatório.",
+                                "en": "This field indicates the report subtype."
                             },
                             "example": "release"
                           },
                           "user_id": {
                             "type": "number",
                             "description": {
-                              "es": "Es el identificador único del usuario asociado al reporte",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo indica el identificador único del usuario asociado al reporte.",
+                                "pt": "Este campo indica o identificador único do usuário associado ao relatório.",
+                                "en": "This field indicates the unique identifier of the user associated with the report."
                             },
                             "example": 123456789
                           },
                           "format": {
                             "type": "string",
                             "description": {
-                              "es": "Indica el formato del reporte generado",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo indica el formato del reporte generado.",
+                                "pt": "Este campo indica o formato do relatório gerado.",
+                                "en": "This field indicates the format of the generated report."
                             },
                             "example": "CSV"
                           }
@@ -776,9 +776,9 @@
                 },
                 "401": {
                   "description": {
-                    "en": "Unauthorized",
-                    "pt": "Unauthorized",
-                    "es": "Unauthorized"
+                    "en": "Unauthorized.",
+                    "pt": "Unauthorized.",
+                    "es": "Unauthorized."
                   },
                   "content": {
                     "application/json": {
@@ -789,11 +789,11 @@
                             "type": "string",
                             "enum": [
                               {
-                                "title": "invalid token",
+                                "title": "Invalid token",
                                 "description": {
-                                  "en": "",
-                                  "es": "invalid token",
-                                  "pt": ""
+                                  "en": "Invalid token.",
+                                  "es": "Invalid token.",
+                                  "pt": "Invalid token."
                                 }
                               }
                             ]
@@ -805,8 +805,8 @@
                 }
               },
               "title": {
-                "en": "",
-                "pt": "",
+                "en": "Disable automatic generation",
+                "pt": "Desativar criação automática",
                 "es": "Desactivar generación automática"
               }
             }
@@ -818,18 +818,18 @@
                 "mp-point"
               ],
               "description": {
-                "en": "",
-                "pt": "",
-                "es": "Utilizando el atributo file_name, puedes descargar cualquiera de tus reportes"
+                "en": "Use the 'file_name' attribute, and you can download any of your reports",
+                "pt": "Utilize o atributo 'file_name' e você poderá baixar qualquer um dos seus relatórios",
+                "es": "Utilice el atributo 'file_name' y podrá descargar cualquiera de sus reportes"
               },
               "parameters": [
                 {
                   "name": "file_name",
                   "in": "path",
                   "description": {
-                    "en": "",
-                    "pt": "",
-                    "es": "El parámetro \"file_name\" corresponde al nombre del archivo del reporte que deseas descargar."
+                    "en": "The parameter 'file_name' corresponds to the file name of the report you wish to download.",
+                    "pt": "O parâmetro 'file_name' corresponde ao nome do arquivo do relatório que você deseja baixar.",
+                    "es": "El parámetro 'file_name' corresponde al nombre del archivo del reporte que deseas descargar."
                   },
                   "required": true,
                   "schema": {
@@ -842,8 +842,8 @@
                   "in": "header",
                   "required": true,
                   "description": {
-                    "en": "",
-                    "pt": "",
+                    "en": "Token required for authentication. This field is intended for platforms or modules that offer Mercado Pago in their solutions.",
+                    "pt": "Token necessário para autenticação. Este campo é destinado a plataformas ou módulos que oferecem o Mercado Pago em suas soluções.",
                     "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
                   },
                   "schema": {
@@ -855,18 +855,18 @@
               "responses": {
                 "200": {
                   "description": {
-                    "es": "OK",
-                    "pt": "OK",
-                    "en": "OK"
+                    "es": "Ok.",
+                    "pt": "Ok.",
+                    "en": "Ok."
                   },
                   "content": {
                     "text/plain": {
                       "schema": {
                         "type": "string",
                         "description": {
-                          "en": "",
-                          "pt": "",
-                          "es": "La respuesta del API proporciona los datos del reporte solicitado,La respuesta puede contener varios campos, dependiendo de la naturaleza del reporte y los parámetros proporcionados"
+                          "en": "The API response provides the data for the requested report. The response may contain various fields, depending on the nature of the report and the provided parameters.",
+                          "pt": "A resposta da API fornece os dados do relatório solicitado. A resposta pode conter vários campos, dependendo da natureza do relatório e dos parâmetros fornecidos.",
+                          "es": "La respuesta del API proporciona los datos del reporte solicitado. La respuesta puede contener varios campos, dependiendo de la naturaleza del reporte y los parámetros proporcionados."
                         },
                         "example": "DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,SELLER_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD,TAX_DETAIL,TAX_AMOUNT_TELCO,TRANSACTION_APPROVAL_DATE,POS_ID,POS_NAME,EXTERNAL_POS_ID,STORE_ID,STORE_NAME,EXTERNAL_STORE_ID,TAXES_DISAGGREGATED,METADATA,REFUND_ID"
                       }
@@ -875,9 +875,9 @@
                 },
                 "401": {
                   "description": {
-                    "en": "Unauthorized",
-                    "pt": "Unauthorized",
-                    "es": "Unauthorized"
+                    "en": "Unauthorized.",
+                    "pt": "Unauthorized.",
+                    "es": "Unauthorized."
                   },
                   "content": {
                     "application/json": {
@@ -888,11 +888,11 @@
                             "type": "string",
                             "enum": [
                               {
-                                "title": "invalid token",
+                                "title": "Invalid token",
                                 "description": {
-                                  "en": "",
-                                  "es": "invalid token",
-                                  "pt": ""
+                                  "en": "Invalid token.",
+                                  "es": "Invalid token.",
+                                  "pt": "Invalid token."
                                 }
                               }
                             ]
@@ -904,9 +904,9 @@
                 },
                 "404": {
                   "description": {
-                    "en": "Not Found",
-                    "pt": "Not Found",
-                    "es": "Not Found"
+                    "en": "Not found.",
+                    "pt": "Not found.",
+                    "es": "Not found."
                   },
                   "content": {
                     "application/json": {
@@ -919,9 +919,9 @@
                               {
                                 "title": "not_found",
                                 "description": {
-                                  "en": "",
+                                  "en": "Resource /account/release_report/1234234587/ not found.",
                                   "es": "Resource /account/release_report/1234234587/ not found.",
-                                  "pt": ""
+                                  "pt": "Resource /account/release_report/1234234587/ not found."
                                 }
                               }
                             ]
@@ -933,8 +933,8 @@
                 }
               },
               "title": {
-                "en": "",
-                "pt": "",
+                "en": "Download report",
+                "pt": "Baixar relatório",
                 "es": "Descargar reporte"
               }
             }

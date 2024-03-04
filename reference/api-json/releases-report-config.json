@@ -49,17 +49,17 @@
                           "type": "string",
                           "example": "SOURCE_ID",
                           "description": {
-                            "es": "Nombre de la columna del reporte que se desea presentar en el reporte.",
-                            "pt": "Nome da coluna que se deseja apresentar no relatório.",
-                            "en": "Column name of the report to be displayed in the report."
+                            "es": "Nombre de la columna del reporte que desea mostrar.",
+                            "pt": "Nome da coluna do relatório que você deseja exibir.",
+                            "en": "Name of the report column you wish to display."
                           }
                         }
                       }
                     },
                     "description": {
-                      "en": "Field with details of the columns that will be included in your report. Find all possible values in the Glossary section.",
-                      "pt": "Campo com detalhes das colunas que serão incluídas no seu relatório. Encontre todos os valores possíveis na seção Glossário.",
-                      "es": "Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección Glossário."
+                      "en": "Field with details of the columns to be included in your report. Find all possible values in the Glossary section (https://www.mercadopago.com.co/developers/en/docs/checkout-pro/additional-content/reports/released-money/report-use).",
+                      "pt": "Campo com os detalhes das colunas que serão incluídas no seu relatório. Encontre todos os valores possíveis na seção Glossário (https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/additional-content/reports/released-money/report-use).",
+                      "es": "Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección Glossário (https://www.mercadopago.com.co/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use)."
                     }
                   },
                   "file_name_prefix": {
@@ -76,18 +76,18 @@
                     "type": "object",
                     "required": true,
                     "description": {
-                      "en": "Specify the daily, weekly, or monthly frequency of scheduled reports.",
-                      "pt": "Indique a frequência diária, semanal ou mensal dos relatórios agendados.",
-                      "es": "Indica la frecuencia diaria, semanal o mensual de los reportes programados."
+                      "en": "This field indicates the daily, weekly, or monthly frequency of the scheduled report.",
+                      "pt": "Este campo indica a frequência diária, semanal ou mensal do relatório programado.",
+                      "es": "Este campo indica la frecuencia diaria, semanal o mensual del reporte programado."
                     },
                     "properties": {
                       "hour": {
                         "required": true,
                         "type": "number",
                         "description": {
-                          "en": "Apply the type monthly to the day of the month or weekly to the day of the week.",
-                          "pt": "Aplique o tipo mensal ao dia do mês ou semanal ao dia da semana.",
-                          "es": "Aplica el type monthly al día del mes o weekly al día de la semana."
+                          "en": "This field determines the time of day the report should be generated.",
+                          "pt": "Este campo determina a hora do dia em que o relatório deve ser gerado.",
+                          "es": "Este campo determina la hora del día en que se debe generar el reporte."
                         },
                         "example": 0
                       },
@@ -95,9 +95,9 @@
                         "required": true,
                         "type": "number",
                         "description": {
-                          "en": "Apply the type monthly to the day of the month or weekly to the day of the week.",
-                          "pt": "Aplique o tipo mensal ao dia do mês ou semanal ao dia da semana.",
-                          "es": "Aplica el type monthly al día del mes o weekly al día de la semana."
+                          "en": "This field applies the type monthly to the day of the month or weekly to the day of the week. Example: If the frequency is monthly, the value '1' means that the report will be generated on the first day of each month.",
+                          "pt": "Este campo aplica o type monthly ao dia do mês ou weekly ao dia da semana. Exemplo: Dado que a frequência é mensal, o valor '1' significa que o relatório será gerado no primeiro dia de cada mês.",
+                          "es": "Este campo aplica el type monthly al día del mes o weekly al día de la semana. Ejemplo: Dado que la frecuencia es mensual, el valor '1' significa que el informe se generará el primer día de cada mes."
                         },
                         "example": 1
                       },
@@ -105,9 +105,9 @@
                         "required": true,
                         "type": "string",
                         "description": {
-                          "en": "Indicate the type of frequency: daily, weekly, and monthly.",
-                          "pt": "Indique o tipo de frequência: daily (diária), weekly (semanal) e monthly (mensal).",
-                          "es": "Indica el tipo de frecuencia: daily (diaria), weekly (semanal) y monthly (mensual)."
+                          "en": "This field indicates the type of frequency: daily, weekly, and monthly.",
+                          "pt": "Este campo indica o tipo de frequência: daily (diária), weekly (semanal) e monthly (mensal).",
+                          "es": "Este campo indica el tipo de frecuencia: daily (diária), weekly (semanal) e monthly (mensal)."
                         },
                         "example": "monthly"
                       }
@@ -117,9 +117,9 @@
                     "type": "object",
                     "required": false,
                     "description": {
-                      "en": "Provide the necessary connection data so that we can access your server.",
-                      "pt": "Forneça os dados de conexão necessários para que possamos acessar seu servidor.",
-                      "es": "Proporciona los datos de conexión necesarios para que podamos acceder a tu servidor."
+                      "en": "This field provides the necessary connection data so that we can access your server.",
+                      "pt": "Este campo fornece os dados de conexão necessários para que possamos acessar seu servidor.",
+                      "es": "Este campo proporciona los datos de conexión necesarios para que podamos acceder a tu servidor."
                     },
                     "properties": {
                       "server": {
@@ -143,9 +143,9 @@
                       "remote_dir": {
                         "type": "string",
                         "description": {
-                          "en": "Folder where we will deposit your reports.",
-                          "pt": "Pasta onde depositaremos seus relatórios.",
-                          "es": "Carpeta en la que depositaremos tus reportes."
+                          "en": "Folder where your reports will be saved.",
+                          "pt": "Pasta onde serão salvos seus relatórios.",
+                          "es": "Carpeta donde se guardarán sus reportes."
                         },
                         "example": "/myfolder"
                       },
@@ -193,9 +193,9 @@
                     "type": "string",
                     "required": false,
                     "description": {
-                      "en": "Allows changing the default language of column headers. If enabled, it is recommended to verify that integrations with Excel files (.xlsx) that allow automatic reconciliation are working correctly. If the integration is not working well, make sure to update it using the new headers as a reference.\n\nSupported languages:\n\nen: English\nes: Neutral spanish\npt: Portuguese\n",
-                      "pt": "Permite alterar o idioma padrão dos cabeçalhos das colunas. Se ativado, é recomendável verificar se as integrações com arquivos do Excel (.xlsx) que permitem reconciliação automática estão funcionando corretamente. Se a integração não estiver funcionando bem, certifique-se de atualizá-la usando os novos cabeçalhos como referência.\n\nIdiomas suportador:\n\nen: Inglês\nes: Espanhol neutro\npt: Português\n",
-                      "es": "Permite cambiar el idioma predeterminado de los encabezados de las columnas. En caso de habilitarlo, se recomienda verificar que funcionen correctamente las integraciones con archivos de Excel (.xlsx) que permiten conciliar de forma automática.\n\nSi la integración no funciona bien, asegúrate de actualizarla tomando como referencia los nuevos encabezados.\n\nIdiomas soportados:\n\nen: Inglés\nes: Español neutro\npt: Portugués\n"
+                      "en": "This field allows changing the default language of column headers. If enabled, it is recommended to verify that integrations with Excel files (.xlsx) that allow automatic reconciliation are working correctly. If the integration is not working well, make sure to update it using the new headers as a reference.\n\nSupported languages:\n\nen (english),\nes (neutral spanish) e\npt (portuguese).\n",
+                      "pt": "Este campo permite alterar o idioma padrão dos cabeçalhos das colunas. Se ativado, é recomendável verificar se as integrações com arquivos do Excel (.xlsx) que permitem reconciliação automática estão funcionando corretamente. Se a integração não estiver funcionando bem, certifique-se de atualizá-la usando os novos cabeçalhos como referência.\n\nIdiomas suportados:\n\nen (inglês),\nes (espanhol neutro) e \npt (português).\n",
+                      "es": "Este campo permite cambiar el idioma predeterminado de los encabezados de las columnas. En caso de habilitarlo, se recomienda verificar que funcionen correctamente las integraciones con archivos de Excel (.xlsx) que permiten conciliar de forma automática.\n\nSi la integración no funciona bien, asegúrate de actualizarla tomando como referencia los nuevos encabezados.\n\nIdiomas soportados:\n\nen (inglés),\nes (español neutro) e\npt (portugués).\n"
                     },
                     "example": "es"
                   },
@@ -205,9 +205,9 @@
                     "items": {
                       "type": "object",
                       "description": {
-                        "en": "Allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
-                        "pt": "Permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
-                        "es": "Permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                        "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
+                        "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
+                        "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
                       },
                       "properties": {
                         "email": {
@@ -227,7 +227,7 @@
                     "required": false,
                     "description": {
                       "en": "Display the refund's reference code (external_reference) instead of the payment's reference code (external_reference).",
-                      "pt": "Mostre o código de referência do reembolso (external_reference) em vez do código de referência do pagamento (external_reference).",
+                      "pt": "Mostra o código de referência do reembolso (external_reference) em vez do código de referência do pagamento (external_reference).",
                       "es": "Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago."
                     },
                     "example": true
@@ -236,9 +236,9 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "Include money withdrawals in the report.",
-                      "pt": "Inclua os saques de dinheiro no relatório.",
-                      "es": "Incluye los retiros de dinero en el reporte."
+                      "en": "This field includes money withdrawals in the report.",
+                      "pt": "Este campo inclui os saques de dinheiro no relatório.",
+                      "es": "Este campo incluye retiros de dinero en el informe."
                     },
                     "example": true
                   },
@@ -246,9 +246,9 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "Add a column to display the details of the discount coupons.",
-                      "pt": "Adicione uma coluna para mostrar os detalhes dos cupons de desconto.",
-                      "es": "Suma una columna para mostrar el detalle de los cupones de descuento."
+                      "en": "This field adds a column to display the details of the discount coupons.",
+                      "pt": "Este campo adiciona uma coluna para mostrar os detalhes dos cupons de desconto.",
+                      "es": "Este campo añade una columna para mostrar el detalle de los cupones de descuento."
                     },
                     "example": true
                   },
@@ -256,9 +256,9 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "Balance before and after making a withdrawal that explains the account balance. (This setting is for informational purposes only. It should be excluded for balance and/or account balance checks.)",
-                      "pt": "Saldo antes e depois de realizar um saque que explica o saldo da conta. (Essa configuração é apenas informativa. Deve ser excluída para verificações de saldo e/ou saldo da conta.)",
-                      "es": "Saldo antes y después de realizar un retiro de dinero que explica el balance de la cuenta. (Esta configuración es solo informativa. Debe excluirse para comprobaciones del balance y/o saldo de cuenta.)"
+                      "en": "Balance before and after making a withdrawal that explains the account balance. This setting is for informational purposes only. It should be excluded for balance and/or account balance checks.",
+                      "pt": "Saldo antes e depois de realizar um saque que explica o saldo da conta. Essa configuração é apenas informativa. Deve ser excluída para verificações de saldo e/ou saldo da conta.",
+                      "es": "Saldo antes y después de realizar un retiro de dinero que explica el balance de la cuenta. Esta configuración es solo informativa. Debe excluirse para comprobaciones del balance y/o saldo de cuenta."
                     },
                     "example": true
                   },
@@ -276,9 +276,9 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "The API will respond with a JSON structure whose properties will represent the configuration you have created.",
-                      "pt": "A API responderá com uma estrutura JSON cujas propriedades representarão a configuração que você criou.",
-                      "es": "El API responderá con una estructura JSON cuyas propiedades representarán la configuración que has creado."
+                      "en": "Informative field indicating whether there are already scheduled reports in the user's account. True: Automatic generation is enabled; false: Automatic generation is disabled.",
+                      "pt": "Campo informativo que indica se já existem relatórios programados na conta do usuário. True: A criação automática está ativada; false: A criação automática está desativada.",
+                      "es": "Campo informativo que indica si ya existen reportes programados en la cuenta del usuario. True: La generación automática está activada; false: La generación automática está desactivada."
                     },
                     "example": true
                   }
@@ -300,7 +300,7 @@
                   "description": {
                     "en": "The API will respond with a JSON structure whose properties will represent the configuration you have created.",
                     "pt": "A API responderá com uma estrutura JSON cujas propriedades representarão a configuração que você criou.",
-                    "es": "El API responderá con una estructura JSON cuyas propiedades representarán la configuración que has creado."
+                    "es": "La API responderá con una estructura JSON cuyas propiedades representarán la configuración que has creado."
                   },
                   "type": "object",
                   "properties": {
@@ -319,9 +319,9 @@
                       "items": {
                         "type": "object",
                         "description": {
-                          "es": "Grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar.",
-                          "pt": "Grupo de destinatários de e-mail para receber uma notificação quando um relatório estiver pronto e disponível para download.",
-                          "en": "Email recipient group to receive a notification when a report is ready and available for download."
+                          "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
+                          "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
+                          "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
                         },
                         "properties": {
                           "email": {
@@ -339,18 +339,18 @@
                     "display_timezone": {
                       "type": "string",
                       "description": {
-                        "es": "Determina la fecha y la hora que se visualiza en los reporte.",
-                        "pt": "Determine a data e a hora exibidas nos relatórios.",
-                        "en": "Determine the date and time displayed in the reports."
+                        "en": "This field determines the date and time displayed in the reports. If you do not configure this field with a time zone, the system will default to GMT-04. If you choose a time zone that observes daylight saving time, it is necessary to make manual adjustments when the time changes.",
+                        "pt": "Este campo determina a data e a hora que são exibidas nos relatórios. Se você não configurar este campo com um fuso horário, por padrão, o sistema usará o valor GMT-04. Se escolher um fuso horário que utiliza horário de verão, será necessário fazer ajustes manuais quando houver mudanças no horário.",
+                        "es": "Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora."  
                       },
                       "example": "GMT-04"
                     },
                     "include_withdrawal_at_end": {
                       "type": "boolean",
                       "description": {
-                        "es": "Indica si se deben incluir las transacciones de retiro que ocurran al final del intervalo de fechas especificado en el reporte.",
-                        "pt": "Indica se devem ser incluídas as transações de saque que ocorram no final do intervalo de datas especificado no relatório.",
-                        "en": "Indicate whether withdrawal transactions occurring at the end of the specified date range in the report should be included."
+                        "es": "Este campo indica si deben incluirse las transacciones de retiro realizadas al final del intervalo de fechas especificado en el reporte.",
+                        "pt": "Este campo indica se as transações de saque realizadas no final do intervalo de datas especificado no relatório devem ser incluídas.",
+                        "en": "This field indicates whether withdrawal transactions made at the end of the specified date range in the report should be included."
                       },
                       "example": true
                     },
@@ -358,7 +358,7 @@
                       "type": "boolean",
                       "description": {
                         "es": "Indica si el reporte es programado.",
-                        "pt": "Indique se o relatório está agendado.",
+                        "pt": "Indique se o relatório é programado.",
                         "en": "Indicate if the report is scheduled."
                       },
                       "example": false
@@ -367,8 +367,8 @@
                       "type": "boolean",
                       "description": {
                         "es": "Este parámetro controla si el reporte se ejecutará después de que se realice un retiro.",
-                        "pt": "Este parâmetro controla se o relatório será executado após um saque ser realizado.",
-                        "en": "This parameter controls whether the report will run after a withdrawal is made."
+                        "pt": "Este parâmetro determina se o relatório será executado após a realização de um saque.",
+                        "en": "This parameter determines whether the report will be executed after a withdrawal is made."
                       },
                       "example": false
                     },
@@ -382,9 +382,9 @@
                             "type": "string",
                             "example": "SOURCE_ID",
                             "description": {
-                              "es": "Nombre de la columna del reporte que se desea presentar en el reporte.",
-                              "pt": "Nome da coluna do relatório que deseja apresentar no relatório.",
-                              "en": "Name of the column in the report that you want to display in the report."
+                              "es": "Nombre de la columna del reporte que desea mostrar.",
+                              "pt": "Nome da coluna do relatório que você deseja exibir.",
+                              "en": "Name of the report column you wish to display."
                             }
                           }
                         }
@@ -408,18 +408,18 @@
                       "type": "object",
                       "required": true,
                       "description": {
-                        "en": "Indicate the daily, weekly, or monthly frequency of the scheduled report.",
-                        "pt": "Indique a frequência diária, semanal ou mensal do relatório programado.",
-                        "es": "Indica la frecuencia diaria, semanal o mensual del reporte programado."
+                        "en": "This field indicates the daily, weekly, or monthly frequency of the scheduled report.",
+                        "pt": "Este campo indica a frequência diária, semanal ou mensal do relatório programado.",
+                        "es": "Este campo indica la frecuencia diaria, semanal o mensual del informe programado."
                       },
                       "properties": {
                         "hour": {
                           "required": true,
                           "type": "number",
                           "description": {
-                            "en": "Time of day to generate the report.",
-                            "pt": "Horário do dia para gerar o relatório.",
-                            "es": "Hora del día en la que generar el reporte."
+                            "en": "This field determines the time of day the report should be generated.",
+                            "pt": "Este campo determina a hora do dia em que o relatório deve ser gerado.",
+                            "es": "Este campo determina la hora del día en que se debe generar el reporte."
                           },
                           "example": 0
                         },
@@ -427,9 +427,9 @@
                           "required": true,
                           "type": "number",
                           "description": {
-                            "en": "Apply type monthly to the day of the month or weekly to the day of the week.",
-                            "pt": "Aplique o type monthly ao dia do mês ou weekly ao dia da semana.",
-                            "es": "Aplica type monthly al día del mes o weekly al día de la semana."
+                            "en": "This field applies the type monthly to the day of the month or weekly to the day of the week. Example: If the frequency is monthly, the value '1' means that the report will be generated on the first day of each month.",
+                            "pt": "Este campo aplica o type monthly ao dia do mês ou weekly ao dia da semana. Exemplo: Dado que a frequência é mensal, o valor '1' significa que o relatório será gerado no primeiro dia de cada mês.",
+                            "es": "Este campo aplica el type monthly al día del mes o weekly al día de la semana. Ejemplo: Dado que la frecuencia es mensual, el valor '1' significa que el informe se generará el primer día de cada mes."
                           },
                           "example": 1
                         },
@@ -437,9 +437,9 @@
                           "required": true,
                           "type": "string",
                           "description": {
-                            "en": "Indicate the type of frequency: daily, weekly, and monthly.",
-                            "pt": "Indique o tipo de frequência: daily (diária), weekly (semanal) e monthly (mensal).",
-                            "es": "Indica el tipo de frecuencia: daily (diaria), weekly (semanal) y monthly (mensual)."
+                            "en": "This field indicates the type of frequency: daily, weekly, and monthly.",
+                            "pt": "Este campo indica o tipo de frequência: daily (diária), weekly (semanal) e monthly (mensal).",
+                            "es": "Este campo indica el tipo de frecuencia: daily (diária), weekly (semanal) e monthly (mensal)."
                           },
                           "example": "monthly"
                         }
@@ -614,9 +614,9 @@
           "mp-point"
         ],
         "description": {
-          "en": "",
-          "pt": "",
-          "es": "Actualiza las configuraciones predeterminadas de tus reportes cuando sea necesario."
+          "en": "This endpoint updates the default settings of your reports when necessary",
+          "pt": "Este endpoint atualiza as configurações padrão dos seus relatórios quando necessário",
+          "es": "Este endpoint actualiza las configuraciones predeterminadas de tus informes cuando sea necesario"
         },
         "parameters": [
           {
@@ -624,8 +624,8 @@
             "in": "header",
             "required": true,
             "description": {
-              "en": "",
-              "pt": "",
+              "en": "Token required for authentication. This field is intended for platforms or modules that offer Mercado Pago in their solutions.",
+              "pt": "Token necessário para autenticação. Este campo é destinado a plataformas ou módulos que oferecem o Mercado Pago em suas soluções.",
               "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
             },
             "schema": {
@@ -636,9 +636,9 @@
         ],
         "requestBody": {
           "description": {
-            "en": "",
-            "pt": "",
-            "es": "Estos son los campos necesarios para la actulizacion de una configuracion para el reportes de liberacion"
+            "en": "These are the necessary fields for updating a configuration for the Releases Report.",
+            "pt": "Estes são os campos necessários para a atualização de uma configuração para o Relatório de Liberações.",
+            "es": "Estos son los campos necesarios para la actulizacion de una configuracion para el Reportes de Liberaciones."
           },
           "content": {
             "application/json": {
@@ -655,25 +655,25 @@
                           "type": "string",
                           "example": "SOURCE_ID",
                           "description": {
-                            "es": "Nombre de la columna del reporte  que se desea presentar en el reporte.",
-                            "pt": "",
-                            "en": ""
+                            "es": "Nombre de la columna del reporte que desea mostrar.",
+                            "pt": "Nome da coluna do relatório que você deseja exibir.",
+                            "en": "Name of the report column you wish to display."
                           }
                         }
                       }
                     },
                     "description": {
-                      "en": "",
-                      "pt": "",
-                      "es": "Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección Glossário -> https://www.mercadopago.com.co/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use"
+                      "en": "Field with details of the columns to be included in your report. Find all possible values in the Glossary section (https://www.mercadopago.com.co/developers/en/docs/checkout-pro/additional-content/reports/released-money/report-use).",
+                      "pt": "Campo com os detalhes das colunas que serão incluídas no seu relatório. Encontre todos os valores possíveis na seção Glossário (https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/additional-content/reports/released-money/report-use).",
+                      "es": "Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección Glossário (https://www.mercadopago.com.co/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use)."
                     }
                   },
                   "file_name_prefix": {
                     "type": "string",
                     "required": true,
                     "description": {
-                      "en": "",
-                      "pt": "",
+                      "en": "Prefix that makes up the name of the report once generated and ready for download.",
+                      "pt": "Prefixo que compõe o nome do relatório uma vez gerado e pronto para download.",
                       "es": "Prefijo que compone el nombre del reporte una vez generado y listo para descargar."
                     },
                     "example": "conciliation-settlement-report"
@@ -682,18 +682,18 @@
                     "type": "object",
                     "required": true,
                     "description": {
-                      "en": "",
-                      "pt": "",
-                      "es": "Indica la frecuencia diaria, semanal o mensual de los reportes programados."
+                      "en": "This field indicates the daily, weekly, or monthly frequency of the scheduled report.",
+                      "pt": "Este campo indica a frequência diária, semanal ou mensal do relatório programado.",
+                      "es": "Este campo indica la frecuencia diaria, semanal o mensual del reporte programado."
                     },
                     "properties": {
                       "hour": {
                         "required": true,
                         "type": "number",
                         "description": {
-                          "en": "",
-                          "pt": "",
-                          "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                          "en": "This field determines the time of day the report should be generated.",
+                          "pt": "Este campo determina a hora do dia em que o relatório deve ser gerado.",
+                          "es": "Este campo determina la hora del día en que se debe generar el reporte."
                         },
                         "example": 0
                       },
@@ -701,9 +701,9 @@
                         "required": true,
                         "type": "number",
                         "description": {
-                          "en": "",
-                          "pt": "",
-                          "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                          "en": "This field applies the type monthly to the day of the month or weekly to the day of the week. Example: If the frequency is monthly, the value '1' means that the report will be generated on the first day of each month.",
+                          "pt": "Este campo aplica o type monthly ao dia do mês ou weekly ao dia da semana. Exemplo: Dado que a frequência é mensal, o valor '1' significa que o relatório será gerado no primeiro dia de cada mês.",
+                          "es": "Este campo aplica el type monthly al día del mes o weekly al día de la semana. Ejemplo: Dado que la frecuencia es mensual, el valor '1' significa que el informe se generará el primer día de cada mes."
                         },
                         "example": 1
                       },
@@ -711,9 +711,9 @@
                         "required": true,
                         "type": "string",
                         "description": {
-                          "en": "",
-                          "pt": "",
-                          "es": "indica el tipo de frecuencia: daily (diaria), weekly (semanal) y monthly (mensual)"
+                          "en": "This field indicates the type of frequency: daily, weekly, and monthly.",
+                          "pt": "Este campo indica o tipo de frequência: daily (diária), weekly (semanal) e monthly (mensal).",
+                          "es": "Este campo indica el tipo de frecuencia: daily (diária), weekly (semanal) e monthly (mensal)."
                         },
                         "example": "monthly"
                       }
@@ -723,25 +723,25 @@
                     "type": "object",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
-                      "es": "Proporciona los datos de conexión necesarios para que podamos acceder a tu servidor."
+                      "en": "This field provides the necessary connection data so that we can access your server.",
+                      "pt": "Este campo fornece os dados de conexão necessários para que possamos acessar seu servidor.",
+                      "es": "Este campo proporciona los datos de conexión necesarios para que podamos acceder a tu servidor."
                     },
                     "properties": {
                       "server": {
                         "type": "string",
                         "description": {
-                          "en": "",
-                          "pt": "",
-                          "es": "URL o dirección IP (Pública) del servidor"
+                          "en": "URL or IP address (public) of the server.",
+                          "pt": "URL ou endereço IP (público) do servidor.",
+                          "es": "URL o dirección IP (pública) del servidor."
                         },
                         "example": "sftp.myserver.com"
                       },
                       "password": {
                         "type": "string",
                         "description": {
-                          "en": "",
-                          "pt": "",
+                          "en": "User password with which we will establish the connection.",
+                          "pt": "Senha do usuário com o qual estabeleceremos a conexão.",
                           "es": "Contraseña del usuario con el cual estableceremos la conexión."
                         },
                         "example": "mypassword"
@@ -749,26 +749,26 @@
                       "remote_dir": {
                         "type": "string",
                         "description": {
-                          "en": "",
-                          "pt": "",
-                          "es": "Carpeta en la que depositaremos tus reportes."
+                          "en": "Folder where your reports will be saved.",
+                          "pt": "Pasta onde serão salvos seus relatórios.",
+                          "es": "Carpeta donde se guardarán sus reportes."
                         },
                         "example": "/myfolder"
                       },
                       "port": {
                         "type": "number",
                         "description": {
-                          "en": "",
-                          "pt": "",
-                          "es": "Puerto empleado para establecer la conexión"
+                          "en": "Port used to establish the connection.",
+                          "pt": "Porta usada para estabelecer a conexão.",
+                          "es": "Puerto empleado para establecer la conexión."
                         },
                         "example": 22
                       },
                       "username": {
                         "type": "string",
                         "description": {
-                          "en": "",
-                          "pt": "",
+                          "en": "User with whom we will authenticate on your server.",
+                          "pt": "Usuário com o qual faremos autenticação em seu servidor.",
                           "es": "Usuario con el cual nos autenticaremos en tu servidor."
                         },
                         "example": "username"
@@ -779,8 +779,8 @@
                     "type": "string",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
+                      "en": "Separator that you can use in the .csv file when you don't want the separator to be a comma.",
+                      "pt": "Separador que você pode usar no arquivo .csv quando não desejar que o separador seja uma vírgula.",
                       "es": "Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma."
                     },
                     "example": ";"
@@ -789,8 +789,8 @@
                     "type": "string",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
+                      "en": "This field determines the date and time displayed in the reports. If you do not configure this field with a time zone, the system will default to GMT-04. If you choose a time zone that observes daylight saving time, it is necessary to make manual adjustments when the time changes.",
+                      "pt": "Este campo determina a data e a hora que são exibidas nos relatórios. Se você não configurar este campo com um fuso horário, por padrão, o sistema usará o valor GMT-04. Se escolher um fuso horário que utiliza horário de verão, será necessário fazer ajustes manuais quando houver mudanças no horário.",
                       "es": "Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora."
                     },
                     "example": "GMT-04"
@@ -799,9 +799,9 @@
                     "type": "string",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
-                      "es": "Permite cambiar el idioma predeterminado de los encabezados de las columnas. En caso de habilitarlo, se recomienda verificar que funcionen correctamente las integraciones con archivos de Excel (.xlsx) que permiten conciliar de forma automática.\n\nSi la integración no funciona bien, asegúrate de actualizarla tomando como referencia los nuevos encabezados.\n\nIdiomas soportados:\n\nen: Inglés\nes: Español neutro\npt: Portugués\n"
+                      "en": "This field allows changing the default language of column headers. If enabled, it is recommended to verify that integrations with Excel files (.xlsx) that allow automatic reconciliation are working correctly. If the integration is not working well, make sure to update it using the new headers as a reference.\n\nSupported languages:\n\nen (english),\nes (neutral spanish) e\npt (portuguese).\n",
+                      "pt": "Este campo permite alterar o idioma padrão dos cabeçalhos das colunas. Se ativado, é recomendável verificar se as integrações com arquivos do Excel (.xlsx) que permitem reconciliação automática estão funcionando corretamente. Se a integração não estiver funcionando bem, certifique-se de atualizá-la usando os novos cabeçalhos como referência.\n\nIdiomas suportados:\n\nen (inglês),\nes (espanhol neutro) e \npt (português).\n",
+                      "es": "Este campo permite cambiar el idioma predeterminado de los encabezados de las columnas. En caso de habilitarlo, se recomienda verificar que funcionen correctamente las integraciones con archivos de Excel (.xlsx) que permiten conciliar de forma automática.\n\nSi la integración no funciona bien, asegúrate de actualizarla tomando como referencia los nuevos encabezados.\n\nIdiomas soportados:\n\nen (inglés),\nes (español neutro) e\npt (portugués).\n"
                     },
                     "example": "es"
                   },
@@ -811,17 +811,17 @@
                     "items": {
                       "type": "object",
                       "description": {
-                        "en": "",
-                        "pt": "",
+                        "en": "Allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
+                        "pt": "Permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
                         "es": "Permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
                       },
                       "properties": {
                         "email": {
                           "type": "string",
                           "description": {
-                            "en": "",
-                            "pt": "",
-                            "es": "correos electrónicos"
+                            "en": "Emails.",
+                            "pt": "E-mails.",
+                            "es": "Correos electrónicos."
                           },
                           "example": "example@email.com"
                         }
@@ -832,8 +832,8 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
+                      "en": "Display the refund's reference code (external_reference) instead of the payment's reference code (external_reference).",
+                      "pt": "Mostra o código de referência do reembolso (external_reference) em vez do código de referência do pagamento (external_reference).",
                       "es": "Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago."
                     },
                     "example": true
@@ -842,9 +842,9 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
-                      "es": "Incluye los retiros de dinero en el reporte."
+                      "en": "This field includes money withdrawals in the report.",
+                      "pt": "Este campo inclui os saques de dinheiro no relatório.",
+                      "es": "Este campo incluye retiros de dinero en el informe."
                     },
                     "example": true
                   },
@@ -852,9 +852,9 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
-                      "es": "Suma una columna para mostrar el detalle de los cupones de descuento."
+                      "en": "This field adds a column to display the details of the discount coupons.",
+                      "pt": "Este campo adiciona uma coluna para mostrar os detalhes dos cupons de desconto.",
+                      "es": "Este campo añade una columna para mostrar el detalle de los cupones de descuento."
                     },
                     "example": true
                   },
@@ -862,9 +862,9 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
-                      "es": "(read_only) Saldo antes y después de realizar un retiro de dinero que explica el balance de la cuenta. (Esta configuración es solo informativa. Debe excluirse para comprobaciones del balance y/o saldo de cuenta)"
+                      "en": "Balance before and after making a withdrawal that explains the account balance. This setting is for informational purposes only. It should be excluded for balance and/or account balance checks.",
+                      "pt": "Saldo antes e depois de realizar um saque que explica o saldo da conta. Essa configuração é apenas informativa. Deve ser excluída para verificações de saldo e/ou saldo da conta.",
+                      "es": "Saldo antes y después de realizar un retiro de dinero que explica el balance de la cuenta. Esta configuración es solo informativa. Debe excluirse para comprobaciones del balance y/o saldo de cuenta."
                     },
                     "example": true
                   },
@@ -872,8 +872,8 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
+                      "en": "Locks and unlocks of money that offset each other and do not affect the final balance. Helps understand how the final balance of the report is formed in a chronological reading (recommended if you have a high volume of transactions).",
+                      "pt": "Bloqueios e desbloqueios de dinheiro que se compensam entre si e não afetam o saldo final. Ajuda a entender como o saldo final do relatório é formado em uma leitura cronológica (recomendado se você tiver um volume alto de transações).",
                       "es": "Bloqueos y desbloqueos de dinero que se compensan entre sí y que no afectan el saldo final. Ayuda a entender cómo se conforma el balance final del reporte, en una lectura cronológica (recomendado si tienes un volumen alto de transacciones)."
                     },
                     "example": true
@@ -882,9 +882,9 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "",
-                      "pt": "",
-                      "es": "Campo informativo que indica si ya existen reportes programados en la cuenta del usuario.\n- True: La generación automática está activada. - False: La generación automática está desactivada."
+                      "en": "Informative field indicating whether there are already scheduled reports in the user's account. True: Automatic generation is enabled; false: Automatic generation is disabled.",
+                      "pt": "Campo informativo que indica se já existem relatórios programados na conta do usuário. True: A criação automática está ativada; false: A criação automática está desativada.",
+                      "es": "Campo informativo que indica si ya existen reportes programados en la cuenta del usuario. True: La generación automática está activada; false: La generación automática está desactivada."
                     },
                     "example": true
                   }
@@ -896,25 +896,25 @@
         "responses": {
           "200": {
             "description": {
-              "en": "ok",
-              "pt": "",
-              "es": "ok"
+              "en": "Ok.",
+              "pt": "Ok.",
+              "es": "Ok."
             },
             "content": {
               "application/json": {
                 "schema": {
                   "description": {
-                    "en": "",
-                    "pt": "",
-                    "es": "El API responderá con una estructura JSON cuyas propiedades representarán la configuración que has actualizado"
+                    "en": "The API will respond with a JSON structure whose properties will represent the configuration you have created.",
+                    "pt": "A API responderá com uma estrutura JSON cujas propriedades representarão a configuração que você criou.",
+                    "es": "La API responderá con una estructura JSON cuyas propiedades representarán la configuración que has creado."
                   },
                   "type": "object",
                   "properties": {
                     "file_name_prefix": {
                       "type": "string",
                       "description": {
-                        "en": "",
-                        "pt": "",
+                        "en": "Prefix that makes up the name of the report once generated and ready for download.",
+                        "pt": "Prefixo que compõe o nome do relatório uma vez gerado e pronto para download.",
                         "es": "Prefijo que compone el nombre del reporte una vez generado y listo para descargar."
                       },
                       "example": "release-report-USER_ID"
@@ -925,17 +925,17 @@
                       "items": {
                         "type": "object",
                         "description": {
-                          "en": "",
-                          "pt": "",
-                          "es": "Permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                          "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
+                          "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
+                          "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
                         },
                         "properties": {
                           "email": {
                             "type": "string",
                             "description": {
-                              "en": "",
-                              "pt": "",
-                              "es": "correos electrónicos"
+                              "en": "Emails.",
+                              "pt": "E-mails.",
+                              "es": "Correos electrónicos."
                             },
                             "example": "example@email.com"
                           }
@@ -945,36 +945,36 @@
                     "display_timezone": {
                       "type": "string",
                       "description": {
-                        "es": "Determina la fecha y la hora que se visualiza en los reportes",
-                        "pt": "",
-                        "en": ""
+                        "en": "This field determines the date and time displayed in the reports. If you do not configure this field with a time zone, the system will default to GMT-04. If you choose a time zone that observes daylight saving time, it is necessary to make manual adjustments when the time changes.",
+                        "pt": "Este campo determina a data e a hora que são exibidas nos relatórios. Se você não configurar este campo com um fuso horário, por padrão, o sistema usará o valor GMT-04. Se escolher um fuso horário que utiliza horário de verão, será necessário fazer ajustes manuais quando houver mudanças no horário.",
+                        "es": "Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora."
                       },
                       "example": "GMT-04"
                     },
                     "include_withdrawal_at_end": {
                       "type": "boolean",
                       "description": {
-                        "es": "indica si se deben incluir las transacciones de retiro que ocurran al final del intervalo de fechas especificado en el reporte",
-                        "pt": "",
-                        "en": ""
+                        "es": "Este campo indica si deben incluirse las transacciones de retiro realizadas al final del intervalo de fechas especificado en el reporte.",
+                        "pt": "Este campo indica se as transações de saque realizadas no final do intervalo de datas especificado no relatório devem ser incluídas.",
+                        "en": "This field indicates whether withdrawal transactions made at the end of the specified date range in the report should be included."
                       },
                       "example": true
                     },
                     "scheduled": {
                       "type": "boolean",
                       "description": {
-                        "es": "Indica si ya existen reportes programados en la cuenta del usuario.",
-                        "pt": "",
-                        "en": ""
+                        "en": "Informative field indicating whether there are already scheduled reports in the user's account. True: Automatic generation is enabled; false: Automatic generation is disabled.",
+                        "pt": "Campo informativo que indica se já existem relatórios programados na conta do usuário. True: A criação automática está ativada; false: A criação automática está desativada.",
+                        "es": "Campo informativo que indica si ya existen reportes programados en la cuenta del usuario. True: La generación automática está activada; false: La generación automática está desactivada."
                       },
                       "example": false
                     },
                     "execute_after_withdrawal": {
                       "type": "boolean",
                       "description": {
-                        "es": "parámetro controla si el reporte se ejecutará después de que se realice un retiro",
-                        "pt": "",
-                        "en": ""
+                        "es": "Este parámetro controla si el reporte se ejecutará después de que se realice un retiro.",
+                        "pt": "Este parâmetro determina se o relatório será executado após a realização de um saque.",
+                        "en": "This parameter determines whether the report will be executed after a withdrawal is made."
                       },
                       "example": false
                     },
@@ -988,25 +988,25 @@
                             "type": "string",
                             "example": "SOURCE_ID",
                             "description": {
-                              "es": "Nombre de la columna del reporte  que se desea presentar en el reporte.",
-                              "pt": "",
-                              "en": ""
+                              "es": "Nombre de la columna del reporte que desea mostrar.",
+                              "pt": "Nome da coluna do relatório que você deseja exibir.",
+                              "en": "Name of the report column you wish to display."
                             }
                           }
                         }
                       },
                       "description": {
-                        "en": "",
-                        "pt": "",
-                        "es": "Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección Glossário -> https://www.mercadopago.com.co/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use"
+                        "en": "Field with details of the columns to be included in your report. Find all possible values in the Glossary section (https://www.mercadopago.com.co/developers/en/docs/checkout-pro/additional-content/reports/released-money/report-use).",
+                        "pt": "Campo com os detalhes das colunas que serão incluídas no seu relatório. Encontre todos os valores possíveis na seção Glossário (https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/additional-content/reports/released-money/report-use).",
+                        "es": "Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección Glossário (https://www.mercadopago.com.co/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use)."
                       }
                     },
                     "report_translation": {
                       "type": "string",
                       "description": {
-                        "es": "Idioma configurado del reporte",
-                        "pt": "",
-                        "en": ""
+                        "es": "Idioma configurado del reporte.",
+                        "pt": "Idioma configurado do relatório.",
+                        "en": "Configured language of the report."
                       },
                       "example": "es"
                     },
@@ -1014,18 +1014,18 @@
                       "type": "object",
                       "required": true,
                       "description": {
-                        "en": "",
-                        "pt": "",
-                        "es": "Indica la frecuencia diaria, semanal o mensual del reporte programado."
+                        "en": "This field indicates the daily, weekly, or monthly frequency of the scheduled report.",
+                        "pt": "Este campo indica a frequência diária, semanal ou mensal do relatório programado.",
+                        "es": "Este campo indica la frecuencia diaria, semanal o mensual del reporte programado."
                       },
                       "properties": {
                         "hour": {
                           "required": true,
                           "type": "number",
                           "description": {
-                            "en": "",
-                            "pt": "",
-                            "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                            "en": "This field determines the time of day the report should be generated.",
+                            "pt": "Este campo determina a hora do dia em que o relatório deve ser gerado.",
+                            "es": "Este campo determina la hora del día en que se debe generar el reporte."
                           },
                           "example": 0
                         },
@@ -1033,9 +1033,9 @@
                           "required": true,
                           "type": "number",
                           "description": {
-                            "en": "",
-                            "pt": "",
-                            "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                            "en": "This field applies the type monthly to the day of the month or weekly to the day of the week. Example: If the frequency is monthly, the value '1' means that the report will be generated on the first day of each month.",
+                            "pt": "Este campo aplica o type monthly ao dia do mês ou weekly ao dia da semana. Exemplo: Dado que a frequência é mensal, o valor '1' significa que o relatório será gerado no primeiro dia de cada mês.",
+                            "es": "Este campo aplica el type monthly al día del mes o weekly al día de la semana. Ejemplo: Dado que la frecuencia es mensual, el valor '1' significa que el informe se generará el primer día de cada mes."
                           },
                           "example": 1
                         },
@@ -1043,9 +1043,9 @@
                           "required": true,
                           "type": "string",
                           "description": {
-                            "en": "",
-                            "pt": "",
-                            "es": "indica el tipo de frecuencia: daily (diaria), weekly (semanal) y monthly (mensual)"
+                            "en": "This field indicates the type of frequency: daily, weekly, and monthly.",
+                            "pt": "Este campo indica o tipo de frequência: daily (diária), weekly (semanal) e monthly (mensal).",
+                            "es": "Este campo indica el tipo de frecuencia: daily (diária), weekly (semanal) e monthly (mensal)."
                           },
                           "example": "monthly"
                         }
@@ -1058,9 +1058,9 @@
           },
           "400": {
             "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
             },
             "content": {
               "application/json": {
@@ -1073,73 +1073,73 @@
                         {
                           "title": "Invalid file_name_prefix",
                           "description": {
-                            "en": "",
-                            "es": "Invalid file name prefix",
-                            "pt": ""
+                            "en": "Invalid file name prefix.",
+                            "es": "Invalid file name prefix.",
+                            "pt": "Invalid file name prefix."
                           }
                         },
                         {
                           "title": "Invalid execute_after_withdrawal",
                           "description": {
-                            "en": "",
-                            "es": "invalid execute after withdrawal",
-                            "pt": ""
+                            "en": "Invalid execute after withdrawal.",
+                            "es": "Invalid execute after withdrawal.",
+                            "pt": "Invalid execute after withdrawal."
                           }
                         },
                         {
                           "title": "Invalid columns",
                           "description": {
-                            "en": "",
-                            "es": "Invalid columns",
-                            "pt": ""
+                            "en": "Invalid columns.",
+                            "es": "Invalid columns.",
+                            "pt": "Invalid columns."
                           }
                         },
                         {
                           "title": "Invalid frequency",
                           "description": {
-                            "en": "",
-                            "es": "Invalid frequency",
-                            "pt": ""
+                            "en": "Invalid frequency.",
+                            "es": "Invalid frequency.",
+                            "pt": "Invalid frequency."
                           }
                         },
                         {
                           "title": "Invalid sftp info",
                           "description": {
-                            "en": "",
-                            "es": "Invalid sftp info",
-                            "pt": ""
+                            "en": "Invalid sftp info.",
+                            "es": "Invalid sftp info.",
+                            "pt": "Invalid sftp info."
                           }
                         },
                         {
                           "title": "Invalid web hook",
                           "description": {
-                            "en": "",
-                            "es": "Invalid web hook",
-                            "pt": ""
+                            "en": "Invalid web hook.",
+                            "es": "Invalid web hook.",
+                            "pt": "Invalid web hook."
                           }
                         },
                         {
                           "title": "Invalid file config",
                           "description": {
-                            "en": "",
-                            "es": "Invalid file config",
-                            "pt": ""
+                            "en": "Invalid file config.",
+                            "es": "Invalid file config.",
+                            "pt": "Invalid file config."
                           }
                         },
                         {
                           "title": "Invalid report_language",
                           "description": {
-                            "en": "",
-                            "es": "Invalid report language",
-                            "pt": ""
+                            "en": "Invalid report language.",
+                            "es": "Invalid report language.",
+                            "pt": "Invalid report language."
                           }
                         },
                         {
                           "title": "Invalid notification_email_list",
                           "description": {
-                            "en": "",
-                            "es": "Invalid notification email list",
-                            "pt": ""
+                            "en": "Invalid notification_email_list.",
+                            "es": "Invalid notification email list.",
+                            "pt": "Invalid notification_email_list."
                           }
                         }
                       ]
@@ -1166,9 +1166,9 @@
                         {
                           "title": "invalid token",
                           "description": {
-                            "en": "",
-                            "es": "invalid token",
-                            "pt": ""
+                            "en": "Invalid token.",
+                            "es": "Invalid token.",
+                            "pt": "Invalid token."
                           }
                         }
                       ]
@@ -1180,8 +1180,8 @@
           }
         },
         "title": {
-          "en": "",
-          "pt": "",
+          "en": "Update configurations",
+          "pt": "Atualizar configurações",
           "es": "Actualizar configuraciones"
         }
       },
@@ -1191,9 +1191,9 @@
           "mp-point"
         ],
         "description": {
-          "en": "",
-          "pt": "",
-          "es": "Consulta la configuración actual de tus reportes."
+          "en": "Check the current configuration of your reports",
+          "pt": "Consulte a configuração atual dos seus relatórios",
+          "es": "Consulta la configuración actual de tus reportes"
         },
         "parameters": [
           {
@@ -1201,8 +1201,8 @@
             "in": "header",
             "required": true,
             "description": {
-              "en": "",
-              "pt": "",
+              "en": "Token required for authentication. This field is intended for platforms or modules that offer Mercado Pago in their solutions.",
+              "pt": "Token necessário para autenticação. Este campo é destinado a plataformas ou módulos que oferecem o Mercado Pago em suas soluções.",
               "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
             },
             "schema": {
@@ -1214,25 +1214,25 @@
         "responses": {
           "200": {
             "description": {
-              "en": "ok",
-              "pt": "",
-              "es": "ok"
+              "en": "Ok.",
+              "pt": "Ok.",
+              "es": "Ok."
             },
             "content": {
               "application/json": {
                 "schema": {
                   "description": {
-                    "en": "",
-                    "pt": "",
-                    "es": "El API responderá con una estructura JSON cuyas propiedades representarán la configuración que has actualizado"
+                    "en": "The API will respond with a JSON structure whose properties will represent the configuration you have created.",
+                    "pt": "A API responderá com uma estrutura JSON cujas propriedades representarão a configuração que você criou.",
+                    "es": "El API responderá con una estructura JSON cuyas propiedades representarán la configuración que has creado."
                   },
                   "type": "object",
                   "properties": {
                     "file_name_prefix": {
                       "type": "string",
                       "description": {
-                        "en": "",
-                        "pt": "",
+                        "en": "Prefix that makes up the name of the report once generated and ready for download.",
+                        "pt": "Prefixo que compõe o nome do relatório uma vez gerado e pronto para download.",
                         "es": "Prefijo que compone el nombre del reporte una vez generado y listo para descargar."
                       },
                       "example": "release-report-USER_ID"
@@ -1243,17 +1243,17 @@
                       "items": {
                         "type": "object",
                         "description": {
-                          "en": "",
-                          "pt": "",
-                          "es": "Permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                          "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
+                          "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
+                          "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
                         },
                         "properties": {
                           "email": {
                             "type": "string",
                             "description": {
-                              "en": "",
-                              "pt": "",
-                              "es": "correos electrónicos"
+                              "en": "Emails.",
+                              "pt": "E-mails.",
+                              "es": "Correos electrónicos."
                             },
                             "example": "example@email.com"
                           }
@@ -1263,36 +1263,36 @@
                     "display_timezone": {
                       "type": "string",
                       "description": {
-                        "es": "Determina la fecha y la hora que se visualiza en los reportes",
-                        "pt": "",
-                        "en": ""
+                        "en": "This field determines the date and time displayed in the reports. If you do not configure this field with a time zone, the system will default to GMT-04. If you choose a time zone that observes daylight saving time, it is necessary to make manual adjustments when the time changes.",
+                        "pt": "Este campo determina a data e a hora que são exibidas nos relatórios. Se você não configurar este campo com um fuso horário, por padrão, o sistema usará o valor GMT-04. Se escolher um fuso horário que utiliza horário de verão, será necessário fazer ajustes manuais quando houver mudanças no horário.",
+                        "es": "Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora."
                       },
                       "example": "GMT-04"
                     },
                     "include_withdrawal_at_end": {
                       "type": "boolean",
                       "description": {
-                        "es": "indica si se deben incluir las transacciones de retiro que ocurran al final del intervalo de fechas especificado en el reporte",
-                        "pt": "",
-                        "en": ""
+                        "es": "Este campo indica si deben incluirse las transacciones de retiro realizadas al final del intervalo de fechas especificado en el reporte.",
+                        "pt": "Este campo indica se as transações de saque realizadas no final do intervalo de datas especificado no relatório devem ser incluídas.",
+                        "en": "This field indicates whether withdrawal transactions made at the end of the specified date range in the report should be included."
                       },
                       "example": true
                     },
                     "scheduled": {
                       "type": "boolean",
                       "description": {
-                        "es": "Indica si ya existen reportes programados en la cuenta del usuario.",
-                        "pt": "",
-                        "en": ""
+                        "en": "Informative field indicating whether there are already scheduled reports in the user's account. True: Automatic generation is enabled; false: Automatic generation is disabled.",
+                        "pt": "Campo informativo que indica se já existem relatórios programados na conta do usuário. True: A criação automática está ativada; false: A criação automática está desativada.",
+                        "es": "Campo informativo que indica si ya existen reportes programados en la cuenta del usuario. True: La generación automática está activada; false: La generación automática está desactivada."
                       },
                       "example": false
                     },
                     "execute_after_withdrawal": {
                       "type": "boolean",
                       "description": {
-                        "es": " parámetro controla si el reporte se ejecutará después de que se realice un retiro",
-                        "pt": "",
-                        "en": ""
+                        "es": "Este parámetro controla si el reporte se ejecutará después de que se realice un retiro.",
+                        "pt": "Este parâmetro determina se o relatório será executado após a realização de um saque.",
+                        "en": "This parameter determines whether the report will be executed after a withdrawal is made."
                       },
                       "example": false
                     },
@@ -1306,25 +1306,25 @@
                             "type": "string",
                             "example": "SOURCE_ID",
                             "description": {
-                              "es": "Nombre de la columna del reporte  que se desea presentar en el reporte.",
-                              "pt": "",
-                              "en": ""
+                              "es": "Nombre de la columna del reporte que desea mostrar.",
+                              "pt": "Nome da coluna do relatório que você deseja exibir.",
+                              "en": "Name of the report column you wish to display."
                             }
                           }
                         }
                       },
                       "description": {
-                        "en": "",
-                        "pt": "",
-                        "es": "Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección Glossário -> https://www.mercadopago.com.co/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use"
+                        "en": "Field with details of the columns to be included in your report. Find all possible values in the Glossary section (https://www.mercadopago.com.co/developers/en/docs/checkout-pro/additional-content/reports/released-money/report-use).",
+                        "pt": "Campo com os detalhes das colunas que serão incluídas no seu relatório. Encontre todos os valores possíveis na seção Glossário (https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/additional-content/reports/released-money/report-use).",
+                        "es": "Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección Glossário (https://www.mercadopago.com.co/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use)."
                       }
                     },
                     "report_translation": {
                       "type": "string",
                       "description": {
-                        "es": "Idioma configurado del reporte",
-                        "pt": "",
-                        "en": ""
+                        "es": "Idioma configurado del reporte.",
+                        "pt": "Idioma configurado do relatório.",
+                        "en": "Configured language of the report."
                       },
                       "example": "es"
                     },
@@ -1332,18 +1332,18 @@
                       "type": "object",
                       "required": true,
                       "description": {
-                        "en": "",
-                        "pt": "",
-                        "es": "Indica la frecuencia diaria, semanal o mensual del reporte programado."
+                        "en": "This field indicates the daily, weekly, or monthly frequency of the scheduled report.",
+                        "pt": "Este campo indica a frequência diária, semanal ou mensal do relatório programado.",
+                        "es": "Este campo indica la frecuencia diaria, semanal o mensual del reporte programado."
                       },
                       "properties": {
                         "hour": {
                           "required": true,
                           "type": "number",
                           "description": {
-                            "en": "",
-                            "pt": "",
-                            "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                            "en": "This field determines the time of day the report should be generated.",
+                            "pt": "Este campo determina a hora do dia em que o relatório deve ser gerado.",
+                            "es": "Este campo determina la hora del día en que se debe generar el informe."
                           },
                           "example": 0
                         },
@@ -1351,9 +1351,9 @@
                           "required": true,
                           "type": "number",
                           "description": {
-                            "en": "",
-                            "pt": "",
-                            "es": "Aplica type monthly al día del mes o weekly al día de la semana"
+                            "en": "This field applies the type monthly to the day of the month or weekly to the day of the week. Example: If the frequency is monthly, the value '1' means that the report will be generated on the first day of each month.",
+                            "pt": "Este campo aplica o type monthly ao dia do mês ou weekly ao dia da semana. Exemplo: Dado que a frequência é mensal, o valor '1' significa que o relatório será gerado no primeiro dia de cada mês.",
+                            "es": "Este campo aplica el type monthly al día del mes o weekly al día de la semana. Ejemplo: Dado que la frecuencia es mensual, el valor '1' significa que el informe se generará el primer día de cada mes."
                           },
                           "example": 1
                         },
@@ -1361,9 +1361,9 @@
                           "required": true,
                           "type": "string",
                           "description": {
-                            "en": "",
-                            "pt": "",
-                            "es": "indica el tipo de frecuencia: daily (diaria), weekly (semanal) y monthly (mensual)"
+                            "en": "This field indicates the type of frequency: daily, weekly, and monthly.",
+                            "pt": "Este campo indica o tipo de frequência: daily (diária), weekly (semanal) e monthly (mensal).",
+                            "es": "Este campo indica el tipo de frecuencia: daily (diária), weekly (semanal) e monthly (mensal)."
                           },
                           "example": "monthly"
                         }
@@ -1389,11 +1389,11 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "invalid token",
+                          "title": "Invalid token",
                           "description": {
-                            "en": "",
-                            "es": "invalid token",
-                            "pt": ""
+                            "en": "Invalid token.",
+                            "es": "Invalid token.",
+                            "pt": "Invalid token."
                           }
                         }
                       ]
@@ -1405,8 +1405,8 @@
           }
         },
         "title": {
-          "en": "",
-          "pt": "",
+          "en": "Consult configurations",
+          "pt": "Consultar configurações",
           "es": "Consultar configuraciones"
         }
       }
