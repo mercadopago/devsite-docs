@@ -417,9 +417,9 @@
                           "required": true,
                           "type": "number",
                           "description": {
-                            "en": "This field determines the time of day the report should be generated.",
-                            "pt": "Este campo determina a hora do dia em que o relatório deve ser gerado.",
-                            "es": "Este campo determina la hora del día en que se debe generar el reporte."
+                            "en": "This field determines the time of day the report should be generated. The adopted time format would be the 24-hour clock.",
+                            "pt": "Este campo determina a hora do dia em que o relatório deve ser gerado. O formato de hora adotado seria o de 24 horas.",
+                            "es": "Este campo determina la hora del día en que se debe generar el reporte. El formato de hora adoptado sería el de 24 horas."
                           },
                           "example": 0
                         },
