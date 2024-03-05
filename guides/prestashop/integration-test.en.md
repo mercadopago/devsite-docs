@@ -1,48 +1,60 @@
 # Test payments
- 
-The Mercado Pago plugin comes with the **Sandbox test environment** active by default. In this environment you'll be able to simulate in-store payments and see if everything is working correctly before you start receiving real payments from your customers. To perform the test, follow the steps below.
- 
-1. On the Admin Panel of your Prestashop store, access the Modules and Services menu, locate the Mercado Pago plugin and click on **configure**.
-2. On the plugin management screen, confirm that the test [credentials](/developers/en/guides/additional-content/your-integrations/credentials) are properly filled in accordingly with the information available on its [Dashboard](/developers/en/guides/additional-content/your-integrations/introduction).
-3. Then scroll down to the **Test Your Store** section and click on **I want to test my sales**.  
-4. On your PrestaShop store home page, select a product and click to add to your cart.
-5. With the product selected, complete the order.
-6. Fill in with personal information, indicate a shipping address and select a shipping method. Remember that all this information is just for testing.
 
-Once the initial purchase process is complete, see below how to test the integration according to the type of checkout selected to receive payments.
+Purchase tests are essential to ensure that payments are processed correctly before authorizing real transactions. To verify that your store is set up correctly, we recommend testing payments before going live.
 
-## Checkout Pro
-
-1. Select the option **I want to pay with Mercado Pago at no additional cost**.
-2. Click on **order with mandatory payment** to be redirected to the Mercado Pago payment environment.
-3. On the checkout screen, choose to pay with a new credit card and use the [test cards](/developers/en/guides/additional-content/your-integrations/test/cards) to make the payment. It is important not to log in to the Mercado Pago account or try to pay with cards for personal use.
-3. Add the indicated test card information (card number, CVV and expiration date).
-4. At the end of the purchase, you will be able to view, within Mercado Pago, the proof that the purchase was made and you will be redirected to the store again.
-
-## Checkout API
-
-1. Select the option **I want to pay by credit card**.
-2. Choose to pay with a new credit card and use the [test cards](/developers/en/guides/additional-content/your-integrations/test/cards) to make the payment. It is important not to pay with cards for personal use.
-3. Add the indicated test card information (card number, CVV and expiration date).
-4. Click on **order with payment required**.
-5. At the end of the purchase, it will be possible to see that the purchase has been approved.
-
-----[mlb]---- 
 > WARNING
 >
-> Attention
+> Important
 >
-> When finalizing the test purchase with Checkout Pro, in the PrestaShop Admin Panel it will not be possible to view the purchase as approved because the process takes place within the Mercado Pago environment and not in the store environment. With testing done with Checkout Transparente you will be able to view the order approval.<br>
-> </br> <br/>
-> In addition, in both checkouts this information about the approved payment will not be included in the Mercado Pago account history because it only contains real expenses (made in production).
+> Testing can only be performed after the [integration configuration.](/developers/en/docs/prestashop/integration)
+
+Here's how to test the integration:
+1. Access **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** in the Mercado Pago admin and select the application you want to test.
+2. Click on **Test accounts** in the left menu.
+3. Within the **Test accounts** section, click on **Create test account** and create two different accounts: one for the seller and another for the buyer. It's not possible to use the same test account for both seller and buyer. Refer to the [Test accounts documentation](/developers/en/docs/prestashop/additional-content/your-integrations/test/accounts) for step-by-step account creation.
+
+<center>
+
+![Create account](/images/prestashop/test-create-account-es.gif)
+
+</center>
+
+4. Open a new incognito window and log in to Mercado Pago using the seller's test account created in the previous step.
+5. In the same incognito window logged in as a seller, access the [Developer dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) and create a new application, following the detailed instructions in the [Developer dashboard documentation](/developers/en/docs/prestashop/additional-content/your-integrations/dashboard).
+
+![Login](/images/prestashop/test-login-esp.gif)
+
+6. Access the application created in step 5 and click on **Production credentials** in the left menu. Copy the `access_token` and `public_key`.
+
+![Production credentials](/images/prestashop/test-prod-credentials-es.png)
+
+7. Go to the PrestaShop panel settings (**Modules > Module Manager > Payment > Mercado Pago > Configure**).
+8. Enter the production credentials `access_token` and `public_key` of the seller's test account in the **Production credentials** field.
+9. In the application created in step 5, click on **Test credentials** in the left menu. Copy the `access_token` and `public_key`.
+
+![Test credentials](/images/prestashop/test-test-credentials-es.png)
+
+10. Also, enter the test credentials `access_token` and `public_key` of the seller's test account in the **Test credentials** field.
+
+![Panel](/images/prestashop/test-prestashop.png)
+
+11. Click on **Save**.
+12. Open a new incognito window and log in to Mercado Pago using the buyer's test account created in step 3.
+----[mlb]----
+13. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as CPF, RG, phone, and email from the buyer's test account. Also, use the test cards available in the [documentation](/developers/en/docs/prestashop/additional-content/your-integrations/test/cards) corresponding.
+
+------------
+----[mla, mpe, mco, mlm, mco, mlu, mlc]----
+13. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as phone and email from the buyer's test account. In "Documento," select the option **OTRO** and enter 9 digits. Also, use the test cards available in the [documentation](/developers/en/docs/prestashop/additional-content/your-integrations/test/cards) corresponding.
+
 ------------
 
-----[mla, mlm, mpe, mco, mlu, mlc]---- 
 > WARNING
 >
-> Attention
+> Important
 >
-> When finalizing the test purchase with Checkout Pro, in the PrestaShop Admin Panel it will not be possible to view the purchase as approved because the process takes place within the Mercado Pago environment and not in the store environment. With testing done with Checkout API you will be able to view the order approval.<br>
-> </br> <br/>
-> In addition, in both checkouts this information about the approved payment will not be included in the Mercado Pago account history because it only contains real expenses (made in production).
-------------
+> During testing, you will be operating in the production environment. However, this is a test in which you will be using fictitious credentials to simulate real scenarios. After completing the tests, remember to replace the seller's credentials (both production and test) entered in the plugin panel in steps 8 and 10 with the actual credentials from your Mercado Pago account. This action will allow you to continue selling in your store and avoid confusion.
+
+After completing a test purchase using Checkout Pro or Checkout ----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, the purchase approval will be visible in the PrestaShop Admin Panel, except for purchases made offline----[mlb]---- and Pix------------, which will remain pending.
+
+Furthermore, orders will be recorded in the history of the Mercado Pago test seller account.

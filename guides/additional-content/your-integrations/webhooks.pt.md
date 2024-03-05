@@ -49,11 +49,18 @@ Abaixo explicaremos como: indicar as URLs que serão notificadas, configurar os 
 
 ### Validar origem da notificação
 
-No momento em que a URL cadastrada receber uma notificação, você poderá validar se o conteúdo enviado no _header_ `x-signature` (exemplo: `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`) foi enviado pelo Mercado Pago, a fim de obter mais segurança no recebimento das suas notificações. Veja abaixo como configurar essa validação.
+No momento em que a URL cadastrada receber uma notificação, você poderá validar se o conteúdo enviado no _header_ `x-signature` foi enviado pelo Mercado Pago, a fim de obter mais segurança no recebimento das suas notificações.
 
-1. Extraia o _timestamp_ (`ts`) e a assinatura do _header_ `x-signature`. Para isso, divida o conteúdo do _header_ pelo caractere `,`, o que resultará em uma lista de elementos. 
-2. Em seguida, divida cada elemento da lista pelo caractere `=`, o que resultará em um par de prefixos e os valores. O valor para o prefixo `ts` é o _timestamp_ (em milissegundos) da notificação e `v1` é a assinatura encriptada.
-3. Utilizando o _template_ abaixo, substitua os parâmetros pelos dados recebidos na sua notificação. 
+> NOTE
+>
+> Exemplo do conteúdo enviado no header x-signature
+>
+> `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`
+
+Veja abaixo como configurar essa validação.
+
+1. Extraia o _timestamp_ (`ts`) e a assinatura do _header_ `x-signature`. Para isso, divida o conteúdo do _header_ pelo caractere `,`, o que resultará em uma lista de elementos. O valor para o prefixo `ts` é o _timestamp_ (em milissegundos) da notificação e `v1` é a assinatura encriptada. Exemplo: `ts=1704908010` e `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
+2. Utilizando o _template_ abaixo, substitua os parâmetros pelos dados recebidos na sua notificação. 
 
 ```template
 id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
@@ -64,9 +71,10 @@ No _template_, os valores englobados por `[]` devem ser trocados pelos valores d
 - Parâmetros com sufixo `_url` são provenientes de _query params_. Exemplo: `[data.id_url]` será substituido pelo valor correspondente ao ID do evento (`data.id`).
 - `[timestamp]` será o valor `ts` extraído do _header_ `x-signature`.
 
-> Caso algum dos valores apresentados no _template_ abaixo não esteja presente em sua notificação, você deverá removê-los do template.
-4. No [Painel do desenvolvedor](/developers/panel/app), selecione a aplicação integrada, navegue até a seção Webhooks e **revele a assinatura secreta** gerada.
-5. Gere a contra chave para validação. Para isso, calcule um [HMAC](https://pt.wikipedia.org/wiki/HMAC) com a função de `hash SHA256` em base hexadecimal, utilize a **assinatura secreta** como chave e o _template_ populado com os valores como mensagem. Exemplo:
+> Caso algum dos valores apresentados no _template_ acima não esteja presente em sua notificação, você deverá removê-los do template.
+
+3. No [Painel do desenvolvedor](/developers/panel/app), selecione a aplicação integrada, navegue até a seção Webhooks e **revele a assinatura secreta** gerada.
+4. Gere a contra chave para validação. Para isso, calcule um [HMAC](https://pt.wikipedia.org/wiki/HMAC) com a função de `hash SHA256` em base hexadecimal, utilize a **assinatura secreta** como chave e o _template_ populado com os valores como mensagem. Exemplo:
 
 [[[
 ```php
