@@ -1,6 +1,6 @@
 # Gerenciamento
  
-Atualmente existem formas diferentes através das quais os **access tokens** e **temporal grants** criados podem ser desabilitados e invalidados para autorizar requests de recursos protegidos ou para trocar por novos tokens.
+Atualmente existem formas diferentes através das quais os **_Access tokens_** e **temporal grants** criados podem ser desabilitados e invalidados para autorizar requests de recursos protegidos ou para trocar por novos tokens.
  
 * **Expiração**: após o tempo estabelecido no momento da criação, o token expira automaticamente e não pode ser obtido.
 * **Alteração de senha pelo usuário**: existem fluxos de alteração de senha em que o vendedor pode revogar todas as suas credenciais, incluindo os tokens associados e concessões temporárias.
