@@ -22,7 +22,7 @@ To generate the authorization code, the following requirements must be met.
 >
 > Remember that you will use sensitive information from your sellers. Make sure you store it safely. Do not use it in the authentication URL and manage the entire process only from your server.
 
-# PKCE
+## Configure PKCE
 
 The **PKCE** (Proof Key for Code Exchange) is a security protocol used with OAuth to protect against malicious code attacks during the exchange of authorization codes for an _Access token_. It adds an extra layer of security by generating a verifier that is transformed into a challenge to ensure that even if the authorization code is intercepted, it is not useful without the original verifier.
 
@@ -52,7 +52,7 @@ https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=$APP
 
 3. After correctly sending the codes to Mercado Pago, you will obtain the necessary authorization for get the _Access token_ and perform PKCE verification on transactions made with OAuth.
 
-## Get _Access token_
+## Get Access token
 
 1. Edit your application so that it contains your Redirect URL. See [Edit Application](/developers/en/guides/additional-content/your-integrations/application-details).
 2. Send the authentication URL to the seller whose account you want to link to yours with the following fields:

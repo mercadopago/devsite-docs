@@ -22,7 +22,7 @@ Para gerar o authorization code é preciso atender aos requisitos abaixo.
 >
 > Lembre que você vai utilizar informações sensíveis dos seus vendedores. Certifique-se de resguardá-las de maneira segura. Não as utilize na URL de autenticação e gerencie todo processo somente a partir do seu servidor.
 
-## Habilitar PKCE
+## Configurar PKCE
 
 O **PKCE** (_Proof Key for Code Exchange_) é um protocolo de segurança usado com OAuth para proteger contra ataques de código malicioso durante a troca de códigos de autorização por _Access Token_. Ele adiciona uma camada extra de segurança gerando um _verifier_ que é transformado em um _challenge_ para garantir que mesmo se o código de autorização for interceptado, ele não seja útil sem o _verifier_ original.
 
@@ -52,7 +52,7 @@ https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=$APP
 
 3. Tendo enviado os códigos corretamente ao Mercado Pago, você obterá a autorização necessária para obter o _Access token_ e realizar a verificação por PKCE nas transações feitas com OAuth.
 
-## Obter _Access token_ 
+## Obter Access token
  
 1. Edite sua aplicação para conter sua Redirect URL. Veja [Editar aplicação](/developers/pt/guides/additional-content/your-integrations/application-details).
 2. Envie a URL de autenticação para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:
