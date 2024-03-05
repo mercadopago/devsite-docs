@@ -380,11 +380,6 @@
                             "type": "array",
                             "items": {
                               "type": "object",
-                              "description": {
-                                "en": "List containing internal management information of the report, such as visibility, notifications, and time settings.",
-                                "pt": "Lista que contém informações internas de gestão do relatório, como visibilidade, notificações e configurações de tempo.",
-                                "es": "Lista que contiene información interna de gestión del reporte, como la visibilidad, notificaciones y configuraciones de tiempo."
-                              },
                               "properties": {
                                 "is_visible": {
                                   "type": "boolean",
@@ -414,7 +409,12 @@
                                   "example": true
                                 }
                               }
-                            }
+                            },
+                            "description": {
+                                "en": "List containing internal management information of the report, such as visibility, notifications, and time settings.",
+                                "pt": "Lista que contém informações internas de gestão do relatório, como visibilidade, notificações e configurações de tempo.",
+                                "es": "Lista que contiene información interna de gestión del reporte, como la visibilidad, notificaciones y configuraciones de tiempo."
+                              }
                           },
                           "is_reserve": {
                             "type": "boolean",
