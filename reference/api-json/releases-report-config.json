@@ -317,11 +317,6 @@
                       "required": false,
                       "items": {
                         "type": "object",
-                        "description": {
-                          "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
-                          "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
-                          "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
-                        },
                         "properties": {
                           "email": {
                             "type": "string",
@@ -335,6 +330,11 @@
                         }
                       }
                     },
+                        "description": {
+                          "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
+                          "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
+                          "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                        },
                     "display_timezone": {
                       "type": "string",
                       "description": {
