@@ -24,7 +24,7 @@ https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=$APP
 - **Code_challenge**: a continuación, es necesario crear un `code_challenge` a partir del `code_verifier` utilizando una de las siguientes transformaciones:
   - Si es posible utilizar **S256**, será necesario seleccionar esta opción transformando el `code_verifier` en un `code_challenge` mediante una codificación `BASE64URL` después de aplicar la función "SHA256".
   - Si no es posible utilizar **S256** por alguna razón técnica y el servidor admite el método **Plain**, es posible definir el `code_challenge` igual al `code_verifier`.
-- **Code_challenge_method**: es el método utilizado para generar el `code_challenge`, según se describe en el ítem anterior. Este campo puede ser, por ejemplo, **S256** o **Plain**, dependiendo de la codificación seleccionada en la etapa de `code_challenge`.<br><br>
+- **Code_challenge_method**: es el método utilizado para generar el `code_challenge`, según se describe en el ítem anterior. Este campo puede ser, por ejemplo, **S256** o **Plain**, dependiendo de la codificación seleccionada en la etapa de `code_challenge`. <br><br>
 
 3. Después de enviar correctamente los códigos a Mercado Pago, obtendrás la autorización necesaria para realizar la verificación por PKCE en las transacciones realizadas con OAuth.
 4. Verifica en la Redirect URL de tu servidor (https://www.redirect-url.com?code=CODE&state=RANDOM_ID) el código de autorización devuelto en el parámetro `code`.
