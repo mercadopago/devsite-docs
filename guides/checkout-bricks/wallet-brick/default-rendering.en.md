@@ -12,111 +12,35 @@ Create Brick's startup configuration.
 
 [[[
 ```Javascript
-const renderWalletBrick = async (bricksBuilder) => {
- const settings = {
-   callbacks: {
-     onReady: () => {
-     /*
-      Callback called when Brick is ready.
-      Here you can hide loadings from your site, for example.
-     */
-   },
-   onSubmit: (formData) => {
-     // callback called when clicking Wallet Brick
-     // this is possible because the Brick is a button
-     // at this time of submit, you must create the preference
-     const yourRequestBodyHere = {
-       items: [
-         {
-           id: '202809963',
-           title: 'Dummy title',
-           description: 'Dummy description',
-           quantity: 1,
-           unit_price: 10,
-         },
-       ],
-       purpose: 'wallet_purchase',
-     };
-     return new Promise((resolve, reject) => {
-       fetch('/create_preference', {
-         method: 'POST',
-         headers: {
-           'Content-Type': 'application/json',
-         },
-           body: JSON.stringify(formData),
-         })
-           .then((response) => response.json())
-           .then((response) => {
-           // resolve the promise with the ID of the preference
-           resolve(response.preference_id);
-         })
-         .catch((error) => {
-           // handle error response when trying to create preference
-           reject();
-         });
-     });
-   },
- },
+const settings = {
+  initialization: {
+    preferenceId: "<PREFERENCE_ID>",
+  },
+  customization: {
+    texts: {
+      valueProp: "smart_option",
+    },
+  },
 };
+
 window.walletBrickController = await bricksBuilder.create(
-   'wallet',
-   'walletBrick_container',
-   settings,
-  );
- 
+   "wallet",
+   "walletBrick_container",
+   settings
+ );
 };
 renderWalletBrick(bricksBuilder);
 ```
 ```react-jsx
-const onSubmit = async (formData) => {
- // callback called when clicking Wallet Brick
- // this is possible because the Brick is a button
- // at this time of submit, you must create the preference
- const yourRequestBodyHere = {
-   items: [
-     {
-       id: '202809963',
-       title: 'Dummy title',
-       description: 'Dummy description',
-       quantity: 1,
-       unit_price: 10,
-     },
-   ],
-   purpose: 'wallet_purchase',
- };
- return new Promise((resolve, reject) => {
-   fetch('/create_preference', {
-     method: 'POST',
-     headers: {
-       'Content-Type': 'application/json',
-     },
-     body: JSON.stringify(yourRequestBodyHere),
-   })
-     .then((response) => response.json())
-     .then((response) => {
-       // resolve the promise with the ID of the preference
-       resolve(response.preference_id);
-     })
-     .catch((error) => {
-       // handle error response when trying to create preference
-       reject();
-     });
- });
-};
+const initialization = {
+  preferenceId: '<PREFERENCE_ID>',
+}
 
-
-const onError = async (error) => {
- // callback called for all Brick error cases
- console.log(error);
-};
-
-
-const onReady = async () => {
- /*
-   Callback called when Brick is ready.
-   Here you can hide loadings from your site, for example. 
- */
-};
+const customization = {
+  texts: {
+   valueProp: 'smart_option',
+  },
+}
 ```
 ]]]
 
@@ -126,7 +50,7 @@ const onReady = async () => {
 >
 > Whenever the user leaves the screen where some Brick is displayed, it is necessary to destroy the current instance with the command `window.walletBrickController.unmount()`. When entering again, a new instance must be generated.
 
-This preference _onSubmit_ creation flow is designed for sellers who have one-click flows, if you want, you can also send preference on startup. See more information in the [Preference on startup](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preference-startup) section.
+This flow is designed for stores that use Wallet Brick at the end of the checkout process and already have the preference created when rendering the Brick, sending the preference during initialization. If you prefer, you can also use Brick in similar one-click flows by creating the preference at the time of submission (_onSubmit_). Learn more in the [Preference on submit](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preference-submit) section.
 
 ## Render the Brick
 

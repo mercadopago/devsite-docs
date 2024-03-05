@@ -1,6 +1,6 @@
 # Wallet Brick
 
-Wallet Brick te permite ofrecer pagos desde tu cuenta de Mercado Pago en cualquier etapa del proceso de compra. Este Brick se puede implementar a través de una integración directa y personalizada que permite:
+Wallet Brick es un botón que te permite ofrecer pagos desde tu cuenta de Mercado Pago en cualquier etapa del proceso de compra. Este Brick se puede implementar a través de una integración directa y personalizada que permite:
 
 * **Pagos rápidos**
 * **Ambiente seguro**
