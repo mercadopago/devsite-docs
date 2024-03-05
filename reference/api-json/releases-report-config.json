@@ -84,9 +84,9 @@
                         "required": true,
                         "type": "number",
                         "description": {
-                          "en": "This field determines the time of day the report should be generated.",
-                          "pt": "Este campo determina a hora do dia em que o relatório deve ser gerado.",
-                          "es": "Este campo determina la hora del día en que se debe generar el reporte."
+                          "en": "This field determines the time of day the report should be generated. The adopted time format would be the 24-hour clock.",
+                          "pt": "Este campo determina a hora do dia em que o relatório deve ser gerado. O formato de hora adotado seria o de 24 horas.",
+                          "es": "Este campo determina la hora del día en que se debe generar el reporte. El formato de hora adoptado sería el de 24 horas."
                         },
                         "example": 0
                       },
@@ -207,9 +207,9 @@
                         "email": {
                           "type": "string",
                           "description": {
-                            "en": "Emails.",
-                            "pt": "E-mails.",
-                            "es": "Correos electrónicos."
+                            "en": "Email.",
+                            "pt": "E-mail.",
+                            "es": "Correo electrónico."
                           },
                           "example": "example@email.com"
                         }
@@ -225,9 +225,9 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "Display the refund's reference code (external_reference) instead of the payment's reference code (external_reference).",
-                      "pt": "Mostra o código de referência do reembolso (external_reference) em vez do código de referência do pagamento (external_reference).",
-                      "es": "Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago."
+                      "en": "Display the refund's reference code ('external_reference') instead of the payment's reference code ('external_reference').",
+                      "pt": "Mostra o código de referência do reembolso ('external_reference') em vez do código de referência do pagamento ('external_reference').",
+                      "es": "Muestra el código de referencia ('external_reference') del reembolso en vez del código de referencia ('external_reference') del pago."
                     },
                     "example": true
                   },
@@ -290,8 +290,8 @@
           "200": {
             "description": {
               "en": "Created.",
-              "pt": "Created.",
-              "es": "Created."
+              "pt": "Criado.",
+              "es": "Creado."
             },
             "content": {
               "application/json": {
@@ -321,9 +321,9 @@
                           "email": {
                             "type": "string",
                             "description": {
-                              "en": "Emails.",
-                              "pt": "E-mails.",
-                              "es": "Correos electrónicos."
+                              "en": "Email.",
+                              "pt": "E-mail.",
+                              "es": "Correo electrónico."
                             },
                             "example": "example@email.com"
                           }
@@ -504,7 +504,7 @@
                           }
                         },
                         {
-                          "title": "Invalid web hook",
+                          "title": "Invalid webhook",
                           "description": {
                             "en": "Invalid webhook.",
                             "es": "Webhook no válido.",
@@ -524,15 +524,15 @@
                           "description": {
                             "en": "Invalid report language.",
                             "es": "Idioma del reporte no válido.",
-                            "pt": "Idioma de relatório inválido."
+                            "pt": "Idioma do relatório inválido."
                           }
                         },
                         {
                           "title": "Invalid notification_email_list",
                           "description": {
                             "en": "Invalid notification email list.",
-                            "es": "Lista de correo electrónico de notificaciones no válida.",
-                            "pt": "Lista de e-mails de notificação inválida."
+                            "es": "Lista de correos electrónicos para notificación no válida.",
+                            "pt": "Lista de e-mails para notificação inválida."
                           }
                         }
                       ]
@@ -545,8 +545,8 @@
           "401": {
             "description": {
               "en": "Unauthorized.",
-              "pt": "Unauthorized.",
-              "es": "Unauthorized."
+              "pt": "Não autorizado.",
+              "es": "No autorizado."
             },
             "content": {
               "application/json": {
@@ -689,9 +689,9 @@
                         "required": true,
                         "type": "number",
                         "description": {
-                          "en": "This field determines the time of day the report should be generated.",
-                          "pt": "Este campo determina a hora do dia em que o relatório deve ser gerado.",
-                          "es": "Este campo determina la hora del día en que se debe generar el reporte."
+                          "en": "This field determines the time of day the report should be generated. The adopted time format would be the 24-hour clock.",
+                          "pt": "Este campo determina a hora do dia em que o relatório deve ser gerado. O formato de hora adotado seria o de 24 horas.",
+                          "es": "Este campo determina la hora del día en que se debe generar el reporte. El formato de hora adoptado sería el de 24 horas."
                         },
                         "example": 0
                       },
@@ -812,9 +812,9 @@
                         "email": {
                           "type": "string",
                           "description": {
-                            "en": "Emails.",
-                            "pt": "E-mails.",
-                            "es": "Correos electrónicos."
+                            "en": "Email.",
+                            "pt": "E-mail.",
+                            "es": "Correo electrónico."
                           },
                           "example": "example@email.com"
                         }
@@ -830,9 +830,9 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "Display the refund's reference code (external_reference) instead of the payment's reference code (external_reference).",
-                      "pt": "Mostra o código de referência do reembolso (external_reference) em vez do código de referência do pagamento (external_reference).",
-                      "es": "Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago."
+                      "en": "Display the refund's reference code ('external_reference') instead of the payment's reference code ('external_reference').",
+                      "pt": "Mostra o código de referência do reembolso (external_reference) em vez do código de referência do pagamento ('external_reference').",
+                      "es": "Muestra el código de referencia ('external_reference') del reembolso en vez del código de referencia ('external_reference') del pago."
                     },
                     "example": true
                   },
@@ -926,9 +926,9 @@
                           "email": {
                             "type": "string",
                             "description": {
-                              "en": "Emails.",
-                              "pt": "E-mails.",
-                              "es": "Correos electrónicos."
+                              "en": "Email.",
+                              "pt": "E-mail.",
+                              "es": "Correo electrónico."
                             },
                             "example": "example@email.com"
                           }
@@ -1021,9 +1021,9 @@
                           "required": true,
                           "type": "number",
                           "description": {
-                            "en": "This field determines the time of day the report should be generated.",
-                            "pt": "Este campo determina a hora do dia em que o relatório deve ser gerado.",
-                            "es": "Este campo determina la hora del día en que se debe generar el reporte."
+                            "en": "This field determines the time of day the report should be generated. The adopted time format would be the 24-hour clock.",
+                            "pt": "Este campo determina a hora do dia em que o relatório deve ser gerado. O formato de hora adotado seria o de 24 horas.",
+                            "es": "Este campo determina la hora del día en que se debe generar el reporte. El formato de hora adoptado sería el de 24 horas."
                           },
                           "example": 0
                         },
@@ -1072,72 +1072,72 @@
                           "title": "Invalid file_name_prefix",
                           "description": {
                             "en": "Invalid file name prefix.",
-                            "es": "Invalid file name prefix.",
-                            "pt": "Invalid file name prefix."
+                            "es": "Prefijo de nombre de archivo no válido.",
+                            "pt": "Prefixo de nome de arquivo inválido."
                           }
                         },
                         {
                           "title": "Invalid execute_after_withdrawal",
                           "description": {
                             "en": "Invalid execute after withdrawal.",
-                            "es": "Invalid execute after withdrawal.",
-                            "pt": "Invalid execute after withdrawal."
+                            "es": "Ejecución no válida después de la retirada.",
+                            "pt": "Execução inválida após retirada."
                           }
                         },
                         {
                           "title": "Invalid columns",
                           "description": {
                             "en": "Invalid columns.",
-                            "es": "Invalid columns.",
-                            "pt": "Invalid columns."
+                            "es": "Columnas no válidas.",
+                            "pt": "Colunas inválidas."
                           }
                         },
                         {
                           "title": "Invalid frequency",
                           "description": {
                             "en": "Invalid frequency.",
-                            "es": "Invalid frequency.",
-                            "pt": "Invalid frequency."
+                            "es": "Frecuencia no válida.",
+                            "pt": "Frequência inválida."
                           }
                         },
                         {
-                          "title": "Invalid sftp info",
+                          "title": "Invalid SFTP info",
                           "description": {
-                            "en": "Invalid sftp info.",
-                            "es": "Invalid sftp info.",
-                            "pt": "Invalid sftp info."
+                            "en": "Invalid SFTP info.",
+                            "es": "Información SFTP no válida.",
+                            "pt": "Informações SFTP inválidas."
                           }
                         },
                         {
-                          "title": "Invalid web hook",
+                          "title": "Invalid webhook",
                           "description": {
-                            "en": "Invalid web hook.",
-                            "es": "Invalid web hook.",
-                            "pt": "Invalid web hook."
+                            "en": "Invalid webhook.",
+                            "es": "Webhook no válido.",
+                            "pt": "Webhook inválido."
                           }
                         },
                         {
                           "title": "Invalid file config",
                           "description": {
                             "en": "Invalid file config.",
-                            "es": "Invalid file config.",
-                            "pt": "Invalid file config."
+                            "es": "Configuración de archivo no válida.",
+                            "pt": "Configuração de arquivo inválida."
                           }
                         },
                         {
                           "title": "Invalid report_language",
                           "description": {
                             "en": "Invalid report language.",
-                            "es": "Invalid report language.",
-                            "pt": "Invalid report language."
+                            "es": "Idioma del reporte no válido.",
+                            "pt": "Idioma de relatório inválido."
                           }
                         },
                         {
                           "title": "Invalid notification_email_list",
                           "description": {
-                            "en": "Invalid notification_email_list.",
-                            "es": "Invalid notification email list.",
-                            "pt": "Invalid notification_email_list."
+                            "en": "Invalid email notification list.",
+                            "es": "Lista de correos electrónicos para notificación no válida.",
+                            "pt": "Lista de e-mails para notificação inválida."
                           }
                         }
                       ]
@@ -1150,8 +1150,8 @@
           "401": {
             "description": {
               "en": "Unauthorized",
-              "pt": "Unauthorized",
-              "es": "Unauthorized"
+              "pt": "Não autorizado.",
+              "es": "No autorizado."
             },
             "content": {
               "application/json": {
@@ -1165,8 +1165,8 @@
                           "title": "invalid token",
                           "description": {
                             "en": "Invalid token.",
-                            "es": "Invalid token.",
-                            "pt": "Invalid token."
+                            "es": "Token no válido.",
+                            "pt": "Token inválido."
                           }
                         }
                       ]
@@ -1243,9 +1243,9 @@
                           "email": {
                             "type": "string",
                             "description": {
-                              "en": "Emails.",
-                              "pt": "E-mails.",
-                              "es": "Correos electrónicos."
+                              "en": "Email.",
+                              "pt": "E-mail.",
+                              "es": "Correo electrónico."
                             },
                             "example": "example@email.com"
                           }
@@ -1338,9 +1338,9 @@
                           "required": true,
                           "type": "number",
                           "description": {
-                            "en": "This field determines the time of day the report should be generated.",
-                            "pt": "Este campo determina a hora do dia em que o relatório deve ser gerado.",
-                            "es": "Este campo determina la hora del día en que se debe generar el informe."
+                            "en": "This field determines the time of day the report should be generated. The adopted time format would be the 24-hour clock.",
+                            "pt": "Este campo determina a hora do dia em que o relatório deve ser gerado. O formato de hora adotado seria o de 24 horas.",
+                            "es": "Este campo determina la hora del día en que se debe generar el reporte. El formato de hora adoptado sería el de 24 horas."
                           },
                           "example": 0
                         },
@@ -1374,8 +1374,8 @@
           "401": {
             "description": {
               "en": "Unauthorized",
-              "pt": "Unauthorized",
-              "es": "Unauthorized"
+              "pt": "Não autorizado.",
+              "es": "No autorizado."
             },
             "content": {
               "application/json": {
@@ -1389,8 +1389,8 @@
                           "title": "Invalid token",
                           "description": {
                             "en": "Invalid token.",
-                            "es": "Invalid token.",
-                            "pt": "Invalid token."
+                            "es": "Token no válido.",
+                            "pt": "Token inválido."
                           }
                         }
                       ]

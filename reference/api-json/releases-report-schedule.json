@@ -83,9 +83,9 @@
                           "currency_id": {
                             "type": "string",
                             "description": {
-                               "es": "Es el identificador de la moneda utilizada en el reporte.",
-                               "pt": "É o identificador da moeda utilizada no relatório.",
-                               "en": "It is the identifier of the currency used in the report."
+                               "es": "El identificador de la moneda utilizada en el reporte.",
+                               "pt": "O identificador da moeda utilizada no relatório.",
+                               "en": "The identifier of the currency used in the report."
                             },
                             "example": "ARS"
                           },
@@ -101,9 +101,9 @@
                           "generation_date": {
                             "type": "string",
                             "description": {
-                                "es": "Es la fecha y hora en la que se generó la respuesta del reporte.",
-                                "pt": "É a data e hora em que a resposta do relatório foi gerada.",
-                                "en": "It is the date and time when the report response was generated."
+                                "es": "La fecha y hora en la que se generó la respuesta del reporte.",
+                                "pt": "A data e hora em que a resposta do relatório foi gerada.",
+                                "en": "The date and time when the report response was generated."
                             },
                             "example": "2024-02-16T15:55:22.258-04:00"
                           },
@@ -111,11 +111,6 @@
                             "type": "array",
                             "items": {
                               "type": "object",
-                              "description": {
-                                "en": "List containing internal management information of the report, such as visibility, notifications, and time settings.",
-                                "pt": "Lista que contém informações internas de gestão do relatório, como visibilidade, notificações e configurações de tempo.",
-                                "es": "Lista que contiene información interna de gestión del reporte, como la visibilidad, notificaciones y configuraciones de tiempo."
-                              },
                               "properties": {
                                 "is_visible": {
                                   "type": "boolean",
@@ -145,7 +140,12 @@
                                   "example": true
                                 }
                               }
-                            }
+                            },
+                            "description": {
+                                "en": "List containing internal management information of the report, such as visibility, notifications, and time settings.",
+                                "pt": "Lista que contém informações internas de gestão do relatório, como visibilidade, notificações e configurações de tempo.",
+                                "es": "Lista que contiene información interna de gestión del reporte, como la visibilidad, notificaciones y configuraciones de tiempo."
+                              }
                           },
                           "is_reserve": {
                             "type": "boolean",
@@ -195,18 +195,18 @@
                           "status": {
                             "type": "string",
                             "description": {
-                              "es": "Indica el estado del reporte",
-                              "pt": "",
-                              "en": ""
+                                "es": "Este campo indica el estado del reporte.",
+                                "pt": "Este campo indica o estado do relatório.",
+                                "en": "This field indicates the status of the report."
                             },
                             "example": "processed"
                           },
                           "sub_type": {
                             "type": "string",
                             "description": {
-                                "es": "Indica el estado del reporte.",
-                                "pt": "Indica o estado do relatório.",
-                                "en": "Indicates the status of the report."
+                                "es": "Este campo indica el subtipo de reporte.",
+                                "pt": "Este campo indica o subtipo de relatório.",
+                                "en": "This field indicates the report subtype."
                             },
                             "example": "release"
                           },
@@ -236,8 +236,8 @@
                 "401": {
                   "description": {
                     "en": "Unauthorized.",
-                    "pt": "Unauthorized.",
-                    "es": "Unauthorized."
+                    "pt": "Não autorizado.",
+                    "es": "No autorizado."
                   },
                   "content": {
                     "application/json": {
@@ -251,8 +251,8 @@
                                 "title": "Invalid token",
                                 "description": {
                                   "en": "Invalid token.",
-                                  "es": "Invalid token.",
-                                  "pt": "Invalid token."
+                                  "es": "Token no válido.",
+                                  "pt": "Token inválido."
                                 }
                               }
                             ]
@@ -300,8 +300,8 @@
                 "201": {
                   "description": {
                     "es": "Created.",
-                    "pt": "Created.",
-                    "en": "Created."
+                    "pt": "Criado.",
+                    "en": "Creado."
                   },
                   "content": {
                     "application/json": {
@@ -334,9 +334,9 @@
                           "begin_date": {
                             "type": "string",
                             "description": {
-                              "es": "Es la fecha y hora de inicio del intervalo del reporte, en la zona horaria UTC (indicado por la 'Z' al final, que significa 'Zulu time' o tiempo coordinado universal).",
-                              "pt": "É a data e hora de início do intervalo do relatório, no fuso horário UTC (indicado pelo 'Z' no final, que significa 'Zulu time' ou tempo coordenado universal).",
-                              "en": "It is the start date and time of the report interval, in the UTC time zone (indicated by the 'Z' at the end, which stands for 'Zulu time' or Coordinated Universal Time)."
+                              "es": "La fecha y hora de inicio del intervalo del reporte, en la zona horaria UTC (indicado por la 'Z' al final, que significa 'Zulu time' o tiempo coordinado universal).",
+                              "pt": "A data e hora de início do intervalo do relatório, no fuso horário UTC (indicado pelo 'Z' no final, que significa 'Zulu time' ou tempo coordenado universal).",
+                              "en": "The start date and time of the report interval, in the UTC time zone (indicated by the 'Z' at the end, which stands for 'Zulu time' or Coordinated Universal Time)."
                             },
                             "example": "2022-08-01T03:00:00Z"
                           },
@@ -352,9 +352,9 @@
                           "currency_id": {
                             "type": "string",
                             "description": {
-                              "es": "Es el identificador de la moneda utilizada en el reporte.",
-                              "pt": "É o identificador da moeda utilizada no relatório.",
-                              "en": "It is the identifier of the currency used in the report."
+                              "es": "El identificador de la moneda utilizada en el reporte.",
+                              "pt": "O identificador da moeda utilizada no relatório.",
+                              "en": "The identifier of the currency used in the report."
                             },
                             "example": "ARS"
                           },
@@ -370,9 +370,9 @@
                           "generation_date": {
                             "type": "string",
                             "description": {
-                                "es": "Es la fecha y hora en la que se generó la respuesta del reporte.",
-                                "pt": "É a data e hora em que a resposta do relatório foi gerada.",
-                                "en": "It is the date and time when the report response was generated."
+                                "es": "La fecha y hora en la que se generó la respuesta del reporte.",
+                                "pt": "A data e hora em que a resposta do relatório foi gerada.",
+                                "en": "The date and time when the report response was generated."
                             },
                             "example": "2024-02-16T15:55:22.258-04:00"
                           },
@@ -505,8 +505,8 @@
                 "401": {
                   "description": {
                     "en": "Unauthorized.",
-                    "pt": "Unauthorized.",
-                    "es": "Unauthorized."
+                    "pt": "Não autorizado.",
+                    "es": "No autorizado."
                   },
                   "content": {
                     "application/json": {
@@ -520,8 +520,8 @@
                                 "title": "Invalid token",
                                 "description": {
                                   "en": "Invalid token.",
-                                  "es": "Invalid token.",
-                                  "pt": "Invalid token."
+                                  "es": "Token no válido.",
+                                  "pt": "Token inválido."
                                 }
                               }
                             ]
@@ -601,9 +601,9 @@
                           "begin_date": {
                             "type": "string",
                             "description": {
-                                "es": "Es la fecha y hora de inicio del intervalo del reporte, en la zona horaria UTC (indicado por la 'Z' al final, que significa 'Zulu time' o tiempo coordinado universal).",
-                                "pt": "É a data e hora de início do intervalo do relatório, no fuso horário UTC (indicado pelo 'Z' no final, que significa 'Zulu time' ou tempo coordenado universal).",
-                                "en": "It is the start date and time of the report interval, in the UTC time zone (indicated by the 'Z' at the end, which stands for 'Zulu time' or Coordinated Universal Time)."
+                                "es": "La fecha y hora de inicio del intervalo del reporte, en la zona horaria UTC (indicado por la 'Z' al final, que significa 'Zulu time' o tiempo coordinado universal).",
+                                "pt": "A data e hora de início do intervalo do relatório, no fuso horário UTC (indicado pelo 'Z' no final, que significa 'Zulu time' ou tempo coordenado universal).",
+                                "en": "The start date and time of the report interval, in the UTC time zone (indicated by the 'Z' at the end, which stands for 'Zulu time' or Coordinated Universal Time)."
                             },
                             "example": "2022-08-01T03:00:00Z"
                           },
@@ -619,9 +619,9 @@
                           "currency_id": {
                             "type": "string",
                             "description": {
-                                "es": "Es el identificador de la moneda utilizada en el reporte.",
-                                "pt": "É o identificador da moeda utilizada no relatório.",
-                                "en": "It is the identifier of the currency used in the report."
+                                "es": "El identificador de la moneda utilizada en el reporte.",
+                                "pt": "O identificador da moeda utilizada no relatório.",
+                                "en": "The identifier of the currency used in the report."
                             },
                             "example": "ARS"
                           },
@@ -772,8 +772,8 @@
                 "401": {
                   "description": {
                     "en": "Unauthorized.",
-                    "pt": "Unauthorized.",
-                    "es": "Unauthorized."
+                    "pt": "Não autorizado.",
+                    "es": "No autorizado."
                   },
                   "content": {
                     "application/json": {
@@ -787,8 +787,8 @@
                                 "title": "Invalid token",
                                 "description": {
                                   "en": "Invalid token.",
-                                  "es": "Invalid token.",
-                                  "pt": "Invalid token."
+                                  "es": "Token no válido.",
+                                  "pt": "Token inválido."
                                 }
                               }
                             ]
@@ -870,8 +870,8 @@
                 "401": {
                   "description": {
                     "en": "Unauthorized.",
-                    "pt": "Unauthorized.",
-                    "es": "Unauthorized."
+                    "pt": "Não autorizado.",
+                    "es": "No autorizado."
                   },
                   "content": {
                     "application/json": {
@@ -885,8 +885,8 @@
                                 "title": "Invalid token",
                                 "description": {
                                   "en": "Invalid token.",
-                                  "es": "Invalid token.",
-                                  "pt": "Invalid token."
+                                  "es": "Token no válido.",
+                                  "pt": "Token inválido."
                                 }
                               }
                             ]

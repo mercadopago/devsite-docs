@@ -286,33 +286,33 @@
                               {
                                 "title": "invalid_begin_date",
                                 "description": {
-                                  "en": "Must specify begin_date parameter.",
-                                  "es": "Must specify begin_date parameter.",
-                                  "pt": "Must specify begin_date parameter."
+                                  "en": "You must specify begin_date parameter.",
+                                  "es": "Debes especificar el parámetro 'begin_date'.",
+                                  "pt": "Você deve especificar o parâmetro 'begin_date'."
                                 }
                               },
                               {
                                 "title": "invalid_end_date",
                                 "description": {
-                                  "en": "Must specify end_date parameter.",
-                                  "es": "Must specify end_date parameter.",
-                                  "pt": "Must specify end_date parameter."
+                                  "en": "You must specify 'end_date' parameter.",
+                                  "es": "Debes especificar el parámetro 'end_date'.",
+                                  "pt": "Você deve especificar o parâmetro 'end_date'."
                                 }
                               },
                               {
                                 "title": "end_date_before_begin_date",
                                 "description": {
                                   "en": "Begin date should be before end date.",
-                                  "es": "Begin date should be before end date.",
-                                  "pt": "Begin date should be before end date."
+                                  "es": "La fecha de inicio debería ser anterior a la fecha de finalización.",
+                                  "pt": "A data de início deve ser anterior à data de término."
                                 }
                               },
                               {
                                 "title": "end_date_before_begin_date",
                                 "description": {
                                   "en": "Begin date should be before end date.",
-                                  "es": "Begin date should be before end date.",
-                                  "pt": "Begin date should be before end date."
+                                  "es": "La fecha de inicio debería ser anterior a la fecha de finalización.",
+                                  "pt": "A data de início deve ser anterior à data de término."
                                 }
                               }
                             ]
@@ -325,8 +325,8 @@
                 "401": {
                   "description": {
                     "en": "Unauthorized.",
-                    "pt": "Unauthorized.",
-                    "es": "Unauthorized."
+                    "pt": "Não autorizado.",
+                    "es": "No autorizado."
                   },
                   "content": {
                     "application/json": {
@@ -340,8 +340,8 @@
                                 "title": "Invalid token",
                                 "description": {
                                   "en": "Invalid token.",
-                                  "es": "Invalid token.",
-                                  "pt": "Invalid token."
+                                  "es": "Token no válido.",
+                                  "pt": "Token inválido."
                                 }
                               }
                             ]
