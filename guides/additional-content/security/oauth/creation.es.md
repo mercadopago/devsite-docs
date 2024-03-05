@@ -1,10 +1,10 @@
 # Creación
  
-El flujo de `authorization_code` se caracteriza por la intervención del vendedor para autorizar explícitamente el acceso de la aplicación a sus datos y por el uso de un código otorgado por el servidor de autenticación para que la aplicación pueda obtener un access token y un refresh token asociado.
+El flujo de `authorization_code` se caracteriza por la intervención del vendedor para autorizar explícitamente el acceso de la aplicación a sus datos y por el uso de un código otorgado por el servidor de autenticación para que la aplicación pueda obtener un _Access token_ y un refresh token asociado.
  
 Debido a que se trata de un flujo basado en la redirección, debes permitir la interacción con el navegador del vendedor y recibir la solicitud a través de la redirección del servidor de autorización. En este flujo, la aplicación solicita al vendedor el consentimiento expreso para acceder a los datos mediante la apertura de una página web en la que se explicitan los ámbitos a los que se solicita el acceso.
   
-Una vez permitido el acceso, el servidor genera un código de acceso que llega a la aplicación a través de una redirección. En este paso, la aplicación solicita acceso al servidor de autenticación enviando el código obtenido y los datos de la aplicación. Una vez hecho esto, el servidor otorga el access token y el refresh token a la aplicación.
+Una vez permitido el acceso, el servidor genera un código de acceso que llega a la aplicación a través de una redirección. En este paso, la aplicación solicita acceso al servidor de autenticación enviando el código obtenido y los datos de la aplicación. Una vez hecho esto, el servidor otorga el _Access token_ y el refresh token a la aplicación.
  
 Para generar el código de autorización, es preciso cumplir con los requisitos a continuación.
  
@@ -13,7 +13,7 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
 | Cuentas de vendedor de Mercado Pago | Se requerirán cuentas de vendedor de Mercado Pago. Uno para ti y otro para el vendedor. | Cuenta de vendedor en Mercado Pago. Si no la tienes, haz [clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para crear. |
 | Aplicación | Las aplicaciones son las distintas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes, con el fin de tener todo organizado y mantener un control que facilite la gestión. | Para usar OAuth necesitarás tener una aplicación creada. Consulta la documentación del [Panel del desarrollador](/developers/es/guides/additional-content/your-integrations/introduction) para obtener información sobre cómo crear una aplicación. |
 | Credenciales | Las [credenciales](/developers/es/guides/additional-content/your-integrations/credentials) son contraseñas únicas con las que identificamos una integración en tu cuenta y sirven para capturar pagos de forma segura en tiendas virtuales y otras aplicaciones. | Para realizar pruebas y garantizar que la integración funcione, se requerirán credenciales de prueba. Después de este paso, necesitarás credenciales de producción para recibir pagos reales. |
-| Redirect URL | Dirección a la que deseas reenviar a los vendedores después de haberlos vinculado correctamente. | Esta es una dirección en tu servidor donde se recibirán los access tokens. |
+| Redirect URL | Dirección a la que deseas reenviar a los vendedores después de haberlos vinculado correctamente. | Esta es una dirección en tu servidor donde se recibirán los _Access tokens_. |
 | URL de autenticación | Dirección a la que desea enviar a los vendedores para autorizar el acceso a datos privados. | Esta es una dirección en el servidor de Mercado Pago donde se otorga expresamente el permiso para acceder a los datos privados. |
  
 > WARNING
@@ -41,12 +41,12 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
    |---|---|
    | Redirect URL | https://www.redirect-url.com?code=CODE&state=RANDOM_ID |
  
-5. Envía tus credenciales y código de autorización al endpoint [/oauth/token](/developers/es/reference/oauth/_oauth_token/post) para recibir el access token como respuesta.
+5. Envía tus credenciales y código de autorización al endpoint [/oauth/token](/developers/es/reference/oauth/_oauth_token/post) para recibir el _Access token_ como respuesta.
  
 > WARNING
 >
 > Atención
 >
-> Se recomienda realizar este procedimiento de una única vez junto con el usuario, ya que el código recibido por la Redirect URL después de la autorización tiene una validez de 10 minutos y el access token recibido a través del endpoint tiene una validez de 180 días.
+> Se recomienda realizar este procedimiento de una única vez junto con el usuario, ya que el código recibido por la Redirect URL después de la autorización tiene una validez de 10 minutos y el _Access token_ recibido a través del endpoint tiene una validez de 180 días.
 >
 > Para generar credenciales de sandbox para pruebas, envíe el parámetro `test_token` con el valor `true`.
