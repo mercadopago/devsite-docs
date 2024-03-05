@@ -297,7 +297,7 @@
                 }
               ],
               "responses": {
-                "201": {
+                "200": {
                   "description": {
                     "es": "Created.",
                     "pt": "Criado.",
