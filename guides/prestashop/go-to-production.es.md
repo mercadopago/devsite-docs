@@ -1,4 +1,4 @@
-# Recebir pagos
+# Recibir pagos
 
 Después de realizar la integración y las pruebas, su tienda está lista para entrar en producción. Para comenzar a recibir pagos, debes activar el modo de producción. Para hacer esto, sigue los procedimientos a continuación.
  
