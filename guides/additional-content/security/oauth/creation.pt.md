@@ -50,9 +50,9 @@ https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=$APP
   - Se não for possível usar **S256** por algum motivo técnico e o servidor suportar o método **Plain**, é possível definir o `code_challenge` igual ao `code_verifier`.
 - **Code_challenge_method**: é o método utilizado para gerar o `code_challenge`, conforme descrito no item acima. Este campo poderá ser, por exemplo, **S256** ou **Plain**, de acordo com a codificação selecionada na etapa de `code_challenge`. <br>
 
-3. Tendo enviado os códigos corretamente ao Mercado Pago, você obterá a autorização necessária para que ocorra a verificação por PKCE nas transações feitas com OAuth.
+3. Tendo enviado os códigos corretamente ao Mercado Pago, você obterá a autorização necessária para obter o _Access token_ e realizar a verificação por PKCE nas transações feitas com OAuth.
 
-## Configurar 
+## Obter _Access token_ 
  
 1. Edite sua aplicação para conter sua Redirect URL. Veja [Editar aplicação](/developers/pt/guides/additional-content/your-integrations/application-details).
 2. Envie a URL de autenticação para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:
