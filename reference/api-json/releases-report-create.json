@@ -286,7 +286,7 @@
                               {
                                 "title": "invalid_begin_date",
                                 "description": {
-                                  "en": "You must specify begin_date parameter.",
+                                  "en": "You must specify 'begin_date' parameter.",
                                   "es": "Debes especificar el parámetro 'begin_date'.",
                                   "pt": "Você deve especificar o parâmetro 'begin_date'."
                                 }

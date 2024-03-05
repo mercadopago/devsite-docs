@@ -276,9 +276,9 @@
                 "reporting"
               ],
               "description": {
-                "en": "Schedule the automatic generation of the report using the assigned frequency during the configuration of your reports. When consuming this service, the 'scheduled' property of your configuration will be automatically updated to true",
-                "pt": "Agende a criação automática do relatório utilizando a frequência atribuída durante a configuração dos seus relatórios. Ao consumir este serviço, a propriedade 'scheduled' da sua configuração será atualizada automaticamente para true",
-                "es": "Programa la generación automática del reporte utilizando la frecuencia asignada durante la configuración de tus reportes. Al consumir este servicio, la propiedad scheduled de tu configuración se actualizará automáticamente a true"
+                "en": "Schedule the automatic generation of the report using the assigned frequency during the configuration of your reports. When consuming this service, the 'scheduled' property of your configuration will be automatically updated to 'true'",
+                "pt": "Agende a criação automática do relatório utilizando a frequência atribuída durante a configuração dos seus relatórios. Ao consumir este serviço, a propriedade 'scheduled' da sua configuração será atualizada automaticamente para 'true'",
+                "es": "Programa la generación automática del reporte utilizando la frecuencia asignada durante la configuración de tus reportes. Al consumir este servicio, la propiedad scheduled de tu configuración se actualizará automáticamente a 'true'"
               },
               "parameters": [
                 {
