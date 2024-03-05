@@ -19,9 +19,12 @@ Sigue los pasos a continuación para generar los campos obligatorios y configura
 https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=$APP_ID`redirect_uri=$YOUR_URL&code_challenge=$CODE_CHALLENGE&code_challenge_method=$CODE_METHOD
 ```
 
-- `redirect_uri`: URL indicada en el campo Redirect URL de [tu aplicación](/developers/es/guides/additional-content/your-integrations/application-details).
-- `code_challenge`: es el código de verificación generado a partir de un `code_verifier` (**una secuencia aleatoria de caracteres con longitud de entre 43-128 caracteres, con letras mayúsculas, minúsculas, dígitos y algunos caracteres especiales**) y cifrado con el `code_challenge_method`. Consulta la [documentación oficial](https://datatracker.ietf.org/doc/html/rfc7636#section-4) para obtener más información.
-- `code_challenge_method`: método _hash_ utilizado para generar el `code_challenge`, que por defecto utiliza `S256` para especificar que el `code_challenge` está cifrado mediante el algoritmo de cifrado **SHA-256**. Consulta la [documentación oficial](https://datatracker.ietf.org/doc/html/rfc7636#section-4) para obtener más información.
+- **Redirect_uri**: URL proporcionada en el campo "Redirect URL" de [tu aplicación](/developers/es/guides/additional-content/your-integrations/application-details).
+- **Code_verifier**: código que debe generarse, respetando los requisitos para su funcionamiento, que son: una secuencia aleatoria de caracteres con una longitud entre 43 y 128 caracteres, que incluya letras mayúsculas, minúsculas, números y algunos caracteres especiales. Por ejemplo: `47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU`.
+- **Code_challenge**: a continuación, es necesario crear un `code_challenge` a partir del `code_verifier` utilizando una de las siguientes transformaciones:
+  - Si es posible utilizar **S256**, será necesario seleccionar esta opción transformando el `code_verifier` en un `code_challenge` mediante una codificación `BASE64URL` después de aplicar la función "SHA256".
+  - Si no es posible utilizar **S256** por alguna razón técnica y el servidor admite el método **Plain**, es posible definir el `code_challenge` igual al `code_verifier`.
+- **Code_challenge_method**: es el método utilizado para generar el `code_challenge`, según se describe en el ítem anterior. Este campo puede ser, por ejemplo, **S256** o **Plain**, dependiendo de la codificación seleccionada en la etapa de `code_challenge`.
 
 3. Después de enviar correctamente los códigos a Mercado Pago, obtendrás la autorización necesaria para realizar la verificación por PKCE en las transacciones realizadas con OAuth.
 4. Verifica en la Redirect URL de tu servidor (https://www.redirect-url.com?code=CODE&state=RANDOM_ID) el código de autorización devuelto en el parámetro `code`.

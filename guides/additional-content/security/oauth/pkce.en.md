@@ -19,9 +19,12 @@ Follow the steps below to generate the mandatory fields and configure PKCE verif
 https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=$APP_ID`redirect_uri=$YOUR_URL&code_challenge=$CODE_CHALLENGE&code_challenge_method=$CODE_METHOD
 ```
 
-- `redirect_uri`: URL specified in the Redirect URL field of [your application](/developers/en/guides/additional-content/your-integrations/application-details).
-- `code_challenge`: is the verification code generated from a `code_verifier` (**a random sequence of characters with a length between 43-128 characters, including uppercase and lowercase letters, digits, and some special characters**) and encrypted with the `code_challenge_method`. Check out the [official documentation](https://datatracker.ietf.org/doc/html/rfc7636#section-4) for more information.
-- `code_challenge_method`: the hash method used to generate the `code_challenge`, where `S256` is commonly used by default to specify that the code_challenge is encrypted using the **SHA-256** encryption algorithm. Check out the [official documentation](https://datatracker.ietf.org/doc/html/rfc7636#section-4) for more information.
+- **Redirect_uri**: URL provided in the "Redirect URL" field of [your application](/developers/en/guides/additional-content/your-integrations/application-details).
+- **Code_verifier**: code that should be generated, following the requirements for its functionality, which include: a random sequence of characters with a length between 43 and 128 characters, including uppercase letters, lowercase letters, numbers, and some special characters. For example: `47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU`.
+- **Code_challenge**: next, it is necessary to create a `code_challenge` from the `code_verifier` using one of the following transformations:
+  - If it's possible to use **S256**, it will be necessary to use this option by transforming the `code_verifier` into a `code_challenge` through `BASE64URL` encoding after applying the "SHA256" function.
+  - If it's not possible to use **S256** for some technical reason and the server supports the **Plain** method, it's possible to set the c`ode_challenge` equal to the `code_verifier`.
+- **Code_challenge_method**: is the method used to generate the `code_challenge`, as described in the above item. This field can be, for example, **S256** or **Plain**, depending on the encoding selected in the `code_challenge stage`.
 
 3. After correctly sending the codes to Mercado Pago, you will obtain the necessary authorization for PKCE verification in transactions made with OAuth.
 4, Check the authorization code returned in the `code` parameter in the Redirect URL of your server (https://www.redirect-url.com?code=CODE&state=RANDOM_ID).
