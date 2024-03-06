@@ -84,7 +84,7 @@ Además, los pedidos se registrarán en el historial de la cuenta de prueba del 
 ![Credenciales de prueba](/images/prestashop/test-test-credentials-es.png)
 
 3. Ve a la configuración del panel de PrestaShop (**Módulos > Module Manager > Pago > Mercado Pago > Configurar**).
-4. Ingresa las credenciales de prueba `access_token` y `public_key` de tu aplicación.
+4. Ingresa las credenciales de prueba `access_token` y `public_key` de tu aplicación en los campos de la sección "Test Credentials".
 
 ![Panel](/images/prestashop/test-prestashop.png)
 
