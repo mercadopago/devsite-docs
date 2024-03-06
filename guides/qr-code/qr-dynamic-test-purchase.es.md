@@ -21,6 +21,14 @@ A continuación, te enseñaremos cómo simular un flujo de pago completo para C�
 
 1. Descarga la **App de Mercado Pago en tu dispositivo móvil**, e inicia sesión con la cuenta del usuario de prueba definido como comprador.
 2. Escanea desde tu dispositivo móvil el Código QR que generaste. La app mostrará el monto de la orden generada y las opciones de pago disponibles. 
+
+----[mlb]----
+> WARNING
+>
+> Importante
+>
+>  Los pagos con Pix no pueden ser hechos utilizando credenciales de prueba. Recomendamos seleccionar otro medio de pago para realizar la prueba de integración con Código QR.
+------------
 3. Realiza el pago utilizando [tarjetas de prueba](/developers/es/docs/qr-code/additional-content/your-integrations/test/cards), que te permitirán además probar distintos flujos de pago. 
 
 ### Casos de validación

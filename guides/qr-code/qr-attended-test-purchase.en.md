@@ -19,6 +19,14 @@ Next, we will teach you how to simulate a complete payment flow for attended QR 
 
 1. Download and install the **Mercado Pago App on your mobile device** and log in with the test buyer account. 
 2. Scan with your mobile device the QR code you generated. The app will display the amount of the generated order and the available payment options. 
+
+----[mlb]----
+> WARNING
+>
+> Important
+>
+> Pix payments will not be working correctly when using test credentials. We recommend using another payment method when testing your QR Code integration.
+------------
 3. Make the payment using [test cards](/developers/en/docs/qr-code/additional-content/your-integrations/test/cards), which will also allow you to test different payment flows. 
 
 ### Validation cases 
