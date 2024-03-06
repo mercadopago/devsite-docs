@@ -85,9 +85,9 @@ Además, los pedidos se registrarán en el historial de la cuenta de prueba del 
 3. Ve a la configuración del panel de WooCommerce (**WooCommerce > Mercado Pago > Integra tu tienda con Mercado Pago**).
 4. Ingresa las credenciales de prueba `access_token` y `public_key` de tu aplicación.
 
-![Panel](/images/woocomerce/test-woo.png)
+![Panel](/images/woocomerce/test-woo-es.png)
 
 5. Haz clic en **Guardar y continuar**.
-6. Accede a tu tienda y realiza una compra proporcionando información de prueba, como un número de teléfono y una dirección de correo electrónico diferentes a los asociados con tu cuenta en Mercado Pago. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. También utiliza las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/woocommerce/additional-content/your-integrations/test/cards) correspondiente.
+6. Accede a tu tienda y realiza una compra proporcionando información de prueba, como un número de teléfono y una dirección de correo electrónico diferentes a los asociados con tu cuenta en Mercado Pago. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/woocommerce/additional-content/your-integrations/test/cards) correspondiente.
 
 ------------
