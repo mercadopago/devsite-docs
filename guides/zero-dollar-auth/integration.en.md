@@ -38,8 +38,8 @@ Next, fill in the necessary fields according to the following table. Then, send 
 |---|---|---|----|
 | token | String | Card token | 12346622341 |
 | payment_method_id | String | Indicates the identifier of the selected payment method for the payment | master |
-| payer.id | String | Payer's ID | 123456 |
-| payer.type | String | Type of identification associated with the payer | customer |
+| payer.email | String | Payer's email | buyer@examplemail.com |
+| payer.type | String | Type of identification associated with the payer | guest |
 | description | String | Description of the validation | "zero dollar validation for Mastercard credit card with CVV" |
 | transaction_amount | Number | Cost of the validation | Always zero (0) for Zero Dollar Auth |
 
@@ -53,8 +53,8 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
     "token": "TOKEN",
     "payment_method_id": "master",
     "payer": {
-        "id": "{{customer_id}}",
-        "type" : "customer",
+        "email": "{{payer_email}}",
+        "type" : "guest",
     },
     "description": "validação de cartão com valor zero dollar master",
     "transaction_amount": 0
@@ -76,7 +76,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
     "token" => $_POST['token'],
     "payment_method_id" => $_POST['paymentMethodId'],
     "payer" => [
-      "id" => $_POST['id'],
+      "email" => $_POST['email'],
       "type" => $_POST['type']
     ],
     "description" => $_POST['description'],
@@ -95,7 +95,7 @@ payment.create({
         token: req.token,
         payment_method_id: req.payment_method_id,
         payer: {
-            id: req.id,
+            id: req.email,
             type: req.type
         },
         description: req.description,
@@ -127,7 +127,7 @@ PaymentCreateRequest paymentCreateRequest =
        .paymentMethodId(request.getPaymentMethodId())
        .payer(
            PaymentPayerRequest.builder()
-               .id(request.getPayer().getId())
+               .email(request.getPayer().getEmail())
                .type(request.getPayer().getType())
                .build())
        .build();
@@ -150,7 +150,7 @@ payment_data = {
  description: params[:description],
  payment_method_id: params[:paymentMethodId],
  payer: {
-   id: 'params[:id]',
+   email: 'params[:email]',
    type: params[:type]
  }
 }
@@ -180,7 +180,7 @@ var paymentRequest = new PaymentCreateRequest
    PaymentMethodId = Request["paymentMethodId"],
    Payer = new PaymentPayerRequest
    {
-       Id = Request["id"],
+       Email = Request["email"],
        Type = Request["type"]
    },
 };
@@ -205,7 +205,7 @@ payment_data = {
    "description": request.POST.get("description"),
    "payment_method_id": request.POST.get("payment_method_id"),
    "payer": {
-       "id": request.POST.get("id"),
+       "email": request.POST.get("email"),
        "type": request.POST.get("type")
    }
 }
