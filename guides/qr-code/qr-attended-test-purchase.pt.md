@@ -20,6 +20,7 @@ Siga as etapas descritas abaixo para simular um fluxo de pagamento completo para
 1. Baixe o aplicativo do Mercado Pago no seu dispositivo móvel, disponível para [Android](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&pcampaignid=web_share) e [iOS](https://apps.apple.com/br/app/mercado-pago-banco-digital/id925436649), instale-o e, em seguida, faça login com as **credenciais da conta de usuário de teste definida como comprador**.
 2. Utilize seu dispositivo móvel para escanear o Código QR gerado anteriormente. O aplicativo exibirá o valor do pedido e as opções de pagamento disponíveis.
 
+----[mlb]----
 > WARNING
 >
 > Importante
