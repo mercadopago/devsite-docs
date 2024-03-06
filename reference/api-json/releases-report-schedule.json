@@ -828,7 +828,7 @@
                   "required": true,
                   "schema": {
                     "type": "string",
-                    "example": "reserve-release-report.csv"
+                    "example": "<YOUR_FILE_NAME>.csv"
                   }
                 },
                 {
