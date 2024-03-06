@@ -24,7 +24,7 @@ Siga as etapas descritas abaixo para simular um fluxo de pagamento completo para
 >
 > Importante
 >
->  Os pagamentos Pix não podem ser feitos com credenciais de teste. Recomendamos selecionar outra forma de pagamento para realizar o teste de integração do Código QR.
+>  Os pagamentos Pix não podem ser realizados com credenciais de teste. Recomendamos selecionar outra forma de pagamento para realizar o teste de integração do Código QR.
 ------------
 3. Realize o pagamento utilizando [cartões de teste](/developers/pt/docs/qr-code/additional-content/your-integrations/test/cards), que também permitirão testar diferentes fluxos de pagamento. 
 
