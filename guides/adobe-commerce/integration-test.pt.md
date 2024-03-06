@@ -30,7 +30,7 @@ Veja abaixo como testar a integração:
 
 7. Vá até as configurações do painel de Adobe Commerce (**Stores > Configuration > Sales > Payment Methods > Other payments methods > Configure > Basic Settings > Mercado Pago Integration**).
 8. Selecione a opção **Production** no campo "Checkout operation mode".
-9. Insira as credenciais produtivas `access_token` e  `public_key` da conta de teste do vendedor.
+9. Insira as credenciais produtivas `access_token` e `public_key` da conta de teste do vendedor.
 
 ![Painel](/images/adobe-commerce/test-adobe-commerce.png)
 
@@ -44,7 +44,6 @@ Veja abaixo como testar a integração:
 13. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como telefone e e-mail da conta de teste do comprador. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/cards) correspondente.
 
 ------------
-
 ----[mlb]----
 > WARNING
 > 
@@ -77,11 +76,11 @@ Além disso, os pedidos serão registrados no histórico da conta de teste de ve
 
 3. Vá até as configurações do painel de Adobe Commerce (**Stores > Configuration > Sales > Payment Methods > Other payments methods > Configure > Basic Settings > Mercado Pago Integration**).
 4. Selecione a opção **Sandbox** no campo "Checkout operation mode".
-5. Insira as credenciais de teste `access_token` e  `public_key` da sua aplicação.
+5. Insira as credenciais de teste `access_token` e `public_key` da sua aplicação.
 
 ![Painel](/images/adobe-commerce/test-adobe-commerce.png)
 
 6. Clique em **Save Config**.
-7. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como número de telefone e um endereço de e-mail diferente daquele associado à sua conta no Mercado Pago. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/cards) correspondente.
+7. Acesse sua loja e efetue uma compra fornecendo informações de teste, como número de telefone e um endereço de e-mail diferente daquele associado à sua conta no Mercado Pago. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/cards) correspondente.
 
 ------------
