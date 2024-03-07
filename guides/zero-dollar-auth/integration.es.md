@@ -1,6 +1,7 @@
 # Crear una validación Zero Dollar Auth
 
-En tu frontend, utiliza nuestra [biblioteca Mercado Pago SDK JS](/developers/es/docs/sdks-library/landing) para capturar los datos de la tarjeta y generar el token.
+En tu frontend, utiliza nuestra [biblioteca Mercado Pago SDK JS](/developers/es/docs/sdks-library/landing) para capturar los datos de la tarjeta y generar el token. Este token reemplaza las información sensible de la tarjeta por un código único generado aleatoriamente, garantizando la seguridad de los datos durante la transacción.
+
 
 > NOTE
 >

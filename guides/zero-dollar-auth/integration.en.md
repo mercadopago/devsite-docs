@@ -1,6 +1,6 @@
 # Create a Zero Dollar Auth validation
 
-In your frontend, use our **Mercado Pago SDK JS** library to capture the card data and generate the token.
+In your frontend, use our **Mercado Pago SDK JS** library to capture the card data and generate the token. This token replaces sensitive card information with a randomly generated unique code, ensuring data security during the transaction.
 
 > NOTE
 >

@@ -15,5 +15,5 @@ Esta validación se realiza a través de la API y utiliza el token de la tarjeta
 
 A continuación, compartimos el flujo que ilustra cómo funciona la validación Zero Dollar Auth.
 
-![Flujo de funcionamiento para la validación de Zero Dollar Auth](/zero-dollar-auth/Fluxo_ZDA_ES_Final.png)
+![Flujo de funcionamiento para la validación de Zero Dollar Auth](/zero-dollar-auth/Fluxo_ZDA_ES_Corrigido.png)
 
