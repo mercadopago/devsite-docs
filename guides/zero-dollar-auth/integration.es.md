@@ -32,7 +32,7 @@ En tu frontend, utiliza nuestra [biblioteca Mercado Pago SDK JS](/developers/es/
     }
 ```
 
-A continuación, completa los campos necesarios según la siguiente tabla. Luego, envía los datos, junto con el token de la tarjeta, al backend, realizando una solicitud al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post).
+A continuación, deberás enviar los datos, junto con el token de la tarjeta, al backend. Para eso, realiza una solicitud al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) completando los campos necesarios según la siguiente tabla.
 
 | Parámetro | Tipo | Descripción | Ejemplo |
 |---|---|---|----|
