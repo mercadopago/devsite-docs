@@ -114,9 +114,7 @@ Abaixo listamos o `body` de resposta para cada um dos cenários.
 
 ## Retornos 500
 
-* **Status**: 500 (internal error)
-* **Descrição**: Este erro pode indicar uma falha no servidor durante a tentativa de processamento da operação.
-* **Corpo da resposta**:
+Os retornos 500 (Internal Error) podem indicar uma falha no servidor durante a tentativa de processamento da operação. A seguir, apresentamos o corpo da resposta.
 
 ```json
 {

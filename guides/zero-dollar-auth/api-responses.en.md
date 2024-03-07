@@ -114,9 +114,8 @@ Below, we list the response `body` for each of the scenarios.
 
 ## 500 responses
 
-* **Status**: 500 (internal error)
-* **Description**: This error may indicate a server failure during the attempt to process the operation.
-* **Response body**: 
+The 500 responses (Internal Error) can indicate a failure of the server during the attempt to process the operation. Below is the body of the response.
+
 
 ```json
 {
