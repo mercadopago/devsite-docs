@@ -40,13 +40,16 @@ Veja abaixo como testar a integração:
 ![Painel](/images/woocomerce/test-woo.png)
 
 11. Clique em **Salvar e continuar**.
-12. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do comprador criada no passo 3.
+12. Ainda no painel de Woocommerce, vá até o passo "4. Teste sua loja antes de vender" e selecione a opção **Modo vendas (produção)**.
+13. Clique em **Salvar mudanças**.
+14. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do comprador criada no passo 3.
+
 ----[mlb]----
-13. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como CPF, RG, telefone e e-mail da conta de teste do comprador. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/woocommerce/additional-content/your-integrations/test/cards) correspondente.
+15. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como CPF, RG, telefone e e-mail da conta de teste do comprador. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/woocommerce/additional-content/your-integrations/test/cards) correspondente.
 
 ------------
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
-13. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como telefone e e-mail da conta de teste do comprador. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/woocommerce/additional-content/your-integrations/test/cards) correspondente.
+15. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como telefone e e-mail da conta de teste do comprador. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/woocommerce/additional-content/your-integrations/test/cards) correspondente.
 
 ------------
 ----[mlb]----
@@ -75,16 +78,21 @@ Além disso, os pedidos serão registrados no histórico da conta de teste de ve
 ## Checkout API
 
 1. Acesse **[Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** no admin do Mercado Pago e selecione a aplicação que deseja testar. 
-2. Clique em **Credenciais de teste** no menu à esquerda. Copie o `access_token` e a `public_key`.
+2. Clique em **Credenciais de produção** no menu à esquerda. Copie o `access_token` e a `public_key`.
+
+![Credenciais de produção](/images/woocomerce/test-prod-credentials.png)
+
+3. Vá até as configurações do painel de WooCommerce (**WooCommerce > Mercado Pago > Integre a loja com o Mercado Pago**).
+4. Insira suas credenciais produtivas `access_token` e a `public_key` no campo **Credenciais de produção**.
+5. Na sua aplicação, clique em **Credenciais de teste** no menu à esquerda. Copie o `access_token` e a `public_key`.
 
 ![Credenciais de teste](/images/woocomerce/test-test-credentials.png)
 
-3. Vá até as configurações do painel de WooCommerce (**WooCommerce > Mercado Pago > Integre a loja com o Mercado Pago**).
-4. Insira as credenciais de teste `access_token` e `public_key` da sua aplicação.
+6. Insira também as credenciais de teste `access_token` e a `public_key` da conta de teste do vendedor no campo **Credenciais de teste**.
 
 ![Painel](/images/woocomerce/test-woo.png)
 
-5. Clique em **Salvar e continuar**.
-6. Acesse sua loja e efetue uma compra fornecendo informações de teste, como número de telefone e um endereço de e-mail diferente daquele associado à sua conta no Mercado Pago. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/woocommerce/additional-content/your-integrations/test/cards) correspondente.
+7. Clique em **Salvar e continuar**.
+8. Acesse sua loja e efetue uma compra fornecendo informações de teste, como número de telefone e um endereço de e-mail diferente daquele associado à sua conta no Mercado Pago. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/woocommerce/additional-content/your-integrations/test/cards) correspondente.
 
 ------------

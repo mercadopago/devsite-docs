@@ -41,15 +41,16 @@ Here's how to test the integration:
 10. Also, enter the test credentials `access_token` and `public_key` of the seller's test account in the **Test credentials** field.
 
 ![Panel](/images/woocomerce/test-woo-es.png)
-
 11. Click on **Save and continue**.
-12. Open a new incognito window and log in to Mercado Pago using the buyer's test account created in step 3.
+12. In the WooCommerce panel, go to step "4. Test your store before selling" and select the option **Sales mode (production)**.
+13. Click on **Save changes**.
+14. Open a new incognito window and log in to Mercado Pago using the buyer test account created in step 3.
 ----[mlb]----
-13. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as CPF, RG, phone, and email from the buyer's test account. Also, use the test cards available in the [corresponding documentation](/developers/en/docs/woocommerce/additional-content/your-integrations/test/cards).
+15. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as CPF, RG, phone, and email from the buyer's test account. Also, use the test cards available in the [corresponding documentation](/developers/en/docs/woocommerce/additional-content/your-integrations/test/cards).
 
 ------------
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
-13. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as phone and email from the buyer's test account. In the "Documento" field, select the option **OTRO** and enter 9 digits. Also, use the test cards available in the [documentation](/developers/en/docs/woocommerce/additional-content/your-integrations/test/cards) corresponding.
+15. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as phone and email from the buyer's test account. In the "Documento" field, select the option **OTRO** and enter 9 digits. Also, use the test cards available in the [documentation](/developers/en/docs/woocommerce/additional-content/your-integrations/test/cards) corresponding.
 
 ------------
 ----[mlb]----
