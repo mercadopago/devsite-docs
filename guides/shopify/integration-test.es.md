@@ -45,11 +45,22 @@ Ahora, sigue los pasos según el checkout que hayas elegido para procesar los pa
 ![Credenciales de producción](/images/shopify/test-prod-credentials-es.png)
 
 7. Ve a la configuración del panel de Shopify (**Configuración > Pagos**) y haz clic en **Gestionar** en el proveedor de Mercado Pago.
+----[mlb]----
 8. Ingresa el `client_id` y el `client_secret` de la cuenta de prueba del vendedor.
 
-![Panel](/images/shopify/test-pro-shopify-es.png)
+![Panel](/images/shopify/test-pro-shopify.png)
 
 9. Haz clic en **Guardar**.
+
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+8. Ingresa la `public_key` y el `access_token` de la cuenta de prueba del vendedor.
+
+![Panel](/images/shopify/test-pro-shopify-es-all.jpg)
+
+9. Haz clic en **Guardar credenciales**.
+
+------------
 10. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago utilizando la cuenta de prueba del comprador creada en el paso 3.
 ----[mlb]----
 11. En la misma ventana iniciada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como CPF, RG, teléfono y correo electrónico de la cuenta de prueba del comprador. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.

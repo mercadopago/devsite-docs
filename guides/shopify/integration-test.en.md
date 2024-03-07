@@ -45,11 +45,21 @@ Now, follow the step-by-step according to the chosen checkout type to process pa
 ![Production credentials](/images/shopify/test-prod-credentials-es.png)
 
 7. Go to the Shopify panel settings (**Settings > Payments**) and click on **Manage** for the Mercado Pago provider.
+----[mlb]----
 8. Enter the `client_id` and `client_secret` from the seller's test account.
 
-![Panel](/images/shopify/test-pro-shopify-es.png)
+![Panel](/images/shopify/test-pro-shopify.png)
 
-9. Click **Save**.
+9. Click on **Save**.
+
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+8. Enter the `public_key` and `access_token` from the seller's test account.
+
+![Panel](/images/shopify/test-pro-shopify-es-all.jpg)
+
+------------
+9. Click on **Save credentials**.
 10. Open a new incognito window and log in to Mercado Pago using the buyer's test account created in step 3.
 ----[mlb]----
 11. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as CPF, RG, phone, and email from the buyer's test account. Also, use the test cards available in the [corresponding documentation](/developers/en/docs/shopify/additional-content/your-integrations/test/cards) .

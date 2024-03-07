@@ -32,8 +32,8 @@ A continuación, te indicamos cómo probar la integración:
 
 ![Credenciales de producción](/images/adobe-commerce/test-prod-credentials-es.png)
 
-7. Ve a la configuración del panel de Adobe Commerce (**Tiendas > Configuración > Ventas > Métodos de pago > Otros métodos de pago > Configurar > Configuración básica > Integración Mercado Pago**).
-8. Selecciona la opción **Producción** en el campo "Checkout operation mode".
+7. Ve a la configuración del panel de Adobe Commerce (**Stores > Configuration > Sales > Payment Methods > Other payments methods > Configure > Basic Settings > Mercado Pago Integration**).
+8. Selecciona la opción **Production** en el campo "Checkout operation mode".
 9. Ingresa las credenciales de producción `access_token` y `public_key` de la cuenta de prueba del vendedor.
 
 ![Panel](/images/adobe-commerce/test-adobe-commerce.png)
@@ -82,7 +82,7 @@ Además, los pedidos se registrarán en el historial de la cuenta de prueba del 
 4. Selecciona la opción **Sandbox** en el campo "Checkout operation mode".
 5. Ingresa las credenciales de prueba `access_token` y `public_key` de tu aplicación.
 
-![Panel](/images/adobe-commerce/test-adobe-commerce.png)
+![Panel](/images/adobe-commerce/test-adobe-commerce-all.png)
 
 6. Haz clic en **Save Config**.
 7. Accede a tu tienda y realiza una compra proporcionando información de prueba, como un número de teléfono y una dirección de correo electrónico diferente al asociado con tu cuenta en Mercado Pago. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/cards) correspondiente.

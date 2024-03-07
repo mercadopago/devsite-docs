@@ -82,7 +82,7 @@ Additionally, the orders will be recorded in the test seller's Mercado Pago acco
 4. Select the **Sandbox** option in the "Checkout operation mode" field.
 5. Enter the test credentials `access_token` and `public_key` for your application.
 
-![Panel](/images/adobe-commerce/test-adobe-commerce.png)
+![Panel](/images/adobe-commerce/test-adobe-commerce-all.png)
 
 6. Click on **Save Config**.
 7. Access your store and make a purchase by providing test information, such as a different phone number and email address than the one associated with your Mercado Pago account. In the "Documento" field, select the **OTRO** option and enter 9 digits. Also, use the test cards available in the [documentation](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/cards) corresponding.
