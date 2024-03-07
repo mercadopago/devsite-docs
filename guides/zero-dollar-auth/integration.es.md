@@ -1,6 +1,6 @@
 # Crear una validación Zero Dollar Auth
 
-En tu frontend, utiliza nuestra biblioteca **Mercado Pago SDK JS** para capturar los datos de la tarjeta y generar el token.
+En tu frontend, utiliza nuestra [biblioteca Mercado Pago SDK JS](/developers/es/docs/sdks-library/landing) para capturar los datos de la tarjeta y generar el token.
 
 > NOTE
 >
@@ -37,7 +37,7 @@ A continuación, completa los campos necesarios según la siguiente tabla. Luego
 | Parámetro | Tipo | Descripción | Ejemplo |
 |---|---|---|----|
 | token | String | Token de la tarjeta | 12346622341 |
-| payment_method_id | String | Indica el identificador del medio de pago seleccionado para efectuar el pago | master |
+| payment_method_id | String | Identificador del medio de pago seleccionado para efectuar el pago | master |
 | payer.email | String | Email del pagador | buyer@examplemail.com |
 | payer.type | String | Tipo de identificación del pagador asociado | guest |
 | description | String | Descripción de la validación | "validación de tarjeta con valor zero dollar master crédito con cvv" |
@@ -217,6 +217,6 @@ print(payment)
 ```
 ]]]
 
-Al realizar las solicitudes, es posible que se devuelvan diferentes respuestas y estados. Para obtener más detalles sobre las respuestas recibidas, consulta la sección de "Respuestas de la API".
+Al realizar las solicitudes, es posible que se devuelvan diferentes respuestas y estados. Para obtener más detalles, consulta la sección [Respuestas de la API](/developers/es/docs/zero-dollar-auth/api-responses).
 
 

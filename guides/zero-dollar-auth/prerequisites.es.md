@@ -10,7 +10,7 @@ Para utilizar la validación Zero Dollar Auth, debes cumplir con los siguientes 
 
 | Requisito | Descripción |
 |---|---|
-| Contacto comercial | Para utilizar este producto, deberás contactar a tu contacto comercial en Mercado Pago, quien te compartirá toda la información necesaria para completar la integración. |
+| Contacto comercial | Para utilizar este producto, deberás contactar a tu representante comercial en Mercado Pago, quien te compartirá toda la información necesaria para completar la integración. |
 | Cuenta de Mercado Pago | Para realizar la validación Zero Dollar Auth, necesitarás una cuenta de vendedor en Mercado Pago. Si no tienes una, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para crear una de forma gratuita. |
 | Aplicación | Las aplicaciones son las diferentes integraciones contenidas en una o más tiendas. Puedes crear una aplicación para cada solución que implementes, con el fin de tener todo organizado y mantener un control que facilite la gestión. Consulta el [Panel del desarrollador](/developers/es/docs/zero-dollar-auth/additional-content/your-integrations/introduction) para obtener más información sobre cómo crear una aplicación. |
 

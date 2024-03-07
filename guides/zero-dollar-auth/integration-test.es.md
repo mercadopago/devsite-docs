@@ -1,6 +1,6 @@
 # Prueba de integración
 
-Para testar a validação de Zero Dollar Auth, siga as seguintes instruções.
+Para probar la validación de Zero Dollar Auth, sigue las siguientes instrucciones.
 
 ## Agregar encabezado "X-Test-Token: true"
 
