@@ -79,16 +79,23 @@ Additionally, the orders will be recorded in the test seller's Mercado Pago acco
 ## Checkout API
 
 1. Access **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** in the Mercado Pago admin and select the application you want to test.
-2. Click on **Test credentials** in the left menu. Copy the `access_token` and `public_key`.
+2. Click on **Production credentials** in the left menu. Copy the `access_token` and `public_key`.
 
-![Test Credentials](/images/woocomerce/test-test-credentials-es.png)
+![Production credentials](/images/woocomerce/test-prod-credentials-es.png)
 
-3. Go to the settings panel in WooCommerce (**WooCommerce > Mercado Pago > Integrate your store with Mercado Pago**).
-4. Enter the test credentials `access_token` and `public_key` for your application.
+7. Go to the WooCommerce panel settings (**WooCommerce > Mercado Pago > Integrate store with Mercado Pago**).
+8. Enter the production credentials `access_token` and `public_key` in the **Production credentials** field.
+9. In your application, click on **Test credentials** in the left menu. Copy the `access_token` and `public_key`.
 
-![Panel](/images/woocomerce/test-woo.png)
+![Test credentials](/images/woocomerce/test-test-credentials-es.png)
+
+10. Also, enter the test credentials `access_token` and `public_key` in the **Test credentials** field.
+
+![Panel](/images/woocomerce/test-woo-es.png)
 
 5. Click on **Save and continue**.
+6. In the WooCommerce panel, go to step "4. Test your store before selling" and select the **Test mode** option.
+7. Click on **Save changes**.
 6. Access your store and make a purchase by providing test information, such as a different phone number and email address than the one associated with your Mercado Pago account. In the "Documento" field, select the **OTHER** option and enter 9 digits. Also, use the test cards available in the [documentation](/developers/en/docs/woocommerce/additional-content/your-integrations/test/cards) corresponding.
 
 ------------

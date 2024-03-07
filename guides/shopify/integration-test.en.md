@@ -39,9 +39,14 @@ Now, follow the step-by-step according to the chosen checkout type to process pa
 
 ------------
 ## Checkout Pro
-
+----[mlb]----
 6. Access the application created in step 5 and click on **Production credentials** in the left menu. Copy the `client_id` and `client_secret`.
 
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+6. Access the application created in step 5 and click on **Production credentials** in the left menu. Copy the `public_key` and `access_token`.
+
+------------
 ![Production credentials](/images/shopify/test-prod-credentials-es.png)
 
 7. Go to the Shopify panel settings (**Settings > Payments**) and click on **Manage** for the Mercado Pago provider.

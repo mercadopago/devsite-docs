@@ -35,9 +35,14 @@ Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para proc
 
 ------------
 ## Checkout Pro
-
+----[mlb]----
 6. Acesse a aplicação criada no passo 5 e clique em **Credenciais de produção** no menu à esquerda. Copie o `client_id` e o `client_secret`.
 
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+6. Acesse a aplicação criada no passo 5 e clique em **Credenciais de produção** no menu à esquerda. Copie a `public_key` e o `access_token`.
+
+------------
 ![Credenciais de produção](/images/shopify/test-prod-credentials.png)
 
 7. Vá até as configurações do painel da Shopify (**Configurações > Pagamentos**) e clique em **Gerenciar** no provedor do Mercado Pago.
