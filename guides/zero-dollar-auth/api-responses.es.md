@@ -5,7 +5,7 @@ En esta sección encontrarás las posibles respuestas relacionadas con la creaci
 
 ## Respuestas 200 
 
-Al recibir el `Return 200`, que confirma la autorización Zero Dollar Auth para la tarjeta, y el estado indica **"approved"**, se concluye que la validación de la tarjeta se realizó correctamente. Por otro lado, si el estado es **"rejected"**, significa que la validación de la tarjeta no fue posible. Este resultado negativo puede ser causado por diversos factores, como una tarjeta bloqueada o vencida.
+Al recibir el `Return 200`, que confirma la autorización Zero Dollar Auth para la tarjeta, y si el estado indica **"approved"**, se concluye que la validación de la tarjeta se realizó correctamente. Por otro lado, si el estado es **"rejected"**, significa que la validación de la tarjeta no fue posible. Este resultado negativo puede ser causado por diversos factores, como una tarjeta bloqueada o vencida.
 
 
 > NOTE
@@ -14,7 +14,7 @@ Al recibir el `Return 200`, que confirma la autorización Zero Dollar Auth para 
 >
 > Una transacción con estado `approved` o `rejected` será comunicada a través de una notificación Webhooks.
 
-A continuación, enumeramos el `body` de respuesta para cada uno de los escenarios.
+A continuación, te presentamos los distintos `body` de respuesta para cada uno de los escenarios.
 
 ### Tarjeta validada correctamente
 
@@ -44,7 +44,7 @@ A continuación, enumeramos el `body` de respuesta para cada uno de los escenari
 ### Tarjeta no validada
 
 * **Status**: rejected
-* **Descripción**: Respuesta que indica que la creación de la validación Zero Dollar Auth fue rechazada. En caso de recibir este error, recomendamos revisar los parámetros de la solicitud para asegurarse de que todos cumplan con los valores aceptados por nuestra API. Después de revisarlo, realiza una nueva solicitud.
+* **Descripción**: respuesta que indica que la creación de la validación Zero Dollar Auth fue rechazada. En caso de recibir este error, recomendamos revisar los parámetros de la solicitud para asegurarse de que todos cumplan con los valores aceptados por nuestra API. Después de revisarlo, realiza una nueva solicitud.
 - **Cuerpo de la respuesta**: 
 
 ```json
@@ -70,7 +70,7 @@ A continuación, enumeramos el `body` de respuesta para cada uno de los escenari
 
 Si recibes el código de respuesta `400`, generalmente significa que el cuerpo de la solicitud contiene datos incompatibles con los aceptados por la API. Un ejemplo común de esta situación es intentar validar la transacción enviando un `transaction_amount` con un valor diferente de cero.
 
-A continuación, enumeramos el `body` de respuesta para cada uno de los escenarios.
+A continuación, te presentamos los distintos `body` de respuesta para cada uno de los escenarios.
 
 ### 'transaction_amount' distinto a cero
 
@@ -135,7 +135,7 @@ A continuación, enumeramos el `body` de respuesta para cada uno de los escenari
 }
 ```
 
-Si el error 500 persiste en varias solicitudes, comuníquese con nuestro [Soporte](/developers/es/support/center).
+Si el error 500 persiste en varias solicitudes, comunícate con nuestro [Soporte](/developers/es/support/center).
 
 ## Lista de permisos
 
