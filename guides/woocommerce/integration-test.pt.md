@@ -93,6 +93,8 @@ Além disso, os pedidos serão registrados no histórico da conta de teste de ve
 ![Painel](/images/woocomerce/test-woo.png)
 
 7. Clique em **Salvar e continuar**.
-8. Acesse sua loja e efetue uma compra fornecendo informações de teste, como número de telefone e um endereço de e-mail diferente daquele associado à sua conta no Mercado Pago. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/woocommerce/additional-content/your-integrations/test/cards) correspondente.
+8. Ainda no painel de Woocommerce, vá até o passo "4. Teste sua loja antes de vender" e selecione a opção **Modo teste**.
+9. Clique em **Salvar mudanças**.
+10. Acesse sua loja e efetue uma compra fornecendo informações de teste, como número de telefone e um endereço de e-mail diferente daquele associado à sua conta no Mercado Pago. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/woocommerce/additional-content/your-integrations/test/cards) correspondente.
 
 ------------
