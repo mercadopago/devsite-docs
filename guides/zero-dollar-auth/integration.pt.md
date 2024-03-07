@@ -32,7 +32,7 @@ Em seu frontend utilize nossa biblioteca **Mercado Pago SDK JS** para capturar d
     }
 ```
 
-Em seguida, preencha os campos necessários conforme a tabela abaixo e envie os dados, juntamente com o token do cartão, ao backend, executando uma requisição ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post).
+Ao finalizar a captura dos dados do cartão, será necessário enviar o pagamento ao backend. Para isso, preencha os atributos necessários conforme indicado na tabela a seguir e execute a requisição ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) ou, se preferir, utilize um dos códigos disponíveis logo abaixo da tabela.
 
 
 | Parâmetro | Tipo | Descrição | Exemplo |
