@@ -262,12 +262,12 @@
                     }
                   }
                 }
+              },
+              "title": {
+                "en": "Consult report",
+                "pt": "Consultar relatório",
+                "es": "Consultar reporte"
               }
-            },
-            "title": {
-              "en": "Consult report",
-              "pt": "Consultar relatório",
-              "es": "Consultar reporte"
             }
           },
           "/v1/account/release_report/schedule": {

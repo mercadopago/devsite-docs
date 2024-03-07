@@ -351,13 +351,13 @@
                     }
                   }
                 }
+              },
+              "title": {
+                "en": "Create report",
+                "pt": "Criar relatório",
+                "es": "Crear reporte"
               }
-            },
-            "title": {
-              "en": "Create report",
-              "pt": "Criar relatório",
-              "es": "Crear reporte"
             }
         }
     }
-  }
+}
