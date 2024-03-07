@@ -325,8 +325,8 @@
                 "401": {
                   "description": {
                     "en": "Unauthorized.",
-                    "pt": "Não autorizado.",
-                    "es": "No autorizado."
+                    "pt": "Unauthorized.",
+                    "es": "Unauthorized."
                   },
                   "content": {
                     "application/json": {

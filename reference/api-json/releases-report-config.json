@@ -545,8 +545,8 @@
           "401": {
             "description": {
               "en": "Unauthorized.",
-              "pt": "Não autorizado.",
-              "es": "No autorizado."
+              "pt": "Unauthorized.",
+              "es": "Unauthorized."
             },
             "content": {
               "application/json": {
@@ -574,8 +574,8 @@
           "409": {
             "description": {
               "en": "Conflict.",
-              "pt": "Conflito.",
-              "es": "Conflicto."
+              "pt": "Conflict.",
+              "es": "Conflict."
             },
             "content": {
               "application/json": {
@@ -1150,8 +1150,8 @@
           "401": {
             "description": {
               "en": "Unauthorized",
-              "pt": "Não autorizado.",
-              "es": "No autorizado."
+              "pt": "Unauthorized.",
+              "es": "Unauthorized."
             },
             "content": {
               "application/json": {
@@ -1374,8 +1374,8 @@
           "401": {
             "description": {
               "en": "Unauthorized",
-              "pt": "Não autorizado.",
-              "es": "No autorizado."
+              "pt": "Unauthorized.",
+              "es": "Unauthorized."
             },
             "content": {
               "application/json": {

@@ -236,8 +236,8 @@
                 "401": {
                   "description": {
                     "en": "Unauthorized.",
-                    "pt": "Não autorizado.",
-                    "es": "No autorizado."
+                    "pt": "Unauthorized.",
+                    "es": "Unauthorized."
                   },
                   "content": {
                     "application/json": {
@@ -505,8 +505,8 @@
                 "401": {
                   "description": {
                     "en": "Unauthorized.",
-                    "pt": "Não autorizado.",
-                    "es": "No autorizado."
+                    "pt": "Unauthorized.",
+                    "es": "Unauthorized."
                   },
                   "content": {
                     "application/json": {
@@ -772,8 +772,8 @@
                 "401": {
                   "description": {
                     "en": "Unauthorized.",
-                    "pt": "Não autorizado.",
-                    "es": "No autorizado."
+                    "pt": "Unauthorized.",
+                    "es": "Unauthorized."
                   },
                   "content": {
                     "application/json": {
@@ -812,9 +812,9 @@
                 "reporting"
               ],
               "description": {
-                "en": "Use the 'file_name' attribute, and you can download any of your reports",
-                "pt": "Utilize o atributo 'file_name' e você poderá baixar qualquer um dos seus relatórios",
-                "es": "Utilice el atributo 'file_name' y podrá descargar cualquiera de sus reportes"
+                "en": "Use the 'file_name' attribute, and you can download any of your reports. The response to this request will result in the download of the file corresponding to your report",
+                "pt": "Utilize o atributo 'file_name' e você poderá baixar qualquer um dos seus relatório. A resposta a esta solicitação resultará no download do arquivo correspondente ao seu relatório",
+                "es": "Utilice el atributo 'file_name' y podrá descargar cualquiera de sus reportes. La respuesta a esta solicitud dará como resultado la descarga del archivo correspondiente a su reporte"
               },
               "parameters": [
                 {
@@ -870,8 +870,8 @@
                 "401": {
                   "description": {
                     "en": "Unauthorized.",
-                    "pt": "Não autorizado.",
-                    "es": "No autorizado."
+                    "pt": "Unauthorized.",
+                    "es": "Unauthorized."
                   },
                   "content": {
                     "application/json": {
