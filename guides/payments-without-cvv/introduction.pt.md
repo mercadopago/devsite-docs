@@ -1,4 +1,4 @@
-# Pagamentos com cartões sem CVV
+# Pagamentos automáticos
 
 Esta documentação tem o objetivo de oferecer todas as ferramentas necessárias para realizar a integração da solução de pagamentos sem a necessidade de utilizar CVV (_Card Verification Value_) do cartão para pagamentos recorrentes.
 
@@ -8,7 +8,14 @@ Esta documentação tem o objetivo de oferecer todas as ferramentas necessárias
 >
 > Esta documentação destina-se apenas ao uso interno da equipe porque é um produto exclusivo. Para mais detalhes, entre em contato com a equipe comercial ou de integrações.
 
+----[mlb]----
 Com os pagamentos sem CVV, é possível realizar cobranças recorrentes (mensalidades escolares, contas de serviços utilitários, etc) com o Mercado Pago, tendo a liberdade de adaptar a solução da forma mais ótima para o seu negócio. A pré-aprovação só está disponível por meio do checkout personalizado, ou seja, via utilização do [Checkout Transparente](/developers/pt/docs/checkout-api/landing) ou [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing).
+
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+Com os pagamentos sem CVV, é possível realizar cobranças recorrentes (mensalidades escolares, contas de serviços utilitários, etc) com o Mercado Pago, tendo a liberdade de adaptar a solução da forma mais ótima para o seu negócio. A pré-aprovação só está disponível por meio do checkout personalizado, ou seja, via utilização do [Checkout API](/developers/pt/docs/checkout-api/landing) ou [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing).
+
+------------
 
 Além disso, o vendedor deve cumprir as seguintes políticas de integração do Mercado Pago:
 

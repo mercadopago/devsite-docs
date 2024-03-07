@@ -3,6 +3,12 @@
 The `authorization_code` flow is characterized by the intervention of the seller to explicitly authorize the application's access to their data and by the use of a code granted by the authentication server so that the application can obtain an access token and an associated refresh token.
  
 Because it is a redirect-based flow, you must allow interaction with the seller's browser and receive the request through the authorization server redirect. In this flow, the application requests the seller's express consent to access the data by opening a web page in which the requested areas to be accessed are made explicit.
+
+> WARNING
+>
+> Important
+>
+> Remember that you will use sensitive information from your sellers. Make sure you store it safely. Do not use it in the authentication URL and manage the entire process only from your server.
   
 Once access is allowed, the server generates an access code that reaches the application through a redirect. In this step, the application requests access to the authentication server by sending the obtained code and application data. Once this is done, the server grants the access token and the refresh token to the application.
  
@@ -15,12 +21,6 @@ To generate the authorization code, the following requirements must be met.
 | Credentials | The [credenciales](/developers/en/guides/additional-content/your-integrations/credentials) are unique passwords with which we identify an integration in your account, and are used to securely capture payments in virtual stores and other applications. | To test and ensure the integration works, test credentials will be required. After this step, you will need production credentials to receive actual payments. |
 | Redirect URL | Address you want to forward sellers to after successfully linking them. | This is an address on your server where access tokens will be received. |
 | Authentication URL | Address where you wish to send sellers to authorize access to private data. | This is an address on the Mercado Pago server where permission is expressly granted to access private data. |
- 
-> WARNING
->
-> Attention
->
-> Remember that you will use sensitive information from your sellers. Make sure you store it safely. Do not use it in the authentication URL and manage the entire process only from your server.
 
 ## Configure PKCE
 
@@ -54,6 +54,8 @@ https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=$APP
 
 ## Get Access token
 
+Access token is the code used in different requests of public origin to access a protected resource that represents an authorization granted by a seller to a client application that contains scopes and a limited period of time for such access. Follow the steps below to obtain it.
+
 1. Edit your application so that it contains your Redirect URL. See [Edit Application](/developers/en/guides/additional-content/your-integrations/application-details).
 2. Send the authentication URL to the seller whose account you want to link to yours with the following fields:
 
@@ -75,8 +77,8 @@ https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=$APP
  
 > WARNING
 >
-> Attention
+> Important
 >
 > It is recommended to carry out this procedure all at once together with the user, since the code received by the Redirect URL after authorization is valid for 10 minutes and the access token received through the endpoint is valid for 180 days.
->
+> <br><br>
 > To generate sandbox credentials for testing, send the `test_token` parameter with the value `true`.

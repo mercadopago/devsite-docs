@@ -24,7 +24,7 @@ curl -X POST \
     'https://api.mercadopago.com/v2/wallet_connect/agreements' \
       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
       -H 'Content-Type: application/json' \
-      -H 'x-platform-id: YOUR_ACCESS_TOKEN' \
+      -H 'x-platform-id: YOUR_PLATFORM_ID' \
       -d '{
   "return_uri": "https://www.mercadopago.com/",
   "external_flow_id": "EXTERNAL_FLOW_ID",
