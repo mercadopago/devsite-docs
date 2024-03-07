@@ -4,8 +4,7 @@
     "/v1/transaction-intents/process":{
       "post":{
         "tags":[
-          "payouts",
-          "money-out"
+          "checkout-pro"
         ],
         "description": {
           "en": "Generate money out operations from a Mercado Pago account to Pix accounts, as long as the withdrawal account has funds",
