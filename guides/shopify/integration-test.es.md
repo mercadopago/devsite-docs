@@ -36,9 +36,8 @@ A continuación, te indicamos cómo probar la integración:
 ![Iniciar sesión](/images/shopify/test-login-esp.gif)
 ----[mlb]----
 Ahora, sigue los pasos según el checkout que hayas elegido para procesar los pagos:
-
-------------
 ## Checkout Pro
+------------
 ----[mlb]----
 6. Accede a la aplicación creada en el paso 5 y haz clic en **Credenciales de producción** en el menú de la izquierda. Copia el `client_id` y el `client_secret`.
 

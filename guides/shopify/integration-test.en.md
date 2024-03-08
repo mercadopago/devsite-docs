@@ -36,9 +36,8 @@ Here's how to test the integration:
 ![Login](/images/shopify/test-login-esp.gif)
 ----[mlb]----
 Now, follow the step-by-step according to the chosen checkout type to process payments:
-
-------------
 ## Checkout Pro
+------------
 ----[mlb]----
 6. Access the application created in step 5 and click on **Production credentials** in the left menu. Copy the `client_id` and `client_secret`.
 
