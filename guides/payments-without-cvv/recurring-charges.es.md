@@ -4,7 +4,7 @@ Sigue los procesos a continuación para configurar la recepción de pagos recurr
 
 ## Procesar el primer pago
 
-Para la primera transacción, siempre será necesario solicitar los datos de la tarjeta y procesar el pago con el código de seguridad (**CVV**). Una vez que esté en su backend con toda la información recopilada, es el momento de enviar la solicitud a Mercado Pago a través de nuestras APIs.
+Para la primera transacción, siempre será necesario solicitar los datos de la tarjeta y procesar el pago con el código de seguridad (**CVV**). Una vez que esté toda esta información recopilada en tu backend, es el momento de enviar la solicitud a Mercado Pago a través de nuestras APIs.
 
 Los campos mínimos requeridos para enviar son: `token`, `transaction_amount`, `installments`, `payment_method_id` y el `payer.email`. Recuerda que cuanta más información adicional envíes, mayor será la probabilidad de que el pago sea aprobado, ya que la evaluación de riesgos tendrá más datos para analizar.
 
