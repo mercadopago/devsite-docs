@@ -941,7 +941,7 @@ curl -X POST \
 
 ## Actualizar tarjetas
 
-En caso necesario, es posible agregar nuevas tarjetas a un cliente específico. Para ello, busca al cliente y establece los nuevos datos de la tarjeta utilizando uno de los códigos disponibles a continuación.
+En caso de necesitarlo, es posible agregar nuevas tarjetas a un cliente específico. Para ello, busca al cliente y establece los nuevos datos de la tarjeta utilizando uno de los códigos disponibles a continuación.
 
 > NOTE
 >
