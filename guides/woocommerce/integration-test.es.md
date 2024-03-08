@@ -83,19 +83,19 @@ Además, los pedidos se registrarán en el historial de la cuenta de prueba del 
 
 ![Credenciales de producción](/images/woocomerce/test-prod-credentials-es.png)
 
-7. Ve a la configuración del panel de WooCommerce (**WooCommerce > Mercado Pago > Integrar la tienda con Mercado Pago**).
-8. Ingresa las credenciales de producción `access_token` y `public_key` en el campo **Credenciales de producción**.
-9. En tu aplicación, haz clic en **Credenciales de prueba** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
+3. Ve a la configuración del panel de WooCommerce (**WooCommerce > Mercado Pago > Integrar la tienda con Mercado Pago**).
+4. Ingresa las credenciales de producción `access_token` y `public_key` en el campo **Credenciales de producción**.
+5. En tu aplicación, haz clic en **Credenciales de prueba** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
 
 ![Credenciales de prueba](/images/woocomerce/test-test-credentials-es.png)
 
-10. También ingresa las credenciales de prueba `access_token` y `public_key` en el campo **Credenciales de prueba**.
+6. También ingresa las credenciales de prueba `access_token` y `public_key` en el campo **Credenciales de prueba**.
 
 ![Panel](/images/woocomerce/test-woo-es.png)
 
-5. Haz clic en **Guardar y continuar**.
-6. En el panel de WooCommerce, ve al paso "4. Prueba tu tienda antes de vender" y selecciona la opción **Modo de prueba**.
-7. Haz clic en **Guardar cambios**.
-8. Accede a tu tienda y realiza una compra proporcionando información de prueba, como un número de teléfono y una dirección de correo electrónico diferentes a los asociados con tu cuenta en Mercado Pago. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/woocommerce/additional-content/your-integrations/test/cards) correspondiente.
+7. Haz clic en **Guardar y continuar**.
+8. En el panel de WooCommerce, ve al paso "4. Prueba tu tienda antes de vender" y selecciona la opción **Modo de prueba**.
+9. Haz clic en **Guardar cambios**.
+10. Accede a tu tienda y realiza una compra proporcionando información de prueba, como un número de teléfono y una dirección de correo electrónico diferentes a los asociados con tu cuenta en Mercado Pago. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/woocommerce/additional-content/your-integrations/test/cards) correspondiente.
 
 ------------

@@ -41,6 +41,9 @@ Veja abaixo como testar a integração:
 
 11. Clique em **Salvar e continuar**.
 12. Ainda no painel de Woocommerce, vá até o passo "4. Teste sua loja antes de vender" e selecione a opção **Modo vendas (produção)**.
+
+![Modo](/images/woocomerce/test-woo-mode-pt.png)
+
 13. Clique em **Salvar mudanças**.
 14. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do comprador criada no passo 3.
 
@@ -94,6 +97,9 @@ Além disso, os pedidos serão registrados no histórico da conta de teste de ve
 
 7. Clique em **Salvar e continuar**.
 8. Ainda no painel de Woocommerce, vá até o passo "4. Teste sua loja antes de vender" e selecione a opção **Modo teste**.
+
+![Modo](/images/woocomerce/test-woo-mode-pt.png)
+
 9. Clique em **Salvar mudanças**.
 10. Acesse sua loja e efetue uma compra fornecendo informações de teste, como número de telefone e um endereço de e-mail diferente daquele associado à sua conta no Mercado Pago. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/woocommerce/additional-content/your-integrations/test/cards) correspondente.
 
