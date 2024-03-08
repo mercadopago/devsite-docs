@@ -36,7 +36,7 @@ Veja abaixo como testar a integração:
 
 10. Insira também as credenciais de teste `access_token` e a `public_key` da conta de teste do vendedor no campo **Credenciais de teste**.
 
-![Painel](/images/prestashop/test-prestashop.png)
+![Painel](/images/prestashop/test-prestashop-pt.png)
 
 11. Lembre-se de ativar o modo produção no campo "Production".
 
@@ -94,7 +94,7 @@ Além disso, os pedidos serão registrados no histórico da conta de teste de ve
 
 7. Ainda no painel de Prestashop, desabilite o Modo Produção no campo "Production", ativando automaticamente o Modo Teste.
 
-![Modo](/images/prestashop/test-woo-testmode-pt.png)
+![Modo](/images/prestashop/test-prestashop-testmode-pt.png)
 
 8. Clique em **Guardar**.
 9. Acesse sua loja e efetue uma compra fornecendo informações de teste, como número de telefone e um endereço de e-mail diferente daquele associado à sua conta no Mercado Pago. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/prestashop/additional-content/your-integrations/test/cards) correspondente.

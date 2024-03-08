@@ -40,7 +40,7 @@ A continuación, te mostramos cómo probar la integración:
 
 10. Ingresa también las credenciales de prueba `access_token` y `public_key` de la cuenta de prueba del vendedor en el campo **Credenciales de prueba**.
 
-![Panel](/images/prestashop/test-prestashop.png)
+![Panel](/images/prestashop/test-prestashop-es.png)
 
 11. Recuerda activar el modo de producción en el campo "Producción".
 
