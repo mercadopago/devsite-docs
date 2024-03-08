@@ -947,7 +947,7 @@ En caso de necesitarlo, es posible agregar nuevas tarjetas a un cliente específ
 >
 > Importante
 >
-> En caso de que sea necesario eliminar una tarjeta antes de agregar nuevas tarjetas a un cliente, envía una solicitud **DELETE** al _endpoint_ [/v1/customers/{customer_id}/cards/{id}](/developers/es/reference/cards/_customers_customer_id_cards_id/delete) proporcionando el `customer_id` y el `id` de la tarjeta que deseas eliminar. Después de que la solicitud se ejecute con éxito, podrás agregar la nueva tarjeta.
+> Si necesitas eliminar una tarjeta antes de agregar nuevas tarjetas a un cliente, envía una solicitud **DELETE** al _endpoint_ [/v1/customers/{customer_id}/cards/{id}](/developers/es/reference/cards/_customers_customer_id_cards_id/delete) proporcionando el `customer_id` y el `id` de la tarjeta que deseas eliminar. Después de que la solicitud se ejecute con éxito, podrás agregar la nueva tarjeta.
 
 [[[
 ```php
