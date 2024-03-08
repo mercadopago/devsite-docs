@@ -19,7 +19,7 @@ Con los pagos sin CVV, es posible realizar cobros recurrentes (mensualidades esc
 
 Además, el vendedor debe cumplir con las siguientes políticas de integración de Mercado Pago:
 
-- El vendedor debe comunicar de manera clara e inequívoca a su base de usuarios o clientes que la plataforma de pago en su sitio web es proporcionada por Mercado Pago, indicando también los plazos, fechas y valores de los pagos recurrentes.
+- Debe comunicar de manera clara e inequívoca a su base de usuarios o clientes que la plataforma de pago en su sitio web es proporcionada por Mercado Pago, indicando también los plazos, fechas y valores de los pagos recurrentes.
 
 - En el caso de que los usuarios o clientes existentes del vendedor estén siendo migrados a la plataforma de pagos recurrentes de Mercado Pago, el vendedor debe comunicarlo por escrito indicando que Mercado Pago procesará los pagos, informando que en la factura verán el cargo como Mercado Pago o Mercado Libre.
 
