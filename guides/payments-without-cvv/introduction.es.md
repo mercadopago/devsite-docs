@@ -13,7 +13,7 @@ Con los pagos sin CVV, es posible realizar cobros recurrentes (mensualidades esc
 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-Con los pagos sin CVV, es posible realizar cobros recurrentes (mensualidades escolares, cuentas de servicios públicos, etc.) con Mercado Pago, teniendo la libertad de adaptar la solución de la forma más óptima para su negocio. La preaprobación solo está disponible a través del checkout personalizado, es decir, mediante el uso de [Checkout API](/developers/es/docs/checkout-api/landing) o [Checkout Bricks](/developers/es/docs/checkout-bricks/landing).
+Con los pagos sin CVV, es posible realizar cobros recurrentes (mensualidades escolares, cuentas de servicios públicos, etc.) con Mercado Pago, y tener la libertad de adaptar la solución de la forma más óptima para tu negocio. La preaprobación solo está disponible a través del checkout personalizado, es decir, mediante el uso de [Checkout API](/developers/es/docs/checkout-api/landing) o [Checkout Bricks](/developers/es/docs/checkout-bricks/landing).
 
 ------------
 
