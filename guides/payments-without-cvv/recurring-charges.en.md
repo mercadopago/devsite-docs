@@ -1,27 +1,27 @@
-# Realizar cobranças recorrentes
+# Create recurring charges
 
-Siga os processos abaixo para configurar o recebimento de pagamentos recorrentes de seus clientes.
+Follow the processes below to set up the receipt of recurring payments from your customers.
 
-## Processar primeiro pagamento  
+## Process the first payment 
 
-Para a primeira transação, sempre será necessário solicitar os dados do cartão e processar o pagamento com o código de segurança (**CVV**). Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs. 
+For the first transaction, it will always be necessary to request the card information and process the payment with the security code (**CVV**). Once in your backend with all the collected information, it is time to send the request to Mercado Pago through our APIs.
 
-Os campos mínimos requeridos para enviar são: `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email`. Lembrando que quanto mais informações adicionais forem transmitidas, maior será a chance do pagamento ser aprovado porque a avaliação de risco terá mais dados para avaliar.
+The minimum required fields to send are: `token`, `transaction_amount`, `installments`, `payment_method_id` and `payer.email`. Remember that the more additional information is transmitted, the higher the chance of payment approval because the risk assessment will have more data to evaluate.
 
-Deve-se levar em consideração dois fluxos para salvar os dados do cartão do cliente:
+Two flows should be considered for saving the customer's card data:
 
 ----[mlb]----
-1. No caso de a afiliação incluir o pagamento da primeira parcela, o primeiro pagamento é processado com [Checkout Transparente](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) ou [Checkout Bricks](/developers/pt/docs/checkout-bricks/card-payment-brick/payment-submission) seguindo os processos de pagamento ao Mercado Pago. Para isso, é necessário que seu backend possa receber a informação do formulário com o token gerado e os dados informados.
+1. In the case where the affiliation includes the payment of the first installment, the first payment is processed with [Checkout Transparente](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) or [Checkout Bricks](/developers/en/docs/checkout-bricks/card-payment-brick/payment-submission) following the payment processes to Mercado Pago. For this, it is necessary that your backend can receive the information from the form with the generated token and the provided data.
 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-1. No caso de a afiliação incluir o pagamento da primeira parcela, o primeiro pagamento é processado com [Checkout API](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) ou [Checkout Bricks](/developers/pt/docs/checkout-bricks/card-payment-brick/payment-submission) seguindo os processos de pagamento ao Mercado Pago. Para isso, é necessário que seu backend possa receber a informação do formulário com o token gerado e os dados informados. 
+1. In the case where the affiliation includes the payment of the first installment, the first payment is processed with [Checkout API](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) or [Checkout Bricks](/developers/en/docs/checkout-bricks/card-payment-brick/payment-submission) following the payment processes to Mercado Pago. For this, it is necessary that your backend can receive the information from the form with the generated token and the provided data.
 
 ------------
 
-2. No caso em que a afiliação não inclua o pagamento de uma primeira parcela, devem ser considerados dois fluxos: 
+2. In the case where the affiliation does not include the payment of a first installment, two flows should be considered:
 
-- Um primeiro fluxo para cartões **Visa** e **Master** com autenticação via [Zero Dollar Auth](/developers/pt/docs/zero-dollar-auth/integration).
+- A first flow for **Visa** and **Master** cards with authentication via [Zero Dollar Auth](/developers/en/docs/zero-dollar-auth/integration).
 
 [[[
 ```php
@@ -197,7 +197,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 ```
 ]]]
 
-- Um segundo fluxo com a cobrança de um valor baixo e o reembolso do dinheiro.
+- A second flow with the charge of a low amount and the refund of the money.
 
 [[[
 ```php
@@ -424,23 +424,23 @@ curl -X POST \
 ]]]
 
 ----[mlb]----
-> Para mais informações, siga os passos de nossa integração de [pagamentos com cartão do Checkout Transparente](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) ou utilizando o [Brick de Card Payment.](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering)
+> For more information, follow the steps of our integration for card payments with [Checkout Transparente](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) or using the [Card Payment Brick.](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering)
 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-> Para mais informações, siga os passos de nossa integração de [pagamentos com cartão do Checkout API](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) ou utilizando o [Brick de Card Payment.](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering)
+> For more information, follow the steps of our integration for card payments with [Checkout API](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) or using the [Card Payment Brick.](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering)
 
 ------------
 
-## Associar cartão ao cliente
+## Associate card with the customer
 
-Após processar o primeiro pagamento e garantir que o cartão é válido, crie um cliente e associe-o ao cartão utilizado no primeiro pagamento. 
+After processing the first payment and ensuring that the card is valid, create a customer and associate it with the card used in the first payment.
 
-Para criar um cliente e associá-lo ao seu cartão, é preciso enviar o `customer_id` e o `card_token`. Cada cliente será guardado com o valor `customer` e cada cartão com o valor `card`.
+To create a customer and associate it with your card, you need to send the `customer_id` and `card_token`. Each customer will be stored with the value `customer`, and each card with the value `card`.
 
-Além disso, recomendamos armazenar os dados do cartão sempre que um pagamento for concluído com sucesso. Isso permite que os dados corretos sejam armazenados para compras futuras e otimiza o processo de pagamento para o comprador.
+Additionally, we recommend storing the card data whenever a payment is successfully completed. This allows the correct data to be stored for future purchases and optimizes the payment process for the buyer.
 
-Para criar um cliente e cartão, utilize um dos SDKs abaixo.
+To create a customer and card, use one of the SDKs below.
 
 [[[
 ```php
@@ -568,17 +568,17 @@ curl -X POST \
 ]]]
 
 ----[mlb]----
-> Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout Transparente.](/developers/pt/docs/checkout-api/customer-management)
+> For more information, check the section [Cards and customers management in Checkout Transparente.](/developers/en/docs/checkout-api/customer-management)
 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-> Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout API.](/developers/pt/docs/checkout-api/customer-management)
+> For more information, check the section [Cards and customers management in Checkout API.](/developers/en/docs/checkout-api/customer-management)
 
 ------------
 
-## Obter os dados do cliente
+## Get customer data
 
-Para obter os dados do cliente como, por exemplo, ID, endereço ou data de registro, é possível obtê-los através da nossa API de clientes. Para isso, envie um **GET** com e-mail do cliente ao _endpoint_ [/v1/customers/search](/developers/pt/reference/customers/_customers_search/get) e execute a requisição ou, se preferir, utilize um dos SDKs abaixo.
+To obtain customer data such as ID, address or registration date, you can retrieve them through our customer API. To do this, send a **GET** with the customer's email to the endpoint [/v1/customers/search](/developers/en/reference/customers/_customers_search/get) and execute the request, or if you prefer, use one of the SDKs below.
 
 [[[
 ```php
@@ -653,17 +653,17 @@ curl -X GET \
 ]]]
 
 ----[mlb]----
-> Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout Transparente](/developers/pt/docs/checkout-api/customer-management) ou a seção de [renderização padrão do Brick de Card Payment.](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering)
+> For more information, check the section [Cards and customers management in Checkout Transparente.](/developers/en/docs/checkout-api/customer-management) or the section [Default rendering in Card Payment Brick.](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering)
 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-> Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout API](/developers/pt/docs/checkout-api/customer-management) ou a seção de [renderização padrão do Brick de Card Payment.](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering)
+> For more information, check the section [Cards and customers management in Checkout API.](/developers/en/docs/checkout-api/customer-management) or the section [Default rendering in Card Payment Brick.](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering)
 
 ------------
 
-## Obter o cartão associado ao cliente
+## Get the card associated with the customer
 
-Tendo obtido o ID do cliente, utilize-o para localizar o cartão associado.
+Having obtained the customer ID, use it to locate the associated card.
 
 [[[
 ```php
@@ -717,16 +717,17 @@ curl -X GET \
 ]]]
 
 ----[mlb]----
-> Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout Transparente.](/developers/pt/docs/checkout-api/customer-management)
+> For more information, check the section [Cards and customers management in Checkout Transparente.](/developers/en/docs/checkout-api/customer-management)
 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-> Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout API.](/developers/pt/docs/checkout-api/customer-management)
+> For more information, check the section [Cards and customers management in Checkout API.](/developers/en/docs/checkout-api/customer-management)
+
 ------------
 
-## Gerar um token do cartão
+## Generate a card token
 
-Após localizar os dados do cartão associado ao cliente, utilize o _Javascript_ abaixo para tokenizar o cartão utilizando o seu ID e o código de segurança.
+After locating the data of the card associated with the customer, use the JavaScript below to tokenize the card using its ID and the security code.
 
 ```javascript
 
@@ -752,27 +753,27 @@ Após localizar os dados do cartão associado ao cliente, utilize o _Javascript_
 ----[mlb]----
 > NOTE
 >
-> Importante
+> Important
 >
-> Siga o passo a passo e evite pagamentos fraudulentos com nossas recomendações para [melhorar a aprovação de seus pagamentos.](/developers/pt/docs/checkout-api/how-tos/improve-payment-approval)
+> Follow the step-by-step guide and prevent fraudulent payments with our recommendations to [improve the approval of your payments.](/developers/en/docs/checkout-api/how-tos/improve-payment-approval)
 > <br><br>
-> Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout Transparente.](/developers/pt/docs/checkout-api/customer-management)
+>  For more information, check the section [Cards and customers management in Checkout Transparente.](/developers/en/docs/checkout-api/customer-management)
 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > NOTE
 >
-> Importante
+> Important
 >
-> Siga o passo a passo e evite pagamentos fraudulentos com nossas recomendações para [melhorar a aprovação de seus pagamentos.](/developers/pt/docs/checkout-api/how-tos/improve-payment-approval)
+> Follow the step-by-step guide and prevent fraudulent payments with our recommendations to [improve the approval of your payments.](/developers/en/docs/checkout-api/how-tos/improve-payment-approval)
 > <br><br>
-> Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout API.](/developers/pt/docs/checkout-api/customer-management)
+>  For more information, check the section [Cards and customers management in Checkout API.](/developers/en/docs/checkout-api/customer-management)
 
 ------------
 
-## Realizar a cobrança
+## Create charges
 
-Utilize o token gerado anteriormente para registrar o pagamento, indicando o ID do cliente associado ao cartão.
+Use the previously generated token to register the payment, indicating the customer ID associated with the card.
 
 [[[
 ```php
@@ -930,23 +931,23 @@ curl -X POST \
 ]]]
 
 ----[mlb]----
-> Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout Transparente](/developers/pt/docs/checkout-api/customer-management) ou a seção de [renderização padrão do Brick de Card Payment.](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering)
+> For more information, check the section [Cards and customers management in Checkout Transparente.](/developers/en/docs/checkout-api/customer-management) or the section [Default rendering in Card Payment Brick.](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering)
 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-> Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout API](/developers/pt/docs/checkout-api/customer-management) ou a seção de [renderização padrão do Brick de Card Payment.](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering)
+> For more information, check the section [Cards and customers management in Checkout API.](/developers/en/docs/checkout-api/customer-management) or the section [Default rendering in Card Payment Brick.](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering)
 
 ------------
 
-## Atualizar cartões
+## Update cards
 
-Caso necessário, é possível adicionar novos cartões a um determinado cliente. Para isso, busque o cliente e defina os novos dados de cartão utilizando um dos códigos disponíveis abaixo.
+If necessary, it is possible to add new cards to a specific customer. To do this, locate the customer and define the new card details using one of the available codes below.
 
 > NOTE
 >
-> Importante
+> Important
 >
-> Caso seja necessário excluir um cartão antes de adicionar novos cartões a um cliente, envie um **DELETE** ao _endpoint_ [/v1/customers/{customer_id}/cards/{id}](/developers/pt/reference/cards/_customers_customer_id_cards_id/delete) fornecendo o `customer_id` e o `id` do cartão que deseja excluir. Após a execução bem-sucedida da requisição, você poderá adicionar o novo cartão.
+> If it is necessary to delete a card before adding new cards to a customer, send a **DELETE** to the endpoint [/v1/customers/{customer_id}/cards/{id}](/developers/en/reference/cards/_customers_customer_id_cards_id/delete) providing the `customer_id` and `id` of the card you want to delete. After the successful execution of the request, you can add the new card.
 
 [[[
 ```php
@@ -1078,10 +1079,10 @@ curl -X POST \
 ]]]
 
 ----[mlb]----
-> Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout Transparente.](/developers/pt/docs/checkout-api/customer-management)
+> For more information, check the section [Cards and customers management in Checkout Transparente.](/developers/en/docs/checkout-api/customer-management)
 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-> Para mais informações, veja a seção de [Gestão de cartões e clientes do Checkout API.](/developers/pt/docs/checkout-api/customer-management)
+> For more information, check the section [Cards and customers management in Checkout API.](/developers/en/docs/checkout-api/customer-management)
 
 ------------

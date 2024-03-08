@@ -578,7 +578,7 @@ curl -X POST \
 
 ## Obtener los datos del cliente
 
-Para obtener los datos del cliente, como el ID, la dirección o la fecha de registro, puedes obtenerlos a través de nuestra API de clientes. Para ello, envía un GET con el correo electrónico del cliente al endpoint [/v1/customers/search](/developers/es/reference/customers/_customers_search/get) y realiza la solicitud, o si lo prefieres, utiliza uno de los siguientes SDK.
+Para obtener los datos del cliente, como el ID, la dirección o la fecha de registro, puedes obtenerlos a través de nuestra API de clientes. Para ello, envía un **GET** con el correo electrónico del cliente al _endpoint_ [/v1/customers/search](/developers/es/reference/customers/_customers_search/get) y realiza la solicitud, o si lo prefieres, utiliza uno de los siguientes SDK.
 
 [[[
 ```php
@@ -947,7 +947,7 @@ En caso necesario, es posible agregar nuevas tarjetas a un cliente específico. 
 >
 > Importante
 >
-> En caso de que sea necesario eliminar una tarjeta antes de agregar nuevas tarjetas a un cliente, envía una solicitud **DELETE** al endpoint [/v1/customers/{customer_id}/cards/{id}](/developers/es/reference/cards/_customers_customer_id_cards_id/delete) proporcionando el `customer_id` y el `id` de la tarjeta que deseas eliminar. Después de que la solicitud se ejecute con éxito, podrás agregar la nueva tarjeta.
+> En caso de que sea necesario eliminar una tarjeta antes de agregar nuevas tarjetas a un cliente, envía una solicitud **DELETE** al _endpoint_ [/v1/customers/{customer_id}/cards/{id}](/developers/es/reference/cards/_customers_customer_id_cards_id/delete) proporcionando el `customer_id` y el `id` de la tarjeta que deseas eliminar. Después de que la solicitud se ejecute con éxito, podrás agregar la nueva tarjeta.
 
 [[[
 ```php
