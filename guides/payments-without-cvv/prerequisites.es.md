@@ -1,6 +1,6 @@
 # Requisitos previos
 
-Para integrar la solución de pagos sin la necesidad de utilizar el CVV (Card Verification Value) de la tarjeta para pagos recurrentes, es necesario cumplir con los requisitos enumerados a continuación.
+Para integrar la solución de pagos sin la necesidad de utilizar el CVV (Card Verification Value) de la tarjeta en pagos recurrentes, es necesario cumplir con los requisitos enumerados a continuación.
 
 | Requisitos | Descripción |
 | --- | --- |
