@@ -1,6 +1,6 @@
 # Análisis de pagos
 
-Si un pago automático es rechazado, recomendamos seguir una lógica de intentos basada en el estado del rechazo. Por ejemplo, si el pago fue rechazado debido a una tarjeta vencida, no tiene sentido intentar nuevamente con la misma tarjeta y se deberá solicitar al cliente que proporcione otra tarjeta para procesar cargos futuros.
+Si un pago automático es rechazado, recomendamos seguir una lógica de intentos basada en el estado del rechazo. Por ejemplo, si el pago fue rechazado debido a una tarjeta vencida, no tiene sentido intentar nuevamente con la misma tarjeta y se deberá solicitar al cliente que proporcione otra para procesar cargos futuros.
 
 En caso de rechazo por fondos insuficientes, se puede intentar nuevamente con la misma tarjeta siempre que se resuelva el problema del límite para la tarjeta utilizada.
 
