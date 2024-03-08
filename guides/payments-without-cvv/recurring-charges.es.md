@@ -294,7 +294,7 @@ client.create(paymentCreateRequest, requestOptions);
 ```
 ```ruby
 ===
-Encontre o estado do pagamento no campo _status_.
+Encuentra el estado del pago en el campo  _status_.
 ===
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
