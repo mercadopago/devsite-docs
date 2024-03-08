@@ -434,7 +434,7 @@ curl -X POST \
 
 ## Asociar tarjeta al cliente
 
-Después de procesar el primer pago y asegurarse de que la tarjeta sea válida, crea un cliente y asígnales la tarjeta utilizada en el primer pago.
+Después de procesar el primer pago y asegurarte de que la tarjeta sea válida, crea un cliente y asígnale la tarjeta utilizada en el primer pago.
 
 Para crear un cliente y asociarlo con su tarjeta, debes enviar el `customer_id` y el `card_token`. Cada cliente se almacenará con el valor `customer` y cada tarjeta con el valor `card`.
 
