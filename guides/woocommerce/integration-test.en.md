@@ -43,6 +43,9 @@ Here's how to test the integration:
 ![Panel](/images/woocomerce/test-woo-es.png)
 11. Click on **Save and continue**.
 12. In the WooCommerce panel, go to step "4. Test your store before selling" and select the option **Sales mode (production)**.
+
+![Modo](/images/woocomerce/test-woo-modeprod-es.png)
+
 13. Click on **Save changes**.
 14. Open a new incognito window and log in to Mercado Pago using the buyer test account created in step 3.
 ----[mlb]----
@@ -95,6 +98,9 @@ Additionally, the orders will be recorded in the test seller's Mercado Pago acco
 
 7. Click on **Save and continue**.
 8. In the WooCommerce panel, go to step "4. Test your store before selling" and select the **Test mode** option.
+
+![Modo](/images/woocomerce/test-woo-testmode-es.png)
+
 9. Click on **Save changes**.
 10. Access your store and make a purchase by providing test information, such as a different phone number and email address than the one associated with your Mercado Pago account. In the "Documento" field, select the **OTHER** option and enter 9 digits. Also, use the test cards available in the [documentation](/developers/en/docs/woocommerce/additional-content/your-integrations/test/cards) corresponding.
 

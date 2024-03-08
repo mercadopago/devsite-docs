@@ -32,7 +32,7 @@ Here's how to test the integration:
 
 ![Production credentials](/images/prestashop/test-prod-credentials-es.png)
 
-7. Go to the PrestaShop panel settings (**Modules > Module Manager > Payment > Mercado Pago > Configure**).
+7. Go to the PrestaShop panel settings (**Modules > Module Manager**). Locate the Mercado Pago module in the "Payment" section, click on the downward arrow, and select **Configure**.
 8. Enter the production credentials `access_token` and `public_key` of the seller's test account in the **Production credentials** field.
 9. In the application created in step 5, click on **Test credentials** in the left menu. Copy the `access_token` and `public_key`.
 
@@ -42,14 +42,18 @@ Here's how to test the integration:
 
 ![Panel](/images/prestashop/test-prestashop.png)
 
-11. Click on **Save**.
-12. Open a new incognito window and log in to Mercado Pago using the buyer's test account created in step 3.
+11. Remember to keep the production mode enabled in the "Production" field.
+
+![Panel](/images/prestashop/test-prestashop-modeprod-es.png)
+
+12. Click on **Save**.
+13. Open a new incognito window and log in to Mercado Pago using the buyer's test account created in step 3.
 ----[mlb]----
-13. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as CPF, RG, phone, and email from the buyer's test account. Also, use the test cards available in the [documentation](/developers/en/docs/prestashop/additional-content/your-integrations/test/cards) corresponding.
+14. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as CPF, RG, phone, and email from the buyer's test account. Also, use the test cards available in the [documentation](/developers/en/docs/prestashop/additional-content/your-integrations/test/cards) corresponding.
 
 ------------
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
-13. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as phone and email from the buyer's test account. In "Documento," select the option **OTRO** and enter 9 digits. Also, use the test cards available in the [documentation](/developers/en/docs/prestashop/additional-content/your-integrations/test/cards) corresponding.
+14. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as phone and email from the buyer's test account. In "Documento," select the option **OTRO** and enter 9 digits. Also, use the test cards available in the [documentation](/developers/en/docs/prestashop/additional-content/your-integrations/test/cards) corresponding.
 
 ------------
 ----[mlb]----
@@ -78,16 +82,25 @@ Additionally, the orders will be recorded in the test seller's Mercado Pago acco
 ## Checkout API
 
 1. Access **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** in the Mercado Pago admin and select the application you want to test.
-2. Click on **Test credentials** in the left menu. Copy the `access_token` and `public_key`.
+2. Click on **Production credentials** in the left menu. Copy the `access_token` and `public_key`.
+
+![Production credentials](/images/prestashop/test-prod-credentials-es.png)
+
+3. Go to the PrestaShop panel settings (**Modules > Module Manager**). Locate the Mercado Pago module in the "Payment" section, click on the downward arrow, and select **Configure**.
+4. Enter the production credentials `access_token` and `public_key` in the **Production credentials** field.
+5. In your application, click on **Test credentials** in the left menu. Copy the `access_token` and `public_key`.
 
 ![Test credentials](/images/prestashop/test-test-credentials-es.png)
 
-3. Go to the settings panel in PrestaShop (**Modules > Module Manager > Payment > Mercado Pago > Configure**).
-4. Enter the test credentials `access_token` and `public_key` for your application.
+6. Also, enter the test credentials `access_token` and `public_key` in the **Test credentials** field.
 
-![Panel](/images/prestashop/test-prestashop.png)
+![Panel](/images/prestashop/test-woo-es.png)
 
-5. Click on **Save**.
-6. Access your store and make a purchase by providing test information, such as a different phone number and email address than the one associated with your Mercado Pago account. In the "Documento" field, select the **OTHER** option and enter 9 digits. Also, use the test cards available in the [documentation](/developers/en/docs/prestashop/additional-content/your-integrations/test/cards) corresponding.
+7. In the Prestashop panel, disable Production Mode in the "Production" field, automatically activating Test Mode.
+
+![Modo](/images/prestashop/test-woo-testmode-es.png)
+
+8. Click on **Save**.
+9. Access your store and make a purchase by providing test information, such as a different phone number and email address than the one associated with your Mercado Pago account. In the "Documento" field, select the **OTHER** option and enter 9 digits. Also, use the test cards available in the [documentation](/developers/en/docs/prestashop/additional-content/your-integrations/test/cards) corresponding.
 
 ------------
