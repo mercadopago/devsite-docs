@@ -6,7 +6,7 @@ Esta documentación tiene como objetivo proporcionar todas las herramientas nece
 > 
 > Atención
 > 
-> Esta documentación está destinada únicamente al uso interno del equipo, ya que es un producto exclusivo. Para obtener más detalles, comuníquese con el equipo comercial o de integraciones.
+> Esta documentación está destinada únicamente al uso interno del equipo, ya que es un producto exclusivo. Para obtener más detalles, comunícate con el equipo comercial o de integraciones.
 
 ----[mlb]----
 Con los pagos sin CVV, es posible realizar cobros recurrentes (mensualidades escolares, cuentas de servicios públicos, etc.) con Mercado Pago, teniendo la libertad de adaptar la solución de la forma más óptima para su negocio. La preaprobación solo está disponible a través del checkout personalizado, es decir, mediante el uso de [Checkout Transparente](/developers/es/docs/checkout-api/landing) o [Checkout Bricks](/developers/es/docs/checkout-bricks/landing).
