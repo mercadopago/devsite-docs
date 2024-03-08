@@ -99,7 +99,7 @@ Además, los pedidos se registrarán en el historial de la cuenta de prueba del 
 
 7. En el panel de Prestashop, desactiva el Modo Producción en el campo "Producción", activando automáticamente el Modo de Pruebas.
 
-![Modo](/images/prestashop/test-woo-testmode-es.png)
+![Modo](/images/prestashop/test-prestashop-testmode-es.png)
 
 8. Haz clic en **Guardar**.
 9. Accede a tu tienda y realiza una compra proporcionando información de prueba, como un número de teléfono y una dirección de correo electrónico diferentes a los asociados con tu cuenta en Mercado Pago. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. También utiliza las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/prestashop/additional-content/your-integrations/test/cards) correspondiente.

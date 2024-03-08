@@ -55,7 +55,7 @@ Here's how to test the integration:
 >
 > During testing, you will be operating in the production environment. However, this is a test in which you will be using fictional credentials to simulate real scenarios. After completing the tests, remember to replace the seller's credentials (both production and test), entered in the plugin panel in step 9, with the real credentials from your Mercado Pago account. This action will allow you to continue selling in your store and avoid confusion.
 
-After completing a test purchase using either Checkout Pro or Checkout----[mlb]---- Transparente------------ ----[mla, mpe, mco, mlm, mco, mlu, mlc]----API------------, the approval of the purchase will be visible in the Adobe Administrative Panel, except for purchases made through offline methods----[mlb]---- and Pix------------, which will remain in pending status.
+After completing a test purchase using either Checkout Pro or Checkout Transparente, the approval of the purchase will be visible in the Adobe Administrative Panel, except for purchases made through offline methods and Pix which will remain in pending status.
 
 Additionally, the orders will be recorded in the order history of the Mercado Pago seller's test account.
 
