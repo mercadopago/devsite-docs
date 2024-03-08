@@ -4,7 +4,7 @@ Si un pago automático es rechazado, recomendamos seguir una lógica de intentos
 
 En caso de rechazo por fondos insuficientes, se puede intentar nuevamente con la misma tarjeta siempre que se resuelva el problema del límite para la tarjeta utilizada.
 
-En cada caso, es importante comunicar a su cliente el resultado del pago y proporcionar instrucciones para la próxima etapa. Informaremos un `HTTP Status 201 OK` de que el pago se creó correctamente y enviaremos un código de resultado para que pueda redirigir al cliente a la página con el mensaje correcto.
+Siempre es importante comunicar a tu cliente el resultado del pago y proporcionar instrucciones para la próxima etapa. Informaremos un `HTTP Status 201 OK` cuando el pago se cree correctamente y un código de resultado para que puedas redirigir al cliente a la página con el mensaje correcto.
 
 > NOTE
 >
