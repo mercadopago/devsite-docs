@@ -10,4 +10,4 @@ En cada caso, es importante comunicar a su cliente el resultado del pago y propo
 >
 > Importante
 >
-> Siempre que se procese un pago y haya alguna novedad sobre el proceso, Mercado Pago enviará una notificación para que pueda actualizar sus sistemas. Consulte la documentación de [notificaciones Webhooks](/developers/es/docs/your-integrations/notifications/webhooks) para saber cómo configurar la recepción de estas notificaciones.
+> Siempre que se procese un pago y haya alguna novedad sobre el proceso, Mercado Pago enviará una notificación para que puedas actualizar tus sistemas. Consulta la documentación de [notificaciones Webhooks](/developers/es/docs/your-integrations/notifications/webhooks) para saber cómo configurar la recepción de estas notificaciones.
