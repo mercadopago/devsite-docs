@@ -438,7 +438,7 @@ Después de procesar el primer pago y asegurarte de que la tarjeta sea válida, 
 
 Para crear un cliente y asociarlo con su tarjeta, debes enviar el `customer_id` y el `card_token`. Cada cliente se almacenará con el valor `customer` y cada tarjeta con el valor `card`.
 
-Además, recomendamos almacenar los datos de la tarjeta siempre que se complete con éxito un pago. Esto permite que se almacenen los datos correctos para compras futuras y optimiza el proceso de pago para el comprador.
+Además, recomendamos almacenar los datos de la tarjeta siempre que se complete con éxito un pago. Esto permite que se guarden los datos correctos para compras futuras y optimiza el proceso de pago para el comprador.
 
 Para crear un cliente y una tarjeta, utiliza uno de los siguientes SDK.
 
