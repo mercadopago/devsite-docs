@@ -69,12 +69,6 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 
 The capture of card data is done through the CardForm of the MercadoPago.js library. Our CardForm will connect to your HTML payment form, making it easy to obtain and validate all the data needed to process the payment.
 
-> WARNING
->
-> Attention
->
-> The cardtoken can **only be used once** and expires within **7 days**.
-
 To add the payment form, insert the HTML below directly into the project.
 
 ----[mla, mlu, mpe, mco, mlb, mlc]----
@@ -156,7 +150,7 @@ After adding the payment form, you will need to initialize it. This step consist
 >
 > Important
 >
-> When submitting the form, a token is generated securely representing the card data. You can access it via the `cardForm.getCardFormData()` function, as shown abive in the `onSubmit` callback. Furthermore, this token is also stored in a hidden input within the form where it can be found with the name `MPHiddenInputToken`.
+> When submitting the form, a token, also known as **cardtoken**, is generated, securely representing the card data. You can access it via the `cardForm.getCardFormData()` function, as shown abive in the `onSubmit` callback. Furthermore, this token is also stored in a hidden input within the form where it can be found with the name `MPHiddenInputToken`. Keep in mind that the cardtoken can **only be used once** and expires within **7 days**.
 
 ----[mla, mlu, mpe, mco, mlb, mlc]----
 [[[
