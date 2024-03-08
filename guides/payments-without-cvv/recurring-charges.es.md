@@ -399,7 +399,7 @@ print(payment)
 ```
 ```curl
 ===
-Encontre o status do pagamento no campo _status_.
+Encuentra el estado del pago en el campo _status_.
 ===
  
 curl -X POST \
