@@ -19,7 +19,7 @@ Se deben considerar dos flujos para guardar los datos de la tarjeta del cliente:
 
 ------------
 
-2. En el caso de que la afiliación no incluya el pago de una primera cuota, deben considerarse dos flujos:
+2. En caso de que la afiliación no incluya el pago de una primera cuota, deben considerarse dos flujos:
 
 - Un primer flujo para tarjetas **Visa** y **Master** con autenticación a través de [Zero Dollar Auth](/developers/es/docs/zero-dollar-auth/integration).
 
