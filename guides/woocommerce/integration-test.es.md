@@ -41,10 +41,15 @@ A continuación, te explicamos cómo probar la integración:
 10. También ingresa las credenciales de prueba `access_token` y `public_key` de la cuenta de prueba del vendedor en el campo **Credenciales de prueba**.
 
 ![Panel](/images/woocomerce/test-woo-es.png)
+
 11. Haz clic en **Guardar y continuar**.
+
 12. En el panel de WooCommerce, ve al paso "4. Prueba tu tienda antes de vender" y selecciona la opción **Modo de ventas (producción)**.
+
 13. Haz clic en **Guardar cambios**.
+
 14. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago utilizando la cuenta de prueba del comprador creada en el paso 3.
+
 ----[mlb]----
 15. En la misma ventana iniciada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como CPF, RG, número de teléfono y correo electrónico de la cuenta de prueba del comprador. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/woocommerce/additional-content/your-integrations/test/cards) correspondiente.
 
