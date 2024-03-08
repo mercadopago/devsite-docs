@@ -578,7 +578,7 @@ curl -X POST \
 
 ## Obtener los datos del cliente
 
-Para obtener los datos del cliente, como el ID, la dirección o la fecha de registro, puedes obtenerlos a través de nuestra API de clientes. Para ello, envía un **GET** con el correo electrónico del cliente al _endpoint_ [/v1/customers/search](/developers/es/reference/customers/_customers_search/get) y realiza la solicitud, o si lo prefieres, utiliza uno de los siguientes SDK.
+Puedes obtener los datos del cliente, como el ID, la dirección o la fecha de registro, a través de nuestra API de clientes. Para ello, envía un **GET** con el correo electrónico del cliente al _endpoint_ [/v1/customers/search](/developers/es/reference/customers/_customers_search/get) y realiza la solicitud, o si lo prefieres, utiliza uno de los siguientes SDK.
 
 [[[
 ```php
