@@ -2704,7 +2704,7 @@
       "get": {
         "java": "MercadoPagoConfig.setAccessToken(\"YOUR_ACCESS_TOKEN\");\nPaymentClient client = new PaymentClient();\nLong paymentId = 123456789L;\nclient.get(paymentId);",
         "php": "MercadoPagoConfig::setAccessToken(\"ACCESS_TOKEN\");\n$client = new PaymentClient();\n$id = 123;\n$payment = $client->get($id);",
-        "js": "const client = new MercadoPago({ accessToken: config.access_token });\nconst payment = new Payment(client);\npayment.get({\nid: '123456789'\n}).then(console.log).catch(console.log);",
+        "js": "const client = new MercadoPago({ accessToken: config.access_token });\nconst payment = new Payment(client);\npayment.get({\n            id: '123456789' \n}).then(console.log).catch(console.log);",
         "ruby": "require 'mercadopago';\nsdk = Mercadopago::SDK.new(\"ENV_ACCESS_TOKEN\");\npayment_response = sdk.payment.get(123);\npayment_response[:response]",
         "csharp": "MercadoPagoConfig.AccessToken = \"ENV_ACCESS_TOKEN\";\nvar client = new PaymentClient();\nPayment payment = await client.GetAsync(123);",
         "python": "import mercadopago;\nsdk = mercadopago.SDK(\"ENV_ACCESS_TOKEN\");\nrequest = sdk.payment().get(123); print(request);",
