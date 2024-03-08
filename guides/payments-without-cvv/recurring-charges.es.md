@@ -1,6 +1,6 @@
 # Realizar cobranças recorrentes
 
-Siga los procesos a continuación para configurar la recepción de pagos recurrentes de sus clientes.
+Sigue los procesos a continuación para configurar la recepción de pagos recurrentes de tus clientes.
 
 ## Procesar el primer pago
 
