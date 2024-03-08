@@ -1,4 +1,4 @@
-# Realizar cobranças recorrentes
+# Realizar cobros recurrentes
 
 Sigue los procesos a continuación para configurar la recepción de pagos recurrentes de tus clientes.
 
