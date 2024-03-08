@@ -11,7 +11,7 @@ Los campos mínimos requeridos para enviar son: `token`, `transaction_amount`, `
 Se deben considerar dos flujos para guardar los datos de la tarjeta del cliente:
 
 ----[mlb]----
-1. En el caso de que la afiliación incluya el pago de la primera cuota, el primer pago se procesa con [Checkout Transparente](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform) o [Checkout Bricks](/developers/es/docs/checkout-bricks/card-payment-brick/payment-submission) siguiendo los procesos de pago a Mercado Pago. Para ello, su backend debe poder recibir la información del formulario con el token generado y los datos proporcionados.
+1. En caso de que la afiliación incluya el pago de la primera cuota, este primer pago se procesa con [Checkout Transparente](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform) o [Checkout Bricks](/developers/es/docs/checkout-bricks/card-payment-brick/payment-submission) siguiendo los procesos de pago a Mercado Pago. Para ello, tu backend debe poder recibir la información del formulario con el token generado y los datos proporcionados.
 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
