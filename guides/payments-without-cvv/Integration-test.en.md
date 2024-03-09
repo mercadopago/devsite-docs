@@ -1,8 +1,12 @@
+# Integration test
+
+It is crucial to test the entire flow before going into production, ensuring that payment creation is done correctly and that messages are effective in communicating with the user. A good experience for your customers at the checkout helps improve conversion.
+
+To perform a test purchase, it is necessary to use the **test credentials of your production user**. To obtain them, access **Application details > Credentials** within the [Developer dashboard](/developers/panel/app) or in your Mercado Pago account by accessing [Your Business > Settings > Management and Administration > Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
+
 You can use test cards of local payment methods and simulate different payment responses, without the need to use a real card.
  
-For this, depending on your country, use one of the **credit** or **debit** cards we provide below.
-
-### Credit cards
+For this, depending on your country, use one of the **credit** cards we provide below.
 
 ----[mla]----
 
@@ -60,17 +64,9 @@ For this, depending on your country, use one of the **credit** or **debit** card
 
 ------------
 
-### Debit cards
+To **test different payment results**, fill in the desired status in the cardholder's name (field `card_holder_name`):
 
 ----[mla]----
-
-| Card | Number | Security code | Expiration date |
-| :--- | :---: | :---: | :---: |
-| Mastercard | 5287 3383 1025 3304 | 123 | 11/25 |
-| Visa | 4002 7686 9439 5619 | 123 | 11/25 |
-
-To **test different payment results**, fill in the desired status in the cardholder's name (field `card_holder_name`):
- 
 | Payment Status | Description | Identity document |
 | --- | --- | --- |
 | `APRO` | Approved payment | (DNI) 12345678|
@@ -84,12 +80,6 @@ To **test different payment results**, fill in the desired status in the cardhol
 
 ------------
 ----[mlb]----
-| Card | Number | Security code | Expiration date |
-| :--- | :---: | :---: | :---: |
-| Elo | 5067 7667 8388 8311 | 123 | 11/25 |
-
-To **test different payment results**, fill in the desired status in the cardholder's name (field `card_holder_name`):
- 
 | Payment Status | Description | Identity document |
 | --- | --- | --- |
 | `APRO` | Approved payment | (CPF) 12345678909 |
@@ -103,13 +93,6 @@ To **test different payment results**, fill in the desired status in the cardhol
 
 ------------
 ----[mlc]----
-| Card | Number | Security code | Expiration date |
-| :--- | :---: | :---: | :---: |
-| Mastercard | 5241 0198 2664 6950 | 123 | 11/25 |
-| Visa | 4023 6535 2391 4373 | 123 | 11/25 |
-
-To **test different payment results**, fill in the desired status in the cardholder's name (field `card_holder_name`):
- 
 | Payment Status | Description | Identity document |
 | --- | --- | --- |
 | `APRO` | Approved payment | (otro) 123456789 |
@@ -123,12 +106,6 @@ To **test different payment results**, fill in the desired status in the cardhol
 
 ------------
 ----[mco]----
-| Card | Number | Security code | Expiration date |
-| :--- | :---: | :---: | :---: |
-| Visa | 4915 1120 5524 6507 | 123 | 11/25 |
-
-To **test different payment results**, fill in the desired status in the cardholder's name (field `card_holder_name`):
- 
 | Payment Status | Description | Identity document |
 | --- | --- | --- |
 | `APRO` | Approved payment | 123456789 |
@@ -142,13 +119,6 @@ To **test different payment results**, fill in the desired status in the cardhol
 
 ------------
 ----[mlm]----
-| Card | Number | Security code | Expiration date |
-| :--- | :---: | :---: | :---: |
-| Mastercard | 5579 0534 6148 2647 | 123 | 11/25 |
-| Visa | 4189 1412 2126 7633 | 123 | 11/25 |
-
-To **test different payment results**, fill in the desired status in the cardholder's name (field `card_holder_name`):
- 
 | Payment Status | Description |
 | --- | --- |
 | `APRO` | Approved payment |
@@ -162,12 +132,6 @@ To **test different payment results**, fill in the desired status in the cardhol
 
 ------------
 ----[mlu]----
-| Card | Number | Security code | Expiration date |
-| :--- | :---: | :---: | :---: |
-| Visa | 4213 0163 1470 6756 | 123 | 11/25 |
-
-To **test different payment results**, fill in the desired status in the cardholder's name (field `card_holder_name`):
- 
 | Payment Status | Description | Identity document |
 | --- | --- | --- |
 | `APRO` | Approved payment | (CI) 12345678 <br> (otro) 123456789 |
@@ -181,12 +145,6 @@ To **test different payment results**, fill in the desired status in the cardhol
 
 ------------
 ----[mpe]----
-| Card | Number | Security code | Expiration date |
-| :--- | :---: | :---: | :---: |
-| Mastercard | 5178 7816 2220 2455 | 123 | 11/25 |
-
-To **test different payment results**, fill in the desired status in the cardholder's name (field `card_holder_name`):
- 
 | Payment Status | Description | Identity document |
 | --- | --- | --- |
 | `APRO` | Approved payment | 123456789 |
@@ -197,5 +155,14 @@ To **test different payment results**, fill in the desired status in the cardhol
 | `SECU` | Declined for invalid security code | - |
 | `EXPI` | Declined due to due date issue | - |
 | `FORM` | Declined due to form error | - |
+
+------------
+
+----[mlb]----
+> For more information about the testing process, visit the **Make test purchase** section in [Checkout Transparente](/developers/en/docs/checkout-api/integration-test/make-test-purchase) or [Checkout Bricks.](/developers/en/docs/checkout-bricks/integration-test/test-payment-flow)
+
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> For more information about the testing process, visit the **Make test purchase** section in [Checkout API](/developers/en/docs/checkout-api/integration-test/make-test-purchase) or [Checkout Bricks.](/developers/en/docs/checkout-bricks/integration-test/test-payment-flow)
 
 ------------

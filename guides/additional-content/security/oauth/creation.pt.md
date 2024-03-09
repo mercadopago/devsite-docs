@@ -2,11 +2,17 @@
  
 O fluxo `authorization_code` se caracteriza pela intervenção do vendedor para autorizar de forma explícita o acesso aos seus dados por parte da aplicação e pelo uso de um código concedido pelo servidor de autenticação para que a aplicação possa obter um _Access token_ e um refresh token associado.
  
-Por ser um fluxo baseado em redirecionamento, você deve ser capaz de permitir interação com o navegador do vendedor e de receber o request através do redirecionamento por parte do servidor de autorização. Neste fluxo, a aplicação solicita ao vendedor o consentimento expresso para acessar os dados através da abertura de uma página web que deixa explícito os scopes aos quais se está solicitando acesso.
+Por ser um fluxo baseado em redirecionamento, você deve ser capaz de permitir interação com o navegador do vendedor e de receber o `request` através do redirecionamento por parte do servidor de autorização. Neste fluxo, a aplicação solicita ao vendedor o consentimento expresso para acessar os dados através da abertura de uma página web que deixa explícito os scopes aos quais se está solicitando acesso.
+
+> WARNING
+>
+> Importante
+>
+> Lembre que você vai utilizar informações sensíveis dos seus vendedores. Certifique-se de resguardá-las de maneira segura. Não as utilize na URL de autenticação e gerencie todo processo somente a partir do seu servidor.
   
-Uma vez permitido o acesso, o servidor gera um código de acesso que mediante um redirecionamento chega à aplicação. Nesta etapa, a aplicação solicita acesso ao servidor de autenticação enviando o código obtido e os dados da aplicação. Feito isso, o servidor concede o _Access token_ e o refresh token à aplicação.
+Uma vez permitido o acesso, o servidor gera um código de acesso que mediante um redirecionamento chega à aplicação. Nesta etapa, a aplicação solicita acesso ao servidor de autenticação enviando o código obtido e os dados da aplicação. Feito isso, o servidor concede o _Access token_ e o _refresh token_ à aplicação.
  
-Para gerar o authorization code é preciso atender aos requisitos abaixo.
+Para gerar o código de autorização é preciso atender aos requisitos abaixo.
  
 | Requisitos | Descrição | Especificações |
 | --- | --- | --- |
@@ -15,12 +21,6 @@ Para gerar o authorization code é preciso atender aos requisitos abaixo.
 | Credenciais | As [credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) são senhas únicas com as quais identificamos uma integração na sua conta e servem para capturar pagamentos em lojas virtuais e outras aplicações de forma segura. | Para realizar testes e garantir o funcionamento da integração, serão necessárias as credenciais de teste. Após esta etapa, você precisará das credenciais de produção para receber pagamentos reais. |
 | Redirect URL | Endereço ao qual você quer encaminhar os vendedores após tê-los vinculado corretamente. | Este é um endereço no seu servidor no qual serão recebidos os _Access tokens_. |
 | URL de autenticação | Endereço ao qual você quer encaminhar os vendedores para que realizem a autorização de acesso à dados privados. | Este é um endereço no servidor do Mercado Pago no qual será feita a permissão expressa de acesso aos dados privados. |
- 
-> WARNING
->
-> Atenção
->
-> Lembre que você vai utilizar informações sensíveis dos seus vendedores. Certifique-se de resguardá-las de maneira segura. Não as utilize na URL de autenticação e gerencie todo processo somente a partir do seu servidor.
 
 ## Configurar PKCE
 
@@ -53,6 +53,8 @@ https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=$APP
 3. Tendo enviado os códigos corretamente ao Mercado Pago, você obterá a autorização necessária para obter o _Access token_ e realizar a verificação por PKCE nas transações feitas com OAuth.
 
 ## Obter Access token
+
+O _Access token_ é o código utilizado em diferentes _requests_ públicos para acessar um recurso protegido. Ele representa uma autorização concedida por um vendedor a uma aplicação do cliente, contendo _scopes_ e um tempo de validade limitado para o acesso. Siga os passos abaixo para obtê-lo.
  
 1. Edite sua aplicação para conter sua Redirect URL. Veja [Editar aplicação](/developers/pt/guides/additional-content/your-integrations/application-details).
 2. Envie a URL de autenticação para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:
@@ -75,8 +77,8 @@ https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=$APP
  
 > WARNING
 >
-> Atenção
+> Importante
 >
 > É recomendado realizar este procedimento por completo de uma única vez em conjunto com o usuário, visto que o código recebido pela Redirect URL após a autorização tem validade de 10 minutos e o _Access token_ recebido através do endpoint tem validade de 180 dias.
-> 
+> <br><br>
 > Para gerar credenciais de sandbox para realização de testes, envie o parâmetro `test_token` com valor `true`.
