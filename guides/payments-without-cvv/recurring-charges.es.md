@@ -727,7 +727,7 @@ curl -X GET \
 
 ## Generar un token de tarjeta
 
-Después de localizar los datos de la tarjeta asociada al cliente, utiliza el código _JavaScript_ a continuación para tokenizar la tarjeta utilizando su ID y el código de seguridad.
+Después de localizar los datos de la tarjeta asociada al cliente, utiliza el código _JavaScript_ a continuación para tokenizar la tarjeta utilizando su ID y el código de seguridad. La tokenización proporciona una experiencia de pago digital más segura al reemplazar el número de la tarjeta por un número alternativo, el token.
 
 ```javascript
 

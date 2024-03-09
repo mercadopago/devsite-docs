@@ -157,4 +157,11 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 
 ------------
 
-> Para mais informações sobre o fluxo de teste, acesse a seção de **Realizar compra teste** no [Checkout Transparente](/developers/pt/docs/checkout-api/integration-test/make-test-purchase) ou no [Checkout Bricks.](/developers/pt/docs/checkout-bricks/integration-test/test-payment-flow)
+----[mlb]----
+> Para más información sobre el flujo de pruebas, accede a nuestra sección **Realizar compra de prueba** en [Checkout Transparente](/developers/es/docs/checkout-api/integration-test/make-test-purchase) o [Checkout Bricks.](/developers/es/docs/checkout-bricks/integration-test/test-payment-flow)
+
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> Para más información sobre el flujo de pruebas, accede a nuestra sección **Realizar compra de prueba** en [Checkout API](/developers/es/docs/checkout-api/integration-test/make-test-purchase) o [Checkout Bricks.](/developers/es/docs/checkout-bricks/integration-test/test-payment-flow)
+
+------------

@@ -727,7 +727,7 @@ curl -X GET \
 
 ## Generate a card token
 
-After locating the data of the card associated with the customer, use the JavaScript below to tokenize the card using its ID and the security code.
+After locating the data of the card associated with the customer, use the JavaScript below to tokenize the card using its ID and the security code. Tokenization provides a more secure digital payment experience by replacing the credit card number with an alternative number, the token.
 
 ```javascript
 

@@ -157,3 +157,12 @@ To **test different payment results**, fill in the desired status in the cardhol
 | `FORM` | Declined due to form error | - |
 
 ------------
+
+----[mlb]----
+> For more information about the testing process, visit the **Make test purchase** section in [Checkout Transparente](/developers/en/docs/checkout-api/integration-test/make-test-purchase) or [Checkout Bricks.](/developers/en/docs/checkout-bricks/integration-test/test-payment-flow)
+
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> For more information about the testing process, visit the **Make test purchase** section in [Checkout API](/developers/en/docs/checkout-api/integration-test/make-test-purchase) or [Checkout Bricks.](/developers/en/docs/checkout-bricks/integration-test/test-payment-flow)
+
+------------
