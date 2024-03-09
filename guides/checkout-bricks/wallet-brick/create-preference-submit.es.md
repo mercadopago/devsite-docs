@@ -1,6 +1,6 @@
 # Preferencia en el envío
 
-Si lo prefieres, también puedes crear la preferencia al momento de hacer clic en el botón. Esto puede ser útil en casos similares a los de _one click_, utilizando el botón directamente en la página del producto a comprar.
+Si lo prefieres, también puedes crear la preferencia al momento de hacer clic en el botón, es decir, that is, al enviar el formulario. Esto puede ser útil en casos similares a los de _one click_, utilizando el botón directamente en la página del producto a comprar.
 
 [[[
 ```Javascript

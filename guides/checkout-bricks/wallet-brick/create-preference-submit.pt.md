@@ -1,6 +1,6 @@
 # Preferência no envio
 
-Caso prefira, também é possível criar a preferência no momento do clique no botão. Isso pode ser útil em casos semelhantes aos de _one click_, utilizando o botão diretamente na página do produto a ser comprado.
+Caso prefira, também é possível criar a preferência no momento do clique no botão, ou seja, no envio do formulário. Isso pode ser útil em casos semelhantes aos de _one click_, utilizando o botão diretamente na página do produto a ser comprado.
 
 [[[
 ```Javascript
