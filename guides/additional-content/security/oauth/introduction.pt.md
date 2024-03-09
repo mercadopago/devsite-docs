@@ -5,9 +5,9 @@ O OAuth é um protocolo de autorização que permite que aplicações tenham ace
 Os fluxos, também conhecidos como `grant types`, são diferentes maneiras de uma aplicação obter um token de acesso para acessar os dados expostos por uma API. No Mercado Pago, existem dois fluxos de acesso disponíveis: `authorization_code` e `refresh_token`. Ambos os fluxos envolvem as mesmas entidades principais nos processos, sendo eles:
  
 * **Access token**: código utilizado em diferentes _requests_ públicos para acessar um recurso protegido. Ele representa uma autorização concedida por um vendedor a uma aplicação cliente, contendo scopes e um tempo de validade limitado para o acesso.
-  - **PKCE**: o PKCE (_Proof Key for Code Exchange_) é um protocolo de segurança usado com OAuth para proteger contra ataques de código malicioso durante a troca de códigos de autorização por _Access token_. Ele adiciona uma camada extra de segurança gerando um _verifier_ que é transformado em um _challenge_ para garantir que mesmo se o código de autorização for interceptado, ele não seja útil sem o _verifier_ original. É possível utilizar esse recurso por meio da opção "Habilitar verificação PKCE?", da tela de [Detalhes de aplicação](/developers/pt/docs/your-integrations/application-details), assim será possível gerar um código secreto adicional a ser usado durante o processo de autorização.
+  - **PKCE**: o PKCE (_Proof Key for Code Exchange_) é um protocolo de segurança usado com OAuth para proteger contra ataques de código malicioso durante a troca de códigos de autorização por _Access token_. Ele adiciona uma camada extra de segurança gerando um _verifier_ que é transformado em um _challenge_ para garantir que mesmo se o código de autorização for interceptado, ele não seja útil sem o _verifier_ original. Veja [Configurar PKCE](/developers/pt/docs/security/oauth/creation#bookmark_configurar_pkce) para mais informações.
   <br>
-* **Temporal grants**: códigos temporários utilizados para serem trocados por um access token. São do tipo `authorization_code` e `refresh_token`.
+* **Temporal grants**: códigos temporários utilizados para serem trocados por um _Access token_. São do tipo `authorization_code` e `refresh_token`.
  
 > NOTE
 >
