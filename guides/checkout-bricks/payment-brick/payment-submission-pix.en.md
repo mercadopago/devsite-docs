@@ -10,7 +10,7 @@ When finalizing the inclusion of the payment form, it is necessary to send the b
 > 
 > Important
 >
-> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example. 
+> Also, it is mandatory to send the attribute `X-Idempotency-Key` to ensure the execution and reexecution of requests without the risk of accidentally performing the same action more than once. To do so, update our [SDKs Library](/developers/en/docs/sdks-library/landing), or generate a UUID V4 and send it in the _header_ of your requests.
 
 To configure payment with Pix, send a **POST** to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, make the request using our SDKs.
 
