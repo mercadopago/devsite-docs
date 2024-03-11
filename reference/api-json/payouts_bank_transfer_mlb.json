@@ -4,7 +4,6 @@
     "/v1/transaction-intents/process": {
       "post": {
         "tags": [
-          "payouts",
           "money-out"
         ],
         "description": {

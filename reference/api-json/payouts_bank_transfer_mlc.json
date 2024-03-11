@@ -4,7 +4,6 @@
     "/v1/transaction-intents/process": {
       "post": {
         "tags": [
-          "payouts",
           "money-out"
         ],
         "description": {
@@ -498,55 +497,74 @@
                         {
                           "title":"Invalid external_reference",
                           "description":{
-                            "en":"Invalid type for field external_reference"
+                            "en":"Invalid type for field external_reference",
+                            "pt":"Invalid type for field external_reference",
+                            "es":"Invalid type for field external_reference"
                           }
                         },
                         {
                           "title":"Invalid type point_of_interaction",
                           "message":{
-                            "en":"invalid value for field: point_of_interaction.type"
+                            "en":"invalid value for field: point_of_interaction.type",
+                            "es":"invalid value for field: point_of_interaction.type",
+                            "pt":"invalid value for field: point_of_interaction.type"
                           }
                         },
                         {
                           "title":"Invalid amount",
                           "message":{
-                            "en":"invalid value for field: transaction.from.accounts[0].amount"
+                            "en":"invalid value for field: transaction.from.accounts[0].amount",
+                            "es":"invalid value for field: transaction.from.accounts[0].amount",
+                            "pt":"invalid value for field: transaction.from.accounts[0].amount"
                           }
                         },
                         {
                           "title":"Invalid chave",
                           "message":{
-                            "en":"invalid value for field: transaction.to.accounts[0].chave.value"
+                            "en":"invalid value for field: transaction.to.accounts[0].chave.value",
+                            "pt":"invalid value for field: transaction.to.accounts[0].chave.value",
+                            "es":"invalid value for field: transaction.to.accounts[0].chave.value"
                           }
                         },
                         {
                           "title":"Invalid chave type",
                           "message":{
-                            "en":"invalid value for field: transaction.to.accounts[0].chave.type"
+                            "en":"invalid value for field: transaction.to.accounts[0].chave.type",
+                            "es":"invalid value for field: transaction.to.accounts[0].chave.type",
+                            "pt":"invalid value for field: transaction.to.accounts[0].chave.type"
                           }
                         },
                         {
                           "title":"Invalid identification number",
                           "message":{
-                            "en":"invalid value for field: transaction.to.accounts[0].identification.number"
+                            "en":"invalid value for field: transaction.to.accounts[0].identification.number",
+                            "es":"invalid value for field: transaction.to.accounts[0].identification.number",
+                            "pt":"invalid value for field: transaction.to.accounts[0].identification.number"
                           }
                         },
                         {
                           "title":"Invalid identification type",
                           "message":{
-                            "en":"invalid value for field: transaction.to.accounts[0].owner.identification.type"
+                            "en":"invalid value for field: transaction.to.accounts[0].owner.identification.type",
+                            "es":"invalid value for field: transaction.to.accounts[0].owner.identification.type",
+                            "pt":"invalid value for field: transaction.to.accounts[0].owner.identification.type"
                           }
                         },
                         {
                           "title":"invalid chave pix",
                           "message":{
-                            "en":"invalid_chave_pix"
+                            "en":"invalid_chave_pix",
+                            "es":"invalid_chave_pix",
+                            "pt":"invalid_chave_pix"
                           }
                         },
                         {
                           "title":"Chave not found",
                           "message":{
-                            "en":"chave not found"
+                            "en":"chave not found",
+                            "es":"chave not found",
+                            "pt":"chave not found"
+                          
                           }
                         }
                       ]
