@@ -2,7 +2,7 @@
 content_section_with_media:
  - title: Adobe Commerce
  - message: Adobe Commerce é uma plataforma de e-commerce que permite criar uma loja online personalizável, ideal para grandes empresas que desejam oferecer uma experiência única. Adobe Commerce é a versão mais recente desta plataforma, oferecendo uma interface amigável, mais velocidade de navegação, suporte embutido para limpeza de cache e mais estabilidade.
- - media_image: /adobe-commerce/magento2-landing.png 
+ - media_image: /adobe-commerce/adb-commerce-landing.png
 ---
 
 ----[mlb]---- 
@@ -57,7 +57,7 @@ bullet_section_with_media:
  - benefit_message: Garantimos uma taxa de aprovação mais alta e menor risco de fraude quando o pagamento é feito pela conta Mercado Pago.
  - benefit_title: Pagamento com dois cartões
  - benefit_message: O comprador pode dividir o valor em dois cartões diferentes caso não tenha saldo em um dos cartões.
- - image: /split-payment/split-de-pago-03.png
+ - image: /adobe-commerce/magento2-landing.png
 ---
 --- mini_landing_separator ---
  

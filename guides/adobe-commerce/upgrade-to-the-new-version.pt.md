@@ -1,6 +1,6 @@
 # Como atualizar a versão do plugin?
 
-Estamos constantemente aprimorando o plugin do Mercado Pago para Adobe Commerce. Para aproveitar as mais recentes funcionalidades implementadas, é essencial manter seu plugin atualizado. O processo de atualização é simples e suas customizações são preservadas. Siga o passo a passo abaixo para garantir uma atualização bem-sucedida:
+Aprimoramos constantemente o plugin do Mercado Pago para Adobe Commerce para oferecer a melhor experiência possível. Para aproveitar as últimas funcionalidades e garantir a segurança e o bom funcionamento do plugin, recomendamos que você o mantenha sempre atualizado. Siga o passo a passo abaixo para garantir uma atualização bem-sucedida:
 
 1. Em seu terminal, execute o comando abaixo para baixar o módulo:
 
@@ -30,4 +30,4 @@ bin/magento cache:clean
 >
 > Nota
 >
-> O plugin é construído com base na plataforma, o que implica na preservação das customizações durante a atualização. Não há perda de dados ou configurações ao atualizar a versão do seu plugin.
+> O plugin é construído com base na plataforma, garantindo a preservação de suas customizações durante a atualização. Ao atualizar a versão do plugin, **seus dados e configurações não serão perdidos**.
