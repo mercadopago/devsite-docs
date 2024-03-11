@@ -2,7 +2,7 @@
 
 Para criar um cliente e associá-lo ao seu cartão, é preciso enviar o campo do e-mail, o tipo de meio de pagamento, o ID do banco emissor e o token gerado. Cada cliente será guardado com o valor `customer` e cada cartão com o valor `card`.
 
-Além disso, recomendamos armazenar os dados do cartão sempre que um pagamento for concluído com sucesso. Isso permite que os dados corretos sejam armazenados para compras futuras e otimiza o processo de pagamento para o comprador.
+Além disso, ao utilizar nossos SDKs, é possível armazenar os dados do cartão sempre que um pagamento for concluído com sucesso. Isso permite que os dados corretos sejam armazenados com segurança em nossos servidores para compras futuras, e otimiza o processo de pagamento para o comprador. Para obter mais informações, consulte nossa [Referência de API](/developers/pt/reference/cards/_customers_customer_id_cards/post).
 
 Para criar um cliente e cartão, utilize um dos códigos abaixo.
 

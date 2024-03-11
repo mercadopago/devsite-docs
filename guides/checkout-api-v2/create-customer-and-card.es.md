@@ -2,9 +2,9 @@
 
 Para crear un cliente y asociarlo a su tarjeta, es necesario enviar el campo del email, el tipo de medio de pago, el ID del banco emisor y el token generado. Cada cliente se almacenará con el valor `customer` y cada tarjeta con el valor `card`.
 
-Además, recomendamos almacenar los datos de la tarjeta siempre que un pago se haya completado con éxito. Esto permite que los datos correctos se almacenen para futuras compras y optimiza el proceso de pago para el comprador.
+Además, al utilizar nuestros SDKs, puedes almacenar los datos de la tarjeta siempre que un pago se haya completado con éxito. Esto permite que los datos correctos se almacenen de manera segura en nuestros servidores para futuras compras, y optimiza el proceso de pago para el comprador. Para más información, consulta nuestra [Referencia de API](/developers/es/reference/cards/_customers_customer_id_cards/post).
 
-Para crear un cliente y una tarjeta, utilice uno de los siguientes códigos.
+Para crear un cliente y una tarjeta, utiliza uno de los siguientes códigos.
 
 [[[
 ```php
