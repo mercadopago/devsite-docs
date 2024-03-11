@@ -357,9 +357,9 @@
                               },
                               "status_detail": {
                                 "description": {
-                                  "es": "Detalle del estado de la transacción",
-                                  "pt": "Detalhe do estado da transação",
-                                  "en": "Transaction status detail"
+                                  "es": "Detalle del estado de la transacción. Usualmente es devuelto vacío.",
+                                  "pt": "Detalhe do estado da transação. Geralmente é retornado vazio.",
+                                  "en": "Transaction status detail. It is usually returned empty."
                                 }
                               }
                             }
@@ -551,20 +551,173 @@
                           }
                         },
                         {
-                          "title":"invalid chave pix",
+                          "title":"Account is disabled",
                           "message":{
-                            "en":"invalid_chave_pix",
-                            "es":"invalid_chave_pix",
-                            "pt":"invalid_chave_pix"
+                            "en":"account is disabled",
+                            "es":"account is disabled",
+                            "pt":"account is disabled"
                           }
                         },
                         {
-                          "title":"Chave not found",
+                          "title":"Participant is not available",
                           "message":{
-                            "en":"chave not found",
-                            "es":"chave not found",
-                            "pt":"chave not found"
-                          
+                            "en":"participant is not available",
+                            "es":"participant is not available",
+                            "pt":"participant is not available"
+                          }
+                        },
+                        {
+                          "title":"Unrecognized key format",
+                          "message":{
+                            "en":"Unrecognized key format",
+                            "es":"Unrecognized key format",
+                            "pt":"Unrecognized key format"
+                          }
+                        },
+                        {
+                          "title":"Invalid identity source",
+                          "message":{
+                            "en":"invalid identity source",
+                            "es":"invalid identity source",
+                            "pt":"invalid identity source"
+                          }
+                        },
+                        {
+                          "title":"Flow not specified",
+                          "message":{
+                            "en":"flow not specified",
+                            "es":"flow not specified",
+                            "pt":"flow not specified"
+                          }
+                        },
+                        {
+                          "title":"Compliance not processed",
+                          "message":{
+                            "en":"compliance check not processed",
+                            "es":"compliance check not processed",
+                            "pt":"compliance check not processed"
+                          }
+                        },
+                        {
+                          "title":"Key PSP error",
+                          "message":{
+                            "en":"key is guarded by the same PSP of paying user",
+                            "es":"key is guarded by the same PSP of paying user",
+                            "pt":"key is guarded by the same PSP of paying user"
+                          }
+                        },
+                        {
+                          "title":"Invalid Body",
+                          "message":{
+                            "en":"request with invalid format",
+                            "es":"request with invalid format",
+                            "pt":"request with invalid format"
+                          }
+                        },
+                        {
+                          "title":"Client not allowed",
+                          "message":{
+                            "en":"client id not allowed",
+                            "es":"client id not allowed",
+                            "pt":"client id not allowed"
+                          }
+                        },
+                        {
+                          "title":"Financial identity not found",
+                          "message":{
+                            "en":"financial identity not found",
+                            "es":"financial identity not found",
+                            "pt":"financial identity not found"
+                          }
+                        },
+                        {
+                          "title":"Many Requests",
+                          "message":{
+                            "en":"too many request",
+                            "es":"too many request",
+                            "pt":"too many request"
+                          }
+                        },
+                        {
+                          "title":"Rate Limit",
+                          "message":{
+                            "en":"local rate limited",
+                            "es":"local rate limited",
+                            "pt":"local rate limited"
+                          }
+                        },
+                        {
+                          "title":"Unauthorized",
+                          "message":{
+                            "en":"unauthorized",
+                            "es":"unauthorized",
+                            "pt":"unauthorized"
+                          }
+                        },
+                        {
+                          "title":"Invalid Payload",
+                          "message":{
+                            "en":" invalid request payload",
+                            "es":" invalid request payload",
+                            "pt":" invalid request payload"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "424":{
+            "description":{
+              "en":"Failed Dependency",
+              "pt":"Failed Dependency",
+              "es":"Failed Dependency"
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type":"object",
+                  "properties":{
+                    "code":{
+                      "type":"string",
+                      "enum":[
+                        {
+                          "title":"Resource locked",
+                          "description":{
+                            "en":"resource locked",
+                            "es":"resource locked",
+                            "pt":"resource locked"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500":{
+            "description":{
+              "en":"Internal Server Error",
+              "pt":"Internal Server Error",
+              "es":"Internal Server Error"
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type":"object",
+                  "properties":{
+                    "code":{
+                      "type":"string",
+                      "enum":[
+                        {
+                          "title":"internal_server_error",
+                          "description":{
+                            "en":"There was an error communicating with transaction_intent",
+                            "es":"There was an error communicating with transaction_intent",
+                            "pt":"There was an error communicating with transaction_intent"
                           }
                         }
                       ]
