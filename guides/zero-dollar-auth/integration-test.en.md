@@ -41,7 +41,25 @@ As a last step, it is necessary to validate the integration using the token obta
 |---|---|---|---|
 | token | String | Card token | 12346622341 |
 | payment_method_id | String | Indicates the identifier of the payment method selected to make the payment | master |
-| payer.id | String | Payer's ID | 123456 |
-| payer.type | String | Type of identification of the associated payer | customer |
+| payer.email | String | Payer's email | buyer@examplemail.com |
+| payer.type | String | Type of identification of the associated payer | guest |
 | description | String | Description of the validation | "zero dollar card validation with master credit without cvv" |
 | transaction_amount | Number | Cost of the validation | Always zero (0) for Zero Dollar Auth |
+
+```curl
+curl -X POST \
+      'https://api.mercadopago.com/v1/payments'\
+      Content-Type: application/json
+      X-Card-Validation: card_validation
+      Authorization: Bearer {{access_token}}
+{
+    "token": "{{card_token}}",
+    "payment_method_id": "master",
+    "payer": {
+        "email": "{{payer_email}}",
+        "type" : "guest"
+    },
+    "description": "validação de cartão com valor zero dollar master crédito sem cvv",
+    "transaction_amount": 0
+}
+```

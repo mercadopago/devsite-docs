@@ -41,8 +41,8 @@ Como último paso, es necesario validar la integración utilizando el token obte
 |---|---|---|---|
 | token | String | Token de la tarjeta | 12346622341 |
 | payment_method_id | String | Indica el identificador del medio de pago seleccionado para realizar el pago | master |
-| payer.id | String | ID del pagador | 123456 |
-| payer.type | String | Tipo de identificación del pagador asociado | customer |
+| payer.email | String | Email del pagador | buyer@exampleemail.com |
+| payer.type | String | Tipo de identificación del pagador asociado | guest |
 | description | String | Descripción de la validación | "validación de tarjeta con valor cero dólar master crédito con cvv" |
 | transaction_amount | Number | Costo de la validación | Siempre zero (0) para Zero Dollar Auth |
 
@@ -56,8 +56,8 @@ curl -X POST \
     "token": "{{card_token}}",
     "payment_method_id": "master",
     "payer": {
-        "id": "{{customer_id}}",
-        "type" : "customer"
+        "email": "{{payer_email}}",
+        "type" : "guest"
     },
     "description": "validação de cartão com valor zero dollar master crédito sem cvv",
     "transaction_amount": 0
