@@ -76,7 +76,7 @@ Additionally, the orders will be recorded in the test seller's Mercado Pago acco
 1. Access **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** in the Mercado Pago admin and select the application you want to test.
 2. Click on **Test credentials** in the left menu. Copy the `access_token` and `public_key`.
 
-![Test credentials](/images/adobe-commerce/test-test-credentials-es.png)
+![Test credentials](/images/adobe-commerce/test-test-credentials-api-es.png)
 
 3. Go to the Adobe Commerce panel settings (**Stores > Configuration > Sales > Payment Methods > Other payments methods > Configure > Basic Settings > Mercado Pago Integration**).
 4. Select the **Sandbox** option in the "Checkout operation mode" field.

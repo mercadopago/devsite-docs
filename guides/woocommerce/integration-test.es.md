@@ -88,13 +88,13 @@ Además, los pedidos se registrarán en el historial de la cuenta de prueba del 
 1. Accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** en el administrador de Mercado Pago y selecciona la aplicación que deseas probar.
 2. Haz clic en **Credenciales de producción** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
 
-![Credenciales de producción](/images/woocomerce/test-prod-credentials-es.png)
+![Credenciales de producción](/images/woocomerce/test-prod-credentials-api-es.png)
 
 3. Ve a la configuración del panel de WooCommerce (**WooCommerce > Mercado Pago > Integrar la tienda con Mercado Pago**).
 4. Ingresa las credenciales de producción `access_token` y `public_key` en el campo **Credenciales de producción**.
 5. En tu aplicación, haz clic en **Credenciales de prueba** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
 
-![Credenciales de prueba](/images/woocomerce/test-test-credentials-es.png)
+![Credenciales de prueba](/images/woocomerce/test-test-credentials-api-es.png)
 
 6. También ingresa las credenciales de prueba `access_token` y `public_key` en el campo **Credenciales de prueba**.
 

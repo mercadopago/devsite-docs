@@ -80,13 +80,13 @@ Além disso, os pedidos serão registrados no histórico da conta de teste de ve
 1. Acesse **[Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** no admin do Mercado Pago e selecione a aplicação que deseja testar. 
 2. Clique em **Credenciais de produção** no menu à esquerda. Copie o `access_token` e a `public_key`.
 
-![Credenciais de produção](/images/prestashop/test-prod-credentials.png)
+![Credenciais de produção](/images/prestashop/test-prod-credentials-api.png)
 
 3. Vá até as configurações do painel de PrestaShop (**Módulos > Gerenciador de Módulos**). Localize o módulo do Mercado Pago na seção "Pagamento", clique na seta para baixo e clique em **Configurar**.
 4. Insira suas credenciais produtivas `access_token` e a `public_key` no campo **Credenciais de produção**.
 5. Na sua aplicação, clique em **Credenciais de teste** no menu à esquerda. Copie o `access_token` e a `public_key`.
 
-![Credenciais de teste](/images/prestashop/test-test-credentials.png)
+![Credenciais de teste](/images/prestashop/test-test-credentials-api.png)
 
 6. Insira também as credenciais de teste `access_token` e a `public_key` no campo **Credenciais de teste**.
 
