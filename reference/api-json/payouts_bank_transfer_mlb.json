@@ -577,7 +577,7 @@
                         },
                         {
                           "title":"Invalid type point_of_interaction",
-                          "message":{
+                          "description":{
                             "en":"invalid value for field: point_of_interaction.type",
                             "es":"invalid value for field: point_of_interaction.type",
                             "pt":"invalid value for field: point_of_interaction.type"
@@ -585,7 +585,7 @@
                         },
                         {
                           "title":"Invalid amount",
-                          "message":{
+                          "description":{
                             "en":"invalid value for field: transaction.from.accounts[0].amount",
                             "es":"invalid value for field: transaction.from.accounts[0].amount",
                             "pt":"invalid value for field: transaction.from.accounts[0].amount"
@@ -593,7 +593,7 @@
                         },
                         {
                           "title":"Invalid chave",
-                          "message":{
+                          "description":{
                             "en":"invalid value for field: transaction.to.accounts[0].chave.value",
                             "pt":"invalid value for field: transaction.to.accounts[0].chave.value",
                             "es":"invalid value for field: transaction.to.accounts[0].chave.value"
@@ -601,7 +601,7 @@
                         },
                         {
                           "title":"Invalid chave type",
-                          "message":{
+                          "description":{
                             "en":"invalid value for field: transaction.to.accounts[0].chave.type",
                             "es":"invalid value for field: transaction.to.accounts[0].chave.type",
                             "pt":"invalid value for field: transaction.to.accounts[0].chave.type"
@@ -609,7 +609,7 @@
                         },
                         {
                           "title":"Invalid identification number",
-                          "message":{
+                          "description":{
                             "en":"invalid value for field: transaction.to.accounts[0].identification.number",
                             "es":"invalid value for field: transaction.to.accounts[0].identification.number",
                             "pt":"invalid value for field: transaction.to.accounts[0].identification.number"
@@ -617,7 +617,7 @@
                         },
                         {
                           "title":"Invalid identification type",
-                          "message":{
+                          "description":{
                             "en":"invalid value for field: transaction.to.accounts[0].owner.identification.type",
                             "es":"invalid value for field: transaction.to.accounts[0].owner.identification.type",
                             "pt":"invalid value for field: transaction.to.accounts[0].owner.identification.type"
@@ -625,7 +625,7 @@
                         },
                         {
                           "title":"Account is disabled",
-                          "message":{
+                          "description":{
                             "en":"account is disabled",
                             "es":"account is disabled",
                             "pt":"account is disabled"
@@ -633,7 +633,7 @@
                         },
                         {
                           "title":"Participant is not available",
-                          "message":{
+                          "description":{
                             "en":"participant is not available",
                             "es":"participant is not available",
                             "pt":"participant is not available"
@@ -641,7 +641,7 @@
                         },
                         {
                           "title":"Unrecognized key format",
-                          "message":{
+                          "description":{
                             "en":"Unrecognized key format",
                             "es":"Unrecognized key format",
                             "pt":"Unrecognized key format"
@@ -649,7 +649,7 @@
                         },
                         {
                           "title":"Invalid identity source",
-                          "message":{
+                          "description":{
                             "en":"invalid identity source",
                             "es":"invalid identity source",
                             "pt":"invalid identity source"
@@ -657,7 +657,7 @@
                         },
                         {
                           "title":"Flow not specified",
-                          "message":{
+                          "description":{
                             "en":"flow not specified",
                             "es":"flow not specified",
                             "pt":"flow not specified"
@@ -665,7 +665,7 @@
                         },
                         {
                           "title":"Compliance not processed",
-                          "message":{
+                          "description":{
                             "en":"compliance check not processed",
                             "es":"compliance check not processed",
                             "pt":"compliance check not processed"
@@ -673,7 +673,7 @@
                         },
                         {
                           "title":"Key PSP error",
-                          "message":{
+                          "description":{
                             "en":"key is guarded by the same PSP of paying user",
                             "es":"key is guarded by the same PSP of paying user",
                             "pt":"key is guarded by the same PSP of paying user"
@@ -681,7 +681,7 @@
                         },
                         {
                           "title":"Invalid Body",
-                          "message":{
+                          "description":{
                             "en":"request with invalid format",
                             "es":"request with invalid format",
                             "pt":"request with invalid format"
@@ -689,7 +689,7 @@
                         },
                         {
                           "title":"Client not allowed",
-                          "message":{
+                          "description":{
                             "en":"client id not allowed",
                             "es":"client id not allowed",
                             "pt":"client id not allowed"
@@ -697,7 +697,7 @@
                         },
                         {
                           "title":"Financial identity not found",
-                          "message":{
+                          "description":{
                             "en":"financial identity not found",
                             "es":"financial identity not found",
                             "pt":"financial identity not found"
@@ -705,7 +705,7 @@
                         },
                         {
                           "title":"Many Requests",
-                          "message":{
+                          "description":{
                             "en":"too many request",
                             "es":"too many request",
                             "pt":"too many request"
@@ -713,7 +713,7 @@
                         },
                         {
                           "title":"Rate Limit",
-                          "message":{
+                          "description":{
                             "en":"local rate limited",
                             "es":"local rate limited",
                             "pt":"local rate limited"
@@ -721,7 +721,7 @@
                         },
                         {
                           "title":"Unauthorized",
-                          "message":{
+                          "description":{
                             "en":"unauthorized",
                             "es":"unauthorized",
                             "pt":"unauthorized"
@@ -729,7 +729,7 @@
                         },
                         {
                           "title":"Invalid Payload",
-                          "message":{
+                          "description":{
                             "en":" invalid request payload",
                             "es":" invalid request payload",
                             "pt":" invalid request payload"
@@ -1146,7 +1146,7 @@
                       "enum":[
                         {
                           "title":"ID format invalid",
-                          "message":{
+                          "description":{
                             "en":"The ID format is invalid",
                             "es":"The ID format is invalid",
                             "pt":"The ID format is invalid"
@@ -1154,7 +1154,7 @@
                         },
                         {
                           "title":"Client not allowed",
-                          "message":{
+                          "description":{
                             "en":"client id not allowed",
                             "es":"client id not allowed",
                             "pt":"client id not allowed"
@@ -1162,7 +1162,7 @@
                         },
                         {
                           "title":"Financial identity not found",
-                          "message":{
+                          "description":{
                             "en":"financial identity not found",
                             "es":"financial identity not found",
                             "pt":"financial identity not found"
@@ -1170,7 +1170,7 @@
                         },
                         {
                           "title":"Many Requests",
-                          "message":{
+                          "description":{
                             "en":"too many request",
                             "es":"too many request",
                             "pt":"too many request"
@@ -1178,7 +1178,7 @@
                         },
                         {
                           "title":"Rate Limit",
-                          "message":{
+                          "description":{
                             "en":"local rate limited",
                             "es":"local rate limited",
                             "pt":"local rate limited"
@@ -1186,7 +1186,7 @@
                         },
                         {
                           "title":"Unauthorized",
-                          "message":{
+                          "description":{
                             "en":"unauthorized",
                             "es":"unauthorized",
                             "pt":"unauthorized"
