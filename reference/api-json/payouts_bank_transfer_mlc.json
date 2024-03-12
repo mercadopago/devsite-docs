@@ -195,25 +195,28 @@
                                 },
                                 "properties": {
                                   "identification": {
-                                    "type": {
-                                      "type": "string",
-                                      "required": true,
-                                      "description": {
-                                        "en": "Refers to the type of identification. It must be \"RUT\".",
-                                        "pt": "Refere-se ao tipo de identificação. Deve ser \"RUT\".",
-                                        "es": "Se refiere al tipo de identificación. Debe ser \"RUT\"."
+                                    "type": "object",
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "required": true,
+                                        "description": {
+                                          "en": "Refers to the type of identification. It must be \"RUT\".",
+                                          "pt": "Refere-se ao tipo de identificação. Deve ser \"RUT\".",
+                                          "es": "Se refiere al tipo de identificación. Debe ser \"RUT\"."
+                                        },
+                                        "example": "RUT"
                                       },
-                                      "example": "RUT"
-                                    },
-                                    "number": {
-                                      "type": "string",
-                                      "required": true,
-                                      "description": {
-                                        "en": "The number refers to the identifier of the destination account holder.",
-                                        "pt": "O número se refere ao identificador do titular da conta de destino.",
-                                        "es": "El número hace referencia al identificador del titular de la cuenta de destino."
-                                      },
-                                      "example": "111111111111"
+                                      "number": {
+                                        "type": "string",
+                                        "required": true,
+                                        "description": {
+                                          "en": "The number refers to the identifier of the destination account holder.",
+                                          "pt": "O número se refere ao identificador do titular da conta de destino.",
+                                          "es": "El número hace referencia al identificador del titular de la cuenta de destino."
+                                        },
+                                        "example": "111111111111"
+                                      }
                                     }
                                   }
                                 }
@@ -350,6 +353,7 @@
                               "type": "array",
                               "properties": {
                                 "amount": {
+                                  "type": "number",
                                   "description": {
                                     "es": "Monto debitado de la cuenta Mercado Pago de origen.",
                                     "pt": "Montante debitado da conta Mercado Pago de origem.",
@@ -424,23 +428,23 @@
                                             "es": "El número hace referencia al identificador del titular de la cuenta de destino. "
                                           },
                                           "example": "1234567890"
+                                        },
+                                        "type": {
+                                          "type":"string",
+                                          "description": {
+                                            "en": "Refers to the type of identification.",
+                                            "pt": "Refere-se ao tipo de identificação.",
+                                            "es": "Se refiere al tipo de identificación."
+                                          },
+                                          "example": "RUT"
                                         }
                                       }
-                                    },
-                                    "type": {
-                                      "type":"string",
-                                      "description": {
-                                        "en": "Refers to the type of identification.",
-                                        "pt": "Refere-se ao tipo de identificação.",
-                                        "es": "Se refiere al tipo de identificación."
-                                      },
-                                      "example": "RUT"
                                     }
                                   }
                                 }
                               }
                             }
-                          }
+                          } 
                         },
                         "paid_amount": {
                           "type": "number",
