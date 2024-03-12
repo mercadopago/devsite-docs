@@ -1,9 +1,13 @@
+# Teste de integração
+
+É crucial realizar testes do fluxo completo antes de ir para a produção, verificando se a criação de pagamentos é feita corretamente e se as mensagens são eficazes na comunicação com o usuário. Uma boa experiência para seus clientes no checkout ajuda a melhorar a conversão.
+
+Para realizar uma compra teste é preciso utilizar as **credenciais de teste do seu usuário de produção**. Para obtê-las, acesse **Detalhes da aplicação > Credenciais** dentro do [Painel do desenvolvedor](/developers/panel/app) ou em sua conta Mercado Pago, acessando [Seu negócio > Configurações > Gestão e Administração > Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
+
 Você pode utilizar cartões de teste de métodos de pagamento locais e simular diferentes respostas dos pagamentos, sem a necessidade de usar um cartão real.
 
-Para isso, de acordo com o seu país, utilize algum dos cartões de **crédito** ou **débito** que disponibilizamos a seguir.
+Para isso, de acordo com o seu país, utilize algum dos cartões de **crédito** que disponibilizamos a seguir.
  
-### Cartões de crédito
-
 ----[mla]----
 | Cartão | Número | Código de segurança | Data de vencimento |
 | :--- | :---: | :---: | :---: |
@@ -59,16 +63,9 @@ Para isso, de acordo com o seu país, utilize algum dos cartões de **crédito**
 
 ------------
 
-### Cartões de débito
-
-----[mla]----
-| Cartão | Número | Código de segurança | Data de vencimento |
-| :--- | :---: | :---: | :---: |
-| Mastercard | 5287 3383 1025 3304 | 123 | 11/25 |
-| Visa | 4002 7686 9439 5619 | 123 | 11/25 |
-
 Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão (campo `card_holder_name`):
- 
+
+----[mla]---- 
 | Status de pagamento | Descrição | Documento de identidade |
 | --- | --- | --- |
 | `APRO` | Pagamento aprovado | (DNI) 12345678 |
@@ -81,13 +78,7 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `FORM` | Recusado por erro no formulário | - |
 
 ------------
-----[mlb]----
-| Cartão | Número | Código de segurança | Data de vencimento |
-| :--- | :---: | :---: | :---: |
-| Elo | 5067 7667 8388 8311 | 123 | 11/25 |
-
-Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão (campo `card_holder_name`):
- 
+----[mlb]---- 
 | Status de pagamento | Descrição | Documento de identidade |
 | --- | --- | --- |
 | `APRO` | Pagamento aprovado | (CPF) 12345678909 |
@@ -100,14 +91,7 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `FORM` | Recusado por erro no formulário | - |
 
 ------------
-----[mlc]----
-| Cartão | Número | Código de segurança | Data de vencimento |
-| :--- | :---: | :---: | :---: |
-| Mastercard | 5241 0198 2664 6950 | 123 | 11/25 |
-| Visa | 4023 6535 2391 4373 | 123 | 11/25 |
-
-Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão (campo `card_holder_name`):
- 
+----[mlc]---- 
 | Status de pagamento | Descrição | Documento de identidade |
 | --- | --- | --- |
 | `APRO` | Pagamento aprovado | (otro) 123456789 |
@@ -120,13 +104,7 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `FORM` | Recusado por erro no formulário | - |
 
 ------------
-----[mco]----
-| Cartão | Número | Código de segurança | Data de vencimento |
-| :--- | :---: | :---: | :---: |
-| Visa | 4915 1120 5524 6507 | 123 | 11/25 |
-
-Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão (campo `card_holder_name`):
- 
+----[mco]---- 
 | Status de pagamento | Descrição | Documento de identidade | 
 | --- | --- | --- | 
 | `APRO` | Pagamento aprovado | 123456789 |
@@ -139,14 +117,7 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `FORM` | Recusado por erro no formulário | - |
 
 ------------
-----[mlm]----
-| Cartão | Número | Código de segurança | Data de vencimento |
-| :--- | :---: | :---: | :---: |
-| Mastercard | 5579 0534 6148 2647 | 123 | 11/25 |
-| Visa | 4189 1412 2126 7633 | 123 | 11/25 |
-
-Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão (campo `card_holder_name`):
- 
+----[mlm]---- 
 | Status de pagamento | Descrição |
 | --- | --- |
 | `APRO` | Pagamento aprovado |
@@ -159,13 +130,7 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `FORM` | Recusado por erro no formulário |
 
 ------------
-----[mlu]----
-| Cartão | Número | Código de segurança | Data de vencimento |
-| :--- | :---: | :---: | :---: |
-| Visa | 4213 0163 1470 6756 | 123 | 11/25 |
-
-Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão (campo `card_holder_name`):
- 
+----[mlu]---- 
 | Status de pagamento | Descrição | Documento de identidade |
 | --- | --- | --- |
 | `APRO` | Pagamento aprovado | (CI) 12345678 <br> (otro) 123456789 |
@@ -178,13 +143,7 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `FORM` | Recusado por erro no formulário | - |
 
 ------------
-----[mpe]----
-| Cartão | Número | Código de segurança | Data de vencimento |
-| :--- | :---: | :---: | :---: |
-| Mastercard | 5178 7816 2220 2455 | 123 | 11/25 |
-
-Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão (campo `card_holder_name`):
- 
+----[mpe]---- 
 | Status de pagamento | Descrição | Documento de identidade |
 | --- | --- | --- |
 | `APRO` | Pagamento aprovado | 123456789 |
@@ -195,5 +154,14 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `SECU` | Recusado por código de segurança inválido | - |
 | `EXPI` | Recusado por problema com a data de vencimento | - |
 | `FORM` | Recusado por erro no formulário | - |
+
+------------
+
+----[mlb]----
+> Para mais informações sobre o fluxo de teste, acesse a seção de **Realizar compra teste** no [Checkout Transparente](/developers/pt/docs/checkout-api/integration-test/make-test-purchase) ou no [Checkout Bricks.](/developers/pt/docs/checkout-bricks/integration-test/test-payment-flow)
+
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> Para mais informações sobre o fluxo de teste, acesse a seção de **Realizar compra teste** no [Checkout API](/developers/pt/docs/checkout-api/integration-test/make-test-purchase) ou no [Checkout Bricks.](/developers/pt/docs/checkout-bricks/integration-test/test-payment-flow)
 
 ------------

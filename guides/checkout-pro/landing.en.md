@@ -29,7 +29,7 @@ bullet_section_with_media:
  - benefit_title: One-click purchases
  - benefit_message: When making the payment with a Mercado Pago account, the buyer can make the payment using their account balance, or simply by informing the security code of one of the stored cards.
  - benefit_title: Guest users
- - benefit_message: Not having a Marked Paid account is not a problem. Checkout Pro accepts payments from guest buyers.
+ - benefit_message: Not having a Mercado Pago account is not a problem. Checkout Pro accepts payments from guest buyers.
  - benefit_title: Payment with two cards
  - benefit_message: If the amount to be paid is high, the buyer can split the amount between two different cards.
 —

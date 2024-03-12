@@ -4,7 +4,7 @@ O OAuth é um protocolo de autorização que permite que aplicações tenham ace
  
 Os fluxos, também conhecidos como `grant types`, são diferentes maneiras de uma aplicação obter um token de acesso para acessar os dados expostos por uma API. No Mercado Pago, existem dois fluxos de acesso disponíveis: `authorization_code` e `refresh_token`. Ambos os fluxos envolvem as mesmas entidades principais nos processos, sendo eles:
  
-* **Access token**: código utilizado em diferentes _requests_ públicos para acessar um recurso protegido. Ele representa uma autorização concedida por um vendedor a uma aplicação cliente, contendo scopes e um tempo de validade limitado para o acesso.
+* **Access token**: código utilizado em diferentes _requests_ públicos para acessar um recurso protegido. Ele representa uma autorização concedida por um vendedor a uma aplicação do cliente, contendo _scopes_ e um tempo de validade limitado para o acesso.
   - **PKCE**: o PKCE (_Proof Key for Code Exchange_) é um protocolo de segurança usado com OAuth para proteger contra ataques de código malicioso durante a troca de códigos de autorização por _Access token_. Ele adiciona uma camada extra de segurança gerando um _verifier_ que é transformado em um _challenge_ para garantir que mesmo se o código de autorização for interceptado, ele não seja útil sem o _verifier_ original. Veja [Configurar PKCE](/developers/pt/docs/security/oauth/creation#bookmark_configurar_pkce) para mais informações.
   <br>
 * **Temporal grants**: códigos temporários utilizados para serem trocados por um _Access token_. São do tipo `authorization_code` e `refresh_token`.

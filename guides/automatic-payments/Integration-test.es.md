@@ -1,8 +1,12 @@
+# Prueba de integración
+
+Es crucial realizar pruebas del flujo completo antes de pasar a producción, verificando que la creación de pagos se realice correctamente y que los mensajes sean efectivos en la comunicación con el usuario. Una buena experiencia para tus clientes en el proceso de pago ayuda a mejorar la conversión.
+
+Para realizar una compra de prueba, es necesario utilizar las **credenciales de prueba de su usuario de producción**. Para obtenerlas, accede a **Detalles de la aplicación > Credenciales** dentro del [Panel del desarrollador](/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
+
 Puedes usar tarjetas de prueba de métodos de pago locales y simular diferentes respuestas de pago, sin necesidad de usar una tarjeta real.
  
-Para eso, dependiendo de tu país, utiliza una de las tarjetas de **crédito** o **débito** que te proporcionamos a continuación.
-
-### Tarjetas de crédito
+Para eso, dependiendo de tu país, utiliza una de las tarjetas de **crédito** que te proporcionamos a continuación.
 
 ----[mla]----
 | Tarjeta | Número | Código de seguridad | Fecha de caducidad |
@@ -59,16 +63,9 @@ Para eso, dependiendo de tu país, utiliza una de las tarjetas de **crédito** o
 
 ------------
 
-### Tarjetas de débito
+Para **probar diferentes resultados de pago**, completa el estado deseado en el nombre del titular (campo `card_holder_name`) de la tarjeta:
 
 ----[mla]----
-| Tarjeta | Número | Código de seguridad | Fecha de caducidad |
-| :--- | :---: | :---: | :---: |
-| Mastercard | 5287 3383 1025 3304 | 123 | 11/25 |
-| Visa | 4002 7686 9439 5619 | 123 | 11/25 |
-
-Para **probar diferentes resultados de pago**, completa el estado deseado en el nombre del titular (campo `card_holder_name`) de la tarjeta:
- 
 | Estado de pago | Descripción | Documento de identidad |
 | --- | --- | --- |
 | `APRO` | Pago aprobado | (DNI) 12345678 |
@@ -82,12 +79,6 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 
 ------------
 ----[mlb]----
-| Tarjeta | Número | Código de seguridad | Fecha de caducidad |
-| :--- | :---: | :---: | :---: |
-| Elo | 5067 7667 8388 8311 | 123 | 11/25 |
-
-Para **probar diferentes resultados de pago**, completa el estado deseado en el nombre del titular (campo `card_holder_name`) de la tarjeta:
- 
 | Estado de pago | Descripción | Documento de identidad |
 | --- | --- | --- |
 | `APRO` | Pago aprobado | (CPF) 12345678909 |
@@ -101,13 +92,6 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 
 ------------
 ----[mlc]----
-| Tarjeta | Número | Código de seguridad | Fecha de caducidad |
-| :--- | :---: | :---: | :---: |
-| Mastercard | 5241 0198 2664 6950 | 123 | 11/25 |
-| Visa | 4023 6535 2391 4373 | 123 | 11/25 |
-
-Para **probar diferentes resultados de pago**, completa el estado deseado en el nombre del titular (campo `card_holder_name`) de la tarjeta:
- 
 | Estado de pago | Descripción |Documento de identidad |
 | --- | --- | --- |
 | `APRO` | Pago aprobado | (otro) 123456789 |
@@ -121,12 +105,6 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 
 ------------
 ----[mco]----
-| Tarjeta | Número | Código de seguridad | Fecha de caducidad |
-| :--- | :---: | :---: | :---: |
-| Visa | 4915 1120 5524 6507 | 123 | 11/25 |
-
-Para **probar diferentes resultados de pago**, completa el estado deseado en el nombre del titular (campo `card_holder_name`) de la tarjeta:
- 
 | Estado de pago | Descripción | Documento de identidad |
 | --- | --- | --- |
 | `APRO` | Pago aprobado | 123456789 |
@@ -140,13 +118,6 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 
 ------------
 ----[mlm]----
-| Tarjeta | Número | Código de seguridad | Fecha de caducidad |
-| :--- | :---: | :---: | :---: |
-| Mastercard | 5579 0534 6148 2647 | 123 | 11/25 |
-| Visa | 4189 1412 2126 7633 | 123 | 11/25 |
-
-Para **probar diferentes resultados de pago**, completa el estado deseado en el nombre del titular (campo `card_holder_name`) de la tarjeta:
- 
 | Estado de pago | Descripción |
 | --- | --- |
 | `APRO` | Pago aprobado |
@@ -160,12 +131,6 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 
 ------------
 ----[mlu]----
-| Tarjeta | Número | Código de seguridad | Fecha de caducidad |
-| :--- | :---: | :---: | :---: |
-| Visa | 4213 0163 1470 6756 | 123 | 11/25 |
-
-Para **probar diferentes resultados de pago**, completa el estado deseado en el nombre del titular (campo `card_holder_name`) de la tarjeta:
- 
 | Estado de pago | Descripción |Documento de identidad |
 | --- | --- | --- |
 | `APRO` | Pago aprobado | (CI) 12345678 <br> (otro) 123456789 |
@@ -179,12 +144,6 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 
 ------------
 ----[mpe]----
-| Tarjeta | Número | Código de seguridad | Fecha de caducidad |
-| :--- | :---: | :---: | :---: |
-| Mastercard | 5178 7816 2220 2455 | 123 | 11/25 |
-
-Para **probar diferentes resultados de pago**, completa el estado deseado en el nombre del titular (campo `card_holder_name`) de la tarjeta:
- 
 | Estado de pago | Descripción | Documento de identidad |
 | --- | --- | --- |
 | `APRO` | Pago aprobado | 123456789 |
@@ -195,5 +154,14 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | `SECU` | Rechazado por código de seguridad inválido | v
 | `EXPI` | Rechazado debido a un problema de fecha de vencimiento | - |
 | `FORM` | Rechazado debido a un error de formulario | - |
+
+------------
+
+----[mlb]----
+> Para más información sobre el flujo de pruebas, accede a nuestra sección **Realizar compra de prueba** en [Checkout Transparente](/developers/es/docs/checkout-api/integration-test/make-test-purchase) o [Checkout Bricks.](/developers/es/docs/checkout-bricks/integration-test/test-payment-flow)
+
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> Para más información sobre el flujo de pruebas, accede a nuestra sección **Realizar compra de prueba** en [Checkout API](/developers/es/docs/checkout-api/integration-test/make-test-purchase) o [Checkout Bricks.](/developers/es/docs/checkout-bricks/integration-test/test-payment-flow)
 
 ------------
