@@ -87,7 +87,7 @@
                   },
                   "point_of_interaction": {
                     "required": true,
-                    "type": "object",
+                    "type": "string",
                     "description": {
                       "en": "Fix value. It must always be \"PSP_TRANSFER\"",
                       "pt": "Valor fixo. Deve sempre ser preenchido como \"PSP_TRANSFER\"",
@@ -121,8 +121,8 @@
                     "properties": {
                       "from": {
                         "type": "object",
-                        "accounts": [
-                          { 
+                        "properties": {
+                          "accounts": { 
                             "type": "array",
                             "properties": {
                               "amount": {
@@ -133,15 +133,16 @@
                                   "pt": "Valor da transação, que será retirado da conta de origem \"from\". O valor mínimo é 0, e o valor máximo é 10000000000.",
                                   "es": "Valor de la transacción, que será retirado de la cuenta de origen \"from\". El valor mínimo es 0, y el máximo, 10000000000."
                                 },
-                                "example": 100 
+                                "example": "100,00"
                               }
                             }
                           }
-                        ]
+                        }
                       },
                       "to": {
-                        "accounts": [
-                          {
+                        "type": "object",
+                        "properties": {
+                          "accounts": {
                             "type": "array",
                             "properties": {
                               "amount": {
@@ -152,7 +153,7 @@
                                   "pt": "Valor a enviar para a conta de destino indicado no \"to\". Deve ser o mesmo valor indicado para \"from.accounts.amount\"",
                                   "es": "Monto a enviar a la cuenta destino indicada en el \"to\". Debe ser el mismo valor indicado para \"from.accounts.amount\""
                                 },
-                                "example": 100.00
+                                "example": "100.00"
                               },
                               "bank_id": {
                                 "type": "string",
@@ -219,7 +220,7 @@
                               }
                             }
                           }
-                        ]
+                        }
                       },
                       "total_amount": {
                         "type": "number",
@@ -229,7 +230,7 @@
                           "pt": "Montante total da transação. Deve ser o mesmo valor indicado para \"from.accounts.amount\" e \"to.accounts.amount\" ",
                           "es": "Monto total de la transacción. Debe ser el mismo valor indicado para \"from.accounts.amount\" y \"to.accounts.amount\""
                         },
-                        "example": 100.00
+                        "example": "100.00"
                       }
                     }
                   }
@@ -307,7 +308,7 @@
                     },
                     "point_of_interaction": {
                       "type": "string",
-                      "example": "WEB",
+                      "example": "PSP_TRANSFER",
                       "properties": {
                         "type": {
                           "type": "string",
@@ -341,38 +342,42 @@
                     },
                     "transaction": {
                       "type": "object",
-                      "from": {
-                        "properties": {
+                      "properties": {
+                        "from": {
                           "type": "object",
-                          "accounts": [
-                            {   
-                              "type": "object",
-                              "amount": {
-                                "description": {
-                                  "es": "Monto debitado de la cuenta Mercado Pago de origen.",
-                                  "pt": "Montante debitado da conta Mercado Pago de origem.",
-                                  "en": "Amount debited from the Mercado Pago origin account."
+                          "properties": {
+                            "accounts": {   
+                              "type": "array",
+                              "properties": {
+                                "amount": {
+                                  "description": {
+                                    "es": "Monto debitado de la cuenta Mercado Pago de origen.",
+                                    "pt": "Montante debitado da conta Mercado Pago de origem.",
+                                    "en": "Amount debited from the Mercado Pago origin account."
+                                  },
+                                  "example": "100,00"
                                 },
-                                "example": "100,00"
-                              },
-                              "status_detail": {
-                                "description": {
-                                  "es": "Detalle del estado de la transacción. Usualmente es devuelto vacío.",
-                                  "pt": "Detalhe do estado da transação. Geralmente é retornado vazio.",
-                                  "en": "Transaction status detail. It is usually returned empty."
+                                "status_detail": {
+                                  "type":"string",
+                                  "description": {
+                                    "es": "Detalle del estado de la transacción. Usualmente es devuelto vacío.",
+                                    "pt": "Detalhe do estado da transação. Geralmente é retornado vazio.",
+                                    "en": "Transaction status detail. It is usually returned empty."
+                                  }
                                 }
                               }
                             }
-                          ]
+                          }
                         }
                       },
                       "to": {
+                        "type": "object",
                         "properties": {
-                          "type": "object",
-                          "accounts": [
-                            {
-                              "type": "object",
+                          "accounts": {
+                            "type": "array",
+                            "properties": {
                               "amount": {
+                                "type":"number",
                                 "description": {
                                   "es": "Monto transferido a la cuenta de destino. Su valor será igual a \"from.accounts.amount\", salvo que haya habido un reembolso total o parcial.",
                                   "pt": "Valor transferido para a conta de destino. O valor será igual a \"from.accounts.amount\", a menos que tenha havido reembolso total ou parcial.",
@@ -381,6 +386,7 @@
                                 "example": "100,00"
                               },
                               "status_detail": {
+                                "type":"string",
                                 "description": {
                                   "es": "Información detallada del estado de la operación.",
                                   "pt": "Informação detalhada do status da operação.",
@@ -407,30 +413,34 @@
                                 "example": "approved"
                               },
                               "owner": {
-                                "identification": {
-                                  "type": "object",
-                                  "properties": {
-                                    "number": {
-                                      "description": {
-                                        "en": "The number refers to the identifier of the destination account holder. ",
-                                        "pt": "O número se refere ao identificador do titular da conta de destino. ",
-                                        "es": "El número hace referencia al identificador del titular de la cuenta de destino. "
-                                      },
-                                      "example": "1234567890"
-                                    },
-                                    "type": {
-                                      "description": {
-                                        "en": "Refers to the type of identification.",
-                                        "pt": "Refere-se ao tipo de identificação.",
-                                        "es": "Se refiere al tipo de identificación."
-                                      },
-                                      "example": "RUT"
+                                "type": "object",
+                                "properties": {
+                                  "identification": {
+                                    "type": "object",
+                                    "properties": {
+                                      "number": {
+                                        "description": {
+                                          "en": "The number refers to the identifier of the destination account holder. ",
+                                          "pt": "O número se refere ao identificador do titular da conta de destino. ",
+                                          "es": "El número hace referencia al identificador del titular de la cuenta de destino. "
+                                        },
+                                        "example": "1234567890"
+                                      }
                                     }
+                                  },
+                                  "type": {
+                                    "type":"string",
+                                    "description": {
+                                      "en": "Refers to the type of identification.",
+                                      "pt": "Refere-se ao tipo de identificação.",
+                                      "es": "Se refiere al tipo de identificación."
+                                    },
+                                    "example": "RUT"
                                   }
                                 }
                               }
                             }
-                          ]
+                          }
                         }
                       },
                       "paid_amount": {
@@ -491,7 +501,7 @@
                 "schema":{
                   "type":"object",
                   "properties":{
-                    "code":{
+                    "errorKey":{
                       "type":"string",
                       "enum":[
                         {
@@ -504,7 +514,7 @@
                         },
                         {
                           "title":"Invalid type point_of_interaction",
-                          "message":{
+                          "description":{
                             "en":"invalid value for field: point_of_interaction.type",
                             "es":"invalid value for field: point_of_interaction.type",
                             "pt":"invalid value for field: point_of_interaction.type"
@@ -512,7 +522,7 @@
                         },
                         {
                           "title":"Invalid amount",
-                          "message":{
+                          "description":{
                             "en":"invalid value for field: transaction.from.accounts[0].amount",
                             "es":"invalid value for field: transaction.from.accounts[0].amount",
                             "pt":"invalid value for field: transaction.from.accounts[0].amount"
@@ -520,7 +530,7 @@
                         },
                         {
                           "title":"Invalid chave",
-                          "message":{
+                          "description":{
                             "en":"invalid value for field: transaction.to.accounts[0].chave.value",
                             "pt":"invalid value for field: transaction.to.accounts[0].chave.value",
                             "es":"invalid value for field: transaction.to.accounts[0].chave.value"
@@ -528,7 +538,7 @@
                         },
                         {
                           "title":"Invalid chave type",
-                          "message":{
+                          "description":{
                             "en":"invalid value for field: transaction.to.accounts[0].chave.type",
                             "es":"invalid value for field: transaction.to.accounts[0].chave.type",
                             "pt":"invalid value for field: transaction.to.accounts[0].chave.type"
@@ -536,7 +546,7 @@
                         },
                         {
                           "title":"Invalid identification number",
-                          "message":{
+                          "description":{
                             "en":"invalid value for field: transaction.to.accounts[0].identification.number",
                             "es":"invalid value for field: transaction.to.accounts[0].identification.number",
                             "pt":"invalid value for field: transaction.to.accounts[0].identification.number"
@@ -544,7 +554,7 @@
                         },
                         {
                           "title":"Invalid identification type",
-                          "message":{
+                          "description":{
                             "en":"invalid value for field: transaction.to.accounts[0].owner.identification.type",
                             "es":"invalid value for field: transaction.to.accounts[0].owner.identification.type",
                             "pt":"invalid value for field: transaction.to.accounts[0].owner.identification.type"
@@ -552,7 +562,7 @@
                         },
                         {
                           "title":"Account is disabled",
-                          "message":{
+                          "description":{
                             "en":"account is disabled",
                             "es":"account is disabled",
                             "pt":"account is disabled"
@@ -560,7 +570,7 @@
                         },
                         {
                           "title":"Participant is not available",
-                          "message":{
+                          "description":{
                             "en":"participant is not available",
                             "es":"participant is not available",
                             "pt":"participant is not available"
@@ -568,7 +578,7 @@
                         },
                         {
                           "title":"Unrecognized key format",
-                          "message":{
+                          "description":{
                             "en":"Unrecognized key format",
                             "es":"Unrecognized key format",
                             "pt":"Unrecognized key format"
@@ -576,7 +586,7 @@
                         },
                         {
                           "title":"Invalid identity source",
-                          "message":{
+                          "description":{
                             "en":"invalid identity source",
                             "es":"invalid identity source",
                             "pt":"invalid identity source"
@@ -584,7 +594,7 @@
                         },
                         {
                           "title":"Flow not specified",
-                          "message":{
+                          "description":{
                             "en":"flow not specified",
                             "es":"flow not specified",
                             "pt":"flow not specified"
@@ -592,7 +602,7 @@
                         },
                         {
                           "title":"Compliance not processed",
-                          "message":{
+                          "description":{
                             "en":"compliance check not processed",
                             "es":"compliance check not processed",
                             "pt":"compliance check not processed"
@@ -600,7 +610,7 @@
                         },
                         {
                           "title":"Key PSP error",
-                          "message":{
+                          "description":{
                             "en":"key is guarded by the same PSP of paying user",
                             "es":"key is guarded by the same PSP of paying user",
                             "pt":"key is guarded by the same PSP of paying user"
@@ -608,7 +618,7 @@
                         },
                         {
                           "title":"Invalid Body",
-                          "message":{
+                          "description":{
                             "en":"request with invalid format",
                             "es":"request with invalid format",
                             "pt":"request with invalid format"
@@ -616,7 +626,7 @@
                         },
                         {
                           "title":"Client not allowed",
-                          "message":{
+                          "description":{
                             "en":"client id not allowed",
                             "es":"client id not allowed",
                             "pt":"client id not allowed"
@@ -624,7 +634,7 @@
                         },
                         {
                           "title":"Financial identity not found",
-                          "message":{
+                          "description":{
                             "en":"financial identity not found",
                             "es":"financial identity not found",
                             "pt":"financial identity not found"
@@ -632,7 +642,7 @@
                         },
                         {
                           "title":"Many Requests",
-                          "message":{
+                          "description":{
                             "en":"too many request",
                             "es":"too many request",
                             "pt":"too many request"
@@ -640,7 +650,7 @@
                         },
                         {
                           "title":"Rate Limit",
-                          "message":{
+                          "description":{
                             "en":"local rate limited",
                             "es":"local rate limited",
                             "pt":"local rate limited"
@@ -648,7 +658,7 @@
                         },
                         {
                           "title":"Unauthorized",
-                          "message":{
+                          "description":{
                             "en":"unauthorized",
                             "es":"unauthorized",
                             "pt":"unauthorized"
@@ -656,7 +666,7 @@
                         },
                         {
                           "title":"Invalid Payload",
-                          "message":{
+                          "description":{
                             "en":" invalid request payload",
                             "es":" invalid request payload",
                             "pt":" invalid request payload"
@@ -680,15 +690,15 @@
                 "schema":{
                   "type":"object",
                   "properties":{
-                    "code":{
+                    "errorKey":{
                       "type":"string",
                       "enum":[
                         {
                           "title":"Resource locked",
                           "description":{
-                            "en":"resource locked",
-                            "es":"resource locked",
-                            "pt":"resource locked"
+                            "en":"Resource locked",
+                            "es":"Resource locked",
+                            "pt":"Resource locked"
                           }
                         }
                       ]
@@ -709,7 +719,7 @@
                 "schema":{
                   "type":"object",
                   "properties":{
-                    "code":{
+                    "errorKey":{
                       "type":"string",
                       "enum":[
                         {
@@ -738,15 +748,15 @@
                 "schema":{
                   "type":"object",
                   "properties":{
-                    "code":{
+                    "errorKey":{
                       "type":"string",
                       "enum":[
                         {
                           "title":"bad_gateway",
                           "description":{
-                            "en":"error processing request",
-                            "es":"error processing request",
-                            "pt":"error processing request"
+                            "en":"Error processing request",
+                            "es":"Error processing request",
+                            "pt":"Error processing request"
                           }
                         }
                       ]
