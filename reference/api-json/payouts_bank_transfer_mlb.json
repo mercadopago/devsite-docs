@@ -87,7 +87,7 @@
                   },
                   "point_of_interaction": {
                     "required": true,
-                    "type": "object",
+                    "type": "string",
                     "description": {
                       "en": "Fix value. It must always be \"PSP_TRANSFER\"",
                       "pt": "Valor fixo. Deve sempre ser preenchido como \"PSP_TRANSFER\"",
@@ -144,7 +144,7 @@
                         "properties": {
                           "accounts": {
                             "type": "array",
-                            "proprieties": {
+                            "properties": {
                               "type": {
                                 "type": "string",
                                 "required": true,
@@ -369,7 +369,7 @@
                     },
                     "point_of_interaction": {
                       "type": "string",
-                      "example": "WEB",
+                      "example": "PSP_TRANSFER",
                       "properties": {
                         "type": {
                           "type": "string",
@@ -408,10 +408,10 @@
                           "type": "object",
                           "properties": {
                             "accounts": {
-                              "type": "object",
+                              "type": "array",
                               "properties": {
                                 "amount": {
-                                  "type": "string",
+                                  "type": "number",
                                   "description": {
                                     "es": "Monto debitado de la cuenta Mercado Pago de origen.",
                                     "pt": "Montante debitado da conta Mercado Pago de origem.",
@@ -435,10 +435,10 @@
                           "type": "object",
                           "properties": {
                             "accounts": {
-                              "type": "object",
+                              "type": "array",
                               "properties": {
                                 "amount": {
-                                  "type":"string",
+                                  "type":"number",
                                   "description": {
                                     "es": "Monto transferido a la cuenta de destino. Su valor será igual a \"from.accounts.amount\", salvo que haya habido un reembolso total o parcial.",
                                     "pt": "Valor transferido para a conta de destino. O valor será igual a \"from.accounts.amount\", a menos que tenha havido reembolso total ou parcial.",
@@ -946,7 +946,7 @@
                     },
                     "point_of_interaction": {
                       "type": "string",
-                      "example": "WEB",
+                      "example": "PSP_TRANSFER",
                       "properties": {
                         "type": {
                           "type": "string",
@@ -985,10 +985,10 @@
                           "type": "object",
                           "properties": {
                             "accounts": {
-                              "type": "object",
+                              "type": "array",
                               "properties": {
                                 "amount": {
-                                  "type": "string",
+                                  "type": "number",
                                   "description": {
                                     "es": "Monto debitado de la cuenta Mercado Pago de origen.",
                                     "pt": "Montante debitado da conta Mercado Pago de origem.",
@@ -1012,10 +1012,10 @@
                           "type": "object",
                           "properties": {
                             "accounts": {
-                              "type": "object",
+                              "type": "array",
                               "properties": {
                                 "amount": {
-                                  "type":"string",
+                                  "type":"number",
                                   "description": {
                                     "es": "Monto transferido a la cuenta de destino. Su valor será igual a \"from.accounts.amount\", salvo que haya habido un reembolso total o parcial.",
                                     "pt": "Valor transferido para a conta de destino. O valor será igual a \"from.accounts.amount\", a menos que tenha havido reembolso total ou parcial.",
