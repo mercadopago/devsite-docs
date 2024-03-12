@@ -59,6 +59,7 @@
                     "example": "2019-06-01T00:00:00Z"
                   }
                 }
+<<<<<<< HEAD
               }
             }
           }
@@ -73,6 +74,47 @@
             "content": {
               "application/json": {
                 "schema": {
+=======
+              ],
+              "requestBody": {
+                "description": {
+                  "en": "These are the required fields to manually generate a new report.",
+                  "pt": "Estes são os campos necessários para gerar manualmente um novo relatório.",
+                  "es": "Estos son los campos necesarios para generar manualmente un nuevo reporte."
+                },
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "type": "object",
+                      "properties": {
+                        "begin_date": {
+                          "type": "string",
+                          "required": true,
+                          "description": {
+                            "en": "This field indicates the start date and time of the interval for the report, in the UTC time zone (indicated by the 'Z' at the end, which stands for 'Zulu time' or Coordinated Universal Time).",
+                            "pt": "Este campo indica a data e hora de início do intervalo para o relatório, no fuso horário UTC (indicado pela 'Z' no final, que significa 'Zulu time' ou tempo coordenado universal).",
+                            "es": "Este campo indica la fecha y hora de inicio del intervalo para el informe, en la zona horaria UTC (indicada por la 'Z' al final, que significa 'Zulu time' o tiempo coordinado universal)."
+                          },
+                          "example": "2019-05-01T00:00:00Z"
+                        },
+                        "end_date": {
+                          "type": "string",
+                          "required": true,
+                          "description": {
+                            "en": "This field indicates the end date and time of the interval for the report, in the UTC time zone (indicated by the 'Z' at the end, which stands for 'Zulu time' or Coordinated Universal Time).",
+                            "pt": "Este campo indica a data e hora de término do intervalo para o relatório, no fuso horário UTC (indicado pelo 'Z' no final, que significa 'Zulu time' ou tempo coordenado universal).",
+                            "es": "Este campo indica la fecha y hora de finalización del intervalo para el informe, en la zona horaria UTC (indicado por la 'Z' al final, que significa 'Zulu time' o tiempo coordinado universal)."
+                          },
+                          "example": "2019-06-01T00:00:00Z"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+>>>>>>> 1c6d410b49825c5c332c1956b85aaecb32a8663d
                   "description": {
                     "en": "The API will respond with a JSON structure containing relevant information for your creation request.",
                     "pt": "A API responderá com uma estrutura JSON contendo informações relevantes para sua solicitação de criação.",
@@ -318,6 +360,7 @@
                       ]
                     }
                   }
+<<<<<<< HEAD
                 }
               }
             }
@@ -342,12 +385,43 @@
                             "en": "Invalid token.",
                             "es": "Token no válido.",
                             "pt": "Token inválido."
+=======
+                },
+                "401": {
+                  "description": {
+                    "en": "Unauthorized.",
+                    "pt": "Unauthorized.",
+                    "es": "Unauthorized."
+                  },
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "properties": {
+                          "errorKey": {
+                            "type": "string",
+                            "enum": [
+                              {
+                                "title": "Invalid token",
+                                "description": {
+                                  "en": "Invalid token.",
+                                  "es": "Token no válido.",
+                                  "pt": "Token inválido."
+                                }
+                              }
+                            ]
+>>>>>>> 1c6d410b49825c5c332c1956b85aaecb32a8663d
                           }
                         }
                       ]
                     }
                   }
                 }
+              },
+              "title": {
+                "en": "Create report",
+                "pt": "Criar relatório",
+                "es": "Crear reporte"
               }
             }
           }
@@ -359,5 +433,9 @@
         "es": "Crear reporte"
       }
     }
+<<<<<<< HEAD
   }
 }
+=======
+}
+>>>>>>> 1c6d410b49825c5c332c1956b85aaecb32a8663d

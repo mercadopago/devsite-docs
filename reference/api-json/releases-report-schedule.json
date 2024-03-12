@@ -38,9 +38,15 @@
               "application/json": {
                 "schema": {
                   "description": {
+<<<<<<< HEAD
                     "en": "The API will respond with a JSON Array structure in which you will find the list of all the reports you have generated.",
                     "pt": "A API responderá com uma estrutura de JSON Array, na qual você encontrará a lista de todos os relatórios que você gerou.",
                     "es": "La API responderá con una estructura JSON Array en la cual encontrarás el listado de todos los reportes que has generado."
+=======
+                    "en": "Success.",
+                    "pt": "Success.",
+                    "es": "Success."
+>>>>>>> 1c6d410b49825c5c332c1956b85aaecb32a8663d
                   },
                   "type": "object",
                   "properties": {
@@ -229,6 +235,7 @@
                       "example": "CSV"
                     }
                   }
+<<<<<<< HEAD
                 }
               }
             }
@@ -253,13 +260,45 @@
                             "en": "Invalid token.",
                             "es": "Token no válido.",
                             "pt": "Token inválido."
+=======
+                },
+                "401": {
+                  "description": {
+                    "en": "Unauthorized.",
+                    "pt": "Unauthorized.",
+                    "es": "Unauthorized."
+                  },
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "properties": {
+                          "errorKey": {
+                            "type": "string",
+                            "enum": [
+                              {
+                                "title": "Invalid token",
+                                "description": {
+                                  "en": "Invalid token.",
+                                  "es": "Token no válido.",
+                                  "pt": "Token inválido."
+                                }
+                              }
+                            ]
+>>>>>>> 1c6d410b49825c5c332c1956b85aaecb32a8663d
                           }
                         }
                       ]
                     }
                   }
                 }
+              },
+              "title": {
+                "en": "Consult report",
+                "pt": "Consultar relatório",
+                "es": "Consultar reporte"
               }
+<<<<<<< HEAD
             }
           }
         }
@@ -293,6 +332,8 @@
             "schema": {
               "type": "string",
               "example": "Bearer <TOKEN>"
+=======
+>>>>>>> 1c6d410b49825c5c332c1956b85aaecb32a8663d
             }
           }
         ],
@@ -498,6 +539,7 @@
                       "example": "CSV"
                     }
                   }
+<<<<<<< HEAD
                 }
               }
             }
@@ -522,6 +564,32 @@
                             "en": "Invalid token.",
                             "es": "Token no válido.",
                             "pt": "Token inválido."
+=======
+                },
+                "401": {
+                  "description": {
+                    "en": "Unauthorized.",
+                    "pt": "Unauthorized.",
+                    "es": "Unauthorized."
+                  },
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "properties": {
+                          "errorKey": {
+                            "type": "string",
+                            "enum": [
+                              {
+                                "title": "Invalid token",
+                                "description": {
+                                  "en": "Invalid token.",
+                                  "es": "Token no válido.",
+                                  "pt": "Token inválido."
+                                }
+                              }
+                            ]
+>>>>>>> 1c6d410b49825c5c332c1956b85aaecb32a8663d
                           }
                         }
                       ]
@@ -574,9 +642,15 @@
               "application/json": {
                 "schema": {
                   "description": {
+<<<<<<< HEAD
                     "en": "The API will respond with a JSON structure containing relevant information for your generation request.",
                     "pt": "A API responderá com uma estrutura JSON contendo informações relevantes para o seu pedido de criação.",
                     "es": "El API responderá con una estructura JSON con información relevante a tu pedido de generación."
+=======
+                    "es": "Success.",
+                    "pt": "Success.",
+                    "en": "Success."
+>>>>>>> 1c6d410b49825c5c332c1956b85aaecb32a8663d
                   },
                   "type": "object",
                   "properties": {
@@ -765,6 +839,7 @@
                       "example": "CSV"
                     }
                   }
+<<<<<<< HEAD
                 }
               }
             }
@@ -789,6 +864,32 @@
                             "en": "Invalid token.",
                             "es": "Token no válido.",
                             "pt": "Token inválido."
+=======
+                },
+                "401": {
+                  "description": {
+                    "en": "Unauthorized.",
+                    "pt": "Unauthorized.",
+                    "es": "Unauthorized."
+                  },
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "properties": {
+                          "errorKey": {
+                            "type": "string",
+                            "enum": [
+                              {
+                                "title": "Invalid token",
+                                "description": {
+                                  "en": "Invalid token.",
+                                  "es": "Token no válido.",
+                                  "pt": "Token inválido."
+                                }
+                              }
+                            ]
+>>>>>>> 1c6d410b49825c5c332c1956b85aaecb32a8663d
                           }
                         }
                       ]
@@ -831,6 +932,7 @@
               "example": "reserve-release-report.csv"
             }
           },
+<<<<<<< HEAD
           {
             "name": "Authorization",
             "in": "header",
@@ -857,6 +959,37 @@
               "text/plain": {
                 "schema": {
                   "type": "string",
+=======
+          "/v1/account/release_report/{file_name}": {
+            "get": {
+              "tags": [
+                "reporting"
+              ],
+              "description": {
+                "en": "Use the 'file_name' attribute, and you can download any of your reports. The response to this request will result in the download of the file corresponding to your report",
+                "pt": "Utilize o atributo 'file_name' e você poderá baixar qualquer um dos seus relatório. A resposta a esta solicitação resultará no download do arquivo correspondente ao seu relatório",
+                "es": "Utilice el atributo 'file_name' y podrá descargar cualquiera de sus reportes. La respuesta a esta solicitud dará como resultado la descarga del archivo correspondiente a su reporte"
+              },
+              "parameters": [
+                {
+                  "name": "file_name",
+                  "in": "path",
+                  "description": {
+                    "en": "The parameter 'file_name' corresponds to the file name of the report you wish to download.",
+                    "pt": "O parâmetro 'file_name' corresponde ao nome do arquivo do relatório que você deseja baixar.",
+                    "es": "El parámetro 'file_name' corresponde al nombre del archivo del reporte que deseas descargar."
+                  },
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "example": "<YOUR_FILE_NAME>.csv"
+                  }
+                },
+                {
+                  "name": "Authorization",
+                  "in": "header",
+                  "required": true,
+>>>>>>> 1c6d410b49825c5c332c1956b85aaecb32a8663d
                   "description": {
                     "en": "The API response provides the data for the requested report. The response may contain various fields, depending on the nature of the report and the provided parameters.",
                     "pt": "A resposta da API fornece os dados do relatório solicitado. A resposta pode conter vários campos, dependendo da natureza do relatório e dos parâmetros fornecidos.",
@@ -864,6 +997,7 @@
                   },
                   "example": "DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,SELLER_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD,TAX_DETAIL,TAX_AMOUNT_TELCO,TRANSACTION_APPROVAL_DATE,POS_ID,POS_NAME,EXTERNAL_POS_ID,STORE_ID,STORE_NAME,EXTERNAL_STORE_ID,TAXES_DISAGGREGATED,METADATA,REFUND_ID"
                 }
+<<<<<<< HEAD
               }
             }
           },
@@ -887,6 +1021,58 @@
                             "en": "Invalid token.",
                             "es": "Token no válido.",
                             "pt": "Token inválido."
+=======
+              ],
+              "responses": {
+                  "200": {
+                    "description": {
+                      "es": "Success.",
+                      "pt": "Success.",
+                      "en": "Success."
+                    },
+                    "content": {
+                      "application/json": {
+                        "schema": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "string",
+                              "description": {
+                                "en": "The API response provides the data for the requested report. The response may contain various fields, depending on the nature of the report and the provided parameters.",
+                                "pt": "A resposta da API fornece os dados do relatório solicitado. Ela pode conter vários campos, dependendo da natureza do relatório e dos parâmetros fornecidos.",
+                                "es": "La respuesta del API proporciona los datos del reporte solicitado. La respuesta puede contener varios campos, dependiendo de la naturaleza del reporte y los parámetros proporcionados."
+                              },
+                              "example": "DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,SELLER_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD,TAX_DETAIL,TAX_AMOUNT_TELCO,TRANSACTION_APPROVAL_DATE,POS_ID,POS_NAME,EXTERNAL_POS_ID,STORE_ID,STORE_NAME,EXTERNAL_STORE_ID,TAXES_DISAGGREGATED,METADATA,REFUND_ID"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },                                     
+                "401": {
+                  "description": {
+                    "en": "Unauthorized.",
+                    "pt": "Unauthorized.",
+                    "es": "Unauthorized."
+                  },
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "properties": {
+                          "errorKey": {
+                            "type": "string",
+                            "enum": [
+                              {
+                                "title": "Invalid token",
+                                "description": {
+                                  "en": "Invalid token.",
+                                  "es": "Token no válido.",
+                                  "pt": "Token inválido."
+                                }
+                              }
+                            ]
+>>>>>>> 1c6d410b49825c5c332c1956b85aaecb32a8663d
                           }
                         }
                       ]
