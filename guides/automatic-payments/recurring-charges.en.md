@@ -255,10 +255,6 @@ payment.create({
 .catch((error) => console.log(error));
 ```
 ```java
-===
-Encontre o estado do pagamento no campo _status_.
-===
-
 Map<String, String> customHeaders = new HashMap<>();
     customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
  
@@ -293,9 +289,6 @@ client.create(paymentCreateRequest, requestOptions);
 
 ```
 ```ruby
-===
-Encontre o estado do pagamento no campo _status_.
-===
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
 
@@ -327,9 +320,6 @@ puts payment
  
 ```
 ```csharp
-===
-Encontre o status do pagamento no campo _status_.
-===
 using System;
 using MercadoPago.Client.Common;
 using MercadoPago.Client.Payment;
@@ -366,9 +356,6 @@ Console.WriteLine(payment.Status);
  
 ```
 ```python
-===
-Encontre o status do pagamento no campo _status_.
-===
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
 
@@ -398,10 +385,6 @@ payment = payment_response["response"]
 print(payment)
 ```
 ```curl
-===
-Encontre o status do pagamento no campo _status_.
-===
- 
 curl -X POST \
    -H 'accept: application/json' \
    -H 'content-type: application/json' \
