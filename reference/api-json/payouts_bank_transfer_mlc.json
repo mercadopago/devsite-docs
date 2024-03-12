@@ -242,8 +242,8 @@
         "responses": {
           "200": {
             "description": {
-              "en": "Exitosa",
-              "pt": "Sucesso",
+              "en": "Success",
+              "pt": "Success",
               "es": "Success"
             },
             "content": {
@@ -253,12 +253,12 @@
                   "properties": {
                     "id": {
                       "type": "string",
-                        "description": {
-                          "en": "Unique transaction identifier, automatically generated.",
-                          "pt": "Identificador único da transação, gerado automaticamente",
-                          "es": "Identificador único de la transacción, generado automáticamente." 
-                        },
-                        "example": "0d5020ed"
+                      "description": {
+                        "en": "Unique transaction identifier, automatically generated.",
+                        "pt": "Identificador único da transação, gerado automaticamente",
+                        "es": "Identificador único de la transacción, generado automáticamente." 
+                      },
+                      "example": "0d5020ed"
                     },
                     "status": {
                       "type": "string",
@@ -368,121 +368,121 @@
                               }
                             }
                           }
-                        }
-                      },
-                      "to": {
-                        "type": "object",
-                        "properties": {
-                          "accounts": {
-                            "type": "array",
-                            "properties": {
-                              "amount": {
-                                "type":"number",
-                                "description": {
-                                  "es": "Monto transferido a la cuenta de destino. Su valor será igual a \"from.accounts.amount\", salvo que haya habido un reembolso total o parcial.",
-                                  "pt": "Valor transferido para a conta de destino. O valor será igual a \"from.accounts.amount\", a menos que tenha havido reembolso total ou parcial.",
-                                  "en": "Amount transferred to the destination account. Its value will be equal to \"from.accounts.amount\", unless there has been a full or partial refund."
-                                },
-                                "example": "100,00"
-                              },
-                              "status_detail": {
-                                "type":"string",
-                                "description": {
-                                  "es": "Información detallada del estado de la operación.",
-                                  "pt": "Informação detalhada do status da operação.",
-                                  "en": "Detailed information about the status of the operation."
-                                },
-                                "enum": [
-                                  {
-                                    "title": "approved",
-                                    "description": {
-                                      "en": "The transaction processing was made successfully",
-                                      "es": "El procesamiento de la transacción se realizó de manera exitosa.",
-                                      "pt": "O processamento da transação foi bem-sucedido."
-                                    }
+                        },
+                        "to": {
+                          "type": "object",
+                          "properties": {
+                            "accounts": {
+                              "type": "array",
+                              "properties": {
+                                "amount": {
+                                  "type":"number",
+                                  "description": {
+                                    "es": "Monto transferido a la cuenta de destino. Su valor será igual a \"from.accounts.amount\", salvo que haya habido un reembolso total o parcial.",
+                                    "pt": "Valor transferido para a conta de destino. O valor será igual a \"from.accounts.amount\", a menos que tenha havido reembolso total ou parcial.",
+                                    "en": "Amount transferred to the destination account. Its value will be equal to \"from.accounts.amount\", unless there has been a full or partial refund."
                                   },
-                                  {
-                                    "title": "partially_refunded",
-                                    "description": {
-                                      "en": "The transaction was partially refunded by the destination bank.",
-                                      "es": "La transacción fue reembolsada parcialmente por el banco de destino.",
-                                      "pt": "A transação foi parcialmente reembolsada pelo banco de destino."
-                                    }
-                                  }
-                                ],
-                                "example": "approved"
-                              },
-                              "owner": {
-                                "type": "object",
-                                "properties": {
-                                  "identification": {
-                                    "type": "object",
-                                    "properties": {
-                                      "number": {
-                                        "description": {
-                                          "en": "The number refers to the identifier of the destination account holder. ",
-                                          "pt": "O número se refere ao identificador do titular da conta de destino. ",
-                                          "es": "El número hace referencia al identificador del titular de la cuenta de destino. "
-                                        },
-                                        "example": "1234567890"
+                                  "example": "100,00"
+                                },
+                                "status_detail": {
+                                  "type":"string",
+                                  "description": {
+                                    "es": "Información detallada del estado de la operación.",
+                                    "pt": "Informação detalhada do status da operação.",
+                                    "en": "Detailed information about the status of the operation."
+                                  },
+                                  "enum": [
+                                    {
+                                      "title": "approved",
+                                      "description": {
+                                        "en": "The transaction processing was made successfully",
+                                        "es": "El procesamiento de la transacción se realizó de manera exitosa.",
+                                        "pt": "O processamento da transação foi bem-sucedido."
+                                      }
+                                    },
+                                    {
+                                      "title": "partially_refunded",
+                                      "description": {
+                                        "en": "The transaction was partially refunded by the destination bank.",
+                                        "es": "La transacción fue reembolsada parcialmente por el banco de destino.",
+                                        "pt": "A transação foi parcialmente reembolsada pelo banco de destino."
                                       }
                                     }
-                                  },
-                                  "type": {
-                                    "type":"string",
-                                    "description": {
-                                      "en": "Refers to the type of identification.",
-                                      "pt": "Refere-se ao tipo de identificação.",
-                                      "es": "Se refiere al tipo de identificación."
+                                  ],
+                                  "example": "approved"
+                                },
+                                "owner": {
+                                  "type": "object",
+                                  "properties": {
+                                    "identification": {
+                                      "type": "object",
+                                      "properties": {
+                                        "number": {
+                                          "description": {
+                                            "en": "The number refers to the identifier of the destination account holder. ",
+                                            "pt": "O número se refere ao identificador do titular da conta de destino. ",
+                                            "es": "El número hace referencia al identificador del titular de la cuenta de destino. "
+                                          },
+                                          "example": "1234567890"
+                                        }
+                                      }
                                     },
-                                    "example": "RUT"
+                                    "type": {
+                                      "type":"string",
+                                      "description": {
+                                        "en": "Refers to the type of identification.",
+                                        "pt": "Refere-se ao tipo de identificação.",
+                                        "es": "Se refiere al tipo de identificación."
+                                      },
+                                      "example": "RUT"
+                                    }
                                   }
                                 }
                               }
                             }
                           }
-                        }
-                      },
-                      "paid_amount": {
-                        "type": "number",
-                        "description": {
-                          "es": "Monto total cobrado al titular de la cuenta de origen. Será igual a \"from.accounts.amount\", salvo que haya habido un reembolso total o parcial, indicado en \"refunded_amount\".",
-                          "pt": "Valor total cobrado ao titular da conta de origem. Será igual a \"from.accounts.amount\", a menos que tenha havido reembolso total ou parcial, indicado em \"refunded_amount\".",
-                          "en": "Total amount charged to the origin account holder. Its value will be equal to \"from.accounts.amount\", unless there has been a full or partial refund, indicated in \"refunded_amount\"."
                         },
-                        "example": 100.00
-                      } ,
-                      "refunded_amount": {
-                        "type": "number",
-                        "description": {
-                          "es": "En caso de un reembolso, indicará el monto total reembolsado al titular de la cuenta de origen. Si no hubo ningún reembolso, su valor será 0.",
-                          "pt": "No caso de reembolso, indicará o valor total reembolsado ao titular da conta de origem. Se não houve reembolso, seu valor será 0.",
-                          "en": "In case of a refund, it will indicate the total amount refunded to the holder of the origin account. If there was no refund, its value will be 0."
+                        "paid_amount": {
+                          "type": "number",
+                          "description": {
+                            "es": "Monto total cobrado al titular de la cuenta de origen. Será igual a \"from.accounts.amount\", salvo que haya habido un reembolso total o parcial, indicado en \"refunded_amount\".",
+                            "pt": "Valor total cobrado ao titular da conta de origem. Será igual a \"from.accounts.amount\", a menos que tenha havido reembolso total ou parcial, indicado em \"refunded_amount\".",
+                            "en": "Total amount charged to the origin account holder. Its value will be equal to \"from.accounts.amount\", unless there has been a full or partial refund, indicated in \"refunded_amount\"."
+                          },
+                          "example": 100.00
+                        } ,
+                        "refunded_amount": {
+                          "type": "number",
+                          "description": {
+                            "es": "En caso de un reembolso, indicará el monto total reembolsado al titular de la cuenta de origen. Si no hubo ningún reembolso, su valor será 0.",
+                            "pt": "No caso de reembolso, indicará o valor total reembolsado ao titular da conta de origem. Se não houve reembolso, seu valor será 0.",
+                            "en": "In case of a refund, it will indicate the total amount refunded to the holder of the origin account. If there was no refund, its value will be 0."
+                          },
+                          "example": 1.00
                         },
-                        "example": 1.00
-                      },
-                      "payer": {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "number",
-                            "description": {
-                              "es": "Identificador del integrador titular de la cuenta de origen.",
-                              "pt": "Identificador do integrador titular da conta de origem.",
-                              "en": "Identifier of the integrator holder of the origin account."
-                            },
-                            "example": 123456543
+                        "payer": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "number",
+                              "description": {
+                                "es": "Identificador del integrador titular de la cuenta de origen.",
+                                "pt": "Identificador do integrador titular da conta de origem.",
+                                "en": "Identifier of the integrator holder of the origin account."
+                              },
+                              "example": 123456543
+                            }
                           }
-                        }
-                      },
-                      "total_amount": {
-                        "type": "number",
-                        "description": {
-                          "es": "Monto total de la transacción",
-                          "pt": "Valor total da transação",
-                          "en": "Total amount of the transaction"
                         },
-                        "example": 100.00
+                        "total_amount": {
+                          "type": "number",
+                          "description": {
+                            "es": "Monto total de la transacción",
+                            "pt": "Valor total da transação",
+                            "en": "Total amount of the transaction"
+                          },
+                          "example": 100.00
+                        }
                       }
                     }
                   }
