@@ -69,7 +69,7 @@
             }
           }
         ],
-        "request_body": {
+        "requestBody": {
           "content": {
             "application/json": {
               "schema": {

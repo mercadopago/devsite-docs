@@ -69,7 +69,7 @@
             }
           }
         ],
-        "request_body": {
+        "requestBody": {
           "content": {
             "application/json": {
               "schema": {
@@ -428,9 +428,9 @@
                               },
                               "status_detail": {
                                 "description": {
-                                  "es": "Detalle del estado de la transacción",
-                                  "pt": "Detalhe do estado da transação",
-                                  "en": "Transaction status detail"
+                                  "es": "Detalle del estado de la transacción. Usualmente es devuelto vacío.",
+                                    "pt": "Detalhe do estado da transação. Geralmente é retornado vazio.",
+                                    "en": "Transaction status detail. It is usually returned empty."
                                 }
                               }
                             }
