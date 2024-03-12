@@ -22,7 +22,8 @@
               "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
             },
             "schema": {
-              "type": "string"
+              "type": "string",
+              "example": "Bearer <TOKEN>"
             }
           }
         ],
