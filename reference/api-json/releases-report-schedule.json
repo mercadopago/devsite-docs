@@ -856,18 +856,22 @@
                     "content": {
                       "application/json": {
                         "schema": {
-                          "type": "string",
-                          "description": {
-                            "en": "The API response provides the data for the requested report. The response may contain various fields, depending on the nature of the report and the provided parameters.",
-                            "pt": "A resposta da API fornece os dados do relatório solicitado. A resposta pode conter vários campos, dependendo da natureza do relatório e dos parâmetros fornecidos.",
-                            "es": "La respuesta del API proporciona los datos del reporte solicitado. La respuesta puede contener varios campos, dependiendo de la naturaleza del reporte y los parámetros proporcionados."
-                          },
-                          "example": "DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,SELLER_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD,TAX_DETAIL,TAX_AMOUNT_TELCO,TRANSACTION_APPROVAL_DATE,POS_ID,POS_NAME,EXTERNAL_POS_ID,STORE_ID,STORE_NAME,EXTERNAL_STORE_ID,TAXES_DISAGGREGATED,METADATA,REFUND_ID"
-                        },
-                        "example": "DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,SELLER_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD,TAX_DETAIL,TAX_AMOUNT_TELCO,TRANSACTION_APPROVAL_DATE,POS_ID,POS_NAME,EXTERNAL_POS_ID,STORE_ID,STORE_NAME,EXTERNAL_STORE_ID,TAXES_DISAGGREGATED,METADATA,REFUND_ID"
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "string",
+                              "description": {
+                                "en": "The API response provides the data for the requested report. The response may contain various fields, depending on the nature of the report and the provided parameters.",
+                                "pt": "A resposta da API fornece os dados do relatório solicitado. Ela pode conter vários campos, dependendo da natureza do relatório e dos parâmetros fornecidos.",
+                                "es": "La respuesta del API proporciona los datos del reporte solicitado. La respuesta puede contener varios campos, dependiendo de la naturaleza del reporte y los parámetros proporcionados."
+                              },
+                              "example": "DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,SELLER_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD,TAX_DETAIL,TAX_AMOUNT_TELCO,TRANSACTION_APPROVAL_DATE,POS_ID,POS_NAME,EXTERNAL_POS_ID,STORE_ID,STORE_NAME,EXTERNAL_STORE_ID,TAXES_DISAGGREGATED,METADATA,REFUND_ID"
+                            }
+                          }
+                        }
                       }
                     }
-                  },                           
+                  },                                     
                 "401": {
                   "description": {
                     "en": "Unauthorized.",
