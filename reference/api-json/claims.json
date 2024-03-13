@@ -1,7 +1,7 @@
 {
     "url": "https://api.mercadopago.com",
     "paths": {
-      "/v1/claims/{claim_id}": {
+      "/post-purchase/v1/claims/{claim_id}": {
         "get": {
           "tags": [
             "checkout-pro"
@@ -834,7 +834,7 @@
           }
         }
       },
-      "/v1/claims/search": {
+      "/post-purchase/v1/claims/{claim_id}/search": {
         "get": {
           "tags": [
             "checkout-pro"
@@ -2647,7 +2647,7 @@
           }
         }
       },
-      "/v1/claims/{claim_id}/evidences": {
+      "/post-purchase/v1/claims/{claim_id}/evidences": {
         "get": {
           "tags": [
             "checkout-pro"
@@ -3233,7 +3233,7 @@
           }
         }
       },
-      "/v1/claims/{claim_id}/status_history": {
+      "/post-purchase/v1/claims/{claim_id}/status_history": {
         "get": {
           "tags": [
             "checkout-pro"
@@ -3401,7 +3401,7 @@
           }
         }
       },
-      "/post-purchase/sites/{site_id}/v2/reasons/{reason_id}": {
+      "/post-purchase/v1/{site_id}/v2/reasons/{reason_id}": {
         "get": {
           "tags": [
             "checkout-pro"
