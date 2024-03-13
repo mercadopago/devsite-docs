@@ -7,9 +7,9 @@
                 "reporting"
               ],
               "description": {
-                "en": "This endpoint allows you to create a new report within a specific range of dates",
-                "pt": "Este endpoint permite criar um novo relatório dentro de um intervalo de datas específico",
-                "es": "Este endpoint permite crear un nuevo reporte dentro de un intervalo de fechas específico"
+                "en": "Manually create a new report within a specific date range",
+                "pt": "Crie manualmente um novo relatório dentro de um intervalo de datas específico",
+                "es": "Crea manualmente un nuevo informe dentro de un intervalo de fechas específico"
               },
               "parameters": [
                 {
