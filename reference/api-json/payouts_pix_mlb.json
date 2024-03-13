@@ -883,8 +883,8 @@
           }
         },
         "title": {
-          "en": "Create transaction to bank account",
-          "pt": "Criar transação para conta bancária",
+          "en": "Create transaction to Pix account",
+          "pt": "Criar transação para conta Pix",
           "es": "Crear transacción para cuenta bancaria"
         }
       }
