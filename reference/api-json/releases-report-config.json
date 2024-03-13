@@ -11,22 +11,6 @@
           "pt": "Confira os campos que você pode configurar para ajustar as suas preferências antes de começar. Com base nessas configurações, você conseguirá gerar os relatórios posteriormente",
           "es": "Revise los campos que puede configurar para ajustar sus preferencias antes de comenzar. Con base en estas configuraciones, podrá generar reportes posteriormente"
         },
-        "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "description": {
-              "en": "Token required for authentication. This field is intended for platforms or modules that offer Mercado Pago in their solutions.",
-              "pt": "Token necessário para autenticação. Este campo é destinado a plataformas ou módulos que oferecem o Mercado Pago em suas soluções.",
-              "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
-            },
-            "schema": {
-              "type": "string",
-              "example": "Bearer <TOKEN>"
-            }
-          }
-        ],
         "requestBody": {
           "description": {
             "en": "These are the required fields for creating a configuration for the Release Report.",
@@ -202,52 +186,31 @@
                     "type": "array",
                     "required": false,
                     "items": {
-                      "type": "object",
-                      "properties": {
-                        "email": {
-                          "type": "string",
-                          "description": {
-                            "en": "Email.",
-                            "pt": "E-mail para recebimento das notificações.",
-                            "es": "Correo electrónico."
-                          },
-                          "example": "example@email.com"
-                        }
-                      }
-                    },
+                      "type": "string",
+                      "format": "email",
                       "description": {
-                        "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
-                        "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
-                        "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                        "en": "Email.",
+                        "pt": "E-mail para recebimento das notificações.",
+                        "es": "Correo electrónico."
                       }
                     },
-                  "refund_detailed": {
-                    "type": "boolean",
-                    "required": false,
                     "description": {
-                      "en": "Display the refund's reference code ('external_reference') instead of the payment's reference code ('external_reference').",
-                      "pt": "Mostra o código de referência do reembolso ('external_reference') em vez do código de referência do pagamento ('external_reference').",
-                      "es": "Muestra el código de referencia ('external_reference') del reembolso en vez del código de referencia ('external_reference') del pago."
+                      "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
+                      "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
+                      "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
                     },
-                    "example": true
+                    "example": [
+                      "correo1@example.com",
+                      "correo2@example.com"
+                    ]
                   },
-                  "include_withdrawal": {
+                  "include_withdrawal_at_end": {
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "This field includes money withdrawals in the report.",
-                      "pt": "Este campo inclui os saques de dinheiro no relatório.",
-                      "es": "Este campo incluye retiros de dinero en el informe."
-                    },
-                    "example": true
-                  },
-                  "coupon_detailed": {
-                    "type": "boolean",
-                    "required": false,
-                    "description": {
-                      "en": "This field adds a column to display the details of the discount coupons.",
-                      "pt": "Este campo adiciona uma coluna para mostrar os detalhes dos cupons de desconto.",
-                      "es": "Este campo añade una columna para mostrar el detalle de los cupones de descuento."
+                      "es": "Este campo indica si deben incluirse las transacciones de retiro realizadas al final del intervalo de fechas especificado en el reporte.",
+                      "pt": "Este campo indica se as transações de saque realizadas no final do intervalo de datas especificado no relatório devem ser incluídas.",
+                      "en": "This field indicates whether withdrawal transactions made at the end of the specified date range in the report should be included."
                     },
                     "example": true
                   },
@@ -279,7 +242,7 @@
                       "pt": "Campo informativo que indica se já existem relatórios programados na conta do usuário. True: A criação automática está ativada; false: A criação automática está desativada.",
                       "es": "Campo informativo que indica si ya existen reportes programados en la cuenta del usuario. True: La generación automática está activada; false: La generación automática está desactivada."
                     },
-                    "example": true
+                    "example": false
                   }
                 }
               }
@@ -316,31 +279,30 @@
                       "type": "array",
                       "required": false,
                       "items": {
-                        "type": "object",
-                        "properties": {
-                          "email": {
-                            "type": "string",
-                            "description": {
-                              "en": "Email.",
-                              "pt": "E-mail para recebimento das notificações.",
-                              "es": "Correo electrónico."
-                            },
-                            "example": "example@email.com"
-                          }
-                        }
-                      },
+                        "type": "string",
+                        "format": "email",
                         "description": {
-                          "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
-                          "pt": "Campo que contém um grupo de destinatários de e-mail que receberão notificações quando um relatório estiver pronto e disponível para download.",
-                          "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                          "en": "Email.",
+                          "pt": "E-mail para recebimento das notificações.",
+                          "es": "Correo electrónico."
                         }
                       },
+                      "description": {
+                        "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
+                        "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
+                        "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                      },
+                      "example": [
+                        "correo1@example.com",
+                        "correo2@example.com"
+                      ]
+                    },
                     "display_timezone": {
                       "type": "string",
                       "description": {
                         "en": "This field determines the date and time displayed in the reports. If you do not configure this field with a time zone, the system will default to GMT-04. If you choose a time zone that observes daylight saving time, it is necessary to make manual adjustments when the time changes.",
                         "pt": "Este campo informa a data e a hora que serão exibidas nos relatórios baseado nas configurações realizadas no request. Caso não tenha configurado um fuso horário, por padrão, o sistema usará o valor GMT-04.",
-                        "es": "Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora."  
+                        "es": "Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora."
                       },
                       "example": "GMT-04"
                     },
@@ -616,22 +578,6 @@
           "pt": "Este endpoint permite atualizar as configurações padrão dos seus relatórios",
           "es": "Este endpoint actualiza las configuraciones predeterminadas de tus informes cuando sea necesario"
         },
-        "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "description": {
-              "en": "Token required for authentication. This field is intended for platforms or modules that offer Mercado Pago in their solutions.",
-              "pt": "Token necessário para autenticação. Este campo é destinado a plataformas ou módulos que oferecem o Mercado Pago em suas soluções.",
-              "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
-            },
-            "schema": {
-              "type": "string",
-              "example": "Bearer <TOKEN>"
-            }
-          }
-        ],
         "requestBody": {
           "description": {
             "en": "These are the necessary fields for updating a configuration for the Releases Report.",
@@ -807,42 +753,30 @@
                     "type": "array",
                     "required": false,
                     "items": {
-                      "type": "object",
-                      "properties": {
-                        "email": {
-                          "type": "string",
-                          "description": {
-                            "en": "Email.",
-                            "pt": "E-mail.",
-                            "es": "Correo electrónico."
-                          },
-                          "example": "example@email.com"
-                        }
-                      }
-                    },
+                      "type": "string",
+                      "format": "email",
                       "description": {
-                        "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
-                        "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
-                        "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                        "en": "Email.",
+                        "pt": "E-mail para recebimento das notificações.",
+                        "es": "Correo electrónico."
                       }
                     },
-                  "refund_detailed": {
-                    "type": "boolean",
-                    "required": false,
                     "description": {
-                      "en": "Display the refund's reference code ('external_reference') instead of the payment's reference code ('external_reference').",
-                      "pt": "Mostra o código de referência do reembolso (external_reference) em vez do código de referência do pagamento ('external_reference').",
-                      "es": "Muestra el código de referencia ('external_reference') del reembolso en vez del código de referencia ('external_reference') del pago."
+                      "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
+                      "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
+                      "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
                     },
-                    "example": true
+                    "example": [
+                      "correo1@example.com",
+                      "correo2@example.com"
+                    ]
                   },
-                  "include_withdrawal": {
+                  "include_withdrawal_at_end": {
                     "type": "boolean",
-                    "required": false,
                     "description": {
-                      "en": "This field includes money withdrawals in the report.",
-                      "pt": "Este campo inclui os saques de dinheiro no relatório.",
-                      "es": "Este campo incluye retiros de dinero en el informe."
+                      "es": "Este campo indica si deben incluirse las transacciones de retiro realizadas al final del intervalo de fechas especificado en el reporte.",
+                      "pt": "Este campo indica se as transações de saque realizadas no final do intervalo de datas especificado no relatório foram incluídas.",
+                      "en": "This field indicates whether withdrawal transactions made at the end of the specified date range in the report should be included."
                     },
                     "example": true
                   },
@@ -921,25 +855,24 @@
                       "type": "array",
                       "required": false,
                       "items": {
-                        "type": "object",
-                        "properties": {
-                          "email": {
-                            "type": "string",
-                            "description": {
-                              "en": "Email.",
-                              "pt": "E-mail.",
-                              "es": "Correo electrónico."
-                            },
-                            "example": "example@email.com"
-                          }
-                        }
-                      },
+                        "type": "string",
+                        "format": "email",
                         "description": {
-                          "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
-                          "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
-                          "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                          "en": "Email.",
+                          "pt": "E-mail para recebimento das notificações.",
+                          "es": "Correo electrónico."
                         }
                       },
+                      "description": {
+                        "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
+                        "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
+                        "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                      },
+                      "example": [
+                        "correo1@example.com",
+                        "correo2@example.com"
+                      ]
+                    },
                     "display_timezone": {
                       "type": "string",
                       "description": {
@@ -1189,25 +1122,9 @@
         ],
         "description": {
           "en": "Check the current configuration of your reports",
-            "pt": "Este endpoint permite consultar a configuração atual dos seus relatórios",
+          "pt": "Este endpoint permite consultar a configuração atual dos seus relatórios",
           "es": "Consulta la configuración actual de tus reportes"
         },
-        "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "description": {
-              "en": "Token required for authentication. This field is intended for platforms or modules that offer Mercado Pago in their solutions.",
-              "pt": "Token necessário para autenticação. Este campo é destinado a plataformas ou módulos que oferecem o Mercado Pago em suas soluções.",
-              "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
-            },
-            "schema": {
-              "type": "string",
-              "example": "Bearer <TOKEN>"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": {
@@ -1238,25 +1155,24 @@
                       "type": "array",
                       "required": false,
                       "items": {
-                        "type": "object",
-                        "properties": {
-                          "email": {
-                            "type": "string",
-                            "description": {
-                              "en": "Email.",
-                              "pt": "E-mail.",
-                              "es": "Correo electrónico."
-                            },
-                            "example": "example@email.com"
-                          }
-                        }
-                      },
+                        "type": "string",
+                        "format": "email",
                         "description": {
-                          "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
-                          "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
-                          "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                          "en": "Email.",
+                          "pt": "E-mail para recebimento das notificações.",
+                          "es": "Correo electrónico."
                         }
                       },
+                      "description": {
+                        "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
+                        "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
+                        "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                      },
+                      "example": [
+                        "correo1@example.com",
+                        "correo2@example.com"
+                      ]
+                    },
                     "display_timezone": {
                       "type": "string",
                       "description": {
