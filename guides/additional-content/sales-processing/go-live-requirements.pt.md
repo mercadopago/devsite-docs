@@ -6,7 +6,7 @@ Ao finalizar o processo de integração, o ambiente estará pronto para ser colo
 
 Para começar a receber pagamentos, você deve **ativar as credenciais de produção** e substituir as credenciais de teste. 
 
-Para isso, acesse o [Painel do Desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) e, no menu lateral, acesse **Produção > Credenciais de Produção**. Ali você encontrará seu _Public Key_ y _Access Token_ produtivos, que devem substituir os de teste utilizados nas etapas anteriores.
+Para isso, acesse o [Painel do Desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) e, no menu lateral, acesse **Produção > Credenciais de Produção**. Ali você encontrará seu _Public Key_ e _Access Token_ produtivos, que devem substituir os de teste utilizados nas etapas anteriores.
 
 ![Credenciais de produção](/images/woocomerce/test-prod-credentials.png)
 
