@@ -1,12 +1,17 @@
 # Requirements to go to production
 
-When you have your integration ready and want to start receiving payments, you must [activate your credentials](/developers/en/guides/additional-content/your-integrations/credentials) for production and replace the test credentials if needed. 
+When completing the integration process, your environement will be ready to be set into production. In this documentation, you will find the necessary requirements you need to meet to do this in a secure and effective way, guaranteeing that your integration is ready to receive real payments.
 
-Also, we recommend the following additional considerations.
 
-## Homologation
+## Activate production credentials
 
-Before going to production, and to provide the best experience for both sellers and buyers,you must test your [integration’s quality](/developers/en/guides/additional-content/homologator/homologator) with our homologation tool. This will allow you to certify that your integration meets the necessary quality and security requirements. 
+To start receiving payments, you must **activate your production credentials** and replace the test credentials. 
+
+To do so, enter the [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) and, in the side menu, access **Production > Production credentials**. There, you will find your productive _Public Key_ and _Access Token_, which should replace the test ones used in previous stages.
+
+![Production Credentials](/images/woocomerce/test-prod-credentials-es.png)
+
+For more information, check our [Credenctials documentation](/developers/en/guides/additional-content/your-integrations/credentials).
 
 ## SSL Certificate
 
@@ -23,15 +28,25 @@ The Pix payment option will only be displayed if there is a Pix key registered i
 
 ------------
 
-## Payment approval
+## Additional considerations
+
+### Homologation
+
+Before going to production, and to provide the best experience for both sellers and buyers,you must test your [integration’s quality](/developers/en/guides/additional-content/homologator/homologator) with our homologation tool. 
+
+This is a certification process that will allow you to verify if you are complying with **Mercado Pago's quality and security standards** before you start receiving real payments. You only need to provide the `payment ID` of a payment made with productive credentials, and the tool will take care of carrying out the measurement, considering fundamental aspects for your integration, such as improving payment approval, financial reconciliation or security, among others.
+
+If adjustments are required, necessary actions and good practices will be suggested to improve these evaluated aspects and, by doing so, guarantee that your integration meets the necessary standards.
+
+### Payment approval
 
 Get to know what measures you can take to improve your [payment approval](/developers/en/guides/additional-content/how-tos/payment-rejections), such as submitting the item and payer information, shipping data, and industry information, among others.
 
-## Notifications
+### Notifications
 
 Keep the status of orders updated in your systems by using and processing notifications correctly [IPN](/developers/en/guides/additional-content/your-integrations/ipn) or [Webhooks](/developers/en/guides/additional-content/your-integrations/webhooks).
 
-## Reports
+### Reports
 
 [Mercado Pago reports](/developers/en/guides/additional-content/reports/introduction) provide financial information to track account transactions, such as available balance, movements, and liquidity. This facilitates the reconciliation of sales and other operations with your internal management systems.
 
