@@ -10,9 +10,9 @@ Para oferecer a melhor experiência tanto para o vendedor quanto para o comprado
 
 ## Certificado SSL
 
-Para que sua integração seja segura e proteja os dados das transações, **é necessário ter um certificado SSL e que a forma de pagamento seja disponibilizada em uma página HTTPS**. 
+Para garantir uma integração segura e que proteja os dados de cada transação, é necessário implementar um certificado SSL. Além disso, é importante que a forma de pagamento seja disponibilizada em uma página web que utilize o protocolo HTTPS. Este protocolo assegura a criptografia dos dados transmitidos entre o cliente e o servidor.
 
-Com isto, é possível garantir a segurança dos dados de seus clientes, cumprir os regulamentos ou disposições legais de cada país e conseguir a melhor experiência de compra para suas vendas.
+Adotar estas medidas não apenas reforça a segurança dos dados dos usuários, mas também assegura a conformidade com as normativas e leis específicas de cada país relativas à proteção de dados e à segurança da informação. Além disso, contribui significativamente para proporcionar uma experiência de compra mais segura e confiável.
 
 Apesar de não ser obrigatório durante a fase de testes, o certificado é obrigatório para iniciar em produção. Para mais informações, [confira os termos e condições do Mercado Pago](/developers/pt/guides/resources/legal/terms-and-conditions).
 
@@ -25,7 +25,9 @@ A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastr
 
 ## Aprovação de pagamentos
 
-Saiba quais medidas você pode tomar para melhorar a [aprovação de pagamentos](/developers/pt/guides/additional-content/how-tos/payment-rejections), como o envio de informações do item e do pagador, dados de envio e informações da indústria, entre outros.
+Para otimizar a taxa de aprovação de pagamentos, diversas estratégias podem ser adotadas, abrangendo desde a inclusão precisa de informações relacionadas ao item vendido e aos dados do comprador, até a entrega de detalhes sobre o envio e especificidades do setor de atuação. 
+
+Para mais informações sobre os principais motivos pelos quais um pagamento pode ser recusado e como fazer para evitar essas recusas, acesse a documentação [Como melhorar a aprovação de pagamentos](/developers/pt/guides/additional-content/how-tos/payment-rejections)
 
 ## Notificações
 
