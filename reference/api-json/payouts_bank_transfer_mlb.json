@@ -407,24 +407,27 @@
                         "from": {
                           "type": "object",
                           "properties": {
-                            "accounts":  {
+                            "accounts": {   
                               "type": "array",
-                              "properties": {
-                                "amount": {
-                                  "type": "number",
-                                  "description": {
-                                    "es": "Monto debitado de la cuenta Mercado Pago de origen.",
-                                    "pt": "Montante debitado da conta Mercado Pago de origem.",
-                                    "en": "Amount debited from the Mercado Pago origin account."
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "amount": {
+                                    "type": "number",
+                                    "example": "100,00",
+                                    "description": {
+                                      "es": "Monto debitado de la cuenta Mercado Pago de origen.",
+                                      "pt": "Montante debitado da conta Mercado Pago de origem.",
+                                      "en": "Amount debited from the Mercado Pago origin account."
+                                    } 
                                   },
-                                  "example": "100,00"
-                                },
-                                "status_detail": {
-                                  "type":"string",
-                                  "description": {
-                                    "es": "Detalle del estado de la transacción. Usualmente es devuelto vacío.",
-                                    "pt": "Detalhe do estado da transação. Geralmente é retornado vazio.",
-                                    "en": "Transaction status detail. It is usually returned empty."
+                                  "status_detail": {
+                                    "type":"string",
+                                    "description": {
+                                      "es": "Detalle del estado de la transacción. Usualmente es devuelto vacío.",
+                                      "pt": "Detalhe do estado da transação. Geralmente é retornado vazio.",
+                                      "en": "Transaction status detail. It is usually returned empty."
+                                    }
                                   }
                                 }
                               }
@@ -436,73 +439,76 @@
                           "properties": {
                             "accounts": {
                               "type": "array",
-                              "properties": {
-                                "amount": {
-                                  "type":"number",
-                                  "description": {
-                                    "es": "Monto transferido a la cuenta de destino. Su valor será igual a \"from.accounts.amount\", salvo que haya habido un reembolso total o parcial.",
-                                    "pt": "Valor transferido para a conta de destino. O valor será igual a \"from.accounts.amount\", a menos que tenha havido reembolso total ou parcial.",
-                                    "en": "Amount transferred to the destination account. Its value will be equal to \"from.accounts.amount\", unless there has been a full or partial refund."
-                                  },
-                                  "example": "100,00"
-                                },
-                                "status_detail": {
-                                  "type":"string",
-                                  "description": {
-                                    "es": "Información detallada del estado de la operación.",
-                                    "pt": "Informação detalhada do status da operação.",
-                                    "en": "Detailed information about the status of the operation."
-                                  },
-                                  "enum": [
-                                    {
-                                      "title": "approved",
-                                      "description": {
-                                        "en": "The transaction processing was made successfully",
-                                        "es": "El procesamiento de la transacción se realizó de manera exitosa.",
-                                        "pt": "O processamento da transação foi bem-sucedido."
-                                      }
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "amount": {
+                                    "type":"number",
+                                    "description": {
+                                      "es": "Monto transferido a la cuenta de destino. Su valor será igual a \"from.accounts.amount\", salvo que haya habido un reembolso total o parcial.",
+                                      "pt": "Valor transferido para a conta de destino. O valor será igual a \"from.accounts.amount\", a menos que tenha havido reembolso total ou parcial.",
+                                      "en": "Amount transferred to the destination account. Its value will be equal to \"from.accounts.amount\", unless there has been a full or partial refund."
                                     },
-                                    {
-                                      "title": "partially_refunded",
-                                      "description": {
-                                        "en": "The transaction was partially refunded by the destination bank.",
-                                        "es": "La transacción fue reembolsada parcialmente por el banco de destino.",
-                                        "pt": "A transação foi parcialmente reembolsada pelo banco de destino."
+                                    "example": "100,00"
+                                  },
+                                  "status_detail": {
+                                    "type":"string",
+                                    "description": {
+                                      "es": "Información detallada del estado de la operación.",
+                                      "pt": "Informação detalhada do status da operação.",
+                                      "en": "Detailed information about the status of the operation."
+                                    },
+                                    "enum": [
+                                      {
+                                        "title": "approved",
+                                        "description": {
+                                          "en": "The transaction processing was made successfully",
+                                          "es": "El procesamiento de la transacción se realizó de manera exitosa.",
+                                          "pt": "O processamento da transação foi bem-sucedido."
+                                        }
+                                      },
+                                      {
+                                        "title": "partially_refunded",
+                                        "description": {
+                                          "en": "The transaction was partially refunded by the destination bank.",
+                                          "es": "La transacción fue reembolsada parcialmente por el banco de destino.",
+                                          "pt": "A transação foi parcialmente reembolsada pelo banco de destino."
+                                        }
                                       }
-                                    }
-                                  ],
-                                  "example": "approved"
-                                },
-                                "owner": {
-                                  "type": "object",
-                                  "properties": {
-                                    "identification": {
-                                      "type": "object",
-                                      "properties": {
-                                        "number": {
-                                          "type":"number",
-                                          "description": {
-                                            "en": "The number refers to the identifier of the destination account holder. If it is a CPF, for example, it will have 11 numbers.",
-                                            "pt": "O número se refere ao identificador do titular da conta de destino. Se for um CPF, por exemplo, terá 11 números.",
-                                            "es": "El número hace referencia al identificador del titular de la cuenta de destino. Si es un CPF, por ejemplo, tendrá 11 números."
+                                    ],
+                                    "example": "approved"
+                                  },
+                                  "owner": {
+                                    "type": "object",
+                                    "properties": {
+                                      "identification": {
+                                        "type": "object",
+                                        "properties": {
+                                          "number": {
+                                            "type": "number",
+                                            "description": {
+                                              "en": "The number refers to the identifier of the destination account holder. ",
+                                              "pt": "O número se refere ao identificador do titular da conta de destino. ",
+                                              "es": "El número hace referencia al identificador del titular de la cuenta de destino. "
+                                            },
+                                            "example": "1234567890"
                                           },
-                                          "example": "1234567890"
-                                        },
-                                        "type": {
-                                          "type":"string",
-                                          "description": {
-                                            "en": "Refers to the type of identification.",
-                                            "pt": "Refere-se ao tipo de identificação.",
-                                            "es": "Se refiere al tipo de identificación."
-                                          },
-                                          "example": "CPF"
+                                          "type": {
+                                            "type":"string",
+                                            "description": {
+                                              "en": "Refers to the type of identification.",
+                                              "pt": "Refere-se ao tipo de identificação.",
+                                              "es": "Se refiere al tipo de identificación."
+                                            },
+                                            "example": "CPF"
+                                          }
                                         }
                                       }
                                     }
-                                  } 
-                                }
+                                  }
+                                } 
                               }
-                            }
+                            } 
                           }
                         },
                         "paid_amount": {
@@ -984,24 +990,27 @@
                         "from": {
                           "type": "object",
                           "properties": {
-                            "accounts": {
+                            "accounts": {   
                               "type": "array",
-                              "properties": {
-                                "amount": {
-                                  "type": "number",
-                                  "description": {
-                                    "es": "Monto debitado de la cuenta Mercado Pago de origen.",
-                                    "pt": "Montante debitado da conta Mercado Pago de origem.",
-                                    "en": "Amount debited from the Mercado Pago origin account."
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "amount": {
+                                    "type": "number",
+                                    "example": "100,00",
+                                    "description": {
+                                      "es": "Monto debitado de la cuenta Mercado Pago de origen.",
+                                      "pt": "Montante debitado da conta Mercado Pago de origem.",
+                                      "en": "Amount debited from the Mercado Pago origin account."
+                                    } 
                                   },
-                                  "example": "100,00"
-                                },
-                                "status_detail": {
-                                  "type":"string",
-                                  "description": {
-                                    "es": "Detalle del estado de la transacción. Usualmente es devuelto vacío.",
-                                    "pt": "Detalhe do estado da transação. Geralmente é retornado vazio.",
-                                    "en": "Transaction status detail. It is usually returned empty."
+                                  "status_detail": {
+                                    "type":"string",
+                                    "description": {
+                                      "es": "Detalle del estado de la transacción. Usualmente es devuelto vacío.",
+                                      "pt": "Detalhe do estado da transação. Geralmente é retornado vazio.",
+                                      "en": "Transaction status detail. It is usually returned empty."
+                                    }
                                   }
                                 }
                               }
@@ -1013,73 +1022,76 @@
                           "properties": {
                             "accounts": {
                               "type": "array",
-                              "properties": {
-                                "amount": {
-                                  "type":"number",
-                                  "description": {
-                                    "es": "Monto transferido a la cuenta de destino. Su valor será igual a \"from.accounts.amount\", salvo que haya habido un reembolso total o parcial.",
-                                    "pt": "Valor transferido para a conta de destino. O valor será igual a \"from.accounts.amount\", a menos que tenha havido reembolso total ou parcial.",
-                                    "en": "Amount transferred to the destination account. Its value will be equal to \"from.accounts.amount\", unless there has been a full or partial refund."
-                                  },
-                                  "example": "100,00"
-                                },
-                                "status_detail": {
-                                  "type":"string",
-                                  "description": {
-                                    "es": "Información detallada del estado de la operación.",
-                                    "pt": "Informação detalhada do status da operação.",
-                                    "en": "Detailed information about the status of the operation."
-                                  },
-                                  "enum": [
-                                    {
-                                      "title": "approved",
-                                      "description": {
-                                        "en": "The transaction processing was made successfully",
-                                        "es": "El procesamiento de la transacción se realizó de manera exitosa.",
-                                        "pt": "O processamento da transação foi bem-sucedido."
-                                      }
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "amount": {
+                                    "type":"number",
+                                    "description": {
+                                      "es": "Monto transferido a la cuenta de destino. Su valor será igual a \"from.accounts.amount\", salvo que haya habido un reembolso total o parcial.",
+                                      "pt": "Valor transferido para a conta de destino. O valor será igual a \"from.accounts.amount\", a menos que tenha havido reembolso total ou parcial.",
+                                      "en": "Amount transferred to the destination account. Its value will be equal to \"from.accounts.amount\", unless there has been a full or partial refund."
                                     },
-                                    {
-                                      "title": "partially_refunded",
-                                      "description": {
-                                        "en": "The transaction was partially refunded by the destination bank.",
-                                        "es": "La transacción fue reembolsada parcialmente por el banco de destino.",
-                                        "pt": "A transação foi parcialmente reembolsada pelo banco de destino."
+                                    "example": "100,00"
+                                  },
+                                  "status_detail": {
+                                    "type":"string",
+                                    "description": {
+                                      "es": "Información detallada del estado de la operación.",
+                                      "pt": "Informação detalhada do status da operação.",
+                                      "en": "Detailed information about the status of the operation."
+                                    },
+                                    "enum": [
+                                      {
+                                        "title": "approved",
+                                        "description": {
+                                          "en": "The transaction processing was made successfully",
+                                          "es": "El procesamiento de la transacción se realizó de manera exitosa.",
+                                          "pt": "O processamento da transação foi bem-sucedido."
+                                        }
+                                      },
+                                      {
+                                        "title": "partially_refunded",
+                                        "description": {
+                                          "en": "The transaction was partially refunded by the destination bank.",
+                                          "es": "La transacción fue reembolsada parcialmente por el banco de destino.",
+                                          "pt": "A transação foi parcialmente reembolsada pelo banco de destino."
+                                        }
                                       }
-                                    }
-                                  ],
-                                  "example": "approved"
-                                },
-                                "owner": {
-                                  "type": "object",
-                                  "properties": {
-                                    "identification": {
-                                      "type": "object",
-                                      "properties": {
-                                        "number": {
-                                          "type":"number",
-                                          "description": {
-                                            "en": "The number refers to the identifier of the destination account holder. If it is a CPF, for example, it will have 11 numbers.",
-                                            "pt": "O número se refere ao identificador do titular da conta de destino. Se for um CPF, por exemplo, terá 11 números.",
-                                            "es": "El número hace referencia al identificador del titular de la cuenta de destino. Si es un CPF, por ejemplo, tendrá 11 números."
+                                    ],
+                                    "example": "approved"
+                                  },
+                                  "owner": {
+                                    "type": "object",
+                                    "properties": {
+                                      "identification": {
+                                        "type": "object",
+                                        "properties": {
+                                          "number": {
+                                            "type": "number",
+                                            "description": {
+                                              "en": "The number refers to the identifier of the destination account holder. ",
+                                              "pt": "O número se refere ao identificador do titular da conta de destino. ",
+                                              "es": "El número hace referencia al identificador del titular de la cuenta de destino. "
+                                            },
+                                            "example": "1234567890"
                                           },
-                                          "example": "1234567890"
-                                        },
-                                        "type": {
-                                          "type":"string",
-                                          "description": {
-                                            "en": "Refers to the type of identification.",
-                                            "pt": "Refere-se ao tipo de identificação.",
-                                            "es": "Se refiere al tipo de identificación."
-                                          },
-                                          "example": "CPF"
+                                          "type": {
+                                            "type":"string",
+                                            "description": {
+                                              "en": "Refers to the type of identification.",
+                                              "pt": "Refere-se ao tipo de identificação.",
+                                              "es": "Se refiere al tipo de identificación."
+                                            },
+                                            "example": "CPF"
+                                          }
                                         }
                                       }
                                     }
-                                  } 
-                                }
+                                  }
+                                } 
                               }
-                            }
+                            } 
                           }
                         },
                         "paid_amount": {
