@@ -8,7 +8,7 @@
         ],
         "description": {
           "en": "Check the list of reports you have generated",
-          "pt": "Confira a lista de relatórios que você gerou",
+          "pt": "Este endpoint permite conferir a lista de relatórios previamente criados",
           "es": "Consulta la lista de reportes que has generado"
         },
         "parameters": [
