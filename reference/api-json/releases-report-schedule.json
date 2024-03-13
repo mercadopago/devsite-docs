@@ -30,9 +30,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "Ok.",
-              "pt": "Ok.",
-              "es": "Ok."
+              "en": "Success.",
+              "pt": "Success.",
+              "es": "Success."
             },
             "content": {
               "application/json": {
@@ -854,9 +854,9 @@
         "responses": {
           "200": {
             "description": {
-              "es": "Ok.",
-              "pt": "Ok.",
-              "en": "Ok."
+              "es": "Success.",
+              "pt": "Success.",
+              "en": "Success."
             },
             "content": {
               "text/plain": {
