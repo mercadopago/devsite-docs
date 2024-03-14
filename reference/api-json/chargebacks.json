@@ -1481,11 +1481,11 @@
     "/v1/payments/{payment_id}": {
       "put": {
         "java": "MercadoPagoConfig.setAccessToken(\"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\");\n PaymentClient client = new PaymentClient();\n Payment paymentCancelled = client.cancel(18552260055L);\n",
-        "php": "<?php\n use MercadoPago\\Client\\Payment\\PaymentRefundClient;\n MercadoPagoConfig::setAccessToken(\n\"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\"\n);\n   $client = new PaymentRefundClient();\n   $payment = $client->cancel(18552260055);\n ?>",
-        "js": "import MercadoPago, { Payment } from 'mercadopago';\n\nconst client = new MercadoPago({ accessToken: 'TEST-703********22370-01********2405a0c3********7232f7a5********0082888', });\n\n  const payment = new Payment(client);\n  payment.cancel({\n    id: '18552260055'\n }).then(console.log).catch(console.log);\n",
+        "php": "<?php\n use MercadoPago\\Client\\Payment\\PaymentRefundClient;\n MercadoPagoConfig::setAccessToken(\n\"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\"\n);\n $client = new PaymentRefundClient();\n $payment = $client->cancel(18552260055);\n ?>",
+        "js": "import MercadoPago, { Payment } from 'mercadopago';\n\nconst client = new MercadoPago({ accessToken: 'TEST-703********22370-01********2405a0c3********7232f7a5********0082888', });\n\n  const payment = new Payment(client);\n  payment.cancel({\n      id: '18552260055'\n }).then(console.log).catch(console.log);\n",
         "python": "sdk = mercadopago.SDK(\"ENV_ACCESS_TOKEN\")\n  payment_data = {\n        \"status\": \"cancelled\" \n}  \npayment_response = sdk.payment().update(payment_id, payment_data)\npayment = payment_response[\"response\"]\n",
         "csharp": "MercadoPagoConfig.AccessToken =\n \"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\";\n\n var client = new PaymentClient();\n\n payment = client.Cancel(18552260055);\n",
-        "ruby": "sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')\n payment_data = {\n \"status\": \"cancelled\" \n}\n payment = sdk.payment.update(\"payment_id\", payment_data)\n",
+        "ruby": "sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')\n payment_data = {\n     \"status\": \"cancelled\" \n}\n payment = sdk.payment.update(\"payment_id\", payment_data)\n",
         "tags": [
           "checkout-api"
         ],
