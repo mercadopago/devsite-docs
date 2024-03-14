@@ -770,7 +770,7 @@
         ],
         "description": {
           "en": "Use the 'file_name' attribute, and you can download any of your reports",
-          "pt": "Utilize o atributo 'file_name' e você poderá baixar qualquer um dos seus relatórios",
+          "pt": "Este endpoint permite baixar qualquer um dos relatórios criados. A partir do atributo file_name, insira o nome do arquivo que deseja baixar e execute a requisição. É importante ter em mente que a resposta desta requisição retornará um arquivo .CSV para download",
           "es": "Utilice el atributo 'file_name' y podrá descargar cualquiera de sus reportes"
         },
         "parameters": [
