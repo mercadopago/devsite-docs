@@ -1,6 +1,6 @@
 # Card token generation errors
 
-| Status | `status_detail` | Suggested communication |
+| Status | `status_detail` | Description |
 | --- | --- | --- |
 | 106 | Cannot operate between users from different countries | You cannot make payments to other countries. |
 | 109 | Invalid number of shares for this `payment_method_id` | `payment_method_id` does not process payments in `installments` installments.<br/><br/>Select a different card or payment method. |

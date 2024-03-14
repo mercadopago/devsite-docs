@@ -1,6 +1,6 @@
 # Resultados de creación de un cobro
 
-| Estado | `status_detail` | Comunicación sugerida |
+| Estado | `status_detail` | Descripción |
 | --- | --- | --- |
 | approved | `accredited` | ¡Listo! Se acreditó tu pago. En tu resumen verás el cargo de `amount` como `statement_descriptor`. |
 | in_process | `pending_contingency` | Estamos procesando tu pago.<br/><br/>No te preocupes, menos de 2 días hábiles te avisaremos por e-mail si se acreditó. |
