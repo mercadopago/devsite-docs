@@ -78,8 +78,7 @@ Para acessar o Simulador, selecione a opção que corresponda ao seu tipo de int
 
 Depois de fornecer as informações de acordo com o modo selecionado no Simulador, clique no botão Confirm para acessar o dispositivo virtual.
 
-![Tela do Simulador](/images/point-api/point-simulator.png)
-
+![Tela do Simulador](/images/point-api/point-simulator-device.png)
 
 ## 4. Simule a intenção de pagamento
 

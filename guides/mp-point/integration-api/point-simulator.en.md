@@ -77,7 +77,7 @@ To access the Simulator, select the option that corresponds to your type of inte
 
 Once you have provided the information according to the chosen mode of the Simulator, click the **Confirm** button to access the virtual device.
 
-![screen of the Simulator](/images/point-api/point-simulator.png)
+![screen of the Simulator](/images/point-api/point-simulator-device.png)
 
 ## 4. Simulate a payment intent
 

@@ -80,7 +80,7 @@ Para acceder al Simulador, selecciona la opción que se corresponda con tu tipo 
 
 Una vez que hayas proporcionado la información de acuerdo al modo del Simulador elegido, haz clic en el botón **Confirm** para acceder al dispositivo virtual.
 
-![pantalla del Simulador](/images/point-api/point-simulator.png)
+![pantalla del Simulador](/images/point-api/point-simulator-device.png)
 
 
 ## 4. Simula una intención de pago
