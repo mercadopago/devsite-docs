@@ -258,7 +258,7 @@
     "/v1/payments/{id}/refunds": {
       "get": {
         "java": "MercadoPagoConfig.setAccessToken(\"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\");\nPaymentRefundClient client = new PaymentRefundClient();\nMPResourceList<PaymentRefund> result = client.list(18552260055L);",
-        "php": "<?php\n use MercadoPago\\Client\\Payment\\PaymentRefundClient; MercadoPagoConfig::setAccessToken(\"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\");  $client = new PaymentRefundClient(); $refund_result = $client->list(18552260055);\n ?>",
+        "php": "<?php\n use MercadoPago\\Client\\Payment\\PaymentRefundClient; MercadoPagoConfig::setAccessToken(\n\"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\"\n);\n  $client = new PaymentRefundClient();\n $refund_result = $client->list(18552260055);\n ?>",
         "js": "const client = new MercadoPago({ accessToken: '<ACCESS_TOKEN>', options: { timeout: 5000 } });\nconst refund = new PaymentRefund(client);\nrefund.list({ payment_id: '18552260055' }).then(console.log).catch(console.log);",
         "python": "sdk = mercadopago.SDK('TEST-703********22370-01********2405a0c3********7232f7a5********0082888')\nsdk.refund().list_all('18552260055')",
         "csharp": "MercadoPagoConfig.AccessToken = \"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\";\nPaymentRefundClient client = new PaymentRefundClient();\nResourcesList<PaymentRefund> refunds = await client.ListRefundsAsync(18552260055);",
@@ -599,7 +599,7 @@
       },
       "post": {
         "java": "MercadoPagoConfig.setAccessToken(\"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\");\nPaymentRefundClient client = new PaymentRefundClient();\nPaymentRefund refund = client.refund(12345678901, new BigDecimal(5));",
-        "php": "<?php\n use MercadoPago\\Client\\Payment\\PaymentRefundClient; \nMercadoPagoConfig::setAccessToken(\"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\"); \n$client = new PaymentRefundClient(); \n$refund = $client->refund(12345678901, 5); \necho $refund->id;\n ?>",
+        "php": "<?php\n use MercadoPago\\Client\\Payment\\PaymentRefundClient; \nMercadoPagoConfig::setAccessToken(\n\"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\"\n); \n$client = new PaymentRefundClient(); \n$refund = $client->refund(12345678901, 5); \necho $refund->id;\n ?>",
         "js": "import { MercadoPagoConfig, PaymentRefund } from 'mercadopago';\n\nconst client = new MercadoPagoConfig({ accessToken: 'TEST-703********22370-01********2405a0c3********7232f7a5********0082888' });\nconst paymentRefund = new PaymentRefund(client);\n\nrefund.create({\n  payment_id: '12345678901',\n  body: {\n     amount: 5\n  }\n}).then(console.log).catch(console.log);",
         "python": "sdk = mercadopago.SDK('TEST-703********22370-01********2405a0c3********7232f7a5********0082888')\n\nrefund_object = {\n   'amount': 5\n}\n\nsdk.refund().create('payment_id', refund_object)",
         "csharp": "MercadoPagoConfig.AccessToken = \"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\";\n\nPaymentRefundClient client = new PaymentRefundClient();\n\nvar refund = client.Refund(12345678901, 5);",
@@ -1114,11 +1114,11 @@
     "/v1/payments/{id}/refunds/{refund_id}": {
       "get": {
         "java": "MercadoPagoConfig.setAccessToken(\"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\");\n PaymentRefundClient client = new PaymentRefundClient();\n PaymentRefund result = client.get(18552260055L, 1032332129L);\n",
-        "php": "<?php\n use MercadoPago\\Client\\Payment\\PaymentRefundClient; MercadoPagoConfig::setAccessToken(\"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\");\n  $client = new PaymentRefundClient();\n  $refund_result = $client->get(18552260055, 1032332129);\n ?>",
-        "js": "import MercadoPago, { PaymentRefund } from 'mercadopago';\n const client = new MercadoPago({ accessToken: '<ACCESS_TOKEN>' });\n const refund = new PaymentRefund(client);\n refund.get({\n payment_id: '18552260055',\n refund_id: '1032332129'\n }).then(console.log).catch(console.log);\n",
-        "python": "",
-        "csharp": "MercadoPagoConfig.AccessToken = \"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\";\n PaymentRefundClient client = new PaymentRefundClient();\n PaymentRefund refund = await\n client.GetRefundAsync(18552260055,1032332129);\n",
-        "ruby": "",
+        "php": "<?php\n use MercadoPago\\Client\\Payment\\PaymentRefundClient; MercadoPagoConfig::setAccessToken(\n\"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\"\n);\n  $client = new PaymentRefundClient();\n  $refund_result = $client->get(18552260055, 1032332129);\n ?>",
+        "js": "import MercadoPago, { PaymentRefund } from 'mercadopago';\n\nconst client = new MercadoPago({ accessToken: '<ACCESS_TOKEN>' });\n\nconst refund = new PaymentRefund(client);\n\nrefund.get({\n\tpayment_id: '18552260055',\n\trefund_id: '1032332129'\n}).then(console.log).catch(console.log);",
+        "python": "N/A",
+        "csharp": "MercadoPagoConfig.AccessToken = \"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\";\n\nPaymentRefundClient client = new PaymentRefundClient();\n\nPaymentRefund refund = await client.GetRefundAsync(18552260055,1032332129);",
+        "ruby": "N/A",
         "tags": [
           "checkout-api"
         ],
@@ -1481,8 +1481,8 @@
     "/v1/payments/{payment_id}": {
       "put": {
         "java": "MercadoPagoConfig.setAccessToken(\"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\");\n PaymentClient client = new PaymentClient();\n Payment paymentCancelled = client.cancel(18552260055L);\n",
-        "php": "<?php\n use MercadoPago\\Client\\Payment\\PaymentRefundClient;\n MercadoPagoConfig::setAccessToken(\"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\");   $  client = new PaymentRefundClient();   $payment = $client->cancel(18552260055);\n ?>",
-        "js": "import MercadoPago, { Payment } from 'mercadopago';\n  const client = new MercadoPago({ accessToken:\n 'TEST-703********22370-01********2405a0c3********7232f7a5********0082888',\n });\n  const payment = new Payment(client);\n  payment.cancel({\n id: '18552260055'\n }).then(console.log).catch(console.log);\n",
+        "php": "<?php\n use MercadoPago\\Client\\Payment\\PaymentRefundClient;\n MercadoPagoConfig::setAccessToken(\n\"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\"\n);\n   $client = new PaymentRefundClient();   $payment = $client->cancel(18552260055);\n ?>",
+        "js": "import MercadoPago, { Payment } from 'mercadopago';\n\n  const client = new MercadoPago({ accessToken: 'TEST-703********22370-01********2405a0c3********7232f7a5********0082888', });\n\n  const payment = new Payment(client);\n  payment.cancel({\n id: '18552260055'\n }).then(console.log).catch(console.log);\n",
         "python": "sdk = mercadopago.SDK(\"ENV_ACCESS_TOKEN\")\n  payment_data = {\n   \"status\": \"cancelled\" \n}  \npayment_response = sdk.payment().update(payment_id, payment_data)\npayment = payment_response[\"response\"]\n",
         "csharp": "MercadoPagoConfig.AccessToken =\n \"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\";\n\n var client = new PaymentClient();\n\n payment = client.Cancel(18552260055);\n",
         "ruby": "sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')\n payment_data = {\n \"status\": \"cancelled\" \n}\n payment = sdk.payment.update(\"payment_id\", payment_data)\n",
