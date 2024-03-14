@@ -42,7 +42,7 @@ bullet_section_with_media:
 available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
 
 ---
- 
+---
 bullet_section_with_media: 
  - title: Advantages
  - type: normal
@@ -57,7 +57,7 @@ bullet_section_with_media:
  - benefit_title: Payment with two cards
  - benefit_message: The buyer can split the amount across two different cards if one of them has insufficient balance.
  - image: /adobe-commerce/adb-commerce-landing.png
-
+---
 --- mini_landing_separator ---
  
 >>>> Accepted payment types <<<<

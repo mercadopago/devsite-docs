@@ -43,7 +43,7 @@ bullet_section_with_media:
 available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
 
 ---
- 
+---
 bullet_section_with_media:
  - title: Ventajas
  - type: normal
@@ -58,8 +58,7 @@ bullet_section_with_media:
  - benefit_title: Pago con dos tarjetas
    benefit_message: El comprador puede dividir el monto en dos tarjetas diferentes en caso de que no tenga saldo en una de las tarjetas.
  - image: /adobe-commerce/adb-commerce-landing.png
-
-
+---
 --- mini_landing_separator ---
  
 >>>> Tipos de pago aceptados <<<<
