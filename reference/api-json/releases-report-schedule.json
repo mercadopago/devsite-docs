@@ -11,22 +11,6 @@
           "pt": "Este endpoint permite conferir a lista de relatórios previamente criados",
           "es": "Consulta la lista de reportes que has generado"
         },
-        "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "description": {
-              "en": "Token required for authentication. This field is intended for platforms or modules that offer Mercado Pago in their solutions.",
-              "pt": "Token necessário para autenticação. Este campo é destinado a plataformas ou módulos que oferecem o Mercado Pago em suas soluções.",
-              "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
-            },
-            "schema": {
-              "type": "string",
-              "example": "Bearer <TOKEN>"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": {
@@ -285,22 +269,6 @@
           "pt": "Agende a criação automática do relatório utilizando a frequência atribuída durante a configuração dos seus relatórios. Ao consumir este serviço, a propriedade 'scheduled' da sua configuração será atualizada automaticamente para 'true'",
           "es": "Programa la generación automática del reporte utilizando la frecuencia asignada durante la configuración de tus reportes. Al consumir este servicio, la propiedad scheduled de tu configuración se actualizará automáticamente a 'true'"
         },
-        "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "description": {
-              "en": "Token required for authentication. This field is intended for platforms or modules that offer Mercado Pago in their solutions.",
-              "pt": "Token necessário para autenticação. Este campo é destinado a plataformas ou módulos que oferecem o Mercado Pago em suas soluções.",
-              "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
-            },
-            "schema": {
-              "type": "string",
-              "example": "Bearer <TOKEN>"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": {
@@ -552,22 +520,6 @@
           "pt": "Você pode desativar a geração automática dos seus relatórios a qualquer momento, quando necessário. Ao utilizar este serviço, a propriedade 'scheduled' da sua configuração será atualizada automaticamente para 'false'",
           "es": "Puedes desactivar la generación automática de tus reportes en cualquier momento, cuando lo necesites. Al consumir este servicio, la propiedad 'scheduled' de tu configuración se actualizará automáticamente a 'false'"
         },
-        "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "description": {
-              "en": "Token required for authentication. This field is intended for platforms or modules that offer Mercado Pago in their solutions.",
-              "pt": "Token necessário para autenticação. Este campo é destinado a plataformas ou módulos que oferecem o Mercado Pago em suas soluções.",
-              "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
-            },
-            "schema": {
-              "type": "string",
-              "example": "Bearer <TOKEN>"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": {
