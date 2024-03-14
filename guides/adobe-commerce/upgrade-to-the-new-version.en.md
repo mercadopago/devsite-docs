@@ -2,6 +2,12 @@
 
 We are constantly improving the Mercado Pago plugin for Adobe Commerce. To take advantage of the latest implemented features, it is essential to keep your plugin up to date. The update process is simple, and your customizations are preserved. Follow the step-by-step guide below to ensure a successful update:
 
+> WARNING
+>
+> Note
+>
+> This documentation is intended for users who have already upgraded to the **new Adobe Commerce plugin (module)**. Versions of the Mercado Pago plugin for Adobe Commerce prior to **3.19** have been discontinued. If you still have it installed, we recommend [updating to the new Adobe Commerce plugin](/developers/en/docs/adobe-commerce/upgrade-to-the-new-plugin).
+
 1. In your terminal, execute the following command to download the module:
 
 ```terminal
