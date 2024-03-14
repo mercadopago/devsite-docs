@@ -13,109 +13,45 @@ Crie a configuração de inicialização do Brick.
 [[[
 ```Javascript
 const renderWalletBrick = async (bricksBuilder) => {
- const settings = {
-   callbacks: {
-     onReady: () => {
-     /*
-      Callback chamado quando o Brick estiver pronto.
-      Aqui você pode ocultar loadings do seu site, por exemplo.
-     */
-   },
-   onSubmit: (formData) => {
-     // callback chamado ao clicar no Wallet Brick
-     // isso é possível porque o Brick é um botão
-     // neste momento de submit, você deve criar a preferência
-     const yourRequestBodyHere = {
-       items: [
-         {
-           id: '202809963',
-           title: 'Dummy title',
-           description: 'Dummy description',
-           quantity: 1,
-           unit_price: 10,
-         },
-       ],
-       purpose: 'wallet_purchase',
-     };
-     return new Promise((resolve, reject) => {
-       fetch('/create_preference', {
-         method: 'POST',
-         headers: {
-           'Content-Type': 'application/json',
-         },
-           body: JSON.stringify(formData),
-         })
-           .then((response) => response.json())
-           .then((response) => {
-           // resolver a promise com o ID da preferência
-           resolve(response.preference_id);
-         })
-         .catch((error) => {
-           // lidar com a resposta de erro ao tentar criar a preferência
-           reject();
-         });
-     });
-   },
- },
+    await bricksBuilder.create('wallet', 'walletBrick_container', {
+        initialization: {
+            preferenceId: "<PREFERENCE_ID>",
+        },
+        customization: {
+            texts: {
+                valueProp: 'smart_option'
+            },
+            ...
+        },
+    });
 };
-window.walletBrickController = await bricksBuilder.create(
-   'wallet',
-   'walletBrick_container',
-   settings,
-  );
- 
-};
+
 renderWalletBrick(bricksBuilder);
 ```
 ```react-jsx
+const initialization = {
+  preferenceId: '<PREFERENCE_ID>',
+}
+
+const customization = {
+  texts: {
+   valueProp: 'smart_option',
+  },
+}
+
 const onSubmit = async (formData) => {
  // callback chamado ao clicar no Wallet Brick
- // isso é possível porque o Brick é um botão
- // neste momento de submit, você deve criar a preferência
- const yourRequestBodyHere = {
-   items: [
-     {
-       id: '202809963',
-       title: 'Dummy title',
-       description: 'Dummy description',
-       quantity: 1,
-       unit_price: 10,
-     },
-   ],
-   purpose: 'wallet_purchase',
- };
- return new Promise((resolve, reject) => {
-   fetch('/create_preference', {
-     method: 'POST',
-     headers: {
-       'Content-Type': 'application/json',
-     },
-     body: JSON.stringify(yourRequestBodyHere),
-   })
-     .then((response) => response.json())
-     .then((response) => {
-       // resolver a promise com o ID da preferência
-       resolve(response.preference_id);
-     })
-     .catch((error) => {
-       // lidar com a resposta de erro ao tentar criar a preferência
-       reject();
-     });
- });
+ // isso é possível porque o Brick é um botão 
 };
-
 
 const onError = async (error) => {
  // callback chamado para todos os casos de erro do Brick
  console.log(error);
 };
 
-
 const onReady = async () => {
- /*
-   Callback chamado quando o Brick estiver pronto.
-   Aqui você pode ocultar loadings do seu site, por exemplo.
- */
+ // Callback chamado quando o Brick estiver pronto.
+ // Aqui você pode ocultar loadings do seu site, por exemplo.  
 };
 ```
 ]]]
@@ -126,7 +62,7 @@ const onReady = async () => {
 >
 > Sempre que o usuário sair da tela onde algum Brick é exibido, é necessário destruir a instância atual com o comando `window.walletBrickController.unmount()`. Ao entrar novamente, uma nova instância deve ser gerada.
 
-Esse fluxo de criação de preferência no _onSubmit_ é pensado para vendedores que tem fluxos de one click, caso queira, também pode enviar a preferência na inicialização. Veja mais informações na seção de [Preferência na inicialização](/developers/pt/docs/checkout-bricks/wallet-brick/advanced-features/preference-startup).
+Esse fluxo é pensado para lojas que utilizam o Wallet Brick no final do processo de checkout e já possuem a preferência criada ao renderizar o Brick, enviando-a na inicialização. Caso queira, é possível utilizar o Brick criando a preferência no momento do envio (`onSubmit`). Veja mais informações na seção de [Preferência no envio](/developers/pt/docs/checkout-bricks/wallet-brick/advanced-features/preference-submit).
 
 ## Renderizar o Brick
 
