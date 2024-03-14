@@ -12,23 +12,20 @@ Create Brick's startup configuration.
 
 [[[
 ```Javascript
-const settings = {
-  initialization: {
-    preferenceId: "<PREFERENCE_ID>",
-  },
-  customization: {
-    texts: {
-      valueProp: "smart_option",
-    },
-  },
+const renderWalletBrick = async (bricksBuilder) => {
+    await bricksBuilder.create('wallet', 'walletBrick_container', {
+        initialization: {
+            preferenceId: "<PREFERENCE_ID>",
+        },
+        customization: {
+            texts: {
+                valueProp: 'smart_option'
+            },
+            ...
+        },
+    });
 };
 
-window.walletBrickController = await bricksBuilder.create(
-   "wallet",
-   "walletBrick_container",
-   settings
- );
-};
 renderWalletBrick(bricksBuilder);
 ```
 ```react-jsx
@@ -41,6 +38,21 @@ const customization = {
    valueProp: 'smart_option',
   },
 }
+
+const onSubmit = async (formData) => {
+ // callback called when clicking on Wallet Brick
+ // this is possible because Brick is a button
+};
+
+const onError = async (error) => {
+ // callback called for all Brick error cases
+ console.log(error);
+};
+
+const onReady = async () => {
+ // Callback called when Brick is ready.
+ // Here, you can hide loadings on your website, for example.  
+};
 ```
 ]]]
 
@@ -50,7 +62,8 @@ const customization = {
 >
 > Whenever the user leaves the screen where some Brick is displayed, it is necessary to destroy the current instance with the command `window.walletBrickController.unmount()`. When entering again, a new instance must be generated.
 
-This flow is designed for stores that use Wallet Brick at the end of the checkout process and already have the preference created when rendering the Brick, sending the preference during initialization. If you prefer, you can also use Brick in similar one-click flows by creating the preference at the time of submission (_onSubmit_). Learn more in the [Preference on submit](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preference-submit) section.
+This flow is designed for stores that use Wallet Brick at the end of the checkout process and already have the preference created when rendering the Brick, sending it during initialization. If desired, you can use the Brick by creating the preference at the time of submission (`onSubmit`). See more information in the [Preference on submit](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preference-submit) section.
+
 
 ## Render the Brick
 
