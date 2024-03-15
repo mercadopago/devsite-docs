@@ -77,7 +77,7 @@ To access the Simulator, select the option that corresponds to your type of inte
 
 Once you have provided the information according to the chosen mode of the Simulator, click the **Confirm** button to access the virtual device.
 
-![screen of the Simulator](/images/point-api/point-simulator-device.png)
+![screen of the Simulator](/images/point-api/point-device-simulator.png)
 
 ## 4. Simulate a payment intent
 
@@ -109,7 +109,7 @@ Once found, you can verify that the amount initially entered matches the one sho
 
 If the Simulator obtained the payment intent successfully, proceed to make the payment by clicking on the animation of the card, which represents the card swipe in the device. 
 
-![Simulator with card](/images/point-api/point-simulator-card.png)
+![Simulator with card](/images/point-api/point-simulator-process.png)
 
 Processing will begin immediately and the device will display the result according to the selected amount.
 

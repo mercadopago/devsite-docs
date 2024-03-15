@@ -80,7 +80,7 @@ Para acceder al Simulador, selecciona la opción que se corresponda con tu tipo 
 
 Una vez que hayas proporcionado la información de acuerdo al modo del Simulador elegido, haz clic en el botón **Confirm** para acceder al dispositivo virtual.
 
-![pantalla del Simulador](/images/point-api/point-simulator-device.png)
+![pantalla del Simulador](/images/point-api/point-device-simulator.png)
 
 
 ## 4. Simula una intención de pago
@@ -114,7 +114,7 @@ Cuando suceda, verifica que el monto ingresado inicialmente coincida con el most
 
 Si la obtención de la intención de pago desde el Simulador fue exitosa, procede a realizar el pago haciendo clic en la animación de la tarjeta. Esto representa el deslizamiento de la misma en el dispositivo. 
 
-![Simulador con tarjeta](/images/point-api/point-simulator-card.png)
+![Simulador con tarjeta](/images/point-api/point-simulator-process.png)
 
 En seguida, se iniciará el procesamiento y el dispositivo mostrará el resultado de acuerdo al monto ingresado.
 
