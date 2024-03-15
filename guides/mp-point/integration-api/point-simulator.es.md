@@ -15,7 +15,13 @@ Para utilizar el simulador, sigue los pasos a continuación.
 
 ## 1. Genera el ambiente de prueba
 
-Para comenzar a probar integraciones y flujos de pago con el Simulador Point, deberás generar un [usuario de prueba](/developers/es/docs/mp-point/additional-content/your-integrations/test/accounts) identificado como **vendedor** y acceder a sus **credenciales de producción**. Si bien el Simulador te pedirá sus credenciales de prueba, necesitarás las productivas para acceder a la cuenta y sus configuraciones.
+Para comenzar a probar integraciones y flujos de pago con el Simulador Point, deberás generar un [usuario de prueba](/developers/es/docs/mp-point/additional-content/your-integrations/test/accounts) identificado como **vendedor** y acceder a sus **credenciales de producción**. 
+
+> WARNING
+> 
+> Importante
+> 
+> Si bien el Simulador te pedirá sus credenciales de prueba, necesitarás las productivas para acceder a la cuenta y sus configuraciones.
 
 Para generar estas credenciales, accede a [Tus Integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/), selecciona la aplicación en la que integraste Mercado Pago Point y, en la sección **Cuentas de prueba**, haz clic en el botón **+ Crear cuenta de prueba**. Deberás completar los campos solicitados según las indicaciones. 
 
@@ -73,11 +79,11 @@ Previo a acceder al Simulador, deberás terminar de configurar tu ambiente de pr
 
 Para acceder al Simulador, selecciona la opción que se corresponda con tu tipo de integración, y completa los campos solicitados por cada una. 
 
-* **PDV mode:** Ingresa al [Simulador PDV mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true) y proporciona el _Access-Token_ de prueba de tu usuario de prueba vendedor (`TEST-XXXXX-XXXXX-XXXXXXX`). Al hacerlo, el Simulador te asignará un dispositivo virtual.
+* **PDV mode:** Ingresa al [Simulador PDV mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true) y proporciona el _Access Token_ de prueba de tu usuario de prueba vendedor (`TEST-XXXXX-XXXXX-XXXXXXX`). Al hacerlo, el Simulador te asignará un dispositivo virtual.
 
  > Para hacer uso del Simulador no es necesario cambiar el modo de operación ya que funciona, por defecto, en modo PDV.
 
-* **Device mode:** Ingresa al [Simulador device mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true) y proporciona el Access-Token de prueba de tu usuario de prueba vendedor (`TEST-XXXXX-XXXXX-XXXXXXX`) junto con la identificación del dispositivo obtenido al [listar tus dispositivos](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/payment-processing).
+* **Device mode:** Ingresa al [Simulador device mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true) y proporciona el _Access Token_ de prueba de tu usuario de prueba vendedor (`TEST-XXXXX-XXXXX-XXXXXXX`) junto con la identificación del dispositivo obtenido al [listar tus dispositivos](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/payment-processing).
 
 Una vez que hayas proporcionado la información de acuerdo al modo del Simulador elegido, haz clic en el botón **Confirm** para acceder al dispositivo virtual.
 
@@ -133,7 +139,7 @@ En seguida, se iniciará el procesamiento y el dispositivo mostrará el resultad
 >
 > Importante
 >
-> Para consultar un pago realizado por el simulador a través de la [API de Pagos](/developers/es/reference/payments/_payments_id/get), debes utilizar el mismo `access-token` de prueba que utilizas en el Simulador. 
+> Para consultar un pago realizado por el simulador a través de la [API de Pagos](/developers/es/reference/payments/_payments_id/get), debes utilizar el mismo `access_token` de prueba que utilizas en el Simulador. 
 
 
 ## 7. Recibe la notificación

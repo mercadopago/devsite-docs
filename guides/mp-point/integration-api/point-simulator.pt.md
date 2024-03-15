@@ -15,7 +15,13 @@ Para usar o simulador, siga os passos abaixo.
 
 ## 1. Gere o ambiente de teste
 
-Para começar a testar integrações e fluxos de pagamento com o Simulador Point, você precisará gerar um [usuário de teste](/developers/pt/docs/mp-point/additional-content/your-integrations/test/accounts) no modo vendedor, e acessar suas **credenciais de produção**. Embora o Simulador peça suas credenciais de teste, você precisará das credenciais produtivas para acessar a conta do vendedor e suas configurações.
+Para começar a testar integrações e fluxos de pagamento com o Simulador Point, você precisará gerar um [usuário de teste](/developers/pt/docs/mp-point/additional-content/your-integrations/test/accounts) no modo vendedor, e acessar suas **credenciais de produção**. 
+
+> WARNING
+> 
+> Importante
+>
+> Embora o Simulador peça suas credenciais de teste, você precisará das credenciais produtivas para acessar a conta do vendedor e suas configurações.
 
 Para gerar essas credenciais, acesse [Suas Integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/), selecione o aplicativo onde você integrou o Mercado Pago Point e, na seção **Contas de teste**, clique no botão **+ Criar conta de teste**. Você deverá preencher os campos solicitados de acordo com as instruções.
 
@@ -131,7 +137,7 @@ Em seguida, o processamento será iniciado e o dispositivo mostrará o resultado
 >
 > Importante
 >
-> Para consultar um pagamento feito pelo simulador através da [API de Pagamentos](/developers/pt/reference/payments/_payments_id/get), você deve usar o mesmo `access-token` de teste que está usando no Simulador.
+> Para consultar um pagamento feito pelo simulador através da [API de Pagamentos](/developers/pt/reference/payments/_payments_id/get), você deve usar o mesmo `access_token` de teste que está usando no Simulador.
 
 
 ## 7. Receba a notificação

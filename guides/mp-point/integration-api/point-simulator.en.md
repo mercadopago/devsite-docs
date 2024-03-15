@@ -14,7 +14,13 @@ To learn how to use the simulator, follow the steps below.
 
 ## 1. Generate the test environment
 
-To start testing integrations and payment flows with the Point Simulator, you will need to generate a [seller test users](/developers/en/docs/mp-point/additional-content/your-integrations/test/accounts) and access their **production credentials**. The Simulator will ask you for the seller test user test credentials, but you will need the production ones to access their account and settings.
+To start testing integrations and payment flows with the Point Simulator, you will need to generate a [seller test users](/developers/en/docs/mp-point/additional-content/your-integrations/test/accounts) and access their **production credentials**. 
+
+> WARNING
+>
+> Important
+>
+> The Simulator will ask you for the seller test user test credentials, but you will need the production ones to access their account and settings.
 
 To generate these credentials, access [Your Integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/), select the application where you integrated Mercado Pago Point, and in the **Test Accounts** section, click on the **+ Create test account** button. You will need to complete the requested fields according to the instructions.
 
@@ -125,7 +131,7 @@ Processing will begin immediately and the device will display the result accordi
 >
 > Important
 >
-> To query a payment made by the simulator through the [Payments API](/developers/en/reference/payments/_payments_id/get), you must use the same test `access-token` that you use in the Simulator.
+> To query a payment made by the simulator through the [Payments API](/developers/en/reference/payments/_payments_id/get), you must use the same test `access_token` that you use in the Simulator.
 
 
 ## 7. Receive the notification
