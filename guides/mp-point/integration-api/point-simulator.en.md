@@ -18,8 +18,11 @@ To start testing integrations and payment flows with the Point Simulator, you wi
 
 To generate these credentials, access [Your Integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/), select the application where you integrated Mercado Pago Point, and in the **Test Accounts** section, click on the **+ Create test account** button. You will need to complete the requested fields according to the instructions.
 
+<center>
+
 ![Create test account](/images/woocomerce/test-create-account-es.gif)
 
+<center>
 
 If you prefer, you can also create test users using the following command:
 
@@ -64,6 +67,7 @@ Before accessing the Simulator, you need to finish setting up your test environm
  3. Configure your test notifications by accessing the **Notifications > Webhooks** option in the left-hand side panel. Please note that you should do this in the **Test Mode** tab, and it is recommended that the configured URL be different from the one where you will later receive notifications for your real payments. You can refer to the [Notifications documentation](/developers/en/docs/mp-point/additional-content/your-integrations/notifications/webhooks) for more details on how to configure them. 
  4. In the left-hand side panel, access **Testing > Test Credentials** to obtain the **test Access Token for your seller user**. The Simulator will request it to give you access to the tool and assign you a virtual device associated with your integration.
 
+![Test credentials in Dashboard](/images/woocomerce/test-test-credentials.png)
 
 ## 3. Access the Simulator 
 
@@ -77,7 +81,11 @@ To access the Simulator, select the option that corresponds to your type of inte
 
 Once you have provided the information according to the chosen mode of the Simulator, click the **Confirm** button to access the virtual device.
 
+<center>
+
 ![screen of the Simulator](/images/point-api/point-device-simulator.png)
+
+<center>
 
 ## 4. Simulate a payment intent
 
@@ -109,7 +117,11 @@ Once found, you can verify that the amount initially entered matches the one sho
 
 If the Simulator obtained the payment intent successfully, proceed to make the payment by clicking on the animation of the card, which represents the card swipe in the device. 
 
+<center>
+
 ![Simulator with card](/images/point-api/point-simulator-process.png)
+
+<center>
 
 Processing will begin immediately and the device will display the result according to the selected amount.
 

@@ -19,7 +19,11 @@ Para comenzar a probar integraciones y flujos de pago con el Simulador Point, de
 
 Para generar estas credenciales, accede a [Tus Integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/), selecciona la aplicación en la que integraste Mercado Pago Point y, en la sección **Cuentas de prueba**, haz clic en el botón **+ Crear cuenta de prueba**. Deberás completar los campos solicitados según las indicaciones. 
 
+<center>
+
 ![Crear cuenta](/images/woocomerce/test-create-account-es.gif)
+
+<center>
 
 Si deseas, puedes también crear usuarios de prueba usando el siguiente comando:
 
@@ -65,7 +69,8 @@ Previo a acceder al Simulador, deberás terminar de configurar tu ambiente de pr
  3. Configura tus notificaciones de prueba accediendo a la opción **Notificaciones > Webhooks** en el panel lateral izquierdo. Ten en cuenta que deberás hacerlo en la pestaña **Modo de prueba**, y que es recomendable que la URL configurada sea distinta a aquella en la que recibirás luego las notificaciones de tus pagos reales. Puedes ver la documentación sobre [Notificaciones](/developers/es/docs/mp-point/additional-content/your-integrations/notifications/webhooks) para obtener más detalles sobre cómo configurarlas. 
  4. En el panel lateral izquierdo, accede a **Pruebas > Credenciales de pruebas** para obtener el **Access Token de pruebas de tu usuario vendedor**. El Simulador te lo solicitará para darte acceso a la herramienta y asignarte un dispositivo virtual asociado a tu integración.
 
- ![Credenciales de prueba en el Panel del Desarrollador](/images/woocomerce/test-test-credentials-es.png)
+
+![Credenciales de prueba en el Panel del Desarrollador](/images/woocomerce/test-test-credentials-es.png)
 
 
 ## 3. Accede al Simulador
@@ -80,8 +85,11 @@ Para acceder al Simulador, selecciona la opción que se corresponda con tu tipo 
 
 Una vez que hayas proporcionado la información de acuerdo al modo del Simulador elegido, haz clic en el botón **Confirm** para acceder al dispositivo virtual.
 
+<center>
+
 ![pantalla del Simulador](/images/point-api/point-device-simulator.png)
 
+<center>
 
 ## 4. Simula una intención de pago
 
@@ -114,7 +122,11 @@ Cuando suceda, verifica que el monto ingresado inicialmente coincida con el most
 
 Si la obtención de la intención de pago desde el Simulador fue exitosa, procede a realizar el pago haciendo clic en la animación de la tarjeta. Esto representa el deslizamiento de la misma en el dispositivo. 
 
+<center>
+
 ![Simulador con tarjeta](/images/point-api/point-simulator-process.png)
+
+<center>
 
 En seguida, se iniciará el procesamiento y el dispositivo mostrará el resultado de acuerdo al monto ingresado.
 

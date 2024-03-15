@@ -19,8 +19,11 @@ Para começar a testar integrações e fluxos de pagamento com o Simulador Point
 
 Para gerar essas credenciais, acesse [Suas Integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/), selecione o aplicativo onde você integrou o Mercado Pago Point e, na seção **Contas de teste**, clique no botão **+ Criar conta de teste**. Você deverá preencher os campos solicitados de acordo com as instruções.
 
+<center>
+
 ![Criar conta](/images/woocomerce/test-create-account.gif)
 
+<center>
 
 Se desejar, você também pode criar usuários de teste usando o seguinte comando:
 
@@ -63,7 +66,8 @@ Antes de acessar o Simulador, você precisará concluir a configuração do seu 
  3. Configure suas notificações de teste acessando a opção **Notificações > Webhooks** no painel lateral esquerdo. Tenha em mente que você deverá fazer isso na aba **Modo de teste** e é recomendável que a URL configurada seja diferente daquela em que você receberá as notificações de seus pagamentos reais. Consulte a documentação sobre [Notificações](/developers/pt/docs/mp-point/additional-content/your-integrations/notifications/webhooks) para obter mais detalhes sobre como configurá-las.
  4. No painel lateral esquerdo, acesse **Testes > Credenciais de teste** para obter o **Access Token de teste do seu usuário vendedor**. O Simulador vai solicitá-lo para lhe dar acesso à ferramenta e atribuir um dispositivo virtual associado à sua integração.
 
- ![Credenciais de teste no Painel do desenvolvedor](/images/woocomerce/test-test-credentials.png)
+
+![Credenciais de teste no Painel do desenvolvedor](/images/woocomerce/test-test-credentials.png)
 
 
 ## 3. Acesse o Simulador 
@@ -78,7 +82,11 @@ Para acessar o Simulador, selecione a opção que corresponda ao seu tipo de int
 
 Depois de fornecer as informações de acordo com o modo selecionado no Simulador, clique no botão Confirm para acessar o dispositivo virtual.
 
+<center>
+
 ![Tela do Simulador](/images/point-api/point-device-simulator.png)
+
+<center>
 
 ## 4. Simule a intenção de pagamento
 
