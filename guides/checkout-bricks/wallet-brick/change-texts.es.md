@@ -91,9 +91,9 @@ Al probar tu integración, asegúrate de que la `action`, `actionComplement` y `
 >
 > Importante
 >
-> Para utilizar la _Value Prop_ de `convenience_credits`, es necesario que el Brick se [inicialice con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering) y que la preferencia tenga el propósito de [onboarding_credits.](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preferences)<sup>1</sup>
+> *Para utilizar la _Value Prop_ de `convenience_credits`, es necesario que el Brick se [inicialice con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering) y que la preferencia tenga el propósito de [onboarding_credits.](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preferences)
 > <br><br>
-> Se recomienda la [inicialización con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering) en el uso de la _Value Prop_ `payment_methods_logos`. En caso de que la preferencia tenga solo un método de pago válido, dejará de mostrar imágenes y mostrará el texto: "**Con saldo disponible o a meses sin tarjeta**".<sup>2</sup>
+> ** Se recomienda la [inicialización con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering) en el uso de la _Value Prop_ `payment_methods_logos`. En caso de que la preferencia tenga solo un método de pago válido, dejará de mostrar imágenes y mostrará el texto: "**Con saldo disponible o a meses sin tarjeta**".
 > <br><br>
 > Al eliminar de la preferencia un método de pago en _ticket_ ("paycash", por ejemplo) o un _ATM_ ("banamex", por ejemplo), no se mostrarán los íconos de los puntos de pago asociados a estos métodos.
 
@@ -103,9 +103,9 @@ Al probar tu integración, asegúrate de que la `action`, `actionComplement` y `
 >
 > Importante
 >
-> Para utilizar la _Value Prop_ de `convenience_credits`, es necesario que el Brick se [inicialice con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering) y que la preferencia tenga el propósito de [onboarding_credits.](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preferences)<sup>1</sup>
+> *Para utilizar la _Value Prop_ de `convenience_credits`, es necesario que el Brick se [inicialice con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering) y que la preferencia tenga el propósito de [onboarding_credits.](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preferences)
 > <br><br>
-> Se recomienda la [inicialización con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering) en el uso de la _Value Prop_ `payment_methods_logos`. En caso de que la preferencia tenga solo un método de pago válido, dejará de mostrar imágenes y mostrará el texto: "**Con dinero disponible o en cuotas sin tarjeta**".
+> ** Se recomienda la [inicialización con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering) en el uso de la _Value Prop_ `payment_methods_logos`. En caso de que la preferencia tenga solo un método de pago válido, dejará de mostrar imágenes y mostrará el texto: "**Con dinero disponible o en cuotas sin tarjeta**".
 
 ------------
 ----[mpe, mco, mlu, mlc]----
@@ -113,7 +113,7 @@ Al probar tu integración, asegúrate de que la `action`, `actionComplement` y `
 >
 > Importante
 >
-> Se recomienda la [inicialización con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering) en el uso de la _Value Prop_ `payment_methods_logos`. En caso de que la preferencia tenga solo un método de pago válido, dejará de mostrar imágenes y mostrará el texto: "**Con dinero disponible**".<sup>2</sup>
+> ** Se recomienda la [inicialización con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering) en el uso de la _Value Prop_ `payment_methods_logos`. En caso de que la preferencia tenga solo un método de pago válido, dejará de mostrar imágenes y mostrará el texto: "**Con dinero disponible**".
 
 ------------
 
