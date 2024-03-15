@@ -19,11 +19,8 @@ Para começar a testar integrações e fluxos de pagamento com o Simulador Point
 
 Para gerar essas credenciais, acesse [Suas Integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/), selecione o aplicativo onde você integrou o Mercado Pago Point e, na seção **Contas de teste**, clique no botão **+ Criar conta de teste**. Você deverá preencher os campos solicitados de acordo com as instruções.
 
-<center>
-
 ![Criar conta](/images/woocomerce/test-create-account.gif)
 
-<center>
 
 Se desejar, você também pode criar usuários de teste usando o seguinte comando:
 
@@ -82,11 +79,8 @@ Para acessar o Simulador, selecione a opção que corresponda ao seu tipo de int
 
 Depois de fornecer as informações de acordo com o modo selecionado no Simulador, clique no botão Confirm para acessar o dispositivo virtual.
 
-<center>
-
 ![Tela do Simulador](/images/point-api/point-device-simulator.png)
 
-<center>
 
 ## 4. Simule a intenção de pagamento
 
