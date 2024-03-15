@@ -21,7 +21,7 @@ Para começar a testar integrações e fluxos de pagamento com o Simulador Point
 > 
 > Importante
 >
-> Embora o Simulador peça suas credenciais de teste, você precisará das credenciais produtivas para acessar a conta do vendedor e suas configurações.
+> Embora o Simulador peça as credenciais de teste, você precisará das credenciais produtivas para acessar a conta do vendedor e suas configurações.
 
 Para gerar essas credenciais, acesse [Suas Integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/), selecione o aplicativo onde você integrou o Mercado Pago Point e, na seção **Contas de teste**, clique no botão **+ Criar conta de teste**. Você deverá preencher os campos solicitados de acordo com as instruções.
 
