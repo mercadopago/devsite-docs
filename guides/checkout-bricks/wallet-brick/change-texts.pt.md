@@ -76,9 +76,9 @@ Ao testar sua integração verifique se a `action`, o `actionComplement` e a `va
 >
 > Importante
 >
-> Para utilizar a _Value Prop_ de `convenience_credits` é preciso que o Brick seja [inicializado com uma preferência](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering) e que a preferência tenha o `purpose` de [onboarding_credits.](/developers/pt/docs/checkout-bricks/wallet-brick/advanced-features/preferences)*
+> *Para utilizar a _Value Prop_ de `convenience_credits` é preciso que o Brick seja [inicializado com uma preferência](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering) e que a preferência tenha o `purpose` de [onboarding_credits.](/developers/pt/docs/checkout-bricks/wallet-brick/advanced-features/preferences)
 > <br><br>
-> É recomendada a [inicialização com uma preferência](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering) no uso da _Value Prop_ `payment_methods_logos`. Caso a preference tenha apenas um meio de pagamento válido, ela deixará de exibir imagens e exibirá o texto: "**Com saldo em conta ou parcelado sem cartão**"**
+> **É recomendada a [inicialização com uma preferência](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering) no uso da _Value Prop_ `payment_methods_logos`. Caso a preference tenha apenas um meio de pagamento válido, ela deixará de exibir imagens e exibirá o texto: "**Com saldo em conta ou parcelado sem cartão**".
 > <br><br>
 > Ao remover da preferência um meio de pagamento de _ticket_ ("paycash", por exemplo) ou _ATM_ ( "banamex", por exemplo), todos os ícones de pontos de pagamento vinculados a estes meios não serão exibidos.
 
@@ -88,9 +88,9 @@ Ao testar sua integração verifique se a `action`, o `actionComplement` e a `va
 >
 > Importante
 >
-> Para utilizar a _Value Prop_ de `convenience_credits` é preciso que o Brick seja [inicializado com uma preferência](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering) e que a preferência tenha o purpose de [onboarding_credits.](/developers/pt/docs/checkout-bricks/wallet-brick/advanced-features/preferences)*
+> *Para utilizar a _Value Prop_ de `convenience_credits` é preciso que o Brick seja [inicializado com uma preferência](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering) e que a preferência tenha o purpose de [onboarding_credits.](/developers/pt/docs/checkout-bricks/wallet-brick/advanced-features/preferences)
 > <br><br>
-> É recomendada a [inicialização com uma preferência](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering) no uso da _Value Prop_ `payment_methods_logos`. Caso a preference tenha apenas um meio de pagamento válido, ela deixará de exibir imagens e exibirá o texto: "**Com saldo em conta ou parcelado sem cartão**".**
+> **É recomendada a [inicialização com uma preferência](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering) no uso da _Value Prop_ `payment_methods_logos`. Caso a preference tenha apenas um meio de pagamento válido, ela deixará de exibir imagens e exibirá o texto: "**Com saldo em conta ou parcelado sem cartão**".
 
 ------------
 ----[mpe, mco, mlu, mlc]----
@@ -98,7 +98,7 @@ Ao testar sua integração verifique se a `action`, o `actionComplement` e a `va
 >
 > Importante
 >
-> É recomendada a [inicialização com uma preferência](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering) no uso da _Value Prop_ `payment_methods_logos`. Caso a preference tenha apenas um meio de pagamento válido, ela deixará de exibir imagens e exibirá o texto: "**Com saldo em conta**".**
+> **É recomendada a [inicialização com uma preferência](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering) no uso da _Value Prop_ `payment_methods_logos`. Caso a preference tenha apenas um meio de pagamento válido, ela deixará de exibir imagens e exibirá o texto: "**Com saldo em conta**".
 
 ------------
 
