@@ -94,9 +94,9 @@
                         "created_from": {
                           "type": "string",
                           "description": {
-                            "es": "Este campo indica cómo se generó el reporte.",
-                            "pt": "Este campo indica como o relatório foi gerado.",
-                            "en": "This field indicates how the report was generated."
+                            "es": "Este campo indica cómo se generó el reporte, siendo 'manual' para reportes generados manualmente y 'schedule' para reportes programados.",
+                            "pt": "Este campo indica como o relatório foi gerado, sendo 'manual' para relatórios gerados manualmente e 'schedule' para relatórios programados.",
+                            "en": "This field indicates how the report was generated, being 'manual' for manually generated reports and 'schedule' for scheduled reports."
                           },
                           "example": "manual"
                         },
@@ -224,9 +224,9 @@
                         "sub_type": {
                           "type": "string",
                           "description": {
-                            "es": "Este campo indica el subtipo de reporte.",
-                            "pt": "Este campo indica o subtipo de relatório.",
-                            "en": "This field indicates the report subtype."
+                            "es": "Este campo indica el subtipo de reporte. Para este caso, siempre será 'release'.",
+                            "pt": "Este campo indica o subtipo de relatório. Para este caso, será sempre 'release'.",
+                            "en": "This field indicates the report subtype. For this case, it will always be 'release'."
                           },
                           "example": "release"
                         },

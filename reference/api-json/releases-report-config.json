@@ -100,9 +100,9 @@
                     "type": "object",
                     "required": false,
                     "description": {
-                      "en": "This field provides the necessary connection data so that we can access your server.",
-                      "pt": "Este campo fornece os dados de conexão necessários para que possamos acessar seu servidor.",
-                      "es": "Este campo proporciona los datos de conexión necesarios para que podamos acceder a tu servidor."
+                      "en": "This field provides the necessary connection data for us to access your server. It is optional and should only be sent if you want to receive the reports via SFTP.",
+                      "pt": "Este campo fornece os dados de conexão necessários para que possamos acessar seu servidor. Ele é opcional, e somente deverá ser enviado caso queira receber os relatórios via SFTP.",
+                      "es": "Este campo proporciona los datos de conexión necesarios para que podamos acceder a su servidor. Es opcional y solo debe enviarse si desea recibir los reportes a través de SFTP."
                     },
                     "properties": {
                       "server": {
@@ -187,7 +187,10 @@
                     "required": false,
                     "items": {
                       "type": "string",
-                      "format": "email",
+                      "example": [
+                        "correo1@example.com",
+                        "correo2@example.com"
+                      ],
                       "description": {
                         "en": "Email.",
                         "pt": "E-mail para recebimento das notificações.",
@@ -198,11 +201,7 @@
                       "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
                       "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
                       "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
-                    },
-                    "example": [
-                      "correo1@example.com",
-                      "correo2@example.com"
-                    ]
+                    }
                   },
                   "include_withdrawal_at_end": {
                     "type": "boolean",
@@ -218,9 +217,9 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "Balance before and after making a withdrawal that explains the account balance. This setting is for informational purposes only. It should be excluded for balance and/or account balance checks.",
-                      "pt": "Saldo antes e depois de realizar um saque que explica o saldo da conta. Essa configuração é apenas informativa. Deve ser excluída para verificações de saldo e/ou saldo da conta.",
-                      "es": "Saldo antes y después de realizar un retiro de dinero que explica el balance de la cuenta. Esta configuración es solo informativa. Debe excluirse para comprobaciones del balance y/o saldo de cuenta."
+                      "en": "This configuration displays the account balance before and after a withdrawal, offering an explanatory view of balance variations. It should be excluded for balance and/or account balance checks, and if you wish to use it, it should be sent as 'true'.",
+                      "pt": "Esta configuração exibe o saldo da conta antes e depois de um saque, oferecendo uma visão explicativa sobre as variações de saldo. Deve ser excluída para verificações de balance e/ou saldo da conta e, caso deseje utilizá-la, deve ser enviada como 'true'.",
+                      "es": "Esta configuración muestra el saldo de la cuenta antes y después de un retiro, ofreciendo una visión explicativa de las variaciones del saldo. Debe ser excluida para comprobaciones de balance y/o saldo de la cuenta, y si desea utilizarla, debe ser enviada como 'true'."
                     },
                     "example": true
                   },
@@ -233,6 +232,15 @@
                       "es": "Bloqueos y desbloqueos de dinero que se compensan entre sí y que no afectan el saldo final. Ayuda a entender cómo se conforma el balance final del reporte, en una lectura cronológica (recomendado si tienes un volumen alto de transacciones)."
                     },
                     "example": true
+                  },
+                  "execute_after_withdrawal": {
+                    "type": "boolean",
+                    "description": {
+                      "es": "Este parámetro controla si el reporte se ejecutará después de que se realice un retiro.",
+                      "pt": "Este parâmetro determina se o relatório será executado após a realização de um saque.",
+                      "en": "This parameter determines whether the report will be executed after a withdrawal is made."
+                    },
+                    "example": false
                   },
                   "scheduled": {
                     "type": "boolean",
@@ -280,7 +288,10 @@
                       "required": false,
                       "items": {
                         "type": "string",
-                        "format": "email",
+                        "example": [
+                          "correo1@example.com",
+                          "correo2@example.com"
+                        ],
                         "description": {
                           "en": "Email.",
                           "pt": "E-mail para recebimento das notificações.",
@@ -291,11 +302,7 @@
                         "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
                         "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
                         "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
-                      },
-                      "example": [
-                        "correo1@example.com",
-                        "correo2@example.com"
-                      ]
+                      }
                     },
                     "display_timezone": {
                       "type": "string",
@@ -645,9 +652,9 @@
                         "required": true,
                         "type": "number",
                         "description": {
-                          "en": "This field applies the type monthly to the day of the month or weekly to the day of the week. Example: If the frequency is monthly, the value '1' means that the report will be generated on the first day of each month.",
-                          "pt": "Este campo aplica o type monthly ao dia do mês ou weekly ao dia da semana. Exemplo: Dado que a frequência é mensal, o valor '1' significa que o relatório será gerado no primeiro dia de cada mês.",
-                          "es": "Este campo aplica el type monthly al día del mes o weekly al día de la semana. Ejemplo: Dado que la frecuencia es mensual, el valor '1' significa que el informe se generará el primer día de cada mes."
+                          "en": "This field defines the frequency at which the report is generated, either monthly or weekly, and its value complements the 'type' attribute. For example, if the frequency entered in 'type' is monthly ('monthly') and the value configured in this field is '1', it indicates that the report will be generated on the first day of each month. If the frequency entered in 'type' is daily ('daily'), the assigned value will be 0, and the time of day should be set in the 'hour' field. Whereas if the frequency entered in 'type' is weekly ('weekly'), the value configured in this field should be 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', or 'sunday' to determine the day of the week on which the report is generated, with the time of day to be defined in the 'hour' field.",
+                          "pt": "Este campo define a periodicidade com que o relatório é gerado, mensal ou semanal e seu valor complementa o atributo 'type’. Por exemplo, se a frequência inserida em 'type' for mensal ('monthly') e o valor configurado neste campo for '1', isso indica que o relatório será gerado no primeiro dia de cada mês. Se a frequência inserida em 'type' for diária ('daily'), o valor atribuído será 0, e a hora do dia deverá ser definida no campo 'hour'. Já se a frequência inserida em 'type' for semanal ('weekly'), o valor configurado neste campo deverá ser 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday' ou 'sunday' para determinar o dia da semana em que o relatório é gerado, sendo que a hora do dia deverá ser definida no campo 'hour'.",
+                          "es": "Este campo define la periodicidad con la que se genera el reporte, mensual o semanal, y su valor complementa el atributo 'type'. Por ejemplo, si la frecuencia ingresada en 'type' es mensual ('monthly') y el valor configurado en este campo es '1', esto indica que el reporte se generará el primer día de cada mes. Si la frecuencia ingresada en 'type' es diaria ('daily'), el valor asignado será 0, y la hora del día deberá ser definida en el campo 'hour'. En cambio, si la frecuencia ingresada en 'type' es semanal ('weekly'), el valor configurado en este campo deberá ser 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday' o 'sunday' para determinar el día de la semana en que se genera el reporte, y la hora del día deberá ser definida en el campo 'hour'."
                         },
                         "example": 1
                       },
@@ -754,7 +761,10 @@
                     "required": false,
                     "items": {
                       "type": "string",
-                      "format": "email",
+                      "example": [
+                        "correo1@example.com",
+                        "correo2@example.com"
+                      ],
                       "description": {
                         "en": "Email.",
                         "pt": "E-mail para recebimento das notificações.",
@@ -765,11 +775,7 @@
                       "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
                       "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
                       "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
-                    },
-                    "example": [
-                      "correo1@example.com",
-                      "correo2@example.com"
-                    ]
+                    }
                   },
                   "include_withdrawal_at_end": {
                     "type": "boolean",
@@ -777,16 +783,6 @@
                       "es": "Este campo indica si deben incluirse las transacciones de retiro realizadas al final del intervalo de fechas especificado en el reporte.",
                       "pt": "Este campo indica se as transações de saque realizadas no final do intervalo de datas especificado no relatório foram incluídas.",
                       "en": "This field indicates whether withdrawal transactions made at the end of the specified date range in the report should be included."
-                    },
-                    "example": true
-                  },
-                  "coupon_detailed": {
-                    "type": "boolean",
-                    "required": false,
-                    "description": {
-                      "en": "This field adds a column to display the details of the discount coupons.",
-                      "pt": "Este campo adiciona uma coluna para mostrar os detalhes dos cupons de desconto.",
-                      "es": "Este campo añade una columna para mostrar el detalle de los cupones de descuento."
                     },
                     "example": true
                   },
@@ -809,6 +805,15 @@
                       "es": "Bloqueos y desbloqueos de dinero que se compensan entre sí y que no afectan el saldo final. Ayuda a entender cómo se conforma el balance final del reporte, en una lectura cronológica (recomendado si tienes un volumen alto de transacciones)."
                     },
                     "example": true
+                  },
+                  "execute_after_withdrawal": {
+                    "type": "boolean",
+                    "description": {
+                      "es": "Este parámetro controla si el reporte se ejecutará después de que se realice un retiro.",
+                      "pt": "Este parâmetro determina se o relatório será executado após a realização de um saque.",
+                      "en": "This parameter determines whether the report will be executed after a withdrawal is made."
+                    },
+                    "example": false
                   },
                   "scheduled": {
                     "type": "boolean",
@@ -845,9 +850,9 @@
                     "file_name_prefix": {
                       "type": "string",
                       "description": {
-                        "en": "Prefix that makes up the name of the report once generated and ready for download.",
-                        "pt": "Prefixo que compõe o nome do relatório uma vez gerado e pronto para download.",
-                        "es": "Prefijo que compone el nombre del reporte una vez generado y listo para descargar."
+                        "en": "Prefix that composes the report name once generated and ready for download, not allowing empty or null values.",
+                        "pt": "Prefixo que compõe o nome do relatório uma vez gerado e pronto para download, não permitindo valores vazios ou nulos.",
+                        "es": "Prefijo que compone el nombre del reporte una vez generado y listo para su descarga, no permitiendo valores vacíos o nulos."
                       },
                       "example": "release-report-USER_ID"
                     },
@@ -856,7 +861,10 @@
                       "required": false,
                       "items": {
                         "type": "string",
-                        "format": "email",
+                        "example": [
+                          "correo1@example.com",
+                          "correo2@example.com"
+                        ],
                         "description": {
                           "en": "Email.",
                           "pt": "E-mail para recebimento das notificações.",
@@ -867,11 +875,7 @@
                         "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
                         "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
                         "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
-                      },
-                      "example": [
-                        "correo1@example.com",
-                        "correo2@example.com"
-                      ]
+                      }
                     },
                     "display_timezone": {
                       "type": "string",
@@ -1156,7 +1160,10 @@
                       "required": false,
                       "items": {
                         "type": "string",
-                        "format": "email",
+                        "example": [
+                          "correo1@example.com",
+                          "correo2@example.com"
+                        ],
                         "description": {
                           "en": "Email.",
                           "pt": "E-mail para recebimento das notificações.",
@@ -1167,11 +1174,7 @@
                         "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
                         "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
                         "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
-                      },
-                      "example": [
-                        "correo1@example.com",
-                        "correo2@example.com"
-                      ]
+                      }
                     },
                     "display_timezone": {
                       "type": "string",

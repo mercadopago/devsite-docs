@@ -265,9 +265,9 @@
           "reporting"
         ],
         "description": {
-          "en": "Schedule the automatic generation of the report using the assigned frequency during the configuration of your reports. When consuming this service, the 'scheduled' property of your configuration will be automatically updated to 'true'",
-          "pt": "Agende a criação automática do relatório utilizando a frequência atribuída durante a configuração dos seus relatórios. Ao consumir este serviço, a propriedade 'scheduled' da sua configuração será atualizada automaticamente para 'true'",
-          "es": "Programa la generación automática del reporte utilizando la frecuencia asignada durante la configuración de tus reportes. Al consumir este servicio, la propiedad scheduled de tu configuración se actualizará automáticamente a 'true'"
+          "en": "This endpoint allows for the automatic creation of the report using the frequency assigned during the configuration of your reports. When consuming this service, the 'scheduled' property, previously configured during the configuration creation, will be automatically updated to 'true'",
+          "pt": "Este endpoint permite a criação automática do relatório utilizando a frequência atribuída durante a configuração dos seus relatórios. Ao consumir este serviço, a propriedade 'scheduled', configurada previamente durante a criação da configuração, será atualizada automaticamente para 'true'",
+          "es": "Este endpoint permite la creación automática del reporte utilizando la frecuencia asignada durante la configuración de sus reportes. Al consumir este servicio, la propiedad 'scheduled', configurada previamente durante la creación de la configuración, se actualizará automáticamente a 'true'"
         },
         "responses": {
           "200": {
@@ -516,9 +516,9 @@
           "reporting"
         ],
         "description": {
-          "en": "You can deactivate the automatic generation of your reports at any time, when needed. When using this service, the 'scheduled' property in your configuration will be automatically updated to 'false'",
-          "pt": "Você pode desativar a geração automática dos seus relatórios a qualquer momento, quando necessário. Ao utilizar este serviço, a propriedade 'scheduled' da sua configuração será atualizada automaticamente para 'false'",
-          "es": "Puedes desactivar la generación automática de tus reportes en cualquier momento, cuando lo necesites. Al consumir este servicio, la propiedad 'scheduled' de tu configuración se actualizará automáticamente a 'false'"
+          "en": "You can deactivate the automatic generation of your reports at any time, when necessary. When using this service, the 'scheduled' property, previously configured during the configuration creation, will be automatically updated to 'false'",
+          "pt": "Você pode desativar a geração automática dos seus relatórios a qualquer momento, quando necessário. Ao utilizar este serviço, a propriedade 'scheduled', configurada previamente durante a criação da configuração, será atualizada automaticamente para 'false'",
+          "es": "Puede desactivar la generación automática de sus informes en cualquier momento, cuando sea necesario. Al utilizar este servicio, la propiedad 'scheduled', configurada previamente durante la creación de la configuración, se actualizará automáticamente a 'false'"
         },
         "responses": {
           "200": {
@@ -786,20 +786,6 @@
             "schema": {
               "type": "string",
               "example": "reserve-release-report.csv"
-            }
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "description": {
-              "en": "Token required for authentication. This field is intended for platforms or modules that offer Mercado Pago in their solutions.",
-              "pt": "Token necessário para autenticação. Este campo é destinado a plataformas ou módulos que oferecem o Mercado Pago em suas soluções.",
-              "es": "Token necesario para autenticación. Este campo está destinado a plataformas o módulos que ofrecen Mercado Pago en sus soluciones."
-            },
-            "schema": {
-              "type": "string",
-              "example": "Bearer <TOKEN>"
             }
           }
         ],
