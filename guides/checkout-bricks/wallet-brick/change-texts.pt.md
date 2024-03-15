@@ -65,7 +65,7 @@ Veja quais são os textos relacionados a cada opção:
 |valueProp |security_details | Proteção para seus dados |
 |valueProp |security_safety | Pague com segurança |
 |valueProp |smart_option| O texto será escolhido automaticamente pelo Wallet Brick para aumentar as chances de venda de acordo com as características da compra. |
-|valueProp |convenience_credits | Até 12x sem cartão |
+|valueProp |payment_methods_logos* | Serão exibidos os logos dos meios de pagamento disponíveis. Para configurar os meios de pagamento, utilize a _preference_. |
 
 ------------
 
@@ -98,7 +98,7 @@ Ao testar sua integração verifique se a `action`, o `actionComplement` e a `va
 >
 > Importante
 >
-> **É recomendada a [inicialização com uma preferência](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering) no uso da _Value Prop_ `payment_methods_logos`. Caso a preference tenha apenas um meio de pagamento válido, ela deixará de exibir imagens e exibirá o texto: "**Com saldo em conta**".
+> *É recomendada a [inicialização com uma preferência](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering) no uso da _Value Prop_ `payment_methods_logos`. Caso a preference tenha apenas um meio de pagamento válido, ela deixará de exibir imagens e exibirá o texto: "**Com saldo em conta**".
 
 ------------
 
