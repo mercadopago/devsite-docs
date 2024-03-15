@@ -1,8 +1,8 @@
 # Simulador Point
 
-El Simulador Point es una herramienta que te brinda la oportunidad de interactuar con diversos endpoints de nuestra API para integrar Puntos de Venta con los dispositivos. Su objetivo principal es que comprendas el flujo de creación y cancelación de un intento de pago. 
+El Simulador Point es una herramienta que te brinda la oportunidad de interactuar con diversos endpoints de nuestra API para integrar Puntos de Venta con los dispositivos. Su objetivo principal es ayudarte a que comprendas el flujo de creación y cancelación de un intento de pago. 
 
-Por este motivo, el Simulador es una herramienta que también te permitirá probar el funcionamiento de tu integración Point y del procesamiento de pagos. Aunque no replica exactamente el dispositivo, su objetivo es educativo, para ayudar a familiarizarte con nuestra API.  
+Por este motivo, el Simulador Point también te permitirá probar el funcionamiento de tu integración Point y del procesamiento de pagos. Aunque no replica exactamente el dispositivo, su objetivo es educativo, para ayudar a familiarizarte con nuestra API.  
 
 El simulador cuenta con dos modos de uso:
 
@@ -56,7 +56,6 @@ curl -X POST \
 
 Ten en cuenta que, al crear un usuario de prueba para una aplicación ya integrada con Point, **se generarán automáticamente una sucursal y una caja asociadas a esa cuenta vendedor de prueba**. Esto quiere decir que podrás realizar tus pruebas sobre el procesamiento de pagos sin necesidad de configuraciones adicionales.
 
-
 ## 2. Configura tu ambiente de pruebas
 
 Previo a acceder al Simulador, deberás terminar de configurar tu ambiente de pruebas. Sigue las indicaciones a continuación para hacerlo:
@@ -78,7 +77,7 @@ Para acceder al Simulador, selecciona la opción que se corresponda con tu tipo 
 
  > Para hacer uso del Simulador no es necesario cambiar el modo de operación ya que funciona, por defecto, en modo PDV.
 
-* **Device mode:** Ingresa al [Simulador device mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true)  y proporciona el Access-Token de prueba de tu usuario de prueba vendedor (`TEST-XXXXX-XXXXX-XXXXXXX`) junto con la identificación del dispositivo obtenido al [listar tus dispositivos](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/payment-processing).
+* **Device mode:** Ingresa al [Simulador device mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true) y proporciona el Access-Token de prueba de tu usuario de prueba vendedor (`TEST-XXXXX-XXXXX-XXXXXXX`) junto con la identificación del dispositivo obtenido al [listar tus dispositivos](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/payment-processing).
 
 Una vez que hayas proporcionado la información de acuerdo al modo del Simulador elegido, haz clic en el botón **Confirm** para acceder al dispositivo virtual.
 
@@ -141,7 +140,7 @@ En seguida, se iniciará el procesamiento y el dispositivo mostrará el resultad
 
 Cuando las  intenciones de pago son procesadas, se envía una alerta a la URL configurada como canal de notificación por el integrador. En el caso de las notificaciones de los pagos de prueba realizados por medio del Simulador, serán enviadas al canal que definiste como vía de notificación al configurar tu ambiente de pruebas con tu usuario vendedor.
 
-Para validar su recepción y correcto funcionamiento, dirígete al registro de tus notificaciones. Allí encontrarás la notificación enviada con el estado de la transacción, y podrás verificar sus detalles.
+Para validar su recepción y correcto funcionamiento, dirígete al registro de tus notificaciones. Allí encontrarás la notificación enviada con el estado de la transacción, en donde podrás verificar sus detalles.
 
 
 > Una vez concluídas tus pruebas con el Simulador, recuerda **reemplazar las credenciales de prueba del usuario vendedor por las credenciales productivas de tu usuario real**.

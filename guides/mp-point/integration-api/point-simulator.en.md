@@ -2,7 +2,7 @@
 
 The Point Simulator is a tool that allows you to interact with various endpoints of our API to integrate Point of Sale devices with our system. Its main objective is to help you understand the flow of creating and canceling a payment attempt.
 
-For this reason, the Point Simulator is a tool that will also allow you to test that your Point integration and payments processing is working correctly. Although it’s not an exact replica of a device, it has educational purposes, to help with familiarization with our API.
+For this reason, the Point Simulator will also allow you to test that your Point integration and payments processing are working correctly. Although it’s not an exact replica of a device, it has educational purposes, to help with familiarization with our API.
 
 The simulator has two modes of use:
 
@@ -132,6 +132,6 @@ Processing will begin immediately and the device will display the result accordi
 
 When payment intents are processed, an alert is sent to the URL configured as the notification channel by the integrator. In the case of test payment notifications made through the Simulator, they will be sent to the channel you defined as the notification pathway when configuring your test environment with your seller user. 
 
-To validate their reception and proper functioning, go to your notification log. There, you will find the sent notification with the transaction status, and you can verify its details.
+To validate their reception and proper functioning, go to your notification log. There, you will find the sent notification with the transaction status, so you can verify its details.
 
 > Once you have finished your testing with the Simulator, remember to **replace the test credentials of the seller user with the production credentials of your real user**.
