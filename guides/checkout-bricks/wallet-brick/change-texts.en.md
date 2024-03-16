@@ -80,7 +80,7 @@ When testing your integration, make sure that the `action`, `actionComplement`, 
 > <br><br>
 > **It is recommended to initialize with a preference using the Value Prop `payment_methods_logos`. If the preference has only one valid payment method, it will stop displaying images and will show the text: "**Account money or installments with no card**"
 > <br><br>
-> Ao remover da preferência um meio de pagamento de _ticket_ ("paycash", por exemplo) ou _ATM_ ( "banamex", por exemplo), todos os ícones de pontos de pagamento vinculados a estes meios não serão exibidos.
+> When removing a payment method of _ticket_ ("paycash", for example) or _ATM_ ("banamex", for example) from preferences, all icons of payment points linked to these methods will not be displayed.
 
 ------------
 ----[mlb, mla]----
