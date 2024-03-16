@@ -1750,7 +1750,7 @@
           }
         }
       },
-      "/v1/claims/{claim_id}/messages": {
+      "/post-purchase/v1/claims/{claim_id}/messages": {
         "get": {
           "tags": [
             "checkout-pro"
@@ -2030,7 +2030,7 @@
           }
         }
       },
-      "/v1/claims/{claim_id}/attachments": {
+      "/post-purchase/v1/claims/{claim_id}/attachments": {
         "post": {
           "tags": [
             "checkout-pro"
@@ -2121,7 +2121,7 @@
           }
         }
       },
-      "/v1/claims/{claim_id}/actions/message": {
+      "/post-purchase/v1/claims/{claim_id}/actions/messages": {
         "post": {
           "tags": [
             "checkout-pro"
@@ -2237,7 +2237,7 @@
           }
         }
       },
-      "/v1/claims/{claim_id}/attachments/{attach_id}/download": {
+      "/post-purchase/v1/claims/{claim_id}/attachments/{fileName}/download": {
         "get": {
           "tags": [
             "checkout-pro"
@@ -2293,7 +2293,7 @@
           }
         }
       },
-      "/v1/claims/{claim_id}/attachments/{attach_id}": {
+      "/post-purchase/v1/claims/{claim_id}/attachments/{fileName}": {
         "get": {
           "tags": [
             "checkout-pro"
@@ -2413,7 +2413,7 @@
           }
         }
       },
-      "/v1/claims/{claim_id}/actions/open_dispute": {
+      "/post-purchase/v1/claims/{claim_id}/open-dispute": {
         "post": {
           "tags": [
             "checkout-pro"
@@ -2482,7 +2482,7 @@
           }
         }
       },
-      "/v1/claims/{claim_id}/expected_resolutions": {
+      "/post-purchase/v1/claims/{claim_id}/expected-resolutions": {
         "get": {
           "tags": [
             "checkout-pro"
@@ -2876,7 +2876,7 @@
           }
         }
       },
-      "/v1/claims/{claim_id}/actions/evidences": {
+      "/post-purchase/v1/claims/{claim_id}/actions/evidences": {
         "post": {
           "tags": [
             "checkout-pro"
@@ -3401,7 +3401,7 @@
           }
         }
       },
-      "/post-purchase/v1/{site_id}/v2/reasons/{reason_id}": {
+      "/post-purchase/v1/reasons/{reason_id}": {
         "get": {
           "tags": [
             "checkout-pro"
