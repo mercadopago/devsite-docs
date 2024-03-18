@@ -7,9 +7,9 @@
           "reporting"
         ],
         "description": {
-          "en": "Check the list of reports you have generated",
+          "en": "This endpoint allows you to check the list of previously created reports",
           "pt": "Este endpoint permite conferir a lista de relatórios previamente criados",
-          "es": "Consulta la lista de reportes que has generado"
+          "es": "Este endpoint te permite verificar la lista de reportes previamente creados"
         },
         "responses": {
           "200": {
@@ -770,7 +770,7 @@
         ],
         "description": {
           "en": "Use the 'file_name' attribute, and you can download any of your reports",
-          "pt": "Este endpoint permite baixar qualquer um dos relatórios criados. A partir do atributo file_name, insira o nome do arquivo que deseja baixar e execute a requisição. É importante ter em mente que a resposta desta requisição retornará um arquivo .CSV para download",
+          "pt": "Este endpoint permite baixar qualquer um dos relatórios criados. A partir do atributo file_name, insira o nome do arquivo que deseja baixar e execute a requisição. É importante ter em mente que a resposta desta requisição retornará um arquivo .CSV ou para download",
           "es": "Utilice el atributo 'file_name' y podrá descargar cualquiera de sus reportes"
         },
         "parameters": [

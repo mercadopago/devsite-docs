@@ -7,9 +7,9 @@
           "reporting"
         ],
         "description": {
-          "en": "Check the fields that you can configure to adjust your preferences before starting. Based on these settings, you will be able to generate reports later",
+          "en": "Check the fields you can configure to adjust your preferences before starting. Based on these settings, you will be able to generate reports later",
           "pt": "Confira os campos que você pode configurar para ajustar as suas preferências antes de começar. Com base nessas configurações, você conseguirá gerar os relatórios posteriormente",
-          "es": "Revise los campos que puede configurar para ajustar sus preferencias antes de comenzar. Con base en estas configuraciones, podrá generar reportes posteriormente"
+          "es": "Revise los campos que puede configurar para ajustar sus preferencias antes de comenzar. Basándose en estas configuraciones, podrá generar los reportes posteriormente"
         },
         "requestBody": {
           "description": {
@@ -40,18 +40,18 @@
                       }
                     },
                     "description": {
-                      "en": "Field with details of the columns to be included in your report. Find all possible values in the Glossary section (https://www.mercadopago.com.co/developers/en/docs/checkout-pro/additional-content/reports/released-money/report-use).",
+                      "en": "Field with the details of the columns to be included in the report. Find all possible values in the Glossary section (https://www.mercadopago.com.co/developers/en/docs/checkout-pro/additional-content/reports/released-money/report-use).",
                       "pt": "Campo com os detalhes das colunas que deverão ser incluídas no relatório. Encontre todos os valores possíveis na seção Glossário (https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/additional-content/reports/released-money/report-use).",
-                      "es": "Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección Glossário (https://www.mercadopago.com.co/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use)."
+                      "es": "Campo con los detalles de las columnas que deben incluirse en el reporte. Encuentra todos los valores posibles en la sección Glossário (https://www.mercadopago.com.co/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use)."
                     }
                   },
                   "file_name_prefix": {
                     "type": "string",
                     "required": true,
                     "description": {
-                      "en": "Prefix that makes up the name of the report once generated and ready for download.",
+                      "en": "Prefix composing the name of the generated report ready for download.",
                       "pt": "Prefixo que compõe o nome do relatório gerado e pronto para download.",
-                      "es": "Prefijo que compone el nombre del reporte una vez generado y listo para descargar."
+                      "es": "Prefijo que forma el nombre del reporte generado y listo para descargar."
                     },
                     "example": "conciliation-settlement-report"
                   },
@@ -59,18 +59,18 @@
                     "type": "object",
                     "required": true,
                     "description": {
-                      "en": "This field indicates the daily, weekly, or monthly frequency of the scheduled report.",
+                      "en": "This field indicates the frequency with which the report should be generated, which can be daily, weekly, or monthly.",
                       "pt": "Este campo indica a frequência com a qual o relatório deve ser gerado, podendo ser diária, semanal ou mensal.",
-                      "es": "Este campo indica la frecuencia diaria, semanal o mensual del reporte programado."
+                      "es": "Este campo indica la frecuencia con la que debe generarse el reporte, pudiendo ser diaria, semanal o mensual."
                     },
                     "properties": {
                       "hour": {
                         "required": true,
                         "type": "number",
                         "description": {
-                          "en": "This field determines the time of day the report should be generated. The adopted time format would be the 24-hour clock.",
+                          "en": "This field specifies the time at which the report will be generated, using the 24-hour format for its definition.",
                           "pt": "Este campo especifica o horário em que o relatório será gerado, utilizando o formato de 24 horas para sua definição.",
-                          "es": "Este campo determina la hora del día en que se debe generar el reporte. El formato de hora adoptado sería el de 24 horas."
+                          "es": "Este campo especifica la hora en la que se generará el reporte, utilizando el formato de 24 horas para su definición."
                         },
                         "example": 0
                       },
@@ -88,9 +88,9 @@
                         "required": true,
                         "type": "string",
                         "description": {
-                          "en": "This field indicates the type of frequency: daily, weekly, and monthly.",
-                          "pt": "Indica o tipo de frequência: daily (diária), weekly (semanal) e monthly (mensal). É importante recordar que este campo se comunica diretamente com o campo `value` descrito acima.",
-                          "es": "Este campo indica el tipo de frecuencia: daily (diária), weekly (semanal) e monthly (mensal)."
+                          "en": "This field indicates the type of frequency: daily, weekly, and monthly. It is important to remember that this field communicates directly with the 'value' field described above.",
+                          "pt": "Indica o tipo de frequência: daily (diária), weekly (semanal) e monthly (mensal). É importante recordar que este campo se comunica diretamente com o campo 'value' descrito acima.",
+                          "es": "Este campo indica el tipo de frecuencia: daily (diária), weekly (semanal) e monthly (mensal). Es importante recordar que este campo se comunica directamente con el campo 'value' descrito anteriormente."
                         },
                         "example": "monthly"
                       }
@@ -156,9 +156,9 @@
                     "type": "string",
                     "required": false,
                     "description": {
-                      "en": "Separator that you can use in the .csv file when you don't want the separator to be a comma.",
-                      "pt": "Separador que você pode usar no arquivo .csv quando não desejar que o separador seja uma vírgula.",
-                      "es": "Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma."
+                      "en": "Alternative separator for .csv files, used when the comma is not the desired option.",
+                      "pt": "Separador alternativo para arquivos .csv, utilizado quando a vírgula não é a opção desejada.",
+                      "es": "Separador alternativo para archivos .csv, utilizado cuando la coma no es la opción deseada."
                     },
                     "example": ";"
                   },
@@ -166,9 +166,9 @@
                     "type": "string",
                     "required": false,
                     "description": {
-                      "en": "This field determines the date and time displayed in the reports. If you do not configure this field with a time zone, the system will default to GMT-04. If you choose a time zone that observes daylight saving time, it is necessary to make manual adjustments when the time changes.",
+                      "en": "This field sets the date and time displayed in the reports. In the absence of a specific time zone configuration, the system defaults to GMT-04. For time zones subject to daylight saving time, manual adjustments will be necessary to reflect the time changes.",
                       "pt": "Este campo define a data e a hora exibidas nos relatórios. Na ausência de uma configuração específica de fuso horário, o sistema adota por padrão o valor GMT-04. Para fusos horários sujeitos ao horário de verão, ajustes manuais serão necessários para refletir as alterações de horário.",
-                      "es": "Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora."
+                      "es": "Este campo define la fecha y hora mostradas en los reportes. En ausencia de una configuración específica de zona horaria, el sistema adopta por defecto el valor GMT-04. Para zonas horarias sujetas al horario de verano, se requerirán ajustes manuales para reflejar los cambios de horario."
                     },
                     "example": "GMT-04"
                   },
@@ -176,9 +176,9 @@
                     "type": "string",
                     "required": false,
                     "description": {
-                      "en": "This field allows changing the default language of column headers. If enabled, it is recommended to verify that integrations with Excel files (.xlsx) that allow automatic reconciliation are working correctly. If the integration is not working well, make sure to update it using the new headers as a reference.\n\nSupported languages:\n\nen (english),\nes (neutral spanish) e\npt (portuguese).\n",
-                      "pt": "Este campo permite alterar o idioma padrão dos cabeçalhos das colunas. Se ativado, é recomendável verificar se as integrações com arquivos do Excel (.xlsx) que permitem reconciliação automática estão funcionando corretamente. Se a integração não estiver funcionando bem, certifique-se de atualizá-la usando os novos cabeçalhos como referência.\n\nIdiomas suportados:\n\nen (inglês),\nes (espanhol neutro) e \npt (português).\n",
-                      "es": "Este campo permite cambiar el idioma predeterminado de los encabezados de las columnas. En caso de habilitarlo, se recomienda verificar que funcionen correctamente las integraciones con archivos de Excel (.xlsx) que permiten conciliar de forma automática.\n\nSi la integración no funciona bien, asegúrate de actualizarla tomando como referencia los nuevos encabezados.\n\nIdiomas soportados:\n\nen (inglés),\nes (español neutro) e\npt (portugués).\n"
+                      "en": "This field allows changing the default language of column headers. If activated, it is recommended to verify if integrations with Excel files (.xlsx), which allow automatic reconciliation, are working correctly. In case of integration failures, it is important to update the settings, using the new headers as a guide. Available languages include English (en), neutral Spanish (es), and Portuguese (pt).",
+                      "pt": "Este campo permite alterar o idioma padrão dos cabeçalhos das colunas. Se ativado, é recomendável verificar se as integrações com arquivos do Excel (.xlsx), que permitem reconciliação automática estão funcionando corretamente. Em caso de falhas na integração, é importante atualizar as configurações, utilizando os novos cabeçalhos como guia. Idiomas disponíveis incluem inglês (en), espanhol neutro (es) e português (pt).",
+                      "es": "Este campo permite cambiar el idioma predeterminado de los encabezados de las columnas. Si se activa, se recomienda verificar si las integraciones con archivos de Excel (.xlsx), que permiten la conciliación automática, están funcionando correctamente. En caso de fallos en la integración, es importante actualizar las configuraciones, utilizando los nuevos encabezados como guía. Los idiomas disponibles incluyen inglés (en), español neutro (es) y portugués (pt)."
                     },
                     "example": "es"
                   },
@@ -192,9 +192,9 @@
                         "correo2@example.com"
                       ],
                       "description": {
-                        "en": "Email.",
+                        "en": "Email address for receiving notifications.",
                         "pt": "E-mail para recebimento das notificações.",
-                        "es": "Correo electrónico."
+                        "es": "Correo electrónico para recibir notificaciones."
                       }
                     },
                     "description": {
@@ -227,9 +227,9 @@
                     "type": "boolean",
                     "required": false,
                     "description": {
-                      "en": "Locks and unlocks of money that offset each other and do not affect the final balance. Helps understand how the final balance of the report is formed in a chronological reading (recommended if you have a high volume of transactions).",
+                      "en": "Locks and unlocks of money that offset each other and do not affect the final balance. This functionality facilitates the understanding of the formation of the final balance of the report through a chronological sequence, being especially useful in scenarios with a high volume of transactions.",
                       "pt": "Bloqueios e desbloqueios de dinheiro que se compensam entre si e não afetam o saldo final. Essa funcionalidade facilita a compreensão da formação do saldo final do relatório através de uma sequência cronológica, sendo especialmente útil em cenários com um alto volume de transações.",
-                      "es": "Bloqueos y desbloqueos de dinero que se compensan entre sí y que no afectan el saldo final. Ayuda a entender cómo se conforma el balance final del reporte, en una lectura cronológica (recomendado si tienes un volumen alto de transacciones)."
+                      "es": "Bloqueos y desbloqueos de dinero que se compensan entre sí y no afectan al saldo final. Esta funcionalidad facilita la comprensión de la formación del saldo final del reporte a través de una secuencia cronológica, siendo especialmente útil en escenarios con un alto volumen de transacciones."
                     },
                     "example": true
                   },
@@ -277,9 +277,9 @@
                     "file_name_prefix": {
                       "type": "string",
                       "description": {
-                        "en": "Prefix that makes up the name of the report once generated and ready for download.",
+                        "en": "Prefix that forms part of the name of the generated report ready for download.",
                         "pt": "Prefixo que compõe o nome do relatório gerado e pronto para download.",
-                        "es": "Prefijo que compone el nombre del reporte una vez generado y listo para descargar."
+                        "es": "Prefijo que forma parte del nombre del reporte generado y listo para descargar."
                       },
                       "example": "release-report-USER_ID"
                     },
@@ -299,35 +299,35 @@
                         }
                       },
                       "description": {
-                        "en": "This field allows you to add a group of email recipients to receive a notification when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
-                        "pt": "Este campo permite adicionar um grupo de destinatários de e-mail para receberem uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
-                        "es": "Este campo permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                        "en": "Field containing a group of email recipients who will receive notifications when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
+                        "pt": "Campo que contém um grupo de destinatários de e-mail que receberão notificações quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
+                        "es": "Campo que contiene un grupo de destinatarios de correo electrónico que recibirán notificaciones cuando un reporte esté listo y disponible para su descarga. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
                       }
                     },
                     "display_timezone": {
                       "type": "string",
                       "description": {
-                        "en": "This field determines the date and time displayed in the reports. If you do not configure this field with a time zone, the system will default to GMT-04. If you choose a time zone that observes daylight saving time, it is necessary to make manual adjustments when the time changes.",
-                        "pt": "Este campo informa a data e a hora que serão exibidas nos relatórios baseado nas configurações realizadas no request. Caso não tenha configurado um fuso horário, por padrão, o sistema usará o valor GMT-04.",
-                        "es": "Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora."
+                        "en": "This field informs the date and time that will be displayed in the reports based on the settings made in the request. If a time zone has not been configured, by default, the system will use the GMT-04 value. If you choose a time zone that observes daylight saving time, it is necessary to make manual adjustments when the time changes.",
+                        "pt": "Este campo informa a data e a hora que serão exibidas nos relatórios baseado nas configurações realizadas no request. Caso não tenha configurado um fuso horário, por padrão, o sistema usará o valor GMT-04. Se você escolher um fuso horário que utiliza horário de verão, será necessário fazer o ajuste manual quando a hora mudar.",
+                        "es": "Este campo informa la fecha y hora que se mostrarán en los reportes basado en las configuraciones realizadas en el request. En caso de no haber configurado una zona horaria, por defecto, el sistema utilizará el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora."
                       },
                       "example": "GMT-04"
                     },
                     "include_withdrawal_at_end": {
                       "type": "boolean",
                       "description": {
-                        "es": "Este campo indica si deben incluirse las transacciones de retiro realizadas al final del intervalo de fechas especificado en el reporte.",
+                        "es": "Este campo indica si las transacciones de retiro realizadas al final del intervalo de fechas especificado en el reporte han sido incluidas.",
                         "pt": "Este campo indica se as transações de saque realizadas no final do intervalo de datas especificado no relatório foram incluídas.",
-                        "en": "This field indicates whether withdrawal transactions made at the end of the specified date range in the report should be included."
+                        "en": "This field indicates whether withdrawal transactions made at the end of the specified date range in the report have been included."
                       },
                       "example": true
                     },
                     "scheduled": {
                       "type": "boolean",
                       "description": {
-                        "es": "Indica si el reporte es programado.",
-                        "pt": "Indica se o relatório é programado. Por exemplo: se no request foi selecionado `true`, a resposta trará `true` indicando que é programado.",
-                        "en": "Indicate if the report is scheduled."
+                        "es": "Indica si el reporte está programado. Por ejemplo: si en la solicitud se seleccionó 'true', la respuesta devolverá 'true', lo que indica que está programado.",
+                        "pt": "Indica se o relatório é programado. Por exemplo: se no request foi selecionado 'true', a resposta trará 'true' indicando que é programado.",
+                        "en": "Indicates whether the report is scheduled. For example: if 'true' was selected in the request, the response will return 'true', indicating that it is scheduled."
                       },
                       "example": false
                     },
@@ -350,17 +350,17 @@
                             "type": "string",
                             "example": "SOURCE_ID",
                             "description": {
-                              "es": "Nombre de la columna del reporte que desea mostrar.",
+                              "es": "Nombre de la columna del reporte.",
                               "pt": "Nome da coluna do relatório.",
-                              "en": "Name of the report column you wish to display."
+                              "en": "Report column name."
                             }
                           }
                         }
                       },
                       "description": {
-                        "en": "Field with details of the columns to be included in your report. Find all possible values in the Glossary section (https://www.mercadopago.com.co/developers/en/docs/checkout-pro/additional-content/reports/released-money/report-use).",
+                        "en": "Field with details of the columns that have been included in your report based on the values defined in the request. Find all possible values in the Glossary section (https://www.mercadopago.com.co/developers/en/docs/checkout-pro/additional-content/reports/released-money/report-use).",
                         "pt": "Campo com os detalhes das colunas que foram incluídas no seu relatório com base nos valores definidos no request. Veja mais detalhes sobre cada um deles  na seção Glossário (https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/additional-content/reports/released-money/report-use).",
-                        "es": "Campo con los detalles de las columnas que se incluirán en tu reporte. Encuentra todos los valores posibles en la sección Glossário (https://www.mercadopago.com.co/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use)."
+                        "es": "Campo con los detalles de las columnas que se incluyeron en su reporte basado en los valores definidos en el request. Encuentra todos los valores posibles en la sección Glossário (https://www.mercadopago.com.co/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use)."
                       }
                     },
                     "report_translation": {
@@ -385,9 +385,9 @@
                           "required": true,
                           "type": "number",
                           "description": {
-                            "en": "This field determines the time of day the report should be generated. The adopted time format would be the 24-hour clock.",
-                            "pt": "Este campo determina a hora do dia em que o relatório será gerado de acordo com o que foi definido no request.",
-                            "es": "Este campo determina la hora del día en que se debe generar el reporte. El formato de hora adoptado sería el de 24 horas."
+                            "en": "Field with details of the columns that have been included in your report based on the values defined in the request. The adopted time format would be the 24-hour clock.",
+                            "pt": "Este campo determina a hora do dia em que o relatório será gerado de acordo com o que foi definido no request. O formato de hora adotado é o de 24 horas.",
+                            "es": "Campo con los detalles de las columnas que se incluyeron en su reporte basado en los valores definidos en el request. El formato de hora adoptado sería el de 24 horas."
                           },
                           "example": 0
                         },
@@ -572,7 +572,7 @@
         },
         "title": {
           "en": "Create a new configuration",
-          "pt": "Criar nova configuração",
+          "pt": "Criar uma nova configuração",
           "es": "Crear una nueva configuración"
         }
       },
@@ -581,9 +581,9 @@
           "reporting"
         ],
         "description": {
-          "en": "This endpoint updates the default settings of your reports when necessary",
+          "en": "This endpoint updates the default settings of your reports",
           "pt": "Este endpoint permite atualizar as configurações padrão dos seus relatórios",
-          "es": "Este endpoint actualiza las configuraciones predeterminadas de tus informes cuando sea necesario"
+          "es": "Este endpoint actualiza las configuraciones predeterminadas de tus reportes"
         },
         "requestBody": {
           "description": {
@@ -1125,9 +1125,9 @@
           "reporting"
         ],
         "description": {
-          "en": "Check the current configuration of your reports",
+          "en": "This endpoint allows you to query the current configuration of your reports",
           "pt": "Este endpoint permite consultar a configuração atual dos seus relatórios",
-          "es": "Consulta la configuración actual de tus reportes"
+          "es": "Este endpoint permite consultar la configuración actual de sus reportes"
         },
         "responses": {
           "200": {
