@@ -523,9 +523,9 @@
         "responses": {
           "200": {
             "description": {
-              "es": "Ok.",
-              "pt": "Ok.",
-              "en": "Ok."
+              "es": "Success.",
+              "pt": "Success.",
+              "en": "Success."
             },
             "content": {
               "application/json": {
