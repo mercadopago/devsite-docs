@@ -20,7 +20,7 @@ bin/magento setup:upgrade
 bin/magento setup:di:compile
 ```
 
-4. Ahora debes ejecutar este comando para limpiar la caché de Adobe Commerce:
+4. Ahora debes ejecutar este comando para limpiar el caché de Adobe Commerce:
 
 ```
 bin/magento cache:clean

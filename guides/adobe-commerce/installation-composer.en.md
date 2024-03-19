@@ -20,7 +20,7 @@ bin/magento setup:upgrade
 bin/magento setup:di:compile
 ```
 
-4. Now, you should run this command to clean the Adobe Commerce cache:
+4. Next, run this command to clean the Adobe Commerce cache:
 
 ```
 bin/magento cache:clean
@@ -38,4 +38,4 @@ In case you experience folder permission issues when accessing the store, you wi
 chmod 777 -R var/ pub/ generated/
 ```
 
-And you’re done! You have already successfully installed the Mercado Pago module for Adobe Commerce.
+Done! You have already successfully installed the Mercado Pago module for Adobe Commerce.
