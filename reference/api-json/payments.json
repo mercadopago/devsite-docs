@@ -2704,7 +2704,30 @@
           "en": "Create payment",
           "pt": "Criar pagamento",
           "es": "Crear pago"
-        }
+        },
+        "userCases":[
+            {
+                "name": {
+                    "en": "Create payment with Pix",
+                    "pt": "Criar pagamento com Pix",
+                    "es": "Crear pago con Pix"
+              },
+                "requestBody": {
+                    "content": {
+                        "application/json":{
+                            "schema":{
+                                "properties":{
+                                    "payment_method_id": {
+                                        "example": "Pix"
+                                    }
+                                }
+                            } 
+                        }
+                    }
+
+                }
+            }
+        ]
       }
     },
     "/v1/payments/{id}": {
