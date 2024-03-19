@@ -33,7 +33,7 @@ Para integrar Mercado Pago a tu Tiendanube, sigue los procedimientos a continuac
 
 Para **vincular tu cuenta de Mercado Pago a Tiendanube**, sigue estos pasos:
 
-1. Accede a las [configuraciones de medios de pago](https://mitiendanube.com/admin/payments/) en el menú de tu tienda.
+1. Para acceder a la configuración de métodos de pago, dirígete al panel de administración de tu tienda y haz clic en **Configuraciones > Medios de pago**.
 2. Busca en la lista de medios de pago a Mercado Pago.
 3. Haz clic en "Configurar" y luego en "Activar".
 4. Vas a ser redirigido a Mercado Pago para que ingreses con los datos de tu cuenta. Para autorizar la conexión, haz clic en "Permitir".
