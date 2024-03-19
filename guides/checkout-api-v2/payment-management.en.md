@@ -5,13 +5,12 @@ When using Checkout API to process your store's payments, it is important to kee
 In this section you will find the main ways of managing incoming payments.
 
 ----[mla, mlm, mpe, mco, mlb, mlc]----
-- [Reserve Values](/developers/en/docs/checkout-api/payment-management/make-value-reserve)
 - [Capture authorized payment](/developers/en/docs/checkout-api/payment-management/capture-authorized-payment)
-- [Cancel Reserve](/developers/en/docs/checkout-api/payment-management/cancel-reserve)
-- [Refunds and Cancellations](/developers/en/docs/checkout-api/payment-management/cancellations-and-refunds)
+- [Cancel reserve](/developers/en/docs/checkout-api/payment-management/cancel-reserve)
+- [Refunds and cancellations](/developers/en/docs/checkout-api/payment-management/cancellations-and-refunds)
 
 ------------
 ----[mlu, mlc, mco]----
-- [Refunds and Cancellations](/developers/en/docs/checkout-api/payment-management/cancellations-and-refunds)
+- [Refunds and cancellations](/developers/en/docs/checkout-api/payment-management/cancellations-and-refunds)
 
 ------------

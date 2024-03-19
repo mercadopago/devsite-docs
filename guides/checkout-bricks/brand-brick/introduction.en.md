@@ -1,6 +1,18 @@
 # Brand Brick
 
-The Brand Brick communicates to the user advantages, conveniences, and information, such as: the available payment methods via Mercado Pago, accepted card networks, and the option to pay in installments with or without a credit card. These factors, combined with the credibility of the Mercado Pago brand, instill confidence in the user, may encourage purchases, and consequently, increase user engagement with your store.
+The Brand Brick communicates to the user advantages, conveniences, and information, such as: the available payment methods via Mercado Pago, accepted card networks, and the option to pay in installments with or without a credit card. 
+
+These factors, combined with the credibility of the Mercado Pago brand, instill confidence in the user, may encourage purchases, and consequently, increase user engagement with your store.
+
+---
+live_demo_code_action:
+ - title: Try our Brick
+ - description: Build visual experiences in real time. When you are ready, download or copy the generated code to add to your website or share with a developer.
+ - link: /developers/en/live-demo/brand-brick
+ - image: https://http2.mlstatic.com/frontend-assets/dx-devsite/images/brand-brick3.png
+ - linkName: Demo
+ - buttonDescription: Build your Brand Brick
+---
 
 ## Layout
 
@@ -16,12 +28,8 @@ Various [visual customizations](/developers/en/docs/checkout-bricks/brand-brick/
 >
 > When integrating the Brick, ensure that there are no elements that may interfere with the pop-up.
 
----
-live_demo_code_action:
-- title: Try our Brick
-- description: Build visual experiences in real time. When you are ready, download or copy the generated code to add to your website or share with a developer.
-- link: /developers/en/live-demo/brand-brick
-- image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/brand-brick.png
-- linkName: Demo
-- buttonDescription: Build your Brand Brick
----
+<center>
+
+![brand-brick-es](checkout-bricks/brand-brick-es.gif)
+
+</center> 
