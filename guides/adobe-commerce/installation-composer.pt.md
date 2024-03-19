@@ -1,8 +1,8 @@
 # Instalação via Composer
 
-Para instalar o módulo Mercado Pago no Adobe Commerce (Magento) via Composer, siga os passos abaixo.
+Para instalar o módulo Mercado Pago no Adobe Commerce via Composer, siga os passos abaixo.
 
-1. Em seu terminal, execute este comando para baixar o módulo Adobe Commerce (Magento) com o Composer:
+1. Em seu terminal, execute este comando para baixar o módulo Adobe Commerce com o Composer:
 
 ```
 composer require mercadopago/adb-payment
@@ -20,7 +20,7 @@ bin/magento setup:upgrade
 bin/magento setup:di:compile
 ```
 
-4. Agora você deve executar este comando para limpar o cache do Adobe Commerce (Magento):
+4. Agora você deve executar este comando para limpar o cache do Adobe Commerce:
 
 ```
 bin/magento cache:clean
@@ -38,4 +38,4 @@ Caso você enfrente problemas de permissão de pasta ao acessar a loja, será ne
 chmod 777 -R var/ pub/ generated/
 ```
 
-Pronto! Você instalou com sucesso o módulo Mercado Pago para Adobe Commerce (Magento).
+Pronto! Você instalou com sucesso o módulo Mercado Pago para Adobe Commerce.

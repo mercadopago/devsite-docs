@@ -1,7 +1,7 @@
 ---
 content_section_with_media:
- - title: Adobe Commerce (Magento)
- - message: Adobe Commerce (Magento) is an e-commerce platform that allows you to create a customizable online store, ideal for large companies that want to offer a unique experience. Adobe Commerce (Magento) is the latest version of this platform, offering a user-friendly interface, higher speed, built-in cache cleaning support, and more stability.
+ - title: Adobe Commerce
+ - message: Adobe Commerce is an e-commerce platform that allows you to create a customizable online store, ideal for large companies that want to offer a unique experience. Adobe Commerce is the latest version of this platform, offering a user-friendly interface, higher speed, built-in cache cleaning support, and more stability.
  - media_image: /adobe-commerce/magento2-landing.png 
 ---
  
@@ -35,7 +35,6 @@ bullet_section_with_media:
 ---
 ------------
 
-
 --- mini_landing_separator ---
  
 >>>> Availability by country <<<<
@@ -43,7 +42,22 @@ bullet_section_with_media:
 available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
 
 ---
- 
+---
+bullet_section_with_media: 
+ - title: Advantages
+ - type: normal
+ - benefit_title: Payment methods customization in Checkout Pro
+ - benefit_message: You can offer all available payment methods or only the ones you find necessary.
+ - benefit_title: Data protection with PCI-DSS (Payment Card Industry Data Security Standard)
+ - benefit_message: We comply with the global standard for protecting sensitive card information and utilize Secure Fields to facilitate certification acquisition for your store.
+ - benefit_title: Ensure security in your high-risk transactions with 3DS (3-Domain Secure)
+ - benefit_message: With 3DS, we conduct discreet identity verification through a modal within the store, offering benefits such as higher approval rates and lower fraud risks.
+ - benefit_title: Increased payment approval with Checkout Pro
+ - benefit_message: We ensure a higher approval rate and lower fraud risk when payment is made through Mercado Pago account.
+ - benefit_title: Payment with two cards
+ - benefit_message: The buyer can split the amount across two different cards if one of them has insufficient balance.
+ - image: /adobe-commerce/adb-commerce-landing.png
+---
 --- mini_landing_separator ---
  
 >>>> Accepted payment types <<<<
