@@ -4,7 +4,7 @@
 >
 > Contato comercial necessário
 >
-> Você só pode integrar este produto se o seu contato comercial compartilhar todas as informações necessárias para isso.
+> Você só pode integrar este produto se o seu contato comercial compartilhar todas as informações necessárias para isso. 
 
 ## O que é QR por modelo desatendido?
 

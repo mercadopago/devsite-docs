@@ -48,7 +48,7 @@ Renove suas credenciais de maneira simples seguindo estas etapas:
 Se você precisar compartilhar as credenciais da sua aplicação com outras contas do Mercado Pago, faça isso de forma segura por meio de Suas Aplicações.
 Ao compartilhar suas credenciais, você permite que outra conta do Mercado Pago as veja e use. Para fazer isso, siga estas etapas:
 
-1. Acesse o [Painel do desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
+1. Acesse [Painel do desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 2. Acesse a aplicação cujas credenciais você deseja compartilhar.
 3. Clique em **Credenciais de produção** > **Compartilhar minhas credenciais**.
 4. Insira os e-mails das contas do Mercado Pago com as quais deseja compartilhar suas credenciais. Tanto as de teste quanto as de produção serão compartilhadas.

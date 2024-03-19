@@ -1089,7 +1089,7 @@
                               },
                               "example": "Santos Lugares"
                             },
-                            "streetName": {
+                            "street": {
                               "type": "string",
                               "description": {
                                 "en": "Name of the street.",
@@ -1098,7 +1098,7 @@
                               },
                               "example": "Calle 01"
                             },
-                            "streetNumber": {
+                            "number": {
                               "type": "string",
                               "description": {
                                 "en": "Number of the delivery location. If there is no number, the value will be SN.",

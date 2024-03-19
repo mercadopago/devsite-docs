@@ -807,40 +807,40 @@
                         "title": "Pix",
                         "description": {
                           "en": "Instant digital payment method used in Brazil.",
-                          "es": "Instant digital payment method used in Brazil.",
-                          "pt": "Instant digital payment method used in Brazil."
-                        }
-                      },
-                      {
-                        "title": "Account_money",
-                        "description": {
-                          "en": "When the payment is debited directly from a Mercado Pago account.",
-                          "es": "When the payment is debited directly from a Mercado Pago account.",
-                          "pt": "When the payment is debited directly from a Mercado Pago account."
+                          "es": "Método de pago digital instantáneo utilizado en Brasil.",
+                          "pt": "Método de pagamento digital instantâneo utilizado no Brasil."
                         }
                       },
                       {
                         "title": "Debin_transfer",
                         "description": {
                           "en": "Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.",
-                          "es": "Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.",
-                          "pt": "Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization."
+                          "es": "Método de pago digital utilizado en Argentina que debita inmediatamente una cantidad de una cuenta, solicitando autorización previa.",
+                          "pt": "Método de pagamento digital utilizado na Argentina que debita imediatamente um valor da conta, solicitando autorização prévia."
                         }
                       },
                       {
                         "title": "Ted",
                         "description": {
-                          "en": "It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;",
-                          "es": "It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;",
-                          "pt": "It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;"
+                          "en": "It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period.",
+                          "es": "Es el pago por Transferencia Electrónica Disponible, utilizado en Brasil, que tiene tarifas de uso. El pago se realiza el mismo día de la transacción, pero para ello es necesario realizar la transferencia dentro del período estipulado.",
+                          "pt": "É o pagamento por Transferência Eletrônica Disponível, usado no Brasil, que possui taxas de utilização. O pagamento é realizado no mesmo dia da transação, mas para isso, é necessário realizar a transferência dentro do período estipulado."
                         }
                       },
                       {
-                        "title": "Cvu",
+                        "title": "CVU",
                         "description": {
                           "en": "Payment method used in Argentina.",
-                          "es": "Payment method used in Argentina.",
-                          "pt": "Payment method used in Argentina."
+                          "es": "Método de pago utilizado en Argentina.",
+                          "pt": "Método de pagamento utilizado na Argentina."
+                        }
+                      },
+                      {
+                        "title": "PSE",
+                        "description": {
+                          "en": "Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking, your savings, checking or electronic deposit accounts.",
+                          "es": "Método de pago digital utilizado en Colombia, donde los usuarios autorizan el débito de fondos desde su banco a través de la banca virtual, ya sea desde sus cuentas de ahorro, corriente o depósito electrónico.",
+                          "pt": "Método de pagamento digital utilizado na Colômbia, no qual os usuários autorizam o débito de fundos de seu banco por meio da banca virtual, seja de suas contas de poupança, corrente ou depósito eletrônico."
                         }
                       }
                     ],
@@ -2743,7 +2743,7 @@
                   "type": "object",
                   "properties": {
                     "id": {
-                      "type": "string",
+                      "type": "number",
                       "example": 1,
                       "description": {
                         "en": "Unique Payment Identifier, automatically generated by Mercado Pago",
@@ -2810,7 +2810,7 @@
                     },
                     "payment_method_id": {
                       "type": "string",
-                      "example": "account_money",
+                      "example": "Pix",
                       "description": {
                         "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples. Get all available payment methods by consulting the 'Get payment Methods API'.",
                         "pt": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos. Obtenha todos os meios de pagamento disponíveis consultando a API de 'Obter meios de pagamento'.",
@@ -2818,51 +2818,43 @@
                       },
                       "enum": [
                         {
-                          "title": "pix",
+                          "title": "Pix",
                           "description": {
-                            "en": "Instant digital payment method used in Brazil;",
-                            "es": "Instant digital payment method used in Brazil;",
-                            "pt": "Instant digital payment method used in Brazil;"
+                            "en": "Instant digital payment method used in Brazil.",
+                            "es": "Método de pago digital instantáneo utilizado en Brasil.",
+                            "pt": "Método de pagamento digital instantâneo utilizado no Brasil."
                           }
                         },
                         {
-                          "title": "account_money",
+                          "title": "Debin_transfer",
                           "description": {
-                            "en": "When the payment is debited directly from a Mercado Pago account;",
-                            "es": "When the payment is debited directly from a Mercado Pago account;",
-                            "pt": "When the payment is debited directly from a Mercado Pago account;"
+                            "en": "Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.",
+                            "es": "Método de pago digital utilizado en Argentina que debita inmediatamente una cantidad de una cuenta, solicitando autorización previa.",
+                            "pt": "Método de pagamento digital utilizado na Argentina que debita imediatamente um valor da conta, solicitando autorização prévia."
                           }
                         },
                         {
-                          "title": "debin_transfer",
+                          "title": "Ted",
                           "description": {
-                            "en": "Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization;",
-                            "es": "Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization;",
-                            "pt": "Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization;"
+                            "en": "It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period.",
+                            "es": "Es el pago por Transferencia Electrónica Disponible, utilizado en Brasil, que tiene tarifas de uso. El pago se realiza el mismo día de la transacción, pero para ello es necesario realizar la transferencia dentro del período estipulado.",
+                            "pt": "É o pagamento por Transferência Eletrônica Disponível, usado no Brasil, que possui taxas de utilização. O pagamento é realizado no mesmo dia da transação, mas para isso, é necessário realizar a transferência dentro do período estipulado."
                           }
                         },
                         {
-                          "title": "ted",
+                          "title": "CVU",
                           "description": {
-                            "en": "It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;",
-                            "es": "It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;",
-                            "pt": "It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;"
+                            "en": "Payment method used in Argentina.",
+                            "es": "Método de pago utilizado en Argentina.",
+                            "pt": "Método de pagamento utilizado na Argentina."
                           }
                         },
                         {
-                          "title": "cvu",
+                          "title": "PSE",
                           "description": {
-                            "en": "Payment method used in Argentina;",
-                            "es": "Payment method used in Argentina;",
-                            "pt": "Payment method used in Argentina;"
-                          }
-                        },
-                        {
-                          "title": "pse",
-                          "description": {
-                            "en": "Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.",
-                            "es": "Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.",
-                            "pt": "Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts."
+                            "en": "Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking, your savings, checking or electronic deposit accounts.",
+                            "es": "Método de pago digital utilizado en Colombia, donde los usuarios autorizan el débito de fondos desde su banco a través de la banca virtual, ya sea desde sus cuentas de ahorro, corriente o depósito electrónico.",
+                            "pt": "Método de pagamento digital utilizado na Colômbia, no qual os usuários autorizam o débito de fundos de seu banco por meio da banca virtual, seja de suas contas de poupança, corrente ou depósito eletrônico."
                           }
                         }
                       ]
@@ -4149,51 +4141,43 @@
                       },
                       "enum": [
                         {
-                          "title": "pix",
+                          "title": "Pix",
                           "description": {
-                            "en": "Instant digital payment method used in Brazil;",
-                            "es": "Instant digital payment method used in Brazil;",
-                            "pt": "Instant digital payment method used in Brazil;"
+                            "en": "Instant digital payment method used in Brazil.",
+                            "es": "Método de pago digital instantáneo utilizado en Brasil.",
+                            "pt": "Método de pagamento digital instantâneo utilizado no Brasil."
                           }
                         },
                         {
-                          "title": "account_money",
+                          "title": "Debin_transfer",
                           "description": {
-                            "en": "When the payment is debited directly from a Mercado Pago account;",
-                            "es": "When the payment is debited directly from a Mercado Pago account;",
-                            "pt": "When the payment is debited directly from a Mercado Pago account;"
+                            "en": "Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.",
+                            "es": "Método de pago digital utilizado en Argentina que debita inmediatamente una cantidad de una cuenta, solicitando autorización previa.",
+                            "pt": "Método de pagamento digital utilizado na Argentina que debita imediatamente um valor da conta, solicitando autorização prévia."
                           }
                         },
                         {
-                          "title": "debin_transfer",
+                          "title": "Ted",
                           "description": {
-                            "en": "Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization;",
-                            "es": "Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization;",
-                            "pt": "Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization;"
+                            "en": "It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period.",
+                            "es": "Es el pago por Transferencia Electrónica Disponible, utilizado en Brasil, que tiene tarifas de uso. El pago se realiza el mismo día de la transacción, pero para ello es necesario realizar la transferencia dentro del período estipulado.",
+                            "pt": "É o pagamento por Transferência Eletrônica Disponível, usado no Brasil, que possui taxas de utilização. O pagamento é realizado no mesmo dia da transação, mas para isso, é necessário realizar a transferência dentro do período estipulado."
                           }
                         },
                         {
-                          "title": "ted",
+                          "title": "CVU",
                           "description": {
-                            "en": "It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;",
-                            "es": "It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;",
-                            "pt": "It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;"
+                            "en": "Payment method used in Argentina.",
+                            "es": "Método de pago utilizado en Argentina.",
+                            "pt": "Método de pagamento utilizado na Argentina."
                           }
                         },
                         {
-                          "title": "cvu",
+                          "title": "PSE",
                           "description": {
-                            "en": "Payment method used in Argentina;",
-                            "es": "Payment method used in Argentina;",
-                            "pt": "Payment method used in Argentina;"
-                          }
-                        },
-                        {
-                          "title": "pse",
-                          "description": {
-                            "en": "Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.",
-                            "es": "Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.",
-                            "pt": "Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts."
+                            "en": "Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking, your savings, checking or electronic deposit accounts.",
+                            "es": "Método de pago digital utilizado en Colombia, donde los usuarios autorizan el débito de fondos desde su banco a través de la banca virtual, ya sea desde sus cuentas de ahorro, corriente o depósito electrónico.",
+                            "pt": "Método de pagamento digital utilizado na Colômbia, no qual os usuários autorizam o débito de fundos de seu banco por meio da banca virtual, seja de suas contas de poupança, corrente ou depósito eletrônico."
                           }
                         }
                       ]
@@ -5492,7 +5476,7 @@
                           "type": "object",
                           "properties": {
                             "id": {
-                              "type": "string",
+                              "type": "number",
                               "example": 1,
                               "description": {
                                 "en": "Unique Payment Identifier, automatically generated by Mercado Pago",
@@ -5559,7 +5543,7 @@
                             },
                             "payment_method_id": {
                               "type": "string",
-                              "example": "account_money",
+                              "example": "PSE",
                               "description": {
                                 "en": "It indicates the identifier of the payment method selected to make the transaction. Here are some examples. Get all available payment methods by consulting the 'Get payment Methods API'.",
                                 "pt": "Indica o identificador do meio de pagamento selecionado para efetuar o pagamento. A seguir, apresentamos alguns exemplos. Obtenha todos os meios de pagamento disponíveis consultando a API de 'Obter meios de pagamento'.",
@@ -5567,51 +5551,43 @@
                               },
                               "enum": [
                                 {
-                                  "title": "pix",
+                                  "title": "Pix",
                                   "description": {
                                     "en": "Instant digital payment method used in Brazil.",
-                                    "es": "Instant digital payment method used in Brazil.",
-                                    "pt": "Instant digital payment method used in Brazil."
+                                    "es": "Método de pago digital instantáneo utilizado en Brasil.",
+                                    "pt": "Método de pagamento digital instantâneo utilizado no Brasil."
                                   }
                                 },
                                 {
-                                  "title": "account_money",
-                                  "description": {
-                                    "en": "When the payment is debited directly from a Mercado Pago account.",
-                                    "es": "When the payment is debited directly from a Mercado Pago account.",
-                                    "pt": "When the payment is debited directly from a Mercado Pago account."
-                                  }
-                                },
-                                {
-                                  "title": "debin_transfer",
+                                  "title": "Debin_transfer",
                                   "description": {
                                     "en": "Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.",
-                                    "es": "Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.",
-                                    "pt": "Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization."
+                                    "es": "Método de pago digital utilizado en Argentina que debita inmediatamente una cantidad de una cuenta, solicitando autorización previa.",
+                                    "pt": "Método de pagamento digital utilizado na Argentina que debita imediatamente um valor da conta, solicitando autorização prévia."
                                   }
                                 },
                                 {
-                                  "title": "ted",
+                                  "title": "Ted",
                                   "description": {
                                     "en": "It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period.",
-                                    "es": "It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period.",
-                                    "pt": "It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period."
+                                    "es": "Es el pago por Transferencia Electrónica Disponible, utilizado en Brasil, que tiene tarifas de uso. El pago se realiza el mismo día de la transacción, pero para ello es necesario realizar la transferencia dentro del período estipulado.",
+                                    "pt": "É o pagamento por Transferência Eletrônica Disponível, usado no Brasil, que possui taxas de utilização. O pagamento é realizado no mesmo dia da transação, mas para isso, é necessário realizar a transferência dentro do período estipulado."
                                   }
                                 },
                                 {
-                                  "title": "cvu",
+                                  "title": "CVU",
                                   "description": {
-                                    "en": "Payment method used in Argentina;",
-                                    "es": "Payment method used in Argentina;",
-                                    "pt": "Payment method used in Argentina;"
+                                    "en": "Payment method used in Argentina.",
+                                    "es": "Método de pago utilizado en Argentina.",
+                                    "pt": "Método de pagamento utilizado na Argentina."
                                   }
                                 },
                                 {
-                                  "title": "pse",
+                                  "title": "PSE",
                                   "description": {
-                                    "en": "Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.",
-                                    "es": "Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts.",
-                                    "pt": "Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking. your savings, checking or electronic deposit accounts."
+                                    "en": "Digital payment method used in Colombia which users authorize the debit of funds from their bank through virtual banking, your savings, checking or electronic deposit accounts.",
+                                    "es": "Método de pago digital utilizado en Colombia, donde los usuarios autorizan el débito de fondos desde su banco a través de la banca virtual, ya sea desde sus cuentas de ahorro, corriente o depósito electrónico.",
+                                    "pt": "Método de pagamento digital utilizado na Colômbia, no qual os usuários autorizam o débito de fundos de seu banco por meio da banca virtual, seja de suas contas de poupança, corrente ou depósito eletrônico."
                                   }
                                 }
                               ]
@@ -7153,14 +7129,6 @@
         "example": "credit_card",
         "enum": [
           {
-            "title": "account_money",
-            "description": {
-              "en": "Money in the Mercado Pago account.",
-              "es": "Money in the Mercado Pago account.",
-              "pt": "Money in the Mercado Pago account."
-            }
-          },
-          {
             "title": "ticket",
             "description": {
               "en": "Boletos, Caixa Electronica Payment, PayCash, Efecty, Oxxo, etc.",
@@ -7172,48 +7140,48 @@
             "title": "bank_transfer",
             "description": {
               "en": "Pix and PSE (Pagos Seguros en Línea).",
-              "es": "Pix and PSE (Pagos Seguros en Línea).",
-              "pt": "Pix and PSE (Pagos Seguros en Línea)."
+              "es": "Pix y PSE (Pagos Seguros en Línea).",
+              "pt": "Pix e PSE (Pagos Seguros en Línea)."
             }
           },
           {
             "title": "atm",
             "description": {
               "en": "ATM payment (widely used in Mexico through BBVA Bancomer).",
-              "es": "ATM payment (widely used in Mexico through BBVA Bancomer).",
-              "pt": "ATM payment (widely used in Mexico through BBVA Bancomer)."
+              "es": "Pago en ATM (ampliamente utilizado en México a través de BBVA Bancomer).",
+              "pt": "Pagamento em caixa eletrônico (amplamente utilizado no México através do BBVA Bancomer)."
             }
           },
           {
             "title": "credit_card",
             "description": {
               "en": "Payment by credit card.",
-              "es": "Payment by credit card.",
-              "pt": "Payment by credit card."
+              "es": "Pago con tarjeta de crédito.",
+              "pt": "Pagamento com cartão de crédito."
             }
           },
           {
             "title": "debit_card",
             "description": {
               "en": "Payment by debit card.",
-              "es": "Payment by debit card.",
-              "pt": "Payment by debit card."
+              "es": "Pago con tarjeta de débito.",
+              "pt": "Pagamento com cartão de débito."
             }
           },
           {
             "title": "prepaid_card",
             "description": {
               "en": "Payment by prepaid card.",
-              "es": "Payment by prepaid card.",
-              "pt": "Payment by prepaid card."
+              "es": "Pago con tarjeta prepagada.",
+              "pt": "Pagamento com cartão pré-pago."
             }
           },
           {
             "title": "digital_currency",
             "description": {
               "en": "Purchases with Mercado Crédito.",
-              "es": "Purchases with Mercado Crédito.",
-              "pt": "Purchases with Mercado Crédito."
+              "es": "Compras con Mercado Crédito.",
+              "pt": "Compras com Mercado Crédito."
             }
           },
           {
@@ -7227,17 +7195,17 @@
           {
             "title": "voucher_card",
             "description": {
-              "en": "Alelo benefits, Sodexo.",
-              "es": "Alelo benefits, Sodexo.",
-              "pt": "Alelo benefits, Sodexo."
+              "en": "Alelo benefits or Sodexo.",
+              "es": "Beneficios de Alelo o Sodexo.",
+              "pt": "Benefícios Alelo e Sodexo."
             }
           },
           {
             "title": "crypto_transfer",
             "description": {
               "en": "Payment with cryptocurrencies such as Ethereum and Bitcoin.",
-              "es": "Payment with cryptocurrencies such as Ethereum and Bitcoin.",
-              "pt": "Payment with cryptocurrencies such as Ethereum and Bitcoin."
+              "es": "Pago con criptomonedas como Ethereum y Bitcoin.",
+              "pt": "Pagamento com criptomoedas como Ethereum e Bitcoin."
             }
           }
         ]

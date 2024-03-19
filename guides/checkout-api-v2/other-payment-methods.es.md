@@ -306,19 +306,23 @@ Para configurar pagos con **boleto bancario** o **pago en agencia de lotería**,
 >
 > Atención
 >
-> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token.
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token. Consulta más información en [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
 <?php
   use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\Client\Common\RequestOptions;
+  use MercadoPago\MercadoPagoConfig;
+
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
   $client = new PaymentClient();
   $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
-    "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+ "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
     "payment_method_id" => $_POST['<PAYMENT_METHOD_ID>'],
     "payer" => [
       "email" => $_POST['<EMAIL>']
@@ -601,9 +605,9 @@ Para configurar pagos con **Rapipago** y/o **Pago Fácil**, envía un **POST** c
 
 > WARNING
 >
-> Importante
+> Atención
 >
-> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token.
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token. Consulta más información en [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -832,9 +836,9 @@ Para configurar pagos con **OXXO**, **Paycash**,  **Citibanamex**,  **Santander*
 
 > WARNING
 >
-> Importante
+> Atención
 >
-> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token.
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token. Consulta más información en [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -1023,9 +1027,9 @@ Para configurar pagos con **PagoEfectivo**, envía un **POST** con los parámetr
 
 > WARNING
 >
-> Importante
+> Atención
 >
-> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token.
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token. Consulta más información en [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -1203,9 +1207,9 @@ Para configurar pagos con **Efecty**, envía un **POST** con los parámetros req
 
 > WARNING
 >
-> Importante
+> Atención
 >
-> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada (`access_token`).
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token. Consulta más información en [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -1437,9 +1441,9 @@ Para configurar pagos con **Abitab** y/o **Redpagos**, envía un POST con los si
 
 > WARNING
 >
-> Importante
+> Atención
 >
-> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token.
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token. Consulta más información en [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php

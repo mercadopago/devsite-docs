@@ -35,8 +35,8 @@ To request permission from your users to manage sales on their behalf, it is nec
 
 | Value                | Description                                                                                                          |
 |----------------------|----------------------------------------------------------------------------------------------------------------------|
-| `<APP_ID>`           | Value obtained during [application creation](/developers/en/docs/split-payment/integration-configuration/create-application).    |
-| `<REDIRECT_URI>`     | Value entered in the Redirect URI field during [Redirect URL configuration](/developers/en/docs/split-payment/integration-configuration/create-application). |
+| `<APP_ID>`           | Value obtained during [application creation](#bookmark_create_application).    |
+| `<REDIRECT_URI>`     | Value entered in the Redirect URI field during [Redirect URL configuration](#bookmark_create_application). |
 
 ----[mla]----
 ```curl
