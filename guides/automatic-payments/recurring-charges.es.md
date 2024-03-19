@@ -710,28 +710,131 @@ curl -X GET \
 
 ## Generar un token de tarjeta
 
-Después de localizar los datos de la tarjeta asociada al cliente, utiliza el código _JavaScript_ a continuación para tokenizar la tarjeta utilizando su ID y el código de seguridad. La tokenización proporciona una experiencia de pago digital más segura al reemplazar el número de la tarjeta por un número alternativo, el token.
+Después de localizar los datos de la tarjeta asociada al cliente, utiliza los _snippets_ a continuación para tokenizar la tarjeta utilizando su ID (`card_id`). La tokenización proporciona una experiencia de pago digital más segura al reemplazar el número de la tarjeta por un número alternativo, el token.
 
-```javascript
+[[[
+```php
+<?php
 
- const formElement = document.getElementById('form-checkout');
-    formElement.addEventListener('submit', e => createCardToken(e));
-    const createCardToken = async (event) => {
-      try {
-        const tokenElement = document.getElementById('token');
-        if (!tokenElement.value) {
-          event.preventDefault();
-          const token = await mp.fields.createCardToken({
-            cardId: document.getElementById('form-checkout__cardId').value
-          });
-          tokenElement.value = token.id;
-          console.log(tokenElement);
-        }
-      } catch (e) {
-        console.error('error creating card token: ', e)
-      }
-    }
+use MercadoPago\Client\CardToken\CardTokenClient;
+use MercadoPago\Exceptions\MPApiException;
+use MercadoPago\MercadoPagoConfig;
+
+require_once 'vendor/autoload.php';
+
+MercadoPagoConfig::setAccessToken("<ACCESS_TOKEN>");
+
+$client = new CardTokenClient();
+
+try {
+    $request = [
+        "card_id" => "cardId"
+    ];
+
+    $card_token = $client->create($request);
+    var_dump($card_token);
+} catch (MPApiException $e) {
+    echo "Status code: " . $e->getApiResponse()->getStatusCode() . "\n";
+    echo "Content: ";
+    var_dump($e->getApiResponse()->getContent());
+    echo "\n";
+} catch (\Exception $e) {
+    echo $e->getMessage();
+}
 ```
+```node
+import { MercadoPagoConfig, CardToken } from 'mercadopago';
+
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+const cardToken = new CardToken(client);
+
+const body = {
+	card_id : '<CARD_ID>'
+};
+
+cardToken.create({ body }).then(console.log).catch(console.log);
+```
+```java
+import com.mercadopago.client.cardtoken.CardTokenClient;
+import com.mercadopago.client.cardtoken.CardTokenRequest;
+import com.mercadopago.exceptions.MPApiException;
+import com.mercadopago.exceptions.MPException;
+import com.mercadopago.resources.CardToken;
+
+public class App {
+    public static void main(String[] args){
+        MercadoPagoConfig.setAccessToken("<ACCESS_TOKEN>");
+        
+        CardTokenRequest request = CardTokenRequest.builder().cardId("<CARD_ID>").build();
+        CardTokenClient client = new CardTokenClient();
+
+        try {
+            CardToken cardToken = client.create(request);
+            System.out.println(cardToken);
+        } catch (MPApiException ex) {
+            System.out.printf(
+                    "MercadoPago Error. Status: %s, Content: %s%n",
+                    ex.getApiResponse().getStatusCode(), ex.getApiResponse().getContent());
+        } catch (MPException ex) {
+            ex.printStackTrace();
+        }
+    }
+}
+```
+```dotnet
+using System;
+using MercadoPago.Config;
+using MercadoPago.Client.CardToken;
+using MercadoPago.Resource.CardToken;
+
+MercadoPagoConfig.AccessToken = "<ACCESS_TOKEN>";
+
+var request = new CardTokenRequest
+{
+    CardId = "<CARD_ID>"
+};
+
+var client = new CardTokenClient();
+CardToken cardToken = await client.CreateAsync(request);
+
+Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(cardToken));
+```
+```ruby
+require_relative '../lib/mercadopago.rb'
+
+sdk = Mercadopago::SDK.new('<ACCESS_TOKEN>')
+
+card_token_request = {
+  card_id: '<CARD_ID>'
+}
+
+card_token_response = sdk.card_token.create(card_token_request)
+card_token = card_token_response[:response]
+puts card_token
+```
+```python
+import mercadopago
+
+sdk = mercadopago.SDK("<ACCESS_TOKEN>")
+
+card_token_data = {
+    "card_id": "<CARD_ID>"
+}
+
+result = sdk.card_token().create(card_token_data)
+card_token = result["response"]
+
+print(card_token)
+```
+```curl
+curl --location --request POST 'https://api.mercadopago.com/v1/card_tokens' \
+--header 'Authorization: Bearer {{access_token}}' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+ "card_id": {{card_id}}
+}'
+```
+]]]
 
 ----[mlb]----
 > NOTE
