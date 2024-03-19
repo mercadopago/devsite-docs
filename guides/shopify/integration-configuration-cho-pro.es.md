@@ -31,30 +31,53 @@ Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing) (**Checkout
 
 Para instalar Checkout Pro (**Checkout Mercado Pago**) en una tienda Shopify, sigue los siguientes pasos:
 
-1. Ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
-2. Dentro del panel administrativo de la tienda, haz clic en **Configuración**.
-3. Una vez allí, selecciona la opción **Pagos**. 
-4. En "Formas de pago adicionales", haz clic en **Agregar formas de pago**.
-5. Dirígete a la pestaña **Buscar por proveedor** y busca la nueva app con el nombre "Checkout Mercado Pago". 
-6. Una vez que la hayas encontrado, selecciónala y haz clic en **Activar”** y luego **Conectar**.
+1. Dirígete a tu tienda [Shopify](https://accounts.shopify.com/store-login).
 
-<center>
+2. En el panel de administración de la tienda, haz clic en **Configuración** en la esquina inferior izquierda de la página.
 
-![migracion a](/images/shopify/migration-a-es.gif)
+![Panel](/images/shopify/store-panel-es.png)
 
-</center>
+3. Una vez allí, selecciona la opción **Pagos** en el menú del lado izquierdo de la página.
 
-7. Selecciona **Instalar aplicación** y luego **Gestionar**.
-8. Coloca tus **credenciales de producción** (`public key` y `access token`) en los campos que lo solicitan y haz clic en **Guardar**. Recuerda tener a mano tus [credenciales](/developers/es/docs/shopify/additional-content/your-integrations/credentials).
-9. Para completar la instalación, selecciona **Activar Checkout Mercado Pago**.
+![Pagos](/images/shopify/payments-page-es.png)
+
+4. En "Formas de pago admitidas", haz clic en **Agregar formas de pago**.
+
+5. Selecciona la pestaña **Buscar por proveedor** y busca la aplicación "Checkout Mercado Pago".
+
+![Agregar forma de pago](/images/shopify/add-payment-method-es.png)
+
+6. Una vez localizada, selecciónala y haz clic en **Instalar**.
+
+![Agregar forma de pago](/images/shopify/provider-es.png)
+
+7. Lee cuidadosamente la información sobre los permisos solicitados y haz clic en **Instalar** nuevamente.
+
+![Agregar forma de pago](/images/shopify/install-app-es.png)
+
+8. Después de aceptar los permisos solicitados, haz clic en **Gestionar cuenta** para vincular tu cuenta de Mercado Pago con tu tienda.
+
+![Agregar forma de pago](/images/shopify/manage-account-es.png)
+
+9. Ingresa tus **credenciales de producción** (`public key` y `access token`) en los campos solicitados, asegurándote de no invertir los campos al copiar y pegar las credenciales. Haz clic en **Guardar**. Aprende cómo obtener tus credenciales en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/credentials) correspondiente.
+
+> WARNING
+>
+> Importante
+>
+> Las credenciales son responsables de identificar la cuenta receptora de los pagos que recibirás en tu tienda. Si no ingresas tus credenciales en el panel de administración de la tienda, se te redirigirá automáticamente para configurar este paso. **Recuerda que la activación de los métodos de pago solo será posible después de ingresar con éxito tus credenciales**.
+
+![Agregar forma de pago](/images/shopify/add-credentials-es.png)
+
+> NOTE
+>
+> Nota
+>
+> Renueva tus credenciales según sea necesario, consultando la [documentación](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondiente como guía. Después de la renovación, es esencial actualizarlas en el panel de Shopify. Recuerda: al cambiar la contraseña, **es necesario renovar tus credenciales**. Para ello, elimina las credenciales antiguas del panel, copia las nuevas e ingrésalas en el panel administrativo de la tienda.
+
+9. Para completar la instalación, selecciona **Activar**.
 
 > En este paso, podrás seleccionar las imágenes de los medios de pago que quieras mostrar en tu tienda a modo ilustrativo. 
-
-<center>
-
-![migracion b](/images/shopify/migration-b-es.gif)
-
-</center>
 
 ------------
 
