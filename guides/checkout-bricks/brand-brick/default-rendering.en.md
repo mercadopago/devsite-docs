@@ -45,4 +45,4 @@ The result of rendering the Brick should look like the image below.
 
 ![brand-brick-en](checkout-bricks/brand-brick-en.gif)
 
-</center> 
+</center>  
