@@ -4,12 +4,12 @@ O Brick de Brand comunica ao usuário vantagens, facilidades e informações, co
 
 ---
 live_demo_code_action:
-- title: Experimente nosso Brick
-- description: Construa experiências visuais em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado para adicionar no seu site ou compartilhar com um desenvolvedor.
-- link: /developers/pt/live-demo/brand-brick
-- image: https://http2.mlstatic.com/frontend-assets/dx-devsite/images/brand-brick.png
-- linkName: Demo
-- buttonDescription: Construir seu Brand Brick
+ - title: Experimente nosso Brick
+ - description: Construa experiências visuais em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado para adicionar no seu site ou compartilhar com um desenvolvedor.
+ - link: /developers/pt/live-demo/brand-brick
+ - image: https://http2.mlstatic.com/frontend-assets/dx-devsite/images/brand-brick.png
+ - linkName: Demo
+ - buttonDescription: Construir seu Brand Brick
 ---
 
 ## Layout
