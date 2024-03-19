@@ -27,7 +27,7 @@ To integrate with Mercado Pago, follow the procedures below.
 
 To **link your Mercado Pago account to Tiendanube**, follow these steps: 
 
-1. Access the payment [methods settings](https://mitiendanube.com/admin/payments/) on your site menu.
+1. To access the payment methods settings, go to the administration panel of your store and click on **Settings > Payment methods**.
 2. Look for Mercado Pago in the payment methods list.
 3. Click on "Settings" and then on "Activate".
 4. You are going to be redirected to Mercado Pago so you can log in with your account information. To authorize the connection, click on "Allow".

@@ -35,8 +35,8 @@ Para solicitar permissão aos seus usuários para gerenciar vendas em seu nome, 
 
 | Valor              | Descrição                                                                                                              |
 |--------------------------|----------------------------------------------------------------------------------------------------------------------|
-| `<APP_ID>`               | Valor obtido durante a [criação da aplicação](/developers/pt/docs/split-payment/integration-configuration/create-application).      |
-| `<REDIRECT_URI>`         | Valor inserido no campo Redirect Uri durante a [configuração do Redirect URL](/developers/pt/docs/split-payment/integration-configuration/create-application). |
+| `<APP_ID>`               | Valor obtido durante a [criação da aplicação](#bookmark_criar_aplicação).      |
+| `<REDIRECT_URI>`         | Valor inserido no campo Redirect Uri durante a [configuração do Redirect URL](#bookmark_criar_aplicação). |
 
 ----[mla]----
 ```curl

@@ -2,7 +2,7 @@
 
 To create a customer and associate it with your card, you must send the email field, the type of payment method, the ID of the issuing bank and the generated token. Each customer will be saved with the value `customer` and each card with the value `card`.
 
-In addition, we recommend storing your card data whenever a payment is successfully completed. This allows the correct data to be stored for future purchases and streamlines the payment process for the buyer.
+In addition, by using our SDKs, and if a payment is successfully completed, the correct information can be stored securely in our servers for future purchases, which can streamline the payment process for the buyer. For more information, check our [API Reference](/developers/en/reference/cards/_customers_customer_id_cards/post).
 
 To create a customer and card, use one of the codes below.
 

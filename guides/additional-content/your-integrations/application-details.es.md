@@ -10,32 +10,20 @@ En esta sección, nos aseguraremos de que tu aplicación cumpla con los requisit
 
 El puntaje indica qué tan segura y alineada con las buenas prácticas de integración de Mercado Pago está la configuración de tu aplicación.
 
-Haz clic en **Evaluar calidad** para iniciar el proceso de análisis de tu integración. Revisa los puntos de mejora identificados durante el análisis y haz los cambios necesarios en tu integración. Durante este proceso, se analizarán una serie de campos asociados.
-
-> NOTE
->
-> Nota
->
-> Antes de realizar la evaluación, asegúrate de haber completado el proceso de aprobación de la aplicación en el entorno de producción. Además, es necesario haber realizado al menos un pago productivo exitoso.
-
-> Después de realizar las mejoras, haz clic nuevamente en **Actualizar puntaje** para reevaluar tu integración y verificar si cumple con los estándares requeridos.
-
-----[mla, mlm, mlu, mco, mlc, mpe]----
+Al hacer clic en **Evaluar la calidad**, comenzarás el proceso de análisis de tu integración. Durante esta revisión, es importante identificar áreas de mejora y realizar los cambios necesarios en tu integración. Este proceso implica la revisión de varios campos asociados.
 
 > WARNING
 >
-> Atención
+> Importante
 >
-> Por el momento, la sección **Calidad de integración** solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Mercado Pago Point,](/developers/es/docs/mp-point/landing) [Checkout API](/developers/es/docs/checkout-api/landing) y [Checkout Bricks.](/developers/es/docs/checkout-bricks/landing)
+> Antes de comenzar la evaluación, asegúrese de que la homologación de la aplicación en el entorno de producción haya sido completada, incluyendo la realización de al menos un pago productivo. Después de implementar mejoras, es necesario hacer clic nuevamente en **Actualizar puntaje** para volver a evaluar su integración y verificar si cumple con los estándares requeridos.
+
+----[mla, mlm, mlu, mco, mlc, mpe]----
+Por el momento, la sección **Calidad de integración** solo está disponible para integraciones con [**Checkout Pro**,](/developers/es/docs/checkout-pro/landing) [**Mercado Pago Point**,](/developers/es/docs/mp-point/landing) [**Checkout API**](/developers/es/docs/checkout-api/landing) y [**Checkout Bricks**.](/developers/es/docs/checkout-bricks/landing)
 
 ------------
 ----[mlb]----
-
-> WARNING
->
-> Atención
->
-> Por el momento, la sección **Calidad de integración** solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Mercado Pago Point,](/developers/es/docs/mp-point/landing) [Checkout Transparente](/developers/es/docs/checkout-api/landing) y [Checkout Bricks.](/developers/es/docs/checkout-bricks/landing)
+Por el momento, la sección **Calidad de integración** solo está disponible para integraciones con [**Checkout Pro**,](/developers/es/docs/checkout-pro/landing) [**Mercado Pago Point**,](/developers/es/docs/mp-point/landing) [**Checkout Transparente**](/developers/es/docs/checkout-api/landing) y [**Checkout Bricks**.](/developers/es/docs/checkout-bricks/landing)
 
 ------------
 
@@ -66,7 +54,7 @@ Puedes hacer clic en el botón **Editar datos** para ver y editar las configurac
 #### Configuraciones avanzadas
 
 * **URLs de redireccionamiento**: URLs (en https) donde deseas recibir el código de autorización cuando tu integración sea configurada como Marketplace o se realice a través de OAuth. Consulta [OAuth](/developers/es/docs/security/oauth/introduction) para obtener más detalles.
-* **Habilitar verificación PKCE**: en caso de que la integración se realice con OAuth, puedes habilitar el PKCE (_Proof Key for Code Exchange_) para generar un código secreto adicional que se usará durante el proceso de autorización. Consulta [OAuth](/developers/es/docs/security/oauth/introduction) para obtener más detalles. 
+* **Habilitar verificación PKCE**: en caso de que la integración se realice con OAuth, puedes habilitar el PKCE (_Proof Key for Code Exchange_) para generar un código secreto adicional que se usará durante el proceso de autorización. Consulta [Configurar PKCE](/developers/es/docs/security/oauth/creation#bookmark_configurar_pkce) para obtener más detalles. 
 * **Flujo de acceso**: selecciona los tipos de autenticación que tu aplicación puede utilizar, limitando la aplicación solo a los flujos necesarios para su operación y minimizando posibles ataques o puntos de vulnerabilidad. Las opciones son: `client_credentials` ([credenciales de la aplicación](/developers/es/guides/additional-content/your-integrations/credentials)) y `authorization_code` ([código de autorización OAuth](/developers/es/docs/security/oauth/introduction)). Por defecto, las aplicaciones tendrán ambas opciones habilitadas, y al activar o desactivar estas opciones, puedes controlar qué flujos de autenticación puede utilizar una aplicación.
 * **Permisos de la aplicación**: son opciones de acceso de tu aplicación, cómo **lectura**, **acceso offline** y **escritura**. Por defecto, tu aplicación se crea con todos los permisos activados, pero puedes desactivar un permiso haciendo clic en la casilla de verificación correspondiente al permiso que deseas cambiar.
 

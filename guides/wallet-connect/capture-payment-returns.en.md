@@ -97,7 +97,7 @@ Status code: 201
 
 ## Payment rejected due to insufficient funds in the account
 
-This response returns when an attempt is made to create an Advanced Payment but the payer has no balance in his Mercado Pago account.
+This response returns when an attempt is made to create a payment but the payer has no balance in his Mercado Pago account.
 
 [[[
 ```Json

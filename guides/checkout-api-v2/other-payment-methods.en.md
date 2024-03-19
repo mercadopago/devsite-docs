@@ -298,7 +298,7 @@ To configure payments with **Boleto Bancário** or **Pagamento em lotérica**, s
 >
 > Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. for more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials).
 
 | Payment Type | Parameter | Value |
 | --- | --- | --- |
@@ -309,13 +309,17 @@ To configure payments with **Boleto Bancário** or **Pagamento em lotérica**, s
 ```php
 <?php
   use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\Client\Common\RequestOptions;
+  use MercadoPago\MercadoPagoConfig;
+
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
   $client = new PaymentClient();
   $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
-    "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+ "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
     "payment_method_id" => $_POST['<PAYMENT_METHOD_ID>'],
     "payer" => [
       "email" => $_POST['<EMAIL>']
@@ -594,9 +598,9 @@ To configure payments with **Rapipago** and/or **Pago Fácil**, send a **POST** 
 
 > WARNING
 >
-> Important
+> Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. for more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -813,9 +817,9 @@ To configure payments with **OXXO**, **Paycash**, **Citibanamex**, **Santander**
 
 > WARNING
 >
-> Important
+> Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. for more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -1004,9 +1008,9 @@ To configure payments with **PagoEfectivo**, send a **POST** with the required p
 
 > WARNING
 >
-> Important
+> Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. for more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -1182,9 +1186,9 @@ To configure payments with **Efecty**, send a **POST** with the appropriate para
 
 > WARNING
 >
-> Important
+> Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. for more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -1420,9 +1424,9 @@ To configure payments with **Abitab** and/or **Redpagos**, send a **POST** with 
 
 > WARNING
 >
-> Important
+> Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. for more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php

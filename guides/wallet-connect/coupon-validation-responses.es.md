@@ -12,8 +12,8 @@ En esta sección encontrarás las posibles respuestas al validar cupones, con de
 
 1. Cupón válido con descuento asociado
 
-* Código de Estado: 200 (Success)
-* Descripción: Respuesta que indica éxito en la validación del cupón, vinculado a un descuento activo. Incluye los términos legales, el valor del descuento, tipo, límite máximo y los montos mínimos y máximos aplicables al pago.
+* Código de estado: 200 (Success)
+* Descripción: respuesta que indica éxito en la validación del cupón, vinculado a un descuento activo. Incluye los términos legales, el valor del descuento, tipo, límite máximo y los montos mínimos y máximos aplicables al pago.
 * Cuerpo de la respuesta:
 
 ```Json
@@ -33,8 +33,8 @@ En esta sección encontrarás las posibles respuestas al validar cupones, con de
 
 2. Cupón con descuento listo para uso
 
-* Código de Estado: 200 (Success)
-* Descripción: Respuesta que confirma que el cupón está listo para su uso, a la espera de ser aplicado en un pago. Incluye detalles del descuento y términos legales.
+* Código de estado: 200 (Success)
+* Descripción: respuesta que confirma que el cupón está listo para su uso, a la espera de ser aplicado en un pago. Incluye detalles del descuento y términos legales.
 * Cuerpo de la respuesta:
 
 ```Json
@@ -54,8 +54,8 @@ En esta sección encontrarás las posibles respuestas al validar cupones, con de
 
 3. Cupón sin descuento asociado
 
-* Código de Estado: 200
-* Descripción: Respuesta que indica que el cupón enviado es inválido y no tiene un descuento asociado.
+* Código de estado: 200
+* Descripción: respuesta que indica que el cupón enviado es inválido y no tiene un descuento asociado.
 * Cuerpo de la respuesta: 
 
 ```Json
@@ -66,10 +66,10 @@ En esta sección encontrarás las posibles respuestas al validar cupones, con de
 
 ## Error
 
-1. Solicitud Mal Formulada
+1. Solicitud mal formulada
 
-* Código de Estado: 400 (Bad Request).
-* Descripción: Respuesta de error que indica que la solicitud fue mal formulada. Incluye un mensaje de error detallado con el código de estado correspondiente.
+* Código de estado: 400 (Bad Request).
+* Descripción: respuesta de error que indica que la solicitud fue mal formulada. Incluye un mensaje de error detallado con el código de estado correspondiente.
 * Cuerpo de la respuesta: 
 
 ```Json
@@ -83,7 +83,7 @@ En esta sección encontrarás las posibles respuestas al validar cupones, con de
 2. Coupon_id inválido
 
 * Código de estado: 400 (Bad Request).
-* Descripción: Respuesta de error que indica que el `coupon_id` enviado en la solicitud es inválido.
+* Descripción: respuesta de error que indica que el `coupon_id` enviado en la solicitud es inválido.
 * Cuerpo de la respuesta:
 
 ```json
@@ -97,7 +97,7 @@ En esta sección encontrarás las posibles respuestas al validar cupones, con de
 3. Payer_token inválido
 
 * Código de estado: 400 (Bad Request).
-* Descripción: Respuesta de error que indica que el `payer_token` enviado en la solicitud es inválido.
+* Descripción: respuesta de error que indica que el `payer_token` enviado en la solicitud es inválido.
 * Cuerpo de la respuesta:
 
 ```json

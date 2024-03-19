@@ -6,7 +6,7 @@ Para integrar la solución de Split de pagos, es importante cumplir con los requ
 >
 > Importante
 >
-> En caso de que sea necesario realizar configuraciones sobre la fecha de liberación de la comisión (*marketplace fee* o *application fee*), contacta a tu **ejecutivo comercial de cartera asesorada**.
+> Esta documentación es específica para el modelo de Split de pagos 1:1. En caso de necesitar información sobre el modelo 1:N, le recomendamos ponerse en contacto con nuestro equipo comercial para obtener más detalles. Además, si es necesario realizar configuraciones sobre la fecha de liberación de la comisión (*marketplace fee* o *application fee*), contacta a tu **ejecutivo comercial de cartera asesorada**.
 
 | Requisito                        | Descripción                                                                                                                                                                                                                                      |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -4,7 +4,7 @@
 >
 > Data entry errors
 
-| Code | Description | Suggested communication |
+| Code | Description | Description |
 | --- | --- | --- |
 | 205 | parameter cardNumber can not be null/empty | Enter card number. |
 | 208 | parameter expirationMonth can not be null/empty | Select month. |

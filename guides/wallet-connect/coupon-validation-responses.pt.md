@@ -2,21 +2,18 @@
 
 Nesta seção você encontra as possíveis respostas ao validar cupons, com detalhes sobre cada tipo de resposta, incluindo casos de sucesso, pendência, invalidade e erro.
 
-
 | Status   | Descrição |
 | --- | --- |
 | success  | Cupom validado com sucesso. Está associado a um desconto. |
 | pending  | Cupom pronto para ser utilizado para realizar um pagamento. |
 | invalid  | Cupom incorreto. Não está associado a um desconto.  |
 
-
-
 ## Sucesso
 
 1. Cupom válido com desconto associado
 
-* Código de Status: 200 (Sucesso)
-* Descrição:  Resposta indicando sucesso na validação do cupom, que está vinculado a um desconto ativo. Inclui os termos legais, o valor do desconto, tipo, limite máximo, e os montantes mínimos e máximos aplicáveis ao pagamento.
+* Código de status: 200 (Sucesso)
+* Descrição: resposta indicando sucesso na validação do cupom, que está vinculado a um desconto ativo. Inclui os termos legais, o valor do desconto, tipo, limite máximo, e os montantes mínimos e máximos aplicáveis ao pagamento.
 * Corpo da resposta:
 
 [[[
@@ -38,11 +35,10 @@ Nesta seção você encontra as possíveis respostas ao validar cupons, com deta
 ```
 ]]]
 
-
 2. Cupom com desconto pronto para uso
 
-* Código de Status: 200 (Sucesso)
-* Descrição: Resposta confirmando que o cupom está pronto para uso, aguardando aplicação em um pagamento. Detalhes do desconto e termos legais estão incluídos.
+* Código de status: 200 (Sucesso)
+* Descrição: resposta confirmando que o cupom está pronto para uso, aguardando aplicação em um pagamento. Detalhes do desconto e termos legais estão incluídos.
 * Corpo da resposta:
 
 [[[
@@ -64,11 +60,10 @@ Nesta seção você encontra as possíveis respostas ao validar cupons, com deta
 ```
 ]]]
 
-
 3. Cupom sem desconto associado
 
-* Código de Status: 200
-* Descrição: Resposta que indica que o cupom enviado é inválido e não possui um desconto associado a ele.
+* Código de status: 200
+* Descrição: resposta que indica que o cupom enviado é inválido e não possui um desconto associado a ele.
 * Corpo da resposta: 
 
 [[[
@@ -83,10 +78,10 @@ Nesta seção você encontra as possíveis respostas ao validar cupons, com deta
 
 ## Erro
 
-1. Requisição Mal Formulada
+1. Requisição mal formulada
 
-* Código de Status: 400 (Bad Request).
-* Descrição: Resposta de erro indicando que a requisição foi mal formulada. Inclui uma mensagem de erro detalhada com o código de status correspondente.
+* Código de status: 400 (Bad Request).
+* Descrição: resposta de erro indicando que a requisição foi mal formulada. Inclui uma mensagem de erro detalhada com o código de status correspondente.
 * Corpo da resposta: 
 
 [[[
@@ -104,7 +99,7 @@ Nesta seção você encontra as possíveis respostas ao validar cupons, com deta
 2. Coupon_id inválido
 
 * Código de status: 400 (Bad Request).
-* Descrição: Resposta de erro indicando que o `coupon_id` enviado no request é inválido.
+* Descrição: resposta de erro indicando que o `coupon_id` enviado no request é inválido.
 * Corpo da resposta:
 
 [[[
@@ -120,7 +115,7 @@ Nesta seção você encontra as possíveis respostas ao validar cupons, com deta
 3. Payer_token inválido
 
 * Código de status: 400 (Bad Request).
-* Descrição: Resposta de erro indicando que o `payer_token` enviado no request é inválido.
+* Descrição: resposta de erro indicando que o `payer_token` enviado no request é inválido.
 * Corpo da resposta:
 
 [[[

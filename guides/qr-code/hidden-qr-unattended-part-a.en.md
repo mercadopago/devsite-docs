@@ -1,4 +1,4 @@
-# Payments with QR unattended model
+# Payments with QR unattended model 
 
 > WARNING
 >
@@ -69,6 +69,6 @@ https://api.mercadopago.com/pos \
 ```
 ]]]
 
-# Integration
+## Integration
 
 To integrate this billing model, access the documentation on [Integrate QR unattended model](/developers/en/docs/qr-code/qr-unattended/qr-unattended-part-b)
