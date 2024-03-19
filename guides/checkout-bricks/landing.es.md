@@ -165,9 +165,9 @@ future_product_avaible:
  - card_button: /developers/es/docs/checkout-bricks/brand-brick/introduction
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
- - card_linkAvailable: false
- - card_linkProof:
- - card_linkProofDescription:
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/brand-brick
+ - card_linkProofDescription: Acceder a demostración
  - card_avaible: true
  - card_icon: Check
  - card_title: Review & Confirm

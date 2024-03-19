@@ -1,4 +1,4 @@
-# Buscar clientes
+# Buscar cliente
 
 Si necesitas datos específicos de un cliente, como DNI, dirección o fecha de registro, puedes obtenerlos a través de nuestra API de clientes. Para eso, envía un GET con el email del cliente al endpoint [/v1/customers/search](/developers/es/reference/customers/_customers_search/get) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs que aparecen a continuación.
 
@@ -76,3 +76,50 @@ curl -X GET \
 ```
 ]]]
 
+La respsuesta mostrará el siguiente resultado:
+
+```json
+{
+    "paging": {
+        "limit": 10,
+        "offset": 0,
+        "total": 1
+    },
+    "results": [
+        {
+            "address": {
+                "id": null,
+                "street_name": null,
+                "street_number": null,
+                "zip_code": null
+            },
+            "addresses": [],
+            "cards": [
+                {
+                    ...
+                }
+            ],
+            "date_created": "2017-05-05T00:00:00.000-04:00",
+            "date_last_updated": "2017-05-05T09:23:25.021-04:00",
+            "date_registered": null,
+            "default_address": null,
+            "default_card": "1493990563105",
+            "description": null,
+            "email": "test_payer_12345@testuser.com",
+            "first_name": null,
+            "id": "123456789-jxOV430go9fx2e",
+            "identification": {
+                "number": null,
+                "type": null
+            },
+            "last_name": null,
+            "live_mode": false,
+            "metadata": {},
+            "phone": {
+                "area_code": null,
+                "number": null
+            }
+        }
+    ]
+}
+```

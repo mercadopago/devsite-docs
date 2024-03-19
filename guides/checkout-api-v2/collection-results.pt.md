@@ -1,6 +1,6 @@
 # Resultados da criação de uma cobrança
 
-| Estado | `status_detail` | Mensagem sugerida |
+| Estado | `status_detail` | Descrição |
 | --- | --- | --- |
 | approved | `accredited` | Pronto, seu pagamento foi aprovado! No resumo, você verá a cobrança do valor como `statement_descriptor`. |
 | in_process | `pending_contingency` | Estamos processando o pagamento.<br/><br/>Não se preocupe, em menos de 2 dias úteis informaremos por e-mail se foi creditado. |

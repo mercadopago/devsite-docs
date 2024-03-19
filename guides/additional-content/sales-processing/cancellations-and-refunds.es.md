@@ -12,7 +12,7 @@ En esta documentación, encontrarás las instrucciones y los links de las APIs n
 >
 > Importante
 >
-> Al ejecutar las API a las que se hace referencia en esta documentación, es posible que encuentres el atributo **X-Idempotency-Key**. Completarlo es importante para asegurar la ejecución y re-ejecución de solicitudes sin efectos secundarios como pagos duplicados en casos de reembolso.
+> Al ejecutar las API a las que se hace referencia en esta documentación, es posible que encuentres el atributo **X-Idempotency-Key**. Su envío es obligatorio para asegurar la ejecución y reejecución de las solicitudes sin el riesgo de realizar la misma acción más de una vez por error. Actualiza [nuestra biblioteca de SDKs](/developers/es/docs/sdks-library/landing), o genera un UUID V4 y envíalo en los _header_ de tus llamados para evitar errores.
 
 ## Cancelaciones
 
