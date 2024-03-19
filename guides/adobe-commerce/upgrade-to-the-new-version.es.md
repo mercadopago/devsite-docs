@@ -6,7 +6,7 @@ Estamos constantemente mejorando el plugin de Mercado Pago para Adobe Commerce. 
 >
 > Nota
 >
-> Esta documentación está dirigida a usuarios que ya hayan actualizado al **nuevo plugin (módulo) de Adobe Commerce**. Las versiones del plugin de Mercado Pago para Adobe Commerce anteriores a la **3.19** han sido descontinuadas. Si aún lo tiene instalado, le recomendamos que [actualice al nuevo plugin de Adobe Commerce](/developers/es/docs/adobe-commerce/upgrade-to-the-new-plugin).
+> Esta documentación está dirigida a usuarios que ya hayan actualizado al **nuevo plugin (módulo) de Adobe Commerce**. Las versiones del plugin de Mercado Pago para Adobe Commerce anteriores a la **3.19** han sido descontinuadas. Si aún lo tiene instalado, le recomendamos que [actualice al nuevo plugin.](/developers/es/docs/adobe-commerce/upgrade-to-the-new-plugin)
 
 1. En su terminal, ejecute el siguiente comando para descargar el módulo:
 
