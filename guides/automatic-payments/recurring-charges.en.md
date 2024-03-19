@@ -826,7 +826,7 @@ card_token = result["response"]
 
 print(card_token)
 ```
-```
+```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/card_tokens' \
 --header 'Authorization: Bearer {{access_token}}' \
 --header 'Content-Type: application/json' \
