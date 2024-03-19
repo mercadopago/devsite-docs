@@ -5,7 +5,6 @@ Al utilizar Checkout Bricks para procesar los pagos de tu tienda, es importante 
 En esta sección encontrarás las principales formas de gestionar los pagos recibidos.
 
 ----[mla, mlm, mpe, mlb]----
-- [Reservar fondos](/developers/es/docs/checkout-bricks/additional-content/payment-management/make-value-reserve)
 - [Capturar pago autorizado](/developers/es/docs/checkout-bricks/additional-content/payment-management/capture-authorized-payment)
 - [Cancelar reserva](/developers/es/docs/checkout-bricks/additional-content/payment-management/cancel-reserve)
 - [Reembolsos y cancelaciones](/developers/es/docs/checkout-bricks/additional-content/payment-management/cancellations-and-refunds)
