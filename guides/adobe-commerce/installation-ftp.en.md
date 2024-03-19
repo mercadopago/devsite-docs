@@ -8,4 +8,4 @@ To install the Mercado Pago module on Adobe Commerce via FTP, follow the steps b
 4. Copy the **MercadoPago** folder located in the **code / src** folder.
 5. Then, follow the instructions in [Installation via Composer](/developers/en/guides/adobe-commerce/installation/composer).
 
-And you’re done! You have already successfully installed the Mercado Pago module for Adobe Commerce.
+Done! You have already successfully installed the Mercado Pago module for Adobe Commerce.
