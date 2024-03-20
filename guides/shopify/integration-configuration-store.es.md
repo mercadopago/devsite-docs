@@ -59,7 +59,7 @@ La tienda de Shopify mostrará los campos de solicitud de identificación person
 
 ![Checkout](/images/shopify/checkout-es.png)
 
-3. En la sección "Idioma de la pantalla de pago", haz clic en **Gestionar idioma de pantalla de pago**. 
+3. Desplázate hacia abajo hasta la sección "Idioma de la pantalla de pago", haz clic en **Gestionar idioma de pantalla de pago**. 
 
 ![Checkout language](/images/shopify/checkout-language-es.png)
 
@@ -67,10 +67,9 @@ La tienda de Shopify mostrará los campos de solicitud de identificación person
 
 ![Values id](/images/shopify/values-id-es.gif)
 
-5. Reemplaza las siguientes entradas con la indicación del tipo de identificación personal que solicitará tu tienda según el país en donde opere ----[mlb]----(por ejemplo, CPF para Brasil)------------:
-
-    * **Company label**
-    * **Optional company label**
-    * **Address company blank**
+5. Reemplaza las siguientes entradas con la indicación del tipo de identificación personal que solicitará tu tienda según el país en donde opere----[mlb]----(por ejemplo, CPF para Brasil)------------:
+ * **Company label**
+ * **Optional company label**
+ * **Address company blank**
 
 6. Haz clic en **Guardar**.
