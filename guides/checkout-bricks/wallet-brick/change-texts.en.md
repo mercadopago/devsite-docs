@@ -76,9 +76,9 @@ When testing your integration, make sure that the `action`, `actionComplement`, 
 >
 > Important
 >
-> *To use the `convenience_credits` Value Prop, it is necessary for the Brick to be initialized with a preference, and the preference should have the purpose of [onboarding_credits.](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preferences)
+> *To use the `convenience_credits` Value Prop, it is necessary for the Brick to be [initialized with a preference](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering), and the preference should have the purpose of [onboarding_credits.](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preferences)
 > <br><br>
-> **It is recommended to initialize with a preference using the Value Prop `payment_methods_logos`. If the preference has only one valid payment method, it will stop displaying images and will show the text: "**Account money or installments with no card**"
+> **It is recommended to [initialize with a preference](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering) using the Value Prop `payment_methods_logos`. If the preference has only one valid payment method, it will stop displaying images and will show the text: "**Account money or installments with no card**"
 > <br><br>
 > When removing a payment method of _ticket_ ("paycash", for example) or _ATM_ ("banamex", for example) from preferences, all icons of payment points linked to these methods will not be displayed.
 
@@ -98,7 +98,7 @@ When testing your integration, make sure that the `action`, `actionComplement`, 
 >
 > Important
 >
-> *It is recommended to [initialize with a preferenc](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering) using the Value Prop `payment_methods_logos`. If the preference has only one valid payment method, it will stop displaying images and will show the text: "**With account money**".
+> *It is recommended to [initialize with a preference](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering) using the Value Prop `payment_methods_logos`. If the preference has only one valid payment method, it will stop displaying images and will show the text: "**With account money**".
 
 ------------
 
