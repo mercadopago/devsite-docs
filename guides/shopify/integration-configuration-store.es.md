@@ -10,7 +10,6 @@ Te recomendamos personalizar la información del checkout de la tienda para pode
 > Si estabas usando la app antigua de Mercado Pago ("**Mercado Pago**") y dejaste de recibir pagos en tu tienda, no te preocupes. Para volver a vender instala nuestra nueva app ("**Checkout Mercado Pago**") siguiendo los pasos a continuación.
 
 ------------
-
 ## Configura el nombre de la empresa
 
 1. Ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
@@ -68,7 +67,7 @@ La tienda de Shopify mostrará los campos de solicitud de identificación person
 
 ![Values id](/images/shopify/values-id-es.gif)
 
-5. Reemplaza las siguientes entradas con la indicación del tipo de identificación personal que solicitará tu tienda según el país en donde opere (por ejemplo, CPF para Brasil):
+5. Reemplaza las siguientes entradas con la indicación del tipo de identificación personal que solicitará tu tienda según el país en donde opere ----[mlb]----(por ejemplo, CPF para Brasil)------------:
 
     * **Company label**
     * **Optional company label**
