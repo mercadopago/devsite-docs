@@ -1,24 +1,10 @@
-# Realizar compra teste	
+# Teste de integração
 
-Existem duas formas de fazer o pagamento: como **usuário convidado**, preenchendo apenas um endereço de e-mail, e como **usuário cadastrado**, acessando uma conta do Mercado Pago com usuário e senha. 
+Realize testes antes de ir para produção para verificar se sua integração está configurada corretamente e se os pagamentos são processados sem erros.
 
-----[mlb, mlm, mpe, mco, mlu, mlc]----
+Para completar o processo de teste da sua integração Checkout Pro, você deve seguir estes passos:
 
- Neste último cenário, cartões previamente salvos e saldo disponível na conta serão habilitados como meios de pagamento.
-
-------------
-
-## Usuário convidado
-
-1. Siga o fluxo de compra e, ao abrir o checkout, insira os dados de **usuário comprador**.
-2. Selecione **Cartão** como meio de pagamento e insira os dados de um dos cartões disponíveis em nossa página de [cartões de teste](/developers/pt/docs/checkout-pro/additional-content/your-integrations/test/cards).
-3. Informe o e-mail desejado e conclua a compra.
-
-## Usuário cadastrado
-
-1. Siga o fluxo de compra e, ao abrir o checkout, insira os dados de **usuário comprador**.
-2. Acesse a conta do Mercado Pago usando o  **usuário de teste comprador**.
-3. Selecione **Cartão** como meio de pagamento.
-4. Selecione um dos cartões previamente salvos na conta ou insira os dados de um dos nossos [cartões de teste](/developers/pt/docs/checkout-pro/additional-content/your-integrations/test/cards).
-
-Ao finalizar os testes e concluir os pagamentos, é preciso ativar suas credenciais para receber pagamentos reais. Para isso, certifique-se ​​de que as credenciais usadas na sua integração são as da conta que deverá receber o dinheiro das vendas.
+1. Pré-requisitos
+2. Realizar uma compra de teste
+3. Qualidade da integração
+4. Entrar em produção
