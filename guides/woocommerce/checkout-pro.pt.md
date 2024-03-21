@@ -101,7 +101,7 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 
 Para salvar as alterações nas configurações de Checkout Pro, clique no botão **Salvar alterações**.
 
-## Configuração avançada
+## Configurações avançadas
 
 É possível personalizar as opções na seção de configurações avançadas da forma de pagamento, proporcionando uma experiência mais customizada na loja. Para acessar essas opções, clique no título **Configurações avançadas** e as opções descritas abaixo serão exibidas:
 

@@ -14,7 +14,7 @@ Você pode optar por configurar estes meios de pagamento:
 * [Checkout API](/developers/pt/docs/woocommerce/payments-configuration/checkout-api): pagamento é realizado sem sair da sua loja virtual com cartões (débito ou crédito) e meios de pagamento offline (saldo da conta do Mercado Pago ou efectivo). 
 * [Parcelamento sem cartão](/developers/pt/docs/woocommerce/payments-configuration/mercado-credito): o cliente pode optar por pagar em até 12 parcelas fixas mensais sem a necessidade de cartão, e o pagamento é creditado integralmente na conta do vendedor.
 
-![Payments methods](/images/woocommerce/cho-pro-active-configure-es.png)
+![Payments methods](/images/woocomerce/cho-pro-active-configure-es.png)
 
 ------------
 ----[mlb]---- 
@@ -22,6 +22,6 @@ Você pode optar por configurar estes meios de pagamento:
 * [Checkout Pro - Seus cartões salvos ou dinheiro no Mercado Pago](/developers/pt/docs/woocommerce/payments-configuration/checkout-pro): pagamento é realizado na página do Mercado Pago com cartões (débito ou crédito), dinheiro (saldo da conta do Mercado Pago ou boleto bancário) e transferência bancária (Pix ou PEC).
 * [Parcelamento sem cartão](/developers/pt/docs/woocommerce/payments-configuration/mercado-credito): o cliente pode optar por pagar em até 12 parcelas fixas mensais sem a necessidade de cartão, e o pagamento é creditado integralmente na conta do vendedor. 
 
-![Payments methods](/images/woocommerce/cho-pro-active-configure-pt.png)
+![Payments methods](/images/woocomerce/cho-pro-active-configure-pt.png)
 
 ------------
