@@ -1,32 +1,58 @@
 # Configuração da integração
 
-Uma vez instalado o plugin Mercado Pago com WooCommerce, é necessário configurá-lo. Para isso, siga estes passos:
-
-> Caso tenha dúvidas em relação a instalação do plugin, veja mais informações na seção de [Pré-requisitos.](/developers/pt/docs/woocommerce/previous-requirements)
+Uma vez instalado o plugin Mercado Pago para WooCommerce, é necessário configurá-lo. Para isso, siga os seguintes passos:
 
 1. Acesse sua conta [Wordpress](https://wordpress.com/).
-2. Acesse o Painel da sua conta e clique em **Plugins > Plugins instalados**.
-3. No buscador de plugins, procure por “Mercado Pago payments for WooCommerce”.
-4. Clique em **Configurar plug-in**.
+2. Acesse o painel da sua conta e clique em **Plugins > Plugins instalados**.
 
-A seguir, explicaremos como configurar cada item do plugin. Clique nos títulos para exibir as opções para concluir.
+![Add plugin](/images/woocommerce/installed-plugins-pt.png)
+
+3. Busque por **Mercado Pago** na barra de pesquisa à direita.
+
+![Plugin MP](/images/woocommerce/mercado-pago-plugin-pt.png)
+
+4. O resultado da pesquisa exibirá o plugin Mercado Pago. Clique em **Configurar plugin**.
+
+![Plugin MP](/images/woocommerce/mercado-pago-plugin-pt.png)
+
+A seguir, explicaremos como configurar cada item do plugin. 
 
 ## Integrar loja ao Mercado Pago
 
-As credenciais de teste e produção são solicitadas neste campo.
-1. Clique no botão **Verificar credenciais** para entrar no painel do Mercado Pago e ver suas credenciais. Você também pode acessar suas credenciais em [Painel do desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app). **Importante**: Observe que as credenciais de teste serão solicitadas primeiro e depois as credenciais de produção.
-2. Preencha os campos solicitados e clique em **Salvar e continuar**.
+1. Clique em **1. Integre a loja com o Mercado Pago**.
+2. No admin do Mercado Pago, acesse **[Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** e selecione a sua aplicação. Caso ainda não tenha criado uma aplicação, acesse a [documentação Painel do desenvolvedor](/developers/pt/docs/woocommerce/additional-content/your-integrations/dashboard). 
+3. Clique em **Credenciais de produção** no menu à esquerda. Copie o `access_token` e a `public_key`.
+
+![Credenciais de produção](/images/woocomerce/test-prod-credentials-api.png)
+
+4. Insira suas credenciais produtivas `access_token` e a `public_key` no campo **Credenciais de produção**.
+5. Na sua aplicação, clique em **Credenciais de teste** no menu à esquerda. Copie o `access_token` e a `public_key`.
+
+![Credenciais de teste](/images/woocomerce/test-test-credentials-api.png)
+
+6. Insira também as credenciais de teste `access_token` e a `public_key` no campo **Credenciais de teste**.
+
+![Painel](/images/woocomerce/test-woo.png)
+
+7. Clique em **Salvar e continuar**.
 
 ## Personalizar negócio
 
-Na seção **Informações sobre sua loja** você pode oferecer dados da loja para oferecer uma experiência mais completa e com mais informações aos clientes
+Na seção **2. Personalize as informações da sua loja**, você tem a possibilidade de fornecer detalhes específicos sobre a sua loja, proporcionando uma experiência mais completa aos clientes com informações adicionais.
 
-* **Nome da Loja:** Digite o nome da sua loja.
-* **Categoria da loja**: Insira a categoria dos produtos da sua loja.
-* **ID da loja**: use um número ou prefixo para identificar pedidos e pagamentos de sua loja.
-* **Integrator ID**: insira seu integrador_id como membro do **&lt;dev&gt;program** do Mercado Pago. Se você ainda não é membro, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) para mais informações.
+* **Nome da sua loja na fatura dos clientes**: Digite o nome da sua loja. Se este campo estiver vazio, a compra do cliente será identificada como "Mercado Pago" na fatura.
+* **Identificação em Atividades do Mercado Pago**: Nas Atividades do Mercado Pago, você verá o termo inserido neste campo antes do número do pedido.
+* **Categoria da loja**: Insira a categoria dos produtos da sua loja. Caso não encontre uma categoria adequada, selecione "Other categories".
 
-Clique em **Salvar e continuar**.
+![Painel](/images/woocomerce/customization-pt.png) 
 
-Em **Configurações avançadas**, configure as opções relacionadas a salvar informações em um arquivo para depurar problemas técnicos.
+### Opções avançadas
+Em **Opções avançadas de integração**, clique em **Ver opções avançadas** e configure as opções relacionadas à integração da sua loja com o Mercado Pago. 
 
+* **URL para IPN**: Insira a URL para receber notificações de pagamentos.
+* **Integrator ID**: Insira seu `integrador_id` de parceiro do **&lt;dev&gt;program** do Mercado Pago. Se você ainda não é membro do programa, acesse a [página](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) para obter mais informações.
+* **Modo debug e log**: Habilite esta opção para permitir o registro de atividades da sua loja, possibilitando um suporte mais eficiente e a melhor depuração de problemas técnicos.
+
+![Painel](/images/woocomerce/advanced-settings-pt.png) 
+
+Por fim, clique em **Salvar e continuar**.
