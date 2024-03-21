@@ -208,6 +208,59 @@ customer_response = sdk.customer().update(customer_id, customer_data)
 customer = customer_response["response"]
 
 ```
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+
+	"github.com/mercadopago/sdk-go/pkg/config"
+	"github.com/mercadopago/sdk-go/pkg/customer"
+)
+
+func main() {
+	accessToken := "{{ACCESS_TOKEN}}"
+
+	cfg, err := config.New(accessToken)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	client := customer.NewClient(cfg)
+
+	request := customer.Request{
+		Email: "user@user.com",
+		FirstName: "John",
+		LastName: "Wagner",
+		DefaultAddress: "Casa",
+		Phone: &customer.PhoneRequest{
+			AreaCode: "11",
+			Number: "001234567",
+		},
+		Identification: &customer.IdentificationRequest{
+			Type: "CPF",
+			Number: "12341234",
+		},
+		Address: &customer.AddressRequest{
+			ZipCode: "52",
+			StreetName: "Av. das Nações Unidas",
+			StreetNumber: "2",
+		},
+		Description: "Updated Description",
+		DefaultCard: "None",
+	}
+
+	resource, err := client.Update(context.Background(), "<CUSTOMER_ID>", request)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	fmt.Println(resource)
+}
+```
 ```curl
 
 curl -X PUT \
@@ -236,3 +289,43 @@ curl -X PUT \
 ```
 ]]]
 
+Ejemplo de respuesta con el envío del `customer_id`:
+
+```json
+{
+  "id": "xxxxxxxxxxxxxxxxxxxxx",
+  "email": "user@user.com",
+  "first_name": "john",
+  "last_name": "wagner",
+  "phone": {
+    "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
+    "number": 001234567
+  },
+  "identification": {
+    "type": "[FAKER][IDENTIFICATION][TYPE]",
+    "number": 12341234
+  },
+  "address": {
+    "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
+    "street_name": "[FAKER][ADDRESS][STREET_NAME]",
+    "street_number": 2
+  },
+  "description": "Informações do cliente",
+  "date_created": "2021-05-25T15:36:23.541Z",
+  "metadata": {},
+  "cards": [
+    {}
+  ],
+  "addresses": [
+    {}
+  ]
+}
+```
+
+Ejemplo de respuesta sin el parámetro `customer_id`:
+
+```json
+{
+  "message": "missing customer id"
+}
+```

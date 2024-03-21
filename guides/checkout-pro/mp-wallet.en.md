@@ -164,6 +164,42 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
+```go
+import (
+	"context"
+	"fmt"
+	"time"
+
+	"github.com/mercadopago/sdk-go/pkg/config"
+	"github.com/mercadopago/sdk-go/pkg/preference"
+)
+
+cfg, err := config.New("{{ACCESS_TOKEN}}")
+if err != nil {
+    fmt.Println(err)
+}
+
+client := preference.NewClient(cfg)
+
+request := preference.Request{	
+	Items: []preference.ItemRequest{
+		{
+			Title:       "My product",
+			UnitPrice:   100,
+			Quantity:    1,
+		},
+	},
+	Purpose: "wallet_purchase",
+}
+
+resource, err := client.Create(context.Background(), request)
+if err != nil {
+	fmt.Println(err)
+	return
+}
+
+fmt.Println(resource)
+```
 ]]]
 
 ----[mlc, mco]----

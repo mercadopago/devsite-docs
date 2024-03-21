@@ -581,6 +581,50 @@ payment = payment_response["response"]
  
 print(payment)
 ```
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+
+	"github.com/mercadopago/sdk-go/pkg/config"
+	"github.com/mercadopago/sdk-go/pkg/payment"
+)
+
+func processPayment(r *http.Request) {
+	accessToken := "{{ACCESS_TOKEN}}"
+
+	cfg, err := config.New(accessToken)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	client := payment.NewClient(cfg)
+
+	request := payment.Request{
+		TransactionAmount: r.FormValue("transactionAmount"),
+		Token: r.FormValue("token"),
+            Description: r.FormValue("description"),
+		PaymentMethodID:   r.FormValue("paymentMethodId"),
+		Payer: &payment.PayerRequest{
+			Email: r.FormValue("email"),
+			Identification: &payment.IdentificationRequest{
+				Type: r.FormValue("type"),
+				Number: r.FormValue("number"),
+			},
+		},
+	}
+
+	resource, err := client.Create(context.Background(), request)
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	fmt.Println(resource)
+}
+```
 ```curl
 ===
 Encontre o status do pagamento no campo _status_.

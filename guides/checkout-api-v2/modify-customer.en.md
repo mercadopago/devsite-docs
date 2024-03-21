@@ -208,6 +208,59 @@ customer_response = sdk.customer().update(customer_id, customer_data)
 customer = customer_response["response"]
 
 ```
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+
+	"github.com/mercadopago/sdk-go/pkg/config"
+	"github.com/mercadopago/sdk-go/pkg/customer"
+)
+
+func main() {
+	accessToken := "{{ACCESS_TOKEN}}"
+
+	cfg, err := config.New(accessToken)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	client := customer.NewClient(cfg)
+
+	request := customer.Request{
+		Email: "user@user.com",
+		FirstName: "John",
+		LastName: "Wagner",
+		DefaultAddress: "Casa",
+		Phone: &customer.PhoneRequest{
+			AreaCode: "11",
+			Number: "001234567",
+		},
+		Identification: &customer.IdentificationRequest{
+			Type: "CPF",
+			Number: "12341234",
+		},
+		Address: &customer.AddressRequest{
+			ZipCode: "52",
+			StreetName: "Av. das Nações Unidas",
+			StreetNumber: "2",
+		},
+		Description: "Updated Description",
+		DefaultCard: "None",
+	}
+
+	resource, err := client.Update(context.Background(), "<CUSTOMER_ID>", request)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	fmt.Println(resource)
+}
+```
 ```curl
 
 curl -X PUT \
@@ -275,4 +328,3 @@ Example response without the `customer_id` parameter:
 "message": "missing customer id"
 }
 ```
-
