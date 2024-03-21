@@ -1503,7 +1503,7 @@
     "/checkout/preferences/search": {
       "get": {
         "sdks":true,
-        "java": "MercadoPagoConfig.setAccessToken(\"YOUR_ACCESS_TOKEN\");\n\nPreferenceClient client = new PreferenceClient();\n\nMPSearchRequest searchRequest = MPSearchRequest.builder().limit(2).offset(0).build();\n\nMPElementsResourcesPage<PreferenceSearch> result =\nclient.search(searchRequest);\n",
+        "java": "MercadoPagoConfig.setAccessToken(\"YOUR_ACCESS_TOKEN\");\n\nPreferenceClient client = new PreferenceClient();\n\nMPSearchRequest searchRequest =\nMPSearchRequest.builder().limit(2).offset(0).build();\n\nMPElementsResourcesPage<PreferenceSearch> result =\nclient.search(searchRequest);\n",
         "php": "<?php\nMercadoPagoConfig::setAccessToken(\"ACCESS_TOKEN\");\n\n$client = new PreferenceClient();\n$search_request = new MPSearchRequest(2, 0);\n$search_result = $client->search($search_request);\n\necho implode($preference);\n?>\n",
         "js": "const client = new MercadoPago({  accessToken: config.access_token });\nconst preference = new Preference(client);\n\nconst options = {\n\t      offset: 0,\n\t      limit: 2\n};\nconst searched = await preference.search({ options });\n",
         "python": "N/A",
@@ -2007,7 +2007,7 @@
     "/checkout/preferences/{id}": {
       "get": {
         "sdks":true,
-        "java": "MercadoPagoConfig.setAccessToken(\"YOUR_ACCESS_TOKEN\");\nPreferenceClient client = new PreferenceClient();\nPreference preference = client.get(\"id\");",
+        "java": "MercadoPagoConfig.setAccessToken(\"YOUR_ACCESS_TOKEN\");\nPreferenceClient client = new PreferenceClient();\n\nPreference preference = client.get(\"id\");",
         "php": "<?php\nMercadoPagoConfig::setAccessToken(\"ACCESS_TOKEN\");\n$client = new PreferenceClient();\n$preference = $client->get(\"id\");\necho implode($preference);\n?>\n",
         "js": "const client = new MercadoPago({ accessToken: \"access_token\" });\nconst preference = new Preference(client);\nconst response = await preference.get({ preferenceId: \"id\" });",
         "python": "import mercadopago\nsdk = mercadopago.SDK(\"PROD_ACCESS_TOKEN\")\npreference_response = sdk.preference().get(\"id\")\npreference = preference_response[\"response\"]",
