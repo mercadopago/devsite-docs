@@ -14,7 +14,7 @@ A continuación explicaremos cómo: indicar las URL que serán notificadas, conf
 
 ![webhooks](/images/dashboard/webhooks-es.png)
 
-### Configurar URLs y Eventos
+### Configurar URLs y Eventos 
 
 1. Caso aún no tengas una aplicación, crea una en el [Panel del desarrollador](/developers/panel/app).
 2. Una vez creada la aplicación, navega hasta la sección de Webhooks en la página de "Detalles de la aplicación" y configura las URLs de **producción** y **prueba** a las cuales se recibirán las notificaciones.
@@ -56,7 +56,7 @@ En el momento en que la URL registrada reciba una notificación, podrás validar
 >
 > `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`
 
-A continuación, te indicamos cómo configurar esta validación.
+A continuación, te indicamos el paso a paso de cómo configurar esta validación y, al final, un **ejemplo de código completo** para facilitar su proceso de configuración.
 
 1. Extrae el _timestamp_ (`ts`) y la clave del _header_ `x-signature`. Para hacer esto, divide el contenido del _header_ por el carácter `,`, lo que resultará en una lista de elementos. El valor para el prefijo `ts` es el _timestamp_ (en milisegundos) de la notificación y `v1` es la clave encriptada. Ejemplo: `ts=1704908010` y `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
 2. Utilizando el _template_ a continuación, sustituye los parámetros con los datos recibidos en tu notificación.
@@ -97,6 +97,233 @@ cyphedSignature = binascii.hexlify(hmac_sha256(secret.encode(), signedTemplate.e
 ]]]
 
 6. Finalmente, compara la clave generada con la clave extraída del _header_, asegurándote de que tengan una correspondencia exacta. Además, puedes usar el _timestamp_ extraído del _header_ para compararlo con un timestamp generado en el momento de la recepción de la notificación, con el fin de establecer una tolerancia de demora en la recepción del mensaje.
+
+- Ejemplo de código completo:
+
+[[[
+```php
+<?php
+// Obtain the x-signature value from the header
+$xSignature = $_SERVER['HTTP_X_SIGNATURE'];
+$xRequestId = $_SERVER['HTTP_X_REQUEST_ID'];
+
+// Obtain Query params related to the request URL
+$queryParams = $_GET;
+
+// Extract the "data.id" from the query params
+$dataID = isset($queryParams['data.id']) ? $queryParams['data.id'] : '';
+
+// Separating the x-signature into parts
+$parts = explode(',', $xSignature);
+
+// Initializing variables to store ts and hash
+$ts = null;
+$hash = null;
+
+// Iterate over the values to obtain ts and v1
+foreach ($parts as $part) {
+    // Split each part into key and value
+    $keyValue = explode('=', $part, 2);
+    if (count($keyValue) == 2) {
+        $key = trim($keyValue[0]);
+        $value = trim($keyValue[1]);
+        if ($key === "ts") {
+            $ts = $value;
+        } elseif ($key === "v1") {
+            $hash = $value;
+        }
+    }
+}
+
+// Obtain the secret key for the user/application from Mercadopago developers site
+$secret = "your_secret_key_here";
+
+// Generate the manifest string
+$manifest = "id:$dataID;request-id:$xRequestId;ts:$ts;";
+
+// Create an HMAC signature defining the hash type and the key as a byte array
+$sha = hash_hmac('sha256', $manifest, $secret);
+if ($sha === $hash) {
+    // HMAC verification passed
+    echo "HMAC verification passed";
+} else {
+    // HMAC verification failed
+    echo "HMAC verification failed";
+}
+?>
+```
+```java
+// Obtain the x-signature value from the header
+const xSignature = headers['x-signature']; // Assuming headers is an object containing request headers
+const xRequestId = headers['x-request-id']; // Assuming headers is an object containing request headers
+
+// Obtain Query params related to the request URL
+const urlParams = new URLSearchParams(window.location.search);
+const dataID = urlParams.get('data.id');
+
+// Separating the x-signature into parts
+const parts = xSignature.split(',');
+
+// Initializing variables to store ts and hash
+let ts;
+let hash;
+
+// Iterate over the values to obtain ts and v1
+parts.forEach(part => {
+    // Split each part into key and value
+    const [key, value] = part.split('=');
+    if (key && value) {
+        const trimmedKey = key.trim();
+        const trimmedValue = value.trim();
+        if (trimmedKey === 'ts') {
+            ts = trimmedValue;
+        } else if (trimmedKey === 'v1') {
+            hash = trimmedValue;
+        }
+    }
+});
+
+// Obtain the secret key for the user/application from Mercadopago developers site
+const secret = 'your_secret_key_here';
+
+// Generate the manifest string
+const manifest = `id:${dataID};request-id:${xRequestId};ts:${ts};`;
+
+// Create an HMAC signature
+const hmac = crypto.createHmac('sha256', secret);
+hmac.update(manifest);
+
+// Obtain the hash result as a hexadecimal string
+const sha = hmac.digest('hex');
+
+if (sha === hash) {
+    // HMAC verification passed
+    console.log("HMAC verification passed");
+} else {
+    // HMAC verification failed
+    console.log("HMAC verification failed");
+}
+```
+```python
+import hashlib
+import hmac
+import urllib.parse
+
+# Obtain the x-signature value from the header
+xSignature = request.headers.get("x-signature")
+xRequestId = request.headers.get("x-request-id")
+
+# Obtain Query params related to the request URL
+queryParams = urllib.parse.parse_qs(request.url.query)
+
+# Extract the "data.id" from the query params
+dataID = queryParams.get("data.id", [""])[0]
+
+# Separating the x-signature into parts
+parts = xSignature.split(",")
+
+# Initializing variables to store ts and hash
+ts = None
+hash = None
+
+# Iterate over the values to obtain ts and v1
+for part in parts:
+    # Split each part into key and value
+    keyValue = part.split("=", 1)
+    if len(keyValue) == 2:
+        key = keyValue[0].strip()
+        value = keyValue[1].strip()
+        if key == "ts":
+            ts = value
+        elif key == "v1":
+            hash = value
+
+# Obtain the secret key for the user/application from Mercadopago developers site
+secret = "your_secret_key_here"
+
+# Generate the manifest string
+manifest = f"id:{dataID};request-id:{xRequestId};ts:{ts};"
+
+# Create an HMAC signature defining the hash type and the key as a byte array
+hmac_obj = hmac.new(secret.encode(), msg=manifest.encode(), digestmod=hashlib.sha256)
+
+# Obtain the hash result as a hexadecimal string
+sha = hmac_obj.hexdigest()
+if sha == hash:
+    # HMAC verification passed
+    print("HMAC verification passed")
+else:
+    # HMAC verification failed
+    print("HMAC verification failed")
+```
+```golang
+import (
+	"crypto/hmac"
+	"crypto/sha256"
+	"encoding/hex"
+	"fmt"
+	"net/http"
+	"strings"
+)
+
+func main() {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		// Obtain the x-signature value from the header
+		xSignature := r.Header.Get("x-signature")
+		xRequestId := r.Header.Get("x-request-id")
+
+		// Obtain Query params related to the request URL
+		queryParams := r.URL.Query()
+
+		// Extract the "data.id" from the query params
+		dataID := queryParams.Get("data.id")
+
+		// Separating the x-signature into parts
+		parts := strings.Split(xSignature, ",")
+
+		// Initializing variables to store ts and hash
+		var ts, hash string
+
+		// Iterate over the values to obtain ts and v1
+		for _, part := range parts {
+			// Split each part into key and value
+			keyValue := strings.SplitN(part, "=", 2)
+			if len(keyValue) == 2 {
+				key := strings.TrimSpace(keyValue[0])
+				value := strings.TrimSpace(keyValue[1])
+				if key == "ts" {
+					ts = value
+				} else if key == "v1" {
+					hash = value
+				}
+			}
+		}
+
+		// Get secret key/token for specific user/application from Mercadopago developers site
+		secret := "your_secret_key_here"
+
+		// Generate the manifest string
+		manifest := fmt.Sprintf("id:%v;request-id:%v;ts:%v;", dataID, xRequestId, ts)
+
+		// Create an HMAC signature defining the hash type and the key as a byte array
+		hmac := hmac.New(sha256.New, []byte(secret))
+		hmac.Write([]byte(manifest))
+
+		// Obtain the hash result as a hexadecimal string
+		sha := hex.EncodeToString(hmac.Sum(nil))
+
+if sha == hash {
+    // HMAC verification passed
+    fmt.Println("HMAC verification passed")
+} else {
+    // HMAC verification failed
+    fmt.Println("HMAC verification failed")
+}
+
+	})
+}
+```
+]]]
 
 ### Simular la recepción de la notificación
 
