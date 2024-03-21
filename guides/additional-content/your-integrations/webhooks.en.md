@@ -68,7 +68,7 @@ id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 In the template, values enclosed in `[]` should be replaced with the notification data, such as:
 
 - Parameters with the `_url` suffix come from query params. For example, `[data.id_url]` will be replaced by the value corresponding to the event ID (`data.id`).
-- `[timestamp]` will be the value of ts extracted from the x-signature header.
+- `[ts_header]` will be the value of ts extracted from the x-signature header.
 
 > If any of the values presented in the template above are not present in your notification, you should remove them from the template.
 
@@ -96,7 +96,7 @@ cyphedSignature = binascii.hexlify(hmac_sha256(secret.encode(), signedTemplate.e
 ```
 ]]]
 
-6. Finally, compare the generated key with the key extracted from the header, ensuring they have an exact match. Additionally, you can use the timestamp extracted from the header for comparison with a timestamp generated at the time of receiving the notification to establish a tolerance for message reception delays.
+5. Finally, compare the generated key with the key extracted from the header, ensuring they have an exact match. Additionally, you can use the timestamp extracted from the header for comparison with a timestamp generated at the time of receiving the notification to establish a tolerance for message reception delays.
 
 - Complete code example:
 

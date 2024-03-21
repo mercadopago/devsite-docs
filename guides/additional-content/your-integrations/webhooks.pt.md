@@ -69,7 +69,7 @@ id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 No _template_, os valores englobados por `[]` devem ser trocados pelos valores da notificação, como:
 
 - Parâmetros com sufixo `_url` são provenientes de _query params_. Exemplo: `[data.id_url]` será substituido pelo valor correspondente ao ID do evento (`data.id`).
-- `[timestamp]` será o valor `ts` extraído do _header_ `x-signature`.
+- `[ts_header]` será o valor `ts` extraído do _header_ `x-signature`.
 
 > Caso algum dos valores apresentados no _template_ acima não esteja presente em sua notificação, você deverá removê-los do template.
 
@@ -97,7 +97,7 @@ cyphedSignature = binascii.hexlify(hmac_sha256(secret.encode(), signedTemplate.e
 ```
 ]]]
 
-6. Por fim, compare a chave gerada com a chave extraída do cabeçalho, considerando elas devem ter uma correspondência exata. Além disso, é possível usar o _timestamp_ extraído do _header_ para comparação com um _timestamp_ gerado na hora do recebimento da notificação, a fim de estipular uma tolerância de atraso no recebimento da mensagem.
+5. Por fim, compare a chave gerada com a chave extraída do cabeçalho, considerando elas devem ter uma correspondência exata. Além disso, é possível usar o _timestamp_ extraído do _header_ para comparação com um _timestamp_ gerado na hora do recebimento da notificação, a fim de estipular uma tolerância de atraso no recebimento da mensagem.
 
 - Exemplo de código completo:
 
