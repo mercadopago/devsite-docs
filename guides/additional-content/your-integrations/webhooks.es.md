@@ -56,7 +56,7 @@ En el momento en que la URL registrada reciba una notificación, podrás validar
 >
 > `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`
 
-A continuación, te indicamos el paso a paso de cómo configurar esta validación y, al final, un **ejemplo de código completo** para facilitar su proceso de configuración.
+A continuación, te indicamos el paso a paso de cómo configurar esta validación y, al final, ofrecemos algunos SDKs con un **ejemplo de código completo** para facilitar tu proceso de configuración.
 
 1. Extrae el _timestamp_ (`ts`) y la clave del _header_ `x-signature`. Para hacer esto, divide el contenido del _header_ por el carácter `,`, lo que resultará en una lista de elementos. El valor para el prefijo `ts` es el _timestamp_ (en milisegundos) de la notificación y `v1` es la clave encriptada. Ejemplo: `ts=1704908010` y `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
 2. Utilizando el _template_ a continuación, sustituye los parámetros con los datos recibidos en tu notificación.

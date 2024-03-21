@@ -56,7 +56,7 @@ At the moment the registered URL receives a notification, you can validate wheth
 >
 > `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`
 
-See below the step-by-step to configure this validation and, at the end, a **complete code example** to make your configuration process easier.
+See below the step-by-step to configure this validation and at the end, we provide some SDKs with a **complete code example** to make your configuration process easier.
 
 1. Extract the timestamp (`ts`) and the signature from the `x-signature` header. To do this, split the content of the header by the `,` character, resulting in a list of elements. The value for the prefix `ts` is the timestamp (in milliseconds) of the notification, and `v1` is the encrypted signature. Example: `ts=1704908010` and `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
 2. Using the template below, replace the parameters with the data received in your notification.
