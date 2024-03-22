@@ -1,5 +1,7 @@
 # Declaración de Privacidad de Mercado Libre para Central de Partners
 
+_Última actualización el 22/03/2024_
+
 En Mercado Libre consideramos que la protección de los datos personales es una oportunidad para generar valor para nuestros aliados comerciales. Con el fin de llevar adelante la Central de Partners y brindarle soluciones a tu negocio, vamos a tratar algunos de tus datos personales.
 
 La Central de Partners es un espacio en donde Mercado Libre, Mercado Shops y Mercado Pago, permiten que los vendedores puedan dar a conocer a los Partners con los cuales trabajan y de tal forma, que éstos últimos estén disponibles para su contratación por otros vendedores.

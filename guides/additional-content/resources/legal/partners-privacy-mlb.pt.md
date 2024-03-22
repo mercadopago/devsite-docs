@@ -1,6 +1,6 @@
 # Declaração de Privacidade para Central de Parceiros do Mercado Livre 
 
-_Última atualização em 17/07/2023_
+_Última atualização em 22/03/2024_
 
 No Mercado Livre consideramos a proteção de dados pessoais uma oportunidade para gerar valor aos nossos parceiros de negócios. Para realizar a Central de Parceiros e fornecer soluções para o seu negócio, processaremos alguns de seus dados pessoais.
 
