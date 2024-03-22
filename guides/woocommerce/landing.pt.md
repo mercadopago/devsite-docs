@@ -41,6 +41,28 @@ bullet_section_with_media:
 ------------
 
 
+---
+bullet_section_with_media: 
+ - title: Vantagens
+ - type: normal
+ - benefit_title: Pagamentos sem necessidade de fazer o login
+ - benefit_message: Com o Checkout Pro ou o Checkout Transparente, seu cliente não precisa fazer login na conta do Mercado Pago dele para efetuar o pagamento em sua loja.
+ - benefit_title: Customização dos meios de pagamento
+ - benefit_message: É possível oferecer todos os meios de pagamento disponíveis ou apenas os que achar necessário.
+ - benefit_title: Proteção de dados com PCI-DSS (Payment Card Industry Data Security Standard)
+ - benefit_message: Estamos em conformidade com o padrão global de proteção de informações confidenciais de cartões e contamos com Secure Fields para facilitar a obtenção da certificação para sua loja.
+ - benefit_title: Garanta segurança em suas transações de alto risco com o 3DS (3-Domain Secure) 
+ - benefit_message: Com o 3DS, fazemos uma verificação de identidade discreta, a partir de um modal sem sair da loja, oferecendo benefícios como maior chance de aprovação e menor risco de fraude.
+  - benefit_title: Compatível com WooCommerce Blocks
+ - benefit_message: Nosso plugin é compatível com o WooCommerce Blocks, que permite customizar o seu e-commerce e deixar seus produtos ainda mais acessíveis para seus clientes. 
+ ----[mlm, mlb, mla]----
+ - benefit_title: Parcelamento sem cartão
+ - benefit_message: Ao ativar o Mercado Crédito no checkout, você atinge mais de 12 milhões de pessoas com crédito ativo, sem custos extras, além de obter uma taxa de aprovação de cerca de 98% nas vendas.
+
+ ------------
+ - image: /woocomerce/landing-woo-advantages.png
+---
+
 --- mini_landing_separator ---
 
 >>>> Tipos de pagamento aceitos <<<<

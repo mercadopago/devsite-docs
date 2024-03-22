@@ -22,16 +22,28 @@ A seguir, explicaremos como configurar cada item do plugin.
 
 ![Credenciais de produção](/images/woocomerce/test-prod-credentials-api.png)
 
-4. Insira suas credenciais produtivas `access_token` e a `public_key` no campo **Credenciais de produção**.
+4. Insira suas credenciais produtivas `access_token` e a `public_key` no campo **Credenciais de produção**, tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais.
 5. Na sua aplicação, clique em **Credenciais de teste** no menu à esquerda. Copie o `access_token` e a `public_key`.
 
 ![Credenciais de teste](/images/woocomerce/test-test-credentials-api.png)
 
-6. Insira também as credenciais de teste `access_token` e a `public_key` no campo **Credenciais de teste**.
+6. Insira também as credenciais de teste `access_token` e a `public_key` no campo **Credenciais de teste**, tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais.
 
 ![Painel](/images/woocomerce/test-woo.png)
 
+> WARNING
+>
+> Importante
+>
+> As credenciais são responsáveis por identificar a conta coletora dos pagamentos que você receberá em sua loja. Caso não insira suas credenciais no painel administrativo da loja, você será automaticamente redirecionado para configurar essa etapa. **Lembre-se, a ativação dos meios de pagamento só será possível após a inserção bem-sucedida das suas credenciais**.
+
 7. Clique em **Salvar e continuar**.
+
+> NOTE
+>
+> Nota
+>
+> Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/wocommerce/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de WooCommerce. Lembre-se: ao alterar a senha, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
 
 ## Personalizar negócio
 

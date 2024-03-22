@@ -1,4 +1,4 @@
-# How do I install the plugin manually?
+# Manual installation
 
 To install the plugin manually in Wordpress, follow these steps:
 

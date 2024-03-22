@@ -60,6 +60,26 @@ bullet_section_with_media:
 
 ------------
 
+---
+bullet_section_with_media: 
+ - title: Vantagens
+ - type: normal
+ - benefit_title: Proteção de dados com PCI-DSS (Payment Card Industry Data Security Standard)
+ - benefit_message: Estamos em conformidade com o padrão global de proteção de informações confidenciais de cartões e contamos com Secure Fields para facilitar a obtenção da certificação para sua loja.
+ - benefit_title: Garanta segurança em suas transações de alto risco com o 3DS (3-Domain Secure) em Checkout Pro 
+ - benefit_message: Com o 3DS, fazemos uma verificação de identidade discreta, a partir de um modal sem sair da loja, oferecendo benefícios como maior chance de aprovação e menor risco de fraude.
+ - benefit_title: Maior aprovação de pagamentos com o Checkout Pro
+ - benefit_message: Garantimos uma taxa de aprovação mais alta e menor risco de fraude quando o pagamento é feito pela conta Mercado Pago.
+ - benefit_title: Mercado Pago Ordena checkouts
+ - benefit_message: Com o aplicativo Ordena checkouts, você pode escolher a posição em que cada um dos seus provedores instalados vai aparecer para seus clientes. Ao escolher mostrar nosso checkout primeiro, você aumenta o alcance da sua loja e a taxa de aprovação das suas vendas.
+ ----[mlm]----
+ - benefit_title: Mercado Crédito
+ - benefit_message: Ao ativar o Mercado Crédito no checkout, você atinge mais de 12 milhões de pessoas com crédito ativo, sem custos extras, além de obter uma taxa de aprovação de cerca de 98% nas vendas.
+
+ ------------
+ - image: /shopify/landing-shopify-advantages.png
+---
+
 --- mini_landing_separator ---
 
 
