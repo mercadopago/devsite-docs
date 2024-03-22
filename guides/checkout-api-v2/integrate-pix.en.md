@@ -174,11 +174,7 @@ To configure payment with Pix, send a **POST** to the endpoint [/v1/payments](/d
 import { Payment, MercadoPagoConfig } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
-<<<<<<< HEAD
 const payment = new Payment(client);
-=======
-const payment = new Payment(client); //
->>>>>>> 2603d030b61eb5c673128fdd56b25356c418a2ea
 
 payment.create({
     body: { 
