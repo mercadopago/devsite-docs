@@ -9,17 +9,15 @@ Para obter uma resposta mais clara, basta enviar o header `X-Render-In-Process-R
 O header também pode ser incluído em requisições para [obter a lista de reembolsos](/developers/pt/reference/chargebacks/_payments_id_refunds/get) e para a [busca de um reembolso específico](/developers/pt/reference/chargebacks/_payments_id_refunds_refund_id/get). Nesses casos, quando for aplicável, a resposta trará o mesmo valor de status mencionado anteriormente.
 
 [[[
-```curl
-
-curl --location --request POST 'https://api.mercadopago.com/v1/payments/{payment_id}/refunds \
-
--H 'X-Render-In-Process-Refunds: true' \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
--H 'X-Idempotency-Key: {idempotency_key}' \
---data-raw '{
-    "amount": 20
-}'
+```php
+<?php
+  use MercadoPago\Client\Payment\PaymentRefundClient;
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+  
+  $client = new PaymentRefundClient();
+  $refund = $client->refund($payment_id, 20);
+  echo $refund->id;
+?>
 ```
 ```java
 
@@ -37,18 +35,6 @@ MPRequestOptions requestOptions = MPRequestOptions.builder()
 PaymentRefund refund = client.refund(paymentId, new BigDecimal(20), requestOptions);
 
 ```
-```dotnet
-
-MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
-
-PaymentRefundClient client = new PaymentRefundClient();
-
-var requestOptions = new RequestOptions();
-requestOptions.CustomHeaders.Add("X-Render-In-Process-Refunds", "true");
-
-var refund = client.Refund(paymentId, 20, requestOptions);
-
-```
 ```node
 import { MercadoPagoConfig, PaymentRefund } from 'mercadopago';
 
@@ -61,16 +47,6 @@ body: {
 amount: 100
 }
 }).then(console.log).catch(console.log);
-```
-```php
-<?php
-  use MercadoPago\Client\Payment\PaymentRefundClient;
-  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
-  
-  $client = new PaymentRefundClient();
-  $refund = $client->refund($payment_id, 20);
-  echo $refund->id;
-?>
 ```
 ```python
 
@@ -104,6 +80,61 @@ custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_
 
 refund = sdk.refund.create(payment_id, refund_data: data, request_options: custom_request_options)
 
+```
+```dotnet
+
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
+
+PaymentRefundClient client = new PaymentRefundClient();
+
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add("X-Render-In-Process-Refunds", "true");
+
+var refund = client.Refund(paymentId, 20, requestOptions);
+
+```
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+
+	"github.com/mercadopago/sdk-go/pkg/config"
+	"github.com/mercadopago/sdk-go/pkg/refund"
+)
+
+func main() {
+	accessToken := "{{ACCESS_TOKEN}}"
+
+	cfg, err := config.New(accessToken)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	client := refund.NewClient(cfg)
+
+	resource, err := client.Create(context.Background(), <PAYMENT_ID>)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	fmt.Println(resource)
+}
+```
+```curl
+
+curl --location --request POST 'https://api.mercadopago.com/v1/payments/{payment_id}/refunds \
+
+-H 'X-Render-In-Process-Refunds: true' \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+-H 'X-Idempotency-Key: {idempotency_key}' \
+--data-raw '{
+    "amount": 20
+}'
 ```
 ]]]
 
