@@ -4,7 +4,13 @@ When using Checkout Bricks to process your store's payments, it is important to 
 
 In this section you will find the main ways of managing incoming payments.
 
-- [Reserve Values](/developers/en/docs/checkout-bricks/additional-content/payment-management/make-value-reserve)
+----[mla, mlm, mpe, mlb]----
 - [Capture authorized payment](/developers/en/docs/checkout-bricks/additional-content/payment-management/capture-authorized-payment)
 - [Cancel Reserve](/developers/en/docs/checkout-bricks/additional-content/payment-management/cancel-reserve)
-- [Refunds and Cancellations](/developers/en/docs/checkout-bricks/additional-content/payment-management/cancellations-and-refunds)
+- [Refunds and cancellations](/developers/en/docs/checkout-bricks/additional-content/payment-management/cancellations-and-refunds)
+
+------------
+----[mlu, mlc, mco]----
+- [Refunds and cancellations](/developers/en/docs/checkout-bricks/additional-content/payment-management/cancellations-and-refunds)
+
+------------
