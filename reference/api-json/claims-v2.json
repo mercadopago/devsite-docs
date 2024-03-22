@@ -834,7 +834,7 @@
           }
         }
       },
-      "/post-purchase/v1/claims/{claim_id}/search": {
+      "/post-purchase/v1/claims/search": {
         "get": {
           "tags": [
             "checkout-pro"
@@ -2121,7 +2121,7 @@
           }
         }
       },
-      "/post-purchase/v1/claims/{claim_id}/actions/messages": {
+      "/post-purchase/v1/claims/{claim_id}/actions/send-message": {
         "post": {
           "tags": [
             "checkout-pro"
