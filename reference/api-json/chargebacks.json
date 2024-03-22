@@ -262,7 +262,7 @@
         "php": "<?php\n use MercadoPago\\Client\\Payment\\PaymentRefundClient; MercadoPagoConfig::setAccessToken(\n\"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\"\n);\n  $client = new PaymentRefundClient();\n $refund_result = $client->list(18552260055);\n ?>",
         "js": "const client = new MercadoPago({ accessToken: '<ACCESS_TOKEN>', options: { timeout: 5000 } });\nconst refund = new PaymentRefund(client);\nrefund.list({ payment_id: '18552260055' }).then(console.log).catch(console.log);",
         "python": "sdk = mercadopago.SDK('TEST-703********22370-01********2405a0c3********7232f7a5********0082888')\nsdk.refund().list_all('18552260055')",
-        "csharp": "MercadoPagoConfig.AccessToken = \"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\";\nPaymentRefundClient client = new PaymentRefundClient();\nResourcesList<PaymentRefund> refunds = await client.ListAsync(18552260055);",
+        "csharp": "MercadoPagoConfig.AccessToken = \"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\";\n\nPaymentRefundClient client = new PaymentRefundClient();\nResourcesList<PaymentRefund> refunds = await client.ListAsync(18552260055);",
         "ruby": "sdk = Mercadopago::SDK.new('TEST-703********22370-01********2405a0c3********7232f7a5********0082888');\n refund = sdk.refund.list(18552260055, refund_data: data)\n",
         "tags": [
           "checkout-api"
