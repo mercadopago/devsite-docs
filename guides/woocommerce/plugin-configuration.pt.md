@@ -17,6 +17,9 @@ A seguir, explicaremos como configurar cada item do plugin.
 ## Integrar loja ao Mercado Pago
 
 1. Clique em **1. Integre a loja com o Mercado Pago**.
+
+![Integre](/images/woocomerce/woo-store-integration.png)
+
 2. No admin do Mercado Pago, acesse **[Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** e selecione a sua aplicação. Caso ainda não tenha criado uma aplicação, acesse a [documentação Painel do desenvolvedor](/developers/pt/docs/woocommerce/additional-content/your-integrations/dashboard) e saiba como criá-la. 
 3. Clique em **Credenciais de produção** no menu à esquerda. Copie o `access_token` e a `public_key`.
 

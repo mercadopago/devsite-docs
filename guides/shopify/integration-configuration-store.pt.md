@@ -48,8 +48,6 @@ Recomendamos personalizar as informações do checkout da loja para garantir uma
 
 5. Clique no botão **Salvar**.
 
-![configurar idioma pt](/images/shopify/cambiar-idioma-PT.png)
-
 ## Ajustar valores de identificação pessoal do comprador
 
 A loja Shopify exibirá os campos de solicitação de identificação pessoal do comprador com o termo "Company". Para alterar isso para a identificação solicitada pelo país em que a loja opera, siga estes passos:
@@ -75,6 +73,5 @@ A loja Shopify exibirá os campos de solicitação de identificação pessoal do
 - **Company label**
 - **Optional company label**
 - **Address company blank**
-- **Address – Company**
 
 6. Clique em **Salvar**.
