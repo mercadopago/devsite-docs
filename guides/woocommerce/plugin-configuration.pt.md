@@ -10,7 +10,7 @@ Uma vez instalado o plugin Mercado Pago para WooCommerce, é necessário configu
 3. Busque por **Mercado Pago** na barra de pesquisa à direita.
 4. O resultado da pesquisa exibirá o plugin Mercado Pago. Clique em **Configurar plugin**.
 
-![Plugin MP](/images/woocomerce/mercado-pago-plugin-pt.png)
+![Plugin MP](/images/woocomerce/mp-plugin-pt.png)
 
 A seguir, explicaremos como configurar cada item do plugin. 
 
@@ -43,7 +43,7 @@ A seguir, explicaremos como configurar cada item do plugin.
 >
 > Nota
 >
-> Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/wocommerce/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de WooCommerce. Lembre-se: ao alterar a senha, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
+> Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/woocommerce/additional-content/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de WooCommerce. Lembre-se: ao alterar a senha, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
 
 ## Personalizar negócio
 
