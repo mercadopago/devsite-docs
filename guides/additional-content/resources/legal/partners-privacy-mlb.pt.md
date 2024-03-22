@@ -18,6 +18,7 @@ Os dados pessoais são registrados em um banco de dados pelo qual o Mercado Livr
 
 Os dados pessoais que coletamos para os fins explicados nesta Declaração são:
 
+* Foto de perfil
 * Nome comercial
 * E-mail de contato comercial
 * Telefone de contato comercial

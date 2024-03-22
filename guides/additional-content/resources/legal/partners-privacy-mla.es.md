@@ -16,6 +16,7 @@ Los datos personales se registran en una base de datos de la que Mercado Libre e
 
 Los datos personales que recolectamos para los propósitos que se explican en esta Declaración son:
 
+* Foto de perfil
 * Nombre comercial  
 * Mail de contacto comercial
 * Teléfono de contacto comercial
