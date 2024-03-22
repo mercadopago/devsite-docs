@@ -38,6 +38,7 @@
                       "properties": {
                         "id": {
                           "type": "string",
+                          "example": "Sound system",
                           "description": {
                             "en": "Item ID.",
                             "pt": "Identificador do item",
@@ -94,7 +95,7 @@
                         },
                         "currency_id": {
                           "type": "string",
-                          "example": "U$",
+                          "example": "BRL",
                           "description": {
                             "en": "Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.",
                             "pt": "ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD.",
@@ -182,6 +183,7 @@
                     "properties": {
                       "name": {
                         "type": "string",
+                        "example": "John",
                         "description": {
                           "en": "Buyer name.",
                           "pt": "Nome do comprador",
@@ -190,6 +192,7 @@
                       },
                       "surname": {
                         "type": "string",
+                        "example": "Doe",
                         "description": {
                           "en": "Buyer last name.",
                           "pt": "Apelido do comprador",
@@ -198,6 +201,7 @@
                       },
                       "email": {
                         "type": "string",
+                        "example": "john@doe.com",
                         "description": {
                           "en": "Buyer e-mail address.",
                           "pt": "Endereço de e-mail do comprador",
@@ -214,6 +218,7 @@
                         "properties": {
                           "area_code": {
                             "type": "string",
+                            "example": "11",
                             "description": {
                               "en": "Area code.",
                               "pt": "Código de área",
@@ -222,6 +227,7 @@
                           },
                           "number": {
                             "type": "number",
+                            "example": 988888888,
                             "description": {
                               "en": "Number.",
                               "pt": "Número",
@@ -240,6 +246,7 @@
                         "properties": {
                           "type": {
                             "type": "string",
+                            "example": "CPF",
                             "description": {
                               "en": "Identification Type.",
                               "pt": "Tipo de identificação",
@@ -248,6 +255,7 @@
                           },
                           "number": {
                             "type": "string",
+                            "example": "19119119100",
                             "description": {
                               "en": "Number.",
                               "pt": "Número",
@@ -266,6 +274,7 @@
                         "properties": {
                           "zip_code": {
                             "type": "string",
+                            "example": "06233200",
                             "description": {
                               "en": "Zip code.",
                               "pt": "Código postal",
@@ -274,6 +283,7 @@
                           },
                           "street_name": {
                             "type": "string",
+                            "example": "Example Street",
                             "description": {
                               "en": "Street name.",
                               "pt": "Rua",
@@ -282,9 +292,10 @@
                           },
                           "street_number": {
                             "type": "number",
+                            "example": 123,
                             "description": {
                               "en": "Street number.",
-                              "pt": "O Número",
+                              "pt": "Número",
                               "es": "Número"
                             }
                           }
@@ -292,6 +303,7 @@
                       },
                       "date_created": {
                         "type": "string",
+                        "example": "2024-04-01T00:00:00Z",
                         "format": "date",
                         "description": {
                           "en": "Registration date.",
@@ -321,6 +333,7 @@
                           "properties": {
                             "id": {
                               "type": "string",
+                              "example": "master",                              
                               "description": {
                                 "en": "Payment method ID.",
                                 "pt": "Identificador do método de pagamento",
@@ -342,6 +355,7 @@
                           "properties": {
                             "id": {
                               "type": "string",
+                              "example": "ticket",                              
                               "description": {
                                 "en": "Payment method data_type ID.",
                                 "pt": "Identificador de data_type do meio de pagamento",
@@ -353,6 +367,7 @@
                       },
                       "default_payment_method_id": {
                         "type": "string",
+                        "example": "amex",
                         "description": {
                           "en": "Suggested payment method. The user will initiate the checkout this this payment method already selected. It is considered suggested because Checkouts follow different logics in order to select the best payment method for a specific transaction, and this property is the option with the least relevance.",
                           "pt": "Forma de pagamento sugerida. O usuário iniciará o pagamento com esta forma de pagamento já selecionada. Considera-se sugerido porque os Checkouts seguem lógicas diferentes para selecionar o melhor meio de pagamento para uma determinada transação, sendo esta propriedade a opção menos relevante.",
@@ -361,18 +376,20 @@
                       },
                       "installments": {
                         "type": "number",
+                        "example": 10,
                         "description": {
                           "en": "Maximum number of credit card installments to be accepted.",
-                          "pt": "Número Máximo de cotas",
+                          "pt": "Número Máximo de parcelas",
                           "es": "Máximo número de cuotas"
                         }
                       },
                       "default_installments": {
                         "type": "number",
+                        "example": 5,
                         "description": {
                           "en": "Prefered number of credit card installments.",
-                          "pt": "Preferência de cotas",
-                          "es": "Preferencia de cuotas"
+                          "pt": "Número padrão de parcelas oferecidas",
+                          "es": "Número estándar de cuotas ofrecidas"
                         }
                       }
                     }
@@ -390,6 +407,7 @@
                       },
                       "local_pickup": {
                         "type": "boolean",
+                        "example": true,
                         "description": {
                           "en": "The payer has the option to pick up the shipment in your store (mode:me2 only).",
                           "pt": "Preferência de remoção de pacotes em agência(mode:me2 somente)",
@@ -398,6 +416,7 @@
                       },
                       "dimensions": {
                         "type": "string",
+                        "example": "32 x 25 x 16",
                         "description": {
                           "en": "Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)",
                           "pt": "Tamanho do pacote em cm x cm x cm, gr (mode:me2 somente)",
@@ -435,6 +454,7 @@
                       },
                       "cost": {
                         "type": "number",
+                        "example": 20,
                         "description": {
                           "en": "Shipment cost (mode:custom only).",
                           "pt": "Custo do transporte (mode:custom somente)",
@@ -459,6 +479,7 @@
                         "properties": {
                           "zip_code": {
                             "type": "string",
+                            "example": "72549555",
                             "description": {
                               "en": "Zip code.",
                               "pt": "Código postal.",
@@ -467,6 +488,7 @@
                           },
                           "street_name": {
                             "type": "string",
+                            "example": "Street address test",
                             "description": {
                               "en": "Street name.",
                               "pt": "Rua.",
@@ -475,6 +497,7 @@
                           },
                           "city_name": {
                             "type": "string",
+                            "example": "São Paulo",
                             "description": {
                               "en": "City name.",
                               "pt": "Cidade.",
@@ -483,6 +506,7 @@
                           },
                           "state_name": {
                             "type": "string",
+                            "example": "São Paulo",
                             "description": {
                               "en": "State name.",
                               "pt": "Estado.",
@@ -491,6 +515,7 @@
                           },
                           "street_number": {
                             "type": "number",
+                            "example": 100,
                             "description": {
                               "en": "Street number.",
                               "pt": "O Número.",
@@ -515,6 +540,7 @@
                           },
                           "country_name": {
                             "type": "string",
+                            "example": "Brazil",
                             "description": {
                               "en": "Country name.",
                               "pt": "Nome do país.",
@@ -535,6 +561,7 @@
                     "properties": {
                       "success": {
                         "type": "string",
+                        "example": "http://test.com/success",
                         "description": {
                           "en": "Approved payment URL.",
                           "pt": "URL de retorno ante o pagamento aprovado",
@@ -543,6 +570,7 @@
                       },
                       "pending": {
                         "type": "string",
+                        "example": "http://test.com/pending",
                         "description": {
                           "en": "Pending or in process payment URL.",
                           "pt": "URL de retorno diante de pagamento pendente ou em processo.",
@@ -551,6 +579,7 @@
                       },
                       "failure": {
                         "type": "string",
+                        "example": "http://test.com/failure",
                         "description": {
                           "en": "Canceled payment URL.",
                           "pt": "URL de retorno ante o pagamento cancelado",
@@ -561,6 +590,7 @@
                   },
                   "notification_url": {
                     "type": "string",
+                    "example": "http://notificationurl.com",
                     "description": {
                       "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
                       "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
@@ -577,6 +607,7 @@
                   },
                   "additional_info": {
                     "type": "string",
+                    "example": "Discount 12.00",
                     "description": {
                       "en": "Additional information.",
                       "pt": "Informações adicionais",
@@ -588,6 +619,7 @@
                   },
                   "external_reference": {
                     "type": "string",
+                    "example": "1643827245",
                     "description": {
                       "en": "Reference you can synchronize with your payment system.",
                       "pt": "Referência que pode sincronizar com seu sistema de pagamentos",
@@ -596,6 +628,7 @@
                   },
                   "expires": {
                     "type": "boolean",
+                    "example": true,
                     "description": {
                       "en": "Boolean value that determines if a preference expires.",
                       "pt": "Preferência que determina se uma preferência expira",
@@ -604,6 +637,7 @@
                   },
                   "expiration_date_from": {
                     "type": "string",
+                    "example": "2024-05-01T00:00:00Z",
                     "format": "date",
                     "description": {
                       "en": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
@@ -613,6 +647,7 @@
                   },
                   "expiration_date_to": {
                     "type": "string",
+                    "example": "2024-06-01T00:00:00Z",
                     "format": "date",
                     "description": {
                       "en": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
@@ -622,6 +657,7 @@
                   },
                   "marketplace": {
                     "type": "string",
+                    "example": "NONE",
                     "description": {
                       "en": "Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. As the marketplace is associated to the Application ID, the marketplace credentials must correspond to the credentials used to create the preference. Using the wrong credentials will result in an error.",
                       "pt": "Origem do pagamento. Este é um campo alfanumérico cujo valor padrão é NONE. Caso o coletor tenha seu próprio marketplace, é para onde são enviadas as credenciais para identificá-lo. Como o marketplace está associado ao Application ID, as credenciais do marketplace devem corresponder às credenciais usadas para criar a preferência. Usar as credenciais erradas resultará em um erro.",
@@ -630,6 +666,7 @@
                   },
                   "marketplace_fee": {
                     "type": "number",
+                    "example": 0,
                     "description": {
                       "en": "Marketplace`s fee charged by application owner. It is a fixed amount and its default value is 0 in local currency. This property can only be sent if a valid marketplace has been defined as well, otherwise the request will fail.",
                       "pt": "Taxa de Marketplace cobrada pelo proprietário da aplicação. É um valor fixo e seu valor padrão é 0 em moeda local. Esta propriedade só pode ser apresentada se também tiver sido definido um marketplace válido e, caso contrário, a solicitação falhará.",
@@ -646,6 +683,7 @@
                     "properties": {
                       "id": {
                         "type": "number",
+                        "example": 1,
                         "description": {
                           "en": "Differential pricing ID.",
                           "pt": "Identificador de preço diferenciado",
@@ -666,9 +704,10 @@
                       "properties": {
                         "type": {
                           "type": "string",
+                          "example": "google_ad",
                           "description": {
                             "en": "Track type. Specifies which tool the values belong to.",
-                            "pt": "Tipo da track. Especifique a herramienta pertenecen los valores",
+                            "pt": "Tipo da track. Especifica a que ferramenta pertencem os determinados valores",
                             "es": "Tipo del track. Especifica a qué herramienta pertenecen los valores"
                           },
                           "enum": [
@@ -692,6 +731,7 @@
                         },
                         "values": {
                           "type": "string",
+                          "example": "conversion_id",
                           "description": {
                             "en": "Configuration values according the track type.",
                             "pt": "Valores de configuração de acordo com o tipo de track",
@@ -1017,6 +1057,7 @@
                       "properties": {
                         "success": {
                           "type": "string",
+                          "example": "http://test.com/success",
                           "description": {
                             "en": "Approved payment URL.",
                             "pt": "URL de retorno ante o pagamento aprovado",
@@ -1025,6 +1066,7 @@
                         },
                         "pending": {
                           "type": "string",
+                          "example": "http://test.com/pending",
                           "description": {
                             "en": "Pending or in process payment URL.",
                             "pt": "URL de retorno diante de pagamento pendente ou em processo.",
@@ -1033,6 +1075,7 @@
                         },
                         "failure": {
                           "type": "string",
+                          "example": "http://test.com/failure",
                           "description": {
                             "en": "Canceled payment URL.",
                             "pt": "URL de retorno ante o pagamento cancelado",
@@ -1236,6 +1279,7 @@
                     },
                     "notification_url": {
                       "type": "string",
+                      "example": "http://notificationurl.com",
                       "format": "nullable",
                       "description": {
                         "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
