@@ -1,4 +1,4 @@
-# Procesamiento de ventas 
+# Cómo interpretar la información de ventas
 
 Completados todos los pasos, tus clientes podrán realizar compras en tu tienda. Al realizar una transacción, es común que algunos mensajes regresen con información específica sobre la compra. 
 

@@ -29,7 +29,7 @@ Este meio de pagamento irá adicionar o----[mlb]---- Checkout Transparente -----
 ------------
 Para salvar as alterações nas configurações, clique no botão **Concluir configuração**.
 
-### Configuração avançada
+### Configurações avançadas
 
 É possível personalizar as opções na seção de configurações avançadas da forma de pagamento, proporcionando uma experiência mais customizada na loja. Para acessar essas opções, clique no título **Configurações avançadas** e as opções descritas abaixo serão exibidas:
 
@@ -37,7 +37,7 @@ Para salvar as alterações nas configurações, clique no botão **Concluir con
 - **Desconto nos checkouts Mercado Pago**: insira um valor percentual de desconto para os clientes que pagarem por esta forma de pagamento. Para ativá-lo, insira um percentual de desconto e marque a opção "Ativar e mostrar esta informação no checkout do Mercado Pago".
 - **Comissão nos checkouts Mercado Pago**: insira um valor percentual adicional que quiser cobrar como comissão aos clientes que optarem por esta forma de pagamento. Para ativá-lo, insira um percentual de desconto e marque a opção "Ativar e mostrar esta informação no checkout do Mercado Pago".
 ----[mlb]----
-![Advanced settings](/images/woocomerce/advanced-settings-boleto-pt-br.png)
+![Advanced settings](/images/woocomerce/advanced-settings-boleto-pt-br.gif)
 
 ------------
 Para salvar as alterações nas configurações, clique no botão **Concluir configuração**.

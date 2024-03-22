@@ -34,7 +34,7 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 bullet_section_with_media: 
  - title: Receba pagamentos com o Checkout Pro
  - type: normal
- - message: Integre o Mercado Pago no seu Shopify e redirecione os seus compradores para uma página do Mercado Pago para finalizar o pagamento.
+ - message: Integre o Mercado Pago na Shopify e redirecione seus compradores diretamente para a página do Mercado Pago, permitindo que concluam o pagamento de maneira simples e segura. O Checkout Pro oferece um design pré-configurado para facilitar a experiência de pagamento.
  - image: /shopify/mini-landing-1.png
 ---
 
@@ -42,7 +42,7 @@ bullet_section_with_media:
 bullet_section_with_media: 
  - title: Personalize os pagamentos com o Checkout Transparente
  - type: reversed
- - message: Integre o nosso Checkout Transparente e permita que o comprador realize todo o processo de pagamento no ambiente da sua loja.
+ - message: Integre o nosso Checkout Transparente e permita que o comprador realize todo o processo de pagamento no ambiente da sua loja. Você controla toda a experiência, de configurações básicas a avançadas. Além disso, reduz o abandono do carrinho, pois o processo de pagamento acontece em uma única tela, sem redirecionamentos, impulsionando suas vendas.
  - image: /shopify/mini-landing-4.png
 ---
 

@@ -17,7 +17,7 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 bullet_section_with_media: 
  - title: Receba pagamentos com o Checkout Pro
  - type: normal
- - message: Integre o Mercado Pago em uma loja Wordpress através do plugin WooCommerce e redirecione seus compradores para uma página do Mercado Pago para concluir o pagamento.
+ - message: Integre o Mercado Pago à sua loja WordPress utilizando o plugin WooCommerce e redirecione seus compradores diretamente para a página do Mercado Pago, permitindo que concluam o pagamento de maneira simples e segura. O Checkout Pro oferece um design pré-configurado para facilitar a experiência de pagamento.
  - image: /shopify/mini-landing-1.png
 ---
 
@@ -25,7 +25,7 @@ bullet_section_with_media:
 ---
 bullet_section_with_media: 
  - title: Personalize pagamentos com o Checkout Transparente
- - message: Integre nosso Checkout Transparente e faça com que o comprador realize todo o processo de pagamento dentro do ambiente da sua loja.
+ - message: Integre nosso Checkout Transparente e faça com que o comprador realize todo o processo de pagamento dentro do ambiente da sua loja. Você controla toda a experiência, de configurações básicas a avançadas. Além disso, reduz o abandono do carrinho, pois o processo de pagamento acontece em uma única tela, sem redirecionamentos, impulsionando suas vendas.
  - image: /shopify/mini-landing-4.png
 ---
 ------------
@@ -45,7 +45,7 @@ bullet_section_with_media:
 bullet_section_with_media: 
  - title: Vantagens
  - type: normal
- - benefit_title: Pagamentos sem necessidade de fazer o login
+ - benefit_title: Pagamentos sem necessidade de fazer login
  - benefit_message: Com o Checkout Pro ou o Checkout Transparente, seu cliente não precisa fazer login na conta do Mercado Pago dele para efetuar o pagamento em sua loja.
  - benefit_title: Customização dos meios de pagamento
  - benefit_message: É possível oferecer todos os meios de pagamento disponíveis ou apenas os que achar necessário.
@@ -53,7 +53,7 @@ bullet_section_with_media:
  - benefit_message: Estamos em conformidade com o padrão global de proteção de informações confidenciais de cartões e contamos com Secure Fields para facilitar a obtenção da certificação para sua loja.
  - benefit_title: Garanta segurança em suas transações de alto risco com o 3DS (3-Domain Secure) 
  - benefit_message: Com o 3DS, fazemos uma verificação de identidade discreta, a partir de um modal sem sair da loja, oferecendo benefícios como maior chance de aprovação e menor risco de fraude.
-  - benefit_title: Compatível com WooCommerce Blocks
+  - benefit_title: Compatível com o WooCommerce Blocks
  - benefit_message: Nosso plugin é compatível com o WooCommerce Blocks, que permite customizar o seu e-commerce e deixar seus produtos ainda mais acessíveis para seus clientes. 
  ----[mlm, mlb, mla]----
  - benefit_title: Parcelamento sem cartão

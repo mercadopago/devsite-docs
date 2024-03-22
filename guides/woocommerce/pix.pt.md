@@ -8,7 +8,7 @@ Com o Checkout Transparente, ofereça pagamentos com Pix diretamente em sua loja
 >
 > Importante
 >
-> Para oferecer pagamentos com Pix é preciso garantir que as chaves Pix tenham sido criadas. Caso ainda não as tenha criado, assista o [vídeo](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
+> Para habilitar pagamentos com Pix, é preciso garantir que as chaves Pix tenham sido criadas. Se ainda não as criou, recomendamos assistir ao [vídeo tutorial](https://www.youtube.com/watch?v=60tApKYVnkA) para um guia passo a passo..
 
 1. Para ativar o Checkout, vá até as configurações do painel de WooCommerce (**WooCommerce > Mercado Pago**).
 2. Clique em **3. Ative e configure os meios de pagamento**.
@@ -28,7 +28,7 @@ Com o Checkout Transparente, ofereça pagamentos com Pix diretamente em sua loja
 
 Para salvar as alterações nas configurações, clique no botão **Concluir configuração**.
 
-### Configuração avançada
+### Configurações avançadas
 
 É possível personalizar as opções na seção de configurações avançadas da forma de pagamento, proporcionando uma experiência mais customizada na loja. Para acessar essas opções, clique no título **Configurações avançadas** e as opções descritas abaixo serão exibidas:
 

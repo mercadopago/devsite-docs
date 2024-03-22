@@ -10,7 +10,7 @@ Uma vez instalado o plugin Mercado Pago para WooCommerce, é necessário configu
 3. Busque por **Mercado Pago** na barra de pesquisa à direita.
 4. O resultado da pesquisa exibirá o plugin Mercado Pago. Clique em **Configurar plugin**.
 
-![Plugin MP](/images/woocommerce/mercado-pago-plugin-pt.png)
+![Plugin MP](/images/woocomerce/mercado-pago-plugin-pt.png)
 
 A seguir, explicaremos como configurar cada item do plugin. 
 

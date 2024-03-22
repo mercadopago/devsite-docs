@@ -35,7 +35,7 @@ Essa forma de pagamento adicionará o Checkout API, a forma de pagamento que per
 
 Para salvar as alterações nas configurações, clique no botão **Concluir configuração**.
 
-### Configuração avançada
+### Configurações avançadas
 
 É possível personalizar as opções na seção de configurações avançadas da forma de pagamento, proporcionando uma experiência mais customizada na loja. Para acessar essas opções, clique no título **Configurações avançadas** e as opções descritas abaixo serão exibidas:
 
