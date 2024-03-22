@@ -2,7 +2,7 @@
 
 # Boleto bancário
 
-Com o Checkout Transparente do Mercado Pago, é possível oferecer, além de cartão e  Pix, **pagamentos através de boleto bancário**. Além disso, você pode **criar boletos bancários com descontos, multas e acréscimos** para pagamentos antecipados ou fora do prazo estipulado na data de vencimento.
+Com o Checkout Transparente do Mercado Pago, é possível oferecer, além de cartão e  Pix, **pagamentos através de boleto bancário**. Além disso, você pode **criar boletos bancários com descontos, multas e acréscimos** para pagamentos antecipados ou fora do prazo estipulado na data de vencimento. 
 
 Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um **GET** com seu _Access token_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição. Se preferir, faça a requisição utilizando os SDKs abaixo:
 

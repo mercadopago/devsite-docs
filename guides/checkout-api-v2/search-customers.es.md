@@ -65,6 +65,45 @@ customers_response = sdk.customer().search(filters=filters)
 customers = customers_response["response"]
 
 ```
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+
+	"github.com/mercadopago/sdk-go/pkg/config"
+	"github.com/mercadopago/sdk-go/pkg/customer"
+)
+
+func main() {
+	accessToken := "{{ACCESS_TOKEN}}"
+
+	cfg, err := config.New(accessToken)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	client := customer.NewClient(cfg)
+
+	request := customer.SearchRequest{
+		Filters: map[string]string{
+			"email": "{{EMAIL}}",
+		},
+	}
+
+	resource, err := client.Search(context.Background(), request)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	for _, v := range resources.Results {
+		fmt.Println(v)
+	}
+}
+```
 ```curl
 
 curl -X GET \
