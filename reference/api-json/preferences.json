@@ -2054,7 +2054,7 @@
         "java": "MercadoPagoConfig.setAccessToken(\"YOUR_ACCESS_TOKEN\");\nPreferenceClient client = new PreferenceClient();\n\nPreference preference = client.get(\"id\");",
         "php": "<?php\nMercadoPagoConfig::setAccessToken(\"ACCESS_TOKEN\");\n$client = new PreferenceClient();\n$preference = $client->get(\"id\");\necho implode($preference);\n?>\n",
         "js": "const client = new MercadoPago({ accessToken: \"access_token\" });\nconst preference = new Preference(client);\nconst response = await preference.get({ preferenceId: \"id\" });",
-        "python": "import mercadopago\nsdk = mercadopago.SDK(\"PROD_ACCESS_TOKEN\")\npreference_response = sdk.preference().get(\"id\")\npreference = preference_response[\"response\"]",
+        "python": "import mercadopago\n\nsdk = mercadopago.SDK(\"PROD_ACCESS_TOKEN\")\n\npreference_response = sdk.preference().get(\"id\")\npreference = preference_response[\"response\"]",
         "csharp": "MercadoPagoConfig.AccessToken = \"PROD_ACCESS_TOKEN\";\nPreferenceClient client = new PreferenceClient();\nPreference preference = await client.GetAsync(\"id\");",
         "ruby": "sdk = MercadoPago::Client.new('ACCES_TOKEN');\npreference_response = sdk.preference.get('id');\npreference = preference_response[:response];",
         "tags": [
