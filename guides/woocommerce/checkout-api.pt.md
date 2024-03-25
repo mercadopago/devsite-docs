@@ -15,13 +15,13 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 
 * [Cartões](/developers/pt/docs/woocommerce/payments-configuration/checkout-api/cards): cartões de crédito e débito.
 ----[mlb]----
-* [Meios de pagamento off-line - Boleto e lotérica](/developers/pt/docs/woocommerce/payments-configuration/checkout-api/offline-payments): pagamentos em dinheiro (saldo no Mercado Pago ou boleto bancário) e pagamento na lotérica sem boleto (com CPF).
+* [Meios de pagamento offline - Boleto e lotérica](/developers/pt/docs/woocommerce/payments-configuration/checkout-api/offline-payments): pagamentos em dinheiro (saldo no Mercado Pago ou boleto bancário) e pagamento na lotérica sem boleto (com CPF).
 * [Pix](/developers/pt/docs/woocommerce/payments-configuration/checkout-api/pix): transferência bancária disponível 24h por dia. A opção de pagamento com Pix só será exibida se houver uma [chave Pix cadastrada](/developers/pt/guides/checkout-api/receiving-payment-by-pix) no Mercado Pago.
 
 ![Active and configure](/images/woocomerce/cho-pro-active-configure-pt.png)
 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
-* [Meios de pagamento off-line](/developers/pt/docs/woocommerce/payments-configuration/checkout-api/offline-payments): pagamentos em dinheiro (saldo no Mercado Pago ou efectivo).
+* [Meios de pagamento offline - Efectivo](/developers/pt/docs/woocommerce/payments-configuration/checkout-api/offline-payments): pagamentos em dinheiro (saldo no Mercado Pago ou efectivo).
 
 ------------

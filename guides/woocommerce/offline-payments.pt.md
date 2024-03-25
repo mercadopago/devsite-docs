@@ -1,4 +1,4 @@
-# Meios de pagamento off-line
+# ----[mlb]---- Boleto e lotérica ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Efectivo------------
 
 Este meio de pagamento irá adicionar o----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API------------, permitindo assim a oferta de opções de pagamento em dinheiro utilizando métodos offline através do Mercado Pago.
 
