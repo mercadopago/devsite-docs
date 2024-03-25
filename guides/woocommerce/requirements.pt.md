@@ -2,6 +2,12 @@
 
 Para usar a integração do Mercado Pago com WooCommerce em um site WordPress, é preciso atender aos requisitos abaixo.
 
+> NOTE
+>
+> Nota
+>
+> Acesse a nossa [página de Primeiros passos](/developers/pt/docs/getting-started) para encontrar as informações necessárias para começar a integrar as soluções Mercado Pago.
+
 | Requisitos | Descrição | Especificações |
 |---|---|---|
 | Ambiente | Serviço de hospedagem | MySQL, PHP ou serviço equivalente que admite a instalação do WordPress. |

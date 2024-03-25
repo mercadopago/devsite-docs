@@ -61,6 +61,26 @@ bullet_section_with_media:
 
 ------------
 
+---
+bullet_section_with_media:
+  - title: Advantages
+  - type: normal
+  - benefit_title: Data Protection with PCI-DSS (Payment Card Industry Data Security Standard)
+  - benefit_message: We comply with the global standard for protecting confidential card information and rely on Secure Fields to facilitate certification for your store.
+  - benefit_title: Ensure Security in Your High-Risk Transactions with 3DS (3-Domain Secure) at Checkout Pro
+  - benefit_message: With 3DS, we conduct a discreet identity verification, from a modal within the store, offering benefits such as higher approval rates and lower fraud risks.
+  - benefit_title: Increased Payment Approval with Checkout Pro
+  - benefit_message: We ensure a higher approval rate and lower fraud risk when payment is made through the Mercado Pago account.
+  - benefit_title: Mercado Pago Sorts Checkouts
+  - benefit_message: With the Ordena checkouts app, you can choose the position in which each of your installed providers will appear to your customers. By choosing to display our checkout first, you increase your store's reach and sales approval rate.
+  ----[mlm]----
+  - benefit_title: Mercado Crédito
+  - benefit_message: By activating Mercado Crédito at checkout, you reach over 12 million people with active credit, at no extra cost, and achieve an approval rate of around 98% on sales.
+
+------------
+  - image: /shopify/landing-shopify-advantages.png
+---
+
 --- mini_landing_separator ---
 
 

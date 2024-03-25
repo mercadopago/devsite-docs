@@ -1,33 +1,73 @@
 # Integration configuration
 
-Once the Mercado Pago with WooCommerce plugin is installed, it is necessary to configure it. For that, follow these steps:
+Once the Mercado Pago plugin for WooCommerce is installed, it needs to be configured. Follow these steps to do so:
 
-> If you have questions regarding installing the plugin, check out more information in the [Prerequisites](/developers/en/docs/woocommerce/previous-requirements) section.
+1. Access your [Wordpress](https://wordpress.com/) account.
+2. Go to your account dashboard and click on **Plugins > Installed Plugins**.
 
-1. Go to your [Wordpress](https://wordpress.com/) account.
-2. Access your account Dashboard and click **Plugins > Installed Plugins**.
-3. In the plugin search engine, search for “Mercado Pago payments for WooCommerce”.
-4. Click **Configure Plugin**.
+![Add plugin](/images/woocomerce/installed-plugins-es.png)
 
-Next, we will explain how to configure each item of the plugin. Click on the titles to display the options to complete.
+3. Search for **Mercado Pago** in the search bar on the right.
+4. The search result will display the Mercado Pago plugin. Click on **Configure plugin**.
 
-## Integrate store to Mercado Pago
+![Plugin MP](/images/woocomerce/mp-plugin-es.png)
 
-Test and production credentials are requested in this field.
-1. Click on the **Check credentials** button to enter the Mercado Pago panel and see your credentials. You can also access your credentials at [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app). **Important**: Please note that test credentials will be requested first and then production credentials.
-2. Complete the requested fields and click **Save and continue**.
+> NOTE
+>
+> We are constantly improving the plugin to provide the best possible experience. To take advantage of the latest features and ensure the security and smooth operation of the plugin, we recommend keeping it up to date by clicking on **Activate automatic updates** in the previous step.
 
-## Business personalization
+Next, we'll explain how to configure each item of the plugin.
 
-In the section **Information about your store** you can offer store data to offer a more complete experience and with more information to customers
+## Integrate store with Mercado Pago
 
-* **Store Name:** Enter the name of your store.
-* **Store Category**: Enter the category of your store's products.
-* **Store ID**: Use a number or prefix to identify orders and payments from your store.
-* **Integrator ID**: enter your integrator_id as a member of the **&lt;dev&gt;program** of Mercado Pago. If you are not yet a member, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) for more information.
+1. Click on **1. Integrate store with Mercado Pago**.
+2. Now, you need to link your Mercado Pago account to your store using your credentials. In the Mercado Pago admin panel, access **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** and select your application. If you haven't created an application yet, refer to the [Developer Dashboard documentation](/developers/en/docs/woocommerce/additional-content/your-integrations/dashboard) to learn how to do it.
 
-Click **Save and Continue**.
+> WARNING
+>
+> Important
+>
+> The credentials are responsible for identifying the payment-receiving account for your store. If you don't enter your credentials in the store's admin panel, you'll be automatically redirected to configure this step. **Remember, activating payment methods will only be possible after successfully entering your credentials**.
 
-Under **Advanced Settings**, configure options related to saving information to a file for debugging technical issues.
+3. Click on **Production credentials** in the left menu. Copy the `access_token` and the `public_key`.
 
+![Production credentials](/images/woocomerce/test-prod-credentials-api.png)
 
+4. Enter your production credentials `access_token` and `public_key` in the **Production credentials** field, being **careful not to reverse the fields when copying and pasting the credentials**.
+5. In your application, click on **Test credentials** in the left menu. Copy the `access_token` and the `public_key`.
+
+![Test credentials](/images/woocomerce/test-test-credentials-api.png)
+
+6. Also, enter the test credentials `access_token` and `public_key` in the **Test credentials** field, being **careful not to reverse the fields when copying and pasting the credentials**.
+
+![Panel](/images/woocomerce/test-woo.png)
+
+7. Click on **Save and continue**.
+
+> NOTE
+>
+> Note
+>
+> Renew your credentials as necessary, referring to the [documentation](/developers/en/docs/woocommerce/additional-content/best-practices/credentials-best-practices/secure-credentials) as a guide. After renewal, it's essential to update them in the WooCommerce panel. Remember: when changing your Mercado Pago account password, **you need to renew your credentials**. To do this, delete the old credentials from the panel, copy the new ones, and enter them in the store's admin panel.
+
+## Customize business
+
+In the **2. Customize your store information** section, you have the possibility to provide specific details about your store, providing a more comprehensive experience for customers with additional information.
+
+* **Store name on customer invoices**: Enter your store name. If this field is empty, the customer's purchase will be identified as "Mercado Pago" on the invoice.
+* **Identification in Mercado Pago Activities**: In Mercado Pago Activities, you will see the term entered in this field before the order number.
+* **Store category**: Enter the category of your store's products. If you can't find a suitable category, select "Other categories".
+
+![Panel](/images/woocomerce/customization-es.png) 
+
+### Advanced options
+
+In **Advanced integration options**, click on **View advanced options** and configure the options related to your store's integration with Mercado Pago.
+
+* **IPN URL**: Enter the URL to receive payment notifications.
+* **Integrator ID**: Enter your partner `integrator_id` from the **&lt;dev&gt;program** of Mercado Pago. If you're not yet a member of the program, visit the [page](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) for more information.
+* **Debug and log mode**: Enable this option to allow logging of your store's activities, enabling more efficient support and better debugging of technical issues.
+
+![Panel](/images/woocomerce/advanced-settings-es.png) 
+
+Finally, click on **Save and continue**.

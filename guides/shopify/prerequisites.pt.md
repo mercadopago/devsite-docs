@@ -2,6 +2,12 @@
 
 Para integrar o plugin do Mercado Pago na sua loja Shopify, você deve cumprir com os requisitos listados abaixo.
 
+> NOTE
+>
+> Nota
+>
+> Acesse a nossa [página de Primeiros passos](/developers/pt/docs/getting-started) para encontrar as informações necessárias para começar a integrar as soluções Mercado Pago.
+
 ----[mla, mlm, mlu, mco, mlc, mpe]---- 
 | Requisitos | Descripção |
 |---|---|

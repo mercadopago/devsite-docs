@@ -1,4 +1,4 @@
-# Sales Processing
+# How to interpret sales information
 
 With all steps completed, your customers will be able to make purchases from your store. When performing a transaction, it is common for some messages to return with specific information about the purchase. This information is available in the **Order notes** section of the WooCommerce panel.
 
