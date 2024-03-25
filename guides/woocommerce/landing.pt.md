@@ -40,7 +40,6 @@ bullet_section_with_media:
 ---
 ------------
 
-
 ---
 bullet_section_with_media: 
  - title: Vantagens

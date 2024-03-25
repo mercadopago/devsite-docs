@@ -2,15 +2,6 @@
 
 Recomendamos personalizar as informações do checkout da loja para garantir uma melhor experiência de compra e uma integração mais próxima entre o checkout do Mercado Pago e a Shopify. Para fazer isso, siga os passos abaixo:
 
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> WARNING
->
-> Atenção
->
-> Se estava utilizando o antigo app do Mercado Pago (“**Mercado Pago**”) e deixou de receber pagamentos em sua loja, não se preocupe. Para voltar a vender, instale nosso novo app (“**Checkout Mercado Pago**”) seguindo a [documentação](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
-
-------------
-
 ## Configure o nome da empresa
 
 1. Vá para sua loja [Shopify](https://accounts.shopify.com/store-login).

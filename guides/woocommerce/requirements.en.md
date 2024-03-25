@@ -2,6 +2,12 @@
 
 To use the Mercado Pago integration with WooCommerce on a WordPress site, you must comply with the requirements below.
 
+> NOTE
+>
+> Note
+> 
+> Please visit our [Getting Started page](/developers/en/docs/getting-started) to find the necessary information to begin integrating Mercado Pago solutions.
+
 | Requirements | Description | Specifications |
 |---|---|---|
 | Additional settings | Recommended tweaks for better performance and proper functioning of PrestaShop and Mercado Pago module. | safe_mode off * memory_limit greater than 256MB (512MB recommended) |

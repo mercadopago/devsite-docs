@@ -12,27 +12,18 @@ Uma vez instalado o plugin Mercado Pago para WooCommerce, é necessário configu
 
 ![Plugin MP](/images/woocomerce/mp-plugin-pt.png)
 
+> NOTE
+>
+> Nota
+>
+> Continuamos aprimorando constantemente o plugin para proporcionar a melhor experiência possível. Para aproveitar as últimas funcionalidades e garantir a segurança e o bom funcionamento do plugin, recomendamos que você o mantenha sempre atualizado clicando em **Ativar as atualizações automáticas** no passo anterior. 
+
 A seguir, explicaremos como configurar cada item do plugin. 
 
 ## Integrar loja ao Mercado Pago
 
 1. Clique em **1. Integre a loja com o Mercado Pago**.
-
-![Integre](/images/woocomerce/woo-store-integration.png)
-
-2. No admin do Mercado Pago, acesse **[Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** e selecione a sua aplicação. Caso ainda não tenha criado uma aplicação, acesse a [documentação Painel do desenvolvedor](/developers/pt/docs/woocommerce/additional-content/your-integrations/dashboard) e saiba como criá-la. 
-3. Clique em **Credenciais de produção** no menu à esquerda. Copie o `access_token` e a `public_key`.
-
-![Credenciais de produção](/images/woocomerce/test-prod-credentials-api.png)
-
-4. Insira suas credenciais produtivas `access_token` e a `public_key` no campo **Credenciais de produção**, tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais.
-5. Na sua aplicação, clique em **Credenciais de teste** no menu à esquerda. Copie o `access_token` e a `public_key`.
-
-![Credenciais de teste](/images/woocomerce/test-test-credentials-api.png)
-
-6. Insira também as credenciais de teste `access_token` e a `public_key` no campo **Credenciais de teste**, tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais.
-
-![Painel](/images/woocomerce/test-woo.png)
+2. Agora, é preciso vincular sua conta Mercado Pago à sua loja através das suas credenciais. No admin do Mercado Pago, acesse **[Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** e selecione a sua aplicação. Caso ainda não tenha criado uma aplicação, acesse a [documentação Painel do desenvolvedor](/developers/pt/docs/woocommerce/additional-content/your-integrations/dashboard) e saiba como criá-la. 
 
 > WARNING
 >
@@ -40,13 +31,26 @@ A seguir, explicaremos como configurar cada item do plugin.
 >
 > As credenciais são responsáveis por identificar a conta coletora dos pagamentos que você receberá em sua loja. Caso não insira suas credenciais no painel administrativo da loja, você será automaticamente redirecionado para configurar essa etapa. **Lembre-se, a ativação dos meios de pagamento só será possível após a inserção bem-sucedida das suas credenciais**.
 
+3. Clique em **Credenciais de produção** no menu à esquerda. Copie o `access_token` e a `public_key`.
+
+![Credenciais de produção](/images/woocomerce/test-prod-credentials-api.png)
+
+4. Insira suas credenciais produtivas `access_token` e a `public_key` no campo **Credenciais de produção**, tomando **cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
+5. Na sua aplicação, clique em **Credenciais de teste** no menu à esquerda. Copie o `access_token` e a `public_key`.
+
+![Credenciais de teste](/images/woocomerce/test-test-credentials-api.png)
+
+6. Insira também as credenciais de teste `access_token` e a `public_key` no campo **Credenciais de teste**, tomando **cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
+
+![Painel](/images/woocomerce/test-woo.png)
+
 7. Clique em **Salvar e continuar**.
 
 > NOTE
 >
 > Nota
 >
-> Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/woocommerce/additional-content/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de WooCommerce. Lembre-se: ao alterar a senha, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
+> Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/woocommerce/additional-content/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de WooCommerce. Lembre-se: ao alterar a senha da sua conta Mercado Pago, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
 
 ## Personalizar negócio
 
@@ -59,6 +63,7 @@ Na seção **2. Personalize as informações da sua loja**, você tem a possibil
 ![Painel](/images/woocomerce/customization-pt.png) 
 
 ### Opções avançadas
+
 Em **Opções avançadas de integração**, clique em **Ver opções avançadas** e configure as opções relacionadas à integração da sua loja com o Mercado Pago. 
 
 * **URL para IPN**: Insira a URL para receber notificações de pagamentos.

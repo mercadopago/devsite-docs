@@ -56,6 +56,28 @@ bullet_section_with_media:
 ---
 ------------
 
+---
+bullet_section_with_media:
+ - title: Advantages
+ - type: normal
+ - benefit_title: Payments without the need to log in
+ - benefit_message: With Checkout Pro or Transparent Checkout, your customer doesn't need to log in to their Mercado Pago account to make the payment in your store.
+ - benefit_title: Customization of payment methods
+ - benefit_message: You can offer all available payment methods or only those you find necessary.
+ - benefit_title: Data protection with PCI-DSS (Payment Card Industry Data Security Standard)
+ - benefit_message: We comply with the global standard for protecting confidential card information and rely on Secure Fields to facilitate obtaining certification for your store.
+ - benefit_title: Ensure security in your high-risk transactions with 3DS (3-Domain Secure)
+ - benefit_message: With 3DS, we conduct discrete identity verification from a modal without leaving the store, offering benefits such as higher approval rates and lower fraud risk.
+ - benefit_title: Compatible with WooCommerce Blocks
+ - benefit_message: Our plugin is compatible with WooCommerce Blocks, which allows you to customize your e-commerce and make your products even more accessible to your customers.
+ ----[mlm, mlb, mla]----
+ - benefit_title: Installment without a card
+ - benefit_message: By activating Mercado Crédito at checkout, you reach over 12 million people with active credit, at no extra cost, in addition to obtaining an approval rate of about 98% in sales.
+
+ ------------
+ - image: /woocomerce/landing-woo-advantages.png
+---
+
 --- mini_landing_separator ---
 
 >>>> Accepted payment methods <<<<
