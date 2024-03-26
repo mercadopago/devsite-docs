@@ -1119,9 +1119,7 @@
         "java": "MercadoPagoConfig.setAccessToken(\"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\");\n PaymentRefundClient client = new PaymentRefundClient();\n PaymentRefund result = client.get(18552260055L, 1032332129L);\n",
         "php": "<?php\n use MercadoPago\\Client\\Payment\\PaymentRefundClient;\nMercadoPagoConfig::setAccessToken(\n\"<YOUR_ACCESS_TOKEN>\"\n);\n  $client = new PaymentRefundClient();\n  $refund_result = $client->get(18552260055, 1032332129);\n ?>",
         "js": "import MercadoPago, { PaymentRefund } from 'mercadopago';\n\nconst client = new MercadoPago({ accessToken: '<ACCESS_TOKEN>' });\n\nconst refund = new PaymentRefund(client);\n\nrefund.get({\n\tpayment_id: '18552260055',\n\trefund_id: '1032332129'\n}).then(console.log).catch(console.log);",
-        "python": "N/A",
         "csharp": "MercadoPagoConfig.AccessToken = \"TEST-703********22370-01********2405a0c3********7232f7a5********0082888\";\n\nPaymentRefundClient client = new PaymentRefundClient();\n\nPaymentRefund refund = await client.GetAsync(18552260055,1032332129);",
-        "ruby": "N/A",
         "tags": [
           "checkout-api"
         ],
