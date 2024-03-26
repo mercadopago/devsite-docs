@@ -7,9 +7,14 @@ Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing), é poss�
 1. Para ativar o Checkout Pro, vá até as configurações do painel de WooCommerce (**WooCommerce > Mercado Pago**).
 2. Clique em **3. Ative e configure os meios de pagamento**.
 3. Na opção "Seus cartões salvos ou dinheiro no Mercado Pago", clique em **Configurar**.
+----[mlb]----
+![Payments methods](/images/woocomerce/active-and-configure-pt-br.png)
 
-![Active and configure](/images/woocomerce/cho-pro-active-configure-pt.png)
+------------
+----[mlm, mla]----
+![Activar y configurar](/images/woocomerce/cho-pro-active-configure-es.png)
 
+------------
 4. A opção "Ativar checkout" permite habilitar ou desabilitar o Checkout Pro em sua loja. Para ativar, clique no botão deslizante.
 5. No campo **Título no checkout da loja**, insira o nome pelo qual esta forma de pagamento será identificada na loja. Por exemplo, você pode chamá-la de "Mercado Pago".
 
@@ -32,7 +37,7 @@ Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing), é poss�
     - **Transferência bancária**.
     - **Parcelamento sem cartão**: Ao configurar o Checkout Pro, você pode oferecer a opção de pagar em até 12 parcelas sem cartão. Se também quiser mostrar esta opção no checkout da sua loja, acesse a [documentação](/developers/pt/docs/woocommerce/payments-configuration/mercado-credito). 
 
-![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es.gif)
+![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es.png)
 
 ------------
 ----[mlm]----
@@ -41,7 +46,7 @@ Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing), é poss�
     - **Transferência bancária**.
     - **Parcelamento sem cartão**: Ao configurar o Checkout Pro, você pode oferecer a opção de pagar em até 12 parcelas sem cartão. Se também quiser mostrar esta opção no checkout da sua loja, acesse a [documentação](/developers/pt/docs/woocommerce/payments-configuration/mercado-credito). 
 
-![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es.gif)
+![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es.png)
 
 ------------
 ----[mpe, mco, mlu, mlc]----

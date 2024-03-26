@@ -6,10 +6,15 @@ Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing), puede habe
 
 1. Para activar Checkout Pro, ve a la configuración del panel de WooCommerce (**WooCommerce > Mercado Pago**).
 2. Haz clic en **3. Activa y configura los métodos de pago**.
-3. En la opción "Tus tarjetas guardadas o dinero en Mercado Pago", haz clic en **Configurar**.
-
+3. En la opción "Tarjetas guardadas o dinero en Mercado Pago", haz clic en **Configurar**.
+----[mlm, mla]----
 ![Activar y configurar](/images/woocomerce/cho-pro-active-configure-es.png)
 
+------------
+----[mlb]----
+![Payments methods](/images/woocomerce/active-and-configure-pt-br.png)
+
+------------
 4. La opción "Activar checkout" permite habilitar o deshabilitar Checkout Pro en tu tienda. Para activarlo, haz clic en el interruptor.
 5. En el campo **Título en el checkout de la tienda**, ingresa el nombre con el que este método de pago se identificará en la tienda. Por ejemplo, puedes llamarlo "Mercado Pago".
 
@@ -32,7 +37,7 @@ Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing), puede habe
     - **Transferencia bancaria**.
     - **Financiación sin tarjeta**. Configurando Checkout Pro, puedes ofrecer la opción de pagar en hasta 12 veces sin tarjeta. Si, además, quieres mostrar esta opción en el checkout de tu tienda, accede a la [documentación](/developers/es/docs/woocommerce/payments-configuration/mercado-credito).
 
-![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es.gif)
+![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es.png)
 
 ------------
 ----[mlm]----
@@ -41,7 +46,7 @@ Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing), puede habe
     - **Transferencia bancaria**.
     - **Financiamiento sin tarjeta**. Configurando Checkout Pro, puedes ofrecer la opción de pagar en hasta 12 meses sin tarjeta. Si, además, quieres mostrar esta opción en el checkout de tu tienda, accede a la [documentación](/developers/es/docs/woocommerce/payments-configuration/mercado-credito).
 
-![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es.gif)
+![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es.png)
 
 ------------
 ----[mpe, mco, mlu, mlc]----
