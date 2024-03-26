@@ -95,11 +95,7 @@ import { Wallet } from '@mercadopago/sdk-react';
 
 The result of rendering the Brick should blook like the image below, presenting a text and a standard visual.
 
-<center>
-
 ![wallet-brick-render](checkout-bricks/wallet-brick-render-en.png)
-
-</center>
 
 > If you want to change the text and the standard visual of the Brick, check the sections [Change texts](/developers/en/docs/checkout-bricks/wallet-brick/visual-customizations/change-texts) and [Change appearance,](/developers/en/docs/checkout-bricks/wallet-brick/visual-customizations/change-appearance) respectively.
 

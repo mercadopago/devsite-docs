@@ -23,11 +23,7 @@ The "call to action" is divided into two parts: the action, determined by the `A
 
 Check below the available texts for modification, how they are organized in the display, and an example of code.
 
-<center>
-
 ![wallet-brick-actioncomplement](checkout-bricks/wallet-brick-actioncomplement-en.png)
-
-</center>
 
 | Key | Available options | Default |
 |--- |--- | --- |

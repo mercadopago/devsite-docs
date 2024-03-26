@@ -22,8 +22,4 @@ Para **exibir o Mercado Crédito no checkout da sua loja**, siga os passos abaix
 4. Para informar seus clientes sobre essa opção de pagamento na página de cada produto, procure por **Informe aos seus clientes sobre a opção de parcelamento sem cartão** e clique no botão deslizante que ativará o componente.
 5. Clique no botão **Salvar alterações** para finalizar sua configuração.
 
-<center>
-
 ![woo-credits-admin-pt](/images/woocomerce/woo-credits-pt.png)
-
-</center>

@@ -23,11 +23,7 @@ O _call to action_ é separado em duas partes: a ação, determinada pela propri
 
 Confira abaixo os textos disponíveis para alteração, como eles se organizam na exibição e um exemplo de código.
 
-<center>
-
 ![wallet-brick-actioncomplement](checkout-bricks/wallet-brick-actioncomplement-pt.png)
-
-</center>
 
 | Chave | Opções disponíveis | Padrão |
 |--- |--- | --- |
