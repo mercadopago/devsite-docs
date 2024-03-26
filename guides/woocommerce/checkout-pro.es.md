@@ -6,7 +6,7 @@ Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing), puede habe
 
 1. Para activar Checkout Pro, ve a la configuración del panel de WooCommerce (**WooCommerce > Mercado Pago**).
 2. Haz clic en **3. Activa y configura los métodos de pago**.
-3. En la opción "Tarjetas guardadas o dinero en Mercado Pago", haz clic en **Configurar**.
+3. En la opción "Tarjetas guardadas y dinero disponibile en Mercado Pago", haz clic en **Configurar**.
 ----[mlm, mla]----
 ![Activar y configurar](/images/woocomerce/cho-pro-active-configure-es.png)
 
@@ -37,7 +37,7 @@ Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing), puede habe
     - **Transferencia bancaria**.
     - **Financiación sin tarjeta**. Configurando Checkout Pro, puedes ofrecer la opción de pagar en hasta 12 veces sin tarjeta. Si, además, quieres mostrar esta opción en el checkout de tu tienda, accede a la [documentación](/developers/es/docs/woocommerce/payments-configuration/mercado-credito).
 
-![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es.png)
+![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es-ar.png)
 
 ------------
 ----[mlm]----
@@ -46,7 +46,7 @@ Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing), puede habe
     - **Transferencia bancaria**.
     - **Financiamiento sin tarjeta**. Configurando Checkout Pro, puedes ofrecer la opción de pagar en hasta 12 meses sin tarjeta. Si, además, quieres mostrar esta opción en el checkout de tu tienda, accede a la [documentación](/developers/es/docs/woocommerce/payments-configuration/mercado-credito).
 
-![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es.png)
+![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es-mx.png)
 
 ------------
 ----[mpe, mco, mlu, mlc]----
@@ -61,7 +61,7 @@ Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing), puede habe
 
 ![Installments](/images/woocomerce/cho-pro-installment-es.png)
 
-Para guardar los cambios en la configuración, haz clic en el botón **Guardar cambios**.
+Para guardar los cambios en la configuración, haz clic en el botón **Finalizar configuración**.
 
 ### Configuraciones avanzadas
 
@@ -73,12 +73,12 @@ Puedes personalizar las opciones en la sección de configuraciones avanzadas del
 - **URL de pago rechazado**: ingresa una URL personalizada para redirigir a los clientes si el pago ha sido rechazado.
 - **URL de pago pendiente**: ingresa una URL personalizada para redirigir a los clientes si el pago está pendiente de aprobación.
 - **Rechazo automático de pagos sin aprobación instantánea**: activa esta opción para rechazar automáticamente los pagos que no sean aprobados instantáneamente. Para activarlo, desliza el botón.
-- **Descuento en pagos de Mercado Pago**: ingresa un valor porcentual de descuento para los clientes que paguen con este método de pago. Para activarlo, ingresa un porcentaje de descuento y marca la opción "Activar y mostrar esta información en el checkout de Mercado Pago".
-- **Comisión en pagos de Mercado Pago**: ingresa un valor porcentual adicional que desees cobrar como comisión a los clientes que elijan este método de pago. Para activarlo, ingresa un porcentaje de descuento y marca la opción "Activar y mostrar esta información en el checkout de Mercado Pago".
+- **Descuento en los checkouts de Mercado Pago**: ingresa un valor porcentual de descuento para los clientes que paguen con este método de pago. Para activarlo, ingresa un porcentaje de descuento y marca la opción "Activar y mostrar esta información en el checkout de Mercado Pago".
+- **Comisiones en los checkouts de Mercado Pago**: ingresa un valor porcentual adicional que desees cobrar como comisión a los clientes que elijan este método de pago. Para activarlo, ingresa un porcentaje de descuento y marca la opción "Activar y mostrar esta información en el checkout de Mercado Pago".
 
 ![Advanced settings](/images/woocomerce/cho-pro-advanced-settings-es.gif)
 
-Para guardar los cambios en la configuración, haz clic en el botón **Guardar cambios**.
+Para guardar los cambios en la configuración, haz clic en el botón **Finalizar configuración**.
 
 Al concluir la compra, cuando los compradores eligen pagar con Mercado Pago, se muestra información que destaca las ventajas exclusivas de pagar con una cuenta de Mercado Pago, tales como:
 
@@ -89,7 +89,7 @@ Al concluir la compra, cuando los compradores eligen pagar con Mercado Pago, se 
 
 <center>
 
-![woo-chopro-es-mlb](/images/woocomerce/woo-chopro-es-mlb.png)
+![woo-chopro-es-mlb](/images/woocomerce/mlb-preview.png)
 
 </center>
 ------------
@@ -101,7 +101,7 @@ Al concluir la compra, cuando los compradores eligen pagar con Mercado Pago, se 
 
 <center>
 
-![woo-chopro-es-mla](/images/woocomerce/woo-chopro-es-mla.png)
+![woo-chopro-es-mla](/images/woocomerce/mla-preview.png)
 
 </center>
 ------------
@@ -113,7 +113,7 @@ Al concluir la compra, cuando los compradores eligen pagar con Mercado Pago, se 
 
 <center>
 
-![woo-chopro-es-mlm](/images/woocomerce/woo-chopro-es-mlm.png)
+![woo-chopro-es-mlm](/images/woocomerce/mlm-preview.png)
 
 </center>
 ------------
@@ -125,7 +125,7 @@ Al concluir la compra, cuando los compradores eligen pagar con Mercado Pago, se 
 
 <center>
 
-![woo-chopro-es-all](/images/woocomerce/woo-chopro-es-all.png)
+![woo-chopro-es-all](/images/woocomerce/all-preview.png)
 
 </center>
 ------------

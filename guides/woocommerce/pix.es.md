@@ -32,7 +32,7 @@ Con Checkout API, ofrece pagos con Pix directamente en tu tienda. Pix es un medi
 
 ![Vencimiento y convertir](/images/woocomerce/deadline-and-convert-pix-pt-br.png)
 
-Para guardar los cambios en la configuración, haga clic en el botón **Concluir configuración**.
+Para guardar los cambios en la configuración, haga clic en el botón **Finalizar configuración**.
 
 ### Configuraciones avanzadas
 
@@ -43,4 +43,4 @@ Es posible personalizar las opciones en la sección de configuraciones avanzadas
 
 ![Configuraciones avanzadas](/images/woocomerce/advanced-settings-pix-pt-br.gif)
 
-Para guardar los cambios en la configuración, haga clic en el botón **Concluir configuración**.
+Para guardar los cambios en la configuración, haga clic en el botón **Finalizar configuración**.

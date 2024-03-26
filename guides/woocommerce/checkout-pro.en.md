@@ -15,11 +15,10 @@ When installing [Checkout Pro](/developers/en/docs/checkout-pro/landing), there 
 ![Activar y configurar](/images/woocomerce/cho-pro-active-configure-es.png)
 
 ------------
-
 4. The "Activate checkout" option allows you to enable or disable Checkout Pro on your store. To activate it, click on the switch.
 5. In the **Title on the store checkout** field, enter the name by which this payment method will be identified in the store. For example, you can name it "Mercado Pago".
 
-![Activate and Configure](/images/woocomerce/cho-pro-activate-title-es.png)
+![Activate and configure](/images/woocomerce/cho-pro-activate-title-es.png)
 
 6. The **Convert currency** option allows the currency value configured in WooCommerce to be compatible with the currency value you use in Mercado Pago. To activate it, click on the switch.
 7. In the **Choose the accepted payment methods in the store** section, choose which types and payment methods will be accepted in the store through Checkout Pro, which can be:
@@ -38,7 +37,7 @@ When installing [Checkout Pro](/developers/en/docs/checkout-pro/landing), there 
     - **Wire transfer**.
     - **Installments without a card**. By setting up Checkout Pro, you can offer the option to pay up to 12 installments without a card. If you also want to show this option at the checkout of your store, read the [documentation](/developers/en/docs/woocommerce/payments-configuration/mercado-credito).
 
-![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es.png)
+![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es-ar.png)
 
 ------------
 ----[mlm]----
@@ -47,7 +46,7 @@ When installing [Checkout Pro](/developers/en/docs/checkout-pro/landing), there 
     - **Wire transfer**.
     - **Installments without a card**. By setting up Checkout Pro, you can offer the option to pay up to 12 installments without a card. If you also want to show this option at the checkout of your store, read the [documentation](/developers/en/docs/woocommerce/payments-configuration/mercado-credito).
 
-![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es.png)
+![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es-mx.png)
     
 ------------
 ----[mpe, mco, mlu, mlc]----
@@ -79,7 +78,7 @@ You can customize the options in the advanced settings section of the payment me
 
 ![Advanced settings](/images/woocomerce/cho-pro-advanced-settings-es.gif)
 
-To save the changes in the configuration, click on the **Save Changes** button.
+To save the changes in the configuration, click on the **Save changes** button.
 
 At checkout, when buyers choose to pay with Mercado Pago, information is displayed that highlights the exclusive advantages of paying with a Mercado Pago account, such as:
 
@@ -90,7 +89,7 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 
 <center>
 
-![woo-chopro-en-mlb](/images/woocomerce/woo-chopro-en-mlb.png)
+![woo-chopro-en-mlb](/images/woocomerce/mlb-preview.png)
 
 </center>
 ------------
@@ -102,7 +101,7 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 
 <center>
 
-![woo-chopro-en-mla](/images/woocomerce/woo-chopro-en-mla.png)
+![woo-chopro-en-mla](/images/woocomerce/mla-preview.png)
 
 </center>
 ------------
@@ -114,7 +113,7 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 
 <center>
 
-![woo-chopro-en-mlm](/images/woocomerce/woo-chopro-en-mlm.png)
+![woo-chopro-en-mlm](/images/woocomerce/mlm-preview.png)
 
 </center>
 ------------
@@ -126,7 +125,7 @@ At checkout, when buyers choose to pay with Mercado Pago, information is display
 
 <center>
 
-![woo-chopro-en-all](/images/woocomerce/woo-chopro-en-all.png)
+![woo-chopro-en-all](/images/woocomerce/all-preview.png)
 
 </center>
 ------------

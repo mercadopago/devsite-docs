@@ -4,7 +4,6 @@
 Essa forma de pagamento adicionará o Checkout Transparente, a forma de pagamento que permitirá que você aceite pagamentos com cartões de crédito e débito pelo Mercado Pago, sem a necessidade do cliente sair da loja.
 
 ------------
-
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 Essa forma de pagamento adicionará o Checkout API, a forma de pagamento que permitirá que você aceite pagamentos com cartões de crédito e débito através do Mercado Pago, sem a necessidade do cliente sair da loja.
 
@@ -12,13 +11,17 @@ Essa forma de pagamento adicionará o Checkout API, a forma de pagamento que per
 
 ## Configure o meio de pagamento
 
-
 1. Para ativar o Checkout, vá até as configurações do painel de WooCommerce (**WooCommerce > Mercado Pago**).
 2. Clique em **3. Ative e configure os meios de pagamento**.
 3. Na opção "Cartão de crédito e débito", clique em **Configurar**.
+----[mla, mlm]----
+![Activar y configurar](/images/woocomerce/cho-pro-active-configure-es.png)
 
+------------
+----[mlb]----
 ![Active and configure](/images/woocomerce/cho-pro-active-configure-pt.png)
 
+------------
 4. A opção "Ativar checkout" permite habilitar ou desabilitar o Checkout em sua loja. Para ativar, clique no botão deslizante.
 5. No campo **Título no checkout da loja**, insira o nome pelo qual esta forma de pagamento será identificada na loja. Por exemplo, você pode chamá-la de **Cartão de crédito ou débito**.
 

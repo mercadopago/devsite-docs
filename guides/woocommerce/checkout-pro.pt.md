@@ -1,6 +1,6 @@
 # Checkout Pro
 
-Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing), é possível que haja um **aumento na taxa de aprovação das vendas da loja on-line**. Isso acontece porque os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será feito em nosso ambiente, o que facilita o pagamento. Ao final da transação, esses compradores são redirecionados ao ambiente da loja.
+Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing), é possível que haja um **aumento na taxa de aprovação das vendas da loja online**. Isso acontece porque os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será feito em nosso ambiente, o que facilita o pagamento. Ao final da transação, esses compradores são redirecionados ao ambiente da loja.
 
 ## Ative e configure o meio de pagamento
 
@@ -37,7 +37,7 @@ Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing), é poss�
     - **Transferência bancária**.
     - **Parcelamento sem cartão**: Ao configurar o Checkout Pro, você pode oferecer a opção de pagar em até 12 parcelas sem cartão. Se também quiser mostrar esta opção no checkout da sua loja, acesse a [documentação](/developers/pt/docs/woocommerce/payments-configuration/mercado-credito). 
 
-![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es.png)
+![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es-ar.png)
 
 ------------
 ----[mlm]----
@@ -46,7 +46,7 @@ Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing), é poss�
     - **Transferência bancária**.
     - **Parcelamento sem cartão**: Ao configurar o Checkout Pro, você pode oferecer a opção de pagar em até 12 parcelas sem cartão. Se também quiser mostrar esta opção no checkout da sua loja, acesse a [documentação](/developers/pt/docs/woocommerce/payments-configuration/mercado-credito). 
 
-![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es.png)
+![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es-mx.png)
 
 ------------
 ----[mpe, mco, mlu, mlc]----
@@ -89,7 +89,7 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 
 <center>
 
-![woo-chopro-pt-mlb](/images/woocomerce/woo-chopro-pt-mlb.png)
+![woo-chopro-pt-mlb](/images/woocomerce/mlb-preview.png)
 
 </center>
 ------------
@@ -101,19 +101,19 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 
 <center>
 
-![woo-chopro-pt-mla](/images/woocomerce/woo-chopro-pt-mla.png)
+![woo-chopro-pt-mla](/images/woocomerce/mla-preview.png)
 
 </center>>
 ------------
 
 ----[mlm]----
 * **Login facilitado**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre. 
-* **Pagar mais rápido e de várias maneiras**: utilizar os cartões salvos, efectivo, meios de pagamento off-line ou saldo disponível na conta Mercado Pago.
+* **Pagar mais rápido e de várias maneiras**: utilizar os cartões salvos, efectivo, meios de pagamento offline ou saldo disponível na conta Mercado Pago.
 * **Proteção à compra**: receber o dinheiro de volta caso o produto não seja entregue.
 
 <center>
 
-![woo-chopro-pt-mlm](/images/woocomerce/woo-chopro-pt-mlm.png)
+![woo-chopro-pt-mlm](/images/woocomerce/mlm-preview.png)
 
 </center>>
 ------------
@@ -125,7 +125,7 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 
 <center>
 
-![woo-chopro-pt-all](/images/woocomerce/woo-chopro-pt-all.png)
+![woo-chopro-pt-all](/images/woocomerce/all-preview.png)
 
 </center>
 ------------

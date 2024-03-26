@@ -20,11 +20,28 @@ Este meio de pagamento irá adicionar o----[mlb]---- Checkout Transparente -----
 ![Active and title](/images/woocomerce/api-active-boleto-pt-br.png)
 
 ------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+![Ativar e configurar](/images/woocomerce/api-active-efectivo-es.png)
+
+------------
 6. A opção **Converter moeda** permite que o valor da moeda configurada no WooCommerce seja compatível com o valor da moeda que você utiliza no Mercado Pago. Para ativá-la, clique no botão deslizante.
 7. Na seção **Meios de pagamento**, habilite quais métodos de pagamento em dinheiro deseja oferecer na loja. Você pode habilitar a opção "Todos os métodos de pagamento" ou apenas alguns.
 8. Em **Vencimento do pagamento**, configure em quantos dias os pedidos com pagamento em dinheiro expirarão.
 ----[mlb]----
-![Convert and payments methods](/images/woocomerce/api-convert-and-payments-methods-boleto-pt-br.png)
+![Convertir y métodos de pago](/images/woocomerce/api-convert-and-payments-methods-boleto-pt-br.png)
+
+------------
+----[mla]----
+![Convert and payments methods](/images/woocomerce/api-convert-and-payments-methods-efectivo-es-ar.png)
+
+------------
+----[mlm]----
+![Convert and payments methods](/images/woocomerce/api-convert-and-payments-methods-efectivo-es-mx.png)
+![Convert and payments methods 2](/images/woocomerce/api-convert-and-payments-methods-efectivo-es-mx-2.png)
+
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> Para saber quais tipos e métodos de pagamento são aceitos em cada país, consulte a [documentação](/developers/pt/docs/sales-processing/payment-methods).
 
 ------------
 Para salvar as alterações nas configurações, clique no botão **Concluir configuração**.
@@ -36,8 +53,7 @@ Para salvar as alterações nas configurações, clique no botão **Concluir con
 - **Reduzir inventário**: ative a redução de inventário durante a criação de um pedido, independentemente da aprovação do pagamento. Desative esta opção apenas quando os pagamentos forem aprovados.
 - **Desconto nos checkouts Mercado Pago**: insira um valor percentual de desconto para os clientes que pagarem por esta forma de pagamento. Para ativá-lo, insira um percentual de desconto e marque a opção "Ativar e mostrar esta informação no checkout do Mercado Pago".
 - **Comissão nos checkouts Mercado Pago**: insira um valor percentual adicional que quiser cobrar como comissão aos clientes que optarem por esta forma de pagamento. Para ativá-lo, insira um percentual de desconto e marque a opção "Ativar e mostrar esta informação no checkout do Mercado Pago".
-----[mlb]----
+
 ![Advanced settings](/images/woocomerce/advanced-settings-boleto-pt-br.gif)
 
-------------
 Para salvar as alterações nas configurações, clique no botão **Concluir configuração**.

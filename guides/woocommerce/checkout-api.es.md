@@ -21,6 +21,12 @@ Mira a continuación qué métodos de pago están disponibles para la tienda al 
 ![Active and configure](/images/woocomerce/cho-pro-active-configure-pt.png)
 
 ------------
+----[mla, mlm]---- 
+* [Medios de pago offline - Efectivo](/developers/es/docs/woocommerce/payments-configuration/checkout-api/offline-payments): pagos en efectivo (saldo Mercado Pago o ticket).
+
+![Activar y configurar](/images/woocomerce/cho-pro-active-configure-es.png)
+
+------------
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
 * [Medios de pago offline - Efectivo](/developers/es/docs/woocommerce/payments-configuration/checkout-api/offline-payments): pagos en efectivo (saldo Mercado Pago o ticket).
 
