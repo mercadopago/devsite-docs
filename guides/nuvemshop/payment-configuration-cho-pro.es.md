@@ -48,11 +48,9 @@ Para habilitar boleto bancário, deberás también indicar en el campo inferior 
 ------------
 
 ----[mla]---- 
-<center>
 
 ![Payments Checkout Pro - Tiendanube](/images/nuvemshop/cho-pro-mla-es.png)
 
-</center>
 ------------
 
 ¡Listo! El Checkout Pro de Mercado Pago está preparado para recibir los pagos de tu tienda.

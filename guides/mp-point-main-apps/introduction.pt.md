@@ -2,11 +2,7 @@
 
 A [Point Smart](/developers/pt/docs/mp-point/landing) é um dispositivo de pagamento do tipo SmartPOS. Diferente de outras maquininhas que funcionam sob um sistema operacional de smartphones, ela usa tecnologia Android e possui um firmware que varia em função do fabricante, das características e dos periféricos integrados.
 
-<center>
-
 ![introduction](/main-apps/introduction-all.png)
-
-</center>
 
 ## Os main apps
 

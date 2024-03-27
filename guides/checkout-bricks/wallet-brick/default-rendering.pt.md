@@ -83,6 +83,8 @@ import { Wallet } from '@mercadopago/sdk-react';
 
 
 <Wallet
+   initialization={initialization}
+   customization={customization}
    onSubmit={onSubmit}
    onReady={onReady}
    onError={onError}
@@ -92,11 +94,7 @@ import { Wallet } from '@mercadopago/sdk-react';
 
 O resultado de renderizar o Brick deve ser como na imagem abaixo, apresentando um texto e um visual padrão.
 
-<center>
-
 ![wallet-brick-render](checkout-bricks/wallet-brick-render-pt.png)
-
-</center>
 
 > Caso deseje alterar o texto e o visual padrão do Brick, consulte as seções de [Alterar textos](/developers/pt/docs/checkout-bricks/wallet-brick/visual-customizations/change-texts) e [Alterar visual,](/developers/pt/docs/checkout-bricks/wallet-brick/visual-customizations/change-appearance) respectivamente.
 

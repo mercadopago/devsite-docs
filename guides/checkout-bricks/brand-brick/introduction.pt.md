@@ -30,4 +30,4 @@ Nele são permitidas diversas [customizações visuais](/developers/pt/docs/chec
 
 ![brand-brick-pt](checkout-bricks/brand-brick-pt.gif)
 
-</center> 
+</center>

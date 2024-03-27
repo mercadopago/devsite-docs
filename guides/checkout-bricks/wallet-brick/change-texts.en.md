@@ -23,11 +23,7 @@ The "call to action" is divided into two parts: the action, determined by the `A
 
 Check below the available texts for modification, how they are organized in the display, and an example of code.
 
-<center>
-
 ![wallet-brick-actioncomplement](checkout-bricks/wallet-brick-actioncomplement-en.png)
-
-</center>
 
 | Key | Available options | Default |
 |--- |--- | --- |
@@ -49,7 +45,7 @@ See the texts related to each option:
 |valueProp |security_details | Protection for your data |
 |valueProp |security_safety | Pay securely |
 |valueProp |smart_option| The text will be chosen automatically by Wallet Brick to increase the chances of sale according to the characteristics of the purchase. |
-|valueProp |convenience_credits | Up to 12 installments without card |
+|valueProp |convenience_credits* | Up to 12 installments without card |
 |valueProp |payment_methods_logos** | The logos of the available payment methods will be displayed. To configure the payment methods, use the preference. |
 
 ------------
@@ -65,7 +61,7 @@ See the texts related to each option:
 |valueProp |security_details | Protection for your data |
 |valueProp |security_safety | Pay securely |
 |valueProp |smart_option| The text will be chosen automatically by Wallet Brick to increase the chances of sale according to the characteristics of the purchase. |
-|valueProp |convenience_credits| Up to 12 installments without card |
+|valueProp |payment_methods_logos* | The logos of the available payment methods will be displayed. To configure the payment methods, use the preference. |
 
 ------------
 
@@ -76,11 +72,11 @@ When testing your integration, make sure that the `action`, `actionComplement`, 
 >
 > Important
 >
-> To use the `convenience_credits` Value Prop, it is necessary for the Brick to be initialized with a preference, and the preference should have the purpose of [onboarding_credits.](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preferences)
+> *To use the `convenience_credits` Value Prop, it is necessary for the Brick to be [initialized with a preference](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering), and the preference should have the purpose of [onboarding_credits.](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preferences)
 > <br><br>
-> It is recommended to initialize with a preference using the Value Prop `payment_methods_logos`. If the preference has only one valid payment method, it will stop displaying images and will show the text: "**Account money or installments with no card**"
+> **It is recommended to [initialize with a preference](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering) using the Value Prop `payment_methods_logos`. If the preference has only one valid payment method, it will stop displaying images and will show the text: "**Account money or installments with no card**"
 > <br><br>
-> Ao remover da preferência um meio de pagamento de _ticket_ ("paycash", por exemplo) ou _ATM_ ( "banamex", por exemplo), todos os ícones de pontos de pagamento vinculados a estes meios não serão exibidos.
+> When removing a payment method of _ticket_ ("paycash", for example) or _ATM_ ("banamex", for example) from preferences, all icons of payment points linked to these methods will not be displayed.
 
 ------------
 ----[mlb, mla]----
@@ -88,9 +84,9 @@ When testing your integration, make sure that the `action`, `actionComplement`, 
 >
 > Important
 >
-> To use the `convenience_credits` Value Prop, it is necessary for the Brick to be [initialized with a preference](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering), and the preference should have the purpose of [onboarding_credits.](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preferences)
+> *To use the `convenience_credits` Value Prop, it is necessary for the Brick to be [initialized with a preference](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering), and the preference should have the purpose of [onboarding_credits.](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preferences)
 > <br><br>
-> It is recommended to [initialize with a preference](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering) using the Value Prop `payment_methods_logos`. If the preference has only one valid payment method, it will stop displaying images and will show the text: "**Account money or installments with no card**".
+> **It is recommended to [initialize with a preference](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering) using the Value Prop `payment_methods_logos`. If the preference has only one valid payment method, it will stop displaying images and will show the text: "**Account money or installments with no card**".
 
 ------------
 ----[mpe, mco, mlu, mlc]----
@@ -98,7 +94,7 @@ When testing your integration, make sure that the `action`, `actionComplement`, 
 >
 > Important
 >
-> It is recommended to [initialize with a preferenc](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering) using the Value Prop `payment_methods_logos`. If the preference has only one valid payment method, it will stop displaying images and will show the text: "**With account money**".
+> *It is recommended to [initialize with a preference](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering) using the Value Prop `payment_methods_logos`. If the preference has only one valid payment method, it will stop displaying images and will show the text: "**With account money**".
 
 ------------
 

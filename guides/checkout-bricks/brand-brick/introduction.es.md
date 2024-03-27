@@ -31,4 +31,4 @@ Se permiten diversas [personalizaciones visuales](/developers/es/docs/checkout-b
 
 ![brand-brick-es](checkout-bricks/brand-brick-es.gif)
 
-</center> 
+</center>

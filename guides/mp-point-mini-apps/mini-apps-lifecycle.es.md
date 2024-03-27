@@ -24,8 +24,4 @@ Esta categoría muestra el estado de los pagos, que pueden ser:
 * `PointPayment.Success`: se inició un flujo de intento de pago, el pago se completó con éxito y el mini app se cargó por completo.
 * `PointPayment.Error`: se inició un flujo de intento de pago, pero el usuario presionó el botón **Volver** y el pago no se completó.
 
-<center>
-
 ![miniapps-lifecycle](/mini-apps/miniapps-lifecycle-es.png)
-
-</center>            

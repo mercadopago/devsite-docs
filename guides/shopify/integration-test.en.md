@@ -33,7 +33,12 @@ Here's how to test the integration:
 4. Open a new incognito window and log in to Mercado Pago using the seller's test account created in the previous step.
 5. In the same incognito window logged in as a seller, access the [Developer dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) and create a new application, following the detailed instructions in the [Developer dashboard documentation](/developers/en/docs/shopify/additional-content/your-integrations/dashboard).
 
+<center>
+
 ![Login](/images/shopify/test-login-esp.gif)
+
+</center>
+
 ----[mlb]----
 Now, follow the step-by-step according to the chosen checkout type to process payments:
 ## Checkout Pro
