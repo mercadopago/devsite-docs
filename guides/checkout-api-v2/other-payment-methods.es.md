@@ -476,37 +476,28 @@ payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 ```
 ```go
-package main
+accessToken := "{{ACCESS_TOKEN}}"
 
-import (
-	"context"
-	"fmt"
 
-	"github.com/mercadopago/sdk-go/pkg/config"
-	"github.com/mercadopago/sdk-go/pkg/payment"
-)
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
 
-func processPayment(r *http.Request) {
-	accessToken := "{{ACCESS_TOKEN}}"
 
-	cfg, err := config.New(accessToken)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+client := paymentmethod.NewClient(cfg)
 
-	client := paymentmethod.NewClient(cfg)
 
-	resources, err := client.List(context.Background())
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
 
-	for _, v := range resources {
-		fmt.Println(v)
-	}
 
+for _, v := range resources {
+   fmt.Println(v)
 }
 ```
 ```curl
@@ -757,37 +748,28 @@ payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
 ```go
-package main
+accessToken := "{{ACCESS_TOKEN}}"
 
-import (
-	"context"
-	"fmt"
 
-	"github.com/mercadopago/sdk-go/pkg/config"
-	"github.com/mercadopago/sdk-go/pkg/payment"
-)
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
 
-func processPayment(r *http.Request) {
-	accessToken := "{{ACCESS_TOKEN}}"
 
-	cfg, err := config.New(accessToken)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+client := paymentmethod.NewClient(cfg)
 
-	client := paymentmethod.NewClient(cfg)
 
-	resources, err := client.List(context.Background())
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
 
-	for _, v := range resources {
-		fmt.Println(v)
-	}
 
+for _, v := range resources {
+   fmt.Println(v)
 }
 ```
 ```curl
@@ -1022,37 +1004,28 @@ payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
 ```go
-package main
+accessToken := "{{ACCESS_TOKEN}}"
 
-import (
-	"context"
-	"fmt"
 
-	"github.com/mercadopago/sdk-go/pkg/config"
-	"github.com/mercadopago/sdk-go/pkg/payment"
-)
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
 
-func processPayment(r *http.Request) {
-	accessToken := "{{ACCESS_TOKEN}}"
 
-	cfg, err := config.New(accessToken)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+client := paymentmethod.NewClient(cfg)
 
-	client := paymentmethod.NewClient(cfg)
 
-	resources, err := client.List(context.Background())
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
 
-	for _, v := range resources {
-		fmt.Println(v)
-	}
 
+for _, v := range resources {
+   fmt.Println(v)
 }
 ```
 ```curl
@@ -1246,37 +1219,28 @@ payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
 ```go
-package main
+accessToken := "{{ACCESS_TOKEN}}"
 
-import (
-	"context"
-	"fmt"
 
-	"github.com/mercadopago/sdk-go/pkg/config"
-	"github.com/mercadopago/sdk-go/pkg/payment"
-)
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
 
-func processPayment(r *http.Request) {
-	accessToken := "{{ACCESS_TOKEN}}"
 
-	cfg, err := config.New(accessToken)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+client := paymentmethod.NewClient(cfg)
 
-	client := paymentmethod.NewClient(cfg)
 
-	resources, err := client.List(context.Background())
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
 
-	for _, v := range resources {
-		fmt.Println(v)
-	}
 
+for _, v := range resources {
+   fmt.Println(v)
 }
 ```
 ```curl
@@ -1461,37 +1425,28 @@ payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
 ```go
-package main
+accessToken := "{{ACCESS_TOKEN}}"
 
-import (
-	"context"
-	"fmt"
 
-	"github.com/mercadopago/sdk-go/pkg/config"
-	"github.com/mercadopago/sdk-go/pkg/payment"
-)
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
 
-func processPayment(r *http.Request) {
-	accessToken := "{{ACCESS_TOKEN}}"
 
-	cfg, err := config.New(accessToken)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+client := paymentmethod.NewClient(cfg)
 
-	client := paymentmethod.NewClient(cfg)
 
-	resources, err := client.List(context.Background())
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
 
-	for _, v := range resources {
-		fmt.Println(v)
-	}
 
+for _, v := range resources {
+   fmt.Println(v)
 }
 ```
 ```curl
@@ -1728,37 +1683,28 @@ payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
 ```go
-package main
+accessToken := "{{ACCESS_TOKEN}}"
 
-import (
-	"context"
-	"fmt"
 
-	"github.com/mercadopago/sdk-go/pkg/config"
-	"github.com/mercadopago/sdk-go/pkg/payment"
-)
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
 
-func processPayment(r *http.Request) {
-	accessToken := "{{ACCESS_TOKEN}}"
 
-	cfg, err := config.New(accessToken)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+client := paymentmethod.NewClient(cfg)
 
-	client := paymentmethod.NewClient(cfg)
 
-	resources, err := client.List(context.Background())
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
 
-	for _, v := range resources {
-		fmt.Println(v)
-	}
 
+for _, v := range resources {
+   fmt.Println(v)
 }
 ```
 ```curl
