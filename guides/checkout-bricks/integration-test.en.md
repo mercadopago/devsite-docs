@@ -4,40 +4,42 @@ The testing stage allows you to analyze whether the integration was done correct
 
 To make a t purchase, you must use the **test credentials** of your **production user**. To obtain them, go to **Application details > Credentials** within the [Developer dashboard](/developers/panel/app) or in your Mercado Pago account by accessing [Your Business > Settings > Management and Administration > Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
-Com as credencias em mãos e a [integração realizada](/developers/pt/docs/checkout-bricks/common-initialization), siga os passos abaixo para realizar a compra teste.
+With the credentials in hand and the [integration completed](/developers/en/docs/checkout-bricks/common-initialization), follow the steps below to perform the test purchase.
 
-## Cartão
+## Card
 
-1. Inicie a integração de seu projeto com as **credenciais de teste**.
-2. Insira qualquer e-mail como usuário pagador (**lembrando que deve ser diferente do e-mail que você utiliza no Mercado Pago**).
-3. Insira os dados de um dos nossos [cartões de teste](/developers/pt/guides/additional-content/your-integrations/test-cards).
-4. Teste diferentes resultados de pagamento utilizando a tabela disponível nos [cartões de teste](/developers/pt/guides/additional-content/your-integrations/test-cards) e preenchendo o _status_ desejado no nome do titular do cartão (campo `card_holder_name`).
-5. Confirme a compra. Será gerado um pagamento com o **status indicado** para teste.
+1. Start the integration of your project with the **test credentials**.
+2. Enter any email as the paying user (**remember it must be different from the email you use on Mercado Pago**).
+3. Enter the details of one of our [test cards](/developers/en/guides/additional-content/your-integrations/test-cards).
+4. Test different payment outcomes using the table available on the [test cards](/developers/en/guides/additional-content/your-integrations/test-cards) and filling in the desired status in the cardholder's name (field `card_holder_name`).
+5. Confirm the purchase. A payment with the **indicated status for testing** will be generated.
 
-## Meios pagamentos offline
+## Offline payment methods
 
-1. Inicie a integração de seu projeto com as **credenciais de teste**.
-2. Insira qualquer e-mail como usuário pagador (**lembrando que deve ser diferente do e-mail que você utiliza no Mercado Pago**).
-3. Insira os dados requeridos pelo formulário.
-4. Confirme a compra. Será gerado um pagamento com **status pendente**.
+1. Start the integration of your project with the **test credential**s.
+2. Enter any email as the paying user (**remember it must be different from the email you use on Mercado Pago**).
+3. Enter the required data into the form.
+4. Confirm the purchase. A payment with a **pending status** will be generated.
 
-## Pagamento com Mercado Pago
+## Payment with Mercado Pago
 
-----[mlb, mla, mlm]---- 
+----[mlb, mla, mlm]----
 
-1. [Crie uma preferência](/developers/pt/reference/preferences/_checkout_preferences/post) com suas **credenciais de teste** e inicie a integração do seu projeto com as credenciais utilizadas.
-2. Vá até o Mercado Pago (via [Payment Brick](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits) ou [Wallet Brick](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering))
-3. Entre no Mercado Pago com uma conta diferente da usada para criar a preferência.
-4. Confirme a compra.
-
-------------
-----[mpe, mco, mlu, mlc]---- 
-1. [Crie uma preferência](/developers/pt/reference/preferences/_checkout_preferences/post) com suas **credenciais de teste** e inicie a integração do seu projeto com as credenciais utilizadas.
-2. Vá até o Mercado Pago (via [Payment Brick](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet) ou [Wallet Brick](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering))
-3. Entre no Mercado Pago com uma conta diferente da usada para criar a preferência.
-4. Confirme a compra.
+1. [Create a preference](/developers/en/reference/preferences/_checkout_preferences/post) with your test credentials and initiate the integration of your project with the used credentials.
+2. Go to Mercado Pago (via [Payment Brick](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits) or [Wallet Brick](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering)).
+3. Log in to Mercado Pago with an account different from the one used to **create the preference**.
+4. Confirm the purchase.
 
 ------------
+----[mpe, mco, mlu, mlc]----
+
+1. [Create a preference](/developers/en/reference/preferences/_checkout_preferences/post) with your test credentials and initiate the integration of your project with the used credentials.
+2. Go to Mercado Pago (via [Payment Brick](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/wallet) or [Wallet Brick](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering)).
+3. Log in to Mercado Pago with an account different from the one used to **create the preference**.
+4. Confirm the purchase.
+
+------------
+
 Done! Once these steps are finished, the integration will be complete and you will be able to use your production credentials to use the Checkout Bricks.
 
 > WARNING

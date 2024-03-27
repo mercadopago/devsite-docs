@@ -12,7 +12,7 @@ Com as credencias em mãos e a [integração realizada](/developers/pt/docs/chec
 2. Insira qualquer e-mail como usuário pagador (**lembrando que deve ser diferente do e-mail que você utiliza no Mercado Pago**).
 3. Insira os dados de um dos nossos [cartões de teste](/developers/pt/guides/additional-content/your-integrations/test-cards).
 4. Teste diferentes resultados de pagamento utilizando a tabela disponível nos [cartões de teste](/developers/pt/guides/additional-content/your-integrations/test-cards) e preenchendo o _status_ desejado no nome do titular do cartão (campo `card_holder_name`).
-5. Confirme a compra. Será gerado um pagamento com o **status indicado** para teste.
+5. Confirme a compra. Será gerado um pagamento com o **status indicado para teste**.
 
 ## Meios pagamentos offline
 
@@ -27,14 +27,14 @@ Com as credencias em mãos e a [integração realizada](/developers/pt/docs/chec
 
 1. [Crie uma preferência](/developers/pt/reference/preferences/_checkout_preferences/post) com suas **credenciais de teste** e inicie a integração do seu projeto com as credenciais utilizadas.
 2. Vá até o Mercado Pago (via [Payment Brick](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits) ou [Wallet Brick](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering))
-3. Entre no Mercado Pago com uma conta diferente da usada para criar a preferência.
+3. Entre no Mercado Pago com uma conta diferente da usada para **criar a preferência**.
 4. Confirme a compra.
 
 ------------
 ----[mpe, mco, mlu, mlc]---- 
 1. [Crie uma preferência](/developers/pt/reference/preferences/_checkout_preferences/post) com suas **credenciais de teste** e inicie a integração do seu projeto com as credenciais utilizadas.
 2. Vá até o Mercado Pago (via [Payment Brick](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet) ou [Wallet Brick](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering))
-3. Entre no Mercado Pago com uma conta diferente da usada para criar a preferência.
+3. Entre no Mercado Pago com uma conta diferente da usada para **criar a preferência**.
 4. Confirme a compra.
 
 ------------
