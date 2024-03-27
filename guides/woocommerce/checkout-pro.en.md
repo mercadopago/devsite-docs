@@ -72,7 +72,7 @@ You can customize the options in the advanced settings section of the payment me
 - **Success URL**: Enter a custom success URL to redirect customers once they have completed the purchase.
 - **Rejected payment URL**: Enter a custom URL to redirect customers if the payment has been rejected.
 - **Pending payment URL**: Enter a custom URL to redirect customers if the payment is pending approval.
-- **Automatic rejection of payments without instant approval**: Activate this option to automatically reject payments that are not approved instantly. To activate it, slide the button.
+- **Automatic rejection of payments without instant approval**: Activate this option to automatically reject payments that are not approved instantly. To activate it, slide the button. Keep in mind that we've already ensured security in your high-risk transactions with 3DS (3-Domain Secure), offering benefits such as higher approval rates and lower fraud risk.
 - **Discount on Mercado Pago payments**: Enter a percentage discount for customers paying with this payment method. To activate it, enter a discount percentage and check the "Activate and show this information on the Mercado Pago checkout" option.
 - **Commission on Mercado Pago payments**: Enter an additional percentage value you want to charge as a commission to customers choosing this payment method. To activate it, enter a discount percentage and check the "Activate and show this information on the Mercado Pago checkout" option.
 
@@ -80,52 +80,39 @@ You can customize the options in the advanced settings section of the payment me
 
 To save the changes in the configuration, click on the **Save changes** button.
 
-At checkout, when buyers choose to pay with Mercado Pago, information is displayed that highlights the exclusive advantages of paying with a Mercado Pago account, such as:
+At checkout, when buyers choose to pay with Mercado Pago, information is displayed that highlights the exclusive advantages of paying with a Mercado Pago account:
 
 ----[mlb]----
 * **Easy login**: login with the same e-mail and password as Mercado Libre.
-* **Pay faster and in many ways**: use saved cards, Pix or available balance in the Mercado Pago account.
+* **Pay faster**: use saved cards, Pix or available balance in the Mercado Pago account.
 * **Purchase protection**: get your money back if the product is not delivered.
-
-<center>
 
 ![woo-chopro-en-mlb](/images/woocomerce/mlb-preview.png)
 
-</center>
 ------------
 
 ----[mla]----
-* **Pay faster**: use saved cards or available balance in your Mercado Pago account.
-* **Installment**: pay in installments with or without a credit card.
-* **Mercado Pago support**: receive help if you have any problems with your purchase.
-
-<center>
+* **Pay faster**: use cash or available balance in your Mercado Pago account.
+* **Installment**: interest-free installments at selected banks.
+* **Purchase protection**: login with the same e-mail and password as Mercado Libre.
 
 ![woo-chopro-en-mla](/images/woocomerce/mla-preview.png)
 
-</center>
 ------------
 
 ----[mlm]----
-* **Easy login**: login with the same e-mail and password as Mercado Libre.
-* **Pay faster and in different ways**: use saved cards, cash, offline means or available balance in your Mercado Pago account.
-* **Purchase protection**: get your money back if the product is not delivered.
-
-<center>
+* **Easy login**: use cash or available balance in your Mercado Pago account.
+* **Pay faster**: use cash or available balance in your Mercado Pago account.
+* **Purchase protection**: login with the same e-mail and password as Mercado Libre.
 
 ![woo-chopro-en-mlm](/images/woocomerce/mlm-preview.png)
 
-</center>
 ------------
-
 ----[mpe, mco, mlu, mlc]----
-* **Easy login**: login with the same e-mail and password as Mercado Libre.
 * **Pay faster**: use cash or available balance in your Mercado Pago account.
 * **Installment**: interest-free installments at selected banks.
-
-<center>
+* **Purchase protection**: login with the same e-mail and password as Mercado Libre.
 
 ![woo-chopro-en-all](/images/woocomerce/all-preview.png)
 
-</center>
 ------------

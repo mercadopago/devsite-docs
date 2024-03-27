@@ -7,15 +7,15 @@ We recommend you customize the checkout information of the store to ensure a bet
 1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
 2. In the store's admin panel, click on **Settings**.
 
-![Panel](/images/shopify/store-panel-en.png)
+![Panel](/images/shopify/store-panel-es.png)
 
 3. Once there, select the **Checkout** option.
 
-![Checkout](/images/shopify/checkout-en.png)
+![Checkout](/images/shopify/checkout-es.png)
 
 4. In the **Customer information** section, select the "Company name" field as mandatory.
 
-![Company name](/images/shopify/company-name-en.png)
+![Company name](/images/shopify/company-name-es.png)
 
 5. Click on **Save**.
 
@@ -23,19 +23,19 @@ We recommend you customize the checkout information of the store to ensure a bet
 
 1. In the store's admin panel, click on **Settings**.
 
-![Panel](/images/shopify/store-panel-en.png)
+![Panel](/images/shopify/store-panel-es.png)
 
 2. Once in Settings, click on **Languages**.
 
-![Language](/images/shopify/language-en.png)
+![Language](/images/shopify/language-es.png)
 
 3. In the "Store languages" section, you'll be able to choose the language in which you want the store to operate. Click on **Change default value**.
 
-![Change language](/images/shopify/change-language-en.png)
+![Change language](/images/shopify/change-language-es.png)
 
 4. On the next screen, choose your preferred language.
 
-![Panel](/images/shopify/change-language-2-en.png)
+![Panel](/images/shopify/change-language-2-es.png)
 
 5. Click on the **Save** button.
 
@@ -45,19 +45,19 @@ The Shopify store will display fields requesting the buyer's personal identifica
 
 1. In the store's admin panel, click on **Settings**.
 
-![Panel](/images/shopify/store-panel-en.png)
+![Panel](/images/shopify/store-panel-es.png)
 
 2. Once there, select the **Checkout** option.
 
-![Checkout](/images/shopify/checkout-en.png)
+![Checkout](/images/shopify/checkout-es.png)
 
 3. In the "Checkout language" section, click on **Manage checkout language**.
 
-![Checkout language](/images/shopify/checkout-language-en.png)
+![Checkout language](/images/shopify/checkout-language-es.png)
 
 4. On the next screen, use the site's search bar to search for the word "Company". The search will return several fields that you can modify.
 
-![Values id](/images/shopify/values-id-en.gif)
+![Values id](/images/shopify/values-id-es.gif)
 
 5. Replace the following entries with the indication of the type of personal identification your store will request according to the country where it operates----[mlb]----(for example, CPF for Brazil)------------:
 

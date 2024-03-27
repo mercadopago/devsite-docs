@@ -43,7 +43,7 @@ To save the changes in the settings, click on the **Finish setup** button.
 
 It's possible to customize options in the advanced settings section of the payment method, providing a more customized experience in the store. To access these options, click on the **Advanced settings** title, and the options described below will be displayed:
 
-- **Automatic rejection of payments without instant approval**: Activate this option to automatically reject payments that are not instantly approved. To activate, click on the sliding button.
+- **Automatic rejection of payments without instant approval**: Activate this option to automatically reject payments that are not instantly approved. To activate, click on the sliding button. Keep in mind that we've already ensured security in your high-risk transactions with 3DS (3-Domain Secure), offering benefits such as higher approval rates and lower fraud risk.
 - **Discounts on Mercado Pago checkouts**: Enter a percentage discount value for customers paying with this payment method. To activate it, enter a discount percentage and check the option "Activate and show this information on the Mercado Pago checkout".
 - **Commission on Mercado Pago checkouts**: Enter an additional percentage value that you want to charge as a commission to customers choosing this payment method. To activate it, enter a discount percentage and check the option "Activate and show this information on the Mercado Pago checkout".
 

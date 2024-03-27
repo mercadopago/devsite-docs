@@ -62,9 +62,9 @@ Para instalar o Checkout Pro (**Checkout Mercado Pago**) em sua loja Shopify, si
 9. No admin do Mercado Pago, acesse **[Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** e selecione sua aplicação. Caso ainda não tenha criado uma aplicação, acesse a [documentação Painel do desenvolvedor](/developers/pt/docs/woocommerce/additional-content/your-integrations/dashboard) e saiba como criá-la. 
 10. Clique em **Credenciais de produção** no menu à esquerda. Copie a `public_key` e o `access_token`.
 
-![Credenciais de produção](/images/shopify/test-prod-credentials.png)
+![Credenciais de produção](/images/woocomerce/test-prod-credentials-api.png)
 
-11. Insira suas credenciais produtivas `access_token` e a `public_key` nos campos correspondentes, tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais.
+11. Insira suas credenciais produtivas `access_token` e a `public_key` nos campos correspondentes, **tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
 
 ![Agregar forma de pago](/images/shopify/add-credentials-es.png)
 

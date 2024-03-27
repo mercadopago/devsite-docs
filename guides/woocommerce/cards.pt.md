@@ -32,7 +32,7 @@ Essa forma de pagamento adicionará o Checkout API, a forma de pagamento que per
 ![Fees](/images/woocomerce/api-fees-warning-cards-pt.png)
 
 7. A opção **Converter moeda** permite que o valor da moeda configurada no WooCommerce seja compatível com o valor da moeda que você utiliza no Mercado Pago. Para ativá-la, clique no botão deslizante.
-8. **Compras com cartões salvos ou saldo no Mercado Pago** é uma funcionalidade para quem possui cartões salvos ou saldo em sua conta Mercado Pago, podendo comprar sem a necessidade de preencher dados. Essa opção exibirá um botão especial em sua conta e direcionará os clientes ao checkout do Mercado Pago para concluir a transação. Se você quiser oferecê-lo, ative-o com o botão deslizante.
+8. **Pagamentos via conta Mercado Pago** é uma funcionalidade para quem possui cartões salvos ou saldo em sua conta Mercado Pago, podendo comprar sem a necessidade de preencher dados. Essa opção exibirá um botão especial em sua conta e direcionará os clientes ao checkout do Mercado Pago para concluir a transação. Se você quiser oferecê-lo, ative-o com o botão deslizante.
 
 ![Convert and MP account](/images/woocomerce/convert-and-mp-account-pt.png)
 
@@ -42,7 +42,7 @@ Para salvar as alterações nas configurações, clique no botão **Concluir con
 
 É possível personalizar as opções na seção de configurações avançadas da forma de pagamento, proporcionando uma experiência mais customizada na loja. Para acessar essas opções, clique no título **Configurações avançadas** e as opções descritas abaixo serão exibidas:
 
-- **Rejeição automática de pagamentos sem aprovação instantânea**: ative esta opção para rejeitar automaticamente pagamentos que não são aprovados instantaneamente. Para ativar, clique no botão deslizante.
+- **Rejeição automática de pagamentos sem aprovação instantânea**: ative esta opção para rejeitar automaticamente pagamentos que não são aprovados instantaneamente. Para ativar, clique no botão deslizante. Tenha em mente de que já garantimos a segurança em suas transações de alto risco com o 3DS (3-Domain Secure), oferecendo benefícios como maior chance de aprovação e menor risco de fraude.
 - **Desconto nos checkouts do Mercado Pago**: insira um valor percentual de desconto para os clientes que pagarem por esta forma de pagamento. Para ativá-lo, insira um percentual de desconto e marque a opção "Ativar e mostrar esta informação no checkout do Mercado Pago".
 - **Comissão nos checkouts do Mercado Pago**: insira um valor percentual adicional que quiser cobrar como comissão aos clientes que optarem por esta forma de pagamento. Para ativá-lo, insira um percentual de desconto e marque a opção "Ativar e mostrar esta informação no checkout do Mercado Pago".
 

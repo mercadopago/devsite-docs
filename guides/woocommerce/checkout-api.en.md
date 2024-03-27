@@ -12,7 +12,13 @@ See below which payment methods are available for the store when integrating the
 ![Active and configure](/images/woocomerce/cho-pro-active-configure-pt.png)
 
 ------------
-----[mla, mlm, mpe, mco, mlu, mlc]----
+----[mla, mlm]----
+* [Offline payment methods - Efectivo](/developers/en/docs/woocommerce/payments-configuration/checkout-api/offline-payments): cash (Mercado Pago account or ticket).
+
+![Active and configure](/images/woocomerce/cho-pro-active-configure-es.png)
+
+------------
+----[mpe, mco, mlu, mlc]----
 * [Offline payment methods - Efectivo](/developers/en/docs/woocommerce/payments-configuration/checkout-api/offline-payments): cash (Mercado Pago account or ticket).
 
 ------------

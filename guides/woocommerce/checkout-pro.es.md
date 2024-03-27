@@ -72,7 +72,7 @@ Puedes personalizar las opciones en la sección de configuraciones avanzadas del
 - **URL de éxito**: ingresa una URL personalizada de éxito para redirigir a los clientes una vez que hayan completado la compra.
 - **URL de pago rechazado**: ingresa una URL personalizada para redirigir a los clientes si el pago ha sido rechazado.
 - **URL de pago pendiente**: ingresa una URL personalizada para redirigir a los clientes si el pago está pendiente de aprobación.
-- **Rechazo automático de pagos sin aprobación instantánea**: activa esta opción para rechazar automáticamente los pagos que no sean aprobados instantáneamente. Para activarlo, desliza el botón.
+- **Rechazo automático de pagos sin aprobación instantánea**: activa esta opción para rechazar automáticamente los pagos que no sean aprobados instantáneamente. Para activarlo, desliza el botón. Ten en cuenta que ya hemos garantizado la seguridad en tus transacciones de alto riesgo con 3DS (3-Domain Secure), ofreciendo beneficios como una mayor tasa de aprobación y menor riesgo de fraude.
 - **Descuento en los checkouts de Mercado Pago**: ingresa un valor porcentual de descuento para los clientes que paguen con este método de pago. Para activarlo, ingresa un porcentaje de descuento y marca la opción "Activar y mostrar esta información en el checkout de Mercado Pago".
 - **Comisiones en los checkouts de Mercado Pago**: ingresa un valor porcentual adicional que desees cobrar como comisión a los clientes que elijan este método de pago. Para activarlo, ingresa un porcentaje de descuento y marca la opción "Activar y mostrar esta información en el checkout de Mercado Pago".
 
@@ -83,49 +83,35 @@ Para guardar los cambios en la configuración, haz clic en el botón **Finalizar
 Al concluir la compra, cuando los compradores eligen pagar con Mercado Pago, se muestra información que destaca las ventajas exclusivas de pagar con una cuenta de Mercado Pago, tales como:
 
 ----[mlb]----
-* **Inicio de sesión fácil**: inicia sesión con el mismo correo electrónico y contraseña que Mercado Libre.
-* **Paga más rápido y de muchas formas**: usa tarjetas guardadas, Pix o saldo disponible en la cuenta de Mercado Pago.
-* **Protección de compra**: recupera tu dinero si el producto no se entrega.
-
-<center>
+* **Login fácil**: usa tarjetas guardadas o saldo disponible en tu cuenta de Mercado Pago.
+* **Paga rápido**: usa tarjetas guardadas o saldo disponible en tu cuenta de Mercado Pago.
+* **Proteja su compra**: recibe ayuda si tienes algún problema con tu compra.
 
 ![woo-chopro-es-mlb](/images/woocomerce/mlb-preview.png)
 
-</center>
 ------------
-
 ----[mla]----
-* **Paga más rápido**: usa tarjetas guardadas o saldo disponible en tu cuenta de Mercado Pago.
-* **Cuotas**: pago a plazos con o sin tarjeta de crédito.
-* **Soporte Mercado Pago**: recibe ayuda si tienes algún problema con tu compra.
-
-<center>
+* **Paga rápido**: usa tarjetas guardadas o saldo disponible en tu cuenta de Mercado Pago.
+* **Accede a cuotas**: pago a plazos con o sin tarjeta de crédito.
+* **Compra con confianza**: recibe ayuda si tienes algún problema con tu compra.
 
 ![woo-chopro-es-mla](/images/woocomerce/mla-preview.png)
 
-</center>
 ------------
 
 ----[mlm]----
-* **Inicio de sesión fácil**: inicia sesión con el mismo correo electrónico y contraseña que Mercado Libre.
-* **Paga más rápido y de diferentes formas**: usa tarjetas guardadas, efectivo, medios de pago offline o saldo disponible en tu cuenta de Mercado Pago.
-* **Protección de compra**: recupera tu dinero si el producto no se entrega.
-
-<center>
+* **Ingressa con facilidad**: usa tarjetas guardadas o saldo disponible en tu cuenta de Mercado Pago.
+* **Paga rápido**: usa tu saldo disponibile en Mercado Pago o tarjetas guardadas.
+* **Proteje tu compra**: recupera tu dinero si no recibes el producto.
 
 ![woo-chopro-es-mlm](/images/woocomerce/mlm-preview.png)
 
-</center>
 ------------
-
 ----[mpe, mco, mlu, mlc]----
-* **Inicio de sesión fácil**: inicia sesión con el mismo correo electrónico y contraseña que Mercado Libre.
-* **Paga más rápido**: usa efectivo o saldo disponible en tu cuenta de Mercado Pago.
-* **Cuotas**: cuotas sin interés en bancos seleccionados.
-
-<center>
+* **Paga rápido**: usa tarjetas guardadas o saldo disponible en tu cuenta de Mercado Pago.
+* **Accede a cuotas**: pago a plazos con o sin tarjeta de crédito.
+* **Compra con confianza**: recibe ayuda si tienes algún problema con tu compra.
 
 ![woo-chopro-es-all](/images/woocomerce/all-preview.png)
 
-</center>
 ------------

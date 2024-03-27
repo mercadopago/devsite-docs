@@ -72,7 +72,7 @@ Para salvar as alterações nas configurações de Checkout Pro, clique no botã
 - **URL de sucesso**: insira uma URL de sucesso personalizada para redirecionar os clientes assim que eles concluírem a compra.
 - **URL de pagamento recusado**: insira uma URL personalizada para redirecionar os clientes caso o pagamento tenha sido recusado.
 - **URL de pagamento pendente**: insira uma URL personalizada para redirecionar os clientes caso o pagamento estiver pendente de aprovação.
-- **Rejeição automática de pagamentos sem aprovação instantânea**: ative esta opção para rejeitar automaticamente pagamentos que não são aprovados instantaneamente. Para ativar, clique no botão deslizante.
+- **Rejeição automática de pagamentos sem aprovação instantânea**: ative esta opção para rejeitar automaticamente pagamentos que não são aprovados instantaneamente. Para ativar, clique no botão deslizante. Tenha em mente de que já garantimos a segurança em suas transações de alto risco com o 3DS (3-Domain Secure), oferecendo benefícios como maior chance de aprovação e menor risco de fraude.
 - **Desconto em checkouts do Mercado Pago**: insira um valor percentual de desconto para os clientes que pagarem por esta forma de pagamento. Para ativá-lo, insira um percentual de desconto e marque a opção "Ativar e mostrar esta informação no checkout do Mercado Pago".
 - **Comissão nos checkouts do Mercado Pago**: insira um valor percentual adicional que quiser cobrar como comissão aos clientes que optarem por esta forma de pagamento. Para ativá-lo, insira um percentual de desconto e marque a opção "Ativar e mostrar esta informação no checkout do Mercado Pago".
 
@@ -83,49 +83,37 @@ Para salvar as alterações nas configurações, clique no botão **Concluir con
 No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresentado um informativo que ressalta as vantagens exclusivas de pagar com uma conta Mercado Pago, como:
 
 ----[mlb]----
-* **Login facilitado**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre.
-* **Pagar mais rápido e de várias maneiras**: utilizar os cartões salvos, Pix ou saldo disponível na conta Mercado Pago.
-* **Proteção à compra**: receber o dinheiro de volta caso o produto não seja entregue.
-
-<center>
+* **Entre fácil**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre.
+* **Pague rápido**: utilizar os cartões salvos, Pix ou saldo disponível na conta Mercado Pago.
+* **Proteja sua compra**: receber o dinheiro de volta caso o produto não seja entregue.
 
 ![woo-chopro-pt-mlb](/images/woocomerce/mlb-preview.png)
 
-</center>
 ------------
 
 ----[mla]----
-* **Pagar mais rápido**: utilizar os cartões salvos ou saldo disponível na conta Mercado Pago.
-* **Parcelamento**: parcelar com ou sem cartão de crédito.
-* **Suporte do Mercado Pago**: receber ajuda caso tenha algum problema com a compra.
-
-<center>
+* **Entre fácil**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre.
+* **Pague rápido**: utilizar os cartões salvos, Pix ou saldo disponível na conta Mercado Pago.
+* **Proteja sua compra**: receber o dinheiro de volta caso o produto não seja entregue.
 
 ![woo-chopro-pt-mla](/images/woocomerce/mla-preview.png)
 
-</center>>
 ------------
 
 ----[mlm]----
-* **Login facilitado**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre. 
-* **Pagar mais rápido e de várias maneiras**: utilizar os cartões salvos, efectivo, meios de pagamento offline ou saldo disponível na conta Mercado Pago.
-* **Proteção à compra**: receber o dinheiro de volta caso o produto não seja entregue.
-
-<center>
+* **Entre fácil**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre.
+* **Pague rápido**: utilizar os cartões salvos, Pix ou saldo disponível na conta Mercado Pago.
+* **Proteja sua compra**: receber o dinheiro de volta caso o produto não seja entregue.
 
 ![woo-chopro-pt-mlm](/images/woocomerce/mlm-preview.png)
 
-</center>>
 ------------
 
 ----[mpe, mco, mlu, mlc]----
-* **Login facilitado**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre. 
-* **Pagar mais rápido**: utilizar dinheiro ou saldo disponível na conta Mercado Pago. 
-* **Parcelamento**: parcelar sem acréscimos em bancos selecionados.
-
-<center>
+* **Entre fácil**: iniciar a sessão com o mesmo e-mail e senha do Mercado Livre.
+* **Pague rápido**: utilizar os cartões salvos, Pix ou saldo disponível na conta Mercado Pago.
+* **Proteja sua compra**: receber o dinheiro de volta caso o produto não seja entregue.
 
 ![woo-chopro-pt-all](/images/woocomerce/all-preview.png)
 
-</center>
 ------------

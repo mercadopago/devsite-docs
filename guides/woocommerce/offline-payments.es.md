@@ -42,7 +42,7 @@ Este medio de pago adicionará----[mlb]---- Checkout Transparente ------------ -
 ![Convert and payments methods 2](/images/woocomerce/api-convert-and-payments-methods-efectivo-es-mx-2.png)
 
 ------------
-----[mla, mlm, mpe, mco, mlu, mlc]----
+----[mpe, mco, mlu, mlc]----
 > Para conocer qué tipos y métodos de pago se aceptan en cada país, consulta la [documentación](/developers/es/docs/sales-processing/payment-methods).
 
 ------------
