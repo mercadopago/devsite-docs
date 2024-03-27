@@ -404,11 +404,7 @@ mp.bricks().create("wallet", "wallet_container", {
 
 A continuación, podrá observar el botón de pago que se muestra en su página.
 
-<center>
-
 ![wallet-render](cow/cow-render-wallet-es.png)
-
-</center>
 
 En el ejemplo anterior, se mostrará un botón de pago y será responsable por abrir el Checkout Pro. Si deseas que la experiencia con Checkout Pro se realice en una **pestaña externa**, consulta la sección [Esquema de apertura](/developers/es/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 

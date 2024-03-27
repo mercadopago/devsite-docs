@@ -6,11 +6,7 @@
 
 O botão de pagamento oferece dois níveis de leitura: o **call to action (botão)** e a **proposta de valor**. Em ambos os casos, o texto pode ser customizado de acordo com as opções disponibilizadas pelo Mercado Pago. Por padrão, o botão de pagamento é renderizado como na imagem a seguir.
 
-<center>
-
 ![cow-text-wallet-default](cow/cow-text-wallet-default.pt.png)
-
-</center>
 
 Para alterar os textos padrões, modifique a propriedade `customization` durante a renderização.
 
@@ -65,8 +61,4 @@ const customization = {
 
 Tais exemplos de customização irão gerar o seguinte resultado:
 
-<center>
-
 ![cow-text-wallet](cow/cow-text-wallet.pt.png)
-
-</center>

@@ -6,11 +6,7 @@ Confira como funciona cada cenário de uso da seção ”Apps”, suas regras e 
 
 Esta é a tela que a pessoa usuária que ainda não tem apps instalados encontra quando entra na seção. Sua função é mostrar quais aplicativos estão disponíveis para serem baixados.
 
-<center>
-
 ![miniapps-available1](/mini-apps/miniapps-available1-pt.png)
-
-</center>
 
 1. **Ícone**: elemento que chama a atenção da pessoa usuária, costuma ser o primeiro contato dela com o app. Use-o para inserir o logo.
 2. **Nome do app**: tem a função de identificar e apresentar o seu aplicativo.
@@ -35,31 +31,19 @@ Esta é a tela que a pessoa usuária que ainda não tem apps instalados encontra
 
 Quando já existem um ou mais aplicativos instalados, os apps disponíveis são organizados como na imagem a seguir.
 
-<center>
-
 ![miniapps-available2](/mini-apps/miniapps-available2-pt.png)
-
-</center>
 
 ## Mini apps do seu negócio
 
 Nesta divisão, a pessoa usuária encontra os aplicativos já baixados na maquininha.
 
-<center>
-
 ![miniapps-business](/mini-apps/miniapps-business-pt.png)
-
-</center>
 
 ## Sobre o app (tela de detalhe)
 
 Aqui, a pessoa usuária tem acesso aos detalhes, benefícios e proposta de valor do seu aplicativo, além da opção de instalá-lo.
 
-<center>
-
 ![miniapps-about-app](/mini-apps/miniapps-about-app-pt.png)
-
-</center>
 
 1. **Nome do desenvolvedor**: identificação do desenvolvedor do aplicativo. Limitações: linha única/até 72 caracteres.
 2. **Carrossel de imagens**: área onde podem ser disponibilizados prints de funcionalidades, interações e soluções importantes do app.<br><br> 
