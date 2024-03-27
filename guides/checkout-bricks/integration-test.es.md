@@ -7,7 +7,7 @@ Con las credenciales configuradas, siga los pasos a continuación para realizar 
 
 Con las credenciales en mano y la [integración realizada](/developers/es/docs/checkout-bricks/common-initialization), sigue los pasos a continuación para realizar la compra de prueba.
 
-## Tarjeta
+## Tarjetas
 
 1. Inicia la integración de tu proyecto con las **credenciales de prueba**.
 2. Ingresa cualquier correo electrónico como usuario pagador (**recuerda que debe ser diferente al correo electrónico que utilizas en Mercado Pago**).

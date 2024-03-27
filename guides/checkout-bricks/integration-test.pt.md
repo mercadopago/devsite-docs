@@ -6,7 +6,7 @@ Para realizar uma compra teste é preciso utilizar as **credenciais de teste** d
 
 Com as credencias em mãos e a [integração realizada](/developers/pt/docs/checkout-bricks/common-initialization), siga os passos abaixo para realizar a compra teste.
 
-## Cartão
+## Cartões
 
 1. Inicie a integração de seu projeto com as **credenciais de teste**.
 2. Insira qualquer e-mail como usuário pagador (**lembrando que deve ser diferente do e-mail que você utiliza no Mercado Pago**).
@@ -14,7 +14,7 @@ Com as credencias em mãos e a [integração realizada](/developers/pt/docs/chec
 4. Teste diferentes resultados de pagamento utilizando a tabela disponível nos [cartões de teste](/developers/pt/guides/additional-content/your-integrations/test-cards) e preenchendo o _status_ desejado no nome do titular do cartão (campo `card_holder_name`).
 5. Confirme a compra. Será gerado um pagamento com o **status indicado para teste**.
 
-## Meios pagamentos offline
+## Meios de pagamento offline
 
 1. Inicie a integração de seu projeto com as **credenciais de teste**.
 2. Insira qualquer e-mail como usuário pagador (**lembrando que deve ser diferente do e-mail que você utiliza no Mercado Pago**).

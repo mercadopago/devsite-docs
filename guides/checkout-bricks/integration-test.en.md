@@ -6,7 +6,7 @@ To make a t purchase, you must use the **test credentials** of your **production
 
 With the credentials in hand and the [integration completed](/developers/en/docs/checkout-bricks/common-initialization), follow the steps below to perform the test purchase.
 
-## Card
+## Cards
 
 1. Start the integration of your project with the **test credentials**.
 2. Enter any email as the paying user (**remember it must be different from the email you use on Mercado Pago**).
