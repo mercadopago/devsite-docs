@@ -187,10 +187,7 @@
                     "required": false,
                     "items": {
                       "type": "string",
-                      "example": [
-                        "correo1@example.com",
-                        "correo2@example.com"
-                      ],
+                      "example": "correo1@example.com",
                       "description": {
                         "en": "Email address for receiving notifications.",
                         "pt": "E-mail para recebimento das notificações.",
@@ -288,10 +285,7 @@
                       "required": false,
                       "items": {
                         "type": "string",
-                        "example": [
-                          "correo1@example.com",
-                          "correo2@example.com"
-                        ],
+                        "example": "correo1@example.com",
                         "description": {
                           "en": "Email.",
                           "pt": "E-mail para recebimento das notificações.",
@@ -761,10 +755,9 @@
                     "required": false,
                     "items": {
                       "type": "string",
-                      "example": [
-                        "correo1@example.com",
-                        "correo2@example.com"
-                      ],
+                      "example":
+                        "correo1@example.com"
+                      ,
                       "description": {
                         "en": "Email.",
                         "pt": "E-mail para recebimento das notificações.",
@@ -861,10 +854,9 @@
                       "required": false,
                       "items": {
                         "type": "string",
-                        "example": [
-                          "correo1@example.com",
+                        "example":
                           "correo2@example.com"
-                        ],
+                        ,
                         "description": {
                           "en": "Email.",
                           "pt": "E-mail para recebimento das notificações.",
@@ -1160,10 +1152,9 @@
                       "required": false,
                       "items": {
                         "type": "string",
-                        "example": [
-                          "correo1@example.com",
+                        "example":
                           "correo2@example.com"
-                        ],
+                        ,
                         "description": {
                           "en": "Email.",
                           "pt": "E-mail para recebimento das notificações.",
