@@ -256,7 +256,7 @@ else:
     # HMAC verification failed
     print("HMAC verification failed")
 ```
-```golang
+```go
 import (
 	"crypto/hmac"
 	"crypto/sha256"
@@ -515,6 +515,45 @@ payment = payment_response["response"]
 
 
 print(payment)
+```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := payment.NewClient(cfg)
+
+
+request := payment.Request{
+   TransactionAmount: <transactionAmount>,
+   Token: <token>,
+   Description: <description>,
+   Installments: <installments>,
+   PaymentMethodID:   <paymentMethodId>,
+   NotificationURL: "https:/mysite.com/notifications/new",
+   Payer: &payment.PayerRequest{
+      Email: <email>,
+      Identification: &payment.IdentificationRequest{
+         Type: <type>,
+         Number: <number>,
+      },
+   },
+}
+
+
+resource, err := client.Create(context.Background(), request)
+if err != nil {
+fmt.Println(err)
+}
+
+
+fmt.Println(resource)
 ```
 ```curl
 curl -X POST \

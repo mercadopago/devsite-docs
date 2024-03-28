@@ -581,6 +581,43 @@ payment = payment_response["response"]
  
 print(payment)
 ```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := payment.NewClient(cfg)
+
+
+request := payment.Request{
+   TransactionAmount: <transaction_amount>,
+   Token: <token>,
+   Description: <description>,
+   PaymentMethodID:   <paymentMethodId>,
+   Payer: &payment.PayerRequest{
+      Email: <email>,
+      Identification: &payment.IdentificationRequest{
+         Type: <type>,
+         Number: <number>,
+      },
+   },
+}
+
+
+resource, err := client.Create(context.Background(), request)
+if err != nil {
+   fmt.Println(err)
+}
+
+
+fmt.Println(resource)
+```
 ```curl
 ===
 Encuentra el estado del pago en el campo _status_.

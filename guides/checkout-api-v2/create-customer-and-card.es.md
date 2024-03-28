@@ -120,6 +120,48 @@ card_response = sdk.card().create(customer["id"], card_data)
 card = card_response["response"]
 
 ```
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+
+	"github.com/mercadopago/sdk-go/pkg/config"
+	"github.com/mercadopago/sdk-go/pkg/customercard"
+)
+
+func main() {
+	accessToken := "{{ACCESS_TOKEN}}"
+
+	cfg, err := config.New(accessToken)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	customerClient := customer.NewClient(cfg)
+	customerCardClient := customercard.NewClient(cfg)
+
+	customerRequest := customer.Request{Email: "{{EMAIL}}"}
+
+	customerResource, err := customerClient.Create(context.Background(), customerRequest)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	cardRequest := customercard.Request{Token: "{{CARD_TOKEN}}"}
+
+	cardResource, err := customerCardClient.Create(context.Background(), customerResource.ID, cardRequest)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	fmt.Println(cardResource)
+}
+```
 ```curl
 
 curl -X POST \

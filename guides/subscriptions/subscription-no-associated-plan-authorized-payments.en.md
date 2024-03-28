@@ -9,7 +9,7 @@ To offer **subscriptions without an associated plan and with authorized payment*
 curl -X POST \
       'https://api.mercadopago.com/preapproval'\
        -H 'Content-Type: application/json' \
-       -H 'Authorization: Bearer 
+       -H 'Authorization: Bearer TEST-2151****' \ 
        -H 'X-scope: stage' \
        --data-raw '{
             "back_url": "https://www.google.com",

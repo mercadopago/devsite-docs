@@ -80,6 +80,55 @@ payment_data = { "capture": True }
 payment_response = sdk.payment().update(payment_id, payment_data)
 payment = payment_response["response"]
 ```
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+
+	"github.com/mercadopago/sdk-go/pkg/config"
+	"github.com/mercadopago/sdk-go/pkg/payment"
+)
+
+func main() {
+	accessToken := "{{ACCESS_TOKEN}}"
+
+	cfg, err := config.New(accessToken)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	client := payment.NewClient(cfg)
+
+	// Create payment.
+	request := payment.Request{
+		TransactionAmount: 105.1,
+		Payer: &payment.PayerRequest{
+			Email: "{{EMAIL}}",
+		},
+		Token:        "{{CARD_TOKEN}}",
+		Installments: 1,
+		Capture:      false,
+	}
+
+	resource, err := client.Create(context.Background(), request)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	// Capture.
+	resource, err = client.Capture(context.Background(), resource.ID)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	fmt.Println(resource)
+}
+```
 ```curl
 curl -X PUT \
 'https://api.mercadopago.com/v1/payments/PAYMENT_ID' \
@@ -185,6 +234,55 @@ payment_data = {
 
 payment_response = sdk.payment().update(payment_id, payment_data)
 payment = payment_response["response"]
+```
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+
+	"github.com/mercadopago/sdk-go/pkg/config"
+	"github.com/mercadopago/sdk-go/pkg/payment"
+)
+
+func main() {
+	accessToken := "{{ACCESS_TOKEN}}"
+
+	cfg, err := config.New(accessToken)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	client := payment.NewClient(cfg)
+
+	// Create payment.
+	request := payment.Request{
+		TransactionAmount: 105.1,
+		Payer: &payment.PayerRequest{
+			Email: "{{EMAIL}}",
+		},
+		Token:        "{{CARD_TOKEN}}",
+		Installments: 1,
+		Capture:      false,
+	}
+
+	resource, err := client.Create(context.Background(), request)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	// Capture.
+	resource, err = client.Capture(context.Background(), resource.ID)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	fmt.Println(resource)
+}
 ```
 ```curl
 
@@ -296,6 +394,55 @@ payment_data = {
 
 payment_response = sdk.payment().update(payment_id, payment_data)
 payment = payment_response["response"]
+```
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+
+	"github.com/mercadopago/sdk-go/pkg/config"
+	"github.com/mercadopago/sdk-go/pkg/payment"
+)
+
+func main() {
+	accessToken := "{{ACCESS_TOKEN}}"
+
+	cfg, err := config.New(accessToken)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	client := payment.NewClient(cfg)
+
+	// Create payment.
+	request := payment.Request{
+		TransactionAmount: 105.1,
+		Payer: &payment.PayerRequest{
+			Email: "{{EMAIL}}",
+		},
+		Token:        "{{CARD_TOKEN}}",
+		Installments: 1,
+		Capture:      false,
+	}
+
+	resource, err := client.Create(context.Background(), request)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	// Capture.
+	resource, err = client.Capture(context.Background(), resource.ID)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	fmt.Println(resource)
+}
 ```
 ```curl
 
