@@ -4,7 +4,13 @@ A etapa de testes permite analisar se a integração foi feita de maneira corret
 
 Para realizar uma compra teste é preciso utilizar as **credenciais de teste** do seu **usuário de produção**. Para obtê-las, acesse o [Painel do desenvolvedor](/developers/panel/app) e vá até **Detalhes da aplicação > Credenciais** ou em sua conta Mercado Pago, acessando [Seu negócio > Configurações > Gestão e Administração > Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
-Com as credencias em mãos e a [integração realizada](/developers/pt/docs/checkout-bricks/common-initialization), siga os passos abaixo para realizar a compra teste.
+Com as credencias em sua posse e a [integração realizada](/developers/pt/docs/checkout-bricks/common-initialization), siga os passos abaixo para realizar a compra teste.
+
+> WARNING
+>
+> Atenção
+>
+> Não utilize e-mail de usuário de teste no campo de e-mail do Brick (se aplicável).
 
 ## Cartões
 
@@ -40,9 +46,3 @@ Com as credencias em mãos e a [integração realizada](/developers/pt/docs/chec
 ------------
 
 Pronto! Finalizadas essas etapas a integração terá sido concluída e você já poderá utilizar suas credenciais de produção para utilizar o Checkout Bricks.
-
-> WARNING
->
-> Atenção
->
-> Não utilize e-mail de usuário de teste no campo de e-mail do Brick (se aplicável).

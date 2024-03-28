@@ -7,6 +7,12 @@ Con las credenciales configuradas, siga los pasos a continuación para realizar 
 
 Con las credenciales en tu poder y la [integración realizada](/developers/es/docs/checkout-bricks/common-initialization), sigue los pasos a continuación para realizar la compra de prueba.
 
+> WARNING
+>
+> Atención
+>
+> No use el correo electrónico de usuario de prueba en el campo de correo electrónico del Brick (si corresponde).
+
 ## Tarjetas
 
 1. Inicia la integración de tu proyecto con las **credenciales de prueba**.
@@ -42,9 +48,3 @@ Con las credenciales en tu poder y la [integración realizada](/developers/es/do
 ------------
 
 ¡Listo! Una vez que se completen estos pasos, la integración estará completa y podrá usar sus credenciales de producción para usar el Checkout Bricks.
-
-> WARNING
->
-> Atención
->
-> No use el correo electrónico de usuario de prueba en el campo de correo electrónico del Brick (si corresponde).

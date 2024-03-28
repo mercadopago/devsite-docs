@@ -4,7 +4,13 @@ The testing stage allows you to analyze whether the integration was done correct
 
 To make a t purchase, you must use the **test credentials** of your **production user**. To obtain them, go to **Application details > Credentials** within the [Developer dashboard](/developers/panel/app) or in your Mercado Pago account by accessing [Your Business > Settings > Management and Administration > Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
-With the credentials in hand and the [integration completed](/developers/en/docs/checkout-bricks/common-initialization), follow the steps below to perform the test purchase.
+With the credentials in your possession and the [integration completed](/developers/en/docs/checkout-bricks/common-initialization), follow the steps below to perform the test purchase.
+
+> WARNING
+>
+> Attention
+>
+> Do not use test user email into the Brick email field (if applicable).
 
 ## Cards
 
@@ -41,9 +47,3 @@ With the credentials in hand and the [integration completed](/developers/en/docs
 ------------
 
 Done! Once these steps are finished, the integration will be complete and you will be able to use your production credentials to use the Checkout Bricks.
-
-> WARNING
->
-> Attention
->
-> Do not use test user email into the Brick email field (if applicable).
