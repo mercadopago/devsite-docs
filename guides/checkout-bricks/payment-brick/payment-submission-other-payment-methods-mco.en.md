@@ -230,9 +230,12 @@ In addition to displaying the payment status, Status Screen Brick will also disp
 
 ![payment-submission-other-payment-methods-status-mco](checkout-bricks/payment-submission-other-payment-methods-status-mco-en.png)
 
-
 > NOTE
 >
 > Important
 >
 > The boleto expiration date can be configured by sending a POST request with the `data_of_expiration` parameter to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post). After expiration, the boleto will be cancelled.
+
+## Test your integration
+
+With the integration completed, you will be able to test payment reception. For more information, access the section [Make test purchase](/developers/en/docs/checkout-bricks/integration-test/test-payment-flow).

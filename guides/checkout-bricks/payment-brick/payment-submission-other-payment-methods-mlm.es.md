@@ -255,3 +255,7 @@ Además, el Status Screen Brick también puede redirigir al comprador al ticket 
 > Importante
 >
 > La fecha de vencimiento del boleto se puede configurar enviando una solicitud POST con el parámetro `data_of_expiration` al endpoint [/v1/payments.](/developers/es/reference/payments/_payments/post) Después del vencimiento, el boleto será cancelado.
+
+## Prueba tu integración
+
+Con la integración completada, podrás probar la recepción de pagos. Para obtener más información, accede a la sección [Hacer compra de prueba](/developers/es/docs/checkout-bricks/integration-test/test-payment-flow).

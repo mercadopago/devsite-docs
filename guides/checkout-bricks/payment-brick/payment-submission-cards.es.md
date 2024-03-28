@@ -307,3 +307,7 @@ Para hacer esto, agregue campos relevantes al objeto enviado, que viene en la re
 > Recomendamos adherirse al protocolo 3DS 2.0 para aumentar la probabilidad de aprobación de sus pagos, lo cual se puede hacer como se describe [aquí.](/developers/es/docs/checkout-bricks/how-tos/integrate-3ds)
 
 Conoce todos los campos disponibles para realizar un pago completo en las [Referencias de API](/developers/es/reference/payments/_payments/post).
+
+## Prueba tu integración
+
+Con la integración completada, podrás probar la recepción de pagos. Para obtener más información, accede a la sección [Hacer compra de prueba](/developers/es/docs/checkout-bricks/integration-test/test-payment-flow).
