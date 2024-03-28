@@ -119,6 +119,16 @@
       "externalDocs": {
         "url": "/docs/checkout-bricks/landing"
       }
+    },
+    "reporting": {
+      "description": {
+        "pt": "Relatórios",
+        "en": "Reports",
+        "es": "Reportes"
+      },
+      "externalDocs": {
+        "url": "/docs/checkout-pro/additional-content/reports/released-money/introduction"
+      }
     }
   }
 }
