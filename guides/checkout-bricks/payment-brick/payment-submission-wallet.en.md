@@ -47,3 +47,7 @@ After completing these steps, Checkout Bricks will have been integrated into the
 > Attention
 >
 > In the marketplace flow, it is not possible to enable installment payments without a credit card.
+
+## Test your integration
+
+With the integration completed, you will be able to test payment reception. For more information, access the section [Make test purchase](/developers/en/docs/checkout-bricks/integration-test/test-payment-flow).

@@ -268,3 +268,7 @@ Some of these fields are: `description` (this field can be shown in created tick
 > We recommend adherence to the 3DS 2.0 protocol, in order to increase the probability of approval of your payments, which can be done as described [here.](/developers/en/docs/checkout-bricks/how-tos/integrate-3ds)
 
 Check [API References](/developers/en/reference/payments/_payments/post) to learn about all the available fields for full payments.
+
+## Test your integration
+
+With the integration completed, you will be able to test payment reception. For more information, access the section [Make test purchase](/developers/en/docs/checkout-bricks/integration-test/test-payment-flow).
