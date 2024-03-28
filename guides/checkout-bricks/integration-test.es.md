@@ -5,7 +5,7 @@ La etapa de prueba permite analizar si la integración se realizó correctamente
 Para realizar una compra de prueba, debe usar las **credenciales de prueba** de su **usuario de producción**. Para obtenerlos, vaya a **Detalles de la aplicación > Credenciales** dentro del [Panel del desarrollador](/developers/panel/app) o en tu cuenta de Mercado Pago, accediendo a [Tu negocio > Configuraciones > Gestión y administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 Con las credenciales configuradas, siga los pasos a continuación para realizar la compra de prueba.
 
-Con las credenciales en mano y la [integración realizada](/developers/es/docs/checkout-bricks/common-initialization), sigue los pasos a continuación para realizar la compra de prueba.
+Con las credenciales en tu poder y la [integración realizada](/developers/es/docs/checkout-bricks/common-initialization), sigue los pasos a continuación para realizar la compra de prueba.
 
 ## Tarjetas
 
