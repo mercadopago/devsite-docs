@@ -64,7 +64,6 @@ const onReady = async () => {
 
 This flow is designed for stores that use Wallet Brick at the end of the checkout process and already have the preference created when rendering the Brick, sending it during initialization. If desired, you can use the Brick by creating the preference at the time of submission (`onSubmit`). See more information in the [Preference on submit](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preference-submit) section.
 
-
 ## Render the Brick
 
 Once the configurations are created, enter the code below to render the brick.
@@ -312,3 +311,7 @@ curl -X POST \
 > For more details on how to configure it, access the [Preferences](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preferences) section.<br/></br>
 > <br/></br>
 > Consider that when a user chooses to make a payment using the Mercado Pago Wallet, he will be redirected to the Mercado Pago page to complete the payment. Therefore, it is necessary to configure the `back_urls` if you want to return to your site at the end of the payment. For more information, visit the [Redirect buyer to your website.](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preferences#bookmark_redirect_the_buyer_to_your_site) section
+
+## Test your integration
+
+With the integration completed, you will be able to test payment reception. For more information, access the section [Make test purchase](/developers/en/docs/checkout-bricks/integration-test/test-payment-flow).
