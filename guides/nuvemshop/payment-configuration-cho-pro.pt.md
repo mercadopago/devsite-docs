@@ -41,13 +41,10 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 
 </center>
 ------------
-
 ----[mla]---- 
-<center>
 
 ![Payments Checkout Pro - Nuvemshop](/images/nuvemshop/cho-pro-mla-es.png)
 
-</center>
 ------------
 ----[mlb]---- 
 <center>

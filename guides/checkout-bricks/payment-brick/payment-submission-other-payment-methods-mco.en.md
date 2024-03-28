@@ -12,7 +12,7 @@ To configure payments with **Efecty**, send a **POST** with the following parame
 >
 > Remember that Brick already resolves most parameters to send the POST. The information return comes in the `onSubmit` callback, inside the `formData` object, where you can find parameters like: `payment_method_id`, `payer.email` and `amount`.
 > <br><br>
-> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example. 
+> Also, it is mandatory to send the attribute `X-Idempotency-Key` to ensure the execution and reexecution of requests without the risk of accidentally performing the same action more than once. To do so, update our [SDKs Library](/developers/en/docs/sdks-library/landing), or generate a UUID V4 and send it in the _header_ of your requests.
 
 | Payment Type | Parameter | Value |
 | --- | --- | --- |
@@ -228,11 +228,7 @@ After the payment creation in the backend using the Mercado Pago SDK, use the **
 
 In addition to displaying the payment status, Status Screen Brick will also display the barcode to copy and paste or scan in order for the buyer to pay. Learn how simple it is to integrate [click here](/developers/en/docs/checkout-bricks/status-screen-brick/introduction).
 
-<center>
-
 ![payment-submission-other-payment-methods-status-mco](checkout-bricks/payment-submission-other-payment-methods-status-mco-en.png)
-
-</center>
 
 
 > NOTE

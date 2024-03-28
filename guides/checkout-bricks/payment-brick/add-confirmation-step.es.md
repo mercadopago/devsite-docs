@@ -185,18 +185,14 @@ const settings = {
 Datos relacionados con la dirección de entrega, que solo se renderizará cuando esta información esté disponible.
 
 ----[mlm]----
-<center>
 
 ![review-confirm-shipping-mlm](checkout-bricks/review-confirm-shipping-mlm-es.png)
 
-</center>
 ------------
 ----[mla]----
-<center>
 
 ![review-confirm-shipping-mla](checkout-bricks/review-confirm-shipping-mla-es.png)
 
-</center>
 ------------
 
 A continuación se muestra un ejemplo del objeto de _shipping_:
@@ -228,18 +224,14 @@ const settings = {
 Cuadro que muestra los datos fiscales del pedido, que solo se renderizará cuando esta información esté disponible.
 
 ----[mlm]----
-<center>
 
 ![review-confirm-billing-mlm](checkout-bricks/review-confirm-billing-mlm-es.png)
 
-</center>
 ------------
 ----[mla]----
-<center>
 
 ![review-confirm-billing-mla](checkout-bricks/review-confirm-billing-mla-es.png)
 
-</center>
 ------------
 
 A continuación se muestra un ejemplo del objeto de _billing_:
@@ -275,18 +267,14 @@ const settings = {
 En el campo `discounts`, es posible indicar cupones u otros tipos de descuento aplicados al pedido:
 
 ----[mlm]----
-<center>
 
 ![review-confirm-discounts-mlm](checkout-bricks/review-confirm-discounts-mlm-es.png)
 
-</center>
 ------------
 ----[mla]----
-<center>
 
 ![review-confirm-discounts-mla](checkout-bricks/review-confirm-discounts-mla-es.png)
 
-</center>
 ------------
 
 ```Javascript
@@ -374,11 +362,9 @@ La información de los ítems y el envío se devolverá en el objeto `formData`,
 Consulte este [tema](/developers/es/docs/checkout-bricks/payment-brick/advanced-features/additional-data) especializado si desea utilizar el campo `additionalData`. Para obtener más detalles sobre el proceso de envío, consulte la sección de [envío de pagos](/developers/es/docs/checkout-bricks/payment-brick/payment-submission).
 
 ----[mla]----
-<center>
 
 ![review-confirm-payment-mla](checkout-bricks/review-confirm-payment-mla-es.png)
 
-</center>
 ------------
 
 ## Personalización de textos

@@ -33,7 +33,12 @@ A continuación, te indicamos cómo probar la integración:
 4. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago utilizando la cuenta de prueba del vendedor creada en el paso anterior.
 5. En la misma ventana de incógnito en la que iniciaste sesión como vendedor, accede al [Panel del desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) y crea una nueva aplicación siguiendo las instrucciones detalladas en la [documentación del Panel del desarrollador.](/developers/es/docs/shopify/additional-content/your-integrations/dashboard)
 
+<center>
+
 ![Iniciar sesión](/images/shopify/test-login-esp.gif)
+
+</center>
+
 ----[mlb]----
 Ahora, sigue los pasos según el checkout que hayas elegido para procesar los pagos:
 ## Checkout Pro

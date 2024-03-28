@@ -355,6 +355,8 @@ available_payments: credit, debit, mercadopago, atm
 ---
 ------------
 
+----[mlb, mlm, mlu, mlc, mco, mpe]----
+
 ---
 anchored_menu: 
  - title: Card Payment Brick
@@ -366,5 +368,24 @@ anchored_menu:
  - title: Wallet Brick
  - link: /developers/en/live-demo/wallet-brick
 ---
+
+------------
+----[mla]----
+
+---
+anchored_menu: 
+ - title: Card Payment Brick
+ - link: /developers/en/live-demo/card-payment-brick
+ - title: Payment Brick
+ - link: /developers/en/live-demo/payment-brick
+ - title: Status Screen Brick
+ - link: /developers/en/live-demo/status-screen-brick
+ - title: Wallet Brick
+ - link: /developers/en/live-demo/wallet-brick
+ - title: Brand Brick
+ - link: /developers/en/live-demo/brand-brick
+---
+
+------------
 
 > For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)

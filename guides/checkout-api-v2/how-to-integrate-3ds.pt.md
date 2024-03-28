@@ -32,35 +32,29 @@ Abaixo estão as etapas para realizar uma integração com 3DS.
 > Recomendamos utilizar o valor `optional` na implementação do 3DS, por equilibrar segurança e a aprovação de transações. O `mandatory` deve ser utilizado apenas para integrações que exijam que todas as transações aprovadas passem por 3DS.
 
 [[[
-```curl
+```php
+<?php
+  use MercadoPago\Client\Payment\PaymentClient;
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
-curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
---header 'Authorization: <ENV_ACCESS_TOKEN>' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "payer": {
-        "email": "<BUYER_EMAIL>"
-    },
-    "additional_info": {
-        "items": [
-            {
-                "quantity": <ITEM_QUANTITY>,
-                "category_id": <CATEGORY_ID>,
-                "title": <ITEM_TITLE>,
-                "unit_price": <TRANSACTION_AMOUNT>
-            }
-        ]
-    },
-    "payment_method_id": <PAYMENT_METHOD_ID>,
-    "marketplace": "NONE",
-    "installments": <INSTALLLMENTS_NUMBER>,
-    "transaction_amount": <TRANSACTION_AMOUNT>,
-    "description": "<DESCRIPTION>",
-    "token": "CARD_TOKEN",
-    "three_d_secure_mode": "optional",
-    "capture": true,
-    "binary_mode": false
-}'
+  $client = new PaymentClient();
+  $request_options = new RequestOptions();
+  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+
+  $payment = $client->create([
+    "transaction_amount" => <TRANSACTION_AMOUNT>,
+    "token" => "CARD_TOKEN",
+    "description" => "<DESCRIPTION>",
+    "installments" => <INSTALLMENTS_NUMBER>,
+    "payment_method_id" => "<PAYMENT_METHOD_ID>",
+    "issuer_id" => "<ISSUER_ID>",
+    "payer" => [
+      "email" => $_POST['email']
+    ],
+    "three_d_secure_mode" => "optional"
+  ], $request_options);
+  echo implode($payment);
+?>
 ```
 ```java
 MercadoPagoConfig.setAccessToken("<ENV_ACCESS_TOKEN>");
@@ -100,30 +94,6 @@ var request = new PaymentCreateRequest
 };
 var client = new PaymentClient();
 Payment payment = await client.CreateAsync(request);
-```
-```php
-<?php
-  use MercadoPago\Client\Payment\PaymentClient;
-  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
-
-  $client = new PaymentClient();
-  $request_options = new RequestOptions();
-  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
-
-  $payment = $client->create([
-    "transaction_amount" => <TRANSACTION_AMOUNT>,
-    "token" => "CARD_TOKEN",
-    "description" => "<DESCRIPTION>",
-    "installments" => <INSTALLMENTS_NUMBER>,
-    "payment_method_id" => "<PAYMENT_METHOD_ID>",
-    "issuer_id" => "<ISSUER_ID>",
-    "payer" => [
-      "email" => $_POST['email']
-    ],
-    "three_d_secure_mode" => "optional"
-  ], $request_options);
-  echo implode($payment);
-?>
 ```
 ```node
 import { MercadoPagoConfig, Payment } from 'mercadopago';
@@ -177,6 +147,78 @@ payment_data = {
 }
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
+```
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+
+	"github.com/mercadopago/sdk-go/pkg/config"
+	"github.com/mercadopago/sdk-go/pkg/payment"
+)
+
+func main() {
+	accessToken := "<ENV_ACCESS_TOKEN>"
+
+	cfg, err := config.New(accessToken)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	client := payment.NewClient(cfg)
+
+	request := payment.Request{
+		TransactionAmount:<TRANSACTION_AMOUNT>,
+		Payer: &payment.PayerRequest{
+			Email: "<BUYER_EMAIL>",
+		},
+		Token:        "<CARD_TOKEN>",
+		Installments: <INSTALLLMENTS_NUMBER>,
+		Description: "<DESCRIPTION>",
+		ThreeDSecureMode: "optional",
+	}
+
+	resource, err := client.Create(context.Background(), request)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	fmt.Println(resource)
+}
+```
+```curl
+
+curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
+--header 'Authorization: <ENV_ACCESS_TOKEN>' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "payer": {
+        "email": "<BUYER_EMAIL>"
+    },
+    "additional_info": {
+        "items": [
+            {
+                "quantity": <ITEM_QUANTITY>,
+                "category_id": <CATEGORY_ID>,
+                "title": <ITEM_TITLE>,
+                "unit_price": <TRANSACTION_AMOUNT>
+            }
+        ]
+    },
+    "payment_method_id": <PAYMENT_METHOD_ID>,
+    "marketplace": "NONE",
+    "installments": <INSTALLLMENTS_NUMBER>,
+    "transaction_amount": <TRANSACTION_AMOUNT>,
+    "description": "<DESCRIPTION>",
+    "token": "CARD_TOKEN",
+    "three_d_secure_mode": "optional",
+    "capture": true,
+    "binary_mode": false
+}'
 ```
 ]]]
 
@@ -381,25 +423,6 @@ Os passos para criar o pagamento são os mesmos. Em caso de dúvida sobre como c
 
  
 [[[
-```curl
-curl -X POST \
-   -H 'accept: application/json' \
-   -H 'content-type: application/json' \
-   -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
-   'https://api.mercadopago.com/v1/payments' \
-   -d '{
-         "transaction_amount": 100,
-         "token": "CARD_TOKEN",
-         "description": "Blue shirt",
-         "installments": 1,
-         "payment_method_id": "master",
-         "issuer_id": 310,
-         "payer": {
-           "email": "PAYER_EMAIL"
-         },
-         "three_d_secure_mode": "optional"
-   }'
-```
 ```php
 <?php
   use MercadoPago\Client\Payment\PaymentClient;
@@ -561,6 +584,69 @@ payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
  
 print(payment)
+```
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+
+	"github.com/mercadopago/sdk-go/pkg/config"
+	"github.com/mercadopago/sdk-go/pkg/payment"
+)
+
+func processPayment(r *http.Request) {
+	accessToken := "{{ACCESS_TOKEN}}"
+
+	cfg, err := config.New(accessToken)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	client := payment.NewClient(cfg)
+
+	request := payment.Request{
+		TransactionAmount: r.FormValue("transactionAmount"),
+		Token: r.FormValue("token"),
+            Description: r.FormValue("description"),
+		PaymentMethodID:   r.FormValue("paymentMethodId"),
+		Payer: &payment.PayerRequest{
+			Email: r.FormValue("email"),
+			Identification: &payment.IdentificationRequest{
+				Type: r.FormValue("type"),
+				Number: r.FormValue("number"),
+			},
+		},
+	}
+
+	resource, err := client.Create(context.Background(), request)
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	fmt.Println(resource)
+}
+```
+```curl
+curl -X POST \
+   -H 'accept: application/json' \
+   -H 'content-type: application/json' \
+   -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+   'https://api.mercadopago.com/v1/payments' \
+   -d '{
+         "transaction_amount": 100,
+         "token": "CARD_TOKEN",
+         "description": "Blue shirt",
+         "installments": 1,
+         "payment_method_id": "master",
+         "issuer_id": 310,
+         "payer": {
+           "email": "PAYER_EMAIL"
+         },
+         "three_d_secure_mode": "optional"
+   }'
 ```
 ]]]
 
