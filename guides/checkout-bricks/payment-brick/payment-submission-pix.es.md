@@ -203,3 +203,7 @@ Además de mostrar el estado del pago, Status Screen Brick también mostrará el
 > Si usó las credenciales de producción de un usuario de prueba para generar el pago Pix, se producirá un error al hacer clic en el botón que lo lleva a la página del QR Code. Para verlo correctamente, simplemente elimine el fragmento `/sandbox` de la URL de la página abierta.
 
 ![payment-submission-pix-status](checkout-bricks/payment-submission-pix-status-es.jpg)
+
+## Prueba tu integración
+
+Con la integración completada, podrás probar la recepción de pagos. Para obtener más información, accede a la sección [Hacer compra de prueba](/developers/es/docs/checkout-bricks/integration-test/test-payment-flow).
