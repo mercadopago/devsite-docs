@@ -2,7 +2,7 @@
  
 The opening scheme allows you to define how the checkout will open for the user. By default, Checkout Pro is opened in a **redirect** way, that is, with user redirection within the same page.
 
-However, it is possible to customize the opening so that it opens on an external page, for example, or define the **modal** model, in which Checkout Pro opens in a window within the site itself, without redirection.
+However, it is possible to customize the opening so that it opens on an external page.
 
 > NOTE
 > 
@@ -12,7 +12,8 @@ However, it is possible to customize the opening so that it opens on an external
 
 ## Redirection scheme to another page
 
-Changing the redirection behavior is done by the `redirectMode` property, which can assume the values `self` or `blank`.
+
+This scheme will cause the checkout to open in another browser or separate tab. Changing the redirection behavior is done by the `redirectMode` property, which can assume the values `self` or `blank`.
 
 | Value | Description |
 | --- |--- |

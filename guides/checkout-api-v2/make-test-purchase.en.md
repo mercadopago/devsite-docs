@@ -2,7 +2,7 @@
 
 The testing stage allows you to analyze whether the integration was done correctly and whether payments are being processed without errors, preventing errors from appearing when making the checkout available to end buyers.
 
-To make a t purchase, you must use the **test credentials** of your **production user**. To obtain them, go to **Dashboard > Your Application > Test Credentials** and copy the available information.
+To make a t purchase, you must use the **test credentials** of your **production user**. To obtain them, go to **Application details > Credentials** within the [Developer dashboard](/developers/panel/app) or in your Mercado Pago account by accessing [Your Business > Settings > Management and Administration > Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
 With the credentials in hand, follow the steps below to make the test purchase.
 

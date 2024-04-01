@@ -47,3 +47,7 @@ Ao concluir essas etapas, o Checkout Bricks terá sido integrado ao marketplace 
 > Atenção
 >
 > No fluxo de _marketplace_ não é possível habilitar pagamentos parcelados sem cartão.
+
+## Teste sua integração
+
+Com a integração finalizada, você poderá testar o recebimento de pagamentos. Para mais informações, acesse a seção [Realizar compra teste](/developers/pt/docs/checkout-bricks/integration-test/test-payment-flow).

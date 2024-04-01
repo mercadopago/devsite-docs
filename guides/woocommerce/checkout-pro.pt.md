@@ -9,11 +9,8 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 * **Pagar mais rápido e de várias maneiras**: utilizar os cartões salvos, Pix ou saldo disponível na conta Mercado Pago.
 * **Proteção à compra**: receber o dinheiro de volta caso o produto não seja entregue.
 
-<center>
-
 ![woo-chopro-pt-mlb](/images/woocomerce/woo-chopro-pt-mlb.png)
 
-</center>
 ------------
 
 ----[mla]----
@@ -21,11 +18,8 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 * **Parcelamento**: parcelar com ou sem cartão de crédito.
 * **Suporte do Mercado Pago**: receber ajuda caso tenha algum problema com a compra.
 
-<center>
-
 ![woo-chopro-pt-mla](/images/woocomerce/woo-chopro-pt-mla.png)
 
-</center>>
 ------------
 
 ----[mlm]----
@@ -33,11 +27,8 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 * **Pagar mais rápido e de várias maneiras**: utilizar os cartões salvos, efectivo, meios de pagamento off-line ou saldo disponível na conta Mercado Pago.
 * **Proteção à compra**: receber o dinheiro de volta caso o produto não seja entregue.
 
-<center>
-
 ![woo-chopro-pt-mlm](/images/woocomerce/woo-chopro-pt-mlm.png)
 
-</center>>
 ------------
 
 ----[mpe, mco, mlu, mlc]----
@@ -45,11 +36,8 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 * **Pagar mais rápido**: utilizar dinheiro ou saldo disponível na conta Mercado Pago. 
 * **Parcelamento**: parcelar sem acréscimos em bancos selecionados.
 
-<center>
-
 ![woo-chopro-pt-all](/images/woocomerce/woo-chopro-pt-all.png)
 
-</center>
 ------------
 
 ## Configure o meio de pagamento

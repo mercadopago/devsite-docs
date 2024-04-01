@@ -14,11 +14,7 @@ Antes de começar a desenvolver sua solução, veja as condições que devem ser
 
 Para garantir que a integração seja exitosa, considere as características da maquininha e como o aplicativo se adaptará a elas.
 
-<center>
-
 ![prerequisites](/main-apps/prerequisites-all.png)
-
-</center>
 
 | Especificação | Descrição |
 |---|---|

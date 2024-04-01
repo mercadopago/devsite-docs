@@ -67,7 +67,7 @@ Para isso, de acordo com o seu país, utilize algum dos cartões de **crédito**
 | Mastercard | 5287 3383 1025 3304 | 123 | 11/25 |
 | Visa | 4002 7686 9439 5619 | 123 | 11/25 |
 
-Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão e utilize:
+Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão (campo `card_holder_name`):
  
 | Status de pagamento | Descrição | Documento de identidade |
 | --- | --- | --- |
@@ -86,7 +86,7 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | :--- | :---: | :---: | :---: |
 | Elo | 5067 7667 8388 8311 | 123 | 11/25 |
 
-Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão:
+Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão (campo `card_holder_name`):
  
 | Status de pagamento | Descrição | Documento de identidade |
 | --- | --- | --- |
@@ -106,7 +106,7 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | Mastercard | 5241 0198 2664 6950 | 123 | 11/25 |
 | Visa | 4023 6535 2391 4373 | 123 | 11/25 |
 
-Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão:
+Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão (campo `card_holder_name`):
  
 | Status de pagamento | Descrição | Documento de identidade |
 | --- | --- | --- |
@@ -125,7 +125,7 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | :--- | :---: | :---: | :---: |
 | Visa | 4915 1120 5524 6507 | 123 | 11/25 |
 
-Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão:
+Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão (campo `card_holder_name`):
  
 | Status de pagamento | Descrição | Documento de identidade | 
 | --- | --- | --- | 
@@ -145,7 +145,7 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | Mastercard | 5579 0534 6148 2647 | 123 | 11/25 |
 | Visa | 4189 1412 2126 7633 | 123 | 11/25 |
 
-Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão:
+Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão (campo `card_holder_name`):
  
 | Status de pagamento | Descrição |
 | --- | --- |
@@ -164,7 +164,7 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | :--- | :---: | :---: | :---: |
 | Visa | 4213 0163 1470 6756 | 123 | 11/25 |
 
-Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão:
+Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão (campo `card_holder_name`):
  
 | Status de pagamento | Descrição | Documento de identidade |
 | --- | --- | --- |
@@ -183,7 +183,7 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | :--- | :---: | :---: | :---: |
 | Mastercard | 5178 7816 2220 2455 | 123 | 11/25 |
 
-Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão:
+Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão (campo `card_holder_name`):
  
 | Status de pagamento | Descrição | Documento de identidade |
 | --- | --- | --- |

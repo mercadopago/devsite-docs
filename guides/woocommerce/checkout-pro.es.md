@@ -9,47 +9,32 @@ Al concluir la compra, cuando los compradores eligen pagar con Mercado Pago, se 
 * **Paga más rápido y de muchas formas**: usa tarjetas guardadas, Pix o saldo disponible en la cuenta de Mercado Pago.
 * **Protección de compra**: recupera tu dinero si el producto no se entrega.
 
-<center>
-
 ![woo-chopro-es-mlb](/images/woocomerce/woo-chopro-es-mlb.png)
 
-</center>
 ------------
-
 ----[mla]----
 * **Paga más rápido**: usa tarjetas guardadas o saldo disponible en tu cuenta de Mercado Pago.
 * **Cuotas**: pago a plazos con o sin tarjeta de crédito.
 * **Soporte Mercado Pago**: recibe ayuda si tienes algún problema con tu compra.
 
-<center>
-
 ![woo-chopro-es-mla](/images/woocomerce/woo-chopro-es-mla.png)
 
-</center>
 ------------
-
 ----[mlm]----
 * **Inicio de sesión fácil**: inicia sesión con el mismo correo electrónico y contraseña que Mercado Libre.
 * **Paga más rápido y de diferentes formas**: usa tarjetas guardadas, efectivo, medios de pago offline o saldo disponible en tu cuenta de Mercado Pago.
 * **Protección de compra**: recupera tu dinero si el producto no se entrega.
 
-<center>
-
 ![woo-chopro-es-mlm](/images/woocomerce/woo-chopro-es-mlm.png)
 
-</center>
 ------------
-
 ----[mpe, mco, mlu, mlc]----
 * **Inicio de sesión fácil**: inicia sesión con el mismo correo electrónico y contraseña que Mercado Libre.
 * **Paga más rápido**: usa efectivo o saldo disponible en tu cuenta de Mercado Pago.
 * **Cuotas**: cuotas sin interés en bancos seleccionados.
 
-<center>
-
 ![woo-chopro-es-all](/images/woocomerce/woo-chopro-es-all.png)
 
-</center>
 ------------
 
 ## Configurar el medio de pago

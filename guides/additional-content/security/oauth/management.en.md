@@ -1,6 +1,6 @@
 # Management
  
-Currently there are different ways in which the **access tokens** and **temporal grants** created can be disabled and invalidated to authorize requests for protected resources or to exchange them for new tokens.
+Currently there are different ways in which the **_Access tokens_** and **temporal grants** created can be disabled and invalidated to authorize requests for protected resources or to exchange them for new tokens.
  
 * **Expiration**: after the time set at the time of creation, the token automatically expires and cannot be obtained.
 * **User password change**: there are password change flows where the seller can revoke all your credentials, including associated tokens and temporal grants.

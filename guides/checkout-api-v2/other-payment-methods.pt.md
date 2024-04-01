@@ -300,7 +300,7 @@ Para configurar pagamentos com **boleto bancário** ou **pagamento em lotérica*
 >
 > Atenção
 >
-> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token.
+> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token. Para mais informações, accese [Credenciais](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials).
 
 | Tipo de pagamento  | Parâmetro  | Valor  |
 | --- | --- | --- |
@@ -474,6 +474,31 @@ payment_data = {
 payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 ```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := paymentmethod.NewClient(cfg)
+
+
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+for _, v := range resources {
+   fmt.Println(v)
+}
+```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
@@ -601,9 +626,9 @@ Para configurar pagamentos com **Rapipago** e/ou **Pago Fácil**, envie um **POS
 
 > WARNING
 >
-> Importante
+> Atenção
 >
-> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token.
+> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token. Para mais informações, accese [Credenciais](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -717,6 +742,31 @@ payment_data = {
 
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
+```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := paymentmethod.NewClient(cfg)
+
+
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+for _, v := range resources {
+   fmt.Println(v)
+}
 ```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
@@ -835,9 +885,9 @@ Para configurar pagamentos com  **OXXO**, **Paycash**,  **Citibanamex**,  **Sant
 
 > WARNING
 >
-> Importante
+> Atenção
 >
-> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token.
+> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token. Para mais informações, accese [Credenciais](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -952,6 +1002,31 @@ payment_data = {
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := paymentmethod.NewClient(cfg)
+
+
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+for _, v := range resources {
+   fmt.Println(v)
+}
+```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
@@ -1025,9 +1100,9 @@ Para configurar pagamentos com **PagoEfectivo**, envie um **POST** com os parâm
 
 > WARNING
 >
-> Importante
+> Atenção
 >
-> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token.
+> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token. Para mais informações, accese [Credenciais](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -1141,6 +1216,31 @@ payment_data = {
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := paymentmethod.NewClient(cfg)
+
+
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+for _, v := range resources {
+   fmt.Println(v)
+}
+```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
@@ -1202,9 +1302,9 @@ Para configurar pagamentos com **Efecty**, envie um **POST** com os devidos par�
 
 > WARNING
 >
-> Importante
+> Atenção
 >
-> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar a sua Chave Privada (`access_token`). 
+> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token. Para mais informações, accese [Credenciais](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -1318,6 +1418,31 @@ payment_data = {
 
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
+```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := paymentmethod.NewClient(cfg)
+
+
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+for _, v := range resources {
+   fmt.Println(v)
+}
 ```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
@@ -1439,9 +1564,9 @@ Para configurar pagamentos com **Abitab** e/ou **Redpagos**, envie um POST com o
 
 > WARNING
 >
-> Importante
+> Atenção
 >
-> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token.
+> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token. Para mais informações, accese [Credenciais](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -1554,6 +1679,31 @@ payment_data = {
 
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
+```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := paymentmethod.NewClient(cfg)
+
+
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+for _, v := range resources {
+   fmt.Println(v)
+}
 ```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \

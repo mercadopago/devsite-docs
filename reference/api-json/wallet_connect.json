@@ -35,7 +35,7 @@
             },
             "schema": {
               "type": "string",
-              "example": "PLATFORM_ID"
+              "example": "YOUR_PLATFORM_ID"
             }
           }
         ],
@@ -245,7 +245,7 @@
             },
             "schema": {
               "type": "string",
-              "example": "PLATFORM_ID"
+              "example": "YOUR_PLATFORM_ID"
             }
           }
         ],
@@ -446,7 +446,7 @@
             },
             "schema": {
               "type": "string",
-              "example": "YOUR_ACCESS_TOKEN"
+              "example": "YOUR_PLATFORM_ID"
             }
           }
         ],
@@ -602,7 +602,7 @@
             },
             "schema": {
               "type": "string",
-              "example": "YOUR_ACCESS_TOKEN"
+              "example": "YOUR_PLATFORM_ID"
             }
           }
         ],

@@ -11,12 +11,12 @@ Además de estas cuentas, también es importante utilizar las [tarjetas de prueb
 
 Para crear cuentas y probar el funcionamiento de las integraciones, sigue los siguientes pasos:
 
-1. En el [Devsite](/developers/pt/docs), navega hasta **[Tus integraciones](/developers/panel/app)** y haz clic en la tarjeta correspondiente a tu aplicación.
+1. En el [Devsite](/developers/es/docs), navega hasta **[Tus integraciones](/developers/panel/app)** y haz clic en la tarjeta correspondiente a tu aplicación.
 2. En la página de la aplicación, ve a la sección **Cuentas de prueba** y haz clic en el botón **+ Crear cuenta de prueba**.
 3. En la pantalla "Crear nueva cuenta", ingresa una descripción para identificar la cuenta. Por ejemplo: "Vendedor - tienda 1".
 4. A continuación, selecciona el **país de operación** de la cuenta. Esta información **no se podrá editar más adelante**, y además, los usuarios Comprador y Vendedor deben ser del mismo país.
 5. Ingresa un **valor ficticio en dinero** que servirá como referencia para probar tus aplicaciones. Este valor aparecerá como saldo en la cuenta de Mercado Pago del usuario de prueba y se podrá utilizar para simular pagos, al igual que con las [tarjetas de prueba](/developers/es/guides/additional-content/your-integrations/test-cards).
-6. Autoriza el uso de tus datos personales de acuerdo con la [Declaración de Privacidad](https://www.mercadopago.com.br/privacidade) y asegúrate de que tu cuenta utiliza las herramientas de Mercado Pago según los [Términos y Condiciones](/developers/es/docs/resources/legal/terms-and-conditions) marcando la casilla de selección.
+6. Autoriza el uso de tus datos personales de acuerdo con la ----[mlb]----[Declaración de Privacidad](https://www.mercadopago.com.br/privacidade)------------ ----[mla, mlm, mpe, mco, mlu, mlc]----[Declaración de Privacidad](https://www.mercadopago[FAKER][URL][DOMAIN]/privacidad)------------ y asegúrate de que tu cuenta utiliza las herramientas de Mercado Pago según los [Términos y Condiciones](/developers/es/docs/resources/legal/terms-and-conditions) marcando la casilla de selección.
 7. Haz clic en **Crear cuenta de prueba**.
 
 > WARNING
