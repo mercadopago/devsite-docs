@@ -281,6 +281,8 @@ In addition to displaying the payment status, Status Screen Brick will also disp
 > Important
 >
 > The boleto expiration date can be configured by sending a POST request with the `data_of_expiration` parameter to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post). After expiration, the boleto will be cancelled.
+> <br><br>
+> The crediting period takes between 2 business hours, depending on the payment method. That's why we recommend that you set the expiration date to a minimum of 3 days to ensure the payment to be made.
 
 ## Test your integration
 

@@ -10,7 +10,7 @@ Para integrar el checkout a tu tienda en Yampi, sigue los siguientes pasos.
 2. En la pantalla de **administración del medio de pago seleccionado**, si aún no está indicado, selecciona la **afiliação** registrada para Mercado Pago.
 3. Para algunos de los métodos de pago disponibles, también puedes configurar algunos datos, como:
  
-* **Boleto Bancário**: indicar un porcentaje de descuento para pagos realizados con comprobante bancario, informar el número de días a considerar para vencimiento y cancelación de comprobantes vencidos, además de insertar posibles instrucciones relacionadas con el medio de pago.
+* **Boleto bancário**: indicar un porcentaje de descuento para pagos realizados con boleto bancario, informar el número de días a considerar para vencimiento y cancelación de boletos vencidos, además de insertar posibles instrucciones relacionadas con el medio de pago.
 * **Pix**: indica un porcentaje de descuento para pagos realizados con Pix.
  
 4. Haz clic en **Salvar** para completar la configuración.
