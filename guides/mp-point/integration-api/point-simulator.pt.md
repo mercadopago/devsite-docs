@@ -149,7 +149,7 @@ Em seguida, o processamento será iniciado e o dispositivo mostrará o resultado
 >
 > Importante
 >
-> Para consultar um pagamento feito pelo simulador através da [API de Pagamentos](/developers/pt/reference/payments/_payments_id/get), você deve usar o mesmo `access_token` de teste que está usando no Simulador.
+> Para consultar um pagamento feito pelo simulador através da [API de Pagamentos](/developers/pt/reference/payments/_payments_id/get), utilize o mesmo `access_token` de teste aplicado no Simulador.
 
 
 ## 7. Receber a notificação
