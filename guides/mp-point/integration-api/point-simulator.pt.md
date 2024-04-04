@@ -154,7 +154,7 @@ Em seguida, o processamento será iniciado e o dispositivo mostrará o resultado
 
 ## 7. Receber a notificação
 
-Quando as intenções de pagamento são processadas, um alerta é enviado para a URL configurada como canal de notificação pelo integrador. No caso das notificações de pagamentos de teste realizados através do Simulador, elas serão enviadas para o canal que você definiu como a via de notificação ao configurar seu ambiente de teste com seu usuário vendedor. 
+Após o processamento das intenções de pagamento, um alerta é enviado para a URL definida como canal de notificação durante a configuração. Para notificações de pagamentos de teste realizados pelo Simulador, estas serão encaminhadas para o canal escolhido como via de notificação ao configurar o ambiente de teste com o usuário vendedor.
 
 Para validar o recebimento e o correto funcionamento das notificações, acesse o registro de suas notificações. Lá será possível encontrar a notificação enviada com o estado da transação e seus detalhes.
 
