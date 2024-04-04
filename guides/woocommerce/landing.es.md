@@ -46,7 +46,14 @@ bullet_section_with_media:
  - title: Ventajas
  - type: normal
  - benefit_title: Pagos sin necesidad de iniciar sesión
+  ----[mla, mlm, mlu, mpe, mco, mlc]----
+ - benefit_message: Con el Checkout Pro o el Checkout API, su cliente no necesita iniciar sesión en su cuenta de Mercado Pago para realizar el pago en su tienda.
+
+ ------------
+ ----[mlb]----
  - benefit_message: Con el Checkout Pro o el Checkout Transparente, su cliente no necesita iniciar sesión en su cuenta de Mercado Pago para realizar el pago en su tienda.
+
+ ------------
  - benefit_title: Personalización de los métodos de pago
  - benefit_message: Es posible ofrecer todos los métodos de pago disponibles o solo los que considere necesarios.
  - benefit_title: Protección de datos con PCI-DSS (Payment Card Industry Data Security Standard)

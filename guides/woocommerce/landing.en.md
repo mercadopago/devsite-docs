@@ -61,7 +61,14 @@ bullet_section_with_media:
  - title: Advantages
  - type: normal
  - benefit_title: Payments without the need to log in
- - benefit_message: With Checkout Pro or Transparent Checkout, your customer doesn't need to log in to their Mercado Pago account to make the payment in your store.
+ ----[mla, mlm, mlu, mpe, mco, mlc]----
+ - benefit_message: With Checkout Pro or Checkout API, your customer doesn't need to log in to their Mercado Pago account to make the payment in your store.
+
+ ------------
+  ----[mlb]----
+ - benefit_message: With Checkout Pro or Checkout Transparent, your customer doesn't need to log in to their Mercado Pago account to make the payment in your store.
+
+ ------------
  - benefit_title: Customization of payment methods
  - benefit_message: You can offer all available payment methods or only those you find necessary.
  - benefit_title: Data protection with PCI-DSS (Payment Card Industry Data Security Standard)
