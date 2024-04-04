@@ -9,13 +9,13 @@
         "description": {
           "en": "This endpoint allows for the configuration of specific fields to customize preferences before initiating the report creation process. The settings will be applied in the generation of reports afterwards. Important: After creating the configuration, it will not be possible to use this endpoint to create a new one. To apply changes to the report configuration, update an existing configuration through the 'Update configurations' endpoint",
           "pt": "Este endpoint permite a configuração de campos específicos para personalizar as preferências antes de dar início ao processo de criação dos relatórios. As definições serão aplicadas na criação de relatórios posteriormente. Importante: Após criar a configuração, não será possível utilizar este endpoint para criar uma nova. Para aplicar mudanças na configuração do relatório, atualize uma configuração já existente através do endpoint 'Atualizar configurações'",
-          "es": "Este endpoint permite la configuración de campos específicos para personalizar las preferencias antes de iniciar el proceso de creación de reportes. Las configuraciones se aplicarán en la generación de reportes posteriormente. Importante: Después de crear la configuración, no será posible utilizar este endpoint para crear una nueva. Para aplicar cambios en la configuración del reporte, actualice una configuración existente a través del endpoint final 'Actualizar configuraciones'"
+          "es": "Este endpoint permite la configuración de campos específicos para personalizar las preferencias antes de iniciar el proceso de creación de reportes. Las configuraciones se aplicarán en la generación de reportes posteriormente. Importante: Después de crear la configuración, no será posible utilizar este endpoint para crear una nueva. Para aplicar cambios en la configuración del reporte, actualiza la configuración ya existente a través del endpoint 'Actualizar configuraciones'"
         },
         "requestBody": {
           "description": {
             "en": "These are the required fields for creating a configuration for the Release Report.",
             "pt": "Estes são os campos necessários para a criação de uma configuração para o Relatório de Liberações.",
-            "es": "Estos son los campos necesarios para la creacion de una configuracion para el Reporte de Liberaciones."
+            "es": "Estos son los campos necesarios para la creacion de una configuración para el Reporte de Liberaciones."
           },
           "content": {
             "application/json": {
@@ -51,7 +51,7 @@
                     "description": {
                       "en": "Prefix that composes the report name once generated and ready for download, not allowing empty or null values.",
                       "pt": "Prefixo que compõe o nome do relatório uma vez gerado e pronto para download, não permitindo valores vazios ou nulos.",
-                      "es": "Prefijo que compone el nombre del reporte una vez generado y listo para su descarga, no permitiendo valores vacíos o nulos."
+                      "es": "Prefijo que compone el nombre del reporte a ser generado y descargado. No permite valores vacíos o nulos."
                     },
                     "example": "conciliation-settlement-report"
                   },
@@ -61,7 +61,7 @@
                     "description": {
                       "en": "This field indicates the frequency with which the report should be generated, which can be daily, weekly, or monthly.",
                       "pt": "Este campo indica a frequência com a qual o relatório deve ser gerado, podendo ser diária, semanal ou mensal.",
-                      "es": "Este campo indica la frecuencia con la que debe generarse el reporte, pudiendo ser diaria, semanal o mensual."
+                      "es": "Este campo indica la frecuencia con la que debe generarse el reporte, que puede ser diaria, semanal o mensual."
                     },
                     "properties": {
                       "hour": {
@@ -70,7 +70,7 @@
                         "description": {
                           "en": "This field specifies the time at which the report will be generated, using the 24-hour format for its definition.",
                           "pt": "Este campo especifica o horário em que o relatório será gerado, utilizando o formato de 24 horas para sua definição.",
-                          "es": "Este campo especifica la hora en la que se generará el reporte, utilizando el formato de 24 horas para su definición."
+                          "es": "Este campo especifica la hora en la que se generará el reporte. Se debe utilizar el formato de 24 horas para su definición."
                         },
                         "example": 0
                       },
@@ -90,7 +90,7 @@
                         "description": {
                           "en": "This field indicates the type of frequency: daily, weekly, and monthly. It is important to remember that this field communicates directly with the 'value' field described above.",
                           "pt": "Indica o tipo de frequência: daily (diária), weekly (semanal) e monthly (mensal). É importante recordar que este campo se comunica diretamente com o campo 'value' descrito acima.",
-                          "es": "Este campo indica el tipo de frecuencia: daily (diária), weekly (semanal) e monthly (mensal). Es importante recordar que este campo se comunica directamente con el campo 'value' descrito anteriormente."
+                          "es": "Este campo indica el tipo de frecuencia: 'daily' (diaria), 'weekly' (semanal) e 'monthly' (mensual). Es importante recordar que este campo se comunica directamente con el campo 'value' descrito anteriormente."
                         },
                         "example": "monthly"
                       }
@@ -102,7 +102,7 @@
                     "description": {
                       "en": "This field provides the necessary connection data for us to access your server. It is optional and should only be sent if you want to receive the reports via SFTP.",
                       "pt": "Este campo fornece os dados de conexão necessários para que possamos acessar seu servidor. Ele é opcional, e somente deverá ser enviado caso queira receber os relatórios via SFTP.",
-                      "es": "Este campo proporciona los datos de conexión necesarios para que podamos acceder a su servidor. Es opcional y solo debe enviarse si desea recibir los reportes a través de SFTP."
+                      "es": "Este campo proporciona los datos de conexión necesarios para que podamos acceder a tu servidor. Es opcional y solo debe enviarse si deseas recibir los reportes a través de SFTP."
                     },
                     "properties": {
                       "server": {
@@ -128,7 +128,7 @@
                         "description": {
                           "en": "Folder where your reports will be saved.",
                           "pt": "Pasta onde serão salvos seus relatórios.",
-                          "es": "Carpeta donde se guardarán sus reportes."
+                          "es": "Carpeta donde se guardarán tus reportes."
                         },
                         "example": "/myfolder"
                       },
@@ -178,7 +178,7 @@
                     "description": {
                       "en": "This field allows changing the default language of column headers. If activated, it is recommended to verify if integrations with Excel files (.xlsx), which allow automatic reconciliation, are working correctly. In case of integration failures, it is important to update the settings, using the new headers as a guide. Available languages include English (en), neutral Spanish (es), and Portuguese (pt).",
                       "pt": "Este campo permite alterar o idioma padrão dos cabeçalhos das colunas. Se ativado, é recomendável verificar se as integrações com arquivos do Excel (.xlsx), que permitem reconciliação automática estão funcionando corretamente. Em caso de falhas na integração, é importante atualizar as configurações, utilizando os novos cabeçalhos como guia. Idiomas disponíveis incluem inglês (en), espanhol neutro (es) e português (pt).",
-                      "es": "Este campo permite cambiar el idioma predeterminado de los encabezados de las columnas. Si se activa, se recomienda verificar si las integraciones con archivos de Excel (.xlsx), que permiten la conciliación automática, están funcionando correctamente. En caso de fallos en la integración, es importante actualizar las configuraciones, utilizando los nuevos encabezados como guía. Los idiomas disponibles incluyen inglés (en), español neutro (es) y portugués (pt)."
+                      "es": "Este campo permite cambiar el idioma predeterminado de los encabezados de las columnas. Si se activa, se recomienda verificar si las integraciones con archivos de Excel (.xlsx), que permiten la conciliación automática, están funcionando correctamente. En caso de fallos en la integración, es importante actualizar las configuraciones, utilizando los nuevos encabezados como guía. Los idiomas disponibles incluyen inglés ('en'), español neutro ('es') y portugués ('pt')."
                     },
                     "example": "es"
                   },
@@ -216,7 +216,7 @@
                     "description": {
                       "en": "This configuration displays the account balance before and after a withdrawal, offering an explanatory view of balance variations. It should be excluded for balance and/or account balance checks, and if you wish to use it, it should be sent as 'true'.",
                       "pt": "Esta configuração exibe o saldo da conta antes e depois de um saque, oferecendo uma visão explicativa sobre as variações de saldo. Deve ser excluída para verificações de balance e/ou saldo da conta e, caso deseje utilizá-la, deve ser enviada como 'true'.",
-                      "es": "Esta configuración muestra el saldo de la cuenta antes y después de un retiro, ofreciendo una visión explicativa de las variaciones del saldo. Debe ser excluida para comprobaciones de balance y/o saldo de la cuenta, y si desea utilizarla, debe ser enviada como 'true'."
+                      "es": "Esta configuración muestra el saldo de la cuenta antes y después de un retiro, ofreciendo una visión explicativa de las variaciones del saldo. Debe ser excluida para comprobaciones de balance y/o saldo de la cuenta, y si deseas utilizarla, debe ser enviada como 'true'."
                     },
                     "example": true
                   },
@@ -245,7 +245,7 @@
                     "description": {
                       "en": "Informative field indicating whether there are already scheduled reports in the user's account. True: Automatic generation is enabled; false: Automatic generation is disabled.",
                       "pt": "Campo informativo que indica se já existem relatórios programados na conta do usuário. True: A criação automática está ativada; false: A criação automática está desativada.",
-                      "es": "Campo informativo que indica si ya existen reportes programados en la cuenta del usuario. True: La generación automática está activada; false: La generación automática está desactivada."
+                      "es": "Campo informativo que indica si ya existen reportes programados en la cuenta del usuario. Debe ser 'true' si la generación automática está activada, y 'false' si está desactivada."
                     },
                     "example": false
                   }
@@ -276,7 +276,7 @@
                       "description": {
                         "en": "Prefix that composes the report name once generated and ready for download, not allowing empty or null values.",
                         "pt": "Prefixo que compõe o nome do relatório uma vez gerado e pronto para download, não permitindo valores vazios ou nulos.",
-                        "es": "Prefijo que compone el nombre del reporte una vez generado y listo para su descarga, no permitiendo valores vacíos o nulos."
+                        "es": "Prefijo que compone el nombre del reporte una vez generado y listo para su descarga."
                       },
                       "example": "release-report-USER_ID"
                     },
@@ -287,15 +287,15 @@
                         "type": "string",
                         "example": "correo1@example.com",
                         "description": {
-                          "en": "Email.",
+                          "en": "Email where the notifications will be sent.",
                           "pt": "E-mail para recebimento das notificações.",
-                          "es": "Correo electrónico."
+                          "es": "Correo electrónico donde se recibirán las notificaciones."
                         }
                       },
                       "description": {
                         "en": "Field containing a group of email recipients who will receive notifications when a report is ready and available for download. Make sure to include the email associated with your Mercado Pago account to also receive notifications.",
                         "pt": "Campo que contém um grupo de destinatários de e-mail que receberão notificações quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
-                        "es": "Campo que contiene un grupo de destinatarios de correo electrónico que recibirán notificaciones cuando un reporte esté listo y disponible para su descarga. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones."
+                        "es": "Campo que contiene un grupo de destinatarios de correo electrónico que recibirán notificaciones cuando un reporte esté listo y disponible para su descarga. "
                       }
                     },
                     "display_timezone": {
@@ -321,7 +321,7 @@
                       "description": {
                         "en": "Informative field indicating whether there are already scheduled reports in the user's account. True: Automatic generation is enabled; false: Automatic generation is disabled.",
                         "pt": "Campo informativo que indica se já existem relatórios programados na conta do usuário. True: A criação automática está ativada; false: A criação automática está desativada.",
-                        "es": "Campo informativo que indica si ya existen reportes programados en la cuenta del usuario. True: La generación automática está activada; false: La generación automática está desactivada."
+                        "es": "Campo informativo que indica si ya existen reportes programados en la cuenta del usuario. Será 'true' si la generación automática está activada, 'false' si está desactivada."
                       },
                       "example": false
                     },
@@ -360,7 +360,7 @@
                     "report_translation": {
                       "type": "string",
                       "description": {
-                        "es": "Idioma configurado del reporte.",
+                        "es": "Idioma configurado para el reporte.",
                         "pt": "Idioma configurado do relatório.",
                         "en": "Configured language of the report."
                       },
@@ -401,7 +401,7 @@
                           "description": {
                             "en": "This field indicates the type of frequency: daily, weekly, and monthly. It is important to remember that this field communicates directly with the 'value' field described above.",
                             "pt": "Indica o tipo de frequência: daily (diária), weekly (semanal) e monthly (mensal). É importante recordar que este campo se comunica diretamente com o campo 'value' descrito acima.",
-                            "es": "Este campo indica el tipo de frecuencia: daily (diária), weekly (semanal) e monthly (mensal). Es importante recordar que este campo se comunica directamente con el campo 'value' descrito anteriormente."
+                            "es": "Este campo indica el tipo de frecuencia: 'daily' (diaria), 'weekly' (semanal) o 'monthly' (mensual). Es importante recordar que este campo se comunica directamente con el campo 'value' descrito anteriormente."
                           },
                           "example": "monthly"
                         }
@@ -430,7 +430,7 @@
                           "title": "Invalid file_name_prefix",
                           "description": {
                             "en": "Invalid file name prefix.",
-                            "es": "Prefijo de nombre de archivo no válido.",
+                            "es": "Prefijo de nombre de archivo inválido.",
                             "pt": "Prefixo de nome de arquivo inválido."
                           }
                         },
@@ -438,7 +438,7 @@
                           "title": "Invalid execute_after_withdrawal",
                           "description": {
                             "en": "Invalid execute after withdrawal.",
-                            "es": "Ejecución inválida después de la retirada.",
+                            "es": "Ejecución inválida después del retiro.",
                             "pt": "Execução inválida após a retirada."
                           }
                         },
@@ -454,7 +454,7 @@
                           "title": "Invalid frequency",
                           "description": {
                             "en": "Invalid frequency.",
-                            "es": "Frecuencia no válida.",
+                            "es": "Frecuencia inválida.",
                             "pt": "Frequência inválida."
                           }
                         },
@@ -523,7 +523,7 @@
                           "title": "invalid token",
                           "description": {
                             "en": "Invalid token.",
-                            "es": "Token no válido.",
+                            "es": "Token inválido.",
                             "pt": "Token inválido."
                           }
                         }
@@ -577,13 +577,13 @@
         "description": {
           "en": "This endpoint updates the default settings of your reports. Keep in mind that when updating a configuration, you will need to execute the 'Create report' endpoint and then 'Download report'",
           "pt": "Este endpoint permite atualizar as configurações padrão dos seus relatórios. Tenha em mente que ao atualizar uma configuração, será necessário executar o endpoint 'Criar relatório' e, em seguida, 'Baixar relatório'",
-          "es": "Este endpoint actualiza las configuraciones predeterminadas de tus reportes. Tenga en cuenta que al actualizar una configuración, será necesario ejecutar el endpoint 'Crear reporte' y luego 'Descargar reporte'"
+          "es": "Este endpoint actualiza las configuraciones predeterminadas de tus reportes. Ten en cuenta que al actualizar una configuración, será necesario ejecutar el endpoint 'Crear reporte' y luego 'Descargar reporte'"
         },
         "requestBody": {
           "description": {
             "en": "These are the necessary fields for updating a configuration for the Releases Report.",
             "pt": "Estes são os campos necessários para a atualização de uma configuração para o Relatório de Liberações.",
-            "es": "Estos son los campos necesarios para la actulizacion de una configuracion para el Reportes de Liberaciones."
+            "es": "Estos son los campos necesarios para la actulizacion de una configuracion para el Reporte de Liberaciones."
           },
           "content": {
             "application/json": {
@@ -619,7 +619,7 @@
                     "description": {
                       "en": "Prefix that composes the report name once generated and ready for download, not allowing empty or null values.",
                       "pt": "Prefixo que compõe o nome do relatório uma vez gerado e pronto para download, não permitindo valores vazios ou nulos.",
-                      "es": "Prefijo que compone el nombre del reporte una vez generado y listo para su descarga, no permitiendo valores vacíos o nulos."
+                      "es": "Prefijo que compone el nombre del reporte a generar y descargar. No permite valores vacíos o nulos."
                     },
                     "example": "conciliation-settlement-report"
                   },
@@ -658,7 +658,7 @@
                         "description": {
                           "en": "This field indicates the type of frequency: daily, weekly, and monthly. It is important to remember that this field communicates directly with the 'value' field described above.",
                           "pt": "Indica o tipo de frequência: daily (diária), weekly (semanal) e monthly (mensal). É importante recordar que este campo se comunica diretamente com o campo 'value' descrito acima.",
-                          "es": "Este campo indica el tipo de frecuencia: daily (diária), weekly (semanal) e monthly (mensal). Es importante recordar que este campo se comunica directamente con el campo 'value' descrito anteriormente."
+                          "es": "Este campo indica el tipo de frecuencia: 'daily' (diaria), 'weekly' (semanal) o 'monthly' (mensual). Es importante recordar que este campo se comunica directamente con el campo 'value' descrito anteriormente."
                         },
                         "example": "monthly"
                       }
@@ -670,7 +670,7 @@
                     "description": {
                       "en": "This field provides the necessary connection data for us to access your server. It is optional and should only be sent if you want to receive the reports via SFTP.",
                       "pt": "Este campo fornece os dados de conexão necessários para que possamos acessar seu servidor. Ele é opcional, e somente deverá ser enviado caso queira receber os relatórios via SFTP.",
-                      "es": "Este campo proporciona los datos de conexión necesarios para que podamos acceder a su servidor. Es opcional y solo debe enviarse si desea recibir los reportes a través de SFTP."
+                      "es": "Este campo proporciona los datos de conexión necesarios para que podamos acceder a tu servidor. Es opcional y solo debe enviarse si deseas recibir los reportes a través de SFTP."
                     },
                     "properties": {
                       "server": {
@@ -696,7 +696,7 @@
                         "description": {
                           "en": "Folder where your reports will be saved.",
                           "pt": "Pasta onde serão salvos seus relatórios.",
-                          "es": "Carpeta donde se guardarán sus reportes."
+                          "es": "Carpeta donde se guardarán tus reportes."
                         },
                         "example": "/myfolder"
                       },
@@ -746,7 +746,7 @@
                     "description": {
                       "en": "This field allows changing the default language of column headers. If activated, it is recommended to verify if integrations with Excel files (.xlsx), which allow automatic reconciliation, are working correctly. In case of integration failures, it is important to update the settings, using the new headers as a guide, such as 'EXTERNAL_REFERENCE', 'SOURCE_ID', and 'PAYMENT_METHOD'. Available languages include English (en), neutral Spanish (es), and Portuguese (pt).",
                       "pt": "Este campo permite alterar o idioma padrão dos cabeçalhos das colunas. Se ativado, é recomendável verificar se as integrações com arquivos do Excel (.xlsx), que permitem reconciliação automática estão funcionando corretamente. Em caso de falhas na integração, é importante atualizar as configurações, utilizando os novos cabeçalhos como guia, tais como 'EXTERNAL_REFERENCE', 'SOURCE_ID' e 'PAYMENT_METHOD'. Idiomas disponíveis incluem inglês (en), espanhol neutro (es) e português (pt).",
-                      "es": "Este campo permite cambiar el idioma predeterminado de los encabezados de las columnas. Si se activa, se recomienda verificar si las integraciones con archivos de Excel (.xlsx), que permiten la conciliación automática, están funcionando correctamente. En caso de fallos en la integración, es importante actualizar las configuraciones, utilizando los nuevos encabezados como guía, tales como 'EXTERNAL_REFERENCE', 'SOURCE_ID' y 'PAYMENT_METHOD'. Los idiomas disponibles incluyen inglés (en), español neutro (es) y portugués (pt)."
+                      "es": "Este campo permite cambiar el idioma predeterminado de los encabezados de las columnas. Si se activa, se recomienda verificar si las integraciones con archivos de Excel (.xlsx), que permiten la conciliación automática, están funcionando correctamente. En caso de fallos en la integración, es importante actualizar las configuraciones, utilizando los nuevos encabezados como guía, tales como 'EXTERNAL_REFERENCE', 'SOURCE_ID' y 'PAYMENT_METHOD'. Los idiomas disponibles incluyen inglés ('en'), español neutro ('es') y portugués ('pt')."
                     },
                     "example": "es"
                   },
@@ -761,7 +761,7 @@
                       "description": {
                         "en": "Email.",
                         "pt": "E-mail para recebimento das notificações.",
-                        "es": "Correo electrónico."
+                        "es": "Correo electrónico al que serán enviadas las notificaciones."
                       }
                     },
                     "description": {
@@ -785,7 +785,7 @@
                     "description": {
                       "en": "This configuration displays the account balance before and after a withdrawal, offering an explanatory view of balance variations. It should be excluded for balance and/or account balance checks, and if you wish to use it, it should be sent as 'true'.",
                       "pt": "Esta configuração exibe o saldo da conta antes e depois de um saque, oferecendo uma visão explicativa sobre as variações de saldo. Deve ser excluída para verificações de balance e/ou saldo da conta e, caso deseje utilizá-la, deve ser enviada como 'true'.",
-                      "es": "Esta configuración muestra el saldo de la cuenta antes y después de un retiro, ofreciendo una visión explicativa de las variaciones del saldo. Debe ser excluida para comprobaciones de balance y/o saldo de la cuenta, y si desea utilizarla, debe ser enviada como 'true'."
+                      "es": "Esta configuración muestra el saldo de la cuenta antes y después de un retiro, ofreciendo una visión explicativa de las variaciones del saldo. Debe ser excluida para comprobaciones de balance y/o saldo de la cuenta, y si deseas utilizarla, debes enviarla como 'true'."
                     },
                     "example": true
                   },
@@ -814,7 +814,7 @@
                     "description": {
                       "en": "Informative field indicating whether there are already scheduled reports in the user's account. True: Automatic generation is enabled; false: Automatic generation is disabled.",
                       "pt": "Campo informativo que indica se já existem relatórios programados na conta do usuário. True: A criação automática está ativada; false: A criação automática está desativada.",
-                      "es": "Campo informativo que indica si ya existen reportes programados en la cuenta del usuario. True: La generación automática está activada; false: La generación automática está desactivada."
+                      "es": "Campo informativo que indica si ya existen reportes programados en la cuenta del usuario. Debe ser 'true' si la generación automática está activada, y 'false' si está desactivada."
                     },
                     "example": true
                   }
@@ -845,7 +845,7 @@
                       "description": {
                         "en": "Prefix that composes the report name once generated and ready for download, not allowing empty or null values.",
                         "pt": "Prefixo que compõe o nome do relatório uma vez gerado e pronto para download, não permitindo valores vazios ou nulos.",
-                        "es": "Prefijo que compone el nombre del reporte una vez generado y listo para su descarga, no permitiendo valores vacíos o nulos."
+                        "es": "Prefijo que compone el nombre del reporte una vez generado y listo para su descarga."
                       },
                       "example": "release-report-USER_ID"
                     },
@@ -1119,7 +1119,7 @@
         "description": {
           "en": "This endpoint allows you to query the current configuration of your reports",
           "pt": "Este endpoint permite consultar a configuração atual dos seus relatórios",
-          "es": "Este endpoint permite consultar la configuración actual de sus reportes"
+          "es": "Este endpoint permite consultar la configuración actual de tus reportes"
         },
         "responses": {
           "200": {
@@ -1134,7 +1134,7 @@
                   "description": {
                     "en": "The API will respond with a JSON structure whose properties will represent the configuration you have created.",
                     "pt": "A API responderá com uma estrutura JSON cujas propriedades representarão a configuração que você criou.",
-                    "es": "El API responderá con una estructura JSON cuyas propiedades representarán la configuración que has creado."
+                    "es": "La API responderá con una estructura JSON cuyas propiedades representarán la configuración que has creado."
                   },
                   "type": "object",
                   "properties": {

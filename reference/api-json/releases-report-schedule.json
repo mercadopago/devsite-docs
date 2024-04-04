@@ -53,14 +53,14 @@
                         "description": {
                           "en": "This field indicates the start date and time of the interval for the report, in the UTC time zone (indicated by the 'Z' at the end, which stands for 'Zulu time' or Coordinated Universal Time).",
                           "pt": "Este campo indica a data e hora de início do intervalo para o relatório, no fuso horário UTC (indicado pela 'Z' no final, que significa 'Zulu time' ou tempo coordenado universal).",
-                          "es": "Este campo indica la fecha y hora de inicio del intervalo para el informe, en la zona horaria UTC (indicada por la 'Z' al final, que significa 'Zulu time' o tiempo coordinado universal)."
+                          "es": "Este campo indica la fecha y hora de inicio del intervalo para el informe, en la zona horaria UTC (indicada por la 'Z' al final, que significa 'Zulu time' o Tiempo Coordinado Universal)."
                         },
                         "example": "2022-08-01T03:00:00Z"
                       },
                       "created_from": {
                         "type": "string",
                         "description": {
-                          "es": "Este campo indica cómo se generó el reporte, siendo 'manual' para reportes generados manualmente y 'schedule' para reportes programados.",
+                          "es": "Este campo indica cómo se generó el reporte. El valor será 'manual' para reportes generados manualmente, y 'schedule' para reportes programados.",
                           "pt": "Este campo indica como o relatório foi gerado, sendo 'manual' para relatórios gerados manualmente e 'schedule' para relatórios programados.",
                           "en": "This field indicates how the report was generated, being 'manual' for manually generated reports and 'schedule' for scheduled reports."
                         },
@@ -69,7 +69,7 @@
                       "currency_id": {
                         "type": "string",
                         "description": {
-                          "es": "El identificador de la moneda utilizada en el reporte.",
+                          "es": "Identificador de la moneda utilizada en el reporte.",
                           "pt": "O identificador da moeda utilizada no relatório.",
                           "en": "The identifier of the currency used in the report."
                         },
@@ -80,14 +80,14 @@
                         "description": {
                           "en": "This field indicates the end date and time of the interval for the report, in the UTC time zone (indicated by the 'Z' at the end, which stands for 'Zulu time' or Coordinated Universal Time).",
                           "pt": "Este campo indica a data e hora de término do intervalo para o relatório, no fuso horário UTC (indicado pelo 'Z' no final, que significa 'Zulu time' ou tempo coordenado universal).",
-                          "es": "Este campo indica la fecha y hora de finalización del intervalo para el informe, en la zona horaria UTC (indicado por la 'Z' al final, que significa 'Zulu time' o tiempo coordinado universal)."
+                          "es": "Este campo indica la fecha y hora de finalización del intervalo para el informe, en la zona horaria UTC (indicado por la 'Z' al final, que significa 'Zulu time' o Tiempo Coordinado Universal)."
                         },
                         "example": "2022-08-08T02:59:59Z"
                       },
                       "generation_date": {
                         "type": "string",
                         "description": {
-                          "es": "La fecha y hora en la que se generó la respuesta del reporte.",
+                          "es": "Fecha y hora en la que se generó la respuesta del reporte.",
                           "pt": "A data e hora em que a resposta do relatório foi gerada.",
                           "en": "The date and time when the report response was generated."
                         },
@@ -112,7 +112,7 @@
                               "description": {
                                 "en": "This field controls whether the associated email will be notified about events related to the report.",
                                 "pt": "Este campo controla se o e-mail associado será notificado sobre eventos relacionados ao relatório.",
-                                "es": "Este campo ontrola si se notificará al correo electrónico asociado sobre eventos relacionados con el reporte."
+                                "es": "Este campo controla si se notificará al correo electrónico asociado sobre eventos relacionados con el reporte."
                               },
                               "example": false
                             },
@@ -154,7 +154,7 @@
                       "last_modified": {
                         "type": "string",
                         "description": {
-                          "es": "La fecha y hora de la última modificación en el reporte.",
+                          "es": "Fecha y hora de la última modificación en el reporte.",
                           "pt": "A data e hora da última modificação no relatório.",
                           "en": "The date and time of the last modification in the report."
                         },
@@ -163,7 +163,7 @@
                       "report_id": {
                         "type": "number",
                         "description": {
-                          "es": "El identificador del reporte generado, si está disponible.",
+                          "es": "Identificador del reporte generado, si está disponible.",
                           "pt": "O identificador do relatório gerado, se estiver disponível.",
                           "en": "The identifier of the generated report, if available."
                         },
@@ -238,7 +238,7 @@
                           "title": "Invalid token",
                           "description": {
                             "en": "Invalid token.",
-                            "es": "Token no válido.",
+                            "es": "Token inválido.",
                             "pt": "Token inválido."
                           }
                         }
@@ -491,7 +491,7 @@
                           "title": "Invalid token",
                           "description": {
                             "en": "Invalid token.",
-                            "es": "Token no válido.",
+                            "es": "Token inválido.",
                             "pt": "Token inválido."
                           }
                         }
@@ -531,7 +531,7 @@
                   "description": {
                     "en": "The API will respond with a JSON structure containing relevant information for your generation request.",
                     "pt": "A API responderá com uma estrutura JSON contendo informações relevantes para o seu pedido de criação.",
-                    "es": "El API responderá con una estructura JSON con información relevante a tu pedido de generación."
+                    "es": "La API responderá con una estructura JSON con información relevante a tu pedido de generación."
                   },
                   "type": "object",
                   "properties": {
@@ -742,7 +742,7 @@
                           "title": "Invalid token",
                           "description": {
                             "en": "Invalid token.",
-                            "es": "Token no válido.",
+                            "es": "Token inválido.",
                             "pt": "Token inválido."
                           }
                         }
@@ -769,7 +769,7 @@
         "description": {
           "en": "This endpoint allows downloading any of the created reports. Using the file_name attribute, input the name of the file you wish to download and execute the request. It's important to note that the response of this request will return a .CSV or .XLSX file for download",
           "pt": "Este endpoint permite baixar qualquer um dos relatórios criados. A partir do atributo file_name, insira o nome do arquivo que deseja baixar e execute a requisição. É importante ter em mente que a resposta desta requisição retornará um arquivo .CSV ou .XLSX ou para download",
-          "es": "Este endpoint permite descargar cualquiera de los reportes creados. Utilizando el atributo file_name, ingrese el nombre del archivo que desea descargar y ejecute la solicitud. Es importante tener en cuenta que la respuesta de esta solicitud devolverá un archivo .CSV o .XLSX para descargar"
+          "es": "Este endpoint permite descargar cualquiera de los reportes creados. Reemplaza el atributo 'file_name' dentro del path por el nombre del archivo que deseas descargar, y ejecuta la solicitud. Es importante tener en cuenta que la respuesta de esta solicitud devolverá un archivo .CSV o .XLSX para descargar"
         },
         "parameters": [
           {
@@ -778,7 +778,7 @@
             "description": {
               "en": "The parameter 'file_name' corresponds to the file name of the report you wish to download.",
               "pt": "O parâmetro 'file_name' corresponde ao nome do arquivo do relatório que você deseja baixar.",
-              "es": "El parámetro 'file_name' corresponde al nombre del archivo del reporte que deseas descargar."
+              "es": "El parámetro 'file_name' corresponde al nombre del archivo del reporte que deseas descargar. Deberás hacer el reemplazo."
             },
             "required": true,
             "schema": {
@@ -801,7 +801,7 @@
                     "description": {
                       "en": "The API response provides the data for the requested report. The response may contain various fields, depending on the nature of the report and the provided parameters.",
                       "pt": "A resposta da API fornece os dados do relatório solicitado. A resposta pode conter vários campos, dependendo da natureza do relatório e dos parâmetros fornecidos.",
-                      "es": "La respuesta del API proporciona los datos del reporte solicitado. La respuesta puede contener varios campos, dependiendo de la naturaleza del reporte y los parámetros proporcionados."
+                      "es": "La respuesta de la API proporciona los datos del reporte solicitado. Puede contener varios campos, dependiendo de la naturaleza del reporte y los parámetros proporcionados."
                     },
                     "example": "DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,SELLER_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD,TAX_DETAIL,TAX_AMOUNT_TELCO,TRANSACTION_APPROVAL_DATE,POS_ID,POS_NAME,EXTERNAL_POS_ID,STORE_ID,STORE_NAME,EXTERNAL_STORE_ID,TAXES_DISAGGREGATED,METADATA,REFUND_ID"
                   }
@@ -826,7 +826,7 @@
                           "title": "Invalid token",
                           "description": {
                             "en": "Invalid token.",
-                            "es": "Token no válido.",
+                            "es": "Token  inválido.",
                             "pt": "Token inválido."
                           }
                         }
@@ -855,7 +855,7 @@
                           "title": "not_found",
                           "description": {
                             "en": "Resource /account/release_report/1234234587/ not found.",
-                            "es": "Resource /account/release_report/1234234587/ not found.",
+                            "es": "No fue hallado el archivo /account/release_report/1234234587/ ",
                             "pt": "Resource /account/release_report/1234234587/ not found."
                           }
                         }

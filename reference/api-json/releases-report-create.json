@@ -7,9 +7,9 @@
               "reporting"
             ],
             "description": {
-              "en": "Manually create a new report within a specific date range",
-              "pt": "Crie manualmente um novo relatório dentro de um intervalo de datas específico",
-              "es": "Crea manualmente un nuevo informe dentro de un intervalo de fechas específico"
+              "en": "This endpoint allows to manually create a new report within a specific date range",
+              "pt": "Este endpoint permite a criação manual um novo relatório dentro de um intervalo de datas específico",
+              "es": "Este endpoint permite crear manualmente un nuevo informe dentro de un intervalo de fechas específico"
             },
             "requestBody": {
               "description": {
@@ -28,7 +28,7 @@
                         "description": {
                           "en": "This field indicates the start date and time of the interval for the report, in the UTC time zone (indicated by the 'Z' at the end, which stands for 'Zulu time' or Coordinated Universal Time).",
                           "pt": "Este campo indica a data e hora de início do intervalo para o relatório, no fuso horário UTC (indicado pela 'Z' no final, que significa 'Zulu time' ou tempo coordenado universal).",
-                          "es": "Este campo indica la fecha y hora de inicio del intervalo para el informe, en la zona horaria UTC (indicada por la 'Z' al final, que significa 'Zulu time' o tiempo coordinado universal)."
+                          "es": "Este campo indica la fecha y hora de inicio del intervalo para el informe, en la zona horaria UTC (indicada por la 'Z' al final, que significa 'Zulu time' o Tiempo Coordinado Universal)."
                         },
                         "example": "2019-05-01T00:00:00Z"
                       },
@@ -38,7 +38,7 @@
                         "description": {
                           "en": "This field indicates the end date and time of the interval for the report, in the UTC time zone (indicated by the 'Z' at the end, which stands for 'Zulu time' or Coordinated Universal Time).",
                           "pt": "Este campo indica a data e hora de término do intervalo para o relatório, no fuso horário UTC (indicado pelo 'Z' no final, que significa 'Zulu time' ou tempo coordenado universal).",
-                          "es": "Este campo indica la fecha y hora de finalización del intervalo para el informe, en la zona horaria UTC (indicado por la 'Z' al final, que significa 'Zulu time' o tiempo coordinado universal)."
+                          "es": "Este campo indica la fecha y hora de finalización del intervalo para el informe, en la zona horaria UTC (indicado por la 'Z' al final, que significa 'Zulu time' o Tiempo Coordinado Universal)."
                         },
                         "example": "2019-06-01T00:00:00Z"
                       }
@@ -85,7 +85,7 @@
                         "begin_date": {
                           "type": "string",
                           "description": {
-                            "es": "Es la fecha y hora de inicio del intervalo del reporte, en la zona horaria UTC (indicado por la 'Z' al final, que significa 'Zulu time' o tiempo coordinado universal).",
+                            "es": "Es la fecha y hora de inicio del intervalo del reporte, en la zona horaria UTC (indicado por la 'Z' al final, que significa 'Zulu time' o Tiempo Coordinado Universal).",
                             "pt": "É a data e hora de início do intervalo do relatório, no fuso horário UTC (indicado pelo 'Z' no final, que significa 'Zulu time' ou tempo coordenado universal).",
                             "en": "It is the start date and time of the report interval, in the UTC time zone (indicated by the 'Z' at the end, which stands for 'Zulu time' or Coordinated Universal Time)."
                           },
@@ -114,7 +114,7 @@
                           "description": {
                               "en": "This field indicates the end date and time of the interval for the report, in the UTC time zone (indicated by the 'Z' at the end, which stands for 'Zulu time' or Coordinated Universal Time).",
                               "pt": "Este campo indica a data e hora de término do intervalo para o relatório, no fuso horário UTC (indicado pelo 'Z' no final, que significa 'Zulu time' ou tempo coordenado universal).",
-                              "es": "Este campo indica la fecha y hora de finalización del intervalo para el reporte, en la zona horaria UTC (indicado por la 'Z' al final, que significa 'Zulu time' o tiempo coordinado universal)."
+                              "es": "Este campo indica la fecha y hora de finalización del intervalo para el reporte, en la zona horaria UTC (indicado por la 'Z' al final, que significa 'Zulu time' o Tiempo Coordinado Universal)."
                           },
                           "example": "2022-08-08T02:59:59Z"
                         },
@@ -188,7 +188,7 @@
                         "last_modified": {
                           "type": "string",
                           "description": {
-                            "es": "La fecha y hora de la última modificación en el reporte.",
+                            "es": "Fecha y hora de la última modificación en el reporte.",
                             "pt": "A data e hora da última modificação no relatório.",
                             "en": "The date and time of the last modification in the report."
                           },
@@ -197,7 +197,7 @@
                         "report_id": {
                           "type": "number",
                           "description": {
-                            "es": "El identificador del reporte generado, si está disponible.",
+                            "es": "Identificador del reporte generado, si está disponible.",
                             "pt": "O identificador do relatório gerado, se estiver disponível.",
                             "en": "The identifier of the generated report, if available."
                           },
@@ -324,7 +324,7 @@
                               "title": "Invalid token",
                               "description": {
                                 "en": "Invalid token.",
-                                "es": "Token no válido.",
+                                "es": "Token inválido.",
                                 "pt": "Token inválido."
                               }
                             }
