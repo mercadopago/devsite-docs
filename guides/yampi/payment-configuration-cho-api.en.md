@@ -10,7 +10,7 @@ To integrate the checkout to your store on Yampi, follow the steps below.
 2. In the **management of the selected payment method** screen, if it is not already indicated, select the **afiliação** registered for Mercado Pago.
 3. For some of the available payment methods, you can also configure some information, such as:
  
-* **Boleto Bancário**: indicate a discount percentage for payments made with bank slip, inform the number of days to be considered for expiration and cancellation of overdue slips, in addition to inserting possible instructions related to the means of payment.
+* **Boleto bancário**: indicate a discount percentage for payments made with bank slip, inform the number of days to be considered for expiration and cancellation of overdue slips, in addition to inserting possible instructions related to the means of payment.
 * **Pix**: indicate a discount percentage for payments made with Pix.
  
 4. Click **Salvar** to complete the configuration.

@@ -607,8 +607,7 @@ La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-El tiempo para la aprobación del boleto es de hasta 48 horas hábiles. Por lo tanto, establezca la fecha de vencimiento en un mínimo de 3 días para asegurarse de que se pague el pago.
-
+El tiempo para la aprobación del boleto es de hasta 2 horas hábiles. Por lo tanto, establezca la fecha de vencimiento en un mínimo de 3 días para asegurarse de que se pague el pago.
 
 > WARNING
 >
@@ -862,8 +861,7 @@ La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-El tiempo para la aprobación toma entre 1 y 2 días hábiles. Por lo tanto, establezca la fecha de vencimiento en un mínimo de 3 días para asegurarse de que se pague el pago.
-
+El plazo de acreditación es de hasta 2 horas hábiles según el medio de pago. Por lo tanto, establezca la fecha de vencimiento en un mínimo de 3 días para asegurarse de que se pague el pago.
 
 > WARNING
 >
@@ -1543,8 +1541,7 @@ La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-El tiempo para la aprobación toma entre 1 y 2 días hábiles. Por lo tanto, establece la fecha de vencimiento en un mínimo de 3 días para asegurarse de que el pago se efectúe.
-
+El plazo de acreditación es de hasta 2 horas hábiles según el medio de pago. Por lo tanto, establece la fecha de vencimiento en un mínimo de 3 días para asegurarse de que el pago se efectúe.
 
 > WARNING
 >

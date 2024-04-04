@@ -831,8 +831,7 @@ For the **“Interest”** value, the specifications are as follows:
 |      FIELD     |    TYPE    |                                                                                                                                                                                                                           DESCRIPTION                                                                                                                                                                                                                           |
 |:--------------:|:----------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | value          | BigDecimal | Property to define the daily interest value to be applied when the payment is made after the due date.                                                                                                                                                                                                                                                                                                                                                          |
-| type           | String     | Property to define the type of calculation on the value reported in "value".                                                                                                                                                                                                                                                                                                                                                                                    |
-
+| type           | String     | Property to define the type of calculation on the value reported in "value". | 
 
 ## Expiration date
 
@@ -885,7 +884,7 @@ La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-The time for payment approval is up to 48 business hours. Therefore, set the expiration date to a minimum of 3 days to ensure that the payment is made.
+The time for payment approval is up to 2 business hours. Therefore, set the expiration date to a minimum of 3 days to ensure that the payment is made.
 
 > WARNING
 >

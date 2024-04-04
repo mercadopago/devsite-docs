@@ -281,6 +281,8 @@ Además de mostrar el estado del pago, Status Screen Brick también mostrará el
 > Importante
 >
 > La fecha de vencimiento del boleto se puede configurar enviando una solicitud POST con el parámetro `data_of_expiration` al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post). Después del vencimiento, el boleto será cancelado.
+> <br><br>
+> El tiempo para la aprobación del boleto es de hasta 2 horas hábiles. Por lo tanto, establezca la fecha de vencimiento en un mínimo de 3 días para asegurarse de que se pague el pago.
 
 ## Prueba tu integración
 

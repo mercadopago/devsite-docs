@@ -602,7 +602,7 @@ The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-The time for payments with boleto approval is up to 48 working hours. Therefore, set the expiration date to a minimum of 3 days to ensure that the payment is made.
+The approval timeframe for the boleto is up to 2 business hours. Therefore, set the expiration date to a minimum of 3 days to ensure that the payment is made.
 
 > WARNING
 >
@@ -844,14 +844,13 @@ The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-The crediting period takes between 1 and 2 business days, depending on the payment method. That's why we recommend that you set the expiration date to a minimum of 3 days to ensure the payment to be made.
+The crediting period is up to 2 business hours according to the payment method. That's why we recommend that you set the expiration date to a minimum of 3 days to ensure the payment to be made.
 
 > WARNING
 >
 > Important
 >
 > If the payment is made after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
-
 
 ## Cancel payment
 
@@ -1443,7 +1442,6 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 ```
 ]]]
 
-
 The response will show the **pending status** until the buyer completes the payment. Also, in the response to the request, the `external_resource_url` parameter will return a URL that contains instructions for the buyer to make the payment. You can redirect to this same link to complete the payment flow.
 
 ```json
@@ -1526,7 +1524,7 @@ The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-The crediting period is between 1 and 2 working days according to the payment method. That's why we recommend that you set the expiration date to a minimum of 3 days to ensure payment is made.
+The crediting period is up to 2 business hours according to the payment method. That's why we recommend that you set the expiration date to a minimum of 3 days to ensure payment is made.
 
 > WARNING
 >

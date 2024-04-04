@@ -6,7 +6,7 @@ Expiration date is the maximum period defined for making a payment. With Checkou
 >
 > Important
 >
-> The clearing period is between 1 and 2 working days according to the chosen payment method. Therefore, we recommend setting the expiration date at least 3 days apart to ensure payment is made. In addition, if payment is made after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
+> The crediting timeframe is up to 2 business hours depending on the payment method. Therefore, we recommend setting the expiration date at least 3 days apart to ensure payment is made. In addition, if payment is made after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
 
 
 To change the expiration date, send a **POST** with the parameter `date_of_expiration` with the expiration date and time of the item to the endpoint [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request.

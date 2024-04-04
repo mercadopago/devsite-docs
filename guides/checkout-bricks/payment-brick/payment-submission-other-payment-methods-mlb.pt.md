@@ -281,6 +281,8 @@ Além de exibir o status do pagamento, o Status Screen Brick também exibirá o 
 > Importante
 >
 > A data de vencimento do boleto pode ser configurada através do envio de requisição POST com parâmetro `data_of_expiration` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post). Após o vencimento, o boleto será cancelado.
+> <br><br>
+> O prazo de aprovação do boleto é de até 2h úteis. Por isso, configure a data de expiração com no mínimo 3 dias para garantir que o pagamento seja abonado.
 
 ## Teste sua integração
 
