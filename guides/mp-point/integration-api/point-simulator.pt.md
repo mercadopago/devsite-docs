@@ -25,8 +25,11 @@ Para iniciar os testes de integrações e fluxos de pagamento com o Simulador Po
 
 Para gerar essas credenciais, acesse [Suas Integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/), selecione o aplicativo no qual você integrou o Mercado Pago Point e, na seção **Contas de teste**, clique no botão **+ Criar conta de teste**. Você deverá preencher os campos solicitados de acordo com as instruções.
 
+<center>
+
 ![Criar conta](/images/woocomerce/test-create-account.gif)
 
+<center>
 
 Caso queira, também é possível criar usuários de teste usando o seguinte comando:
 
@@ -69,9 +72,11 @@ Antes de acessar o Simulador, você precisará concluir a configuração do seu 
  3. No painel lateral esquerdo, acesse **Notificações > Webhooks** para configurar as notificações de teste. Tenha em mente que esta etapa precisa ser realizada na aba **Modo de teste**. Além disso, recomendamos que a URL configurada seja diferente daquela utilizada para receber notificações de pagamentos reais. Consulte a documentação sobre [Notificações](/developers/pt/docs/mp-point/additional-content/your-integrations/notifications/webhooks) para obter mais detalhes sobre como configurá-las.
  4. No painel lateral esquerdo, acesse **Testes > Credenciais de teste** para obter o **Access Token de teste do seu usuário vendedor**. O Simulador vai solicitá-lo para lhe dar acesso à ferramenta e atribuir um dispositivo virtual associado à sua integração.
 
+<center>
 
 ![Credenciais de teste no Painel do desenvolvedor](/images/woocomerce/test-test-credentials.png)
 
+<center>
 
 ## 3. Acessar Simulador 
 
@@ -86,8 +91,11 @@ Para acessar o Simulador, primeiro escolha a opção que corresponda ao seu tipo
 
 Depois de fornecer as informações de acordo com o modo selecionado no Simulador, clique no botão **Confirm** para acessar o dispositivo virtual.
 
+<center>
+
 ![Tela do Simulador](/images/point-api/point-device-simulator.png)
 
+<center>
 
 ## 4. Simular intenção de pagamento
 
@@ -121,7 +129,11 @@ Após criar a intenção de pagamento, clique no **botão verde** no dispositivo
 
 Se a obtenção da intenção de pagamento for bem-sucedida, prossiga para realizar o pagamento clicando na animação do cartão. Isso representa o deslizamento do cartão no dispositivo. Em seguida, o processamento será iniciado e o dispositivo mostrará o resultado.
 
+<center>
+
 ![Simulador com cartão](/images/point-api/point-simulator-process.png)
+
+<center>
 
 Em seguida, o processamento será iniciado e o dispositivo mostrará o resultado de acordo com o valor inserido.
 
