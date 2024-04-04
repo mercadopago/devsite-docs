@@ -29,7 +29,7 @@ Para gerar essas credenciais, acesse [Suas Integrações](https://www.mercadopag
 
 ![Criar conta](/images/woocomerce/test-create-account.gif)
 
-<center>
+</center>
 
 Caso queira, também é possível criar usuários de teste usando o seguinte comando:
 
@@ -76,7 +76,7 @@ Antes de acessar o Simulador, você precisará concluir a configuração do seu 
 
 ![Credenciais de teste no Painel do desenvolvedor](/images/woocomerce/test-test-credentials.png)
 
-<center>
+</center>
 
 ## 3. Acessar Simulador 
 
@@ -95,7 +95,7 @@ Depois de fornecer as informações de acordo com o modo selecionado no Simulado
 
 ![Tela do Simulador](/images/point-api/point-device-simulator.png)
 
-<center>
+</center>
 
 ## 4. Simular intenção de pagamento
 
@@ -133,7 +133,7 @@ Se a obtenção da intenção de pagamento for bem-sucedida, prossiga para reali
 
 ![Simulador com cartão](/images/point-api/point-simulator-process.png)
 
-<center>
+</center>
 
 Em seguida, o processamento será iniciado e o dispositivo mostrará o resultado de acordo com o valor inserido.
 
