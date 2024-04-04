@@ -28,6 +28,6 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 
 ------------
 ----[mpe, mco, mlu, mlc]---- 
-* [Meios de pagamento offline - Efectivo](/developers/pt/docs/woocommerce/payments-configuration/checkout-api/offline-payments): pagamentos em dinheiro (saldo no Mercado Pago ou efectivo).
+* [Meios de pagamento offline - Efectivo](/developers/pt/docs/woocommerce/payments-configuration/checkout-api/offline-payments): pagamentos em dinheiro (Dinheiro em conta no Mercado Pago ou efectivo).
 
 ------------

@@ -6,7 +6,7 @@ To use the Mercado Pago integration with WooCommerce on a WordPress site, you mu
 >
 > Note
 > 
-> Please visit our [Getting Started page](/developers/en/docs/getting-started) to find the necessary information to begin integrating Mercado Pago solutions.
+> Visit our [Getting Started page](/developers/en/docs/getting-started) to find the necessary information to begin integrating Mercado Pago solutions.
 
 | Requirements | Description | Specifications |
 |---|---|---|
