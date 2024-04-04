@@ -127,7 +127,7 @@ Após criar a intenção de pagamento, clique no **botão verde** no dispositivo
 
 ## 5. Processar pagamento
 
-Se a obtenção da intenção de pagamento for bem-sucedida, prossiga para realizar o pagamento clicando na animação do cartão. Isso representa o deslizamento do cartão no dispositivo. Em seguida, o processamento será iniciado e o dispositivo mostrará o resultado.
+Se a intenção de pagamento for obtida com sucesso, você pode prosseguir para realizar o pagamento ao clicar na animação do cartão, simulando o deslizamento do cartão no dispositivo. Após essa ação, o processo de pagamento inicia, e o dispositivo exibirá o resultado.
 
 <center>
 
