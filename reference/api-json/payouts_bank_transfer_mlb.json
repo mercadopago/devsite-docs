@@ -28,20 +28,6 @@
           },
           {
             "in": "header",
-            "name": "Access Token",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "example": "0d5020ed-c3bec19954bb"
-            },
-            "description": {
-              "en": "The application's private key that should always be used on the backend to generate payments. It is essential to keep this information secure on your servers. You can find your Access Token by accessing your application Credentials.",
-              "pt": "Chave privada da aplicação que sempre deve ser usada no backend para gerar pagamentos. É essencial que essa informação seja mantida segura em seus servidores. Você pode encontrar ser Acces Token acessando as Credenciais da sua aplicação.",
-              "es": "Clave privada de la aplicación que siempre se debe utilizar en el backend para generar pagos. Es esencial mantener esta información segura en tus servidores. Puedes encontrar tu Acces Token accediendo a las Credenciales de tu aplicación."
-            }
-          },
-          {
-            "in": "header",
             "name": "x-Signature",
             "required": true,
             "schema": {
@@ -98,6 +84,11 @@
                   "seller_configuration": {
                     "required": false,
                     "type": "object",
+                    "description": {
+                      "en": "Object containing settings of the user performing the transaction.",
+                      "pt": "Objeto contendo configurações do usuário que realiza a transação.",
+                      "es": "Objeto que contiene configuraciones del usuario que realiza la transacción. "
+                    },
                     "properties": {
                       "notification_info": {
                         "type": "object",
@@ -118,9 +109,19 @@
                   },
                   "transaction": {
                     "type": "object",
+                    "description": {
+                      "en": "Object that contains information about the transaction.",
+                      "pt": "Objeto que contém informações sobre a transação.",
+                      "es": "Objeto que contiene la información sobre la transacción."
+                    },
                     "properties": {
                       "from": {
                         "type": "object",
+                        "description": {
+                          "en": "Object that contains information about the transaction's origin account.",
+                          "pt": "Objeto que contém informações sobre a conta de origem que realiza a transação.",
+                          "es": "Objeto que contiene la información sobre la cuenta de origen que efectúa la transacción."
+                        },
                         "properties": {
                           "accounts": {
                             "type": "array",
@@ -141,6 +142,11 @@
                       },
                       "to": {
                         "type": "object",
+                        "description": {
+                          "en": "Object that contains information about the transaction's destination account.",
+                          "pt": "Objeto que contém informações sobre a conta de destino que recebe a transação.",
+                          "es": "Objeto que contiene la información sobre la cuenta de destino que recibe la transacción."
+                        },
                         "properties": {
                           "accounts": {
                             "type": "array",
@@ -236,6 +242,11 @@
                                 "properties": {
                                   "identification": {
                                     "type": "object",
+                                    "description": {
+                                      "en": "Information corresponding to the identification documentation of the destination account holder.",
+                                      "pt": "Informação correspondente à documentação de identificação do titular da conta de destino.",
+                                      "es": "Información correspondiente a la documentación identificatoria del titular de la cuenta de destino."
+                                    },
                                     "properties": {
                                       "type": {
                                         "type": "string",
@@ -337,6 +348,30 @@
                             "es": "El procesamiento de la transacción se realizó de manera exitosa.",
                             "pt": "O processamento da transação foi bem-sucedido."
                           }
+                        },
+                        {
+                          "title": "in_process",
+                          "description": {
+                            "en": "The transaction is in process, pending final status, and awaiting authorization.",
+                            "es": "La transacción está en proceso, pendiente de estado final, y aguarda autorización.",
+                            "pt": "A transação está em andamento, com status final pendente e aguardando autorização."
+                          }
+                        },
+                        {
+                          "title": "refunded",
+                          "description": {
+                            "en": "The transaction was refunded by the destination bank.",
+                            "es": "La transacción fue reembolsada por el banco de destino.",
+                            "pt": "A transação foi reembolsada pelo banco de destino."
+                          }
+                        },
+                        {
+                          "title": "rejected",
+                          "description": {
+                            "en": "The transaction was rejected. You can check the reasons in the \"to.accounts.status_detail\" field.",
+                            "es": "La transacción fue rechazada. Puedes encontrar los motivos en el campo \"to.accounts.status_detail\". ",
+                            "pt": "A transação foi rejeitada. Você pode ver os motivos no campo \"to.accounts.status_detail\""
+                          }
                         }
                       ]
                     },
@@ -384,6 +419,11 @@
                     },
                     "seller_configuration": {
                       "type": "object",
+                      "description": {
+                        "en": "Object containing settings of the user performing the transaction.",
+                        "pt": "Objeto contendo configurações do usuário que realiza a transação.",
+                        "es": "Objeto que contiene configuraciones del usuario que realiza la transacción. "
+                      },
                       "properties": {
                         "notification_info": {
                           "type": "object",
@@ -403,9 +443,19 @@
                     },
                     "transaction": {
                       "type": "object",
+                      "description": {
+                        "en": "Object that contains information about the transaction.",
+                        "pt": "Objeto que contém informações sobre a transação.",
+                        "es": "Objeto que contiene la información sobre la transacción."
+                      },
                       "properties": {
                         "from": {
                           "type": "object",
+                          "description": {
+                            "en": "Object that contains information about the transaction's origin account.",
+                            "pt": "Objeto que contém informações sobre a conta de origem que realiza a transação.",
+                            "es": "Objeto que contiene la información sobre la cuenta de origen que efectúa la transacción."
+                          },
                           "properties": {
                             "accounts": {   
                               "type": "array",
@@ -436,6 +486,11 @@
                         },
                         "to": {
                           "type": "object",
+                          "description": {
+                            "en": "Object that contains information about the transaction's destination account.",
+                            "pt": "Objeto que contém informações sobre a conta de destino que recebe a transação.",
+                            "es": "Objeto que contiene la información sobre la cuenta de destino que recibe la transacción."
+                          },
                           "properties": {
                             "accounts": {
                               "type": "array",
@@ -445,9 +500,9 @@
                                   "amount": {
                                     "type":"number",
                                     "description": {
-                                      "es": "Monto transferido a la cuenta de destino. Su valor será igual a \"from.accounts.amount\", salvo que haya habido un reembolso total o parcial.",
-                                      "pt": "Valor transferido para a conta de destino. O valor será igual a \"from.accounts.amount\", a menos que tenha havido reembolso total ou parcial.",
-                                      "en": "Amount transferred to the destination account. Its value will be equal to \"from.accounts.amount\", unless there has been a full or partial refund."
+                                      "es": "Monto transferido a la cuenta de destino. Su valor será igual a \"from.accounts.amount\", salvo que haya habido un reembolso total o parcial, indicado en el campo \"to.accounts.status_detail\".",
+                                      "pt": "Valor transferido para a conta de destino. O valor será igual a \"from.accounts.amount\", a menos que tenha havido reembolso total ou parcial indicado no campo \"to.accounts.status_detail\".",
+                                      "en": "Amount transferred to the destination account. Its value will be equal to \"from.accounts.amount\", unless there has been a full or partial refund indicated in the \"to.accounts.status_detail\" field."
                                     },
                                     "example": "100,00"
                                   },
@@ -474,15 +529,97 @@
                                           "es": "La transacción fue reembolsada parcialmente por el banco de destino.",
                                           "pt": "A transação foi parcialmente reembolsada pelo banco de destino."
                                         }
+                                      },
+                                      {
+                                        "title": "pending_authorized",
+                                        "description": {
+                                          "en": "The transaction is in process, pending authorization.",
+                                          "es": "La transacción está en proceso, pendiente de autorización.",
+                                          "pt": "A transação está em andamento, aguardando autorização."
+                                        }
+                                      },
+                                      {
+                                        "title": "pending_bank",
+                                        "description": {
+                                          "en": "The transaction is in process, pending by bank.",
+                                          "es": "La transacción está en proceso, pendiente de respuesta del banco.",
+                                          "pt": "A transação está em andamento, aguardando autorização do banco."
+                                        }
+                                      },
+                                      {
+                                        "title": "refunded",
+                                        "description": {
+                                          "en": "The transaction was totally refunded by the destination bank.",
+                                          "es": "La transacción fue reembolsada totalmente por el banco de destino.",
+                                          "pt": "A transação foi totalmente reembolsada pelo banco de destino."
+                                        }
+                                      },
+                                      {
+                                        "title": "by_bank",
+                                        "description": {
+                                          "en": "The transaction was rejected by the destination bank.",
+                                          "es": "El banco de destino rechazó la transferencia.",
+                                          "pt": "A transação foi rejeitada pelo banco de destino."
+                                        }
+                                      },
+                                      {
+                                        "title": "by_provider",
+                                        "description": {
+                                          "en": "The transaction was rejected by the provider.",
+                                          "es": "La transacción fue rechazada por el proveedor. ",
+                                          "pt": "A transação foi rejeitada pelo provedor. "
+                                        }
+                                      },
+                                      {
+                                        "title": "high_risk",
+                                        "description": {
+                                          "en": "The transaction is rejected due to risk of fraud.",
+                                          "es": "La transacción es rechazada por riesgo de fraude.",
+                                          "pt": "A transação é rejeitada devido ao risco de fraude."
+                                        }
+                                      },
+                                      {
+                                        "title": "insufficient_funds",
+                                        "description": {
+                                          "en": "The transaction is rejected due to insufficient funds in the origin account.",
+                                          "es": "La transacción es rechazada por fondos insuficientes en la cuenta de origen.",
+                                          "pt": "A transação é rejeitada devido a fundos insuficientes na conta de origem."
+                                        }
+                                      },
+                                      {
+                                        "title": "other_reason",
+                                        "description": {
+                                          "en": "The transaction is rejected by default due to internal problems during processing.",
+                                          "es": "La transacción es rechazada por defecto debido a problemas internos durante su procesamiento.",
+                                          "pt": "A transação é rejeitada por padrão devido a problemas internos durante o processamento."
+                                        }
+                                      },
+                                      {
+                                        "title": "review_manual",
+                                        "description": {
+                                          "en": "The transaction is rejected and sent to fraud prevention for analysis.",
+                                          "es": "La transacción es rechazada y encaminada a prevención al fraude para análisis.",
+                                          "pt": "A transação é rejeitada e enviada para análise de prevenção de fraudes."
+                                        }
                                       }
                                     ],
                                     "example": "approved"
                                   },
                                   "owner": {
                                     "type": "object",
+                                    "description": {
+                                      "en": "Destination account holder information.",
+                                      "pt": "Informação do titular da conta de destino.",
+                                      "es": "Información del titular de la cuenta de destino."
+                                    },
                                     "properties": {
                                       "identification": {
                                         "type": "object",
+                                        "description": {
+                                          "en": "Information corresponding to the identification documentation of the destination account holder.",
+                                          "pt": "Informação correspondente à documentação de identificação do titular da conta de destino.",
+                                          "es": "Información correspondiente a la documentación identificatoria del titular de la cuenta de destino."
+                                        },
                                         "properties": {
                                           "number": {
                                             "type": "number",
@@ -531,6 +668,11 @@
                         },
                         "payer": {
                           "type": "object",
+                          "description": {
+                            "en": "Information corresponding to the origin account holder.",
+                            "pt": "Informação correspondente ao titular da conta de origem.",
+                            "es": "Información correspondiente al titular de la cuenta de origen."
+                          },
                           "properties": {
                             "id": {
                               "type": "number",
@@ -576,65 +718,49 @@
                         {
                           "title":"Invalid external_reference",
                           "description":{
-                            "en":"Invalid type for field external_reference",
-                            "pt":"Invalid type for field external_reference",
-                            "es":"Invalid type for field external_reference"
+                            "en":"Invalid type for field \"external_reference\"",
+                            "pt":"Valor inválido para o campo \"external_reference\"",
+                            "es":"Valor inválido para el campo \"external_reference\""
                           }
                         },
                         {
                           "title":"Invalid type point_of_interaction",
                           "description":{
-                            "en":"invalid value for field: point_of_interaction.type",
-                            "es":"invalid value for field: point_of_interaction.type",
-                            "pt":"invalid value for field: point_of_interaction.type"
+                            "en":"Invalid value for field \"point_of_interaction.type\". Remember that it is a fix value, always \"PSP_TRANSFER\".",
+                            "es":"Valor inválido para el campo \"point_of_interaction.type\". Recuerda que es un valor fijo y siempre debe ser \"PSP_TRANSFER\".",
+                            "pt":"Valor inválido para o campo \"point_of_interaction.type\". Lembre-se que é um um valor fixo, sempre \"PSP_TRANSFER\"."
                           }
                         },
                         {
                           "title":"Invalid amount",
                           "description":{
-                            "en":"invalid value for field: transaction.from.accounts[0].amount",
-                            "es":"invalid value for field: transaction.from.accounts[0].amount",
-                            "pt":"invalid value for field: transaction.from.accounts[0].amount"
-                          }
-                        },
-                        {
-                          "title":"Invalid chave",
-                          "description":{
-                            "en":"invalid value for field: transaction.to.accounts[0].chave.value",
-                            "pt":"invalid value for field: transaction.to.accounts[0].chave.value",
-                            "es":"invalid value for field: transaction.to.accounts[0].chave.value"
-                          }
-                        },
-                        {
-                          "title":"Invalid chave type",
-                          "description":{
-                            "en":"invalid value for field: transaction.to.accounts[0].chave.type",
-                            "es":"invalid value for field: transaction.to.accounts[0].chave.type",
-                            "pt":"invalid value for field: transaction.to.accounts[0].chave.type"
+                            "en":"Invalid value for field \"transaction.from.accounts[0].amount\". Verify the amounts allowed for the transaction. ",
+                            "es":"Valor inválido para el campo \"transaction.from.accounts[0].amount\". Verifica los montos permitidos para la transacción.",
+                            "pt":"Valor inválido para o campo \"transaction.from.accounts[0].amount\". Verifique os valores permitidos para a transação."
                           }
                         },
                         {
                           "title":"Invalid identification number",
                           "description":{
-                            "en":"invalid value for field: transaction.to.accounts[0].identification.number",
-                            "es":"invalid value for field: transaction.to.accounts[0].identification.number",
-                            "pt":"invalid value for field: transaction.to.accounts[0].identification.number"
+                            "en":"Invalid value for field \"transaction.to.accounts[0].identification.number\".  Verify the allowed values.",
+                            "es":"Valor inválido para el campo \"transaction.to.accounts[0].identification.number\". Verifica los valores permitidos. ",
+                            "pt":"Valor inválido para o campo \"transaction.to.accounts[0].identification.number\". Verifique os valores permitidos."
                           }
                         },
                         {
                           "title":"Invalid identification type",
                           "description":{
-                            "en":"invalid value for field: transaction.to.accounts[0].owner.identification.type",
-                            "es":"invalid value for field: transaction.to.accounts[0].owner.identification.type",
-                            "pt":"invalid value for field: transaction.to.accounts[0].owner.identification.type"
+                            "en":"Invalid value for field \"transaction.to.accounts[0].owner.identification.type\". Verify the allowed values.",
+                            "es":"Valor inválido para el campo \"transaction.to.accounts[0].owner.identification.type\". Verifica los valores permitidos",
+                            "pt":"Valor inválido para o campo \"transaction.to.accounts[0].owner.identification.type\". Verifique os valores permitidos."
                           }
                         },
                         {
                           "title":"Account is disabled",
                           "description":{
-                            "en":"account is disabled",
-                            "es":"account is disabled",
-                            "pt":"account is disabled"
+                            "en":"The account is disabled",
+                            "es":"La cuenta está desactivada",
+                            "pt":"A conta está desativada"
                           }
                         },
                         {
@@ -651,14 +777,6 @@
                             "en":"Unrecognized key format",
                             "es":"Unrecognized key format",
                             "pt":"Unrecognized key format"
-                          }
-                        },
-                        {
-                          "title":"Invalid identity source",
-                          "description":{
-                            "en":"invalid identity source",
-                            "es":"invalid identity source",
-                            "pt":"invalid identity source"
                           }
                         },
                         {
@@ -849,9 +967,9 @@
           "money-out"
         ],
         "description":{
-          "en": "Allows you to obtain information about a previously generated Money Out transaction based on its \"id\". That is, you will be able to consult information about a money out transaction by providing the identification number that was assigned to it in the response to its creation.",
-          "pt": "Permite obter informações sobre uma transação de Money Out gerada anteriormente com base no seu \"id\". Ou seja, você poderá consultar informação sobre uma transação de saída de dinheiro, fornecendo o número de identificação que lhe foi atribuído na resposta à sua criação.",
-          "es": "Permite obtener información sobre una transacción Money Out generada previamente en base a su \"id\". Es decir, podrás consultar información sobre una transacción de salida de dinero proporcionando el número identificador que le fue asignado en la respuesta a su creación. "
+          "en": "Allows you to obtain information about a previously generated Money Out transaction based on its \"id\". That is, you will be able to consult information about a money out transaction by providing the identification number that was assigned to it in the response to its creation",
+          "pt": "Permite obter informações sobre uma transação de Money Out gerada anteriormente com base no seu \"id\". Ou seja, você poderá consultar informação sobre uma transação de saída de dinheiro, fornecendo o número de identificação que lhe foi atribuído na resposta à sua criação",
+          "es": "Permite obtener información sobre una transacción Money Out generada previamente en base a su \"id\". Es decir, podrás consultar información sobre una transacción de salida de dinero proporcionando el número identificador que le fue asignado en la respuesta a su creación "
         },
         "parameters":[
           {
@@ -866,20 +984,6 @@
             "en": "Identifier of the transaction for which you wish to consult, returned in the response to its creation within the \"id\" field",
             "pt": "Identificador da transação que deseja consultar, retornado na resposta à sua criação dentro do campo \"id\".",
             "es": "Identificador de la transacción por la que se desea consultar, devuelto en la respuesta a su creación dentro del campo \"id\"."
-            }
-          },
-          {
-            "in":"header",
-            "name":"Access Token",
-            "required":true,
-            "schema":{
-              "type":"string",
-              "example":"0d5020ed-c3bec19954bb"
-            },
-            "description":{
-              "en": "Application's private key that should always be used on the backend to generate payments. It is essential to keep this information secure on your servers. You can find your Access Token by accessing your application Credentials.",
-              "pt": "Chave privada da aplicação que sempre deve ser usada no backend para gerar pagamentos. É essencial que essa informação seja mantida segura em seus servidores. Você pode encontrar ser Acces Token acessando as Credenciais da sua aplicação.",
-              "es": "Clave privada de la aplicación que siempre se debe utilizar en el backend para generar pagos. Es esencial mantener esta información segura en tus servidores. Puedes encontrar tu Acces Token accediendo a las Credenciales de tu aplicación."
             }
           }
         ],
@@ -919,6 +1023,30 @@
                             "en": "The transaction processing was made successfully",
                             "es": "El procesamiento de la transacción se realizó de manera exitosa.",
                             "pt": "O processamento da transação foi bem-sucedido."
+                          }
+                        },
+                        {
+                          "title": "in_process",
+                          "description": {
+                            "en": "The transaction is in process, pending final status, and awaiting authorization.",
+                            "es": "La transacción está en proceso, pendiente de estado final, y aguarda autorización.",
+                            "pt": "A transação está em andamento, com status final pendente e aguardando autorização."
+                          }
+                        },
+                        {
+                          "title": "refunded",
+                          "description": {
+                            "en": "The transaction was refunded by the destination bank.",
+                            "es": "La transacción fue reembolsada por el banco de destino.",
+                            "pt": "A transação foi reembolsada pelo banco de destino."
+                          }
+                        },
+                        {
+                          "title": "rejected",
+                          "description": {
+                            "en": "The transaction was rejected. You can check the reasons in the \"to.accounts.status_detail\" field.",
+                            "es": "La transacción fue rechazada. Puedes encontrar los motivos en el campo \"to.accounts.status_detail\". ",
+                            "pt": "A transação foi rejeitada. Você pode ver os motivos no campo \"to.accounts.status_detail\""
                           }
                         }
                       ]
@@ -967,6 +1095,11 @@
                     },
                     "seller_configuration": {
                       "type": "object",
+                      "description": {
+                        "en": "Object containing settings of the user performing the transaction.",
+                        "pt": "Objeto contendo configurações do usuário que realiza a transação.",
+                        "es": "Objeto que contiene configuraciones del usuario que realiza la transacción. "
+                      },
                       "properties": {
                         "notification_info": {
                           "type": "object",
@@ -986,9 +1119,19 @@
                     },
                     "transaction": {
                       "type": "object",
+                      "description": {
+                        "en": "Object that contains information about the transaction.",
+                        "pt": "Objeto que contém informações sobre a transação.",
+                        "es": "Objeto que contiene la información sobre la transacción."
+                      },
                       "properties": {
                         "from": {
                           "type": "object",
+                          "description": {
+                            "en": "Object that contains information about the transaction's origin account.",
+                            "pt": "Objeto que contém informações sobre a conta de origem que realiza a transação.",
+                            "es": "Objeto que contiene la información sobre la cuenta de origen que efectúa la transacción."
+                          },
                           "properties": {
                             "accounts": {   
                               "type": "array",
@@ -1019,6 +1162,11 @@
                         },
                         "to": {
                           "type": "object",
+                          "description": {
+                            "en": "Object that contains information about the transaction's destination account.",
+                            "pt": "Objeto que contém informações sobre a conta de destino que recebe a transação.",
+                            "es": "Objeto que contiene la información sobre la cuenta de destino que recibe la transacción."
+                          },
                           "properties": {
                             "accounts": {
                               "type": "array",
@@ -1028,9 +1176,9 @@
                                   "amount": {
                                     "type":"number",
                                     "description": {
-                                      "es": "Monto transferido a la cuenta de destino. Su valor será igual a \"from.accounts.amount\", salvo que haya habido un reembolso total o parcial.",
-                                      "pt": "Valor transferido para a conta de destino. O valor será igual a \"from.accounts.amount\", a menos que tenha havido reembolso total ou parcial.",
-                                      "en": "Amount transferred to the destination account. Its value will be equal to \"from.accounts.amount\", unless there has been a full or partial refund."
+                                      "es": "Monto transferido a la cuenta de destino. Su valor será igual a \"from.accounts.amount\", salvo que haya habido un reembolso total o parcial, indicado en el campo \"to.accounts.status_detail\".",
+                                      "pt": "Valor transferido para a conta de destino. O valor será igual a \"from.accounts.amount\", a menos que tenha havido reembolso total ou parcial indicado no campo \"to.accounts.status_detail\".",
+                                      "en": "Amount transferred to the destination account. Its value will be equal to \"from.accounts.amount\", unless there has been a full or partial refund indicated in the \"to.accounts.status_detail\" field."
                                     },
                                     "example": "100,00"
                                   },
@@ -1057,15 +1205,97 @@
                                           "es": "La transacción fue reembolsada parcialmente por el banco de destino.",
                                           "pt": "A transação foi parcialmente reembolsada pelo banco de destino."
                                         }
+                                      },
+                                      {
+                                        "title": "pending_authorized",
+                                        "description": {
+                                          "en": "The transaction is in process, pending authorization.",
+                                          "es": "La transacción está en proceso, pendiente de autorización.",
+                                          "pt": "A transação está em andamento, aguardando autorização."
+                                        }
+                                      },
+                                      {
+                                        "title": "pending_bank",
+                                        "description": {
+                                          "en": "The transaction is in process, pending by bank.",
+                                          "es": "La transacción está en proceso, pendiente de respuesta del banco.",
+                                          "pt": "A transação está em andamento, aguardando autorização do banco."
+                                        }
+                                      },
+                                      {
+                                        "title": "refunded",
+                                        "description": {
+                                          "en": "The transaction was totally refunded by the destination bank.",
+                                          "es": "La transacción fue reembolsada totalmente por el banco de destino.",
+                                          "pt": "A transação foi totalmente reembolsada pelo banco de destino."
+                                        }
+                                      },
+                                      {
+                                        "title": "by_bank",
+                                        "description": {
+                                          "en": "The transaction was rejected by the destination bank.",
+                                          "es": "El banco de destino rechazó la transferencia.",
+                                          "pt": "A transação foi rejeitada pelo banco de destino."
+                                        }
+                                      },
+                                      {
+                                        "title": "by_provider",
+                                        "description": {
+                                          "en": "The transaction was rejected by the provider.",
+                                          "es": "La transacción fue rechazada por el proveedor. ",
+                                          "pt": "A transação foi rejeitada pelo provedor. "
+                                        }
+                                      },
+                                      {
+                                        "title": "high_risk",
+                                        "description": {
+                                          "en": "The transaction is rejected due to risk of fraud.",
+                                          "es": "La transacción es rechazada por riesgo de fraude.",
+                                          "pt": "A transação é rejeitada devido ao risco de fraude."
+                                        }
+                                      },
+                                      {
+                                        "title": "insufficient_funds",
+                                        "description": {
+                                          "en": "The transaction is rejected due to insufficient funds in the origin account.",
+                                          "es": "La transacción es rechazada por fondos insuficientes en la cuenta de origen.",
+                                          "pt": "A transação é rejeitada devido a fundos insuficientes na conta de origem."
+                                        }
+                                      },
+                                      {
+                                        "title": "other_reason",
+                                        "description": {
+                                          "en": "The transaction is rejected by default due to internal problems during processing.",
+                                          "es": "La transacción es rechazada por defecto debido a problemas internos durante su procesamiento.",
+                                          "pt": "A transação é rejeitada por padrão devido a problemas internos durante o processamento."
+                                        }
+                                      },
+                                      {
+                                        "title": "review_manual",
+                                        "description": {
+                                          "en": "The transaction is rejected and sent to fraud prevention for analysis.",
+                                          "es": "La transacción es rechazada y encaminada a prevención al fraude para análisis.",
+                                          "pt": "A transação é rejeitada e enviada para análise de prevenção de fraudes."
+                                        }
                                       }
                                     ],
                                     "example": "approved"
                                   },
                                   "owner": {
                                     "type": "object",
+                                    "description": {
+                                      "en": "Destination account holder information.",
+                                      "pt": "Informação do titular da conta de destino.",
+                                      "es": "Información del titular de la cuenta de destino."
+                                    },
                                     "properties": {
                                       "identification": {
                                         "type": "object",
+                                        "description": {
+                                          "en": "Information corresponding to the identification documentation of the destination account holder.",
+                                          "pt": "Informação correspondente à documentação de identificação do titular da conta de destino.",
+                                          "es": "Información correspondiente a la documentación identificatoria del titular de la cuenta de destino."
+                                        },
                                         "properties": {
                                           "number": {
                                             "type": "number",
@@ -1114,6 +1344,11 @@
                         },
                         "payer": {
                           "type": "object",
+                          "description": {
+                            "en": "Information corresponding to the origin account holder.",
+                            "pt": "Informação correspondente ao titular da conta de origem.",
+                            "es": "Información correspondiente al titular de la cuenta de origen."
+                          },
                           "properties": {
                             "id": {
                               "type": "number",
