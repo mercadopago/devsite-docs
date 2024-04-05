@@ -22,7 +22,10 @@ A continuación, explicaremos cómo configurar cada elemento del plugin.
 
 ## Integrar la tienda con Mercado Pago
 
-1. Haz clic en **1. Integra la tienda con Mercado Pago**.
+1. Haz clic en **1. Ingressa tus credenciales para integrar tu tienda con Mercado Pago**.
+
+![Plugin MP](/images/woocomerce/insert-credentials-es.png)
+
 2. Ahora, debes vincular tu cuenta de Mercado Pago a tu tienda utilizando tus credenciales. En el panel de administración de Mercado Pago, accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** y selecciona tu aplicación. Si aún no has creado una aplicación, consulta la [documentación del Panel del desarrollador](/developers/es/docs/woocommerce/additional-content/your-integrations/dashboard) para obtener más información.
 
 > WARNING
@@ -69,7 +72,13 @@ En **Opciones avanzadas de integración**, haz clic en **Ver opciones avanzadas*
 
 * **URL para IPN**: Ingresa la URL para recibir notificaciones de pagos.
 * **Integrator ID**: Ingresa tu `integrador_id` de socio del **&lt;dev&gt;program** de Mercado Pago. Si aún no eres miembro del programa, visita la [página](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) para obtener más información.
-* **Modo de depuración y registro**: Habilita esta opción para permitir el registro de actividades de tu tienda, lo que permite un soporte más eficiente y una mejor depuración de problemas técnicos.
+* **Modo de debug e log**: Habilita esta opción para permitir el registro de actividades de tu tienda, lo que permite un soporte más eficiente y una mejor depuración de problemas técnicos.
+
+> NOTE
+>
+> Nota
+>
+> Para acceder a los logs de su tienda, regrese al panel administrativo del plugin en **WooCommerce > Mercado Pago** y haga clic en "¿Necesitas ayuda?". Dentro de este componente, siga el paso 4 para encontrar y descargar el historial de errores. En la página del **historial de errores**, tendrá acceso a todos los registros disponibles para su descarga.
 
 ![Panel](/images/woocomerce/advanced-settings-es.png) 
 

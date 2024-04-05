@@ -22,7 +22,10 @@ A seguir, explicaremos como configurar cada item do plugin.
 
 ## Integrar loja ao Mercado Pago
 
-1. Clique em **1. Integre a loja com o Mercado Pago**.
+1. Clique em **1. Insira suas credenciais para integrar sua loja ao Mercado Pago**.
+
+![Plugin MP](/images/woocomerce/insert-credentials-pt.png)
+
 2. Agora, é preciso vincular sua conta Mercado Pago à sua loja através das suas credenciais. No admin do Mercado Pago, acesse **[Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** e selecione a sua aplicação. Caso ainda não tenha criado uma aplicação, acesse a [documentação Painel do desenvolvedor](/developers/pt/docs/woocommerce/additional-content/your-integrations/dashboard) e saiba como criá-la. 
 
 > WARNING
@@ -69,6 +72,12 @@ Em **Opções avançadas de integração**, clique em **Ver opções avançadas*
 * **URL para IPN**: Insira a URL para receber notificações de pagamentos.
 * **Integrator ID**: Insira seu `integrador_id` de parceiro do **&lt;dev&gt;program** do Mercado Pago. Se você ainda não é membro do programa, acesse a [página](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) para obter mais informações.
 * **Modo debug e log**: Habilite esta opção para permitir o registro de atividades da sua loja, possibilitando um suporte mais eficiente e a melhor depuração de problemas técnicos.
+
+> NOTE
+>
+> Nota
+>
+> Para acessar os logs da sua loja, volte para o painel administrativo do plugin em **WooCommerce > Mercado Pago** e clique em "Precisa de ajuda?". Dentro deste componente, siga o passo 4 para encontrar e baixar o histórico de erros. Na página do **histórico de erros**, você terá acesso a todos os logs disponíveis para download.
 
 ![Painel](/images/woocomerce/advanced-settings-pt.png) 
 

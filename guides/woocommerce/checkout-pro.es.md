@@ -5,7 +5,7 @@ Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing), puede habe
 ## Activa y configura el método de pago
 
 1. Para activar Checkout Pro, ve a la configuración del panel de WooCommerce (**WooCommerce > Mercado Pago**).
-2. Haz clic en **3. Activa y configura los métodos de pago**.
+2. Haz clic en **3. Activa y configura los medios de pago**.
 3. En la opción "Tarjetas guardadas y dinero disponibile en Mercado Pago", haz clic en **Configurar**.
 ----[mlm, mla]----
 ![Activar y configurar](/images/woocomerce/cho-pro-active-configure-es.png)

@@ -20,7 +20,10 @@ Next, we'll explain how to configure each item of the plugin.
 
 ## Integrate store with Mercado Pago
 
-1. Click on **1. Integrate store with Mercado Pago**.
+1. Click on **1. Enter your credentials to integrate your store with Mercado Pago**.
+
+![Plugin MP](/images/woocomerce/insert-credentials-es.png)
+
 2. Now, you need to link your Mercado Pago account to your store using your credentials. In the Mercado Pago admin panel, access **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** and select your application. If you haven't created an application yet, refer to the [Developer Dashboard documentation](/developers/en/docs/woocommerce/additional-content/your-integrations/dashboard) to learn how to do it.
 
 > WARNING
@@ -67,6 +70,12 @@ In **Advanced integration options**, click on **View advanced options** and conf
 * **IPN URL**: Enter the URL to receive payment notifications.
 * **Integrator ID**: Enter your partner `integrator_id` from the **&lt;dev&gt;program** of Mercado Pago. If you're not yet a member of the program, visit the [page](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) for more information.
 * **Debug and log mode**: Enable this option to allow logging of your store's activities, enabling more efficient support and better debugging of technical issues.
+
+> NOTE
+>
+> Note
+>
+> To access your store's logs, return to the administrative panel of the plugin under **WooCommerce > Mercado Pago** and click on "Need help?". Within this component, follow step 4 to locate and download the error history. On the **error history** page, you will have access to all logs available for download.
 
 ![Panel](/images/woocomerce/advanced-settings-es.png) 
 
