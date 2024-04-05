@@ -454,7 +454,7 @@ Follow the steps below to render the QR code and make copy and paste available.
 
 [[[
 ```html
-<img src={`data:image/jpeg;base64,${qr_code_base64}}`/>
+<img src={`data:image/jpeg;base64,${qr_code_base64}`}/>
 
 ```
 ]]]

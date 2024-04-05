@@ -457,7 +457,7 @@ Sigue las etapas que se indican a continuación para renderizar el código QR y 
 
 [[[
 ```html
-<img src={`data:image/jpeg;base64,${qr_code_base64}}`/>
+<img src={`data:image/jpeg;base64,${qr_code_base64}`}/>
 
 ```
 ]]]
