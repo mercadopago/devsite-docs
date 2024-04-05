@@ -16,4 +16,10 @@ To install the Mercado Pago plugin for WooCommerce through Wordpress, follow the
 
 ![Activate MP](/images/woocomerce/activate-mp-es.png)
 
+> WARNING
+>
+> Important
+>
+> The Mercado Pago plugin requires an active version of [WooCommerce](https://wordpress.org/extend/plugins/woocommerce/) to function.
+
 That's it! The plugin is now active, and you can [configure your integration.](/developers/en/docs/woocommerce/integration-configuration/plugin-configuration)
