@@ -1,17 +1,8 @@
----
-  sites_supported:
-      - mco
----
+# Considerações sobre IVA da Colômbia
 
-# Considerações IVA Colômbia
+O IVA (**Imposto ao Valor Agregado**) é uma carga fiscal que recai sobre a venda de produtos ou a prestação de serviços dentro do território colombiano. 
 
-> NOTE
->
-> Nota
->
-> Somente para Colômbia.
-
-O IVA (Imposto ao Valor Agregado) é uma carga fiscal que recai sobre a venda de produtos ou a prestação de serviços dentro do território colombiano. Alguns produtos assim como alguns serviços estão excluídos do IVA e outros possuem tarifas reduzidas. Na atualidade, a tarifa geral deste imposto é de 19%.
+Alguns produtos assim como alguns serviços estão excluídos do IVA e outros possuem tarifas reduzidas. Na atualidade, a **tarifa geral deste imposto é de 19%**.
 
 ## Impostos em pagamentos online
 
