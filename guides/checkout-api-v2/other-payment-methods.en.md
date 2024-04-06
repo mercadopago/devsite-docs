@@ -298,7 +298,7 @@ To configure payments with **Boleto Bancário** or **Pagamento em lotérica**, s
 >
 > Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. for more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials).
 
 | Payment Type | Parameter | Value |
 | --- | --- | --- |
@@ -471,6 +471,31 @@ payment_data = {
 payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 ```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := paymentmethod.NewClient(cfg)
+
+
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+for _, v := range resources {
+   fmt.Println(v)
+}
+```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
@@ -577,7 +602,7 @@ The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-The time for payments with boleto approval is up to 48 working hours. Therefore, set the expiration date to a minimum of 3 days to ensure that the payment is made.
+The approval timeframe for the boleto is up to 2 business hours. Therefore, set the expiration date to a minimum of 3 days to ensure that the payment is made.
 
 > WARNING
 >
@@ -598,9 +623,9 @@ To configure payments with **Rapipago** and/or **Pago Fácil**, send a **POST** 
 
 > WARNING
 >
-> Important
+> Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. for more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -698,6 +723,31 @@ payment_data = {
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := paymentmethod.NewClient(cfg)
+
+
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+for _, v := range resources {
+   fmt.Println(v)
+}
+```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
@@ -794,14 +844,13 @@ The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-The crediting period takes between 1 and 2 business days, depending on the payment method. That's why we recommend that you set the expiration date to a minimum of 3 days to ensure the payment to be made.
+The crediting period is up to 2 business hours according to the payment method. That's why we recommend that you set the expiration date to a minimum of 3 days to ensure the payment to be made.
 
 > WARNING
 >
 > Important
 >
 > If the payment is made after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
-
 
 ## Cancel payment
 
@@ -817,9 +866,9 @@ To configure payments with **OXXO**, **Paycash**, **Citibanamex**, **Santander**
 
 > WARNING
 >
-> Important
+> Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. for more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -934,6 +983,31 @@ payment_data = {
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := paymentmethod.NewClient(cfg)
+
+
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+for _, v := range resources {
+   fmt.Println(v)
+}
+```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
@@ -1008,9 +1082,9 @@ To configure payments with **PagoEfectivo**, send a **POST** with the required p
 
 > WARNING
 >
-> Important
+> Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. for more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -1124,6 +1198,31 @@ payment_data = {
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := paymentmethod.NewClient(cfg)
+
+
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+for _, v := range resources {
+   fmt.Println(v)
+}
+```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
@@ -1186,9 +1285,9 @@ To configure payments with **Efecty**, send a **POST** with the appropriate para
 
 > WARNING
 >
-> Important
+> Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. for more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -1303,6 +1402,31 @@ payment_data = {
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := paymentmethod.NewClient(cfg)
+
+
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+for _, v := range resources {
+   fmt.Println(v)
+}
+```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
@@ -1317,7 +1441,6 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 
 ```
 ]]]
-
 
 The response will show the **pending status** until the buyer completes the payment. Also, in the response to the request, the `external_resource_url` parameter will return a URL that contains instructions for the buyer to make the payment. You can redirect to this same link to complete the payment flow.
 
@@ -1401,7 +1524,7 @@ The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-The crediting period is between 1 and 2 working days according to the payment method. That's why we recommend that you set the expiration date to a minimum of 3 days to ensure payment is made.
+The crediting period is up to 2 business hours according to the payment method. That's why we recommend that you set the expiration date to a minimum of 3 days to ensure payment is made.
 
 > WARNING
 >
@@ -1424,9 +1547,9 @@ To configure payments with **Abitab** and/or **Redpagos**, send a **POST** with 
 
 > WARNING
 >
-> Important
+> Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. for more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -1539,6 +1662,31 @@ payment_data = {
 
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
+```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := paymentmethod.NewClient(cfg)
+
+
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+for _, v := range resources {
+   fmt.Println(v)
+}
 ```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \

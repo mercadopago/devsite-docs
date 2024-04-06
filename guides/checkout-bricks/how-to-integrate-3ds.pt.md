@@ -112,11 +112,7 @@ O usuário deve responder ao _Challenge_ para que a transição seja validada de
 
 3. Após a resolução do _Challenge_, será exibido o resultado final do pagamento de acordo com a resposta emitida pelo banco ao finalizar o _Challenge_.
 
-<center>
-
 ![status-screen-Brick](checkout-bricks/status-screen-brick-pt.jpg)
-
-</center>
 
 ## Teste de integração
 
@@ -135,10 +131,6 @@ Para que seja possível validar pagamentos com 3DS, disponibilizamos um **ambien
 
 Em ambos os fluxos (sucesso e falha), o _Challenge_, que é uma tela semelhante à exibida abaixo, deve ser exibido pelo [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/introduction).
 
-<center>
-
 ![bricks_sandbox](checkout-bricks/sandbox-v1-pt.png)
-
-</center>
 
 O código de verificação fornecido é apenas ilustrativo. Para concluir o fluxo de teste, basta clicar no botão **Confirmar** e o Status Screen irá exibir o estado final do pagamento.

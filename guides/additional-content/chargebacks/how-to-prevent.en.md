@@ -21,12 +21,16 @@ It is not possible to avoid all chargebacks; however, you can reduce the probabi
    
 ## Fraud Alert
 
-We'll let you know via IPN or Webhook notifications any time we notice irregular activity or there's a fraud alert on your account. In this situation, you must [cancel the purchase](/developers/en/docs/sales-processing/cancellations-and-refunds) and return the money to the buyer to avoid a dispute. 
+We'll let you know via IPN or Webhook notifications any time we notice irregular activity or there's a fraud alert on your account. In this situation, you must [cancel the purchase](/developers/en/guides/additional-content/sales-processing/cancellations-and-refunds) and return the money to the buyer to avoid a dispute. 
 
 Configure and enable [IPN](/developers/panel/ipn) or [Webhook](/developers/panel/webhooks) notifications on your dashboard to receive alerts for irregular behavior by enabling **Fraud Alert** (`delivery_cancellation`).
+
+----[mlb, mla, mlm]----
 
 > NOTE
 >
 > Important
 > 
-> When charging with Point, review the buyer's details and always request an ID.
+> When charging with [Point](/developers/en/docs/mp-point/landing), review the buyer's details and always request an ID.
+
+------------

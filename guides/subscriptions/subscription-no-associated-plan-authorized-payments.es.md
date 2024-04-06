@@ -6,23 +6,25 @@ Para ofrecer **suscripciones sin plan asociado y con pago autorizado**, envía u
 
 [[[
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/preapproval?access_token=APP_USR-????????' \
---header 'Content-Type: application/json' \
---header 'X-scope: stage' \
---data-raw '{
-    "back_url": "https://www.google.com",
-    "reason": "Test Subscription",
-    "auto_recurring": {
-        "frequency": 1,
-        "frequency_type": "months",
-        "start_date": "2020-06-02T13:07:14.260Z",
-        "end_date": "2022-07-20T15:59:52.581Z",
-        "transaction_amount": 10,
-        "currency_id": "ARS"
-    },
-    "payer_email": "test_user+1020927396@testuser.com",
-    "card_token_id": "{{EL_CARD_TOKEN_QUE_CREASTE}}",
-    "status": "authorized"
+curl -X POST \
+      'https://api.mercadopago.com/preapproval'\
+       -H 'Content-Type: application/json' \
+       -H 'Authorization: Bearer TEST-2151****' \ 
+       -H 'X-scope: stage' \
+       --data-raw '{
+            "back_url": "https://www.google.com",
+            "reason": "Test Subscription",
+            "auto_recurring": {
+                "frequency": 1,
+                "frequency_type": "months",
+                "start_date": "2020-06-02T13:07:14.260Z",
+                "end_date": "2022-07-20T15:59:52.581Z",
+                "transaction_amount": 10,
+                "currency_id": "ARS"
+            },
+            "payer_email": "test_user+1020927396@testuser.com",
+            "card_token_id": "{{CARD_TOKEN}}",
+            "status": "authorized"
 }'
 ```
 ]]]

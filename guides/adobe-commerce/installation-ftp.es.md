@@ -1,6 +1,6 @@
 # Instalación vía FTP
 
-Para instalar el módulo de Mercado Pago en Adobe Commerce (Magento) a través de FTP, sigue los pasos a continuación.
+Para instalar el módulo de Mercado Pago en Adobe Commerce a través de FTP, sigue los pasos a continuación.
 
 1. Descarga el **módulo Mercado Pago** disponible [en Github](https://github.com/mercadopago/adb-payment).
 2. Crea una carpeta con el nombre **code** dentro de la carpeta **app** de Magento.
@@ -8,4 +8,4 @@ Para instalar el módulo de Mercado Pago en Adobe Commerce (Magento) a través d
 4. Copia la carpeta **MercadoPago** que se encuentra la carpeta **code/src**.
 5. Luego, sigue las instrucciones de [Instalación via Composer](/developers/es/guides/adobe-commerce/installation/composer).
 
-¡Y listo! Ya instalaste con éxito el módulo de Mercado Pago para Adobe Commerce (Magento).
+¡Y listo! Ya instalaste con éxito el módulo de Mercado Pago para Adobe Commerce.

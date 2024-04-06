@@ -12,7 +12,7 @@ In this documentation, you will find the necessary information to perform a full
 >
 > Important
 >
-> When running the APIs referenced in this documentation, you may encounter the attribute **X-Idempotency-Key**. Its completion is important to ensure the execution and re-execution of requests without side effects such as duplicate payments in refund cases.
+> When running the APIs referenced in this documentation, you may encounter the attribute **X-Idempotency-Key**. Sending it is mandatory to ensure the execution and re-execution of requests without side effects such as duplicate payments in refund cases. Update our [SDKs Library](/developers/en/docs/sdks-library/landing), or generate a UUID V4 and send it in the _header_ of your requests to avoid possible errors.
 
 ## Cancellations
 

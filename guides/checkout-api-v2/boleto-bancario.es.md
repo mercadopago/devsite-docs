@@ -840,8 +840,7 @@ Para el valor **“Interest”**, las especificaciones son las siguientes:
 |      CAMPO     |    TIPO    |                                                                                                                                                                                                                                             DESCRIPCIÓN                                                                                                                                                                                                                                            |
 |:--------------:|:----------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | value          | BigDecimal | Propiedad para definir el valor de los intereses diarios a ser aplicados cuando el pago fuera efectuado luego de la fecha de vencimiento.                                                                                                                                                                                                                                                                                                                                                          |
-| type           | String     | Propiedad para definir el tipo de cálculo sobre el valor informado en “value”.                                                                                                                                                                                                                                                                                                                                                                                                                     |
-
+| type           | String     | Propiedad para definir el tipo de cálculo sobre el valor informado en “value”. |
 
 ## Fecha de vencimiento
 
@@ -894,15 +893,13 @@ La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-El tiempo para la aprobación del boleto es de 48 horas hábiles. Por lo tanto, establece la fecha de vencimiento en un mínimo de 3 días para asegurarte de que el pago se efectúe.
-
+El tiempo para la aprobación del boleto es de 2 horas hábiles. Por lo tanto, establece la fecha de vencimiento en un mínimo de 3 días para asegurarte de que el pago se efectúe.
 
 > WARNING
 >
 > Importante
 >
 > Si el boleto se paga después de la fecha de vencimiento, el monto se devolverá a la cuenta de Mercado Pago del pagador.
-
 
 ## Cancelar pago
 

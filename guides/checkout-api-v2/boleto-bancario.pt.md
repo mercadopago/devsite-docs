@@ -2,7 +2,7 @@
 
 # Boleto bancário
 
-Com o Checkout Transparente do Mercado Pago, é possível oferecer, além de cartão e  Pix, **pagamentos através de boleto bancário**. Além disso, você pode **criar boletos bancários com descontos, multas e acréscimos** para pagamentos antecipados ou fora do prazo estipulado na data de vencimento.
+Com o Checkout Transparente do Mercado Pago, é possível oferecer, além de cartão e  Pix, **pagamentos através de boleto bancário**. Além disso, você pode **criar boletos bancários com descontos, multas e acréscimos** para pagamentos antecipados ou fora do prazo estipulado na data de vencimento. 
 
 Para obter uma lista detalhada com todos os meios de pagamento disponíveis para integração, envie um **GET** com seu _Access token_ ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e execute a requisição. Se preferir, faça a requisição utilizando os SDKs abaixo:
 
@@ -828,8 +828,7 @@ Para o valor **“Interest”** as especificações são as seguintes:
 |      CAMPO     |    TIPO    |                                                                                                                                                                                                                     DESCRIÇÃO                                                                                                                                                                                                                     |
 |:--------------:|:----------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | value          | BigDecimal | Propriedade para definir o valor de acréscimos diários a serem aplicados quando o pagamento for efetuado após data de vencimento.                                                                                                                                                                                                                                                                                                                      |
-| type           | String     | Propriedade para definir o tipo de cálculo sobre o valor informado em "value".                                                                                                                                                                                                                                                                                                                                                                      |
-
+| type           | String     | Propriedade para definir o tipo de cálculo sobre o valor informado em "value". |
 
 ## Data de vencimento
 A data de vencimento padrão para pagamentos com boleto é de 3 dias.Opcionalmente, é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento definindo um período entre 1 e 30 dias a partir da data de emissão do boleto.
@@ -881,14 +880,13 @@ La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-O prazo de aprovação do boleto é de até 48h úteis. Por isso, configure a data de expiração com no mínimo 3 dias para garantir que o pagamento seja abonado.
+O prazo de aprovação do boleto é de até 2h úteis. Por isso, configure a data de expiração com no mínimo 3 dias para garantir que o pagamento seja abonado.
 
 > WARNING
 >
 > Importante
 >
 > Caso o boleto seja efetuado depois da data de expiração, o valor será estornado na conta do Mercado Pago do pagador.
-
 
 ## Cancelar pagamento
 

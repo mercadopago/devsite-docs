@@ -70,6 +70,9 @@ To install the SDK, you must run the following code in the command line of your 
 ===
 pip3 install MercadoPago
 ```
+```go
+go get -u github.com/mercadopago/sdk-go
+```
 ]]]
 
 > SERVER_SIDE
@@ -120,6 +123,16 @@ MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
 import mercadopago
 # Add Your credentials
 sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
+```
+```go
+import (
+	"github.com/mercadopago/sdk-go/pkg/config"
+)
+
+cfg, err := config.New("{{ACCESS_TOKEN}}")
+if err != nil {
+	fmt.Println(err)
+}
 ```
 ]]]
 
@@ -230,6 +243,27 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
+```go
+client := preference.NewClient(cfg)
+
+request := preference.Request{
+	Items: []preference.ItemRequest{
+		{
+			Title:       "My product",
+			Quantity:    1,
+			UnitPrice:   75.76,
+		},
+	},
+}
+
+resource, err := client.Create(context.Background(), request)
+if err != nil {
+	fmt.Println(err)
+	return
+}
+
+fmt.Println(resource)
+```
 ]]]
 
 ------------
@@ -337,6 +371,27 @@ preference_data = {
 
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
+```
+```go
+client := preference.NewClient(cfg)
+
+request := preference.Request{
+	Items: []preference.ItemRequest{
+		{
+			Title:       "My product",
+			Quantity:    1,
+			UnitPrice:   75.76,
+		},
+	},
+}
+
+resource, err := client.Create(context.Background(), request)
+if err != nil {
+	fmt.Println(err)
+	return
+}
+
+fmt.Println(resource)
 ```
 ]]]
 
@@ -446,6 +501,27 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
+```go
+client := preference.NewClient(cfg)
+
+request := preference.Request{
+	Items: []preference.ItemRequest{
+		{
+			Title:       "My product",
+			Quantity:    1,
+			UnitPrice:   75.76,
+		},
+	},
+}
+
+resource, err := client.Create(context.Background(), request)
+if err != nil {
+	fmt.Println(err)
+	return
+}
+
+fmt.Println(resource)
+```
 ]]]
 
 ------------
@@ -554,6 +630,27 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
+```go
+client := preference.NewClient(cfg)
+
+request := preference.Request{
+	Items: []preference.ItemRequest{
+		{
+			Title:       "My product",
+			Quantity:    1,
+			UnitPrice:   75.76,
+		},
+	},
+}
+
+resource, err := client.Create(context.Background(), request)
+if err != nil {
+	fmt.Println(err)
+	return
+}
+
+fmt.Println(resource)
+```
 ]]]
 
 ------------
@@ -661,6 +758,27 @@ preference_data = {
 
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
+```
+```go
+client := preference.NewClient(cfg)
+
+request := preference.Request{
+	Items: []preference.ItemRequest{
+		{
+			Title:       "My product",
+			Quantity:    1,
+			UnitPrice:   75.76,
+		},
+	},
+}
+
+resource, err := client.Create(context.Background(), request)
+if err != nil {
+	fmt.Println(err)
+	return
+}
+
+fmt.Println(resource)
 ```
 ]]]
 
@@ -771,6 +889,27 @@ preference_data = {
 
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
+```
+```go
+client := preference.NewClient(cfg)
+
+request := preference.Request{
+	Items: []preference.ItemRequest{
+		{
+			Title:       "My product",
+			Quantity:    1,
+			UnitPrice:   75.76,
+		},
+	},
+}
+
+resource, err := client.Create(context.Background(), request)
+if err != nil {
+	fmt.Println(err)
+	return
+}
+
+fmt.Println(resource)
 ```
 ]]]
 
@@ -886,6 +1025,27 @@ preference_data = {
 
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
+```
+```go
+client := preference.NewClient(cfg)
+
+request := preference.Request{
+	Items: []preference.ItemRequest{
+		{
+			Title:       "My product",
+			Quantity:    1,
+			UnitPrice:   75.76,
+		},
+	},
+}
+
+resource, err := client.Create(context.Background(), request)
+if err != nil {
+	fmt.Println(err)
+	return
+}
+
+fmt.Println(resource)
 ```
 ]]]
 

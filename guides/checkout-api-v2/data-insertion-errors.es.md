@@ -4,7 +4,7 @@
 >
 > Errores de ingreso de datos
 
-| Código | Descripción | Comunicación sugerida |
+| Código | Descripción | Descripción |
 | --- | --- | --- |
 | 205 | parameter cardNumber can not be null/empty | Ingresa el número de tu tarjeta. |
 | 208 | parameter expirationMonth can not be null/empty | Elige un mes. |
