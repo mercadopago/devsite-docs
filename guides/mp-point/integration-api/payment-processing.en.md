@@ -398,9 +398,11 @@ You can check all the possible status of a payment intent by accessing our [Glos
 
 ## Cancel a payment intent
 
-If you want to, you can cancel a payment intent assigned to a Point device. To do so,  you have two posibilities:
+If you want to, you can cancel a payment intent assigned to a Point device according to the status of the payment intent. See more information below.
 
-* If the status of the intent is `open` and it has not yet been sent to the terminal, you can [cancel it via API](/developers/en/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) by making the following call:
+### Status: open
+
+If the status of the intent is `open` and it has not yet been sent to the terminal, you can [cancel it via API](/developers/en/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) by making the following call:
 
 ``` curl
 curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/{deviceid}/payment-intents/{paymentintentid}' \
@@ -415,7 +417,29 @@ You will receive this response:
 }
 ```
 
-* If the status of the payment intent is `on_terminal`, you will need to cancel it directly from the Point device.
+### Status: on_terminal
+
+If the status of the payment intent is `on_terminal`, you will need to cancel it directly from the Point device. To do so, follow the instructions below.
+
+----[mlm]----
+- **Point Smart**: on the device, press and hold the **bottom right button** for a few seconds, and when the message appears asking if you want to exit the screen without completing the charge, click **yes**.
+- **Point Air**:
+- **Point Blue**:
+
+------------
+----[mlb]----
+- **Point Smart**: on the device, press and hold the **bottom right button** for a few seconds, and when the message appears asking if you want to exit the screen without completing the charge, click **yes**.
+- **Point Pro 2**: on the device, press and hold the **red button** for a few seconds, and when the message appears asking if you want to exit the screen without completing the charge, click **yes**.
+- **Point Mini NFC 1**:
+- **Point Mini Chip**:
+
+------------
+----[mla]----
+- **Point Smart**: on the device, press and hold the **bottom right button** for a few seconds, and when the message appears asking if you want to exit the screen without completing the charge, click **yes**.
+- **Point Plus**: on the device, press and hold the **red button** for a few seconds, and when the message appears asking if you want to exit the screen without completing the charge, click **yes**.
+- **Point Mini**:
+
+------------
 
 > NOTE
 >

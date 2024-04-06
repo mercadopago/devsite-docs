@@ -1,4 +1,4 @@
-#  Processar pagamentos
+# Processar pagamentos
 
 Para começar a processar seus pagamentos com o ponto de venda (PDV), siga estas etapas:
 
@@ -386,12 +386,13 @@ A resposta será semelhante a isso:
 
 Você pode verificar os possíveis estados de uma intenção de pagamento acessando nosso [Glossário](/developers/pt/docs/mp-point/integration-api/glossary).
 
-
 ## Cancelar uma intenção de pagamento
 
-Se desejar, você pode cancelar uma intenção de pagamento atribuída a um dispositivo Point. Para isso, você tem duas opções:
+Se desejar, você pode cancelar uma intenção de pagamento atribuída a um dispositivo Point de acordo com o status da intenção de pagamento. Veja mais informações abaixo.
 
-* Se o estado da intenção for `open` e ainda não tiver sido enviada para o terminal, você pode [cancelá-la via API](/developers/pt/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) fazendo a seguinte chamada:
+### Status: open
+
+Se o estado da intenção for `open` e ainda não tiver sido enviada para o terminal, você pode [cancelá-la via API](/developers/pt/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) fazendo a seguinte chamada:
 
 ``` curl
 curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/{deviceid}/payment-intents/{paymentintentid}' \
@@ -406,7 +407,29 @@ Você receberá esta resposta:
 }
 ```
 
-* Se, por outro lado, o estado da intenção de pagamento for `on_terminal`, você deverá cancelá-la diretamente no dispositivo Point.
+### Status: on_terminal
+
+Se, por outro lado, o estado da intenção de pagamento for `on_terminal`, você deverá cancelá-la diretamente no dispositivo Point. Para isso, siga as indicações abaixo.
+
+----[mlm]----
+- **Point Smart**: no dispositivo, mantenha pressionado o **botão inferior direito** durante alguns segundos e, ao aparecer a mensagem indicando se deseja sair da tela sem finalizar a cobrança, clique em **sim**.
+- **Point Air**:
+- **Point Blue**:
+
+------------
+----[mlb]----
+- **Point Smart**: no dispositivo, mantenha pressionado o **botão inferior direito** durante alguns segundos e, ao aparecer a mensagem indicando se deseja sair da tela sem finalizar a cobrança, clique em **sim**.
+- **Point Pro 2**: no dispositivo, mantenha pressionado o **botão vermelho** por alguns segundos e, ao aparecer a mensagem indicando se deseja sair da tela sem finalizar a cobrança, clique em **sim**.
+- **Point Mini NFC 1**:
+- **Point Mini Chip**:
+
+------------
+----[mla]----
+- **Point Smart**: no dispositivo, mantenha pressionado o **botão inferior direito** durante alguns segundos e, ao aparecer a mensagem indicando se deseja sair da tela sem finalizar a cobrança, clique em **sim**.
+- **Point Plus**: no dispositivo, mantenha pressionado o **botão vermelho** por alguns segundos e, ao aparecer a mensagem indicando se deseja sair da tela sem finalizar a cobrança, clique em **sim**.
+- **Point Mini**:
+
+------------
 
 > NOTE
 >
