@@ -2,39 +2,67 @@
 
 We recommend you customize the checkout information of the store to ensure a better shopping experience and a smoother integration between Mercado Pago`s checkout and Shopify. To do so, follow the steps below:
 
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> WARNING
->
-> Attention
->
-> If you were using the old Mercado Pago app ("**Mercado Pago**") and stopped receiving payments in your store, don't worry. To start selling again, install our new app("**Checkout Mercado Pago**") by following the steps below.
-
-------------
-
 ## Configure the company name 
 
 1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
-2. In the store's administrative panel, click on **Settings**.
+2. In the store's admin panel, click on **Settings**.
+
+![Panel](/images/shopify/store-panel-es.png)
+
 3. Once there, select the **Checkout** option.
-4. In the **Customer Information** section, select the field "Company Name" as required.
 
-## Configure the store language 
+![Checkout](/images/shopify/checkout-es.png)
 
-1. In the administrative panel of the store, click on **Settings**. There, click on **Languages**.
-2. In the Default Language section, you can choose the language in which the store will operate. Click on **Change default**.
-3. On the next screen, choose a language, and click on the **Save** button.
+4. In the **Customer information** section, select the "Company name" field as mandatory.
 
-## Set values of buyer's identification
+![Company name](/images/shopify/company-name-es.png)
 
-The Shopify store will display the request fields of the buyer's identification with the term "Company". To replace it with the identification requested according to the country where the store operates, follow these steps:
+5. Click on **Save**.
 
-1. Within the store administration panel, click on **Settings**. There, click on **Languages**.
-2. In the Default Language section you can choose the language in which you want the store to operate. Click **Change theme language**.
-3. On the next screen, click the **Change Theme Language** button again and choose your preferred language.
-4. Use the search bar on the site to search for the word "Company". The search will return several fields that you can edit.
-5. Replace the following entries with the identification type that your store will request according to the country where it operates (e.g. CPF for Brazil):
-    * **Company label**
-    * **Optional company label**
-    * **Address company blank**
-    * **Address – Company**
-6. Click on Save.
+## Setting up store language
+
+1. In the store's admin panel, click on **Settings**.
+
+![Panel](/images/shopify/store-panel-es.png)
+
+2. Once in Settings, click on **Languages**.
+
+![Language](/images/shopify/language-es.png)
+
+3. In the "Store languages" section, you'll be able to choose the language in which you want the store to operate. Click on **Change default value**.
+
+![Change language](/images/shopify/change-language-es.png)
+
+4. On the next screen, choose your preferred language.
+
+![Panel](/images/shopify/change-language-2-es.png)
+
+5. Click on the **Save** button.
+
+## Adjusting buyer's personal identification values
+
+The Shopify store will display fields requesting the buyer's personal identification with the term "Company". To change this to the identification requested by the country in which the store operates, follow these steps:
+
+1. In the store's admin panel, click on **Settings**.
+
+![Panel](/images/shopify/store-panel-es.png)
+
+2. Once there, select the **Checkout** option.
+
+![Checkout](/images/shopify/checkout-es.png)
+
+3. In the "Checkout language" section, click on **Manage checkout language**.
+
+![Checkout language](/images/shopify/checkout-language-es.png)
+
+4. On the next screen, use the site's search bar to search for the word "Company". The search will return several fields that you can modify.
+
+![Values id](/images/shopify/values-id-es.gif)
+
+5. Replace the following entries with the indication of the type of personal identification your store will request according to the country where it operates----[mlb]----(for example, CPF for Brazil)------------:
+
+- **Company label**
+- **Optional company label**
+- **Address company blank**
+
+6. Click on **Save**.

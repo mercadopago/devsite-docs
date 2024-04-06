@@ -1,14 +1,26 @@
-# Como instalá-lo
+# Instalação via Wordpress
 
-Para instalar o plugin do Mercado Pago com WooCommerce através do Wordpress, siga estes passos:
+Para instalar o plugin do Mercado Pago para WooCommerce através do Wordpress, siga os seguintes passos:
 
 1. Acesse sua conta [Wordpress](https://wordpress.com/).
-2. Acesse o Painel da sua conta e clique em **Plugins > Adicionar Novo**.
-3. Clique na barra de pesquisa à direita e procure por **Mercado Pago**.
-4. O resultado da pesquisa mostrará o plugin **Mercado Pago Payments for WooCommerce**. Clique no botão **Instalar agora** dentro desse plug-in.
+2. Acesse o painel da sua conta e clique em **Plugins > Adicionar plugin**.
+
+![Add plugin](/images/woocomerce/add-plugin-pt.png)
+
+3. Busque por **Mercado Pago** na barra de pesquisa à direita.
+4. O resultado da pesquisa exibirá o plugin Mercado Pago. Clique no botão **Instalar agora** no _card_ do plugin.
+
+![Install MP](/images/woocomerce/install-mp-pt.png)
+
 5. Após a conclusão da instalação, clique no botão **Ativar**.
 
-![Plugin de instalação automatica](/images/woocommerce/pt_installation_auto_v2.gif)
+![Install MP](/images/woocomerce/activate-mp-pt.png)
 
-Pronto! O plugin agora está ativo e você pode configurar sua integração
+> WARNING
+>
+> Importante
+>
+> O plugin do Mercado Pago necessita de uma versão ativa do [WooCommerce](https://wordpress.org/extend/plugins/woocommerce/) para funcionar.
+
+Pronto! O plugin agora está ativo e você pode [configurar sua integração.](/developers/pt/docs/woocommerce/integration-configuration/plugin-configuration)
 
