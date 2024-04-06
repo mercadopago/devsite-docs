@@ -296,7 +296,7 @@ curl -X POST \
 }
 ```
 
-The onSubmit callback contains all the necessary data for a payment creation, however, if you wish, it is possible to include additional details, which can facilitate the purchase recognition by the payer, and increase the payment approval rate. 
+The `onSubmit` callback contains all the necessary data for a payment creation, however, if you wish, it is possible to include additional details, which can facilitate the purchase recognition by the payer, and increase the payment approval rate. 
 
 To do that, add the relevant fields to the recieved object, contained in the Brick's onSubmit callback.
 Some of these fields are: `description` (this field can be shown in created tickets) and `external_reference` (id of the purchase in your website, which eases the purchase recognition for the buyer). It is also possible to add complementary buyer's data.

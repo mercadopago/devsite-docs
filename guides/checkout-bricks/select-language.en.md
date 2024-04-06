@@ -6,11 +6,24 @@
 
 You can select the Brick language in two different ways: at the time of initialization of the Brick or via SDK.
 
+----[mla, mlb, mlm]----
 > WARNING
 >
 > Attention
 >
-> It is only possible to modify the language of the Bricks that process payments directly on the site, such as the [Payment](/developers/en/docs/checkout-bricks/payment-brick/introduction) and [Card Payment](/developers/en/docs/checkout-bricks/card-payment-brick/introduction). In the case of the [Wallet Brick](developers/en/docs/checkout-bricks/wallet-brick/introduction), the user is redirected to the Mercado Pago payment environment, and since the interface is independent, it cannot be translated according to the specific settings defined for the store. In this case, it is only possible to change the language directly on the site.
+> It's only possible to modify the language of the Bricks that operate directly within your store. such as the [Payment](/developers/en/docs/checkout-bricks/payment-brick/introduction) and [Card Payment](/developers/en/docs/checkout-bricks/card-payment-brick/introduction). <br>
+> In the case of the [Wallet Brick](developers/en/docs/checkout-bricks/wallet-brick/introduction) and the [Payment Brick of Mercado Pago Wallet and Installments without a card,](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits) the user is redirected to the Mercado Pago payment environment, and since the interface is independent, it cannot be translated according to the specific settings defined for the store.
+
+------------
+----[mlc, mlu, mco, mpe]----
+> WARNING
+>
+> Attention
+>
+> It is only possible to modify the language of the Bricks that process payments directly on the site, such as the [Payment](/developers/en/docs/checkout-bricks/payment-brick/introduction) and [Card Payment](/developers/en/docs/checkout-bricks/card-payment-brick/introduction). <br>
+> In the case of the [Wallet Brick](developers/en/docs/checkout-bricks/wallet-brick/introduction) and the [Payment Brick of Mercado Pago Wallet,](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits) the user is redirected to the Mercado Pago payment environment, and since the interface is independent, it cannot be translated according to the specific settings defined for the store.
+
+------------
 
 ## Select language while initializing
 
