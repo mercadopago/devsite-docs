@@ -1,8 +1,8 @@
-# How do I install the plugin manually?
+# Manual installation
 
 To install the plugin manually in Wordpress, follow these steps:
 
-1. Download the .zip file from our repository [by clicking here](https://github.com/mercadopago/cart-woocommerce/archive/master.zip).
+1. Download the .zip file through the [releases page](https://github.com/mercadopago/cart-woocommerce/releases) of our repository.
 2. Once downloaded, rename the .zip file to **woocommerce-mercadopago**.
 
     > NOTE
@@ -17,6 +17,6 @@ To install the plugin manually in Wordpress, follow these steps:
 6. Click **Install Now**.
 7. When the installation is complete, click the **Activate plugin** button.
 
-![Manual Install](/images/woocommerce/en_manual_install_02.gif)
+![Manual Install](/images/woocomerce/en_manual_install_02.gif)
 
-Completing these steps will install and activate the Mercado Pago payments plugin for WooCommerce in your store and you will be able to configure your integration.
+Completing these steps will install and activate the Mercado Pago payments plugin for WooCommerce in your store. Now you can [configure your integration.](/developers/en/docs/woocommerce/integration-configuration/plugin-configuration)

@@ -41,6 +41,34 @@ bullet_section_with_media:
 ---
 ------------
 
+---
+bullet_section_with_media:
+ - title: Ventajas
+ - type: normal
+ - benefit_title: Pagos sin necesidad de iniciar sesión
+  ----[mla, mlm, mlu, mpe, mco, mlc]----
+ - benefit_message: Con el Checkout Pro o el Checkout API, su cliente no necesita iniciar sesión en su cuenta de Mercado Pago para realizar el pago en su tienda.
+
+ ------------
+ ----[mlb]----
+ - benefit_message: Con el Checkout Pro o el Checkout Transparente, su cliente no necesita iniciar sesión en su cuenta de Mercado Pago para realizar el pago en su tienda.
+
+ ------------
+ - benefit_title: Personalización de los métodos de pago
+ - benefit_message: Es posible ofrecer todos los métodos de pago disponibles o solo los que considere necesarios.
+ - benefit_title: Protección de datos con PCI-DSS (Payment Card Industry Data Security Standard)
+ - benefit_message: Estamos en conformidad con el estándar global de protección de información confidencial de tarjetas y contamos con Secure Fields para facilitar la obtención de la certificación para su tienda.
+ - benefit_title: Garantice seguridad en sus transacciones de alto riesgo con el 3DS (3-Domain Secure)
+ - benefit_message: Con el 3DS, realizamos una verificación de identidad discreta desde un modal sin salir de la tienda, ofreciendo beneficios como una mayor probabilidad de aprobación y menor riesgo de fraude.
+ - benefit_title: Compatible con WooCommerce Blocks
+ - benefit_message: Nuestro plugin es compatible con WooCommerce Blocks, lo que le permite personalizar su comercio electrónico y hacer que sus productos sean aún más accesibles para sus clientes.
+ ----[mlm, mlb, mla]----
+ - benefit_title: Financiación sin tarjeta
+ - benefit_message: Al activar Mercado Crédito en el checkout, llega a más de 12 millones de personas con crédito activo, sin costos adicionales, además de obtener una tasa de aprobación de aproximadamente el 98% en las ventas.
+
+ ------------
+ - image: /woocomerce/landing-woo-advantages.png
+---
 
 --- mini_landing_separator ---
 
