@@ -185,7 +185,7 @@
                   "notification_email_list": {
                     "type": "array",
                     "required": false,
-                    "items": {
+                    "properties": {
                       "type": "string",
                       "example": "correo1@example.com",
                       "description": {
@@ -288,7 +288,7 @@
                         "pt": "Campo que contém um grupo de destinatários de e-mail que receberão notificações quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta do Mercado Pago para também receber as notificações.",
                         "es": "Campo que contiene un grupo de destinatarios de correo electrónico que recibirán notificaciones cuando un reporte esté listo y disponible para su descarga. "
                       },
-                      "items": {
+                      "properties": {
                         "type": "string",
                         "example": "correo1@example.com",
                         "description": {
@@ -753,7 +753,7 @@
                   "notification_email_list": {
                     "type": "array",
                     "required": false,
-                    "items": {
+                    "properties": {
                       "type": "string",
                       "example": "correo1@example.com",
                       "description": {
@@ -850,7 +850,7 @@
                     "notification_email_list": {
                       "type": "array",
                       "required": false,
-                      "items": {
+                      "properties": {
                         "type": "string",
                         "example": "correo1@example.com",
                         "description": {
@@ -1146,7 +1146,7 @@
                     "notification_email_list": {
                       "type": "array",
                       "required": false,
-                      "items": {
+                      "properties": {
                         "type": "string",
                         "example": "correo1@example.com",
                         "description": {
