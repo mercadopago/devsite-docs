@@ -19,14 +19,12 @@ Confira o diagrama abaixo que ilustra como funciona o fluxo de criação da vinc
 
 Para criar uma vinculação, envie um **POST** com os atributos necessários ao endpoint [/v2/wallet_connect/agreements](/developers/pt/reference/wallet_connect/_wallet_connect_agreements/post) e execute a requisição ou, se preferir, utilize o `curl` abaixo e atente-se à resposta da requisição que retornará **dois parâmetros** obrigatórios para obter a aprovação do pagador: `agreement_uri` e `return_uri`. 
 
-[[[
 ```curl
-
 curl -X POST \
-      'https://api.mercadopago.com/v2/wallet_connect/agreements?client.id=<CLIENT.ID>' \
+    'https://api.mercadopago.com/v2/wallet_connect/agreements' \
       -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
       -H 'Content-Type: application/json' \
-      -H 'x-platform-id: YOUR_ACCESS_TOKEN' \
+      -H 'x-platform-id: YOUR_PLATFORM_ID' \
       -d '{
   "return_uri": "https://www.mercadopago.com/",
   "external_flow_id": "EXTERNAL_FLOW_ID",
@@ -40,15 +38,12 @@ curl -X POST \
   }
 }'
 ```
-]]]
 
 ## Resposta
 
-[[[
 ```json
 {
   "agreement_id": "22abcd1235ed497f945f755fcaba3c6c",
   "agreement_uri": "https://wwww.mercadopago.com.ar/v1/wallet_agreement/22abcd1235ed497f945f755fcaba3c6c"
 }
 ```
-]]]

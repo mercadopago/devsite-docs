@@ -4,7 +4,7 @@ Pix es una forma de pago instantánea que permite el envío y recepción de dine
 
 Para configurar pagos a través de Pix, sigue los siguientes pasos.
 
-1. En el panel de control de Adobe Commerce (Magento), ve a **Stores > Configuration > Sales > Payment Methods**, busca el plugin de Mercado Pago y haz clic en **Configure**.
+1. En el panel de control de Adobe Commerce, ve a **Stores > Configuration > Sales > Payment Methods**, busca el plugin de Mercado Pago y haz clic en **Configure**.
 2. En la opción **Checkout Transparent**, selecciona la opción **Pix**.
 3. En **Enabled**, selecciona "Yes" o "No". Esta opción define si el método de pago estará disponible para uso.
 4. En **Title**, define cómo deseas que aparezca este medio de pago en el proceso de pago.

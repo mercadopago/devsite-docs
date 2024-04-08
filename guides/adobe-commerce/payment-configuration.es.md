@@ -1,6 +1,6 @@
 # Configuración de pagos
 
-La integración del módulo de Mercado Pago con la tienda Adobe Commerce (Magento) permite la utilización de dos tipos de checkouts.
+La integración del módulo de Mercado Pago con la tienda Adobe Commerce permite la utilización de dos tipos de checkouts.
 
 ----[mlb]----
 

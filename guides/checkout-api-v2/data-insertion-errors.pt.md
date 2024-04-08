@@ -4,7 +4,7 @@
 >
 > Erros de inserção de dados
 
-| Código | Descrição | Mensagem sugerida |
+| Código | Descrição | Descrição |
 | --- | --- | --- |
 | 205 | parameter cardNumber can not be null/empty | Digite o número do seu cartão. |
 | 208 | parameter expirationMonth can not be null/empty | Escolha um mês. |

@@ -34,18 +34,10 @@ Después de recibir la notificación de que la mini aplicación está disponible
 
 Selecciona tu mini app y presiona el botón de instalación. En el ejemplo de abajo, la mini aplicación se llama "Test de miniaplicación".
 
-<center>
-
 ![miniapps-install](/mini-apps/miniapps-install-es.png)
-
-</center>
 
 ## Visualización
 
 Cuando la mini app esté instalada, se verá como en la imagen de abajo. Para ingresar, solo debes tocar el ícono.
 
-<center>
-
 ![miniapps-visualization](/mini-apps/miniapps-visualization-es.png)
-
-</center>

@@ -3,6 +3,13 @@
   "paths": {
     "/checkout/preferences": {
       "post": {
+        "sdks":true,
+        "java": "MercadoPagoConfig.setAccessToken(\"YOUR_ACCESS_TOKEN\");\nPreferenceClient client = new PreferenceClient();\n\nPreferenceItemRequest itemRequest =\n    PreferenceItemRequest.builder()\n        .id(\"1234\")\n        .title(\"Dummy Title\")\n        .description(\"Dummy description\")\n        .pictureUrl(\"http://www.myapp.com/myimage.jpg\")\n        .categoryId(\"car_electronics\")\n        .quantity(1)\n        .currencyId(\"BRL\")\n        .unitPrice(new BigDecimal(\"10\"))\n        .build();\n\nList<PreferenceItemRequest> items = new ArrayList<>();\nitems.add(itemRequest);\n\nPreferenceFreeMethodRequest freeMethod =\n    PreferenceFreeMethodRequest.builder()\n        .id(1L).build();\nList<PreferenceFreeMethodRequest> freeMethodList = new ArrayList<>();\nfreeMethodList.add(freeMethod);\n\nList<PreferencePaymentTypeRequest> excludedPaymentTypes = new ArrayList<>();\nexcludedPaymentTypes.add(PreferencePaymentTypeRequest.builder().id(\"ticket\").build());\n\nList<PreferencePaymentMethodRequest> excludedPaymentMethods = new ArrayList<>();\nexcludedPaymentMethods.add(PreferencePaymentMethodRequest.builder().id(\"\").build());\n\nPreferenceRequest preferenceRequest = PreferenceRequest.builder()\n    .backUrls(\n        PreferenceBackUrlsRequest.builder()\n            .success(\"http://test.com/success\")\n            .failure(\"http://test.com/failure\")\n            .pending(\"http://test.com/pending\")\n            .build())\n    .differentialPricing(\n        PreferenceDifferentialPricingRequest.builder()\n            .id(1L)\n            .build())\n    .expires(false)\n    .items(items)\n    .marketplaceFee(new BigDecimal(\"0\"))\n    .payer(\n        PreferencePayerRequest.builder()\n            .name(\"Test\")\n            .surname(\"User\")\n            .email(\"your_test_email@example.com\")\n     .phone(PhoneRequest.builder().areaCode(\"11\").number(\"4444-4444\").build())\n            .identification(\n    IdentificationRequest.builder().type(\"CPF\").number(\"19119119100\").build())\n            .address(\n                AddressRequest.builder()\n                    .zipCode(\"06233200\")\n                    .streetName(\"Street\")\n                    .streetNumber(\"123\")\n                    .build())\n            .build())\n    .additionalInfo(\"Discount: 12.00\")\n    .autoReturn(\"all\")\n    .binaryMode(true)\n    .externalReference(\"1643827245\")\n    .marketplace(\"marketplace\")\n    .notificationUrl(\"http://notificationurl.com\")\n    .operationType(\"regular_payment\")\n    .paymentMethods(\n        PreferencePaymentMethodsRequest.builder()\n            .defaultPaymentMethodId(\"master\")\n            .excludedPaymentTypes(excludedPaymentTypes)\n            .excludedPaymentMethods(excludedPaymentMethods)\n            .installments(5)\n            .defaultInstallments(1)\n            .build())\n    .shipments(\n        PreferenceShipmentsRequest.builder()\n            .mode(\"custom\")\n            .localPickup(false)\n            .defaultShippingMethod(null)\n            .freeMethods(freeMethodList)\n            .cost(BigDecimal.TEN)\n            .freeShipping(false)\n            .dimensions(\"10x10x20,500\")\n            .receiverAddress(\n                PreferenceReceiverAddressRequest.builder()\n                    .zipCode(\"06000000\")\n                    .streetNumber(\"123\")\n                    .streetName(\"Street\")\n                    .floor(\"12\")\n                    .apartment(\"120A\")\n                    .build())\n            .build())\n    .statementDescriptor(\"Test Store\")\n    .build();\n\nPreference preference = client.create(preferenceRequest);",
+        "php": "<?php\nMercadoPagoConfig::setAccessToken(\"ACCESS_TOKEN\");\n\n$client = new PreferenceClient();\n$preference = $client->create([\n\"back_urls\"=>array(\n    \"success\" => \"http://test.com/success\",\n    \"failure\" => \"http://test.com/failure\",\n    \"pending\" => \"http://test.com/pending\"\n),\n\"differential_pricing\" => array(\n    \"id\" => 1,\n),\n\"expires\" => false,\n\"items\" => array(\n    array(\n        \"id\" => \"1234\",\n        \"title\" => \"Dummy Title\",\n        \"description\" => \"Dummy description\",\n        \"picture_url\" => \"http://www.myapp.com/myimage.jpg\",\n        \"category_id\" => \"car_electronics\",\n        \"quantity\" => 2,\n        \"currency_id\" => \"BRL\",\n        \"unit_price\" => 100\n    )\n),\n\"marketplace_fee\" => 0,\n\"payer\" => array(\n    \"name\" => \"Test\",\n    \"surname\" => \"User\",\n    \"email\" => \"your_test_email@example.com\",\n    \"phone\" => array(\n        \"area_code\" => \"11\",\n        \"number\" => \"4444-4444\"\n    ),\n    \"identification\" => array(\n        \"type\" => \"CPF\",\n        \"number\" => \"19119119100\"\n    ),\n    \"address\" => array(\n        \"zip_code\" => \"06233200\",\n        \"street_name\" => \"Street\",\n        \"street_number\" => \"123\"\n    )\n),\n\"additional_info\" => \"Discount: 12.00\",\n\"auto_return\" => \"all\",\n\"binary_mode\" => true,\n\"external_reference\" => \"1643827245\",\n\"marketplace\" => \"none\",\n\"notification_url\" => \"http://notificationurl.com\",\n\"operation_type\" => \"regular_payment\",\n\"payment_methods\" => array(\n    \"default_payment_method_id\" => \"master\",\n    \"excluded_payment_types\" => array(\n        array(\n            \"id\" => \"visa\"\n        )\n    ),\n    \"excluded_payment_methods\" => array(\n        array(\n            \"id\" => \"\"\n        )\n    ),\n    \"installments\" => 5,\n    \"default_installments\" => 1\n),\n\"shipments\" >= array(\n    \"mode\" => \"custom\",\n    \"local_pickup\" => false,\n    \"default_shipping_method\" => null,\n    \"free_methods\" => array(\n        array(\n            \"id\" => 1\n        )\n    ),\n    \"cost\" => 10,\n    \"free_shipping\" => false,\n    \"dimensions\" => \"10x10x20,500\",\n    \"receiver_address\" => array(\n        \"zip_code\" => \"06000000\",\n        \"street_number\" => \"123\",\n        \"street_name\" => \"Street\",\n        \"floor\" => \"12\",\n        \"apartment\" => \"120A\",\n        \"city_name\" => \"Rio de Janeiro\",\n        \"state_name\" => \"Rio de Janeiro\",\n        \"country_name\" => \"Brasil\"\n    )\n),\n\"statement_descriptor\" => \"Test Store\",\n]);\n\necho implode($preference);\n?>",
+        "js": "const client = new MercadoPago({  accessToken: config.access_token });\nconst preference = new Preference(client);\n\nconst body = {\n  items: [\n    {\n      id: '1234',\n      title: 'Dummy Title',\n      description: 'Dummy description',\n      picture_url: 'http://www.myapp.com/myimage.jpg',\n      category_id: 'car_electronics',\n      quantity: 1,\n      currency_id: 'BRL',\n      unit_price: 10,\n    },\n  ],\n  marketplace_fee: 0,\n  payer: {\n    name: 'Test',\n    surname: 'User',\n    email: 'your_test_email@example.com',\n    phone: {\n      area_code: '11',\n      number: '4444-4444',\n    },\n    identification: {\n      type: 'CPF',\n      number: '19119119100',\n    },\n    address: {\n      zip_code: '06233200',\n      street_name: 'Street',\n      street_number: 123,\n    },\n  },\n  back_urls: {\n    success: 'http://test.com/success',\n    failure: 'http://test.com/failure',\n    pending: 'http://test.com/pending',\n  },\n  differential_pricing: {\n    id: 1,\n  },\n  expires: false,\n  additional_info: 'Discount: 12.00',\n  auto_return: 'all',\n  binary_mode: true,\n  external_reference: '1643827245',\n  marketplace: 'marketplace',\n  notification_url: 'http://notificationurl.com',\n  operation_type: 'regular_payment',\n  payment_methods: {\n    default_payment_method_id: 'master',\n    excluded_payment_types: [\n      {\n        id: 'ticket',\n      },\n    ],\n    excluded_payment_methods: [\n      {\n        id: '',\n      },\n    ],\n    installments: 5,\n    default_installments: 1,\n  },\n  shipments: {\n    mode: 'custom',\n    local_pickup: false,\n    default_shipping_method: null,\n    free_methods: [\n      {\n        id: 1,\n      },\n    ],\n    cost: 10,\n    free_shipping: false,\n    dimensions: '10x10x20,500',\n    receiver_address: {\n      zip_code: '06000000',\n      street_number: 123,\n      street_name: 'Street',\n      floor: '12',\n      apartment: '120A',\n    },\n  },\n  statement_descriptor: 'Test Store',\n};\n\nconst response = await preference.create({ body })\n  .then(console.log).catch(console.log);\n",
+        "python": "import mercadopago\nsdk = mercadopago.SDK(\"PROD_ACCESS_TOKEN\")\n\nrequest = {\n\t\"items\": [\n\t\t{\n\t\t\t\"id\": \"1234\",\n\t\t\t\"title\": \"Dummy Title\",\n\t\t\t\"description\": \"Dummy description\",\n\t\t\t\"picture_url\": \"http://www.myapp.com/myimage.jpg\",\n\t\t\t\"category_id\": \"car_electronics\",\n\t\t\t\"quantity\": 1,\n\t\t\t\"currency_id\": \"BRL\",\n\t\t\t\"unit_price\": 10,\n\t\t},\n\t],\n\t\"marketplace_fee\": 0,\n\t\"payer\": {\n\t\t\"name\": \"Test\",\n\t\t\"surname\": \"User\",\n\t\t\"email\": \"your_test_email@example.com\",\n\t\t\"phone\": {\n\t\t\t\"area_code\": \"11\",\n\t\t\t\"number\": \"4444-4444\",\n\t\t},\n\t\t\"identification\": {\n\t\t\t\"type\": \"CPF\",\n\t\t\t\"number\": \"19119119100\",\n\t\t},\n\t\t\"address\": {\n\t\t\t\"zip_code\": \"06233200\",\n\t\t\t\"street_name\": \"Street\",\n\t\t\t\"street_number\": 123,\n\t\t},\n\t},\n\t\"back_urls\": {\n\t\t\"success\": \"http://test.com/success\",\n\t\t\"failure\": \"http://test.com/failure\",\n\t\t\"pending\": \"http://test.com/pending\",\n\t},\n\t\"differential_pricing\": {\n\t\t\"id\": 1,\n\t},\n\t\"expires\": False,\n\t\"additional_info\": \"Discount: 12.00\",\n\t\"auto_return\": \"all\",\n\t\"binary_mode\": True,\n\t\"external_reference\": \"1643827245\",\n\t\"marketplace\": \"marketplace\",\n\t\"notification_url\": \"http://notificationurl.com\",\n\t\"operation_type\": \"regular_payment\",\n\t\"payment_methods\": {\n\t\t\"default_payment_method_id\": \"master\",\n\t\t\"excluded_payment_types\": [\n\t\t\t{\n\t\t\t\t\"id\": \"ticket\",\n\t\t\t},\n\t\t],\n\t\t\"excluded_payment_methods\": [\n\t\t\t{\n\t\t\t\t\"id\": \"\",\n\t\t\t},\n\t\t],\n\t\t\"installments\": 5,\n\t\t\"default_installments\": 1,\n\t},\n\t\"shipments\": {\n\t\t\"mode\": \"custom\",\n\t\t\"local_pickup\": False,\n\t\t\"default_shipping_method\": None,\n\t\t\"free_methods\": [\n\t\t\t{\n\t\t\t\t\"id\": 1,\n\t\t\t},\n\t\t],\n\t\t\"cost\": 10,\n\t\t\"free_shipping\": False,\n\t\t\"dimensions\": \"10x10x20,500\",\n\t\t\"receiver_address\": {\n\t\t\t\"zip_code\": \"06000000\",\n\t\t\t\"street_number\": 123,\n\t\t\t\"street_name\": \"Street\",\n\t\t\t\"floor\": \"12\",\n\t\t\t\"apartment\": \"120A\",\n\t\t},\n\t},\n\t\"statement_descriptor\": \"Test Store\",\n}\n\npreference_response = sdk.preference().create(request)\npreference = preference_response[\"response\"]",
+        "csharp": "MercadoPagoConfig.AccessToken = \"PROD_ACCESS_TOKEN\";\nPreferenceRequest request = new PreferenceRequest\n{\n    BackUrls = new PreferenceBackUrlsRequest\n    {\n        Success = \"http://test.com/success\",\n        Failure = \"http://test.com/failure\",\n        Pending = \"http://test.com/pending\"\n    },\n    DifferentialPricing = new PreferenceDifferentialPricingRequest\n    {\n        Id = 1\n    },\n    Expires = false,\n    Items = new List<PreferenceItemRequest>\n    {\n        new PreferenceItemRequest\n        {\n            Id = \"1234\",\n            Title = \"Dummy Title\",\n            Description = \"Dummy description\",\n            PictureUrl = \"http://www.myapp.com/myimage.jpg\",\n            CategoryId = \"car_electronics\",\n            Quantity = 2,\n            CurrencyId = \"BRL\",\n            UnitPrice = 100\n        }\n    },\n    MarketplaceFee = 0,\n    Payer = new PreferencePayerRequest\n    {\n        Name = \"Test\",\n        Surname = \"User\",\n        Email = \"your_test_email@example.com\",\n        Phone = new PhoneRequest\n        {\n            AreaCode = \"11\",\n            Number = \"4444-4444\"\n        },\n        Identification = new IdentificationRequest\n        {\n            Type = \"CPF\",\n            Number = \"19119119100\"\n        },\n        Address = new AddressRequest\n        {\n            ZipCode = \"06233200\",\n            StreetName = \"Street\",\n            StreetNumber = \"123\"\n        }\n    },\n    AdditionalInfo = \"Discount: 12.00\",\n    AutoReturn = \"all\",\n    BinaryMode = true,\n    ExternalReference = \"1643827245\",\n    Marketplace = \"none\",\n    NotificationUrl = \"http://notificationurl.com\",\n    OperationType = \"regular_payment\",\n    PaymentMethods = new PreferencePaymentMethodsRequest\n    {\n        DefaultPaymentMethodId = \"master\",\n        ExcludedPaymentTypes = new List<PreferencePaymentTypeRequest>\n        {\n            new PreferencePaymentTypeRequest\n            {\n                Id = \"visa\"\n            }\n        },\n        ExcludedPaymentMethods = new List<PreferencePaymentMethodRequest>\n        {\n            new PreferencePaymentMethodRequest\n            {\n                Id = \"\"\n            }\n        },\n        Installments = 5,\n        DefaultInstallments = 1\n    },\n    Shipments = new PreferenceShipmentsRequest\n    {\n        Mode = \"custom\",\n        LocalPickup = false,\n        FreeMethods = new List<PreferenceFreeMethodRequest>\n        {\n            new PreferenceFreeMethodRequest\n            {\n                Id = 1\n            }\n        },\n        Cost = 10,\n        FreeShipping = false,\n        Dimensions = \"10x10x20,500\",\n        ReceiverAddress = new PreferenceReceiverAddressRequest\n        {\n            ZipCode = \"06000000\",\n            StreetNumber = \"123\",\n            StreetName = \"Street\",\n            Floor = \"12\",\n            Apartment = \"120A\",\n            City = \"Rio de Janeiro\",\n            State = \"Rio de Janeiro\",\n            Country = \"Brasil\"\n        }\n    },\n    StatementDescriptor = \"Test Store\"\n};\nPreferenceClient client = new PreferenceClient();\nPreference preference = client.Create(request);",
+        "ruby": "sdk = MercadoPago::Client.new('ACCES_TOKEN')\n\nrequest = {\n  items: [\n    {\n      id: '1234',\n      title: 'Dummy Title',\n      description: 'Dummy description',\n      picture_url: 'http://www.myapp.com/myimage.jpg',\n      category_id: 'car_electronics',\n      quantity: 1,\n      currency_id: 'BRL',\n      unit_price: 10,\n    },\n  ],\n  marketplace_fee: 0,\n  payer: {\n    name: 'Test',\n    surname: 'User',\n    email: 'your_test_email@example.com',\n    phone: {\n      area_code: '11',\n      number: '4444-4444',\n    },\n    identification: {\n      type: 'CPF',\n      number: '19119119100',\n    },\n    address: {\n      zip_code: '06233200',\n      street_name: 'Street',\n      street_number: 123,\n    },\n  },\n  back_urls: {\n    success: 'http://test.com/success',\n    failure: 'http://test.com/failure',\n    pending: 'http://test.com/pending',\n  },\n  differential_pricing: {\n    id: 1,\n  },\n  expires: false,\n  additional_info: 'Discount: 12.00',\n  auto_return: 'all',\n  binary_mode: true,\n  external_reference: '1643827245',\n  marketplace: 'marketplace',\n  notification_url: 'http://notificationurl.com',\n  operation_type: 'regular_payment',\n  payment_methods: {\n    default_payment_method_id: 'master',\n    excluded_payment_types: [\n      {\n        id: 'ticket',\n      },\n    ],\n    excluded_payment_methods: [\n      {\n        id: '',\n      },\n    ],\n    installments: 5,\n    default_installments: 1,\n  },\n  shipments: {\n    mode: 'custom',\n    local_pickup: false,\n    default_shipping_method: nil,\n    free_methods: [\n      {\n        id: 1,\n      },\n    ],\n    cost: 10,\n    free_shipping: false,\n    dimensions: '10x10x20,500',\n    receiver_address: {\n      zip_code: '06000000',\n      street_number: 123,\n      street_name: 'Street',\n      floor: '12',\n      apartment: '120A',\n    },\n  },\n  statement_descriptor: 'Test Store',\n}\n\npreference_response = sdk.preference.create(request)\npreference = preference_response[:response]",
         "tags": [
           "checkout-pro",
           "mobile-checkout"
@@ -31,6 +38,7 @@
                       "properties": {
                         "id": {
                           "type": "string",
+                          "example": "Sound system",
                           "description": {
                             "en": "Item ID.",
                             "pt": "Identificador do item",
@@ -87,7 +95,7 @@
                         },
                         "currency_id": {
                           "type": "string",
-                          "example": "U$",
+                          "example": "BRL",
                           "description": {
                             "en": "Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.",
                             "pt": "ID exclusivo para identificar a moeda. Código ISO_4217. Alguns sites permitem moeda local e USD, mas é importante observar que o valor é convertido para moeda local quando a preferência é criada, pois o checkout sempre processa as transações em moeda local. Se você estiver usando USD, observe que esse valor não é atualizado automaticamente se o valor da moeda local mudar em relação ao USD.",
@@ -175,6 +183,7 @@
                     "properties": {
                       "name": {
                         "type": "string",
+                        "example": "John",
                         "description": {
                           "en": "Buyer name.",
                           "pt": "Nome do comprador",
@@ -183,6 +192,7 @@
                       },
                       "surname": {
                         "type": "string",
+                        "example": "Doe",
                         "description": {
                           "en": "Buyer last name.",
                           "pt": "Apelido do comprador",
@@ -191,6 +201,7 @@
                       },
                       "email": {
                         "type": "string",
+                        "example": "john@doe.com",
                         "description": {
                           "en": "Buyer e-mail address.",
                           "pt": "Endereço de e-mail do comprador",
@@ -207,6 +218,7 @@
                         "properties": {
                           "area_code": {
                             "type": "string",
+                            "example": "11",
                             "description": {
                               "en": "Area code.",
                               "pt": "Código de área",
@@ -215,6 +227,7 @@
                           },
                           "number": {
                             "type": "number",
+                            "example": 988888888,
                             "description": {
                               "en": "Number.",
                               "pt": "Número",
@@ -233,6 +246,7 @@
                         "properties": {
                           "type": {
                             "type": "string",
+                            "example": "CPF",
                             "description": {
                               "en": "Identification Type.",
                               "pt": "Tipo de identificação",
@@ -241,6 +255,7 @@
                           },
                           "number": {
                             "type": "string",
+                            "example": "19119119100",
                             "description": {
                               "en": "Number.",
                               "pt": "Número",
@@ -259,6 +274,7 @@
                         "properties": {
                           "zip_code": {
                             "type": "string",
+                            "example": "06233200",
                             "description": {
                               "en": "Zip code.",
                               "pt": "Código postal",
@@ -267,6 +283,7 @@
                           },
                           "street_name": {
                             "type": "string",
+                            "example": "Example Street",
                             "description": {
                               "en": "Street name.",
                               "pt": "Rua",
@@ -275,9 +292,10 @@
                           },
                           "street_number": {
                             "type": "number",
+                            "example": 123,
                             "description": {
                               "en": "Street number.",
-                              "pt": "O Número",
+                              "pt": "Número",
                               "es": "Número"
                             }
                           }
@@ -285,6 +303,7 @@
                       },
                       "date_created": {
                         "type": "string",
+                        "example": "2024-04-01T00:00:00Z",
                         "format": "date",
                         "description": {
                           "en": "Registration date.",
@@ -314,6 +333,7 @@
                           "properties": {
                             "id": {
                               "type": "string",
+                              "example": "master",                              
                               "description": {
                                 "en": "Payment method ID.",
                                 "pt": "Identificador do método de pagamento",
@@ -335,6 +355,7 @@
                           "properties": {
                             "id": {
                               "type": "string",
+                              "example": "ticket",                              
                               "description": {
                                 "en": "Payment method data_type ID.",
                                 "pt": "Identificador de data_type do meio de pagamento",
@@ -346,6 +367,7 @@
                       },
                       "default_payment_method_id": {
                         "type": "string",
+                        "example": "amex",
                         "description": {
                           "en": "Suggested payment method. The user will initiate the checkout this this payment method already selected. It is considered suggested because Checkouts follow different logics in order to select the best payment method for a specific transaction, and this property is the option with the least relevance.",
                           "pt": "Forma de pagamento sugerida. O usuário iniciará o pagamento com esta forma de pagamento já selecionada. Considera-se sugerido porque os Checkouts seguem lógicas diferentes para selecionar o melhor meio de pagamento para uma determinada transação, sendo esta propriedade a opção menos relevante.",
@@ -354,18 +376,20 @@
                       },
                       "installments": {
                         "type": "number",
+                        "example": 10,
                         "description": {
                           "en": "Maximum number of credit card installments to be accepted.",
-                          "pt": "Número Máximo de cotas",
+                          "pt": "Número Máximo de parcelas",
                           "es": "Máximo número de cuotas"
                         }
                       },
                       "default_installments": {
                         "type": "number",
+                        "example": 5,
                         "description": {
                           "en": "Prefered number of credit card installments.",
-                          "pt": "Preferência de cotas",
-                          "es": "Preferencia de cuotas"
+                          "pt": "Número padrão de parcelas oferecidas",
+                          "es": "Número estándar de cuotas ofrecidas"
                         }
                       }
                     }
@@ -383,6 +407,7 @@
                       },
                       "local_pickup": {
                         "type": "boolean",
+                        "example": true,
                         "description": {
                           "en": "The payer has the option to pick up the shipment in your store (mode:me2 only).",
                           "pt": "Preferência de remoção de pacotes em agência(mode:me2 somente)",
@@ -391,6 +416,7 @@
                       },
                       "dimensions": {
                         "type": "string",
+                        "example": "32 x 25 x 16",
                         "description": {
                           "en": "Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)",
                           "pt": "Tamanho do pacote em cm x cm x cm, gr (mode:me2 somente)",
@@ -428,6 +454,7 @@
                       },
                       "cost": {
                         "type": "number",
+                        "example": 20,
                         "description": {
                           "en": "Shipment cost (mode:custom only).",
                           "pt": "Custo do transporte (mode:custom somente)",
@@ -452,6 +479,7 @@
                         "properties": {
                           "zip_code": {
                             "type": "string",
+                            "example": "72549555",
                             "description": {
                               "en": "Zip code.",
                               "pt": "Código postal.",
@@ -460,6 +488,7 @@
                           },
                           "street_name": {
                             "type": "string",
+                            "example": "Street address test",
                             "description": {
                               "en": "Street name.",
                               "pt": "Rua.",
@@ -468,6 +497,7 @@
                           },
                           "city_name": {
                             "type": "string",
+                            "example": "São Paulo",
                             "description": {
                               "en": "City name.",
                               "pt": "Cidade.",
@@ -476,6 +506,7 @@
                           },
                           "state_name": {
                             "type": "string",
+                            "example": "São Paulo",
                             "description": {
                               "en": "State name.",
                               "pt": "Estado.",
@@ -484,6 +515,7 @@
                           },
                           "street_number": {
                             "type": "number",
+                            "example": 100,
                             "description": {
                               "en": "Street number.",
                               "pt": "O Número.",
@@ -508,6 +540,7 @@
                           },
                           "country_name": {
                             "type": "string",
+                            "example": "Brazil",
                             "description": {
                               "en": "Country name.",
                               "pt": "Nome do país.",
@@ -528,6 +561,7 @@
                     "properties": {
                       "success": {
                         "type": "string",
+                        "example": "http://test.com/success",
                         "description": {
                           "en": "Approved payment URL.",
                           "pt": "URL de retorno ante o pagamento aprovado",
@@ -536,6 +570,7 @@
                       },
                       "pending": {
                         "type": "string",
+                        "example": "http://test.com/pending",
                         "description": {
                           "en": "Pending or in process payment URL.",
                           "pt": "URL de retorno diante de pagamento pendente ou em processo.",
@@ -544,6 +579,7 @@
                       },
                       "failure": {
                         "type": "string",
+                        "example": "http://test.com/failure",
                         "description": {
                           "en": "Canceled payment URL.",
                           "pt": "URL de retorno ante o pagamento cancelado",
@@ -554,6 +590,7 @@
                   },
                   "notification_url": {
                     "type": "string",
+                    "example": "http://notificationurl.com",
                     "description": {
                       "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
                       "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
@@ -570,6 +607,7 @@
                   },
                   "additional_info": {
                     "type": "string",
+                    "example": "Discount 12.00",
                     "description": {
                       "en": "Additional information.",
                       "pt": "Informações adicionais",
@@ -581,6 +619,7 @@
                   },
                   "external_reference": {
                     "type": "string",
+                    "example": "1643827245",
                     "description": {
                       "en": "Reference you can synchronize with your payment system.",
                       "pt": "Referência que pode sincronizar com seu sistema de pagamentos",
@@ -589,6 +628,7 @@
                   },
                   "expires": {
                     "type": "boolean",
+                    "example": true,
                     "description": {
                       "en": "Boolean value that determines if a preference expires.",
                       "pt": "Preferência que determina se uma preferência expira",
@@ -597,6 +637,7 @@
                   },
                   "expiration_date_from": {
                     "type": "string",
+                    "example": "2024-05-01T00:00:00Z",
                     "format": "date",
                     "description": {
                       "en": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
@@ -606,6 +647,7 @@
                   },
                   "expiration_date_to": {
                     "type": "string",
+                    "example": "2024-06-01T00:00:00Z",
                     "format": "date",
                     "description": {
                       "en": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
@@ -615,6 +657,7 @@
                   },
                   "marketplace": {
                     "type": "string",
+                    "example": "NONE",
                     "description": {
                       "en": "Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. As the marketplace is associated to the Application ID, the marketplace credentials must correspond to the credentials used to create the preference. Using the wrong credentials will result in an error.",
                       "pt": "Origem do pagamento. Este é um campo alfanumérico cujo valor padrão é NONE. Caso o coletor tenha seu próprio marketplace, é para onde são enviadas as credenciais para identificá-lo. Como o marketplace está associado ao Application ID, as credenciais do marketplace devem corresponder às credenciais usadas para criar a preferência. Usar as credenciais erradas resultará em um erro.",
@@ -623,6 +666,7 @@
                   },
                   "marketplace_fee": {
                     "type": "number",
+                    "example": 0,
                     "description": {
                       "en": "Marketplace`s fee charged by application owner. It is a fixed amount and its default value is 0 in local currency. This property can only be sent if a valid marketplace has been defined as well, otherwise the request will fail.",
                       "pt": "Taxa de Marketplace cobrada pelo proprietário da aplicação. É um valor fixo e seu valor padrão é 0 em moeda local. Esta propriedade só pode ser apresentada se também tiver sido definido um marketplace válido e, caso contrário, a solicitação falhará.",
@@ -639,6 +683,7 @@
                     "properties": {
                       "id": {
                         "type": "number",
+                        "example": 1,
                         "description": {
                           "en": "Differential pricing ID.",
                           "pt": "Identificador de preço diferenciado",
@@ -659,9 +704,10 @@
                       "properties": {
                         "type": {
                           "type": "string",
+                          "example": "google_ad",
                           "description": {
                             "en": "Track type. Specifies which tool the values belong to.",
-                            "pt": "Tipo da track. Especifique a herramienta pertenecen los valores",
+                            "pt": "Tipo da track. Especifica a que ferramenta pertencem os determinados valores",
                             "es": "Tipo del track. Especifica a qué herramienta pertenecen los valores"
                           },
                           "enum": [
@@ -685,6 +731,7 @@
                         },
                         "values": {
                           "type": "string",
+                          "example": "conversion_id",
                           "description": {
                             "en": "Configuration values according the track type.",
                             "pt": "Valores de configuração de acordo com o tipo de track",
@@ -1010,6 +1057,7 @@
                       "properties": {
                         "success": {
                           "type": "string",
+                          "example": "http://test.com/success",
                           "description": {
                             "en": "Approved payment URL.",
                             "pt": "URL de retorno ante o pagamento aprovado",
@@ -1018,6 +1066,7 @@
                         },
                         "pending": {
                           "type": "string",
+                          "example": "http://test.com/pending",
                           "description": {
                             "en": "Pending or in process payment URL.",
                             "pt": "URL de retorno diante de pagamento pendente ou em processo.",
@@ -1026,6 +1075,7 @@
                         },
                         "failure": {
                           "type": "string",
+                          "example": "http://test.com/failure",
                           "description": {
                             "en": "Canceled payment URL.",
                             "pt": "URL de retorno ante o pagamento cancelado",
@@ -1229,6 +1279,7 @@
                     },
                     "notification_url": {
                       "type": "string",
+                      "example": "http://notificationurl.com",
                       "format": "nullable",
                       "description": {
                         "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
@@ -1495,6 +1546,10 @@
     },
     "/checkout/preferences/search": {
       "get": {
+        "sdks":true,
+        "java": "MercadoPagoConfig.setAccessToken(\"YOUR_ACCESS_TOKEN\");\n\nPreferenceClient client = new PreferenceClient();\n\nMPSearchRequest searchRequest =\nMPSearchRequest.builder().limit(2).offset(0).build();\n\nMPElementsResourcesPage<PreferenceSearch> result =\nclient.search(searchRequest);\n",
+        "php": "<?php\nMercadoPagoConfig::setAccessToken(\"ACCESS_TOKEN\");\n\n$client = new PreferenceClient();\n$search_request = new MPSearchRequest(2, 0);\n$search_result = $client->search($search_request);\n\necho implode($preference);\n?>\n",
+        "js": "const client = new MercadoPago({  accessToken: config.access_token });\nconst preference = new Preference(client);\n\nconst options = {\n\t      offset: 0,\n\t      limit: 2\n};\nconst searched = await preference.search({ options });\n",
         "tags": [
           "checkout-pro",
           "mobile-checkout",
@@ -1992,6 +2047,13 @@
     },
     "/checkout/preferences/{id}": {
       "get": {
+        "sdks":true,
+        "java": "MercadoPagoConfig.setAccessToken(\"YOUR_ACCESS_TOKEN\");\nPreferenceClient client = new PreferenceClient();\n\nPreference preference = client.get(\"id\");",
+        "php": "<?php\nMercadoPagoConfig::setAccessToken(\"ACCESS_TOKEN\");\n$client = new PreferenceClient();\n$preference = $client->get(\"id\");\necho implode($preference);\n?>\n",
+        "js": "const client = new MercadoPago({ accessToken: \"access_token\" });\nconst preference = new Preference(client);\nconst response = await preference.get({ preferenceId: \"id\" });",
+        "python": "import mercadopago\n\nsdk = mercadopago.SDK(\"PROD_ACCESS_TOKEN\")\n\npreference_response = sdk.preference().get(\"id\")\npreference = preference_response[\"response\"]",
+        "csharp": "MercadoPagoConfig.AccessToken = \"PROD_ACCESS_TOKEN\";\nPreferenceClient client = new PreferenceClient();\nPreference preference = await client.GetAsync(\"id\");",
+        "ruby": "sdk = MercadoPago::Client.new('ACCES_TOKEN');\npreference_response = sdk.preference.get('id');\npreference = preference_response[:response];",
         "tags": [
           "checkout-pro",
           "mobile-checkout",
@@ -2786,6 +2848,13 @@
         }
       },
       "put": {
+        "sdks":true,
+        "java": "MercadoPagoConfig.setAccessToken(\"ACCESS_TOKEN\");\nPreferenceClient client = new PreferenceClient();\n\nPreferenceItemRequest itemRequest =\n    PreferenceItemRequest.builder()\n        .id(\"1234\")\n        .title(\"Dummy Title\")\n        .description(\"Dummy description\")\n        .pictureUrl(\"http://www.myapp.com/myimage.jpg\")\n        .categoryId(\"car_electronics\")\n        .quantity(2)\n        .currencyId(\"BRL\")\n        .unitPrice(new BigDecimal(\"100\"))\n        .build();\n\nList<PreferenceItemRequest> items = new ArrayList<>();\nitems.add(itemRequest);\n\nPreferenceFreeMethodRequest freeMethod =\n    PreferenceFreeMethodRequest.builder()\n        .id(1L).build();\nList<PreferenceFreeMethodRequest> freeMethodList = new ArrayList<>();\nfreeMethodList.add(freeMethod);\n\nList<PreferencePaymentTypeRequest> excludedPaymentTypes = new ArrayList<>();\nexcludedPaymentTypes.add(PreferencePaymentTypeRequest.builder().id(\"ticket\").build());\n\nList<PreferencePaymentMethodRequest> excludedPaymentMethods = new ArrayList<>();\nexcludedPaymentMethods.add(PreferencePaymentMethodRequest.builder().id(\"\").build());\n\nPreferenceRequest updateRequest = PreferenceRequest.builder()\n    .backUrls(\n        PreferenceBackUrlsRequest.builder()\n            .success(\"http://test.com/success\")\n            .failure(\"http://test.com/failure\")\n            .pending(\"http://test.com/pending\")\n            .build())\n    .differentialPricing(\n        PreferenceDifferentialPricingRequest.builder()\n            .id(1L)\n            .build())\n    .expires(false)\n    .items(items)\n    .marketplaceFee(new BigDecimal(\"0\"))\n    .payer(\n        PreferencePayerRequest.builder()\n            .name(\"Test\")\n            .surname(\"User\")\n            .email(\"your_test_email@example.com\")\n            .phone(PhoneRequest.builder().areaCode(\"11\").number(\"4444-4444\").build())\n            .identification(\n                IdentificationRequest.builder().type(\"CPF\").number(\"19119119100\").build())\n            .address(\n                AddressRequest.builder()\n                    .zipCode(\"06233200\")\n                    .streetName(\"Street\")\n                    .streetNumber(\"123\")\n                    .build())\n            .build())\n\n    .additionalInfo(\"Discount: 12.00\")\n    .autoReturn(\"all\")\n    .binaryMode(true)\n    .externalReference(\"1643827245\")\n    .marketplace(\"marketplace\")\n    .notificationUrl(\"http://notificationurl.com\")\n    .operationType(\"regular_payment\")\n\n    .paymentMethods(\n        PreferencePaymentMethodsRequest.builder()\n            .defaultPaymentMethodId(\"master\")\n            .excludedPaymentTypes(excludedPaymentTypes)\n            .excludedPaymentMethods(excludedPaymentMethods)\n            .installments(5)\n            .defaultInstallments(1)\n            .build())\n\n    .shipments(\n        PreferenceShipmentsRequest.builder()\n            .mode(\"custom\")\n            .localPickup(false)\n            .defaultShippingMethod(null)\n            .freeMethods(freeMethodList)\n            .cost(BigDecimal.TEN)\n            .freeShipping(false)\n            .dimensions(\"10x10x20,500\")\n            .receiverAddress(\n                PreferenceReceiverAddressRequest.builder()\n                    .zipCode(\"06000000\")\n                    .streetNumber(\"123\")\n                    .streetName(\"Street\")\n                    .floor(\"12\")\n                    .apartment(\"120A\")\n                    .build())\n            .build())\n    .statementDescriptor(\"Test Store\")\n    .build();\n\nPreference preference = client.update(\"id\", updateRequest);",
+        "php": "<?php\nMercadoPagoConfig::setAccessToken(\"ACCESS_TOKEN\");\n\n$client = new PreferenceClient();\n$preference = $client->update(\"id\", [\n\"back_urls\"=>array(\n    \"success\" => \"http://test.com/success\",\n    \"failure\" => \"http://test.com/failure\",\n    \"pending\" => \"http://test.com/pending\"\n),\n\"differential_pricing\" => array(\n    \"id\" => 1,\n),\n\"expires\" => false,\n\"items\" => array(\n    array(\n        \"id\" => \"1234\",\n        \"title\" => \"Dummy Title\",\n        \"description\" => \"Dummy description\",\n        \"picture_url\" => \"http://www.myapp.com/myimage.jpg\",\n        \"category_id\" => \"car_electronics\",\n        \"quantity\" => 2,\n        \"currency_id\" => \"BRL\",\n        \"unit_price\" => 100\n    )\n),\n\"marketplace_fee\" => 0,\n\"payer\" => array(\n    \"name\" => \"Test\",\n    \"surname\" => \"User\",\n    \"email\" => \"your_test_email@example.com\",\n    \"phone\" => array(\n        \"area_code\" => \"11\",\n        \"number\" => \"4444-4444\"\n    ),\n    \"identification\" => array(\n        \"type\" => \"CPF\",\n        \"number\" => \"19119119100\"\n    ),\n    \"address\" => array(\n        \"zip_code\" => \"06233200\",\n        \"street_name\" => \"Street\",\n        \"street_number\" => \"123\"\n    )\n),\n\"additional_info\" => \"Discount: 12.00\",\n\"auto_return\" => \"all\",\n\"binary_mode\" => true,\n\"external_reference\" => \"1643827245\",\n\"marketplace\" => \"none\",\n\"notification_url\" => \"http://notificationurl.com\",\n\"operation_type\" => \"regular_payment\",\n\"payment_methods\" => array(\n    \"default_payment_method_id\" => \"master\",\n    \"excluded_payment_types\" => array(\n        array(\n            \"id\" => \"visa\"\n        )\n    ),\n    \"excluded_payment_methods\" => array(\n        array(\n            \"id\" => \"\"\n        )\n    ),\n    \"installments\" => 5,\n    \"default_installments\" => 1\n),\n\"shipments\" >= array(\n    \"mode\" => \"custom\",\n    \"local_pickup\" => false,\n    \"default_shipping_method\" => null,\n    \"free_methods\" => array(\n        array(\n            \"id\" => 1\n        )\n    ),\n    \"cost\" => 10,\n    \"free_shipping\" => false,\n    \"dimensions\" => \"10x10x20,500\",\n    \"receiver_address\" => array(\n        \"zip_code\" => \"06000000\",\n        \"street_number\" => \"123\",\n        \"street_name\" => \"Street\",\n        \"floor\" => \"12\",\n        \"apartment\" => \"120A\",\n        \"city_name\" => \"Rio de Janeiro\",\n        \"state_name\" => \"Rio de Janeiro\",\n        \"country_name\" => \"Brasil\"\n    )\n),\n\"statement_descriptor\" => \"Test Store\",\n]);\n\necho implode($preference);\n?>",
+        "js": "const client = new MercadoPago({ accessToken: config.access_token });\nconst preference = new Preference(client);\n\nconst updatePreferenceRequest = {\n  items: [\n    {\n      id: '1234',\n      title: 'Dummy Title',\n      description: 'Dummy description',\n      picture_url: 'http://www.myapp.com/myimage.jpg',\n      category_id: 'car_electronics',\n      quantity: 1,\n      currency_id: 'BRL',\n      unit_price: 10,\n    },\n  ],\n  marketplace_fee: 0,\n  payer: {\n    name: 'Test',\n    surname: 'User',\n    email: 'your_test_email@example.com',\n    phone: {\n      area_code: '11',\n      number: '4444-4444',\n    },\n    identification: {\n      type: 'CPF',\n      number: '19119119100',\n    },\n    address: {\n      zip_code: '06233200',\n      street_name: 'Street',\n      street_number: 123,\n    },\n  },\n  back_urls: {\n    success: 'http://test.com/success',\n    failure: 'http://test.com/failure',\n    pending: 'http://test.com/pending',\n  },\n  differential_pricing: {\n    id: 1,\n  },\n  expires: false,\n  additional_info: 'Discount: 12.00',\n  auto_return: 'all',\n  binary_mode: true,\n  external_reference: '1643827245',\n  marketplace: 'marketplace',\n  notification_url: 'http://notificationurl.com',\n  operation_type: 'regular_payment',\n  payment_methods: {\n    default_payment_method_id: 'master',\n    excluded_payment_types: [\n      {\n        id: 'ticket',\n      },\n    ],\n    excluded_payment_methods: [\n      {\n        id: '',\n      },\n    ],\n    installments: 5,\n    default_installments: 1,\n  },\n  shipments: {\n    mode: 'custom',\n    local_pickup: false,\n    default_shipping_method: null,\n    free_methods: [\n      {\n        id: 1,\n      },\n    ],\n    cost: 10,\n    free_shipping: false,\n    dimensions: '10x10x20,500',\n    receiver_address: {\n      zip_code: '06000000',\n      street_number: 123,\n      street_name: 'Street',\n      floor: '12',\n      apartment: '120A',\n    },\n  },\n  statement_descriptor: 'Test Store',\n};\n\nconst id = 'id';\nconst response = await preference.update({ id, updatePreferenceRequest });",
+        "python": "import mercadopago\nsdk = mercadopago.SDK(\"PROD_ACCESS_TOKEN\")\n\nrequest = {\n\t\"items\": [\n\t\t{\n\t\t\t\"id\": \"1234\",\n\t\t\t\"title\": \"Dummy Title\",\n\t\t\t\"description\": \"Dummy description\",\n\t\t\t\"picture_url\": \"http://www.myapp.com/myimage.jpg\",\n\t\t\t\"category_id\": \"car_electronics\",\n\t\t\t\"quantity\": 1,\n\t\t\t\"currency_id\": \"BRL\",\n\t\t\t\"unit_price\": 10,\n\t\t},\n\t],\n\t\"marketplace_fee\": 0,\n\t\"payer\": {\n\t\t\"name\": \"Test\",\n\t\t\"surname\": \"User\",\n\t\t\"email\": \"your_test_email@example.com\",\n\t\t\"phone\": {\n\t\t\t\"area_code\": \"11\",\n\t\t\t\"number\": \"4444-4444\",\n\t\t},\n\t\t\"identification\": {\n\t\t\t\"type\": \"CPF\",\n\t\t\t\"number\": \"19119119100\",\n\t\t},\n\t\t\"address\": {\n\t\t\t\"zip_code\": \"06233200\",\n\t\t\t\"street_name\": \"Street\",\n\t\t\t\"street_number\": 123,\n\t\t},\n\t},\n\t\"back_urls\": {\n\t\t\"success\": \"http://test.com/success\",\n\t\t\"failure\": \"http://test.com/failure\",\n\t\t\"pending\": \"http://test.com/pending\",\n\t},\n\t\"differential_pricing\": {\n\t\t\"id\": 1,\n\t},\n\t\"expires\": False,\n\t\"additional_info\": \"Discount: 12.00\",\n\t\"auto_return\": \"all\",\n\t\"binary_mode\": True,\n\t\"external_reference\": \"1643827245\",\n\t\"marketplace\": \"marketplace\",\n\t\"notification_url\": \"http://notificationurl.com\",\n\t\"operation_type\": \"regular_payment\",\n\t\"payment_methods\": {\n\t\t\"default_payment_method_id\": \"master\",\n\t\t\"excluded_payment_types\": [\n\t\t\t{\n\t\t\t\t\"id\": \"ticket\",\n\t\t\t},\n\t\t],\n\t\t\"excluded_payment_methods\": [\n\t\t\t{\n\t\t\t\t\"id\": \"\",\n\t\t\t},\n\t\t],\n\t\t\"installments\": 5,\n\t\t\"default_installments\": 1,\n\t},\n\t\"shipments\": {\n\t\t\"mode\": \"custom\",\n\t\t\"local_pickup\": False,\n\t\t\"default_shipping_method\": None,\n\t\t\"free_methods\": [\n\t\t\t{\n\t\t\t\t\"id\": 1,\n\t\t\t},\n\t\t],\n\t\t\"cost\": 10,\n\t\t\"free_shipping\": False,\n\t\t\"dimensions\": \"10x10x20,500\",\n\t\t\"receiver_address\": {\n\t\t\t\"zip_code\": \"06000000\",\n\t\t\t\"street_number\": 123,\n\t\t\t\"street_name\": \"Street\",\n\t\t\t\"floor\": \"12\",\n\t\t\t\"apartment\": \"120A\",\n\t\t},\n\t},\n\t\"statement_descriptor\": \"Test Store\",\n}\n\npreference_response = sdk.preference().update(\"id\", request)\npreference = preference_response[\"response\"]",
+        "csharp": "MercadoPagoConfig.AccessToken = \"PROD_ACCESS_TOKEN\";\n\nPreferenceRequest request = new PreferenceRequest\n{\n\n    BackUrls = new PreferenceBackUrlsRequest\n    {\n        Success = \"http://test.com/success\",\n        Failure = \"http://test.com/failure\",\n        Pending = \"http://test.com/pending\"\n    },\n    DifferentialPricing = new PreferenceDifferentialPricingRequest\n    {\n        Id = 1\n    },\n    Expires = false,\n    Items = new List<PreferenceItemRequest>\n    {\n        new PreferenceItemRequest\n        {\n            Id = \"1234\",\n            Title = \"Dummy Title\",\n            Description = \"Dummy description\",\n            PictureUrl = \"http://www.myapp.com/myimage.jpg\",\n            CategoryId = \"car_electronics\",\n            Quantity = 2,\n            CurrencyId = \"BRL\",\n            UnitPrice = 100\n        }\n    },\n    MarketplaceFee = 0,\n    Payer = new PreferencePayerRequest\n    {\n        Name = \"Test\",\n        Surname = \"User\",\n        Email = \"your_test_email@example.com\",\n        Phone = new PhoneRequest\n        {\n            AreaCode = \"11\",\n            Number = \"4444-4444\"\n        },\n        Identification = new IdentificationRequest\n        {\n            Type = \"CPF\",\n            Number = \"19119119100\"\n        },\n        Address = new AddressRequest\n        {\n            ZipCode = \"06233200\",\n            StreetName = \"Street\",\n            StreetNumber = \"123\"\n        }\n    },\n    AdditionalInfo = \"Discount: 12.00\",\n    AutoReturn = \"all\",\n    BinaryMode = true,\n    ExternalReference = \"1643827245\",\n    Marketplace = \"none\",\n    NotificationUrl = \"http://notificationurl.com\",\n    OperationType = \"regular_payment\",\n    PaymentMethods = new PreferencePaymentMethodsRequest\n    {\n        DefaultPaymentMethodId = \"master\",\n        ExcludedPaymentTypes = new List<PreferencePaymentTypeRequest>\n        {\n            new PreferencePaymentTypeRequest\n            {\n                Id = \"visa\"\n            }\n        },\n        ExcludedPaymentMethods = new List<PreferencePaymentMethodRequest>\n        {\n            new PreferencePaymentMethodRequest\n            {\n                Id = \"\"\n            }\n        },\n        Installments = 5,\n        DefaultInstallments = 1\n    },\n    Shipments = new PreferenceShipmentsRequest\n    {\n        Mode = \"custom\",\n        LocalPickup = false,\n        FreeMethods = new List<PreferenceFreeMethodRequest>\n        {\n            new PreferenceFreeMethodRequest\n            {\n                Id = 1\n            }\n        },\n        Cost = 10,\n        FreeShipping = false,\n        Dimensions = \"10x10x20,500\",\n        ReceiverAddress = new PreferenceReceiverAddressRequest\n        {\n            ZipCode = \"06000000\",\n            StreetNumber = \"123\",\n            StreetName = \"Street\",\n            Floor = \"12\",\n            Apartment = \"120A\",\n            City = \"Rio de Janeiro\",\n            State = \"Rio de Janeiro\",\n            Country = \"Brasil\"\n        }\n    },\n    StatementDescriptor = \"Test Store\"\n};\nPreferenceClient client = new PreferenceClient();\nPreference preference = await client.UpdateAsync(\"id\", request);",
+        "ruby": "sdk = MercadoPago::Client.new('ACCES_TOKEN')\n\nrequest = {\n  items: [\n    {\n      id: '1234',\n      title: 'Dummy Title',\n      description: 'Dummy description',\n      picture_url: 'http://www.myapp.com/myimage.jpg',\n      category_id: 'car_electronics',\n      quantity: 1,\n      currency_id: 'BRL',\n      unit_price: 10,\n    },\n  ],\n  marketplace_fee: 0,\n  payer: {\n    name: 'Test',\n    surname: 'User',\n    email: 'your_test_email@example.com',\n    phone: {\n      area_code: '11',\n      number: '4444-4444',\n    },\n    identification: {\n      type: 'CPF',\n      number: '19119119100',\n    },\n    address: {\n      zip_code: '06233200',\n      street_name: 'Street',\n      street_number: 123,\n    },\n  },\n  back_urls: {\n    success: 'http://test.com/success',\n    failure: 'http://test.com/failure',\n    pending: 'http://test.com/pending',\n  },\n  differential_pricing: {\n    id: 1,\n  },\n  expires: false,\n  additional_info: 'Discount: 12.00',\n  auto_return: 'all',\n  binary_mode: true,\n  external_reference: '1643827245',\n  marketplace: 'marketplace',\n  notification_url: 'http://notificationurl.com',\n  operation_type: 'regular_payment',\n  payment_methods: {\n    default_payment_method_id: 'master',\n    excluded_payment_types: [\n      {\n        id: 'ticket',\n      },\n    ],\n    excluded_payment_methods: [\n      {\n        id: '',\n      },\n    ],\n    installments: 5,\n    default_installments: 1,\n  },\n  shipments: {\n    mode: 'custom',\n    local_pickup: false,\n    default_shipping_method: nil,\n    free_methods: [\n      {\n        id: 1,\n      },\n    ],\n    cost: 10,\n    free_shipping: false,\n    dimensions: '10x10x20,500',\n    receiver_address: {\n      zip_code: '06000000',\n      street_number: 123,\n      street_name: 'Street',\n      floor: '12',\n      apartment: '120A',\n    },\n  },\n  statement_descriptor: 'Test Store',\n}\n\npreference_response = sdk.preference.update('id', request)\npreference = preference_response[:response]",
         "tags": [
           "checkout-pro",
           "mobile-checkout",

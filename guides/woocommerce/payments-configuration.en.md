@@ -9,11 +9,15 @@ You can choose to configure these payment methods:
 * [Checkout Transparente](/developers/en/docs/woocommerce/payments-configuration/checkout-api): payment is made without leaving your virtual store with cards (debit or credit), ticket checkout (Mercado Pago account balance or boleto bancário) and Pix.
 * [Installments without a card](/developers/en/docs/woocommerce/payments-configuration/mercado-credito): the customer can choose to pay in up to 12 fixed monthly installments, no card needed, and the payment is credited in full to the seller’s account.
 
+![Payments methods](/images/woocomerce/active-and-configure-pt-br.png)
+
 ------------
 ----[mla, mlm]----
 * [Checkout Pro](/developers/en/docs/woocommerce/payments-configuration/checkout-pro): payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash (Mercado Pago account or other payment methods available) and bank transfer.
 * [Checkout API](/developers/en/docs/woocommerce/payments-configuration/checkout-api): payment is made without leaving your virtual store with cards (debit or credit), offline payment methods (Mercado Pago account or ticket).
 * [Installments without a card](/developers/en/docs/woocommerce/payments-configuration/mercado-credito): the customer can choose to pay in up to 12 fixed monthly installments, no card needed, and the payment is credited in full to the seller’s account.
+
+![Payments methods](/images/woocomerce/cho-pro-active-configure-es.png)
 
 ------------
 ----[mpe, mco, mlu, mlc]----

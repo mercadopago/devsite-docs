@@ -48,35 +48,23 @@ O Brick possui capacidades responsivas no que tange o tamanho do espaço em tela
 O Checkout Bricks pode ser instanciado/renderizado com diferentes temas e características que podem se adequar melhor ao visual da loja. As características de cada um dos temas disponíveis estão detalhadas abaixo. Veja [Definir tema](/developers/pt/docs/checkout-bricks/additional-content/set-theme) para instruções de como alterar o tema do Brick.
 
 ----[mlb]---- 
-<center>
 
 ![themes-mlb](checkout-bricks/themes-mlb-pt.png)
 
-</center>
-
 ------------
 ----[mla]---- 
-<center>
 
 ![themes-mla](checkout-bricks/themes-mla-pt.jpg) 
 
-</center>
-
 ------------
 ----[mlm]---- 
-<center>
 
 ![themes-mlm](checkout-bricks/themes-mlm-pt.jpg) 
 
-</center>
-
 ------------
 ----[mpe, mco, mlu, mlc]----
-<center>
 
 ![themes-all](checkout-bricks/themes-all-pt.png)
-
-</center>
 
 ------------
 

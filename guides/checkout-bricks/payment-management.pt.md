@@ -4,7 +4,13 @@ Ao utilizar o Checkout Bricks para processar os pagamentos da sua loja, é impor
 
 Nesta seção você encontra as principais formas de gerenciamento dos pagamentos recebidos.
 
-- [Reservar valores](/developers/pt/docs/checkout-bricks/additional-content/payment-management/make-value-reserve)
+----[mla, mlm, mpe, mlb]----
 - [Capturar pagamento autorizado](/developers/pt/docs/checkout-bricks/additional-content/payment-management/capture-authorized-payment)
 - [Cancelar reserva](/developers/pt/docs/checkout-bricks/additional-content/payment-management/cancel-reserve)
 - [Reembolsos e cancelamentos](/developers/pt/docs/checkout-bricks/additional-content/payment-management/cancellations-and-refunds)
+
+------------
+----[mlu, mlc, mco]----
+- [Reembolsos e cancelamentos](/developers/pt/docs/checkout-bricks/additional-content/payment-management/cancellations-and-refunds)
+
+------------

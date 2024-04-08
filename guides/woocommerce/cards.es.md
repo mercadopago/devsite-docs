@@ -4,28 +4,48 @@
 Este medio de pago adicionará Checkout Transparente, el medio de pago que te permitirá aceptar pagos con tarjetas de crédito y débito a través de Mercado Pago, sin necesidad de que el cliente salga de la tienda.
 
 ------------
-
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 Este medio de pago adicionará Checkout API, el medio de pago que te permitirá aceptar pagos con tarjetas de crédito y débito a través de Mercado Pago, sin necesidad de que el cliente salga de la tienda. 
 
 ------------
 
-## Configurar el medio de pago
+## Configura el método de pago
 
-1. Para activar el checkout, deberás hacer clic en el botón slider.
-2. En el campo **Título en el checkout de la tienda** puedes elegir el nombre con el que se mostrará este medio de pago en la tienda. Por ejemplo, puedes nombrarlo **Tarjeta de crédito o débito**.
-3. La opción **Convertir moneda** permite que el valor de la moneda configurada en WooCommerce sea compatible al valor de la moneda que usas en Mercado Pago. Si deseas activarla, solo deber hacer clic en el botón slider. 
-4. **Compras con tarjetas guardadas o saldo en Mercado Pago** es una funcionalidad para que quienes tienen tarjetas guardadas o saldo en su cuenta de Mercado Pago puedan comprar sin la necesidad de completar datos. Esta opción mostrará un botón especial en tu cuenta y derivará a los clientes al checkout de Mercado Pago para completar la transacción. Si deseas ofrecerla, actívala con el botón slider.
+1. Para activar el Checkout, ve a la configuración del panel de WooCommerce (**WooCommerce > Mercado Pago**).
+2. Haz clic en **3. Activa y configura los medios de pago**.
+3. En la opción "Tarjeta de crédito y débito", haz clic en **Configurar**.
+----[mla, mlm]----
+![Activar y configurar](/images/woocomerce/cho-pro-active-configure-es.png)
 
-Para guardar los cambios en la configuración, haz clic en el botón **Guardar cambios**.
+------------
+----[mlb]----
+![Active and configure](/images/woocomerce/cho-pro-active-configure-pt.png)
 
-## Configuración avanzada
+------------
+4. La opción "Activar checkout" te permite habilitar o deshabilitar el Checkout en tu tienda. Para activarlo, haz clic en el botón deslizante.
+5. En el campo **Título en el checkout de la tienda**, ingresa el nombre con el que se identificará este método de pago en la tienda. Por ejemplo, puedes llamarlo **Tarjeta de crédito o débito**.
 
-Si lo deseas, puedes cambiar las opciones en la configuración avanzada del medio de pago para ofrecer una experiencia más personalizada en la tienda. Para acceder a estas opciones, haz clic sobre el titular **Configuración Avanzada** y se desplegarán las opciones que describimos aquí debajo: 
+![Activar y título](/images/woocomerce/api-active-and-title-cards-es.png)
 
-- **Cupones de descuento**: permite ofrecer cupones de descuento a los clientes que compren con Mercado Pago. Puedes activar esta opción haciendo clic en el botón slider. 
-- **Rechazo automático de pagos sin aprobación instantánea**: activa esta opción con el botón slider para rechazar automáticamente los pagos que nos aprobados instantáneamente. 
-- **Descuento en los checkouts de Mercado Pago**: permite elegir un valor porcentual de descuento que quieras ofrecer a los clientes por pagar utilizando este medio de pago. Para activarlo, deberás colocar un porcentaje y seleccionar el botón _Activar y mostrar esa información en el checkout de Mercado Pago_.
-- **Comisiones en los checkout de Mercado Pago**: permite elegir un valor porcentual adicional que quieras cobrar como comisión a los clientes que eligan este medio de pago. Para activarlo, deberás colocar un porcentaje y seleccionar el botón _Activar y mostrar esa información en el checkout de Mercado Pago_.
+6. En el aviso sobre tarifas y financiamiento, haz clic en el botón **Configurar tarifas** para ser dirigido a tu cuenta de Mercado Pago. Allí, podrás establecer las tarifas de financiamiento y determinar si serán cobradas a la tienda o al comprador.
 
-Para guardar los cambios en la configuración, haz clic en el botón **Guardar cambios**.
+![Tarifas](/images/woocomerce/api-fees-warning-cards-es.png)
+
+7. La opción **Convertir moneda** permite que el valor de la moneda configurada en WooCommerce sea compatible con el valor de la moneda que utilizas en Mercado Pago. Para activarlo, haz clic en el botón deslizante.
+8. **Pagos a través de la cuenta de Mercado Pago** es una funcionalidad para aquellos que tienen tarjetas guardadas o saldo en su cuenta de Mercado Pago, pudiendo comprar sin necesidad de completar datos. Esta opción mostrará un botón especial en tu cuenta y dirigirá a los clientes al checkout de Mercado Pago para completar la transacción. Si deseas ofrecerlo, actívalo con el botón deslizante.
+
+![Convertir y cuenta MP](/images/woocomerce/api-convert-and-mp-account-es.png)
+
+Para guardar los cambios en la configuración, haz clic en el botón **Concluir configuración**.
+
+### Configuraciones avanzadas
+
+Es posible personalizar las opciones en la sección de configuraciones avanzadas del método de pago, proporcionando una experiencia más personalizada en la tienda. Para acceder a estas opciones, haz clic en el título **Configuraciones avanzadas** y se mostrarán las opciones descritas a continuación:
+
+- **Rechazo automático de pagos sin aprobación instantánea**: activa esta opción para rechazar automáticamente los pagos que no son aprobados al instante. Para activarlo, haz clic en el botón deslizante. Ten en cuenta que ya hemos garantizado la seguridad en tus transacciones de alto riesgo con 3DS (3-Domain Secure), ofreciendo beneficios como una mayor tasa de aprobación y menor riesgo de fraude.
+- **Descuento en los checkouts de Mercado Pago**: ingresa un valor porcentual de descuento para los clientes que paguen con este método de pago. Para activarlo, ingresa un porcentaje de descuento y marca la opción "Activar y mostrar esta información en el checkout de Mercado Pago".
+- **Comisión en los checkouts de Mercado Pago**: ingresa un valor porcentual adicional que desees cobrar como comisión a los clientes que elijan este método de pago. Para activarlo, ingresa un porcentaje de descuento y marca la opción "Activar y mostrar esta información en el checkout de Mercado Pago".
+
+![Configuraciones avanzadas](/images/woocomerce/api-advanced-settings-cards-es.gif)
+
+Para guardar los cambios en la configuración, haz clic en el botón **Concluir configuración**.

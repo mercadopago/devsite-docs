@@ -47,3 +47,7 @@ Una vez que haya completado estos pasos, el Checkout Bricks habrá sido integrad
 > Atención
 >
 > En el flujo de _marketplace_ no es posible habilitar pagos a plazos sin tarjeta de crédito.
+
+## Prueba tu integración
+
+Con la integración completada, podrás probar la recepción de pagos. Para obtener más información, accede a la sección [Hacer compra de prueba](/developers/es/docs/checkout-bricks/integration-test/test-payment-flow).

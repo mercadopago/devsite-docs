@@ -181,6 +181,7 @@ Para configurar pagamento com Pix, envie um POST ao endpoint [/v1/payments](/dev
 import { Payment, MercadoPagoConfig } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+const payment = new Payment(client);
 
 payment.create({
     body: { 
@@ -323,6 +324,42 @@ payment_data = {
 payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 ```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := payment.NewClient(cfg)
+
+
+request := payment.Request{
+   TransactionAmount: 100,
+   Description: "My product",
+   PaymentMethodID:   "pix",
+   Payer: &payment.PayerRequest{
+      Email: "{{PAYER_EMAIL}}",
+      Identification: &payment.IdentificationRequest{
+         Type: "CPF",
+         Number: "19119119100",
+      },
+   },
+}
+
+
+resource, err := client.Create(context.Background(), request)
+if err != nil {
+   fmt.Println(err)
+}
+
+
+fmt.Println(resource)
+```
 ```curl
 curl -X POST \
     -H 'accept: application/json' \
@@ -424,7 +461,7 @@ Siga as etapas abaixo para renderizar o QR code e disponibilizar o recurso copia
 
 [[[
 ```html
-<img src={`data:image/jpeg;base64,${qr_code_base64}}`/>
+<img src={`data:image/jpeg;base64,${qr_code_base64}`}/>
 
 ```
 ]]]

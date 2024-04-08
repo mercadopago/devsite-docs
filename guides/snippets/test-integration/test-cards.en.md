@@ -69,7 +69,7 @@ For this, depending on your country, use one of the **credit** or **debit** card
 | Mastercard | 5287 3383 1025 3304 | 123 | 11/25 |
 | Visa | 4002 7686 9439 5619 | 123 | 11/25 |
 
-To **test different payment results**, fill in the desired status in the cardholder's name:
+To **test different payment results**, fill in the desired status in the cardholder's name (field `card_holder_name`):
  
 | Payment Status | Description | Identity document |
 | --- | --- | --- |
@@ -88,7 +88,7 @@ To **test different payment results**, fill in the desired status in the cardhol
 | :--- | :---: | :---: | :---: |
 | Elo | 5067 7667 8388 8311 | 123 | 11/25 |
 
-To **test different payment results**, fill in the desired status in the cardholder's name:
+To **test different payment results**, fill in the desired status in the cardholder's name (field `card_holder_name`):
  
 | Payment Status | Description | Identity document |
 | --- | --- | --- |
@@ -108,7 +108,7 @@ To **test different payment results**, fill in the desired status in the cardhol
 | Mastercard | 5241 0198 2664 6950 | 123 | 11/25 |
 | Visa | 4023 6535 2391 4373 | 123 | 11/25 |
 
-To **test different payment results**, fill in the desired status in the cardholder's name:
+To **test different payment results**, fill in the desired status in the cardholder's name (field `card_holder_name`):
  
 | Payment Status | Description | Identity document |
 | --- | --- | --- |
@@ -127,7 +127,7 @@ To **test different payment results**, fill in the desired status in the cardhol
 | :--- | :---: | :---: | :---: |
 | Visa | 4915 1120 5524 6507 | 123 | 11/25 |
 
-To **test different payment results**, fill in the desired status in the cardholder's name:
+To **test different payment results**, fill in the desired status in the cardholder's name (field `card_holder_name`):
  
 | Payment Status | Description | Identity document |
 | --- | --- | --- |
@@ -147,7 +147,7 @@ To **test different payment results**, fill in the desired status in the cardhol
 | Mastercard | 5579 0534 6148 2647 | 123 | 11/25 |
 | Visa | 4189 1412 2126 7633 | 123 | 11/25 |
 
-To **test different payment results**, fill in the desired status in the cardholder's name:
+To **test different payment results**, fill in the desired status in the cardholder's name (field `card_holder_name`):
  
 | Payment Status | Description |
 | --- | --- |
@@ -166,7 +166,7 @@ To **test different payment results**, fill in the desired status in the cardhol
 | :--- | :---: | :---: | :---: |
 | Visa | 4213 0163 1470 6756 | 123 | 11/25 |
 
-To **test different payment results**, fill in the desired status in the cardholder's name:
+To **test different payment results**, fill in the desired status in the cardholder's name (field `card_holder_name`):
  
 | Payment Status | Description | Identity document |
 | --- | --- | --- |
@@ -185,7 +185,7 @@ To **test different payment results**, fill in the desired status in the cardhol
 | :--- | :---: | :---: | :---: |
 | Mastercard | 5178 7816 2220 2455 | 123 | 11/25 |
 
-To **test different payment results**, fill in the desired status in the cardholder's name:
+To **test different payment results**, fill in the desired status in the cardholder's name (field `card_holder_name`):
  
 | Payment Status | Description | Identity document |
 | --- | --- | --- |
