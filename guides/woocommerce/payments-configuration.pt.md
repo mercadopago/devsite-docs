@@ -1,6 +1,6 @@
 # Configuração de pagamentos
 
-Para escolher quais métodos de pagamento oferecer através do Mercado Pago na loja e configurá-los, acesse a opção **3. Ative e configure os meios de pagamento**. Escolha uma forma de pagamento e clique em **Configurar** para modificar suas preferências.
+Para escolher quais métodos de pagamento oferecer através do Mercado Pago na loja e configurá-los, acesse a opção **3. Ative e configure os meios de pagamento**. Escolha uma forma de pagamento e clique em **Configurar >** para modificar suas preferências.
 
 Você pode optar por configurar estes meios de pagamento:
 
