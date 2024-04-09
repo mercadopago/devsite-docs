@@ -25,11 +25,7 @@ Para iniciar os testes de integrações e fluxos de pagamento com o Simulador Po
 
 Para gerar essas credenciais, acesse [Suas Integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/), selecione o aplicativo no qual você integrou o Mercado Pago Point e, na seção **Contas de teste**, clique no botão **+ Criar conta de teste**. Você deverá preencher os campos solicitados de acordo com as instruções.
 
-<center>
-
 ![Criar conta](/images/woocomerce/test-create-account.gif)
-
-</center>
 
 Caso queira, também é possível criar usuários de teste usando o seguinte comando:
 
@@ -63,7 +59,6 @@ curl -X POST \
 ```
 ------------
 
-
 ## 2. Configurar ambiente de teste
 
 Antes de acessar o Simulador, você precisará concluir a configuração do seu ambiente de testes. Para isso, siga as etapas descritas abaixo.
@@ -72,30 +67,21 @@ Antes de acessar o Simulador, você precisará concluir a configuração do seu 
  3. No painel lateral esquerdo, acesse **Notificações > Webhooks** para configurar as notificações de teste. Tenha em mente que esta etapa precisa ser realizada na aba **Modo de teste**. Além disso, recomendamos que a URL configurada seja diferente daquela utilizada para receber notificações de pagamentos reais. Consulte a documentação sobre [Notificações](/developers/pt/docs/mp-point/additional-content/your-integrations/notifications/webhooks) para obter mais detalhes sobre como configurá-las.
  4. No painel lateral esquerdo, acesse **Testes > Credenciais de teste** para obter o **Access Token de teste do seu usuário vendedor**. O Simulador vai solicitá-lo para lhe dar acesso à ferramenta e atribuir um dispositivo virtual associado à sua integração.
 
-<center>
-
 ![Credenciais de teste no Painel do desenvolvedor](/images/woocomerce/test-test-credentials.png)
-
-</center>
 
 ## 3. Acessar Simulador 
 
-
 Para acessar o Simulador, primeiro escolha a opção que corresponda ao seu tipo de integração. Em seguida, preencha todos os campos solicitados especificamente para este tipo de integração.
 
-* **PDV mode:** Acesse o [Simulador no PDV mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true) e forneça o _Access Token_ **de teste do seu usuário vendedor de teste** (`TEST-XXXXX-XXXXX-XXXXXXX`). Com isso, o Simulador atribuirá um dispositivo virtual para você. 
+* **PDV mode:** acesse o [Simulador no PDV mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true) e forneça o _Access Token_ **de teste do seu usuário vendedor de teste** (`TEST-XXXXX-XXXXX-XXXXXXX`). Com isso, o Simulador atribuirá um dispositivo virtual para você. 
 
  > Não é preciso modificar o modo de operação para utilizar o Simulador, uma vez que sua configuração padrão é no modo PDV.
 
-* **Device mode:** Acesse o [Simulador no Device mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true) e forneça o _Access Token_ do seu **usuário vendedor de teste** (`TEST-XXXXX-XXXXX-XXXXXXX`), juntamente com seu ID de dispositivo obtido ao [listar seus dispositivos](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/payment-processing).
+* **Device mode:** acesse o [Simulador no Device mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true) e forneça o _Access Token_ do seu **usuário vendedor de teste** (`TEST-XXXXX-XXXXX-XXXXXXX`), juntamente com seu ID de dispositivo obtido ao [listar seus dispositivos](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/payment-processing).
 
 Depois de fornecer as informações de acordo com o modo selecionado no Simulador, clique no botão **Confirm** para acessar o dispositivo virtual.
 
-<center>
-
 ![Tela do Simulador](/images/point-api/point-device-simulator.png)
-
-</center>
 
 ## 4. Simular intenção de pagamento
 
@@ -109,7 +95,6 @@ Para iniciar a simulação, [crie uma intenção de pagamento](/developers/es/re
 >
 > Ao utilizar o Simulador no Device mode, é importante incluir `X-Test-Scope:sandbox` no cabeçalho para assegurar que a tentativa de pagamento seja direcionada ao dispositivo simulado.
 
-
 | Status | Valor |
 |---|---|
 | Reversed | R$1100 |
@@ -117,23 +102,15 @@ Para iniciar a simulação, [crie uma intenção de pagamento](/developers/es/re
 | Error | R$1300 |
 | Successful | Qualquer outro valor diferente dos anteriores |
 
-
-
 ## 5. Obter intenção de pagamento do Simulador
 
 Após criar a intenção de pagamento, clique no **botão verde** no dispositivo virtual para acessar a intenção de pagamento criada. Em seguida, confirme se o valor inserido inicialmente é o mesmo que está sendo exibido na tela do dispositivo.
-
-
 
 ## 5. Processar pagamento
 
 Se a intenção de pagamento for obtida com sucesso, você pode prosseguir para realizar o pagamento ao clicar na animação do cartão, simulando o deslizamento do cartão no dispositivo. Após essa ação, o processo de pagamento inicia, e o dispositivo exibirá o resultado.
 
-<center>
-
 ![Simulador com cartão](/images/point-api/point-simulator-process.png)
-
-</center>
 
 Em seguida, o processamento será iniciado e o dispositivo mostrará o resultado de acordo com o valor inserido.
 
@@ -144,13 +121,11 @@ Em seguida, o processamento será iniciado e o dispositivo mostrará o resultado
 | Error | A tela exibirá um erro e dará o detalhe “Error”. |
 | Successful | Será exibida uma tela de pagamento bem-sucedido e fornecerá o detalhe “Approved”. |
 
-
 > WARNING
 >
 > Importante
 >
 > Para consultar um pagamento feito pelo simulador através da [API de Pagamentos](/developers/pt/reference/payments/_payments_id/get), utilize o mesmo `access_token` de teste aplicado no Simulador.
-
 
 ## 7. Receber a notificação
 
