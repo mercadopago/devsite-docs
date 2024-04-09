@@ -12,4 +12,4 @@ There are two types of subscriptions available for integration:
 
 Below we show a diagram that explains the flow of each subscription model:
 
-![Basic-subscriptions](/images/subscriptions/Integrations-EN.png)
+![Basic-subscriptions](subscriptions/Integrations-EN.png)

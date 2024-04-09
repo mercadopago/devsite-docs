@@ -10,7 +10,7 @@ In this documentation, we will explain the necessary settings for receiving IPN 
 
 Below we will explain how to indicate the URLs that will be notified and how to configure the events for which notification will be received.
 
-![ipn](/images/notifications/ipn__pt.png)
+![ipn](notifications/ipn__pt.png)
 
 1. If you haven't done so already, create an application in the [Developer Dashboard](developers/panel/app).
 2. Once the application is created, navigate to the IPN section on the **Application Details** page.

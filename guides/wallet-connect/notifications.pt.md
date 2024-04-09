@@ -144,7 +144,7 @@ Na tabela abaixo mostramos com mais detalhes os possíveis valores que são envi
 
 A configuração das Webhooks é feita através do Painel do desenvolvedor. Abaixo explicaremos como indicar as URLs que serão notificadas e como configurar os eventos dos quais se receberá a notificação.
 
-![webhooks](/images/notifications/webhooks_pt.png)
+![webhooks](notifications/webhooks_pt.png)
 
 
 1. Se ainda não tiver uma aplicação criada, acesse seu [Painel do desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) e clique em **Entrar** para fazer seu login caso ainda não esteja logado.

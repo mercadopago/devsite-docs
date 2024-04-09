@@ -2,7 +2,7 @@
 
 The **Stores** and **POS (Point of Sale)** are critical for receiving in-store payments with QR. They allow creating your store and assign its points of sale.
 
-![POS and Stores](/images/mobile/stores_pos.es.png)
+![POS and Stores](mobile/stores_pos.es.png)
 
 ## Stores
 

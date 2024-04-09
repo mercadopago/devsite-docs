@@ -143,11 +143,11 @@ El valor `CFBundleURLName` corresponde al identificador de la aplicación (Ident
 
 También puedes **configurar el Deep Link desde Xcode**. Para esto, ubícate en la información de tu proyecto y agrega una nueva `URL Type`.
 
-![urltype_swift](/images/cow/urltype_swift.png)
+![urltype_swift](cow/urltype_swift.png)
 
 Luego, ingresa el `identifier` de tu aplicación y la `URL Schemes` del Deep Link.
 
-![deeplink-xcode-swift](/images/cow/deeplink-xcode-swift.png)
+![deeplink-xcode-swift](cow/deeplink-xcode-swift.png)
 
 Esto generará automáticamente el mismo código que se indicó anteriormente en el archivo `<appname>/Info.plist`.
 

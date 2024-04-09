@@ -218,7 +218,7 @@ Respuesta:
 
 Para asegurar que el usuario pagador comprenda el uso de la opción de Inicio de Transacción de Pago de Open Finance, es necesario asegurarse de que en el Checkout quede claro que el pago **se realiza a través de Open Finance dentro del ecosistema de pagos de Mercado Pago**.
 
-![Tela para escolha ](/images/api/open-finance(advanced)/usability-rule1.png)
+![Tela para escolha ](api/open-finance(advanced)/usability-rule1.png)
 
 Consulte a continuación algunos consejos de usabilidad para mejorar el flujo de pagos a través de Open Finance.
 
@@ -317,7 +317,7 @@ Para más información, ve la sección de creación de pagos en [esta documentac
 #### Prácticas recomendadas
 El vendedor podrá mostrar las instituciones favoritas en los primeros lugares de la lista o en el formato que prefiera. Sin embargo, **no podrá impedir que el cliente seleccione alguna de las instituciones disponibles para su uso**.
 
-![Lista de bancos disponíveis](/images/api/open-finance(advanced)/display-tips.png)
+![Lista de bancos disponíveis](api/open-finance(advanced)/display-tips.png)
 
 > WARNING
 > 
@@ -338,7 +338,7 @@ La pantalla de revisión y confirmación debe incluir, como mínimo, la siguient
 
 * Aviso de redirección para dar al cliente una mayor visibilidad sobre los próximos pasos. 
 
-![Tela de revisa e confirma](/images/api/open-finance(advanced)/review-confirm.png)
+![Tela de revisa e confirma](api/open-finance(advanced)/review-confirm.png)
 
 > WARNING
 > 
@@ -536,7 +536,7 @@ El redireccionamiento debe ocurrir al canal digital seguro de la Institución Fi
   
 * Browser-to-App
 
-![Exemplo de tela de redirecionamento](/images/api/open-finance(advanced)/authorization.gif)
+![Exemplo de tela de redirecionamento](api/open-finance(advanced)/authorization.gif)
 
 
 Es necesario señalar que el redireccionamiento es parte de Open Finance, por lo que el cliente está siendo redirigido, de forma segura, desde la Institución Iniciadora de la Transacción de Pago - Mercado Pago a la Institución Titular de la Cuenta, utilizando los mismos elementos gráficos para ambas instituciones.
@@ -561,7 +561,7 @@ En este momento, si desea obtener el estado actual del pago, debe consultar la A
 
 Si necesitas abrir una aplicación móvil, te recomendamos que crees un [Android App Link](https://developer.android.com/training/app-links) o un [Universal Link](https://developer.android.com/training/app-links). Vale recordar que en Androids con versiones anteriores a la 12, el usuario tiene la posibilidad de elegir dónde abrir el App Link como se muestra en la siguiente imagen:
 
-![Exemplo de Android solicitando onde abrir](/images/api/open-finance(advanced)/callback.png)
+![Exemplo de Android solicitando onde abrir](api/open-finance(advanced)/callback.png)
 
 Por lo tanto, incluso si el flujo va a terminar en una aplicación móvil, **te recomendamos que también crees una pantalla web de handover** para usarla cuando el usuario quiera abrir el link en su navegador.
 

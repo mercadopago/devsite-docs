@@ -23,7 +23,7 @@ Para **configurar as informações de pedido em sua loja**, siga os passos abaix
 4. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
 
-![Payments Connect - iSET](/images/iset/iset_configuration_informacion_9.gif)
+![Payments Connect - iSET](iset/iset_configuration_informacion_9.gif)
 <p>&nbsp;</p>
 
 > WARNING

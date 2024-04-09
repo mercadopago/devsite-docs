@@ -10,7 +10,7 @@ En el caso de las soluciones integrables, el flujo de integración inicial es si
 >
 > Si ya tienes una cuenta de Mercado Libre, accede al Panel de Negocios de Mercado Pago con el mismo usuario y contraseña.
 
-![Getting started](/images/getting-started/getting-started-diagram2-es.png)
+![Getting started](getting-started/getting-started-diagram2-es.png)
 
 Con la cuenta ya activa, tienes acceso a dos paneles diferentes con información crucial:
 

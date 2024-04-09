@@ -8,7 +8,7 @@ Aqui, apresentamos as regras e limitações que devem ser seguidas para que seu 
 
 A [Point Smart](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/introduction) é utilizada no **Brasil, México e Argentina**, por isso, certifique-se de que toda a comunicação do seu aplicativo seja feita no idioma de cada local em que ele será publicado.
 
-![miniapps-language](/mini-apps/miniapps-language-pt.png)
+![miniapps-language](mini-apps/miniapps-language-pt.png)
 
 ### Evite estrangeirismos
 
@@ -28,16 +28,16 @@ Aprenda a adaptar a identidade e construção visual do seu aplicativo dentro do
 
 Para ser aprovado, seu aplicativo deve ter um esquema de cores diferente da paleta mostrada abaixo, que é de uso exclusivo do Mercado Pago.
 
-![miniapps-colors](/mini-apps/miniapps-colors-pt.png)
+![miniapps-colors](mini-apps/miniapps-colors-pt.png)
 
 ## Elementos visuais
 
 Logos, imagens de produtos e serviços ou qualquer referência visual do Mercado Pago é proibida.
 
-![miniapps-elements](/mini-apps/miniapps-elements-pt.png)
+![miniapps-elements](mini-apps/miniapps-elements-pt.png)
 
 ## Tipografia
 
 O Mercado Pago utiliza a **fonte Proxima Nova/ML Font e suas variantes**. Integre seu aplicativo com  outra família tipográfica.
 
-![miniapps-typography](/mini-apps/miniapps-typography-pt.png)
+![miniapps-typography](mini-apps/miniapps-typography-pt.png)

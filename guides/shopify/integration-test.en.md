@@ -26,7 +26,7 @@ Here's how to test the integration:
 
 <center>
 
-![Create account](/images/shopify/test-create-account-es.gif)
+![Create account](shopify/test-create-account-es.gif)
 
 </center>
 
@@ -35,7 +35,7 @@ Here's how to test the integration:
 
 <center>
 
-![Login](/images/shopify/test-login-esp.gif)
+![Login](shopify/test-login-esp.gif)
 
 </center>
 
@@ -51,13 +51,13 @@ Now, follow the step-by-step according to the chosen checkout type to process pa
 6. Access the application created in step 5 and click on **Production credentials** in the left menu. Copy the `public_key` and `access_token`.
 
 ------------
-![Production credentials](/images/shopify/test-prod-credentials-es.png)
+![Production credentials](shopify/test-prod-credentials-es.png)
 
 7. Go to the Shopify panel settings (**Settings > Payments**) and click on **Manage** for the Mercado Pago provider.
 ----[mlb]----
 8. Enter the `client_id` and `client_secret` from the seller's test account.
 
-![Panel](/images/shopify/test-pro-shopify.png)
+![Panel](shopify/test-pro-shopify.png)
 
 9. Click on **Save**.
 
@@ -65,7 +65,7 @@ Now, follow the step-by-step according to the chosen checkout type to process pa
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 8. Enter the `public_key` and `access_token` from the seller's test account.
 
-![Panel](/images/shopify/test-pro-shopify-es-all.jpg)
+![Panel](shopify/test-pro-shopify-es-all.jpg)
 
 ------------
 9. Click on **Save credentials**.
@@ -89,13 +89,13 @@ Now, follow the step-by-step according to the chosen checkout type to process pa
 
 6. Access the application created in step 5 and click on **Production credentials** in the left menu. Copy the `public_key`.
 
-![Production credentials](/images/shopify/test-prod-credentials-es.png)
+![Production credentials](shopify/test-prod-credentials-es.png)
 
 7. Go to the Shopify panel settings (**Apps > Checkout Transparente MP**).
 8. Enter the `public_key` from the seller's test account.
 9. Activate **Production Mode for Mercado Pago checkouts**. Since we are using test accounts to test the integration, it is necessary to enable the production mode in Checkout Transparente.
 
-![Panel](/images/shopify/test-api-shopify.png)
+![Panel](shopify/test-api-shopify.png)
 
 10. Click **Save Changes**.
 11. Open a new incognito window and log in to Mercado Pago using the buyer's test account created in step 3.

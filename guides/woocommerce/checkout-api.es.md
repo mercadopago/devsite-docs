@@ -18,13 +18,13 @@ Mira a continuación qué métodos de pago están disponibles para la tienda al 
 * [Medios de pago offline - Boleto e lotérica](/developers/es/docs/woocommerce/payments-configuration/checkout-api/offline-payments): pagos en efectivo (Dinero en cuenta de Mercado Pago o boleto bancário) y pago de lotería sin boleto (con CPF).
 * [Pix](/developers/es/docs/woocommerce/payments-configuration/checkout-api/pix): transferencia bancaria disponible las 24 horas. La opción de pago con Pix solo se mostrará si existe una clave de Pix registrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
 
-![Active and configure](/images/woocomerce/cho-pro-active-configure-es.png)
+![Active and configure](woocomerce/cho-pro-active-configure-es.png)
 
 ------------
 ----[mla, mlm]---- 
 * [Medios de pago offline - Efectivo](/developers/es/docs/woocommerce/payments-configuration/checkout-api/offline-payments): pagos en efectivo (saldo Mercado Pago o ticket).
 
-![Activar y configurar](/images/woocomerce/cho-pro-active-configure-es.png)
+![Activar y configurar](woocomerce/cho-pro-active-configure-es.png)
 
 ------------
 ----[mpe, mco, mlu, mlc]---- 

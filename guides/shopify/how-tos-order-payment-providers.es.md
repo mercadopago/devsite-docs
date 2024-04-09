@@ -32,6 +32,6 @@ Aprende cómo utilizar la app **Mercado Pago Ordena Checkouts** para cambiar el 
 
 <center>
 
-![mercado-pago-ordena](/images/shopify/mercado-pago-ordena-pt.gif)
+![mercado-pago-ordena](shopify/mercado-pago-ordena-pt.gif)
 
 </center>

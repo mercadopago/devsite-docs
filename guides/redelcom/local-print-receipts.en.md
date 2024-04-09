@@ -8,7 +8,7 @@ To integrate the `NeptuneLiteAPI *.jar` library and enable receipt printing, fol
 
 </center>
 
-![image showing where to find the Modules tab](/images/Redelcom/importar-librería2.png)
+![image showing where to find the Modules tab](Redelcom/importar-librería2.png)
 
 </center>
 
@@ -16,7 +16,7 @@ To integrate the `NeptuneLiteAPI *.jar` library and enable receipt printing, fol
 
 </center>
 
-![image showing where to find the library](/images/Redelcom/importar-librería3.png)
+![image showing where to find the library](Redelcom/importar-librería3.png)
 
 </center>
 
@@ -24,7 +24,7 @@ To integrate the `NeptuneLiteAPI *.jar` library and enable receipt printing, fol
 
 </center>
 
-![image showing where to browse](/images/Redelcom/importar-librería4.png)
+![image showing where to browse](Redelcom/importar-librería4.png)
 
 </center>
 
@@ -32,7 +32,7 @@ To integrate the `NeptuneLiteAPI *.jar` library and enable receipt printing, fol
 
 </center>
 
-![image showing where to find the Modules Dependencies](/images/Redelcom/integrar-librería5.png)
+![image showing where to find the Modules Dependencies](Redelcom/integrar-librería5.png)
 
 </center>
 

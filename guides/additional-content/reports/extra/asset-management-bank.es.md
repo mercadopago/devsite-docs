@@ -49,21 +49,21 @@ Cuando en la columna `DESCRIPTION` aparece el valor `asset_management_retention`
 
 ### Rendimientos positivos
 
-![Ejemplo rendimiento positivo en reporte de Dinero retirado](/images/manage-account/reports/reports-information-details/asset-management-bank-positive.png)
+![Ejemplo rendimiento positivo en reporte de Dinero retirado](manage-account/reports/reports-information-details/asset-management-bank-positive.png)
 
 ### Rendimientos negativos
 
-![Ejemplo rendimiento negativo en reporte de Dinero retirado](/images/manage-account/reports/reports-information-details/asset-management-bank-negative.png)
+![Ejemplo rendimiento negativo en reporte de Dinero retirado](manage-account/reports/reports-information-details/asset-management-bank-negative.png)
 
 ----[mlb]---- 
 
 ### Impuesto a la renta
 
-![Ejemplo impuesto a la renta en reporte de Dinero disponible](/images/manage-account/reports/reports-information-details/asset-management-bank-with-taxes-negative.png)
+![Ejemplo impuesto a la renta en reporte de Dinero disponible](manage-account/reports/reports-information-details/asset-management-bank-with-taxes-negative.png)
 
 ### Devolución de impuesto a la renta
 
-![Ejemplo devolución de impuesto a la renta en reporte de Dinero disponible](/images/manage-account/reports/reports-information-details/asset-management-bank-with-taxes-positive.png)
+![Ejemplo devolución de impuesto a la renta en reporte de Dinero disponible](manage-account/reports/reports-information-details/asset-management-bank-with-taxes-positive.png)
 
 ------------
 

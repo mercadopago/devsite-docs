@@ -7,8 +7,8 @@
 > It is not necessary for your customer to have a Mercado Pago account in order to make the payment!
 
 ----[mla, mco, mlm, mlc, mlu, mpe]----
-![Recibir pagos por redes sociales](/images/button/byl_crear_compartir.png)
+![Recibir pagos por redes sociales](button/byl_crear_compartir.png)
 ------------
 ----[mlb]----
-![Receber pagamentos por redes sociais](/images/button/byl_criar_compartilhar.png)
+![Receber pagamentos por redes sociais](button/byl_criar_compartilhar.png)
 ------------

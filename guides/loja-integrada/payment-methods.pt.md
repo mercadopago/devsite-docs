@@ -25,7 +25,7 @@ O Checkout Pro é a **integração que te permite cobrar no ambiente do Mercado 
 2. No item “Checkout Pro” alterar de “Desativado” para “Ativado”.
 3. Clique em “Salvar alterações”.
 
-![Activating Checkout transparent and Checkout redirected - Loja Integrada](/images/lojaintegrada/lojaintegrada-checkout-1.gif)
+![Activating Checkout transparent and Checkout redirected - Loja Integrada](lojaintegrada/lojaintegrada-checkout-1.gif)
 
 Informe como você quer que sua loja apareça para seu cliente quando for realizar a compra:
 
@@ -43,4 +43,4 @@ Operar com **boleto do Mercado Pago como opção de pagamento**:
 4. Caso deseje que o pagamento com boleto tenha desconto marque a opção “Usar desconto no boleto?” e informe a porcentagem de desconto no campo “Desconto aplicado”.
 5. Clique em “salvar alterações”.
 
-![Setting ticket - Loja Integrada](/images/lojaintegrada/lojaintegrada-ticket-1.gif)
+![Setting ticket - Loja Integrada](lojaintegrada/lojaintegrada-ticket-1.gif)

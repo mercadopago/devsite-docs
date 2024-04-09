@@ -2,7 +2,7 @@
 
 As **lojas** e os **caixas**, também conhecidas como Ponto de Venda (PDV), são importantes para receber pagamentos presenciais com QR. Permitem que você crie sua loja e designe seus pontos de venda.
 
-![Caixas e lojas](/images/mobile/stores_pos.pt.png)
+![Caixas e lojas](mobile/stores_pos.pt.png)
 
 ## Lojas
 

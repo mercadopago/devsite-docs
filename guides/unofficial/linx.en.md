@@ -30,7 +30,7 @@ To **add Mercado Pago to your store**, follow these steps:
 1. Define a name for Mercado Pago V2 method of payment and select "Active" state.
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_adicione_meio_pagamento-1.gif)
+![LINX Configuracao](linx/linx_adicione_meio_pagamento-1.gif)
 <p>&nbsp;</p>
 
 ## Set up methods of payment
@@ -50,7 +50,7 @@ Once you added the method of payment, **set up data for integration with Mercado
 1. Finally, click on "Save".
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_configurando_integracao-2.gif)
+![LINX Configuracao](linx/linx_configurando_integracao-2.gif)
 <p>&nbsp;</p>
 
 ### Set up credit card data 
@@ -76,7 +76,7 @@ To **set up credit card data in your store**, follow these steps:
 1. Click on "Save".
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_configurando_cartao-3.gif)
+![LINX Configuracao](linx/linx_configurando_cartao-3.gif)
 <p>&nbsp;</p>
 
 > WARNING
@@ -98,7 +98,7 @@ To **set up boleto data in your store**, follow these steps:
 1. Finally, click on "Save".
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_configurando_boleto-4.gif)
+![LINX Configuracao](linx/linx_configurando_boleto-4.gif)
 <p>&nbsp;</p>
 
 ## Set interest free installments in your Mercado Pago account
@@ -108,7 +108,7 @@ To **set up boleto data in your store**, follow these steps:
 1. Choose "How many do you want to offer?" and push "Activate" button to confirm changes.
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_parcelamento_conta-5.gif)
+![LINX Configuracao](linx/linx_parcelamento_conta-5.gif)
 <p>&nbsp;</p>
 
 Ready! You are already offering interest free installments with the configured financing cost.
@@ -127,7 +127,7 @@ To **create a contract in your store**, follow these steps:
 1. Finally, click on "Save".
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_criando_um_contrato-6.gif)
+![LINX Configuracao](linx/linx_criando_um_contrato-6.gif)
 <p>&nbsp;</p>
 
 ## Define contract methods of payment
@@ -142,7 +142,7 @@ To **define contract methods of payment** follow these steps:
 1. Finally, click on "Save".
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_meio_pagamento_contrato-7.gif)
+![LINX Configuracao](linx/linx_meio_pagamento_contrato-7.gif)
 <p>&nbsp;</p>
 
 ### Assign contract methods of payment to a channel
@@ -155,7 +155,7 @@ To **assign contract methods of payment to a channel** follow these steps:
 1. Finally, click on "Save".
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_atribuindo_contrato_ao_canal-8.gif)
+![LINX Configuracao](linx/linx_atribuindo_contrato_ao_canal-8.gif)
 <p>&nbsp;</p>
 
 <!-- -->

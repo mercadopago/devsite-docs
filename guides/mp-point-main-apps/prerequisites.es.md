@@ -14,7 +14,7 @@ Antes de empezar a desarrollar tu solución, consulta las condiciones que debes 
 
 Para garantizar que la integración sea exitosa, considera las características del lector y cómo la app se adaptará a ellas.
 
-![prerequisites](/main-apps/prerequisites-all.png)
+![prerequisites](main-apps/prerequisites-all.png)
 
 | Especificación | Descripción |
 |---|---|

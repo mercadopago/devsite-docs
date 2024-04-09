@@ -27,7 +27,7 @@ Para generar estas credenciales, accede a [Tus Integraciones](https://www.mercad
 
 <center>
 
-![Crear cuenta](/images/woocomerce/test-create-account-es.gif)
+![Crear cuenta](woocomerce/test-create-account-es.gif)
 
 </center>
 
@@ -76,7 +76,7 @@ Previo a acceder al Simulador, deberás terminar de configurar tu ambiente de pr
 
 <center>
 
-![Credenciales de prueba en el Panel del Desarrollador](/images/woocomerce/test-test-credentials-es.png)
+![Credenciales de prueba en el Panel del Desarrollador](woocomerce/test-test-credentials-es.png)
 
 </center>
 
@@ -94,7 +94,7 @@ Una vez que hayas proporcionado la información de acuerdo al modo del Simulador
 
 <center>
 
-![pantalla del Simulador](/images/point-api/point-device-simulator.png)
+![pantalla del Simulador](point-api/point-device-simulator.png)
 
 </center>
 
@@ -131,7 +131,7 @@ Si la obtención de la intención de pago desde el Simulador fue exitosa, proced
 
 <center>
 
-![Simulador con tarjeta](/images/point-api/point-simulator-process.png)
+![Simulador con tarjeta](point-api/point-simulator-process.png)
 
 </center>
 

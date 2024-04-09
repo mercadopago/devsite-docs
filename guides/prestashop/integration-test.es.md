@@ -19,7 +19,7 @@ A continuación, te mostramos cómo probar la integración:
 
 <center>
 
-![Crear cuenta](/images/prestashop/test-create-account-es.gif)
+![Crear cuenta](prestashop/test-create-account-es.gif)
 
 </center>
 
@@ -28,27 +28,27 @@ A continuación, te mostramos cómo probar la integración:
 
 <center>
 
-![Inicio de sesión](/images/prestashop/test-login-esp.gif)
+![Inicio de sesión](prestashop/test-login-esp.gif)
 
 </center>
 
 6. Accede a la aplicación creada en el paso 5 y haz clic en **Credenciales de producción** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
 
-![Credenciales de producción](/images/prestashop/test-prod-credentials-es.png)
+![Credenciales de producción](prestashop/test-prod-credentials-es.png)
 
 7. Ve a la configuración del panel de PrestaShop (**Módulos > Gestor de Módulos**). Encuentra el módulo de Mercado Pago en la sección "Pago", haz clic en la flecha hacia abajo y selecciona **Configurar**.
 8. Ingresa las credenciales de producción `access_token` y `public_key` de la cuenta de prueba del vendedor en el campo **Credenciales de producción**.
 9. En la aplicación creada en el paso 5, haz clic en **Credenciales de prueba** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
 
-![Credenciales de prueba](/images/prestashop/test-test-credentials-es.png)
+![Credenciales de prueba](prestashop/test-test-credentials-es.png)
 
 10. Ingresa también las credenciales de prueba `access_token` y `public_key` de la cuenta de prueba del vendedor en el campo **Credenciales de prueba**.
 
-![Panel](/images/prestashop/test-prestashop-es.png)
+![Panel](prestashop/test-prestashop-es.png)
 
 11. Recuerda activar el modo de producción en el campo "Producción".
 
-![Panel](/images/prestashop/test-prestashop-modeprod-es.png)
+![Panel](prestashop/test-prestashop-modeprod-es.png)
 
 12. Haz clic en **Guardar**.
 13. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago con la cuenta de prueba del comprador creada en el paso 3.
@@ -89,21 +89,21 @@ Además, los pedidos se registrarán en el historial de la cuenta de prueba del 
 1. Accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** en el administrador de Mercado Pago y selecciona la aplicación que deseas probar.
 2. Haz clic en **Credenciales de producción** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
 
-![Credenciales de producción](/images/prestashop/test-prod-credentials-api-es.png)
+![Credenciales de producción](prestashop/test-prod-credentials-api-es.png)
 
 3. Ve a la configuración del panel de PrestaShop (**Módulos > Gestor de Módulos**). Encuentra el módulo de Mercado Pago en la sección "Pago", haz clic en la flecha hacia abajo y selecciona **Configurar**.
 4. Ingresa las credenciales de producción `access_token` y `public_key` en el campo **Credenciales de producción**.
 5. En tu aplicación, haz clic en **Credenciales de prueba** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
 
-![Credenciales de prueba](/images/prestashop/test-test-credentials-api-es.png)
+![Credenciales de prueba](prestashop/test-test-credentials-api-es.png)
 
 6. También ingresa las credenciales de prueba `access_token` y `public_key` en el campo **Credenciales de prueba**.
 
-![Painel](/images/prestashop/test-prestashop-es.png)
+![Painel](prestashop/test-prestashop-es.png)
 
 7. En el panel de Prestashop, desactiva el Modo Producción en el campo "Producción", activando automáticamente el Modo de Pruebas.
 
-![Modo](/images/prestashop/test-prestashop-testmode-es.png)
+![Modo](prestashop/test-prestashop-testmode-es.png)
 
 8. Haz clic en **Guardar**.
 9. Accede a tu tienda y realiza una compra proporcionando información de prueba, como un número de teléfono y una dirección de correo electrónico diferentes a los asociados con tu cuenta en Mercado Pago. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. También utiliza las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/prestashop/additional-content/your-integrations/test/cards) correspondiente.

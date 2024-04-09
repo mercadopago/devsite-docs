@@ -2,7 +2,7 @@
 
 Para potenciar tu negocio, creamos una guía de buenas prácticas de UX para checkouts que te ayudarán a mejorar la experiencia de pago de tus clientes, generar más conversiones y ofrecer un mejor servicio. 
 
-![es Introduccion Buenas practicas](/images/best-practices-guide/EspIntroduccion.png)
+![es Introduccion Buenas practicas](best-practices-guide/EspIntroduccion.png)
 
 En esta guía te mostraremos cómo construir tu propia experiencia de checkout a través de la implementación de nuestras soluciones, que te permiten customizar tu front-end y llevar a la práctica estos consejos. 
 

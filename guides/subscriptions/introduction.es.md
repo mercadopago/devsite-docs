@@ -11,4 +11,4 @@ Hay dos tipos de suscripciones disponibles para la integración:
 
 A continuación mostramos un diagrama que explica el flujo de cada modelo de suscripción.
 
-![Basic-subscriptions](/images/subscriptions/Integrations-ES.png)
+![Basic-subscriptions](subscriptions/Integrations-ES.png)

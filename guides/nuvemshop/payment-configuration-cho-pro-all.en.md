@@ -24,10 +24,10 @@ To integrate Checkout Pro, follow the steps below.
 ------------
 
 ----[mlb]----
-![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif)
+![Payments Checkout Pro - Nuvem Shop](nuvemshop/nuvemshop_checkout_redirect_3.gif)
 
 ------------
 ----[mlc, mlu, mpe, mco]----
-![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_redirect.gif)
+![Payments Checkout Pro - Nuvem Shop](nuvemshop/mx_tiendanube_checkout_redirect.gif)
 
 ------------

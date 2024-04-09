@@ -9,7 +9,7 @@ To start receiving payments, you must **activate your production credentials** a
 
 To do so, enter the [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) and, in the side menu, access **Production > Production credentials**. There, you will find your productive _Public Key_ and _Access Token_, which should replace the test ones used in previous stages.
 
-![Production Credentials](/images/woocomerce/test-prod-credentials-es.png)
+![Production Credentials](woocomerce/test-prod-credentials-es.png)
 
 For more information, check our [Credenctials documentation](/developers/en/guides/additional-content/your-integrations/credentials).
 

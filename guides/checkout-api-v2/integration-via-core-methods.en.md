@@ -12,7 +12,7 @@ In integration via Core Methods, the integrator decides when to look for informa
 
 Check below the diagram that illustrates the card payment process using Core Methods.
 
-![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-en.png)
+![API-integration-flowchart](api/api-integration-flowchart-coremethods-en.png)
 
 ## Import MercadoPago.js
 

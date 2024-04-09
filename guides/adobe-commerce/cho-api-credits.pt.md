@@ -13,7 +13,7 @@ Para configurar o **Parcelamento via Pix em até 12x** no checkout da loja, siga
     3. Em **Prazo limite para pagamento**, escolha o tempo que o cliente tem para concluir o pagamento.
     4. Quando o cliente não tiver linha de crédito ativa para utilizar Parcelamento via Pix em até 12x, iremos redirecioná-lo para o Mercado Pago. A opção **Meio de pagamento excluído** permite a remoção de meios de pagamento do Mercado Pago e, caso o cliente queira utilizar algum deles mesmo assim, deverá retornar ao checkout para finalizar o pagamento.
 
-![Tela de configuração do meio de pagamento](/images/adobe-commerce/cho-api-config2-mlb-pt.png)
+![Tela de configuração do meio de pagamento](adobe-commerce/cho-api-config2-mlb-pt.png)
 
 ## Definições comuns de meios de pagamento
 Nesta seção é possível definir algumas características gerais da plataforma para o uso do Checkout Transparente. Preencha cada um dos campos solicitados de acordo com a descrição abaixo.
@@ -22,7 +22,7 @@ Nesta seção é possível definir algumas características gerais da plataforma
 3. Em ​**​Pagamento a partir de países específicos**, selecione os países que podem usar esse meio de pagamento. Apenas consumidores cujo o endereço de pagamento seja de um dos países que selecionou podem ver essa forma de pagamento.
 4. Na opção **Ordem de exibição**, defina uma ordem crescente de exibição dessa forma de pagamento no checkout. Por exemplo, se for 1, qualquer outra forma de pagamento com ordem maior será exibida depois dela.
 
-![Tela de definições comuns de meios de pagamento](/images/adobe-commerce/cho-api-credits-definitions-mlb-pt.png)
+![Tela de definições comuns de meios de pagamento](adobe-commerce/cho-api-credits-definitions-mlb-pt.png)
 
 Clique em **Gravar Configuração** para salvar as alterações realizadas, e pronto, ja pode oferecer **Parcelamento via Pix em até 12x** como meio de pagamento no checkout da loja.
 ------------
@@ -37,14 +37,14 @@ Atualmente, o **Parcelamento em até 12 meses sem cartão no Mercado Pago** é o
 Para configurar o **Parcelamento em até 12x sem cartão no Mercado Pago** no checkout da loja, siga os passos descritos abaixo.
 1. No **Painel de Controle** da loja, acesse **Lojas > Configuração > Vendas > Forma de pagamento**.
 2. Em **Outros meios de pagamento**, clique em **Configurar** no plugin do Mercado Pago.
-    ![Tela de configuração do plugin do Mercado Pago](/images/adobe-commerce/cho-api-credits-config-mla-es.png)
+    ![Tela de configuração do plugin do Mercado Pago](adobe-commerce/cho-api-credits-config-mla-es.png)
 3. Selecione a opção **Parcelamento em até 12 meses sem cartão no Mercado Pago** e configure os campos conforme indicado a seguir.
     1. O campo **Ativado** define que o meio de pagamento estará disponível no checkout da loja. Escolha "Sim", ou deixe o valor definido pelo sistema se corresponder a esta opção.
     2. Em **Título**, defina o título de como a forma de pagamento será exibida no checkout da loja. Recomendamos usar “Hasta 12 cuotas sin tarjeta con Mercado Pago”.
     3. Em **Prazo limite para pagamento**, escolha o tempo que o cliente tem para concluir o pagamento.
     4. Quando o cliente não tiver linha de crédito ativa para utilizar Parcelamento em até 12x sem cartão no Mercado Pago, iremos redirecioná-lo para o Mercado Pago. A opção **Meio de pagamento excluído** permite a remoção de meios de pagamento do Mercado Pago e, caso o cliente queira utilizar algum deles mesmo assim, deverá retornar ao checkout para finalizar o pagamento.
 
-![Tela de configuração do meio de pagamento](/images/adobe-commerce/cho-api-credits-config2-mla-es.png)
+![Tela de configuração do meio de pagamento](adobe-commerce/cho-api-credits-config2-mla-es.png)
 
 ## Definições comuns de meios de pagamento
 Nesta seção é possível definir algumas características gerais da plataforma para o uso do Checkout API. Preencha cada um dos campos solicitados de acordo com a descrição abaixo.
@@ -53,7 +53,7 @@ Nesta seção é possível definir algumas características gerais da plataforma
 3. Em ​**​Pagamento a partir de países específicos**, selecione os países que podem usar esse meio de pagamento. Apenas consumidores cujo o endereço de pagamento seja de um dos países que selecionou podem ver essa forma de pagamento.
 4. Na opção **Ordem de exibição**, defina uma ordem crescente de exibição dessa forma de pagamento no checkout. Por exemplo, se for 1, qualquer outra forma de pagamento com ordem maior será exibida depois dela.
 
-![Tela de definições comuns de meios de pagamento](/images/adobe-commerce/cho-api-credits-definitions-mlb-pt.png)
+![Tela de definições comuns de meios de pagamento](adobe-commerce/cho-api-credits-definitions-mlb-pt.png)
 
 Clique em **Gravar Configuração** para salvar as alterações realizadas, e pronto, ja pode oferecer **Parcelamento em até 12 meses sem cartão no Mercado Pago** como meio de pagamento no checkout da loja.
 ------------
@@ -74,7 +74,7 @@ Para configurar o **Até 12 meses sem cartão no Mercado Pago** no checkout da l
     3. Em **Prazo limite para pagamento**, escolha o tempo que o cliente tem para concluir o pagamento.
     4. Quando o cliente não tiver linha de crédito ativa para utilizar Até 12 meses sem cartão no Mercado Pago, iremos redirecioná-lo para o Mercado Pago. A opção **Meio de pagamento excluído** permite a remoção de meios de pagamento do Mercado Pago e, caso o cliente queira utilizar algum deles mesmo assim, deverá retornar ao checkout para finalizar o pagamento.
 
-![Tela de configuração do meio de pagamento](/images/adobe-commerce/cho-api-credits-config2-mlm-es.png)
+![Tela de configuração do meio de pagamento](adobe-commerce/cho-api-credits-config2-mlm-es.png)
 
 ## Definições comuns de meios de pagamento
 Nesta seção é possível definir algumas características gerais da plataforma para o uso do Checkout API. Preencha cada um dos campos solicitados de acordo com a descrição abaixo.
@@ -83,7 +83,7 @@ Nesta seção é possível definir algumas características gerais da plataforma
 3. Em ​**​Pagamento a partir de países específicos**, selecione os países que podem usar esse meio de pagamento. Apenas consumidores cujo o endereço de pagamento seja de um dos países que selecionou podem ver essa forma de pagamento.
 4. Na opção **Ordem de exibição**, defina uma ordem crescente de exibição dessa forma de pagamento no checkout. Por exemplo, se for 1, qualquer outra forma de pagamento com ordem maior será exibida depois dela.
 
-![Tela de definições comuns de meios de pagamento](/images/adobe-commerce/cho-api-credits-definitions-mlb-pt.png)
+![Tela de definições comuns de meios de pagamento](adobe-commerce/cho-api-credits-definitions-mlb-pt.png)
 
 Clique em **Gravar Configuração** para salvar as alterações realizadas, e pronto, ja pode oferecer **Até 12 meses sem cartão no Mercado Pago** como meio de pagamento no checkout da loja.
 ------------

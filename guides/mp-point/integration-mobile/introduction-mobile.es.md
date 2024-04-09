@@ -17,5 +17,5 @@ Cuando se llama a dicho link, el mismo va a ser interceptado como un Point-handl
 
 Puedes ver el diagrama de flujo a continuación para entender el funcionamiento de este tipo de integración.
 
-![Diagrama de flujo de Deep linking Mercado Pago Point](/images/point_diagram.png)
+![Diagrama de flujo de Deep linking Mercado Pago Point](point_diagram.png)
 

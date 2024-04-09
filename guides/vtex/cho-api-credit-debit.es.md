@@ -20,7 +20,7 @@ Para configurar estos medios de pago, dirígete al panel de administración de t
 
 4. Haz clic en **Guardar** para activar la configuración de esa tarjeta y, si lo deseas, repite el proceso para configurar otras marcas.
 
-![Configurar condiciones de pago con tarjeta de crédito](/images/vtex/paymentconditions-cc-imagenv2-es.gif)
+![Configurar condiciones de pago con tarjeta de crédito](vtex/paymentconditions-cc-imagenv2-es.gif)
 
 ## Plazos e intereses
 
@@ -32,7 +32,7 @@ Igualmente, tienes la opción de configurar la financiación y los intereses dir
 2. Selecciona la opción **QR y pagos online**, habilita el pago en veces y selecciona la cantidad que deseas ofrecer en el checkout. Las opciones van desde 1 hasta 12 veces.
 
 
-![Installment and interest](/images/adobe-commerce/parcelamento.gif)
+![Installment and interest](adobe-commerce/parcelamento.gif)
 
 Finalizadas estas etapas, la financiación en el checkout estará configurada y lista para procesar ventas.
 

@@ -54,7 +54,7 @@ After installing Banks for PSE, you can continue configuring PSE as a payment me
 
 ------------
 
-![Configure payment plans](/images/vtex/paymentconditions-imagenv2-en.gif)
+![Configure payment plans](vtex/paymentconditions-imagenv2-en.gif)
 
 > NOTE
 >
@@ -69,7 +69,7 @@ On the following screen:
 3. Activate the payment condition from the `Status` field. This must be activated for your selection in the `Process with affiliation` field to work.
 4. Save your changes by clicking on `Save`.
 
-![Credit card configuration](/images/vtex/paymentconditions-cc-imagenv2-en.gif)
+![Credit card configuration](vtex/paymentconditions-cc-imagenv2-en.gif)
 
 > WARNING
 >

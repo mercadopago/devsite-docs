@@ -14,6 +14,6 @@ Puedes ver en detalle el funcionamiento de la integración local con Redelcom en
 
 </center>
 
-![Diagrama explicando la integración local](/images/Redelcom/Integrate-via-Android.png)
+![Diagrama explicando la integración local](Redelcom/Integrate-via-Android.png)
 
 </center>

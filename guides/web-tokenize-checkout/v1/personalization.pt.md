@@ -11,7 +11,7 @@
 
 ### Status padrão
 
-![Mercado Pago payment button](/images/paybutton.png)
+![Mercado Pago payment button](paybutton.png)
 
 ### Personalização
 
@@ -23,7 +23,7 @@ Por padrão o botão contém o texto *"Pagar"*. Você pode modificar o texto do 
 data-button-label="Comprar"
 ```
 
-![Payment button mercado pago - modified label](/images/paybutton-modified-label.png)
+![Payment button mercado pago - modified label](paybutton-modified-label.png)
 
 #### Estilo
 
@@ -46,7 +46,7 @@ button.mercadopago-button {
 }
 ```
 
-![Payment button Mercado Pago modified CSS](/images/paybutton-modified-css.png)
+![Payment button Mercado Pago modified CSS](paybutton-modified-css.png)
 
 
 ## Cores na interface
@@ -55,7 +55,7 @@ button.mercadopago-button {
 
 #### Status padrão
 
-![Standard status elements](/images/cow/cow-ui-elements__pt.png)
+![Standard status elements](cow/cow-ui-elements__pt.png)
 
 #### Personalização
 
@@ -74,14 +74,14 @@ O valor do atributo deverá ser em formato hexadecimal. Por exemplo:
 data-elements-color="#c0392b"
 ```
 
-![Customization elements](/images/cow/cow-ui-elements--custom__pt.png)
+![Customization elements](cow/cow-ui-elements--custom__pt.png)
 
 
 ### Cabeçalho
 
 #### Status padrão
 
-![Standard status header Mercado Pago](/images/cow/cow-ui-header__pt.png)
+![Standard status header Mercado Pago](cow/cow-ui-header__pt.png)
 
 #### Personalização
 
@@ -93,7 +93,7 @@ O valor do atributo deverá ser em formato hexadecimal. Por exemplo:
 data-header-color="#c0392b"
 ```
 
-![Header customization Mercado Pago](/images/cow/cow-ui-header--custom__pt.png)
+![Header customization Mercado Pago](cow/cow-ui-header--custom__pt.png)
 
 ### Color de texto
 
@@ -105,7 +105,7 @@ Para un color de elemento *claro*, el color del texto será *negro* o `#000`. Po
 data-elements-color="#81ecec" <!-- Color claro -->
 ```
 
-![Font color in light element Mercado Pago](/images/cow/cow-ui-fontcolor__light.png)
+![Font color in light element Mercado Pago](cow/cow-ui-fontcolor__light.png)
 
 Para un color de elementos *oscuro*, el color del texto será *blanco* o `#fff`. Por ejemplo:
 
@@ -113,14 +113,14 @@ Para un color de elementos *oscuro*, el color del texto será *blanco* o `#fff`.
 data-elements-color="#8e44ad" <!-- Color oscuro -->
 ```
 
-![Font color in dark element Mercado Pago](/images/cow/cow-ui-fontcolor__dark.png)
+![Font color in dark element Mercado Pago](cow/cow-ui-fontcolor__dark.png)
 
 
 ## Detalhe da compra
 
 ### Status padrão
 
-![Purchase detail standard status](/images/cow/cow-summary__pt.png)
+![Purchase detail standard status](cow/cow-summary__pt.png)
 
 
 ### Personalização

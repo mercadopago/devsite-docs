@@ -34,7 +34,7 @@ Na coluna `SETTLEMENT_NET_AMOUNT` está o impacto real sobre o dinheiro da sua c
 
 Observe como está composto o relatório de Dinheiro em conta neste exemplo para identificar as operações e analisar seus próprios relatórios:
 
-![Reporte de dinero en cuenta Ejemplos Mercado Pago](/images/manage-account/reports/example-settlement-pt.png)
+![Reporte de dinero en cuenta Ejemplos Mercado Pago](manage-account/reports/example-settlement-pt.png)
 
 A versão padrão mostrará uma visualização estendida das colunas. O relatório final terá a maior quantidade de detalhes possível.
 

@@ -16,4 +16,4 @@ Para finalizar a configuração do Mercado Pago como meio de pagamento, na pági
 
 E pronto, sua integração está configurada e você já está oferecendo o Mercado Pago como meio de pagamento na sua loja.
 
-![Setting active in Wix](/images/wix/conectar-wix.gif)
+![Setting active in Wix](wix/conectar-wix.gif)

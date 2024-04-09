@@ -18,4 +18,4 @@ Para mais detalhes sobre *status* e *status_detail*, consulte a seção "Parâme
 
 Observe como o relatório de vendas está estruturado neste exemplo para identificar as operações e ler seus próprios relatórios:
 
-![Exemplo para identificar operações e ler seus próprios relatórios](/images/manage-account/reports/marketplace-sales/image2.png)
+![Exemplo para identificar operações e ler seus próprios relatórios](manage-account/reports/marketplace-sales/image2.png)

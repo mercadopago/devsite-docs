@@ -25,7 +25,7 @@ Both types of credentials consist of two key pairs that you should use according
 
 To generate the sales report, you should use your **Production Access Token**.
 
-![Generate Access Token](/images/manage-account/reports/marketplace-sales/image1.png)
+![Generate Access Token](manage-account/reports/marketplace-sales/image1.png)
 
 ## Create configuration
 

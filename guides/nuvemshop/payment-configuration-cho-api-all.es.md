@@ -29,11 +29,11 @@ Para integrar Checkout API, siga los pasos a continuación.
 3. Finalmente, haz clic en "Guardar cambios". ------------
 
 ----[mlb]----
-![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif) 
+![Payments Checkout Transparente - Nuvem Shop](nuvemshop/nuvemshop_checkout_transparente_2.gif) 
 
 ------------
 ----[mlc, mlu, mpe, mco]----
-![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_transparente.gif)
+![Payments Checkout Transparente - Nuvem Shop](nuvemshop/mx_tiendanube_checkout_transparente.gif)
 
 ------------
 

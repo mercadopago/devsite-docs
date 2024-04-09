@@ -15,7 +15,7 @@ To **define contract methods of payment** follow these steps:
 1. Finally, click on "Save".
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_meio_pagamento_contrato-7.gif)
+![LINX Configuracao](linx/linx_meio_pagamento_contrato-7.gif)
 <p>&nbsp;</p>
 
 ## Assign contract methods of payment to a channel
@@ -28,7 +28,7 @@ To **assign contract methods of payment to a channel** follow these steps:
 1. Finally, click on "Save".
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_atribuindo_contrato_ao_canal-8.gif)
+![LINX Configuracao](linx/linx_atribuindo_contrato_ao_canal-8.gif)
 <p>&nbsp;</p>
 
 <!-- -->

@@ -10,7 +10,7 @@
 1. Elige “¿Cuántas quieres ofrecer?” y confirma los cambios con el botón “Activar”.
 <p>&nbsp;</p>
 
-![Payments Connect - iSET](/images/iset/iset_account_installment_7.gif)
+![Payments Connect - iSET](iset/iset_account_installment_7.gif)
 <p>&nbsp;</p>
 
 ¡Y listo! Ya estás ofreciendo cuotas sin interés, con el costo de financiación que hayas configurado.

@@ -14,7 +14,7 @@ To avoid duplication, it is mandatory to send a unique key in the header `X-Idem
 
 Check below the diagram that illustrates how the `Idempotency Key` works in the process of creating an payment.
 
-![idempotency-flow](/images/wallet-connect/idempotency.en.png)
+![idempotency-flow](wallet-connect/idempotency.en.png)
 
 ## Send request
 

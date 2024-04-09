@@ -29,5 +29,5 @@ Puedes establecer la cantidad máxima o mínima de cuotas y la aplicación de au
 5. Haz clic en “Cerrar” y después en “Guardar cambios”.
 <p>&nbsp;</p>
 
-![Payments Connect - iSET](/images/iset/iset_configuration_installments_6.gif)
+![Payments Connect - iSET](iset/iset_configuration_installments_6.gif)
 <p>&nbsp;</p>

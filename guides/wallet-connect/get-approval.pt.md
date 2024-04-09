@@ -13,7 +13,7 @@ Com a vinculação criada, é preciso obter a aprovação do comprador para util
 
 Veja abaixo o diagrama que ilustra o processo de aprovação do comprador.
 
-![Obter aprovação](/images/wallet-connect/get-payer-approval.pt.png)
+![Obter aprovação](wallet-connect/get-payer-approval.pt.png)
 
 O diagrama de sequência exibido anteriormente ilustra que a confirmação do comprador ocorre simultaneamente ao processo de compra. Dentro deste cenário, o comprador concede autorização para integrar sua conta do Mercado Pago, permitindo o uso dos diversos métodos de pagamento oferecidos para efetivar a transação.
 

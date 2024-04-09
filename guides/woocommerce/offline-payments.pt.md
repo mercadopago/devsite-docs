@@ -7,7 +7,7 @@ Este meio de pagamento irá adicionar o----[mlb]---- Checkout Transparente -----
 ----[mlb]----
 3. Na opção "Boleto e lotérica", clique em **Configurar**.
 
-![Active and configure](/images/woocomerce/cho-pro-active-configure-pt.png)
+![Active and configure](woocomerce/cho-pro-active-configure-pt.png)
 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
@@ -17,27 +17,27 @@ Este meio de pagamento irá adicionar o----[mlb]---- Checkout Transparente -----
 4. A opção "Ativar checkout" permite habilitar ou desabilitar o Checkout em sua loja. Para ativar, clique no botão deslizante.
 5. No campo **Título no checkout da loja**, insira o nome pelo qual esta forma de pagamento será identificada na loja. Por exemplo, você pode chamá-la de **Pagamento em dinheiro**.
 ----[mlb]----
-![Active and title](/images/woocomerce/api-active-boleto-pt-br.png)
+![Active and title](woocomerce/api-active-boleto-pt-br.png)
 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-![Ativar e configurar](/images/woocomerce/api-active-efectivo-es.png)
+![Ativar e configurar](woocomerce/api-active-efectivo-es.png)
 
 ------------
 6. A opção **Converter moeda** permite que o valor da moeda configurada no WooCommerce seja compatível com o valor da moeda que você utiliza no Mercado Pago. Para ativá-la, clique no botão deslizante.
 7. Na seção **Meios de pagamento**, habilite quais métodos de pagamento em dinheiro deseja oferecer na loja. Você pode habilitar a opção "Todos os métodos de pagamento" ou apenas alguns.
 8. Em **Vencimento do pagamento**, configure em quantos dias os pedidos com pagamento em dinheiro expirarão.
 ----[mlb]----
-![Convertir y métodos de pago](/images/woocomerce/api-convert-and-payments-methods-boleto-pt-br.png)
+![Convertir y métodos de pago](woocomerce/api-convert-and-payments-methods-boleto-pt-br.png)
 
 ------------
 ----[mla]----
-![Convert and payments methods](/images/woocomerce/api-convert-and-payments-methods-efectivo-es-ar.png)
+![Convert and payments methods](woocomerce/api-convert-and-payments-methods-efectivo-es-ar.png)
 
 ------------
 ----[mlm]----
-![Convert and payments methods](/images/woocomerce/api-convert-and-payments-methods-efectivo-es-mx.png)
-![Convert and payments methods 2](/images/woocomerce/api-convert-and-payments-methods-efectivo-es-mx-2.png)
+![Convert and payments methods](woocomerce/api-convert-and-payments-methods-efectivo-es-mx.png)
+![Convert and payments methods 2](woocomerce/api-convert-and-payments-methods-efectivo-es-mx-2.png)
 
 ------------
 ----[mpe, mco, mlu, mlc]----
@@ -54,6 +54,6 @@ Para salvar as alterações nas configurações, clique no botão **Concluir con
 - **Desconto nos checkouts Mercado Pago**: insira um valor percentual de desconto para os clientes que pagarem por esta forma de pagamento. Para ativá-lo, insira um percentual de desconto e marque a opção "Ativar e mostrar esta informação no checkout do Mercado Pago".
 - **Comissão nos checkouts Mercado Pago**: insira um valor percentual adicional que quiser cobrar como comissão aos clientes que optarem por esta forma de pagamento. Para ativá-lo, insira um percentual de desconto e marque a opção "Ativar e mostrar esta informação no checkout do Mercado Pago".
 
-![Advanced settings](/images/woocomerce/advanced-settings-boleto-pt-br.gif)
+![Advanced settings](woocomerce/advanced-settings-boleto-pt-br.gif)
 
 Para salvar as alterações nas configurações, clique no botão **Concluir configuração**.

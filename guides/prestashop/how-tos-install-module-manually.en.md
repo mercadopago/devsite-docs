@@ -9,4 +9,4 @@ To install the module manually, follow the steps below:
 5. Then, on the Admin Panel of your Prestashop store, access the **Modules and Services** menu and find the Mercado Pago module.
 6. Finally, **activate the module** to proceed with your account integration and configuration steps.
 
-![Activate plugin manually](/images/prestashop/instalacao_manual_en.gif)
+![Activate plugin manually](prestashop/instalacao_manual_en.gif)

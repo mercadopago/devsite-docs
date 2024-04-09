@@ -7,4 +7,4 @@ It is important to know that the placeholder disappears when the cursor is place
 
 Both the labels and the placeholders must be short, direct and clear to prevent users from making mistakes.
 
-![en labels y placeholders dos&don't](/images/best-practices-guide/EngAspectosGeneralesLabelsPlaceholdersDoDont.png)
+![en labels y placeholders dos&don't](best-practices-guide/EngAspectosGeneralesLabelsPlaceholdersDoDont.png)

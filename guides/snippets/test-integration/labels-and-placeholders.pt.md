@@ -8,4 +8,4 @@ Os **placeholders** são os textos que aparecem dentro de cada input que exempli
 
 Tanto as labels quanto os placeholders devem ser curtos, diretos e claros para evitar que o usuário cometa erros.
 
-![pt labels y placeholders dos&don't](/images/best-practices-guide/PortAspectosGeneralesLabelsPlaceholdersDoDont.png)
+![pt labels y placeholders dos&don't](best-practices-guide/PortAspectosGeneralesLabelsPlaceholdersDoDont.png)

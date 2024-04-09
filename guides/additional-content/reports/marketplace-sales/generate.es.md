@@ -24,7 +24,7 @@ Ambos tipos de credenciales constan de dos pares de claves que debes utilizar se
 
 Para poder generar el reporte de ventas, deberás utilizar tu **Access Token** productivo.
 
-![Generar Access Token](/images/manage-account/reports/marketplace-sales/image1.png)
+![Generar Access Token](manage-account/reports/marketplace-sales/image1.png)
 
 ## Crear configuración
 

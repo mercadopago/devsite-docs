@@ -13,5 +13,5 @@ Para **adicionar o Mercado Pago em sua loja**, siga os passos abaixo:
 1. Defina um nome para o meio de pagamento Mercado Pago V2 e selecione o status "Ativo".
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_adicione_meio_pagamento-1.gif)
+![LINX Configuracao](linx/linx_adicione_meio_pagamento-1.gif)
 <p>&nbsp;</p>

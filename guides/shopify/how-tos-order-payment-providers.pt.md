@@ -30,6 +30,6 @@ Pronto! A nova ordem de exibição dos provadores de pagamentos está configurad
 
 <center>
 
-![mercado-pago-ordena](/images/shopify/mercado-pago-ordena-pt.gif)
+![mercado-pago-ordena](shopify/mercado-pago-ordena-pt.gif)
 
 </center>

@@ -29,7 +29,7 @@ You can set the maximum or minimum amount of installments and apply surcharges o
 5. Click on “Close” and then on “Save changes”.
 <p>&nbsp;</p>
 
-![Payments Connect - iSET](/images/iset/iset_configuration_installments_6.gif)
+![Payments Connect - iSET](iset/iset_configuration_installments_6.gif)
 <p>&nbsp;</p>
 
 <!-- -->

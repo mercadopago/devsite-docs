@@ -218,7 +218,7 @@ Response:
 
 It is important to make sure that the customer understands how to use the Open Finance Payment Transaction Initiation option at Checkout. T**hey need to know that the payment will be made through Mercado Pago** using the Open Finance Payment Transaction Initiation option.
 
-![Payment method selection page](/images/api/open-finance(advanced)/usability-rule1.png)
+![Payment method selection page](api/open-finance(advanced)/usability-rule1.png)
 
 Check below some usability tips to improve the flow of payments via Open Finance.
 
@@ -318,7 +318,7 @@ For more information, go to the payment creation section of this documentation, 
 The seller will be able to choose how to display the favorite institutions, **but he won't be able to stop the customer from choosing any of the available institutions**.
 
 
-![Available Financial Institutions list sample](/images/api/open-finance(advanced)/display-tips.png)
+![Available Financial Institutions list sample](api/open-finance(advanced)/display-tips.png)
 
 > WARNING
 > 
@@ -339,7 +339,7 @@ The review and confirmation page must include, at a minimum, the following infor
 
 * The redirect warning should be modified to provide the customer more visibility into the next steps. 
 
-![Review and confirm page](/images/api/open-finance(advanced)/review-confirm.png)
+![Review and confirm page](api/open-finance(advanced)/review-confirm.png)
 
 > WARNING
 > 
@@ -535,7 +535,7 @@ Redirection must occur to the secure digital channel of the Financial Institutio
   
 * Browser-to-App
 
-![Redirection page sample](/images/api/open-finance(advanced)/authorization.gif)
+![Redirection page sample](api/open-finance(advanced)/authorization.gif)
 
 It is essential to point out that the redirection is part of Open Finance; therefore the customer is being redirected safely from the Initiating Institution of the Payment Transaction - Mercado Pago to the Account Holder Institution, using the same graphic elements for both institutions.
 
@@ -555,7 +555,7 @@ At this moment, if you want to obtain the current status of the payment, you nee
 
 If you need to open a mobile application, we recommend creating an [Android App Link](https://developer.android.com/training/app-links) or Universal Link](https://developer.android.com/training/app-links). It is worth remembering that on Androids with versions before 12, the user has the possibility to choose where to open the App Link as shown in the image below:
 
-![Android open with sample](/images/api/open-finance(advanced)/callback.png)
+![Android open with sample](api/open-finance(advanced)/callback.png)
 
 Even if the flow is going to end in a mobile app, **we recommend that you also create a handover screen** to be used when the user wants to open the link in their browser.
 

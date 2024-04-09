@@ -272,7 +272,7 @@ to check your SPAM folder.
 
 You can see how these notifications will look like below.
 
-![Email notification](/images/point-api/email-notification-en.png)
+![Email notification](point-api/email-notification-en.png)
 
 ## Enable notifications
 

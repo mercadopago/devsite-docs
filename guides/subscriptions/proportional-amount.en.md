@@ -10,7 +10,7 @@ Pro rata is the amount billed to the subscriber if the subscription starts on a 
 
 Below we show a flow of how the proportional collection of payments works.
 
-![Basic-subscriptions](/images/subscriptions/linea-cobro-EN.png)
+![Basic-subscriptions](subscriptions/linea-cobro-EN.png)
 
 To define a pro rata for subscriptions payments, send a POST to the [/preapproval_plan](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval_plan/post) endpoint with the parameters `billing_day` and `billing_day_proportional` and execute the request. The first parameter accepts values from 1 (one) to 28 (twenty-eight) and must contain the day of the month in which the charge will be made. The second in turn must be sent with the value `true`. 
 

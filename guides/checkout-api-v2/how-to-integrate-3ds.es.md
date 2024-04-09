@@ -653,7 +653,7 @@ curl -X POST \
 
 En ambos flujos (éxito y falla), el _Challenge_, que es una pantalla similar a la presentada a continuación, se mostrará dentro del *iframe*:
 
-![Challenge](/images/api/sandbox-v1-es.png)
+![Challenge](api/sandbox-v1-es.png)
 
 El código de verificación proporcionado es meramente ilustrativo. Para completar el flujo de prueba, simplemente haz clic en el botón **Confirmar**. 
 Una vez que hayas completado esta acción, sigue las instrucciones detalladas en la sección [Consultar status de la transacción](/developers/es/docs/checkout-api/how-tos/integrate-3ds#bookmark_consultar_status_de_la_transacción) para determinar cuándo se ha finalizado el _Challenge_ y cómo verificar la actualización del pago.

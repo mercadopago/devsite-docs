@@ -13,7 +13,7 @@ En la integración vía Métodos Core, el integrador decide cuándo buscar infor
 
 Consulta el diagrama que ilustra el proceso de pago con tarjeta a través de los Métodos Core.
 
-![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-es.png)
+![API-integration-flowchart](api/api-integration-flowchart-coremethods-es.png)
 
 ## Importar MercadoPago.js
 

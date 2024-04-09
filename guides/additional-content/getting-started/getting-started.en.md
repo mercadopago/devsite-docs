@@ -25,7 +25,7 @@ With credentials in hand, you can integrate solutions connecting them to e-comme
 >
 > If you are not a developer, we recommend that you integrate Mercado Pago's payment solutions connecting them to one or more than the 80 e-commerce platforms available.
 
-![Getting started](/images/getting-started/getting-started-diagram2-en.png)
+![Getting started](getting-started/getting-started-diagram2-en.png)
 
 ## Connecting to platforms
 

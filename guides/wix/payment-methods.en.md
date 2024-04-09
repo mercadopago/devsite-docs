@@ -49,4 +49,4 @@ To activate this type of payment, do the following.
 
 ------------
 
-![Activating Checkout API](/images/wix/activacion-choapi.gif)
+![Activating Checkout API](wix/activacion-choapi.gif)

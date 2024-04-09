@@ -25,7 +25,7 @@ In this step, it is necessary to configure the Redirect URL so that sellers can 
 
 After creating the application, it is necessary to go to the editing screen to fill in the Redirect URL field (in OAuth requests, it is displayed as redirect_uri), which must contain the URL of the marketplace site where the seller's token will be sent upon completing the linking process.
 
-![Redirect URL](/images/split-payment/redirect-url-es.png)
+![Redirect URL](split-payment/redirect-url-es.png)
 
 ## Request permission from users
 

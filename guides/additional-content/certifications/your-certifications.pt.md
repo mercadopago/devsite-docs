@@ -6,7 +6,7 @@ Os **certificados** podem ser baixados nos arquivos locais do seu computador, al
  
 As **insígnias** atuam como um distintivo para identificar os desenvolvedores que já concluíram o nosso processo de certificação oficial e, assim como os certificados, possuem cores diferentes para cada tipo de certificação. Também poderão ser baixadas nos arquivos locais do seu computador e adicionadas em um perfil profissional através do HTML, por exemplo.
 
-![pt certification](/images/dashboard/dashboard-certification_pt.png)
+![pt certification](dashboard/dashboard-certification_pt.png)
  
 Verifique a página do [&lt;dev&gt;program](/developers/pt/developer-program) para mais informações.
 

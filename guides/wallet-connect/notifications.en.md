@@ -141,7 +141,7 @@ In the table below you can check more details about the possible values ​​th
 
 The configuration Webhooks configuration is done through the Dashboard. Below we will explain how to indicate the URLs that will be notified and how to configure the events for which notification will be received.
 
-![webhooks](/images/notifications/webhook_es.png)
+![webhooks](notifications/webhook_es.png)
 
 1. If you still don't have an application created, access your [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) and click **Enter** to login if you haven't already be logged in.
 2. With the application created, go to the Webhooks Notifications tab in your Dashboard and configure the [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/webhooks) of **production**  and **test** from which notifications will be received. 

@@ -6,6 +6,6 @@ Checkout Pro is a solution that allows your customers to make purchases through 
 2. To activate the payment method, position yourself on the **Mercado Pago** option. Then, in the column "Enabled" and select the option **Yes** to enable it.
 
 ----[mlb]----
-![chopro-br](/images/salesforce/chopro-br.png)
+![chopro-br](salesforce/chopro-br.png)
 
 ------------

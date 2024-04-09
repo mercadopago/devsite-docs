@@ -59,7 +59,7 @@ Para configurar Até 12 meses sem cartão no Mercado Pago no checkout da loja, a
 
 ------------
 
-![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-pt.gif)
+![Configurar condições de pagamento](vtex/paymentconditions-imagenv2-pt.gif)
 
 > NOTE
 >

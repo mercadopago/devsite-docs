@@ -26,7 +26,7 @@ Las características principales son:
 
 Te explicamos cómo funciona el modelo desatendido: 
 
-![Flujo de pago en punto de venta QR Mercado Pago](/images/mobile/qr-gas-station-flow.es.png)
+![Flujo de pago en punto de venta QR Mercado Pago](mobile/qr-gas-station-flow.es.png)
 
 1. El cliente escanea el código QR desde su aplicación.
 2. En función de la URL asociada a la caja, Mercado Pago busca la orden en el servidor del vendedor.

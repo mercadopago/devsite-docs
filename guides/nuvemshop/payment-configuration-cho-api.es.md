@@ -34,14 +34,14 @@ Para integrar Checkout API, siga los pasos a continuación.
 ----[mlm, mpe, mco, mlu, mlc]---- 
 </center>
 
-![Payments Checkout API - Tiendanube](/images/nuvemshop/cho-api-mlm-es.gif)
+![Payments Checkout API - Tiendanube](nuvemshop/cho-api-mlm-es.gif)
 
 </center>
 ------------
 ----[mla]---- 
 </center>
 
-![Payments Checkout API - Tiendanube](/images/nuvemshop/cho-api-mla-es.png.png)
+![Payments Checkout API - Tiendanube](nuvemshop/cho-api-mla-es.png.png)
 
 </center>
 ------------

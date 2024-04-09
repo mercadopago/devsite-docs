@@ -10,7 +10,7 @@ Para ingresar, solo tienes que entrar en la sección **Más opciones** y luego, 
 
 <center>
 
-![miniapps-access](/mini-apps/miniapps-access-es.gif)
+![miniapps-access](mini-apps/miniapps-access-es.gif)
 
 </center>
 
@@ -29,7 +29,7 @@ Muchas veces, este es el primer contacto, por eso, hay bastante espacio para una
 
 <center>
 
-![miniapps-detail](/mini-apps/miniapps-detail-es.gif)
+![miniapps-detail](mini-apps/miniapps-detail-es.gif)
 
 </center>
 
@@ -39,7 +39,7 @@ Con un toque en el botón **Instalar**, el download se inicia. Esa acción puede
 
 <center>
 
-![miniapps-installation](/mini-apps/miniapps-installation-es.gif)
+![miniapps-installation](mini-apps/miniapps-installation-es.gif)
 
 </center>
 
@@ -49,6 +49,6 @@ Desinstalar es igual de fácil: basta **presionar el ícono por algunos segundos
 
 <center>
 
-![miniapps-uninstall](/mini-apps/miniapps-uninstall-pt.gif)
+![miniapps-uninstall](mini-apps/miniapps-uninstall-pt.gif)
 
 </center>

@@ -12,7 +12,7 @@ To install the plugin manually, follow the steps below:
 6. Click on **Install Now**.
 7. When the installation is finished, click **Activate plugin**.
 
-![Manual installing](/images/woocomerce/en_manual_install_02.gif)
+![Manual installing](woocomerce/en_manual_install_02.gif)
 
 By completing these steps, the Mercado Pago plugin for WooCommerce will be installed and activated in your store, and you will be able to configure its integration.
 

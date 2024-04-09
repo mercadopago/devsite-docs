@@ -32,7 +32,7 @@ Para **vincular sua conta do Mercado Pago à Nuvemshop,** siga os passos abaixo:
 4. Você **será redirecionado para uma página do Mercado Pago** para acessar com seus dados. Clique em "Permitir" para autorizar a conexão.
 <p>&nbsp;</p>
 
-![Payments Connect - Nuvem Shop](/images/nuvemshop/nuvemshop_connect_1.gif)
+![Payments Connect - Nuvem Shop](nuvemshop/nuvemshop_connect_1.gif)
 
 <p>&nbsp;</p>
 Pronto! Sua conta Mercado Pago já está ativa!
@@ -80,7 +80,7 @@ Além disso, você pode [configurar parcelas sem acréscimos](#bookmark_configur
 5. Clique em "Salvar alterações".
 <p>&nbsp;</p>
 
-![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif)
+![Payments Checkout Transparente - Nuvem Shop](nuvemshop/nuvemshop_checkout_transparente_2.gif)
 
 
 ### Checkout Pro
@@ -93,7 +93,7 @@ Além disso, você pode [configurar parcelas sem acréscimos](#bookmark_configur
 4. Clique em "Salvar alterações".
 <p>&nbsp;</p>
 
-![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif)
+![Payments Checkout Pro - Nuvem Shop](nuvemshop/nuvemshop_checkout_redirect_3.gif)
 
 
 > NOTE
@@ -115,7 +115,7 @@ Caso queira **sincronizar suas alterações manualmente** ou aplicar um valor m�
 4. Clique em "Salvar alterações".
 <p>&nbsp;</p>
 
-![Payments Installment - Nuvem Shop](/images/nuvemshop/nuvemshop_installments_4.gif)
+![Payments Installment - Nuvem Shop](nuvemshop/nuvemshop_installments_4.gif)
 
 
 ## Configurando o parcelamento em sua conta Mercado Pago
@@ -125,7 +125,7 @@ Caso queira **sincronizar suas alterações manualmente** ou aplicar um valor m�
 3. Escolha "Quantas parcelas você quer oferecer?" e clique em "Ativar" para confirmar as alterações.
 <p>&nbsp;</p>
 
-![Payments Installments - Nuvem Shop](/images/nuvemshop/nuvemshop_account_installments_5.gif)
+![Payments Installments - Nuvem Shop](nuvemshop/nuvemshop_account_installments_5.gif)
 
 <p>&nbsp;</p>
 ----[mlb]----

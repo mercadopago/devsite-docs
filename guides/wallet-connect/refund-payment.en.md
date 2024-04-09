@@ -12,4 +12,4 @@ With Wallet Connect, it is also possible to refund an payment. This operation wi
 
 The diagram below illustrates the refund flow for an payment.
 
-![refund-a-payment](/images/wallet-connect/refund-a-payment.en.png)
+![refund-a-payment](wallet-connect/refund-a-payment.en.png)

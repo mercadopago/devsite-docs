@@ -65,7 +65,7 @@ Para configurar estos medios de pago, dirígete al panel de administración de t
 
 4. Haz clic en **Guardar** para activar la configuración.
 
-![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-es.gif)
+![Configurar condições de pagamento](vtex/paymentconditions-imagenv2-es.gif)
 
 > NOTE
 >

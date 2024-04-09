@@ -9,7 +9,7 @@ Define cuál es el medio que mejor se adapta a tu negocio:
 | E-mail | Utiliza tu correo personal para enviar el link de pago a quien quieras. |
 | Más opciones (_desde el navegador de tu celular_) | Si creaste tu link desde tu celular, podrás compartir el link a través de todas tus aplicaciones instaladas. |
 
-![Recibir pagos por redes sociales](/images/button/byl_compartir.png)
+![Recibir pagos por redes sociales](button/byl_compartir.png)
 
 > NOTE
 > 

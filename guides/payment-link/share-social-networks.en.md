@@ -10,10 +10,10 @@ Define the method that best suits your business:
 | More options (_from your cell phone browser_) | If you created your link on your phone, it can be shared through all of your installed apps. |
 
 ----[mla, mco, mlm, mlc, mlu, mpe]----
-![Recibir pagos por redes sociales](/images/button/byl_compartir.png)
+![Recibir pagos por redes sociales](button/byl_compartir.png)
 ------------
 ----[mlb]----
-![Receber pagamentos por redes sociais](/images/button/byl_compartilhar.png)
+![Receber pagamentos por redes sociais](button/byl_compartilhar.png)
 ------------
 
 > NOTE

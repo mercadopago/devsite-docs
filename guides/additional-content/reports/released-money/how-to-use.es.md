@@ -35,11 +35,11 @@ Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la
 
 Observa lo que compone el Reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ en el siguiente ejemplo para identificar las secciones y analizar tus propios reportes:
 ----[mla]----
-![Reporte de liquidaciones](/images/manage-account/reports/example-release-es.jpg)
+![Reporte de liquidaciones](manage-account/reports/example-release-es.jpg)
 
 ------------
 ----[mlm, mlb, mlc, mco, mlu, mpe]----
-![Reporte de liberaciones](/images/manage-account/reports/example-release-es.jpg)
+![Reporte de liberaciones](manage-account/reports/example-release-es.jpg)
 
 ------------
 La versión por defecto mostrará una vista extendida de las columnas. El reporte final tendrá la mayor cantidad de detalles posible.
@@ -48,4 +48,4 @@ La versión por defecto mostrará una vista extendida de las columnas. El report
 
 Mira el siguiente ejemplo para entender la organización del reporte:
 
-![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/example-nledger-es.jpg) 
+![Reporte de Dinero retirado Ejemplos Mercado Pago](manage-account/reports/example-nledger-es.jpg) 

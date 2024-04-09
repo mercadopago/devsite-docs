@@ -20,7 +20,7 @@ Después de agregar el medio de pago, **configura los datos para tu integración
 1. Por último, haz clic en “Guardar”.
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_configurando_integracao-2.gif)
+![LINX Configuracao](linx/linx_configurando_integracao-2.gif)
 <p>&nbsp;</p>
 
 ## Configura los datos para tarjetas de crédito 
@@ -46,7 +46,7 @@ Para **configurar los datos de tarjetas de créditos en tu tienda**, sigue estos
 1. Haz clic en “Guardar”.
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_configurando_cartao-3.gif)
+![LINX Configuracao](linx/linx_configurando_cartao-3.gif)
 <p>&nbsp;</p>
 
 > WARNING
@@ -68,5 +68,5 @@ Para **configurar los datos para Boleto Bancário en su tienda**, sigue estos pa
 1. Por último, haz clic en “Guardar”.
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_configurando_boleto-4.gif)
+![LINX Configuracao](linx/linx_configurando_boleto-4.gif)
 <p>&nbsp;</p>

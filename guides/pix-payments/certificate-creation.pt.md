@@ -55,4 +55,4 @@ Também é possível cadastrar o certiﬁcado no Postman. Para isso, siga as eta
 4. Adicione o certiﬁcado **mTLS** em **CRT ﬁle** e a chave gerada pelo script em **KEY ﬁle**
 5. Clique em **Add** conforme indicado na imagem abaixo.
 
-![Postman Panel](/images/pix/postman.png)
+![Postman Panel](pix/postman.png)

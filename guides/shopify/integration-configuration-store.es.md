@@ -7,15 +7,15 @@ Te recomendamos personalizar la información del checkout de la tienda para pode
 1. Ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
 2. Dentro del panel administrativo de la tienda, haz clic en **Configuración**.
 
-![Panel](/images/shopify/store-panel-es.png)
+![Panel](shopify/store-panel-es.png)
 
 3. Una vez allí, selecciona la opción **Pantalla de pago**.
 
-![Checkout](/images/shopify/checkout-es.png)
+![Checkout](shopify/checkout-es.png)
 
 4. En la sección **Información del cliente**, selecciona el campo “Nombre de la empresa” como obligatorio.
 
-![Company name](/images/shopify/company-name-es.png)
+![Company name](shopify/company-name-es.png)
 
 5. Haz clic en **Guardar**.
 
@@ -23,19 +23,19 @@ Te recomendamos personalizar la información del checkout de la tienda para pode
 
 1. Dentro del panel administrativo de la tienda, haz clic en **Configuración**. 
 
-![Panel](/images/shopify/store-panel-es.png)
+![Panel](shopify/store-panel-es.png)
 
 2. Allí, haz clic en **Idiomas**.
 
-![Language](/images/shopify/language-es.png)
+![Language](shopify/language-es.png)
 
 3. En la sección "Idiomas de la tienda" podrás elegir el idioma en el que quieres que la tienda opere. Haz clic en **Cambiar el valor predeterminado**. 
 
-![Change language](/images/shopify/change-language-es.png)
+![Change language](shopify/change-language-es.png)
 
 4. En la siguiente pantalla, elige el idioma predeterminado.
 
-![Panel](/images/shopify/change-language-2-es.png)
+![Panel](shopify/change-language-2-es.png)
 
 5. Haz clic en **Guardar**.
 
@@ -45,19 +45,19 @@ La tienda de Shopify mostrará los campos de solicitud de identificación person
 
 1. Dentro del panel administrativo de la tienda, haz clic en **Configuración**. 
 
-![Panel](/images/shopify/store-panel-es.png)
+![Panel](shopify/store-panel-es.png)
 
 2. Allí, haz clic en **Pantalla de pago**.
 
-![Checkout](/images/shopify/checkout-es.png)
+![Checkout](shopify/checkout-es.png)
 
 3. Desplázate hacia abajo hasta la sección "Idioma de la pantalla de pago", haz clic en **Gestionar idioma de pantalla de pago**. 
 
-![Checkout language](/images/shopify/checkout-language-es.png)
+![Checkout language](shopify/checkout-language-es.png)
 
 4. En la siguiente pantalla, utiliza la barra de búsqueda del sitio para buscar la palabra "Company". La búsqueda devolverá varios campos que podrás modificar.
 
-![Values id](/images/shopify/values-id-es.gif)
+![Values id](shopify/values-id-es.gif)
 
 5. Reemplaza las siguientes entradas con la indicación del tipo de identificación personal que solicitará tu tienda según el país en donde opere----[mlb]----(por ejemplo, CPF para Brasil)------------:
  * **Company label**

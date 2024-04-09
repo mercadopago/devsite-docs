@@ -31,7 +31,7 @@ Here's how to activate each payment method in your Salesforce Commerce Cloud sto
 By default, the Mercado Pago cartridge will show the means of payment in a certain order.
 
 ----[mlb]----
-![payment_methods_v2](/images/salesforce/payment_methods_v2.png)
+![payment_methods_v2](salesforce/payment_methods_v2.png)
 
 ------------
 

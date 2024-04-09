@@ -181,7 +181,7 @@ Para esto, puedes redirigir al usuario a la URL directamente o presentar un bot√
 
 La imagen siguiente muestra un ejemplo de este proceso en la vista del usuario:
 
-![Payment flow sample](/images/api/api-integrate-openfinance.gif)
+![Payment flow sample](api/api-integrate-openfinance.gif)
 
 ## Prueba la integraci√≥n
 

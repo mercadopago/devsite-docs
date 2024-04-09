@@ -19,7 +19,7 @@ A continuación, te explicamos cómo probar la integración:
 
 <center>
 
-![Crear cuenta](/images/woocomerce/test-create-account-es.gif)
+![Crear cuenta](woocomerce/test-create-account-es.gif)
 
 </center>
 
@@ -28,29 +28,29 @@ A continuación, te explicamos cómo probar la integración:
 
 <center>
 
-![Inicio de sesión](/images/woocomerce/test-login-esp.gif)
+![Inicio de sesión](woocomerce/test-login-esp.gif)
 
 </center>
 
 6. Accede a la aplicación creada en el paso anterior y haz clic en **Credenciales de producción** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
 
-![Credenciales de producción](/images/woocomerce/test-prod-credentials-es.png)
+![Credenciales de producción](woocomerce/test-prod-credentials-es.png)
 
 7. Ve a la configuración del panel de WooCommerce (**WooCommerce > Mercado Pago > Integrar la tienda con Mercado Pago**).
 8. Ingresa las credenciales de producción `access_token` y `public_key` de la cuenta de prueba del vendedor en el campo **Credenciales de producción**.
 9. En la aplicación creada en el paso 5, haz clic en **Credenciales de prueba** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
 
-![Credenciales de prueba](/images/woocomerce/test-test-credentials-es.png)
+![Credenciales de prueba](woocomerce/test-test-credentials-es.png)
 
 10. También ingresa las credenciales de prueba `access_token` y `public_key` de la cuenta de prueba del vendedor en el campo **Credenciales de prueba**.
 
-![Panel](/images/woocomerce/test-woo-es.png)
+![Panel](woocomerce/test-woo-es.png)
 
 11. Haz clic en **Guardar y continuar**.
 
 12. En el panel de WooCommerce, ve al paso "4. Prueba tu tienda antes de vender" y selecciona la opción **Modo de ventas (producción)**.
 
-![Modo](/images/woocomerce/test-woo-modeprod-es.png)
+![Modo](woocomerce/test-woo-modeprod-es.png)
 
 13. Haz clic en **Guardar cambios**.
 
@@ -92,22 +92,22 @@ Además, los pedidos se registrarán en el historial de la cuenta de prueba del 
 1. Accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** en el administrador de Mercado Pago y selecciona la aplicación que deseas probar.
 2. Haz clic en **Credenciales de producción** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
 
-![Credenciales de producción](/images/woocomerce/test-prod-credentials-api-es.png)
+![Credenciales de producción](woocomerce/test-prod-credentials-api-es.png)
 
 3. Ve a la configuración del panel de WooCommerce (**WooCommerce > Mercado Pago > Integrar la tienda con Mercado Pago**).
 4. Ingresa las credenciales de producción `access_token` y `public_key` en el campo **Credenciales de producción**.
 5. En tu aplicación, haz clic en **Credenciales de prueba** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
 
-![Credenciales de prueba](/images/woocomerce/test-test-credentials-api-es.png)
+![Credenciales de prueba](woocomerce/test-test-credentials-api-es.png)
 
 6. También ingresa las credenciales de prueba `access_token` y `public_key` en el campo **Credenciales de prueba**.
 
-![Panel](/images/woocomerce/test-woo-es.png)
+![Panel](woocomerce/test-woo-es.png)
 
 7. Haz clic en **Guardar y continuar**.
 8. En el panel de WooCommerce, ve al paso "4. Prueba tu tienda antes de vender" y selecciona la opción **Modo de prueba**.
 
-![Modo](/images/woocomerce/test-woo-testmode-es.png)
+![Modo](woocomerce/test-woo-testmode-es.png)
 
 9. Haz clic en **Guardar cambios**.
 10. Accede a tu tienda y realiza una compra proporcionando información de prueba, como un número de teléfono y una dirección de correo electrónico diferentes a los asociados con tu cuenta en Mercado Pago. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/woocommerce/additional-content/your-integrations/test/cards) correspondiente.

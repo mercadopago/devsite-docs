@@ -8,17 +8,17 @@ Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing), é poss�
 2. Clique em **3. Ative e configure os meios de pagamento**.
 3. Na opção "Seus cartões salvos ou dinheiro no Mercado Pago", clique em **Configurar**.
 ----[mlb]----
-![Payments methods](/images/woocomerce/active-and-configure-pt-br.png)
+![Payments methods](woocomerce/active-and-configure-pt-br.png)
 
 ------------
 ----[mlm, mla]----
-![Activar y configurar](/images/woocomerce/cho-pro-active-configure-es.png)
+![Activar y configurar](woocomerce/cho-pro-active-configure-es.png)
 
 ------------
 4. A opção "Ativar checkout" permite habilitar ou desabilitar o Checkout Pro em sua loja. Para ativar, clique no botão deslizante.
 5. No campo **Título no checkout da loja**, insira o nome pelo qual esta forma de pagamento será identificada na loja. Por exemplo, você pode chamá-la de "Mercado Pago".
 
-![Activate and configure](/images/woocomerce/cho-pro-activate-title-pt.png)
+![Activate and configure](woocomerce/cho-pro-activate-title-pt.png)
 
 6. A opção **Converter moeda** permite que o valor da moeda configurada no WooCommerce seja compatível com o valor da moeda que você utiliza no Mercado Pago. Para ativá-la, clique no botão deslizante.
 7. Na seção **Escolha os meios de pagamento aceitos na loja**, escolha quais tipos e meios de pagamento serão aceitos na loja através do Checkout Pro, podendo ser:
@@ -28,7 +28,7 @@ Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing), é poss�
     - **Transferência bancária (Pix e PEC)**: A opção de pagamento Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago.
     - **Parcelamento sem cartão**: Ao configurar o Checkout Pro, você pode oferecer a opção de pagar em até 12 parcelas sem cartão. Caso queira exibir esta opção no checkout da sua loja, acesse a [documentação](/developers/pt/docs/woocommerce/payments-configuration/mercado-credito). 
 
-![Activate and configure](/images/woocomerce/cho-pro-convert-payments-methods-pt.png)
+![Activate and configure](woocomerce/cho-pro-convert-payments-methods-pt.png)
 
 ------------
 ----[mla]----
@@ -37,7 +37,7 @@ Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing), é poss�
     - **Transferência bancária**.
     - **Parcelamento sem cartão**: Ao configurar o Checkout Pro, você pode oferecer a opção de pagar em até 12 parcelas sem cartão. Se também quiser mostrar esta opção no checkout da sua loja, acesse a [documentação](/developers/pt/docs/woocommerce/payments-configuration/mercado-credito). 
 
-![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es-ar.png)
+![Activate and configure](woocomerce/cho-pro-payments-methods-es-ar.png)
 
 ------------
 ----[mlm]----
@@ -46,7 +46,7 @@ Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing), é poss�
     - **Transferência bancária**.
     - **Parcelamento sem cartão**: Ao configurar o Checkout Pro, você pode oferecer a opção de pagar em até 12 parcelas sem cartão. Se também quiser mostrar esta opção no checkout da sua loja, acesse a [documentação](/developers/pt/docs/woocommerce/payments-configuration/mercado-credito). 
 
-![Activate and configure](/images/woocomerce/cho-pro-payments-methods-es-mx.png)
+![Activate and configure](woocomerce/cho-pro-payments-methods-es-mx.png)
 
 ------------
 ----[mpe, mco, mlu, mlc]----
@@ -59,7 +59,7 @@ Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing), é poss�
 ------------
 8. No campo **Parcelas máximas**, selecione o número máximo de parcelas que deseja disponibilizar aos seus clientes por meio do Mercado Pago. Você pode optar por oferecer entre 1 e 24 parcelas.
 
-![Installments](/images/woocomerce/cho-pro-installment-pt.png)
+![Installments](woocomerce/cho-pro-installment-pt.png)
 
 Para salvar as alterações nas configurações de Checkout Pro, clique no botão **Concluir configuração**.
 
@@ -76,7 +76,7 @@ Para salvar as alterações nas configurações de Checkout Pro, clique no botã
 - **Desconto em checkouts do Mercado Pago**: insira um valor percentual de desconto para os clientes que pagarem por esta forma de pagamento. Para ativá-lo, insira um percentual de desconto e marque a opção "Ativar e mostrar esta informação no checkout do Mercado Pago".
 - **Comissão nos checkouts do Mercado Pago**: insira um valor percentual adicional que quiser cobrar como comissão aos clientes que optarem por esta forma de pagamento. Para ativá-lo, insira um percentual de desconto e marque a opção "Ativar e mostrar esta informação no checkout do Mercado Pago".
 
-![Advanced settings](/images/woocomerce/cho-pro-advanced-settings-pt.gif)
+![Advanced settings](woocomerce/cho-pro-advanced-settings-pt.gif)
 
 Para salvar as alterações nas configurações, clique no botão **Concluir configuração**.
 
@@ -87,7 +87,7 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 * **Pague rápido**: utilizar os cartões salvos, Pix ou saldo disponível na conta Mercado Pago.
 * **Proteja sua compra**: receber o dinheiro de volta caso o produto não seja entregue.
 
-![woo-chopro-pt-mlb](/images/woocomerce/mlb-preview.png)
+![woo-chopro-pt-mlb](woocomerce/mlb-preview.png)
 
 ------------
 
@@ -96,7 +96,7 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 * **Pague rápido**: utilizar os cartões salvos, Pix ou saldo disponível na conta Mercado Pago.
 * **Proteja sua compra**: receber o dinheiro de volta caso o produto não seja entregue.
 
-![woo-chopro-pt-mla](/images/woocomerce/mla-preview.png)
+![woo-chopro-pt-mla](woocomerce/mla-preview.png)
 
 ------------
 
@@ -105,7 +105,7 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 * **Pague rápido**: utilizar os cartões salvos, Pix ou saldo disponível na conta Mercado Pago.
 * **Proteja sua compra**: receber o dinheiro de volta caso o produto não seja entregue.
 
-![woo-chopro-pt-mlm](/images/woocomerce/mlm-preview.png)
+![woo-chopro-pt-mlm](woocomerce/mlm-preview.png)
 
 ------------
 
@@ -114,6 +114,6 @@ No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresenta
 * **Pague rápido**: utilizar os cartões salvos, Pix ou saldo disponível na conta Mercado Pago.
 * **Proteja sua compra**: receber o dinheiro de volta caso o produto não seja entregue.
 
-![woo-chopro-pt-all](/images/woocomerce/all-preview.png)
+![woo-chopro-pt-all](woocomerce/all-preview.png)
 
 ------------

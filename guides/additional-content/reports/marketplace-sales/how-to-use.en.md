@@ -18,4 +18,4 @@ For more details on *status* and *status_detail*, refer to the "Response paramet
 
 Take a look at how the sales report is structured in this example to identify the operations and read your own reports:
 
-![Example for identifying operations and reading your own reports](/images/manage-account/reports/marketplace-sales/image2.png)
+![Example for identifying operations and reading your own reports](manage-account/reports/marketplace-sales/image2.png)

@@ -16,4 +16,4 @@ When this link is called, it will be intercepted as a Point-handled address by t
 
 You can see the flowchart below to understand how this type of integration works.
 
-![Flowchart of Mercado Pago Point Deep Linking](/images/point_diagram.png)
+![Flowchart of Mercado Pago Point Deep Linking](point_diagram.png)

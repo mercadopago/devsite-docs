@@ -15,4 +15,4 @@ This validation is done through the API and uses the customer's credit card toke
 
 Below, we share the flow that illustrates how the Zero Dollar Auth validation works.
 
-![Flowchart for Zero Dollar Auth validation](/zero-dollar-auth/Fluxo_ZDA_EN_Final.png)
+![Flowchart for Zero Dollar Auth validation](zero-dollar-auth/Fluxo_ZDA_EN_Final.png)

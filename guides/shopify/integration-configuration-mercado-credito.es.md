@@ -27,7 +27,7 @@ Para **configurar Mercado Crédito en el checkout de tu tienda**, sigue los paso
 
 <center>
 
-![shopify-mercado-credito](/images/shopify/mercado-credito-es.gif)
+![shopify-mercado-credito](shopify/mercado-credito-es.gif)
 
 </center>
 

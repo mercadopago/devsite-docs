@@ -12,7 +12,7 @@ In this documentation, we will explain the necessary settings to receive message
 
 Below, we will explain how to: specify the URLs that will be notified, configure the events from which notifications will be received, validate that the notifications you receive are sent by Mercado Pago and simulate the receipt of various types of notifications.
 
-![webhooks](/images/dashboard/webhooks-es.png)
+![webhooks](dashboard/webhooks-es.png)
 
 ### Configure URLs and Events 
 

@@ -66,11 +66,11 @@ checkout.render({
 
 ### Default payment button:
 
-![Default Label Button](/images/web-payment-checkout/default_label_button.png)<br/>
+![Default Label Button](web-payment-checkout/default_label_button.png)<br/>
 
 ### Customized:
 
-![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
+![Custom Label Button](web-payment-checkout/custom_label_button.png)<br/><br/>
 
 
 #### Style
@@ -94,7 +94,7 @@ button.mercadopago-button {
 }
 ```
 
-![Payment button Mercado Pago modified CSS](/images/paybutton-modified-css.png)
+![Payment button Mercado Pago modified CSS](paybutton-modified-css.png)
 
 ### Opening the Web Tokenize Checkout automatically
 
@@ -137,13 +137,13 @@ Add the `theme` attribute to your initialization options as shown below to custo
 
 ----[mla, mlc, mco, mpe, mlm]----
 
-![Standard status header Mercado Pago](/images/cow/cow-ui-header.png)
+![Standard status header Mercado Pago](cow/cow-ui-header.png)
 
 ------------
 
 ----[mlb]----
 
-![Standard status header Mercado Pago](/images/cow/cow-ui-header__pt.png)
+![Standard status header Mercado Pago](cow/cow-ui-header__pt.png)
 
 ------------
 
@@ -161,11 +161,11 @@ theme: {
 
 ----[mla, mlc, mco, mpe, mlm]----
 
-![Header customization Mercado Pago](/images/cow/cow-ui-header--custom.png)
+![Header customization Mercado Pago](cow/cow-ui-header--custom.png)
 
 ------------
 
-![Header customization Mercado Pago](/images/cow/cow-ui-header--custom__pt.png)
+![Header customization Mercado Pago](cow/cow-ui-header--custom__pt.png)
 
 ----[mlb]----
 ------------
@@ -176,13 +176,13 @@ theme: {
 
 ----[mla, mlc, mco, mpe, mlm]----
 
-![Standard status elements](/images/cow/cow-ui-elements.png)
+![Standard status elements](cow/cow-ui-elements.png)
 
 ------------
 
 ----[mlb]----
 
-![Standard status elements](/images/cow/cow-ui-elements__pt.png)
+![Standard status elements](cow/cow-ui-elements__pt.png)
 
 ------------
 
@@ -206,13 +206,13 @@ theme: {
 
 ----[mla, mlc, mco, mpe, mlm]----
 
-![Customization elements](/images/cow/cow-ui-elements--custom.png)
+![Customization elements](cow/cow-ui-elements--custom.png)
 
 ------------
 
 ----[mlb]----
 
-![Customization elements](/images/cow/cow-ui-elements--custom__pt.png)
+![Customization elements](cow/cow-ui-elements--custom__pt.png)
 
 ------------
 
@@ -228,7 +228,7 @@ theme: {
 }
 ```
 
-![Font color in light element Mercado Pago](/images/cow/cow-ui-fontcolor__light.png)
+![Font color in light element Mercado Pago](cow/cow-ui-fontcolor__light.png)
 
 For a *dark* element color, the text color will be *white* or `# fff`. For example:
 
@@ -238,7 +238,7 @@ theme: {
 }
 ```
 
-![Font color in dark element Mercado Pago](/images/cow/cow-ui-fontcolor__dark.png)
+![Font color in dark element Mercado Pago](cow/cow-ui-fontcolor__dark.png)
 
 ## Purchase detail
 
@@ -246,13 +246,13 @@ theme: {
 
 ----[mla, mlc, mco, mpe, mlm]----
 
-![Purchase detail standard status](/images/cow/cow-summary.png)
+![Purchase detail standard status](cow/cow-summary.png)
 
 ------------
 
 ----[mlb]----
 
-![Purchase detail standard status](/images/cow/cow-summary__pt.png)
+![Purchase detail standard status](cow/cow-summary__pt.png)
 
 ------------
 

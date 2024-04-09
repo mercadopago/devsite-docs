@@ -14,7 +14,7 @@ Before you start developing your solution, take a look at the requirements that 
 
 To ensure that the integration is successful, consider the machine's characteristics and how the application will adapt to them.
 
-![prerequisites](/main-apps/prerequisites-all.png)
+![prerequisites](main-apps/prerequisites-all.png)
 
 | Especificación | Descripción |
 |---|---|

@@ -2,7 +2,7 @@
 
 Para recibir pagos con QR en tu negocio **puedes imprimirlo y pegarlo en un lugar visible o mostrarlo en tu dispositivo móvil** y cobrar desde la app de Mercado Pago.
 
-![Flujo QR](/images/mobile/qr_flujo.es.png)
+![Flujo QR](mobile/qr_flujo.es.png)
 
 > NOTE
 > 

@@ -29,29 +29,29 @@ Para instalar Checkout Pro (**Checkout Mercado Pago**) en una tienda Shopify, si
 
 2. En el panel de administración de la tienda, haz clic en **Configuración** en la esquina inferior izquierda de la página.
 
-![Panel](/images/shopify/store-panel-es.png)
+![Panel](shopify/store-panel-es.png)
 
 3. Una vez allí, selecciona la opción **Pagos** en el menú del lado izquierdo de la página.
 
 4. En "Formas de pago admitidas", haz clic en **Agregar formas de pago**.
 
-![Pagos](/images/shopify/payments-page-es.png)
+![Pagos](shopify/payments-page-es.png)
 
 5. Selecciona la pestaña **Buscar por proveedor** y busca la aplicación "Checkout Mercado Pago".
 
-![Agregar forma de pago](/images/shopify/add-payment-method-es.png)
+![Agregar forma de pago](shopify/add-payment-method-es.png)
 
 6. Una vez localizada, selecciónala y haz clic en **Instalar**.
 
-![Agregar forma de pago](/images/shopify/provider-es.png)
+![Agregar forma de pago](shopify/provider-es.png)
 
 7. Lee cuidadosamente la información sobre los permisos solicitados y haz clic en **Instalar** nuevamente.
 
-![Agregar forma de pago](/images/shopify/install-app-es.png)
+![Agregar forma de pago](shopify/install-app-es.png)
 
 8. Después de aceptar los permisos solicitados, haz clic en **Gestionar cuenta** para vincular tu cuenta de Mercado Pago con tu tienda utilizando tus credenciales.
 
-![Agregar forma de pago](/images/shopify/manage-account-es.png)
+![Agregar forma de pago](shopify/manage-account-es.png)
 
 > WARNING
 >
@@ -62,11 +62,11 @@ Para instalar Checkout Pro (**Checkout Mercado Pago**) en una tienda Shopify, si
 9. En el panel de administración de Mercado Pago, accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** y selecciona tu aplicación. Si aún no has creado una aplicación, consulta la [documentación del Panel del desarrollador](/developers/es/docs/woocommerce/additional-content/your-integrations/dashboard) para aprender cómo hacerlo.
 10. Haz clic en **Credenciales de producción** en el menú de la izquierda. Copia la `public_key` y el `access_token`.
 
-![Production credentials](/images/woocomerce/test-prod-credentials-api-es.png)
+![Production credentials](woocomerce/test-prod-credentials-api-es.png)
 
 11. Introduce tus credenciales de producción `access_token` y `public_key` en los campos correspondientes, asegurándote de **no invertir los campos al copiar y pegar las credenciales**.
 
-![Agregar forma de pago](/images/shopify/add-credentials-es.png)
+![Agregar forma de pago](shopify/add-credentials-es.png)
 
 > NOTE
 >

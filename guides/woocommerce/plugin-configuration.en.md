@@ -5,12 +5,12 @@ Once the Mercado Pago plugin for WooCommerce is installed, it needs to be config
 1. Access your [Wordpress](https://wordpress.com/) account.
 2. Go to your account dashboard and click on **Plugins > Installed Plugins**.
 
-![Add plugin](/images/woocomerce/installed-plugins-es.png)
+![Add plugin](woocomerce/installed-plugins-es.png)
 
 3. Search for **Mercado Pago** in the search bar on the right.
 4. The search result will display the Mercado Pago plugin. Click on **Configure plugin**.
 
-![Plugin MP](/images/woocomerce/mp-plugin-es.png)
+![Plugin MP](woocomerce/mp-plugin-es.png)
 
 > NOTE
 >
@@ -22,7 +22,7 @@ Next, we'll explain how to configure each item of the plugin.
 
 1. Click on **1. Enter your credentials to integrate your store with Mercado Pago**.
 
-![Plugin MP](/images/woocomerce/insert-credentials-es.png)
+![Plugin MP](woocomerce/insert-credentials-es.png)
 
 2. Now, you need to link your Mercado Pago account to your store using your credentials. In the Mercado Pago admin panel, access **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** and select your application. If you haven't created an application yet, refer to the [Developer Dashboard documentation](/developers/en/docs/woocommerce/additional-content/your-integrations/dashboard) to learn how to do it.
 
@@ -34,16 +34,16 @@ Next, we'll explain how to configure each item of the plugin.
 
 3. Click on **Production credentials** in the left menu. Copy the `access_token` and the `public_key`.
 
-![Production credentials](/images/woocomerce/test-prod-credentials-api.png)
+![Production credentials](woocomerce/test-prod-credentials-api.png)
 
 4. Enter your production credentials `access_token` and `public_key` in the **Production credentials** field, being **careful not to reverse the fields when copying and pasting the credentials**.
 5. In your application, click on **Test credentials** in the left menu. Copy the `access_token` and the `public_key`.
 
-![Test credentials](/images/woocomerce/test-test-credentials-api.png)
+![Test credentials](woocomerce/test-test-credentials-api.png)
 
 6. Also, enter the test credentials `access_token` and `public_key` in the **Test credentials** field, being **careful not to reverse the fields when copying and pasting the credentials**.
 
-![Panel](/images/woocomerce/test-woo.png)
+![Panel](woocomerce/test-woo.png)
 
 7. Click on **Save and continue**.
 
@@ -61,7 +61,7 @@ In the **2. Customize your store information** section, you have the possibility
 * **Identification in Mercado Pago Activities**: In Mercado Pago Activities, you will see the term entered in this field before the order number.
 * **Store category**: Enter the category of your store's products. If you can't find a suitable category, select "Other categories".
 
-![Panel](/images/woocomerce/customization-es.png) 
+![Panel](woocomerce/customization-es.png) 
 
 ### Advanced options
 
@@ -77,6 +77,6 @@ In **Advanced integration options**, click on **View advanced options** and conf
 >
 > To access your store's logs, return to the administrative panel of the plugin under **WooCommerce > Mercado Pago** and click on "Need help?". Within this component, follow step 4 to locate and download the error history. On the **error history** page, you will have access to all logs available for download.
 
-![Panel](/images/woocomerce/advanced-settings-es.png) 
+![Panel](woocomerce/advanced-settings-es.png) 
 
 Finally, click on **Save and continue**.

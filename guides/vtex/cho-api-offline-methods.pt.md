@@ -65,7 +65,7 @@ Para configurar esses meios de pagamento, acesse o painel de administração da 
 
 4. Clique em **Salvar** para ativar a configuração.
 
-![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-pt.gif)
+![Configurar condições de pagamento](vtex/paymentconditions-imagenv2-pt.gif)
 
 > NOTE
 >

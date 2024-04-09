@@ -26,7 +26,7 @@ To generate these credentials, access [Your Integrations](https://www.mercadopag
 
 <center>
 
-![Create test account](/images/woocomerce/test-create-account-es.gif)
+![Create test account](woocomerce/test-create-account-es.gif)
 
 </center>
 
@@ -75,7 +75,7 @@ Before accessing the Simulator, you need to finish setting up your test environm
 
 <center>
 
-![Test credentials in Dashboard](/images/woocomerce/test-test-credentials.png)
+![Test credentials in Dashboard](woocomerce/test-test-credentials.png)
 
 </center>
 
@@ -93,7 +93,7 @@ Once you have provided the information according to the chosen mode of the Simul
 
 <center>
 
-![screen of the Simulator](/images/point-api/point-device-simulator.png)
+![screen of the Simulator](point-api/point-device-simulator.png)
 
 </center>
 
@@ -129,7 +129,7 @@ If the Simulator obtained the payment intent successfully, proceed to make the p
 
 <center>
 
-![Simulator with card](/images/point-api/point-simulator-process.png)
+![Simulator with card](point-api/point-simulator-process.png)
 
 </center>
 

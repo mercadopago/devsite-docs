@@ -20,17 +20,17 @@ Con Checkout API, ofrece pagos con Pix directamente en tu tienda. Pix es un medi
 2. Haga clic en **3. Activar y configurar los medios de pago**.
 3. En la opción "Pix", haga clic en **Configurar**.
 
-![Activar y configurar](/images/woocomerce/cho-pro-active-configure-pt.png)
+![Activar y configurar](woocomerce/cho-pro-active-configure-pt.png)
 
 4. La opción "Activar checkout" le permite habilitar o deshabilitar el Checkout en su tienda. Para activarlo, haga clic en el botón deslizante.
 5. En el campo **Título en el checkout de la tienda**, ingrese el nombre por el cual este método de pago será identificado en la tienda. Por ejemplo, puede llamarlo **Pix**.
 
-![Activar y título](/images/woocomerce/active-and-title-pix-pt-br.png)
+![Activar y título](woocomerce/active-and-title-pix-pt-br.png)
 
 6. En la opción "Vencimiento para pagamentos com Pix", defina el límite de minutos que sus clientes tendrán para pagar con Pix.
 7. La opción **Convertir moneda** permite que el valor de la moneda configurada en WooCommerce sea compatible con el valor de la moneda que usted utiliza en Mercado Pago. Para activarlo, haga clic en el botón deslizante.
 
-![Vencimiento y convertir](/images/woocomerce/deadline-and-convert-pix-pt-br.png)
+![Vencimiento y convertir](woocomerce/deadline-and-convert-pix-pt-br.png)
 
 Para guardar los cambios en la configuración, haga clic en el botón **Finalizar configuración**.
 
@@ -41,6 +41,6 @@ Es posible personalizar las opciones en la sección de configuraciones avanzadas
 - **Descuentos en los checkouts de Mercado Pago**: ingrese un valor porcentual de descuento para los clientes que paguen con este método de pago. Para activarlo, ingrese un porcentaje de descuento y marque la opción "Activar y mostrar esta información en el checkout de Mercado Pago".
 - **Comisión en los checkouts de Mercado Pago**: ingrese un valor porcentual adicional que desee cobrar como comisión a los clientes que opten por este método de pago. Para activarlo, ingrese un porcentaje de descuento y marque la opción "Activar y mostrar esta información en el checkout de Mercado Pago".
 
-![Configuraciones avanzadas](/images/woocomerce/advanced-settings-pix-pt-br.gif)
+![Configuraciones avanzadas](woocomerce/advanced-settings-pix-pt-br.gif)
 
 Para guardar los cambios en la configuración, haga clic en el botón **Finalizar configuración**.

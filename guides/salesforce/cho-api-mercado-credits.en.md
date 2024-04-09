@@ -30,7 +30,7 @@ To activate Mercado Crédito as a payment method in your store, follow these ins
 
 <center>
 
-![Ativar Mercado Credito](/images/salesforce/credits-en.gif) 
+![Ativar Mercado Credito](salesforce/credits-en.gif) 
 
 </center>
 

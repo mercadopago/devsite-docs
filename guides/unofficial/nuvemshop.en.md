@@ -47,13 +47,13 @@ The **steps to start charging with Mercado Pago** are the following:
 <p>&nbsp;</p>
 
 ----[mlb]----
-![Payments Connect - Nuvem Shop](/images/nuvemshop/nuvemshop_connect_1.gif)
+![Payments Connect - Nuvem Shop](nuvemshop/nuvemshop_connect_1.gif)
 ------------
 ----[mla]----
-![Payments Connect - Nuvem Shop](/images/nuvemshop/ar_tientanube_connect.gif)
+![Payments Connect - Nuvem Shop](nuvemshop/ar_tientanube_connect.gif)
 ------------
 ----[mlm, mlc, mlu, mpe, mco]----
-![Payments Connect - Nuvem Shop](/images/nuvemshop/mx_tientanube_connect.gif)
+![Payments Connect - Nuvem Shop](nuvemshop/mx_tientanube_connect.gif)
 ------------
 
 <p>&nbsp;</p>
@@ -119,13 +119,13 @@ It allows the **client to complete the purchase on your site**, without being re
 <p>&nbsp;</p>
 
 ----[mlb]----
-![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif)
+![Payments Checkout Transparente - Nuvem Shop](nuvemshop/nuvemshop_checkout_transparente_2.gif)
 ------------
 ----[mla]----
-![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_transparente.gif)
+![Payments Checkout Transparente - Nuvem Shop](nuvemshop/ar_tiendanube_checkout_transparente.gif)
 ------------
 ----[mlm, mlc, mlu, mpe, mco]----
-![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_transparente.gif)
+![Payments Checkout Transparente - Nuvem Shop](nuvemshop/mx_tiendanube_checkout_transparente.gif)
 ------------
 
 ### Checkout Pro
@@ -142,13 +142,13 @@ It allows the **client to complete the purchase on your site**, without being re
 <p>&nbsp;</p>
 
 ----[mlb]----
-![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif)
+![Payments Checkout Pro - Nuvem Shop](nuvemshop/nuvemshop_checkout_redirect_3.gif)
 ------------
 ----[mla]----
-![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_redirect.gif)
+![Payments Checkout Pro - Nuvem Shop](nuvemshop/ar_tiendanube_checkout_redirect.gif)
 ------------
 ----[mlm, mlc, mlu, mpe, mco]----
-![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_redirect.gif)
+![Payments Checkout Pro - Nuvem Shop](nuvemshop/mx_tiendanube_checkout_redirect.gif)
 ------------
 
 > NOTE
@@ -177,13 +177,13 @@ You can also manually synchronize the latest changes in the following way: -----
 <p>&nbsp;</p>
 
 ----[mlb]----
-![Payments Installment - Nuvem Shop](/images/nuvemshop/nuvemshop_installments_4.gif)
+![Payments Installment - Nuvem Shop](nuvemshop/nuvemshop_installments_4.gif)
 ------------
 ----[mla]----
-![Payments Installment - Nuvem Shop](/images/nuvemshop/ar_tiendanube_installments.gif)
+![Payments Installment - Nuvem Shop](nuvemshop/ar_tiendanube_installments.gif)
 ------------
 ----[mlm, mlc, mlu, mpe, mco]----
-![Payments Installment - Nuvem Shop](/images/nuvemshop/mx_tiendanube_istallments.gif)
+![Payments Installment - Nuvem Shop](nuvemshop/mx_tiendanube_istallments.gif)
 ------------
 
 ## Set interest-free installments in your Mercado Pago account
@@ -194,13 +194,13 @@ You can also manually synchronize the latest changes in the following way: -----
 <p>&nbsp;</p>
 
 ----[mlb]----
-![Payments Installments - Nuvem Shop](/images/nuvemshop/nuvemshop_account_installments_5.gif)
+![Payments Installments - Nuvem Shop](nuvemshop/nuvemshop_account_installments_5.gif)
 ------------
 ----[mla]----
-![Payments Installments - Nuvem Shop](/images/nuvemshop/ar_tiendanube_account_installments_cropped.gif)
+![Payments Installments - Nuvem Shop](nuvemshop/ar_tiendanube_account_installments_cropped.gif)
 ------------
 ----[mlm, mlc, mlu, mpe, mco]----
-![Payments Installments - Nuvem Shop](/images/nuvemshop/mx_tiendanube_account_installments_cropped.gif)
+![Payments Installments - Nuvem Shop](nuvemshop/mx_tiendanube_account_installments_cropped.gif)
 ------------
 
 <p>&nbsp;</p>

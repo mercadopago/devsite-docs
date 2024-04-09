@@ -6,7 +6,7 @@ To charge with a QR Attended Model, you need to create an order and associate it
 
 This is how the attended model works:
 
-![Payment flow at QR Mercado Pago POS](/images/mobile/qr-user-flow.en.png)
+![Payment flow at QR Mercado Pago POS](mobile/qr-user-flow.en.png)
 
 1. The store registers a sale (1a) and creates an order assigned to the point of sale (1b). The order is then available for scanning (2).
 2. When the customer scans the order QR (3) and completes the payment (5), Mercado Pago sends an IPN notification (4a and 6b) to the seller's server. This data is processed to obtain the order status (7a), validating whether it is closed or still opened with pending payment.

@@ -20,7 +20,7 @@
   - E por último, de acordo com a configuração da sua conta Mercado Pago, **escolha o número de parcelas sem acréscimos para pagamentos**.
 3. Clique em “Salvar alterações”.
 
-![Setting credit card - Loja Integrada](/images/lojaintegrada/lojaintegrada-credit-card-1.gif)
+![Setting credit card - Loja Integrada](lojaintegrada/lojaintegrada-credit-card-1.gif)
 
 ### Configurando o parcelamento de sua conta Mercado Pago
 
@@ -28,6 +28,6 @@
 2. Clique na opção "Configurações", navegue até o campo "Oferecer parcelas sem acréscimo" e clique em “Ativar”.
 3. Escolha “Quantas parcelas você quer oferecer?” e clique em “Ativar” para confirmar as alterações.
 
-![Setting account installment - Loja Integrada](/images/lojaintegrada/lojaintegrada-account-installment-1.gif)
+![Setting account installment - Loja Integrada](lojaintegrada/lojaintegrada-account-installment-1.gif)
 
 > Para mais informações, visite o [site oficial do Loja integrada](https://lojaintegrada.com.br/).

@@ -6,7 +6,7 @@ Consulta en detalle cómo funciona cada escenario de uso de la sección “Apps�
 
 Esta es la pantalla que la persona usuaria ve cuando no tiene apps instaladas. El objetivo es mostrar cuáles están disponibles para ser descargadas.
 
-![miniapps-available1](/mini-apps/miniapps-available1-es.png)
+![miniapps-available1](mini-apps/miniapps-available1-es.png)
 
 1. **Ícono**: el elemento que llama la atención de la persona usuaria, en general suele ser el primer contacto que tiene con la app. Úsalo para ingresar el logo.
 2. **Nombre de la app**: tiene la función de identificar y presentar a tu aplicación.
@@ -31,19 +31,19 @@ Esta es la pantalla que la persona usuaria ve cuando no tiene apps instaladas. E
 
 Cuando la persona usuaria usuario tiene uno o más apps instaladas, la lista de aplicaciones disponibles continúa visible, pero con otra configuración.
 
-![miniapps-available2](/mini-apps/miniapps-available2-es.png)
+![miniapps-available2](mini-apps/miniapps-available2-es.png)
 
 ## Mini apps de tu negocio
 
 Esta parte tiene la función de concentrar y organizar las apps ya descargadas al lector. Aquí, la persona usuaria puede acceder fácilmente a estas herramientas.
 
-![miniapps-business](/mini-apps/miniapps-business-es.png)
+![miniapps-business](mini-apps/miniapps-business-es.png)
 
 ## Sobre la app
 
 Aquí, la persona usuaria tiene acceso a los detalles, beneficios y propuesta de valor de la app, además de la opción de instalarla.
 
-![miniapps-about-app](/mini-apps/miniapps-about-app-es.png)
+![miniapps-about-app](mini-apps/miniapps-about-app-es.png)
 
 1. **Nombre del desarrollador**: identificación del desarrollador de la mini app. Limicationes: línea única/hasta 72 caracteres.
 2. **Carrusel de imágenes**: área donde se pueden disponibilizar prints de funcionalidades, interacciones y soluciones importantes de la app.<br><br> 

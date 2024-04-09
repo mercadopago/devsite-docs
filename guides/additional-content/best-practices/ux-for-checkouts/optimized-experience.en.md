@@ -14,13 +14,13 @@ Keep the data grouped thematically and provide context to the user about the ste
 * **Subheadings**: use them to give context or explain which action is expected.
 * **Explanatory texts**: use them to provide explanations or deepen information, whenever necessary, to avoid doubts.
 
-![en aspectos generales - segmenta tu contenido](/images/best-practices-guide/EngAspectosGeneralesSegmentaTuContenido.png)
+![en aspectos generales - segmenta tu contenido](best-practices-guide/EngAspectosGeneralesSegmentaTuContenido.png)
 
 ### Progress indicator
 
 It is a **progress bar** that tells the user which stage of your checkout they are in. You can segment it into equal parts, indicating each step of the checkout. In this way, your user will have visibility of the step they are in and how much remains to finish the payment process.
 
-![en Progress indicator](/images/best-practices-guide/EngCreaUnChoAgilProgressIndicator.png)
+![en Progress indicator](best-practices-guide/EngCreaUnChoAgilProgressIndicator.png)
 
 ### Bullets and highlights
 
@@ -28,7 +28,7 @@ It is a **progress bar** that tells the user which stage of your checkout they a
 
 **Highlights** are underlined or highlighted text. Use highlights to call attention to important keywords or sentences that add value and make the screen easier to scan.
 
-![en Bullets y highlights](/images/best-practices-guide/EngCreaUnChoAgilBulletsv3.png)
+![en Bullets y highlights](best-practices-guide/EngCreaUnChoAgilBulletsv3.png)
 
 ## Facilitate data filling
 
@@ -42,7 +42,7 @@ In order to make filling out the form easier and not tire the user:
 * Remove any request of information that is not essential for the purchase process.
 * Request each detail only once to avoid being redundant.
 
-![en aspectos generales optimizatusformularios dos&don't](/images/best-practices-guide/EngAspectosGeneralesOptimizaTusFormulariosDoDont.png)
+![en aspectos generales optimizatusformularios dos&don't](best-practices-guide/EngAspectosGeneralesOptimizaTusFormulariosDoDont.png)
 
 ## Provide context
 
@@ -55,7 +55,7 @@ It is important to know that the placeholder disappears when the cursor is place
 
 Both the labels and the placeholders must be short, direct and clear to prevent users from making mistakes.
 
-![en labels y placeholders dos&don't](/images/best-practices-guide/EngAspectosGeneralesLabelsPlaceholdersDoDont.png)
+![en labels y placeholders dos&don't](best-practices-guide/EngAspectosGeneralesLabelsPlaceholdersDoDont.png)
 
 ### Helpers and tooltips
 
@@ -63,7 +63,7 @@ Both the labels and the placeholders must be short, direct and clear to prevent 
 
 The **tooltips** are notifications that offer an extra layer of information when the helper is not enough. Use them to add definitions, complementary information or actionables through links. 
 
-![en helpers y tooltips dos&don't](/images/best-practices-guide/EngAspectosGeneralesHelpersTooltipv2.png)
+![en helpers y tooltips dos&don't](best-practices-guide/EngAspectosGeneralesHelpersTooltipv2.png)
 
 ### Success and error messages
 
@@ -71,7 +71,7 @@ The **tooltips** are notifications that offer an extra layer of information when
 
 Use success messages only if the confirmation is necessary or if the entered detail adds value to the user (e.g: free shipping or discount). In case of an **error**, it is important to clarify what the problem was and provide a solution so that the user does not make the mistake again and gets frustrated. If the input has a helper, it should be replaced by the error message. 
 
-![en Mensajes de éxito y error](/images/best-practices-guide/EngAspectosGeneralesMsjErrorDoDont.png)
+![en Mensajes de éxito y error](best-practices-guide/EngAspectosGeneralesMsjErrorDoDont.png)
 
 ## Add clear actionables
 
@@ -84,7 +84,7 @@ Here are some tips:
 * Use buttons for the main actions and write them in the infinitive verb tense so that there is no ambiguity.
 * Add links for secondary actions that add context and make sure it is a self explanatory text that makes reference to where the users are being redirected to. 
 
-![en Agrega accionables claros](/images/best-practices-guide/EngAspectosGeneralesAccionablesClaros.png)
+![en Agrega accionables claros](best-practices-guide/EngAspectosGeneralesAccionablesClaros.png)
 
 ## Highlight the options
 
@@ -98,7 +98,7 @@ Therefore, **offer options** that include different possible variables and write
 
 In addition, you can add the most outstanding value propositions in each option to help the user have more information to make a decision.
 
-![en Ofrece opciones do&don't](/images/best-practices-guide/EngAspectosGeneralesOfreceOpcionesDoDont.png)
+![en Ofrece opciones do&don't](best-practices-guide/EngAspectosGeneralesOfreceOpcionesDoDont.png)
 
 ## Skip the unnecessary steps
 
@@ -106,7 +106,7 @@ Avoid asking for repeated data or data that is not necessary to complete the pur
 
 For example, you can use the personal and shipping information to get the billing details. This way you will avoid adding an extra form that slows down the payment process.
 
-![en Saltea pasos innecesarios](/images/best-practices-guide/EngAspectosGeneralesSalteaPasosInnecesarios.png)
+![en Saltea pasos innecesarios](best-practices-guide/EngAspectosGeneralesSalteaPasosInnecesarios.png)
 
 ## Give visibility during the process 
 
@@ -114,8 +114,8 @@ Add a fixed **summary component** or a direct access to the shopping cart that s
 
 Although most users review their purchase at the end, they feel more secure if they can control what they are doing throughout the process.
 
-![en da visibilidad del proceso](/images/best-practices-guide/EngAspectosGeneralesVisibilidadDelProceso_V2.gif)
+![en da visibilidad del proceso](best-practices-guide/EngAspectosGeneralesVisibilidadDelProceso_V2.gif)
 
 Also, before finalizing the purchase, allow your users to **review** the entire process and the final price. For this, add a confirmation or review page, prior to making the payment, that includes a summary of all the decisions made, all the information uploaded and the detail of the total to pay. It is important to give the possibility to edit any of the data from there, without the need to go back to the previous steps.
 
-![en confrima tu compra](/images/best-practices-guide/EngAspectosGeneralesConfirmaTuCompra_V2.gif)
+![en confrima tu compra](best-practices-guide/EngAspectosGeneralesConfirmaTuCompra_V2.gif)

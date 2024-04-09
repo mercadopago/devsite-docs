@@ -32,6 +32,6 @@ Done! The new display order for the payment providers is configured.
 
 <center>
 
-![mercado-pago-ordena](/images/shopify/mercado-pago-ordena-pt.gif)
+![mercado-pago-ordena](shopify/mercado-pago-ordena-pt.gif)
 
 </center>

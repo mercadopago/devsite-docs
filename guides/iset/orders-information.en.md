@@ -23,7 +23,7 @@ To **set the information for the orders on your store**, follow these steps:
 1. Click on “Close” and then on “Save changes”. 
 <p>&nbsp;</p>
 
-![Payments Connect - iSET](/images/iset/iset_configuration_informacion_9.gif)
+![Payments Connect - iSET](iset/iset_configuration_informacion_9.gif)
 <p>&nbsp;</p>
 
 > WARNING

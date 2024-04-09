@@ -1,10 +1,10 @@
 # Como funciona?
 
-![Pagamentos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
+![Pagamentos QR Mercado Pago](mobile/qr_mla2.es.png)
 
 Após completar a integração como explicado abaixo, o seu negócio poderá receber pagamentos com QR ao **imprimir e exibir o código QR em um lugar visível da sua loja, ou exibi-lo em seu dispositivo móvel** e efetuar cobranças pelo app do Mercado Pago.
 
-![Flujo QR](/images/mobile/qr_flujo.pt.png)
+![Flujo QR](mobile/qr_flujo.pt.png)
 
 > NOTE
 >

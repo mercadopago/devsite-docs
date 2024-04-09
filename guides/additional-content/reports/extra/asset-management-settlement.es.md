@@ -51,21 +51,21 @@ Para identificarlos en tus reportes, vas a encontrar que los datos de las column
 
 ### Rendimientos positivos
 
-![Ejemplo rendimiento positivo en reporte de Todas las transacciones](/images/manage-account/reports/reports-information-details/asset-management-settlement-positive.png)
+![Ejemplo rendimiento positivo en reporte de Todas las transacciones](manage-account/reports/reports-information-details/asset-management-settlement-positive.png)
 
 ### Rendimientos negativos
 
-![Ejemplo rendimiento negativo en reporte de Todas las transacciones](/images/manage-account/reports/reports-information-details/asset-management-settlement-negative.png)
+![Ejemplo rendimiento negativo en reporte de Todas las transacciones](manage-account/reports/reports-information-details/asset-management-settlement-negative.png)
 
 ----[mlb]---- 
 
 ### Impuesto a la renta
 
-![Ejemplo impuesto a la renta en reporte de Dinero en cuenta](/images/manage-account/reports/reports-information-details/asset-management-settlement-with-taxes-negative.png)
+![Ejemplo impuesto a la renta en reporte de Dinero en cuenta](manage-account/reports/reports-information-details/asset-management-settlement-with-taxes-negative.png)
 
 ### Devolución de impuesto a la renta
 
-![Ejemplo devolución de impuesto a la renta en reporte de Dinero en cuenta](/images/manage-account/reports/reports-information-details/asset-management-settlement-with-taxes-positive.png)
+![Ejemplo devolución de impuesto a la renta en reporte de Dinero en cuenta](manage-account/reports/reports-information-details/asset-management-settlement-with-taxes-positive.png)
 
 ------------
 

@@ -26,7 +26,7 @@ A continuación, te indicamos cómo probar la integración:
 
 <center>
 
-![Crear cuenta](/images/shopify/test-create-account-es.gif)
+![Crear cuenta](shopify/test-create-account-es.gif)
 
 </center>
 
@@ -35,7 +35,7 @@ A continuación, te indicamos cómo probar la integración:
 
 <center>
 
-![Iniciar sesión](/images/shopify/test-login-esp.gif)
+![Iniciar sesión](shopify/test-login-esp.gif)
 
 </center>
 
@@ -51,13 +51,13 @@ Ahora, sigue los pasos según el checkout que hayas elegido para procesar los pa
 6. Accede a la aplicación creada en el paso 5 y haz clic en **Credenciales de producción** en el menú de la izquierda. Copia la `public_key` y el `access_token`.
 
 ------------
-![Credenciales de producción](/images/shopify/test-prod-credentials-es.png)
+![Credenciales de producción](shopify/test-prod-credentials-es.png)
 
 7. Ve a la configuración del panel de Shopify (**Configuración > Pagos**) y haz clic en **Gestionar** en el proveedor de Mercado Pago.
 ----[mlb]----
 8. Ingresa el `client_id` y el `client_secret` de la cuenta de prueba del vendedor.
 
-![Panel](/images/shopify/test-pro-shopify.png)
+![Panel](shopify/test-pro-shopify.png)
 
 9. Haz clic en **Guardar**.
 
@@ -65,7 +65,7 @@ Ahora, sigue los pasos según el checkout que hayas elegido para procesar los pa
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 8. Ingresa la `public_key` y el `access_token` de la cuenta de prueba del vendedor.
 
-![Panel](/images/shopify/test-pro-shopify-es-all.jpg)
+![Panel](shopify/test-pro-shopify-es-all.jpg)
 
 9. Haz clic en **Guardar credenciales**.
 
@@ -90,13 +90,13 @@ Ahora, sigue los pasos según el checkout que hayas elegido para procesar los pa
 
 6. Accede a la aplicación creada en el paso 5 y haz clic en **Credenciales de producción** en el menú de la izquierda. Copia la `public_key`.
 
-![Credenciales de producción](/images/shopify/test-prod-credentials-es.png)
+![Credenciales de producción](shopify/test-prod-credentials-es.png)
 
 7. Ve a la configuración del panel de Shopify (**Aplicaciones > Checkout Transparente MP**).
 8. Ingresa la `public_key` de la cuenta de prueba del vendedor.
 9. Activa el **Modo de Producción para los checkouts de Mercado Pago**. Como estamos utilizando cuentas de prueba para probar la integración, es necesario habilitar el modo productivo en Checkout Transparente.
 
-![Panel](/images/shopify/test-api-shopify.png)
+![Panel](shopify/test-api-shopify.png)
 
 10. Haz clic en **Guardar cambios**.
 11. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago utilizando la cuenta de prueba del comprador creada en el paso 3.

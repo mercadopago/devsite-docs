@@ -181,7 +181,7 @@ Para isso, é preciso redirecionar o usuário para a URL diretamente ou apresent
 
 A imagem a seguir apresenta um exemplo deste fluxo na visão do usuário:
 
-![Exemplo de fluxo de pagamento Pix Open Finance](/images/api/api-integrate-openfinance.gif)
+![Exemplo de fluxo de pagamento Pix Open Finance](api/api-integrate-openfinance.gif)
 
 ## Testar integração
 

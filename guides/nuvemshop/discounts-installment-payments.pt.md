@@ -6,15 +6,15 @@ Com o Mercado Pago, você tem a flexibilidade de oferecer benefícios exclusivos
 
 Através do Painel administrativo da sua loja, clique em **Editar** para definir as seguintes configurações:
 ----[mlm, mpe, mco, mlu, mlc]----
-![Panel](/images/nuvemshop/admines.png)
+![Panel](nuvemshop/admines.png)
 
 ------------
 ----[mla]----
-![Panel](/images/nuvemshop/admines-ar.png)
+![Panel](nuvemshop/admines-ar.png)
 
 ------------
 ----[mlb]----
-![Painel](/images/nuvemshop/adminpt.png)
+![Painel](nuvemshop/adminpt.png)
 
 ------------
 ### Parcelas
@@ -47,15 +47,15 @@ Você também pode configurar as experiências de parcelamento de cada Checkout 
 Nesta seção, você pode definir o **número máximo de meses**, com e sem acréscimos, nos quais seus clientes poderão efetuar o pagamento utilizando o Checkout Mercado Pago:
 
 ----[mlm, mpe, mco, mlu, mlc]----
-![Pro](/images/nuvemshop/parc-pro-es.gif)
+![Pro](nuvemshop/parc-pro-es.gif)
 
 ------------
 ----[mla]----
-![Pro](/images/nuvemshop/parc-pro-es-arg.gif)
+![Pro](nuvemshop/parc-pro-es-arg.gif)
 
 ------------
 ----[mlb]----
-![Pro](/images/nuvemshop/parc-pro-pt.gif)
+![Pro](nuvemshop/parc-pro-pt.gif)
 
 ------------
 ----[mlm, mla, mpe, mco, mlu, mlc]----
@@ -70,15 +70,15 @@ Nesta seção, você pode definir o **número máximo de meses**, com e sem acr�
 Nesta seção, você pode definir o **número máximo de meses**, com e sem acréscimos, nos quais seus clientes poderão efetuar o pagamento utilizando o Checkout Transparente:
 
 ----[mlm, mpe, mco, mlu, mlc]----
-![API](/images/nuvemshop/parc-api-es.gif)
+![API](nuvemshop/parc-api-es.gif)
 
 ------------
 ----[mla]----
-![API](/images/nuvemshop/parc-api-es-arg.gif)
+![API](nuvemshop/parc-api-es-arg.gif)
 
 ------------
 ----[mlb]----
-![API](/images/nuvemshop/parc-cho-api-pt.gif)
+![API](nuvemshop/parc-cho-api-pt.gif)
 
 ------------
 
@@ -94,6 +94,6 @@ Na sua conta do Mercado Pago, você pode consultar e configurar o número de mes
 
 <center>
 
-![Conta](/images/nuvemshop/contaptac.gif)
+![Conta](nuvemshop/contaptac.gif)
 
 </center>

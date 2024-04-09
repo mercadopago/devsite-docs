@@ -145,7 +145,7 @@ Com nossas **SDKs de frontend**, você pode fazer chamadas para o token do cart�
 
 Se você não tem certeza de por onde começar com base em seu conhecimento de programação, não se preocupe. Temos diferentes soluções que atendem às suas necessidades. Siga o diagrama abaixo para descobrir qual é o produto ideal para você.
 
-![Primeiros passos](/images/getting-started/getting-started-diagram2-es.png)
+![Primeiros passos](getting-started/getting-started-diagram2-es.png)
 
 Para obter detalhes sobre os **meios de pagamento aceitos em cada país**, consulte a lista completa de [disponibilidade de meios de pagamento](/developers/es/docs/sales-processing/payment-methods).
 

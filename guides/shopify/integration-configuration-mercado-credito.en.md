@@ -20,7 +20,7 @@ If you want to **show Mercado Credits in your store's checkout**, follow the ste
 
 <center>
 
-![shopify-mercado-credito](/images/shopify/mercado-credito-es.gif)
+![shopify-mercado-credito](shopify/mercado-credito-es.gif)
 
 </center>
 

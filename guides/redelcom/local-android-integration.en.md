@@ -14,6 +14,6 @@ You can see how the local integration with Redelcom works in the diagram below.
 
 </center>
 
-![Diagram explaining local integration](/images/Redelcom/Integrate-via-Android.png)
+![Diagram explaining local integration](Redelcom/Integrate-via-Android.png)
 
 </center>

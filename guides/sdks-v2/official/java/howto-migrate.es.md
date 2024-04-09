@@ -38,11 +38,11 @@ Vea a continuación una comparación de los diagramas.
 
 * **Diagrama de secuencia V1**
 
-![java-v1](/images/sdk/sdk-java-v1-pt.png)
+![java-v1](sdk/sdk-java-v1-pt.png)
 
 * **Diagrama de secuencia V2**
 
-![java-v2](/images/sdk/sdk-java-v2-pt.png)
+![java-v2](sdk/sdk-java-v2-pt.png)
 
 ## Cambiar la importación del script
 

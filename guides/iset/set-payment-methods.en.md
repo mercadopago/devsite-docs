@@ -18,7 +18,7 @@ You also have the option to [offer interest free installments](https://www.merca
 5. Click on “Close” and then on “Save changes”.
 <p>&nbsp;</p>
 
-![Payments Connect - iSET](/images/iset/iset_configuration_methods_2.gif)
+![Payments Connect - iSET](iset/iset_configuration_methods_2.gif)
 <p>&nbsp;</p>
 
 ## Checkout Pro
@@ -34,7 +34,7 @@ To activate this model, follow these steps:
 5. Complete the fields Client ID and Client Secret with the [credentials of your Mercado Pago account](/developers/en/docs/iset/additional-content/your-integrations/credentials).
 6. Click on “Close” and then on “Save changes”.
 
-![Payments Connect - iSET](/images/iset/iset_configuration_checkout_padrao_3.gif)
+![Payments Connect - iSET](iset/iset_configuration_checkout_padrao_3.gif)
 
 ## Checkout API
 
@@ -49,7 +49,7 @@ To activate this model, follow these steps:
 5. Complete the fields Client ID, Client Secret and Public Key with the [credentials of your Mercado Pago account](/developers/en/docs/iset/additional-content/your-integrations/credentials).
 6. Click on “Close” and then on “Save changes”.
 
-![Payments Connect - iSET](/images/iset/iset_configuration_checkout_transparente_4.gif)
+![Payments Connect - iSET](iset/iset_configuration_checkout_transparente_4.gif)
 
 ## Both checkouts
 
@@ -64,7 +64,7 @@ To **activate both checkouts**, follow these steps:
 5. Complete the fields “Client ID, Client Secret and Public Key” with the [credentials of your Mercado Pago account](/developers/en/docs/iset/additional-content/your-integrations/credentials).
 6. Click on “Close” and then on “Save changes”.
 
-![Payments Connect - iSET](/images/iset/iset_configuration_checkout_ambos_5.gif)
+![Payments Connect - iSET](iset/iset_configuration_checkout_ambos_5.gif)
 
 <!-- -->
 > For more information, visit [iSET official website](https://www.iset.com.br/).

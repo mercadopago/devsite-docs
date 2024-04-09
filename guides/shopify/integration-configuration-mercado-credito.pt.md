@@ -20,7 +20,7 @@ Para **exibir o Mercado Crédito no checkout da sua loja**, siga os passos abaix
 
 <center>
 
-![shopify-mercado-credito](/images/shopify/mercado-credito-es.gif)
+![shopify-mercado-credito](shopify/mercado-credito-es.gif)
 
 </center>
 

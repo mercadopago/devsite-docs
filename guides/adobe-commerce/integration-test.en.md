@@ -19,7 +19,7 @@ Here's how to test the integration:
 
 <center>
 
-![Create Account](/images/adobe-commerce/test-create-account-es.gif)
+![Create Account](adobe-commerce/test-create-account-es.gif)
 
 </center>
 
@@ -28,19 +28,19 @@ Here's how to test the integration:
 
 <center>
 
-![Login](/images/adobe-commerce/test-login-esp.gif)
+![Login](adobe-commerce/test-login-esp.gif)
 
 </center>
 
 6. Access the application created in the previous step and click on **Production credentials** in the left menu. Copy the `access_token` and `public_key`.
 
-![Production credentials](/images/adobe-commerce/test-prod-credentials-es.png)
+![Production credentials](adobe-commerce/test-prod-credentials-es.png)
 
 7. Go to the settings of the Adobe Commerce panel (**Stores > Configuration > Sales > Payment Methods > Other payment methods > Configure > Basic Settings > Mercado Pago Integration**).
 8. Select the **Production** option in the "Checkout operation mode" field.
 9. Enter the production credentials `access_token` and `public_key` of the seller's test account.
 
-![Panel](/images/adobe-commerce/test-adobe-commerce.png)
+![Panel](adobe-commerce/test-adobe-commerce.png)
 
 11. Click on **Save Config**.
 12. Open a new incognito window and log in to Mercado Pago using the buyer's test account created in step 3.
@@ -80,13 +80,13 @@ Additionally, the orders will be recorded in the test seller's Mercado Pago acco
 1. Access **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** in the Mercado Pago admin and select the application you want to test.
 2. Click on **Test credentials** in the left menu. Copy the `access_token` and `public_key`.
 
-![Test credentials](/images/adobe-commerce/test-test-credentials-api-es.png)
+![Test credentials](adobe-commerce/test-test-credentials-api-es.png)
 
 3. Go to the Adobe Commerce panel settings (**Stores > Configuration > Sales > Payment Methods > Other payments methods > Configure > Basic Settings > Mercado Pago Integration**).
 4. Select the **Sandbox** option in the "Checkout operation mode" field.
 5. Enter the test credentials `access_token` and `public_key` for your application.
 
-![Panel](/images/adobe-commerce/test-adobe-commerce-all.png)
+![Panel](adobe-commerce/test-adobe-commerce-all.png)
 
 6. Click on **Save Config**.
 7. Access your store and make a purchase by providing test information, such as a different phone number and email address than the one associated with your Mercado Pago account. In the "Documento" field, select the **OTRO** option and enter 9 digits. Also, use the test cards available in the [documentation](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/cards) corresponding.

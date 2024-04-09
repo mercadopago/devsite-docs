@@ -15,7 +15,7 @@ Para más información, consulte la sección [Actualización del medio de pago d
 
 Consulte el siguiente diagrama que ilustra cómo funciona el flujo de creación de una vinculación.
 
-![Iniciar vinculación](/images/wallet-connect/new-create-agreement.es.png)
+![Iniciar vinculación](wallet-connect/new-create-agreement.es.png)
 
 Para crear una vinculación, envía un **POST** con los atributos necesarios al endpoint [/v2/wallet_connect/agreements](/developers/es/reference/wallet_connect/_wallet_connect_agreements/post) y ejecuta el requestr o, si lo prefiere, use el `curl` a continuación y preste atención a la respuesta del request que devolverá **dos parámetros** obligatorios para obtener la aprobación del pagador: `agreement_uri` y `return_uri`.
 

@@ -9,4 +9,4 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 3. Selecione quais os tipos de pagamento que deseja oferecer em seu checkout, sendo eles: cartão de crédito, boleto bancário, Pix e Parcelamento sem cartão.
 4. Clique em "Salvar alterações".
 
-![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif)
+![Payments Checkout Pro - Nuvem Shop](nuvemshop/nuvemshop_checkout_redirect_3.gif)

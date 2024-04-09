@@ -4,7 +4,7 @@ You can generate payment requests on Redelcom terminals using [our API](https://
 
 </center>
 
-![diagram explaining API Integration](/images/Redelcom/integrate-via-API.png)
+![diagram explaining API Integration](Redelcom/integrate-via-API.png)
 
 </center>
 

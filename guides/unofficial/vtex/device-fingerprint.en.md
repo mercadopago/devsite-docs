@@ -19,5 +19,5 @@ script.setAttribute("view","checkout");
 document.body.appendChild(script);
 ```
 
-![Fingerprint configuration](/images/vtex/devicefingerprint-imagenv2-en.gif)
+![Fingerprint configuration](vtex/devicefingerprint-imagenv2-en.gif)
 

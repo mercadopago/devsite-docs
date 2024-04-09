@@ -1,6 +1,6 @@
 Os possíveis estados de um pagamento são:
 
-![payment-status](/images/api/api-payment-status-pt.png)
+![payment-status](api/api-payment-status-pt.png)
 <br>
 <br>
 

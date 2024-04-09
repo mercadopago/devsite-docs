@@ -7,15 +7,15 @@ Recomendamos personalizar as informações do checkout da loja para garantir uma
 1. Vá para sua loja [Shopify](https://accounts.shopify.com/store-login).
 2. No painel administrativo da loja, clique em **Configurações**.
 
-![Panel](/images/shopify/store-panel-pt.png)
+![Panel](shopify/store-panel-pt.png)
 
 3. Uma vez lá, selecione a opção **Checkout**.
 
-![Checkout](/images/shopify/checkout-pt.png)
+![Checkout](shopify/checkout-pt.png)
 
 4. Na secção **Informações do cliente**, selecione o campo "Nome da empresa", como obrigatório.
 
-![Company name](/images/shopify/company-name-pt.png)
+![Company name](shopify/company-name-pt.png)
 
 5. Clique em **Salvar**.
 
@@ -23,19 +23,19 @@ Recomendamos personalizar as informações do checkout da loja para garantir uma
 
 1. No painel administrativo da loja, clique em **Configurações**.
 
-![Panel](/images/shopify/store-panel-pt.png)
+![Panel](shopify/store-panel-pt.png)
 
 2. Uma vez em Configurações, clique em **Idiomas**.
 
-![Language](/images/shopify/language-pt.png)
+![Language](shopify/language-pt.png)
 
 3. Na seção "Idiomas da loja", você poderá escolher o idioma no qual deseja que a loja opere. Clique em **Alterar padrão**.
 
-![Change language](/images/shopify/change-language-pt.png)
+![Change language](shopify/change-language-pt.png)
 
 4. Na próxima tela, escolha o idioma de sua preferência.
 
-![Panel](/images/shopify/change-language-2-pt.png)
+![Panel](shopify/change-language-2-pt.png)
 
 5. Clique no botão **Salvar**.
 
@@ -45,19 +45,19 @@ A loja Shopify exibirá os campos de solicitação de identificação pessoal do
 
 1. No painel administrativo da loja, clique em **Configurações**.
 
-![Panel](/images/shopify/store-panel-pt.png)
+![Panel](shopify/store-panel-pt.png)
 
 2. Uma vez lá, selecione a opção **Checkout**.
 
-![Checkout](/images/shopify/checkout-pt.png)
+![Checkout](shopify/checkout-pt.png)
 
 2. Na seção "Idioma do checkout", clique em **Gerenciar idioma do checkout**.
 
-![Checkout language](/images/shopify/checkout-language-pt.png)
+![Checkout language](shopify/checkout-language-pt.png)
 
 3. Na próxima tela, use a barra de busca do site para pesquisar a palavra "Company". A busca devolverá vários campos que você pode modificar.
 
-![Values id](/images/shopify/values-id-pt.gif)
+![Values id](shopify/values-id-pt.gif)
 
 5. Substitua as seguintes entradas com a indicação do tipo de identificação pessoal que a sua loja solicitará de acordo com o país onde ela opera----[mlb]----(por exemplo, CPF para Brasil)------------:
 

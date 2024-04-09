@@ -16,4 +16,4 @@ Quando esse link é chamado, ele será interceptado como uma Point-handled adres
 
 Você pode ver o fluxograma abaixo para entender como funciona esse tipo de integração.
 
-![Fluxo do Deep Linking do Mercado Pago Point](/images/point_diagram.png)
+![Fluxo do Deep Linking do Mercado Pago Point](point_diagram.png)

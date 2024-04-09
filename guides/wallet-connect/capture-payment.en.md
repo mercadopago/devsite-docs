@@ -4,7 +4,7 @@ The payment capture is a confirmation of the amount you want to charge from the 
 
 See the diagram below that illustrates the payment capture process via the Wallet Connect API Payments endpoint.
 
-![Capture-payment-flow](/images/wallet-connect/captured-payment.en.png)
+![Capture-payment-flow](wallet-connect/captured-payment.en.png)
 
 ## Send request
 

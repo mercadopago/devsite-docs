@@ -12,7 +12,7 @@ En esta documentación, explicaremos las configuraciones necesarias para recibir
 
 A continuación explicaremos cómo: indicar las URL que serán notificadas, configurar los eventos de los cuales se recibirá la notificación, validar que las notificaciones que recibes son enviadas por Mercado Pago y simular la recepción de diversos tipos de notificaciones.
 
-![webhooks](/images/dashboard/webhooks-es.png)
+![webhooks](dashboard/webhooks-es.png)
 
 ### Configurar URLs y Eventos 
 

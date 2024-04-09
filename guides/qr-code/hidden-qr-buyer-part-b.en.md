@@ -17,7 +17,7 @@ For this integration to work correctly, you need to:
 
 The buyer model works as follows:
 
-![Sell flow QR buyer](/images/mobile/flujo-qrc-EN.png)
+![Sell flow QR buyer](mobile/flujo-qrc-EN.png)
 
 1. The Integrator will read the QR CODE using a reader.
 2. With the order billing information and QR code reading, the integrator sends the billing data to API.

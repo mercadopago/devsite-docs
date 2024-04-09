@@ -653,6 +653,6 @@ curl -X POST \
 
 In both the success and failure flows, the Challenge, which is a screen similar to the one shown below, should be displayed within the iframe:
 
-![Challenge](/images/api/sandbox-v1-en.png)
+![Challenge](api/sandbox-v1-en.png)
 
 The provided verification code is for illustrative purposes only. To complete the test flow, simply click the **Confirm** button. After completing this action, follow the detailed instructions in the [Check the status of the transaction](/developers/en/docs/checkout-api/how-tos/integrate-3ds#bookmark_check_transaction_status) section to determine when the Challenge has been completed and how to check for payment updates. 

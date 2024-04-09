@@ -35,11 +35,11 @@ Caso uma transferência não seja concluída, o relatório permanecerá válido.
 
 Observe o que compõe o Relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ no seguinte exemplo para identificar as seções e analisar seus próprios relatórios:
 ----[mla]----
-![Relatório de Liquidaçoes](/images/manage-account/reports/example-release-pt.jpg)
+![Relatório de Liquidaçoes](manage-account/reports/example-release-pt.jpg)
 
 ------------
 ----[mlm, mlb, mlc, mco, mlu, mpe]----
-![Relatório de Liberações](/images/manage-account/reports/example-release-pt.jpg)
+![Relatório de Liberações](manage-account/reports/example-release-pt.jpg)
 
 ------------
 A versão padrão mostrará uma visualização estendida das colunas. O relatório final terá a maior quantidade de detalhes possível. 
@@ -48,4 +48,4 @@ A versão padrão mostrará uma visualização estendida das colunas. O relatór
 
 Veja no exemplo a seguir a organização do relatório:
 
-![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/example-nledger-pt.jpg) 
+![Reporte de Dinero retirado Ejemplos Mercado Pago](manage-account/reports/example-nledger-pt.jpg) 

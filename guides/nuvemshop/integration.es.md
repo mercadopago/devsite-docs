@@ -20,7 +20,7 @@ Para integrar Mercado Pago a tu Tiendanube, sigue los procedimientos a continuac
 ----[mlm, mla]----
 <center>
 
-![Integration - Nuvemshop](/images/nuvemshop/plugin-mp-es.gif)
+![Integration - Nuvemshop](nuvemshop/plugin-mp-es.gif)
 
 </center>
 ------------
@@ -40,7 +40,7 @@ Para **vincular tu cuenta de Mercado Pago a Tiendanube**, sigue estos pasos:
 
 ------------
 ----[mlc, mlu, mpe, mco]----
-![Payments Connect - Nuvem Shop](/images/nuvemshop/mx_tientanube_connect.gif)
+![Payments Connect - Nuvem Shop](nuvemshop/mx_tientanube_connect.gif)
 
 ------------
 Una vez que hayas realizado esta configuración inicial, configura también las experiencias de pago de tu tienda de acuerdo con el tipo de pago seleccionado.
@@ -58,7 +58,7 @@ Si quieres cambiar la cuenta de Mercado Pago asociada a tu tienda, es necesario 
 1. Si todavía estás conectado a tu cuenta de Mercado Pago en un navegador, desconéctate accediendo al "Menú de opciones" y, luego, haz clic en **Salir**.
 2. En el Panel Administrativo de tu Tiendanube, accede a **Mis aplicaciones > Ver todas las aplicaciones**. 
 3. Busca el plugin de Mercado Pago, localízalo en la lista de métodos de pago y haz clic en **Desinstalar**.
-   ![Desinstalar](/images/nuvemshop/desin-es.gif)
+   ![Desinstalar](nuvemshop/desin-es.gif)
 4. Localiza el plugin Mercado Pago en la lista de aplicaciones y haz clic en **Instalar**.
 5. Finalmente, vas a ser redirigido a Mercado Pago para que ingreses con los datos de tu cuenta. Para autorizar la conexión, haz clic en **Permitir**.
 

@@ -253,13 +253,13 @@ preference_data = {
 
 ## Accept payments with 2 credit cards
 
-![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
+![Pago 2 tarjetas](web-payment-checkout/pay_2_tarjetas.png)
 
 You can activate the option to offer payments with two credit cards from the Mercado Pago account.
 
 To activate this payment option, go to "[Business Options](https://www.mercadopago.com.ar/settings/my-business)" and select the option "Receive payments with 2 credit cards".
 
-![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
+![Config pago 2 tarjetas](web-payment-checkout/config_pago_dos_tarjetas.gif)
 
 ------------
 
@@ -602,7 +602,7 @@ At the end of the checkout process, you have the option to redirect the buyer to
 
 You can also add the `auto_return` attribute with the `approved` value if you want the redirect for approved payments to be automatic without rendering a return button.
 
-![autoreturn](/images/web-payment-checkout/autoreturn-img.png)
+![autoreturn](web-payment-checkout/autoreturn-img.png)
 
 | Attribute | Description |
 | ------------ | -------- |

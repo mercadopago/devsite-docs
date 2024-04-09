@@ -29,29 +29,29 @@ To install Checkout Pro (**Mercado Pago Checkout**) on your Shopify store, follo
 
 2. In the store's admin panel, click on **Settings** in the bottom-left corner of the page.
 
-![Panel](/images/shopify/store-panel-es.png)
+![Panel](shopify/store-panel-es.png)
 
 3. Once there, select the **Payments** option from the menu on the left side of the page.
 
 4. Under "Accepted payment methods," click on **Add payment method**.
 
-![Payments](/images/shopify/payments-page-es.png)
+![Payments](shopify/payments-page-es.png)
 
 5. Select the **Search provider** tab and search for the "Mercado Pago Checkout" app.
 
-![Add payment method](/images/shopify/add-payment-method-es.png)
+![Add payment method](shopify/add-payment-method-es.png)
 
 6. Once you locate it, select it and click **Install**.
 
-![Add payment method](/images/shopify/provider-es.png)
+![Add payment method](shopify/provider-es.png)
 
 7. Carefully read the information about the requested permissions and click **Install** again.
 
-![Add payment method](/images/shopify/install-app-es.png)
+![Add payment method](shopify/install-app-es.png)
 
 8. After accepting the requested permissions, click **Manage account** to link your Mercado Pago account to your store using your credentials.
 
-![Add payment method](/images/shopify/manage-account-es.png)
+![Add payment method](shopify/manage-account-es.png)
 
 > WARNING
 >
@@ -63,11 +63,11 @@ To install Checkout Pro (**Mercado Pago Checkout**) on your Shopify store, follo
 
 10. Click on **Production credentials** in the left menu. Copy the `public_key` and `access_token`.
 
-![Production credentials](/images/woocomerce/test-prod-credentials-api-es.png)
+![Production credentials](woocomerce/test-prod-credentials-api-es.png)
 
 11. Enter your production credentials `access_token` and `public_key` in the corresponding fields, being **careful not to invert the fields when copying and pasting the credentials**.
 
-![Add payment method](/images/shopify/add-credentials-es.png)
+![Add payment method](shopify/add-credentials-es.png)
 
 > NOTE
 >
@@ -79,7 +79,7 @@ To install Checkout Pro (**Mercado Pago Checkout**) on your Shopify store, follo
 
 13. To complete the installation, click **Activate**.
 
-![Activate](/images/shopify/shopify-activate-mp.png)
+![Activate](shopify/shopify-activate-mp.png)
 
 > At this stage, you can select the images of the payment methods you want to display in your store for illustrative purposes.
 

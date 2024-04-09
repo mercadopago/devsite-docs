@@ -19,7 +19,7 @@ To **synchronize your Mercado Pago account to Loja Integrada**, follow these ste
 2. Click on “Mercado Pago” and then on "Synchronize Mercado Pago account”.
 3. You are going to be redirected to Mercado Pago so that you can enter your account with your account information. To authorize the connection, click on “Allow”.
 
-![Installing Mercado Pago - Loja Integrada](/images/lojaintegrada/lojaintegrada-connect-1.gif)
+![Installing Mercado Pago - Loja Integrada](lojaintegrada/lojaintegrada-connect-1.gif)
 
 Done! Mercado Pago account is synchronized with your site and you can start charging.
 

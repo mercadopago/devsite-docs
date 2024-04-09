@@ -11,4 +11,4 @@ Existem dois tipos de assinaturas disponíveis para integração:
 
 Abaixo mostramos um diagrama que explica o fluxo de cada modelo de assinatura.
 
-![Basic-subscriptions](/images/subscriptions/Integrations-PT.png)
+![Basic-subscriptions](subscriptions/Integrations-PT.png)

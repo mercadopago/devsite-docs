@@ -14,7 +14,7 @@ Para evitar duplicidade, é obrigatório o envio de uma chave única no _header_
 
 Veja abaixo o diagrama que ilustra o funcionamento da `Idempotency Key` no processo de criação de um pagamento.
 
-![idempotency-flow](/images/wallet-connect/idempotency.pt.png)
+![idempotency-flow](wallet-connect/idempotency.pt.png)
 
 ## Enviar request
 

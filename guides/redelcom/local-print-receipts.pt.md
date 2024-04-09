@@ -9,7 +9,7 @@ Para integrar a biblioteca `*.jar NeptuneLiteAPI` e habilitar a impressão de co
 1. Abra seu projeto no Android Studio e vá para **File > Project Structure > Dependencies**.
 </center>
 
-![imagem mostrando onde encontrar a guia Módulos](/images/Redelcom/importar-librería2.png)
+![imagem mostrando onde encontrar a guia Módulos](Redelcom/importar-librería2.png)
 
 </center>
 
@@ -17,7 +17,7 @@ Para integrar a biblioteca `*.jar NeptuneLiteAPI` e habilitar a impressão de co
 
 </center>
 
-![imagem mostrando onde encontrar a biblioteca](/images/Redelcom/importar-librería3.png)
+![imagem mostrando onde encontrar a biblioteca](Redelcom/importar-librería3.png)
 
 </center>
 
@@ -25,7 +25,7 @@ Para integrar a biblioteca `*.jar NeptuneLiteAPI` e habilitar a impressão de co
 
 </center>
 
-![imagem mostrando onde navegar](/images/Redelcom/importar-librería4.png)
+![imagem mostrando onde navegar](Redelcom/importar-librería4.png)
 
 </center>
 
@@ -33,7 +33,7 @@ Para integrar a biblioteca `*.jar NeptuneLiteAPI` e habilitar a impressão de co
 
 </center>
 
-![imagem mostrando onde encontrar as Dependências do Módulo](/images/Redelcom/integrar-librería5.png)
+![imagem mostrando onde encontrar as Dependências do Módulo](Redelcom/integrar-librería5.png)
 
 </center>
 

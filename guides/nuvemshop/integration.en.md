@@ -32,7 +32,7 @@ To **link your Mercado Pago account to Tiendanube**, follow these steps:
 3. Click on "Settings" and then on "Activate".
 4. You are going to be redirected to Mercado Pago so you can log in with your account information. To authorize the connection, click on "Allow".
 
-![Payments Connect - Nuvem Shop](/images/nuvemshop/mx_tientanube_connect.gif)
+![Payments Connect - Nuvem Shop](nuvemshop/mx_tientanube_connect.gif)
 
 ------------
 

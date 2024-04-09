@@ -36,20 +36,20 @@ To integrate Checkout Pro, follow the steps below.
 ----[mlm, mpe, mco, mlu, mlc]---- 
 <center>
 
-![Payments Checkout Pro - Nuvemshop](/images/nuvemshop/cho-pro-mlm-es.gif)
+![Payments Checkout Pro - Nuvemshop](nuvemshop/cho-pro-mlm-es.gif)
 
 </center>
 ------------
 
 ----[mla]---- 
 
-![Payments Checkout Pro - Nuvemshop](/images/nuvemshop/cho-pro-mla-es.png)
+![Payments Checkout Pro - Nuvemshop](nuvemshop/cho-pro-mla-es.png)
 
 ------------
 ----[mlb]---- 
 <center>
 
-![Payments Checkout Pro - Nuvemshop](/images/nuvemshop/cho-pro-pt.gif)
+![Payments Checkout Pro - Nuvemshop](nuvemshop/cho-pro-pt.gif)
 
 </center>
 

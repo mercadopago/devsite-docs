@@ -50,4 +50,4 @@ Para **configurar Mercado Crédito en el checkout de tu tienda**, sigue los paso
 
 ------------
 
-![woo-credits-admin-es](/images/woocomerce/woo-credits-es.png)
+![woo-credits-admin-es](woocomerce/woo-credits-es.png)

@@ -12,7 +12,7 @@
 
 ### Default state
 
-![Mercado Pago payment button](/images/paybutton.png)
+![Mercado Pago payment button](paybutton.png)
 
 ### Customization
 
@@ -24,7 +24,7 @@ By default the button contains the text *"Pay"*. You can modify the text of the 
 data-button-label="Pay"
 ```
 
-![Payment button mercado pago - modified label](/images/paybutton-modified-label.png)
+![Payment button mercado pago - modified label](paybutton-modified-label.png)
 
 #### Style
 
@@ -47,7 +47,7 @@ button.mercadopago-button {
 }
 ```
 
-![Payment button Mercado Pago modified CSS](/images/paybutton-modified-css.png)
+![Payment button Mercado Pago modified CSS](paybutton-modified-css.png)
 
 
 ## Colors in the interface
@@ -56,7 +56,7 @@ button.mercadopago-button {
 
 #### Default state
 
-![Standard status elements](/images/cow/cow-ui-elements.png)
+![Standard status elements](cow/cow-ui-elements.png)
 
 #### Customization
 
@@ -75,14 +75,14 @@ The value of the attribute must be in hexadecimal format. For example:
 data-elements-color="#c0392b"
 ```
 
-![Customization elements](/images/cow/cow-ui-elements--custom.png)
+![Customization elements](cow/cow-ui-elements--custom.png)
 
 
 ### Header
 
 #### Default state
 
-![Standard status header Mercado Pago](/images/cow/cow-ui-header.png)
+![Standard status header Mercado Pago](cow/cow-ui-header.png)
 
 #### Customization
 
@@ -94,7 +94,7 @@ The value of the attribute must be in hexadecimal format. For example:
 data-header-color="#c0392b"
 ```
 
-![Header customization Mercado Pago](/images/cow/cow-ui-header--custom.png)
+![Header customization Mercado Pago](cow/cow-ui-header--custom.png)
 
 
 ### Text color
@@ -107,7 +107,7 @@ For a *light* element color, the text color will be *black* or `# 000`. For exam
 data-elements-color="#81ecec" <!-- Light color -->
 ```
 
-![Font color in light element Mercado Pago](/images/cow/cow-ui-fontcolor__light.png)
+![Font color in light element Mercado Pago](cow/cow-ui-fontcolor__light.png)
 
 For a *dark* element color, the text color will be *white* or `# fff`. For example:
 
@@ -115,13 +115,13 @@ For a *dark* element color, the text color will be *white* or `# fff`. For examp
 data-elements-color="#8e44ad" <!-- Dark color -->
 ```
 
-![Font color in dark element Mercado Pago](/images/cow/cow-ui-fontcolor__dark.png)
+![Font color in dark element Mercado Pago](cow/cow-ui-fontcolor__dark.png)
 
 ## Purchase detail
 
 ### Default state
 
-![Purchase detail standard status](/images/cow/cow-summary.png)
+![Purchase detail standard status](cow/cow-summary.png)
 
 
 ### Customization

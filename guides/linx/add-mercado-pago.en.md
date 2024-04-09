@@ -13,5 +13,5 @@ To **add Mercado Pago to your store**, follow these steps:
 1. Define a name for Mercado Pago V2 method of payment and select "Active" state.
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_adicione_meio_pagamento-1.gif)
+![LINX Configuracao](linx/linx_adicione_meio_pagamento-1.gif)
 <p>&nbsp;</p>

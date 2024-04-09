@@ -142,7 +142,7 @@ En la siguiente tabla mostramos con más detalle los posibles valores que se env
 
 La configuración de los webhooks se realiza a través del Panel del desarrollador. A continuación explicaremos cómo indicar las URLs que serán notificadas y cómo configurar los eventos para los que se recibirán notificaciones.
 
-![webhooks](/images/notifications/webhooks_pt.png)
+![webhooks](notifications/webhooks_pt.png)
 
 1. Si aún no tienes una aplicación creada, accede a tu [Panel del desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) y haz clic en **Entrar** para iniciar sesión si aún no está conectado.
 2. Con la aplicación creada, ve a la pestaña Notificaciones de Webhooks en tu Panel de control y configura las [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/webhooks) de **producción** y **prueba** de las que se recibirán notificaciones. 

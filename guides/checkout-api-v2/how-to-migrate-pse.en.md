@@ -672,15 +672,15 @@ Below, we show you examples of messages that you can offer, according to the thr
 
 #### Approved status
 
-![image of an approved transaction and the redirection ](/images/api/pse-callback-approved.png)
+![image of an approved transaction and the redirection ](api/pse-callback-approved.png)
 
 #### Pending status
 
-![Pending transaction image](/images/api/pse-callback-pending.png)
+![Pending transaction image](api/pse-callback-pending.png)
 
 #### Rejected status
 
-![Rejected transaction image](/images/api/pse-callback-rejected.png)
+![Rejected transaction image](api/pse-callback-rejected.png)
 
 
 ------------

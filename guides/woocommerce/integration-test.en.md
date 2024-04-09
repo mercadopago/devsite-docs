@@ -19,7 +19,7 @@ Here's how to test the integration:
 
 <center>
 
-![Create account](/images/woocomerce/test-create-account-es.gif)
+![Create account](woocomerce/test-create-account-es.gif)
 
 </center>
 
@@ -28,29 +28,29 @@ Here's how to test the integration:
 
 <center>
 
-![Login](/images/woocomerce/test-login-esp.gif)
+![Login](woocomerce/test-login-esp.gif)
 
 </center>
 
 6. Access the application created in the previous step and click on **Production credentials** in the left menu. Copy the `access_token` and the `public_key`.
 
-![Production credentials](/images/woocomerce/test-prod-credentials-es.png)
+![Production credentials](woocomerce/test-prod-credentials-es.png)
 
 7. Go to the settings of the WooCommerce panel (**WooCommerce > Mercado Pago > Integrate your store with Mercado Pago**).
 8. Enter the production credentials `access_token` and `public_key` of the seller's test account in the **Production credentials** field.
 9. In the application created in step 5, click on **Test credentials** in the left menu. Copy the `access_token` and `public_key`.
 
-![Test credentials](/images/woocomerce/test-test-credentials-es.png)
+![Test credentials](woocomerce/test-test-credentials-es.png)
 
 10. Also, enter the test credentials `access_token` and `public_key` of the seller's test account in the **Test credentials** field.
 
-![Panel](/images/woocomerce/test-woo-es.png)
+![Panel](woocomerce/test-woo-es.png)
 
 11. Click on **Save and continue**.
 
 12. In the WooCommerce panel, go to step "4. Test your store before selling" and select the option **Sales mode (production)**.
 
-![Modo](/images/woocomerce/test-woo-modeprod-es.png)
+![Modo](woocomerce/test-woo-modeprod-es.png)
 
 13. Click on **Save changes**.
 14. Open a new incognito window and log in to Mercado Pago using the buyer test account created in step 3.
@@ -90,22 +90,22 @@ Additionally, the orders will be recorded in the test seller's Mercado Pago acco
 1. Access **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** in the Mercado Pago admin and select the application you want to test.
 2. Click on **Production credentials** in the left menu. Copy the `access_token` and `public_key`.
 
-![Production credentials](/images/woocomerce/test-prod-credentials-api-es.png)
+![Production credentials](woocomerce/test-prod-credentials-api-es.png)
 
 3. Go to the WooCommerce panel settings (**WooCommerce > Mercado Pago > Integrate store with Mercado Pago**).
 4. Enter the production credentials `access_token` and `public_key` in the **Production credentials** field.
 5. In your application, click on **Test credentials** in the left menu. Copy the `access_token` and `public_key`.
 
-![Test credentials](/images/woocomerce/test-test-credentials-api-es.png)
+![Test credentials](woocomerce/test-test-credentials-api-es.png)
 
 6. Also, enter the test credentials `access_token` and `public_key` in the **Test credentials** field.
 
-![Panel](/images/woocomerce/test-woo-es.png)
+![Panel](woocomerce/test-woo-es.png)
 
 7. Click on **Save and continue**.
 8. In the WooCommerce panel, go to step "4. Test your store before selling" and select the **Test mode** option.
 
-![Modo](/images/woocomerce/test-woo-testmode-es.png)
+![Modo](woocomerce/test-woo-testmode-es.png)
 
 9. Click on **Save changes**.
 10. Access your store and make a purchase by providing test information, such as a different phone number and email address than the one associated with your Mercado Pago account. In the "Documento" field, select the **OTHER** option and enter 9 digits. Also, use the test cards available in the [documentation](/developers/en/docs/woocommerce/additional-content/your-integrations/test/cards) corresponding.

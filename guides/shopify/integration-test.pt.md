@@ -24,12 +24,12 @@ Veja abaixo como testar a integração:
 2. Clique em **Contas de teste** no menu à esquerda.
 3. Dentro da seção **Contas de teste**, clique em **Criar conta de teste** e crie duas contas diferentes: uma para vendedor e outra para comprador. Não é possível utilizar a mesma conta de teste para vendedor e comprador. Consulte a [documentação de Contas de teste](/developers/pt/docs/shopify/additional-content/your-integrations/test/accounts) para acessar o passo a passo de criação de contas teste.
 
-![Criar conta](/images/shopify/test-create-account.gif)
+![Criar conta](shopify/test-create-account.gif)
 
 4. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do vendedor criada no passo anterior.
 5. Na mesma janela anônima logada como vendedor, acesse o [Painel do desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) e crie uma nova aplicação, seguindo as instruções detalhadas na [documentação do Painel do desenvolvedor.](/developers/pt/docs/shopify/additional-content/your-integrations/dashboard)
 
-![Login](/images/shopify/test-login.gif)
+![Login](shopify/test-login.gif)
 ----[mlb]----
 Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para processar os pagamentos:
 ## Checkout Pro
@@ -42,13 +42,13 @@ Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para proc
 6. Acesse a aplicação criada no passo 5 e clique em **Credenciais de produção** no menu à esquerda. Copie a `public_key` e o `access_token`.
 
 ------------
-![Credenciais de produção](/images/shopify/test-prod-credentials.png)
+![Credenciais de produção](shopify/test-prod-credentials.png)
 
 7. Vá até as configurações do painel da Shopify (**Configurações > Pagamentos**) e clique em **Gerenciar** no provedor do Mercado Pago.
 ----[mlb]----
 8. Insira o `client_id` e o `client_secret` da conta de teste do vendedor.
 
-![Painel](/images/shopify/test-pro-shopify.png)
+![Painel](shopify/test-pro-shopify.png)
 
 9. Clique em **Salvar**.
 
@@ -56,7 +56,7 @@ Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para proc
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 8. Insira a `public_key` e o `access_token` da conta de teste do vendedor.
 
-![Painel](/images/shopify/test-pro-shopify-es-all.jpg)
+![Painel](shopify/test-pro-shopify-es-all.jpg)
 
 9. Clique em **Guardar credenciais**.
 
@@ -81,13 +81,13 @@ Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para proc
 
 6. Acesse a aplicação criada no passo 5 e clique em **Credenciais de produção** no menu à esquerda. Copie a `public_key`.
 
-![Credenciais de produção](/images/shopify/test-prod-credentials.png)
+![Credenciais de produção](shopify/test-prod-credentials.png)
 
 7. Vá até as configurações do painel da Shopify (**Apps > Checkout Transparente MP**).
 8. Insira a `public_key` da conta de teste do vendedor.
 9. Ative o **Modo Produção para checkouts Mercado Pago**. Como estamos utilizando contas de teste para testar a integração, é necessário habilitar o modo produtivo em Checkout Transparente.
 
-![Painel](/images/shopify/test-api-shopify.png)
+![Painel](shopify/test-api-shopify.png)
 
 10. Clique em **Salvar alterações**.
 11. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do comprador criada no passo 3.

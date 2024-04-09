@@ -13,7 +13,7 @@ After the agreement creation, it is necessary to obtain the buyer's approval to 
 
 See the diagram illustrating the buyer's approval process below.
 
-![Get approval](/images/wallet-connect/get-payer-approval.en.png)
+![Get approval](wallet-connect/get-payer-approval.en.png)
 
 The sequence diagram previously displayed illustrates that the buyer's confirmation occurs simultaneously with the purchasing process. Within this scenario, the buyer grants authorization to integrate their Mercado Pago account, allowing the use of various payment methods offered to complete the transaction.
 

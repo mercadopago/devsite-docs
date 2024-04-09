@@ -6,4 +6,4 @@ Keep the data grouped thematically and provide context to the user about the ste
 * **Subheadings**: use them to give context or explain which action is expected.
 * **Explanatory texts**: use them to provide explanations or deepen information, whenever necessary, to avoid doubts.
 
-![en aspectos generales - segmenta tu contenido](/images/best-practices-guide/EngAspectosGeneralesSegmentaTuContenido.png)
+![en aspectos generales - segmenta tu contenido](best-practices-guide/EngAspectosGeneralesSegmentaTuContenido.png)

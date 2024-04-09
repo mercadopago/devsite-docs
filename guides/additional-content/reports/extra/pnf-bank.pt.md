@@ -17,7 +17,7 @@ A venda estará dividida no número de parcelas em que foi realizada. Portanto, 
 
 Na coluna `DESCRIPTION` você pode identificar a parcela com o valor `installment` e na coluna `INSTALLMENTS` você pode ver a que número de parcela refere cada uma.
 
-![Ejemplo de liberación de cuota](/images/manage-account/reports/reports-information-details/pnf-liberacion-de-cuota-bank.png)
+![Ejemplo de liberación de cuota](manage-account/reports/reports-information-details/pnf-liberacion-de-cuota-bank.png)
 
 ## Tipos de devoluções
 
@@ -31,7 +31,7 @@ Na coluna `DESCRIPTION` você pode identificar cada parcela com o valor `install
 
 > Se você tiver dúvidas sobre quais as parcelas relativas a um pagamento, procure os movimentos que tiverem o mesmo `SOURCE_ID`.
 
-![Ejemplo de reembolso antes de liberar alguna cuota](/images/manage-account/reports/reports-information-details/pnf-reembolso-antes-de-liberar-bank.png)
+![Ejemplo de reembolso antes de liberar alguna cuota](manage-account/reports/reports-information-details/pnf-reembolso-antes-de-liberar-bank.png)
 
 > NOTE
 >
@@ -54,7 +54,7 @@ Para identificar este caso, você pode ver na coluna `DESCRIPTION` o valor `char
 
 > Se você tiver dúvidas sobre quais as parcelas relativas a um pagamento, procure os movimentos que tiverem o mesmo `SOURCE_ID`.
 
-![Ejemplo de contracargo](/images/manage-account/reports/reports-information-details/pnf-contracargo-luego-de-liberar-bank.png)
+![Ejemplo de contracargo](manage-account/reports/reports-information-details/pnf-contracargo-luego-de-liberar-bank.png)
 
 ## Adiantamento de parcelas
 
@@ -62,7 +62,7 @@ Se você solicitar um adiantamento, poderá ver todas as parcelas antecipadas no
 
 Na coluna `DESCRIPTION` você pode identificar cada parcela com o valor `installment` e a comissão como `fee-release_in_advance`.
 
-![Ejemplo de adelanto de cuotas](/images/manage-account/reports/reports-information-details/pnf-adelanto-de-cuotas-bank.png)
+![Ejemplo de adelanto de cuotas](manage-account/reports/reports-information-details/pnf-adelanto-de-cuotas-bank.png)
 
 > NOTE
 >

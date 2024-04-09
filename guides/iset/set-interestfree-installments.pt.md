@@ -10,7 +10,7 @@
 3. Escolha "Quantas parcelas você quer oferecer?" e clique em "Ativar" para confirmar as alterações.
 <p>&nbsp;</p>
 
-![Payments Connect - iSET](/images/iset/iset_account_installment_7.gif)
+![Payments Connect - iSET](iset/iset_account_installment_7.gif)
 <p>&nbsp;</p>
 E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
 

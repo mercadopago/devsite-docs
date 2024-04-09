@@ -4,7 +4,7 @@ Nuestros menúes se estructuran por niveles. En el **nivel 0**, tenemos los tít
 
 Para los **subniveles**, como ya mencionamos el verbo en el nivel 0, no será necesario volver a incluirlo. 
 
-![ejemplo-menu](/images/style-guide/ejemplo-menu-es.png)
+![ejemplo-menu](style-guide/ejemplo-menu-es.png)
 
 > WARNING
 >

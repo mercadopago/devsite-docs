@@ -274,7 +274,7 @@ Las notificaciones llegarán a tu correo electrónico registrado en Mercado Pago
 
 Puedes ver un ejemplo de cómo lucen estas notificaciones a continuación:
 
-![Email notification](/images/point-api/email-notification-es.png)
+![Email notification](point-api/email-notification-es.png)
 
 ## Activar notificaciones
 

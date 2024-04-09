@@ -60,7 +60,7 @@ Done! You have installed your Android application using `adb` to integrate your 
 
 </center>
 
-![image showing the platform-tools folder and the files in it](/images/Redelcom/adb-platformtools.jpg)
+![image showing the platform-tools folder and the files in it](Redelcom/adb-platformtools.jpg)
 
 </center>
 

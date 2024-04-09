@@ -25,26 +25,26 @@ Y listo, tu integración está configurada y ya estás ofreciendo Mercado Pago c
 ----[mla, mlc, mlu, mpe]----
 <p>&nbsp;</p>
 
-![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mla_mlc_mlu_mpe.gif)
+![Setting active in Wix](wix/wix_pt_connect_configuration_mla_mlc_mlu_mpe.gif)
 <p>&nbsp;</p>
 ------------
 
 ----[mlb]----
 <p>&nbsp;</p>
 
-![Setting connect in Wix](/images/wix/wix_pt_connect_configuration_mlb.gif)
+![Setting connect in Wix](wix/wix_pt_connect_configuration_mlb.gif)
 <p>&nbsp;</p>
 ------------
 
 ----[mco]----
 <p>&nbsp;</p>
 
-![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mco.gif)
+![Setting active in Wix](wix/wix_pt_connect_configuration_mco.gif)
 <p>&nbsp;</p>
 ------------
 
 ----[mlm]----
 <p>&nbsp;</p>
 
-![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mlm.gif)
+![Setting active in Wix](wix/wix_pt_connect_configuration_mlm.gif)
 ------------

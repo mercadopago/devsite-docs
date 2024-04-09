@@ -48,7 +48,7 @@ To configure Up to 12 installments without a card with Mercado Pago in the store
 4. Click **Save** to activate the configuration 
 ------------ 
 
-![Configure payment conditions](/images/vtex/paymentconditions-imagenv2-en.gif)
+![Configure payment conditions](vtex/paymentconditions-imagenv2-en.gif)
 
 > NOTE 
 > 

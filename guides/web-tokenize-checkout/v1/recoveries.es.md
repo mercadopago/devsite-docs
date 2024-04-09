@@ -35,7 +35,7 @@ Por ejemplo:
 </form>
 ```
 
-![Recuperos Mercado Pago Web Tokenize Checkout](/images/cow/cow-recovery-page.png)
+![Recuperos Mercado Pago Web Tokenize Checkout](cow/cow-recovery-page.png)
 
 ## Checkout abierto por defecto
 

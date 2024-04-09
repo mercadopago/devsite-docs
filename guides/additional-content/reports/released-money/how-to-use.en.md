@@ -35,11 +35,11 @@ If a transfer is not completed, the report remains valid. The amount will be ref
 
 Observe what comprises the Releases Report in the following example to identify the sections and analyze your own reports:
 ----[mla]----
-![Reporte de liquidaciones](/images/manage-account/reports/example-release-es.jpg)
+![Reporte de liquidaciones](manage-account/reports/example-release-es.jpg)
 
 ------------
 ----[mlm, mlb, mlc, mco, mlu, mpe]----
-![Reporte de liberaciones](/images/manage-account/reports/example-release-es.jpg)
+![Reporte de liberaciones](manage-account/reports/example-release-es.jpg)
 
 ------------
 The default version will show an extended view of the columns. The final report will have the most detailed information possible.
@@ -48,4 +48,4 @@ The default version will show an extended view of the columns. The final report 
 
 See the following example for the organization of the report:
 
-![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/example-nledger-es.jpg) 
+![Reporte de Dinero retirado Ejemplos Mercado Pago](manage-account/reports/example-nledger-es.jpg) 

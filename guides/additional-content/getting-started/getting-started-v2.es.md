@@ -145,7 +145,7 @@ Con las **SDKs de frontend**, puedes realizar llamadas para el token de tarjetas
 
 Si no tienes certeza de por dónde comenzar según tus conocimientos de programación, no te preocupes. Tenemos diferentes soluciones que se ajustan a tus necesidades. Sigue el diagrama que te compartimos a continuación para descubrir cuál es tu producto ideal.
 
-![Getting started](/images/getting-started/getting-started-diagram2-es.png)
+![Getting started](getting-started/getting-started-diagram2-es.png)
 
 Para obtener detalles sobre los **medios de pago aceptados en cada país**, consulta la lista completa de [disponibilidad de medios de pago](/developers/es/docs/sales-processing/payment-methods).
 

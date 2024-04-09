@@ -10,7 +10,7 @@
 1. Choose "How many do you want to offer?" and push "Activate" button to confirm changes.
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_parcelamento_conta-5.gif)
+![LINX Configuracao](linx/linx_parcelamento_conta-5.gif)
 <p>&nbsp;</p>
 
 Ready! You are already offering interest free installments with the configured financing cost.

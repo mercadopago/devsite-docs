@@ -22,4 +22,4 @@ If you want to **show Mercado Credits in your store's checkout**, follow the ste
 4. To inform your clients of this new payment method in each product web page, you must search for the **Inform your customers about the option of paying in installments without a card**, and click on the slider button that will enable this component.
 5. Click the **Save all changes button** to finish with your configuration.
 
-![woo-credits-admin-en](/images/woocomerce/woo-credits-en.png)
+![woo-credits-admin-en](woocomerce/woo-credits-en.png)

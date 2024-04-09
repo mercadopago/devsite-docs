@@ -25,7 +25,7 @@ Com as credenciais em mãos, você pode integrar as soluções conectando às pl
 >
 > Se você não é desenvolvedor, recomendamos que você integre conectando as soluções de pagamento do Mercado Pago às mais de 80 plataformas de e-commerce nas quais estamos presentes.
 
-![Getting started](/images/getting-started/getting-started-diagram2-pt.png)
+![Getting started](getting-started/getting-started-diagram2-pt.png)
 
 ## Conectando às plataformas
 

@@ -13,7 +13,7 @@ To **activate your Mercado Pago account in iSET**, follow these steps:
 1. Click on “Close” and then on “Save changes”.
 <p>&nbsp;</p>
 
-![Payments Connect - iSET](/images/iset/iset_active_modulo_1.gif)
+![Payments Connect - iSET](iset/iset_active_modulo_1.gif)
 <p>&nbsp;</p>
 
 Done! Mercado Pago is now installed on your store.

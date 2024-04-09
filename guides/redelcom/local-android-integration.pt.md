@@ -14,6 +14,6 @@ Confira o diagrama a seguir, que detalha o funcionamento da integração local c
 
 </center>
 
-![Diagrama explicando a integração local](/images/Redelcom/Integrate-via-Android.png)
+![Diagrama explicando a integração local](Redelcom/Integrate-via-Android.png)
 
 </center>

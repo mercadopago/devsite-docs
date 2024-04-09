@@ -33,6 +33,6 @@ Y en la columna `SETTLEMENT_NET_AMOUNT` encontrarás el impacto real sobre tu di
 
 Observa cómo está compuesto el reporte de Todas las transacciones en este ejemplo para identificar las operaciones y leer tus propios reportes:
 
-![Reporte de Todas las transacciones Ejemplos Mercado Pago](/images/manage-account/reports/example-settlement-es.png)
+![Reporte de Todas las transacciones Ejemplos Mercado Pago](manage-account/reports/example-settlement-es.png)
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe tendrá la mayor cantidad de detalle posible.

@@ -28,7 +28,7 @@ To **synchronize your Mercado Pago account to Loja Integrada**, follow these ste
 2. Click on “Mercado Pago” and then on "Synchronize Mercado Pago account”.
 3. You are going to be redirected to Mercado Pago so that you can enter your account with your account information. To authorize the connection, click on “Allow”.
 
-![Installing Mercado Pago - Loja Integrada](/images/lojaintegrada/lojaintegrada-connect-1.gif)
+![Installing Mercado Pago - Loja Integrada](lojaintegrada/lojaintegrada-connect-1.gif)
 
 Done! Mercado Pago account is synchronized with your site and you can start charging.
 
@@ -64,7 +64,7 @@ Checkout Pro is **the integration that allows you to charge in the Mercado Pago 
 2. In the item “Checkout Pro” change the option to “Activated”.
 3. Finally, click on “Save changes”.
 
-![Activating Checkout transparent and Checkout redirected - Loja Integrada](/images/lojaintegrada/lojaintegrada-checkout-1.gif)
+![Activating Checkout transparent and Checkout redirected - Loja Integrada](lojaintegrada/lojaintegrada-checkout-1.gif)
 
 Complete the information from your site that you want it to appear when your client make a payment:
 
@@ -82,7 +82,7 @@ Offer **Bank Ticket as a payment option**:
 4. If you wish that your payments with Bank Ticket have a discount, check the option “Use discount in your Bank Tickets?” and complete the percentage that you want to offer as a discount in “Discount applied”.
 5. Finally, click “Save changes”.
 
-![Setting ticket - Loja Integrada](/images/lojaintegrada/lojaintegrada-ticket-1.gif)
+![Setting ticket - Loja Integrada](lojaintegrada/lojaintegrada-ticket-1.gif)
 
 ## Installments settings
 
@@ -101,7 +101,7 @@ Offer **Bank Ticket as a payment option**:
   - Lastly, according to your account settings, **choose the number of interest-free monthly installments for your payments**.
 3. Finally, click “Save changes”.
 
-![Setting credit card - Loja Integrada](/images/lojaintegrada/lojaintegrada-credit-card-1.gif)
+![Setting credit card - Loja Integrada](lojaintegrada/lojaintegrada-credit-card-1.gif)
 
 ### Set interest free installments in your Mercado Pago account
 
@@ -109,6 +109,6 @@ Offer **Bank Ticket as a payment option**:
 2. Access the option “Settings”, navigate to “Offering interest free installments” and click “Activate”.
 3. Choose “How many do you want to offer?” and confirm the changes with the “Activate” button.
 
-![Setting account installment - Loja Integrada](/images/lojaintegrada/lojaintegrada-account-installment-1.gif)
+![Setting account installment - Loja Integrada](lojaintegrada/lojaintegrada-account-installment-1.gif)
 
 > For more information, visit the [official Loja Integrada site](https://lojaintegrada.com.br/).

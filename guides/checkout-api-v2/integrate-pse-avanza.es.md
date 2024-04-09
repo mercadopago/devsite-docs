@@ -730,15 +730,15 @@ A continuación, te mostramos ejemplos de mensajes que puedes ofrecerle, de acue
 
 #### Estado aprobado
 
-![imagen de transacción exitosa y redireccionamiento](/images/api/pse-callback-approved.png)
+![imagen de transacción exitosa y redireccionamiento](api/pse-callback-approved.png)
 
 #### Estado pendiente
 
-![imagen de transacción pendiente](/images/api/pse-callback-pending.png)
+![imagen de transacción pendiente](api/pse-callback-pending.png)
 
 #### Estado rechazado
 
-![imagen de transacción rechazada](/images/api/pse-callback-rejected.png)
+![imagen de transacción rechazada](api/pse-callback-rejected.png)
 
 
 ## Expiración

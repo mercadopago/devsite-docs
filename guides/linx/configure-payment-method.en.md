@@ -20,7 +20,7 @@ Once you added the method of payment, **set up data for integration with Mercado
 1. Finally, click on "Save".
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_configurando_integracao-2.gif)
+![LINX Configuracao](linx/linx_configurando_integracao-2.gif)
 <p>&nbsp;</p>
 
 ## Set up credit card data 
@@ -46,7 +46,7 @@ To **set up credit card data in your store**, follow these steps:
 1. Click on "Save".
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_configurando_cartao-3.gif)
+![LINX Configuracao](linx/linx_configurando_cartao-3.gif)
 <p>&nbsp;</p>
 
 > WARNING
@@ -68,5 +68,5 @@ To **set up boleto data in your store**, follow these steps:
 1. Finally, click on "Save".
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_configurando_boleto-4.gif)
+![LINX Configuracao](linx/linx_configurando_boleto-4.gif)
 <p>&nbsp;</p>

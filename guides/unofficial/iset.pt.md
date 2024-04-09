@@ -29,7 +29,7 @@ Para **ativar sua conta do Mercado Pago na iSET**, siga os passos abaixo:
 4. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
 
-![Payments Connect - iSET](/images/iset/iset_active_modulo_1.gif)
+![Payments Connect - iSET](iset/iset_active_modulo_1.gif)
 <p>&nbsp;</p>
 E pronto! O Mercado Pago já está ativado.
 
@@ -48,7 +48,7 @@ Além disso, você pode [configurar parcelas sem acréscimos](#bookmark_configur
 5. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
 
-![Payments Connect - iSET](/images/iset/iset_configuration_methods_2.gif)
+![Payments Connect - iSET](iset/iset_configuration_methods_2.gif)
 <p>&nbsp;</p>
 
 ### Checkout Pro
@@ -65,7 +65,7 @@ Para ativar esse modelo de checkout, siga os passos abaixo:
 6. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
 
-![Payments Connect - iSET](/images/iset/iset_configuration_checkout_padrao_3.gif)
+![Payments Connect - iSET](iset/iset_configuration_checkout_padrao_3.gif)
 <p>&nbsp;</p>
 
 ### Checkout Transparente
@@ -82,7 +82,7 @@ Para ativar esse modelo de checkout, siga os passos abaixo:
 6. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
 
-![Payments Connect - iSET](/images/iset/iset_configuration_checkout_transparente_4.gif)
+![Payments Connect - iSET](iset/iset_configuration_checkout_transparente_4.gif)
 <p>&nbsp;</p>
 
 ### Ambos Checkouts
@@ -99,7 +99,7 @@ Para **ativar os dois checkout**, siga os passos abaixo:
 6. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
 
-![Payments Connect - iSET](/images/iset/iset_configuration_checkout_ambos_5.gif)
+![Payments Connect - iSET](iset/iset_configuration_checkout_ambos_5.gif)
 <p>&nbsp;</p>
 
 ## Configuração de parcelamento
@@ -128,7 +128,7 @@ Estabeleça a quantidade máxima ou mínima de parcelas e a aplicação de acré
 5. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
 
-![Payments Connect - iSET](/images/iset/iset_configuration_installments_6.gif)
+![Payments Connect - iSET](iset/iset_configuration_installments_6.gif)
 <p>&nbsp;</p>
 
 ## Configurando o parcelamento em sua conta do Mercado Pago
@@ -138,7 +138,7 @@ Estabeleça a quantidade máxima ou mínima de parcelas e a aplicação de acré
 3. Escolha "Quantas parcelas você quer oferecer?" e clique em "Ativar" para confirmar as alterações.
 <p>&nbsp;</p>
 
-![Payments Connect - iSET](/images/iset/iset_account_installment_7.gif)
+![Payments Connect - iSET](iset/iset_account_installment_7.gif)
 <p>&nbsp;</p>
 E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
 
@@ -162,7 +162,7 @@ Para **configurar as informações de pedido em sua loja**, siga os passos abaix
 4. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
 
-![Payments Connect - iSET](/images/iset/iset_configuration_informacion_9.gif)
+![Payments Connect - iSET](iset/iset_configuration_informacion_9.gif)
 <p>&nbsp;</p>
 
 > WARNING

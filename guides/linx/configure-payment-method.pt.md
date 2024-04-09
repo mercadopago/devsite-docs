@@ -20,7 +20,7 @@ Após adicionar o meio de pagamento, **configure os dados de sua integração co
 1. Por último, clique em "Salvar".
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_configurando_integracao-2.gif)
+![LINX Configuracao](linx/linx_configurando_integracao-2.gif)
 <p>&nbsp;</p>
 
 ## Configurando os dados de cartão de crédito
@@ -46,7 +46,7 @@ Para **configurar os dados de Cartão de Crédito em sua loja**, siga os passos 
 1. Por último, clique em "Salvar".
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_configurando_cartao-3.gif)
+![LINX Configuracao](linx/linx_configurando_cartao-3.gif)
 <p>&nbsp;</p>
 
 > WARNING
@@ -68,5 +68,5 @@ Para **configurar os dados de Boleto Bancário o em sua loja**, siga os passos a
 1. Por último, clique em "Salvar".
 <p>&nbsp;</p>
 
-![LINX Configuracao](/images/linx/linx_configurando_boleto-4.gif)
+![LINX Configuracao](linx/linx_configurando_boleto-4.gif)
 <p>&nbsp;</p>

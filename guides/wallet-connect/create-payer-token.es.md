@@ -4,7 +4,7 @@ Creado la vinculación y otorgada la aprobación del comprador, se debe crear el
 
 Consulte el siguiente diagrama que ilustra cómo funciona el flujo de creación de un _token_ de pago.
 
-![Generar token](/images/wallet-connect/create-payer-token-v2-es.png)
+![Generar token](wallet-connect/create-payer-token-v2-es.png)
 
 Para crear un _payer token_, envíe un POST con todos los atributos necesarios al endpoint [/v2/wallet_connect/agreements/{agreementId}/payer_token](/developers/es/reference/wallet_connect/_wallet_connect_agreements_agreement_id_payer_token/post) y ejecute la solicitud o, si lo prefiere, use el `curl` disponible a continuación.
 

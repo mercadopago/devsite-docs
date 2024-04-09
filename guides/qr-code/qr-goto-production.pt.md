@@ -20,7 +20,7 @@ Para medir a qualidade da sua integração com o Código QR, siga as etapas desc
 1. Acesse [Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) no painel superior direito do Devsite. 
 2. Em seguida, clique no aplicativo criado e selecione **Avaliar a qualidade** para acessar a ferramenta na qual você pode medir a qualidade da sua integração.
 
-![Detalhes da aplicação no Painel do Desenvolvedor](/images/qr/homologacion-qr-pt.png)
+![Detalhes da aplicação no Painel do Desenvolvedor](qr/homologacion-qr-pt.png)
 
 3. Siga as instruções fornecidas pela ferramenta de homologação para realizar o processo. Tenha em mente que as ações indicadas como **necessárias** devem ser concluídas para acumular pontos que irão melhorar a qualidade da sua integração, enquanto as indicadas como **boas práticas** são recomendadas, mas não afetarão a pontuação.
 

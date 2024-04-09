@@ -6,4 +6,4 @@ Mantenha os dados agrupados por tema e forneça contexto ao usuário sobre as et
 * **Subtítulos**: servem para contextualizar ou explicar qual ação deve ser realizada.
 * **Textos explicativos**: fornece explicações ou aprofunda informações, sempre que necessário, para evitar dúvidas.
 
-![pt aspectos generales - segmenta tu contenido](/images/best-practices-guide/PortAspectosGeneralesSegmentaTuContenido.png)
+![pt aspectos generales - segmenta tu contenido](best-practices-guide/PortAspectosGeneralesSegmentaTuContenido.png)

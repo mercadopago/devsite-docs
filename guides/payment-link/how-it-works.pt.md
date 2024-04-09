@@ -6,4 +6,4 @@
 
 > Não é necessário que seu cliente tenha uma conta Mercado Pago para fazer o pagamento!
 
-![Como funciona](/images/button/byl_criar_compartilhar.png)
+![Como funciona](button/byl_criar_compartilhar.png)

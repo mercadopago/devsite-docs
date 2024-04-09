@@ -17,7 +17,7 @@ Para que a integração funcione corretamente, é preciso:
 
 O modelo comprador funciona da seguinte forma: 
 
-![Fluxo de pagamento QR comprador](/images/mobile/flujo-qrc-PT.png)
+![Fluxo de pagamento QR comprador](mobile/flujo-qrc-PT.png)
 
 1. O Integrador faz a leitura do código QR através de um leitor.
 2. Com as informações para cobrança do pedido e código de leitura do QR, o integrador envia os dados de cobrança para API.

@@ -4,15 +4,15 @@ El QR es un **código único vinculado a tu cuenta de Mercado Pago** que te perm
 
 ----[mlb]----
 
-![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
+![Pagos QR Mercado Pago](mobile/qr_mla2.es.png)
 ------------
 ----[mla]----
 
-![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
+![Pagos QR Mercado Pago](mobile/qr_mla2.es.png)
 
 ------------
 ----[mlm]----
-![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
+![Pagos QR Mercado Pago](mobile/qr_mla2.es.png)
 ------------
 
 > NEXT_STEP_CARD_ES

@@ -10,7 +10,7 @@ To configure Checkout Pro, access the administration panel of your VTEX platform
     3. In the **Status** field, activate the payment condition using the sliding button. 
 4. Click **Save** to activate the configuration. 
 
-![Configure payment conditions](/images/vtex/paymentconditions-imagenv2-en.gif) 
+![Configure payment conditions](vtex/paymentconditions-imagenv2-en.gif) 
 
 > NOTE 
 > 

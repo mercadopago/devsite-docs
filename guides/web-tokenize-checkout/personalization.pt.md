@@ -63,11 +63,11 @@ checkout.render({
 
 #### Botão de pagamento padrão:
 
-![Default Label Button](/images/web-payment-checkout/default_label_button.png)<br/>
+![Default Label Button](web-payment-checkout/default_label_button.png)<br/>
 
 #### Personalizado:
 
-![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/>
+![Custom Label Button](web-payment-checkout/custom_label_button.png)<br/>
 
 #### Estilo
 Para utilizar seu próprio estilo inclua o seguinte código CSS:
@@ -89,7 +89,7 @@ button.mercadopago-button {
 }
 ```
 
-![Botón de pago con estilo personalizado Mercado Pago Web Tokenize Checkout](/images/paybutton-modified-css.png)
+![Botón de pago con estilo personalizado Mercado Pago Web Tokenize Checkout](paybutton-modified-css.png)
 
 ### Abertura automática do  Web Tokenize Checkout
 
@@ -131,7 +131,7 @@ Adicione o atributo `theme` da seguinte maneira às opções de inicialização 
 
 #### Status padrão
 
-![Standard status header Mercado Pago](/images/cow/cow-ui-header__pt.png)
+![Standard status header Mercado Pago](cow/cow-ui-header__pt.png)
 
 #### Personalização
 
@@ -145,13 +145,13 @@ theme: {
 ```
 ]]]
 
-![Header customization Mercado Pago](/images/cow/cow-ui-header--custom__pt.png)
+![Header customization Mercado Pago](cow/cow-ui-header--custom__pt.png)
 
 ### Elementos
 
 #### Status padrão
 
-![Standard status elements](/images/cow/cow-ui-elements__pt.png)
+![Standard status elements](cow/cow-ui-elements__pt.png)
 
 #### Personalização
 
@@ -170,7 +170,7 @@ theme: {
 }
 ```
 
-![Customization elements](/images/cow/cow-ui-elements--custom__pt.png)
+![Customization elements](cow/cow-ui-elements--custom__pt.png)
 
 ### Cores do texto
 
@@ -184,7 +184,7 @@ theme: {
 }
 ```
 
-![Personalización del color de fuente Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-fontcolor__light.png)
+![Personalización del color de fuente Mercado Pago Web Tokenize Checkout](cow/cow-ui-fontcolor__light.png)
 
 Para uma cor de elemento *escuro*, a cor do texto será *branca* ou `#fff.` Por exemplo:
 
@@ -194,13 +194,13 @@ theme: {
 }
 ```
 
-![Personalización de color de fuente en elementos oscuros Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-fontcolor__dark.png)
+![Personalización de color de fuente en elementos oscuros Mercado Pago Web Tokenize Checkout](cow/cow-ui-fontcolor__dark.png)
 
 ## Detalhe da compra
 
 ### Status padrão
 
-![Purchase detail standard status](/images/cow/cow-summary__pt.png)
+![Purchase detail standard status](cow/cow-summary__pt.png)
 
 ### Personalização
 

@@ -18,7 +18,7 @@ Além disso, você pode [configurar parcelas sem acréscimos](https://www.mercad
 5. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
 
-![Payments Connect - iSET](/images/iset/iset_configuration_methods_2.gif)
+![Payments Connect - iSET](iset/iset_configuration_methods_2.gif)
 <p>&nbsp;</p>
 
 ## Checkout Pro
@@ -34,7 +34,7 @@ Para ativar esse modelo de checkout, siga os passos abaixo:
 5. Complete os campos Client ID e Client Secret que são as [credenciais da sua conta do Mercado Pago](/developers/pt/docs/iset/additional-content/your-integrations/credentials).
 6. Clique em "Fechar" e depois em "Salvar Alterações".
 
-![Payments Connect - iSET](/images/iset/iset_configuration_checkout_padrao_3.gif)
+![Payments Connect - iSET](iset/iset_configuration_checkout_padrao_3.gif)
 
 ## Checkout Transparente
 
@@ -49,7 +49,7 @@ Para ativar esse modelo de checkout, siga os passos abaixo:
 5. Complete os campos Client ID, Client Secret e Public Key que são as [credenciais da sua conta do Mercado Pago](/developers/pt/docs/iset/additional-content/your-integrations/credentials).
 6. Clique em "Fechar" e depois em "Salvar Alterações".
 
-![Payments Connect - iSET](/images/iset/iset_configuration_checkout_transparente_4.gif)
+![Payments Connect - iSET](iset/iset_configuration_checkout_transparente_4.gif)
 
 ## Ambos Checkouts
 
@@ -64,7 +64,7 @@ Para **ativar os dois checkout**, siga os passos abaixo:
 5. Complete os campos Client ID, Client Secret e Public Key que são as [credenciais da sua conta do Mercado Pago](/developers/pt/docs/iset/additional-content/your-integrations/credentials).
 6. Clique em "Fechar" e depois em "Salvar Alterações".
 
-![Payments Connect - iSET](/images/iset/iset_configuration_checkout_ambos_5.gif)
+![Payments Connect - iSET](iset/iset_configuration_checkout_ambos_5.gif)
 
 <!-- -->
 > Para mais informações, visite o [site oficial da iSET](https://www.iset.com.br/).

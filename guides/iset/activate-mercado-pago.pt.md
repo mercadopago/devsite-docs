@@ -13,7 +13,7 @@ Para **ativar sua conta do Mercado Pago na iSET**, siga os passos abaixo:
 4. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
 
-![Payments Connect - iSET](/images/iset/iset_active_modulo_1.gif)
+![Payments Connect - iSET](iset/iset_active_modulo_1.gif)
 <p>&nbsp;</p>
 
 E pronto! O Mercado Pago já está ativado.

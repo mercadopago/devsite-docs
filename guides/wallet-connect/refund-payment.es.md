@@ -12,4 +12,4 @@ Con Wallet Connect, también es posible reembolsar un pago. Esta operación camb
 
 El diagrama a continuación ilustra el flujo de reembolso de un pago.
 
-![refund-a-payment](/images/wallet-connect/refund-a-payment.es.png)
+![refund-a-payment](wallet-connect/refund-a-payment.es.png)

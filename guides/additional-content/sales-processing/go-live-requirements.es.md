@@ -8,7 +8,7 @@ Para comenzar a recibir pagos, deberás **activar las credenciales de producció
 
 Para hacerlo, ingresa al [Panel del Desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) y, en el menú lateral, accede a **Producción > Credenciales de producción**. Allí encontrarás tu _Public Key_ y _Access Token_ productivos, que deberán reemplazar a los de prueba utilizados en etapas previas.
 
-![Credenciales de producción](/images/woocomerce/test-prod-credentials-es.png)
+![Credenciales de producción](woocomerce/test-prod-credentials-es.png)
 
 Para más información, consulta nuestra documemntación de [Credenciales](/developers/es/guides/additional-content/your-integrations/credentials).
 

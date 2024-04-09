@@ -42,14 +42,14 @@ Para habilitar boleto bancário, deberás también indicar en el campo inferior 
 ----[mlm, mpe, mco, mlu, mlc]---- 
 <center>
 
-![Payments Checkout Pro - Tiendanube](/images/nuvemshop/cho-pro-mlm-es.gif)
+![Payments Checkout Pro - Tiendanube](nuvemshop/cho-pro-mlm-es.gif)
 
 </center>
 ------------
 
 ----[mla]---- 
 
-![Payments Checkout Pro - Tiendanube](/images/nuvemshop/cho-pro-mla-es.png)
+![Payments Checkout Pro - Tiendanube](nuvemshop/cho-pro-mla-es.png)
 
 ------------
 

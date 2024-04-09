@@ -10,7 +10,7 @@ En esta documentación te explicaremos la configuración necesaria para recibir 
 
 A continuación explicaremos cómo indicar las URLs que serán notificadas y cómo configurar los eventos para los que se recibirán notificaciones.
 
-![ipn](/images/dashboard/ipn_es_.png)
+![ipn](dashboard/ipn_es_.png)
 
 1. Si aún no lo has hecho, crea una aplicación en el [Panel del desarrollador](/developers/panel/app).
 2. Con la aplicación creada, ve a la sección IPN en la página de **Detalles de la aplicación**.

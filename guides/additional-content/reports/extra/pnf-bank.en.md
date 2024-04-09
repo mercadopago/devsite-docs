@@ -17,7 +17,7 @@ Sale will be divided into number of installments it was made with. Therefore, th
 
 Column `DESCRIPTION` identifies the installment with `installment` value and column `INSTALLMENTS` show the number of installment each refers to.
 
-![Ejemplo de liberación de cuota](/images/manage-account/reports/reports-information-details/pnf-liberacion-de-cuota-bank.png)
+![Ejemplo de liberación de cuota](manage-account/reports/reports-information-details/pnf-liberacion-de-cuota-bank.png)
 
 ## Types of refunds
 
@@ -31,7 +31,7 @@ Column `DESCRIPTION` identifies each installment with `installment` value and to
 
 > If in doubt about payment installments, search activity with the same `SOURCE_ID`. 
 
-![Ejemplo de reembolso antes de liberar alguna cuota](/images/manage-account/reports/reports-information-details/pnf-reembolso-antes-de-liberar-bank.png)
+![Ejemplo de reembolso antes de liberar alguna cuota](manage-account/reports/reports-information-details/pnf-reembolso-antes-de-liberar-bank.png)
 
 > NOTE
 >
@@ -55,7 +55,7 @@ To identify this case, column `DESCRIPTION` show `chargeback` value for chargeba
 
 > If in doubt about payment installments, search activity with the same `SOURCE_ID`. 
 
-![Ejemplo de contracargo](/images/manage-account/reports/reports-information-details/pnf-contracargo-luego-de-liberar-bank.png)
+![Ejemplo de contracargo](manage-account/reports/reports-information-details/pnf-contracargo-luego-de-liberar-bank.png)
 
 ## Installments in advance
 
@@ -63,7 +63,7 @@ If you ask for an advance you will see all the installments in advance and relev
 
 Column `DESCRIPTION` identifies each installment with `installment` value and fee as `fee-release_in_advance`.
 
-![Ejemplo de adelanto de cuotas](/images/manage-account/reports/reports-information-details/pnf-adelanto-de-cuotas-bank.png)
+![Ejemplo de adelanto de cuotas](manage-account/reports/reports-information-details/pnf-adelanto-de-cuotas-bank.png)
 
 > NOTE
 >

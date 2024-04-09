@@ -11,7 +11,7 @@ Para configurar o Checkout Pro, acesse o painel de administração da sua plataf
 
 4. Clique em **Salvar** para ativar a configuração.
 
-![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-pt.gif)
+![Configurar condições de pagamento](vtex/paymentconditions-imagenv2-pt.gif)
 
 > NOTE
 >

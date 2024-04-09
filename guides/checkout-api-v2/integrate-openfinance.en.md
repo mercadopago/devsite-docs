@@ -181,7 +181,7 @@ To accomplish this, you can either redirect the user to the URL directly or pres
 
 An example of this flow is shown in the user's view:
 
-![Payment flow sample](/images/api/api-integrate-openfinance.gif)
+![Payment flow sample](api/api-integrate-openfinance.gif)
 
 ## Test the integration
 

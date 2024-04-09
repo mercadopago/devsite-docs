@@ -52,7 +52,7 @@ To configure these payment methods, access the administration panel of your VTEX
     3. In the **Status** field, activate the payment condition using the slider button. 
 4. Click **Save** to activate the configuration.
 
-![Configure payment conditions](/images/vtex/paymentconditions-imagenv2-en.gif)
+![Configure payment conditions](vtex/paymentconditions-imagenv2-en.gif)
 
 > NOTE 
 > 

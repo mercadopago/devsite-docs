@@ -16,4 +16,4 @@ Después de realizar la integración y las pruebas, su tienda está lista para e
 > </br> <br/>
 > Hay algunas razones que pueden afectar directamente la aprobación de pagos en su tienda. Vea más información en [Razones por las que se rechazan los pagos](/developers/es/docs/prestashop/additional-content/reasons-for-refusals).
 
-![Estado de pago](/images/prestashop/status_es.png)
+![Estado de pago](prestashop/status_es.png)

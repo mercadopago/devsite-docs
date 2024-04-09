@@ -5,12 +5,12 @@ Una vez instalado el plugin de Mercado Pago para WooCommerce, es necesario confi
 1. Accede a tu cuenta de [Wordpress](https://wordpress.com/).
 2. Ve al panel de tu cuenta y haz clic en **Plugins > Plugins instalados**.
 
-![Agregar plugin](/images/woocomerce/installed-plugins-es.png)
+![Agregar plugin](woocomerce/installed-plugins-es.png)
 
 3. Busca **Mercado Pago** en la barra de búsqueda a la derecha.
 4. El resultado de la búsqueda mostrará el plugin de Mercado Pago. Haz clic en **Configurar plugin**.
 
-![Plugin MP](/images/woocomerce/mercado-pago-plugin-es.png)
+![Plugin MP](woocomerce/mercado-pago-plugin-es.png)
 
 > NOTE
 >
@@ -24,7 +24,7 @@ A continuación, explicaremos cómo configurar cada elemento del plugin.
 
 1. Haz clic en **1. Ingressa tus credenciales para integrar tu tienda con Mercado Pago**.
 
-![Plugin MP](/images/woocomerce/insert-credentials-es.png)
+![Plugin MP](woocomerce/insert-credentials-es.png)
 
 2. Ahora, debes vincular tu cuenta de Mercado Pago a tu tienda utilizando tus credenciales. En el panel de administración de Mercado Pago, accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** y selecciona tu aplicación. Si aún no has creado una aplicación, consulta la [documentación del Panel del desarrollador](/developers/es/docs/woocommerce/additional-content/your-integrations/dashboard) para obtener más información.
 
@@ -36,17 +36,17 @@ A continuación, explicaremos cómo configurar cada elemento del plugin.
 
 3. Haz clic en **Credenciales de producción** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
 
-![Credenciales de producción](/images/woocomerce/test-prod-credentials-api-es.png)
+![Credenciales de producción](woocomerce/test-prod-credentials-api-es.png)
 
 4. Introduce tus credenciales de producción `access_token` y `public_key` en el campo **Credenciales de producción**, cuidando de **no invertir los campos al copiar y pegar las credenciales**.
 
 5. En tu aplicación, haz clic en **Credenciales de prueba** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
 
-![Credenciales de prueba](/images/woocomerce/test-test-credentials-api-es.png)
+![Credenciales de prueba](woocomerce/test-test-credentials-api-es.png)
 
 6. También introduce las credenciales de prueba `access_token` y `public_key` en el campo **Credenciales de prueba**, cuidando de **no invertir los campos al copiar y pegar las credenciales**.
 
-![Panel](/images/woocomerce/test-woo-es.png)
+![Panel](woocomerce/test-woo-es.png)
 
 7. Haz clic en **Guardar y continuar**.
 
@@ -64,7 +64,7 @@ En la sección **2. Personalizar información de tu tienda**, tienes la opción 
 * **Identificación en Actividades de Mercado Pago**: En las Actividades de Mercado Pago, verás el término ingresado en este campo antes del número del pedido.
 * **Categoría de la tienda**: Ingresa la categoría de los productos de tu tienda. Si no encuentras una categoría adecuada, selecciona "Other categories".
 
-![Panel](/images/woocomerce/customization-es.png) 
+![Panel](woocomerce/customization-es.png) 
 
 ### Opciones avanzadas
 
@@ -80,6 +80,6 @@ En **Opciones avanzadas de integración**, haz clic en **Ver opciones avanzadas*
 >
 > Para acceder a los logs de su tienda, regrese al panel administrativo del plugin en **WooCommerce > Mercado Pago** y haga clic en "¿Necesitas ayuda?". Dentro de este componente, siga el paso 4 para encontrar y descargar el historial de errores. En la página del **historial de errores**, tendrá acceso a todos los registros disponibles para su descarga.
 
-![Panel](/images/woocomerce/advanced-settings-es.png) 
+![Panel](woocomerce/advanced-settings-es.png) 
 
 Por último, haz clic en **Guardar y continuar**.

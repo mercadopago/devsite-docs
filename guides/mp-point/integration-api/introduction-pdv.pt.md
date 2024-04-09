@@ -4,7 +4,7 @@ A API de Integrações Point é uma ferramenta que possibilita a conexão dos se
 
 Veja abaixo o diagrama que ilustra o mecanismo de funcionamento da integração.
 
-![Diagram 1](/images/point-api/1-diagram-pt.png)
+![Diagram 1](point-api/1-diagram-pt.png)
 
 ----[mla]----
 > NOTE
@@ -42,4 +42,4 @@ Veja abaixo o diagrama que ilustra o mecanismo de funcionamento da integração.
 
 ### Funcionamento da API
 
-![Mercado Pago Point Flow](/images/point-api/2-flow-diagram-pt.png)
+![Mercado Pago Point Flow](point-api/2-flow-diagram-pt.png)

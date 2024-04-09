@@ -7,4 +7,4 @@ Es importante saber que el placeholder desaparece cuando el cursor se ubica sobr
 
 Tanto las labels como los placeholders deben ser cortos, directos y claros para evitar que el usuario cometa errores. 
 
-![es labels y placeholders dos&don't](/images/best-practices-guide/EspAspectosGeneralesLabelsPlaceholdersDoDont.png)
+![es labels y placeholders dos&don't](best-practices-guide/EspAspectosGeneralesLabelsPlaceholdersDoDont.png)

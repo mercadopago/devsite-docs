@@ -10,7 +10,7 @@ El prorrateo es la cantidad facturada al suscriptor si la suscripción comienza 
 
 A continuación mostramos un flujo de cómo funciona el cobro proporcional de pagos.
 
-![Basic-subscriptions](/images/subscriptions/linea-cobro-ES.png)
+![Basic-subscriptions](subscriptions/linea-cobro-ES.png)
 
 Para establecer un prorrateo para el pago de suscripciones, envía un POST con los parámetros `billing_day`, con el día del mes en que se debe realizar la facturación (este campo acepta valores del 1 al 28) y el ` billing_day_proportional` con el valor verdadero para el endpoint [/preapproval_plan](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/subscriptions/_preapproval_plan/post) y ejecuta la solicitud.
 

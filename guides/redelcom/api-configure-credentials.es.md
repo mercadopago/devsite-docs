@@ -4,7 +4,7 @@ Puedes generar solicitudes de pago en las terminales Redelcom utilizando [nuestr
 
 </center>
 
-![diagrama explicando la integración vía API](/images/Redelcom/integrate-via-API.png)
+![diagrama explicando la integración vía API](Redelcom/integrate-via-API.png)
 
 </center>
 

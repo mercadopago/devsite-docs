@@ -60,7 +60,7 @@ Ao concluir essas etapas, o aplicativo Android estará instalado e pronto para i
 
 </center>
 
-![imagen de la carpeta platform-tools y los archivos internos donde está adb.exe](/images/Redelcom/adb-platformtools.jpg)
+![imagen de la carpeta platform-tools y los archivos internos donde está adb.exe](Redelcom/adb-platformtools.jpg)
 
 </center>
 

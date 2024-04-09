@@ -13,6 +13,6 @@ La integración del Checkout API de Mercado Pago para tarjetas permite que pueda
 
 **Fields** utiliza componentes HTML iframe permite que los datos PCI (`cardNumber`,` securityCode`, y `expirationDate`) sean inaccesibles para terceros y procesados ​​por los servidores de Mercado Pago, aumentando la seguridad del comprador, vendedor y adquiriente.
 
-![Fields](/images/api/api-integration-introduction-v2-es.png)
+![Fields](api/api-integration-introduction-v2-es.png)
 
 Actualmente hay dos formas de implementar esta solución. La primera es mediante el uso de **métodos core**, donde el integrador es responsable de todo el flujo de pago, lo que permite una mayor flexibilidad para experiencias totalmente personalizadas. El segundo utiliza **cardForm**, un componente creado por nosotros que facilita la integración, realizando algunos pasos del proceso de forma automática.

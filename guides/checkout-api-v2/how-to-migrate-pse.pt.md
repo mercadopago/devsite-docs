@@ -670,15 +670,15 @@ Abaixo, apresentamos exemplos de mensagens que você pode exibir, alinhadas aos 
 
 #### Status aprovado
 
-![imagem de transação bem-sucedida e redirecionamento](/images/api/pse-callback-approved.png)
+![imagem de transação bem-sucedida e redirecionamento](api/pse-callback-approved.png)
 
 #### Status pendente
 
-![imagem de transação pendente](/images/api/pse-callback-pending.png)
+![imagem de transação pendente](api/pse-callback-pending.png)
 
 #### Status rejeitado
 
-![imagem de transação rejeitada](/images/api/pse-callback-rejected.png)
+![imagem de transação rejeitada](api/pse-callback-rejected.png)
 
 
 ------------

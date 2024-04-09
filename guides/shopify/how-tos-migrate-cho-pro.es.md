@@ -13,7 +13,7 @@ Aprende a instalar la nueva app y desinstalar la antigua para evitar la interrup
 
 <center>
 
-![migracion a](/images/shopify/migration-a-es.gif)
+![migracion a](shopify/migration-a-es.gif)
 
 </center>
 
@@ -25,7 +25,7 @@ Aprende a instalar la nueva app y desinstalar la antigua para evitar la interrup
 
 <center>
 
-![migracion b](/images/shopify/migration-b-es.gif)
+![migracion b](shopify/migration-b-es.gif)
 
 </center>
 
@@ -53,6 +53,6 @@ Después de instalar la nueva versión, es necesario desinstalar la versión ant
 
 <center>
 
-![migracion c](/images/shopify/migration-c-es.gif)
+![migracion c](shopify/migration-c-es.gif)
 
 </center>

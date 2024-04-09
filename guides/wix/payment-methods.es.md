@@ -58,4 +58,4 @@ Para activar este tipo de pago, sigue los pasos a continuación.
 
 ------------
 
-![Activating Checkout API](/images/wix/activacion-choapi.gif)
+![Activating Checkout API](wix/activacion-choapi.gif)

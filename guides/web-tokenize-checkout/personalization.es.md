@@ -65,11 +65,11 @@ checkout.render({
 
 #### Botón de pago por defecto:
 
-![Default Label Button](/images/web-payment-checkout/default_label_button.png)<br/>
+![Default Label Button](web-payment-checkout/default_label_button.png)<br/>
 
 #### Personalizado:
 
-![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/>
+![Custom Label Button](web-payment-checkout/custom_label_button.png)<br/>
 
 #### Estilo
 Para utilizar tu propio estilo, incluye el siguiente código CSS:
@@ -91,7 +91,7 @@ button.mercadopago-button {
 }
 ```
 
-![Botón de pago con estilo personalizado Mercado Pago Web Tokenize Checkout](/images/paybutton-modified-css.png)
+![Botón de pago con estilo personalizado Mercado Pago Web Tokenize Checkout](paybutton-modified-css.png)
 
 ### Apertura automática del Web Tokenize Checkout
 Añade el parámetro `autoOpen` a tus opciones de inicialización del checkout en tu integración para **mostrar automáticamente el Web Tokenize Checkout**, sin necesitar de la interacción con un botón u otro elemento para su apertura.
@@ -132,7 +132,7 @@ Agrega el atributo `theme` de la siguiente manera a las opciones de inicializaci
 
 #### Estado por defecto
 
-![Encabezado por defecto Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-header.png)
+![Encabezado por defecto Mercado Pago Web Tokenize Checkout](cow/cow-ui-header.png)
 
 #### Personalización
 
@@ -146,13 +146,13 @@ theme: {
 ```
 ]]]
 
-![Encabezado personalizado Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-header--custom.png)
+![Encabezado personalizado Mercado Pago Web Tokenize Checkout](cow/cow-ui-header--custom.png)
 
 ### Elementos
 
 #### Estado por defecto
 
-![Interfaz por defecto Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-elements.png)
+![Interfaz por defecto Mercado Pago Web Tokenize Checkout](cow/cow-ui-elements.png)
 
 #### Personalización
 
@@ -171,7 +171,7 @@ theme: {
 }
 ```
 
-![Interfaz personalizada Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-elements--custom.png)
+![Interfaz personalizada Mercado Pago Web Tokenize Checkout](cow/cow-ui-elements--custom.png)
 
 
 ### Color de texto
@@ -186,7 +186,7 @@ theme: {
 }
 ```
 
-![Personalización del color de fuente Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-fontcolor__light.png)
+![Personalización del color de fuente Mercado Pago Web Tokenize Checkout](cow/cow-ui-fontcolor__light.png)
 
 Para un color de elementos *oscuro*, el color del texto será *blanco* o `#fff`. Por ejemplo:
 
@@ -196,13 +196,13 @@ theme: {
 }
 ```
 
-![Personalización de color de fuente en elementos oscuros Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-fontcolor__dark.png)
+![Personalización de color de fuente en elementos oscuros Mercado Pago Web Tokenize Checkout](cow/cow-ui-fontcolor__dark.png)
 
 ## Detalle de la compra
 
 ### Estado por defecto
 
-![Detalle de compra Mercado Pago Web Tokenize Checkout](/images/cow/cow-summary.png)
+![Detalle de compra Mercado Pago Web Tokenize Checkout](cow/cow-summary.png)
 
 
 ### Personalización

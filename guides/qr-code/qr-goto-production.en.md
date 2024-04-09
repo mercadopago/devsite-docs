@@ -20,7 +20,7 @@ To measure the quality of your integration with QR Code, follow the steps below.
 1. Go to [Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) in the top-right panel of the Devsite. 
 2. Click on the application you created and select **Measure quality** to access the tool where you can perform your homologation. 
 
-![App details inside the Developers Dashboard](/images/qr/homologacion-qr-es.png)
+![App details inside the Developers Dashboard](qr/homologacion-qr-es.png)
 
 3. Follow the instructions provided by the homologation tool to complete the process. Please note that actions indicated as **required** must be completed to earn points that will improve the quality of your integration, while actions indicated as **best practices** are recommended but won't affect the score. 
 

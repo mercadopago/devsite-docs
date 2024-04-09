@@ -1,6 +1,6 @@
 Possible payment statuses are:
 
-![payment-status](/images/api/api-payment-status-en.png)
+![payment-status](api/api-payment-status-en.png)
 <br>
 <br>
 

@@ -115,11 +115,11 @@ Para conocer más, puedes acceder a la documentación de [URLs de retorno](/deve
 Para poder recibir y gestionar el Deep Link, deberás configurar en tu proyecto de React Native el scheme y path que componen los Deep Links que recibiste para redireccionar a alguna parte de tu aplicación. 
 Para ello, desde Xcode ubícate en la información de tu proyecto y agrega una nueva "URL Types".
 
-![xcode-paso1](/images/cow/xcode-paso1.png)
+![xcode-paso1](cow/xcode-paso1.png)
 
 Ingresa el **identifier** de su aplicación y la **URL Schemes** del Deep Link.
 
-![xcode-paso2](/images/cow/xcode-paso2.png)
+![xcode-paso2](cow/xcode-paso2.png)
 
 Esto generará el siguiente código en el archivo **ios/appname/Info.plist**:
 

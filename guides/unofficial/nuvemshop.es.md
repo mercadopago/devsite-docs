@@ -40,13 +40,13 @@ Para **vincular tu cuenta de Mercado Pago a Tiendanube**, sigue estos pasos:
 4. Vas a ser redirigido a Mercado Pago para que ingreses con los datos de tu cuenta. Para autorizar la conexión, haz clic en "Permitir".
 <p>&nbsp;</p>
 ----[mlb]----
-![Payments Connect - Nuvem Shop](/images/nuvemshop/nuvemshop_connect_1.gif)
+![Payments Connect - Nuvem Shop](nuvemshop/nuvemshop_connect_1.gif)
 ------------
 ----[mla]----
-![Payments Connect - Nuvem Shop](/images/nuvemshop/ar_tientanube_connect.gif)
+![Payments Connect - Nuvem Shop](nuvemshop/ar_tientanube_connect.gif)
 ------------
 ----[mlm, mlc, mlu, mpe, mco]----
-![Payments Connect - Nuvem Shop](/images/nuvemshop/mx_tientanube_connect.gif)
+![Payments Connect - Nuvem Shop](nuvemshop/mx_tientanube_connect.gif)
 ------------
 <p>&nbsp;</p>
 ¡Y listo! Mercado Pago ya se encuentra instalado en tu tienda.
@@ -100,13 +100,13 @@ Permite que el **cliente finalice la compra en tu tienda**, sin ser redirecciona
 3. Finalmente, haz clic en "Guardar cambios". ------------
 <p>&nbsp;</p>
 ----[mlb]----
-![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif)
+![Payments Checkout Transparente - Nuvem Shop](nuvemshop/nuvemshop_checkout_transparente_2.gif)
 ------------
 ----[mla]----
-![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_transparente.gif)
+![Payments Checkout Transparente - Nuvem Shop](nuvemshop/ar_tiendanube_checkout_transparente.gif)
 ------------
 ----[mlm, mlc, mlu, mpe, mco]----
-![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_transparente.gif)
+![Payments Checkout Transparente - Nuvem Shop](nuvemshop/mx_tiendanube_checkout_transparente.gif)
 ------------
 
 
@@ -123,13 +123,13 @@ Permite que el **cliente finalice la compra en tu tienda**, sin ser redirecciona
 3. Finalmente, haz clic en "Guardar cambios". ------------
 <p>&nbsp;</p>
 ----[mlb]----
-![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif)
+![Payments Checkout Pro - Nuvem Shop](nuvemshop/nuvemshop_checkout_redirect_3.gif)
 ------------
 ----[mla]----
-![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_redirect.gif)
+![Payments Checkout Pro - Nuvem Shop](nuvemshop/ar_tiendanube_checkout_redirect.gif)
 ------------
 ----[mlm, mlc, mlu, mpe, mco]----
-![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_redirect.gif)
+![Payments Checkout Pro - Nuvem Shop](nuvemshop/mx_tiendanube_checkout_redirect.gif)
 ------------
 
 > NOTE
@@ -166,13 +166,13 @@ También puedes sincronizar los últimos cambios manualmente de la siguiente man
 
 <p>&nbsp;</p>
 ----[mlb]----
-![Payments Installment - Nuvem Shop](/images/nuvemshop/nuvemshop_installments_4.gif)
+![Payments Installment - Nuvem Shop](nuvemshop/nuvemshop_installments_4.gif)
 ------------
 ----[mla]----
-![Payments Installment - Nuvem Shop](/images/nuvemshop/ar_tiendanube_installments.gif)
+![Payments Installment - Nuvem Shop](nuvemshop/ar_tiendanube_installments.gif)
 ------------
 ----[mlm, mlc, mlu, mpe, mco]----
-![Payments Installment - Nuvem Shop](/images/nuvemshop/mx_tiendanube_istallments.gif)
+![Payments Installment - Nuvem Shop](nuvemshop/mx_tiendanube_istallments.gif)
 ------------
 
 ----[mlb, mlc, mlu, mpe, mco, mla]----
@@ -188,13 +188,13 @@ También puedes sincronizar los últimos cambios manualmente de la siguiente man
 
 <p>&nbsp;</p>
 ----[mlb]----
-![Payments Installments - Nuvem Shop](/images/nuvemshop/nuvemshop_account_installments_5.gif)
+![Payments Installments - Nuvem Shop](nuvemshop/nuvemshop_account_installments_5.gif)
 ------------
 ----[mla]----
-![Payments Installments - Nuvem Shop](/images/nuvemshop/ar_tiendanube_account_installments_cropped.gif)
+![Payments Installments - Nuvem Shop](nuvemshop/ar_tiendanube_account_installments_cropped.gif)
 ------------
 ----[mlm, mlc, mlu, mpe, mco]----
-![Payments Installments - Nuvem Shop](/images/nuvemshop/mx_tiendanube_account_installments_cropped.gif)
+![Payments Installments - Nuvem Shop](nuvemshop/mx_tiendanube_account_installments_cropped.gif)
 ------------
 <p>&nbsp;</p>
 ¡Y listo! Ya estás ofreciendo----[mlb, mlc, mlu, mpe, mco, mla]---- cuotas sin interés------------ ----[mlm]---- mensualidades sin interés------------ con el costo de financiación que hayas configurado.

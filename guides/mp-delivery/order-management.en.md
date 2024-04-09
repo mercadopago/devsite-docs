@@ -29,7 +29,7 @@ This type of logistics is generally used in restaurants that have their own deli
   * **shipped/delivery_failed:** Status that indicates that there was a problem during the delivery of the order. This is generated through the Mercado Envios Flex application when the delivery person is unable to deliver.
   * **delivered:** Delivery was completed successfully. This Status is generated through the Mercado Envios Flex application by the delivery person shortly after the delivery is completed.
 
-![flowchart](/images/mpdelivery/flowchart_delivery_en.png)
+![flowchart](mpdelivery/flowchart_delivery_en.png)
 
 ## Dropoff logistics modality
 
@@ -46,4 +46,4 @@ This type of logistics is used by restaurants that have agreed that logistics co
   * **delivered:** Delivery was successful.
   * **not_delivered:** There was a problem and the delivery person was unable to complete the delivery.
 
-![flowchart](/images/mpdelivery/flowchart-1_delivery_en.png)
+![flowchart](mpdelivery/flowchart-1_delivery_en.png)
