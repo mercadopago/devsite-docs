@@ -423,21 +423,17 @@ If the status of the payment intent is `on_terminal`, you will need to cancel it
 
 ----[mlm]----
 - **Point Smart**: on the device, press and hold the **bottom right button** for a few seconds, and when the message appears asking if you want to exit the screen without completing the charge, click **yes**.
-- **Point Air**:
-- **Point Blue**:
+- **Point Air**: on the device, press and hold the **red button** for a few seconds, and when the message appears asking if you want to exit the screen without completing the charge, click **yes**.
 
 ------------
 ----[mlb]----
 - **Point Smart**: on the device, press and hold the **bottom right button** for a few seconds, and when the message appears asking if you want to exit the screen without completing the charge, click **yes**.
 - **Point Pro 2**: on the device, press and hold the **red button** for a few seconds, and when the message appears asking if you want to exit the screen without completing the charge, click **yes**.
-- **Point Mini NFC 1**:
-- **Point Mini Chip**:
 
 ------------
 ----[mla]----
 - **Point Smart**: on the device, press and hold the **bottom right button** for a few seconds, and when the message appears asking if you want to exit the screen without completing the charge, click **yes**.
 - **Point Plus**: on the device, press and hold the **red button** for a few seconds, and when the message appears asking if you want to exit the screen without completing the charge, click **yes**.
-- **Point Mini**:
 
 ------------
 

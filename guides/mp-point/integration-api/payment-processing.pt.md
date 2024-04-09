@@ -413,21 +413,17 @@ Se, por outro lado, o estado da intenção de pagamento for `on_terminal`, você
 
 ----[mlm]----
 - **Point Smart**: no dispositivo, mantenha pressionado o **botão inferior direito** durante alguns segundos e, ao aparecer a mensagem indicando se deseja sair da tela sem finalizar a cobrança, clique em **sim**.
-- **Point Air**:
-- **Point Blue**:
+- **Point Air**: no dispositivo, mantenha pressionado o **botão vermelho** por alguns segundos e, ao aparecer a mensagem indicando se deseja sair da tela sem finalizar a cobrança, clique em **sim**.
 
 ------------
 ----[mlb]----
 - **Point Smart**: no dispositivo, mantenha pressionado o **botão inferior direito** durante alguns segundos e, ao aparecer a mensagem indicando se deseja sair da tela sem finalizar a cobrança, clique em **sim**.
 - **Point Pro 2**: no dispositivo, mantenha pressionado o **botão vermelho** por alguns segundos e, ao aparecer a mensagem indicando se deseja sair da tela sem finalizar a cobrança, clique em **sim**.
-- **Point Mini NFC 1**:
-- **Point Mini Chip**:
 
 ------------
 ----[mla]----
 - **Point Smart**: no dispositivo, mantenha pressionado o **botão inferior direito** durante alguns segundos e, ao aparecer a mensagem indicando se deseja sair da tela sem finalizar a cobrança, clique em **sim**.
 - **Point Plus**: no dispositivo, mantenha pressionado o **botão vermelho** por alguns segundos e, ao aparecer a mensagem indicando se deseja sair da tela sem finalizar a cobrança, clique em **sim**.
-- **Point Mini**:
 
 ------------
 
