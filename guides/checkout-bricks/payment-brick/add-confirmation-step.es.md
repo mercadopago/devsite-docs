@@ -5,11 +5,9 @@ Después de completar los datos necesarios para procesar el pago, es posible mos
 Esta etapa adicional brinda al comprador una experiencia más transparente y segura, ya que le permite revisar y editar la información antes de confirmar el pago. Además, para los integradores, acelera el desarrollo de una experiencia de pago coherente y completa.
 
 ----[mlm]----
-<center>
 
 ![review-confirm-mlm](checkout-bricks/review-confirm-mlm-es.gif)
 
-</center>
 ------------
 
 Para integrar esta funcionalidad, es necesario enviar información adicional durante la inicialización de Payment Brick. Presentamos ahora un ejemplo del objeto de configuración con énfasis en la propiedad `enableReviewStep`, que habilita el flujo de revisión:

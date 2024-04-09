@@ -5,11 +5,9 @@ After filling in the necessary data to process the payment, it is possible to pr
 This additional step provides the buyer with a more transparent and secure experience because it allows them to review and edit the information before confirming the payment. Additionally, for integrators, it streamlines the development of a consistent and complete payment experience.
 
 ----[mlm]----
-<center>
 
 ![review-confirm-mlm](checkout-bricks/review-confirm-mlm-es.gif)
 
-</center>
 ------------
 
 To integrate this functionality, it is necessary to send additional information during the initialization of Payment Brick. We now present an example of the configuration object with emphasis on the `enableReviewStep` property, which enables the review flow:

@@ -91,8 +91,4 @@ Within your Mercado Pago account, you can check and configure the number of inte
 4. Select how many months you want to offer by marking the corresponding option and click continue.
 5. Set the minimum values to offer interest-free installments and click **Save**.
 
-<center>
-
 ![Account](/images/nuvemshop/conta-es.gif)
-
-</center>

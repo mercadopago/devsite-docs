@@ -24,11 +24,7 @@ In turn, our processor complies with all security guarantees to give users maxim
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
 
-<center>
-
 ![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-en.gif)
-
-</center>
 
 > WARNING
 >
@@ -62,11 +58,7 @@ In turn, our processor complies with all security guarantees to give users maxim
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
 
-<center>
-
 ![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-en.gif)
-
-</center>
 
 > WARNING
 >
@@ -100,11 +92,7 @@ In turn, our processor complies with all security guarantees to give users maxim
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
 
-<center>
-
 ![payment-Brick-layout-mco](checkout-bricks/payment-brick-layout-mco-en.gif)
-
-</center>
 
 > WARNING
 >
@@ -138,11 +126,7 @@ In turn, our processor complies with all security guarantees to give users maxim
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
 
-<center>
-
 ![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
-
-</center>
 
 > WARNING
 >
@@ -176,11 +160,7 @@ In turn, our processor complies with all security guarantees to give users maxim
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
 
-<center>
-
 ![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
-
-</center>
 
 > WARNING
 >
@@ -214,11 +194,7 @@ In turn, our processor complies with all security guarantees to give users maxim
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
 
-<center>
-
 ![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
-
-</center>
 
 > WARNING
 >
@@ -252,11 +228,7 @@ In turn, our processor complies with all security guarantees to give users maxim
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
 
-<center>
-
 ![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-en.gif)
-
-</center>
 
 > WARNING
 >
