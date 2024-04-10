@@ -398,7 +398,7 @@ Puedes consultar los estados posibles de una intención de pago accediendo a nue
 
 ## Cancelar una intención de pago
 
-Si lo desea, puede cancelar una intención de pago asignada a un dispositivo Point según el estado de la intención de pago. Consulte más información a continuación.
+Si lo deseas, puedes cancelar una intención de pago asignada a un dispositivo Point según el estado en el que se encuentre. Consulta cómo hacerlo en cada caso a continuación.
 
 ### Status: open
 
