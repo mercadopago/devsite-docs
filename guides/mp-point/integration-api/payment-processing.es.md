@@ -433,7 +433,7 @@ Si, en cambio, el estado de la intención de pago es `on_terminal`, deberás rea
 ------------
 ----[mla]----
 - **Point Smart**: en el dispositivo, mantén presionado el **botón inferior derecho** durante unos segundos y, cuando aparezca el mensaje indicando si deseas salir de la pantalla sin finalizar el cobro, haz clic en **sí**.
-- **Point Plus**: en el dispositivo, mantén presionado el **botón rojo** durante unos segundos y, cuando aparezca el mensaje indicando si deseas salir de la pantalla sin finalizar la cobranza, haz clic en **sí**.
+- **Point Plus**: en el dispositivo, mantén presionado el **botón rojo** durante unos segundos y, cuando aparezca el mensaje indicando si deseas salir de la pantalla sin finalizar el cobro, haz clic en **sí**.
 
 ------------
 
