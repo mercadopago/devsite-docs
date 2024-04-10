@@ -1,12 +1,12 @@
-# Integrar o Checkout Pro para iOS com Flutter
+# Integrar com Flutter
+
+Para integrar o Checkout Pro em uma aplicação móvel desenvolvida com o Flutter, você precisará exibir o checkout da web dentro da aplicação. Para isso, existem diversas opções, sendo uma delas o uso de Custom Tabs. Essa tecnologia permite que páginas da web sejam abertas em um navegador nativo incorporado à aplicação, proporcionando uma experiência de navegação mais fluída e consistente aos usuários.
 
 > WARNING
 >
 > Importante
 >
-> Antes de começar a integrar o Checkout Pro para Mobile, certifique-se de ter uma preferência criada em seu backend. Se você ainda não fez isso, vá para [Criar preferências](/developers/pt/docs/checkout-pro/integrate-preferences).
-
-Para integrar o Checkout Pro em uma aplicação móvel desenvolvida com o Flutter, você precisará exibir o checkout da web dentro da aplicação. Para isso, existem diversas opções, sendo uma delas o uso de Custom Tabs. Essa tecnologia permite que páginas da web sejam abertas em um navegador nativo incorporado à aplicação, proporcionando uma experiência de navegação mais fluída e consistente aos usuários.
+> Antes de começar a integrar o Checkout Pro para Mobile, certifique-se de ter uma preferência criada em seu backend. Se você ainda não fez isso, vá para [Criar preferências.](/developers/pt/docs/checkout-pro/integrate-preferences)
 
 Nesta etapa, vamos implementar Custom Tabs em uma aplicação Flutter usando **flutter_custom_tabs**. Mostraremos como instalar as bibliotecas necessárias, como configurar as dependências e daremos exemplos práticos de como abrir páginas da web usando Custom Tabs.
 
