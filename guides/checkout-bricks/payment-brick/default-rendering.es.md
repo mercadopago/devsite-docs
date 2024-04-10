@@ -8,7 +8,7 @@
 
 ## Configurar el Brick
 
-Crea la configuración de inicio de Brick.
+Crea la configuración de inicio del Brick.
 
 ----[mlb]----
 [[[
