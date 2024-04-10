@@ -9,7 +9,7 @@
 
 ## Configurar el Brick
 
-Creae la configuración de inicio de Brick.
+Crea la configuración de inicio del Brick.
 
 [[[
 ```Javascript
