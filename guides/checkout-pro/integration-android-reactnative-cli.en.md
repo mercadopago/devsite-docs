@@ -1,12 +1,12 @@
-# Integrate Checkout Pro for Android with React Native CLI
+# Integrate with React Native CLI
+
+When developing mobile apps with React Native, the need to display web content within the app often arises. To achieve this, there are several options, among which the use of Custom Tabs (for Android) and Safari View Controller (for iOS) stand out. These technologies allow web pages to be opened in a native browser embedded within the application, providing a smoother and more consistent browsing experience for users.
 
 > WARNING
 >
 > Important
 >
-> Before starting to integrate Checkout Pro for Mobile, you will need to have a preference created in your backend. If you haven't already, go to [Create preference](/developers/en/docs/checkout-pro/integrate-preferences).
-
-When developing mobile apps with React Native, the need to display web content within the app often arises. To achieve this, there are several options, among which the use of Custom Tabs (for Android) and Safari View Controller (for iOS) stand out. These technologies allow web pages to be opened in a native browser embedded within the application, providing a smoother and more consistent browsing experience for users.
+> Before starting to integrate Checkout Pro for Mobile, you will need to have a preference created in your backend. If you haven't already, go to [Create preference.](/developers/en/docs/checkout-pro/integrate-preferences)
 
 In this step we are going to install and configure the necessary dependencies to implement **Custom Tabs** in your project developed in React Native.
 

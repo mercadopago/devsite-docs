@@ -1,12 +1,12 @@
+# Integración Mobile
+
+Si quieres integrar Checkout Pro a una aplicación mobile, a continuación te brindamos distintas de tecnologías para que elijas la que mejor se ajuste a tu proyecto y sus necesidades.
+
 > WARNING
 >
 > Aviso de discontinuado
 >
 > Desde 29 de noviembre de 2023, quedó deprecado el modelo de integración WebView, es decir, aquellas integraciones que incluyan un intento de login proveniente de un browser embebido. Realiza tu integración de Checkout Pro para aplicaciones móviles utilizando alguna de las opciones que detallamos debajo.
-
-# Integrar Checkout Pro para Mobile
-
-Si quieres integrar Checkout Pro a una aplicación mobile, a continuación te brindamos distintas de tecnologías para que elijas la que mejor se ajuste a tu proyecto y sus necesidades.
 
 ## Android
 
