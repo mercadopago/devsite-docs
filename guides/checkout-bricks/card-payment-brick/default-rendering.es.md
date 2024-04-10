@@ -112,7 +112,7 @@ const onReady = async () => {
 
 ## Renderizar el Brick
 
-Una vez creadas las configuraciones, ingrese el código a continuación para renderizar el Brick. 
+Una vez creadas las configuraciones, ingresa el código a continuación para renderizar el Brick. 
 
 > NOTE
 >
