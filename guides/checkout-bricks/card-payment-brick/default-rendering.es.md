@@ -9,7 +9,7 @@
 
 ## Configurar el Brick
 
-Creae la configuración de inicio de Brick
+Crea la configuración de inicio del Brick.
 
 [[[
 ```Javascript
@@ -112,7 +112,7 @@ const onReady = async () => {
 
 ## Renderizar el Brick
 
-Una vez creadas las configuraciones, ngrese el código a continuación para renderizar el Brick. 
+Una vez creadas las configuraciones, ingresa el código a continuación para renderizar el Brick. 
 
 > NOTE
 >

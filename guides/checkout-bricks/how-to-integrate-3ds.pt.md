@@ -96,11 +96,7 @@ renderStatusScreenBrick(bricksBuilder);
 
 O Status Screen Brick exibirá uma transição indicando redirecionamento e, logo em seguida, será exibido o _Challenge_ do banco em questão.
 
-<center>
-
 ![how-to-integrate-3ds](checkout-bricks/how-to-integrate-3ds-pt.gif)
-
-</center>
 
 O usuário deve responder ao _Challenge_ para que a transição seja validada devidamente. Vale ressaltar que a experiência do _Challenge_ é de responsabilidade exclusiva do banco encarregado.
 

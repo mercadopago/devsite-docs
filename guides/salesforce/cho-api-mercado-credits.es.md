@@ -28,11 +28,7 @@ Para activar Mercado Crédito como medio de pago en tu tienda, seguí estas inst
 2. En el panel administrativo de Salesforce, ingresá a "Merchant Tools" y luego a "Ordering".
 3. Hacé clic en "Payment Methods" y buscá la opción "Mercado Crédito". Actívala seleccionando "Yes" en la columna "Enabled".
 
-<center>
-
 ![Ativar Mercado Credito](/images/salesforce/credits-en.gif) 
-
-</center>
 
 Para más información, comunícate con tu asesor comercial para recibir atención personalizada.
 

@@ -34,12 +34,10 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 
 ------------
 6. Por fim, clique em **Salvar configurações**.
-----[mlm, mpe, mco, mlu, mlc]---- 
-<center>
+----[mlm, mpe, mco, mlu, mlc]----
 
 ![Payments Checkout Pro - Nuvemshop](/images/nuvemshop/cho-pro-mlm-es.gif)
 
-</center>
 ------------
 ----[mla]---- 
 
@@ -47,11 +45,8 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 
 ------------
 ----[mlb]---- 
-<center>
 
 ![Payments Checkout Pro - Nuvemshop](/images/nuvemshop/cho-pro-pt.gif)
-
-</center>
 
 ------------
 

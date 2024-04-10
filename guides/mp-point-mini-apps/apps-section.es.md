@@ -8,11 +8,7 @@ Point Smart está en crecimiento constante, con nuevas aplicaciones integradas. 
 
 Para ingresar, solo tienes que entrar en la sección **Más opciones** y luego, seleccionar la pestaña "Apps", en la esquina superior derecha.
 
-<center>
-
 ![miniapps-access](/mini-apps/miniapps-access-es.gif)
-
-</center>
 
 ## Estructura
 
@@ -27,28 +23,16 @@ Para conocer más sobre una app, haciendo clic en **Saber más**, la persona usu
 
 Muchas veces, este es el primer contacto, por eso, hay bastante espacio para una comunicación clara, objetiva y que explora los beneficios. Más adelante, daremos recomendaciones de cómo explorar todas estas oportunidades.
 
-<center>
-
 ![miniapps-detail](/mini-apps/miniapps-detail-es.gif)
-
-</center>
 
 ## Instalación
 
 Con un toque en el botón **Instalar**, el download se inicia. Esa acción puede ser tomada tanto en la página de detalle como en la pantalla inicial de la sección “Apps”.
 
-<center>
-
 ![miniapps-installation](/mini-apps/miniapps-installation-es.gif)
-
-</center>
 
 ## Desinstalación
 
 Desinstalar es igual de fácil: basta **presionar el ícono por algunos segundos** y seleccionar la opción **Desinstalar**.
 
-<center>
-
 ![miniapps-uninstall](/mini-apps/miniapps-uninstall-pt.gif)
-
-</center>

@@ -18,11 +18,9 @@ Para integrar Mercado Pago a tu Tiendanube, sigue los procedimientos a continuac
 
 ------------
 ----[mlm, mla]----
-<center>
 
 ![Integration - Nuvemshop](/images/nuvemshop/plugin-mp-es.gif)
 
-</center>
 ------------
 ----[mpe, mco, mlu, mlc]----
 1. Crea una [cuenta vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si todavía no tienes una.

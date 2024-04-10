@@ -1,19 +1,8 @@
----
-  sites_supported:
-      - mco
----
+# Considerations about Colombia's IVA
 
-# Considerations IVA Colombia
+The IVA (**Value Added Tax**) is a tax burden that applies to the sale of products or the provision of services within the Colombian territory. 
 
-> NOTE
->
-> Note
->
-> This considerations only apply on Colombia.
-
-IVA
-
-The IVA (Value Added Tax) is a tax burden that applies to the sale of products or the provision of services within the Colombian territory. Some products as well as some services are excluded from IVA and others have reduced rates. Nowadays, the most common fee of this tax is 19%.
+Some products as well as some services are excluded from IVA and others have reduced rates. Currently, the **general rate of this tax is 19%**.
 
 ## Taxes on online payments
 

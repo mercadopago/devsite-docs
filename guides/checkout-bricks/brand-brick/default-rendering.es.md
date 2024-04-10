@@ -41,8 +41,4 @@ import { Brand } from '@mercadopago/sdk-react';
 
 El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 
-<center>
-
 ![brand-brick-es](checkout-bricks/brand-brick-es.gif)
-
-</center>

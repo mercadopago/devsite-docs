@@ -18,8 +18,4 @@ live_demo_code_action:
 
 The Status Screen Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
 
-<center>
-
 ![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-en.gif)
-
-</center>

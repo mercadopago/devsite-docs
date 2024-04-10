@@ -396,12 +396,13 @@ Recibirás una respuesta similar a la siguiente:
 
 Puedes consultar los estados posibles de una intención de pago accediendo a nuestro [Glosario](/developers/es/docs/mp-point/integration-api/glossary).
 
-
 ## Cancelar una intención de pago
 
-Si lo deseas, puedes cancelar una intención de pago asignada a un dispositivo Point. Para ello, tienes dos posibilidades:
+Si lo deseas, puedes cancelar una intención de pago asignada a un dispositivo Point según el estado en el que se encuentre. Consulta cómo hacerlo en cada caso a continuación.
 
-* Si el estado de la intención es `open` y todavía no fue enviada a la terminal, puedes [cancelarlo vía API](/developers/es/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) realizando el siguiente llamado:
+### Status: open
+
+Si el estado de la intención es `open` y todavía no fue enviada a la terminal, puedes [cancelarla vía API](/developers/es/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete) realizando el siguiente llamado:
 
 ``` curl
 curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/{deviceid}/payment-intents/{paymentintentid}' \
@@ -416,7 +417,25 @@ El llamado devolverá la siguiente respuesta:
 }
 ```
 
-* Si, en cambio, el estado de la intención de pago es `on_terminal`, deberás realizar la cancelación directamente desde el dispositivo Point.
+### Status: on_terminal
+
+Si, en cambio, el estado de la intención de pago es `on_terminal`, deberás realizar la cancelación directamente desde el dispositivo Point. Para hacerlo, sigue las indicaciones a continuación.
+
+----[mlm]----
+- **Point Smart**: en el dispositivo, mantén presionado el **botón inferior derecho** durante unos segundos y, cuando aparezca el mensaje indicando si deseas salir de la pantalla sin finalizar el cobro, haz clic en **sí**.
+- **Point Air**: en el dispositivo, mantén presionado el **botón rojo** durante unos segundos y, cuando aparezca el mensaje indicando si deseas salir de la pantalla sin finalizar el cobro, haz clic en **sí**.
+
+------------
+----[mlb]----
+- **Point Smart**: en el dispositivo, mantén presionado el **botón inferior derecho** durante unos segundos y, cuando aparezca el mensaje indicando si deseas salir de la pantalla sin finalizar el cobro, haz clic en **sí**.
+- **Point Pro 2**: en el dispositivo, mantén presionado el **botón rojo** durante unos segundos y, cuando aparezca el mensaje indicando si deseas salir de la pantalla sin finalizar el cobro, haz clic en **sí**.
+
+------------
+----[mla]----
+- **Point Smart**: en el dispositivo, mantén presionado el **botón inferior derecho** durante unos segundos y, cuando aparezca el mensaje indicando si deseas salir de la pantalla sin finalizar el cobro, haz clic en **sí**.
+- **Point Plus**: en el dispositivo, mantén presionado el **botón rojo** durante unos segundos y, cuando aparezca el mensaje indicando si deseas salir de la pantalla sin finalizar el cobro, haz clic en **sí**.
+
+------------
 
 > NOTE
 >

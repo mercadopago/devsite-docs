@@ -8,7 +8,7 @@
 
 ## Configurar el Brick
 
-Crea la configuración de inicio de Brick
+Crea la configuración de inicio del Brick.
 
 ----[mlb]----
 [[[
@@ -617,44 +617,29 @@ import { Payment } from '@mercadopago/sdk-react';
 El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 
 ----[mlb]----
-<center>
 
 ![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-es.gif)
 
-</center>
-
 ------------
 ----[mla]----
-<center>
 
 ![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-es.gif)
 
-</center>
-
 ------------
 ----[mlm]----
-<center>
 
 ![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-es.gif)
 
-</center>
-
 ------------
 ----[mco]----
-<center>
 
 ![payment-brick-layout-mco](checkout-bricks/payment-brick-layout-mco-es.gif)
-
-</center>
 
 ------------
 
 ----[mpe, mlu, mlc]----
-<center>
 
 ![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
-
-</center>
 
 ------------
 

@@ -39,18 +39,14 @@ Para integrar o Checkout API, siga os passos abaixo.
 ------------
 6. Por fim, clique em **Salvar alterações**.
 ----[mlm, mpe, mco, mlu, mlc]---- 
-<center>
 
 ![Payments Checkout API - Tiendanube](/images/nuvemshop/cho-api-mlm-es.gif)
 
-</center>
 ------------
 ----[mla]---- 
-</center>
 
 ![Payments Checkout API - Tiendanube](/images/nuvemshop/cho-api-mla-es.png.png)
 
-</center>
 ------------
 ----[mlb]----
 Pronto! O Checkout Transparente está pronto para receber os pagamentos da sua loja.

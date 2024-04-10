@@ -11,35 +11,23 @@ Checkout Bricks viabiliza uma integração client-side de forma modular por meio
 O Brick possui capacidades responsivas no que tange o tamanho do espaço em tela. O Brick vai sempre ocupar o espaço que lhe foi definido e será responsivo quando este espaço sofrer alterações de visualização durante seu uso. 
 
 ----[mlb]---- 
-<center>
 
 ![responsiveness-mlb](checkout-bricks/responsiveness-mlb-pt.gif)
 
-</center>
-
 ------------
 ----[mla]---- 
-<center>
 
 ![responsiveness-mla](checkout-bricks/responsiveness-mla-pt.gif)
 
-</center>
-
 ------------
 ----[mlm]---- 
-<center>
 
 ![responsiveness-mlm](checkout-bricks/responsiveness-mlm-pt.gif)
 
-</center>
-
 ------------
 ----[mpe, mco, mlu, mlc]---- 
-<center>
 
 ![responsiveness-all](checkout-bricks/responsiveness-all-pt.gif)
-
-</center>
 
 ------------
 
