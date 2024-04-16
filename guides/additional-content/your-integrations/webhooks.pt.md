@@ -36,6 +36,9 @@ Abaixo explicaremos como: indicar as URLs que serão notificadas, configurar os 
 | `delivery` | `delivery.updated`| Dados de envio e atualização do pedido |
 | `delivery_cancellation` | `case_created`| Solicitação de cancelamento do envio |
 | `topic_claims_integration_wh` | `updated`| Reclamações feitas pelas vendas |
+| `card updater` | `card.updated`| Cartão de usuário comprador foi atualizado |
+
+> O _Card Updater_ recupera informações de cartões e atualiza essas informações dentro do Mercado Pago. Cartões recuperáveis com este recurso: cartões com alguma informação errada (como data de vencimento, número do cartão, CVV, nome, etc.) e cartões que tenham sido trocados pela instituição financeira (por motivo de validade, upgrade de cartão, etc.).
 
 5. Por fim, clique em **Salvar** para gerar uma **assinatura secreta** para a aplicação. A assinatura é um método de validação para garantir que as notificações recebidas foram enviadas pelo Mercado Pago, por isso, é importante conferir as informações de autenticidade para evitar fraudes.
 
@@ -614,8 +617,7 @@ curl -X POST \
 >
 > Para o tipo de evento `point_integration_wh`, o formato da notificação muda. [Clique aqui](/developers/pt/docs/mp-point/landing) para consultar a documentação do **Mercado Pago Point**.
 > <br/>
-> No caso dos eventos de `delivery` e `topic_claims_integration_wh`, também teremos alguns atributos diferentes na resposta. Veja na tabela abaixo quais são essas particularidades.
-
+> No caso dos eventos de `delivery`, `topic_claims_integration_wh` e `card updater`, também teremos alguns atributos diferentes na resposta. Veja na tabela abaixo quais são essas particularidades.
 
 ```json
 {
@@ -637,12 +639,15 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 | --- | --- |
 | **id** | ID de notificação |
 | **live_mode** | Indica se a URL informada é valida |
-| **type** | Tipo de notificação recebida (payments, mp-connect, subscription, claim, etc) |
-| **date_created** | Data de criação do recurso |
+| **type** | Tipo de notificação recebida (payments, mp-connect, subscription, claim, automatic-payments, etc) |
+| **date_create** | Data de criação do recurso |
 | **user_id**| UserID de vendedor |
 | **api_version** | Indica se é uma notificação duplicada ou não |
 | **action** | Tipo de notificação recebida, indicando se se trata da atualização de um recurso ou da criação de um novo |
 | **data - id** | ID do payment, do merchant_order ou da reclamação |
+| **data - customer_id** (card updater)| ID do comprador que teve o cartão atualizado |
+| **data - new_card_id** (card updater)| Número atualizado do cartão |
+| **data - old_card_id** (card updater)| Número antigo do cartão |
 | **attempts** (delivery) | Número de vezes que uma notificação foi enviada |
 | **received** (delivery) | Data de criação do recurso |
 | **resource** (delivery) | Tipo de notificação recebida, indicando se trata-se da atualização de um recurso ou da criação de um novo |
