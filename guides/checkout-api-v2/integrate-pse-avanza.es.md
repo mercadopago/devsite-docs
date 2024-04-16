@@ -220,32 +220,29 @@ Una vez obtenidos los medios de pago, añade el siguiente formulario de pago a t
 Para crear un pago con PSE es necesario obtener el tipo y número de documento del usuario. Los tipos de documentos aceptados dependerán del tipo de persona (natural o jurídica) seleccionada durante la adición del formulario de pago, y podrás obtenerlos automáticamente utilizando la siguiente función:  
 
 ```javascript
-
 document.getElementById('form-checkout__personType').addEventListener('change', e => {
-    const personTypesElement = document.getElementById('form-checkout__personType');
-    updateSelectOptions(personTypesElement.value);
+   const personTypesElement = document.getElementById('form-checkout__personType');
+   updateSelectOptions(personTypesElement.value);
 });
-
 function updateSelectOptions(selectedValue){
-    const naturalDocTypes = [
-        new Option('C.C', 'CC'),
-        new Option('C.E.', 'CE'),
-        new Option('Otro', 'Otro')
-    ];
-    const juridicaDocTypes = [
-        new Option('NIT', 'NIT')
-    ];
-    const idDocTypes = document.getElementById('form-checkout__identificationType');
-    
-    if(selectedValue === 'natural') {
-        idDocTypes.options.length = 0;
-        naturalDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
-    } else {
-        idDocTypes.options.length = 0;
-        juridicaDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
-    }
+   
+   const naturalDocTypes = [
+       new Option('C.C', 'CC'),
+       new Option('C.E.', 'CE')
+   ];
+   const juridicaDocTypes = [
+       new Option('NIT', 'NIT')
+   ];
+   const idDocTypes = document.getElementById('form-checkout__identificationType');
+   
+   if(selectedValue === 'natural') {
+       idDocTypes.options.length = 0;
+       naturalDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
+   } else {
+       idDocTypes.options.length = 0;
+       juridicaDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
+   }
 }
-
 ```
 
 
