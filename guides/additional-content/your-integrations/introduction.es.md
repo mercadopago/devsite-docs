@@ -11,3 +11,4 @@ La página de [Detalles de la aplicación](/developers/es/guides/additional-cont
     1. [Webhooks](/developers/es/guides/additional-content/your-integrations/webhooks)  
     2. [IPN](/developers/es/guides/additional-content/your-integrations/ipn)
 * **Producción**: activa las **Credenciales de producción** para comenzar a recibir pagos en tu tienda en línea y en otras aplicaciones.
+* **Evaluación**: valide su integración para asegurar que su desarrollo cumpla con los requisitos de calidad y seguridad necesarios para ofrecer tanto al vendedor como al comprador la mejor experiencia con Mercado Pago.
