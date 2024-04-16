@@ -11,4 +11,4 @@ The [Application details](/developers/en/guides/additional-content/your-integrat
     1. [Webhooks](/developers/en/guides/additional-content/your-integrations/webhooks)
     2. [IPN](/developers/en/guides/additional-content/your-integrations/ipn)
 * **Production**: activate **Production Credentials** to start receiving payments in your online store and other applications.
-* **Evaluation**: Validate your integration to ensure that your development meets the necessary quality and security requirements to provide both the seller and the buyer with the best experience with Mercado Pago.
+* **Evaluation**: validate [quality of your integration](/developers/en/guides/additional-content/homologator/homologator) to ensure that your development meets the necessary quality and security requirements to provide both the seller and the buyer with the best experience with Mercado Pago.

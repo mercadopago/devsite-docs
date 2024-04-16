@@ -6,6 +6,7 @@ As aplicações são as diferentes integrações contidas em uma ou mais lojas. 
 Cada aplicação possui um conjunto de credenciais e a possibilidade de configurar suas próprias notificações. Cada *card* representa uma aplicação criada e exibe o nome e o número da aplicação e um botão que direciona aos **Detalhes da aplicação**, onde você pode gerenciá-la. 
 
 ## Criar nova aplicação
+
 Crie sua aplicação e obtenha suas credenciais para fazer a integração com o Mercado Pago. Para criar uma aplicação, siga os passos abaixo.
 
 1. Clique em **Suas integrações**, no canto superior direito da tela.

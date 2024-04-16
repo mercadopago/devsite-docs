@@ -5,9 +5,10 @@ Abaixo, você encontrará todas as informações necessárias para saber como ho
 
 ## O que é a Homologação?
 
-A homologação é um processo de certificação de sua integração, com a você pode garantir que seu desenvolvimento tenha os requisitos de qualidade e segurança necessários para proporcionar tanto ao vendedor quanto ao comprador a melhor experiência com o Mercado Pago.
+A homologação é um processo de certificação de sua integração, com isso você pode garantir que seu desenvolvimento tenha os requisitos de qualidade e segurança necessários para proporcionar tanto ao vendedor quanto ao comprador a melhor experiência com o Mercado Pago.
 
 ## Que aspectos avalia a Homologação?
+
 No processo da homologação serão analisados ​​uma série de campos associados a 5 aspectos fundamentais que uma integração do Mercado Pago deve ter, independentemente do produto integrado. 
 Você pode ver esses atributos avaliados e a importância de cada um abaixo:
 
@@ -21,12 +22,16 @@ Você pode ver esses atributos avaliados e a importância de cada um abaixo:
 
 ## Como homologar minha integração?
 
+Para medir a qualidade sa sua aplicação, siga os passos abaixo.
+
 ----[mla, mlm, mlu, mco, mlc, mpe]---- 
 > WARNING
 >
 > Atenção
 >
-> Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro](/developers/pt/docs/checkout-pro/landing) [Checkout API,](/developers/pt/docs/checkout-api/landing), [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) e [Mercado Pago Point.](/developers/pt/docs/mp-point/landing)
+> É necessário que seja uma aplicação em que haja um produto a ser integrado daqueles em que a ferramenta de medição está disponível. Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro](/developers/pt/docs/checkout-pro/landing) [Checkout API,](/developers/pt/docs/checkout-api/landing), [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) e [Mercado Pago Point.](/developers/pt/docs/mp-point/landing) <br><br>
+> <br><br>
+> Antes de iniciar a avaliação, certifique-se de que a homologação da aplicação em ambiente de produção foi concluída, incluindo a realização de pelo menos um pagamento produtivo.
 
 ------------
 ----[mlb]---- 
@@ -34,16 +39,17 @@ Você pode ver esses atributos avaliados e a importância de cada um abaixo:
 >
 > Atenção
 >
-> Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro,](/developers/pt/docs/checkout-pro/landing) [Checkout Transparente](/developers/pt/docs/checkout-api/landing), [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) e [Mercado Pago Point.](/developers/pt/docs/mp-point/landing)
-
+> É necessário que seja uma aplicação em que haja um produto a ser integrado daqueles em que a ferramenta de medição está disponível. Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro,](/developers/pt/docs/checkout-pro/landing) [Checkout Transparente](/developers/pt/docs/checkout-api/landing), [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) e [Mercado Pago Point.](/developers/pt/docs/mp-point/landing) <br><br>
+> <br><br>
+> Antes de iniciar a avaliação, certifique-se de que a homologação da aplicação em ambiente de produção foi concluída, incluindo a realização de pelo menos um pagamento produtivo.
 
 ------------
 
-Para medir a qualidade sa sua aplicação, siga os passos abaixo.
-
 1. No [Devsite](/developers/pt/docs), acesse o menu [Suas integrações](https://www.mercadopago.com.br/developers/panel/app).
-2. No [Painel do desenvolvedor](https://www.mercadopago.com.br/developers/panel/app), **clique no card** da aplicação desejada. É necessário que seja uma aplicação em que haja um produto a ser integrado daqueles em que a ferramenta de medição está disponível (Checkout Pro, ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ ----[mlb]---- Checkout Transparente ------------, Checkout Bricks ou Mercado Pago Point).
-3. Em seguida, clique em **Atualizar pontuação** para acessar a ferramenta em que você poderá **medir a qualidade da sua aplicação** e visualizar a pontuação que indica o quanto a configuração da sua aplicação é segura e está alinhada com as boas práticas de integração do Mercado Pago. 
+
+2. No [Painel do desenvolvedor](https://www.mercadopago.com.br/developers/panel/app), localize a aplicação desejada e clique em **avaliar qualidade**. Você também poderá acessar a ferramenta de homologação diretamente dos [detalhes de sua aplicação](), clicando em **avaliar qualidade**.
+
+
 4. Na tela **"Qualidade da integração"**, clique em **Atualizar pontuação** e insira o `payment ID` de um pagamento recente feito com [credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) de produção da aplicação você está certificando. Sempre que possível, insira no campo de preenchimento o último `payment ID` produtivo que você identifica na aplicação em questão.
 
 Pronto! Você realizou a medição de qualidade. Agora poderá saber sua pontuação e quais aspectos de sua integração você pode melhorar.
@@ -64,4 +70,4 @@ Depois de realizar a medição de qualidade da sua integração, você encontrar
 >
 > As ações indicadas como **necessárias** deverão ser concluidas para somar os pontos que irão melhorar a qualidade da sua integração, enquanto as indicadas como **boas práticas** são recomendações, mas não impactarão na pontuação.
 
-4. **Atualizar pontuação**: Depois de aproveitar as oportunidades de melhoria, você pode testar novamente a qualidade da sua integração para ir para a produção.
+4. **Atualizar pontuação**: após aproveitar as oportunidades de melhoria, você pode testar novamente a qualidade da sua integração para ir para a produção.

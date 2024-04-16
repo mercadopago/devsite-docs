@@ -6,6 +6,7 @@ Las aplicaciones son las diferentes integraciones contenidas en una o más tiend
 Cada aplicación tiene un conjunto de credenciales y brinda la posibilidad de configurar sus propias notificaciones. Cada *card* representa una aplicación creada, muestra el nombre y el número de la aplicación, y cuenta con un botón que lleva a los **Detalles de la aplicación**, en donde puedes administrarla.
 
 ## Crear una nueva aplicación
+
 Crea tu aplicación y obtén tus credenciales para integrarte con Mercado Pago. Sigue los pasos a continuación para crear una aplicación:
 
 1. Haz clic en **Tus integraciones** en la esquina superior derecha de la pantalla.
@@ -40,6 +41,7 @@ Cada vez que creas una aplicación, se crea automáticamente una nueva tarjeta c
 ![Card](/images/dashboard/applications-es.png)
 
 ## Acceder a las credenciales de una aplicación que no gestionas
+
 Puedes solicitar acceso a las credenciales de aplicación de otras personas e integrar soluciones para cuentas diferentes a la tuya. Sigue los pasos a continuación para solicitar acceso seguro a las credenciales de una aplicación que no gestionas:
 
 1. En el [Panel del desarrollador](/developers/panel/app), haz clic en el botón **Solicitar acceso a las credenciales**.
