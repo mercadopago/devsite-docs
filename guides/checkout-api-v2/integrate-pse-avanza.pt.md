@@ -223,28 +223,27 @@ Para criar um pagamento com PSE, é necessário obter o tipo e número do docume
 
 ```javascript
 document.getElementById('form-checkout__personType').addEventListener('change', e => {
-    const personTypesElement = document.getElementById('form-checkout__personType');
-    updateSelectOptions(personTypesElement.value);
+   const personTypesElement = document.getElementById('form-checkout__personType');
+   updateSelectOptions(personTypesElement.value);
 });
-
 function updateSelectOptions(selectedValue){
-    const naturalDocTypes = [
-        new Option('C.C', 'CC'),
-        new Option('C.E.', 'CE'),
-        new Option('Otro', 'Otro')
-    ];
-    const juridicaDocTypes = [
-        new Option('NIT', 'NIT')
-    ];
-    const idDocTypes = document.getElementById('form-checkout__identificationType');
-    
-    if(selectedValue === 'natural') {
-        idDocTypes.options.length = 0;
-        naturalDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
-    } else {
-        idDocTypes.options.length = 0;
-        juridicaDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
-    }
+   
+   const naturalDocTypes = [
+       new Option('C.C', 'CC'),
+       new Option('C.E.', 'CE')
+   ];
+   const juridicaDocTypes = [
+       new Option('NIT', 'NIT')
+   ];
+   const idDocTypes = document.getElementById('form-checkout__identificationType');
+   
+   if(selectedValue === 'natural') {
+       idDocTypes.options.length = 0;
+       naturalDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
+   } else {
+       idDocTypes.options.length = 0;
+       juridicaDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
+   }
 }
 ```
 
