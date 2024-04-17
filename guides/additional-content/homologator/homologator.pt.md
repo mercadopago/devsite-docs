@@ -22,35 +22,36 @@ Você pode ver esses atributos avaliados e a importância de cada um abaixo:
 
 ## Como homologar minha integração?
 
-Para medir a qualidade sa sua aplicação, siga os passos abaixo.
+Para medir a qualidade da sua aplicação, siga os passos abaixo.
 
-----[mla, mlm, mlu, mco, mlc, mpe]---- 
+----[mla, mlm, mlu, mco, mlc, mpe]----
+
 > WARNING
 >
 > Atenção
 >
-> É necessário que seja uma aplicação em que haja um produto a ser integrado daqueles em que a ferramenta de medição está disponível. Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro](/developers/pt/docs/checkout-pro/landing) [Checkout API,](/developers/pt/docs/checkout-api/landing), [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) e [Mercado Pago Point.](/developers/pt/docs/mp-point/landing) <br><br>
+> Antes de iniciar a avaliação, certifique-se de que a homologação da aplicação em ambiente de produção foi concluída, incluindo a realização de pelo menos um pagamento produtivo. <br><br>
 > <br><br>
-> Antes de iniciar a avaliação, certifique-se de que a homologação da aplicação em ambiente de produção foi concluída, incluindo a realização de pelo menos um pagamento produtivo.
+>É necessário que seja uma aplicação em que haja um produto a ser integrado daqueles em que a ferramenta de medição está disponível. Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro](/developers/pt/docs/checkout-pro/landing) [Checkout API,](/developers/pt/docs/checkout-api/landing), [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) e [Mercado Pago Point.](/developers/pt/docs/mp-point/landing) 
 
 ------------
-----[mlb]---- 
+----[mlb]----
+
 > WARNING
 >
 > Atenção
 >
-> É necessário que seja uma aplicação em que haja um produto a ser integrado daqueles em que a ferramenta de medição está disponível. Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro,](/developers/pt/docs/checkout-pro/landing) [Checkout Transparente](/developers/pt/docs/checkout-api/landing), [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) e [Mercado Pago Point.](/developers/pt/docs/mp-point/landing) <br><br>
+> Antes de iniciar a avaliação, certifique-se de que a homologação da aplicação em ambiente de produção foi concluída, incluindo a realização de pelo menos um pagamento produtivo. <br><br>
 > <br><br>
-> Antes de iniciar a avaliação, certifique-se de que a homologação da aplicação em ambiente de produção foi concluída, incluindo a realização de pelo menos um pagamento produtivo.
+> É necessário que seja uma aplicação em que haja um produto a ser integrado daqueles em que a ferramenta de medição está disponível. Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro](/developers/pt/docs/checkout-pro/landing) [Checkout Transparente,](/developers/pt/docs/checkout-api/landing), [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) e [Mercado Pago Point.](/developers/pt/docs/mp-point/landing)
 
 ------------
 
 1. No [Devsite](/developers/pt/docs), acesse o menu [Suas integrações](https://www.mercadopago.com.br/developers/panel/app).
+2. No [Painel do desenvolvedor](https://www.mercadopago.com.br/developers/panel/app), localize a aplicação desejada e clique em **avaliar qualidade**. Você também poderá acessar a ferramenta de homologação diretamente dos [detalhes de sua aplicação](/developers/pt/guides/additional-content/your-integrations/application-details), clicando em **Avaliar qualidade** do _card_ "Status".
+3. Na tela **"Qualidade da integração"**, clique em **Avaliar qualidade** e insira o `payment ID` de um pagamento recente feito com [credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) de produção da aplicação você está certificando. Por fim, clique novamente em **Avaliar qualidade**. 
 
-2. No [Painel do desenvolvedor](https://www.mercadopago.com.br/developers/panel/app), localize a aplicação desejada e clique em **avaliar qualidade**. Você também poderá acessar a ferramenta de homologação diretamente dos [detalhes de sua aplicação](), clicando em **avaliar qualidade**.
-
-
-4. Na tela **"Qualidade da integração"**, clique em **Atualizar pontuação** e insira o `payment ID` de um pagamento recente feito com [credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) de produção da aplicação você está certificando. Sempre que possível, insira no campo de preenchimento o último `payment ID` produtivo que você identifica na aplicação em questão.
+> Sempre que possível, insira no campo de preenchimento o último `payment ID` produtivo que você identifica na aplicação em questão.
 
 Pronto! Você realizou a medição de qualidade. Agora poderá saber sua pontuação e quais aspectos de sua integração você pode melhorar.
 

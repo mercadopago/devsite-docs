@@ -82,4 +82,4 @@ Ao clicar em **Avaliar a qualidade**, você será redirecionado para a ferrament
 
 Acesse [Qualidade da integração](/developers/pt/guides/additional-content/homologator/homologator) e conheça todas as informações necessárias para saber como medir a qualidade da sua aplicação.
 
-> Após implementar melhorias, é necessário clicar novamente em **Atualizar pontuação** para reavaliar sua integração e verificar se ela atende aos padrões exigidos.
+> Após implementar melhorias, é necessário clicar novamente em **Atualizar pontuação** para reavaliar sua integração e verificar se ela atende aos padrões exigidos. 

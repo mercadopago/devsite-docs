@@ -5,6 +5,7 @@ Suas integrações é o seu ambiente de gerenciamento de integrações criado au
 ## Detalhes da aplicação
 
 A página de [Detalhes da aplicação](/developers/pt/guides/additional-content/your-integrations/application-details) é composta por diferentes seções, cada uma com um objetivo diferente.
+
 * **Informações gerais**: exibe as informações gerais da aplicação.
 * **Testes**: teste o funcionamento da integração, faça testes e simule diferentes transações com as [Credenciais](/developers/pt/guides/additional-content/your-integrations/credentials), [Contas de teste](/developers/pt/guides/additional-content/your-integrations/test-accounts) e [Cartões de teste](/developers/pt/guides/additional-content/your-integrations/test-cards).
 * **Notificações**: configure a aplicação para receber notificações de eventos relacionados a transações, como por exemplo, avisos de pagamentos, fraudes, contestações, etc. Existem dois tipos de notificações disponíveis para configuração:

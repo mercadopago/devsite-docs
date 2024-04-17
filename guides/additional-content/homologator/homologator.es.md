@@ -21,29 +21,36 @@ Puedes ver estos atributos evaluados y la importancia de cada uno a continuació
 
 ## ¿Cómo homologar tu integración?
 
-----[mla, mlm, mlu, mco, mlc, mpe]---- 
-> WARNING
->
-> Atención
->
-> Por ahora, la herramienta de medición de la calidad de integración solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout API](/developers/es/docs/checkout-api/landing), [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point](/developers/es/docs/mp-point/landing).
-
-------------
-----[mlb]---- 
-> WARNING
->
-> Atención
->
-> Por ahora, la herramienta de medición de la calidad de integración solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout Transparente](/developers/es/docs/checkout-api/landing), [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point](/developers/es/docs/mp-point/landing).
-
-------------
-
 Para medir la calidad de tu aplicación, sigue los pasos a continuación.
 
+----[mla, mlm, mlu, mco, mlc, mpe]----
+
+> WARNING
+>
+> Importante
+>
+> Antes de comenzar la evaluación, asegúrese de que la homologación de la aplicación en el entorno de producción haya sido completada, incluyendo la realización de al menos un pago productivo.  <br><br>
+> <br><br>
+> Es necesario que sea una aplicación en la que haya un producto a integrar de aquellos en los que la herramienta de medición está disponible. Por ahora, la herramienta de medición de la calidad de integración solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout API](/developers/es/docs/checkout-api/landing), [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point.](/developers/es/docs/mp-point/landing)
+
+------------
+----[mlb]----
+
+> WARNING
+>
+> Importante
+>
+> Antes de comenzar la evaluación, asegúrese de que la homologación de la aplicación en el entorno de producción haya sido completada, incluyendo la realización de al menos un pago productivo.  <br><br>
+> <br><br>
+> Es necesario que sea una aplicación en la que haya un producto a integrar de aquellos en los que la herramienta de medición está disponible. Por ahora, la herramienta de medición de la calidad de integración solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout Transparente](/developers/es/docs/checkout-api/landing), [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point.](/developers/es/docs/mp-point/landing)
+
+------------
+
 1. En el [Devsite](/developers/es/docs), accede al menú [Tus integraciones](https://www.mercadopago.com.br/developers/panel/app).
-2. En el [Panel del desarrollador](https://www.mercadopago.com.br/developers/panel/app), **haz clic en la aplicación deseada**. Debe ser una aplicación en la que hayas integrado uno de los productos disponibles en la herramienta de medición (Checkout Pro, Checkout Bricks, ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ ----[mlb]---- Checkout Transparente ------------, o Mercado Pago Point).
-3. Luego haz clic en **Actualizar puntaje** para acceder a la herramienta donde puedes **medir la calidad de tu aplicación** y ver el puntaje que indica qué tan segura y alineada está la configuración de tu aplicación con las buenas prácticas de integración de Mercado Pago.
-4. En la pantalla **Calidad de integración**, haz clic en **Actualizar puntaje** e ingresa el `payment ID` de un pago reciente realizado con [credenciales](/developers/es/guides/additional-content/your-integrations/credentials) de producción de la aplicación que estás queriendo homologar. Siempre que sea posible, ingresa en el campo el último `payment ID` productivo que identifiques en esa aplicación.
+2. En el [Panel del desarrollador](https://www.mercadopago.com.br/developers/panel/app), localiza la aplicación deseada y haz clic en **Evaluar la calidad**. También podrás acceder a la herramienta de homologación directamente desde los [detalles de tu aplicación](/developers/es/guides/additional-content/your-integrations/application-details), haciendo clic en **Evaluar la calidad** del _card_ "Status".
+3. En la pantalla **Calidad de integración**, haz clic en **Evaluar la calidad** e ingresa el `payment ID` de un pago reciente realizado con [credenciales](/developers/es/guides/additional-content/your-integrations/credentials) de producción de la aplicación que estás queriendo homologar. Finalmente, haz clic nuevamente en **Evaluar la calidad**.
+
+> Siempre que sea posible, ingresa en el campo el último `payment ID` productivo que identifiques en esa aplicación.
 
 ¡Listo! Has realizado la medición de calidad. Ya puedes saber tu puntaje y qué aspectos mejorar de tu integración.
 

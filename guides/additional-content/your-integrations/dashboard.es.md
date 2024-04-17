@@ -36,9 +36,18 @@ Si no estás utilizando una plataforma de comercio electrónico, marca **No** y 
 
 ![Crear aplicación](/images/dashboard/dashboard-es.gif)
 
-Cada vez que creas una aplicación, se crea automáticamente una nueva tarjeta con el nombre y el número de la aplicación en el [Panel del desarrollador](/developers/panel/app).
+Cada vez que creas una aplicación, se crea automáticamente una nueva tarjeta con el nombre, el número y el estado de calidad de la aplicación en el [Panel del desarrollador](/developers/panel/app).
 
 ![Card](/images/dashboard/applications-es.png)
+
+----[mla, mlm, mlu, mco, mlc, mpe]----
+>  Es necesario que sea una aplicación en la que haya un producto a integrar de aquellos en los que la herramienta de medición está disponible. Por ahora, la herramienta de medición de la calidad de integración solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout API](/developers/es/docs/checkout-api/landing), [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point.](/developers/es/docs/mp-point/landing)
+
+------------
+----[mlb]----
+>  Es necesario que sea una aplicación en la que haya un producto a integrar de aquellos en los que la herramienta de medición está disponible. Por ahora, la herramienta de medición de la calidad de integración solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout Transparente](/developers/es/docs/checkout-api/landing), [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point.](/developers/es/docs/mp-point/landing)
+
+------------
 
 ## Acceder a las credenciales de una aplicación que no gestionas
 

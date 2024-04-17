@@ -49,7 +49,30 @@ De esta manera, la aplicación se eliminará correctamente.
 
 ## Calidad de la aplicación
 
-En esta sección, nos aseguraremos de que tu aplicación cumpla con los requisitos de calidad y seguridad necesarios para brindar la mejor experiencia tanto a vendedores como a compradores con Mercado Pago.
+En esta sección, nos aseguraremos de que tu aplicación cumpla con los requisitos de calidad y seguridad necesarios para brindar la mejor experiencia tanto a vendedores como a compradores con Mercado Pago. [Haz clic aquí](/developers/pt/guides/additional-content/homologator/homologator) y conoce toda la información necesaria para saber cómo homologar correctamente tu integración.
+
+----[mla, mlm, mlu, mco, mlc, mpe]----
+
+> WARNING
+>
+> Importante
+>
+> Antes de comenzar la evaluación, asegúrese de que la homologación de la aplicación en el entorno de producción haya sido completada, incluyendo la realización de al menos un pago productivo.  <br><br>
+> <br><br>
+> Es necesario que sea una aplicación en la que haya un producto a integrar de aquellos en los que la herramienta de medición está disponible. Por ahora, la herramienta de medición de la calidad de integración solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout API](/developers/es/docs/checkout-api/landing), [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point.](/developers/es/docs/mp-point/landing)
+
+------------
+----[mlb]----
+
+> WARNING
+>
+> Importante
+>
+> Antes de comenzar la evaluación, asegúrese de que la homologación de la aplicación en el entorno de producción haya sido completada, incluyendo la realización de al menos un pago productivo.  <br><br>
+> <br><br>
+> Es necesario que sea una aplicación en la que haya un producto a integrar de aquellos en los que la herramienta de medición está disponible. Por ahora, la herramienta de medición de la calidad de integración solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout Transparente](/developers/es/docs/checkout-api/landing), [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point.](/developers/es/docs/mp-point/landing)
+
+------------
 
 ### Evaluar calidad
 
@@ -57,17 +80,6 @@ El puntaje indica qué tan segura y alineada con las buenas prácticas de integr
 
 Al hacer clic en **Evaluar la calidad**, comenzarás el proceso de análisis de tu integración. Durante esta revisión, es importante identificar áreas de mejora y realizar los cambios necesarios en tu integración. Este proceso implica la revisión de varios campos asociados.
 
-> WARNING
->
-> Importante
->
-> Antes de comenzar la evaluación, asegúrese de que la homologación de la aplicación en el entorno de producción haya sido completada, incluyendo la realización de al menos un pago productivo. Después de implementar mejoras, es necesario hacer clic nuevamente en **Actualizar puntaje** para volver a evaluar su integración y verificar si cumple con los estándares requeridos.
+Accede a [Calidad de la integración](/developers/es/guides/additional-content/homologator/homologator) y conoce toda la información necesaria para saber cómo medir la calidad de tu aplicación.
 
-----[mla, mlm, mlu, mco, mlc, mpe]----
-Por el momento, la sección **Calidad de integración** solo está disponible para integraciones con [**Checkout Pro**,](/developers/es/docs/checkout-pro/landing) [**Mercado Pago Point**,](/developers/es/docs/mp-point/landing) [**Checkout API**](/developers/es/docs/checkout-api/landing) y [**Checkout Bricks**.](/developers/es/docs/checkout-bricks/landing)
-
-------------
-----[mlb]----
-Por el momento, la sección **Calidad de integración** solo está disponible para integraciones con [**Checkout Pro**,](/developers/es/docs/checkout-pro/landing) [**Mercado Pago Point**,](/developers/es/docs/mp-point/landing) [**Checkout Transparente**](/developers/es/docs/checkout-api/landing) y [**Checkout Bricks**.](/developers/es/docs/checkout-bricks/landing)
-
-------------
+> Después de implementar mejoras, es necesario hacer clic nuevamente en **Actualizar puntaje** para volver a evaluar su integración y verificar si cumple con los estándares requeridos.

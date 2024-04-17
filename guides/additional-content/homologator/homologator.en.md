@@ -22,19 +22,36 @@ You can see the assessed attributes and the importance of each of them below.
 
 ## How to homologate my integration?
 
-> WARNING
->
-> Attention
->
-> For now, the integration quality measuring tool is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Checkout API](/developers/en/docs/checkout-api/landing), [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) and [Mercado Pago Point](/developers/en/docs/mp-point/landing).
-
 To measure the quality of your application, follow the steps below.
 
+----[mla, mlm, mlu, mco, mlc, mpe]----
+
+> WARNING
+>
+> Importante
+>
+> Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment. <br><br>
+> <br><br>
+> It is necessary that it be an application where there is a product to be integrated from those where the measuring tool is available. For now, the integration quality measuring tool is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Checkout API](/developers/en/docs/checkout-api/landing), [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) and [Mercado Pago Point.](/developers/en/docs/mp-point/landing)
+
+------------
+----[mlb]----
+
+> WARNING
+>
+> Importante
+>
+> Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment.  <br><br>
+> <br><br>
+> It is necessary that it be an application where there is a product to be integrated from those where the measuring tool is available. For now, the integration quality measuring tool is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Checkout Transparente](/developers/en/docs/checkout-api/landing), [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) and [Mercado Pago Point.](/developers/en/docs/mp-point/landing)
+
+------------
+
 1. In the [Devsite](/developers/en/docs), click on [Your integrations](https://www.mercadopago.com.br/developers/panel/app) menu.
-2. In the [Developer dashboard](https://www.mercadopago.com.br/developers/panel/app)
-, **click on the desired application**. It must be an application in which you have integrated a product admitted by the homologation tool (Checkout Pro, Checkout Bricks, ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ ----[mlb]---- Checkout Transparente ------------, or Mercado Pago Point).
-3. Then click on **Update score** to access the tool where you can **measure the quality of your application** and view the score that indicates how secure and aligned your application configuration is with the good practices of Mercado Pago integration.
-4. On the **Integration Quality** screen, click **Update score** and enter the `payment ID` of a recent payment made with production [credentials](/developers/en/guides/additional-content/your-integrations/credentials) of the application you wish to homologate. Whenever possible, use the last productive `payment ID` identified in the application in question.
+2. In the [Developer dashboard](https://www.mercadopago.com.br/developers/panel/app), find the desired application and click on **Evaluate quality**. You can also access the homologation tool directly from the [details of your application](/developers/en/guides/additional-content/your-integrations/application-details), clicking on **Evaluate quality** from the "Status" card.
+3. On the **Integration quality** screen, click **Evaluate quality** and enter the `payment ID` of a recent payment made with production [credentials](/developers/en/guides/additional-content/your-integrations/credentials) of the application you wish to homologate. Finally, click on **Evaluate quality** again.
+
+> Whenever possible, use the last productive `payment ID` identified in the application in question.
 
 Ready! The quality measurement has been performed. Now, you can learn your score and which are the aspects you can improve of your homologation.
 
@@ -43,7 +60,6 @@ Ready! The quality measurement has been performed. Now, you can learn your score
 Once you’ve measured your integration’s quality, you will find the next screen:
 
 ![homologation-screen](/homologator/integration-quality-screen-es.png)
-
 
 1. **Score**: indicates how safe your application's configuration is and is in line with Mercado Pago's best integration practices. The minimum score to fullfill the requirements is 75. Either way, remember that as close as your score is to a 100, it would improve the user experience and your payment approval rates.
 2. **Payment ID** and **Last update**: `payment ID` on which the application quality score is based and date of last update of the application's quality score.
@@ -56,4 +72,3 @@ Once you’ve measured your integration’s quality, you will find the next scre
 > Actions indicated as **required** must be completed to add points that will improve the quality of your integration, while those indicated as **best practices** are recommended but will not impact the score.
 
 4. **Update score**: Once you make all the necessary changes, you can mesure your integration’s quality again, before going to production.
-

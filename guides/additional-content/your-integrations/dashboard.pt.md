@@ -36,12 +36,23 @@ Caso você não esteja usando uma plataforma de comércio eletrônico, selecione
 
 ![Criar aplicação](/images/dashboard/dashboard-pt.gif)
 
-A cada aplicação criada, um novo card contendo o nome e o número da aplicação é automaticamente criado no [Painel do desenvolvedor](/developers/panel/app).
+A cada aplicação criada, um novo _card_ contendo o nome, o número e o _status_ de qualidade da aplicação é automaticamente criado no [Painel do desenvolvedor](/developers/panel/app).
 
 ![Card criado](/images/dashboard/applications-pt.png)
 
+----[mla, mlm, mlu, mco, mlc, mpe]----
+> É necessário que seja uma aplicação em que haja um produto a ser integrado daqueles em que a ferramenta de medição está disponível. Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro](/developers/pt/docs/checkout-pro/landing) [Checkout API,](/developers/pt/docs/checkout-api/landing), [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) e [Mercado Pago Point](/developers/pt/docs/mp-point/landing).
+
+------------
+----[mlb]----
+> É necessário que seja uma aplicação em que haja um produto a ser integrado daqueles em que a ferramenta de medição está disponível. Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro](/developers/pt/docs/checkout-pro/landing) [Checkout Transparente,](/developers/pt/docs/checkout-api/landing), [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) e [Mercado Pago Point](/developers/pt/docs/mp-point/landing). Além disso,
+
+------------
+
 ## Acessar as credenciais de uma aplicação que você não gerencia
+
 Você pode solicitar acesso às credenciais de aplicação de outras pessoas e integrar soluções para outras contas além da sua. Para solicitar acesso às credenciais de uma aplicação que você não gerencia de um jeito seguro, siga os passos abaixo:
+
 1. No [Painel do desenvolvedor](/developers/panel/app), clique no botão **Solicitar acesso às credenciais**.
 2. Preencher o e-mail associado à conta da qual as credenciais serão solicitadas.
 3. Marque a caixa de seleção "N˜ao sou um robô".
