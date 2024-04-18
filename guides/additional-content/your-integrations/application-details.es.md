@@ -45,7 +45,7 @@ De esta manera, la aplicación se eliminará correctamente.
 >
 > Atención
 >
-> Al eliminar una aplicación, ten en cuenta que tu tienda perderá la capacidad de recibir pagos a través de la integración asociada. Además, se perderán todas las configuraciones, incluidas las credenciales que tenga asociadas. **Una vez eliminada una aplicación, no se puede recuperar**.
+> Al eliminar una aplicación, ten en cuenta que tu tienda perderá la capacidad de recibir pagos a través de la integración asociada. Además, se perderán todas las configuraciones, incluidas las credenciales que tengas asociadas. **Una vez eliminada una aplicación, no se puede recuperar**.
 
 ## Calidad de la aplicación
 
