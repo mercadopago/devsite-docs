@@ -671,6 +671,7 @@ After returning the notification and confirming its receipt, you will obtain the
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [check documentation](/developers/en/reference/subscriptions/_preapproval_plan/post) |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [check documentation](/developers/en/reference/subscriptions/_authorized_payments_id/get) |
 | topic_claims_integration_wh | `https://api.mercadopago.com/claim_resource` | [check documentation](/developers/en/developers/pt/reference/claims/_data_resource/get) |
+| card updater	 | `https://api.mercadopago.com/v1/customers/{customer_id}/cards/{id}` | [check documentation](/developers/en/reference/cards/_customers_customer_id_cards_id/put) |
 
 ------------
 ----[mlm, mlb]---- 
@@ -682,6 +683,7 @@ After returning the notification and confirming its receipt, you will obtain the
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [check documentation](/developers/en/reference/subscriptions/_authorized_payments_id/get) |
 | point_integration_wh | - | [check documentation](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
 | topic_claims_integration_wh | `https://api.mercadopago.com/claim_resource` | [check documentation](/developers/en/developers/pt/reference/claims/_data_resource/get) |
+| card updater	 | `https://api.mercadopago.com/v1/customers/{customer_id}/cards/{id}` | [check documentation](/developers/en/reference/cards/_customers_customer_id_cards_id/put) |
 
 ------------
 ----[mla]----
@@ -694,6 +696,7 @@ After returning the notification and confirming its receipt, you will obtain the
 | point_integration_wh | - | [check documentation](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
 | delivery | - | [check documentation](/developers/en/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put)
 | topic_claims_integration_wh | `https://api.mercadopago.com/claim_resource` | [check documentation](/developers/en/developers/pt/reference/claims/_data_resource/get) |
+| card updater	 | `https://api.mercadopago.com/v1/customers/{customer_id}/cards/{id}` | [check documentation](/developers/en/reference/cards/_customers_customer_id_cards_id/put) |
 
 ------------
 
