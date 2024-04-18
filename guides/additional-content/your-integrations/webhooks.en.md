@@ -616,7 +616,7 @@ curl -X POST \
 >
 > For the event type `point_integration_wh` the notification format changes. [Click here](/developers/en/docs/mp-point/introduction) to consult the documentation of **Mercado Pago Point**.
 > <br/>
-> In the case of the `delivery`, `topic_claims_integration_wh` and `card updater` events, we will also have some different attributes in the response. Check the table below for these features.
+> In the case of the `delivery`, `topic_claims_integration_wh` and `card updater` events, we will also have some different attributes in the response. Check the table below to see these features.
 
 ```json
 {
