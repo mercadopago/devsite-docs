@@ -57,7 +57,7 @@ En esta sección, nos aseguraremos de que tu aplicación cumpla con los requisit
 >
 > Importante
 >
-> Antes de comenzar la evaluación, asegúrese de que la homologación de la aplicación en el entorno de producción haya sido completada, incluyendo la realización de al menos un pago productivo.  <br><br>
+> Antes de comenzar la evaluación, asegúrate de que la homologación de la aplicación en el entorno de producción haya sido completada, incluyendo la realización de al menos un pago productivo.  <br><br>
 > <br><br>
 > Es necesario que sea una aplicación en la que haya un producto a integrar de aquellos en los que la herramienta de medición está disponible. Por ahora, la herramienta de medición de la calidad de integración solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout API](/developers/es/docs/checkout-api/landing), [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point.](/developers/es/docs/mp-point/landing)
 
