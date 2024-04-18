@@ -59,7 +59,7 @@ En esta sección, nos aseguraremos de que tu aplicación cumpla con los requisit
 >
 > Antes de comenzar la evaluación, asegúrate de que la homologación de la aplicación en el entorno de producción haya sido completada, incluyendo la realización de al menos un pago productivo.
 > <br><br>
-> Es necesario que la aplicación a evaluar registre la integración de un producto de entre aquellos en los que la herramienta de medición está disponible. Por ahora, solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout API](/developers/es/docs/checkout-api/landing), [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point.](/developers/es/docs/mp-point/landing)
+> Es necesario que la aplicación a evaluar registre la integración de un producto de entre aquellos en los que la herramienta de medición está disponible. Por ahora, solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout API,](/developers/es/docs/checkout-api/landing) [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point.](/developers/es/docs/mp-point/landing)
 
 ------------
 ----[mlb]----
@@ -70,7 +70,7 @@ En esta sección, nos aseguraremos de que tu aplicación cumpla con los requisit
 >
 > Antes de comenzar la evaluación, asegúrate de que la homologación de la aplicación en el entorno de producción haya sido completada, incluyendo la realización de al menos un pago productivo.
 > <br><br>
-> Es necesario que la aplicación a evaluar registre la integración de un producto de entre aquellos en los que la herramienta de medición está disponible. Por ahora, solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout Transparente](/developers/es/docs/checkout-api/landing), [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point.](/developers/es/docs/mp-point/landing)
+> Es necesario que la aplicación a evaluar registre la integración de un producto de entre aquellos en los que la herramienta de medición está disponible. Por ahora, solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout Transparente,](/developers/es/docs/checkout-api/landing) [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point.](/developers/es/docs/mp-point/landing)
 
 ------------
 
