@@ -78,7 +78,7 @@ In this section, we will ensure that your application meets the quality and secu
 
 The score indicates how secure and aligned with Mercado Pago's integration best practices your application's configuration is.
 
-By clicking on **Evaluate quality**, you will initiate the review process of your integration. During this assessment, it is essential to identify areas for improvement and make the necessary changes to your integration. This process involves reviewing a series of associated fields.
+By clicking on **Evaluate quality**, you will initiate the review process of your integration. During this assessment, our measurement tool will identify areas for improvement and guide you to make the necessary changes to your integration. This process involves reviewing a series of associated fields.
 
 Access [Integration quality](/developers/en/guides/additional-content/homologator/homologator) and learn all the necessary information to know how to measure the quality of your application.
 
