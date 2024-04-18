@@ -36,9 +36,6 @@ Below, we will explain how to: specify the URLs that will be notified, configure
 | `delivery` | `delivery.updated`| Shipping data and order update |
 | `delivery_cancellation` | `case_created`| Shipment cancellation request |
 | `topic_claims_integration_wh` | `updated`| Claims made by sales |
-| `card updater` | `card.updated`| The buyer's user card has been updated |
-
-> The Card Updater retrieves card information and updates this data within Mercado Pago. Cards recoverable with this feature include: cards with incorrect information (such as expiration date, card number, CVV, name, etc.) and cards that have been replaced by the financial institution (due to expiration, card upgrade, etc.).
 
 5. Finally, click **Save** to generate a secret signature for the application. The signature is a validation method to ensure that the notifications received were sent by Mercado Pago, therefore, it is important to check the authenticity information to avoid fraud.
 
@@ -616,7 +613,7 @@ curl -X POST \
 >
 > For the event type `point_integration_wh` the notification format changes. [Click here](/developers/en/docs/mp-point/introduction) to consult the documentation of **Mercado Pago Point**.
 > <br/>
-> In the case of the `delivery`, `topic_claims_integration_wh` and `card updater` events, we will also have some different attributes in the response. Check the table below to see these features.
+> In the case of the `delivery` and `topic_claims_integration_wh` events, we will also have some different attributes in the response. Check the table below for these features.
 
 ```json
 {
@@ -639,15 +636,12 @@ This indicates that payment **999999999** was created for user **44444** in prod
 | --- | --- |
 | **id** | Notification ID |
 | **live_mode** | Indicates if the URL entered is valid. |
-| **type** | Type of notification received (payments, mp-connect, subscription, claim, automatic-payments, etc) |
+| **type** | Type of notification received (payments, mp-connect, subscription, claim, etc) |
 | **date_created** | Resorce creation date |
 | **user_id** | Vendor UserID |
 | **api_version** | Indicates if it is a duplicate notification or not |
 | **action** | Type of notification received, indicating whether it is the update of a resource or the creation of a new |
 | **data - id** | ID of the payment, merchant_order or claim|
-| **data - customer_id** (card updater)| Customer ID with updated card |
-| **data - new_card_id** (card updater)| Updated card number |
-| **data - old_card_id** (card updater)| Old card number |
 | **attempts** (delivery) | Number of times a notification was sent |
 | **received** (delivery) | Resource Creation Date |
 | **resource** (delivery) | Type of notification received, indicating whether this is an update to a feature or the creation of a new one |
@@ -671,7 +665,6 @@ After returning the notification and confirming its receipt, you will obtain the
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [check documentation](/developers/en/reference/subscriptions/_preapproval_plan/post) |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [check documentation](/developers/en/reference/subscriptions/_authorized_payments_id/get) |
 | topic_claims_integration_wh | `https://api.mercadopago.com/claim_resource` | [check documentation](/developers/en/developers/pt/reference/claims/_data_resource/get) |
-| card updater	 | `https://api.mercadopago.com/v1/customers/{customer_id}/cards/{id}` | [check documentation](/developers/en/reference/cards/_customers_customer_id_cards_id/put) |
 
 ------------
 ----[mlm, mlb]---- 
@@ -683,7 +676,6 @@ After returning the notification and confirming its receipt, you will obtain the
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [check documentation](/developers/en/reference/subscriptions/_authorized_payments_id/get) |
 | point_integration_wh | - | [check documentation](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
 | topic_claims_integration_wh | `https://api.mercadopago.com/claim_resource` | [check documentation](/developers/en/developers/pt/reference/claims/_data_resource/get) |
-| card updater	 | `https://api.mercadopago.com/v1/customers/{customer_id}/cards/{id}` | [check documentation](/developers/en/reference/cards/_customers_customer_id_cards_id/put) |
 
 ------------
 ----[mla]----
@@ -696,7 +688,6 @@ After returning the notification and confirming its receipt, you will obtain the
 | point_integration_wh | - | [check documentation](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
 | delivery | - | [check documentation](/developers/en/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put)
 | topic_claims_integration_wh | `https://api.mercadopago.com/claim_resource` | [check documentation](/developers/en/developers/pt/reference/claims/_data_resource/get) |
-| card updater	 | `https://api.mercadopago.com/v1/customers/{customer_id}/cards/{id}` | [check documentation](/developers/en/reference/cards/_customers_customer_id_cards_id/put) |
 
 ------------
 
