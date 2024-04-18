@@ -36,7 +36,7 @@ Si no estás utilizando una plataforma de comercio electrónico, marca **No** y 
 
 ![Crear aplicación](/images/dashboard/dashboard-es.gif)
 
-Cada vez que creas una aplicación, se crea automáticamente una nueva tarjeta con el nombre, el número y el estado de calidad de la aplicación en el [Panel del desarrollador](/developers/panel/app).
+Cada vez que creas una aplicación, se genera automáticamente una nueva tarjeta con el nombre, el número y el estado de calidad de la aplicación en el [Panel del desarrollador](/developers/panel/app).
 
 ![Card](/images/dashboard/applications-es.png)
 
