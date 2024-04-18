@@ -337,7 +337,7 @@
                       "example": "approved",
                       "description": {
                         "es": "Estado actual de la transacción.",
-                        "pt": "Estado atual da transação.",
+                        "pt": "Status atual da transação.",
                         "en": "Transaction's current status."
                       },
                       "enum": [
@@ -467,7 +467,7 @@
                                     "example": "100,00",
                                     "description": {
                                       "es": "Monto debitado de la cuenta Mercado Pago de origen.",
-                                      "pt": "Montante debitado da conta Mercado Pago de origem.",
+                                      "pt": "Valor debitado da conta Mercado Pago de origem.",
                                       "en": "Amount debited from the Mercado Pago origin account."
                                     } 
                                   },
