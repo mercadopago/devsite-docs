@@ -49,7 +49,7 @@ De esta manera, la aplicación se eliminará correctamente.
 
 ## Calidad de la aplicación
 
-En esta sección, nos aseguraremos de que tu aplicación cumpla con los requisitos de calidad y seguridad necesarios para brindar la mejor experiencia tanto a vendedores como a compradores con Mercado Pago. [Haz clic aquí](/developers/pt/guides/additional-content/homologator/homologator) y conoce toda la información necesaria para saber cómo homologar correctamente tu integración.
+En esta sección, nos aseguraremos de que tu aplicación cumpla con los requisitos de calidad y seguridad necesarios para brindar la mejor experiencia tanto a vendedores como a compradores con Mercado Pago. [Haz clic aquí](/developers/es/guides/additional-content/homologator/homologator) y conoce toda la información necesaria para saber cómo homologar correctamente tu integración.
 
 ----[mla, mlm, mlu, mco, mlc, mpe]----
 
