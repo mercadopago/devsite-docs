@@ -2,31 +2,6 @@
 
 To access the general data of your application, navigate to the [Developer Dashboard](/developers/panel/app) and click on the card of an application to access the **Application details**.
 
-## Application quality
-
-In this section, we will ensure that your application meets the quality and security requirements necessary to provide the best experience for both sellers and buyers with Mercado Pago.
-
-### Evaluate quality
-
-The score indicates how secure and aligned with Mercado Pago's integration best practices your application's configuration is.
-
-By clicking on **Evaluate quality**, you will initiate the review process of your integration. During this assessment, it is essential to identify areas for improvement and make the necessary changes to your integration. This process involves reviewing a series of associated fields.
-
-> WARNING
->
-> Important
->
-> Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment. After implementing improvements, it is necessary to click again on **Update score** to reassess your integration and verify if it meets the required standards.
-
-----[mla, mlm, mlu, mco, mlc, mpe]----
-For now, the **Integration quality** section is only available for integrations with [**Checkout Pro**,](/developers/en/docs/checkout-pro/landing) [**Mercado Pago Point**,](/developers/en/docs/mp-point/landing) [**Checkout API**](/developers/en/docs/checkout-api/landing) and [**Checkout Bricks**](/developers/en/docs/checkout-bricks/landing).
-
-------------
-----[mlb]----
-For now, the **Integration quality** section is only available for integrations with [**Checkout Pro**,](/developers/en/docs/checkout-pro/landing) [**Mercado Pago Point**,](/developers/en/docs/mp-point/landing) [**Checkout API**](/developers/en/docs/checkout-api/landing) and [**Checkout Bricks**.](/developers/en/docs/checkout-bricks/landing)
-
-------------
-
 ## Application data
 
 * **Application data**: This section displays the basic data of the application, including:
@@ -71,3 +46,40 @@ This way, the application will be successfully deleted.
 > Attention
 >
 > When deleting an application, please note that your store will lose the ability to receive payments through the integration associated with that application. Additionally, all settings, including associated credentials, will be lost. **Once an application is deleted, it cannot be recovered**.
+
+## Application quality
+
+In this section, we will ensure that your application meets the quality and security requirements necessary to provide the best experience for both sellers and buyers with Mercado Pago. [Click here](/developers/en/guides/additional-content/homologator/homologator) and learn all the necessary information to know how to properly homologate your integration.
+
+----[mla, mlm, mlu, mco, mlc, mpe]----
+
+> WARNING
+>
+> Importante
+>
+> Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment.
+> <br><br>
+> It is necessary that the application is registered with an integration of a product from those where the measuring tool is available. For now, the integration quality measuring tool is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Checkout API,](/developers/en/docs/checkout-api/landing) [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) and [Mercado Pago Point.](/developers/en/docs/mp-point/landing)
+
+------------
+----[mlb]----
+
+> WARNING
+>
+> Importante
+>
+> Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment.
+> <br><br>
+> It is necessary that the application is registered with an integration of a product from those where the measuring tool is available. For now, the integration quality measuring tool is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Checkout Transparente,](/developers/en/docs/checkout-api/landing) [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) and [Mercado Pago Point.](/developers/en/docs/mp-point/landing)
+
+------------
+
+### Evaluate quality
+
+The score indicates how secure and aligned with Mercado Pago's integration best practices your application's configuration is.
+
+By clicking on **Evaluate quality**, you will initiate the review process of your integration. During this assessment, our measurement tool will identify areas for improvement and guide you to make the necessary changes to your integration. This process involves reviewing a series of associated fields.
+
+Access [Integration quality](/developers/en/docs/integration-quality) and learn all the necessary information to know how to measure the quality of your application.
+
+> Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment. 

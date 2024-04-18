@@ -268,56 +268,56 @@
                           "title": "invalid_client",
                           "description": {
                             "en": "The provided client_id and/or client_secret of your app is invalid.",
-                            "es": "The provided client_id and/or client_secret of your app is invalid.",
-                            "pt": "The provided client_id and/or client_secret of your app is invalid."
+                            "es": "El client_id y/o client_secret proporcionados de tu aplicación son inválidos.",
+                            "pt": "O client_id e/ou client_secret fornecidos de sua aplicação são inválidos."
                           }
                         },
                         {
                           "title": "invalid_grant",
                           "description": {
                             "en": "There are several reasons for this error, it could be because the authorization_code or refresh_token is invalid, expired or revoked, was sent in an incorrect flow, belongs to another client, or the redirect_uri used in the authorization flow does not match what your application has configured.",
-                            "es": "There are several reasons for this error, it could be because the authorization_code or refresh_token is invalid, expired or revoked, was sent in an incorrect flow, belongs to another client, or the redirect_uri used in the authorization flow does not match what your application has configured.",
-                            "pt": "There are several reasons for this error, it could be because the authorization_code or refresh_token is invalid, expired or revoked, was sent in an incorrect flow, belongs to another client, or the redirect_uri used in the authorization flow does not match what your application has configured."
+                            "es": "Hay varias razones para este error, podría ser porque el authorization_code o refresh_token son inválidos, han expirado, han sido revocados, se enviaron de forma incorrecta o pertenecen a otro cliente. También es posible que el redirect_uri utilizado en el flujo de autorización no coincida con lo que tu aplicación tiene configurado.",
+                            "pt": "Existem várias razões para este erro, pode ser porque o authorization_code ou refresh_token são inválidos, expiraram, foram revogados, foram enviados de forma incorreta ou pertencem a outro cliente. Também é possível que o redirect_uri usado no fluxo de autorização não corresponde ao que sua aplicação tem configurado."
                           }
                         },
                         {
                           "title": "invalid_scope",
                           "description": {
-                            "en": "The requested scope is invalid, unknown, or wrongly formed. The allowed values for the scope parameter are “offline_access”, ”write”, ”read”.",
-                            "es": "The requested scope is invalid, unknown, or wrongly formed. The allowed values for the scope parameter are “offline_access”, ”write”, ”read”.",
-                            "pt": "The requested scope is invalid, unknown, or wrongly formed. The allowed values for the scope parameter are “offline_access”, ”write”, ”read”."
+                            "en": "The requested scope is invalid, unknown, or wrongly formed. The allowed values for the scope parameter are “offline_access”, ”write” or ”read”.",
+                            "es": "El scope solicitado es inválido, desconocido o mal formado. Los valores permitidos para el parámetro de alcance son “offline_access”, ”write” o ”read”.",
+                            "pt": "O escopo solicitado é inválido, desconhecido ou mal formado. Os valores permitidos para o parâmetro de escopo são “offline_access”, ”write” ou ”read”."
                           }
                         },
                         {
                           "title": "invalid_request",
                           "description": {
                             "en": "The request does not include a required parameter, includes an unsupported parameter or parameter value, has a duplicated value, or is otherwise malformed.",
-                            "es": "The request does not include a required parameter, includes an unsupported parameter or parameter value, has a duplicated value, or is otherwise malformed.",
-                            "pt": "The request does not include a required parameter, includes an unsupported parameter or parameter value, has a duplicated value, or is otherwise malformed."
+                            "es": "La solicitud no incluye un parámetro requerido, incluye un parámetro o valor de parámetro no admitido, tiene un valor duplicado o está mal formada.",
+                            "pt": "A requisição não inclui um parâmetro obrigatório, inclui um parâmetro ou valor de parâmetro não suportado, tem um valor duplicado ou está mal formada."
                           }
                         },
                         {
                           "title": "unsupported_grant_type",
                           "description": {
                             "en": "Allowed values for grant_type are “authorization_code” or “refresh_token”.",
-                            "es": "Allowed values for grant_type are “authorization_code” or “refresh_token”.",
-                            "pt": "Allowed values for grant_type are “authorization_code” or “refresh_token”."
+                            "es": "Los valores permitidos para grant_type son “authorization_code” o “refresh_token”.",
+                            "pt": "Os valores permitidos para grant_type são “authorization_code” ou “refresh_token”."
                           }
                         },
                         {
                           "title": "forbidden",
                           "description": {
                             "en": "The call does not authorize access, possibly another user's token is being used.",
-                            "es": "The call does not authorize access, possibly another user's token is being used.",
-                            "pt": "The call does not authorize access, possibly another user's token is being used."
+                            "es": "La llamada no autoriza el acceso, posiblemente se esté usando el token de otro usuario.",
+                            "pt": "A chamada não autoriza o acesso, possivelmente está sendo usado o token de outro usuário."
                           }
                         },
                         {
                           "title": "unauthorized_client",
                           "description": {
                             "en": "The application does not have a grant with the user or the permissions (scopes) that the application has with this user do not allow creating a token.",
-                            "es": "The application does not have a grant with the user or the permissions (scopes) that the application has with this user do not allow creating a token.",
-                            "pt": "The application does not have a grant with the user or the permissions (scopes) that the application has with this user do not allow creating a token."
+                            "es": "La aplicación no tiene un grant con el usuario o los permisos (scopes) que la aplicación tiene con este usuario no permiten crear un token.",
+                            "pt": "A aplicação não possui um grant com o usuário ou as permissões (escopos) que o aplicativo tem com este usuário não permitem criar um token."
                           }
                         }
                       ]
@@ -328,6 +328,35 @@
                         "type": "string"
                       },
                       "example": []
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "local_rate_limited",
+                          "description": {
+                            "en": "The call does not authorize access, please try again.",
+                            "es": "La llamada no autoriza el acceso, por favor, inténtalo de nuevo.",
+                            "pt": "A chamada não autoriza o acesso, por favor, tente novamente."
+                          }
+                        }
+                      ]
                     }
                   }
                 }
