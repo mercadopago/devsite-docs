@@ -28,7 +28,7 @@ To measure the quality of your application, follow the steps below.
 
 > WARNING
 >
-> Importante
+> Important
 >
 > Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment. <br><br>
 > <br><br>
