@@ -78,7 +78,7 @@ En esta sección, nos aseguraremos de que tu aplicación cumpla con los requisit
 
 El puntaje indica qué tan segura y alineada con las buenas prácticas de integración de Mercado Pago está la configuración de tu aplicación.
 
-Al hacer clic en **Evaluar la calidad**, comenzarás el proceso de análisis de tu integración. Durante esta revisión, es importante identificar áreas de mejora y realizar los cambios necesarios en tu integración. Este proceso implica la revisión de varios campos asociados.
+Al hacer clic en **Evaluar la calidad**, comenzarás el proceso de análisis de tu integración. Durante esta revisión, nuestra herramienta identificará áreas de mejora y te guiará para realizar los cambios necesarios en tu integración. Este proceso implica la revisión de varios campos asociados.
 
 Accede a [Calidad de la integración](/developers/es/guides/additional-content/homologator/homologator) y conoce toda la información necesaria para saber cómo medir la calidad de tu aplicación.
 
