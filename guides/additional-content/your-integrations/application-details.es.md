@@ -57,7 +57,7 @@ En esta sección, nos aseguraremos de que tu aplicación cumpla con los requisit
 >
 > Importante
 >
-> Antes de comenzar la evaluación, asegúrate de que la homologación de la aplicación en el entorno de producción haya sido completada, incluyendo la realización de al menos un pago productivo.  <br><br>
+> Antes de comenzar la evaluación, asegúrate de que la homologación de la aplicación en el entorno de producción haya sido completada, incluyendo la realización de al menos un pago productivo.
 > <br><br>
 > Es necesario que la aplicación a evaluar registre la integración de un producto de entre aquellos en los que la herramienta de medición está disponible. Por ahora, solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout API](/developers/es/docs/checkout-api/landing), [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point.](/developers/es/docs/mp-point/landing)
 
@@ -68,7 +68,7 @@ En esta sección, nos aseguraremos de que tu aplicación cumpla con los requisit
 >
 > Importante
 >
-> Antes de comenzar la evaluación, asegúrate de que la homologación de la aplicación en el entorno de producción haya sido completada, incluyendo la realización de al menos un pago productivo.  <br><br>
+> Antes de comenzar la evaluación, asegúrate de que la homologación de la aplicación en el entorno de producción haya sido completada, incluyendo la realización de al menos un pago productivo.
 > <br><br>
 > Es necesario que la aplicación a evaluar registre la integración de un producto de entre aquellos en los que la herramienta de medición está disponible. Por ahora, solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout Transparente](/developers/es/docs/checkout-api/landing), [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point.](/developers/es/docs/mp-point/landing)
 
@@ -80,6 +80,6 @@ El puntaje indica qué tan segura y alineada con las buenas prácticas de integr
 
 Al hacer clic en **Evaluar la calidad**, comenzarás el proceso de análisis de tu integración. Durante esta revisión, nuestra herramienta identificará áreas de mejora y te guiará para realizar los cambios necesarios en tu integración. Este proceso implica la revisión de varios campos asociados.
 
-Accede a [Calidad de la integración](/developers/es/guides/additional-content/homologator/homologator) y conoce toda la información necesaria para saber cómo medir la calidad de tu aplicación.
+Accede a [Calidad de la integración](/developers/es/docs/integration-quality) y conoce toda la información necesaria para saber cómo medir la calidad de tu aplicación.
 
 > Después de implementar mejoras, es necesario hacer clic nuevamente en **Actualizar puntaje** para volver a evaluar su integración y verificar si cumple con los estándares requeridos.

@@ -30,7 +30,7 @@ To measure the quality of your application, follow the steps below.
 >
 > Important
 >
-> Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment. <br><br>
+> Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment.
 > <br><br>
 > It is necessary that the application is registered with an integration of a product from those where the measuring tool is available. For now, the integration quality measuring tool is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Checkout API](/developers/en/docs/checkout-api/landing), [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) and [Mercado Pago Point.](/developers/en/docs/mp-point/landing)
 
@@ -41,7 +41,7 @@ To measure the quality of your application, follow the steps below.
 >
 > Important
 >
-> Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment.  <br><br>
+> Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment.
 > <br><br>
 > It is necessary that the application is registered with an integration of a product from those where the measuring tool is available. For now, the integration quality measuring tool is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Checkout Transparente](/developers/en/docs/checkout-api/landing), [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) and [Mercado Pago Point.](/developers/en/docs/mp-point/landing)
 

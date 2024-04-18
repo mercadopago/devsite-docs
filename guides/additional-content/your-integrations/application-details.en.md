@@ -57,7 +57,7 @@ In this section, we will ensure that your application meets the quality and secu
 >
 > Importante
 >
-> Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment. <br><br>
+> Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment.
 > <br><br>
 > It is necessary that the application is registered with an integration of a product from those where the measuring tool is available. For now, the integration quality measuring tool is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Checkout API](/developers/en/docs/checkout-api/landing), [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) and [Mercado Pago Point.](/developers/en/docs/mp-point/landing)
 
@@ -68,7 +68,7 @@ In this section, we will ensure that your application meets the quality and secu
 >
 > Importante
 >
-> Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment.  <br><br>
+> Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment.
 > <br><br>
 > It is necessary that the application is registered with an integration of a product from those where the measuring tool is available. For now, the integration quality measuring tool is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Checkout Transparente](/developers/en/docs/checkout-api/landing), [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) and [Mercado Pago Point.](/developers/en/docs/mp-point/landing)
 
@@ -80,6 +80,6 @@ The score indicates how secure and aligned with Mercado Pago's integration best 
 
 By clicking on **Evaluate quality**, you will initiate the review process of your integration. During this assessment, our measurement tool will identify areas for improvement and guide you to make the necessary changes to your integration. This process involves reviewing a series of associated fields.
 
-Access [Integration quality](/developers/en/guides/additional-content/homologator/homologator) and learn all the necessary information to know how to measure the quality of your application.
+Access [Integration quality](/developers/en/docs/integration-quality) and learn all the necessary information to know how to measure the quality of your application.
 
 > Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment. 

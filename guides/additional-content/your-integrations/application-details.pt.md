@@ -57,7 +57,7 @@ Nesta seção, vamos garantir que sua aplicação atenda aos requisitos de quali
 >
 > Atenção
 >
-> Antes de iniciar a avaliação, certifique-se de que a homologação da aplicação em ambiente de produção foi concluída, incluindo a realização de pelo menos um pagamento produtivo. <br><br>
+> Antes de iniciar a avaliação, certifique-se de que a homologação da aplicação em ambiente de produção foi concluída, incluindo a realização de pelo menos um pagamento produtivo.
 > <br><br>
 >É necessário que seja uma aplicação em que haja um produto a ser integrado daqueles em que a ferramenta de medição está disponível. Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro](/developers/pt/docs/checkout-pro/landing) [Checkout API,](/developers/pt/docs/checkout-api/landing), [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) e [Mercado Pago Point.](/developers/pt/docs/mp-point/landing)
 
@@ -68,7 +68,7 @@ Nesta seção, vamos garantir que sua aplicação atenda aos requisitos de quali
 >
 > Atenção
 >
-> Antes de iniciar a avaliação, certifique-se de que a homologação da aplicação em ambiente de produção foi concluída, incluindo a realização de pelo menos um pagamento produtivo. <br><br>
+> Antes de iniciar a avaliação, certifique-se de que a homologação da aplicação em ambiente de produção foi concluída, incluindo a realização de pelo menos um pagamento produtivo.
 > <br><br>
 > É necessário que seja uma aplicação em que haja um produto a ser integrado daqueles em que a ferramenta de medição está disponível. Por enquanto, a ferramenta para medir a qualidade da integração só está disponível para integrações com o [Checkout Pro](/developers/pt/docs/checkout-pro/landing) [Checkout Transparente,](/developers/pt/docs/checkout-api/landing), [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) e [Mercado Pago Point.](/developers/pt/docs/mp-point/landing)
 
@@ -80,6 +80,6 @@ O **status** indica as etapas indicadas para poder avaliar a qualidade de sua ap
 
 Ao clicar em **Avaliar a qualidade**, você será redirecionado para a ferramenta de medição e iniciará o processo de análise da sua integração. Durante essa análise, é importante identificar os pontos de melhoria e realizar as alterações necessárias em sua integração. Este processo envolve a revisão de uma série de campos associados.
 
-Acesse [Qualidade da integração](/developers/pt/guides/additional-content/homologator/homologator) e conheça todas as informações necessárias para saber como medir a qualidade da sua aplicação.
+Acesse [Qualidade da integração](/developers/pt/docs/integration-quality) e conheça todas as informações necessárias para saber como medir a qualidade da sua aplicação.
 
 > Após implementar melhorias, é necessário clicar novamente em **Atualizar pontuação** para reavaliar sua integração e verificar se ela atende aos padrões exigidos. 

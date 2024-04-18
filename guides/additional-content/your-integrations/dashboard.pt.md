@@ -12,7 +12,7 @@ Crie sua aplicação e obtenha suas credenciais para fazer a integração com o 
 1. Clique em **Suas integrações**, no canto superior direito da tela.
 2. Clique em **Criar aplicação**.
 
-![Criar aplicação](/images/dashboard/dashboard-pt.png)
+![Criar aplicação](/images/dashboard/dashboard-pt1.png)
 
 > NOTE
 >
