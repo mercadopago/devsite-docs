@@ -1,6 +1,6 @@
-# Cómo integrar 3DS con Checkout API
+# Cómo integrar 3DS con ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------
 
-En esta documentación encontrarás toda la información necesaria para realizar la integración con 3DS con Checkout API. Para obtener más información sobre cómo funciona este tipo de autenticación, consulte [3DS 2.0](/developers/es/docs/checkout-api/how-tos/improve-payment-approval/3ds).
+En esta documentación encontrarás toda la información necesaria para realizar la integración con 3DS con ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------. Para obtener más información sobre cómo funciona este tipo de autenticación, consulte [3DS 2.0](/developers/es/docs/checkout-api/how-tos/improve-payment-approval/3ds).
 
 > NOTE
 >

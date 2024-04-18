@@ -2,7 +2,7 @@
 
 # Boleto bancário
 
-With Mercado Pago's Checkout API, it is possible to offer, in addition to card and Pix, **payments via boleto bancário**.
+With Mercado Pago's Checkout Transparente, it is possible to offer, in addition to card and Pix, **payments via boleto bancário**.
 
 To get a detailed list of all payment methods available for integration, send a **GET** with your **Access token** to the endpoint [/v1/payment_methods](/developers/en/reference/payment_methods/_payment_methods/get) and run the request or, if you prefer, make the request using the SDKs below.
 
@@ -58,7 +58,7 @@ To offer **payments via boleto bancário**, follow the steps below.
 
 ## Import MercadoPago.js
 
-To perform the Checkout API integration, you need to capture the necessary data to process the payment.
+To perform the Checkout Transparente integration, you need to capture the necessary data to process the payment.
 
 This capture is made by including the MercadoPago.js library in your project, followed by the payment form. Use the code below to import the library before adding the payment form.
 

@@ -1,6 +1,6 @@
 # Tipos de integração
 
-A integração com o Checkout Transparente pode ser feita utilizando procedimentos diferentes que variam de acordo com o conhecimento técnico e necessidade de negócio. Veja a tabela abaixo com o detalhamento de cada uma das opções disponíveis.
+A integração com o ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ pode ser feita utilizando procedimentos diferentes que variam de acordo com o conhecimento técnico e necessidade de negócio. Veja a tabela abaixo com o detalhamento de cada uma das opções disponíveis.
 
 ----[mlb]---- 
 | Tipo de integração  | Meios de pagamento  | Complexidade a nível frontend  | User interface (UI)  |

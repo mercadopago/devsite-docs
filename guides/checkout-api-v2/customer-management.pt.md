@@ -1,6 +1,6 @@
 # Gestão de cartões e clientes
 
-Existem configurações adicionais que podem ser realizadas após a integração do fluxo completo de pagamento do Checkout Transparente. Nesta seção você encontra todas as configurações adicionais disponíveis para pagamento com cartão de **crédito/débito**.
+Existem configurações adicionais que podem ser realizadas após a integração do fluxo completo de pagamento do ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------. Nesta seção você encontra todas as configurações adicionais disponíveis para pagamento com cartão de **crédito/débito**.
 
 - [Criar cliente e cartão](/developers/pt/docs/checkout-api/cards-and-customers-management/create-customer-and-card)
 - [Modificar cliente](/developers/pt/docs/checkout-api/cards-and-customers-management/modify-customer)

@@ -2,7 +2,7 @@
 
 O Pagamento via Open Finance possibilita utilizar o saldo das contas de Instituições Financeiras participantes do Open Finance através do Mercado Pago utilizando o Pix como meio de pagamento, oferecido e homologado pelo Banco Central do Brasil a pessoas físicas e jurídicas. 
 
-Com o Open Finance será possível oferecer pagamentos Pix no Checkout Transparente, utilizando saldos que estejam em instituições financeiras distintas daquela que está iniciando o pagamento.
+Com o Open Finance será possível oferecer pagamentos Pix no ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, utilizando saldos que estejam em instituições financeiras distintas daquela que está iniciando o pagamento.
 
 > NOTE
 > 

@@ -2,7 +2,7 @@
 
 Payments can be made via Open Finance through Mercado Pago using the account balance of financial institutions participating in Open Finance, which is approved by the Central Bank of Brazil.
 
-With Open Finance, **it will be possible to offer Pix payments in the Checkout API**, using balances that are in financial institutions besides the one initiating the payment.
+With Open Finance, **it will be possible to offer Pix payments in ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------**, using balances that are in financial institutions besides the one initiating the payment.
 
 > NOTE
 > 

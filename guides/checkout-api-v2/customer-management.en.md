@@ -1,6 +1,6 @@
 # Cards and customers management
 
-There are additional settings that can be performed after the Checkout API full payment flow has been integrated. In this section you will find all the additional settings available for payment with a **credit/debit card**.
+There are additional settings that can be performed after the ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ full payment flow has been integrated. In this section you will find all the additional settings available for payment with a **credit/debit card**.
 
 - [Create customer and card](/developers/en/docs/checkout-api/cards-and-customers-management/create-customer-and-card)
 - [Modify customer](/developers/en/docs/checkout-api/cards-and-customers-management/modify-customer)

@@ -1,6 +1,6 @@
 # Pix
 
-Pix is an instant electronic payment method offered by the Central Bank of Brazil to individuals and legal entities. Through the Checkout API, it is possible to offer this payment option through QR code or payment code.
+Pix is an instant electronic payment method offered by the Central Bank of Brazil to individuals and legal entities. Through the Checkout Transparente, it is possible to offer this payment option through QR code or payment code.
 
 > NOTE
 >

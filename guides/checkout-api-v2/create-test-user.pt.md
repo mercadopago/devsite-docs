@@ -4,7 +4,7 @@ A etapa de testes permite analisar se a integração foi feita de maneira corret
 
 Para realizar o teste de integração, serão necessários usuários de teste que permitirão avaliar o funcionamento do checkout através de fluxos de pagamento em um ambiente idêntico ao da integração.
 
-Abaixo listamos os dois tipos de usuários necessários para testar o fluxo de pagamento do Checkout Transparente.
+Abaixo listamos os dois tipos de usuários necessários para testar o fluxo de pagamento do ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------.
 
 * **Vendedor:** É a conta que você usa para configurar a aplicação e as credenciais para a cobrança.
 * **Comprador:** É a conta que você usa para testar o processo de compra.
