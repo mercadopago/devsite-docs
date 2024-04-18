@@ -1,9 +1,24 @@
+----[mlb]----
+
 ---
 content_section_with_media: 
  - title: Checkout Transparente
  - message: O Checkout Transparente do Mercado Pago permite que todo o processo de finalização de compra, desde o preenchimento de dados do usuário até a realização do pagamento aconteça em um único ambiente, sem a necessidade de redirecionamento para uma página externa à sua loja.
  - media_video: https://www.youtube.com/embed/yQZ5KjnUfbM
 ---
+
+------------
+
+----[mla, mlm, mlu, mco, mlc, mpe]----
+
+---
+content_section_with_media: 
+ - title: Checkout API
+ - message: Checkout API do Mercado Pago permite que todo o processo de finalização de compra, desde o preenchimento de dados do usuário até a realização do pagamento aconteça em um único ambiente, sem a necessidade de redirecionamento para uma página externa à sua loja.
+ - media_video: https://www.youtube.com/embed/yQZ5KjnUfbM
+---
+
+------------
 
 --- mini_landing_separator ---
 
@@ -15,7 +30,7 @@ available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
 bullet_section_with_media: 
  - title: Vantagens
  - type: normal
- - message: Além de permitir maior controle no processo de customização e integração, o Checkout Transparente oferece uma estrutura completa para processamento de pagamentos com os principais meios disponíveis no mercado, além de:
+ - message: Além de permitir maior controle no processo de customização e integração, o ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ oferece uma estrutura completa para processamento de pagamentos com os principais meios disponíveis no mercado, além de:
  - benefit_title: Compras em um único ambiente
  - benefit_message: Todo o processo de compra acontece dentro do ambiente da loja online, otimizando as etapas de pagamento do comprador.
  - benefit_title: Facilidade de customização e integração

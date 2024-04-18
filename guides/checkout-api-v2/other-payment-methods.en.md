@@ -1,7 +1,7 @@
 # Other payment methods
 
 ----[mlb]----
-With Mercado Pago's Checkout API, it is possible to offer, in addition to card and Pix, **payments via boleto bancário and pagamento em lotérica**.
+With Mercado Pago's Checkout Transparente, it is possible to offer, in addition to card and Pix, **payments via boleto bancário and pagamento em lotérica**.
 
 > NOTE
 >
@@ -154,7 +154,7 @@ To offer payments with **Abitab** and/or **Redpagos**, please follow the steps b
 
 ## Import MercadoPago.js
 
-To perform the Checkout API integration, you need to capture the necessary data to process the payment.
+To perform the ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ integration, you need to capture the necessary data to process the payment.
 
 This capture is made by including the MercadoPago.js library in your project, followed by the payment form. Use the code below to import the library before adding the payment form.
 

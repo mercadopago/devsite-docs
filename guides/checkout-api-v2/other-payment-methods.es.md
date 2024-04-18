@@ -1,7 +1,7 @@
 # Otros medios de pago
 
 ----[mlb]----
-Con el Checkout API de Mercado Pago, es posible ofrecer, además de tarjeta y Pix, **pagos vía boleto bancario y pago en agencias de lotería**.
+Con Checkout Transparente de Mercado Pago, es posible ofrecer, además de tarjeta y Pix, **pagos vía boleto bancario y pago en agencias de lotería**.
 
 > NOTE
 >
@@ -154,7 +154,7 @@ Para ofrecer pagos con **Abitab** y/o **Redpagos**, sigue las siguientes etapas.
 
 ## Importar MercadoPago.js
 
-Para realizar la integración de Checkout API, es necesario capturar los datos necesarios para procesar el pago.
+Para realizar la integración de ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, es necesario capturar los datos necesarios para procesar el pago.
 
 Esta captura se realiza incluyendo la biblioteca MercadoPago.js en tu proyecto, seguida del formulario de pago. Utiliza el siguiente código para importar la biblioteca MercadoPago.js antes de añadir el formulario de pago.
 

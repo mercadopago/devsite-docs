@@ -1,6 +1,6 @@
 # Gestión de tarjetas y clientes
 
-Hay ajustes adicionales que se pueden realizar después de la integración del flujo de pago completo de Checkout API. En esta sección encontrarás todas los ajustes adicionales disponibles para pagos con tarjeta de **crédito/débito**.
+Hay ajustes adicionales que se pueden realizar después de la integración del flujo de pago completo de ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------. En esta sección encontrarás todas los ajustes adicionales disponibles para pagos con tarjeta de **crédito/débito**.
 
 - [Crear cliente y tarjeta](/developers/es/docs/checkout-api/cards-and-customers-management/create-customer-and-card)
 - [Modificar cliente](/developers/es/docs/checkout-api/cards-and-customers-management/modify-customer)

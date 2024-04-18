@@ -4,7 +4,7 @@ La etapa de prueba le permite analizar si la integración se realizó correctame
 
 Para realizar la prueba de integración se necesitarán usuarios de prueba que permitan evaluar el funcionamiento del checkout a través de flujos de pago en un entorno idéntico al de la integración.
 
-A continuación, enumeramos los dos tipos de usuarios necesarios para probar el flujo de pago del Checkout API.
+A continuación, enumeramos los dos tipos de usuarios necesarios para probar el flujo de pago de ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------.
 
 * **Vendedor:** Es la cuenta que usas para configurar la aplicación y credenciales para el cobro.
 * **Comprador:** Es la cuenta que usas para probar el proceso de compra.

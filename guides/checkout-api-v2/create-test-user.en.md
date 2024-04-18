@@ -4,7 +4,7 @@ The testing stage allows you to analyze whether the integration was done correct
 
 To carry out the integration test, test users will be needed that will allow evaluating the operation of the checkout through payment flows in an environment identical to that of the integration.
 
-Below we list the two types of users required to test the Checkout API payment flow.
+Below we list the two types of users required to test the ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ payment flow.
 
 * **Seller:** This is the account you use to configure the application and the credentials for billing.
 * **Buyer:** This is the account you use to test the purchase process.

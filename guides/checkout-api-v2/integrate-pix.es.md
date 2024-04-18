@@ -1,6 +1,6 @@
 # Pix
 
-Pix es un medio de pago electrónico instantáneo ofrecido por el Banco Central de Brasil a personas físicas y jurídicas. A través de Checkout API, es posible ofrecer esta opción de pago a través de un código QR o un código de pago.  
+Pix es un medio de pago electrónico instantáneo ofrecido por el Banco Central de Brasil a personas físicas y jurídicas. A través de Checkout Transparente, es posible ofrecer esta opción de pago a través de un código QR o un código de pago.  
 
 > NOTE
 >

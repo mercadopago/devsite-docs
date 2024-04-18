@@ -11,4 +11,4 @@ Con las credenciales configuradas, siga los pasos a continuación para realizar 
 4. Ingresa los datos de una de nuestras [tarjetas de prueba](/developers/es/docs/checkout-api/additional-content/your-integrations/test/cards).
 3. Confirma la compra.
 
-¡Listo! Una vez que se completen estos pasos, la integración estará completa y podrá usar sus credenciales de producción para usar el Checkout API. Para más información, consulte la sección [Requisitos para salir a producción](/developers/es/docs/checkout-api/integration-test/go-to-production-requirements)
+¡Listo! Una vez que se completen estos pasos, la integración estará completa y podrá usar sus credenciales de producción para usar el ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------. Para más información, consulte la sección [Requisitos para salir a producción](/developers/es/docs/checkout-api/integration-test/go-to-production-requirements)

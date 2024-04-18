@@ -1,6 +1,6 @@
 # Prerequisites
 
-To integrate Checkout API, it is important to meet the requirements shown below.
+To integrate ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, it is important to meet the requirements shown below.
 
 
 | Requirement | Description |
@@ -10,4 +10,4 @@ To integrate Checkout API, it is important to meet the requirements shown below.
 | MercadoPago.js | MercadoPago.js allows you to manage card data to comply with the necessary security requirements and avoid sending sensitive data to its servers. For this, our library generates a token that represents this information and allows you to operate safely. See [SDKs](/developers/en/docs/sdks-library/client-side/mp-js-v2) to access MercadoPago.js. |
 ----[mlb]---- | Pix Key | If you want to offer payments via Pix, you must have your keys registered. If you haven't already, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) for more information on how to register them. | ------------
 
-If all the prerequisites have been met, you can perform the Checkout API integration.
+If all the prerequisites have been met, you can perform the ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ integration.

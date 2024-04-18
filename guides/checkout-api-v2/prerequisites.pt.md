@@ -1,6 +1,6 @@
 # Pré-requisitos
 
-Para integrar o Checkout Transparente, é importante atender aos requisitos mostrados abaixo.
+Para integrar o ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, é importante atender aos requisitos mostrados abaixo.
 
 | Requisito  | Descrição  |
 | --- | --- |
@@ -10,5 +10,5 @@ Para integrar o Checkout Transparente, é importante atender aos requisitos most
 ----[mlb]---- | Chave Pix  | Caso queira oferecer pagamentos via Pix, é necessário ter as chaves cadastradas. Caso ainda não tenha, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) para mais informações sobre como cadastrá-las.  | ------------
 
 
-Se todos os pré-requisitos foram cumpridos, você poderá realizar a integração do Checkout Transparente.
+Se todos os pré-requisitos foram cumpridos, você poderá realizar a integração do ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------.
 

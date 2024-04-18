@@ -17,7 +17,7 @@ A medida que se introducen los datos de la tarjeta, se realiza una búsqueda aut
 >
 > Importante
 >
-> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de Card Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de Card Payment para obtener más detalles. También recomendamos adoptar el protocolo 3DS 2.0 para aumentar la probabilidad de que se aprueben sus pagos. Para obtener más información, consulte la documentación sobre [Cómo integrar 3DS con Checkout API.](/developers/es/docs/checkout-api/how-tos/integrate-3ds)
+> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de Card Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de Card Payment para obtener más detalles. También recomendamos adoptar el protocolo 3DS 2.0 para aumentar la probabilidad de que se aprueben sus pagos. Para obtener más información, consulte la documentación sobre [Cómo integrar 3DS con ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------.](/developers/es/docs/checkout-api/how-tos/integrate-3ds)
 
 ------------
 ----[mlu, mco]----
@@ -33,7 +33,7 @@ Consulta el siguiente diagrama que ilustra el proceso de pago con tarjeta utiliz
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-es.png)
 
-Para integrar los pagos con tarjeta en Checkout API sigue las siguientes etapas.
+Para integrar los pagos con tarjeta en ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ sigue las siguientes etapas.
 
 ##  Importar MercadoPago.js
 
@@ -676,7 +676,7 @@ La respuesta devolverá el siguiente resultado
 >
 > Checkout Transparente
 >
-> Para ejemplos completos de código, consulte nuestros [ejemplos completos de integración.](http://github.com/mercadopago/card-payment-sample/tree/1.0.0)
+> Para ejemplos completos de código, consulta nuestros [ejemplos completos de integración.](http://github.com/mercadopago/card-payment-sample/tree/1.0.0)
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
@@ -684,5 +684,5 @@ La respuesta devolverá el siguiente resultado
 >
 > Checkout API
 >
-> Para ejemplos completos de código, consulte nuestros [ejemplos completos de integración.](http://github.com/mercadopago/card-payment-sample/tree/1.0.0)
+> Para ejemplos completos de código, consulta nuestros [ejemplos completos de integración.](http://github.com/mercadopago/card-payment-sample/tree/1.0.0)
 ------------

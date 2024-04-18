@@ -11,7 +11,7 @@ Com o Checkout Transparente do Mercado Pago, é possível oferecer, além de car
 
 ------------
 ----[mla]----
-Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **Rapipago** e/ou **Pago Fácil**.
+Com o Checkout API do Mercado Pago, também é possível oferecer pagamentos com **Rapipago** e/ou **Pago Fácil**.
 
 > NOTE
 >
@@ -21,7 +21,7 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 
 ------------
 ----[mlm]----
-Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **OXXO**, **Paycash**,  **Citibanamex**,  **Santander**, **BBVA Bancomer** e **Cartão Mercado Pago**.
+Com o Checkout API do Mercado Pago, também é possível oferecer pagamentos com **OXXO**, **Paycash**,  **Citibanamex**,  **Santander**, **BBVA Bancomer** e **Cartão Mercado Pago**.
 
 > NOTE
 >
@@ -31,7 +31,7 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 
 ------------
 ----[mpe]----
-Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos através do **PagoEfectivo**.
+Com o Checkout API do Mercado Pago, também é possível oferecer pagamentos através do **PagoEfectivo**.
 
 > NOTE
 >
@@ -41,7 +41,7 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 
 ------------
 ----[mco]----
-Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **Efecty**.
+Com o Checkout API do Mercado Pago, também é possível oferecer pagamentos com **Efecty**.
 
 > NOTE
 >
@@ -51,7 +51,7 @@ Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagam
 
 ------------
 ----[mlu]----
-Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos com **Abitab** e **Redpagos**.
+Com o Checkout API do Mercado Pago, também é possível oferecer pagamentos com **Abitab** e **Redpagos**.
 
 > NOTE
 >
@@ -154,7 +154,7 @@ Para oferecer pagamentos com **Abitab** e/ou **Redpagos**, siga as etapas abaixo
 
 ## Importar MercadoPago.js
 
-Para realizar a integração do Checkout Transparente é preciso capturar os dados necessários para processar o pagamento.
+Para realizar a integração do ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ é preciso capturar os dados necessários para processar o pagamento.
 
 Esta captura é feita a partir da inclusão da biblioteca MercadoPago.js em seu projeto, seguida do formulário de pagamento. Utilize o código abaixo para importar a biblioteca MercadoPago.js antes de adicionar o formulário de pagamento.
 
