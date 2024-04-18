@@ -40,7 +40,7 @@ For each created application, a new card containing the name, number, and qualit
 
 ------------
 ----[mlb]----
-> It is necessary that it be an application where there is a product to be integrated from those where the measuring tool is available. For now, the integration quality measuring tool is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Checkout Transparente](/developers/en/docs/checkout-api/landing), [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) and [Mercado Pago Point](/developers/en/docs/mp-point/landing).
+> It is necessary that the application is registered with an integration of a product from those where the measuring tool is available. For now, the integration quality measuring tool is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Checkout Transparente](/developers/en/docs/checkout-api/landing), [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) and [Mercado Pago Point](/developers/en/docs/mp-point/landing).
 
 ------------
 
