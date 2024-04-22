@@ -474,9 +474,9 @@
                                   "status_detail": {
                                     "type":"string",
                                     "description": {
-                                      "es": "Detalle del estado de la transacción. Usualmente es devuelto vacío.",
-                                      "pt": "Detalhe do estado da transação. Geralmente é retornado vazio.",
-                                      "en": "Transaction status detail. It is usually returned empty."
+                                      "es": "Es devuelto vacío. Para más información sobre el status_detail, verifica \"transaction.to.accounts.status_detail\".",
+                                      "pt": "É retornado vazio. Para obter mais informações sobre o status_detail, confira \"transaction.to.accounts.status_detail\".",
+                                      "en": "It is returned empty. To learn more information about the status_detail, go to \"transaction.to.accounts.status_detail\"."
                                     }
                                   }
                                 }
@@ -758,57 +758,49 @@
                         {
                           "title":"Account is disabled",
                           "description":{
-                            "en":"The account is disabled",
-                            "es":"La cuenta está desactivada",
-                            "pt":"A conta está desativada"
+                            "en":"The Mercado Pago account is disabled",
+                            "es":"La cuenta de Mercado Pago está desactivada",
+                            "pt":"A conta do Mercado Pago está desativada"
                           }
                         },
                         {
                           "title":"Participant is not available",
                           "description":{
-                            "en":"participant is not available",
-                            "es":"participant is not available",
-                            "pt":"participant is not available"
-                          }
-                        },
-                        {
-                          "title":"Unrecognized key format",
-                          "description":{
-                            "en":"Unrecognized key format",
-                            "es":"Unrecognized key format",
-                            "pt":"Unrecognized key format"
+                            "en":"Participant is not available to make this transaction.",
+                            "es":"El participante no está habilitado para realizar esta transacción.",
+                            "pt":"O participante não está habilitado para o fluxo transacional."
                           }
                         },
                         {
                           "title":"Flow not specified",
                           "description":{
-                            "en":"flow not specified",
-                            "es":"flow not specified",
-                            "pt":"flow not specified"
+                            "en":"The header X-Flow-id only supports \"transfer\" or \"management\"",
+                            "es":"El header X-Flow-id acepta solo \"transfer\" o \"management\"",
+                            "pt":"O header X-Flow-id suporta apenas \"transfer\" ou \"management\""
                           }
                         },
                         {
                           "title":"Compliance not processed",
                           "description":{
-                            "en":"compliance check not processed",
-                            "es":"compliance check not processed",
-                            "pt":"compliance check not processed"
+                            "en":"The conformity check was not completed for the user.",
+                            "es":"La verificación de conformidad no fue concluída para el usuario.",
+                            "pt":"A verificação de conformidade não foi concluída para o usuário."
                           }
                         },
                         {
                           "title":"Key PSP error",
                           "description":{
-                            "en":"key is guarded by the same PSP of paying user",
-                            "es":"key is guarded by the same PSP of paying user",
-                            "pt":"key is guarded by the same PSP of paying user"
+                            "en":"Attempt to consult an external PSP key that is already registered in Mercado Pago",
+                            "es":"Intento de consultar una clave PSP externa que ya está registrada en Mercado Pago",
+                            "pt":"Tentativa de consultar uma chave PSP externa que já está cadastrada no MercadoPago"
                           }
                         },
                         {
                           "title":"Invalid Body",
                           "description":{
-                            "en":"request with invalid format",
-                            "es":"request with invalid format",
-                            "pt":"request with invalid format"
+                            "en":"The request body has an invalid format",
+                            "es":"El cuerpo de la llamada tiene un formato inválido.",
+                            "pt":"O body da requisição tem um formato inválido"
                           }
                         },
                         {
@@ -822,41 +814,41 @@
                         {
                           "title":"Financial identity not found",
                           "description":{
-                            "en":"financial identity not found",
-                            "es":"financial identity not found",
-                            "pt":"financial identity not found"
+                            "en":"Financial identity not found. Check the \"to.accounts.bank_id\" field.",
+                            "es":"La institución financiera no fue encontrada. Revisa el campo \"to.accounts.bank_id\".",
+                            "pt":"A instituição financeira não foi localizada. Verifique o campo \"to.accounts.bank_id\""
                           }
                         },
                         {
                           "title":"Many Requests",
                           "description":{
-                            "en":"too many request",
-                            "es":"too many request",
-                            "pt":"too many request"
+                            "en":"Too many requests has been made. Wait and try again.",
+                            "es":"Se realizaron demasiadas llamadas. Espera y vuelve a intentarlo.",
+                            "pt":"Muitas requisição foram feitas. Espere e tente novamente."
                           }
                         },
                         {
                           "title":"Rate Limit",
                           "description":{
-                            "en":"local rate limited",
-                            "es":"local rate limited",
-                            "pt":"local rate limited"
+                            "en":"The consultation service reached the rpm limit in order not to exceed the limit allowed by Bacen and not receive fines.",
+                            "es":"El servicio de consulta alcanzó el límite de rpm para no exceder el límite permitido por el Bacen y no recibir multas.",
+                            "pt":"O serviço de consulta atingiu o limite de rpm para não ultrapassar o limite permitido pelo Bacen e não receber multas."
                           }
                         },
                         {
                           "title":"Unauthorized",
                           "description":{
-                            "en":"unauthorized",
-                            "es":"unauthorized",
-                            "pt":"unauthorized"
+                            "en":"The request is unauthorized.",
+                            "es":"La llamada no está autorizada.",
+                            "pt":"A requisição não está autorizada."
                           }
                         },
                         {
                           "title":"Invalid Payload",
                           "description":{
-                            "en":" invalid request payload",
-                            "es":" invalid request payload",
-                            "pt":" invalid request payload"
+                            "en": "Invalid request payload",
+                            "es": "Payload inválido.",
+                            "pt": "Payload inválido."
                           }
                         }
                       ]
@@ -884,8 +876,8 @@
                           "title":"Resource locked",
                           "description":{
                             "en":"Resource locked",
-                            "es":"Resource locked",
-                            "pt":"Resource locked"
+                            "es":"El servicio de rate limit aún está procesando la actualización del consumo de tokens para el motor antiescaneo.",
+                            "pt":"O serviço de rate limit ainda está processando a atualização do consumo de tokens para o mecanismo anti-varredura"
                           }
                         }
                       ]
@@ -913,8 +905,8 @@
                           "title":"internal_server_error",
                           "description":{
                             "en":"There was an error communicating with transaction_intent",
-                            "es":"There was an error communicating with transaction_intent",
-                            "pt":"There was an error communicating with transaction_intent"
+                            "es":"Hubo un error en la comunicación con transaction_intent",
+                            "pt":"Houve um erro na comunicação com transaction_intent"
                           }
                         }
                       ]
@@ -942,8 +934,8 @@
                           "title":"bad_gateway",
                           "description":{
                             "en":"Error processing request",
-                            "es":"Error processing request",
-                            "pt":"Error processing request"
+                            "es":"Error procesando la llamada",
+                            "pt":"Erro de processamento na requisição"
                           }
                         }
                       ]
@@ -1150,9 +1142,9 @@
                                   "status_detail": {
                                     "type":"string",
                                     "description": {
-                                      "es": "Detalle del estado de la transacción. Usualmente es devuelto vacío.",
-                                      "pt": "Detalhe do estado da transação. Geralmente é retornado vazio.",
-                                      "en": "Transaction status detail. It is usually returned empty."
+                                      "es": "Es devuelto vacío. Para más información sobre el status_detail, verifica \"transaction.to.accounts.status_detail\".",
+                                      "pt": "É retornado vazio. Para obter mais informações sobre o status_detail, confira \"transaction.to.accounts.status_detail\".",
+                                      "en": "It is returned empty. To learn more information about the status_detail, go to \"transaction.to.accounts.status_detail\"."
                                     }
                                   }
                                 }
@@ -1394,9 +1386,9 @@
                         {
                           "title":"ID format invalid",
                           "description":{
-                            "en":"The ID format is invalid",
-                            "es":"The ID format is invalid",
-                            "pt":"The ID format is invalid"
+                            "en":"The ID format in the path is invalid",
+                            "es":"El formato del ID en el path de la llamada es inválido.",
+                            "pt":"O formato do ID no path da requisição é inválido."
                           }
                         },
                         {
@@ -1410,33 +1402,33 @@
                         {
                           "title":"Financial identity not found",
                           "description":{
-                            "en":"financial identity not found",
-                            "es":"financial identity not found",
-                            "pt":"financial identity not found"
+                            "en":"Financial identity not found. Check the \"to.accounts.bank_id\" field.",
+                            "es":"La institución financiera no fue encontrada. Revisa el campo \"to.accounts.bank_id\".",
+                            "pt":"A instituição financeira não foi localizada. Verifique o campo \"to.accounts.bank_id\""
                           }
                         },
                         {
                           "title":"Many Requests",
                           "description":{
-                            "en":"too many request",
-                            "es":"too many request",
-                            "pt":"too many request"
+                            "en":"Too many requests has been made. Wait and try again.",
+                            "es":"Se realizaron demasiadas llamadas. Espera y vuelve a intentarlo.",
+                            "pt":"Muitas requisição foram feitas. Espere e tente novamente."
                           }
                         },
                         {
                           "title":"Rate Limit",
                           "description":{
-                            "en":"local rate limited",
-                            "es":"local rate limited",
-                            "pt":"local rate limited"
+                            "en":"The consultation service reached the rpm limit in order not to exceed the limit allowed by Bacen and not receive fines.",
+                            "es":"El servicio de consulta alcanzó el límite de rpm para no exceder el límite permitido por el Bacen y no recibir multas.",
+                            "pt":"O serviço de consulta atingiu o limite de rpm para não ultrapassar o limite permitido pelo Bacen e não receber multas."
                           }
                         },
                         {
                           "title":"Unauthorized",
                           "description":{
-                            "en":"unauthorized",
-                            "es":"unauthorized",
-                            "pt":"unauthorized"
+                            "en":"The request is unauthorized.",
+                            "es":"La llamada no está autorizada.",
+                            "pt":"A requisição não está autorizada."
                           }
                         }
                       ]
@@ -1522,8 +1514,8 @@
                           "title":"internal_server_error",
                           "description":{
                             "en":"There was an error communicating with transaction_intent",
-                            "es":"There was an error communicating with transaction_intent",
-                            "pt":"There was an error communicating with transaction_intent"
+                            "es":"Hubo un error en la comunicación con transaction_intent",
+                            "pt":"Houve um erro na comunicação com transaction_intent"
                           }
                         }
                       ]
@@ -1551,8 +1543,8 @@
                           "title":"bad_gateway",
                           "description":{
                             "en":"Error processing request",
-                            "es":"Error processing request",
-                            "pt":"Error processing request"
+                            "es":"Error procesando la llamada",
+                            "pt":"Erro de processamento na requisição"
                           }
                         }
                       ]

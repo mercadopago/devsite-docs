@@ -487,9 +487,9 @@
                                   "status_detail": {
                                     "type":"string",
                                     "description": {
-                                      "es": "Detalle del estado de la transacción. Usualmente es devuelto vacío.",
-                                      "pt": "Detalhe do estado da transação. Geralmente é retornado vazio.",
-                                      "en": "Transaction status detail. It is usually returned empty."
+                                      "es": "Es devuelto vacío. Para más información sobre el status_detail, verifica \"transaction.to.accounts.status_detail\".",
+                                      "pt": "É retornado vazio. Para obter mais informações sobre o status_detail, confira \"transaction.to.accounts.status_detail\".",
+                                      "en": "It is returned empty. To learn more information about the status_detail, go to \"transaction.to.accounts.status_detail\"."
                                     }
                                   }
                                 }
@@ -731,73 +731,73 @@
                         {
                           "title":"Invalid external_reference",
                           "description":{
-                            "en":"Invalid type for field external_reference",
-                            "pt":"Invalid type for field external_reference",
-                            "es":"Invalid type for field external_reference"
+                            "en":"Invalid type for field \"external_reference\"",
+                            "pt":"Valor inválido para o campo \"external_reference\"",
+                            "es":"Valor inválido para el campo \"external_reference\""
                           }
                         },
                         {
                           "title":"Invalid type point_of_interaction",
-                          "message":{
-                            "en":"invalid value for field: point_of_interaction.type",
-                            "es":"invalid value for field: point_of_interaction.type",
-                            "pt":"invalid value for field: point_of_interaction.type"
+                          "description":{
+                            "en":"Invalid value for field \"point_of_interaction.type\". Remember that it is a fix value, always \"PSP_TRANSFER\".",
+                            "es":"Valor inválido para el campo \"point_of_interaction.type\". Recuerda que es un valor fijo y siempre debe ser \"PSP_TRANSFER\".",
+                            "pt":"Valor inválido para o campo \"point_of_interaction.type\". Lembre-se que é um um valor fixo, sempre \"PSP_TRANSFER\"."
                           }
                         },
                         {
                           "title":"Invalid amount",
-                          "message":{
-                            "en":"invalid value for field: transaction.from.accounts[0].amount",
-                            "es":"invalid value for field: transaction.from.accounts[0].amount",
-                            "pt":"invalid value for field: transaction.from.accounts[0].amount"
+                          "description":{
+                            "en":"Invalid value for field \"transaction.from.accounts[0].amount\". Verify the amounts allowed for the transaction. ",
+                            "es":"Valor inválido para el campo \"transaction.from.accounts[0].amount\". Verifica los montos permitidos para la transacción.",
+                            "pt":"Valor inválido para o campo \"transaction.from.accounts[0].amount\". Verifique os valores permitidos para a transação."
                           }
                         },
                         {
                           "title":"Invalid chave",
                           "message":{
-                            "en":"invalid value for field: transaction.to.accounts[0].chave.value",
-                            "pt":"invalid value for field: transaction.to.accounts[0].chave.value",
-                            "es":"invalid value for field: transaction.to.accounts[0].chave.value"
+                            "en":"Invalid value for field \"transaction.to.accounts[0].chave.value\". Verify that the Pix key value is correct.",
+                            "pt":"Valor inválido para o campo \"transaction.to.accounts[0].chave.value\". Verifique se o valor da chave Pix é correto.",
+                            "es":"Valor inválido para el campo \"transaction.to.accounts[0].chave.value\". Verifica que el valor de la clave Pix sea correcto."
                           }
                         },
                         {
                           "title":"Invalid chave type",
                           "message":{
-                            "en":"invalid value for field: transaction.to.accounts[0].chave.type",
-                            "es":"invalid value for field: transaction.to.accounts[0].chave.type",
-                            "pt":"invalid value for field: transaction.to.accounts[0].chave.type"
+                            "en":"Invalid value for field \"transaction.to.accounts[0].chave.type\". Verify that the Pix key type value is correct.",
+                            "es":"Valor inválido para el campo \"transaction.to.accounts[0].chave.type\". Verifica que el tipo de clave Pix sea correcto.",
+                            "pt":"Valor inválido para o campo \"transaction.to.accounts[0].chave.type\". Verifique se o tipo de chave Pix é correto."
                           }
                         },
                         {
                           "title":"Invalid identification number",
-                          "message":{
-                            "en":"invalid value for field: transaction.to.accounts[0].identification.number",
-                            "es":"invalid value for field: transaction.to.accounts[0].identification.number",
-                            "pt":"invalid value for field: transaction.to.accounts[0].identification.number"
+                          "description":{
+                            "en":"Invalid value for field \"transaction.to.accounts[0].identification.number\".  Verify the allowed values.",
+                            "es":"Valor inválido para el campo \"transaction.to.accounts[0].identification.number\". Verifica los valores permitidos. ",
+                            "pt":"Valor inválido para o campo \"transaction.to.accounts[0].identification.number\". Verifique os valores permitidos."
                           }
                         },
                         {
                           "title":"Invalid identification type",
-                          "message":{
-                            "en":"invalid value for field: transaction.to.accounts[0].owner.identification.type",
-                            "es":"invalid value for field: transaction.to.accounts[0].owner.identification.type",
-                            "pt":"invalid value for field: transaction.to.accounts[0].owner.identification.type"
+                          "description":{
+                            "en":"Invalid value for field \"transaction.to.accounts[0].owner.identification.type\". Verify the allowed values.",
+                            "es":"Valor inválido para el campo \"transaction.to.accounts[0].owner.identification.type\". Verifica los valores permitidos",
+                            "pt":"Valor inválido para o campo \"transaction.to.accounts[0].owner.identification.type\". Verifique os valores permitidos."
                           }
                         },
                         {
-                          "title":"invalid chave pix",
+                          "title":"Invalid chave pix",
                           "message":{
-                            "en":"invalid_chave_pix",
-                            "es":"invalid_chave_pix",
-                            "pt":"invalid_chave_pix"
+                            "en":"The Pix key is invalid. Verify the informed value.",
+                            "es":"La clave Pix es inválida. Verifica el valor ingresado.",
+                            "pt":"A chave Pix é inválida. Verifique o valor digitado."
                           }
                         },
                         {
                           "title":"Chave not found",
                           "message":{
-                            "en":"chave not found",
-                            "es":"chave not found",
-                            "pt":"chave not found"
+                            "en":"The Pix key was not found. Verify the informed value.",
+                            "es":"La clave Pix no fue hallada. Verifica el valor ingresado.",
+                            "pt":"A chave Pix não foi encontrada. Verifique o valor digitado."
                           
                           }
                         },
@@ -812,78 +812,78 @@
                         {
                           "title":"Chave has a different owner",
                           "message":{
-                            "en":"chave has a different owner",
-                            "es":"chave has a different owner",
-                            "pt":"chave has a different owner"
+                            "en":"The Pix key value doesn't match the owner information.",
+                            "es":"El valor de la clave Pix no coincide con la información del propietario",
+                            "pt":"O valor da chave Pix não corresponde às informações do proprietário"
                           }
                         },
                         {
                           "title":"Account is disabled",
-                          "message":{
-                            "en":"account is disabled",
-                            "es":"account is disabled",
-                            "pt":"account is disabled"
+                          "description":{
+                            "en":"The Mercado Pago account is disabled",
+                            "es":"La cuenta de Mercado Pago está desactivada",
+                            "pt":"A conta do Mercado Pago está desativada"
                           }
                         },
                         {
                           "title":"Participant is not available",
-                          "message":{
-                            "en":"participant is not available",
-                            "es":"participant is not available",
-                            "pt":"participant is not available"
+                          "description":{
+                            "en":"Participant is not available to make this transaction.",
+                            "es":"El participante no está habilitado para realizar esta transacción.",
+                            "pt":"O participante não está habilitado para o fluxo transacional."
                           }
                         },
                         {
                           "title":"Unrecognized key format",
                           "message":{
-                            "en":"Unrecognized key format",
-                            "es":"Unrecognized key format",
-                            "pt":"Unrecognized key format"
+                            "en":"The Pix key format is invalid. Check the available values.",
+                            "es":"El formato de la clave Pix es inválido. Confirma los valores posibles.",
+                            "pt":"O formato da chave Pix é inválido. Confirme os valores possíveis."
                           }
                         },
                         {
                           "title":"Invalid identity source",
-                          "message":{
-                            "en":"invalid identity source",
-                            "es":"invalid identity source",
-                            "pt":"invalid identity source"
+                          "description":{
+                            "en":"The header X-Flow-id only supports \"dict\" or \"ted\".",
+                            "es":"El header  X-Identity-Source acepta solo \"dict\" o \"ted\".",
+                            "pt":"O header X-Identity-Source suporta apenas \"dict\" ou \"ted\"."
                           }
                         },
                         {
                           "title":"Flow not specified",
-                          "message":{
-                            "en":"flow not specified",
-                            "es":"flow not specified",
-                            "pt":"flow not specified"
+                          "description":{
+                            "en":"The header X-Flow-id only supports \"transfer\" or \"management\"",
+                            "es":"El header X-Flow-id acepta solo \"transfer\" o \"management\"",
+                            "pt":"O header X-Flow-id suporta apenas \"transfer\" ou \"management\""
                           }
                         },
                         {
                           "title":"Compliance not processed",
-                          "message":{
-                            "en":"compliance check not processed",
-                            "es":"compliance check not processed",
-                            "pt":"compliance check not processed"
+                          "description":{
+                            "en":"The conformity check was not completed for the user.",
+                            "es":"La verificación de conformidad no fue concluída para el usuario.",
+                            "pt":"A verificação de conformidade não foi concluída para o usuário."
                           }
                         },
                         {
                           "title":"Key PSP error",
-                          "message":{
-                            "en":"key is guarded by the same PSP of paying user",
-                            "es":"key is guarded by the same PSP of paying user",
-                            "pt":"key is guarded by the same PSP of paying user"
+                          "description":{
+                            "en":"Attempt to consult an external PSP key that is already registered in Mercado Pago",
+                            "es":"Intento de consultar una clave PSP externa que ya está registrada en Mercado Pago",
+                            "pt":"Tentativa de consultar uma chave PSP externa que já está cadastrada no MercadoPago"
                           }
                         },
                         {
                           "title":"Invalid Body",
-                          "message":{
-                            "en":"request with invalid format",
-                            "es":"request with invalid format",
-                            "pt":"request with invalid format"
+                          "description":{
+                            "en":"The request body has an invalid format",
+                            "es":"El cuerpo de la llamada tiene un formato inválido.",
+                            "pt":"O body da requisição tem um formato inválido"
                           }
                         },
                         {
                           "title":"Client not allowed",
-                          "message":{
+                          "description":{
                             "en":"client id not allowed",
                             "es":"client id not allowed",
                             "pt":"client id not allowed"
@@ -891,42 +891,42 @@
                         },
                         {
                           "title":"Financial identity not found",
-                          "message":{
-                            "en":"financial identity not found",
-                            "es":"financial identity not found",
-                            "pt":"financial identity not found"
+                          "description":{
+                            "en":"Financial identity not found. Check the \"to.accounts.bank_id\" field.",
+                            "es":"La institución financiera no fue encontrada. Revisa el campo \"to.accounts.bank_id\".",
+                            "pt":"A instituição financeira não foi localizada. Verifique o campo \"to.accounts.bank_id\""
                           }
                         },
                         {
                           "title":"Many Requests",
-                          "message":{
-                            "en":"too many request",
-                            "es":"too many request",
-                            "pt":"too many request"
+                          "description":{
+                            "en":"Too many requests has been made. Wait and try again.",
+                            "es":"Se realizaron demasiadas llamadas. Espera y vuelve a intentarlo.",
+                            "pt":"Muitas requisição foram feitas. Espere e tente novamente."
                           }
                         },
                         {
                           "title":"Rate Limit",
-                          "message":{
-                            "en":"local rate limited",
-                            "es":"local rate limited",
-                            "pt":"local rate limited"
+                          "description":{
+                            "en":"The consultation service reached the rpm limit in order not to exceed the limit allowed by Bacen and not receive fines.",
+                            "es":"El servicio de consulta alcanzó el límite de rpm para no exceder el límite permitido por el Bacen y no recibir multas.",
+                            "pt":"O serviço de consulta atingiu o limite de rpm para não ultrapassar o limite permitido pelo Bacen e não receber multas."
                           }
                         },
                         {
                           "title":"Unauthorized",
-                          "message":{
-                            "en":"unauthorized",
-                            "es":"unauthorized",
-                            "pt":"unauthorized"
+                          "description":{
+                            "en":"The request is unauthorized.",
+                            "es":"La llamada no está autorizada.",
+                            "pt":"A requisição não está autorizada."
                           }
                         },
                         {
                           "title":"Invalid Payload",
-                          "message":{
-                            "en":" invalid request payload",
-                            "es":" invalid request payload",
-                            "pt":" invalid request payload"
+                          "description":{
+                            "en": "Invalid request payload",
+                            "es": "Payload inválido.",
+                            "pt": "Payload inválido."
                           }
                         }
                       ]
@@ -983,8 +983,8 @@
                           "title":"internal_server_error",
                           "description":{
                             "en":"There was an error communicating with transaction_intent",
-                            "es":"There was an error communicating with transaction_intent",
-                            "pt":"There was an error communicating with transaction_intent"
+                            "es":"Hubo un error en la comunicación con transaction_intent",
+                            "pt":"Houve um erro na comunicação com transaction_intent"
                           }
                         }
                       ]
@@ -1011,9 +1011,9 @@
                         {
                           "title":"bad_gateway",
                           "description":{
-                            "en":"error processing request",
-                            "es":"error processing request",
-                            "pt":"error processing request"
+                            "en":"Error processing request",
+                            "es":"Error procesando la llamada",
+                            "pt":"Erro de processamento na requisição"
                           }
                         }
                       ]
@@ -1025,9 +1025,9 @@
           }
         },
         "title": {
-          "en": "Create transaction to Pix account",
-          "pt": "Criar transação para conta Pix",
-          "es": "Crear transacción para cuenta bancaria"
+          "en": "Create transaction via Pix",
+          "pt": "Criar transação via Pix",
+          "es": "Crear transacción vía Pix"
         }
       }
     }
