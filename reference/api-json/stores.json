@@ -759,36 +759,6 @@
               }
             }
           },
-          "400 - Validation Error": {
-            "description":{
-              "en": "",
-              "pt": "",
-              "es": ""
-            },
-            "content":{
-              "application/json":{
-                "schema": {
-                  "type": "object",
-                  "properties":{
-                    "errorKey":{
-                      "type": "string",
-                      "enum":[
-                        {
-                          "title": "VALIDATION_ERROR",
-                          "description":{
-                            "en": "location.state_name was invalid",
-                            "pt": "location.state_name was invalid",
-                            "es": "location.state_name was invalid"
-
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },    
           "403": {
             "description": {
               "en": "Error",
