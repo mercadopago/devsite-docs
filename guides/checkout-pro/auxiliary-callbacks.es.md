@@ -4,10 +4,10 @@ Para ofrecer más transparencia y posibilidades de actuar en flujos específicos
 
 | Callback | Descrição | Quando utilizar |
 | --- |--- | --- | 
-| onReady | Callback llamado cuando el botón está completamente cargado. | Aquí puede ocultar cargamentos de su sitio, por ejemplo. |
-| onSubmit | Callback llamado solicitada al hacer clic en el botón. | Este callback podría usarse para indicarle al usuario que el flujo debe completarse en otra pestaña, por ejemplo. **Admitido en modo de redirect.** |
+| onReady | Callback llamado cuando el botón está completamente cargado. | Aquí puedes ocultar los tiempos de carga de tu sitio, por ejemplo. |
+| onSubmit | Callback llamado al hacer clic en el botón. | Este callback podría usarse para indicarle al usuario que el flujo debe completarse en otra pestaña, por ejemplo. **Admitido en modo de redirect.** |
 
-Ve a continuación un ejemplo de cómo integrarlos en su integración.
+A continuación, ve un ejemplo de cómo integrarlos en tu integración.
 
 [[[
 ```Javascript
