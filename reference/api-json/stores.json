@@ -750,7 +750,25 @@
                             "en": "External_id-already-used. This error occurs when inserting the name of a city that does not correspond to the previously defined city. To correct it, check the 'location.state_name' and 'location.city_name' fields and ensure they are filled correctly.",
                             "es": "External_id-already-used. Este error ocurre al insertar el nombre de una ciudad que no corresponde a la ciudad previamente definida. Para corregirlo, verifique los campos 'location.state_name' y 'location.city_name' y asegúrese de que estén completados correctamente.",
                             "pt": "External_id-already-used. Esse erro ocorre ao inserir o nome de uma cidade que não corresponde à cidade previamente definida. Para corrigir, verifique os campos 'location.state_name' e 'location.city_name' e certifique-se de que foram preenchidos corretamente."
+                          },
+                          "enum":[ {
+                            "title": "validation_error",
+                            "description": {
+                              "en": "Name must be defined.",
+                              "pt": "Nome deve ser definido",
+                              "es": "Nombre debe ser definido"
+                            }
+                          },
+                          {
+                            "title": "validation_error",
+                            "description": {
+                              "en": "Monday exceeds the maximum length of 4 for Opening Hours.", 
+                              "pt": "Segunda-feira excede o comprimento máximo de 4 para Horário de Funcionamento.",
+                              "es": "Lunes supera la longitud máxima de 4 para Horario de Apertura."
+                            }
                           }
+
+                          ]  
                         }
                       ]
                     }
