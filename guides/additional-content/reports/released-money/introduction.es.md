@@ -12,17 +12,23 @@ Además, le permite saber si su dinero se encuentra en un estado disponible o re
 
 ----[mpe]----
 ## Análisis de los reportes a partir de enero de 2022
+
 ------------
 ----[mlu]----
 ## Análisis de los reportes a partir de marzo de 2022
+
+------------
 ----[mlc, mco]----
 ## Análisis de los reportes a partir de agosto de 2022
+
 ------------
 ----[mla, mlm]----
 ## Análisis de los reportes a partir de octubre de 2022
+
 ------------
 ----[mlb]----
 ## Análisis de los reportes a partir de enero de 2023
+
 ------------
 
 Los informes que genere a partir de ----[mpe]---- enero de 2022------------  ----[mlu]---- marzo de 2022------------ ----[mla, mlm]---- octubre de 2022------------  ----[mco, mlc]---- agosto de 2022------------ ----[mlb]---- enero de 2023------------ tienen las siguientes características: 
