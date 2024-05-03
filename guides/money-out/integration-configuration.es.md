@@ -71,7 +71,7 @@ curl -X POST \
 
 | Campo | Descripción | Requerido/Opcional | Ejemplo |
 |---|---|---|---|
-| `x-signature` | *Header*. Firma de la solicitud con el cuerpo cifrado en base 64 con las claves pública y privada del integrador.  | Requerido **sólo en el ambiente de producción**. | - |
+| `x-signature` | *Header*. Firma de la solicitud con el cuerpo cifrado en base 64 con las claves pública y privada del integrador. Accede a la sección [Cifrado punta a punta](/developers/es/docs/money-out/end-to-end-encryption) si necesitas más información. | Requerido **sólo en el ambiente de producción**. | - |
 | `x-enforce-signature` | *Header*. Booleano para indicar si el integrador enviará o no la firma.  | **No requerido** en ambiente de pruebas, y **requerido** en ambiente productivo, que es cuando es obligatorio enviar la firma. | - |
 | `external_reference` | *Body*. String con una referencia para identificar la transacción. Es generada por el integrador y puede ser cualquier valor que permita hacer un seguimiento de las transacciones siempre que no tenga caracteres especiales (“”, [ ], (), @) y no exceda los 64 caracteres. Sí están permitidos números, letras y guiones medios y bajos. | Opcional | MP0001 |
 | `point_of_interaction.type` | *Body*. Valor fijo. Siempre debe ser `PSP_TRANSFER` | Requerido | `PSP_TRANSFER` |
@@ -136,7 +136,7 @@ Si la ejecución fue exitosa, recibirás automáticamente una respuesta con `sta
 | Atributo | Descripción |
 |---|---|
 | `id` | Identificador único de la transacción, generado automáticamente. |
-| `status` | Estado de la transacción. Para conocer los posibles estados, dirígete a [Posibles estados de una transacción](). |
+| `status` | Estado de la transacción. Para conocer los posibles estados, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `created_date` | Fecha de creación de la transacción. |
 | `external_reference` | Referencia externa de la transacción, que fue generada por el integrador al momento de crearla. |
 | `last_updated_date` | Última actualización del estado de la transacción. |
@@ -145,7 +145,7 @@ Si la ejecución fue exitosa, recibirás automáticamente una respuesta con `sta
 | `transaction.from.accounts.amount` | Monto debitado de la cuenta Mercado Pago de origen. |
 | `transaction.from.accounts.amount.status_detail` | Es devuelto vacío. Para más información sobre el `status_detail`, verifica `transaction.to.accounts.amount.status_detail`. |
 | `transaction.to.accounts.amount` | Monto transferido a la cuenta de destino. Su valor será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado este último en el campo `transaction.refunded_amount`. |
-| `transaction.to.accounts.amount.status_detail` | Información detallada del estado de la transacción. Para conocer los posibles `status_detail`, dirígete a [Posibles estados de una transacción](). |
+| `transaction.to.accounts.amount.status_detail` | Información detallada del estado de la transacción. Para conocer los posibles `status_detail`, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `transaction.to.accounts.owner.identification.number` | Número identificador del titular de la cuenta de destino. |
 | `transaction.to.accounts.owner.identification.type` | Tipo de identificación del titular de la cuenta. |
 | `transaction.paid_amount` | Monto total cobrado al titular de la cuenta de origen. Será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado en `refunded_amount` |
@@ -215,7 +215,7 @@ curl -X POST \
 
 | Campo | Descripción | Requerido/Opcional | Ejemplo |
 |---|---|---|---|
-| `x-signature` | *Header*. Firma de la solicitud con el cuerpo cifrado en base 64 con las claves pública y privada del integrador.  | Requerido **sólo en el ambiente de producción**. | - |
+| `x-signature` | *Header*. Firma de la solicitud con el cuerpo cifrado en base 64 con las claves pública y privada del integrador. Accede a la sección [Cifrado punta a punta](/developers/es/docs/money-out/end-to-end-encryption) si necesitas más información. | Requerido **sólo en el ambiente de producción**. | - |
 | `x-enforce-signature` | *Header*. Booleano para indicar si el integrador enviará o no la firma.  | **No requerido** en ambiente de pruebas, y **requerido** en ambiente productivo, que es cuando es obligatorio enviar la firma. | - |
 | `external_reference` | *Body*. String con una referencia para identificar la transacción. Es generada por el integrador y puede ser cualquier valor que permita hacer un seguimiento de las transacciones siempre que no tenga caracteres especiales (“”, [ ], (), @) y no exceda los 64 caracteres. Sí están permitidos números, letras y guiones medios y bajos. | Opcional | MP0001 |
 | `point_of_interaction.type` | *Body*. Valor fijo. Siempre debe ser `PSP_TRANSFER` | Requerido | `PSP_TRANSFER` |
@@ -239,7 +239,7 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
 >
 > Importante
 > 
-> Ten en cuenta que esta respuesta puede tardar unos segundos y que, en caso de que su `status` sea `pending`, deberás ejecutar el llamado para [Obtener información sobre una transacción]() para verificar su actualización.
+> Ten en cuenta que esta respuesta puede tardar unos segundos y que, en caso de que su `status` sea `pending`, deberás ejecutar el llamado para [Obtener información sobre una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_obtener_información_sobre_una_transacción) para verificar su actualización.
 
 ```json
 {
@@ -289,7 +289,7 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
 | Atributo | Descripción |
 |---|---|
 | `id` | Identificador único de la transacción, generado automáticamente. |
-| `status` | Estado de la transacción. Para conocer los posibles estados, dirígete a [Posibles estados de una transacción](). |
+| `status` | Estado de la transacción. Para conocer los posibles estados, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `created_date` | Fecha de creación de la transacción. |
 | `external_reference` | Referencia externa de la transacción, que fue generada por el integrador al momento de crearla. |
 | `last_updated_date` | Última actualización del estado de la transacción. |
@@ -298,7 +298,7 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
 | `transaction.from.accounts.amount` | Monto debitado de la cuenta Mercado Pago de origen. |
 | `transaction.from.accounts.amount.status_detail` | Es devuelto vacío. Para más información sobre el status_detail, verifica `transaction.to.accounts.amount.status_detail`. |
 | `transaction.to.accounts.amount` | Monto transferido a la cuenta de destino. Su valor será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado este último en el campo `transaction.refunded_amount`. |
-| `transaction.to.accounts.amount.status_detail` | Información detallada del estado de la transacción. Para conocer los posibles `status_detail`, dirígete a [Posibles estados de una transacción](). |
+| `transaction.to.accounts.amount.status_detail` | Información detallada del estado de la transacción. Para conocer los posibles `status_detail`, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `transaction.to.accounts.owner.identification.number` | Número identificador del titular de la cuenta de destino. |
 | `transaction.to.accounts.owner.identification.type` | Tipo de identificación del titular de la cuenta. |
 | `transaction.paid_amount` | Monto total cobrado al titular de la cuenta de origen. Será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado en `refunded_amount` |
@@ -370,7 +370,7 @@ curl -X POST \
 
 | Campo | Descripción | Requerido/Opcional | Ejemplo |
 |---|---|---|---|
-| `x-signature` | *Header*. Firma de la solicitud con el cuerpo cifrado en base 64 con las claves pública y privada del integrador.  | Requerido **sólo en el ambiente de producción**. | - |
+| `x-signature` | *Header*. Firma de la solicitud con el cuerpo cifrado en base 64 con las claves pública y privada del integrador. Accede a la sección [Cifrado punta a punta](/developers/es/docs/money-out/end-to-end-encryption) si necesitas más información. | Requerido **sólo en el ambiente de producción**. | - |
 | `x-enforce-signature` | *Header*. Booleano para indicar si el integrador enviará o no la firma.  | **No requerido** en ambiente de pruebas, y **requerido** en ambiente productivo, que es cuando es obligatorio enviar la firma. | - |
 | `external_reference` | *Body*. String con una referencia para identificar la transacción. Es generada por el integrador y puede ser cualquier valor que permita hacer un seguimiento de las transacciones siempre que no tenga caracteres especiales (“”, [ ], (), @) y no exceda los 64 caracteres. Sí están permitidos números, letras y guiones medios y bajos. | Opcional | MP0001 |
 | `point_of_interaction.type` | *Body*. Valor fijo. Siempre debe ser `PSP_TRANSFER` | Requerido | `PSP_TRANSFER` |
@@ -390,7 +390,7 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
 >
 > Importante
 > 
-> Ten en cuenta que esta respuesta puede tardar unos segundos y que, en caso de que su `status` sea `pending`, deberás ejecutar el llamado para [Obtener información sobre una transacción]() para verificar su actualización.
+> Ten en cuenta que esta respuesta puede tardar unos segundos y que, en caso de que su `status` sea `pending`, deberás ejecutar el llamado para [Obtener información sobre una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_obtener_información_sobre_una_transacción) para verificar su actualización.
 
 ```json
 {
@@ -440,7 +440,7 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
 | Atributo | Descripción |
 |---|---|
 | `id` | Identificador único de la transacción, generado automáticamente. |
-| `status` | Estado de la transacción. Para conocer los posibles estados, dirígete a [Posibles estados de una transacción](). |
+| `status` | Estado de la transacción. Para conocer los posibles estados, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `created_date` | Fecha de creación de la transacción. |
 | `external_reference` | Referencia externa de la transacción, que fue generada por el integrador al momento de crearla. |
 | `last_updated_date` | Última actualización del estado de la transacción. |
@@ -449,7 +449,7 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
 | `transaction.from.accounts.amount` | Monto debitado de la cuenta Mercado Pago de origen. |
 | `transaction.from.accounts.amount.status_detail` | Es devuelto vacío. Para más información sobre el status_detail, verifica `transaction.to.accounts.amount.status_detail`. |
 | `transaction.to.accounts.type` | Monto transferido a la cuenta de destino. Su valor será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado este último en el campo `transaction.refunded_amount`. |
-| `transaction.to.accounts.amount.status_detail` | Información detallada del estado de la transacción. Para conocer los posibles `status_detail`, dirígete a [Posibles estados de una transacción](). |
+| `transaction.to.accounts.amount.status_detail` | Información detallada del estado de la transacción. Para conocer los posibles `status_detail`, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `transaction.to.accounts.owner.identification.number` | Número identificador del titular de la cuenta de destino. |
 | `transaction.to.accounts.owner.identification.type` | Tipo de identificación del titular de la cuenta. |
 | `transaction.paid_amount` | Monto total cobrado al titular de la cuenta de origen. Será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado en `refunded_amount`. |
@@ -462,7 +462,7 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
 
 ## Configurar notificaciones
 
-Para poder mantenerte al tanto de los estados de tus transacciones, debes configurar las [notificaciones Webhooks](/developers/es/docs/mp-point/additional-content/your-integrations/notifications/webhooks). Se trata de mensajes enviados por el servidor de Mercado Pago ante eventos que sueceden en tu aplicación. Específicamente para el caso de Money Out, estos eventos pueden ser, o bien la creación de una transacción, o las actualizaciones de estado que la misma atraviese durante su procesamiento. 
+Para poder mantenerte al tanto de los estados de tus transacciones, debes configurar las [notificaciones Webhooks](/developers/es/docs/money-out/additional-content/your-integrations/notifications/webhooks). Se trata de mensajes enviados por el servidor de Mercado Pago ante eventos que sueceden en tu aplicación. Específicamente para el caso de Money Out, estos eventos pueden ser, o bien la creación de una transacción, o las actualizaciones de estado que la misma atraviese durante su procesamiento. 
 
 Puedes **configurar tus notificaciones Webhooks al realizar el llamado para crear una transacción**, a través del campo `notification_url`. Sólo debes completarlo con aquella URL en la cual quieras recibir tus actualizaciones. 
 
@@ -507,7 +507,7 @@ El atributo `data.id` corresponde al ID de la transacción sobre la que se te es
 
 ### Acciones necesarias después de recibir la notificación
 
-Cuando recibes una notificación en tu plataforma debes, primero, validar la información del recurso notificado. Para eso, ejecuta el request para [Obtener información sobre una transacción]() utilizando el ID de la transacción que te fue notificada. 
+Cuando recibes una notificación en tu plataforma debes, primero, validar la información del recurso notificado. Para eso, ejecuta el request para [Obtener información sobre una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_obtener_información_sobre_una_transacción) utilizando el ID de la transacción que te fue notificada. 
 
 Una vez contrastados y validados los datos de la transacción, Mercado Pago espera una respuesta para asegurarse que la notificación fue recibida correctamente. Para eso, debes devolver un `HTTP STATUS 200 (OK)` o `201 (CREATED)` a la URL enviada en el campo `notification_url`. Si no se envía esta respuesta, se entenderá que no has recibido la notificación y se realizará un nuevo intento de envío hasta que se reciba la respuesta.
 
@@ -580,7 +580,7 @@ Si los datos enviados en el llamado son correctos, recibirás una respuesta como
 }
 ```
 
-Para conocer los detalles de cada atributo devuelto, consulta la respuesta a la [Configuración de retiros]().
+Para conocer los detalles de cada atributo devuelto, consulta la respuesta a [Configurar retiros](/developers/es/docs/money-out/integration-configuration).
 
 
 ### Posibles estados de una transacción

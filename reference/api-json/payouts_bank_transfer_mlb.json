@@ -642,6 +642,33 @@
                                         }
                                       }
                                     }
+                                  },
+                                  "bank_id": {
+                                    "type": "number",
+                                    "description": {
+                                      "en": "Identification number of the bank to which the destination account belongs.",
+                                      "es": "Número identificador del banco al que pertenece la cuenta de destino.",
+                                      "pt": "Número identificador do banco ao qual pertence a conta de destino."
+                                    },
+                                    "example": "0000014"
+                                  },
+                                  "type":{
+                                    "type": "string",
+                                    "description":{
+                                      "en": "Destination account type.",
+                                      "es": "Tipo de cuenta de destino.",
+                                      "pt": "Tipo de conta de destino"
+                                    },
+                                    "example": "checking_account"
+                                  },
+                                  "number":{
+                                    "type": "number",
+                                    "description": {
+                                      "en": "Unique number that represents the destination bank account.",
+                                      "es": "Número único que representa la cuenta de destino.",
+                                      "pt": "Número único que representa a conta de destino."
+                                    },
+                                    "example": "123456"
                                   }
                                 } 
                               }
@@ -1310,6 +1337,33 @@
                                         }
                                       }
                                     }
+                                  },
+                                  "bank_id": {
+                                    "type": "number",
+                                    "description": {
+                                      "en": "Identification number of the bank to which the destination account belongs.",
+                                      "es": "Número identificador del banco al que pertenece la cuenta de destino.",
+                                      "pt": "Número identificador do banco ao qual pertence a conta de destino."
+                                    },
+                                    "example": "0000014"
+                                  },
+                                  "type":{
+                                    "type": "string",
+                                    "description":{
+                                      "en": "Destination account type.",
+                                      "es": "Tipo de cuenta de destino.",
+                                      "pt": "Tipo de conta de destino"
+                                    },
+                                    "example": "checking_account"
+                                  },
+                                  "number":{
+                                    "type": "number",
+                                    "description": {
+                                      "en": "Unique number that represents the destination bank account.",
+                                      "es": "Número único que representa la cuenta de destino.",
+                                      "pt": "Número único que representa a conta de destino."
+                                    },
+                                    "example": "123456"
                                   }
                                 } 
                               }
