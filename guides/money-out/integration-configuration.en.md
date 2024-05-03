@@ -251,7 +251,7 @@ If the execution was successful, you will automatically receive a response with 
   "point_of_interaction": "PSP_TRANSFER",
   "seller_configuration": {
     "notification_info": {
-      "notification_url": "www.ejemplo.com.br"
+      "notification_url": "www.exemplo.com.br"
     }
   },
   "transaction": {
@@ -272,7 +272,10 @@ If the execution was successful, you will automatically receive a response with 
               "number": "1234567890",
               "type": "CPF"
             }
-          }
+          },
+          "bank_id": "0000014",
+          "type": "checking_account",
+          "number": "123456"
         }
       ]
     },
@@ -423,7 +426,10 @@ If the execution was successful, you will automatically receive a response with 
               "number": "1234567890",
               "type": "RUT"
             }
-          }
+          },
+          "bank_id": "0000014",
+          "type": "checking_account",
+          "number": "123456"
         }
       ]
     },
@@ -566,7 +572,10 @@ If the data sent in the call is correct, you will receive a response like the fo
               "number": "1234567890",
               "type": "RUT"
             }
-          }
+          },
+          "bank_id": "0000014",
+          "type": "checking_account",
+          "number": "123456"
         }
       ]
     },

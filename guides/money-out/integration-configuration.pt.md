@@ -253,7 +253,7 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
   "point_of_interaction": "PSP_TRANSFER",
   "seller_configuration": {
     "notification_info": {
-      "notification_url": "www.ejemplo.com.br"
+      "notification_url": "www.exemplo.com.br"
     }
   },
   "transaction": {
@@ -274,7 +274,10 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
               "number": "1234567890",
               "type": "CPF"
             }
-          }
+          },
+          "bank_id": "0000014",
+          "type": "checking_account",
+          "number": "123456"
         }
       ]
     },
@@ -426,7 +429,10 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
               "number": "1234567890",
               "type": "RUT"
             }
-          }
+          },
+          "bank_id": "0000014",
+          "type": "checking_account",
+          "number": "123456"
         }
       ]
     },
@@ -570,7 +576,10 @@ Se os dados enviados na chamada estiverem corretos, você receberá uma resposta
               "number": "1234567890",
               "type": "RUT"
             }
-          }
+          },
+          "bank_id": "0000014",
+          "type": "checking_account",
+          "number": "123456"
         }
       ]
     },

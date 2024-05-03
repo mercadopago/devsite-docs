@@ -251,7 +251,7 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
   "point_of_interaction": "PSP_TRANSFER",
   "seller_configuration": {
     "notification_info": {
-      "notification_url": "www.ejemplo.com.br"
+      "notification_url": "www.exemplo.com.br"
     }
   },
   "transaction": {
@@ -272,7 +272,10 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
               "number": "1234567890",
               "type": "CPF"
             }
-          }
+          },
+          "bank_id": "0000014",
+          "type": "checking_account",
+          "number": "123456"
         }
       ]
     },
@@ -423,7 +426,10 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
               "number": "1234567890",
               "type": "RUT"
             }
-          }
+          },
+          "bank_id": "0000014",
+          "type": "checking_account",
+          "number": "123456"
         }
       ]
     },
@@ -566,7 +572,10 @@ Si los datos enviados en el llamado son correctos, recibirás una respuesta como
               "number": "1234567890",
               "type": "RUT"
             }
-          }
+          },
+          "bank_id": "0000014",
+          "type": "checking_account",
+          "number": "123456"
         }
       ]
     },
