@@ -219,7 +219,7 @@ curl -X POST \
 | `x-enforce-signature` | *Header*. Booleano para indicar si el integrador enviará o no la firma.  | **No requerido** en ambiente de pruebas, y **requerido** en ambiente productivo, que es cuando es obligatorio enviar la firma. | - |
 | `external_reference` | *Body*. String con una referencia para identificar la transacción. Es generada por el integrador y puede ser cualquier valor que permita hacer un seguimiento de las transacciones siempre que no tenga caracteres especiales (“”, [ ], (), @) y no exceda los 64 caracteres. Sí están permitidos números, letras y guiones medios y bajos. | Opcional | MP0001 |
 | `point_of_interaction.type` | *Body*. Valor fijo. Siempre debe ser `PSP_TRANSFER` | Requerido | `PSP_TRANSFER` |
-| `seller_configuration.notification_info.notification_url` | *Body*. URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado. Este campo tiene un límite de 500 caracteres. | Opcional | www.exemplo.com.br |
+| `seller_configuration.notification_info.notification_url` | *Body*. URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado. Este campo tiene un límite de 500 caracteres. | Opcional | www.ejemplo.com.br |
 | `transaction.from.accounts.amount` | *Body*. Valor de la transacción, que será retirado de la cuenta de origen `from`. El valor mínimo es 0, y el máximo, 10000000000. | Requerido | 100,00 |
 | `transaction.to.accounts.type` | *Body*. Tipo de cuenta de destino. Los valores posibles son `current`, para cuentas bancarias, y `mercadopago`, para cuentas Mercado Pago. | Requerido | `current` / `mercadopago` |
 | `transaction.to.accounts.amount` | *Body*. Monto a enviar a la cuenta destino indicada en el `to`. Debe ser el mismo valor indicado para `from.accounts.amount`. | Requerido | 100,00 |
@@ -304,6 +304,9 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
 | `transaction.to.accounts.amount.status_detail` | Información detallada del estado de la transacción. Para conocer los posibles `status_detail`, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `transaction.to.accounts.owner.identification.number` | Número identificador del titular de la cuenta de destino. |
 | `transaction.to.accounts.owner.identification.type` | Tipo de identificación del titular de la cuenta. |
+| `transaction.to.accounts.bank_id` | Número identificador del banco al que pertence la cuenta de destino. |
+| `transaction.to.accounts.type` | Tipo de cuenta de destino. |
+| `transaction.to.accounts.number` | Número único que representa la cuenta de destino. |
 | `transaction.paid_amount` | Monto total cobrado al titular de la cuenta de origen. Será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado en `refunded_amount` |
 | `transaction.refunded_amount` | En caso de un reembolso, indicará el monto total reembolsado al titular de la cuenta de origen. Si no hubo ningún reembolso, su valor será 0. |
 | `transaction.payer.id` | Identificador del integrador titular de la cuenta de origen. |
@@ -377,7 +380,7 @@ curl -X POST \
 | `x-enforce-signature` | *Header*. Booleano para indicar si el integrador enviará o no la firma.  | **No requerido** en ambiente de pruebas, y **requerido** en ambiente productivo, que es cuando es obligatorio enviar la firma. | - |
 | `external_reference` | *Body*. String con una referencia para identificar la transacción. Es generada por el integrador y puede ser cualquier valor que permita hacer un seguimiento de las transacciones siempre que no tenga caracteres especiales (“”, [ ], (), @) y no exceda los 64 caracteres. Sí están permitidos números, letras y guiones medios y bajos. | Opcional | MP0001 |
 | `point_of_interaction.type` | *Body*. Valor fijo. Siempre debe ser `PSP_TRANSFER` | Requerido | `PSP_TRANSFER` |
-| `seller_configuration.notification_info.notification_url` | *Body*. URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado. Este campo tiene un límite de 500 caracteres. | Opcional | www.ejemplo.com.cl |
+| `seller_configuration.notification_info.notification_url` | *Body*. URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado. Este campo tiene un límite de 500 caracteres. | Opcional | www.ejemplo.cl |
 | `transaction.from.accounts.amount` | *Body*. Valor de la transacción, que será retirado de la cuenta de origen `from`. El valor mínimo es 0, y el máximo, 10000000000. | Requerido | 100,00 |
 | `transaction.to.accounts.amount` | *Body*. Monto a enviar a la cuenta destino indicada en el `to`. Debe ser el mismo valor indicado para `from.accounts.amount`. | Requerido | 100,00 |
 | `transaction.to.accounts.bank_id` | *Body*. Número identificador del banco al que pertenece la cuenta de destino. | Requerido | 99999004 |
@@ -458,6 +461,9 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
 | `transaction.to.accounts.amount.status_detail` | Información detallada del estado de la transacción. Para conocer los posibles `status_detail`, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `transaction.to.accounts.owner.identification.number` | Número identificador del titular de la cuenta de destino. |
 | `transaction.to.accounts.owner.identification.type` | Tipo de identificación del titular de la cuenta. |
+| `transaction.to.accounts.bank_id` | Número identificador del banco al que pertence la cuenta de destino. |
+| `transaction.to.accounts.type` | Tipo de cuenta de destino. |
+| `transaction.to.accounts.number` | Número único que representa la cuenta de destino. |
 | `transaction.paid_amount` | Monto total cobrado al titular de la cuenta de origen. Será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado en `refunded_amount`. |
 | `transaction.refunded_amount` | En caso de un reembolso, indicará el monto total reembolsado al titular de la cuenta de origen. Si no hubo ningún reembolso, su valor será 0. |
 | `transaction.payer.id` | Identificador del integrador titular de la cuenta de origen. |
@@ -589,7 +595,7 @@ Si los datos enviados en el llamado son correctos, recibirás una respuesta como
 }
 ```
 
-Para conocer los detalles de cada atributo devuelto, consulta la respuesta a [Configurar retiros](/developers/es/docs/money-out/integration-configuration).
+Para conocer los detalles de cada atributo devuelto, consulta la respuesta a [Configurar retiros](/developers/es/docs/money-out/integration-configuration#bookmark_integration_configuration).
 
 
 ### Posibles estados de una transacción

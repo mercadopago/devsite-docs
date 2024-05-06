@@ -1,4 +1,4 @@
-# Criptografia ponta a ponta
+# Criptografia de ponta a ponta
 
 Para garantir a segurança de suas transações Money Out, você deve realizar uma criptografia de ponta a ponta. Isso envolve a criação de um mecanismo de chave pública-privada, no qual um request é criptografado por meio de uma chave de segurança, e outra chave é usada para validá-lo.
 

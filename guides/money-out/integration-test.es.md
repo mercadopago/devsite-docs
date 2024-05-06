@@ -118,7 +118,7 @@ curl --location 'https://api.mercadopago.com/v1/transaction-intents/process' \
 >
 > Importante
 >
-> Para saber cómo enviar los campos restantes para ejecutar este *request*, dirígete a [Configuración de la integración](). 
+> Para saber cómo enviar los campos restantes para ejecutar este *request*, dirígete a [Configuración de la integración](/developers/es/docs/money-out/integration-configuration). 
 
 | Valor del campo `external_reference` | Respuesta |
 |---|---|
@@ -190,7 +190,7 @@ curl --location 'https://api.mercadopago.com/v1/transaction-intents/process' \
 >
 > Importante
 >
-> Para saber cómo enviar los campos restantes para ejecutar este *request*, dirígete a [Configuración de la integración](). 
+> Para saber cómo enviar los campos restantes para ejecutar este *request*, dirígete a [Configuración de la integración](/developers/es/docs/money-out/integration-configuration). 
 
 | Valor del campo `external_reference` | Respuesta |
 |---|---|
@@ -217,4 +217,4 @@ curl --location 'https://api.mercadopago.com/v1/transaction-intents/process' \
 >
 > Importante
 >
-> Cuando hayas probado todos los escenarios posibles y quieras comenzar a realizar transacciones reales, [activa las credenciales de producción](developers/es/docs/checkout-api/additional-content/your-integrations/credentials) y reemplaza las de prueba.
+> Cuando hayas probado todos los escenarios posibles y quieras comenzar a realizar transacciones reales, [activa las credenciales de producción](/developers/es/docs/money-out/additional-content/your-integrations/credentials) y reemplaza las de prueba.

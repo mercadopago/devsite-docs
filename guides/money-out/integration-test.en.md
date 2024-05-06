@@ -118,7 +118,7 @@ curl --location 'https://api.mercadopago.com/v1/transaction-intents/process' \
 >
 > Important
 >
-> To learn how to send the remaining fields to execute this request, go to [Integration Configuration](). 
+> To learn how to send the remaining fields to execute this request, go to [Integration Configuration](/developers/en/docs/money-out/integration-configuration). 
 
 | Value of `external_reference` | Response |
 |---|---|
@@ -190,7 +190,7 @@ curl --location 'https://api.mercadopago.com/v1/transaction-intents/process' \
 >
 > Important
 >
-> To learn how to send the remaining fields to execute this request, go to [Integration Configuration](). 
+> To learn how to send the remaining fields to execute this request, go to [Integration Configuration](/developers/en/docs/money-out/integration-configuration). 
 
 | Value of `external_reference` | Response |
 |---|---|
@@ -217,4 +217,4 @@ curl --location 'https://api.mercadopago.com/v1/transaction-intents/process' \
 >
 > Important
 >
-> Once you have tested all possible scenarios and want to start making real transactions, [activate production credentials](developers/en/docs/checkout-api/additional-content/your-integrations/credentials) and replace the test ones.
+> Once you have tested all possible scenarios and want to start making real transactions, [activate production credentials](/developers/en/docs/money-out/additional-content/your-integrations/credentials) and replace the test ones.
