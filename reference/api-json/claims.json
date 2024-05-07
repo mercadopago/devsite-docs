@@ -1,7 +1,7 @@
 {
     "url": "https://api.mercadopago.com",
     "paths": {
-      "/post-purchase/v1/claims/{claim_id}": {
+      "/v1/claims/{claim_id}": {
         "get": {
           "tags": [
             "checkout-pro"
@@ -834,7 +834,7 @@
           }
         }
       },
-      "/post-purchase/v1/claims/search": {
+      "/v1/claims/search": {
         "get": {
           "tags": [
             "checkout-pro"
@@ -1750,7 +1750,7 @@
           }
         }
       },
-      "/post-purchase/v1/claims/{claim_id}/messages": {
+      "/v1/claims/{claim_id}/messages": {
         "get": {
           "tags": [
             "checkout-pro"
@@ -2030,7 +2030,7 @@
           }
         }
       },
-      "/post-purchase/v1/claims/{claim_id}/attachments": {
+      "/v1/claims/{claim_id}/attachments": {
         "post": {
           "tags": [
             "checkout-pro"
@@ -2121,7 +2121,7 @@
           }
         }
       },
-      "/post-purchase/v1/claims/{claim_id}/actions/send-message": {
+      "/v1/claims/{claim_id}/actions/message": {
         "post": {
           "tags": [
             "checkout-pro"
@@ -2237,7 +2237,7 @@
           }
         }
       },
-      "/post-purchase/v1/claims/{claim_id}/attachments/{fileName}/download": {
+      "/v1/claims/{claim_id}/attachments/{attach_id}/download": {
         "get": {
           "tags": [
             "checkout-pro"
@@ -2293,7 +2293,7 @@
           }
         }
       },
-      "/post-purchase/v1/claims/{claim_id}/attachments/{fileName}": {
+      "/v1/claims/{claim_id}/attachments/{attach_id}": {
         "get": {
           "tags": [
             "checkout-pro"
@@ -2413,7 +2413,7 @@
           }
         }
       },
-      "/post-purchase/v1/claims/{claim_id}/open-dispute": {
+      "/v1/claims/{claim_id}/actions/open_dispute": {
         "post": {
           "tags": [
             "checkout-pro"
@@ -2482,7 +2482,7 @@
           }
         }
       },
-      "/post-purchase/v1/claims/{claim_id}/expected-resolutions": {
+      "/v1/claims/{claim_id}/expected_resolutions": {
         "get": {
           "tags": [
             "checkout-pro"
@@ -2647,7 +2647,7 @@
           }
         }
       },
-      "/post-purchase/v1/claims/{claim_id}/evidences": {
+      "/v1/claims/{claim_id}/evidences": {
         "get": {
           "tags": [
             "checkout-pro"
@@ -2876,7 +2876,7 @@
           }
         }
       },
-      "/post-purchase/v1/claims/{claim_id}/actions/evidences": {
+      "/v1/claims/{claim_id}/actions/evidences": {
         "post": {
           "tags": [
             "checkout-pro"
@@ -3233,7 +3233,7 @@
           }
         }
       },
-      "/post-purchase/v1/claims/{claim_id}/status_history": {
+      "/v1/claims/{claim_id}/status_history": {
         "get": {
           "tags": [
             "checkout-pro"
@@ -3401,7 +3401,7 @@
           }
         }
       },
-      "/post-purchase/v1/reasons/{reason_id}": {
+      "/post-purchase/sites/{site_id}/v2/reasons/{reason_id}": {
         "get": {
           "tags": [
             "checkout-pro"
