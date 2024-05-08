@@ -33,9 +33,16 @@ Below, we will explain how to: specify the URLs that will be notified, configure
 | `point_integration_wh` | `state_FINISHED` | Payment process completed |
 | `point_integration_wh` | `state_CANCELED` | Payment process canceled |
 | `point_integration_wh` | `state_ERROR` | An error occurred while processing the payment attempt |
+| `topic_instore_integration_wh` | - | Notifications of in-person integrations |
+| `shipments` | - | Shipment notifications |
 | `delivery` | `delivery.updated`| Shipping data and order update |
 | `delivery_cancellation` | `case_created`| Shipment cancellation request |
+| `wallet_connect` | - | Transaction notifications with [Wallet Connect](/developers/en/docs/wallet-connect/landing) |
+| `stop_delivery_op_wh` | - | Fraud alerts |
 | `topic_claims_integration_wh` | `updated`| Claims made by sales |
+| `topic_card_id_wh` | `card.updated`| Card Updater. The buyer's user card has been updated |
+
+> The Card Updater retrieves card information and updates this data within Mercado Pago. Cards recoverable with this feature include: cards with incorrect information (such as expiration date, card number, CVV, name, etc.) and cards that have been replaced by the financial institution (due to expiration, card upgrade, etc.).
 
 5. Finally, click **Save** to generate a secret signature for the application. The signature is a validation method to ensure that the notifications received were sent by Mercado Pago, therefore, it is important to check the authenticity information to avoid fraud.
 
@@ -43,8 +50,8 @@ Below, we will explain how to: specify the URLs that will be notified, configure
 >
 > Important
 > 
-> Mercado Pago will always send this signature in Webhook notifications. Always verify this authenticity information to prevent fraud. </br></br>
-> </br></br>
+> Mercado Pago will always send this signature in Webhook notifications. Always verify this authenticity information to prevent fraud.
+> <br/>
 > The generated signature has no expiration date, and while not mandatory, we recommend periodically renewing the **secret signature**. To do this, simply click the reset button next to the signature.
 ### Validate notification origin
 
@@ -611,9 +618,9 @@ curl -X POST \
 >
 > Important
 >
-> For the event type `point_integration_wh` the notification format changes. [Click here](/developers/en/docs/mp-point/introduction) to consult the documentation of **Mercado Pago Point**.
-> <br/>
-> In the case of the `delivery` and `topic_claims_integration_wh` events, we will also have some different attributes in the response. Check the table below for these features.
+> For the event type `point_integration_wh` the notification format changes. [Click here](/developers/en/docs/mp-point/introduction) to consult the documentation of **Mercado Pago Point**. </br></br>
+> </br></br>
+> In the case of the `delivery`, `topic_claims_integration_wh` and `card updater` events, we will also have some different attributes in the response. Check the table below for these features.
 
 ```json
 {
@@ -636,12 +643,15 @@ This indicates that payment **999999999** was created for user **44444** in prod
 | --- | --- |
 | **id** | Notification ID |
 | **live_mode** | Indicates if the URL entered is valid. |
-| **type** | Type of notification received (payments, mp-connect, subscription, claim, etc) |
+| **type** | Type of notification received (payments, mp-connect, subscription, claim, automatic-payments, etc) |
 | **date_created** | Resorce creation date |
 | **user_id** | Vendor UserID |
 | **api_version** | Indicates if it is a duplicate notification or not |
 | **action** | Type of notification received, indicating whether it is the update of a resource or the creation of a new |
 | **data - id** | ID of the payment, merchant_order or claim|
+| **data - customer_id** (card updater)| Customer ID with updated card |
+| **data - new_card_id** (card updater)| Updated card number |
+| **data - old_card_id** (card updater)| Old card number |
 | **attempts** (delivery) | Number of times a notification was sent |
 | **received** (delivery) | Resource Creation Date |
 | **resource** (delivery) | Type of notification received, indicating whether this is an update to a feature or the creation of a new one |
