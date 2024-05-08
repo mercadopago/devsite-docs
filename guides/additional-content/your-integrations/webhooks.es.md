@@ -33,8 +33,12 @@ A continuación explicaremos cómo: indicar las URL que serán notificadas, conf
 | `point_integration_wh` | `state_FINISHED`| Intento de pago finalizado |
 | `point_integration_wh` | `state_CANCELED` | Intento de pago cancelado |
 | `point_integration_wh` | `state_ERROR`| Ocurrió un error al procesar el intento de pago |
+| `topic_instore_integration_wh` | - | Notificaciones de integraciones en tienda |
+| `shipments` | - | Notificaciones de envíos |
 | `delivery` | `delivery.updated`| Datos de envío y actualización de pedidos |
 | `delivery_cancellation` | `case_created`| Solicitud de cancelación de envío |
+| `wallet_connect` | - | Notificaciones de transacciones con [Wallet Connect](/developers/es/docs/wallet-connect/landing) |
+| `stop_delivery_op_wh` | - | Alertas de fraude |
 | `topic_claims_integration_wh` | `updated`| Reclamos hechos por las ventas |
 | `topic_card_id_wh` | `card.updated`| Card Updater. La tarjeta del usuario comprador ha sido actualizada |
 

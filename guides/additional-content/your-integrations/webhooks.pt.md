@@ -33,10 +33,14 @@ Abaixo explicaremos como: indicar as URLs que serão notificadas, configurar os 
 | `point_integration_wh` | `state_FINISHED`| Processo de pagamento concluído |
 | `point_integration_wh` | `state_CANCELED` | Processo de pagamento cancelado |
 | `point_integration_wh` | `state_ERROR`| Ocorreu um erro ao processar a tentativa de pagamento |
+| `topic_instore_integration_wh` | - | Notificações de integrações presenciais |
+| `shipments` | - | Notificações de envios |
 | `delivery` | `delivery.updated`| Dados de envio e atualização do pedido |
 | `delivery_cancellation` | `case_created`| Solicitação de cancelamento do envio |
+| `wallet_connect` | - | Notificações de transações com [Wallet Connect](/developers/pt/docs/wallet-connect/landing) |
+| `stop_delivery_op_wh` | - | Alertas de fraude |
 | `topic_claims_integration_wh` | `updated`| Reclamações feitas pelas vendas |
-| `topic_card_id_wh` | `card.updated`| Card Updater. O cartão de usuário comprador foi atualizado |
+| `topic_card_id_wh` | `card.updated`| O cartão de usuário comprador foi atualizado |
 
 > O _Card Updater_ recupera informações de cartões e atualiza essas informações dentro do Mercado Pago. Cartões recuperáveis com este recurso: cartões com alguma informação errada (como data de vencimento, número do cartão, CVV, nome, etc.) e cartões que tenham sido trocados pela instituição financeira (por motivo de validade, upgrade de cartão, etc.).
 

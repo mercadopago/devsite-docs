@@ -33,8 +33,12 @@ Below, we will explain how to: specify the URLs that will be notified, configure
 | `point_integration_wh` | `state_FINISHED` | Payment process completed |
 | `point_integration_wh` | `state_CANCELED` | Payment process canceled |
 | `point_integration_wh` | `state_ERROR` | An error occurred while processing the payment attempt |
+| `topic_instore_integration_wh` | - | Notifications of in-person integrations |
+| `shipments` | - | Shipment notifications |
 | `delivery` | `delivery.updated`| Shipping data and order update |
 | `delivery_cancellation` | `case_created`| Shipment cancellation request |
+| `wallet_connect` | - | Transaction notifications with [Wallet Connect](/developers/en/docs/wallet-connect/landing) |
+| `stop_delivery_op_wh` | - | Fraud alerts |
 | `topic_claims_integration_wh` | `updated`| Claims made by sales |
 | `topic_card_id_wh` | `card.updated`| Card Updater. The buyer's user card has been updated |
 
