@@ -40,9 +40,9 @@ Below, we will explain how to: specify the URLs that will be notified, configure
 | `wallet_connect` | - | Transaction notifications with [Wallet Connect](/developers/en/docs/wallet-connect/landing) |
 | `stop_delivery_op_wh` | - | Fraud alerts |
 | `topic_claims_integration_wh` | `updated`| Claims made by sales |
-| `topic_card_id_wh` | `card.updated`| Card Updater. The buyer's user card has been updated |
+| `topic_card_id_wh` | `card.updated`| Card Updater. The buyer's user card has been updated* |
 
-> The Card Updater retrieves card information and updates this data within Mercado Pago. Cards recoverable with this feature include: cards with incorrect information (such as expiration date, card number, CVV, name, etc.) and cards that have been replaced by the financial institution (due to expiration, card upgrade, etc.).
+> *The Card Updater retrieves card information and updates this data within Mercado Pago. Cards recoverable with this feature include: cards with incorrect information (such as expiration date, card number, CVV, name, etc.) and cards that have been replaced by the financial institution (due to expiration, card upgrade, etc.).
 
 5. Finally, click **Save** to generate a secret signature for the application. The signature is a validation method to ensure that the notifications received were sent by Mercado Pago, therefore, it is important to check the authenticity information to avoid fraud.
 
