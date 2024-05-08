@@ -33,7 +33,7 @@ A continuación explicaremos cómo: indicar las URL que serán notificadas, conf
 | `point_integration_wh` | `state_FINISHED`| Intento de pago finalizado |
 | `point_integration_wh` | `state_CANCELED` | Intento de pago cancelado |
 | `point_integration_wh` | `state_ERROR`| Ocurrió un error al procesar el intento de pago |
-| `topic_instore_integration_wh` | - | Notificaciones de integraciones en tienda |
+| `topic_instore_integration_wh` | - | Notificaciones de integraciones en persona |
 | `shipments` | - | Notificaciones de envíos |
 | `delivery` | `delivery.updated`| Datos de envío y actualización de pedidos |
 | `delivery_cancellation` | `case_created`| Solicitud de cancelación de envío |
