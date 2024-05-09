@@ -33,9 +33,16 @@ A continuación explicaremos cómo: indicar las URL que serán notificadas, conf
 | `point_integration_wh` | `state_FINISHED`| Intento de pago finalizado |
 | `point_integration_wh` | `state_CANCELED` | Intento de pago cancelado |
 | `point_integration_wh` | `state_ERROR`| Ocurrió un error al procesar el intento de pago |
+| `topic_instore_integration_wh` | - | Notificaciones de integraciones en persona |
+| `shipments` | - | Notificaciones de envíos |
 | `delivery` | `delivery.updated`| Datos de envío y actualización de pedidos |
 | `delivery_cancellation` | `case_created`| Solicitud de cancelación de envío |
+| `wallet_connect` | - | Notificaciones de transacciones con [Wallet Connect](/developers/es/docs/wallet-connect/landing) |
+| `stop_delivery_op_wh` | - | Alertas de fraude |
 | `topic_claims_integration_wh` | `updated`| Reclamos hechos por las ventas |
+| `topic_card_id_wh` | `card.updated`| Card Updater. La tarjeta del usuario comprador ha sido actualizada* |
+
+> *El _Card Updater_ recupera información de tarjetas y actualiza esos datos dentro de Mercado Pago. Tarjetas recuperables con este recurso: tarjetas con información incorrecta (como fecha de vencimiento, número de tarjeta, CVV, nombre, etc.) y tarjetas que hayan sido reemplazadas por la institución financiera (por motivo de vencimiento, actualización de tarjeta, etc.).
 
 5. Por último, haz clic en **Guardar** para generar una clave secreta para la aplicación. La clave es un método de validación para asegurar que las notificaciones recibidas fueron enviadas por Mercado Pago, por lo tanto, es importante verificar la información de autenticidad para evitar fraudes.
 
@@ -43,8 +50,8 @@ A continuación explicaremos cómo: indicar las URL que serán notificadas, conf
 > 
 > Importante
 > 
-> Mercado Pago siempre enviará esta clave en las notificaciones Webhooks. Siempre verifica esta información de autenticidad para evitar fraudes. </br></br>
-> </br></br>
+> Mercado Pago siempre enviará esta clave en las notificaciones Webhooks. Siempre verifica esta información de autenticidad para evitar fraudes.
+> <br/>
 > La clave generada no tiene fecha de caducidad y, aunque no es obligatorio, recomendamos renovar periódicamente la **clave secreta**. Para hacerlo, simplemente haz clic en el botón de restablecimiento junto a la clave.
 ### Validar origen de la notificación
 
@@ -611,9 +618,9 @@ curl -X POST \
 >
 > Importante
 >
-> Para el tipo `point_integration_wh` el formato de notificación cambia. [Haz clic aquí](/developers/es/guides/mp-point/introduction) para consultar la documentación de **Mercado Pago Point**.
-> <br/>
-> En el caso de los eventos `delivery` y `topic_claims_integration_wh`, también tendremos algunos atributos diferentes en la respuesta. Consulte la siguiente tabla para ver estas características.
+> Para el tipo `point_integration_wh` el formato de notificación cambia. [Haz clic aquí](/developers/es/guides/mp-point/introduction) para consultar la documentación de **Mercado Pago Point**.</br></br>
+> </br></br>
+> > En el caso de los eventos `delivery`, `topic_claims_integration_wh` y `topic_card_id_wh`, también tendremos algunos atributos diferentes en la respuesta. Consulte la siguiente tabla para ver estas características.
 
 ```json
 {
@@ -636,12 +643,15 @@ Esto indica que el pago **999999999** fue creado para el usuario **44444** en mo
 | --- | --- |
 | **id** | ID de la notificación |
 | **live_mode** | Indica si la URL ingresada es válida.|
-| **type** | Tipo de notificacion recebida (payments, mp-connect, subscription etc) |
+| **type** | Tipo de notificacion recebida (payments, mp-connect, subscription, claim, automatic-payments, etc) |
 | **date_created** | Fecha de creación del recurso |
 | **user_id**| UserID del vendedor |
 | **api_version** | Indica si es una notificación duplicada o no|
 | **action** | Tipo de notificación recibida, indicando si es la actualización de un recurso o bien la creación de un nuevo |
 | **data - id**  | ID del payment, merchant_order o del reclamo |
+| **data - customer_id** (card updater)| ID del cliente cuya tarjeta fue actualizada |
+| **data - new_card_id** (card updater)| Número actualizado de la tarjeta |
+| **data - old_card_id** (card updater)| Número antiguo de la tarjeta |
 | **attempts** (delivery) | Número de veces que se envió una notificación|
 | **received** (delivery) | Fecha de creación del recurso |
 | **resource** (delivery) | Tipo de notificación recibida, indicando si se trata de una actualización de una característica o de la creación de una nueva |
