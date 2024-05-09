@@ -49,22 +49,30 @@
                       "es": "Especifica el tipo de operación a realizar para obtener tus credenciales."
                     },
                     "required": true,
-                    "example": "authorization_code",
+                    "example": "client_credentials",
                     "enum": [
                       {
                         "title": "authorization_code",
                         "description": {
-                          "en": "used to get the access token for the first time.",
-                          "es": "used to get the access token for the first time.",
-                          "pt": "used to get the access token for the first time."
+                          "en": "Used to get the Access token for the first time.",
+                          "es": "Se utiliza para obtener el token de acceso por primera vez.",
+                          "pt": "Usado para obter o Access token pela primeira vez."
                         }
                       },
                       {
                         "title": "refresh_token",
                         "description": {
-                          "en": "it is used to refresh an existing token.",
-                          "es": "it is used to refresh an existing token.",
-                          "pt": "it is used to refresh an existing token."
+                          "en": "It is used to refresh an existing Access token.",
+                          "es": "Se utiliza para refrescar un Access token existente.",
+                          "pt": "É usado para atualizar um Access token existente."
+                        }
+                      },
+                      {
+                        "title": "client_credentials",
+                        "description": {
+                          "en": "xxx",
+                          "es": "xxx",
+                          "pt": "xxx"
                         }
                       }
                     ]
