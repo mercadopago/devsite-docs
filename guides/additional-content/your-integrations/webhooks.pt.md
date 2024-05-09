@@ -40,9 +40,9 @@ Abaixo explicaremos como: indicar as URLs que serão notificadas, configurar os 
 | `wallet_connect` | - | Notificações de transações com [Wallet Connect](/developers/pt/docs/wallet-connect/landing) |
 | `stop_delivery_op_wh` | - | Alertas de fraude |
 | `topic_claims_integration_wh` | `updated`| Reclamações feitas pelas vendas |
-| `topic_card_id_wh` | `card.updated`| O cartão de usuário comprador foi atualizado |
+| `topic_card_id_wh` | `card.updated`| O cartão de usuário comprador foi atualizado* |
 
-> O _Card Updater_ recupera informações de cartões e atualiza essas informações dentro do Mercado Pago. Cartões recuperáveis com este recurso: cartões com alguma informação errada (como data de vencimento, número do cartão, CVV, nome, etc.) e cartões que tenham sido trocados pela instituição financeira (por motivo de validade, upgrade de cartão, etc.).
+> *O _Card Updater_ recupera informações de cartões e atualiza essas informações dentro do Mercado Pago. Cartões recuperáveis com este recurso: cartões com alguma informação errada (como data de vencimento, número do cartão, CVV, nome, etc.) e cartões que tenham sido trocados pela instituição financeira (por motivo de validade, upgrade de cartão, etc.).
 
 5. Por fim, clique em **Salvar** para gerar uma **assinatura secreta** para a aplicação. A assinatura é um método de validação para garantir que as notificações recebidas foram enviadas pelo Mercado Pago, por isso, é importante conferir as informações de autenticidade para evitar fraudes.
 
