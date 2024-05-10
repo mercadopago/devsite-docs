@@ -1,6 +1,6 @@
 # Requisitos previos
 
-Para realizar tus pagos en el modelo de Subacreditador es esencial cumplir con los siguientes requisitos previos:
+Para realizar tus pagos en el modelo de subacreditador es esencial cumplir con los siguientes requisitos previos:
 
 | Requisito | Descripción |
 |---|---|

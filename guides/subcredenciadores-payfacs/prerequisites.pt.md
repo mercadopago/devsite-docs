@@ -1,6 +1,6 @@
-# Requisitos anteriores
+# Pré-requisitos
 
-Para efetuar seus pagamentos no modelo de Subcredenciador, é essencial cumprir com os seguintes requisitos anteriores:
+Para efetuar seus pagamentos no modelo de Subcredenciador, é essencial cumprir com os seguintes pré-requisitos:
 
 | Requisito | Descrição |
 |---|---|
