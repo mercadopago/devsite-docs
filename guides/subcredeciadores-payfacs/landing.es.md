@@ -1,3 +1,9 @@
+> WARNING
+>
+> Contacto comercial requerido
+>
+> Solo puedes integrar este producto si tu contacto comercial te compartió toda la información necesaria para hacerlo.
+
 ---
 content_section_with_media: 
  - title: Facilitadores de Pagos (Subacreditador/Marketplaces)
