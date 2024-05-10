@@ -9,7 +9,7 @@ Portanto, você deve enviar sua chave pública para o Mercado Pago para a valida
 > 
 > Importante
 >
-> EO envio da chave de segurança é necessário apenas em ambientes de produção.  Basta somar o cabeçalho `x-Signature` com o body do request criptografado como valor. Para ambientes de desenvolvimento ou de teste, você não é obrigatório enviá-la. Para mais informações, consulte nossa ----[mlc]---- [Referência de API](/developers/pt/reference/money-out/bank-transfer-mlc/post)------------ ----[mlb]---- [Referência de API](/developers/pt/reference/money-out/bank-transfer-mlb/post)------------.
+> O envio da chave de segurança é necessário apenas em ambientes de produção. Basta adicionar o header `x-Signature` com o body do request criptografado como valor. Para ambientes de desenvolvimento ou de teste, não é obrigatório enviá-lo. Para mais informações, consulte nossa ----[mlc]---- [Referência de API](/developers/pt/reference/money-out/bank-transfer-mlc/post)------------ ----[mlb]---- [Referência de API](/developers/pt/reference/money-out/bank-transfer-mlb/post)------------.
 
 Para **criar as chaves pública e privada no Linux ou MacOS**, execute o seguinte comando em seu terminal:
 
@@ -18,9 +18,9 @@ openssl genpkey -algorithm ed25519 -out mpprivate.pem &&
 openssl pkey -in mpprivate.pem -pubout -out mppublic.pem
 ```
 
-CEm resposta, serão gerados dois arquivos, um com sua chave pública, que você deve enviar ao Mercado Pago, e outro com a chave privada, que deve ser armazenada de forma segura em seu sistema.
+Em resposta, serão gerados dois arquivos, um com sua chave pública, que você deve enviar ao Mercado Pago, e outro com a chave privada, que deve ser armazenada de forma segura em seu sistema.
 
-Para enviar sua chave pública, você precisará se conectar com a equipe de Integrações. Abaixo, fornecemos o seguinte exemplo de requisição, no qual o arquivo `private.key`é lido, o request é criptografado e a assinatura é adicionada ao cabeçalho.
+Para enviar sua chave pública, você precisará se conectar com a equipe de Integrações. Abaixo, fornecemos o seguinte exemplo de requisição, no qual o arquivo `private.key` é lido, o request é criptografado e a assinatura é adicionada ao header.
 
 ```Go
 package main

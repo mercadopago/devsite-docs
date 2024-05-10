@@ -1,6 +1,6 @@
 # Cifrado punta a punta
 
-Para asegurar la seguridad de tus transacciones Money Out, deberás realizar un cifrado punta a punta. El mismo consiste en la creación de un mecanismo de clave pública-privada, en el que se envía un request cifrado por medio de una clave de seguridad, y se utiliza otra clave para validarlo.
+Para asegurar la seguridad de tus transacciones Money Out, deberás realizar un cifrado punta a punta. El mismo consiste en la creación de un mecanismo de clave pública-privada, en el que se envía un _request_ cifrado por medio de una clave de seguridad, y se utiliza otra clave para validarlo.
 
 Así, deberás enviar tu clave pública a Mercado Pago para la validación de tus transacciones, y conservar tu clave privada almacenada de forma segura para cifrar tus *requests*.
 

@@ -4,7 +4,7 @@ The integration of Money Out is done by making a single API call to [v1/transact
 
 ----[mlb]----
 
-With Money Out, you can send money in two different ways: via Pix, or by transferring to a bank account, whether it's a Mercado Pago account or not. Follow the instructions below to learn how to integrate in each case.
+With Money Out, you can send money in two different ways: via Pix, or by transferring to a money account, whether it's a bank account or a Mercado Pago one. Follow the instructions below to learn how to integrate in each case.
 
 > WARNING
 >
@@ -146,7 +146,7 @@ If the execution was successful, you will automatically receive a response with 
 | `transaction.from.accounts.amount.status_detail` | It is returned empty. For more information about `status_detail`, check `transaction.to.accounts.amount.status_detail`. |
 | `transaction.to.accounts.amount` | Amount transferred to the destination account. Its value will be equal to `from.accounts.amount`, unless there has been a total or partial refund, the latter indicated in the `transaction.refunded_amount` field. |
 | `transaction.to.accounts.amount.status_detail` | Detailed information about the transaction status. To learn about possible `status_detail`, refer to [Possible transaction status](/developers/en/docs/money-out/integration-configuration#bookmark_possible_transaction_status). |
-| `transaction.to.accounts.owner.identification.number` | dentification number of the holder of the destination account. |
+| `transaction.to.accounts.owner.identification.number` | Identification number of the holder of the destination account. |
 | `transaction.to.accounts.owner.identification.type` | Type of identification of the destination account holder. |
 | `transaction.paid_amount` | Total amount charged to the account holder of the origin account. It will be equal to `from.accounts.amount`, unless there has been a total or partial refund, indicated in `refunded_amount`. |
 | `transaction.refunded_amount` | In case of a refund, it will indicate the total amount refunded to the account holder of the origin account. If there was no refund, its value will be 0. |

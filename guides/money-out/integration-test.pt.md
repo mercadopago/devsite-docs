@@ -12,7 +12,7 @@ O teste de integração de Money Out envolve a criação de transações com sta
 
 Todas as transações criadas neste ambiente são transitórias e por isso não são armazenadas.
 
-Para testar sua integração com Money Out, crie transações enviando um **POST**, com seu Access Token de teste no cabeçalho `Authorization` e o cabeçalho `X-Test-Token:true`, no endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process), e modifique o campo `external_reference`  de acordo com o status que deseja obter. Abaixo, você encontrará um exemplo de `curl` de uma tabela com detalhes sobre os diferentes estados.  
+Para testar sua integração com Money Out, crie transações enviando um **POST**, com seu Access Token de teste no cabeçalho `Authorization` e o cabeçalho `X-Test-Token:true`, no endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process), e modifique o campo `external_reference` de acordo com o status que deseja obter. Abaixo, você encontrará um exemplo de `curl` de uma tabela com detalhes sobre os diferentes estados.  
 
 ----[mlb]----
 ### Retiradas via Pix
@@ -126,17 +126,17 @@ curl --location 'https://api.mercadopago.com/v1/transaction-intents/process' \
 | `failed_by_bank` | Uma nova transação será criada, desta vez rejeitada pelo banco. A resposta retornará o valor `failed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `by_bank`. |
 | `failed_by_provider` | Uma nova transação será criada, desta vez rejeitada pelo provedor. A resposta retornará o valor `failed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `by_provider`. |
 | `failed_by_caps` | Uma nova transação será criada, desta vez rejeitada por não cumprir com as normas do Banco Central. A resposta retornará o valor `failed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `by_caps`. |
-| `failed_other_reason` | Uma nova transação será criada, desta vez rejeitada por outras razões.  A resposta retornará o valor `status`. O `status_detail` dentro do objeto `from.accounts` será `other_reason`. |
-| `failed_by_high_risk` | Uma nova transação será criada, desta vez rejeitada por risco de fraude.  A resposta retornará o valor `failed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `by_high_risk`. |
+| `failed_other_reason` | Uma nova transação será criada, desta vez rejeitada por outras razões. A resposta retornará o valor `status`. O `status_detail` dentro do objeto `from.accounts` será `other_reason`. |
+| `failed_by_high_risk` | Uma nova transação será criada, desta vez rejeitada por risco de fraude. A resposta retornará o valor `failed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `by_high_risk`. |
 | `failed_by_compliance` | Uma nova transação será criada, e desta vez será rejeitada por não cumprir com normas. A resposta retornará o valor `failed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `by_compliance`. |
-| `failed_insufficient_funds` | SUma nova transação será criada, e desta vez será rejeitada por falta de fundos na conta de origem. A resposta retornará o valor `failed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `insufficient_funds`. |
+| `failed_insufficient_funds` | Uma nova transação será criada, e desta vez será rejeitada por falta de fundos na conta de origem. A resposta retornará o valor `failed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `insufficient_funds`. |
 | `partially_processed` | Será criada uma nova transação cujo processamento ainda não foi completado. A resposta retornará o valor `partially_processed` para o campo `status`.  |
 | `partially_processed_pending_bank` | Será criada uma nova transação cujo processamento ainda não foi concluído devido a questões relacionadas à conta de destino. A resposta retornará o valor `partially_processed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `pending_bank`. |
 | `reverted` | Será criada uma nova transação, desta vez reembolsada. A resposta retornará o valor `reverted` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `refunded`. |
 | `partially_reverted_partially_refunded` | Será criada uma nova transação, desta vez parcialmente reembolsada. A resposta retornará o valor `partially_reverted` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `partially_refunded`. |
 | `timeout` | Uma nova transação será criada que excederá o tempo de espera. A resposta retornará o valor `processed` para o campo `status`, mas será recebida após 2 minutos. |
 | `internal_server_error` | Será criada uma nova transação que falhará devido a erros do sistema. Ela retornará um `Erro 500`. |
-| Qualquer outro valor | Serão gerados novos recursos com status `status` `processed`. |
+| Qualquer outro valor | Serão gerados novos recursos com status `status` e `processed`. |
 
 ------------ 
 
@@ -190,7 +190,7 @@ curl --location 'https://api.mercadopago.com/v1/transaction-intents/process' \
 >
 > Importante
 >
-> Para saber como enviar os campos restantes para executar essa solicitação, consulte [Configuração da Integração](/developers/pt/docs/money-out/integration-configuration). 
+> Para saber como enviar os campos restantes para executar essa solicitação, consulte [Configuração da integração](/developers/pt/docs/money-out/integration-configuration). 
 
 | Valor do campo `external_reference` | Resposta |
 |---|---|
@@ -198,11 +198,11 @@ curl --location 'https://api.mercadopago.com/v1/transaction-intents/process' \
 | `failed_by_bank` | Uma nova transação será criada, desta vez rejeitada pelo banco. A resposta retornará o valor `failed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `by_bank`. |
 | `failed_by_provider` | Uma nova transação será criada, desta vez rejeitada pelo provedor. A resposta retornará o valor `failed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `by_provider`. |
 | `failed_by_caps` | Uma nova transação será criada, desta vez rejeitada por não cumprir com as normas do Banco Central. A resposta retornará o valor `failed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `by_caps`. |
-| `failed_other_reason` | Uma nova transação será criada, desta vez rejeitada por outras razões.  A resposta retornará o valor `status`. O `status_detail` dentro do objeto `from.accounts` será `other_reason`. |
-| `failed_by_high_risk` | Uma nova transação será criada, desta vez rejeitada por risco de fraude.  A resposta retornará o valor `failed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `by_high_risk`. |
+| `failed_other_reason` | Uma nova transação será criada, desta vez rejeitada por outras razões. A resposta retornará o valor `status`. O `status_detail` dentro do objeto `from.accounts` será `other_reason`. |
+| `failed_by_high_risk` | Uma nova transação será criada, desta vez rejeitada por risco de fraude. A resposta retornará o valor `failed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `by_high_risk`. |
 | `failed_invalid_destination_account` | Será criada uma nova transação, desta vez rejeitada por ter inserido dados incorretos da conta de destino. A resposta retornará o valor  `failed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `invalid_destination_account`. |
 | `failed_by_compliance` | Uma nova transação será criada, e desta vez será rejeitada por não cumprir com normas. A resposta retornará o valor `failed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `by_compliance`. |
-| `failed_insufficient_funds` | SUma nova transação será criada, e desta vez será rejeitada por falta de fundos na conta de origem. A resposta retornará o valor `failed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `insufficient_funds`. |
+| `failed_insufficient_funds` | Uma nova transação será criada, e desta vez será rejeitada por falta de fundos na conta de origem. A resposta retornará o valor `failed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `insufficient_funds`. |
 | `partially_processed` | Será criada uma nova transação cujo processamento ainda não foi completado. A resposta retornará o valor `partially_processed` para o campo `status`.  |
 | `partially_processed_pending_bank` | Será criada uma nova transação cujo processamento ainda não foi concluído devido a questões relacionadas à conta de destino. A resposta retornará o valor `partially_processed` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `pending_bank`. |
 | `reverted` | Será criada uma nova transação, desta vez reembolsada. A resposta retornará o valor `reverted` para o campo `status`. O `status_detail` dentro do objeto `from.accounts` será `refunded`. |

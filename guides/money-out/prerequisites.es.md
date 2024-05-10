@@ -1,6 +1,6 @@
 # Requisitos previos
 
-Para integrar la funcionalidad Money out, debes cumplir con los requisitos previos que se muestran a continuación:
+Para integrar la funcionalidad Money Out, debes cumplir con los requisitos previos que se muestran a continuación:
 
 | Requisito | Descripción |
 |---|---|

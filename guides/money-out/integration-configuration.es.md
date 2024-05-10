@@ -4,7 +4,7 @@ La integración de Money Out se realiza mediante la ejecución de un solo llamad
 
 ----[mlb]----
 
-Con Money Out, puedes enviar dinero de dos formas distintas: Pix, o transferencia a cuenta bancaria, sea esta una cuenta de Mercado Pago o no. Sigue las instrucciones a continuación para saber cómo realizar la integración en cada caso.
+Con Money Out, puedes enviar dinero de dos formas distintas: Pix, o transferencia a cuentas de dinero, sean cuentas bancarias o de Mercado Pago. Sigue las instrucciones a continuación para saber cómo realizar la integración en cada caso.
 
 > WARNING
 >
@@ -14,7 +14,7 @@ Con Money Out, puedes enviar dinero de dos formas distintas: Pix, o transferenci
 
 ## Configurar retiros vía Pix
 
-Para integrar Money Out y permitir retiros de dinero vía Pix, deberás enviar un **POST** con tu **Access Token** en el *header* `Authorization` y tu clave de idempotencia en el *header* `X-Idempotency-Key` al endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). Deberás enviar los parámetros correspondientes siguiendo las indicaciones de la tabla debajo.
+Para integrar Money Out y permitir retiros de dinero vía Pix, deberás enviar un **POST** con tu **Access Token** en el *header* `Authorization` y tu **clave de idempotencia** en el *header* `X-Idempotency-Key` al endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). Deberás enviar los parámetros correspondientes siguiendo las indicaciones de la tabla debajo.
 
 > NOTE
 >
@@ -86,7 +86,7 @@ curl -X POST \
 | `transaction.total_amount `| *Body*. Monto total de la transacción. Debe ser el mismo valor indicado para `from.accounts.amount` y `to.accounts.amount` | Requerido | 100,00 |
 
 
-Si la ejecución fue exitosa, recibirás automáticamente una respuesta con `status code 202`, que indica que la transacción fue aceptada, como en el ejemplo a continuación:
+Si la ejecución fue exitosa, recibirás automáticamente una respuesta con `status code 202`, que indica que la transacción fue aceptada. Puedes ver un ejemplo de respuesta exitosa a continuación:
 
 ```json
 {
@@ -156,7 +156,7 @@ Si la ejecución fue exitosa, recibirás automáticamente una respuesta con `sta
 
 ## Configurar retiros para cuentas bancarias
 
-Para integrar Money Out con destino a cuentas bancarias, deberás enviar un **POST** con tu **Access Token** en el *header* `Authorization` y tu clave de idempotencia en el *header* `X-Idempotency-Key` al endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). Deberás enviar los parámetros correspondientes siguiendo las indicaciones de la tabla debajo.
+Para integrar Money Out con destino a cuentas bancarias, deberás enviar un **POST** con tu **Access Token** en el *header* `Authorization` y tu **clave de idempotencia** en el *header* `X-Idempotency-Key` al endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). Deberás enviar los parámetros correspondientes siguiendo las indicaciones de la tabla debajo.
 
 > NOTE
 >
@@ -474,7 +474,7 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
 
 ## Configurar notificaciones
 
-Para poder mantenerte al tanto de los estados de tus transacciones, debes configurar las [notificaciones Webhooks](/developers/es/docs/money-out/additional-content/your-integrations/notifications/webhooks). Se trata de mensajes enviados por el servidor de Mercado Pago ante eventos que sueceden en tu aplicación. Específicamente para el caso de Money Out, estos eventos pueden ser, o bien la creación de una transacción, o las actualizaciones de estado que la misma atraviese durante su procesamiento. 
+Para poder mantenerte al tanto de los estados de tus transacciones, debes configurar las [notificaciones Webhooks](/developers/es/docs/money-out/additional-content/your-integrations/notifications/webhooks). Se trata de mensajes enviados por el servidor de Mercado Pago ante eventos que suceden en tu aplicación. Específicamente para el caso de Money Out, estos eventos pueden ser, o bien la creación de una transacción, o las actualizaciones de estado que la misma atraviese durante su procesamiento. 
 
 Puedes **configurar tus notificaciones Webhooks al realizar el llamado para crear una transacción**, a través del campo `notification_url`. Sólo debes completarlo con aquella URL en la cual quieras recibir tus actualizaciones. 
 

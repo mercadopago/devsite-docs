@@ -4,7 +4,7 @@ A integração de Money Out é realizada executando uma única chamada à API [v
 
 ----[mlb]----
 
-Com o Money Out, é possível  enviar dinheiro de duas formas distintas: Pix ou transferência entre contas, sejam elas contas do Mercado Pago ou não. Siga as instruções abaixo para saber como realizar a integração em cada caso.
+Com o Money Out, é possível  enviar dinheiro de duas formas distintas: Pix ou transferência entre contas, sejam elas contas do Mercado Pago ou bancárias. Siga as instruções abaixo para saber como realizar a integração em cada caso.
 
 > WARNING
 >
@@ -14,13 +14,13 @@ Com o Money Out, é possível  enviar dinheiro de duas formas distintas: Pix ou 
 
 ## Configurar retiradas de dinheiro via Pix
 
-Para integrar o Money Out e permitir retiradas de dinheiro via Pix, é necessário enviar um **POST**, com seu **Access Token** no *header* `Authorization` e sua chave de idempotencia no *header* `X-Idempotency-Key`, para o endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). Os parâmetros correspondentes devem ser enviados conforme as especificações detalhadas na tabela a seguir.
+Para integrar o Money Out e permitir retiradas de dinheiro via Pix, é necessário enviar um **POST**, com seu **Access Token** no *header* `Authorization` e sua **chave de idempotencia** no *header* `X-Idempotency-Key`, para o endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). Os parâmetros correspondentes devem ser enviados conforme as especificações detalhadas na tabela a seguir.
 
 > NOTE
 >
 > Nota
 >
-> Tenha em mente que cada chamada permite o envio de dinheiro para apenas uma conta de destino (`transaction.to`), a chave Pix do integrador deve ter sido previamente cadastrada, e a chave Pix da conta destino precisa estar ativa.
+> Tenha em mente que cada chamada permite o envio de dinheiro para apenas uma conta de destino (`transaction.to`). A chave Pix do integrador deve ter sido previamente cadastrada, e a chave Pix da conta destino precisa estar ativa.
 
 
 ```curl
@@ -157,7 +157,7 @@ Se a execução for bem-sucedida, você receberá automaticamente uma resposta c
 
 ## Configurar retiradas de dinheiro para contas bancárias
 
-Para integrar Money Out e permitir retiradas de dinheiro para contas bancárias, é necessário enviar um **POST**, com seu **Access Token** no *header* `Authorization` e sua chave de idempotencia no *header* `X-Idempotency-Key`, para o endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). Os parâmetros correspondentes devem ser enviados conforme as especificações detalhadas na tabela a seguir.
+Para integrar Money Out e permitir retiradas de dinheiro para contas bancárias, é necessário enviar um **POST**, com seu **Access Token** no *header* `Authorization` e sua **chave de idempotencia** no *header* `X-Idempotency-Key`, para o endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). Os parâmetros correspondentes devem ser enviados conforme as especificações detalhadas na tabela a seguir.
 
 
 > NOTE
@@ -323,7 +323,7 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
 >
 > Para configurar a integração e testar seu funcionamento antes de ir à produção, é necessário utilizar seu **Access Token de teste**. 
 
-Para integrar Money Out e permitir retiradas de dinheiro para contas bancárias, é necessário enviar um **POST**, com seu **Access Token** no *header* `Authorization` e sua chave de idempotencia no *header* `X-Idempotency-Key`, para o endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). Os parâmetros correspondentes devem ser enviados conforme as especificações detalhadas na tabela a seguir.
+Para integrar Money Out e permitir retiradas de dinheiro para contas bancárias, é necessário enviar um **POST**, com seu **Access Token** no *header* `Authorization` e sua **chave de idempotencia** no *header* `X-Idempotency-Key`, para o endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). Os parâmetros correspondentes devem ser enviados conforme as especificações detalhadas na tabela a seguir.
 
 
 > NOTE
@@ -540,9 +540,9 @@ Na tabela abaixo listamos os principais eventos, prazos e tempo de espera para o
 
 ## Obter informações sobre uma transação
 
-Após criar uma transação, é possível obter informações detalhadas sobre ela. Isso permite verificarse ela foi criada corretamente, consultar seu status ou confirmar as informações recebidas em suas notificações.
+Após criar uma transação, é possível obter informações detalhadas sobre ela. Isso permite verificar se ela foi criada corretamente, consultar seu status ou confirmar as informações recebidas em suas notificações.
 
-Para isso, envie um **GET** com seu Access Token para o endpoint [/v1/transaction-intents//{{transaction_intent_id}}](https://api.mercadopago.com/v1/transaction-intents/{id}), substituindo o `transaction_intent_id`  pelo ID obtido na resposta ao criar a transação.
+Para isso, envie um **GET** com seu Access Token para o endpoint [/v1/transaction-intents//{{transaction_intent_id}}](https://api.mercadopago.com/v1/transaction-intents/{id}), substituindo o `transaction_intent_id` pelo ID obtido na resposta ao criar a transação.
 
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/transaction-intents/{{transaction_intent_id}}' \
