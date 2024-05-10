@@ -1,4 +1,4 @@
-# Adecuación de la integración
+# Actualización de la integración
 
 Para actualizar la integración de un subacreditador, se deberá actualizar la propiedad `forward_data.sub_merchant` con los campos que describimos a continuación. 
 
@@ -56,3 +56,4 @@ Para actualizar la integración de un subacreditador, se deberá actualizar la p
 > Importante
 >
 > La circular 3978 determina que todos los Facilitadores de Pago identifiquen a los beneficiarios finales en el momento de la transacción. Para cumplir con esta norma, se vuelve obligatorio enviar los parámetros de la propiedad `sub_merchant` que fueron detallados en la tabla anterior. En caso de que los campos no sean enviados, la bandera de la tarjeta podrá aplicar penalizaciones al Facilitador de Pago.
+

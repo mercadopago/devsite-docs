@@ -1,4 +1,4 @@
-# Información adicional para integración
+# Información adicional para la integración
 
 A continuación, encontrarás algunas observaciones y buenas prácticas para la integración de un subacreditador.
 
