@@ -14,7 +14,7 @@ With Money Out, you can send money in two different ways: via Pix, or by transfe
 
 ## Set up withdrawals via Pix
 
-To integrate Money Out and enable money withdrawals via Pix, you'll need to send a **POST** request, with your **test Access Token** in the `Authorization` header and your idempotency key in the `X-Idempotency-Key` header, to the endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). You should send the corresponding parameters following the instructions in the table below.
+To integrate Money Out and enable money withdrawals via Pix, you'll need to send a **POST** request, with your **test Access Token** in the `Authorization` header and your **idempotency key** in the `X-Idempotency-Key` header, to the endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). You should send the corresponding parameters following the instructions in the table below.
 
 > NOTE
 >
@@ -156,7 +156,7 @@ If the execution was successful, you will automatically receive a response with 
 
 ## Set up withdrawals to bank accounts
 
-To integrate Money Out with destination to bank accounts, you will need to send a **POST** request, with your **Access Token** in the `Authorization` header and your idempotency key in the `X-Idempotency-Key` header, to the endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). You should send the corresponding parameters following the instructions in the table below.
+To integrate Money Out with destination to bank accounts, you will need to send a **POST** request, with your **Access Token** in the `Authorization` header and your **idempotency key** in the `X-Idempotency-Key` header, to the endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). You should send the corresponding parameters following the instructions in the table below.
 
 > NOTE
 >
@@ -321,7 +321,7 @@ If the execution was successful, you will automatically receive a response with 
 >
 > To set up the integration and test its proper functioning before going live, you'll need to use your **test Access Token**. 
 
-To integrate Money Out with destination to bank accounts, you will need to send a **POST** request, with your **Access Token** in the `Authorization` header and your idempotency key in the `X-Idempotency-Key` header, to the endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). You should send the corresponding parameters following the instructions in the table below.
+To integrate Money Out with destination to bank accounts, you will need to send a **POST** request, with your **Access Token** in the `Authorization` header and your **idempotency key** in the `X-Idempotency-Key` header, to the endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). You should send the corresponding parameters following the instructions in the table below.
 
 > NOTE
 >
