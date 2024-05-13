@@ -3984,9 +3984,9 @@
                       "type": "number",
                       "example": 201,
                       "description": {
-                        "en": "",
-                        "pt": "",
-                        "es": ""
+                        "en": ".",
+                        "pt": ".",
+                        "es": "."
                       }
                     },
                     "filter": {
@@ -4092,27 +4092,27 @@
                             "type": "string",
                             "exemple": "claim",
                             "description": {
-                              "en": "",
-                              "pt": "",
-                              "es": ""
+                              "en": ".",
+                              "pt": ".",
+                              "es": "."
                             }
                           },
                           "expected_resolutions": {
                             "type": "string",
                             "exemple": "change_product",
                             "description": {
-                              "en": "",
-                              "pt": "",
-                              "es": ""
+                              "en": ".",
+                              "pt": ".",
+                              "es": "."
                             }
                           },
                           "rules_engine_triage": {
                             "type": "string",
                             "exemple": "defective",
                             "description": {
-                              "en": "",
-                              "pt": "",
-                              "es": ""
+                              "en": ".",
+                              "pt": ".",
+                              "es": "."
                             }
                           }
                         },
@@ -4129,9 +4129,9 @@
                           "type": "string",
                           "example": null,
                           "description": {
-                            "en": "",
-                            "pt": "",
-                            "es": ""
+                            "en": ".",
+                            "pt": ".",
+                            "es": "."
                           }
                         },
                         "status": {
