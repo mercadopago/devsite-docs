@@ -14,7 +14,7 @@ Si un comprador frecuente hace una compra desde un dispositivo diferente al habi
 > 
 > Atención
 >
-> Si estás utilizando el [JS SDK de Mercado Pago](/developers/es/docs/sdks-library/client-side/mp-js-v2,) **no** será necesario agregar el código de seguridad, ya que la información relativa al Device ID será obtenida por defecto.
+> Si estás utilizando el [JS SDK de Mercado Pago](/developers/es/docs/sdks-library/client-side/mp-js-v2) **no** será necesario agregar el código de seguridad, ya que la información relativa al Device ID será obtenida por defecto.
 
 Puedes **agregar el código de seguridad de Mercado Pago** a tu sitio reemplazando el valor de `view` con el nombre de la sección de tu web en la que deseas agregarlo. Si bien lo más importante es hacerlo en la **página del checkout**, también puedes hacerlo en **otras páginas**, tales como home, search o ítem, ya que ayuda a enriquecer la información recolectada.
 
