@@ -39,7 +39,7 @@ bullet_section_with_media:
 
 Soluções para quem vende pelo site, WhatsApp ou redes sociais. Oferecemos integração facilitada e acesso gratuito à nossa API. As taxas, baseadas no período de recebimento e/ou na quantidade de parcelas sem juros oferecidas ao comprador, são automaticamente aplicadas às vendas. Para mais detalhes, consulte os links abaixo.
 ----[mlb]----
-#### Recebimento
+#### Recebimento de pagamentos
    - [Taxas aplicáveis para receber pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/custo-receber-pagamentos_453)
 #### Parcelamento
    - [Custos de parcelamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/custos-parcelamento_322)
@@ -47,7 +47,7 @@ Soluções para quem vende pelo site, WhatsApp ou redes sociais. Oferecemos inte
 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-#### Recebimento
+#### Recebimento de pagamentos
    - [Taxas aplicáveis para receber pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/custo-receber-pagamentos_453)
 #### Parcelamento
    - [Custos de parcelamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/custos-parcelamento_322)
