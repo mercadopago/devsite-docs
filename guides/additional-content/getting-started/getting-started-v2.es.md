@@ -37,7 +37,20 @@ bullet_section_with_media:
 
 ## Procesa pagos online
 
-Soluciones para quienes vendan por sitio web, desde WhatsApp o redes sociales.
+Soluciones para quienes vendan por sitio web, desde WhatsApp o redes sociales. Ofrecemos integración fácil y acceso gratuito a nuestra API. Las tarifas, basadas en el período de recepción y/o en la cantidad de cuotas sin interés ofrecidas al comprador, se aplican automáticamente a las ventas. Para más detalles, consulte los enlaces a continuación.
+
+#### Recepción
+   - [Tarifas aplicables para recibir pagos.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/33403)
+----[mla, mpe, mco, mlu, mlc]----
+#### Cuotas
+   - [Costos de cuotas.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/19032)
+   - [Tarifas aplicables para ofrecer cuotas sin recargo.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/cuotas-sin-interes_3299)
+------------
+----[mlm]----
+#### Financiación
+   - [Costos de financiación.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/19032)
+   - [Tarifas aplicables para ofrecer financiación sin recargo.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/cuotas-sin-interes_3299)
+------------
 
 ----[mlb]----
 | Solución | Descripción | Complejidad de integración |

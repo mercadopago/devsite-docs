@@ -37,16 +37,14 @@ bullet_section_with_media:
 
 ## Processar pagamentos online
 
-Soluções para quem vende pelo site, WhatsApp ou redes sociais. Oferecemos integração facilitada e acesso gratuito à nossa API. As taxas, baseadas no período de recebimento, são automaticamente aplicadas às vendas ou aos parcelamentos sem juros oferecidos ao comprador. Para mais detalhes, consulte os links abaixo.
+Soluções para quem vende pelo site, WhatsApp ou redes sociais. Oferecemos integração facilitada e acesso gratuito à nossa API. As taxas, baseadas no período de recebimento e/ou na quantidade de parcelas sem juros oferecidas ao comprador, são automaticamente aplicadas às vendas. Para mais detalhes, consulte os links abaixo.
 
-----[mlb]----
 #### Recebimento
-   - [Taxas aplicáveis para receber pagamentos.](https://www.mercadopago.com.br/ajuda/custo-receber-pagamentos_453)
+   - [Taxas aplicáveis para receber pagamentos.](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/custo-receber-pagamentos_453)
 #### Parcelamento
-   - [Custos de parcelamento.](https://www.mercadopago.com.br/ajuda/custos-parcelamento_322)
-   - [Taxas aplicáveis para oferecer parcelamento sem acréscimo.](https://www.mercadopago.com.br/ajuda/oferecer-parcelas-sem-juros-para-compradores_454)
+   - [Custos de parcelamento.](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/custos-parcelamento_322)
+   - [Taxas aplicáveis para oferecer parcelamento sem acréscimo.](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/oferecer-parcelas-sem-juros-para-compradores_454)
 
-------------
 ----[mlb]----
 | Solução | Descrição | Complexidade da integração |
 |:---|:---|:---|
