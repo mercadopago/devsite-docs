@@ -38,14 +38,22 @@ bullet_section_with_media:
 ## Process online payments
 
 Solutions for those who sell on websites, through WhatsApp, or social media. The fees, based on the receipt period and/or the number of interest-free installments offered to the buyer, are automatically applied to sales. For further details, please refer to the links below.
-
+----[mla, mlm, mpe, mco, mlu, mlc]----
 #### Receiving
-   - [Applicable fees for receiving payments](https://www.mercadopago[FAKER][URL][DOMAIN]/help/33403).
-
+   - [Applicable fees for receiving payments.](https://www.mercadopago[FAKER][URL][DOMAIN]/help/33403)
 #### Installments
-   - [Installment costs](https://www.mercadopago[FAKER][URL][DOMAIN]/help/19032).
-   - [Applicable fees for offering interest-free installments](https://www.mercadopago[FAKER][URL][DOMAIN]/help/cuotas-sin-interes_3299).
+   - [Installment costs.](https://www.mercadopago[FAKER][URL][DOMAIN]/help/19032)
+   - [Applicable fees for offering interest-free installments.](https://www.mercadopago[FAKER][URL][DOMAIN]/help/cuotas-sin-interes_3299)
 
+------------
+----[mlb]----
+#### Receiving
+   - [Applicable fees for receiving payments.](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/custo-receber-pagamentos_453)
+#### Parcelamento
+   - [Installment costs.](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/custos-parcelamento_322)
+   - [Applicable fees for offering interest-free installments.](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/oferecer-parcelas-sem-juros-para-compradores_454)
+
+------------
 ----[mlb]----
 | Solution | Description | Integration Complexity |
 |:---|:---|:---|
