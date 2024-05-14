@@ -50,15 +50,15 @@ Soluciones para quienes vendan por sitio web, desde WhatsApp o redes sociales. O
 ----[mlm]----
 #### Recepción
    - [Tarifas aplicables para recibir pagos.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/33403)
-#### Financiación
-   - [Costos de financiación.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/19032)
-   - [Tarifas aplicables para ofrecer financiación sin recargo.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/cuotas-sin-interes_3299)
+#### Mensualidades
+   - [Costos de mensualidades](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/19032)
+   - [Tarifas aplicables para ofrecer mensualidades sin recargo](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/cuotas-sin-interes_3299)
 
 ------------
 ----[mlb]----
 #### Recebimento
-   - [Tarifas aplicables para recibir pagos.](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/custo-receber-pagamentos_453)
-#### Parcelamento
+   - [Tarifas aplicables para recibir pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/custo-receber-pagamentos_453)
+#### Cuotas
    - [Costos de cuotas.](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/custos-parcelamento_322)
    - [Tarifas aplicables para ofrecer cuotas sin recargo.](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/oferecer-parcelas-sem-juros-para-compradores_454)
 

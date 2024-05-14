@@ -49,7 +49,7 @@ Solutions for those who sell on websites, through WhatsApp, or social media. The
 ----[mlb]----
 #### Receiving
    - [Applicable fees for receiving payments.](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/custo-receber-pagamentos_453)
-#### Parcelamento
+#### Installments
    - [Installment costs.](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/custos-parcelamento_322)
    - [Applicable fees for offering interest-free installments.](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/oferecer-parcelas-sem-juros-para-compradores_454)
 
