@@ -133,7 +133,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketpla
 | Campo                      | Descripción                                                                                          |
 |----------------------------|----------------------------------------------------------------------------------------------------|
 | `display_timezone` (opcional) | Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora. |
-| `columns` (obligatorio)       | Campo con el detalle de columnas a incluir en tu reporte. Encuentra todos los posibles valores en la sección [Glosario](/developers/es/docs/checkout-pro/additional-content/reports/marketplace-sales-report/report-fields).|
+| `columns` (obligatorio)       | Campo con el detalle de columnas a incluir en tu reporte. Encuentra todos los posibles valores en la sección [Glosario](/developers/es/docs/split-payments/additional-content/reports/sales-report/report-fields).|
 | `name` (obligatorio)| Campo para asignar nombre a la estructura. |
 | `file_format.prefix` (obligatorio) | Prefijo que compone el nombre del reporte una vez generado. |
 | `file_column_separator` (obligatorio) | Caracter que puedes usar en el archivo .csv cuando no quieras que el separador sea un punto y coma. |

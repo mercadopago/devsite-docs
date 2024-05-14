@@ -135,7 +135,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/reports/marketpla
 | Field                    | Description                                                                                                           |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | `display_timezone` (optional)  | This field determines the date and time displayed in the reports. If you do not configure this field with a time zone, the system will use the default value GMT-04. If you choose a time zone that uses daylight saving time, you will need to manually adjust it when there is a time change. |
-| `columns` (required)       | Field with details of the columns to be included in your report. Find all possible values in the [Glossary](/developers/en/docs/checkout-pro/additional-content/reports/marketplace-sales-report/report-fields) section. |
+| `columns` (required)       | Field with details of the columns to be included in your report. Find all possible values in the [Glossary](/developers/en/docs/split-payments/additional-content/reports/sales-report/report-fields) section. |
 | `name` (required)          | Field to assign a name to the **structure**. |
 | `file_format.prefix` (required) | Prefix that composes the name of the report once generated. |
 | `file_column_separator` (required) | Character you can use in the .csv file when you do not want the separator to be a semicolon. |
