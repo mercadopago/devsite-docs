@@ -37,30 +37,30 @@ bullet_section_with_media:
 
 ## Procesa pagos online
 
-Soluciones para quienes vendan por sitio web, desde WhatsApp o redes sociales. Ofrecemos integración fácil y acceso gratuito a nuestra API. Las tarifas, basadas en el período de recepción y/o en la cantidad de cuotas sin interés ofrecidas al comprador, se aplican automáticamente a las ventas. Para más detalles, consulte los enlaces a continuación.
+Soluciones para quienes vendan por sitio web, desde WhatsApp o redes sociales. Ofrecemos integraciones sencillas y acceso gratuito a nuestra API. Las tarifas, basadas en el período de recepción de pagos y/o en la cantidad de cuotas sin interés ofrecidas al comprador, se aplican automáticamente a las ventas. Para más detalles, consulta los enlaces a continuación.
 
 ----[mla, mpe, mco, mlu, mlc]----
-#### Recepción
-   - [Tarifas aplicables para recibir pagos.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/33403)
+#### Recepción de pagos
+   - [Tarifas aplicables para recibir pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/33403)
 #### Cuotas
-   - [Costos de cuotas.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/19032)
-   - [Tarifas aplicables para ofrecer cuotas sin recargo.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/cuotas-sin-interes_3299)
+   - [Costos de cuotas](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/19032)
+   - [Tarifas aplicables para ofrecer cuotas sin recargo](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/cuotas-sin-interes_3299)
 
 ------------
 ----[mlm]----
-#### Recepción
-   - [Tarifas aplicables para recibir pagos.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/33403)
+#### Recepción de pagos
+   - [Tarifas aplicables para recibir pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/33403)
 #### Mensualidades
    - [Costos de mensualidades](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/19032)
    - [Tarifas aplicables para ofrecer mensualidades sin recargo](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/cuotas-sin-interes_3299)
 
 ------------
 ----[mlb]----
-#### Recebimento
+#### Recepción de pagos
    - [Tarifas aplicables para recibir pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/custo-receber-pagamentos_453)
 #### Cuotas
-   - [Costos de cuotas.](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/custos-parcelamento_322)
-   - [Tarifas aplicables para ofrecer cuotas sin recargo.](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/oferecer-parcelas-sem-juros-para-compradores_454)
+   - [Costos de cuotas](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/custos-parcelamento_322)
+   - [Tarifas aplicables para ofrecer cuotas sin recargo](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/oferecer-parcelas-sem-juros-para-compradores_454)
 
 ------------
 ----[mlb]----
