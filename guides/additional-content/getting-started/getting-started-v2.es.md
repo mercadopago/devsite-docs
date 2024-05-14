@@ -41,7 +41,7 @@ Soluciones para quienes vendan por sitio web, desde WhatsApp o redes sociales. O
 
 #### Recepción
    - [Tarifas aplicables para recibir pagos.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/33403)
-----[mla, mpe, mco, mlu, mlc]----
+----[mla, mlb, mpe, mco, mlu, mlc]----
 #### Cuotas
    - [Costos de cuotas.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/19032)
    - [Tarifas aplicables para ofrecer cuotas sin recargo.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/cuotas-sin-interes_3299)
