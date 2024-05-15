@@ -12,7 +12,7 @@ To integrate payments with Pix, follow the steps below, but if you have already 
 
 ## Import MercadoPago.js
 
-After creating the Pix keys, it is necessary to capture data for payment. This capture is made by including the MercadoPago.js library in your project, followed by the payment form. Use the code below to import the library before adding the payment form.
+After creating the Pix Keys, it is necessary to capture data for payment. This capture is made by including the MercadoPago.js library in your project, followed by the payment form. Use the code below to import the library before adding the payment form.
 
 [[[
 ```html
