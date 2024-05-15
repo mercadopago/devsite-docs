@@ -25,7 +25,7 @@ Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing), é poss�
 ----[mlb]----
     - **Cartões de débito e crédito**: Marque a caixa de seleção nas bandeiras dos cartões que serão aceitos em sua loja.
     - **Dinheiro (saldo da conta Mercado Pago, boleto bancário e lotérica)**.
-    - **Transferência bancária (Pix e PEC)**: A opção de pagamento Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago.
+    - **Transferência bancária (Pix e PEC)**: A opção de pagamento Pix só será exibida se houver uma Chave Pix cadastrada no Mercado Pago.
     - **Parcelamento sem cartão**: Ao configurar o Checkout Pro, você pode oferecer a opção de pagar em até 12 parcelas sem cartão. Caso queira exibir esta opção no checkout da sua loja, acesse a [documentação](/developers/pt/docs/woocommerce/payments-configuration/mercado-credito). 
 
 ![Activate and configure](/images/woocomerce/cho-pro-convert-payments-methods-pt.png)

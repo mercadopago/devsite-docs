@@ -12,7 +12,7 @@ To integrate Checkout Pro, follow the steps below.
  ----[mlb]----
  * **Credit card**. Select the brands you want to enable in your store and also indicate the **maximum number of installments to be allowed for purchases in installments**. 
  * **Debit card**. Select the flags you want to enable in your store. 
- * **Other payment methods**. Select other types of payment methods you want to enable in your store, such as Pix, Cardless installments (if you want to display this option at your store checkout, read the [documentation](/developers/en/docs/nuvemshop/payments-configuration/mercado-credito)), bank slip (also indicate, in the field below, the **number of days for the slip to expire**), etc. The payment option with Pix will only be displayed if there is a Pix key registered in the Market Paid. If you haven't created it yet, watch the [video](https://www.youtube.com/watch?v=60tApKYVnkA) and see the step by step. 
+ * **Other payment methods**. Select other types of payment methods you want to enable in your store, such as Pix, Cardless installments (if you want to display this option at your store checkout, read the [documentation](/developers/en/docs/nuvemshop/payments-configuration/mercado-credito)), bank slip (also indicate, in the field below, the **number of days for the slip to expire**), etc. The payment option with Pix will only be displayed if there is a Pix Key registered in the Market Paid. If you haven't created it yet, watch the [video](https://www.youtube.com/watch?v=60tApKYVnkA) and see the step by step. 
 
  ------------
 ----[mla]----

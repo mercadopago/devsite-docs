@@ -14,7 +14,7 @@ Con el [Checkout API](/developers/es/guides/checkout-api/landing), ofrece pagos 
 >
 > Importante
 > 
-> La opción de pago con Pix solo se mostrará si existe una clave pix registrada en Mercado Pago. Si aún no la creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
+> La opción de pago con Pix solo se mostrará si existe una Clave Pix registrada en Mercado Pago. Si aún no la creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
 
 Para integrar el método de pago, siga los pasos a continuación.
 
