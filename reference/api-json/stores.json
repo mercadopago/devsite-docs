@@ -8,18 +8,18 @@
           "mp-point"
         ],
         "description": {
-          "en": "Check all the information of a physical store with the ID of the store you want",
-          "pt": "Veja todas as informações de um estabelecimento físico com o ID da loja que você deseja",
-          "es": "Consulta toda la información de una tienda física con el ID de la sucursal que quieras"
+          "en": "This endpoint allows access to all information about a physical establishment using the desired store ID. Upon success, the request will return a status code 200.",
+          "pt": "Este endpoint permite acessar todas as informações de um estabelecimento físico utilizando o ID da loja desejada. Em caso de sucesso, a requisição retornará um código de status 200.",
+          "es": "Este endpoint permite acceder a toda la información de una tienda física utilizando el ID de la tienda deseada. En caso de éxito, la solicitud devolverá un código de estado 200."
         },
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "description": {
-              "en": "Store's Id",
-              "pt": "Store's Id",
-              "es": "Store's Id"
+              "en": "Store ID. This number is obtained when creating a store and consolidates all information related to it, such as opening and closing hours, location, and name.",
+              "pt": "ID da loja. Este número é obtido ao criar uma loja e concentra todas as informações relacionadas a ela, como horário de abertura e encerramento, localização e nome.",
+              "es": "ID de la tienda. Este número se obtiene al crear una tienda y concentra toda la información relacionada con ella, como horarios de apertura y cierre, ubicación y nombre."
             },
             "required": true,
             "schema": {
@@ -31,8 +31,8 @@
         "responses": {
           "200": {
             "description": {
-              "es": "Success",
-              "pt": "Success",
+              "es": "Éxito",
+              "pt": "Sucesso",
               "en": "Success"
             },
             "content": {
@@ -44,28 +44,28 @@
                       "type": "string",
                       "example": 30163646,
                       "description": {
-                        "es": "id",
-                        "pt": "id",
-                        "en": "id"
+                        "es": "Número de identificación de la tienda.",
+                        "pt": "Número de identificação da loja.",
+                        "en": "Store identification number."
                       }
                     },
                     "name": {
                       "type": "string",
                       "example": "Sucursal Instore",
                       "description": {
-                        "es": "name",
-                        "pt": "name",
-                        "en": "name"
+                        "es": "Nombre de la sucursal.",
+                        "pt": "Nome da loja.",
+                        "en": "Store's name."
                       }
                     },
                     "date_creation": {
                       "type": "string",
                       "format": "date-time",
-                      "example": "2021-04-16T14:54:28.573Z",
+                      "example": "2024-05-16T14:54:28.573Z",
                       "description": {
-                        "es": "date_creation",
-                        "pt": "date_creation",
-                        "en": "date_creation"
+                        "es": "Fecha y hora en que se creó la tienda.",
+                        "pt": "Data e horário em que a loja foi criada.",
+                        "en": "Date and time the store was created."
                       }
                     },
                     "business_hours": {
@@ -80,26 +80,26 @@
                                 "type": "string",
                                 "example": "08:00",
                                 "description": {
-                                  "es": "open",
-                                  "pt": "open",
-                                  "en": "open"
+                                  "es": "Horario de apertura de la tienda los lunes, por ejemplo, 08:00.",
+                                  "pt": "Horário de abertura da loja às segundas-feiras. Por exemplo, 08:00.",
+                                  "en": "Store opening time on mondays. For example, 08:00."
                                 }
                               },
                               "close": {
                                 "type": "string",
                                 "example": "13:00",
                                 "description": {
-                                  "es": "close",
-                                  "pt": "close",
-                                  "en": "close"
+                                  "es": "Hora de cierre de la tienda los lunes, por ejemplo, a las 13:00.",
+                                  "pt": "Horário de fechamento da loja às segundas-feiras, por exemplo, às 13:00.",
+                                  "en": "Store closing time on mondays, for example, at 13:00."
                                 }
                               }
                             }
                           },
                           "description": {
-                            "es": "monday",
-                            "pt": "monday",
-                            "en": "monday"
+                            "es": "Lunes.",
+                            "pt": "Segunda-feira",
+                            "en": "Monday"
                           }
                         },
                         "tuesday": {
@@ -109,28 +109,28 @@
                             "properties": {
                               "open": {
                                 "type": "string",
-                                "example": "08:00",
+                                "example": "09:00",
                                 "description": {
-                                  "es": "open",
-                                  "pt": "open",
-                                  "en": "open"
+                                  "es": "Horario de apertura de la tienda los martes, por ejemplo, 09:00.",
+                                  "pt": "Horário de abertura da loja às terças-feiras, por exemplo, 09:00.",
+                                  "en": "Store opening time on Tuesdays, for example, 09:00."
                                 }
                               },
                               "close": {
                                 "type": "string",
                                 "example": "18:00",
                                 "description": {
-                                  "es": "close",
-                                  "pt": "close",
-                                  "en": "close"
+                                  "es": "Horario de cierre de la tienda los martes, por ejemplo, 18:00.",
+                                  "pt": "Horário de encerramento da loja às terças-feiras, por exemplo, 18:00.",
+                                  "en": "Store closing time on Tuesdays, for example, 18:00."
                                 }
                               }
                             }
                           },
                           "description": {
-                            "es": "tuesday",
-                            "pt": "tuesday",
-                            "en": "tuesday"
+                            "es": "Martes.",
+                            "pt": "Terça-feira",
+                            "en": "Tuesday"
                           }
                         },
                         "wednesday": {
@@ -142,33 +142,33 @@
                                 "type": "string",
                                 "example": "07:00",
                                 "description": {
-                                  "es": "open",
-                                  "pt": "open",
-                                  "en": "open"
+                                  "es": "Horario de apertura de la tienda los miércoles, por ejemplo, 07:00.",
+                                  "pt": "Horário de abertura da loja às quartas-feiras, por exemplo, 07:00.",
+                                  "en": "Store opening time on Wednesdays, for example, 07:00."
                                 }
                               },
                               "close": {
                                 "type": "string",
                                 "example": "10:00",
                                 "description": {
-                                  "es": "close",
-                                  "pt": "close",
-                                  "en": "close"
+                                  "es": "Horario de cierre de la tienda los miércoles, por ejemplo, 18:00.",
+                                  "pt": "Horário de encerramento da loja às quartas-feiras, por exemplo, 10:00.",
+                                  "en": "Store closing time on Wednesdays, for example, 10:00."
                                 }
                               }
                             }
                           },
                           "description": {
-                            "es": "wednesday",
-                            "pt": "wednesday",
-                            "en": "wednesday"
+                            "es": "Miércoles.",
+                            "pt": "Quarta-feira.",
+                            "en": "Wednesday"
                           }
                         }
                       },
                       "description": {
-                        "es": "business_hours",
-                        "pt": "business_hours",
-                        "en": "business_hours"
+                        "es": "Horario comercial. Se divide por día de la semana y se permiten hasta cuatro horarios de apertura y cierre por día.",
+                        "pt": "Horário comercial. Eles são divididos por dia da semana e são permitidos até quatro horários de abertura e fechamento por dia.",
+                        "en": "Business hours. They are divided by day of the week and up to four opening and closing times per day are allowed."
                       }
                     },
                     "location": {
@@ -176,54 +176,54 @@
                       "properties": {
                         "address_line": {
                           "type": "string",
-                          "example": "Rua Ângelo Piva, Osasco, São Paulo, Brasil",
+                          "example": "Example Street Name, 3039, Buenos Aires, Buenos Aires.",
                           "description": {
-                            "es": "address_line",
-                            "pt": "address_line",
-                            "en": "address_line"
+                            "es": "Campo que devuelve la dirección completa de la tienda creada.",
+                            "pt": "Campo que retorna o endereço completo da loja criada.",
+                            "en": "Field that returns the complete address of the created store."
                           }
                         },
                         "reference": {
                           "type": "string",
-                          "example": "Melicidade",
+                          "example": "Near to Mercado Pago",
                           "description": {
-                            "es": "reference",
-                            "pt": "reference",
-                            "en": "reference"
+                            "es": "Punto de referencia de la dirección proporcionada.",
+                            "pt": "Ponto de referência do endereço informado.",
+                            "en": "Landmark of the provided address"
                           }
                         },
                         "latitude": {
                           "type": "number",
                           "example": -23.52613,
                           "description": {
-                            "es": "latitude",
-                            "pt": "latitude",
-                            "en": "latitude"
+                            "es": "Latitude",
+                            "pt": "Latitude",
+                            "en": "Latitude"
                           }
                         },
                         "longitude": {
                           "type": "number",
                           "example": -46.76169,
                           "description": {
-                            "es": "longitude",
-                            "pt": "longitude",
-                            "en": "longitude"
+                            "es": "Longitude",
+                            "pt": "Longitude",
+                            "en": "Longitude"
                           }
                         }
                       },
                       "description": {
-                        "es": "location",
-                        "pt": "location",
-                        "en": "location"
+                        "es": "Ubicación de la Sucursal",
+                        "pt": "Localização da Loja",
+                        "en": "Store location."
                       }
                     },
                     "external_id": {
                       "type": "string",
                       "example": "SUC001",
                       "description": {
-                        "es": "external_id",
-                        "pt": "external_id",
-                        "en": "external_id"
+                        "es": "Identificador único de la tienda, que es definido por el sistema integrador y puede contener hasta 60 caracteres.",
+                        "pt": "Identificador único da loja, que é definido pelo sistema integrador e pode conter até 60 caracteres.",
+                        "en": "Unique store identifier, which is defined by the integrating system and can contain up to 60 characters."
                       }
                     }
                   }
@@ -231,7 +231,7 @@
               }
             }
           },
-          "400": {
+          "401": {
             "description": {
               "en": "Error",
               "pt": "Erro",
@@ -246,11 +246,11 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "INVALID_STORE_ID",
+                          "title": "UNAUTHORIZED_SCOPES",
                           "description": {
-                            "en": "Invalid STORE_ID.",
-                            "es": "Invalid STORE_ID.",
-                            "pt": "Invalid STORE_ID."
+                            "en": "`You are not allowed to access this resource`. Please review the `store_id` field and ensure that the information entered is correct and valid.",
+                            "es": "`You are not allowed to access this resource`. Por favor, revise el campo `store_id` y asegúrese de que la información ingresada sea correcta y válida.",
+                            "pt": "`You are not allowed to access this resource`. Revise o campo `store_id` e garanta que a informação inserida esteja correta e válida."
                           }
                         }
                       ]
@@ -754,17 +754,41 @@
                           "enum":[ {
                             "title": "validation_error",
                             "description": {
-                              "en": "Name must be defined.",
-                              "pt": "Nome deve ser definido",
-                              "es": "Nombre debe ser definido"
+                              "en": "`Name must be defined`. Check all required fields and ensure that all have been filled as indicated in the description.",
+                              "pt": "`Name must be defined`. Verifique todos los campos obligatorios y asegúrese de que todos se hayan completado según lo indicado en la descripción.",
+                              "es": "`Name must be defined`. Verifique todos os campos obrigatórios e garanta que todos foram preenchidos conforme indicado na descrição."
                             }
                           },
                           {
                             "title": "validation_error",
                             "description": {
-                              "en": "Monday exceeds the maximum length of 4 for Opening Hours.", 
-                              "pt": "Segunda-feira excede o comprimento máximo de 4 para Horário de Funcionamento.",
-                              "es": "Lunes supera la longitud máxima de 4 para Horario de Apertura."
+                              "en": "`Monday exceeds the maximum length of 4 for Opening Hours`. Review the `opening_hours` field and ensure it does not exceed the maximum limit of 4 schedules. The day of the week returned in the code will vary according to the day that is exceeding the allowed number of schedules.", 
+                              "pt": "`Monday exceeds the maximum length of 4 for Opening Hours`. Revise o campo `opening_hours` e garanta não exceder o limite máximo de 4 horários. O dia da semana retornado no código irá variar de acordo com o dia que está excedendo a quantidade de horários permitida.",
+                              "es": "`Monday exceeds the maximum length of 4 for Opening Hours`. Revise el campo `opening_hours` y asegúrese de no exceder el límite máximo de 4 horarios. El día de la semana que se devuelve en el código variará según el día que esté excediendo la cantidad permitida de horarios."
+                            }
+                          },
+                          {
+                            "title": "validation_error",
+                            "description": {
+                              "en": "`The business_hours field can't be null`. Please check the `business_hours` field and enter the information as instructed.", 
+                              "pt": "`The business_hours field can't be null`. Verifique o campo `business_hours` e insira as informações conforme orientação.",
+                              "es": "`The business_hours field can't be null`. Por favor, revise el campo `business_hours` e ingrese la información según las instrucciones."
+                            }
+                          },
+                          {
+                            "title": "validation_error",
+                            "description": {
+                              "en": "`Monday has overlapping hours`. This error occurs when days and times that overlap are entered. The day of the week will return according to the days when the times are overlapping. Review the opening hours and ensure that none overlap.",
+                              "pt": "`Monday has overlapping hours`. Este erro ocorre quando se insere dias e horários que se sobrepõem. O dia da semana retornará de acordo com os dias em que os horários estão sobrepostos. Revise os horários de abertura e garanta que nenhum se sobreponha.",
+                              "es": "`Monday has overlapping hours`. Este error ocurre cuando se introducen días y horarios que se solapan. El día de la semana se devolverá de acuerdo con los días en los que los horarios están solapados. Revise los horarios de apertura y asegúrese de que ninguno se solape."
+                            }
+                          },
+                          {
+                            "title": "validation_error",
+                            "description": {
+                              "en": "`Closing hours must be greater than opening hours`. Review the `business_hours` parameter and ensure that the opening and closing time attributes are correct.",
+                              "es": "`Closing hours must be greater than opening hours`. Revise el parámetro `business_hours` y asegúrese de que los atributos de horarios de apertura y cierre estén correctos.",
+                              "pt": "`Closing hours must be greater than opening hours`. Revise o parâmetro `business_hours` e garanta que os atributos de horários de abertura e encerramento estejam corretos."
                             }
                           }
 
