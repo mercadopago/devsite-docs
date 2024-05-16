@@ -423,8 +423,8 @@ Encontre o status do pagamento no campo _status_.
 
     $payer = new MercadoPago\Payer();
     $payer->email = $_POST['email'];
-    $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-        "type" => $_POST['identificationType'],------------
+    $payer->identification = array(
+        "type" => $_POST['identificationType'],
         "number" => $_POST['identificationNumber']
     );
     $payment->payer = $payer;
@@ -457,8 +457,8 @@ var payment_data = {
   issuer_id: req.body.issuer,
   payer: {
     email: req.body.email,
-    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-      type: req.body.identificationType,------------
+    identification: {
+      type: req.body.identificationType,
       number: req.body.identificationNumber
     }
   }
@@ -490,10 +490,10 @@ payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmou
        .setInstallments(Integer.valueOf(request.getParameter("installments")))
        .setPaymentMethodId(request.getParameter("paymentMethodId"));
 
-Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
+Identification identification = new Identification();
 identification.setType(request.getParameter("identificationType"))
-              .setNumber(request.getParameter("identificationNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("identificationNumber"));------------
+              .setNumber(request.getParameter("identificationNumber"));
+identification.setNumber(request.getParameter("identificationNumber"));
 
 Payer payer = new Payer();
 payer.setEmail(request.getParameter("email"))
@@ -521,8 +521,8 @@ payment_data = {
   payment_method_id: params[:paymentMethodId],
   payer: {
     email: params[:email],
-    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-      type: params[:identificationType],------------
+    identification: {
+      type: params[:identificationType],
       number: params[:identificationNumber]
     }
   }
@@ -557,8 +557,8 @@ var paymentRequest = new PaymentCreateRequest
     {
         Email = Request["email"],
         Identification = new IdentificationRequest
-        {----[mla, mlb, mlu, mlc, mpe, mco]----
-            Type = Request["identificationType"],------------
+        {
+            Type = Request["identificationType"],
             Number = Request["identificationNumber"],
         },
     },
@@ -585,8 +585,8 @@ payment_data = {
     "payment_method_id": request.POST.get("payment_method_id"),
     "payer": {
         "email": request.POST.get("email"),
-        "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
-            "type": request.POST.get("type"), ------------
+        "identification": {
+            "type": request.POST.get("type"), 
             "number": request.POST.get("number")
         }
     }
