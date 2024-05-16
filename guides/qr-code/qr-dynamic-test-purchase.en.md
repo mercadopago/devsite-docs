@@ -18,9 +18,9 @@ Next, we will teach you how to simulate a complete payment flow for dynamic QR c
 
 > WARNING
 >
-> Importante
+> Important
 >
-> Se, ao fazer login com uma conta de teste ou navegar pelas seções do Painel do desenvolvedor, solicitarem a autenticação por e-mail, acesse nossa documentação para saber [como validar o login em contas teste](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_login_com_usuarios_teste). 
+> If, when logging into a test account or trying to access some sections in the Developer Dashboard, you are required to authenticate with a code sent via email, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users). 
 
 
 ## Perform the payment 

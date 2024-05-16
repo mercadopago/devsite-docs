@@ -23,12 +23,6 @@ To create accounts and test how the integrations work, follow the steps below.
 >
 > Always use the **production credentials** when working with a test user.
 
-> WARNING
->
-> Attention
->
-> You can generate up to 15 test user accounts simultaneously, and for now, it is not possible to delete them.
-
 Done! The test account has been created and will be displayed in the table with the following information:
 
 * **Country**: Origin location of the account selected in your registration.
@@ -39,12 +33,12 @@ Done! The test account has been created and will be displayed in the table with 
 
 > NOTE
 >
-> Important
+> Note
 >
 > To edit the **account identification** or **add more fictional money** to test your applications, click on the **vertical ellipsis** (three dots) at the end of the table row and select the **Edit data** option.<br> <br> You can generate **up to 15 test user accounts** simultaneously, and for now, it is not possible to delete them.
 
 
-# Validate login with test users
+## Validate login with test users
 
 When logging into a website with test users and trying to access some sections of the Developer Dashboard, you may be required to authenticate with a code sent via email.
 

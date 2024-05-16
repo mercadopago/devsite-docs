@@ -36,7 +36,7 @@ Para crear cuentas y probar el funcionamiento de las integraciones, sigue los si
 
 > NOTE
 >
-> Importante
+> Nota
 >
 > Para editar la **identificación de la cuenta** o **agregar más dinero ficticio** para probar tus aplicaciones, haz clic en los **3 puntos verticales** al final de la línea de la tabla y selecciona la opción **Editar datos**.<br> <br> Puedes generar hasta **15 cuentas** de usuarios de prueba al mismo tiempo y, por ahora, **no es posible eliminarlas**.
 
