@@ -15,6 +15,12 @@ Next, we will teach you how to simulate a complete payment flow for attended QR 
 3. Use the production credentials of the test seller user to create a [store](/developers/en/reference/stores/_users_user_id_stores/post) and a [point of sale](/developers/en/reference/pos/_pos/post) following the instructions for setup. Please note that when creating the point of sale, the `fixed_amount` field should be set on `true`. The links returned in the response for the `qr` object are the images of the QR Code associated with your point of sale. 
 4. Still using the credentials of the test seller user, [create an order](/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put) and assign it to the point of sale you created in the previous step. By doing this, you will also be assigning the order to the QR Code associated with it. Make sure to set the `notification_url` field with the URL where you will receive notifications about payment updates with the `merchant_order` topic. 
 
+> WARNING
+>
+> Important
+>
+> If, when logging into a test account or trying to access some sections in the Developer Dashboard, you are required to authenticate with a code sent via email, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
+
 ## Perform the payment 
 
 1. Download and install the **Mercado Pago App on your mobile device** and log in with the test buyer account. 

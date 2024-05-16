@@ -31,6 +31,12 @@ Here's how to test the integration:
 
 ![Login](/images/shopify/test-login-esp.gif)
 
+> WARNING
+>
+> Important
+>
+> If, when logging into a test account or trying to access some sections in the Developer Dashboard, you are required to authenticate with a code sent via email, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
+
 ----[mlb]----
 Now, follow the step-by-step according to the chosen checkout type to process payments:
 ## Checkout Pro

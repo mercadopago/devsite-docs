@@ -42,3 +42,16 @@ Done! The test account has been created and will be displayed in the table with 
 > Important
 >
 > To edit the **account identification** or **add more fictional money** to test your applications, click on the **vertical ellipsis** (three dots) at the end of the table row and select the **Edit data** option.<br> <br> You can generate **up to 15 test user accounts** simultaneously, and for now, it is not possible to delete them.
+
+
+# Validate login with test users
+
+When logging into a website with test users and trying to access some sections of the Developer Dashboard, you may be required to authenticate with a code sent via email.
+
+Since these are fictional users, you will not have access to the account that will receive the code. Instead, you can perform this authentication by entering the **last 6 digits that make up the User ID of the test account** you are trying to access, or the **last 6 digits that make up the production Access Token**.
+
+> WARNING
+>
+> Important
+>
+> To access the User ID or Access Token of a test account, you must have previously created an application. To learn how to do this, refer to the documentation on the [Developer Panel](/developers/en/docs/your-integrations/dashboard). <br> <br> If you have any doubts on how to obtain the User ID or Access Token, refer to [Application details](/developers/en/docs/your-integrations/application-details) or [Credentials](/developers/en/docs/your-integrations/credentials).

@@ -30,6 +30,13 @@ Veja abaixo como testar a integração:
 5. Na mesma janela anônima logada como vendedor, acesse o [Painel do desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) e crie uma nova aplicação, seguindo as instruções detalhadas na [documentação do Painel do desenvolvedor.](/developers/pt/docs/shopify/additional-content/your-integrations/dashboard)
 
 ![Login](/images/shopify/test-login.gif)
+
+> WARNING
+>
+> Importante
+>
+> Se, ao fazer login com uma conta de teste ou navegar pelas seções do Painel do desenvolvedor, solicitarem a autenticação por e-mail, acesse nossa documentação para saber [como validar o login em contas teste](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_login_com_usuarios_teste). 
+
 ----[mlb]----
 Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para processar os pagamentos:
 ## Checkout Pro

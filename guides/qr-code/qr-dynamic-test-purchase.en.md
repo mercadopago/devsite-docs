@@ -16,6 +16,13 @@ Next, we will teach you how to simulate a complete payment flow for dynamic QR c
 4. Still using the credentials of the test seller user, [create an order](/developers/es/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/put) and assign it to the point of sale you created in the previous step. Make sure to set the `notification_url` field with the URL where you will receive notifications about payment updates with the `merchant_order` topic. 
 5. Use the `qr_data` parameter obtained in the response to the order creation to generate a QR code. You can use tools or libraries that will help you convert this data into a QR code image.
 
+> WARNING
+>
+> Importante
+>
+> Se, ao fazer login com uma conta de teste ou navegar pelas seções do Painel do desenvolvedor, solicitarem a autenticação por e-mail, acesse nossa documentação para saber [como validar o login em contas teste](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_login_com_usuarios_teste). 
+
+
 ## Perform the payment 
 
 1. Download and install the **Mercado Pago App on your mobile device** and log in with the test buyer account. 

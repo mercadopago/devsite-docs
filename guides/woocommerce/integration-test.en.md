@@ -24,6 +24,12 @@ Here's how to test the integration:
 
 ![Login](/images/woocomerce/test-login-esp.gif)
 
+> WARNING
+>
+> Important
+>
+> If, when logging into a test account or trying to access some sections in the Developer Dashboard, you are required to authenticate with a code sent via email, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
+
 6. Access the application created in the previous step and click on **Production credentials** in the left menu. Copy the `access_token` and the `public_key`.
 
 ![Production credentials](/images/woocomerce/test-prod-credentials-es.png)
@@ -46,6 +52,13 @@ Here's how to test the integration:
 
 13. Click on **Save changes**.
 14. Open a new incognito window and log in to Mercado Pago using the buyer test account created in step 3.
+
+> WARNING
+>
+> Important
+>
+> If, when logging into a test account or trying to access some sections in the Developer Dashboard, you are required to authenticate with a code sent via email, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
+
 ----[mlb]----
 15. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as CPF, RG, phone, and email from the buyer's test account. Also, use the test cards available in the [corresponding documentation](/developers/en/docs/woocommerce/additional-content/your-integrations/test/cards).
 
