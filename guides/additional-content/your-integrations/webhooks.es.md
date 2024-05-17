@@ -40,9 +40,9 @@ A continuación explicaremos cómo: indicar las URL que serán notificadas, conf
 | `wallet_connect` | - | Notificaciones de transacciones con [Wallet Connect](/developers/es/docs/wallet-connect/landing) |
 | `stop_delivery_op_wh` | - | Alertas de fraude |
 | `topic_claims_integration_wh` | `updated`| Reclamos hechos por las ventas |
-| `topic_card_id_wh` | `card.updated`| Card Updater. La tarjeta del usuario comprador ha sido actualizada |
+| `topic_card_id_wh` | `card.updated`| Card Updater. La tarjeta del usuario comprador ha sido actualizada* |
 
-> El _Card Updater_ recupera información de tarjetas y actualiza esos datos dentro de Mercado Pago. Tarjetas recuperables con este recurso: tarjetas con información incorrecta (como fecha de vencimiento, número de tarjeta, CVV, nombre, etc.) y tarjetas que hayan sido reemplazadas por la institución financiera (por motivo de vencimiento, actualización de tarjeta, etc.).
+> *El _Card Updater_ recupera información de tarjetas y actualiza esos datos dentro de Mercado Pago. Tarjetas recuperables con este recurso: tarjetas con información incorrecta (como fecha de vencimiento, número de tarjeta, CVV, nombre, etc.) y tarjetas que hayan sido reemplazadas por la institución financiera (por motivo de vencimiento, actualización de tarjeta, etc.).
 
 5. Por último, haz clic en **Guardar** para generar una clave secreta para la aplicación. La clave es un método de validación para asegurar que las notificaciones recibidas fueron enviadas por Mercado Pago, por lo tanto, es importante verificar la información de autenticidad para evitar fraudes.
 

@@ -8,7 +8,7 @@ A integração do módulo do Mercado Pago com a loja da Nuvemhop permite que voc
 * [Parcelamento sem cartão](/developers/pt/docs/nuvemshop/payments-configuration/mercado-credito): método de financiamento do Mercado Pago que permite o pagamento parcelado sem a necessidade de um cartão.
 * [Descontos, parcelamentos e acréscimos](/developers/pt/docs/nuvemshop/payments-configuration/discounts-and-installment-payments): você tem a flexibilidade de proporcionar aos seus clientes benefícios exclusivos, como créditos, descontos e condições especiais, de maneira personalizada e opcional.
 
-> A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
+> A opção de pagamento com Pix só será exibida se houver uma Chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
 
 ------------
 ----[mpe, mco, mlu, mlc]----

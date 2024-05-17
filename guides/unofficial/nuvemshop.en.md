@@ -104,8 +104,8 @@ It allows the **client to complete the purchase on your site**, without being re
 >
 > Important
 >
-> To be able to offer Pix as a payment option, you will need a Pix key registered in the seller's account. This is unique data for account identification to use the payment method functionality.<br><br>
-> [Learn how to create a Pix key](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required)
+> To be able to offer Pix as a payment option, you will need a Pix Key registered in the seller's account. This is unique data for account identification to use the payment method functionality.<br><br>
+> [Learn how to create a Pix Key](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required)
 ------------
 
 1. Access the payment ----[mlb]---- [methods settings](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [methods settings](https://mitiendanube.com/admin/payments/) ------------ on your site menu, look for "Mercado Pago" and select "Edit".
