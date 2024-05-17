@@ -22,7 +22,7 @@ Los flujos, también llamados grant types, se refieren a la forma en que una apl
 >
 > Nota
 >
-> Las **temporary grants** son códigos temporales utilizados para ser intercambiados por un _Access token_. A diferencia de los _Access token_, solo pueden ser usados para llamadas con el servidor de autorización y nunca se envían a servidores de recursos. Tipos de _temporary grants_:
+> Los **temporary grants** son códigos temporales utilizados para ser intercambiados por un _Access token_. A diferencia de los _Access token_, solo pueden ser usados para llamadas con el servidor de autorización y nunca se envían a servidores de recursos. Tipos de _temporary grants_:
 > <br><br>
 > - `authorization_code`: duración de 10 minutos y su uso es único.
 > - `refresh_token`: duración de 6 meses y pueden ser reutilizados.
