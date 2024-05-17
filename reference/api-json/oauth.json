@@ -44,9 +44,9 @@
                   "grant_type": {
                     "type": "string",
                     "description": {
-                      "en": "Specify the type of operation to be performed to obtain your Access token.",
-                      "pt": "Especifica o tipo de operação a ser executada para obter seu Access token.",
-                      "es": "Especifica el tipo de operación a realizar para obtener tu Access token."
+                      "en": "Specify the type of operation to be performed to obtain your Access token. In the case of Mercado Pago, there are three available access flows:",
+                      "pt": "Especifica o tipo de operação a ser executada para obter seu Access token. No Mercado Pago existem três fluxos de acesso disponíveis:",
+                      "es": "Especifica el tipo de operación a realizar para obtener tu Access token. En el caso de Mercado Pago, hay tres flujos de acceso disponibles:"
                     },
                     "required": true,
                     "example": "client_credentials",
