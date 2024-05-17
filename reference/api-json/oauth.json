@@ -11,9 +11,9 @@
           "qr-code"
         ],
         "description": {
-          "en": "To create or refresh the necessary token to operate your application in the name of a seller",
-          "pt": "Para criar ou atualizar o token necessário para operar seu aplicativo em nome de um vendedor",
-          "es": "Para crear o actualizar el token necesario para operar su aplicación en nombre de un vendedor"
+          "en": "To create or refresh the necessary Access token to operate your application",
+          "pt": "Para criar ou atualizar o Access token necessário para operar sua aplicação",
+          "es": "Para crear o actualizar el Access token necesario para operar su aplicación"
         },
         "requestBody": {
           "content": {
@@ -44,9 +44,9 @@
                   "grant_type": {
                     "type": "string",
                     "description": {
-                      "en": "Specifies the type of operation to perform. There are two possible operations.",
-                      "pt": "Especifica o tipo de operação a ser executada para obter suas credenciais.",
-                      "es": "Especifica el tipo de operación a realizar para obtener tus credenciales."
+                      "en": "Specify the type of operation to be performed to obtain your Access token.",
+                      "pt": "Especifica o tipo de operação a ser executada para obter seu Access token.",
+                      "es": "Especifica el tipo de operación a realizar para obtener tu Access token."
                     },
                     "required": true,
                     "example": "client_credentials",
@@ -54,25 +54,25 @@
                       {
                         "title": "authorization_code",
                         "description": {
-                          "en": "Used to get the Access token for the first time.",
-                          "es": "Se utiliza para obtener el token de acceso por primera vez.",
-                          "pt": "Usado para obter o Access token pela primeira vez."
+                          "en": "A flow based on redirection, characterized by user intervention to explicitly authorize the application to access their data and by the use of a code provided by the authentication server so that the application can obtain an Access token and an associated 'refresh_token'.",
+                          "es": "flujo basado en redirección, caracterizado por la intervención del usuario para autorizar explícitamente el acceso a sus datos por la aplicación y por el uso de un código proporcionado por el servidor de autenticación para que la aplicación pueda obtener un Access token y un 'refresh_token' asociado.",
+                          "pt": "Fluxo baseado em redirecionamento, sendo caracterizado pela intervenção do usuário para autorizar explicitamente o acesso aos seus dados pela aplicação e pelo uso de um código fornecido pelo servidor de autenticação para que a aplicação possa obter um Access token e um `refresh_token` associado."
                         }
                       },
                       {
                         "title": "refresh_token",
                         "description": {
-                          "en": "It is used to refresh an existing Access token.",
-                          "es": "Se utiliza para refrescar un Access token existente.",
-                          "pt": "É usado para atualizar um Access token existente."
+                          "en": "If an Access token generated from the 'authorization_code' flow is invalid or expired, this flow will be used to exchange a temporary grant of the 'refresh_token' type for an Access token. This allows the Access token to be refreshed without requiring further user interaction after the authorization granted by the 'authorization_code' flow.",
+                          "es": "en caso de que un Access token generado a partir del flujo 'authorization_code' esté inválido o expirado, este flujo se utilizará para intercambiar una concesión temporal del tipo 'refresh_token' por un Access token. Es decir, esto permite que el Access token se actualice sin la necesidad de interacción del usuario nuevamente después de la autorización concedida por el flujo 'authorization_code'.",
+                          "pt": "Caso um Access token gerado a partir do fluxo `authorization_code` esteja invalido ou expirado, este fluxo será usado para trocar um concessão temporária do tipo `refresh_token` por um Access token. Ou seja, isso permite que o Access token seja atualizado sem a necessidade de interação do usuário novamente após a autorização concedida pelo fluxo `authorization_code`."
                         }
                       },
                       {
                         "title": "client_credentials",
                         "description": {
-                          "en": "xxx",
-                          "es": "xxx",
-                          "pt": "xxx"
+                          "en": "Used to obtain an Access token without user interaction. This flow is used when applications request an Access token using only their own credentials to access their own resources, without acting on behalf of a user or accessing their data.",
+                          "es": "Se utiliza para obtener un Access token sin interacción del usuario. Este flujo se utiliza cuando las aplicaciones solicitan un Access token usando solo sus propias credenciales para acceder a sus propios recursos, no pudiendo actuar en nombre de un usuario ni acceder a sus datos.",
+                          "pt": "É utilizado para obter um Access token sem interação do usuário. Este fluxo é utilizado quando as aplicações solicitam um Access token usando apenas as suas próprias credenciais para acessar seus próprios recursos, não podendo agir em nome de um usuário e acessar os seus dados."
                         }
                       }
                     ]
@@ -201,9 +201,9 @@
                     },
                     "scope": {
                       "type": "string",
-                      "example": "offline_access read write",
+                      "example": "read write offline_access",
                       "description": {
-                        "en": "Scopes are used in the API authorization and consent process and allow you to determine what access the application requests and what access the user grants. By default, the scopes associated with the token are the ones determined when creating the original token and configuring the application.",
+                        "en": "Scopes are used n the API authorization and consent process and allow you to determine what access the application requests and what access the user grants. By default, the scopes associated with the token are the ones determined when creating the original token and configuring the application.",
                         "pt": "Scopes são utilizados no processo de autorização e consentimento das APIs e permitem determinar ao que o acesso está sendo solicitado por parte da aplicação e ao que se está concedendo acesso por parte do usuário. Por padrão, os scopes associados ao token são os que foram determinados no momento de criação do token original e configuração da aplicação.",
                         "es": "Los scopes se utilizan en el proceso de autorización y consentimiento de la API y permiten determinar qué acceso solicita la aplicación y qué acceso otorga el usuario. De forma predeterminada, los ámbitos asociados con el token son los que se determinaron al crear el token original y configurar la aplicación."
                       }
