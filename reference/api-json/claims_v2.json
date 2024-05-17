@@ -4092,9 +4092,9 @@
                             "type": "string",
                             "exemple": "claim",
                             "description": {
-                              "en": ". ",
-                              "pt": ".",
-                              "es": "."
+                              "en": "Indicate in which flows we can visualize this 'reason'.",
+                              "pt": "Indica em quais fluxos podemos visualizar esta 'reason'.",
+                              "es": "Indica en qué flujos podemos visualizar esta 'reason'."
                             }
                           },
                           "expected_resolution": {
@@ -4144,9 +4144,9 @@
                             "type": "string",
                             "exemple": "defective",
                             "description": {
-                              "en": ".",
-                              "pt": ".",
-                              "es": "."
+                              "en": "Definition of the tag for triage categorization of the reason by which a complaint was created, with possible values including: 'repentant', 'defective', 'incomplete', 'different', or 'not_working'.                              ",
+                              "pt": "Definição da tag para categorização de triagem do motivo ('reason') pelo qual uma reclamação foi criada, podendo apresentar os seguintes valores: 'repentant', 'defective', 'incomplete', 'different' ou 'not_working'.",
+                              "es": "Definición de la etiqueta para la categorización de triaje del motivo ('reason') por el cual se creó una queja, pudiendo presentar los siguientes valores:  'repentant', 'defective', 'incomplete', 'different' o 'not_working'."
                             }
                           }
                         },
@@ -4163,9 +4163,9 @@
                           "type": "string",
                           "example": null,
                           "description": {
-                            "en": ".",
-                            "pt": ".",
-                            "es": "."
+                            "en": "Used during post-purchase classification, where the value of the title is taken for the final reasons or sub-reasons of the reason that contain a value for this attribute.",
+                            "pt": "Utilizado na hora de classificação no pós-venda, onde se pega o valor do título para as 'reason' finais ou as sub-razões de la 'reason' que contém um valor para este atributo.",
+                            "es": "Utilizado en el momento de clasificación en la pos-venta, donde se toma el valor del título para las 'reason' finales o las subrazones de la 'reason' que contienen un valor para este atributo."
                           }
                         },
                         "status": {
