@@ -1,6 +1,6 @@
 # PKCE
 
-O **PKCE** (_Proof Key for Code Exchange_) é um protocolo de segurança usado com OAuth para proteger contra ataques de código malicioso durante a troca de códigos de autorização por _Access Token_. Ele adiciona uma camada extra de segurança gerando um _verifier_ que é transformado em um _challenge_ para garantir que mesmo se o código de autorização for interceptado, ele não seja útil sem o _verifier_ original.
+O **PKCE** (_Proof Key for Code Exchange_) é um protocolo de segurança usado com OAuth para proteger contra ataques de código malicioso durante a troca de códigos de autorização por Access Token. Ele adiciona uma camada extra de segurança gerando um _verifier_ que é transformado em um _challenge_ para garantir que mesmo se o código de autorização for interceptado, ele não seja útil sem o _verifier_ original.
 
 No Mercado Pago você pode **habilitar a verificação por PKCE** a partir da tela de [Detalhes de aplicação](/developers/pt/docs/your-integrations/application-details), assim será possível enviar um código secreto adicional a ser utilizado durante o processo de autorização.
 
@@ -28,4 +28,4 @@ https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=$APP
 
 3. Tendo enviado os códigos corretamente ao Mercado Pago, você obterá a autorização necessária para que ocorra a verificação por PKCE nas transações feitas com OAuth.
 4. Verifique na Redirect URL do seu servidor (https://www.redirect-url.com?code=CODE&state=RANDOM_ID) o código de autorização retornado no parâmetro `code`.
-5. Por fim, envie as suas [credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) e o código de autorização ao endpoint [/oauth/token](/developers/pt/reference/oauth/_oauth_token/post) para receber como resposta o _Access Token_.
+5. Por fim, envie as suas [credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) e o código de autorização ao endpoint [/oauth/token](/developers/pt/reference/oauth/_oauth_token/post) para receber como resposta o Access Token.

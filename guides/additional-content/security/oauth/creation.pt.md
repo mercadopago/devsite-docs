@@ -1,6 +1,6 @@
 # Criação
  
-O fluxo `authorization_code` se caracteriza pela intervenção do vendedor para autorizar de forma explícita o acesso aos seus dados por parte da aplicação e pelo uso de um código concedido pelo servidor de autenticação para que a aplicação possa obter um _Access token_ e um refresh token associado.
+O fluxo `authorization_code` se caracteriza pela intervenção do vendedor para autorizar de forma explícita o acesso aos seus dados por parte da aplicação e pelo uso de um código concedido pelo servidor de autenticação para que a aplicação possa obter um Access Token e um refresh token associado.
  
 Por ser um fluxo baseado em redirecionamento, você deve ser capaz de permitir interação com o navegador do vendedor e de receber o `request` através do redirecionamento por parte do servidor de autorização. Neste fluxo, a aplicação solicita ao vendedor o consentimento expresso para acessar os dados através da abertura de uma página web que deixa explícito os scopes aos quais se está solicitando acesso.
 
@@ -10,7 +10,7 @@ Por ser um fluxo baseado em redirecionamento, você deve ser capaz de permitir i
 >
 > Lembre que você vai utilizar informações sensíveis dos seus vendedores. Certifique-se de resguardá-las de maneira segura. Não as utilize na URL de autenticação e gerencie todo processo somente a partir do seu servidor.
   
-Uma vez permitido o acesso, o servidor gera um código de acesso que mediante um redirecionamento chega à aplicação. Nesta etapa, a aplicação solicita acesso ao servidor de autenticação enviando o código obtido e os dados da aplicação. Feito isso, o servidor concede o _Access token_ e o _refresh token_ à aplicação.
+Uma vez permitido o acesso, o servidor gera um código de acesso que mediante um redirecionamento chega à aplicação. Nesta etapa, a aplicação solicita acesso ao servidor de autenticação enviando o código obtido e os dados da aplicação. Feito isso, o servidor concede o Access Token e o _refresh token_ à aplicação.
  
 Para gerar o código de autorização é preciso atender aos requisitos abaixo.
  
@@ -24,7 +24,7 @@ Para gerar o código de autorização é preciso atender aos requisitos abaixo.
 
 ## Configurar PKCE
 
-O **PKCE** (_Proof Key for Code Exchange_) é um protocolo de segurança usado com OAuth para proteger contra ataques de código malicioso durante a troca de códigos de autorização por _Access Token_. Ele adiciona uma camada extra de segurança gerando um _verifier_ que é transformado em um _challenge_ para garantir que mesmo se o código de autorização for interceptado, ele não seja útil sem o _verifier_ original.
+O **PKCE** (_Proof Key for Code Exchange_) é um protocolo de segurança usado com OAuth para proteger contra ataques de código malicioso durante a troca de códigos de autorização por Access Token. Ele adiciona uma camada extra de segurança gerando um _verifier_ que é transformado em um _challenge_ para garantir que mesmo se o código de autorização for interceptado, ele não seja útil sem o _verifier_ original.
 
 No Mercado Pago você pode **habilitar a verificação por PKCE** a partir da tela de [Detalhes de aplicação](/developers/pt/docs/your-integrations/application-details), assim será possível enviar um código secreto adicional a ser utilizado durante o processo de autorização.
 
@@ -50,11 +50,11 @@ https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`
   - Se não for possível usar **S256** por algum motivo técnico e o servidor suportar o método **Plain**, é possível definir o `code_challenge` igual ao `code_verifier`.
 - **Code_challenge_method**: é o método utilizado para gerar o `code_challenge`, conforme descrito no item acima. Este campo poderá ser, por exemplo, **S256** ou **Plain**, de acordo com a codificação selecionada na etapa de `code_challenge`. <br>
 
-3. Tendo enviado os códigos corretamente ao Mercado Pago, você obterá a autorização necessária para obter o _Access token_ e realizar a verificação por PKCE nas transações feitas com OAuth.
+3. Tendo enviado os códigos corretamente ao Mercado Pago, você obterá a autorização necessária para obter o Access Token e realizar a verificação por PKCE nas transações feitas com OAuth.
 
-## Obter Access token
+## Obter Access Token
 
-O _Access token_ é o código utilizado em diferentes _requests_ públicos para acessar um recurso protegido. Ele representa uma autorização concedida por um vendedor a uma aplicação do cliente, contendo _scopes_ e um tempo de validade limitado para o acesso. Siga os passos abaixo para obtê-lo.
+O Access Token é o código utilizado em diferentes _requests_ públicos para acessar um recurso protegido. Ele representa uma autorização concedida por um vendedor a uma aplicação do cliente, contendo _scopes_ e um tempo de validade limitado para o acesso. Siga os passos abaixo para obtê-lo.
  
 1. Edite sua aplicação para conter sua Redirect URL. Veja [Editar aplicação](/developers/pt/guides/additional-content/your-integrations/application-details).
 2. Envie a URL de autenticação para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:
@@ -73,12 +73,12 @@ O _Access token_ é o código utilizado em diferentes _requests_ públicos para 
    |---|---|
    | Redirect URL | https://www.redirect-url.com?code=CODE&state=RANDOM_ID |
  
-5. Envie as suas credenciais e o código de autorização ao endpoint [/oauth/token](/developers/pt/reference/oauth/_oauth_token/post) para receber como resposta o _Access token_.
+5. Envie as suas credenciais e o código de autorização ao endpoint [/oauth/token](/developers/pt/reference/oauth/_oauth_token/post) para receber como resposta o Access Token.
  
 > WARNING
 >
 > Importante
 >
-> É recomendado realizar este procedimento por completo de uma única vez em conjunto com o usuário, visto que o código recebido pela Redirect URL após a autorização tem validade de 10 minutos e o _Access token_ recebido através do endpoint tem validade de 180 dias.
+> É recomendado realizar este procedimento por completo de uma única vez em conjunto com o usuário, visto que o código recebido pela Redirect URL após a autorização tem validade de 10 minutos e o Access Token recebido através do endpoint tem validade de 180 dias.
 > <br><br>
 > Para gerar credenciais de sandbox para realização de testes, envie o parâmetro `test_token` com valor `true`.

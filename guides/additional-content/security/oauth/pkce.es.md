@@ -1,6 +1,6 @@
 # PKCE
 
-El **PKCE** (_Proof Key for Code Exchange_) es un protocolo de seguridad utilizado con OAuth para proteger contra ataques de código malicioso durante el intercambio de códigos de autorización por _Access Token_. Añade una capa adicional de seguridad generando un _verifier_ que se transforma en un challenge para asegurar que, incluso si el código de autorización es interceptado, no sea útil sin el _verifier_ original.
+El **PKCE** (_Proof Key for Code Exchange_) es un protocolo de seguridad utilizado con OAuth para proteger contra ataques de código malicioso durante el intercambio de códigos de autorización por Access Token. Añade una capa adicional de seguridad generando un _verifier_ que se transforma en un challenge para asegurar que, incluso si el código de autorización es interceptado, no sea útil sin el _verifier_ original.
 
 En Mercado Pago, puedes **habilitar la verificación por PKCE** desde la pantalla de [Detalles de aplicación](/developers/es/docs/your-integrations/application-details), lo que te permitirá enviar un código secreto adicional para ser utilizado durante el proceso de autorización.
 
@@ -28,4 +28,4 @@ https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=$APP
 
 3. Después de enviar correctamente los códigos a Mercado Pago, obtendrás la autorización necesaria para realizar la verificación por PKCE en las transacciones realizadas con OAuth.
 4. Verifica en la Redirect URL de tu servidor (https://www.redirect-url.com?code=CODE&state=RANDOM_ID) el código de autorización devuelto en el parámetro `code`.
-5. Finalmente, envía tus credenciales y el código de autorización al endpoint [/oauth/token](/developers/es/reference/oauth/_oauth_token/post) para recibir como respuesta el _Access Token_.
+5. Finalmente, envía tus credenciales y el código de autorización al endpoint [/oauth/token](/developers/es/reference/oauth/_oauth_token/post) para recibir como respuesta el Access Token.
