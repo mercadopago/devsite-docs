@@ -8,7 +8,7 @@ La integración del módulo de Mercado Pago en Tiendanube te permite utilizar do
 * [Financiación sin tarjeta](/developers/es/docs/nuvemshop/payments-configuration/mercado-credito): método de financiación de Mercado Pago que permite pagar en cuotas sin necesidad de tener una tarjeta.
 * [Descuentos, financiación e intereses](/developers/es/docs/nuvemshop/payments-configuration/discounts-and-installment-payments): tienes la flexibilidad de ofrecer a tus clientes beneficios exclusivos, como créditos, descuentos y condiciones especiales, de manera personalizada y opcional.
 
-> La opción de pago con Pix solo se mostrará si existe una chave Pix cadastrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
+> La opción de pago con Pix solo se mostrará si existe una Chave Pix cadastrada en Mercado Pago. Si aún no las creaste, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso.
 
 ------------
 ----[mpe, mco, mlu, mlc]----

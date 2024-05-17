@@ -25,7 +25,7 @@ When installing [Checkout Pro](/developers/en/docs/checkout-pro/landing), there 
 ----[mlb]----
     - **Debit and credit cards**.
     - **Cash (Mercado Pago account balance or bank receipt)**.
-    - **Bank transfer (Pix and PEC)**. The Pix payment option will only be shown if there is a Pix key registered in Mercado Pago.
+    - **Bank transfer (Pix and PEC)**. The Pix payment option will only be shown if there is a Pix Key registered in Mercado Pago.
     - **Installments without a card**. By setting up Checkout Pro, you can offer the option to pay up to 12 installments without a card. If you also want to show this option at the checkout of your store, read the [documentation](/developers/en/docs/woocommerce/payments-configuration/mercado-credito).
 
 ![Activate and configure](/images/woocomerce/cho-pro-convert-payments-methods-pt.png)
