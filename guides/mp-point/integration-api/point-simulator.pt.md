@@ -73,7 +73,7 @@ Antes de acessar o Simulador, você precisará concluir a configuração do seu 
 >
 > Importante
 >
-> Se, ao fazer login com uma conta de teste ou navegar pelas seções do Painel do desenvolvedor, solicitarem a autenticação por e-mail, acesse nossa documentação para saber [como validar o login em contas teste](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_login_com_usuarios_teste). 
+> Se, ao fazer login com uma conta de teste ou navegar pelas seções de Suas integrações, solicitarem a autenticação por e-mail, acesse nossa documentação para saber [como validar o login em contas teste](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_login_com_usuarios_teste). 
 
 ## 3. Acessar Simulador 
 

@@ -28,7 +28,7 @@ Here's how to test the integration:
 >
 > Important
 >
-> If, when logging into a test account or trying to access some sections in the Developer Dashboard, you are required to authenticate with a code sent via email, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
+> If you are required to authenticate with a code sent via email while logging into a test account or trying to access some sections in Your integrations, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
 
 6. Access the application created in step 5 and click on **Production credentials** in the left menu. Copy the `access_token` and `public_key`.
 
@@ -55,7 +55,7 @@ Here's how to test the integration:
 >
 > Important
 >
-> If, when logging into a test account or trying to access some sections in the Developer Dashboard, you are required to authenticate with a code sent via email, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
+>  If you are required to authenticate with a code sent via email while logging into a test account or trying to access some sections in Your integrations, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
 
 ----[mlb]----
 14. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as CPF, RG, phone, and email from the buyer's test account. Also, use the test cards available in the [documentation](/developers/en/docs/prestashop/additional-content/your-integrations/test/cards) corresponding.

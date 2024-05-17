@@ -75,7 +75,7 @@ Previo a acceder al Simulador, deberás terminar de configurar tu ambiente de pr
 >
 > Importante
 >
-> Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones del Panel del desarrollador, te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
+> Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Tus integraciones, te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
 
 ## 3. Accede al Simulador
 

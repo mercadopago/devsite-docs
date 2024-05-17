@@ -74,7 +74,7 @@ Before accessing the Simulator, you need to finish setting up your test environm
 >
 > Important
 >
-> If, when logging into a test account or trying to access some sections in the Developer Dashboard, you are required to authenticate with a code sent via email, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
+> If you are required to authenticate with a code sent via email while logging into a test account or trying to access some sections in Your integrations, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
 
 ## 3. Access the Simulator 
 

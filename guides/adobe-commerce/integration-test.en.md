@@ -20,7 +20,7 @@ Here's how to test the integration:
 ![Create Account](/images/adobe-commerce/test-create-account-es.gif)
 
 4. Open a new incognito window and log in to Mercado Pago using the seller's test account created in the previous step.
-5. In the same incognito window logged in as the seller, access the [Developer dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) and create a new application, following the detailed instructions in the [Developer dashboard documentation](/developers/en/docs/adobe-commerce/additional-content/your-integrations/dashboard).
+5. In the same incognito window logged in as the seller, access the [Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) and create a new application, following the detailed instructions in the [Developer dashboard documentation](/developers/en/docs/adobe-commerce/additional-content/your-integrations/dashboard).
 
 ![Login](/images/adobe-commerce/test-login-esp.gif)
 
@@ -28,7 +28,7 @@ Here's how to test the integration:
  >
  > Important
  >
- > If, when logging into a test account or trying to access some sections in the Developer Dashboard, you are required to authenticate with a code sent via email, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
+ > If you are required to authenticate with a code sent via email while logging into a test account or trying to access some sections in Your integrations, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
 
 6. Access the application created in the previous step and click on **Production credentials** in the left menu. Copy the `access_token` and `public_key`.
 
@@ -47,7 +47,7 @@ Here's how to test the integration:
  >
  > Important
  >
- > If, when logging into a test account or trying to access some sections in the Developer Dashboard, you are required to authenticate with a code sent via email, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
+ > If you are required to authenticate with a code sent via email while logging into a test account or trying to access some sections in Your integrations, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
 
 ----[mlb]----
 13. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as CPF, RG, phone, and email from the buyer's test account. Also, use the test cards available in the [documentation](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/cards) corresponding.

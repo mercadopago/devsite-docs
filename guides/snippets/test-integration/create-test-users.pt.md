@@ -39,7 +39,6 @@ Pronto! A conta de teste foi criada e será exibida na tabela com as seguintes i
 >
 > Para editar a **identificação da conta** ou **adicionar mais dinheiro fictício** para testar suas aplicações, clique nos **3 pontos verticais** ao final da linha da tabela e selecione a opção **Editar dados**.<br> <br> Você pode gerar **até 15 contas** de usuários de teste ao mesmo tempo e, por enquanto, ainda não é possível deletá-las.
 
-
 ## Validar login com usuários teste
 
 Ao realizar o login com usuários de teste e acessar algumas seções do Painel do Desenvolvedor, a autenticação da conta mediante um código enviado por e-mail pode ser solicitada.

@@ -20,10 +20,7 @@ A continuación, te indicamos cómo probar la integración:
 ![Crear cuenta](/images/adobe-commerce/test-create-account-es.gif)
 
 4. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago usando la cuenta de prueba del vendedor creada en el paso anterior.
-
-
-
-5. En la misma ventana de incógnito iniciada como vendedor, accede al [Panel del desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) y crea una nueva aplicación siguiendo las instrucciones detalladas en la [documentación del Panel del desarrollador.](/developers/es/docs/adobe-commerce/additional-content/your-integrations/dashboard)
+5. En la misma ventana de incógnito iniciada como vendedor, accede a [Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) y crea una nueva aplicación siguiendo las instrucciones detalladas en la [documentación del Panel del desarrollador](/developers/es/docs/adobe-commerce/additional-content/your-integrations/dashboard).
 
 ![Iniciar sesión](/images/adobe-commerce/test-login-esp.gif)
 
@@ -32,7 +29,7 @@ A continuación, te indicamos cómo probar la integración:
  >
  > Importante
  >
- > Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones del Panel del desarrollador, te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
+ > Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Tus integraciones, te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
 
 6. Accede a la aplicación creada en el paso anterior y haz clic en **Credenciales de producción** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
 
@@ -51,7 +48,7 @@ A continuación, te indicamos cómo probar la integración:
  >
  > Importante
  >
- > Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones del Panel del desarrollador, te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts).
+ > Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Tus integraciones, te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts).
 
 ----[mlb]----
 13. En la misma ventana iniciada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como CPF, RG, número de teléfono y correo electrónico de la cuenta de prueba del comprador. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/cards) correspondiente.
