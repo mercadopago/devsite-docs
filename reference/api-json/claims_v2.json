@@ -3984,9 +3984,9 @@
                       "type": "number",
                       "example": 201,
                       "description": {
-                        "en": ".",
-                        "pt": ".",
-                        "es": "."
+                        "en": "Position in which the reason for the complaint is found. It serves the same function as 'sort_by', but it is a default sorting type that will sort the reasons asynchronously.",
+                        "pt": "Posição em que se encontra o motivo da reclamação. Cumpre a mesma função de 'sort_by', mas é um tipo de ordenação padrão que ordenará os motivos ('reason') de forma assíncrona.",
+                        "es": "Posición en la que se encuentra el motivo de la reclamación. Cumple la misma función que 'sort_by', pero es un tipo de ordenación predeterminada que ordenará los motivos ('reason') de forma asíncrona."
                       }
                     },
                     "filter": {
