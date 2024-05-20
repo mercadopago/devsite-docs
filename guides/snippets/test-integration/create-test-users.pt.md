@@ -37,7 +37,7 @@ Pronto! A conta de teste foi criada e será exibida na tabela com as seguintes i
 >
 > Nota
 >
-> Para editar a **identificação da conta** ou **adicionar mais dinheiro fictício** para testar suas aplicações, clique nos **3 pontos verticais** ao final da linha da tabela e selecione a opção **Editar dados**.<br> <br> Você pode gerar **até 15 contas** de usuários de teste ao mesmo tempo e, por enquanto, ainda não é possível deletá-las.
+> Para editar a **identificação da conta** ou **adicionar mais dinheiro fictício** para testar suas aplicações, clique nos **3 pontos verticais** ao final da linha da tabela e selecione a opção **Editar dados**. É possível criar **até 15 contas** de usuários de teste simultaneamente, no entanto, ainda não é possível deletá-las.
 
 ## Validar login com usuários teste
 
@@ -49,4 +49,4 @@ Como se tratam de usuários fictícios, você não terá acesso ao e-mail que re
 >
 > Importante
 >
-> Para acessar ao User ID ou o Access Token de uma conta de teste, você deve ter criado previamente uma aplicação. Para saber como fazer isso, consulte a documentação sobre o [Painel do Desenvolvedor](/developers/pt/docs/your-integrations/dashboard). <br><br> Se tiver dúvidas sobre como obter o User ID ou o Access Token, consulte [Detalhes da aplicação](/developers/pt/docs/your-integrations/application-details) ou [Credenciais](/developers/pt/docs/your-integrations/credentials).
+> Para acessar o User ID ou o Access Token de uma conta de teste, é necessário criar previamente uma aplicação. Para isso, consulte a documentação [Painel do Desenvolvedor](/developers/pt/docs/your-integrations/dashboard). Caso tenha dúvidas sobre como obter o User ID ou o Access Token, consulte [Detalhes da aplicação](/developers/pt/docs/your-integrations/application-details) ou [Credenciais](/developers/pt/docs/your-integrations/credentials).

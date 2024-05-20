@@ -28,7 +28,7 @@ Veja abaixo como testar a integração:
 >
 > Importante
 >
-> Se, ao fazer login com uma conta de teste ou navegar pelas seções de Suas integrações, solicitarem a autenticação por e-mail, acesse nossa documentação para saber [como validar o login em contas teste](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_login_com_usuarios_teste). 
+> Se, ao fazer login com uma conta de teste ou navegar pelas seções de Suas integrações, for solicitada a autenticação por e-mail, acesse nossa documentação para saber [como validar o login em contas teste](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_login_com_usuarios_teste). 
 
 6. Acesse a aplicação criada no passo 5 e clique em **Credenciais de produção** no menu à esquerda. Copie o `access_token` e a `public_key`.
 
@@ -55,7 +55,7 @@ Veja abaixo como testar a integração:
 >
 > Importante
 >
-> Se, ao fazer login com uma conta de teste ou navegar pelas seções de Suas integrações, solicitarem a autenticação por e-mail, acesse nossa documentação para saber [como validar o login em contas teste](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_login_com_usuarios_teste). 
+> Se, ao fazer login com uma conta de teste ou navegar pelas seções de Suas integrações, for solicitada a autenticação por e-mail, acesse nossa documentação para saber [como validar o login em contas teste](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_login_com_usuarios_teste). 
 
 ----[mlb]----
 14. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como CPF, RG, telefone e e-mail da conta de teste do comprador. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/prestashop/additional-content/your-integrations/test/cards) correspondente.
