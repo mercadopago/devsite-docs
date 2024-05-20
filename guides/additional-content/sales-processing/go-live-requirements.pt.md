@@ -23,7 +23,7 @@ Embora a exigência do certificado SSL não se aplique durante o período de tes
 ----[mlb]----
 ## Chave Pix
 
-A opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
+A opção de pagamento com Pix só será exibida se houver uma Chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
 
 ------------
 

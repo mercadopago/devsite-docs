@@ -19,7 +19,7 @@ La configuración de los planes de pago se realiza en la pestaña **Planes de pa
   * Si configuras **MercadoPagoWallet**, el comprador utilizará su billetera de Mercado Pago. Este modo es exclusivo para compradores registrados en Mercado Pago o Mercado Libre y sugerimos usarlo si eliges **Plan de Pago con Tarjeta de Crédito**.
   * Si configuras **MercadoPagoOff**, puedes contar con medios de pago en efectivo. ----[mlb]----
 * **Boleto Bancário:** se refiere a transacciones con boleto bancário **exclusivamente**.
-* **Pix:** se refiere a transacciones con Pix a través de **Código QR** o **Copiar y pegar**. Para configurar este plan de pago, debes tener una clave Pix registrada en tu cuenta de Mercado Pago. Para obtener más información sobre cómo crear tu clave Pix, haz clic [aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). ------------
+* **Pix:** se refiere a transacciones con Pix a través de **Código QR** o **Copiar y pegar**. Para configurar este plan de pago, debes tener una Clave Pix registrada en tu cuenta de Mercado Pago. Para obtener más información sobre cómo crear tu Clave Pix, haz clic [aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). ------------
 
 > NOTE
 >

@@ -28,12 +28,12 @@ You can offer the option to receive payments instantly with Pix (`bank_transfer`
 
 ## Register Pix Key
 
-To start using Pix as a method of payment, you must have registered a Pix key in the seller's account, this way it will be possible to identify your account and will also allow you to use all the functionalities of the payment method in question.
+To start using Pix as a method of payment, you must have registered a Pix Key in the seller's account, this way it will be possible to identify your account and will also allow you to use all the functionalities of the payment method in question.
 
-See below how to register your Pix key:
+See below how to register your Pix Key:
 
 1. Download the Mercado Pago app on your mobile.
 2. From your account home page, click **Pix** in the upper right corner.
 3. Then click Register.
-4. Choose one or more data that will be registered as **Pix keys** and fill in the necessary information.
-5. Validate the registration of the Pix key with the security code sent by Mercado Pago. You will be able to see the status of your registered keys and manage them through the Mercado Pago app.
+4. Choose one or more data that will be registered as **Pix Keys** and fill in the necessary information.
+5. Validate the registration of the Pix Key with the security code sent by Mercado Pago. You will be able to see the status of your registered keys and manage them through the Mercado Pago app.

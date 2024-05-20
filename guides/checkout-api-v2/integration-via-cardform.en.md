@@ -489,8 +489,8 @@ installments: params[:installments].to_i,
 payment_method_id: params[:paymentMethodId],
 payer: {
 email: params[:email],
-identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-type: params[:identificationType],------------
+identification: {
+type: params[:identificationType],
 number: params[:identificationNumber]
 }
 }
@@ -528,8 +528,8 @@ Payer = new PaymentPayerRequest
 {
 Email = Request["email"],
 Identification = new IdentificationRequest
-{----[mla, mlb, mlu, mlc, mpe, mco]----
-Type = Request["identificationType"],------------
+{
+Type = Request["identificationType"],
 Number = Request["identificationNumber"],
 },
 },
@@ -561,8 +561,8 @@ payment_data = {
 "payment_method_id": request.POST.get("payment_method_id"),
 "payer": {
 "email": request.POST.get("email"),
-"identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
-"type": request.POST.get("type"), ------------
+"identification": {
+"type": request.POST.get("type"), 
 "number": request.POST.get("number")
 }
 }

@@ -7,7 +7,7 @@ Com o [Checkout Transparente](/developers/pt/docs/checkout-api/landing), todo o 
 >
 > Importante
 >
-> Para oferecer a opção de pagamento Pix, você deve ter cadastrada uma chave Pix na conta do vendedor. Este dado é único, serve para identificar sua conta e permitirá que você utilize as funcionalidades do meio de pagamento. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
+> Para oferecer a opção de pagamento Pix, você deve ter cadastrada uma Chave Pix na conta do vendedor. Este dado é único, serve para identificar sua conta e permitirá que você utilize as funcionalidades do meio de pagamento. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
 
 Para integrar o Checkout Transparente, siga os passos abaixo.
 
