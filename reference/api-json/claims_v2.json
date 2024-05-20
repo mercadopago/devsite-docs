@@ -3818,9 +3818,9 @@
           "checkout-pro"
         ],
         "description": {
-          "en": "This endpoint allows you to view, through a valid token, the 'reason' why the claim was created, so that based on its classification, certain behaviors are allowed.",
-          "pt": "Este endpoint permite visualizar, a través de un token válido, o motivo ('reason') pelo qual uma reclamação foi criada, de forma que com base na sua classificação sejam permitidos determinados comportamentos.",
-          "es": "Este endpoint permite visualizar, mediante un token válido, el motivo ('reason') por el cual se ha creado un reclamo, de manera que en base a su tipificación se permiten determinados comportamientos."
+          "en": "This endpoint allows you to view, through a valid token, the 'reason' why the claim was created, so that based on its classification, certain behaviors are allowed",
+          "pt": "Este endpoint permite visualizar, a partir de um token válido, o motivo ('reason') pelo qual uma reclamação foi criada, de forma que com base na sua classificação sejam permitidos determinados comportamentos",
+          "es": "Este endpoint permite visualizar, mediante un token válido, el motivo ('reason') por el cual se ha creado un reclamo, de manera que en base a su tipificación se permiten determinados comportamientos"
         },
         "parameters": [
           {
@@ -3849,7 +3849,7 @@
                 "title": "PDD",
                 "description": {
                   "en": "Different or defective product.",
-                  "pt": "Produto diferente ou defeituoso",
+                  "pt": "Produto diferente ou defeituoso.",
                   "es": "Producto diferente o defectuoso."
                 }
               },
@@ -3897,7 +3897,7 @@
                           "title": "PDD",
                           "description": {
                             "en": "Different or defective product.",
-                            "pt": "Produto diferente ou defeituoso",
+                            "pt": "Produto diferente ou defeituoso.",
                             "es": "Producto diferente o defectuoso."
                           }
                         },
@@ -4004,7 +4004,7 @@
                             "exemple": "fashion",
                             "description": {
                               "en": "List of groups to which 'reason' belongs.",
-                              "pt": "Lista de grupos aos quais o 'reason' pertence",
+                              "pt": "Lista de grupos aos quais o 'reason' pertence.",
                               "es": "Listado de grupos al que pertenece el 'reason'."
                             }
                           },
@@ -4144,69 +4144,69 @@
                             "type": "string",
                             "exemple": "defective",
                             "description": {
-                              "en": "Definition of the tag for triage categorization of the reason by which a complaint was created, with possible values including: 'repentant', 'defective', 'incomplete', 'different', or 'not_working'.                              ",
+                              "en": "Definition of the tag for triage categorization of the reason by which a complaint was created, with possible values including: 'repentant', 'defective', 'incomplete', 'different', or 'not_working'.",
                               "pt": "Definição da tag para categorização de triagem do motivo ('reason') pelo qual uma reclamação foi criada, podendo apresentar os seguintes valores: 'repentant', 'defective', 'incomplete', 'different' ou 'not_working'.",
                               "es": "Definición de la etiqueta para la categorización de triaje del motivo ('reason') por el cual se creó una queja, pudiendo presentar los siguientes valores:  'repentant', 'defective', 'incomplete', 'different' o 'not_working'."
                             }
                           }
-                        },
-                        "parent_id": {
-                          "type": "string",
-                          "example": "PDD9501",
-                          "description": {
-                            "en": "ID of another claim on which it depends.",
-                            "pt": "ID de outra reclamação da qual esta depende.",
-                            "es": "ID de otro reclamo del que depende."
-                          }
-                        },
-                        "children_title": {
-                          "type": "string",
-                          "example": null,
-                          "description": {
-                            "en": "Used during post-purchase classification, where the value of the title is taken for the final reasons or sub-reasons of the reason that contain a value for this attribute.",
-                            "pt": "Utilizado na hora de classificação no pós-venda, onde se pega o valor do título para as 'reason' finais ou as sub-razões de la 'reason' que contém um valor para este atributo.",
-                            "es": "Utilizado en el momento de clasificación en la pos-venta, donde se toma el valor del título para las 'reason' finales o las subrazones de la 'reason' que contienen un valor para este atributo."
-                          }
-                        },
-                        "status": {
-                          "type": "string",
-                          "example": "active",
-                          "description": {
-                            "en": "The state of the 'reason' for the complaint.",
-                            "pt": "Estado em que se encontra a 'reason' da reclamação.",
-                            "es": "Estado en el que se encuentra la 'reason' del reclamo."
-                          }
-                        },
-                        "date_created": {
-                          "type": "string",
-                          "example": "2022-01-04T17:09:50.793Z",
-                          "description": {
-                            "en": "Creation date of the claim 'reason'.",
-                            "pt": "Data de criação da 'reason' da reclamação.",
-                            "es": "Fecha de creación de la 'reason' del reclamo."
-                          }
-                        },
-                        "last_updated": {
-                          "type": "string",
-                          "example": "2022-01-04T17:09:50.793Z",
-                          "description": {
-                            "en": "Date of the last update to the claim 'reason'.",
-                            "pt": "Data da última atualização da 'reason' da reclamação.",
-                            "es": "Fecha de la última actualización de la 'reason' del reclamo."
-                          }
+                        }
+                      },
+                      "parent_id": {
+                        "type": "string",
+                        "example": "PDD9501",
+                        "description": {
+                          "en": "ID of another claim on which it depends.",
+                          "pt": "ID de outra reclamação da qual esta depende.",
+                          "es": "ID de otro reclamo del que depende."
+                        }
+                      },
+                      "children_title": {
+                        "type": "string",
+                        "example": null,
+                        "description": {
+                          "en": "Used during post-purchase classification, where the value of the title is taken for the final reasons or sub-reasons of the reason that contain a value for this attribute.",
+                          "pt": "Utilizado na hora de classificação no pós-venda, onde se pega o valor do título para as 'reason' finais ou as sub-razões de la 'reason' que contém um valor para este atributo.",
+                          "es": "Utilizado en el momento de clasificación en la pos-venta, donde se toma el valor del título para las 'reason' finales o las subrazones de la 'reason' que contienen un valor para este atributo."
+                        }
+                      },
+                      "status": {
+                        "type": "string",
+                        "example": "active",
+                        "description": {
+                          "en": "The state of the 'reason' for the complaint.",
+                          "pt": "Estado em que se encontra a 'reason' da reclamação.",
+                          "es": "Estado en el que se encuentra la 'reason' del reclamo."
+                        }
+                      },
+                      "date_created": {
+                        "type": "string",
+                        "example": "2022-01-04T17:09:50.793Z",
+                        "description": {
+                          "en": "Creation date of the claim 'reason'.",
+                          "pt": "Data de criação da 'reason' da reclamação.",
+                          "es": "Fecha de creación de la 'reason' del reclamo."
+                        }
+                      },
+                      "last_updated": {
+                        "type": "string",
+                        "example": "2022-01-04T17:09:50.793Z",
+                        "description": {
+                          "en": "Date of the last update to the claim 'reason'.",
+                          "pt": "Data da última atualização da 'reason' da reclamação.",
+                          "es": "Fecha de la última actualización de la 'reason' del reclamo."
                         }
                       }
                     }
                   }
                 }
               }
-            },
-            "title": {
-              "en": "Get the reason for the claim",
-              "pt": "Obter motivo da reclamação",
-              "es": "Obtener motivo del reclamo"
             }
           }
+        },
+        "title": {
+          "en": "Get the reason for the claim",
+          "pt": "Obter motivo da reclamação",
+          "es": "Obtener motivo del reclamo"
         }
       }
     },
