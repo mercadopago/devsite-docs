@@ -22,9 +22,9 @@ This process aims to guarantee the security of your customer's data, comply with
 Although an SSL certificate may not be required during the testing phase, it is mandatory when going live. For more information, [check the Terms and Conditions of Mercado Pago](/developers/en/guides/resources/legal/terms-and-conditions).
 
 ----[mlb]----
-# Pix key
+# Pix Key
 
-The Pix payment option will only be displayed if there is a Pix key registered in Mercado Pago. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps.
+The Pix payment option will only be displayed if there is a Pix Key registered in Mercado Pago. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps.
 
 ------------
 

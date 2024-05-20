@@ -18,7 +18,7 @@ A continuación, te ofrecemos una lista de todos los medios de pago disponibles 
 |---|---|
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
 | Financiación vía Pix en hasta 12 veces | Con esta línea de crédito administrada por Mercado Pago, el cliente tiene la opción de financiar su compra sin necesidad de una tarjeta, mientras el vendedor recibe el valor total en su cuenta. |
-| Pix | Transferencia bancaria disponible 24h al día. La opción de pagos con Pix solo será será exibida si tienes una clave Pix registrada en tu cuenta de Mercado Pago. Si todavía no la has creado, haz clic [aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y sigue el paso a paso. |
+| Pix | Transferencia bancaria disponible 24h al día. La opción de pagos con Pix solo será será exibida si tienes una Clave Pix registrada en tu cuenta de Mercado Pago. Si todavía no la has creado, haz clic [aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y sigue el paso a paso. |
 | Medios offline | Puedes ofrecer pagos por medios offline, como boleto bancário |
 
 ------------
