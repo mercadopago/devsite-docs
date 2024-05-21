@@ -55,6 +55,7 @@
                   "properties": {
                     "id": {
                       "type": "string",
+                      "example": "teste",
                       "description": {
                         "en": "Unique chargeback identifier",
                         "pt": "Identificador único do estorno",
@@ -74,6 +75,7 @@
                     },
                     "currency": {
                       "type": "string",
+                      "example": "real",
                       "description": {
                         "en": "Chergeback amount currency",
                         "pt": "Moeda do valor do estorno",

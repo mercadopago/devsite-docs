@@ -218,10 +218,10 @@ A menudo, el comprador puede cometer un error al completar sus datos en el check
 
 En caso de que optes por **crear tu front-end desde cero**, puedes encontrar consejos para hacerlo de forma eficiente [aquí](/developers/es/docs/checkout-api/best-practices/ux-best-practices/ux-for-checkouts/introduction). 
 Si un pago resultara rechazado, es importante también que expliques a tus clientes el motivo y qué medidas pueden tomar para solucionarlo. De esta forma, tendrán toda la información que necesitan para pagar sin problemas. Puedes encontrar **recomendaciones de mensajes para los principales motivos de rechazo** [aquí](/developers/es/docs/checkout-api/response-handling/collection-results).
-Si, en cambio, quieres garantizar una interfaz optimizada, puedes utilizar los **componentes visuales de [Checkout Bricks](/developers/es/docs/checkout-bricks/landing)**, así como aprovechar el componente visual ya listo con los mejores mensajes del **[Status Screen Brick](/developers/es/docs/checkout-bricks/status-screen-brick/introduction)**.
+Si, en cambio, quieres garantizar una interfaz optimizada, puedes utilizar los **componentes visuales** de [Checkout Bricks](/developers/es/docs/checkout-bricks/landing), así como aprovechar el componente visual ya listo con los mejores mensajes del [Status Screen Brick](/developers/es/docs/checkout-bricks/status-screen-brick/introduction).
 
 > WARNING
 > 
 > Importante
 >
-> Recomendamos  evaluar la [calidad de tu integración](/developers/es/docs/checkout-api/how-tos/integration-quality) antes de salir a producción para que puedas validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago que pueden mejorar tu tasa de aprobación de pagos.
+> Recomendamos  evaluar la [calidad de tu integración](/developers/es/guides/additional-content/homologator/homologator) antes de salir a producción para que puedas validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago que pueden mejorar tu tasa de aprobación de pagos.

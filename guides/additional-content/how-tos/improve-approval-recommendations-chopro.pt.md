@@ -24,13 +24,14 @@ Você pode **adicionar o código de segurança do Mercado Pago** na sua página 
 >
 > Importante
 >
->Caso não tenha um valor disponível para a seção, você pode deixá-la vazia.
+> Caso não tenha um valor disponível para a seção, você pode deixá-la vazia.
 
 ## Utilizar informações do Device ID na web
 
 Para usar o Device ID na web e evitar possíveis compras fraudulentas, é preciso seguir os passos abaixo:
 
 ### 1. Adicione o script de segurança do Mercado Pago
+
 Para implementar a geração do device ID em seu site, adicione o seguinte código na sua página de Checkout:
 
 ```html
@@ -38,6 +39,7 @@ Para implementar a geração do device ID em seu site, adicione o seguinte códi
 ```
 
 ### 2.Obtendo o Device ID
+
 Uma vez que você tenha adicionado o código de segurança do Mercado Pago em seu site, uma variável global de javascript é criada automaticamente com o nome `MP_DEVICE_SESSION_ID`, cujo valor é o Device ID.
 
 Se você preferir atribuí-lo a outra variável, indique o nome adicionando o atributo output ao script de segurança, como no exemplo a seguir:
@@ -52,6 +54,7 @@ Você também pode **criar sua própria variável**. Para isso, adicione uma tag
 ```
 
 ### 3. Utilizando o Device ID
+
 Uma vez que você tenha o valor de Device ID, é preciso que você **o envie aos nossos servidores** ao criar um pagamento. Para isso, basta acrescentar o seguinte **cabeçalho (*header*)** à requisição:
 
 ```http
@@ -215,10 +218,10 @@ Muitas vezes o comprador pode errar na hora de preencher seus dados no checkout.
 Caso opte por **criar seu front do zero**, você encontra dicas de como fazê-lo de forma eficiente [aqui](/developers/pt/docs/checkout-api/best-practices/ux-best-practices/ux-for-checkouts/introduction). 
 Se um pagamento for negado, é importante também que você explique aos seus clientes o motivo da recusa e o que eles poderão fazer para resolver o problema. Assim, seus clientes terão todas as informações necessárias para pagar sem problemas. Você encontra **recomendações de mensagens para os principais motivos de recusa** [aqui](/developers/pt/docs/checkout-api/response-handling/collection-results). 
 
-Se, em vez disso, você quiser garantir uma interface otimizada, pode utilizar os **componentes visuais de [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing)** e também aproveitar um componente visual já pronto com as melhores mensagens com o **[Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/introduction)**.
+Se, em vez disso, você quiser garantir uma interface otimizada, pode utilizar os **componentes visuais** de [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) e também aproveitar um componente visual já pronto com as melhores mensagens com o [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/introduction).
 
 > WARNING
 > 
 > Importante
 >
-> Recomendamos avaliar a [qualidade de sua integração](/developers/pt/docs/checkout-api/additional-content/integration-quality) antes de entrar em produção para verificar se você está cumprindo os padrões de qualidade e segurança do Mercado Pago que garantem uma boa taxa de aprovação de pagamentos.
+> Recomendamos avaliar a [qualidade de sua integração](/developers/pt/guides/additional-content/homologator/homologator) antes de entrar em produção para verificar se você está cumprindo os padrões de qualidade e segurança do Mercado Pago que garantem uma boa taxa de aprovação de pagamentos.
