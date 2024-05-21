@@ -19,12 +19,6 @@ Para criar contas e testar o funcionamento das integrações, siga os passos aba
 6. Autorize o uso dos seus dados pessoais conforme a ----[mlb]----[Declaração de Privacidade](https://www.mercadopago.com.br/privacidade)------------ ----[mla, mlm, mpe, mco, mlu, mlc]----[Declaração de Privacidade](https://www.mercadopago[FAKER][URL][DOMAIN]/privacidad)------------ e certifique que sua conta usa as ferramentas do Mercado Pago de acordo com os [Termos e condições](https://www.mercadopago.com.br/developers/pt/docs/resources/legal/terms-and-conditions) marcando a caixa de seleção.
 7. Clique em **Criar conta de teste**.
 
-> WARNING
->
-> Atenção
->
-> Sempre que utilizar um usuário de teste, você deve usar suas **credenciais de produção**.
-
 Pronto! A conta de teste foi criada e será exibida na tabela com as seguintes informações:
 
 * **País**: Local de origem da conta selecionado em seu cadastro.

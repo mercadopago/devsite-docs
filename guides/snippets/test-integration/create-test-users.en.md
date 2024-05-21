@@ -17,12 +17,6 @@ To create accounts and test how the integrations work, follow the steps below.
 6. Authorize the use of your personal data in accordance with the ----[mlb]----[Privacy Statement](https://www.mercadopago.com.br/privacidade)------------ ----[mla, mlm, mpe, mco, mlu, mlc]----[Privacy Statement](https://www.mercadopago[FAKER][URL][DOMAIN]/privacidad)------------ and ensure that your account uses Mercado Pago's tools in accordance with the [Terms and Conditions](https://www.mercadopago.com.br/developers/en/docs/resources/legal/terms-and-conditions) by checking the checkbox.
 7. Click on **Create test account**.
 
-> WARNING
->
-> Use of credentials
->
-> Always use the **production credentials** when working with a test user.
-
 Done! The test account has been created and will be displayed in the table with the following information:
 
 * **Country**: Origin location of the account selected in your registration.
