@@ -8,8 +8,8 @@ Para garantir a correta atribuição do MCC (Merchant Category Codes), é necess
 
 De acordo com os regulamentos das bandeiras e da ABECS (Associação Brasileira das Empresas de Cartões de Crédito e Serviços), a atribuição do MCC deve seguir a seguinte regra:
 
-1. Deve ser determinado pelo Comitê do MCC da ABECS;
-1. Deve estar incluído no CNAE Primário conforme a Tabela “de/para” (disponível no Cadastro Unificado de MCC).
+1. **Deve ser determinado pelo Comitê do MCC da ABECS;**
+1. **Deve estar incluído no CNAE Primário conforme a Tabela “de/para” (disponível no Cadastro Unificado de MCC).**
 
 A Abecs está hospedando um banco de dados que contém informações dos CNPJ que, conforme a regra exposta acima, estão corretamente vinculados ao MCC. 
 
