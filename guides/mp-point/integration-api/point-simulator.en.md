@@ -22,7 +22,7 @@ To start testing integrations and payment flows with the Point Simulator, you wi
 >
 > The Simulator will ask you for the seller test user test credentials, but you will need the production ones to access their account and settings.
 
-To generate these credentials, access [Your Integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/), select the application where you integrated Mercado Pago Point, and in the **Test Accounts** section, click on the **+ Create test account** button. You will need to complete the requested fields according to the instructions.
+To generate these credentials, access [Developer dashboard](/developers/panel/app), select the application where you integrated Mercado Pago Point, and in the **Test Accounts** section, click on the **+ Create test account** button. You will need to complete the requested fields according to the instructions.
 
 ![Create test account](/images/woocomerce/test-create-account-es.gif)
 

@@ -15,7 +15,7 @@ Purchase tests are essential to ensure that payments are being processed correct
 > 
 > Important
 >
-> The test can only be performed after the integration configuration step. To set up Checkout Pro, access [this documentation.](/developers/en/docs/shopify/integration-configuration/checkout-pro) To configure Checkout Transparente, access [this documentation.](/developers/en/docs/shopify/integration-configuration/transparent-checkout)
+> The test can only be performed after the integration configuration step. To set up Checkout Pro, access [this documentation.](/developers/en/docs/shopify/integration-configuration/checkout-pro) To configure Checkout Transparente, access [this documentation.](/developers/en/docs/shopify/integration-configuration/checkout-transparente)
 
 ------------
 Here's how to test the integration:

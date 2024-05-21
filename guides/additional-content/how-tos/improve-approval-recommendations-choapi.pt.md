@@ -222,4 +222,4 @@ Se, em vez disso, você quiser garantir uma interface otimizada, pode utilizar o
 > 
 > Importante
 >
-> Recomendamos avaliar a [qualidade de sua integração](/developers/pt/guides/additional-content/homologator/homologators) antes de entrar em produção para verificar se você está cumprindo os padrões de qualidade e segurança do Mercado Pago que garantem uma boa taxa de aprovação de pagamentos.
+> Recomendamos avaliar a [qualidade de sua integração](/developers/pt/guides/additional-content/homologator/homologator) antes de entrar em produção para verificar se você está cumprindo os padrões de qualidade e segurança do Mercado Pago que garantem uma boa taxa de aprovação de pagamentos.
