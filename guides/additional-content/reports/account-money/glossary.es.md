@@ -5,7 +5,7 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | Nombre de la columna del reporte | Qué significa | 
 |---|---|
 | Número de referencia (`EXTERNAL_REFERENCE`) |  ID que ayuda a identificar el origen de la operación. Por ejemplo, puede ser la venta a través del ID de la orden o el envío (si es una compra de carrito) o del ID propio provisto por el vendedor en caso de una integración externa.<br><br> Ten en cuenta que es posible que este campo esté vacío para algunos casos como el pago de facturas o un envío de dinero, entre otros. <br>  |
-| ID de operación en Mercado Pago (`SOURCE_ID`) | ID de operación en Mercado Pago (por ejemplo, el pago de una venta).  ----[mla, mlb]---- Este campo puede contener valores alfanuméricos ------------ |
+| ID de operación en Mercado Pago (`SOURCE_ID`) | ID de operación en Mercado Pago (por ejemplo, el pago de una venta). Este campo puede contener valores alfanuméricos. |
 | Código de la cuenta del vendedor (`USER_ID`) | Código de la cuenta del vendedor. (Cust ID). |
 | Medio de pago (`PAYMENT_METHOD`) | Consulta los [medios de pago disponibles](/developers/es/docs/sales-processing/payment-methods) según el país con el que operes en Mercado Pago. | 
 | Tipo de medio de pago (`PAYMENT_METHOD_TYPE`) | Tipo de medio de pago. Puede ser:<br><br>_credit_card_: tarjeta de crédito.<br>_debit_card_: tarjeta de débito.<br>_bank_transfer_: transferencia.<br>_atm_: cajero<br>_ticket_: efectivo<br>_available_money_: es el dinero que otros usuarios de Mercado Pago pueden usar para comprar y pagar.<br> |

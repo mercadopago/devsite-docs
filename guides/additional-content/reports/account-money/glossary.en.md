@@ -5,7 +5,7 @@ If you have any doubts about the technical terms used, check the glossary below.
 | Name on the report column | What it means |
 |---|---|
 | Reference code (`EXTERNAL_REFERENCE`) |  ID that helps identify the origin of the transaction. For example, it can be the sale through the order ID or the shipment (if it is a cart purchase) or the ID itself provided by the seller in case of an external integration. <br><br> Please note that this field might be empty in some cases such as the invoice payment, money transfer etc. <br>  |
-| Mercado Pago transaction ID (`SOURCE_ID`) | Transaction ID in Mercado Pago (e.g an order payment). ----[mla, mlb]---- This field contains alphanumeric values. ------------ |
+| Mercado Pago transaction ID (`SOURCE_ID`) | Transaction ID in Mercado Pago (e.g an order payment). This field contains alphanumeric values. |
 | Seller account code (`USER_ID`) | Seller account code. (Cust ID). |
 | Payment method (`PAYMENT_METHOD`) | Check the [available payment methods](/developers/en/docs/sales-processing/payment-methods) according to the country you operate with Mercado Pago. |
 | Payment method type (`PAYMENT_METHOD_TYPE`) | Payment method type. It can be: <br><br> *credit_card*: credit card.<br>*debit_card*: debit card.<br>*bank_transfer*: transfer.<br>*atm*: ATM. <br>*ticket*: cash.<br>*account_money*: account money. <br> |
