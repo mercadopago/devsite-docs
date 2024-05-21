@@ -8,7 +8,7 @@ Ao configurar o Checkout Transparente em lojas VTEX, você pode oferecer pagamen
 >
 > Importante
 >
-> Para oferecer o Pix como método de pagamento, você deve primeiro garantir que tenha configurado sua Chave Pix. Se ainda não o fez, siga as instruções fornecidas em [nossa documentação](https://www.mercadopago.com.br/ajuda/17843).
+> Para oferecer o Pix como método de pagamento, você deve primeiro garantir que tenha configurado sua Chave Pix. Caso ainda não tenha criado, [assista o vídeo](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
 
 ------------
 

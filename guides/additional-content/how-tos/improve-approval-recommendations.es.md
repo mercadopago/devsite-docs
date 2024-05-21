@@ -1,18 +1,12 @@
 # Recomendaciones para mejorar tu aprobación
 
+Para evitar que un pago real sea rechazado porque no cumple con las validaciones de seguridad, **es necesario incluir toda la información posible** al realizar la transacción y también prestar atención a algunos requisitos de seguridad, como nuestro **Código de seguridad** y el **device ID**.
+
 > WARNING
 > 
 > Atención
 >
-> Recomendamos  evaluar la [calidad de tu integración](/developers/es/guides/additional-content/homologator/homologator) antes de salir a producción para que puedas validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago  que pueden mejorar tu tasa de aprobación de pagos.
-
-Para evitar que un pago real sea rechazado porque no cumple con las validaciones de seguridad, **es necesario incluir toda la información posible** al realizar la transacción y también prestar atención a algunos requisitos de seguridad, como nuestro **Código de seguridad** y el **device ID**.
-
-> NOTE
->
-> Importante
->
-> Si utilizas Checkout Pro, ya cuentas con toda la seguridad para prevenir fraude.
+> Recomendamos  evaluar la [calidad de tu integración](/developers/es/docs/integration-quality) antes de salir a producción para que puedas validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago  que pueden mejorar tu tasa de aprobación de pagos.
 
 ## Detallar toda la información sobre el pago
 
