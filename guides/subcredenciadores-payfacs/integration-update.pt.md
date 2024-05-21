@@ -37,7 +37,7 @@ Para utilizar a integração de Facilitador de Pagamento, é necessário atualiz
 ```
 
 | Campo | Tipo | Descrição | Obrigatório/Opcional | Exemplo |
-|---|---|---|---|
+|---|---|---|---|---|
 | `sub_merchant_id` | Texto | Código do sub comércio. | Obrigatório | 123123 |
 | `mmc` | Texto | MCC do sub comércio conforme deliberação da Abecs e/ou CNAE primário. | Obrigatório | 5462 |
 | `country` | Texto | País em que o sub comércio está localizado. | Obrigatório | BRA |
