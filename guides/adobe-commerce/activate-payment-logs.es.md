@@ -2,7 +2,7 @@
 
 Los logs proporcionan información completa sobre las transacciones, facilitando la comprensión de los eventos ocurridos. Además, al realizar modificaciones o agregar nuevos métodos de pago, los logs ayudan a validar el correcto funcionamiento de la integración.
 
-El equipo de soporte puede solicitar el envío o la verificación de los logs para rastrear información específica cuando sea necesario. Por lo tanto, es importante mantenerlos activos. Para ello, sigue el siguiente paso a paso:
+El equipo de soporte puede solicitar el envío o la verificación de los _logs_ para rastrear información específica cuando sea necesario. Por lo tanto, es importante mantenerlos activos. Para ello, sigue el siguiente paso a paso:
 
 1. Para acceder a la página de configuración, haz clic en el menú lateral **Stores** y luego en **Configuration**:
 
