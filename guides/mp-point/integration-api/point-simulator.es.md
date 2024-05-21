@@ -71,6 +71,12 @@ Previo a acceder al Simulador, deberás terminar de configurar tu ambiente de pr
 
 ![Credenciales de prueba en el Panel del Desarrollador](/images/woocomerce/test-test-credentials-es.png)
 
+> WARNING
+>
+> Importante
+>
+> Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Tus integraciones, te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
+
 ## 3. Accede al Simulador
 
 Para acceder al Simulador, selecciona la opción que se corresponda con tu tipo de integración, y completa los campos solicitados por cada una. 

@@ -69,6 +69,12 @@ Antes de acessar o Simulador, você precisará concluir a configuração do seu 
 
 ![Credenciais de teste no Painel do desenvolvedor](/images/woocomerce/test-test-credentials.png)
 
+> WARNING
+>
+> Importante
+>
+> Se, ao fazer login com uma conta de teste ou navegar pelas seções de Suas integrações, for solicitada a autenticação por e-mail, acesse nossa documentação para saber [como validar o login em contas teste](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_login_com_usuarios_teste). 
+
 ## 3. Acessar Simulador 
 
 Para acessar o Simulador, primeiro escolha a opção que corresponda ao seu tipo de integração. Em seguida, preencha todos os campos solicitados especificamente para este tipo de integração.

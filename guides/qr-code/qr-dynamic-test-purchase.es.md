@@ -16,6 +16,12 @@ A continuación, te enseñaremos cómo simular un flujo de pago completo para C�
 4. Todavía con las credenciales del usuario de prueba vendedor, [crea una orden](/developers/es/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/put) y asígnala a la caja que creaste en el paso anterior. Asegúrate de configurar el campo `notification_url` con  la URL donde recibirás las notificaciones sobre las actualizaciones de los pagos con el tópico `merchant_order`. 
 5. Utiliza el parámetro `qr_data` obtenido en la respuesta a la creación de la orden para generar un código QR. Puedes utilizar herramientas o librerías que te ayudarán a convertir esta trama en una imagen de un código QR.
 
+> WARNING
+>
+> Importante
+>
+> Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Tus integraciones te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
+
 
 ## Realizar pago
 

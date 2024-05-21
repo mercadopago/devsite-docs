@@ -70,6 +70,12 @@ Before accessing the Simulator, you need to finish setting up your test environm
 
 ![Test credentials in Dashboard](/images/woocomerce/test-test-credentials.png)
 
+> WARNING
+>
+> Important
+>
+> If you are required to authenticate with a code sent via email while logging into a test account or trying to access some sections in Your integrations, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
+
 ## 3. Access the Simulator 
 
 To access the Simulator, select the option that corresponds to your type of integration and complete the fields requested for each one. 

@@ -15,6 +15,11 @@ A continuación, te enseñaremos cómo simular un flujo de pago completo para C�
 3. Utiliza las credenciales productivas del usuario de prueba para crear una [sucursal](/developers/es/reference/stores/_users_user_id_stores/post) y una [caja](/developers/es/reference/pos/_pos/post) siguiendo las instrucciones para configurarlas. Ten en cuenta que, al crear la caja, el campo `fixed_amount` debe ser `true`. Los links devueltos en la respuesta para el objeto `qr` son las imágenes del QR asociado a tu caja.
 4. Todavía con las credenciales del usuario de prueba vendedor, [crea una orden](/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put) y asígnala a la caja que creaste en el paso anterior. Al hacer esto, estarás asignando también esa orden al Código QR asociado a la caja. Asegúrate de configurar el campo `notification_url` con  la URL donde recibirás las notificaciones sobre las actualizaciones de los pagos con el tópico `merchant_order`. 
 
+> WARNING
+>
+> Importante
+>
+> Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Tus integraciones, te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
 
 ## Realizar pago
 
