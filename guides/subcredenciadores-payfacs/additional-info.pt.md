@@ -1,8 +1,8 @@
 # Informações adicionais para integração
 
-Abaixo, você encontrará algumas observações e boas práticas para a integração de um subcredenciador.
+Abaixo, você encontrará algumas observações e boas práticas para a integração de um Facilitador de Pagamento.
 
-## Atribuição do código da categoria do comerciante (MCC)
+## Atribuição do Merchant Code Category (MCC)
 
 Para garantir a correta atribuição do MCC (Merchant Category Codes), é necessário que, em cada transação, o Facilitador de Pagamentos atribua o MCC que melhor descreva a atividade final do seu subcomerciante.
 

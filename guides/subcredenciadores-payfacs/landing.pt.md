@@ -6,7 +6,7 @@
 
 ---
 content_section_with_media: 
- - title: Facilitadores de pagamentos (Subcredenciadores/Marketplaces)
+ - title: Facilitadores de pagamentos
  - message: Um Facilitador de Pagamento é uma entidade que fornece soluções de pagamento para clientes finais (subcomércios) comercializarem seus produtos e/ou serviços. Sendo responsável por capturar, processar e liquidar as transações diretamente aos seus subcomércios, tornando-se um credor do Adquirente.
  - media_image: /subredenciadores-payfacs/landing-sub.png
 ---

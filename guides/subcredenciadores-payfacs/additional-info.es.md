@@ -1,15 +1,16 @@
 # Información adicional para la integración
 
-A continuación, encontrarás algunas observaciones y buenas prácticas para la integración de un subacreditador.
+A continuación, encontrarás algunas observaciones y buenas prácticas para la integración de un Facilitador de Pago.
 
-## Asignación del Código de Categoría de Comerciante (MCC)
+## Asignación del Merchant Code Category (MCC)
 
-Para asegurar la correcta asignación del MCC (Merchant Category Codes) es necesario que, en cada transacción, el Facilitador de Pago asigne el MCC que mejor describa la actividad final de su subcomercio. 
+O Facilitador de Pagamento deve atribuir para cada transação o MCC que descreva mais precisamente a atividade final de seu sub comércio. 
 
-De acuerdo con los Reglamentos de las banderas y la ABECS (Associação Brasileira das Empresas de Cartões de Crédito e Serviços), la asignación del MCC debe seguir la siguiente regla:
+De acordo com orientação das bandeiras e do Normativo nº 28 da Abecs (Associação Brasileira das Empresas de Cartões de Crédito e Serviços), a atribuição do MCC deve seguir obrigatoriamente a seguinte regra de prioridade:
 
-1. Debe estar determinado por el Comité de MCC de la ABECS;
-1. Debe estar incluída en el CNAE Primario según la Tabla "de/para" (disponible en el Registro Unificado de MCC).
+1. MCC determinado pelo Comitê das Bandeiras da ABECS,
+2. MCC considerando o CNAE Primário disposto na Tabela “de/para” (disponível no Cadastro Unificado de MCC da Abecs).
+
 
 > WARNING
 >
