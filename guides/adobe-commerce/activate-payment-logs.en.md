@@ -1,4 +1,4 @@
-# How to activate payment logs
+# How to activate payment logs?
 
 Logs provide comprehensive information about transactions, making it easier to understand the events that occurred. Additionally, when making modifications or adding new payment methods, logs help validate the correct functioning of the integration.
 
@@ -10,7 +10,7 @@ The support team may request the submission or verification of logs to trace spe
 
 2. In the configuration, click on the **Sales** menu on the side. In the submenu that opens, select **Payment Methods**.
 
-![Methods](/images/adobe-commerce/logs-payment-methods-es.gif)
+![Methods](/images/adobe-commerce/logs-payment-method-es.gif)
 
 3. In "Other Payment Methods," locate the Mercado Pago plugin and click the **Configure** button to open the settings.
 

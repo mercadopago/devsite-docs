@@ -10,7 +10,7 @@ A equipe de suporte pode solicitar o envio ou verificação dos _logs_ para rast
 
 2. Nas configurações, clique no menu lateral **Vendas**. No submenu que será aberto, selecione **Forma de pagamento**:
 
-![Métodos](/images/adobe-commerce/logs-payment-methods-pt.gif)
+![Métodos](/images/adobe-commerce/logs-payment-method-pt.gif)
 
 3. Em "Outros meios de pagamento", localize o plugin do Mercado Pago e clique no botão **Configurar** para abrir as configurações:
 

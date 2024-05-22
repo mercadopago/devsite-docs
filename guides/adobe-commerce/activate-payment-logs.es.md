@@ -10,7 +10,7 @@ El equipo de soporte puede solicitar el envío o la verificación de los _logs_ 
 
 2. En la configuración, haz clic en el menú lateral **Sales**. En el submenú que se abrirá, selecciona **Payment Methods**.
 
-![Medios](/images/adobe-commerce/logs-payment-methods-es.gif)
+![Medios](/images/adobe-commerce/logs-payment-method-es.gif)
 
 3. En "Otros medios de pago", localiza el plugin de Mercado Pago y haz clic en el botón **Configure** para abrir las configuraciones.
 
