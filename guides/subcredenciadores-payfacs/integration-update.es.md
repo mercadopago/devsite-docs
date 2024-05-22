@@ -2,27 +2,27 @@
 
 Para utilizar la integración de Facilitador de Pago, es necesario actualizar la propiedad `forward_data.sub_merchant` para el envío de los campos descritos a continuación.
 
-```JavaScript
+```json
 {
-"payer": {...},
-"forward_data": {
-"sub_merchant": {
-    "sub_merchant_id": 123123,
-            "mcc": "5462",
-            "country": "BRA",
-            "address_door_number": 1,
-            "zip": "2222222",
-            "document_number": "222222222222222",
-            "city": "SÃO PAULO",
-            "address_street": "RUA A",
-	     "business_name": "LOJINHA DO ZÉ",
-            "region_code_iso": "BR-MG",
-            "region_code": "BR",
-            "document_type": "CNPJ",
-            "phone": "123123123",
-            "url": "www.nomedofacilitador.com.br"
-  	}
-  }
+  "payer": {...},
+  "forward_data": {
+    "sub_merchant": {
+      "sub_merchant_id": 123123,
+      "mcc": "5462",
+      "country": "BRA",
+      "address_door_number": 1,
+      "zip": "2222222",
+      "document_number": "222222222222222",
+      "city": "SÃO PAULO",
+      "address_street": "RUA A",
+	    "business_name": "LOJINHA DO ZÉ",
+      "region_code_iso": "BR-MG",
+      "region_code": "BR",
+      "document_type": "CNPJ",
+      "phone": "123123123",
+      "url": "www.nomedofacilitador.com.br"
+    }
+  },
   "transaction_amount": 20,
   "description": "...",
   "token": "....",
@@ -32,8 +32,8 @@ Para utilizar la integración de Facilitador de Pago, es necesario actualizar la
   "amounts": {...},
   "installments": 1,
   "pos_id": "....",
-  "external_reference": "...",
-  }
+  "external_reference": "..."
+}
 ```
 
 | Campo | Tipo | Descripción | Requerido/Opcional | Ejemplo | 123123 |
