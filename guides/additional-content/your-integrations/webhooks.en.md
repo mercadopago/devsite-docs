@@ -649,7 +649,7 @@ This indicates that payment **999999999** was created for user **44444** in prod
 | **topic** (delivery) | Type of notification received |
 | **resource** (claims) | Type of notification received, indicating notifications related to claims made by sales |
 
-4. If you want to receive notifications only from Webhook and not from IPN, you can add in the `notification_url` the parameter `source_news=webhook`. For example: https://www.yourserver.com/notifications?source_news=webhooks
+4. If you want to receive notifications only from Webhook and not from IPN, you can add in the `notification_url` the parameter `source_news=webhooks`. For example: https://www.yourserver.com/notifications?source_news=webhooks
 
 ## Actions required after receiving notification
 

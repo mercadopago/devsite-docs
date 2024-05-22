@@ -650,7 +650,7 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 | **topic** (delivery) | Tipo de notificação recebida  |
 | **resource** (claims) | Tipo de notificação recebida, indicando notificações relacionadas à reclamações feitas por vendas |
 
-4. Caso deseje receber notificações apenas de Webhook e não de IPN, você pode adicionar na `notification_url` o parâmetro `source_news=webhook`. Por exemplo: https://www.yourserver.com/notifications?source_news=webhooks
+4. Caso deseje receber notificações apenas de Webhook e não de IPN, você pode adicionar na `notification_url` o parâmetro `source_news=webhooks`. Por exemplo: https://www.yourserver.com/notifications?source_news=webhooks
 
 ## Ações necessárias após receber uma notificação
 
