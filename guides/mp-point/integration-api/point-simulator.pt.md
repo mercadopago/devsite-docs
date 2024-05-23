@@ -23,7 +23,7 @@ Para iniciar os testes de integrações e fluxos de pagamento com o Simulador Po
 >
 > Embora o Simulador peça as credenciais de teste, você precisará das credenciais produtivas para acessar a conta do vendedor e suas configurações.
 
-Para gerar essas credenciais, acesse [Suas Integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/), selecione o aplicativo no qual você integrou o Mercado Pago Point e, na seção **Contas de teste**, clique no botão **+ Criar conta de teste**. Você deverá preencher os campos solicitados de acordo com as instruções.
+Para gerar essas credenciais, acesse o [Painel do desenvolvedor](/developers/panel/app), selecione o aplicativo no qual você integrou o Mercado Pago Point e, na seção **Contas de teste**, clique no botão **+ Criar conta de teste**. Você deverá preencher os campos solicitados de acordo com as instruções.
 
 ![Criar conta](/images/woocomerce/test-create-account.gif)
 
@@ -68,6 +68,12 @@ Antes de acessar o Simulador, você precisará concluir a configuração do seu 
  4. No painel lateral esquerdo, acesse **Testes > Credenciais de teste** para obter o **Access Token de teste do seu usuário vendedor**. O Simulador vai solicitá-lo para lhe dar acesso à ferramenta e atribuir um dispositivo virtual associado à sua integração.
 
 ![Credenciais de teste no Painel do desenvolvedor](/images/woocomerce/test-test-credentials.png)
+
+> WARNING
+>
+> Importante
+>
+> Se, ao fazer login com uma conta de teste ou navegar pelas seções de Suas integrações, for solicitada a autenticação por e-mail, acesse nossa documentação para saber [como validar o login em contas teste](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_login_com_usuarios_teste). 
 
 ## 3. Acessar Simulador 
 

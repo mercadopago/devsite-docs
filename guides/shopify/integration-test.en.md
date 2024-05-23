@@ -15,7 +15,7 @@ Purchase tests are essential to ensure that payments are being processed correct
 > 
 > Important
 >
-> The test can only be performed after the integration configuration step. To set up Checkout Pro, access [this documentation.](/developers/en/docs/shopify/integration-configuration/checkout-pro) To configure Checkout Transparente, access [this documentation.](/developers/en/docs/shopify/integration-configuration/transparent-checkout)
+> The test can only be performed after the integration configuration step. To set up Checkout Pro, access [this documentation.](/developers/en/docs/shopify/integration-configuration/checkout-pro) To configure Checkout Transparente, access [this documentation.](/developers/en/docs/shopify/integration-configuration/checkout-transparente)
 
 ------------
 Here's how to test the integration:
@@ -30,6 +30,12 @@ Here's how to test the integration:
 5. In the same incognito window logged in as a seller, access the [Developer dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) and create a new application, following the detailed instructions in the [Developer dashboard documentation](/developers/en/docs/shopify/additional-content/your-integrations/dashboard).
 
 ![Login](/images/shopify/test-login-esp.gif)
+
+> WARNING
+>
+> Important
+>
+> If you are required to authenticate with a code sent via email while logging into a test account or trying to access some sections in Your integrations, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
 
 ----[mlb]----
 Now, follow the step-by-step according to the chosen checkout type to process payments:

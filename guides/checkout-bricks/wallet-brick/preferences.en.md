@@ -579,13 +579,7 @@ The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 > Note
 >
 > The crediting period is between one day and two working days, depending on the chosen payment method. Therefore, we recommend setting the expiration date at least three days apart to ensure that payment is made.
-
-Review the [credit times according to each payment method](https://www.mercadopago.com/ajuda/_265) to perform the configuration correctly.
-
-> WARNING
->
-> Important
->
+> <br><br>
 > If the payment is made after the expiration date, the amount will be refunded in the payer's Mercado Pago account.
 
 ------------
