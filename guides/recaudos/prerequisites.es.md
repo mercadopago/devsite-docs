@@ -10,9 +10,9 @@ Para poder comenzar a utilizar la herramienta de Gestión de deudas y Links masi
 
 | Dato                   | Descripción                                                                                                         | Valores posibles/Ejemplos                                                                                                    |
 |------------------------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Site                   | País donde opera el vendedor.                                                                                      | **Deudas**: MLA (Argentina), MLM (México)
+| Site                   | País donde opera el vendedor.                                                                                      | Deudas: MLA (Argentina), MLM (México) <br>
 
-**Links**: MLA (Argentina), MLB (Brasil), MCO (Colômbia), MLC (Chile), MLM (México), MPE (Peru), MLU (Uruguai)                                                                                                                       |
+Links: MLA (Argentina), MLB (Brasil), MCO (Colômbia), MLC (Chile), MLM (México), MPE (Peru), MLU (Uruguai)                                                                                                                       |
 | Usuario Mercado Pago   | El user_ID de Mercado Pago del vendedor. Se trata del número de identificación de la cuenta de Mercado Pago          |                                                                                                                         |
 | Nombre de la empresa que será visible para el pagador | Nombre del vendedor que se mostrará al pagador dentro de las opciones de pago y búsqueda.  |                                                                                                                         |
 
