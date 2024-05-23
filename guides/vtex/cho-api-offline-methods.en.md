@@ -7,7 +7,7 @@ When configuring Checkout Transparente in VTEX stores, you can offer payments wi
 > 
 > Important 
 > 
-> To offer Pix as a payment method, you must first ensure that you have configured your Pix Key. If you haven't done so yet, follow the instructions provided in [our documentation](https://www.mercadopago.com.br/ajuda/17843). 
+> To offer Pix as a payment method, you must first ensure that you have configured your Pix Key. If you haven't created it yet, watch the [video](https://www.youtube.com/watch?v=60tApKYVnkA) and see the step by step.
 ------------ 
 
 ----[mco]---- 

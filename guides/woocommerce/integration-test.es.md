@@ -24,6 +24,12 @@ A continuación, te explicamos cómo probar la integración:
 
 ![Inicio de sesión](/images/woocomerce/test-login-esp.gif)
 
+> WARNING
+>
+> Importante
+>
+> Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Tus integraciones, te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
+
 6. Accede a la aplicación creada en el paso anterior y haz clic en **Credenciales de producción** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
 
 ![Credenciales de producción](/images/woocomerce/test-prod-credentials-es.png)
@@ -47,6 +53,12 @@ A continuación, te explicamos cómo probar la integración:
 13. Haz clic en **Guardar cambios**.
 
 14. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago utilizando la cuenta de prueba del comprador creada en el paso 3.
+
+> WARNING
+>
+> Importante
+>
+> Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Tus Integraciones, te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
 
 ----[mlb]----
 15. En la misma ventana iniciada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como CPF, RG, número de teléfono y correo electrónico de la cuenta de prueba del comprador. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/woocommerce/additional-content/your-integrations/test/cards) correspondiente.

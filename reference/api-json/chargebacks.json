@@ -56,7 +56,7 @@
                     "id": {
                       "type": "string",
                       "description": {
-                        "en": "Unique chargeback identifier",
+                        "en": "Unique chargeback identifier.",
                         "pt": "Identificador único do estorno",
                         "es": "Identificador único del contracargo"
                       }
@@ -64,9 +64,9 @@
                     "payments": {
                       "type": "array",
                       "description": {
-                        "en": "List of payments IDs associated to the case",
-                        "pt": "Lista de IDs de pagamentos associados ao caso",
-                        "es": "Lista de pagos con IDs asociados al caso"
+                        "en": "List of payments IDs associated to the case.",
+                        "pt": "Lista de IDs de pagamentos associados ao caso.",
+                        "es": "Lista de pagos con IDs asociados al caso."
                       },
                       "items": {
                         "type": "number"
@@ -74,26 +74,27 @@
                     },
                     "currency": {
                       "type": "string",
+                      "example": "real",
                       "description": {
-                        "en": "Chergeback amount currency",
-                        "pt": "Moeda do valor do estorno",
-                        "es": "Moneda del monto de la contracargo"
+                        "en": "Chergeback amount currency.",
+                        "pt": "Moeda do valor do estorno.",
+                        "es": "Moneda del monto de la contracargo."
                       }
                     },
                     "amount": {
                       "type": "number",
                       "description": {
-                        "en": "Chergeback amount",
-                        "pt": "Valor do estorno",
-                        "es": "Monto de la contracargo"
+                        "en": "Chergeback amount.",
+                        "pt": "Valor do estorno.",
+                        "es": "Monto de la contracargo."
                       }
                     },
                     "coverage_applied": {
                       "type": "boolean",
                       "description": {
-                        "en": "Whether the seller has been covered or not",
-                        "pt": "Se o vendedor está coberto ou não",
-                        "es": "Si el vendedor ha sido cubierto o no"
+                        "en": "Whether the seller has been covered or not.",
+                        "pt": "Se o vendedor está coberto ou não.",
+                        "es": "Si el vendedor ha sido cubierto o no."
                       }
                     },
                     "coverage_elegible": {
@@ -107,65 +108,65 @@
                     "documentation_required": {
                       "type": "boolean",
                       "description": {
-                        "en": "Whether the seller needs to send documentation for this chargeback",
-                        "pt": "Se o vendedor precisa enviar a documentação para este estorno",
-                        "es": "Si el vendedor debe enviar la documentación para el contracargo"
+                        "en": "Whether the seller needs to send documentation for this chargeback.",
+                        "pt": "Se o vendedor precisa enviar a documentação para este estorno.",
+                        "es": "Si el vendedor debe enviar la documentación para el contracargo."
                       }
                     },
                     "documentation_status": {
                       "type": "string",
                       "description": {
-                        "en": "Detail of decision taken for the documentation",
-                        "pt": "Detalhe da decisão tomada para a documentação",
-                        "es": "Detalle de la decisión tomada por la documentación"
+                        "en": "Detail of decision taken for the documentation.",
+                        "pt": "Detalhe da decisão tomada para a documentação.",
+                        "es": "Detalle de la decisión tomada por la documentación."
                       },
                       "enum": [
                         {
                           "title": "pending",
                           "description": {
-                            "en": "No documentation has been received",
-                            "es": "No documentation has been received",
-                            "pt": "No documentation has been received"
+                            "en": "No documentation has been received.",
+                            "es": "No documentation has been received.",
+                            "pt": "No documentation has been received."
                           }
                         },
                         {
                           "title": "review_pending",
                           "description": {
-                            "en": "Documentation received, waiting for decision to be taken",
-                            "es": "Documentation received, waiting for decision to be taken",
-                            "pt": "Documentation received, waiting for decision to be taken"
+                            "en": "Documentation received, waiting for decision to be taken.",
+                            "es": "Documentation received, waiting for decision to be taken.",
+                            "pt": "Documentation received, waiting for decision to be taken."
                           }
                         },
                         {
                           "title": "valid",
                           "description": {
-                            "en": "The documentation received is valid",
-                            "es": "The documentation received is valid",
-                            "pt": "The documentation received is valid"
+                            "en": "The documentation received is valid.",
+                            "es": "The documentation received is valid.",
+                            "pt": "The documentation received is valid."
                           }
                         },
                         {
                           "title": "invalid",
                           "description": {
-                            "en": "The documentation received is invalid",
-                            "es": "The documentation received is invalid",
-                            "pt": "The documentation received is invalid"
+                            "en": "The documentation received is invalid.",
+                            "es": "The documentation received is invalid.",
+                            "pt": "The documentation received is invalid."
                           }
                         },
                         {
                           "title": "not_supplied",
                           "description": {
-                            "en": "The documentation wasn't supplied on time",
-                            "es": "The documentation wasn't supplied on time",
-                            "pt": "The documentation wasn't supplied on time"
+                            "en": "The documentation wasn't supplied on time.",
+                            "es": "The documentation wasn't supplied on time.",
+                            "pt": "The documentation wasn't supplied on time."
                           }
                         },
                         {
                           "title": "not_applicable",
                           "description": {
-                            "en": "Documentation wasn't needed for this chargeback",
-                            "es": "Documentation wasn't needed for this chargeback",
-                            "pt": "Documentation wasn't needed for this chargeback"
+                            "en": "Documentation wasn't needed for this chargeback.",
+                            "es": "Documentation wasn't needed for this chargeback.",
+                            "pt": "Documentation wasn't needed for this chargeback."
                           }
                         }
                       ]
@@ -173,9 +174,9 @@
                     "documentation": {
                       "type": "array",
                       "description": {
-                        "en": "List of documentation received from the seller",
-                        "pt": "Lista de documentação recebida do vendedor",
-                        "es": "Lista de documentación recibida del vendedor"
+                        "en": "List of documentation received from the seller.",
+                        "pt": "Lista de documentação recebida do vendedor.",
+                        "es": "Lista de documentación recibida del vendedor."
                       },
                       "items": {
                         "type": "object",
@@ -183,25 +184,25 @@
                           "type": {
                             "type": "string",
                             "description": {
-                              "en": "Documentation's file type",
-                              "pt": "Tipo de arquivo da documentação",
-                              "es": "Tipo de archivo de documentacion"
+                              "en": "Documentation's file type.",
+                              "pt": "Tipo de arquivo da documentação.",
+                              "es": "Tipo de archivo de documentacion."
                             }
                           },
                           "url": {
                             "type": "string",
                             "description": {
-                              "en": "URL to see the documentation file",
-                              "pt": "URL para ver o arquivo da documentação",
-                              "es": "URL para ver el archivo de documentación"
+                              "en": "URL to see the documentation file.",
+                              "pt": "URL para ver o arquivo da documentação.",
+                              "es": "URL para ver el archivo de documentación."
                             }
                           },
                           "description": {
                             "type": "string",
                             "description": {
-                              "en": "Documentation's description",
-                              "pt": "Descrição da documentação",
-                              "es": "Descripcion de la documentacion"
+                              "en": "Documentation's description.",
+                              "pt": "Descrição da documentação.",
+                              "es": "Descripcion de la documentacion."
                             }
                           }
                         }
@@ -211,27 +212,27 @@
                       "type": "string",
                       "format": "date",
                       "description": {
-                        "en": "Chargeback's last day to send documentation",
-                        "pt": "Último dia para o envio da documentação do estorno",
-                        "es": "Último día para el envío de documentación del contracargo"
+                        "en": "Chargeback's last day to send documentation.",
+                        "pt": "Último dia para o envio da documentação do estorno.",
+                        "es": "Último día para el envío de documentación del contracargo."
                       }
                     },
                     "date_created": {
                       "type": "string",
                       "format": "date",
                       "description": {
-                        "en": "Chargeback’s creation date",
-                        "pt": "Data de criação do Estorno",
-                        "es": "Fecha de creación del contracargo"
+                        "en": "Chargeback’s creation date.",
+                        "pt": "Data de criação do estorno.",
+                        "es": "Fecha de creación del contracargo."
                       }
                     },
                     "date_last_updated": {
                       "type": "string",
                       "format": "date",
                       "description": {
-                        "en": "Chargeback's last modified date",
-                        "pt": "Data da última modificação do estorno",
-                        "es": "Fecha de última modificación del contracargo"
+                        "en": "Chargeback's last modified date.",
+                        "pt": "Data da última modificação do estorno.",
+                        "es": "Fecha de última modificación del contracargo."
                       }
                     },
                     "live_mode": {

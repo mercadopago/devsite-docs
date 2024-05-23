@@ -16,6 +16,13 @@ Siga as etapas descritas abaixo para simular um fluxo de pagamento completo para
 4. Ainda usando as credenciais do usuário de vendedor de teste, [crie um pedido](/developers/pt/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/put) e atribua-o à caixa que você criou no passo anterior. Certifique-se de configurar o campo `notification_url` com a URL onde deseja receber notificações sobre atualizações de pagamentos utilizando o tópico `merchant_order`. 
 5. Utilize o parâmetro `qr_data` obtido na resposta à criação do pedido para gerar um código QR. Você pode utilizar ferramentas ou bibliotecas que o ajudarão a converter essa string em uma imagem de um código QR.
 
+> WARNING
+>
+> Importante
+>
+> Se, ao fazer login com uma conta de teste ou navegar pelas seções de Suas integrações, for solicitada a autenticação por e-mail, acesse nossa documentação para saber [como validar o login em contas teste](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_login_com_usuarios_teste). 
+
+
 ## Realizar pagamento 
 
 1. Baixe o aplicativo do Mercado Pago no seu dispositivo móvel, disponível para [Android](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&pcampaignid=web_share) e [iOS](https://apps.apple.com/br/app/mercado-pago-banco-digital/id925436649), instale-o e, em seguida, faça login com as **credenciais da conta de usuário de teste definida como comprador**. 

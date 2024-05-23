@@ -1,5 +1,7 @@
 # Renderização padrão
 
+Veja abaixo as informações necessárias para você configurar e renderizar o Payment Brick.
+
 > WARNING
 >
 > Importante
