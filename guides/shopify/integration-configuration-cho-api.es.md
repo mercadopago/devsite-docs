@@ -36,7 +36,7 @@ Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecem
 > Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de Shopify. Lembre-se: ao alterar a senha, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
 
 5. Clique em **Salvar credenciais**.
-6. Por fim, clique na opção **Verificar ativação** do Mercado Pago Cartões, vá para a seção de "Configurações" da Shopify e clique em **Salvar** para ativar o app e finalizar a instalação.
+6. Por fim, clique na opção **Verificar ativação** do Mercado Pago Cartões, vá para a seção de "Configurações" da Shopify e clique em **Ativar** para ativar o app e finalizar a instalação.
 
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 
@@ -63,7 +63,7 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 > Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de Shopify. Lembre-se: ao alterar a senha, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
 
 9. Clique em **Salvar credenciais**.
-10. Por fim, clique na opção **Verificar ativação** do Mercado Pago Cartões, vá para a seção de "Configurações" da Shopify e clique em **Salvar** para ativar o app e finalizar a instalação.
+10. Por fim, clique na opção **Verificar ativação** do Mercado Pago Cartões, vá para a seção de "Configurações" da Shopify e clique em **Ativar** para ativar o app e finalizar a instalação.
 
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 

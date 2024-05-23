@@ -14,4 +14,4 @@ O **Mercado Pago Antifraude Plus** é um complemento ao [Mercado Pago Cartões](
 > <br>
 > Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de Shopify. Lembre-se: ao alterar a senha, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
 
-4. Por fim, clique na opção **Verificar ativação** do Mercado Pago Antifraude Plus, vá para a seção de "Configurações" da Shopify e clique em **Salvar** para ativar o app e finalizar a instalação.
+4. Por fim, clique na opção **Verificar ativação** do Mercado Pago Antifraude Plus, vá para a seção de "Configurações" da Shopify e clique em **Ativar** para ativar o app e finalizar a instalação.
