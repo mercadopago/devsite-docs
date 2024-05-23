@@ -7,7 +7,9 @@ Para conectarse al servidor SFTP de Mercado Pago, utilice la clave privada asoci
 
 Podrá conectarse desde una terminal o desde un script ejecutado desde un cron. El comando a ejecutar es:
 
-`shell> sftp -i ${dirname}/${id_rsa_sftp_ml} ${user_seller_sftp_ml}@sftp.mercadolibre.io`
+```terminal
+shell> sftp -i ${dirname}/${id_rsa_sftp_ml} ${user_seller_sftp_ml}@sftp.mercadolibre.io
+```
 
 > NOTE
 >

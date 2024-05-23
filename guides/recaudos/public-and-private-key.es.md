@@ -4,7 +4,9 @@ La autenticación se realizará mediante la clave pública `ssh-rs`. Durante el 
 
 Para generar esta clave, ejecuta el comando en tu terminal:
 
-`ssh-keygen -t rsa -b 4096 -C`
+```
+ssh-keygen -t rsa -b 4096 -C
+```
 
 > NOTE
 >

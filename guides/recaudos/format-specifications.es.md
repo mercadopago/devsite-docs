@@ -36,7 +36,7 @@ El nombre del archivo debe seguir el siguiente modelo de nomenclatura:
 Dónde:
 - `sellerId`: Identificador de la empresa en nuestro sistema.
 - `sequential`: Número secuencial generado por la empresa.
-date: Fecha de generación del archivo en el formato AAAAMMDD.
+- `date`: Fecha de generación del archivo en el formato AAAAMMDD.
 
 > WARNING
 >
