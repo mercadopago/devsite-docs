@@ -1,30 +1,68 @@
+----[mlb]----
 # Checkout Transparente
 
-With the [Checkout Transparente](/developers/en/docs/checkout-api/landing), the entire checkout process will take place within the online store environment, without the need to redirect to an external page. In addition to allowing greater control in the customization and integration process, the checkout offers a complete structure for processing payments with the main means available on the market.
+With the [Checkout Transparente](/developers/en/docs/checkout-api/landing) (**Mercado Pago Cartões**), the entire checkout process will take place within the online store environment, without the need to redirect to an external page. In addition to allowing greater control in the customization and integration process, the checkout offers a complete structure for processing payments with the main means available on the market.
 
 > WARNING
 >
-> Attention
+> Atenção
 >
-> To integrate Checkout Transparente you must have Checkout Pro ("**Checkout Mercado Pago**") in your Shopify store. To learn how to integrate it, go to the [documentation.](/developers/en/docs/shopify/integration-configuration/checkout-pro)
+> O novo app serve apenas para pagamentos com cartões. Para realizar pagamentos com **Pix** ou **boleto bancário**, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
 
-To install Checkout Transparente in a Shopify store, follow the steps below:
+------------
+----[mlm]----
+# Checkout API
 
-1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
-2. Access the installation site of Mercado Pago’s Checkout Transparent [clicking here](https://apps.shopify.com/checkout-transparente-mp).
-3. Click on the **Add app** button. You will be redirected to an authorization screen, where the permissions you grant to Checkout Transparent's application will be displayed. To continue, click on **Install app**. 
-4. On the next screen, put your **production credentials** (`public key` and `access token`) in the fields that request it. Go to [Dashboard](https://www.mercadopago.com.ar/developers/panel/app) to get the credentials of your application and, if you have not created an application yet, check [this documentation](/developers/en/docs/shopify/additional-content/your-integrations/introduction) to learn how to create it.
-5. In the field **How do you want to operate?**, select the option "I want to test my store" to perform test transactions and ensure the smooth operation of the checkout.
-6. Then, you can **configure installments and interests** in case you want the store to offer this. To configure it, click on **Edit**.
-7. In the section **What payment methods do you want to offer?**, select the type of payment methods that the store will offer through Checkout Transparent. You can choose Mercado Pago, credit cards, boleto, or Pix.
-8. Click on **Save changes** to complete the installation.
+With the [Checkout API](/developers/en/docs/checkout-api/landing) (**Mercado Pago Cartões**), the entire checkout process will take place within the online store environment, without the need to redirect to an external page. In addition to allowing greater control in the customization and integration process, the checkout offers a complete structure for processing payments with the main means available on the market.
 
-> In case of renewing your credentials, remember to replace both the production and test credentials in your integration.
+------------
 
-![installation choapi](/images/shopify/configurar-chotransparente-pt.gif)
+Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecemos os dois modelos de instalação abaixo.
+
+## Instalação via Marketplace
+
+1. A partir do link recebido pelo setor comercial do Mercado Pago, acesse a página do app Mercado Pago Cartões no **Marketplace** e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
+2. Leia com atenção as informações sobre as permissões solicitadas e clique novamente em **Instalar**.
+3. Após aceitar as permissões solicitadas, clique em **Gerenciar conta** para incluir suas credencias e vincular a sua conta Mercado Pago à loja.
+
+> Os dados que deverão ser inseridos são as das **credencias de produção**. Para mais informações, acesse a documentação de [Credenciais](/developers/pt/guides/additional-content/your-integrations/credentials).
+
+4. Insira suas credenciais produtivas `access_token` e a `public_key` nos campos correspondentes, **tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
 
 > NOTE
 >
-> Important
+> Nota
 >
-> After installed, the Transparent Checkout can take up to 10 minutes to appear linked in the Shopify store due to the storage in the cache. If you need help to install Transparent Checkout, contact [Support.](https://www.mercadopago.com/developers/en/support)
+> Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de Shopify. Lembre-se: ao alterar a senha, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
+
+5. Clique em **Salvar credenciais**.
+6. Por fim, clique na opção **Verificar ativação** do Mercado Pago Cartões, vá para a seção de "Configurações" da Shopify e clique em **Salvar** para finalizar a instalação.
+
+Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
+
+## Instalação via painel da Shopify
+
+1. Vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
+2. No painel administrativo da loja, clique em **Configurações** no canto inferior esquerdo da página.
+3. Uma vez lá, selecione a opção **Pagamentos** no menu ao lado esquerdo da página. 
+4. Em "Provedores de pagamento", clique em **Escolher um provedor**.
+5. Na tela de "Provedores externos de pagamento", selecione a aba **Buscar por provedor** e procure pelo app "Mercado Pago Cartões".
+6. Após localizá-lo, selecione-o e clique em **Instalar**. Leia com atenção as informações sobre as permissões solicitadas e clique em **Instalar** outra vez.
+7. Após aceitar as permissões solicitadas, clique em **Gerenciar conta** para incluir suas credencias e vincular a sua conta Mercado Pago à loja.
+
+> Os dados que deverão ser inseridos são as das **credencias de produção**. Para mais informações, acesse a documentação de [Credenciais](/developers/pt/guides/additional-content/your-integrations/credentials).
+
+8. Insira suas credenciais produtivas `access_token` e a `public_key` nos campos correspondentes, **tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
+
+> NOTE
+>
+> Nota
+>
+> Uma vez inseridas, as credencias não serão mais pedidas em futuras instalações de apps do Mercado Pago para Shopify.
+> <br><br>
+> Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de Shopify. Lembre-se: ao alterar a senha, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
+
+9. Clique em **Salvar credenciais**.
+10. Por fim, clique na opção **Verificar ativação** do Mercado Pago Cartões, vá para a seção de "Configurações" da Shopify e clique em **Salvar** para finalizar a instalação.
+
+Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
