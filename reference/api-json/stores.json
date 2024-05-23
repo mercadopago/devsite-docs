@@ -251,25 +251,25 @@
                             "en": "`You are not allowed to access this resource`. Please review the `store_id` field and ensure that the information entered is correct and valid.",
                             "es": "`You are not allowed to access this resource`. Por favor, revise el campo `store_id` y asegúrese de que la información ingresada sea correcta y válida.",
                             "pt": "`You are not allowed to access this resource`. Revise o campo `store_id` e garanta que a informação inserida esteja correta e válida."
-                            },
-                          "enum": [ {
-                            "title": "Unauthorized",
-                            "description": {
-                              "en": "`Invalid access token.` Please check if the access token entered in the request is correct.",
-                              "es": "`Invalid access token.` Verifique si el access token ingresado en la solicitud es correcto.",
-                              "pt": "`Invalid access token`. Verifique se o Access Token inserido na requisição está correto."
-
+                          },
+                          "enum": [
+                            {
+                              "title": "Unauthorized",
+                              "description": {
+                                "en": "`Invalid access token.` Please check if the access token entered in the request is correct.",
+                                "es": "`Invalid access token.` Verifique si el access token ingresado en la solicitud es correcto.",
+                                "pt": "`Invalid access token`. Verifique se o Access Token inserido na requisição está correto."
+                              }
                             }
-                          }
                           ]
-                          }
-                        ]
-                      }
+                        }
+                      ]
                     }
                   }
                 }
               }
-            },
+            }
+          },
           "404": {
             "description": {
               "en": "Error",
@@ -1226,6 +1226,64 @@
                 }
               }
             }
+          },
+          "403": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "Forbidden",
+                          "description": {
+                            "en": "`You don't have permission to access the URL on this server.` If you receive this message, check the user_id field and ensure it is correct and numeric only.",
+                            "es": "`You don't have permission to access the URL on this server.` Si recibe este mensaje, verifique el campo user_id y asegúrese de que sea correcto y solo numérico.",
+                            "pt": "`You don't have permission to access the URL on this server`. Caso receba esta mensagem, verifique o campo user_id e garanta que ele esteja correto e seja somente numérico."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "store_not_found",
+                          "description": {
+                            "en": "Store not found. Check if the search parameter used to locate the store is valid and make a new request.",
+                            "es": "Store not found. Verifique si el parámetro de búsqueda utilizado para localizar la tienda es válido y haga una nueva solicitud.",
+                            "pt": "`Store not found`. Verifique se o parâmetro de busca utilizado para localizar a loja é válido e faça uma nova requisição."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
           }
         },
         "title": {
@@ -1242,37 +1300,37 @@
           "mp-point"
         ],
         "description": {
-          "en": "Renew the data of a physical shop. Indicate the ID of the seller and the store and send the parameters with the information you want to update",
-          "pt": "Renovar os dados de um estabelecimento físico. Indicar a identificação do vendedor e da filial e enviar os parâmetros com as informações que você deseja atualizar",
-          "es": "Renueva los datos de una tienda física. Indica el ID del vendedor y de la sucursal y envía los parámetros con la información que quieras actualizar"
+          "en": "This endpoint allows for updating the data of a physical store. To use it, you must provide the seller's identification and the branch identification, along with the parameters containing the information you wish to update. You will receive a 200 response as a result of a successful request",
+          "pt": "Este endpoint permite a atualização dos dados de um estabelecimento físico. Para utilizá-lo, é necessário fornecer a identificação do vendedor e da filial, além de enviar os parâmetros com as informações a serem atualizadas. Você receberá uma resposta 200 como resultado de uma requisição bem sucedida",
+          "es": "Este endpoint permite actualizar los datos de una tienda física. Para utilizarlo, debe proporcionar la identificación del vendedor y de la sucursal, junto con los parámetros que contienen la información que desea actualizar. Recibirá una respuesta 200 como resultado de una solicitud exitosa"
         },
         "parameters": [
           {
             "name": "user_id",
             "in": "path",
             "description": {
-              "en": "User Id",
-              "pt": "User Id",
-              "es": "User Id"
+              "en": "The user_id corresponds to the collector_id. It refers to the user_id of the Mercado Pago account that receives the money from sales, that is, the account responsible for collecting the funds.",
+              "pt": "O user_id corresponde ao collector_id. Trata-se do user_id da conta do Mercado Pago que recebe o dinheiro das vendas, ou seja, a conta responsável pela arrecadação dos valores.",
+              "es": "El user_id corresponde al collector_id. Se trata del user_id de la cuenta de Mercado Pago que recibe el dinero de las ventas, es decir, la cuenta encargada de recaudar los fondos."
             },
             "required": true,
             "schema": {
               "type": "string",
-              "example": "12123adfasdf123u4u"
+              "example": "446566691"
             }
           },
           {
             "name": "id",
             "in": "path",
             "description": {
-              "en": "Store's Id",
-              "pt": "Store's Id",
-              "es": "Store's Id"
+              "es": "ID de creación de la tienda. Al registrar una tienda, recibirás un ID correspondiente. Este ID se puede utilizar para diversas operaciones, incluida la actualización de datos de la tienda.",
+              "pt": "ID de criação da loja. Ao registrar uma loja, você receberá um ID correspondente. Esse ID pode ser utilizado para várias operações, incluindo a atualização de dados da loja.",
+              "en": "Store creation ID. Upon registering a store, you will receive a corresponding ID. This ID can be used for various operations, including updating the store's data."
             },
             "required": true,
             "schema": {
               "type": "string",
-              "example": "12123adfasdf123u4u"
+              "example": "1234567"
             }
           }
         ],
@@ -1293,9 +1351,9 @@
                   },
                   "business_hours": {
                     "description": {
-                      "es": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.",
-                      "pt": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.",
-                      "en": "Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed."
+                      "es": "Horario comercial. Se divide por día de la semana y se permiten hasta cuatro horarios de apertura y cierre por día.",
+                      "pt": "Horário comercial. Eles são divididos por dia da semana e são permitidos até quatro horários de abertura e fechamento por dia.",
+                      "en": "Business hours. They are divided by day of the week and up to four opening and closing times per day are allowed."
                     },
                     "type": "object",
                     "properties": {
@@ -1308,26 +1366,26 @@
                               "type": "string",
                               "example": "08:00",
                               "description": {
-                                "es": "open",
-                                "pt": "open",
-                                "en": "open"
+                                "es": "Horario de apertura de la tienda los lunes previamente definido en el request, por ejemplo, 08:00.",
+                                "pt": "Horário de abertura da loja às segundas-feiras previamente definido no request, por exemplo, 08:00.",
+                                "en": "Store opening time on mondays previously defined in the request, for example, 08:00."
                               }
                             },
                             "close": {
                               "type": "string",
                               "example": "12:00",
                               "description": {
-                                "es": "close",
-                                "pt": "close",
-                                "en": "close"
+                                "es": "Horario de cierre de la tienda los lunes previamente definido en el request, por ejemplo, a las 12:00.",
+                                "pt": "Horário de fechamento da loja às segundas-feiras previamente definido na requisição, por exemplo, às 12:00.",
+                                "en": "Store closing time on mondays previously defined in the request, for example, at 12:00."
                               }
                             }
                           }
                         },
                         "description": {
-                          "es": "monday",
-                          "pt": "monday",
-                          "en": "monday"
+                          "es": "Lunes",
+                          "pt": "Segunda-feira",
+                          "en": "Monday"
                         }
                       },
                       "tuesday": {
@@ -1339,26 +1397,26 @@
                               "type": "string",
                               "example": "09:00",
                               "description": {
-                                "es": "open",
-                                "pt": "open",
-                                "en": "open"
+                                "es": "Horario de apertura de la tienda los martes previamente definido en el request, por ejemplo, 09:00.",
+                                "pt": "Horário de abertura da loja às terças-feiras previsamente definido no request, por exemplo, 09:00.",
+                                "en": "Store opening time on Tuesdays previously defined in the request for example, 09:00."
                               }
                             },
                             "close": {
                               "type": "string",
                               "example": "18:00",
                               "description": {
-                                "es": "close",
-                                "pt": "close",
-                                "en": "close"
+                                "es": "Horario de cierre de la tienda los martes previamente definido en el request, por ejemplo, a las 18:00.",
+                                "pt": "Horário de encerramento da loja às terças-feiras previamente definido no request, por exemplo, 18:00.",
+                                "en": "Store closing time on Tuesdays previously defined in the request, for example, at 18:00."
                               }
                             }
                           }
                         },
                         "description": {
-                          "es": "tuesday",
-                          "pt": "tuesday",
-                          "en": "tuesday"
+                          "es": "Martes",
+                          "pt": "Terça-feira",
+                          "en": "Tuesday"
                         }
                       }
                     }
@@ -1366,9 +1424,9 @@
                   "external_id": {
                     "type": "string",
                     "description": {
-                      "en": "Unique identifier of the store defined by integrator system.",
-                      "pt": "Identificador único da loja definido pelo sistema integrador",
-                      "es": "Identificador único de la Sucursal definido por el integrador"
+                      "en": "The unique store identifier, set by the integrated system and can contain up to 60 characters.",
+                      "pt": "Identificador único da loja, definido pelo sistema integrador e pode conter até 60 caracteres.",
+                      "es": "El identificador único de la tienda, establecido por el sistema integrador y puede contener hasta 60 caracteres."
                     },
                     "example": "SUC002"
                   },
@@ -1384,8 +1442,8 @@
                         "type": "string",
                         "description": {
                           "en": "Street number.",
-                          "pt": "O Número",
-                          "es": "Número"
+                          "pt": "Número da rua",
+                          "es": "Número de la calle"
                         },
                         "example": "3040"
                       },
@@ -1393,28 +1451,28 @@
                         "type": "string",
                         "description": {
                           "en": "Street name.",
-                          "pt": "Rua",
-                          "es": "Calle"
+                          "pt": "Nome da rua.",
+                          "es": "Nombre de la calle."
                         },
-                        "example": "Caseros"
+                        "example": "Example Street Name."
                       },
                       "city_name": {
                         "type": "string",
                         "description": {
                           "en": "City.",
-                          "pt": "Cidade",
-                          "es": "Ciudad"
+                          "pt": "Cidade.",
+                          "es": "Ciudad."
                         },
-                        "example": "Belgrano"
+                        "example": "Buenos Aires"
                       },
                       "state_name": {
                         "type": "string",
                         "description": {
                           "en": "State.",
-                          "pt": "Província",
-                          "es": "Provincia"
+                          "pt": "Estado.",
+                          "es": "Provincia."
                         },
-                        "example": "Capital Federal"
+                        "example": "Buenos Aires."
                       },
                       "latitude": {
                         "type": "number",
@@ -1437,11 +1495,11 @@
                       "reference": {
                         "type": "string",
                         "description": {
-                          "en": "Reference.",
-                          "pt": "Referência",
-                          "es": "Referencia"
+                          "en": "Landmark of the provided address. For example: Near Mercado Pago.",
+                          "pt": "Ponto de referência do endereço informado. Por exemplo: Próximo ao Mercado Pago.",
+                          "es": "Punto de referencia de la dirección proporcionada. Por ejemplo: Cerca del Mercado Pago."
                         },
-                        "example": "3er Piso"
+                        "example": "Near to Mercado Pago"
                       }
                     }
                   }
@@ -1453,9 +1511,9 @@
         "responses": {
           "200": {
             "description": {
-              "es": "success",
-              "pt": "success",
-              "en": "success"
+              "es": "Éxito",
+              "pt": "Sucesso",
+              "en": "Success"
             },
             "content": {
               "application/json": {
@@ -1466,23 +1524,28 @@
                       "type": "string",
                       "example": 1234567,
                       "description": {
-                        "es": "id",
-                        "pt": "id",
-                        "en": "id"
+                        "es": "ID de creación de la tienda. Al registrar una tienda, recibirás un ID correspondiente. Este ID se puede utilizar para diversas operaciones, incluida la actualización de datos de la tienda.",
+                        "pt": "ID de criação da loja. Ao registrar uma loja, você receberá um ID correspondente. Esse ID pode ser utilizado para várias operações, incluindo a atualização de dados da loja.",
+                        "en": "Store creation ID. Upon registering a store, you will receive a corresponding ID. This ID can be used for various operations, including updating the store's data."
                       }
                     },
                     "name": {
                       "type": "string",
-                      "example": "Sucursal Instore 2",
+                      "example": "Store name",
                       "description": {
-                        "es": "name",
-                        "pt": "name",
-                        "en": "name"
+                        "es": "Nombre de la sucursal.",
+                        "pt": "Nome da loja.",
+                        "en": "Store's name."
                       }
                     },
                     "date_creation": {
                       "type": "string",
-                      "example": "2021-03-16T20:27:26.732Z"
+                      "example": "2024-08-08T19:29:45.019Z",
+                      "description": {
+                        "es": "Fecha de creación de la tienda. Este campo muestra la fecha y hora en el formato ISO 8601, como 2024-08-08T19:29:45.019Z.",
+                        "pt": "Data de criação da loja. Este campo exibe a data e hora no formato ISO 8601, como 2024-08-08T19:29:45.019Z.",
+                        "en": "Store creation date. This field displays the date and time in ISO 8601 format, such as 2024-08-08T19:29:45.019Z."
+                      }
                     },
                     "business_hours": {
                       "type": "object",
@@ -1496,33 +1559,33 @@
                                 "type": "string",
                                 "example": "08:00",
                                 "description": {
-                                  "es": "open",
-                                  "pt": "open",
-                                  "en": "open"
+                                  "es": "Horario de apertura de la tienda los lunes previamente definido en el request, por ejemplo, 08:00.",
+                                  "pt": "Horário de abertura da loja às segundas-feiras previamente definido no request, por exemplo, 08:00.",
+                                  "en": "Store opening time on mondays previously defined in the request, for example, 08:00."
                                 }
                               },
                               "close": {
                                 "type": "string",
                                 "example": "12:00",
                                 "description": {
-                                  "es": "close",
-                                  "pt": "close",
-                                  "en": "close"
+                                  "es": "Horario de cierre de la tienda los lunes previamente definido en el request, por ejemplo, a las 12:00.",
+                                  "pt": "Horário de fechamento da loja às segundas-feiras previamente definido na requisição, por exemplo, às 12:00.",
+                                  "en": "Store closing time on mondays previously defined in the request, for example, at 12:00."
                                 }
                               }
                             }
                           },
                           "description": {
-                            "es": "monday",
-                            "pt": "monday",
-                            "en": "monday"
+                            "es": "Lunes",
+                            "pt": "Segunda-feira",
+                            "en": "Monday"
                           }
                         }
                       },
                       "description": {
-                        "es": "business_hours",
-                        "pt": "business_hours",
-                        "en": "business_hours"
+                        "es": "Horario comercial. Se divide por día de la semana y se permiten hasta cuatro horarios de apertura y cierre por día.",
+                        "pt": "Horário comercial. Eles são divididos por dia da semana e são permitidos até quatro horários de abertura e fechamento por dia.",
+                        "en": "Business hours. They are divided by day of the week and up to four opening and closing times per day are allowed."
                       }
                     },
                     "location": {
@@ -1530,63 +1593,63 @@
                       "properties": {
                         "address_line": {
                           "type": "string",
-                          "example": "Caseros 3040, Belgrano, Capital Federal, Argentina",
+                          "example": "Example Street Name, 3039, Buenos Aires, Buenos Aires.",
                           "description": {
-                            "es": "address_line",
-                            "pt": "address_line",
-                            "en": "address_line"
+                            "es": "Campo que devuelve la dirección completa de la tienda creada.",
+                            "pt": "Campo que retorna o endereço completo da loja criada.",
+                            "en": "Field that returns the complete address of the created store."
                           }
                         },
                         "latitude": {
                           "type": "number",
                           "example": -32.8897322,
                           "description": {
-                            "es": "latitude",
-                            "pt": "latitude",
-                            "en": "latitude"
+                            "es": "Latitude.",
+                            "pt": "Latitude.",
+                            "en": "Latitude."
                           }
                         },
                         "longitude": {
                           "type": "number",
                           "example": -68.8443275,
                           "description": {
-                            "es": "longitude",
-                            "pt": "longitude",
-                            "en": "longitude"
+                            "es": "Longitude.",
+                            "pt": "Longitude.",
+                            "en": "Longitude."
                           }
                         },
                         "reference": {
                           "type": "string",
-                          "example": "3er Piso",
+                          "example": "Near to Mercado Pago",
                           "description": {
-                            "es": "reference",
-                            "pt": "reference",
-                            "en": "reference"
+                            "es": "Punto de referencia de la dirección proporcionada.",
+                            "pt": "Ponto de referência do endereço informado.",
+                            "en": "Landmark of the provided address."
                           }
                         }
                       },
                       "description": {
-                        "es": "location",
-                        "pt": "location",
-                        "en": "location"
+                        "en": "Store location.",
+                        "pt": "Localização da Loja",
+                        "es": "Ubicación de la Sucursal"
                       }
                     },
                     "external_id": {
                       "type": "string",
                       "example": "SUC002",
                       "description": {
-                        "es": "external_id",
-                        "pt": "external_id",
-                        "en": "external_id"
+                        "en": "The unique store identifier, set by the integrated system and can contain up to 60 characters.",
+                        "pt": "Identificador único da loja, definido pelo sistema integrador e pode conter até 60 caracteres.",
+                        "es": "El identificador único de la tienda, establecido por el sistema integrador y puede contener hasta 60 caracteres."
                       }
                     },
                     "date_created": {
                       "type": "string",
                       "example": "2019-08-08T19:29:45.019Z",
                       "description": {
-                        "es": "date_created",
-                        "pt": "date_created",
-                        "en": "date_created"
+                        "es": "Fecha de creación de la tienda: este campo muestra la fecha y hora en el formato ISO 8601, como 2024-08-08T19:29:45.019Z.",
+                        "pt": "Data de criação da loja: este campo exibe a data e hora no formato ISO 8601, como 2024-08-08T19:29:45.019Z.",
+                        "en": "Store creation date: this field displays the date and time in ISO 8601 format, such as 2024-08-08T19:29:45.019Z."
                       }
                     }
                   }
@@ -1609,123 +1672,188 @@
                       "type": "string",
                       "enum": [
                         {
+                          "title": "bad_request",
+                          "description": {
+                            "en": "Field description too long. If you receive this error, check the external_id parameter and ensure it does not exceed the maximum limit of 60 characters.",
+                            "es": "Field description too long. Si recibe este error, verifique el parámetro external_id y asegúrese de que no exceda el límite máximo de 60 caracteres.",
+                            "pt": "`Field description too long. Ao receber esse erro, verifique o parâmetro `external_id` e garanta que ele não exceda o limite máximo de 60 caracteres."
+                          },
+                          "enum": [
+                            {
+                              "title": "bad_request",
+                              "description": {
+                                "en": "`Store coordinates (latitude xxx and longitude xxxx) are invalid`. This error is displayed when invalid coordinates are entered in the latitude and longitude parameters. The 'x' will be replaced by the erroneously added values. Check the longitude and latitude parameters, correct the information, and make a new request.",
+                                "es": "`Store coordinates (latitude xxx and longitude xxxx) are invalid`. Este error se muestra cuando se ingresan coordenadas inválidas en los parámetros de latitud y longitud. Las 'x' serán reemplazadas por los valores agregados erróneamente. Verifique los parámetros de longitud y latitud, corrija la información y haga una nueva solicitud.",
+                                "pt": "`Store coordinates (latitude xxx and longitude xxxx) are invalid`. Este erro é exibido quando coordenadas inválidas são inseridas nos parâmetros de latitude e longitude. Os 'x' serão substituídos pelos valores erroneamente adicionados. Verifique os parâmetros de longitude e latitude, corrija as informações e faça uma nova requisição."
+                              }
+                            },
+                            {
+                              "title": "bad_request",
+                              "description": {
+                                "en": "external id 'xxx' is already assigned to this user 1234567. This error is displayed when an external_id that already belongs to another store is entered in the respective field. If you receive this message, check the external_id parameter and ensure it is unique. The characters 'xxx' will be replaced by the erroneously entered information.",
+                                "es": "external id 'xxx' is already assigned to this user 1234567. Este error se muestra cuando se ingresa un external_id que ya pertenece a otra tienda en su campo correspondiente. Si recibe este mensaje, verifique el parámetro external_id y asegúrese de que sea único. Los caracteres 'xxx' serán reemplazados por la información ingresada.",
+                                "pt": "`external id 'xxx' is already assigned to this user 1234567. Este erro é exibido quando um `external_id` que já pertence a outra loja, é inserido no seu respectivo campo. Caso receba este retorno, verifique o parâmetro `external_id` e garanta que o mesmo seja único. Os caracteres 'xxx' serão substituídos pela informação inserida erroneamente."
+                              }
+                            }
+                          ]
+                        },
+                        {
                           "title": "INVALID_USER_ID",
                           "description": {
-                            "en": "USER_ID must be number.",
-                            "es": "USER_ID must be number.",
-                            "pt": "USER_ID must be number."
+                            "en": "user_id must be number.",
+                            "es": "user_id debe ser un número.",
+                            "pt": "user_id deve ser um número."
                           }
                         },
                         {
                           "title": "UNKNOWN_FIELD",
                           "description": {
                             "en": "Unknown field.",
-                            "es": "Unknown field.",
-                            "pt": "Unknown field."
+                            "es": "Campo desconocido.",
+                            "pt": "Campo desconhecido."
                           }
                         },
                         {
                           "title": "INVALID_STORE_ID",
                           "description": {
-                            "en": "Invaliud store_id.",
-                            "es": "Invaliud store_id.",
-                            "pt": "Invaliud store_id."
+                            "en": "Invalid store_id.",
+                            "es": "store_id inválido",
+                            "pt": "store_id inválido"
                           }
                         },
                         {
                           "title": "INVALID_NAME",
                           "description": {
-                            "en": "NAME must be string.",
-                            "es": "NAME must be string.",
-                            "pt": "NAME must be string."
+                            "en": "The `name` field must be string.",
+                            "es": "El campo `name` debe ser una string.",
+                            "pt": "O campo `name` deve ser uma string."
                           }
                         },
                         {
                           "title": "INVALID_BUSINESS_HOURS",
                           "description": {
-                            "en": "BUSINESS_HOURS must be json_object.",
-                            "es": "BUSINESS_HOURS must be json_object.",
-                            "pt": "BUSINESS_HOURS must be json_object."
+                            "en": "The `business_hours` field must be a json_object.",
+                            "es": "El campo `business_hours` debe ser un json_object.",
+                            "pt": "O campo `business_hours` deve ser um json_object."
                           }
                         },
                         {
                           "title": "INVALID_DAY",
                           "description": {
-                            "en": "Day must be json_array.",
-                            "es": "Day must be json_array.",
-                            "pt": "Day must be json_array."
+                            "en": "The `day` field must be a json_array.",
+                            "es": "El campo `day` debe ser un json_array.",
+                            "pt": "O campo `day` deve ser um json_array."
                           }
                         },
                         {
                           "title": "INVALID_LOCATION",
                           "description": {
-                            "en": "LOCATION must be json_object.",
-                            "es": "LOCATION must be json_object.",
-                            "pt": "LOCATION must be json_object."
+                            "en": "The `location` field must be json_object.",
+                            "es": "El campo `location` debe ser un json_object.",
+                            "pt": "O campo `location` deve ser um json_object."
                           }
                         },
                         {
                           "title": "INVALID_STREET_NAME",
                           "description": {
-                            "en": "STREET_NAME must be string.",
-                            "es": "STREET_NAME must be string.",
-                            "pt": "STREET_NAME must be string."
+                            "en": "The `street_name` field must be string.",
+                            "es": "El campo `street_name` debe ser una string.",
+                            "pt": "O campo `stret_name` deve ser uma string."
                           }
                         },
                         {
                           "title": "INVALID_STREET_NUMBER",
                           "description": {
-                            "en": "STREET_NUMBER must be string.",
-                            "es": "STREET_NUMBER must be string.",
-                            "pt": "STREET_NUMBER must be string."
-                          }
-                        },
-                        {
-                          "title": "INVALID_ZIP_CODE",
-                          "description": {
-                            "en": "ZIP_CODE must be string.",
-                            "es": "ZIP_CODE must be string.",
-                            "pt": "ZIP_CODE must be string."
+                            "en": "The `street_number` field must be string.",
+                            "es": "El campo `street_number` debe ser una string.",
+                            "pt": "O campo `street_number` deve ser uma string."
                           }
                         },
                         {
                           "title": "INVALID_CITY_NAME",
                           "description": {
-                            "en": "CITY_NAME must be string.",
-                            "es": "CITY_NAME must be string.",
-                            "pt": "CITY_NAME must be string."
+                            "en": "The `city_name` field must be a string.",
+                            "es": "El campo `city_name` debe ser una string.",
+                            "pt": "O campo `city_name` deve ser uma string."
                           }
                         },
                         {
                           "title": "INVALID_STATE_NAME",
                           "description": {
-                            "en": "STATE_NAME must be string.",
-                            "es": "STATE_NAME must be string.",
-                            "pt": "STATE_NAME must be string."
-                          }
-                        },
-                        {
-                          "title": "INVALID_LATITUDE",
-                          "description": {
-                            "en": "LATITUDE must be number.",
-                            "es": "LATITUDE must be number.",
-                            "pt": "LATITUDE must be number."
-                          }
-                        },
-                        {
-                          "title": "INVALID_LONGITUDE",
-                          "description": {
-                            "en": "LONGITUDE must be number.",
-                            "es": "LONGITUDE must be number.",
-                            "pt": "LONGITUDE must be number."
+                            "en": "The `state_name` field must be a string.",
+                            "es": "El campo `state_name` debe ser una string.",
+                            "pt": "O campo `state_name` deve ser uma string."
                           }
                         },
                         {
                           "title": "INVALID_REFERENCE",
                           "description": {
-                            "en": "REFERENCE must be string.",
-                            "es": "REFERENCE must be string.",
-                            "pt": "REFERENCE must be string."
+                            "en": "The `reference` field must be a string.",
+                            "es": "El campo `reference` debe ser una string.",
+                            "pt": "O campo `reference` deve ser uma string."
+                          }
+                        },
+                        {
+                          "title": "validation_error",
+                          "description": {
+                            "en": "`Monday exceeds the maximum length of 4 for Opening Hours`. Review the `opening_hours` field and ensure it does not exceed the maximum limit of 4 schedules. The day of the week returned in the code will vary according to the day that is exceeding the allowed number of schedules.",
+                            "pt": "`Monday exceeds the maximum length of 4 for Opening Hours`. Revise o campo `opening_hours` e garanta não exceder o limite máximo de 4 horários. O dia da semana retornado no código irá variar de acordo com o dia que está excedendo a quantidade de horários permitida.",
+                            "es": "`Monday exceeds the maximum length of 4 for Opening Hours`. Revise el campo `opening_hours` y asegúrese de no exceder el límite máximo de 4 horarios. El día de la semana que se devuelve en el código variará según el día que esté excediendo la cantidad permitida de horarios."
+                          },
+                          "enum": [
+                            {
+                              "title": "validation_error",
+                              "description": {
+                                "en": "`Monday has overlapping hours`. This error occurs when days and times that overlap are entered. The day of the week will return according to the days when the times are overlapping. Review the opening hours and ensure that none overlap.",
+                                "pt": "`Monday has overlapping hours`. Este erro ocorre quando se insere dias e horários que se sobrepõem. O dia da semana retornará de acordo com os dias em que os horários estão sobrepostos. Revise os horários de abertura e garanta que nenhum se sobreponha.",
+                                "es": "`Monday has overlapping hours`. Este error ocurre cuando se introducen días y horarios que se solapan. El día de la semana se devolverá de acuerdo con los días en los que los horarios están solapados. Revise los horarios de apertura y asegúrese de que ninguno se solape."
+                              }
+                            },
+                            {
+                              "title": "validation_error",
+                              "description": {
+                                "en": "`Closing hours must be greater than opening hours`. Review the `business_hours` parameter and ensure that the opening and closing time attributes are correct.",
+                                "es": "`Closing hours must be greater than opening hours`. Revise el parámetro `business_hours` y asegúrese de que los atributos de horarios de apertura y cierre estén correctos.",
+                                "pt": "`Closing hours must be greater than opening hours`. Revise o parâmetro `business_hours` e garanta que os atributos de horários de abertura e encerramento estejam corretos."
+                              }
+                            },
+                            {
+                              "title": "validation_error",
+                              "description": {
+                                "en": "`Monday can't be empty`. This error is displayed whenever a day of the week is submitted empty. The specific day will vary depending on the missing information. Review the business_hours parameters and ensure that all specified days have established hours.",
+                                "es": "`Monday can't be empty`. Este error se muestra siempre que un día de la semana se envía vacío. El día específico variará según la información que falte. Revise los parámetros de business_hours y asegúrese de que todos los días especificados tengan horarios establecidos.",
+                                "pt": "`Monday can't be empty`. Este erro é exibido sempre que um dia da semana é enviado vazio. O dia irá variar de acordo com a informação que ficou faltando. Revise os parâmetros de business_hours e garanta que os dias definidos tenham horários estabelecidos."
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "Forbidden",
+                          "description": {
+                            "en": "You don't have permission to access the URL on this server. If you receive this error, check if the store_id used is correct and make a new request.",
+                            "es": "You don't have permission to access the URL on this server. Si recibe este error, verifique si el store_id utilizado es correcto y haga una nueva solicitud.",
+                            "pt": "`You don't have permission to access the URL on this server.` Caso receba esse erro, verifique se o store_id utilizado está correto e faça uma nova requisição."
                           }
                         }
                       ]
