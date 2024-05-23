@@ -3,14 +3,15 @@
 Al procesar un archivo nuevo, se realiza una validación de la estructura y el contenido de la información. La frecuencia para realizar cargas depende totalmente de su lógica de negocio, ya que la gestión de las facturas depende de procesos externos a Mercado Pago, como la generación de nuevas facturas.
 
 ## Flujo funcional
+
 A continuación, se detalla el funcionamiento del producto:
 
-1. El usuario genera y carga un archivo conteniendo la información a procesar, respetando el formato correcto para el archivo de carga. Para más información, consulta la [documentación sobre las especificaciones de formato](). 
+1. El usuario genera y carga un archivo conteniendo la información a procesar, respetando el formato correcto para el archivo de carga. Para más información, consulta la [documentación sobre las especificaciones de formato](/developers/es/docs/links-and-debts/format-specifications). 
 | Domain               | Directory          |
 |----------------------|--------------------|
 | sftp.mercadolibre.io| `Self-Service-Input`|
 
-2. El sistema procesa el archivo y realiza validaciones de formato y el contenido de la información (para obtener más detalles, consulta la sección de [Validaciones]()). Luego, retorna un archivo con los resultados de estas validaciones. Si se detectan errores, el archivo de resultados indica la fila y la naturaleza del error.
+2. El sistema procesa el archivo y realiza validaciones de formato y el contenido de la información (para obtener más detalles, consulta la sección de [Validaciones](/developers/es/docs/links-and-debts/validations)). Luego, retorna un archivo con los resultados de estas validaciones. Si se detectan errores, el archivo de resultados indica la fila y la naturaleza del error.
 | Domain               | Directory          |
 |----------------------|--------------------|
 | sftp.mercadolibre.io| `Self-Service-Input`|

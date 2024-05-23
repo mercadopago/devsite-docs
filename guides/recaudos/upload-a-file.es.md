@@ -1,6 +1,6 @@
 # Cargar un archivo
 
-Utilizando la terminal, puedes cargar un archivo vía [Consola SFTP]() o [SFTP batch scripting](). Consola SFTP es adecuada para uso manual, pero no para automatizaciones. Para automatizaciones, utiliza SFTP batch scripting, que requiere la creación de un script SFTP, donde cada línea representa un comando SFTP. 
+Utilizando la terminal, puedes cargar un archivo vía [Consola SFTP](/developers/es/docs/links-and-debts/integration-configuration/upload#bookmark_consola_sftp) o [SFTP batch scripting](/developers/es/docs/links-and-debts/integration-configuration/upload#bookmark_sftp_batch_scripting). Consola SFTP es adecuada para uso manual, pero no para automatizaciones. Para automatizaciones, utiliza SFTP batch scripting, que requiere la creación de un script SFTP, donde cada línea representa un comando SFTP. 
 
 ## Consola SFTP
 
@@ -21,10 +21,10 @@ debt_589_6_20230804.csv
 sftp> bye
 ```
 
-1. Inicia sesión en SFTP para abrir la consola SFTP, como se indica en la línea 1 del código a continuación.
-2. e a la carpeta 'iniciativa in', como se indica en la línea 5 del código a continuación.
+1. Inicia sesión en SFTP para abrir la consola SFTP, como se indica en la línea 1 del código.
+2. e a la carpeta 'iniciativa in', como se indica en la línea 5 del código.
 3. Lista el contenido con el comando 'ls', como se indica en la línea 6 del código (opcional, solo para revisar antes de cargar un archivo).
-4. Carga el archivo usando el comando put ${absolutePathFileName,como se indica en la línea 7 del código a continuación, pudiendo ser la ruta relativa.
+4. Carga el archivo usando el comando put ${absolutePathFileName}, como se indica en la línea 7 del código, pudiendo ser la ruta relativa.
 5. Verifica que se haya subido, como se indica en la línea 10 del código.
 6. Sal de la consola SFTP, como se indica en la línea 12.
 
@@ -41,7 +41,10 @@ bye
 ```
 
 El script SFTP se ejecuta con el siguiente comando, donde `batch_script_file_name` es el nombre del archivo con los comandos SFTP.
-`shell> sftp -b batch_script_file_name username@sftp.mercadolibre.io`
+
+```
+shell> sftp -b batch_script_file_name username@sftp.mercadolibre.io
+```
 
 > NOTE
 >

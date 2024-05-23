@@ -6,10 +6,6 @@ Esta documentación proporciona aclaraciones importantes sobre el formato CSV de
 
 El formato de los campos se detalla de la siguiente manera: T(Lmin - Lmax), donde Lmin es la longitud mínima y Lmax es la longitud máxima, y T es el tipo de datos que se detallan a continuación:
 
-## Formato de los campos
-
-El formato de los campos se detalla de la siguiente manera: T(Lmin - Lmax), donde Lmin es la longitud mínima y Lmax es la longitud máxima, y T es el tipo de datos que se detallan a continuación:
-
 | Tipo | Descripción | Regexp |
 |------|-------------|--------|
 | **A** | Campo alfabético. No se aceptan tildes. | `[a-zA-Z]` |

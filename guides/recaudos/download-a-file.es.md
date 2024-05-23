@@ -1,6 +1,6 @@
 # Descargar un archivo 
 
-Utilizando la terminal, aprende cómo descargar un archivo via [Consola SFTP]() y [SFTP batch scripting](). La Consola SFTP es adecuada para uso manual, pero no para automatizaciones. Para automatizaciones, utiliza SFTP batch scripting, que requiere la creación de un script SFTP, donde cada línea representa un comando SFTP. 
+Utilizando la terminal, aprende cómo descargar un archivo via [Consola SFTP](/developers/es/docs/links-and-debts/integration-configuration/download#bookmark_consola_sftp) y [SFTP batch scripting](/developers/es/docs/links-and-debts/integration-configuration/download#bookmark_sftp_batch_scripting). La Consola SFTP es adecuada para uso manual, pero no para automatizaciones. Para automatizaciones, utiliza SFTP batch scripting, que requiere la creación de un script SFTP, donde cada línea representa un comando SFTP. 
 
 ## Consola SFTP
 
@@ -28,14 +28,14 @@ UY0FVFGW103Q05P:~ demo pabloengonza$ ls
 report_589_216_20230804.csv result_589_6_20230804.csv
 ```
 
-1. Dirígete a la carpeta donde deseas descargar el archivo utilizando el comando "$HOME/${directoriodescarga}", donde “directoriodescarga” corresponde al nombre de la carpeta. En la primera línea del código a continuación, puedes ver un ejemplo de cómo hacerlo.
+1. Dirígete a la carpeta donde deseas descargar el archivo utilizando el comando "$HOME/${directoriodescarga}", donde “directoriodescarga” corresponde al nombre de la carpeta. En la primera línea del código, puedes ver un ejemplo de cómo hacerlo.
 2. Inicia sesión en el SFTP, lo que abrirá la consola SFTP, como se indica en la línea 3.
 3. Navega hasta la carpeta "Self-Service-Output", como se indica en la línea 7 del código.
-4. Lista el contenido con el comando ls, como se indica en la línea 8 del código a continuación (opcional, solo para verificar qué archivo descargar).
+4. Lista el contenido con el comando ls, como se indica en la línea 8 del código (opcional, solo para verificar qué archivo descargar).
 5. Obtén el archivo resultado que está en el SFTP usando el comando `get ${archivoresultado`, como se indica en la línea 10.
 6. Obtén el archivo de informe que está en el SFTP usando el comando `get ${archivoreporte}`, como se indica en la línea 14.
 7. Sal de la consola SFTP, como se indica en la línea 17 del código.
-8. Lista el directorio "$HOME/${directoriodescarga}" para verificar que los archivos se hayan descargado, como se indica en la línea 18 del código a continuación.
+8. Lista el directorio "$HOME/${directoriodescarga}" para verificar que los archivos se hayan descargado, como se indica en la línea 18 del código.
 
 ## SFTP batch scripting
 

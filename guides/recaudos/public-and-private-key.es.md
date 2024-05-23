@@ -18,5 +18,5 @@ Como resultado, se generarán dos claves: una **pública** y una **privada**. Mi
 
 Ambas llaves (pública y privada) deben estar almacenadas en el mismo directorio de la computadora desde el que se establecerá la conexión al servidor SFTP de Mercado Pago.
 
-Después de generar las claves, comparte con el equipo de Mercado Pago los datos necesarios detallados en la sección de [Requisitos previos]() y solo la clave pública generada. 
+Después de generar las claves, comparte con el equipo de Mercado Pago los datos necesarios detallados en la sección de [Requisitos previos](/developers/es/docs/links-and-debts/prerequisites) y solo la clave pública generada. 
 Con base en esta información, Mercado Pago creará y proporcionará para la integración un `user_name`, el host (`sftp.mercadolibre.io`) y el `seller_Id`, identificador interno necesario para el nombre de los archivos generados. Con estos datos proporcionados por Mercado Pago, podrás completar la integración.

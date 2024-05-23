@@ -1,6 +1,6 @@
 # Validaciones
 
-A continuación se detallan los controles realizados desde Self Service para asegurar el correcto funcionamiento del flujo `end to end` y para preservar la experiencia de nuestros usuarios. Si se detecta alguna de las situaciones controladas, la información completa no será procesada y deberá ser enviada nuevamente por completo.
+A continuación se detallan los controles realizados desde Self Service para asegurar el correcto funcionamiento del flujo _end to end_ y para preservar la experiencia de nuestros usuarios. Si se detecta alguna de las situaciones controladas, la información completa no será procesada y deberá ser enviada nuevamente por completo.
 
 ## Controles a nivel de contenido
 
