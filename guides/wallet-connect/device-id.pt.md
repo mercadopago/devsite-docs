@@ -1,6 +1,7 @@
 # Integrar o Device ID
 
 O **Device ID** é uma informação importante para garantir uma melhor segurança e, consequentemente, uma melhor taxa de aprovação de pagamentos. Ele representa um **identificador único para cada dispositivo do comprador** no momento da compra.
+
 Caso um comprador frequente faça uma compra a partir de um dispositivo diferente do habitual, isso pode representar um comportamento atípico. Embora possa não ser necessariamente fraude, o ID do dispositivo nos ajuda a refinar a avaliação e nos impede de rejeitar pagamentos legítimos.
 
 
