@@ -66,3 +66,11 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 10. Por fim, clique na opção **Verificar ativação** do Mercado Pago Cartões, vá para a seção de "Configurações" da Shopify e clique em **Salvar** para ativar o app e finalizar a instalação.
 
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
+
+## Configurar parcelas sem acréscimo
+
+1. Após instalar e ativar o app **Mercado Pago Cartões**, faça login na sua conta do Mercado Pago.
+2. Vá até a seção "Seu negócio > Custos" e selecione a opção **Checkout**.
+3. Em "Parcelas sem acréscimo", clique em **Configurar parcelamento**.
+4. Em seguida, clique em **Configurar parcelamento sem acréscimo**.
+5. Por fim, ative a opção **Oferecer parcelamento sem acréscimo** e escolha quantas parcelas deseja oferecer na sua loja.
