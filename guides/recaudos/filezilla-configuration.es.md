@@ -27,7 +27,7 @@ En en panel de FileZilla, encontrarás dos ventanas. La de la izquierda represen
 
 ## Descargar un archivo de resultado y reporte
 
-Un archivo de resultados contiene el procesamiento del archivo de deudas y/o enlaces masivos cargados. Por otro lado, el archivo de informe proporciona el informe de deudas y/o enlaces masivos.
+El archivo de resultados contiene el detalle del procesamiento del archivo de deudas y/o enlaces de pago generados. En el mismo se detalla el resultado de cada fila procesada.
 
 Para descargar un archivo de resultado y reporte, arrastra y suelta el archivo desde la ventana derecha, correspondiente al servidor SFTP, hacia la izquierda, correspondiente a tu computador. 
 
