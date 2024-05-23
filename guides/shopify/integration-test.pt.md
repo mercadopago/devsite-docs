@@ -11,7 +11,7 @@ Os testes de compras são essenciais para garantir que os pagamentos sejam proce
 
 
 ------------
-----[mlb, mlm]----
+----[mlb]----
 > WARNING
 > 
 > Importante
@@ -19,7 +19,7 @@ Os testes de compras são essenciais para garantir que os pagamentos sejam proce
 > O teste só poderá ser realizado após a etapa de configuração da integração de um dos checkouts de pagamento, seja o [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards) ou o [Checkout Mercado Pago](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
 
 ------------
-----[mlb, mlm]----
+----[mlm]----
 > WARNING
 > 
 > Importante
@@ -52,7 +52,9 @@ Veja abaixo como testar a integração:
 ![Credenciais de produção](/images/shopify/test-prod-credentials.png)
 
 ----[mlm]----
-7. Vá até as configurações do painel da Shopify (**Configurações > Pagamentos**) e clique para **Gerenciar** um dos checkout do Mercado Pago, sendo ele o [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards) ou o [Checkout Mercado Pago](/developers/pt/docs/shopify/integration-configuration/checkout-pro). Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para processar os pagamentos:
+7. Vá até as configurações do painel da Shopify (**Configurações > Pagamentos**) e clique para **Gerenciar** um dos checkout do Mercado Pago, sendo ele o [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards) ou o [Checkout Mercado Pago](/developers/pt/docs/shopify/integration-configuration/checkout-pro). 
+
+Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para processar os pagamentos:
 
 ## Mercado Pago Cartões
 
@@ -87,7 +89,9 @@ Veja abaixo como testar a integração:
 
 ------------
 ----[mlb]----
-7. Vá até as configurações do painel da Shopify (**Configurações > Pagamentos**) e clique para **Gerenciar** um dos checkout do Mercado Pago, sendo ele o [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards) ou o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro). Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para processar os pagamentos:
+7. Vá até as configurações do painel da Shopify (**Configurações > Pagamentos**) e clique para **Gerenciar** um dos checkout do Mercado Pago, sendo ele o [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards) ou o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro). 
+
+Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para processar os pagamentos:
 
 ## Mercado Pago Cartões
 

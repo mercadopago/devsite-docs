@@ -69,6 +69,8 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 
 ## Configurar parcelas sem acréscimo
 
+Após instalar e ativar o app **Mercado Pago Cartões**, configure a opção de oferecer aos seus clientes a possibilidade de parcelar suas compras sem acrescimos com qualquer cartão de crédito. Para isso, siga os passos abaixo. 
+
 1. Faça login em sua [conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
 2. Vá até a seção "Seu negócio > Custos" e selecione a opção **Checkout**.
 3. Em "Parcelas sem acréscimo", clique em **Configurar parcelamento**.

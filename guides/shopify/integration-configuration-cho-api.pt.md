@@ -19,7 +19,7 @@ O **Mercado Pago Cartões** ([Checkout API](/developers/pt/docs/checkout-api/lan
 
 Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecemos os dois modelos de instalação abaixo.
 
-## Instalação via Marketplace
+## Instalar via Marketplace
 
 1. A partir do link recebido pelo setor comercial do Mercado Pago, acesse a página do app **Mercado Pago Cartões** no "Marketplace" e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
 2. Leia com atenção as informações sobre as permissões solicitadas e clique novamente em **Instalar**.
@@ -40,7 +40,7 @@ Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecem
 
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 
-## Instalação via painel da Shopify
+## Instalar via painel da Shopify
 
 1. Vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
 2. No painel administrativo da loja, clique em **Configurações** no canto inferior esquerdo da página.
@@ -69,7 +69,7 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 
 ## Configurar parcelas sem acréscimo
 
-Após instalar e ativar o app **Mercado Pago Cartões**, 
+Após instalar e ativar o app **Mercado Pago Cartões**, configure a opção de oferecer aos seus clientes a possibilidade de parcelar suas compras sem acrescimos com qualquer cartão de crédito. Para isso, siga os passos abaixo. 
 
 1. Faça login em sua [conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
 2. Vá até a seção "Seu negócio > Custos" e selecione a opção **Checkout**.
