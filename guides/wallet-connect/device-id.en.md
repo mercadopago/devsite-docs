@@ -1,4 +1,4 @@
-# Integrar el Device ID
+# Integrate the Device ID
 
 The **Device ID** is an important piece of information to ensure better security and, consequently, a better payment approval rate. It's a **unique number that's used to identify a customer's device** when they are buying.
 
