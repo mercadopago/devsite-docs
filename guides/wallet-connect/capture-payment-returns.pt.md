@@ -15,20 +15,20 @@ Código de status: 201
    "wallet_payment":{
       "transaction_amount":700.50,
       "description":"Payment for the purchase of furniture",
-      "external_reference":"Pago_123”
+      "external_reference":"Pago_123"
    },
    "payments":[
       {
          "id":3870106238,
-         "status":”approved”,
-         "status_detail":”accredited”,
+         "status":"approved",
+         "status_detail":"accredited",
          "payment_type_id":"credit_card",
          "payment_method_id":"visa",
          "transaction_amount":700.50,
          "installments":1,
          "description":"Payment for the purchase of furniture",
          "capture":true,
-         "external_reference":"Pago_123”
+         "external_reference":"Pago_123"
       }
    ],
    "disbursements": [
@@ -56,7 +56,7 @@ Código de status: 201
 > Para mais informações sobre o motivo da recusa de pagamento, veja o campo `payment.status_detail`.
 
 [[[
-```Json
+```json
 ===
 Código de status: 201
 ===
@@ -70,8 +70,8 @@ Código de status: 201
    "payments":[
       {
          "id":3870106238,
-         "status":”rejected”,
-         "status_detail":”cc_rejected_other_reason”,
+         "status":"rejected",
+         "status_detail":"cc_rejected_other_reason",
          "payment_type_id":"credit_card",
          "payment_method_id":"visa",
          "transaction_amount":700.50,
@@ -100,7 +100,7 @@ Código de status: 201
 Esta resposta retorna quando ocorre a tentativa de criação de um pagamento, porém o _payer_ não tem saldo em sua conta Mercado Pago. 
 
 [[[
-```Json
+```json
 ===
 Código de status: 201
 ===
@@ -114,8 +114,8 @@ Código de status: 201
    "payments":[
       {
          "id":null,
-         "status":”rejected”,
-         "status_detail":”insufficient_money”,
+         "status":"rejected",
+         "status_detail":"insufficient_money",
          "payment_type_id":"account_money",
          "payment_method_id":"account_money",
          "transaction_amount":700.50,
@@ -142,7 +142,7 @@ Código de status: 201
 Este erro é retornado quando o cliente cancela a vinculação.
 
 [[[
-```Json
+```json
 ===
 Código de status: 401
 ===
@@ -159,5 +159,21 @@ Código de status: 401
    ]
 }
 
+```
+]]]
+
+## Pagamento rejeitado devido à falta de parâmetro no header
+
+[[[
+```json
+===
+Código de status: 400
+===
+{
+   "status": "400",
+   "error":  "bad request",
+   "message": "Missing header parameter.",
+   "cause": []
+}
 ```
 ]]]

@@ -1447,9 +1447,9 @@
           },
           "400": {
             "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
+              "en": "Bad Request",
+              "pt": "Bad Request",
+              "es": "Bad Request"
             },
             "content": {
               "application/json": {
@@ -1462,9 +1462,9 @@
                         {
                           "title": "400",
                           "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
+                            "en": "Missing header parameter.",
+                            "es": "Parámetro en header faltante",
+                            "pt": "Parâmetro do header ausente."
                           }
                         }
                       ]
