@@ -23,7 +23,7 @@ En en panel de FileZilla, encontrarás dos ventanas. La de la izquierda represen
 >
 > Si activaste tus notificaciones, recuerda ingresar un correo electrónico o usuario con el que puedas probar la recepción de las mismas.
 
-![1](/images/recaudos/)
+![1](/images/recaudos/filezilla1.png)
 
 ## Descargar un archivo de resultado y reporte
 
@@ -33,4 +33,4 @@ Para descargar un archivo de resultado y reporte, arrastra y suelta el archivo d
 
 De esta manera, el archivo se encontrará automáticamente disponible en tu directorio.
 
-![2](/images/recaudos/)
+![2](/images/recaudos/filezilla2.png)

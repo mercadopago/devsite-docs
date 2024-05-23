@@ -37,4 +37,4 @@ El envío de las notificaciones push y de los correos electrónicos está progra
 > 
 > Los archivos permanecen disponibles durante 7 días después de la carga. Actualmente, no está disponible la opción de realizar actualizaciones directas en una fila que haya sido cargada previamente.
 
-![Fluxograma](/images/recaudos/)
+![Fluxograma](/images/recaudos/fluxograma.png)
