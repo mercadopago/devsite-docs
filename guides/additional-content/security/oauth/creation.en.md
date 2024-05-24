@@ -1,4 +1,4 @@
-# Create Access Token
+# Get Access Token
 
 Learn how to use the flows, also known as grant types, to obtain an Access Token and access the data exposed by an API. The existence of these flows arises to respond to all business scenarios that can arise in the consumption of APIs based on the type of consuming application, its degree of trust, and how the user interacts in the process.
 
@@ -59,7 +59,7 @@ https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`
 
 3. After correctly sending the codes to Mercado Pago, you will obtain the necessary authorization for get the Access Token and perform PKCE verification on transactions made with OAuth.
 
-### Get Access Token
+### Get Token
 
 Access Token is the code used in different requests of public origin to access a protected resource that represents an authorization granted by a seller to a client application that contains scopes and a limited period of time for such access. Follow the steps below to obtain it.
 
@@ -91,3 +91,5 @@ Access Token is the code used in different requests of public origin to access a
 > It is recommended to carry out this procedure all at once together with the user, since the code received by the Redirect URL after authorization is valid for 10 minutes and the Access Token received through the endpoint is valid for 180 days.
 > <br><br>
 > To generate sandbox credentials for testing, send the `test_token` parameter with the value `true`.
+
+## Client credentials

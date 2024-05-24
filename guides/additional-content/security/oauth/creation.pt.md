@@ -59,7 +59,7 @@ https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`
 
 3. Tendo enviado os códigos corretamente ao Mercado Pago, você obterá a autorização necessária para obter o Access Token e realizar a verificação por PKCE nas transações feitas com OAuth.
 
-### Obter Access Token
+### Obter Token
 
 O Access Token é o código utilizado em diferentes _requests_ públicos para acessar um recurso protegido. Ele representa uma autorização concedida por um vendedor a uma aplicação do cliente, contendo _scopes_ e um tempo de validade limitado para o acesso. Siga os passos abaixo para obtê-lo.
 

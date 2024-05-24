@@ -10,9 +10,9 @@ O OAuth é um protocolo de autorização que permite que aplicações tenham ace
  
 Os fluxos, também conhecidos como `grant types`, são diferentes maneiras de uma aplicação obter um Access Token para acessar os dados expostos por uma API. No Mercado Pago, existem três fluxos de acesso disponíveis: 
 
-- `authorization_code`: fluxo baseado em redirecionamento, sendo caracterizado pela intervenção do usuário para autorizar explicitamente o acesso aos seus dados pela aplicação e pelo uso de um código fornecido pelo servidor de autenticação para que a aplicação possa obter um Access Token e um `refresh_token` associado.
-- `refresh_token`: caso um Access Token gerado a partir do fluxo `authorization_code` esteja invalido ou expirado, este fluxo será usado para trocar um concessão temporária do tipo `refresh_token` por um Access Token. Ou seja, isso permite que o Access Token seja atualizado sem a necessidade de interação do usuário novamente após a autorização concedida pelo fluxo `authorization_code`.
-- `client_credentials`: é utilizado para obter um Access Token sem interação do usuário. Este fluxo é utilizado quando as aplicações solicitam um Access Token usando apenas as suas próprias credenciais para acessar seus próprios recursos, não podendo agir em nome de um usuário e acessar os seus dados.
+- **Authorization code**: fluxo baseado em redirecionamento, sendo caracterizado pela intervenção do usuário para autorizar explicitamente o acesso aos seus dados pela aplicação e pelo uso de um código fornecido pelo servidor de autenticação para que a aplicação possa obter um Access Token e um `refresh_token` associado.
+- **Refresh token**: caso um Access Token gerado a partir do fluxo `authorization_code` esteja invalido ou expirado, este fluxo será usado para trocar um concessão temporária do tipo `refresh_token` por um Access Token. Ou seja, isso permite que o Access Token seja atualizado sem a necessidade de interação do usuário novamente após a autorização concedida pelo fluxo `authorization_code`.
+- **Client credentials**: é utilizado para obter um Access Token sem interação do usuário. Este fluxo é utilizado quando as aplicações solicitam um Access Token usando apenas as suas próprias credenciais para acessar seus próprios recursos, não podendo agir em nome de um usuário e acessar os seus dados.
 
 ## Access Token
 

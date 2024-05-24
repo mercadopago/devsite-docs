@@ -10,9 +10,9 @@ OAuth is an authorization protocol that allows applications to have limited acce
  
 The flows, also called grant types, refer to the way in which an application obtains an Access Token that allows accessing the data displayed through an API. In the case of Mercado Pago, there are three available access flows: 
 
-- `authorization_code`: a flow based on redirection, characterized by user intervention to explicitly authorize the application to access their data and by the use of a code provided by the authentication server so that the application can obtain an Access Token and an associated `refresh_token`.
-- `efresh_token`: if an Access Token generated from the `authorization_code` flow is invalid or expired, this flow will be used to exchange a temporary grant of the `refresh_token` type for an Access Token. This allows the Access Token to be refreshed without requiring further user interaction after the authorization granted by the `authorization_code` flow.
-- `client_credentials`: used to obtain an Access Token without user interaction. This flow is used when applications request an Access Token using only their own credentials to access their own resources, without acting on behalf of a user or accessing their data.
+- **Authorization code**: a flow based on redirection, characterized by user intervention to explicitly authorize the application to access their data and by the use of a code provided by the authentication server so that the application can obtain an Access Token and an associated `refresh_token`.
+- **Rfresh token**: if an Access Token generated from the `authorization_code` flow is invalid or expired, this flow will be used to exchange a temporary grant of the `refresh_token` type for an Access Token. This allows the Access Token to be refreshed without requiring further user interaction after the authorization granted by the `authorization_code` flow.
+- **Client credentials**: used to obtain an Access Token without user interaction. This flow is used when applications request an Access Token using only their own credentials to access their own resources, without acting on behalf of a user or accessing their data.
 
 ## Access Token
 

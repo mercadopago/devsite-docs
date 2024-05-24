@@ -1,4 +1,4 @@
-# Crear Access Token
+# Generar Access Token
 
 Aprenda a utilizar los flujos, también conocidos como _grant types_, para obtener un Access Token y acceder a los datos expuestos por una API. La existencia de estos flujos surge para responder a todos los escenarios de negocios que pueden surgir en el consumo de APIs con base en el tipo de aplicación consumidora, su grado de confianza y cómo es la interacción del usuario en el proceso.
 
@@ -59,7 +59,7 @@ https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`
 
 3. Después de enviar correctamente los códigos a Mercado Pago, obtendrás la autorización necesaria obtener el Access Token y realizar la verificación por PKCE en las transacciones realizadas con OAuth.
 
-### Obtener Access Token
+### Obtener Token
 
 Access Token es el código utilizado en diferentes solicitudes de origen público para acceder a un recurso protegido que representa una autorización otorgada por un vendedor a una aplicación cliente que contiene scopes y un tiempo de vigencia limitado para dicho acceso. Sigue los pasos a continuación para obtenerlo.
 
@@ -93,3 +93,5 @@ Access Token es el código utilizado en diferentes solicitudes de origen públic
 > Se recomienda realizar este procedimiento de una única vez junto con el usuario, ya que el código recibido por la Redirect URL después de la autorización tiene una validez de 10 minutos y el Access Token recibido a través del endpoint tiene una validez de 180 días.
 > <br><br>
 > Para generar credenciales de sandbox para pruebas, envíe el parámetro `test_token` con el valor `true`.
+
+## Client credentials

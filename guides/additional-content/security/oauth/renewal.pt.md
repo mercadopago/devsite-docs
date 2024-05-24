@@ -1,6 +1,6 @@
-# Renovação
+# Renovar Access Token
  
-O fluxo `refresh_token` é utilizado para trocar um **temporal grant** do tipo `refresh_token` por um Access Token quando o Access Token em uso estiver **próximo do vencimento**. O Access Token recebido através do endpoint tem **validade de 180 dias** e passado esse período é preciso reconfigurar todo fluxo de autorização.
+O fluxo **Refresh token** é utilizado para trocar um **temporal grant** do tipo `refresh_token` por um Access Token quando o Access Token em uso estiver **próximo do vencimento**. O Access Token recebido através do endpoint tem **validade de 180 dias** e passado esse período é preciso reconfigurar todo fluxo de autorização.
  
 O fluxo permite continuar utilizando um Access Token válido com as mesmas características do token original sem a necessidade de uma nova interação com o usuário. Ao realizar este fluxo, o token original é trocado por um novo token que também oferece a possibilidade de limitar os scopes devolvendo um novo refresh token para ser trocado no futuro.
  

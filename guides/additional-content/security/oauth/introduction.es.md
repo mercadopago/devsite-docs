@@ -10,9 +10,9 @@ OAuth es un protocolo de autorización que permite que las aplicaciones tengan a
  
 Los flujos, también llamados grant types, se refieren a la forma en que una aplicación obtiene un Access Token que permite acceder a los datos expuestos a través de una API. En el caso de Mercado Pago, hay tres flujos de acceso disponibles: 
 
-- `authorization_code`: flujo basado en redirección, caracterizado por la intervención del usuario para autorizar explícitamente el acceso a sus datos por la aplicación y por el uso de un código proporcionado por el servidor de autenticación para que la aplicación pueda obtener un Access Token y un `refresh_token` asociado.
-- `refresh_token`: en caso de que un Access Token generado a partir del flujo `authorization_code` esté inválido o expirado, este flujo se utilizará para intercambiar una concesión temporal del tipo `refresh_token` por un Access Token. Es decir, esto permite que el Access Token se actualice sin la necesidad de interacción del usuario nuevamente después de la autorización concedida por el flujo `authorization_code`.
-- `client_credentials`: se utiliza para obtener un Access Token sin interacción del usuario. Este flujo se utiliza cuando las aplicaciones solicitan un Access Token usando solo sus propias credenciales para acceder a sus propios recursos, no pudiendo actuar en nombre de un usuario ni acceder a sus datos.
+- **Authorization code**: flujo basado en redirección, caracterizado por la intervención del usuario para autorizar explícitamente el acceso a sus datos por la aplicación y por el uso de un código proporcionado por el servidor de autenticación para que la aplicación pueda obtener un Access Token y un `refresh_token` asociado.
+- **Refresh token**: en caso de que un Access Token generado a partir del flujo `authorization_code` esté inválido o expirado, este flujo se utilizará para intercambiar una concesión temporal del tipo `refresh_token` por un Access Token. Es decir, esto permite que el Access Token se actualice sin la necesidad de interacción del usuario nuevamente después de la autorización concedida por el flujo `authorization_code`.
+- **Client credentials**: se utiliza para obtener un Access Token sin interacción del usuario. Este flujo se utiliza cuando las aplicaciones solicitan un Access Token usando solo sus propias credenciales para acceder a sus propios recursos, no pudiendo actuar en nombre de un usuario ni acceder a sus datos.
 
 ## Access Token
 

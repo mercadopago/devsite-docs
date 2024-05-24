@@ -1,4 +1,4 @@
-# Administración
+# Gestionar Access Token
  
 Actualmente existen diferentes formas en las que los **_Access tokens_** y las **temporal grants** creadas se pueden deshabilitar e invalidar para autorizar solicitudes de recursos protegidos o para cambiarlos por nuevos tokens.
  
