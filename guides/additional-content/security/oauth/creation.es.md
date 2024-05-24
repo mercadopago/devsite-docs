@@ -1,4 +1,19 @@
-# Creación
+# Crear Access Token
+
+Aprenda a utilizar los flujos, también conocidos como _grant types_, para obtener un Access Token y acceder a los datos expuestos por una API. La existencia de estos flujos surge para responder a todos los escenarios de negocios que pueden surgir en el consumo de APIs con base en el tipo de aplicación consumidora, su grado de confianza y cómo es la interacción del usuario en el proceso.
+
+Los flujos de acceso disponibles para la generación del Access Token son:
+
+- [Authorization code]()
+- [Client credentials]()
+
+> NOTE
+>
+> Importante
+>
+> Si un Access Token generado a partir del flujo **Authorization code** está inválido o expirado, podrá utilizar el flujo **Refresh Token** para intercambiar una concesión temporal del tipo `refresh_token` por un Access Token. Es decir, permite que el Access Token se actualice sin la necesidad de una nueva interacción del usuario después de la autorización concedida `authorization_code`. Para más información, visite [Renovar Access Token](/developers/es/guides/additional-content/security/oauth/renewal).
+
+## Authorization code
  
 El flujo de `authorization_code` se caracteriza por la intervención del vendedor para autorizar explícitamente el acceso de la aplicación a sus datos y por el uso de un código otorgado por el servidor de autenticación para que la aplicación pueda obtener un Access Token y un refresh token asociado.
  
@@ -22,7 +37,9 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
 | Redirect URL | Dirección a la que deseas reenviar a los vendedores después de haberlos vinculado correctamente. | Esta es una dirección en tu servidor donde se recibirán los _Access tokens_. |
 | URL de autenticación | Dirección a la que desea enviar a los vendedores para autorizar el acceso a datos privados. | Esta es una dirección en el servidor de Mercado Pago donde se otorga expresamente el permiso para acceder a los datos privados. |
 
-## Configurar PKCE
+Vea a continuación cómo **configurar el protocolo PKCE** (un protocolo de seguridad no obligatorio, pero que se utilizará con OAuth para proteger contra ataques de código malicioso durante el intercambio de códigos de autorización por Access Token) y luego **generar el Access Token**.
+
+### Configurar PKCE
 
 El **PKCE** (_Proof Key for Code Exchange_) es un protocolo de seguridad utilizado con OAuth para proteger contra ataques de código malicioso durante el intercambio de códigos de autorización por Access Token. Añade una capa adicional de seguridad generando un _verifier_ que se transforma en un challenge para asegurar que, incluso si el código de autorización es interceptado, no sea útil sin el _verifier_ original.
 
@@ -52,7 +69,7 @@ https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`
 
 3. Después de enviar correctamente los códigos a Mercado Pago, obtendrás la autorización necesaria obtener el Access Token y realizar la verificación por PKCE en las transacciones realizadas con OAuth.
 
-## Obtener Access Token
+### Obtener Access Token
 
 Access Token es el código utilizado en diferentes solicitudes de origen público para acceder a un recurso protegido que representa una autorización otorgada por un vendedor a una aplicación cliente que contiene scopes y un tiempo de vigencia limitado para dicho acceso. Sigue los pasos a continuación para obtenerlo.
 

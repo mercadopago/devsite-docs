@@ -1,4 +1,19 @@
-# Criação
+# Obter Access Token
+
+Saiba como utilizar os fluxos, também conhecidos como _grant types_, para obter um Access Token e acessar os dados expostos por uma API. A existência desses fluxos surge para responder a todos os cenários de negócios que podem surgir no consumo de APIs com base no tipo de aplicação consumidora, seu grau de confiança e como é a interação do usuário no processo. 
+
+Os fluxos de acesso disponíveis para geração do Access Token são:
+
+- [Authorization code]()
+- [Client credentials]()
+
+> NOTE
+>
+> Importante
+>
+> Caso um Access Token gerado a partir do fluxo **Authorization code** esteja invalido ou expirado, você poderá utilizar o fluxo **Refresh Token** para trocar um concessão temporária do tipo refresh_token por um Access Token. Ou seja, permite que o Access Token seja atualizado sem a necessidade de interação do usuário novamente após a autorização concedida `authorization_code`. Para mais informações, acesse [Renovar Access Token](/developers/pt/guides/additional-content/security/oauth/renewal).
+
+## Authorization code
  
 O fluxo `authorization_code` se caracteriza pela intervenção do vendedor para autorizar de forma explícita o acesso aos seus dados por parte da aplicação e pelo uso de um código concedido pelo servidor de autenticação para que a aplicação possa obter um Access Token e um refresh token associado.
  
@@ -22,7 +37,9 @@ Para gerar o código de autorização é preciso atender aos requisitos abaixo.
 | Redirect URL | Endereço ao qual você quer encaminhar os vendedores após tê-los vinculado corretamente. | Este é um endereço no seu servidor no qual serão recebidos os _Access tokens_. |
 | URL de autenticação | Endereço ao qual você quer encaminhar os vendedores para que realizem a autorização de acesso à dados privados. | Este é um endereço no servidor do Mercado Pago no qual será feita a permissão expressa de acesso aos dados privados. |
 
-## Configurar PKCE
+Veja abaixo como **configurar o protocolo PKCE** (um protocolo de segurança não obrigatório, mas que será usado com OAuth para proteger contra ataques de código malicioso durante a troca de códigos de autorização por Access Token) e, em seguida, **gerar o Access Token**.
+
+### Configurar PKCE
 
 O **PKCE** (_Proof Key for Code Exchange_) é um protocolo de segurança usado com OAuth para proteger contra ataques de código malicioso durante a troca de códigos de autorização por Access Token. Ele adiciona uma camada extra de segurança gerando um _verifier_ que é transformado em um _challenge_ para garantir que mesmo se o código de autorização for interceptado, ele não seja útil sem o _verifier_ original.
 
@@ -52,9 +69,11 @@ https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`
 
 3. Tendo enviado os códigos corretamente ao Mercado Pago, você obterá a autorização necessária para obter o Access Token e realizar a verificação por PKCE nas transações feitas com OAuth.
 
-## Obter Access Token
+### Obter Access Token
 
 O Access Token é o código utilizado em diferentes _requests_ públicos para acessar um recurso protegido. Ele representa uma autorização concedida por um vendedor a uma aplicação do cliente, contendo _scopes_ e um tempo de validade limitado para o acesso. Siga os passos abaixo para obtê-lo.
+
+>>> 
  
 1. Edite sua aplicação para conter sua Redirect URL. Veja [Editar aplicação](/developers/pt/guides/additional-content/your-integrations/application-details).
 2. Envie a URL de autenticação para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:
@@ -82,3 +101,5 @@ O Access Token é o código utilizado em diferentes _requests_ públicos para ac
 > É recomendado realizar este procedimento por completo de uma única vez em conjunto com o usuário, visto que o código recebido pela Redirect URL após a autorização tem validade de 10 minutos e o Access Token recebido através do endpoint tem validade de 180 dias.
 > <br><br>
 > Para gerar credenciais de sandbox para realização de testes, envie o parâmetro `test_token` com valor `true`.
+
+## Client credentials

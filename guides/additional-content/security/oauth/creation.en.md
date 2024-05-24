@@ -1,5 +1,20 @@
-# Creation
- 
+# Create Access Token
+
+Learn how to use the flows, also known as grant types, to obtain an Access Token and access the data exposed by an API. The existence of these flows arises to respond to all business scenarios that can arise in the consumption of APIs based on the type of consuming application, its degree of trust, and how the user interacts in the process.
+
+The access flows available for generating the Access Token are:
+
+- [Authorization code]()
+- [Client credentials]()
+
+> NOTE
+>
+> Important
+>
+> If an Access Token generated from the **Authorization code** flow is invalid or expired, you can use the **Refresh Token** flow to exchange a temporary grant of type `refresh_token` for an Access Token. This means that the Access Token can be refreshed without the need for user interaction again after the `authorization_code` has been granted. For more information, visit [Renew Access Token](/developers/en/guides/additional-content/security/oauth/renewal).
+
+## Authorization code
+
 The `authorization_code` flow is characterized by the intervention of the seller to explicitly authorize the application's access to their data and by the use of a code granted by the authentication server so that the application can obtain an Access Token and an associated refresh token.
  
 Because it is a redirect-based flow, you must allow interaction with the seller's browser and receive the request through the authorization server redirect. In this flow, the application requests the seller's express consent to access the data by opening a web page in which the requested areas to be accessed are made explicit.
@@ -22,7 +37,9 @@ To generate the authorization code, the following requirements must be met.
 | Redirect URL | Address you want to forward sellers to after successfully linking them. | This is an address on your server where access tokens will be received. |
 | Authentication URL | Address where you wish to send sellers to authorize access to private data. | This is an address on the Mercado Pago server where permission is expressly granted to access private data. |
 
-## Configure PKCE
+See below how to **configure the PKCE protocol** (an optional security protocol, but one that will be used with OAuth to protect against malicious code attacks during the exchange of authorization codes for Access Tokens) and then **generate the Access Token**.
+
+### Configure PKCE
 
 The **PKCE** (Proof Key for Code Exchange) is a security protocol used with OAuth to protect against malicious code attacks during the exchange of authorization codes for an Access Token. It adds an extra layer of security by generating a verifier that is transformed into a challenge to ensure that even if the authorization code is intercepted, it is not useful without the original verifier.
 
@@ -52,7 +69,7 @@ https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`
 
 3. After correctly sending the codes to Mercado Pago, you will obtain the necessary authorization for get the Access Token and perform PKCE verification on transactions made with OAuth.
 
-## Get Access Token
+### Get Access Token
 
 Access Token is the code used in different requests of public origin to access a protected resource that represents an authorization granted by a seller to a client application that contains scopes and a limited period of time for such access. Follow the steps below to obtain it.
 
