@@ -1492,9 +1492,9 @@
           "checkout-api"
         ],
         "description": {
-          "en": "Cancel a sale for a specific payment",
-          "pt": "Cancelar uma compra de um pagamento específico",
-          "es": "Cancelar una compra para un pago específico"
+          "en": "This endpoint allows the cancellation of a purchase for a specific payment, provided the payment status is `in_process`, `pending`, or `authorized`. Upon success, the request will return a status code 200",
+          "pt": "Este endpoint permite cancelar uma compra para um pagamento específico, desde que o status do pagamento seja `in_process`, `pending` ou `authorized`. Em caso de sucesso, a requisição retornará um código de status 200",
+          "es": "Este endpoint permite la cancelación de una compra para un pago específico, siempre que el estado del pago sea `in_process`, `pending` o `authorized`. En caso de éxito, la solicitud devolverá un código de estado 200."
         },
         "parameters": [
           {
@@ -1520,6 +1520,7 @@
                 "properties": {
                   "status": {
                     "type": "String",
+                    "required": true,
                     "example": "cancelled",
                     "description": {
                       "en": "Payment status.",
