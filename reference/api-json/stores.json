@@ -1246,7 +1246,7 @@
                           "description": {
                             "en": "`You don't have permission to access the URL on this server.` If you receive this message, check the user_id field and ensure it is correct and numeric only.",
                             "es": "`You don't have permission to access the URL on this server.` Si recibe este mensaje, verifique el campo user_id y asegúrese de que sea correcto y solo numérico.",
-                            "pt": "`You don't have permission to access the URL on this server`. Caso receba esta mensagem, verifique o campo user_id e garanta que ele esteja correto e seja somente numérico."
+                            "pt": "`You don't have permission to access the URL on this server.` Caso receba esta mensagem, verifique o campo user_id e garanta que ele esteja correto e seja somente numérico."
                           }
                         }
                       ]
@@ -1273,9 +1273,9 @@
                         {
                           "title": "store_not_found",
                           "description": {
-                            "en": "Store not found. Check if the search parameter used to locate the store is valid and make a new request.",
-                            "es": "Store not found. Verifique si el parámetro de búsqueda utilizado para localizar la tienda es válido y haga una nueva solicitud.",
-                            "pt": "`Store not found`. Verifique se o parâmetro de busca utilizado para localizar a loja é válido e faça uma nova requisição."
+                            "en": "`Store not found.` Check if the search parameter used to locate the store is valid and make a new request.",
+                            "es": "`Store not found.` Verifique si el parámetro de búsqueda utilizado para localizar la tienda es válido y haga una nueva solicitud.",
+                            "pt": "`Store not found.` Verifique se o parâmetro de busca utilizado para localizar a loja é válido e faça uma nova requisição."
                           }
                         }
                       ]
@@ -1674,9 +1674,9 @@
                         {
                           "title": "bad_request",
                           "description": {
-                            "en": "Field description too long. If you receive this error, check the external_id parameter and ensure it does not exceed the maximum limit of 60 characters.",
-                            "es": "Field description too long. Si recibe este error, verifique el parámetro external_id y asegúrese de que no exceda el límite máximo de 60 caracteres.",
-                            "pt": "`Field description too long. Ao receber esse erro, verifique o parâmetro `external_id` e garanta que ele não exceda o limite máximo de 60 caracteres."
+                            "en": "Field description too long.` If you receive this error, check the external_id parameter and ensure it does not exceed the maximum limit of 60 characters.",
+                            "es": "`Field description too long.` Si recibe este error, verifique el parámetro external_id y asegúrese de que no exceda el límite máximo de 60 caracteres.",
+                            "pt": "`Field description too long.` Ao receber esse erro, verifique o parâmetro `external_id` e garanta que ele não exceda o limite máximo de 60 caracteres."
                           },
                           "enum": [
                             {
@@ -1690,8 +1690,8 @@
                             {
                               "title": "bad_request",
                               "description": {
-                                "en": "external id 'xxx' is already assigned to this user 1234567. This error is displayed when an external_id that already belongs to another store is entered in the respective field. If you receive this message, check the external_id parameter and ensure it is unique. The characters 'xxx' will be replaced by the erroneously entered information.",
-                                "es": "external id 'xxx' is already assigned to this user 1234567. Este error se muestra cuando se ingresa un external_id que ya pertenece a otra tienda en su campo correspondiente. Si recibe este mensaje, verifique el parámetro external_id y asegúrese de que sea único. Los caracteres 'xxx' serán reemplazados por la información ingresada.",
+                                "en": "`external id 'xxx' is already assigned to this user 1234567`. This error is displayed when an external_id that already belongs to another store is entered in the respective field. If you receive this message, check the external_id parameter and ensure it is unique. The characters 'xxx' will be replaced by the erroneously entered information.",
+                                "es": "`external id 'xxx' is already assigned to this user 1234567`. Este error se muestra cuando se ingresa un external_id que ya pertenece a otra tienda en su campo correspondiente. Si recibe este mensaje, verifique el parámetro external_id y asegúrese de que sea único. Los caracteres 'xxx' serán reemplazados por la información ingresada.",
                                 "pt": "`external id 'xxx' is already assigned to this user 1234567. Este erro é exibido quando um `external_id` que já pertence a outra loja, é inserido no seu respectivo campo. Caso receba este retorno, verifique o parâmetro `external_id` e garanta que o mesmo seja único. Os caracteres 'xxx' serão substituídos pela informação inserida erroneamente."
                               }
                             }
@@ -1851,8 +1851,8 @@
                         {
                           "title": "Forbidden",
                           "description": {
-                            "en": "You don't have permission to access the URL on this server. If you receive this error, check if the store_id used is correct and make a new request.",
-                            "es": "You don't have permission to access the URL on this server. Si recibe este error, verifique si el store_id utilizado es correcto y haga una nueva solicitud.",
+                            "en": "`You don't have permission to access the URL on this server`. If you receive this error, check if the store_id used is correct and make a new request.",
+                            "es": "`You don't have permission to access the URL on this server`. Si recibe este error, verifique si el store_id utilizado es correcto y haga una nueva solicitud.",
                             "pt": "`You don't have permission to access the URL on this server.` Caso receba esse erro, verifique se o store_id utilizado está correto e faça uma nova requisição."
                           }
                         }
@@ -1999,8 +1999,8 @@
                         {
                           "title": "Forbidden",
                           "description": {
-                            "en": "You don't have permission to access the URL on this server. If you receive this error, check if the store_id used is correct and make a new request.",
-                            "es": "You don't have permission to access the URL on this server. Si recibe este error, verifique si el store_id utilizado es correcto y haga una nueva solicitud.",
+                            "en": "`You don't have permission to access the URL on this server`. If you receive this error, check if the store_id used is correct and make a new request.",
+                            "es": "`You don't have permission to access the URL on this server`. Si recibe este error, verifique si el store_id utilizado es correcto y haga una nueva solicitud.",
                             "pt": "`You don't have permission to access the URL on this server.` Caso receba esse erro, verifique se o store_id utilizado está correto e faça uma nova requisição."
                           }
                         }
@@ -2031,6 +2031,35 @@
                             "en": "`Mismatch between user id '1762651252' and store id '61125074.` This error is displayed when attempting to delete a store belonging to another user. If you encounter this error, verify the `store_id` and ensure it belongs to your user.",
                             "es": "`Mismatch between user id '1762651252' and store id '61125074.` Este error se muestra cuando se intenta eliminar una tienda que pertenece a otro usuario. Si recibe este error, verifique el `store_id` y asegúrese de que pertenezca a su usuario.",
                             "pt": "`Mismatch between user id '1762651252' and store id '61125074.` Este erro é exibida quando ocorre a tentativa de excluir uma loja pertencente a outro usuário. Caso receba este erro, verifique o `store_id` e garanta que o mesmo pertença ao seu usuário."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "not_found",
+                          "description": {
+                            "en": "`store 6112507 not found.` This error occurs when attempting to delete a store, but the store_id is incorrect. Please review the store_id parameter and ensure that the number entered corresponds to a valid store.",
+                            "es": "`store 6112507 not found.` Este error ocurre cuando se intenta eliminar una tienda, pero el store_id es incorrecto. Revise el parámetro store_id y asegúrese de que el número ingresado corresponda a una tienda válida.",
+                            "pt": "`store 6112507 not found.` Este erro ocorre quando se tenta excluir uma loja. porém. o store_id está incorreto. Revise o parâmetro store_id e garanta que o número inserido seja de uma loja válida."
                           }
                         }
                       ]
