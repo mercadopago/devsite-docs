@@ -12,6 +12,12 @@ Puedes generar solicitudes de pago en las terminales Redelcom utilizando [nuestr
 
 Para comenzar a integrar vía API, deberás contar con las **credenciales que te fueron otorgadas por correo electrónico** al momento de solicitar el dispositivo. Estas te ayudarán a generar el *token* necesario para operar con Redelcom vía API. 
 
+> WARNING
+>
+> Importante
+>
+> Ten en cuenta que estas credenciales, otorgadas inicialmente al solicitar el dispositivo, son para el ambiente de prueba. Para obtener tus credenciales productivas, primero debes realizar una [homologación de tu integración](/developers/es/docs/redelcom/how-tos/integration-homologation/api). Al finalizar este proceso, nuestro equipo comercial se pondrá en contacto para otorgártelas.
+
 Tus **credenciales Redelcom** están compuestas por:
 
 | Tipo | Descripción |
