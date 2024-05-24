@@ -22,7 +22,7 @@ Para comenzar a probar integraciones y flujos de pago con el Simulador Point, de
 > 
 > Si bien el Simulador te pedirá credenciales de prueba, necesitarás las productivas para acceder a la cuenta y sus configuraciones.
 
-Para generar estas credenciales, accede a [Tus Integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/), selecciona la aplicación en la que integraste Mercado Pago Point y, en la sección **Cuentas de prueba**, haz clic en el botón **+ Crear cuenta de prueba**. Deberás completar los campos solicitados según las indicaciones. 
+Para generar estas credenciales, accede a [Panel del desarrollador](/developers/panel/app), selecciona la aplicación en la que integraste Mercado Pago Point y, en la sección **Cuentas de prueba**, haz clic en el botón **+ Crear cuenta de prueba**. Deberás completar los campos solicitados según las indicaciones. 
 
 ![Crear cuenta](/images/woocomerce/test-create-account-es.gif)
 
@@ -70,6 +70,12 @@ Previo a acceder al Simulador, deberás terminar de configurar tu ambiente de pr
  4. En el panel lateral izquierdo, accede a **Pruebas > Credenciales de pruebas** para obtener el **Access Token de pruebas de tu usuario vendedor**. El Simulador te lo solicitará para darte acceso a la herramienta y asignarte un dispositivo virtual asociado a tu integración.
 
 ![Credenciales de prueba en el Panel del Desarrollador](/images/woocomerce/test-test-credentials-es.png)
+
+> WARNING
+>
+> Importante
+>
+> Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Tus integraciones, te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
 
 ## 3. Accede al Simulador
 

@@ -574,18 +574,12 @@ A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-> NOTE
->
-> Nota
->
-> O prazo de creditação está entre 1 dia e 2 dias úteis de acordo com o meio de pagamento escolhido. Por isso, recomendamos que você defina a data de expiração com no mínimo 3 dias de intervalo para garantir a realização do pagamento.
-
-Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago.com.br/ajuda/_265) para executar a configuração corretamente.
-
 > WARNING
 >
 > Importante
 >
+> O prazo de creditação está entre 1 dia e 2 dias úteis de acordo com o meio de pagamento escolhido. Por isso, recomendamos que você defina a data de expiração com no mínimo 3 dias de intervalo para garantir a realização do pagamento.
+> <br><br>
 > Caso o pagamento seja realizado depois da data de expiração, o valor será estornado na conta Mercado Pago do pagador.
 ------------
 
