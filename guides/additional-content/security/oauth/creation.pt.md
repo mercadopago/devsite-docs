@@ -26,16 +26,6 @@ Por ser um fluxo baseado em redirecionamento, você deve ser capaz de permitir i
 > Lembre que você vai utilizar informações sensíveis dos seus vendedores. Certifique-se de resguardá-las de maneira segura. Não as utilize na URL de autenticação e gerencie todo processo somente a partir do seu servidor.
   
 Uma vez permitido o acesso, o servidor gera um código de acesso que mediante um redirecionamento chega à aplicação. Nesta etapa, a aplicação solicita acesso ao servidor de autenticação enviando o código obtido e os dados da aplicação. Feito isso, o servidor concede o Access Token e o _refresh token_ à aplicação.
- 
-Para gerar o código de autorização é preciso atender aos requisitos abaixo.
- 
-| Requisitos | Descrição | Especificações |
-| --- | --- | --- |
-| Contas de vendedor Mercado Pago | Serão necessárias contas de vendedor Mercado Pago. Uma para você e uma para o vendedor. | Conta de vendedor no Mercado Pago. Caso não tenha, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para criar. |
-| Aplicação | Aplicações são as diferentes integrações contidas em uma ou mais lojas. Você pode criar uma aplicação para cada solução que implementar, a fim de ter tudo organizado e manter um controle que facilite a gestão. | Para utilizar OAuth você precisará ter uma aplicação criada. Veja a documentação de [Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/your-integrations/introduction) para saber como criar uma aplicação. |
-| Credenciais | As [credenciais](/developers/pt/guides/additional-content/your-integrations/credentials) são senhas únicas com as quais identificamos uma integração na sua conta e servem para capturar pagamentos em lojas virtuais e outras aplicações de forma segura. | Para realizar testes e garantir o funcionamento da integração, serão necessárias as credenciais de teste. Após esta etapa, você precisará das credenciais de produção para receber pagamentos reais. |
-| Redirect URL | Endereço ao qual você quer encaminhar os vendedores após tê-los vinculado corretamente. | Este é um endereço no seu servidor no qual serão recebidos os _Access tokens_. |
-| URL de autenticação | Endereço ao qual você quer encaminhar os vendedores para que realizem a autorização de acesso à dados privados. | Este é um endereço no servidor do Mercado Pago no qual será feita a permissão expressa de acesso aos dados privados. |
 
 Veja abaixo como **configurar o protocolo PKCE** (um protocolo de segurança não obrigatório, mas que será usado com OAuth para proteger contra ataques de código malicioso durante a troca de códigos de autorização por Access Token) e, em seguida, **gerar o Access Token**.
 
@@ -73,7 +63,7 @@ https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`
 
 O Access Token é o código utilizado em diferentes _requests_ públicos para acessar um recurso protegido. Ele representa uma autorização concedida por um vendedor a uma aplicação do cliente, contendo _scopes_ e um tempo de validade limitado para o acesso. Siga os passos abaixo para obtê-lo.
 
->>> 
+>
  
 1. Edite sua aplicação para conter sua Redirect URL. Veja [Editar aplicação](/developers/pt/guides/additional-content/your-integrations/application-details).
 2. Envie a URL de autenticação para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:

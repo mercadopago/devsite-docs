@@ -26,16 +26,6 @@ Because it is a redirect-based flow, you must allow interaction with the seller'
 > Remember that you will use sensitive information from your sellers. Make sure you store it safely. Do not use it in the authentication URL and manage the entire process only from your server.
   
 Once access is allowed, the server generates an access code that reaches the application through a redirect. In this step, the application requests access to the authentication server by sending the obtained code and application data. Once this is done, the server grants the Access Token and the refresh token to the application.
- 
-To generate the authorization code, the following requirements must be met.
- 
-| Requirements | Description | Specifications |
-| --- | --- | --- |
-| Seller Mercado Pago Accounts | Mercado Pago seller accounts will be required. One for you and one for the seller. | Seller account in Mercado Pago. If you don't have one, [clik here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create it. |
-| Application | Applications are the different integrations contained in one or more stores. You can create an application for each solution you implement, in order to have everything organized and maintain control to facilitate management. | To use OAuth you will need to have an application created. See the [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/your-integrations/introduction) documentation for information on how to create an app. |
-| Credentials | The [credenciales](/developers/en/guides/additional-content/your-integrations/credentials) are unique passwords with which we identify an integration in your account, and are used to securely capture payments in virtual stores and other applications. | To test and ensure the integration works, test credentials will be required. After this step, you will need production credentials to receive actual payments. |
-| Redirect URL | Address you want to forward sellers to after successfully linking them. | This is an address on your server where access tokens will be received. |
-| Authentication URL | Address where you wish to send sellers to authorize access to private data. | This is an address on the Mercado Pago server where permission is expressly granted to access private data. |
 
 See below how to **configure the PKCE protocol** (an optional security protocol, but one that will be used with OAuth to protect against malicious code attacks during the exchange of authorization codes for Access Tokens) and then **generate the Access Token**.
 
@@ -72,6 +62,8 @@ https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`
 ### Get Access Token
 
 Access Token is the code used in different requests of public origin to access a protected resource that represents an authorization granted by a seller to a client application that contains scopes and a limited period of time for such access. Follow the steps below to obtain it.
+
+> 
 
 1. Edit your application so that it contains your Redirect URL. See [Edit Application](/developers/en/guides/additional-content/your-integrations/application-details).
 2. Send the authentication URL to the seller whose account you want to link to yours with the following fields:
