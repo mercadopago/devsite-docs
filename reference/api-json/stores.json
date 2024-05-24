@@ -1876,46 +1876,46 @@
           "mp-point"
         ],
         "description": {
-          "en": "Delete a physical shop whenever you need it with the ID of the store",
-          "pt": "Exclua um estabelecimento físico sempre que for necessário com o ID da loja",
-          "es": "Elimina una tienda física siempre que lo necesites con el ID de la sucursal"
+          "en": "This endpoint allows the deletion of a specific physical store, identified by its ID. The successful response of this request will return a status 200",
+          "pt": "Este endpoint permite a exclusão de uma loja física específica, identificada pelo seu ID. A resposta de sucesso desta requisição trará um status 200",
+          "es": "Este endpoint permite la eliminación de una sucursal física específica, identificada por su ID. La respuesta exitosa de esta solicitud devolverá un estado 200"
         },
         "parameters": [
           {
             "name": "user_id",
             "in": "path",
             "description": {
-              "en": "User Id",
-              "pt": "User Id",
-              "es": "User Id"
+              "en": "The user_id corresponds to the collector_id. It refers to the user_id of the Mercado Pago account that receives the money from sales, that is, the account responsible for collecting the funds.",
+              "pt": "O user_id corresponde ao collector_id. Trata-se do user_id da conta do Mercado Pago que recebe o dinheiro das vendas, ou seja, a conta responsável pela arrecadação dos valores.",
+              "es": "El user_id corresponde al collector_id. Se trata del user_id de la cuenta de Mercado Pago que recibe el dinero de las ventas, es decir, la cuenta encargada de recaudar los fondos."
             },
             "required": true,
             "schema": {
               "type": "string",
-              "example": "12123adfasdf123u4u"
+              "example": "446566691"
             }
           },
           {
             "name": "id",
             "in": "path",
             "description": {
-              "en": "Store's Id",
-              "pt": "Store's Id",
-              "es": "Store's Id"
+              "en": "Store ID. This number is obtained when creating a store and consolidates all information related to it, such as opening and closing hours, location, and name.",
+              "pt": "ID da loja. Este número é obtido ao criar uma loja e concentra todas as informações relacionadas a ela, como horário de abertura e encerramento, localização e nome.",
+              "es": "ID de la tienda. Este número se obtiene al crear una tienda y concentra toda la información relacionada con ella, como horarios de apertura y cierre, ubicación y nombre."
             },
             "required": true,
             "schema": {
               "type": "string",
-              "example": "12123adfasdf123u4u"
+              "example": "1234567"
             }
           }
         ],
         "responses": {
           "200": {
             "description": {
-              "es": "success",
-              "pt": "success",
-              "en": "success"
+              "es": "Éxito",
+              "pt": "Sucesso",
+              "en": "Success"
             },
             "content": {
               "application/json": {
@@ -1924,11 +1924,21 @@
                   "properties": {
                     "store": {
                       "type": "number",
-                      "example": 30148503
+                      "example": 1234567,
+                      "description": {
+                        "es": "Número de identificación de la tienda que fue eliminada.",
+                        "pt": "Número de identificação da loja que foi excluída.",
+                        "en": "Store identification number that was deleted."
+                      }
                     },
                     "user": {
                       "type": "number",
-                      "example": 329653108
+                      "example": 329653108,
+                      "description": {
+                        "es": "Número del usuario responsable de la eliminación de la tienda.",
+                        "pt": "Número do usuário responsável pela exclusão da loja.",
+                        "en": "Number of the user responsible for the deletion of the store."
+                      }
                     }
                   }
                 }
@@ -1952,25 +1962,75 @@
                         {
                           "title": "INVALID_USER_ID",
                           "description": {
-                            "en": "USER_ID must be number.",
-                            "es": "USER_ID must be number.",
-                            "pt": "USER_ID must be number."
+                            "en": "user_id must be a number.",
+                            "es": "user_id debe ser un number.",
+                            "pt": "user_id deve ser um number."
                           }
                         },
                         {
                           "title": "INVALID_STORE_ID",
                           "description": {
-                            "en": "STORE_ID must be number.",
-                            "es": "STORE_ID must be number.",
-                            "pt": "STORE_ID must be number."
+                            "en": "store_id must be number.",
+                            "es": "store_id debe ser un number.",
+                            "pt": "store_id deve ser um number."
                           }
-                        },
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
                         {
-                          "title": "UNKNOWN_FIELD",
+                          "title": "Forbidden",
                           "description": {
-                            "en": "Unknow field.",
-                            "es": "Unknow field.",
-                            "pt": "Unknow field."
+                            "en": "You don't have permission to access the URL on this server. If you receive this error, check if the store_id used is correct and make a new request.",
+                            "es": "You don't have permission to access the URL on this server. Si recibe este error, verifique si el store_id utilizado es correcto y haga una nueva solicitud.",
+                            "pt": "`You don't have permission to access the URL on this server.` Caso receba esse erro, verifique se o store_id utilizado está correto e faça uma nova requisição."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unauthorized_scopes",
+                          "description": {
+                            "en": "`Mismatch between user id '1762651252' and store id '61125074.` This error is displayed when attempting to delete a store belonging to another user. If you encounter this error, verify the `store_id` and ensure it belongs to your user.",
+                            "es": "`Mismatch between user id '1762651252' and store id '61125074.` Este error se muestra cuando se intenta eliminar una tienda que pertenece a otro usuario. Si recibe este error, verifique el `store_id` y asegúrese de que pertenezca a su usuario.",
+                            "pt": "`Mismatch between user id '1762651252' and store id '61125074.` Este erro é exibida quando ocorre a tentativa de excluir uma loja pertencente a outro usuário. Caso receba este erro, verifique o `store_id` e garanta que o mesmo pertença ao seu usuário."
                           }
                         }
                       ]
