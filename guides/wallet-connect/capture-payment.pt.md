@@ -27,7 +27,6 @@ Com esses parâmetros em mãos, envie um **POST** ao endpoint [/v1/advanced_paym
 
 [[[
 ```curl
-
 curl -X POST \
     'https://api.mercadopago.com/v1/advanced_payments' \
     -H 'X-Idempotency-Key: IDEMPOTENCY_KEY' \
@@ -36,19 +35,17 @@ curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     -d '{
-           "wallet_payment":{
-              "transaction_amount":700.50,
-              "description":"Payment Description",
-              "external_reference":"Pago_123"     
+           "wallet_payment": {
+              "transaction_amount": 700.50,
+              "description": "Payment Description",
+              "external_reference": "Pago_123"
            },
-           "payer":{
-              "token":"PAYER_TOKEN",
+           "payer": {
+              "token": "PAYER_TOKEN",
               "type_token": "wallet-token"
-            },
+           },
            "binary_mode": true
-        }'
-
-
+       }'
 ```
 ]]]
 
