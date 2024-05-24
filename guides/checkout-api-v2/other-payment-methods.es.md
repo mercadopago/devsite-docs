@@ -198,6 +198,7 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 
 Con la biblioteca MercadoPago.js incluida, añade el siguiente formulario de pago a tu proyecto para garantizar la captura segura de los datos de los compradores. En esta etapa es importante utilizar la lista que consultaste para obtener los medios de pago disponibles para crear las opciones de pago que deseas ofrecer.
 
+----[mlm, mla, mpe, mco, mlu, mlc]----
 [[[
 ```html
 
@@ -236,6 +237,81 @@ Con la biblioteca MercadoPago.js incluida, añade el siguiente formulario de pag
   </form>
 ```
 ]]]
+
+------------
+
+----[mlb]----
+
+> WARNING
+>
+> Importante
+>
+> Para configurar pagos con boleto bancário, es obligatorio que los campos `zip_code`, `street_name`, `street_number`, `neighborhood`, `city` y `federal_unit` estén presentes en el formulario de pago y sean completados por el comprador. Si tienes realizada una configuración que no los incluya, deberás actualizarla para asegurarte que tus pagos sean procesados.
+
+[[[
+```html
+
+ <form id="form-checkout" action="/process_payment" method="post">
+   <div>
+       <h1>Payer Request</h1>
+     <div>
+       <label for="payerFirstName">Nome</label>
+       <input id="form-checkout__payerFirstName" name="payerFirstName" type="text">
+     </div>
+     <div>
+       <label for="payerLastName">Sobrenome</label>
+       <input id="form-checkout__payerLastName" name="payerLastName" type="text">
+     </div>
+     <div>
+       <label for="email">E-mail</label>
+       <input id="form-checkout__email" name="email" type="text">
+     </div>
+     <div>
+       <label for="identificationType">Tipo de documento</label>
+       <input id="form-checkout__identificationType" name="identificationType" type="text"></input>
+     </div>
+     <div>
+       <label for="identificationNumber">Número do documento</label>
+       <input id="form-checkout__identificationNumber" name="identificationNumber" type="text">
+     </div>
+     <div>
+       <label for="zip_code"> CEP: </label>
+       <input id="form-checkout__zip_code" name="zip_code" type="text">
+     </div>
+     <div>
+       <label for="street_name"> Rua: </label>
+       <input id="form-checkout__street_name" name="street_name" type="text">
+     </div>
+     <div>
+       <label for="street_number"> Número: </label>
+       <input id="form-checkout__street_number" name="street_number" type="text">
+     </div>
+     <div>
+       <label for="neighborhood"> Bairro: </label>
+       <input id="form-checkout__neighborhood" name="neighborhood" type="text">
+     </div>
+     <div>
+       <label for="city"> Cidade: </label>
+       <input id="form-checkout__city" name="city" type="text">
+     </div>
+     <div>
+       <label for="federal_unit"> Estado: </label>
+       <input id="form-checkout__federal_unit" name="federal_unit" type="text">
+     </div>
+   </div>
+   <div>
+     <div>
+       <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
+       <input type="hidden" name="description" id="description" value="Nome do Produto">
+       <br>
+       <button type="submit">Pagar</button>
+     </div>
+   </div>
+ </form>
+```
+]]]
+
+------------
 
 ----[mlb, mla, mpe, mco, mlu, mlc]----
 ## Obtener tipos de documentos
@@ -288,44 +364,50 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 
 Al finalizar la inclusión del formulario de pago y obtener los tipos de documentos, es necesario enviar el email del comprador, el tipo y número de documento, el medio de pago utilizado y el detalle del importe a pagar utilizando nuestra API de Pagos o uno de nuestros SDKs.
 
-> NOTE
->
-> Importante
->
-> Al ejecutar las APIs mencionadas en esta documentación, es posible que encuentre el atributo `X-Idempotency-Key`. Completarlo es crucial para asegurar la ejecución y reejecución de las solicitudes sin situaciones no deseadas, como pagos duplicados, por ejemplo.
 
 ----[mlb]----
-Para configurar pagos con **boleto bancario** o **pago en agencia de lotería**, envía un POST con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
+Para configurar pagos con **boleto bancario** o **pago en agencia de lotería**, envía un POST con los los parámetros indicados en las tablas debajo al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
-| Tipo de pago  | Parámetro  | Valor  |
-| --- | --- | --- |
-| Boleto  | `payment_method_id`  | `bolbradesco`  |
-| Pago en agencia de loteria  | `payment_method_id`  | `pec`  |
 
 > WARNING
 >
 > Atención
 >
-> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token. Consulta más información en [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials).
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token. Consulta más información en [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials). Además, se te solicitará enviar el *header* `X-Idempotency-Key` con tu llave de idempotencia para asegurar la ejecución y reejecución de las solicitudes evitando situaciones no deseadas, como pagos duplicados, por ejemplo.
+
 
 [[[
 ```php
 <?php
-  use MercadoPago\Client\Payment\PaymentClient;
-  use MercadoPago\Client\Common\RequestOptions;
-  use MercadoPago\MercadoPagoConfig;
+ use MercadoPago\Client\Payment\PaymentClient;
+ use MercadoPago\Client\Common\RequestOptions;
+ use MercadoPago\MercadoPagoConfig;
 
-  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+ MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
-  $client = new PaymentClient();
-  $request_options = new RequestOptions();
-  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+ $client = new PaymentClient();
+ $request_options = new RequestOptions();
+ $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-  $payment = $client->create([
- "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
-    "payment_method_id" => $_POST['<PAYMENT_METHOD_ID>'],
-    "payer" => [
-      "email" => $_POST['<EMAIL>']
+ $payment = $client->create([
+"transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+   "payment_method_id" => $_POST['<PAYMENT_METHOD_ID>'],
+   "payer" => [
+     "email" => $_POST['<EMAIL>'],
+     "first_name" => $_POST['<NOME>'],
+       "last_name" => $_POST['<SOBRENOME>'],
+       "identification" => [
+           "type" =>  $_POST['<TIPO DE DOCUMENTO>'],
+           "number" => $_POST['<NUMERO>']
+       ],
+       "address" => [
+           "zip_code" => '$_POST['<CEP>'],
+           "city" => $_POST['<CIDADE>'],
+           "street_name" => $_POST['<RUA>'],
+           "street_number" =>$_POST['<NÚMERO>'],
+           "neighborhood"=> $_POST['<BAIRRO>'],
+           "federal_unit" => $_POST['<SIGLA ESTADO>']
+        ]
     ]
   ], $request_options);
   echo implode($payment);
@@ -339,34 +421,62 @@ const payments = new Payments(client);
 
 payments.create({
 body: {
-		transaction_amount: '<TRANSACTION_AMOUNT>',
-		payment_method_id: '<PAYMENT_METHOD_ID>',
-		payer: {
-			email: '<EMAIL>'
-			}
+       transaction_amount: '<TRANSACTION_AMOUNT>',
+       payment_method_id: '<PAYMENT_METHOD_ID>',
+       payer: {
+           email: '<EMAIL>',
+           first_name: '<NOMBRE>',
+           last_name: '<APELLIDO>',
+           identification:{
+               type:'<TIPO DE DOCUMENTO>',
+               number:'<NUMERO_DOCUMENTO>'
+       },
+           address:{
+               zip_code: '<CEP>',
+               city: '<CIUDAD>',
+               neighborhood: '<BARRIO>',
+               street_name: '<CALLE>',
+               street_number: '<NUMERO>',
+               federal_unit: '<SIGLA ESTADO>'
+       }
+           }
 },
-	requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+   requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
 })
-	.then((result) => console.log(result))
-	.catch((error) => console.log(error));
+   .then((result) => console.log(result))
+   .catch((error) => console.log(error));
+
 ```
 ```java
 PaymentCreateRequest paymentCreateRequest = PaymentCreateRequest.builder()
-          .transactionAmount(new BigDecimal("<TRANSACTION_AMOUNT>"))
-          .paymentMethodId("<PAYMENT_METHOD_ID>")
-          .payer(
-              PaymentPayerRequest.builder()
-                  .email("<EMAIL>").build()
-          ).build();
+         .transactionAmount(new BigDecimal("<TRANSACTION_AMOUNT>"))
+         .paymentMethodId("bolbradesco")
+         .payer(
+             PaymentPayerRequest.builder()
+                 .email("<EMAIL>")
+                 .firstName("<NAME>")
+                 .lastName("<LASTNAME>")
+                 .identification(IdentificationRequest.builder()
+                           .type("CPF")   
+                           .number("<NUMERO>").build())
+                 .address(PaymentPayerAddressRequest.builder()
+                           .streetName("<RUA XXX>")
+                           .streetNumber("123")
+                           .zipCode("<CEP>")
+                           .federalUnit("<SIGLA DO ESTADO>")
+                           .city("<CIDADE>")
+                           .neighborhood("<BAIRRO>").build()).build())
+         ).build();
 
 Map<String, String> customHeaders = new HashMap<>();
 customHeaders.put("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
 
 MPRequestOptions requestOptions = MPRequestOptions.builder()
-    .customHeaders(customHeaders).build();
+   .customHeaders(customHeaders).build();
 
 PaymentClient client = new PaymentClient();
 client.create(paymentCreateRequest, requestOptions);
+
 
 ```
 ```ruby
@@ -408,36 +518,37 @@ payment = payment_response[:response]
 ```
 ```csharp
 
-using MercadoPago.Config;
-using MercadoPago.Client.Common;
-using MercadoPago.Client.Payment;
-using MercadoPago.Resource.Payment;
-
-MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
-
-var requestOptions = new RequestOptions();
-requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
+MercadoPagoConfig.AccessToken = "<ENV_ACCESS_TOKEN>";
 
 var request = new PaymentCreateRequest
 {
-    TransactionAmount = 105,
-    Description = "Título del producto",
-    PaymentMethodId = "bolbradesco",
-    Payer = new PaymentPayerRequest
-    {
-        Email = "PAYER_EMAIL",
-        FirstName = "Test",
-        LastName = "User",
-        Identification = new IdentificationRequest
-        {
-            Type = "DNI",
-            Number = "19119119",
-        },
-    },
-};
+   TransactionAmount = 105,
+   Description = "<DESCRIPCIÓN>",
+   PaymentMethodId = "bolbradesco",
+   Payer = new PaymentPayerRequest
+   {
+       Email = "<EMAIL>",
+       FirstName = "<NOMBRE>",
+       LastName = "<APELLIDO>",
+       Identification = new IdentificationRequest
+       {
+           Type = "CPF",
+           Number = "<NUMERO DE CPF>",
+       },
+       Address = new  PaymentPayerAddressRequest
+       {
+           ZipCode = "<CÓDIGO POSTAL>",
+           StreetName = "<CALLE XXX>",
+           City = "<CIUDAD>",
+           StreetNumber = "<NÚMERO>",
+           Neighborhood = "<BARRIO>",
+           FederalUnit = "<SIGLA DE ESTADO>",
 
+       }
+   },
+};
 var client = new PaymentClient();
-Payment payment = await client.CreateAsync(request, requestOptions);
+Payment payment = await client.CreateAsync(request);
 
 ```
 ```python
@@ -474,6 +585,7 @@ payment_data = {
 
 payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
+
 ```
 ```go
 accessToken := "{{ACCESS_TOKEN}}"
@@ -481,48 +593,98 @@ accessToken := "{{ACCESS_TOKEN}}"
 
 cfg, err := config.New(accessToken)
 if err != nil {
-   fmt.Println(err)
-   return
+  fmt.Println(err)
+  return
 }
-
 
 client := paymentmethod.NewClient(cfg)
 
+request := payment.Request{
+       TransactionAmount: 105,
+       PaymentMethodID:   "bolbradesco",
+       Payer: &payment.PayerRequest{
+           Email:     "{{EMAIL}}",
+           FirstName: "{{NOME}}",
+           LastName:  "{{SOBRENOME}}",
+           Identification: &payment.IdentificationRequest{
+               Type:   "{{TIPO DO DOCUMENTO}}",
+               Number: "{{NUMERO}}",
+           },
+           Address: &payment.AddressRequest{
+               ZipCode:      "06233-200",
+               City:         "Osasco",
+               Neighborhood: "Bonfim",
+               StreetName:   "Av. das Nações Unidas",
+               StreetNumber: "3003",
+               FederalUnit:  "SP",
+           },
+       },
+   }
 
-resources, err := client.List(context.Background())
-if err != nil {
-   fmt.Println(err)
-   return
+   resource, err := client.Create(context.Background(), request)
+   if err != nil {
+       fmt.Println(err)
+       return
+   }
+
+   fmt.Println(resource)
 }
 
-
-for _, v := range resources {
-   fmt.Println(v)
-}
 ```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --header 'X-Idempotency-Key: <SOME_UNIQUE_VALUE>' \
+--header 'X-Product-Id: <SOME_UNIQUE_VALUE>' \
 --data-raw '{
-    "transaction_amount": 100,
-    "description": "Titulo do produto",
-    "payment_method_id": "bolbradesco",
-    "payer": {
-        "email": "test_user_12345@testuser.com",
-        "first_name": "Test",
-        "last_name": "User",
-        "identification": {
-            "type": "CPF",
-            "number": "01234567890"
-        }
-    }
+   "transaction_amount": 100,
+   "description": "Titulo do produto",
+   "payment_method_id": "bolbradesco",
+   "payer": {
+       "email": "test_user_12345@testuser.com",
+       "first_name": "Test",
+       "last_name": "User",
+       "identification": {
+           "type": "CPF",
+           "number": "01234567890"
+       }
+       "address": {
+           "zip_code": "88000000",
+           "street_name": "Nombre de calle",
+           "street_number": "123",
+           "neighborhood": "Barrio",
+           "city": "Ciudad",
+           "federal_unit": "UF"
+       }
+   }
 }'
-
 ```
 ]]]
 
+#### - Campos obligatorios para pagos con boleto bancário
+
+| Parámetro | Tipo | Descripción, valores posibles y ejemplos |
+|---|---|---|
+| `payment_method_id` | string | Método de pago. Para boleto, es siempre `bolbradesco`. |
+| `address.zip_code` | string | Código postal. Ejemplo: 88000000 |
+| `address.street_name` | string | Nombre de la calle del comprador. Ejemplo: Rua da Abobrinha. |
+| `address.street_number` | string | Número de la dirección del comprador. Ejemplo: 1291 |
+| `address.neighborhood` | string | Barrio donde se ubica la dirección del comprador. Ejemplo: Copacabana. |
+| `address.city` | string | Ciudad donde vive el comprador. Ejemplo: Río de Janeiro. |
+| `address.federal_unit` | string | Sigla del Estado donde vive el comprador. Sólo se aceptan dos caracteres. Por ejemplo: RJ. |
+
+#### - Campos obligatorios para pagos en agencias de lotería
+
+| Parámetro | Tipo | Descripción, valores posibles y ejemplos |
+|---|---|---|
+| `payment_method_id` | string | Método de pago. Para pagos en agencia, es siempre `pec`. |
+
+> WARNING
+>
+> Importante
+>
+> En caso de necesitar información adicional sobre cómo enviar todos los campos requeridos en este llamado, dirígete a [Referencia de API](/developers/es/reference/payments/_payments/post).
 
 La respuesta mostrará el **status pendiente** hasta que el comprador realice el pago. Además, en la respuesta a la solicitud, el parámetro `external_resource_url` devolverá una URL que contiene las instrucciones para que el comprador realice el pago. Puedes redirigirlo a este mismo link para finalizar el flujo de pago.
 
@@ -631,7 +793,7 @@ Para configurar pagos con **Rapipago** y/o **Pago Fácil**, envía un **POST** c
 >
 > Atención
 >
-> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token. Consulta más información en [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials).
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token. Consulta más información en [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials). Además, se te solicitará enviar el *header* `X-Idempotency-Key` con tu llave de idempotencia para asegurar la ejecución y reejecución de las solicitudes evitando situaciones no deseadas, como pagos duplicados, por ejemplo.
 
 [[[
 ```php
@@ -886,7 +1048,7 @@ Para configurar pagos con **OXXO**, **Paycash**,  **Citibanamex**,  **Santander*
 >
 > Atención
 >
-> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token. Consulta más información en [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials).
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token. Consulta más información en [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials). Además, se te solicitará enviar el *header* `X-Idempotency-Key` con tu llave de idempotencia para asegurar la ejecución y reejecución de las solicitudes evitando situaciones no deseadas, como pagos duplicados, por ejemplo.
 
 [[[
 ```php
@@ -1102,7 +1264,7 @@ Para configurar pagos con **PagoEfectivo**, envía un **POST** con los parámetr
 >
 > Atención
 >
-> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token. Consulta más información en [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials).
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token. Consulta más información en [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials). Además, se te solicitará enviar el *header* `X-Idempotency-Key` con tu llave de idempotencia para asegurar la ejecución y reejecución de las solicitudes evitando situaciones no deseadas, como pagos duplicados, por ejemplo.
 
 [[[
 ```php
@@ -1307,7 +1469,7 @@ Para configurar pagos con **Efecty**, envía un **POST** con los parámetros req
 >
 > Atención
 >
-> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token. Consulta más información en [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials).
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token. Consulta más información en [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials). Además, se te solicitará enviar el *header* `X-Idempotency-Key` con tu llave de idempotencia para asegurar la ejecución y reejecución de las solicitudes evitando situaciones no deseadas, como pagos duplicados, por ejemplo.
 
 [[[
 ```php
@@ -1565,7 +1727,7 @@ Para configurar pagos con **Abitab** y/o **Redpagos**, envía un POST con los si
 >
 > Atención
 >
-> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token. Consulta más información en [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials).
+> Para esta etapa, al realizar la solicitud vía API o SDKs, es necesario que envíes tu clave privada - Access Token. Consulta más información en [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials). Además, se te solicitará enviar el *header* `X-Idempotency-Key` con tu llave de idempotencia para asegurar la ejecución y reejecución de las solicitudes evitando situaciones no deseadas, como pagos duplicados, por ejemplo.
 
 [[[
 ```php

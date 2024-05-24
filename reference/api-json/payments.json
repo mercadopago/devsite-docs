@@ -819,6 +819,14 @@
                         }
                       },
                       {
+                        "title": "bolbradesco",
+                        "description": {
+                          "en": "Boleto bancário. Offline payment method used in Brazil.",
+                          "es": "Boleto bancário. Método de pago offline utilizado en Brasil.",
+                          "pt": "Boleto bancário. Método de pagamento offline utilizado no Brasil."
+                        }
+                      },
+                      {
                         "title": "Debin_transfer",
                         "description": {
                           "en": "Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.",
