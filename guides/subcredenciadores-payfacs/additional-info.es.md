@@ -6,7 +6,7 @@ A continuación, encontrará algunas observaciones y buenas prácticas para la i
 
 El Facilitador de Pagos debe asignar para cada transacción el MCC que describa de forma más precisa la actividad final de su subcomercio.
 
-Según la orientación de las marcas de tarjetas y la Normativa nº 28 de Abecs (Asociación Brasilera de Empresas de Tarjetas de Crédito y Servicios), la asignación del MCC debe seguir obligatoriamente las siguientes reglas conforme a la prioridad siguiente:
+Según la orientación de las marcas de tarjetas y la Normativa nº 28 de Abecs (Asociación Brasilera de Empresas de Tarjetas de Crédito y Servicios), la asignación del MCC debe seguir obligatoriamente las siguientes reglas descritas a continuación:
 
 1. **MCC determinado por el Comité de Bandas de Abecs;**
 2. **MCC considerando el CNAE Primario listado en la Tabla "de/para" (disponible en el Registro Unificado de MCC de Abecs).**
