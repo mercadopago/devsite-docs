@@ -19,8 +19,6 @@ Puedes agregar el código de seguridad de Mercado Pago a tu sitio o aplicación 
 
 Para usar el Device ID en la web y prevenir posibles compras fraudulentas, debes seguir los siguientes pasos:
 
-## Uso del Device ID en la web
-Para usar el Device ID en la web y prevenir posibles compras fraudulentas, debes seguir los siguientes pasos:
 
 ### 1. Agrega nuestro código de seguridad
 
