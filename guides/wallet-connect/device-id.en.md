@@ -6,7 +6,7 @@ If a customer makes a purchase on a different device than usual, this may repres
 
 ## Get and send the Device ID
 
-You can add the Mercado Pago security code to your website or native mobile application by replacing the value of `view` with the name of the section you want to add it to on your website. While it is most important to do this on the checkout page, you can also add it to other pages such as home, search, or item, as it helps to enrich the collected information.
+You can add the Mercado Pago security code to your website or native mobile application by replacing the value `view` with the name of the section of your website where you want to add it.
 
 > NOTE
 >

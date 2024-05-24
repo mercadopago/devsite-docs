@@ -31,6 +31,7 @@ With these parameters in hands, send a **POST** to the endpoint [/v1/advanced_pa
 curl -X POST \
     'https://api.mercadopago.com/v1/advanced_payments' \
     -H 'X-Idempotency-Key: IDEMPOTENCY_KEY' \
+    -H 'X-Meli-Session-Id: DEVICE_ID' \
     -H 'Authorization: Bearer ACCESS_TOKEN' \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \

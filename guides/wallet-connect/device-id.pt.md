@@ -7,7 +7,7 @@ Caso um comprador frequente faça uma compra a partir de um dispositivo diferent
 
 ## Obter e enviar o Device ID
 
-Você pode **adicionar o código de segurança do Mercado Pago** na sua página substituindo o valor de `view` pelo nome da seção na qual deseja adicioná-lo. O mais importante é adicioná-lo na **página do checkout**, porém adicionar em **outras páginas**, como home, search ou item, também ajuda a enriquecer as informações coletadas.
+Você pode adicionar o código de segurança do Mercado Pago ao seu site ou aplicação móvel nativo substituindo o valor `view` pelo nome da seção do seu site na qual deseja adicioná-lo.
 
 
 > NOTE
