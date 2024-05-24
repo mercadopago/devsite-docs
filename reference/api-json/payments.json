@@ -1046,6 +1046,14 @@
                           }
                         },
                         {
+                          "title": "refunded",
+                          "description": {
+                            "en": "The amount was refunded by collector.",
+                            "es": "El valor fue devuelto por el collector.",
+                            "pt": "O valor foi devolvido pelo collector."
+                        }
+                        },
+                        {
                           "title": "settled",
                           "description": {
                             "en": "The transaction money was withheld from the collector after a chargeback recovery process.",
