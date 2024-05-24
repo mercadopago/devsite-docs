@@ -27,6 +27,8 @@ Code used in different requests of public origin to access a protected resource 
 > - `authorization_code`: duration of 10 minutes and single-use.
 > - `refresh_token`: duration of 6 months and can be reused.
 
+See how to [generate] and [renew] the Access Token.
+
 ### PKCE
   
 **PKCE** (Proof Key for Code Exchange) is a security protocol used with OAuth to protect against malicious code attacks during the exchange of authorization codes for an Access Token. It adds an extra layer of security by generating a verifier that is transformed into a challenge to ensure that even if the authorization code is intercepted, it is not useful without the original verifier. 

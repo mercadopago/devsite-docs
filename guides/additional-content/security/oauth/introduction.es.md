@@ -27,6 +27,8 @@ Los flujos, también llamados grant types, se refieren a la forma en que una apl
 > - `authorization_code`: duración de 10 minutos y su uso es único.
 > - `refresh_token`: duración de 6 meses y pueden ser reutilizados.
 
+Vea cómo [generar] y [renovar] el Access Token.
+
 ### PKCE 
 
 El **PKCE** (_Proof Key for Code Exchange_) es un protocolo de seguridad utilizado con OAuth para proteger contra ataques de código malicioso durante el intercambio de códigos de autorización por Access Token. Añade una capa extra de seguridad generando un _verifier_ que se transforma en un _challenge_ para asegurar que, incluso si el código de autorización es interceptado, no sea útil sin el _verifier_ original. 
