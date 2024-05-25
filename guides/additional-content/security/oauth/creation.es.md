@@ -4,18 +4,18 @@ Aprenda a utilizar los flujos, también conocidos como _grant types_, para obten
 
 Los flujos de acceso disponibles para la generación del Access Token son:
 
-- [Authorization code]()
-- [Client credentials]()
+- [Authorization code](/developers/es/docs/security/oauth/creation#bookmark_authorization_code)
+- [Client credentials](/developers/es/docs/security/oauth/creation#bookmark_client_credentials)
 
 > NOTE
 >
 > Importante
 >
-> Si un Access Token generado a partir del flujo **Authorization code** está inválido o expirado, podrá utilizar el flujo **Refresh Token** para intercambiar una concesión temporal del tipo `refresh_token` por un Access Token. Es decir, permite que el Access Token se actualice sin la necesidad de una nueva interacción del usuario después de la autorización concedida `authorization_code`. Para más información, visite [Renovar Access Token](/developers/es/guides/additional-content/security/oauth/renewal).
+> Si un Access Token generado a partir del flujo **Authorization code** está inválido o expirado, podrá utilizar el flujo **Refresh Token** para intercambiar una concesión temporal del tipo `refresh_token` por un Access Token. Es decir, permite que el Access Token se actualice sin la necesidad de una nueva interacción del usuario después de la autorización concedida. Para más información, visite [Renovar Access Token](/developers/es/guides/additional-content/security/oauth/renewal).
 
 ## Authorization code
  
-El flujo de `authorization_code` se caracteriza por la intervención del vendedor para autorizar explícitamente el acceso de la aplicación a sus datos y por el uso de un código otorgado por el servidor de autenticación para que la aplicación pueda obtener un Access Token y un refresh token asociado.
+El flujo de se caracteriza por la intervención del vendedor para autorizar explícitamente el acceso de la aplicación a sus datos y por el uso de un código otorgado por el servidor de autenticación para que la aplicación pueda obtener un Access Token y un refresh token asociado.
  
 Debido a que se trata de un flujo basado en la redirección, debes permitir la interacción con el navegador del vendedor y recibir el `request` a través de la redirección del servidor de autorización. En este flujo, la aplicación solicita al vendedor el consentimiento expreso para acceder a los datos mediante la apertura de una página web en la que se explicitan los ámbitos a los que se solicita el acceso.
   
@@ -63,7 +63,13 @@ https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`
 
 Access Token es el código utilizado en diferentes solicitudes de origen público para acceder a un recurso protegido que representa una autorización otorgada por un vendedor a una aplicación cliente que contiene scopes y un tiempo de vigencia limitado para dicho acceso. Sigue los pasos a continuación para obtenerlo.
 
+> WARNING
 >
+> Atención
+>
+> Se recomienda realizar este procedimiento de una única vez junto con el usuario, ya que el código recibido por la Redirect URL después de la autorización tiene una validez de 10 minutos y el Access Token recibido a través del endpoint tiene una validez de 180 días (6 meses).
+> <br><br>
+> Para generar credenciales de _sandbox_ para pruebas, envíe el parámetro `test_token` con el valor `true`.
 
 1. Edita tu aplicación para que contenga tu Redirect URL. Consulta [Editar aplicación](/developers/es/guides/additional-content/your-integrations/application-details).
 2. Envía la URL de autenticación con los siguientes campos al vendedor con cuya cuenta deseas vincular  la tuya:
@@ -85,13 +91,5 @@ Access Token es el código utilizado en diferentes solicitudes de origen públic
    | Redirect URL | https://www.redirect-url.com?code=CODE&state=RANDOM_ID |
  
 5. Envía tus credenciales y código de autorización al endpoint [/oauth/token](/developers/es/reference/oauth/_oauth_token/post) para recibir el Access Token como respuesta.
- 
-> WARNING
->
-> Importante
->
-> Se recomienda realizar este procedimiento de una única vez junto con el usuario, ya que el código recibido por la Redirect URL después de la autorización tiene una validez de 10 minutos y el Access Token recibido a través del endpoint tiene una validez de 180 días.
-> <br><br>
-> Para generar credenciales de sandbox para pruebas, envíe el parámetro `test_token` con el valor `true`.
 
 ## Client credentials
