@@ -57,11 +57,11 @@ https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`
   - Se não for possível usar **S256** por algum motivo técnico e o servidor suportar o método **Plain**, é possível definir o `code_challenge` igual ao `code_verifier`.
 - **Code_challenge_method**: é o método utilizado para gerar o `code_challenge`, conforme descrito no item acima. Este campo poderá ser, por exemplo, **S256** ou **Plain**, de acordo com a codificação selecionada na etapa de `code_challenge`. <br>
 
-3. Tendo enviado os códigos corretamente ao Mercado Pago, você obterá a autorização necessária para obter o Access Token e realizar a verificação por PKCE nas transações feitas com OAuth.
+3. Tendo enviado os códigos corretamente ao Mercado Pago, você obterá a autorização necessária (`code_verifier`) para obter o Access Token e realizar a verificação por PKCE nas transações feitas com OAuth.
 
-### Obter Token
+### Obter token
 
-O Access Token é o código utilizado em diferentes _requests_ públicos para acessar um recurso protegido. Ele representa uma autorização concedida por um vendedor a uma aplicação do cliente, contendo _scopes_ e um tempo de validade limitado para o acesso. Siga os passos abaixo para obtê-lo.
+O Access Token é o código utilizado em diferentes _requests_ públicos para acessar um recurso protegido. Nesse fluxo, ele representa uma autorização concedida por um vendedor a uma aplicação do cliente, contendo _scopes_ e um tempo de validade limitado para o acesso. Siga os passos abaixo para obtê-lo.
 
 > WARNING
 >
@@ -88,6 +88,17 @@ O Access Token é o código utilizado em diferentes _requests_ públicos para ac
    |---|---|
    | Redirect URL | https://www.redirect-url.com?code=CODE&state=RANDOM_ID |
  
-5. Envie as suas credenciais e o código de autorização ao endpoint [/oauth/token](/developers/pt/reference/oauth/_oauth_token/post) para receber como resposta o Access Token.
+5. Envie as suas [credenciais](/developers/pt/docs/your-integrations/credentials) (`client_id` e `client_secret`), o **código de autorização** (`code`) retornado e, caso tenha [configurado o PKCE](/developers/pt/docs/security/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-O%20PKCE%20), o `code_verifier` ao endpoint [/oauth/token](/developers/pt/reference/oauth/_oauth_token/post) para receber como resposta o Access Token.
 
 ## Client credentials
+
+Este fluxo é utilizado quando as aplicações solicitam um Access Token usando apenas as suas próprias credenciais e para acessar seus próprios recursos. A principal diferença em relação aos outros fluxos é que o usuário não interage no processo e, consequentemente, a aplicação não pode atuar em nome do usuário.
+
+### Obter token
+
+O Access Token é o código utilizado em diferentes _requests_ públicos para acessar um recurso protegido. Neste fluxo, obtém-se o Access Token sem interação do usuário e apenas para acessar seus próprios recursos.
+
+Siga os passos abaixo para obtê-lo.
+ 
+1. Envie as suas [credenciais](/developers/pt/docs/your-integrations/credentials) (`client_id` e `client_secret`) ao endpoint [/oauth/token](/developers/pt/reference/oauth/_oauth_token/post) com o código `client_credentials` no parâmetro `grant_type` para receber uma nova resposta com o `access_token`.
+2. Atualize a aplicação com o Access Token recebido na resposta.

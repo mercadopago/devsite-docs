@@ -57,11 +57,11 @@ https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`
   - If it's not possible to use **S256** for some technical reason and the server supports the **Plain** method, it's possible to set the c`ode_challenge` equal to the `code_verifier`.
 - **Code_challenge_method**: is the method used to generate the `code_challenge`, as described in the above item. This field can be, for example, **S256** or **Plain**, depending on the encoding selected in the `code_challenge stage`. </br>
 
-3. After correctly sending the codes to Mercado Pago, you will obtain the necessary authorization for get the Access Token and perform PKCE verification on transactions made with OAuth.
+3. After correctly sending the codes to Mercado Pago, you will obtain the necessary authorization (`code_verifier`)  for get the Access Token and perform PKCE verification on transactions made with OAuth.
 
-### Get Token
+### Get token
 
-Access Token is the code used in different requests of public origin to access a protected resource that represents an authorization granted by a seller to a client application that contains scopes and a limited period of time for such access. Follow the steps below to obtain it.
+Access Token is the code used in different requests of public origin to access a protected resource. In this flow, that represents an authorization granted by a seller to a client application that contains scopes and a limited period of time for such access. Follow the steps below to obtain it.
 
 > WARNING
 >
@@ -88,6 +88,17 @@ Access Token is the code used in different requests of public origin to access a
    |---|---|
    | Redirect URL | https://www.redirect-url.com?code=CODE&state=RANDOM_ID |
  
-5. Send your credentials and authorization code to the [/oauth/token](/developers/en/reference/oauth/_oauth_token/post) endpoint to receive the Access Token in response.
+5. Send your [credentials](/developers/en/docs/your-integrations/credentials) (`client_id` and `client_secret`), the **authorization code** (`code`) returned and, if you have [configured the PKCE](/developers/en/docs/security/oauth/creation#:~:text=Access%20Token.-,Configure%20PKCE,-The%20PKCE%20), the `code_verifier` to the [/oauth/token](/developers/en/reference/oauth/_oauth_token/post) endpoint to receive the Access Token in response.
 
 ## Client credentials
+
+This flow is used when applications request an Access Token using only their own credentials and to access their own resources. The main difference compared to other flows is that the user does not interact in the process, and consequently, the application cannot act on behalf of the user.
+
+### Get token
+
+Access Token is the code used in different requests of public origin to access a protected resource. In this flow, the Access Token is obtained without user interaction and only to access the application's own resources.
+
+Follow the steps below to obtain it.
+
+1. Send your [credentials](/developers/en/docs/your-integrations/credentials) (`client_id` and `client_secret`) to the [/oauth/token](/developers/en/reference/oauth/_oauth_token/post) endpoint with the `client_credentials` code in the `grant_type` parameter to receive a new response with a new `access_token`.
+2. Update the application with the Access Token received in the response.

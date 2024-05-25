@@ -12,11 +12,11 @@ The flow allows you to continue using a valid Access Token with the same charact
  
 Follow the steps below to renew the **Access Token**.
  
-1. Send the `refresh_token` code, your **credentials**, and the `authorization_code` (see [Creation](/developers/en/guides/additional-content/security/oauth/creation)) to the [/oauth/token](/developers/en/reference/oauth/_oauth_token/post) endpoint with the `refresh_token` code in the `grant_type` parameter to receive a new response with a new Access Token and a new `refresh_token`.
+1. Send the `refresh_token` code, your [credentials](/developers/en/docs/your-integrations/credentials), and the `authorization_code` (see [Creation](/developers/en/docs/security/oauth/creation#bookmark_authorization_code)) to the [/oauth/token](/developers/en/reference/oauth/_oauth_token/post) endpoint with the `refresh_token` code in the `grant_type` parameter to receive a new response with a new `access_token` and a new `refresh_token`.
 2. Update the application with the Access Token received in the response.
  
 > WARNING
 >
 > Important
 >
-> Remember that every time you refresh the Access Token, the `refresh_token` will also be refreshed, so you will need to store it again.
+> Remember that every time you refresh the `access_token`, the `refresh_token` will also be refreshed, so you will need to store it again.
