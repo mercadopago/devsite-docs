@@ -379,39 +379,40 @@ Para configurar pagos con **boleto bancario** o **pago en agencia de lotería**,
 [[[
 ```php
 <?php
- use MercadoPago\Client\Payment\PaymentClient;
- use MercadoPago\Client\Common\RequestOptions;
- use MercadoPago\MercadoPagoConfig;
 
- MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+use MercadoPago\Client\Payment\PaymentClient;
+use MercadoPago\Client\Common\RequestOptions;
+use MercadoPago\MercadoPagoConfig;
 
- $client = new PaymentClient();
- $request_options = new RequestOptions();
- $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
- $payment = $client->create([
-"transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
-   "payment_method_id" => $_POST['<PAYMENT_METHOD_ID>'],
-   "payer" => [
-     "email" => $_POST['<EMAIL>'],
-     "first_name" => $_POST['<NOME>'],
-       "last_name" => $_POST['<SOBRENOME>'],
-       "identification" => [
-           "type" =>  $_POST['<TIPO DE DOCUMENTO>'],
-           "number" => $_POST['<NUMERO>']
-       ],
-       "address" => [
-           "zip_code" => '$_POST['<CEP>'],
-           "city" => $_POST['<CIDADE>'],
-           "street_name" => $_POST['<RUA>'],
-           "street_number" =>$_POST['<NÚMERO>'],
-           "neighborhood"=> $_POST['<BAIRRO>'],
-           "federal_unit" => $_POST['<SIGLA ESTADO>']
-        ]
+$client = new PaymentClient();
+$request_options = new RequestOptions();
+$request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+
+$payment = $client->create([
+  "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+  "payment_method_id" => $_POST['<PAYMENT_METHOD_ID>'],
+  "payer" => [
+    "email" => $_POST['<EMAIL>'],
+    "first_name" => $_POST['<NOME>'],
+    "last_name" => $_POST['<SOBRENOME>'],
+    "identification" => [
+      "type" =>  $_POST['<TIPO DE DOCUMENTO>'],
+      "number" => $_POST['<NUMERO>']
+    ],
+    "address" => [
+      "zip_code" => $_POST['<CEP>'],
+      "city" => $_POST['<CIDADE>'],
+      "street_name" => $_POST['<RUA>'],
+      "street_number" => $_POST['<NÚMERO>'],
+      "neighborhood" => $_POST['<BAIRRO>'],
+      "federal_unit" => $_POST['<SIGLA DO ESTADO>']
     ]
-  ], $request_options);
-  echo implode($payment);
-?>
+  ]
+], $request_options);
+echo implode($payment);
+
 ```
 ```node
 import { MercadoPagoConfig, Payments } from 'mercadopago';
@@ -449,34 +450,26 @@ body: {
 ```
 ```java
 PaymentCreateRequest paymentCreateRequest = PaymentCreateRequest.builder()
-         .transactionAmount(new BigDecimal("<TRANSACTION_AMOUNT>"))
-         .paymentMethodId("bolbradesco")
-         .payer(
-             PaymentPayerRequest.builder()
-                 .email("<EMAIL>")
-                 .firstName("<NAME>")
-                 .lastName("<LASTNAME>")
-                 .identification(IdentificationRequest.builder()
-                           .type("CPF")   
-                           .number("<NUMERO>").build())
-                 .address(PaymentPayerAddressRequest.builder()
-                           .streetName("<RUA XXX>")
-                           .streetNumber("123")
-                           .zipCode("<CEP>")
-                           .federalUnit("<SIGLA DO ESTADO>")
-                           .city("<CIDADE>")
-                           .neighborhood("<BAIRRO>").build()).build())
-         ).build();
-
-Map<String, String> customHeaders = new HashMap<>();
-customHeaders.put("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
-
-MPRequestOptions requestOptions = MPRequestOptions.builder()
-   .customHeaders(customHeaders).build();
-
-PaymentClient client = new PaymentClient();
-client.create(paymentCreateRequest, requestOptions);
-
+    .transactionAmount(new BigDecimal("<TRANSACTION_AMOUNT>"))
+    .paymentMethodId("bolbradesco")
+    .payer(PaymentPayerRequest.builder()
+        .email("<EMAIL>")
+        .firstName("<NAME>")
+        .lastName("<LASTNAME>")
+        .identification(IdentificationRequest.builder()
+            .type("CPF")
+            .number("<NUMERO>")
+            .build())
+        .address(PaymentPayerAddressRequest.builder()
+            .streetName("<RUA XXX>")
+            .streetNumber("123")
+            .zipCode("<CEP>")
+            .federalUnit("<SIGLA DO ESTADO>")
+            .city("<CIDADE>")
+            .neighborhood("<BAIRRO>")
+            .build())
+        .build())
+    .build();
 
 ```
 ```ruby
@@ -597,38 +590,40 @@ if err != nil {
   return
 }
 
-client := paymentmethod.NewClient(cfg)
+client := payment.NewClient(cfg)
+
 
 request := payment.Request{
-       TransactionAmount: 105,
-       PaymentMethodID:   "bolbradesco",
-       Payer: &payment.PayerRequest{
-           Email:     "{{EMAIL}}",
-           FirstName: "{{NOME}}",
-           LastName:  "{{SOBRENOME}}",
-           Identification: &payment.IdentificationRequest{
-               Type:   "{{TIPO DO DOCUMENTO}}",
-               Number: "{{NUMERO}}",
-           },
-           Address: &payment.AddressRequest{
-               ZipCode:      "06233-200",
-               City:         "Osasco",
-               Neighborhood: "Bonfim",
-               StreetName:   "Av. das Nações Unidas",
-               StreetNumber: "3003",
-               FederalUnit:  "SP",
-           },
-       },
-   }
-
-   resource, err := client.Create(context.Background(), request)
-   if err != nil {
-       fmt.Println(err)
-       return
-   }
-
-   fmt.Println(resource)
+   TransactionAmount: 105,
+   PaymentMethodID:   "bolbradesco",
+   Payer: &payment.PayerRequest{
+      Email:     "{{EMAIL}}",
+      FirstName: "{{NOME}}",
+      LastName:  "{{SOBRENOME}}",
+      Identification: &payment.IdentificationRequest{
+         Type:   "{{TIPO DO DOCUMENTO}}",
+         Number: "{{NUMERO}}",
+      },
+      Address: &payment.AddressRequest{
+         ZipCode:      "06233-200",
+         City:         "Osasco",
+         Neighborhood: "Bonfim",
+         StreetName:   "Av. das Nações Unidas",
+         StreetNumber: "3003",
+         FederalUnit:  "SP",
+      },
+   },
 }
+
+
+resource, err := client.Create(context.Background(), request)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+fmt.Println(resource)
 
 ```
 ```curl

@@ -799,6 +799,70 @@
                           "pt": "Sobrenome do pagante associado",
                           "es": "Apellido del pagador asociado"
                         }
+                      },
+                      "address": {
+                        "type": "object",
+                        "description": {
+                          "en": "Information about the payer's address. Sending it is required when creating payments with boleto bancário in Brazil.",
+                          "pt": "Informações sobre o endereço do pagador. Seu envio é obrigatório ao criar pagamentos com boleto bancário no Brasil.",
+                          "es": "Información sobre la dirección del pagador. Su envío es obligatorio al crear pagos con boleto bancário en Brasil."
+                        },
+                        "properties": {
+                          "zip_code": {
+                            "type": "string",
+                            "description": {
+                              "en": "Refers to the zip code of the buyer's address.",
+                              "pt": "Refere-se ao CEP. ",
+                              "es": "Se refiere al código postal."
+                            },
+                            "example": "88000000"
+                          },
+                          "street_name": {
+                            "type": "string",
+                            "description": {
+                              "en": "Buyer's street name.",
+                              "pt": "Nome da rua do comprador.",
+                              "es": "Nombre de la calle del comprador."
+                            },
+                            "example": "Rua da Abobrinha"
+                          },
+                          "street_number": {
+                            "type": "string",
+                            "description": {
+                              "en": "Buyer's address number.",
+                              "pt": "Número do endereço do comprador.",
+                              "es": "Número de la dirección del comprador."
+                            },
+                            "example": "1291"
+                          },
+                          "neighborhood": {
+                            "type": "string",
+                            "description": {
+                              "en": "Neighborhood where the buyer's address is located.",
+                              "pt": "Bairro onde está localizado o endereço do comprador.",
+                              "es": "Barrio donde se ubica la dirección del comprador."
+                            },
+                            "example": "Copacabana"
+                          },
+                          "city": {
+                            "type": "string",
+                            "description": {
+                              "en": "City where the buyer lives.",
+                              "pt": "Cidade onde o comprador mora.",
+                              "es": "Ciudad donde vive el comprador."
+                            },
+                            "example": "Rio de Janeiro"
+                          },
+                          "federal_unit": {
+                            "type": "string",
+                            "description": {
+                              "pt": "Sigla do Estado onde o comprador mora.",
+                              "en": "State abbreviation where the buyer lives.",
+                              "es": "Sigla del Estado donde vive el comprador."
+                            },
+                            "example": "RJ"
+                          }
+                        }
                       }
                     }
                   },
