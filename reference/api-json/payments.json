@@ -1073,7 +1073,7 @@
                           "title": "partially_refunded",
                           "description":{
                             "en": "Payment with at least one partial refund",
-                            "es": "Pago con al menos un refund parcial",
+                            "es": "Pago con al menos un reembolso parcial",
                             "pt": "Pagamento com pelo menos um reembolso parcial"
                           }
                         },

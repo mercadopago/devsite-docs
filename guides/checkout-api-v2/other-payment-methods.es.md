@@ -437,7 +437,7 @@ body: {
                city: '<CIUDAD>',
                neighborhood: '<BARRIO>',
                street_name: '<CALLE>',
-               street_number: '<NUMERO>',
+               street_number: '<NÚMERO>',
                federal_unit: '<SIGLA ESTADO>'
        }
            }

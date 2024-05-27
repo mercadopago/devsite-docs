@@ -207,7 +207,7 @@ With the MercadoPago.js library included, add the payment form below to your pro
         <input id="form-checkout__payerFirstName" name="payerFirstName" type="text">
       </div>
       <div>
-        <label for="payerLastName">Appelido</label>
+        <label for="payerLastName">Apellido</label>
         <input id="form-checkout__payerLastName" name="payerLastName" type="text">
       </div>
       <div>
@@ -368,7 +368,7 @@ To configure payments with **Boleto Bancário** or **Pagamento em lotérica**, s
 >
 > Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. For more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials). Besides, sending the header `X-Idempotency-Key` with your idempotency key will be requested to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. For more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials). In addition, sending the header `X-Idempotency-Key` with your idempotency key will be requested to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 
 [[[
@@ -432,7 +432,7 @@ body: {
                city: '<CIUDAD>',
                neighborhood: '<BARRIO>',
                street_name: '<CALLE>',
-               street_number: '<NUMERO>',
+               street_number: '<NÚMERO>',
                federal_unit: '<SIGLA ESTADO>'
        }
            }
@@ -782,7 +782,7 @@ To configure payments with **Rapipago** and/or **Pago Fácil**, send a **POST** 
 >
 > Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. For more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials). Besides, sending the header `X-Idempotency-Key` with your idempotency key will be requested to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. For more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials). In addition, sending the header `X-Idempotency-Key` with your idempotency key will be requested to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 [[[
 ```php
@@ -1025,7 +1025,7 @@ To configure payments with **OXXO**, **Paycash**, **Citibanamex**, **Santander**
 >
 > Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. For more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials). Besides, sending the header `X-Idempotency-Key` with your idempotency key will be requested to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. For more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials). In addition, sending the header `X-Idempotency-Key` with your idempotency key will be requested to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 [[[
 ```php
@@ -1241,7 +1241,7 @@ To configure payments with **PagoEfectivo**, send a **POST** with the required p
 >
 > Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. For more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials). Besides, sending the header `X-Idempotency-Key` with your idempotency key will be requested to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. For more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials). In addition, sending the header `X-Idempotency-Key` with your idempotency key will be requested to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 [[[
 ```php
@@ -1444,7 +1444,7 @@ To configure payments with **Efecty**, send a **POST** with the appropriate para
 >
 > Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. For more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials). Besides, sending the header `X-Idempotency-Key` with your idempotency key will be requested to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. For more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials). In addition, sending the header `X-Idempotency-Key` with your idempotency key will be requested to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 [[[
 ```php
@@ -1706,7 +1706,7 @@ To configure payments with **Abitab** and/or **Redpagos**, send a **POST** with 
 >
 > Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. For more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials). Besides, sending the header `X-Idempotency-Key` with your idempotency key will be requested to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. For more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials). In addition, sending the header `X-Idempotency-Key` with your idempotency key will be requested to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 [[[
 ```php
