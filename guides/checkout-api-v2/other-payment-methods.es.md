@@ -412,7 +412,7 @@ $payment = $client->create([
   ]
 ], $request_options);
 echo implode($payment);
-
+?>
 ```
 ```node
 import { MercadoPagoConfig, Payments } from 'mercadopago';

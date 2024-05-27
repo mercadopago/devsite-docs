@@ -409,7 +409,7 @@ $payment = $client->create([
   ]
 ], $request_options);
 echo implode($payment);
-
+?>
 ```
 ```node
 import { MercadoPagoConfig, Payments } from 'mercadopago';
@@ -672,7 +672,7 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 |---|---|---|
 | `payment_method_id` | string | Método de pagamento. Para lotéricas, é sempre `pec`. |
 
-> AVISO
+> WARNING
 >
 > Importante
 >
