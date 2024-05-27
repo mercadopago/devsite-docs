@@ -1,6 +1,6 @@
 # Pré-requisitos
 
-Para integrar a funcionalidade Money Out, é preciso cumprir com os requisitos listados abaixo.
+Para integrar a funcionalidade Money Out, é necessária a autorização da nossa área comercial. Caso esta autorização já tenha sido concedida, é preciso cumprir com os requisitos listados abaixo.
 
 | Requisito | Descrição |
 |---|---|

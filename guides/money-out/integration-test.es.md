@@ -8,7 +8,7 @@ Antes de salir a producción, recomendamos probar el correcto funcionamiento de 
 >
 > Para probar el correcto funcionamiento de tu integración antes de salir a producción, deberás utilizar tu **Access Token de pruebas**. 
 
-La prueba de integración de Money Out consiste en la creación de transacciones con estados predefinidos. Estos estados se definirán en función del valor que envíes para el campo `external_reference`. Es decir, enviarás los datos para crear una transacción en función del `status` que quieres obtener como respuesta y, de esta manera, podrás constatar si el procesamiento está sucediendo correctamente. 
+La prueba de integración de Money Out consiste en la creación de transacciones con estados predefinidos. Estos estados se definirán en función del valor que envíes para el campo `external_reference`. Es decir, enviarás los datos para crear una transacción en función del `status` que quieres obtener como respuesta y, de esta manera, podrás constatar si el procesamiento está sucediendo correctamente. Por ejemplo, si el campo `external_reference=new`, deberías obtener un `status=new`.
 
 Todas las transacciones creadas en este entorno son transitorias y, por eso, no son almacenadas.
 

@@ -8,7 +8,7 @@ Antes de ir à produção, recomendamos testar o funcionamento correto da sua in
 >
 > Para testar o funcionamento da sua integração antes de ir à produção, utilize seu **Access Token de testes**. 
 
-O teste de integração de Money Out envolve a criação de transações com status predefinidos. Esses status serão definidos com base no valor que você enviar para o campo `external_reference`. Em outras palavras, você enviará os dados para criar uma transação com base no status que deseja obter como resposta e, dessa forma, poderá verificar se o processamento está ocorrendo corretamente. 
+O teste de integração de Money Out envolve a criação de transações com status predefinidos. Esses status serão definidos com base no valor que você enviar para o campo `external_reference`. Em outras palavras, você enviará os dados para criar uma transação com base no status que deseja obter como resposta e, dessa forma, poderá verificar se o processamento está ocorrendo corretamente. Por exemplo, se o campo `external_reference=new`, um `status=new` devería ser devolvido.
 
 Todas as transações criadas neste ambiente são transitórias e por isso não são armazenadas.
 

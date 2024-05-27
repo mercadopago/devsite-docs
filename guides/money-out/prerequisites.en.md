@@ -1,6 +1,6 @@
 # Prerequisites
 
-To integrate the Money Out functionality, you must meet the requirements shown below.
+To integrate the Money Out functionality, you must be authorized by our comercial area. If you have been authorized already, you must also meet the requirements shown below.
 
 | Requirement | Description |
 |---|---|

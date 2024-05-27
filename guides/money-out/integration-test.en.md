@@ -8,7 +8,7 @@ Before going live, we recommend testing the proper functioning of your integrati
 >
 > To test the proper functioning of your integration before going live, you must use your **Test Access Token**.
 
-The Money Out integration test consists of creating transactions with predefined status. These status will be defined based on the value you send for the `external_reference` field. In other words, you will send data to create a transaction based on the `status` you want to obtain as a response. In this way, you can verify if the processing is happening correctly.
+The Money Out integration test consists of creating transactions with predefined status. These status will be defined based on the value you send for the `external_reference` field. In other words, you will send data to create a transaction based on the `status` you want to obtain as a response. In this way, you can verify if the processing is happening correctly. For example, if the field `external_reference=new`, you should obtain a `status=new` in response.
 
 All transactions created in this environment are transitory and, therefore, are not stored.
 

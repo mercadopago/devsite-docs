@@ -14,7 +14,7 @@ Com o Money Out, é possível  enviar dinheiro de duas formas distintas: Pix ou 
 
 ## Configurar retiradas de dinheiro via Pix
 
-Para integrar o Money Out e permitir retiradas de dinheiro via Pix, é necessário enviar um **POST**, com seu **Access Token** no *header* `Authorization` e sua **chave de idempotencia** no *header* `X-Idempotency-Key`, para o endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). Os parâmetros correspondentes devem ser enviados conforme as especificações detalhadas na tabela a seguir.
+Para integrar o Money Out e permitir retiradas de dinheiro via Pix, é necessário enviar um **POST**, com seu **Access Token** no *header* `Authorization` e sua **chave de idempotencia** no *header* `X-Idempotency-Key`, para o endpoint [/v1/transaction-intents/process](/developers/pt/reference/money-out/pix-transfer/post). Os parâmetros correspondentes devem ser enviados conforme as especificações detalhadas na tabela a seguir.
 
 > NOTE
 >
@@ -27,7 +27,7 @@ Para integrar o Money Out e permitir retiradas de dinheiro via Pix, é necessár
 curl -X POST \
     'https://api.mercadopago.com/v1/transaction-intents/process'\
     -H 'Content-Type: application/json' \
-       -H 'X-Idempotency-Key: 0d5020ed-1af6-469c-ae06-c3bec19954bb' \
+       -H 'X-Idempotency-Key: {{idempotency_key}}' \
        -H 'x-Signature: true' \
        -H 'x-enforce-signature: false' \
        -H 'Authorization: Bearer TEST-7434*********159-03141*********cee51edf8*********f94f589-1*********' \
@@ -74,7 +74,7 @@ curl -X POST \
 |---|---|---|---|
 | `x-signature` | *Header*. Assinatura da solicitação com o corpo criptografado em base 64 usando as chaves pública e privada do integrador. Acesse a seção [Criptografia Ponta a Ponta](/developers/pt/docs/money-out/end-to-end-encryption) se precisar de mais informações. | Obrigatório **apenas no ambiente de produção**. | - |
 | `x-enforce-signature` | *Header*. Booleano que indica se o integrador enviará ou não a assinatura. | **Opcional** em ambiente de testes, e **obrigatório** em ambiente produtivo, que é quando é obrigatório o envio da assinatura. | - |
-| `external_reference` | *Body*. String com uma referência para identificar a transação. Essa referência é gerada pelo integrador e pode ser qualquer valor que permita rastrear as transações, desde que não possua caracteres especiais (“”, [ ], (), @) e não exceda 64 caracteres. São permitidos números, letras, hífens e sublinhados. | Opcional | MP0001 |
+| `external_reference` | *Body*. String com uma referência para identificar a transação. Essa referência é gerada pelo integrador e pode ser qualquer valor que permita rastrear as transações, desde que não possua caracteres especiais (“”, [ ], (), @) e não exceda 64 caracteres. São permitidos números (1234), letras (abcde), hífens (-) e underlines (_), e não pode ser duplicada. | Opcional | MP0001 |
 | `point_of_interaction.type` | *Body*. Valor fixo. Sempre deve ser `PSP_TRANSFER` | Obrigatório | `PSP_TRANSFER` |
 | `seller_configuration.notification_info.notification_url` | *Body*. URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. Este campo tem um limite de 500 caracteres. | Opcional | www.exemplo.com.br |
 | `transaction.from.accounts.amount` | *Body*. Valor da transação, que será retirado da conta de origem `from`. O valor mínimo é 0, e o valor máximo é 10000000000. | Obrigatório | 100,00 |
@@ -138,9 +138,9 @@ Se a execução for bem-sucedida, você receberá automaticamente uma resposta c
 |---|---|
 | `id` | Identificador único da transação, gerado automaticamente. |
 | `status` | Status da transação. Para verificar os possíveis status, consulte a seção [Possíveis status de uma transação](/developers/pt/docs/money-out/integration-configuration#bookmark_possíveis_status_de_uma_transação). |
-| `created_date` | Data de criação da transação. |
+| `created_date` | Data de criação da transação. Será retornada no formato YYYY-MM-DDTHH:MM:SS.SSSZ. |
 | `external_reference` | Referência externa da transação, gerada pelo integrador na hora da criação. |
-| `last_updated_date` | Última atualização do status da transação. |
+| `last_updated_date` | Última atualização do status da transação. Será retornada no formato YYYY-MM-DDTHH:MM:SS.SSSZ. |
 | `point_of_interaction.type` | Ponto de interação. Valor fixo. Sempre deve ser `PSP_TRANSFER`. |
 | `seller_configuration.notification_info.notification_url` | URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. |
 | `transaction.from.accounts.amount` | Valor debitado da conta Mercado Pago de origem. |
@@ -157,7 +157,7 @@ Se a execução for bem-sucedida, você receberá automaticamente uma resposta c
 
 ## Configurar retiradas de dinheiro para contas bancárias
 
-Para integrar Money Out e permitir retiradas de dinheiro para contas bancárias, é necessário enviar um **POST**, com seu **Access Token** no *header* `Authorization` e sua **chave de idempotencia** no *header* `X-Idempotency-Key`, para o endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). Os parâmetros correspondentes devem ser enviados conforme as especificações detalhadas na tabela a seguir.
+Para integrar Money Out e permitir retiradas de dinheiro para contas bancárias, é necessário enviar um **POST**, com seu **Access Token** no *header* `Authorization` e sua **chave de idempotencia** no *header* `X-Idempotency-Key`, para o endpoint [/v1/transaction-intents/process](/developers/pt/reference/money-out/bank-transfer-mlb/post). Os parâmetros correspondentes devem ser enviados conforme as especificações detalhadas na tabela a seguir.
 
 
 > NOTE
@@ -170,7 +170,7 @@ Para integrar Money Out e permitir retiradas de dinheiro para contas bancárias,
 curl -X POST \
     'https://api.mercadopago.com/v1/transaction-intents/process'\
     -H 'Content-Type: application/json' \
-       -H 'X-Idempotency-Key: 0d5020ed-1af6-469c-ae06-c3bec19954bb' \
+       -H 'X-Idempotency-Key: {{idempotency_key}}' \
        -H 'x-Signature: true' \
        -H 'x-enforce-signature: false' \
        -H 'Authorization: Bearer TEST-7434*********159-03141*********cee51edf8*********f94f589-1*********' \
@@ -219,7 +219,7 @@ curl -X POST \
 |---|---|---|---|
 | `x-signature` | *Header*. Assinatura da solicitação com o corpo criptografado em base 64 usando as chaves pública e privada do integrador. Acesse a seção [Criptografia Ponta a Ponta](/developers/pt/docs/money-out/end-to-end-encryption) se precisar de mais informações. | Obrigatório **apenas no ambiente de produção**. | - |
 | `x-enforce-signature` | *Header*. Booleano que indica se o integrador enviará ou não a assinatura. | **Opcional** em ambiente de testes, e **obrigatório** em ambiente produtivo, que é quando é obrigatório o envio da assinatura. | - |
-| `external_reference` | *Body*. String com uma referência para identificar a transação. Essa referência é gerada pelo integrador e pode ser qualquer valor que permita rastrear as transações, desde que não possua caracteres especiais (“”, [ ], (), @) e não exceda 64 caracteres. São permitidos números, letras, hífens e sublinhados. | Opcional | MP0001 |
+| `external_reference` | *Body*. String com uma referência para identificar a transação. Essa referência é gerada pelo integrador e pode ser qualquer valor que permita rastrear as transações, desde que não possua caracteres especiais (“”, [ ], (), @) e não exceda 64 caracteres. São permitidos números (1234), letras (abcde), hífens (-) e underlines (_), e não pode ser duplicada. | Opcional | MP0001 |
 | `point_of_interaction.type` | *Body*. Valor fixo. Sempre deve ser `PSP_TRANSFER` | Obrigatório | `PSP_TRANSFER` |
 | `seller_configuration.notification_info.notification_url` | *Body*. URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. Este campo tem um limite de 500 caracteres. | Opcional | www.exemplo.com.br |
 | `transaction.from.accounts.amount` | *Body*. Valor da transação, que será retirado da conta de origem `from`. O valor mínimo é 0, e o valor máximo é 10000000000. | Obrigatório | 100,00 |
@@ -295,9 +295,9 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
 |---|---|
 | `id` | Identificador único da transação, gerado automaticamente. |
 | `status` | Status da transação. Para verificar os possíveis status, consulte a seção [Possíveis status de uma transação](/developers/pt/docs/money-out/integration-configuration#bookmark_possíveis_status_de_uma_transação). |
-| `created_date` | Data de criação da transação. |
+| `created_date` | Data de criação da transação. Será retornada no formato YYYY-MM-DDTHH:MM:SS.SSSZ. |
 | `external_reference` | Referência externa da transação, gerada pelo integrador na hora da criação. |
-| `last_updated_date` | Última atualização do status da transação. |
+| `last_updated_date` | Última atualização do status da transação. Será retornada no formato YYYY-MM-DDTHH:MM:SS.SSSZ. |
 | `point_of_interaction.type` | Ponto de interação. Valor fixo. Sempre deve ser `PSP_TRANSFER`. |
 | `seller_configuration.notification_info.notification_url` | URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. |
 | `transaction.from.accounts.amount` | Valor debitado da conta Mercado Pago de origem. |
@@ -323,7 +323,7 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
 >
 > Para configurar a integração e testar seu funcionamento antes de ir à produção, é necessário utilizar seu **Access Token de teste**. 
 
-Para integrar Money Out e permitir retiradas de dinheiro para contas bancárias, é necessário enviar um **POST**, com seu **Access Token** no *header* `Authorization` e sua **chave de idempotencia** no *header* `X-Idempotency-Key`, para o endpoint [/v1/transaction-intents/process](https://api.mercadopago.com/v1/transaction-intents/process). Os parâmetros correspondentes devem ser enviados conforme as especificações detalhadas na tabela a seguir.
+Para integrar Money Out e permitir retiradas de dinheiro para contas bancárias, é necessário enviar um **POST**, com seu **Access Token** no *header* `Authorization` e sua **chave de idempotencia** no *header* `X-Idempotency-Key`, para o endpoint [/v1/transaction-intents/process](/developers/pt/reference/money-out/bank-transfer-mlc/post). Os parâmetros correspondentes devem ser enviados conforme as especificações detalhadas na tabela a seguir.
 
 
 > NOTE
@@ -336,7 +336,7 @@ Para integrar Money Out e permitir retiradas de dinheiro para contas bancárias,
 curl -X POST \
     'https://api.mercadopago.com/v1/transaction-intents/process'\
     -H 'Content-Type: application/json' \
-       -H 'X-Idempotency-Key: 0d5020ed-1af6-469c-ae06-c3bec19954bb' \
+       -H 'X-Idempotency-Key: {{idempotency_key}}' \
        -H 'x-Signature: true' \
        -H 'x-enforce-signature: false' \
        -H 'Authorization: Bearer TEST-7719*********832-03141*********ec9309854*********f1e54b5-1*********' \
@@ -381,7 +381,7 @@ curl -X POST \
 |---|---|---|---|
 | `x-signature` | *Header*. Assinatura da solicitação com o corpo criptografado em base 64 usando as chaves pública e privada do integrador. Acesse a seção [Criptografia Ponta a Ponta](/developers/pt/docs/money-out/end-to-end-encryption) se precisar de mais informações. | Obrigatório **apenas no ambiente de produção**. | - |
 | `x-enforce-signature` | *Header*. Booleano que indica se o integrador enviará ou não a assinatura. | **Opcional** em ambiente de testes, e **obrigatório** em ambiente produtivo, que é quando é obrigatório o envio da assinatura. | - |
-| `external_reference` | *Body*. String com uma referência para identificar a transação. Essa referência é gerada pelo integrador e pode ser qualquer valor que permita rastrear as transações, desde que não possua caracteres especiais (“”, [ ], (), @) e não exceda 64 caracteres. São permitidos números, letras, hífens e sublinhados. | Opcional | MP0001 |
+| `external_reference` | *Body*. String com uma referência para identificar a transação. Essa referência é gerada pelo integrador e pode ser qualquer valor que permita rastrear as transações, desde que não possua caracteres especiais (“”, [ ], (), @) e não exceda 64 caracteres. São permitidos números (1234), letras (abcde), hífens (-) e underlines (_), e não pode ser duplicada. | Opcional | MP0001 |
 | `point_of_interaction.type` | *Body*. Valor fixo. Sempre deve ser `PSP_TRANSFER` | Obrigatório | `PSP_TRANSFER` |
 | `seller_configuration.notification_info.notification_url` | *Body*. URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. Este campo tem um limite de 500 caracteres. | Opcional | www.exemplo.com.cl |
 | `transaction.from.accounts.amount` | *Body*. Valor da transação, que será retirado da conta de origem `from`. O valor mínimo é 0, e o valor máximo é 10000000000. | Obrigatório | 100,00 |
@@ -453,9 +453,9 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
 |---|---|
 | `id` | Identificador único da transação, gerado automaticamente. |
 | `status` | Status da transação. Para verificar os possíveis status, consulte a seção [Possíveis status de uma transação](/developers/pt/docs/money-out/integration-configuration#bookmark_possíveis_status_de_uma_transação). |
-| `created_date` | Data de criação da transação. |
+| `created_date` | Data de criação da transação. Será retornada no formato YYYY-MM-DDTHH:MM:SS.SSSZ. |
 | `external_reference` | Referência externa da transação, gerada pelo integrador na hora da criação. |
-| `last_updated_date` | Última atualização do status da transação. |
+| `last_updated_date` | Última atualização do status da transação. Será retornada no formato YYYY-MM-DDTHH:MM:SS.SSSZ. |
 | `point_of_interaction.type` | Ponto de interação. Valor fixo. Sempre deve ser `PSP_TRANSFER`. |
 | `seller_configuration.notification_info.notification_url` | URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. |
 | `transaction.from.accounts.amount` | Valor debitado da conta Mercado Pago de origem. |
@@ -542,7 +542,7 @@ Na tabela abaixo listamos os principais eventos, prazos e tempo de espera para o
 
 Após criar uma transação, é possível obter informações detalhadas sobre ela. Isso permite verificar se ela foi criada corretamente, consultar seu status ou confirmar as informações recebidas em suas notificações.
 
-Para isso, envie um **GET** com seu Access Token para o endpoint [/v1/transaction-intents//{{transaction_intent_id}}](https://api.mercadopago.com/v1/transaction-intents/{id}), substituindo o `transaction_intent_id` pelo ID obtido na resposta ao criar a transação.
+Para isso, envie um **GET** com seu Access Token para o endpoint [/v1/transaction-intents//{{transaction_intent_id}}](/developers/pt/reference/money-out/get-transaction/get), substituindo o `transaction_intent_id` pelo ID obtido na resposta ao criar a transação.
 
 ```curl
 curl --location --request GET 'https://api.mercadopago.com/v1/transaction-intents/{{transaction_intent_id}}' \
