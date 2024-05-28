@@ -7,8 +7,7 @@ Las compras de prueba son esenciales para asegurarse de que los pagos se procese
 > 
 > Importante
 >
-> O teste só poderá ser realizado após a etapa de configuração da integração do [Checkout Mercado Pago](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
-
+> La prueba solo se puede realizar después de la etapa de configuración de la integración del [Checkout Mercado Pago](/developers/es/docs/shopify/integration-configuration/checkout-pro).
 
 ------------
 ----[mlb]----
@@ -16,7 +15,7 @@ Las compras de prueba son esenciales para asegurarse de que los pagos se procese
 > 
 > Importante
 >
-> O teste só poderá ser realizado após a etapa de configuração da integração de um dos checkouts de pagamento, seja o [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards) ou o [Checkout Mercado Pago](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
+> La prueba solo se puede realizar después de la etapa de configuración de la integración de uno de los checkouts de pago, ya sea [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards) o [Checkout Mercado Pago](/developers/es/docs/shopify/integration-configuration/checkout-pro).
 
 ------------
 ----[mlm]----
@@ -24,122 +23,102 @@ Las compras de prueba son esenciales para asegurarse de que los pagos se procese
 > 
 > Importante
 >
-> O teste só poderá ser realizado após a etapa de configuração da integração de um dos checkouts de pagamento, seja o [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards) ou o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
+> La prueba solo se puede realizar después de la etapa de configuración de la integración de uno de los checkouts de pago, ya sea [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards) o [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).
 
 ------------
 
-Veja abaixo como testar a integração:
+Vea abajo cómo probar la integración:
 
-1. Acesse **[Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** no admin do Mercado Pago e selecione a aplicação que deseja testar. 
-2. Clique em **Contas de teste** no menu à esquerda.
-3. Dentro da seção **Contas de teste**, clique em **Criar conta de teste** e crie duas contas diferentes: uma para vendedor e outra para comprador. Não é possível utilizar a mesma conta de teste para vendedor e comprador. Consulte a [documentação de Contas de teste](/developers/pt/docs/shopify/additional-content/your-integrations/test/accounts) para acessar o passo a passo de criação de contas teste.
+1. Acceda a **[Sus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** en el administrador de Mercado Pago y seleccione la aplicación que desea probar.
+2. Haz clic en **Cuentas de prueba** en el menú de la izquierda.
+3. Dentro de la sección "Cuentas de prueba", haga clic en **Crear cuenta de prueba** y cree dos cuentas diferentes: una para vendedor y otra para comprador. No es posible utilizar la misma cuenta de prueba para vendedor y comprador. Consulte la documentación de [Cuentas de prueba](/developers/es/docs/shopify/additional-content/your-integrations/test/accounts)  para acceder al paso a paso de creación de cuentas de prueba.
 
-![Criar conta](/images/shopify/test-create-account.gif)
+![Crear cuenta](/images/shopify/test-create-account-es.gif)
 
-4. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do vendedor criada no passo anterior.
-5. Na mesma janela anônima logada como vendedor, acesse o [Painel do desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) e crie uma nova aplicação, seguindo as instruções detalhadas na [documentação do Painel do desenvolvedor.](/developers/pt/docs/shopify/additional-content/your-integrations/dashboard)
+4. Abra una nueva ventana anónima e inicie sesión en Mercado Pago usando la cuenta de prueba del vendedor creada en el paso anterior.
+5. En la misma ventana anónima con sesión iniciada como vendedor, acceda al [Panel del desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) y cree una nueva aplicación, siguiendo las instrucciones detalladas en la [documentación del Panel del desarrollador](/developers/es/docs/shopify/additional-content/your-integrations/dashboard).
 
-![Login](/images/shopify/test-login.gif)
+![Login](/images/shopify/test-login-es.gif)
 
 > WARNING
 >
 > Importante
 >
-> Se, ao fazer login com uma conta de teste ou navegar pelas seções de Suas integrações, for solicitada a autenticação por e-mail, acesse nossa documentação para saber [como validar o login em contas teste](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_login_com_usuarios_teste). 
+> Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Sus integraciones, se solicita autenticación por correo electrónico, acceda a nuestra documentación para saber [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
 
-6. Acesse a aplicação criada no passo 5 e clique em **Credenciais de produção** no menu à esquerda. Copie a `public_key` e o `access_token`.
+6. Acceda a la aplicación creada en el paso 5 y haga clic en **Credenciales de producción** en el menú de la izquierda. Copie la `public_key` y el `access_token`.
 
-![Credenciais de produção](/images/shopify/test-prod-credentials.png)
+![Credenciais de produção](/images/shopify/test-prod-credentials-es.png)
 
 ----[mlm]----
-7. Vá até as configurações do painel da Shopify (**Configurações > Pagamentos**) e clique para **Gerenciar** um dos checkout do Mercado Pago, sendo ele o [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards) ou o [Checkout Mercado Pago](/developers/pt/docs/shopify/integration-configuration/checkout-pro). 
+7. Ve a las configuraciones del panel de Shopify (**Configuraciones > Pagos**) y haz clic para **Gestionar** uno de los checkout de Mercado Pago, ya sea [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards) o [Checkout Mercado Pago](/developers/es/docs/shopify/integration-configuration/checkout-pro). .
+8. Ingresa la `public_key` y el `access_token` de la cuenta de prueba del vendedor.
+9. Haz clic en **Guardar credenciales**.
 
-Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para processar os pagamentos:
+Ahora, sigue el paso a paso según el tipo de checkout elegido para procesar los pagos:
 
-## Mercado Pago Cartões
+## Mercado Pago Tarjetas
 
-8. Insira a `public_key` e o `access_token` da conta de teste do vendedor.
-
-![Painel](/images/shopify/test-pro-shopify-es-all.jpg)
-
-9. Clique em **Salvar credenciais**.
-
-10. Acesse sua loja e efetue uma compra fornecendo informações de teste, como telefone e e-mail da conta de teste do comprador. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/shopify/additional-content/your-integrations/test/cards) correspondente.
+10. Accede a tu tienda y realiza una compra proporcionando información de prueba, como teléfono y correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
 
 ## Checkout Mercado Pago
 
-8. Insira a `public_key` e o `access_token` da conta de teste do vendedor.
-
-![Painel](/images/shopify/test-pro-shopify-es-all.jpg)
-
-9. Clique em **Salvar credenciais**.
-
-10. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do comprador criada no passo 3.
-11. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como telefone e e-mail da conta de teste do comprador. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/shopify/additional-content/your-integrations/test/cards) correspondente.
+10. Abre una nueva ventana anónima e inicia sesión en Mercado Pago usando la cuenta de prueba del comprador creada en el paso 3.
+11. En la misma ventana con sesión iniciada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como teléfono y correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
 
 > WARNING
 > 
 > Importante
 >
-> Após concluir uma compra de teste utilizando um dos checkouts, a aprovação da compra será visível no Painel Administrativo da Shopify, com exceção das compras feitas por meios offline que permanecerão com status pendente.
+> Después de completar una compra de prueba utilizando uno de los checkouts, la aprobación de la compra será visible en el Panel Administrativo de Shopify, con excepción de las compras hechas por medios offline que permanecerán con estado pendiente.
 > <br><br>
-> Durante os testes, você estará operando no ambiente de produção, no entanto, trata-se de um teste no qual você estará utilizando credenciais fictícias para simular cenários reais. Ao concluir os testes, lembre-se de substituir as credenciais do vendedor (tanto de produção quanto de teste), inseridas no painel do plugin nos passos 8, pelas credenciais reais da sua conta no Mercado Pago. Essa ação permitirá que você continue vendendo em sua loja e evitará confusões.
+> Durante las pruebas, estarás operando en el entorno de producción; sin embargo, se trata de una prueba en la que estarás utilizando credenciales ficticias para simular escenarios reales. Al concluir las pruebas, recuerda reemplazar las credenciales del vendedor (tanto de producción como de prueba), ingresadas en el panel del plugin en el paso 8, por las credenciales reales de tu cuenta en Mercado Pago. Esta acción permitirá que continúes vendiendo en tu tienda y evitará confusiones.
 > <br><br>
-> Além disso, os pedidos serão registrados no histórico da conta de teste de vendedor do Mercado Pago.
+> Además, los pedidos serán registrados en el historial de la cuenta de prueba del vendedor de Mercado Pago.
 
 ------------
 ----[mlb]----
-7. Vá até as configurações do painel da Shopify (**Configurações > Pagamentos**) e clique para **Gerenciar** um dos checkout do Mercado Pago, sendo ele o [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards) ou o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro). 
+7. Ve a las configuraciones del panel de Shopify (**Configuraciones > Pagos**) y haz clic para **Gestionar** uno de los checkout de Mercado Pago, ya sea [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards) o [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro). .
+8. Ingresa la `public_key` y el `access_token` de la cuenta de prueba del vendedor.
+9. Haz clic en **Guardar credenciales**.
 
-Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para processar os pagamentos:
+Ahora, sigue el paso a paso según el tipo de checkout elegido para procesar los pagos:
 
-## Mercado Pago Cartões
+## Mercado Pago Tarjetas
 
-8. Insira a `public_key` e o `access_token` da conta de teste do vendedor.
-
-![Painel](/images/shopify/test-pro-shopify-es-all.jpg)
-
-9. Clique em **Guardar credenciais**.
-10. Acesse sua loja e efetue uma compra fornecendo informações de teste, como telefone e e-mail da conta de teste do comprador. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/shopify/additional-content/your-integrations/test/cards) correspondente.
+10. Accede a tu tienda y realiza una compra proporcionando información de prueba, como teléfono y correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
 
 ## Mercado Pago Checkout Pro
 
-8. Insira a `public_key` e o `access_token` da conta de teste do vendedor.
-
-![Painel](/images/shopify/test-pro-shopify-es-all.jpg)
-
-9. Clique em **Salvar credenciais**.
-10. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do comprador criada no passo 3.
-11. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como telefone e e-mail da conta de teste do comprador. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/shopify/additional-content/your-integrations/test/cards) correspondente.
+10. Abre una nueva ventana anónima e inicia sesión en Mercado Pago usando la cuenta de prueba del comprador creada en el paso 3.
+11. En la misma ventana con sesión iniciada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como teléfono y correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
 
 > WARNING
 > 
 > Importante
 >
-> Após concluir uma compra de teste utilizando um dos checkouts, a aprovação da compra será visível no Painel Administrativo da Shopify, com exceção das compras feitas por meios offline (Pix e boleto) que permanecerão com status pendente.
+> Después de completar una compra de prueba utilizando uno de los checkouts, la aprobación de la compra será visible en el Panel Administrativo de Shopify, con excepción de las compras hechas por medios offline que permanecerán con estado pendiente.
 > <br><br>
-> Durante os testes, você estará operando no ambiente de produção, no entanto, trata-se de um teste no qual você estará utilizando credenciais fictícias para simular cenários reais. Ao concluir os testes, lembre-se de substituir as credenciais do vendedor (tanto de produção quanto de teste), inseridas no painel do plugin nos passos 8, pelas credenciais reais da sua conta no Mercado Pago. Essa ação permitirá que você continue vendendo em sua loja e evitará confusões.
+> Durante las pruebas, estarás operando en el entorno de producción; sin embargo, se trata de una prueba en la que estarás utilizando credenciales ficticias para simular escenarios reales. Al concluir las pruebas, recuerda reemplazar las credenciales del vendedor (tanto de producción como de prueba), ingresadas en el panel del plugin en el paso 8, por las credenciales reales de tu cuenta en Mercado Pago. Esta acción permitirá que continúes vendiendo en tu tienda y evitará confusiones.
 > <br><br>
-> Além disso, os pedidos serão registrados no histórico da conta de teste de vendedor do Mercado Pago.
+> Además, los pedidos serán registrados en el historial de la cuenta de prueba del vendedor de Mercado Pago.
 
 ------------
 ----[mla, mpe, mco, mlu, mlc]----
-7. Vá até as configurações do painel da Shopify (**Configurações > Pagamentos**) e clique para **Gerenciar** o [Checkout Mercado Pago](/developers/pt/docs/shopify/integration-configuration/checkout-pro). 
-8. Insira a `public_key` e o `access_token` da conta de teste do vendedor.
-
-![Painel](/images/shopify/test-pro-shopify-es-all.jpg)
-
-9. Clique em **Salvar credenciais**.
-10. Acesse sua loja e efetue uma compra fornecendo informações de teste, como telefone e e-mail da conta de teste do comprador. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/shopify/additional-content/your-integrations/test/cards) correspondente.
+7. Ve a las configuraciones del panel de Shopify (**Configuraciones > Pagos**) y haz clic para **Gestionar** uno de los checkout de Mercado Pago, ya sea [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards) o [Checkout Mercado Pago](/developers/es/docs/shopify/integration-configuration/checkout-pro). .
+8. Ingresa la `public_key` y el `access_token` de la cuenta de prueba del vendedor.
+9. Haz clic en **Guardar credenciales**.
+10. Abre una nueva ventana anónima e inicia sesión en Mercado Pago usando la cuenta de prueba del comprador creada en el paso 3.
+11. En la misma ventana con sesión iniciada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como teléfono y correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
 
 > WARNING
 > 
 > Importante
 >
-> Após concluir uma compra de teste utilizando um dos checkouts, a aprovação da compra será visível no Painel Administrativo da Shopify, com exceção das compras feitas por meios offline que permanecerão com status pendente.
+> Después de completar una compra de prueba utilizando uno de los checkouts, la aprobación de la compra será visible en el Panel Administrativo de Shopify, con excepción de las compras hechas por medios offline que permanecerán con estado pendiente.
 > <br><br>
-> Durante os testes, você estará operando no ambiente de produção, no entanto, trata-se de um teste no qual você estará utilizando credenciais fictícias para simular cenários reais. Ao concluir os testes, lembre-se de substituir as credenciais do vendedor (tanto de produção quanto de teste), inseridas no painel do plugin nos passos 8, pelas credenciais reais da sua conta no Mercado Pago. Essa ação permitirá que você continue vendendo em sua loja e evitará confusões.
+> Durante las pruebas, estarás operando en el entorno de producción; sin embargo, se trata de una prueba en la que estarás utilizando credenciales ficticias para simular escenarios reales. Al concluir las pruebas, recuerda reemplazar las credenciales del vendedor (tanto de producción como de prueba), ingresadas en el panel del plugin en el paso 8, por las credenciales reales de tu cuenta en Mercado Pago. Esta acción permitirá que continúes vendiendo en tu tienda y evitará confusiones.
 > <br><br>
-> Além disso, os pedidos serão registrados no histórico da conta de teste de vendedor do Mercado Pago.
+> Además, los pedidos serán registrados en el historial de la cuenta de prueba del vendedor de Mercado Pago.
 
 ------------

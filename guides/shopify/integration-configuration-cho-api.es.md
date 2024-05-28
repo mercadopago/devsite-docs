@@ -1,7 +1,7 @@
 ----[mlb]----
 # Cartões
 
-O **Mercado Pago Cartões** ([Checkout Transparente](/developers/pt/docs/checkout-api/landing)) é um app que permite pagamentos transparentes com cartões de débito ou crédito em que todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, reduz o abandono do carrinho e aumenta a possibilidade de conversão.
+**Mercado Pago Tarjetas** ([Checkout Transparente](/developers/es/docs/checkout-api/landing)) es una app que permite pagos transparentes con tarjetas de débito o crédito, en la cual todo el proceso de finalización de compra se realiza dentro del entorno de la tienda online, sin necesidad de redireccionamiento a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, reduce el abandono del carrito y aumenta la posibilidad de conversión.
 
 > WARNING
 >
@@ -9,70 +9,73 @@ O **Mercado Pago Cartões** ([Checkout Transparente](/developers/pt/docs/checkou
 >
 > O novo app serve apenas para pagamentos com cartões. Para realizar pagamentos com **Pix** ou **boleto bancário**, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
 
+La nueva app solo sirve para pagos con tarjetas. Para realizar pagos con **Pix** o **boleto bancário**, utiliza [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).
+
 ------------
 ----[mlm]----
 # Cartões
 
-O **Mercado Pago Cartões** ([Checkout API](/developers/pt/docs/checkout-api/landing)) é um app que permite pagamentos transparentes com cartões de débito ou crédito em que todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, reduz o abandono do carrinho e aumenta a possibilidade de conversão.
+**Mercado Pago Tarjetas** ([Checkout API](/developers/es/docs/checkout-api/landing)) es una app que permite pagos transparentes con tarjetas de débito o crédito, en la cual todo el proceso de finalización de compra se realiza dentro del entorno de la tienda online, sin necesidad de redireccionamiento a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, reduce el abandono del carrito y aumenta la posibilidad de conversión.
 
 ------------
 
-Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecemos os dois modelos de instalação abaixo.
+Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, ofrecemos los dos modelos de instalación a continuación.
 
-## Instalação via Marketplace
+## Instalar vía Marketplace
 
-1. A partir do link recebido pelo setor comercial do Mercado Pago, acesse a página do app **Mercado Pago Cartões** no "Marketplace" e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
-2. Leia com atenção as informações sobre as permissões solicitadas e clique novamente em **Instalar**.
-3. Após aceitar as permissões solicitadas, clique em **Gerenciar conta** para incluir suas credencias e vincular a sua conta Mercado Pago à loja.
+1. A partir del enlace recibido por el departamento comercial de Mercado Pago, accede a la página de la aplicación **Mercado Pago Tarjetas** en el "Marketplace" y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
+2. Lee atentamente la información sobre los permisos solicitados y haz clic nuevamente en **Instalar**.
+3. Después de aceptar los permisos solicitados, haz clic en **Gestionar cuenta** para incluir tus credenciales y vincular tu cuenta de Mercado Pago a la tienda.
 
-> Os dados que deverão ser inseridos são as das **credencias de produção**. Para mais informações, acesse a documentação de [Credenciais](/developers/pt/guides/additional-content/your-integrations/credentials).
+> Los datos que deberán ser ingresados son las **credenciales de producción**. Para más información, accede a la documentación de [Credenciales](/developers/pt/guides/additional-content/your-integrations/credentials).
 
-4. Insira suas credenciais produtivas `access_token` e a `public_key` nos campos correspondentes, **tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
-
-> NOTE
->
-> Nota
->
-> Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de Shopify. Lembre-se: ao alterar a senha, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
-
-5. Clique em **Salvar credenciais**.
-6. Por fim, clique na opção **Verificar ativação** do Mercado Pago Cartões, vá para a seção de "Configurações" da Shopify e clique em **Ativar** para ativar o app e finalizar a instalação.
-
-Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
-
-## Instalação via painel da Shopify
-
-1. Vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
-2. No painel administrativo da loja, clique em **Configurações** no canto inferior esquerdo da página.
-3. Uma vez lá, selecione a opção **Pagamentos** no menu ao lado esquerdo da página. 
-4. Em "Provedores de pagamento", clique em **Escolher um provedor**.
-5. Na tela de "Provedores externos de pagamento", selecione a aba **Buscar por provedor** e procure pelo app "Mercado Pago Cartões".
-6. Após localizá-lo, selecione-o e clique em **Instalar**. Leia com atenção as informações sobre as permissões solicitadas e clique em **Instalar** outra vez.
-7. Após aceitar as permissões solicitadas, clique em **Gerenciar conta** para incluir suas credencias e vincular a sua conta Mercado Pago à loja.
-
-> Os dados que deverão ser inseridos são as das **credencias de produção**. Para mais informações, acesse a documentação de [Credenciais](/developers/pt/guides/additional-content/your-integrations/credentials).
-
-8. Insira suas credenciais produtivas `access_token` e a `public_key` nos campos correspondentes, **tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
+4. Ingresa tus credenciales de producción (`access_token` y `public_key`) en los campos correspondientes, teniendo cuidado de no invertir los campos al copiar y pegar las credenciales.
 
 > NOTE
 >
 > Nota
 >
-> Uma vez inseridas, as credencias não serão mais pedidas em futuras instalações de apps do Mercado Pago para Shopify.
+> Una vez ingresadas, las credenciales no serán solicitadas en futuras instalaciones de aplicaciones de Mercado Pago para Shopify.
 > <br><br>
-> Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de Shopify. Lembre-se: ao alterar a senha, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
+> Renueva tus credenciales según sea necesario, consultando la [documentación](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondiente como guía. Después de la renovación, es esencial actualizarlas en el panel de Shopify. Recuerda: al cambiar la contraseña, **es necesario renovar tus credenciales**. Para ello, elimina las credenciales antiguas del panel, copia las nuevas e ingrésalas en el panel administrativo de la tienda.
 
-9. Clique em **Salvar credenciais**.
-10. Por fim, clique na opção **Verificar ativação** do Mercado Pago Cartões, vá para a seção de "Configurações" da Shopify e clique em **Ativar** para ativar o app e finalizar a instalação.
+5. Haz clic en **Guardar credenciales**.
+6. Por último, haz clic en la opción **Verificar activación** de Mercado Pago Tarjetas, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
 
-Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
+¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir los pagos de tu tienda.
 
-## Configurar parcelas sem acréscimo
+## Instalar vía panel de Shopify
 
-Após instalar e ativar o app **Mercado Pago Cartões**, configure a opção de oferecer aos seus clientes a possibilidade de parcelar suas compras sem acrescimos com qualquer cartão de crédito. Para isso, siga os passos abaixo. 
+1. Ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
+2. En el panel administrativo de la tienda, haz clic en **Configuraciones** en la esquina inferior izquierda de la página.
+3. Una vez allí, selecciona la opción **Pagos** en el menú al lado izquierdo de la página.
+4. En "Formas de pago adicionales", haz clic en **Agregar forma de pago**.
+5. En la pantalla de "Agregar forma de pago", selecciona la pestaña **Buscar por proveedor** y busca la aplicación "Mercado Pago Tarjetas".
+6. Después de localizarla, selecciónala y haz clic en **Instalar**. Lee atentamente la información sobre los permisos solicitados y haz clic en **Instalar** otra vez.
+7. Después de aceptar los permisos solicitados, haz clic en **Gestionar cuenta** para incluir tus credenciales y vincular tu cuenta de Mercado Pago a la tienda.
 
-1. Faça login em sua [conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
-2. Vá até a seção "Seu negócio > Custos" e selecione a opção **Checkout**.
-3. Em "Parcelas sem acréscimo", clique em **Configurar parcelamento**.
-4. Em seguida, clique em **Configurar parcelamento sem acréscimo**.
-5. Por fim, ative a opção **Oferecer parcelamento sem acréscimo** e escolha quantas parcelas deseja oferecer na sua loja.
+> Los datos que deberán ser ingresados son las **credenciales de producción**. Para más información, accede a la documentación de [Credenciales](/developers/pt/guides/additional-content/your-integrations/credentials).
+
+8. Ingresa tus credenciales de producción (`access_token` y `public_key`) en los campos correspondientes, teniendo cuidado de no invertir los campos al copiar y pegar las credenciales.
+
+> NOTE
+>
+> Nota
+>
+> Una vez ingresadas, las credenciales no serán solicitadas en futuras instalaciones de aplicaciones de Mercado Pago para Shopify.
+> <br><br>
+>  Renueva tus credenciales según sea necesario, consultando la [documentación](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondiente como guía. Después de la renovación, es esencial actualizarlas en el panel de Shopify. Recuerda: al cambiar la contraseña, **es necesario renovar tus credenciales**. Para ello, elimina las credenciales antiguas del panel, copia las nuevas e ingrésalas en el panel administrativo de la tienda.
+
+9. Haz clic en **Guardar credenciales**.
+10. Por último, haz clic en la opción **Verificar activación** de Mercado Pago Tarjetas, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
+
+¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir los pagos de tu tienda.
+
+## Configurar meses sin intereses
+
+Después de instalar y activar la aplicación **Mercado Pago Tarjetas**, configura la opción de ofrecer a tus clientes la posibilidad de pagar sus compras en cuotas sin intereses con cualquier tarjeta de crédito. Para ello, sigue los pasos a continuación.
+
+1. Inicia sesión en tu [cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home)..
+2. Ve a la sección "Tu negocio > Costos" y selecciona la opción **Vende a meses sin intereses**.
+3. Activa la opción **Ofrecer meses sin interéses** y luego elige hasta cuantos meses quieres ofrecer.
+4. Por último, selecciona **Elegir montos mínimos**, ingresa el monto mínimo para el que ofreceras meses sin intereses y elige **guardar**.
