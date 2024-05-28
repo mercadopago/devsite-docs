@@ -53,10 +53,16 @@
                         "en": "List of payments IDs associated to the case.",
                         "pt": "Lista de IDs de pagamentos associados ao caso.",
                         "es": "Lista de pagos con IDs asociados al caso."
+                     }
+                     "example": "77908123456"
                       },
                       "items": {
                         "type": "number",
-                        "example": "77908123456"
+                        "example": "XXX"
+                        "description": {
+                            "en": "xxx"
+                            "pt": "xxx"
+                            "es": "xxx"
                       }
                     },
                     "currency": {
