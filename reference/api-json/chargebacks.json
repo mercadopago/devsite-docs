@@ -41,6 +41,7 @@
                   "properties": {
                     "id": {
                       "type": "string",
+                      "example": "217000087654321000",
                       "description": {
                         "en": "Unique chargeback identifier.",
                         "pt": "Identificador único do estorno",
@@ -49,87 +50,68 @@
                     },
                     "payments": {
                       "type": "array",
+                      "example": "77908123456",
                       "description": {
                         "en": "List of payments IDs associated to the case.",
                         "pt": "Lista de IDs de pagamentos associados ao caso.",
                         "es": "Lista de pagos con IDs asociados al caso."
                       },
                       "items": {
-                        "type": "number",
-                        "example": "77908123456"
+                        "type": "number"
                       }
                     },
                     "currency": {
                       "type": "string",
-                      "example": "real",
+                      "example": "BRL",
                       "description": {
                         "en": "Chergeback amount currency.",
                         "pt": "Moeda do valor do estorno.",
                         "es": "Moneda del monto de la contracargo."
-                      },
-                      "items": {
-                        "type": "string",
-                        "example": "BRL"
                       }
                     },
                     "amount": {
                       "type": "number",
+                      "example": "108.43",
                       "description": {
                         "en": "Chergeback amount.",
                         "pt": "Valor do estorno.",
                         "es": "Monto de la contracargo."
-                      },
-                      "items": {
-                        "type": "string",
-                        "example": "108.43"
                       }
                     },
                     "coverage_applied": {
                       "type": "boolean",
+                      "example": "true",
                       "description": {
                         "en": "Whether the seller has been covered or not.",
                         "pt": "Se o vendedor está coberto ou não.",
                         "es": "Si el vendedor ha sido cubierto o no."
-                      },
-                      "items": {
-                        "type": "boolean",
-                        "example": "true"
                       }
                     },
                     "coverage_elegible": {
                       "type": "boolean",
+                      "example": "true",
                       "description": {
                         "en": "Indicates if the money returned to the buyer can be covered by Mercado Pago. It is only possible to continue with the rest of the steps if the chargeback can be covered.",
                         "pt": "Define se o dinheiro devolvido ao comprador pode ser coberto pelo Mercado Pago. Só é possível continuar com o restante das etapas se o estorno puder ser coberto.",
                         "es": "Define si el dinero devuelto al comprador puede ser cubierto por Mercado Pago. Solo es posible continuar con el resto de los pasos si el contracargo puede ser cubierto."
-                      },
-                      "items": {
-                        "type": "boolean",
-                        "example": "true"
                       }
                     },
                     "documentation_required": {
                       "type": "boolean",
+                      "example": "true",
                       "description": {
                         "en": "Whether the seller needs to send documentation for this chargeback.",
                         "pt": "Se o vendedor precisa enviar a documentação para este estorno.",
                         "es": "Si el vendedor debe enviar la documentación para el contracargo."
-                      },
-                      "items": {
-                        "type": "boolean",
-                        "example": "true"
                       }
                     },
                     "documentation_status": {
                       "type": "string",
+                      "example": "valid",
                       "description": {
                         "en": "Detail of decision taken for the documentation.",
                         "pt": "Detalhe da decisão tomada para a documentação.",
                         "es": "Detalle de la decisión tomada por la documentación."
-                      },
-                      "items": {
-                        "type": "string",
-                        "example": "valid"
                       },
                       "enum": [
                         {
@@ -194,6 +176,7 @@
                         "properties": {
                           "type": {
                             "type": "string",
+                            "example": "application/pdf",
                             "description": {
                               "en": "Documentation's file type.",
                               "pt": "Tipo de arquivo da documentação.",
@@ -202,6 +185,7 @@
                           },
                           "url": {
                             "type": "string",
+                            "example": "http://api.mercadopago.com/v1/chargebacks/documentation/other/2ec3bb6c-9b8b-47a0-8bc4-6f9b2ac60061?access_token=APP_USR-X-X-X-X",
                             "description": {
                               "en": "URL to see the documentation file.",
                               "pt": "URL para ver o arquivo da documentação.",
@@ -210,6 +194,7 @@
                           },
                           "description": {
                             "type": "string",
+                            "example": "File: FILE_123.pdf",
                             "description": {
                               "en": "Documentation's description.",
                               "pt": "Descrição da documentação.",
@@ -221,53 +206,41 @@
                     },
                     "date_documentation_deadline": {
                       "type": "string",
+                      "example": "2024-05-26T23:59:59.000-04:00",
                       "format": "date",
                       "description": {
                         "en": "Chargeback's last day to send documentation.",
                         "pt": "Último dia para o envio da documentação do estorno.",
                         "es": "Último día para el envío de documentación del contracargo."
-                      },
-                      "items": {
-                        "type": "string",
-                        "example": "2024-05-26T23:59:59.000-04:00"
                       }
                     },
                     "date_created": {
                       "type": "string",
+                      "example": "2024-05-16T17:19:13.000-04:00",
                       "format": "date",
                       "description": {
                         "en": "Chargeback’s creation date.",
                         "pt": "Data de criação do estorno.",
                         "es": "Fecha de creación del contracargo."
-                      },
-                      "items": {
-                        "type": "string",
-                        "example": "2024-05-16T17:19:13.000-04:00"
                       }
                     },
                     "date_last_updated": {
                       "type": "string",
+                      "example": "2024-05-27T08:17:19.866-04:00",
                       "format": "date",
                       "description": {
                         "en": "Chargeback's last modified date.",
                         "pt": "Data da última modificação do estorno.",
                         "es": "Fecha de última modificación del contracargo."
-                      },
-                      "items": {
-                        "type": "string",
-                        "example": "2024-05-27T08:17:19.866-04:00"
                       }
                     },
                     "live_mode": {
                       "type": "boolean",
+                      "example": "true",
                       "description": {
                         "en": "Whether the chargeback will be processed in sandbox or in production mode. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.",
                         "pt": "Se o estorno será processada em modo sandbox ou em produção. Se TRUE, o estorno será processado em modo de produção. Se FALSE, o estorno será processado no modo sandbox.",
                         "es": "Si la devolución será procesada en el \"sandbox\" o en el modo de producción. Si es TRUE, el contracargo se procesará en modo de producción. Si es FALSE, el contracargo se procesará en modo sandbox."
-                      },
-                      "items": {
-                        "type": "boolean",
-                        "example": "true"
                       }
                     }
                   }
@@ -498,15 +471,11 @@
                     },
                     "reason": {
                       "type": "string",
-                      "example": null,
+                      "example": "fraud",
                       "description": {
                         "en": "Refund reason",
                         "pt": "Motivo do reembolso",
                         "es": "Motivo de reembolso"
-                      },
-                      "items": {
-                        "type": "string",
-                        "example": "fraud"
                       }
                     },
                     "label": {
