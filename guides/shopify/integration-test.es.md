@@ -105,7 +105,7 @@ Ahora, sigue el paso a paso según el tipo de checkout elegido para procesar los
 
 ------------
 ----[mla, mpe, mco, mlu, mlc]----
-7. Ve a las configuraciones del panel de Shopify (**Configuraciones > Pagos**) y haz clic para **Gestionar** uno de los checkout de Mercado Pago, ya sea [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards) o [Checkout Mercado Pago](/developers/es/docs/shopify/integration-configuration/checkout-pro). .
+7. Ve a las configuraciones del panel de Shopify (**Configuraciones > Pagos**) y haz clic para **Gestionar** el [Checkout Mercado Pago](/developers/es/docs/shopify/integration-configuration/checkout-pro). .
 8. Ingresa la `public_key` y el `access_token` de la cuenta de prueba del vendedor.
 9. Haz clic en **Guardar credenciales**.
 10. Abre una nueva ventana anónima e inicia sesión en Mercado Pago usando la cuenta de prueba del comprador creada en el paso 3.
