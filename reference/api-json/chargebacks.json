@@ -57,6 +57,7 @@
                         "es": "Lista de pagos con IDs asociados al caso."
                       },
                       "items": {
+                        "example": "77908123456",
                         "type": "number"
                       }
                     },
