@@ -2,9 +2,9 @@
 
 Los _logs_ proporcionan información completa sobre las transacciones, facilitando la comprensión de los eventos ocurridos. Además, al realizar modificaciones o agregar nuevos métodos de pago, los _logs_ ayudan a validar el correcto funcionamiento de la integración.
 
-El equipo de soporte puede solicitar el envío o verificación de los registros para rastrear información específica cuando sea necesario, por lo que es importante mantenerlos activos.
+El equipo de soporte puede solicitar el envío o verificación de los _logs_ para rastrear información específica cuando sea necesario, por lo que es importante mantenerlos activos.
 
-Siga los pasos a continuación para activar los registros de pago.
+Siga los pasos a continuación para activar los _logs_ de pago.
 
 1. Para acceder a la página de configuración, haz clic en el menú lateral **Stores** > **Configuration**:
 

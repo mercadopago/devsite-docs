@@ -1,6 +1,6 @@
 # Como ativar os logs de pagamento?
 
-Os _logs_ fornecem informações completas sobre as transações, facilitando a compreensão dos eventos ocorridos. Além disso, ao realizar modificações ou adicionar novos métodos de pagamento, os logs ajudam a validar o correto funcionamento da integração.
+Os _logs_ fornecem informações completas sobre as transações, facilitando a compreensão dos eventos ocorridos. Além disso, ao realizar modificações ou adicionar novos métodos de pagamento, os _logs_ ajudam a validar o correto funcionamento da integração.
 
 A equipe de suporte pode solicitar o envio ou verificação dos _logs_ para rastrear informações específicas, quando necessário, por isso é importante mantê-los ativos. 
 
