@@ -16,7 +16,7 @@
 | `collection.payer.identification.type` | `payer.identification.type` (string) |
 | `collection.payer.identification.number` | `payer.identification.number` (string) |
 | `collection.payer.email` | `payer.email` (string) |
-| `collection.payer.nickname` | No existe en _v1/payments_. Se obtiene del endpoint de `/users/{{id}}`, donde `{{id}}` corresponde al valor del campo `payer.id`. El formato de respuesta es el siguiente:<br>    {<br>        id: {id},<br>        nickname: {nickname}<br>    } |
+| `collection.payer.nickname` | No existe en _v1/payments_. Para obtener datos del pagador, recurre al `payer_id`. |
 | `collection.order_id` | `order.id` (string) |
 | `collection.external_reference` | `external_reference` (string) |
 | `collection.merchant_order_id` | `order.id` (string) |
@@ -66,4 +66,4 @@
 | `collection.concept_id` | No existe en _v1/payments_. |
 | `collection.concept_amount` | No existe en _v1/payments_. |
 | `collection.collector.id` | `collector_id` (int64) |
-| `collection.collector.nickname` | No existe en _v1/payments_. Se obtiene del endpoint de `/users/{{id}}` donde `{{id}}` corresponde el `user_id` propio de la cuenta de Mercado Pago. El formato de respuesta es el siguiente:<br>    {<br>        id: {id},<br>        nickname: {nickname}<br>    } |
+| `collection.collector.nickname` | No existe en _v1/payments_. Para obtener datos del pagador, recurre al `payer_id`. |

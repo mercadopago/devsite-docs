@@ -16,7 +16,7 @@
 | `collection.payer.identification.type` | `payer.identification.type` (string) |
 | `collection.payer.identification.number` | `payer.identification.number` (string) |
 | `collection.payer.email` | `payer.email` (string) |
-| `collection.payer.nickname` | Not applicable in _v1/payments_. t is obtained from the endpoint `/users/{{id}}`, where `{{id}}` corresponds to the value of the `payer.id` field. The response format is as follows:<br>    {<br>        id: {id},<br>        nickname: {nickname}<br>    } |
+| `collection.payer.nickname` | Not applicable in _v1/payments_. To obtain the payer’s data, use the `payer_id`. |
 | `collection.order_id` | `order.id` (string) |
 | `collection.external_reference` | `external_reference` (string) |
 | `collection.merchant_order_id` | `order.id` (string) |
@@ -42,7 +42,7 @@
 | `collection.payment_method_id` | `payment_method_id` (string) |
 | `collection.marketplace` |Does not exist in _v1/payments_. |
 | `collection.operation_type` | `operation_type` (string) |
-| `collection.transaction_order_id` | NDoes not exist in _v1/payments_, always reported as empty. |
+| `collection.transaction_order_id` | Does not exist in _v1/payments_, always reported as empty. |
 | `collection.statement_descriptor` | `statement_descriptor` (string) |
 | `collection.cardholder.name` | `card.cardholder.name` (string) |
 | `collection.cardholder.identification.type` | `card.cardholder.identification.type` (string) |
@@ -66,4 +66,4 @@
 | `collection.concept_id` | Does not exist in _v1/payments_. |
 | `collection.concept_amount` | Does not exist in _v1/payments_. |
 | `collection.collector.id` | `collector_id` (int64) |
-| `collection.collector.nickname` | Does not exist in _v1/payments_. It is obtained from the endpoint  `/users/{{id}}` where `{{id}}` corresponds to the `user_id` of the Mercado Pago account. The response format is as follows:<br>    {<br>        id: {id},<br>        nickname: {nickname}<br>    } |
+| `collection.collector.nickname` | Does not exist in _v1/payments_. To obtain the payer’s data, use the `payer_id`. |
