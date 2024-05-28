@@ -23,21 +23,7 @@
             "required": true,
             "schema": {
               "type": "string",
-              "example": "12123adfasdf123u4u"
-            }
-          },
-          {
-            "in": "header",
-            "name": "x-caller-id",
-            "schema": {
-              "type": "string",
-              "example": "543802539"
-            },
-            "required": true,
-            "description": {
-              "en": "This parameter refers to the seller's ID, an identification necessary to correctly locate the refund information.",
-              "pt": "Este parâmetro refere-se ao ID do vendedor, identificação necessária para que se possa localizar corretamente as informações de estorno.",
-              "es": "Este parámetro hace referencia al ID del vendedor, identificación necesaria para localizar correctamente la información del reembolso."
+              "example": "217000087654321000"
             }
           }
         ],
@@ -55,6 +41,7 @@
                   "properties": {
                     "id": {
                       "type": "string",
+                      "example": "217000087654321000",
                       "description": {
                         "en": "Unique chargeback identifier.",
                         "pt": "Identificador único do estorno",
@@ -63,6 +50,7 @@
                     },
                     "payments": {
                       "type": "array",
+                      "example": "77908123456",
                       "description": {
                         "en": "List of payments IDs associated to the case.",
                         "pt": "Lista de IDs de pagamentos associados ao caso.",
@@ -74,7 +62,7 @@
                     },
                     "currency": {
                       "type": "string",
-                      "example": "real",
+                      "example": "BRL",
                       "description": {
                         "en": "Chergeback amount currency.",
                         "pt": "Moeda do valor do estorno.",
@@ -83,6 +71,7 @@
                     },
                     "amount": {
                       "type": "number",
+                      "example": "108.43",
                       "description": {
                         "en": "Chergeback amount.",
                         "pt": "Valor do estorno.",
@@ -91,6 +80,7 @@
                     },
                     "coverage_applied": {
                       "type": "boolean",
+                      "example": "true",
                       "description": {
                         "en": "Whether the seller has been covered or not.",
                         "pt": "Se o vendedor está coberto ou não.",
@@ -99,6 +89,7 @@
                     },
                     "coverage_elegible": {
                       "type": "boolean",
+                      "example": "true",
                       "description": {
                         "en": "Indicates if the money returned to the buyer can be covered by Mercado Pago. It is only possible to continue with the rest of the steps if the chargeback can be covered.",
                         "pt": "Define se o dinheiro devolvido ao comprador pode ser coberto pelo Mercado Pago. Só é possível continuar com o restante das etapas se o estorno puder ser coberto.",
@@ -107,6 +98,7 @@
                     },
                     "documentation_required": {
                       "type": "boolean",
+                      "example": "true",
                       "description": {
                         "en": "Whether the seller needs to send documentation for this chargeback.",
                         "pt": "Se o vendedor precisa enviar a documentação para este estorno.",
@@ -115,6 +107,7 @@
                     },
                     "documentation_status": {
                       "type": "string",
+                      "example": "valid",
                       "description": {
                         "en": "Detail of decision taken for the documentation.",
                         "pt": "Detalhe da decisão tomada para a documentação.",
@@ -183,6 +176,7 @@
                         "properties": {
                           "type": {
                             "type": "string",
+                            "example": "application/pdf",
                             "description": {
                               "en": "Documentation's file type.",
                               "pt": "Tipo de arquivo da documentação.",
@@ -191,6 +185,7 @@
                           },
                           "url": {
                             "type": "string",
+                            "example": "http://api.mercadopago.com/v1/chargebacks/documentation/other/2ec3bb6c-9b8b-47a0-8bc4-6f9b2ac60061?access_token=APP_USR-X-X-X-X",
                             "description": {
                               "en": "URL to see the documentation file.",
                               "pt": "URL para ver o arquivo da documentação.",
@@ -199,6 +194,7 @@
                           },
                           "description": {
                             "type": "string",
+                            "example": "File: FILE_123.pdf",
                             "description": {
                               "en": "Documentation's description.",
                               "pt": "Descrição da documentação.",
@@ -210,6 +206,7 @@
                     },
                     "date_documentation_deadline": {
                       "type": "string",
+                      "example": "2024-05-26T23:59:59.000-04:00",
                       "format": "date",
                       "description": {
                         "en": "Chargeback's last day to send documentation.",
@@ -219,6 +216,7 @@
                     },
                     "date_created": {
                       "type": "string",
+                      "example": "2024-05-16T17:19:13.000-04:00",
                       "format": "date",
                       "description": {
                         "en": "Chargeback’s creation date.",
@@ -228,6 +226,7 @@
                     },
                     "date_last_updated": {
                       "type": "string",
+                      "example": "2024-05-27T08:17:19.866-04:00",
                       "format": "date",
                       "description": {
                         "en": "Chargeback's last modified date.",
@@ -237,6 +236,7 @@
                     },
                     "live_mode": {
                       "type": "boolean",
+                      "example": "true",
                       "description": {
                         "en": "Whether the chargeback will be processed in sandbox or in production mode. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.",
                         "pt": "Se o estorno será processada em modo sandbox ou em produção. Se TRUE, o estorno será processado em modo de produção. Se FALSE, o estorno será processado no modo sandbox.",
