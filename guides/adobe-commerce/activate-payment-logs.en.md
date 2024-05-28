@@ -1,32 +1,39 @@
 # How to activate payment logs?
 
-Logs provide comprehensive information about transactions, making it easier to understand the events that occurred. Additionally, when making modifications or adding new payment methods, logs help validate the correct functioning of the integration.
+Logs provide comprehensive information about transactions, making it easier to understand the events that occur. Additionally, when making modifications or adding new payment methods, logs help validate the correct functioning of the integration.
 
-The support team may request the submission or verification of logs to trace specific information when necessary. Therefore, it is important to keep them active. To do this, follow the step-by-step instructions below:
+The support team may request the submission or verification of logs to track specific information when necessary, so it is important to keep them active.
 
-1. To access the configuration page, click on the **Stores** menu on the side and then on **Configuration**:
+Follow the steps below to activate payment logs.
+
+1. To access the configuration page, click on the **Stores** > **Configuration**:
 
 ![Configuration](/images/adobe-commerce/logs-configuration-es.png)
 
-2. In the configuration, click on the **Sales** menu on the side. In the submenu that opens, select **Payment Methods**.
+2. In the **settings**, click on the **Sales** menu on the side. In the submenu that opens, select **Payment Methods**.
 
 ![Methods](/images/adobe-commerce/logs-payment-method-es.gif)
 
-3. In "Other Payment Methods," locate the Mercado Pago plugin and click the **Configure** button to open the settings.
+3. In **Other payment methods**, locate the Mercado Pago plugin and click on the **Configure** button to open the settings.
 
 ![Configure](/images/adobe-commerce/logs-configure-es.png)
 
-4. In the plugin configuration screen, select the **Basic Settings** option and then click on **Developer Support**.
-
+4. In the plugin configuration screen, select the **Basic Settings** > **Developer Support**.
+----[mla, mpe, mco, mlm, mco, mlu, mlc]----
 ![Support](/images/adobe-commerce/logs-support-es.png)
 
-5. If it is checked, uncheck the **Use system value** checkbox and enable the "Debug" option by selecting **Yes**.
+------------
+----[mlb]----
+![Suporte](/images/adobe-commerce/logs-support-pt.png)
+
+------------
+5. If checked, uncheck the **Use system value** checkbox and enable the **Debug** option by clicking **Yes**.
 
 ![Debug](/images/adobe-commerce/logs-debug-es.png)
 
-6. Once this is done, click the **Save Config** button to save the modification.
+6. Once this is done, click the **Save Config** button to save the changes.
 
-With this configuration, the Mercado Pago plugin will record logs on the server where the store is hosted, allowing an admin user of the store to access them directly on the server.
+With this configuration, the Mercado Pago plugin logs are recorded on the server where the store is hosted, allowing an admin user to easily access them.
 
 > NOTE
 >
