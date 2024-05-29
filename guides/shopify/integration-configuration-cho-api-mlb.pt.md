@@ -12,7 +12,7 @@ Para instalar o Checkout Transparente em uma loja Shopify, siga os passos abaixo
 
 1. Faça login na sua loja [Shopify](https://accounts.shopify.com/store-login).
 2. Acesse o [site de instalação do Mercado Pago Checkout Transparente](https://apps.shopify.com/checkout-transparente-mp).
-3. Clique no botão **Adicionar app**. Você será redirecionado para uma tela de autorização, onde serão mostradas as permissões que você outorgará à aplicação do Checkout Transparente. Para continuar, clique em **Instalar app**. 
+3. Clique no botão **Adicionar app**. Você será redirecionado para uma tela de autorização, onde serão exibidas as permissões que você outorgará à aplicação do Checkout Transparente. Para continuar, clique em **Instalar app**. 
 4. Na próxima tela, insira as **credenciais de produção** (`public key` e `access token`) nos campos solicitados. Acesse o [Painel do desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) para obter as credenciais da sua aplicação e, caso ainda não tenha criado uma aplicação, veja [esta documentação](/developers/pt/docs/shopify/additional-content/your-integrations/introduction) para saber como criá-la. 
 5. No campo **Como você quer operar?**, selecione a opção "Ativar Modo Teste para checkouts Mercado Pago" para poder realizar transações de teste e garantir o correto funcionamento do checkout.
 6. A seguir, você poderá **configurar parcelamento e acréscimos** caso deseje que a loja o ofereça. Para configurar isso, clique em **Editar**.
