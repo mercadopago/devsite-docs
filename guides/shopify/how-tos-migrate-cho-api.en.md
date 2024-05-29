@@ -41,7 +41,7 @@ Before installing the new version, it is necessary to uninstall the configuratio
 
 ## Install the new app
 
-To install the **Mercado Pago Cards** checkout on a Shopify store, we offer the two installation models below.
+To install the **Mercado Pago Cards** checkout on a Shopify store, we offer two installation models below.
 
 ### Install via Marketplace
 
