@@ -160,7 +160,7 @@ if ($sha === $hash) {
 }
 ?>
 ```
-```java
+```javascript
 // Obtain the x-signature value from the header
 const xSignature = headers['x-signature']; // Assuming headers is an object containing request headers
 const xRequestId = headers['x-request-id']; // Assuming headers is an object containing request headers
