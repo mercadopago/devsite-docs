@@ -95,7 +95,7 @@ Done! The **Mercado Pago Cards** checkout is ready to receive payments for your 
 9. Click on **Save credentials**.
 10. Finally, click on the **Verify activation** option of Mercado Pago Cards, go to the "Settings" section of Shopify, and click **Activate** to activate the app and complete the installation.
 
-Done! The **Mercado Pago Cards** checkout is ready to receive payments for your store.
+Done! The **Mercado Pago Cards** checkout is ready to receive payments.
 
 ### Configure interest-free installments
 
