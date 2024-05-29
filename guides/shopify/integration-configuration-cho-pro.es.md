@@ -60,7 +60,7 @@ Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los sig
 
 > En este paso, podrás seleccionar las imágenes de los medios de pago que quieras mostrar en tu tienda a modo ilustrativo. 
 
-¡Listo! El **Mercado Pago Checkout Pro** está preparado para recibir los pagos de tu tienda.
+¡Listo! **Mercado Pago Checkout Pro** está preparado para recibir pagos.
 
 ------------
 ----[mla, mlm, mpe, mlu, mlc, mco]----
