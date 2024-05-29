@@ -19,15 +19,17 @@
 
 To install the **Mercado Pago Cards** checkout on a Shopify store, we offer the two installation models below.
 
-### Install via Marketplace
+## Install via Marketplace
 
 1. From the link received from Mercado Pago's commercial department, access the **Mercado Pago Cards** app page on the "Marketplace" and click **Install**. If you haven't already, log in with your Shopify account.
 2. Read carefully the information about the requested permissions and click **Install** again.
 3. After accepting the requested permissions, click **Manage account** to input your credentials and link your Mercado Pago account to the store.
 
-> The data to be entered are the **production credentials**. For more information, access the [Credentials](/developers/en/guides/additional-content/your-integrations/credentials) documentation.
+> The credentials are responsible for identifying the account collecting the payments that you will receive in your store.
 
-4. Enter your production credentials (`access_token` and `public_key`) in the corresponding fields, **being careful not to swap the fields when copying and pasting the credentials**.
+4. In the Mercado Pago admin, go to **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** and select your application. If you haven't created an application yet, access the [developer Dashboard documentation](/developers/en/guides/additional-content/your-integrations/dashboard) to learn how to create one.
+5. Click on **Production credentials** in the left menu. Copy the `public_key` and `access_token`.
+6. Return your store settings on Shopify and enter your production credentials (`access_token` and `public_key`) in the corresponding fields, **being careful not to swap the fields when copying and pasting the credentials**.
 
 > NOTE
 >
@@ -37,12 +39,12 @@ To install the **Mercado Pago Cards** checkout on a Shopify store, we offer the 
 > <br><br>
 > Remember that, when changing the Shopify password, **it is necessary to renew your credentials**. To do so, follow the instructions in the [Best practices for credentials](/developers/en/docs/shopify/best-practices/credentials-best-practices/secure-credentials) documentation. Then, to update them on your Shopify account,  click on **Manage account** and fill in the corresponding fields with your `access_token` and `public_key` **being careful not to swap the fields when copying and pasting the credentials**.
 
-5. Click on **Save credentials**.
-6. Finally, click on the **Verify activation** option of Mercado Pago Cards, go to the "Settings" section of Shopify, and click **Activate** to activate the app and complete the installation.
+7. Click on **Save credentials**.
+8. Finally, click on the **Verify activation** option of Mercado Pago Cards, go to the "Settings" section of Shopify, and click **Activate** to activate the app and complete the installation.
 
 Done! The **Mercado Pago Cards** checkout is ready to receive payments.
 
-### Install via Shopify admin panel
+## Install via Shopify admin panel
 
 1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
 2. In the store's administration panel, click on **Settings** in the bottom-left corner of the page.
@@ -52,9 +54,11 @@ Done! The **Mercado Pago Cards** checkout is ready to receive payments.
 6. Once you've found it, select it and click **Install**. Carefully read the information about the requested permissions and click **Install** again.
 7. After accepting the requested permissions, click **Manage account** to input your credentials and link your Mercado Pago account to the store.
 
-> The data to be entered are the **production credentials**. For more information, access the [Credentials](/developers/en/guides/additional-content/your-integrations/credentials) documentation.
+> The credentials are responsible for identifying the account collecting the payments that you will receive in your store.
 
-8. Enter your production credentials (`access_token` and `public_key`) in the corresponding fields, **being careful not to swap the fields when copying and pasting the credentials**.
+8. In the Mercado Pago admin, go to **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** and select your application. If you haven't created an application yet, access the [developer Dashboard documentation](/developers/en/guides/additional-content/your-integrations/dashboard) to learn how to create one.
+9. Click on **Production credentials** in the left menu. Copy the `public_key` and `access_token`.
+10. Return your store settings on Shopify and enter your production credentials (`access_token` and `public_key`) in the corresponding fields, **being careful not to swap the fields when copying and pasting the credentials**.
 
 > NOTE
 >
@@ -64,12 +68,12 @@ Done! The **Mercado Pago Cards** checkout is ready to receive payments.
 > <br><br>
 > Remember that, when changing the Shopify password, **it is necessary to renew your credentials**. To do so, follow the instructions in the [Best practices for credentials](/developers/en/docs/shopify/best-practices/credentials-best-practices/secure-credentials) documentation. Then, to update them on your Shopify account,  click on **Manage account** and fill in the corresponding fields with your `access_token` and `public_key` **being careful not to swap the fields when copying and pasting the credentials**.
 
-9. Click on **Save credentials**.
-10. Finally, click on the **Verify activation** option of Mercado Pago Cards, go to the **Settings** section of Shopify, and click **Activate** to activate the app and complete the installation.
+11. Click on **Save credentials**.
+12. Finally, click on the **Verify activation** option of Mercado Pago Cards, go to the **Settings** section of Shopify, and click **Activate** to activate the app and complete the installation.
 
 Done! The **Mercado Pago Cards** checkout is ready to receive payments.
 
-### Configure interest-free installments
+## Configure interest-free installments
 
 After installing and activating the **Mercado Pago Cards** app, set up the option to offer your customers the possibility to pay in interest-free installments with any credit card. To do this, follow the steps below.
 

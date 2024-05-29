@@ -46,7 +46,7 @@ Para instalar o **Mercado Pago Checkout Pro** em sua loja Shopify, siga os segui
 
 11. Insira suas credenciais produtivas `access_token` e a `public_key` nos campos correspondentes, **tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
 
-![Agregar forma de pago](/images/shopify/add-credentials-es.png)
+![Agregar forma de pago](/images/shopify/add-credentials.png)
 
 > NOTE
 >
