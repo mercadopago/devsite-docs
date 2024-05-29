@@ -106,7 +106,7 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, sigue
 
 Después de instalar y activar la aplicación **Mercado Pago Tarjetas**, configura la opción de ofrecer a tus clientes el pago en cuotas sin intereses con cualquier tarjeta de crédito. Para ello, sigue los pasos a continuación.
 
-1. Inicia sesión en tu [cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home)..
+1. Inicia sesión en tu [cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
 2. Ve a la sección "Tu negocio > Costos" y selecciona la opción **Vende a meses sin intereses**.
 3. Activa la opción **Ofrecer meses sin interéses** y luego elige hasta cuantos meses quieres ofrecer.
 4. Por último, selecciona **Elegir montos mínimos**, ingresa el monto mínimo para el que ofreceras meses sin intereses y elige **guardar**.
