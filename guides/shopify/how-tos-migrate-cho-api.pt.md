@@ -25,7 +25,7 @@ Para desinstalar o antigo app, siga as etapas abaixo.
 2. No painel administrativo da loja, clique em **Configurações**.
 3. Uma vez lá, selecione a opção **Apps e canais de vendas**. 
 4. Localize o app com o nome "Checkout Transparente MP" e clique em **Gerenciar**. 
-5. Clique no **menu de opções adicionais** e, em seguida, em **Desinstalar**.
+5. Clique no **menu de opções adicionais** > **Desinstalar**.
 6. Retorne ao painel administrativo da loja e, novamente, clique em **Configurações**.
 7. Uma vez lá, selecione a opção **Pagamentos**. 
 8. Localize o antigo app com o nome "Mercado Pago" e clique em **Gerenciar**.
