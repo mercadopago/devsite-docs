@@ -29,7 +29,7 @@ Para desinstalar o antigo app, siga as etapas abaixo.
 6. Retorne ao painel administrativo da loja e, novamente, clique em **Configurações**.
 7. Uma vez lá, selecione a opção **Pagamentos**. 
 8. Localize o antigo app com o nome "Mercado Pago" e clique em **Gerenciar**.
-9. Por fim, clique em **Desativar** e, em seguida, em **Desinstalar**. 
+9. Por fim, clique em **Desativar** > **Desinstalar**. 
 
 > WARNING
 >
