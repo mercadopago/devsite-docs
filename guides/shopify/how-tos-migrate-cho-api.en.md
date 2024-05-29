@@ -101,7 +101,7 @@ Done! The **Mercado Pago Cards** checkout is ready to receive payments.
 
 After installing and activating the **Mercado Pago Cards** app, set up the option to offer your customers the possibility to pay in interest-free installments with any credit card. To do this, follow the steps below.
 
-1. Log in to your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/home)..
+1. Log in to your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
 2. Go to the **Your business > Costs** section and select the **Checkout** option.
 3. In "Interest-free installments," click on **Configure installments**.
 4. Next, click on **Configure interest-free installments**.
