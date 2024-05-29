@@ -13,7 +13,7 @@ La nueva app solo sirve para pagos con tarjetas. Para realizar pagos con **Pix**
 
 ------------
 ----[mlm]----
-# Cartões
+# Tarjetas
 
 **Mercado Pago Tarjetas** ([Checkout API](/developers/es/docs/checkout-api/landing)) es una app que permite pagos transparentes con tarjetas de débito o crédito, en la cual todo el proceso de finalización de compra se realiza dentro del entorno de la tienda online, sin necesidad de redireccionamiento a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, reduce el abandono del carrito y aumenta la posibilidad de conversión.
 
