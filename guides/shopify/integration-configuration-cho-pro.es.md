@@ -123,6 +123,6 @@ Para instalar o (**Checkout Mercado Pago**) en una tienda Shopify, sigue los sig
 
 > En este paso, podrás seleccionar las imágenes de los medios de pago que quieras mostrar en tu tienda a modo ilustrativo. 
 
-¡Listo! El **Checkout Mercado Pago** está preparado para recibir los pagos de tu tienda.
+¡Listo! **Checkout Mercado Pago** está preparado para recibir pagos.
 
 ------------
