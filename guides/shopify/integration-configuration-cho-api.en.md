@@ -69,7 +69,7 @@ Done! The **Mercado Pago Cards** checkout is ready to receive payments.
 > Remember: when changing the password, **it is necessary to renew your credentials**. To do this, click on **Manage account** to change your production credentials (`access_token` and `public_key`) in the corresponding fields, **being careful not to swap the fields when copying and pasting the credentials**.
 
 9. Click on **Save credentials**.
-10. Finally, click on the **Verify activation** option of Mercado Pago Cards, go to the "Settings" section of Shopify, and click **Activate** to activate the app and complete the installation.
+10. Finally, click on the **Verify activation** option of Mercado Pago Cards, go to the **Settings** section of Shopify, and click **Activate** to activate the app and complete the installation.
 
 Done! The **Mercado Pago Cards** checkout is ready to receive payments for your store.
 
