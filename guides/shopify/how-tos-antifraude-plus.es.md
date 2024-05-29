@@ -4,7 +4,7 @@
 Para instalar Mercado Pago Antifraude Plus, sigue los pasos a continuación.
 1. Desde el enlace enviado por el sector comercial de Mercado Pago, accede a la página de la app **Mercado Pago Antifraude Plus** en el "Marketplace", y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
 2. Lee atentamente la información sobre los permisos solicitados y haz clic nuevamente en **Instalar**.
-3. Si ya has instalado el app [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards), no necesitas ingresar tus credenciales nuevamente, pero podrás cambiarlas si es necesario.
+3. Si ya has instalado la app [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards), no necesitas ingresar tus credenciales nuevamente, pero podrás cambiarlas si es necesario.
 
 > NOTE
 >
