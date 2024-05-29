@@ -24,7 +24,7 @@ Purchase tests are essential to ensure that payments are being processed correct
 > 
 > Important
 >
-> The test can only be performed after the integration configuration stage of one of the payment checkouts, either [Mercado Pago Cartões](/developers/en/docs/shopify/integration-configuration/checkout-cards) or [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
+> The test can only be performed after the integration configuration stage of one of the payment checkouts, either [Mercado Pago Cards](/developers/en/docs/shopify/integration-configuration/checkout-cards) or [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
 
 ------------
 
