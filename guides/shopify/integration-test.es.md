@@ -27,7 +27,7 @@ Las compras de prueba son esenciales para asegurarse de que los pagos se procese
 
 ------------
 
-Vea abajo cómo probar la integración:
+Ve a continuación cómo probar la integración:
 
 1. Acceda a **[Sus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** en el administrador de Mercado Pago y seleccione la aplicación que desea probar.
 2. Haz clic en **Cuentas de prueba** en el menú de la izquierda.
