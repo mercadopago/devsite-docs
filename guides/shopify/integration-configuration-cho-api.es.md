@@ -49,7 +49,7 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, ofrec
 ## Instalar vía panel de Shopify
 
 1. Ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
-2. En el panel administrativo de la tienda, haz clic en **Configuraciones** en la esquina inferior izquierda de la página.
+2. En el panel administrativo, haz clic en **Configuraciones** en la esquina inferior izquierda de la página.
 3. Una vez allí, selecciona la opción **Pagos** en el menú al lado izquierdo de la página.
 4. En "Formas de pago adicionales", haz clic en **Agregar forma de pago**.
 5. En la pantalla de "Agregar forma de pago", selecciona la pestaña **Buscar por proveedor** y busca la aplicación "Mercado Pago Tarjetas".
