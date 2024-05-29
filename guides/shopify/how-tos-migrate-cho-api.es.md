@@ -47,7 +47,7 @@ Antes de instalar la nueva versión, es necesario desinstalar la configuración 
 
 ## Instala la nueva app
 
-Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, ofrecemos los dos modelos de instalación a continuación.
+Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, sigue cualquiera de los dos modelos de instalación descritos a continuación.
 
 ### Instalar vía Marketplace
 
