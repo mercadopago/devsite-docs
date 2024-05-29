@@ -16,7 +16,7 @@
 | `collection.payer.identification.type` | `payer.identification.type` (string) |
 | `collection.payer.identification.number` | `payer.identification.number` (string) |
 | `collection.payer.email` | `payer.email` (string) |
-| `collection.payer.nickname` | Não existe este campo em _v1/payments_. Para obter os dados do pagador, utilize o `payer_id`. |
+| `collection.payer.nickname` | Não existe este campo em _v1/payments_. |
 | `collection.order_id` | `order.id` (string) |
 | `collection.external_reference` | `external_reference` (string) |
 | `collection.merchant_order_id` | `order.id` (string) |
@@ -66,4 +66,4 @@
 | `collection.concept_id` | Não existe em _v1/payments_. |
 | `collection.concept_amount` | Não existe em _v1/payments_. |
 | `collection.collector.id` | `collector_id` (int64) |
-| `collection.collector.nickname` | Não existe em _v1/payments_. Para obter os dados do pagador, utilize o `payer_id`. |
+| `collection.collector.nickname` | Não existe em _v1/payments_. |
