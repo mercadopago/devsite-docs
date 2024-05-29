@@ -53,7 +53,7 @@ bullet_section_with_media:
 bullet_section_with_media: 
  - title: Recibe pagos con Checkout Mercado Pago (Checkout Pro)
  - type: reversed
- - message: Integra Mercado Pago en Shopify y redirige a tus compradores directamente a la página de Mercado Pago, permitiendo que completen el pago de manera simple y segura. El Checkout Pro ofrece un diseño preconfigurado para facilitar la experiencia de pago.
+ - message: Integra Mercado Pago en Shopify y redirige a tus compradores directamente a la página de Mercado Pago, permitiendo que completen el pago de manera simple y segura. Checkout Pro ofrece un diseño preconfigurado para facilitar la experiencia de pago.
  - image: /shopify/mini-landing-4.png
 ---
 
