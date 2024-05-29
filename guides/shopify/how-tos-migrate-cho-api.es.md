@@ -1,6 +1,6 @@
 # Cómo migrar a la nueva versión de la app de Mercado Pago
 
-Veja abaixo como instalar o novo app (**Mercado Pago Cartões**) e desinstalar o antigo (**Checkout Transparente MP**) para evitar a interrupção do serviço na Shopify.
+Aprende cómo instalar la nueva app (**Mercado Pago Tarjetas**) y desinstalar la antigua (**Checkout Transparente MP**) para evitar la interrupción del servicio en  Shopify.
 
 ----[mlb]----
 # Cartões
