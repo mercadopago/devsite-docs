@@ -9,7 +9,7 @@ Aprende cómo instalar la nueva app (**Mercado Pago Tarjetas**) y desinstalar la
 
 > WARNING
 >
-> Atenção
+> Atención
 >
 > La nueva app solo sirve para pagos con tarjetas. Para realizar pagos con **Pix** o **boleto bancário**, utiliza [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).
 
