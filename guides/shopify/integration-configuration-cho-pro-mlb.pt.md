@@ -14,7 +14,7 @@ Para configurar o Checkout Pro em uma loja Shopify, siga os passos abaixo:
 
 > Essas imagens são apenas para **fins ilustrativos e não implicam na ativação do método de pagamento selecionado**.
 
-7. Por último, a loja oferecerá a opção **habilite o modo de teste**. Ao ativar essa opção os pedidos finalizados com o Checkout Pro **não serão pedidos reais**. Ou seja, serão pedidos de teste que, mesmo finalizados, não terão seus status atualizados na plataforma e não aparecerão no painel do Mercado Pago na conta do vendedor.
+7. Por último, a loja oferecerá a opção **habilite o modo de teste**. Ao ativar essa opção, os pedidos finalizados com o Checkout Pro **não serão pedidos reais**. Ou seja, serão pedidos de teste que, mesmo finalizados, não terão seus status atualizados na plataforma e não aparecerão no painel do Mercado Pago na conta do vendedor.
 8. Ao finalizar, clique em **Ativar Mercado Pago**.
  
 > No caso de renovar suas credenciais, lembre-se de substituir as credenciais de produção e de teste em sua integração.
