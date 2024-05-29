@@ -89,7 +89,7 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 > Lembre-se de que, ao alterar a senha do Shopify, **é necessário renovar suas credenciais**. Para isso, siga as instruções na documentação de [Boas práticas de segurança para suas credenciais](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Em seguida, para atualizá-las na sua conta do Shopify, clique em Gerenciar conta e preencha os campos correspondentes com seu `access_token` e `public_key`, **tomando cuidado para não trocar os campos ao copiar e colar as credenciais**.
 
 5. Clique em **Salvar credenciais**.
-6. Por fim, clique na opção **Verificar ativação** do Mercado Pago Cartões, vá para a seção de "Configurações" da Shopify e clique em **Salvar** para finalizar a instalação.
+6. Por fim, clique na opção **Verificar ativação** do Mercado Pago Cartões, acesse a seção de "Configurações" da Shopify e clique em **Salvar** para concluir a instalação.
 
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 
