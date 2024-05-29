@@ -19,7 +19,7 @@ O **Mercado Pago Cartões** ([Checkout API](/developers/pt/docs/checkout-api/lan
 
 ## Desative o antigo app
 
-Antes de instalar a nova versão, é necessário desinstalar a configuração do antigo app.
+Antes de instalar a nova versão, é necessário desinstalar o antigo app.
 Para desinstalar o antigo app, siga as etapas abaixo.
 1. Vá para sua loja [Shopify](https://accounts.shopify.com/store-login).
 2. No painel administrativo da loja, clique em **Configurações**.
