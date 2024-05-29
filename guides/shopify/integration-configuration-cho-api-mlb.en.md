@@ -16,7 +16,7 @@ To install Checkout Transparente in a Shopify store, follow the steps below:
 4. On the next screen, put your **production credentials** (`public key` and `access token`) in the fields that request it. Go to [Dashboard](https://www.mercadopago.com.ar/developers/panel/app) to get the credentials of your application and, if you have not created an application yet, check [this documentation](/developers/en/docs/shopify/additional-content/your-integrations/introduction) to learn how to create it.
 5. In the field **How do you want to operate?**, select the option "I want to test my store" to perform test transactions and ensure the smooth operation of the checkout.
 6. Then, you can **configure installments and interests** in case you want to offer them in the store. To configure it, click on **Edit**.
-7. In the section **What payment methods do you want to offer?**, select the type of payment methods that the store will offer through Checkout Transparent. You can choose Mercado Pago, credit cards, boleto, or Pix.
+7. In the section **What payment methods do you want to offer?**, select the type of payment methods that the store will offer through Checkout Transparente. You can choose Mercado Pago, credit cards, boleto bancário, or Pix.
 8. Click on **Save changes** to complete the installation.
 
 > In case of renewing your credentials, remember to replace both the production and test credentials in your integration.
