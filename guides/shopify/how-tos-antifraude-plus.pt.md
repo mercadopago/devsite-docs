@@ -10,9 +10,7 @@ Para instalar o Mercado Pago Antifraudes Plus, siga as etapas abaixo.
 >
 > Importante
 >
-> Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de Shopify. 
-> <br><br>
->Lembre-se: ao alterar a senha, **é necessário renovar suas credenciais**. Para isso, clique em **Gerenciar conta** para alterar suas credenciais produtivas (`access_token` e a `public_key`) nos campos correspondentes, **tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
+> Lembre-se de que, ao alterar a senha do Shopify, **é necessário renovar suas credenciais**. Para isso, siga as instruções na documentação de [Boas práticas de segurança para suas credenciais](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Em seguida, para atualizá-las na sua conta do Shopify, clique em Gerenciar conta e preencha os campos correspondentes com seu `access_token` e `public_key`, **tomando cuidado para não trocar os campos ao copiar e colar as credenciais**.
 
 4. Por fim, clique na opção **Verificar ativação** do Mercado Pago Antifraude Plus, vá para a seção de "Configurações" da Shopify e clique em **Ativar** para ativar o app e finalizar a instalação.
 

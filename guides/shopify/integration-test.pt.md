@@ -67,12 +67,12 @@ Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para proc
 10. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do comprador criada no passo 3.
 11. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como telefone e e-mail da conta de teste do comprador. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/shopify/additional-content/your-integrations/test/cards) correspondente.
 
+Após concluir uma compra de teste utilizando um dos checkouts, a aprovação da compra será visível no Painel Administrativo da Shopify, com exceção das compras feitas por meios offline que permanecerão com status pendente.
+
 > WARNING
 > 
 > Importante
 >
-> Após concluir uma compra de teste utilizando um dos checkouts, a aprovação da compra será visível no Painel Administrativo da Shopify, com exceção das compras feitas por meios offline que permanecerão com status pendente.
-> <br><br>
 > Durante os testes, você estará operando no ambiente de produção, no entanto, trata-se de um teste no qual você estará utilizando credenciais fictícias para simular cenários reais. Ao concluir os testes, lembre-se de substituir as credenciais do vendedor (tanto de produção quanto de teste), inseridas no painel do plugin no passo 8, pelas credenciais reais da sua conta no Mercado Pago. Essa ação permitirá que você continue vendendo em sua loja e evitará confusões.
 > <br><br>
 > Além disso, os pedidos serão registrados no histórico da conta de teste de vendedor do Mercado Pago.
@@ -94,12 +94,13 @@ Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para proc
 10. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do comprador criada no passo 3.
 11. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como telefone e e-mail da conta de teste do comprador. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/shopify/additional-content/your-integrations/test/cards) correspondente.
 
+Após concluir uma compra de teste utilizando um dos checkouts, a aprovação da compra será visível no Painel Administrativo da Shopify, com exceção das compras feitas por meios offline que permanecerão com status pendente.
+
+
 > WARNING
 > 
 > Importante
 >
-> Após concluir uma compra de teste utilizando um dos checkouts, a aprovação da compra será visível no Painel Administrativo da Shopify, com exceção das compras feitas por meios offline (Pix e boleto) que permanecerão com status pendente.
-> <br><br>
 > Durante os testes, você estará operando no ambiente de produção, no entanto, trata-se de um teste no qual você estará utilizando credenciais fictícias para simular cenários reais. Ao concluir os testes, lembre-se de substituir as credenciais do vendedor (tanto de produção quanto de teste), inseridas no painel do plugin no passo 8, pelas credenciais reais da sua conta no Mercado Pago. Essa ação permitirá que você continue vendendo em sua loja e evitará confusões.
 > <br><br>
 > Além disso, os pedidos serão registrados no histórico da conta de teste de vendedor do Mercado Pago.
@@ -112,12 +113,12 @@ Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para proc
 10. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do comprador criada no passo 3.
 11. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como telefone e e-mail da conta de teste do comprador. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/shopify/additional-content/your-integrations/test/cards) correspondente.
 
+Após concluir uma compra de teste utilizando um dos checkouts, a aprovação da compra será visível no Painel Administrativo da Shopify, com exceção das compras feitas por meios offline que permanecerão com status pendente.
+
 > WARNING
 > 
 > Importante
 >
-> Após concluir uma compra de teste utilizando um dos checkouts, a aprovação da compra será visível no Painel Administrativo da Shopify, com exceção das compras feitas por meios offline que permanecerão com status pendente.
-> <br><br>
 > Durante os testes, você estará operando no ambiente de produção, no entanto, trata-se de um teste no qual você estará utilizando credenciais fictícias para simular cenários reais. Ao concluir os testes, lembre-se de substituir as credenciais do vendedor (tanto de produção quanto de teste), inseridas no painel do plugin no passo 8, pelas credenciais reais da sua conta no Mercado Pago. Essa ação permitirá que você continue vendendo em sua loja e evitará confusões.
 > <br><br>
 > Além disso, os pedidos serão registrados no histórico da conta de teste de vendedor do Mercado Pago.

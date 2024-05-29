@@ -10,9 +10,7 @@ To install **Mercado Pago Antifraude Plus**, follow the steps below.
 >
 > Important
 > 
-> Remember to renew your credentials if needed, referring to the [documentation](/developers/en/docs/shopify/best-practices/credentials-best-practices/secure-credentials)  as a guide. After renewal, it is essential to update them in the Shopify panel. 
-> <br><br>
-> Remember that, when changing the Shopify password, **it is necessary to renew your credentials**.  To do so,  follow the instructions in the [Best practices for credentials documentation](/developers/en/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Then, to update them on your Shopify account,  click on **Manage account** and fill in the corresponding fields with your `access_token` and `public_key` **being careful not to swap the fields when copying and pasting the credentials**.
+> Remember that, when changing the Shopify password, **it is necessary to renew your credentials**. To do so, follow the instructions in the [Best practices for credentials](/developers/en/docs/shopify/best-practices/credentials-best-practices/secure-credentials) documentation. Then, to update them on your Shopify account,  click on **Manage account** and fill in the corresponding fields with your `access_token` and `public_key` **being careful not to swap the fields when copying and pasting the credentials**.
 
 4. Finally, click on the **Verify activation** option of Mercado Pago Antifraude Plus, go to the "Settings" section of Shopify and click on **Activate** to enable the app and complete the installation.
 
