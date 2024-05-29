@@ -1,102 +1,108 @@
-# How to migrate to the new version of the Mercado Pago app
+# How to migrate to the new Mercado Pago app for cards
 
-Veja abaixo como instalar o novo app (**Mercado Pago Cartões**) e desinstalar o antigo (**Checkout Transparente MP**) para evitar a interrupção do serviço na Shopify.
+See below how to install the new app (**Mercado Pago Cards**) and uninstall the old one (**Checkout Transparente MP**) to avoid service interruption on Shopify.
 
 ----[mlb]----
-O **Mercado Pago Cartões** ([Checkout Transparente](/developers/pt/docs/checkout-api/landing)) é um app que permite pagamentos transparentes com cartões de débito ou crédito em que todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, reduz o abandono do carrinho e aumenta a possibilidade de conversão.
+The **Mercado Pago Cards** ([Checkout Transparente](/developers/en/docs/checkout-api/landing)) is an app that allows transparent payments with debit or credit cards where the entire checkout process happens within the online store environment, without the need to redirect to an external page. In addition to providing greater control in the customization and integration process, it reduces cart abandonment and increases the possibility of conversion.
 
 > WARNING
 >
-> Atenção
+> Attention
 >
-> O novo app serve apenas para pagamentos com cartões. Para realizar pagamentos com **Pix** ou **boleto bancário**, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
+> The new app is only for card payments. To process payments with **Pix** or **boleto bancário**, use [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
 
 ------------
 ----[mlm]----
-O **Mercado Pago Cartões** ([Checkout API](/developers/pt/docs/checkout-api/landing)) é um app que permite pagamentos transparentes com cartões de débito ou crédito em que todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, reduz o abandono do carrinho e aumenta a possibilidade de conversão.
+The **Mercado Pago Cards** ([Checkout API](/developers/en/docs/checkout-api/landing)) is an app that allows transparent payments with debit or credit cards where the entire checkout process happens within the online store environment, without the need to redirect to an external page. In addition to providing greater control in the customization and integration process, it reduces cart abandonment and increases the possibility of conversion.
 
 ------------
 
-## Desative o antigo app
+## Deactivate the old app
 
-Antes de instalar a nova versão, é necessário desinstalar a configuração do antigo app.
+Before installing the new version, it is necessary to uninstall the configuration of the old app.
 
-1. Vá para sua loja [Shopify](https://accounts.shopify.com/store-login).
-2. No painel administrativo da loja, clique em **Configurações**.
-3. Uma vez lá, selecione a opção **Apps e canais de vendas**. 
-4. Localize o app com o nome "Checkout Transparente MP" e clique em **Gerenciar**. 
-5. Clique no **menu de opções adicionais** e, em seguida, em **Desinstalar**.
-6. Retorne ao painel administrativo da loja e, novamente, clique em **Configurações**.
-7. Uma vez lá, selecione a opção **Pagamentos**. 
-8. Localize o antigo app com o nome "Mercado Pago" e clique em **Gerenciar**.
-9. Por fim, clique em **Desativar** e, em seguida, em **Desinstalar**. 
+1. Go to your [Shopify](https://accounts.shopify.com/store-login). store.
+2. In the store's admin panel, click on **Settings**.
+3. Once there, select the **Apps and sales channels** option.
+4. Locate the app named "Checkout Transparente MP" and click on **Manage**.
+5. Click on the **additional options menu** and then on **Uninstall**.
+6. Return to the store's admin panel and click on **Settings** again.
+7. Once there, select the **Payments** option.
+8. Locate the old app named "Mercado Pago" and click on **Manage**.
+9. Finally, click on **Deactivate** and then on **Uninstall**.
 
 > WARNING
 >
-> Atenção
+> Attention
 >
-> Nessa nova versão não é mais obrigatória a instalação de outro app para o funcionamento do **Mercado Pago Cartões**.
+> In this new version, it is no longer mandatory to install another app for the **Mercado Pago Cards** to function.
 > <br><br>
-> Entretanto, é importante salientar que o novo app serve apenas para pagamentos com cartões. Para realizar pagamentos com **Pix** ou **boleto bancário**, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
+> However, it is important to note that the new app is only for card payments. To process payments with **Pix** or **boleto bancário**, use [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
 
-## Instale o novo app
+## Install the new app
 
-Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecemos os dois modelos de instalação abaixo.
+To install the **Mercado Pago Cards** checkout on a Shopify store, we offer the two installation models below.
 
-### Instalar via Marketplace
+### Install via Marketplace
 
-1. A partir do link recebido pelo setor comercial do Mercado Pago, acesse a página do app **Mercado Pago Cartões** no "Marketplace" e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
-2. Leia com atenção as informações sobre as permissões solicitadas e clique novamente em **Instalar**.
-3. Após aceitar as permissões solicitadas, clique em **Gerenciar conta** para incluir suas credencias e vincular a sua conta Mercado Pago à loja.
+1. From the link received from Mercado Pago's commercial department, access the **Mercado Pago Cards** app page on the "Marketplace" and click **Install**. If you haven't already, log in with your Shopify account.
+2. Read carefully the information about the requested permissions and click **Install** again.
+3. After accepting the requested permissions, click **Manage account** to input your credentials and link your Mercado Pago account to the store.
 
-> Os dados que deverão ser inseridos são as das **credencias de produção**. Para mais informações, acesse a documentação de [Credenciais](/developers/pt/guides/additional-content/your-integrations/credentials).
+> The data to be entered are the **production credentials**. For more information, access the [Credentials](/developers/en/guides/additional-content/your-integrations/credentials) documentation.
 
-4. Insira suas credenciais produtivas `access_token` e a `public_key` nos campos correspondentes, **tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
+4. Enter your production credentials (`access_token` and `public_key`) in the corresponding fields, **being careful not to swap the fields when copying and pasting the credentials**.
 
 > NOTE
 >
-> Nota
+> Note
 >
-> Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de Shopify. Lembre-se: ao alterar a senha, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
+> Once entered, the credentials will no longer be required for future installations of Mercado Pago apps for Shopify.<br><br>
+> <br><br>
+> Renew your credentials as needed, referring to the relevant [documentation](/developers/en/docs/shopify/best-practices/credentials-best-practices/secure-credentials)  as a guide. After renewal, it is essential to update them in the Shopify panel. 
+> <br><br>
+> Remember: when changing the password, **it is necessary to renew your credentials**. To do this, click on **Manage account** to change your production credentials (`access_token` and `public_key`) in the corresponding fields, **being careful not to swap the fields when copying and pasting the credentials**.
 
-5. Clique em **Salvar credenciais**.
-6. Por fim, clique na opção **Verificar ativação** do Mercado Pago Cartões, vá para a seção de "Configurações" da Shopify e clique em **Salvar** para finalizar a instalação.
+5. Click on **Save credentials**.
+6. Finally, click on the **Verify activation** option of Mercado Pago Cards, go to the "Settings" section of Shopify, and click **Activate** to activate the app and complete the installation.
 
-Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
+Done! The **Mercado Pago Cards** checkout is ready to receive payments for your store.
 
-### Instalar via painel da Shopify
+### Install via Shopify admin panel
 
-1. Vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
-2. No painel administrativo da loja, clique em **Configurações** no canto inferior esquerdo da página.
-3. Uma vez lá, selecione a opção **Pagamentos** no menu ao lado esquerdo da página. 
-4. Em "Provedores de pagamento", clique em **Escolher um provedor**.
-5. Na tela de "Provedores externos de pagamento", selecione a aba **Buscar por provedor** e procure pelo app "Mercado Pago Cartões".
-6. Após localizá-lo, selecione-o e clique em **Instalar**. Leia com atenção as informações sobre as permissões solicitadas e clique em **Instalar** outra vez.
-7. Após aceitar as permissões solicitadas, clique em **Gerenciar conta** para incluir suas credencias e vincular a sua conta Mercado Pago à loja.
+1. Go to your [Shopify](https://accounts.shopify.com/store-login). store.
+2. In the store's administrative panel, click on **Settings** in the bottom-left corner of the page.
+3. Once there, select the **Payments** option from the left-hand side menu.
+4. Under "Payment providers" click **Choose a provider**.
+5. On the "External payment providers" screen, select the **Search for a provider** tab and search for the "Mercado Pago Cartões" app.
+6. Once you've found it, select it and click **Install**. Carefully read the information about the requested permissions and click **Install** again.
+7. After accepting the requested permissions, click **Manage account** to input your credentials and link your Mercado Pago account to the store.
 
-> Os dados que deverão ser inseridos são as das **credencias de produção**. Para mais informações, acesse a documentação de [Credenciais](/developers/pt/guides/additional-content/your-integrations/credentials).
+> The data to be entered are the **production credentials**. For more information, access the [Credentials](/developers/en/guides/additional-content/your-integrations/credentials) documentation.
 
-8. Insira suas credenciais produtivas `access_token` e a `public_key` nos campos correspondentes, **tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
+8. Enter your production credentials (`access_token` and `public_key`) in the corresponding fields, **being careful not to swap the fields when copying and pasting the credentials**.
 
 > NOTE
 >
-> Nota
+> Note
 >
-> Uma vez inseridas, as credencias não serão mais pedidas em futuras instalações de apps do Mercado Pago para Shopify.
+> Once entered, the credentials will no longer be required for future installations of Mercado Pago apps for Shopify.<br><br>
 > <br><br>
-> Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de Shopify. Lembre-se: ao alterar a senha, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
+> Renew your credentials as needed, referring to the relevant [documentation](/developers/en/docs/shopify/best-practices/credentials-best-practices/secure-credentials)  as a guide. After renewal, it is essential to update them in the Shopify panel. <br><br>
+> <br><br>
+> Remember: when changing the password, **it is necessary to renew your credentials**. To do this, click on **Manage account** to change your production credentials (`access_token` and `public_key`) in the corresponding fields, **being careful not to swap the fields when copying and pasting the credentials**.
 
-9. Clique em **Salvar credenciais**.
-10. Por fim, clique na opção **Verificar ativação** do Mercado Pago Cartões, vá para a seção de "Configurações" da Shopify e clique em **Salvar** para finalizar a instalação.
+9. Click on **Save credentials**.
+10. Finally, click on the **Verify activation** option of Mercado Pago Cards, go to the "Settings" section of Shopify, and click **Activate** to activate the app and complete the installation.
 
-Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
+Done! The **Mercado Pago Cards** checkout is ready to receive payments for your store.
 
-### Configurar parcelas sem acréscimo
+### Configure interest-free installments
 
-Após instalar e ativar o app **Mercado Pago Cartões**, configure a opção de oferecer aos seus clientes a possibilidade de parcelar suas compras sem acrescimos com qualquer cartão de crédito. Para isso, siga os passos abaixo. 
+After installing and activating the **Mercado Pago Cards** app, set up the option to offer your customers the ability to pay in interest-free installments with any credit card. To do this, follow the steps below.
 
-1. Faça login em sua [conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
-2. Vá até a seção "Seu negócio > Custos" e selecione a opção **Checkout**.
-3. Em "Parcelas sem acréscimo", clique em **Configurar parcelamento**.
-4. Em seguida, clique em **Configurar parcelamento sem acréscimo**.
-5. Por fim, ative a opção **Oferecer parcelamento sem acréscimo** e escolha quantas parcelas deseja oferecer na sua loja.
+1. Log in to your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/home)..
+2. o to the "Your business > Costs" section and select the **Checkout** option.
+3. In "Interest-free installments," click on **Configure installments**.
+4. Next, click on **Configure interest-free installments**.
+5. Finally, enable the **Offer interest-free installments** option and choose how many installments you want to offer in your store.

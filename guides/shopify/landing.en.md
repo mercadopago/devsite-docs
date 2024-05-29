@@ -33,29 +33,48 @@ available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 
 ---
 bullet_section_with_media: 
+ - title: Customize payments with Transparent Checkout
+ - type: reversed
+ - message: Integrate our Checkout Transparente and allow the buyer to complete the entire payment process within your store's environment. You control the whole experience, from basic to advanced settings. Additionally, it reduces cart abandonment since the payment process happens on a single screen without redirects, boosting your sales.
+ - image: /shopify/mini-landing-4.png
+---
+
+---
+bullet_section_with_media: 
  - title: Receive payments with Checkout Pro
  - type: normal
- - message: Integrate Mercado Pago in your Shopify and redirect your shoppers to a Mercado Pago page to complete the checkout.
+ - message: Integrate Mercado Pago into Shopify and redirect your buyers directly to the Mercado Pago page, allowing them to complete the payment simply and securely. Checkout Pro offers a pre-configured design to streamline the payment experience.
+ - image: /shopify/mini-landing-1.png
+---
+
+------------
+
+----[mlm]----
+
+---
+bullet_section_with_media: 
+ - title: Receive payments with Mercado Pago Checkout (Checkout Pro)
+ - type: normal
+ - message: Integrate Mercado Pago into Shopify and redirect your buyers directly to the Mercado Pago page, allowing them to complete the payment simply and securely. Checkout Pro offers a pre-configured design to streamline the payment experience.
  - image: /shopify/mini-landing-1.png
 ---
 
 ---
 bullet_section_with_media: 
- - title: Customize payments with Checkout Transparente
+ - title: Receive payments with Mercado Pago Cards
  - type: reversed
- - message: Integrate our Checkout Transparente and allow buyers to complete the checkout process within the environment of your store.
+ - message: Integrate the app that allows transparent payments with debit or credit cards where the entire checkout process happens within the online store environment, without needing to redirect to an external page. In addition to providing greater control over customization and integration, it reduces cart abandonment and increases the likelihood of conversion.
  - image: /shopify/mini-landing-4.png
 ---
 
 ------------
-
-----[mla, mlm, mlu, mpe, mco, mlc]----
+----[mla, mlu, mpe, mco, mlc]----
 
 ---
 bullet_section_with_media: 
- - title: Receive payments with Checkout Pro
+ - title: Receive payments with Mercado Pago Checkout (Checkout Pro)
  - type: normal
- - message: Integrate Mercado Pago in your Shopify and redirect your buyers to a Mercado Pago’s page to complete the checkout.
+ - message: Integrate Mercado Pago into Shopify and redirect your buyers directly to the Mercado Pago page, allowing them to complete the payment simply and securely. Checkout Pro offers a pre-configured design to streamline the payment experience.
  - image: /shopify/mini-landing-1.png
 ---
 

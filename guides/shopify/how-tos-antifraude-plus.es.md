@@ -1,17 +1,19 @@
-# Como previnir fraudes nos pagamentos com cartão
+# Cómo prevenir fraudes en los pagos con tarjeta
 
-O **Mercado Pago Antifraude Plus** é um complemento ao [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards) para otimizar a validação de segurança e manter altos níveis de aprovação, adicionando mais segurança ao identificar o device ID de compradores e evitar fraudes e estornos.
+EL **Mercado Pago Antifraude Plus** es un complemento para [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards) que optimiza la validación de seguridad y mantiene altos niveles de aprobación, agregando más seguridad al identificar el ID del dispositivo de los compradores y evitar fraudes y contracargos.
 
-1. A partir do link recebido pelo setor comercial do Mercado Pago, acesse a página do app **Mercado Pago Antifraude Plus** no "Marketplace" e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
-2. Leia com atenção as informações sobre as permissões solicitadas e clique novamente em **Instalar**.
-3. Se você já instalou o app [Mercado Pago Cartões](), não precisa inserir suas credenciais novamente, mas poderá alterá-las se necessário. Para isso, clique em **Gerenciar conta** para alterar suas credenciais produtivas `access_token` e a `public_key` nos campos correspondentes, **tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
+1. Desde el enlace recibido del sector comercial de Mercado Pago, accede a la página del app **Mercado Pago Antifraude Plus** en el "Marketplace" y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
+2. Lee atentamente la información sobre los permisos solicitados y haz clic nuevamente en **Instalar**.
+3. Si ya has instalado el app [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards), no necesitas ingresar tus credenciales nuevamente, pero podrás cambiarlas si es necesario.
 
 > NOTE
 >
 > Importante
 >
-> Se você já instalou o app [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards), não precisa inserir suas credenciais novamente, mas poderá alterá-las se necessário. 
-> <br>
-> Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de Shopify. Lembre-se: ao alterar a senha, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
+> Renueva tus credenciales según sea necesario, consultando la [documentación](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondiente como guía. Después de la renovación, es esencial actualizarlas en el panel de Shopify. 
+> <br><br>
+> Recuerda: al cambiar la contraseña, es necesario renovar tus credenciales. Para ello, haz clic en **Gestionar cuenta** para cambiar tus credenciales productivas (`access_token` y `public_key`) en los campos correspondientes, **teniendo cuidado de no invertir los campos al copiar y pegar las credenciales**.
 
-4. Por fim, clique na opção **Verificar ativação** do Mercado Pago Antifraude Plus, vá para a seção de "Configurações" da Shopify e clique em **Ativar** para ativar o app e finalizar a instalação.
+4. Finalmente, haz clic en la opción **Verificar activación** de Mercado Pago Antifraude Plus, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
+
+¡Listo! **Mercado Pago Antifraude Plus** se ha instalado con éxito.
