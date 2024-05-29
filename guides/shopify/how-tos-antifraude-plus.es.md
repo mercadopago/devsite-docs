@@ -14,6 +14,6 @@ Para instalar Mercado Pago Antifraude Plus, sigue los pasos a continuación.
 > <br><br>
 > Recuerda: al cambiar la contraseña, es necesario renovar tus credenciales. Para ello, haz clic en **Gestionar cuenta** para cambiar tus credenciales productivas (`access_token` y `public_key`) en los campos correspondientes, **teniendo cuidado de no invertir los campos al copiar y pegar las credenciales**.
 
-4. Finalmente, haz clic en la opción **Verificar activación** de Mercado Pago Antifraude Plus, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
+4. Finalmente, haz clic en la opción **Verificar activación** de Mercado Pago Antifraude Plus, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para finalizar la instalación.
 
 ¡Listo! **Mercado Pago Antifraude Plus** se ha instalado con éxito.
