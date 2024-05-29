@@ -107,6 +107,6 @@ Ahora, sigue los pasos según el checkout que hayas elegido para procesar los pa
 >
 > Durante las pruebas, estarás operando en el entorno de producción; sin embargo, se trata de una prueba en la que estarás utilizando credenciales ficticias para simular escenarios reales. Al finalizar las pruebas, recuerda reemplazar las credenciales del vendedor (tanto de producción como de prueba), ingresadas en el panel del plugin en los pasos 8 y 10, por las credenciales reales de tu cuenta en Mercado Pago. Esta acción te permitirá seguir vendiendo en tu tienda y evitará confusiones.
 
-Después de completar una compra de prueba utilizando Checkout Pro----[mlb]---- o Checkout Transparente------------, la aprobación de la compra será visible en el Panel Administrativo de Shopify, excepto las compras realizadas de forma offline----[mlb]---- y con Pix------------, que permanecerán con estado pendiente.
+Después de completar una compra de prueba utilizando Checkout Pro----[mlb]---- o Checkout Transparente------------, su aprobación será visible en el Panel Administrativo de Shopify, excepto las compras realizadas de forma offline----[mlb]---- y con Pix------------, que permanecerán con estado pendiente.
 
 Además, los pedidos se registrarán en el historial de la cuenta de prueba del vendedor de Mercado Pago.
