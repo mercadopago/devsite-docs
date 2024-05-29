@@ -370,7 +370,7 @@ Para configurar pagamentos com **boleto bancário** ou **pagamento em lotérica*
 >
 > Atenção
 >
-> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token. Para mais informações, accese [Credenciais](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials). Além disso, você deverá enviar o *header* `X-Idempotency-Key`com sua chave de idempotência. Seu preenchimento é importante para garantir a execução e reexecução de requisições sem que haja situações indesejadas como, por exemplo, pagamentos em duplicidade.
+> Para esta etapa, ao realizar a requisição via API ou SDKs, é necessário enviar sua Chave Privada - Access token. Para mais informações, acesse [Credenciais](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials). Além disso, você deverá enviar o *header* `X-Idempotency-Key`com sua chave de idempotência. Seu preenchimento é importante para garantir a execução e reexecução de requisições sem que haja situações indesejadas como, por exemplo, pagamentos em duplicidade.
 
 
 [[[
