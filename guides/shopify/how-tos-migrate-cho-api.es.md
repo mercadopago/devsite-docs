@@ -109,4 +109,4 @@ Después de instalar y activar la aplicación **Mercado Pago Tarjetas**, configu
 1. Inicia sesión en tu [cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
 2. Ve a la sección **Tu negocio > Costos** y selecciona la opción **Vende a meses sin intereses**.
 3. Activa la opción **Ofrecer meses sin interéses** y luego elige hasta cuántos meses quieres ofrecer.
-4. Por último, selecciona **Elegir montos mínimos**, ingresa el monto mínimo para el que ofreceras meses sin intereses y elige **guardar**.
+4. Por último, selecciona **Elegir montos mínimos**, ingresa el monto mínimo para el que ofrecerás meses sin intereses y haz clic en **Guardar**.
