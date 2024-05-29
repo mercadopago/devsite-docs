@@ -71,7 +71,7 @@ Done! The **Mercado Pago Cards** checkout is ready to receive payments.
 ### Install via Shopify admin panel
 
 1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
-2. In the store's administrative panel, click on **Settings** in the bottom-left corner of the page.
+2. In the store's administration panel, click on **Settings** in the bottom-left corner of the page.
 3. Once there, select the **Payments** option from the left-hand side menu.
 4. Under "Payment providers" click **Choose a provider**.
 5. On the "External payment providers" screen, select the **Search for a provider** tab and search for the "Mercado Pago Cartões" app.
