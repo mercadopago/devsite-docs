@@ -46,7 +46,7 @@ Ve a continuación cómo probar la integración:
 >
 > Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Tus integraciones, se solicita autenticación por correo electrónico, accede a nuestra documentación para saber [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
 
-6. Acceda a la aplicación creada en el paso 5 y haga clic en **Credenciales de producción** en el menú de la izquierda. Copie la `public_key` y el `access_token`.
+6. Accede a la aplicación creada en el paso 5 y haz clic en **Credenciales de producción** en el menú de la izquierda. Copia la `public_key` y el `access_token`.
 
 ![Credenciais de produção](/images/shopify/test-prod-credentials-es.png)
 
