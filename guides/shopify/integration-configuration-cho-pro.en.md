@@ -37,7 +37,7 @@ To install **Mercado Pago Checkout Pro** on your Shopify store, follow these ste
 >
 > Important
 >
-> The credentials are responsible for identifying the payment collecting account that you will receive in your store. If you do not enter your credentials in the store's admin panel, you will be automatically redirected to set up this step. **Remember, enabling payment methods will only be possible after the successful insertion of your credentials**.
+> The credentials are responsible for identifying the account collecting the payments that you will receive in your store. If you do not enter your credentials in the store's admin panel, you will be automatically redirected to set up this step. **Remember, enabling payment methods will only be possible after the successful insertion of your credentials**.
 
 9. In the Mercado Pago admin, go to **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** and select your application. If you haven't created an application yet, access the [developer Dashboard documentation](/developers/en/guides/additional-content/your-integrations/dashboard) to learn how to create one.
 
