@@ -1,6 +1,6 @@
 # How to migrate to the new Mercado Pago app for cards
 
-See below how to install the new app (**Mercado Pago Cards**) and uninstall the old one (**Checkout Transparente MP**) to avoid service interruption on Shopify.
+See below how to install the new app, **Mercado Pago Cards**, and uninstall the old one, **Checkout Transparente MP**, to avoid service interruption on Shopify.
 
 ----[mlb]----
 The **Mercado Pago Cards** ([Checkout Transparente](/developers/en/docs/checkout-api/landing)) is an app that allows transparent payments with debit or credit cards where the entire checkout process happens within the online store environment, without the need to redirect to an external page. In addition to providing greater control in the customization and integration process, it reduces cart abandonment and increases the possibility of conversion.
