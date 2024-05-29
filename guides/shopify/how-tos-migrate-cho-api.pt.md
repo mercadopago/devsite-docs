@@ -37,7 +37,7 @@ Para desinstalar o antigo app, siga as etapas abaixo.
 >
 > Nesta nova versão, a instalação de outro aplicativo não é mais necessária para o funcionamento do **Mercado Pago Cartões**.
 > <br><br>
-> Entretanto, é importante salientar que o novo app serve apenas para pagamentos com cartões. Para realizar pagamentos com **Pix** ou **boleto bancário**, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
+> Entretanto, tenha em mente que o novo app serve apenas para pagamentos com cartões. Para realizar pagamentos com **Pix** ou **boleto bancário**, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
 
 ## Instale o novo app
 
