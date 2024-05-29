@@ -10,7 +10,7 @@ The **Mercado Pago Antifraude Plus** is an add-on for [Mercado Pago Cards](/deve
 >
 > Important
 > 
-> Renew your credentials as needed, referring to the relevant [documentation](/developers/en/docs/shopify/best-practices/credentials-best-practices/secure-credentials)  as a guide. After renewal, it is essential to update them in the Shopify panel. 
+> Remember to renew your credentials if needed, referring to the [documentation](/developers/en/docs/shopify/best-practices/credentials-best-practices/secure-credentials)  as a guide. After renewal, it is essential to update them in the Shopify panel. 
 > <br><br>
 > Remember: when changing the password, **it is necessary to renew your credentials**. To do this, click on **Manage account** to change your production credentials (`access_token` and `public_key`) in the corresponding fields, **being careful not to swap the fields when copying and pasting the credentials**.
 
