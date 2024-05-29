@@ -1,7 +1,7 @@
 # Como previnir fraudes nos pagamentos com cartão
 
 O **Mercado Pago Antifraude Plus** é um complemento ao [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards) para otimizar a validação de segurança e manter altos níveis de aprovação, adicionando mais segurança ao identificar o device ID de compradores e evitar fraudes e estornos.
-
+Para instalar o Mercado Pago Antifraudes Plus, siga as etapas abaixo.
 1. A partir do link recebido pelo setor comercial do Mercado Pago, acesse a página do app **Mercado Pago Antifraude Plus** no "Marketplace" e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
 2. Leia com atenção as informações sobre as permissões solicitadas e clique novamente em **Instalar**.
 3. Se você já instalou o app [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards), não precisa inserir suas credenciais novamente, mas poderá alterá-las se necessário. 
