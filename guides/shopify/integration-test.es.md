@@ -29,7 +29,7 @@ Las compras de prueba son esenciales para asegurarse de que los pagos se procese
 
 Ve a continuación cómo probar la integración:
 
-1. Acceda a **[Sus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** en el administrador de Mercado Pago y seleccione la aplicación que desea probar.
+1. Accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** en el administrador de Mercado Pago y selecciona la aplicación que deseas probar.
 2. Haz clic en **Cuentas de prueba** en el menú de la izquierda.
 3. Dentro de la sección "Cuentas de prueba", haz clic en **Crear cuenta de prueba** y crea dos cuentas diferentes: una para vendedor y otra para comprador. No es posible utilizar la misma cuenta de prueba para vendedor y comprador. Consulta la documentación de [Cuentas de prueba](/developers/es/docs/shopify/additional-content/your-integrations/test/accounts)  para acceder al paso a paso de creación de cuentas de prueba.
 
