@@ -63,7 +63,7 @@ bullet_section_with_media:
 bullet_section_with_media: 
  - title: Receive payments with Mercado Pago Cards
  - type: reversed
- - message: Integrate the app that allows transparent payments with debit or credit cards where the entire checkout process happens within the online store environment, without needing to redirect to an external page. In addition to providing greater control over customization and integration, it reduces cart abandonment and increases the likelihood of conversion.
+ - message: Integrate the app that allows transparent payments with debit or credit cards where the entire checkout process happens within the online store environment, without needing to redirect to an external page. In addition to providing more control over customization and integration, it reduces cart abandonment and increases the chances of conversion.
  - image: /shopify/mini-landing-4.png
 ---
 
