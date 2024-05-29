@@ -240,7 +240,7 @@
                           "pt": "O payer é aquele que faz o pagamento. Este campo é um objeto que possui as informações do pagador.",
                           "es": "El payer es quien realiza el pago. Este campo es un objeto que tiene la información del pagador."
                         },
-                        "required": true,
+                        "required": false,
                         "properties": {
                           "first_name": {
                             "type": "string",
