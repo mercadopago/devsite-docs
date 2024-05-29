@@ -100,7 +100,7 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, sigue
 9. Haz clic en **Guardar credenciales**.
 10. Por último, haz clic en la opción **Verificar activación** de Mercado Pago Tarjetas, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
 
-¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir los pagos de tu tienda.
+¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
 
 ### Configurar meses sin intereses
 
