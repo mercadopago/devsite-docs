@@ -73,13 +73,13 @@
                   },
                   "point_of_interaction": {
                     "required": true,
-                    "type": "string",
+                    "type": "object",
                     "description": {
-                      "en": "Fix value. It must always be \"PSP_TRANSFER\"",
-                      "pt": "Valor fixo. Deve sempre ser preenchido como \"PSP_TRANSFER\"",
-                      "es": "Valor fijo. Siempre debe ser \"PSP_TRANSFER\""
+                      "en": "Fix value. It must always be {\"type\":\"PSP_TRANSFER\"}",
+                      "pt": "Valor fixo. Deve sempre ser preenchido como {\"type\":\"PSP_TRANSFER\"}",
+                      "es": "Valor fijo. Siempre debe ser {\"type\":\"PSP_TRANSFER\"}"
                     },
-                    "example": "PSP_TRANSFER"
+                    "example": "{\"type\":\"PSP_TRANSFER\"}"
                   },
                   "seller_configuration": {
                     "required": false,
@@ -101,7 +101,7 @@
                               "pt": "URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. Este campo tem um limite de 500 caracteres.",
                               "es": "URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado. Este campo tiene un límite de 500 caracteres. "
                             },
-                            "example": "www.exemplo.com.br"
+                            "example": "http://example.com.br/notification"
                           }
                         }
                       }
@@ -403,17 +403,17 @@
                       "example": "2021-01-01T00:00:00.000Z"
                     },
                     "point_of_interaction": {
-                      "type": "string",
-                      "example": "PSP_TRANSFER",
+                      "type": "object",
+                      "example": "{\"type\":\"PSP_TRANSFER\"}",
                       "properties": {
                         "type": {
                           "type": "string",
                           "description": {
-                            "en": "Point of interaction. It is a fix value, always \"PSP_TRANSFER\"",
-                            "pt": "Ponto de interação. É um valor fixo, sempre \"PSP_TRANSFER\"",
-                            "es": "Punto de interacción. Es un valor fijo, siempre \"PSP_TRANSFER\""
+                            "en": "Point of interaction. It is a fix value, always {\"type\":\"PSP_TRANSFER\"}",
+                            "pt": "Ponto de interação. É um valor fixo, sempre {\"type\":\"PSP_TRANSFER\"}",
+                            "es": "Punto de interacción. Es un valor fijo, siempre {\"type\":\"PSP_TRANSFER\"}"
                           },
-                          "example": "PSP_TRANSFER"
+                          "example": "{\"type\":\"PSP_TRANSFER\"}"
                         }
                       }
                     },
@@ -435,7 +435,7 @@
                                 "pt": "URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. ",
                                 "es": "URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado."
                               },
-                              "example": "www.exemplo.com.br"
+                              "example": "http://example.com.br/notification"
                             }
                           }
                         }
@@ -472,7 +472,7 @@
                                     } 
                                   },
                                   "status_detail": {
-                                    "type":"string",
+                                    "type":"array",
                                     "description": {
                                       "es": "Es devuelto vacío. Para más información sobre el status_detail, verifica \"transaction.to.accounts.status_detail\".",
                                       "pt": "É retornado vazio. Para obter mais informações sobre o status_detail, confira \"transaction.to.accounts.status_detail\".",
@@ -507,7 +507,7 @@
                                     "example": "100,00"
                                   },
                                   "status_detail": {
-                                    "type":"string",
+                                    "type":"array",
                                     "description": {
                                       "es": "Información detallada del estado de la operación.",
                                       "pt": "Informação detalhada do status da operação.",
@@ -753,9 +753,9 @@
                         {
                           "title":"Invalid type point_of_interaction",
                           "description":{
-                            "en":"Invalid value for field \"point_of_interaction.type\". Remember that it is a fix value, always \"PSP_TRANSFER\".",
-                            "es":"Valor inválido para el campo \"point_of_interaction.type\". Recuerda que es un valor fijo y siempre debe ser \"PSP_TRANSFER\".",
-                            "pt":"Valor inválido para o campo \"point_of_interaction.type\". Lembre-se que é um um valor fixo, sempre \"PSP_TRANSFER\"."
+                            "en":"Invalid value for field \"point_of_interaction.type\". Remember that it is a fix value, always {\"type\":\"PSP_TRANSFER\"}.",
+                            "es":"Valor inválido para el campo \"point_of_interaction.type\". Recuerda que es un valor fijo y siempre debe ser {\"type\":\"PSP_TRANSFER\"}.",
+                            "pt":"Valor inválido para o campo \"point_of_interaction.type\". Lembre-se que é um um valor fixo, sempre {\"type\":\"PSP_TRANSFER\"}."
                           }
                         },
                         {
@@ -1098,17 +1098,17 @@
                       "example": "2021-01-01T00:00:00.000Z"
                     },
                     "point_of_interaction": {
-                      "type": "string",
-                      "example": "PSP_TRANSFER",
+                      "type": "object",
+                      "example": "{\"type\":\"PSP_TRANSFER\"}",
                       "properties": {
                         "type": {
                           "type": "string",
                           "description": {
-                            "en": "Point of interaction. It is a fix value, always \"PSP_TRANSFER\"",
-                            "pt": "Ponto de interação. É um valor fixo, sempre \"PSP_TRANSFER\"",
-                            "es": "Punto de interacción. Es un valor fijo, siempre \"PSP_TRANSFER\""
+                            "en": "Point of interaction. It is a fix value, always {\"type\":\"PSP_TRANSFER\"}",
+                            "pt": "Ponto de interação. É um valor fixo, sempre {\"type\":\"PSP_TRANSFER\"}",
+                            "es": "Punto de interacción. Es un valor fijo, siempre {\"type\":\"PSP_TRANSFER\"}"
                           },
-                          "example": "PSP_TRANSFER"
+                          "example": "{\"type\":\"PSP_TRANSFER\"}"
                         }
                       }
                     },
@@ -1130,7 +1130,7 @@
                                 "pt": "URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. ",
                                 "es": "URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado."
                               },
-                              "example": "www.exemplo.com.br"
+                              "example": "http://example.com.br/notification"
                             }
                           }
                         }
@@ -1167,7 +1167,7 @@
                                     } 
                                   },
                                   "status_detail": {
-                                    "type":"string",
+                                    "type":"array",
                                     "description": {
                                       "es": "Es devuelto vacío. Para más información sobre el status_detail, verifica \"transaction.to.accounts.status_detail\".",
                                       "pt": "É retornado vazio. Para obter mais informações sobre o status_detail, confira \"transaction.to.accounts.status_detail\".",
@@ -1202,7 +1202,7 @@
                                     "example": "100,00"
                                   },
                                   "status_detail": {
-                                    "type":"string",
+                                    "type":"array",
                                     "description": {
                                       "es": "Información detallada del estado de la operación.",
                                       "pt": "Informação detalhada do status da operação.",

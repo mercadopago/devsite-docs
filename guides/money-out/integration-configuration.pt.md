@@ -33,10 +33,10 @@ curl -X POST \
        -H 'Authorization: Bearer TEST-7434*********159-03141*********cee51edf8*********f94f589-1*********' \
     -d '{
   "external_reference": "MP0001",
-  "point_of_interaction": "PSP_TRANSFER",
+  "point_of_interaction": "{"type":"PSP_TRANSFER"}",
   "seller_configuration": {
     "notification_info": {
-      "notification_url": "www.ejemplo.com.br"
+      "notification_url": "http://exemplo.com.br/notification"
     }
   },
   "transaction": {
@@ -75,8 +75,8 @@ curl -X POST \
 | `x-signature` | *Header*. Assinatura da solicitação com o corpo criptografado em base 64 usando as chaves pública e privada do integrador. Acesse a seção [Criptografia Ponta a Ponta](/developers/pt/docs/money-out/end-to-end-encryption) se precisar de mais informações. | Obrigatório **apenas no ambiente de produção**. | - |
 | `x-enforce-signature` | *Header*. Booleano que indica se o integrador enviará ou não a assinatura. | **Opcional** em ambiente de testes, e **obrigatório** em ambiente produtivo, que é quando é obrigatório o envio da assinatura. | - |
 | `external_reference` | *Body*. String com uma referência para identificar a transação. Essa referência é gerada pelo integrador e pode ser qualquer valor que permita rastrear as transações, desde que não possua caracteres especiais (“”, [ ], (), @) e não exceda 64 caracteres. São permitidos números (1234), letras (abcde), hífens (-) e underlines (_), e não pode ser duplicada. | Opcional | MP0001 |
-| `point_of_interaction.type` | *Body*. Valor fixo. Sempre deve ser `PSP_TRANSFER` | Obrigatório | `PSP_TRANSFER` |
-| `seller_configuration.notification_info.notification_url` | *Body*. URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. Este campo tem um limite de 500 caracteres. | Opcional | www.exemplo.com.br |
+| `point_of_interaction.type` | *Body*. Valor fixo. Sempre deve ser `{"type":"PSP_TRANSFER"}` | Obrigatório | `{"type":"PSP_TRANSFER"}` |
+| `seller_configuration.notification_info.notification_url` | *Body*. URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. Este campo tem um limite de 500 caracteres. | Opcional | http://exemplo.com.br/notification |
 | `transaction.from.accounts.amount` | *Body*. Valor da transação, que será retirado da conta de origem `from`. O valor mínimo é 0, e o valor máximo é 10000000000. | Obrigatório | 100,00 |
 | `transaction.to.accounts.type` | *Body*. Tipo de conta de destino. Os valores possíveis são `current`, para contas Pix, e `mercadopago`, para contas do Mercado Pago. | Obrigatório | `current` / `mercadopago` |
 | `transaction.to.accounts.amount` | *Body*. Valor a enviar para a conta de destino indicado no `to`. Deve ser o mesmo valor indicado para `from.accounts.amount`. | Obrigatório | 100,00 |
@@ -96,10 +96,10 @@ Se a execução for bem-sucedida, você receberá automaticamente uma resposta c
   "created_date": "2021-01-01T00:00:00.000Z",
   "external_reference": "123456",
   "last_updated_date": "2021-01-01T00:00:00.000Z",
-  "point_of_interaction": "PSP_TRANSFER",
+  "point_of_interaction": "{\"type\":\"PSP_TRANSFER\"}",
   "seller_configuration": {
     "notification_info": {
-      "notification_url": "www.ejemplo.com.br"
+      "notification_url": "http://exemplo.com.br/notification"
     }
   },
   "transaction": {
@@ -141,7 +141,7 @@ Se a execução for bem-sucedida, você receberá automaticamente uma resposta c
 | `created_date` | Data de criação da transação. Será retornada no formato YYYY-MM-DDTHH:MM:SS.SSSZ. |
 | `external_reference` | Referência externa da transação, gerada pelo integrador na hora da criação. |
 | `last_updated_date` | Última atualização do status da transação. Será retornada no formato YYYY-MM-DDTHH:MM:SS.SSSZ. |
-| `point_of_interaction.type` | Ponto de interação. Valor fixo. Sempre deve ser `PSP_TRANSFER`. |
+| `point_of_interaction.type` | Ponto de interação. Valor fixo. Sempre deve ser `{"type":"PSP_TRANSFER"}`. |
 | `seller_configuration.notification_info.notification_url` | URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. |
 | `transaction.from.accounts.amount` | Valor debitado da conta Mercado Pago de origem. |
 | `transaction.from.accounts.amount.status_detail` | É retornado vazio. Para obter mais informações sobre o `status_detail`, confira `transaction.to.accounts.amount.status_detail`. |
@@ -176,10 +176,10 @@ curl -X POST \
        -H 'Authorization: Bearer TEST-7434*********159-03141*********cee51edf8*********f94f589-1*********' \
     -d '{
   "external_reference": "MP0001",
-  "point_of_interaction": "PSP_TRANSFER",
+  "point_of_interaction": "{"type":"PSP_TRANSFER"}",
   "seller_configuration": {
     "notification_info": {
-      "notification_url": "www.ejemplo.com.br"
+      "notification_url": "http://exemplo.com.br/notification"
     }
   },
   "transaction": {
@@ -220,8 +220,8 @@ curl -X POST \
 | `x-signature` | *Header*. Assinatura da solicitação com o corpo criptografado em base 64 usando as chaves pública e privada do integrador. Acesse a seção [Criptografia Ponta a Ponta](/developers/pt/docs/money-out/end-to-end-encryption) se precisar de mais informações. | Obrigatório **apenas no ambiente de produção**. | - |
 | `x-enforce-signature` | *Header*. Booleano que indica se o integrador enviará ou não a assinatura. | **Opcional** em ambiente de testes, e **obrigatório** em ambiente produtivo, que é quando é obrigatório o envio da assinatura. | - |
 | `external_reference` | *Body*. String com uma referência para identificar a transação. Essa referência é gerada pelo integrador e pode ser qualquer valor que permita rastrear as transações, desde que não possua caracteres especiais (“”, [ ], (), @) e não exceda 64 caracteres. São permitidos números (1234), letras (abcde), hífens (-) e underlines (_), e não pode ser duplicada. | Opcional | MP0001 |
-| `point_of_interaction.type` | *Body*. Valor fixo. Sempre deve ser `PSP_TRANSFER` | Obrigatório | `PSP_TRANSFER` |
-| `seller_configuration.notification_info.notification_url` | *Body*. URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. Este campo tem um limite de 500 caracteres. | Opcional | www.exemplo.com.br |
+| `point_of_interaction.type` | *Body*. Valor fixo. Sempre deve ser `{"type":"PSP_TRANSFER"}` | Obrigatório | `{"type":"PSP_TRANSFER"}` |
+| `seller_configuration.notification_info.notification_url` | *Body*. URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. Este campo tem um limite de 500 caracteres. | Opcional | http://exemplo.com.br/notification |
 | `transaction.from.accounts.amount` | *Body*. Valor da transação, que será retirado da conta de origem `from`. O valor mínimo é 0, e o valor máximo é 10000000000. | Obrigatório | 100,00 |
 | `transaction.to.accounts.type` | *Body*. Tipo de conta de destino. Os valores possíveis são `current`, para contas bancárias, e `mercadopago`, para contas do Mercado Pago. | Obrigatório | `current` / `mercadopago` |
 | `transaction.to.accounts.amount` | *Body*. Valor a ser enviado para a conta de destino indicado no `to`. Deve ser o mesmo valor indicado para `from.accounts.amount`. | Obrigatório | 100,00 |
@@ -250,10 +250,10 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
   "created_date": "2021-01-01T00:00:00.000Z",
   "external_reference": "123456",
   "last_updated_date": "2021-01-01T00:00:00.000Z",
-  "point_of_interaction": "PSP_TRANSFER",
+  "point_of_interaction": "{\"type\":\"PSP_TRANSFER\"}",
   "seller_configuration": {
     "notification_info": {
-      "notification_url": "www.exemplo.com.br"
+      "notification_url": "http://exemplo.com.br/notification"
     }
   },
   "transaction": {
@@ -298,7 +298,7 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
 | `created_date` | Data de criação da transação. Será retornada no formato YYYY-MM-DDTHH:MM:SS.SSSZ. |
 | `external_reference` | Referência externa da transação, gerada pelo integrador na hora da criação. |
 | `last_updated_date` | Última atualização do status da transação. Será retornada no formato YYYY-MM-DDTHH:MM:SS.SSSZ. |
-| `point_of_interaction.type` | Ponto de interação. Valor fixo. Sempre deve ser `PSP_TRANSFER`. |
+| `point_of_interaction.type` | Ponto de interação. Valor fixo. Sempre deve ser `{"type":"PSP_TRANSFER"}`. |
 | `seller_configuration.notification_info.notification_url` | URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. |
 | `transaction.from.accounts.amount` | Valor debitado da conta Mercado Pago de origem. |
 | `transaction.from.accounts.amount.status_detail` | É retornado vazio. Para obter mais informações sobre o `status_detail`, confira `transaction.to.accounts.amount.status_detail`. |
@@ -342,10 +342,10 @@ curl -X POST \
        -H 'Authorization: Bearer TEST-7719*********832-03141*********ec9309854*********f1e54b5-1*********' \
     -d '{
   "external_reference": "MP0001",
-  "point_of_interaction": "PSP_TRANSFER",
+  "point_of_interaction": "{"type":"PSP_TRANSFER"}",
   "seller_configuration": {
     "notification_info": {
-      "notification_url": "www.ejemplo.cl"
+      "notification_url": "http://exemplo.cl/notification"
     }
   },
   "transaction": {
@@ -382,8 +382,8 @@ curl -X POST \
 | `x-signature` | *Header*. Assinatura da solicitação com o corpo criptografado em base 64 usando as chaves pública e privada do integrador. Acesse a seção [Criptografia Ponta a Ponta](/developers/pt/docs/money-out/end-to-end-encryption) se precisar de mais informações. | Obrigatório **apenas no ambiente de produção**. | - |
 | `x-enforce-signature` | *Header*. Booleano que indica se o integrador enviará ou não a assinatura. | **Opcional** em ambiente de testes, e **obrigatório** em ambiente produtivo, que é quando é obrigatório o envio da assinatura. | - |
 | `external_reference` | *Body*. String com uma referência para identificar a transação. Essa referência é gerada pelo integrador e pode ser qualquer valor que permita rastrear as transações, desde que não possua caracteres especiais (“”, [ ], (), @) e não exceda 64 caracteres. São permitidos números (1234), letras (abcde), hífens (-) e underlines (_), e não pode ser duplicada. | Opcional | MP0001 |
-| `point_of_interaction.type` | *Body*. Valor fixo. Sempre deve ser `PSP_TRANSFER` | Obrigatório | `PSP_TRANSFER` |
-| `seller_configuration.notification_info.notification_url` | *Body*. URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. Este campo tem um limite de 500 caracteres. | Opcional | www.exemplo.com.cl |
+| `point_of_interaction.type` | *Body*. Valor fixo. Sempre deve ser `{"type":"PSP_TRANSFER"}` | Obrigatório | `{"type":"PSP_TRANSFER"}` |
+| `seller_configuration.notification_info.notification_url` | *Body*. URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. Este campo tem um limite de 500 caracteres. | Opcional | http://exemplo.cl/notification |
 | `transaction.from.accounts.amount` | *Body*. Valor da transação, que será retirado da conta de origem `from`. O valor mínimo é 0, e o valor máximo é 10000000000. | Obrigatório | 100,00 |
 | `transaction.to.accounts.amount` | *Body*. Valor a ser enviado para a conta de destino indicado no `to`. Deve ser o mesmo valor indicado para `from.accounts.amount`. | Obrigatório | 100,00 |
 | `transaction.to.accounts.bank_id` | *Body*. Número identificador do banco ao qual pertence a conta de destino. | Obrigatório | 99999004 |
@@ -408,10 +408,10 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
   "created_date": "2021-01-01T00:00:00.000Z",
   "external_reference": "123456",
   "last_updated_date": "2021-01-01T00:00:00.000Z",
-  "point_of_interaction": "PSP_TRANSFER",
+  "point_of_interaction": "{\"type\":\"PSP_TRANSFER\"}",
   "seller_configuration": {
     "notification_info": {
-      "notification_url": "www.ejemplo.cl"
+      "notification_url": "http://exemplo.cl/notification"
     }
   },
   "transaction": {
@@ -456,7 +456,7 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
 | `created_date` | Data de criação da transação. Será retornada no formato YYYY-MM-DDTHH:MM:SS.SSSZ. |
 | `external_reference` | Referência externa da transação, gerada pelo integrador na hora da criação. |
 | `last_updated_date` | Última atualização do status da transação. Será retornada no formato YYYY-MM-DDTHH:MM:SS.SSSZ. |
-| `point_of_interaction.type` | Ponto de interação. Valor fixo. Sempre deve ser `PSP_TRANSFER`. |
+| `point_of_interaction.type` | Ponto de interação. Valor fixo. Sempre deve ser `{"type":"PSP_TRANSFER"}`. |
 | `seller_configuration.notification_info.notification_url` | URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. |
 | `transaction.from.accounts.amount` | Valor debitado da conta Mercado Pago de origem. |
 | `transaction.from.accounts.amount.status_detail` | É retornado vazio. Para obter mais informações sobre o `status_detail`, confira `transaction.to.accounts.amount.status_detail`. |
@@ -558,10 +558,10 @@ Se os dados enviados na chamada estiverem corretos, você receberá uma resposta
   "created_date": "2021-01-01T00:00:00.000Z",
   "external_reference": "123456",
   "last_updated_date": "2021-01-01T00:00:00.000Z",
-  "point_of_interaction": "PSP_TRANSFER",
+  "point_of_interaction": "{\"type\":\"PSP_TRANSFER\"}",
   "seller_configuration": {
     "notification_info": {
-      "notification_url": "www.ejemplo.cl"
+      "notification_url": "http://exemplo.cl/notification"
     }
   },
   "transaction": {
