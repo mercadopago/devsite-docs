@@ -6,7 +6,7 @@ La [autenticación 3DS](/developers/es/docs/checkout-api/how-tos/improve-payment
  * **Integrando la autenticación 3DS al momento de crear un pago:** el protocolo se ejecutará como parte del procesamiento del pago. 
  * **Realizando previamente la autenticación 3DS a través de un proveedor MPI externo:** se generarán pagos 3DS informando los datos ya autenticados a través de un flujo externo, optimizando el proceso de creación de pagos, tal como se muestra en el diagrama a continuación.
 
-![Flujo de autenticación 3DS externo](/images/api/3ds-external-mpi-es.png)
+![Flujo de autenticación 3DS externo](/images/api/api-3ds-external-mpi-es.png)
 
 Si deseas integrar 3DS al momento de crear un pago, accede a [nuestra documentación](/developers/es/docs/checkout-api/how-tos/integrate-3ds). 
 
