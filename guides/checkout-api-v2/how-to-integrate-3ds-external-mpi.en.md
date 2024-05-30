@@ -24,7 +24,7 @@ This authentication will return a series of data, such as a cryptogram or the un
 >
 > Keep in mind that, if the transaction is not correctly authenticated, the payment will be rejected by the card issuing bank, so you must make sure to include all the information requested by your provider appropriately and to **inform that it will be processed by Mercado Pago**. If there’s any doubts about this process, please contact a Comercial or Integrations representative.
 
-## 2. CCreate previously authenticated payment
+## 2. Create previously authenticated payment
 Use the parameters returned by the external MPI provider in the previous step to create a payment. This must be done by incorporating the new `payment_method.data.authentication` object into the usual flow, which will contain the values ​​received during authentication.
 
 To do this, you can send a **POST** with the new required attributes to the [/v1/payments](/developers/en/reference/payments/_payments/post) endpoint and execute the request or, if you prefer, send the information using our SDKs. You can see a detailed description for these fields in the table below.
@@ -206,7 +206,7 @@ payment_request = {
   payment_method: {
     type: 'credit_card',
     data: {
-// attributes corresponding with the authentication
+# attributes corresponding with the authentication
       authentication: {
         type: 'external_threeds',
         cryptogram: '<<String>>',
@@ -246,7 +246,7 @@ payment_data = {
     "payment_method": {
         "type": "credit_card",
         "data": {
-// authentication attributes
+# authentication attributes
             "authentication": {
                 "type": "external_threeds",
                 "cryptogram": "<<String>>",
@@ -286,7 +286,6 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
    },
    "payment_method_id": "{PAYMENT_METHOD_ID}",
    "token": "{CARD_TOKEN}"
-// authentication attributes
    "payment_method": {
       "type": "credit_card",
       "data": {

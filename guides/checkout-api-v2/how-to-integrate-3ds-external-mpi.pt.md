@@ -208,7 +208,7 @@ payment_request = {
   payment_method: {
     type: 'credit_card',
     data: {
-// atributos correspondentes à autenticação
+# atributos correspondentes à autenticação
       authentication: {
         type: 'external_threeds',
         cryptogram: '<<String>>',
@@ -248,7 +248,7 @@ payment_data = {
     "payment_method": {
         "type": "credit_card",
         "data": {
-// atributos correspondentes à autenticação
+# atributos correspondentes à autenticação
             "authentication": {
                 "type": "external_threeds",
                 "cryptogram": "<<String>>",
@@ -288,7 +288,6 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
    },
    "payment_method_id": "{PAYMENT_METHOD_ID}",
    "token": "{CARD_TOKEN}"
-// atributos correspondentes à autenticação
    "payment_method": {
       "type": "credit_card",
       "data": {
