@@ -65,7 +65,7 @@ To install Checkout Pro (**Mercado Pago Checkout**) on your Shopify store, follo
 
 ![Production credentials](/images/woocomerce/test-prod-credentials-api-es.png)
 
-11. Enter your production credentials `access_token` and `public_key` in the corresponding fields, being **careful not to invert the fields when copying and pasting the credentials**.
+11. Enter your production `access_token` and `public_key` in the corresponding fields, being **careful not to invert the fields when copying and pasting the credentials**.
 
 ![Add payment method](/images/shopify/add-credentials-es.png)
 
