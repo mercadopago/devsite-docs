@@ -1,6 +1,6 @@
 # Como integrar 3DS MPI externo com ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------
 
-A [autenticação 3DS](/developers/pt/docs/checkout-api/how-tos/improve-payment-approval/3ds), ou 3-D Secure, eé um protocolo desenvolvido para aumentar a segurança em transações de cartão de crédito e débito online. Este protocolo adiciona uma camada extra de verificação, permitindo que tanto o emissor do cartão quanto o banco do titular do cartão autentiquem a transação antes de sua conclusão.
+A [autenticação 3DS](/developers/pt/docs/checkout-api/how-tos/improve-payment-approval/3ds), ou 3-D Secure, é um protocolo desenvolvido para aumentar a segurança em transações de cartão de crédito e débito online. Este protocolo adiciona uma camada extra de verificação, permitindo que tanto o emissor do cartão quanto o banco do titular do cartão autentiquem a transação antes de sua conclusão.
 
 O ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ oferece a oportunidade de configurar pagamentos 3DS de duas maneiras diferentes:
  * **Integrando a autenticação 3DS na criação de um pagamento:** o protocolo será executado como parte do processamento do pagamento.  
