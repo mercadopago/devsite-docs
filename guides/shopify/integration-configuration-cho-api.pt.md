@@ -26,7 +26,7 @@ Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecem
 3. Uma vez lá, selecione a opção **Pagamentos** no menu ao lado esquerdo da página. 
 4. Em "Provedores de pagamento", clique em **Escolher um provedor**.
 
-![installation panel 1](/images/shopify/installation-cards-panel-1-pt.png)
+![installation panel 0](/images/shopify/installation-cards-panel-0-pt.png)
 
 5. Na tela de "Provedores externos de pagamento", procure pelo app "Mercado Pago Cartões".
 

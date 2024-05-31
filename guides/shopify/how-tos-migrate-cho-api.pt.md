@@ -31,8 +31,6 @@ Para desinstalar o antigo app, siga as etapas abaixo.
 8. Localize o antigo app com o nome "Mercado Pago" e clique em **Gerenciar**.
 9. Por fim, clique em **Desativar** > **Desinstalar**. 
 
-![installation choapi](/images/shopify/configurar-chotransparente-pt.gif)
-
 > WARNING
 >
 > Atenção
