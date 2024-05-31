@@ -49,7 +49,7 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, sigue
 
 1. A partir del enlace recibido por el departamento comercial de Mercado Pago, accede a la página de la aplicación **Mercado Pago Tarjetas** en el "Marketplace" y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
 
-![installation mkplace 1](/images/shopify/installation-cards-mkplace-1-es.png)
+![installation mkplace 0](/images/shopify/installation-cards-mkplace-0-es.png)
 
 2. Lee atentamente la información sobre los permisos solicitados y haz clic nuevamente en **Instalar**.
 
@@ -67,6 +67,7 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, sigue
 ![installation cards 4](/images/shopify/installation-cards-4-es.png)
 
 6. Regresa a las configuraciones de su tienda en Shopify y ingresa tus credenciales de producción (`access_token` y `public_key`) en los campos correspondientes, teniendo cuidado de no invertir los campos al copiar y pegar las credenciales.
+7. Haz clic en **Guardar credenciales**.
 
 ![installation cards 5](/images/shopify/installation-cards-5-es.png)
 
@@ -78,7 +79,6 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, sigue
 > <br><br>
 > Recuerde que, al cambiar la contraseña de Shopify, **es necesario renovar sus credenciales**. Para hacerlo, siga las instrucciones en la documentación de [Buenas prácticas de seguridad para tus credenciales](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, para actualizarlas en su cuenta de Shopify, haga clic en **Administrar cuenta** y llene los campos correspondientes con tu `access_token` y `public_key`, **teniendo cuidado de no intercambiar los campos al copiar y pegar las credenciales**.
 
-7. Haz clic en **Guardar credenciales**.
 8. Por último, haz clic en la opción **Revisar activación** de Mercado Pago Tarjetas, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
 
 ![installation cards 6](/images/shopify/installation-cards-6-es.png)
@@ -92,7 +92,7 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, sigue
 3. Una vez allí, selecciona la opción **Pagos** en el menú al lado izquierdo de la página.
 4. En "Formas de pago adicionales", haz clic en **Agregar forma de pago**.
 
-![installation panel 1](/images/shopify/installation-cards-panel-1-es.png)
+![installation panel 0](/images/shopify/installation-cards-panel-0-es.png)
 
 5. En la pantalla de "Agregar forma de pago", selecciona la pestaña **Buscar por proveedor** y busca la aplicación "Mercado Pago Tarjetas".
 
@@ -114,6 +114,7 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, sigue
 ![installation cards 4](/images/shopify/installation-cards-4-es.png)
 
 10. Regresa a las configuraciones de su tienda en Shopify y ingresa tus credenciales de producción (`access_token` y `public_key`) en los campos correspondientes, teniendo cuidado de no invertir los campos al copiar y pegar las credenciales.
+11. Haz clic en **Guardar credenciales**.
 
 ![installation cards 5](/images/shopify/installation-cards-5-es.png)
 
@@ -125,7 +126,6 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, sigue
 > <br><br>
 > Recuerde que, al cambiar la contraseña de Shopify, **es necesario renovar sus credenciales**. Para hacerlo, siga las instrucciones en la documentación de [Buenas prácticas de seguridad para tus credenciales](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, para actualizarlas en su cuenta de Shopify, haga clic en **Administrar cuenta** y llene los campos correspondientes con tu `access_token` y `public_key`, **teniendo cuidado de no intercambiar los campos al copiar y pegar las credenciales**.
 
-11. Haz clic en **Guardar credenciales**.
 12. Por último, haz clic en la opción **Revisar activación** de Mercado Pago Tarjetas, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
 
 ![installation cards 6](/images/shopify/installation-cards-6-es.png)
