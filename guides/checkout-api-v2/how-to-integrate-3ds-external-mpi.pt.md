@@ -3,6 +3,7 @@
 A [autenticação 3DS](/developers/pt/docs/checkout-api/how-tos/improve-payment-approval/3ds), ou 3-D Secure, é um protocolo desenvolvido para aumentar a segurança em transações de cartão de crédito e débito online. Este protocolo adiciona uma camada extra de verificação, permitindo que tanto o emissor do cartão quanto o banco do titular do cartão autentiquem a transação antes de sua conclusão.
 
 O ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ oferece a oportunidade de configurar pagamentos 3DS de duas maneiras diferentes:
+
  * **Integrando a autenticação 3DS na criação de um pagamento:** o protocolo será executado como parte do processamento do pagamento.  
  * **Realizando  previamente a  autenticação 3DS por meio de um provedor de MPI externo:** os pagamentos 3DS serão gerados ao reportar dados previamente validados através de um fluxo externo, otimizando assim o processo de criação de pagamentos, conforme mostrado no diagrama abaixo.
 
@@ -10,20 +11,19 @@ O ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, 
 
 Caso queira integrar o 3DS na hora de criar um pagamento, acesse [nossa documentação](/developers/pt/docs/checkout-api/how-tos/integrate-3ds). 
 
-Se, em vez disso, você deseja integrar o 3DS com um MPI externo com ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, siga as etapas listadas abaixo.
+Se, ao invés disso você deseja integrar o 3DS com um MPI externo com ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, siga as etapas listadas abaixo.
 
 ## 1. Autenticar a transação
+
 Para criar pagamentos 3DS utilizando um MPI externo, **é necessário autenticar a transação antes de criar o pagamento**. Essa autenticação pode ser realizada através de  qualquer provedor de MPI de sua escolha, fora do ambiente do Mercado Pago.
 
 Esta autenticação devolverá uma série de dados, como um criptograma ou o identificador único da transação atribuído pelo 3DS, que deverá ser incluído no próximo passo.
-
 
 > WARNING
 >
 > Importante
 >
-> Tenha em mente que se a transação não for autenticada corretamente, o pagamento será rejeitado pelo banco emissor do cartão. Por esse motivo, garanta que todas as informações solicitadas pelo seu provedor foram incluídas de forma adequada, e **informe que esta transação será processada pelo Mercado Pago**. Se você tiver dúvidas sobre esse processo, entre em contato com seu representante comercial ou de integrações.
-
+> Tenha em mente que se a transação não for autenticada corretamente, o pagamento será rejeitado pelo banco emissor do cartão. Por esse motivo, garanta que todas as informações solicitadas pelo seu provedor foram incluídas de forma adequada e **informe que esta transação será processada pelo Mercado Pago**. Se você tiver dúvidas sobre esse processo, entre em contato com seu representante comercial ou de integrações.
 
 ## 2. Criar pagamento previamente autenticado
 
@@ -310,8 +310,7 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 ```
 ]]]
 
-
-| Atributo | Obrigatório/opcional | Descrição | Exemplo |
+| Atributo | Obrigatoriedade | Descrição | Exemplo |
 |---|---|---|---|
 | `type` | Obrigatório | Indica que a transação foi previamente autorizada por um MPI externo. O valor deve ser `external_threeds`. | `external_threeds` |
 | `cryptogram` | Obrigatório  | O criptograma é o valor específico do sistema de pagamento, proporcionado como parte do registro Access Control Server (ACS) para cada Directory Server (DS) admitido. | `AJkBAScICQBBBDIASECYdYg3CXg=` |
@@ -324,7 +323,7 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 
 ### Possíveis respostas
 
-Se a requisição estiver correta, você receberá uma resposta semelhante à seguinte, com `status=approved`, e `status_detail=accredited`, que indicará que a transação foi aprovada.
+Se a requisição estiver correta, você receberá uma resposta semelhante à seguinte, com `status=approved` e `status_detail=accredited`, indicando que a transação foi aprovada.
 
 ```json
 {
