@@ -6,7 +6,7 @@ O ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, 
  * **Integrando a autenticação 3DS na criação de um pagamento:** o protocolo será executado como parte do processamento do pagamento.  
  * **Realizando  previamente a  autenticação 3DS por meio de um provedor de MPI externo:** os pagamentos 3DS serão gerados ao reportar dados previamente validados através de um fluxo externo, otimizando assim o processo de criação de pagamentos, conforme mostrado no diagrama abaixo.
 
-![Fluxo de autenticação 3DS externo](/images/api/api-3ds-external-mpi-pt.png)
+![Fluxo de autenticação 3DS externo](/images/api/3ds-external-flow-pt.png)
 
 Caso queira integrar o 3DS na hora de criar um pagamento, acesse [nossa documentação](/developers/pt/docs/checkout-api/how-tos/integrate-3ds). 
 
