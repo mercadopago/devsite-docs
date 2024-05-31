@@ -20,7 +20,7 @@ When sending the request to the Payments endpoint, ensure that the following att
 | external_reference | Payment reference assigned by seller |
 | payer | Payer information required to create a payment |
 | token | payer_token obtained after completion of the agreement flow. |
-| type_token | Type of payment, to use it in the Wallet Connect flow, the “wallet-token” value must be defined. |
+| type_token | Type of payment. To use it in the Wallet Connect flow, the “wallet-token” value must be defined. |
 | binary_mode | The value of this field is mandatory "true". |
 
 With these parameters in hands, send a **POST** to the endpoint [/v1/advanced_payments](/developers/en/reference/wallet_connect/_advanced_payments/post) and execute the request or, if you prefer, use the `curl` below .
