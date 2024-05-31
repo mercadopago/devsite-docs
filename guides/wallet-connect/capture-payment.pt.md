@@ -20,7 +20,7 @@ Ao enviar o _request_ ao endpoint de Pagamentos, garanta que os seguintes atribu
 | external_reference  | Referência de pagamento atribuída pelo vendedor. |
 | payer  | Informação do pagador requerida para criação do pagamento. |
 | token  | _Token_ de pagamento obtido após a finalização do fluxo da vinculação. |
-| type_token  | Tipo de pagamento, para o uso no fluxo de Wallet Connect é preciso definir o valor “wallet-token”. |
+| type_token  | Tipo de pagamento. Para o uso no fluxo de Wallet Connect é preciso definir o valor “wallet-token”. |
 | binary_mode  | O valor deste campo é obrigatoriamente "true". |
 
 Com esses parâmetros em mãos, envie um **POST** ao endpoint [/v1/advanced_payments](/developers/pt/reference/wallet_connect/_advanced_payments/post) e execute a requisição ou, se preferir, utilize o `curl` abaixo.

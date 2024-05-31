@@ -21,7 +21,7 @@ Você pode adicionar o código de segurança do Mercado Pago substituindo o valo
 Para usar o Device ID na web e evitar possíveis compras fraudulentas, é preciso seguir os passos abaixo:
 
 ### 1. Adicione o script de segurança do Mercado Pago
-Para implementar a geração do device ID em seu site, adicione o seguinte código na sua página de Checkout:
+Para implementar a criação do device ID em seu site, adicione o seguinte código na sua página de Checkout:
 
 ```html
 <script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
@@ -37,6 +37,7 @@ Se você preferir atribuí-lo a outra variável, indique o nome adicionando o at
 ```
 
 Você também pode **criar sua própria variável**. Para isso, adicione uma tag HTML no seu site com o identificador `id="deviceID"`, como no exemplo abaixo.
+
 ```html
   <input type="hidden" id="deviceId">
 ```
