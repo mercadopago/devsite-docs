@@ -19,17 +19,29 @@ O **Mercado Pago Cartões** ([Checkout API](/developers/pt/docs/checkout-api/lan
 
 ## Desative o antigo app
 
-Antes de instalar a nova versão, é necessário desinstalar o antigo app.
-Para desinstalar o antigo app, siga as etapas abaixo.
+Antes de instalar a nova versão, é necessário desinstalar o antigo app. Para desinstalar o antigo app, siga as etapas abaixo.
+
 1. Vá para sua loja [Shopify](https://accounts.shopify.com/store-login).
-2. No painel administrativo da loja, clique em **Configurações**.
-3. Uma vez lá, selecione a opção **Apps e canais de vendas**. 
-4. Localize o app com o nome "Checkout Transparente MP" e clique em **Gerenciar**. 
-5. Clique no **menu de opções adicionais** > **Desinstalar**.
-6. Retorne ao painel administrativo da loja e, novamente, clique em **Configurações**.
-7. Uma vez lá, selecione a opção **Pagamentos**. 
-8. Localize o antigo app com o nome "Mercado Pago" e clique em **Gerenciar**.
-9. Por fim, clique em **Desativar** > **Desinstalar**. 
+2. No painel administrativo da loja, localize o app com o nome "Checkout Transparente MP" e clique em **Gerenciar**.
+
+![uninstall app 1](/images/shopify/uninstall-app-1-pt.png)
+
+3. Clique no **menu de opções adicionais** > **Desinstalar** e, por fim, em **Desinstalar** novamente.
+
+![uninstall app 2](/images/shopify/uninstall-app-2-pt.png)
+
+4. Retorne ao painel administrativo da loja e clique em **Configurações > Pagamentos**.
+
+![uninstall app 3](/images/shopify/uninstall-app-3-pt.png)
+
+5. Localize o antigo app com o nome "Mercado Pago" e clique em **Gerenciar**.
+
+![uninstall app 4](/images/shopify/uninstall-app-4-pt.png)
+
+6. Por fim, clique em **Desativar** > **Desativar**.
+
+![uninstall app 5](/images/shopify/uninstall-app-5-pt.png)
+
 
 > WARNING
 >

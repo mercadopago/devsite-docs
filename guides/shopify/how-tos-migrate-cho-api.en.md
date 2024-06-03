@@ -22,14 +22,11 @@ See below how to install the new app, **Mercado Pago Cards**, and uninstall the 
 Before installing the new version, it is necessary to uninstall the configuration of the old app.
 
 1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
-2. In the store's admin panel, click on **Settings**.
-3. Once there, select the **Apps and sales channels** option.
-4. Locate the app named "Checkout Transparente MP" and click on **Manage**.
-5. Click on the **additional options menu** and then on **Uninstall**.
-6. Return to the store's admin panel and click on **Settings** again.
-7. Once there, select the **Payments** option.
-8. Locate the old app named "Mercado Pago" and click on **Manage**.
-9. Finally, click on **Deactivate** and then on **Uninstall**.
+2. In the store's admin panel, locate the app named "Checkout Transparente MP" and click on **Manage**.
+3. Click on the **additional options menu > Uninstall** and then on **Uninstall** again.
+4. Return to the store's admin panel and click on **Settings > Payments**.
+5. Locate the old app named "Mercado Pago" and click on **Manage**.
+6. Finally, click on **Deactivate** and then on **Uninstall**.
 
 > WARNING
 >
