@@ -4,11 +4,9 @@ O **Device ID** é uma informação importante para garantir uma melhor seguran�
 
 Caso um comprador frequente faça uma compra a partir de um dispositivo diferente do habitual, isso pode representar um comportamento atípico. A partir do ID do dispositivo, conseguimos refinar a avaliação e impedir a rejeição de pagamentos legítimos.
 
-
 ## Obter e enviar o Device ID
 
 Você pode adicionar o código de segurança do Mercado Pago substituindo o valor `view` pelo nome da seção do seu site na qual deseja adicioná-lo.
-
 
 > NOTE
 >
@@ -21,6 +19,7 @@ Você pode adicionar o código de segurança do Mercado Pago substituindo o valo
 Para usar o Device ID na web e evitar possíveis compras fraudulentas, é preciso seguir os passos abaixo:
 
 ### 1. Adicione o script de segurança do Mercado Pago
+
 Para implementar a criação do device ID em seu site, adicione o seguinte código na sua página de Checkout:
 
 ```html
@@ -28,6 +27,7 @@ Para implementar a criação do device ID em seu site, adicione o seguinte códi
 ```
 
 ### 2.Obtendo o Device ID
+
 Uma vez que você tenha adicionado o código de segurança do Mercado Pago em seu site, uma variável global de javascript é criada automaticamente com o nome `MP_DEVICE_SESSION_ID`, cujo valor é o Device ID.
 
 Se você preferir atribuí-lo a outra variável, indique o nome adicionando o atributo output ao script de segurança, como no exemplo a seguir:
