@@ -2,15 +2,15 @@
 
 Logs provide comprehensive information about transactions, making it easier to understand the events that occur. Additionally, when making modifications or adding new payment methods, logs help validate the correct functioning of the integration.
 
-The support team may request the submission or verification of logs to track specific information when necessary, so it is important to keep them active.
+The support team may request the submission or verification of logs to track specific information when necessary, so it is important to activate them.
 
 Follow the steps below to activate payment logs.
 
-1. To access the configuration page, click on the **Stores** > **Configuration**:
+1. To access the configuration page, click on **Stores > Configuration**:
 
 ![Configuration](/images/adobe-commerce/logs-configuration-es.png)
 
-2. In the **settings**, click on the **Sales** menu on the side. In the submenu that opens, select **Payment Methods**.
+2. In **Settings**, click on the **Sales** menu on the side. In the submenu that opens, select **Payment Methods**.
 
 ![Methods](/images/adobe-commerce/logs-payment-method-es.gif)
 
@@ -18,7 +18,7 @@ Follow the steps below to activate payment logs.
 
 ![Configure](/images/adobe-commerce/logs-configure-es.png)
 
-4. In the plugin configuration screen, select the **Basic Settings** > **Developer Support**.
+4. In the plugin configuration screen, select **Basic Settings > Developer Support**.
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
 ![Support](/images/adobe-commerce/logs-support-es.png)
 

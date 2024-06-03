@@ -4,9 +4,9 @@ Los _logs_ proporcionan información completa sobre las transacciones, facilitan
 
 El equipo de soporte puede solicitar el envío o verificación de los _logs_ para rastrear información específica cuando sea necesario, por lo que es importante mantenerlos activos.
 
-Siga los pasos a continuación para activar los _logs_ de pago.
+Sigue los pasos a continuación para activar los _logs_ de pago.
 
-1. Para acceder a la página de configuración, haz clic en el menú lateral **Stores** > **Configuration**:
+1. Para acceder a la página de configuración, haz clic en el menú lateral **Stores > Configuration**:
 
 ![Configuración](/images/adobe-commerce/logs-configuration-es.png)
 
@@ -18,7 +18,7 @@ Siga los pasos a continuación para activar los _logs_ de pago.
 
 ![Configure](/images/adobe-commerce/logs-configure-es.png)
 
-4. En la pantalla de configuración del plugin, selecciona la opción **Configuraciones básicas** > **Soporte para desarrolladores**.
+4. En la pantalla de configuración del plugin, selecciona la opción **Configuraciones básicas > Soporte para desarrolladores**.
 
 ![Support](/images/adobe-commerce/logs-support-es.png)
 
@@ -28,7 +28,7 @@ Siga los pasos a continuación para activar los _logs_ de pago.
 
 6. Una vez hecho esto, haz clic en el botón **Save Config** para guardar la modificación.
 
-Con esta configuración, el plugin de Mercado Pago registra los _logs_ en el servidor donde la tienda está alojada, permitiendo que un usuario administrador los acceda fácilmente.
+Con esta configuración, el plugin de Mercado Pago registra los _logs_ en el servidor donde la tienda está alojada, permitiendo que un usuario administrador tenga acceso a ellos fácilmente.
 
 > NOTE
 >

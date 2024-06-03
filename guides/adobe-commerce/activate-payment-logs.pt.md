@@ -6,7 +6,7 @@ A equipe de suporte pode solicitar o envio ou verificação dos _logs_ para rast
 
 Siga as etapas abaixo para ativar os _logs_ de pagamento.
 
-1. Para acessar a página de configurações, clique no menu lateral **Lojas** > **Configuração**:
+1. Para acessar a página de configurações, clique no menu lateral **Lojas > Configuração**:
 
 ![Configuração](/images/adobe-commerce/logs-configuration-pt.png)
 
@@ -18,7 +18,7 @@ Siga as etapas abaixo para ativar os _logs_ de pagamento.
 
 ![Configure](/images/adobe-commerce/logs-configure-pt.png)
 
-4. Na tela de configurações do plugin, selecione a opção **Configurações básicas** > **Suporte para desenvolvedores**. 
+4. Na tela de configurações do plugin, selecione a opção **Configurações básicas > Suporte para desenvolvedores**. 
 
 ![Suporte](/images/adobe-commerce/logs-support-pt.png)
 
