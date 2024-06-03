@@ -13,7 +13,7 @@ When sending the request to the Payments endpoint, ensure that the following att
 | Parameter | Description |
 | --- | --- |
 | X-Idempotency-Key | This parameter must be inserted in the header of all requests. For more information, see the Idempotency section. |
-| X-Meli-Session-Id | This parameter can be included in the header of requests. It represents a unique identifier for the buyer's device at the time of purchase. It is mandatory only for integrators belonging to the Gambling industry. If you have any doubts, consult your commercial representative. |
+| X-Meli-Session-Id | This parameter can be included in the header of requests. It represents a unique identifier for the buyer's device at the time of purchase. It is mandatory only for integrations belonging to the Gambling industry. If you have any doubts, consult your commercial representative. |
 | wallet_payment | Indicates that it is a payment from a previously linked Wallet Connect seller. |
 | transaction_amount | Total amount to be charged to the buyer. |
 | description | Payment description. |

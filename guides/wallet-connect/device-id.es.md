@@ -7,7 +7,7 @@ Si un comprador frecuente hace una compra desde un dispositivo diferente al habi
 
 ## Obtener y enviar el Device ID
 
-Puedes agregar el código de seguridad de Mercado Pago a tu sitio reemplazando el valor de `view` con el nombre de la sección de tu web en la que deseas agregarlo. Si bien lo más importante es hacerlo en la página del checkout, también puedes hacerlo en otras páginas, tales como home, search o ítem, ya que ayuda a enriquecer la información recolectada.
+Puedes agregar el código de seguridad de Mercado Pago a tu sitio reemplazando el valor de `view` con el nombre de la sección de tu web en la que deseas agregarlo. Si bien lo más importante es hacerlo en la página del checkout, también puedes hacerlo en otras páginas, tales como _home_, _search_ o _ítem_, ya que ayuda a enriquecer la información recolectada.
 
 > NOTE
 >
@@ -42,7 +42,7 @@ También puedes **crear tu propia variable** agregando una etiqueta HTML a tu si
   <input type="hidden" id="deviceId">
 ```
 
-### 3. Uso del device ID
+### 3. Uso del Device ID
 
 Una vez que tengas el valor del Device ID, debes **enviarlo a nuestros servidores** al crear un pago. Para hacer esto, agrega el siguiente **encabezado (*header*)** a la solicitud:
 

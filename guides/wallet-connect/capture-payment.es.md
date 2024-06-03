@@ -13,7 +13,7 @@ Al enviar el _request_ al endpoint de Pagos, asegúrate de incluir los atributos
 | Parámetro | Descripción |
 | --- | --- |
 | X-Idempotency-Key | Este parámetro debe incluirse en el encabezado de todos los _requests_. Para obtener más información, consulte la sección de Idempotencia. |
-| X-Meli-Session-Id | Este parámetro puede incluirse en el encabezado de los _requests_. Representa un identificador único para el dispositivo de cada comprador en el momento de la compra. Es obligatorio solo para integradores pertenecientes a la industria Gambling. Si tienes dudas consulta con tu representante comercial. |
+| X-Meli-Session-Id | Este parámetro puede incluirse en el encabezado de los _requests_. Representa un identificador único para el dispositivo de cada comprador en el momento de la compra. Es obligatorio solo para las integraciones pertenecientes a la industria Gambling. Si tienes dudas consulta con tu representante comercial. |
 | wallet_payment | Indica que se trata de un pago de un vendedor con Wallet Connect previamente vinculado. |
 | transaction_amount | Valor total que se cobrará al comprador. |
 | description | Descripción de pago. |

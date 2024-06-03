@@ -20,15 +20,15 @@ To use the Device ID on your web and prevent possible fraudulent purchases, foll
 
 ### 1. Add the security code
 
-To generate device IDs on your website, add the following code to your Checkout page:
+To generate Device IDs on your website, add the following code to your Checkout page:
 
 ```html
 <script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
 ```
 
-### 2. Getting the device ID
+### 2. Getting the Device ID
 
-When you add the Mercado Pago security code to your site, a global JavaScript variable is automatically created with the name `MP_DEVICE_SESSION_ID`, whose value is the device ID. 
+When you add the Mercado Pago security code to your site, a global JavaScript variable is automatically created with the name `MP_DEVICE_SESSION_ID`, whose value is the Device ID. 
 
 If you prefer that we assign it to another variable, indicate the name by adding the attribute `output`, as in the following example:  
 
@@ -42,7 +42,7 @@ You can also **create your own variable** by adding an HTML tag on your site as 
 <input type="hidden" id="deviceId">
 ```
 
-### 3. Use the device ID
+### 3. Use the Device ID
 
 Once you have the Device ID, you must **send it to our servers** when creating a payment. To do so, simply add the following **header** to the request:
 
