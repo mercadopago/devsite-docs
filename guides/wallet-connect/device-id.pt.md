@@ -43,6 +43,7 @@ Você também pode **criar sua própria variável**. Para isso, adicione uma tag
 ```
 
 ### 3. Utilizando o Device ID
+
 Uma vez que você tenha o valor de Device ID, é preciso que você **o envie aos nossos servidores** ao criar um pagamento. Para isso, basta acrescentar o seguinte **cabeçalho (*header*)** à requisição:
 
 ```http

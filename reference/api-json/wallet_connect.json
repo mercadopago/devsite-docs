@@ -1463,7 +1463,7 @@
                           "title": "400",
                           "description": {
                             "en": "Missing header parameter.",
-                            "es": "Parámetro en header faltante",
+                            "es": "Parámetro faltante en header",
                             "pt": "Parâmetro do header ausente."
                           }
                         }
