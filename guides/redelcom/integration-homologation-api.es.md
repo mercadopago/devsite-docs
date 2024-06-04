@@ -19,7 +19,7 @@ A continuación, encontrarás cuáles son las transacciones que deberás llevar 
 
 Además, ciertos casos particulares pueden requerir de pasos adicionales:
 
-* Si has integrado la [obtención de terminal](/developers/en/docs/redelcom/api-integration/payments-processing/get-terminal), es posible que se te solicite una demostración.
+* Si has integrado la [obtención de terminal](/developers/es/docs/redelcom/api-integration/payments-processing/get-terminal), es posible que se te solicite una demostración.
 * Si utilizas el **parámetro `responseCallback`** para recibir respuestas automáticas  de los pagos realizados, deberás mostrar que esa notificación llega efectivamente a la [URL de respuesta](/developers/es/docs/redelcom/api-integration/payments-processing/create-payment-intent#bookmark_implementar_la_url_de_respuesta). 
 * Si utilizas un **boleteador externo**, deberás mostrar cómo lucen las facturas impresas.
 
