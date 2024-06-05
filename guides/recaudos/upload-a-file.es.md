@@ -7,15 +7,15 @@ Utilizando la terminal, puedes cargar un archivo vía [Consola SFTP](/developers
 Tomando como ejemplo el código a continuación, sigue los siguientes pasos para cargar un archivo usando la consola SFTP.
 
 ```terminal
-UY0FVFGW103Q05P: ~ pabloengonza$ sftp pg_sap@sftp-qa.mercadolibre.io
+UY0FVFGW103Q05P: ~ user$ sftp pg_sap@sftp-qa.mercadolibre.io
 Connected to sftp-qa.mercadolibre.io.
 sftp> ls
 selfserviceinitiative	selfserviceinitiativeout
 sftp> cd selfserviceinitiative
 sftp> ls
-sftp> put /	Users/pabloengonza/debt_589_6_20230804.csv
-Uploading /Users/pabloengonza/debt_589_6_20230804.csv to /selfserviceinitiative/debt_589_6_20230804.csv
-/Users/pabloengonza/debt_589_6_20230804.csv
+sftp> put /	Users/user/debt_589_6_20230804.csv
+Uploading /Users/user/debt_589_6_20230804.csv to /selfserviceinitiative/debt_589_6_20230804.csv
+/Users/user/debt_589_6_20230804.csv
 sftp> ls
 debt_589_6_20230804.csv
 sftp> bye
@@ -35,7 +35,7 @@ Un script batch sería el contenido de los siguientes comandos:
 ```terminal
 ls
 cd selfserviceinitiative
-put /Users/pabloengonza/debt_589_6_20230804.csv
+put /Users/user/debt_589_6_20230804.csv
 ls
 bye
 ```
@@ -55,12 +55,12 @@ shell> sftp -b batch_script_file_name username@sftp.mercadolibre.io
 Este es el resultado  de la ejecución batch:
 
 ```terminal
-UY0FVGW103Q0SP: ~ pabloengonza$ sftp -b upload_sftp_script pg_sap@sftp-qa.mercadolibre.io sftp> ls
+UY0FVGW103Q0SP: ~ user$ sftp -b upload_sftp_script pg_sap@sftp-qa.mercadolibre.io sftp> ls
 selfserviceinitiative	selfserviceinitiativeout
 sftp> cd selfserviceinitiative
-sftp> put /Users/pabloengonza/debt_589_6_20230804.csv
+sftp> put /Users/user/debt_589_6_20230804.csv
 sftp> ls
 debt_589_6_20230804.csv
 sftp> bye
-UY0FVFGW103Q05P:~ pabloengonza$
+UY0FVFGW103Q05P:~ user$
 ```

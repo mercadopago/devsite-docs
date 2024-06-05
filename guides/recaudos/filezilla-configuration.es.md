@@ -1,6 +1,8 @@
-## Configuración del FileZilla
+## Cliente SFTP
 
-FileZila es un proveedor SFTP de código abierto que te permitirá gestionar la subida y descarga de archivos de forma sencilla. Si bien puedes elegir utilizar otro proveedor SFTP,  en esta documentación vas a encontrar cómo configurarlo en caso de que desees hacerlo.
+Aunque puedes optar por usar otro proveedor SFTP, en esta documentación abordaremos la configuración del cliente FileZilla, un proveedor SFTP de código abierto que permite gestionar la carga y descarga de archivos de forma sencilla.
+
+Para configurarlo, sigue las instrucciones a continuación:
 
 1. En el menú, selecciona **File > Site Manager**.
 2. Haz clic en **New Site** e ingresa el nombre deseado para el sitio.
@@ -25,11 +27,9 @@ En en panel de FileZilla, encontrarás dos ventanas. La de la izquierda represen
 
 ![1](/images/recaudos/filezilla1.png)
 
-## Descargar un archivo de resultado y reporte
+## Descargar un archivo de resultado
 
-El archivo de resultados contiene el detalle del procesamiento del archivo de deudas y/o enlaces de pago generados. En el mismo se detalla el resultado de cada fila procesada.
-
-Para descargar un archivo de resultado y reporte, arrastra y suelta el archivo desde la ventana derecha, correspondiente al servidor SFTP, hacia la izquierda, correspondiente a tu computador. 
+Un archivo de resultados contiene el procesamiento del archivo de deudas y/o enlaces masivos cargados. Para descargar un archivo de resultado, arrastra y suelta el archivo desde la ventana derecha, correspondiente al servidor SFTP, hacia la izquierda, correspondiente a tu computador. 
 
 De esta manera, el archivo se encontrará automáticamente disponible en tu directorio.
 

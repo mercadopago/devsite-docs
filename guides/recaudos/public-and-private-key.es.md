@@ -1,6 +1,8 @@
 ## Cómo crear una clave pública/privada SSH
 
-La autenticación se realizará mediante la clave pública `ssh-rs`. Durante el proceso de integración, debes proporcionar la clave pública al equipo, que la configurará en el servicio SFTP de Mercado Pago. 
+La clave pública `ssh-rs` se refiere a la parte pública del par de claves (junto con la clave privada correspondiente) utilizada para autenticación y cifrado en SSH. Esta clave pública se comparte con Mercado Pago para permitir la autenticación.
+
+Durante el proceso de integración, debes proporcionar la clave pública al equipo, que la configurará en el servicio SFTP de Mercado Pago. 
 
 Para generar esta clave, ejecuta el comando en tu terminal:
 

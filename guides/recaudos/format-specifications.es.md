@@ -21,25 +21,6 @@ Por ejemplo:
 - AN(1-11) indica que es un campo alfanumérico de largo 11.
 - AN(1-20) indica que el campo puede tener una largo de 1 a 20 caracteres.
 
-## Archivo de entrada
-
-Este archivo contendrá las deudas y enlaces.
-
-El nombre del archivo debe seguir el siguiente modelo de nomenclatura:
-
-`debt_{sellerId}_{sequential}_{date}.csv`
-
-Dónde:
-- `sellerId`: Identificador de la empresa en nuestro sistema.
-- `sequential`: Número secuencial generado por la empresa.
-- `date`: Fecha de generación del archivo en el formato AAAAMMDD.
-
-> WARNING
->
-> Importante
->
-> Archivos cuyo nombre no siga esta nomenclatura no serán procesados.
-
 ### Layout de entrada
 
 Consulta los campos que puedes configurar en la entrada. En la columna "Categoría", M representa Obligatorio, C Condicional y O Opcional - para estos casos, los campos deben quedar vacíos.
@@ -49,13 +30,13 @@ Consulta los campos que puedes configurar en la entrada. En la columna "Categor�
 >
 > Importante
 >
-> En el caso de Deudas, al menos uno de estos campos debe ser completado, de acuerdo a la configuración del vendedor.
+> En el caso de deudas con 'C' en la columna Categoría, al menos uno de estos campos debe ser completado, de acuerdo a la configuración del vendedor.
 
 | Column/index | Atributo                  | Formato  | Detalle                                                                                                                                           | Categoria                             |
 |--------------|---------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | 1            | Referencia                | AN(1-50) | Identificador único de la deuda que pagará el cliente, gestionado por la empresa. Ten en cuenta que este identificador será utilizado para conciliación. | M                                     |
-| 4            | DNI/CUIL/CUIT             | N(011)   | DNI, CUIL o CUIT del cliente.                                                                                                                     | O*                                    |
-| 2            | Código del cliente        | AN(020)  | Identificador utilizado por la empresa para identificar a sus clientes. Recuerda que debes respetar el formato indicado durante el proceso de incorporación. | O                                     |
+| 4            | DNI/CUIL/CUIT             | N(011)   | DNI, CUIL o CUIT del cliente.                                                                                                                     | C                                    |
+| 2            | Código del cliente        | AN(020)  | Identificador utilizado por la empresa para identificar a sus clientes. Recuerda que debes respetar el formato indicado durante el proceso de incorporación. | C                                     |
 | 7            | Fecha Primer Vencimiento  | N(008)   | Fecha del primer vencimiento en formato AAAAMMDD.                                                                                                 | M                                     |
 | 8            | Importe Primer Vencimiento| N(,2)    | Importe del primer vencimiento. Es un número entero donde los dos últimos dígitos representan los decimales.                                       | M                                     |
 | 9            | Fecha Segundo Vencimiento | N(008)   | Fecha del segundo vencimiento, en formato AAAAMMDD.                                                                                                | O                                     |
@@ -100,9 +81,9 @@ Consulta los campos que puedes configurar en la entrada. En la columna "Categor�
 A continuación, tienes un ejemplo de archivo de entrada para Links masivos y Deudas:
 
 ```terminal
-15897,ext1600,prueba uno,1122334455,,,20231124,500.00,,,,,Cuota,,
-15898,ext1601,prueba dos,1122334455,,,20231124,1000.00,20231125,1100.00,,,Cuota,,
-15899,ext1602,prueba tres,1122334455,,,20231125,1200.00,20231126,1300.00,20231127,1500.00,Cuota,,
+reflinks11,33334444,,20240531,33.33,,,,,,,,Cuota Demo en Vivo 1,,
+reflinks22,22228888,,20240531,44.44,20240601,22.22,20240602,122.11,Richie 
+Jenkins,1113101138,test_user_1196837045@testuser.com,Cuota Demo en Vivo 2,,
 ```
 
 A continuación, tienes un ejemplo de success para Links Masivos:
