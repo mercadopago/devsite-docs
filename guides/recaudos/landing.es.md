@@ -15,10 +15,15 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
->>>> Disponibilidade por país <<<<
+>>>> Disponibilidad por país para Gestión de deudas: <<<<
 ---
 available_countries: mla
 
 ---
 
+>>>> Disponibilidad por país para Generación de links: <<<<
+---
+available_countries: mla, mlb, mco, mlc, mlm, mpe, mlu
+
+---
 --- mini_landing_separator ---
