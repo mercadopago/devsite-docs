@@ -24,7 +24,7 @@ Para instalar Mercado Pago Antifraude Plus, sigue los pasos a continuación.
 
 ![antifraude plus 3](/images/shopify/antifraude-plus-3-es.png)
 
-5. Finalmente, haz clic en **Activar** para finalizar la instalación.
+5. Finalmente, haz clic en **Guardar** para finalizar la instalación.
 
 ![antifraude plus 4](/images/shopify/antifraude-plus-4-es.png)
 

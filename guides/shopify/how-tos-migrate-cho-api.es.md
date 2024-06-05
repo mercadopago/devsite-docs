@@ -42,46 +42,6 @@ Antes de instalar la nueva versión, es necesario desinstalar la configuración 
 
 Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, sigue cualquiera de los dos modelos de instalación descritos a continuación.
 
-### Instalar vía Marketplace
-
-1. A partir del enlace recibido por el departamento comercial de Mercado Pago, accede a la página de la aplicación **Mercado Pago Tarjetas** en el "Marketplace" y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
-
-![installation mkplace 0](/images/shopify/installation-cards-mkplace-0-es.png)
-
-2. Lee atentamente la información sobre los permisos solicitados y haz clic nuevamente en **Instalar**.
-
-![installation mkplace 2](/images/shopify/installation-cards-mkplace-2-es.png)
-
-3. Después de aceptar los permisos solicitados, haz clic en **Gestionar cuenta** para incluir tus credenciales y vincular tu cuenta de Mercado Pago a la tienda.
-
-![installation cards 3](/images/shopify/installation-cards-3-es.png)
-
-> Las credenciales son responsables de identificar la cuenta receptora de los pagos que recibirás en tu tienda.
-
-4. En el panel de administración de Mercado Pago, accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** y selecciona tu aplicación. Si aún no has creado una, consulta la [documentación del Panel del desarrollador](/developers/es/guides/additional-content/your-integrations/dashboard) para aprender cómo hacerlo.
-5. Haz clic en **Credenciales de producción** en el menú de la izquierda. Copia la `public_key` y el `access_token`.
-
-![installation cards 4](/images/shopify/installation-cards-4-es.png)
-
-6. Regresa a las configuraciones de su tienda en Shopify y ingresa tus credenciales de producción (`access_token` y `public_key`) en los campos correspondientes, teniendo cuidado de no invertir los campos al copiar y pegar las credenciales.
-7. Haz clic en **Guardar credenciales**.
-
-![installation cards 5](/images/shopify/installation-cards-5-es.png)
-
-> NOTE
->
-> Nota
->
-> Una vez ingresadas, las credenciales no serán solicitadas en futuras instalaciones de aplicaciones de Mercado Pago para Shopify.
-> <br><br>
-> Recuerde que, al cambiar la contraseña de Shopify, **es necesario renovar sus credenciales**. Para hacerlo, siga las instrucciones en la documentación de [Buenas prácticas de seguridad para tus credenciales](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, para actualizarlas en su cuenta de Shopify, haga clic en **Administrar cuenta** y llene los campos correspondientes con tu `access_token` y `public_key`, **teniendo cuidado de no intercambiar los campos al copiar y pegar las credenciales**.
-
-8. Por último, haz clic en la opción **Revisar activación** de Mercado Pago Tarjetas, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
-
-![installation cards 6](/images/shopify/installation-cards-6-es.png)
-
-¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
-
 ### Instalar vía panel de Shopify
 
 1. Ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
@@ -124,6 +84,46 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, sigue
 > Recuerde que, al cambiar la contraseña de Shopify, **es necesario renovar sus credenciales**. Para hacerlo, siga las instrucciones en la documentación de [Buenas prácticas de seguridad para tus credenciales](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, para actualizarlas en su cuenta de Shopify, haga clic en **Administrar cuenta** y llene los campos correspondientes con tu `access_token` y `public_key`, **teniendo cuidado de no intercambiar los campos al copiar y pegar las credenciales**.
 
 12. Por último, haz clic en la opción **Revisar activación** de Mercado Pago Tarjetas, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
+
+![installation cards 6](/images/shopify/installation-cards-6-es.png)
+
+¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
+
+### Instalar vía Marketplace
+
+1. A partir del enlace recibido por el departamento comercial de Mercado Pago, accede a la página de la aplicación **Mercado Pago Tarjetas** en el "Marketplace" y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
+
+![installation mkplace 0](/images/shopify/installation-cards-mkplace-0-es.png)
+
+2. Lee atentamente la información sobre los permisos solicitados y haz clic nuevamente en **Instalar**.
+
+![installation mkplace 2](/images/shopify/installation-cards-mkplace-2-es.png)
+
+3. Después de aceptar los permisos solicitados, haz clic en **Gestionar cuenta** para incluir tus credenciales y vincular tu cuenta de Mercado Pago a la tienda.
+
+![installation cards 3](/images/shopify/installation-cards-3-es.png)
+
+> Las credenciales son responsables de identificar la cuenta receptora de los pagos que recibirás en tu tienda.
+
+4. En el panel de administración de Mercado Pago, accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** y selecciona tu aplicación. Si aún no has creado una, consulta la [documentación del Panel del desarrollador](/developers/es/guides/additional-content/your-integrations/dashboard) para aprender cómo hacerlo.
+5. Haz clic en **Credenciales de producción** en el menú de la izquierda. Copia la `public_key` y el `access_token`.
+
+![installation cards 4](/images/shopify/installation-cards-4-es.png)
+
+6. Regresa a las configuraciones de su tienda en Shopify y ingresa tus credenciales de producción (`access_token` y `public_key`) en los campos correspondientes, teniendo cuidado de no invertir los campos al copiar y pegar las credenciales.
+7. Haz clic en **Guardar credenciales**.
+
+![installation cards 5](/images/shopify/installation-cards-5-es.png)
+
+> NOTE
+>
+> Nota
+>
+> Una vez ingresadas, las credenciales no serán solicitadas en futuras instalaciones de aplicaciones de Mercado Pago para Shopify.
+> <br><br>
+> Recuerde que, al cambiar la contraseña de Shopify, **es necesario renovar sus credenciales**. Para hacerlo, siga las instrucciones en la documentación de [Buenas prácticas de seguridad para tus credenciales](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, para actualizarlas en su cuenta de Shopify, haga clic en **Administrar cuenta** y llene los campos correspondientes con tu `access_token` y `public_key`, **teniendo cuidado de no intercambiar los campos al copiar y pegar las credenciales**.
+
+8. Por último, haz clic en la opción **Revisar activación** de Mercado Pago Tarjetas, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
 
 ![installation cards 6](/images/shopify/installation-cards-6-es.png)
 
