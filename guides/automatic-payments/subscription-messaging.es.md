@@ -6,7 +6,7 @@ La **Mensajería de suscripción** involucra información de los pagos recurrent
 
 Ve a continuación cómo enviar la información de los pagos recurrentes al endpoint [v1/payments](/developers/es/reference/payments/_payments/post).
 
-### Primer pago
+### Procesar el primer pago
 
 Para el **primer pago** en la mensajería de recurrencia, será necesario enviar la siguiente información a la [solicitud de crear pago](/developers/es/reference/payments/_payments/post), a través del parámetro `point_of_interaction`.
 
@@ -52,7 +52,7 @@ Ejemplo:
 }
 ```
 
-### Pagos subsecuentes
+### Procesar pagos subsecuentes
 
 Para los **pagos subsecuentes** en la mensajería de recurrencia, será necesario reenviar la información del primer pago a la [solicitud de crear pago](/developers/es/reference/payments/_payments/post), a través del parámetro `point_of_interaction`, modificando los datos que se presentan a continuación.
 

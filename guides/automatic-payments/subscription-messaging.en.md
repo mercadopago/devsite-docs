@@ -6,7 +6,7 @@
 
 See below how to send recurring payment information to the [v1/payments](/developers/en/reference/payments/_payments/post) endpoint.
 
-### First payment
+### Process the first payment
 
 For the **first payment** in the recurring messaging, you will need to send the following information to the [create payment request](/developers/en/reference/payments/_payments/post) via the `point_of_interaction `parameter.
 
@@ -38,7 +38,7 @@ Example:
 }
 ```
 
-### Subsequent payments
+### Process subsequent payments
 
 For **subsequent payments** in the recurring messaging, you will need to resend the first payment's information to the [create payment request](/developers/en/reference/payments/_payments/post) via the `point_of_interaction` parameter, modifying the data as shown below.
 

@@ -8,6 +8,12 @@ For the first transaction, it will always be necessary to request the card infor
 
 The minimum required fields to send are: `token`, `transaction_amount`, `installments`, `payment_method_id` and `payer.email`. Remember that the more additional information is transmitted, the higher the chance of payment approval because the risk assessment will have more data to evaluate.
 
+> Note
+>
+> Important
+>
+> For more information on how to send recurring payment information to the [v1/payments](/developers/en/reference/payments/_payments/post) endpoint with the aim of increasing the approval rate for these types of payments, visit the [Subscription messaging](/developers/en/docs/automatic-payments/recurring-charges/subscription-messaging) documentation.
+
 Two flows should be considered for saving the customer's card data:
 
 ----[mlb]----
