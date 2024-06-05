@@ -27,7 +27,7 @@ Através das `back_urls`, serão retornados os seguintes parâmetros:
 | --- | --- | 
 | `payment_id` | ID (identificador) do pagamento do Mercado Pago. |
 | `status` | Status do pagamento. Ex.: `approved` para um pagamento aprovado ou `pending` para um pagamento pendente. |
-| `external_reference` | Valor enviado no momento da criação da preferência de pagamento. |
+| `external_reference` | Referência que pode sincronizar com seu sistema de pagamentos. |
 | `merchant_order_id` | ID (identificador) da ordem de pagamento gerada no Mercado Pago. |
 
 
