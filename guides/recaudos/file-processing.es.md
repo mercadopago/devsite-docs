@@ -1,6 +1,6 @@
 # Procesamiento de archivos
 
-El Mercado Pago ofrece una solución eficiente para la gestión de deudas y la generación de links masivos, permitiendo el uso de un servicio SFTP para procesar la información contenida en archivos. 
+Mercado Pago ofrece una solución eficiente para la gestión de deudas y la generación de links masivos, permitiendo el uso de un servicio SFTP para procesar la información contenida en archivos. 
 
 Al procesar un archivo nuevo, se realiza una validación de la estructura y el contenido de la información. La frecuencia para realizar cargas depende totalmente de su lógica de negocio, ya que la gestión de las facturas depende de procesos externos a Mercado Pago, como la generación de nuevas facturas.
 

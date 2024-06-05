@@ -9,8 +9,8 @@ A continuación se detallan los controles realizados desde Self Service para ase
 | Todos   | E051            | Igual que {register}                                    | Este caso ocurre cuando un registro tiene todos los mismos valores en los campos que un registro ya procesado. |
 | Todos   | E052            | Mismos datos en {register}                              | Este caso es cuando todos los campos coinciden menos el id registro.                     |
 | Todos   | E053            | ID del registro                                         | El campo external reference (id registro) no está presente.                              |
-| Todos   | E054            | Formato de código de cliente inválido                  | Si el vendedor es MLA y el vendedor declara identificar el cliente con client code y no está presente ó tiene formato inválido. |
-| Todos   | E055            | Formato de DNI inválido                                 | Si el vendedor es MLA y el vendedor declara identificar al cliente a través del DNI y no está presente ó tiene formato inválido. |
+| Todos   | E054            | Formato de código de cliente inválido                  | Si el vendedor es de Argentina y el vendedor declara identificar el cliente con client code y no está presente ó tiene formato inválido. |
+| Todos   | E055            | Formato de DNI inválido                                 | Si el vendedor es de Argentina y el vendedor declara identificar al cliente a través del DNI y no está presente ó tiene formato inválido. |
 | Todos   | E056            | Formato de correo electrónico inválido                  | Formato inválido de email.                                                              |
 | Todos   | E057            | Formato de fecha de vencimiento inválido                | Fecha primer vencimiento no cumple con el formato AAAAMMDD.                              |
 | Todos   | E058            | Valor de fecha de vencimiento inválido                  | Fecha primer vencimiento es anterior al día que se sube la deuda.                        |

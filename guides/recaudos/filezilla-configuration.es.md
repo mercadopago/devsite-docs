@@ -1,4 +1,4 @@
-## Cliente SFTP
+# Cliente SFTP
 
 Aunque puedes optar por usar otro proveedor SFTP, en esta documentación abordaremos la configuración del cliente FileZilla, un proveedor SFTP de código abierto que permite gestionar la carga y descarga de archivos de forma sencilla.
 
@@ -8,7 +8,7 @@ Para configurarlo, sigue las instrucciones a continuación:
 2. Haz clic en **New Site** e ingresa el nombre deseado para el sitio.
 3. Selecciona el protocolo SFTP.
 4. Ingresa el dominio `sftp.mercadolibre.io` para producción o `sftp-qa.mercadolibre.io` para prueba.
-5. En "Logon Type", elige **Key file**.
+5. En "Login Type", elige **Key file**.
 6. Ingresa el usuario proporcionada por Mercado Pago durante la configuración del SFTP.  Por ejemplo, `user_seller_sftp_ml`.
 7. Haz clic en **Conectar**.
 Después de esto, se mostrarán las siguientes directorios disponibles:

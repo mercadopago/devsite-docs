@@ -29,7 +29,7 @@ report_589_216_20230804.csv result_589_6_20230804.csv
 2. Inicia sesión en el SFTP, lo que abrirá la consola SFTP, como se indica en la línea 3.
 3. Navega hasta la carpeta "Self-Service-Output", como se indica en la línea 7 del código.
 4. Lista el contenido con el comando ls, como se indica en la línea 8 del código (opcional, solo para verificar qué archivo descargar).
-5. Obtén el archivo resultado que está en el SFTP usando el comando `get ${archivoresultado`, como se indica en la línea 10.
+5. Obtén el archivo resultado que está en el SFTP usando el comando `get ${archivoresultado}`, como se indica en la línea 10.
 6. Sal de la consola SFTP, como se indica en la línea 13 del código.
 7. Lista el directorio "$HOME/${directoriodescarga}" para verificar que los archivos se hayan descargado, como se indica en la línea 14 del código.
 
