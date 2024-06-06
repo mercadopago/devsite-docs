@@ -156,7 +156,15 @@ If the execution was successful, you will automatically receive a response with 
 
 ## Set up withdrawals to bank accounts
 
-To integrate Money Out with destination to bank accounts, you will need to send a **POST** request, with your **Access Token** in the `Authorization` header and your **idempotency key** in the `X-Idempotency-Key` header, to the endpoint [/v1/transaction-intents/process](/developers/en/reference/money-out/bank-transfer-mlb/post). You should send the corresponding parameters following the instructions in the table below.
+To integrate Money Out with destination to bank accounts, first obtain the list of available banks to make the transaction. To do this, send a **GET** with your Access Token to the following endpoint: 
+
+```curl
+curl --request GET \
+  --url https://api.mercadopago.com/open-banking/payments/v1/banks \
+  --header 'Authorization: Bearer <ENV_ACCESS_TOKEN>'
+```
+
+Then, if the bank to which the destination account belongs is available to carry out the transaction, you will need to send a **POST** request, with your **Access Token** in the `Authorization` header and your **idempotency key** in the `X-Idempotency-Key` header, to the endpoint [/v1/transaction-intents/process](/developers/en/reference/money-out/bank-transfer-mlb/post). You should send the corresponding parameters following the instructions in the table below.
 
 > NOTE
 >

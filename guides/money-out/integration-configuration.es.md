@@ -156,7 +156,15 @@ Si la ejecución fue exitosa, recibirás automáticamente una respuesta con `sta
 
 ## Configurar retiros para cuentas bancarias
 
-Para integrar Money Out con destino a cuentas bancarias, deberás enviar un **POST** con tu **Access Token** en el *header* `Authorization` y tu **clave de idempotencia** en el *header* `X-Idempotency-Key` al endpoint [/v1/transaction-intents/process](/developers/es/reference/money-out/bank-transfer-mlb/post). Deberás enviar los parámetros correspondientes siguiendo las indicaciones de la tabla debajo.
+Para integrar Money Out con destino a cuentas bancarias, primero obtén el listado de los bancos disponibles para realizar la transacción. Para hacerlo, envía un **GET** con tu Access Token al siguiente endpoint: 
+
+```curl
+curl --request GET \
+  --url https://api.mercadopago.com/open-banking/payments/v1/banks \
+  --header 'Authorization: Bearer <ENV_ACCESS_TOKEN>'
+```
+
+Luego, si el banco al que pertenece la cuenta de destino está disponible para realizar la transacción, deberás enviar un **POST** con tu **Access Token** en el *header* `Authorization` y tu **clave de idempotencia** en el *header* `X-Idempotency-Key` al endpoint [/v1/transaction-intents/process](/developers/es/reference/money-out/bank-transfer-mlb/post). Deberás enviar los parámetros correspondientes siguiendo las indicaciones de la tabla debajo.
 
 > NOTE
 >

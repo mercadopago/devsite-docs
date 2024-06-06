@@ -157,7 +157,15 @@ Se a execução for bem-sucedida, você receberá automaticamente uma resposta c
 
 ## Configurar retiradas de dinheiro para contas bancárias
 
-Para integrar Money Out e permitir retiradas de dinheiro para contas bancárias, é necessário enviar um **POST**, com seu **Access Token** no *header* `Authorization` e sua **chave de idempotencia** no *header* `X-Idempotency-Key`, para o endpoint [/v1/transaction-intents/process](/developers/pt/reference/money-out/bank-transfer-mlb/post). Os parâmetros correspondentes devem ser enviados conforme as especificações detalhadas na tabela a seguir.
+Para integrar Money Out e permitir retiradas de dinheiro para contas bancárias, primeiro obtenha a lista de bancos disponíveis para realizar a transação. Para isso, envie um **GET** com seu Access Token para o seguinte endpoint:
+
+```curl
+curl --request GET \
+  --url https://api.mercadopago.com/open-banking/payments/v1/banks \
+  --header 'Authorization: Bearer <ENV_ACCESS_TOKEN>'
+```
+
+Em seguida, se o banco ao qual a conta de destino pertence estiver disponível para realizar a transação, envie um **POST**, com seu **Access Token** no *header* `Authorization` e sua **chave de idempotencia** no *header* `X-Idempotency-Key`, para o endpoint [/v1/transaction-intents/process](/developers/pt/reference/money-out/bank-transfer-mlb/post). Os parâmetros correspondentes devem ser enviados conforme as especificações detalhadas na tabela a seguir.
 
 
 > NOTE
