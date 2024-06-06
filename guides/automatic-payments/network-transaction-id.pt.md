@@ -4,13 +4,13 @@ A partir das novas regras operacionais para tokenização de operações de paga
 
 ## Processar primeiro pagamento
 
-Para o **primeiro pagamento** será preciso enviar o _header_ `X-Expand-Responde-Nodes` ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post) conforme abaixo.
+Para o **primeiro pagamento** com _Visa_, será preciso enviar o _header_ `X-Expand-Responde-Nodes` ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post) conforme abaixo.
 
 ```json
 --header 'X-Expand-Responde-Nodes: gateway.reference'\
 ```
 
-E no _response_ se poderá observar o retorno do `network_transaction_id` no parâmetro `expanded`. Exemplo:
+Na resposta se poderá observar o retorno do `network_transaction_id` no parâmetro `expanded`. Exemplo:
 
 ```json
 "expanded": {
@@ -24,9 +24,9 @@ E no _response_ se poderá observar o retorno do `network_transaction_id` no par
 
 ### Processar pagamentos subsequentes 
 
-Para o segundo pagamento, caso receba esta informação do network_transaction_id (TID) no response do pagamento anterior, você deverá enviar na requisição o nó de forward_data com a informação do network_transaction_id (TID) recebido.
+Para os **pagamentos subsequentes** com _Visa_, será preciso enviar a informação do `network_transaction_id` recebido ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post), através do parâmetro `network_transaction_id`.
 
-Request Payment com o nó de forward_data
+Exemplo:
 
 ```json
 {
@@ -65,7 +65,7 @@ Request Payment com o nó de forward_data
 }
 ```
 
-Response Payment id network_transaction_id (TID)
+Resposta:
 
 ```json
 "expanded": {

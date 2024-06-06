@@ -4,11 +4,11 @@ A **Mensageria de subscrição** envolve informações dos pagamentos recorrente
 
 ## Configuração
 
-Veja abaixo como enviar as informações dos pagamentos recorrentes ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post).
+Veja abaixo como enviar as informações dos pagamentos recorrentes à [requisição de criar pagamento](/developers/pt/reference/payments/_payments/post).
 
 ### Processar primeiro pagamento
 
-Para o **primeiro pagamento** na mensageria de recorrência, será preciso enviar as informações abaixo à [requisição de criar pagamento](/developers/pt/reference/payments/_payments/post), através do parâmetro `point_of_interaction`.
+Para o **primeiro pagamento** na mensageria de recorrência, será preciso enviar as informações abaixo ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post), através do parâmetro `point_of_interaction`.
 
 - Indicar que o tipo é subscrição (`type = SUBSCRIPTIONS`);
 - Indicar que é a primeira transação (`first_time_use = TRUE`);
@@ -40,7 +40,7 @@ Exemplo:
 
 ### Processar pagamentos subsequentes 
 
-Para os **pagamentos subsequentes** na mensageria de recorrência, será preciso reenviar as informações do primeiro pagamento à [requisição de criar pagamento](/developers/pt/reference/payments/_payments/post), através do parâmetro `point_of_interaction`, alterando os dados apresentados abaixo.
+Para os **pagamentos subsequentes** na mensageria de recorrência, será preciso reenviar as informações do primeiro pagamento ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post), através do parâmetro `point_of_interaction`, alterando os dados apresentados abaixo.
 
 - Indicar que **não é a primeira** transação (`first_time_use = FALSE`);
 - Indicar qual é o `subscription_id` do pagamento (sugerimos colocar o `collector` + um `ID` de subscrição único por usuário);
