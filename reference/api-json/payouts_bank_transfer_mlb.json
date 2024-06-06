@@ -729,7 +729,7 @@
                             "pt": "Mensagem adicional para adicionar na transação.",
                             "en": "Additional message to add to the transaction."
                           },
-                          "example": 100.00
+                          "example": "test"
                         }
                       }
                     }
@@ -1434,7 +1434,7 @@
                             "pt": "Mensagem adicional para adicionar na transação.",
                             "en": "Additional message to add to the transaction."
                           },
-                          "example": 100.00
+                          "example": "test"
                         }
                       }
                     }

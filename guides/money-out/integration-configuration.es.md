@@ -90,17 +90,19 @@ Si la ejecución fue exitosa, recibirás automáticamente una respuesta con `sta
 
 ```json
 {
-  "id": "0d5020ed",
-  "status": "approved",
   "created_date": "2021-01-01T00:00:00.000Z",
   "external_reference": "123456",
+  "id": "0d5020ed",
   "last_updated_date": "2021-01-01T00:00:00.000Z",
-  "point_of_interaction": "{\"type\":\"PSP_TRANSFER\"}",
+  "point_of_interaction": {
+    "type": "{\"type\":\"PSP_TRANSFER\"}"
+  },
   "seller_configuration": {
     "notification_info": {
-      "notification_url": "http://ejemplo.com.br/notification"
+      "notification_url": "http://example.com.br/notification"
     }
   },
+  "status": "approved",
   "transaction": {
     "from": {
       "accounts": [
@@ -109,11 +111,19 @@ Si la ejecución fue exitosa, recibirás automáticamente una respuesta con `sta
         }
       ]
     },
+    "paid_amount": 100,
+    "payer": {
+      "id": 123456543
+    },
+    "refunded_amount": 1,
     "to": {
       "accounts": [
         {
           "amount": "100,00",
-          "status_detail": "approved",
+          "origin_id": "01AAAM001A1AY43FBR8WCM9CES",
+          "status_details": [
+            {}
+          ],
           "owner": {
             "identification": {
               "number": "1234567890",
@@ -123,35 +133,32 @@ Si la ejecución fue exitosa, recibirás automáticamente una respuesta con `sta
         }
       ]
     },
-    "paid_amount": 100,
-    "refunded_amount": 1,
-    "payer": {
-      "id": 123456543
-    },
-    "total_amount": 100
+    "total_amount": 100,
+    "statement_descriptor": "compra de prueba"
   }
 }
 ```
 
 | Atributo | Descripción |
 |---|---|
-| `id` | Identificador único de la transacción, generado automáticamente. |
-| `status` | Estado de la transacción. Para conocer los posibles estados, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `created_date` | Fecha de creación de la transacción. Será devuelto en formato AAAA-MM-DDTHH:MM:SS.SSSZ.|
 | `external_reference` | Referencia externa de la transacción, que fue generada por el integrador al momento de crearla. |
+| `id` | Identificador único de la transacción, generado automáticamente. |
 | `last_updated_date` | Última actualización del estado de la transacción. Será devuelto en formato AAAA-MM-DDTHH:MM:SS.SSSZ. |
 | `point_of_interaction.type` | Punto de interacción. Es un valor fijo, siempre `{"type":"PSP_TRANSFER"}`. |
 | `seller_configuration.notification_info.notification_url` | URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado. |
+| `status` | Estado de la transacción. Para conocer los posibles estados, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `transaction.from.accounts.amount` | Monto debitado de la cuenta Mercado Pago de origen. |
-| `transaction.from.accounts.amount.status_detail` | Es devuelto vacío. Para más información sobre el `status_detail`, verifica `transaction.to.accounts.amount.status_detail`. |
+| `transaction.paid_amount` | Monto total cobrado al titular de la cuenta de origen. Será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado en `refunded_amount` |
+| `transaction.payer.id` | Identificador del integrador titular de la cuenta de origen. |
+| `transaction.refunded_amount` | En caso de un reembolso, indicará el monto total reembolsado al titular de la cuenta de origen. Si no hubo ningún reembolso, su valor será 0. |
 | `transaction.to.accounts.amount` | Monto transferido a la cuenta de destino. Su valor será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado este último en el campo `transaction.refunded_amount`. |
+| `transaction.to.accounts.origin_id` | - |
 | `transaction.to.accounts.amount.status_detail` | Información detallada del estado de la transacción. Para conocer los posibles `status_detail`, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `transaction.to.accounts.owner.identification.number` | Número identificador del titular de la cuenta de destino. |
 | `transaction.to.accounts.owner.identification.type` | Tipo de identificación del titular de la cuenta. |
-| `transaction.paid_amount` | Monto total cobrado al titular de la cuenta de origen. Será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado en `refunded_amount` |
-| `transaction.refunded_amount` | En caso de un reembolso, indicará el monto total reembolsado al titular de la cuenta de origen. Si no hubo ningún reembolso, su valor será 0. |
-| `transaction.payer.id` | Identificador del integrador titular de la cuenta de origen. |
 | `transaction.total_amount` | Monto total de la transacción. |
+| `transaction.statement_descriptor` | Mensaje adicional a la transacción. |
 
 
 ## Configurar retiros para cuentas bancarias
@@ -251,17 +258,19 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
 
 ```json
 {
-  "id": "0d5020ed",
-  "status": "approved",
   "created_date": "2021-01-01T00:00:00.000Z",
   "external_reference": "123456",
+  "id": "0d5020ed",
   "last_updated_date": "2021-01-01T00:00:00.000Z",
-  "point_of_interaction": "{\"type\":\"PSP_TRANSFER\"}",
+  "point_of_interaction": {
+    "type": "{\"type\":\"PSP_TRANSFER\"}"
+  },
   "seller_configuration": {
     "notification_info": {
-      "notification_url": "http://ejemplo.com.br/notification"
+      "notification_url": "http://example.com.br/notification"
     }
   },
+  "status": "approved",
   "transaction": {
     "from": {
       "accounts": [
@@ -270,11 +279,19 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
         }
       ]
     },
+    "paid_amount": 100,
+    "payer": {
+      "id": 123456543
+    },
+    "refunded_amount": 1,
     "to": {
       "accounts": [
         {
           "amount": "100,00",
-          "status_detail": "approved",
+          "origin_id": "01AAAM001A1AY43FBR8WCM9CES",
+          "status_details": [
+            {}
+          ],
           "owner": {
             "identification": {
               "number": "1234567890",
@@ -287,39 +304,35 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
         }
       ]
     },
-    "paid_amount": 100,
-    "refunded_amount": 1,
-    "payer": {
-      "id": 123456543
-    },
-    "total_amount": 100
+    "total_amount": 100,
+    "statement_descriptor": "cobro de prueba"
   }
 }
 ```
 
 | Atributo | Descripción |
 |---|---|
-| `id` | Identificador único de la transacción, generado automáticamente. |
-| `status` | Estado de la transacción. Para conocer los posibles estados, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `created_date` | Fecha de creación de la transacción. Será devuelto en formato AAAA-MM-DDTHH:MM:SS.SSSZ. |
 | `external_reference` | Referencia externa de la transacción, que fue generada por el integrador al momento de crearla. |
+| `id` | Identificador único de la transacción, generado automáticamente. |
 | `last_updated_date` | Última actualización del estado de la transacción. Será devuelto en formato AAAA-MM-DDTHH:MM:SS.SSSZ. |
 | `point_of_interaction.type` | Punto de interacción. Es un valor fijo, siempre `{"type":"PSP_TRANSFER"}`. |
 | `seller_configuration.notification_info.notification_url` | URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado. |
+| `status` | Estado de la transacción. Para conocer los posibles estados, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `transaction.from.accounts.amount` | Monto debitado de la cuenta Mercado Pago de origen. |
-| `transaction.from.accounts.amount.status_detail` | Es devuelto vacío. Para más información sobre el status_detail, verifica `transaction.to.accounts.amount.status_detail`. |
+| `transaction.paid_amount` | Monto total cobrado al titular de la cuenta de origen. Será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado en `refunded_amount` |
+| `transaction.payer.id` | Identificador del integrador titular de la cuenta de origen. |
+| `transaction.refunded_amount` | En caso de un reembolso, indicará el monto total reembolsado al titular de la cuenta de origen. Si no hubo ningún reembolso, su valor será 0. |
 | `transaction.to.accounts.amount` | Monto transferido a la cuenta de destino. Su valor será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado este último en el campo `transaction.refunded_amount`. |
+| `transaction.to.accounts.origin_id` | - |
 | `transaction.to.accounts.amount.status_detail` | Información detallada del estado de la transacción. Para conocer los posibles `status_detail`, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `transaction.to.accounts.owner.identification.number` | Número identificador del titular de la cuenta de destino. |
 | `transaction.to.accounts.owner.identification.type` | Tipo de identificación del titular de la cuenta. |
 | `transaction.to.accounts.bank_id` | Número identificador del banco al que pertence la cuenta de destino. |
 | `transaction.to.accounts.type` | Tipo de cuenta de destino. |
 | `transaction.to.accounts.number` | Número único que representa la cuenta de destino. |
-| `transaction.paid_amount` | Monto total cobrado al titular de la cuenta de origen. Será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado en `refunded_amount` |
-| `transaction.refunded_amount` | En caso de un reembolso, indicará el monto total reembolsado al titular de la cuenta de origen. Si no hubo ningún reembolso, su valor será 0. |
-| `transaction.payer.id` | Identificador del integrador titular de la cuenta de origen. |
 | `transaction.total_amount` | Monto total de la transacción. |
-
+| `transaction.statement_descriptor` | Mensaje adicional a la transacción. |
 ------------ 
 
 ----[mlc]---- 
@@ -408,17 +421,19 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
 
 ```json
 {
-  "id": "0d5020ed",
-  "status": "approved",
   "created_date": "2021-01-01T00:00:00.000Z",
   "external_reference": "123456",
+  "id": "0d5020ed",
   "last_updated_date": "2021-01-01T00:00:00.000Z",
-  "point_of_interaction": "{\"type\":\"PSP_TRANSFER\"}",
+  "point_of_interaction": {
+    "type": "{\"type\":\"PSP_TRANSFER\"}"
+  },
   "seller_configuration": {
     "notification_info": {
-      "notification_url": "http://ejemplo.cl/notification"
+      "notification_url": "http://example.cl/notification"
     }
   },
+  "status": "approved",
   "transaction": {
     "from": {
       "accounts": [
@@ -427,11 +442,19 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
         }
       ]
     },
+    "paid_amount": 100,
+    "payer": {
+      "id": 123456543
+    },
+    "refunded_amount": 1,
     "to": {
       "accounts": [
         {
           "amount": "100,00",
-          "status_detail": "approved",
+          "origin_id": "01AAAM001A1AY43FBR8WCM9CES",
+          "status_details": [
+            {}
+          ],
           "owner": {
             "identification": {
               "number": "1234567890",
@@ -444,39 +467,35 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
         }
       ]
     },
-    "paid_amount": 100,
-    "refunded_amount": 1,
-    "payer": {
-      "id": 123456543
-    },
-    "total_amount": 100
+    "total_amount": 100,
+    "statement_descriptor": "cobro de prueba"
   }
 }
 ```
 
 | Atributo | Descripción |
 |---|---|
-| `id` | Identificador único de la transacción, generado automáticamente. |
-| `status` | Estado de la transacción. Para conocer los posibles estados, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `created_date` | Fecha de creación de la transacción. Será devuelto en formato AAAA-MM-DDTHH:MM:SS.SSSZ. |
 | `external_reference` | Referencia externa de la transacción, que fue generada por el integrador al momento de crearla. |
+| `id` | Identificador único de la transacción, generado automáticamente. |
 | `last_updated_date` | Última actualización del estado de la transacción. Será devuelto en formato AAAA-MM-DDTHH:MM:SS.SSSZ. |
 | `point_of_interaction.type` | Punto de interacción. Es un valor fijo, siempre `{"type":"PSP_TRANSFER"}`. |
 | `seller_configuration.notification_info.notification_url` | URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado. |
+| `status` | Estado de la transacción. Para conocer los posibles estados, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `transaction.from.accounts.amount` | Monto debitado de la cuenta Mercado Pago de origen. |
-| `transaction.from.accounts.amount.status_detail` | Es devuelto vacío. Para más información sobre el status_detail, verifica `transaction.to.accounts.amount.status_detail`. |
-| `transaction.to.accounts.type` | Monto transferido a la cuenta de destino. Su valor será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado este último en el campo `transaction.refunded_amount`. |
+| `transaction.paid_amount` | Monto total cobrado al titular de la cuenta de origen. Será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado en `refunded_amount`. |
+| `transaction.payer.id` | Identificador del integrador titular de la cuenta de origen. |
+| `transaction.refunded_amount` | En caso de un reembolso, indicará el monto total reembolsado al titular de la cuenta de origen. Si no hubo ningún reembolso, su valor será 0. |
+| `transaction.to.accounts.amount` | Monto transferido a la cuenta de destino. Su valor será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado este último en el campo `transaction.refunded_amount`. |
+| `transaction.to.accounts.origin_id` | - |
 | `transaction.to.accounts.amount.status_detail` | Información detallada del estado de la transacción. Para conocer los posibles `status_detail`, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `transaction.to.accounts.owner.identification.number` | Número identificador del titular de la cuenta de destino. |
 | `transaction.to.accounts.owner.identification.type` | Tipo de identificación del titular de la cuenta. |
 | `transaction.to.accounts.bank_id` | Número identificador del banco al que pertence la cuenta de destino. |
 | `transaction.to.accounts.type` | Tipo de cuenta de destino. |
 | `transaction.to.accounts.number` | Número único que representa la cuenta de destino. |
-| `transaction.paid_amount` | Monto total cobrado al titular de la cuenta de origen. Será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado en `refunded_amount`. |
-| `transaction.refunded_amount` | En caso de un reembolso, indicará el monto total reembolsado al titular de la cuenta de origen. Si no hubo ningún reembolso, su valor será 0. |
-| `transaction.payer.id` | Identificador del integrador titular de la cuenta de origen. |
 | `transaction.total_amount` | Monto total de la transacción. |
-
+| `transaction.statement_descriptor` | Mensaje adicional a la transacción. |
 
 ------------
 
@@ -557,17 +576,19 @@ Si los datos enviados en el llamado son correctos, recibirás una respuesta como
 
 ```json
 {
-  "id": "0d5020ed",
-  "status": "approved",
   "created_date": "2021-01-01T00:00:00.000Z",
   "external_reference": "123456",
+  "id": "0d5020ed",
   "last_updated_date": "2021-01-01T00:00:00.000Z",
-  "point_of_interaction": "{\"type\":\"PSP_TRANSFER\"}",
+  "point_of_interaction": {
+    "type": "{\"type\":\"PSP_TRANSFER\"}"
+  },
   "seller_configuration": {
     "notification_info": {
-      "notification_url": "http://ejemplo.cl/notification"
+      "notification_url": "http://example.cl/notification"
     }
   },
+  "status": "approved",
   "transaction": {
     "from": {
       "accounts": [
@@ -576,11 +597,19 @@ Si los datos enviados en el llamado son correctos, recibirás una respuesta como
         }
       ]
     },
+    "paid_amount": 100,
+    "payer": {
+      "id": 123456543
+    },
+    "refunded_amount": 1,
     "to": {
       "accounts": [
         {
           "amount": "100,00",
-          "status_detail": "approved",
+          "origin_id": "01AAAM001A1AY43FBR8WCM9CES",
+          "status_details": [
+            {}
+          ],
           "owner": {
             "identification": {
               "number": "1234567890",
@@ -593,12 +622,8 @@ Si los datos enviados en el llamado son correctos, recibirás una respuesta como
         }
       ]
     },
-    "paid_amount": 100,
-    "refunded_amount": 1,
-    "payer": {
-      "id": 123456543
-    },
-    "total_amount": 100
+    "total_amount": 100,
+    "statement_descriptor": "test"
   }
 }
 ```
