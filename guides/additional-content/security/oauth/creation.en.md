@@ -50,7 +50,7 @@ Follow the steps below to generate the mandatory fields and configure PKCE verif
 https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`redirect_uri=$YOUR_URL&code_challenge=$CODE_CHALLENGE&code_challenge_method=$CODE_METHOD
 ```
 
-- **Redirect_uri**: URL provided in the "Redirect URL" field of [your application](/developers/en/guides/additional-content/your-integrations/application-details).
+- **Redirect_uri**: URL provided in the "Redirect URL" field of [your application](/developers/en/docs/your-integrations/application-details).
 - **Code_verifier**: code that should be generated, following the requirements for its functionality, which include: a random sequence of characters with a length between 43 and 128 characters, including uppercase letters, lowercase letters, numbers, and some special characters. For example: **47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU**.
 - **Code_challenge**: next, it is necessary to create a `code_challenge` from the `code_verifier` using one of the following transformations:
   - If it's possible to use **S256**, it will be necessary to use this option by transforming the `code_verifier` into a `code_challenge` through `BASE64URL` encoding after applying the "SHA256" function.

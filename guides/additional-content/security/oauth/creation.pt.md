@@ -50,7 +50,7 @@ Siga os passos abaixo para gerar os campos obrigatórios e configurar a verifica
 https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`redirect_uri=$YOUR_URL&code_challenge=$CODE_CHALLENGE&code_challenge_method=$CODE_METHOD
 ```
 
-- **Redirect_uri**: URL informada no campo "Redirect URL" da [sua aplicação](/developers/pt/guides/additional-content/your-integrations/application-details).
+- **Redirect_uri**: URL informada no campo "Redirect URL" da [sua aplicação](/developers/pt/docs/your-integrations/application-details).
 - **Code_verifier**: código que deverá ser gerado, respeitando seus requisitos para funcionamento, sendo eles: uma sequência aleatória de caracteres que tenham entre 43-128 caracteres, com letras maiúsculas, minúsculas, números e alguns caracteres especiais. Por exemplo: **47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU**.
 - **Code_challenge**: em seguida, é necessário criar um `code_challenge` a partir do `code_verifier` usando uma das seguintes transformações:
   - Se for possível utilizar **S256**, será necessário usar essa opção transformando o `code_verifier` em um `code_challenge` através de uma codificação `BASE64URL` após aplicar a função "SHA256".

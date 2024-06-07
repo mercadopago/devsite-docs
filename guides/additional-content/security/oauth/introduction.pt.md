@@ -18,21 +18,21 @@ Os fluxos, também conhecidos como _grant types_, são diferentes maneiras de um
 >
 > PKCE (_Proof Key for Code Exchange_)
 >
-> Caso vá utilizar o fluxo **Authorization code** para obter o Acess Token, você poderá configurar o **PKCE** (_Proof Key for Code Exchange_), um protocolo de segurança usado com OAuth para proteger contra ataques de código malicioso durante a troca de códigos de autorização por Access Token. Ele adiciona uma camada extra de segurança gerando um _verifier_ que é transformado em um _challenge_ para garantir que mesmo se o código de autorização for interceptado, ele não seja útil sem o _verifier_ original. <br><br>
-> <br><br>
-> Veja [Configurar PKCE](/developers/pt/docs/security/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-O%20PKCE%20) para mais informações.
+> Caso vá utilizar o fluxo **Authorization code** para obter o Acess Token, você poderá configurar o **PKCE** (_Proof Key for Code Exchange_), um protocolo de segurança usado com OAuth para proteger contra ataques de código malicioso durante a troca de códigos de autorização por Access Token. Ele adiciona uma camada extra de segurança gerando um _verifier_ que é transformado em um _challenge_ para garantir que mesmo se o código de autorização for interceptado, ele não seja útil sem o _verifier_ original.Veja [Configurar PKCE](/developers/pt/docs/security/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-O%20PKCE%20) para mais informações.
 
 ## Access Token
 
 É um código utilizado em diferentes _requests_ públicos para acessar um recurso protegido. Ele representa uma autorização concedida por um vendedor a uma aplicação do cliente, contendo _scopes_ e um tempo de validade limitado para o acesso.
 
-> NOTE
->
-> Importante
->
-> Os **temporary grants** são códigos temporários utilizados para serem trocados por um Access Token. Ao contrário dos Access Token, eles só podem ser usados para chamadas com o servidor de autorização e nunca são enviados para servidores de recursos. Tipos de _temporary grants_: 
-> <br><br>
-> - `authorization_code`: duração de 10 minutos e o seu uso é único.
-> - `refresh_token`: duração de 6 meses e podem ser reutilizados.
-
 Veja como [obter](/developers/pt/guides/additional-content/security/oauth/creation) e [renovar](/developers/pt/guides/additional-content/security/oauth/renewal) o Access Token.
+
+### Temporary grants
+
+Os _temporary grants_ são códigos temporários utilizados para serem trocados por um Access Token. Ao contrário dos Access Token, eles só podem ser usados para chamadas com o servidor de autorização e nunca são enviados para servidores de recursos.
+
+Como este é um fluxo baseado em redirecionamento, o cliente deve ser capaz de interagir com o agente do usuário do proprietário do recurso (normalmente um navegador web) e de receber solicitações de entrada (via redirecionamento) do servidor de autorização.
+
+Tipos de _temporary grants_: 
+
+- `authorization_code`: duração de 10 minutos e o seu uso é único.
+- `refresh_token`: duração de 6 meses e podem ser reutilizados.
