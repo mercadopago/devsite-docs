@@ -13,7 +13,7 @@
         "description": {
           "en": "To create or refresh the necessary Access Token to operate your application",
           "pt": "Para criar ou atualizar o Access Token necessário para operar sua aplicação",
-          "es": "Para crear o actualizar el Access Token necesario para operar su aplicación"
+          "es": "Este endpoint se utiliza para crear o actualizar el Access Token necesario para operar tu aplicación"
         },
         "requestBody": {
           "content": {
