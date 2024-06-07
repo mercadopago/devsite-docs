@@ -212,7 +212,7 @@
                       "type": "string",
                       "example": "read write offline_access",
                       "description": {
-                        "en": "Scopes are used n the API authorization and consent process and allow you to determine what access the application requests and what access the user grants. By default, the scopes associated with the token are the ones determined when creating the original token and configuring the application.",
+                        "en": "Scopes are used in the API authorization and consent process and allow you to determine what access the application requests and what access the user grants. By default, the scopes associated with the token are the ones determined when creating the original token and configuring the application.",
                         "pt": "Scopes são utilizados no processo de autorização e consentimento das APIs e permitem determinar ao que o acesso está sendo solicitado por parte da aplicação e ao que se está concedendo acesso por parte do usuário. Por padrão, os scopes associados ao token são os que foram determinados no momento de criação do token original e configuração da aplicação.",
                         "es": "Los scopes se utilizan en el proceso de autorización y consentimiento de la API y permiten determinar qué acceso solicita la aplicación y qué acceso otorga el usuario. De forma predeterminada, los ámbitos asociados con el token son los que se determinaron al crear el token original y configurar la aplicación."
                       }
