@@ -35,4 +35,4 @@ Los flujos, también llamados _grant types_, se refieren a la forma en que una a
 > - `authorization_code`: duración de 10 minutos y su uso es único.
 > - `refresh_token`: duración de 6 meses y pueden ser reutilizados.
 
-Vea cómo [obtener](/developers/es/guides/additional-content/security/oauth/creation) y [renovar](/developers/es/guides/additional-content/security/oauth/renewal) el Access Token.
+Si deseas conocer cómo obtener el Access Token, accede a [nuestra documentación](/developers/es/guides/additional-content/security/oauth/creation). También puedes consultar la información necesaria para saber cómo [renovarlo](/developers/es/guides/additional-content/security/oauth/renewal).
