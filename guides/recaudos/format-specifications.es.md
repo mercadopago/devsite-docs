@@ -61,7 +61,7 @@ Consulta los campos que puedes configurar en la entrada. En la columna "Categor�
 | Column/index | Atributo      | Formato | Detalle                                                              |
 |--------------|---------------|---------|----------------------------------------------------------------------|
 | 1            | Referencia    | AN(020) | Identificador único de la deuda que el cliente pagará, gestionado por la empresa. |
-| 2            | Link de pagos | ANS     | Descripción de los errores encontrados en la línea.                 |
+| 2            | Link de pagos | ANS     | URL del Link de Pago generado.                 |
 
 ## Layout exitoso para Deudas
 
