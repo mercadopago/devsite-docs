@@ -55,7 +55,7 @@
                         "title": "authorization_code",
                         "description": {
                           "en": "A flow based on redirection, characterized by user intervention to explicitly authorize the application to access their data and by the use of a code provided by the authentication server so that the application can obtain an Access Token and an associated 'refresh_token'.",
-                          "es": "flujo basado en redirección, caracterizado por la intervención del usuario para autorizar explícitamente el acceso a sus datos por la aplicación y por el uso de un código proporcionado por el servidor de autenticación para que la aplicación pueda obtener un Access Token y un 'refresh_token' asociado.",
+                          "es": "Flujo basado en redirección, caracterizado por la intervención del usuario para autorizar explícitamente el acceso a sus datos por la aplicación, y por el uso de un código proporcionado por el servidor de autenticación para que la aplicación pueda obtener un Access Token y un 'refresh_token' asociado.",
                           "pt": "Fluxo baseado em redirecionamento, sendo caracterizado pela intervenção do usuário para autorizar explicitamente o acesso aos seus dados pela aplicação e pelo uso de um código fornecido pelo servidor de autenticação para que a aplicação possa obter um Access Token e um `refresh_token` associado."
                         }
                       },
