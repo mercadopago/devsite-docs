@@ -24,7 +24,7 @@ Los flujos, también llamados _grant types_, se refieren a la forma en que una a
 
 ## Access Token
 
-És un código utilizado en diferentes _requests_ de origen público para acceder a un recurso protegido que representa una autorización otorgada por un vendedor a una aplicación cliente que contiene _scopes_ y un tiempo de vigencia limitado para dicho acceso.
+És un código utilizado en diferentes _requests_ de origen público para acceder a un recurso protegido, y  representa una autorización otorgada por un vendedor a una aplicación cliente, que contiene _scopes_ y un tiempo de vigencia limitado para dicho acceso.
 
 > NOTE
 >
