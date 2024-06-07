@@ -90,7 +90,7 @@ Access Token es el código utilizado en diferentes solicitudes de origen públic
    |---|---|
    | Redirect URL | https://www.redirect-url.com?code=CODE&state=RANDOM_ID |
  
-5. Envía tus [credenciales](/developers/es/docs/your-integrations/credentials) (`client_id` y `client_secret`), el **código de autorización** (`code`) devuelto y, en caso hayas [configurado el PKCE](/developers/pt/docs/security/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-O%20PKCE%20), el `code_verifier` al endpoint [/oauth/token](/developers/es/reference/oauth/_oauth_token/post) para recibir el Access Token como respuesta.
+5. Envía tus [credenciales](/developers/es/docs/your-integrations/credentials) `client_id` y `client_secret`, el **código de autorización** que fue devuelto en la propiedad `code` y, en caso hayas [configurado el PKCE](/developers/pt/docs/security/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-O%20PKCE%20), el valor `code_verifier` al endpoint [/oauth/token](/developers/es/reference/oauth/_oauth_token/post) para recibir el Access Token como respuesta.
 
 ## Client credentials
 
