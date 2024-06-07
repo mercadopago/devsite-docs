@@ -1,6 +1,6 @@
 # Get Access Token
 
-Learn how to use the flows, also known as grant types, to obtain an Access Token and access the data exposed by an API. The existence of these flows arises to respond to all business scenarios that can arise in the consumption of APIs based on the type of consuming application, its degree of trust, and how the user interacts in the process.
+Learn how to use the flows, also known as _grant types_, to obtain an Access Token and access the data exposed by an API. The existence of these flows arise to respond to all business scenarios that can appear in the consumption of APIs based on the type of consuming application, its degree of trust, and how the user interacts in the process.
 
 The access flows available for generating the Access Token are:
 
