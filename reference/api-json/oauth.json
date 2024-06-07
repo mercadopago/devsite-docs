@@ -196,7 +196,7 @@
                       "description": {
                         "en": "necessary information for the token to be used correctly to access protected resources. The token of type \"bearer\" is the only one supported by the authorization server and is used when the Access Token is included as plain text in the request. It is understood that the bearer has direct access to the token.",
                         "pt": "informações necessárias para que o token seja usado corretamente para acessar recursos protegidos. O token do tipo \"bearer\" é o único suportado pelo servidor de autorização e é usado quando o Access Token é incluído como texto simples na solicitação. Entende-se que o portador tem acesso direto ao token.",
-                        "es": "información necesaria para que el token se utilice correctamente para acceder a los recursos protegidos. El token de tipo \"bearer\" es el único admitido por el servidor de autorización y se utiliza cuando el Access Token se incluye como texto sin formato en la solicitud. Se entiende que el bearer tiene acceso directo al token."
+                        "es": "Información necesaria para que el token se utilice correctamente para acceder a los recursos protegidos. El token de tipo \"bearer\" es el único admitido por el servidor de autorización y se utiliza cuando el Access Token se incluye como texto sin formato en la solicitud. Se entiende que el bearer tiene acceso directo al token."
                       }
                     },
                     "expires_in": {
