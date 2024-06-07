@@ -6,7 +6,7 @@ Con el [Checkout Transparente](/developers/es/docs/checkout-api/landing), todo e
 >
 > Atención
 >
-> A partir de la necesidad de adecuarse a las nuevas reglas de apps de pago de la plataforma Shopify, en las que cada medio de pago debe tener su propia app, **la aplicación actual del Checkout Transparente es incompatible con las nuevas tiendas debido a las normas vigentes de la plataforma (Checkout Extensibility)**. Por ello, estamos desarrollando nuevas apps de pago de Mercado Pago para Shopify y estarán disponibles en breve.
+> A partir de la necesidad de adecuarse a las nuevas reglas de apps de pago de la plataforma Shopify, en las que cada medio de pago debe tener su propia app, **la aplicación actual del Checkout Transparente es incompatible para la integración con nuevas tiendas debido a las normas vigentes de la plataforma (Checkout Extensibility)**. Por ello, estamos desarrollando nuevas apps de pago de Mercado Pago para Shopify y estarán disponibles en breve.
 > <br><br>
 > Para integrar Checkout Transparente deberás contar con Checkout Pro ("**Checkout Mercado Pago**") en tu tienda de Shopify. Para saber cómo integrarlo, ve a la [documentación.](/developers/es/docs/shopify/integration-configuration/checkout-pro)
 
