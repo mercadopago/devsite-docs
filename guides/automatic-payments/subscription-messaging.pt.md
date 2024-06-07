@@ -2,6 +2,12 @@
 
 A **Mensageria de subscrição** envolve informações dos pagamentos recorrentes (ID de pagamentos anteriores, ID da subscrição, número de vezes que o pagamento será gerado e POI com `type = SUBSCRIPTIONS`) que são enviadas para a [API de Pagamentos](/developers/pt/reference/payments/_payments/post) com o intuito de aumentar a taxa de aprovação para pagamentos deste tipo.
 
+> WARNING
+>
+> Importante
+>
+> No caso de operações com pagamentos recorrentes da bandeira _Visa_, será necessário enviar o identificador de transação da bandeira (TID) às transações de mensageria. Para mais informações sobe como enviar o TID, acesse a documentação [Network Transaction ID - TID](/developers/pt/docs/automatic-payments/recurring-charges/network-transaction-id).
+
 ## Configuração
 
 Veja abaixo como enviar as informações dos pagamentos recorrentes à [requisição de criar pagamento](/developers/pt/reference/payments/_payments/post).

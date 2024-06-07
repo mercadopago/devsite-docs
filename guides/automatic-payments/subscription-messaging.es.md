@@ -2,6 +2,12 @@
 
 La **Mensajería de suscripción** involucra información de los pagos recurrentes (ID de pagos anteriores, ID de la suscripción, número de veces que se generará el pago y POI con `type = SUBSCRIPTIONS`) que se envía a la [API de Pagos](/developers/es/reference/payments/_payments/post) con el objetivo de aumentar la tasa de aprobación para estos tipos de pagos.
 
+> WARNING
+>
+> Importante
+>
+> En el caso de operaciones con pagos recurrentes de la marca _Visa_, será necesario enviar el identificador de transacción de la tarjeta (TID) a las transacciones de mensajería. Para más información sobre cómo enviar el TID, acceda a la documentación [Network Transaction ID - TID](/developers/es/docs/automatic-payments/recurring-charges/network-transaction-id).
+
 ## Configuración
 
 Ve a continuación cómo enviar la información de los pagos recurrentes a la [solicitud de crear pago](/developers/es/reference/payments/_payments/post).

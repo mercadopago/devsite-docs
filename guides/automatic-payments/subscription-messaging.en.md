@@ -2,6 +2,12 @@
 
 **Subscription Messaging** involves information about recurring payments (previous payment ID, subscription ID, number of times the payment will be generated, and POI with `type = SUBSCRIPTIONS`) that is sent to the [Payments API](/developers/en/reference/payments/_payments/post) with the aim of increasing the approval rate for these types of payments.
 
+> WARNING
+>
+> Important
+>
+> In the case of recurring payment transactions with the Visa brand, it will be necessary to send the transaction identifier (TID) in messaging transactions. For more information on how to send the TID, check the documentation [Network Transaction ID - TID](/developers/en/docs/automatic-payments/recurring-charges/network-transaction-id).
+
 ## Configuration
 
 See below how to send recurring payment information to the [create payment request](/developers/en/reference/payments/_payments/post).

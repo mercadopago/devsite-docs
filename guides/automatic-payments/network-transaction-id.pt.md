@@ -1,6 +1,8 @@
 # Network Transaction ID - TID
 
-A partir das novas regras operacionais para tokenização de operações de pagamentos recorrentes da bandeira _Visa_, será necessário enviar o identificador de transação da bandeira (TID) às transações de mensageria para que seja utilizado dentro da multi-adquirência e evitar possíveis multas.
+A partir das novas regras operacionais para tokenização de operações de pagamentos recorrentes da bandeira _Visa_, será necessário enviar o identificador de transação da bandeira (TID) às transações de mensageria para que seja utilizado dentro da multiadquirência* e evitar possíveis multas.
+
+> *De forma automática, a **multiadquirência** envolve mais regras de aprovação e bancos de dados para checar as informações de pagamento, garantindo a otimização das aprovações de acordo com a bandeira do cartão e a própria retentativa do pagamento.
 
 ## Processar primeiro pagamento
 
