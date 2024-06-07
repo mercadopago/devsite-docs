@@ -15,9 +15,9 @@
           "mobile-checkout"
         ],
         "description": {
-          "en": "Generate a preference with the information of a product or service and obtain the necessary URL to start the payment flow",
-          "pt": "Gerar uma preferência com informações sobre um produto ou serviço e obter a URL necessária para iniciar o fluxo de pagamento",
-          "es": "Genera una preferencia con la información de un producto o servicio y obtén la URL necesaria para iniciar el flujo de pago"
+          "en": "Generate a preference with the information of a product or service and obtain the necessary URL to start the payment flow.",
+          "pt": "Gerar uma preferência com informações sobre um produto ou serviço e obter a URL necessária para iniciar o fluxo de pagamento.",
+          "es": "Genera una preferencia con la información de un producto o servicio y obtén la URL necesaria para iniciar el flujo de pago."
         },
         "requestBody": {
           "content": {
@@ -29,8 +29,8 @@
                     "type": "array",
                     "description": {
                       "en": "Items information.",
-                      "pt": "Informações sobre o item",
-                      "es": "Información sobre el ítem"
+                      "pt": "Informações sobre o item.",
+                      "es": "Información sobre el ítem."
                     },
                     "required": true,
                     "items": {
@@ -41,8 +41,8 @@
                           "example": "Sound system",
                           "description": {
                             "en": "Item ID.",
-                            "pt": "Identificador do item",
-                            "es": "Identificador del ítem"
+                            "pt": "Identificador do item.",
+                            "es": "Identificador del ítem."
                           },
                           "required": true
                         },
@@ -61,8 +61,8 @@
                           "example": "Dummy description",
                           "description": {
                             "en": "Item description.",
-                            "pt": "Descrição do artigo",
-                            "es": "Descripción del item"
+                            "pt": "Descrição do artigo.",
+                            "es": "Descripción del item."
                           }
                         },
                         "picture_url": {
@@ -70,17 +70,17 @@
                           "example": "http://www.myapp.com/myimage.jpg",
                           "description": {
                             "en": "Item image URL.",
-                            "pt": "URL da imagem do anúncio",
-                            "es": "URL de imagen del ítem"
+                            "pt": "URL da imagem do anúncio.",
+                            "es": "URL de imagen del ítem."
                           }
                         },
                         "category_id": {
                           "type": "string",
                           "example": "car_electronics",
                           "description": {
-                            "en": "This is a free string where the item category can be added. We suggest using one of the options shown in the following link https://api.mercadopago.com/item_categories",
-                            "pt": "Esta é uma string livre onde a categoria do item pode ser adicionada. Sugerimos usar uma das opções mostradas no link a seguir https://api.mercadopago.com/item_categories",
-                            "es": "Esto es un string libre donde se puede agregar la categoría del ítem. Sugerimos utilizar alguna de las opciones que se muestran en el siguiente enlace https://api.mercadopago.com/item_categories"
+                            "en": "This is a free string where the item category can be added. We suggest using one of the options shown in the following link https://api.mercadopago.com/item_categories.",
+                            "pt": "Esta é uma string livre onde a categoria do item pode ser adicionada. Sugerimos usar uma das opções mostradas no link a seguir https://api.mercadopago.com/item_categories.",
+                            "es": "Esto es un string libre donde se puede agregar la categoría del ítem. Sugerimos utilizar alguna de las opciones que se muestran en el siguiente enlace https://api.mercadopago.com/item_categories."
                           }
                         },
                         "quantity": {
@@ -186,8 +186,8 @@
                         "example": "John",
                         "description": {
                           "en": "Buyer name.",
-                          "pt": "Nome do comprador",
-                          "es": "Nombre del comprador"
+                          "pt": "Nome do comprador.",
+                          "es": "Nombre del comprador."
                         }
                       },
                       "surname": {
@@ -195,8 +195,8 @@
                         "example": "Doe",
                         "description": {
                           "en": "Buyer last name.",
-                          "pt": "Apelido do comprador",
-                          "es": "Apellido del comprador"
+                          "pt": "Apelido do comprador.",
+                          "es": "Apellido del comprador."
                         }
                       },
                       "email": {
@@ -204,16 +204,16 @@
                         "example": "john@doe.com",
                         "description": {
                           "en": "Buyer e-mail address.",
-                          "pt": "Endereço de e-mail do comprador",
-                          "es": "Dirección de e-mail del comprador"
+                          "pt": "Endereço de e-mail do comprador.",
+                          "es": "Dirección de e-mail del comprador."
                         }
                       },
                       "phone": {
                         "type": "object",
                         "description": {
                           "en": "Buyer phone.",
-                          "pt": "Telefone do comprador",
-                          "es": "Teléfono del comprador"
+                          "pt": "Telefone do comprador.",
+                          "es": "Teléfono del comprador."
                         },
                         "properties": {
                           "area_code": {
@@ -221,8 +221,8 @@
                             "example": "11",
                             "description": {
                               "en": "Area code.",
-                              "pt": "Código de área",
-                              "es": "Código de área"
+                              "pt": "Código de área.",
+                              "es": "Código de área."
                             }
                           },
                           "number": {
@@ -230,8 +230,8 @@
                             "example": 988888888,
                             "description": {
                               "en": "Number.",
-                              "pt": "Número",
-                              "es": "Número"
+                              "pt": "Número.",
+                              "es": "Número."
                             }
                           }
                         }
@@ -240,8 +240,8 @@
                         "type": "object",
                         "description": {
                           "en": "Personal identification.",
-                          "pt": "Identificação pessoal",
-                          "es": "Identificación personal"
+                          "pt": "Identificação pessoal.",
+                          "es": "Identificación personal."
                         },
                         "properties": {
                           "type": {
@@ -249,8 +249,8 @@
                             "example": "CPF",
                             "description": {
                               "en": "Identification Type.",
-                              "pt": "Tipo de identificação",
-                              "es": "Tipo de identificación"
+                              "pt": "Tipo de identificação.",
+                              "es": "Tipo de identificación."
                             }
                           },
                           "number": {
@@ -258,8 +258,8 @@
                             "example": "19119119100",
                             "description": {
                               "en": "Number.",
-                              "pt": "Número",
-                              "es": "Número"
+                              "pt": "Número.",
+                              "es": "Número."
                             }
                           }
                         }
@@ -268,8 +268,8 @@
                         "type": "object",
                         "description": {
                           "en": "Buyer’s address.",
-                          "pt": "Endereço do comprador",
-                          "es": "Dirección del comprador"
+                          "pt": "Endereço do comprador.",
+                          "es": "Dirección del comprador."
                         },
                         "properties": {
                           "zip_code": {
@@ -277,8 +277,8 @@
                             "example": "06233200",
                             "description": {
                               "en": "Zip code.",
-                              "pt": "Código postal",
-                              "es": "Código postal"
+                              "pt": "Código postal.",
+                              "es": "Código postal."
                             }
                           },
                           "street_name": {
@@ -286,8 +286,8 @@
                             "example": "Example Street",
                             "description": {
                               "en": "Street name.",
-                              "pt": "Rua",
-                              "es": "Calle"
+                              "pt": "Rua.",
+                              "es": "Calle."
                             }
                           },
                           "street_number": {
@@ -295,8 +295,8 @@
                             "example": 123,
                             "description": {
                               "en": "Street number.",
-                              "pt": "Número",
-                              "es": "Número"
+                              "pt": "Número.",
+                              "es": "Número."
                             }
                           }
                         }
@@ -307,8 +307,8 @@
                         "format": "date",
                         "description": {
                           "en": "Registration date.",
-                          "pt": "Data de registro",
-                          "es": "Fecha de registración"
+                          "pt": "Data de registro.",
+                          "es": "Fecha de registración."
                         }
                       }
                     }
@@ -336,8 +336,8 @@
                               "example": "master",                              
                               "description": {
                                 "en": "Payment method ID.",
-                                "pt": "Identificador do método de pagamento",
-                                "es": "Identificador del método de pago"
+                                "pt": "Identificador do método de pagamento.",
+                                "es": "Identificador del método de pago."
                               }
                             }
                           }
@@ -358,8 +358,8 @@
                               "example": "ticket",                              
                               "description": {
                                 "en": "Payment method data_type ID.",
-                                "pt": "Identificador de data_type do meio de pagamento",
-                                "es": "Identificador de data_type del medio de pago"
+                                "pt": "Identificador de data_type do meio de pagamento.",
+                                "es": "Identificador de data_type del medio de pago."
                               }
                             }
                           }
@@ -379,8 +379,8 @@
                         "example": 10,
                         "description": {
                           "en": "Maximum number of credit card installments to be accepted.",
-                          "pt": "Número Máximo de parcelas",
-                          "es": "Máximo número de cuotas"
+                          "pt": "Número Máximo de parcelas.",
+                          "es": "Máximo número de cuotas."
                         }
                       },
                       "default_installments": {
@@ -388,8 +388,8 @@
                         "example": 5,
                         "description": {
                           "en": "Prefered number of credit card installments.",
-                          "pt": "Número padrão de parcelas oferecidas",
-                          "es": "Número estándar de cuotas ofrecidas"
+                          "pt": "Número padrão de parcelas oferecidas.",
+                          "es": "Número estándar de cuotas ofrecidas."
                         }
                       }
                     }
@@ -398,8 +398,8 @@
                     "type": "object",
                     "description": {
                       "en": "Shipments information.",
-                      "pt": "Informações de envio",
-                      "es": "Información de envío"
+                      "pt": "Informações de envio.",
+                      "es": "Información de envío."
                     },
                     "properties": {
                       "mode": {
@@ -410,33 +410,33 @@
                         "example": true,
                         "description": {
                           "en": "The payer has the option to pick up the shipment in your store (mode:me2 only).",
-                          "pt": "Preferência de remoção de pacotes em agência(mode:me2 somente)",
-                          "es": "Preferencia de retiro de paquetes en sucursal(mode:me2 solamente)"
+                          "pt": "Preferência de remoção de pacotes em agência(mode:me2 somente).",
+                          "es": "Preferencia de retiro de paquetes en sucursal(mode:me2 solamente)."
                         }
                       },
                       "dimensions": {
                         "type": "string",
                         "example": "32 x 25 x 16",
                         "description": {
-                          "en": "Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)",
-                          "pt": "Tamanho do pacote em cm x cm x cm, gr (mode:me2 somente)",
-                          "es": "Tamaño del paquete en cm x cm x cm, gr (mode:me2 solamente)"
+                          "en": "Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only).",
+                          "pt": "Tamanho do pacote em cm x cm x cm, gr (mode:me2 somente).",
+                          "es": "Tamaño del paquete en cm x cm x cm, gr (mode:me2 solamente)."
                         }
                       },
                       "default_shipping_method": {
                         "type": "number",
                         "description": {
                           "en": "Select default shipping method in checkout (mode:me2 only).",
-                          "pt": "Escolha um método de envio padrão no checkout (mode:me2 somente)",
-                          "es": "Elegir un método de envío predeterminado en el checkout (mode:me2 solamente)"
+                          "pt": "Escolha um método de envio padrão no checkout (mode:me2 somente).",
+                          "es": "Elegir un método de envío predeterminado en el checkout (mode:me2 solamente)."
                         }
                       },
                       "free_methods": {
                         "type": "array",
                         "description": {
                           "en": "Offer a shipping method as free shipping (mode:me2 only).",
-                          "pt": "Oferecer um método de frete grátis (mode:me2 somente)",
-                          "es": "Ofrecer un método de envío gratuito (mode:me2 solamente)"
+                          "pt": "Oferecer um método de frete grátis (mode:me2 somente).",
+                          "es": "Ofrecer un método de envío gratuito (mode:me2 solamente)."
                         },
                         "items": {
                           "type": "object",
@@ -445,8 +445,8 @@
                               "type": "number",
                               "description": {
                                 "en": "Shipping method ID.",
-                                "pt": "Identificador do método de envio",
-                                "es": "Identificador de método de envío"
+                                "pt": "Identificador do método de envio.",
+                                "es": "Identificador de método de envío."
                               }
                             }
                           }
@@ -457,24 +457,24 @@
                         "example": 20,
                         "description": {
                           "en": "Shipment cost (mode:custom only).",
-                          "pt": "Custo do transporte (mode:custom somente)",
-                          "es": "Costo del envío (mode:custom solamente)"
+                          "pt": "Custo do transporte (mode:custom somente).",
+                          "es": "Costo del envío (mode:custom solamente)."
                         }
                       },
                       "free_shipping": {
                         "type": "boolean",
                         "description": {
                           "en": "Free shipping for mode:custom.",
-                          "pt": "Preferência de frete grátis para mode:custom",
-                          "es": "Preferencia de envío gratuito para mode:custom"
+                          "pt": "Preferência de frete grátis para mode:custom.",
+                          "es": "Preferencia de envío gratuito para mode:custom."
                         }
                       },
                       "receiver_address": {
                         "type": "object",
                         "description": {
                           "en": "Shipping address.",
-                          "pt": "Endereço de envio",
-                          "es": "Dirección de envío"
+                          "pt": "Endereço de envio.",
+                          "es": "Dirección de envío."
                         },
                         "properties": {
                           "zip_code": {
@@ -555,8 +555,8 @@
                     "type": "object",
                     "description": {
                       "en": "URLs to return to the sellers website.",
-                      "pt": "Url de retorno ao site do vendedor",
-                      "es": "URLs de retorno al sitio del vendedor"
+                      "pt": "Url de retorno ao site do vendedor.",
+                      "es": "URLs de retorno al sitio del vendedor."
                     },
                     "properties": {
                       "success": {
@@ -564,8 +564,8 @@
                         "example": "http://test.com/success",
                         "description": {
                           "en": "Approved payment URL.",
-                          "pt": "URL de retorno ante o pagamento aprovado",
-                          "es": "URL de retorno ante pago aprobado"
+                          "pt": "URL de retorno ante o pagamento aprovado.",
+                          "es": "URL de retorno ante pago aprobado."
                         }
                       },
                       "pending": {
@@ -582,8 +582,8 @@
                         "example": "http://test.com/failure",
                         "description": {
                           "en": "Canceled payment URL.",
-                          "pt": "URL de retorno ante o pagamento cancelado",
-                          "es": "URL de retorno ante pago cancelado"
+                          "pt": "URL de retorno ante o pagamento cancelado.",
+                          "es": "URL de retorno ante pago cancelado."
                         }
                       }
                     }
@@ -610,8 +610,8 @@
                     "example": "Discount 12.00",
                     "description": {
                       "en": "Additional information.",
-                      "pt": "Informações adicionais",
-                      "es": "Información adicional"
+                      "pt": "Informações adicionais.",
+                      "es": "Información adicional."
                     }
                   },
                   "auto_return": {
@@ -622,8 +622,8 @@
                     "example": "1643827245",
                     "description": {
                       "en": "Reference you can synchronize with your payment system.",
-                      "pt": "Referência que pode sincronizar com seu sistema de pagamentos",
-                      "es": "Referencia que puedes sincronizar con tu sistema de pagos"
+                      "pt": "Referência que pode sincronizar com seu sistema de pagamentos.",
+                      "es": "Referencia que puedes sincronizar con tu sistema de pagos."
                     }
                   },
                   "expires": {
@@ -631,8 +631,8 @@
                     "example": true,
                     "description": {
                       "en": "Boolean value that determines if a preference expires.",
-                      "pt": "Preferência que determina se uma preferência expira",
-                      "es": "Preferencia que determina si una preferencia expira"
+                      "pt": "Preferência que determina se uma preferência expira.",
+                      "es": "Preferencia que determina si una preferencia expira."
                     }
                   },
                   "expiration_date_from": {
@@ -686,8 +686,8 @@
                         "example": 1,
                         "description": {
                           "en": "Differential pricing ID.",
-                          "pt": "Identificador de preço diferenciado",
-                          "es": "Identificador de precio diferenciado"
+                          "pt": "Identificador de preço diferenciado.",
+                          "es": "Identificador de precio diferenciado."
                         }
                       }
                     }
@@ -707,8 +707,8 @@
                           "example": "google_ad",
                           "description": {
                             "en": "Track type. Specifies which tool the values belong to.",
-                            "pt": "Tipo da track. Especifica a que ferramenta pertencem os determinados valores",
-                            "es": "Tipo del track. Especifica a qué herramienta pertenecen los valores"
+                            "pt": "Tipo da track. Especifica a que ferramenta pertencem os determinados valores.",
+                            "es": "Tipo del track. Especifica a qué herramienta pertenecen los valores."
                           },
                           "enum": [
                             {
@@ -734,8 +734,8 @@
                           "example": "conversion_id",
                           "description": {
                             "en": "Configuration values according the track type.",
-                            "pt": "Valores de configuração de acordo com o tipo de track",
-                            "es": "Valores de configuración de acuerdo al tipo de track"
+                            "pt": "Valores de configuração de acordo com o tipo de track.",
+                            "es": "Valores de configuración de acuerdo al tipo de track."
                           }
                         }
                       }
@@ -745,8 +745,8 @@
                     "type": "object",
                     "description": {
                       "en": "Valid JSON that can be added to the payment to save additional attributes.",
-                      "pt": "JSON válido que pode ser adicionado ao pagamento para salvar atributos adicionais",
-                      "es": "JSON válido que puede agregarse al pago para guardar atributos adicionales"
+                      "pt": "JSON válido que pode ser adicionado ao pagamento para salvar atributos adicionais.",
+                      "es": "JSON válido que puede agregarse al pago para guardar atributos adicionales."
                     }
                   }
                 }
@@ -782,8 +782,8 @@
                       "type": "array",
                       "description": {
                         "en": "Items information.",
-                        "pt": "Informações sobre o item",
-                        "es": "Información sobre el ítem"
+                        "pt": "Informações sobre o item.",
+                        "es": "Información sobre el ítem."
                       },
                       "items": {
                         "type": "object",
@@ -792,16 +792,16 @@
                             "type": "string",
                             "description": {
                               "en": "Item ID.",
-                              "pt": "Indentificador do item",
-                              "es": "Indentificador del ítem"
+                              "pt": "Indentificador do item.",
+                              "es": "Indentificador del ítem."
                             }
                           },
                           "picture_url": {
                             "type": "string",
                             "description": {
                               "en": "Item image URL.",
-                              "pt": "URL da imagem do anúncio",
-                              "es": "URL de imagen del ítem"
+                              "pt": "URL da imagem do anúncio.",
+                              "es": "URL de imagen del ítem."
                             }
                           },
                           "title": {
@@ -930,56 +930,56 @@
                           "type": "string",
                           "description": {
                             "en": "Name of the associated payer.",
-                            "pt": "Nome do pagante associado",
-                            "es": "Nombre del pagador asociado"
+                            "pt": "Nome do pagante associado.",
+                            "es": "Nombre del pagador asociado."
                           }
                         },
                         "surname": {
                           "type": "string",
                           "description": {
                             "en": "Last name of the associated payer.",
-                            "pt": "Sobrenome do pagante associado",
-                            "es": "Apellido del pagador asociado"
+                            "pt": "Sobrenome do pagante associado.",
+                            "es": "Apellido del pagador asociado."
                           }
                         },
                         "email": {
                           "type": "string",
                           "description": {
                             "en": "Payer’s email address.",
-                            "pt": "E-mail do pagante",
-                            "es": "E-mail del pagador"
+                            "pt": "E-mail do pagante.",
+                            "es": "E-mail del pagador."
                           }
                         },
                         "date_created": {
                           "type": "string",
                           "description": {
                             "en": "Registration date.",
-                            "pt": "Data de registro",
-                            "es": "Fecha de registración"
+                            "pt": "Data de registro.",
+                            "es": "Fecha de registración."
                           }
                         },
                         "phone": {
                           "type": "object",
                           "description": {
                             "en": "Phone number of the associated payer.",
-                            "pt": "Telefone do pagante associado",
-                            "es": "Teléfono del pagador asociado"
+                            "pt": "Telefone do pagante associado.",
+                            "es": "Teléfono del pagador asociado."
                           },
                           "properties": {
                             "area_code": {
                               "type": "string",
                               "description": {
                                 "en": "Area code.",
-                                "pt": "Código de área",
-                                "es": "Código de área"
+                                "pt": "Código de área.",
+                                "es": "Código de área."
                               }
                             },
                             "number": {
                               "type": "number",
                               "description": {
                                 "en": "Phone number.",
-                                "pt": "Número de telefone",
-                                "es": "Número telefónico"
+                                "pt": "Número de telefone.",
+                                "es": "Número telefónico."
                               }
                             }
                           }
@@ -988,24 +988,24 @@
                           "type": "object",
                           "description": {
                             "en": "Identification of the associated payer.",
-                            "pt": "Identificação do pagador associado",
-                            "es": "Identificación del pagador asociado"
+                            "pt": "Identificação do pagador associado.",
+                            "es": "Identificación del pagador asociado."
                           },
                           "properties": {
                             "type": {
                               "type": "string",
                               "description": {
                                 "en": "Type of identification of the associated payer (required if the payer is a customer).",
-                                "pt": "Tipo de identificação do pagante associado (exigido se o pagante é um cliente)",
-                                "es": "Tipo de identificación del pagador asociado (requerido si el pagador es un cliente)"
+                                "pt": "Tipo de identificação do pagante associado (exigido se o pagante é um cliente).",
+                                "es": "Tipo de identificación del pagador asociado (requerido si el pagador es un cliente)."
                               }
                             },
                             "number": {
                               "type": "string",
                               "description": {
                                 "en": "Identification number.",
-                                "pt": "Número de identificação",
-                                "es": "Número de identificación"
+                                "pt": "Número de identificação.",
+                                "es": "Número de identificación."
                               }
                             }
                           }
@@ -1014,8 +1014,8 @@
                           "type": "object",
                           "description": {
                             "en": "Buyer’s address.",
-                            "pt": "Endereço do comprador",
-                            "es": "Dirección del comprador"
+                            "pt": "Endereço do comprador.",
+                            "es": "Dirección del comprador."
                           },
                           "properties": {
                             "street_name": {
@@ -1031,16 +1031,16 @@
                               "format": "nullable",
                               "description": {
                                 "en": "Street number.",
-                                "pt": "O Número",
-                                "es": "Número"
+                                "pt": "O Número.",
+                                "es": "Número."
                               }
                             },
                             "zip_code": {
                               "type": "string",
                               "description": {
                                 "en": "Zip code.",
-                                "pt": "Código postal",
-                                "es": "Código postal"
+                                "pt": "Código postal.",
+                                "es": "Código postal."
                               }
                             }
                           }
@@ -1051,8 +1051,8 @@
                       "type": "object",
                       "description": {
                         "en": "URLs to return to the sellers website.",
-                        "pt": "Url de retorno ao site do vendedor",
-                        "es": "URLs de retorno al sitio del vendedor"
+                        "pt": "Url de retorno ao site do vendedor.",
+                        "es": "URLs de retorno al sitio del vendedor."
                       },
                       "properties": {
                         "success": {
@@ -1060,8 +1060,8 @@
                           "example": "http://test.com/success",
                           "description": {
                             "en": "Approved payment URL.",
-                            "pt": "URL de retorno ante o pagamento aprovado",
-                            "es": "URL de retorno ante pago aprobado"
+                            "pt": "URL de retorno ante o pagamento aprovado.",
+                            "es": "URL de retorno ante pago aprobado."
                           }
                         },
                         "pending": {
@@ -1078,8 +1078,8 @@
                           "example": "http://test.com/failure",
                           "description": {
                             "en": "Canceled payment URL.",
-                            "pt": "URL de retorno ante o pagamento cancelado",
-                            "es": "URL de retorno ante pago cancelado"
+                            "pt": "URL de retorno ante o pagamento cancelado.",
+                            "es": "URL de retorno ante pago cancelado."
                           }
                         }
                       }
@@ -1109,8 +1109,8 @@
                                 "type": "string",
                                 "description": {
                                   "en": "Payment method identifier.",
-                                  "pt": "Id do meio de pagamento",
-                                  "es": "Identificador del medio de pago"
+                                  "pt": "Id do meio de pagamento.",
+                                  "es": "Identificador del medio de pago."
                                 }
                               }
                             }
@@ -1129,9 +1129,9 @@
                               "id": {
                                 "type": "string",
                                 "description": {
-                                  "en": "Payment type identifier",
-                                  "pt": "Identificador do tipo de pagamento",
-                                  "es": "Identificador del tipo de pago"
+                                  "en": "Payment type identifier.",
+                                  "pt": "Identificador do tipo de pagamento.",
+                                  "es": "Identificador del tipo de pago."
                                 }
                               }
                             }
@@ -1142,8 +1142,8 @@
                           "format": "nullable",
                           "description": {
                             "en": "Maximum number of credit card installments to be accepted.",
-                            "pt": "Número Máximo de cotas",
-                            "es": "Máximo número de cuotas"
+                            "pt": "Número Máximo de cotas.",
+                            "es": "Máximo número de cuotas."
                           }
                         },
                         "default_payment_method_id": {
@@ -1160,8 +1160,8 @@
                           "format": "nullable",
                           "description": {
                             "en": "Prefered number of credit card installments.",
-                            "pt": "Preferência de cotas",
-                            "es": "Preferencia de cuotas"
+                            "pt": "Preferência de cotas.",
+                            "es": "Preferencia de cuotas."
                           }
                         }
                       }
@@ -1170,7 +1170,7 @@
                       "type": "string",
                       "example": 6295877106812064,
                       "description": {
-                        "en": "Unique ID used to identify the client. It is obtained from the credentials used to create the preference. It´s the application ID.",
+                        "en": "Unique ID used to identify the client. It is obtained from the credentials used to create the preference. It's the application ID.",
                         "pt": "ID exclusivo usado para identificar o cliente. Obtido das credenciais usadas para criar a preferência. É o Application ID.",
                         "es": "ID único utilizada para identificar al cliente. Se obtiene a partir de las credenciales utilizadas para crear la preferencia. Es el Application ID."
                       }
@@ -1197,16 +1197,16 @@
                       "type": "object",
                       "description": {
                         "en": "Shipments information.",
-                        "pt": "Informações de envio",
-                        "es": "Información de envío"
+                        "pt": "Informações de envio.",
+                        "es": "Información de envío."
                       },
                       "properties": {
                         "receiver_address": {
                           "type": "object",
                           "description": {
                             "en": "Shipping address.",
-                            "pt": "Endereço de envio",
-                            "es": "Dirección de envío"
+                            "pt": "Endereço de envio.",
+                            "es": "Dirección de envío."
                           },
                           "properties": {
                             "zip_code": {
@@ -1300,24 +1300,24 @@
                       "type": "string",
                       "description": {
                         "en": "Reference you can synchronize with your payment system.",
-                        "pt": "Referência que pode sincronizar com seu sistema de pagamentos",
-                        "es": "Referencia que puedes sincronizar con tu sistema de pagos"
+                        "pt": "Referência que pode sincronizar com seu sistema de pagamentos.",
+                        "es": "Referencia que puedes sincronizar con tu sistema de pagos."
                       }
                     },
                     "additional_info": {
                       "type": "string",
                       "description": {
                         "en": "Additional information.",
-                        "pt": "Informações adicionais",
-                        "es": "Información adicional"
+                        "pt": "Informações adicionais.",
+                        "es": "Información adicional."
                       }
                     },
                     "expires": {
                       "type": "boolean",
                       "description": {
                         "en": "Boolean value that determines if a preference expires.",
-                        "pt": "Preferência que determina se uma preferência expira",
-                        "es": "Preferencia que determina si una preferencia expira"
+                        "pt": "Preferência que determina se uma preferência expira.",
+                        "es": "Preferencia que determina si una preferencia expira."
                       }
                     },
                     "expiration_date_from": {
@@ -1343,17 +1343,17 @@
                       "example": "2018-02-02T19:22:23.535Z",
                       "description": {
                         "en": "Registration date.",
-                        "pt": "Data de registro",
-                        "es": "Fecha de registración"
+                        "pt": "Data de registro.",
+                        "es": "Fecha de registración."
                       }
                     },
                     "id": {
                       "type": "string",
                       "example": "202809963-920c288b-4ebb-40be-966f-700250fa5370",
                       "description": {
-                        "en": "Autogenerated unique ID that identifies the preference. For example 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf",
-                        "pt": "ID exclusivo gerado automaticamente que identifica a preferência. Por exemplo 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf",
-                        "es": "ID único generado automáticamente que identifica la preferencia. Por ejemplo 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf"
+                        "en": "Autogenerated unique ID that identifies the preference. For example 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf.",
+                        "pt": "ID exclusivo gerado automaticamente que identifica a preferência. Por exemplo 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf.",
+                        "es": "ID único generado automáticamente que identifica la preferencia. Por ejemplo 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf."
                       }
                     },
                     "init_point": {
@@ -1378,8 +1378,8 @@
                       "type": "object",
                       "description": {
                         "en": "Valid JSON that can be added to the payment to save additional attributes.",
-                        "pt": "JSON válido que pode ser adicionado ao pagamento para salvar atributos adicionais",
-                        "es": "JSON válido que puede agregarse al pago para guardar atributos adicionales"
+                        "pt": "JSON válido que pode ser adicionado ao pagamento para salvar atributos adicionais.",
+                        "es": "JSON válido que puede agregarse al pago para guardar atributos adicionales."
                       }
                     }
                   }
@@ -1428,9 +1428,9 @@
                         {
                           "title": "invalid_collector_email",
                           "description": {
-                            "en": "collector is not collector_email owner",
-                            "es": "collector is not collector_email owner",
-                            "pt": "collector is not collector_email owner"
+                            "en": "collector is not collector_email owner.",
+                            "es": "collector is not collector_email owner.",
+                            "pt": "collector is not collector_email owner."
                           }
                         },
                         {
@@ -1476,9 +1476,9 @@
                         {
                           "title": "invalid_back_urls",
                           "description": {
-                            "en": "back_urls invalid. Wrong format",
-                            "es": "back_urls invalid. Wrong format",
-                            "pt": "back_urls invalid. Wrong format"
+                            "en": "back_urls invalid. Wrong format.",
+                            "es": "back_urls invalid. Wrong format.",
+                            "pt": "back_urls invalid. Wrong format."
                           }
                         },
                         {
@@ -1508,9 +1508,9 @@
                         {
                           "title": "invalid_access_token",
                           "description": {
-                            "en": "access denied",
-                            "es": "access denied",
-                            "pt": "access denied"
+                            "en": "access denied.",
+                            "es": "access denied.",
+                            "pt": "access denied."
                           }
                         },
                         {
@@ -1556,9 +1556,9 @@
           "checkout-bricks"
         ],
         "description": {
-          "en": "Find all the information related to generated preferences using specific filters or a specific date range",
-          "pt": "Encontre todas as informações das preferências geradas através de filtros específicos ou por uma faixa de datas específica",
-          "es": "Encuentra toda la información de las preferencias generadas a través de filtros específicos o por un rango de fechas determinado"
+          "en": "Find all the information related to generated preferences using specific filters or a specific date range.",
+          "pt": "Encontre todas as informações das preferências geradas através de filtros específicos ou por uma faixa de datas específica.",
+          "es": "Encuentra toda la información de las preferencias generadas a través de filtros específicos o por un rango de fechas determinado."
         },
         "parameters": [
           {
@@ -1578,8 +1578,8 @@
             "in": "query",
             "description": {
               "en": "Reference you can synchronize with your payment system.",
-              "pt": "Referência que pode sincronizar com seu sistema de pagamentos",
-              "es": "Referencia que puedes sincronizar con tu sistema de pagos"
+              "pt": "Referência que pode sincronizar com seu sistema de pagamentos.",
+              "es": "Referencia que puedes sincronizar con tu sistema de pagos."
             },
             "schema": {
               "type": "string"
@@ -1589,9 +1589,9 @@
             "name": "site_id",
             "in": "query",
             "description": {
-              "en": "The site id",
-              "pt": "ID do site",
-              "es": "ID del site"
+              "en": "The site id.",
+              "pt": "ID do site.",
+              "es": "ID del site."
             },
             "schema": {
               "type": "string"
@@ -1660,8 +1660,8 @@
             "in": "query",
             "description": {
               "en": "Marketplace ID.",
-              "pt": "ID do Marketplace",
-              "es": "ID del Marketplace"
+              "pt": "ID do Marketplace.",
+              "es": "ID del Marketplace."
             },
             "schema": {
               "type": "string"
@@ -1690,8 +1690,8 @@
                             "example": "202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d",
                             "description": {
                               "en": "Preference ID.",
-                              "pt": "Identificação de preferência",
-                              "es": "Identificador de preferencia"
+                              "pt": "Identificação de preferência.",
+                              "es": "Identificador de preferencia."
                             }
                           },
                           "client_id": {
@@ -1725,9 +1725,9 @@
                             "type": "string",
                             "format": "nullable",
                             "description": {
-                              "en": "Corporation identifier",
-                              "pt": "Identificador da corporação",
-                              "es": "Identificador de la corporación"
+                              "en": "Corporation identifier.",
+                              "pt": "Identificador da corporação.",
+                              "es": "Identificador de la corporación."
                             }
                           },
                           "date_created": {
@@ -1736,7 +1736,7 @@
                             "description": {
                               "en": "Registration date.",
                               "pt": "Data de registro",
-                              "es": "Fecha de registración"
+                              "es": "Fecha de registración."
                             }
                           },
                           "expiration_date_from": {
@@ -1761,25 +1761,25 @@
                             "type": "boolean",
                             "description": {
                               "en": "Boolean value that determines if a preference expires.",
-                              "pt": "Preferência que determina se uma preferência expira",
-                              "es": "Preferencia que determina si una preferencia expira"
+                              "pt": "Preferência que determina se uma preferência expira.",
+                              "es": "Preferencia que determina si una preferencia expira."
                             }
                           },
                           "external_reference": {
                             "type": "string",
                             "description": {
                               "en": "Reference you can synchronize with your payment system.",
-                              "pt": "Referência que pode sincronizar com seu sistema de pagamentos",
-                              "es": "Referencia que puedes sincronizar con tu sistema de pagos"
+                              "pt": "Referência que pode sincronizar com seu sistema de pagamentos.",
+                              "es": "Referencia que puedes sincronizar con tu sistema de pagos."
                             }
                           },
                           "integrator_id": {
                             "type": "string",
                             "format": "nullable",
                             "description": {
-                              "en": "Integrator identifier",
-                              "pt": "Identificador do integrador",
-                              "es": "Identificador del integrador"
+                              "en": "Integrator identifier.",
+                              "pt": "Identificador do integrador.",
+                              "es": "Identificador del integrador."
                             }
                           },
                           "items": {
@@ -1798,9 +1798,9 @@
                             "type": "string",
                             "format": "nullable",
                             "description": {
-                              "en": "Last updated date",
-                              "pt": "Data da última atualização",
-                              "es": "Última fecha de actualización"
+                              "en": "Last updated date.",
+                              "pt": "Data da última atualização.",
+                              "es": "Última fecha de actualización."
                             }
                           },
                           "live_mode": {
@@ -1827,25 +1827,25 @@
                             "type": "string",
                             "description": {
                               "en": "Payer’s email address.",
-                              "pt": "E-mail do pagante",
-                              "es": "E-mail del pagador"
+                              "pt": "E-mail do pagante.",
+                              "es": "E-mail del pagador."
                             }
                           },
                           "platform_id": {
                             "type": "string",
                             "description": {
-                              "en": "Platform identifier",
-                              "pt": "Identificador da plataforma",
-                              "es": "Identificador de la plataforma"
+                              "en": "Platform identifier.",
+                              "pt": "Identificador da plataforma.",
+                              "es": "Identificador de la plataforma."
                             }
                           },
                           "processing_modes": {
                             "type": "string",
                             "format": "nullable",
                             "description": {
-                              "en": "Processing mode",
-                              "pt": "Modo de processamento",
-                              "es": "Modo de procesamiento"
+                              "en": "Processing mode.",
+                              "pt": "Modo de processamento.",
+                              "es": "Modo de procesamiento."
                             }
                           },
                           "product_id": {
@@ -2060,9 +2060,9 @@
           "checkout-bricks"
         ],
         "description": {
-          "en": "Check all the payment information for a product or service with the ID of the preference of your choice",
-          "pt": "Veja todas as informações de pagamento de um produto ou serviço com a identificação da preferência desejada",
-          "es": "Consulta toda la información de pago de un producto o servicio con el ID de la preferencia que quieras"
+          "en": "Check all the payment information for a product or service with the ID of the preference of your choice.",
+          "pt": "Veja todas as informações de pagamento de um produto ou serviço com a identificação da preferência desejada.",
+          "es": "Consulta toda la información de pago de un producto o servicio con el ID de la preferencia que quieras."
         },
         "parameters": [
           {
@@ -2070,8 +2070,8 @@
             "in": "path",
             "description": {
               "en": "Preference ID.",
-              "pt": "Identificação de preferência",
-              "es": "Identificador de preferencia"
+              "pt": "Identificação de preferência.",
+              "es": "Identificador de preferencia."
             },
             "required": true,
             "schema": {
@@ -2095,8 +2095,8 @@
                       "type": "string",
                       "description": {
                         "en": "Additional information.",
-                        "pt": "Informações adicionais",
-                        "es": "Información adicional"
+                        "pt": "Informações adicionais.",
+                        "es": "Información adicional."
                       }
                     },
                     "auto_return": {
@@ -2106,16 +2106,16 @@
                       "type": "object",
                       "description": {
                         "en": "URLs to return to the sellers website.",
-                        "pt": "Url de retorno ao site do vendedor",
-                        "es": "URLs de retorno al sitio del vendedor"
+                        "pt": "Url de retorno ao site do vendedor.",
+                        "es": "URLs de retorno al sitio del vendedor."
                       },
                       "properties": {
                         "failure": {
                           "type": "string",
                           "description": {
                             "en": "Canceled payment URL.",
-                            "pt": "URL de retorno ante o pagamento cancelado",
-                            "es": "URL de retorno ante pago cancelado"
+                            "pt": "URL de retorno ante o pagamento cancelado.",
+                            "es": "URL de retorno ante pago cancelado."
                           }
                         },
                         "pending": {
@@ -2130,8 +2130,8 @@
                           "type": "string",
                           "description": {
                             "en": "Approved payment URL.",
-                            "pt": "URL de retorno ante o pagamento aprovado",
-                            "es": "URL de retorno ante pago aprobado"
+                            "pt": "URL de retorno ante o pagamento aprovado.",
+                            "es": "URL de retorno ante pago aprobado."
                           }
                         }
                       }
@@ -2159,8 +2159,8 @@
                       "example": "2018-02-02T19:18:51.150Z",
                       "description": {
                         "en": "Registration date.",
-                        "pt": "Data de registro",
-                        "es": "Fecha de registración"
+                        "pt": "Data de registro.",
+                        "es": "Fecha de registración."
                       }
                     },
                     "expiration_date_from": {
@@ -2185,25 +2185,25 @@
                       "type": "boolean",
                       "description": {
                         "en": "Boolean value that determines if a preference expires.",
-                        "pt": "Preferência que determina se uma preferência expira",
-                        "es": "Preferencia que determina si una preferencia expira"
+                        "pt": "Preferência que determina se uma preferência expira.",
+                        "es": "Preferencia que determina si una preferencia expira."
                       }
                     },
                     "external_reference": {
                       "type": "string",
                       "description": {
                         "en": "Reference you can synchronize with your payment system.",
-                        "pt": "Referência que pode sincronizar com seu sistema de pagamentos",
-                        "es": "Referencia que puedes sincronizar con tu sistema de pagos"
+                        "pt": "Referência que pode sincronizar com seu sistema de pagamentos.",
+                        "es": "Referencia que puedes sincronizar con tu sistema de pagos."
                       }
                     },
                     "id": {
                       "type": "string",
                       "example": "202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d",
                       "description": {
-                        "en": "Autogenerated unique ID that identifies the preference. For example 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf",
-                        "pt": "ID exclusivo gerado automaticamente que identifica a preferência. Por exemplo 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf",
-                        "es": "ID único generado automáticamente que identifica la preferencia. Por ejemplo 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf"
+                        "en": "Autogenerated unique ID that identifies the preference. For example 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf.",
+                        "pt": "ID exclusivo gerado automaticamente que identifica a preferência. Por exemplo 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf.",
+                        "es": "ID único generado automáticamente que identifica la preferencia. Por ejemplo 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf."
                       }
                     },
                     "init_point": {
@@ -2219,8 +2219,8 @@
                       "type": "array",
                       "description": {
                         "en": "Items information.",
-                        "pt": "Informações sobre o item",
-                        "es": "Información sobre el ítem"
+                        "pt": "Informações sobre o item.",
+                        "es": "Información sobre el ítem."
                       },
                       "items": {
                         "type": "object",
@@ -2230,8 +2230,8 @@
                             "example": "item-ID-1234",
                             "description": {
                               "en": "Item id.",
-                              "pt": "Id do anúncio",
-                              "es": "Identificador del ítem"
+                              "pt": "Id do anúncio.",
+                              "es": "Identificador del ítem."
                             }
                           },
                           "currency_id": {
@@ -2315,8 +2315,8 @@
                             "example": "http://placehold.it/350x150",
                             "description": {
                               "en": "Item image URL.",
-                              "pt": "URL da imagem do anúncio",
-                              "es": "URL de imagen del ítem"
+                              "pt": "URL da imagem do anúncio.",
+                              "es": "URL de imagen del ítem."
                             }
                           },
                           "description": {
@@ -2408,16 +2408,16 @@
                           "type": "object",
                           "description": {
                             "en": "Buyer’s phone number.",
-                            "pt": "Telefone do comprador",
-                            "es": "Teléfono del comprador"
+                            "pt": "Telefone do comprador.",
+                            "es": "Teléfono del comprador."
                           },
                           "properties": {
                             "area_code": {
                               "type": "string",
                               "description": {
                                 "en": "Area code.",
-                                "pt": "Código de área",
-                                "es": "Código de área"
+                                "pt": "Código de área.",
+                                "es": "Código de área."
                               }
                             },
                             "number": {
@@ -2425,8 +2425,8 @@
                               "example": "631.586.0213",
                               "description": {
                                 "en": "Phone number.",
-                                "pt": "Número de telefone",
-                                "es": "Número telefónico"
+                                "pt": "Número de telefone.",
+                                "es": "Número telefónico."
                               }
                             }
                           }
@@ -2435,8 +2435,8 @@
                           "type": "object",
                           "description": {
                             "en": "Buyer’s address.",
-                            "pt": "Endereço do comprador",
-                            "es": "Dirección del comprador"
+                            "pt": "Endereço do comprador.",
+                            "es": "Dirección del comprador."
                           },
                           "properties": {
                             "zip_code": {
@@ -2444,8 +2444,8 @@
                               "example": 76336,
                               "description": {
                                 "en": "Zip code.",
-                                "pt": "Código postal",
-                                "es": "Código postal"
+                                "pt": "Código postal.",
+                                "es": "Código postal."
                               }
                             },
                             "street_name": {
@@ -2453,8 +2453,8 @@
                               "example": "Marjory Stream",
                               "description": {
                                 "en": "Street name.",
-                                "pt": "Rua",
-                                "es": "Calle"
+                                "pt": "Nome da rua.",
+                                "es": "Nombre de calle."
                               }
                             },
                             "street_number": {
@@ -2462,8 +2462,8 @@
                               "example": 941,
                               "description": {
                                 "en": "Street number.",
-                                "pt": "O Número",
-                                "es": "Número"
+                                "pt": "O Número da rua.",
+                                "es": "Número de la calle."
                               }
                             }
                           }
@@ -2472,16 +2472,16 @@
                           "type": "string",
                           "description": {
                             "en": "Payer’s email address.",
-                            "pt": "E-mail do pagante",
-                            "es": "E-mail del pagador"
+                            "pt": "E-mail do pagante.",
+                            "es": "E-mail del pagador."
                           }
                         },
                         "identification": {
                           "type": "object",
                           "description": {
                             "en": "Payer ID.",
-                            "pt": "Identificador de pagador",
-                            "es": "Identificador de pagador"
+                            "pt": "Identificador de pagador.",
+                            "es": "Identificador de pagador."
                           },
                           "properties": {
                             "number": {
@@ -2489,8 +2489,8 @@
                               "example": 12345678,
                               "description": {
                                 "en": "Identification number.",
-                                "pt": "Número de identificação",
-                                "es": "Número de identificación"
+                                "pt": "Número de identificação.",
+                                "es": "Número de identificación."
                               }
                             },
                             "type": {
@@ -2498,8 +2498,8 @@
                               "example": "DNI",
                               "description": {
                                 "en": "Identification Type.",
-                                "pt": "Tipo de identificação",
-                                "es": "Tipo de identificación"
+                                "pt": "Tipo de identificação.",
+                                "es": "Tipo de identificación."
                               }
                             }
                           }
@@ -2508,24 +2508,24 @@
                           "type": "string",
                           "description": {
                             "en": "Buyer’s name.",
-                            "pt": "Nome do comprador",
-                            "es": "Nombre del comprador"
+                            "pt": "Nome do comprador.",
+                            "es": "Nombre del comprador."
                           }
                         },
                         "surname": {
                           "type": "string",
                           "description": {
                             "en": "Buyer’s last name.",
-                            "pt": "Sobrenome do comprador",
-                            "es": "Apellido del comprador"
+                            "pt": "Sobrenome do comprador.",
+                            "es": "Apellido del comprador."
                           }
                         },
                         "date_created": {
                           "type": "string",
                           "description": {
                             "en": "Registration date.",
-                            "pt": "Data de registro",
-                            "es": "Fecha de registración"
+                            "pt": "Data de registro.",
+                            "es": "Fecha de registración."
                           }
                         }
                       }
@@ -2552,8 +2552,8 @@
                                 "type": "string",
                                 "description": {
                                   "en": "Payment method identifier.",
-                                  "pt": "Id do meio de pagamento",
-                                  "es": "Identificador del medio de pago"
+                                  "pt": "Id do meio de pagamento.",
+                                  "es": "Identificador del medio de pago."
                                 }
                               }
                             }
@@ -2564,8 +2564,8 @@
                           "format": "nullable",
                           "description": {
                             "en": "Prefered number of credit card installments.",
-                            "pt": "Preferência de cotas",
-                            "es": "Preferencia de cuotas"
+                            "pt": "Preferência de parcelas.",
+                            "es": "Preferencia de cuotas."
                           }
                         },
                         "default_payment_method_id": {
@@ -2591,8 +2591,8 @@
                                 "type": "string",
                                 "description": {
                                   "en": "Payment type identifier",
-                                  "pt": "Identificador do tipo de pagamento",
-                                  "es": "Identificador del tipo de pago"
+                                  "pt": "Identificador do tipo de pagamento.",
+                                  "es": "Identificador del tipo de pago."
                                 }
                               }
                             }
@@ -2603,8 +2603,8 @@
                           "format": "nullable",
                           "description": {
                             "en": "Maximum number of credit card installments to be accepted.",
-                            "pt": "Número Máximo de cotas",
-                            "es": "Máximo número de cuotas"
+                            "pt": "Número Máximo de cotas.",
+                            "es": "Máximo número de cuotas."
                           }
                         }
                       }
@@ -2622,16 +2622,16 @@
                       "type": "object",
                       "description": {
                         "en": "Shipments information.",
-                        "pt": "Informações de envio",
-                        "es": "Información de envío"
+                        "pt": "Informações de envio.",
+                        "es": "Información de envío."
                       },
                       "properties": {
                         "receiver_address": {
                           "type": "object",
                           "description": {
                             "en": "Shipping address.",
-                            "pt": "Endereço de envio",
-                            "es": "Dirección de envío"
+                            "pt": "Endereço de envio.",
+                            "es": "Dirección de envío."
                           },
                           "properties": {
                             "zip_code": {
@@ -2891,8 +2891,8 @@
                     "type": "array",
                     "description": {
                       "en": "Items information.",
-                      "pt": "Informações sobre o item",
-                      "es": "Información sobre el ítem"
+                      "pt": "Informações sobre o item.",
+                      "es": "Información sobre el ítem."
                     },
                     "items": {
                       "type": "object",
@@ -2902,8 +2902,8 @@
                           "example": "202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d",
                           "description": {
                             "en": "Item ID.",
-                            "pt": "Indentificador do item",
-                            "es": "Indentificador del ítem"
+                            "pt": "Indentificador do item.",
+                            "es": "Indentificador del ítem."
                           }
                         },
                         "title": {
@@ -2929,8 +2929,8 @@
                           "example": "http://www.myapp.com/myimage.jpg",
                           "description": {
                             "en": "Item image URL.",
-                            "pt": "URL da imagem do anúncio",
-                            "es": "URL de imagen del ítem"
+                            "pt": "URL da imagem do anúncio.",
+                            "es": "URL de imagen del ítem."
                           }
                         },
                         "category_id": {
@@ -3033,7 +3033,7 @@
                   "payer": {
                     "type": "object",
                     "description": {
-                      "en": "Buyer´s information, such as name, last name, e-mail, phone, personal identification, address, and registration date.",
+                      "en": "Buyer's information, such as name, last name, e-mail, phone, personal identification, address, and registration date.",
                       "pt": "Informações do comprador, como nome, sobrenome, e-mail, telefone, identificação pessoal, endereço e data de registro.",
                       "es": "Información del comprador, como nombre, apellido, correo electrónico, teléfono, identificación personal, dirección y fecha de registro."
                     },
@@ -3042,48 +3042,48 @@
                         "type": "string",
                         "description": {
                           "en": "Buyer name.",
-                          "pt": "Nome do comprador",
-                          "es": "Nombre del comprador"
+                          "pt": "Nome do comprador.",
+                          "es": "Nombre del comprador."
                         }
                       },
                       "surname": {
                         "type": "string",
                         "description": {
                           "en": "Buyer last name.",
-                          "pt": "Apelido do comprador",
-                          "es": "Apellido del comprador"
+                          "pt": "Apelido do comprador.",
+                          "es": "Apellido del comprador."
                         }
                       },
                       "email": {
                         "type": "string",
                         "description": {
                           "en": "Buyer e-mail address.",
-                          "pt": "Endereço de e-mail do comprador",
-                          "es": "Dirección de e-mail del comprador"
+                          "pt": "Endereço de e-mail do comprador.",
+                          "es": "Dirección de e-mail del comprador."
                         }
                       },
                       "phone": {
                         "type": "object",
                         "description": {
                           "en": "Buyer phone.",
-                          "pt": "Telefone do comprador",
-                          "es": "Teléfono del comprador"
+                          "pt": "Telefone do comprador.",
+                          "es": "Teléfono del comprador."
                         },
                         "properties": {
                           "area_code": {
                             "type": "string",
                             "description": {
                               "en": "Area code.",
-                              "pt": "Código de área",
-                              "es": "Código de área"
+                              "pt": "Código de área.",
+                              "es": "Código de área."
                             }
                           },
                           "number": {
                             "type": "number",
                             "description": {
                               "en": "Number.",
-                              "pt": "Número",
-                              "es": "Número"
+                              "pt": "Número.",
+                              "es": "Número."
                             }
                           }
                         }
@@ -3092,24 +3092,24 @@
                         "type": "object",
                         "description": {
                           "en": "Personal identification.",
-                          "pt": "Identificação pessoal",
-                          "es": "Identificación personal"
+                          "pt": "Identificação pessoal.",
+                          "es": "Identificación personal."
                         },
                         "properties": {
                           "type": {
                             "type": "string",
                             "description": {
                               "en": "Identification Type.",
-                              "pt": "Tipo de identificação",
-                              "es": "Tipo de identificación"
+                              "pt": "Tipo de identificação.",
+                              "es": "Tipo de identificación."
                             }
                           },
                           "number": {
                             "type": "string",
                             "description": {
                               "en": "Number.",
-                              "pt": "Número",
-                              "es": "Número"
+                              "pt": "Número.",
+                              "es": "Número."
                             }
                           }
                         }
@@ -3118,32 +3118,32 @@
                         "type": "object",
                         "description": {
                           "en": "Buyer’s address.",
-                          "pt": "Endereço do comprador",
-                          "es": "Dirección del comprador"
+                          "pt": "Endereço do comprador.",
+                          "es": "Dirección del comprador."
                         },
                         "properties": {
                           "zip_code": {
                             "type": "string",
                             "description": {
                               "en": "Zip code.",
-                              "pt": "Código postal",
-                              "es": "Código postal"
+                              "pt": "Código postal.",
+                              "es": "Código postal."
                             }
                           },
                           "street_name": {
                             "type": "string",
                             "description": {
                               "en": "Street name.",
-                              "pt": "Rua",
-                              "es": "Calle"
+                              "pt": "Rua.",
+                              "es": "Calle."
                             }
                           },
                           "street_number": {
                             "type": "number",
                             "description": {
                               "en": "Street number.",
-                              "pt": "O Número",
-                              "es": "Número"
+                              "pt": "O Número.",
+                              "es": "Número."
                             }
                           }
                         }
@@ -3153,8 +3153,8 @@
                         "format": "date",
                         "description": {
                           "en": "Registration date.",
-                          "pt": "Data de registro",
-                          "es": "Fecha de registración"
+                          "pt": "Data de registro.",
+                          "es": "Fecha de registración."
                         }
                       }
                     }
@@ -3181,8 +3181,8 @@
                               "type": "string",
                               "description": {
                                 "en": "Payment method ID.",
-                                "pt": "Identificador do método de pagamento",
-                                "es": "Identificador del método de pago"
+                                "pt": "Identificador do método de pagamento.",
+                                "es": "Identificador del método de pago."
                               }
                             }
                           }
@@ -3202,8 +3202,8 @@
                               "type": "string",
                               "description": {
                                 "en": "Payment method data_type ID.",
-                                "pt": "Identificador de data_type do meio de pagamento",
-                                "es": "Identificador de data_type del medio de pago"
+                                "pt": "Identificador de data_type do meio de pagamento.",
+                                "es": "Identificador de data_type del medio de pago."
                               }
                             }
                           }
@@ -3221,16 +3221,16 @@
                         "type": "number",
                         "description": {
                           "en": "Maximum number of credit card installments to be accepted.",
-                          "pt": "Número Máximo de cotas",
-                          "es": "Máximo número de cuotas"
+                          "pt": "Número máximo de parcelas.",
+                          "es": "Máximo número de cuotas."
                         }
                       },
                       "default_installments": {
                         "type": "number",
                         "description": {
                           "en": "Prefered number of credit card installments.",
-                          "pt": "Preferência de cotas",
-                          "es": "Preferencia de cuotas"
+                          "pt": "Preferência de parcelas.",
+                          "es": "Preferencia de cuotas."
                         }
                       }
                     }
@@ -3239,8 +3239,8 @@
                     "type": "object",
                     "description": {
                       "en": "Shipments information.",
-                      "pt": "Informações de envio",
-                      "es": "Información de envío"
+                      "pt": "Informações de envio.",
+                      "es": "Información de envío."
                     },
                     "properties": {
                       "mode": {
@@ -3257,25 +3257,25 @@
                       "dimensions": {
                         "type": "string",
                         "description": {
-                          "en": "Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)",
-                          "pt": "Tamanho do pacote em cm x cm x cm, gr (mode:me2 somente)",
-                          "es": "Tamaño del paquete en cm x cm x cm, gr (mode:me2 solamente)"
+                          "en": "Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only).",
+                          "pt": "Tamanho do pacote em cm x cm x cm, gr (mode:me2 somente).",
+                          "es": "Tamaño del paquete en cm x cm x cm, gr (mode:me2 solamente)."
                         }
                       },
                       "default_shipping_method": {
                         "type": "number",
                         "description": {
                           "en": "Select default shipping method in checkout (mode:me2 only).",
-                          "pt": "Escolha um método de envio padrão no checkout (mode:me2 somente)",
-                          "es": "Elegir un método de envío predeterminado en el checkout (mode:me2 solamente)"
+                          "pt": "Escolha um método de envio padrão no checkout (mode:me2 somente).",
+                          "es": "Elegir un método de envío predeterminado en el checkout (mode:me2 solamente)."
                         }
                       },
                       "free_methods": {
                         "type": "array",
                         "description": {
                           "en": "Offer a shipping method as free shipping (mode:me2 only).",
-                          "pt": "Oferecer um método de frete grátis (mode:me2 somente)",
-                          "es": "Ofrecer un método de envío gratuito (mode:me2 solamente)"
+                          "pt": "Oferecer um método de frete grátis (mode:me2 somente).",
+                          "es": "Ofrecer un método de envío gratuito (mode:me2 solamente)."
                         },
                         "items": {
                           "type": "object",
@@ -3284,8 +3284,8 @@
                               "type": "number",
                               "description": {
                                 "en": "Shipping method ID.",
-                                "pt": "Identificador do método de envio",
-                                "es": "Identificador de método de envío"
+                                "pt": "Identificador do método de envio.",
+                                "es": "Identificador de método de envío."
                               }
                             }
                           }
@@ -3295,24 +3295,24 @@
                         "type": "number",
                         "description": {
                           "en": "Shipment cost (mode:custom only).",
-                          "pt": "Custo do transporte (mode:custom somente)",
-                          "es": "Costo del envío (mode:custom solamente)"
+                          "pt": "Custo do transporte (mode:custom somente).",
+                          "es": "Costo del envío (mode:custom solamente)."
                         }
                       },
                       "free_shipping": {
                         "type": "boolean",
                         "description": {
                           "en": "Free shipping for mode:custom.",
-                          "pt": "Preferência de frete grátis para mode:custom",
-                          "es": "Preferencia de envío gratuito para mode:custom"
+                          "pt": "Preferência de frete grátis para mode:custom.",
+                          "es": "Preferencia de envío gratuito para mode:custom."
                         }
                       },
                       "receiver_address": {
                         "type": "object",
                         "description": {
                           "en": "Shipping address.",
-                          "pt": "Endereço de envio",
-                          "es": "Dirección de envío"
+                          "pt": "Endereço de envio.",
+                          "es": "Dirección de envío."
                         },
                         "properties": {
                           "zip_code": {
@@ -3387,16 +3387,16 @@
                     "type": "object",
                     "description": {
                       "en": "URLs to return to the sellers website.",
-                      "pt": "Url de retorno ao site do vendedor",
-                      "es": "URLs de retorno al sitio del vendedor"
+                      "pt": "Url de retorno ao site do vendedor.",
+                      "es": "URLs de retorno al sitio del vendedor."
                     },
                     "properties": {
                       "success": {
                         "type": "string",
                         "description": {
                           "en": "Approved payment URL.",
-                          "pt": "URL de retorno ante o pagamento aprovado",
-                          "es": "URL de retorno ante pago aprobado"
+                          "pt": "URL de retorno ante o pagamento aprovado.",
+                          "es": "URL de retorno ante pago aprobado."
                         }
                       },
                       "pending": {
@@ -3411,8 +3411,8 @@
                         "type": "string",
                         "description": {
                           "en": "Canceled payment URL.",
-                          "pt": "URL de retorno ante o pagamento cancelado",
-                          "es": "URL de retorno ante pago cancelado"
+                          "pt": "URL de retorno ante o pagamento cancelado.",
+                          "es": "URL de retorno ante pago cancelado."
                         }
                       }
                     }
@@ -3429,8 +3429,8 @@
                     "type": "string",
                     "description": {
                       "en": "Additional information.",
-                      "pt": "Informações adicionais",
-                      "es": "Información adicional"
+                      "pt": "Informações adicionais.",
+                      "es": "Información adicional."
                     }
                   },
                   "auto_return": {
@@ -3440,16 +3440,16 @@
                     "type": "string",
                     "description": {
                       "en": "Reference you can synchronize with your payment system.",
-                      "pt": "Referência que pode sincronizar com seu sistema de pagamentos",
-                      "es": "Referencia que puedes sincronizar con tu sistema de pagos"
+                      "pt": "Referência que pode sincronizar com seu sistema de pagamentos.",
+                      "es": "Referencia que puedes sincronizar con tu sistema de pagos."
                     }
                   },
                   "expires": {
                     "type": "boolean",
                     "description": {
                       "en": "Boolean value that determines if a preference expires.",
-                      "pt": "Preferência que determina se uma preferência expira",
-                      "es": "Preferencia que determina si una preferencia expira"
+                      "pt": "Preferência que determina se uma preferência expira.",
+                      "es": "Preferencia que determina si una preferencia expira."
                     }
                   },
                   "date_of_expiration": {
@@ -3457,8 +3457,8 @@
                     "format": "date",
                     "description": {
                       "en": "Expiration date of cash payment.",
-                      "pt": "Data de expiração de meios de pagamento em dinheiro",
-                      "es": "Fecha de vencimiento del medio de pago en efectivo"
+                      "pt": "Data de expiração de meios de pagamento em dinheiro.",
+                      "es": "Fecha de vencimiento del medio de pago en efectivo."
                     }
                   },
                   "expiration_date_from": {
@@ -3508,8 +3508,8 @@
                         "type": "number",
                         "description": {
                           "en": "Differential pricing ID.",
-                          "pt": "Identificador de preço diferenciado",
-                          "es": "Identificador de precio diferenciado"
+                          "pt": "Identificador de preço diferenciado.",
+                          "es": "Identificador de precio diferenciado."
                         }
                       }
                     }
@@ -3518,8 +3518,8 @@
                     "type": "object",
                     "description": {
                       "en": "Valid JSON that can be added to the payment to save additional attributes.",
-                      "pt": "JSON válido que pode ser adicionado ao pagamento para salvar atributos adicionais",
-                      "es": "JSON válido que puede agregarse al pago para guardar atributos adicionales"
+                      "pt": "JSON válido que pode ser adicionado ao pagamento para salvar atributos adicionais.",
+                      "es": "JSON válido que puede agregarse al pago para guardar atributos adicionales."
                     }
                   }
                 }
@@ -3554,16 +3554,16 @@
                       "type": "object",
                       "description": {
                         "en": "URLs to return to the sellers website.",
-                        "pt": "Url de retorno ao site do vendedor",
-                        "es": "URLs de retorno al sitio del vendedor"
+                        "pt": "Url de retorno ao site do vendedor.",
+                        "es": "URLs de retorno al sitio del vendedor."
                       },
                       "properties": {
                         "failure": {
                           "type": "string",
                           "description": {
                             "en": "Canceled payment URL.",
-                            "pt": "URL de retorno ante o pagamento cancelado",
-                            "es": "URL de retorno ante pago cancelado"
+                            "pt": "URL de retorno ante o pagamento cancelado.",
+                            "es": "URL de retorno ante pago cancelado."
                           }
                         },
                         "pending": {
@@ -3578,8 +3578,8 @@
                           "type": "string",
                           "description": {
                             "en": "Approved payment URL.",
-                            "pt": "URL de retorno ante o pagamento aprovado",
-                            "es": "URL de retorno ante pago aprobado"
+                            "pt": "URL de retorno ante o pagamento aprovado.",
+                            "es": "URL de retorno ante pago aprobado."
                           }
                         }
                       }
@@ -3589,8 +3589,8 @@
                       "example": false,
                       "description": {
                         "en": "When the payment is activated, it can only be approved or rejected. Otherwise, the payment may be pending.",
-                        "pt": "Quando o pagamento está ativado, só pode ser aprovado ou rejeitado. Caso contrário, o pagamento pode ficar pendente",
-                        "es": "Cuando está activado, el pago sólo puede resultar aprobado o rechazado. De lo contrario, el pago puede resultar pendiente"
+                        "pt": "Quando o pagamento está ativado, só pode ser aprovado ou rejeitado. Caso contrário, o pagamento pode ficar pendente.",
+                        "es": "Cuando está activado, el pago sólo puede resultar aprobado o rechazado. De lo contrario, el pago puede resultar pendiente."
                       }
                     },
                     "client_id": {
@@ -3615,8 +3615,8 @@
                       "type": "object",
                       "description": {
                         "en": "Discount campaign with a specific code.",
-                        "pt": "Campanha de desconto com um código específico",
-                        "es": "Campaña de descuento con un código específico"
+                        "pt": "Campanha de desconto com um código específico.",
+                        "es": "Campaña de descuento con un código específico."
                       }
                     },
                     "coupon_labels": {
@@ -3627,16 +3627,16 @@
                       "example": "2018-02-02T19:22:23.535Z",
                       "description": {
                         "en": "Registration date.",
-                        "pt": "Data de registro",
-                        "es": "Fecha de registración"
+                        "pt": "Data de registro.",
+                        "es": "Fecha de registración."
                       }
                     },
                     "date_of_expiration": {
                       "type": "object",
                       "description": {
-                        "en": "Expiration date",
-                        "pt": "Data de validade",
-                        "es": "Fecha de vencimiento"
+                        "en": "Expiration date.",
+                        "pt": "Data de validade.",
+                        "es": "Fecha de vencimiento."
                       }
                     },
                     "expiration_date_from": {
@@ -3662,25 +3662,25 @@
                       "example": false,
                       "description": {
                         "en": "Boolean value that determines if a preference expires.",
-                        "pt": "Preferência que determina se uma preferência expira",
-                        "es": "Preferencia que determina si una preferencia expira"
+                        "pt": "Preferência que determina se uma preferência expira.",
+                        "es": "Preferencia que determina si una preferencia expira."
                       }
                     },
                     "external_reference": {
                       "type": "string",
                       "description": {
                         "en": "Reference you can synchronize with your payment system.",
-                        "pt": "Referência que pode sincronizar com seu sistema de pagamentos",
-                        "es": "Referencia que puedes sincronizar con tu sistema de pagos"
+                        "pt": "Referência que pode sincronizar com seu sistema de pagamentos.",
+                        "es": "Referencia que puedes sincronizar con tu sistema de pagos."
                       }
                     },
                     "id": {
                       "type": "string",
                       "example": "202809963-920c288b-4ebb-40be-966f-700250fa5370",
                       "description": {
-                        "en": "Autogenerated unique ID that identifies the preference. For example 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf",
-                        "pt": "ID exclusivo gerado automaticamente que identifica a preferência. Por exemplo 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf",
-                        "es": "ID único generado automáticamente que identifica la preferencia. Por ejemplo 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf"
+                        "en": "Autogenerated unique ID that identifies the preference. For example 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf.",
+                        "pt": "ID exclusivo gerado automaticamente que identifica a preferência. Por exemplo 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf.",
+                        "es": "ID único generado automáticamente que identifica la preferencia. Por ejemplo 036151801-2484cd71-7140-4c51-985a-d4cfcf133baf."
                       }
                     },
                     "init_point": {
@@ -3704,16 +3704,16 @@
                             "type": "string",
                             "description": {
                               "en": "Item ID.",
-                              "pt": "Indentificador do item",
-                              "es": "Indentificador del ítem"
+                              "pt": "Indentificador do item.",
+                              "es": "Indentificador del ítem."
                             }
                           },
                           "picture_url": {
                             "type": "string",
                             "description": {
                               "en": "Item image URL.",
-                              "pt": "URL da imagem do anúncio",
-                              "es": "URL de imagen del ítem"
+                              "pt": "URL da imagem do anúncio.",
+                              "es": "URL de imagen del ítem."
                             }
                           },
                           "title": {
@@ -3831,8 +3831,8 @@
                       },
                       "description": {
                         "en": "Items information.",
-                        "pt": "Informações sobre o item",
-                        "es": "Información sobre el ítem"
+                        "pt": "Informações sobre o item.",
+                        "es": "Información sobre el ítem."
                       }
                     },
                     "marketplace": {
@@ -3857,8 +3857,8 @@
                       "type": "object",
                       "description": {
                         "en": "Valid JSON that can be added to the payment to save additional attributes.",
-                        "pt": "JSON válido que pode ser adicionado ao pagamento para salvar atributos adicionais",
-                        "es": "JSON válido que puede agregarse al pago para guardar atributos adicionales"
+                        "pt": "JSON válido que pode ser adicionado ao pagamento para salvar atributos adicionais.",
+                        "es": "JSON válido que puede agregarse al pago para guardar atributos adicionales."
                       }
                     },
                     "notification_url": {
@@ -3886,24 +3886,24 @@
                           "type": "object",
                           "description": {
                             "en": "Buyer phone.",
-                            "pt": "Telefone do comprador",
-                            "es": "Teléfono del comprador"
+                            "pt": "Telefone do comprador.",
+                            "es": "Teléfono del comprador."
                           },
                           "properties": {
                             "area_code": {
                               "type": "string",
                               "description": {
                                 "en": "Area code.",
-                                "pt": "Código de área",
-                                "es": "Código de área"
+                                "pt": "Código de área.",
+                                "es": "Código de área."
                               }
                             },
                             "number": {
                               "type": "number",
                               "description": {
                                 "en": "Number.",
-                                "pt": "Número",
-                                "es": "Número"
+                                "pt": "Número.",
+                                "es": "Número."
                               }
                             }
                           }
@@ -3912,16 +3912,16 @@
                           "type": "object",
                           "description": {
                             "en": "Buyer’s address.",
-                            "pt": "Endereço do comprador",
-                            "es": "Dirección del comprador"
+                            "pt": "Endereço do comprador.",
+                            "es": "Dirección del comprador."
                           },
                           "properties": {
                             "zip_code": {
                               "type": "string",
                               "description": {
                                 "en": "Zip code.",
-                                "pt": "Código postal",
-                                "es": "Código postal"
+                                "pt": "Código postal.",
+                                "es": "Código postal."
                               }
                             },
                             "street_name": {
@@ -3929,8 +3929,8 @@
                               "example": "Mc Street",
                               "description": {
                                 "en": "Street name.",
-                                "pt": "Rua",
-                                "es": "Calle"
+                                "pt": "Rua.",
+                                "es": "Calle."
                               }
                             },
                             "street_number": {
@@ -3939,8 +3939,8 @@
                               "format": "nullable",
                               "description": {
                                 "en": "Street number.",
-                                "pt": "O Número",
-                                "es": "Número"
+                                "pt": "O Número.",
+                                "es": "Número."
                               }
                             }
                           }
@@ -3949,32 +3949,32 @@
                           "type": "string",
                           "description": {
                             "en": "Buyer e-mail address.",
-                            "pt": "Endereço de e-mail do comprador",
-                            "es": "Dirección de e-mail del comprador"
+                            "pt": "Endereço de e-mail do comprador.",
+                            "es": "Dirección de e-mail del comprador."
                           }
                         },
                         "identification": {
                           "type": "object",
                           "description": {
                             "en": "Personal identification.",
-                            "pt": "Identificação pessoal",
-                            "es": "Identificación personal"
+                            "pt": "Identificação pessoal.",
+                            "es": "Identificación personal."
                           },
                           "properties": {
                             "number": {
                               "type": "string",
                               "description": {
                                 "en": "Number.",
-                                "pt": "Número",
-                                "es": "Número"
+                                "pt": "Número.",
+                                "es": "Número."
                               }
                             },
                             "type": {
                               "type": "string",
                               "description": {
                                 "en": "Identification Type.",
-                                "pt": "Tipo de identificação",
-                                "es": "Tipo de identificación"
+                                "pt": "Tipo de identificação.",
+                                "es": "Tipo de identificación."
                               }
                             }
                           }
@@ -3983,30 +3983,30 @@
                           "type": "string",
                           "description": {
                             "en": "Buyer name.",
-                            "pt": "Nome do comprador",
-                            "es": "Nombre del comprador"
+                            "pt": "Nome do comprador.",
+                            "es": "Nombre del comprador."
                           }
                         },
                         "surname": {
                           "type": "string",
                           "description": {
                             "en": "Buyer last name.",
-                            "pt": "Apelido do comprador",
-                            "es": "Apellido del comprador"
+                            "pt": "Apelido do comprador.",
+                            "es": "Apellido del comprador."
                           }
                         },
                         "date_created": {
                           "type": "string",
                           "description": {
                             "en": "Registration date.",
-                            "pt": "Data de registro",
-                            "es": "Fecha de registración"
+                            "pt": "Data de registro.",
+                            "es": "Fecha de registración."
                           }
                         },
                         "last_purchase": {
                           "type": "object",
                           "description": {
-                            "en": "Date of last purchase",
+                            "en": "Date of last purchase.",
                             "pt": "Data da última compra.",
                             "es": "Fecha de última compra."
                           }
@@ -4053,8 +4053,8 @@
                                 "example": "",
                                 "description": {
                                   "en": "Payment method ID.",
-                                  "pt": "Identificador do método de pagamento",
-                                  "es": "Identificador del método de pago"
+                                  "pt": "Identificador do método de pagamento.",
+                                  "es": "Identificador del método de pago."
                                 }
                               }
                             }
@@ -4075,8 +4075,8 @@
                                 "example": "",
                                 "description": {
                                   "en": "Payment method data_type ID.",
-                                  "pt": "Identificador de data_type do meio de pagamento",
-                                  "es": "Identificador de data_type del medio de pago"
+                                  "pt": "Identificador de data_type do meio de pagamento.",
+                                  "es": "Identificador de data_type del medio de pago."
                                 }
                               }
                             }
@@ -4087,8 +4087,8 @@
                           "format": "nullable",
                           "description": {
                             "en": "Maximum number of credit card installments to be accepted.",
-                            "pt": "Número Máximo de cotas",
-                            "es": "Máximo número de cuotas"
+                            "pt": "Número Máximo de parcelas.",
+                            "es": "Máximo número de cuotas."
                           }
                         },
                         "default_installments": {
@@ -4096,7 +4096,7 @@
                           "format": "nullable",
                           "description": {
                             "en": "Prefered number of credit card installments.",
-                            "pt": "Preferência de cotas",
+                            "pt": "Preferência de parcelas",
                             "es": "Preferencia de cuotas"
                           }
                         }
@@ -4105,9 +4105,9 @@
                     "processing_modes": {
                       "type": "object",
                       "description": {
-                        "en": "Processing mode",
-                        "pt": "Modo de processamento",
-                        "es": "Modo de procesamiento"
+                        "en": "Processing mode.",
+                        "pt": "Modo de processamento.",
+                        "es": "Modo de procesamiento."
                       }
                     },
                     "product_id": {
@@ -4215,16 +4215,16 @@
                       "type": "object",
                       "description": {
                         "en": "Shipments information.",
-                        "pt": "Informações de envio",
-                        "es": "Información de envío"
+                        "pt": "Informações de envio.",
+                        "es": "Información de envío."
                       },
                       "properties": {
                         "default_shipping_method": {
                           "type": "object",
                           "description": {
                             "en": "Select default shipping method in checkout (mode:me2 only).",
-                            "pt": "Escolha um método de envio padrão no checkout (mode:me2 somente)",
-                            "es": "Elegir un método de envío predeterminado en el checkout (mode:me2 solamente)"
+                            "pt": "Escolha um método de envio padrão no checkout (mode:me2 somente).",
+                            "es": "Elegir un método de envío predeterminado en el checkout (mode:me2 solamente)."
                           }
                         },
                         "receiver_address": {
@@ -4315,9 +4315,9 @@
                     "last_updated": {
                       "type": "object",
                       "description": {
-                        "en": "Last updated date",
-                        "pt": "Data da última atualização",
-                        "es": "Última fecha de actualización"
+                        "en": "Last updated date.",
+                        "pt": "Data da última atualização.",
+                        "es": "Última fecha de actualización."
                       }
                     },
                     "statement_descriptor": {
@@ -4367,9 +4367,9 @@
                         {
                           "title": "invalid_collector_email",
                           "description": {
-                            "en": "collector is not collector_email owner",
-                            "es": "collector is not collector_email owner",
-                            "pt": "collector is not collector_email owner"
+                            "en": "collector is not collector_email owner.",
+                            "es": "collector is not collector_email owner.",
+                            "pt": "collector is not collector_email owner."
                           }
                         },
                         {
@@ -4415,9 +4415,9 @@
                         {
                           "title": "invalid_back_urls",
                           "description": {
-                            "en": "back_urls invalid. Wrong format",
-                            "es": "back_urls invalid. Wrong format",
-                            "pt": "back_urls invalid. Wrong format"
+                            "en": "back_urls invalid. Wrong format.",
+                            "es": "back_urls invalid. Wrong format.",
+                            "pt": "back_urls invalid. Wrong format."
                           }
                         },
                         {
@@ -4482,8 +4482,8 @@
         "type": "string",
         "description": {
           "en": "Shipment mode.",
-          "pt": "Modo de envio",
-          "es": "Modo de envío"
+          "pt": "Modo de envio.",
+          "es": "Modo de envío."
         },
         "enum": [
           {
@@ -4516,8 +4516,8 @@
         "type": "String",
         "description": {
           "en": "Operation data_type.",
-          "pt": "data_type da operação",
-          "es": "data_type de la operación"
+          "pt": "data_type da operação.",
+          "es": "data_type de la operación."
         },
         "enum": [
           {
@@ -4542,8 +4542,8 @@
         "type": "String",
         "description": {
           "en": "If specified, your buyers will be redirected back to your site immediately after completing the purchase.",
-          "pt": "No caso de estar especificado o comprador será redirecionado para o seu site imediatamente após a compra",
-          "es": "En el caso de estar especificado tu comprador sera redirigido a tu sitio inmediatamente después de la compra"
+          "pt": "No caso de estar especificado o comprador será redirecionado para o seu site imediatamente após a compra.",
+          "es": "En el caso de estar especificado tu comprador sera redirigido a tu sitio inmediatamente después de la compra."
         },
         "enum": [
           {

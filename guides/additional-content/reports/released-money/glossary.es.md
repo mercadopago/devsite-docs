@@ -30,7 +30,7 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | Monto bruto de la operación (`GROSS_AMOUNT`) | Monto de la operación bruto. |
 | Datos extra (`METADATA`) | Datos extras como por ejemplo el ID de las devoluciones parciales o datos provistos por el vendedor en caso de tener una integración externa.  ----[mlb]---- Cuando se muestra "Fee discount" significa una reducción en la comisión de venta por participar en una campaña comercial. ------------ |
 | `MP_FEE_AMOUNT` | Comisión de Mercado Pago y/o Mercado Libre. ----[mla, mpe, mco, mlm, mlu, mlc]---- Incluye IVA. ------------ |
-| Comisión por ofrecer cuotas sin interés (`INANCING_FEE_AMOUNT`) | Costo por ofrecer cuotas sin interés. | 
+| Comisión por ofrecer cuotas sin interés (`FINANCING_FEE_AMOUNT`) | Costo por ofrecer cuotas sin interés. | 
 | Costo de envío (`SHIPPING_FEE_AMOUNT`) | Costo de envío. |
 | Impuestos cobrados por retenciones IIBB (`TAXES_AMOUNT`) | Impuestos cobrados ----[mla]---- por retenciones de Ingresos Brutos, IVA, Ganancias; e impuestos sobre los Créditos y Débitos, entre otros. [Ver más detalle sobre retenciones y percepciones](https://vendedores.mercadolibre.com.ar/nota/retenciones-y-percepciones-sobre-tus-ventas-lo-que-debes-saber/). ------------  ----[mlm, mlb]---- por retenciones de Ingresos Brutos. ------------ ----[mco]---- por retenciones de IVA, ICA y Fuente según aplique el caso. ------------ ----[mlu]---- por retenciones de IVA. ------------  |
 | Cupón de descuento (`COUPON_AMOUNT`) | Esta transacción te muestra el valor total del cupón de descuento que se ofrece a tus compradores. |

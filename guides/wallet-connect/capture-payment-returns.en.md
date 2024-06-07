@@ -5,7 +5,7 @@ In this section you will find the details of each response to the requests made 
 ## Payment approved
 
 [[[
-```Json
+```json
 ===
 Status code: 201
 ===
@@ -15,20 +15,20 @@ Status code: 201
    "wallet_payment":{
       "transaction_amount":700.50,
       "description":"Payment for the purchase of furniture",
-      "external_reference":"Pago_123”
+      "external_reference":"Pago_123"
    },
    "payments":[
       {
          "id":3870106238,
-         "status":”approved”,
-         "status_detail":”accredited”,
+         "status":"approved",
+         "status_detail":"accredited",
          "payment_type_id":"credit_card",
          "payment_method_id":"visa",
          "transaction_amount":700.50,
          "installments":1,
          "description":"Payment for the purchase of furniture",
          "capture":true,
-         "external_reference":"Pago_123”
+         "external_reference":"Pago_123"
       }
    ],
    "disbursements": [
@@ -56,7 +56,7 @@ Status code: 201
 > For more information on why the payment was refused, check the `payment.status_detail` field.
 
 [[[
-```Json
+```json
 ===
 Status code: 201
 ===
@@ -70,8 +70,8 @@ Status code: 201
    "payments":[
       {
          "id":3870106238,
-         "status":”rejected”,
-         "status_detail":”cc_rejected_other_reason”,
+         "status":"rejected",
+         "status_detail":"cc_rejected_other_reason",
          "payment_type_id":"credit_card",
          "payment_method_id":"visa",
          "transaction_amount":700.50,
@@ -100,7 +100,7 @@ Status code: 201
 This response returns when an attempt is made to create a payment but the payer has no balance in his Mercado Pago account.
 
 [[[
-```Json
+```json
 ===
 Status code: 201
 ===
@@ -114,8 +114,8 @@ Status code: 201
    "payments":[
       {
          "id":null,
-         "status":”rejected”,
-         "status_detail":”insufficient_money”,
+         "status":"rejected",
+         "status_detail":"insufficient_money",
          "payment_type_id":"account_money",
          "payment_method_id":"account_money",
          "transaction_amount":700.50,
@@ -142,7 +142,7 @@ Status code: 201
 This error is returned when the client cancels the agreement.
 
 [[[
-```Json
+```json
 ===
 Status code: 401
 ===
@@ -159,5 +159,21 @@ Status code: 401
    ]
 }
 
+```
+]]]
+
+## Payment rejected due to missing parameter in header
+
+[[[
+```json
+===
+Status code: 400
+===
+{
+   "status": "400",
+   "error":  "bad request",
+   "message": "Missing header parameter.",
+   "cause": []
+}
 ```
 ]]]

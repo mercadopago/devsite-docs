@@ -27,7 +27,7 @@ Through the `back_urls`, the following parameters will be returned:
 | --- | --- |
 | `payment_id` | ID (identifier) of the Mercado Pago payment. |
 | `status` | Payment status. Eg: `approved` for an approved payment or `pending` for a pending payment. |
-| `external_reference` | Amount sent when creating the payment preference. |
+| `external_reference` | Reference you can synchronize with your payment system. |
 | `merchant_order_id` | ID (identifier) of the payment order generated in Mercado Pago. |
 
 To define the `back_urls`, use one of the SDKs below informing the URLs where the buyer should be directed when finalizing the payment.
