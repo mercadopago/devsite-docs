@@ -11,7 +11,7 @@ Los flujos de acceso disponibles para la generación del Access Token son:
 >
 > Importante
 >
-> Si un Access Token generado a partir del flujo **Authorization code** está inválido o expirado, podrá utilizar el flujo **Refresh Token** para intercambiar una concesión temporal del tipo `refresh_token` por un Access Token. Es decir, permite que el Access Token se actualice sin la necesidad de una nueva interacción del usuario después de la autorización concedida. Para más información, visite [Renovar Access Token](/developers/es/guides/additional-content/security/oauth/renewal).
+> Si un Access Token generado a partir del flujo **Authorization code** es inválido o ha expirado, podrás utilizar el flujo **Refresh Token** para intercambiar una concesión temporal del tipo `refresh_token` por un Access Token. Esto permite que el Access Token se actualice sin la necesidad de una nueva interacción del usuario después de la autorización concedida. Para más información, visita la documentación [Renovar Access Token](/developers/es/guides/additional-content/security/oauth/renewal).
 
 ## Authorization code
  
