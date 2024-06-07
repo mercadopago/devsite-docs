@@ -8,7 +8,7 @@ See below how to send recurring payment information to the [create payment reque
 
 ### Process the first payment
 
-For the **first payment** in the recurring messaging, you will need to send the following information to the [v1/payments](/developers/en/reference/payments/_payments/post) endpoint via the `point_of_interaction `parameter.
+For the **first payment** in the recurring messaging, you will need to send the following information to the [v1/payments](/developers/en/reference/payments/_payments/post) endpoint through the `point_of_interaction `parameter.
 
 - Indicate that the type is subscription (`type = SUBSCRIPTIONS`);
 - Indicate that it is the first transaction (`first_time_use = TRUE`);
@@ -40,7 +40,7 @@ Example:
 
 ### Process subsequent payments
 
-For **subsequent payments** in the recurring messaging, you will need to resend the first payment's information to the [v1/payments](/developers/en/reference/payments/_payments/post) endpoint via the `point_of_interaction` parameter, modifying the data as shown below.
+For **subsequent payments** in the recurring messaging, you will need to resend the first payment's information to the [v1/payments](/developers/en/reference/payments/_payments/post) endpoint through the `point_of_interaction` parameter, modifying the data as shown below.
 
 - Indicate that **it is not** the first transaction (`first_time_use = FALSE`);
 - Indicate the payment `subscription_id` (we suggest using the `collector` + a unique subscription `ID `per user);

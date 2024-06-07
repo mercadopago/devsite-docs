@@ -1,8 +1,8 @@
 # Network Transaction ID - TID
 
-A partir das novas regras operacionais para tokenização de operações de pagamentos recorrentes da bandeira _Visa_, será necessário enviar o identificador de transação da bandeira (TID) às transações de mensageria para que seja utilizado dentro da multi-adquirência e evitar possíveis multas.
+Under the new operational rules for tokenizing recurring payment transactions from the Visa brand, it will be necessary to send the transaction identifier (TID) in messaging transactions to be used within multi-acquiring and to avoid possible fines.
 
-## Processar primeiro pagamento
+## Process the first payment
 
 Para o **primeiro pagamento** com _Visa_, será preciso enviar o _header_ `X-Expand-Responde-Nodes` ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post) conforme abaixo.
 
@@ -10,7 +10,7 @@ Para o **primeiro pagamento** com _Visa_, será preciso enviar o _header_ `X-Exp
 --header 'X-Expand-Responde-Nodes: gateway.reference'\
 ```
 
-Na resposta se poderá observar o retorno do `network_transaction_id` no parâmetro `expanded`. Exemplo:
+In the response, you can observe the return of the `network_transaction_id` in the `expanded` parameter. Example:
 
 ```json
 "expanded": {
@@ -22,11 +22,11 @@ Na resposta se poderá observar o retorno do `network_transaction_id` no parâme
 }
 ```
 
-### Processar pagamentos subsequentes 
+## Process subsequent payments
 
-Para os **pagamentos subsequentes** com _Visa_, será preciso enviar a informação do `network_transaction_id` recebido ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post), através do parâmetro `network_transaction_id`.
+For **subsequent payments** with Visa, it will be necessary to send the received `network_transaction_id` information to the [v1/payments](/developers/es/reference/payments/_payments/post) endpoint through the `forward_data` parameter.
 
-Exemplo:
+Example:
 
 ```json
 {
@@ -65,7 +65,7 @@ Exemplo:
 }
 ```
 
-Resposta:
+Response:
 
 ```json
 "expanded": {
@@ -79,6 +79,6 @@ Resposta:
 
 > WARNING
 >
-> Atenção
+> Attention
 > 
-> Caso o `network_transaction_id` não retorne no último pagamento realizado, deverá ser enviado o primeiro `network_transaction_id`recebido.
+> If the `network_transaction_id` is not returned in the last payment made, the value received in the first payment should be sent.

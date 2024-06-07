@@ -1,16 +1,16 @@
 # Network Transaction ID - TID
 
-A partir das novas regras operacionais para tokenização de operações de pagamentos recorrentes da bandeira _Visa_, será necessário enviar o identificador de transação da bandeira (TID) às transações de mensageria para que seja utilizado dentro da multi-adquirência e evitar possíveis multas.
+A partir de las nuevas reglas operacionales para la tokenización de operaciones de pagos recurrentes de la marca _Visa_, será necesario enviar el identificador de transacción de la tarjeta (TID) a las transacciones de mensajería para que se utilice dentro de la multi-adquirencia y evitar posibles multas.
 
-## Processar primeiro pagamento
+## Procesar el primer pago
 
-Para o **primeiro pagamento** com _Visa_, será preciso enviar o _header_ `X-Expand-Responde-Nodes` ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post) conforme abaixo.
+Para el **primer pago** con _Visa_, será necesario enviar el _header_ `X-Expand-Response-Nodes` al endpoint [v1/payments](/developers/es/reference/payments/_payments/post) como se muestra a continuación.
 
 ```json
 --header 'X-Expand-Responde-Nodes: gateway.reference'\
 ```
 
-Na resposta se poderá observar o retorno do `network_transaction_id` no parâmetro `expanded`. Exemplo:
+En la respuesta se podrá observar el retorno del `network_transaction_id` en el parámetro `expanded`. Ejemplo:
 
 ```json
 "expanded": {
@@ -22,11 +22,11 @@ Na resposta se poderá observar o retorno do `network_transaction_id` no parâme
 }
 ```
 
-### Processar pagamentos subsequentes 
+## Procesar pagos subsecuentes
 
-Para os **pagamentos subsequentes** com _Visa_, será preciso enviar a informação do `network_transaction_id` recebido ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post), através do parâmetro `network_transaction_id`.
+Para los **pagos subsecuentes** con _Visa_, será necesario enviar la información del `network_transaction_id` recibido al endpoint [v1/payments](/developers/es/reference/payments/_payments/post), a través del parámetro `forward_data`.
 
-Exemplo:
+Ejemplo:
 
 ```json
 {
@@ -65,7 +65,7 @@ Exemplo:
 }
 ```
 
-Resposta:
+Respuesta:
 
 ```json
 "expanded": {
@@ -79,6 +79,6 @@ Resposta:
 
 > WARNING
 >
-> Atenção
+> Atención
 > 
-> Caso o `network_transaction_id` não retorne no último pagamento realizado, deverá ser enviado o primeiro `network_transaction_id`recebido.
+> En caso de que el `network_transaction_id` no se devuelva en el último pago realizado, se deberá enviar el valor recibido en el primer pago.

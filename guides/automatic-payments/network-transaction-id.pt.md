@@ -24,7 +24,7 @@ Na resposta se poderá observar o retorno do `network_transaction_id` no parâme
 
 ### Processar pagamentos subsequentes 
 
-Para os **pagamentos subsequentes** com _Visa_, será preciso enviar a informação do `network_transaction_id` recebido ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post), através do parâmetro `network_transaction_id`.
+Para os **pagamentos subsequentes** com _Visa_, será preciso enviar a informação do `network_transaction_id` recebido ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post), através do parâmetro `forward_data`.
 
 Exemplo:
 
@@ -81,4 +81,4 @@ Resposta:
 >
 > Atenção
 > 
-> Caso o `network_transaction_id` não retorne no último pagamento realizado, deverá ser enviado o primeiro `network_transaction_id`recebido.
+> Caso o `network_transaction_id` não retorne no último pagamento realizado, deverá ser enviado valor recebido no primeiro pagamento.
