@@ -1,6 +1,6 @@
 # Obtener Access Token
 
-Aprenda a utilizar los flujos, también conocidos como _grant types_, para obtener un Access Token y acceder a los datos expuestos por una API. La existencia de estos flujos surge para responder a todos los escenarios de negocios que pueden surgir en el consumo de APIs con base en el tipo de aplicación consumidora, su grado de confianza y cómo es la interacción del usuario en el proceso.
+Aprende a utilizar los flujos, también conocidos como _grant types_, para obtener un Access Token y acceder a los datos expuestos por una API. Estos flujos responden a todos los escenarios de negocios que pueden aparecer en el consumo de APIs con base en el tipo de aplicación consumidora, su grado de confianza y cómo es la interacción del usuario en el proceso.
 
 Los flujos de acceso disponibles para la generación del Access Token son:
 
