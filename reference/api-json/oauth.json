@@ -71,7 +71,7 @@
                         "title": "client_credentials",
                         "description": {
                           "en": "Used to obtain an Access Token without user interaction. This flow is used when applications request an Access Token using only their own credentials to access their own resources, without acting on behalf of a user or accessing their data.",
-                          "es": "Se utiliza para obtener un Access Token sin interacción del usuario. Este flujo se utiliza cuando las aplicaciones solicitan un Access Token usando solo sus propias credenciales para acceder a sus propios recursos, no pudiendo actuar en nombre de un usuario ni acceder a sus datos.",
+                          "es": "Se utiliza para obtener un Access Token sin interacción del usuario, cuando las aplicaciones solicitan un Access Token usando solo sus propias credenciales para acceder a sus propios recursos, no pudiendo actuar en nombre de un usuario ni acceder a sus datos.",
                           "pt": "É utilizado para obter um Access Token sem interação do usuário. Este fluxo é utilizado quando as aplicações solicitam um Access Token usando apenas as suas próprias credenciais para acessar seus próprios recursos, não podendo agir em nome de um usuário e acessar os seus dados."
                         }
                       }
