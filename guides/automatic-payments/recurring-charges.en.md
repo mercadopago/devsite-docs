@@ -8,7 +8,7 @@ For the first transaction, it will always be necessary to request the card infor
 
 The minimum required fields to send are: `token`, `transaction_amount`, `installments`, `payment_method_id` and `payer.email`. Remember that the more additional information is transmitted, the higher the chance of payment approval because the risk assessment will have more data to evaluate.
 
-> Note
+> NOTE
 >
 > Important
 >

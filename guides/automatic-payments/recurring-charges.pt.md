@@ -8,7 +8,7 @@ Para a primeira transação, sempre será necessário solicitar os dados do cart
 
 Os campos mínimos requeridos para enviar são: `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email`. Lembrando que quanto mais informações adicionais forem transmitidas, maior será a chance do pagamento ser aprovado porque a avaliação de risco terá mais dados para avaliar.
 
-> Note
+> NOTE
 >
 > Importante
 >
