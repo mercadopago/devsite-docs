@@ -27,7 +27,7 @@ Debido a que se trata de un flujo basado en la redirección, debes permitir la i
 
 Una vez permitido el acceso, el servidor genera un código de acceso que llega a la aplicación a través de una redirección. En este paso, la aplicación solicita acceso al servidor de autenticación enviando el código obtenido y los datos de la aplicación. Una vez hecho esto, el servidor otorga el Access Token y el _refresh token_ a la aplicación.
 
-Vea a continuación cómo **configurar el protocolo PKCE** (un protocolo de seguridad no obligatorio, pero que se utilizará con OAuth para proteger contra ataques de código malicioso durante el intercambio de códigos de autorización por Access Token) y luego **generar el Access Token**.
+Mira a continuación cómo **configurar el protocolo PKCE** (un protocolo de seguridad no obligatorio, pero que se utilizará con OAuth para proteger contra ataques de código malicioso durante el intercambio de códigos de autorización por Access Token) y luego **generar el Access Token**.
 
 ### Configurar PKCE
 
