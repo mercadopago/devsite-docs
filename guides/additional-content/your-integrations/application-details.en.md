@@ -28,8 +28,8 @@ You can click on the **Edit data** button to view and edit the basic and advance
 
 #### Advanced settings
 
-* **Redirect URL**: URL (in https) where you want to receive the authorization code when your integration is set up as a marketplace or performed through the flow **Authorization code** by OAuth. Check out [OAuth](/developers/en/docs/security/oauth/introduction) documentation for more details.
-* **Enable PKCE verification**: If the integration is done with the flow **Authorization code** by OAuth, you can enable PKCE (Proof Key for Code Exchange) to generate an additional secret code to be used during the authorization process.  Check out [Configure PKCE](/developers/en/docs/security/oauth/creation#:~:text=Access%20Token.-,Configure%20PKCE,-The%20PKCE%20) documentation for more details.
+* **Redirect URL**: URL (in https) where you want to receive the authorization code when your integration is set up as a marketplace or performed through the flow **Authorization code** by OAuth. The URL format cannot be fragmented; it must be absolute. Check out [OAuth](/developers/en/docs/security/oauth/introduction) documentation for more details.
+* **Use the authorization code flow with PKCE**: If the integration is done with the flow **Authorization code** by OAuth, you can enable PKCE (Proof Key for Code Exchange) to generate an additional secret code to be used during the authorization process.  Check out [Configure PKCE](/developers/en/docs/security/oauth/creation#:~:text=Access%20Token.-,Configure%20PKCE,-The%20PKCE%20) documentation for more details.
 * **Application permissions**: Options for accessing your application, including **read**, **offline access** and **write**. By default, your application is created with all permissions enabled, but you can disable a permission by unchecking the corresponding checkbox.
 
 ### Delete application

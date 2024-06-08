@@ -33,18 +33,11 @@ See below how to **configure the PKCE protocol** (an optional security protocol,
 
 The **PKCE** (Proof Key for Code Exchange) is a security protocol used with OAuth to protect against malicious code attacks during the exchange of authorization codes for an Access Token. It adds an extra layer of security by generating a verifier that is transformed into a challenge to ensure that even if the authorization code is intercepted, it is not useful without the original verifier.
 
-In Mercado Pago, you can **enable PKCE verification** from the [Application details](/developers/en/docs/your-integrations/application-details) screen. This allows you to send an additional secret code to be used during the authorization process.
+Follow the steps below to enable and configure the use of the authorization code flow with PKCE.
 
-> WARNING
->
-> Important
->
-> With the PKCE field enabled, Mercado Pago will start requiring the `code_challenge` and `code_method` fields as mandatory in OAuth requests.
-
-Follow the steps below to generate the mandatory fields and configure PKCE verification.
-
-1. The fields can be generated in various ways, either through custom development or using SDKs. Follow the necessary steps described in [this official documentation](https://datatracker.ietf.org/doc/html/rfc7636#section-4) to generate the required fields.
-2. After generating and encrypting the fields, it will be necessary to send the respective codes to Mercado Pago. To do this, send them via `query_params` using the authentication URL below.
+1. First, on the [Application details](/developers/en/docs/your-integrations/application-details) screen, click **Edit** and **enable the use of the authorization code flow with PKCE**. With the field enabled, Mercado Pago will require the `code_challenge` and `code_method` fields in OAuth requests.
+2. The fields can be generated in various ways, either through custom development or using SDKs. Follow the necessary steps described in [this official documentation](https://datatracker.ietf.org/doc/html/rfc7636#section-4) to generate the required fields.
+3. After generating and encrypting the fields, it will be necessary to send the respective codes to Mercado Pago. To do this, send them via `query_params` using the authentication URL below.
 
 ```URL
 https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`redirect_uri=$YOUR_URL&code_challenge=$CODE_CHALLENGE&code_challenge_method=$CODE_METHOD
@@ -57,7 +50,7 @@ https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`
   - If it's not possible to use **S256** for some technical reason and the server supports the **Plain** method, it's possible to set the c`ode_challenge` equal to the `code_verifier`.
 - **Code_challenge_method**: is the method used to generate the `code_challenge`, as described in the above item. This field can be, for example, **S256** or **Plain**, depending on the encoding selected in the `code_challenge stage`. </br>
 
-3. After correctly sending the codes to Mercado Pago, you will obtain the necessary authorization (`code_verifier`)  for get the Access Token and perform PKCE verification on transactions made with OAuth.
+4. After correctly sending the codes to Mercado Pago, you will obtain the necessary authorization (`code_verifier`)  for get the Access Token and perform PKCE verification on transactions made with OAuth.
 
 ### Get token
 
@@ -68,19 +61,20 @@ Access Token is the code used in different requests of public origin to access a
 > Attention
 >
 > It is recommended to carry out this procedure all at once together with the user, since the code received by the Redirect URL after authorization is valid for 10 minutes and the Access Token received through the endpoint is valid for 180 days (6 months).
-> <br><br>
-> To generate **sandbox** credentials for testing, send the `test_token` parameter with the value `true`.
 
 1. Edit your application so that it contains your Redirect URL. See [Edit Application](/developers/en/guides/additional-content/your-integrations/application-details).
 2. Send the authentication URL to the seller whose account you want to link to yours with the following fields:
 
-    |Description|URL| 
-    |---|---|
-    | Authentication URL | https://auth.mercadopago.com/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com |
-     * **client_id**: replace the "APP_ID" value with your application ID. Check [Application ID](/developers/en/guides/additional-content/your-integrations/application-details).
-     * **state**: replace the "RANDOM_ID" value with an identifier that is unique for each attempt and does not include sensitive information so that you can identify who the received code is from.
-     * **redirect_uri**: add the reported URL in the Redirect URL field of your application.
-     <br/>
+```URL
+https://auth.mercadopago.com/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
+```
+
+|Field|Description|
+|---|---|
+|Client_id| Replace the "APP_ID" value with your **application number**. Check [Application ID](/developers/en/guides/additional-content/your-integrations/application-details) for more information.|
+|State| Replace the "RANDOM_ID" value with an identifier that is unique for each attempt and does not include sensitive information so that you can identify who the received code is from.|
+|Redirect_uri| Add the reported URL in the "Redirect URL" field of your application. Check [Application ID](/developers/en/guides/additional-content/your-integrations/application-details) for more information.|
+
 3. Wait for the seller to access the URL and allow access. Upon accessing the URL, the seller will be directed to Mercado Pago and must log into their account to carry out the authorization.
 4. Check your server's Redirect URL to see the authorization code returned in the **code** parameter.
  
@@ -89,6 +83,8 @@ Access Token is the code used in different requests of public origin to access a
    | Redirect URL | https://www.redirect-url.com?code=CODE&state=RANDOM_ID |
  
 5. Send your [credentials](/developers/en/docs/your-integrations/credentials) (`client_id` and `client_secret`), the **authorization code** (`code`) returned and, if you have [configured the PKCE](/developers/en/docs/security/oauth/creation#:~:text=Access%20Token.-,Configure%20PKCE,-The%20PKCE%20), the `code_verifier` to the [/oauth/token](/developers/en/reference/oauth/_oauth_token/post) endpoint to receive the Access Token in response.
+
+> To generate **sandbox** credentials for testing, send the `test_token` parameter with the value `true`.
 
 ## Client credentials
 

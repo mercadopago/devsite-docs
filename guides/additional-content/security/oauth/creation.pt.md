@@ -33,18 +33,11 @@ Veja abaixo como **configurar o protocolo PKCE** (um protocolo de segurança nã
 
 O **PKCE** (_Proof Key for Code Exchange_) é um protocolo de segurança usado com OAuth para proteger contra ataques de código malicioso durante a troca de códigos de autorização por Access Token. Ele adiciona uma camada extra de segurança gerando um _verifier_ que é transformado em um _challenge_ para garantir que mesmo se o código de autorização for interceptado, ele não seja útil sem o _verifier_ original.
 
-No Mercado Pago você pode **habilitar a verificação por PKCE** a partir da tela de [Detalhes de aplicação](/developers/pt/docs/your-integrations/application-details), assim será possível enviar um código secreto adicional a ser utilizado durante o processo de autorização.
+Siga os passos abaixo para habilitar e configurar o uso o fluxo de código de autorização com o PKCE.
 
-> WARNING
->
-> Importante
->
-> Com o campo PKCE habilitado, o Mercado Pago passará a requerer como obrigatórios os campos `code_challenge` e `code_method` nas requisições de OAuth.
-
-Siga os passos abaixo para gerar os campos obrigatórios e configurar a verificação por PKCE.
-
-1. Os campos poderão ser gerados de várias formas, com desenvolvimento próprio ou uso de SDKs. Siga os passos necessários descritos [nesta documentação oficial](https://datatracker.ietf.org/doc/html/rfc7636#section-4) para gerar os campos que serão requeridos.
-2. Após gerar e criptografar os campos, será necessário enviar os respectivos códigos ao Mercado Pago. Para isso, envie via `query_params` utilizando a URL de autenticação abaixo.
+1. Primeiramente, na tela de [Detalhes de aplicação](/developers/pt/docs/your-integrations/application-details), clique em **Editar** e **habilite o uso o fluxo de código de autorização com o PKCE**. Com o campo habilitado, o Mercado Pago passará a **requerer como obrigatórios** os campos `code_challenge` e `code_method` nas requisições de OAuth.
+2. Os campos exigidos poderão ser gerados de várias formas, com desenvolvimento próprio ou uso de SDKs. Siga os passos necessários descritos [nesta documentação oficial](https://datatracker.ietf.org/doc/html/rfc7636#section-4) para gerar os campos que serão requeridos.
+3. Após gerar e criptografar os campos, será necessário enviar os respectivos códigos ao Mercado Pago. Para isso, envie via `query_params` utilizando a URL de autenticação abaixo.
 
 ```URL
 https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`redirect_uri=$YOUR_URL&code_challenge=$CODE_CHALLENGE&code_challenge_method=$CODE_METHOD
@@ -57,7 +50,7 @@ https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`
   - Se não for possível usar **S256** por algum motivo técnico e o servidor suportar o método **Plain**, é possível definir o `code_challenge` igual ao `code_verifier`.
 - **Code_challenge_method**: é o método utilizado para gerar o `code_challenge`, conforme descrito no item acima. Este campo poderá ser, por exemplo, **S256** ou **Plain**, de acordo com a codificação selecionada na etapa de `code_challenge`. <br>
 
-3. Tendo enviado os códigos corretamente ao Mercado Pago, você obterá a autorização necessária (`code_verifier`) para obter o Access Token e realizar a verificação por PKCE nas transações feitas com OAuth.
+4. Tendo enviado os códigos corretamente ao Mercado Pago, você obterá a autorização necessária (`code_verifier`) para obter o Access Token e realizar a verificação por PKCE nas transações feitas com OAuth.
 
 ### Obter token
 
@@ -68,19 +61,20 @@ O Access Token é o código utilizado em diferentes _requests_ públicos para ac
 > Atenção
 >
 > É recomendado realizar este procedimento por completo de uma única vez em conjunto com o usuário, visto que o código recebido pela Redirect URL após a autorização tem validade de 10 minutos e o Access Token recebido através do endpoint tem validade de 180 dias (6 meses).
-> <br><br>
-> Para gerar credenciais de _sandbox_ para realização de testes, envie o parâmetro `test_token` com valor `true`.
  
 1. Edite sua aplicação para conter sua Redirect URL. Veja [Editar aplicação](/developers/pt/guides/additional-content/your-integrations/application-details).
 2. Envie a URL de autenticação para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:
 
-   |Descrição|URL| 
-   |---|---|
-   | URL de autenticação | https://auth.mercadopago.com/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com |
-     * **client_id**: substitua o valor "APP_ID" com a ID do sua aplicação. Veja [ID de aplicação](/developers/pt/guides/additional-content/your-integrations/application-details).
-     * **state**: substitua o valor "RANDOM_ID" por um identificador que seja único para cada tentativa e que não inclua informações sensíveis de forma que você consiga identificar de quem é o código recebido.
-     * **redirect_uri**: adicione a URL informada no campo Redirect URL da sua aplicação.
-     <br/>
+```URL
+https://auth.mercadopago.com/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
+```
+
+| Campo |Descrição|
+|---|---|
+|Client_id| Substitua o valor "APP_ID" com a **número da sua aplicação**. Veja [Detalhes da aplicação](/developers/pt/guides/additional-content/your-integrations/application-details) para mais informações.|
+|State| Substitua o valor "RANDOM_ID" por um identificador que seja único para cada tentativa e que não inclua informações sensíveis de forma que você consiga identificar de quem é o código recebido. |
+|Redirect_uri| Adicione a URL informada no campo "Redirect URL" da sua aplicação. Veja [Detalhes da aplicação](/developers/pt/guides/additional-content/your-integrations/application-details) para mais informações.|
+
 3. Aguarde o vendedor acessar a URL e permitir o acesso. Ao acessar a URL o vendedor será direcionado para o Mercado Pago e deverá realizar o login na conta dele para realizar a autorização.
 4. Verifique na Redirect URL do seu servidor o código de autorização retornado no parâmetro **code**.
 
@@ -89,6 +83,8 @@ O Access Token é o código utilizado em diferentes _requests_ públicos para ac
    | Redirect URL | https://www.redirect-url.com?code=CODE&state=RANDOM_ID |
  
 5. Envie as suas [credenciais](/developers/pt/docs/your-integrations/credentials) (`client_id` e `client_secret`), o **código de autorização** (`code`) retornado e, caso tenha [configurado o PKCE](/developers/pt/docs/security/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-O%20PKCE%20), o `code_verifier` ao endpoint [/oauth/token](/developers/pt/reference/oauth/_oauth_token/post) para receber como resposta o Access Token.
+
+> Para gerar credenciais de _sandbox_ para a realização de testes, envie o parâmetro `test_token` com valor `true`.
 
 ## Client credentials
 

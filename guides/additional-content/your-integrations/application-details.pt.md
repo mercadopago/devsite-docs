@@ -28,8 +28,8 @@ Você pode clicar no botão **Editar dados** para visualizar e editar as **confi
 
 #### Configurações avançadas
 
-* **URLs de redirecionamento**: URLs (em https) na qual você deseja receber o código de autorização quando sua integração for configurada como Marketplace ou realizada por meio do fluxo **Authorization code** de OAuth. Veja [OAuth](/developers/pt/docs/security/oauth/introduction) para mais detalhes.
-* **Habilitar verificação PKCE**: caso a integração seja realizada por meio do fluxo **Authorization code** de OAuth, você poderá habilitar o PKCE (_Proof Key for Code Exchange_) para que seja gerado um código secreto adicional a ser usado durante o processo de autorização. Veja [Configurar PKCE](/developers/pt/docs/security/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-O%20PKCE%20) para mais detalhes.
+* **URLs de redirecionamento**: URLs (em https) na qual você deseja receber o código de autorização quando sua integração for configurada como Marketplace ou realizada por meio do fluxo **Authorization code** de OAuth. O formato da URL não poderá ser fragmentado, deverá ser absoluto. Veja [OAuth](/developers/pt/docs/security/oauth/introduction) para mais detalhes. 
+* **Usar o fluxo de código de autorização com o PKCE**: caso a integração seja realizada por meio do fluxo **Authorization code** de OAuth, você poderá habilitar o PKCE (_Proof Key for Code Exchange_) para que seja gerado um código secreto adicional a ser usado durante o processo de autorização. Veja [Configurar PKCE](/developers/pt/docs/security/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-O%20PKCE%20) para mais detalhes.
 * **Permissões da aplicação**: opções de acesso da sua aplicação, como **leitura**, **acesso offline** e **escrita**. Por padrão, sua aplicação é criada com todas as permissões ativadas, mas você pode desativar uma permissão clicando na caixa de seleção referente à permissão que você deseja alterar.
 
 ### Excluir aplicação
