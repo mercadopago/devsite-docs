@@ -10,7 +10,6 @@ A continuación, encontrarás cuáles son las transacciones que deberás llevar 
 >
 > Ten en cuenta que se te solicitará mostrar las distintas pantallas o comportamientos del dispositivo. Además, deberás haber integrado obligatoriamente la [consulta de intenciones de pago](/developers/es/docs/redelcom/api-integration/payments-processing/query-payment-intent) mediante el parámetro `{rdcTransactionID}`, y almacenar este parámetro asociado a cada transacción en tu base de datos.
 
-
 1. [Crear una transacción](/developers/es/docs/redelcom/api-integration/payments-processing/create-payment-intent) a ser pagada con **tarjeta de débito** cuyo monto sea **superior a 20.000 CLP**.
 2. [Crear una transacción](/developers/es/docs/redelcom/api-integration/payments-processing/create-payment-intent) a ser pagada con **tarjeta de crédito**, en **dos cuotas o más**, y cuyo monto sea **superior a 30.000 CLP**.
 3. [Crear una transacción](/developers/es/docs/redelcom/api-integration/payments-processing/create-payment-intent) por el **monto exacto de 2.222 CLP**. Esta transacción devolverá un error configurado en el ambiente y, en tu aplicación, tienes que mostrar el campo `mensaje_visor`, que te permitirá informar al cliente el motivo del error. El uso de *pop up* para exhibir este mensaje será requerido.
@@ -20,7 +19,7 @@ A continuación, encontrarás cuáles son las transacciones que deberás llevar 
 Además, ciertos casos particulares pueden requerir de pasos adicionales:
 
 * Si has integrado la [obtención de terminal](/developers/es/docs/redelcom/api-integration/payments-processing/get-terminal), es posible que se te solicite una demostración.
-* Si utilizas el **parámetro `responseCallback`** para recibir respuestas automáticas  de los pagos realizados, deberás mostrar que esa notificación llega efectivamente a la [URL de respuesta](/developers/es/docs/redelcom/api-integration/payments-processing/create-payment-intent#bookmark_implementar_la_url_de_respuesta). 
+* Si utilizas el **parámetro `responseCallback`** para recibir respuestas automáticas de los pagos realizados, deberás mostrar que esa notificación llega efectivamente a la [URL de respuesta](/developers/es/docs/redelcom/api-integration/payments-processing/create-payment-intent#bookmark_implementar_la_url_de_respuesta). 
 * Si utilizas un **boleteador externo**, deberás mostrar cómo lucen las facturas impresas.
 
 Una vez finalizado y aprobado el proceso de homologación por videollamada, nuestro equipo te facilitará tus credenciales productivas vía e-mail, y podrás comenzar a operar con Redelcom.

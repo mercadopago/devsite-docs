@@ -1,6 +1,6 @@
 # Homologate an API integration
 
-The homologation process for an API integration consists of, during a video call with our team, performing a series of predefined transactions that will allow verifying if the behaviors are as desired, as well as demonstrating certain functionalities that need to be present in your software. If this process is approved, you will receive your production credentials to start operating with Redelcom.
+The homologation process for an API integration consists of performing a series of predefined transactions during a video call with our team, that will allow verifying if the behaviors are as desired, as well as demonstrating certain functionalities that need to be present in your software. If this process is approved, you will receive your production credentials to start operating with Redelcom.
 
 Below, you will find the transactions that you must carry out as part of your homologation. You can perform them with real cards and fake buyer data, as it is a testing environment and no charges will be made.
 
