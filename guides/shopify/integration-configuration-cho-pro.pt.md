@@ -6,32 +6,30 @@ Ao instalar o [Mercado Pago Checkout Pro](/developers/pt/docs/checkout-pro/landi
 Para instalar o **Mercado Pago Checkout Pro** em sua loja Shopify, siga os seguintes passos:
 
 1. Vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
-
 2. No painel administrativo da loja, clique em **Configurações** no canto inferior esquerdo da página.
 
-![Painel](/images/shopify/store-panel-pt.png)
+![installation chopro 1](/images/shopify/installation-chopro-1-pt.png)
 
 3. Uma vez lá, selecione a opção **Pagamentos** no menu ao lado esquerdo da página. 
-
 4. Em "Formas de pagamento aceitas", clique em **Adicionar formas de pagamento**.
 
-![Pagos](/images/shopify/payments-page-pt.png)
+![installation chopro 2](/images/shopify/installation-chopro-2-pt.png)
 
 5. Selecione a aba **Buscar por provedor** e procure pelo aplicativo "Checkout Mercado Pago".
 
-![Agregar forma de pago](/images/shopify/add-payment-method-pt.png)
+![installation chopro 3](/images/shopify/installation-chopro-3-pt.png)
 
 6. Após localizá-lo, selecione-o e clique em **Instalar**.
 
-![Agregar forma de pago](/images/shopify/provider-pt.png)
+![installation chopro 4](/images/shopify/installation-chopro-4-pt.png)
 
 7. Leia com atenção as informações sobre as permissões solicitadas e clique em **Instalar** outra vez.
 
-![Agregar forma de pago](/images/shopify/install-app-pt.png)
+![installation chopro 5](/images/shopify/installation-chopro-5-pt.png)
 
 8. Após aceitar as permissões solicitadas, clique em **Gerenciar conta** para vincular sua conta Mercado Pago à sua loja através das suas credenciais.
 
-![Agregar forma de pago](/images/shopify/manage-account-pt.png)
+![installation chopro 6](/images/shopify/installation-chopro-6-pt.png)
 
 > WARNING
 >
@@ -42,11 +40,12 @@ Para instalar o **Mercado Pago Checkout Pro** em sua loja Shopify, siga os segui
 9. No admin do Mercado Pago, acesse **[Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** e selecione sua aplicação. Caso ainda não tenha criado uma aplicação, acesse a [documentação Painel do desenvolvedor](/developers/pt/guides/additional-content/your-integrations/dashboard) e saiba como criá-la. 
 10. Clique em **Credenciais de produção** no menu à esquerda. Copie a `public_key` e o `access_token`.
 
-![Credenciais de produção](/images/woocomerce/test-prod-credentials-api.png)
+![installation chopro 7](/images/shopify/installation-chopro-7-pt.png)
 
 11. Insira suas credenciais produtivas `access_token` e a `public_key` nos campos correspondentes, **tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
+12. Clique em **Guardar credenciais**.
 
-![Agregar forma de pago](/images/shopify/add-credentials.png)
+![installation chopro 8](/images/shopify/installation-chopro-8-pt.png)
 
 > NOTE
 >
@@ -54,11 +53,9 @@ Para instalar o **Mercado Pago Checkout Pro** em sua loja Shopify, siga os segui
 >
 > Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de Shopify. Lembre-se: ao alterar a senha, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
 
-12. Clique em **Guardar credenciais**.
-
 13. Para finalizar a instalação, clique em **Ativar**.
 
-![Activate](/images/shopify/shopify-activate-mp.png)
+![installation chopro 9](/images/shopify/installation-chopro-9-pt.png)
 
 > Nesta etapa, você pode selecionar as imagens dos métodos de pagamento que deseja exibir em sua loja para fins ilustrativos.
 
