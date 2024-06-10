@@ -35,7 +35,7 @@ To do this, follow the descriptions below:
  * **App Name:** refers to the name of your app in the PAX store. Its maximum length is 60 characters.
  * **Business Category:** refers to the category of the business integrated through the application. You must select this category according to the table below, and you can choose more than one option.
 
-  ![Business Category options](/images/Redelcom/rdc-business-category.png)
+![Business Category options](/images/Redelcom/rdc-business-category.png)
 
  * **Short Description:** is a brief description of the application, not exceeding 120 characters.
  * **Description:** is a more elaborate description of the application, mentioning its processes such as payments or menu. Its maximum length is 5000 characters.

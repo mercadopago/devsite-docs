@@ -24,7 +24,7 @@ A continuación, encontrarás cuáles son las transacciones que deberás llevar 
 Además, ciertos casos particulares pueden requerir de pasos adicionales:
 * Si utilizas las **opciones multiservicios** (carga de saldo, pago de cuentas o de telecomunicaciones), es posible que se te solicite realizar nuevas operaciones.
 * Si utilizas un **boleteador externo**, deberás mostrar cómo lucen las facturas impresas.
-* Si utilizas el **infrarrojo y cámara del equipo**, deberás mostrar la operación en la cual te son necesarios.
+* Si utilizas el **infrarrojo y cámara del equipo**, deberás mostrar la operación en la cual son necesarios.
 
 
 ## 2. Completar formulario
@@ -36,7 +36,7 @@ Para hacerlo, guíate por las descripciones aquí debajo:
  * **App Name:** se refiere al nombre de tu aplicación en la tienda PAX. Su extensión máxima es de 60 caracteres.
  * **Business Category:** se refiere a la categoría del negocio integrado por medio de la aplicación. Deberás seleccionar esta categoría según el cuadro a continuación, y puedes elegir más de una opción. 
 
- ![opciones de Business Category](/images/Redelcom/rdc-business-category.png)
+![opciones de Business Category](/images/Redelcom/rdc-business-category.png)
 
  * **Short Description:** es una descripción breve sobre la aplicación, de no más de 120 caracteres.
  * **Description:** es una descripción más elaborada sobre la aplicación, en la que debes mencionar los procesos de la misma, como pagos o menú. Su extensión máxima es de 5000 caracteres.
