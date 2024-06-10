@@ -1,4 +1,4 @@
-# SFTP Client
+# SFTP client
 
 Although you can choose to use another SFTP provider, in this documentation, we will address the configuration of the FileZilla client, an open-source SFTP provider that allows you to manage file uploads and downloads easily.
 
@@ -16,6 +16,7 @@ After this, the following directories will be displayed:
 - Self-Service-Output
 
 ## Uploading a file 
+
 In the FileZilla panel, you'll find two windows. The one on the left represents your computer, and the one on the right represents the SFTP server. Therefore, uploading files can be done by dragging and dropping the content you want to upload into the server window.
 
 > WARNING

@@ -1,6 +1,6 @@
 # Uploading a file
 
-Using the terminal, you can upload a file via [SFTP Console](/developers/es/docs/links-and-debts/integration-configuration/upload#bookmark_consola_sftp) or [SFTP batch scripting](/developers/es/docs/links-and-debts/integration-configuration/upload#bookmark_sftp_batch_scripting). SFTP Console is suitable for manual use but not for automations. For automations, use SFTP batch scripting, which requires creating an SFTP script, where each line represents an SFTP command.
+Using the terminal, you can upload a file via [SFTP Console](/developers/en/docs/links-and-debts/integration-configuration/upload#bookmark_consola_sftp) or [SFTP batch scripting](/developers/en/docs/links-and-debts/integration-configuration/upload#bookmark_sftp_batch_scripting). SFTP Console is suitable for manual use but not for automations. For automations, use SFTP batch scripting, which requires creating an SFTP script, where each line represents an SFTP command.
 
 ## SFTP console
 
@@ -23,7 +23,7 @@ sftp> bye
 
 1. Log in to SFTP to open the SFTP console, as indicated in line 1 of the code.
 2. Access the 'initiative in' folder, as indicated in line 5 of the code.
-3. List the contents with the 'ls' command, as indicated in line 6 of the code (optional, only for review before uploading a file).
+3. List the contents with the `ls` command, as indicated in line 6 of the code (optional, only for review before uploading a file).
 4. Upload the file using the command `put ${absolutePathFileName}`, as indicated in line 7 of the code, which can be the relative path.
 5. Verify that it has been uploaded, as indicated in line 10 of the code.
 6. Exit the SFTP console, as indicated in line 12.

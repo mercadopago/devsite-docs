@@ -1,8 +1,8 @@
-# CSV Format Specifications and Examples
+# CSV format specifications and examples
 
 This documentation provides important clarifications about the CSV format of the files used, with specific details presented in the following sections.
 
-## Field Format
+## Field format
 
 The format of the fields is detailed as follows: T(Lmin - Lmax), where Lmin is the minimum length and Lmax is the maximum length, and T is the data type detailed below:
 
@@ -34,17 +34,17 @@ Consult the fields that you can configure in the input. In the "Category" column
 | Column/index | Attribute                  | Format  | Detail                                                                                                                                         | Category                              |
 |--------------|----------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | 1            | Reference                  | AN(1-50) | Unique identifier of the debt that the customer will pay, managed by the company. Keep in mind that this identifier will be used for reconciliation. | M                                     |
-| 4            | ID/SSN/Tax ID              | N(011)  | ID, SSN, or Tax ID of the customer.                                                                                                           | C                                    |
-| 2            | Client Code                | AN(020) | Identifier used by the company to identify its clients. Remember that you must respect the format indicated during the onboarding process.         | C                                     |
-| 7            | First Due Date             | N(008)  | Date of the first due date in AAAAMMDD format.                                                                                                 | M                                     |
-| 8            | First Due Amount           | N(,2)   | Amount of the first due date. It is an integer where the last two digits represent the decimals.                                               | M                                     |
-| 9            | Second Due Date            | N(008)  | Date of the second due date, in AAAAMMDD format.                                                                                                | O                                     |
-| 10           | Second Due Amount          | N(,2)   | Amount of the second due date. It is an integer where the last two digits represent the decimals.                                              | O                                     |
-| 11           | Third Due Date             | N(008)  | Date of the third due date, in AAAAMMDD format.                                                                                                 | O                                     |
-| 12           | Third Due Amount           | N(,2)   | Amount of the third due date. It is an integer where the last two digits are decimals.                                                          | O                                     |
-| 3            | Full Name                  | AS(100) | Customer's full name without special characters.                                                                                                | O - Bulk Links <br>M - Wallet Upload |
-| 5            | Customer Phone             | ANS(20) | Customer's phone number.                                                                                                                       | O                                     |
-| 6            | Email Address              | ANS(64) | Customer's email address where they will receive notifications about the existence of a new debt for the company.                              | O                                     |
+| 4            | DNI/CUIL/CUIT              | N(011)  | DNI, CUIL o CUIT of the customer.                                                                                                           | C                                    |
+| 2            | Client code                | AN(020) | Identifier used by the company to identify its clients. Remember that you must respect the format indicated during the onboarding process.         | C                                     |
+| 7            | First due date             | N(008)  | Date of the first due date in AAAAMMDD format.                                                                                                 | M                                     |
+| 8            | First due amount           | N(,2)   | Amount of the first due date. It is an integer where the last two digits represent the decimals.                                               | M                                     |
+| 9            | Second due date            | N(008)  | Date of the second due date, in AAAAMMDD format.                                                                                                | O                                     |
+| 10           | Second due amount          | N(,2)   | Amount of the second due date. It is an integer where the last two digits represent the decimals.                                              | O                                     |
+| 11           | Third due date             | N(008)  | Date of the third due date, in AAAAMMDD format.                                                                                                 | O                                     |
+| 12           | Third due amount           | N(,2)   | Amount of the third due date. It is an integer where the last two digits are decimals.                                                          | O                                     |
+| 3            | Full name                  | AS(100) | Customer's full name without special characters.                                                                                                | O - Bulk Links <br>M - Wallet Upload |
+| 5            | Customer phone             | ANS(20) | Customer's phone number.                                                                                                                       | O                                     |
+| 6            | Email address              | ANS(64) | Customer's email address where they will receive notifications about the existence of a new debt for the company.                              | O                                     |
 | 13           | Reason                     | ANS(030)| Description that the user will see when paying a debt or a link. If not loaded, the default value will be "Others".                             | O                                     |
 | 14           | Comment                    | ANS     | Concept or comment.                                                                                                                             | O                                     |
 | 15           | Tax                        | N       | Tax. It can be 0, 5, or 19.                                                                                                                     | O - Only for cases of bulk links in Colombia. |
@@ -55,21 +55,21 @@ Consult the fields that you can configure in the input. In the "Category" column
 >
 > Second and third due dates, along with their associated amounts, are optional. The system will automatically update the amounts on each specified date, ensuring that the amount to be paid is correct at all times.
 
-## Successful Layout for Payment Links
+## Successful layout for Payment Links
 
 | Column/index | Attribute       | Format | Detail                                                            |
 |--------------|-----------------|--------|--------------------------------------------------------------------|
 | 1            | Reference       | AN(020) | Unique identifier of the debt that the customer will pay, managed by the company. |
 | 2            | Payment Link    | ANS    | URL of the generated Payment Link.                                 |
 
-## Successful Layout for Debts
+## Successful layout for Debts
 
 | Column/index | Attribute   | Format | Detail                                                                  |
 |--------------|-------------|--------|--------------------------------------------------------------------------|
 | 1            | Reference   | AN(020) | Unique identifier of the debt that the customer will pay, managed by the company. |
 | 2            | Result      | ANS    | Fixed value SUCCESS for rows processed successfully.                     |
 
-## Error Layout
+## Error layout
 
 | Column/index | Attribute                         | Format | Detail                                                           |
 |--------------|----------------------------------|--------|-------------------------------------------------------------------|

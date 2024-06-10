@@ -6,7 +6,7 @@ Durante el proceso de integración, debes proporcionar la clave pública al equi
 
 Para generar esta clave, ejecuta el comando en tu terminal:
 
-```
+```terminal
 ssh-keygen -t rsa -b 4096 -C
 ```
 

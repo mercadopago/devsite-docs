@@ -1,4 +1,4 @@
-# File Processing
+# File processing
 
 Mercado Pago offers an efficient solution for debt management and bulk link generation, allowing the use of an SFTP service to process information contained in files.
 
@@ -6,16 +6,14 @@ When processing a new file, validation of the structure and content of the infor
 
 For more information, please read the details of the flow below.
 
-## Functional Flow
+## Functional flow
 
-The functioning of the product is detailed below:
-
-1. The user generates and uploads a file containing the information to be processed, respecting the correct format for the upload file. For more information, consult the [documentation on format specifications](/developers/es/docs/links-and-debts/format-specifications).
+1. The user generates and uploads a file containing the information to be processed, respecting the correct format for the upload file. For more information, consult the [documentation on format specifications](/developers/en/docs/links-and-debts/format-specifications).
 | Domain               | Directory          |
 |----------------------|--------------------|
 | sftp.mercadolibre.io| `Self-Service-Input`|
 
-2. The system processes the file and performs validations of format and content of the information (for more details, see the [Validations](/developers/es/docs/links-and-debts/validations) section). Then, it returns a zip file with the results of these validations. If errors are detected, the results file indicates the row and nature of the error.
+2. The system processes the file and performs validations of format and content of the information (for more details, see the [Validations](/developers/en/docs/links-and-debts/validations) section). Then, it returns a zip file with the results of these validations. If errors are detected, the results file indicates the row and nature of the error.
 | Domain               | Directory          |
 |----------------------|--------------------|
 | sftp.mercadolibre.io| `Self-Service-Output`|

@@ -6,7 +6,7 @@ During the integration process, you need to provide the public key to the team, 
 
 To generate this key, execute the following command in your terminal:
 
-```
+```terminal
 ssh-keygen -t rsa -b 4096 -C
 ```
 

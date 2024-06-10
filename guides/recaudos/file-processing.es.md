@@ -8,14 +8,12 @@ Para más información, lee los detalles del flujo a continuación.
 
 ## Flujo funcional
 
-A continuación, se detalla el funcionamiento del producto:
-
 1. El usuario genera y carga un archivo conteniendo la información a procesar, respetando el formato correcto para el archivo de carga. Para más información, consulta la [documentación sobre las especificaciones de formato](/developers/es/docs/links-and-debts/format-specifications). 
 | Domain               | Directory          |
 |----------------------|--------------------|
 | sftp.mercadolibre.io| `Self-Service-Input`|
 
-2. El sistema procesa el archivo y realiza validaciones de formato y el contenido de la información (para obtener más detalles, consulta la sección de [Validaciones](/developers/es/docs/links-and-debts/validations)). Luego, retorna un archivo zip con los resultados de estas validaciones. Si se detectan errores, el archivo de resultados indica la fila y la naturaleza del error.
+2. El sistema procesa el archivo y realiza validaciones de formato y el contenido de la información (para obtener más detalles, consulta la sección de [Errores en el procesamiento](/developers/es/docs/links-and-debts/validations)). Luego, retorna un archivo zip con los resultados de estas validaciones. Si se detectan errores, el archivo de resultados indica la fila y la naturaleza del error.
 | Domain               | Directory          |
 |----------------------|--------------------|
 | sftp.mercadolibre.io| `Self-Service-Output`|
