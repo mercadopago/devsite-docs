@@ -26,7 +26,6 @@ Além disso, casos específicos podem requerer etapas adicionais:
 * Se você utiliza **opções de multiserviços** (recarga de crédito, pagamento de contas ou serviços de telecomunicações), pode ser solicitado que realize novas operações.
 * Se você utiliza uma **impressora externa**, será necessário mostrar como oscomprovantes são impressos.
 * Se você utiliza **o infravermelho e a câmera do dispositivo**, será necessário mostrar a operação na qual eles são necessários.
-
 ## 2. Preencher o formulário
 
 Após concluir e receber a aprovação do processo de homologação por videochamada, nossa equipe fornecerá um formulário que deverá ser preenchido considerando os dados e particularidades de sua aplicação.
