@@ -2,7 +2,7 @@
 
 O acesso seguro ao servidor SFTP será configurado pelo Mercado Pago utilizando os dados de conexão fornecidos à equipe (Nome do SFTP, Email, Telefone e Faixa de IP) e a chave pública para autenticação, conforme detalhado na seção de [Requisitos prévios](/developers/pt/docs/links-and-debts/prerequisites). Uma vez configurado, será possível se conectar ao SFTP.
 
-## Conectar com SFTP
+## Conectar ao SFTP
 
 Para se conectar ao servidor SFTP do Mercado Pago, utilize a chave privada associada à chave pública que foi fornecida ao Mercado Pago durante a configuração do acesso. Para mais informações, consulte a documentação [Como criar uma chave pública/privada SSH](/developers/pt/docs/links-and-debts/public-and-private-key).
 
@@ -18,12 +18,12 @@ shell> sftp -i ${dirname}/${id_rsa_sftp_ml} ${user_seller_sftp_ml}@sftp.mercadol
 >
 > Caso tenha utilizado a chave padrão do protocolo `ssh ($HOME/id_rsa)`, não é necessário o parâmetro `-i ${dirname}/${id_rsa_sftp_ml}` acima.
 
-Ambas as chaves (pública e privada) devem ser armazenadas no mesmo diretório na máquina utilizada para se conectar ao servidor SFTP do Mercado Pago. The table below describes each of the variables used in the previous command.
+Ambas as chaves (pública e privada) devem ser armazenadas no mesmo diretório na máquina utilizada para se conectar ao servidor SFTP do Mercado Pago. A tabela abaixo descreve cada uma das variáveis utilizadas no comando anterior.
 
 | Elemento                        | Identificação pelo Mercado Pago      | Detalhes                                         |
 |---------------------------------|--------------------------------------|--------------------------------------------------|
 | **Diretório**                   | `${dirname}`                         | Diretório interno do vendedor                    |
 | **Arquivo da chave privada**    | `${id_rsa_sftp_ml}`                  | Chave privada para autenticação no servidor SFTP |
-| **Arquivo da chave pública**    | `${id_rsa_sftp_ml}.pub`              | Chave pública compartilhada com Mercado Pago     |
+| **Arquivo da chave pública**    | `${id_rsa_sftp_ml}.pub`              | Chave pública compartilhada com o Mercado Pago     |
 | **Usuário para conexão**        | `${user_seller_sftp_ml}`             | Usuário fornecido pelo Mercado Pago              |
 | **Domínio dos servidores SFTP** | `sftp.mercadolibre.io`               | Domínio para acessar os servidores SFTP          |

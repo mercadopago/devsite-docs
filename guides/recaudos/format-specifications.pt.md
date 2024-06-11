@@ -42,7 +42,7 @@ Consulte os campos que você pode configurar na entrada. Na coluna "Categoria", 
 | 7           | Valor do segundo vencimento  | N(,2)    | Valor do segundo vencimento. Trata-se de um número inteiro no qual os dois últimos dígitos representam os decimais.                               | O                                     |
 | 8           | Data do terceiro vencimento  | N(008)   | Data do terceiro vencimento, no formato AAAAMMDD.                                                                                                 | O                                     |
 | 9           | Valor do terceiro vencimento | N(,2)    | Valor do terceiro vencimento. É um número inteiro onde os dois últimos dígitos são decimais.                                                      | O                                     |
-| 10            | Nome completo             | AS(100)  | Nome completo do cliente sem caracteres especiais.                                                                                                | O - Links Massivos <br>M - Carga na Wallet |
+| 10            | Nome completo             | AS(100)  | Nome completo do cliente sem caracteres especiais.                                                                                                | O - Links massivos <br>M - Carga na Wallet |
 | 11            | Telefone do cliente          | ANS(20)  | Telefone do cliente.                                                                                                                              | O                                     |
 | 12            | Endereço de e-mail        | ANS(64)  | E-mail do cliente onde ele receberá as notificações sobre a existência de uma nova dívida para a empresa.                                         | O                                     |
 | 13           | Motivo                    | ANS(030) | Descrição que o usuário verá ao pagar uma dívida ou um link. Se não for preenchido, o valor padrão será "Outros".                                 | O                                     |
@@ -84,7 +84,7 @@ reflinks11,33334444,,20240531,33.33,,,,,,,,Parcela Demonstração ao Vivo 1,,
 reflinks22,22228888,,20240531,44.44,20240601,22.22,20240602,122.11,Richie Jenkins,1113101138,test_user_1196837045@testuser.com,Parcela Demonstração ao Vivo 2,,
 ```
 
-A seguir, um exemplo de sucesso para Links Massivos:
+A seguir, um exemplo de sucesso para Links massivos:
 
 ```terminal
 ext1602, https://mpago.la/2W66EvG

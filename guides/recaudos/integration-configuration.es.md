@@ -18,7 +18,7 @@ shell> sftp -i ${dirname}/${id_rsa_sftp_ml} ${user_seller_sftp_ml}@sftp.mercadol
 >
 > En caso de haber utilizado la clave por defecto del protocolo `ssh ($HOME/id_rsa)`, no es necesario el parámetro `-i ${dirname}/${id_rsa_sftp_ml}` anterior.
 
-Ambas claves (pública y privada) deben ser almacenadas en el mismo directorio en la máquina utilizada para conectarse al servidor SFTP de Mercado Pago. La tabla a continuación describe cómo cada elemento es identificado por Mercado Pago:
+Ambas claves (pública y privada) deben ser almacenadas en el mismo directorio en la máquina utilizada para conectarse al servidor SFTP de Mercado Pago. La tabla a continuación describe cada una de las variables utilizadas en el comando anterior:
 
 | Elemento                        | Identificación desde Mercado Pago    | Detalles                                         |
 |---------------------------------|--------------------------------------|--------------------------------------------------|

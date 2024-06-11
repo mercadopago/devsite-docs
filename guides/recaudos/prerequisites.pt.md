@@ -1,6 +1,6 @@
 # Requisitos prévios
 
-Para poder começar a utilizar a ferramenta de Gestão de Dívidas e Links Massivos do Mercado Pago, você deve ser cadastrado pela área comercial. Para isso, serão necessárias as seguintes informações.
+Para poder começar a utilizar a ferramenta de Gestão de Dívidas e Links massivos do Mercado Pago, você deve ser cadastrado pela área comercial. Para isso, serão necessárias as seguintes informações.
 
 > WARNING
 >

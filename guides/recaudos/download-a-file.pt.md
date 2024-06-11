@@ -25,7 +25,7 @@ UY0FVFGW103Q05P:~ demo user$ ls
 report_589_216_20230804.zip result_589_6_20230804.zip
 ```
 
-1. Acesse pasta onde deseja baixar o arquivo utilizando o comando "cd $HOME/${diretoriodownload}", onde “diretoriodownload” corresponde ao nome da pasta. Na primeira linha do código acima, você pode ver um exemplo de como fazer isso.
+1. Acesse a pasta onde deseja baixar o arquivo utilizando o comando `cd $HOME/${diretoriodownload}`, onde “diretoriodownload” corresponde ao nome da pasta. Na primeira linha do código acima, você pode ver um exemplo de como fazer isso.
 2. Faça login no SFTP, o que abrirá o console SFTP, como indicado na linha 3. Neste exemplo, são utilizados o nome e o diretório padrão ao gerar a chave `ssh-rsa`. Caso contrário, o parâmetro `-i` deve ser utilizado.
 3. Navegue até a pasta "selfserviceoutput", conforme indicado na linha 7 do código.
 4. Liste o conteúdo com o comando `ls`, conforme indicado na linha 8 do código (opcional, utilizado apenas para verificar qual arquivo baixar).
@@ -35,7 +35,7 @@ report_589_216_20230804.zip result_589_6_20230804.zip
 
 ## SFTP batch scripting
 
-Assim como para baixar um arquivo via SFTP batch scripting, criamos em "$HOME/demo" um arquivo `download_sftp_script` com o seguinte conteúdo:
+Para baixar um arquivo via SFTP utilizando batch scripting, criamos um arquivo chamado `download_sftp_script` no diretório "$HOME/demo" com o seguinte conteúdo:
 
 ```terminal
 cd selfserviceoutput
