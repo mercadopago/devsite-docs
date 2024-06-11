@@ -11,12 +11,12 @@ Para mais informações, leia os detalhes do fluxo a seguir.
 1. O usuário gera e carrega um arquivo contendo as informações a serem processadas, respeitando o formato correto para o arquivo de carga. Para mais informações, consulte a [documentação sobre as especificações de formato](/developers/pt/docs/links-and-debts/format-specifications).
 | Domínio               | Diretório          |
 |----------------------|--------------------|
-| sftp.mercadolibre.io | `Self-Service-Input`|
+| sftp.mercadolibre.io | `selfserviceinput`|
 
 2. O sistema processa o arquivo e realiza validações de formato e do conteúdo das informações (para obter mais detalhes, consulte a seção sobre [Erros de processamento](/developers/es/docs/links-and-debts/validations)). Em seguida, retorna um arquivo zip com os resultados dessas validações. Se forem detectados erros, o arquivo de resultados indica a linha e a natureza do erro.
 | Domínio               | Diretório          |
 |----------------------|--------------------|
-| sftp.mercadolibre.io | `Self-Service-Output`|
+| sftp.mercadolibre.io | `selfserviceoutput`|
 
 > WARNING
 >
@@ -27,7 +27,7 @@ Para mais informações, leia os detalhes do fluxo a seguir.
 3. Para o fluxo de Links massivos, o sistema processa as informações e retorna os Links de pagamento gerados no arquivo _success_.
 | Domínio               | Diretório          |
 |----------------------|--------------------|
-| sftp.mercadolibre.io | `Self-Service-Output`|
+| sftp.mercadolibre.io | `selfserviceoutput`|
 
 4. Após processar com sucesso o arquivo para a carga de dívidas na carteira do Mercado Pago, são programadas notificações e e-mails para os usuários pagadores.
     - As notificações push são enviadas para aqueles pagadores que tenham uma conta no Mercado Pago e se cadastraram na opção "Agenda" dentro de "Contas e Serviços" da conta.

@@ -1,6 +1,6 @@
 # Prerequisites
 
-To start using Mercado Pago's Debt and Bulk Links Management tool, you must be registered by the commercial area. For this purpose, the following information will be required.
+To start using Mercado Pago's Debt and Massive Links Management tool, you must be registered by the commercial area. For this purpose, the following information will be required.
 
 > WARNING
 >
@@ -25,7 +25,7 @@ Fill in the following data if the seller publishes debts in Mercado Pago's walle
 | Segment                     | Market segment to which the company belongs.                                                                   | telecom, energy, gas, government, financial, water, insurance, catalog, wallet, utilities, health, ecommerce, teaching, other, transport, electricity, bank, penalty, sanitation, subscriptions, municipality |
 | Product Category            | Company's product category.                                                                                      | electricity, gas, generic, home, tv, phone, water, teaching, catalog, government, telecom, transport, sube                     |
 | Payment Methods      | Payment methods that the company wants to enable for its payers.                                                                              | money in account (mandatory), credit card, debit card, offline methods (tickets), consumer credits (Mercado Credito), debin (exclusive for Argentina)                     |
-| Logos                       | Images that will be shown to payers in Mercado Pago's wallet (optional).                        | The logos to be uploaded must be in .jpg or .png format and must weigh up to 5 MB. The logo size must be up to 50x50px and the image must be circular. |
+| Logos                       | Images that will be shown to payers in Mercado Pago's wallet (optional).                        | The logos to be uploaded must be in .jpg or .png format and must weigh up to 5 MB.  |
 
 ## SFTP
 
@@ -33,11 +33,11 @@ Fill in the following data if the seller uses SFTP for uploading and downloading
 
 | Data                        | Description                                                                                   | Possible Values/Examples                                                                                                    |
 |-----------------------------|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Company Legal Name        |                                                                                          |                                                                                                                         |
+| Company Legal Name        | Legal name of the company                                                                                         | Mercado Libre SA                                                                                                                       |
 | Tax ID                      | Company's fiscal identifier.                                                                                         | Example: CUIT in Argentina, CNPJ in Brazil.                                                                                                                        |
 | Third-Party Contact Email    | Seller's email account.                                                               |                                                                                                                         |
 | SFTP - Name               | Responsible for the SFTP user.                                                                |                                                                                                                         |
 | SFTP - Email                | Email of the SFTP user's responsible person.                                                       |                                                                                                                         |
 | SFTP - Phone             | Phone number of the SFTP user's responsible person.                                                    |                                                                                                                         |
 | SFTP - SSH Public Key    | Public key associated with the user who will connect to SFTP. To create the key, access the documentation [How to create an SSH public/private key](/developers/en/docs/links-and-debts/public-and-private-key). | Key generated with the command `ssh-keygen -t rsa -b 4096 -C`.                                                                |
-| SFTP - IP Range             | Public IP range that the seller will use to upload the files.                        | Format 123.123.123.123/32                                                                                                  |
+| SFTP - IP Range             | List of public IP ranges that the seller will use to upload the files.                        | Format 123.123.123.123/32                                                                                                  |

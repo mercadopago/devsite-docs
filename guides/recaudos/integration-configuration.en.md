@@ -3,7 +3,7 @@
 Secure access to the SFTP server will be configured by Mercado Pago using the connection data provided to the team (SFTP Name, Email, Phone, and IP Range) and the public key for authentication, as detailed in the [Prerequisites](/developers/en/docs/links-and-debts/prerequisites) section. Once configured, it will be possible to Connect to the SFTP.
 
 ## Connect with SFTP
-To connect to the Mercado Pago SFTP server, use the private key associated with the public key provided to Mercado Pago during server creation. For more information, see the documentation [How to create an SSH public/private key](/developers/en/docs/links-and-debts/public-and-private-key).
+To connect to the Mercado Pago SFTP server, use the private key associated with the public key provided to Mercado Pago during access configuration. For more information, see the documentation [How to create an SSH public/private key](/developers/en/docs/links-and-debts/public-and-private-key).
 
 You can connect from a terminal or from a script executed from a cron. The command to execute is:
 

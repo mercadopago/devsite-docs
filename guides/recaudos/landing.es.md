@@ -1,7 +1,7 @@
 ---
 content_section_with_media: 
  - title: Links masivos y Deudas (SFTP)
- - message: La solución de Mercado Pago para la Gestión de Deudas permite crear deudas en lotes de forma eficiente utilizando un servicio SFTP proporcionado por la plataforma para procesar la información contenida en los archivos. Las deudas pueden ser pagadas con la Wallet de Mercado Pago, a través de la opción "Cuentas y Servicios". A su vez, la solución para la Generación de Links masivos permite la la creación en lotes de Links de Pago, siguiendo un proceso similar al flujo de deudas, mediante el procesamiento de archivos.
+ - message: La solución de Mercado Pago para la Gestión de Deudas permite crear deudas en lotes de forma eficiente utilizando un servicio SFTP proporcionado por la plataforma para procesar la información contenida en los archivos. Las deudas pueden ser pagadas con la Wallet de Mercado Pago, a través de la opción "Cuentas y Servicios". A su vez, la solución para la Generación de Links masivos permite la creación en lotes de Links de Pago, siguiendo un proceso similar al flujo de deudas, mediante el procesamiento de archivos.
  - media_image: /recaudos/recaudos-01.png
 ---
 
