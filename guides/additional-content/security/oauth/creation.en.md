@@ -27,7 +27,7 @@ Because it is a redirect-based flow, you must allow interaction with the seller'
   
 Once access is allowed, the server generates an access code that reaches the application through a redirect. In this step, the application requests access to the authentication server by sending the obtained code and application data. Once this is done, the server grants the Access Token and the refresh token to the application.
 
-See below how to **configure the PKCE protocol** (an optional security protocol, but one that will be used with OAuth to protect against malicious code attacks during the exchange of authorization codes for Access Tokens) and then **generate the Access Token**.
+See below how to **configure the PKCE protocol** (a non-mandatory security protocol that provides an extra layer of protection, so it is recommended) and then **generate the Access Token**.
 
 ### Configure PKCE
 
