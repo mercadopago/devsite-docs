@@ -43,9 +43,9 @@ Para utilizar la integración de Facilitador de Pago, es necesario actualizar la
 ```
 
 | Campo | Tipo | Descripción | Requerido/Opcional | Ejemplo | 123123 |
-|---|---|---|---|---|
+|---|---|---|---|---|---|
 | `sub_merchant_id` | Texto | Código del subcomercio | Requerido | 123123 |
-| `mmc` | Texto | MMC del subcomercio conforme a la decisión de la Abecs y/o el CNAE primario | Requerido | 5462 |
+| `mcc` | Texto | MMC del subcomercio conforme a la decisión de la Abecs y/o el CNAE primario | Requerido | 5462 |
 | `country` | Texto | País en donde el subcomercio está ubicado | Requerido | BRA |
 | `address_door_number` | Número | Número de la calle en donde el subcomercio está ubicado | Requerido | 1 |
 | `zip` | Texto | CEP del subcomercio | Requerido | 2222222 |
