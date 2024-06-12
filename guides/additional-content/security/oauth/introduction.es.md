@@ -7,6 +7,8 @@ OAuth es un protocolo de autorización que permite que las aplicaciones tengan a
 > Nota
 >
 > El uso del protocolo OAuth difiere del proceso de uso compartido de credenciales. OAuth no aborda cuestiones relacionadas con la autenticación del cliente, ni información relacionada con la misma. Su responsabilidad radica en los métodos de obtención de un token para acceder a un recurso.
+> <br><br>
+> A la hora de utilizar OAuth, es importante tener en cuenta ciertos aspectos para que la integración funcione correctamente. Accede a las [Buenas prácticas de integración de OAuth](/developers/es/docs/security/oauth/best-practices) y consulta una guía de posibles errores y de buenas prácticas a tener en cuenta. 
 
 ## Access Token
 

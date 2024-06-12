@@ -97,11 +97,11 @@
                   },
                   "redirect_uri": {
                     "type": "string",
-                    "example": "APP_USR-4934588586838432-XXXXXXXX-241983636",
+                    "example": "https://www.redirect-url.com?code=CODE&state=RANDOM_ID",
                     "description": {
-                      "en": "URL reported in the Redirect URL field of your application. Required only when grant_type=authorization_code.",
-                      "pt": "URL informada no campo Redirect URL da sua aplicação. Requerido apenas quando grant_type=authorization_code.",
-                      "es": "URL informada en el campo Redirect URL de tu aplicación. Obligatorio solo cuando grant_type=authorization_code."
+                      "en": "URL reported in the 'Redirect URLs' field of your application. Make sure that the 'redirect_uri' is a static URL. Required only when grant_type=authorization_code.",
+                      "pt": "URL informada no campo 'URLs de redireccionamiento' da sua aplicação. Certifique-se de que o 'redirect_uri' seja uma URL estática. Requerido apenas quando grant_type=authorization_code.",
+                      "es": "URL informada en el campo 'URLs de redirecionamento' de tu aplicación. Asegúrate de que el 'redirect_uri' sea una URL estática. Obligatorio solo cuando grant_type=authorization_code."
                     }
                   },
                   "refresh_token": {

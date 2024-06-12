@@ -62,25 +62,27 @@ O Access Token é o código utilizado em diferentes _requests_ públicos para ac
 >
 > É recomendado realizar este procedimento por completo de uma única vez em conjunto com o usuário, visto que o código recebido pela Redirect URL após a autorização tem validade de 10 minutos e o Access Token recebido através do endpoint tem validade de 180 dias (6 meses).
  
-1. Edite sua aplicação para conter sua Redirect URL. Veja [Editar aplicação](/developers/pt/guides/additional-content/your-integrations/application-details).
-2. Envie a URL de autenticação para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:
+1. Edite sua aplicação para conter suas URLs de redirecionamento. Veja [Editar aplicação](/developers/pt/guides/additional-content/your-integrations/application-details).
+2. Envie a **URL de autenticação** para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:
 
-```URL
-https://auth.mercadopago.com/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
-```
+   ```Authentication_URL
+   https://auth.mercadopago.com/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
+   ```
 
-| Campo |Descrição|
-|---|---|
-|Client_id| Substitua o valor "APP_ID" com a **número da sua aplicação**. Veja [Detalhes da aplicação](/developers/pt/guides/additional-content/your-integrations/application-details) para mais informações.|
-|State| Substitua o valor "RANDOM_ID" por um identificador que seja único para cada tentativa e que não inclua informações sensíveis de forma que você consiga identificar de quem é o código recebido. |
-|Redirect_uri| Adicione a URL informada no campo "Redirect URL" da sua aplicação. Veja [Detalhes da aplicação](/developers/pt/guides/additional-content/your-integrations/application-details) para mais informações.|
+   | Campo |Descrição|
+   |---|---|
+   |Client_id| Substitua o valor "APP_ID" com a **número da sua aplicação**. Veja [Detalhes da aplicação](/developers/pt/guides/additional-content/your-integrations/application-details) para mais informações.|
+   |State| Substitua o valor "RANDOM_ID" por um identificador que seja único para cada tentativa e que não inclua informações sensíveis, de forma que você consiga identificar de quem é o código recebido. Isso garantirá que a resposta pertença a uma solicitação iniciada pelo mesmo aplicativo. |
+   |Redirect_uri| Adicione a URL informada no campo "URLs de redirecionamento" da sua aplicação. **Certifique-se de que o redirect_uri seja uma URL estática**. Veja [Detalhes da aplicação](/developers/pt/guides/additional-content/your-integrations/application-details) para mais informações.|
+
+   > Se desejar enviar parâmetros adicionais em `redirect_uri`, utilize o parâmetro `state` para incluir essas informações. Caso contrário, a chamada receberá uma resposta de erro se a URL não corresponder exatamente à configuração do aplicativo.
 
 3. Aguarde o vendedor acessar a URL e permitir o acesso. Ao acessar a URL o vendedor será direcionado para o Mercado Pago e deverá realizar o login na conta dele para realizar a autorização.
-4. Verifique na Redirect URL do seu servidor o código de autorização retornado no parâmetro **code**.
+4. Verifique na **URL de redirecionamento** do seu servidor o código de autorização retornado no parâmetro **code**.
 
-   |Descrição|URL| 
-   |---|---|
-   | Redirect URL | https://www.redirect-url.com?code=CODE&state=RANDOM_ID |
+   ```Redirect_URL
+   https://www.redirect-url.com?code=CODE&state=RANDOM_ID 
+   ```
  
 5. Envie as suas [credenciais](/developers/pt/docs/your-integrations/credentials) (`client_id` e `client_secret`), o **código de autorização** (`code`) retornado e, caso tenha [configurado o PKCE](/developers/pt/docs/security/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-O%20PKCE%20), o `code_verifier` ao endpoint [/oauth/token](/developers/pt/reference/oauth/_oauth_token/post) para receber como resposta o Access Token.
 

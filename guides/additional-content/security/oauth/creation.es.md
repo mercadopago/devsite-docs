@@ -64,24 +64,26 @@ Sigue los pasos a continuación para obtenerlo.
 > Se recomienda realizar este procedimiento de una única vez junto con el usuario, ya que el código recibido por la Redirect URL después de la autorización tiene una validez de 10 minutos y el Access Token recibido a través del endpoint tiene una validez de 180 días (6 meses).
 
 1. Edita tu aplicación para que contenga tu Redirect URL. Consulta [Editar aplicación](/developers/es/guides/additional-content/your-integrations/application-details).
-2. Envía la URL de autenticación con los siguientes campos al vendedor con cuya cuenta deseas vincular la tuya:
+2. Envía la **URL de autenticación** con los siguientes campos al vendedor con cuya cuenta deseas vincular la tuya:
 
-```URL
-https://auth.mercadopago.com/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
-```
+   ```Authentication_URL
+   https://auth.mercadopago.com/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
+   ```
 
-|Campos|Descripción|
-|---|---|
-|Client_id| Reemplaza el valor "APP_ID" con el **número de su aplicación**. Consulta [Detalles de la aplicación](/developers/es/guides/additional-content/your-integrations/application-details) para más información.|
-|State| Reemplaza el valor "RANDOM_ID" con un identificador que sea único para cada intento, que te permitirá identificar de quién es el código recibido. No incluyas información confidencial. |
-|Redirect_uri| Agrega la URL informada en el campo "Redirect URL" de su aplicación. Consulta [Detalles de la aplicación](/developers/es/guides/additional-content/your-integrations/application-details) para más información.|
+   |Campos|Descripción|
+   |---|---|
+   |Client_id| Reemplaza el valor "APP_ID" con el **número de su aplicación**. Consulta [Detalles de la aplicación](/developers/es/guides/additional-content/your-integrations/application-details) para más información.|
+   |State| Reemplaza el valor "RANDOM_ID" con un identificador que sea único para cada intento y que no incluya información sensible, de forma que pueda identificar de quién es el código recibido. Así, podrás garantizar que la respuesta pertenezca a una solicitud iniciada por la misma aplicación. |
+   |Redirect_uri| Agrega la URL informada en el campo "URLs de redireccionamiento" de su aplicación. **Asegúrate de que el redirect_uri sea una URL estática**. Consulta [Detalles de la aplicación](/developers/es/guides/additional-content/your-integrations/application-details) para más información.|
+
+   > Si deseas enviar parámetros adicionales en `redirect_uri`, utiliza el parámetro `state` para incluir esa información. De lo contrario, la llamada recibirá una respuesta de error si la URL no coincide exactamente con la configuración de la aplicación.
 
 3. Espera a que el vendedor acceda a la URL y permita el acceso. Al ingresar a la URL, el vendedor será dirigido a Mercado Pago y deberá iniciar sesión en su cuenta para realizar la autorización.
-4. Verifica la Redirect URL de tu servidor para ver el código de autorización devuelto en el parámetro de **code**.
+4. Verifica la **URL de redireccionamiento** de tu servidor para ver el código de autorización devuelto en el parámetro de **code**.
 
-  |Descripción|URL|
-  |---|---|
-  | Redirect URL | https://www.redirect-url.com?code=CODE&state=RANDOM_ID |
+   ```Redirect_URL
+   https://www.redirect-url.com?code=CODE&state=RANDOM_ID 
+   ```
   
 5. Envía tus [credenciales](/developers/es/docs/your-integrations/credentials) (`client_id` y `client_secret`), el **código de autorización** que fue devuelto en la propiedad `code` y, si has [configurado el PKCE](/developers/pt/docs/security/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-O%20PKCE%20), el valor `code_verifier` al endpoint [/oauth/token](/developers/es/reference/oauth/_oauth_token/post) para recibir el Access Token como respuesta.
 

@@ -7,6 +7,8 @@ OAuth is an authorization protocol that allows applications to have limited acce
 > Note
 >
 > The use of the OAuth protocol differs from the shared use of credentials process. OAuth does not address questions related to client authentication, nor information related to that, its responsibility lies in the methods of obtaining a token to access a resource.
+> <br><br>
+> When using OAuth, it is important to take certain aspects into account so that the integration works correctly. Access the [Best practices for OAuth integration](/developers/en/docs/security/oauth/best-practices) and check a guide to possible errors and good practices to keep in mind.
 
 ## Access Token
 
