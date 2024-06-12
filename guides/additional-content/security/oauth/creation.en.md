@@ -71,9 +71,9 @@ Access Token is the code used in different requests of public origin to access a
 
    |Field|Description|
    |---|---|
-   |Client_id| Replace the "APP_ID" value with your **application number**. Check [Application ID](/developers/en/guides/additional-content/your-integrations/application-details) for more information.|
+   |Client_id| Replace the "APP_ID" value with your **application number**. Check [Application ID](/developers/en/docs/your-integrations/application-details) for more information.|
    |State| Replace the "RANDOM_ID" value with an identifier that is unique for each attempt and does not include sensitive information so that you can identify who the received code is from. This way, you can ensure that the response belongs to a request initiated by the same application.|
-   |Redirect_uri| Add the reported URL in the "Redirect URLs" field of your application. **Make sure that the redirect_uri is a static URL** Check [Application ID](/developers/en/guides/additional-content/your-integrations/application-details) for more information.|
+   |Redirect_uri| Add the reported URL in the "Redirect URLs" field of your application. **Make sure that the redirect_uri is a static URL** Check [Application ID](/developers/en/docs/your-integrations/application-details) for more information.|
 
    > If you want to send additional parameters in the `redirect_uri`, use the `state` parameter to include that information. Otherwise, the call will receive an error response if the URL does not exactly match the application's configuration.
 

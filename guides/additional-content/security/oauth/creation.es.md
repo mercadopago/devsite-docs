@@ -72,9 +72,9 @@ Sigue los pasos a continuación para obtenerlo.
 
    |Campos|Descripción|
    |---|---|
-   |Client_id| Reemplaza el valor "APP_ID" con el **número de su aplicación**. Consulta [Detalles de la aplicación](/developers/es/guides/additional-content/your-integrations/application-details) para más información.|
+   |Client_id| Reemplaza el valor "APP_ID" con el **número de su aplicación**. Consulta [Detalles de la aplicación](/developers/es/docs/your-integrations/application-details) para más información.|
    |State| Reemplaza el valor "RANDOM_ID" con un identificador que sea único para cada intento y que no incluya información sensible, de forma que pueda identificar de quién es el código recibido. Así, podrás garantizar que la respuesta pertenezca a una solicitud iniciada por la misma aplicación. |
-   |Redirect_uri| Agrega la URL informada en el campo "URLs de redireccionamiento" de su aplicación. **Asegúrate de que el redirect_uri sea una URL estática**. Consulta [Detalles de la aplicación](/developers/es/guides/additional-content/your-integrations/application-details) para más información.|
+   |Redirect_uri| Agrega la URL informada en el campo "URLs de redireccionamiento" de su aplicación. **Asegúrate de que el redirect_uri sea una URL estática**. Consulta [Detalles de la aplicación](/developers/es/docs/your-integrations/application-details) para más información.|
 
    > Si deseas enviar parámetros adicionales en `redirect_uri`, utiliza el parámetro `state` para incluir esa información. De lo contrario, la llamada recibirá una respuesta de error si la URL no coincide exactamente con la configuración de la aplicación.
 
