@@ -4,8 +4,8 @@ Learn how to use the flows, also known as _grant types_, to obtain an Access Tok
 
 The access flows available for generating the Access Token are:
 
-- [Authorization code](/developers/en/docs/security/oauth/creation#bookmark_authorization_code)
-- [Client credentials](/developers/en/docs/security/oauth/creation#bookmark_client_credentials)
+- [Authorization code](/developers/en/docs/security/oauth/creation#bookmark_authorization_code): flow that should be used when credentials are to be used to access a resource on behalf of others.
+- [Client credentials](/developers/en/docs/security/oauth/creation#bookmark_client_credentials): flow that should be used if credentials are to be used to access a resource on one's own behalf.
 
 > NOTE
 >
@@ -60,7 +60,7 @@ Access Token is the code used in different requests of public origin to access a
 >
 > Attention
 >
-> It is recommended to carry out this procedure all at once together with the user, since the code received by the Redirect URL after authorization is valid for 10 minutes and the Access Token received through the endpoint is valid for 180 days (6 months).
+> It is recommended to carry out this procedure all at once together with the user, since the code received by the "Redirect URL" after authorization is valid for 10 minutes and the Access Token received through the endpoint is valid for 180 days (6 months).
 
 1. Edit your application so that it contains your Redirect URL. See [Edit Application](/developers/en/guides/additional-content/your-integrations/application-details).
 2. Send the **authentication URL** to the seller whose account you want to link to yours with the following fields:
@@ -86,6 +86,53 @@ Access Token is the code used in different requests of public origin to access a
  
 5. Send your [credentials](/developers/en/docs/your-integrations/credentials) (`client_id` and `client_secret`), the **authorization code** (`code`) returned and, if you have [configured the PKCE](/developers/en/docs/security/oauth/creation#:~:text=Access%20Token.-,Configure%20PKCE,-The%20PKCE%20), the `code_verifier` to the [/oauth/token](/developers/en/reference/oauth/_oauth_token/post) endpoint to receive the Access Token in response.
 
+[[[
+```php
+<?php
+  $client = new OauthClient();
+   $request = new OAuthCreateRequest();
+     $request->client_secret = "CLIENT_SECRET";
+     $request->client_id = "CLIENT_ID";
+     $request->code = "CODE";
+     $request->redirect_uri = "REDIRECT_URI";
+
+  $client->create($request);
+?>
+```
+```java
+
+OauthClient client = new OauthClient();
+
+String authorizationCode = "TG-XXXXXXXX-241983636";
+client.createCredential(authorizationCode, null);
+```
+```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } }); 
+
+const oauth = new OAuth(client);
+
+oauth.create({
+	'client_secret': 'your-client-secret',
+	'client_id': 'your-client-id',
+	'code': 'return-of-getAuthorizationURL-function',
+	'redirect_uri': 'redirect-uri'
+}).then((result) => console.log(result))
+	.catch((error) => console.log(error));
+```
+curl -X POST \
+    'https://api.mercadopago.com/oauth/token'\
+    -H 'Content-Type: application/json' \
+    -d '{
+  "client_id": "client_id",
+  "client_secret": "client_secret",
+  "code": "TG-XXXXXXXX-241983636",
+  "grant_type": "authorization_code",
+  "redirect_uri": "APP_USR-4934588586838432-XXXXXXXX-241983636",
+  "refresh_token": "TG-XXXXXXXX-241983636",
+  "test_token": "false"
+}'
+]]]
+
 > To generate **sandbox** credentials for testing, send the `test_token` parameter with the value `true`.
 
 ## Client credentials
@@ -99,4 +146,44 @@ Access Token is the code used in different requests of public origin to access a
 Follow the steps below to obtain it.
 
 1. Send your [credentials](/developers/en/docs/your-integrations/credentials) (`client_id` and `client_secret`) to the [/oauth/token](/developers/en/reference/oauth/_oauth_token/post) endpoint with the `client_credentials` code in the `grant_type` parameter to receive a new response with a new `access_token`.
-2. Update the application with the Access Token received in the response.
+2. Update the application with the Access Token received in the response. **The received token is valid for 6 hours.**
+
+[[[
+```php
+<?php
+  $client = new OauthClient();
+   $request = new OAuthCreateRequest();
+     $request->client_secret = "CLIENT_SECRET";
+     $request->client_id = "CLIENT_ID";
+
+  $client->create($request);
+?>
+```
+```java
+
+OauthClient client = new OauthClient();
+
+String clientecredentials = "TG-XXXXXXXX-241983636";
+client.createCredential(clientecredentials, null);
+```
+```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } }); 
+
+const oauth = new OAuth(client);
+
+oauth.create({
+	'client_secret': 'your-client-secret',
+	'client_id': 'your-client-id',
+}).then((result) => console.log(result))
+	.catch((error) => console.log(error));
+```
+curl -X POST \
+    'https://api.mercadopago.com/oauth/token'\
+    -H 'Content-Type: application/json' \
+    -d '{
+  "client_id": "client_id",
+  "client_secret": "client_secret",
+  "code": "TG-XXXXXXXX-241983636",
+  "grant_type": "client_credentials",
+}'
+]]]

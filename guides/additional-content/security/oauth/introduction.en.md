@@ -37,6 +37,6 @@ The flows, also called **grant types**, refer to the way in which an application
 
 > NOTE
 >
-> PKCE (_Proof Key for Code Exchange_)
+> PKCE (Proof Key for Code Exchange)
 >
 > If you are going to use the **Authorization code** flow to obtain the Access Token, you can configure the **PKCE** (Proof Key for Code Exchange), a security protocol used with OAuth to protect against malicious code attacks during the exchange of authorization codes for an Access Token. It adds an extra layer of security by generating a verifier that is transformed into a challenge to ensure that even if the authorization code is intercepted, it is not useful without the original verifier. Check out [Configure PKCE](/developers/en/docs/security/oauth/creation#:~:text=Access%20Token.-,Configure%20PKCE,-The%20PKCE%20) for more information.

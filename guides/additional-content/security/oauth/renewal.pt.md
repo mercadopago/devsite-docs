@@ -20,3 +20,45 @@ Siga os passos abaixo para renovar o **Access Token**.
 > Importante
 >
 > Lembre-se que cada vez que você renovar o `access_token`, o `refresh_token` também vai ser renovado, por tanto, você deverá armazená-lo novamente.
+
+[[[
+```php
+<?php
+  $client = new OauthClient();
+  $request = new OAuthRefreshRequest();
+    $request->client_secret = "CLIENT_SECRET";
+    $request->client_id = "CLIENT_ID";
+    $request->refresh_token = "REFRESH_TOKEN";
+
+  $client->refresh($request);
+?>
+```
+```java
+
+OauthClient client = new OauthClient();
+
+String refreshtoken = "TG-XXXXXXXX-241983636";
+client.createCredential(refreshtoken, null);
+```
+```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } });
+
+const oauth = new OAuth(client);
+
+oauth.refresh({
+	'client_secret': 'your-client-secret',
+	'client_id': 'your-client-id',
+	'refresh_token': 'refresh-token'
+}).then((result) => console.log(result))
+	.catch((error) => console.log(error));
+```
+curl -X POST \
+'https://api.mercadopago.com/oauth/token'\
+-H 'Content-Type: application/json' \
+-d '{
+ "client_id": "client_id",
+ "client_secret": "client_secret",
+ "grant_type": "refresh-token",
+ "refresh_token": "TG-XXXXXXXX-241983636",
+}'
+]]]

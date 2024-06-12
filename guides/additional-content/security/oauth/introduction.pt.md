@@ -37,6 +37,6 @@ Os fluxos, também conhecidos como _grant types_, são diferentes maneiras de um
 
 > NOTE
 >
-> PKCE (_Proof Key for Code Exchange_)
+> PKCE (Proof Key for Code Exchange)
 >
 > Caso vá utilizar o fluxo **Authorization code** para obter o Acess Token, você poderá configurar o **PKCE** (_Proof Key for Code Exchange_), um protocolo de segurança usado com OAuth para proteger contra ataques de código malicioso durante a troca de códigos de autorização por Access Token. Ele adiciona uma camada extra de segurança gerando um _verifier_ que é transformado em um _challenge_ para garantir que mesmo se o código de autorização for interceptado, ele não seja útil sem o _verifier_ original.Veja [Configurar PKCE](/developers/pt/docs/security/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-O%20PKCE%20) para mais informações.

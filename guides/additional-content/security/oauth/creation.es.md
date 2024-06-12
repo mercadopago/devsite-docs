@@ -4,8 +4,8 @@ Aprende a utilizar los flujos, también conocidos como _grant types_, para obten
 
 Los flujos de acceso disponibles para la generación del Access Token son:
 
-- [Authorization code](/developers/es/docs/security/oauth/creation#bookmark_authorization_code)
-- [Client credentials](/developers/es/docs/security/oauth/creation#bookmark_client_credentials)
+- [Authorization code](/developers/es/docs/security/oauth/creation#bookmark_authorization_code): flujo que debe ser usado si se van a usar credenciales para acceder a un recurso a nombre de un tercero.
+- [Client credentials](/developers/es/docs/security/oauth/creation#bookmark_client_credentials): flujo que debe ser usado si se van a usar credenciales para acceder a un recurso en nombre propio.
 
 > NOTE
 >
@@ -42,7 +42,7 @@ Siga los pasos a continuación para habilitar y configurar el uso del flujo de c
 https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`redirect_uri=$YOUR_URL&code_challenge=$CODE_CHALLENGE&code_challenge_method=$CODE_METHOD
 ```
 
-- **Redirect_uri**: URL proporcionada en el campo "Redirect URL" de [tu aplicación](/developers/es/guides/additional-content/your-integrations/application-details).
+- **Redirect_uri**: URL proporcionada en el campo "URLs de redireccionamiento" de [tu aplicación](/developers/es/guides/additional-content/your-integrations/application-details).
 - **Code_verifier**: código que debe generarse, respetar los requisitos para su funcionamiento; es decir, ser una secuencia aleatoria de caracteres con una longitud de entre 43 y 128 caracteres, que incluya letras mayúsculas, minúsculas, números y algunos caracteres especiales. Por ejemplo: **47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU**.
 - **Code_challenge**: a continuación, es necesario crear un `code_challenge`, a partir del `code_verifier`, utilizando una de las siguientes transformaciones:
  - Si es posible utilizar **S256**, será necesario seleccionar esta opción transformando el `code_verifier` en un `code_challenge` mediante una codificación `BASE64URL` después de aplicar la función "SHA256".
@@ -61,9 +61,9 @@ Sigue los pasos a continuación para obtenerlo.
 >
 > Atención
 >
-> Se recomienda realizar este procedimiento de una única vez junto con el usuario, ya que el código recibido por la Redirect URL después de la autorización tiene una validez de 10 minutos y el Access Token recibido a través del endpoint tiene una validez de 180 días (6 meses).
+> Se recomienda realizar este procedimiento de una única vez junto con el usuario, ya que el código recibido por la "URL de redireccionamiento" después de la autorización tiene una validez de 10 minutos y el Access Token recibido a través del endpoint tiene una validez de 180 días (6 meses).
 
-1. Edita tu aplicación para que contenga tu Redirect URL. Consulta [Editar aplicación](/developers/es/guides/additional-content/your-integrations/application-details).
+1. Edita tu aplicación para que contenga tu URLs de redireccionamiento. Consulta [Editar aplicación](/developers/es/guides/additional-content/your-integrations/application-details).
 2. Envía la **URL de autenticación** con los siguientes campos al vendedor con cuya cuenta deseas vincular la tuya:
 
    ```Authentication_URL
@@ -87,6 +87,53 @@ Sigue los pasos a continuación para obtenerlo.
   
 5. Envía tus [credenciales](/developers/es/docs/your-integrations/credentials) (`client_id` y `client_secret`), el **código de autorización** que fue devuelto en la propiedad `code` y, si has [configurado el PKCE](/developers/pt/docs/security/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-O%20PKCE%20), el valor `code_verifier` al endpoint [/oauth/token](/developers/es/reference/oauth/_oauth_token/post) para recibir el Access Token como respuesta.
 
+[[[
+```php
+<?php
+  $client = new OauthClient();
+   $request = new OAuthCreateRequest();
+     $request->client_secret = "CLIENT_SECRET";
+     $request->client_id = "CLIENT_ID";
+     $request->code = "CODE";
+     $request->redirect_uri = "REDIRECT_URI";
+
+  $client->create($request);
+?>
+```
+```java
+
+OauthClient client = new OauthClient();
+
+String authorizationCode = "TG-XXXXXXXX-241983636";
+client.createCredential(authorizationCode, null);
+```
+```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } }); 
+
+const oauth = new OAuth(client);
+
+oauth.create({
+	'client_secret': 'your-client-secret',
+	'client_id': 'your-client-id',
+	'code': 'return-of-getAuthorizationURL-function',
+	'redirect_uri': 'redirect-uri'
+}).then((result) => console.log(result))
+	.catch((error) => console.log(error));
+```
+curl -X POST \
+    'https://api.mercadopago.com/oauth/token'\
+    -H 'Content-Type: application/json' \
+    -d '{
+  "client_id": "client_id",
+  "client_secret": "client_secret",
+  "code": "TG-XXXXXXXX-241983636",
+  "grant_type": "authorization_code",
+  "redirect_uri": "APP_USR-4934588586838432-XXXXXXXX-241983636",
+  "refresh_token": "TG-XXXXXXXX-241983636",
+  "test_token": "false"
+}'
+]]]
+
 > Para generar credenciales de _sandbox_ para pruebas, envía el parámetro `test_token` con el valor `true`.
 
 ## Client credentials
@@ -100,4 +147,44 @@ Access Token es el código utilizado en diferentes solicitudes de origen públic
 Sigue los pasos a continuación para obtenerlo.
 
 1. Envía tus [credenciales](/developers/es/docs/your-integrations/credentials) (`client_id` y `client_secret`) al endpoint [/oauth/token](/developers/es/reference/oauth/_oauth_token/post), incluyendo el código `client_credentials` en el parámetro `grant_type` para recibir una nueva respuesta con un nuevo `access_token`.
-2. Actualiza la aplicación con el Access Token recibido en la respuesta.
+2. Actualiza la aplicación con el Access Token recibido en la respuesta. **El _token_ recibido tiene una validez de 6 horas.**
+
+[[[
+```php
+<?php
+  $client = new OauthClient();
+   $request = new OAuthCreateRequest();
+     $request->client_secret = "CLIENT_SECRET";
+     $request->client_id = "CLIENT_ID";
+
+  $client->create($request);
+?>
+```
+```java
+
+OauthClient client = new OauthClient();
+
+String clientecredentials = "TG-XXXXXXXX-241983636";
+client.createCredential(clientecredentials, null);
+```
+```node
+const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } }); 
+
+const oauth = new OAuth(client);
+
+oauth.create({
+	'client_secret': 'your-client-secret',
+	'client_id': 'your-client-id',
+}).then((result) => console.log(result))
+	.catch((error) => console.log(error));
+```
+curl -X POST \
+    'https://api.mercadopago.com/oauth/token'\
+    -H 'Content-Type: application/json' \
+    -d '{
+  "client_id": "client_id",
+  "client_secret": "client_secret",
+  "code": "TG-XXXXXXXX-241983636",
+  "grant_type": "client_credentials",
+}'
+]]]
