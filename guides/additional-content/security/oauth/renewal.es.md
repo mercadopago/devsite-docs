@@ -8,7 +8,7 @@ Además, este flujo permite continuar utilizando un Access Token válido con las
 >
 > Importante
 >
-> Solo es posible utilizar este flujo si la aplicación contiene el scope `offline_access` y el vendedor ha autorizado previamente esta acción.
+> Solo es posible utilizar este flujo si la aplicación retornar el parámetro `scope` indicando el valor `offline_access` y el vendedor ha autorizado previamente esta acción a partir del flujo de [Authorization code](/developers/es/docs/security/oauth/creation#bookmark_authorization_code).
 
 Sigue los pasos a continuación para renovar el **Access Token**.
 

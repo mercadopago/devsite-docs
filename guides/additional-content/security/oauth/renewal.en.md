@@ -8,7 +8,7 @@ Additionally, the flow allows you to continue using a valid Access Token with th
 >
 > Important
 >
-> It is only possible to use this flow if the application contains the `offline_access` scope and the seller has previously authorized this action.
+> This flow can only be used if the application return the `scope` parameter indicating the value `offline_access` and the vendor has previously authorized this action through the Authorization code flow.
  
 Follow the steps below to renew the **Access Token**.
  
