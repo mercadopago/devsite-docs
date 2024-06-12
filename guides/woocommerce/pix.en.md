@@ -14,7 +14,7 @@ With Checkout API, offer Pix payments directly in your store. Pix is an instant 
 >
 > Important
 >
-> To enable Pix payments, it is necessary to ensure that Pix keys have been created. If you haven't created them yet, we recommend watching the [tutorial video](https://www.youtube.com/watch?v=60tApKYVnkA) for a step-by-step guide.
+> To enable Pix payments, it is necessary to ensure that Pix Keys have been created. If you haven't created them yet, we recommend watching the [tutorial video](https://www.youtube.com/watch?v=60tApKYVnkA) for a step-by-step guide.
 
 1. To activate Checkout, go to the settings in the WooCommerce panel (**WooCommerce > Mercado Pago**).
 2. Click on **3. Activate and configure payment methods**.

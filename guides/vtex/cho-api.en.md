@@ -21,7 +21,7 @@ See below the available payment methods for the store when integrating Checkout 
 |---|---| 
 | Cards | Allows integration with credit and debit cards. | 
 | Installments via Pix up to 12x | With this credit line managed by Mercado Pago, the customer has the option to finance their purchase without the need for a card, while the seller receives the full transaction amount in their account. | 
-| Pix | 24/7 bank transfer available. The option to pay with Pix will only be displayed if there is a Pix key registered in Mercado Pago. If you haven't created one yet, click [here](https://www.youtube.com/watch?v=60tApKYVnkA) and see the step by step. | 
+| Pix | 24/7 bank transfer available. The option to pay with Pix will only be displayed if there is a Pix Key registered in Mercado Pago. If you haven't created one yet, click [here](https://www.youtube.com/watch?v=60tApKYVnkA) and see the step by step. | 
 | Offline methods | You can offer offline payment methods, such as boleto bancário. | 
 
 ------------ 

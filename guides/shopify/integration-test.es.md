@@ -31,6 +31,12 @@ A continuación, te indicamos cómo probar la integración:
 
 ![Iniciar sesión](/images/shopify/test-login-esp.gif)
 
+> WARNING
+>
+> Importante
+>
+> Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Tus integraciones, te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
+
 ----[mlb]----
 Ahora, sigue los pasos según el checkout que hayas elegido para procesar los pagos:
 ## Checkout Pro
