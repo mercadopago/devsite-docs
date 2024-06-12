@@ -11,7 +11,7 @@ Según la orientación de las marcas de tarjetas y la Normativa nº 28 de Abecs 
 1. **MCC determinado por el Comité de Bandas de Abecs;**
 2. **MCC considerando el CNAE Primario listado en la Tabla "de/para" (disponible en el Registro Unificado de MCC de Abecs).**
 
-Abecs está alojando una base de datos que contiene información sobre los CNPJs que, según la regla anterior, están vinculados correctamente al MCC, ya sea por deliberación o vinculados al CNAE Primario.
+ABecs está alojando una base de datos que contiene información sobre los CNPJs que, según la regla anterior, están vinculados correctamente al MCC, ya sea por deliberación o vinculados al CNAE Primario.
 
 Todos los participantes del Sistema Brasileño de Pagos pueden acceder a esta información a través de las siguientes formas.
 
