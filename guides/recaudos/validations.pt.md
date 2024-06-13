@@ -21,4 +21,3 @@ A seguir, são detalhados os controles realizados a partir do Self Service para 
 | Todos   | E063            | Formato de data de vencimento terciária inválido      | A terceira data de vencimento não está no formato AAAAMMDD.                              |
 | Todos   | E064            | Valor de data de vencimento terciária inválido        | A terceira data de vencimento é anterior ou igual à segunda data de vencimento.          |
 | Todos   | E065            | Valor de montante de vencimento terciária inválido        | A terceira data de vencimento está presente, mas não seu montante ou tem um formato inválido. |
-| Todos   | E066            | Razão inválida                                          | Se o campo de motivo estiver presente e não corresponder à lista de motivos para o site do vendedor. |

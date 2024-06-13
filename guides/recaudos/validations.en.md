@@ -21,4 +21,3 @@ Below are the controls carried out by Self Service to ensure the correct functio
 | All    | E063       | Invalid tertiary due date format                    | Third due date does not comply with the format AAAAMMDD.                                   |
 | All    | E064       | Invalid tertiary due date value                     | Third due date is before or equal to the second due date.                                  |
 | All    | E065       | Invalid tertiary due amount value                   | The third due date is present but not its amount or has an invalid format.                 |
-| All    | E066       | Invalid reason                                      | If the reason field is present and does not correspond to the list of reasons for the seller's site. |
