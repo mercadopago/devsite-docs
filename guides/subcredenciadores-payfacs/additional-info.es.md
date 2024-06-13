@@ -1,6 +1,6 @@
 # Información adicional para la integración
 
-A continuación, encontrará algunas observaciones y buenas prácticas para la integración de un Facilitador de Pagos.
+A continuación, encontrarás algunas observaciones y buenas prácticas para la integración de un Facilitador de Pagos.
 
 ## Asignación del Merchant Code Category (MCC)
 
