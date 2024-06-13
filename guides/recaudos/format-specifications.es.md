@@ -1,6 +1,6 @@
 # Instrucciones para configuración del archivo
 
-Para crear Deudas en gran cantidad, subí un archivo con datos de los clientes que se van a cobrar, siguiendo las especificaciones de este documento.
+Para crear Deudas en gran cantidad o Links masivos, subí un archivo con datos de los clientes que se van a cobrar, siguiendo las especificaciones de este documento.
 
 > WARNING
 >
@@ -35,7 +35,7 @@ Para crear Deudas en gran cantidad, subí un archivo con datos de los clientes q
 
 ## Archivos de ejemplo para Links de pago
 
-### Archivo de carga
+### Archivos de carga
 
 A continuación, tienes un ejemplo de archivo cargado con todos los datos ingresados de manera correcta:
 
@@ -83,9 +83,9 @@ A continuación, tienes un ejemplo de archivo con informe de errores devuelto po
 4,ext2024030615504,E008:Due last date must be after today
 ```
 
-## Archivo de ejemplo para Deudas
+## Archivos de ejemplo para Deudas
 
-### Archivo de carga
+### Archivos de carga
 
 A continuación, tienes un ejemplo de archivo cargado con todos los datos ingresados de manera correcta:
 
@@ -119,7 +119,7 @@ Para identificar los ejemplos de acuerdo con la obligatoriedad y el orden en el 
 | 14     | Opcional                | Ref2024                 |
 | 15     | Opcional                | 5                       |
 
-### Archivo de resultado
+### Archivos de resultado
 
 A continuación, tienes un ejemplo de archivo de Deudas devuelto por Mercado Pago en caso de éxito, donde 'ext2024030615501' representa la referencia, y 'Success' la deuda creada con éxito.
 

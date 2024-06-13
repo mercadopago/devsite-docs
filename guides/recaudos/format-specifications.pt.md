@@ -35,7 +35,7 @@ Para criar Dívidas em grande quantidade ou Links massivos, faça o upload de um
 
 ## Exemplos de arquivos para Links de Pagamento
 
-### Arquivo de carregamento
+### Arquivos de carregamento
 
 A seguir, um exemplo de arquivo carregado com todos os dados inseridos corretamente:
 
@@ -43,7 +43,7 @@ A seguir, um exemplo de arquivo carregado com todos os dados inseridos corretame
 ext2024030614313,521998672,1002,20250312,549.57,20250315,778.87,20250318,801.87,Miss Kristopher Kautzer,1138225523,felica.walsh@example.com,Cuota,Ref2024,5
 ```
 
-A seguir, está um exemplo de arquivo carregado apenas com os dados obrigatórios inseridos corretamente:
+A seguir, um exemplo de arquivo carregado apenas com os dados obrigatórios inseridos corretamente:
 
 ```csv
 ext2024030614313,,,,,20250312,549.57,,,,,,,,,,,,,,,,,,,
@@ -71,29 +71,29 @@ Para identificar os exemplos de acordo com a obrigatoriedade e a ordem no arquiv
 
 ### Arquivos de resultado
 
-A seguir, está um exemplo de arquivo com Links de Pagamento devolvidos pelo Mercado Pago em caso de sucesso, sendo 'ext2024030615501' a referência e 'https://mpago.la/2WTWRHT' o Link de Pagamento.
+A seguir, um exemplo de arquivo com Links de Pagamento devolvidos pelo Mercado Pago em caso de sucesso, sendo 'ext2024030615501' a referência e 'https://mpago.la/2WTWRHT' o Link de Pagamento.
 
 ```csv
 "ext2024030615501", "https://mpago.la/2WTWRHT"
 ```
 
-A seguir, está um exemplo de arquivo com relatório de erros devolvido pelo Mercado Pago em casos de processamento falho ou parcial. Neste caso, '4' representa a linha com o erro e 'E008 last date must be after today' é a descrição do erro encontrado na linha.
+A seguir, um exemplo de arquivo com relatório de erros devolvido pelo Mercado Pago em casos de processamento falho ou parcial. Neste caso, '4' representa a linha com o erro e 'E008 last date must be after today' é a descrição do erro encontrado na linha.
 
 ```csv
 4,ext2024030615504,E008:Due last date must be after today
 ```
 
-## Exemplos de arquivos para Dívidas
+## Exemplos de arquivo para Dívidas
 
-### Arquivo de carregamento
+### Arquivos de carregamento
 
-A seguir, está um exemplo de arquivo carregado com todos os dados inseridos corretamente:
+A seguir, um exemplo de arquivo carregado com todos os dados inseridos corretamente:
 
 ```csv
 ext2024030614313,521998672,1002,20250312,549.57,20250315,778.87,20250318,801.87,Miss Kristopher Kautzer,1138225523,felica.walsh@example.com,Cuota,Ref2024,5
 ```
 
-A seguir, está um exemplo de arquivo carregado apenas com os dados obrigatórios inseridos corretamente:
+A seguir, um exemplo de arquivo carregado apenas com os dados obrigatórios inseridos corretamente:
 
 ```csv
 ext2024030614313,521998672,,20250312,549.57,,,,,,,,,,
@@ -119,15 +119,15 @@ Para identificar os exemplos de acordo com a obrigatoriedade e a ordem no arquiv
 | 14               | Opcional                | Ref2024                 |
 | 15               | Opcional                | 5                       |
 
-### Arquivo de resultado
+### Arquivos de resultado
 
-A seguir, está um exemplo de arquivo de Dívidas devolvido pelo Mercado Pago em caso de sucesso, onde 'ext2024030615501' representa a referência e 'Success' indica que a dívida foi criada com sucesso.
+A seguir, um exemplo de arquivo de Dívidas devolvido pelo Mercado Pago em caso de sucesso, onde 'ext2024030615501' representa a referência e 'Success' indica que a dívida foi criada com sucesso.
 
 ```csv
 "ext2024030615501", "Success"
 ```
 
-A seguir, está um exemplo de arquivo com relatório de erros devolvido pelo Mercado Pago em casos de processamento falho ou parcial, onde '4' representa a linha com o erro, 'ext2024030615501' é a referência e 'E008 last date must be after today' é a descrição do erro encontrado na linha.
+A seguir, um exemplo de arquivo com relatório de erros devolvido pelo Mercado Pago em casos de processamento falho ou parcial, onde '4' representa a linha com o erro, 'ext2024030615501' é a referência e 'E008 last date must be after today' é a descrição do erro encontrado na linha.
 
 ```csv
 4,ext2024030615504,E008:Due last date must be after today
