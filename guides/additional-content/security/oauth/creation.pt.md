@@ -185,8 +185,6 @@ curl -X POST \
     -d '{
   "client_id": "client_id",
   "client_secret": "client_secret",
-  "code": "TG-XXXXXXXX-241983636",
-  "code_verifier": "47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU",
   "grant_type": "client_credentials",
 }'
 ```
