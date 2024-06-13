@@ -13,13 +13,13 @@ Según la orientación de las marcas de tarjetas y la Normativa nº 28 de Abecs 
 
 Abecs está alojando una base de datos que contiene información sobre los CNPJs que, según la regla anterior, están vinculados correctamente al MCC, ya sea por deliberación o vinculados al CNAE Primario.
 
-Todos los participantes del Sistema Brasileño de Pagos pueden acceder a esta información a través de las siguientes formas.
+Todos los participantes del Sistema Brasilero de Pagos pueden acceder a esta información a través de las siguientes formas.
 
-* **Portal - Nuevo Sistema de Registro Unificado de MCC:** El portal de Abecs para la consulta en línea de MCC, permitiendo acceso con inicio de sesión a la lista de CNAE-MCC y consulta individual del CNPJ para verificar cuál es el MCC correcto para el comercio. Para acceder a este nuevo sistema, será necesario realizar un registro con la creación de usuario y contraseña.
-* **Integración a través de API:** Con el objetivo de aumentar la seguridad de la información disponible en el sistema, Abecs ha creado APIs del Sistema Unificado de MCC que permiten a los acreditadores y subacreditadores acceder a la información de forma masiva y automatizada. Puede solicitar más información en el correo electrónico monitor@abecs.org.br.
+* **Portal - Nuevo Sistema de Registro Unificado de MCC:** es el portal de Abecs para la consulta en línea de MCC, que permite el acceso con inicio de sesión a la lista de CNAE-MCC y la consulta individual del CNPJ para verificar cuál es el MCC correcto para el comercio. Para acceder a este nuevo sistema, será necesario realizar un registro con la creación de usuario y contraseña.
+* **Integración a través de API:** con el objetivo de aumentar la seguridad de la información disponible en el sistema, Abecs ha creado APIs del Sistema Unificado de MCC que permiten a los acreditadores y subacreditadores acceder a la información de forma masiva y automatizada. Puedes solicitar más información en el correo electrónico monitor@abecs.org.br.
 
 > WARNING
 >
 > Importante
 >
-> La atribución incorrecta de MCC por parte del Facilitador de Pagos puede resultar en la aplicación de multas y la restitución del intercambio adeudado por parte de las marcas. Estas multas pueden ser trasladadas al Facilitador de Pagos por Mercado Pago.<br><br>Para obtener más detalles y acceder al Registro Unificado de MCC, consulta el sitio web oficial de [Abecs](https://www.abecs.org.br/consulta-mcc-individual).
+> La atribución incorrecta de MCC por parte del Facilitador de Pagos puede resultar en la aplicación de multas y restitución del intercambio adeudado por parte de las marcas. Estas multas pueden ser trasladadas al Facilitador de Pagos por Mercado Pago.<br><br>Para obtener más detalles y acceder al Registro Unificado de MCC, consulta el sitio web oficial de [Abecs](https://www.abecs.org.br/consulta-mcc-individual).
