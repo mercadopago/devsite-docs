@@ -120,6 +120,7 @@ oauth.create({
 }).then((result) => console.log(result))
 	.catch((error) => console.log(error));
 ```
+```curl
 curl -X POST \
     'https://api.mercadopago.com/oauth/token'\
     -H 'Content-Type: application/json' \
@@ -132,6 +133,7 @@ curl -X POST \
   "refresh_token": "TG-XXXXXXXX-241983636",
   "test_token": "false"
 }'
+```
 ]]]
 
 > Para generar credenciales de _sandbox_ para pruebas, envía el parámetro `test_token` con el valor `true`.
@@ -147,7 +149,13 @@ Access Token es el código utilizado en diferentes solicitudes de origen públic
 Sigue los pasos a continuación para obtenerlo.
 
 1. Envía tus [credenciales](/developers/es/docs/your-integrations/credentials) (`client_id` y `client_secret`) al endpoint [/oauth/token](/developers/es/reference/oauth/_oauth_token/post), incluyendo el código `client_credentials` en el parámetro `grant_type` para recibir una nueva respuesta con un nuevo `access_token`.
-2. Actualiza la aplicación con el Access Token recibido en la respuesta. **El _token_ recibido tiene una validez de 6 horas.**
+2. Actualiza la aplicación con el Access Token recibido en la respuesta. 
+
+> WARNING
+>
+> Atención
+>
+> **El _token_ recibido tiene una validez de 6 horas.** No olvides renovarlo antes de este período de expiración para que sus aplicaciones sigan funcionando correctamente.
 
 [[[
 ```php
@@ -159,13 +167,6 @@ Sigue los pasos a continuación para obtenerlo.
 
   $client->create($request);
 ?>
-```
-```java
-
-OauthClient client = new OauthClient();
-
-String clientecredentials = "TG-XXXXXXXX-241983636";
-client.createCredential(clientecredentials, null);
 ```
 ```node
 const client = new MercadoPagoConfig({ accessToken: 'access_token', options: { timeout: 5000 } }); 

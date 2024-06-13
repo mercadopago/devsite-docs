@@ -52,6 +52,7 @@ oauth.refresh({
 }).then((result) => console.log(result))
 	.catch((error) => console.log(error));
 ```
+```curl
 curl -X POST \
 'https://api.mercadopago.com/oauth/token'\
 -H 'Content-Type: application/json' \
@@ -61,4 +62,5 @@ curl -X POST \
  "grant_type": "refresh-token",
  "refresh_token": "TG-XXXXXXXX-241983636",
 }'
+```
 ]]]
