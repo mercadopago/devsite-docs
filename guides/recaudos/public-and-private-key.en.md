@@ -7,7 +7,7 @@ During the integration process, you need to provide the public key to the team, 
 To generate this key, execute the following command in your terminal:
 
 ```terminal
-ssh-keygen -t rsa -b 4096 -C
+ssh-keygen -t rsa -b 4096
 ```
 
 > NOTE
@@ -19,9 +19,9 @@ As a result, two keys will be generated: one **public** and one **private**. Whi
 Both keys (public and private) must be stored in the same directory on the computer from which the connection to the Mercado Pago SFTP server will be established.
 
 The generated public key consists of 3 columns:
-- Algorithm
-- Public key value
-- Host
+- algorithm
+- public key value
+- host / comment
 
 Example:
 ```

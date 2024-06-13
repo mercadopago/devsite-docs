@@ -1,8 +1,8 @@
 # Instruções para configuração do arquivo
 
-Para criar Dívidas em grande quantidade, faça o upload de um arquivo com os dados dos clientes que serão cobrados, seguindo as especificações deste documento.
+Para criar Dívidas em grande quantidade ou Links massivos, faça o upload de um arquivo com os dados dos clientes que serão cobrados, seguindo as especificações desta documentação.
 
-> AVISO
+> WARNING
 >
 > Importante
 >
@@ -13,7 +13,7 @@ Para criar Dívidas em grande quantidade, faça o upload de um arquivo com os da
 |------------------|-------------------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|--------------|
 | 1                | Obrigatório             | Referência          | Identificador único da cobrança que o cliente pagará. Gerenciado pela empresa                                                                         | Campo alfanumérico de 1 a 50 caracteres | REF1234      |
 | 2                | Links de pagamento: Opcional / Dívidas: Obrigatório condicional para empresas na Argentina que identificam seus clientes por meio de DNI/CUIL/CULT | DNI/CUIL/CUIT       | DNI, CUIL ou CUIT do cliente. | Campo numérico inteiro de até 11 caracteres | 01234567895 |
-| 3                | Links de pagamento: Opcional / Dívidas: Obrigatório condicional para empresas na Argentina que identificam seus clientes por meio de Código do cliente | Código do cliente  | Identificador usado pela empresa para identificar seus clientes. | Campo alfanumérico de 1 a 20 caracteres | COD1234      |
+| 3                | Links de pagamento: Opcional / Dívidas: Obrigatório condicional para empresas que identificam seus clientes por meio do Código do cliente | Código do cliente  | Identificador usado pela empresa para identificar seus clientes. | Campo alfanumérico de 1 a 20 caracteres | COD1234      |
 | 4                | Obrigatório             | Data 1º vencimento | Data do primeiro vencimento, no formato AAAAMMDD                                                                                                          | Campo numérico de 8 caracteres | 20242012     |
 | 5                | Obrigatório             | Valor 1º vencimento | Valor do primeiro vencimento. É um número inteiro onde os dois últimos dígitos são decimais                                                           | Campo numérico com até 2 decimais. Utilize ponto, não vírgula | 123.50       |
 | 6                | Opcional                | Data 2º vencimento | Data do segundo vencimento, no formato AAAAMMDD                                                                                                        | Campo numérico de 8 caracteres | 20242212     |
@@ -33,9 +33,9 @@ Para criar Dívidas em grande quantidade, faça o upload de um arquivo com os da
 >
 > Sua empresa pode escolher o nome do arquivo, que deve seguir o formato **.csv**. Os caracteres permitidos são letras, números, hífen, sublinhado e ponto.
 
-## Exemplos de Arquivos para Links de Pagamento
+## Exemplos de arquivos para Links de Pagamento
 
-### Arquivo de Carregamento
+### Arquivo de carregamento
 
 A seguir, um exemplo de arquivo carregado com todos os dados inseridos corretamente:
 
@@ -49,7 +49,7 @@ A seguir, está um exemplo de arquivo carregado apenas com os dados obrigatório
 ext2024030614313,,,,,20250312,549.57,,,,,,,,,,,,,,,,,,,
 ```
 
-Para identificar os exemplos de acordo com a obrigação e a ordem no arquivo, consulte a tabela abaixo:
+Para identificar os exemplos de acordo com a obrigatoriedade e a ordem no arquivo, consulte a tabela abaixo:
 
 | Ordem no arquivo | Categoria               | Exemplo               |
 |------------------|-------------------------|-------------------------|
@@ -69,7 +69,7 @@ Para identificar os exemplos de acordo com a obrigação e a ordem no arquivo, c
 | 14               | Opcional                | Ref2024                 |
 | 15               | Opcional                | 5                       |
 
-### Arquivos de Resultado
+### Arquivos de resultado
 
 A seguir, está um exemplo de arquivo com Links de Pagamento devolvidos pelo Mercado Pago em caso de sucesso, sendo 'ext2024030615501' a referência e 'https://mpago.la/2WTWRHT' o Link de Pagamento.
 
@@ -79,27 +79,27 @@ A seguir, está um exemplo de arquivo com Links de Pagamento devolvidos pelo Mer
 
 A seguir, está um exemplo de arquivo com relatório de erros devolvido pelo Mercado Pago em casos de processamento falho ou parcial. Neste caso, '4' representa a linha com o erro e 'E008 last date must be after today' é a descrição do erro encontrado na linha.
 
-```
+```csv
 4,ext2024030615504,E008:Due last date must be after today
 ```
 
-## Exemplo de Arquivo para Dívidas
+## Exemplos de arquivos para Dívidas
 
-### Arquivo de Carregamento
+### Arquivo de carregamento
 
 A seguir, está um exemplo de arquivo carregado com todos os dados inseridos corretamente:
 
-```
+```csv
 ext2024030614313,521998672,1002,20250312,549.57,20250315,778.87,20250318,801.87,Miss Kristopher Kautzer,1138225523,felica.walsh@example.com,Cuota,Ref2024,5
 ```
 
 A seguir, está um exemplo de arquivo carregado apenas com os dados obrigatórios inseridos corretamente:
 
-```
+```csv
 ext2024030614313,521998672,,20250312,549.57,,,,,,,,,,
 ```
 
-Para identificar os exemplos de acordo com a obrigação e a ordem no arquivo, consulte a tabela abaixo:
+Para identificar os exemplos de acordo com a obrigatoriedade e a ordem no arquivo, consulte a tabela abaixo:
 
 | Ordem no arquivo | Categoria               | Exemplo               |
 |------------------|-------------------------|-------------------------|
@@ -119,7 +119,7 @@ Para identificar os exemplos de acordo com a obrigação e a ordem no arquivo, c
 | 14               | Opcional                | Ref2024                 |
 | 15               | Opcional                | 5                       |
 
-### Arquivo de Resultado
+### Arquivo de resultado
 
 A seguir, está um exemplo de arquivo de Dívidas devolvido pelo Mercado Pago em caso de sucesso, onde 'ext2024030615501' representa a referência e 'Success' indica que a dívida foi criada com sucesso.
 
@@ -127,8 +127,7 @@ A seguir, está um exemplo de arquivo de Dívidas devolvido pelo Mercado Pago em
 "ext2024030615501", "Success"
 ```
 
-A seguir, está um exemplo de arquivo com relatório de erros devolvido pelo Mercado Pago em casos de processamento falho ou parcial, onde '4' representa a linha com o erro, 'ext2024030615501' é a referência e 'E008
-last date must be after today' é a descrição do erro encontrado na linha.
+A seguir, está um exemplo de arquivo com relatório de erros devolvido pelo Mercado Pago em casos de processamento falho ou parcial, onde '4' representa a linha com o erro, 'ext2024030615501' é a referência e 'E008 last date must be after today' é a descrição do erro encontrado na linha.
 
 ```csv
 4,ext2024030615504,E008:Due last date must be after today

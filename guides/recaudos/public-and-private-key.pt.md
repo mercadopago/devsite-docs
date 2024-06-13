@@ -7,7 +7,7 @@ Durante o processo de integração, você deve fornecer a chave pública à equi
 Para gerar essa chave, execute o comando no seu terminal:
 
 ```terminal
-ssh-keygen -t rsa -b 4096 -C
+ssh-keygen -t rsa -b 4096
 ```
 
 > NOTE
@@ -23,7 +23,7 @@ Ambas as chaves (pública e privada) devem estar armazenadas no mesmo diretório
 A chave pública gerada consiste em 3 colunas:
 - Algoritmo
 - Valor da chave pública
-- host
+- host / comentário
 
 Exemplo:
 ```

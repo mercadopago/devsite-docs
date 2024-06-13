@@ -7,7 +7,7 @@ Durante el proceso de integración, debes proporcionar la clave pública al equi
 Para generar esta clave, ejecuta el comando en tu terminal:
 
 ```terminal
-ssh-keygen -t rsa -b 4096 -C
+ssh-keygen -t rsa -b 4096
 ```
 
 > NOTE
@@ -20,10 +20,10 @@ Como resultado, se generarán dos claves: una **pública** y una **privada**. Mi
 
 Ambas llaves (pública y privada) deben estar almacenadas en el mismo directorio de la computadora desde el que se establecerá la conexión al servidor SFTP de Mercado Pago.
 
-La clave pública generada consta de 3 columna:
-- Algoritmo
-- Valor de la clave pública
-- host
+La clave pública generada consta de 3 columnas:
+- algoritmo
+- valor de la clave pública
+- host / comentario
 
 Ejemplo:
 ```
