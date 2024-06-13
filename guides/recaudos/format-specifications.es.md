@@ -12,8 +12,8 @@ Para crear Deudas en gran cantidad, subí un archivo con datos de los clientes q
 | Orden en el archivo | Categoría               | Dato                | Descripción                                                                                                                                          | Formato                         | Ejemplo      |
 |---------------------|-------------------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|--------------|
 | 1                   | Obligatorio             | Referencia          | Identificador único del cobro que pagará el cliente. Gestionado por la empresa                                                                        | Campo alfanumérico de 1 a 50 caracteres | REF1234      |
-| 2                   | Si creas Links de pago: Opcional / Si creas Deudas: Obligatorio condicional para empresas en Argentina que identifican sus clientes mediante DNI/CUIL/CULT | DNI/CUIL/CUIT       | DNI, CUIL o CUIT del cliente. Aplicable para empresas en Argentina que identifican sus clientes mediante DNI/CUIL/CUIT. Links de Pago / Deudas | Campo numérico entero de hasta 11 caracteres | 01234567895 |
-| 3                   | Si creas Link de pago: Opcional / Si creas Deudas: Obligatorio condicional para empresas en Argentina que identificam sus clientes mediante DNI/CUIL/CUILT| Código del cliente  | Identificador utilizado por la empresa para identificar a sus clientes. Aplicable para empresas que identifican sus clientes mediante Código del cliente. Links de Pago / Deudas | Campo alfanumérico de 1 a 20 caracteres | COD1234      |
+| 2                   | Links de pago: Opcional / Deudas: Obligatorio condicional para empresas en Argentina que identifican sus clientes mediante DNI/CUIL/CULT | DNI/CUIL/CUIT       | DNI, CUIL o CUIT del cliente. | Campo numérico entero de hasta 11 caracteres | 01234567895 |
+| 3                   | Link de pago: Opcional / Deudas: Obligatorio condicional para empresas en Argentina que identificam sus clientes mediante DNI/CUIL/CUILT| Código del cliente  | Identificador utilizado por la empresa para identificar a sus clientes. | Campo alfanumérico de 1 a 20 caracteres | COD1234      |
 | 4                   | Obligatorio             | Fecha 1º vencimiento | Fecha del primer vencimiento, en formato AAAAMMDD                                                                                                          | Campo numérico de 8 caracteres | 20242012     |
 | 5                   | Obligatorio             | Importe 1º vencimiento | Importe del primer vencimiento. Es un número entero donde los dos últimos dígitos son decimales                                                           | Campo numérico con hasta 2 decimales. Utiliza punto, no coma | 123.50       |
 | 6                   | Opcional                | Fecha 2º vencimiento | Fecha del segundo vencimiento, en formato AAAAMMDD                                                                                                        | Campo numérico de 8 caracteres | 20242212     |
@@ -121,13 +121,13 @@ Para identificar los ejemplos de acuerdo con la obligatoriedad y el orden en el 
 
 ### Archivo de resultado
 
-Archivo de Deudas devuelto por Mercado Pago en caso de éxito, donde 'ext2024030615501' representa la referencia, y 'Success' la deuda creada con éxito.
+A continuación, tienes un ejemplo de archivo de Deudas devuelto por Mercado Pago en caso de éxito, donde 'ext2024030615501' representa la referencia, y 'Success' la deuda creada con éxito.
 
 ```csv
 "ext2024030615501", "Success"
 ```
 
-Archivo con informe de errores devuelto por Mercado Pago en casos de procesamiento fallido o parcial, donde '4' representa la línea con el error, 'ext2024030615501' la referencia y 'E008
+A continuación, tienes un ejemplo de archivo con informe de errores devuelto por Mercado Pago en casos de procesamiento fallido o parcial, donde '4' representa la línea con el error, 'ext2024030615501' la referencia y 'E008
 last date must be after today' la descripción del error encontrado en la línea.
 
 ```csv
