@@ -4,20 +4,18 @@ A seguir, são detalhados os controles realizados a partir do Self Service para 
 
 ## Controles de conteúdo
 
-| Formato | Código de Erro | Descrição                                             | Causa                                                                                   |
-|---------|-----------------|---------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| Todos   | E051            | Igual ao {registro}                                    | Isso ocorre quando um registro tem todos os mesmos valores nos campos de um registro já processado. |
-| Todos   | E052            | Mesmos dados em {registro}                              | Isso ocorre quando todos os campos coincidem, exceto o ID do registro.                     |
-| Todos   | E053            | ID do registro                                         | O campo de referência externa (ID do registro) não está presente.                              |
-| Todos   | E054            | Formato de código de cliente inválido                  | Se o vendedor for da Argentina e declarar identificar o cliente com o código do cliente e este não estiver presente ou tiver um formato inválido. |
-| Todos   | E055            | Formato de DNI inválido                                 | Se o vendedor for da Argentina e declarar identificar o cliente pelo DNI e este não estiver presente ou tiver um formato inválido. |
-| Todos   | E056            | Formato de endereço de e-mail inválido                  | Formato inválido de e-mail.                                                              |
-| Todos   | E057            | Formato de data de vencimento inválido                | A primeira data de vencimento não está no formato AAAAMMDD.                              |
-| Todos   | E058            | Valor de data de vencimento inválido                  | A primeira data de vencimento é anterior ao dia em que a dívida é enviada.                        |
-| Todos   | E059            | Valor de montante vencido inválido                         | O montante da primeira data de vencimento não está presente ou tem um formato incorreto.                |
-| Todos   | E060            | Formato de data de vencimento secundária inválido     | A segunda data de vencimento não está no formato AAAAMMDD.                             |
-| Todos   | E061            | Valor de data de vencimento secundária inválido       | A segunda data de vencimento é anterior ou igual à data de vencimento da primeira.          |
-| Todos   | E062            | Valor de montante de vencimento secundária inválido       | A segunda data de vencimento está presente, mas não seu montante ou tem um formato inválido. |
-| Todos   | E063            | Formato de data de vencimento terciária inválido      | A terceira data de vencimento não está no formato AAAAMMDD.                              |
-| Todos   | E064            | Valor de data de vencimento terciária inválido        | A terceira data de vencimento é anterior ou igual à segunda data de vencimento.          |
-| Todos   | E065            | Valor de montante de vencimento terciária inválido        | A terceira data de vencimento está presente, mas não seu montante ou tem um formato inválido. |
+| Código de Erro | Descrição                                             | Causa                                                                                   |
+|-----------------|---------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| E053            | ID do registro                                         | O campo Reference não está presente.                              |
+| E054            | Formato de código de cliente inválido                  | Se o vendedor declarar identificar o cliente com o código do cliente e este não estiver presente ou tiver um formato inválido. |
+| E055            | Formato de DNI inválido                                 | Se o vendedor for da Argentina e declarar identificar o cliente pelo DNI e este não estiver presente ou tiver um formato inválido. |
+| E056            | Formato de endereço de e-mail inválido                  | Formato inválido de e-mail.                                                              |
+| E057            | Formato de data de vencimento inválido                | A primeira data de vencimento não está no formato AAAAMMDD.                              |
+| E058            | Valor de data de vencimento inválido                  | A primeira data de vencimento é anterior ao dia em que a dívida é enviada.                        |
+| E059            | Valor de montante vencido inválido                         | O montante da primeira data de vencimento não está presente ou tem um formato incorreto.                |
+| E060            | Formato de data de vencimento secundária inválido     | A segunda data de vencimento não está no formato AAAAMMDD.                             |
+| E061            | Valor de data de vencimento secundária inválido       | A segunda data de vencimento é anterior ou igual à data de vencimento da primeira.          |
+| E062            | Valor de montante de vencimento secundária inválido       | A segunda data de vencimento está presente, mas não seu montante ou tem um formato inválido. |
+| E063            | Formato de data de vencimento terciária inválido      | A terceira data de vencimento não está no formato AAAAMMDD.                              |
+| E064            | Valor de data de vencimento terciária inválido        | A terceira data de vencimento é anterior ou igual à segunda data de vencimento.          |
+| E065            | Valor de montante de vencimento terciária inválido        | A terceira data de vencimento está presente, mas não seu montante ou tem um formato inválido. |
