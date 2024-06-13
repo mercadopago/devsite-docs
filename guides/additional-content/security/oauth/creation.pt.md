@@ -178,6 +178,7 @@ oauth.create({
 }).then((result) => console.log(result))
 	.catch((error) => console.log(error));
 ```
+```curl
 curl -X POST \
     'https://api.mercadopago.com/oauth/token'\
     -H 'Content-Type: application/json' \
@@ -188,4 +189,5 @@ curl -X POST \
   "code_verifier": "47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU",
   "grant_type": "client_credentials",
 }'
+```
 ]]]

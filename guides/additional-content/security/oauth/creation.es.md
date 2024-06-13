@@ -179,6 +179,7 @@ oauth.create({
 }).then((result) => console.log(result))
 	.catch((error) => console.log(error));
 ```
+```curl
 curl -X POST \
     'https://api.mercadopago.com/oauth/token'\
     -H 'Content-Type: application/json' \
@@ -188,4 +189,5 @@ curl -X POST \
   "code": "TG-XXXXXXXX-241983636",
   "grant_type": "client_credentials",
 }'
+```
 ]]]
