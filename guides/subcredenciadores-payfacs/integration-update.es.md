@@ -4,9 +4,9 @@
 >
 > Importante
 >
-> La Circular BCB 3978 nº determina que todos los Facilitadores de Pago identifiquen a los beneficiarios finales en el momento de la transacción. Para cumplir con esta norma, se vuelve obligatorio enviar los parámetros de la propiedad `sub_merchant` que fueron detallados en la tabla anterior. En caso de que los campos no sean enviados, la bandera de la tarjeta podrá aplicar penalizaciones que serán trasladadas al Facilitador de Pago.
+> La Circular BCB 3978 nº determina que todos los Facilitadores de Pago identifiquen a los beneficiarios finales en el momento de la transacción. Para cumplir con esta norma, se vuelve obligatorio enviar los parámetros de la propiedad `sub_merchant` que se detallan en la tabla que encontrarás a continuación. En caso de que los campos no sean enviados, la bandera de la tarjeta podrá aplicar penalizaciones que serán trasladadas al Facilitador de Pago.
 
-Para utilizar la integración de Facilitador de Pago, es necesario actualizar la propiedad `forward_data.sub_merchant` para el envío de los campos descritos a continuación.
+Para utilizar la integración de Facilitador de Pagos, es necesario actualizar la propiedad `forward_data.sub_merchant` para el envío de los campos descritos a continuación.
 
 ```json
 {

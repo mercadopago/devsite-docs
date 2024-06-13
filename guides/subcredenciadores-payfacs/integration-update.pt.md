@@ -4,9 +4,9 @@
 >
 > Importante
 >
-> A Circular BCB nº3978/2020 determina que todos os Facilitadores de Pagamento identifiquem os beneficiários finais no momento da transação. Para cumprimento desta norma, se torna obrigatório enviar os parâmetros da propriedade `sub_merchant` que foram detalhados na tabela anterior. Caso os campos não sejam enviados, a bandeira poderá aplicar penalidades que serão repassadas ao Facilitador de Pagamento.
+> A Circular BCB nº3978/2020 determina que todos os Facilitadores de Pagamento identifiquem os beneficiários finais no momento da transação. Para cumprimento desta norma, é obrigatório enviar os parâmetros da propriedade `sub_merchant` que foram detalhados na tabela anterior. Caso os campos não sejam enviados, a bandeira poderá aplicar penalidades que serão repassadas ao Facilitador de Pagamento.
 
-Para utilizar a integração de Facilitador de Pagamento, é necessário atualizar a propriedade `forward_data.sub_merchant` para envio dos campos descritos abaixo.
+Para utilizar a integração do Facilitador de Pagamento, é necessário atualizar a propriedade `forward_data.sub_merchant` para o envio dos campos descritos abaixo.
 
 ```json
 {
