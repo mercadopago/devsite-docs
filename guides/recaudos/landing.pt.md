@@ -21,7 +21,7 @@ available_countries: mla, mlm
 
 ---
 
->>>> Disponibilidade por país para Geração de Links: <<<<
+>>>> Disponibilidade por país para Criação de Links: <<<<
 ---
 available_countries: mla, mlb, mco, mlc, mlm, mpe, mlu
 
