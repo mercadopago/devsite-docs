@@ -4,7 +4,7 @@
 >
 > Important
 >
-> Circular BCB 3978 no. determines that all Payment Facilitators identify the ultimate beneficiaries at the time of the transaction. To comply with this regulation, it becomes mandatory to send the parameters of the `sub_merchant` property that were detailed in the previous table. In case the fields are not sent, the card networks may apply penalties that will be passed on to the Payment Facilitator.
+> Circular BCB 3978 no. determines that all Payment Facilitators identify the ultimate beneficiaries at the time of the transaction. To comply with this regulation, it becomes mandatory to send the parameters of the `sub_merchant` property that are detailed in the table below. In case the fields are not sent, the card networks may apply penalties that will be passed on to the Payment Facilitator.
 
 To use the Payment Facilitator integration, it is necessary to update the `forward_data.sub_merchant` property for sending the fields described below.
 
