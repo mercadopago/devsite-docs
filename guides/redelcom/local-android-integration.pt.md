@@ -17,3 +17,9 @@ Confira o diagrama a seguir, que detalha o funcionamento da integração local c
 ![Diagrama explicando a integração local](/images/Redelcom/Integrate-via-Android.png)
 
 </center>
+
+> WARNING
+>
+> Importante
+>
+> Antes de entrar em produção, é necessário concluir a [homologação da sua integração](/developers/pt/docs/redelcom/how-tos/integration-homologation). Ao final deste processo, nossa equipe comercial concederá a permissão necessária para realizá-lo.
