@@ -21,23 +21,6 @@
 
 Aprende cómo instalar la nueva app (**Mercado Pago Tarjetas**) y desinstalar la antigua (**Checkout Transparente MP**) para evitar la interrupción del servicio en  Shopify.
 
-## Desactiva la antigua app
-
-Antes de instalar la nueva versión, es necesario desinstalar la configuración de la antigua app.
-
-1. Ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
-2. En el panel administrativo de la tienda, localiza la aplicación con el nombre "Checkout Transparente MP" y haz clic en **Gestionar**.
-3. Haz clic en el **menú de opciones adicionales > Desinstalar** y luego en **Desinstalar** nuevamente.
-4. Regresa al panel administrativo de la tienda y haz clic en **Configuraciones > Pagos**.
-5. Localiza la antigua aplicación con el nombre "Mercado Pago" y haz clic en **Gestionar**.
-6. Por último, haz clic en **Desactivar** y luego en **Desinstalar**.
-
-> WARNING
->
-> Atención
->
-> En esta nueva versión ya no es obligatoria la instalación de otra aplicación para el funcionamiento de **Mercado Pago Tarjetas**. Sin embargo, esta nueva aplicación solo sirve para pagos con tarjetas. Para realizar pagos con **Pix** o **boleto bancário**, utiliza [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).
-
 ## Instala la nueva app
 
 Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, sigue cualquiera de los dos modelos de instalación descritos a continuación.
@@ -91,7 +74,7 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, sigue
 
 ### Instalar vía Marketplace
 
-1. A partir del enlace recibido por el departamento comercial de Mercado Pago, accede a la página de la aplicación **Mercado Pago Tarjetas** en el "Marketplace" y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
+1. A partir del [enlace recibido](https://apps.shopify.com/mercado-pago-cartoes?locale=pt-BR) por el departamento comercial de Mercado Pago, accede a la página de la aplicación **Mercado Pago Tarjetas** en el "Marketplace" y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
 
 ![installation mkplace 0](/images/shopify/installation-cards-mkplace-0-es.png)
 
@@ -128,6 +111,23 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, sigue
 ![installation cards 6](/images/shopify/installation-cards-6-es.png)
 
 ¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
+
+## Desactiva la antigua app
+
+Después de instalar la nueva versión, es necesario desinstalar la aplicación antigua. Para desinstalarla, siga los pasos a continuación.
+
+1. Ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
+2. En el panel administrativo de la tienda, localiza la aplicación con el nombre "Checkout Transparente MP" y haz clic en **Gestionar**.
+3. Haz clic en el **menú de opciones adicionales > Desinstalar** y luego en **Desinstalar** nuevamente.
+4. Regresa al panel administrativo de la tienda y haz clic en **Configuraciones > Pagos**.
+5. Localiza la antigua aplicación con el nombre "Mercado Pago" y haz clic en **Gestionar**.
+6. Por último, haz clic en **Desactivar** y luego en **Desinstalar**.
+
+> WARNING
+>
+> Atención
+>
+> En esta nueva versión ya no es obligatoria la instalación de otra aplicación para el funcionamiento de **Mercado Pago Tarjetas**. Sin embargo, esta nueva aplicación solo sirve para pagos con tarjetas. Para realizar pagos con **Pix** o **boleto bancário**, utiliza [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).
 
 ### Configurar meses sin intereses
 
