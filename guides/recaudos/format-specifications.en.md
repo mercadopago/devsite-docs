@@ -1,102 +1,134 @@
-# CSV format specifications and examples
+# Instructions for file configuration
 
-This documentation provides important clarifications about the CSV format of the files used, with specific details presented in the following sections.
-
-## Field format
-
-The format of the fields is detailed as follows: T(Lmin - Lmax), where Lmin is the minimum length and Lmax is the maximum length, and T is the data type detailed below:
-
-| Type   | Description                                            | Regexp                |
-|--------|--------------------------------------------------------|-----------------------|
-| **A**  | Alphabetic field. Accents are not accepted.            | `[a-zA-Z]`            |
-| **N(,2)** | Numeric field with decimals.                        | `[0-9]+.[0-9]{2}`     |
-| **N**  | Numeric field with integers.                           | `[0-9]+`              |
-| **AN** | Alphanumeric field.                                    | `[a-zA-Z0-9]`         |
-| **ANS**| Field that supports alphanumeric and special characters. | `[a-zA-Z-0-9 _@.-()+]` |
-| **AS** | Field that supports alphabetic and special characters. | `[a-zA-Z- _@.-()+]`   |
-
-For all formats, spaces should be used to complete the fixed length.
-
-For example:
-- AN(1-11) indicates that it is an alphanumeric field of length 11.
-- AN(1-20) indicates that the field can have a length of 1 to 20 characters.
-
-### Input Layout
-
-Consult the fields that you can configure in the input. In the "Category" column, M stands for Mandatory, C for Conditional, and O for Optional - for these cases, the fields should be left empty.
+To create Debts in bulk or Massive links, upload a file with customer data following the specifications in this document.
 
 > WARNING
 >
 > Important
 >
-> In the case of debts with 'C' in the Category column, at least one of these fields must be completed, according to the seller's configuration.
+> Use a comma (,) to separate the information in your file. <br>
+> Do not enter the column names in the file.
 
-| Column/index | Attribute                  | Format  | Detail                                                                                                                                         | Category                              |
-|--------------|----------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| 1            | Reference                  | AN(1-50) | Unique identifier of the debt that the customer will pay, managed by the company. Keep in mind that this identifier will be used for reconciliation. | M                                     |
-| 2            | DNI/CUIL/CUIT              | N(011)  | DNI, CUIL o CUIT of the customer.                                                                                                           | C                                    |
-| 3            | Client code                | AN(020) | Identifier used by the company to identify its clients. Remember that you must respect the format indicated during the onboarding process.         | C                                     |
-| 4            | First due date             | N(008)  | Date of the first due date in AAAAMMDD format.                                                                                                 | M                                     |
-| 5            | First due amount           | N(,2)   | Amount of the first due date. It is an integer where the last two digits represent the decimals.                                               | M                                     |
-| 6            | Second due date            | N(008)  | Date of the second due date, in AAAAMMDD format.                                                                                                | O                                     |
-| 7           | Second due amount          | N(,2)   | Amount of the second due date. It is an integer where the last two digits represent the decimals.                                              | O                                     |
-| 8           | Third due date             | N(008)  | Date of the third due date, in AAAAMMDD format.                                                                                                 | O                                     |
-| 9           | Third due amount           | N(,2)   | Amount of the third due date. It is an integer where the last two digits are decimals.                                                          | O                                     |
-| 10            | Full name                  | AS(100) | Customer's full name without special characters.                                                                                                | O - Massive Links <br>M - Wallet Upload |
-| 11            | Customer phone             | ANS(20) | Customer's phone number.                                                                                                                       | O                                     |
-| 12            | Email address              | ANS(64) | Customer's email address where they will receive notifications about the existence of a new debt for the company.                              | O                                     |
-| 13           | Reason                     | ANS(030)| Description that the user will see when paying a debt or a link. If not loaded, the default value will be "Others".                             | O                                     |
-| 14           | Comment                    | ANS     | Concept or comment.                                                                                                                             | O                                     |
-| 15           | Tax                        | N       | Tax. It can be 0, 5, or 19.                                                                                                                     | O - Only for cases of bulk links in Colombia. |
+| Order in the File | Category               | Data                | Description                                                                                                                                          | Format                         | Example      |
+|-------------------|------------------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|--------------|
+| 1                 | Mandatory              | Reference           | Unique identifier of the payment that the customer will make. Managed by the company                                                                 | Alphanumeric field of 1 to 50 characters | REF1234      |
+| 2                 | Payment Links: Optional / Debts: Conditionally mandatory for companies in Argentina that identify their customers by DNI/CUIL/CUIT | DNI/CUIL/CUIT       | DNI, CUIL, or CUIT of the customer. | Integer field up to 11 characters | 01234567895 |
+| 3                 | Payment Links: Optional / Debts: Conditionally mandatory for companies that identify their customers by Customer Code | Customer Code       | Identifier used by the company to identify their customers. | Alphanumeric field of 1 to 20 characters | COD1234      |
+| 4                 | Mandatory              | 1st Due Date        | Date of the first due date, in YYYYMMDD format                                                                                                          | Numeric field of 8 characters | 20242012     |
+| 5                 | Mandatory              | 1st Due Amount      | Amount of the first due date. It is an integer where the last two digits are decimals                                                                | Numeric field with up to 2 decimals. Use a dot, not a comma | 123.50       |
+| 6                 | Optional               | 2nd Due Date        | Date of the second due date, in YYYYMMDD format                                                                                                        | Numeric field of 8 characters | 20242212     |
+| 7                 | Optional               | 2nd Due Amount      | Amount of the second due date. It is an integer where the last two digits are decimals                                                                | Numeric field with up to 2 decimals. Use a dot, not a comma | 130.00       |
+| 8                 | Optional               | 3rd Due Date        | Date of the third due date, in YYYYMMDD format                                                                                                         | Numeric field of 8 characters | 20242212     |
+| 9                 | Optional               | 3rd Due Amount      | Amount of the third due date. It is an integer where the last two digits are decimals                                                                 | Numeric field with up to 2 decimals. Use a dot, not a comma | 147.50       |
+| 10                | Optional               | Full Name           | Full name of the customer (no special characters)                                                                                                     | Alphabetic field up to 100 characters | Jose Silva   |
+| 11                | Optional               | Customer Phone      | Customer's phone number                                                                                                                               | Alphanumeric field up to 20 characters | 4852698653201|
+| 12                | Optional               | Customer E-mail     | Customer's e-mail address to receive notifications about new debts                                                                                    | Alphanumeric field up to 64 characters | name@mail.com |
+| 13                | Optional               | Reason              | Description that appears for the customer when paying in the Mercado Pago app. Recommended for better approval.                                        | Alphanumeric field up to 30 characters | Fee          |
+| 14                | Optional               | Comment             | Concept or comment. The seller decides what to use for identification                                                                                 | Alphanumeric field                  | Ref 2024     |
+| 15                | Optional (only for cases in Colombia) | Tax                  | Tax.                                                                                                                                                   | Integer field. Can be 0, 5, or 19. If no value is entered, 19 will be used by default | 5            |
 
 > NOTE
 >
-> Note
+> How to name the file before uploading
 >
-> Second and third due dates, along with their associated amounts, are optional. The system will automatically update the amounts on each specified date, ensuring that the amount to be paid is correct at all times.
+> Your company can choose the name of the file, which must follow the **.csv** format. Allowed characters are letters, numbers, hyphen, underscore, and dot.
 
-## Successful layout for Payment Links
+## Sample files for Payment links
 
-| Column/index | Attribute       | Format | Detail                                                            |
-|--------------|-----------------|--------|--------------------------------------------------------------------|
-| 1            | Reference       | AN(020) | Unique identifier of the debt that the customer will pay, managed by the company. |
-| 2            | Payment Link    | ANS    | URL of the generated Payment Link.                                 |
+### Upload files
 
-## Successful layout for Debts
+Below is an example of an uploaded file with all the data entered correctly:
 
-| Column/index | Attribute   | Format | Detail                                                                  |
-|--------------|-------------|--------|--------------------------------------------------------------------------|
-| 1            | Reference   | AN(020) | Unique identifier of the debt that the customer will pay, managed by the company. |
-| 2            | Result      | ANS    | Fixed value SUCCESS for rows processed successfully.                     |
-
-## Error layout
-
-| Column/index | Attribute                         | Format | Detail                                                           |
-|--------------|----------------------------------|--------|-------------------------------------------------------------------|
-| 1            | Line number of the debts file.   | AN(008) | Customer identifier. Must comply with the format indicated during onboarding. |
-| 2            | Reference                        | AN(020) | Unique identifier of the debt that the customer will pay, managed by the company. |
-| 3            | Errors                           | ANS    | Description of errors found on the line.                         |
-
-Below is an example of an input file for Bulk Links and Debts:
-
-```terminal
-reflinks11,33334444,,20240531,33.33,,,,,,,,Demo Installment Live 1,,
-reflinks22,22228888,,20240531,44.44,20240601,22.22,20240602,122.11,Richie 
-Jenkins,1113101138,test_user_1196837045@testuser.com,Demo Installment Live 2,,
+```csv
+ext2024030614313,521998672,1002,20250312,549.57,20250315,778.87,20250318,801.87,Miss Kristopher Kautzer,1138225523,felica.walsh@example.com,Cuota,Ref2024,5
 ```
 
-Below is an example of success for Bulk Links:
+Below is an example of an uploaded file with only the mandatory data entered correctly:
 
-```terminal
-ext1602, https://mpago.la/2W66EvG
-ext1600, https://mpago.la/2LdGavR
-ext1601, https://mpago.la/1FVqpCV
+```csv
+ext2024030614313,,,,,20250312,549.57,,,,,,,,,,,,,,,,,,,
 ```
 
-Below is an example of a success file for Debts:
+To identify the examples according to the mandatory fields and the order in the file, refer to the table below:
 
-```terminal
-ext1602, SUCCESS
-ext1600, SUCCESS
-ext1601, SUCCESS
+| Order in the File | Category              | Example               |
+|-------------------|-----------------------|-----------------------|
+| 1                 | Mandatory             | ext2024030614313      |
+| 2                 | Conditional Optional  | 521998672             |
+| 3                 | Conditional Optional  | 1002                  |
+| 4                 | Mandatory             | 20250312              |
+| 5                 | Mandatory             | 549.57                |
+| 6                 | Optional              | 20250315              |
+| 7                 | Optional              | 778.87                |
+| 8                 | Optional              | 20250318              |
+| 9                 | Optional              | 801.87                |
+| 10                | Optional              | Miss Kristopher Kautzer |
+| 11                | Optional              | 1138225523            |
+| 12                | Optional              | felica.walsh@example.com |
+| 13                | Optional              | Cuota                 |
+| 14                | Optional              | Ref2024               |
+| 15                | Optional              | 5                     |
+
+### Result files
+
+Below is an example of a file with payment links returned by Mercado Pago in case of success, where 'ext2024030615501' is the reference, and 'https://mpago.la/2WTWRHT' is the payment link.
+
+```csv
+"ext2024030615501", "https://mpago.la/2WTWRHT"
+```
+
+Below is an example of a file with an error report returned by Mercado Pago in cases of failed or partial processing. In this case, '4' represents the line with the error, and 'E008 last date must be after today' is the description of the error found in the line.
+
+```csv
+4,ext2024030615504,E008:Due last date must be after today
+```
+
+## Sample files for Debts
+
+### Upload files
+
+Below is an example of an uploaded file with all the data entered correctly:
+
+```csv
+ext2024030614313,521998672,1002,20250312,549.57,20250315,778.87,20250318,801.87,Miss Kristopher Kautzer,1138225523,felica.walsh@example.com,Cuota,Ref2024,5
+```
+
+Below is an example of an uploaded file with only the mandatory data entered correctly:
+
+```csv
+ext2024030614313,521998672,,20250312,549.57,,,,,,,,,,
+```
+
+To identify the examples according to the mandatory fields and the order in the file, refer to the table below:
+
+| Order in the File | Category               | Example               |
+|-------------------|------------------------|-----------------------|
+| 1                 | Mandatory              | ext2024030614313      |
+| 2                 | Conditional Mandatory  | 521998672             |
+| 3                 | Conditional Mandatory  | 1002                  |
+| 4                 | Mandatory              | 20250312              |
+| 5                 | Mandatory              | 549.57                |
+| 6                 | Optional               | 20250315              |
+| 7                 | Optional               | 778.87                |
+| 8                 | Optional               | 20250318              |
+| 9                 | Optional               | 801.87                |
+| 10                | Optional               | Miss Kristopher Kautzer |
+| 11                | Optional               | 1138225523            |
+| 12                | Optional               | felica.walsh@example.com |
+| 13                | Optional               | Cuota                 |
+| 14                | Optional               | Ref2024               |
+| 15                | Optional               | 5                     |
+
+### Result files
+
+Below is an example of a debt file returned by Mercado Pago in case of success, where 'ext2024030615501' represents the reference, and 'Success' indicates the debt was successfully created.
+
+```csv
+"ext2024030615501", "Success"
+```
+
+Below is an example of a file with an error report returned by Mercado Pago in cases of failed or partial processing, where '4' represents the line with the error, 'ext2024030615501' is the reference, and 'E008 last date must be after today' is the description of the error found in the line.
+
+```csv
+4,ext2024030615504,E008:Due last date must be after today
 ```
