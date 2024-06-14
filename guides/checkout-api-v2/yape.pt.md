@@ -36,7 +36,7 @@ Esta etapa inicial representa o início de uma estrutura de código completa nec
 
 ```
 const mp = new MercadoPago("YOUR_PUBLIC_KEY");
-````
+```
 
 ## Adicionar formulário para captura dos dados de OTP e celular
 
@@ -59,6 +59,7 @@ Para gerar um token Yape, é necessário preencher os campos OTP, que representa
 ```
 
 ## Gerar token de Yape
+
 Após concluir a inclusão do formulário e obter os dados necessários, gere o token do Yape usando MercadoPago.js ou via API.
 
 ### Gerar token de Yape via MercadoPago.js
@@ -94,8 +95,6 @@ curl --location 'https://api.mercadopago.com/platforms/pci/yape/v1/payment?publi
 ``` 
 
 É necessário preencher os campos obrigatórios listados abaixo, seguindo as especificações mostradas na tabela a seguir:
-
-Aqui está o conteúdo transformado em uma tabela:
 
 | Campo       | Tipo   | Descrição                                                                                                                  | Obrigatório/Opcional                           | Exemplos/Possíveis valores                 |
 |-------------|--------|-----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|-------------------------------------------|
@@ -434,5 +433,3 @@ Consulte a tabela abaixo e utilize um dos números específicos para simular cen
 | 111111118      | 123456  | `cc_rejected_form_error`                       |
 
 Os procedimentos para gerar o token de Yape e criar o pagamento são os mesmos: é necessário fornecer o número de celular e o OTP da tabela acima. Se houver dúvidas sobre como gerar o token Yape, consulte a documentação [Gerar token de YAPE com MercadoPago.js]().
-
-
