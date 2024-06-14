@@ -52,11 +52,12 @@ Done! The **Mercado Pago Cards** checkout is ready to receive payments.
 
 ----[mlb]----
 
-1. From the [link received](https://apps.shopify.com/mercado-pago-cartoes?locale=pt-BR) from Mercado Pago's commercial department, access the **Mercado Pago Cards** app page on the "Marketplace" and click **Install**. If you haven't already, log in with your Shopify account.
+1. From [this link](https://apps.shopify.com/mercado-pago-cartoes?locale=pt-BR), access the **Mercado Pago Cards** app page on the "Marketplace" and click **Install**. If you haven't already, log in with your Shopify account.
+
 ------------
 ----[mlm]----
 
-1. From the link received from Mercado Pago's commercial department, access the **Mercado Pago Cards** app page on the "Marketplace" and click **Install**. If you haven't already, log in with your Shopify account.
+1. From [this link](https://apps.shopify.com/mercado-pago-tarjetas-mx?locale=pt-BR), access the **Mercado Pago Cards** app page on the "Marketplace" and click **Install**. If you haven't already, log in with your Shopify account.
 
 ------------
 2. Read carefully the information about the requested permissions and click **Install** again.

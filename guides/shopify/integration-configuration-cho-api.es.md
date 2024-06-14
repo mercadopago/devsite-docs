@@ -69,11 +69,11 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, ofrec
 ## Instalar vía Marketplace
 
 ----[mlb]----
-1. A partir del [enlace recibido](https://apps.shopify.com/mercado-pago-cartoes?locale=pt-BR) por el departamento comercial de Mercado Pago, accede a la página de la aplicación **Mercado Pago Tarjetas** en el "Marketplace" y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
+1. A partir de [este enlace](https://apps.shopify.com/mercado-pago-cartoes?locale=pt-BR), accede a la página de la aplicación **Mercado Pago Tarjetas** en el "Marketplace" y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
 
 ------------
 ----[mlm]----
-1. A partir del enlace recibido por el departamento comercial de Mercado Pago, accede a la página de la aplicación **Mercado Pago Tarjetas** en el "Marketplace" y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
+1. A partir de [este enlace](https://apps.shopify.com/mercado-pago-tarjetas-mx?locale=pt-BR), accede a la página de la aplicación **Mercado Pago Tarjetas** en el "Marketplace" y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
 
 ------------
 ![installation mkplace 0](/images/shopify/installation-cards-mkplace-0-es.png)
