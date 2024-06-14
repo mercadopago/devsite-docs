@@ -33,7 +33,7 @@ Para criar Dívidas em grande quantidade ou Links massivos, faça o upload de um
 >
 > Sua empresa pode escolher o nome do arquivo, que deve seguir o formato **.csv**. Os caracteres permitidos são letras, números, hífen, sublinhado e ponto.
 
-## Exemplos de arquivos para Links de Pagamento
+## Exemplos de arquivos para Links de pagamento
 
 ### Arquivos de carregamento
 
@@ -71,7 +71,7 @@ Para identificar os exemplos de acordo com a obrigatoriedade e a ordem no arquiv
 
 ### Arquivos de resultado
 
-A seguir, um exemplo de arquivo com Links de Pagamento devolvidos pelo Mercado Pago em caso de sucesso, sendo 'ext2024030615501' a referência e 'https://mpago.la/2WTWRHT' o Link de Pagamento.
+A seguir, um exemplo de arquivo com Links de Pagamento devolvidos pelo Mercado Pago em caso de sucesso, sendo 'ext2024030615501' a referência e 'https://mpago.la/2WTWRHT' o Link de pagamento.
 
 ```csv
 "ext2024030615501", "https://mpago.la/2WTWRHT"

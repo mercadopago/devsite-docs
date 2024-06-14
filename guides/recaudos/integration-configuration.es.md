@@ -1,10 +1,10 @@
 # Configuración de la integración
 
-El acceso seguro al servidor SFTP será configurado por Mercado Pago utilizando los datos de conexión proporcionados al equipo (SFTP Nombre, Email, Teléfono y Rango IP) y la clave pública para autenticación, tal como se detalla en la sección de [Requisitos previos](/developers/es/docs/links-and-debts/prerequisites). Una vez configurado, será posible Conectar al SFTP.
+El acceso seguro al servidor SFTP será configurado por Mercado Pago utilizando los datos de conexión proporcionados al equipo (SFTP Nombre, Email, Teléfono y Rango IP) y la clave pública para autenticación, tal como se detalla en la sección de [Requisitos previos](/developers/es/docs/links-and-debts/prerequisites). Una vez configurado, será posible conectarse al SFTP siguiendo las instrucciones a continuación.
 
 ## Conectar con SFTP
 
-Para conectarse al servidor SFTP de Mercado Pago, utilice la clave privada asociada a la clave pública que fue proporcionada a Mercado Pago durante la configuración del acceso. Para más información, consulte la documentación [Cómo crear una clave pública/privada SSH](/developers/es/docs/links-and-debts/public-and-private-key).
+Para conectarse al servidor SFTP de Mercado Pago, utilice la clave privada asociada a la clave pública que fue proporcionada a Mercado Pago durante la configuración anterior. Para más información, consulte la documentación [Cómo crear una clave pública/privada SSH](/developers/es/docs/links-and-debts/public-and-private-key).
 
 Podrá conectarse desde una terminal o desde un script ejecutado desde un cron. El comando a ejecutar es:
 

@@ -19,7 +19,7 @@ bullet_section_with_media:
 available_countries: mla, mlm
 ---
 
->>>> Country availability for Link Generation: <<<<
+>>>> Country availability for Massive links generation: <<<<
 ---
 available_countries: mla, mlb, mco, mlc, mlm, mpe, mlu
 ---

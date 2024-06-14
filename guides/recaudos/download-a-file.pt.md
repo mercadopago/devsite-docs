@@ -1,10 +1,10 @@
 # Baixar um arquivo
 
-Utilizando o terminal, aprenda como baixar um arquivo via [Console SFTP](/developers/es/docs/links-and-debts/integration-configuration/download#bookmark_consola_sftp) e [SFTP batch scripting](/developers/es/docs/links-and-debts/integration-configuration/download#bookmark_sftp_batch_scripting). O Console SFTP é adequado para uso manual, mas não para automatizações. Para automatizações, utilize o SFTP batch scripting, que requer a criação de um script SFTP, onde cada linha representa um comando SFTP.
+Utilizando o terminal, aprenda como baixar um arquivo via [Console SFTP](/developers/es/docs/links-and-debts/integration-configuration/download#bookmark_consola_sftp) e via [SFTP batch scripting](/developers/es/docs/links-and-debts/integration-configuration/download#bookmark_sftp_batch_scripting). O Console SFTP é adequado para uso manual, mas não para automatizações. Para automatizações, utilize o SFTP batch scripting, que requer a criação de um script onde cada linha representa um comando SFTP.
 
 ## Console SFTP
 
-Tomando como exemplo o código abaixo, siga os seguintes passos para baixar um arquivo usando o console SFTP.
+Usando como exemplo o código abaixo, siga os seguintes passos para baixar um arquivo usando o console SFTP.
 
 ```terminal
 UY0FVFGW103Q05P:~ user$ cd $HOME/demo

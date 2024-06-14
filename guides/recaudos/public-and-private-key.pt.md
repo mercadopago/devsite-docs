@@ -4,7 +4,7 @@ A chave pública `ssh-rsa` refere-se à parte pública do par de chaves (junto c
 
 Durante o processo de integração, você deve fornecer a chave pública à equipe, que a configurará no serviço SFTP do Mercado Pago.
 
-Para gerar essa chave, execute o comando no seu terminal:
+Para gerar essa chave, execute o seguinte comando no seu terminal:
 
 ```terminal
 ssh-keygen -t rsa -b 4096
@@ -21,8 +21,8 @@ Como resultado, serão geradas duas chaves: uma **pública** e uma **privada**. 
 Ambas as chaves (pública e privada) devem estar armazenadas no mesmo diretório do computador a partir do qual será estabelecida a conexão com o servidor SFTP do Mercado Pago.
 
 A chave pública gerada consiste em 3 colunas:
-- Algoritmo
-- Valor da chave pública
+- algoritmo
+- valor da chave pública
 - host / comentário
 
 Exemplo:
@@ -31,4 +31,5 @@ ssh-rsa CCCCB3NzaC1yc2EAAAADAQABAAABgQDIuC0emFLk1nGC1MCmJDqHzJy9N3WGJFCrDY8Euhcr
 ```
 
 Depois de gerar as chaves, compartilhe com a equipe do Mercado Pago os dados necessários detalhados na seção de [Requisitos prévios](/developers/pt/docs/links-and-debts/prerequisites) e apenas a chave pública gerada com as três colunas descritas.
+
 Com base nessas informações, o Mercado Pago criará e fornecerá para a integração um `user_name`, o host (`sftp.mercadolibre.io`) e o `seller_Id`, identificador interno necessário para o nome dos arquivos gerados. Com esses dados fornecidos pelo Mercado Pago, você poderá completar a integração.

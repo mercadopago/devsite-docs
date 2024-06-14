@@ -18,13 +18,13 @@ Depois disso, serão exibidos os seguintes diretórios disponíveis:
 
 ## Carregar um arquivo
 
-No painel do FileZilla, você encontrará duas janelas. A da esquerda representa seu computador, e a da direita, o servidor SFTP. Portanto, o upload de arquivos pode ser realizado arrastando o conteúdo que deseja enviar e soltando-o na janela do servidor.
+No painel do FileZilla, você encontrará duas janelas. A da esquerda representa seu computador, e a da direita, o servidor SFTP. O upload de arquivos pode ser realizado arrastando o conteúdo que deseja enviar e soltando-o na janela do servidor.
 
 ![1](/images/recaudos/filezilla1.png)
 
 ## Baixar um arquivo de resultado
 
-Um arquivo de resultados contém o processamento do arquivo de dívidas ou links massivos carregados. Para baixar um arquivo de resultado, arraste e solte o arquivo da janela direita, correspondente ao servidor SFTP, para a esquerda, correspondente ao seu computador.
+Um arquivo de resultados contém o processamento do arquivo de dívidas ou de links massivos carregados. Para baixar um arquivo de resultado, arraste e solte o arquivo da janela direita, correspondente ao servidor SFTP, para a esquerda, correspondente ao seu computador.
 
 Ao realizar essas etapas, o arquivo estará disponível automaticamente em seu diretório.
 

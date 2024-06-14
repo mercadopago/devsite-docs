@@ -1,8 +1,8 @@
 # Processamento de arquivos
 
-O Mercado Pago oferece uma solução eficiente para a gestão de dívidas e a geração de links em massa, permitindo o uso de um serviço SFTP para processar as informações contidas em arquivos.
+O Mercado Pago oferece uma solução eficiente para a Gestão de dívidas e Criação de links em massa, permitindo o uso de um serviço SFTP para processar as informações contidas em arquivos.
 
-Ao processar um novo arquivo, são validadas a estrutura e o conteúdo das informações. A frequência das cargas depende da lógica de negócios, já que a gestão das faturas está vinculada a processos externos ao Mercado Pago, como a criação de novas faturas.
+Ao processar um novo arquivo, é validado a estrutura e o conteúdo das informações. A frequência das cargas depende da lógica de negócios, já que a gestão das faturas está vinculada a processos externos ao Mercado Pago, como a criação de novas faturas.
 
 Para mais informações, leia os detalhes do fluxo a seguir.
 
@@ -38,6 +38,6 @@ O envio das notificações push e dos e-mails será feito após a conclusão do 
 >
 > Nota
 >
-> Os arquivos permanecem disponíveis durante 7 dias após a carga. Atualmente, não está disponível a opção de realizar atualizações diretas em uma linha que tenha sido carregada previamente.
+> Os arquivos permanecem disponíveis durante 7 dias após o carregamento. Atualmente, não está disponível a opção de realizar atualizações diretas em uma linha que tenha sido carregada previamente.
 
 ![Fluxograma](/images/recaudos/fluxograma.png)

@@ -1,10 +1,10 @@
 # Uploading a file
 
-Using the terminal, you can upload a file via [SFTP Console](/developers/en/docs/links-and-debts/integration-configuration/upload#bookmark_consola_sftp) or [SFTP batch scripting](/developers/en/docs/links-and-debts/integration-configuration/upload#bookmark_sftp_batch_scripting). SFTP Console is suitable for manual use but not for automations. For automations, use SFTP batch scripting, which requires creating an SFTP script, where each line represents an SFTP command.
+Using the terminal, you can upload a file via [SFTP Console](/developers/en/docs/links-and-debts/integration-configuration/upload#bookmark_consola_sftp) or [SFTP batch scripting](/developers/en/docs/links-and-debts/integration-configuration/upload#bookmark_sftp_batch_scripting). SFTP Console is suitable for manual use but not for automations. For automations, use SFTP batch scripting, which requires the creation of a script where each line represents an SFTP command.
 
 ## SFTP console
 
-Taking the code below as an example, follow the steps to upload a file using the SFTP console.
+Using the code below as an example, follow the steps to upload a file using the SFTP console.
 
 ```terminal
 UY0FVFGW103Q05P: ~ user$ sftp pg_sap@sftp-qa.mercadolibre.io

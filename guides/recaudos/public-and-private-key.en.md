@@ -29,4 +29,5 @@ ssh-rsa CCCCB3NzaC1yc2EAAAADAQABAAABgQDIuC0emFLk1nGC1MCmJDqHzJy9N3WGJFCrDY8Euhcr
 ```
 
 After generating the keys, share with the Mercado Pago team the necessary data detailed in the [Prerequisites](/developers/es/docs/links-and-debts/prerequisites) section and only the generated public key with the 3 described columns.
+
 Based on this information, Mercado Pago will create and provide for integration a `user_name`, the host (`sftp.mercadolibre.io`), and the `seller_Id`, an internal identifier necessary for the naming of the generated files. With these data provided by Mercado Pago, you will be able to complete the integration.

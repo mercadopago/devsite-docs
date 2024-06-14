@@ -1,9 +1,10 @@
 # Integration configuration
 
-Secure access to the SFTP server will be configured by Mercado Pago using the connection data provided to the team (SFTP Name, Email, Phone, and IP Range) and the public key for authentication, as detailed in the [Prerequisites](/developers/en/docs/links-and-debts/prerequisites) section. Once configured, it will be possible to Connect to the SFTP.
+Secure access to the SFTP server will be configured by Mercado Pago using the connection data provided to the team (SFTP Name, Email, Phone, and IP Range) and the public key for authentication, as detailed in the [Prerequisites](/developers/en/docs/links-and-debts/prerequisites) section. Once configured, it will be possible to connect to the SFTP by following the instructions below.
 
 ## Connect with SFTP
-To connect to the Mercado Pago SFTP server, use the private key associated with the public key provided to Mercado Pago during access configuration. For more information, see the documentation [How to create an SSH public/private key](/developers/en/docs/links-and-debts/public-and-private-key).
+
+To connect to the Mercado Pago SFTP server, use the private key associated with the public key provided to Mercado Pago for the creation of the server previously. For more information, see the documentation [How to create an SSH public/private key](/developers/en/docs/links-and-debts/public-and-private-key).
 
 You can connect from a terminal or from a script executed from a cron. The command to execute is:
 
@@ -15,7 +16,7 @@ shell> sftp -i ${dirname}/${id_rsa_sftp_ml} ${user_seller_sftp_ml}@sftp.mercadol
 >
 > NOTE
 >
-> In case the default `ssh` protocol key was used ($HOME/id_rsa), the `-i ${dirname}/${id_rsa_sftp_ml}` parameter above is not necessary.
+> If you have used the default SSH key `($HOME/id_rsa)`, the `-i ${dirname}/${id_rsa_sftp_ml}` parameter mentioned earlier is not necessary.
 
 Both keys (public and private) must be stored in the same directory on the machine used to connect to the Mercado Pago SFTP server. The table below describes how each element is identified by Mercado Pago:
 

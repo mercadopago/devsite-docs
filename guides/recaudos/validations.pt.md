@@ -1,21 +1,21 @@
 # Erros no processamento
 
-A seguir, são detalhados os controles realizados a partir do Self Service para assegurar o correto funcionamento do fluxo _end to end_ e para preservar a experiência dos nossos usuários. Se for detectada alguma das situações controladas, a informação completa não será processada e deverá ser enviada novamente por completo.
+A seguir, são detalhados os controles realizados a partir do Self Service para assegurar o correto funcionamento do fluxo _end to end_ e para preservar a experiência dos nossos usuários. Se for detectada alguma das situações abaixo, a informação completa não será processada e deverá ser enviada novamente por completo.
 
 ## Controles de conteúdo
 
-| Código de Erro | Descrição                                             | Causa                                                                                   |
-|-----------------|---------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| E053            | ID do registro                                         | O campo Reference não está presente.                              |
-| E054            | Formato de código de cliente inválido                  | Se o vendedor declarar identificar o cliente com o código do cliente e este não estiver presente ou tiver um formato inválido. |
-| E055            | Formato de DNI inválido                                 | Se o vendedor for da Argentina e declarar identificar o cliente pelo DNI e este não estiver presente ou tiver um formato inválido. |
-| E056            | Formato de endereço de e-mail inválido                  | Formato inválido de e-mail.                                                              |
-| E057            | Formato de data de vencimento inválido                | A primeira data de vencimento não está no formato AAAAMMDD.                              |
-| E058            | Valor de data de vencimento inválido                  | A primeira data de vencimento é anterior ao dia em que a dívida é enviada.                        |
-| E059            | Valor de montante vencido inválido                         | O montante da primeira data de vencimento não está presente ou tem um formato incorreto.                |
-| E060            | Formato de data de vencimento secundária inválido     | A segunda data de vencimento não está no formato AAAAMMDD.                             |
-| E061            | Valor de data de vencimento secundária inválido       | A segunda data de vencimento é anterior ou igual à data de vencimento da primeira.          |
-| E062            | Valor de montante de vencimento secundária inválido       | A segunda data de vencimento está presente, mas não seu montante ou tem um formato inválido. |
-| E063            | Formato de data de vencimento terciária inválido      | A terceira data de vencimento não está no formato AAAAMMDD.                              |
-| E064            | Valor de data de vencimento terciária inválido        | A terceira data de vencimento é anterior ou igual à segunda data de vencimento.          |
-| E065            | Valor de montante de vencimento terciária inválido        | A terceira data de vencimento está presente, mas não seu montante ou tem um formato inválido. |
+| Código do erro | Descrição                                                                                | Causa                                                                                       |
+|----------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| E001           | Field {fieldname} not present                                                            | Um dos campos requeridos não está presente.                                                 |
+| E002           | Invalid format in field {fieldname}                                                      | Um dos campos carregados não respeita o formato indicado.                                   |
+| E003           | Due last date must be after today                                                        | A data de vencimento deve ser posterior à atual.                                            |
+| E004           | Second Due date must be after first due date                                             | A segunda data de vencimento deve ser posterior à primeira.                                 |
+| E005           | Third Due date must be after second due date                                             | A terceira data de vencimento deve ser posterior à segunda.                                 |
+| E006           | Second due date is missing                                                               | Existe o valor do segundo vencimento, mas falta a segunda data de vencimento.               |
+| E007           | First Due amount not present or is not greater than 0                                     | Falta o valor do primeiro vencimento.                                                       |
+| E008           | Second Due amount not present or is not greater than 0                                    | Existe data de segundo vencimento, mas falta o valor do segundo vencimento.                 |
+| E009           | Third Due amount not present or is not greater than 0                                     | Existe data de terceiro vencimento, mas falta o valor do terceiro vencimento.               |
+| E010           | Amount has decimals, only integers are allowed                                           | Para Chile e Colômbia. Algum dos valores contém decimais.                                        |
+| E012           | Reason length must be less than or equal to 100                                          | O campo `motivo` supera os 100 caracteres.                                                  |
+| E013           | External Reference length must be less than or equal to 50                               | O campo `reference` supera os 50 caracteres.                                               |
+| E014           | Tax must be 0, 5 or 19                                                                   | Para Colômbia. Valores de taxas devem ser da lista de valores possíveis.                    |

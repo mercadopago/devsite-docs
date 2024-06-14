@@ -1,10 +1,10 @@
 # Descargar un archivo 
 
-Utilizando la terminal, aprende cómo descargar un archivo via [Consola SFTP](/developers/es/docs/links-and-debts/integration-configuration/download#bookmark_consola_sftp) y [SFTP batch scripting](/developers/es/docs/links-and-debts/integration-configuration/download#bookmark_sftp_batch_scripting). La Consola SFTP es adecuada para uso manual, pero no para automatizaciones. Para automatizaciones, utiliza SFTP batch scripting, que requiere la creación de un script SFTP, donde cada línea representa un comando SFTP. 
+Utilizando la terminal, aprende cómo descargar un archivo via [Consola SFTP](/developers/es/docs/links-and-debts/integration-configuration/download#bookmark_consola_sftp) y [SFTP batch scripting](/developers/es/docs/links-and-debts/integration-configuration/download#bookmark_sftp_batch_scripting). La Consola SFTP es adecuada para uso manual, pero no para automatizaciones. Para automatizaciones, utiliza SFTP batch scripting, que requiere la creación de un script donde cada línea representa un comando SFTP.
 
 ## Consola SFTP
 
-Tomando como ejemplo el código a continuación, sigue los siguientes pasos para descargar un archivo usando la consola SFTP.
+Usando como ejemplo el código a continuación, siga estos pasos para descargar un archivo utilizando la consola SFTP.
 
 ```terminal
 UY0FVFGW103Q05P:~ user$ cd $HOME/demo
