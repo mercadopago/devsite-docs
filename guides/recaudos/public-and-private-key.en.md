@@ -12,6 +12,8 @@ ssh-keygen -t rsa -b 4096
 
 > NOTE
 >
+> NOTE
+>
 > `-b 4096` corresponds to 4096 bits, which is the recommended, but not mandatory, amount for SSH key creation.
 
 As a result, two keys will be generated: one **public** and one **private**. While the public key will be provided to Mercado Pago, the private key will be used to establish the connection to the SFTP server.
