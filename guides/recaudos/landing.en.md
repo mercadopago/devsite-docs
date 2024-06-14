@@ -1,3 +1,4 @@
+---
 content_section_with_media: 
  - title: Massive Links and Debts (SFTP)
  - message: Mercado Pago's Debt Management solution allows creating debts in batches efficiently using an SFTP service provided by the platform to process the information contained in the files. Debts can be paid with the Mercado Pago Wallet, through the "Accounts and Services" option. Additionally, the solution for Massive Links generation allows the creation of Payment Links in batches, following a process similar to the debt flow, by processing files.
