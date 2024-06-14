@@ -6,13 +6,13 @@ At the end of the payment process, it is possible to redirect the buyer back to 
 >
 > Automatic redirection
 >
-> If you want the redirection for approved payments to be automatic, without rendering a return button, you must also add the `auto_return` attribute with the value `approved`. The redirect time will be 40 seconds.
+> If you want the redirection for approved payments to be automatic, egardless of clicking the "Return to site" button that will be on the screen, you must also add the `auto_return` attribute with the value `approved`. **The redirect time will be 40 seconds**.
 
 In the following tables you will find the details of each of the possible request and response parameters.
 
 | Attribute | 	Description |
 | ------------ 	| 	-------- |
-| `auto_return` | Buyers are automatically redirected to _site_ when payment is approved. The default value is `approved`. The redirect time is 40 seconds and this cannot be customized. |
+| `auto_return` | Buyers are automatically redirected to site when payment is approved. The default value is `approved`. The redirect time is 40 seconds and this cannot be customized. |
 | `back_urls` | Return URL to the site. Possible scenarios are:<br/><br/>`success`: Return URL when payment is approved.<br/><br/>`pending`: Return URL when payment is pending.<br/><br/> `failure`: Return URL when payment is rejected.
 
 > WARNING
@@ -40,9 +40,9 @@ To define the `back_urls`, use one of the SDKs below informing the URLs where th
 $preference = new MercadoPago\Preference();
 //...
 $preference->back_urls = array(
-"success" => "https://www.your-website/success",
-"failure" => "http://www.your-website/failure",
-"pending" => "http://www.your-website/pending"
+    "success" => "https://www.seu-site/success",
+    "failure" => "http://www.seu-site/failure",
+    "pending" => "http://www.seu-site/pending"
 );
 $preference->auto_return = "approved";
 // ...
@@ -51,24 +51,24 @@ $preference->auto_return = "approved";
 ```node
 var preference = {}
 preference = {
-// ...
-"back_urls": {
-"success": "https://www.your-website/success",
-"failure": "http://www.your-website/failure",
-"pending": "http://www.your-website/pending"
-},
-"auto_return": "approved",
-// ...
+  // ...
+  "back_urls": {
+        "success": "https://www.seu-site/success",
+        "failure": "http://www.seu-site/failure",
+        "pending": "http://www.seu-site/pending"
+    },
+    "auto_return": "approved",
+  // ...
 }
 ```
 ```java
 PreferenceBackUrlsRequest backUrls =
 // ...
 PreferenceBackUrlsRequest.builder()
-.success("https://www.your-website/success")
-.pending("https://www.your-website/pending")
-.failure("https://www.your-website/failure")
-.build();
+       .success("https://www.seu-site/success")
+       .pending("https://www.seu-site/pending")
+       .failure("https://www.seu-site/failure")
+       .build();
 
 PreferenceRequest request = PreferenceRequest.builder().backUrls(backUrls).build();
 // ...
@@ -76,39 +76,38 @@ PreferenceRequest request = PreferenceRequest.builder().backUrls(backUrls).build
 ```ruby
 # ...
 preference_data = {
-# ...
-back_urls = {
-success: 'https://www.your-website/success',
-failure: 'https://www.your-website/failure',
-pending: 'https://www.your-website/pendings'
-},
-auto_return: 'approved'
-# ...
+  # ...
+  back_urls = {
+    success: 'https://www.tu-sitio/success',
+    failure: 'https://www.tu-sitio/failure',
+    pending: 'https://www.tu-sitio/pendings'
+  },
+  auto_return: 'approved'
+  # ...
 }
 # ...
 ```
 ```csharp
 var request = new PreferenceRequest
 {
-// ...
-BackUrls = new PreferenceBackUrlsRequest
-{
-Success = "https://www.your-website/success",
-Failure = "http://www.your-website/failure",
-Pending = "http://www.your-website/pendings",
-},
-AutoReturn = "approved",
+    // ...
+    BackUrls = new PreferenceBackUrlsRequest
+    {
+        Success = "https://www.tu-sitio/success",
+        Failure = "http://www.tu-sitio/failure",
+        Pending = "http://www.tu-sitio/pendings",
+    },
+    AutoReturn = "approved",
 };
 ```
 ```python
 preference_data = {
-"back_urls": {
-"success": "https://www.your-website/success",
-"failure": "https://www.your-website/failure",
-"pending": "https://www.your-website/pendings"
-},
-"auto_return": "approved"
+    "back_urls": {
+        "success": "https://www.tu-sitio/success",
+        "failure": "https://www.tu-sitio/failure",
+        "pending": "https://www.tu-sitio/pendings"
+    },
+    "auto_return": "approved"
 }
 ```
 ]]]
-

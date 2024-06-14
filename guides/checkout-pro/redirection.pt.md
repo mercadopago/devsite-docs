@@ -6,7 +6,7 @@ Ao final do processo de pagamento, é possível redirecionar o comprador novamen
 >
 > Redirecionamento automático
 >
-> Caso queira que o redirecionamento para os pagamentos aprovados seja automático, sem a renderização de um botão de retorno, é preciso adicionar também o atributo `auto_return` com valor `approved`. O tempo de redirecionamento será de 40 segundos.
+> Caso queira que o redirecionamento para os pagamentos aprovados seja automático, independentemente do clique no botão "Voltar ao site" que estará em tela, é preciso adicionar também o atributo `auto_return` com valor `approved`. **O tempo de redirecionamento será de 40 segundos**.
 
 Nas tabelas a seguir você encontra o detalhe de cada um dos possíveis parâmetros de requisição e de resposta.
 
@@ -29,7 +29,6 @@ Através das `back_urls`, serão retornados os seguintes parâmetros:
 | `status` | Status do pagamento. Ex.: `approved` para um pagamento aprovado ou `pending` para um pagamento pendente. |
 | `external_reference` | Referência que pode sincronizar com seu sistema de pagamentos. |
 | `merchant_order_id` | ID (identificador) da ordem de pagamento gerada no Mercado Pago. |
-
 
 Para definir as `back_urls`, utilize um dos SDKs abaixo informando as URLs para onde o comprador deverá ser direcionado quando finalizar o pagamento.
 
