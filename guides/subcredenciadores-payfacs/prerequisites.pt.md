@@ -1,6 +1,6 @@
 # Pré-requisitos
 
-Para efetuar seus pagamentos no modelo de Facilitador de Pagamento, é essencial cumprir com os seguintes pré-requisitos:
+Para efetuar seus pagamentos no modelo de Facilitador de Pagamento, é necessário cumprir com os seguintes pré-requisitos:
 
 | Requisito | Descrição |
 |---|---|
