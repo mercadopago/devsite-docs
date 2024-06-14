@@ -46,9 +46,9 @@ O script SFTP é executado com o seguinte comando, onde `batch_script_file_name`
 shell> sftp -b batch_script_file_name username@sftp.mercadolibre.io
 ```
 
-> NOTA
+> NOTE
 >
-> Nota
+> Importante
 >
 > Neste exemplo, são utilizados o nome e o diretório padrão quando a chave `ssh-rsa` é gerada. Caso contrário, deve-se utilizar o parâmetro `-i`.
 

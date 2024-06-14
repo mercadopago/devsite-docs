@@ -27,6 +27,7 @@ A chave pública gerada consiste em 3 colunas:
 
 Exemplo:
 
+
 ```ssh-rsa 
 ssh-rsa CCCCB3NzaC1yc2EAAAADAQABAAABgQDIuC0emFLk1nGC1MCmJDqHzJy9N3WGJFCrDY8EuhcrpCP+5R6X/LnVESwn291IR2B7cO6jZtv6v8OohdWl9nCfNndm5w9HRuujrbpPebADGbrG89srHCuQVLY8zg+/cvLk0yGGvsSkpCZsJDm74VHngkwxdnR3T0dfpHFG/JcFjeNPpCW4d9N9gfkpmclBpfB14VMLoQ2K2xwLbujaxra0p0EbEbc/eq1vdN+m2Ja7WyR1L+66Cp3NKw1+suFIlP2H58kn7988JZ4baenfwOv8qQZu6WqsyJTecSwDgBn6Jr7WbpKfq2+nARif96nip5rFwxKWkHs7pDGu2XniurzlGe7MQaRc/XLdeAewS1qkt9qS51b1hy816KvcBFC5zPOH2P3yFWTcEFDT3WUfJ0o1MQk22eAHuCSK1tjRdDCGoB5sCjYYGCPonIaRc85CRNi/5CpD0i+xmopW1gOK6Q7dZSj6kSaphK1WK47Mdn20Eeu+OADLqnWN/np2qWyK/68= user@host
 ```

@@ -1,6 +1,6 @@
 # Erros no processamento
 
-A seguir, são detalhados os controles realizados a partir do Self Service para assegurar o correto funcionamento do fluxo _end to end_ e para preservar a experiência dos nossos usuários. Se for detectada alguma das situações abaixo, a informação completa não será processada e deverá ser enviada novamente por completo.
+Nesta seção, detalhamos os controles realizados a partir do Self Service para assegurar o correto funcionamento do fluxo _end to end_ e para preservar a experiência dos nossos usuários. Se for detectada alguma das situações abaixo, a informação completa não será processada e deverá ser enviada novamente por completo.
 
 ## Controles de conteúdo
 
