@@ -4,13 +4,15 @@ Yape é um aplicativo móvel que permite ao cliente realizar transferências ban
 
 O fluxo de uma transação com Yape começa com a criação de um token, que deve ser enviado na etapa de criação do pagamento. Esse token pode ser gerado de duas maneiras: diretamente por uma API ou utilizando o SDK JS do Mercado Pago.
 
+## Integração por SDK javascript
+
 Com o Checkout API, você pode oferecer pagamentos com Yape utilizando o método de SDK JS para gerar um token. Para isso, é necessário enviar os campos de celular e OTP (código encontrado no aplicativo Yape). Com este token, é possível criar um pagamento desse tipo.
 
 A seguir, é apresentado o fluxo de sequência:
 
 ![Fluxo funcional](/images/api/yape.png)
 
-Para oferecer pagamentos com Yape, siga os seguintes passos.
+Para oferecer pagamentos com Yape, siga os seguintes passos:
 
 ## Importar o MercadoPago.js
 
