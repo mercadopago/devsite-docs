@@ -2,7 +2,7 @@
 
 Utilizando la terminal, puedes cargar un archivo vía [Consola SFTP](/developers/es/docs/links-and-debts/integration-configuration/upload#bookmark_consola_sftp) o [SFTP batch scripting](/developers/es/docs/links-and-debts/integration-configuration/upload#bookmark_sftp_batch_scripting). La consola SFTP es adecuada para uso manual, pero no para automatizaciones. Para estos casos, utiliza SFTP batch scripting, que requiere la creación de un script donde cada línea representa un comando SFTP.
 
-> Recomendamos evitar subir arquivos com o mesmo nome, pois isso pode desencadear reprocessamento. Como boa prática e para facilitar a identificação dos arquivos de entrada e saída, sugere-se adicionar uma marca de tempo ou _timestamp_ no final do nome do arquivo.
+> Recomendamos evitar subir archivos con el mismo nombre, ya que esto podría desencadenar un reprocesamiento. Como buena práctica, y para facilitar la identificación de los archivos de entrada y salida, se sugiere agregar una marca de tiempo o _timestamp_ al final del nombre del archivo.
 
 ## Consola SFTP
 
