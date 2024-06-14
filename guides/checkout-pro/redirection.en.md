@@ -6,7 +6,7 @@ At the end of the payment process, it is possible to redirect the buyer back to 
 >
 > Automatic redirection
 >
-> If you want the redirection for approved payments to be automatic, you must also add the `auto_return` attribute with the value `approved`. By default, a "Return to site" button will also be displayed. **The redirect time will be 40 seconds**.
+> If you want the redirection for approved payments to be automatic, you must also add the `auto_return` attribute with the value `approved`. By default, a "Return to site" button will also be displayed. **The redirect time will be 5 seconds**.
 
 In the following tables you will find the details of each of the possible request and response parameters.
 
