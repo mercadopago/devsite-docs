@@ -136,7 +136,7 @@ Após instalar a nova versão, é necessário desinstalar o antigo app. Para des
 
 5. Em "Formas de pagamentos aceitas", localize o antigo app com o nome "Mercado Pago" e selecione-o.
 
-![uninstall app 4](/images/shopify/uninstall-app-4-pt.png)
+![uninstall app 4](/images/shopify/uninstall-app-6-pt.png)
 
 6. Por fim, clique em **Desativar Mercado Pago** > **Desativar Mercado Pago**.
 
