@@ -8,6 +8,8 @@ O **Mercado Pago Cartões** ([Checkout Transparente](/developers/pt/docs/checkou
 > Atenção
 >
 > O novo app é exclusivo para pagamentos com cartões. Para realizar pagamentos com **Pix** ou **boleto bancário**, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
+> <br><br>
+> Em breve, comunicaremos o lançamento do novo app apenas para Pix e indicaremos a documentação necessária para migração ou instalação.
 
 ------------
 ----[mlm]----

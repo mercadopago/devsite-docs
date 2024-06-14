@@ -8,6 +8,8 @@
 > Attention
 >
 > The new app is only for card payments. To process payments with **Pix** or **boleto bancário**, use [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
+> <br><br>
+> We will soon announce the launch of the new app exclusively for Pix and provide the necessary documentation for migration or installation.
 
 ------------
 ----[mlm]----
