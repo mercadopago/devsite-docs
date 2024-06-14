@@ -12,9 +12,9 @@ Os tipos de documentos aceitos ao efetuar uma cobrança através do Mercado Pago
 
 Os tipos de documentos aceitos podem ser obtidos da seguinte forma:
 
-Para consultar todos os tipos de documentos disponíveis por país e obter uma lista com a identificação e os detalhes de cada um deles, realize um GET ao endpoint [/v1/identification_types](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/identification_types/_identification_types/get). 
+Para consultar todos os tipos de documentos disponíveis por país e obter uma lista com a identificação e os detalhes de cada um deles, realize um GET ao endpoint [/v1/identification_types](/developers/pt/reference/identification_types/_identification_types/get). 
 
-Você poderá obter mais informações sobre os atributos em [Obter tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/identification_types/_identification_types/get) nas referências da API.
+Você poderá obter mais informações sobre os atributos em [Obter tipos de documentos](/developers/pt/reference/identification_types/_identification_types/get) nas referências da API.
  
 ## Disponibilidade dos documentos por país
 

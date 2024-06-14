@@ -4,7 +4,7 @@ When using OAuth, it is important to take certain aspects into account so that t
 
 Below, you will find a guide to possible errors and good practices to keep in mind.
 
-## Correct use of values in request headers
+## Correct use of values in request headers 
 
 Always use the `accept` and `content-type` headers in your POST request. Be careful not to add values to headers that are not part of the integration to avoid getting a response error.
 
@@ -16,7 +16,6 @@ In your POST call, be careful to use only the requested `params` values. Do not 
 
 ![oauth_params](/images/oauth/oauth-1.png)
 
-
 ## Correct use of Query Params
 
 Remember not to send any parameters inside Query Params. Send the parameters within the request body as indicated in [API Reference](/developers/en/reference/oauth/_oauth_token/post).
@@ -25,7 +24,7 @@ Remember not to send any parameters inside Query Params. Send the parameters wit
 
 ## Correct use of the 'grant_type' field
 
-Always use the `grant_type` field in your requests with the `authorization_code` value. Remember that if you send another value, it is possible that you will receive an error in response.
+Always use the `grant_type` field in your requests with the `authorization_code` or `client_credentials` values. Remember that if you send another value, it is possible that you will receive an error in response.
 
 ![oauth_grant_type](/images/oauth/oauth_granttype_v2.png)
 
@@ -38,4 +37,3 @@ To enhance integration security, we recommend including the `state` parameter in
 ![oauth_state](/images/oauth/oauth_state_v4.png)
 
 To find more information about the request, its parameters, and the possible success and error responses you may receive, go to [API Reference](/developers/en/reference/oauth/_oauth_token/post) documentation.
-

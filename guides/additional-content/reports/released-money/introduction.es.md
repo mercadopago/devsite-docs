@@ -33,7 +33,7 @@ Además, le permite saber si su dinero se encuentra en un estado disponible o re
 
 Los informes que genere a partir de ----[mpe]---- enero de 2022------------  ----[mlu]---- marzo de 2022------------ ----[mla, mlm]---- octubre de 2022------------  ----[mco, mlc]---- agosto de 2022------------ ----[mlb]---- enero de 2023------------ tienen las siguientes características: 
 
-1. Los movimientos ahora se presentan en el orden en que ocurrieron, con lo cual puedess identificarlos con mayor facilidad y controlar tus ventas.
+1. Los movimientos ahora se presentan en el orden en que ocurrieron, con lo cual puedes identificarlos con mayor facilidad y controlar tus ventas.
 2. En caso de reclamación o contracargo relacionada con algún problema en el servicio o producto que vendiste, el valor correspondiente se retiene hasta que se resuelva la mediación. Esta información se refleja en su reporte y puede encontrarse buscando el prefijo "reserve-".
 3. Las transacciones relacionadas con retiros y/o transferencias de su saldo disponible aparecen como _payout_, y todas las mediaciones que surgen cuando se inicia o resuelve una reclamación aparecen como _dispute_. Para obtener la descripción de otras transacciones y términos, consulte [el glosario](/developers/es/docs/checkout-pro/additional-content/reports/released-money/report-use).
 4. Encontrará una nueva columna llamada "Sale detail" o "Detalle de venta" que proporciona información detallada sobre los artículos vendidos, facilitando la conciliación y el control de sus ventas. Cada entrada en esta columna muestra el primer elemento de la venta, seguido del agrupamiento de otros artículos.
