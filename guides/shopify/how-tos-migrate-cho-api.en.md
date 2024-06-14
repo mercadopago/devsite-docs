@@ -92,8 +92,8 @@ After installing the new version, it is necessary to uninstall the old app. To u
 2. In the store's admin panel, locate the app named "Checkout Transparente MP" and click on **Manage**.
 3. Click on the **additional options menu > Uninstall** and then on **Uninstall** again.
 4. Return to the store's admin panel and click on **Settings > Payments**.
-5. Locate the old app named "Mercado Pago" and click on **Manage**.
-6. Finally, click on **Deactivate** and then on **Uninstall**.
+5. In "Accepted payment methods," locate the old app named "Mercado Pago" and select it.
+6. Finally, click on **Deactivate Mercado Pago** and then on **Deactivate Mercado Pago**.
 
 > WARNING
 >

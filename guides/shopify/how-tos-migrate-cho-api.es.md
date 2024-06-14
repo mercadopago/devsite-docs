@@ -126,8 +126,8 @@ Después de instalar la nueva versión, es necesario desinstalar la aplicación 
 2. En el panel administrativo de la tienda, localiza la aplicación con el nombre "Checkout Transparente MP" y haz clic en **Gestionar**.
 3. Haz clic en el **menú de opciones adicionales > Desinstalar** y luego en **Desinstalar** nuevamente.
 4. Regresa al panel administrativo de la tienda y haz clic en **Configuraciones > Pagos**.
-5. Localiza la antigua aplicación con el nombre "Mercado Pago" y haz clic en **Gestionar**.
-6. Por último, haz clic en **Desactivar** y luego en **Desinstalar**.
+5. En "Formas de pago aceptadas", localiza la antigua aplicación con el nombre "Mercado Pago" y selecciónala.
+6. Por último, haz clic en **Desactivar Mercado Pago** y luego en **Desactivar Mercado Pago**.
 
 > WARNING
 >
