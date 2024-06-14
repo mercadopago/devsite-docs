@@ -22,7 +22,7 @@ sftp> bye
 ```
 
 1. Faça login no SFTP para abrir o console SFTP, conforme indicado na linha 1 do código.
-2. Acesse a pasta 'selfserviceinput', conforme indicado na linha 5 do código.
+2. Acesse a pasta "selfserviceinput", conforme indicado na linha 5 do código.
 3. Liste o conteúdo com o comando `ls`, conforme indicado na linha 6 do código (opcional, apenas para revisar antes de carregar um arquivo).
 4. Carregue o arquivo usando o comando `put ${absolutePathFileName}`, conforme indicado na linha 7 do código, podendo ser o caminho relativo.
 5. Verifique se o arquivo foi carregado, conforme indicado na linha 10 do código.

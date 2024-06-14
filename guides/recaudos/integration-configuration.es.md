@@ -4,9 +4,9 @@ El acceso seguro al servidor SFTP será configurado por Mercado Pago utilizando 
 
 ## Conectar con SFTP
 
-Para conectarse al servidor SFTP de Mercado Pago, utilice la clave privada asociada a la clave pública que fue proporcionada a Mercado Pago durante la configuración anterior. Para más información, consulte la documentación [Cómo crear una clave pública/privada SSH](/developers/es/docs/links-and-debts/public-and-private-key).
+Para conectarte al servidor SFTP de Mercado Pago, utiliza la clave privada asociada a la clave pública que fue proporcionada a Mercado Pago mediante el formulario inicial. Para más información, consulta la documentación [Cómo crear una clave pública/privada SSH](/developers/es/docs/links-and-debts/public-and-private-key).
 
-Podrá conectarse desde una terminal o desde un script ejecutado desde un cron. El comando a ejecutar es:
+Podrás conectarte desde una terminal o desde un script ejecutado desde un cron. El comando a ejecutar es:
 
 ```terminal
 shell> sftp -i ${dirname}/${id_rsa_sftp_ml} ${user_seller_sftp_ml}@sftp.mercadolibre.io

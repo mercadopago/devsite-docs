@@ -24,7 +24,7 @@ En el panel de FileZilla, encontrarás dos ventanas. La de la izquierda represen
 
 ## Descargar un archivo de resultado
 
-Un archivo de resultados contiene el procesamiento del archivo de deudas o de enlaces masivos cargados. Para descargar un archivo de resultado, arrastra y suelta el archivo desde la ventana derecha, correspondiente al servidor SFTP, hacia la izquierda, correspondiente a tu computador. 
+Un archivo de resultados contiene el procesamiento del archivo de deudas o de enlaces masivos cargado. Para descargar un archivo de resultado, arrastra y suelta el archivo desde la ventana derecha, correspondiente al servidor SFTP, hacia la izquierda, correspondiente a tu computador. 
 
 De esta manera, el archivo se encontrará automáticamente disponible en tu directorio.
 

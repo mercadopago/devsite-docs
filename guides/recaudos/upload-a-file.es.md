@@ -1,10 +1,10 @@
 # Cargar un archivo
 
-Utilizando la terminal, puedes cargar un archivo vía [Consola SFTP](/developers/es/docs/links-and-debts/integration-configuration/upload#bookmark_consola_sftp) o [SFTP batch scripting](/developers/es/docs/links-and-debts/integration-configuration/upload#bookmark_sftp_batch_scripting). Consola SFTP es adecuada para uso manual, pero no para automatizaciones. Para automatizaciones, utiliza SFTP batch scripting, que requiere la creación de un script donde cada línea representa un comando SFTP.
+Utilizando la terminal, puedes cargar un archivo vía [Consola SFTP](/developers/es/docs/links-and-debts/integration-configuration/upload#bookmark_consola_sftp) o [SFTP batch scripting](/developers/es/docs/links-and-debts/integration-configuration/upload#bookmark_sftp_batch_scripting). La consola SFTP es adecuada para uso manual, pero no para automatizaciones. Para estos casos, utiliza SFTP batch scripting, que requiere la creación de un script donde cada línea representa un comando SFTP.
 
 ## Consola SFTP
 
-Usando como ejemplo el código a continuación, siga estos pasos para cargar un archivo utilizando la consola SFTP.
+Usando como ejemplo el código a continuación, sigue estos pasos para cargar un archivo utilizando la consola SFTP.
 
 ```terminal
 UY0FVFGW103Q05P: ~ user$ sftp pg_sap@sftp-qa.mercadolibre.io

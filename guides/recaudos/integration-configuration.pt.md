@@ -22,8 +22,8 @@ Ambas as chaves (pública e privada) devem ser armazenadas no mesmo diretório n
 
 | Elemento                        | Identificação pelo Mercado Pago      | Detalhes                                         |
 |---------------------------------|--------------------------------------|--------------------------------------------------|
-| **Diretório**                   | `${dirname}`                         | Diretório interno do vendedor                    |
-| **Arquivo da chave privada**    | `${id_rsa_sftp_ml}`                  | Chave privada para autenticação no servidor SFTP |
-| **Arquivo da chave pública**    | `${id_rsa_sftp_ml}.pub`              | Chave pública compartilhada com o Mercado Pago     |
-| **Usuário para conexão**        | `${user_seller_sftp_ml}`             | Usuário fornecido pelo Mercado Pago              |
-| **Domínio dos servidores SFTP** | `sftp.mercadolibre.io`               | Domínio para acessar os servidores SFTP          |
+| **Diretório**                   | `${dirname}`                         | Diretório interno do vendedor.                  |
+| **Arquivo da chave privada**    | `${id_rsa_sftp_ml}`                  | Chave privada para autenticação no servidor SFTP. |
+| **Arquivo da chave pública**    | `${id_rsa_sftp_ml}.pub`              | Chave pública compartilhada com o Mercado Pago.     |
+| **Usuário para conexão**        | `${user_seller_sftp_ml}`             | Usuário fornecido pelo Mercado Pago.              |
+| **Domínio dos servidores SFTP** | `sftp.mercadolibre.io`               | Domínio para acessar os servidores SFTP.          |

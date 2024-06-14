@@ -15,7 +15,7 @@ A continuación se detallan los controles realizados desde Self Service para ase
 | E007            | First Due amount not present or is not greater than 0                               | Falta el importe del primer vencimiento.                                                    |
 | E008            | Second Due amount not present or is not greater than 0                              | Existe fecha de segundo vencimiento, pero falta el importe del segundo vencimiento.         |
 | E009            | Third Due amount not present or is not greater than 0                               | Existe fecha de tercer vencimiento, pero falta el importe del tercer vencimiento.           |
-| E010            | Amount has decimals, only integers are allowed                                      | Para Chile y Colômbia. Alguno de los montos contiene decimales.                                  |
+| E010            | Amount has decimals, only integers are allowed                                      | Para Chile y Colombia. Alguno de los montos contiene decimales, y no están permitidos.                                  |
 | E012            | Reason length must be less than or equal to 100                                     | El campo `motivo` supera los 100 caracteres.                                                |
 | E013            | External Reference length must be less than or equal to 50                          | El campo `reference` supera los 50 caracteres.                                             |
-| E014            | Tax must be 0, 5 or 19                                                              | Para Colombia. Valores de taxes deben ser del listado de valores posibles.                  |
+| E014            | Tax must be 0, 5 or 19                                                              | Para Colombia. Los valores de `taxes` deben ser del listado de valores posibles.                  |
