@@ -19,31 +19,6 @@
 
 To install the **Mercado Pago Cards** checkout on a Shopify store, we offer the two installation models below.
 
-## Install via Marketplace
-
-1. From the link received from Mercado Pago's commercial department, access the **Mercado Pago Cards** app page on the "Marketplace" and click **Install**. If you haven't already, log in with your Shopify account.
-2. Read carefully the information about the requested permissions and click **Install** again.
-3. After accepting the requested permissions, click **Manage account** to input your credentials and link your Mercado Pago account to the store.
-
-> The credentials are responsible for identifying the account collecting the payments that you will receive in your store.
-
-4. In the Mercado Pago admin, go to **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** and select your application. If you haven't created an application yet, access the [developer Dashboard documentation](/developers/en/guides/additional-content/your-integrations/dashboard) to learn how to create one.
-5. Click on **Production credentials** in the left menu. Copy the `public_key` and `access_token`.
-6. Return your store settings on Shopify and enter your production credentials (`access_token` and `public_key`) in the corresponding fields, **being careful not to swap the fields when copying and pasting the credentials**.
-
-> NOTE
->
-> Note
->
-> Once entered, the credentials will no longer be required for future installations of Mercado Pago apps for Shopify.
-> <br><br>
-> Remember that, when changing the Shopify password, **it is necessary to renew your credentials**. To do so, follow the instructions in the [Best practices for credentials](/developers/en/docs/shopify/best-practices/credentials-best-practices/secure-credentials) documentation. Then, to update them on your Shopify account,  click on **Manage account** and fill in the corresponding fields with your `access_token` and `public_key` **being careful not to swap the fields when copying and pasting the credentials**.
-
-7. Click on **Save credentials**.
-8. Finally, click on the **Verify activation** option of Mercado Pago Cards, go to the "Settings" section of Shopify, and click **Activate** to activate the app and complete the installation.
-
-Done! The **Mercado Pago Cards** checkout is ready to receive payments.
-
 ## Install via Shopify admin panel
 
 1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
@@ -70,6 +45,39 @@ Done! The **Mercado Pago Cards** checkout is ready to receive payments.
 
 11. Click on **Save credentials**.
 12. Finally, click on the **Verify activation** option of Mercado Pago Cards, go to the **Settings** section of Shopify, and click **Activate** to activate the app and complete the installation.
+
+Done! The **Mercado Pago Cards** checkout is ready to receive payments.
+
+## Install via Marketplace
+
+----[mlb]----
+
+1. From the [link received](https://apps.shopify.com/mercado-pago-cartoes?locale=pt-BR) from Mercado Pago's commercial department, access the **Mercado Pago Cards** app page on the "Marketplace" and click **Install**. If you haven't already, log in with your Shopify account.
+------------
+----[mlm]----
+
+1. From the link received from Mercado Pago's commercial department, access the **Mercado Pago Cards** app page on the "Marketplace" and click **Install**. If you haven't already, log in with your Shopify account.
+
+------------
+2. Read carefully the information about the requested permissions and click **Install** again.
+3. After accepting the requested permissions, click **Manage account** to input your credentials and link your Mercado Pago account to the store.
+
+> The credentials are responsible for identifying the account collecting the payments that you will receive in your store.
+
+4. In the Mercado Pago admin, go to **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** and select your application. If you haven't created an application yet, access the [developer Dashboard documentation](/developers/en/guides/additional-content/your-integrations/dashboard) to learn how to create one.
+5. Click on **Production credentials** in the left menu. Copy the `public_key` and `access_token`.
+6. Return your store settings on Shopify and enter your production credentials (`access_token` and `public_key`) in the corresponding fields, **being careful not to swap the fields when copying and pasting the credentials**.
+
+> NOTE
+>
+> Note
+>
+> Once entered, the credentials will no longer be required for future installations of Mercado Pago apps for Shopify.
+> <br><br>
+> Remember that, when changing the Shopify password, **it is necessary to renew your credentials**. To do so, follow the instructions in the [Best practices for credentials](/developers/en/docs/shopify/best-practices/credentials-best-practices/secure-credentials) documentation. Then, to update them on your Shopify account,  click on **Manage account** and fill in the corresponding fields with your `access_token` and `public_key` **being careful not to swap the fields when copying and pasting the credentials**.
+
+7. Click on **Save credentials**.
+8. Finally, click on the **Verify activation** option of Mercado Pago Cards, go to the "Settings" section of Shopify, and click **Activate** to activate the app and complete the installation.
 
 Done! The **Mercado Pago Cards** checkout is ready to receive payments.
 

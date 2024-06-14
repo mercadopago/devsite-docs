@@ -68,8 +68,15 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 
 ## Instalar via Marketplace
 
+----[mlb]----
+
+1. A partir do [link recebido](https://apps.shopify.com/mercado-pago-cartoes?locale=pt-BR) pelo setor comercial do Mercado Pago, acesse a página do app **Mercado Pago Cartões** no "Marketplace" e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
+
+------------
+----[mlm]----
 1. A partir do link recebido pelo setor comercial do Mercado Pago, acesse a página do app **Mercado Pago Cartões** no "Marketplace" e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
 
+------------
 ![installation mkplace 0](/images/shopify/installation-cards-mkplace-0-pt.png)
 
 2. Leia com atenção as informações sobre as permissões solicitadas e clique novamente em **Instalar**.
