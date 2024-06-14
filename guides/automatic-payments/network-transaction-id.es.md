@@ -79,6 +79,10 @@ Respuesta:
 }
 ```
 
+| Parámetro  | Tipo  | Descripción  | Ejemplo |
+| --- | --- | --- | --- |
+| type | string | Está asociado al identificador de la bandera | 584152665425694 |
+
 > WARNING
 >
 > Atención

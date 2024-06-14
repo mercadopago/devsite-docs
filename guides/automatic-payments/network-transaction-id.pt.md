@@ -79,6 +79,10 @@ Resposta:
 }
 ```
 
+| Parâmetro  | Tipo  | Descrição  | Exemplo |
+| --- | --- | --- | --- |
+| network_transaction_id | string | Está associado ao identificador da bandeira | 584152665425694 |
+
 > WARNING
 >
 > Atenção

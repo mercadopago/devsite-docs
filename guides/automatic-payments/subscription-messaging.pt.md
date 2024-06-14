@@ -1,6 +1,6 @@
-# Mensageria de subscrição
+# Mensageria de Pagamentos automáticos
 
-A **Mensageria de subscrição** envolve informações dos pagamentos recorrentes (ID de pagamentos anteriores, ID da subscrição, número de vezes que o pagamento será gerado e POI com `type = SUBSCRIPTIONS`) que são enviadas para a [API de Pagamentos](/developers/pt/reference/payments/_payments/post) com o intuito de aumentar a taxa de aprovação para pagamentos deste tipo.
+A Mensageria de Pagamentos automáticos, ou **Mensageria de subscrição**, envolve informações dos pagamentos recorrentes (ID de pagamentos anteriores, ID da subscrição, número de vezes que o pagamento será gerado e POI com `type = SUBSCRIPTIONS`) que são enviadas para a [API de Pagamentos](/developers/pt/reference/payments/_payments/post) com o intuito de aumentar a taxa de aprovação para pagamentos deste tipo.
 
 > WARNING
 >
@@ -87,3 +87,22 @@ Exemplo:
     }
 }
 ```
+
+| Parâmetro  | Tipo  | Descrição  | Exemplo |
+| --- | --- | --- | --- |
+| type | string | Indica o tipo de 'poi' | SUBSCRIPTIONS |
+| first_time_use| boolean | Indica se é o primeiro pagamento da assinatura | true/false |
+| subscription_id | string | Identificador de assinatura | "COLLECTORPADRE-SUBSCRIPCION_ID" |
+| subscription_sequence.number |integer | Indica o número do pagamento subsequente.  | 3 |
+| subscription_sequence.total |integer | Indica o total da assinatura. Para assinaturas permanentes, definir como 'null' | 12 |
+| invoice_period.period |integer | Indica a frequência do pagamento recorrente | 1 |
+| invoice_period.type | string | Indica o tipo de período de pagamento recorrente | daily, monthly ou yearly |
+| user_present | boolean | Indica se houve intervenção do usuário no momento da criação do pagamento |true/false |
+| billing_date | string | Data de cobrança | 2024-03-16 |
+| payment_reference.id | string | ID do pagamento de validação ok | 20792195335 |
+| transaction_amount | number | Valor do pagamento |100 |
+| token | string | Token do cartão | 12346622341 |
+| description | string | Descrição do pagamento | "Pagamento de teste" |
+| payment_method_id | string | Indica o identificador do meio de pagamento selecionado para efetuar o pagamento | master |
+| payer.email | string | E-mail do pagador | buyer@examplemail.com |
+| payer.type | string | Tipo de identificação do pagador associado | guest |

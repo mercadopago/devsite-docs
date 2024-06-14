@@ -1,6 +1,6 @@
-# Subscription messaging
+# Automatic payments messaging
 
-**Subscription Messaging** involves information about recurring payments (previous payment ID, subscription ID, number of times the payment will be generated, and POI with `type = SUBSCRIPTIONS`) that is sent to the [Payments API](/developers/en/reference/payments/_payments/post) with the aim of increasing the approval rate for these types of payments.
+Automatic payments messaging, or **Subscription Messaging**, involves information about recurring payments (previous payment ID, subscription ID, number of times the payment will be generated, and POI with `type = SUBSCRIPTIONS`) that is sent to the [Payments API](/developers/en/reference/payments/_payments/post) with the aim of increasing the approval rate for these types of payments.
 
 > WARNING
 >
@@ -87,3 +87,22 @@ Example:
     }
 }
 ```
+
+| Parameter  | Type  | Description  | Example |
+| --- | --- | --- | --- |
+| type | string | Indicates the type of 'poi'	 | SUBSCRIPTIONS |
+| first_time_use| boolean | Indicates if it is the first payment of the subscription | true/false |
+| subscription_id | string | Subscription identifier | "COLLECTORPADRE-SUBSCRIPCION_ID" |
+| subscription_sequence.number |integer | Indicates the number of the subsequent payment	  | 3 |
+| subscription_sequence.total |integer | Indicates the total number of the subscription. For permanent subscriptions, set to 'null' | 12 |
+| invoice_period.period |integer | Indicates the frequency of the recurring payment	 | 1 |
+| invoice_period.type | string | Indicates the type of recurring payment period | daily, monthly ou yearly |
+| user_present | boolean | Indicates if there was user intervention at the time of payment creation |true/false |
+| billing_date | string | Billing date | 2024-03-16 |
+| payment_reference.id | string | Validation OK payment ID | 20792195335 |
+| transaction_amount | number | Payment amount |100 |
+| token | string | Card token | 12346622341 |
+| description | string | Payment description | "Pagamento de teste" |
+| payment_method_id | string | Indicates the identifier of the selected payment method | master |
+| payer.email | string | Payer's email | buyer@examplemail.com |
+| payer.type | string | Type of payer identification associated | guest |

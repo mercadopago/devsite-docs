@@ -79,6 +79,10 @@ Response:
 }
 ```
 
+| Parameter  | Type  | Description  | Example |
+| --- | --- | --- | --- |
+| network_transaction_id | string | Associated with the network identifier	 | 584152665425694 |
+
 > WARNING
 >
 > Attention
