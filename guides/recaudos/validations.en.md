@@ -18,4 +18,4 @@ Below are the controls carried out by Self Service to ensure the correct functio
 | E010       | Amount has decimals, only integers are allowed  | For Chile and Colômbia. Some of the amounts contain decimals.                                   |
 | E012       | Reason length must be less than or equal to 100 | The `reason` field exceeds 100 characters.                                                 |
 | E013       | External Reference length must be less than or equal to 50 | The `reference` field exceeds 50 characters.                                               |
-| E014       | Tax must be 0, 5 or 19                          | For Colombia. Tax values must be from the list of possible values.                         |
+| E014       | Tax must be 0, 5 or 19                          | For Colombia. `taxes` values must be from the list of possible values.                         |

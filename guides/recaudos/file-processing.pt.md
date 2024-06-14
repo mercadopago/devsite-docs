@@ -8,7 +8,7 @@ Para mais informações, leia os detalhes do fluxo a seguir.
 
 ## Fluxo funcional
 
-1. O usuário gera e carrega um arquivo contendo as informações a serem processadas, respeitando o formato correto para o arquivo de carga. Para mais informações, consulte a [documentação sobre as especificações de formato](/developers/pt/docs/links-and-debts/format-specifications).
+1. O usuário gera e carrega um arquivo contendo as informações a serem processadas, respeitando o formato correto para o arquivo de carga. Para mais informações, consulte as [instruções para configuração do arquivo](/developers/pt/docs/links-and-debts/format-specifications).
 
 | Domínio               | Diretório          |
 |----------------------|--------------------|

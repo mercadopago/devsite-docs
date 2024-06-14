@@ -6,8 +6,7 @@ To create Debts in bulk or Massive links, upload a file with customer data follo
 >
 > Important
 >
-> Use a comma (,) to separate the information in your file. <br>
-> Do not enter the column names in the file.
+> Use a comma (,) to separate the information in your file. Additionally, do not include the column names in the file.
 
 | Order in the File | Category               | Data                | Description                                                                                                                                          | Format                         | Example      |
 |-------------------|------------------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|--------------|
@@ -15,11 +14,11 @@ To create Debts in bulk or Massive links, upload a file with customer data follo
 | 2                 | Payment Links: Optional / Debts: Conditionally mandatory for companies in Argentina that identify their customers by DNI/CUIL/CUIT | DNI/CUIL/CUIT       | DNI, CUIL, or CUIT of the customer. | Integer field up to 11 characters | 01234567895 |
 | 3                 | Payment Links: Optional / Debts: Conditionally mandatory for companies that identify their customers by Customer Code | Customer Code       | Identifier used by the company to identify their customers. | Alphanumeric field of 1 to 20 characters | COD1234      |
 | 4                 | Mandatory              | 1st Due Date        | Date of the first due date, in YYYYMMDD format                                                                                                          | Numeric field of 8 characters | 20242012     |
-| 5                 | Mandatory              | 1st Due Amount      | Amount of the first due date. It is an integer where the last two digits are decimals                                                                | Numeric field with up to 2 decimals. Use a dot, not a comma | 123.50       |
+| 5                 | Mandatory              | 1st Due Amount      | Amount of the first due date. It is an integer where the last two digits are decimals                                                                | Numeric field with up to 2 decimals. Use a dot, not a comma. Decimals are not allowed in Chile and Colombia. | 123.50       |
 | 6                 | Optional               | 2nd Due Date        | Date of the second due date, in YYYYMMDD format                                                                                                        | Numeric field of 8 characters | 20242212     |
-| 7                 | Optional               | 2nd Due Amount      | Amount of the second due date. It is an integer where the last two digits are decimals                                                                | Numeric field with up to 2 decimals. Use a dot, not a comma | 130.00       |
+| 7                 | Optional               | 2nd Due Amount      | Amount of the second due date. It is an integer where the last two digits are decimals                                                                | Numeric field with up to 2 decimals. Use a dot, not a comma. Decimals are not allowed in Chile and Colombia. | 130.00       |
 | 8                 | Optional               | 3rd Due Date        | Date of the third due date, in YYYYMMDD format                                                                                                         | Numeric field of 8 characters | 20242212     |
-| 9                 | Optional               | 3rd Due Amount      | Amount of the third due date. It is an integer where the last two digits are decimals                                                                 | Numeric field with up to 2 decimals. Use a dot, not a comma | 147.50       |
+| 9                 | Optional               | 3rd Due Amount      | Amount of the third due date. It is an integer where the last two digits are decimals                                                                 | Numeric field with up to 2 decimals. Use a dot, not a comma. Decimals are not allowed in Chile and Colombia. | 147.50       |
 | 10                | Optional               | Full Name           | Full name of the customer (no special characters)                                                                                                     | Alphabetic field up to 100 characters | Jose Silva   |
 | 11                | Optional               | Customer Phone      | Customer's phone number                                                                                                                               | Alphanumeric field up to 20 characters | 4852698653201|
 | 12                | Optional               | Customer E-mail     | Customer's e-mail address to receive notifications about new debts                                                                                    | Alphanumeric field up to 64 characters | name@mail.com |
@@ -27,9 +26,9 @@ To create Debts in bulk or Massive links, upload a file with customer data follo
 | 14                | Optional               | Comment             | Concept or comment. The seller decides what to use for identification                                                                                 | Alphanumeric field                  | Ref 2024     |
 | 15                | Optional (only for cases in Colombia) | Tax                  | Tax.                                                                                                                                                   | Integer field. Can be 0, 5, or 19. If no value is entered, 19 will be used by default | 5            |
 
-> NOTE
+> WARNING
 >
-> How to name the file before uploading
+> Important
 >
 > Your company can choose the name of the file, which must follow the **.csv** format. Allowed characters are letters, numbers, hyphen, underscore, and dot.
 
@@ -54,8 +53,8 @@ To identify the examples according to the mandatory fields and the order in the 
 | Order in the File | Category              | Example               |
 |-------------------|-----------------------|-----------------------|
 | 1                 | Mandatory             | ext2024030614313      |
-| 2                 | Conditional Optional  | 521998672             |
-| 3                 | Conditional Optional  | 1002                  |
+| 2                 | Conditional   | 521998672             |
+| 3                 | Conditional   | 1002                  |
 | 4                 | Mandatory             | 20250312              |
 | 5                 | Mandatory             | 549.57                |
 | 6                 | Optional              | 20250315              |

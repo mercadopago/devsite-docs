@@ -6,8 +6,7 @@ Para criar Dívidas em grande quantidade ou Links massivos, faça o upload de um
 >
 > Importante
 >
-> Utilize uma vírgula (,) para separar as informações no seu arquivo. <br>
-> Não inclua o nome das colunas no arquivo.
+> Utilize uma vírgula (,) para separar as informações no seu arquivo. Utilize uma vírgula (,) para separar as informações no seu arquivo. Além disso, não inclua o nome das colunas no arquivo.
 
 | Ordem no arquivo | Categoria               | Dado                | Descrição                                                                                                                                          | Formato                         | Exemplo      |
 |------------------|-------------------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|--------------|
@@ -15,11 +14,11 @@ Para criar Dívidas em grande quantidade ou Links massivos, faça o upload de um
 | 2                | Links de pagamento: Opcional / Dívidas: Obrigatório condicional para empresas na Argentina que identificam seus clientes por meio de DNI/CUIL/CULT | DNI/CUIL/CUIT       | DNI, CUIL ou CUIT do cliente. | Campo numérico inteiro de até 11 caracteres | 01234567895 |
 | 3                | Links de pagamento: Opcional / Dívidas: Obrigatório condicional para empresas que identificam seus clientes por meio do Código do cliente | Código do cliente  | Identificador usado pela empresa para identificar seus clientes. | Campo alfanumérico de 1 a 20 caracteres | COD1234      |
 | 4                | Obrigatório             | Data 1º vencimento | Data do primeiro vencimento, no formato AAAAMMDD                                                                                                          | Campo numérico de 8 caracteres | 20242012     |
-| 5                | Obrigatório             | Valor 1º vencimento | Valor do primeiro vencimento. É um número inteiro onde os dois últimos dígitos são decimais                                                           | Campo numérico com até 2 decimais. Utilize ponto, não vírgula | 123.50       |
+| 5                | Obrigatório             | Valor 1º vencimento | Valor do primeiro vencimento. É um número inteiro onde os dois últimos dígitos são decimais                                                           | Campo numérico com até 2 decimais. Utilize ponto, não vírgula. Não permite decimais no Chile e na Colômbia. | 123.50       |
 | 6                | Opcional                | Data 2º vencimento | Data do segundo vencimento, no formato AAAAMMDD                                                                                                        | Campo numérico de 8 caracteres | 20242212     |
-| 7                | Opcional                | Valor 2º vencimento | Valor do segundo vencimento. É um número inteiro onde os dois últimos dígitos são decimais                                                          | Campo numérico com até 2 decimais. Utilize ponto, não vírgula | 130.00       |
+| 7                | Opcional                | Valor 2º vencimento | Valor do segundo vencimento. É um número inteiro onde os dois últimos dígitos são decimais                                                          | Campo numérico com até 2 decimais. Utilize ponto, não vírgula. Não permite decimais no Chile e na Colômbia. | 130.00       |
 | 8                | Opcional                | Data 3º vencimento | Data do terceiro vencimento, no formato AAAAMMDD                                                                                                        | Campo numérico de 8 caracteres | 20242212     |
-| 9                | Opcional                | Valor 3º vencimento | Valor do terceiro vencimento. É um número inteiro onde os dois últimos dígitos são decimais                                                          | Campo numérico com até 2 decimais. Utilize ponto, não vírgula | 147.50       |
+| 9                | Opcional                | Valor 3º vencimento | Valor do terceiro vencimento. É um número inteiro onde os dois últimos dígitos são decimais                                                          | Campo numérico com até 2 decimais. Utilize ponto, não vírgula. Não permite decimais no Chile e na Colômbia. | 147.50       |
 | 10               | Opcional                | Nome completo     | Nome completo do cliente (sem caracteres especiais)                                                                                                    | Campo alfabético de até 100 caracteres | José Silva   |
 | 11               | Opcional                | Telefone cliente  | Telefone do cliente                                                                                                                                  | Campo alfanumérico de até 20 caracteres | 4852698653201|
 | 12               | Opcional                | E-mail cliente    | Endereço de e-mail do cliente para receber notificações sobre novas cobranças                                                                            | Campo alfanumérico de até 64 caracteres | nome@mail.com |
@@ -27,9 +26,9 @@ Para criar Dívidas em grande quantidade ou Links massivos, faça o upload de um
 | 14               | Opcional                | Comentário        | Conceito ou comentário. O vendedor decide como prefere identificar                                                                                    | Campo alfanumérico                  | Ref 2024     |
 | 15               | Opcional (somente para casos na Colômbia) | Tax            | Imposto.                                                                                                                                              | Campo numérico inteiro. Pode ser 0, 5 ou 19. Se não for inserido um valor, será utilizado 19 por padrão | 5            |
 
-> NOTE
+> WARNING
 >
-> Como nomear o arquivo antes de fazer o upload
+> Importante
 >
 > Sua empresa pode escolher o nome do arquivo, que deve seguir o formato **.csv**. Os caracteres permitidos são letras, números, hífen, sublinhado e ponto.
 
@@ -54,8 +53,8 @@ Para identificar os exemplos de acordo com a obrigatoriedade e a ordem no arquiv
 | Ordem no arquivo | Categoria               | Exemplo               |
 |------------------|-------------------------|-------------------------|
 | 1                | Obrigatório             | ext2024030614313        |
-| 2                | Opcional condicional    | 521998672               |
-| 3                | Opcional condicional    | 1002                    |
+| 2                | Opcional     | 521998672               |
+| 3                | Opcional     | 1002                    |
 | 4                | Obrigatório             | 20250312                |
 | 5                | Obrigatório             | 549.57                  |
 | 6                | Opcional                | 20250315                |

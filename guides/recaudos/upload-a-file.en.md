@@ -2,6 +2,8 @@
 
 Using the terminal, you can upload a file via [SFTP Console](/developers/en/docs/links-and-debts/integration-configuration/upload#bookmark_consola_sftp) or [SFTP batch scripting](/developers/en/docs/links-and-debts/integration-configuration/upload#bookmark_sftp_batch_scripting). SFTP Console is suitable for manual use but not for automations. For automations, use SFTP batch scripting, which requires the creation of a script where each line represents an SFTP command.
 
+> We recommend avoiding uploading files with the same name, as this could trigger a reprocessing. As a best practice, and to facilitate the identification of input and output files, it is suggested to add a timestamp at the end of the file name.
+
 ## SFTP console
 
 Using the code below as an example, follow the steps to upload a file using the SFTP console.

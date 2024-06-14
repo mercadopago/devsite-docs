@@ -18,4 +18,4 @@ A continuación se detallan los controles realizados desde Self Service para ase
 | E010            | Amount has decimals, only integers are allowed                                      | Para Chile y Colombia. Alguno de los montos contiene decimales, y no están permitidos.                                  |
 | E012            | Reason length must be less than or equal to 100                                     | El campo `motivo` supera los 100 caracteres.                                                |
 | E013            | External Reference length must be less than or equal to 50                          | El campo `reference` supera los 50 caracteres.                                             |
-| E014            | Tax must be 0, 5 or 19                                                              | Para Colombia. Los valores de `taxes` deben ser del listado de valores posibles.                  |
+| E014            | Tax must be 0, 5 or 19                                                              | Para Colombia. Valores de `taxes` deben ser del listado de valores posibles.                  |
