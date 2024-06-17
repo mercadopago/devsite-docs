@@ -4,7 +4,7 @@ O **Mercado Pago Antifraude Plus** é um complemento ao [Mercado Pago Cartões](
 
 Para instalar o Mercado Pago Antifraude Plus, siga as etapas abaixo.
 
-1. A partir do link recebido pelo setor comercial do Mercado Pago, acesse a página do app **Mercado Pago Antifraude Plus** no "Marketplace" e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
+1. A partir [deste link](https://apps.shopify.com/mercado-pago-antifraud-plus?locale=pt-BR), acesse a página do app **Mercado Pago Antifraude Plus** no "Marketplace" e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
 
 ![antifraude plus 0](/images/shopify/antifraude-plus-0-pt.png)
 

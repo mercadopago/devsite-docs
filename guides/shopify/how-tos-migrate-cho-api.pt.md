@@ -2,22 +2,13 @@
 
 Veja abaixo como instalar o novo app (**Mercado Pago Cartões**) e desinstalar o antigo (**Checkout Transparente MP**) para evitar a interrupção do serviço na Shopify.
 
-----[mlb]----
 O **Mercado Pago Cartões** ([Checkout Transparente](/developers/pt/docs/checkout-api/landing)) é um app que permite pagamentos transparentes com cartões de débito ou crédito em que todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, o Mercado Pago Cartões reduz o abandono do carrinho e aumenta a possibilidade de conversão.
 
 > WARNING
 >
 > Atenção
 >
-> O novo app serve apenas para pagamentos com cartões. Para realizar pagamentos com **Pix** ou **boleto bancário**, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
-> <br><br>
-> Em breve, comunicaremos o lançamento do novo app apenas para Pix e indicaremos a documentação necessária para migração ou instalação.
-
-------------
-----[mlm]----
-O **Mercado Pago Cartões** ([Checkout API](/developers/pt/docs/checkout-api/landing)) é um app que permite pagamentos transparentes com cartões de débito ou crédito em que todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, o Mercado Pago Cartões reduz o abandono do carrinho e aumenta a possibilidade de conversão.
-
-------------
+> Este novo app é apenas para pagamentos com cartões. Em breve, comunicaremos o lançamento do app apenas para Pix e indicaremos a documentação necessária para migração ou instalação. Por enquanto, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro) para pagamentos com **Pix** e **boleto bancário**.
 
 ## Instale o novo app
 
@@ -70,17 +61,16 @@ Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecem
 
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 
-### Instalar via Marketplace
+> NOTE
+>
+> Importante
+>
+> Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que permitirá **reforçar a segurança do site e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
 
-----[mlb]----
+### Instalar via Marketplace
 
 1. A partir [deste link](https://apps.shopify.com/mercado-pago-cartoes?locale=pt-BR), acesse a página do app **Mercado Pago Cartões** no "Marketplace" e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
 
-------------
-----[mlm]----
-1. A partir [deste link](https://apps.shopify.com/mercado-pago-tarjetas-mx?locale=pt-BR), acesse a página do app **Mercado Pago Cartões** no "Marketplace" e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
-
-------------
 ![installation mkplace 0](/images/shopify/installation-cards-mkplace-0-pt.png)
 
 2. Leia com atenção as informações sobre as permissões solicitadas e clique novamente em **Instalar**.
@@ -117,6 +107,12 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 
+> NOTE
+>
+> Importante
+>
+> Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que permitirá **reforçar a segurança do site e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
+
 ## Desative o antigo app
 
 Após instalar a nova versão, é necessário desinstalar o antigo app. Para desinstalá-lo, siga as etapas abaixo.
@@ -141,12 +137,6 @@ Após instalar a nova versão, é necessário desinstalar o antigo app. Para des
 6. Por fim, clique em **Desativar Mercado Pago** > **Desativar Mercado Pago**.
 
 ![uninstall app 5](/images/shopify/uninstall-app-5-pt.png)
-
-> WARNING
->
-> Atenção
->
-> Nesta nova versão, a instalação de outro aplicativo não é mais necessária para o funcionamento do **Mercado Pago Cartões**. Entretanto, tenha em mente que o novo app serve apenas para pagamentos com cartões. Para realizar pagamentos com **Pix** ou **boleto bancário**, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
 
 ### Configurar parcelas sem acréscimo
 

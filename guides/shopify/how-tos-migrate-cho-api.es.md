@@ -1,31 +1,20 @@
 # Cómo migrar a la nueva versión de la app de Mercado Pago
 
-----[mlb]----
-# Tarjetas
+Ve a continuación cómo instalar la nueva app (**Mercado Pago Cartões**) y desinstalar la antigua (**Checkout Transparente MP**) para evitar la interrupción del servicio en Shopify.
 
-**Mercado Pago Tarjetas** ([Checkout Transparente](/developers/es/docs/checkout-api/landing)) es una app que permite pagos transparentes con tarjetas de débito o crédito, en la que todo el proceso de finalización de compra se realiza dentro del entorno de la tienda online, sin necesidad de redireccionamiento a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, reduce el abandono del carrito y aumenta la posibilidad de conversión.
+**Mercado Pago Cartões** ([Checkout Transparente](/developers/es/docs/checkout-api/landing)) es una app que permite pagos transparentes con tarjetas de débito o crédito, en la que todo el proceso de finalización de compra se realiza dentro del entorno de la tienda online, sin necesidad de redireccionamiento a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, reduce el abandono del carrito y aumenta la posibilidad de conversión.
 
 > WARNING
 >
 > Atención
 >
-> La nueva app solo sirve para pagos con tarjetas. Para realizar pagos con **Pix** o **boleto bancário**, utiliza [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).
-> <br><br>
-> Pronto, comunicaremos el lanzamiento de la nueva aplicación solo para Pix y proporcionaremos la documentación necesaria para la migración o instalación.
+> Esta nueva aplicación es solo para pagos con tarjetas. Pronto comunicaremos el lanzamiento de la app exclusivamente para Pix e indicaremos la documentación necesaria para la migración o instalación. Mientras tanto, utilice [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro) para pagos con **Pix** y **boleto bancario**.
 
-------------
-----[mlm]----
-# Tarjetas
-
-**Mercado Pago Tarjetas** ([Checkout API](/developers/es/docs/checkout-api/landing)) es una app que permite pagos transparentes con tarjetas de débito o crédito, en la que todo el proceso de finalización de compra se realiza dentro del entorno de la tienda online, sin necesidad de redireccionamiento a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, reduce el abandono del carrito y aumenta la posibilidad de conversión.
-
-------------
-
-Aprende cómo instalar la nueva app (**Mercado Pago Tarjetas**) y desinstalar la antigua (**Checkout Transparente MP**) para evitar la interrupción del servicio en  Shopify.
+Aprende cómo instalar la nueva app (**Mercado Pago Cartões**) y desinstalar la antigua (**Checkout Transparente MP**) para evitar la interrupción del servicio en  Shopify.
 
 ## Instala la nueva app
 
-Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, sigue cualquiera de los dos modelos de instalación descritos a continuación.
+Para instalar el checkout **Mercado Pago Cartões** en una tienda Shopify, sigue cualquiera de los dos modelos de instalación descritos a continuación.
 
 ### Instalar vía panel de Shopify
 
@@ -36,7 +25,7 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, sigue
 
 ![installation panel 1](/images/shopify/installation-cards-panel-1-es.png)
 
-5. En la pantalla de "Provedoores de pago externos", busca la aplicación "Mercado Pago Tarjetas".
+5. En la pantalla de "Provedoores de pago externos", busca la aplicación "Mercado Pago Cartões".
 
 ![installation panel 2](/images/shopify/installation-cards-panel-2-es.png)
 
@@ -68,22 +57,22 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, sigue
 > <br><br>
 > Recuerde que, al cambiar la contraseña de Shopify, **es necesario renovar sus credenciales**. Para hacerlo, siga las instrucciones en la documentación de [Buenas prácticas de seguridad para tus credenciales](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, para actualizarlas en su cuenta de Shopify, haga clic en **Administrar cuenta** y llene los campos correspondientes con tu `access_token` y `public_key`, **teniendo cuidado de no intercambiar los campos al copiar y pegar las credenciales**.
 
-12. Por último, haz clic en la opción **Revisar activación** de Mercado Pago Tarjetas, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
+12. Por último, haz clic en la opción **Revisar activación** de Mercado Pago Cartões, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
 
 ![installation cards 6](/images/shopify/installation-cards-6-es.png)
 
-¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
+¡Listo! El checkout **Mercado Pago Cartões** está listo para recibir pagos.
+
+> NOTE
+>
+> Importante
+>
+> Después de finalizar la instalación de Mercado Pago Cartões, te recomendamos complementar instalando la aplicación **Mercado Pago Antifraude Plus**, que permitirá reforzar la seguridad de tu tienda y aumentar la tasa de aprobación de pagos. Para más información, accede a la documentación de [Cómo prevenir fraudes en los pagos con tarjeta](/developers/es/docs/shopify/how-tos/antifraude-plus).
 
 ### Instalar vía Marketplace
 
-----[mlb]----
-1. A partir del [enlace](https://apps.shopify.com/mercado-pago-cartoes?locale=pt-BR), accede a la página de la aplicación **Mercado Pago Tarjetas** en el "Marketplace" y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
+1. A partir del [enlace](https://apps.shopify.com/mercado-pago-cartoes?locale=pt-BR), accede a la página de la aplicación **Mercado Pago Cartões** en el "Marketplace" y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
 
-------------
-----[mlm]----
-1. A partir del [enlace](https://apps.shopify.com/mercado-pago-tarjetas-mx?locale=pt-BR), accede a la página de la aplicación **Mercado Pago Tarjetas** en el "Marketplace" y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
-
-------------
 ![installation mkplace 0](/images/shopify/installation-cards-mkplace-0-es.png)
 
 2. Lee atentamente la información sobre los permisos solicitados y haz clic nuevamente en **Instalar**.
@@ -114,11 +103,17 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, sigue
 > <br><br>
 > Recuerde que, al cambiar la contraseña de Shopify, **es necesario renovar sus credenciales**. Para hacerlo, siga las instrucciones en la documentación de [Buenas prácticas de seguridad para tus credenciales](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, para actualizarlas en su cuenta de Shopify, haga clic en **Administrar cuenta** y llene los campos correspondientes con tu `access_token` y `public_key`, **teniendo cuidado de no intercambiar los campos al copiar y pegar las credenciales**.
 
-8. Por último, haz clic en la opción **Revisar activación** de Mercado Pago Tarjetas, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
+8. Por último, haz clic en la opción **Revisar activación** de Mercado Pago Cartões, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
 
 ![installation cards 6](/images/shopify/installation-cards-6-es.png)
 
-¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
+¡Listo! El checkout **Mercado Pago Cartões** está listo para recibir pagos.
+
+> NOTE
+>
+> Importante
+>
+> Después de finalizar la instalación de Mercado Pago Cartões, te recomendamos complementar instalando la aplicación **Mercado Pago Antifraude Plus**, que permitirá reforzar la seguridad de tu tienda y aumentar la tasa de aprobación de pagos. Para más información, accede a la documentación de [Cómo prevenir fraudes en los pagos con tarjeta](/developers/es/docs/shopify/how-tos/antifraude-plus).
 
 ## Desactiva la antigua app
 
@@ -131,15 +126,9 @@ Después de instalar la nueva versión, es necesario desinstalar la aplicación 
 5. En "Formas de pago aceptadas", localiza la antigua aplicación con el nombre "Mercado Pago" y selecciónala.
 6. Por último, haz clic en **Desactivar Mercado Pago** y luego en **Desactivar Mercado Pago**.
 
-> WARNING
->
-> Atención
->
-> En esta nueva versión ya no es obligatoria la instalación de otra aplicación para el funcionamiento de **Mercado Pago Tarjetas**. Sin embargo, esta nueva aplicación solo sirve para pagos con tarjetas. Para realizar pagos con **Pix** o **boleto bancário**, utiliza [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).
-
 ### Configurar meses sin intereses
 
-Después de instalar y activar la aplicación **Mercado Pago Tarjetas**, configura la opción de ofrecer a tus clientes pagos en meses sin intereses con cualquier tarjeta de crédito. Para ello, sigue los pasos a continuación.
+Después de instalar y activar la aplicación **Mercado Pago Cartões**, configura la opción de ofrecer a tus clientes pagos en meses sin intereses con cualquier tarjeta de crédito. Para ello, sigue los pasos a continuación.
 
 1. Inicia sesión en tu [cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
 2. Ve a la sección **Tu negocio > Costos** y selecciona la opción **Checkout**.
