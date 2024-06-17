@@ -7,9 +7,7 @@ O **Mercado Pago Cartões** ([Checkout Transparente](/developers/pt/docs/checkou
 >
 > Atenção
 >
-> O novo app é exclusivo para pagamentos com cartões. Para realizar pagamentos com **Pix** ou **boleto bancário**, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
-> <br><br>
-> Em breve, comunicaremos o lançamento do novo app apenas para Pix e indicaremos a documentação necessária para migração ou instalação.
+> Este novo app é apenas para pagamentos com cartões. Em breve, comunicaremos o lançamento do app apenas para Pix e indicaremos a documentação necessária para migração ou instalação. Por enquanto, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro) para pagamentos com **Pix** e **boleto bancário**.
 
 ------------
 ----[mlm]----
@@ -68,6 +66,12 @@ Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecem
 
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 
+> NOTE
+>
+> Importante
+>
+> Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que permitirá **reforçar a segurança da sua loja e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
+
 ## Instalar via Marketplace
 
 ----[mlb]----
@@ -114,6 +118,12 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 ![installation cards 6](/images/shopify/installation-cards-6-pt.png)
 
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
+
+> NOTE
+>
+> Importante
+>
+> Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que permitirá **reforçar a segurança da sua loja e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
 
 ## Configurar parcelas sem acréscimo
 
