@@ -62,7 +62,7 @@ Para gerar um token Yape, é necessário preencher o campo OTP, que representa o
 
 ## Gerar token de Yape
 
-Após concluir a inclusão do formulário e obter os dados necessários, gere o token do Yape usando MercadoPago.js ou via API.
+Após concluir a inclusão do formulário e obter os dados necessários, gere o token de Yape usando MercadoPago.js ou via API.
 
 ### Gerar token de Yape via MercadoPago.js
 
@@ -412,7 +412,7 @@ Por ser uma transação com cartão de débito, os status de pagamento possívei
 
 ## Testar a integração
 
-Para testar diferentes respostas de pagamento do Yape sem a necessidade de utilizar um celular real, é possível utilizar números de celular de teste. 
+Para testar diferentes respostas de pagamento de Yape sem a necessidade de utilizar um celular real, é possível utilizar números de celular de teste. 
 
 Consulte a tabela abaixo e utilize um dos números específicos para simular cenários de sucesso e falha durante a implementação.
 
@@ -420,7 +420,7 @@ Consulte a tabela abaixo e utilize um dos números específicos para simular cen
 >
 > Nota
 >
-> Para testar a integração, recomendamos utilizar as credenciais de teste. Para saber mais, leia a nossa [documentação](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials).
+> Para testar a integração, recomendamos utilizar as credenciais de teste. Para saber mais, leia a [documentação](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials).
 
 | Celular        | OTP     | Status previsto em `payments`                  |
 |----------------|---------|----------------------------------------------|
