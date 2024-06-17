@@ -7,9 +7,7 @@
 >
 > Atención
 >
-> La nueva app solo sirve para pagos con tarjetas. Para realizar pagos con **Pix** o **boleto bancário**, utiliza [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).
-> <br><br>
-> Pronto, comunicaremos el lanzamiento de la nueva aplicación solo para Pix y proporcionaremos la documentación necesaria para la migración o instalación.
+> Esta nueva aplicación es solo para pagos con tarjetas. Pronto comunicaremos el lanzamiento de la app exclusivamente para Pix e indicaremos la documentación necesaria para la migración o instalación. Mientras tanto, utilice [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro) para pagos con **Pix** y **boleto bancario**.
 
 ------------
 ----[mlm]----
@@ -68,6 +66,12 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, ofrec
 
 ¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
 
+> NOTE
+>
+> Importante
+>
+> Después de finalizar la instalación de Mercado Pago Tarjetas, te recomendamos complementar instalando la aplicación **Mercado Pago Antifraude Plus**, que permitirá reforzar la seguridad de tu tienda y aumentar la tasa de aprobación de pagos. Para más información, accede a la documentación de [Cómo prevenir fraudes en los pagos con tarjeta](/developers/es/docs/shopify/how-tos/antifraude-plus).
+
 ## Instalar vía Marketplace
 
 ----[mlb]----
@@ -113,6 +117,12 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, ofrec
 ![installation cards 6](/images/shopify/installation-cards-6-es.png)
 
 ¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
+
+> NOTE
+>
+> Importante
+>
+> Después de finalizar la instalación de Mercado Pago Tarjetas, te recomendamos complementar instalando la aplicación **Mercado Pago Antifraude Plus**, que permitirá reforzar la seguridad de tu tienda y aumentar la tasa de aprobación de pagos. Para más información, accede a la documentación de [Cómo prevenir fraudes en los pagos con tarjeta](/developers/es/docs/shopify/how-tos/antifraude-plus).
 
 ## Configurar meses sin intereses
 
