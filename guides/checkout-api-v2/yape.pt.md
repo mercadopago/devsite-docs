@@ -160,7 +160,7 @@ Exemplo da resposta:
 
 Após finalizar a inclusão do formulário para captura dos dados de celular e OTP e gerar o token de Yape, utilize nossa API de Pagamentos ou um de nossos SDKs para enviar o token, fornecido pelo SDK JS do MercadoPago, juntamente com os dados de `transaction_amount`, _installments_, o tipo de `payment_method_id` (sendo "yape"), e os dados do pagador.
 
-Para configurar pagamentos com Yape, envie um POST com os devidos parâmetros ao endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar pagamentos com Yape, envie um POST com os devidos parâmetros ao endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) ou, se preferir, utilize um de nossos SDKs abaixo.
 
 > WARNING
 >
@@ -368,9 +368,10 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 
 É necessário preencher os campos obrigatórios listados abaixo, seguindo as especificações mostradas na tabela a seguir:
 
+
 | Campo             | Tipo    | Descrição                                                                                                                                  | Obrigatório/Opcional | Exemplos/Possíveis valores                |
 |-------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------|----------------------|-------------------------------------------|
-| `token`             | string  | Token fornecido pelo SDK JS do MercadoPago. Para saber mais, consulte a documentação Gerar token de YAPE.                                 | Obrigatório          | "f8ae90c6a83e71d698d5ea927f851034"        |
+| `token`             | string  | Token fornecido pelo SDK JS do MercadoPago. Para saber mais, consulte a documentação [Gerar token de YAPE](/developers/pt/docs/checkout-api/integration-configuration/yape#bookmark_gerar_token_de_yape).                                 | Obrigatório          | "f8ae90c6a83e71d698d5ea927f851034"        |
 | `transaction_amount`| number  | Valor da transação. Existe um limite máximo de valor que pode ser de S/500, S/900 ou S/2000, configurado diretamente no próprio aplicativo Yape. | Obrigatório          | 2000                                      |
 | `description`       | string  | Título do produto.                                                                                                                         | Opcional             | Video game                                |
 | `installments`      | number  | Quantidade de parcelas. Como se trata de um pagamento com cartão de débito, a quantidade de parcelas será 1.                               | Obrigatório          | 1                                         |
@@ -432,4 +433,4 @@ Consulte a tabela abaixo e utilize um dos números específicos para simular cen
 | 111111117      | 123456  | `cc_rejected_bad_filled_security_code`         |
 | 111111118      | 123456  | `cc_rejected_form_error`                       |
 
-Os procedimentos para gerar o token de Yape e criar o pagamento são os mesmos: é necessário fornecer o número de celular e o OTP da tabela acima. Se houver dúvidas sobre como gerar o token Yape, consulte a documentação [Gerar token de YAPE com MercadoPago.js]().
+Os procedimentos para gerar o token de Yape e criar o pagamento são os mesmos: é necessário fornecer o número de celular e o OTP da tabela acima. Se houver dúvidas sobre como gerar o token Yape, consulte a documentação [Gerar token de YAPE](/developers/pt/docs/checkout-api/integration-configuration/yape#bookmark_gerar_token_de_yape).
