@@ -66,7 +66,7 @@ Após concluir a inclusão do formulário e obter os dados necessários, gere o 
 
 ### Gerar token de Yape via MercadoPago.js
 
-Utilize o método `mp.yape.create` para gerar um token YAPE.
+Utilize o método `mp.yape.create` para gerar um token de Yape, conforme o código abaixo:
 
 ```javascript
 (async function handleYape () {
@@ -84,7 +84,7 @@ Utilize o método `mp.yape.create` para gerar um token YAPE.
 
 ### Gerar token de Yape via API
 
-Uma outra maneira de gerar o token é por meio de uma API. O token Yape pode ser gerado usando o seguinte comando curl:
+Uma outra maneira de gerar o token é por meio de uma API. Utilize o seguinte comando cURL para gerar um token de Yape. 
 
 ```curl
 curl --location 'https://api.mercadopago.com/platforms/pci/yape/v1/payment?public_key=<PUBLIC_KEY>' \
@@ -371,7 +371,7 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 
 | Campo             | Tipo    | Descrição                                                                                                                                  | Obrigatório/Opcional | Exemplos/Possíveis valores                |
 |-------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------|----------------------|-------------------------------------------|
-| `token`             | string  | Token fornecido pelo SDK JS do MercadoPago. Para saber mais, consulte a documentação [Gerar token de YAPE](/developers/pt/docs/checkout-api/integration-configuration/yape#bookmark_gerar_token_de_yape).                                 | Obrigatório          | "f8ae90c6a83e71d698d5ea927f851034"        |
+| `token`             | string  | Token fornecido pelo SDK JS do MercadoPago. Para saber mais, consulte a documentação [Gerar token de Yape](/developers/pt/docs/checkout-api/integration-configuration/yape#bookmark_gerar_token_de_yape).                                 | Obrigatório          | "f8ae90c6a83e71d698d5ea927f851034"        |
 | `transaction_amount`| number  | Valor da transação. Existe um limite máximo de valor que pode ser de S/500, S/900 ou S/2000, configurado diretamente no próprio aplicativo Yape. | Obrigatório          | 2000                                      |
 | `description`       | string  | Título do produto.                                                                                                                         | Opcional             | "Video game"                                |
 | `installments`      | number  | Quantidade de parcelas. Como se trata de um pagamento com cartão de débito, a quantidade de parcelas será 1.                               | Obrigatório          | 1                                         |
