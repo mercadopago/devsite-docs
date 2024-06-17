@@ -368,8 +368,6 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 
 É necessário preencher os campos obrigatórios listados abaixo, seguindo as especificações mostradas na tabela a seguir:
 
-Aqui está o conteúdo transformado em uma tabela:
-
 | Campo             | Tipo    | Descrição                                                                                                                                  | Obrigatório/Opcional | Exemplos/Possíveis valores                |
 |-------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------|----------------------|-------------------------------------------|
 | `token`             | string  | Token fornecido pelo SDK JS do MercadoPago. Para saber mais, consulte a documentação Gerar token de YAPE.                                 | Obrigatório          | "f8ae90c6a83e71d698d5ea927f851034"        |
