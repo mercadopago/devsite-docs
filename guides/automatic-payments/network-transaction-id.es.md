@@ -6,7 +6,7 @@ A partir de las nuevas reglas operacionales para la tokenización de operaciones
 
 ## Procesar el primer pago
 
-Para el **primer pago** con _Visa_, será necesario enviar el _header_ `X-Expand-Response-Nodes` al endpoint [v1/payments](/developers/es/reference/payments/_payments/post) como se muestra a continuación.
+Para el **primer pago** con _Visa_, envíe el _header_ `X-Expand-Response-Nodes` al endpoint [v1/payments](/developers/es/reference/payments/_payments/post) como se muestra a continuación.
 
 ```json
 --header 'X-Expand-Responde-Nodes: gateway.reference'\
@@ -24,9 +24,57 @@ En la respuesta se podrá observar el retorno del `network_transaction_id` en el
 }
 ```
 
+| Parámetro  | Tipo  | Descripción  | Ejemplo |
+| --- | --- | --- | --- |
+| type | string | Está asociado al identificador de la bandera | 584152665425694 |
+
 ## Procesar pagos subsecuentes
 
-Para los **pagos subsecuentes** con _Visa_, será necesario enviar la información del `network_transaction_id` recibido al endpoint [v1/payments](/developers/es/reference/payments/_payments/post), a través del parámetro `forward_data`.
+Para los **pagos subsecuentes** con _Visa_, envíe la información del `network_transaction_id` devuelto en el último pago realizado al endpoint [v1/payments](/developers/es/reference/payments/_payments/post), a través del parámetro `forward_data`, o utilizando el _cURL_ a continuación.
+
+> WARNING
+>
+> Atención
+> 
+> En caso de que el `network_transaction_id` no se devuelva en el último pago realizado, se deberá enviar el valor recibido en el primer pago.
+
+```curl
+curl --location 'https://api.mercadopago.com/v1/payments' \
+--header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+--header 'Content-Type: application/json' \
+--data '{
+    "description": "{{description}}",
+    "token": "{{card_token}}",
+    "payer": {
+        "id": "{{customer_id}}",
+        "type": "{{type}}"
+    },
+    "payment_method_id": "{{payment_method_id}}",
+    "transaction_amount": {{transaction_amount}},
+    "point_of_interaction": {
+        "type": "{{type}}",
+        "transaction_data": {
+            "first_time_use": {{first_time_use}},
+            "subscription_id": "{{subscription_id}}",
+            "subscription_sequence": {
+                "number": {{subscription_number}},
+                "total": {{subscription_total}}
+            },
+            "invoice_period": {
+                "period": {{invoice_period}},
+                "type": "{{invoice_type}}"
+            },
+            "billing_date": "{{billing_date}}",
+            "user_present": {{user_present}}
+        }
+    },
+    "forward_data": {
+        "network_transaction_data": {
+            "network_transaction_id": "{{network_transaction_id}}"
+        }
+    }
+}'
+```
 
 Ejemplo:
 
@@ -77,52 +125,4 @@ Respuesta:
  	 }
    }
 }
-```
-
-| Parámetro  | Tipo  | Descripción  | Ejemplo |
-| --- | --- | --- | --- |
-| type | string | Está asociado al identificador de la bandera | 584152665425694 |
-
-> WARNING
->
-> Atención
-> 
-> En caso de que el `network_transaction_id` no se devuelva en el último pago realizado, se deberá enviar el valor recibido en el primer pago.
-
-```curl
-curl --location 'https://api.mercadopago.com/v1/payments' \
---header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
---header 'Content-Type: application/json' \
---data '{
-    "description": "{{description}}",
-    "token": "{{card_token}}",
-    "payer": {
-        "id": "{{customer_id}}",
-        "type": "{{type}}"
-    },
-    "payment_method_id": "{{payment_method_id}}",
-    "transaction_amount": {{transaction_amount}},
-    "point_of_interaction": {
-        "type": "{{type}}",
-        "transaction_data": {
-            "first_time_use": {{first_time_use}},
-            "subscription_id": "{{subscription_id}}",
-            "subscription_sequence": {
-                "number": {{subscription_number}},
-                "total": {{subscription_total}}
-            },
-            "invoice_period": {
-                "period": {{invoice_period}},
-                "type": "{{invoice_type}}"
-            },
-            "billing_date": "{{billing_date}}",
-            "user_present": {{user_present}}
-        }
-    },
-    "forward_data": {
-        "network_transaction_data": {
-            "network_transaction_id": "{{network_transaction_id}}"
-        }
-    }
-}'
 ```
