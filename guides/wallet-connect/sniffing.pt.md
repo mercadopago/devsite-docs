@@ -1,13 +1,27 @@
-El "sniffing" es una funcionalidad que permite identificar si un usuario tiene la aplicación de Mercado Pago instalada en su dispositivo móvil y abrir dicha app automáticamente. En caso afirmativo, se inicia automáticamente el flujo de vinculación en la aplicación, sin necesidad de que el usuario tenga que iniciar sesión de forma manual.
-Propósito
-El propósito de esta documentación es brindar a los integradores la información necesaria para habilitar y usar la función de "sniffing" en sus integraciones con Mercado Pago.
-Implementación
-Para disponer de la funcionalidad de "sniffing" solo es necesario abrir un enlace en el navegador web móvil para activar la detección:
-Realizar una solicitud POST a: https://api.mercadopago.com/v2/wallet_connect/agreements para crear un agreement.
-En este momento se debe especificar la dirección de retorno return_uri.
-Obtener el valor de agreement_uri en la respuesta
-Utilizar un componente In-App Browser para navegar a agreement_uri
-Según el OS utilizar:
-Custom Tabs en Android
-SVC en iOS
-Capturar la URL de retorno return_uri para finalizar el proceso de vinculación. 
+# Sniffing
+
+O **_Sniffing_** é uma funcionalidade que permite identificar se um usuário tem o aplicativo do Mercado Pago instalado em seu dispositivo móvel e abrir esse app automaticamente. Caso afirmativo, o [fluxo de vinculação]() é iniciado automaticamente no aplicativo, sem que o usuário precise fazer login manualmente.
+
+> WARNING
+>
+> Atenção
+>
+> Os modos preferidos de utilização do _Sniffing_ devem ser coordenados com a **equipe de Integrações* para que estes sejam previamente configurados em sua aplicação.
+
+## Configuração
+
+Para disponibilizar a funcionalidade de _Sniffing_ é necessário apenas 
+
+1. Abra um link no navegador web do dispositivo móvel para ativar a detecção.
+2. Envie um **GET** com os atributos necessários ao endpoint [/v2/wallet_connect/agreements](/reference/wallet_connect/_wallet_connect_agreements/post) e execute a requisição para [criar uma vinculação]().
+
+
+envie um **GET** com seu `access_token` ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get)  e execute a requisição
+
+Neste momento, deve-se especificar o endereço de retorno return_uri.
+Obter o valor de agreement_uri na resposta.
+Utilizar um componente In-App Browser para navegar até agreement_uri.
+De acordo com o sistema operacional, utilizar:
+Custom Tabs no Android
+SVC no iOS
+Capturar a URL de retorno return_uri para finalizar o processo de vinculação.
