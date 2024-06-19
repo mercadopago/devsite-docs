@@ -88,3 +88,41 @@ Respuesta:
 > Atención
 > 
 > En caso de que el `network_transaction_id` no se devuelva en el último pago realizado, se deberá enviar el valor recibido en el primer pago.
+
+```curl
+curl --location 'https://api.mercadopago.com/v1/payments' \
+--header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+--header 'Content-Type: application/json' \
+--data '{
+    "description": "{{description}}",
+    "token": "{{card_token}}",
+    "payer": {
+        "id": "{{customer_id}}",
+        "type": "{{type}}"
+    },
+    "payment_method_id": "{{payment_method_id}}",
+    "transaction_amount": {{transaction_amount}},
+    "point_of_interaction": {
+        "type": "{{type}}",
+        "transaction_data": {
+            "first_time_use": {{first_time_use}},
+            "subscription_id": "{{subscription_id}}",
+            "subscription_sequence": {
+                "number": {{subscription_number}},
+                "total": {{subscription_total}}
+            },
+            "invoice_period": {
+                "period": {{invoice_period}},
+                "type": "{{invoice_type}}"
+            },
+            "billing_date": "{{billing_date}}",
+            "user_present": {{user_present}}
+        }
+    },
+    "forward_data": {
+        "network_transaction_data": {
+            "network_transaction_id": "{{network_transaction_id}}"
+        }
+    }
+}'
+```
