@@ -323,6 +323,25 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 ```
 ]]]
 
+| Parámetro  | Tipo  | Descripción  | Ejemplo |
+| --- | --- | --- | --- |
+| type | string | Indica el tipo de _Point of Interaction_ (POI) | SUBSCRIPTIONS |
+| first_time_use| boolean | Indica si es el primer pago de la suscripción | 'true' o 'false' |
+| subscription_id | string | Identificador de la suscripción | "COLLECTORPADRE-SUBSCRIPCION_ID" |
+| subscription_sequence.number |integer | Indica el número del pago subsecuente  | 3 |
+| subscription_sequence.total |integer| Indica el total de la suscripción. Para suscripciones permanentes setear en 'null'| 12 |
+| invoice_period.period |integer | Indica la frecuencia del pago recurrente | 1 |
+| invoice_period.type | string | Indica el tipo de periodo del pago recurrente| daily, monthly ou yearly |
+| user_present | boolean | Indica si hubo intervención del usuario en el momento en que se creó el pago |'true' o 'false' |
+| billing_date | string | Fecha de facturación | 2024-03-16 |
+| payment_reference.id | string | ID del pago de validación ok | 20792195335 |
+| transaction_amount | number | Monto del pago |100 |
+| token | string | Token de tarjeta | 12346622341 |
+| description | string | Descripción de pago | "Pago de prueba" |
+| payment_method_id | string | Indica el identificador del método de pago seleccionado para realizar el pago | master |
+| payer.email | string | Email del pagador | buyer@examplemail.com |
+| payer.type | string | Tipo de identificación del pagador asociado | 'guest' o 'customer' |
+
 Ejemplo:
 
 ```json
@@ -360,25 +379,6 @@ Ejemplo:
     }
 }
 ```
-
-| Parámetro  | Tipo  | Descripción  | Ejemplo |
-| --- | --- | --- | --- |
-| type | string | Indica el tipo de _Point of Interaction_ (POI) | SUBSCRIPTIONS |
-| first_time_use| boolean | Indica si es el primer pago de la suscripción | 'true' o 'false' |
-| subscription_id | string | Identificador de la suscripción | "COLLECTORPADRE-SUBSCRIPCION_ID" |
-| subscription_sequence.number |integer | Indica el número del pago subsecuente  | 3 |
-| subscription_sequence.total |integer| Indica el total de la suscripción. Para suscripciones permanentes setear en 'null'| 12 |
-| invoice_period.period |integer | Indica la frecuencia del pago recurrente | 1 |
-| invoice_period.type | string | Indica el tipo de periodo del pago recurrente| daily, monthly ou yearly |
-| user_present | boolean | Indica si hubo intervención del usuario en el momento en que se creó el pago |'true' o 'false' |
-| billing_date | string | Fecha de facturación | 2024-03-16 |
-| payment_reference.id | string | ID del pago de validación ok | 20792195335 |
-| transaction_amount | number | Monto del pago |100 |
-| token | string | Token de tarjeta | 12346622341 |
-| description | string | Descripción de pago | "Pago de prueba" |
-| payment_method_id | string | Indica el identificador del método de pago seleccionado para realizar el pago | master |
-| payer.email | string | Email del pagador | buyer@examplemail.com |
-| payer.type | string | Tipo de identificación del pagador asociado | 'guest' o 'customer' |
 
 ### Procesar pagos subsecuentes
 
