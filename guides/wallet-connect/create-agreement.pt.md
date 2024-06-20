@@ -17,7 +17,7 @@ Confira o diagrama abaixo que ilustra como funciona o fluxo de criação da vinc
 
 ![Criar vinculação](/images/wallet-connect/new-create-agreement.pt.png)
 
-Para criar uma vinculação, envie um **POST** com os atributos necessários ao endpoint [/v2/wallet_connect/agreements](/developers/pt/reference/wallet_connect/_wallet_connect_agreements/post) e execute a requisição ou, se preferir, utilize o `curl` abaixo e atente-se à resposta da requisição que retornará **dois parâmetros** obrigatórios para obter a aprovação do pagador: `agreement_uri` e `return_uri`. 
+Para criar uma vinculação, envie um **POST** com os atributos necessários ao endpoint [/v2/wallet_connect/agreements](/developers/pt/reference/wallet_connect/_wallet_connect_agreements/post) e execute a requisição ou, se preferir, utilize o `curl` abaixo e atente-se à resposta da requisição que retornará **dois parâmetros** necessários para obter a aprovação do pagador: `agreement_id` e `agreement_uri`.
 
 ```curl
 curl -X POST \
