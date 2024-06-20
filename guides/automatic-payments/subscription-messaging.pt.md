@@ -6,7 +6,7 @@ A mensageria de pagamentos automáticos, ou **Mensageria de subscrição**, envo
 >
 > Importante
 >
-> No caso de operações com pagamentos recorrentes da bandeira _Visa_, será necessário enviar o identificador de transação da bandeira (TID) às transações de mensageria. Para mais informações sobe como enviar o TID, acesse a documentação [Network Transaction ID - TID](/developers/pt/docs/automatic-payments/recurring-charges/network-transaction-id).
+> No caso de operações com pagamentos recorrentes da bandeira _Visa_, será necessário enviar o identificador de transação da bandeira (TID) às transações de mensageria. Para mais informações sobe como enviar o TID, acesse a documentação [Network Transaction ID - TID](/developers/pt/guides/automatic-payments/network-transaction-id).
 
 ## Configuração
 

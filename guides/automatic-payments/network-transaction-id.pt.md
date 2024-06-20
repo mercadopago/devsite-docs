@@ -16,11 +16,11 @@ Na resposta se poderá observar o retorno do `network_transaction_id` no parâme
 
 ```json
 "expanded": {
-    "gateway": {
- 	"reference": {
- 		"network_transaction_id": "n7w-c0d3-t7d"
- 	 }
-   }
+   "gateway": {
+ 	  "reference": {
+ 		 "network_transaction_id": "n7w-c0d3-t7d"
+ 	    }
+    }
 }
 ```
 
@@ -119,10 +119,10 @@ Resposta:
 
 ```json
 "expanded": {
-    "gateway": {
- 	"reference": {
- 		"network_transaction_id": "n7w-c0d3-t7d"
- 	 }
-   }
+   "gateway": {
+ 	  "reference": {
+ 		 "network_transaction_id": "n7w-c0d3-t7d"
+ 	    }
+    }
 }
 ```

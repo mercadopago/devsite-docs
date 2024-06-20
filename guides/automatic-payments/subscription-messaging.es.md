@@ -6,7 +6,7 @@ La Mensajería de Pagos automaticos, o **Mensajería de suscripción**, involucr
 >
 > Importante
 >
-> En el caso de operaciones con pagos recurrentes de la marca _Visa_, será necesario enviar el identificador de transacción de la tarjeta (TID) a las transacciones de mensajería. Para más información sobre cómo enviar el TID, acceda a la documentación [Network Transaction ID - TID](/developers/es/docs/automatic-payments/recurring-charges/network-transaction-id).
+> En el caso de operaciones con pagos recurrentes de la marca _Visa_, será necesario enviar el identificador de transacción de la tarjeta (TID) a las transacciones de mensajería. Para más información sobre cómo enviar el TID, acceda a la documentación [Network Transaction ID - TID](/developers/es/guides/automatic-payments/network-transaction-id).
 
 ## Configuración
 
