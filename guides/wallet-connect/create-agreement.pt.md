@@ -4,10 +4,16 @@ A primeira etapa para integrar o Wallet Connect é a criação de uma vinculaç�
 
 A vinculação armazena os meios de pagamento selecionados pelo pagador e permite a alteração dessas configurações sem a intervenção do vendedor, tornando esta etapa transparente durante o fluxo de pagamento. 
 
+> NOTE
+>
+> Nota
+>
+> Caso queira, antes de iniciar a vinculação você poderá solicitar a **equipe de Integrações do Mercado Pago** a utilização do **_Sniffing_**, uma funcionalidade que permite identificar se um usuário tem o aplicativo do Mercado Pago instalado em seu dispositivo móvel e abrir esse app automaticamente. Para mais informações, acesse a documentação de [Estratégia de Sniffing](/developers/pt/docs/wallet-connect/account-linking-flow/create-agreement/sniffing-strategy).
+
 Qualquer mudança nos métodos de pagamento é comunicada através de uma notificação Webhooks, que traz detalhes da atualização. 
 Para mais informações, consulte a seção [Atualização do meio de pagamento de uma vinculação](/developers/pt/docs/wallet-connect/additional-content/your-integrations/notifications/webhooks).
 
-> WARNING
+> NOTE
 >
 > Importante
 >

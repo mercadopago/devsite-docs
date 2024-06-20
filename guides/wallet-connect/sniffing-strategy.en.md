@@ -31,7 +31,7 @@ To use the Sniffing feature, simply open a link in the mobile device's web brows
 
 1. Envie um **GET** com os atributos necessários, pricipalmente o `return_uri`, ao _endpoint_ [/v2/wallet_connect/agreements](/developers/pt/reference/wallet_connect/_wallet_connect_agreements/post) e execute a requisição para [iniciar uma vinculação](/developers/pt/docs/wallet-connect/account-linking-flow/create-agreement).
 
-1. Send a **GET** with the necessary attributes, primarily `return_uri`, to the endpoint [/v2/wallet_connect/agreements](/developers/en/reference/wallet_connect/_wallet_connect_agreements/post) and execute the request to [initiate an agreement](/developers/en/docs/wallet-connect/account-linking-flow/create-agreement).
+1. Send a **GET** with the necessary attributes, primarily `return_uri`, to the endpoint [/v2/wallet_connect/agreements](/developers/en/reference/wallet_connect/_wallet_connect_agreements/post) and execute the request to [create an agreement](/developers/en/docs/wallet-connect/account-linking-flow/create-agreement).
 
 > WARNING
 >

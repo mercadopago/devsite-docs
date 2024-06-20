@@ -4,6 +4,12 @@ The first step in integrating Wallet Connect is to create an agreement, an autho
 
 The agreement stores the payment methods selected by the payer and allows for changes to these settings without seller intervention, making this step transparent during the payment flow.
 
+> NOTE
+>
+> Note
+>
+> If you wish, before starting the linking process, you can request the **Mercado Pago Integrations team** to use **Sniffing**, a feature that allows you to identify if a user has the Mercado Pago app installed on their mobile device and automatically open that app. For more information, refer to the [Sniffing strategy](/developers/en/docs/wallet-connect/account-linking-flow/create-agreement/sniffing-strategy) documentation.
+
 Any change to payment methods is communicated through a webhook notification, which provides details of the update. 
 For more information, consult the section [Agreement payment method update](/developers/en/docs/wallet-connect/additional-content/your-integrations/notifications/webhooks).
 
