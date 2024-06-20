@@ -12,15 +12,14 @@ Os modelos disponíveis são:
 >
 > Atenção
 >
-> Os modelos preferidos de utilização do _Sniffing_ devem ser coordenados com a **equipe de Integrações** para que estes sejam previamente configurados em sua aplicação.
+> Os modelos preferidos de utilização do _Sniffing_ devem ser coordenados com a **equipe de Integrações do Mercado Pago** para que estes sejam previamente configurados em sua aplicação.
 
 - **App Link (disponível apenas para dispositivos Android)**: se o aplicativo do Mercado Pago estiver instalado no dispositivo do usuário, ele interceptará quando se navegar para `agreement_uri` e abrirá automaticamente o fluxo de vinculação no contexto do aplicativo.
 - **Navegador (disponível para dispositivos Android e iOS)**: ao abrir o `agreement_uri` em um navegador, a página reconhecerá o contexto e aplicará diferentes estratégias para tentar abrir o aplicativo do Mercado Pago, sendo: <br>
   - Se o usuário tiver o aplicativo instalado, o fluxo de vinculação será aberto automaticamente no aplicativo.
   - Se o usuário não tiver o aplicativo instalado, será direcionado ao navegador padrão do usuário e, nesse caso, é possível que o usuário tenha que fazer login manualmente.
 
-![sniffing](/images/wallet-connect/sniffing.pt.png)
-![sniffing](/images/wallet-connect/sniffing.ptt.png)
+![sniffing](/images/wallet-connect/sniffing-pt.png)
 
 > NOTE
 >
@@ -38,7 +37,7 @@ Para utilizar o o recurso de _Sniffing_, basta abrir um link no navegador web do
 >
 > Atenção
 >
-> É necessário que a URL utilizada no parâmetro `return_uri` seja para um recurso _web_ (não podem ser utilizados _deeplinks_) e o início dela deve **coincidir com a URL de retorno configurada na aplicação do vendedor**. Para mais informações, acesse os[Detalhes da aplicação](/developers/pt/guides/additional-content/your-integrations/application-details).
+> É necessário que a URL utilizada no parâmetro `return_uri` seja para um recurso _web_ (não podem ser utilizados _deeplinks_) e **o início dela deve coincidir com a URL de retorno configurada na aplicação do vendedor**. Para mais informações, acesse os[Detalhes da aplicação](/developers/pt/guides/additional-content/your-integrations/application-details).
 
 2. Serão retornados os parâmetros `agreement_id` e `agreement_uri`. Utilize um componente **_In-App Browser_** para navegar até o `agreement_uri`, endereço para onde o comprador é redirecionado para conceder o acesso à carteira do Mercado Pago para realizar o pagamento. De acordo com o sistema operacional, utilize o **_Custom Tabs_** para dispositivos _Android_ e o **_SVC_** para dispositivos _iOS_.
 3. A partir disso, utilize a URL de retorno `return_uri` para finalizar o processo de vinculação.

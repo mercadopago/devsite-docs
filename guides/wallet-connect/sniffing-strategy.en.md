@@ -1,46 +1,45 @@
-# Estratégia de Sniffing
+# Sniffing Strategy
 
-O **_Sniffing_** é uma funcionalidade que permite identificar se um usuário tem o aplicativo do Mercado Pago instalado em seu dispositivo móvel e abrir esse app automaticamente. Caso afirmativo, ao abrir o `agreement_uri` em um navegador, o **fluxo de vinculação** é iniciado automaticamente no aplicativo, sem que o usuário precise fazer login manualmente.
+**Sniffing** is a feature that allows you to identify if a user has the Mercado Pago app installed on their mobile device and automatically open this app. If so, when opening the `agreement_uri` in a browser, the **agreement flow** is automatically initiated in the app, without the user needing to log in manually.
 
-A função de _Sniffing_ simplifica o processo de vinculação ao eliminar a necessidade de que o usuário faça login manualmente no aplicativo do Mercado Pago. Isso melhora a experiência do usuário ao reduzir a fricção no processo de vinculação.
+The Sniffing feature simplifies the linking process by eliminating the need for the user to manually log in to the Mercado Pago app. This improves the user experience by reducing friction in the agreement process.
 
-## Modelos de utilização do Sniffing
+## Sniffing usage models
 
-Os modelos disponíveis são:
+See below for the available models to add to your integration with Mercado Pago.
 
 > WARNING
 >
-> Atenção
+> Attention
 >
-> Os modelos preferidos de utilização do _Sniffing_ devem ser coordenados com a **equipe de Integrações** para que estes sejam previamente configurados em sua aplicação.
+> The preferred usage models for Sniffing must be coordinated with the **Integrations team at Mercado Pago** to be previously configured in your application.
 
-- **App Link (disponível apenas para dispositivos Android)**: se o aplicativo do Mercado Pago estiver instalado no dispositivo do usuário, ele interceptará quando se navegar para `agreement_uri` e abrirá automaticamente o fluxo de vinculação no contexto do aplicativo.
-- **Navegador (disponível para dispositivos Android e iOS)**: ao abrir o `agreement_uri` em um navegador, a página reconhecerá o contexto e aplicará diferentes estratégias para tentar abrir o aplicativo do Mercado Pago, sendo: <br>
-  - Se o usuário tiver o aplicativo instalado, o fluxo de vinculação será aberto automaticamente no aplicativo.
-  - Se o usuário não tiver o aplicativo instalado, será direcionado ao navegador padrão do usuário e, nesse caso, é possível que o usuário tenha que fazer login manualmente.
-
-![sniffing](/images/wallet-connect/sniffing.pt.png)
-![sniffing](/images/wallet-connect/sniffing.ptt.png)
+- **App Link (available only for Android devices)**: if the Mercado Pago app is installed on the user's device, it will intercept when navigating to `agreement_uri` and automatically open the agreement flow in the app's context.
+- **Browser (available for Android and iOS devices)**: when opening the `agreement_uri` in a browser, the page will recognize the context and apply different strategies to try to open the Mercado Pago app, as follows: <br>
+  - If the user has the app installed, the linking flow will automatically open in the app.
+  - If the user does not have the app installed, they will be directed to the user's default browser, and in this case, the user may need to log in manually.
 
 > NOTE
 >
-> Importante
+> Important
 >
-> O _Sniffing_ está disponível apenas no navegador do dispositivo móvel quando o usuário tem o aplicativo do Mercado Pago instalado e, dependendo do dispositivo e do sistema operacional, a experiência de abrir um aplicativo a partir de um navegador pode variar. Em geral, é necessária a confirmação do usuário através de um modal do sistema e, em outros cenários como em _webviews_ de outros aplicativos, o funcionamento pode ser afetado.
+> Sniffing is only available in the mobile device browser when the user has the Mercado Pago app installed. Depending on the device and operating system, the experience of opening an app from a browser may vary. Generally, user confirmation is required through a system modal, and in other scenarios such as webviews of other applications, functionality may be affected.
 
-## Configuração
+## Configuration
 
-Para utilizar o o recurso de _Sniffing_, basta abrir um link no navegador web do dispositivo móvel para ativar a detecção e seguir o fluxo de vinculação. Veja abaixo como disponibilizar a funcionalidade de _Sniffing_ em sua integração.
+To use the Sniffing feature, simply open a link in the mobile device's web browser to activate detection and follow the linking flow. See below how to enable the Sniffing feature in your integration.
 
 1. Envie um **GET** com os atributos necessários, pricipalmente o `return_uri`, ao _endpoint_ [/v2/wallet_connect/agreements](/developers/pt/reference/wallet_connect/_wallet_connect_agreements/post) e execute a requisição para [iniciar uma vinculação](/developers/pt/docs/wallet-connect/account-linking-flow/create-agreement).
 
+1. Send a **GET** with the necessary attributes, primarily `return_uri`, to the endpoint [/v2/wallet_connect/agreements](/developers/en/reference/wallet_connect/_wallet_connect_agreements/post) and execute the request to [initiate an agreement](/developers/en/docs/wallet-connect/account-linking-flow/create-agreement).
+
 > WARNING
 >
-> Atenção
+> Attention
 >
-> É necessário que a URL utilizada no parâmetro `return_uri` seja para um recurso _web_ (não podem ser utilizados _deeplinks_) e o início dela deve **coincidir com a URL de retorno configurada na aplicação do vendedor**. Para mais informações, acesse os[Detalhes da aplicação](/developers/pt/guides/additional-content/your-integrations/application-details).
+> It is necessary that the URL used in the `return_uri` parameter be for a web resource (deeplinks cannot be used) and **its beginning must match the return URL configured in the seller's application**. For more information, refer to the [Application details](/developers/en/guides/additional-content/your-integrations/application-details).
 
-2. Serão retornados os parâmetros `agreement_id` e `agreement_uri`. Utilize um componente **_In-App Browser_** para navegar até o `agreement_uri`, endereço para onde o comprador é redirecionado para conceder o acesso à carteira do Mercado Pago para realizar o pagamento. De acordo com o sistema operacional, utilize o **_Custom Tabs_** para dispositivos _Android_ e o **_SVC_** para dispositivos _iOS_.
-3. A partir disso, utilize a URL de retorno `return_uri` para finalizar o processo de vinculação.
+2. The parameters `agreement_id` and `agreement_uri` will be returned. Use an **In-App Browser** component to navigate to `agreement_uri`, the address where the buyer is redirected to grant access to the Mercado Pago wallet to make the payment. According to the operating system, use **Custom Tabs** for Android devices and **SVC** for iOS devices.
+3. After that, use the return URL `return_uri` to complete the linking process.
 
-Após configurada, é possível desativar a função de _Sniffing_ da sua apliação e essa ação deve ser coordenada com a **equipe de Integrações** do Mercado Pago.
+After configuration, it is possible to disable the Sniffing feature of your application, and this action must be coordinated with the **Integrations team** at Mercado Pago.
