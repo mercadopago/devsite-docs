@@ -6,7 +6,7 @@ A partir das novas regras operacionais para tokenização de operações de paga
 
 ## Processar primeiro pagamento
 
-Para o **primeiro pagamento** com _Visa_, envie o _header_ `X-Expand-Responde-Nodes` ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post) conforme abaixo.
+Para o **primeiro pagamento**, envie o _header_ `X-Expand-Responde-Nodes` ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post) conforme abaixo.
 
 ```json
 --header 'X-Expand-Responde-Nodes: gateway.reference'\
@@ -30,7 +30,7 @@ Na resposta se poderá observar o retorno do `network_transaction_id` no parâme
 
 ### Processar pagamentos subsequentes 
 
-Para os **pagamentos subsequentes** com _Visa_, envie a informação do `network_transaction_id` retornado no último pagamento realizado ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post), através do parâmetro `forward_data`, ou utilizando o _cURL_ abaixo.
+Para os **pagamentos subsequentes**, envie a informação do `network_transaction_id` retornado no último pagamento realizado ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post), através do parâmetro `forward_data`, ou utilizando o _cURL_ abaixo.
 
 > WARNING
 >

@@ -6,7 +6,7 @@ Automatic payments messaging, or **Subscription Messaging**, involves informatio
 >
 > Important
 >
-> In the case of recurring payment transactions with the Visa brand, it will be necessary to send the transaction identifier (TID) in messaging transactions. For more information on how to send the TID, check the documentation [Network Transaction ID - TID](/developers/en/guides/automatic-payments/network-transaction-id).
+> In the case of operations with recurring payments from the card brands, it will be necessary to send the transaction identifier (TID) in messaging transactions. For more information on how to send the TID, check the documentation [Network Transaction ID - TID](/developers/en/guides/automatic-payments/network-transaction-id).
 
 ## Configuration
 

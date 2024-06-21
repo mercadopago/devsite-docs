@@ -6,7 +6,7 @@ Under the new operational rules for tokenizing recurring payment transactions fr
 
 ## Process the first payment
 
-For the **first** payment with Visa, send the `X-Expand-Responde-Nodes` header to the endpoint [v1/payments](/developers/en/reference/payments/_payments/post) as indicated below.
+For the **first payment**, send the `X-Expand-Responde-Nodes` header to the endpoint [v1/payments](/developers/en/reference/payments/_payments/post) as indicated below.
 
 ```json
 --header 'X-Expand-Responde-Nodes: gateway.reference'\
@@ -30,7 +30,7 @@ In the response, you can observe the return of the `network_transaction_id` in t
 
 ## Process subsequent payments
 
-For **subsequent payments** with Visa, send the `network_transaction_id` information returned in the last payment made to the [v1/payments](/developers/es/reference/payments/_payments/post) endpoint through the `forward_data` parameter, or using the cURL below.
+For **subsequent payments**, send the `network_transaction_id` information returned in the last payment made to the [v1/payments](/developers/es/reference/payments/_payments/post) endpoint through the `forward_data` parameter, or using the cURL below.
 
 > WARNING
 >
