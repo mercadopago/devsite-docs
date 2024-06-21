@@ -30,4 +30,4 @@ Para exibir o Mercado Crédito no checkout da sua loja, siga os passos abaixo.
     - "Pague e até 12x sem cartão de crédito. Saiba mais."
 6. Clique no botão **Salvar alterações** para finalizar a configuração.
 
-![woo-credits-admin-pt](images/woocomerce/credits-woo-2.png)
+![woo-credits-admin-pt](/images/woocomerce/credits-woo-2.png)
