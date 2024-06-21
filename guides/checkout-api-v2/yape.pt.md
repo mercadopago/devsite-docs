@@ -18,23 +18,22 @@ A primeira etapa do processo de integração de pagamentos com Yape é a captura
 
 Utilize o código a seguir para importar a biblioteca MercadoPago.js antes de adicionar o formulário. Você pode importar a biblioteca via HTML ou via Bash.
 
-### Importar via HTML
+[[[
 ```html
 <body>
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
 ```
-
-### Importar via Bash
 ```bash
 npm install @mercadopago/sdk-js
 ```
+]]]
 
 ## Configurar credencial
 
 As credenciais são chaves únicas usadas para identificar uma integração em sua conta. Elas são utilizadas para capturar pagamentos em lojas online e outras aplicações de forma segura.
 
-Utilize o código abaixo para configurar sua credencial, substituindo o valor `YOUR_PUBLIC_KEY` pela sua _Public key_ de produção disponível na aplicação criada, em Suas Integrações. Para mais detalhes, veja [credenciais](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials).
+Utilize o código abaixo para configurar sua credencial, substituindo o valor `YOUR_PUBLIC_KEY` pela sua _Public key_ de produção disponível na aplicação criada em [Suas integrações](/developers/panel/app). Para mais detalhes, veja [credenciais](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials).
 
 ```
 const mp = new MercadoPago("YOUR_PUBLIC_KEY");
@@ -171,7 +170,7 @@ O detalhamento de cada um dos parâmetros citados acima, bem como seus respectiv
 
 | Campo             | Tipo    | Descrição                                                                                                                                  | Obrigatório/Opcional | Exemplos/Possíveis valores                |
 |-------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------|----------------------|-------------------------------------------|
-| `token`             | string  | Token fornecido pelo SDK JS do MercadoPago. Para saber mais, consulte a documentação [Gerar token de Yape](/developers/pt/docs/checkout-api/integration-configuration/yape#bookmark_gerar_token_de_yape).                                 | Obrigatório          | "f8ae90c6a83e71d698d5ea927f851034"        |
+| `token`             | string  | Token fornecido pelo SDK JS do MercadoPago. Para saber mais, consulte a documentação [Gerar token de Yape](/developers/pt/docs/checkout-api/integration-configuration/yape#bookmark_gerar_token).                                 | Obrigatório          | "f8ae90c6a83e71d698d5ea927f851034"        |
 | `transaction_amount`| number  | Valor da transação. Existe um limite máximo de valor que pode ser de S/500, S/900 ou S/2000, configurado diretamente no próprio aplicativo Yape. | Obrigatório          | 2000                                      |
 | `description`       | string  | Título do produto.                                                                                                                         | Opcional             | "Video game"                                |
 | `installments`      | number  | Quantidade de parcelas. Como se trata de um pagamento com cartão de débito, a quantidade de parcelas será 1.                               | Obrigatório          | 1                                         |
@@ -410,9 +409,9 @@ Por ser uma transação com cartão de débito, os status de pagamento possívei
 
 ## Testar a integração
 
-É possível utilizar OTPs e números de celular de teste para simular diferentes respostas de pagamento em uma transação, sem a necessidade de usar números de celular e OTPs reais. 
+É possível utilizar um OTP e números de celular de teste para simular diferentes respostas de pagamento em uma transação, sem a necessidade de usar números de celular e OTPs reais. Isso permite reproduzir os status mapeados em _payments_.
 
-Consulte a tabela abaixo e utilize um dos números específicos para simular cenários de sucesso e falha durante a implementação.
+Para testar a integração, insira o OTP e um dos números de celular listados na tabela abaixo no formulário de Checkout para simular cenários de sucesso e falha na implementação.
 
 > NOTE
 >
@@ -431,4 +430,4 @@ Consulte a tabela abaixo e utilize um dos números específicos para simular cen
 | 111111117      | 123456  | `cc_rejected_bad_filled_security_code`         |
 | 111111118      | 123456  | `cc_rejected_form_error`                       |
 
-Os procedimentos para gerar o token de Yape e criar o pagamento são os mesmos: é necessário fornecer o número de celular e o OTP da tabela acima. Se houver dúvidas sobre como gerar o token Yape ou criar o pagamento, consulte as documentações [Gerar token de YAPE](/developers/pt/docs/checkout-api/integration-configuration/yape#bookmark_gerar_token_de_yape) e [Criar pagamento](/developers/pt/docs/checkout-api/integration-configuration/yape#bookmark_criar_pagamento) respectivamente.
+Os procedimentos para gerar o token de Yape e criar o pagamento são os mesmos: é necessário fornecer o número de celular e o OTP da tabela acima. Se houver dúvidas sobre como gerar o token Yape ou criar o pagamento, consulte as documentações [Gerar token de YAPE](/developers/pt/docs/checkout-api/integration-configuration/yape#bookmark_gerar_token) e [Criar pagamento](/developers/pt/docs/checkout-api/integration-configuration/yape#bookmark_criar_pagamento) respectivamente.
