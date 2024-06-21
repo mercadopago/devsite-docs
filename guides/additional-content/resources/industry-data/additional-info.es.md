@@ -923,7 +923,7 @@ Agrega toda la información adicional que quieras.
 | `route` | Object | Información de la ruta |
 | `departure` | String | Salida |
 | `destination` | String | Llegada |
-| `departure_date_time` | Date | Fecha de salida |
+| `departure_date_time` | Date | Fecha de salida. Ejemplo: 2024-06-20T06:20:00.000-04:00. |
 | `arrival_date_time` | Date | Fecha de llegada |
 | `company` | String | Compañía |
 
