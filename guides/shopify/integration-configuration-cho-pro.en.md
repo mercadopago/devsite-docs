@@ -9,7 +9,7 @@ To install **Mercado Pago Checkout Pro** on your Shopify store, follow these ste
 2. In the store's admin panel, click on **Settings** in the bottom-left corner of the page.
 3. Once there, select the **Payments** option from the menu on the left side of the page.
 4. Under "Accepted payment methods," click on **Add payment method**.
-5. Select the **Search provider** tab and search for the "Mercado Pago Checkout" app.
+5. Select the **Search provider** tab and search for the "Mercado Pago Checkout Pro" app.
 6. Once you locate it, select it and click **Install**.
 7. Carefully read the information about the requested permissions and click **Install** again.
 8. After accepting the requested permissions, click **Manage account** to link your Mercado Pago account to your store using your credentials.
