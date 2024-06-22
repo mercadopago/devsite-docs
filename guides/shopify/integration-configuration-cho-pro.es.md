@@ -8,7 +8,7 @@ Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los sig
 1. Dirígete a tu tienda [Shopify](https://accounts.shopify.com/store-login).
 2. En el panel de administración de la tienda, haz clic en **Configuración** en la esquina inferior izquierda de la página.
 3. Una vez allí, selecciona la opción **Pagos** en el menú del lado izquierdo de la página.
-4. En "Formas de pago admitidas", haz clic en **Agregar formas de pago**.
+4. En "Formas de pago admitidas", haz clic en **Agregar forma de pago**.
 5. Selecciona la pestaña **Buscar por proveedor** y busca la aplicación "Mercado Pago Checkout Pro".
 6. Una vez localizada, selecciónala y haz clic en **Instalar**.
 7. Lee cuidadosamente la información sobre los permisos solicitados y haz clic en **Instalar** nuevamente.

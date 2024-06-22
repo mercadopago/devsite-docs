@@ -11,7 +11,7 @@ Para instalar o **Mercado Pago Checkout Pro** em sua loja Shopify, siga os segui
 ![installation chopro 1](/images/shopify/installation-chopro-1-pt.png)
 
 3. Uma vez lá, selecione a opção **Pagamentos** no menu ao lado esquerdo da página. 
-4. Em "Formas de pagamento aceitas", clique em **Adicionar formas de pagamento**.
+4. Em "Formas de pagamento aceitas", clique em **Adicionar forma de pagamento**.
 
 ![installation chopro 2](/images/shopify/installation-chopro.2-pt.png)
 
