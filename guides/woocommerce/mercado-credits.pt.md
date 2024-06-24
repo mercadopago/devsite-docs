@@ -16,13 +16,10 @@ Para exibir o Mercado Crédito no checkout da sua loja, siga os passos abaixo.
 >
 > Para oferecer **Parcelamento sem cartão** como meio de pagamento na sua loja WooCommerce, você deve primeiro **atualizar o plugin do Mercado Pago** para a versão mais recente disponível. Para fazer isso, no painel de administração da sua loja, vá para **Plugins > Plugins instalados**, procure por **Mercado Pago**, e clique em **Atualizar**.
 
-1. Na opção **Parcelado sem cartão**, clique em **Configurar** para acessar a página de configuração do meio de pagamento.
-
-![woo-credits-admin-pt](/images/woocomerce/credits-woo-1.png)
-
-2. Em **Ativar parcelamento sem cartão no checkout**, ative o botão deslizante para disponibilizar esta forma de pagamento. Certifique-se de que o status está **ativo**.
-3. Na opção **Título no checkout**, escolha o nome com que essa forma de pagamento será exibida em sua loja. Recomendamos que utilize o título padrão **“Até 12x sem cartão com Mercado Crédito**.
-4. Em **Converter moeda**, ative esta opção para converter o valor da moeda configurada em WooComerce para um valor compatível com o da moeda que você usa no Mercado Pago. 
+1. Nas configurações do painel do WooCommerce, clique em **Configurar** na opção **Parcelado sem cartão** para acessar a página de configuração deste meio de pagamento.
+2. Em **Ativar parcelamento sem cartão no checkout**, ative o botão deslizante para disponibilizar este meio de pagamento. Certifique-se de que o status está **ativo**.
+3. Na opção **Título no checkout**, escolha o nome com que o meio de pagamento será exibida em sua loja. Recomendamos que utilize o título padrão **“Até 12x sem cartão com Mercado Crédito**.
+4. Em **Converter moeda**, ative o botão deslizante para converter o valor da moeda configurada em WooComerce para um valor compatível com o da moeda que você usa no Mercado Pago. 
 5. Em **Promova o pagamento dos seus produtos com o Mercado Crédito**, ative o _banner_ promocional para oferecer a opção de pagamento parcelado na página do seu produto. Neste capo, você poderá escolher como divulgar o Mercado Crédito em sua loja selecionando uma entre as seguintes alternativas:
 
     - "Até 12x sem cartão com o Mercado Crédito. Saiba mais."
@@ -30,6 +27,6 @@ Para exibir o Mercado Crédito no checkout da sua loja, siga os passos abaixo.
     - Com o Mercado Crédito, você compra agora e paga por mês. Saiba mais."
     - "Pague e até 12x sem cartão de crédito. Saiba mais."
 
-6. Clique no botão **Salvar alterações** para finalizar a configuração.
+6. Clique em **Salvar alterações** para finalizar a configuração.
 
 ![woo-credits-admin-pt](/images/woocomerce/credits-woo-2.png)
