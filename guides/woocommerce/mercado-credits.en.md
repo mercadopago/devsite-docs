@@ -20,7 +20,7 @@ If you want to show Mercado Credits in your store's checkout, follow the steps b
 2. In **Enable installments without a card at checkout**, toggle the switch to enable this payment method. Ensure the status is **active**.
 3. In the option **Title at checkout**, choose the name that will be displayed for this payment method in your store. We recommend using the default title **“Up to 12 installments without a card with Mercado Crédito”**.
 4. In **Convert currency**, toggle the switch to convert the value of the currency set in WooCommerce to a value compatible with the currency you use in Mercado Pago.
-5. In **Promote payment of your products with Mercado Crédito**, enable the promotional banner to offer the installment payment option on your product page. In this field, you can choose how to promote Mercado Crédito in your store by selecting one of the following alternatives:
+5. In **Promote payment of your products with Mercado Crédito**, enable the promotional banner to advertise the installment payment option on your product page. In this field, you can choose how to promote Mercado Crédito in your store by selecting one of the following alternatives:
 
     - "Up to 12 installments without a card with Mercado Crédito. Learn more."
     - "Buy now, pay later with Mercado Crédito. Learn more."

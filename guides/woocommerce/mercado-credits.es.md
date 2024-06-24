@@ -32,7 +32,7 @@ Para configurar Mercado Crédito en el checkout de tu tienda, sigue los pasos a 
 2. En **Activar opción de pagos sin tarjeta en el checkout**, active el botón deslizante para habilitar este medio de pago. Asegúrese de que el estado esté **activo**.
 3. En la opción **Título en el checkout**, elija el nombre con el que se mostrará el de pago en su tienda. Recomendamos que utilice el título predeterminado **“Hasta 12 pagos sin tarjeta con Mercado Crédito”**.
 4. En **Convertir moneda**, active el botón deslizante para convertir el valor de la moneda configurada en WooCommerce a un valor compatible con la moneda que usa en Mercado Pago.
-5. En **Promociona el pago de sus productos con Mercado Crédito**, active el banner promocional para ofrecer la opción de pago en cuotas en la página de su producto. En este campo, podrá elegir cómo promocionar Mercado Crédito en su tienda seleccionando una de las siguientes alternativas:
+5. En **Promociona el pago de sus productos con Mercado Crédito**, active el banner promocional para divulgar la opción de pago en cuotas en la página de su producto. En este campo, podrá elegir cómo promocionar Mercado Crédito en su tienda seleccionando una de las siguientes alternativas:
 
     - "Hasta 12 pagos sin tarjeta con Mercado Crédito. Saber más."
     - "Compre ahora, paga después con Mercado Crédito. Saber más."
@@ -53,7 +53,7 @@ Para configurar Mercado Crédito en el checkout de tu tienda, sigue los pasos a 
 2. En **Activar opción de pagos sin tarjeta en el checkout**, active el botón deslizante para habilitar este medio de pago. Asegúrese de que el estado esté **activo**.
 3. En la opción **Título en el checkout**, elija el nombre con el que se mostrará el medio de pago en su tienda. Recomendamos que utilice el título predeterminado **“Hasta 12 pagos sin tarjeta con Mercado Crédito”**.
 4. En **Convertir moneda**, active el botón deslizante para convertir el valor de la moneda configurada en WooCommerce a un valor compatible con la moneda que usa en Mercado Pago.
-5. En **Promociona el pago de sus productos con Mercado Crédito**, active el banner promocional para ofrecer la opción de pago en cuotas en la página de su producto. En este campo, podrá elegir cómo promocionar Mercado Crédito en su tienda seleccionando una de las siguientes alternativas:
+5. En **Promociona el pago de sus productos con Mercado Crédito**, active el banner promocional para divulgar la opción de pago en cuotas en la página de su producto. En este campo, podrá elegir cómo promocionar Mercado Crédito en su tienda seleccionando una de las siguientes alternativas:
 
     - "Hasta 12 pagos sin tarjeta con Mercado Crédito. Saber más."
     - "Compre ahora, paga después con Mercado Crédito. Saber más."
