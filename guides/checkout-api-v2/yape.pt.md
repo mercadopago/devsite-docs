@@ -65,7 +65,7 @@ Após concluir a inclusão do formulário e obter os dados necessários, gere o 
 
 ### Gerar token via MercadoPago.js
 
-Utilize o método `mp.yape.create` para gerar um token de Yape, conforme o código abaixo:
+Utilize o método `mp.yape.create` para gerar um token de Yape, conforme o código abaixo.
 
 ```javascript
 (async function handleYape () {
@@ -166,7 +166,6 @@ O detalhamento de cada um dos parâmetros citados acima, bem como seus respectiv
 > Importante
 >
 > Para esta etapa, ao fazer a solicitação através da API ou SDKs, é necessário enviar sua chave privada (_access_token_ produtivo).
-
 
 | Campo             | Tipo    | Descrição                                                                                                                                  | Obrigatório/Opcional | Exemplos/Possíveis valores                |
 |-------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------|----------------------|-------------------------------------------|

@@ -2,19 +2,19 @@
 
 Yape is a mobile application that simplifies the process of bank transfers. Users can make transactions easily and quickly directly from their cell phones, after linking their MultiRed debit card to the application.
 
-To make a transaction with Yape, the process begins with the creation of a token, which is necessary for the payment creation stage. This token can be generated in two ways: directly through an API or using the Mercado Pago JS SDK.
+To make a transaction with Yape, first you must generate a token, which is necessary for the payment creation stage. This token can be generated in two ways: directly through an API or using the Mercado Pago JS SDK.
 
 In this documentation, you will find all the necessary steps to perform the configuration and integration tests with Yape comprehensively.
 
 ## Integração via SDK javascript
 
-With Checkout Transparente, it is possible to offer payments via Yape using the JS SDK method to generate a token. For this, it is necessary to send the phone number and OTP (one-time password found in the Yape application) fields. With the token, a payment can be created.
+With Checkout API, it is possible to offer payments via Yape using the JS SDK method to generate a token. For this, it is necessary to send the phone number and OTP (one-time password found in the Yape application) fields. With the token, a payment can be created.
 
 To offer payments with Yape, follow these steps.
 
 ## Importing MercadoPago.js
 
-The first step in the payment integration process with Yape is capturing OTP (One-time password) and phone number data to generate the payment token. This is done by including the MercadoPago.js library in your project, followed by the form to capture the necessary data.
+The first step in the payment integration process with Yape is capturing the OTP (One-time password) and phone number data to generate the payment token. This is done by including the MercadoPago.js library in your project, followed by the form to capture the necessary data.
 
 Use the following code to import the MercadoPago.js library before adding the form. You can import the library via HTML or Bash.
 
@@ -163,15 +163,15 @@ Details of each parameter mentioned above, as well as their respective possible 
 >
 > Important
 >
-> For this step, when making the request through the API or SDKs, it is necessary to send your private key (_access_token_ in production).
+> For this step, when making the request through the API or SDKs, it is necessary to send your productive private key (_access_token_ ).
 
 | Field             | Type    | Description                                                                                                                           | Required/Optional   | Examples/Possible values                 |
 |-------------------|---------|---------------------------------------------------------------------------------------------------------------------------------------|---------------------|------------------------------------------|
-| `token`           | string  | Token provided by the Mercado Pago JS SDK. For more details, see the documentation [Generate Yape token](/developers/en/docs/checkout-api/integration-configuration/yape#bookmark_generate_token). | Required            | "f8ae90c6a83e71d698d5ea927f851034"       |
+| `token`           | string  | Token provided by the Mercado Pago JS SDK. For more details, see the [Generate Yape token](/developers/en/docs/checkout-api/integration-configuration/yape#bookmark_generate_token) section. | Required            | "f8ae90c6a83e71d698d5ea927f851034"       |
 | `transaction_amount`| number | Transaction amount. There is a maximum amount limit that can be S/500, S/900, or S/2000, configured directly within the Yape application. | Required            | 2000                                     |
 | `description`     | string  | Product title.                                                                                                                        | Optional            | "Video game"                             |
 | `installments`    | number  | Number of installments. As it is a debit card payment, the number of installments will be 1.                                          | Required            | 1                                        |
-| `payment_method_id`| string  | "yape" for all cases.                                                                                                                 | Required            | "yape"                                   |
+| `payment_method_id`| string  | `yape` for all cases.                                                                                                                 | Required            | `yape`                                    |
 | `payer.email`     | string  | Payer's email.                                                                                                                        | Required            | "test_user_12345@testuser.com"           |
 
 [[[
@@ -372,7 +372,7 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 ```
 ]]]
 
-Example of the response. Please note that some information has been omitted to highlight the most relevant fields.
+Below, you can see an example of the response. Please note that some information has been omitted to highlight the most relevant fields.
 
 ```json
 {
