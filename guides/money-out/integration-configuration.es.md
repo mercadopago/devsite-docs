@@ -153,7 +153,7 @@ Si la ejecución fue exitosa, recibirás automáticamente una respuesta con `sta
 | `transaction.payer.id` | Identificador del integrador titular de la cuenta de origen. |
 | `transaction.refunded_amount` | En caso de un reembolso, indicará el monto total reembolsado al titular de la cuenta de origen. Si no hubo ningún reembolso, su valor será 0. |
 | `transaction.to.accounts.amount` | Monto transferido a la cuenta de destino. Su valor será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado este último en el campo `transaction.refunded_amount`. |
-| `transaction.to.accounts.origin_id` | - |
+| `transaction.to.accounts.origin_id` | Identificador que permite rastrear la transacción dentro del sistema bancario. |
 | `transaction.to.accounts.amount.status_detail` | Información detallada del estado de la transacción. Para conocer los posibles `status_detail`, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `transaction.to.accounts.owner.identification.number` | Número identificador del titular de la cuenta de destino. |
 | `transaction.to.accounts.owner.identification.type` | Tipo de identificación del titular de la cuenta. |
@@ -324,7 +324,7 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
 | `transaction.payer.id` | Identificador del integrador titular de la cuenta de origen. |
 | `transaction.refunded_amount` | En caso de un reembolso, indicará el monto total reembolsado al titular de la cuenta de origen. Si no hubo ningún reembolso, su valor será 0. |
 | `transaction.to.accounts.amount` | Monto transferido a la cuenta de destino. Su valor será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado este último en el campo `transaction.refunded_amount`. |
-| `transaction.to.accounts.origin_id` | - |
+| `transaction.to.accounts.origin_id` | Identificador que permite rastrear la transacción dentro del sistema bancario. |
 | `transaction.to.accounts.amount.status_detail` | Información detallada del estado de la transacción. Para conocer los posibles `status_detail`, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `transaction.to.accounts.owner.identification.number` | Número identificador del titular de la cuenta de destino. |
 | `transaction.to.accounts.owner.identification.type` | Tipo de identificación del titular de la cuenta. |
@@ -487,7 +487,7 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
 | `transaction.payer.id` | Identificador del integrador titular de la cuenta de origen. |
 | `transaction.refunded_amount` | En caso de un reembolso, indicará el monto total reembolsado al titular de la cuenta de origen. Si no hubo ningún reembolso, su valor será 0. |
 | `transaction.to.accounts.amount` | Monto transferido a la cuenta de destino. Su valor será igual a `from.accounts.amount`, salvo que haya habido un reembolso total o parcial, indicado este último en el campo `transaction.refunded_amount`. |
-| `transaction.to.accounts.origin_id` | - |
+| `transaction.to.accounts.origin_id` | Identificador que permite rastrear la transacción dentro del sistema bancario. |
 | `transaction.to.accounts.amount.status_detail` | Información detallada del estado de la transacción. Para conocer los posibles `status_detail`, dirígete a [Posibles estados de una transacción](/developers/es/docs/money-out/integration-configuration#bookmark_posibles_estados_de_una_transacción). |
 | `transaction.to.accounts.owner.identification.number` | Número identificador del titular de la cuenta de destino. |
 | `transaction.to.accounts.owner.identification.type` | Tipo de identificación del titular de la cuenta. |

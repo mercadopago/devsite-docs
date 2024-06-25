@@ -153,7 +153,7 @@ If the execution was successful, you will automatically receive a response with 
 | `transaction.payer.id` | Identifier of the integrator holding the origin account. |
 | `transaction.refunded_amount` | In case of a refund, it will indicate the total amount refunded to the account holder of the origin account. If there was no refund, its value will be 0. |
 | `transaction.to.accounts.amount` | Amount transferred to the destination account. Its value will be equal to `from.accounts.amount`, unless there has been a total or partial refund, the latter indicated in the `transaction.refunded_amount` field. |
-| `transaction.to.accounts.origin_id` | - |
+| `transaction.to.accounts.origin_id` | Identifier that allows the transaction to be tracked within the banking system. |
 | `transaction.to.accounts.amount.status_detail` | Detailed information about the transaction status. To learn about possible `status_detail`, refer to [Possible transaction status](/developers/en/docs/money-out/integration-configuration#bookmark_possible_transaction_status). |
 | `transaction.to.accounts.owner.identification.number` | Identification number of the holder of the destination account. |
 | `transaction.to.accounts.owner.identification.type` | Type of identification of the destination account holder. |
@@ -323,7 +323,7 @@ If the execution was successful, you will automatically receive a response with 
 | `transaction.payer.id` | Identifier of the integrator holding the origin account. |
 | `transaction.refunded_amount` | In case of a refund, it will indicate the total amount refunded to the account holder of the origin account. If there was no refund, its value will be 0. |
 | `transaction.to.accounts.amount` | Amount transferred to the destination account. Its value will be equal to `from.accounts.amount`, unless there has been a total or partial refund, the latter indicated in the `transaction.refunded_amount` field. |
-| `transaction.to.accounts.origin_id` | - |
+| `transaction.to.accounts.origin_id` | Identifier that allows the transaction to be tracked within the banking system. |
 | `transaction.to.accounts.amount.status_detail` | Detailed information about the transaction status. To learn about possible `status_detail`, refer to [Possible transaction status](/developers/en/docs/money-out/integration-configuration#bookmark_possible_transaction_status). |
 | `transaction.to.accounts.owner.identification.number` | dentification number of the holder of the destination account. |
 | `transaction.to.accounts.owner.identification.type` | Type of identification of the destination account holder. |
@@ -486,7 +486,7 @@ If the execution was successful, you will automatically receive a response with 
 | `transaction.payer.id` | Identifier of the integrator holding the origin account. |
 | `transaction.refunded_amount` | In case of a refund, it will indicate the total amount refunded to the account holder of the origin account. If there was no refund, its value will be 0. |
 | `transaction.to.accounts.amount` | Amount transferred to the destination account. Its value will be equal to `from.accounts.amount`, unless there has been a total or partial refund, the latter indicated in the `transaction.refunded_amount` field. |
-| `transaction.to.accounts.origin_id` | - |
+| `transaction.to.accounts.origin_id` | Identifier that allows the transaction to be tracked within the banking system. |
 | `transaction.to.accounts.amount.status_detail` | Detailed information about the transaction status. To learn about possible `status_detail`, refer to [Possible transaction status](/developers/en/docs/money-out/integration-configuration#bookmark_possible_transaction_status). |
 | `transaction.to.accounts.owner.identification.number` | dentification number of the holder of the destination account. |
 | `transaction.to.accounts.owner.identification.type` | Type of identification of the destination account holder. |
