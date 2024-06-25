@@ -4,7 +4,7 @@ O **_sniffing_** é uma funcionalidade que permite identificar se um usuário te
 
 A função de _sniffing_ simplifica o processo de vinculação, melhorando a experiência do usuário ao reduzir a fricção no processo de vinculação.
 
-## Modelos de utilização do sniffing
+## Modelos de implementação de sniffing
 
 Veja a seguir os modelos disponíveis para adicionar à sua integração com o Mercado Pago.
 

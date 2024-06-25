@@ -4,7 +4,7 @@
 
 The sniffing feature simplifies the linking process, improving the user experience by reducing friction in the agreement process.
 
-## Sniffing usage models
+## Models of sniffing implementation
 
 See below for the available models to add to your integration with Mercado Pago.
 
