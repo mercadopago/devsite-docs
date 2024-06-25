@@ -16,17 +16,17 @@ If you want to show Mercado Credits in your store's checkout, follow the steps b
 >
 > In order to offer **Installments without a card** as a payment method in your WooCommerce store, you must first **update the Mercado Pago plugin** to the most recent version available. To do so, in your store’s admin panel go to **Plugins > Installed plugins**, search for **Mercado Pago**, and click on **Update**.
 
-1. In the option **Installments without a card with Mercado Pago**, click on **Configure** to access the payment method configuration page.
-2. In **Enable installments without a card at checkout**, toggle the switch to enable this payment method. Ensure the status is **active**.
-3. In the option **Title at checkout**, choose the name that will be displayed for this payment method in your store. We recommend using the default title **“Up to 12 installments without a card with Mercado Crédito”**.
+1. In the option **Up to 12 installments without cards through Mercado Credito**, click on **Configure** to access the payment method configuration page.
+2. In **Activate the installments without cards in the checkout**, toggle the switch to enable this payment method. Ensure the status is **enabled**.
+3. In the option **Title in the checkout**, choose the name that will be displayed for this payment method in your store. We recommend using the default title **“Up to 12 installments without cards through Mercado Crédito”**.
 4. In **Convert currency**, toggle the switch to convert the value of the currency set in WooCommerce to a value compatible with the currency you use in Mercado Pago.
 5. In **Promote payment of your products with Mercado Crédito**, enable the promotional banner to advertise the installment payment option on your product page. In this field, you can choose how to promote Mercado Crédito in your store by selecting one of the following alternatives:
 
-    - "Up to 12 installments without a card with Mercado Crédito. Learn more."
-    - "Buy now, pay later with Mercado Crédito. Learn more."
-    - "With Mercado Crédito, get it now and pay monthly. Learn more."
-    - "Pay in up to 12 months without a credit card. Learn more."
+    - "Up to 12 installments without cards with Mercado Crédito. Learn more."
+    - "Buy now, pay later through Mercado Crédito. Learn more."
+    - "With Mercado Crédito, get it now and pay month by month. Learn more."
+    - "Pay in up to 12 installments without credit card. Learn more."
 
-6. Click the **Save all changes** button to complete the configuration.
+6. Click the **Save changes** button to complete the configuration.
 
-![woo-credits-admin-pt](/images/woocomerce/credits-woo-2-es.png)
+![woo-credits-admin-pt](/images/woocomerce/credits-woo-2-en.png)
