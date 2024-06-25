@@ -6,7 +6,7 @@ A função de _Sniffing_ simplifica o processo de vinculação, melhorando a exp
 
 ## Modelos de utilização do Sniffing
 
-Os modelos disponíveis são:
+Veja a seguir os modelos disponíveis para adicionar à sua integração com o Mercado Pago.
 
 > WARNING
 >
