@@ -60,9 +60,7 @@ Una vez que realices la medición de calidad de tu integración, encontrarás la
 
 ![homologation-screen](/homologator/integration-quality-screen-es.png)
 
-1. **Puntuación**: indica qué tan segura es la configuración de tu aplicación y si está en línea con las buenas prácticas de integración de Mercado Pago. El puntaje mínimo para que tu aplicación cumpla con lo requerido es de 75. Recuerda, igualmente, que cuanto más cerca esté tu integración de los 100 puntos, mejor será la experiencia del usuario y la tasa de aprobación de pagos.
-
-
+1. **Puntuación**: indica qué tan segura es la configuración de tu aplicación y si está en línea con las buenas prácticas de integración de Mercado Pago. El puntaje mínimo para que su aplicación cumpla con los requisitos es de 75, pero **recomendamos obtener 100 puntos para mejorar la experiencia del usuario y aumentar la tasa de aprobación de pagos**.
 2. **Payment ID** y **Última actualización**: `payment ID` en el que se basa el puntaje de calidad de la aplicación y fecha de la última actualización de la homologación.
 3. **Mejoras pendientes**: indica qué oportunidades de mejora fueron identificadas en el proceso y cómo puedes solucionarlas. Haz clic en ellas para poder verlas.
 
