@@ -28,14 +28,14 @@ Para configurar Mercado Crédito en el checkout de tu tienda, sigue los pasos a 
 >
 > Para poder ofrecer **Financiación sin tarjeta** como medio de pago en tu tienda WooCommerce, deberás **actualizar previamente el plugin de Mercado Pago** a la versión más reciente disponible. Para hacerlo, en el panel de administración de tu tienda ve a **Plugins > Plugins instalados**, busca por **Mercado Pago**, y haz clic en **Actualizar**.
 
-1. En la configuración del panel de WooCommerce, haga clic en **Configurar** en la opción **Cuotas sin tarjeta con Mercado Pago** para acceder a la página de configuración de este medio de pago.
-2. En **Activar opción de pagos sin tarjeta en el checkout**, active el botón deslizante para habilitar este medio de pago. Asegúrese de que el estado esté **activo**.
-3. En la opción **Título en el checkout**, elija el nombre con el que se mostrará el de pago en su tienda. Recomendamos que utilice el título predeterminado **“Hasta 12 pagos sin tarjeta con Mercado Crédito”**.
-4. En **Convertir moneda**, active el botón deslizante para convertir el valor de la moneda configurada en WooCommerce a un valor compatible con la moneda que usa en Mercado Pago.
-5. En **Promociona el pago de sus productos con Mercado Crédito**, active el banner promocional para divulgar la opción de pago en cuotas en la página de su producto. En este campo, podrá elegir cómo promocionar Mercado Crédito en su tienda seleccionando una de las siguientes alternativas:
+1. En la configuración del panel de WooCommerce, haz clic en **Configurar** en la opción **Cuotas sin tarjeta con Mercado Pago** para acceder a la página de configuración de este medio de pago.
+2. En **Activar opción de pagos sin tarjeta en el checkout**, activa el botón deslizante para habilitar este medio de pago. Asegúrate de que el estado esté **activo**.
+3. En la opción **Título en el checkout**, elige el nombre con el que el medio de pago se mostrará en tu tienda. Recomendamos que utilices el título predeterminado **“Hasta 12 pagos sin tarjeta con Mercado Crédito”**.
+4. En **Convertir moneda**, activa el botón deslizante para convertir el valor de la moneda configurada en WooCommerce a un valor compatible con la moneda que utilizas en Mercado Pago.
+5. En **Promociona el pago de tus productos con Mercado Crédito**, activa el banner promocional para divulgar la opción de pago en cuotas en la página de tu producto. En este campo, podrás elegir cómo promocionar Mercado Crédito en tu tienda seleccionando una de las siguientes alternativas:
 
     - "Hasta 12 pagos sin tarjeta con Mercado Crédito. Saber más."
-    - "Compre ahora, paga después con Mercado Crédito. Saber más."
+    - "Compra ahora, paga después con Mercado Crédito. Saber más."
     - "Con Mercado Crédito, llévalo ahora y paga mes a mes. Saber más."
     - "Paga en hasta 12 meses sin tarjeta de crédito. Saber más."
 
@@ -49,19 +49,19 @@ Para configurar Mercado Crédito en el checkout de tu tienda, sigue los pasos a 
 >
 > Para poder ofrecer **Financiamiento sin tarjeta** como medio de pago en tu tienda WooCommerce, deberás **actualizar previamente el plugin de Mercado Pago** a la versión más reciente disponible. Para hacerlo, en el panel de administración de tu tienda ve a **Plugins > Plugins instalados**, busca por **Mercado Pago**, y haz clic en **Actualizar**.
 
-1. En la configuración del panel de WooCommerce, haga clic en **Configurar** en la opción **Cuotas sin tarjeta con Mercado Pago** para acceder a la página de configuración de este medio de pago.
-2. En **Activar opción de pagos sin tarjeta en el checkout**, active el botón deslizante para habilitar este medio de pago. Asegúrese de que el estado esté **activo**.
-3. En la opción **Título en el checkout**, elija el nombre con el que se mostrará el medio de pago en su tienda. Recomendamos que utilice el título predeterminado **“Hasta 12 pagos sin tarjeta con Mercado Crédito”**.
-4. En **Convertir moneda**, active el botón deslizante para convertir el valor de la moneda configurada en WooCommerce a un valor compatible con la moneda que usa en Mercado Pago.
-5. En **Promociona el pago de sus productos con Mercado Crédito**, active el banner promocional para divulgar la opción de pago en cuotas en la página de su producto. En este campo, podrá elegir cómo promocionar Mercado Crédito en su tienda seleccionando una de las siguientes alternativas:
+1. En la configuración del panel de WooCommerce, haz clic en **Configurar** en la opción **Cuotas sin tarjeta con Mercado Pago** para acceder a la página de configuración de este medio de pago.
+2. En **Activar opción de pagos sin tarjeta en el checkout**, activa el botón deslizante para habilitar este medio de pago. Asegúrate de que el estado esté **activo**.
+3. En la opción **Título en el checkout**, elige el nombre con el que el medio de pago se mostrará en tu tienda. Recomendamos que utilices el título predeterminado **“Hasta 12 pagos sin tarjeta con Mercado Crédito”**.
+4. En **Convertir moneda**, activa el botón deslizante para convertir el valor de la moneda configurada en WooCommerce a un valor compatible con la moneda que utilizas en Mercado Pago.
+5. En **Promociona el pago de sus productos con Mercado Crédito**, activa el banner promocional para divulgar la opción de pago en cuotas en la página de tu producto. En este campo, podrás elegir cómo promocionar Mercado Crédito en tu tienda seleccionando una de las siguientes alternativas:
 
     - "Hasta 12 pagos sin tarjeta con Mercado Crédito. Saber más."
-    - "Compre ahora, paga después con Mercado Crédito. Saber más."
+    - "Compra ahora, paga después con Mercado Crédito. Saber más."
     - "Con Mercado Crédito, llévalo ahora y paga mes a mes. Saber más."
     - "Paga en hasta 12 meses sin tarjeta de crédito. Saber más."
 
-6. Haga clic en el botón **Guardar todos los cambios** para finalizar la configuración.
+6. Haz clic en el botón **Guardar todos los cambios** para finalizar la configuración.
 
 ------------
 
-![woo-credits-admin-pt](/images/woocomerce/credits-woo-2-es.png)
+![woo-credits-admin-es](/images/woocomerce/credits-woo-2-es.png)
