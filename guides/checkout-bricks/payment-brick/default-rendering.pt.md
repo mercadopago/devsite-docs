@@ -1,5 +1,7 @@
 # Renderização padrão
 
+Veja abaixo as informações necessárias para você configurar e renderizar o Payment Brick.
+
 > WARNING
 >
 > Importante
@@ -619,43 +621,29 @@ import { Payment } from '@mercadopago/sdk-react';
 O resultado de renderizar o Brick deve ser como na imagem abaixo.
 
 ----[mlb]----
-<center>
 
 ![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-pt.gif)
 
-</center>
 ------------
 
 ----[mla]----
-<center>
 
 ![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-pt.gif)
 
-</center>
-
 ------------
 ----[mlm]----
-<center>
 
 ![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-pt.gif)
 
-</center>
-
 ------------
 ----[mco]----
-<center>
 
 ![payment-brick-layout-mco](checkout-bricks/payment-brick-layout-mco-pt.gif)
 
-</center>
-
 ------------
 ----[mpe, mlu, mlc]----
-<center>
 
 ![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
-
-</center>
 
 ------------
 
@@ -740,8 +728,8 @@ $preference->items = array($item);
 // o $preference->purpose = 'wallet_purchase'; permite apenas pagamentos logados
 // para permitir pagamentos como guest, você pode omitir essa propriedade
 $preference->purpose = 'wallet_purchase';
-$preference->save();
-?>
+$preference->create();
+?> 
 ```
 ```node
 // Cria um objeto de preferência
@@ -875,4 +863,4 @@ curl -X POST \
 >
 > Para saber mais detalhes de como configurá-la, acesse a seção [Preferências.](/developers/pt/docs/checkout-bricks/wallet-brick/advanced-features/preferences)<br/></br>
 > <br/></br>
-> Considere que quando um usuário opta por fazer o pagamento utilizando a Conta Mercado Pago, este será redirecionado para a página do Mercado Pago para concluir o pagamento. Por isso, é necessário configurar as `back_urls` se você quiser retornar ao seu site ao final do pagamento. Para mais informações, visite a seção [Redirecione o comprador para o seu site.](/developers/pt/docs/checkout-bricks/wallet-brick/advanced-features/preferences#bookmark_redirecione_o_comprador_para_o_seu_site).
+> Considere que quando um usuário opta por fazer o pagamento utilizando a Conta Mercado Pago, este será redirecionado para a página do Mercado Pago para concluir o pagamento. Por isso, é necessário configurar as `back_urls` se você quiser retornar ao seu site ao final do pagamento. Para mais informações, visite a seção [Redirecione o comprador para o seu site.](/developers/pt/docs/checkout-bricks/wallet-brick/advanced-features/preferences#bookmark_redirecione_o_comprador_para_o_seu_site)

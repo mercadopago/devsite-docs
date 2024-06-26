@@ -7,7 +7,7 @@ See below which payment methods are available for the store when integrating the
 * [Cards](/developers/en/docs/magento-two/payment-configuration/checkout-api/cards): credit and debit cards.
 ----[mlb]----
 * [Ticket](/developers/en/docs/magento-two/payment-configuration/checkout-api/ticket): offline payments (boleto and ATM).
-* [Pix](/developers/en/docs/magento-two/payment-configuration/checkout-api/pix): bank transfer available 24 hours a day. The Pix payment option will only be displayed if there is a Pix key registered in Mercado Pago. 
+* [Pix](/developers/en/docs/magento-two/payment-configuration/checkout-api/pix): bank transfer available 24 hours a day. The Pix payment option will only be displayed if there is a Pix Key registered in Mercado Pago. 
  
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----

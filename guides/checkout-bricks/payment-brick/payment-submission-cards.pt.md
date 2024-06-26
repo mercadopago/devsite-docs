@@ -10,14 +10,14 @@ Com todas as informações coletadas no backend, envie um POST com os atributos 
 > 
 > Importante
 >
-> Ao executar as APIs citadas nesta documentação, você poderá encontrar o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições sem que haja situações indesejadas como, por exemplo, pagamentos em duplicidade.
+> Além disso, você deverá enviar obrigatoriamente o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Para fazé-lo, atualize [nossa biblioteca de SDK](/developers/pt/docs/sdks-library/landing) ou gere um UUID V4 e envie-o no _header_ de suas chamadas.
 
 [[[
 ```php
 <?php
   use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\Client\Common\RequestOptions;
   use MercadoPago\MercadoPagoConfig;
-
 
   MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
@@ -26,17 +26,17 @@ Com todas as informações coletadas no backend, envie um POST com os atributos 
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
-    "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
-    "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
-    "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
+    "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+    "token" => $_POST['<TOKEN>'],
+    "description" => $_POST['<DESCRIPTION>'],
+    "installments" => $_POST['<INSTALLMENTS>'],
+    "payment_method_id" => $_POST['<PAYMENT_METHOD_ID'],
+    "issuer_id" => $_POST['<ISSUER>'],
     "payer" => [
-      "email" => $_POST['email'],
+      "email" => $_POST['<EMAIL>'],
       "identification" => [
-        "type" => $_POST['identificationType'],
-        "number" => $_POST['number']
+        "type" => $_POST['<IDENTIFICATION_TYPE'],
+        "number" => $_POST['<NUMBER>']
       ]
     ]
   ], $request_options);
@@ -296,7 +296,7 @@ curl -X POST \
 }
 ```
 
-O callback de onSubmit do Brick contém todos os dados necessários para a criação de um pagamento, porém, caso deseje, é possível incluir detalhes adicionais, o que pode facilitar o reconhecimento da compra por parte do comprador e aumentar a taxa de aprovação dos pagamentos.
+O _callback_ de `onSubmit` do Brick contém todos os dados necessários para a criação de um pagamento, porém, caso deseje, é possível incluir detalhes adicionais, o que pode facilitar o reconhecimento da compra por parte do comprador e aumentar a taxa de aprovação dos pagamentos.
 
 Para fazer isso, adicione campos relevantes ao objeto enviado, que vem na resposta do callback onSubmit do Brick. Alguns desses campos são: `description` (esse campo pode ser exibido nos boletos emitidos) e `external_reference` (id da compra no seu site, que permite o reconhecimento da compra mais fácil). Também é possível adicionar dados complementares sobre o comprador.
 
@@ -307,3 +307,7 @@ Para fazer isso, adicione campos relevantes ao objeto enviado, que vem na respos
 > Recomendamos a adesão do protocolo 3DS 2.0, tendo em vista ampliar a probabilidade de aprovação de seus pagamentos, o qual pode ser feito como descrito [aqui.](/developers/pt/docs/checkout-bricks/how-tos/integrate-3ds)
 
 Conheça todos os campos disponíveis para realizar um pagamento completo nas [Referências de API](/developers/pt/reference/payments/_payments/post).
+
+## Teste sua integração
+
+Com a integração finalizada, você poderá testar o recebimento de pagamentos. Para mais informações, acesse a seção [Realizar compra teste](/developers/pt/docs/checkout-bricks/integration-test/test-payment-flow).

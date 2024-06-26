@@ -14,7 +14,6 @@ After receiving a notification on your platform, Mercado Pago will wait for a re
 >
 > Webhooks notifications can be configured for one or more applications created in your Dashboard.
 
-
 ## Prerequisites
 
 Before setting up Webhooks notifications for Wallet Connect, consider the requirements listed below.
@@ -30,7 +29,7 @@ Before setting up Webhooks notifications for Wallet Connect, consider the requir
 
 There are three different types of events that allow you to receive notifications. These events refer to the update and/or cancellation of an agreement.
 
-### User confirmation of the agreement.
+### User confirmation of the agreement
 
 From this event, the integrator is notified when a user confirms the agreement.
 
@@ -95,7 +94,6 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
 ```
 ]]]
 
-
 ### Agreement payment method update
 
 In this case, the user can add or update a secondary payment method (by default, Mercado Pago account money is the first payment method). 
@@ -139,7 +137,6 @@ In the table below you can check more details about the possible values ​​th
 | model_version  | 1  | Integer  | Webhook body template version. It will always be `1`.  |
 | version  | 0  | Integer  | Version to identify duplicates within the same id. |
 
-
 ## Configuration
 
 The configuration Webhooks configuration is done through the Dashboard. Below we will explain how to indicate the URLs that will be notified and how to configure the events for which notification will be received.
@@ -157,4 +154,3 @@ The configuration Webhooks configuration is done through the Dashboard. Below we
 | Agreement confirmation | status.updated | The user confirmed an agreement. |
 | Agreement cancellation | status.updated  | Agreement between the integrator and the user of Mercado Pago was canceled by the user. |
 | Payment method update  | payment_method.updated  | Payment method updated by the user.  |
-

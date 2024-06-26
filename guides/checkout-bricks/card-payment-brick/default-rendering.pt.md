@@ -1,5 +1,7 @@
 # Renderização padrão
 
+Veja abaixo as informações necessárias para você configurar e renderizar o Card Payment Brick.
+
 > WARNING
 >
 > Importante
@@ -135,8 +137,4 @@ import { CardPayment } from '@mercadopago/sdk-react';
 
 O resultado de renderizar o Brick deve ser como na imagem abaixo.
 
-<center>
-
 ![cardform](checkout-bricks/card-form-pt.png)
-
-</center>

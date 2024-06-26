@@ -1,9 +1,26 @@
+----[mlb]---- 
+
 ---
 content_section_with_media:
- - title: Checkout API
+ - title: Checkout Transparente
+ - message: Mercado Pago's Checkout Transparente allows the entire checkout process, from filling in user data to making the payment, to take place in a single environment, without the need to redirect to a page outside your store.
+ - media_video: https://www.youtube.com/embed/yQZ5KjnUfbM
+
+---
+
+------------
+
+----[mla, mlm, mlu, mco, mlc, mpe]----
+
+---
+content_section_with_media:
+ - title: Checkout API 
  - message: Mercado Pago's Checkout API allows the entire checkout process, from filling in user data to making the payment, to take place in a single environment, without the need to redirect to a page outside your store.
  - media_video: https://www.youtube.com/embed/yQZ5KjnUfbM
+
 ---
+
+------------
 
 --- mini_landing_separator ---
 
@@ -15,7 +32,7 @@ available_countries: mla, mlb, mlm, mlu, mco, mlc, mpe
 bullet_section_with_media:
  - title: Benefits
  - type: normal
- - message: In addition to allowing greater control in the customization and integration process, Checkout API offers a complete structure for processing payments with the main payment methods available, furthermore:
+ - message: In addition to allowing greater control in the customization and integration process, ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ offers a complete structure for processing payments with the main payment methods available, furthermore:
  - benefit_title: Purchases made in a single environment
  - benefit_message: The entire purchase process takes place within the online store environment, optimizing the buyer's payment steps.
  - benefit_title: Ease of customization and integration

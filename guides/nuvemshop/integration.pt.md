@@ -28,7 +28,7 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 
 Para **vincular sua conta do Mercado Pago à Nuvemshop,** siga os passos abaixo:
 
-1. Acesse as [configurações de meios de pagamentos](https://lojavirtualnuvem.com.br/admin/payments/), no painel de administração de sua loja.
+1. Para acessar as configurações de meios de pagamento, vá ao painel de administração da sua loja e clique em **Configurações > Meios de pagamento**.
 2. Localize o "Mercado Pago" na lista de meios de pagamentos.
 3. Clique em "Configurar" e depois em "Ativar".
 4. Você **será redirecionado para uma página do Mercado Pago** para acessar com seus dados. Clique em "Permitir" para autorizar a conexão.

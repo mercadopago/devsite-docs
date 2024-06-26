@@ -2,13 +2,13 @@
 
 Open Finance is a new financial system that gives you more freedom with your finances and control over your data. Financial histories can be shared with other institutions to gain access to more beneficial products and services.
 
-With Open Finance, **it will be possible to offer Pix payments in the Checkout API**, using balances that are in financial institutions besides the one initiating the payment.
+With Open Finance, **it will be possible to offer Pix payments in Checkout Transparente**, using balances that are in financial institutions besides the one initiating the payment.
 
 > NOTE
 > 
 > Important
 > 
-> You must have a PIX key registered in your Mercado Pago account. If you haven't already, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps.
+> You must have a Pix Key registered in your Mercado Pago account. If you haven't already, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps.
 
 ## Create a Pix Payment
 
@@ -185,7 +185,7 @@ An example of this flow is shown in the user's view:
 
 ## Test the integration
 
-If you want to test the integration, you must have a test user with a registered Pix key and a test credential. You can find more details on how to do this by [clicking here](/developers/en/docs/checkout-api/integration-test/make-test-purchase).
+If you want to test the integration, you must have a test user with a registered Pix Key and a test credential. You can find more details on how to do this by [clicking here](/developers/en/docs/checkout-api/integration-test/make-test-purchase).
 
 Create a Pix Open Finance payment and use the URL available in the `point_of_interaction.transaction_data.ticket_url` attribute to access the redirect page.
 

@@ -2,43 +2,6 @@
 
 Para acceder a los datos generales de tu aplicación, ve al [Panel del desarrollador](/developers/panel/app) y haz clic en la tarjeta de una aplicación para acceder a los **Detalles de la aplicación**.
 
-## Calidad de la aplicación
-
-En esta sección, nos aseguraremos de que tu aplicación cumpla con los requisitos de calidad y seguridad necesarios para brindar la mejor experiencia tanto a vendedores como a compradores con Mercado Pago.
-
-### Evaluar calidad
-
-El puntaje indica qué tan segura y alineada con las buenas prácticas de integración de Mercado Pago está la configuración de tu aplicación.
-
-Haz clic en **Evaluar calidad** para iniciar el proceso de análisis de tu integración. Revisa los puntos de mejora identificados durante el análisis y haz los cambios necesarios en tu integración. Durante este proceso, se analizarán una serie de campos asociados.
-
-> NOTE
->
-> Nota
->
-> Antes de realizar la evaluación, asegúrate de haber completado el proceso de aprobación de la aplicación en el entorno de producción. Además, es necesario haber realizado al menos un pago productivo exitoso.
-
-> Después de realizar las mejoras, haz clic nuevamente en **Actualizar puntaje** para reevaluar tu integración y verificar si cumple con los estándares requeridos.
-
-----[mla, mlm, mlu, mco, mlc, mpe]----
-
-> WARNING
->
-> Atención
->
-> Por el momento, la sección **Calidad de integración** solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Mercado Pago Point,](/developers/es/docs/mp-point/landing) [Checkout API](/developers/es/docs/checkout-api/landing) y [Checkout Bricks.](/developers/es/docs/checkout-bricks/landing)
-
-------------
-----[mlb]----
-
-> WARNING
->
-> Atención
->
-> Por el momento, la sección **Calidad de integración** solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Mercado Pago Point,](/developers/es/docs/mp-point/landing) [Checkout Transparente](/developers/es/docs/checkout-api/landing) y [Checkout Bricks.](/developers/es/docs/checkout-bricks/landing)
-
-------------
-
 ## Datos de la aplicación
 
 * **Datos de la aplicación**: esta sección muestra los datos básicos de la aplicación, incluyendo:
@@ -65,9 +28,8 @@ Puedes hacer clic en el botón **Editar datos** para ver y editar las configurac
 
 #### Configuraciones avanzadas
 
-* **URLs de redireccionamiento**: URLs (en https) donde deseas recibir el código de autorización cuando tu integración sea configurada como Marketplace o se realice a través de OAuth. Consulta [OAuth](/developers/es/docs/security/oauth/introduction) para obtener más detalles.
-* **Habilitar verificación PKCE**: en caso de que la integración se realice con OAuth, puedes habilitar el PKCE (_Proof Key for Code Exchange_) para generar un código secreto adicional que se usará durante el proceso de autorización. Consulta [OAuth](/developers/es/docs/security/oauth/introduction) para obtener más detalles. 
-* **Flujo de acceso**: selecciona los tipos de autenticación que tu aplicación puede utilizar, limitando la aplicación solo a los flujos necesarios para su operación y minimizando posibles ataques o puntos de vulnerabilidad. Las opciones son: `client_credentials` ([credenciales de la aplicación](/developers/es/guides/additional-content/your-integrations/credentials)) y `authorization_code` ([código de autorización OAuth](/developers/es/docs/security/oauth/introduction)). Por defecto, las aplicaciones tendrán ambas opciones habilitadas, y al activar o desactivar estas opciones, puedes controlar qué flujos de autenticación puede utilizar una aplicación.
+* **URLs de redireccionamiento**: URLs (en https) donde deseas recibir el código de autorización cuando tu integración sea configurada como Marketplace o se utilice el flujo **Authorization code** de OAuth. **Asegúrate de que sea una URL estática**. Consulta [OAuth](/developers/es/docs/security/oauth/introduction) para obtener más detalles.
+* **Usar el flujo de código de autorización con PKCE**: en caso de que la integración se realice a través del flujo **Authorization code** de OAuth, puedes habilitar el PKCE (_Proof Key for Code Exchange_) para generar un código secreto adicional que se usará durante el proceso de autorización. Consulta [Configurar PKCE](/developers/es/docs/security/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-El%20PKCE%20) para obtener más detalles. 
 * **Permisos de la aplicación**: son opciones de acceso de tu aplicación, cómo **lectura**, **acceso offline** y **escritura**. Por defecto, tu aplicación se crea con todos los permisos activados, pero puedes desactivar un permiso haciendo clic en la casilla de verificación correspondiente al permiso que deseas cambiar.
 
 ### Eliminar aplicación
@@ -82,4 +44,41 @@ De esta manera, la aplicación se eliminará correctamente.
 >
 > Atención
 >
-> Al eliminar una aplicación, ten en cuenta que tu tienda perderá la capacidad de recibir pagos a través de la integración asociada. Además, se perderán todas las configuraciones, incluidas las credenciales que tenga asociadas. **Una vez eliminada una aplicación, no se puede recuperar**.
+> Al eliminar una aplicación, ten en cuenta que tu tienda perderá la capacidad de recibir pagos a través de la integración asociada. Además, se perderán todas las configuraciones, incluidas las credenciales que tengas asociadas. **Una vez eliminada una aplicación, no se puede recuperar**.
+
+## Calidad de la aplicación
+
+En esta sección, nos aseguraremos de que tu aplicación cumpla con los requisitos de calidad y seguridad necesarios para brindar la mejor experiencia tanto a vendedores como a compradores con Mercado Pago. [Haz clic aquí](/developers/es/guides/additional-content/homologator/homologator) y conoce toda la información necesaria para saber cómo homologar correctamente tu integración.
+
+----[mla, mlm, mlu, mco, mlc, mpe]----
+
+> WARNING
+>
+> Importante
+>
+> Antes de comenzar la evaluación, asegúrate de que la homologación de la aplicación en el entorno de producción haya sido completada, incluyendo la realización de al menos un pago productivo.
+> <br><br>
+> Es necesario que la aplicación a evaluar registre la integración de un producto de entre aquellos en los que la herramienta de medición está disponible. Por ahora, solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout API,](/developers/es/docs/checkout-api/landing) [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point.](/developers/es/docs/mp-point/landing)
+
+------------
+----[mlb]----
+
+> WARNING
+>
+> Importante
+>
+> Antes de comenzar la evaluación, asegúrate de que la homologación de la aplicación en el entorno de producción haya sido completada, incluyendo la realización de al menos un pago productivo.
+> <br><br>
+> Es necesario que la aplicación a evaluar registre la integración de un producto de entre aquellos en los que la herramienta de medición está disponible. Por ahora, solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout Transparente,](/developers/es/docs/checkout-api/landing) [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point.](/developers/es/docs/mp-point/landing)
+
+------------
+
+### Evaluar calidad
+
+El puntaje indica qué tan segura y alineada con las buenas prácticas de integración de Mercado Pago está la configuración de tu aplicación.
+
+Al hacer clic en **Evaluar la calidad**, comenzarás el proceso de análisis de tu integración. Durante esta revisión, nuestra herramienta identificará áreas de mejora y te guiará para realizar los cambios necesarios en tu integración. Este proceso implica la revisión de varios campos asociados.
+
+Accede a [Calidad de la integración](/developers/es/docs/integration-quality) y conoce toda la información necesaria para saber cómo medir la calidad de tu aplicación.
+
+> Después de implementar mejoras, es necesario hacer clic nuevamente en **Actualizar puntaje** para volver a evaluar su integración y verificar si cumple con los estándares requeridos.

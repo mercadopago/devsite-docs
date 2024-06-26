@@ -1,5 +1,7 @@
 # Renderização padrão
 
+Veja abaixo as informações necessárias para você configurar e renderizar o Brand Brick.
+
 > WARNING
 >
 > Importante
@@ -41,8 +43,4 @@ import { Brand } from '@mercadopago/sdk-react';
 
 O resultado de renderizar o Brick deve ser como na imagem abaixo.
 
-<center>
-
-![brand-brick-layout](checkout-bricks/brand-brick-layout.gif)
-
-</center>
+![brand-brick-pt](checkout-bricks/brand-brick-pt.gif)

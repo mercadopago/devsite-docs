@@ -16,7 +16,6 @@ Keep the data grouped thematically and provide context to the user about the ste
 
 ![en aspectos generales - segmenta tu contenido](/images/best-practices-guide/EngAspectosGeneralesSegmentaTuContenido.png)
 
-
 ### Progress indicator
 
 It is a **progress bar** that tells the user which stage of your checkout they are in. You can segment it into equal parts, indicating each step of the checkout. In this way, your user will have visibility of the step they are in and how much remains to finish the payment process.
@@ -30,7 +29,6 @@ It is a **progress bar** that tells the user which stage of your checkout they a
 **Highlights** are underlined or highlighted text. Use highlights to call attention to important keywords or sentences that add value and make the screen easier to scan.
 
 ![en Bullets y highlights](/images/best-practices-guide/EngCreaUnChoAgilBulletsv3.png)
-
 
 ## Facilitate data filling
 
@@ -87,7 +85,6 @@ Here are some tips:
 * Add links for secondary actions that add context and make sure it is a self explanatory text that makes reference to where the users are being redirected to. 
 
 ![en Agrega accionables claros](/images/best-practices-guide/EngAspectosGeneralesAccionablesClaros.png)
-
 
 ## Highlight the options
 

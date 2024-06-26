@@ -19,7 +19,7 @@ Below are some examples of how to send PSE payments to Mercado Pago.
 <?php
 require '../vendor/autoload.php';
 
-MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
 
 $payment = new MercadoPago\Payment();
 $payment->transaction_amount = 10000;
@@ -313,3 +313,7 @@ After creating the payment in your backend with the Mercado Pago SDK, you need t
 Once the payment has already been completed, it is also possible to continue using the Status Screen Brick to show the payment status to the user on your website, for example. Simply create the Status Screen instance using the payment ID.
 
 ![payment-status-pse](checkout-bricks/payment-status-pse-en.jpg)
+
+## Test your integration
+
+With the integration completed, you will be able to test payment reception. For more information, access the section [Make test purchase](/developers/en/docs/checkout-bricks/integration-test/test-payment-flow).

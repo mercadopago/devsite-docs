@@ -19,7 +19,7 @@ A configuração das condições de pagamento é feita na aba **Condições de p
   * Se você configurar **MercadoPagoWallet**, o comprador utilizará sua carteira do Mercado Pago. Este modo é exclusivo para compradores cadastrados no Mercado Pago ou Mercado Livre e sugerimos utilizar caso opte pela **Condição de Pagamento Cartão de Crédito**.
   * Se você configurar **MercadoPagoOff**, poderá contar com os meios de pagamento em dinheiro.----[mlb]----
 * **Boleto Bancário:** refere-se a transações com boleto bancário **exclusivamente**.
-* **Pix:** refere-se a transações com Pix através de **QR Code** ou **Copia e Cola**. Para configurar esta condição de pagamento é necessário uma chave Pix esteja cadastrada na sua conta do Mercado Pago. Para mais informações sobre como criar sua chave Pix, clique [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). ------------
+* **Pix:** refere-se a transações com Pix através de **QR Code** ou **Copia e Cola**. Para configurar esta condição de pagamento é necessário uma Chave Pix esteja cadastrada na sua conta do Mercado Pago. Para mais informações sobre como criar sua Chave Pix, clique [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). ------------
 
 > NOTE
 >

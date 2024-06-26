@@ -4,14 +4,24 @@ The integration of card payments is done via cardform. In this integration mode,
 
 As the card data is entered, an automatic search takes place for the issuer information and available installments for that payment method. As a result, the implementation of the flow is transparent for those who perform the integration.
 
-----[mla, mlb, mlm, mpe, mlc]----
+----[mla, mlm, mpe, mlc]----
 > NOTE
 >
 > Important
 >
-> In addition to the options available in this documentation, it is also possible to integrate **card payments** using the **CardPayment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) documentation of CardPayment for more details. We also recommend adopting the 3DS 2.0 protocol to increase the likelihood of your payments being approved. For more information, please refer to the documentation on [How to integrate 3DS with Checkout API.](/developers/en/docs/checkout-api/how-tos/integrate-3ds)
+> In addition to the options available in this documentation, it is also possible to integrate **card payments** using the **Card Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) documentation of Card Payment for more details. We also recommend adopting the 3DS 2.0 protocol to increase the likelihood of your payments being approved. For more information, please refer to the documentation on [How to integrate 3DS with Checkout API.](/developers/en/docs/checkout-api/how-tos/integrate-3ds)
 
 ------------
+
+----[mlb]----
+> NOTE
+>
+> Important
+>
+> In addition to the options available in this documentation, it is also possible to integrate **card payments** using the **Card Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) documentation of Card Payment for more details. We also recommend adopting the 3DS 2.0 protocol to increase the likelihood of your payments being approved. For more information, please refer to the documentation on [How to integrate 3DS with Checkout Transparente.](/developers/en/docs/checkout-api/how-tos/integrate-3ds)
+
+------------
+
 ----[mlu, mco]----
 > NOTE
 >
@@ -25,7 +35,7 @@ Check below the diagram that illustrates the card payment process using the Card
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-en.png)
 
-To integrate card payments into Checkout API, follow the steps below.
+To integrate card payments into ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, follow the steps below.
 
 ## Import MercadoPago.js
 
@@ -68,12 +78,6 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 ## Add payment form
 
 The capture of card data is done through the CardForm of the MercadoPago.js library. Our CardForm will connect to your HTML payment form, making it easy to obtain and validate all the data needed to process the payment.
-
-> WARNING
->
-> Attention
->
-> The cardtoken can **only be used once** and expires within **7 days**.
 
 To add the payment form, insert the HTML below directly into the project.
 
@@ -156,7 +160,7 @@ After adding the payment form, you will need to initialize it. This step consist
 >
 > Important
 >
-> When submitting the form, a token is generated securely representing the card data. You can access it via the `cardForm.getCardFormData()` function, as shown abive in the `onSubmit` callback. Furthermore, this token is also stored in a hidden input within the form where it can be found with the name `MPHiddenInputToken`.
+> When submitting the form, a token, also known as **cardtoken**, is generated, securely representing the card data. You can access it via the `cardForm.getCardFormData()` function, as shown abive in the `onSubmit` callback. Furthermore, this token is also stored in a hidden input within the form where it can be found with the name `MPHiddenInputToken`. Keep in mind that the cardtoken can **only be used once** and expires within **7 days**.
 
 ----[mla, mlu, mpe, mco, mlb, mlc]----
 [[[
@@ -379,14 +383,14 @@ With all the information collected in the backend, send a POST with the necessar
 >
 > To increase the chances of payment approval and prevent the anti-fraud analysis from authorizing the transaction, we recommend entering as much information about the buyer when making the request. For more details on how to increase approval chances, see [How to improve payment approval.](/developers/en/docs/checkout-api/how-tos/improve-payment-approval)
 > <br><br>
-> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
+> Also, it is mandatory to send the attribute `X-Idempotency-Key` to ensure the execution and reexecution of requests without the risk of accidentally performing the same action more than once. To do so, update our [SDKs Library](/developers/en/docs/sdks-library/landing), or generate a UUID V4 and send it in the _header_ of your requests.
 
 [[[
 ```php
 <?php
   use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\Client\Common\RequestOptions;
   use MercadoPago\MercadoPagoConfig;
-
 
   MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
@@ -395,17 +399,17 @@ With all the information collected in the backend, send a POST with the necessar
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
-    "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
-    "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
-    "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
+    "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+    "token" => $_POST['<TOKEN>'],
+    "description" => $_POST['<DESCRIPTION>'],
+    "installments" => $_POST['<INSTALLMENTS>'],
+    "payment_method_id" => $_POST['<PAYMENT_METHOD_ID'],
+    "issuer_id" => $_POST['<ISSUER>'],
     "payer" => [
-      "email" => $_POST['email'],
+      "email" => $_POST['<EMAIL>'],
       "identification" => [
-        "type" => $_POST['identificationType'],
-        "number" => $_POST['number']
+        "type" => $_POST['<IDENTIFICATION_TYPE'],
+        "number" => $_POST['<NUMBER>']
       ]
     ]
   ], $request_options);
@@ -495,8 +499,8 @@ installments: params[:installments].to_i,
 payment_method_id: params[:paymentMethodId],
 payer: {
 email: params[:email],
-identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-type: params[:identificationType],------------
+identification: {
+type: params[:identificationType],
 number: params[:identificationNumber]
 }
 }
@@ -534,8 +538,8 @@ Payer = new PaymentPayerRequest
 {
 Email = Request["email"],
 Identification = new IdentificationRequest
-{----[mla, mlb, mlu, mlc, mpe, mco]----
-Type = Request["identificationType"],------------
+{
+Type = Request["identificationType"],
 Number = Request["identificationNumber"],
 },
 },
@@ -567,8 +571,8 @@ payment_data = {
 "payment_method_id": request.POST.get("payment_method_id"),
 "payer": {
 "email": request.POST.get("email"),
-"identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
-"type": request.POST.get("type"), ------------
+"identification": {
+"type": request.POST.get("type"), 
 "number": request.POST.get("number")
 }
 }
@@ -578,6 +582,43 @@ payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
  
 print(payment)
+```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := payment.NewClient(cfg)
+
+
+request := payment.Request{
+   TransactionAmount: <transaction_amount>,
+   Token: <token>,
+   Description: <description>,
+   PaymentMethodID:   <paymentMethodId>,
+   Payer: &payment.PayerRequest{
+      Email: <email>,
+      Identification: &payment.IdentificationRequest{
+         Type: <type>,
+         Number: <number>,
+      },
+   },
+}
+
+
+resource, err := client.Create(context.Background(), request)
+if err != nil {
+   fmt.Println(err)
+}
+
+
+fmt.Println(resource)
 ```
 ```curl
 ===
@@ -631,8 +672,17 @@ The response will show the following result
 
 ## Code example
 
+----[mlb]----
+> GIT
+>
+> Checkout Transparente
+>
+> For complete code samples, check out the [Full Integration Examples](https://github.com/mercadopago/card-payment-sample) available on GitHub.
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
 > GIT
 >
 > Checkout API
 >
 > For complete code samples, check out the [Full Integration Examples](https://github.com/mercadopago/card-payment-sample) available on GitHub.
+------------

@@ -1,6 +1,6 @@
 # Erros na criação do token do cartão
 
-| Status | `status_detail` | Mensagem sugerida |
+| Status | `status_detail` | Descrição |
 | --- | --- | --- |
 | 106 | Cannot operate between users from different countries | Não pode efetuar pagamentos a usuários de outros países. |
 | 109 | Invalid number of shares for this payment_method_id | O `payment_method_id` não processa pagamentos parcelados. <br> Escolha outro cartão ou outra forma de pagamento. |

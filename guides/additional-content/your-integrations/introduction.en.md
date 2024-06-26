@@ -1,6 +1,6 @@
 # Your integrations
 
-Your Integrations is your integration management environment automatically created with a user ID (the Mercado Pago ID) when you open an account on Mercado Pago. In it, you can create a new application in the [Developer Dashboard](/developers/panel/app) or access the [Application details](/developers/en/docs/your-integrations/application-details) page for each listed application, as well as request access to credentials for an application you don't manage.
+Your Integrations is your integration management environment automatically created with a user ID (the Mercado Pago ID) when you open an account on Mercado Pago. In it, you can create a new application in the [Developer Dashboard](/developers/panel/app) or access the [Application details](/developers/en/guides/additional-content/your-integrations/application-details) page for each listed application, as well as request access to credentials for an application you don't manage.
 
 ## Application details
 
@@ -11,3 +11,4 @@ The [Application details](/developers/en/guides/additional-content/your-integrat
     1. [Webhooks](/developers/en/guides/additional-content/your-integrations/webhooks)
     2. [IPN](/developers/en/guides/additional-content/your-integrations/ipn)
 * **Production**: activate **Production Credentials** to start receiving payments in your online store and other applications.
+* **Evaluation**: validate the [quality of your integration](/developers/en/guides/additional-content/homologator/homologator) to ensure that your development meets the necessary quality and security requirements to provide both the seller and the buyer with the best experience with Mercado Pago.

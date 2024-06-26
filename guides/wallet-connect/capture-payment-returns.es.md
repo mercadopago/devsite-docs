@@ -5,7 +5,7 @@ En esta sección encontrarás el detalle de cada respuesta a los _requests_ real
 ## Pago aprobado
 
 [[[
-```Json
+```json
 ===
 Código de status: 201
 ===
@@ -15,20 +15,20 @@ Código de status: 201
    "wallet_payment":{
       "transaction_amount":700.50,
       "description":"Payment for the purchase of furniture",
-      "external_reference":"Pago_123”
+      "external_reference":"Pago_123"
    },
    "payments":[
       {
          "id":3870106238,
-         "status":”approved”,
-         "status_detail":”accredited”,
+         "status":"approved",
+         "status_detail":"accredited",
          "payment_type_id":"credit_card",
          "payment_method_id":"visa",
          "transaction_amount":700.50,
          "installments":1,
          "description":"Payment for the purchase of furniture",
          "capture":true,
-         "external_reference":"Pago_123”
+         "external_reference":"Pago_123"
       }
    ],
    "disbursements": [
@@ -71,8 +71,8 @@ Código de status: 201
    "payments":[
       {
          "id":3870106238,
-         "status":”rejected”,
-         "status_detail":”cc_rejected_other_reason”,
+         "status":"rejected",
+         "status_detail":"cc_rejected_other_reason",
          "payment_type_id":"credit_card",
          "payment_method_id":"visa",
          "transaction_amount":700.50,
@@ -100,7 +100,7 @@ Código de status: 201
 
 ## Pago rechazado debido a falta de saldo en la cuenta
 
-Esta respuesta se produce cuando se intenta crear un Advanced Payment pero el payer no tiene saldo suficiente en su cuenta de Mercado Pago.
+Esta respuesta se produce cuando se intenta crear un pago pero el _payer_ no tiene saldo suficiente en su cuenta de Mercado Pago.
 
 [[[
 ```Json
@@ -117,8 +117,8 @@ Código de status: 201
    "payments":[
       {
          "id":null,
-         "status":”rejected”,
-         "status_detail":”insufficient_money”,
+         "status":"rejected",
+         "status_detail":"insufficient_money",
          "payment_type_id":"account_money",
          "payment_method_id":"account_money",
          "transaction_amount":700.50,
@@ -143,7 +143,7 @@ Código de status: 201
 
 ## Pago rechazado por falta de autorización
 
-Este error se produce cuando el cliente cancela el Agreement.
+Este error se produce cuando el cliente cancela la vinculación.
 
 [[[
 ```Json
@@ -163,5 +163,21 @@ Código de status: 401
    ]
 }
 
+```
+]]]
+
+## Pago rechazado debido a falta de parámetro en encabezado
+
+[[[
+```json
+===
+Código de status: 400
+===
+{
+   "status": "400",
+   "error":  "bad request",
+   "message": "Missing header parameter.",
+   "cause": []
+}
 ```
 ]]]

@@ -2,13 +2,13 @@
 
 Open Finance es un nuevo sistema financiero que te permite tener un dominio total de tus datos y mayor libertad con tus finanzas. Con él, es posible compartir historias financieras con otras instituciones para acceder a productos y servicios más ventajosos.
 
-Con Open Finance, se pueden hacer pagos Pix con saldos de otras cuentas bancarias, **en el Checkout API**.
+Con Open Finance, se pueden hacer pagos Pix con saldos de otras cuentas bancarias, **en Checkout Transparente**.
 
 > NOTE
 > 
 > Importante
 > 
-> Para usar esta función, debes registrar una clave Pix en tu cuenta de Mercado Pago. Si aún no lo has hecho, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) para obtener más información sobre cómo registrarse.
+> Para usar esta función, debes registrar una Clave Pix en tu cuenta de Mercado Pago. Si aún no lo has hecho, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) para obtener más información sobre cómo registrarse.
 
 ## Crear un pago Pix
 
@@ -185,7 +185,7 @@ La imagen siguiente muestra un ejemplo de este proceso en la vista del usuario:
 
 ## Prueba la integración
 
-Para probar la integración, debes usar una credencial de prueba al crear un pago y tener un usuario de prueba con una clave Pix registrada. [Haz clic aquí](/developers/es/docs/checkout-api/integration-test/make-test-purchase) para acceder a la documentación y encontrar más detalles sobre cómo hacerlo.
+Para probar la integración, debes usar una credencial de prueba al crear un pago y tener un usuario de prueba con una Clave Pix registrada. [Haz clic aquí](/developers/es/docs/checkout-api/integration-test/make-test-purchase) para acceder a la documentación y encontrar más detalles sobre cómo hacerlo.
 
 Crea un pago de Pix Open Finance y utiliza la URL disponible en el atributo `point_of_interaction.transaction_data.ticket_url` para acceder a la página de redirección.
 

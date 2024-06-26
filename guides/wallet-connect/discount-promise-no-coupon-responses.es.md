@@ -4,11 +4,11 @@ Esta sección detalla las diferentes respuestas que puedes recibir al crear una 
 
 ## Éxito
 
-1. Respuesta con Descuento Aplicado
+1. Respuesta con descuento aplicado
 
-* Código de Estado: 200 (Success)
-* Descripción: Devuelve el valor de la transacción con el descuento aplicado, información detallada sobre el descuento y un enlace a los términos legales del mismo.
-* Cuerpo de la Respuesta:
+* Código de estado: 200 (Success)
+* Descripción: devuelve el valor de la transacción con el descuento aplicado, información detallada sobre el descuento y un enlace a los términos legales del mismo.
+* Cuerpo de la respuesta:
 
 ```Json
 {
@@ -26,11 +26,11 @@ Esta sección detalla las diferentes respuestas que puedes recibir al crear una 
 }
 ```
 
-2. Respuesta para Usuario/Campaña Sin Descuentos
+2. Respuesta para usuario/campaña sin descuentos
 
-* Código de Estado: 200 (Success)
-* Descripción: Indica que la transacción se procesó sin descuento aplicado.
-* Cuerpo de la Respuesta:
+* Código de estado: 200 (Success)
+* Descripción: indica que la transacción se procesó sin descuento aplicado.
+* Cuerpo de la respuesta:
 
 ```Json
 {
@@ -42,11 +42,11 @@ Esta sección detalla las diferentes respuestas que puedes recibir al crear una 
 
 ## Error
 
-1. Respuesta para Solicitud Incorrecta
+1. Respuesta para solicitud incorrecta
 
-* Código de Estado: 400 (Bad Request)
-* Descripción: Ocurre cuando la solicitud está mal formulada o incompleta.
-* Cuerpo de la Respuesta:
+* Código de estado: 400 (Bad Request)
+* Descripción: ocurre cuando la solicitud está mal formulada o incompleta.
+* Cuerpo de la respuesta:
 
 ```Json
 {
@@ -56,11 +56,11 @@ Esta sección detalla las diferentes respuestas que puedes recibir al crear una 
 }
 ```
 
-2. Respuesta para Recurso No Encontrado
+2. Respuesta para recurso no encontrado
 
-* Código de Estado: 404 (Not Found)
-* Descripción: Significa que el recurso solicitado no existe en el servidor.
-* Cuerpo de la Respuesta:
+* Código de estado: 404 (Not Found)
+* Descripción: significa que el recurso solicitado no existe en el servidor.
+* Cuerpo de la respuesta:
 
 ```Json
 {
@@ -70,11 +70,11 @@ Esta sección detalla las diferentes respuestas que puedes recibir al crear una 
 }
 ```
 
-3. Respuesta para Error Interno del Servidor
+3. Respuesta para error interno del servidor
 
-* Código de Estado: 500 (Internal Server Error)
-* Descripción: Indica un error genérico del servidor, sugiriendo problemas en el servidor de Mercado Pago.
-* Cuerpo de la Respuesta:
+* Código de estado: 500 (Internal Server Error)
+* Descripción: indica un error genérico del servidor, sugiriendo problemas en el servidor de Mercado Pago.
+* Cuerpo de la respuesta:
 
 ```Json
 {

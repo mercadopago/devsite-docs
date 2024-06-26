@@ -17,3 +17,9 @@ Puedes ver en detalle el funcionamiento de la integración local con Redelcom en
 ![Diagrama explicando la integración local](/images/Redelcom/Integrate-via-Android.png)
 
 </center>
+
+> WARNING
+>
+> Importante
+>
+> Antes de salir a producción, deberás realizar una [homologación de tu integración](/developers/es/docs/redelcom/how-tos/integration-homologation). Al finalizar este proceso, nuestro equipo comercial te otorgará los permisos necesarios para hacerlo.

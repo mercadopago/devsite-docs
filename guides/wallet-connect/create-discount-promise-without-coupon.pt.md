@@ -8,14 +8,11 @@ Diferente da abordagem com cupom pré-adicionado, na qual o desconto é garantid
 
 Para **criar uma promessa de desconto sem um cupom pré-adicionado**, utilize o _curl_ abaixo e insira os parâmetros de acordo com a tabela descritiva a seguir.
 
-
-
 | Parâmetro  | Descrição  | Exemplo  |
 | --- | --- | --- |
-| Authorization  | Token de autorização do usuário (Access token). Esta informação pode ser obtida através do menu [suas integrações](/developers/pt/docs/wallet-connect/additional-content/your-integrations/credentials).  | APP_USR-123456-test-access-t0ken  |
+| Authorization  | Token de autorização do usuário (Access token). Esta informação pode ser obtida através do menu [Suas integrações](/developers/pt/docs/wallet-connect/additional-content/your-integrations/credentials).  | APP_USR-123456-test-access-t0ken  |
 | x-payer-token  | Este é um token específico do pagador, substitua <PAYER_TOKEN> pelo token correspondente. Esta informação é obtida ao finalizar o  [fluxo de vinculação de contas](/developers/pt/docs/wallet-connect/account-linking-flow/create-agreement)  | payer1-token2-test3-example4  |
 | amount  | Valor total da transação.  | 550.50  |
-
 
 [[[
 ```curl

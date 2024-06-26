@@ -2,14 +2,11 @@
 
 Nesta seção, detalhamos as requisições e os parâmetros necessários para processar pagamentos com desconto e as respostas esperadas de cada uma delas. 
 
-
-
 > NOTE
 >
 > Importante
 >
 > O reembolso do desconto não é instantâneo; pode levar cerca de 200 milissegundos sem um cupom e até 10 segundos com um cupom. Portanto, recomendamos criar a promessa de desconto e prosseguir imediatamente com o pagamento.
-
 
 Para realizar o processamento dos pagamentos com desconto, utilize o _curl_ abaixo e garanta que os parâmetros de requisição sejam preenchidos de acordo com as informações descritas na tabela a seguir.
 
@@ -60,11 +57,9 @@ curl -X POST \
 ```
 ]]]
 
-
 ## Respostas
 
 Abaixo detalhamos as diferentes respostas que podem ser recebidas ao processar um pagamento com desconto. As respostas são categorizadas com base no resultado da requisição, variando desde o sucesso no processamento até determinado erro. 
-
 
 ### Sucesso
 

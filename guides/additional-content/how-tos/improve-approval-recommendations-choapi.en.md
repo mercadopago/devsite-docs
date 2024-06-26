@@ -221,10 +221,10 @@ Often, the buyer can make mistakes when filling in their details at checkout. Th
 
 In case you wish to **create your front-end from scratch**, you can find some advice on how to do so in an efficient way [here](/developers/en/docs/checkout-api/best-practices/ux-best-practices/ux-for-checkouts/introduction). If a payment is rejected, it is also important to explain to your customers why and what they can do to fix it. By doing so, your clients would have all the information they need to pay without any further problems. You can find some **recommendations on how to inform the main rejection reasons** [here](/developers/en/docs/checkout-api/response-handling/collection-results).
 
-In case you wish to guarantee an optimized interface, you can use the **visual components of [Checkout Bricks](/developers/en/docs/checkout-bricks/landing)**, and also use a **predefined visual component** with the best messages with [Status Screen Brick](/developers/en/docs/checkout-bricks/status-screen-brick/introduction).
+In case you wish to guarantee an optimized interface, you can use the **visual components** of [Checkout Bricks](/developers/en/docs/checkout-bricks/landing), and also use a predefined visual component with the best messages with [Status Screen Brick](/developers/en/docs/checkout-bricks/status-screen-brick/introduction).
 
 > WARNING
 > 
 > Important
 >
-> We recommend assessing your [integration’s quality](/developers/en/docs/checkout-api/how-tos/integration-quality) before going to production to check if you are meeting the Mercado Pago quality and security standards that would help you obtain a good payment approval rate.
+> We recommend assessing your [integration’s quality](/developers/en/guides/additional-content/homologator/homologator) before going to production to check if you are meeting the Mercado Pago quality and security standards that would help you obtain a good payment approval rate.

@@ -24,7 +24,7 @@ A continuación, se muestran los medios de pago disponibles para la tienda al in
 |---|---|
 | Tarjetas | Permite la integración con tarjetas de crédito y débito. |
 | 2 Tarjetas | Permite la integración con 2 tarjetas, sean estas de crédito o débito. |
-| Pix | Transferencia bancaria disponible las 24 horas del día. La opción de pago con Pix sólo se mostrará si se ha registrado una clave Pix en Mercado Pago. Si aún no la has creado, haz clic [aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y sigue los pasos. |
+| Pix | Transferencia bancaria disponible las 24 horas del día. La opción de pago con Pix sólo se mostrará si se ha registrado una Clave Pix en Mercado Pago. Si aún no la has creado, haz clic [aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y sigue los pasos. |
 | Medios offline | Permite pagos mediante boleto bancário y agencias de lotería |
 | Financiación vía Pix en hasta 12x | Permite al cliente la opción de financiar su compra sin contar con una tarjeta, mientras que el vendedor percibe el monto de dinero completo en su cuenta gracias a esta línea de crédito administrada por Mercado Pago. |
 

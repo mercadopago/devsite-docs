@@ -12,7 +12,7 @@ To configure **payments with cash via ticket**, send a **POST** with the followi
 >
 > Remember that Brick already resolves most parameters to send the POST. The information return comes in the `onSubmit` callback, inside the `formData` object, where you can find parameters like: `payment_method_id`, `payer.email` and `amount`.
 > <br><br>
-> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example. 
+> Also, it is mandatory to send the attribute `X-Idempotency-Key` to ensure the execution and reexecution of requests without the risk of accidentally performing the same action more than once. To do so, update our [SDKs Library](/developers/en/docs/sdks-library/landing), or generate a UUID V4 and send it in the _header_ of your requests.
 
 | Payment type | Payment point | Parameter | Value |
 | --- | --- | --- | --- |
@@ -39,6 +39,10 @@ When creating a payment, in addition to sending the `payment_method_id` paramete
 ```php
 <?php
   use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\Client\Common\RequestOptions;
+  use MercadoPago\MercadoPagoConfig;
+
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
   $client = new PaymentClient();
   $request_options = new RequestOptions();
@@ -244,14 +248,14 @@ After the payment creation in the backend using the Mercado Pago SDK, use the **
 
 In addition, the Status Screen can also redirect the buyer to the ticket with the transaction number and barcode for the buyer to go to a store and thus make the payment. Check out how simple it is to integrate [click here](/developers/en/docs/checkout-bricks/status-screen-brick/introduction).
 
-<center>
-
 ![payment-submission-other-payment-methods-status-mlm](checkout-bricks/payment-submission-other-payment-methods-status-mlm-en.jpg)
-
-</center>
 
 > NOTE
 >
 > Important
 >
 > The boleto expiration date can be configured by sending a POST request with the `data_of_expiration` parameter to the endpoint [/v1/payments.](/developers/en/reference/payments/_payments/post) After expiration, the boleto will be cancelled.
+
+## Test your integration
+
+With the integration completed, you will be able to test payment reception. For more information, access the section [Make test purchase](/developers/en/docs/checkout-bricks/integration-test/test-payment-flow).

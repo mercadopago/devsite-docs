@@ -76,6 +76,7 @@ customization: {
  texts: {
   valueProp: 'smart_option',
  },
+ },
 });
 ```
 ```react-jsx
@@ -85,11 +86,7 @@ customization: {
 
 You will then be able to observe the payment button rendered on your page.
 
-<center>
-
 ![wallet-render](cow/cow-render-wallet-en.png)
-
-</center>
 
 In the example above, a payment button will be rendered and will be responsible for opening Checkout Pro. If you want the experience with Checkout Pro to be done in an **external tab**, check the section [Opening Schema](/developers/en/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 

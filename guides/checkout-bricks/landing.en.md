@@ -165,9 +165,9 @@ future_product_avaible:
  - card_button: /developers/en/docs/checkout-bricks/brand-brick/introduction
  - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
- - card_linkAvailable: false
- - card_linkProof:
- - card_linkProofDescription:
+ - card_linkAvailable: true
+ - card_linkProof: /developers/en/live-demo/brand-brick
+ - card_linkProofDescription: Access demo
  - card_avaible: true
  - card_icon: Check
  - card_title: Review & Confirm
@@ -355,6 +355,8 @@ available_payments: credit, debit, mercadopago, atm
 ---
 ------------
 
+----[mlb, mlm, mlu, mlc, mco, mpe]----
+
 ---
 anchored_menu: 
  - title: Card Payment Brick
@@ -366,5 +368,24 @@ anchored_menu:
  - title: Wallet Brick
  - link: /developers/en/live-demo/wallet-brick
 ---
+
+------------
+----[mla]----
+
+---
+anchored_menu: 
+ - title: Card Payment Brick
+ - link: /developers/en/live-demo/card-payment-brick
+ - title: Payment Brick
+ - link: /developers/en/live-demo/payment-brick
+ - title: Status Screen Brick
+ - link: /developers/en/live-demo/status-screen-brick
+ - title: Wallet Brick
+ - link: /developers/en/live-demo/wallet-brick
+ - title: Brand Brick
+ - link: /developers/en/live-demo/brand-brick
+---
+
+------------
 
 > For details of accepted payment methods in each country, check the full list with [payment methods availability.](/developers/en/docs/sales-processing/payment-methods)

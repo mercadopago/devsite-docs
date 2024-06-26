@@ -10,6 +10,12 @@ You can generate payment requests on Redelcom terminals using [our API](https://
 
 To start integrating via API, you should have the **credentials that were provided to you by email** when you requested the device. These credentials will help you generate the *token* required to operate with Redelcom via API.
 
+> WARNING
+>
+> Important
+>
+> Please note that these credentials, initially provided when requesting the device, must be used in test environments. To obtain your productive credentials you must, first, carry out an [homologation of your integration](/developers/en/docs/redelcom/how-tos/integration-homologation/api). At the end of this process, our sales team will contact you to grant these production credentials to you.
+
 Your **Redelcom credentials** consist of:
 
 | Type | Description |

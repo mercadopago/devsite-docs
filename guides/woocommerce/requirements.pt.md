@@ -2,6 +2,12 @@
 
 Para usar a integração do Mercado Pago com WooCommerce em um site WordPress, é preciso atender aos requisitos abaixo.
 
+> NOTE
+>
+> Nota
+>
+> Acesse a nossa [página de Primeiros passos](/developers/pt/docs/getting-started) para encontrar as informações necessárias para começar a integrar as soluções Mercado Pago.
+
 | Requisitos | Descrição | Especificações |
 |---|---|---|
 | Ambiente | Serviço de hospedagem | MySQL, PHP ou serviço equivalente que admite a instalação do WordPress. |
@@ -12,7 +18,7 @@ Para usar a integração do Mercado Pago com WooCommerce em um site WordPress, �
 | Cópia de segurança da sua loja **(recomendado)** | Cópia de todas as informações da sua loja a fim de garantir uma versão sem qualquer alteração caso seja necessário. | Aconselhamos que você faça uma cópia de segurança da loja online antes de fazer qualquer alteração. Ao finalizar a cópia, exclua todos os arquivos relacionados à versão anterior do plugin. |
 | Credenciais | As [credenciais](/developers/pt/docs/woocommerce/additional-content/your-integrations/credentials) são códigos de identificação com os quais o Mercado Pago identifica e reconhece que a sua loja está conectada a sua conta Mercado Pago e, dessa forma, garantem que os pagamentos realizados sejam recebidos corretamente na sua conta do Mercado Pago. | Existem credenciais de testes e de produção e é sempre necessário preencher as duas durante a configuração da integração. Para realizar testes e garantir o funcionamento da integração, serão necessárias as **credenciais de teste** e, após esta etapa, você precisará das **credenciais de produção** para receber pagamentos reais. |
 | Dependência de extensões | Extensões dão novas habilidades ao PHP, complementando com mais funções. | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (para Webservices API).|
-| Plugin do Mercado Pago | Acesse sua conta [Wordpress](https://wordpress.com/) e, no Painel da sua conta, clique em **Plugins > Adicionar Novo**. Utilize e barra de pesquisa à direita para procurar por "Mercado Pago" e, após localizar o plugin **Mercado Pago Payments for WooCommerce**, clique em **Instalar agora**. Após a conclusão da instalação, clique no botão **Ativar**.| Caso você tenha problemas durante a instalação do módulo e precise entrar em contato com nosso suporte, é possível que você seja solicitado a realizar a [instalação de forma manual](/developers/pt/docs/woocommerce/how-tos/install-module-manually). Mantenha o plugin sempre atualizado com a última versão para garantir a segurança dos dados e o funcionamento da integração. |
+| Plugin do Mercado Pago | Acesse sua conta [Wordpress](https://wordpress.com/) e, no Painel da sua conta, clique em **Plugins > Adicionar Novo**. Utilize e barra de pesquisa à direita para procurar por "Mercado Pago" e, após localizar o plugin **Mercado Pago Payments for WooCommerce**, clique em **Instalar agora**. Após a conclusão da instalação, clique no botão **Ativar**.| Caso você tenha problemas durante a instalação do módulo e precise entrar em contato com nosso suporte, é possível que você seja solicitado a realizar a [instalação de forma manual](/developers/pt/docs/woocommerce/installation/manual). Mantenha o plugin sempre atualizado com a última versão para garantir a segurança dos dados e o funcionamento da integração. |
 | Servidor Web | Software responsável por aceitar pedidos em HTTP de clientes, geralmente os navegadores, e servi-los com respostas em HTTP | Apache 2.x, Nginx 1.7.x |
 | Sistema operacional | Sistema responsável pelo gerenciamento do hardware do computador. | Linux x86, Windows x86-64 |
 | SSL | Protocolo que permite estabelecer comunicações seguras na Internet para atividades como navegação, e-mail e outras transferências de dados. | Certificado SSL |

@@ -7,7 +7,6 @@ La creación de la promesa de descuento con cupón pre-añadido se realiza en do
 * Validar el cupón antes de realizar el pago
 * Añadir el cupón antes de proceder al pago
 
-
 ## Validar cupón antes de realizar el pago.
 
 Para **validar un cupón antes de proceder con el pago**, es importante enviar los datos de la campaña en la solicitud, que asegura que el cliente pueda aprovechar el beneficio del descuento antes de finalizar la compra.
@@ -40,7 +39,6 @@ curl -X POST \
 >
 > Cuando se envía un cupón para validación, el sistema verifica si es correcto y si hay un descuento asociado a él. Dependiendo del resultado de la verificación, se pueden recibir diferentes respuestas. Consulta la sección [Respuestas de validación de cupones](/developers/es/docs/wallet-connect/discounts/create-discount-promise-preadd-coupon/validation-responses) para más detalles.
 
-
 ## Añadir cupón antes de proceder al pago
 
 Cuando la validación de un código de cupón es necesaria durante el proceso de checkout, es decir, antes de efectuar el pago, es esencial enviar los datos de la campaña en la solicitud subsiguiente.
@@ -54,8 +52,6 @@ Esta etapa implica el envío de esta solicitud al sistema, para aplicar el descu
 > Es importante que esta solicitud se haga después de que el usuario ingrese el cupón y antes de confirmar el pago.
 
 Utiliza el _curl_ a continuación para realizar la solicitud y asegúrate de que los parámetros sean completados de acuerdo con la siguiente tabla descriptiva.
-
-
 
 | Parámetro  | Descripción  | Ejemplo  |
 | --- | --- | --- |

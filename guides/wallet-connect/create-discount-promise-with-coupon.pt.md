@@ -15,7 +15,7 @@ Para isso, utilize o _curl_ abaixo e insira os parâmetros de acordo com a tabel
 
 | Parâmetro  | Descrição  | Tipo  | Exemplo  |
 | --- | --- | --- | --- |
-| Authorization  | Token de autorização do usuário (Access token). Esta informação pode ser obtida através do menu [suas integrações](/developers/pt/docs/wallet-connect/additional-content/your-integrations/credentials).  | String  | APP_USR-123456-test-access-t0ken  |
+| Authorization  | Token de autorização do usuário (Access token). Esta informação pode ser obtida através do menu [Suas integrações](/developers/pt/docs/wallet-connect/additional-content/your-integrations/credentials).  | String  | APP_USR-123456-test-access-t0ken  |
 | x-payer-token  | Este é um token específico do pagador, substitua <PAYER_TOKEN> pelo token correspondente. Esta informação é obtida ao finalizar o  [fluxo de vinculação de contas](/developers/pt/docs/wallet-connect/account-linking-flow/create-agreement) | String  | payer1-token2-test3-example4  |
 | id  | ID do cupom: Código que identifica e associa sua utilização à uma campanha promocional específica  | String  | Black_Friday_20  |
 [[[
@@ -32,12 +32,11 @@ curl -X POST \
 ```
 ]]]
 
-
 > NOTE
 >
 > Importante
 >
->Quando um cupom é submetido para validação, o sistema verifica se ele está correto e se há um desconto associado a ele. Dependendo do resultado da verificação, diferentes respostas podem ser recebidas. Veja a seção [Respostas da Validação de Cupons](/developers/pt/docs/wallet-connect/discounts/create-discount-promise-preadd-coupon/validation-responses) para mais detalhes.
+>Quando um cupom é submetido para validação, o sistema verifica se ele está correto e se há um desconto associado a ele. Dependendo do resultado da verificação, diferentes respostas podem ser recebidas. Veja a seção [Respostas da validação de cupons](/developers/pt/docs/wallet-connect/discounts/create-discount-promise-preadd-coupon/validation-responses) para mais detalhes.
 
 ## Adicionar cupom antes de prosseguir para pagamento
 
@@ -55,7 +54,7 @@ Esta etapa envolve o envio de uma requisição ao sistema para aplicar o descont
 Utilize o _curl_ abaixo para realizar a requisição e garanta que os parâmetros estejam preenchidos de acordo com a tabela descritiva a seguir.
 | Parâmetro  | Descrição  | Exemplo  |
 | --- | --- | --- |
-| Authorization  | Token de autorização do usuário (Access token). Esta informação pode ser obtida através do menu [suas integrações](/developers/pt/docs/wallet-connect/additional-content/your-integrations/credentials).  | APP_USR-123456-test-access-t0ken  |
+| Authorization  | Token de autorização do usuário (Access token). Esta informação pode ser obtida através do menu [Suas integrações](/developers/pt/docs/wallet-connect/additional-content/your-integrations/credentials).  | APP_USR-123456-test-access-t0ken  |
 | x-payer-token  | Este é um token específico do pagador, substitua <PAYER_TOKEN> pelo token correspondente. Esta informação é obtida ao finalizar o [fluxo de vinculação de contas](/developers/pt/docs/wallet-connect/account-linking-flow/create-agreement).  | payer1-token2-test3-example4  |
 | amount  | Valor total da transação  | 550.50  |
 | coupon  | Código do cupom a ser aplicado. É o código que o usuário insere e que faz referência à campanha de desconto.  | desconto20off  |

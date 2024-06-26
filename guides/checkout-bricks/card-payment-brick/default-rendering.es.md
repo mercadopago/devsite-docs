@@ -9,7 +9,7 @@
 
 ## Configurar el Brick
 
-Creae la configuración de inicio de Brick
+Crea la configuración de inicio del Brick.
 
 [[[
 ```Javascript
@@ -112,7 +112,7 @@ const onReady = async () => {
 
 ## Renderizar el Brick
 
-Una vez creadas las configuraciones, ngrese el código a continuación para renderizar el Brick. 
+Una vez creadas las configuraciones, ingresa el código a continuación para renderizar el Brick. 
 
 > NOTE
 >
@@ -139,8 +139,4 @@ import { CardPayment } from '@mercadopago/sdk-react';
 
 El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 
-<center>
-
 ![cardform](checkout-bricks/card-form-es.png)
-
-</center>

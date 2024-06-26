@@ -2,13 +2,13 @@
 
 Open Finance es un nuevo sistema financiero que te permite tener un dominio total de sus datos y mayor libertad con sus finanzas. Con él, es posible compartir historias financieras con otras instituciones para acceder a productos y servicios más ventajosos.
 
-Con Open Finance, se pueden hacer pagos Pix con saldos de otras cuentas bancarias **en Checkout API**.
+Con Open Finance, se pueden hacer pagos Pix con saldos de otras cuentas bancarias **en ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------**.
 
 > NOTE
 > 
 > Importante
 > 
-> Para usar esta función, debes registrar una clave Pix en su cuenta de Mercado Pago. Si aún no lo has hecho, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) para obtener más información sobre cómo registrarte.
+> Para usar esta función, debes registrar una Clave Pix en su cuenta de Mercado Pago. Si aún no lo has hecho, [haz clic aquí](https://www.youtube.com/watch?v=60tApKYVnkA) para obtener más información sobre cómo registrarte.
 
 Usa nuestras API o SDK para crear tu propio sistema de pago Open Finance en tu sitio web o aplicación móvil. Desde la configuración básica hasta la avanzada, controlando todo el flujo de acuerdo con tu experiencia de pago.
 

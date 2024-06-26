@@ -43,9 +43,9 @@ Código de status: 200
 ```
 ]]]
 
-## Error debido a Advanced Payment no encontrado
+## Error debido a pago no encontrado
 
-Este es un error que ocurre cuando no se encuentra ningún Advanced Payment creado con el ID proporcionado en los parámetros del _request_.
+Este es un error que ocurre cuando no se encuentra ningún pago creado con el ID proporcionado en los parámetros del _request_.
 
 [[[
 ```Json
@@ -55,7 +55,7 @@ Código de status: 404
 {
    "status": "404",
    "error":  "Not found",
-   "message": "Advanced payment not found."
+   "message": "Payment not found."
 }
 
 ```

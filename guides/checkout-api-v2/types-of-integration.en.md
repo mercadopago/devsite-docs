@@ -1,6 +1,6 @@
 # Types of integration
 
-The integration with Checkout API can be done by using different procedures that vary according to technical knowledge and business needs. See the table below for details on each of the available options.
+The integration with ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ can be done by using different procedures that vary according to technical knowledge and business needs. See the table below for details on each of the available options.
 
 ----[mlb]---- 
 | Integration type | Payment methods | Frontend complexity | User Interface (UI) |

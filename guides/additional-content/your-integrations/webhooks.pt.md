@@ -33,9 +33,16 @@ Abaixo explicaremos como: indicar as URLs que serão notificadas, configurar os 
 | `point_integration_wh` | `state_FINISHED`| Processo de pagamento concluído |
 | `point_integration_wh` | `state_CANCELED` | Processo de pagamento cancelado |
 | `point_integration_wh` | `state_ERROR`| Ocorreu um erro ao processar a tentativa de pagamento |
+| `topic_instore_integration_wh` | - | Notificações de integrações presenciais |
+| `shipments` | - | Notificações de envios |
 | `delivery` | `delivery.updated`| Dados de envio e atualização do pedido |
 | `delivery_cancellation` | `case_created`| Solicitação de cancelamento do envio |
+| `wallet_connect` | - | Notificações de transações com [Wallet Connect](/developers/pt/docs/wallet-connect/landing) |
+| `stop_delivery_op_wh` | - | Alertas de fraude |
 | `topic_claims_integration_wh` | `updated`| Reclamações feitas pelas vendas |
+| `topic_card_id_wh` | `card.updated`| O cartão de usuário comprador foi atualizado* |
+
+> *O _Card Updater_ recupera informações de cartões e atualiza essas informações dentro do Mercado Pago. Cartões recuperáveis com este recurso: cartões com alguma informação errada (como data de vencimento, número do cartão, CVV, nome, etc.) e cartões que tenham sido trocados pela instituição financeira (por motivo de validade, upgrade de cartão, etc.).
 
 5. Por fim, clique em **Salvar** para gerar uma **assinatura secreta** para a aplicação. A assinatura é um método de validação para garantir que as notificações recebidas foram enviadas pelo Mercado Pago, por isso, é importante conferir as informações de autenticidade para evitar fraudes.
 
@@ -43,9 +50,290 @@ Abaixo explicaremos como: indicar as URLs que serão notificadas, configurar os 
 >
 > Importante
 >
-> A validação da assinatura secreta através do header `x-signature` foi temporariamente suspensa devido a instabilidades técnicas. Estamos desenvolvendo uma nova versão da solução para assegurar a validação eficaz de suas notificações. 
+> O Mercado Pago sempre enviará essa assinatura nas notificações Webhooks. Sempre confira essa informação de autenticidade para evitar fraudes.
+> <br/>
+> A assinatura gerada não tem prazo de validade e, embora não seja obrigatório, recomendamos renovar periodicamente a **assinatura secreta**. Para isso, basta clicar no botão de redefinição ao lado da assinatura. 
 
-### Simular o recebimento da notificação
+### Validar origem da notificação
+
+No momento em que a URL cadastrada receber uma notificação, você poderá validar se o conteúdo enviado no _header_ `x-signature` foi enviado pelo Mercado Pago, a fim de obter mais segurança no recebimento das suas notificações.
+
+> NOTE
+>
+> Exemplo do conteúdo enviado no header x-signature
+>
+> `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`
+
+Veja abaixo o passo a passo de como configurar essa validação e, ao final, disponibilizamos alguns SDKs com um **exemplo de código completo** para facilitar o seu processo de configuração.
+
+1. Extraia o _timestamp_ (`ts`) e a assinatura do _header_ `x-signature`. Para isso, divida o conteúdo do _header_ pelo caractere `,`, o que resultará em uma lista de elementos. O valor para o prefixo `ts` é o _timestamp_ (em milissegundos) da notificação e `v1` é a assinatura encriptada. Exemplo: `ts=1704908010` e `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
+2. Utilizando o _template_ abaixo, substitua os parâmetros pelos dados recebidos na sua notificação. 
+
+```template
+id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
+```
+
+No _template_, os valores englobados por `[]` devem ser trocados pelos valores da notificação, como:
+
+- Parâmetros com sufixo `_url` são provenientes de _query params_. Exemplo: `[data.id_url]` será substituido pelo valor correspondente ao ID do evento (`data.id`).
+- `[ts_header]` será o valor `ts` extraído do _header_ `x-signature`.
+
+> Caso algum dos valores apresentados no _template_ acima não esteja presente em sua notificação, você deverá removê-los do template.
+
+3. No [Painel do desenvolvedor](/developers/panel/app), selecione a aplicação integrada, navegue até a seção Webhooks e **revele a assinatura secreta** gerada.
+4. Gere a contra chave para validação. Para isso, calcule um [HMAC](https://pt.wikipedia.org/wiki/HMAC) com a função de `hash SHA256` em base hexadecimal, utilize a **assinatura secreta** como chave e o _template_ populado com os valores como mensagem. Exemplo:
+
+[[[
+```php
+$cyphedSignature = hash_hmac('sha256', $data, $key);
+```
+```node
+const crypto = require('crypto');
+const cyphedSignature = crypto
+    .createHmac('sha256', secret)
+    .update(signatureTemplateParsed)
+    .digest('hex'); 
+```
+```java
+String cyphedSignature = new HmacUtils("HmacSHA256", secret).hmacHex(signedTemplate);
+```
+```python
+import hashlib, hmac, binascii
+
+cyphedSignature = binascii.hexlify(hmac_sha256(secret.encode(), signedTemplate.encode()))
+```
+]]]
+
+5. Por fim, compare a chave gerada com a chave extraída do cabeçalho, considerando elas devem ter uma correspondência exata. Além disso, é possível usar o _timestamp_ extraído do _header_ para comparação com um _timestamp_ gerado na hora do recebimento da notificação, a fim de estipular uma tolerância de atraso no recebimento da mensagem.
+
+- Exemplo de código completo:
+
+[[[
+```php
+<?php
+// Obtain the x-signature value from the header
+$xSignature = $_SERVER['HTTP_X_SIGNATURE'];
+$xRequestId = $_SERVER['HTTP_X_REQUEST_ID'];
+
+// Obtain Query params related to the request URL
+$queryParams = $_GET;
+
+// Extract the "data.id" from the query params
+$dataID = isset($queryParams['data.id']) ? $queryParams['data.id'] : '';
+
+// Separating the x-signature into parts
+$parts = explode(',', $xSignature);
+
+// Initializing variables to store ts and hash
+$ts = null;
+$hash = null;
+
+// Iterate over the values to obtain ts and v1
+foreach ($parts as $part) {
+    // Split each part into key and value
+    $keyValue = explode('=', $part, 2);
+    if (count($keyValue) == 2) {
+        $key = trim($keyValue[0]);
+        $value = trim($keyValue[1]);
+        if ($key === "ts") {
+            $ts = $value;
+        } elseif ($key === "v1") {
+            $hash = $value;
+        }
+    }
+}
+
+// Obtain the secret key for the user/application from Mercadopago developers site
+$secret = "your_secret_key_here";
+
+// Generate the manifest string
+$manifest = "id:$dataID;request-id:$xRequestId;ts:$ts;";
+
+// Create an HMAC signature defining the hash type and the key as a byte array
+$sha = hash_hmac('sha256', $manifest, $secret);
+if ($sha === $hash) {
+    // HMAC verification passed
+    echo "HMAC verification passed";
+} else {
+    // HMAC verification failed
+    echo "HMAC verification failed";
+}
+?>
+```
+```javascript
+// Obtain the x-signature value from the header
+const xSignature = headers['x-signature']; // Assuming headers is an object containing request headers
+const xRequestId = headers['x-request-id']; // Assuming headers is an object containing request headers
+
+// Obtain Query params related to the request URL
+const urlParams = new URLSearchParams(window.location.search);
+const dataID = urlParams.get('data.id');
+
+// Separating the x-signature into parts
+const parts = xSignature.split(',');
+
+// Initializing variables to store ts and hash
+let ts;
+let hash;
+
+// Iterate over the values to obtain ts and v1
+parts.forEach(part => {
+    // Split each part into key and value
+    const [key, value] = part.split('=');
+    if (key && value) {
+        const trimmedKey = key.trim();
+        const trimmedValue = value.trim();
+        if (trimmedKey === 'ts') {
+            ts = trimmedValue;
+        } else if (trimmedKey === 'v1') {
+            hash = trimmedValue;
+        }
+    }
+});
+
+// Obtain the secret key for the user/application from Mercadopago developers site
+const secret = 'your_secret_key_here';
+
+// Generate the manifest string
+const manifest = `id:${dataID};request-id:${xRequestId};ts:${ts};`;
+
+// Create an HMAC signature
+const hmac = crypto.createHmac('sha256', secret);
+hmac.update(manifest);
+
+// Obtain the hash result as a hexadecimal string
+const sha = hmac.digest('hex');
+
+if (sha === hash) {
+    // HMAC verification passed
+    console.log("HMAC verification passed");
+} else {
+    // HMAC verification failed
+    console.log("HMAC verification failed");
+}
+```
+```python
+import hashlib
+import hmac
+import urllib.parse
+
+# Obtain the x-signature value from the header
+xSignature = request.headers.get("x-signature")
+xRequestId = request.headers.get("x-request-id")
+
+# Obtain Query params related to the request URL
+queryParams = urllib.parse.parse_qs(request.url.query)
+
+# Extract the "data.id" from the query params
+dataID = queryParams.get("data.id", [""])[0]
+
+# Separating the x-signature into parts
+parts = xSignature.split(",")
+
+# Initializing variables to store ts and hash
+ts = None
+hash = None
+
+# Iterate over the values to obtain ts and v1
+for part in parts:
+    # Split each part into key and value
+    keyValue = part.split("=", 1)
+    if len(keyValue) == 2:
+        key = keyValue[0].strip()
+        value = keyValue[1].strip()
+        if key == "ts":
+            ts = value
+        elif key == "v1":
+            hash = value
+
+# Obtain the secret key for the user/application from Mercadopago developers site
+secret = "your_secret_key_here"
+
+# Generate the manifest string
+manifest = f"id:{dataID};request-id:{xRequestId};ts:{ts};"
+
+# Create an HMAC signature defining the hash type and the key as a byte array
+hmac_obj = hmac.new(secret.encode(), msg=manifest.encode(), digestmod=hashlib.sha256)
+
+# Obtain the hash result as a hexadecimal string
+sha = hmac_obj.hexdigest()
+if sha == hash:
+    # HMAC verification passed
+    print("HMAC verification passed")
+else:
+    # HMAC verification failed
+    print("HMAC verification failed")
+```
+```go
+import (
+	"crypto/hmac"
+	"crypto/sha256"
+	"encoding/hex"
+	"fmt"
+	"net/http"
+	"strings"
+)
+
+func main() {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		// Obtain the x-signature value from the header
+		xSignature := r.Header.Get("x-signature")
+		xRequestId := r.Header.Get("x-request-id")
+
+		// Obtain Query params related to the request URL
+		queryParams := r.URL.Query()
+
+		// Extract the "data.id" from the query params
+		dataID := queryParams.Get("data.id")
+
+		// Separating the x-signature into parts
+		parts := strings.Split(xSignature, ",")
+
+		// Initializing variables to store ts and hash
+		var ts, hash string
+
+		// Iterate over the values to obtain ts and v1
+		for _, part := range parts {
+			// Split each part into key and value
+			keyValue := strings.SplitN(part, "=", 2)
+			if len(keyValue) == 2 {
+				key := strings.TrimSpace(keyValue[0])
+				value := strings.TrimSpace(keyValue[1])
+				if key == "ts" {
+					ts = value
+				} else if key == "v1" {
+					hash = value
+				}
+			}
+		}
+
+		// Get secret key/token for specific user/application from Mercadopago developers site
+		secret := "your_secret_key_here"
+
+		// Generate the manifest string
+		manifest := fmt.Sprintf("id:%v;request-id:%v;ts:%v;", dataID, xRequestId, ts)
+
+		// Create an HMAC signature defining the hash type and the key as a byte array
+		hmac := hmac.New(sha256.New, []byte(secret))
+		hmac.Write([]byte(manifest))
+
+		// Obtain the hash result as a hexadecimal string
+		sha := hex.EncodeToString(hmac.Sum(nil))
+
+if sha == hash {
+    // HMAC verification passed
+    fmt.Println("HMAC verification passed")
+} else {
+    // HMAC verification failed
+    fmt.Println("HMAC verification failed")
+}
+
+	})
+}
+```
+]]]
+
+### Simular o recebimento da notificação 
 
 1. Após configurar as URLs e os Eventos, clique em **Simular** para experimentar e testar se a URL indicada está recebendo as notificações corretamente.
 2. Na tela em questão, selecione a URL a ser testada, podendo ser **de teste ou de produção**. 
@@ -236,6 +524,45 @@ payment = payment_response["response"]
 
 print(payment)
 ```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := payment.NewClient(cfg)
+
+
+request := payment.Request{
+   TransactionAmount: <transactionAmount>,
+   Token: <token>,
+   Description: <description>,
+   Installments: <installments>,
+   PaymentMethodID:   <paymentMethodId>,
+   NotificationURL: "https:/mysite.com/notifications/new",
+   Payer: &payment.PayerRequest{
+      Email: <email>,
+      Identification: &payment.IdentificationRequest{
+         Type: <type>,
+         Number: <number>,
+      },
+   },
+}
+
+
+resource, err := client.Create(context.Background(), request)
+if err != nil {
+fmt.Println(err)
+}
+
+
+fmt.Println(resource)
+```
 ```curl
 curl -X POST \
    -H 'accept: application/json' \
@@ -292,10 +619,9 @@ curl -X POST \
 >
 > Importante
 >
-> Para o tipo de evento `point_integration_wh`, o formato da notificação muda. [Clique aqui](/developers/pt/docs/mp-point/landing) para consultar a documentação do **Mercado Pago Point**.
-> <br/>
-> No caso dos eventos de `delivery` e `topic_claims_integration_wh`, também teremos alguns atributos diferentes na resposta. Veja na tabela abaixo quais são essas particularidades.
-
+> Para o tipo de evento `point_integration_wh`, o formato da notificação muda. [Clique aqui](/developers/pt/docs/mp-point/landing) para consultar a documentação do **Mercado Pago Point**.</br></br>
+> </br></br>
+> No caso dos eventos de `delivery`, `topic_claims_integration_wh` e `topic_card_id_wh'`, também teremos alguns atributos diferentes na resposta. Veja na tabela abaixo quais são essas particularidades.
 
 ```json
 {
@@ -317,12 +643,15 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 | --- | --- |
 | **id** | ID de notificação |
 | **live_mode** | Indica se a URL informada é valida |
-| **type** | Tipo de notificação recebida (payments, mp-connect, subscription, claim, etc) |
-| **date_created** | Data de criação do recurso |
+| **type** | Tipo de notificação recebida (payments, mp-connect, subscription, claim, automatic-payments, etc) |
+| **date_create** | Data de criação do recurso |
 | **user_id**| UserID de vendedor |
 | **api_version** | Indica se é uma notificação duplicada ou não |
 | **action** | Tipo de notificação recebida, indicando se se trata da atualização de um recurso ou da criação de um novo |
 | **data - id** | ID do payment, do merchant_order ou da reclamação |
+| **data - customer_id** (card updater)| ID do comprador que teve o cartão atualizado |
+| **data - new_card_id** (card updater)| Número atualizado do cartão |
+| **data - old_card_id** (card updater)| Número antigo do cartão |
 | **attempts** (delivery) | Número de vezes que uma notificação foi enviada |
 | **received** (delivery) | Data de criação do recurso |
 | **resource** (delivery) | Tipo de notificação recebida, indicando se trata-se da atualização de um recurso ou da criação de um novo |
@@ -330,7 +659,7 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 | **topic** (delivery) | Tipo de notificação recebida  |
 | **resource** (claims) | Tipo de notificação recebida, indicando notificações relacionadas à reclamações feitas por vendas |
 
-4. Caso deseje receber notificações apenas de Webhook e não de IPN, você pode adicionar na `notification_url` o parâmetro `source_news=webhook`. Por exemplo: https://www.yourserver.com/notifications?source_news=webhooks
+4. Caso deseje receber notificações apenas de Webhook e não de IPN, você pode adicionar na `notification_url` o parâmetro `source_news=webhooks`. Por exemplo: https://www.yourserver.com/notifications?source_news=webhooks
 
 ## Ações necessárias após receber uma notificação
 

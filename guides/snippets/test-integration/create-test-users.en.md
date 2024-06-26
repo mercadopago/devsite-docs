@@ -14,20 +14,8 @@ To create accounts and test how the integrations work, follow the steps below.
 3. In the "Create new account" screen, enter a description for the account identification. Example: "Seller - Store 1".
 4. Next, select the **operating country** for the account. This information **cannot be edited later**, and furthermore, the Buyer and Seller users need to be from the same country.
 5. Fill in with a **fictional money value** that will serve as a reference for testing your applications. This value will appear as the balance in the Mercado Pago account of the test user and can be used for payment simulation, just like with the [test cards](/developers/en/guides/additional-content/your-integrations/test-cards).
-6. Authorize the use of your personal data in accordance with the [Privacy Statement](https://www.mercadopago.com.br/privacidade) and ensure that your account uses Mercado Pago's tools in accordance with the [Terms and Conditions](https://www.mercadopago.com.br/developers/en/docs/resources/legal/terms-and-conditions) by checking the checkbox.
+6. Authorize the use of your personal data in accordance with the ----[mlb]----[Privacy Statement](https://www.mercadopago.com.br/privacidade)------------ ----[mla, mlm, mpe, mco, mlu, mlc]----[Privacy Statement](https://www.mercadopago[FAKER][URL][DOMAIN]/privacidad)------------ and ensure that your account uses Mercado Pago's tools in accordance with the [Terms and Conditions](https://www.mercadopago.com.br/developers/en/docs/resources/legal/terms-and-conditions) by checking the checkbox.
 7. Click on **Create test account**.
-
-> WARNING
->
-> Use of credentials
->
-> Always use the **production credentials** when working with a test user.
-
-> WARNING
->
-> Attention
->
-> You can generate up to 15 test user accounts simultaneously, and for now, it is not possible to delete them.
 
 Done! The test account has been created and will be displayed in the table with the following information:
 
@@ -39,6 +27,18 @@ Done! The test account has been created and will be displayed in the table with 
 
 > NOTE
 >
-> Important
+> Note
 >
 > To edit the **account identification** or **add more fictional money** to test your applications, click on the **vertical ellipsis** (three dots) at the end of the table row and select the **Edit data** option.<br> <br> You can generate **up to 15 test user accounts** simultaneously, and for now, it is not possible to delete them.
+
+## Validate login with test users
+
+When logging into a website with test users and trying to access some sections of the Developer Dashboard, you may be required to authenticate with a code sent via email.
+
+Since these are fictional users, you will not have access to the account that will receive the code. Instead, you can perform this authentication by entering the **last 6 digits that make up the User ID of the test account** you are trying to access, or the **last 6 digits that make up the production Access Token**.
+
+> WARNING
+>
+> Important
+>
+> To access the User ID or Access Token of a test account, you must have previously created an application. To learn how to do this, refer to the documentation on the [Developer Panel](/developers/en/docs/your-integrations/dashboard). <br> <br> If you have any doubts on how to obtain the User ID or Access Token, refer to [Application details](/developers/en/docs/your-integrations/application-details) or [Credentials](/developers/en/docs/your-integrations/credentials).

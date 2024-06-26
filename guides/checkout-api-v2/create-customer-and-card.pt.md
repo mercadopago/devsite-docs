@@ -2,7 +2,7 @@
 
 Para criar um cliente e associá-lo ao seu cartão, é preciso enviar o campo do e-mail, o tipo de meio de pagamento, o ID do banco emissor e o token gerado. Cada cliente será guardado com o valor `customer` e cada cartão com o valor `card`.
 
-Além disso, recomendamos armazenar os dados do cartão sempre que um pagamento for concluído com sucesso. Isso permite que os dados corretos sejam armazenados para compras futuras e otimiza o processo de pagamento para o comprador.
+Além disso, ao utilizar nossos SDKs, é possível armazenar os dados do cartão sempre que um pagamento for concluído com sucesso. Isso permite que as informações corretas sejam salvadas com segurança em nossos servidores para compras futuras, e otimiza o processo de pagamento para o comprador. Para obter mais informações, consulte nossa [Referência de API](/developers/pt/reference/cards/_customers_customer_id_cards/post).
 
 Para criar um cliente e cartão, utilize um dos códigos abaixo.
 
@@ -119,6 +119,48 @@ card_data = {
 card_response = sdk.card().create(customer["id"], card_data)
 card = card_response["response"]
 
+```
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+
+	"github.com/mercadopago/sdk-go/pkg/config"
+	"github.com/mercadopago/sdk-go/pkg/customercard"
+)
+
+func main() {
+	accessToken := "{{ACCESS_TOKEN}}"
+
+	cfg, err := config.New(accessToken)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	customerClient := customer.NewClient(cfg)
+	customerCardClient := customercard.NewClient(cfg)
+
+	customerRequest := customer.Request{Email: "{{EMAIL}}"}
+
+	customerResource, err := customerClient.Create(context.Background(), customerRequest)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	cardRequest := customercard.Request{Token: "{{CARD_TOKEN}}"}
+
+	cardResource, err := customerCardClient.Create(context.Background(), customerResource.ID, cardRequest)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	fmt.Println(cardResource)
+}
 ```
 ```curl
 

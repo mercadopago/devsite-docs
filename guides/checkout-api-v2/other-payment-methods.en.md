@@ -1,7 +1,7 @@
 # Other payment methods
 
 ----[mlb]----
-With Mercado Pago's Checkout API, it is possible to offer, in addition to card and Pix, **payments via boleto bancário and pagamento em lotérica**.
+With Mercado Pago's Checkout Transparente, it is possible to offer, in addition to card and Pix, **payments via boleto bancário and pagamento em lotérica**.
 
 > NOTE
 >
@@ -154,7 +154,7 @@ To offer payments with **Abitab** and/or **Redpagos**, please follow the steps b
 
 ## Import MercadoPago.js
 
-To perform the Checkout API integration, you need to capture the necessary data to process the payment.
+To perform the ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ integration, you need to capture the necessary data to process the payment.
 
 This capture is made by including the MercadoPago.js library in your project, followed by the payment form. Use the code below to import the library before adding the payment form.
 
@@ -196,17 +196,18 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 
 With the MercadoPago.js library included, add the payment form below to your project to ensure the secure capture of buyer data. In this step, it is important to use the list you consulted to obtain the available payment methods to create the payment options you want to offer.
 
+----[mlm, mla, mpe, mco, mlu, mlc]----
 [[[
 ```html
 
   <form id="form-checkout" action="/process_payment" method="post">
     <div>
       <div>
-        <label for="payerFirstName">Name</label>
+        <label for="payerFirstName">Nombre</label>
         <input id="form-checkout__payerFirstName" name="payerFirstName" type="text">
       </div>
       <div>
-        <label for="payerLastName">Last name</label>
+        <label for="payerLastName">Apellido</label>
         <input id="form-checkout__payerLastName" name="payerLastName" type="text">
       </div>
       <div>
@@ -214,11 +215,11 @@ With the MercadoPago.js library included, add the payment form below to your pro
         <input id="form-checkout__email" name="email" type="text">
       </div>
       <div>
-        <label for="identificationType">Type of document</label>
+        <label for="identificationType">Tipo de documento</label>
         <select id="form-checkout__identificationType" name="identificationType" type="text"></select>
       </div>
       <div>
-        <label for="identificationNumber">Document number</label>
+        <label for="identificationNumber">Número del documento</label>
         <input id="form-checkout__identificationNumber" name="identificationNumber" type="text">
       </div>
     </div>
@@ -228,12 +229,87 @@ With the MercadoPago.js library included, add the payment form below to your pro
         <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
         <input type="hidden" name="description" id="description" value="Nome do Produto">
         <br>
-        <button type="submit">Pay</button>
+        <button type="submit">Pagar</button>
       </div>
     </div>
   </form>
 ```
 ]]]
+
+------------
+
+----[mlb]----
+
+> WARNING
+>
+> Important
+>
+> When setting up payments with boleto bancário, it is mandatory that the `zip_code`, `street_name`, `street_number`, `neighborhood`, `city` and `federal_unit` fields are present in the payment form, and that the buyer fill them out correctly. If you have already made a configuration without these fields in it, you must update it to make sure your payments get processed correctly.
+
+[[[
+```html
+
+ <form id="form-checkout" action="/process_payment" method="post">
+   <div>
+       <h1>Payer Request</h1>
+     <div>
+       <label for="payerFirstName">Nome</label>
+       <input id="form-checkout__payerFirstName" name="payerFirstName" type="text">
+     </div>
+     <div>
+       <label for="payerLastName">Sobrenome</label>
+       <input id="form-checkout__payerLastName" name="payerLastName" type="text">
+     </div>
+     <div>
+       <label for="email">E-mail</label>
+       <input id="form-checkout__email" name="email" type="text">
+     </div>
+     <div>
+       <label for="identificationType">Tipo de documento</label>
+       <input id="form-checkout__identificationType" name="identificationType" type="text"></input>
+     </div>
+     <div>
+       <label for="identificationNumber">Número do documento</label>
+       <input id="form-checkout__identificationNumber" name="identificationNumber" type="text">
+     </div>
+     <div>
+       <label for="zip_code"> CEP: </label>
+       <input id="form-checkout__zip_code" name="zip_code" type="text">
+     </div>
+     <div>
+       <label for="street_name"> Rua: </label>
+       <input id="form-checkout__street_name" name="street_name" type="text">
+     </div>
+     <div>
+       <label for="street_number"> Número: </label>
+       <input id="form-checkout__street_number" name="street_number" type="text">
+     </div>
+     <div>
+       <label for="neighborhood"> Bairro: </label>
+       <input id="form-checkout__neighborhood" name="neighborhood" type="text">
+     </div>
+     <div>
+       <label for="city"> Cidade: </label>
+       <input id="form-checkout__city" name="city" type="text">
+     </div>
+     <div>
+       <label for="federal_unit"> Estado: </label>
+       <input id="form-checkout__federal_unit" name="federal_unit" type="text">
+     </div>
+   </div>
+   <div>
+     <div>
+       <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
+       <input type="hidden" name="description" id="description" value="Nome do Produto">
+       <br>
+       <button type="submit">Pagar</button>
+     </div>
+   </div>
+ </form>
+```
+]]]
+
+------------
 
 ----[mlb, mla, mpe, mco, mlu, mlc]----
 ## Get document types
@@ -285,43 +361,52 @@ elem.appendChild(tempOptions);
 
 When finalizing the inclusion of the payment form and obtaining the types of documents, it is necessary to forward the buyer's email, type and document number, the payment method used and the details of the amount to be paid using our Payments API or one of our SDKs.
 
-> NOTE
->
-> Important
->
-> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
-
 ----[mlb]----
-To configure payments with **Boleto Bancário** or **Pagamento em lotérica**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
+To configure payments with **Boleto Bancário** or **Pagamento em lotérica**, send a **POST** with the parameters detailed in the tables below to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
 
 > WARNING
 >
 > Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. For more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials). In addition, sending the header `X-Idempotency-Key` with your idempotency key will be requested to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
-| Payment Type | Parameter | Value |
-| --- | --- | --- |
-| Boleto | `payment_method_id` | `bolbradesco` |
-| Lottery payment | `payment_method_id` | `pec` |
 
 [[[
 ```php
 <?php
-  use MercadoPago\Client\Payment\PaymentClient;
 
-  $client = new PaymentClient();
-  $request_options = new RequestOptions();
-  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+use MercadoPago\Client\Payment\PaymentClient;
+use MercadoPago\Client\Common\RequestOptions;
+use MercadoPago\MercadoPagoConfig;
 
-  $payment = $client->create([
-    "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
-    "payment_method_id" => $_POST['<PAYMENT_METHOD_ID>'],
-    "payer" => [
-      "email" => $_POST['<EMAIL>']
+MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+
+$client = new PaymentClient();
+$request_options = new RequestOptions();
+$request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+
+$payment = $client->create([
+  "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+  "payment_method_id" => $_POST['<PAYMENT_METHOD_ID>'],
+  "payer" => [
+    "email" => $_POST['<EMAIL>'],
+    "first_name" => $_POST['<NOME>'],
+    "last_name" => $_POST['<SOBRENOME>'],
+    "identification" => [
+      "type" =>  $_POST['<TIPO DE DOCUMENTO>'],
+      "number" => $_POST['<NUMERO>']
+    ],
+    "address" => [
+      "zip_code" => $_POST['<CEP>'],
+      "city" => $_POST['<CIDADE>'],
+      "street_name" => $_POST['<RUA>'],
+      "street_number" => $_POST['<NÚMERO>'],
+      "neighborhood" => $_POST['<BAIRRO>'],
+      "federal_unit" => $_POST['<SIGLA DO ESTADO>']
     ]
-  ], $request_options);
-  echo implode($payment);
+  ]
+], $request_options);
+echo implode($payment);
 ?>
 ```
 ```node
@@ -332,34 +417,55 @@ const payments = new Payments(client);
 
 payments.create({
 body: {
-		transaction_amount: '<TRANSACTION_AMOUNT>',
-		payment_method_id: '<PAYMENT_METHOD_ID>',
-		payer: {
-			email: '<EMAIL>'
-			}
+       transaction_amount: '<TRANSACTION_AMOUNT>',
+       payment_method_id: '<PAYMENT_METHOD_ID>',
+       payer: {
+           email: '<EMAIL>',
+           first_name: '<NOMBRE>',
+           last_name: '<APELLIDO>',
+           identification:{
+               type:'<TIPO DE DOCUMENTO>',
+               number:'<NUMERO_DOCUMENTO>'
+       },
+           address:{
+               zip_code: '<CEP>',
+               city: '<CIUDAD>',
+               neighborhood: '<BARRIO>',
+               street_name: '<CALLE>',
+               street_number: '<NÚMERO>',
+               federal_unit: '<SIGLA ESTADO>'
+       }
+           }
 },
-	requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
+   requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
 })
-	.then((result) => console.log(result))
-	.catch((error) => console.log(error));
+   .then((result) => console.log(result))
+   .catch((error) => console.log(error));
+
 ```
 ```java
 PaymentCreateRequest paymentCreateRequest = PaymentCreateRequest.builder()
-          .transactionAmount(new BigDecimal("<TRANSACTION_AMOUNT>"))
-          .paymentMethodId("<PAYMENT_METHOD_ID>")
-          .payer(
-              PaymentPayerRequest.builder()
-                  .email("<EMAIL>").build()
-          ).build();
+    .transactionAmount(new BigDecimal("<TRANSACTION_AMOUNT>"))
+    .paymentMethodId("bolbradesco")
+    .payer(PaymentPayerRequest.builder()
+        .email("<EMAIL>")
+        .firstName("<NAME>")
+        .lastName("<LASTNAME>")
+        .identification(IdentificationRequest.builder()
+            .type("CPF")
+            .number("<NUMERO>")
+            .build())
+        .address(PaymentPayerAddressRequest.builder()
+            .streetName("<RUA XXX>")
+            .streetNumber("123")
+            .zipCode("<CEP>")
+            .federalUnit("<SIGLA DO ESTADO>")
+            .city("<CIDADE>")
+            .neighborhood("<BAIRRO>")
+            .build())
+        .build())
+    .build();
 
-Map<String, String> customHeaders = new HashMap<>();
-customHeaders.put("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
-
-MPRequestOptions requestOptions = MPRequestOptions.builder()
-    .customHeaders(customHeaders).build();
-
-PaymentClient client = new PaymentClient();
-client.create(paymentCreateRequest, requestOptions);
 ```
 ```ruby
 require 'mercadopago'
@@ -373,7 +479,7 @@ custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_
 
 payment_request = {
   transaction_amount: 100,
-  description: 'Product title',
+  description: 'Título del producto',
   payment_method_id: 'bolbradesco',
   payer: {
     email: 'PAYER_EMAIL',
@@ -400,41 +506,42 @@ payment = payment_response[:response]
 ```
 ```csharp
 
-using MercadoPago.Config;
-using MercadoPago.Client.Common;
-using MercadoPago.Client.Payment;
-using MercadoPago.Resource.Payment;
-
-MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
-
-var requestOptions = new RequestOptions();
-requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
+MercadoPagoConfig.AccessToken = "<ENV_ACCESS_TOKEN>";
 
 var request = new PaymentCreateRequest
 {
-TransactionAmount = 105,
-Description = "Product Title",
-PaymentMethodId = "bolbradesco",
-Payer = new PaymentPayerRequest
-{
-Email = "PAYER_EMAIL",
-FirstName = "Test",
-LastName = "User",
-Identification = new IdentificationRequest
-{
-Type = "CPF",
-Number = "191191191-00",
-},
-},
-};
+   TransactionAmount = 105,
+   Description = "<DESCRIPCIÓN>",
+   PaymentMethodId = "bolbradesco",
+   Payer = new PaymentPayerRequest
+   {
+       Email = "<EMAIL>",
+       FirstName = "<NOMBRE>",
+       LastName = "<APELLIDO>",
+       Identification = new IdentificationRequest
+       {
+           Type = "CPF",
+           Number = "<NUMERO DE CPF>",
+       },
+       Address = new  PaymentPayerAddressRequest
+       {
+           ZipCode = "<CÓDIGO POSTAL>",
+           StreetName = "<CALLE XXX>",
+           City = "<CIUDAD>",
+           StreetNumber = "<NÚMERO>",
+           Neighborhood = "<BARRIO>",
+           FederalUnit = "<SIGLA DE ESTADO>",
 
+       }
+   },
+};
 var client = new PaymentClient();
-Payment payment = await client.CreateAsync(request, requestOptions);
+Payment payment = await client.CreateAsync(request);
 
 ```
 ```python
-import market
-sdk = Mercadopago.SDK("ENV_ACCESS_TOKEN")
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
 request_options = mercadopago.config.RequestOptions()
 request_options.custom_headers = {
@@ -442,53 +549,132 @@ request_options.custom_headers = {
 }
 
 payment_data = {
-"transaction_amount": 100,
-"description": "Product title",
-"payment_method_id": "bolbradesco",
-"payer": {
-"email": "PAYER_EMAIL",
-"first_name": "Test",
-"last_name": "User",
-"identification": {
-"type": "CPF",
-"number": "191191191-00"
-},
-"address": {
-"zip_code": "06233-200",
-"street_name": "Avenida das Nações Unidas",
-"street_number": "3003",
-"neighborhood": "Bonfim",
-"city": "Osasco",
-"federal_unit": "SP"
-}
-}
+    "transaction_amount": 100,
+    "description": "Título del producto",
+    "payment_method_id": "bolbradesco",
+    "payer": {
+        "email": "PAYER_EMAIL",
+        "first_name": "Test",
+        "last_name": "User",
+        "identification": {
+            "type": "DNI",
+            "number": "19119119"
+        },
+        "address": {
+            "zip_code": "1264",
+            "street_name": "Av. Caseros",
+            "street_number": "3039",
+            "neighborhood": "Parque Patricios",
+            "city": "Buenos Aires",
+            "federal_unit": "BA"
+        }
+    }
 }
 
 payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
+
+```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+  fmt.Println(err)
+  return
+}
+
+client := payment.NewClient(cfg)
+
+
+request := payment.Request{
+   TransactionAmount: 105,
+   PaymentMethodID:   "bolbradesco",
+   Payer: &payment.PayerRequest{
+      Email:     "{{EMAIL}}",
+      FirstName: "{{NOME}}",
+      LastName:  "{{SOBRENOME}}",
+      Identification: &payment.IdentificationRequest{
+         Type:   "{{TIPO DO DOCUMENTO}}",
+         Number: "{{NUMERO}}",
+      },
+      Address: &payment.AddressRequest{
+         ZipCode:      "06233-200",
+         City:         "Osasco",
+         Neighborhood: "Bonfim",
+         StreetName:   "Av. das Nações Unidas",
+         StreetNumber: "3003",
+         FederalUnit:  "SP",
+      },
+   },
+}
+
+
+resource, err := client.Create(context.Background(), request)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+fmt.Println(resource)
+
 ```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --header 'X-Idempotency-Key: <SOME_UNIQUE_VALUE>' \
+--header 'X-Product-Id: <SOME_UNIQUE_VALUE>' \
 --data-raw '{
-    "transaction_amount": 100,
-    "description": "Titulo do produto",
-    "payment_method_id": "bolbradesco",
-    "payer": {
-        "email": "test_user_12345@testuser.com",
-        "first_name": "Test",
-        "last_name": "User",
-        "identification": {
-            "type": "CPF",
-            "number": "01234567890"
-        }
-    }
+   "transaction_amount": 100,
+   "description": "Titulo do produto",
+   "payment_method_id": "bolbradesco",
+   "payer": {
+       "email": "test_user_12345@testuser.com",
+       "first_name": "Test",
+       "last_name": "User",
+       "identification": {
+           "type": "CPF",
+           "number": "01234567890"
+       }
+       "address": {
+           "zip_code": "88000000",
+           "street_name": "Nombre de calle",
+           "street_number": "123",
+           "neighborhood": "Barrio",
+           "city": "Ciudad",
+           "federal_unit": "UF"
+       }
+   }
 }'
-
 ```
 ]]]
+
+#### - Mandatory fields for boleto bancário payments
+
+| Parameter | Type | Description, possible values and examples |
+|---|---|---|
+| `payment_method_id` | string | Payment method. For boleto bancário, it is always `bolbradesco`. |
+| `address.zip_code` | string | Zip code. Example: 88000000 |
+| `address.street_name` | string | Buyer's street name. Example: Rua da Abobrinha. |
+| `address.street_number` | string | Buyer's address number. Example: 1291 |
+| `address.neighborhood` | string | Neighborhood where the buyer's address is located. Example: Copacabana. |
+| `address.city` | string | City where the buyer lives. Example: Rio de Janeiro. |
+| `address.federal_unit` | string | State abbreviation where the buyer lives. Only two characters are accepted. For example: RJ. |
+
+#### - Mandatory fields for pagamentos em lotéricas
+
+| Parameter | Type | Description, possible values and examples |
+|---|---|---|
+| `payment_method_id` | string | Payment method. For pagamentos em lotéricas, it is always `pec`. |
+
+> WARNING
+>
+> Important
+>
+> If you need additional information on how to send all the required fields in this request, please refer to the [API Reference](/developers/en/reference/payments/_payments/post).
 
 The response will show the `pending` status until the buyer completes the payment. Also, in the response to the request, the `external_resource_url` parameter will return a URL that contains instructions for the buyer to make the payment. You can redirect to this same link to complete the payment flow. See below for an example return.
 
@@ -573,7 +759,7 @@ The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-The time for payments with boleto approval is up to 48 working hours. Therefore, set the expiration date to a minimum of 3 days to ensure that the payment is made.
+The approval timeframe for the boleto is up to 2 business hours. Therefore, set the expiration date to a minimum of 3 days to ensure that the payment is made.
 
 > WARNING
 >
@@ -594,9 +780,9 @@ To configure payments with **Rapipago** and/or **Pago Fácil**, send a **POST** 
 
 > WARNING
 >
-> Important
+> Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. For more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials). In addition, sending the header `X-Idempotency-Key` with your idempotency key will be requested to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 [[[
 ```php
@@ -694,6 +880,31 @@ payment_data = {
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := paymentmethod.NewClient(cfg)
+
+
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+for _, v := range resources {
+   fmt.Println(v)
+}
+```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
@@ -790,14 +1001,13 @@ The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-The crediting period takes between 1 and 2 business days, depending on the payment method. That's why we recommend that you set the expiration date to a minimum of 3 days to ensure the payment to be made.
+The crediting period is up to 2 business hours according to the payment method. That's why we recommend that you set the expiration date to a minimum of 3 days to ensure the payment to be made.
 
 > WARNING
 >
 > Important
 >
 > If the payment is made after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
-
 
 ## Cancel payment
 
@@ -813,9 +1023,9 @@ To configure payments with **OXXO**, **Paycash**, **Citibanamex**, **Santander**
 
 > WARNING
 >
-> Important
+> Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. For more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials). In addition, sending the header `X-Idempotency-Key` with your idempotency key will be requested to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 [[[
 ```php
@@ -930,6 +1140,31 @@ payment_data = {
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := paymentmethod.NewClient(cfg)
+
+
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+for _, v := range resources {
+   fmt.Println(v)
+}
+```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
@@ -1004,9 +1239,9 @@ To configure payments with **PagoEfectivo**, send a **POST** with the required p
 
 > WARNING
 >
-> Important
+> Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. For more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials). In addition, sending the header `X-Idempotency-Key` with your idempotency key will be requested to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 [[[
 ```php
@@ -1120,6 +1355,31 @@ payment_data = {
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := paymentmethod.NewClient(cfg)
+
+
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+for _, v := range resources {
+   fmt.Println(v)
+}
+```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
@@ -1182,9 +1442,9 @@ To configure payments with **Efecty**, send a **POST** with the appropriate para
 
 > WARNING
 >
-> Important
+> Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. For more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials). In addition, sending the header `X-Idempotency-Key` with your idempotency key will be requested to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 [[[
 ```php
@@ -1299,6 +1559,31 @@ payment_data = {
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := paymentmethod.NewClient(cfg)
+
+
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+for _, v := range resources {
+   fmt.Println(v)
+}
+```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
@@ -1313,7 +1598,6 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 
 ```
 ]]]
-
 
 The response will show the **pending status** until the buyer completes the payment. Also, in the response to the request, the `external_resource_url` parameter will return a URL that contains instructions for the buyer to make the payment. You can redirect to this same link to complete the payment flow.
 
@@ -1397,7 +1681,7 @@ The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-The crediting period is between 1 and 2 working days according to the payment method. That's why we recommend that you set the expiration date to a minimum of 3 days to ensure payment is made.
+The crediting period is up to 2 business hours according to the payment method. That's why we recommend that you set the expiration date to a minimum of 3 days to ensure payment is made.
 
 > WARNING
 >
@@ -1420,9 +1704,9 @@ To configure payments with **Abitab** and/or **Redpagos**, send a **POST** with 
 
 > WARNING
 >
-> Important
+> Attention
 >
-> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token.
+> For this step, when making the request via API or SDKs, it is necessary to send your Private Key - Access token. For more information, go to [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials). In addition, sending the header `X-Idempotency-Key` with your idempotency key will be requested to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example.
 
 [[[
 ```php
@@ -1535,6 +1819,31 @@ payment_data = {
 
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
+```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := paymentmethod.NewClient(cfg)
+
+
+resources, err := client.List(context.Background())
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+for _, v := range resources {
+   fmt.Println(v)
+}
 ```
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \

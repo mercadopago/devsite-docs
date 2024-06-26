@@ -2,7 +2,7 @@
 
 O esquema de abertura permite definir como o checkout será aberto para o usuário. Por padrão, o Checkout Pro é aberto de forma **redirect**, ou seja, com redirecionamento do usuário dentro da mesma página. 
 
-Contudo, é possível personalizar a abertura para que a abertura seja em uma página externa, por exemplo, ou definir o modelo **modal**, no qual o Checkout Pro é aberto em uma janela dentro do próprio site, sem redirecionamento. 
+Contudo, é possível personalizar a abertura para que a abertura seja em uma página externa. 
 
 > NOTE
 >
@@ -12,7 +12,7 @@ Contudo, é possível personalizar a abertura para que a abertura seja em uma p�
 
 ## Esquema de redirecionamento para outra página
 
-A alteração no comportamento do redirecionamento é feita pela propriedade `redirectMode`, a qual pode assumir os valores `self` ou `blank`.
+Este esquema fará com que o checkout seja aberto em uma tela ou aba separada. A alteração no comportamento do redirecionamento é feita pela propriedade `redirectMode`, a qual pode assumir os valores `self` ou `blank`.
 
 | Valor | Descrição |
 | --- |--- | 

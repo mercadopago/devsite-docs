@@ -74,7 +74,7 @@ Código de status: 400
 
 ### Resposta com falha: Not found
 
-Esta é uma resposta comum que é retornada quando nenhum pagamento antecipado criado com o id fornecido nos parâmetros da solicitação é encontrado.
+Esta é uma resposta comum que é retornada quando nenhum pagamento antecipado criado com o ID fornecido nos parâmetros da solicitação é encontrado.
 
 [[[
 ```Json
@@ -121,4 +121,3 @@ Código de status: 500
 
 ```
 ]]]
-

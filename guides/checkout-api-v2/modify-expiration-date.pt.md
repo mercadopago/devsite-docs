@@ -4,8 +4,6 @@ Data de vencimento é o período máximo definido para realização de um pagame
 
 Neste campo, a data configurada deve ser entre 1 dia e 30 dias a partir da data de emissão do pagamento.
 
-
-
 1. Envie um POST com o parâmetro "date_of_expiration" com a data e horário de validade do item ao endpoint [/checkout/preferences](https://www.mercadopago.com.br/developers/pt/reference/preferences/_checkout_preferences/post). O valor deve seguir o formato ISO 8601 (yyyy-MM-dd'T'HH:mm:ssz)
 2. Execute a requisição.
 
@@ -64,9 +62,8 @@ A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-
 > WARNING
 >
 > Importante
 >
-> O prazo de aprovação do boleto é de até 48h úteis. Por isso, recomenda-se configurar a data de expiração com no mínimo 3 dias para garantir que o pagamento seja abonado.
+> O prazo de aprovação do boleto é de até 2h úteis. Por isso, recomenda-se configurar a data de expiração com no mínimo 3 dias para garantir que o pagamento seja abonado.

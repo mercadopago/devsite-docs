@@ -43,9 +43,9 @@ Status code: 200
 ```
 ]]]
 
-## Failed due to Advanced payment not found
+## Failed due to payment not found
 
-This is a failure that occurs when no Advanced Payment created with the ID provided in the request parameters is found.
+This is a failure that occurs when no payment created with the ID provided in the request parameters is found.
 
 [[[
 ```Json
@@ -55,7 +55,7 @@ Status code: 404
 {
    "status": "404",
    "error":  "Not found",
-   "message": "Advanced payment not found."
+   "message": "Payment not found."
 }
 
 ```

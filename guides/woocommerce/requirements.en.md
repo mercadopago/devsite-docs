@@ -2,6 +2,12 @@
 
 To use the Mercado Pago integration with WooCommerce on a WordPress site, you must comply with the requirements below.
 
+> NOTE
+>
+> Note
+> 
+> Visit our [Getting Started page](/developers/en/docs/getting-started) to find the necessary information to begin integrating Mercado Pago solutions.
+
 | Requirements | Description | Specifications |
 |---|---|---|
 | Additional settings | Recommended tweaks for better performance and proper functioning of PrestaShop and Mercado Pago module. | safe_mode off * memory_limit greater than 256MB (512MB recommended) |
@@ -12,7 +18,7 @@ To use the Mercado Pago integration with WooCommerce on a WordPress site, you mu
 | Environment | Hosting Service | AMP (Linux, Apache, MySQL, and PHP) or LNMP stack. |
 | Extension dependency | Extensions give PHP new abilities, complementing it with more functions. | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (for Webservices API). |
 | Mercado Pago seller account | To make sales, you need a seller account on Mercado Pago. If you don't have one, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create it.| Seller account on Mercado Pago |
-| Mercado Pago plugin | Log in to your [Wordpress](https://wordpress.com/) account and in your account Dashboard, click **Plugins > Add New**. Use the search bar on the right to search for "Mercado Pago" and, after locating the **Mercado Pago Payments for WooCommerce** plugin, click on **Install now**. After the installation is complete, click the **Enable** button.| If you have problems installing the module and need to contact our support, it is possible that you will be asked to perform the [installation manually](/developers/en/docs/woocommerce/how-tos/install-module-manually). Always keep the plugin up to date with the latest version to ensure data security and integration operation. |
+| Mercado Pago plugin | Log in to your [Wordpress](https://wordpress.com/) account and in your account Dashboard, click **Plugins > Add New**. Use the search bar on the right to search for "Mercado Pago" and, after locating the **Mercado Pago Payments for WooCommerce** plugin, click on **Install now**. After the installation is complete, click the **Enable** button.| If you have problems installing the module and need to contact our support, it is possible that you will be asked to perform the [installation manually](/developers/en/docs/woocommerce/installation/manual). Always keep the plugin up to date with the latest version to ensure data security and integration operation. |
 | Operating system | System responsible for managing computer hardware. | Linux x86, Windows x86-64 |
 | PHP version | PHP is a widely used programming language for web application development. For more information, [click here](https://www.php.net/). | PHP 7.x |
 | Security copy **(recommended)** | Copy of all your store information in order to guarantee an unaltered version if necessary. | We advise you to back up your online store before making any changes. When copying is complete, delete all files related to the previous version of the plugin. |

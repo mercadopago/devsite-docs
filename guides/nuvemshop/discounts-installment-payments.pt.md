@@ -92,8 +92,4 @@ Na sua conta do Mercado Pago, você pode consultar e configurar o número de mes
 4. Escolha quantos meses deseja oferecer, marcando a opção correspondente, e clique em avançar.
 5. Defina os valores mínimos para oferecer parcelamento sem acréscimos e clique em **Salvar**.
 
-<center>
-
 ![Conta](/images/nuvemshop/contaptac.gif)
-
-</center>

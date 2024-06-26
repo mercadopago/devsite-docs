@@ -150,7 +150,7 @@ Ao finalizar a inclusão do formulário de pagamento, é preciso enviar o e-mail
 >
 > Importante
 >
-> Ao executar as APIs citadas nesta documentação, você poderá encontrar o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições sem que haja situações indesejadas como, por exemplo, pagamentos em duplicidade.
+> Ao executar as APIs citadas nesta documentação, você deverá enviar o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições sem que haja situações indesejadas como, por exemplo, pagamentos em duplicidade.
 
 Para configurar pagamento com Pix, envie um POST ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça a requisição utilizando nossos SDKs.
 
@@ -158,6 +158,7 @@ Para configurar pagamento com Pix, envie um POST ao endpoint [/v1/payments](/dev
 ```php
 <?php
   use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\Client\Common\RequestOptions;
   use MercadoPago\MercadoPagoConfig;
 
   MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
@@ -166,22 +167,11 @@ Para configurar pagamento com Pix, envie um POST ao endpoint [/v1/payments](/dev
   $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-
   $payment = $client->create([
-    "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
-    "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
-    "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
+ "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+    "payment_method_id" => $_POST['<PAYMENT_METHOD_ID>'],
     "payer" => [
-      "email" => $_POST['email'],
-      "first_name" => $_POST['payerFirstName'],
-      "last_name" => $_POST['payerLastName'],
-      "identification" => [
-        "type" => $_POST['identificationType'],
-        "number" => $_POST['number']
-      ]
+      "email" => $_POST['<EMAIL>']
     ]
   ], $request_options);
   echo implode($payment);
@@ -191,15 +181,13 @@ Para configurar pagamento com Pix, envie um POST ao endpoint [/v1/payments](/dev
 import { Payment, MercadoPagoConfig } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+const payment = new Payment(client);
 
 payment.create({
     body: { 
         transaction_amount: req.transaction_amount,
-        token: req.token,
         description: req.description,
-        installments: req.installments,
         payment_method_id: req.paymentMethodId,
-        issuer_id: req.issuer,
             payer: {
             email: req.email,
             identification: {
@@ -336,6 +324,42 @@ payment_data = {
 payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 ```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := payment.NewClient(cfg)
+
+
+request := payment.Request{
+   TransactionAmount: 100,
+   Description: "My product",
+   PaymentMethodID:   "pix",
+   Payer: &payment.PayerRequest{
+      Email: "{{PAYER_EMAIL}}",
+      Identification: &payment.IdentificationRequest{
+         Type: "CPF",
+         Number: "19119119100",
+      },
+   },
+}
+
+
+resource, err := client.Create(context.Background(), request)
+if err != nil {
+   fmt.Println(err)
+}
+
+
+fmt.Println(resource)
+```
 ```curl
 curl -X POST \
     -H 'accept: application/json' \
@@ -437,7 +461,7 @@ Siga as etapas abaixo para renderizar o QR code e disponibilizar o recurso copia
 
 [[[
 ```html
-<img src={`data:image/jpeg;base64,${qr_code_base64}}`/>
+<img src={`data:image/jpeg;base64,${qr_code_base64}`}/>
 
 ```
 ]]]

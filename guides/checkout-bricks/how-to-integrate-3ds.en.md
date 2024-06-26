@@ -96,11 +96,7 @@ renderStatusScreenBrick(bricksBuilder);
 
 The Status Screen Brick will display a transition indicating redirection and then the _Challenge_ of the bank in question will be displayed.
 
-<center>
-
 ![how-to-integrate-3ds](checkout-bricks/how-to-integrate-3ds-en.gif)
-
-</center>
 
 The user must respond to the _Challenge_ for the transition to be properly validated. It is worth noting that the _Challenge_ experience is the sole responsibility of the bank in charge.
 
@@ -112,11 +108,7 @@ The user must respond to the _Challenge_ for the transition to be properly valid
 
 3. After solving the _Challenge_, the final result of the payment will be displayed according to the answer issued by the bank at the end of the _Challenge_.
 
-<center>
-
 ![status-screen-Brick](checkout-bricks/status-screen-brick-en.jpg)
-
-</center>
 
 ## Integration test
 
@@ -135,10 +127,6 @@ To enable the validation of payments with 3DS, we provide a **sandbox testing en
 
 In both flows (success and failure), the _Challenge_, which is a screen similar to the one shown below, must be displayed by the [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/introduction).
 
-<center>
-
 ![bricks_sandbox](checkout-bricks/sandbox-v1-en.png)
-
-</center>
 
 The provided verification code is for illustrative purposes only. To complete the test flow, simply click the **Confirm** button, and the Status Screen will display the final state of the payment.

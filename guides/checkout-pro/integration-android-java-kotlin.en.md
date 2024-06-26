@@ -1,12 +1,12 @@
-# Integrate Checkout Pro for Android with Java or Kotlin
+# Integrate with Java or Kotlin
+
+In mobile application development, the need to display web content within the application often arises. For this, there are several options, among which the use of Custom Tabs (for Android) and Safari View Controller (for iOS) stand out. These technologies allow web pages to be opened in a native browser incorporated into the application, providing a smoother and more consistent browsing experience for users.
 
 > WARNING
 >
 > Important
 >
-> Before you start integrating Checkout Pro for Mobile, you'll need to have a preference created in your backend. If you haven't already done so, go to [Create preference](/developers/en/docs/checkout-pro/integrate-preferences).
-
-In mobile application development, the need to display web content within the application often arises. For this, there are several options, among which the use of Custom Tabs (for Android) and Safari View Controller (for iOS) stand out. These technologies allow web pages to be opened in a native browser incorporated into the application, providing a smoother and more consistent browsing experience for users.
+> Before you start integrating Checkout Pro for Mobile, you'll need to have a preference created in your backend. If you haven't already done so, go to [Create preference.](/developers/en/docs/checkout-pro/integrate-preferences)
 
 In this step we will install and configure the necessary dependencies to implement **Custom Tabs** in your project developed in Java or Kotlin.
 

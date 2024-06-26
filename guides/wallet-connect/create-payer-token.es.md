@@ -1,10 +1,10 @@
-# Crear payer token
+# Generar token de pago
 
-Creado el _agreement_ y otorgada la aprobación del comprador, se debe crear el _payer token_. El _payer token_ se encarga de almacenar los datos del comprador y garantizar la seguridad de la transacción, además es un atributo obligatorio para crear transacciones durante todo el periodo de validez del `agreement` creado anteriormente.
+Creado la vinculación y otorgada la aprobación del comprador, se debe crear el _token_ de pago. El _token_ de pago se encarga de almacenar los datos del comprador y garantizar la seguridad de la transacción, además es un atributo obligatorio para crear transacciones durante todo el periodo de validez de la vinculación creada anteriormente.
 
-Consulte el siguiente diagrama que ilustra cómo funciona el flujo de creación de un _payer token_.
+Consulte el siguiente diagrama que ilustra cómo funciona el flujo de creación de un _token_ de pago.
 
-![Crear payer token](/images/wallet-connect/create-payer-token-v2-es.png)
+![Generar token](/images/wallet-connect/create-payer-token-v2-es.png)
 
 Para crear un _payer token_, envíe un POST con todos los atributos necesarios al endpoint [/v2/wallet_connect/agreements/{agreementId}/payer_token](/developers/es/reference/wallet_connect/_wallet_connect_agreements_agreement_id_payer_token/post) y ejecute la solicitud o, si lo prefiere, use el `curl` disponible a continuación.
 
@@ -32,5 +32,5 @@ curl -X POST \
 ```
 ]]]
 
-Con la creación del payer token, la integración con Wallet Connect finalizará con éxito. Vaya a la sección [Advanced Payments](/developers/es/docs/wallet-connect/advanced-payments) para realizar el flujo de pago.
+Con la creación del _token_ de pago, la integración con Wallet Connect finalizará con éxito. Vaya a la sección [Pagos](/developers/es/docs/wallet-connect/advanced-payments) para realizar el flujo de pago.
 

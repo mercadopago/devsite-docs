@@ -1,9 +1,8 @@
 ## Get payment information
 
-This endpoint is used to obtain the data of an Advanced Payment made from your id. See the diagram below that illustrates the payment capture process through the Advanced Payments API.
+This endpoint is used to obtain the data of a payment made from your id. See the diagram below that illustrates the payment capture process via the Wallet Connect API Payments endpoint.
 
 ![get-payment-info](/images/wallet-connect/get-payment-information.en.png)
-
 
 To obtain information on a specific payment, send a **GET** to the endpoint [/v1/advanced_payments/{advanced_payment_id}](/developers/en/reference/wallet_connect/_advanced_payments_advanced_payment_id/get) and execute the request or, if you prefer, use the `curl` below.
 

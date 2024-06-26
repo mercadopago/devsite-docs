@@ -115,16 +115,6 @@ future_product_avaible:
  - card_linkProof: /developers/pt/live-demo/wallet-brick
  - card_linkProofDescription: Acessar demonstração
  - card_avaible: true
- - card_icon: Loading
- - card_title: Status Screen Brick
- - card_description: Informe os clientes dos resultados do processo de compra após efetuar o pagamento. Teste a demonstração do Brick antes de integrá-lo.
- - card_button: /developers/pt/docs/checkout-bricks/status-screen-brick/introduction
- - card_buttonDescription: Saiba mais
- - card_pillText: DISPONÍVEL
- - card_linkAvailable: true
- - card_linkProof: /developers/pt/live-demo/status-screen-brick
- - card_linkProofDescription: Acessar demonstração
- - card_avaible: true
  - card_icon: Card
  - card_title: Card Payment Brick
  - card_description: Ofereça pagamentos com cartão de crédito e débito. Teste a demonstração do Brick antes de integrá-lo.
@@ -135,15 +125,25 @@ future_product_avaible:
  - card_linkProof: /developers/pt/live-demo/card-payment-brick
  - card_linkProofDescription: Acessar demonstração
  - card_avaible: true
+ - card_icon: Loading
+ - card_title: Status Screen Brick
+ - card_description: Informe os clientes dos resultados do processo de compra após efetuar o pagamento. Teste a demonstração do Brick antes de integrá-lo.
+ - card_button: /developers/pt/docs/checkout-bricks/status-screen-brick/introduction
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: true
+ - card_linkProof: /developers/pt/live-demo/status-screen-brick
+ - card_linkProofDescription: Acessar demonstração
+ - card_avaible: true
  - card_icon: User
  - card_title: Brand Brick
  - card_description: Comunique diferentes mensagens relacionadas às formas de pagamento disponíveis via Mercado Pago em sua loja.
  - card_button: /developers/pt/docs/checkout-bricks/brand-brick/introduction
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
- - card_linkAvailable: false
- - card_linkProof:
- - card_linkProofDescription:
+ - card_linkAvailable: true
+ - card_linkProof: /developers/pt/live-demo/brand-brick
+ - card_linkProofDescription: Acessar demonstração
  - card_avaible: true
  - card_icon: Check
  - card_title: Review & Confirm

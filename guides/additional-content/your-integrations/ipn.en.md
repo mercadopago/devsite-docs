@@ -12,7 +12,7 @@ Below we will explain how to indicate the URLs that will be notified and how to 
 
 ![ipn](/images/notifications/ipn__pt.png)
 
-1. If you haven't done so already, create an application in the [Developer Dashboard](developers/panel/app).
+1. If you haven't done so already, create an application in the [developer Dashboard](/developers/panel/app).
 2. Once the application is created, navigate to the IPN section on the **Application Details** page.
 3. Next, configure the **production URL** where the notifications will be received.
 4. If you need to identify multiple accounts, at the end of the indicated URL you can specify the parameter `?customer=(sellername) endpoint` to identify the sellers.

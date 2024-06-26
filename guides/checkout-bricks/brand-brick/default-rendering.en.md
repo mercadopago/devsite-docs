@@ -41,8 +41,4 @@ import { Brand } from '@mercadopago/sdk-react';
 
 The result of rendering the Brick should look like the image below.
 
-<center>
-
-![brand-brick-layout](checkout-bricks/brand-brick-layout.gif)
-
-</center>
+![brand-brick-en](checkout-bricks/brand-brick-en.gif)

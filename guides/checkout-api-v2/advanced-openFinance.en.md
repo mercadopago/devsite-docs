@@ -2,13 +2,13 @@
 
 Payments can be made via Open Finance through Mercado Pago using the account balance of financial institutions participating in Open Finance, which is approved by the Central Bank of Brazil.
 
-With Open Finance, **it will be possible to offer Pix payments in the Checkout API**, using balances that are in financial institutions besides the one initiating the payment.
+With Open Finance, **it will be possible to offer Pix payments in ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------**, using balances that are in financial institutions besides the one initiating the payment.
 
 > NOTE
 > 
 > Important
 > 
-> You must have a PIX key registered in your Mercado Pago account. If you haven't already, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps.
+> You must have a Pix Key registered in your Mercado Pago account. If you haven't already, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and check the necessary steps.
 
 Use our APIs or SDKs to build your own payment experience with Open Finance on your website or mobile app. You can control the entire flow according to your checkout experience.
 

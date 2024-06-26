@@ -10,7 +10,7 @@ When finalizing the inclusion of the payment form, it is necessary to send the b
 > 
 > Important
 >
-> When executing the APIs mentioned in this documentation, you may come across the attribute `X-Idempotency-Key`. Filling it out is important to ensure the execution and reexecution of requests without undesirable situations, such as duplicate payments, for example. 
+> Also, it is mandatory to send the attribute `X-Idempotency-Key` to ensure the execution and reexecution of requests without the risk of accidentally performing the same action more than once. To do so, update our [SDKs Library](/developers/en/docs/sdks-library/landing), or generate a UUID V4 and send it in the _header_ of your requests.
 
 To configure payment with Pix, send a **POST** to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, make the request using our SDKs.
 
@@ -18,20 +18,20 @@ To configure payment with Pix, send a **POST** to the endpoint [/v1/payments](/d
 ```php
 <?php
   use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\Client\Common\RequestOptions;
   use MercadoPago\MercadoPagoConfig;
 
-  MercadoPagoConfig::setAccessToken("<YOUR_ACCESS_TOKEN>");
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
   $client = new PaymentClient();
   $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
   $payment = $client->create([
-    "transaction_amount" => 100,
-    "description" => "<DESCRIPTION>",
-    "payment_method_id" => "pix",
+ "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+    "payment_method_id" => $_POST['<PAYMENT_METHOD_ID>'],
     "payer" => [
-      "email" => "<EMAIL>",
+      "email" => $_POST['<EMAIL>']
     ]
   ], $request_options);
   echo implode($payment);
@@ -194,7 +194,7 @@ The response will show the payment **pending status** and all the information yo
 
 After the payment creation in the backend using the Mercado Pago SDK, use the **id** received in the response to instantiate the Status Screen Brick and show it to the buyer.
 
-In addition to displaying the payment status, Status Screen Brick will also display the Pix code to copy and paste and the QR Code for the buyer to scan and pay. Learn how simple it is to integrate [click here](/developers/en/docs/checkout-bricks/status-screen-brick/configure-integration).
+In addition to displaying the payment status, Status Screen Brick will also display the Pix code to copy and paste and the QR Code for the buyer to scan and pay. Learn how simple it is to integrate [click here](/developers/en/docs/checkout-bricks/status-screen-brick/default-rendering).
 
 > WARNING
 >
@@ -202,8 +202,8 @@ In addition to displaying the payment status, Status Screen Brick will also disp
 >
 > If you used production credentials from a test user to generate the Pix payment, an error will occur when clicking the button that takes you to the QR Code page. To view correctly, just remove `/sandbox` from the URL of the opened page.
 
-<center>
-
 ![payment-submission-pix-status](checkout-bricks/payment-submission-pix-status-en.jpg)
 
-</center>
+## Test your integration
+
+With the integration completed, you will be able to test payment reception. For more information, access the section [Make test purchase](/developers/en/docs/checkout-bricks/integration-test/test-payment-flow).

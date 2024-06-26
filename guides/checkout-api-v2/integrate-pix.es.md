@@ -1,6 +1,6 @@
 # Pix
 
-Pix es un medio de pago electrónico instantáneo ofrecido por el Banco Central de Brasil a personas físicas y jurídicas. A través de Checkout API, es posible ofrecer esta opción de pago a través de un código QR o un código de pago.  
+Pix es un medio de pago electrónico instantáneo ofrecido por el Banco Central de Brasil a personas físicas y jurídicas. A través de Checkout Transparente, es posible ofrecer esta opción de pago a través de un código QR o un código de pago.  
 
 > NOTE
 >
@@ -153,6 +153,7 @@ Para configurar los pagos con Pix, envía un **POST** al endpoint [/v1/payments]
 ```php
 <?php
   use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\Client\Common\RequestOptions;
   use MercadoPago\MercadoPagoConfig;
 
   MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
@@ -161,22 +162,11 @@ Para configurar los pagos con Pix, envía un **POST** al endpoint [/v1/payments]
   $request_options = new RequestOptions();
   $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
 
-
   $payment = $client->create([
-    "transaction_amount" => (float) $_POST['transactionAmount'],
-    "token" => $_POST['token'],
-    "description" => $_POST['description'],
-    "installments" => $_POST['installments'],
-    "payment_method_id" => $_POST['paymentMethodId'],
-    "issuer_id" => $_POST['issuer'],
+ "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
+    "payment_method_id" => $_POST['<PAYMENT_METHOD_ID>'],
     "payer" => [
-      "email" => $_POST['email'],
-      "first_name" => $_POST['payerFirstName'],
-      "last_name" => $_POST['payerLastName'],
-      "identification" => [
-        "type" => $_POST['identificationType'],
-        "number" => $_POST['number']
-      ]
+      "email" => $_POST['<EMAIL>']
     ]
   ], $request_options);
   echo implode($payment);
@@ -186,15 +176,13 @@ Para configurar los pagos con Pix, envía un **POST** al endpoint [/v1/payments]
 import { Payment, MercadoPagoConfig } from 'mercadopago';
 
 const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+const payment = new Payment(client);
 
 payment.create({
     body: { 
         transaction_amount: req.transaction_amount,
-        token: req.token,
         description: req.description,
-        installments: req.installments,
         payment_method_id: req.paymentMethodId,
-        issuer_id: req.issuer,
             payer: {
             email: req.email,
             identification: {
@@ -221,7 +209,7 @@ PaymentClient client = new PaymentClient();
 PaymentCreateRequest paymentCreateRequest =
    PaymentCreateRequest.builder()
        .transactionAmount(new BigDecimal("100"))
-       .description("Título del producto")
+       .description("Título do produto")
        .paymentMethodId("pix")
        .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
        .payer(
@@ -247,7 +235,7 @@ custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_
 
 payment_request = {
   transaction_amount: 100,
-  description: 'Título del producto',
+  description: 'Título do produto',
   payment_method_id: 'pix',
   payer: {
     email: 'PAYER_EMAIL',
@@ -277,7 +265,7 @@ requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
 var request = new PaymentCreateRequest
 {
     TransactionAmount = 105,
-    Description = "Título del producto",
+    Description = "Título do produto",
     PaymentMethodId = "pix",
     Payer = new PaymentPayerRequest
     {
@@ -307,7 +295,7 @@ request_options.custom_headers = {
 
 payment_data = {
     "transaction_amount": 100,
-    "description": "Título del producto",
+    "description": "Título do produto",
     "payment_method_id": "pix",
     "payer": {
         "email": "PAYER_EMAIL",
@@ -331,6 +319,42 @@ payment_data = {
 payment_response = sdk.payment().create(payment_data, request_options)
 payment = payment_response["response"]
 ```
+```go
+accessToken := "{{ACCESS_TOKEN}}"
+
+
+cfg, err := config.New(accessToken)
+if err != nil {
+   fmt.Println(err)
+   return
+}
+
+
+client := payment.NewClient(cfg)
+
+
+request := payment.Request{
+   TransactionAmount: 100,
+   Description: "My product",
+   PaymentMethodID:   "pix",
+   Payer: &payment.PayerRequest{
+      Email: "{{PAYER_EMAIL}}",
+      Identification: &payment.IdentificationRequest{
+         Type: "CPF",
+         Number: "19119119100",
+      },
+   },
+}
+
+
+resource, err := client.Create(context.Background(), request)
+if err != nil {
+   fmt.Println(err)
+}
+
+
+fmt.Println(resource)
+```
 ```curl
 curl -X POST \
     -H 'accept: application/json' \
@@ -340,7 +364,7 @@ curl -X POST \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
-      "description": "Título del producto",
+      "description": "Título do produto",
       "payment_method_id": "pix",
       "payer": {
         "email": "PAYER_EMAIL",
@@ -433,7 +457,7 @@ Sigue las etapas que se indican a continuación para renderizar el código QR y 
 
 [[[
 ```html
-<img src={`data:image/jpeg;base64,${qr_code_base64}}`/>
+<img src={`data:image/jpeg;base64,${qr_code_base64}`}/>
 
 ```
 ]]]

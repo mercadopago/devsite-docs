@@ -4,7 +4,6 @@ Se você desejar, pode receber notificações de Webhooks. Elas são enviadas da
 
 Para integrá-las, siga as instruções na [documentação sobre notificações de Webhook](/developers/pt/docs/mp-point/additional-content/your-integrations/notifications/webhooks). Você precisará ativar os eventos de **Integrações Point** para receber essas atualizações.
 
-
 > WARNING
 >
 > Importante

@@ -1,5 +1,7 @@
 # Renderização padrão
 
+Veja abaixo as informações necessárias para você configurar e renderizar o Status Screen Brick.
+
 > WARNING
 >
 > Importante
@@ -91,8 +93,4 @@ import { StatusScreen } from '@mercadopago/sdk-react';
 
 O resultado de renderizar o Brick deve ser como na imagem abaixo.
 
-<center>
-
 ![status-screen-Brick](checkout-bricks/status-screen-brick-pt.jpg)
-
-</center>

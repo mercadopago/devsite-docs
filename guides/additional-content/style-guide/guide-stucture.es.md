@@ -10,7 +10,7 @@ Introducción que lleva un patrón específico. Sirve para presentar el producto
 
 Breve descripción de la herramienta o plugin a documentar. Es una buena práctica enumerar y vincular los pasos de integración aquí, indicando cuándo uno o más son opcionales pero recomendados.
 
-## Requisitos previos: 
+## Requisitos previos
 
 Lista de cosas que deben estar listas para comenzar la integración. Por lo general, se presentan como una tabla que contiene 3 columnas (requisito, descripción, especificaciones).
 

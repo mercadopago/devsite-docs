@@ -75,7 +75,7 @@ Status code: 400
 
 ### Failed response: Not found
 
-This is a common response that is returned when no prepayment created with the id provided in the request parameters is found.
+This is a common response that is returned when no prepayment created with the ID provided in the request parameters is found.
 
 [[[
 ```Json

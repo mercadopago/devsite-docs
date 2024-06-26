@@ -26,7 +26,7 @@ Para integrar o Checkout API, siga os passos abaixo.
 
 ------------
 ----[mlb]---- 
-* **Pix**. Indique também um prazo de vencimento para pagamento com código Pix. Além disso, a opção de pagamento com Pix só será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [assista o vídeo](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
+* **Pix**. Indique também um prazo de vencimento para pagamento com código Pix. Além disso, a opção de pagamento com Pix só será exibida se houver uma Chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [assista o vídeo](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
 * **Cartão de crédito**. Indique também o número máximo de parcelas permitidas.
 * **Boleto**. Indique também o número de dias para vencimento do boleto (incluindo sábado e domingo).
  
@@ -39,18 +39,14 @@ Para integrar o Checkout API, siga os passos abaixo.
 ------------
 6. Por fim, clique em **Salvar alterações**.
 ----[mlm, mpe, mco, mlu, mlc]---- 
-<center>
 
 ![Payments Checkout API - Tiendanube](/images/nuvemshop/cho-api-mlm-es.gif)
 
-</center>
 ------------
 ----[mla]---- 
-</center>
 
 ![Payments Checkout API - Tiendanube](/images/nuvemshop/cho-api-mla-es.png.png)
 
-</center>
 ------------
 ----[mlb]----
 Pronto! O Checkout Transparente está pronto para receber os pagamentos da sua loja.

@@ -10,11 +10,11 @@ In this section, you will find the possible responses when validating coupons, w
 
 ## Success
 
-1. Valid Coupon with Associated Discount
+1. Valid coupon with associated discount
 
-* Status Code: 200 (Success)
-* Description: Response indicating success in the validation of the coupon, which is linked to an active discount. Includes legal terms, discount value, type, maximum cap, and the minimum and maximum amounts applicable to the payment.
-* Response Body:
+* Status code: 200 (Success)
+* Description: response indicating success in the validation of the coupon, which is linked to an active discount. Includes legal terms, discount value, type, maximum cap, and the minimum and maximum amounts applicable to the payment.
+* Response body:
 
 ```Json
 {
@@ -31,11 +31,11 @@ In this section, you will find the possible responses when validating coupons, w
 }
 ```
 
-2. Coupon with Discount Ready for Use
+2. Coupon with discount ready for use
 
-* Status Code: 200 (Success)
-* Description: Response confirming that the coupon is ready for use, awaiting application in a payment. Details of the discount and legal terms are included.
-* Response Body:
+* Status code: 200 (Success)
+* Description: response confirming that the coupon is ready for use, awaiting application in a payment. Details of the discount and legal terms are included.
+* Response body:
 
 ```Json
 {
@@ -52,11 +52,11 @@ In this section, you will find the possible responses when validating coupons, w
 }
 ```
 
-3. Coupon Without Associated Discount
+3. Coupon without associated discount
 
-* Status Code: 200
-* Description: Response indicating that the submitted coupon is invalid and does not have a discount associated with it.
-* Response Body: 
+* Status code: 200
+* Description: response indicating that the submitted coupon is invalid and does not have a discount associated with it.
+* Response body: 
 
 ```Json
 {
@@ -66,11 +66,11 @@ In this section, you will find the possible responses when validating coupons, w
 
 ## Error
 
-1. Malformed Request
+1. Malformed request
 
-* Status Code: 400 (Bad Request)
-* Description: Error response indicating that the request was poorly formulated. Includes a detailed error message with the corresponding status code.
-* Response Body: 
+* Status code: 400 (Bad Request)
+* Description: error response indicating that the request was poorly formulated. Includes a detailed error message with the corresponding status code.
+* Response body: 
 
 ```Json
 {
@@ -80,11 +80,11 @@ In this section, you will find the possible responses when validating coupons, w
 }
 ```
 
-2. Invalid Coupon_id
+2. Invalid coupon_id
 
-* Status Code: 400 (Bad Request)
-* Description: Error response indicating that the `coupon_id` sent in the request is invalid.
-* Response Body:
+* Status code: 400 (Bad Request)
+* Description: error response indicating that the `coupon_id` sent in the request is invalid.
+* Response body:
 
 ```json
 {
@@ -94,11 +94,11 @@ In this section, you will find the possible responses when validating coupons, w
 }
 ```
 
-3. Invalid Payer_token
+3. Invalid payer_token
 
-* Status Code: 400 (Bad Request)
-* Description: Error response indicating that the `payer_token` sent in the request is invalid.
-* Response Body:
+* Status code: 400 (Bad Request)
+* Description: error response indicating that the `payer_token` sent in the request is invalid.
+* Response body:
 
 ```json
 {
@@ -107,4 +107,3 @@ In this section, you will find the possible responses when validating coupons, w
   "status": 400
 }
 ```
-

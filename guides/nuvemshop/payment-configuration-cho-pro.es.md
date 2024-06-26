@@ -1,8 +1,8 @@
 # Checkout Pro
  
-Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing) (Checkout Mercado Pago), puede haber un **aumento en la tasa de aprobación de las ventas en la tienda en línea**. Esto sucede porque los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago. Al final de la transacción, estos compradores son redirigidos al entorno de la tienda.
+Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing) (**Checkout Mercado Pago**), puede haber un **aumento en la tasa de aprobación de las ventas en la tienda en línea**. Esto sucede porque los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago. Al final de la transacción, estos compradores son redirigidos al entorno de la tienda.
  
-Para integrar Checkout Pro (**Checkout Mercado Pago**), sigue los pasos a continuación.
+Para integrar Checkout Pro, sigue los pasos a continuación.
  
 1. En el Panel Administrativo de tu Tiendanube, accede a **Mis aplicaciones > Ver todas las aplicaciones**. 
 2. Localiza el plugin Mercado Pago en la lista de aplicaciones y haz clic en **Configurar aplicación**.
@@ -32,7 +32,7 @@ Para integrar Checkout Pro (**Checkout Mercado Pago**), sigue los pasos a contin
  * **Tarjeta de débito**. Selecciona las tarjetas que desea habilitar en tu tienda. 
  * **Otros medios de pago**: selecciona otros medios de pago que deseas habilitar en su tienda, como Pix, boleto bancário, o Financiación sin tarjeta (si, además, quieres mostrar esta opción en el checkout de tu tienda, consulte la [documentación](/developers/es/docs/nuvemshop/payments-configuration/mercado-credito)), entre otros. 
  
-La opción de pago Pix solo se mostrará si existe una clave Pix registrada en Mercado Pago. Si aún no lo has creado, consulta el [video](https://www.youtube.com/watch?v=60tApKYVnkA) y ve el paso a paso.
+La opción de pago Pix solo se mostrará si existe una Clave Pix registrada en Mercado Pago. Si aún no lo has creado, consulta el [video](https://www.youtube.com/watch?v=60tApKYVnkA) y ve el paso a paso.
  
 Para habilitar boleto bancário, deberás también indicar en el campo inferior el **número de días de vencimiento del boleto**.
  
@@ -40,19 +40,15 @@ Para habilitar boleto bancário, deberás también indicar en el campo inferior 
 6. Finalmente, haz clic en **Guardar cambios**.
 
 ----[mlm, mpe, mco, mlu, mlc]---- 
-<center>
 
 ![Payments Checkout Pro - Tiendanube](/images/nuvemshop/cho-pro-mlm-es.gif)
 
-</center>
 ------------
 
 ----[mla]---- 
-<center>
 
 ![Payments Checkout Pro - Tiendanube](/images/nuvemshop/cho-pro-mla-es.png)
 
-</center>
 ------------
 
 ¡Listo! El Checkout Pro de Mercado Pago está preparado para recibir los pagos de tu tienda.

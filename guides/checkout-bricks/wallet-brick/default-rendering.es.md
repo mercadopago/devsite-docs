@@ -13,109 +13,45 @@ Crea la configuración de inicio de Brick
 [[[
 ```Javascript
 const renderWalletBrick = async (bricksBuilder) => {
- const settings = {
-   callbacks: {
-     onReady: () => {
-     /*
-      Callback llamado cuando Brick está listo.
-      Aquí puedes ocultar loadings de su sitio, por ejemplo.
-     */
-   },
-   onSubmit: (formData) => {
-     // callback llamado al hacer clic en Wallet Brick
-     // esto es posible porque el Brick es un botón
-     // en este momento del envío, debe crear la preferencia
-     const yourRequestBodyHere = {
-       items: [
-         {
-           id: '202809963',
-           title: 'Dummy title',
-           description: 'Dummy description',
-           quantity: 1,
-           unit_price: 10,
-         },
-       ],
-       purpose: 'wallet_purchase',
-     };
-     return new Promise((resolve, reject) => {
-       fetch('/create_preference', {
-         method: 'POST',
-         headers: {
-           'Content-Type': 'application/json',
-         },
-           body: JSON.stringify(formData),
-         })
-           .then((response) => response.json())
-           .then((response) => {
-           // resolver la promesa con el ID de la preferencia
-           resolve(response.preference_id);
-         })
-         .catch((error) => {
-           // manejar la respuesta de error al intentar crear preferencia
-           reject();
-         });
-     });
-   },
- },
+    await bricksBuilder.create('wallet', 'walletBrick_container', {
+        initialization: {
+            preferenceId: "<PREFERENCE_ID>",
+        },
+        customization: {
+            texts: {
+                valueProp: 'smart_option'
+            },
+            ...
+        },
+    });
 };
-window.walletBrickController = await bricksBuilder.create(
-   'wallet',
-   'walletBrick_container',
-   settings,
-  );
- 
-};
+
 renderWalletBrick(bricksBuilder);
 ```
 ```react-jsx
+const initialization = {
+  preferenceId: '<PREFERENCE_ID>',
+}
+
+const customization = {
+  texts: {
+   valueProp: 'smart_option',
+  },
+}
+
 const onSubmit = async (formData) => {
  // callback llamado al hacer clic en Wallet Brick
- // esto es posible porque el Brick es un botón
- // en este momento del envío, debe crear la preferencia
- const yourRequestBodyHere = {
-   items: [
-     {
-       id: '202809963',
-       title: 'Dummy title',
-       description: 'Dummy description',
-       quantity: 1,
-       unit_price: 10,
-     },
-   ],
-   purpose: 'wallet_purchase',
- };
- return new Promise((resolve, reject) => {
-   fetch('/create_preference', {
-     method: 'POST',
-     headers: {
-       'Content-Type': 'application/json',
-     },
-     body: JSON.stringify(yourRequestBodyHere),
-   })
-     .then((response) => response.json())
-     .then((response) => {
-       // resolver la promesa con el ID de la preferencia
-       resolve(response.preference_id);
-     })
-     .catch((error) => {
-       // manejar la respuesta de error al intentar crear preferencia
-       reject();
-     });
- });
+ // esto es posible porque Brick es un botón 
 };
-
 
 const onError = async (error) => {
  // callback llamado para todos los casos de error de Brick
  console.log(error);
 };
 
-
 const onReady = async () => {
- /*
-   Callback llamado cuando Brick está listo.
-   Aquí puedes ocultar loadings de su sitio, por ejemplo.
- */
+ // Callback llamado cuando Brick esté listo.
+ // Aquí puedes ocultar loadings en tu sitio, por ejemplo.  
 };
 ```
 ]]]
@@ -126,7 +62,7 @@ const onReady = async () => {
 >
 > Cada vez que el usuario sale de la pantalla donde se muestra algún Brick, es necesario destruir la instancia actual con el comando `window.walletBrickController.unmount()`. Al ingresar nuevamente se debe generar una nueva instancia.
 
-Este flujo de creación de preferencia en _onSubmit_ está diseñado para vendedores que tienen flujos de one clic, si lo desea, también puede enviar Preferencia en el inicio. Ver más información en la sección [Preferencia en el inicio](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preference-startup).
+Este flujo está pensado para tiendas que utilizan Wallet Brick al final del proceso de pago y ya tienen la preferencia creada al renderizar el Brick, enviándola en la inicialización. Si lo desea, puede utilizar el Brick creando la preferencia en el momento del envío (`onSubmit`). Consulte más información en la sección de [Preferencia en el envío](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preference-submit).
 
 ## Renderizar el Brick
 
@@ -147,6 +83,8 @@ import { Wallet } from '@mercadopago/sdk-react';
 
 
 <Wallet
+   initialization={initialization}
+   customization={customization}
    onSubmit={onSubmit}
    onReady={onReady}
    onError={onError}
@@ -156,11 +94,7 @@ import { Wallet } from '@mercadopago/sdk-react';
 
 El resultado de renderizar el Brick debe ser como se muestra en la imagen a continuación, presentando un texto y un aspecto predeterminado.
 
-<center>
-
 ![wallet-brick-render](checkout-bricks/wallet-brick-render-es.png)
-
-</center>
 
 > Si desea cambiar el texto y el aspecto predeterminado del Brick, consulte las secciones de [Cambiar textos](/developers/es/docs/checkout-bricks/wallet-brick/visual-customizations/change-texts) y [Cambiar de aspecto,](/developers/es/docs/checkout-bricks/wallet-brick/visual-customizations/change-appearance) respectivamente.
 
@@ -233,21 +167,16 @@ Los ejemplos de código a continuación establecen el **purpose de la preferenci
 [[[
 ```php
 <?php
-
-// Crear un objeto de preferencia
-$preference = new MercadoPago\Preference();
-
-// Crear un elemento en la preferencia
-$item = new MercadoPago\Item();
-$item->title = 'Meu produto';
-$item->quantity = 1;
-$item->unit_price = 75.56;
-$preference->items = array($item);
-
-// el $preference->purpose = 'wallet_purchase'; solo permite pagos registrados
-// para permitir pagos de guests, puede omitir esta propiedad
-$preference->purpose = 'wallet_purchase';
-$preference->save();
+$client = new PreferenceClient();
+$preference = $client->create([
+  "items"=> array(
+    array(
+      "title" => "Mi producto",
+      "quantity" => 1,
+      "unit_price" => 25
+    )
+  )
+]);
 ?>
 ```
 ```node
@@ -383,3 +312,7 @@ curl -X POST \
 > Para más detalles sobre cómo configurarlo, acceda a la sección [Preferencias.](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preferences)<br/></br>
 > <br/></br>
 > Considera que cuando un usuario elige realizar un pago a través de la Billetera de Mercado Pago, será redirigido a la página de Mercado Pago para completar el pago. Por lo tanto, es necesario configurar `back_urls` si desea volver a su sitio al finalizar el pago. Para obtener más información, visite la sección [Redirigir al comprador a su sitio web.](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web)
+
+## Prueba tu integración
+
+Con la integración completada, podrás probar la recepción de pagos. Para obtener más información, accede a la sección [Hacer compra de prueba](/developers/es/docs/checkout-bricks/integration-test/test-payment-flow).

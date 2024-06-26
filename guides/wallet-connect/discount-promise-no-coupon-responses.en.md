@@ -4,9 +4,9 @@ This section details the different responses that can be received when creating 
 
 ## Success
 
-1. Response with Discount Applied
+1. Response with discount applied
 
-* Status Code: 200 (Success)
+* Status code: 200 (Success)
 * Description: Returns the transaction value with the discount applied, detailed information about the discount, and a link to the discount's legal terms.
 * Response Body:
 
@@ -26,11 +26,11 @@ This section details the different responses that can be received when creating 
 }
 ```
 
-2. Response for User/Campaign Without Discounts
+2. Response for user/campaign without discounts
 
-* Status Code: 200 (Success)
-* Description: Indicates that the transaction was processed without a discount applied.
-* Response Body:
+* Status code: 200 (Success)
+* Description: indicates that the transaction was processed without a discount applied.
+* Response body:
 
 ```Json
 {
@@ -42,11 +42,11 @@ This section details the different responses that can be received when creating 
 
 ## Error
 
-1. Response for Incorrect Request
+1. Response for incorrect request
 
-* Status Code: 400 (Bad Request)
-* Description: Occurs when the request is malformed or incomplete.
-* Response Body:
+* Status code: 400 (Bad Request)
+* Description: occurs when the request is malformed or incomplete.
+* Response body:
 
 ```Json
 {
@@ -56,11 +56,11 @@ This section details the different responses that can be received when creating 
 }
 ```
 
-2. Response for Resource Not Found
+2. Response for resource not found
 
-* Status Code: 404 (Not Found)
-* Description: Means that the requested resource does not exist on the server.
-* Response Body:
+* Status code: 404 (Not Found)
+* Description: means that the requested resource does not exist on the server.
+* Response body:
 
 ```Json
 {
@@ -70,11 +70,11 @@ This section details the different responses that can be received when creating 
 }
 ```
 
-3. Response for Internal Server Error
+3. Response for internal server error
 
-* Status Code: 500 (Internal Server Error)
-* Description: Indicates a generic server error, suggesting problems on the Mercado Pago server side.
-* Response Body:
+* Status code: 500 (Internal Server Error)
+* Description: indicates a generic server error, suggesting problems on the Mercado Pago server side.
+* Response body:
 
 ```Json
 {

@@ -12,7 +12,7 @@ Para configurar pagamentos com **Efecty**, envie um POST com os seguintes parâm
 >
 > Lembre-se que o Brick já resolve a maioria dos parâmetros para enviar o POST. O retorno das informações vem no callback `onSubmit`, dentro do objeto `formData`, onde você poderá encontrar parâmetros como: `payment_method_id`, `payer.email` e `amount`.
 > <br><br>
-> Ao executar as APIs citadas nesta documentação, você poderá encontrar o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições sem que haja situações indesejadas como, por exemplo, pagamentos em duplicidade. 
+> Além disso, você deverá enviar obrigatoriamente o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Para fazé-lo, atualize [nossa biblioteca de SDK](/developers/pt/docs/sdks-library/landing) ou gere um UUID V4 e envie-o no _header_ de suas chamadas.
 
 | Tipo de pagamento  | Parâmetro  | Valor  |
 | --- | --- | --- |
@@ -22,6 +22,10 @@ Para configurar pagamentos com **Efecty**, envie um POST com os seguintes parâm
 ```php
 <?php
   use MercadoPago\Client\Payment\PaymentClient;
+  use MercadoPago\Client\Common\RequestOptions;
+  use MercadoPago\MercadoPagoConfig;
+
+  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
 
   $client = new PaymentClient();
   $request_options = new RequestOptions();
@@ -224,11 +228,7 @@ Após criar o pagamento pelo backend utilizando a SDK do Mercado Pago, utilize o
 
 Além de exibir o status do pagamento, o Status Screen Brick também exibirá o código de barras para o comprador copiar e colar, ou escanear e assim fazer o pagamento. Saiba como é simples integrar [clicando aqui](/developers/pt/docs/checkout-bricks/status-screen-brick/introduction).
 
-<center>
-
 ![payment-submission-other-payment-methods-status-mco](checkout-bricks/payment-submission-other-payment-methods-status-mco-pt.png)
-
-</center>
 
 
 > NOTE
@@ -236,3 +236,7 @@ Além de exibir o status do pagamento, o Status Screen Brick também exibirá o 
 > Importante
 >
 > A data de vencimento do boleto pode ser configurada através do envio de requisição POST com parâmetro `data_of_expiration` ao endpoint [/v1/payments.](/developers/pt/reference/payments/_payments/post) Após o vencimento, o boleto será cancelado.
+
+## Teste sua integração
+
+Com a integração finalizada, você poderá testar o recebimento de pagamentos. Para mais informações, acesse a seção [Realizar compra teste](/developers/pt/docs/checkout-bricks/integration-test/test-payment-flow).

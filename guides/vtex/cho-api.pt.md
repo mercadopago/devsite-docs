@@ -19,7 +19,7 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 |---|---|
 | Cartões | Permite integração com cartão de crédito e débito. |
 | Parcelamento via Pix em até 12x | Com esta linha de crédito administrada pelo Mercado Pago, o cliente tem a opção de financiar sua compra sem precisar de cartão, enquanto o vendedor recebe o valor integral em sua conta. |
-| Pix | Transferência bancária disponível 24h por dia. A opção de pagamento com Pix somente será exibida se houver uma chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, clique [aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo. |
+| Pix | Transferência bancária disponível 24h por dia. A opção de pagamento com Pix somente será exibida se houver uma Chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, clique [aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo. |
 | Meios offline | Você pode oferecer pagamentos por meios offline,  como boleto bancário |
 
 ------------
