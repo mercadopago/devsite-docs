@@ -437,8 +437,3 @@ If the status of the payment intent is `on_terminal`, you will need to cancel it
 
 ------------
 
-> NOTE
->
-> Recommendation
->
-> You can use the [Point Simulator](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/point-simulator) to safely test your integration and the creation of payment intents by using your test account and credentials. 
