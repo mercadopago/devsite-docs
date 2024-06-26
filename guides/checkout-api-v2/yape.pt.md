@@ -8,7 +8,7 @@ Nesta documentação você encontra todas as etapas necessárias para realizar a
 
 ## Integração via SDK javascript
 
-Com o Checkout Transparente, é possível oferecer pagamentos via Yape utilizando o método de SDK JS para gerar um token. Para isso, é necessário enviar os campos de celular e OTP (_One-time password_ encontrado no aplicativo Yape). Com o token, é possível criar um pagamento.
+Com o Checkout API, é possível oferecer pagamentos via Yape utilizando o método de SDK JS para gerar um token. Para isso, é necessário enviar os campos de celular e OTP (_One-time password_ encontrado no aplicativo Yape). Com o token, é possível criar um pagamento.
 
 Para oferecer pagamentos com Yape, siga os seguintes passos.
 
@@ -69,8 +69,8 @@ Utilize o método `mp.yape.create` para gerar um token de Yape, conforme o códi
 
 ```javascript
 (async function handleYape () {
-  const otp = docment.getElementById("checkout__payerOTP").value;
-  const phoneNumber = docment.getElementById("checkout__payerPhone").value;
+  const otp = docment.getElementById("form-checkout__payerOTP").value;
+  const phoneNumber = docment.getElementById("form-checkout__payerPhone").value;
   const yapeOptions = {
     otp,
     phoneNumber
@@ -155,9 +155,7 @@ Exemplo da resposta:
 
 ## Criar pagamento
 
-Após adicionar o formulário para captura dos dados de celular e OTP e gerar o token, utilize nossa API de Pagamentos ou um de nossos SDKs para enviar o token e criar o pagamento.
-
-Para criar o pagamento, envie o token, fornecido pelo SDK JS do Mercado Pago, e os outros dados necessários para o endpoint [/v1/payments](/developers/en/reference/payments/_payments/post). Estes dados incluem 'transaction_amount', 'installments', 'payment_method_id' (especificamente 'yape'), e as informações do pagador. Se preferir, também é possível fazer a requisição utilizando um de nossos SDKs. 
+Após adicionar o formulário para captura dos dados de celular e OTP e gerar o token, você deve criar o pagamento. Para isso, envie o token fornecido pelo Mercado Pago JS SDK e todos os dados necessários para o endpoint [/v1/payments](/developers/en/reference/payments/_payments/post). Estes dados incluem 'transaction_amount', 'installments', 'payment_method_id' (especificamente `yape`), e informações do pagador. Alternativamente, você também pode fazer a solicitação usando um dos nossos SDKs.
 
 O detalhamento de cada um dos parâmetros citados acima, bem como seus respectivos valores possíveis, está descrito na tabela a seguir.
 
@@ -398,7 +396,7 @@ Exemplo da resposta. Tenha em mente que algumas informações foram omitidas par
 }
 ```
 
-Por ser uma transação com cartão de débito, os status de pagamento possíveis são **aprovado** ou **rejeitado**. Além disso, as mesmas [políticas de reembolso e cancelamento](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds) se aplicam.
+Por ser uma transação com cartão de débito, os status de pagamento possíveis são **aprovado** ou **rejeitado**. As [políticas de reembolso e cancelamento](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds) também se aplicam.
 
 > NOTE
 >
@@ -408,7 +406,7 @@ Por ser uma transação com cartão de débito, os status de pagamento possívei
 
 ## Testar a integração
 
-É possível utilizar um OTP e números de celular de teste para simular diferentes respostas de pagamento em uma transação, sem a necessidade de usar números de celular e OTPs reais. Isso permite reproduzir os status mapeados em _payments_.
+É possível utilizar um OTP e números de celular de teste para simular diferentes respostas de pagamento em uma transação, sem a necessidade de usar números de celular e OTPs reais. Isso permite reproduzir os status mapeados em [payments](/developers/pt/reference/payments/_payments/post).
 
 Para testar a integração, insira o OTP e um dos números de celular listados na tabela abaixo no formulário de Checkout para simular cenários de sucesso e falha na implementação.
 
@@ -416,17 +414,17 @@ Para testar a integração, insira o OTP e um dos números de celular listados n
 >
 > Nota
 >
-> Para testar a integração, recomendamos utilizar as credenciais de teste. Para saber mais, leia a [documentação](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials).
+> Para testar a integração, use as credenciais de teste da sua conta produtiva. Para saber mais, leia a [documentação](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials).
 
 | Celular        | OTP     | Status previsto em `payments`                  |
 |----------------|---------|----------------------------------------------|
 | 111111111              | 123456  | `approved`                                     |
 | 111111112      | 123456  | `cc_rejected_call_for_authorize`               |
-| 111111113      | 123456  | `cc_amount_rate_limit_exceeded`                |
-| 111111114      | 123456  | `cc_unsupported_unsupported`                   |
+| 111111113      | 123456  | `cc_rejected_insufficient_amount`                |
+| 111111114      | 123456  | `cc_rejected_other_reason`                   |
 | 111111115      | 123456  | `cc_rejected_card_type_not_allowed`            |
 | 111111116      | 123456  | `cc_rejected_max_attempts`                     |
 | 111111117      | 123456  | `cc_rejected_bad_filled_security_code`         |
 | 111111118      | 123456  | `cc_rejected_form_error`                       |
 
-Os procedimentos para gerar o token de Yape e criar o pagamento são os mesmos: é necessário fornecer o número de celular e o OTP da tabela acima. Se houver dúvidas sobre como gerar o token Yape ou criar o pagamento, consulte as documentações [Gerar token](/developers/pt/docs/checkout-api/integration-configuration/yape#bookmark_gerar_token) e [Criar pagamento](/developers/pt/docs/checkout-api/integration-configuration/yape#bookmark_criar_pagamento) respectivamente.
+Os procedimentos para gerar o token de Yape e criar o pagamento são os mesmos: é necessário fornecer o número de celular e o OTP da tabela acima. Se houver dúvidas sobre como gerar o token Yape ou criar o pagamento, consulte as seções [Gerar token](/developers/pt/docs/checkout-api/integration-configuration/yape#bookmark_gerar_token) e [Criar pagamento](/developers/pt/docs/checkout-api/integration-configuration/yape#bookmark_criar_pagamento) respectivamente.

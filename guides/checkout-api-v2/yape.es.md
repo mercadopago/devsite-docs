@@ -69,8 +69,8 @@ Utiliza el método `mp.yape.create` para generar un token de Yape, según el sig
 
 ```javascript
 (async function handleYape () {
-  const otp = docment.getElementById("checkout__payerOTP").value;
-  const phoneNumber = docment.getElementById("checkout__payerPhone").value;
+  const otp = docment.getElementById("form-checkout__payerOTP").value;
+  const phoneNumber = docment.getElementById("form-checkout__payerPhone").value;
   const yapeOptions = {
     otp,
     phoneNumber
@@ -155,9 +155,7 @@ Ejemplo de la respuesta:
 
 ## Crear pago
 
-Después de añadir el formulario para capturar los datos de celular y OTP y generar el token, utiliza nuestra API de Pagos o uno de nuestros SDKs para enviar el token y crear el pago.
-
-Para crear el pago, envía el token, proporcionado por el SDK JS de Mercado Pago, y los otros datos necesarios al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post). Estos datos incluyen 'transaction_amount', 'installments', 'payment_method_id' (específicamente 'yape'), y la información del pagador. Si prefieres, también es posible hacer la solicitud utilizando uno de nuestros SDKs.
+Después de añadir el formulario para capturar los datos del celular y del OTP y generar el token, debes crear el pago. Para hacerlo, envía el token proporcionado por el SDK de Mercado Pago JS y todos los datos necesarios al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post). Estos datos incluyen 'transaction_amount', 'installments', 'payment_method_id' (específicamente `yape`), e la información del pagador. Si prefieres, también es posible hacer la solicitud utilizando uno de nuestros SDK.
 
 El detalle de cada uno de los parámetros mencionados anteriormente, así como sus respectivos valores posibles, está descrito en la tabla a continuación.
 
@@ -399,7 +397,7 @@ A continuación puedes ver un ejemplo de respuesta. Ten en cuenta que cierta inf
 }
 ```
 
-Por ser una transacción con tarjeta de débito, los estados de pago posibles son **aprobado** o **rechazado**. Además, se aplican las mismas [políticas de reembolso y cancelación](/developers/es/docs/checkout-api/payment-management/cancellations-and-refunds).
+Por ser una transacción con tarjeta de débito, los estados de pago posibles son **aprobado** o **rechazado**. Además, las [políticas de reembolso y cancelación](/developers/es/docs/checkout-api/payment-management/cancellations-and-refunds) también se aplican.
 
 > NOTE
 >
@@ -409,7 +407,7 @@ Por ser una transacción con tarjeta de débito, los estados de pago posibles so
 
 ## Probar la integración
 
-Es posible utilizar un OTP y números de celular de prueba para simular diferentes respuestas de pago en una transacción, sin la necesidad de usar números de celular y OTPs reales. Esto permite reproducir los estados mapeados en _payments_.
+Es posible utilizar un OTP y números de celular de prueba para simular diferentes respuestas de pago en una transacción, sin la necesidad de usar números de celular y OTPs reales. Esto permite reproducir los estados mapeados en [payments](/developers/es/reference/payments/_payments/post).
 
 Para probar la integración, ingresa el OTP y uno de los números de celular listados en la tabla a continuación en el formulario de Checkout para simular escenarios de éxito y falla en la implementación.
 
@@ -417,14 +415,14 @@ Para probar la integración, ingresa el OTP y uno de los números de celular lis
 >
 > Nota
 >
-> Para probar la integración, recomendamos utilizar las credenciales de prueba. Para saber más, lee la [documentación](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials).
+> Para probar la integración, debe usar las credenciales de prueba de su cuenta productiva. Para saber más, lee la [documentación](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials).
 
 | Celular       | OTP     | Estado previsto en `payments`                  |
 |---------------|---------|-----------------------------------------------|
 | 111111111     | 123456  | `approved`                                    |
 | 111111112     | 123456  | `cc_rejected_call_for_authorize`              |
-| 111111113     | 123456  | `cc_amount_rate_limit_exceeded`               |
-| 111111114     | 123456  | `cc_unsupported_unsupported`                  |
+| 111111113     | 123456  | `cc_rejected_insufficient_amount`               |
+| 111111114     | 123456  | `cc_rejected_other_reason`                  |
 | 111111115     | 123456  | `cc_rejected_card_type_not_allowed`           |
 | 111111116     | 123456  | `cc_rejected_max_attempts`                    |
 | 111111117     | 123456  | `cc_rejected_bad_filled_security_code`        |

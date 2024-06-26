@@ -69,8 +69,8 @@ Use the `mp.yape.create` method to generate a Yape token, as shown in the code b
 
 ```javascript
 (async function handleYape () {
-  const otp = docment.getElementById("checkout__payerOTP").value;
-  const phoneNumber = docment.getElementById("checkout__payerPhone").value;
+  const otp = docment.getElementById("form-checkout__payerOTP").value;
+  const phoneNumber = docment.getElementById("form-checkout__payerPhone").value;
   const yapeOptions = {
     otp,
     phoneNumber
@@ -105,7 +105,7 @@ curl --location 'https://api.mercadopago.com/platforms/pci/yape/v1/payment?publi
 }
 ``` 
 
-Example of the response:
+Example response:
 
 ```json
 {
@@ -153,9 +153,7 @@ Example of the response:
 
 ## Create payment
 
-After adding the form to capture cell phone and OTP data and generating the token, use our Payments API or one of our SDKs to send the token and create the payment.
-
-To create the payment, send the token provided by the Mercado Pago JS SDK and other necessary data to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post). These data include 'transaction_amount', 'installments', 'payment_method_id' (specifically 'yape'), and payer information. Alternatively, you can also make the request using one of our SDKs.
+After adding the form to capture the cell phone and OTP data and generating the token, you must create the payment. To do so, send the token provided by the Mercado Pago JS SDK and all the necessary data to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post). These data include 'transaction_amount', 'installments', 'payment_method_id' (specifically 'yape'), and payer information. Alternatively, you can also make the request using one of our SDKs.
 
 Details of each parameter mentioned above, as well as their respective possible values, are described in the following table.
 
@@ -372,7 +370,7 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 ```
 ]]]
 
-Below, you can see an example of the response. Please note that some information has been omitted to highlight the most relevant fields.
+Below is an example response. Please note that some information has been omitted to highlight the most relevant fields.
 
 ```json
 {
@@ -396,21 +394,21 @@ Below, you can see an example of the response. Please note that some information
 }
 ```
 
-Due to being a debit card transaction, possible payment statuses are **approved** or **rejected**. Additionally, the same [refund and cancellation policies](/developers/en/docs/checkout-api/payment-management/cancellations-and-refunds) apply.
+Due to being a debit card transaction, possible payment statuses are **approved** or **rejected**. Additionally, the [refund and cancellation policies](/developers/en/docs/checkout-api/payment-management/cancellations-and-refunds) also apply.
 
 > NOTE
 >
 > If any error occurs while generating a payment, refer to the list of possible errors in the [API Reference](/developers/en/reference/payments/_payments/post).
 
-## Test Integration
+## Integration test
 
-You can use a test OTP and phone numbers to simulate different payment responses in a transaction, without needing to use real phone numbers and OTPs. This allows you to replicate the statuses mapped in _payments_.
+You can use a test OTP and phone numbers to simulate different payment responses in a transaction, without needing to use real phone numbers and OTPs. This allows you to replicate the statuses mapped in [payments](/developers/en/reference/payments/_payments/post).
 
 To test the integration, enter the OTP and one of the phone numbers listed in the table below into the Checkout form to simulate scenarios of success and failure in implementation.
 
 > NOTE
 >
-> To test the integration, we recommend using test credentials. For more information, refer to the [documentation](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials).
+> To test the integration, you must use the test credentials of your productive account. For more information, refer to the [documentation](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials).
 
 | Phone Number   | OTP     | Expected status in `payments`          |
 |----------------|---------|---------------------------------------|
@@ -423,4 +421,4 @@ To test the integration, enter the OTP and one of the phone numbers listed in th
 | 111111117      | 123456  | `cc_rejected_bad_filled_security_code`|
 | 111111118      | 123456  | `cc_rejected_form_error`              |
 
-The procedures to generate the Yape token and create the payment are the same: you need to provide the phone number and OTP from the table above. If you have any questions about generating the Yape token or creating the payment, refer to the documentation [Generate token](/developers/en/docs/checkout-api/integration-configuration/yape#bookmark_generate_token) and [Create payment](/developers/en/docs/checkout-api/integration-configuration/yape#bookmark_create_payment) respectively.
+The procedures to generate the Yape token and create the payment are the same: you need to provide the phone number and OTP from the table above. If you have any questions about generating the Yape token or creating the payment, refer to the [Generate token](/developers/en/docs/checkout-api/integration-configuration/yape#bookmark_generate_token) and [Create payment](/developers/en/docs/checkout-api/integration-configuration/yape#bookmark_create_payment) sections, respectively.
