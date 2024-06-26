@@ -1536,7 +1536,7 @@
         "responses": {
           "200": {
             "description": {
-              "es": "Success",
+              "es": "Éxito",
               "pt": "Successo",
               "en": "Success"
             },
@@ -2605,9 +2605,9 @@
                         {
                           "title": "2018",
                           "description": {
-                            "en": "The action requested is not valid for the current payment state - This error is displayed when the status entered in the request is different from cancelled. Please check the value sent and make a new request with the correct value.",
-                            "es": "The action requested is not valid for the current payment state - Este error se muestra cuando el estado ingresado en la solicitud es diferente de cancelled. Verifique el valor enviado y realice una nueva solicitud con el valor correcto.",
-                            "pt": "The action requested is not valid for the current payment state - Este erro é exibido quando o status inserido no request é diferente de `cancelled`. Verifique o valor enviado e faça uma nova requisição inserindo o valor correto."
+                            "en": "The action requested is not valid for the current payment state - This error occurs when an attempt is made to change a payment's status to canceled when the initial status is not 'in_process', 'pending', or 'authorized.",
+                            "es": "The action requested is not valid for the current payment state - Este error sucede cuando se intenta pasar a cancelled un payment cuyo status inicial no es 'in_process', 'pending' o authorized",
+                            "pt": "The action requested is not valid for the current payment state - Este erro ocorre quando se tenta alterar o status de um pagamento para cancelado quando o status inicial não é 'in_process', 'pending' ou 'authorized'."
                           }
                         },
                         {

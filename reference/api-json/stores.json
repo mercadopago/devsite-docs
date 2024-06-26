@@ -8,9 +8,9 @@
           "mp-point"
         ],
         "description": {
-          "en": "This endpoint allows access to all information about a physical establishment using the desired store ID. Upon success, the request will return a status code 200.",
-          "pt": "Este endpoint permite acessar todas as informações de um estabelecimento físico utilizando o ID da loja desejada. Em caso de sucesso, a requisição retornará um código de status 200.",
-          "es": "Este endpoint permite acceder a toda la información de una tienda física utilizando el ID de la tienda deseada. En caso de éxito, la solicitud devolverá un código de estado 200."
+          "en": "This endpoint allows access to all information about a physical establishment using the desired store ID. Upon success, the request will return a status code 200",
+          "pt": "Este endpoint permite acessar todas as informações de um estabelecimento físico utilizando o ID da loja desejada. Em caso de sucesso, a requisição retornará um código de status 200",
+          "es": "Este endpoint permite acceder a toda la información de una tienda física utilizando el ID de la tienda deseada. En caso de éxito, la solicitud devolverá un código de estado 200"
         },
         "parameters": [
           {
@@ -786,9 +786,9 @@
                         {
                           "title": "VALIDATION_ERROR",
                           "description": {
-                            "en": "External_id-already-used. This error occurs when inserting the name of a city that does not correspond to the previously defined city. To correct it, check the 'location.state_name' and 'location.city_name' fields and ensure they are filled correctly.",
-                            "es": "External_id-already-used. Este error ocurre al insertar el nombre de una ciudad que no corresponde a la ciudad previamente definida. Para corregirlo, verifique los campos 'location.state_name' y 'location.city_name' y asegúrese de que estén completados correctamente.",
-                            "pt": "External_id-already-used. Esse erro ocorre ao inserir o nome de uma cidade que não corresponde à cidade previamente definida. Para corrigir, verifique os campos 'location.state_name' e 'location.city_name' e certifique-se de que foram preenchidos corretamente."
+                            "en": "External_id-already-used. This error occurs when entering the name of a city that does not correspond to the previously defined city. To correct this, check the 'location.state_name' and 'location.city_name' fields and make sure they are filled out correctly. It can also occur when a parameter is missing in the request, please validate the 'description' or 'message' of the error for more information.",
+                            "es": "External_id-already-used. Este error ocurre al insertar el nombre de una ciudad que no corresponde a la ciudad previamente definida. Para corregirlo, verifique los campos 'location.state_name' y 'location.city_name' y asegúrese de que estén completados correctamente. También puede ocurrir cuando hace falta algún parámetro en el request, por favor valide el 'description' o el 'message' del error para más información.",
+                            "pt": "External_id-already-used. Esse erro ocorre ao inserir o nome de uma cidade que não corresponde à cidade previamente definida. Para corrigi-lo, verifique os campos 'location.state_name' e 'location.city_name' e certifique-se de que estejam preenchidos corretamente. Também pode ocorrer quando falta algum parâmetro na solicitação, por favor, valide a 'description' ou o 'message' do erro para mais informações."
                           },
                           "enum": [
                             {
