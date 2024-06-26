@@ -40,16 +40,6 @@
         "url": "/guides/online-payments/marketplace/checkout-pro/introduction"
       }
     },
-    "mobile-checkout": {
-      "description": {
-        "pt": "Mobile Checkout",
-        "en": "Mobile Checkout",
-        "es": "Mobile Checkout"
-      },
-      "externalDocs": {
-        "url": "/guides/online-payments/mobile-checkout/introduction"
-      }
-    },
     "qr-code": {
       "description": {
         "pt": "Código QR",
