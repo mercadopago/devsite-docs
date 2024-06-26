@@ -110,6 +110,16 @@
         "url": "/docs/checkout-bricks/landing"
       }
     },
+    "money-out": {
+      "description": {
+        "pt": "Money Out",
+        "en": "Money Out",
+        "es": "Money Out"
+      },
+      "externalDocs": {
+        "url": "/docs/money-out/landing"
+      }
+    },
     "reporting": {
       "description": {
         "pt": "Relatórios",
