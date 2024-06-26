@@ -1941,7 +1941,7 @@
                     },
                     "user": {
                       "type": "number",
-                      "example": 329653108,
+                      "example": 129653108,
                       "description": {
                         "es": "Número del usuario responsable de la eliminación de la tienda.",
                         "pt": "Número do usuário responsável pela exclusão da loja.",
