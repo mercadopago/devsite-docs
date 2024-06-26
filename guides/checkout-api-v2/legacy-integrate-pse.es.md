@@ -465,14 +465,24 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 
 Los siguientes campos para enviar un pago son **obligatorios** y deberás completarlos siguiendo las especificaciones de la de la tabla a continuación:
 
-|                   Campo                   |                                                                                                               Descripción                                                                                                             | Valores posibles/Validaciones |                                          LLamado para obtener los valores                                          |
-|:-----------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------:|:------------------------------------------------------------------------------------------------------------------:|
-| transaction_details.financial_institution | Banco informado en el POST para hacer la transferencia electrónica. Se debe mostrar al usuario el listado de bancos y permitirle seleccionar. El listado se actualiza, por lo que se recomienda consumir la información cada una hora. | -                             | https://api.mercadolibre.com/v1/payment_methods/search?public_key=YOUR_PUBLIC_KEY                                  |
-| payer.entity_type                         | Tipo de personería, física o jurídica.                                                                                                                                                                                                 | *individual* o *association*      | -                                                                                                                  |
-| payer.identification                      | Tipo y número de documento del comprador.                                                                                                                                                                                              | -                             | curl -X GET \ 'https://api.mercadopago.com/v1/identification_types' \ -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' |
-| additional_info.ip_address                | Dirección IP del comprador, donde se genera el pago.                                                                                                                                                                                   | -                             | -                                                                                                                  |
-| callback_url                              | Página donde se redirecciona al comprador por defecto luego de realizar el pago dentro de la página del banco, cuando el comprador indica que desea regresar a la tienda.                                                              | -                             | -                                                                                                                  |
-
+| Campo | Descripción | Valores posibles/validaciones | Llamado para obtener los valores |
+|:---:|:---:|:---:|:---:|
+| `transaction_amount` | Monto del pago.  | Debe ser mayor a 0. | - |
+| `transaction_details.financial_institution` | Banco informado en el POST para hacer la transferencia electrónica. Se debe mostrar al usuario el listado de bancos y permitirle seleccionar. El listado se actualiza, por lo que se recomienda consumir la información cada una hora. | No debe ser nulo ni vacío y debe corresponder a un banco existente. | https://api.mercadopago.com/v1/payment_methods/search?site_id=MCO&id=pse&public_key=YOUR_PUBLIC_KEY  |
+| `payer.entity_type` | Tipo de personería, natural o jurídica.  | *individual* o *association* | - |
+| `payer.identification.type` | Tipo de documento del comprador. | String <br> debe tener de 1 hasta 15 posiciones números. Si el tipo es 'Pasaporte', aceptará valores alfanumericos | curl -X GET \ <br> 'https://api.mercadopago.com/v1/identification_types' \ <br> -H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
+| `payer.identification.number` | Tipo y número de documento del comprador. | String <br> debe tener de 1 hasta 15 posiciones números. Si el tipo es 'Pasaporte', aceptará valores alfanumericos | - |
+| `payer.first_name` | Nombre del comprador.| Debe tener de 1 hasta 32 posiciones. | - |
+| `payer.last_name` | Apellido del comprador. | Debe tener de 1 hasta 32 posiciones. | - |
+| `payer.address.zip_code` | Código postal del comprador. | Debe tener exactamente 5 posiciones. | - |
+| `payer.address.street_name` | Nombre de la calle del domicilio del comprador. | Debe tener de 1 hasta 18 posiciones. | - |
+| `payer.address.street_number` | Número del domicilio del comprador. | Debe tener de 1 hasta 5 posiciones. | - |
+| `payer.address.neighborhood` | Barrio al que pertenece la dirección del comprador. | Debe tener de 1 hasta 18 posiciones.| - |
+| `payer.address.city` | Ciudad del comprador. | Debe tener de 1 hasta 18 posiciones. | - |
+| `payer.phone.area_code` | Código de área del teléfono del comprador. | Debe tener 3 posiciones. | - |
+| `payer.phone.number` | Número de teléfono del comprador. | String <br> Debe tener de 1 hasta 7 posiciones solo acepta caracteres numéricos. | - |
+| `additional_info.ip_address` | Dirección IP del comprador, donde se genera el pago. | - | - |
+| `callback_url` | Página donde se redirecciona al comprador por defecto luego de realizar el pago dentro de la interfaz del banco, cuando el comprador indica que desea regresar a la tienda. <br>Puedes ver mensajes sugeridos para mostrar al comprador en el subtítulo [Ejemplos de mensajes para callback URL](/developers/es/docs/checkout-api/how-tos/migrate-pse#bookmark_ejemplos_de_mensajes_para_callback_url).| No debe ser nulo ni vacío y debe tener máximo 512 caracteres.| - |
 
 La respuesta mostrará el status `pendiente` hasta que el comprador realice el pago. Además, en la respuesta a la solicitud, el parámetro `external_resource_url` devolverá una URL que contiene las instrucciones para que el comprador efectúe el pago. Puedes redirigirlo a este mismo link para finalizar el flujo de pago.
 
