@@ -23,13 +23,13 @@ To begin the migration, you will need to add new required fields to the payment 
 
 | Campo | Descripción |
 |---|---|
-| `payer.address.zip_code` | Buyer’s zip code |
-| `payer.address.street_name` | Street name of the buyer’s address |
-| `payer.address.street_number` | Number of the buyer's address |
-| `payer.address.neighborhood` | Neighborhood where the buyer’s address belongs |
-| `payer.address.city` | Buyer’s city |
+| `payer.address.zip_code` | Buyer’s zip code. |
+| `payer.address.street_name` | Street name of the buyer’s address. |
+| `payer.address.street_number` | Number of the buyer's address. |
+| `payer.address.neighborhood` | Neighborhood where the buyer’s address belongs. |
+| `payer.address.city` | Buyer’s city. |
 | `payer.phone.area_code` | Area code of the buyer’s phone. |
-| `payer.phone.number` | Buyer's phone number |
+| `payer.phone.number` | Buyer's phone number. |
 
 In the example below, you'll find a new code structure that includes all of these required fields and the `HTML` elements you'll need in the next steps.
 
@@ -603,19 +603,22 @@ The table below has the full list of **required fields** for your reference:
 
 | Field | Description | Posssible values/validaations | Request to get the values |
 |:---:|:---:|:---:|:---:|
+| `transaction_amount` | Payment amount. | Must be greater than 0. | - |
 | `transaction_details.financial_institution` | Bank informed in the POST to make the electronic transfer. You must show the list to the user and allow him to select. This list usually refreshes, so it’s recommended to consume the information every hour. | - | https://api.mercadopago.com/v1/payment_methods/search?site_id=MCO&id=pse&public_key=YOUR_PUBLIC_KEY  |
 | `payer.entity_type` | Type of person, natural or legal. | *individual* or *association* | - |
-| `payer.identification` | Type and number of the buyer's document. | - | curl -X GET \ <br> 'https://api.mercadopago.com/v1/identification_types' \ <br> -H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
-| `additional_info.ip_address` |  Buyer’s IP address, where the payment is made.. | - | - |
-| `callback_url` | URL where the buyer is redirected by default after making the payment within the bank's page, when the buyer indicates that they want to return to the store.<br>You can check suggested messages to show the buyer under [Examples for callback URLs](/developers/en/docs/checkout-api/how-tos/migrate-pse#bookmark_examples_for_callback_urls). | - | - |
-| `payer.address.zip_code` | Zip code of the payer’s address. | - | - |
-| `payer.address.street_name` | Street name of the payer’s address. | - | - |
-| `payer.address.street_number` | Street number of the payer’s address. | - | - |
-| `payer.address.neighborhood` | Neighbourhood of the payer’s address. | - | - |
-| `payer.address.city` | Payer’s city | - | - |
-| `payer.phone.area_code` | Area code of the payer’s phone number. | - | - |
-| `payer.phone.number` | Payer’s phone number. | - | - |
-
+| `payer.address.zip_code` | Zip code of the payer’s address. | Must have exactly 5 positions. | - |
+| `payer.address.street_name` | Street name of the payer’s address. |Must have between 1 and 18 positions. | - |
+| `payer.address.street_number` | Street number of the payer’s address. | Must have between 1 and 5 positions. | - |
+| `payer.address.neighborhood` | Neighbourhood of the payer’s address. | Must have between 1 and 18 positions. | - |
+| `payer.address.city` | Payer’s city | Must have between 1 and 18 positions.| - |
+| `payer.phone.area_code` | Area code of the payer’s phone number. | Must have 3 positions. | - |
+| `payer.phone.number` | Payer’s phone number. | String <br> Must have between 1 and 7 positions and only accepts numeric characters. | - |
+| `additional_info.ip_address` |  Buyer’s IP address, where the payment is made. | - | - |
+| `callback_url` | URL where the buyer is redirected by default after making the payment within the bank's page, when the buyer indicates that they want to return to the store.<br>You can check suggested messages to show the buyer under [Examples for callback URLs](/developers/en/docs/checkout-api/how-tos/migrate-pse#bookmark_examples_for_callback_urls). | It must not be null or empty and must have a maximum of 512 characters. | - |
+| `payer.identification.type` | Buyer's document type. | Accepted values: <br> - RC (Registro Civil de Nacimiento) <br> - TI (Tarjeta de Identidad) <br> - CC (Cedula de Ciudadania)  <br> - TE (Tarjeta de Extranjeria) <br> - CE (Cedula de Extranjeria) <br> - PAS(Pasaporte) <br> - NIT | curl -X GET \ <br> 'https://api.mercadopago.com/v1/identification_types' \ <br> -H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
+| `payer.identification.number` | Buyer's document number. | String <br> Must have between 1 and 15 numeric positions. If it is of the 'passport' type, it will accept alphanumeric values.| - |
+| `payer.first_name` | Buyer's first name. | Must have between 1 and 32 positions. | - |
+| `payer.last_name` | Buyer's last name. | Must have between 1 and 32 positions. | - | - |
 
 The response will show the `pending` status until the buyer completes the payment. Also, in the response to the request, the `external_resource_url` parameter will return a URL where you should redirect the buyer to complete the payment flow.
 

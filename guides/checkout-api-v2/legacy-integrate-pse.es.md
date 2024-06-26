@@ -470,8 +470,8 @@ Los siguientes campos para enviar un pago son **obligatorios** y deberás comple
 | `transaction_amount` | Monto del pago.  | Debe ser mayor a 0. | - |
 | `transaction_details.financial_institution` | Banco informado en el POST para hacer la transferencia electrónica. Se debe mostrar al usuario el listado de bancos y permitirle seleccionar. El listado se actualiza, por lo que se recomienda consumir la información cada una hora. | No debe ser nulo ni vacío y debe corresponder a un banco existente. | https://api.mercadopago.com/v1/payment_methods/search?site_id=MCO&id=pse&public_key=YOUR_PUBLIC_KEY  |
 | `payer.entity_type` | Tipo de personería, natural o jurídica.  | *individual* o *association* | - |
-| `payer.identification.type` | Tipo de documento del comprador. | String <br> debe tener de 1 hasta 15 posiciones números. Si el tipo es 'Pasaporte', aceptará valores alfanumericos | curl -X GET \ <br> 'https://api.mercadopago.com/v1/identification_types' \ <br> -H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
-| `payer.identification.number` | Tipo y número de documento del comprador. | String <br> debe tener de 1 hasta 15 posiciones números. Si el tipo es 'Pasaporte', aceptará valores alfanumericos | - |
+| `payer.identification.type` | Tipo de documento del comprador. | Valores aceptados: <br> - RC (Registro Civil De Nacimiento) <br> - TI (Tarjeta De Identidad) <br> - CC (Cedula De Ciudadania)  <br> - TE (Tarjeta De Extranjeria) <br> - CE (Cedula De Extranjeria) <br> - PAS(Pasaporte) <br> - NIT | curl -X GET \ <br> 'https://api.mercadopago.com/v1/identification_types' \ <br> -H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
+| `payer.identification.number` | Número del documento del comprador. | String <br> Debe tener de 1 hasta 15 posiciones numéricas. Si el tipo es 'Pasaporte', aceptará valores alfanumericos | - |
 | `payer.first_name` | Nombre del comprador.| Debe tener de 1 hasta 32 posiciones. | - |
 | `payer.last_name` | Apellido del comprador. | Debe tener de 1 hasta 32 posiciones. | - |
 | `payer.address.zip_code` | Código postal del comprador. | Debe tener exactamente 5 posiciones. | - |
@@ -482,7 +482,7 @@ Los siguientes campos para enviar un pago son **obligatorios** y deberás comple
 | `payer.phone.area_code` | Código de área del teléfono del comprador. | Debe tener 3 posiciones. | - |
 | `payer.phone.number` | Número de teléfono del comprador. | String <br> Debe tener de 1 hasta 7 posiciones solo acepta caracteres numéricos. | - |
 | `additional_info.ip_address` | Dirección IP del comprador, donde se genera el pago. | - | - |
-| `callback_url` | Página donde se redirecciona al comprador por defecto luego de realizar el pago dentro de la interfaz del banco, cuando el comprador indica que desea regresar a la tienda. <br>Puedes ver mensajes sugeridos para mostrar al comprador en el subtítulo [Ejemplos de mensajes para callback URL](/developers/es/docs/checkout-api/how-tos/migrate-pse#bookmark_ejemplos_de_mensajes_para_callback_url).| No debe ser nulo ni vacío y debe tener máximo 512 caracteres.| - |
+| `callback_url` | Página donde se redirecciona al comprador por defecto luego de realizar el pago dentro de la interfaz del banco, cuando el comprador indica que desea regresar a la tienda. <br> Puedes ver mensajes sugeridos para mostrar al comprador en el subtítulo [Ejemplos de mensajes para callback URL](/developers/es/docs/checkout-api/how-tos/migrate-pse#bookmark_ejemplos_de_mensajes_para_callback_url).| No debe ser nulo ni vacío y debe tener máximo 512 caracteres.| - |
 
 La respuesta mostrará el status `pendiente` hasta que el comprador realice el pago. Además, en la respuesta a la solicitud, el parámetro `external_resource_url` devolverá una URL que contiene las instrucciones para que el comprador efectúe el pago. Puedes redirigirlo a este mismo link para finalizar el flujo de pago.
 
