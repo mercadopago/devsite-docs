@@ -2617,7 +2617,15 @@
                             "es": "The action requested is not valid for the current payment state - Estado Inválido para Actualización - Este error ocurre cuando, por ejemplo, se intenta cambiar el estado de un pago de `in_process` a `approved`. Esta solicitud solo acepta el estado `cancelled`. Por favor, revise el parámetro enviado y realice una nueva solicitud con el valor correcto.",
                             "pt": "The action requested is not valid for the current payment state - Este erro ocorre quando, por exemplo, se tenta alterar o status de um pagamento de `in_process` para `approved`. Esta requisição só aceita o status `cancelled`. Revise o parâmetro enviado e submeta uma nova solicitação com o valor correto."
                           }
-                        } 
+                        },
+                        {
+                          "title": "4017",
+                          "description": {
+                            "en": "Status attribute can't be null - If this error appears, please review the `status` parameter to ensure that it is set to `cancelled` and not left empty. Confirm the status is correctly populated before submitting a new request.",
+                            "es": "Status attribute can't be null - Si este error aparece, revise el parámetro `status` para asegurarse de que esté establecido como `cancelled` y que no se haya dejado vacío. Confirme que el estado esté correctamente introducido antes de enviar una nueva solicitud.",
+                            "pt": "Status attribute can't be null - Caso este erro apareça, revise o parâmetro `status` para garantir que ele esteja definido como `cancelled` e que não esteja vazio. Confirme que o status esteja corretamente preenchido antes de enviar uma nova solicitação."
+                          }
+                        }
                       ]
                     }
                   }
@@ -2645,6 +2653,14 @@
                             "en": "Must provide your access token - This error is displayed when an attempt is made to make a request without sending the Access Token. Please check the request parameters and ensure the necessary information is provided.",
                             "es": "Must provide your access token - Este error se muestra cuando se intenta realizar una solicitud sin enviar el Access Token. Verifique los parámetros de la solicitud y asegúrese de enviar la información necesaria.",
                             "pt": "Must provide your access token - Este erro é exibido quando ocorre a tentativa de requisição sem o envio do Access Token. Verifique os parâmetros de requisição e garanta o envio da informação necessária."
+                          }
+                        },
+                        {
+                          "title": "Unauthorized",
+                          "description": {
+                            "en": "Invalid access token - If this error appears, please review the Access Token provided in your request to ensure it is correct. After verifying the token, submit a new request.",
+                            "es": "Invalid access token - Si este error aparece, por favor revise el Access Token proporcionado en su solicitud para asegurarse de que esté correcto. Después de verificar el token, envíe una nueva solicitud.",
+                            "pt": "Invalid access token - Caso este erro apareça, revise o Access Token fornecido na sua requisição para garantir que ele esteja correto. Após verificar o token, envie uma nova solicitação."
                           }
                         }
                       ]
@@ -2674,6 +2690,35 @@
                             "en": "Payment not found - This error is returned when the payment ID entered is incorrect or does not exist. Please review the `payment_id` parameter and ensure that the number entered is correct.",
                             "es": "Payment not found - Este error se devuelve cuando el ID de pago ingresado es incorrecto o no existe. Revise el parámetro `payment_id` y asegúrese de que el número ingresado sea correcto.",
                             "pt": "Payment not found - Este erro retorna quando o ID de pagamento inserido está incorreto ou não existe. Revise o parâmetro `payment_id` e garanta que o número inserido está correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "4",
+                          "description": {
+                            "en": "Forbidden - The caller is not authorized to access this resource. This error occurs when attempting to change a payment status from `authorized` to `approved`. The same issue arises when trying to change a payment status from `in_process` to `rejected` or `approved`, or from `authorized` to `approved`. In this case, ensure the status being set is strictly `cancelled` and submit a new request.",
+                            "es": "Forbidden - The caller is not authorized to access this resource. Este error ocurre al intentar cambiar el estado de un pago de `authorized` a `approved`. El mismo problema surge al intentar cambiar el estado de un pago de `in_process` a `rejected` o `approved`, o de `authorized` a `approved`. En este caso, asegúrese de que el estado establecido sea estrictamente `cancelled` y envíe una nueva solicitud.",
+                            "pt": "Forbidden - The caller is not authorized to access this resource. Este erro ocorre ao tentar alterar o status de um pagamento de `authorized` para `approved`. O mesmo problema surge ao tentar mudar o status de um pagamento de `in_process` para `rejected` ou `approved`, ou de `authorized` para `approved`. Neste caso, certifique-se de que o status definido seja estritamente `cancelled` e envie uma nova solicitação."
                           }
                         }
                       ]
