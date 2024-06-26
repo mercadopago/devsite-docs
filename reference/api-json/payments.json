@@ -1974,14 +1974,6 @@
                           }
                         },
                         {
-                          "title": "5",
-                          "description": {
-                            "en": "Must provide your access_token to proceed. - If you see this error, include a valid access_token in your request.",
-                            "es": "Must provide your access_token to proceed. - Si ve este error, incluya un access_token válido en su solicitud.",
-                            "pt": "Must provide your access_token to proceed. - Caso veja esse erro, inclua um access_token válido na sua solicitação."
-                          }
-                        },
-                        {
                           "title": "23",
                           "description": {
                             "en": "The following parameters must be valid date and format (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration. - If this error arises, ensure the date_of_expiration is in the correct format.",

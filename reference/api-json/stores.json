@@ -635,18 +635,18 @@
                           "type": "number",
                           "example": -32.8897322,
                           "description": {
-                            "es": "latitude",
-                            "pt": "latitude",
-                            "en": "latitude"
+                            "es": "Latitud.",
+                            "pt": "Latitude.",
+                            "en": "Latitude."
                           }
                         },
                         "longitude": {
                           "type": "number",
                           "example": -68.8443275,
                           "description": {
-                            "es": "longitude",
-                            "pt": "longitude",
-                            "en": "longitude"
+                            "es": "Longitud.",
+                            "pt": "Longitude.",
+                            "en": "Longitude."
                           }
                         },
                         "reference": {
@@ -660,9 +660,9 @@
                         }
                       },
                       "description": {
-                        "es": "location",
-                        "pt": "location",
-                        "en": "location"
+                        "es": "Ubicación.",
+                        "pt": "Localização.",
+                        "en": "Location."
                       }
                     },
                     "external_id": {
