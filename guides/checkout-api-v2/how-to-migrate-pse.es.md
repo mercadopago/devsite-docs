@@ -1,5 +1,3 @@
-----[mco]----
-
 # Cómo migrar a la nueva versión de PSE
 
 Checkout API cuenta actualmente con una nueva integración PSE, que permitirá a los compradores utilizar este medio de pago de una manera sencilla y simplificada. 
@@ -672,6 +670,3 @@ A continuación, te mostramos ejemplos de mensajes que puedes ofrecerle, de acue
 #### Estado rechazado
 
 ![imagen de transacción rechazada](/images/api/pse-callback-rejected.png)
-
-
-------------

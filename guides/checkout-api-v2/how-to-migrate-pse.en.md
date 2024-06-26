@@ -1,5 +1,3 @@
-----[mco]----
-
 # How to migrate to the new version of PSE
 
 Checkout API currently has a new PSE integration, which will allow buyers to use this payment method in a simplified way.
@@ -618,7 +616,7 @@ The table below has the full list of **required fields** for your reference:
 | `payer.identification.type` | Buyer's document type. | Accepted values: <br> - RC (Registro Civil de Nacimiento) <br> - TI (Tarjeta de Identidad) <br> - CC (Cedula de Ciudadania)  <br> - TE (Tarjeta de Extranjeria) <br> - CE (Cedula de Extranjeria) <br> - PAS(Pasaporte) <br> - NIT | curl -X GET \ <br> 'https://api.mercadopago.com/v1/identification_types' \ <br> -H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
 | `payer.identification.number` | Buyer's document number. | String <br> Must have between 1 and 15 numeric positions. If it is of the 'passport' type, it will accept alphanumeric values.| - |
 | `payer.first_name` | Buyer's first name. | Must have between 1 and 32 positions. | - |
-| `payer.last_name` | Buyer's last name. | Must have between 1 and 32 positions. | - | - |
+| `payer.last_name` | Buyer's last name. | Must have between 1 and 32 positions. | - |
 
 The response will show the `pending` status until the buyer completes the payment. Also, in the response to the request, the `external_resource_url` parameter will return a URL where you should redirect the buyer to complete the payment flow.
 
@@ -669,8 +667,6 @@ In the new version of the integration, this is a **mandatory field**, so you wil
 
 Below, we show you examples of messages that you can offer, according to the three possible states in which a payment can be found.
 
-
-
 #### Approved status
 
 ![image of an approved transaction and the redirection ](/images/api/pse-callback-approved.png)
@@ -682,6 +678,3 @@ Below, we show you examples of messages that you can offer, according to the thr
 #### Rejected status
 
 ![Rejected transaction image](/images/api/pse-callback-rejected.png)
-
-
-------------
