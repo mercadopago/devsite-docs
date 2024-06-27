@@ -609,6 +609,7 @@ La tabla a continuación contiene los **campos obligatorios** y sus especificaci
 | `payer.phone.number` | Número de teléfono del comprador. | String <br> Debe tener de 1 hasta 7 posiciones solo acepta caracteres numéricos. | - |
 | `additional_info.ip_address` | Dirección IP del comprador, donde se genera el pago. | - | - |
 | `callback_url` | Página donde se redirecciona al comprador por defecto luego de realizar el pago dentro de la interfaz del banco, cuando el comprador indica que desea regresar a la tienda. <br>Puedes ver mensajes sugeridos para mostrar al comprador en el subtítulo [Ejemplos de mensajes para callback URL](/developers/es/docs/checkout-api/how-tos/migrate-pse#bookmark_ejemplos_de_mensajes_para_callback_url).| No debe ser nulo o vacío y debe tener, como máximo, 512 caracteres.| - |
+| `notification_url` | URL usada para notificar la aplicación que la transferencia ha finalizado. | No debe ser nulo o vacío y debe tener, como máximo, 512 caracteres.| - |
 
 La respuesta mostrará el status `pendiente` hasta que el comprador realice el pago. Además, el parámetro `external_resource_url` devolverá una URL a la que debes redirigir al comprador para que finalice el flujo de pago.
 

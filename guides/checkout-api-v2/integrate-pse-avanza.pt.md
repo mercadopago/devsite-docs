@@ -678,6 +678,7 @@ payment = payment_response["response"]
 | `payer.phone.number` | Número de telefone do comprador. | String <br> Deve ter de 1 até 5 posições e só aceita caracteres numéricos. | - |
 | `additional_info.ip_address` | Endereço do IP do comprador, onde o pagamento é gerado. | - | - |
 | `callback_url` | Página onde o comprador é redirecionado por padrão após efetuar o pagamento dentro da página do banco, quando o comprador indica que deseja retornar à loja. <br> Você pode ver sugestões de mensagens para mostrar ao comprador no subtítulo [Exemplos de mensagens para callback URL](/developers/pt/docs/checkout-api/how-tos/migrate-pse#bookmark_exemplos_de_mensagens_para_callback_url). | Não deve ser nulo ou vazio e deve ter, no máximo, 512 caracteres. | - |
+| `notification_url` | URL usada para notificar a aplicação de que a transferência foi concluída. | Não deve ser nulo ou vazio e deve ter, no máximo, 512 caracteres. | - |
 
 A resposta mostrará o status `pendente` até que o comprador realize o pagamento. Além disso, o parâmetro `external_resource_url` retornará uma URL para a qual você deverá redirecionar o comprador para que ele conclua o fluxo de pagamento.
 
