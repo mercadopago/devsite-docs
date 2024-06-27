@@ -636,7 +636,7 @@
                   },
                   "expiration_date_from": {
                     "type": "string",
-                    "example": "2024-05-01T00:00:00Z",
+                    "example": "2022-11-17T09:37:52.000-04:00",
                     "format": "date",
                     "description": {
                       "en": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
@@ -646,11 +646,11 @@
                   },
                   "expiration_date_to": {
                     "type": "string",
-                    "example": "2024-06-01T00:00:00Z",
+                    "example": "2022-11-17T10:37:52.000-05:00",
                     "format": "date",
                     "description": {
                       "en": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
-                      "pt": "Data no formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas. Por exemplo - 2022-11-17T09:37:52.000-04:00.",
+                      "pt": "Data no formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica o final do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas. Por exemplo - 2022-11-17T09:37:52.000-04:00.",
                       "es": "Fecha en formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas. Por ejemplo - 2022-11-17T09:37:52.000-04:00."
                     }
                   },
@@ -1321,25 +1321,27 @@
                     },
                     "expiration_date_from": {
                       "type": "string",
-                      "format": "nullable",
+                      "example": "2022-11-17T09:37:52.000-04:00",
+                      "format": "date",
                       "description": {
-                        "en": "Date in YYYY-MM-DD-HH-MM-SS format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.",
-                        "pt": "Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas.",
-                        "es": "Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el inicio del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas."
+                        "en": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
+                        "pt": "Data no formato \"yyyy-MM-dd'T'HH:mm:ssz\". que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas. Por exemplo - 2022-11-17T09:37:52.000-04:00.",
+                        "es": "Fecha en formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica el inicio del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas. Por ejemplo - 2022-11-17T09:37:52.000-04:00."
                       }
                     },
                     "expiration_date_to": {
                       "type": "string",
-                      "format": "nullable",
+                      "example": "2022-11-17T10:37:52.000-05:00",
+                      "format": "date",
                       "description": {
-                        "en": "Date in YYYY-MM-DD-HH-MM-SS format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.",
-                        "pt": "Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas.",
-                        "es": "Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas."
+                        "en": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
+                        "pt": "Data no formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica o final do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas. Por exemplo - 2022-11-17T09:37:52.000-04:00.",
+                        "es": "Fecha en formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas. Por ejemplo - 2022-11-17T09:37:52.000-04:00."
                       }
                     },
                     "date_created": {
                       "type": "string",
-                      "example": "2018-02-02T19:22:23.535Z",
+                      "example": "2022-11-17T10:37:52.000-05:00",
                       "description": {
                         "en": "Registration date.",
                         "pt": "Data de registro.",
@@ -1739,20 +1741,22 @@
                           },
                           "expiration_date_from": {
                             "type": "string",
-                            "format": "nullable",
+                            "example": "2022-11-17T09:37:52.000-04:00",
+                            "format": "date",
                             "description": {
-                              "en": "Date in YYYY-MM-DD-HH-MM-SS format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.",
-                              "pt": "Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas.",
-                              "es": "Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el inicio del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas."
+                              "en": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
+                              "pt": "Data no formato \"yyyy-MM-dd'T'HH:mm:ssz\". que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas. Por exemplo - 2022-11-17T09:37:52.000-04:00.",
+                              "es": "Fecha en formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica el inicio del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas. Por ejemplo - 2022-11-17T09:37:52.000-04:00."
                             }
                           },
                           "expiration_date_to": {
                             "type": "string",
-                            "format": "nullable",
+                            "example": "2022-11-17T10:37:52.000-05:00",
+                            "format": "date",
                             "description": {
-                              "en": "Date in YYYY-MM-DD-HH-MM-SS format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.",
-                              "pt": "Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas.",
-                              "es": "Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas."
+                              "en": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
+                              "pt": "Data no formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica o final do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas. Por exemplo - 2022-11-17T09:37:52.000-04:00.",
+                              "es": "Fecha en formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas. Por ejemplo - 2022-11-17T09:37:52.000-04:00."
                             }
                           },
                           "expires": {
@@ -2153,7 +2157,7 @@
                     },
                     "date_created": {
                       "type": "string",
-                      "example": "2018-02-02T19:18:51.150Z",
+                      "example": "2022-11-17T09:37:52.000-04:00",
                       "description": {
                         "en": "Registration date.",
                         "pt": "Data de registro.",
@@ -2162,20 +2166,22 @@
                     },
                     "expiration_date_from": {
                       "type": "string",
-                      "format": "nullable",
+                      "example": "2022-11-17T09:37:52.000-04:00",
+                      "format": "date",
                       "description": {
-                        "en": "Date in YYYY-MM-DD-HH-MM-SS format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.",
-                        "pt": "Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas.",
-                        "es": "Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el inicio del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas."
+                        "en": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
+                        "pt": "Data no formato \"yyyy-MM-dd'T'HH:mm:ssz\". que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas. Por exemplo - 2022-11-17T09:37:52.000-04:00.",
+                        "es": "Fecha en formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica el inicio del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas. Por ejemplo - 2022-11-17T09:37:52.000-04:00."
                       }
                     },
                     "expiration_date_to": {
                       "type": "string",
-                      "format": "nullable",
+                      "example": "2022-11-17T10:37:52.000-05:00",
+                      "format": "date",
                       "description": {
-                        "en": "Date in YYYY-MM-DD-HH-MM-SS format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.",
-                        "pt": "Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas.",
-                        "es": "Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas."
+                        "en": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
+                        "pt": "Data no formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica o final do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas. Por exemplo - 2022-11-17T09:37:52.000-04:00.",
+                        "es": "Fecha en formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas. Por ejemplo - 2022-11-17T09:37:52.000-04:00."
                       }
                     },
                     "expires": {
@@ -3459,20 +3465,22 @@
                   },
                   "expiration_date_from": {
                     "type": "string",
+                    "example": "2022-11-17T09:37:52.000-04:00",
                     "format": "date",
                     "description": {
-                      "en": "Date in YYYY-MM-DD-HH-MM-SS format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.",
-                      "pt": "Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas.",
-                      "es": "Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el inicio del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas."
+                      "en": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
+                      "pt": "Data no formato \"yyyy-MM-dd'T'HH:mm:ssz\". que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas. Por exemplo - 2022-11-17T09:37:52.000-04:00.",
+                      "es": "Fecha en formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica el inicio del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas. Por ejemplo - 2022-11-17T09:37:52.000-04:00."
                     }
                   },
                   "expiration_date_to": {
                     "type": "string",
+                    "example": "2022-11-17T10:37:52.000-05:00",
                     "format": "date",
                     "description": {
-                      "en": "Date in YYYY-MM-DD-HH-MM-SS format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.",
-                      "pt": "Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas.",
-                      "es": "Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas."
+                      "en": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
+                      "pt": "Data no formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica o final do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas. Por exemplo - 2022-11-17T09:37:52.000-04:00.",
+                      "es": "Fecha en formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas. Por ejemplo - 2022-11-17T09:37:52.000-04:00."
                     }
                   },
                   "marketplace": {
@@ -3637,20 +3645,22 @@
                     },
                     "expiration_date_from": {
                       "type": "string",
-                      "format": "nullable",
+                      "example": "2022-11-17T09:37:52.000-04:00",
+                      "format": "date",
                       "description": {
-                        "en": "Date in YYYY-MM-DD-HH-MM-SS format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.",
-                        "pt": "Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas.",
-                        "es": "Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el inicio del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas."
+                        "en": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the start of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
+                        "pt": "Data no formato \"yyyy-MM-dd'T'HH:mm:ssz\". que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas. Por exemplo - 2022-11-17T09:37:52.000-04:00.",
+                        "es": "Fecha en formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica el inicio del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas. Por ejemplo - 2022-11-17T09:37:52.000-04:00."
                       }
                     },
                     "expiration_date_to": {
                       "type": "string",
-                      "format": "nullable",
+                      "example": "2022-11-17T10:37:52.000-05:00",
+                      "format": "date",
                       "description": {
-                        "en": "Date in YYYY-MM-DD-HH-MM-SS format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.",
-                        "pt": "Data no formato AAAA-MM-DD-HH-MM-SS que indica o início do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas.",
-                        "es": "Fecha en formato AAAA-MM-DD-HH-MM-SS que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas."
+                        "en": "Date in \"yyyy-MM-dd'T'HH:mm:ssz\" format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates. For example - 2022-11-17T09:37:52.000-04:00.",
+                        "pt": "Data no formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica o final do período de validade da preferência. Isso pode ser usado, por exemplo, para vendas limitadas, onde os vendedores fazem uma oferta entre determinadas datas. Por exemplo - 2022-11-17T09:37:52.000-04:00.",
+                        "es": "Fecha en formato \"yyyy-MM-dd'T'HH:mm:ssz\" que indica el final del período de validez de la preferencia. Esto se puede usar, por ejemplo, para ventas limitadas, donde los vendedores hacen una oferta entre ciertas fechas. Por ejemplo - 2022-11-17T09:37:52.000-04:00."
                       }
                     },
                     "expires": {
@@ -4536,6 +4546,7 @@
       },
       "auto_return": {
         "type": "String",
+        "example": "approved",
         "description": {
           "en": "If specified, your buyers will be redirected back to your site immediately after completing the purchase.",
           "pt": "No caso de estar especificado o comprador será redirecionado para o seu site imediatamente após a compra.",
