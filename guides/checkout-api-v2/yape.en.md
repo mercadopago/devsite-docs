@@ -421,4 +421,4 @@ To test the integration, enter the OTP and one of the phone numbers listed in th
 | 111111117      | 123456  | `cc_rejected_bad_filled_security_code`|
 | 111111118      | 123456  | `cc_rejected_form_error`              |
 
-The procedures to generate the Yape token and create the payment are the same: you need to provide the phone number and OTP from the table above. If you have any questions about generating the Yape token or creating the payment, refer to the [Generate token](/developers/en/docs/checkout-api/integration-configuration/yape#bookmark_generate_token) and [Create payment](/developers/en/docs/checkout-api/integration-configuration/yape#bookmark_create_payment) sections.
+The procedures to generate the Yape token and create the payment are the same: you need to provide the phone number and OTP from the table above. If you have any questions about generating the Yape token or creating the payment, refer to the [Generate token](/developers/en/docs/checkout-api/integration-configuration/yape#bookmark_generate_token) and [Create payment](/developers/en/docs/checkout-api/integration-configuration/yape#bookmark_create_payment) sections respectively.
