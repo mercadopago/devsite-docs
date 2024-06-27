@@ -63,6 +63,12 @@ Para gerar um token Yape, é necessário preencher o campo OTP, que representa o
 
 Após concluir a inclusão do formulário e obter os dados necessários, gere o token de Yape usando MercadoPago.js ou via API.
 
+> NOTE
+>
+> Nota
+>
+> O token é de uso único por compra e deve ser enviado durante a etapa de criação do pagamento.
+
 ### Gerar token via MercadoPago.js
 
 Utilize o método `mp.yape.create` para gerar um token de Yape, conforme o código abaixo.
@@ -84,12 +90,6 @@ Utilize o método `mp.yape.create` para gerar um token de Yape, conforme o códi
 ### Gerar token via API
 
 Uma outra maneira de gerar o token é por meio de uma API. Para isso, utilize o seguinte cURL, preenchendo os parâmetros conforme detalhado na tabela abaixo. 
-
-> NOTE
->
-> Nota
->
-> O token é de uso único por compra e deve ser enviado durante a etapa de criação do pagamento.
 
 | Campo       | Tipo   | Descrição                                                                                                                  | Obrigatório/Opcional                           | Exemplos/Possíveis valores                 |
 |-------------|--------|-----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|-------------------------------------------|
