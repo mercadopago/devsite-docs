@@ -85,7 +85,7 @@ Acesse [Qualidade da integração](/developers/pt/docs/integration-quality) e co
 
 ## Teste de integração
 
-Nesta seção, você tem um guia passo a passo para testar sua integração. Isto permitirá validar se está atendendo aos requisitos necessários com base no produto integrado. 
+Nesta seção, você tem um passo a passo para testar sua integração, permitindo que você valide se ela está atendendo aos requisitos necessários com base no produto integrado. 
 
 Além disso, você tem links diretos para a documentação correspondente, bem como uma barra de status que lhe permitirá visualizar facilmente o seu progresso.
 
