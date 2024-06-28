@@ -794,9 +794,9 @@
                         {
                           "title": "VALIDATION_ERROR",
                           "description": {
-                            "en": "This error occurs when entering the name of a city that does not correspond to the previously defined city. To correct this, check the 'location.state_name' and 'location.city_name' fields and make sure they are filled out correctly. It can also occur when a parameter is missing in the request, please validate the 'description' or 'message' of the error for more information.",
-                            "es": "Este error ocurre al insertar el nombre de una ciudad que no corresponde a la ciudad previamente definida. Para corregirlo, verifique los campos 'location.state_name' y 'location.city_name' y asegúrese de que estén completados correctamente. También puede ocurrir cuando hace falta algún parámetro en el request, por favor valide el 'description' o el 'message' del error para más información.",
-                            "pt": "Esse erro ocorre ao inserir o nome de uma cidade que não corresponde à cidade previamente definida. Para corrigi-lo, verifique os campos 'location.state_name' e 'location.city_name' e certifique-se de que estejam preenchidos corretamente. Também pode ocorrer quando falta algum parâmetro na solicitação, por favor, valide a 'description' ou o 'message' do erro para mais informações."
+                            "en": "This error is generated due to a fault or absence in a specific field. It can also occur when a required parameter is not provided in the request. Check the 'description' or 'message' associated with the error for more details and proceed with the appropriate correction.",
+                            "pt": "Este erro é gerado devido a uma falha ou ausência em algum campo específico. Também pode ocorrer quando um parâmetro necessário não é fornecido na solicitação. Verifique a 'description' ou o 'message' associados ao erro para obter mais detalhes e proceder com a correção adequada.",
+                            "es": "Este error se genera debido a un fallo o ausencia en algún campo específico. También puede ocurrir cuando no se proporciona un parámetro requerido en la solicitud. Verifique la 'description' o el 'message' asociados al error para obtener más detalles y proceder con la corrección adecuada."
                           },
                           "enum": [
                             {
@@ -813,6 +813,14 @@
                                 "en": "`Monday exceeds the maximum length of 4 for Opening Hours`. Review the `opening_hours` field and ensure it does not exceed the maximum limit of 4 schedules. The day of the week returned in the code will vary according to the day that is exceeding the allowed number of schedules.",
                                 "pt": "`Monday exceeds the maximum length of 4 for Opening Hours`. Revise o campo `opening_hours` e garanta não exceder o limite máximo de 4 horários. O dia da semana retornado no código irá variar de acordo com o dia que está excedendo a quantidade de horários permitida.",
                                 "es": "`Monday exceeds the maximum length of 4 for Opening Hours`. Revise el campo `opening_hours` y asegúrese de no exceder el límite máximo de 4 horarios. El día de la semana que se devuelve en el código variará según el día que esté excediendo la cantidad permitida de horarios."
+                              }
+                            },
+                            {
+                              "title": "validation_error",
+                              "description": {
+                                "en": "location.state_name was invalid - This error occurs when entering the name of a city that does not correspond to the previously defined city. To correct this, check the 'location.state_name' and 'location.city_name' fields and make sure they are filled out correctly. It can also occur when a parameter is missing in the request, please validate the 'description' or 'message' of the error for more information.",
+                                "es": "location.state_name was invalid - Este error ocurre al insertar el nombre de una ciudad que no corresponde a la ciudad previamente definida. Para corregirlo, verifique los campos 'location.state_name' y 'location.city_name' y asegúrese de que estén completados correctamente. También puede ocurrir cuando hace falta algún parámetro en el request, por favor valide el 'description' o el 'message' del error para más información.",
+                                "pt": "location.state_name was invalid - Esse erro ocorre ao inserir o nome de uma cidade que não corresponde à cidade previamente definida. Para corrigi-lo, verifique os campos 'location.state_name' e 'location.city_name' e certifique-se de que estejam preenchidos corretamente. Também pode ocorrer quando falta algum parâmetro na solicitação, por favor, valide a 'description' ou o 'message' do erro para mais informações."
                               }
                             },
                             {

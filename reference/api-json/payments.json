@@ -1974,6 +1974,14 @@
                           }
                         },
                         {
+                          "title": "8",
+                          "description": {
+                            "en": "The name of the following parameters is wrong [additional_info.payer.test] - This error is displayed when the name of a certain parameter is entered incorrectly. In this example, the `additional_info.payer` field. Review the parameter returned in the error and ensure that the information entered is correct.",
+                            "es": "The name of the following parameters is wrong [additional_info.payer.test] - Este error se muestra cuando el nombre de un determinado parámetro se introduce incorrectamente. En este ejemplo, el campo `additional_info.payer`. Revise el parámetro devuelto en el error y asegúrese de que la información introducida sea correcta.",
+                            "pt": "The name of the following parameters is wrong [additional_info.payer.test] - Este erro é exibido quando o nome de determinado parâmetro é inserido incorretamente. Neste exemplo, o campo `additional_info.payer`. Revise o parâmetro retornado no erro e garanta que a informação inserida esteja correta."
+                          }
+                        },
+                        {
                           "title": "23",
                           "description": {
                             "en": "The following parameters must be valid date and format (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration. - If this error arises, ensure the date_of_expiration is in the correct format.",
@@ -2656,6 +2664,14 @@
                             "en": "The caller is not authorized to perform this action. - If you see this error, ensure you have the necessary permissions to perform this action.",
                             "es": "El caller no está autorizado para realizar esta acción. - Si ve este error, asegúrese de tener los permisos necesarios para realizar esta acción.",
                             "pt": "O caller não está autorizado a realizar esta ação. - Caso veja esse erro, certifique-se de que tem as permissões necessárias para realizar essa ação."
+                          }
+                        },
+                        {
+                          "title": "pa_unauthorized_result_from_policies",
+                          "description": {
+                            "en": "blocked_by PolicyAgent - At least one policy returned unauthorized - This error occurs when at least one policy returns 'unauthorized'. This can happen if the `authorization` header is removed during the request or if the Access Token is not sent. Please verify the submission of this information and try making a new request.",
+                            "es": "blocked_by PolicyAgent - At least one policy returned unauthorized - Este error ocurre cuando al menos una política devuelve 'unauthorized'. Esto puede suceder si el header de `authorization` se elimina durante la solicitud o si no se envía el Access Token. Verifique el envío de esta información e intente hacer una nueva solicitud.",
+                            "pt": "blocked_by PolicyAgent - At least one policy returned unauthorized - Este erro ocorre quando pelo menos uma política retorna 'unauthorized'. Isso pode acontecer se o header de `authorization` for removido durante a requisição ou se o Access Token não for enviado. Verifique o envio dessas informações e tente fazer uma nova requisição."
                           }
                         }
                       ]
