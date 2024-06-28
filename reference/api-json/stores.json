@@ -712,9 +712,9 @@
                         {
                           "title": "BAD_REQUEST",
                           "description": {
-                            "en": "The store coordinates are outside the site - Ensure that the entered coordinates are within the specified location.",
-                            "es": "The store coordinates are outside the site - Asegúrese de que las coordenadas ingresadas estén dentro del lugar especificado.",
-                            "pt": "The store coordinates are outside the site - Garanta que as coordenadas inseridas estejam dentro do local determinado."
+                            "en": "Errors caused by inconsistencies in the request information. See below for possible responses.",
+                            "es": "Errores causados por inconsistencias en la información de la solicitud. Vea a continuación las posibles respuestas.",
+                            "pt": "Erros causados por inconsistências nas informações do request. Veja abaixo os possíveis retornos."
                           },
                           "enum": [
                             {
@@ -723,6 +723,14 @@
                                 "en": "The name of the following parameters is wrong [additional_info.payer] - This error is displayed when `additional_info.payer` is incorrectly informed. In this case, review whether the entered name is correct and make a new request.",
                                 "es": "The name of the following parameters is wrong [additional_info.payer] - Este error se muestra cuando `additional_info.payer` se informa incorrectamente. En este caso, revise si el nombre ingresado es correcto y realice una nueva solicitud.",
                                 "pt": "The name of the following parameters is wrong [additional_info.payer] - Esse erro é exibido quando em additional_info.payer é informado erroneamente. Neste caso, revise se o nome inserido está correto e faça uma nova requisição."
+                              }
+                            },
+                            {
+                              "title": "bad_request",
+                              "description": {
+                                "en": "The store coordinates are outside the site - Ensure that the entered coordinates are within the specified location.",
+                                "es": "The store coordinates are outside the site - Asegúrese de que las coordenadas ingresadas estén dentro del lugar especificado.",
+                                "pt": "The store coordinates are outside the site - Garanta que as coordenadas inseridas estejam dentro do local determinado."
                               }
                             }
                           ]
