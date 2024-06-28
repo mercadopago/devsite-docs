@@ -82,3 +82,11 @@ By clicking on **Evaluate quality**, you will initiate the review process of you
 Access [Integration quality](/developers/en/docs/integration-quality) and learn all the necessary information to know how to measure the quality of your application.
 
 > Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment. 
+
+## Integration test
+
+In this section, you have a step-by-step guide to test your integration, which will allow you to validate that you are meeting the necessary requirements based on the integrated product. 
+
+In addition, you have direct links to the corresponding documentation, as well as a status bar that will allow you to view your progress easily.
+
+![Validation screen for integration test](/images/dashboard/testing-validation-es.gif)
