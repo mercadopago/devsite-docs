@@ -1,5 +1,12 @@
 Utiliza cuentas de prueba para asegurar que tu integración soporta todos los flujos y escenarios posibles. Tienen las mismas características que una cuenta real de Mercado Pago, lo que te permite probar el funcionamiento de las integraciones que estás desarrollando.
 
+> WARNING
+>
+> Importante
+>
+> Las integraciones con Checkout ----[mlb]----Transparente------------ ----[mla, mlm, mpe, mco, mlu, mlc]----API------------ y Checkout Bricks no soportan usuarios de prueba para realizar pruebas de integración. Por este motivo, no podrás acceder a esta sección desde una aplicación creada para cualquiera de estos dos productos. Accede a la documentación de Prueba de integración de ----[mlb]----[Checkout Transparente](/developers/es/docs/checkout-api/integration-test/make-test-purchase)------------ ----[mla, mlm, mpe, mco, mlu, mlc]----[Checkout API](/developers/es/docs/checkout-api/integration-test/make-test-purchase)------------ y [Checkout Bricks](/developers/es/docs/checkout-bricks/integration-test/test-payment-flow) para más información.
+
+
 Para realizar las pruebas, debes tener al menos dos cuentas:
 
 * **Vendedor**: cuenta requerida para **configurar la aplicación y las credenciales**. Esta es tu cuenta de usuario.
@@ -7,7 +14,7 @@ Para realizar las pruebas, debes tener al menos dos cuentas:
 
 Además de estas cuentas, también es importante utilizar las [tarjetas de prueba](/developers/es/guides/additional-content/your-integrations/test-cards) para probar la integración de pago y simular el proceso de compra, así como el **saldo en la cuenta de Mercado Pago del usuario de prueba**. Te mostramos más detalles a continuación.
 
-![testuser](test-user/create-test-users-es.png)
+![testuser](/images/dashboard/new-test-users-es.png)
 
 Para crear cuentas y probar el funcionamiento de las integraciones, sigue los siguientes pasos:
 
@@ -20,7 +27,9 @@ Para crear cuentas y probar el funcionamiento de las integraciones, sigue los si
 7. Haz clic en **Crear cuenta de prueba**.
 
 
-¡Listo! La cuenta de prueba se ha creado y se mostrará en la tabla con la siguiente información:
+¡Listo! La cuenta de prueba se ha creado y se mostrará en la tabla con la información a continuación.
+
+![testuser](/images/dashboard/test-users-es.png)
 
 * **País**: Lugar de origen de la cuenta seleccionado en tu registro.
 * **Identificación de la cuenta**: Descripción para identificar la cuenta de prueba.
@@ -46,3 +55,5 @@ Como se trata de usuarios ficticios, no tendrás acceso a este e-mail que recibi
 > Importante
 >
 > Para acceder al User ID o el Access Token de una cuenta de prueba, deberás haber creado previamente una aplicación. Para saber cómo hacerlo, accede a la documentación sobre el [Panel del Desarrollador](/developers/es/docs/your-integrations/dashboard). <br> <br> Si tienes dudas sobre cómo obtener el User ID o el Access Token, accede a [Detalles de la aplicación](/developers/es/docs/your-integrations/application-details) o [Credenciales](/developers/es/docs/your-integrations/credentials).
+
+Ten en cuenta que, al realizar este inicio de sesión con una cuenta de prueba, no tendrás acceso a ciertas secciones dentro del Panel del Desarrollador, como a Credenciales de prueba o Calidad de integración. Se trata de secciones que no sólo no son necesarias para este tipo de cuentas, sino que también pueden interferir en el uso adecuado y deseado de los mismos.
