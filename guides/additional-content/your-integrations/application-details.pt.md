@@ -83,7 +83,6 @@ Acesse [Qualidade da integração](/developers/pt/docs/integration-quality) e co
 
 > Após implementar melhorias, é necessário clicar novamente em **Atualizar pontuação** para reavaliar sua integração e verificar se ela atende aos padrões exigidos. 
 
-
 ## Teste de integração
 
 Nesta seção, você tem um guia passo a passo para testar sua integração. Isto permitirá validar se está atendendo aos requisitos necessários com base no produto integrado. 
