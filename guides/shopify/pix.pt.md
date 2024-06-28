@@ -133,14 +133,14 @@ Para isso, siga os passos abaixo:
 2. Localize o aplicativo **Mercado Pago Pix** e selecione-o.
 3. Na tela seguinte, clique em **Mais ações > Gerenciar**.
 
-![More actions](/images/woocomerce/pix-more-actions.png)
+![More actions](/images/shopify/pix-more-actions.png)
 
 4. No campo "**Prazo de vencimento para pagamentos com Pix**", selecione a opção desejada.
 
-![Expiration date](/images/woocomerce/pix-expiration-date.png)
+![Expiration date](/images/shopify/pix-expiration-date.png)
 
 5. Clique em **Salvar**.
 
-![Save expiration date](/images/woocomerce/pix-save-expiration-date.png)
+![Save expiration date](/images/shopify/pix-save-expiration-date.png)
 
 Pronto! O prazo de vencimento foi estabelecido.
