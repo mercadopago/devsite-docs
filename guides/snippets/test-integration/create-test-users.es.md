@@ -4,7 +4,7 @@ Utiliza cuentas de prueba para asegurar que tu integración soporta todos los fl
 >
 > Importante
 >
-> Las integraciones con Checkout ----[mlb]----Transparente------------ ----[mla, mlm, mpe, mco, mlu, mlc]----API------------ y Checkout Bricks no soportan usuarios de prueba para realizar pruebas de integración. Por este motivo, no podrás acceder a esta sección desde una aplicación creada para cualquiera de estos dos productos. Accede a la documentación de Prueba de integración de ----[mlb]----[Checkout Transparente](/developers/es/docs/checkout-api/integration-test/make-test-purchase)------------ ----[mla, mlm, mpe, mco, mlu, mlc]----[Checkout API](/developers/es/docs/checkout-api/integration-test/make-test-purchase)------------ y [Checkout Bricks](/developers/es/docs/checkout-bricks/integration-test/test-payment-flow) para más información.
+> Las integraciones con Checkout ----[mlb]----Transparente------------ ----[mla, mlm, mpe, mco, mlu, mlc]----API------------ y Checkout Bricks no soportan usuarios de prueba para realizar pruebas de integración. Por este motivo, no podrás acceder a esta sección desde una aplicación creada para cualquiera de estos dos productos. Accede a la documentación de Prueba de Integración de ----[mlb]----[Checkout Transparente](/developers/es/docs/checkout-api/integration-test/make-test-purchase)------------ ----[mla, mlm, mpe, mco, mlu, mlc]----[Checkout API](/developers/es/docs/checkout-api/integration-test/make-test-purchase)------------ y [Checkout Bricks](/developers/es/docs/checkout-bricks/integration-test/test-payment-flow) para más información.
 
 Para realizar las pruebas, debes tener al menos dos cuentas:
 
