@@ -113,6 +113,45 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 >
 > Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que permitirá **reforçar a segurança do site e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
 
+## Configure parcelas sem acréscimo
+
+Após instalar e ativar o app **Mercado Pago Cartões**, configure a opção correspondente para permitir que seus clientes parcelem suas compras sem acréscimos, utilizando qualquer cartão de crédito. Para isso, siga os passos abaixo.
+
+1. Faça login em sua [conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
+2. Vá até a seção **Seu negócio > Custos** e selecione a opção **Checkout**.
+
+![configure installments 1](/images/shopify/configure-installments-1-pt.png)
+
+3. Em "Parcelas sem acréscimo", clique em **Configurar parcelamento**.
+
+![configure installments 2](/images/shopify/configure-installments-2-pt.png)
+
+4. Em seguida, clique em **Configurar parcelamento sem acréscimo**.
+
+![configure installments 3](/images/shopify/configure-installments-3-pt.png)
+
+5. Por fim, ative a opção **Oferecer parcelamento sem acréscimo** e escolha quantas parcelas deseja oferecer na sua loja.
+
+![configure installments 4](/images/shopify/configure-installments-4-pt.png)
+
+6. Feitas as configurações de parcelamento, vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
+7. No painel administrativo da loja, clique em **Configurações** no canto inferior esquerdo da página.
+
+![configure installments 5](/images/shopify/configure-installments-5-pt.png)
+
+8. Uma vez lá, selecione a opção **Pagamentos** no menu ao lado esquerdo da página.
+9. Em "Mercado Pago Cartões", clique em **Gerenciar**.
+
+![configure installments 6](/images/shopify/configure-installments-6-pt.png)
+
+10. Em seguida, clique em **Mais ações > Gerenciar**.
+
+![configure installments 7](/images/shopify/configure-installments-7-pt.png)
+
+11. Por fim, clique em **Sincronizar** para que o parcelamento configurado seja sincronizado com a sua loja.
+
+![configure installments 8](/images/shopify/configure-installments-8-pt.png)
+
 ## Desative o antigo app
 
 Após instalar a nova versão, é necessário desinstalar o antigo app. Para desinstalá-lo, siga as etapas abaixo.
@@ -137,24 +176,3 @@ Após instalar a nova versão, é necessário desinstalar o antigo app. Para des
 6. Por fim, clique em **Desativar Mercado Pago** > **Desativar Mercado Pago**.
 
 ![uninstall app 5](/images/shopify/uninstall-app-5-pt.png)
-
-### Configurar parcelas sem acréscimo
-
-Após instalar e ativar o app **Mercado Pago Cartões**, configure a opção correspondente para permitir que seus clientes parcelem suas compras sem acréscimos, utilizando qualquer cartão de crédito. Para isso, siga os passos abaixo.
-
-1. Faça login em sua [conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
-2. Vá até a seção **Seu negócio > Custos** e selecione a opção **Checkout**.
-
-![configure installments 1](/images/shopify/configure-installments-1-pt.png)
-
-3. Em "Parcelas sem acréscimo", clique em **Configurar parcelamento**.
-
-![configure installments 2](/images/shopify/configure-installments-2-pt.png)
-
-4. Em seguida, clique em **Configurar parcelamento sem acréscimo**.
-
-![configure installments 3](/images/shopify/configure-installments-3-pt.png)
-
-5. Por fim, ative a opção **Oferecer parcelamento sem acréscimo** e escolha quantas parcelas deseja oferecer na sua loja.
-
-![configure installments 4](/images/shopify/configure-installments-4-pt.png)
