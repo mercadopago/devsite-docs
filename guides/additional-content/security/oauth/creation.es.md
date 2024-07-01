@@ -4,8 +4,8 @@ Aprende a utilizar los flujos, también conocidos como _grant types_, para obten
 
 Los flujos de acceso disponibles para la generación del Access Token son:
 
-- [Authorization code](/developers/es/docs/security/oauth/creation#bookmark_authorization_code): flujo que debe ser usado si se van a usar credenciales para acceder a un recurso a nombre de un tercero.
-- [Client credentials](/developers/es/docs/security/oauth/creation#bookmark_client_credentials): flujo que debe ser usado si se van a usar credenciales para acceder a un recurso en nombre propio.
+- [Authorization code](/developers/es/docs/security/oauth/creation#bookmark_authorization_code): se van a usar credenciales para acceder a un recurso a nombre de un tercero.
+- [Client credentials](/developers/es/docs/security/oauth/creation#bookmark_client_credentials): se van a usar credenciales para acceder a un recurso en nombre propio.
 
 > NOTE
 >

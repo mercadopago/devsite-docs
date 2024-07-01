@@ -4,8 +4,8 @@ Saiba como utilizar os fluxos, também conhecidos como _grant types_, para obter
 
 Os fluxos de acesso disponíveis para geração do Access Token são:
 
-- [Authorization code](/developers/pt/guides/security/oauth/creation#bookmark_authorization_code): fluxo que deve ser usado quando se for usar as credenciais para acessar um recurso em nome de terceiros.
-- [Client credentials](/developers/pt/guides/security/oauth/creation#bookmark_client_credentials): fluxo que deve ser usado quando se for usar as credenciais para acessar um recurso em nome próprio.
+- [Authorization code](/developers/pt/guides/security/oauth/creation#bookmark_authorization_code): quando se for usar as credenciais para acessar um recurso em nome de terceiros.
+- [Client credentials](/developers/pt/guides/security/oauth/creation#bookmark_client_credentials): quando se for usar as credenciais para acessar um recurso em nome próprio.
 
 > NOTE
 >
