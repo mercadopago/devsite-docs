@@ -70,9 +70,9 @@ Accede a la documentación de [OAuth](/developers/es/docs/security/oauth/introdu
 
 ### Credenciales de prueba
 
-Las credenciales de prueba son un conjunto de claves que **no están disponibles en todas las aplicaciones**, solo en los productos en que estas claves se utilizarán para testear la respectiva integración.
+Las credenciales de prueba son un conjunto de claves que se utilizan para testear la integración. Estas credenciales **no están disponibles para todos los productos de Mercado Pago**, por lo que sólo estarán activas en las aplicaciones en donde hayas seleccionado un producto que las requiera. 
 
-Estas credenciales pueden ser combinadas con tarjetas de crédito de prueba para simular transacciones y verificar el correcto funcionamiento de las integraciones.
+Las credenciales de prueba pueden ser combinadas con tarjetas de crédito de prueba para simular transacciones y verificar el correcto funcionamiento de las integraciones.
 
 Podrás obtener tus credenciales de prueba accediendo a [Tus integraciones > "Tu aplicación" > Credenciales de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 
@@ -83,6 +83,20 @@ Podrás obtener tus credenciales de prueba accediendo a [Tus integraciones > "Tu
 ----[mla, mlu, mlc, mlm, mco, mpe]----
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-test-es.gif)
 ------------
+
+Si estás integrando un producto que no utiliza credenciales de prueba, no podrás utilizarlas. En su lugar, deberás utilizar [cuentas de prueba](/developers/es/docs/your-integrations/test/accounts). Si al crear una aplicación seleccionaste un producto de Mercado Pago que no requiere credenciales de prueba, verás la siguiente pantalla:
+
+![Pantalla de cuentas de test bloqueada](devsite-docs/images/credentials/blocked-test-credentials-es.png)
+
+## Compartir credenciales
+
+Cuando recibas ayuda en la integración o configuración de tus canales de pago, puedes compartir tus credenciales de forma segura. Para hacerlo, sigue los pasos a continuación:
+
+1. Accede a tu cuenta de Mercado Pago.
+2. Ve a [Tu negocio > Configuraciones > Gestión y Administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
+3. En esa página, selecciona la opción "Compartir mis credenciales".
+4. Ingresa el correo electrónico de la persona a la que deseas conceder acceso.
+5. Asegúrate de que el correo electrónico esté asociado a la cuenta de Mercado Pago de la persona en cuestión.
 
 > WARNING
 >

@@ -70,19 +70,39 @@ Access the [OAuth documentation](/developers/en/docs/security/oauth/introduction
 
 ### Test Credentials
 
-Test credentials are a set of keys that are **not available in all applications**, only in the products where these keys will be used to test the respective integration.
+Test credentials are a set of keys used to test the integration. These credentials **are not available for all Mercado Pago products**, so they will only be active in applications where you have selected a product that requires them.
 
-These credentials can be combined with test credit cards to simulate transactions and verify the proper functioning of the integrations.
+Test credentials can be combined with test credit cards to simulate transactions and verify the correct operation of the integrations.
 
-You can obtain your test credentials by accessing [Your integrations > "Your application" > Test Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
+You can obtain your test credentials by accessing [Your Integrations > "Your application" > Test Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 
 ----[mlb]----
-![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-prod-test-pt.gif)
+![How to access credentials through Your Integrations](/images/credentials/credentials-prod-test-pt.gif)
 ------------
 
 ----[mla, mlu, mlc, mlm, mco, mpe]----
-![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-test-es.gif)
+![How to access credentials through Your Integrations](/images/credentials/credentials-prod-test-es.gif)
 ------------
+
+If you are integrating a product that does not use test credentials, you will not be able to use them. Instead, you should use [test accounts](/developers/es/docs/your-integrations/test/accounts). If when creating an application you selected a Mercado Pago product that does not require test credentials, you will see the following screen:
+
+----[mla, mlu, mlc, mlm, mco, mpe]----
+![Blocked test account screen](devsite-docs/images/credentials/blocked-test-credentials-es.png)
+------------
+
+----[mlb]----
+![Blocked test account screen](devsite-docs/images/credentials/blocked-test-credentials-pt.png)
+------------
+
+## Share Credentials
+
+When you receive assistance in integrating or setting up your payment channels, you can safely share your credentials. To do so, follow the steps below:
+
+1. Access your Mercado Pago account.
+2. Go to [Your business > Settings > Management and Administration > Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
+3. On that page, select the option "Share my credentials".
+4. Enter the email of the person you want to grant access to.
+5. Make sure the email is associated with the person's Mercado Pago account.
 
 > WARNING
 >
