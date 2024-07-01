@@ -2,11 +2,11 @@
 
 As credenciais são **senhas exclusivas** usadas para identificar uma integração em sua conta. Elas desempenham um papel fundamental na captura segura de pagamentos em lojas virtuais e outras aplicações.
 
-Para obter as credenciais, primeiro você deverá **criar uma aplicação** dentro do Mercado Pago. Se você ainda não criou nenhuma, você pode aprender como fazer isso na documentação do [Painel do Desenvolvedor](/developers/pt/docs/checkout-pro/additional-content/your-integrations/dashboard#bookmark_criar_nova_aplicação).
-
 Cada aplicação contará com **dois pares de credenciais de produção** e, quando aplicável ao produto, **um par de credenciais de teste**.
 
 ## Obter credenciais
+
+Para obter as credenciais, primeiro você deverá **criar uma aplicação** dentro do Mercado Pago. Se você ainda não criou nenhuma, você pode aprender como fazer isso na documentação do [Painel do Desenvolvedor](/developers/pt/docs/your-integrations/dashboard#bookmark_criar_nova_aplicação).
 
 Veja abaixo como obter as suas credenciais e em quais situações deverá utilizá-las.
 
@@ -16,7 +16,7 @@ As **credenciais de produção** são um conjunto de chaves que permitem receber
 
 Você poderá obter as suas credenciais de produção de duas maneiras:
 
-1. Accesando a [Suas integrações > "Sua aplicação" > Produção > Credenciais de produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
+1. Accesando a [**Suas integrações > "Sua aplicação" > Produção > Credenciais de produção**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 
 ----[mlb]----
 ![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-prod-panel-pt.gif)
@@ -26,7 +26,7 @@ Você poderá obter as suas credenciais de produção de duas maneiras:
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es.gif)
 ------------
 
-2. Através da sua conta do Mercado Pago, acessando sua loja > Configurações > Gestão e administração > Credenciais.
+2. Através da sua conta do Mercado Pago, acessando **Sua loja > Configurações > Gestão e administração > Credenciais**.
 
 ----[mlb]----
 ![Como acessar as credenciais através do Mercado Pago](/images/credentials/credentials-prod-mp-pt.gif)
@@ -38,12 +38,14 @@ Você poderá obter as suas credenciais de produção de duas maneiras:
 
 Ao acessar as suas credenciais de produção, poderá visualizar os seguintes pares de credenciais:
 
+#### Public Key e Access Token
+
 | Tipo | Descrição |
 | :--- | :--- |
 | Public key | A chave pública da aplicação é geralmente usada no frontend. Ela permite, por exemplo, acessar informações sobre os meios de pagamento e criptografar os dados do cartão. |
 | Access token | Chave privada da aplicação que sempre deve ser usada no backend para gerar pagamentos. É essencial que essa informação seja mantida segura em seus servidores. |
 
-A **Public Key** e o **Access token** são credenciais que serão utilizadas, não necessariamente em conjunto, nas integrações realizadas com os soluções de pagamento do Mercado Pago (Checkout Pro, Checkout Bricks,----[mlb]---- Checkout Transparente------------ ----[mla, mlu, mlc, mlm, mco, mpe]----Checkout API------------ ----[mla, mlb, mlc, mlu]----, Assinaturas e QR Code------------ ----[mco, mlm, mpe]---- e Assinaturas------------) e nas integrações do plugin do Mercado Pago com as plataformas de e-commerce como, por exemplo, Shopify, WooCommerce e Nuvemshop.
+A **Public Key** e o **Access Token** são credenciais que serão utilizadas, não necessariamente em conjunto, nas integrações realizadas com os soluções de pagamento do Mercado Pago (Checkout Pro, Checkout Bricks,----[mlb]---- Checkout Transparente------------ ----[mla, mlu, mlc, mlm, mco, mpe]----Checkout API------------ ----[mla, mlb, mlc, mlu]----, Assinaturas e QR Code------------ ----[mco, mlm, mpe]---- e Assinaturas------------) e nas integrações do plugin do Mercado Pago com as plataformas de e-commerce como, por exemplo, Shopify, WooCommerce e ----[mla, mlu, mlc, mlm, mco, mpe]----Tiendanube------------ ----[mlb]----Nuvemshop------------.
 
 Em algumas soluções de pagamento, a Public Key e o Access token também serão utilizadas para testar a integração. Entretanto, nessas situações serão utilizadas as credenciais de uma [conta de teste](/developers/pt/docs/your-integrations/test/accounts) que estiver sido criado.
 
@@ -53,6 +55,8 @@ Para mais informações sobre quais credenciais serão utilizadas na sua integra
 | :--- | :--- |
 | Client ID | O ID de cliente é um identificador único que representa sua integração. |
 | Client secret | Chave privada usada em alguns plugins para gerar pagamentos. É extremamente importante manter essa informação segura em seus servidores e não permitir acesso a nenhum usuário do sistema ou invasor. |
+
+#### Client ID e Client Secret
 
 O **Client ID** e o **Client Secret** são credenciais utilizadas em algumas integrações mais antigas do plugin do Mercado Pago com plataformas de e-commerce e, principalmente, na obtenção do Access Token a partir do fluxo (grant type) de **Client Credentials**. Esse fluxo é para quando se for usar as credenciais para acessar um recurso em nome próprio, ou seja, é utilizado para obter um Access Token sem interação do usuário.
 
@@ -71,6 +75,14 @@ As credenciais de teste são um conjunto de chaves que **não estão disponívei
 Estas credenciais podem ser combinadas com cartões de crédito de teste para simular transações e verificar o funcionamento correto das integrações.
 
 Você poderá obter as suas credenciais accesando [Suas integrações > "Sua aplicação" > Testes > Credenciais de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
+
+----[mlb]----
+![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-prod-test-pt.gif)
+------------
+
+----[mla, mlu, mlc, mlm, mco, mpe]----
+![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-test-es.gif)
+------------
 
 ## Compartilhar credenciais
 
