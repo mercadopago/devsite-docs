@@ -142,7 +142,7 @@ Após instalar e ativar o app **Mercado Pago Cartões**, configure a opção cor
 
 ![configure installments 3](/images/shopify/configure-installments-3-pt.png)
 
-5. Por fim, ative a opção **Oferecer parcelamento sem acréscimo** e escolha quantas parcelas deseja oferecer na sua loja.
+5. Ative a opção **Oferecer parcelamento sem acréscimo** e escolha quantas parcelas deseja oferecer na sua loja.
 
 ![configure installments 4](/images/shopify/configure-installments-4-pt.png)
 

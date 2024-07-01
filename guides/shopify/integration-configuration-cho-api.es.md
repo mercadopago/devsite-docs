@@ -141,7 +141,7 @@ Después de instalar y activar la aplicación **Mercado Pago Cartões**, configu
 
 ![configure installments 3](/images/shopify/configure-installments-3-es.png)
 
-5. Después de configurar las opciones meses sin intereses, ve a tu tienda Shopify.
+5. Después de configurar las opciones meses sin intereses, ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
 6. En el panel administrativo, haz clic en **Configuraciones** en la esquina inferior izquierda de la página.
 
 ![configure installments 4](/images/shopify/configure-installments-4-es.png)
