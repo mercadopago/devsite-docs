@@ -91,7 +91,7 @@ If you are integrating a product that does not use test credentials, you will no
 ------------
 
 ----[mlb]----
-![Blocked test account screen](/images/credentials/blocked-test-credentials-pt-v2.png)
+![Blocked test account screen](/images/credentials/blocked-test-credentials-es-v3.png)
 ------------
 
 ## Share Credentials
