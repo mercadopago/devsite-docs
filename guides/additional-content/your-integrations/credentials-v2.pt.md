@@ -85,7 +85,7 @@ Você pode obter suas credenciais de teste acessando [Suas Integrações > "Seu 
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-test-panel-es.gif)
 ------------
 
-Se você estiver integrando um produto que não utiliza credenciais de teste, você não poderá usá-las. Em vez disso, deverá utilizar [contas de teste](/developers/es/docs/your-integrations/test/accounts). Se ao criar um aplicativo você selecionou um produto do Mercado Pago que não requer credenciais de teste, você verá a seguinte tela:
+Se você estiver integrando um produto que não utiliza credenciais de teste, você não poderá usá-las. Em vez disso, deverá utilizar [contas de teste](/developers/pt/docs/your-integrations/test/accounts). Se ao criar um aplicativo você selecionou um produto do Mercado Pago que não requer credenciais de teste, você verá a seguinte tela:
 
 ![Pantalla de cuentas de test bloqueada](/images/credentials/blocked-test-credentials-es-v3.png)
 
