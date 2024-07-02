@@ -87,11 +87,11 @@ You can obtain your test credentials by accessing [Your Integrations > "Your app
 If you are integrating a product that does not use test credentials, you will not be able to use them. Instead, you should use [test accounts](/developers/es/docs/your-integrations/test/accounts). If when creating an application you selected a Mercado Pago product that does not require test credentials, you will see the following screen:
 
 ----[mla, mlu, mlc, mlm, mco, mpe]----
-![Blocked test account screen](devsite-docs/images/credentials/blocked-test-credentials-es.png)
+![Blocked test account screen](/images/credentials/blocked-test-credentials-es.png)
 ------------
 
 ----[mlb]----
-![Blocked test account screen](devsite-docs/images/credentials/blocked-test-credentials-pt.png)
+![Blocked test account screen](/images/credentials/blocked-test-credentials-pt.png)
 ------------
 
 ## Share Credentials
