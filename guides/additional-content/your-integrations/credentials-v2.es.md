@@ -62,6 +62,7 @@ Accede a la documentación de [OAuth](/developers/es/docs/security/oauth/introdu
 | Client ID | El ID de cliente es un identificador único que representa tu integración. |
 | Client Secret | Clave privada utilizada en algunos complementos para generar pagos. Es extremadamente importante mantener esta información segura en tus servidores y no permitir el acceso a ningún usuario del sistema o intruso. |
 
+
 > NOTE
 >
 > Nota

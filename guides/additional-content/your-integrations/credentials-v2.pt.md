@@ -47,6 +47,7 @@ A **Public Key** e o **Access Token** são credenciais que serão utilizadas, n�
 | Public key | A chave pública da aplicação é geralmente usada no frontend. Ela permite, por exemplo, acessar informações sobre os meios de pagamento e criptografar os dados do cartão. |
 | Access token | Chave privada da aplicação que sempre deve ser usada no backend para gerar pagamentos. É essencial que essa informação seja mantida segura em seus servidores. |
 
+
 Em algumas soluções de pagamento, a Public Key e o Access token também serão utilizadas para testar a integração. Entretanto, nessas situações serão utilizadas as credenciais de uma [conta de teste](/developers/pt/docs/your-integrations/test/accounts) que estiver sido criado.
 
 Para mais informações sobre quais credenciais serão utilizadas na sua integração, [acesse a respectiva documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs) da solução que estiver sendo integrada.

@@ -47,6 +47,7 @@ The **Public Key** and the **Access Token** are credentials that will be used, n
 | Public key | The application's public key is usually used on the frontend. It allows, for example, accessing information about payment methods and encrypting card data. |
 | Access token | The application's private key that should always be used on the backend to generate payments. It is essential to keep this information secure on your servers. |
 
+
 In some payment solutions, the Public Key and Access Token will also be used to test the integration. However, in these situations, the credentials of a [test account](/developers/en/docs/your-integrations/test/accounts) that has been created will be used.
 
 To obtain more information about which credentials will be used in your integration, [consult the corresponding documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs) of the solution you are integrating.
