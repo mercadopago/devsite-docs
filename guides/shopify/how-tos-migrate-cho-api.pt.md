@@ -29,7 +29,7 @@ Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecem
 
 6. Após localizá-lo, selecione-o e clique em **Instalar**. Leia com atenção as informações sobre as permissões solicitadas e clique em **Instalar** outra vez.
 
-![installation panel 3](/images/shopify/installation-cards-panel-3-pt.png)
+![installation cards 2](/images/shopify/installation-cards-2-pt.png)
 
 7. Após aceitar as permissões solicitadas, clique em **Gerenciar conta** para incluir suas credencias e vincular a sua conta Mercado Pago à loja.
 
@@ -75,7 +75,7 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 
 2. Leia com atenção as informações sobre as permissões solicitadas e clique novamente em **Instalar**.
 
-![installation mkplace 2](/images/shopify/installation-cards-mkplace-2-pt.png)
+![installation cards 2](/images/shopify/installation-cards-2-pt.png)
 
 3. Após aceitar as permissões solicitadas, clique em **Gerenciar conta** para incluir suas credencias e vincular a sua conta Mercado Pago à loja.
 
