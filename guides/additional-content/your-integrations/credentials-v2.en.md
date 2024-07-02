@@ -10,7 +10,7 @@ To obtain the credentials, you must first **create an application** within Merca
 
 Next, learn how to obtain your credentials and in what situations you should use them.
 
-### Production Credentials
+## Production Credentials
 
 **Production credentials** are a set of keys that allow you to receive real payments on online stores and other applications.
 
@@ -38,7 +38,7 @@ You can obtain your production credentials in two ways:
 
 When accessing your production credentials, you will be able to see the following pairs of credentials:
 
-#### Public Key and Access Token
+### Public Key and Access Token
 
 | Type | Description |
 | :--- | :--- |
@@ -51,7 +51,7 @@ In some payment solutions, the Public Key and Access Token will also be used to 
 
 To obtain more information about which credentials will be used in your integration, [consult the corresponding documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs) of the solution you are integrating.
 
-#### Client ID and Client Secret
+### Client ID and Client Secret
 
 | Type | Description |
 | :--- | :--- |
@@ -68,7 +68,7 @@ Access the [OAuth documentation](/developers/en/docs/security/oauth/introduction
 >
 > If for security reasons or any other relevant reason you need to renew your credentials, simply click on **More options** (three dots at the end of the card) **>** **Renew**. Keep in mind that your integration may be affected by the change.
 
-### Test Credentials
+## Test Credentials
 
 Test credentials are a set of keys used to test the integration. These credentials **are not available for all Mercado Pago products**, so they will only be active in applications where you have selected a product that requires them.
 

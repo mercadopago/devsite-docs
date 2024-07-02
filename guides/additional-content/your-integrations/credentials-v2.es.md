@@ -10,7 +10,7 @@ Para obtener las credenciales, primero deberás **crear una aplicación** dentro
 
 A continuación, conoce cómo obtener tus credenciales y en qué situaciones debes utilizarlas.
 
-### Credenciales de producción
+## Credenciales de producción
 
 Las **credenciales de producción** son un conjunto de claves que te permiten recibir pagos reales en tiendas en línea y en otras aplicaciones.
 
@@ -38,7 +38,7 @@ Puedes obtener tus credenciales de producción de dos maneras:
 
 Al acceder a tus credenciales de producción, podrás ver los siguientes pares de credenciales:
 
-#### Public Key y Access Token
+### Public Key y Access Token
 
 | Tipo | Descripción |
 | :--- | :--- |
@@ -51,7 +51,7 @@ En algunas soluciones de pago, la Public Key y el Access Token también se utili
 
 Para obtener más información acerca de cuáles credenciales se utilizarán en tu integración, [consulta la documentación correspondiente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs) de la solución que estás integrando.
 
-#### Client ID y Client Secret
+### Client ID y Client Secret
 
 | Tipo | Descripción |
 | :--- | :--- |
@@ -68,7 +68,7 @@ Accede a la documentación de [OAuth](/developers/es/docs/security/oauth/introdu
 >
 > Si por motivos de seguridad o cualquier otro motivo relevante necesitas renovar tus credenciales, simplemente haz clic en **Más opciones** (tres puntos al final de la tarjeta) > **Renovar**. Ten en cuenta que tu integración puede verse afectada por el cambio.
 
-### Credenciales de prueba
+## Credenciales de prueba
 
 Las credenciales de prueba son un conjunto de claves que se utilizan para testear la integración. Estas credenciales **no están disponibles para todos los productos de Mercado Pago**, por lo que sólo estarán activas en las aplicaciones en donde hayas seleccionado un producto que las requiera. 
 

@@ -10,7 +10,7 @@ Para obter as credenciais, primeiro você deverá **criar uma aplicação** dent
 
 Veja abaixo como obter as suas credenciais e em quais situações deverá utilizá-las.
 
-### Credenciais de produção
+## Credenciais de produção
 
 As **credenciais de produção** são um conjunto de chaves que permitem receber pagamentos reais em lojas on-line e em outras aplicações.
 
@@ -38,7 +38,7 @@ Você poderá obter as suas credenciais de produção de duas maneiras:
 
 Ao acessar as suas credenciais de produção, poderá visualizar os seguintes pares de credenciais:
 
-#### Public Key e Access Token
+### Public Key e Access Token
 
 | Tipo | Descrição |
 | :--- | :--- |
@@ -51,12 +51,13 @@ Em algumas soluções de pagamento, a Public Key e o Access token também serão
 
 Para mais informações sobre quais credenciais serão utilizadas na sua integração, [acesse a respectiva documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs) da solução que estiver sendo integrada.
 
+### Client ID e Client Secret
+
 | Tipo | Descrição |
 | :--- | :--- |
 | Client ID | O ID de cliente é um identificador único que representa sua integração. |
 | Client secret | Chave privada usada em alguns plugins para gerar pagamentos. É extremamente importante manter essa informação segura em seus servidores e não permitir acesso a nenhum usuário do sistema ou invasor. |
 
-#### Client ID e Client Secret
 
 O **Client ID** e o **Client Secret** são credenciais utilizadas em algumas integrações mais antigas do plugin do Mercado Pago com plataformas de e-commerce e, principalmente, na obtenção do Access Token a partir do fluxo (grant type) de **Client Credentials**. Esse fluxo é para quando se for usar as credenciais para acessar um recurso em nome próprio, ou seja, é utilizado para obter um Access Token sem interação do usuário.
 
@@ -68,7 +69,7 @@ Acesse a documentação de [OAuth](/developers/pt/docs/security/oauth/introducti
 >
 > Se por motivos de segurança ou qualquer outro motivo relevante precisar renovar suas credenciais, basta clicar em **Mais opções** (três pontos no final do cartão) > **Renovar**. Tenha em mente que sua integração pode ser afetada pela alteração.
 
-### Credenciais de teste
+## Credenciais de teste
 
 As credenciais de teste são um conjunto de chaves usadas para testar a integração. Essas credenciais **não estão disponíveis para todos os produtos do Mercado Pago**, portanto, só estarão ativas nos aplicativos em que você selecionou um produto que as exige.
 
