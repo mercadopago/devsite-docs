@@ -101,6 +101,12 @@ After installing and activating the **Mercado Pago Tarjetas** app, set up the op
 10. Then, click on **More actions > Manage**.
 11. Finally, click on **Sync** so that the configured installment options are synchronized with your store.
 
+> WARNING
+>
+> Attention
+>
+> Whenever installment settings are changed, it will be necessary to **synchronize** the changes with your store.
+
 ------------
 ----[mlm]----
 To install the **Mercado Pago Cartões** checkout on a Shopify store, we offer the two installation models below.
@@ -185,5 +191,11 @@ After installing and activating the **Mercado Pago Cartões** app, set up the op
 8. In "Mercado Pago Cards", click on **Manage**.
 9. Then, click on **More actions > Manage**.
 10. Finally, click on **Sync** so that the configured installment options are synchronized with your store.
+
+> WARNING
+>
+> Attention
+>
+> Whenever installment settings are changed, it will be necessary to **synchronize** the changes with your store.
 
 ------------

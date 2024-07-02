@@ -163,3 +163,9 @@ Após instalar e ativar o app **Mercado Pago Cartões**, configure a opção cor
 11. Por fim, clique em **Sincronizar** para que o parcelamento configurado seja sincronizado com a sua loja.
 
 ![configure installments 8](/images/shopify/configure-installments-8-pt.png)
+
+> WARNING
+>
+> Atenção
+>
+> Sempre que forem alteradas as configurações de parcelamento, será necessário **sincronizar** as alterações com a sua loja.

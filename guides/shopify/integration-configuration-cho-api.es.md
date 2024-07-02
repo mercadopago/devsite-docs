@@ -158,3 +158,9 @@ Después de instalar y activar la aplicación **Mercado Pago Cartões**, configu
 10. Finalmente, haz clic en **Sincronizar** para que las configuraciones de meses sin intereses se sincronicen con tu tienda.
 
 ![configure installments 7](/images/shopify/configure-installments-7-es.png)
+
+> WARNING
+>
+> Atención
+>
+> Siempre que se cambien las configuraciones de meses sin intereses, será necesario **sincronizar** los cambios con su tienda.

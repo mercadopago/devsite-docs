@@ -152,6 +152,12 @@ Após instalar e ativar o app **Mercado Pago Cartões**, configure a opção cor
 
 ![configure installments 8](/images/shopify/configure-installments-8-pt.png)
 
+> WARNING
+>
+> Atenção
+>
+> Sempre que forem alteradas as configurações de parcelamento, será necessário **sincronizar** as alterações com a sua loja.
+
 ## Desative o antigo app
 
 Após instalar a nova versão, é necessário desinstalar o antigo app. Para desinstalá-lo, siga as etapas abaixo.

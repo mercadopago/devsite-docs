@@ -150,6 +150,12 @@ Después de instalar y activar la aplicación **Mercado Pago Cartões**, configu
 
 ![configure installments 7](/images/shopify/configure-installments-7-es.png)
 
+> WARNING
+>
+> Atención
+>
+> Siempre que se cambien las configuraciones de meses sin intereses, será necesario **sincronizar** los cambios con su tienda.
+
 ## Desactiva la antigua app
 
 Después de instalar la nueva versión, es necesario desinstalar la aplicación antigua. Para desinstalarla, siga los pasos a continuación.

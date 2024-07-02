@@ -98,6 +98,12 @@ After installing and activating the **Mercado Pago Tarjetas** app, set up the op
 10. Then, click on **More actions > Manage**.
 11. Finally, click on **Sync** so that the configured installment options are synchronized with your store.
 
+> WARNING
+>
+> Attention
+>
+> Whenever installment settings are changed, it will be necessary to **synchronize** the changes with your store.
+
 ## Deactivate the old app
 
 After installing the new version, it is necessary to uninstall the old app. To uninstall it, follow the steps below.
