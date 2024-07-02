@@ -77,21 +77,21 @@ Test credentials can be combined with test credit cards to simulate transactions
 You can obtain your test credentials by accessing [Your Integrations > "Your application" > Test Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 
 ----[mlb]----
-![How to access credentials through Your Integrations](/images/credentials/credentials-prod-test-pt.gif)
+![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.gif)
 ------------
 
 ----[mla, mlu, mlc, mlm, mco, mpe]----
-![How to access credentials through Your Integrations](/images/credentials/credentials-prod-test-es.gif)
+![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-test-panel-es.gif)
 ------------
 
 If you are integrating a product that does not use test credentials, you will not be able to use them. Instead, you should use [test accounts](/developers/es/docs/your-integrations/test/accounts). If when creating an application you selected a Mercado Pago product that does not require test credentials, you will see the following screen:
 
 ----[mla, mlu, mlc, mlm, mco, mpe]----
-![Blocked test account screen](/images/credentials/blocked-test-credentials-es.png)
+![Blocked test account screen](/images/credentials/blocked-test-credentials-es-v2.png)
 ------------
 
 ----[mlb]----
-![Blocked test account screen](/images/credentials/blocked-test-credentials-pt.png)
+![Blocked test account screen](/images/credentials/blocked-test-credentials-pt-v2.png)
 ------------
 
 ## Share Credentials
