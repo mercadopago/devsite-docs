@@ -94,6 +94,18 @@ After installing and activating the **Mercado Pago Tarjetas** app, set up the op
 3. In "Interest-free installments," click on **Configure installments**.
 4. Next, click on **Configure interest-free installments**.
 5. Finally, enable the **Offer interest-free installments** option and choose how many installments you want to offer in your store.
+6. After setting up installment configurations, go to your [Shopify](https://accounts.shopify.com/store-login) store.
+7. In the store's administration panel, click on **Settings** in the bottom-left corner of the page.
+8. Once there, select the **Payments** option from the left-hand side menu.
+9. In "Mercado Pago Cards", click on **Manage**.
+10. Then, click on **More actions > Manage**.
+11. Finally, click on **Sync** so that the configured installment options are synchronized with your store.
+
+> WARNING
+>
+> Attention
+>
+> Whenever installment settings are changed, it will be necessary to **synchronize** the changes with your store.
 
 ------------
 ----[mlm]----
@@ -171,8 +183,19 @@ After installing and activating the **Mercado Pago Cartões** app, set up the op
 
 1. Log in to your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
 2. Go to the **Your business > Costs** section and select the **Checkout** option.
-3. In "Interest-free installments," click on **Configure installments**.
-4. Next, click on **Configure interest-free installments**.
-5. Finally, enable the **Offer interest-free installments** option and choose how many installments you want to offer in your store.
+3. In "Interest-free months", click on **Set up months**.
+4. Enable the option **Offer interest-free installments with a credit card** and then choose the number of months you want to offer.
+5. After configuring the interest-free installment options, go to your [Shopify](https://accounts.shopify.com/store-login) store.
+6. In the store's administration panel, click on **Settings** in the bottom-left corner of the page.
+7. Once there, select the **Payments** option from the left-hand side menu.
+8. In "Mercado Pago Cards", click on **Manage**.
+9. Then, click on **More actions > Manage**.
+10. Finally, click on **Sync** so that the configured installment options are synchronized with your store.
+
+> WARNING
+>
+> Attention
+>
+> Whenever installment settings are changed, it will be necessary to **synchronize** the changes with your store.
 
 ------------
