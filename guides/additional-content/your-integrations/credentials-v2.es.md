@@ -40,12 +40,12 @@ Al acceder a tus credenciales de producción, podrás ver los siguientes pares d
 
 ### Public Key y Access Token
 
+La **Public Key** y el **Access Token** son credenciales que serán utilizadas, no necesariamente juntas, en las integraciones realizadas con las soluciones de pago de Mercado Pago (Checkout Pro, Checkout Bricks,----[mlb]---- Checkout Transparente------------ ----[mla, mlu, mlc, mlm, mco, mpe]----Checkout API------------ ----[mla, mlb, mlc, mlu]----, Suscripciones y Código QR------------ ----[mco, mlm, mpe]---- y Suscripciones------------) y en las integraciones del plugin de Mercado Pago con plataformas de e-commerce como, por ejemplo, Shopify, WooCommerce y ----[mla, mlu, mlc, mlm, mco, mpe]----Tiendanube------------ ----[mlb]----Nuvemshop------------.
+
 | Tipo | Descripción |
 | :--- | :--- |
 | Public Key | La clave pública de la aplicación se utiliza generalmente en el frontend. Permite, por ejemplo, acceder a información sobre los medios de pago y cifrar los datos de la tarjeta. |
 | Access Token | Clave privada de la aplicación que siempre se debe utilizar en el backend para generar pagos. Es esencial mantener esta información segura en tus servidores. |
-
-La **Public Key** y el **Access Token** son credenciales que serán utilizadas, no necesariamente juntas, en las integraciones realizadas con las soluciones de pago de Mercado Pago (Checkout Pro, Checkout Bricks,----[mlb]---- Checkout Transparente------------ ----[mla, mlu, mlc, mlm, mco, mpe]----Checkout API------------ ----[mla, mlb, mlc, mlu]----, Suscripciones y Código QR------------ ----[mco, mlm, mpe]---- y Suscripciones------------) y en las integraciones del plugin de Mercado Pago con plataformas de e-commerce como, por ejemplo, Shopify, WooCommerce y ----[mla, mlu, mlc, mlm, mco, mpe]----Tiendanube------------ ----[mlb]----Nuvemshop------------.
 
 En algunas soluciones de pago, la Public Key y el Access Token también se utilizarán para probar la integración. Sin embargo, en estas situaciones se utilizarán las credenciales de una [cuenta de prueba](/developers/es/docs/your-integrations/test/accounts) que haya sido creado.
 
@@ -53,14 +53,14 @@ Para obtener más información acerca de cuáles credenciales se utilizarán en 
 
 ### Client ID y Client Secret
 
+El **Client ID** y el **Client Secret** son credenciales utilizadas en algunas integraciones más antiguas del plugin de Mercado Pago con plataformas de comercio electrónico, y principalmente en la obtención del Access Token a partir del flujo (grant type) de **Client Credentials**. Este flujo se utiliza cuando se van a utilizar las credenciales para acceder a un recurso en nombre propio, es decir, se utiliza para obtener un Access Token sin interacción del usuario.
+
+Accede a la documentación de [OAuth](/developers/es/docs/security/oauth/introduction) para más información.
+
 | Tipo | Descripción |
 | :--- | :--- |
 | Client ID | El ID de cliente es un identificador único que representa tu integración. |
 | Client Secret | Clave privada utilizada en algunos complementos para generar pagos. Es extremadamente importante mantener esta información segura en tus servidores y no permitir el acceso a ningún usuario del sistema o intruso. |
-
-El **Client ID** y el **Client Secret** son credenciales utilizadas en algunas integraciones más antiguas del plugin de Mercado Pago con plataformas de comercio electrónico, y principalmente en la obtención del Access Token a partir del flujo (grant type) de **Client Credentials**. Este flujo se utiliza cuando se van a utilizar las credenciales para acceder a un recurso en nombre propio, es decir, se utiliza para obtener un Access Token sin interacción del usuario.
-
-Accede a la documentación de [OAuth](/developers/es/docs/security/oauth/introduction) para más información.
 
 > NOTE
 >

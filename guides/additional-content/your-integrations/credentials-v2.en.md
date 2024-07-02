@@ -40,12 +40,12 @@ When accessing your production credentials, you will be able to see the followin
 
 ### Public Key and Access Token
 
+The **Public Key** and the **Access Token** are credentials that will be used, not necessarily together, in integrations made with Mercado Pago's payment solutions (Checkout Pro, Checkout Bricks,----[mlb]---- Checkout Transparente------------ ----[mla, mlu, mlc, mlm, mco, mpe]----Checkout API------------ ----[mla, mlb, mlc, mlu]----, Subscriptions and QR Code------------ ----[mco, mlm, mpe]---- and Subscriptions------------) and in integrations of the Mercado Pago plugin with e-commerce platforms such as Shopify, WooCommerce, and ----[mla, mlu, mlc, mlm, mco, mpe]----Tiendanube------------ ----[mlb]----Nuvemshop------------.
+
 | Type | Description |
 | :--- | :--- |
 | Public key | The application's public key is usually used on the frontend. It allows, for example, accessing information about payment methods and encrypting card data. |
 | Access token | The application's private key that should always be used on the backend to generate payments. It is essential to keep this information secure on your servers. |
-
-The **Public Key** and the **Access Token** are credentials that will be used, not necessarily together, in integrations made with Mercado Pago's payment solutions (Checkout Pro, Checkout Bricks,----[mlb]---- Checkout Transparente------------ ----[mla, mlu, mlc, mlm, mco, mpe]----Checkout API------------ ----[mla, mlb, mlc, mlu]----, Subscriptions and QR Code------------ ----[mco, mlm, mpe]---- and Subscriptions------------) and in integrations of the Mercado Pago plugin with e-commerce platforms such as Shopify, WooCommerce, and ----[mla, mlu, mlc, mlm, mco, mpe]----Tiendanube------------ ----[mlb]----Nuvemshop------------.
 
 In some payment solutions, the Public Key and Access Token will also be used to test the integration. However, in these situations, the credentials of a [test account](/developers/en/docs/your-integrations/test/accounts) that has been created will be used.
 
@@ -53,14 +53,14 @@ To obtain more information about which credentials will be used in your integrat
 
 ### Client ID and Client Secret
 
+The **Client ID** and **Client Secret** are credentials used in some older integrations of the Mercado Pago plugin with e-commerce platforms, primarily in obtaining the Access Token using the **Client Credentials** grant type flow. This flow is used when the credentials are going to be used to access a resource on behalf of oneself, meaning it is used to obtain an Access Token without user interaction.
+
+Access the [OAuth documentation](/developers/en/docs/security/oauth/introduction) for more information.
+
 | Type | Description |
 | :--- | :--- |
 | Client ID | The client ID is a unique identifier that represents your integration. |
 | Client secret | A private key used in some plugins to generate payments. It is extremely important to keep this information secure on your servers and not allow access to any system user or intruder. |
-
-The **Client ID** and **Client Secret** are credentials used in some older integrations of the Mercado Pago plugin with e-commerce platforms, primarily in obtaining the Access Token using the **Client Credentials** grant type flow. This flow is used when the credentials are going to be used to access a resource on behalf of oneself, meaning it is used to obtain an Access Token without user interaction.
-
-Access the [OAuth documentation](/developers/en/docs/security/oauth/introduction) for more information.
 
 > NOTE
 >
