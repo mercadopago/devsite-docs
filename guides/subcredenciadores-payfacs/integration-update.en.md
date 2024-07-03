@@ -21,7 +21,7 @@ To use the Payment Facilitator integration, it is necessary to update the `forwa
       "document_number": "222222222222222",
       "city": "SÃO PAULO",
       "address_street": "RUA A",
-	    "business_name": "LOJINHA DO ZÉ",
+	    "legal_name": "LOJINHA DO ZÉ",
       "region_code_iso": "BR-MG",
       "region_code": "BR",
       "document_type": "CNPJ",
