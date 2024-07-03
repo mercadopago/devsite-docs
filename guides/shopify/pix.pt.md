@@ -32,18 +32,18 @@ Para instalar o Mercado Pago Pix via painel administrativo da Shopify, siga os p
 
 8. Após aceitar as permissões solicitadas, clique em **Gerenciar conta** para vincular sua conta Mercado Pago à loja utilizando suas credenciais.
 
+![Manage](/images/shopify/pix-manage-account.png) 
+
 > WARNING
 >
 > Importante
 >
 > Se você já instalou o aplicativo [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards), não é necessário inserir suas credenciais novamente. Avance para o passo 13 deste tutorial.
 
-![Manage](/images/shopify/pix-manage-account.png) 
-
 9. No admin do Mercado Pago, acesse [**Suas integrações**](/developers/panel/app) e selecione sua aplicação. Caso ainda não tenha criado uma aplicação, acesse a [documentação do Painel do desenvolvedor](/developers/pt/docs/shopify/additional-content/your-integrations/dashboard) e saiba como criá-la.
 10. Na aplicação, clique em **Credenciais de produção** no menu à esquerda. Copie a *public_key* e o *access_token*.
 
-![Production credentials](/images/shopify/test-prod-credentials-api.png)
+![Production credentials](/images/woocomerce/test-prod-credentials-api.png)
 
 11. Insira suas credenciais produtivas *access_token* e a *public_key* nos campos correspondentes. **Certifique-se de não inverter os campos ao copiar e colar as credenciais**.
 12. Clique em **Salvar credenciais**.
@@ -85,18 +85,18 @@ Para instalar o Mercado Pago Pix via Marketplace, siga os passos abaixo:
 
 4. Após aceitar as permissões solicitadas, clique em **Gerenciar conta** para vincular sua conta Mercado Pago à loja utilizando suas credenciais.
 
+![Manage](/images/shopify/pix-manage-account.png) 
+
 > WARNING
 >
 > Importante
 >
 > Se você já instalou o aplicativo [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards), não é necessário inserir suas credenciais novamente. Avance para o passo 9 deste tutorial.
 
-![Manage](/images/shopify/pix-manage-account.png) 
-
 5. No admin do Mercado Pago, acesse [**Suas integrações**](/developers/panel/app) e selecione sua aplicação. Caso ainda não tenha criado uma aplicação, acesse a [documentação do Painel do desenvolvedor](/developers/pt/docs/shopify/additional-content/your-integrations/dashboard) e saiba como criá-la.
 6. Na aplicação, clique em **Credenciais de produção** no menu à esquerda. Copie a *public_key* e o *access_token*.
 
-![Production credentials](/images/shopify/test-prod-credentials-api.png)
+![Production credentials](/images/woocomerce/test-prod-credentials-api.png)
 
 7. Insira suas credenciais produtivas *access_token* e a *public_key* nos campos correspondentes. **Certifique-se de não inverter os campos ao copiar e colar as credenciais**.
 8. Clique em **Salvar credenciais**.
