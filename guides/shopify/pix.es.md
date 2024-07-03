@@ -14,7 +14,7 @@ Para instalar Mercado Pago Pix a través del panel administrativo de Shopify, si
 ![Configurations](/images/shopify/pix-configurations-es.png) 
 
 3. Una vez allí, selecciona la opción **Pagos** en el menú al lado izquierdo de la página.
-4. En "Formas de pago aceptadas", haz clic en **Agregar forma de pago**.
+4. En **Formas de pago aceptadas**, haz clic en **Agregar forma de pago**.
 
 ![Add payment method](/images/shopify/pix-add-payment-method-es.png) 
 
@@ -47,7 +47,7 @@ Para instalar Mercado Pago Pix a través del panel administrativo de Shopify, si
 
 ![Production credentials](/images/woocomerce/test-prod-credentials-api-es.png)
 
-11. Ingresa tus credenciales productivas `access_token` y `public_key` en los campos correspondientes, **teniendo cuidado de no invertir los campos al copiar y pegar las credenciales**.
+11. Ingresa tus credenciales productivas `access_token` y `public_key` en los campos correspondientes. **Asegúrese de no invertir los campos al copiar y pegar las credenciales**.
 12. Haz clic en **Guardar credenciales**.
 
 ![Save credentials](/images/shopify/pix-save-credentials-es.png)
@@ -100,7 +100,7 @@ Para instalar Mercado Pago Pix a través del Marketplace, sigue los pasos a cont
 
 ![Production credentials](/images/woocomerce/test-prod-credentials-api-es.png)
 
-7. Ingresa tus credenciales productivas `access_token` y `public_key` en los campos correspondientes, **teniendo cuidado de no invertir los campos al copiar y pegar las credenciales**.
+7. Ingresa tus credenciales productivas `access_token` y `public_key` en los campos correspondientes. **Asegúrese de no invertir los campos al copiar y pegar las credenciales**.
 8. Haz clic en **Guardar credenciales**.
 
 ![Save credentials](/images/shopify/pix-save-credentials-es.png)
