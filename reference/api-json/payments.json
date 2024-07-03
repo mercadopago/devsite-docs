@@ -12,7 +12,6 @@
         "ruby": "require 'mercadopago'\n\nsdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')\n\ncustom_headers = {\n 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'\n}\n\ncustom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)\n\npayment_object = {\n  additional_info: {\n    items: [\n      {\n        id: 'MLB2907679857',\n        title: 'Point Mini',\n        description: 'Point product for card payments via Bluetooth.',\n        picture_url: 'https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png',\n        category_id: 'electronics',\n        quantity: 1,\n        unit_price: 58.8,\n      }\n    ],\n    payer: {\n      first_name: 'Test',\n      last_name: 'Test',\n      phone: {\n        area_code: '11',\n        number: '987654321'\n      },\n      address: {\n        street_number: nil\n      }\n    },\n    shipments: {\n      receiver_address: {\n        zip_code: '12312-123',\n        state_name: 'Rio de Janeiro',\n        city_name: 'Buzios',\n        street_name: 'Av das Nacoes Unidas',\n        street_number: 3003\n      },\n    }\n  },\n  application_fee: nil,\n  binary_mode: false,\n  campaign_id: nil,\n  capture: false,\n  coupon_amount: nil,\n  description: 'Payment for product',\n  differential_pricing_id: nil,\n  external_reference: 'MP0001',\n  installments: 1,\n  metadata: nil,\n  payer: {\n    entity_type: 'individual',\n    type: 'customer',\n    email: 'test_user_123@testuser.com',\n    identification: {\n      type: 'CPF',\n      number: '95749019047'\n    }\n  },\n  payment_method_id: 'master',\n  token: 'ff8080814c11e237014c1ff593b57b4d',\n  transaction_amount: 58.8\n}\n\npayment_response = sdk.payment.create(payment_object, custom_request_options)\npayment_response[:response]",
         "tags": [
           "checkout-pro",
-          "mobile-checkout",
           "subscriptions",
           "checkout-api",
           "checkout-bricks"
@@ -240,7 +239,7 @@
                           "pt": "O payer é aquele que faz o pagamento. Este campo é um objeto que possui as informações do pagador.",
                           "es": "El payer es quien realiza el pago. Este campo es un objeto que tiene la información del pagador."
                         },
-                        "required": true,
+                        "required": false,
                         "properties": {
                           "first_name": {
                             "type": "string",
@@ -797,6 +796,70 @@
                           "pt": "Sobrenome do pagante associado",
                           "es": "Apellido del pagador asociado"
                         }
+                      },
+                      "address": {
+                        "type": "object",
+                        "description": {
+                          "en": "Information about the payer's address. Sending it is required when creating payments with boleto bancário in Brazil.",
+                          "pt": "Informações sobre o endereço do pagador. Seu envio é obrigatório ao criar pagamentos com boleto bancário no Brasil.",
+                          "es": "Información sobre la dirección del pagador. Su envío es obligatorio al crear pagos con boleto bancário en Brasil."
+                        },
+                        "properties": {
+                          "zip_code": {
+                            "type": "string",
+                            "description": {
+                              "en": "Refers to the zip code of the buyer's address. Sending it is required when creating payments with boleto bancário in Brazil.",
+                              "pt": "Refere-se ao CEP. Seu envio é obrigatório ao criar pagamentos com boleto bancário no Brasil.",
+                              "es": "Se refiere al código postal. Su envío es obligatorio al crear pagos con boleto bancário en Brasil."
+                            },
+                            "example": "88000000"
+                          },
+                          "street_name": {
+                            "type": "string",
+                            "description": {
+                              "en": "Buyer's street name. Sending it is required when creating payments with boleto bancário in Brazil.",
+                              "pt": "Nome da rua do comprador. Seu envio é obrigatório ao criar pagamentos com boleto bancário no Brasil.",
+                              "es": "Nombre de la calle del comprador. Su envío es obligatorio al crear pagos con boleto bancário en Brasil."
+                            },
+                            "example": "Rua da Abobrinha"
+                          },
+                          "street_number": {
+                            "type": "string",
+                            "description": {
+                              "en": "Buyer's address number. Sending it is required when creating payments with boleto bancário in Brazil.",
+                              "pt": "Número do endereço do comprador. Seu envio é obrigatório ao criar pagamentos com boleto bancário no Brasil.",
+                              "es": "Número de la dirección del comprador. Su envío es obligatorio al crear pagos con boleto bancário en Brasil."
+                            },
+                            "example": "1291"
+                          },
+                          "neighborhood": {
+                            "type": "string",
+                            "description": {
+                              "en": "Neighborhood where the buyer's address is located. Sending it is required when creating payments with boleto bancário in Brazil.",
+                              "pt": "Bairro onde está localizado o endereço do comprador. Seu envio é obrigatório ao criar pagamentos com boleto bancário no Brasil.",
+                              "es": "Barrio donde se ubica la dirección del comprador. Su envío es obligatorio al crear pagos con boleto bancário en Brasil."
+                            },
+                            "example": "Copacabana"
+                          },
+                          "city": {
+                            "type": "string",
+                            "description": {
+                              "en": "City where the buyer lives. Sending it is required when creating payments with boleto bancário in Brazil.",
+                              "pt": "Cidade onde o comprador mora. Seu envio é obrigatório ao criar pagamentos com boleto bancário no Brasil.",
+                              "es": "Ciudad donde vive el comprador. Su envío es obligatorio al crear pagos con boleto bancário en Brasil."
+                            },
+                            "example": "Rio de Janeiro"
+                          },
+                          "federal_unit": {
+                            "type": "string",
+                            "description": {
+                              "pt": "Sigla do Estado onde o comprador mora. Seu envio é obrigatório ao criar pagamentos com boleto bancário no Brasil.",
+                              "en": "State abbreviation where the buyer lives. Sending it is required when creating payments with boleto bancário in Brazil.",
+                              "es": "Sigla del Estado donde vive el comprador. Su envío es obligatorio al crear pagos con boleto bancário en Brasil."
+                            },
+                            "example": "RJ"
+                          }
+                        }
                       }
                     }
                   },
@@ -814,6 +877,14 @@
                           "en": "Instant digital payment method used in Brazil.",
                           "es": "Método de pago digital instantáneo utilizado en Brasil.",
                           "pt": "Método de pagamento digital instantâneo utilizado no Brasil."
+                        }
+                      },
+                      {
+                        "title": "bolbradesco",
+                        "description": {
+                          "en": "Boleto bancário. Offline payment method used in Brazil.",
+                          "es": "Boleto bancário. Método de pago offline utilizado en Brasil.",
+                          "pt": "Boleto bancário. Método de pagamento offline utilizado no Brasil."
                         }
                       },
                       {
@@ -995,6 +1066,95 @@
                           }
                         },
                         {
+                          "title": "partially_refunded",
+                          "description":{
+                            "en": "Payment with at least one partial refund",
+                            "es": "Pago con al menos un reembolso parcial",
+                            "pt": "Pagamento com pelo menos um reembolso parcial"
+                          }
+                        },
+                        {
+                          "title": "by_collector",
+                          "description": {
+                            "en": "Payment cancelled by collector.",
+                            "es": "Pago cancelado por el collector",
+                            "pt": "Pagamento cancelado pelo collector"
+                          }
+                        },
+                        {
+                          "title": "by_payer",
+                          "description": {
+                            "en": "Payment cancelled by payer.",
+                            "es": "Pago cancelado por el payer.",
+                            "pt": "Pagamento cancelado pelo payer."
+                          }
+                        },
+                        {
+                          "title": "expired",
+                          "description": {
+                            "en": "The payment has been in an intermediate status for over 30 days, and the cancellation is being done proactively.",
+                            "es": "El pago lleva más de 30 días en un estado intermedio y la cancelación se realiza de forma proactiva.",
+                            "pt": "O pagamento está há mais de 30 dias em um estado intermediário e o cancelamento é feito de forma proativa."
+                          }
+                        },
+                        {
+                          "title": "in_process",
+                          "description": {
+                            "en": "In the process of recovery after the payment is disputed by the payer.",
+                            "es": "En proceso de recuperación después de que el pago sea impugnado por el pagador.",
+                            "pt": "Em processo de recuperação após o pagamento ser contestado pelo pagador."
+                          }
+                        },
+                        {
+                          "title": "reimbursed",
+                          "description": {
+                            "en": "The transaction money was made available again to the collector after a chargeback recovery process.",
+                            "es": "El dinero de la transacción fue nuevamente disponible para el collector después de un proceso de recuperación de contracargo.",
+                            "pt": "O dinheiro da transação foi novamente disponibilizado ao collector após um processo de recuperação de chargeback."
+                          }
+                        },
+                        {
+                          "title": "refunded",
+                          "description": {
+                            "en": "The amount was refunded by collector.",
+                            "es": "El valor fue devuelto por el collector.",
+                            "pt": "O valor foi devolvido pelo collector."
+                        }
+                        },
+                        {
+                          "title": "settled",
+                          "description": {
+                            "en": "The transaction money was withheld from the collector after a chargeback recovery process.",
+                            "es": "Se retuvo el dinero de la transacción al cobrador después de un proceso de recuperación de contracargo.",
+                            "pt": "O dinheiro da transação foi retido do coletor após um processo de recuperação de chargeback."
+                          }
+                        },
+                        {
+                          "title": "offline_process",
+                          "description": {
+                            "en": "Due to lack of online processing, the payment is being processed through an offline channel.",
+                            "es": "Por falta de un procesamiento online, el pago está siendo procesado por un canal offline.",
+                            "pt": "Devido à falta de processamento online, o pagamento está sendo processado por um canal offline."
+                          }
+                        },
+                        {
+                          "title": "pending",
+                          "description": {
+                            "en": "Mediation in progress.",
+                            "es": "Mediación en curso.",
+                            "pt": "Mediação em andamento."
+                        }
+                      },
+                        {
+                          "title": "pending_capture",
+                          "description": {
+                            "en": "Payment authorized and waiting for capture.",
+                            "es": "Pago autorizado y a la espera de ser capturado.",
+                            "pt": "Pagamento autorizado e esperando captura."
+
+                          }
+                        },    
+                        {
                           "title": "pending_contingency",
                           "description": {
                             "en": "The payment is being processed.",
@@ -1009,6 +1169,22 @@
                             "es": "El pago está en revisión para determinar su aprobación o rechazo.",
                             "pt": "O pagamento está em revisão para determinar sua aprovação ou rejeição."
                           }
+                        },
+                        {
+                          "title": "pending_provider_response",
+                          "description": {
+                            "en": "Pending response from the provider side.",
+                            "es": "Pendiente de respuesta del lado del proveedor.",
+                            "pt": "Pendente de resposta do lado do provedor."
+                        }
+                        },
+                        {
+                          "title": "pending_waiting_transfer",
+                          "description": {
+                            "en": "Waiting for the user to complete the payment process at their bank.",
+                            "es": "Esperando al usuario para terminar el proceso de pago en su banco.",
+                            "pt": "Esperando o usuário concluir o processo de pagamento em seu banco."
+                        }
                         },
                         {
                           "title": "cc_rejected_bad_filled_date",
@@ -1061,7 +1237,7 @@
                         {
                           "title": "cc_rejected_duplicated_payment",
                           "description": {
-                            "en": "Transacción duplicada.",
+                            "en": "Duplicated transaction.",
                             "es": "Transacción duplicada.",
                             "pt": "Transação duplicada."
                           }
@@ -1069,7 +1245,7 @@
                         {
                           "title": "cc_rejected_high_risk",
                           "description": {
-                            "en": "Rechazo por Prevención de Fraude.",
+                            "en": "Rejection due to Fraud Prevention.",
                             "es": "Rechazo por Prevención de Fraude.",
                             "pt": "Rejeição por Prevenção de Fraude."
                           }
@@ -1080,6 +1256,14 @@
                             "en": "Insufficient amount.",
                             "es": "Monto insuficiente.",
                             "pt": "Quantia insuficiente."
+                          }
+                        },
+                        {
+                          "title": "rejected_insufficient_data",
+                          "description": {
+                            "en": "Rejected due to lack of data.",
+                            "es": "Rechazado debido a la falta de datos.",
+                            "pt": "Rejeitado devido à falta de dados."
                           }
                         },
                         {
@@ -6263,6 +6447,215 @@
                 }
               }
             }
+          }
+        },
+        "400": {
+          "description": {
+            "en": "Error",
+            "pt": "Erro",
+            "es": "Error"
+          },
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "errorKey": {
+                    "type": "string",
+                    "enum": [
+                      {
+                        "title": "8",
+                        "description": {
+                          "en": "The name of the parameters is wrong",
+                          "es": "The name of the parameters is wrong",
+                          "pt": "The name of the parameters is wrong"
+                        }
+                      },
+                      {
+                        "title": "1004",
+                        "description": {
+                          "en": "Invalid parameters for payment_method API",
+                          "es": "Invalid parameters for payment_method API",
+                          "pt": "Invalid parameters for payment_method API"
+                        }
+                      },
+                      {
+                        "title": "2018",
+                        "description": {
+                          "en": "The action requested is not valid for the current payment state.",
+                          "es": "The action requested is not valid for the current payment state.",
+                          "pt": "The action requested is not valid for the current payment state."
+                        }
+                      },
+                      {
+                        "title": "2078",
+                        "description": {
+                          "en": "Capture attribute must be boolean.",
+                          "es": "Capture attribute must be boolean.",
+                          "pt": "Capture attribute must be boolean."
+                        }
+                      },
+                      {
+                        "title": "2079",
+                        "description": {
+                          "en": "Invalid value for capture attribute.",
+                          "es": "Invalid value for capture attribute.",
+                          "pt": "Invalid value for capture attribute."
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "403": {
+          "description": {
+            "en": "Error",
+            "pt": "Erro",
+            "es": "Error"
+          },
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "errorKey": {
+                    "type": "string",
+                    "enum": [
+                      {
+                        "title": "4",
+                        "description": {
+                          "en": "The caller is not authorized to access this resource.",
+                          "es": "The caller is not authorized to access this resource.",
+                          "pt": "The caller is not authorized to access this resource."
+                        }
+                      },
+                      {
+                        "title": "3002",
+                        "description": {
+                          "en": "The caller is not authorized to perform this action.",
+                          "es": "The caller is not authorized to perform this action.",
+                          "pt": "The caller is not authorized to perform this action."
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "404": {
+          "description": {
+            "en": "Error",
+            "pt": "Erro",
+            "es": "Error"
+          },
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "errorKey": {
+                    "type": "string",
+                    "enum": [
+                      {
+                        "title": "2000",
+                        "description": {
+                          "en": "Payment not found.",
+                          "es": "Payment not found.",
+                          "pt": "Payment not found."
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "title": {
+        "en": "Update payment",
+        "pt": "Atualizar pagamento",
+        "es": "Actualizar pago"
+      }
+    }
+  },
+  "/v1/payments/search": {
+    "get": {
+      "sdks": true,
+      "java": "MercadoPagoConfig.setAccessToken(\"YOUR_ACCESS_TOKEN\");\n\nPaymentClient client = new PaymentClient();\n\nMap<String, Object> filters = new HashMap<>();\nfilters.put(\"sort\", \"date_created\");\nfilters.put(\"criteria\", \"desc\");\nfilters.put(\"external_reference\", \"ID_REF\");\nfilters.put(\"range\", \"date_created\");\nfilters.put(\"begin_date\", \"NOW-30DAYS\");\nfilters.put(\"end_date\", \"NOW\");\nfilters.put(\"store_id\", \"47792478\");\nfilters.put(\"pos_id\", \"58930090\");\n\nMPSearchRequest searchRequest =\n       MPSearchRequest.builder().offset(0).limit(30).filters(filters).build();\n\nclient.search(searchRequest);",
+      "php": "MercadoPagoConfig::setAccessToken(\"ACCESS_TOKEN\");\n\n$searchRequest = new MPSearchRequest(30, 0, [\n      \"sort\" => \"date_created\",\n      \"criteria\" => \"desc\",\n      \"external_reference\" => \"ID_REF\",\n      \"range\" => \"date_created\",\n      \"begin_date\" => \"NOW-30DAYS\",\n      \"end_date\" => \"NOW\",\n      \"store_id\" => \"47792478\",\n      \"pos_id\" => \"58930090\"\n]);\n$client = new PaymentClient();\n$client->search($searchRequest);",
+      "js": "const client = new MercadoPago({ accessToken: config.access_token });\nconst payment = new Payment(client);\n\npayment.search({ options: {\n\t    external_reference: 'ID_REF',\n\t    sort: 'date_created',\n\t    criteria: 'desc',\n\t    range: 'date_created',\n\t    begin_date: 'NOW-30DAYS',\n\t     end_date: 'NOW',\n\t     store_id: '47792478',\n\t     pos_id: '58930090',\n\t     offset: 0,\n\t     limit: 30,\n} })\n\t.then(console.log).catch(console.log);",
+      "python": "import mercadopago\nsdk = mercadopago.SDK(\"ENV_ACCESS_TOKEN\")\n\n filters = {\n\t\"sort\": \"date_created\",\n\t\"criteria\": \"desc\",\n\t\"external_reference\": \"ID_REF\",\n\t\"range\": \"date_created\",\n\t\"begin_date\": \"NOW-30DAYS\",\n\t\"end_date\": \"NOW\",\n\t\"store_id\": \"47792478\",\n\t\"pos_id\": \"58930090\"}\n\nsearch_request = sdk.payment().search(filters);\nprint(search_request)",
+      "csharp": "MercadoPagoConfig.AccessToken = \"ENV_ACCESS_TOKEN\";\n\nvar searchRequest = new AdvancedSearchRequest\n{\n  Limit = 30,\n  Offset = 0,\n  Sort = \"date_created\",\n  Criteria = \"desc\",\n  Range = \"date_created\",\n  BeginDate = DateTime.Now.Date,\n  EndDate = DateTime.Now.AddDays(1).AddMilliseconds(-1),\n  Filters = new Dictionary<string, object>\n  {\n    [\"ID_REF\"] = \"external_reference\",\n  },\n};\n\nvar client = new PaymentClient();\nResultsResourcesPage<Payment> results = await\nclient.SearchAsync(searchRequest);",
+      "ruby": "require 'mercadopago'\n\nsdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')\n\nfilters = {\n  sort: 'date_created',\n  criteria: 'desc',\n  external_reference: 'ID_REF',\n  range: 'date_created',\n  begin_date: 'NOW-30DAYS',\n  end_date: 'NOW',\n  store_id: '47792478',\n  pos_id: '58930090'\n}\n\npayment_response = sdk.payment.search(filters: filters)\npayment_response[:response]",
+      "tags": [
+        "checkout-pro",
+        "qr-code",
+        "subscriptions",
+        "checkout-api",
+        "mp-point",
+        "checkout-bricks"
+      ],
+      "description": {
+        "en": "Search and return payments made in the last twelve months from the search date",
+        "pt": "Pesquisa e retorna pagamentos efetuados nos últimos doze meses a partir da data de pesquisa",
+        "es": "Busca y retorna los pagos hechos en los último doce meses desde la fecha de pago"
+      },
+      "parameters": [
+        {
+          "name": "sort",
+          "in": "query",
+          "description": {
+            "en": "Parameter used for ordering a list of payments. Sorting can be done using the following attributes - \"date_approved\", \"date_created\", \"date_last_updated\", \"id\", \"money_release_date\".",
+            "pt": "Parâmetro utilizado para a ordenação de uma lista de pagamentos. A ordenação pode ser feita a partir dos seguintes atributos - \"date_approved\", \"date_created\", \"date_last_updated\", \"id\", \"money_release_date\".",
+            "es": "Parámetro utilizado para ordenar una lista de pagos. La clasificación se puede hacer usando los siguientes atributos - \"date_approved\", \"date_created\", \"date_last_updated\", \"id\", \"money_release_date\"."
+          },
+          "required": true,
+          "schema": {
+            "type": "string",
+            "example": "date_created"
+          }
+        },
+        {
+          "name": "criteria",
+          "in": "query",
+          "description": {
+            "en": "It sorts the payments in ascending order (using “asc”) or in descending order (“desc”).",
+            "pt": "Ordena o pagamento de maneira ascendente (utilizando “asc”) ou descendente (“desc”).",
+            "es": "Ordena el pago en orden ascendente (usando \"asc\") o en orden descendente (\"desc\")."
+          },
+          "required": true,
+          "schema": {
+            "type": "string",
+            "example": "desc"
+          }
+        },
+        {
+          "name": "external_reference",
+          "in": "query",
+          "description": {
+            "en": "It is a payment’s external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier.",
+            "pt": "É uma referência externa do pagamento. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação.",
+            "es": "Es una referencia de pago externa. Podría ser, por ejemplo, un código hash del Banco Central, funcionando como identificador del origen de la transacción."
+          },
+          "required": true,
+          "schema": {
+            "type": "string",
+            "example": "ID_REF"
+          }
+        },
+        {
+          "name": "range",
+          "in": "query",
+          "description": {
+            "en": "Parameter used to define the payments search interval. The range can refer to the following attributes - \"date_created\", \"date_last_updated\", \"date_approved\", \"money_release_date\". If not informed, use default \"date_created\".",
+            "pt": "Parâmetro utilizado para definir o intervalo de busca pelos pagamentos. O intervalo pode ser referente aos seguintes atributos - \"date_created\", \"date_last_updated\", \"date_approved\", \"money_release_date\". Se não for informado utiliza por padrão \"date_created\".",
+            "es": "Parámetro utilizado para definir el intervalo de búsqueda de pagos. El rango puede hacer referencia a los siguientes atributos - \"date_created\", \"date_last_updated\", \"date_approved\", \"money_release_date\". Si no se informa, usa por defecto \"date_created\""
           },
           "400": {
             "description": {

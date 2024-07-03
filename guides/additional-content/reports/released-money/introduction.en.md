@@ -6,17 +6,23 @@ Additionally, it informs you whether your money is available or not, allowing yo
 
 ----[mpe]----
 ## Analysis of reports from January 2022
+
 ------------
 ----[mlu]----
 ## Analysis of reports from March 2022
+
+------------
 ----[mlc, mco]----
 ## Analysis of reports from August 2022
+
 ------------
 ----[mla, mlm]----
 ## Analysis of reports from October 2022
+
 ------------
 ----[mlb]----
 ## Analysis of reports from January 2023
+
 ------------
 
 The reports you generate from ----[mpe]----January 2022------------  ----[mlu]----March 2022------------ ----[mla, mlm]----October 2022------------  ----[mco, mlc]----August 2022------------ ----[mlb]----January 2023------------ have the following characteristics:

@@ -28,9 +28,8 @@ You can click on the **Edit data** button to view and edit the basic and advance
 
 #### Advanced settings
 
-* **Redirect URL**: URL (in https) where you want to receive the authorization code when your integration is set up as a marketplace or performed through OAuth. Check out [OAuth](/developers/en/docs/security/oauth/introduction) documentation for more details.
-* **Enable PKCE verification**: If the integration is done with OAuth, you can enable PKCE (Proof Key for Code Exchange) to generate an additional secret code to be used during the authorization process.  Check out [Configure PKCE](/developers/en/docs/security/oauth/creation#bookmark_configure_pkce) documentation for more details.
-* **Allow flow**: Select the types of authentication your application can use, limiting an application only to the flows necessary for its operation and minimizing potential attacks or vulnerability points. The options are: `client_credentials` ([application credentials](/developers/en/guides/additional-content/your-integrations/credentials)) and `authorization_code` ([OAuth authorization code](/developers/en/docs/security/oauth/introduction)). By default, applications will have both options enabled, and by enabling or disabling these options, you can control which authentication flows an application can use.
+* **Redirect URL**: URL (in https) where you want to receive the authorization code when your integration is set up as a marketplace or performed through the flow **Authorization code** by OAuth. **Make sure that is a static URL**. Check out [OAuth](/developers/en/docs/security/oauth/introduction) documentation for more details.
+* **Use the authorization code flow with PKCE**: If the integration is done with the flow **Authorization code** by OAuth, you can enable PKCE (Proof Key for Code Exchange) to generate an additional secret code to be used during the authorization process.  Check out [Configure PKCE](/developers/en/docs/security/oauth/creation#:~:text=Access%20Token.-,Configure%20PKCE,-The%20PKCE%20) documentation for more details.
 * **Application permissions**: Options for accessing your application, including **read**, **offline access** and **write**. By default, your application is created with all permissions enabled, but you can disable a permission by unchecking the corresponding checkbox.
 
 ### Delete application
@@ -83,3 +82,11 @@ By clicking on **Evaluate quality**, you will initiate the review process of you
 Access [Integration quality](/developers/en/docs/integration-quality) and learn all the necessary information to know how to measure the quality of your application.
 
 > Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment. 
+
+## Integration test
+
+In this section, you have a step-by-step guide to test your integration, which will allow you to validate that you are meeting the necessary requirements based on the integrated product. 
+
+In addition, you have direct links to the corresponding documentation, as well as a status bar that will allow you to view your progress easily.
+
+![Validation screen for integration test](/images/dashboard/testing-validation-es.gif)

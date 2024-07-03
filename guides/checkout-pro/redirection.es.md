@@ -6,7 +6,7 @@ Al final del proceso de pago, es posible redirigir al comprador a otro entorno d
 >
 > Redirección automática
 >
-> Si deseas que la redirección para los pagos aprobados sea automática, sin generar un botón de retorno, debes agregar también el atributo `auto_return` con el valor `aprobado`. El tiempo de redireccionamiento será de 40 segundos.
+> Si deseas que la redirección para los pagos aprobados sea automática, debes agregar también el atributo `auto_return` con el valor `approved`. Por defecto, también se mostrará un botón de "Volver al sitio". **El tiempo de redireccionamiento será de 5 segundos**.
 
 En las siguientes tablas encontrarás el detalle de cada uno de los posibles parámetros de request y respuesta.
 
@@ -27,7 +27,7 @@ A través de `back_urls`, se devolverán los siguientes parámetros:
 | --- | --- |
 | `payment_id` | ID (identificador) del pago de Mercado Pago. |
 | `status` | Status del pago. Por ejemplo: `approved` para un pago aprobado o `pending` para un pago pendiente. |
-| `external_reference` | Monto enviado al crear la preferencia de pago. |
+| `external_reference` | Referencia que puedes sincronizar con tu sistema de pagos. |
 | `merchant_order_id` | ID (identificador) de la orden de pago generada en Mercado Pago. |
 
 

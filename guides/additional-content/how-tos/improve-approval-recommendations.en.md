@@ -1,18 +1,12 @@
 # Recommendations to improve your approval
 
+To prevent a legitimate payment from being refused because it does not meet security validations, **it is necessary to include all possible information** when carrying out the transaction. Furthermore, you must pay attention to some security requirements, such as our **Security Code** and **Device ID**.
+
 > WARNING
 >
 > Attention
 >
-> We recommend assessing your [integration’s quality](/developers/en/guides/additional-content/homologator/homologator) before going to production to check if you are meeting the Mercado Pago quality and security standards that would help you obtain a good payment approval rate.
-
-To prevent a legitimate payment from being refused because it does not meet security validations, **it is necessary to include all possible information** when carrying out the transaction. Furthermore, you must pay attention to some security requirements, such as our **Security Code** and **Device ID**.
-
-> NOTE
->
-> Important
->
-> If you use Checkout Pro, you already implement our security methods to prevent fraud.
+> We recommend assessing your [integration’s quality](/developers/en/docs/integration-quality) before going to production to check if you are meeting the Mercado Pago quality and security standards that would help you obtain a good payment approval rate.
 
 ## Detail all information about the payment
 

@@ -8,7 +8,7 @@ The integration of the Mercado Pago module with Tiendanube stores allows you to 
 * [Installments without card](/developers/en/docs/nuvemshop/payments-configuration/mercado-credito): Mercado Pago’s financing method that allows paying in installments without having a card.
 * [Discounts, installments, and interest](/developers/en/docs/nuvemshop/payments-configuration/discounts-and-installment-payments): you have the flexibility to provide your customers with exclusive benefits, including credits, discounts, and special conditions, in a personalized and optional manner.
 
-> The Pix payment option will only be displayed if there is a Pix key registered with Mercado Pago. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and see the step by step.
+> The Pix payment option will only be displayed if there is a Pix Key registered with Mercado Pago. If you haven't created it yet, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) and see the step by step.
 
 ------------
 ----[mpe, mco, mlu, mlc]----

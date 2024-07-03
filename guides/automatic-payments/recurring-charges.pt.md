@@ -8,6 +8,12 @@ Para a primeira transação, sempre será necessário solicitar os dados do cart
 
 Os campos mínimos requeridos para enviar são: `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email`. Lembrando que quanto mais informações adicionais forem transmitidas, maior será a chance do pagamento ser aprovado porque a avaliação de risco terá mais dados para avaliar.
 
+> NOTE
+>
+> Importante
+>
+> Para mais informações sobre como enviar as informações dos pagamentos recorrentes ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post) com o intuito de aumentar a taxa de aprovação para pagamentos deste tipo, acesse a documentação [Mensageria de subscrição](/developers/pt/docs/automatic-payments/recurring-charges/subscription-messaging).
+
 Deve-se levar em consideração dois fluxos para salvar os dados do cartão do cliente:
 
 ----[mlb]----

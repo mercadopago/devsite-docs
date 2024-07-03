@@ -6,7 +6,7 @@ Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é credi
 
 Atualmente o **Mercado Crédito** é oferecido em nosso [Checkout Pro](/developers/pt/docs/checkout-pro/landing) (**Checkout Mercado Pago**) e agora também é possível acessá-lo diretamente do checkout da loja. 
 
-> Caso ainda não tenha o Checkout Pro habilitado em sua loja, acesse a seção [Configuração de pagamentos > Checkout Pro](/developers/pt/docs/nuvemshop/payments-configuration/checkout-pro) para configurá-lo.
+> Caso ainda não tenha o Checkout Pro habilitado em sua loja, acesse a seção [Configuração de pagamentos > Checkout Pro](/developers/pt/docs/nuvemshop/payment-configuration/checkout-pro) para configurá-lo.
 
 Para **exibir o Mercado Crédito no checkout da sua loja**, siga os passos abaixo.
 

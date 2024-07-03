@@ -1,4 +1,4 @@
-# Melhores práticas para a integração do OAuth
+# Boas práticas para a integração do OAuth
 
 Ao usar o OAuth, é importante considerar alguns aspectos para que a integração funcione corretamente.
 
@@ -16,7 +16,6 @@ Ao fazer a chamada POST, utilize apenas os valores `params` solicitados e evite 
 
 ![oauth_params](/images/oauth/oauth-1.png)
 
-
 ## Uso correto dos Query Params
 
 Lembre-se de não enviar nenhum parâmetro dentro dos Query Params. Envie os parâmetros no `request body` conforme indicado em nossa [Referência da API](/developers/pt/reference/oauth/_oauth_token/post).
@@ -25,15 +24,15 @@ Lembre-se de não enviar nenhum parâmetro dentro dos Query Params. Envie os par
 
 ## Uso correto do campo 'grant_type'
 
-Use o campo `grant_type` com o valor `authorization_code` em todas as suas requisições. Tenha em mente que enviar qualquer outro valor pode resultar em um erro na resposta.
+Use o campo `grant_type` com os valores `authorization_code` ou `client_credentials` em todas as suas requisições. Tenha em mente que enviar qualquer outro valor pode resultar em um erro na resposta.
 
 ![oauth_grant_type](/images/oauth/oauth_granttype_v2.png)
 
-## Usando o campo 'state' na solicitação do 'autorization code'
+## Usando o campo 'state' na solicitação do 'autorization code' 
 
 Para aumentar a segurança da integração, inclua o parâmetro `state` no fluxo de solicitação do `authorization code`. Isso garantirá que a resposta pertença a uma solicitação iniciada pelo mesmo aplicativo.
 
-**Certifique-se de que o redirect_uri seja uma URL estática**. Se desejar enviar parâmetros adicionais nessa URL, utilize o parâmetro `state` para incluir essas informações. Caso contrário, a chamada receberá uma resposta de erro se o `redirect_uri` não corresponder exatamente à configuração do aplicativo.
+**Certifique-se de que o `redirect_uri` seja uma URL estática**. Se desejar enviar parâmetros adicionais nessa URL, utilize o parâmetro `state` para incluir essas informações. Caso contrário, a chamada receberá uma resposta de erro se o `redirect_uri` não corresponder exatamente à configuração do aplicativo.
 
 ![oauth_state](/images/oauth/oauth_state_v4.png)
 

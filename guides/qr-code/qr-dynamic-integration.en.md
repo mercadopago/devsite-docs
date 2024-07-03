@@ -40,7 +40,7 @@ To create an order, access our [API Reference](/developers/en/reference/qr-dynam
 The response will be a string with the EMVCo standard. Use the `qr_data` to make the QR code available with a generator or by your application.
 
 ----[mlb]----
-If you have a **Pix key configured** in your Mercado Pago account, the string structure will contain Pix-related data.
+If you have a **Pix Key configured** in your Mercado Pago account, the string structure will contain Pix-related data.
 For example:
 
 ```json

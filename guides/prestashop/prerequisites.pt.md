@@ -17,6 +17,6 @@ Para poder realizar a integração do Mercado Pago com a PrestaShop, é preciso 
 | Servidor Web | Software responsável por aceitar pedidos em HTTP de clientes, geralmente os navegadores, e servi-los com respostas em HTTP | Apache 2.x, Nginx 1.7.x |
 | Sistema operacional | Sistema responsável pelo gerenciamento do hardware do computador. | Linux x86, Windows x86-64 |
 | SSL | Protocolo que permite estabelecer comunicações seguras na internet para atividades como navegação, e-mail e outras transferências de dados. | Certificado SSL |
-| Versão PHP | PHP é uma linguagem de programação amplamente usada para desenvolvimento de aplicações web. Para mais informações, [clique aqui](https://www.php.net/). | PHP 5.6 até 7.1 para PrestaShop 1.6 <br> PHP 5.6 ou superior para PrestaShop 1.7 |
+| Versão PHP | PHP é uma linguagem de programação amplamente usada para desenvolvimento de aplicações web. Para mais informações, [clique aqui](https://www.php.net/). | PHP 5.6 até 7.1 para PrestaShop 1.6 <br> PHP 7.0 ou superior para PrestaShop 1.7 |
 
 Se todos os pré-requisitos forem atendidos, você poderá instalar o módulo do Mercado Pago na plataforma da PrestaShop.

@@ -13,40 +13,39 @@ When sending the request to the Payments endpoint, ensure that the following att
 | Parameter | Description |
 | --- | --- |
 | X-Idempotency-Key | This parameter must be inserted in the header of all requests. For more information, see the Idempotency section. |
+| X-Meli-Session-Id | This parameter can be included in the header of requests. It represents a unique identifier for the buyer's device at the time of purchase. It is mandatory only for integrations belonging to the Gambling industry. If you have any doubts, consult your commercial representative. |
 | wallet_payment | Indicates that it is a payment from a previously linked Wallet Connect seller. |
 | transaction_amount | Total amount to be charged to the buyer. |
 | description | Payment description. |
 | external_reference | Payment reference assigned by seller |
 | payer | Payer information required to create a payment |
 | token | payer_token obtained after completion of the agreement flow. |
-| type_token | Type of payment, to use it in the Wallet Connect flow, the “wallet-token” value must be defined. |
+| type_token | Type of payment. To use it in the Wallet Connect flow, the “wallet-token” value must be defined. |
 | binary_mode | The value of this field is mandatory "true". |
 
 With these parameters in hands, send a **POST** to the endpoint [/v1/advanced_payments](/developers/en/reference/wallet_connect/_advanced_payments/post) and execute the request or, if you prefer, use the `curl` below .
 
 [[[
 ```curl
-
 curl -X POST \
     'https://api.mercadopago.com/v1/advanced_payments' \
     -H 'X-Idempotency-Key: IDEMPOTENCY_KEY' \
+    -H 'X-Meli-Session-Id: DEVICE_ID' \
     -H 'Authorization: Bearer ACCESS_TOKEN' \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     -d '{
-           "wallet_payment":{
-              "transaction_amount":700.50,
-              "description":"Payment Description",
-              "external_reference":"Pago_123"     
+           "wallet_payment": {
+              "transaction_amount": 700.50,
+              "description": "Payment Description",
+              "external_reference": "Pago_123"
            },
-           "payer":{
-              "token":"PAYER_TOKEN",
+           "payer": {
+              "token": "PAYER_TOKEN",
               "type_token": "wallet-token"
-            },
+           },
            "binary_mode": true
-        }'
-
-
+       }'
 ```
 ]]]
 

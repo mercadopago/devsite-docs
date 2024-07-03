@@ -28,9 +28,8 @@ Puedes hacer clic en el botón **Editar datos** para ver y editar las configurac
 
 #### Configuraciones avanzadas
 
-* **URLs de redireccionamiento**: URLs (en https) donde deseas recibir el código de autorización cuando tu integración sea configurada como Marketplace o se realice a través de OAuth. Consulta [OAuth](/developers/es/docs/security/oauth/introduction) para obtener más detalles.
-* **Habilitar verificación PKCE**: en caso de que la integración se realice con OAuth, puedes habilitar el PKCE (_Proof Key for Code Exchange_) para generar un código secreto adicional que se usará durante el proceso de autorización. Consulta [Configurar PKCE](/developers/es/docs/security/oauth/creation#bookmark_configurar_pkce) para obtener más detalles. 
-* **Flujo de acceso**: selecciona los tipos de autenticación que tu aplicación puede utilizar, limitando la aplicación solo a los flujos necesarios para su operación y minimizando posibles ataques o puntos de vulnerabilidad. Las opciones son: `client_credentials` ([credenciales de la aplicación](/developers/es/guides/additional-content/your-integrations/credentials)) y `authorization_code` ([código de autorización OAuth](/developers/es/docs/security/oauth/introduction)). Por defecto, las aplicaciones tendrán ambas opciones habilitadas, y al activar o desactivar estas opciones, puedes controlar qué flujos de autenticación puede utilizar una aplicación.
+* **URLs de redireccionamiento**: URLs (en https) donde deseas recibir el código de autorización cuando tu integración sea configurada como Marketplace o se utilice el flujo **Authorization code** de OAuth. **Asegúrate de que sea una URL estática**. Consulta [OAuth](/developers/es/docs/security/oauth/introduction) para obtener más detalles.
+* **Usar el flujo de código de autorización con PKCE**: en caso de que la integración se realice a través del flujo **Authorization code** de OAuth, puedes habilitar el PKCE (_Proof Key for Code Exchange_) para generar un código secreto adicional que se usará durante el proceso de autorización. Consulta [Configurar PKCE](/developers/es/docs/security/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-El%20PKCE%20) para obtener más detalles. 
 * **Permisos de la aplicación**: son opciones de acceso de tu aplicación, cómo **lectura**, **acceso offline** y **escritura**. Por defecto, tu aplicación se crea con todos los permisos activados, pero puedes desactivar un permiso haciendo clic en la casilla de verificación correspondiente al permiso que deseas cambiar.
 
 ### Eliminar aplicación
@@ -83,3 +82,11 @@ Al hacer clic en **Evaluar la calidad**, comenzarás el proceso de análisis de 
 Accede a [Calidad de la integración](/developers/es/docs/integration-quality) y conoce toda la información necesaria para saber cómo medir la calidad de tu aplicación.
 
 > Después de implementar mejoras, es necesario hacer clic nuevamente en **Actualizar puntaje** para volver a evaluar su integración y verificar si cumple con los estándares requeridos.
+
+## Prueba de integración
+
+En esta sección, cuentas con una guía paso a paso para poder probar tu integración, que te permitirá validar estar cumpliendo con los requisitos necesarios en función del producto integrado. 
+
+Además, cuentas con enlaces directos a la documentación correspondiente, así como con una barra de estado que te permitirá visualizar tus avances de manera sencilla.
+
+![pantalla de validación de prueba de integración](/images/dashboard/testing-validation-es.gif)

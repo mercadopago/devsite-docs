@@ -427,8 +427,3 @@ Se, por outro lado, o estado da intenção de pagamento for `on_terminal`, você
 
 ------------
 
-> NOTE
->
-> Recomendação
->
-> Você pode usar o [Simulador Point](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/point-simulator) para testar sua integração e a criação de intenções de pagamento com segurança usando sua conta e credenciais de teste.

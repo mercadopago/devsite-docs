@@ -12,14 +12,15 @@ A medida que se introducen los datos de la tarjeta, se realiza una búsqueda aut
 > Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de Card Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de Card Payment para obtener más detalles. También recomendamos adoptar el protocolo 3DS 2.0 para aumentar la probabilidad de que se aprueben sus pagos. Para obtener más información, consulte la documentación sobre [Cómo integrar 3DS con Checkout Transparente.](/developers/es/docs/checkout-api/how-tos/integrate-3ds)
 
 ------------
+
 ----[mla, mlm, mpe, mlc]----
 > NOTE
 >
 > Importante
 >
-> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de Card Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de Card Payment para obtener más detalles. También recomendamos adoptar el protocolo 3DS 2.0 para aumentar la probabilidad de que se aprueben sus pagos. Para obtener más información, consulte la documentación sobre [Cómo integrar 3DS con ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------.](/developers/es/docs/checkout-api/how-tos/integrate-3ds)
-
+> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de Card Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de Card Payment para obtener más detalles. También recomendamos adoptar el protocolo 3DS 2.0 para aumentar la probabilidad de que se aprueben sus pagos. Para obtener más información, consulte la documentación sobre [Cómo integrar 3DS con Checkout API.](/developers/es/docs/checkout-api/how-tos/integrate-3ds)
 ------------
+
 ----[mlu, mco]----
 > NOTE
 >
@@ -497,8 +498,8 @@ payment_data = {
  payment_method_id: params[:paymentMethodId],
  payer: {
    email: params[:email],
-   identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-     type: params[:identificationType],------------
+   identification: {
+     type: params[:identificationType],
      number: params[:identificationNumber]
    }
  }
@@ -536,8 +537,8 @@ var paymentRequest = new PaymentCreateRequest
    {
        Email = Request["email"],
        Identification = new IdentificationRequest
-       {----[mla, mlb, mlu, mlc, mpe, mco]----
-           Type = Request["identificationType"],------------
+       {
+           Type = Request["identificationType"],
            Number = Request["identificationNumber"],
        },
    },
@@ -569,8 +570,8 @@ payment_data = {
    "payment_method_id": request.POST.get("payment_method_id"),
    "payer": {
        "email": request.POST.get("email"),
-       "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
-           "type": request.POST.get("type"), ------------
+       "identification": {
+           "type": request.POST.get("type"), 
            "number": request.POST.get("number")
        }
    }

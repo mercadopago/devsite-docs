@@ -12,7 +12,7 @@ Você pode selecionar o idioma do Brick de duas formas diferentes: no momento da
 > Atenção
 >
 > Só é possível modificar o idioma dos Bricks que atuam diretamente no ambiente de sua loja, como o [Payment](/developers/pt/docs/checkout-bricks/payment-brick/introduction), [Card Payment](/developers/pt/docs/checkout-bricks/card-payment-brick/introduction) e o [Status Screen](/developers/pt/docs/checkout-bricks/status-screen-brick/introduction). <br>
-> No caso do Brick de [Wallet](developers/pt/docs/checkout-bricks/wallet-brick/introduction) e do [Payment Brick de Conta Mercado Pago e Parcelamento sem cartão,](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits) o usuário é redirecionado para o ambiente de pagamento do Mercado Pago e, como a interface é independente, ela não pode ser traduzida de acordo com as configurações específicas definidas para a loja.
+> No caso do Brick de [Wallet](/developers/pt/docs/checkout-bricks/wallet-brick/introduction) e do [Payment Brick de Conta Mercado Pago e Parcelamento sem cartão,](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits) o usuário é redirecionado para o ambiente de pagamento do Mercado Pago e, como a interface é independente, ela não pode ser traduzida de acordo com as configurações específicas definidas para a loja.
 
 ------------
 ----[mlc, mlu, mco, mpe]----
