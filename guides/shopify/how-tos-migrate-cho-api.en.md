@@ -8,9 +8,7 @@ See below for how to install the new app (**Mercado Pago Cartões**) and uninsta
 >
 > Attention
 >
-> This new app is only for card payments. Soon, we will communicate the launch exclusively for Pix and indicate the necessary documentation for migration or installation. For now, use [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro) for payments with **Pix** and **boleto bancário**.
-
-See below how to install the new app, **Mercado Pago Cartões**, and uninstall the old one, **Checkout Transparente MP**, to avoid service interruption on Shopify.
+> This new application is exclusive for card payments. To set up Pix payments, refer to the [corresponding documentation](/developers/en/docs/shopify/integration-configuration/pix). For boleto bancário payments, use [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
 
 ## Install the new app
 

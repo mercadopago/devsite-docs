@@ -1,6 +1,6 @@
 # Como migrar para o novo app do Mercado Pago para cartões
 
-Veja abaixo como instalar o novo app (**Mercado Pago Cartões**) e desinstalar o antigo (**Checkout Transparente MP**) para evitar a interrupção do serviço na Shopify.
+Veja abaixo como instalar o novo app (**Mercado Pago Cartões**) e desinstalar o antigo (**Checkout Transparente MP**) para evitar a interrupção do serviço na Shopify. 
 
 O **Mercado Pago Cartões** ([Checkout Transparente](/developers/pt/docs/checkout-api/landing)) é um app que permite pagamentos transparentes com cartões de débito ou crédito em que todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, o Mercado Pago Cartões reduz o abandono do carrinho e aumenta a possibilidade de conversão.
 
@@ -8,7 +8,7 @@ O **Mercado Pago Cartões** ([Checkout Transparente](/developers/pt/docs/checkou
 >
 > Atenção
 >
-> Este novo app é apenas para pagamentos com cartões. Em breve, comunicaremos o lançamento do app apenas para Pix e indicaremos a documentação necessária para migração ou instalação. Por enquanto, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro) para pagamentos com **Pix** e **boleto bancário**.
+> Este novo aplicativo é exclusivo para pagamentos com cartões. Para configurar pagamentos com Pix, consulte a [documentação correspondente](/developers/pt/docs/shopify/integration-configuration/pix). Para pagamentos com boleto bancário, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
 
 ## Instale o novo app
 
