@@ -1,4 +1,3 @@
-----[mco]----
 # PSE
 Con el Checkout API de Mercado Pago puedes ofrecer pagos con **PSE -Pagos Seguros en Línea-**, el servicio que permite realizar compras y pagos a través de internet debitando los recursos en línea directamente de cuentas de ahorros, corriente o depósito electrónico.
 
@@ -302,7 +301,6 @@ Para que los elementos dinámicos creados con estos javascript se carguen cuando
  })();
 
 ``` 
-
 
 > SERVER_SIDE
 >
@@ -661,19 +659,23 @@ Los siguientes campos para enviar un pago son **obligatorios** y deberás comple
 
 | Campo | Descripción | Valores posibles/validaciones | Llamado para obtener los valores |
 |:---:|:---:|:---:|:---:|
-| `transaction_details.financial_institution` | Banco informado en el POST para hacer la transferencia electrónica. Se debe mostrar al usuario el listado de bancos y permitirle seleccionar. El listado se actualiza, por lo que se recomienda consumir la información cada una hora. | - | https://api.mercadopago.com/v1/payment_methods/search?site_id=MCO&id=pse&public_key=YOUR_PUBLIC_KEY  |
+| `transaction_amount` | Monto del pago.  | Debe ser mayor a 0. | - |
+| `transaction_details.financial_institution` | Banco informado en el POST para hacer la transferencia electrónica. Se debe mostrar al usuario el listado de bancos y permitirle seleccionar. El listado se actualiza, por lo que se recomienda consumir la información cada una hora. | No debe ser nulo ni vacío y debe corresponder a un banco existente. | https://api.mercadopago.com/v1/payment_methods/search?site_id=MCO&id=pse&public_key=YOUR_PUBLIC_KEY  |
 | `payer.entity_type` | Tipo de personería, natural o jurídica.  | *individual* o *association* | - |
-| `payer.identification` | Tipo y número de documento del comprador. | - | curl -X GET \ <br> 'https://api.mercadopago.com/v1/identification_types' \ <br> -H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
+| `payer.identification.type` | Tipo de documento del comprador. | Valores aceptados: <br> - RC (Registro Civil de Nacimiento) <br> - TI (Tarjeta de Identidad) <br> - CC (Cedula de Ciudadania)  <br> - TE (Tarjeta de Extranjeria) <br> - CE (Cedula de Extranjeria) <br> - PAS (Pasaporte) <br> - NIT | curl -X GET \ <br> 'https://api.mercadopago.com/v1/identification_types' \ <br> -H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
+| `payer.identification.number` | Tipo y número de documento del comprador. | String <br> Debe tener de 1 hasta 15 posiciones numéricas. Si el tipo es 'Pasaporte', aceptará valores alfanumericos | - |
+| `payer.first_name` | Nombre del comprador.| Debe tener de 1 hasta 32 posiciones. | - |
+| `payer.last_name` | Apellido del comprador. | Debe tener de 1 hasta 32 posiciones. | - |
+| `payer.address.zip_code` | Código postal del comprador. | Debe tener exactamente 5 posiciones. | - |
+| `payer.address.street_name` | Nombre de la calle del domicilio del comprador. | Debe tener de 1 hasta 18 posiciones. | - |
+| `payer.address.street_number` | Número del domicilio del comprador. | Debe tener de 1 hasta 5 posiciones. | - |
+| `payer.address.neighborhood` | Barrio al que pertenece la dirección del comprador. | Debe tener de 1 hasta 18 posiciones.| - |
+| `payer.address.city` | Ciudad del comprador. | Debe tener de 1 hasta 18 posiciones. | - |
+| `payer.phone.area_code` | Código de área del teléfono del comprador. | Debe tener 3 posiciones. | - |
+| `payer.phone.number` | Número de teléfono del comprador. | String <br> Debe tener de 1 hasta 7 posiciones solo acepta caracteres numéricos. | - |
 | `additional_info.ip_address` | Dirección IP del comprador, donde se genera el pago. | - | - |
-| `callback_url` | Página donde se redirecciona al comprador por defecto luego de realizar el pago dentro de la interfaz del banco, cuando el comprador indica que desea regresar a la tienda. <br>Puedes ver mensajes sugeridos para mostrar al comprador en el subtítulo [Ejemplos de mensajes para callback URL](/developers/es/docs/checkout-api/integration-configuration/pse#bookmark_ejemplos_de_mensajes_para_callback_url). | - | - |
-| `payer.address.zip_code` | Código postal del comprador | - | - |
-| `payer.address.street_name` | Nombre de la calle del domicilio del comprador | - | - |
-| `payer.address.street_number` | Número del domicilio del comprador | - | - |
-| `payer.address.neighborhood` | Barrio al que pertenece la dirección del comprador | - | - |
-| `payer.address.city` | Ciudad del comprador | - | - |
-| `payer.phone.area_code` | Código de área del teléfono del comprador. | - | - |
-| `payer.phone.number` | Número de teléfono del comprador | - | - |
-
+| `callback_url` | Página donde se redirecciona al comprador por defecto luego de realizar el pago dentro de la interfaz del banco, cuando el comprador indica que desea regresar a la tienda. <br>Puedes ver mensajes sugeridos para mostrar al comprador en el subtítulo [Ejemplos de mensajes para callback URL](/developers/es/docs/checkout-api/how-tos/migrate-pse#bookmark_ejemplos_de_mensajes_para_callback_url).| No debe ser nulo o vacío y debe tener, como máximo, 512 caracteres.| - |
+| `notification_url` | URL usada para notificar la aplicación que la transferencia ha finalizado. | No debe ser nulo o vacío y debe tener, como máximo, 512 caracteres.| - |
 
 La respuesta mostrará el status `pendiente` hasta que el comprador realice el pago. Además, el parámetro `external_resource_url` devolverá una URL a la que debes redirigir al comprador para que finalice el flujo de pago.
 
@@ -737,9 +739,6 @@ A continuación, te mostramos ejemplos de mensajes que puedes ofrecerle, de acue
 
 ![imagen de transacción rechazada](/images/api/pse-callback-rejected.png)
 
-
 ## Expiración
 
 El pago creado con **PSE** expira automáticamente dentro de los 15 minutos de generado y su status pasa a ser `rechazado`. Si el comprador no accede a la web y realiza el pago dentro de ese tiempo, será necesario generar uno nuevo.
-
-------------

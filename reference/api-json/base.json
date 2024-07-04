@@ -40,16 +40,6 @@
         "url": "/guides/online-payments/marketplace/checkout-pro/introduction"
       }
     },
-    "mobile-checkout": {
-      "description": {
-        "pt": "Mobile Checkout",
-        "en": "Mobile Checkout",
-        "es": "Mobile Checkout"
-      },
-      "externalDocs": {
-        "url": "/guides/online-payments/mobile-checkout/introduction"
-      }
-    },
     "qr-code": {
       "description": {
         "pt": "Código QR",
@@ -118,6 +108,16 @@
       },
       "externalDocs": {
         "url": "/docs/checkout-bricks/landing"
+      }
+    },
+    "money-out": {
+      "description": {
+        "pt": "Money Out",
+        "en": "Money Out",
+        "es": "Money Out"
+      },
+      "externalDocs": {
+        "url": "/docs/money-out/landing"
       }
     },
     "reporting": {

@@ -12,7 +12,6 @@
         "ruby": "require 'mercadopago'\n\nsdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')\n\ncustom_headers = {\n 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'\n}\n\ncustom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)\n\npayment_object = {\n  additional_info: {\n    items: [\n      {\n        id: 'MLB2907679857',\n        title: 'Point Mini',\n        description: 'Point product for card payments via Bluetooth.',\n        picture_url: 'https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png',\n        category_id: 'electronics',\n        quantity: 1,\n        unit_price: 58.8,\n      }\n    ],\n    payer: {\n      first_name: 'Test',\n      last_name: 'Test',\n      phone: {\n        area_code: '11',\n        number: '987654321'\n      },\n      address: {\n        street_number: nil\n      }\n    },\n    shipments: {\n      receiver_address: {\n        zip_code: '12312-123',\n        state_name: 'Rio de Janeiro',\n        city_name: 'Buzios',\n        street_name: 'Av das Nacoes Unidas',\n        street_number: 3003\n      },\n    }\n  },\n  application_fee: nil,\n  binary_mode: false,\n  campaign_id: nil,\n  capture: false,\n  coupon_amount: nil,\n  description: 'Payment for product',\n  differential_pricing_id: nil,\n  external_reference: 'MP0001',\n  installments: 1,\n  metadata: nil,\n  payer: {\n    entity_type: 'individual',\n    type: 'customer',\n    email: 'test_user_123@testuser.com',\n    identification: {\n      type: 'CPF',\n      number: '95749019047'\n    }\n  },\n  payment_method_id: 'master',\n  token: 'ff8080814c11e237014c1ff593b57b4d',\n  transaction_amount: 58.8\n}\n\npayment_response = sdk.payment.create(payment_object, custom_request_options)\npayment_response[:response]",
         "tags": [
           "checkout-pro",
-          "mobile-checkout",
           "subscriptions",
           "checkout-api",
           "checkout-bricks"
@@ -2903,7 +2902,6 @@
       "ruby": "require 'mercadopago'\n\nsdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')\n\npayment_response = sdk.payment.get(123)\npayment_response[:response]",
       "tags": [
         "checkout-pro",
-        "mobile-checkout",
         "qr-code",
         "subscriptions",
         "checkout-api",
@@ -4114,7 +4112,6 @@
       "ruby": "require 'mercadopago'\n\nsdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')\n\ncustom_headers = {\n       'x-idempotency-key': '<SOME_UNIQUE_VALUE>'\n}\n\ncustom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)\n\nupdate_request = {\n      capture: false,\n      transaction_amount: 58.8\n}\n\npayment_response = sdk.payment.update(123, update_request, custom_request_options)\npayment_response[:response]",
       "tags": [
         "checkout-pro",
-        "mobile-checkout",
         "subscriptions",
         "checkout-api"
       ],
@@ -5506,7 +5503,6 @@
       "ruby": "require 'mercadopago'\n\nsdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')\n\nfilters = {\n  sort: 'date_created',\n  criteria: 'desc',\n  external_reference: 'ID_REF',\n  range: 'date_created',\n  begin_date: 'NOW-30DAYS',\n  end_date: 'NOW',\n  store_id: '47792478',\n  pos_id: '58930090'\n}\n\npayment_response = sdk.payment.search(filters: filters)\npayment_response[:response]",
       "tags": [
         "checkout-pro",
-        "mobile-checkout",
         "qr-code",
         "subscriptions",
         "checkout-api",
