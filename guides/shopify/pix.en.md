@@ -143,11 +143,3 @@ After installing the Mercado Pago Pix app, follow the steps below to configure t
 ![Save expiration date](/images/shopify/pix-save-expiration-date-es.png)
 
 Done! The expiration period has been set.
-
-
-
-
-
-
-
-
