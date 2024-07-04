@@ -10,6 +10,12 @@ En esta documentación encontrarás todas las etapas necesarias para realizar la
 
 Con Checkout API, es posible ofrecer pagos a través de Yape utilizando el método de SDK JS para generar un token. Para ello, es necesario enviar los campos de celular y OTP (_One-time password_ encontrado en la aplicación Yape). Con el token, es posible crear un pago.
 
+> WARNING
+>
+> Importante 
+>
+> Si deseas realizar la integración mediante API, avanza a la sección [Agregar formulario para captura de OTP y celular](/developers/es/docs/checkout-api/integration-configuration/yape#adicionarformulrioparacapturadeotpecelular) y sigue las instrucciones.
+
 Para ofrecer pagos con Yape, sigue los siguientes pasos.
 
 ## Importar MercadoPago.js
@@ -50,7 +56,7 @@ Para generar un token Yape, es necesario completar el campo OTP, que representa 
     <input id="form-checkout__payerPhone" name="payerPhone" type="text" />
   </div>
   <div>
-    <label for="payerOTP">Phone Number</label>
+    <label for="payerOTP">OTP</label>
     <input id="form-checkout__payerOTP" name="payerOTP" type="text" />
   </div>
   <div>
@@ -155,7 +161,7 @@ Ejemplo de la respuesta:
 
 ## Crear pago
 
-Después de añadir el formulario para capturar los datos del celular y del OTP y generar el token, debes crear el pago. Para hacerlo, envía el token proporcionado por el SDK de Mercado Pago JS y todos los datos necesarios al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post). Estos datos incluyen 'transaction_amount', 'installments', 'payment_method_id' (específicamente `yape`), e la información del pagador. Si prefieres, también es posible hacer la solicitud utilizando uno de nuestros SDK.
+Después de añadir el formulario para capturar los datos del celular y del OTP y generar el token, debes crear el pago. Para hacerlo, envía el token proporcionado por el SDK de Mercado Pago JS y todos los datos necesarios al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post). Estos datos incluyen 'transaction_amount', 'installments', 'payment_method_id' (específicamente `yape`), e la información del pagador. Si prefieres, también es posible hacer la solicitud utilizando uno de nuestros [SDKs *backend*](/developers/es/docs/sdks-library/landing).
 
 El detalle de cada uno de los parámetros mencionados anteriormente, así como sus respectivos valores posibles, está descrito en la tabla a continuación.
 

@@ -16,6 +16,11 @@ To offer payments with Yape, follow these steps.
 
 The first step in the payment integration process with Yape is capturing the OTP (One-time password) and phone number data to generate the payment token. This is done by including the MercadoPago.js library in your project, followed by the form to capture the necessary data.
 
+> WARNING
+>
+> Important
+> If you wish to perform the integration via API, proceed to the section [Adding form for OTP and phone number capture](/developers/en/docs/checkout-api/integration-configuration/yape#bookmark_adding_form_for_otp_and_phone_number_capture) and follow the instructions.
+
 Use the following code to import the MercadoPago.js library before adding the form. You can import the library via HTML or Bash.
 
 [[[
@@ -50,7 +55,7 @@ To generate a Yape token, you need to fill out the OTP field, which represents t
     <input id="form-checkout__payerPhone" name="payerPhone" type="text" />
   </div>
   <div>
-    <label for="payerOTP">Phone Number</label>
+    <label for="payerOTP">OTP</label>
     <input id="form-checkout__payerOTP" name="payerOTP" type="text" />
   </div>
   <div>
@@ -153,7 +158,7 @@ Example response:
 
 ## Create payment
 
-After adding the form to capture the cell phone and OTP data and generating the token, you must create the payment. To do so, send the token provided by the Mercado Pago JS SDK and all the necessary data to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post). These data include 'transaction_amount', 'installments', 'payment_method_id' (specifically 'yape'), and payer information. Alternatively, you can also make the request using one of our SDKs.
+After adding the form to capture the cell phone and OTP data and generating the token, you must create the payment. To do so, send the token provided by the Mercado Pago JS SDK and all the necessary data to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post). These data include 'transaction_amount', 'installments', 'payment_method_id' (specifically 'yape'), and payer information. Alternatively, you can also make the request using one of our [backend SDKs](/developers/en/docs/sdks-library/landing).
 
 Details of each parameter mentioned above, as well as their respective possible values, are described in the following table.
 
