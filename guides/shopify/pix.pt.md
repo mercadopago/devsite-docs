@@ -4,6 +4,12 @@ O **Mercado Pago Pix** facilita a realização de transações financeiras utili
 
 Para integrar o Mercado Pago Pix, instale o aplicativo via [painel da Shopify](/developers/pt/docs/shopify/integration-configuration/pix#bookmark_instalar_via_painel_da_shopify) ou via [Marketplace](/developers/pt/docs/shopify/integration-configuration/pix#bookmark_instalar_via_marketplace). Após a instalação, você poderá [configurar o prazo de vencimento](/developers/pt/docs/shopify/integration-configuration/pix#bookmark_configurar_prazo_de_vencimento).
 
+> WARNING
+>
+> Importante
+>
+> Para habilitar pagamentos com Pix, é necessário verificar se as chaves Pix foram criadas na sua conta do Mercado Pago. Se ainda não as criou, recomendamos assistir ao [vídeo tutorial](https://www.youtube.com/watch?v=60tApKYVnkA) para um guia passo a passo.
+
 ## Instalar via painel da Shopify
 
 Para instalar o Mercado Pago Pix via painel administrativo da Shopify, siga os passos abaixo:
