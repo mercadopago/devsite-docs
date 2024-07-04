@@ -161,7 +161,7 @@ Ejemplo de la respuesta:
 
 ## Crear pago
 
-Después de añadir el formulario para capturar los datos del celular y del OTP y generar el token, debes crear el pago. Para hacerlo, envía el token proporcionado por el SDK de Mercado Pago JS y todos los datos necesarios al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post). Estos datos incluyen 'transaction_amount', 'installments', 'payment_method_id' (específicamente `yape`), e la información del pagador. Si prefieres, también es posible hacer la solicitud utilizando uno de nuestros [SDKs *backend*](/developers/es/docs/sdks-library/landing).
+Después de añadir el formulario para capturar los datos del celular y del OTP y generar el token, debes crear el pago. Para hacerlo, envía el token proporcionado por el SDK de Mercado Pago JS y todos los datos necesarios al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post). Estos datos incluyen 'transaction_amount', 'installments', 'payment_method_id' (específicamente `yape`), e la información del pagador. Si prefieres, también es posible hacer la solicitud utilizando uno de nuestros [SDKs backend](/developers/es/docs/sdks-library/landing).
 
 El detalle de cada uno de los parámetros mencionados anteriormente, así como sus respectivos valores posibles, está descrito en la tabla a continuación.
 

@@ -19,6 +19,7 @@ The first step in the payment integration process with Yape is capturing the OTP
 > WARNING
 >
 > Important
+>
 > If you wish to perform the integration via API, proceed to the section [Adding form for OTP and phone number capture](/developers/en/docs/checkout-api/integration-configuration/yape#bookmark_adding_form_for_otp_and_phone_number_capture) and follow the instructions.
 
 Use the following code to import the MercadoPago.js library before adding the form. You can import the library via HTML or Bash.
