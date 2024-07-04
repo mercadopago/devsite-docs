@@ -144,11 +144,3 @@ Después de instalar la aplicación Mercado Pago Pix, siga los pasos descritos a
 ![Save expiration date](/images/shopify/pix-save-expiration-date-es.png)
 
 ¡Listo! El plazo de vencimiento ha sido establecido.
-
-
-
-
-
-
-
-
