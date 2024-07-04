@@ -96,7 +96,7 @@ After installing and activating the **Mercado Pago Tarjetas** app, set up the op
 5. Finally, enable the **Offer interest-free installments** option and choose how many installments you want to offer in your store.
 
 ------------
-----[mlm]----
+----[mlb]----
 To install the **Mercado Pago Cartões** checkout on a Shopify store, we offer the two installation models below.
 
 ## Install via Shopify admin panel
