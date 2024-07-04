@@ -74,7 +74,7 @@ Las credenciales de prueba son un conjunto de claves que se utilizan para testea
 
 Las credenciales de prueba pueden ser combinadas con tarjetas de crédito de prueba para simular transacciones y verificar el correcto funcionamiento de las integraciones.
 
-Podrás obtener tus credenciales de prueba accediendo a [Tus integraciones > "Tu aplicación" > Credenciales de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
+Podrás obtener tus credenciales de prueba, **siempre y cuando estén disponibles para tu integración**, accediendo a [Tus integraciones > "Tu aplicación" > Credenciales de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 
 ----[mlb]----
 ![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.gif)
@@ -84,9 +84,15 @@ Podrás obtener tus credenciales de prueba accediendo a [Tus integraciones > "Tu
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-test-panel-es.gif)
 ------------
 
-Si estás integrando un producto que no utiliza credenciales de prueba, no podrás utilizarlas. En su lugar, deberás utilizar [cuentas de prueba](/developers/es/docs/your-integrations/test/accounts). Si al crear una aplicación seleccionaste un producto de Mercado Pago que no requiere credenciales de prueba, verás la siguiente pantalla:
+### Credenciales de prueba no disponibles
+
+Si al crear una aplicación seleccionaste un producto de Mercado Pago que no requiere credenciales de prueba, verás la siguiente pantalla:
 
 ![Pantalla de cuentas de test bloqueada](/images/credentials/blocked-test-credentials-es-v2.png)
+
+Si estás integrando un producto que no utiliza credenciales de prueba, no podrás utilizarlas. En su lugar, deberás utilizar [cuentas de prueba](/developers/es/docs/your-integrations/test/accounts). 
+
+> Las **cuentas de prueba** no tienen habilitadas las credenciales de prueba. Si utilizas una cuenta de prueba, deberás usar sus credenciales de producción.
 
 ## Compartir credenciales
 

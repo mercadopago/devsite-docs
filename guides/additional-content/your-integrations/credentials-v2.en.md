@@ -74,7 +74,7 @@ Test credentials are a set of keys used to test the integration. These credentia
 
 Test credentials can be combined with test credit cards to simulate transactions and verify the correct operation of the integrations.
 
-You can obtain your test credentials by accessing [Your Integrations > "Your application" > Test Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
+You can obtain your test credentials, **as long as they are available for your integration**, by accessing [Your integrations > "Your application" > Test credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 
 ----[mlb]----
 ![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.gif)
@@ -84,7 +84,9 @@ You can obtain your test credentials by accessing [Your Integrations > "Your app
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-test-panel-es.gif)
 ------------
 
-If you are integrating a product that does not use test credentials, you will not be able to use them. Instead, you should use [test accounts](/developers/en/docs/your-integrations/test/accounts). If when creating an application you selected a Mercado Pago product that does not require test credentials, you will see the following screen:
+### Test credentials not available
+
+When creating an application, if you selected a Mercado Pago product that does not require test credentials, you will see the following screen:
 
 ----[mla, mlu, mlc, mlm, mco, mpe]----
 ![Blocked test account screen](/images/credentials/blocked-test-credentials-es-v2.png)
@@ -93,6 +95,10 @@ If you are integrating a product that does not use test credentials, you will no
 ----[mlb]----
 ![Blocked test account screen](/images/credentials/blocked-test-credentials-es-v3.png)
 ------------
+
+If you are integrating a product that does not use test credentials, you will not be able to use them. Instead, you should use [test accounts](/developers/en/docs/your-integrations/test/accounts). 
+
+> **Test accounts** do not have test credentials enabled. If you are using a test account, you will need to use its production credentials.
 
 ## Share Credentials
 

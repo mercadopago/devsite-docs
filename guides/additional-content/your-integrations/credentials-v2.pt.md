@@ -74,7 +74,7 @@ As credenciais de teste são um conjunto de chaves usadas para testar a integra�
 
 As credenciais de teste podem ser combinadas com cartões de crédito de teste para simular transações e verificar o correto funcionamento das integrações.
 
-Você pode obter suas credenciais de teste acessando [Suas Integrações > "Seu aplicativo" > Credenciais de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
+Você pode obter suas credenciais de teste, **desde que estas estejam disponíveis para sua integração**, acessando [Suas integrações > "Sua aplicação" > Credenciais de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 
 ----[mlb]----
 ![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.gif)
@@ -84,9 +84,15 @@ Você pode obter suas credenciais de teste acessando [Suas Integrações > "Seu 
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-test-panel-es.gif)
 ------------
 
-Se você estiver integrando um produto que não utiliza credenciais de teste, você não poderá usá-las. Em vez disso, deverá utilizar [contas de teste](/developers/pt/docs/your-integrations/test/accounts). Se ao criar um aplicativo você selecionou um produto do Mercado Pago que não requer credenciais de teste, você verá a seguinte tela:
+### Credenciais de teste não disponíveis
+
+Se ao criar um aplicativo você selecionou um produto do Mercado Pago que não requer credenciais de teste, você verá a seguinte tela:
 
 ![Pantalla de cuentas de test bloqueada](/images/credentials/blocked-test-credentials-es-v3.png)
+
+Se você estiver integrando um produto que não utiliza credenciais de teste, você não poderá usá-las. Em vez disso, deverá utilizar [contas de teste](/developers/pt/docs/your-integrations/test/accounts). 
+
+> As **contas de teste** não têm as credenciais de teste habilitadas. Se você estiver usando uma conta de teste, precisará usar suas credenciais de produção.
 
 ## Compartilhar credenciais
 
