@@ -12,6 +12,7 @@
         "ruby": "require 'mercadopago'\n\nsdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')\n\ncustom_headers = {\n 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'\n}\n\ncustom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)\n\npayment_object = {\n  additional_info: {\n    items: [\n      {\n        id: 'MLB2907679857',\n        title: 'Point Mini',\n        description: 'Point product for card payments via Bluetooth.',\n        picture_url: 'https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png',\n        category_id: 'electronics',\n        quantity: 1,\n        unit_price: 58.8,\n      }\n    ],\n    payer: {\n      first_name: 'Test',\n      last_name: 'Test',\n      phone: {\n        area_code: '11',\n        number: '987654321'\n      },\n      address: {\n        street_number: nil\n      }\n    },\n    shipments: {\n      receiver_address: {\n        zip_code: '12312-123',\n        state_name: 'Rio de Janeiro',\n        city_name: 'Buzios',\n        street_name: 'Av das Nacoes Unidas',\n        street_number: 3003\n      },\n    }\n  },\n  application_fee: nil,\n  binary_mode: false,\n  campaign_id: nil,\n  capture: false,\n  coupon_amount: nil,\n  description: 'Payment for product',\n  differential_pricing_id: nil,\n  external_reference: 'MP0001',\n  installments: 1,\n  metadata: nil,\n  payer: {\n    entity_type: 'individual',\n    type: 'customer',\n    email: 'test_user_123@testuser.com',\n    identification: {\n      type: 'CPF',\n      number: '95749019047'\n    }\n  },\n  payment_method_id: 'master',\n  token: 'ff8080814c11e237014c1ff593b57b4d',\n  transaction_amount: 58.8\n}\n\npayment_response = sdk.payment.create(payment_object, custom_request_options)\npayment_response[:response]",
         "tags": [
           "checkout-pro",
+          "mobile-checkout",
           "subscriptions",
           "checkout-api",
           "checkout-bricks"
@@ -1973,14 +1974,6 @@
                           }
                         },
                         {
-                          "title": "8",
-                          "description": {
-                            "en": "The name of the following parameters is wrong [additional_info.payer.test] - This error is displayed when the name of a certain parameter is entered incorrectly. In this example, the `additional_info.payer` field. Review the parameter returned in the error and ensure that the information entered is correct.",
-                            "es": "The name of the following parameters is wrong [additional_info.payer.test] - Este error se muestra cuando el nombre de un determinado parámetro se introduce incorrectamente. En este ejemplo, el campo `additional_info.payer`. Revise el parámetro devuelto en el error y asegúrese de que la información introducida sea correcta.",
-                            "pt": "The name of the following parameters is wrong [additional_info.payer.test] - Este erro é exibido quando o nome de determinado parâmetro é inserido incorretamente. Neste exemplo, o campo `additional_info.payer`. Revise o parâmetro retornado no erro e garanta que a informação inserida esteja correta."
-                          }
-                        },
-                        {
                           "title": "23",
                           "description": {
                             "en": "The following parameters must be valid date and format (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration. - If this error arises, ensure the date_of_expiration is in the correct format.",
@@ -2663,14 +2656,6 @@
                             "en": "The caller is not authorized to perform this action. - If you see this error, ensure you have the necessary permissions to perform this action.",
                             "es": "El caller no está autorizado para realizar esta acción. - Si ve este error, asegúrese de tener los permisos necesarios para realizar esta acción.",
                             "pt": "O caller não está autorizado a realizar esta ação. - Caso veja esse erro, certifique-se de que tem as permissões necessárias para realizar essa ação."
-                          }
-                        },
-                        {
-                          "title": "pa_unauthorized_result_from_policies",
-                          "description": {
-                            "en": "blocked_by PolicyAgent - At least one policy returned unauthorized - This error occurs when at least one policy returns 'unauthorized'. This can happen if the `authorization` header is removed during the request or if the Access Token is not sent. Please verify the submission of this information and try making a new request.",
-                            "es": "blocked_by PolicyAgent - At least one policy returned unauthorized - Este error ocurre cuando al menos una política devuelve 'unauthorized'. Esto puede suceder si el header de `authorization` se elimina durante la solicitud o si no se envía el Access Token. Verifique el envío de esta información e intente hacer una nueva solicitud.",
-                            "pt": "blocked_by PolicyAgent - At least one policy returned unauthorized - Este erro ocorre quando pelo menos uma política retorna 'unauthorized'. Isso pode acontecer se o header de `authorization` for removido durante a requisição ou se o Access Token não for enviado. Verifique o envio dessas informações e tente fazer uma nova requisição."
                           }
                         }
                       ]
