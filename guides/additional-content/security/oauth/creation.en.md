@@ -7,7 +7,7 @@ The access flows available for generating the Access Token are:
 - [Authorization code](/developers/en/docs/security/oauth/creation#bookmark_authorization_code): when credentials are to be used to access a resource on behalf of others.
 - [Client credentials](/developers/en/docs/security/oauth/creation#bookmark_client_credentials): when credentials are to be used to access a resource on one's own behalf.
 
-> NOTE
+> WARNING
 >
 > Important
 >

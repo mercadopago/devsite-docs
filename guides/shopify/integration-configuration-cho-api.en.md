@@ -48,7 +48,7 @@ To install the **Mercado Pago Tarjetas** checkout on a Shopify store, we offer t
 
 Done! The **Mercado Pago Tarjetas** checkout is ready to receive payments.
 
-> NOTE
+> WARNING
 >
 > Important
 >
@@ -79,7 +79,7 @@ Done! The **Mercado Pago Tarjetas** checkout is ready to receive payments.
 
 Done! The **Mercado Pago Tarjetas** checkout is ready to receive payments.
 
-> NOTE
+> WARNING
 >
 > Important
 >
@@ -140,7 +140,7 @@ To install the **Mercado Pago Cartões** checkout on a Shopify store, we offer t
 
 Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
-> NOTE
+> WARNING
 >
 > Important
 >
@@ -171,7 +171,7 @@ Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
 Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
-> NOTE
+> WARNING
 >
 > Important
 >

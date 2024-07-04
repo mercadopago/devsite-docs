@@ -66,7 +66,7 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, ofrec
 
 ¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
 
-> NOTE
+> WARNING
 >
 > Importante
 >
@@ -118,7 +118,7 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, ofrec
 
 ¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
 
-> NOTE
+> WARNING
 >
 > Importante
 >

@@ -74,7 +74,7 @@ Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
 Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
-> NOTE
+> WARNING
 >
 > Important
 >

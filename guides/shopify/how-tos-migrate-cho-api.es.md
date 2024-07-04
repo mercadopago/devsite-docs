@@ -61,7 +61,7 @@ Para instalar el checkout **Mercado Pago Cartões** en una tienda Shopify, sigue
 
 ¡Listo! El checkout **Mercado Pago Cartões** está listo para recibir pagos.
 
-> NOTE
+> WARNING
 >
 > Importante
 >
@@ -107,7 +107,7 @@ Para instalar el checkout **Mercado Pago Cartões** en una tienda Shopify, sigue
 
 ¡Listo! El checkout **Mercado Pago Cartões** está listo para recibir pagos.
 
-> NOTE
+> WARNING
 >
 > Importante
 >

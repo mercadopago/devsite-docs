@@ -6,7 +6,7 @@ En caso de rechazo por fondos insuficientes, se puede intentar nuevamente con la
 
 Siempre es importante comunicar a tu cliente el resultado del pago y proporcionar instrucciones para la próxima etapa. Informaremos un `HTTP Status 201 OK` cuando el pago se cree correctamente y un código de resultado para que puedas redirigir al cliente a la página con el mensaje correcto.
 
-> NOTE
+> WARNING
 >
 > Importante
 >
