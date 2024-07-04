@@ -2,9 +2,9 @@
 
 **Mercado Pago Pix** facilitates financial transactions using QR codes or the Pix Copia e Cola functionality, allowing customers to make payments instantly at any time. Additionally, this service ensures immediate approval of transactions and offers the lowest rate for receiving payments.
 
-To integrate Mercado Pago Pix, install the application through the Shopify panel or the Marketplace. After installation, you can configure the expiration period.
+To integrate Mercado Pago Pix, install the application through the [Shopify panel](/developers/en/docs/shopify/integration-configuration/pix#installviashopifyadminpanel) or the [Marketplace](/developers/en/docs/shopify/integration-configuration/pix#bookmark_install_via_marketplace). After installation, you can [configure the expiration period](/developers/en/docs/shopify/integration-configuration/pix#bookmark_configure_expiration_period).
 
-## Instalar a través del panel de Shopify
+## Install via Shopify admin panel
 
 To install Mercado Pago Pix through the Shopify admin panel, follow the steps below:
 
@@ -36,10 +36,9 @@ To install Mercado Pago Pix through the Shopify admin panel, follow the steps be
 
 > WARNING
 >
-> Importante
+> Important
 >
 > If you have already installed the [Mercado Pago Cards](/developers/en/docs/shopify/integration-configuration/checkout-cards) app, you do not need to enter your credentials again. Proceed to step 13 of this tutorial.
-
 
 9. In the Mercado Pago admin, go to [**Your integrations**](https://www.mercadopago.com.br/developers/panel/app) and select your application. If you haven't created an application yet, refer to the [Developer Dashboard documentation](/developers/en/docs/shopify/additional-content/your-integrations/dashboard) to learn how to create one.
 
