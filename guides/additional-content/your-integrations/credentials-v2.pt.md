@@ -20,7 +20,7 @@ Você poderá obter as suas credenciais de produção de duas maneiras:
 
 ![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-prod-mp-pt-v2.gif)
 
-2. Através da sua conta do Mercado Pago, acessando **Sua loja > Configurações > Gestão e administração > Credenciais**.
+2. Através da sua conta do Mercado Pago, acessando [**Sua loja > Configurações > Gestão e administração > Credenciais**](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
 ![Como acessar as credenciais através do Mercado Pago](/images/credentials/credentials-prod-mp-pt.gif)
 
@@ -28,7 +28,7 @@ Ao acessar as suas credenciais de produção, poderá visualizar os seguintes pa
 
 ### Public Key e Access Token
 
-A **Public Key** e o **Access Token** são credenciais que serão utilizadas, não necessariamente em conjunto, nas integrações realizadas com os soluções de pagamento do Mercado Pago (Checkout Pro, Checkout Bricks,----[mlb]---- Checkout Transparente------------ ----[mla, mlu, mlc, mlm, mco, mpe]----Checkout API------------ ----[mla, mlb, mlc, mlu]----, Assinaturas e QR Code------------ ----[mco, mlm, mpe]---- e Assinaturas------------) e nas integrações do plugin do Mercado Pago com as plataformas de e-commerce como, por exemplo, Shopify, WooCommerce e ----[mla, mlu, mlc, mlm, mco, mpe]----Tiendanube------------ ----[mlb]----Nuvemshop------------.
+A **Public Key** e o **Access Token** são credenciais que serão utilizadas, não necessariamente em conjunto, nas integrações realizadas com os soluções de pagamento do Mercado Pago (Checkout Pro, Checkout Bricks,----[mlb]---- Checkout Transparente----------------[mla, mlu, mlc, mlm, mco, mpe]----Checkout API----------------[mla, mlb, mlc, mlu]----, Assinaturas e QR Code----------------[mco, mlm, mpe]---- e Assinaturas------------) e nas integrações do plugin do Mercado Pago com as plataformas de e-commerce como, por exemplo, Shopify, WooCommerce e ----[mla, mlu, mlc, mlm, mco, mpe]----Tiendanube----------------[mlb]----Nuvemshop------------.
 
 | Tipo | Descrição |
 | :--- | :--- |

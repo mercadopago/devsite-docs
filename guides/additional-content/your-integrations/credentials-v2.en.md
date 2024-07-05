@@ -26,7 +26,7 @@ You can obtain your production credentials in two ways:
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-mp-es-v2.gif)
 ------------
 
-2. Through your Mercado Pago account, by accessing **Your business > Settings > Management and administration > Credentials**.
+2. Through your Mercado Pago account, by accessing [**Your business > Settings > Management and administration > Credentials**](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
 ----[mlb]----
 ![Como acessar as credenciais através do Mercado Pago](/images/credentials/credentials-prod-mp-pt.gif)

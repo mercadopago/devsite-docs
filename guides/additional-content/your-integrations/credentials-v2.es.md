@@ -20,7 +20,7 @@ Puedes obtener tus credenciales de producción de dos maneras:
 
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-mp-es-v2.gif)
 
-2. A través de tu cuenta de Mercado Pago, accediendo a **Tu negocio > Configuraciones > Gestión y administración > Credenciales**.
+2. A través de tu cuenta de Mercado Pago, accediendo a [**Tu negocio > Configuraciones > Gestión y administración > Credenciales**](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
 ![Cómo acceder a las credenciales a través de Mercado Pago](/images/credentials/credentials-prod-mp-es.gif)
 
