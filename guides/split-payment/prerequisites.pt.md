@@ -1,6 +1,6 @@
 # Pré-requisitos
 
-Para integrar a solução Split de pagamentos, é importante atender aos requisitos mostrados abaixo.
+Para integrar a solução Split de pagamentos usando os Checkouts Pro e ----[mla, mlu, mlc, mlm, mpe, mco]----API------------ ----[mlb]----Transparente------------, é importante atender aos requisitos mostrados abaixo.
 
 > NOTE
 >

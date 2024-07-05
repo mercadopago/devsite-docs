@@ -1,6 +1,6 @@
 # Prerequisites
 
-To integrate the Split payments solution, it is important to meet the requirements shown below.
+To integrate the Split payments solution using Pro and ----[mla, mlu, mlc, mlm, mpe, mco]----API------------ ----[mlb]----Transparente------------ checkouts, it is important to meet the requirements shown below.
 
 > NOTE
 >
