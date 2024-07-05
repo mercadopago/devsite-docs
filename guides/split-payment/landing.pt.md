@@ -2,6 +2,7 @@
 content_section_with_media: 
  - title: Split de pagamentos
  - message: A solução de Split de pagamentos foi projetada para fornecer serviços de Provedor de Serviços de Pagamento (PSP) a vendedores em modelos de marketplace. Os marketplaces são plataformas de comércio eletrônico que conectam vendedores e compradores, oferecendo um ambiente unificado para vendas online, ampliando o alcance e a conversão.
+ - message: Atualmente, a solução Split de pagamentos só pode ser integrada com os checkouts Pro e ----[mla, mlu, mlc, mlm, mpe, mco]----API------------ ----[mlb]----Transparente------------.
  - media_image: /split-payment/split-de-pago-01.png
  
 ---
