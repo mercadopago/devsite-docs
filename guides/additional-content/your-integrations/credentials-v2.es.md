@@ -65,13 +65,7 @@ Las credenciales de prueba pueden ser combinadas con tarjetas de crédito de pru
 
 Podrás obtener tus credenciales de prueba, **siempre y cuando estén disponibles para tu integración**, accediendo a [Tus integraciones > "Tu aplicación" > Credenciales de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 
-----[mlb]----
-![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.gif)
-------------
-
-----[mla, mlu, mlc, mlm, mco, mpe]----
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-test-panel-es.gif)
-------------
 
 ### Credenciales de prueba no disponibles
 

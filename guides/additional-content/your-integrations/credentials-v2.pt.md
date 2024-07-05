@@ -64,13 +64,7 @@ As credenciais de teste podem ser combinadas com cartões de crédito de teste p
 
 Você pode obter suas credenciais de teste, **desde que estas estejam disponíveis para sua integração**, acessando [Suas integrações > "Sua aplicação" > Credenciais de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 
-----[mlb]----
 ![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.gif)
-------------
-
-----[mla, mlu, mlc, mlm, mco, mpe]----
-![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-test-panel-es.gif)
-------------
 
 ### Credenciais de teste não disponíveis
 
