@@ -106,7 +106,7 @@ Para instalar Mercado Pago Pix a través del Marketplace, sigue los pasos a cont
 
 ![Production credentials](/images/woocomerce/test-prod-credentials-api-es.png)
 
-7. Ingresa tus credenciales productivas `access_token` y `public_key` en los campos correspondientes. **Asegúrese de no invertir los campos al copiar y pegar las credenciales**.
+7. Ingresa tus credenciales productivas `access_token` y `public_key` en los campos correspondientes. **Asegúrate de no invertir los campos al copiar y pegar las credenciales**.
 8. Haz clic en **Guardar credenciales**.
 
 ![Save credentials](/images/shopify/pix-save-credentials-es.png)
