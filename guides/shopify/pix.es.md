@@ -83,7 +83,7 @@ Para instalar Mercado Pago Pix a través del panel administrativo de Shopify, si
 Para instalar Mercado Pago Pix a través del Marketplace, sigue los pasos a continuación:
 
 1. Inicia sesión en su tienda [Shopify](https://accounts.shopify.com/store-login).
-2. Accede a la página de Mercado Pago Pix en el Marketplace y haz clic en Instalar.
+2. Accede a la [página de Mercado Pago Pix](https://apps.shopify.com/mercado-pago-pix-1) en el Marketplace y haz clic en Instalar.
 
 ![Marketplace](/images/shopify/pix-marketplace-install-es.png)
 
