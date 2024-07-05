@@ -115,7 +115,7 @@ Para instalar Mercado Pago Pix a través del Marketplace, sigue los pasos a cont
 >
 > Nota
 >
-> Renueva tus credenciales según sea necesario, consultando la [documentación correspondiente](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials) como guía. Después de la renovación, es esencial actualizarlas en el panel de Shopify. Recuerda: **al cambiar la contraseña de tu cuenta de Mercado Pago, es necesario renovar tus credenciales**. Para hacerlo, elimina las credenciales antiguas del panel, copia las nuevas e ingrésalas en el panel administrativo de la tienda.
+> Renueva tus credenciales cuando sea necesario, consultando la [documentación correspondiente](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials) como guía. Después de la renovación, es esencial actualizarlas en el panel de Shopify. Recuerda: **al cambiar la contraseña de tu cuenta de Mercado Pago, es necesario renovar tus credenciales**. Para hacerlo, elimina las credenciales antiguas del panel, copia las nuevas e ingrésalas en el panel administrativo de la tienda.
 
 9. Haz clic en la opción **Verificar activación** de Mercado Pago Pix.
 
