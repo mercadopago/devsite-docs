@@ -139,14 +139,14 @@ Después de instalar la aplicación Mercado Pago Pix, sigue los pasos descritos 
 2. Localiza la aplicación **Mercado Pago Pix** y selecciónala. 
 3. En la siguiente pantalla, haz clic en **Más acciones** > **Gestionar**.
 
-![More actions](/images/shopify/pix-more-actions-es.png)
+![More actions](/images/shopify/pix-more-actions-es-1.png)
 
 4. En el campo **"Plazo de vencimiento para pagos con Pix"**, selecciona la opción deseada.
 
-![Expiration date](/images/shopify/pix-expiration-date-es.png)
+![Expiration date](/images/shopify/pix-expiration-date-es-1.png)
 
 5. Haz clic en **Guardar**.
-
-![Save expiration date](/images/shopify/pix-save-expiration-date-es.png)
+ 
+![Save expiration date](/images/shopify/pix-save-expiration-date-es-1.png)
 
 ¡Listo! El plazo de vencimiento ha sido establecido.

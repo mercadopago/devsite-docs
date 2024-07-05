@@ -138,14 +138,14 @@ After installing the Mercado Pago Pix app, follow the steps below to configure t
 2. Locate the **Mercado Pago Pix** app and select the corresponding option.
 3. On the next screen, click **More actions > Manage**.
 
-![More actions](/images/shopify/pix-more-actions-es.png)
+![More actions](/images/shopify/pix-more-actions-es-1.png)
 
 4. In the **"Expiration period for Pix payments"** field, select the desired option.
 
-![Expiration date](/images/shopify/pix-expiration-date-es.png)
+![Expiration date](/images/shopify/pix-expiration-date-es-1.png)
 
 5. Click **Save**.
 
-![Save expiration date](/images/shopify/pix-save-expiration-date-es.png)
+![Save expiration date](/images/shopify/pix-save-expiration-date-es-1.png)
 
 Done! The expiration period has been set.
