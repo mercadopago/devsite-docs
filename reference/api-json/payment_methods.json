@@ -226,43 +226,6 @@
                       "settings": {
                         "type": "object",
                         "properties": {
-                          "bin": {
-                            "type": "object",
-                            "description": {
-                              "en": "Regular expression through which it will be verified if a bin corresponds to the means of payment.",
-                              "pt": "Expressão regular pela qual será verificado se um bin corresponde ao meio de pagamento.",
-                              "es": "Expresión regular por la cual se verificará si un bin corresponde al medio de pago."
-                            },
-                            "properties": {
-                              "pattern": {
-                                "type": "string",
-                                "example": "^(4)",
-                                "description": {
-                                  "en": "Regular expression representing the accepted bins.",
-                                  "pt": "A expressão regular, representando bines aceitos",
-                                  "es": "Expresión regular representando los bines aceptados"
-                                }
-                              },
-                              "exclusion_pattern": {
-                                "type": "string",
-                                "description": {
-                                  "en": "Regular expression representing the excluded bins.",
-                                  "pt": "A expressão regular, representando bines excluídos",
-                                  "es": "Expresión regular representando los bines excluídos"
-                                },
-                                "example": "^(400163|400176|400178|400185|400199|423808|439267|471233|473200|476332|482481|451416|438935|(40117[8-9])|(45763[1-2])|457393|431274)"
-                              },
-                              "installments_pattern": {
-                                "type": "string",
-                                "example": "^(?!(417401|453998|426398|462437|451212|456188))",
-                                "description": {
-                                  "en": "Regular expression representing bins allowed to pay with more than one installment.",
-                                  "pt": "A expressão regular, representando bines aceitos para pagar com mais de uma cota",
-                                  "es": "Expresión regular representando los bines aceptados para pagar con más de una cuota"
-                                }
-                              }
-                            }
-                          },
                           "card_number": {
                             "type": "object",
                             "description": {
