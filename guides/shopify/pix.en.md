@@ -1,6 +1,6 @@
 # Pix
 
-**Mercado Pago Pix** facilitates financial transactions using QR codes or the Pix Copia e Cola functionality, allowing customers to make payments instantly at any time. Additionally, this service ensures immediate approval of transactions and offers the lowest rate for receiving payments.
+**Mercado Pago Pix** facilitates financial transactions using QR codes or the Pix Copia e Cola functionality, allowing customers to make payments instantly at any time. Additionally, this service ensures immediate approval of transactions and offers the lowest fee when receiving payments.
 
 To integrate Mercado Pago Pix, install the application through the [Shopify panel](/developers/en/docs/shopify/integration-configuration/pix#installviashopifyadminpanel) or the [Marketplace](/developers/en/docs/shopify/integration-configuration/pix#bookmark_install_via_marketplace). After installation, you can [configure the expiration period](/developers/en/docs/shopify/integration-configuration/pix#bookmark_configure_expiration_period).
 
