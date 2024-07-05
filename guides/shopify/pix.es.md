@@ -101,7 +101,7 @@ Para instalar Mercado Pago Pix a través del Marketplace, sigue los pasos a cont
 >
 > Si ya has instalado la aplicación [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards), no es necesario ingresar tus credenciales nuevamente. Avanza al paso 9 de este tutorial.
 
-5. En el admin de Mercado Pago, accede a [**Tus integraciones**](https://www.mercadopago.com.br/developers/panel/app) y selecciona tu aplicación. Si aún no has creado una aplicación, accede a la [documentación del Panel del desarrollador](/developers/es/docs/shopify/additional-content/your-integrations/dashboard) y aprende cómo crearla.
+5. En el admin de Mercado Pago, accede a [Tus integraciones](https://www.mercadopago.com.br/developers/panel/app) y selecciona tu aplicación. Si aún no has creado una aplicación, accede a la [documentación del Panel del desarrollador](/developers/es/docs/shopify/additional-content/your-integrations/dashboard) y aprende cómo crearla.
 6. Haz clic en **Credenciales de producción** en el menú de la izquierda. Copia la `public_key` y el `access_token`.
 
 ![Production credentials](/images/woocomerce/test-prod-credentials-api-es.png)
