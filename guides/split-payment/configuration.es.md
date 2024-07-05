@@ -2,6 +2,22 @@
 
 Para configurar la integración con la solución de Split de pagos, deberás [crear tu aplicación](#bookmark_crear_aplicación), [solicitar permisos a tus usuarios](#bookmark_solicitar_permiso_a_usuarios) y [obtener las credenciales](#bookmark_obtener_credenciales). Continúa leyendo para crear la configuración necesaria.
 
+----[mla, mlu, mlc, mlm, mpe, mco]----
+> WARNING
+>
+> Importante
+>
+> Tenga en cuenta que la solución de Split de pagos solo se puede integrar con [Checkout Pro](/developers/es/docs/split-payments/landing) y [Checkout API](/developers/es/docs/checkout-api/landing), no estando disponible para su uso con otros productos.
+
+------------ 
+----[mlb]----
+> WARNING
+>
+> Importante
+>
+> Tenga en cuenta que la solución de Split de pagos solo se puede integrar con [Checkout Pro](/developers/es/docs/split-payments/landing) y [Checkout Transparente](/developers/es/docs/checkout-api/landing), no estando disponible para su uso con otros productos.
+
+------------
 ## Crear aplicación
 
 Crea tu aplicación para integrar con la solución de Split de pagos siguiendo los pasos a continuación.
