@@ -133,7 +133,7 @@ Para instalar Mercado Pago Pix a través del Marketplace, sigue los pasos a cont
 
 ## Configurar plazo de vencimiento
 
-Después de instalar la aplicación Mercado Pago Pix, siga los pasos descritos a continuación para configurar el plazo de vencimiento para pagos vía Pix.
+Después de instalar la aplicación Mercado Pago Pix, sigue los pasos descritos a continuación para configurar el plazo de vencimiento para pagos vía Pix.
 
 1. En el panel administrativo de la tienda, ve a **Configuración** > **Pagos**.
 2. Localiza la aplicación **Mercado Pago Pix** y selecciónalo. 
