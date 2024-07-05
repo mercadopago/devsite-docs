@@ -46,7 +46,7 @@ To install Mercado Pago Pix through the Shopify admin panel, follow the steps be
 >
 > If you have already installed the [Mercado Pago Cards](/developers/en/docs/shopify/integration-configuration/checkout-cards) app, you do not need to enter your credentials again. Proceed to step 13 of this tutorial.
 
-9. In the Mercado Pago admin, go to [**Your integrations**](https://www.mercadopago.com.br/developers/panel/app) and select your application. If you haven't created an application yet, refer to the [Developer Dashboard documentation](/developers/en/docs/shopify/additional-content/your-integrations/dashboard) to learn how to create one.
+9. In the Mercado Pago admin, go to [Your integrations](https://www.mercadopago.com.br/developers/panel/app) and select your application. If you haven't created an application yet, refer to the [Developer Dashboard documentation](/developers/en/docs/shopify/additional-content/your-integrations/dashboard) to learn how to create one.
 
 10. In the application, click  **Production credentials** in the left menu. Copy the `public_key` and the `access_token`.
 
