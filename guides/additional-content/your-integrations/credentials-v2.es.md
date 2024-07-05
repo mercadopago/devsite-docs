@@ -29,7 +29,7 @@ Al acceder a tus credenciales de producción, podrás ver los siguientes pares d
 
 ### Public Key y Access Token
 
-La **Public Key** y el **Access Token** son credenciales que serán utilizadas, no necesariamente juntas, en las integraciones realizadas con las soluciones de pago de Mercado Pago (Checkout Pro, Checkout Bricks,----[mlb]---- Checkout Transparente------------ ----[mla, mlu, mlc, mlm, mco, mpe]----Checkout API------------ ----[mla, mlb, mlc, mlu]----, Suscripciones y Código QR------------ ----[mco, mlm, mpe]---- y Suscripciones------------) y en las integraciones del plugin de Mercado Pago con plataformas de e-commerce como, por ejemplo, Shopify, WooCommerce y ----[mla, mlu, mlc, mlm, mco, mpe]----Tiendanube------------ ----[mlb]----Nuvemshop------------.
+La **Public Key** y el **Access Token** son credenciales que serán utilizadas, no necesariamente juntas, en las integraciones realizadas con las soluciones de pago de Mercado Pago (Checkout Pro, Checkout Bricks,----[mlb]---- Checkout Transparente----------------[mla, mlu, mlc, mlm, mco, mpe]---- Checkout API----------------[mla, mlb, mlc, mlu]----, Suscripciones y Código QR----------------[mco, mlm, mpe]---- y Suscripciones------------) y en las integraciones del plugin de Mercado Pago con plataformas de e-commerce como, por ejemplo, Shopify, WooCommerce y ----[mla, mlu, mlc, mlm, mco, mpe]----Tiendanube----------------[mlb]----Nuvemshop------------.
 
 | Tipo | Descripción |
 | :--- | :--- |
@@ -53,7 +53,7 @@ Accede a la documentación de [OAuth](/developers/es/docs/security/oauth/introdu
 
 > NOTE
 >
-> Nota
+> Importante
 >
 > Si por motivos de seguridad o cualquier otro motivo relevante necesitas renovar tus credenciales, simplemente haz clic en **Más opciones** (tres puntos al final de la tarjeta) > **Renovar**. Ten en cuenta que tu integración puede verse afectada por el cambio.
 
@@ -85,7 +85,7 @@ Si estás integrando un producto que no utiliza credenciales de prueba, no podr�
 
 ## Compartir credenciales
 
-Cuando recibas ayuda en la integración o configuración de tus canales de pago, puedes compartir tus credenciales de forma segura. Para hacerlo, sigue los pasos a continuación:
+Cuando recibas ayuda en la integración o configuración de tus canales de pago, puedes compartir tus credenciales de forma segura con otra cuenta de Mercado Pago. Para hacerlo, sigue los pasos a continuación:
 
 1. Accede a tu cuenta de Mercado Pago.
 2. Ve a [Tu negocio > Configuraciones > Gestión y Administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).

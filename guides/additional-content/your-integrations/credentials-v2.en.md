@@ -40,7 +40,7 @@ When accessing your production credentials, you will be able to see the followin
 
 ### Public Key and Access Token
 
-The **Public Key** and the **Access Token** are credentials that will be used, not necessarily together, in integrations made with Mercado Pago's payment solutions (Checkout Pro, Checkout Bricks,----[mlb]---- Checkout Transparente------------ ----[mla, mlu, mlc, mlm, mco, mpe]----Checkout API------------ ----[mla, mlb, mlc, mlu]----, Subscriptions and QR Code------------ ----[mco, mlm, mpe]---- and Subscriptions------------) and in integrations of the Mercado Pago plugin with e-commerce platforms such as Shopify, WooCommerce, and ----[mla, mlu, mlc, mlm, mco, mpe]----Tiendanube------------ ----[mlb]----Nuvemshop------------.
+The **Public Key** and the **Access Token** are credentials that will be used, not necessarily together, in integrations made with Mercado Pago's payment solutions (Checkout Pro, Checkout Bricks,----[mlb]---- Checkout Transparente----------------[mla, mlu, mlc, mlm, mco, mpe]---- Checkout API----------------[mla, mlb, mlc, mlu]----, Subscriptions and QR Code----------------[mco, mlm, mpe]---- and Subscriptions------------) and in integrations of the Mercado Pago plugin with e-commerce platforms such as Shopify, WooCommerce, and ----[mla, mlu, mlc, mlm, mco, mpe]----Tiendanube----------------[mlb]----Nuvemshop------------.
 
 | Type | Description |
 | :--- | :--- |
@@ -64,7 +64,7 @@ Access the [OAuth documentation](/developers/en/docs/security/oauth/introduction
 
 > NOTE
 >
-> Note
+> Important
 >
 > If for security reasons or any other relevant reason you need to renew your credentials, simply click on **More options** (three dots at the end of the card) **>** **Renew**. Keep in mind that your integration may be affected by the change.
 
@@ -102,7 +102,7 @@ If you are integrating a product that does not use test credentials, you will no
 
 ## Share Credentials
 
-When you receive assistance in integrating or setting up your payment channels, you can safely share your credentials. To do so, follow the steps below:
+When you receive assistance in integrating or setting up your payment channels, you can safely share your credentials with another Mercado Pago account. To do so, follow the steps below:
 
 1. Access your Mercado Pago account.
 2. Go to [Your business > Settings > Management and Administration > Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
