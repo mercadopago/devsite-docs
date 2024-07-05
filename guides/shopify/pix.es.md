@@ -1,6 +1,6 @@
 # Pix
 
-**Mercado Pago Pix** facilita la realización de transacciones financieras utilizando código QR o la funcionalidad Pix Copia y Pega, permitiendo a los clientes efectuar pagos de forma instantánea en cualquier momento. Además, este servicio garantiza la aprobación inmediata de las transacciones y ofrece la tasa más baja para la recepción de pagos.
+**Mercado Pago Pix** facilita la realización de transacciones financieras utilizando código QR o la funcionalidad Pix Copia y Pega, permitiendo a los clientes efectuar pagos de forma instantánea en cualquier momento. Además, este servicio garantiza la aprobación inmediata de las transacciones y ofrece la comisión más baja en la recepción de pagos.
 
 Para integrar el Mercado Pago Pix, instala la aplicación a través del [panel de Shopify](/developers/es/docs/shopify/integration-configuration/pix#instalaratravsdelpaneldeshopify) o a través del [Marketplace](/developers/es/docs/shopify/integration-configuration/pix#instalaratravsdelmarketplace). Después de la instalación, podrás [configurar el plazo de vencimiento](/developers/es/docs/shopify/integration-configuration/pix#bookmark_configurar_plazo_de_vencimiento).
 
