@@ -31,7 +31,7 @@ Ve a continuación los modelos disponibles para añadir a su integración con Me
 
 Para utilizar el recurso de _sniffing_, basta con abrir un enlace en el navegador web del dispositivo móvil para activar la detección y seguir el flujo de vinculación. Ve abajo cómo disponibilizar la funcionalidad de _sniffing_ en su integración.
 
-1. Envíe un **GET** con los atributos necesarios, principalmente el `return_uri`, al _endpoint_ [/v2/wallet_connect/agreements](/developers/es/reference/wallet_connect/_wallet_connect_agreements/post) y ejecute la solicitud para [iniciar una vinculación](/developers/es/docs/wallet-connect/account-linking-flow/create-agreement).
+1. Envía un **GET** con los atributos necesarios, principalmente el `return_uri`, al _endpoint_ [/v2/wallet_connect/agreements](/developers/es/reference/wallet_connect/_wallet_connect_agreements/post) y ejecuta la solicitud para [iniciar una vinculación](/developers/es/docs/wallet-connect/account-linking-flow/create-agreement).
 
 > WARNING
 >
@@ -39,7 +39,7 @@ Para utilizar el recurso de _sniffing_, basta con abrir un enlace en el navegado
 >
 > Es necesario que la URL utilizada en el parámetro `return_uri` sea para un recurso _web_ (no se pueden utilizar _deeplinks_) y **el inicio de la misma debe coincidir con la URL de retorno configurada en la aplicación del vendedor**. Para más información, acceda a los [Detalles de la aplicación](/developers/es/guides/additional-content/your-integrations/application-details).
 
-2. Se devolverán los parámetros `agreement_id` y `agreement_uri`. Utilice un componente **_In-App Browser_** para navegar hasta el `agreement_uri`, dirección a la cual el comprador es redirigido para conceder el acceso a la billetera de Mercado Pago para realizar el pago. Según el sistema operativo, utilice el **_Custom Tabs_** para dispositivos _Android_ y el **_SVC_** para dispositivos iOS.
-3. A partir de eso, utilice la URL de retorno `return_uri` para finalizar el proceso de vinculación.
+2. Se devolverán los parámetros `agreement_id` y `agreement_uri`. Utiliza un componente **_In-App Browser_** para navegar hasta el `agreement_uri`, dirección a la cual el comprador es redirigido para conceder el acceso a la billetera de Mercado Pago para realizar el pago. Según el sistema operativo, utiliza el **_Custom Tabs_** para dispositivos _Android_ y el **_SVC_** para dispositivos iOS.
+3. A partir de eso, utiliza la URL de retorno `return_uri` para finalizar el proceso de vinculación.
 
 Después de configurada, es posible desactivar la función de _sniffing_ de su aplicación y esta acción debe ser coordinada con el **equipo de Integraciones** de Mercado Pago.
