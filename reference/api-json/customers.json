@@ -4,7 +4,6 @@
     "/v1/customers": {
       "post": {
         "tags": [
-          "mobile-checkout",
           "checkout-api",
           "checkout-bricks"
         ],
@@ -890,7 +889,6 @@
     "/v1/customers/{id}": {
       "put": {
         "tags": [
-          "mobile-checkout",
           "checkout-api"
         ],
         "description": {
@@ -1761,7 +1759,6 @@
       },
       "get": {
         "tags": [
-          "mobile-checkout",
           "checkout-api",
           "checkout-bricks"
         ],
@@ -2904,7 +2901,6 @@
     "/v1/customers/search": {
       "get": {
         "tags": [
-          "mobile-checkout",
           "checkout-api"
         ],
         "description": {

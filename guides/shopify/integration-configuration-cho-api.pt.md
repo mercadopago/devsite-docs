@@ -34,7 +34,7 @@ Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecem
 
 6. Após localizá-lo, selecione-o e clique em **Instalar**. Leia com atenção as informações sobre as permissões solicitadas e clique em **Instalar** outra vez.
 
-![installation panel 3](/images/shopify/installation-cards-panel-3-pt.png)
+![installation cards 2](/images/shopify/installation-cards-2-pt.png)
 
 7. Após aceitar as permissões solicitadas, clique em **Gerenciar conta** para incluir suas credencias e vincular a sua conta Mercado Pago à loja.
 
@@ -83,11 +83,11 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 1. A partir [deste link](https://apps.shopify.com/mercado-pago-tarjetas-mx?locale=pt-BR), acesse a página do app **Mercado Pago Cartões** no "Marketplace" e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
 
 ------------
-![installation mkplace 0](/images/shopify/installation-cards-mkplace-0-pt.png)
+![installation mkplace 0](/images/shopify/installation-cards-mkplace-0-pt.png) 
 
 2. Leia com atenção as informações sobre as permissões solicitadas e clique novamente em **Instalar**.
 
-![installation mkplace 2](/images/shopify/installation-cards-mkplace-2-pt.png)
+![installation cards 2](/images/shopify/installation-cards-2-pt.png)
 
 3. Após aceitar as permissões solicitadas, clique em **Gerenciar conta** para incluir suas credencias e vincular a sua conta Mercado Pago à loja.
 
@@ -142,6 +142,30 @@ Após instalar e ativar o app **Mercado Pago Cartões**, configure a opção cor
 
 ![configure installments 3](/images/shopify/configure-installments-3-pt.png)
 
-5. Por fim, ative a opção **Oferecer parcelamento sem acréscimo** e escolha quantas parcelas deseja oferecer na sua loja.
+5. Ative a opção **Oferecer parcelamento sem acréscimo** e escolha quantas parcelas deseja oferecer na sua loja.
 
 ![configure installments 4](/images/shopify/configure-installments-4-pt.png)
+
+6. Feitas as configurações de parcelamento, vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
+7. No painel administrativo da loja, clique em **Configurações** no canto inferior esquerdo da página.
+
+![configure installments 5](/images/shopify/configure-installments-5-pt.png)
+
+8. Uma vez lá, selecione a opção **Pagamentos** no menu ao lado esquerdo da página.
+9. Em "Mercado Pago Cartões", clique em **Gerenciar**.
+
+![configure installments 6](/images/shopify/configure-installments-6-pt.png)
+
+10. Em seguida, clique em **Mais ações > Gerenciar**.
+
+![configure installments 7](/images/shopify/configure-installments-7-pt.png)
+
+11. Por fim, clique em **Sincronizar** para que o parcelamento configurado seja sincronizado com a sua loja.
+
+![configure installments 8](/images/shopify/configure-installments-8-pt.png)
+
+> WARNING
+>
+> Atenção
+>
+> Sempre que forem alteradas as configurações de parcelamento, será necessário **sincronizar** as alterações com a sua loja.

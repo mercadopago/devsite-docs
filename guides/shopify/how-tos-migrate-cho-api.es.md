@@ -31,7 +31,7 @@ Para instalar el checkout **Mercado Pago Cartões** en una tienda Shopify, sigue
 
 6. Después de localizarla, selecciónala y haz clic en **Instalar**. Lee atentamente la información sobre los permisos solicitados y haz clic en **Instalar** otra vez.
 
-![installation panel 3](/images/shopify/installation-cards-panel-3-es.png)
+![installation cards 3](/images/shopify/installation-cards-2-es.png)
 
 7. Después de aceptar los permisos solicitados, haz clic en **Gestionar cuenta** para incluir tus credenciales y vincular tu cuenta de Mercado Pago a la tienda.
 
@@ -77,7 +77,7 @@ Para instalar el checkout **Mercado Pago Cartões** en una tienda Shopify, sigue
 
 2. Lee atentamente la información sobre los permisos solicitados y haz clic nuevamente en **Instalar**.
 
-![installation mkplace 2](/images/shopify/installation-cards-mkplace-2-es.png)
+![installation cards 3](/images/shopify/installation-cards-2-es.png)
 
 3. Después de aceptar los permisos solicitados, haz clic en **Gestionar cuenta** para incluir tus credenciales y vincular tu cuenta de Mercado Pago a la tienda.
 
@@ -115,18 +115,7 @@ Para instalar el checkout **Mercado Pago Cartões** en una tienda Shopify, sigue
 >
 > Después de finalizar la instalación de Mercado Pago Cartões, te recomendamos complementar instalando la aplicación **Mercado Pago Antifraude Plus**, que permitirá reforzar la seguridad de tu tienda y aumentar la tasa de aprobación de pagos. Para más información, accede a la documentación de [Cómo prevenir fraudes en los pagos con tarjeta](/developers/es/docs/shopify/how-tos/antifraude-plus).
 
-## Desactiva la antigua app
-
-Después de instalar la nueva versión, es necesario desinstalar la aplicación antigua. Para desinstalarla, siga los pasos a continuación.
-
-1. Ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
-2. En el panel administrativo de la tienda, localiza la aplicación con el nombre "Checkout Transparente MP" y haz clic en **Gestionar**.
-3. Haz clic en el **menú de opciones adicionales > Desinstalar** y luego en **Desinstalar** nuevamente.
-4. Regresa al panel administrativo de la tienda y haz clic en **Configuraciones > Pagos**.
-5. En "Formas de pago aceptadas", localiza la antigua aplicación con el nombre "Mercado Pago" y selecciónala.
-6. Por último, haz clic en **Desactivar Mercado Pago** y luego en **Desactivar Mercado Pago**.
-
-### Configurar meses sin intereses
+## Configura meses sin intereses
 
 Después de instalar y activar la aplicación **Mercado Pago Cartões**, configura la opción de ofrecer a tus clientes pagos en meses sin intereses con cualquier tarjeta de crédito. Para ello, sigue los pasos a continuación.
 
@@ -139,6 +128,41 @@ Después de instalar y activar la aplicación **Mercado Pago Cartões**, configu
 
 ![configure installments 2](/images/shopify/configure-installments-2-es.png)
 
-3. Activa la opción **Ofrecer MSI con tarjeta de crédito** y luego elige hasta cuantos meses quieres ofrecer.
+4. Activa la opción **Ofrecer MSI con tarjeta de crédito** y luego elige hasta cuantos meses quieres ofrecer.
 
 ![configure installments 3](/images/shopify/configure-installments-3-es.png)
+
+5. Después de configurar las opciones meses sin intereses, ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
+6. En el panel administrativo, haz clic en **Configuraciones** en la esquina inferior izquierda de la página.
+
+![configure installments 4](/images/shopify/configure-installments-4-es.png)
+
+7. Una vez allí, selecciona la opción **Pagos** en el menú al lado izquierdo de la página.
+8. En "Mercado Pago Tarjetas", haz clic en **Gestionar**.
+
+![configure installments 5](/images/shopify/configure-installments-5-es.png)
+
+9. Luego, haz clic en **Más acciones > Gestionar**.
+
+![configure installments 6](/images/shopify/configure-installments-6-es.png)
+
+10. Finalmente, haz clic en **Sincronizar** para que las configuraciones de meses sin intereses se sincronicen con tu tienda.
+
+![configure installments 7](/images/shopify/configure-installments-7-es.png)
+
+> WARNING
+>
+> Atención
+>
+> Siempre que se cambien las configuraciones de meses sin intereses, será necesario **sincronizar** los cambios con su tienda.
+
+## Desactiva la antigua app
+
+Después de instalar la nueva versión, es necesario desinstalar la aplicación antigua. Para desinstalarla, siga los pasos a continuación.
+
+1. Ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
+2. En el panel administrativo de la tienda, localiza la aplicación con el nombre "Checkout Transparente MP" y haz clic en **Gestionar**.
+3. Haz clic en el **menú de opciones adicionales > Desinstalar** y luego en **Desinstalar** nuevamente.
+4. Regresa al panel administrativo de la tienda y haz clic en **Configuraciones > Pagos**.
+5. En "Formas de pago aceptadas", localiza la antigua aplicación con el nombre "Mercado Pago" y selecciónala.
+6. Por último, haz clic en **Desactivar Mercado Pago** y luego en **Desactivar Mercado Pago**.

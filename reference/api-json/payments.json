@@ -12,15 +12,14 @@
         "ruby": "require 'mercadopago'\n\nsdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')\n\ncustom_headers = {\n 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'\n}\n\ncustom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)\n\npayment_object = {\n  additional_info: {\n    items: [\n      {\n        id: 'MLB2907679857',\n        title: 'Point Mini',\n        description: 'Point product for card payments via Bluetooth.',\n        picture_url: 'https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png',\n        category_id: 'electronics',\n        quantity: 1,\n        unit_price: 58.8,\n      }\n    ],\n    payer: {\n      first_name: 'Test',\n      last_name: 'Test',\n      phone: {\n        area_code: '11',\n        number: '987654321'\n      },\n      address: {\n        street_number: nil\n      }\n    },\n    shipments: {\n      receiver_address: {\n        zip_code: '12312-123',\n        state_name: 'Rio de Janeiro',\n        city_name: 'Buzios',\n        street_name: 'Av das Nacoes Unidas',\n        street_number: 3003\n      },\n    }\n  },\n  application_fee: nil,\n  binary_mode: false,\n  campaign_id: nil,\n  capture: false,\n  coupon_amount: nil,\n  description: 'Payment for product',\n  differential_pricing_id: nil,\n  external_reference: 'MP0001',\n  installments: 1,\n  metadata: nil,\n  payer: {\n    entity_type: 'individual',\n    type: 'customer',\n    email: 'test_user_123@testuser.com',\n    identification: {\n      type: 'CPF',\n      number: '95749019047'\n    }\n  },\n  payment_method_id: 'master',\n  token: 'ff8080814c11e237014c1ff593b57b4d',\n  transaction_amount: 58.8\n}\n\npayment_response = sdk.payment.create(payment_object, custom_request_options)\npayment_response[:response]",
         "tags": [
           "checkout-pro",
-          "mobile-checkout",
           "subscriptions",
           "checkout-api",
           "checkout-bricks"
         ],
         "description": {
-          "en": "Create a payment and add all the information you need. Remember to add the payment details and the payer's information",
-          "pt": "Crie um pagamento e acrescente todas as informações que você precisa. Certifique-se de acrescentar os detalhes do pagamento e os detalhes do cliente",
-          "es": "Realiza la creación de un pago y agrega toda la información que necesites. Ten en cuenta de sumar el detalle del pago y los datos del pagador"
+          "en": "This endpoint allows you to create a payment and include all the necessary information. Make sure to add the payment details and the customer's information. In case of success, the request will return a response with status 201",
+          "pt": "Este endpoint permite a criação de um pagamento, possibilitando a inclusão de todas as informações necessárias. Certifique-se de adicionar os detalhes do pagamento e as informações do cliente. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
+          "es": "Este endpoint permite crear un pago e incluir toda la información necesaria. Asegúrese de añadir los detalles del pago y la información del cliente. En caso de éxito, la solicitud devolverá una respuesta con el estado 201"
         },
         "parameters": [
           {
@@ -240,7 +239,7 @@
                           "pt": "O payer é aquele que faz o pagamento. Este campo é um objeto que possui as informações do pagador.",
                           "es": "El payer es quien realiza el pago. Este campo es un objeto que tiene la información del pagador."
                         },
-                        "required": false,
+                        "required": true,
                         "properties": {
                           "first_name": {
                             "type": "string",
@@ -358,41 +357,41 @@
                           "authentication_type": {
                             "type": "string",
                             "description": {
-                              "en": "Type of authentication used by payer",
-                              "pt": "Tipo de autenticação utilizada pelo pagador",
-                              "es": "Tipo de autenticación utilizada por el pagador"
+                              "en": "Type of authentication used by payer.",
+                              "pt": "Tipo de autenticação utilizada pelo pagador.",
+                              "es": "Tipo de autenticación utilizada por el pagador."
                             },
                             "enum": [
                               {
                                 "title": "Gmail",
                                 "description": {
-                                  "en": "Authentication via Gmail",
-                                  "es": "Authentication via Gmail",
-                                  "pt": "Authentication via Gmail"
+                                  "en": "Authentication via Gmail.",
+                                  "es": "Autenticación via Gmail.",
+                                  "pt": "Autenticação via Gmail."
                                 }
                               },
                               {
                                 "title": "Facebook",
                                 "description": {
-                                  "en": "Authentication via Facebook login",
-                                  "es": "Authentication via Facebook login",
-                                  "pt": "Authentication via Facebook login"
+                                  "en": "Authentication via Facebook login.",
+                                  "es": "Autenticación via login de Facebook.",
+                                  "pt": "Autenticação via login do Facebook."
                                 }
                               },
                               {
                                 "title": "Native web",
                                 "description": {
                                   "en": "Authentication via web application",
-                                  "es": "Authentication via web application",
-                                  "pt": "Authentication via web application"
+                                  "es": "Autenticación via aplicación web.",
+                                  "pt": "Autenticação via aplicação web."
                                 }
                               },
                               {
                                 "title": "Other",
                                 "description": {
                                   "en": "Other type of identification",
-                                  "es": "Other type of identification",
-                                  "pt": "Other type of identification"
+                                  "es": "Otro tipo de identificación.",
+                                  "pt": "Outro tipo de identificação."
                                 }
                               }
                             ]
@@ -577,8 +576,7 @@
                       "pt": "Descrição do produto comprado, a razão de pagamento. Por exemplo -  \"Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Versão Global Original azul\" (descrição de um produto no marketplace).",
                       "es": "Descripción del producto adquirido, el motivo del pago. Ej. - \"Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Original Global Blue Version\" (descripción de un producto en el marketplace)."
                     },
-                    "example": "Payment for product",
-                    "required": true
+                    "example": "Payment for product"
                   },
                   "differential_pricing_id": {
                     "type": "number",
@@ -592,9 +590,9 @@
                     "type": "string",
                     "format": "date",
                     "description": {
-                      "en": "Payment’s expiration date. The valid format of the attribute is as follows - \"yyyy-MM-dd'T'HH:mm:ssz\". Ex - 2022-11-17T09:37:52.000-04:00.",
-                      "pt": "Data de expiração do pagamento. O formato válido do atributo é o seguinte - \"yyyy-MM-dd'T'HH:mm:ssz\". Por exemplo - 2022-11-17T09:37:52.000-04:00.",
-                      "es": "Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - \"yyyy-MM-dd'T'HH:mm:ssz\". Ej - 2022-11-17T09:37:52.000-04:00."
+                      "en": "Payment’s expiration date. The valid format of the attribute is as follows - \"yyyy-MM-dd HH:mm:ss.SSSz\". Ex - 2022-11-17T09:37:52.000-04:00.",
+                      "pt": "Data de expiração do pagamento. O formato válido do atributo é o seguinte - \"yyyy-MM-dd HH:mm:ss.SSSz\". Por exemplo - 2022-11-17T09:37:52.000-04:00.",
+                      "es": "Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - \"yyyy-MM-dd HH:mm:ss.SSSz\". Ej - 2022-11-17T09:37:52.000-04:00."
                     }
                   },
                   "external_reference": {
@@ -622,8 +620,7 @@
                       "en": "It is the identifier of the card issuer being used in a credit or debit card payment.",
                       "pt": "É o identificador do emissor do cartão que está sendo utilizado em um pagamento com cartão de crédito ou débito.",
                       "es": "Es el identificador del emisor de la tarjeta que se utiliza en un pago con tarjeta de crédito o débito."
-                    },
-                    "required": true
+                    }
                   },
                   "metadata": {
                     "type": "object",
@@ -702,72 +699,72 @@
                                 "title": "CNPJ",
                                 "description": {
                                   "en": "National Register of Legal Entities, Brazil.",
-                                  "es": "National Register of Legal Entities, Brazil.",
-                                  "pt": "National Register of Legal Entities, Brazil."
+                                  "es": "Registro de Contribuyentes Individual, Brasil.",
+                                  "pt": "Cadastro de Pessoa Física, Brasil."
                                 }
                               },
                               {
                                 "title": "CUIT",
                                 "description": {
                                   "en": "Unique Tax Identification Code, Argentina.",
-                                  "es": "Unique Tax Identification Code, Argentina.",
-                                  "pt": "Unique Tax Identification Code, Argentina."
+                                  "es": "Código Único de Identificación Tributaria, Argentina.",
+                                  "pt": "Código Único de Identificación Tributaria, Argentina."
                                 }
                               },
                               {
                                 "title": "CUIL",
                                 "description": {
                                   "en": "Unique Labor Identification Code, Argentina.",
-                                  "es": "Unique Labor Identification Code, Argentina.",
-                                  "pt": "Unique Labor Identification Code, Argentina."
+                                  "es": "Código Único de Identificación Laboral, Argentina.",
+                                  "pt": "Código Único de Identificação Laboral, Argentina."
                                 }
                               },
                               {
                                 "title": "DNI",
                                 "description": {
                                   "en": "National Identity Document, Argentina.",
-                                  "es": "National Identity Document, Argentina.",
-                                  "pt": "National Identity Document, Argentina."
+                                  "es": "Documento Nacional de Identidad, Argentina.",
+                                  "pt": "Documento Nacional de Identidade, Argentina."
                                 }
                               },
                               {
                                 "title": "CURP",
                                 "description": {
                                   "en": "Single Population Registration Code, Mexico.",
-                                  "es": "Single Population Registration Code, Mexico.",
-                                  "pt": "Single Population Registration Code, Mexico."
+                                  "es": "Clave Única de Registro de Población, México.",
+                                  "pt": "Código Único de Registro de População, México."
                                 }
                               },
                               {
                                 "title": "RFC",
                                 "description": {
                                   "en": "Federal Registry of Taxpayers, Mexico.",
-                                  "es": "Federal Registry of Taxpayers, Mexico.",
-                                  "pt": "Federal Registry of Taxpayers, Mexico."
+                                  "es": "Registro Federal de Contribuyentes, México.",
+                                  "pt": "Registro Federal de Contribuintes, México."
                                 }
                               },
                               {
                                 "title": "CC",
                                 "description": {
                                   "en": "Citizenship Card, Colombia.",
-                                  "es": "Citizenship Card, Colombia.",
-                                  "pt": "Citizenship Card, Colombia."
+                                  "es": "Cédula de Ciudadanía, Colombia.",
+                                  "pt": "Cédula de Cidadania, Colômbia."
                                 }
                               },
                               {
                                 "title": "RUT",
                                 "description": {
                                   "en": "Single Tax List, Chile.",
-                                  "es": "Single Tax List, Chile.",
-                                  "pt": "Single Tax List, Chile."
+                                  "es": "Lista Única de Impuestos, Chile.",
+                                  "pt": "Lista Única de Impostos, Chile."
                                 }
                               },
                               {
                                 "title": "CI",
                                 "description": {
                                   "en": "Identity Card, Uruguay.",
-                                  "es": "Identity Card, Uruguay.",
-                                  "pt": "Identity Card, Uruguay."
+                                  "es": "Cédula de Identidad, Uruguay.",
+                                  "pt": "Carteira de Identidade, Uruguai."
                                 }
                               }
                             ],
@@ -799,70 +796,6 @@
                           "pt": "Sobrenome do pagante associado",
                           "es": "Apellido del pagador asociado"
                         }
-                      },
-                      "address": {
-                        "type": "object",
-                        "description": {
-                          "en": "Information about the payer's address. Sending it is required when creating payments with boleto bancário in Brazil.",
-                          "pt": "Informações sobre o endereço do pagador. Seu envio é obrigatório ao criar pagamentos com boleto bancário no Brasil.",
-                          "es": "Información sobre la dirección del pagador. Su envío es obligatorio al crear pagos con boleto bancário en Brasil."
-                        },
-                        "properties": {
-                          "zip_code": {
-                            "type": "string",
-                            "description": {
-                              "en": "Refers to the zip code of the buyer's address. Sending it is required when creating payments with boleto bancário in Brazil.",
-                              "pt": "Refere-se ao CEP. Seu envio é obrigatório ao criar pagamentos com boleto bancário no Brasil.",
-                              "es": "Se refiere al código postal. Su envío es obligatorio al crear pagos con boleto bancário en Brasil."
-                            },
-                            "example": "88000000"
-                          },
-                          "street_name": {
-                            "type": "string",
-                            "description": {
-                              "en": "Buyer's street name. Sending it is required when creating payments with boleto bancário in Brazil.",
-                              "pt": "Nome da rua do comprador. Seu envio é obrigatório ao criar pagamentos com boleto bancário no Brasil.",
-                              "es": "Nombre de la calle del comprador. Su envío es obligatorio al crear pagos con boleto bancário en Brasil."
-                            },
-                            "example": "Rua da Abobrinha"
-                          },
-                          "street_number": {
-                            "type": "string",
-                            "description": {
-                              "en": "Buyer's address number. Sending it is required when creating payments with boleto bancário in Brazil.",
-                              "pt": "Número do endereço do comprador. Seu envio é obrigatório ao criar pagamentos com boleto bancário no Brasil.",
-                              "es": "Número de la dirección del comprador. Su envío es obligatorio al crear pagos con boleto bancário en Brasil."
-                            },
-                            "example": "1291"
-                          },
-                          "neighborhood": {
-                            "type": "string",
-                            "description": {
-                              "en": "Neighborhood where the buyer's address is located. Sending it is required when creating payments with boleto bancário in Brazil.",
-                              "pt": "Bairro onde está localizado o endereço do comprador. Seu envio é obrigatório ao criar pagamentos com boleto bancário no Brasil.",
-                              "es": "Barrio donde se ubica la dirección del comprador. Su envío es obligatorio al crear pagos con boleto bancário en Brasil."
-                            },
-                            "example": "Copacabana"
-                          },
-                          "city": {
-                            "type": "string",
-                            "description": {
-                              "en": "City where the buyer lives. Sending it is required when creating payments with boleto bancário in Brazil.",
-                              "pt": "Cidade onde o comprador mora. Seu envio é obrigatório ao criar pagamentos com boleto bancário no Brasil.",
-                              "es": "Ciudad donde vive el comprador. Su envío es obligatorio al crear pagos con boleto bancário en Brasil."
-                            },
-                            "example": "Rio de Janeiro"
-                          },
-                          "federal_unit": {
-                            "type": "string",
-                            "description": {
-                              "pt": "Sigla do Estado onde o comprador mora. Seu envio é obrigatório ao criar pagamentos com boleto bancário no Brasil.",
-                              "en": "State abbreviation where the buyer lives. Sending it is required when creating payments with boleto bancário in Brazil.",
-                              "es": "Sigla del Estado donde vive el comprador. Su envío es obligatorio al crear pagos con boleto bancário en Brasil."
-                            },
-                            "example": "RJ"
-                          }
-                        }
                       }
                     }
                   },
@@ -880,14 +813,6 @@
                           "en": "Instant digital payment method used in Brazil.",
                           "es": "Método de pago digital instantáneo utilizado en Brasil.",
                           "pt": "Método de pagamento digital instantâneo utilizado no Brasil."
-                        }
-                      },
-                      {
-                        "title": "bolbradesco",
-                        "description": {
-                          "en": "Boleto bancário. Offline payment method used in Brazil.",
-                          "es": "Boleto bancário. Método de pago offline utilizado en Brasil.",
-                          "pt": "Boleto bancário. Método de pagamento offline utilizado no Brasil."
                         }
                       },
                       {
@@ -923,7 +848,6 @@
                         }
                       }
                     ],
-                    "required": true,
                     "example": "master"
                   },
                   "statement_descriptor": {
@@ -962,8 +886,8 @@
         "responses": {
           "200": {
             "description": {
-              "es": "Success",
-              "pt": "Success",
+              "es": "Éxito",
+              "pt": "Sucesso",
               "en": "Success"
             },
             "content": {
@@ -1070,95 +994,6 @@
                           }
                         },
                         {
-                          "title": "partially_refunded",
-                          "description":{
-                            "en": "Payment with at least one partial refund",
-                            "es": "Pago con al menos un reembolso parcial",
-                            "pt": "Pagamento com pelo menos um reembolso parcial"
-                          }
-                        },
-                        {
-                          "title": "by_collector",
-                          "description": {
-                            "en": "Payment cancelled by collector.",
-                            "es": "Pago cancelado por el collector",
-                            "pt": "Pagamento cancelado pelo collector"
-                          }
-                        },
-                        {
-                          "title": "by_payer",
-                          "description": {
-                            "en": "Payment cancelled by payer.",
-                            "es": "Pago cancelado por el payer.",
-                            "pt": "Pagamento cancelado pelo payer."
-                          }
-                        },
-                        {
-                          "title": "expired",
-                          "description": {
-                            "en": "The payment has been in an intermediate status for over 30 days, and the cancellation is being done proactively.",
-                            "es": "El pago lleva más de 30 días en un estado intermedio y la cancelación se realiza de forma proactiva.",
-                            "pt": "O pagamento está há mais de 30 dias em um estado intermediário e o cancelamento é feito de forma proativa."
-                          }
-                        },
-                        {
-                          "title": "in_process",
-                          "description": {
-                            "en": "In the process of recovery after the payment is disputed by the payer.",
-                            "es": "En proceso de recuperación después de que el pago sea impugnado por el pagador.",
-                            "pt": "Em processo de recuperação após o pagamento ser contestado pelo pagador."
-                          }
-                        },
-                        {
-                          "title": "reimbursed",
-                          "description": {
-                            "en": "The transaction money was made available again to the collector after a chargeback recovery process.",
-                            "es": "El dinero de la transacción fue nuevamente disponible para el collector después de un proceso de recuperación de contracargo.",
-                            "pt": "O dinheiro da transação foi novamente disponibilizado ao collector após um processo de recuperação de chargeback."
-                          }
-                        },
-                        {
-                          "title": "refunded",
-                          "description": {
-                            "en": "The amount was refunded by collector.",
-                            "es": "El valor fue devuelto por el collector.",
-                            "pt": "O valor foi devolvido pelo collector."
-                        }
-                        },
-                        {
-                          "title": "settled",
-                          "description": {
-                            "en": "The transaction money was withheld from the collector after a chargeback recovery process.",
-                            "es": "Se retuvo el dinero de la transacción al cobrador después de un proceso de recuperación de contracargo.",
-                            "pt": "O dinheiro da transação foi retido do coletor após um processo de recuperação de chargeback."
-                          }
-                        },
-                        {
-                          "title": "offline_process",
-                          "description": {
-                            "en": "Due to lack of online processing, the payment is being processed through an offline channel.",
-                            "es": "Por falta de un procesamiento online, el pago está siendo procesado por un canal offline.",
-                            "pt": "Devido à falta de processamento online, o pagamento está sendo processado por um canal offline."
-                          }
-                        },
-                        {
-                          "title": "pending",
-                          "description": {
-                            "en": "Mediation in progress.",
-                            "es": "Mediación en curso.",
-                            "pt": "Mediação em andamento."
-                        }
-                      },
-                        {
-                          "title": "pending_capture",
-                          "description": {
-                            "en": "Payment authorized and waiting for capture.",
-                            "es": "Pago autorizado y a la espera de ser capturado.",
-                            "pt": "Pagamento autorizado e esperando captura."
-
-                          }
-                        },    
-                        {
                           "title": "pending_contingency",
                           "description": {
                             "en": "The payment is being processed.",
@@ -1171,38 +1006,22 @@
                           "description": {
                             "en": "The payment is under review to determine its approval or rejection.",
                             "es": "El pago está en revisión para determinar su aprobación o rechazo.",
-                            "pt": "O pagamento está em análise para determinar sua aprovação ou rejeição."
+                            "pt": "O pagamento está em revisão para determinar sua aprovação ou rejeição."
                           }
-                        },
-                        {
-                          "title": "pending_provider_response",
-                          "description": {
-                            "en": "Pending response from the provider side.",
-                            "es": "Pendiente de respuesta del lado del proveedor.",
-                            "pt": "Pendente de resposta do lado do provedor."
-                        }
-                        },
-                        {
-                          "title": "pending_waiting_transfer",
-                          "description": {
-                            "en": "Waiting for the user to complete the payment process at their bank.",
-                            "es": "Esperando al usuario para terminar el proceso de pago en su banco.",
-                            "pt": "Esperando o usuário concluir o processo de pagamento em seu banco."
-                        }
                         },
                         {
                           "title": "cc_rejected_bad_filled_date",
                           "description": {
                             "en": "Incorrect expiration date.",
                             "es": "Fecha de vencimiento incorrecta.",
-                            "pt": "Data de validade incorreta."
+                            "pt": "Data de vencimento incorreta."
                           }
                         },
                         {
                           "title": "cc_rejected_bad_filled_other",
                           "description": {
                             "en": "Incorrect card details.",
-                            "es": "Detalles del tarjeta incorrectos.",
+                            "es": "Datos de la tarjeta incorrectos.",
                             "pt": "Detalhes do cartão incorretos."
                           }
                         },
@@ -1218,14 +1037,14 @@
                           "title": "cc_rejected_blacklist",
                           "description": {
                             "en": "The card is on a black list for theft/complaints/fraud.",
-                            "es": "La tarjeta está en una black list por robo/quejas/fraude.",
-                            "pt": "O cartão está em uma black list por roubo/reclamações/fraude."
+                            "es": "La tarjeta está en una lista negra por robo/quejas/fraude.",
+                            "pt": "O cartão está em uma lista negra por roubo/reclamações/fraude."
                           }
                         },
                         {
                           "title": "cc_rejected_call_for_authorize",
                           "description": {
-                            "en": "The payment method requires prior authorization of the amount of the operation.",
+                            "en": "The means of payment requires prior authorization of the amount of the operation.",
                             "es": "El medio de pago requiere autorización previa del monto de la operación.",
                             "pt": "O meio de pagamento requer autorização prévia do valor da operação."
                           }
@@ -1241,7 +1060,7 @@
                         {
                           "title": "cc_rejected_duplicated_payment",
                           "description": {
-                            "en": "Duplicated transaction.",
+                            "en": "Transacción duplicada.",
                             "es": "Transacción duplicada.",
                             "pt": "Transação duplicada."
                           }
@@ -1249,7 +1068,7 @@
                         {
                           "title": "cc_rejected_high_risk",
                           "description": {
-                            "en": "Rejection due to Fraud Prevention.",
+                            "en": "Rechazo por Prevención de Fraude.",
                             "es": "Rechazo por Prevención de Fraude.",
                             "pt": "Rejeição por Prevenção de Fraude."
                           }
@@ -1260,14 +1079,6 @@
                             "en": "Insufficient amount.",
                             "es": "Monto insuficiente.",
                             "pt": "Quantia insuficiente."
-                          }
-                        },
-                        {
-                          "title": "rejected_insufficient_data",
-                          "description": {
-                            "en": "Rejected due to lack of data.",
-                            "es": "Rechazado debido a la falta de datos.",
-                            "pt": "Rejeitado devido à falta de dados."
                           }
                         },
                         {
@@ -1282,8 +1093,8 @@
                           "title": "cc_rejected_max_attempts",
                           "description": {
                             "en": "Exceeded maximum number of attempts.",
-                            "es": "Número máximo de intentos excedido.",
-                            "pt": "Número máximo de tentativas excedido."
+                            "es": "Excedido el número máximo de intentos.",
+                            "pt": "Excedido o número máximo de tentativas."
                           }
                         },
                         {
@@ -1408,12 +1219,10 @@
                             "en": "Payer identifier generated by Mercado Pago.",
                             "pt": "Identificador de pagador gerado pelo Mercado Pago.",
                             "es": "Identificador del Payer generado por Mercado Pago."
-                          },
-                          "required": true
+                          }
                         },
                         "email": {
                           "type": "string",
-                          "required": true,
                           "example": "test_user_80507629@testuser.com",
                           "description": {
                             "en": "Email associated with the payer. This value will only return a response when status=approved, status=refunded, or status=charged_back.",
@@ -1444,9 +1253,9 @@
                             }
                           },
                           "description": {
-                            "es": "Personal identification. This value will only return a response when status=approved, status=refunded or status=charged_back",
-                            "pt": "Personal identification. This value will only return a response when status=approved, status=refunded or status=charged_back",
-                            "en": "Personal identification. This value will only return a response when status=approved, status=refunded or status=charged_back"
+                            "es": "Identificación personal. Este valor solo devolverá una respuesta cuando el estado sea aprobado, reembolsado o con devolución de cargo.",
+                            "pt": "Identificação pessoal. Este valor só retornará uma resposta quando o status for aprovado, reembolsado ou com devolução de cobrança.",
+                            "en": "Personal identification. This value will only return a response when status is approved, refunded, or charged back."
                           }
                         },
                         "type": {
@@ -1533,8 +1342,8 @@
                                 "type": "number",
                                 "example": 58.8,
                                 "description": {
-                                  "es": "Unit price.",
-                                  "pt": "Unit price.",
+                                  "es": "Precio unitario.",
+                                  "pt": "Preço unitário.",
                                   "en": "Unit price."
                                 }
                               }
@@ -1926,9 +1735,9 @@
                               "type": "string",
                               "example": "APRO",
                               "description": {
-                                "es": "name",
-                                "pt": "name",
-                                "en": "name"
+                                "es": "Nombre.",
+                                "pt": "Nome.",
+                                "en": "Name."
                               }
                             },
                             "identification": {
@@ -1954,8 +1763,8 @@
                                 }
                               },
                               "description": {
-                                "es": "Personal identification.",
-                                "pt": "Personal identification.",
+                                "es": "Identificación personal.",
+                                "pt": "Identificação pessoal.",
                                 "en": "Personal identification."
                               }
                             }
@@ -1995,16 +1804,16 @@
                           "title": "Aggregator",
                           "description": {
                             "en": "The merchant will use the Mercado Pago merchant codes and will take advantage of the financial advantages that we offer.",
-                            "es": "The merchant will use the Mercado Pago merchant codes and will take advantage of the financial advantages that we offer.",
-                            "pt": "The merchant will use the Mercado Pago merchant codes and will take advantage of the financial advantages that we offer."
+                            "es": "El merchant utilizará los códigos de merchant de Mercado Pago y aprovechará las ventajas financieras que ofrecemos.",
+                            "pt": "O merchant utilizará os códigos de merchant do Mercado Pago e aproveitará as vantagens financeiras que oferecemos."
                           }
                         },
                         {
                           "title": "Gateway",
                           "description": {
                             "en": "For the merchant it is necessary to have their own merchant codes for online sales and to have an agreement with each of the desired means of payment.",
-                            "es": "For the merchant it is necessary to have their own merchant codes for online sales and to have an agreement with each of the desired means of payment.",
-                            "pt": "For the merchant it is necessary to have their own merchant codes for online sales and to have an agreement with each of the desired means of payment."
+                            "es": "Para el merchant es necesario tener sus propios códigos de merchant para ventas en línea y tener un acuerdo con cada uno de los medios de pago deseados.",
+                            "pt": "Para o merchant é necessário ter seus próprios códigos de merchant para vendas online e ter um acordo com cada um dos meios de pagamento desejados."
                           }
                         }
                       ]
@@ -2043,17 +1852,17 @@
                           "type": "string",
                           "example": "PIX",
                           "description": {
-                            "en": "Payment type identifier",
-                            "pt": "Identificador do tipo de pagamento",
-                            "es": "Identificador del tipo de pago"
+                            "en": "Payment type identifier.",
+                            "pt": "Identificador do tipo de pagamento.",
+                            "es": "Identificador del tipo de pago."
                           }
                         },
                         "sub_type": {
                           "type": "string",
                           "description": {
-                            "en": "Secondary identifier of the payment type",
-                            "pt": "Identificador secundário do tipo de pagamento",
-                            "es": "Identificador secundario del tipo de pago"
+                            "en": "Secondary identifier of the payment type.",
+                            "pt": "Identificador secundário do tipo de pagamento.",
+                            "es": "Identificador secundario del tipo de pago."
                           }
                         },
                         "application_data": {
@@ -2063,25 +1872,25 @@
                               "type": "string",
                               "example": "NAME_SDK",
                               "description": {
-                                "en": "Application name",
-                                "pt": "Nome da aplicação",
-                                "es": "Nombre de la aplicación"
+                                "en": "Application name.",
+                                "pt": "Nome da aplicação.",
+                                "es": "Nombre de la aplicación."
                               }
                             },
                             "version": {
                               "type": "string",
                               "example": "VERSION_NUMBER",
                               "description": {
-                                "en": "Current version",
-                                "pt": "Versão atual da aplicação",
-                                "es": "Versión actual de la aplicación"
+                                "en": "Current version.",
+                                "pt": "Versão atual da aplicação.",
+                                "es": "Versión actual de la aplicación."
                               }
                             }
                           },
                           "description": {
-                            "en": "Information about the application that processes the payment",
-                            "pt": "Informação da aplicação que processa o pagamento",
-                            "es": "Información de la aplicación que procesa el pago"
+                            "en": "Information about the application that processes the payment.",
+                            "pt": "Informação da aplicação que processa o pagamento.",
+                            "es": "Información de la aplicación que procesa el pago."
                           }
                         },
                         "transaction_data": {
@@ -2091,27 +1900,27 @@
                               "type": "string",
                               "example": "iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAIABJREFUeJzs2luO3LiWQNFmI+Y/Zd6vRt36KGNXi7ZOBtcagHD4kNLeiLX33v8DAAAAABD879sDAAAAAAA/h6AIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCAAAAAJmgCAAAAABkgiIAAAAAkAmKAAAAAEAmKAIAAAAAmaAIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCA...",
                               "description": {
-                                "en": "Base64 representation of the image of the QR code to be scanned to finalize the payment",
-                                "pt": "Representação em Base64 da imagem do código QR a ser digitalizado para finalização do pagamento",
-                                "es": "Representación en base64 de la imagen del código QR a escanear para finalizar el pago"
+                                "en": "Base64 representation of the image of the QR code to be scanned to finalize the payment.",
+                                "pt": "Representação em Base64 da imagem do código QR a ser digitalizado para finalização do pagamento.",
+                                "es": "Representación en base64 de la imagen del código QR a escanear para finalizar el pago."
                               }
                             },
                             "qr_code": {
                               "type": "string",
                               "example": "00020126600014br.gov.bcb.pix0117test@testuser.com0217dados adicionais520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA",
                               "description": {
-                                "en": "Alphanumeric code to copy and paste, used to finalize the payment",
-                                "pt": "Código alfanumérico para copiar e colar, para finalizar o pagamento",
-                                "es": "Código alfanumérico para copiar y pegar, para finalizar el pago"
+                                "en": "Alphanumeric code to copy and paste, used to finalize the payment.",
+                                "pt": "Código alfanumérico para copiar e colar, para finalizar o pagamento.",
+                                "es": "Código alfanumérico para copiar y pegar, para finalizar el pago."
                               }
                             },
                             "ticket_url": {
                               "type": "string",
                               "example": "https://www.mercadopago.com.br/payments/123456789/ticket?caller_id=123456&hash=123e4567-e89b-12d3-a456-426655440000",
                               "description": {
-                                "es": "A link to the rendered pix, with QR codes and instructions to pay",
-                                "pt": "A link to the rendered pix, with QR codes and instructions to pay",
-                                "en": "A link to the rendered pix, with QR codes and instructions to pay"
+                                "es": "Un enlace al pix renderizado, con códigos QR e instrucciones para pagar.",
+                                "pt": "Um link para o pix renderizado, com códigos QR e instruções para pagar.",
+                                "en": "A link to the rendered pix, with QR codes and instructions to pay."
                               }
                             }
                           },
@@ -2150,665 +1959,673 @@
                         {
                           "title": "1",
                           "description": {
-                            "en": "Params Error.",
-                            "es": "Params Error.",
-                            "pt": "Params Error."
+                            "en": "Params Error. - If this error appears, please verify the parameters sent in the request.",
+                            "es": "Params Error. - Si aparece este error, por favor verifique los parámetros enviados en la solicitud.",
+                            "pt": "Params Error. - Caso esse erro apareça, verifique os parâmetros enviados na solicitação."
                           }
                         },
                         {
                           "title": "3",
                           "description": {
-                            "en": "Token must be for test.",
-                            "es": "Token must be for test.",
-                            "pt": "Token must be for test."
+                            "en": "Token must be for test. - If this error occurs, ensure you are using a test token.",
+                            "es": "Token must be for test. - Si ocurre este error, asegúrese de estar usando un token de prueba.",
+                            "pt": "Token must be for test. - Caso esse erro ocorra, certifique-se de que está usando um token de teste."
                           }
                         },
                         {
-                          "title": "5",
+                          "title": "8",
                           "description": {
-                            "en": "Must provide your access_token to proceed.",
-                            "es": "Must provide your access_token to proceed.",
-                            "pt": "Must provide your access_token to proceed."
+                            "en": "The name of the following parameters is wrong [additional_info.payer.test] - This error is displayed when the name of a certain parameter is entered incorrectly. In this example, the `additional_info.payer` field. Review the parameter returned in the error and ensure that the information entered is correct.",
+                            "es": "The name of the following parameters is wrong [additional_info.payer.test] - Este error se muestra cuando el nombre de un determinado parámetro se introduce incorrectamente. En este ejemplo, el campo `additional_info.payer`. Revise el parámetro devuelto en el error y asegúrese de que la información introducida sea correcta.",
+                            "pt": "The name of the following parameters is wrong [additional_info.payer.test] - Este erro é exibido quando o nome de determinado parâmetro é inserido incorretamente. Neste exemplo, o campo `additional_info.payer`. Revise o parâmetro retornado no erro e garanta que a informação inserida esteja correta."
                           }
                         },
                         {
                           "title": "23",
                           "description": {
-                            "en": "The following parameters must be valid date and format (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration.",
-                            "es": "The following parameters must be valid date and format (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration.",
-                            "pt": "The following parameters must be valid date and format (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration."
+                            "en": "The following parameters must be valid date and format (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration. - If this error arises, ensure the date_of_expiration is in the correct format.",
+                            "es": "The following parameters must be valid date and format (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration. - Si surge este error, asegúrese de que la fecha de expiración esté en el formato correcto.",
+                            "pt": "The following parameters must be valid date and format (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration. - Se esse erro surgir, certifique-se de que a data de expiração está no formato correto."
                           }
                         },
                         {
                           "title": "1000",
                           "description": {
-                            "en": "Number of rows exceeded the limits.",
-                            "es": "Number of rows exceeded the limits.",
-                            "pt": "Number of rows exceeded the limits."
-                          }
-                        },
-                        {
-                          "title": "1001",
-                          "description": {
-                            "en": "Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.",
-                            "es": "Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.",
-                            "pt": "Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ."
-                          }
-                        },
-                        {
-                          "title": "2001",
-                          "description": {
-                            "en": "Already posted the same request in the last minute.",
-                            "es": "Already posted the same request in the last minute.",
-                            "pt": "Already posted the same request in the last minute."
+                            "en": "Number of rows exceeded the limits. - If you encounter this error, reduce the number of rows in your request.",
+                            "es": "Number of rows exceeded the limits. - Si encuentra este error, reduzca el número de filas en su solicitud.",
+                            "pt": "Number of rows exceeded the limits. - Se encontrar esse erro, reduza o número de linhas na sua solicitação."
                           }
                         },
                         {
                           "title": "2002",
                           "description": {
-                            "en": "Customer not found.",
-                            "es": "Customer not found.",
-                            "pt": "Customer not found."
+                            "en": "Customer not found. - Verify the customer details and try again if you encounter this error.",
+                            "es": "Customer not found. - Verifique los detalles del cliente e intente nuevamente si encuentra este error.",
+                            "pt": "Customer not found. - Verifique os detalhes do cliente e tente novamente se encontrar esse erro."
                           }
                         },
                         {
                           "title": "2004",
                           "description": {
-                            "en": "POST to Gateway Transactions API fail.",
-                            "es": "POST to Gateway Transactions API fail.",
-                            "pt": "POST to Gateway Transactions API fail."
+                            "en": "POST to Gateway Transactions API fail. - If this error occurs, check the API endpoint and try again.",
+                            "es": "POST to Gateway Transactions API fail. - Si ocurre este error, verifique el endpoint de la API y vuelva a intentarlo.",
+                            "pt": "POST to Gateway Transactions API fail. - Caso esse erro ocorra, verifique o endpoint da API e tente novamente."
                           }
                         },
                         {
                           "title": "2006",
                           "description": {
-                            "en": "Card Token not found.",
-                            "es": "Card Token not found.",
-                            "pt": "Card Token not found."
+                            "en": "Card Token not found. - If you see this error, ensure the card token is correct and valid.",
+                            "es": "Card Token not found. - Si ve este error, asegúrese de que el token de la tarjeta sea correcto y válido.",
+                            "pt": "Card Token not found. - Caso veja esse erro, certifique-se de que o token do cartão está correto e válido."
                           }
                         },
                         {
                           "title": "2007",
                           "description": {
-                            "en": "Connection to Card Token API fail.",
-                            "es": "Connection to Card Token API fail.",
-                            "pt": "Connection to Card Token API fail."
+                            "en": "Connection to Card Token API fail. - Check your network connection and try again if this error appears.",
+                            "es": "Connection to Card Token API fail. - Verifique su conexión de red y vuelva a intentarlo si aparece este error.",
+                            "pt": "Connection to Card Token API fail. - Verifique sua conexão de rede e tente novamente se esse erro aparecer."
                           }
                         },
                         {
                           "title": "2009",
                           "description": {
-                            "en": "Card token issuer can't be null.",
-                            "es": "Card token issuer can't be null.",
-                            "pt": "Card token issuer can't be null."
+                            "en": "Card token issuer can't be null. - Ensure that the card token issuer is provided if this error occurs.",
+                            "es": "Card token issuer can't be null. - Asegúrese de que se proporcione el emisor del token de tarjeta si ocurre este error.",
+                            "pt": "Card token issuer can't be null. - Certifique-se de que o emissor do token do cartão seja fornecido se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "2034",
                           "description": {
-                            "en": "Invalid users involved 2041 – GET to API APPLICATION fail.",
-                            "es": "Invalid users involved 2041 – GET to API APPLICATION fail.",
-                            "pt": "Invalid users involved 2041 – GET to API APPLICATION fail."
+                            "en": "Invalid users involved 2041 – GET to API APPLICATION fail. - If this error appears, verify the users involved and try again.",
+                            "es": "Invalid users involved 2041 – GET to API APPLICATION fail. - Si aparece este error, verifique los usuarios involucrados y vuelva a intentarlo.",
+                            "pt": "Invalid users involved 2041 – GET to API APPLICATION fail. - Caso esse erro apareça, verifique os usuários envolvidos e tente novamente."
                           }
                         },
                         {
                           "title": "2060",
                           "description": {
-                            "en": "The customer can't be equal to the collector.",
-                            "es": "The customer can't be equal to the collector.",
-                            "pt": "The customer can't be equal to the collector."
+                            "en": "The customer can't be equal to the collector. - If you encounter this error, ensure that the customer and the collector are different entities.",
+                            "es": "The customer can't be equal to the collector. - Si encuentra este error, asegúrese de que el cliente y el recolector sean entidades diferentes.",
+                            "pt": "The customer can't be equal to the collector. - Se encontrar esse erro, certifique-se de que o cliente e o coletor sejam entidades diferentes."
                           }
                         },
                         {
                           "title": "2062",
                           "description": {
-                            "en": "Invalid card token.",
-                            "es": "Invalid card token.",
-                            "pt": "Invalid card token."
+                            "en": "Invalid card token. - Ensure that the card token provided is valid and correct if this error occurs.",
+                            "es": "Invalid card token. - Asegúrese de que el token de tarjeta proporcionado sea válido y correcto si ocurre este error.",
+                            "pt": "Invalid card token. - Certifique-se de que o token do cartão fornecido é válido e correto se esse erro ocorrer."
+                          }
+                        },
+                        {
+                          "title": "2067",
+                          "description": {
+                            "en": "Invalid user identification number. - Verify the user identification number and try again if you encounter this error.",
+                            "es": "Invalid user identification number. - Verifique el número de identificación del usuario e intente nuevamente si encuentra este error.",
+                            "pt": "Invalid user identification number. - Verifique o número de identificação do usuário e tente novamente se encontrar esse erro."
                           }
                         },
                         {
                           "title": "2072",
                           "description": {
-                            "en": "Invalid value for transaction_amount.",
-                            "es": "Invalid value for transaction_amount.",
-                            "pt": "Invalid value for transaction_amount."
+                            "en": "Invalid value for transaction_amount. - Ensure that the transaction_amount is valid if this error appears.",
+                            "es": "Invalid value for transaction_amount. - Asegúrese de que el transaction_amount sea válido si aparece este error.",
+                            "pt": "Invalid value for transaction_amount. - Certifique-se de que o transaction_amount seja válido se esse erro aparecer."
                           }
                         },
                         {
                           "title": "2077",
                           "description": {
-                            "en": "Deferred capture not supported.",
-                            "es": "Deferred capture not supported.",
-                            "pt": "Deferred capture not supported."
+                            "en": "Deferred capture not supported. - If this error occurs, note that deferred capture is not supported and adjust your request accordingly.",
+                            "es": "Deferred capture not supported. - Si ocurre este error, tenga en cuenta que la captura diferida no es compatible y ajuste su solicitud en consecuencia.",
+                            "pt": "Deferred capture not supported. - Se esse erro ocorrer, observe que a captura diferida não é suportada e ajuste sua solicitação conforme necessário."
                           }
                         },
                         {
                           "title": "2123",
                           "description": {
-                            "en": "Invalid operators users involved.",
-                            "es": "Invalid operators users involved.",
-                            "pt": "Invalid operators users involved."
+                            "en": "Invalid operators users involved. - If you see this error, verify the operators involved in the transaction.",
+                            "es": "Invalid operators users involved. - Si ve este error, verifique los operadores involucrados en la transacción.",
+                            "pt": "Invalid operators users involved. - Caso veja esse erro, verifique os operadores envolvidos na transação."
                           }
                         },
                         {
                           "title": "2131",
                           "description": {
-                            "en": "Cannot infer Payment Method.",
-                            "es": "Cannot infer Payment Method.",
-                            "pt": "Cannot infer Payment Method."
+                            "en": "Cannot infer Payment Method. - Ensure that the payment method information is complete and accurate if this error appears.",
+                            "es": "Cannot infer Payment Method. - Asegúrese de que la información del método de pago esté completa y sea precisa si aparece este error.",
+                            "pt": "Cannot infer Payment Method. - Certifique-se de que as informações do método de pagamento estão completas e precisas se esse erro aparecer."
                           }
                         },
                         {
                           "title": "3000",
                           "description": {
-                            "en": "You must provide your cardholder_name with your card data.",
-                            "es": "You must provide your cardholder_name with your card data.",
-                            "pt": "You must provide your cardholder_name with your card data."
+                            "en": "You must provide your cardholder_name with your card data. - If this error occurs, include the cardholder_name in your request.",
+                            "es": "You must provide your cardholder_name with your card data. - Si ocurre este error, incluya el cardholder_name en su solicitud.",
+                            "pt": "You must provide your cardholder_name with your card data. - Se esse erro ocorrer, inclua o cardholder_name na sua solicitação."
                           }
                         },
                         {
                           "title": "3001",
                           "description": {
-                            "en": "You must provide your cardissuer_id with your card data.",
-                            "es": "You must provide your cardissuer_id with your card data.",
-                            "pt": "You must provide your cardissuer_id with your card data."
+                            "en": "You must provide your cardissuer_id with your card data. - If you encounter this error, ensure the cardissuer_id is included in your request.",
+                            "es": "You must provide your cardissuer_id with your card data. - Si encuentra este error, asegúrese de que el cardissuer_id esté incluido en su solicitud.",
+                            "pt": "You must provide your cardissuer_id with your card data. - Se encontrar esse erro, certifique-se de que o cardissuer_id está incluído na sua solicitação."
                           }
                         },
                         {
                           "title": "3003",
                           "description": {
-                            "en": "Invalid card_token_id.",
-                            "es": "Invalid card_token_id.",
-                            "pt": "Invalid card_token_id."
+                            "en": "Invalid card_token_id. - Verify the card_token_id and try again if this error appears.",
+                            "es": "Invalid card_token_id. - Verifique el card_token_id e intente nuevamente si aparece este error.",
+                            "pt": "Invalid card_token_id. - Verifique o card_token_id e tente novamente se esse erro aparecer."
                           }
                         },
                         {
                           "title": "3004",
                           "description": {
-                            "en": "Invalid parameter site_id.",
-                            "es": "Invalid parameter site_id.",
-                            "pt": "Invalid parameter site_id."
+                            "en": "Invalid parameter site_id. - If this error occurs, ensure the site_id is valid and correctly formatted.",
+                            "es": "Invalid parameter site_id. - Si ocurre este error, asegúrese de que el site_id sea válido y esté correctamente formateado.",
+                            "pt": "Invalid parameter site_id. - Se esse erro ocorrer, certifique-se de que o site_id é válido e está corretamente formatado."
                           }
                         },
                         {
                           "title": "3005",
                           "description": {
-                            "en": "Not valid action, the resource is in a state that does not allow this operation. For more information see the state that has the resource.",
-                            "es": "Not valid action, the resource is in a state that does not allow this operation. For more information see the state that has the resource.",
-                            "pt": "Not valid action, the resource is in a state that does not allow this operation. For more information see the state that has the resource."
+                            "en": "Not valid action, the resource is in a state that does not allow this operation. For more information see the state that has the resource. - If you see this error, check the state of the resource and adjust your request accordingly.",
+                            "es": "Not valid action, the resource is in a state that does not allow this operation. For more information see the state that has the resource. - Si ve este error, verifique el estado del recurso y ajuste su solicitud en consecuencia.",
+                            "pt": "Not valid action, the resource is in a state that does not allow this operation. For more information see the state that has the resource. - Caso veja esse erro, verifique o estado do recurso e ajuste sua solicitação conforme necessário."
                           }
                         },
                         {
                           "title": "3006",
                           "description": {
-                            "en": "Invalid parameter cardtoken_id.",
-                            "es": "Invalid parameter cardtoken_id.",
-                            "pt": "Invalid parameter cardtoken_id."
+                            "en": "Invalid parameter cardtoken_id. - Ensure the cardtoken_id is correct and try again if this error appears.",
+                            "es": "Invalid parameter cardtoken_id. - Asegúrese de que el cardtoken_id sea correcto e intente nuevamente si aparece este error.",
+                            "pt": "Invalid parameter cardtoken_id. - Certifique-se de que o cardtoken_id está correto e tente novamente se esse erro aparecer."
                           }
                         },
                         {
                           "title": "3007",
                           "description": {
-                            "en": "The parameter client_id can not be null or empty.",
-                            "es": "The parameter client_id can not be null or empty.",
-                            "pt": "The parameter client_id can not be null or empty."
+                            "en": "The parameter client_id cannot be null or empty. - If this error occurs, provide a valid client_id.",
+                            "es": "The parameter client_id cannot be null or empty. - Si ocurre este error, proporcione un client_id válido.",
+                            "pt": "The parameter client_id cannot be null or empty. - Se esse erro ocorrer, forneça um client_id válido."
                           }
                         },
                         {
                           "title": "3008",
                           "description": {
-                            "en": "Not found Cardtoken.",
-                            "es": "Not found Cardtoken.",
-                            "pt": "Not found Cardtoken."
+                            "en": "Not found Cardtoken. - Verify the cardtoken information and try again if this error appears.",
+                            "es": "Not found Cardtoken. - Verifique la información del cardtoken e intente nuevamente si aparece este error.",
+                            "pt": "Not found Cardtoken. - Verifique as informações do cardtoken e tente novamente se esse erro aparecer."
                           }
                         },
                         {
                           "title": "3009",
                           "description": {
-                            "en": "unauthorized client_id.",
-                            "es": "unauthorized client_id.",
-                            "pt": "unauthorized client_id."
+                            "en": "Unauthorized client_id. - If this error occurs, check the client_id permissions and try again.",
+                            "es": "Unauthorized client_id. - Si ocurre este error, verifique los permisos del client_id e intente nuevamente.",
+                            "pt": "Unauthorized client_id. - Se esse erro ocorrer, verifique as permissões do client_id e tente novamente."
                           }
                         },
                         {
                           "title": "3010",
                           "description": {
-                            "en": "Not found card on whitelist.",
-                            "es": "Not found card on whitelist.",
-                            "pt": "Not found card on whitelist."
+                            "en": "Not found card on whitelist. - Ensure the card is on the whitelist if this error appears.",
+                            "es": "Not found card on whitelist. - Asegúrese de que la tarjeta esté en la lista blanca si aparece este error.",
+                            "pt": "Not found card on whitelist. - Certifique-se de que o cartão está na lista branca se esse erro aparecer."
                           }
                         },
                         {
                           "title": "3011",
                           "description": {
-                            "en": "Not found payment_method.",
-                            "es": "Not found payment_method.",
-                            "pt": "Not found payment_method."
+                            "en": "Not found payment_method. - Verify the payment_method information and try again if this error occurs.",
+                            "es": "Not found payment_method. - Verifique la información del payment_method e intente nuevamente si ocurre este error.",
+                            "pt": "Not found payment_method. - Verifique as informações do payment_method e tente novamente se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "3012",
                           "description": {
-                            "en": "Invalid parameter security_code_length.",
-                            "es": "Invalid parameter security_code_length.",
-                            "pt": "Invalid parameter security_code_length."
+                            "en": "Invalid parameter security_code_length. - Ensure the security_code_length parameter is correct if this error appears.",
+                            "es": "Invalid parameter security_code_length. - Asegúrese de que el parámetro security_code_length sea correcto si aparece este error.",
+                            "pt": "Invalid parameter security_code_length. - Certifique-se de que o parâmetro security_code_length está correto se esse erro aparecer."
                           }
                         },
                         {
                           "title": "3013",
                           "description": {
-                            "en": "The parameter security_code is a required field can not be null or empty.",
-                            "es": "The parameter security_code is a required field can not be null or empty.",
-                            "pt": "The parameter security_code is a required field can not be null or empty."
+                            "en": "The parameter security_code is a required field and cannot be null or empty. - If this error occurs, provide the security_code parameter.",
+                            "es": "The parameter security_code is a required field and cannot be null or empty. - Si ocurre este error, proporcione el parámetro security_code.",
+                            "pt": "The parameter security_code is a required field and cannot be null or empty. - Se esse erro ocorrer, forneça o parâmetro security_code."
                           }
                         },
                         {
                           "title": "3014",
                           "description": {
-                            "en": "Invalid parameter payment_method.",
-                            "es": "Invalid parameter payment_method.",
-                            "pt": "Invalid parameter payment_method."
+                            "en": "Invalid parameter payment_method. - Ensure the payment_method parameter is correct if this error appears.",
+                            "es": "Invalid parameter payment_method. - Asegúrese de que el parámetro payment_method sea correcto si aparece este error.",
+                            "pt": "Invalid parameter payment_method. - Certifique-se de que o parâmetro payment_method está correto se esse erro aparecer."
                           }
                         },
                         {
                           "title": "3015",
                           "description": {
-                            "en": "Invalid parameter card_number_length.",
-                            "es": "Invalid parameter card_number_length.",
-                            "pt": "Invalid parameter card_number_length."
+                            "en": "Invalid parameter card_number_length. - If this error occurs, ensure the card_number_length parameter is correct.",
+                            "es": "Invalid parameter card_number_length. - Si ocurre este error, asegúrese de que el parámetro card_number_length sea correcto.",
+                            "pt": "Invalid parameter card_number_length. - Se esse erro ocorrer, certifique-se de que o parâmetro card_number_length está correto."
                           }
                         },
                         {
                           "title": "3016",
                           "description": {
-                            "en": "Invalid parameter card_number.",
-                            "es": "Invalid parameter card_number.",
-                            "pt": "Invalid parameter card_number."
+                            "en": "Invalid parameter card_number. - Verify the card_number parameter and try again if this error appears.",
+                            "es": "Invalid parameter card_number. - Verifique el parámetro card_number e intente nuevamente si aparece este error.",
+                            "pt": "Invalid parameter card_number. - Verifique o parâmetro card_number e tente novamente se esse erro aparecer."
                           }
                         },
                         {
                           "title": "3017",
                           "description": {
-                            "en": "The parameter card_number_id can not be null or empty.",
-                            "es": "The parameter card_number_id can not be null or empty.",
-                            "pt": "The parameter card_number_id can not be null or empty."
+                            "en": "The parameter card_number_id cannot be null or empty. - Ensure the card_number_id parameter is provided if this error occurs.",
+                            "es": "The parameter card_number_id cannot be null or empty. - Asegúrese de que se proporcione el parámetro card_number_id si ocurre este error.",
+                            "pt": "The parameter card_number_id cannot be null or empty. - Certifique-se de que o parâmetro card_number_id é fornecido se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "3018",
                           "description": {
-                            "en": "The parameter expiration_month can not be null or empty.",
-                            "es": "The parameter expiration_month can not be null or empty.",
-                            "pt": "The parameter expiration_month can not be null or empty."
+                            "en": "The parameter expiration_month cannot be null or empty. - Provide the expiration_month parameter if this error occurs.",
+                            "es": "The parameter expiration_month cannot be null or empty. - Proporcione el parámetro expiration_month si ocurre este error.",
+                            "pt": "The parameter expiration_month cannot be null or empty. - Forneça o parâmetro expiration_month se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "3019",
                           "description": {
-                            "en": "The parameter expiration_year can not be null or empty.",
-                            "es": "The parameter expiration_year can not be null or empty.",
-                            "pt": "The parameter expiration_year can not be null or empty."
+                            "en": "The parameter expiration_year cannot be null or empty. - Ensure the expiration_year parameter is provided if this error appears.",
+                            "es": "The parameter expiration_year cannot be null or empty. - Asegúrese de que se proporcione el parámetro expiration_year si aparece este error.",
+                            "pt": "The parameter expiration_year cannot be null or empty. - Certifique-se de que o parâmetro expiration_year é fornecido se esse erro aparecer."
                           }
                         },
                         {
                           "title": "3020",
                           "description": {
-                            "en": "The parameter cardholder.name can not be null or empty.",
-                            "es": "The parameter cardholder.name can not be null or empty.",
-                            "pt": "The parameter cardholder.name can not be null or empty."
+                            "en": "The parameter cardholder.name cannot be null or empty. - Provide the cardholder.name parameter if this error occurs.",
+                            "es": "The parameter cardholder.name cannot be null or empty. - Proporcione el parámetro cardholder.name si ocurre este error.",
+                            "pt": "The parameter cardholder.name cannot be null or empty. - Forneça o parâmetro cardholder.name se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "3021",
                           "description": {
-                            "en": "The parameter cardholder.document.number can not be null or empty.",
-                            "es": "The parameter cardholder.document.number can not be null or empty.",
-                            "pt": "The parameter cardholder.document.number can not be null or empty."
+                            "en": "The parameter cardholder.document.number cannot be null or empty. - Ensure the cardholder.document.number parameter is provided if this error appears.",
+                            "es": "The parameter cardholder.document.number cannot be null or empty. - Asegúrese de que se proporcione el parámetro cardholder.document.number si aparece este error.",
+                            "pt": "The parameter cardholder.document.number cannot be null or empty. - Certifique-se de que o parâmetro cardholder.document.number é fornecido se esse erro aparecer."
                           }
                         },
                         {
                           "title": "3022",
                           "description": {
-                            "en": "The parameter cardholder.document.type can not be null or empty.",
-                            "es": "The parameter cardholder.document.type can not be null or empty.",
-                            "pt": "The parameter cardholder.document.type can not be null or empty."
+                            "en": "The parameter cardholder.document.type cannot be null or empty. - Provide the cardholder.document.type parameter if this error occurs.",
+                            "es": "The parameter cardholder.document.type cannot be null or empty. - Proporcione el parámetro cardholder.document.type si ocurre este error.",
+                            "pt": "The parameter cardholder.document.type cannot be null or empty. - Forneça o parâmetro cardholder.document.type se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "3023",
                           "description": {
-                            "en": "The parameter cardholder.document.subtype can not be null or empty.",
-                            "es": "The parameter cardholder.document.subtype can not be null or empty.",
-                            "pt": "The parameter cardholder.document.subtype can not be null or empty."
+                            "en": "The parameter cardholder.document.subtype cannot be null or empty. - Ensure the cardholder.document.subtype parameter is provided if this error appears.",
+                            "es": "The parameter cardholder.document.subtype cannot be null or empty. - Asegúrese de que se proporcione el parámetro cardholder.document.subtype si aparece este error.",
+                            "pt": "The parameter cardholder.document.subtype cannot be null or empty. - Certifique-se de que o parâmetro cardholder.document.subtype é fornecido se esse erro aparecer."
                           }
                         },
                         {
                           "title": "3024",
                           "description": {
-                            "en": "Not valid action - partial refund unsupported for this transaction.",
-                            "es": "Not valid action - partial refund unsupported for this transaction.",
-                            "pt": "Not valid action - partial refund unsupported for this transaction."
+                            "en": "Not valid action - partial refund unsupported for this transaction. - If this error occurs, note that partial refunds are not supported for this transaction.",
+                            "es": "Not valid action - partial refund unsupported for this transaction. - Si ocurre este error, tenga en cuenta que los reembolsos parciales no están soportados para esta transacción.",
+                            "pt": "Not valid action - partial refund unsupported for this transaction. - Se esse erro ocorrer, observe que reembolsos parciais não são suportados para esta transação."
                           }
                         },
                         {
                           "title": "3025",
                           "description": {
-                            "en": "Invalid Auth Code.",
-                            "es": "Invalid Auth Code.",
-                            "pt": "Invalid Auth Code."
+                            "en": "Invalid Auth Code. - Verify the Auth Code and try again if this error appears.",
+                            "es": "Invalid Auth Code. - Verifique el código de autenticación e intente nuevamente si aparece este error.",
+                            "pt": "Invalid Auth Code. - Verifique o código de autenticação e tente novamente se esse erro aparecer."
                           }
                         },
                         {
                           "title": "3026",
                           "description": {
-                            "en": "Invalid card_id for this payment_method_id.",
-                            "es": "Invalid card_id for this payment_method_id.",
-                            "pt": "Invalid card_id for this payment_method_id."
+                            "en": "Invalid card_id for this payment_method_id. - Ensure the card_id matches the payment_method_id if this error occurs.",
+                            "es": "Invalid card_id for this payment_method_id. - Asegúrese de que el card_id coincida con el payment_method_id si ocurre este error.",
+                            "pt": "Invalid card_id for this payment_method_id. - Certifique-se de que o card_id corresponde ao payment_method_id se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "3027",
                           "description": {
-                            "en": "Invalid payment_type_id.",
-                            "es": "Invalid payment_type_id.",
-                            "pt": "Invalid payment_type_id."
+                            "en": "Invalid payment_type_id. - If this error appears, verify the payment_type_id and try again.",
+                            "es": "Invalid payment_type_id. - Si aparece este error, verifique el payment_type_id e intente nuevamente.",
+                            "pt": "Invalid payment_type_id. - Se esse erro aparecer, verifique o payment_type_id e tente novamente."
                           }
                         },
                         {
                           "title": "3028",
                           "description": {
-                            "en": "Invalid payment_method_id.",
-                            "es": "Invalid payment_method_id.",
-                            "pt": "Invalid payment_method_id."
+                            "en": "Invalid payment_method_id. - Verify the payment_method_id and try again if this error occurs.",
+                            "es": "Invalid payment_method_id. - Verifique el payment_method_id e intente nuevamente si ocurre este error.",
+                            "pt": "Invalid payment_method_id. - Verifique o payment_method_id e tente novamente se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "3029",
                           "description": {
-                            "en": "Invalid card expiration month.",
-                            "es": "Invalid card expiration month.",
-                            "pt": "Invalid card expiration month."
+                            "en": "Invalid card expiration month. - Ensure the card expiration month is valid if this error appears.",
+                            "es": "Invalid card expiration month. - Asegúrese de que el mes de expiración de la tarjeta sea válido si aparece este error.",
+                            "pt": "Invalid card expiration month. - Certifique-se de que o mês de expiração do cartão é válido se esse erro aparecer."
                           }
                         },
                         {
                           "title": "3030",
                           "description": {
-                            "en": "Invalid card expiration year.",
-                            "es": "Invalid card expiration year.",
-                            "pt": "Invalid card expiration year."
+                            "en": "Invalid card expiration year. - If this error occurs, verify the card expiration year and try again.",
+                            "es": "Invalid card expiration year. - Si ocurre este error, verifique el año de expiración de la tarjeta e intente nuevamente.",
+                            "pt": "Invalid card expiration year. - Se esse erro ocorrer, verifique o ano de expiração do cartão e tente novamente."
                           }
                         },
                         {
                           "title": "3031",
                           "description": {
-                            "en": "Secure_code_id can't be null.",
-                            "es": "Secure_code_id can't be null.",
-                            "pt": "Secure_code_id can't be null."
+                            "en": "Secure_code_id can't be null. - Ensure the secure_code_id is provided if this error appears.",
+                            "es": "Secure_code_id can't be null. - Asegúrese de que el secure_code_id esté proporcionado si aparece este error.",
+                            "pt": "Secure_code_id can't be null. - Certifique-se de que o secure_code_id é fornecido se esse erro aparecer."
                           }
                         },
                         {
                           "title": "3032",
                           "description": {
-                            "en": "Invalid security_code_length 3033 3034 - Invalid card_number_validation.",
-                            "es": "Invalid security_code_length 3033 3034 - Invalid card_number_validation.",
-                            "pt": "Invalid security_code_length 3033 3034 - Invalid card_number_validation."
+                            "en": "Invalid security_code_length 3033 3034 - Invalid card_number_validation. - If this error occurs, verify the security_code_length and card_number_validation.",
+                            "es": "Invalid security_code_length 3033 3034 - Invalid card_number_validation. - Si ocurre este error, verifique la longitud del código de seguridad y la validación del número de tarjeta.",
+                            "pt": "Invalid security_code_length 3033 3034 - Invalid card_number_validation. - Se esse erro ocorrer, verifique o comprimento do código de segurança e a validação do número do cartão."
                           }
                         },
                         {
                           "title": "4000",
                           "description": {
-                            "en": "card atributte can't be null.",
-                            "es": "card atributte can't be null.",
-                            "pt": "card atributte can't be null."
+                            "en": "Token attribute can't be null. - Ensure the token attribute is provided if this error appears.",
+                            "es": "Token attribute can't be null. - Asegúrese de que el atributo token esté proporcionado si aparece este error.",
+                            "pt": "Token attribute can't be null. - Certifique-se de que o atributo token é fornecido se esse erro aparecer."
                           }
                         },
                         {
                           "title": "4001",
                           "description": {
-                            "en": "payment_method_id atributte can't be null.",
-                            "es": "payment_method_id atributte can't be null.",
-                            "pt": "payment_method_id atributte can't be null."
+                            "en": "Payment_method_id attribute can't be null. - If this error occurs, provide the payment_method_id attribute.",
+                            "es": "Payment_method_id attribute can't be null. - Si ocurre este error, proporcione el atributo payment_method_id.",
+                            "pt": "Payment_method_id attribute can't be null. - Se esse erro ocorrer, forneça o atributo payment_method_id."
                           }
                         },
                         {
                           "title": "4002",
                           "description": {
-                            "en": "transaction_amount atributte can't be null.",
-                            "es": "transaction_amount atributte can't be null.",
-                            "pt": "transaction_amount atributte can't be null."
+                            "en": "Transaction_amount attribute can't be null. - Ensure the transaction_amount attribute is provided if this error appears.",
+                            "es": "Transaction_amount attribute can't be null. - Asegúrese de que el atributo transaction_amount esté proporcionado si aparece este error.",
+                            "pt": "Transaction_amount attribute can't be null. - Certifique-se de que o atributo transaction_amount é fornecido se esse erro aparecer."
                           }
                         },
                         {
                           "title": "4003",
                           "description": {
-                            "en": "transaction_amount atributte must be numeric.",
-                            "es": "transaction_amount atributte must be numeric.",
-                            "pt": "transaction_amount atributte must be numeric."
+                            "en": "Transaction_amount attribute must be numeric. - Verify the transaction_amount is numeric if this error occurs.",
+                            "es": "Transaction_amount attribute must be numeric. - Verifique que el transaction_amount sea numérico si ocurre este error.",
+                            "pt": "Transaction_amount attribute must be numeric. - Verifique se o transaction_amount é numérico se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "4004",
                           "description": {
-                            "en": "installments atributte can't be null.",
-                            "es": "installments atributte can't be null.",
-                            "pt": "installments atributte can't be null."
+                            "en": "Installments attribute can't be null. - If this error appears, ensure the installments attribute is provided.",
+                            "es": "Installments attribute can't be null. - Si aparece este error, asegúrese de que el atributo installments esté proporcionado.",
+                            "pt": "Installments attribute can't be null. - Se esse erro aparecer, certifique-se de que o atributo installments é fornecido."
                           }
                         },
                         {
                           "title": "4005",
                           "description": {
-                            "en": "installments atributte must be numeric.",
-                            "es": "installments atributte must be numeric.",
-                            "pt": "installments atributte must be numeric."
+                            "en": "Installments attribute must be numeric. - Ensure the installments attribute is numeric if this error occurs.",
+                            "es": "Installments attribute must be numeric. - Asegúrese de que el atributo installments sea numérico si ocurre este error.",
+                            "pt": "Installments attribute must be numeric. - Certifique-se de que o atributo installments é numérico se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "4006",
                           "description": {
-                            "en": "payer atributte is malformed.",
-                            "es": "payer atributte is malformed.",
-                            "pt": "payer atributte is malformed."
+                            "en": "Payer attribute is malformed. - Verify the payer attribute is correctly formatted if this error appears.",
+                            "es": "Payer attribute is malformed. - Verifique que el atributo payer esté correctamente formateado si aparece este error.",
+                            "pt": "Payer attribute is malformed. - Verifique se o atributo payer está corretamente formatado se esse erro aparecer."
                           }
                         },
                         {
                           "title": "4007",
                           "description": {
-                            "en": "site_id atributte can't be null.",
-                            "es": "site_id atributte can't be null.",
-                            "pt": "site_id atributte can't be null."
+                            "en": "Site_id attribute can't be null. - Provide the site_id attribute if this error occurs.",
+                            "es": "Site_id attribute can't be null. - Proporcione el atributo site_id si ocurre este error.",
+                            "pt": "Site_id attribute can't be null. - Forneça o atributo site_id se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "4012",
                           "description": {
-                            "en": "payer.id atributte can't be null.",
-                            "es": "payer.id atributte can't be null.",
-                            "pt": "payer.id atributte can't be null."
+                            "en": "Payer.id attribute can't be null. - If this error appears, ensure the payer.id attribute is provided.",
+                            "es": "Payer.id attribute can't be null. - Si aparece este error, asegúrese de que el atributo payer.id esté proporcionado.",
+                            "pt": "Payer.id attribute can't be null. - Se esse erro aparecer, certifique-se de que o atributo payer.id é fornecido."
                           }
                         },
                         {
                           "title": "4013",
                           "description": {
-                            "en": "payer.type atributte can't be null.",
-                            "es": "payer.type atributte can't be null.",
-                            "pt": "payer.type atributte can't be null."
+                            "en": "Payer.type attribute can't be null. - Ensure the payer.type attribute is provided if this error occurs.",
+                            "es": "Payer.type attribute can't be null. - Asegúrese de que el atributo payer.type esté proporcionado si ocurre este error.",
+                            "pt": "Payer.type attribute can't be null. - Certifique-se de que o atributo payer.type é fornecido se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "4015",
                           "description": {
-                            "en": "payment_method_reference_id atributte can't be null.",
-                            "es": "payment_method_reference_id atributte can't be null.",
-                            "pt": "payment_method_reference_id atributte can't be null."
+                            "en": "Payment_method_reference_id attribute can't be null. - Provide the payment_method_reference_id attribute if this error appears.",
+                            "es": "Payment_method_reference_id attribute can't be null. - Proporcione el atributo payment_method_reference_id si aparece este error.",
+                            "pt": "Payment_method_reference_id attribute can't be null. - Forneça o atributo payment_method_reference_id se esse erro aparecer."
                           }
                         },
                         {
                           "title": "4016",
                           "description": {
-                            "en": "payment_method_reference_id atributte must be numeric.",
-                            "es": "payment_method_reference_id atributte must be numeric.",
-                            "pt": "payment_method_reference_id atributte must be numeric."
+                            "en": "Payment_method_reference_id attribute must be numeric. - Ensure the payment_method_reference_id attribute is numeric if this error occurs.",
+                            "es": "Payment_method_reference_id attribute must be numeric. - Asegúrese de que el atributo payment_method_reference_id sea numérico si ocurre este error.",
+                            "pt": "Payment_method_reference_id attribute must be numeric. - Certifique-se de que o atributo payment_method_reference_id é numérico se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "4017",
                           "description": {
-                            "en": "status atributte can't be null.",
-                            "es": "status atributte can't be null.",
-                            "pt": "status atributte can't be null."
+                            "en": "Status attribute can't be null. - If this error appears, ensure the status attribute is provided.",
+                            "es": "Status attribute can't be null. - Si aparece este error, asegúrese de que el atributo status esté proporcionado.",
+                            "pt": "Status attribute can't be null. - Se esse erro aparecer, certifique-se de que o atributo status é fornecido."
                           }
                         },
                         {
                           "title": "4018",
                           "description": {
-                            "en": "payment_id atributte can't be null.",
-                            "es": "payment_id atributte can't be null.",
-                            "pt": "payment_id atributte can't be null."
+                            "en": "Payment_id attribute can't be null. - Provide the payment_id attribute if this error occurs.",
+                            "es": "Payment_id attribute can't be null. - Proporcione el atributo payment_id si ocurre este error.",
+                            "pt": "Payment_id attribute can't be null. - Forneça o atributo payment_id se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "4019",
                           "description": {
-                            "en": "payment_id atributte must be numeric.",
-                            "es": "payment_id atributte must be numeric.",
-                            "pt": "payment_id atributte must be numeric."
+                            "en": "Payment_id attribute must be numeric. - Ensure the payment_id attribute is numeric if this error appears.",
+                            "es": "Payment_id attribute must be numeric. - Asegúrese de que el atributo payment_id sea numérico si aparece este error.",
+                            "pt": "Payment_id attribute must be numeric. - Certifique-se de que o atributo payment_id é numérico se esse erro aparecer."
                           }
                         },
                         {
                           "title": "4020",
                           "description": {
-                            "en": "notificaction_url atributte must be url valid.",
-                            "es": "notificaction_url atributte must be url valid.",
-                            "pt": "notificaction_url atributte must be url valid."
+                            "en": "Notification_url attribute must be a valid URL. - If this error occurs, provide a valid URL for the notification_url attribute.",
+                            "es": "Notification_url attribute must be a valid URL. - Si ocurre este error, proporcione una URL válida para el atributo notification_url.",
+                            "pt": "Notification_url attribute must be a valid URL. - Se esse erro ocorrer, forneça uma URL válida para o atributo notification_url."
                           }
                         },
                         {
                           "title": "4021",
                           "description": {
-                            "en": "notificaction_url atributte must be shorter than 500 characters.",
-                            "es": "notificaction_url atributte must be shorter than 500 characters.",
-                            "pt": "notificaction_url atributte must be shorter than 500 characters."
+                            "en": "Notification_url attribute must be shorter than 500 characters. - Ensure the notification_url attribute is within the character limit if this error appears.",
+                            "es": "Notification_url attribute must be shorter than 500 characters. - Asegúrese de que el atributo notification_url esté dentro del límite de caracteres si aparece este error.",
+                            "pt": "Notification_url attribute must be shorter than 500 characters. - Certifique-se de que o atributo notification_url está dentro do limite de caracteres se esse erro aparecer."
                           }
                         },
                         {
                           "title": "4022",
                           "description": {
-                            "en": "metadata atributte must be a valid JSON.",
-                            "es": "metadata atributte must be a valid JSON.",
-                            "pt": "metadata atributte must be a valid JSON."
+                            "en": "Metadata attribute must be a valid JSON. - If this error occurs, ensure the metadata attribute is a valid JSON.",
+                            "es": "Metadata attribute must be a valid JSON. - Si ocurre este error, asegúrese de que el atributo metadata sea un JSON válido.",
+                            "pt": "Metadata attribute must be a valid JSON. - Se esse erro ocorrer, certifique-se de que o atributo metadata é um JSON válido."
                           }
                         },
                         {
                           "title": "4023",
                           "description": {
-                            "en": "transaction_amount atributte can't be null.",
-                            "es": "transaction_amount atributte can't be null.",
-                            "pt": "transaction_amount atributte can't be null."
+                            "en": "Transaction_amount attribute can't be null. - Provide the transaction_amount attribute if this error appears.",
+                            "es": "Transaction_amount attribute can't be null. - Proporcione el atributo transaction_amount si aparece este error.",
+                            "pt": "Transaction_amount attribute can't be null. - Forneça o atributo transaction_amount se esse erro aparecer."
                           }
                         },
                         {
                           "title": "4024",
                           "description": {
-                            "en": "transaction_amount atributte must be numeric.",
-                            "es": "transaction_amount atributte must be numeric.",
-                            "pt": "transaction_amount atributte must be numeric."
+                            "en": "Transaction_amount attribute must be numeric. - Ensure the transaction_amount attribute is numeric if this error occurs.",
+                            "es": "Transaction_amount attribute must be numeric. - Asegúrese de que el atributo transaction_amount sea numérico si ocurre este error.",
+                            "pt": "Transaction_amount attribute must be numeric. - Certifique-se de que o atributo transaction_amount é numérico se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "4025",
                           "description": {
-                            "en": "refund_id can't be null.",
-                            "es": "refund_id can't be null.",
-                            "pt": "refund_id can't be null."
+                            "en": "Refund_id can't be null. - Provide the refund_id if this error appears.",
+                            "es": "Refund_id can't be null. - Proporcione el refund_id si aparece este error.",
+                            "pt": "Refund_id can't be null. - Forneça o refund_id se esse erro aparecer."
                           }
                         },
                         {
                           "title": "4026",
                           "description": {
-                            "en": "Invalid coupon_amount.",
-                            "es": "Invalid coupon_amount.",
-                            "pt": "Invalid coupon_amount."
+                            "en": "Invalid coupon_amount. - Verify the coupon_amount is correct if this error occurs.",
+                            "es": "Invalid coupon_amount. - Verifique que la cantidad del cupón sea correcta si ocurre este error.",
+                            "pt": "Invalid coupon_amount. - Verifique se a quantidade do cupom está correta se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "4027",
                           "description": {
-                            "en": "campaign_id atributte must be numeric.",
-                            "es": "campaign_id atributte must be numeric.",
-                            "pt": "campaign_id atributte must be numeric."
+                            "en": "Campaign_id attribute must be numeric. - Ensure the campaign_id attribute is numeric if this error appears.",
+                            "es": "Campaign_id attribute must be numeric. - Asegúrese de que el atributo campaign_id sea numérico si aparece este error.",
+                            "pt": "Campaign_id attribute must be numeric. - Certifique-se de que o atributo campaign_id é numérico se esse erro aparecer."
                           }
                         },
                         {
                           "title": "4028",
                           "description": {
-                            "en": "coupon_amount atributte must be numeric.",
-                            "es": "coupon_amount atributte must be numeric.",
-                            "pt": "coupon_amount atributte must be numeric."
+                            "en": "Coupon_amount attribute must be numeric. - Verify the coupon_amount attribute is numeric if this error occurs.",
+                            "es": "Coupon_amount attribute must be numeric. - Verifique que el atributo coupon_amount sea numérico si ocurre este error.",
+                            "pt": "Coupon_amount attribute must be numeric. - Verifique se o atributo coupon_amount é numérico se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "4029",
                           "description": {
-                            "en": "Invalid payer type.",
-                            "es": "Invalid payer type.",
-                            "pt": "Invalid payer type."
+                            "en": "Invalid payer type. - Ensure the payer type is valid if this error appears.",
+                            "es": "Invalid payer type. - Asegúrese de que el tipo de pagador sea válido si aparece este error.",
+                            "pt": "Invalid payer type. - Certifique-se de que o tipo de pagador é válido se esse erro aparecer."
+                          }
+                        },
+                        {
+                          "title": "4033",
+                          "description": {
+                            "en": "Invalid installments. - Verify the installments parameter is correct if this error occurs.",
+                            "es": "Invalid installments. - Verifique que el parámetro de cuotas sea correcto si ocurre este error.",
+                            "pt": "Invalid installments. - Verifique se o parâmetro de parcelas está correto se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "4037",
                           "description": {
-                            "en": "Invalid transaction_amount.",
-                            "es": "Invalid transaction_amount.",
-                            "pt": "Invalid transaction_amount."
+                            "en": "Invalid transaction_amount. - Ensure the transaction_amount is valid if this error appears.",
+                            "es": "Invalid transaction_amount. - Asegúrese de que el monto de la transacción sea válido si aparece este error.",
+                            "pt": "Invalid transaction_amount. - Certifique-se de que o valor da transação é válido se esse erro aparecer."
                           }
                         },
                         {
                           "title": "4038",
                           "description": {
-                            "en": "application_fee cannot be bigger than transaction_amount.",
-                            "es": "application_fee cannot be bigger than transaction_amount.",
-                            "pt": "application_fee cannot be bigger than transaction_amount."
+                            "en": "Application_fee cannot be bigger than transaction_amount. - If this error occurs, ensure the application_fee is less than or equal to the transaction_amount.",
+                            "es": "Application_fee cannot be bigger than transaction_amount. - Si ocurre este error, asegúrese de que la tarifa de aplicación sea menor o igual al monto de la transacción.",
+                            "pt": "Application_fee cannot be bigger than transaction_amount. - Se esse erro ocorrer, certifique-se de que a taxa de aplicação seja menor ou igual ao valor da transação."
                           }
                         },
                         {
                           "title": "4039",
                           "description": {
-                            "en": "application_fee cannot be a negative value.",
-                            "es": "application_fee cannot be a negative value.",
-                            "pt": "application_fee cannot be a negative value."
+                            "en": "Application_fee cannot be a negative value. - Ensure the application_fee is a positive value if this error appears.",
+                            "es": "Application_fee cannot be a negative value. - Asegúrese de que la tarifa de aplicación sea un valor positivo si aparece este error.",
+                            "pt": "Application_fee cannot be a negative value. - Certifique-se de que a taxa de aplicação é um valor positivo se esse erro aparecer."
                           }
                         },
                         {
                           "title": "4050",
                           "description": {
-                            "en": "payer.email must be a valid email.",
-                            "es": "payer.email must be a valid email.",
-                            "pt": "payer.email must be a valid email."
+                            "en": "Payer.email must be a valid email. - If this error occurs, ensure the payer.email is a valid email address.",
+                            "es": "Payer.email must be a valid email. - Si ocurre este error, asegúrese de que el payer.email sea una dirección de email válida.",
+                            "pt": "Payer.email must be a valid email. - Se esse erro ocorrer, certifique-se de que o payer.email é um endereço de email válido."
                           }
                         },
                         {
                           "title": "4051",
                           "description": {
-                            "en": "payer.email must be shorter than 254 characters.",
-                            "es": "payer.email must be shorter than 254 characters.",
-                            "pt": "payer.email must be shorter than 254 characters."
+                            "en": "Payer.email must be shorter than 254 characters. - Ensure the payer.email is within the character limit if this error appears.",
+                            "es": "Payer.email must be shorter than 254 characters. - Asegúrese de que el payer.email esté dentro del límite de caracteres si aparece este error.",
+                            "pt": "Payer.email must be shorter than 254 characters. - Certifique-se de que o payer.email está dentro do limite de caracteres se esse erro aparecer."
+                          }
+                        },
+                        {
+                          "title": "4292",
+                          "description": {
+                            "en": "Header X-Idempotency-Key can’t be null. - Provide a valid X-Idempotency-Key header if this error occurs.",
+                            "es": "Header X-Idempotency-Key can’t be null. - Proporcione un encabezado X-Idempotency-Key válido si ocurre este error.",
+                            "pt": "Header X-Idempotency-Key can’t be null. - Forneça um cabeçalho X-Idempotency-Key válido se esse erro ocorrer."
                           }
                         },
                         {
                           "title": "6033",
                           "description": {
-                            "en": "User unavailable.",
-                            "es": "User unavailable.",
-                            "pt": "User unavailable."
+                            "en": "User unavailable. - If this error appears, check the user status and try again.",
+                            "es": "User unavailable. - Si aparece este error, verifique el estado del usuario y vuelva a intentarlo.",
+                            "pt": "User unavailable. - Se esse erro aparecer, verifique o status do usuário e tente novamente."
                           }
                         },
                         {
                           "title": "7523",
                           "description": {
-                            "en": "Invalid expiration date.",
-                            "es": "Invalid expiration date.",
-                            "pt": "Invalid expiration date."
+                            "en": "Invalid expiration date. - Ensure the expiration date is valid if this error occurs.",
+                            "es": "Invalid expiration date. - Asegúrese de que la fecha de expiración sea válida si ocurre este error.",
+                            "pt": "Invalid expiration date. - Certifique-se de que a data de expiração é válida se esse erro ocorrer."
                           }
                         }
                       ]
@@ -2835,17 +2652,25 @@
                         {
                           "title": "4",
                           "description": {
-                            "en": "The caller is not authorized to access this resource.",
-                            "es": "The caller is not authorized to access this resource.",
-                            "pt": "The caller is not authorized to access this resource."
+                            "en": "The caller is not authorized to access this resource. - If this error occurs, verify your access permissions.",
+                            "es": "El caller no está autorizado para acceder a este recurso. - Si ocurre este error, verifique sus permisos de acceso.",
+                            "pt": "O caller não está autorizado a acessar este recurso. - Se esse erro ocorrer, verifique suas permissões de acesso."
                           }
                         },
                         {
                           "title": "3002",
                           "description": {
-                            "en": "The caller is not authorized to perform this action.",
-                            "es": "The caller is not authorized to perform this action.",
-                            "pt": "The caller is not authorized to perform this action."
+                            "en": "The caller is not authorized to perform this action. - If you see this error, ensure you have the necessary permissions to perform this action.",
+                            "es": "El caller no está autorizado para realizar esta acción. - Si ve este error, asegúrese de tener los permisos necesarios para realizar esta acción.",
+                            "pt": "O caller não está autorizado a realizar esta ação. - Caso veja esse erro, certifique-se de que tem as permissões necessárias para realizar essa ação."
+                          }
+                        },
+                        {
+                          "title": "pa_unauthorized_result_from_policies",
+                          "description": {
+                            "en": "blocked_by PolicyAgent - At least one policy returned unauthorized - This error occurs when at least one policy returns 'unauthorized'. This can happen if the `authorization` header is removed during the request or if the Access Token is not sent. Please verify the submission of this information and try making a new request.",
+                            "es": "blocked_by PolicyAgent - At least one policy returned unauthorized - Este error ocurre cuando al menos una política devuelve 'unauthorized'. Esto puede suceder si el header de `authorization` se elimina durante la solicitud o si no se envía el Access Token. Verifique el envío de esta información e intente hacer una nueva solicitud.",
+                            "pt": "blocked_by PolicyAgent - At least one policy returned unauthorized - Este erro ocorre quando pelo menos uma política retorna 'unauthorized'. Isso pode acontecer se o header de `authorization` for removido durante a requisição ou se o Access Token não for enviado. Verifique o envio dessas informações e tente fazer uma nova requisição."
                           }
                         }
                       ]
@@ -2872,9 +2697,9 @@
                         {
                           "title": "2000",
                           "description": {
-                            "en": "Payment not found. This error will return a field called \"data\". This field contains the error date \"25-09-2023T16:57:53UTC\" and a Request ID, an ID that identifies payment traceability.",
-                            "es": "Payment not found. This error will return a field called \"data\". This field contains the error date \"25-09-2023T16:57:53UTC\" and a Request ID, an ID that identifies payment traceability.",
-                            "pt": "Payment not found. This error will return a field called \"data\". This field contains the error date \"25-09-2023T16:57:53UTC\" and a Request ID, an ID that identifies payment traceability."
+                            "en": "Payment not found. This error will return a field called \"data\". This field contains the error date \"25-09-2023T16:57:53UTC\" and a Request ID, an ID that identifies payment traceability. - If this error occurs, ensure the payment ID is correct and try again.",
+                            "es": "Pago no encontrado. Este error devolverá un campo llamado \"data\". Este campo contiene la fecha del error \"25-09-2023T16:57:53UTC\" y un ID de solicitud que identifica la trazabilidad del pago. - Si ocurre este error, asegúrese de que el ID de pago sea correcto e intente nuevamente.",
+                            "pt": "Pagamento não encontrado. Este erro retornará um campo chamado \"data\". Este campo contém a data do erro \"25-09-2023T16:57:53UTC\" e um ID de solicitação que identifica a rastreabilidade do pagamento. - Se esse erro ocorrer, certifique-se de que o ID de pagamento está correto e tente novamente."
                           }
                         }
                       ]
@@ -2890,8 +2715,8 @@
           "pt": "Criar pagamento",
           "es": "Crear pago"
         }
-    }
-  },
+      }
+    },
   "/v1/payments/{id}": {
     "get": {
       "sdks": true,
@@ -2903,7 +2728,6 @@
       "ruby": "require 'mercadopago'\n\nsdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')\n\npayment_response = sdk.payment.get(123)\npayment_response[:response]",
       "tags": [
         "checkout-pro",
-        "mobile-checkout",
         "qr-code",
         "subscriptions",
         "checkout-api",
@@ -4114,7 +3938,6 @@
       "ruby": "require 'mercadopago'\n\nsdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')\n\ncustom_headers = {\n       'x-idempotency-key': '<SOME_UNIQUE_VALUE>'\n}\n\ncustom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)\n\nupdate_request = {\n      capture: false,\n      transaction_amount: 58.8\n}\n\npayment_response = sdk.payment.update(123, update_request, custom_request_options)\npayment_response[:response]",
       "tags": [
         "checkout-pro",
-        "mobile-checkout",
         "subscriptions",
         "checkout-api"
       ],
@@ -5506,7 +5329,6 @@
       "ruby": "require 'mercadopago'\n\nsdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')\n\nfilters = {\n  sort: 'date_created',\n  criteria: 'desc',\n  external_reference: 'ID_REF',\n  range: 'date_created',\n  begin_date: 'NOW-30DAYS',\n  end_date: 'NOW',\n  store_id: '47792478',\n  pos_id: '58930090'\n}\n\npayment_response = sdk.payment.search(filters: filters)\npayment_response[:response]",
       "tags": [
         "checkout-pro",
-        "mobile-checkout",
         "qr-code",
         "subscriptions",
         "checkout-api",

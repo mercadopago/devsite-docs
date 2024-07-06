@@ -1,5 +1,11 @@
 Utilize contas de teste para garantir que sua integração dê suporte a todos os fluxos e cenários possíveis. Elas têm os mesmos recursos de uma conta real do Mercado Pago, o que permite testar o funcionamento das integrações que você está desenvolvendo.
 
+> WARNING
+>
+> Importante
+>
+> Integrações com Checkout ----[mlb]----Transparente------------ ----[mla, mlm, mpe, mco, mlu, mlc]----API------------ e Checkout Bricks não suportam usuários de teste para testes de integração. Por esse motivo, você não poderá acessar esta seção a partir de uma aplicação criada para qualquer um desses dois produtos. Acesse a documentação do Teste de Integração para ----[mlb]----[Checkout Transparente](/developers/pt/docs/checkout-api/integration-test/make-test-purchase)------------ ----[mla, mlm, mpe, mco, mlu, mlc]----[Checkout API](/developers/pt/docs/checkout-api/integration-test/make-test-purchase)------------ e [Checkout Bricks](/developers/pt/docs/checkout-bricks/integration-test/test-payment-flow) para obter mais informações.
+
 Para realizar um teste é preciso ter pelo menos duas contas:
 
 * **Vendedor**: conta necessária para **configurar a aplicação e as credenciais para a cobrança**. Esta é a sua conta de usuário.
@@ -7,7 +13,7 @@ Para realizar um teste é preciso ter pelo menos duas contas:
 
 Além dessas contas, é importante também utilizar os [cartões de teste](/developers/pt/guides/additional-content/your-integrations/test-cards) para testar a integração de pagamento e simular o processo de compra, assim como o **saldo na conta do Mercado Pago do usuário de teste**. Veja mais detalhes abaixo.
 
-![testuser](test-user/create-test-users-pt.png)
+![testuser](/images/dashboard/new-test-users-pt.png)
 
 Para criar contas e testar o funcionamento das integrações, siga os passos abaixo.
 
@@ -19,7 +25,9 @@ Para criar contas e testar o funcionamento das integrações, siga os passos aba
 6. Autorize o uso dos seus dados pessoais conforme a ----[mlb]----[Declaração de Privacidade](https://www.mercadopago.com.br/privacidade)------------ ----[mla, mlm, mpe, mco, mlu, mlc]----[Declaração de Privacidade](https://www.mercadopago[FAKER][URL][DOMAIN]/privacidad)------------ e certifique que sua conta usa as ferramentas do Mercado Pago de acordo com os [Termos e condições](https://www.mercadopago.com.br/developers/pt/docs/resources/legal/terms-and-conditions) marcando a caixa de seleção.
 7. Clique em **Criar conta de teste**.
 
-Pronto! A conta de teste foi criada e será exibida na tabela com as seguintes informações:
+Pronto! A conta de teste foi criada e será exibida na tabela com as informações abaixo.
+
+![testuser](/images/dashboard/test-users-pt.png)
 
 * **País**: Local de origem da conta selecionado em seu cadastro.
 * **Identificação da conta**: Descrição para identificação da conta de teste.
@@ -44,3 +52,7 @@ Como se tratam de usuários fictícios, você não terá acesso ao e-mail que re
 > Importante
 >
 > Para acessar o User ID ou o Access Token de uma conta de teste, é necessário criar previamente uma aplicação. Para isso, consulte a documentação [Painel do Desenvolvedor](/developers/pt/docs/your-integrations/dashboard). Caso tenha dúvidas sobre como obter o User ID ou o Access Token, consulte [Detalhes da aplicação](/developers/pt/docs/your-integrations/application-details) ou [Credenciais](/developers/pt/docs/your-integrations/credentials).
+
+Tenha em mente que ao fazer login com uma conta de teste, você não terá acesso a determinadas seções do Painel do desenvolvedor, como Credenciais de teste ou Qualidade de integração. São secções que não são necessárias para este tipo de contas, e também podem interferir na sua utilização adequada e desejada.
+
+
