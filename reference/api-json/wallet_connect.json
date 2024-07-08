@@ -50,11 +50,11 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "return_url": {
+                  "return_uri": {
                     "type": "string",
                     "description": {
                       "en": "URL that redirects the user back to the sellers site.",
-                      "pt": "O URL que redireciona o usuário de volta ao site do vendedor.",
+                      "pt": "URL que redireciona o usuário de volta ao site do vendedor.",
                       "es": "Es el URL que redirige al usuario de regreso al sitio del vendedor."
                     },
                     "example": "https://www.mercadopago.com/"
