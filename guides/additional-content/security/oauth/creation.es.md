@@ -7,7 +7,7 @@ Los flujos de acceso disponibles para la generación del Access Token son:
 - [Authorization code](/developers/es/docs/security/oauth/creation#bookmark_authorization_code): se van a usar credenciales para acceder a un recurso a nombre de un tercero.
 - [Client credentials](/developers/es/docs/security/oauth/creation#bookmark_client_credentials): se van a usar credenciales para acceder a un recurso en nombre propio.
 
-> NOTE
+> WARNING
 >
 > Importante
 >

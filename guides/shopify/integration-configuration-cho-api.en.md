@@ -7,7 +7,7 @@
 >
 > Attention
 >
-> This new app is only for card payments. Soon, we will communicate the launch exclusively for Pix and indicate the necessary documentation for migration or installation. For now, use [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro) for payments with **Pix** and **boleto bancário**.
+> This new application is exclusive for card payments. To configure Pix payments, refer to the [corresponding documentation](/developers/en/docs/shopify/integration-configuration/pix). For boleto bancário payments, use [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
 
 ------------
 ----[mlm]----
@@ -48,7 +48,7 @@ To install the **Mercado Pago Tarjetas** checkout on a Shopify store, we offer t
 
 Done! The **Mercado Pago Tarjetas** checkout is ready to receive payments.
 
-> NOTE
+> WARNING
 >
 > Important
 >
@@ -79,7 +79,7 @@ Done! The **Mercado Pago Tarjetas** checkout is ready to receive payments.
 
 Done! The **Mercado Pago Tarjetas** checkout is ready to receive payments.
 
-> NOTE
+> WARNING
 >
 > Important
 >
@@ -108,7 +108,7 @@ After installing and activating the **Mercado Pago Tarjetas** app, set up the op
 > Whenever installment settings are changed, it will be necessary to **synchronize** the changes with your store.
 
 ------------
-----[mlm]----
+----[mlb]----
 To install the **Mercado Pago Cartões** checkout on a Shopify store, we offer the two installation models below.
 
 ## Install via Shopify admin panel
@@ -140,7 +140,7 @@ To install the **Mercado Pago Cartões** checkout on a Shopify store, we offer t
 
 Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
-> NOTE
+> WARNING
 >
 > Important
 >
@@ -171,7 +171,7 @@ Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
 Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
-> NOTE
+> WARNING
 >
 > Important
 >

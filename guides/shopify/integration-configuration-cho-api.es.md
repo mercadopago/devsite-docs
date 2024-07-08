@@ -7,7 +7,7 @@
 >
 > Atención
 >
-> Esta nueva aplicación es solo para pagos con tarjetas. Pronto comunicaremos el lanzamiento de la app exclusivamente para Pix e indicaremos la documentación necesaria para la migración o instalación. Mientras tanto, utilice [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro) para pagos con **Pix** y **boleto bancario**.
+> Esta nueva aplicación es exclusiva para pagos con tarjetas. Para configurar pagos con Pix, consulta la [documentación correspondiente](/developers/es/docs/shopify/integration-configuration/pix). Para pagos con boleto bancário, utiliza [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).
 
 ------------
 ----[mlm]----
@@ -66,7 +66,7 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, ofrec
 
 ¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
 
-> NOTE
+> WARNING
 >
 > Importante
 >
@@ -118,7 +118,7 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, ofrec
 
 ¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
 
-> NOTE
+> WARNING
 >
 > Importante
 >
