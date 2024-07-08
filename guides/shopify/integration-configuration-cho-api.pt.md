@@ -7,7 +7,7 @@ O **Mercado Pago Cartões** ([Checkout Transparente](/developers/pt/docs/checkou
 >
 > Atenção
 >
-> Este novo app é apenas para pagamentos com cartões. Em breve, comunicaremos o lançamento do app apenas para Pix e indicaremos a documentação necessária para migração ou instalação. Por enquanto, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro) para pagamentos com **Pix** e **boleto bancário**.
+> Este novo aplicativo é exclusivo para pagamentos com cartões. Para configurar pagamentos com Pix, consulte a [documentação correspondente](/developers/pt/docs/shopify/integration-configuration/pix). Para pagamentos com boleto bancário, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
 
 ------------
 ----[mlm]----
@@ -66,7 +66,7 @@ Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecem
 
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 
-> NOTE
+> WARNING
 >
 > Importante
 >
@@ -119,7 +119,7 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 
-> NOTE
+> WARNING
 >
 > Importante
 >
