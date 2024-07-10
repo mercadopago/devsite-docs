@@ -8,7 +8,7 @@ La vinculación almacena los métodos de pago seleccionados por el pagador y per
 >
 > Nota
 >
-> Si lo desea, antes de iniciar la vinculación, puedes solicitar al **equipo de Integraciones de Mercado Pago** el uso de **_Sniffing_**, una funcionalidad que permite identificar si un usuario tiene la aplicación de Mercado Pago instalada en su dispositivo móvil y abrir esa app automáticamente. Para más información, acceda a la documentación de la [Estrategia de Sniffing](/developers/es/docs/wallet-connect/account-linking-flow/create-agreement/sniffing-strategy).
+> Si lo desea, antes de iniciar la vinculación, puedes solicitar al **equipo de Integraciones de Mercado Pago** el uso de **_Sniffing_**, una funcionalidad que permite identificar si un usuario tiene la aplicación de Mercado Pago instalada en su dispositivo móvil y abrir esa app automáticamente. Para más información, acceda a la documentación de la [Funcionalidad de Sniffing](/developers/es/docs/wallet-connect/account-linking-flow/create-agreement/sniffing-feature).
 
 Cualquier cambio en los medios de pago se comunica a través de una notificación Webhooks, que proporciona detalles de la actualización. Para más información, consulte la sección [Actualización del medio de pago de una vinculación](/developers/es/docs/wallet-connect/additional-content/your-integrations/notifications/webhooks).
 
