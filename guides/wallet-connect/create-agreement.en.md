@@ -8,7 +8,7 @@ The agreement stores the payment methods selected by the payer and allows for ch
 >
 > Note
 >
-> If you wish, before starting the linking process, you can request the **Mercado Pago Integrations team** to use **Sniffing**, a feature that allows you to identify if a user has the Mercado Pago app installed on their mobile device and automatically open that app. For more information, refer to the [Sniffing strategy](/developers/en/docs/wallet-connect/account-linking-flow/create-agreement/sniffing-strategy) documentation.
+> If you wish, before starting the linking process, you can request the **Mercado Pago Integrations team** to use **Sniffing**, a feature that allows you to identify if a user has the Mercado Pago app installed on their mobile device and automatically open that app. For more information, refer to the [Sniffing functionality](/developers/en/docs/wallet-connect/account-linking-flow/create-agreement/sniffing-feature) documentation.
 
 Any change to payment methods is communicated through a webhook notification, which provides details of the update. 
 For more information, consult the section [Agreement payment method update](/developers/en/docs/wallet-connect/additional-content/your-integrations/notifications/webhooks).
