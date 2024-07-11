@@ -8,9 +8,7 @@ See below for how to install the new app (**Mercado Pago Cartões**) and uninsta
 >
 > Attention
 >
-> This new app is only for card payments. Soon, we will communicate the launch exclusively for Pix and indicate the necessary documentation for migration or installation. For now, use [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro) for payments with **Pix** and **boleto bancário**.
-
-See below how to install the new app, **Mercado Pago Cartões**, and uninstall the old one, **Checkout Transparente MP**, to avoid service interruption on Shopify.
+> This new application is exclusive for card payments. To configure Pix payments, refer to the [corresponding documentation](/developers/en/docs/shopify/integration-configuration/pix). For boleto bancário payments, use [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
 
 ## Install the new app
 
@@ -76,11 +74,33 @@ Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
 Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
-> NOTE
+> WARNING
 >
 > Important
 >
 > After completing the installation of Mercado Pago Cartões, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, which will help enhance the security of your store and increase the payment approval rate. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
+
+## Configure interest-free installments
+
+After installing and activating the **Mercado Pago Tarjetas** app, set up the option to offer your customers the possibility to pay in interest-free installments with any credit card. To do this, follow the steps below.
+
+1. Log in to your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
+2. Go to the **Your business > Costs** section and select the **Checkout** option.
+3. In "Interest-free installments," click on **Configure installments**.
+4. Next, click on **Configure interest-free installments**.
+5. Finally, enable the **Offer interest-free installments** option and choose how many installments you want to offer in your store.
+6. After setting up installment configurations, go to your [Shopify](https://accounts.shopify.com/store-login) store.
+7. In the store's administration panel, click on **Settings** in the bottom-left corner of the page.
+8. Once there, select the **Payments** option from the left-hand side menu.
+9. In "Mercado Pago Cards", click on **Manage**.
+10. Then, click on **More actions > Manage**.
+11. Finally, click on **Sync** so that the configured installment options are synchronized with your store.
+
+> WARNING
+>
+> Attention
+>
+> Whenever installment settings are changed, it will be necessary to **synchronize** the changes with your store.
 
 ## Deactivate the old app
 
@@ -92,13 +112,3 @@ After installing the new version, it is necessary to uninstall the old app. To u
 4. Return to the store's admin panel and click on **Settings > Payments**.
 5. In "Accepted payment methods," locate the old app named "Mercado Pago" and select it.
 6. Finally, click on **Deactivate Mercado Pago** and then on **Deactivate Mercado Pago**.
-
-### Configure interest-free installments
-
-After installing and activating the **Mercado Pago Cartões** app, set up the option to offer your customers the possibility to pay in interest-free installments with any credit card. To do this, follow the steps below.
-
-1. Log in to your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
-2. Go to the **Your business > Costs** section and select the **Checkout** option.
-3. In "Interest-free installments," click on **Configure installments**.
-4. Next, click on **Configure interest-free installments**.
-5. Finally, enable the **Offer interest-free installments** option and choose how many installments you want to offer in your store.

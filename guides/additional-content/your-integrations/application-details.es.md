@@ -82,3 +82,11 @@ Al hacer clic en **Evaluar la calidad**, comenzarás el proceso de análisis de 
 Accede a [Calidad de la integración](/developers/es/docs/integration-quality) y conoce toda la información necesaria para saber cómo medir la calidad de tu aplicación.
 
 > Después de implementar mejoras, es necesario hacer clic nuevamente en **Actualizar puntaje** para volver a evaluar su integración y verificar si cumple con los estándares requeridos.
+
+## Prueba de integración
+
+En esta sección, cuentas con una guía paso a paso para poder probar tu integración, que te permitirá validar estar cumpliendo con los requisitos necesarios en función del producto integrado. 
+
+Además, cuentas con enlaces directos a la documentación correspondiente, así como con una barra de estado que te permitirá visualizar tus avances de manera sencilla.
+
+![pantalla de validación de prueba de integración](/images/dashboard/testing-validation-es.gif)

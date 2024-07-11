@@ -1,11 +1,19 @@
 Use test accounts to ensure that your integration supports all possible flows and scenarios. They have the same features as a real Mercado Pago account, which allows you to test the functioning of the integrations you are developing.
 
+> WARNING
+>
+> Important
+>
+> Integrations with Checkout ----[mlb]----Transparente------------ ----[mla, mlm, mpe, mco, mlu, mlc]----API------------ and Checkout Bricks do not support test users for integration testing. For this reason, you will not be able to access this section from an application created for either of these two products. Check the Integration Test documentation for ----[mlb]----[Checkout Transparente](/developers/en/docs/checkout-api/integration-test/make-test-purchase)------------ ----[mla, mlm, mpe, mco, mlu, mlc]----[Checkout API](/developers/en/docs/checkout-api/integration-test/make-test-purchase)------------ and [Checkout Bricks](/developers/en/docs/checkout-bricks/integration-test/test-payment-flow) for more information.
+
 To perform the test, you must have at least two accounts:
 
 * **Seller**: account required to **configure application and credentials**. This is your user account.
 * **Buyer**: account required to **test the purchase process**.
 
 In addition to these accounts, it is also important to use [test cards](/developers/en/guides/additional-content/your-integrations/test-cards) to test payment integration and simulate the purchase process, as well as **balance in the test user's Mercado Pago account**. See more details below.
+
+![testuser](/images/dashboard/new-test-users-es.png)
 
 To create accounts and test how the integrations work, follow the steps below.
 
@@ -17,7 +25,9 @@ To create accounts and test how the integrations work, follow the steps below.
 6. Authorize the use of your personal data in accordance with the ----[mlb]----[Privacy Statement](https://www.mercadopago.com.br/privacidade)------------ ----[mla, mlm, mpe, mco, mlu, mlc]----[Privacy Statement](https://www.mercadopago[FAKER][URL][DOMAIN]/privacidad)------------ and ensure that your account uses Mercado Pago's tools in accordance with the [Terms and Conditions](https://www.mercadopago.com.br/developers/en/docs/resources/legal/terms-and-conditions) by checking the checkbox.
 7. Click on **Create test account**.
 
-Done! The test account has been created and will be displayed in the table with the following information:
+Done! The test account has been created and will be displayed in the table with the information below.
+
+![testuser](/images/dashboard/test-users-es.png)
 
 * **Country**: Origin location of the account selected in your registration.
 * **Account identification**: Description for the test account identification.
@@ -42,3 +52,5 @@ Since these are fictional users, you will not have access to the account that wi
 > Important
 >
 > To access the User ID or Access Token of a test account, you must have previously created an application. To learn how to do this, refer to the documentation on the [Developer Panel](/developers/en/docs/your-integrations/dashboard). <br> <br> If you have any doubts on how to obtain the User ID or Access Token, refer to [Application details](/developers/en/docs/your-integrations/application-details) or [Credentials](/developers/en/docs/your-integrations/credentials).
+
+Please note that when you log in with a test account, you will not have access to certain sections within the Developer Dashboard, such as Test Credentials or Integration Quality. These are sections that are not only not necessary for this type of accounts, but can also interfere with their proper and desired use.

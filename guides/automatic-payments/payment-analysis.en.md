@@ -6,7 +6,7 @@ In case of rejection due to insufficient funds, a new attempt with the same card
 
 In each case, it is important to communicate the payment result to your customer and provide instructions for the next step. We will report an `HTTP Status 201 OK` that the payment was created correctly and send a result code so that you can redirect the customer to the page with the correct message.
 
-> NOTE
+> WARNING
 >
 > Important
 >

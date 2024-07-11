@@ -82,3 +82,11 @@ Ao clicar em **Avaliar a qualidade**, você será redirecionado para a ferrament
 Acesse [Qualidade da integração](/developers/pt/docs/integration-quality) e conheça todas as informações necessárias para saber como medir a qualidade da sua aplicação.
 
 > Após implementar melhorias, é necessário clicar novamente em **Atualizar pontuação** para reavaliar sua integração e verificar se ela atende aos padrões exigidos. 
+
+## Teste de integração
+
+Nesta seção, você tem um passo a passo para testar sua integração, permitindo que você valide se ela está atendendo aos requisitos necessários com base no produto integrado. 
+
+Além disso, você tem links diretos para a documentação correspondente, bem como uma barra de status que lhe permitirá visualizar facilmente o seu progresso.
+
+![tela de validação de teste de integração](/images/dashboard/testing-validation-pt.gif)

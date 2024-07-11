@@ -21,7 +21,7 @@ Para utilizar a integração do Facilitador de Pagamento, é necessário atualiz
       "document_number": "222222222222222",
       "city": "SÃO PAULO",
       "address_street": "RUA A",
-	    "business_name": "LOJINHA DO ZÉ",
+	    "legal_name": "LOJINHA DO ZÉ",
       "region_code_iso": "BR-MG",
       "region_code": "BR",
       "document_type": "CNPJ",
@@ -52,7 +52,7 @@ Para utilizar a integração do Facilitador de Pagamento, é necessário atualiz
 | `document_number` | Texto | Identificação do CPF ou CNPJ do sub comércio. | Obrigatório | 222222222222222 |
 | `city` | Texto | Cidade onde o sub comércio está localizado. | Obrigatório | SÃO PAULO |
 | `address_street` | Texto | Rua onde o sub comércio está localizado. | Obrigatório | RUA A |
-| `business_name` | Texto | Nome do sub comércio. | Obrigatório | LOJINHA DO ZÉ |
+| `legal_name` | Texto | Nome do sub comércio. | Obrigatório | LOJINHA DO ZÉ |
 | `region_code_iso` | Texto | Estado onde o sub comércio está localizado. | Obrigatório | BR-MG |
 | `region_code` | Texto | Código postal do subcomércio. | Obrigatório | BR |
 | `document_type` | Texto | Número do CPF ou CNPJ do sub comércio. | Obrigatório | CNPJ |

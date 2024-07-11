@@ -1494,23 +1494,23 @@
           "checkout-api"
         ],
         "description": {
-          "en": "Cancel a sale for a specific payment",
-          "pt": "Cancelar uma compra de um pagamento específico",
-          "es": "Cancelar una compra para un pago específico"
+          "en": "This endpoint allows the cancellation of a purchase for a specific payment, provided the payment status is `in_process`, `pending`, or `authorized`. Upon success, the request will return a status code 200",
+          "pt": "Este endpoint permite cancelar uma compra para um pagamento específico, desde que o status do pagamento seja `in_process`, `pending` ou `authorized`. Em caso de sucesso, a requisição retornará um código de status 200",
+          "es": "Este endpoint permite la cancelación de una compra para un pago específico, siempre que el estado del pago sea `in_process`, `pending` o `authorized`. En caso de éxito, la solicitud devolverá un código de estado 200."
         },
         "parameters": [
           {
             "name": "payment_id",
             "in": "path",
             "description": {
-              "en": "Payment ID",
-              "pt": "ID de pagamento",
-              "es": "ID de pago"
+              "en": "Payment Identification Number (ID).",
+              "pt": "Número de identificação (ID) de pagamento.",
+              "es": "Número de identificación (ID) de pago."
             },
             "required": true,
             "schema": {
               "type": "string",
-              "example": "12123adfasdf123u4u"
+              "example": "18746874919"
             }
           }
         ],
@@ -1522,11 +1522,12 @@
                 "properties": {
                   "status": {
                     "type": "String",
+                    "required": true,
                     "example": "cancelled",
                     "description": {
-                      "en": "Payment status.",
-                      "pt": "Estado do pagamento",
-                      "es": "Estado del pago"
+                      "en": "Payment Status - This field exclusively accepts the status `cancelled`.",
+                      "pt": "Status do Pagamento - Este campo aceita exclusivamente o status `cancelled`.",
+                      "es": "Estado del Pago - Este campo acepta exclusivamente el estado cancelled."
                     }
                   }
                 }
@@ -1537,9 +1538,9 @@
         "responses": {
           "200": {
             "description": {
-              "es": "success",
-              "pt": "success",
-              "en": "success"
+              "es": "Éxito",
+              "pt": "Successo",
+              "en": "Success"
             },
             "content": {
               "application/json": {
@@ -1550,9 +1551,9 @@
                       "type": "number",
                       "example": 18746874919,
                       "description": {
-                        "en": "Payment identifier",
-                        "pt": "Identificador de pagamento",
-                        "es": "Identificador de pago"
+                        "en": "Payment identifier.",
+                        "pt": "Identificador de pagamento.",
+                        "es": "Identificador de pago."
                       }
                     },
                     "date_created": {
@@ -1560,9 +1561,9 @@
                       "example": "2021-12-10T17:13:23.000-04:00",
                       "format": "date",
                       "description": {
-                        "en": "Cancelation creation date",
-                        "pt": "Data de criação do cancelamento",
-                        "es": "Fecha de creación de la cancelación"
+                        "en": "Cancelation creation date.",
+                        "pt": "Data de criação do cancelamento.",
+                        "es": "Fecha de creación de la cancelación."
                       }
                     },
                     "date_approved": {
@@ -1570,9 +1571,9 @@
                       "example": null,
                       "format": "date",
                       "description": {
-                        "en": "Cancelation approved date",
-                        "pt": "Data de aprovação do cancelamento",
-                        "es": "Fecha de aprovación de la cancelación"
+                        "en": "Cancelation approved date.",
+                        "pt": "Data de aprovação do cancelamento.",
+                        "es": "Fecha de aprovación de la cancelación."
                       }
                     },
                     "date_last_updated": {
@@ -1580,9 +1581,9 @@
                       "example": "2021-12-10T17:31:34.000-04:00",
                       "format": "date",
                       "description": {
-                        "en": "Last updated date",
-                        "pt": "Data da última atualização",
-                        "es": "Última fecha de actualización"
+                        "en": "Last updated date.",
+                        "pt": "Data da última atualização.",
+                        "es": "Última fecha de actualización."
                       }
                     },
                     "date_of_expiration": {
@@ -1590,9 +1591,9 @@
                       "example": "2021-12-13T22:59:59.000-04:00",
                       "format": "date",
                       "description": {
-                        "en": "Expiration date",
-                        "pt": "Data de validade",
-                        "es": "Fecha de vencimiento"
+                        "en": "Expiration date.",
+                        "pt": "Data de validade.",
+                        "es": "Fecha de vencimiento."
                       }
                     },
                     "money_release_date": {
@@ -1600,215 +1601,215 @@
                       "example": null,
                       "format": "date",
                       "description": {
-                        "en": "Money release date",
-                        "pt": "Data de liberação do dinheiro",
-                        "es": "Fecha de liberación del dinero"
+                        "en": "Money release date.",
+                        "pt": "Data de liberação do dinheiro.",
+                        "es": "Fecha de liberación del dinero."
                       }
                     },
                     "operation_type": {
                       "type": "string",
                       "example": "regular_payment",
                       "description": {
-                        "en": "Operation type",
-                        "pt": "Tipo de operação",
-                        "es": "Tipo de operación"
+                        "en": "Operation type.",
+                        "pt": "Tipo de operação.",
+                        "es": "Tipo de operación."
                       }
                     },
                     "issuer_id": {
                       "type": "number",
                       "example": null,
                       "description": {
-                        "en": "Issuer identifier",
-                        "pt": "Identificador do emissor",
-                        "es": "Identificador del emisor"
+                        "en": "Issuer identifier.",
+                        "pt": "Identificador do emissor.",
+                        "es": "Identificador del emisor."
                       }
                     },
                     "payment_method_id": {
                       "type": "string",
                       "example": "bolbradesco",
                       "description": {
-                        "en": "Payment method identifier",
-                        "pt": "Identificador do meio de pagamento",
-                        "es": "Identificador del medio de pago"
+                        "en": "Payment method identifier.",
+                        "pt": "Identificador do meio de pagamento.",
+                        "es": "Identificador del medio de pago."
                       }
                     },
                     "payment_type_id": {
                       "type": "string",
                       "example": "ticket",
                       "description": {
-                        "en": "Payment type identifier",
-                        "pt": "Identificador do tipo de pagamento",
-                        "es": "Identificador del tipo de pago"
+                        "en": "Payment type identifier.",
+                        "pt": "Identificador do tipo de pagamento.",
+                        "es": "Identificador del tipo de pago."
                       }
                     },
                     "status": {
                       "type": "string",
                       "example": "cancelled",
                       "description": {
-                        "es": "Status",
-                        "pt": "Status",
-                        "en": "Status"
+                        "es": "Estado de la cancelación.",
+                        "pt": "Status do cancelamento.",
+                        "en": "Cancellation status."
                       }
                     },
                     "status_detail": {
                       "type": "string",
                       "example": "by_collector",
                       "description": {
-                        "en": "Status detail",
-                        "pt": "Detalhe do status",
-                        "es": "Detalle del status"
+                        "en": "Status detail - This field provides the details of the reason for the payment cancellation and is directly linked to the `status` parameter.",
+                        "pt": "Detalhe do status. Este campo trará o detalhe do motivo do cancelamento do pagamento e está diretamente ligado ao parâmetro `status`.",
+                        "es": "Detalle del status. - Este campo proporciona el detalle del motivo de la cancelación del pago y está directamente vinculado al parámetro `status`."
                       }
                     },
                     "currency_id": {
                       "type": "string",
                       "example": "BRL",
                       "description": {
-                        "en": "Currency identifier",
-                        "pt": "Identificador de moeda",
-                        "es": "Identificador de moneda"
+                        "en": "Currency identifier.",
+                        "pt": "Identificador de moeda.",
+                        "es": "Identificador de moneda."
                       }
                     },
                     "description": {
                       "type": "string",
                       "example": "Meu produto",
                       "description": {
-                        "en": "Description",
-                        "pt": "Descrição",
-                        "es": "Descripción"
+                        "en": "Description of the canceled product/service.",
+                        "pt": "Descrição do produto/serviço cancelado.",
+                        "es": "Descripción del producto/servicio cancelado."
                       }
                     },
                     "live_mode": {
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Whether the chargeback will be processed in sandbox or in production mode. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.",
-                        "pt": "Se o estorno será processada em modo sandbox ou em produção. Se TRUE, o estorno será processado em modo de produção. Se FALSE, o estorno será processado no modo sandbox.",
-                        "es": "Si la devolución será procesada en el \"sandbox\" o en el modo de producción. Si es TRUE, el contracargo se procesará en modo de producción. Si es FALSE, el contracargo se procesará en modo sandbox."
+                        "en": "This parameter indicates Whether the chargeback will be processed in sandbox or in production mode. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.",
+                        "pt": "Este parâmetro indica se o estorno será processada em modo sandbox ou em produção. Se TRUE, o estorno será processado em modo de produção. Se FALSE, o estorno será processado no modo sandbox.",
+                        "es": "Este parámetro indica si la devolución será procesada en el \"sandbox\" o en el modo de producción. Si es TRUE, el contracargo se procesará en modo de producción. Si es FALSE, el contracargo se procesará en modo sandbox."
                       }
                     },
                     "sponsor_id": {
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Sponsor identifier",
-                        "pt": "Identificador do patrocinador",
-                        "es": "Identificador de patrocinador"
+                        "en": "Sponsor identifier.",
+                        "pt": "Identificador do patrocinador.",
+                        "es": "Identificador de patrocinador."
                       }
                     },
                     "authorization_code": {
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Authorization code",
-                        "pt": "Código de autorização",
-                        "es": "Código de autorización"
+                        "en": "Authorization code.",
+                        "pt": "Código de autorização.",
+                        "es": "Código de autorización."
                       }
                     },
                     "money_release_schema": {
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Money release schema",
-                        "pt": "Esquema de liberação de dinheiro",
-                        "es": "Esquema de liberación de dinero"
+                        "en": "Money release schema.",
+                        "pt": "Esquema de liberação de dinheiro.",
+                        "es": "Esquema de liberación de dinero."
                       }
                     },
                     "taxes_amount": {
                       "type": "number",
                       "example": 0,
                       "description": {
-                        "en": "Tax amount",
-                        "pt": "Valor de imposto",
-                        "es": "Importe del impuesto"
+                        "en": "Tax amount.",
+                        "pt": "Valor de imposto.",
+                        "es": "Importe del impuesto."
                       }
                     },
                     "counter_currency": {
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Counter currency",
-                        "pt": "Contador de moeda",
-                        "es": "Contador de moneda"
+                        "en": "Counter currency.",
+                        "pt": "Contador de moeda.",
+                        "es": "Contador de moneda."
                       }
                     },
                     "brand_id": {
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Brand identifier",
-                        "pt": "Identificador de marca",
-                        "es": "Identificador de marca"
+                        "en": "Brand identifier.",
+                        "pt": "Identificador de marca.",
+                        "es": "Identificador de marca."
                       }
                     },
                     "shipping_amount": {
                       "type": "number",
                       "example": 0,
                       "description": {
-                        "en": "Shipping amount",
-                        "pt": "Valor de envio",
-                        "es": "Valor de envío"
+                        "en": "Shipping amount.",
+                        "pt": "Valor de envio.",
+                        "es": "Valor de envío."
                       }
                     },
                     "pos_id": {
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "POS identifier",
-                        "pt": "Identificador de POS",
-                        "es": "Identificador de POS"
+                        "en": "POS identifier.",
+                        "pt": "Identificador de POS.",
+                        "es": "Identificador de POS."
                       }
                     },
                     "store_id": {
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Store identifier",
-                        "pt": "Identificador da loja",
-                        "es": "Identificador de la tienda"
+                        "en": "Store identifier.",
+                        "pt": "Identificador da loja.",
+                        "es": "Identificador de la tienda."
                       }
                     },
                     "integrator_id": {
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Integrator identifier",
-                        "pt": "Identificador do integrador",
-                        "es": "Identificador del integrador"
+                        "en": "Integrator identifier.",
+                        "pt": "Identificador do integrador.",
+                        "es": "Identificador del integrador."
                       }
                     },
                     "platform_id": {
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Platform identifier",
-                        "pt": "Identificador da plataforma",
-                        "es": "Identificador de la plataforma"
+                        "en": "Platform identifier.",
+                        "pt": "Identificador da plataforma.",
+                        "es": "Identificador de la plataforma."
                       }
                     },
                     "corporation_id": {
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Corporation identifier",
-                        "pt": "Identificador da corporação",
-                        "es": "Identificador de la corporación"
+                        "en": "Corporation identifier.",
+                        "pt": "Identificador da corporação.",
+                        "es": "Identificador de la corporación."
                       }
                     },
                     "collector_id": {
                       "type": "number",
                       "example": null,
                       "description": {
-                        "en": "Number identifier",
-                        "pt": "Número identificador",
-                        "es": "Número identificador"
+                        "en": "Collector number identifier.",
+                        "pt": "Número identificador del collector.",
+                        "es": "Número identificador do collector."
                       }
                     },
                     "payers": {
                       "type": "array",
                       "description": {
-                        "en": "List of payers",
-                        "pt": "Lista de pagadores",
-                        "es": "Lista de pagadores"
+                        "en": "List of payers.",
+                        "pt": "Lista de pagadores.",
+                        "es": "Lista de pagadores."
                       },
                       "items": {
                         "type": "object",
@@ -1817,36 +1818,36 @@
                             "type": "string",
                             "example": null,
                             "description": {
-                              "es": "First name",
-                              "pt": "First name",
-                              "en": "First name"
+                              "es": "Primer nombre",
+                              "pt": "Primeiro nome.",
+                              "en": "First name."
                             }
                           },
                           "last_name": {
                             "type": "string",
                             "example": null,
                             "description": {
-                              "es": "Last name",
-                              "pt": "Last name",
-                              "en": "Last name"
+                              "es": "Apellido.",
+                              "pt": "Sobrenome.",
+                              "en": "Last name."
                             }
                           },
                           "email": {
                             "type": "string",
                             "example": "test_user_80507629@testuser.com",
                             "description": {
-                              "es": "E-mail",
-                              "pt": "E-mail",
-                              "en": "E-mail"
+                              "es": "E-mail del pagador.",
+                              "pt": "E-mail do pagador.",
+                              "en": "Payer e-mail."
                             }
                           },
                           "type": {
                             "type": "string",
                             "example": "collector",
                             "description": {
-                              "en": "Type",
-                              "pt": "Tipo",
-                              "es": "Tipo"
+                              "en": "Payer type.",
+                              "pt": "Tipo de pagador.",
+                              "es": "Tipo de pagador."
                             }
                           },
                           "identification": {
@@ -1903,9 +1904,9 @@
                                   "type": "string",
                                   "example": null,
                                   "description": {
-                                    "en": "Number",
-                                    "pt": "O Número",
-                                    "es": "Número"
+                                    "en": "Phone number.",
+                                    "pt": "Número de telefone.",
+                                    "es": "Número de teléfono."
                                   }
                                 },
                                 "extension": {
@@ -2091,7 +2092,7 @@
                                   "example": "8529-1111",
                                   "description": {
                                     "en": "Number",
-                                    "pt": "O Número",
+                                    "pt": "Número",
                                     "es": "Número"
                                   }
                                 }
@@ -2119,11 +2120,11 @@
                                 },
                                 "street_name": {
                                   "type": "string",
-                                  "example": "Insurgentes Sur",
+                                  "example": "Street name example",
                                   "description": {
-                                    "en": "Street name",
-                                    "pt": "Nome da rua",
-                                    "es": "Nombre de la calle"
+                                    "en": "Street name.",
+                                    "pt": "Nome da rua.",
+                                    "es": "Nombre de la calle."
                                   }
                                 },
                                 "street_number": {
@@ -2143,8 +2144,8 @@
                             "example": "Lalo",
                             "description": {
                               "en": "First name",
-                              "pt": "Nome",
-                              "es": "Nombre"
+                              "pt": "Primeiro nome",
+                              "es": "Primer nombre"
                             }
                           },
                           "last_name": {
@@ -2306,17 +2307,17 @@
                       "type": "number",
                       "example": 1,
                       "description": {
-                        "es": "Installments",
-                        "pt": "Installments",
-                        "en": "Installments"
+                        "es": "Número de cuotas.",
+                        "pt": "Número de parcelas.",
+                        "en": "Number of installments."
                       }
                     },
                     "transaction_details": {
                       "type": "array",
                       "description": {
-                        "en": "List of transaction details",
-                        "pt": "Lista de detalhes da transação",
-                        "es": "Lista de detalles de transacción"
+                        "en": "List of transaction details.",
+                        "pt": "Lista de detalhes da transação.",
+                        "es": "Lista de detalles de transacción."
                       },
                       "items": {
                         "type": "object",
@@ -2325,90 +2326,90 @@
                             "type": "string",
                             "example": "6002219463",
                             "description": {
-                              "en": "Payment method reference identifier",
-                              "pt": "Identificador de referência do meio de pagamento",
-                              "es": "Identificador de referencia de medio de pago"
+                              "en": "Payment method reference identifier.",
+                              "pt": "Identificador de referência do meio de pagamento.",
+                              "es": "Identificador de referencia de medio de pago."
                             }
                           },
                           "verification_code": {
                             "type": "string",
                             "example": "6002219463",
                             "description": {
-                              "en": "Verification code",
-                              "pt": "Código de verificação",
-                              "es": "Código de verificación"
+                              "en": "Verification code.",
+                              "pt": "Código de verificação.",
+                              "es": "Código de verificación."
                             }
                           },
                           "net_received_amount": {
                             "type": "number",
                             "example": 0,
                             "description": {
-                              "en": "Net received amount",
-                              "pt": "Valor líquido recebido",
-                              "es": "Monto neto recibido"
+                              "en": "Net received amount.",
+                              "pt": "Valor líquido recebido.",
+                              "es": "Monto neto recibido."
                             }
                           },
                           "total_paid_amount": {
                             "type": "number",
                             "example": 75.76,
                             "description": {
-                              "en": "Total paid amount",
-                              "pt": "Valor total pago",
-                              "es": "Monto total pago"
+                              "en": "Total paid amount.",
+                              "pt": "Valor total pago.",
+                              "es": "Monto total pago."
                             }
                           },
                           "overpaid_amount": {
                             "type": "number",
                             "example": 0,
                             "description": {
-                              "en": "Overpaid amount",
-                              "pt": "Valor pago a mais",
-                              "es": "Monto pagado en exceso"
+                              "en": "Overpaid amount.",
+                              "pt": "Valor pago a mais.",
+                              "es": "Monto pagado en exceso."
                             }
                           },
                           "external_resource_url": {
                             "type": "string",
                             "example": "https://www.mercadopago.com/mlb/payments/beta/ticket/helper?payment_id=18746874919&payment_method_reference_id=6002219463&caller_id=1003743392&hash=6a8c570f-9c39-4a5c-9b55-85ae1b724bf",
                             "description": {
-                              "en": "External resource url",
-                              "pt": "URL de recurso externo",
-                              "es": "URL de recurso externo"
+                              "en": "External resource url.",
+                              "pt": "URL de recurso externo.",
+                              "es": "URL de recurso externo."
                             }
                           },
                           "installment_amount": {
                             "type": "number",
                             "example": 0,
                             "description": {
-                              "en": "Installment amount",
-                              "pt": "Valor da parcela",
-                              "es": "Valor de la cuota"
+                              "en": "Installment amount.",
+                              "pt": "Valor da parcela.",
+                              "es": "Valor de la cuota."
                             }
                           },
                           "financial_institution": {
                             "type": "string",
                             "example": null,
                             "description": {
-                              "en": "Financial institution",
-                              "pt": "Instituição financeira",
-                              "es": "Institución financiera"
+                              "en": "Financial institution.",
+                              "pt": "Instituição financeira.",
+                              "es": "Institución financiera."
                             }
                           },
                           "payable_deferral_period": {
                             "type": "string",
                             "example": null,
                             "description": {
-                              "en": "Payable deferral period",
-                              "pt": "Período de diferimento a pagar",
-                              "es": "Período de aplazamiento de pago"
+                              "en": "Payable deferral period.",
+                              "pt": "Período de diferimento a pagar.",
+                              "es": "Período de aplazamiento de pago."
                             }
                           },
                           "acquirer_reference": {
                             "type": "string",
                             "example": null,
                             "description": {
-                              "en": "Acquirer reference",
-                              "pt": "Referência do adquirente",
-                              "es": "Referencia de adquirente"
+                              "en": "Acquirer reference.",
+                              "pt": "Referência do adquirente.",
+                              "es": "Referencia de adquirente."
                             }
                           }
                         }
@@ -2417,18 +2418,18 @@
                     "fee_details": {
                       "type": "array",
                       "description": {
-                        "en": "List of fee details",
-                        "pt": "Lista de detalhes das taxas",
-                        "es": "Lista de detalles de la tarifa"
+                        "en": "List of fee details.",
+                        "pt": "Lista de detalhes das taxas.",
+                        "es": "Lista de detalles de la tarifa."
                       },
                       "items": null
                     },
                     "charges_details": {
                       "type": "array",
                       "description": {
-                        "en": "List of charges details",
-                        "pt": "Lista de detalhes da cobrança",
-                        "es": "Lista de detalles de cobro"
+                        "en": "List of charges details.",
+                        "pt": "Lista de detalhes da cobrança.",
+                        "es": "Lista de detalles de cobro."
                       },
                       "items": null
                     },
@@ -2436,18 +2437,18 @@
                       "type": "boolean",
                       "example": true,
                       "description": {
-                        "en": "Captured flag",
-                        "pt": "Captura habilitada",
-                        "es": "Captura habilitada"
+                        "en": "Captured flag.",
+                        "pt": "Captura habilitada.",
+                        "es": "Captura habilitada."
                       }
                     },
                     "binary_mode": {
                       "type": "boolean",
                       "example": true,
                       "description": {
-                        "en": "Binary mode flag",
-                        "pt": "Modo binário habilitado",
-                        "es": "Modo binario habilitado"
+                        "en": "Binary mode flag.",
+                        "pt": "Modo binário habilitado.",
+                        "es": "Modo binario habilitado."
                       }
                     },
                     "call_for_authorize_id": {
@@ -2455,25 +2456,25 @@
                       "example": null,
                       "description": {
                         "en": "Call for authorize identifier",
-                        "pt": "Chamada para autorizar identificador",
-                        "es": "Llamada para autorizar identificador"
+                        "pt": "Chamada para autorizar identificador.",
+                        "es": "Llamada para autorizar identificador."
                       }
                     },
                     "statement_descriptor": {
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Statement descriptor",
-                        "pt": "Descritor de extrato bancário",
-                        "es": "Descriptor de extracto bancario"
+                        "en": "Statement descriptor.",
+                        "pt": "Descritor de extrato bancário.",
+                        "es": "Descriptor de extracto bancario."
                       }
                     },
                     "card": {
                       "type": "array",
                       "description": {
-                        "en": "List of cards",
-                        "pt": "Lista de cartões",
-                        "es": "Lista de tarjetas"
+                        "en": "List of cards.",
+                        "pt": "Lista de cartões.",
+                        "es": "Lista de tarjetas."
                       },
                       "items": null
                     },
@@ -2481,17 +2482,17 @@
                       "type": "string",
                       "example": "https://webhook.site/17a3a5ce-28d4-4b4f-ba3f-a7595c17c6d8",
                       "description": {
-                        "en": "Notification URL",
-                        "pt": "URL de notificação",
-                        "es": "URL de notificación"
+                        "en": "Notification URL.",
+                        "pt": "URL de notificação.",
+                        "es": "URL de notificación."
                       }
                     },
                     "refunds": {
                       "type": "array",
                       "description": {
-                        "en": "List of refunds",
-                        "pt": "Lista de reembolsos",
-                        "es": "Lista de reembolsos"
+                        "en": "List of refunds.",
+                        "pt": "Lista de reembolsos.",
+                        "es": "Lista de reembolsos."
                       },
                       "items": null
                     },
@@ -2499,63 +2500,63 @@
                       "type": "string",
                       "example": "aggregator",
                       "description": {
-                        "en": "Processing mode",
-                        "pt": "Modo de processamento",
-                        "es": "Modo de procesamiento"
+                        "en": "Processing mode.",
+                        "pt": "Modo de processamento.",
+                        "es": "Modo de procesamiento."
                       }
                     },
                     "merchant_account_id": {
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Merchant account identifier",
-                        "pt": "Identificador da conta do merchant",
-                        "es": "Identificador de cuenta del merchant"
+                        "en": "Merchant account identifier.",
+                        "pt": "Identificador da conta do merchant.",
+                        "es": "Identificador de cuenta del merchant."
                       }
                     },
                     "merchant_number": {
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Merchant number",
-                        "pt": "Número do merchant",
-                        "es": "Número de merchant"
+                        "en": "Merchant number.",
+                        "pt": "Número do merchant.",
+                        "es": "Número de merchant."
                       }
                     },
                     "acquirer_reconciliation": {
                       "type": "array",
                       "description": {
-                        "en": "List of acquirer reconciliation",
-                        "pt": "Lista de reconciliação do adquirente",
-                        "es": "Lista de reconciliación de adquirente"
+                        "en": "List of acquirer reconciliation.",
+                        "pt": "Lista de reconciliação do adquirente.",
+                        "es": "Lista de reconciliación de adquirente."
                       },
                       "items": null
                     },
                     "point_of_interaction": {
                       "type": "array",
                       "description": {
-                        "en": "List of point of interaction",
-                        "pt": "Lista de ponto de interação",
-                        "es": "Lista de punto de interacción"
+                        "en": "List of point of interaction.",
+                        "pt": "Lista de ponto de interação.",
+                        "es": "Lista de punto de interacción."
                       },
                       "items": {
                         "type": "object",
                         "properties": {
                           "type": {
                             "type": "string",
-                            "example": "UNSPECIFIED",
+                            "example": "Unspecified",
                             "description": {
-                              "en": "Type",
-                              "pt": "Tipo",
-                              "es": "Tipo"
+                              "en": "Type.",
+                              "pt": "Tipo.",
+                              "es": "Tipo."
                             }
                           },
                           "business_info": {
                             "type": "array",
                             "description": {
-                              "en": "List of business information",
-                              "pt": "Lista de informação de negócio",
-                              "es": "Lista de información de negocio"
+                              "en": "List of business information.",
+                              "pt": "Lista de informação de negócio.",
+                              "es": "Lista de información de negocio."
                             },
                             "items": {
                               "type": "object",
@@ -2564,17 +2565,17 @@
                                   "type": "string",
                                   "example": "online_payments",
                                   "description": {
-                                    "en": "Unit",
-                                    "pt": "Unidade",
-                                    "es": "Unidad"
+                                    "en": "Unit.",
+                                    "pt": "Unidade.",
+                                    "es": "Unidad."
                                   }
                                 },
                                 "sub_unit": {
                                   "type": "string",
                                   "example": "checkout_pro",
                                   "description": {
-                                    "es": "Sub unit",
-                                    "pt": "Sub unit",
+                                    "es": "Subunidad",
+                                    "pt": "Subunidade",
                                     "en": "Sub unit"
                                   }
                                 }
@@ -2604,11 +2605,27 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "400",
+                          "title": "2018",
                           "description": {
-                            "en": "Bad-Request",
-                            "es": "Bad-Request",
-                            "pt": "Bad-Request"
+                            "en": "The action requested is not valid for the current payment state - This error occurs when an attempt is made to change a payment's status to canceled when the initial status is not 'in_process', 'pending', or 'authorized.",
+                            "es": "The action requested is not valid for the current payment state - Este error sucede cuando se intenta pasar a cancelled un payment cuyo status inicial no es 'in_process', 'pending' o authorized",
+                            "pt": "The action requested is not valid for the current payment state - Este erro ocorre quando se tenta alterar o status de um pagamento para cancelado quando o status inicial não é 'in_process', 'pending' ou 'authorized'."
+                          }
+                        },
+                        {
+                          "title": "2016",
+                          "description": {
+                            "en": "Invalid Status for Update - This error occurs when, for example, an attempt is made to change the status of a payment from `in_process` to `approved`. This request only accepts the status `cancelled`. Please review the parameter submitted and make a new request with the correct value.",
+                            "es": "The action requested is not valid for the current payment state - Estado Inválido para Actualización - Este error ocurre cuando, por ejemplo, se intenta cambiar el estado de un pago de `in_process` a `approved`. Esta solicitud solo acepta el estado `cancelled`. Por favor, revise el parámetro enviado y realice una nueva solicitud con el valor correcto.",
+                            "pt": "The action requested is not valid for the current payment state - Este erro ocorre quando, por exemplo, se tenta alterar o status de um pagamento de `in_process` para `approved`. Esta requisição só aceita o status `cancelled`. Revise o parâmetro enviado e submeta uma nova solicitação com o valor correto."
+                          }
+                        },
+                        {
+                          "title": "4017",
+                          "description": {
+                            "en": "Status attribute can't be null - If this error appears, please review the `status` parameter to ensure that it is set to `cancelled` and not left empty. Confirm the status is correctly populated before submitting a new request.",
+                            "es": "Status attribute can't be null - Si este error aparece, revise el parámetro `status` para asegurarse de que esté establecido como `cancelled` y que no se haya dejado vacío. Confirme que el estado esté correctamente introducido antes de enviar una nueva solicitud.",
+                            "pt": "Status attribute can't be null - Caso este erro apareça, revise o parâmetro `status` para garantir que ele esteja definido como `cancelled` e que não esteja vazio. Confirme que o status esteja corretamente preenchido antes de enviar uma nova solicitação."
                           }
                         }
                       ]
@@ -2635,9 +2652,17 @@
                         {
                           "title": "5",
                           "description": {
-                            "en": "Must-provide-your-access-token-to -proceed",
-                            "es": "Must-provide-your-access-token-to -proceed",
-                            "pt": "Must-provide-your-access-token-to -proceed"
+                            "en": "Must provide your access token - This error is displayed when an attempt is made to make a request without sending the Access Token. Please check the request parameters and ensure the necessary information is provided.",
+                            "es": "Must provide your access token - Este error se muestra cuando se intenta realizar una solicitud sin enviar el Access Token. Verifique los parámetros de la solicitud y asegúrese de enviar la información necesaria.",
+                            "pt": "Must provide your access token - Este erro é exibido quando ocorre a tentativa de requisição sem o envio do Access Token. Verifique os parâmetros de requisição e garanta o envio da informação necessária."
+                          }
+                        },
+                        {
+                          "title": "Unauthorized",
+                          "description": {
+                            "en": "Invalid access token - If this error appears, please review the Access Token provided in your request to ensure it is correct. After verifying the token, submit a new request.",
+                            "es": "Invalid access token - Si este error aparece, por favor revise el Access Token proporcionado en su solicitud para asegurarse de que esté correcto. Después de verificar el token, envíe una nueva solicitud.",
+                            "pt": "Invalid access token - Caso este erro apareça, revise o Access Token fornecido na sua requisição para garantir que ele esteja correto. Após verificar o token, envie uma nova solicitação."
                           }
                         }
                       ]
@@ -2664,9 +2689,38 @@
                         {
                           "title": "2000",
                           "description": {
-                            "en": "Payment-not-found",
-                            "es": "Payment-not-found",
-                            "pt": "Payment-not-found"
+                            "en": "Payment not found - This error is returned when the payment ID entered is incorrect or does not exist. Please review the `payment_id` parameter and ensure that the number entered is correct.",
+                            "es": "Payment not found - Este error se devuelve cuando el ID de pago ingresado es incorrecto o no existe. Revise el parámetro `payment_id` y asegúrese de que el número ingresado sea correcto.",
+                            "pt": "Payment not found - Este erro retorna quando o ID de pagamento inserido está incorreto ou não existe. Revise o parâmetro `payment_id` e garanta que o número inserido está correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "4",
+                          "description": {
+                            "en": "Forbidden - The caller is not authorized to access this resource. This error occurs when attempting to change a payment status from `authorized` to `approved`. The same issue arises when trying to change a payment status from `in_process` to `rejected` or `approved`, or from `authorized` to `approved`. In this case, ensure the status being set is strictly `cancelled` and submit a new request.",
+                            "es": "Forbidden - The caller is not authorized to access this resource. Este error ocurre al intentar cambiar el estado de un pago de `authorized` a `approved`. El mismo problema surge al intentar cambiar el estado de un pago de `in_process` a `rejected` o `approved`, o de `authorized` a `approved`. En este caso, asegúrese de que el estado establecido sea estrictamente `cancelled` y envíe una nueva solicitud.",
+                            "pt": "Forbidden - The caller is not authorized to access this resource. Este erro ocorre ao tentar alterar o status de um pagamento de `authorized` para `approved`. O mesmo problema surge ao tentar mudar o status de um pagamento de `in_process` para `rejected` ou `approved`, ou de `authorized` para `approved`. Neste caso, certifique-se de que o status definido seja estritamente `cancelled` e envie uma nova solicitação."
                           }
                         }
                       ]

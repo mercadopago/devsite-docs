@@ -5,7 +5,6 @@
             "post": {
                 "tags": [
                     "checkout-pro",
-                    "mobile-checkout",
                     "subscriptions",
                     "checkout-api",
                     "checkout-bricks"
@@ -2817,7 +2816,6 @@
             "get": {
                 "tags": [
                     "checkout-pro",
-                    "mobile-checkout",
                     "qr-code",
                     "subscriptions",
                     "checkout-api",
@@ -4028,7 +4026,6 @@
             "put": {
                 "tags": [
                     "checkout-pro",
-                    "mobile-checkout",
                     "subscriptions",
                     "checkout-api"
                 ],
@@ -5421,7 +5418,6 @@
             "get": {
                 "tags": [
                     "checkout-pro",
-                    "mobile-checkout",
                     "qr-code",
                     "subscriptions",
                     "checkout-api",
