@@ -48,6 +48,6 @@ Keep the status of orders updated in your systems by using and processing notifi
 
 ### Reports
 
-[Mercado Pago reports](/developers/en/guides/additional-content/reports/introduction) provide financial information to track account transactions, such as available balance, movements, and liquidity. This facilitates the reconciliation of sales and other operations with your internal management systems.
+[Mercado Pago reports](/developers/en/guides/additional-content/reports/general-considerations/reconciliation-reports) provide financial information to track account transactions, such as available balance, movements, and liquidity. This facilitates the reconciliation of sales and other operations with your internal management systems.
 
 We recommend using the reports to improve your company's financial management once you go live.
