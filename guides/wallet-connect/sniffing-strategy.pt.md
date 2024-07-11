@@ -1,8 +1,8 @@
 # Funcionalidade de sniffing
 
-O **_sniffing_** é uma funcionalidade que permite identificar se um usuário tem o aplicativo do Mercado Pago instalado em seu dispositivo móvel e abrir esse app automaticamente. Caso afirmativo, ao abrir o `agreement_uri` em um navegador, o **fluxo de vinculação** é iniciado automaticamente no aplicativo, sem que o usuário precise fazer login manualmente.
+O **_sniffing_** é uma funcionalidade que permite identificar se um usuário tem o aplicativo do Mercado Pago instalado em seu dispositivo móvel e abrí-lo automaticamente. Caso afirmativo, ao abrir o `agreement_uri` em um navegador, o **fluxo de vinculação** é iniciado automaticamente no aplicativo, sem que o usuário precise fazer login manualmente.
 
-A função de _sniffing_ simplifica o processo de vinculação, melhorando a experiência do usuário ao reduzir a fricção no processo de vinculação.
+A função de _sniffing_ simplifica o processo de vinculação, melhorando a experiência do usuário ao reduzir a fricção durante a vinculação.
 
 ## Modelos de implementação de sniffing
 

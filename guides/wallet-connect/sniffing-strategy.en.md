@@ -1,8 +1,8 @@
 # Sniffing feature
 
-**Sniffing** is a feature that allows you to identify if a user has the Mercado Pago app installed on their mobile device and automatically open this app. If so, when opening the `agreement_uri` in a browser, the **agreement flow** is automatically initiated in the app, without the user needing to log in manually.
+**Sniffing** is a feature that allows identifying if a user has the Mercado Pago app installed on their mobile device and automatically opens it. If so, when opening the `agreement_uri` in a browser, the **agreement flow** is automatically initiated in the app, without the user needing to log in manually.
 
-The sniffing feature simplifies the linking process, improving the user experience by reducing friction in the agreement process.
+The sniffing feature simplifies the agreement process, improving the user experience by reducing friction in the agreement.
 
 ## Models of sniffing implementation
 
