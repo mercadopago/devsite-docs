@@ -2376,6 +2376,24 @@
                       "es": "Identificador único para recuperar datos de la tarjeta utilizada como medio de pago."
                     }
                   },
+                  "card_token_id_secondary": {
+                    "type": "number",
+                    "example": 123123123,
+                    "description": {
+                      "en": "Unique identifier to recover details of the cards used as secondary payment methods. This parameter must be used with payment_method_id_secondary and is mandatory for card payment methods.",
+                      "pt": "Identificador único para recuperar dados do cartão utilizado como meio de pagamento secundário. Este parâmetro deve ser utilizado em conjunto com payment_method_id_secondary e é obrigatório para meios de pagamento com cartão.",
+                      "es": "Identificador único para recuperar datos de la tarjeta usada como medio de pago secundario. Este parámetro se debe usar en conjunto con payment_method_id_secondary y es obligatorio para medios de pago con tarjeta."
+                    }
+                  },
+                  "payment_method_id_secondary": {
+                    "type": "string",
+                    "example": "visa",
+                    "description": {
+                      "en": "Identifier of the secondary payment method.",
+                      "pt": "Identificador do método de pagamento do meio secundário.",
+                      "es": "Identificador del método de pago del medio secundario."
+                    }
+                  },
                   "status": {
                     "type": "string",
                     "example": "pending",
@@ -2739,6 +2757,24 @@
                         "en": "Payment method configured.",
                         "pt": "Meio de pagamento configurado.",
                         "es": "Método de pago configurado."
+                      }
+                    },
+                    "card_id_secondary": {
+                      "type": "number",
+                      "example": 123123123,
+                      "description": {
+                        "en": "Unique identifier to retrieve data from the card used as secondary payment method.",
+                        "pt": "Identificador único para recuperar dados do cartão utilizado como meio de pagamento secundário.",
+                        "es": "Identificador único para recuperar datos de la tarjeta utilizada como medio de pago secundario."
+                      }
+                    },
+                    "payment_method_id_secondary": {
+                      "type": "string",
+                      "example": "visa",
+                      "description": {
+                        "en": "Secondary payment method configured.",
+                        "pt": "Meio de pagamento secundário configurado.",
+                        "es": "Medio de pago secundario configurado."
                       }
                     },
                     "next_payment_date": {
