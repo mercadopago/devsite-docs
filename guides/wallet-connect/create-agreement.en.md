@@ -4,6 +4,12 @@ The first step in integrating Wallet Connect is to create an agreement, an autho
 
 The agreement stores the payment methods selected by the payer and allows for changes to these settings without seller intervention, making this step transparent during the payment flow.
 
+> NOTE
+>
+> Note
+>
+> If you wish, before starting the linking process, you can request the **Mercado Pago Integrations team** to use **Sniffing**, a feature that allows you to identify if a user has the Mercado Pago app installed on their mobile device and automatically open that app. For more information, refer to the [Sniffing functionality](/developers/en/docs/wallet-connect/account-linking-flow/create-agreement/sniffing-feature) documentation.
+
 Any change to payment methods is communicated through a webhook notification, which provides details of the update. 
 For more information, consult the section [Agreement payment method update](/developers/en/docs/wallet-connect/additional-content/your-integrations/notifications/webhooks).
 
@@ -17,7 +23,7 @@ Check out the diagram below that illustrates how the agreement creation flow wor
 
 ![Create agreement](/images/wallet-connect/new-create-agreement.en.png)
 
-To create an agreement, send a **POST** with the necessary attributes to the [/v2/wallet_connect/agreements](/developers/en/reference/wallet_connect/_wallet_connect_agreements/post) endpoint and execute the request or, if you prefer, use the `curl` below and pay attention to the request response that will return **two parameters** mandatory to obtain the payer's approval: `agreement_uri` and `return_uri`.
+To create an agreement, send a **POST** with the necessary attributes to the [/v2/wallet_connect/agreements](/developers/en/reference/wallet_connect/_wallet_connect_agreements/post) endpoint and execute the request or, if you prefer, use the `curl` below and pay attention to the request response that will return **two parameters** necessary to obtain the payer's approval: `agreement_id` and `agreement_uri`.
 
 ```curl
 curl -X POST \

@@ -1,6 +1,6 @@
 # Get approval 
 
-After the agreement creation, it is necessary to obtain the buyer's approval to use the payment data stored in the Mercado Pago wallet. This approval occurs during the payment flow and uses two parameters returned in the response of the agreement creation:
+After the agreement creation, it is necessary to obtain the buyer's approval to use the payment data stored in the Mercado Pago wallet. This approval occurs during the payment flow and uses two parameters:
 
 * `agreement_uri`: redirection address where the buyer authorizes access to the Mercado Pago wallet for making a payment.
 * `return_uri`: redirection address after the agreement confirmation provided by the buyer.

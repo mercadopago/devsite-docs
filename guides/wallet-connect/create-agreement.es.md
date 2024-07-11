@@ -4,8 +4,13 @@ El primer paso para integrar Wallet Connect es la creación de una vinculación,
 
 La vinculación almacena los métodos de pago seleccionados por el pagador y permite la modificación de estas configuraciones sin la intervención del vendedor, lo que hace que esta etapa sea transparente durante el flujo de pago.
 
-Cualquier cambio en los medios de pago se comunica a través de una notificación Webhooks, que proporciona detalles de la actualización.
-Para más información, consulte la sección [Actualización del medio de pago de una vinculación](/developers/es/docs/wallet-connect/additional-content/your-integrations/notifications/webhooks).
+> NOTE
+>
+> Nota
+>
+> Si lo desea, antes de iniciar la vinculación, puedes solicitar al **equipo de Integraciones de Mercado Pago** el uso de **_Sniffing_**, una funcionalidad que permite identificar si un usuario tiene la aplicación de Mercado Pago instalada en su dispositivo móvil y abrir esa app automáticamente. Para más información, acceda a la documentación de la [Funcionalidad de Sniffing](/developers/es/docs/wallet-connect/account-linking-flow/create-agreement/sniffing-feature).
+
+Cualquier cambio en los medios de pago se comunica a través de una notificación Webhooks, que proporciona detalles de la actualización. Para más información, consulte la sección [Actualización del medio de pago de una vinculación](/developers/es/docs/wallet-connect/additional-content/your-integrations/notifications/webhooks).
 
 > WARNING
 >
@@ -17,7 +22,7 @@ Consulte el siguiente diagrama que ilustra cómo funciona el flujo de creación 
 
 ![Iniciar vinculación](/images/wallet-connect/new-create-agreement.es.png)
 
-Para crear una vinculación, envía un **POST** con los atributos necesarios al endpoint [/v2/wallet_connect/agreements](/developers/es/reference/wallet_connect/_wallet_connect_agreements/post) y ejecuta el requestr o, si lo prefiere, use el `curl` a continuación y preste atención a la respuesta del request que devolverá **dos parámetros** obligatorios para obtener la aprobación del pagador: `agreement_uri` y `return_uri`.
+Para crear una vinculación, envía un **POST** con los atributos necesarios al endpoint [/v2/wallet_connect/agreements](/developers/es/reference/wallet_connect/_wallet_connect_agreements/post) y ejecuta el requestr o, si lo prefiere, use el `curl` a continuación y preste atención a la respuesta del request que devolverá **dos parámetros** necesarios para obtener la aprobación del pagador: `agreement_id` y `agreement_uri`.
 
 ```curl
 curl -X POST \
