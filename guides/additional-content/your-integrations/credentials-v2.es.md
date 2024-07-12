@@ -33,7 +33,7 @@ La **Public Key** y el **Access Token** son credenciales que serán utilizadas, 
 - Checkout Pro
 - Checkout Bricks
 - ----[mlb]---- Checkout Transparente----------------[mla, mlu, mlc, mlm, mco, mpe]---- Checkout API------------
-- Assinaturas
+- Suscripciones
 ----[mla, mlb, mlm]----
 - Mercado Pago Point
 

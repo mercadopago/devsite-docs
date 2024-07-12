@@ -47,13 +47,13 @@ The **Public Key** and the **Access Token** are credentials that will be used, n
 - Checkout Pro
 - Checkout Bricks
 - ----[mlb]---- Checkout Transparente----------------[mla, mlu, mlc, mlm, mco, mpe]---- Checkout API------------
-- Assinaturas
+- Subscriptions
 ----[mla, mlb, mlm]----
 - Mercado Pago Point
 
 ------------
 ----[mla, mlb, mlc, mlu]----
-- Código QR
+- QR Code
 
 ------------
 
