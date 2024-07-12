@@ -8,7 +8,7 @@ Subscriptions with an associated plan are used when it is necessary to use the s
 
 [Integrate Subscriptions with an associated plan](/developers/en/docs/subscriptions/integration-configuration/subscriptions-associated-plan)
 
-### Subscriptions without associated plan
+### Subscriptions without associated 
 
 Subscriptions with no associated plan are when different subscriptions have different characteristics because they are specific to each payer. For instance, a single-month subscription with a unique discount.
 
