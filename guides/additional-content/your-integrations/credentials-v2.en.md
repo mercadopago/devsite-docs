@@ -10,7 +10,7 @@ To obtain the credentials, whether for production or testing, you must first **c
 
 Next, learn how to obtain your credentials and in which situations they should be used.
 
-## Production credentials
+### Production credentials
 
 **Production credentials** are a set of keys that allow you to receive real payments on online stores and other applications.
 
@@ -40,7 +40,7 @@ You can obtain your production credentials in two ways:
 
 When accessing your production credentials, the following credential pairs will be displayed: **Public Key and Access Token**, along with **Client ID and Client Secret**.
 
-### Public Key and Access Token
+#### Public Key and Access Token
 
 The **Public Key** and the **Access Token** are credentials that will be used, not necessarily together, in integrations made with Mercado Pago's payment solutions, including:
 
@@ -72,7 +72,7 @@ These credentials are also used in Mercado Pago plugin integrations with e-comme
 
 For more information on which credentials will be needed for your integration, [consult the specific documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs) of the solution being integrated.
 
-### Client ID and Client Secret
+#### Client ID and Client Secret
 
 The **Client ID** and **Client Secret** are credentials used in some older integrations with e-commerce platforms and primarily in integrations that use [OAuth](/developers/en/docs/security/oauth/introduction) as a protocol for obtaining private information from Mercado Pago accounts. Specifically, they are used during the **Client Credentials** flow (grant type), which allows access to a resource on one's own behalf and obtaining an Access Token without user interaction.
 
@@ -87,7 +87,7 @@ The **Client ID** and **Client Secret** are credentials used in some older integ
 >
 > If for security reasons or any other relevant reason you need to renew your credentials, simply click on **More options** (three dots at the end of the card) **>** **Renew**. Keep in mind that your integration may be affected by the change.
 
-## Test Credentials
+### Test credentials
 
 Test credentials are a set of keys used to test the integration. They can be combined with test credit cards to simulate transactions and verify the correct operation of the integrations.
 
@@ -108,7 +108,7 @@ You can obtain your test credentials, **as long as they are available for your i
 
 ------------
 
-### Test credentials not available
+#### Test credentials not available
 
 When creating an application, if you selected a Mercado Pago product that does not require test credentials, you will see the following screen:
 
@@ -125,7 +125,7 @@ If you are integrating a product that does not use test credentials, you will no
 
 > **Test accounts** do not have test credentials enabled. If you are using a test account, you will need to use its production credentials.
 
-## Share Credentials
+## Share credentials
 
 When you receive assistance in integrating or setting up your payment channels, you can safely share your credentials with another Mercado Pago account. To do so, follow the steps below.
 
