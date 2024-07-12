@@ -79,6 +79,15 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | `SECU` | Rechazado por código de seguridad inválido | - |
 | `EXPI` | Rechazado debido a un problema de fecha de vencimiento | - |
 | `FORM` | Rechazado debido a un error de formulario | - |
+| `CARD` | Rechazado por falta de card_number | - |
+| `INST` | Rechazado por cuotas invalidas | - |
+| `DUPL` | Rechazado por pago duplicado | - |
+| `LOCK` | Rechazado por tarjeta deshabilitada | - |
+| `CTNA` | Rechazado por tipo de tarjeta no permitida | - |
+| `ATTE` | Rechazado debido a intentos excedidos del pin de la tarjeta | - |
+| `BLAC` | Rechazado por estar en lista negra | - |
+| `UNSU` | No soportado | - |
+| `TEST` | Usado para aplicar regla de montos | - |
 
 ------------
 ----[mlb]----
@@ -92,12 +101,21 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | --- | --- | --- |
 | `APRO` | Pago aprobado | (CPF) 12345678909 |
 | `OTHE` | Rechazado por error general | (CPF) 12345678909 |
-| `CONT` | Pendiente de pago | - |
+| `CONT` | Pendiente de pago | - | 
 | `CALL` | Rechazado con validación para autorizar | - |
 | `FUND` | Rechazado por importe insuficiente | - |
 | `SECU` | Rechazado por código de seguridad inválido | - |
 | `EXPI` | Rechazado debido a un problema de fecha de vencimiento | - |
 | `FORM` | Rechazado debido a un error de formulario | - |
+| `CARD` | Rechazado por falta de card_number | - |
+| `INST` | Rechazado por cuotas invalidas | - |
+| `DUPL` | Rechazado por pago duplicado | - |
+| `LOCK` | Rechazado por tarjeta deshabilitada | - |
+| `CTNA` | Rechazado por tipo de tarjeta no permitida | - |
+| `ATTE` | Rechazado debido a intentos excedidos del pin de la tarjeta | - |
+| `BLAC` | Rechazado por estar en lista negra | - |
+| `UNSU` | No soportado | - |
+| `TEST` | Usado para aplicar regla de montos | - |
 
 ------------
 ----[mlc]----
@@ -112,12 +130,21 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | --- | --- | --- |
 | `APRO` | Pago aprobado | (otro) 123456789 |
 | `OTHE` | Rechazado por error general | (otro) 123456789 |
-| `CONT` | Pendiente de pago | - |
+| `CONT` | Pendiente de pago | - | 
 | `CALL` | Rechazado con validación para autorizar | - |
 | `FUND` | Rechazado por importe insuficiente | - |
 | `SECU` | Rechazado por código de seguridad inválido | - |
 | `EXPI` | Rechazado debido a un problema de fecha de vencimiento | - |
 | `FORM` | Rechazado debido a un error de formulario | - |
+| `CARD` | Rechazado por falta de card_number | - |
+| `INST` | Rechazado por cuotas invalidas | - |
+| `DUPL` | Rechazado por pago duplicado | - |
+| `LOCK` | Rechazado por tarjeta deshabilitada | - |
+| `CTNA` | Rechazado por tipo de tarjeta no permitida | - |
+| `ATTE` | Rechazado debido a intentos excedidos del pin de la tarjeta | - |
+| `BLAC` | Rechazado por estar en lista negra | - |
+| `UNSU` | No soportado | - |
+| `TEST` | Usado para aplicar regla de montos | - |
 
 ------------
 ----[mco]----
@@ -131,12 +158,21 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | --- | --- | --- |
 | `APRO` | Pago aprobado | 123456789 |
 | `OTHE` | Rechazado por error general | 123456789 |
-| `CONT` | Pendiente de pago | - |
+| `CONT` | Pendiente de pago | - | 
 | `CALL` | Rechazado con validación para autorizar | - |
 | `FUND` | Rechazado por importe insuficiente | - |
 | `SECU` | Rechazado por código de seguridad inválido | - |
 | `EXPI` | Rechazado debido a un problema de fecha de vencimiento | - |
 | `FORM` | Rechazado debido a un error de formulario | - |
+| `CARD` | Rechazado por falta de card_number | - |
+| `INST` | Rechazado por cuotas invalidas | - |
+| `DUPL` | Rechazado por pago duplicado | - |
+| `LOCK` | Rechazado por tarjeta deshabilitada | - |
+| `CTNA` | Rechazado por tipo de tarjeta no permitida | - |
+| `ATTE` | Rechazado debido a intentos excedidos del pin de la tarjeta | - |
+| `BLAC` | Rechazado por estar en lista negra | - |
+| `UNSU` | No soportado | - |
+| `TEST` | Usado para aplicar regla de montos | - |
 
 ------------
 ----[mlm]----
@@ -157,7 +193,15 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | `SECU` | Rechazado por código de seguridad inválido |
 | `EXPI` | Rechazado debido a un problema de fecha de vencimiento |
 | `FORM` | Rechazado debido a un error de formulario |
-
+| `CARD` | Rechazado por falta de card_number |
+| `INST` | Rechazado por cuotas invalidas |
+| `DUPL` | Rechazado por pago duplicado |
+| `LOCK` | Rechazado por tarjeta deshabilitada |
+| `CTNA` | Rechazado por tipo de tarjeta no permitida |
+| `ATTE` | Rechazado debido a intentos excedidos del pin de la tarjeta |
+| `BLAC` | Rechazado por estar en lista negra |
+| `UNSU` | No soportado |
+| `TEST` | Usado para aplicar regla de montos |
 ------------
 ----[mlu]----
 | Tarjeta | Número | Código de seguridad | Fecha de caducidad |
@@ -169,13 +213,22 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | Estado de pago | Descripción |Documento de identidad |
 | --- | --- | --- |
 | `APRO` | Pago aprobado | (CI) 12345678 <br> (otro) 123456789 |
-| `CONT` | Pendiente de pago | (CI) 12345678 <br> (otro) 123456789 |
-| `OTHE` | Rechazado por error general | - |
+| `OTHE` | Rechazado por error general | (CI) 12345678 <br> (otro) 123456789 |
+| `CONT` | Pendiente de pago | - | 
 | `CALL` | Rechazado con validación para autorizar | - |
 | `FUND` | Rechazado por importe insuficiente | - |
 | `SECU` | Rechazado por código de seguridad inválido | - |
 | `EXPI` | Rechazado debido a un problema de fecha de vencimiento | - |
 | `FORM` | Rechazado debido a un error de formulario | - |
+| `CARD` | Rechazado por falta de card_number | - |
+| `INST` | Rechazado por cuotas invalidas | - |
+| `DUPL` | Rechazado por pago duplicado | - |
+| `LOCK` | Rechazado por tarjeta deshabilitada | - |
+| `CTNA` | Rechazado por tipo de tarjeta no permitida | - |
+| `ATTE` | Rechazado debido a intentos excedidos del pin de la tarjeta | - |
+| `BLAC` | Rechazado por estar en lista negra | - |
+| `UNSU` | No soportado | - |
+| `TEST` | Usado para aplicar regla de montos | - |
 
 ------------
 ----[mpe]----
@@ -189,11 +242,20 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | --- | --- | --- |
 | `APRO` | Pago aprobado | 123456789 |
 | `OTHE` | Rechazado por error general | 123456789 |
-| `CONT` | Pendiente de pago | - |
+| `CONT` | Pendiente de pago | - | 
 | `CALL` | Rechazado con validación para autorizar | - |
 | `FUND` | Rechazado por importe insuficiente | - |
-| `SECU` | Rechazado por código de seguridad inválido | v
+| `SECU` | Rechazado por código de seguridad inválido | - |
 | `EXPI` | Rechazado debido a un problema de fecha de vencimiento | - |
 | `FORM` | Rechazado debido a un error de formulario | - |
+| `CARD` | Rechazado por falta de card_number | - |
+| `INST` | Rechazado por cuotas invalidas | - |
+| `DUPL` | Rechazado por pago duplicado | - |
+| `LOCK` | Rechazado por tarjeta deshabilitada | - |
+| `CTNA` | Rechazado por tipo de tarjeta no permitida | - |
+| `ATTE` | Rechazado debido a intentos excedidos del pin de la tarjeta | - |
+| `BLAC` | Rechazado por estar en lista negra | - |
+| `UNSU` | No soportado | - |
+| `TEST` | Usado para aplicar regla de montos | - |
 
 ------------

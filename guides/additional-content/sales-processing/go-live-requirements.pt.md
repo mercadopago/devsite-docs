@@ -49,6 +49,6 @@ Mantenha o status dos pedidos atualizados em seus sistemas, usando e processando
 
 ### Relatórios
 
-Os [relatórios do Mercado Pago](/developers/pt/guides/additional-content/reports/introduction) fornecem informações financeiras para acompanhar as movimentações da sua conta, como saldo disponível, transações e liquidez. Isso facilita a conciliação das vendas e outras operações com seus sistemas de gestão internos.
+Os [relatórios do Mercado Pago](/developers/pt/guides/additional-content/reports/general-considerations/reconciliation-reports) fornecem informações financeiras para acompanhar as movimentações da sua conta, como saldo disponível, transações e liquidez. Isso facilita a conciliação das vendas e outras operações com seus sistemas de gestão internos.
 
 Recomendamos que você utilize os relatórios para melhorar a gestão financeira da sua empresa assim que sair a produção.
