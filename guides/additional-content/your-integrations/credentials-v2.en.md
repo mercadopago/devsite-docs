@@ -4,13 +4,13 @@ Credentials are **exclusive passwords** used to identify an integration in your 
 
 Each application will have **two pairs of production credentials** and, when applicable to the product, **a pair of test credentials**.
 
-## Obtaining Credentials
+## Obtaining credentials 
 
-To obtain the credentials, you must first **create an application** within Mercado Pago. If you have not created any yet, you can learn how to do it in the [Developer Panel documentation](/developers/en/docs/your-integrations/dashboard#bookmark_create_a_new_application).
+To obtain the credentials, whether for production or testing, you must first **create an application** within Mercado Pago. If you have not created any yet, access the [Developer Panel](/developers/en/docs/your-integrations/dashboard#bookmark_create_a_new_application) documentation for more information.
 
-Next, learn how to obtain your credentials and in what situations you should use them.
+Next, learn how to obtain your credentials and in which situations they should be used.
 
-## Production Credentials
+## Production credentials
 
 **Production credentials** are a set of keys that allow you to receive real payments on online stores and other applications.
 
@@ -20,46 +20,65 @@ You can obtain your production credentials in two ways:
 
 ----[mlb]----
 ![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-prod-mp-pt-v2.gif)
-------------
 
+------------
 ----[mla, mlu, mlc, mlm, mco, mpe]----
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-mp-es-v2.gif)
+
 ------------
 
 2. Through your Mercado Pago account, by accessing [**Your business > Settings > Management and administration > Credentials**](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
 ----[mlb]----
 ![Como acessar as credenciais através do Mercado Pago](/images/credentials/credentials-prod-mp-pt.gif)
-------------
 
+------------
 ----[mla, mlu, mlc, mlm, mco, mpe]----
 ![Cómo acceder a las credenciales a través de Mercado Pago](/images/credentials/credentials-prod-mp-es.gif)
+
 ------------
 
-When accessing your production credentials, you will be able to see the following pairs of credentials:
+When accessing your production credentials, the following credential pairs will be displayed: **Public Key and Access Token**, along with **Client ID and Client Secret**.
 
 ### Public Key and Access Token
 
-The **Public Key** and the **Access Token** are credentials that will be used, not necessarily together, in integrations made with Mercado Pago's payment solutions (Checkout Pro, Checkout Bricks,----[mlb]---- Checkout Transparente----------------[mla, mlu, mlc, mlm, mco, mpe]---- Checkout API----------------[mla, mlb, mlc, mlu]----, Subscriptions and QR Code----------------[mco, mlm, mpe]---- and Subscriptions------------) and in integrations of the Mercado Pago plugin with e-commerce platforms such as Shopify, WooCommerce, and ----[mla, mlu, mlc, mlm, mco, mpe]----Tiendanube----------------[mlb]----Nuvemshop------------.
+The **Public Key** and the **Access Token** are credentials that will be used, not necessarily together, in integrations made with Mercado Pago's payment solutions, including:
+
+- Checkout Pro
+- Checkout Bricks
+- ----[mlb]---- Checkout Transparente----------------[mla, mlu, mlc, mlm, mco, mpe]---- Checkout API------------
+- Assinaturas
+----[mla, mlb, mlm]----
+- Mercado Pago Point
+
+------------
+----[mla, mlb, mlc, mlu]----
+- Código QR
+
+------------
+
+These credentials are also used in Mercado Pago plugin integrations with e-commerce platforms such as Shopify, WooCommerce, and ----[mla, mlu, mlc, mlm, mco, mpe]----Tiendanube----------------[mlb]----Nuvemshop------------.
+
+> WARNING
+>
+> Important
+>
+> In some payment solutions, the Public Key and Access Token will also be used to test the integration. However, in these situations, the credentials of a [test account](/developers/en/docs/your-integrations/test/accounts) previously created.
 
 | Type | Description |
 | :--- | :--- |
 | Public key | The application's public key is usually used on the frontend. It allows, for example, accessing information about payment methods and encrypting card data. |
 | Access token | The application's private key that should always be used on the backend to generate payments. It is essential to keep this information secure on your servers. |
 
-In some payment solutions, the Public Key and Access Token will also be used to test the integration. However, in these situations, the credentials of a [test account](/developers/en/docs/your-integrations/test/accounts) that has been created will be used.
-
-To obtain more information about which credentials will be used in your integration, [consult the corresponding documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs) of the solution you are integrating.
+For more information on which credentials will be needed for your integration, [consult the specific documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs) of the solution being integrated.
 
 ### Client ID and Client Secret
 
-The **Client ID** and **Client Secret** are credentials used in some older integrations of the Mercado Pago plugin with e-commerce platforms, primarily in obtaining the Access Token using the **Client Credentials** grant type flow. This flow is used when the credentials are going to be used to access a resource on behalf of oneself, meaning it is used to obtain an Access Token without user interaction.
-
-Access the [OAuth documentation](/developers/en/docs/security/oauth/introduction) for more information.
+The **Client ID** and **Client Secret** are credentials used in some older integrations with e-commerce platforms and primarily in integrations that use [OAuth](/developers/en/docs/security/oauth/introduction) as a protocol for obtaining private information from Mercado Pago accounts. Specifically, they are used during the **Client Credentials** flow (grant type), which allows access to a resource on one's own behalf and obtaining an Access Token without user interaction.
 
 | Type | Description |
 | :--- | :--- |
-| Client ID | The client ID is a unique identifier that represents your integration. |
+| Client ID | The Client ID is a unique identifier that represents your integration. |
 | Client secret | A private key used in some plugins to generate payments. It is extremely important to keep this information secure on your servers and not allow access to any system user or intruder. |
 
 > NOTE
@@ -70,18 +89,23 @@ Access the [OAuth documentation](/developers/en/docs/security/oauth/introduction
 
 ## Test Credentials
 
-Test credentials are a set of keys used to test the integration. These credentials **are not available for all Mercado Pago products**, so they will only be active in applications where you have selected a product that requires them.
-
-Test credentials can be combined with test credit cards to simulate transactions and verify the correct operation of the integrations.
+Test credentials are a set of keys used to test the integration. They can be combined with test credit cards to simulate transactions and verify the correct operation of the integrations.
 
 You can obtain your test credentials, **as long as they are available for your integration**, by accessing [Your integrations > "Your application" > Test credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 
+> WARNING
+>
+> Important
+>
+> These credentials **are not available for all Mercado Pago products**, so they will only be active in applications where you have selected a product that requires them.
+
 ----[mlb]----
 ![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.gif)
-------------
 
+------------
 ----[mla, mlu, mlc, mlm, mco, mpe]----
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-test-panel-es.gif)
+
 ------------
 
 ### Test credentials not available
@@ -90,10 +114,11 @@ When creating an application, if you selected a Mercado Pago product that does n
 
 ----[mla, mlu, mlc, mlm, mco, mpe]----
 ![Blocked test account screen](/images/credentials/blocked-test-credentials-es-v2.png)
-------------
 
+------------
 ----[mlb]----
 ![Blocked test account screen](/images/credentials/blocked-test-credentials-es-v3.png)
+
 ------------
 
 If you are integrating a product that does not use test credentials, you will not be able to use them. Instead, you should use [test accounts](/developers/en/docs/your-integrations/test/accounts). 
@@ -102,16 +127,16 @@ If you are integrating a product that does not use test credentials, you will no
 
 ## Share Credentials
 
-When you receive assistance in integrating or setting up your payment channels, you can safely share your credentials with another Mercado Pago account. To do so, follow the steps below:
-
-1. Access your Mercado Pago account.
-2. Go to [Your business > Settings > Management and Administration > Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
-3. On that page, select the option "Share my credentials".
-4. Enter the email of the person you want to grant access to.
-5. Make sure the email is associated with the person's Mercado Pago account.
+When you receive assistance in integrating or setting up your payment channels, you can safely share your credentials with another Mercado Pago account. To do so, follow the steps below.
 
 > WARNING
 >
 > Important
 >
 > If for security reasons you do not wish to continue sharing your credentials, you can cancel it.
+
+1. Access your Mercado Pago account.
+2. Go to [Your business > Settings > Management and Administration > Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
+3. On that page, select the option **Share my credentials**.
+4. Enter the email of the person you want to grant access to.
+5. Make sure the email is associated with the person's Mercado Pago account.
