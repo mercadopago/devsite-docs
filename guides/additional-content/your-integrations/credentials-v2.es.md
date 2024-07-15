@@ -18,7 +18,7 @@ Puedes obtener tus credenciales de producción de dos maneras:
 
 1. Ingresando a [**Tus integraciones > "Tu aplicación" > Producción > Credenciales de producción**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 
-![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-mp-es.gif)
+![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es.gif)
 
 2. A través de tu cuenta de Mercado Pago, accediendo a [**Tu negocio > Configuraciones > Gestión y administración > Credenciales**](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
@@ -95,17 +95,17 @@ Si estás integrando un producto que no utiliza credenciales de prueba, no podr�
 
 Cuando recibas ayuda en la integración o configuración de tus canales de pago, puedes compartir tus credenciales de forma segura con otra cuenta de Mercado Pago. Para hacerlo, sigue los pasos a continuación.
 
-> WARNING
->
-> Importante
->
-> Si por cuestiones de seguridad no deseas seguir compartiendo tus credenciales, puedes cancelarlo.
-
 1. Accede a tu cuenta de Mercado Pago.
 2. Ve a [Tu negocio > Configuraciones > Gestión y Administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 3. En esa página, selecciona la opción **Compartir mis credenciales**.
 4. Ingresa el correo electrónico de la persona a la que deseas conceder acceso.
 5. Asegúrate de que el correo electrónico esté asociado a la cuenta de Mercado Pago de la persona en cuestión.
+
+> WARNING
+>
+> Importante
+>
+> * Puedes compartir las credenciales de cada aplicación con hasta 10 cuentas de Mercado Pago diferentes.<br><br>* Si alcanzas la cantidad máxima de veces compartido, deberás eliminar algun permiso más antiguo.* Si por cuestiones de seguridad no deseas seguir compartiendo tus credenciales, puedes cancelarlo.
 
 ## Renovar credenciales
 

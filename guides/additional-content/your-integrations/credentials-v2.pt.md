@@ -18,7 +18,7 @@ Você poderá obter as suas credenciais de produção de duas maneiras:
 
 1. Accesando a [**Suas integrações > "Sua aplicação" > Produção > Credenciais de produção**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 
-![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-prod-mp-pt.gif)
+![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-prod-panel-pt.gif)
 
 2. Através da sua conta do Mercado Pago, acessando [**Sua loja > Configurações > Gestão e administração > Credenciais**](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
