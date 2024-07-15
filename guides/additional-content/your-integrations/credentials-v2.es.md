@@ -18,7 +18,7 @@ Puedes obtener tus credenciales de producción de dos maneras:
 
 1. Ingresando a [**Tus integraciones > "Tu aplicación" > Producción > Credenciales de producción**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 
-![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-mp-es-v2.gif)
+![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-mp-es.gif)
 
 2. A través de tu cuenta de Mercado Pago, accediendo a [**Tu negocio > Configuraciones > Gestión y administración > Credenciales**](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
@@ -67,12 +67,6 @@ El **Client ID** y el **Client Secret** son credenciales utilizadas en algunas i
 | Client ID | El Client ID es un identificador único que representa tu integración. |
 | Client Secret | Clave privada utilizada en algunos complementos para generar pagos. Es extremadamente importante mantener esta información segura en tus servidores y no permitir el acceso a ningún usuario del sistema o intruso. |
 
-> NOTE
->
-> Importante
->
-> Si por motivos de seguridad o cualquier otra razón relevante necesitas renovar tus credenciales, simplemente haz clic en **Más opciones** (tres puntos al final de la tarjeta) > **Renovar**. Ten en cuenta que tu integración puede verse afectada por el cambio.
-
 ### Credenciales de prueba
 
 Las credenciales de prueba son un conjunto de claves que se utilizan para probar la integración. Pueden combinarse con tarjetas de crédito de prueba para simular transacciones y verificar el correcto funcionamiento de las integraciones.
@@ -112,3 +106,9 @@ Cuando recibas ayuda en la integración o configuración de tus canales de pago,
 3. En esa página, selecciona la opción **Compartir mis credenciales**.
 4. Ingresa el correo electrónico de la persona a la que deseas conceder acceso.
 5. Asegúrate de que el correo electrónico esté asociado a la cuenta de Mercado Pago de la persona en cuestión.
+
+## Renovar credenciales
+
+Si por motivos de seguridad o cualquier otra razón relevante necesitas renovar tus credenciales, haz clic en **Más opciones** (tres puntos al final de la tarjeta) > **Renovar**. Ten en cuenta que tu integración puede verse afectada por el cambio.
+
+![Cómo renovar tus credenciales](/images/credentials/renew-credentials-es.gif)
