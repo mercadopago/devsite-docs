@@ -26,7 +26,7 @@ Puedes obtener tus credenciales de producción de dos maneras:
 
 Al acceder a las credenciales de producción, se mostrarán los siguientes pares de credenciales: **Public Key y Access Token**, además de **Client ID y Client Secret**.
 
-#### Public Key y Access Token
+### Public Key y Access Token
 
 La **Public Key** y el **Access Token** son credenciales que serán utilizadas, no necesariamente juntas, en las integraciones realizadas con las soluciones de pago de Mercado Pago, incluyendo:
 
@@ -58,7 +58,7 @@ Estas credenciales también se utilizan en las integraciones del plugin de Merca
 
 Para obtener más información sobre qué credenciales serán necesarias para tu integración, [consulta la documentación específica](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs) de la solución que se está integrando.
 
-#### Client ID y Client Secret
+### Client ID y Client Secret
 
 El **Client ID** y el **Client Secret** son credenciales utilizadas en algunas integraciones más antiguas con plataformas de comercio electrónico y, principalmente, en las integraciones que utilizan [OAuth](/developers/es/docs/security/oauth/introduction) como protocolo para obtención de información privada de cuentas de Mercado Pago. En particular, se utilizan durante el flujo (_grant type_) de **Client Credentials**, que permite acceder a un recurso en nombre propio y obtener un Access Token sin interacción del usuario.
 
@@ -105,7 +105,8 @@ Cuando recibas ayuda en la integración o configuración de tus canales de pago,
 >
 > Importante
 >
-> * Puedes compartir las credenciales de cada aplicación con hasta 10 cuentas de Mercado Pago diferentes.<br><br>* Si alcanzas la cantidad máxima de veces compartido, deberás eliminar algun permiso más antiguo.* Si por cuestiones de seguridad no deseas seguir compartiendo tus credenciales, puedes cancelarlo.
+> * Puedes compartir las credenciales de cada aplicación con hasta 10 cuentas de Mercado Pago diferentes. Si alcanzas la cantidad máxima de veces compartido, deberás eliminar algun permiso más antiguo.<br><br>* Si por cuestiones de seguridad no deseas seguir compartiendo tus credenciales, puedes cancelarlo.
+
 
 ## Renovar credenciales
 
