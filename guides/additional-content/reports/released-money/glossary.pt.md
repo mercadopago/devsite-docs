@@ -2,22 +2,6 @@
 
 Veja a descrição de cada campo presente no relatório na tabela abaixo.
 
-----[mla, mlm]----
-> WARNING
->
-> Importante
->
-> Algumas definições não estão mais disponíveis ou foram alteradas. Use este glossário para saber os termos dos relatórios gerados a partir de outubro. Para relatórios que cobrem datas anteriores, [consulte este Glossário.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/additional-content/reports/released-money/glossary-old)
-
-------------
-----[mlb]----
-> WARNING
->
-> Importante
->
-> Algumas definições não estão mais disponíveis ou foram alteradas. Utilize este glossário para saber os termos dos relatórios gerados a partir de janeiro. Para relatórios que cobrem datas anteriores, [consulte este Glossário.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs/additional-content/reports/released-money/glossary-old)
-------------
-
 | Nome da coluna do relatório | O que significa |
 |---|---|
 | Data da liberação (`DATE`) | Data de liberação da transação. É o momento em que essa transação afeta o saldo disponível na conta do usuário. |

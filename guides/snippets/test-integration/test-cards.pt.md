@@ -79,6 +79,15 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `SECU` | Recusado por código de segurança inválido | - |
 | `EXPI` | Recusado por problema com a data de vencimento | - |
 | `FORM` | Recusado por erro no formulário | - |
+| `CARD` | Rejeitado por falta de card_number | - |
+| `INST` | Rejeitado por parcelas inválidas | - |
+| `DUPL` | Rejeitado por pagamento duplicado | - |
+| `LOCK` | Rejeitado por cartão desabilitado | - |
+| `CTNA` | Rejeitado por tipo de cartão não permitido | - |
+| `ATTE` | Rejeitado devido a tentativas excedidas de pin do cartão | - |
+| `BLAC` | Rejeitado por estar na lista negra | - |
+| `UNSU` | Não suportado | - |
+| `TEST` | Usado para aplicar regra de valores | - |
 
 ------------
 ----[mlb]----
@@ -98,6 +107,15 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `SECU` | Recusado por código de segurança inválido | - |
 | `EXPI` | Recusado por problema com a data de vencimento | - |
 | `FORM` | Recusado por erro no formulário | - |
+| `CARD` | Rejeitado por falta de card_number | - |
+| `INST` | Rejeitado por parcelas inválidas | - |
+| `DUPL` | Rejeitado por pagamento duplicado | - |
+| `LOCK` | Rejeitado por cartão desabilitado | - |
+| `CTNA` | Rejeitado por tipo de cartão não permitido | - |
+| `ATTE` | Rejeitado devido a tentativas excedidas de pin do cartão | - |
+| `BLAC` | Rejeitado por estar na lista negra | - |
+| `UNSU` | Não suportado | - |
+| `TEST` | Usado para aplicar regra de valores | - |
 
 ------------
 ----[mlc]----
@@ -111,13 +129,22 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | Status de pagamento | Descrição | Documento de identidade |
 | --- | --- | --- |
 | `APRO` | Pagamento aprovado | (otro) 123456789 |
-| `CONT` | Pagamento pendente | (otro) 123456789 |
-| `OTHE` | Recusado por erro geral | - |
+| `OTHE` | Recusado por erro geral | (otro) 123456789 |
+| `CONT` | Pagamento pendente | - |
 | `CALL` | Recusado com validação para autorizar | - |
 | `FUND` | Recusado por quantia insuficiente | - |
 | `SECU` | Recusado por código de segurança inválido | - |
 | `EXPI` | Recusado por problema com a data de vencimento | - |
 | `FORM` | Recusado por erro no formulário | - |
+| `CARD` | Rejeitado por falta de card_number | - |
+| `INST` | Rejeitado por parcelas inválidas | - |
+| `DUPL` | Rejeitado por pagamento duplicado | - |
+| `LOCK` | Rejeitado por cartão desabilitado | - |
+| `CTNA` | Rejeitado por tipo de cartão não permitido | - |
+| `ATTE` | Rejeitado devido a tentativas excedidas de pin do cartão | - |
+| `BLAC` | Rejeitado por estar na lista negra | - |
+| `UNSU` | Não suportado | - |
+| `TEST` | Usado para aplicar regra de valores | - |
 
 ------------
 ----[mco]----
@@ -137,6 +164,15 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `SECU` | Recusado por código de segurança inválido | - |
 | `EXPI` | Recusado por problema com a data de vencimento | - |
 | `FORM` | Recusado por erro no formulário | - |
+| `CARD` | Rejeitado por falta de card_number | - |
+| `INST` | Rejeitado por parcelas inválidas | - |
+| `DUPL` | Rejeitado por pagamento duplicado | - |
+| `LOCK` | Rejeitado por cartão desabilitado | - |
+| `CTNA` | Rejeitado por tipo de cartão não permitido | - |
+| `ATTE` | Rejeitado devido a tentativas excedidas de pin do cartão | - |
+| `BLAC` | Rejeitado por estar na lista negra | - |
+| `UNSU` | Não suportado | - |
+| `TEST` | Usado para aplicar regra de valores | - |
 
 ------------
 ----[mlm]----
@@ -157,6 +193,15 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `SECU` | Recusado por código de segurança inválido |
 | `EXPI` | Recusado por problema com a data de vencimento |
 | `FORM` | Recusado por erro no formulário |
+| `CARD` | Rejeitado por falta de card_number |
+| `INST` | Rejeitado por parcelas inválidas |
+| `DUPL` | Rejeitado por pagamento duplicado |
+| `LOCK` | Rejeitado por cartão desabilitado |
+| `CTNA` | Rejeitado por tipo de cartão não permitido |
+| `ATTE` | Rejeitado devido a tentativas excedidas de pin do cartão |
+| `BLAC` | Rejeitado por estar na lista negra |
+| `UNSU` | Não suportado |
+| `TEST` | Usado para aplicar regra de valores |
 
 ------------
 ----[mlu]----
@@ -176,6 +221,15 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `SECU` | Recusado por código de segurança inválido | - |
 | `EXPI` | Recusado por problema com a data de vencimento | - |
 | `FORM` | Recusado por erro no formulário | - |
+| `CARD` | Rejeitado por falta de card_number | - |
+| `INST` | Rejeitado por parcelas inválidas | - |
+| `DUPL` | Rejeitado por pagamento duplicado | - |
+| `LOCK` | Rejeitado por cartão desabilitado | - |
+| `CTNA` | Rejeitado por tipo de cartão não permitido | - |
+| `ATTE` | Rejeitado devido a tentativas excedidas de pin do cartão | - |
+| `BLAC` | Rejeitado por estar na lista negra | - |
+| `UNSU` | Não suportado | - |
+| `TEST` | Usado para aplicar regra de valores | - |
 
 ------------
 ----[mpe]----
@@ -195,5 +249,14 @@ Para **testar diferentes resultados de pagamento**, preencha o status desejado n
 | `SECU` | Recusado por código de segurança inválido | - |
 | `EXPI` | Recusado por problema com a data de vencimento | - |
 | `FORM` | Recusado por erro no formulário | - |
+| `CARD` | Rejeitado por falta de card_number | - |
+| `INST` | Rejeitado por parcelas inválidas | - |
+| `DUPL` | Rejeitado por pagamento duplicado | - |
+| `LOCK` | Rejeitado por cartão desabilitado | - |
+| `CTNA` | Rejeitado por tipo de cartão não permitido | - |
+| `ATTE` | Rejeitado devido a tentativas excedidas de pin do cartão | - |
+| `BLAC` | Rejeitado por estar na lista negra | - |
+| `UNSU` | Não suportado | - |
+| `TEST` | Usado para aplicar regra de valores | - |
 
 ------------
