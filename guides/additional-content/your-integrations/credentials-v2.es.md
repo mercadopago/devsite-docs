@@ -36,11 +36,9 @@ La **Public Key** y el **Access Token** son credenciales que serán utilizadas, 
 - Suscripciones
 ----[mla, mlb, mlm]----
 - Mercado Pago Point
-
 ------------
 ----[mla, mlb, mlc, mlu]----
 - Código QR
-
 ------------
 
 Estas credenciales también se utilizan en las integraciones del plugin de Mercado Pago con plataformas de e-commerce como, por ejemplo, Shopify, WooCommerce y ----[mla, mlu, mlc, mlm, mco, mpe]----Tiendanube----------------[mlb]----Nuvemshop------------.
@@ -81,11 +79,9 @@ Podrás obtener tus credenciales de prueba, **siempre y cuando estén disponible
 
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-test-panel-es.gif)
 
-### Credenciales de prueba no disponibles
+Si al crear una aplicación seleccionaste un producto de Mercado Pago **que no requiere credenciales de prueba**, verás la siguiente pantalla:
 
-Si al crear una aplicación seleccionaste un producto de Mercado Pago que no requiere credenciales de prueba, verás la siguiente pantalla:
-
-![Pantalla de cuentas de test bloqueada](/images/credentials/blocked-test-credentials-es-v2.png)
+![Credenciales de prueba no disponibles](/images/credentials/blocked-test-credentials-es-v2.png)
 
 Si estás integrando un producto que no utiliza credenciales de prueba, no podrás utilizarlas. En su lugar, deberás utilizar [cuentas de prueba](/developers/es/docs/your-integrations/test/accounts). 
 
@@ -105,7 +101,7 @@ Cuando recibas ayuda en la integración o configuración de tus canales de pago,
 >
 > Importante
 >
-> Puedes compartir las credenciales hasta un máximo de 10 veces con otras cuentas de Mercado Pago. Si alcanzas este límite, deberás eliminar permisos antiguos, sin impacto en las integraciones ya configuradas.<br><br>Si por cuestiones de seguridad no deseas seguir compartiendo tus credenciales, puedes cancelar el acceso.
+> Puedes compartir las credenciales **hasta un máximo de 10 veces** con otras cuentas de Mercado Pago. Si alcanzas este límite, deberás eliminar permisos antiguos, sin impacto en las integraciones ya configuradas.<br><br>Además, si por cuestiones de seguridad no deseas seguir compartiendo tus credenciales, puedes cancelar el acceso.
 
 ## Renovar credenciales
 

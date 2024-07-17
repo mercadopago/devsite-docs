@@ -20,27 +20,25 @@ You can obtain your production credentials in two ways:
 
 ----[mlb]----
 ![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-prod-panel-pt.gif)
-
 ------------
+
 ----[mla, mlu, mlc, mlm, mco, mpe]----
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es.gif)
-
 ------------
 
 2. Through your Mercado Pago account, by accessing [**Your business > Settings > Management and administration > Credentials**](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
 ----[mlb]----
 ![Como acessar as credenciais através do Mercado Pago](/images/credentials/credentials-prod-mp-pt.gif)
-
 ------------
+
 ----[mla, mlu, mlc, mlm, mco, mpe]----
 ![Cómo acceder a las credenciales a través de Mercado Pago](/images/credentials/credentials-prod-mp-es.gif)
-
 ------------
 
 When accessing your production credentials, the following credential pairs will be displayed: **Public Key and Access Token**, along with **Client ID and Client Secret**.
 
-#### Public Key and Access Token
+### Public Key and Access Token
 
 The **Public Key** and the **Access Token** are credentials that will be used, not necessarily together, in integrations made with Mercado Pago's payment solutions, including:
 
@@ -50,11 +48,9 @@ The **Public Key** and the **Access Token** are credentials that will be used, n
 - Subscriptions
 ----[mla, mlb, mlm]----
 - Mercado Pago Point
-
 ------------
 ----[mla, mlb, mlc, mlu]----
 - QR Code
-
 ------------
 
 These credentials are also used in Mercado Pago plugin integrations with e-commerce platforms such as Shopify, WooCommerce, and ----[mla, mlu, mlc, mlm, mco, mpe]----Tiendanube----------------[mlb]----Nuvemshop------------.
@@ -72,7 +68,7 @@ These credentials are also used in Mercado Pago plugin integrations with e-comme
 
 For more information on which credentials will be needed for your integration, [consult the specific documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/docs) of the solution being integrated.
 
-#### Client ID and Client Secret
+### Client ID and Client Secret
 
 The **Client ID** and **Client Secret** are credentials used in some older integrations with e-commerce platforms and primarily in integrations that use [OAuth](/developers/en/docs/security/oauth/introduction) as a protocol for obtaining private information from Mercado Pago accounts. Specifically, they are used during the **Client Credentials** flow (grant type), which allows access to a resource on one's own behalf and obtaining an Access Token without user interaction.
 
@@ -80,12 +76,6 @@ The **Client ID** and **Client Secret** are credentials used in some older integ
 | :--- | :--- |
 | Client ID | The Client ID is a unique identifier that represents your integration. |
 | Client secret | A private key used in some plugins to generate payments. It is extremely important to keep this information secure on your servers and not allow access to any system user or intruder. |
-
-> NOTE
->
-> Important
->
-> If for security reasons or any other relevant reason you need to renew your credentials, simply click on **More options** (three dots at the end of the card) **>** **Renew**. Keep in mind that your integration may be affected by the change.
 
 ### Test credentials
 
@@ -108,9 +98,7 @@ You can obtain your test credentials, **as long as they are available for your i
 
 ------------
 
-#### Test credentials not available
-
-When creating an application, if you selected a Mercado Pago product that does not require test credentials, you will see the following screen:
+When creating an application, if you selected a Mercado Pago product **that does not require test credentials**, you will see the following screen:
 
 ----[mla, mlu, mlc, mlm, mco, mpe]----
 ![Blocked test account screen](/images/credentials/blocked-test-credentials-es-v2.png)
@@ -129,14 +117,26 @@ If you are integrating a product that does not use test credentials, you will no
 
 When you receive assistance in integrating or setting up your payment channels, you can safely share your credentials with another Mercado Pago account. To do so, follow the steps below.
 
-> WARNING
->
-> Important
->
-> If for security reasons you do not wish to continue sharing your credentials, you can cancel it.
-
 1. Access your Mercado Pago account.
 2. Go to [Your business > Settings > Management and Administration > Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 3. On that page, select the option **Share my credentials**.
 4. Enter the email of the person you want to grant access to.
 5. Make sure the email is associated with the person's Mercado Pago account.
+
+> WARNING
+>
+> Important
+>
+> You can share the credentials **up to a maximum of 10 times** with other Mercado Pago accounts. If you reach this limit, you will need to delete old permissions, which will not impact integrations already configured. <br><br>Also, if for security reasons you do not wish to continue sharing your credentials, you can cancel access.
+
+## Renew credentials
+
+If for security reasons or any other relevant reason you need to renew your credentials, click on **More options** (three dots at the end of the card) > **Renew**. Please note that your integration may be affected by the change.
+
+----[mlb]----
+![Como renovar suas credenciais](/images/credentials/renew-credentials-pt.gif)
+------------
+
+----[mla, mlu, mlc, mlm, mco, mpe]----
+![Cómo renovar tus credenciales](/images/credentials/renew-credentials-es.gif)
+------------

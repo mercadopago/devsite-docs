@@ -26,7 +26,7 @@ Você poderá obter as suas credenciais de produção de duas maneiras:
 
 Ao acessar suas credenciais de produção, serão exibidos os seguintes pares de credenciais: **Public Key e Access Token**, além de **Client ID e Client Secret**.
 
-#### Public Key e Access Token
+### Public Key e Access Token
 
 A **Public Key** e o **Access Token** são credenciais utilizadas, não necessariamente em conjunto, nas integrações com as soluções de pagamento do Mercado Pago, incluindo:
 
@@ -36,11 +36,9 @@ A **Public Key** e o **Access Token** são credenciais utilizadas, não necessar
 - Assinaturas
 ----[mla, mlb, mlm]----
 - Mercado Pago Point
-
 ------------
 ----[mla, mlb, mlc, mlu]----
 - Código QR
-
 ------------
 
 Essas credenciais também são utilizadas nas integrações do plugin do Mercado Pago com plataformas de e-commerce como, por exemplo, Shopify, WooCommerce e ----[mla, mlu, mlc, mlm, mco, mpe]----Tiendanube----------------[mlb]----Nuvemshop------------.
@@ -58,7 +56,7 @@ Essas credenciais também são utilizadas nas integrações do plugin do Mercado
 
 Para obter mais informações sobre quais credenciais serão necessárias para a sua integração, [consulte a documentação específica](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/docs) da solução que está sendo integrada.
 
-#### Client ID e Client Secret
+### Client ID e Client Secret
 
 O **Client ID** e o **Client Secret** são credenciais utilizadas em algumas integrações mais antigas com plataformas de comércio eletrônico e, principalmente, nas integrações que utilizam [OAuth](/developers/pt/docs/security/oauth/introduction) como protocolo para obtenção de informações privadas de contas do Mercado Pago. Especificamente, são utilizados durante o fluxo (_grant type_) de **Client Credentials**, o qual permite acessar um recurso em nome próprio e obter um Access Token sem interação do usuário.
 
@@ -66,12 +64,6 @@ O **Client ID** e o **Client Secret** são credenciais utilizadas em algumas int
 | :--- | :--- |
 | Client ID | O Client ID é um identificador único que representa sua integração. |
 | Client secret | Chave privada usada em alguns plugins para gerar pagamentos. É extremamente importante manter essa informação segura em seus servidores e não permitir acesso a nenhum usuário do sistema ou invasor. |
-
-> NOTE
->
-> Importante
->
-> Se por motivos de segurança ou qualquer outra razão relevante precisar renovar suas credenciais, basta clicar em **Mais opções** (três pontos no final do cartão) > **Renovar**. Tenha em mente que sua integração pode ser afetada pela alteração.
 
 ### Credenciais de teste
 
@@ -87,11 +79,9 @@ Para obter suas credenciais de teste, **desde que estas estejam disponíveis par
 
 ![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.gif)
 
-#### Credenciais de teste não disponíveis
+Se, ao criar uma aplicação, você selecionou um produto do Mercado Pago **que não requer credenciais de teste**, você verá a seguinte tela:
 
-Se, ao criar uma aplicação, você selecionou um produto do Mercado Pago que não requer credenciais de teste, você verá a seguinte tela:
-
-![Pantalla de cuentas de test bloqueada](/images/credentials/blocked-test-credentials-es-v3.png)
+![Credenciais de teste não disponívels](/images/credentials/blocked-test-credentials-es-v3.png)
 
 Se você estiver integrando um produto que não utiliza credenciais de teste, você não poderá usá-las. Em vez disso, deverá utilizar [contas de teste](/developers/pt/docs/your-integrations/test/accounts). 
 
@@ -101,14 +91,20 @@ Se você estiver integrando um produto que não utiliza credenciais de teste, vo
 
 Quando receber assistência na integração ou configuração dos seus canais de pagamento, é possível compartilhar suas credenciais com segurança com outra conta do Mercado Pago. Para isso, siga as etapas abaixo.
 
-> WARNING
->
-> Importante
->
-> Caso não deseje mais compartilhar as suas credenciais por questões de segurança, você poderá interromper o compartilhamento.
-
 1. Acesse a sua conta Mercado Pago.
 2. Navegue até [Seu negócio > Configurações > Gestão e Administração > Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 3. Dentro dessa página, selecione a opção **Compartilhar minhas credenciais**.
 4. Insira o e-mail da pessoa para a qual deseja conceder acesso.
 5. Certifique-se de que o e-mail esteja associado à conta do Mercado Pago da pessoa em questão.
+
+> WARNING
+>
+> Importante
+>
+> Você pode compartilhar as credenciais com outras contas do Mercado Pago até, no máximo, 10 vezes. Se atingir esse limite, será necessário excluir as permissões antigas e interromper o compartilhamento dessas credenciais, mas sem que isso impacte nas integrações já configuradas.<br><br>Além disso, se por razões de segurança você não desejar mais compartilhar as credenciais, você também poderá interromper este compartilhamento.
+
+## Renovar credenciais
+
+Se por motivos de segurança ou qualquer outra razão relevante você precisa renovar suas credenciais, clique em **Mais opções** (três pontos no final do cartão) > **Renovar**. Lembre-se de que sua integração pode ser afetada por essa alteração.
+
+![Como renovar suas credenciais](/images/credentials/renew-credentials-pt.gif)
