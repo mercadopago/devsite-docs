@@ -81,7 +81,7 @@ Podrás obtener tus credenciales de prueba, **siempre y cuando estén disponible
 
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-test-panel-es.gif)
 
-#### Credenciales de prueba no disponibles
+### Credenciales de prueba no disponibles
 
 Si al crear una aplicación seleccionaste un producto de Mercado Pago que no requiere credenciales de prueba, verás la siguiente pantalla:
 
@@ -105,8 +105,7 @@ Cuando recibas ayuda en la integración o configuración de tus canales de pago,
 >
 > Importante
 >
-> * Puedes compartir las credenciales de cada aplicación con hasta 10 cuentas de Mercado Pago diferentes. Si alcanzas la cantidad máxima de veces compartido, deberás eliminar algun permiso más antiguo.<br><br>* Si por cuestiones de seguridad no deseas seguir compartiendo tus credenciales, puedes cancelarlo.
-
+> Puedes compartir las credenciales hasta un máximo de 10 veces con otras cuentas de Mercado Pago. Si alcanzas este límite, deberás eliminar permisos antiguos, sin impacto en las integraciones ya configuradas.<br><br>Si por cuestiones de seguridad no deseas seguir compartiendo tus credenciales, puedes cancelar el acceso.
 
 ## Renovar credenciales
 
