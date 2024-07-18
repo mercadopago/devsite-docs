@@ -59,6 +59,9 @@ Para instalar el checkout **Mercado Pago Cartões** en una tienda Shopify, sigue
 
 ![installation cards 6](/images/shopify/installation-cards-6-es.png)
 
+13. Después de completar la instalación, regresa al panel administrativo de la tienda y haz clic en **Configuraciones > Pagos**.
+14. En "Forma de captura de pago", asegúrate de que el campo **automáticamente en el checkout** esté habilitado para garantizar que los pagos se capturen cuando se realice el pedido.
+
 ¡Listo! El checkout **Mercado Pago Cartões** está listo para recibir pagos.
 
 > WARNING
@@ -106,6 +109,9 @@ Para instalar el checkout **Mercado Pago Cartões** en una tienda Shopify, sigue
 8. Por último, haz clic en la opción **Revisar activación** de Mercado Pago Cartões, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
 
 ![installation cards 6](/images/shopify/installation-cards-6-es.png)
+
+9. Después de completar la instalación, regresa al panel administrativo de la tienda y haz clic en **Configuraciones > Pagos**.
+10. En "Forma de captura de pago", asegúrate de que el campo **automáticamente en el checkout** esté habilitado para garantizar que los pagos se capturen cuando se realice el pedido.
 
 ¡Listo! El checkout **Mercado Pago Cartões** está listo para recibir pagos.
 

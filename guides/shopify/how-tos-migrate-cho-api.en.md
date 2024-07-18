@@ -40,6 +40,8 @@ To install the **Mercado Pago Cartões** checkout on a Shopify store, we offer t
 
 11. Click on **Save credentials**.
 12. Finally, click on the **Verify activation** option of Mercado Pago Cartões, go to the **Settings** section of Shopify, and click **Activate** to activate the app and complete the installation.
+13. After completing the installation, return to the store's admin panel and click on **Settings > Payments**.
+14. In "Payment capture method", ensure that the **automatically at checkout** field is enabled to guarantee that payments are captured when the order is placed.
 
 Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
@@ -73,6 +75,8 @@ Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
 7. Click on **Save credentials**.
 8. Finally, click on the **Verify activation** option of Mercado Pago Cartões, go to the "Settings" section of Shopify, and click **Activate** to activate the app and complete the installation.
+9. After completing the installation, return to the store's admin panel and click on **Settings > Payments**.
+10. In "Payment capture method", ensure that the **automatically at checkout** field is enabled to guarantee that payments are captured when the order is placed.
 
 Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 

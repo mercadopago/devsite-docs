@@ -64,6 +64,9 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, ofrec
 
 ![installation cards 6](/images/shopify/installation-cards-6-es.png)
 
+13. Después de completar la instalación, regresa al panel administrativo de la tienda y haz clic en **Configuraciones > Pagos**.
+14. En "Forma de captura de pago", asegúrate de que el campo **automáticamente en el checkout** esté habilitado para garantizar que los pagos se capturen cuando se realice el pedido.
+
 ¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
 
 > WARNING
@@ -115,6 +118,9 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, ofrec
 8. Por último, haz clic en la opción **Revisar activación** de Mercado Pago Tarjetas, ve a la sección de *Configuraciones* de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
 
 ![installation cards 6](/images/shopify/installation-cards-6-es.png)
+
+9. Después de completar la instalación, regresa al panel administrativo de la tienda y haz clic en **Configuraciones > Pagos**.
+10. En "Forma de captura de pago", asegúrate de que el campo **automáticamente en el checkout** esté habilitado para garantizar que los pagos se capturen cuando se realice el pedido.
 
 ¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
 
