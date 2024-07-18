@@ -12,7 +12,7 @@ The minimum required fields to send are: `token`, `transaction_amount`, `install
 >
 > Important
 >
-> For more information on how to send recurring payment information to the [v1/payments](/developers/en/reference/payments/_payments/post) endpoint with the aim of increasing the approval rate for these types of payments, visit the [Subscription messaging](/developers/en/docs/automatic-payments/recurring-charges/subscription-messaging) documentation.
+> For more information on how to send recurring payment information to the [v1/payments](/developers/en/reference/payments/_payments/post) endpoint with the aim of increasing the approval rate for these types of payments, visit the [Automatic payments messaging](/developers/en/docs/automatic-payments/recurring-charges/subscription-messaging) documentation.
 
 Two flows should be considered for saving the customer's card data:
 
