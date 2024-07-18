@@ -66,6 +66,8 @@ Para instalar el checkout **Mercado Pago Cartões** en una tienda Shopify, sigue
 > Importante
 >
 > Después de finalizar la instalación de Mercado Pago Cartões, te recomendamos complementar instalando la aplicación **Mercado Pago Antifraude Plus**, que permitirá reforzar la seguridad de tu tienda y aumentar la tasa de aprobación de pagos. Para más información, accede a la documentación de [Cómo prevenir fraudes en los pagos con tarjeta](/developers/es/docs/shopify/how-tos/antifraude-plus).
+> <br><br>
+> Con Mercado Pago Cartões, los campos de "Número da Casa" y "Bairro" no se mostrarán automáticamente en el formulario de datos de entrega del pedido. Para que estos campos se muestren, simplemente contacta al equipo de soporte de la plataforma Shopify y haz la solicitud.
 
 ### Instalar vía Marketplace
 
@@ -112,6 +114,8 @@ Para instalar el checkout **Mercado Pago Cartões** en una tienda Shopify, sigue
 > Importante
 >
 > Después de finalizar la instalación de Mercado Pago Cartões, te recomendamos complementar instalando la aplicación **Mercado Pago Antifraude Plus**, que permitirá reforzar la seguridad de tu tienda y aumentar la tasa de aprobación de pagos. Para más información, accede a la documentación de [Cómo prevenir fraudes en los pagos con tarjeta](/developers/es/docs/shopify/how-tos/antifraude-plus).
+> <br><br>
+> Con Mercado Pago Cartões, los campos de "Número da Casa" y "Bairro" no se mostrarán automáticamente en el formulario de datos de entrega del pedido. Para que estos campos se muestren, simplemente contacta al equipo de soporte de la plataforma Shopify y haz la solicitud.
 
 ## Configura meses sin intereses
 
