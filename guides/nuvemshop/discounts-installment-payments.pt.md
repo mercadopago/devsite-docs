@@ -93,3 +93,9 @@ Na sua conta do Mercado Pago, você pode consultar e configurar o número de mes
 5. Defina os valores mínimos para oferecer parcelamento sem acréscimos e clique em **Salvar**.
 
 ![Conta](/images/nuvemshop/contaptac.gif)
+----[mla]----
+Se a quantidade de parcelas configurados não se refletir na sua loja, você pode forçar a sincronização clicando em **Sincronizar** no site do Mercado Pago.
+
+![Sync](/images/nuvemshop/nuvemshop-sincronizar_cuotas.png)
+
+------------

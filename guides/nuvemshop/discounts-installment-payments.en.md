@@ -92,3 +92,9 @@ Within your Mercado Pago account, you can check and configure the number of inte
 5. Set the minimum values to offer interest-free installments and click **Save**.
 
 ![Account](/images/nuvemshop/conta-es.gif)
+----[mla]----
+If the number of configured installments does not reflect in your store, you can force synchronization by clicking **Sync** on the Mercado Pago site.
+
+![Sync](/images/nuvemshop/nuvemshop-sincronizar_cuotas.png)
+
+------------
