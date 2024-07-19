@@ -20,6 +20,6 @@ Para testar a integração com Mercado Pago Point, é importante atender aos req
 
 Se todos os requisitos foram cumpridos, prossiga com o teste da sua integração, que consiste em duas etapas:
  1. [Configurar a integração de teste](/developers/pt/docs/mp-point/integration-test/test-integration-configuration)
- 2. [Testar o processamento de pagamentos](/developers/es/docs/mp-point/integration-test/test-payment-processing)
+ 2. [Testar o processamento de pagamentos](/developers/pt/docs/mp-point/integration-test/test-payment-processing)
 
 Além disso, uma vez concluído o teste, será necessário seguir os [requisitos para entrar em produção](/developers/pt/docs/mp-point/integration-test/go-to-production).

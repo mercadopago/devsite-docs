@@ -10,11 +10,11 @@ Para poder probar tu integración con Mercado Pago Point y el procesamiento de p
 
 ## Crear una sucursal y una caja
 
-1. Crea una sucursal realizando un llamado al endpoint [Crear sucursal](/developers/es/reference/stores/_users_user_id_stores/post). Deberás enviar tu **Access Token productivo**, y reemplazar el valor `user_id` por la **identificación de usuario** que te fue asignada al crear tu aplicación. Si tienes dudas sobre cómo identificar este valor, accede a la documentación sobre [Detalles de aplicación](/developers/es/docs/mp-point/additional-content/your-integrations/application-details).  
+1. Crea una sucursal realizando un llamado al endpoint [Crear sucursal](/developers/es/reference/stores/_users_user_id_stores/post). Deberás enviar tu **Access Token productivo**, y reemplazar el valor `user_id` por la **identificación de usuario** que te fue asignada al crear tu aplicación. Si tienes dudas sobre cómo identificar este valor, accede a la documentación sobre [Detalles de aplicación](/developers/es/docs/mp-point/additional-content/your-integrations/application-details).<br>  
 
-2. Crea una caja realizando un llamado al endpoint [Crear caja](/developers/es/reference/pos/_pos/post), y asóciala a la sucursal creada en el paso anterior. Esto se logra reemplazando los parámetros `external_store_id` por el `external_id` que le asignaste a la sucursal, y `store_id` por el valor obtenido para el campo `id` en la respuesta a la creación de la sucursal.
+2. Crea una caja realizando un llamado al endpoint [Crear caja](/developers/es/reference/pos/_pos/post), y asóciala a la sucursal creada en el paso anterior. Esto se logra reemplazando los parámetros `external_store_id` por el `external_id` que le asignaste a la sucursal, y `store_id` por el valor obtenido para el campo `id` en la respuesta a la creación de la sucursal.<br>
 
-3. Por último, asocia el dispositivo Point a tu cuenta de Mercado Pago. Para eso, descarga e instala la app de Mercado Pago en tu dispositivo móvil, inicia sesión con tu cuenta, y oprime el ícono QR para escanear el código que aparece al encender el dispositivo Point.
+3. Por último, asocia el dispositivo Point a tu cuenta de Mercado Pago. Para eso, descarga e instala la app de Mercado Pago en tu dispositivo móvil, inicia sesión con tu cuenta, y oprime el ícono QR para escanear el código que aparece al encender el dispositivo Point.<br>
 
 
 ## Activar el modo PDV
@@ -41,10 +41,10 @@ Para configurar tus notificaciones con Mercado Pago Point, sigue las instruccion
 1. Ingresa a [Tus Integraciones](/developers/panel/app) y selecciona la aplicación con la que estás probando tu integración.
 2. En el menú de la izquierda, haz clic en **Webhooks**.
 3. En la pantalla desplegada, haz clic en **Configurar notificaciones**, y configura la URL que serán utilizadas para recibir las notificaciones de prueba. Recomendamos utilizar dos URLs diferentes para el modo de pruebas y el modo producción:
- * **URL modo pruebas**: proporciona una URL que permita probar el correcto funcionamiento de las notificaciones de la aplicación durante la etapa de desarrollo. 
- * **URL modo producción**: proporciona una URL para recibir notificaciones con tu integración productiva. Estas notificaciones deberán ser configuradas con las credenciales productivas de tu usuario de Mercado Pago.
+    * **URL modo pruebas**: proporciona una URL que permita probar el correcto funcionamiento de las notificaciones de la aplicación durante la etapa de desarrollo. 
+    * **URL modo producción**: proporciona una URL para recibir notificaciones con tu integración productiva. Estas notificaciones deberán ser configuradas con las credenciales productivas de tu usuario de Mercado Pago.
 
 4. Selecciona **Integraciones Point** como el tópico sobre el cual deseas recibir notificaciones. Esto te mantendrá actualizado sobre las intenciones de pago y sus cambios de estado.
-5. Por último, haz clic en **Guardar**. Esto generará una **clave secreta** exclusiva para la aplicación, que permitirá validar la autenticidad de las notificaciones recibidas, garantizando que hayan sido enviadas por Mercado Pago. Si quieres obtener más información sobre cómo validar el origen de una notificación, accede a la [documentación](/developers/es/docs/split-payments/additional-content/your-integrations/notifications/webhooks#configuracinatravsdelpaneldeldesarrollador).
+5. Por último, haz clic en **Guardar**. Esto generará una **clave secreta** exclusiva para la aplicación, que permitirá validar la autenticidad de las notificaciones recibidas, garantizando que hayan sido enviadas por Mercado Pago. Si quieres obtener más información sobre cómo validar el origen de una notificación, accede a la [documentación](/developers/es/docs/mp-point/additional-content/your-integrations/notifications/webhooks#configuracinatravsdelpaneldeldesarrollador).
 
 Una vez que hayas realizado todas las configuraciones, puedes comenzar a probar el procesamiento de pagos.

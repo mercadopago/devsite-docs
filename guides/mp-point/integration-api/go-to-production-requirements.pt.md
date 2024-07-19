@@ -6,7 +6,7 @@ Ao finalizar o processo de integração e testes, o ambiente estará pronto para
 
 Embora todo o processo de teste de integração com o Mercado Pago Point seja realizado utilizando credenciais de produção de usuários produtivos, é importante **verificar se as credenciais que estão sendo utilizadas para entrar em produção pertencem à conta integradora**.
 
-Para isso, acesse [Suas Integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials), selecione a aplicação e, no menu lateral, acesse **Produção > Credenciais de produção**, onde será possível encontrar a Public Key e o Access Token de produção. Compare esses dados com aqueles utilizados durante a fase de desenvolvimento e testes. Se detectar alguma diferença, substitua as credenciais pelas que estão no Painel.
+Para isso, acesse [Suas Integrações](/developers/panel/app), selecione a aplicação e, no menu lateral, acesse **Produção > Credenciais de produção**, onde será possível encontrar a Public Key e o Access Token de produção. Compare esses dados com aqueles utilizados durante a fase de desenvolvimento e testes. Se detectar alguma diferença, substitua as credenciais pelas que estão no Painel.
 
 
 ## Verificar a configuração de notificações Webhooks
@@ -30,6 +30,6 @@ Caso a ferramenta identifique necessidades de ajustes, serão recomendadas açõ
 
 ## Relatórios
 
-Os [relatórios do Mercado Pago](/developers/pt/guides/additional-content/reports/introduction) pfornecem informações financeiras para acompanhar as movimentações da sua conta, como saldo disponível, transações e liquidez. Isso facilita a conciliação das vendas e outras operações com seus sistemas de gestão internos.
+Os [relatórios do Mercado Pago](/developers/pt/docs/mp-point/additional-content/reports/introduction) pfornecem informações financeiras para acompanhar as movimentações da sua conta, como saldo disponível, transações e liquidez. Isso facilita a conciliação das vendas e outras operações com seus sistemas de gestão internos.
 
 Recomendamos que você utilize os relatórios para melhorar a gestão financeira da sua empresa assim que sair à produção.

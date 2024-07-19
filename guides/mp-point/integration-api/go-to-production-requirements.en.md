@@ -1,4 +1,4 @@
-# Requirements for going to production
+# Requirements to go to production
 
 Once the integration and testing process is complete, the environment will be ready to go to production. In this documentation, we will detail the necessary requirements to make this transition effectively and securely, ensuring that your integration is ready to receive real payments.
 
@@ -6,7 +6,7 @@ Once the integration and testing process is complete, the environment will be re
 
 Although the entire integration testing process with Mercado Pago Point is carried out using production credentials of real users, it is important to **confirm that the credentials being used to go live belong to the integrating account**.
 
-To do this, go to [Your Integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials), access your application, and in the side menu, go to **Production > Production Credentials**, where you will find your production Public Key and Access Token. You can compare this information with what you have used during the development and testing stage. If you detect any differences, replace the credentials with those present in the Panel.
+To do this, go to [Your Integrations](/developers/panel/app), access your application, and in the side menu, go to **Production > Production Credentials**, where you will find your production Public Key and Access Token. You can compare this information with what you have used during the development and testing stage. If you detect any differences, replace the credentials with those present in the Panel.
 
 ## Verify the Configuration of Webhooks Notifications
 
@@ -29,6 +29,6 @@ If adjustments are needed, necessary actions and best practices will be suggeste
 
 ## Reports
 
-The [Mercado Pago reports](/developers/en/guides/additional-content/reports/introduction) provide information to track the transactions of the accounts, such as available balance, movements, and liquidity. This facilitates the reconciliation of sales and other operations with your internal management systems.
+The [Mercado Pago reports](/developers/en/docs/mp-point/additional-content/reports/introduction) provide information to track the transactions of the accounts, such as available balance, movements, and liquidity. This facilitates the reconciliation of sales and other operations with your internal management systems.
 
 We recommend using the reports to improve financial management once you go live.

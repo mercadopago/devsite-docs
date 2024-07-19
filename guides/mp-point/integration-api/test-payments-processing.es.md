@@ -12,7 +12,7 @@ Para poder probar el correcto procesamiento de pagos con Mercado Pago Point, deb
 
 Para probar la correcta creación y procesamiento de una intención de pago, sigue los pasos a continuación.
 
-1. Realiza un llamado a la API [Crear una intención de pago](/developers/es/reference/integrations_api_paymentintent_mlb/_point_integration-api_devices_deviceid_payment-intents/post) utilizando tus credenciales de producción. Deberás asignarla al dispositivo Point previamente configurado reemplazando el valor `deviceId` en el *path* del llamado por el valor correspondiente a su identificador. Utiliza, además, un valor que te permita identificar esta intención de prueba en tu sistema mediante el campo `external_reference`, y recuerda disponer de un monto mínimo para el campo `amount`.
+1. Realiza un llamado a la API  ----[mlb]----[Crear una intención de pago](/developers/es/reference/integrations_api_paymentintent_mlb/_point_integration-api_devices_deviceid_payment-intents/post)------------ ----[mla, mlm]---- [Crear una intención de pago](/developers/en/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents/post)------------ utilizando tus credenciales de producción. Deberás asignarla al dispositivo Point previamente configurado reemplazando el valor `deviceId` en el *path* del llamado por el valor correspondiente a su identificador. Utiliza, además, un valor que te permita identificar esta intención de prueba en tu sistema mediante el campo `external_reference`, y recuerda disponer de un monto mínimo para el campo `amount`.
 
 > NOTE
 >
@@ -49,7 +49,7 @@ La pantalla de “Detalles de la operación” ahora deberá mostrarte el monto 
 
 Para validar que el flujo de rechazo de pagos funciona correctamente, sigue los pasos a continuación.
 
-1. Realiza un llamado a la API [Crear una intención de pago](/developers/es/reference/integrations_api_paymentintent_mlb/_point_integration-api_devices_deviceid_payment-intents/post) utilizando tus credenciales de producción. Deberás asignarla al dispositivo Point previamente configurado reemplazando el valor `deviceId` en el *path* del llamado por el valor correspondiente a su identificador. Utiliza, además, un valor que te permita identificar esta intención de prueba en tu sistema mediante el campo `external_reference`, y recuerda disponer de un monto mínimo para el campo `amount`.
+1. Realiza un llamado a la API ----[mlb]----[Crear una intención de pago](/developers/es/reference/integrations_api_paymentintent_mlb/_point_integration-api_devices_deviceid_payment-intents/post)------------ ----[mla, mlm]---- [Crear una intención de pago](/developers/en/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents/post)------------ utilizando tus credenciales de producción. Deberás asignarla al dispositivo Point previamente configurado reemplazando el valor `deviceId` en el *path* del llamado por el valor correspondiente a su identificador. Utiliza, además, un valor que te permita identificar esta intención de prueba en tu sistema mediante el campo `external_reference`, y recuerda disponer de un monto mínimo para el campo `amount`.
 
 2. Obtén la intención de pago en el dispositivo Point y presiona el botón **Más opciones** en el sector inferior derecho de la pantalla.
 

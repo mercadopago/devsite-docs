@@ -12,9 +12,11 @@ To test the correct payment processing with Mercado Pago Point, you will need to
 
 To test the correct creation and processing of a payment intent, follow the steps below.
 
-1. Send a request to the API [Create a payment intent](/developers/en/reference/integrations_api_paymentintent_mlb/_point_integration-api_devices_deviceid_payment-intents/post) using your production credentials. You must assign it to the previously configured Point device by replacing the `deviceId` value in the call path with the corresponding identifier. Also, use a value that allows you to identify this test intent in your system through the `external_reference` field, and make sure to have a minimum amount for the `amount` field.
+1. Send a request to the API ----[mlb]----[Create a payment intent](/developers/en/reference/integrations_api_paymentintent_mlb/_point_integration-api_devices_deviceid_payment-intents/post)------------ ----[mla, mlm]----[Create a payment intent](/developers/en/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents/post)------------ using your production credentials. You must assign it to the previously configured Point device by replacing the `deviceId` value in the call path with the corresponding identifier. Also, use a value that allows you to identify this test intent in your system through the `external_reference` field, and make sure to have a minimum amount for the `amount` field.
 
 > NOTE
+>
+> Note
 >
 > We recommend that, **before processing the payment intent**, you validate its correct creation by sending a request to [Search payment intent](/developers/en/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) using the `id` obtained in the response. While not mandatory, this will allow you to verify that your integration is working correctly and compare the intent information with that received through Webhooks notifications.
 
@@ -46,7 +48,7 @@ The "Operation Details" screen should now display the refunded amount, and by go
 
 To validate that the payment rejection flow works correctly, follow the steps below.
 
-1. Send a request to the API [Create a payment intent](/developers/en/reference/integrations_api_paymentintent_mlb/_point_integration-api_devices_deviceid_payment-intents/post) using your production credentials. You must assign it to the previously configured Point device by replacing the `deviceId` value in the call path with the corresponding identifier. Also, use a value that allows you to identify this test intent in your system through the `external_reference` field, and make sure to have a minimum amount for the `amount` field.
+1. Send a request to the API ----[mlb]----[Create a payment intent](/developers/en/reference/integrations_api_paymentintent_mlb/_point_integration-api_devices_deviceid_payment-intents/post)------------ ----[mla, mlm]----[Create a payment intent](/developers/en/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents/post)------------ using your production credentials. You must assign it to the previously configured Point device by replacing the `deviceId` value in the call path with the corresponding identifier. Also, use a value that allows you to identify this test intent in your system through the `external_reference` field, and make sure to have a minimum amount for the `amount` field.
 
 2. Access the payment intent on the Point device and press the **More options** button in the bottom right section of the screen.
 
