@@ -149,6 +149,8 @@ Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 > Important
 >
 > After completing the installation of Mercado Pago Cartões, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, which will help enhance the security of your store and increase the payment approval rate. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
+> <br><br>
+> With Mercado Pago Cartões, the "Número da Casa" and "Bairro" fields will not be automatically displayed on the order delivery data form. To have these fields displayed, simply contact the support team of the Shopify platform and make the request.
 
 ## Install via Marketplace
 
@@ -180,6 +182,8 @@ Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 > Important
 >
 > After completing the installation of Mercado Pago Cartões, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, which will help enhance the security of your store and increase the payment approval rate. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
+> <br><br>
+> With Mercado Pago Cartões, the "Número da Casa" and "Bairro" fields will not be automatically displayed on the order delivery data form. To have these fields displayed, simply contact the support team of the Shopify platform and make the request.
 
 ## Configure interest-free installments
 
