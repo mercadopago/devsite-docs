@@ -7,7 +7,7 @@ O **Mercado Pago Cartões** ([Checkout Transparente](/developers/pt/docs/checkou
 >
 > Atenção
 >
-> Este novo aplicativo é exclusivo para pagamentos com cartões. Para configurar pagamentos com Pix, consulte a [documentação correspondente](/developers/pt/docs/shopify/integration-configuration/pix). Para pagamentos com boleto bancário, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
+> Este novo aplicativo é exclusivo para pagamentos com cartões. Para configurar pagamentos com Pix, consulte a [documentação correspondente](/developers/pt/docs/shopify/integration-configuration/pix). Para pagamentos com boleto bancário, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro). 
 
 ------------
 ----[mlm]----
@@ -64,6 +64,11 @@ Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecem
 
 ![installation cards 6](/images/shopify/installation-cards-6-pt.png)
 
+13. Após concluir a instalação, retorne ao painel administrativo da loja e clique em **Configurações > Pagamentos**.
+14. Em "Forma de captura de pagamento", garanta que o campo **Automaticamente no checkout** está habilitado para garantir que os pagamentos serão capturados quando o pedido for realizado.
+
+![installation cards 7](/images/shopify/installation-cards-7-pt.png)
+
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 
 > WARNING
@@ -116,6 +121,11 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 8. Por fim, clique na opção **Verificar ativação** do Mercado Pago Cartões, vá para a seção de "Configurações" da Shopify e clique em **Ativar** para finalizar a instalação.
 
 ![installation cards 6](/images/shopify/installation-cards-6-pt.png)
+
+9. Após concluir a instalação, retorne ao painel administrativo da loja e clique em **Configurações > Pagamentos**.
+10. Em "Forma de captura de pagamento", garanta que o campo **Automaticamente no checkout** está habilitado para garantir que os pagamentos serão capturados quando o pedido for realizado.
+
+![installation cards 7](/images/shopify/installation-cards-7-pt.png)
 
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 

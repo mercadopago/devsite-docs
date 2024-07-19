@@ -12,7 +12,7 @@ Os campos mínimos requeridos para enviar são: `token`, `transaction_amount`, `
 >
 > Importante
 >
-> Para mais informações sobre como enviar as informações dos pagamentos recorrentes ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post) com o intuito de aumentar a taxa de aprovação para pagamentos deste tipo, acesse a documentação [Mensageria de subscrição](/developers/pt/docs/automatic-payments/recurring-charges/subscription-messaging).
+> Para mais informações sobre como enviar as informações dos pagamentos recorrentes ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post) com o intuito de aumentar a taxa de aprovação para pagamentos deste tipo, acesse a documentação [Mensageria de pagamentos automáticos](/developers/pt/docs/automatic-payments/recurring-charges/subscription-messaging).
 
 Deve-se levar em consideração dois fluxos para salvar os dados do cartão do cliente:
 

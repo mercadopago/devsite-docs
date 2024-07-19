@@ -100,4 +100,3 @@ En esta sección encontrarás las posibles respuestas relacionadas con la prueba
       ]
 }
 ```
-
