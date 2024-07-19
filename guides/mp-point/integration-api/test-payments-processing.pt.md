@@ -12,7 +12,7 @@ Para testar o processamento correto de pagamentos com o Mercado Pago Point, voc�
 
 Para testar a correta criação e processamento de uma intenção de pagamento, siga os passos abaixo.
 
-1. Faça uma requisiçao para o endpoint [Criar uma intenção de pagamento](/developers/pt/reference/integrations_api_paymentintent_mlb/_point_integration-api_devices_deviceid_payment-intents/post) utilizando suas credenciais de produção. Você deve associá-la ao dispositivo Point previamente configurado, substituindo o valor `deviceId` no *path* da chamada pelo valor correspondente ao seu identificador. Além disso, utilize um valor que permita identificar essa intenção de teste em seu sistema por meio do campo `external_reference`, e lembre-se de ter um valor mínimo no campo `amount`.
+1. Faça uma requisiçao para o endpoint ----[mlb]----[Criar uma intenção de pagamento](/developers/pt/reference/integrations_api_paymentintent_mlb/_point_integration-api_devices_deviceid_payment-intents/post)------------ ----[mla, mlm]----[Criar uma intenção de pagamento](/developers/en/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents/post)------------ utilizando suas credenciais de produção. Você deve associá-la ao dispositivo Point previamente configurado, substituindo o valor `deviceId` no *path* da chamada pelo valor correspondente ao seu identificador. Além disso, utilize um valor que permita identificar essa intenção de teste em seu sistema por meio do campo `external_reference`, e lembre-se de ter um valor mínimo no campo `amount`.
 
 > NOTE
 >
