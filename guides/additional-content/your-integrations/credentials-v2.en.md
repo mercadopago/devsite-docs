@@ -115,13 +115,37 @@ If you are integrating a product that does not use test credentials, you will no
 
 ## Share credentials
 
-When you receive assistance in integrating or setting up your payment channels, you can safely share your credentials with another Mercado Pago account. To do so, follow the steps below.
+When you receive assistance in integrating or setting up your payment channels, you can safely share your credentials with another Mercado Pago account. To do so, you can do it in two ways:
+
+**Through Your Integrations on Mercado Pago Developers:**
+1. Go to [Your integrations](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) and access an application.
+2. Go to the Test or Production section, depending on the type of credential you want to share.
+3. Once you select the credentials, go to the *Share credentials with a developer* section and click on the **Share Credentials** button.
+4. Enter the email of the person you want to grant access to. Remember that the email must be associated with a Mercado Pago account.
+
+----[mlb]----
+![Share credentials in Your Integrations](/images/credentials/share-credentials-panel-pt.gif)
+------------
+----[mla, mlu, mlc, mlm, mco, mpe]----
+![Share credentials in Your Integrations](/images/credentials/share-credentials-panel-es.gif)
+------------
+
+**Through Mercado Pago:**
 
 1. Access your Mercado Pago account.
 2. Go to [Your business > Settings > Management and Administration > Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
-3. On that page, select the option **Share my credentials**.
-4. Enter the email of the person you want to grant access to.
-5. Make sure the email is associated with the person's Mercado Pago account.
+3. On that page, select the production credentials or test credentials, depending on what you want to share.
+4. Once you select the credentials, go to the *Share credentials with a developer* section and click on the **Share Credentials** button.
+5. Select the application from which you want to share your credentials and enter the email of the person you want to grant access to. Remember that the email must be associated with a Mercado Pago account.
+
+----[mlb]----
+![Share credentials in Mercado Pago](/images/credentials/share-credentials-mp-pt.gif)
+
+------------
+----[mla, mlu, mlc, mlm, mco, mpe]----
+![Share credentials in Mercado Pago](/images/credentials/share-credentials-mp-es.gif)
+------------
+
 
 > WARNING
 >
