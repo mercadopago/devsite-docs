@@ -71,11 +71,24 @@ Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecem
 
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 
+----[mlb]----
 > WARNING
 >
 > Importante
 >
 > Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que permitirá **reforçar a segurança da sua loja e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
+> <br><br>
+> Com o Mercado Pago Cartões, os campos de "Número da Casa" e "Bairro" não serão exibidos automaticamente no formulário dos dados de entrega do pedido. Para que esses campos sejam exibidos, basta entrar em contato com a equipe de suporte da plataforma Shopify e fazer a solicitação.
+
+------------
+----[mlm]----
+> WARNING
+>
+> Importante
+>
+> Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que permitirá **reforçar a segurança da sua loja e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
+
+------------
 
 ## Instalar via Marketplace
 
@@ -129,11 +142,24 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 
+----[mlb]----
 > WARNING
 >
 > Importante
 >
 > Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que permitirá **reforçar a segurança da sua loja e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
+> <br><br>
+> Com o Mercado Pago Cartões, os campos de "Número da Casa" e "Bairro" não serão exibidos automaticamente no formulário dos dados de entrega do pedido. Para que esses campos sejam exibidos, basta entrar em contato com a equipe de suporte da plataforma Shopify e fazer a solicitação.
+
+------------
+----[mlm]----
+> WARNING
+>
+> Importante
+>
+> Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que permitirá **reforçar a segurança da sua loja e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
+
+------------
 
 ## Configurar parcelas sem acréscimo
 
