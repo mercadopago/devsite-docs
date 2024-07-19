@@ -93,7 +93,7 @@ Within your Mercado Pago account, you can check and configure the number of inte
 
 ![Account](/images/nuvemshop/conta-es.gif)
 ----[mla]----
-If the number of configured installments does not reflect in your store, you can force synchronization by clicking **Sync** on the Mercado Pago site.
+If the number of configured installments does not reflect in your store, you can force synchronization by clicking **Sync** in the Tiendanube panel.
 
 ![Sync](/images/nuvemshop/nuvemshop-sincronizar_cuotas.png)
 

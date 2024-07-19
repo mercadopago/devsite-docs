@@ -94,7 +94,7 @@ Dentro de tu cuenta de Mercado Pago, puedes consultar y configurar el número de
 
 ![Cuenta](/images/nuvemshop/conta-es.gif)
 ----[mla]----
-En caso de que la cantidad de cuotas configuradas no se refleje en tu tienda, puedes forzar la sincronización haciendo clic en **Sincronizar** en el sitio de Mercado Pago.
+En caso de que la cantidad de cuotas configuradas no se refleje en tu tienda, puedes forzar la sincronización haciendo clic en **Sincronizar** en el panel de Tiendanube.
 
 ![Sync](/images/nuvemshop/nuvemshop-sincronizar_cuotas.png)
 
