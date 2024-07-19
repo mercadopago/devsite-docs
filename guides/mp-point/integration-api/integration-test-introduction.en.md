@@ -18,7 +18,7 @@ To carry out an integration test with Mercado Pago Point, you must meet the foll
 > If the Point device is operated by more than one Mercado Pago account, it will be necessary to add [Collaborator Accounts](https://www.mercadopago[FAKER][URL][DOMAIN]/collaborators) through the Mercado Pago Panel to be able to manage all its functionalities jointly.
 
 If you meet all the prerequisites, you can proceed with testing your integration, which will consist of two stages:
- 1. [Configure test integration]()
- 2. [Test payments processing]()
+ 1. [Configure test integration](/developers/en/docs/mp-point/integration-test/test-integration-configuration)
+ 2. [Test payments processing](/developers/en/docs/mp-point/integration-test/test-payment-processing)
 
-Additionally, once you have completed your tests, you must be aware of and comply with the [requirements to go to production]().
+Additionally, once you have completed your tests, you must be aware of and comply with the [requirements to go to production](/developers/en/docs/mp-point/integration-test/go-to-production).

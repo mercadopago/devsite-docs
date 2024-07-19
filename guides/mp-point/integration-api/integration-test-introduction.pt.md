@@ -19,7 +19,7 @@ Para testar a integração com Mercado Pago Point, é importante atender aos req
 > Se o dispositivo Point for utilizado por mais de uma conta do Mercado Pago, será necessário adicionar [Contas de Colaborador](https://www.mercadopago[FAKER][URL][DOMAIN]/collaborators) no Painel do Mercado Pago para possibilitar a gestão compartilhada de todas as suas funcionalidades.
 
 Se todos os requisitos foram cumpridos, prossiga com o teste da sua integração, que consiste em duas etapas:
- 1. [Configurar a integração de teste]()
- 2. [Testar o processamento de pagamentos]()
+ 1. [Configurar a integração de teste](/developers/pt/docs/mp-point/integration-test/test-integration-configuration)
+ 2. [Testar o processamento de pagamentos](/developers/es/docs/mp-point/integration-test/test-payment-processing)
 
-Além disso, uma vez concluído o teste, será necessário seguir os [requisitos para entrar em produção]().
+Além disso, uma vez concluído o teste, será necessário seguir os [requisitos para entrar em produção](/developers/pt/docs/mp-point/integration-test/go-to-production).
